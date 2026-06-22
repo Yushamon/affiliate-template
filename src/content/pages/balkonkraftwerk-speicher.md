@@ -2,7 +2,8 @@
 title: "Balkonkraftwerk Speicher: Wann lohnt er sich?"
 slug: "balkonkraftwerk-speicher"
 description: "Wann sich ein Speicher lohnt und welche Größe sinnvoll ist."
-category: "Balkonkraftwerk"
+category: "balkonkraftwerk"
+categoryLabel: "Balkonkraftwerk"
 featured: true
 ---
 

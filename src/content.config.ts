@@ -13,6 +13,7 @@ const pages = defineCollection({
     slug: z.string(),
     description: z.string(),
     category: z.string(),
+    categoryLabel: z.string(),
     featured: z.boolean().optional()
   })
 });
