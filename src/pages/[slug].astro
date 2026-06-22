@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from "astro:content";
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+
+  return pages.map((page) => ({
+    params: {
+      slug: page.data.slug,
+    },
+    props: {
+      page,
+    },
+  }));
+}
+
+const { page } = Astro.props;
+
+const { Content } = await render(page);
+---
+
+<AffiliateLayout title={page.data.title} description={page.data.description}>
+  <article class="article">
+    <Content />
+  </article>
+</AffiliateLayout>

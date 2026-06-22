@@ -1,11 +1,98 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import "../styles/global.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pages = await getCollection("pages");
+
+const featuredPages = pages.filter((page) => page.data.featured);
+
+const latestPages = [...pages].slice(0, 6);
+
+const categories = [...new Set(pages.map((page) => page.data.category))];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Solar Ratgeber</title>
+
+    <meta
+      name="description"
+      content="Ratgeber, Vergleiche und Empfehlungen rund um Balkonkraftwerke, Speicher und Solarstrom."
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a href="/" class="logo"> Solar Ratgeber </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>
+          Smarte Solar-Ratgeber für Balkonkraftwerk, Speicher und Stromkosten
+        </h1>
+
+        <p>
+          Verständliche Kaufberatungen, Vergleiche und Empfehlungen für mehr
+          Unabhängigkeit vom Stromanbieter.
+        </p>
+      </section>
+
+      <h2 class="section-title">Beliebte Themen</h2>
+
+      <div class="category-list">
+        {
+          categories.map((category) => (
+            <a
+              class="category-pill"
+              href={`/kategorie/${category.toLowerCase().replaceAll(" ", "-")}`}
+            >
+              {category}
+            </a>
+          ))
+        }
+      </div>
+
+      {
+        featuredPages.length > 0 && (
+          <>
+            <h2 class="section-title">Empfohlene Artikel</h2>
+
+            <div class="card-grid">
+              {featuredPages.map((page) => (
+                <a class="card" href={`/${page.data.slug}`}>
+                  <div class="card-category">{page.data.category}</div>
+
+                  <h3>{page.data.title}</h3>
+
+                  <p>{page.data.description}</p>
+                </a>
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      <h2 class="section-title">Neueste Artikel</h2>
+
+      <div class="card-grid">
+        {
+          latestPages.map((page) => (
+            <a class="card" href={`/${page.data.slug}`}>
+              <div class="card-category">{page.data.category}</div>
+
+              <h3>{page.data.title}</h3>
+
+              <p>{page.data.description}</p>
+            </a>
+          ))
+        }
+      </div>
+    </main>
+  </body>
+</html>
