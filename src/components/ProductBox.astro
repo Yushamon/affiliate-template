@@ -1,0 +1,52 @@
+---
+import { products, type ProductKey } from "../data/products";
+
+interface Props {
+  productKey: ProductKey;
+}
+
+const { productKey } = Astro.props;
+
+const product = products[productKey];
+---
+
+{
+  product && (
+    <aside class="product-box">
+      <div class="product-image-wrap">
+        <img src={product.image} alt={product.name} class="product-image" />
+      </div>
+
+      <div class="product-content">
+        <div class="product-meta">
+          {product.brand} · {product.category}
+        </div>
+
+        <h3>{product.name}</h3>
+
+        <div class="product-rating">
+          ★★★★★ <span>{product.rating.toFixed(1)} / 5</span>
+        </div>
+
+        <p class="product-capacity">
+          Kapazität: <strong>{product.capacity}</strong>
+        </p>
+
+        <ul class="product-highlights">
+          {product.highlights.map((highlight) => (
+            <li>{highlight}</li>
+          ))}
+        </ul>
+
+        <a
+          class="product-button"
+          href={product.affiliateUrl}
+          rel="nofollow sponsored"
+          target="_blank"
+        >
+          {product.price}
+        </a>
+      </div>
+    </aside>
+  )
+}
