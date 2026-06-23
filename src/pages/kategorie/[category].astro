@@ -37,8 +37,9 @@ const categoryPages = pages.filter(
 ---
 
 <AffiliateLayout
-  title={`${category.label} | Solar Ratgeber`}
-  description={`Alle Ratgeber, Vergleiche und Empfehlungen zum Thema ${category.label}.`}
+  title={`${category.label} | Balkonspeicher Ratgeber`}
+  description={`Alle Ratgeber und Empfehlungen zum Thema ${category.label}.`}
+  canonical={`/kategorie/${category.slug}`}
 >
   <section class="hero">
     <h1>{category.label}</h1>
