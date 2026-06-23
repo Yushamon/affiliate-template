@@ -8,14 +8,26 @@ const pages = defineCollection({
     base: "./src/content/pages"
   }),
 
-  schema: z.object({
-    title: z.string(),
-    slug: z.string(),
-    description: z.string(),
-    category: z.string(),
-    categoryLabel: z.string(),
-    featured: z.boolean().optional()
-  })
+ schema: z.object({
+  title: z.string(),
+  slug: z.string(),
+  description: z.string(),
+
+  category: z.string(),
+  categoryLabel: z.string(),
+
+  tags: z.array(z.string()).default([]),
+
+  faq: z.array(
+    z.object({
+      question: z.string(),
+      answer: z.string()
+    })
+  ).optional(),
+
+  featured: z.boolean().optional()
+})
+  
 });
 
 export const collections = {

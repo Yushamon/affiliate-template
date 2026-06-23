@@ -8,9 +8,13 @@ interface Props {
   title: string;
   description: string;
   canonical?: string;
+  faq?: {
+    question: string;
+    answer: string;
+  }[];
 }
 
-const { title, description, canonical = "/" } = Astro.props;
+const { title, description, canonical = "/", faq = [] } = Astro.props;
 
 const canonicalUrl = `${site.domain}${canonical}`;
 ---
@@ -44,6 +48,25 @@ const canonicalUrl = `${site.domain}${canonical}`;
     <meta name="twitter:description" content={description} />
 
     <meta name="robots" content="index,follow" />
+    {
+      faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          })}
+        />
+      )
+    }
   </head>
 
   <body>

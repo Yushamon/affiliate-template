@@ -1,0 +1,36 @@
+---
+interface RelatedPage {
+  data: {
+    title: string;
+    slug: string;
+    description: string;
+    categoryLabel: string;
+  };
+}
+
+interface Props {
+  pages: RelatedPage[];
+}
+
+const { pages } = Astro.props;
+---
+
+{
+  pages.length > 0 && (
+    <section class="related-section">
+      <h2>Passende Artikel</h2>
+
+      <div class="card-grid">
+        {pages.map((page) => (
+          <a class="card" href={`/${page.data.slug}`}>
+            <div class="card-category">{page.data.categoryLabel}</div>
+
+            <h3>{page.data.title}</h3>
+
+            <p>{page.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
