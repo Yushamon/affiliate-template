@@ -4,19 +4,23 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { site } from "../utils/site";
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface Props {
   title: string;
   description: string;
   canonical?: string;
-  faq?: {
-    question: string;
-    answer: string;
-  }[];
+  ogImage?: string;
+  faq?: FAQItem[];
 }
 
-const { title, description, canonical = "/", faq = [] } = Astro.props;
+const { title, description, canonical = "/", ogImage, faq = [] } = Astro.props;
 
 const canonicalUrl = `${site.domain}${canonical}`;
+const imageUrl = ogImage ? `${site.domain}${ogImage}` : undefined;
 ---
 
 <html lang="de">
@@ -31,23 +35,22 @@ const canonicalUrl = `${site.domain}${canonical}`;
 
     <link rel="canonical" href={canonicalUrl} />
 
+    <meta name="robots" content="index,follow" />
+
     <meta property="og:type" content="article" />
-
     <meta property="og:title" content={title} />
-
     <meta property="og:description" content={description} />
-
     <meta property="og:url" content={canonicalUrl} />
-
     <meta property="og:site_name" content={site.siteName} />
 
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+
     <meta name="twitter:card" content="summary_large_image" />
-
     <meta name="twitter:title" content={title} />
-
     <meta name="twitter:description" content={description} />
 
-    <meta name="robots" content="index,follow" />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
     {
       faq.length > 0 && (
         <script

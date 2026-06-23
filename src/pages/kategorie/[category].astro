@@ -38,12 +38,17 @@ const categoryPages = pages.filter(
 
 <AffiliateLayout
   title={`${category.label} | Balkonspeicher Ratgeber`}
-  description={`Alle Ratgeber und Empfehlungen zum Thema ${category.label}.`}
+  description={`Alle Ratgeber, Vergleiche und Empfehlungen zum Thema ${category.label}.`}
   canonical={`/kategorie/${category.slug}`}
 >
   <section class="hero">
-    <h1>{category.label}</h1>
-    <p>Alle Ratgeber, Vergleiche und Empfehlungen zu diesem Thema.</p>
+    <div class="hero-content">
+      <p class="eyebrow">Kategorie</p>
+
+      <h1>{category.label}</h1>
+
+      <p>Alle Ratgeber, Vergleiche und Empfehlungen zu diesem Thema.</p>
+    </div>
   </section>
 
   <h2 class="section-title">

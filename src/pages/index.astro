@@ -1,13 +1,11 @@
 ---
 import { getCollection } from "astro:content";
-import "../styles/global.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
 import { site } from "../utils/site";
+
 const pages = await getCollection("pages");
 
 const featuredPages = pages.filter((page) => page.data.featured);
-
 const latestPages = [...pages].slice(0, 6);
 
 const categories = [
@@ -23,68 +21,43 @@ const categories = [
 ];
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<AffiliateLayout
+  title={site.siteName}
+  description={site.siteDescription}
+  canonical="/"
+>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Balkonspeicher, Solarstrom und Eigenverbrauch</p>
 
-    <title>{site.siteName}</title>
+      <h1>Balkonspeicher einfach verstehen, vergleichen und sinnvoll nutzen</h1>
 
-    <meta name="description" content={site.siteDescription} />
-  </head>
+      <p>
+        Verständliche Ratgeber, Vergleiche und Empfehlungen rund um
+        Balkonspeicher, Balkonkraftwerke und Solarstrom.
+      </p>
+    </div>
+  </section>
 
-  <body>
-    <Header />
+  <h2 class="section-title">Beliebte Themen</h2>
 
-    <main class="container">
-      <section class="hero">
-        <h1>
-          Balkonspeicher einfach verstehen, vergleichen und sinnvoll nutzen
-        </h1>
+  <div class="category-list">
+    {
+      categories.map((category) => (
+        <a class="category-pill" href={`/kategorie/${category.slug}`}>
+          {category.label}
+        </a>
+      ))
+    }
+  </div>
 
-        <p>
-          Verständliche Ratgeber, Vergleiche und Empfehlungen rund um
-          Balkonspeicher, Balkonkraftwerke und Solarstrom.
-        </p>
-      </section>
+  {
+    featuredPages.length > 0 && (
+      <>
+        <h2 class="section-title">Empfohlene Artikel</h2>
 
-      <h2 class="section-title">Beliebte Themen</h2>
-
-      <div class="category-list">
-        {
-          categories.map((category) => (
-            <a class="category-pill" href={`/kategorie/${category.slug}`}>
-              {category.label}
-            </a>
-          ))
-        }
-      </div>
-
-      {
-        featuredPages.length > 0 && (
-          <>
-            <h2 class="section-title">Empfohlene Artikel</h2>
-
-            <div class="card-grid">
-              {featuredPages.map((page) => (
-                <a class="card" href={`/${page.data.slug}`}>
-                  <div class="card-category">{page.data.categoryLabel}</div>
-
-                  <h3>{page.data.title}</h3>
-
-                  <p>{page.data.description}</p>
-                </a>
-              ))}
-            </div>
-          </>
-        )
-      }
-
-      <h2 class="section-title">Neueste Artikel</h2>
-
-      <div class="card-grid">
-        {
-          latestPages.map((page) => (
+        <div class="card-grid">
+          {featuredPages.map((page) => (
             <a class="card" href={`/${page.data.slug}`}>
               <div class="card-category">{page.data.categoryLabel}</div>
 
@@ -92,10 +65,25 @@ const categories = [
 
               <p>{page.data.description}</p>
             </a>
-          ))
-        }
-      </div>
-    </main>
-    <Footer />
-  </body>
-</html>
+          ))}
+        </div>
+      </>
+    )
+  }
+
+  <h2 class="section-title">Neueste Artikel</h2>
+
+  <div class="card-grid">
+    {
+      latestPages.map((page) => (
+        <a class="card" href={`/${page.data.slug}`}>
+          <div class="card-category">{page.data.categoryLabel}</div>
+
+          <h3>{page.data.title}</h3>
+
+          <p>{page.data.description}</p>
+        </a>
+      ))
+    }
+  </div>
+</AffiliateLayout>

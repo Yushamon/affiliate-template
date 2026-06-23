@@ -1,12 +1,12 @@
 ---
-interface RelatedPage {
+type RelatedPage = {
   data: {
     title: string;
     slug: string;
     description: string;
     categoryLabel: string;
   };
-}
+};
 
 interface Props {
   pages: RelatedPage[];

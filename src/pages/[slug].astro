@@ -1,9 +1,9 @@
 ---
 import { getCollection, render } from "astro:content";
 import AffiliateLayout from "../layouts/AffiliateLayout.astro";
-import RelatedArticles from "../components/RelatedArticles.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import FAQ from "../components/FAQ.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -19,8 +19,8 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-
 const { Content, headings } = await render(page);
+
 const allPages = await getCollection("pages");
 
 const relatedPages = allPages
@@ -55,8 +55,19 @@ const relatedPages = allPages
   title={page.data.title}
   description={page.data.description}
   canonical={`/${page.data.slug}`}
+  ogImage={page.data.ogImage || page.data.heroImage}
   faq={page.data.faq}
 >
+  {
+    page.data.heroImage && (
+      <img
+        class="article-hero-image"
+        src={page.data.heroImage}
+        alt={page.data.title}
+      />
+    )
+  }
+
   <article class="article">
     <TableOfContents headings={headings} />
 
