@@ -25,10 +25,17 @@ const pages = defineCollection({
       })
     ).optional(),
 
-    heroImage: z.string().optional(),
-    ogImage: z.string().optional(),
+    recommendedProduct:
+      z.string().optional(),
 
-    featured: z.boolean().optional()
+    heroImage:
+      z.string().optional(),
+
+    ogImage:
+      z.string().optional(),
+
+    featured:
+      z.boolean().optional()
   })
 });
 

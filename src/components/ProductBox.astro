@@ -10,43 +10,44 @@ const { productKey } = Astro.props;
 const product = products[productKey];
 ---
 
-{
-  product && (
-    <aside class="product-box">
-      <div class="product-image-wrap">
-        <img src={product.image} alt={product.name} class="product-image" />
-      </div>
+{product && (
+  <section class="product-box">
 
-      <div class="product-content">
-        <div class="product-meta">
-          {product.brand} · {product.category}
+    <div class="product-header">
+      <div>
+        <div class="product-brand">
+          {product.brand}
         </div>
 
-        <h3>{product.name}</h3>
-
-        <div class="product-rating">
-          ★★★★★ <span>{product.rating.toFixed(1)} / 5</span>
-        </div>
-
-        <p class="product-capacity">
-          Kapazität: <strong>{product.capacity}</strong>
-        </p>
-
-        <ul class="product-highlights">
-          {product.highlights.map((highlight) => (
-            <li>{highlight}</li>
-          ))}
-        </ul>
-
-        <a
-          class="product-button"
-          href={product.affiliateUrl}
-          rel="nofollow sponsored"
-          target="_blank"
-        >
-          {product.price}
-        </a>
+        <h2>
+          {product.name}
+        </h2>
       </div>
-    </aside>
-  )
-}
+
+      <div class="product-rating">
+        ★★★★★ {product.rating}
+      </div>
+    </div>
+
+    <p>
+      Speicherkapazität:
+      <strong>{product.capacity}</strong>
+    </p>
+
+    <ul>
+      {product.highlights.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+
+    <a
+      href={product.affiliateUrl}
+      target="_blank"
+      rel="nofollow sponsored"
+      class="product-button"
+    >
+      {product.priceLabel}
+    </a>
+
+  </section>
+)}

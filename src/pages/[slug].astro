@@ -4,6 +4,7 @@ import AffiliateLayout from "../layouts/AffiliateLayout.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import FAQ from "../components/FAQ.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
+import ProductBox from "../components/ProductBox.astro";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -72,6 +73,10 @@ const relatedPages = allPages
     <TableOfContents headings={headings} />
 
     <Content />
+
+    {page.data.recommendedProduct && (
+      <ProductBox productKey={page.data.recommendedProduct} />
+    )}
 
     <FAQ items={page.data.faq} />
   </article>

@@ -2,48 +2,28 @@ export const products = {
   "ecoflow-stream-ultra": {
     name: "EcoFlow Stream Ultra",
     brand: "EcoFlow",
-    category: "Balkonspeicher",
     capacity: "1,92 kWh",
-    price: "Preis prüfen",
-    rating: 4.7,
-    image: "/images/generated/ecoflow-stream-ultra.webp",
+    priceLabel: "Preis prüfen",
     affiliateUrl: "#",
+    rating: 4.7,
     highlights: [
-      "modular erweiterbar",
+      "Modular erweiterbar",
       "App-Steuerung",
-      "für Balkonkraftwerke geeignet"
+      "Ideal für Balkonkraftwerke"
     ]
   },
 
   "anker-solix-solarbank-2": {
     name: "Anker SOLIX Solarbank 2",
     brand: "Anker",
-    category: "Balkonspeicher",
     capacity: "1,6 kWh",
-    price: "Preis prüfen",
+    priceLabel: "Preis prüfen",
+    affiliateUrl: "#",
     rating: 4.6,
-    image: "/images/generated/anker-solix-solarbank-2.webp",
-    affiliateUrl: "#",
     highlights: [
-      "kompakte Bauweise",
-      "bekannter Hersteller",
-      "gute App-Integration"
-    ]
-  },
-
-  "zendure-solarflow": {
-    name: "Zendure SolarFlow",
-    brand: "Zendure",
-    category: "Balkonspeicher",
-    capacity: "variabel",
-    price: "Preis prüfen",
-    rating: 4.5,
-    image: "/images/generated/zendure-solarflow.webp",
-    affiliateUrl: "#",
-    highlights: [
-      "modulares System",
-      "flexibel erweiterbar",
-      "für verschiedene Setups geeignet"
+      "Kompakte Bauweise",
+      "Starke App",
+      "Bekannter Hersteller"
     ]
   }
 };
