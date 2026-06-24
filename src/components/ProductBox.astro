@@ -13,8 +13,14 @@ const product = products[productKey];
 {product && (
   <section class="product-box">
 
-    <div class="product-header">
+    <div class="product-badge">
+      🏆 {product.badge}
+    </div>
+
+    <div class="product-top">
+
       <div>
+
         <div class="product-brand">
           {product.brand}
         </div>
@@ -22,23 +28,44 @@ const product = products[productKey];
         <h2>
           {product.name}
         </h2>
+
+        <div class="product-rating">
+          ★★★★★
+          <span>{product.rating} / 5</span>
+        </div>
+
       </div>
 
-      <div class="product-rating">
-        ★★★★★ {product.rating}
-      </div>
     </div>
 
-    <p>
-      Speicherkapazität:
-      <strong>{product.capacity}</strong>
+    <p class="product-recommendation">
+      {product.recommendation}
     </p>
 
-    <ul>
+    <ul class="product-highlights">
       {product.highlights.map((item) => (
-        <li>{item}</li>
+        <li>✓ {item}</li>
       ))}
     </ul>
+
+    <div class="product-specs">
+
+      <div class="product-spec">
+        <strong>Kapazität</strong>
+        <span>{product.capacity}</span>
+      </div>
+
+      <div class="product-spec">
+        <strong>Erweiterbar</strong>
+        <span>{product.expandable}</span>
+      </div>
+
+      <div class="product-spec">
+        <strong>Einsatzbereich</strong>
+        <span>{product.useCase}</span>
+      </div>
+
+    </div>
 
     <a
       href={product.affiliateUrl}
@@ -46,7 +73,7 @@ const product = products[productKey];
       rel="nofollow sponsored"
       class="product-button"
     >
-      {product.priceLabel}
+      Preis prüfen
     </a>
 
   </section>
