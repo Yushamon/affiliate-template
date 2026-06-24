@@ -9,6 +9,8 @@ tags:
   - balkonkraftwerk
   - solarstrom
   - 800w
+  
+intent: "vergleich"
 
 featured: false
 ---

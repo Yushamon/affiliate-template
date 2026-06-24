@@ -13,11 +13,7 @@ tags:
 
 featured: true
 
-recommendedProduct: "ecoflow-stream-ultra"
-
-comparisonProducts:
-  - ecoflow-stream-ultra
-  - anker-solix-solarbank-2
+intent: "vergleich"
 
 faq:
   - question: "Lohnt sich ein Balkonspeicher für jeden Haushalt?"

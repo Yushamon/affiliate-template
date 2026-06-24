@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  url: string;
+}
+
+const {
+  title,
+  text,
+  url
+} = Astro.props;
+---
+
+<section class="intent-cta">
+
+  <h2>
+    {title}
+  </h2>
+
+  <p>
+    {text}
+  </p>
+
+  <a
+    href={url}
+    class="intent-cta-button"
+  >
+    Jetzt ansehen
+  </a>
+
+</section>

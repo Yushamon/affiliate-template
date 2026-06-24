@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles.astro";
 import ProductBox from "../components/ProductBox.astro";
 import ProductComparisonTable from "../components/ProductComparisonTable.astro";
 import StorageCalculator from "../components/StorageCalculator.astro";
+import IntentCTA from "../components/IntentCTA.astro";
 
 import {
   recommendations
@@ -75,9 +76,9 @@ const showStorageCalculator =
   "balkonspeicher-groesse-berechnen";
 
 const recommendation =
-  page.data.recommendationType
+  page.data.intent
     ? recommendations[
-        page.data.recommendationType
+        page.data.intent
       ]
     : null;
 ---
@@ -132,6 +133,22 @@ const recommendation =
         <ProductComparisonTable
           productKeys={
             recommendation.comparisonProducts
+          }
+        />
+      )
+    }
+
+    {
+      recommendation && (
+        <IntentCTA
+          title={
+            recommendation.ctaTitle
+          }
+          text={
+            recommendation.ctaText
+          }
+          url={
+            recommendation.ctaUrl
           }
         />
       )

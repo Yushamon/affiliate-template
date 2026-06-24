@@ -21,10 +21,8 @@ faq:
     answer: "Ja, viele Balkonspeicher sind auch für Mieter geeignet, wenn sie einfach installiert und bei einem Umzug wieder mitgenommen werden können."
 
 featured: true
-recommendedProduct: "ecoflow-stream-ultra"
-comparisonProducts:
-  - ecoflow-stream-ultra
-  - anker-solix-solarbank-2
+
+intent: "vergleich"
 ---
 
 # Balkonkraftwerk Speicher

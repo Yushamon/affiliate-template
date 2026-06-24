@@ -14,12 +14,7 @@ tags:
 
 featured: true
 
-recommendedProduct: "ecoflow-stream-ultra"
-
-comparisonProducts:
-  - ecoflow-stream-ultra
-  - anker-solix-solarbank-2
-  - zendure-solarflow
+intent: "kosten"
 
 faq:
   - question: "Was kostet ein Balkonspeicher?"

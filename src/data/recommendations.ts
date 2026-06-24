@@ -1,5 +1,5 @@
 export const recommendations = {
-  general: {
+  vergleich: {
     recommendedProduct:
       "ecoflow-stream-ultra",
 
@@ -7,27 +7,93 @@ export const recommendations = {
       "ecoflow-stream-ultra",
       "anker-solix-solarbank-2",
       "zendure-solarflow"
-    ]
+    ],
+
+    ctaTitle:
+      "Die besten Balkonspeicher vergleichen",
+
+    ctaText:
+      "Vergleiche die aktuell beliebtesten Speicherlösungen für Balkonkraftwerke.",
+
+    ctaUrl:
+      "/beste-balkonspeicher"
   },
 
-  budget: {
+  kosten: {
+    recommendedProduct:
+      "ecoflow-stream-ultra",
+
+    comparisonProducts: [
+      "ecoflow-stream-ultra",
+      "anker-solix-solarbank-2"
+    ],
+
+    ctaTitle:
+      "Kosten und Wirtschaftlichkeit vergleichen",
+
+    ctaText:
+      "Finde heraus, welche Speicherlösung zu deinem Budget passt.",
+
+    ctaUrl:
+      "/balkonspeicher-vergleich"
+  },
+
+  mieter: {
     recommendedProduct:
       "anker-solix-solarbank-2",
 
     comparisonProducts: [
       "anker-solix-solarbank-2",
       "ecoflow-stream-ultra"
-    ]
+    ],
+
+    ctaTitle:
+      "Geeignete Speicher für Mieter",
+
+    ctaText:
+      "Vergleiche flexible und leicht transportierbare Speichersysteme.",
+
+    ctaUrl:
+      "/beste-balkonspeicher"
   },
 
-  flexible: {
+  nachruesten: {
     recommendedProduct:
-      "zendure-solarflow",
+      "ecoflow-stream-ultra",
 
     comparisonProducts: [
-      "zendure-solarflow",
-      "ecoflow-stream-ultra"
-    ]
+      "ecoflow-stream-ultra",
+      "zendure-solarflow"
+    ],
+
+    ctaTitle:
+      "Speicher nachrüsten",
+
+    ctaText:
+      "Vergleiche Systeme, die sich gut für bestehende Balkonkraftwerke eignen.",
+
+    ctaUrl:
+      "/balkonspeicher-vergleich"
+  },
+
+  groesse: {
+    recommendedProduct:
+      "ecoflow-stream-ultra",
+
+    comparisonProducts: [
+      "ecoflow-stream-ultra",
+      "anker-solix-solarbank-2",
+      "zendure-solarflow"
+    ],
+
+    ctaTitle:
+      "Passende Speichergröße finden",
+
+    ctaText:
+      "Vergleiche Speicherlösungen für unterschiedliche Haushaltsgrößen.",
+
+    ctaUrl:
+      "/beste-balkonspeicher"
   }
 };
 

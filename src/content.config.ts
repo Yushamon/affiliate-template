@@ -25,7 +25,7 @@ const pages = defineCollection({
       })
     ).optional(),
 
-    recommendationType:
+    intent:
       z.string().optional(),
 
     heroImage:

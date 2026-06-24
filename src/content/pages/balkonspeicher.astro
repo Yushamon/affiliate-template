@@ -1,0 +1,96 @@
+---
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import { getCollection } from "astro:content";
+
+const pages = await getCollection("pages");
+
+const hubPages = pages.filter(
+  (page) =>
+    page.data.category === "balkonspeicher"
+);
+---
+
+<AffiliateLayout
+  title="Balkonspeicher Ratgeber"
+  description="Alle wichtigen Informationen rund um Balkonspeicher, Kosten, Tests, Förderung und Wirtschaftlichkeit."
+  canonical="/balkonspeicher"
+>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Themenhub
+      </p>
+
+      <h1>
+        Balkonspeicher Ratgeber
+      </h1>
+
+      <p>
+        Hier findest du alle wichtigen Informationen zu Balkonspeichern,
+        Kosten, Wirtschaftlichkeit, Speichergrößen, Förderungen und
+        Produktempfehlungen.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="article">
+
+    <h2>
+      Was ist ein Balkonspeicher?
+    </h2>
+
+    <p>
+      Ein Balkonspeicher speichert überschüssigen Solarstrom aus einem
+      Balkonkraftwerk und stellt ihn später wieder zur Verfügung.
+      Dadurch kann der Eigenverbrauch deutlich erhöht werden.
+    </p>
+
+    <h2>
+      Für wen lohnt sich ein Balkonspeicher?
+    </h2>
+
+    <p>
+      Besonders interessant sind Speicher für Haushalte, die tagsüber
+      wenig Strom verbrauchen und den erzeugten Solarstrom vor allem
+      am Abend nutzen möchten.
+    </p>
+
+  </section>
+
+  <h2 class="section-title">
+    Alle Ratgeber
+  </h2>
+
+  <div class="card-grid">
+
+    {
+      hubPages.map((page) => (
+        <a
+          class="card"
+          href={`/${page.data.slug}`}
+        >
+
+          <div class="card-category">
+            {page.data.categoryLabel}
+          </div>
+
+          <h3>
+            {page.data.title}
+          </h3>
+
+          <p>
+            {page.data.description}
+          </p>
+
+        </a>
+      ))
+    }
+
+  </div>
+
+</AffiliateLayout>

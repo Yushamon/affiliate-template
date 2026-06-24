@@ -14,12 +14,7 @@ tags:
 
 featured: true
 
-recommendedProduct: "ecoflow-stream-ultra"
-
-comparisonProducts:
-  - ecoflow-stream-ultra
-  - anker-solix-solarbank-2
-  - zendure-solarflow
+intent: "mieter"
 
 faq:
   - question: "Dürfen Mieter einen Balkonspeicher nutzen?"

@@ -14,7 +14,7 @@ tags:
 
 featured: true
 
-recommendationType: "general"
+intent: "kosten"
 
 faq:
   - question: "Kann man einen Speicher nachträglich installieren?"
