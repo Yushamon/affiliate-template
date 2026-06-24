@@ -13,7 +13,7 @@ tags:
   - speicher
 
 featured: true
-
+hubPriority: 7
 intent: "kosten"
 
 faq:

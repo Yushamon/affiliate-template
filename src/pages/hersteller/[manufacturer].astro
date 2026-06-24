@@ -2,6 +2,7 @@
 import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
 import ProductBox from "../../components/ProductBox.astro";
 import { products, type ProductKey } from "../../data/products";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const manufacturers = [
@@ -10,19 +11,19 @@ export async function getStaticPaths() {
         product.manufacturer,
         {
           slug: product.manufacturer,
-          label: product.manufacturerLabel,
-        },
+          label: product.manufacturerLabel
+        }
       ])
-    ).values(),
+    ).values()
   ];
 
   return manufacturers.map((manufacturer) => ({
     params: {
-      manufacturer: manufacturer.slug,
+      manufacturer: manufacturer.slug
     },
     props: {
-      manufacturer,
-    },
+      manufacturer
+    }
   }));
 }
 
@@ -31,24 +32,66 @@ const { manufacturer } = Astro.props;
 const manufacturerProducts = Object.entries(products).filter(
   ([, product]) => product.manufacturer === manufacturer.slug
 );
+
+const pages = await getCollection("pages");
+
+const manufacturerArticles = pages.filter((page) => {
+  const slug = page.data.slug.toLowerCase();
+  const label = manufacturer.label.toLowerCase();
+  const manufacturerSlug = manufacturer.slug.toLowerCase();
+
+  return slug.includes(label) || slug.includes(manufacturerSlug);
+});
 ---
 
 <AffiliateLayout
   title={`${manufacturer.label} Balkonspeicher`}
-  description={`Produkte, Vergleiche und Empfehlungen von ${manufacturer.label}.`}
+  description={`Produkte, Erfahrungen und Empfehlungen von ${manufacturer.label}.`}
   canonical={`/hersteller/${manufacturer.slug}`}
 >
   <section class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Hersteller</p>
+      <p class="eyebrow">
+        Hersteller
+      </p>
 
-      <h1>{manufacturer.label}</h1>
+      <h1>
+        {manufacturer.label}
+      </h1>
 
       <p>
-        Produkte, Empfehlungen und Vergleiche von {manufacturer.label}.
+        Produkte, Erfahrungen und Empfehlungen von {manufacturer.label}.
       </p>
     </div>
   </section>
+
+  {
+    manufacturerArticles.length > 0 && (
+      <>
+        <h2 class="section-title">
+          Erfahrungen und Ratgeber
+        </h2>
+
+        <div class="card-grid">
+          {manufacturerArticles.map((page) => (
+            <a class="card" href={`/${page.data.slug}`}>
+              <div class="card-category">
+                Erfahrungsbericht
+              </div>
+
+              <h3>
+                {page.data.title}
+              </h3>
+
+              <p>
+                {page.data.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </>
+    )
+  }
 
   <h2 class="section-title">
     Produkte von {manufacturer.label}

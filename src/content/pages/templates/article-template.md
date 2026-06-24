@@ -17,7 +17,7 @@ recommendedProduct: "ecoflow-stream-ultra"
 
 comparisonProducts:
   - ecoflow-stream-ultra
-  - anker-solix-solarbank-2
+  - anker-solix-solarbank-3-pro
 
 faq:
   - question: "Frage 1"

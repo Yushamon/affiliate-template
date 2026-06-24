@@ -28,7 +28,13 @@ const pages = defineCollection({
     intent:
       z.string().optional(),
 
+    hubPriority:
+      z.number().optional(),
+
     heroImage:
+      z.string().optional(),
+
+    heroPrompt:
       z.string().optional(),
 
     ogImage:

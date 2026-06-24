@@ -14,42 +14,77 @@ const selectedProducts = productKeys
 
 {selectedProducts.length > 0 && (
   <section class="comparison-section">
-    <h2>Balkonspeicher im Vergleich</h2>
+
+    <div class="comparison-header">
+
+      <h2>
+        Balkonspeicher im Vergleich
+      </h2>
+
+      <p>
+        Die wichtigsten Unterschiede der beliebtesten Systeme auf einen Blick.
+      </p>
+
+    </div>
 
     <div class="comparison-table-wrap">
+
       <table class="comparison-table">
+
         <thead>
+
           <tr>
             <th>Modell</th>
-            <th>Hersteller</th>
             <th>Kapazität</th>
+            <th>Erweiterbar</th>
             <th>Bewertung</th>
-            <th>Preis</th>
           </tr>
+
         </thead>
 
         <tbody>
-          {selectedProducts.map((product) => (
-            <tr>
-              <td>
-                <strong>{product.name}</strong>
-              </td>
-              <td>{product.brand}</td>
-              <td>{product.capacity}</td>
-              <td>★★★★★ {product.rating}</td>
-              <td>
-                <a
-                  href={product.affiliateUrl}
-                  target="_blank"
-                  rel="nofollow sponsored"
-                >
-                  {product.priceLabel}
-                </a>
-              </td>
-            </tr>
-          ))}
+
+          {
+            selectedProducts.map((product) => (
+              <tr>
+
+                <td>
+
+                  <div class="comparison-product">
+
+                    <strong>
+                      {product.name}
+                    </strong>
+
+                    <span>
+                      {product.brand}
+                    </span>
+
+                  </div>
+
+                </td>
+
+                <td>
+                  {product.capacity}
+                </td>
+
+                <td>
+                  {product.expandable}
+                </td>
+
+                <td>
+                  ★ {product.rating}
+                </td>
+
+              </tr>
+            ))
+          }
+
         </tbody>
+
       </table>
+
     </div>
+
   </section>
 )}

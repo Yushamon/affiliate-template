@@ -15,7 +15,7 @@ tags:
 featured: true
 
 intent: "kosten"
-
+hubPriority: 4
 faq:
   - question: "Wie groß sollte ein Balkonspeicher sein?"
     answer: "Für viele Haushalte sind 1 bis 2 kWh bereits ausreichend. Entscheidend sind Stromverbrauch und Solarertrag."

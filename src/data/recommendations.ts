@@ -5,7 +5,7 @@ export const recommendations = {
 
     comparisonProducts: [
       "ecoflow-stream-ultra",
-      "anker-solix-solarbank-2",
+      "anker-solix-solarbank-3-pro",
       "zendure-solarflow"
     ],
 
@@ -25,7 +25,7 @@ export const recommendations = {
 
     comparisonProducts: [
       "ecoflow-stream-ultra",
-      "anker-solix-solarbank-2"
+      "anker-solix-solarbank-3-pro"
     ],
 
     ctaTitle:
@@ -40,10 +40,10 @@ export const recommendations = {
 
   mieter: {
     recommendedProduct:
-      "anker-solix-solarbank-2",
+      "anker-solix-solarbank-3-pro",
 
     comparisonProducts: [
-      "anker-solix-solarbank-2",
+      "anker-solix-solarbank-3-pro",
       "ecoflow-stream-ultra"
     ],
 
@@ -82,7 +82,7 @@ export const recommendations = {
 
     comparisonProducts: [
       "ecoflow-stream-ultra",
-      "anker-solix-solarbank-2",
+      "anker-solix-solarbank-3-pro",
       "zendure-solarflow"
     ],
 

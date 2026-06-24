@@ -21,7 +21,7 @@ faq:
     answer: "Ja, viele Balkonspeicher sind auch für Mieter geeignet, wenn sie einfach installiert und bei einem Umzug wieder mitgenommen werden können."
 
 featured: true
-
+hubPriority: 7
 intent: "vergleich"
 ---
 

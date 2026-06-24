@@ -8,158 +8,119 @@ import ProductBox from "../components/ProductBox.astro";
 import ProductComparisonTable from "../components/ProductComparisonTable.astro";
 import StorageCalculator from "../components/StorageCalculator.astro";
 import IntentCTA from "../components/IntentCTA.astro";
-
-import {
-  recommendations
-} from "../data/recommendations";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { recommendations } from "../data/recommendations";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
   return pages.map((page) => ({
-    params: {
-      slug: page.data.slug,
-    },
-    props: {
-      page,
-    },
+    params: { slug: page.data.slug },
+    props: { page },
   }));
 }
 
 const { page } = Astro.props;
+const { Content, headings } = await render(page);
 
-const { Content, headings } =
-  await render(page);
-
-const allPages =
-  await getCollection("pages");
+const allPages = await getCollection("pages");
 
 const relatedPages = allPages
   .filter((candidate) => {
-
-    if (
-      candidate.data.slug ===
-      page.data.slug
-    ) {
+    if (candidate.data.slug === page.data.slug) {
       return false;
     }
 
-    const commonTags =
-      candidate.data.tags.filter((tag) =>
-        page.data.tags.includes(tag)
-      );
-
-    return (
-      candidate.data.category ===
-        page.data.category ||
-      commonTags.length > 0
+    const commonTags = candidate.data.tags.filter((tag) =>
+      page.data.tags.includes(tag)
     );
+
+    return candidate.data.category === page.data.category || commonTags.length > 0;
   })
   .sort((a, b) => {
+    const aMatches = a.data.tags.filter((tag) =>
+      page.data.tags.includes(tag)
+    ).length;
 
-    const aMatches =
-      a.data.tags.filter((tag) =>
-        page.data.tags.includes(tag)
-      ).length;
-
-    const bMatches =
-      b.data.tags.filter((tag) =>
-        page.data.tags.includes(tag)
-      ).length;
+    const bMatches = b.data.tags.filter((tag) =>
+      page.data.tags.includes(tag)
+    ).length;
 
     return bMatches - aMatches;
   })
   .slice(0, 3);
 
 const showStorageCalculator =
-  page.data.slug ===
-  "balkonspeicher-groesse-berechnen";
+  page.data.slug === "balkonspeicher-groesse-berechnen";
 
-const recommendation =
-  page.data.intent
-    ? recommendations[
-        page.data.intent
-      ]
-    : null;
+const recommendation = page.data.intent
+  ? recommendations[page.data.intent]
+  : null;
 ---
 
 <AffiliateLayout
   title={page.data.title}
   description={page.data.description}
   canonical={`/${page.data.slug}`}
-  ogImage={
-    page.data.ogImage ||
-    page.data.heroImage
-  }
+  ogImage={page.data.ogImage || page.data.heroImage}
   faq={page.data.faq}
 >
+  <Breadcrumbs
+    categoryLabel={page.data.categoryLabel}
+    title={page.data.title}
+  />
+
+  <section class="article-header">
+    <div class="article-category">
+      {page.data.categoryLabel}
+    </div>
+
+    <h1 class="article-title">
+      {page.data.title}
+    </h1>
+
+    <p class="article-description">
+      {page.data.description}
+    </p>
+  </section>
 
   {
     page.data.heroImage && (
-      <img
-        class="article-hero-image"
-        src={page.data.heroImage}
-        alt={page.data.title}
-      />
+      <section class="article-hero">
+        <img
+          src={page.data.heroImage}
+          alt={page.data.title}
+          class="article-hero-image"
+        />
+      </section>
     )
   }
 
   <article class="article">
-
-    <TableOfContents
-      headings={headings}
-    />
+    <TableOfContents headings={headings} />
 
     <Content />
 
-    {
-      showStorageCalculator && (
-        <StorageCalculator />
-      )
-    }
+    {showStorageCalculator && <StorageCalculator />}
 
-    {
-      recommendation && (
-        <ProductBox
-          productKey={
-            recommendation.recommendedProduct
-          }
-        />
-      )
-    }
+    {recommendation && (
+      <ProductBox productKey={recommendation.recommendedProduct} />
+    )}
 
-    {
-      recommendation && (
-        <ProductComparisonTable
-          productKeys={
-            recommendation.comparisonProducts
-          }
-        />
-      )
-    }
+    {recommendation && (
+      <ProductComparisonTable productKeys={recommendation.comparisonProducts} />
+    )}
 
-    {
-      recommendation && (
-        <IntentCTA
-          title={
-            recommendation.ctaTitle
-          }
-          text={
-            recommendation.ctaText
-          }
-          url={
-            recommendation.ctaUrl
-          }
-        />
-      )
-    }
+    {recommendation && (
+      <IntentCTA
+        title={recommendation.ctaTitle}
+        text={recommendation.ctaText}
+        url={recommendation.ctaUrl}
+      />
+    )}
 
     <FAQ items={page.data.faq} />
-
   </article>
 
-  <RelatedArticles
-    pages={relatedPages}
-  />
-
+  <RelatedArticles pages={relatedPages} />
 </AffiliateLayout>

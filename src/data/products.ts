@@ -1,72 +1,152 @@
 export const products = {
   "ecoflow-stream-ultra": {
-    name: "EcoFlow Stream Ultra",
+    name: "EcoFlow STREAM Ultra",
     manufacturer: "ecoflow",
     manufacturerLabel: "EcoFlow",
     brand: "EcoFlow",
     category: "Balkonspeicher",
+
     capacity: "1,92 kWh",
     expandable: "ja",
-    useCase: "Für Haushalte mit höherem Abendverbrauch",
+
+    useCase:
+      "Für Haushalte mit höherem Abendverbrauch und Nutzer, die ein modernes Komplettsystem suchen.",
+
     recommendation:
-      "Starke Wahl für Nutzer, die ein modernes, erweiterbares System suchen.",
+      "Eine der aktuell interessantesten Lösungen für Balkonkraftwerke. Besonders stark bei Erweiterbarkeit und App-Steuerung.",
+
     priceLabel: "Preis prüfen",
+
     affiliateUrl: "#",
-    image: "/images/generated/ecoflow-stream-ultra.webp",
-    rating: 4.7,
+
+    image:
+      "/images/generated/ecoflow-stream-ultra.webp",
+
+    rating: 4.8,
+
     badge: "Empfehlung",
+
     highlights: [
       "Modular erweiterbar",
-      "App-Steuerung",
-      "Gut für Balkonkraftwerke geeignet"
+      "Moderne App-Steuerung",
+      "Speziell für Balkonkraftwerke geeignet"
     ]
   },
 
-  "anker-solix-solarbank-2": {
-    name: "Anker SOLIX Solarbank 2",
+  "anker-solix-solarbank-3-pro": {
+    name: "Anker SOLIX Solarbank 3 Pro",
+
     manufacturer: "anker",
     manufacturerLabel: "Anker",
+
     brand: "Anker",
+
     category: "Balkonspeicher",
-    capacity: "1,6 kWh",
-    expandable: "modellabhängig",
-    useCase: "Für Nutzer, die ein kompaktes Markensystem suchen",
+
+    capacity: "variabel",
+
+    expandable: "ja",
+
+    useCase:
+      "Für Nutzer, die ein modernes Komplettsystem mit hoher Flexibilität suchen.",
+
     recommendation:
-      "Interessant für Haushalte, die Wert auf einfache Bedienung legen.",
+      "Aktuelles Spitzenmodell von Anker. Besonders interessant für Nutzer, die langfristig planen.",
+
     priceLabel: "Preis prüfen",
+
     affiliateUrl: "#",
-    image: "/images/generated/anker-solix-solarbank-2.webp",
-    rating: 4.6,
-    badge: "Beliebt",
+
+    image:
+      "/images/generated/anker-solix-solarbank-3-pro.webp",
+
+    rating: 4.9,
+
+    badge: "Testsieger",
+
     highlights: [
-      "Kompakte Bauweise",
-      "Gute App-Integration",
-      "Bekannter Hersteller"
+      "Aktuelle Generation",
+      "Hohe Flexibilität",
+      "Starke App-Anbindung"
     ]
   },
 
   "zendure-solarflow": {
     name: "Zendure SolarFlow",
+
     manufacturer: "zendure",
     manufacturerLabel: "Zendure",
+
     brand: "Zendure",
+
     category: "Balkonspeicher",
+
     capacity: "variabel",
+
     expandable: "ja",
-    useCase: "Für Nutzer, die ein flexibles Speichersystem möchten",
+
+    useCase:
+      "Für Nutzer, die modular starten und später erweitern möchten.",
+
     recommendation:
-      "Spannend für alle, die modular starten und später erweitern möchten.",
+      "Sehr flexibel und deshalb besonders interessant für wechselnde Anforderungen.",
+
     priceLabel: "Preis prüfen",
+
     affiliateUrl: "#",
-    image: "/images/generated/zendure-solarflow.webp",
-    rating: 4.5,
+
+    image:
+      "/images/generated/zendure-solarflow.webp",
+
+    rating: 4.7,
+
     badge: "Flexibel",
+
     highlights: [
       "Modulares System",
       "Flexibel erweiterbar",
-      "Für verschiedene Setups geeignet"
+      "Große Systemauswahl"
+    ]
+  },
+
+  "solakon-one": {
+    name: "Solakon ONE",
+
+    manufacturer: "solakon",
+    manufacturerLabel: "Solakon",
+
+    brand: "Solakon",
+
+    category: "Balkonspeicher",
+
+    capacity: "variabel",
+
+    expandable: "ja",
+
+    useCase:
+      "Für Nutzer, die ein aktuelles Komplettsystem für Balkonkraftwerke suchen.",
+
+    recommendation:
+      "Spannende Alternative zu den etablierten Marktführern mit Fokus auf einfache Nutzung.",
+
+    priceLabel: "Preis prüfen",
+
+    affiliateUrl: "#",
+
+    image:
+      "/images/generated/solakon-one.webp",
+
+    rating: 4.6,
+
+    badge: "Newcomer",
+
+    highlights: [
+      "Moderne Plattform",
+      "Einfache Einrichtung",
+      "Für Balkonkraftwerke optimiert"
     ]
   }
 };
 
-export type ProductKey = keyof typeof products;
+export type ProductKey =
+  keyof typeof products;

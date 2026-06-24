@@ -15,7 +15,7 @@ tags:
 featured: true
 
 intent: "vergleich"
-
+hubPriority: 5
 faq:
   - question: "Gibt es eine bundesweite Förderung für Balkonspeicher?"
     answer: "Eine einheitliche bundesweite Zuschussförderung gibt es in der Regel nicht. Wichtig ist vor allem die regionale Prüfung auf Landes-, Stadt- oder Gemeindeebene."

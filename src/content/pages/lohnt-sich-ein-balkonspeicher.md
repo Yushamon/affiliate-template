@@ -12,7 +12,7 @@ tags:
   - solarstrom
 
 featured: true
-
+hubPriority: 3
 intent: "vergleich"
 
 faq:

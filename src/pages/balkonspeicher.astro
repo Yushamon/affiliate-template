@@ -4,10 +4,20 @@ import { getCollection } from "astro:content";
 
 const pages = await getCollection("pages");
 
-const hubPages = pages.filter(
-  (page) =>
-    page.data.category === "balkonspeicher"
-);
+const hubPages = pages
+  .filter(
+    (page) =>
+      page.data.category === "balkonspeicher"
+  )
+  .sort((a, b) => {
+    const aPriority =
+      a.data.hubPriority ?? 999;
+
+    const bPriority =
+      b.data.hubPriority ?? 999;
+
+    return aPriority - bPriority;
+  });
 ---
 
 <AffiliateLayout
@@ -91,6 +101,6 @@ const hubPages = pages.filter(
       ))
     }
 
-  </div>a
+  </div>
 
 </AffiliateLayout>
