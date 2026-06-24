@@ -5,7 +5,10 @@ import { site } from "../utils/site";
 
 const pages = await getCollection("pages");
 
-const featuredPages = pages.filter((page) => page.data.featured);
+const featuredPages = pages.filter(
+  (page) => page.data.featured
+);
+
 const latestPages = [...pages].slice(0, 6);
 
 const categories = [
@@ -14,10 +17,10 @@ const categories = [
       page.data.category,
       {
         slug: page.data.category,
-        label: page.data.categoryLabel,
-      },
-    ]),
-  ).values(),
+        label: page.data.categoryLabel
+      }
+    ])
+  ).values()
 ];
 ---
 
@@ -26,64 +29,149 @@ const categories = [
   description={site.siteDescription}
   canonical="/"
 >
+
   <section class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Balkonspeicher, Solarstrom und Eigenverbrauch</p>
 
-      <h1>Balkonspeicher einfach verstehen, vergleichen und sinnvoll nutzen</h1>
+      <p class="eyebrow">
+        Balkonspeicher · Balkonkraftwerke · Solarstrom
+      </p>
+
+      <h1>
+        Balkonspeicher einfach verstehen, vergleichen und sinnvoll nutzen
+      </h1>
 
       <p>
         Verständliche Ratgeber, Vergleiche und Empfehlungen rund um
-        Balkonspeicher, Balkonkraftwerke und Solarstrom.
+        Balkonspeicher und Balkonkraftwerke.
       </p>
+
     </div>
   </section>
 
-  <h2 class="section-title">Beliebte Themen</h2>
+  <h2 class="section-title">
+    Empfohlen
+  </h2>
+
+  <div class="card-grid">
+
+    <a
+      class="card"
+      href="/beste-balkonspeicher"
+    >
+      <div class="card-category">
+        Ranking
+      </div>
+
+      <h3>
+        Beste Balkonspeicher
+      </h3>
+
+      <p>
+        Die besten Balkonspeicher im Vergleich inklusive Empfehlungen und Übersicht.
+      </p>
+    </a>
+
+    <a
+      class="card"
+      href="/hersteller"
+    >
+      <div class="card-category">
+        Hersteller
+      </div>
+
+      <h3>
+        Hersteller Übersicht
+      </h3>
+
+      <p>
+        EcoFlow, Anker, Zendure und weitere Hersteller im Überblick.
+      </p>
+    </a>
+
+  </div>
+
+  <h2 class="section-title">
+    Themen
+  </h2>
 
   <div class="category-list">
+
     {
       categories.map((category) => (
-        <a class="category-pill" href={`/kategorie/${category.slug}`}>
+        <a
+          class="category-pill"
+          href={`/kategorie/${category.slug}`}
+        >
           {category.label}
         </a>
       ))
     }
+
   </div>
 
   {
     featuredPages.length > 0 && (
       <>
-        <h2 class="section-title">Empfohlene Artikel</h2>
+        <h2 class="section-title">
+          Empfohlene Artikel
+        </h2>
 
         <div class="card-grid">
-          {featuredPages.map((page) => (
-            <a class="card" href={`/${page.data.slug}`}>
-              <div class="card-category">{page.data.categoryLabel}</div>
 
-              <h3>{page.data.title}</h3>
+          {
+            featuredPages.map((page) => (
+              <a
+                class="card"
+                href={`/${page.data.slug}`}
+              >
+                <div class="card-category">
+                  {page.data.categoryLabel}
+                </div>
 
-              <p>{page.data.description}</p>
-            </a>
-          ))}
+                <h3>
+                  {page.data.title}
+                </h3>
+
+                <p>
+                  {page.data.description}
+                </p>
+              </a>
+            ))
+          }
+
         </div>
       </>
     )
   }
 
-  <h2 class="section-title">Neueste Artikel</h2>
+  <h2 class="section-title">
+    Neueste Inhalte
+  </h2>
 
   <div class="card-grid">
+
     {
       latestPages.map((page) => (
-        <a class="card" href={`/${page.data.slug}`}>
-          <div class="card-category">{page.data.categoryLabel}</div>
+        <a
+          class="card"
+          href={`/${page.data.slug}`}
+        >
+          <div class="card-category">
+            {page.data.categoryLabel}
+          </div>
 
-          <h3>{page.data.title}</h3>
+          <h3>
+            {page.data.title}
+          </h3>
 
-          <p>{page.data.description}</p>
+          <p>
+            {page.data.description}
+          </p>
         </a>
       ))
     }
+
   </div>
+
 </AffiliateLayout>

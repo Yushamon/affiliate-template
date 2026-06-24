@@ -690,4 +690,32 @@ body {
     width: 100%;
     min-width: auto;
   }
+}.manufacturer-link {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.manufacturer-link a {
+  color: var(--primary-dark);
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.manufacturer-link a:hover {
+  text-decoration: underline;
+}
+.ranking-item {
+  margin-top: 40px;
+}
+
+.ranking-position {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 800;
 }

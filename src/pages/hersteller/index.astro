@@ -1,0 +1,73 @@
+---
+import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+import { products } from "../../data/products";
+
+const manufacturers = [
+  ...new Map(
+    Object.values(products).map((product) => [
+      product.manufacturer,
+      {
+        slug: product.manufacturer,
+        label: product.manufacturerLabel
+      }
+    ])
+  ).values()
+];
+---
+
+<AffiliateLayout
+  title="Hersteller von Balkonspeichern"
+  description="Vergleiche und Informationen zu EcoFlow, Anker, Zendure und weiteren Herstellern."
+  canonical="/hersteller"
+>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Herstellerübersicht
+      </p>
+
+      <h1>
+        Hersteller von Balkonspeichern
+      </h1>
+
+      <p>
+        Alle Hersteller, Produkte und Empfehlungen auf einen Blick.
+      </p>
+
+    </div>
+  </section>
+
+  <h2 class="section-title">
+    Hersteller
+  </h2>
+
+  <div class="card-grid">
+
+    {
+      manufacturers.map((manufacturer) => (
+        <a
+          class="card"
+          href={`/hersteller/${manufacturer.slug}`}
+        >
+
+          <div class="card-category">
+            Hersteller
+          </div>
+
+          <h3>
+            {manufacturer.label}
+          </h3>
+
+          <p>
+            Alle Produkte und Empfehlungen von {manufacturer.label}.
+          </p>
+
+        </a>
+      ))
+    }
+
+  </div>
+
+</AffiliateLayout>

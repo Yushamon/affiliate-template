@@ -1,0 +1,62 @@
+---
+import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+import ProductBox from "../../components/ProductBox.astro";
+import { products, type ProductKey } from "../../data/products";
+
+export async function getStaticPaths() {
+  const manufacturers = [
+    ...new Map(
+      Object.values(products).map((product) => [
+        product.manufacturer,
+        {
+          slug: product.manufacturer,
+          label: product.manufacturerLabel,
+        },
+      ])
+    ).values(),
+  ];
+
+  return manufacturers.map((manufacturer) => ({
+    params: {
+      manufacturer: manufacturer.slug,
+    },
+    props: {
+      manufacturer,
+    },
+  }));
+}
+
+const { manufacturer } = Astro.props;
+
+const manufacturerProducts = Object.entries(products).filter(
+  ([, product]) => product.manufacturer === manufacturer.slug
+);
+---
+
+<AffiliateLayout
+  title={`${manufacturer.label} Balkonspeicher`}
+  description={`Produkte, Vergleiche und Empfehlungen von ${manufacturer.label}.`}
+  canonical={`/hersteller/${manufacturer.slug}`}
+>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Hersteller</p>
+
+      <h1>{manufacturer.label}</h1>
+
+      <p>
+        Produkte, Empfehlungen und Vergleiche von {manufacturer.label}.
+      </p>
+    </div>
+  </section>
+
+  <h2 class="section-title">
+    Produkte von {manufacturer.label}
+  </h2>
+
+  {
+    manufacturerProducts.map(([key]) => (
+      <ProductBox productKey={key as ProductKey} />
+    ))
+  }
+</AffiliateLayout>

@@ -1,0 +1,141 @@
+---
+import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+import ProductBox from "../../components/ProductBox.astro";
+import { products, type ProductKey } from "../../data/products";
+
+export async function getStaticPaths() {
+  return Object.keys(products).map((key) => ({
+    params: {
+      product: key
+    },
+    props: {
+      productKey: key
+    }
+  }));
+}
+
+const { productKey } = Astro.props;
+
+const product =
+  products[productKey as ProductKey];
+
+const manufacturerProducts =
+  Object.entries(products).filter(
+    ([key, item]) =>
+      key !== productKey &&
+      item.manufacturer === product.manufacturer
+  );
+---
+
+<AffiliateLayout
+  title={`${product.name} Erfahrungen`}
+  description={`${product.name} im Überblick. Vorteile, Einsatzbereiche und wichtige Informationen.`}
+  canonical={`/produkt/${productKey}`}
+>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Produkt
+      </p>
+
+      <h1>
+        {product.name}
+      </h1>
+
+      <p>
+        Informationen, Erfahrungen und Empfehlungen rund um {product.name}.
+      </p>
+
+    </div>
+
+  </section>
+
+  <ProductBox
+  productKey={productKey as ProductKey}
+/>
+
+<div class="manufacturer-link">
+
+  <a
+    href={`/hersteller/${product.manufacturer}`}
+  >
+    Weitere Informationen zu
+    {product.manufacturerLabel}
+    →
+  </a>
+
+</div>
+
+  <section class="article">
+
+    <h2>
+      Für wen eignet sich das Produkt?
+    </h2>
+
+    <p>
+      {product.useCase}
+    </p>
+
+    <h2>
+      Unsere Einschätzung
+    </h2>
+
+    <p>
+      {product.recommendation}
+    </p>
+
+    <h2>
+      Highlights
+    </h2>
+
+    <ul>
+      {
+        product.highlights.map((item) => (
+          <li>{item}</li>
+        ))
+      }
+    </ul>
+
+  </section>
+
+  {
+    manufacturerProducts.length > 0 && (
+      <>
+        <h2 class="section-title">
+          Weitere Produkte von {product.manufacturerLabel}
+        </h2>
+
+        <div class="card-grid">
+
+          {
+            manufacturerProducts.map(([key, item]) => (
+              <a
+                class="card"
+                href={`/produkt/${key}`}
+              >
+
+                <div class="card-category">
+                  {item.brand}
+                </div>
+
+                <h3>
+                  {item.name}
+                </h3>
+
+                <p>
+                  {item.recommendation}
+                </p>
+
+              </a>
+            ))
+          }
+
+        </div>
+      </>
+    )
+  }
+
+</AffiliateLayout>

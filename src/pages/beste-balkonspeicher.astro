@@ -1,0 +1,75 @@
+---
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import ProductBox from "../components/ProductBox.astro";
+import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+import { products, type ProductKey } from "../data/products";
+
+const rankedProducts = Object.entries(products)
+  .sort(([, a], [, b]) => b.rating - a.rating);
+
+const productKeys = rankedProducts.map(([key]) => key as ProductKey);
+---
+
+<AffiliateLayout
+  title="Beste Balkonspeicher im Vergleich"
+  description="Die besten Balkonspeicher im Überblick. Empfehlungen, Vergleich und wichtige Kaufkriterien."
+  canonical="/beste-balkonspeicher"
+>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">
+        Ranking
+      </p>
+
+      <h1>
+        Beste Balkonspeicher im Vergleich
+      </h1>
+
+      <p>
+        Welche Balkonspeicher sich lohnen, worauf du achten solltest und welche Modelle für unterschiedliche Haushalte interessant sind.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <h2>
+      Unsere Empfehlungen
+    </h2>
+
+    <p>
+      Die folgende Übersicht basiert auf unseren Produktdaten, Einsatzbereichen und Bewertungen. Sie hilft dir, passende Balkonspeicher schneller einzuordnen.
+    </p>
+  </section>
+
+  {
+    rankedProducts.map(([key], index) => (
+      <section class="ranking-item">
+        <div class="ranking-position">
+          Platz {index + 1}
+        </div>
+
+        <ProductBox productKey={key as ProductKey} />
+      </section>
+    ))
+  }
+
+  <ProductComparisonTable productKeys={productKeys} />
+
+  <section class="article">
+    <h2>
+      Worauf sollte man beim Kauf achten?
+    </h2>
+
+    <p>
+      Wichtig sind vor allem Speicherkapazität, Erweiterbarkeit, App-Steuerung, Kompatibilität mit dem vorhandenen Balkonkraftwerk und das Verhältnis aus Anschaffungskosten und erwarteter Nutzung.
+    </p>
+
+    <h2>
+      Für wen lohnt sich ein Balkonspeicher?
+    </h2>
+
+    <p>
+      Ein Balkonspeicher lohnt sich besonders für Haushalte, die tagsüber Solarstrom erzeugen, diesen aber erst abends oder morgens verbrauchen.
+    </p>
+  </section>
+</AffiliateLayout>
