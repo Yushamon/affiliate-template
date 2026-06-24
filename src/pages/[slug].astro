@@ -8,6 +8,10 @@ import ProductBox from "../components/ProductBox.astro";
 import ProductComparisonTable from "../components/ProductComparisonTable.astro";
 import StorageCalculator from "../components/StorageCalculator.astro";
 
+import {
+  recommendations
+} from "../data/recommendations";
+
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
@@ -22,48 +26,73 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { Content, headings } = await render(page);
 
-const allPages = await getCollection("pages");
+const { Content, headings } =
+  await render(page);
+
+const allPages =
+  await getCollection("pages");
 
 const relatedPages = allPages
   .filter((candidate) => {
-    if (candidate.data.slug === page.data.slug) {
+
+    if (
+      candidate.data.slug ===
+      page.data.slug
+    ) {
       return false;
     }
 
-    const commonTags = candidate.data.tags.filter((tag) =>
-      page.data.tags.includes(tag),
-    );
+    const commonTags =
+      candidate.data.tags.filter((tag) =>
+        page.data.tags.includes(tag)
+      );
 
     return (
-      candidate.data.category === page.data.category || commonTags.length > 0
+      candidate.data.category ===
+        page.data.category ||
+      commonTags.length > 0
     );
   })
   .sort((a, b) => {
-    const aMatches = a.data.tags.filter((tag) =>
-      page.data.tags.includes(tag),
-    ).length;
 
-    const bMatches = b.data.tags.filter((tag) =>
-      page.data.tags.includes(tag),
-    ).length;
+    const aMatches =
+      a.data.tags.filter((tag) =>
+        page.data.tags.includes(tag)
+      ).length;
+
+    const bMatches =
+      b.data.tags.filter((tag) =>
+        page.data.tags.includes(tag)
+      ).length;
 
     return bMatches - aMatches;
   })
   .slice(0, 3);
 
 const showStorageCalculator =
-  page.data.slug === "balkonspeicher-groesse-berechnen";
+  page.data.slug ===
+  "balkonspeicher-groesse-berechnen";
+
+const recommendation =
+  page.data.recommendationType
+    ? recommendations[
+        page.data.recommendationType
+      ]
+    : null;
 ---
 
 <AffiliateLayout
   title={page.data.title}
   description={page.data.description}
   canonical={`/${page.data.slug}`}
-  ogImage={page.data.ogImage || page.data.heroImage}
+  ogImage={
+    page.data.ogImage ||
+    page.data.heroImage
+  }
   faq={page.data.faq}
 >
+
   {
     page.data.heroImage && (
       <img
@@ -75,22 +104,45 @@ const showStorageCalculator =
   }
 
   <article class="article">
-    <TableOfContents headings={headings} />
+
+    <TableOfContents
+      headings={headings}
+    />
 
     <Content />
 
-    {showStorageCalculator && <StorageCalculator />}
+    {
+      showStorageCalculator && (
+        <StorageCalculator />
+      )
+    }
 
-    {page.data.recommendedProduct && (
-      <ProductBox productKey={page.data.recommendedProduct} />
-    )}
+    {
+      recommendation && (
+        <ProductBox
+          productKey={
+            recommendation.recommendedProduct
+          }
+        />
+      )
+    }
 
-    {page.data.comparisonProducts && (
-      <ProductComparisonTable productKeys={page.data.comparisonProducts} />
-    )}
+    {
+      recommendation && (
+        <ProductComparisonTable
+          productKeys={
+            recommendation.comparisonProducts
+          }
+        />
+      )
+    }
 
     <FAQ items={page.data.faq} />
+
   </article>
 
-  <RelatedArticles pages={relatedPages} />
+  <RelatedArticles
+    pages={relatedPages}
+  />
+
 </AffiliateLayout>
