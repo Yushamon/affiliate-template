@@ -5,6 +5,7 @@ import TableOfContents from "../components/TableOfContents.astro";
 import FAQ from "../components/FAQ.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import ProductBox from "../components/ProductBox.astro";
+import ProductComparisonTable from "../components/ProductComparisonTable.astro";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -76,6 +77,10 @@ const relatedPages = allPages
 
     {page.data.recommendedProduct && (
       <ProductBox productKey={page.data.recommendedProduct} />
+    )}
+
+    {page.data.comparisonProducts && (
+      <ProductComparisonTable productKeys={page.data.comparisonProducts} />
     )}
 
     <FAQ items={page.data.faq} />
