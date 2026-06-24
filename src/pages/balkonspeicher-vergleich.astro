@@ -1,0 +1,104 @@
+---
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+import ProductBox from "../components/ProductBox.astro";
+import { products, type ProductKey } from "../data/products";
+
+const rankedProducts = Object.entries(products)
+  .sort(([, a], [, b]) => b.rating - a.rating);
+
+const productKeys = rankedProducts.map(
+  ([key]) => key as ProductKey
+);
+---
+
+<AffiliateLayout
+  title="Balkonspeicher Vergleich"
+  description="Balkonspeicher vergleichen und passende Lösungen für unterschiedliche Haushalte finden."
+  canonical="/balkonspeicher-vergleich"
+>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Vergleich
+      </p>
+
+      <h1>
+        Balkonspeicher Vergleich
+      </h1>
+
+      <p>
+        Die wichtigsten Balkonspeicher im direkten Vergleich. Kapazität,
+        Erweiterbarkeit, Einsatzbereich und Empfehlungen auf einen Blick.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="article">
+
+    <h2>
+      Vergleich der wichtigsten Balkonspeicher
+    </h2>
+
+    <p>
+      Nicht jeder Balkonspeicher passt zu jedem Haushalt. Während einige
+      Systeme auf maximale Erweiterbarkeit setzen, stehen bei anderen
+      einfache Installation und Bedienung im Vordergrund.
+    </p>
+
+  </section>
+
+  <ProductComparisonTable
+    productKeys={productKeys}
+  />
+
+  <section class="article">
+
+    <h2>
+      Unsere Favoriten
+    </h2>
+
+    <p>
+      Die folgenden Systeme gehören aktuell zu den interessantesten
+      Lösungen für Balkonkraftwerke und Speicherlösungen.
+    </p>
+
+  </section>
+
+  {
+    rankedProducts.map(([key]) => (
+      <ProductBox
+        productKey={key as ProductKey}
+      />
+    ))
+  }
+
+  <section class="article">
+
+    <h2>
+      Worauf sollte man achten?
+    </h2>
+
+    <p>
+      Besonders wichtig sind Speicherkapazität, Erweiterbarkeit,
+      Kompatibilität mit dem Balkonkraftwerk sowie die langfristige
+      Wirtschaftlichkeit.
+    </p>
+
+    <h2>
+      Für wen lohnt sich ein Balkonspeicher?
+    </h2>
+
+    <p>
+      Balkonspeicher lohnen sich vor allem dann, wenn tagsüber Solarstrom
+      erzeugt wird, der erst später im Haushalt genutzt werden soll.
+    </p>
+
+  </section>
+
+</AffiliateLayout>
