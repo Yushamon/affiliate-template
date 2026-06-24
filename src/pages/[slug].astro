@@ -6,6 +6,7 @@ import FAQ from "../components/FAQ.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import ProductBox from "../components/ProductBox.astro";
 import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+import StorageCalculator from "../components/StorageCalculator.astro";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -51,6 +52,9 @@ const relatedPages = allPages
     return bMatches - aMatches;
   })
   .slice(0, 3);
+
+const showStorageCalculator =
+  page.data.slug === "balkonspeicher-groesse-berechnen";
 ---
 
 <AffiliateLayout
@@ -74,6 +78,8 @@ const relatedPages = allPages
     <TableOfContents headings={headings} />
 
     <Content />
+
+    {showStorageCalculator && <StorageCalculator />}
 
     {page.data.recommendedProduct && (
       <ProductBox productKey={page.data.recommendedProduct} />

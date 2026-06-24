@@ -1,0 +1,94 @@
+<div class="storage-calculator">
+
+  <h2>
+    Balkonspeicher Rechner
+  </h2>
+
+  <p>
+    Schätze die passende Speichergröße anhand deines jährlichen Stromverbrauchs.
+  </p>
+
+  <div class="calculator-form">
+
+    <label>
+      Stromverbrauch pro Jahr (kWh)
+
+      <input
+        id="annualConsumption"
+        type="number"
+        placeholder="z.B. 2500"
+      />
+    </label>
+
+    <button id="calculateStorage">
+      Speichergröße berechnen
+    </button>
+
+  </div>
+
+  <div
+    id="storageResult"
+    class="calculator-result"
+  >
+  </div>
+
+</div>
+
+<script>
+  const button =
+    document.getElementById("calculateStorage");
+
+  const input =
+    document.getElementById("annualConsumption");
+
+  const result =
+    document.getElementById("storageResult");
+
+  button?.addEventListener("click", () => {
+
+    const value =
+      Number(input?.value);
+
+    if (!value || value <= 0) {
+
+      result.innerHTML =
+        "Bitte einen gültigen Stromverbrauch eingeben.";
+
+      return;
+    }
+
+    let recommendation = "";
+    let product = "";
+
+    if (value < 2000) {
+
+      recommendation =
+        "Empfohlene Speichergröße: 1 kWh";
+
+      product =
+        "Passende Lösung: Anker SOLIX Solarbank 2";
+
+    } else if (value < 4000) {
+
+      recommendation =
+        "Empfohlene Speichergröße: 2 kWh";
+
+      product =
+        "Passende Lösung: EcoFlow Stream Ultra";
+
+    } else {
+
+      recommendation =
+        "Empfohlene Speichergröße: 3 kWh oder mehr";
+
+      product =
+        "Passende Lösung: Zendure SolarFlow oder ein erweiterbares System";
+    }
+
+    result.innerHTML = `
+      <strong>${recommendation}</strong>
+      <br><br>
+      ${product}
+    `;
+  });
+</script>
