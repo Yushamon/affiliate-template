@@ -4,34 +4,22 @@ import { site } from "../utils/site";
 
 <header class="site-header">
   <div class="header-container">
-
     <a href="/" class="logo">
       {site.logoText}
     </a>
 
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+
+    <label for="nav-toggle" class="nav-toggle-label">
+      Menü
+    </label>
+
     <nav class="main-nav">
-
-      <a href="/">
-        Start
-      </a>
-
-      <a href="/balkonspeicher">
-        Balkonspeicher
-      </a>
-
-      <a href="/beste-balkonspeicher">
-        Top Balkonspeicher
-      </a>
-
-      <a href="/balkonspeicher-vergleich">
-        Vergleich
-      </a>
-
-      <a href="/hersteller">
-        Hersteller
-      </a>
-
+      <a href="/">Start</a>
+      <a href="/beste-balkonspeicher">Vergleich</a>
+      <a href="/balkonspeicher">Ratgeber</a>
+      <a href="/hersteller">Hersteller</a>
+      <a href="/balkonspeicher-groesse-berechnen">Rechner</a>
     </nav>
-
   </div>
 </header>

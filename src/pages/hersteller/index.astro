@@ -1,152 +1,67 @@
 ---
-import { getCollection } from "astro:content";
-import AffiliateLayout from "../layouts/AffiliateLayout.astro";
-import HomeHero from "../components/home/HomeHero.astro";
-import HomeHighlightSection from "../components/home/HomeHighlightSection.astro";
-import HomeFeatureCards from "../components/home/HomeFeatureCards.astro";
-import HomeTrustSection from "../components/home/HomeTrustSection.astro";
-import HomeManufacturerGrid from "../components/home/HomeManufacturerGrid.astro";
-import HomeArticleGrid from "../components/home/HomeArticleGrid.astro";
-import { site } from "../utils/site";
-
-const pages = await getCollection("pages");
-
-const featuredPages = pages
-  .filter((page) => page.data.featured)
-  .sort((a, b) => (a.data.hubPriority ?? 999) - (b.data.hubPriority ?? 999))
-  .slice(0, 6);
-
-const comparisonPages = pages
-  .filter((page) => page.data.category === "vergleich")
-  .slice(0, 6);
-
-const latestPages = [...pages].slice(0, 6);
-
-const featureCards = [
-  {
-    label: "Vergleich",
-    title: "Beste Balkonspeicher",
-    text: "Die wichtigsten Speicherlösungen für Balkonkraftwerke im Überblick.",
-    href: "/beste-balkonspeicher"
-  },
-  {
-    label: "Ratgeber",
-    title: "Balkonspeicher verstehen",
-    text: "Kosten, Größe, Förderung, Winterbetrieb und Nachrüstung verständlich erklärt.",
-    href: "/balkonspeicher"
-  },
-  {
-    label: "Rechner",
-    title: "Speichergröße berechnen",
-    text: "Finde heraus, welche Speichergröße zu deinem Haushalt passen könnte.",
-    href: "/balkonspeicher-groesse-berechnen"
-  }
-];
-
-const trustItems = [
-  {
-    title: "Klare Antworten",
-    text: "Jede Seite beantwortet eine konkrete Frage statt nur allgemeine Informationen zu sammeln."
-  },
-  {
-    title: "Echte Orientierung",
-    text: "Wir ordnen ein, welches System zu welchem Haushalt passt."
-  },
-  {
-    title: "Fokus auf Entscheidung",
-    text: "Kosten, Nutzen, Größe, Förderung und Produktauswahl stehen im Mittelpunkt."
-  },
-  {
-    title: "Verständlich erklärt",
-    text: "Für normale Haushalte geschrieben, nicht nur für Solar-Experten."
-  }
-];
-
-const manufacturers = [
-  {
-    name: "EcoFlow",
-    href: "/hersteller/ecoflow",
-    text: "Starkes Energie-Ökosystem und flexible Speicherlösungen."
-  },
-  {
-    name: "Anker",
-    href: "/hersteller/anker",
-    text: "Einfache Bedienung und moderne Komplettsysteme."
-  },
-  {
-    name: "Zendure",
-    href: "/hersteller/zendure",
-    text: "Modulare Lösungen für flexible Speichergrößen."
-  },
-  {
-    name: "Solakon",
-    href: "/hersteller/solakon",
-    text: "Einsteigerfreundliche Komplettlösungen."
-  }
-];
+import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+import { manufacturers } from "../../data/manufacturers";
 ---
 
 <AffiliateLayout
-  title={site.siteName}
-  description={site.siteDescription}
-  canonical="/"
+  title="Balkonspeicher Hersteller"
+  description="EcoFlow, Anker, Zendure und Solakon im Überblick. Vergleiche bekannte Hersteller für Balkonspeicher und Balkonkraftwerke."
+  canonical="/hersteller"
 >
-  <HomeHero
-    badge="Balkonspeicher Ratgeber"
-    title="Der einfache Weg zum passenden Balkonspeicher."
-    description="Vergleiche, Ratgeber und Empfehlungen für alle, die mehr aus ihrem Balkonkraftwerk herausholen möchten."
-    primaryCta={{
-      label: "Balkonspeicher vergleichen",
-      href: "/beste-balkonspeicher"
-    }}
-    secondaryCta={{
-      label: "Ratgeber ansehen",
-      href: "/balkonspeicher"
-    }}
-    image="/images/generated/home-hero.webp"
-    imageAlt="Moderner Balkon mit Solarmodul und Balkonspeicher"
-    stats={[
-      { value: "15+", label: "Ratgeber" },
-      { value: "4", label: "Hersteller" },
-      { value: "100%", label: "Fokus auf Balkonspeicher" }
-    ]}
-  />
+  <section class="manufacturer-hero">
+    <div class="manufacturer-badge">
+      Hersteller
+    </div>
 
-  <HomeHighlightSection
-    eyebrow="Empfehlung"
-    title="Starte mit dem großen Balkonspeicher Vergleich."
-    text="Wenn du noch unsicher bist, welches System zu deinem Haushalt passt, ist der Vergleich der beste Einstieg."
-    href="/balkonspeicher-vergleich"
-    cta="Zum Vergleich"
-    image="/images/generated/balkonspeicher-test.webp"
-    imageAlt="Balkonspeicher auf modernem Balkon"
-  />
+    <h1>
+      Balkonspeicher Hersteller
+    </h1>
 
-  <HomeFeatureCards cards={featureCards} />
+    <p>
+      EcoFlow, Anker, Zendure und Solakon gehören aktuell zu den wichtigsten Anbietern für Balkonspeicher. Hier findest du die Hersteller im Überblick.
+    </p>
+  </section>
 
-  {
-    comparisonPages.length > 0 && (
-      <HomeArticleGrid
-        eyebrow="Vergleiche"
-        title="Direkte Entscheidungen treffen."
-        pages={comparisonPages}
-      />
-    )
-  }
+  <section class="manufacturer-answer">
+    <strong>
+      Kurzantwort
+    </strong>
 
-  <HomeTrustSection items={trustItems} />
+    <p>
+      Welcher Hersteller am besten passt, hängt vor allem davon ab, ob du ein einfaches Komplettsystem, maximale Erweiterbarkeit oder ein flexibles Nachrüstsystem suchst.
+    </p>
+  </section>
 
-  <HomeManufacturerGrid manufacturers={manufacturers} />
+  <section class="home-section">
+    <div class="home-section-header">
+      <span>
+        Übersicht
+      </span>
 
-  <HomeArticleGrid
-    eyebrow="Beliebte Ratgeber"
-    title="Die wichtigsten Fragen zuerst."
-    pages={featuredPages}
-  />
+      <h2>
+        Hersteller vergleichen
+      </h2>
+    </div>
 
-  <HomeArticleGrid
-    eyebrow="Neueste Inhalte"
-    title="Aktuelle Artikel und Vergleiche."
-    pages={latestPages}
-  />
+    <div class="home-manufacturer-grid-v2">
+      {Object.values(manufacturers).map((manufacturer) => (
+        <a
+          href={`/hersteller/${manufacturer.slug}`}
+          class="home-manufacturer-card-v2"
+        >
+          <div class="manufacturer-logo-placeholder">
+            {manufacturer.label.slice(0, 1)}
+          </div>
+
+          <strong>
+            {manufacturer.label}
+          </strong>
+
+          <p>
+            {manufacturer.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
 </AffiliateLayout>

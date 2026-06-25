@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import AffiliateLayout from "../layouts/AffiliateLayout.astro";
 import HomeHero from "../components/home/HomeHero.astro";
+import HomeStatsSection from "../components/home/HomeStatsSection.astro";
 import HomeHighlightSection from "../components/home/HomeHighlightSection.astro";
 import HomeFeatureCards from "../components/home/HomeFeatureCards.astro";
 import HomeTrustSection from "../components/home/HomeTrustSection.astro";
@@ -84,6 +85,12 @@ const manufacturers = [
     text: "Einsteigerfreundliche Komplettlösungen."
   }
 ];
+
+const stats = [
+  { value: "15+", label: "Ratgeber" },
+  { value: "4", label: "Hersteller" },
+  { value: "100%", label: "Balkonspeicher Fokus" }
+];
 ---
 
 <AffiliateLayout
@@ -105,12 +112,9 @@ const manufacturers = [
     }}
     image="/images/generated/home-hero.webp"
     imageAlt="Moderner Balkon mit Solarmodul und Balkonspeicher"
-    stats={[
-      { value: "15+", label: "Ratgeber" },
-      { value: "4", label: "Hersteller" },
-      { value: "100%", label: "Balkonspeicher Fokus" }
-    ]}
   />
+
+  <HomeStatsSection stats={stats} />
 
   <HomeHighlightSection
     eyebrow="Unsere Empfehlung"

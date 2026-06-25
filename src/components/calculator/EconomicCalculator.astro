@@ -1,0 +1,158 @@
+<section class="economic-calculator">
+  <div class="calculator-shell">
+    <div class="calculator-intro">
+      <span>Wirtschaftlichkeitsrechner</span>
+
+      <h2>
+        Lohnt sich ein Balkonspeicher für dich?
+      </h2>
+
+      <p>
+        Beantworte drei Fragen und erhalte eine erste Einschätzung zu Speichergröße, Ersparnis und Amortisation.
+      </p>
+    </div>
+
+    <div class="calculator-grid">
+      <div class="calculator-card">
+        <label>
+          Stromverbrauch pro Jahr
+
+          <select id="calcConsumption">
+            <option value="1800">bis 2.000 kWh</option>
+            <option value="3000">2.000 bis 3.500 kWh</option>
+            <option value="4500">3.500 bis 5.000 kWh</option>
+            <option value="6000">mehr als 5.000 kWh</option>
+          </select>
+        </label>
+
+        <label>
+          Strompreis
+
+          <select id="calcPrice">
+            <option value="0.30">30 Cent/kWh</option>
+            <option value="0.35" selected>35 Cent/kWh</option>
+            <option value="0.40">40 Cent/kWh</option>
+            <option value="0.45">45 Cent/kWh</option>
+          </select>
+        </label>
+
+        <label>
+          Hauptverbrauch
+
+          <select id="calcUsage">
+            <option value="day">tagsüber</option>
+            <option value="evening" selected>abends</option>
+            <option value="mixed">gleichmäßig</option>
+          </select>
+        </label>
+
+        <button id="calculateEconomics">
+          Ergebnis berechnen
+        </button>
+      </div>
+
+      <div id="economicResult" class="calculator-result-card">
+        <span>
+          Deine Einschätzung
+        </span>
+
+        <h3>
+          Noch keine Berechnung
+        </h3>
+
+        <p>
+          Wähle deine Werte aus und starte die Berechnung.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const button = document.getElementById("calculateEconomics");
+  const consumption = document.getElementById("calcConsumption");
+  const price = document.getElementById("calcPrice");
+  const usage = document.getElementById("calcUsage");
+  const result = document.getElementById("economicResult");
+
+  button?.addEventListener("click", () => {
+    const annualConsumption = Number(consumption?.value);
+    const electricityPrice = Number(price?.value);
+    const usagePattern = usage?.value;
+
+    let storageSize = "1 kWh";
+    let product = "Anker SOLIX Solarbank 3 Pro";
+    let productUrl = "/produkt/anker-solix-solarbank-3-pro";
+    let extraSavingsFactor = 0.18;
+
+    if (annualConsumption >= 2500) {
+      storageSize = "2 kWh";
+      product = "EcoFlow STREAM Ultra";
+      productUrl = "/produkt/ecoflow-stream-ultra";
+      extraSavingsFactor = 0.22;
+    }
+
+    if (annualConsumption >= 4500) {
+      storageSize = "3 kWh oder modular erweiterbar";
+      product = "Zendure SolarFlow";
+      productUrl = "/produkt/zendure-solarflow";
+      extraSavingsFactor = 0.26;
+    }
+
+    if (usagePattern === "day") {
+      extraSavingsFactor = extraSavingsFactor * 0.65;
+    }
+
+    if (usagePattern === "evening") {
+      extraSavingsFactor = extraSavingsFactor * 1.15;
+    }
+
+    const estimatedSolarYield = 750;
+    const additionalSelfUse = estimatedSolarYield * extraSavingsFactor;
+    const yearlySavings = Math.round(additionalSelfUse * electricityPrice);
+
+    const estimatedInvestment =
+      storageSize === "1 kWh"
+        ? 900
+        : storageSize === "2 kWh"
+          ? 1400
+          : 1900;
+
+    const amortization = Math.max(
+      4,
+      Math.round(estimatedInvestment / Math.max(yearlySavings, 1))
+    );
+
+    result.innerHTML = `
+      <span>Deine Empfehlung</span>
+
+      <h3>${storageSize}</h3>
+
+      <p>
+        Bei deinem Verbrauch kann ein Speicher dieser Größenordnung sinnvoll sein,
+        wenn regelmäßig überschüssiger Solarstrom entsteht.
+      </p>
+
+      <div class="calculator-result-metrics">
+        <div>
+          <strong>ca. ${yearlySavings} €</strong>
+          <small>Ersparnis pro Jahr</small>
+        </div>
+
+        <div>
+          <strong>ca. ${amortization} Jahre</strong>
+          <small>grobe Amortisation</small>
+        </div>
+      </div>
+
+      <p>
+        <strong>Passende Lösung:</strong><br />
+        ${product}
+      </p>
+
+      <a href="${productUrl}" class="calculator-result-button">
+        Produkt ansehen
+      </a>
+    `;
+  });
+</script>

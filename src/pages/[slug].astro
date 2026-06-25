@@ -7,20 +7,28 @@ import RelatedArticles from "../components/RelatedArticles.astro";
 import ProductBox from "../components/ProductBox.astro";
 import ProductComparisonTable from "../components/ProductComparisonTable.astro";
 import StorageCalculator from "../components/StorageCalculator.astro";
+import EconomicCalculator from "../components/calculator/EconomicCalculator.astro";
 import IntentCTA from "../components/IntentCTA.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
+import InternalLinks from "../components/InternalLinks.astro";
 import { recommendations } from "../data/recommendations";
+import { internalLinks } from "../data/internalLinks";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
   return pages.map((page) => ({
-    params: { slug: page.data.slug },
-    props: { page },
+    params: {
+      slug: page.data.slug,
+    },
+    props: {
+      page,
+    },
   }));
 }
 
 const { page } = Astro.props;
+
 const { Content, headings } = await render(page);
 
 const allPages = await getCollection("pages");
@@ -35,7 +43,10 @@ const relatedPages = allPages
       page.data.tags.includes(tag)
     );
 
-    return candidate.data.category === page.data.category || commonTags.length > 0;
+    return (
+      candidate.data.category === page.data.category ||
+      commonTags.length > 0
+    );
   })
   .sort((a, b) => {
     const aMatches = a.data.tags.filter((tag) =>
@@ -53,9 +64,32 @@ const relatedPages = allPages
 const showStorageCalculator =
   page.data.slug === "balkonspeicher-groesse-berechnen";
 
+const showEconomicCalculator =
+  page.data.slug === "balkonspeicher-wirtschaftlichkeit" ||
+  page.data.slug === "balkonspeicher-amortisation";
+
 const recommendation = page.data.intent
   ? recommendations[page.data.intent]
   : null;
+
+const topicKey =
+  page.data.topic &&
+  page.data.topic in internalLinks
+    ? page.data.topic
+    : "allgemein";
+
+const internalLinkSlugs =
+  internalLinks[topicKey].filter(
+    (slug) => slug !== page.data.slug
+  );
+
+const internalLinkPages =
+  internalLinkSlugs
+    .map((slug) =>
+      allPages.find((candidate) => candidate.data.slug === slug)
+    )
+    .filter(Boolean)
+    .slice(0, 4);
 ---
 
 <AffiliateLayout
@@ -103,6 +137,8 @@ const recommendation = page.data.intent
 
     {showStorageCalculator && <StorageCalculator />}
 
+    {showEconomicCalculator && <EconomicCalculator />}
+
     {recommendation && (
       <ProductBox productKey={recommendation.recommendedProduct} />
     )}
@@ -110,6 +146,8 @@ const recommendation = page.data.intent
     {recommendation && (
       <ProductComparisonTable productKeys={recommendation.comparisonProducts} />
     )}
+
+    <InternalLinks pages={internalLinkPages} />
 
     {recommendation && (
       <IntentCTA

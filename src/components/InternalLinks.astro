@@ -1,0 +1,53 @@
+---
+interface Page {
+  data: {
+    slug: string;
+    title: string;
+    description: string;
+    categoryLabel: string;
+  };
+}
+
+interface Props {
+  pages: Page[];
+}
+
+const { pages } = Astro.props;
+---
+
+{
+  pages.length > 0 && (
+    <section class="internal-links">
+      <div class="internal-links-header">
+        <span>
+          Weiterführende Inhalte
+        </span>
+
+        <h2>
+          Das könnte dich auch interessieren
+        </h2>
+      </div>
+
+      <div class="internal-links-grid">
+        {pages.map((page) => (
+          <a
+            href={`/${page.data.slug}`}
+            class="internal-link-card"
+          >
+            <div class="card-category">
+              {page.data.categoryLabel}
+            </div>
+
+            <h3>
+              {page.data.title}
+            </h3>
+
+            <p>
+              {page.data.description}
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

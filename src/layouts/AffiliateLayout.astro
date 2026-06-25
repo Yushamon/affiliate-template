@@ -17,39 +17,134 @@ interface Props {
   faq?: FAQItem[];
 }
 
-const { title, description, canonical = "/", ogImage, faq = [] } = Astro.props;
+const {
+  title,
+  description,
+  canonical = "/",
+  ogImage,
+  faq = []
+} = Astro.props;
 
 const canonicalUrl = `${site.domain}${canonical}`;
-const imageUrl = ogImage ? `${site.domain}${ogImage}` : undefined;
+const imageUrl = ogImage
+  ? `${site.domain}${ogImage}`
+  : `${site.domain}/images/generated/home-hero.webp`;
+
+const isHome = canonical === "/";
 ---
 
 <html lang="de">
   <head>
     <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
 
     <title>{title}</title>
 
-    <meta name="description" content={description} />
+    <meta
+      name="description"
+      content={description}
+    />
 
-    <link rel="canonical" href={canonicalUrl} />
+    <meta
+      name="robots"
+      content="index,follow"
+    />
 
-    <meta name="robots" content="index,follow" />
+    <link
+      rel="canonical"
+      href={canonicalUrl}
+    />
 
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:site_name" content={site.siteName} />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
 
-    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta
+      property="og:type"
+      content={isHome ? "website" : "article"}
+    />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta
+      property="og:title"
+      content={title}
+    />
 
-    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    <meta
+      property="og:description"
+      content={description}
+    />
+
+    <meta
+      property="og:url"
+      content={canonicalUrl}
+    />
+
+    <meta
+      property="og:site_name"
+      content={site.siteName}
+    />
+
+    <meta
+      property="og:image"
+      content={imageUrl}
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={title}
+    />
+
+    <meta
+      name="twitter:description"
+      content={description}
+    />
+
+    <meta
+      name="twitter:image"
+      content={imageUrl}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: site.siteName,
+        url: site.domain,
+        description: site.siteDescription
+      })}
+    />
+
+    {
+      !isHome && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: title,
+            description,
+            url: canonicalUrl,
+            image: imageUrl,
+            publisher: {
+              "@type": "Organization",
+              name: site.siteName
+            }
+          })}
+        />
+      )
+    }
 
     {
       faq.length > 0 && (
@@ -63,9 +158,9 @@ const imageUrl = ogImage ? `${site.domain}${ogImage}` : undefined;
               name: item.question,
               acceptedAnswer: {
                 "@type": "Answer",
-                text: item.answer,
-              },
-            })),
+                text: item.answer
+              }
+            }))
           })}
         />
       )

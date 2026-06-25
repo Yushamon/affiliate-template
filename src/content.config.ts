@@ -25,23 +25,19 @@ const pages = defineCollection({
       })
     ).optional(),
 
-    intent:
-      z.string().optional(),
+    intent: z.string().optional(),
 
-    hubPriority:
-      z.number().optional(),
+    topic: z.string().optional(),
 
-    heroImage:
-      z.string().optional(),
+    hubPriority: z.number().optional(),
 
-    heroPrompt:
-      z.string().optional(),
+    heroImage: z.string().optional(),
 
-    ogImage:
-      z.string().optional(),
+    heroPrompt: z.string().optional(),
 
-    featured:
-      z.boolean().optional()
+    ogImage: z.string().optional(),
+
+    featured: z.boolean().optional()
   })
 });
 

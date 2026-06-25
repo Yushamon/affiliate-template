@@ -1,23 +1,13 @@
 ---
 import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
 import ProductBox from "../../components/ProductBox.astro";
+import RelatedArticles from "../../components/RelatedArticles.astro";
 import { products, type ProductKey } from "../../data/products";
+import { manufacturers } from "../../data/manufacturers";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const manufacturers = [
-    ...new Map(
-      Object.values(products).map((product) => [
-        product.manufacturer,
-        {
-          slug: product.manufacturer,
-          label: product.manufacturerLabel
-        }
-      ])
-    ).values()
-  ];
-
-  return manufacturers.map((manufacturer) => ({
+  return Object.values(manufacturers).map((manufacturer) => ({
     params: {
       manufacturer: manufacturer.slug
     },
@@ -35,71 +25,122 @@ const manufacturerProducts = Object.entries(products).filter(
 
 const pages = await getCollection("pages");
 
-const manufacturerArticles = pages.filter((page) => {
-  const slug = page.data.slug.toLowerCase();
-  const label = manufacturer.label.toLowerCase();
-  const manufacturerSlug = manufacturer.slug.toLowerCase();
-
-  return slug.includes(label) || slug.includes(manufacturerSlug);
-});
+const manufacturerArticles = pages
+  .filter((page) =>
+    page.data.tags.includes(manufacturer.slug) ||
+    page.data.slug.includes(manufacturer.slug)
+  )
+  .slice(0, 3);
 ---
 
 <AffiliateLayout
-  title={`${manufacturer.label} Balkonspeicher`}
-  description={`Produkte, Erfahrungen und Empfehlungen von ${manufacturer.label}.`}
+  title={manufacturer.title}
+  description={manufacturer.description}
   canonical={`/hersteller/${manufacturer.slug}`}
 >
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">
-        Hersteller
-      </p>
+  <section class="manufacturer-hero">
+    <div class="manufacturer-badge">
+      Hersteller
+    </div>
 
-      <h1>
-        {manufacturer.label}
-      </h1>
+    <h1>
+      {manufacturer.title}
+    </h1>
+
+    <p>
+      {manufacturer.description}
+    </p>
+  </section>
+
+  <section class="manufacturer-answer">
+    <strong>
+      Kurzantwort
+    </strong>
+
+    <p>
+      {manufacturer.shortAnswer}
+    </p>
+  </section>
+
+  <section class="manufacturer-content">
+    <div>
+      <h2>
+        Warum {manufacturer.label}?
+      </h2>
 
       <p>
-        Produkte, Erfahrungen und Empfehlungen von {manufacturer.label}.
+        {manufacturer.intro}
       </p>
+    </div>
+
+    <div class="manufacturer-info-grid">
+      <div class="manufacturer-info-card">
+        <h3>
+          Stärken
+        </h3>
+
+        <ul>
+          {manufacturer.strengths.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="manufacturer-info-card">
+        <h3>
+          Geeignet für
+        </h3>
+
+        <ul>
+          {manufacturer.suitableFor.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="manufacturer-products">
+    <div class="manufacturer-section-header">
+      <span>
+        Produkte
+      </span>
+
+      <h2>
+        Produkte von {manufacturer.label}
+      </h2>
+    </div>
+
+    {
+      manufacturerProducts.map(([key]) => (
+        <ProductBox productKey={key as ProductKey} />
+      ))
+    }
+  </section>
+
+  <section class="manufacturer-alternatives">
+    <div class="manufacturer-section-header">
+      <span>
+        Alternativen
+      </span>
+
+      <h2>
+        Andere Hersteller vergleichen
+      </h2>
+    </div>
+
+    <div class="manufacturer-alternative-grid">
+      {manufacturer.alternatives.map((alternative) => (
+        <a href={alternative.href} class="manufacturer-alternative-card">
+          {alternative.label}
+        </a>
+      ))}
     </div>
   </section>
 
   {
     manufacturerArticles.length > 0 && (
-      <>
-        <h2 class="section-title">
-          Erfahrungen und Ratgeber
-        </h2>
-
-        <div class="card-grid">
-          {manufacturerArticles.map((page) => (
-            <a class="card" href={`/${page.data.slug}`}>
-              <div class="card-category">
-                Erfahrungsbericht
-              </div>
-
-              <h3>
-                {page.data.title}
-              </h3>
-
-              <p>
-                {page.data.description}
-              </p>
-            </a>
-          ))}
-        </div>
-      </>
+      <RelatedArticles pages={manufacturerArticles} />
     )
-  }
-
-  <h2 class="section-title">
-    Produkte von {manufacturer.label}
-  </h2>
-
-  {
-    manufacturerProducts.map(([key]) => (
-      <ProductBox productKey={key as ProductKey} />
-    ))
   }
 </AffiliateLayout>
