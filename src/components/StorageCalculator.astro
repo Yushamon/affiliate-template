@@ -1,35 +1,37 @@
 <div class="storage-calculator">
-  <h2>
-    Balkonspeicher Rechner
-  </h2>
+  <h2>Balkonspeicher Rechner</h2>
 
   <p>
-    Berechne eine erste Einschätzung, welche Speichergröße zu deinem Haushalt passen könnte.
+    Berechne eine erste Einschätzung, welche Speichergröße zu deinem Haushalt passt.
   </p>
 
   <div class="calculator-form">
-    <label>
+    <label for="annualConsumption">
       Stromverbrauch pro Jahr in kWh
-
-      <input
-        id="annualConsumption"
-        type="number"
-        placeholder="z.B. 3200"
-      />
     </label>
 
-    <label>
+    <input
+      id="annualConsumption"
+      type="number"
+      min="500"
+      max="12000"
+      step="100"
+      placeholder="z. B. 3200"
+      inputmode="numeric"
+    />
+
+    <label for="householdSize">
       Haushaltsgröße
-
-      <select id="householdSize">
-        <option value="single">1 Person</option>
-        <option value="couple">2 Personen</option>
-        <option value="family">3 bis 4 Personen</option>
-        <option value="large">5+ Personen</option>
-      </select>
     </label>
 
-    <button id="calculateStorage">
+    <select id="householdSize">
+      <option value="single">1 Person</option>
+      <option value="couple">2 Personen</option>
+      <option value="family">3 bis 4 Personen</option>
+      <option value="large">5+ Personen</option>
+    </select>
+
+    <button id="calculateStorage" type="button">
       Speichergröße berechnen
     </button>
   </div>
@@ -37,8 +39,8 @@
   <div
     id="storageResult"
     class="calculator-result"
-  >
-  </div>
+    aria-live="polite"
+  ></div>
 </div>
 
 <script>
@@ -47,46 +49,78 @@
   const household = document.getElementById("householdSize");
   const result = document.getElementById("storageResult");
 
+  const recommendations = {
+    small: {
+      size: "1 kWh",
+      explanation:
+        "Für kleine Haushalte reicht häufig ein kompakter Speicher. Ein zu großes System würde oft nicht vollständig geladen.",
+      product: "Anker SOLIX Solarbank 3 Pro",
+      productUrl: "/produkt/anker-solix-solarbank-3-pro",
+    },
+    medium: {
+      size: "2 kWh",
+      explanation:
+        "Für viele Haushalte ist ein Speicher um 2 kWh der beste Kompromiss aus Kosten, Eigenverbrauch und Alltagstauglichkeit.",
+      product: "EcoFlow STREAM Ultra",
+      productUrl: "/produkt/ecoflow-stream-ultra",
+    },
+    large: {
+      size: "3 kWh oder modular erweiterbar",
+      explanation:
+        "Bei höherem Stromverbrauch kann ein größerer oder modular erweiterbarer Speicher sinnvoll sein. Wichtig ist, dass regelmäßig genug Solarstromüberschuss entsteht.",
+      product: "Zendure SolarFlow",
+      productUrl: "/produkt/zendure-solarflow",
+    },
+  };
+
+  function getRecommendation(value, householdSize) {
+    if (value <= 2000 && householdSize === "single") {
+      return recommendations.small;
+    }
+
+    if (value <= 2500 && householdSize !== "large") {
+      return recommendations.small;
+    }
+
+    if (value <= 4000 && householdSize !== "large") {
+      return recommendations.medium;
+    }
+
+    return recommendations.large;
+  }
+
   button?.addEventListener("click", () => {
     const value = Number(input?.value);
     const householdSize = household?.value;
 
     if (!value || value <= 0) {
-      result.innerHTML =
-        "Bitte gib einen gültigen Stromverbrauch ein.";
+      result.classList.add("is-visible");
+      result.innerHTML = `
+        <strong>Bitte gib einen gültigen Stromverbrauch ein.</strong>
+        <p>Du findest deinen Jahresverbrauch meist auf der letzten Stromrechnung.</p>
+      `;
       return;
     }
 
-    let size = "";
-    let explanation = "";
-    let product = "";
-    let productUrl = "";
+    const recommendation = getRecommendation(value, householdSize);
 
-    if (value < 2000 || householdSize === "single") {
-      size = "1 kWh";
-      explanation =
-        "Für kleine Haushalte reicht häufig ein kompakter Speicher. Ein zu großes System würde oft nicht vollständig geladen.";
-      product = "Anker SOLIX Solarbank 3 Pro";
-      productUrl = "/produkt/anker-solix-solarbank-3-pro";
-    } else if (value < 4000 || householdSize === "couple") {
-      size = "2 kWh";
-      explanation =
-        "Für viele Haushalte ist ein Speicher um 2 kWh ein guter Kompromiss aus Kosten, Nutzen und Alltagstauglichkeit.";
-      product = "EcoFlow STREAM Ultra";
-      productUrl = "/produkt/ecoflow-stream-ultra";
-    } else {
-      size = "3 kWh oder modular erweiterbar";
-      explanation =
-        "Bei höherem Stromverbrauch kann ein größerer oder modular erweiterbarer Speicher sinnvoll sein. Wichtig ist, dass regelmäßig genug Solarstromüberschuss entsteht.";
-      product = "Zendure SolarFlow";
-      productUrl = "/produkt/zendure-solarflow";
-    }
-
+    result.classList.add("is-visible");
     result.innerHTML = `
-      <strong>Empfohlene Speichergröße: ${size}</strong>
-      <p>${explanation}</p>
-      <p><strong>Passende Lösung:</strong> ${product}</p>
-      <a href="${productUrl}" class="calculator-link">
+      <div class="result-badge">Empfehlung</div>
+
+      <strong class="result-title">
+        ${recommendation.size} Speicherkapazität
+      </strong>
+
+      <p>
+        ${recommendation.explanation}
+      </p>
+
+      <p>
+        <strong>Passende Lösung:</strong> ${recommendation.product}
+      </p>
+
+      <a href="${recommendation.productUrl}" class="calculator-link">
         Produkt ansehen
       </a>
     `;

@@ -34,6 +34,8 @@ faq:
     answer: "Meist sind 1 bis 2 kWh sinnvoll. Größere Speicher lohnen sich vor allem bei höherem Stromverbrauch oder einer späteren Erweiterung."
 ---
 
+import StorageCalculator from "@/components/StorageCalculator.astro";
+
 # Balkonspeicher Größe berechnen
 
 Viele Käufer stellen sich vor dem Kauf dieselbe Frage:
@@ -42,7 +44,7 @@ Viele Käufer stellen sich vor dem Kauf dieselbe Frage:
 
 Die richtige Speichergröße entscheidet darüber, wie viel Solarstrom du tatsächlich selbst nutzen kannst. Ein zu kleiner Speicher verschenkt überschüssige Energie. Ein zu großer Speicher kostet dagegen unnötig Geld und rechnet sich häufig erst nach vielen Jahren.
 
-Nutze zuerst unseren Rechner und finde in wenigen Sekunden heraus, welche Speichergröße zu deinem Haushalt passt.
+Nutze zuerst den Rechner und finde in wenigen Sekunden heraus, welche Speichergröße zu deinem Haushalt passt.
 
 <div class="toc-box">
 <p class="toc-title">Inhalt</p>
@@ -52,6 +54,7 @@ Nutze zuerst unseren Rechner und finde in wenigen Sekunden heraus, welche Speich
 <li><a href="#empfehlung">Empfohlene Speichergröße</a></li>
 <li><a href="#warum">Warum die Speichergröße wichtig ist</a></li>
 <li><a href="#haushalt">Welche Größe passt zu deinem Haushalt?</a></li>
+<li><a href="#faktoren">Wichtige Faktoren</a></li>
 <li><a href="#tipps">Worauf solltest du beim Kauf achten?</a></li>
 <li><a href="#fazit">Fazit</a></li>
 </ul>
@@ -61,9 +64,13 @@ Nutze zuerst unseren Rechner und finde in wenigen Sekunden heraus, welche Speich
 
 ## <a id="rechner"></a>Balkonspeicher Rechner
 
-> Hier wird der Rechner eingebunden.
+Berechne in wenigen Sekunden, welche Speichergröße für dein Balkonkraftwerk sinnvoll ist. Gib einfach deinen jährlichen Stromverbrauch ein und erhalte eine erste Empfehlung.
 
-Gib einfach deinen jährlichen Stromverbrauch ein. Der Rechner liefert eine erste Empfehlung für die passende Speichergröße.
+<div class="calculator-wrapper">
+  <StorageCalculator />
+</div>
+
+> **Hinweis:** Die Empfehlung dient als Orientierung für typische Haushalte mit einem 800-Watt-Balkonkraftwerk.
 
 ---
 
@@ -76,17 +83,17 @@ Gib einfach deinen jährlichen Stromverbrauch ein. Der Rechner liefert eine erst
 | über 4.000 kWh | 3 bis 4 kWh |
 | spätere Erweiterung geplant | modulares System |
 
-> 💡 **Tipp:** Für die meisten Haushalte mit einem 800-Watt-Balkonkraftwerk ist ein **2-kWh-Speicher** die wirtschaftlichste Lösung.
+> 💡 **Tipp:** Für die meisten Haushalte mit einem 800-Watt-Balkonkraftwerk ist ein **2-kWh-Speicher** die beste Kombination aus Preis, Eigenverbrauch und Wirtschaftlichkeit.
 
 ---
 
 ## <a id="warum"></a>Warum die richtige Speichergröße wichtig ist
 
-Viele Käufer achten ausschließlich auf die Kapazität des Speichers.
+Viele Käufer achten ausschließlich auf die maximale Kapazität des Speichers.
 
-Entscheidend ist jedoch, wie häufig der Speicher vollständig geladen und wieder entladen wird.
+Entscheidend ist jedoch nicht, wie groß der Speicher theoretisch ist, sondern wie häufig er im Alltag tatsächlich geladen und wieder entladen wird.
 
-Ein typisches Balkonkraftwerk erzeugt pro Jahr zwischen 600 und 1.000 kWh Solarstrom. Wird der Speicher deutlich größer gewählt als der tatsächlich verfügbare Überschuss, bleibt ein Teil der Kapazität dauerhaft ungenutzt.
+Ein Balkonkraftwerk erzeugt nur eine begrenzte Menge Strom. Wird der Speicher deutlich größer gewählt als der täglich verfügbare Überschuss, bleibt ein Teil der Kapazität dauerhaft ungenutzt.
 
 Dadurch steigen die Anschaffungskosten, ohne dass der Eigenverbrauch spürbar zunimmt.
 
@@ -121,8 +128,11 @@ Geeignet für:
 * Singles
 * kleine Wohnungen
 * geringer Stromverbrauch
+* wenig Stromverbrauch am Abend
 
 **Empfehlung:** 1 kWh
+
+Ein Speicher mit 1 kWh reicht häufig aus, um kleinere Überschüsse aus dem Balkonkraftwerk in die Abendstunden zu verschieben.
 
 ---
 
@@ -133,10 +143,11 @@ Geeignet für:
 * Paare
 * kleinere Familien
 * durchschnittlicher Stromverbrauch
+* regelmäßiger Verbrauch am Abend
 
 **Empfehlung:** 2 kWh
 
-Für viele Haushalte ist dies der ideale Kompromiss zwischen Anschaffungskosten und Eigenverbrauch.
+Für viele Haushalte ist dies der ideale Kompromiss zwischen Anschaffungskosten, Eigenverbrauch und Alltagstauglichkeit.
 
 ---
 
@@ -148,16 +159,19 @@ Geeignet für:
 * Homeoffice
 * hoher Abendverbrauch
 * viele elektrische Geräte
+* geplante Erweiterung des Balkonkraftwerks
 
 **Empfehlung:** 3 bis 4 kWh
 
-Modulare Systeme bieten den Vorteil, dass sich die Kapazität später erweitern lässt.
+Modulare Systeme sind hier besonders sinnvoll, weil sich die Kapazität später erweitern lässt.
 
 ---
 
-## Welche Faktoren beeinflussen die optimale Speichergröße?
+## <a id="faktoren"></a>Welche Faktoren beeinflussen die optimale Speichergröße?
 
-Neben dem Stromverbrauch spielen weitere Faktoren eine wichtige Rolle:
+Neben dem Stromverbrauch spielen weitere Faktoren eine wichtige Rolle.
+
+Dazu gehören:
 
 * Größe des Balkonkraftwerks
 * Ausrichtung der Solarmodule
@@ -165,6 +179,7 @@ Neben dem Stromverbrauch spielen weitere Faktoren eine wichtige Rolle:
 * Stromverbrauch am Abend
 * Elektroauto oder Wärmepumpe
 * geplante Erweiterungen
+* Anzahl der Personen im Haushalt
 
 Je mehr überschüssiger Solarstrom tagsüber entsteht und erst später genutzt wird, desto sinnvoller ist ein größerer Speicher.
 
@@ -178,20 +193,23 @@ Ein Batteriespeicher verschiebt überschüssigen Solarstrom vom Tag in die Abend
 
 Wer tagsüber fast den gesamten Solarstrom direkt verbraucht, benötigt meist nur einen kleinen Speicher.
 
-Wer dagegen tagsüber außer Haus ist und den Strom überwiegend abends nutzt, profitiert deutlich stärker von einem Batteriespeicher.
+Wer dagegen tagsüber außer Haus ist und den Strom überwiegend abends nutzt, profitiert deutlich stärker von einem passenden Balkonspeicher.
 
 ---
 
 ## <a id="tipps"></a>Worauf solltest du beim Kauf achten?
 
-Neben der Kapazität spielen weitere Kriterien eine wichtige Rolle:
+Neben der Kapazität spielen weitere Kriterien eine wichtige Rolle.
+
+Achte vor allem auf:
 
 * Erweiterbarkeit
 * Garantie
 * Herstellerqualität
 * App-Steuerung
-* Kompatibilität mit Wechselrichter
-* Notstromfunktion (falls gewünscht)
+* Kompatibilität mit Wechselrichter und Balkonkraftwerk
+* einfache Installation
+* Notstromfunktion, falls gewünscht
 
 Gerade bei einer Nutzung über viele Jahre sind diese Punkte oft wichtiger als einige hundert Wattstunden mehr Speicherkapazität.
 
@@ -201,15 +219,19 @@ Gerade bei einer Nutzung über viele Jahre sind diese Punkte oft wichtiger als e
 
 ### Kann ein Balkonspeicher zu groß sein?
 
-Ja. Wird der Speicher nur selten vollständig geladen, verschlechtert sich die Wirtschaftlichkeit.
+Ja. Wird der Speicher nur selten vollständig geladen, verschlechtert sich die Wirtschaftlichkeit. Deshalb sollte die Kapazität immer zum Stromverbrauch und zur Leistung des Balkonkraftwerks passen.
 
 ### Reicht ein 1-kWh-Speicher aus?
 
-Für Singles oder kleine Haushalte reicht ein 1-kWh-Speicher häufig aus.
+Für Singles, kleine Wohnungen oder Haushalte mit geringem Stromverbrauch reicht ein 1-kWh-Speicher häufig aus.
 
 ### Lohnt sich ein 5-kWh-Speicher?
 
-Für klassische 800-Watt-Balkonkraftwerke lohnt sich ein 5-kWh-Speicher nur selten. Größere Speicher sind meist erst bei leistungsstärkeren PV-Anlagen sinnvoll.
+Für klassische 800-Watt-Balkonkraftwerke lohnt sich ein 5-kWh-Speicher nur selten. Größere Speicher sind meist erst bei leistungsstärkeren PV-Anlagen, hohem Stromverbrauch oder geplanten Erweiterungen sinnvoll.
+
+### Was ist besser: kleiner Speicher oder großer Speicher?
+
+Meist ist ein passender, modular erweiterbarer Speicher besser als ein direkt zu großer Speicher. So bleibt das System flexibel und die Anschaffungskosten bleiben niedriger.
 
 ---
 
