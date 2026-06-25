@@ -73,8 +73,7 @@ const recommendation = page.data.intent
   : null;
 
 const topicKey =
-  page.data.topic &&
-  page.data.topic in internalLinks
+  page.data.topic && page.data.topic in internalLinks
     ? page.data.topic
     : "allgemein";
 
@@ -83,13 +82,12 @@ const internalLinkSlugs =
     (slug) => slug !== page.data.slug
   );
 
-const internalLinkPages =
-  internalLinkSlugs
-    .map((slug) =>
-      allPages.find((candidate) => candidate.data.slug === slug)
-    )
-    .filter(Boolean)
-    .slice(0, 4);
+const internalLinkPages = internalLinkSlugs
+  .map((slug) =>
+    allPages.find((candidate) => candidate.data.slug === slug)
+  )
+  .filter(Boolean)
+  .slice(0, 4);
 ---
 
 <AffiliateLayout
@@ -133,29 +131,49 @@ const internalLinkPages =
   <article class="article">
     <TableOfContents headings={headings} />
 
+    {
+      showStorageCalculator && (
+        <section id="rechner" class="calculator-section">
+          <StorageCalculator />
+        </section>
+      )
+    }
+
     <Content />
 
-    {showStorageCalculator && <StorageCalculator />}
+    {
+      showEconomicCalculator && (
+        <section id="wirtschaftlichkeitsrechner" class="calculator-section">
+          <EconomicCalculator />
+        </section>
+      )
+    }
 
-    {showEconomicCalculator && <EconomicCalculator />}
+    {
+      recommendation && (
+        <ProductBox productKey={recommendation.recommendedProduct} />
+      )
+    }
 
-    {recommendation && (
-      <ProductBox productKey={recommendation.recommendedProduct} />
-    )}
-
-    {recommendation && (
-      <ProductComparisonTable productKeys={recommendation.comparisonProducts} />
-    )}
+    {
+      recommendation && (
+        <ProductComparisonTable
+          productKeys={recommendation.comparisonProducts}
+        />
+      )
+    }
 
     <InternalLinks pages={internalLinkPages} />
 
-    {recommendation && (
-      <IntentCTA
-        title={recommendation.ctaTitle}
-        text={recommendation.ctaText}
-        url={recommendation.ctaUrl}
-      />
-    )}
+    {
+      recommendation && (
+        <IntentCTA
+          title={recommendation.ctaTitle}
+          text={recommendation.ctaText}
+          url={recommendation.ctaUrl}
+        />
+      )
+    }
 
     <FAQ items={page.data.faq} />
   </article>
