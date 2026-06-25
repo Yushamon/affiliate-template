@@ -7,13 +7,14 @@ interface Props {
 }
 
 const { productKey, currentProductKey } = Astro.props;
+
 const product = products[productKey];
 
-const isCurrentProduct = currentProductKey === productKey;
+const isCurrentProduct =
+  currentProductKey === productKey;
 
 const hasAffiliate =
-  product?.affiliateUrl &&
-  product.affiliateUrl.length > 0;
+  Boolean(product?.affiliateUrl && product.affiliateUrl.trim().length > 0);
 
 const buttonLabel = hasAffiliate
   ? "Preis bei Amazon ansehen"
@@ -23,7 +24,8 @@ const buttonHref = hasAffiliate
   ? product.affiliateUrl
   : product.productUrl;
 
-const showButton = !isCurrentProduct || hasAffiliate;
+const showButton =
+  hasAffiliate || !isCurrentProduct;
 ---
 
 {product && (
