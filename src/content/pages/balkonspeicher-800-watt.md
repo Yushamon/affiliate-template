@@ -20,7 +20,7 @@ intent: "vergleich"
 
 topic: "wirtschaftlichkeit"
 
-heroImage: "/images/generated/balkonspeicher-800-watt.webp"
+heroImage: "/images/generated/balkonkraftwerk-800w.webp"
 
 heroPrompt: "Modernes 800-Watt-Balkonkraftwerk mit hochwertigem Balkonspeicher auf einem hellen Balkon, hochwertige Premium Fotografie, warme Abendsonne, minimalistischer Stil, kein Text"
 
