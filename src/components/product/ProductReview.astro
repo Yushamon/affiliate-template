@@ -1,0 +1,134 @@
+---
+import ProductBox from "../ProductBox.astro";
+import { products, type ProductKey } from "../../data/products";
+
+interface Props {
+  productKey: ProductKey;
+}
+
+const { productKey } = Astro.props;
+const product = products[productKey];
+---
+
+{product && (
+  <article class="product-review">
+    <section class="product-review-hero">
+      <div>
+        <div class="article-category">
+          Testbericht
+        </div>
+
+        <h1>
+          {product.name} im Test
+        </h1>
+
+        <p>
+          Für wen sich der Balkonspeicher lohnt, welche Stärken er bietet und welche Alternativen sinnvoll sein können.
+        </p>
+      </div>
+
+      <img
+        src={product.image}
+        alt={product.name}
+        loading="eager"
+      />
+    </section>
+
+    <section class="product-verdict">
+      <span>
+        Kurzfazit
+      </span>
+
+      <h2>
+        {product.recommendation}
+      </h2>
+
+      <p>
+        {product.name} eignet sich besonders für Haushalte, die einen Balkonspeicher mit klarer Ausrichtung auf {product.useCase.toLowerCase()} suchen.
+      </p>
+    </section>
+
+    <section class="product-review-grid">
+      <div class="product-review-card">
+        <h2>
+          Vorteile
+        </h2>
+
+        <ul>
+          {product.highlights.map((item) => (
+            <li>✓ {item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="product-review-card">
+        <h2>
+          Weniger geeignet für
+        </h2>
+
+        <ul>
+          <li>Haushalte mit sehr geringem Stromverbrauch</li>
+          <li>Nutzer ohne regelmäßige Solarüberschüsse</li>
+          <li>Käufer, die nur die günstigste Einstiegslösung suchen</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="product-review-card">
+      <h2>
+        Technische Einordnung
+      </h2>
+
+      <div class="product-review-specs">
+        <div>
+          <strong>Hersteller</strong>
+          <span>{product.manufacturerLabel}</span>
+        </div>
+
+        <div>
+          <strong>Kategorie</strong>
+          <span>{product.category}</span>
+        </div>
+
+        <div>
+          <strong>Kapazität</strong>
+          <span>{product.capacity}</span>
+        </div>
+
+        <div>
+          <strong>Erweiterbar</strong>
+          <span>{product.expandable}</span>
+        </div>
+
+        <div>
+          <strong>Bewertung</strong>
+          <span>{product.rating} / 5</span>
+        </div>
+
+        <div>
+          <strong>Einsatzbereich</strong>
+          <span>{product.useCase}</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-review-card">
+      <h2>
+        Für wen lohnt sich {product.name}?
+      </h2>
+
+      <p>
+        Das System ist besonders interessant für Nutzer, die ihren Eigenverbrauch erhöhen und überschüssigen Solarstrom nicht ungenutzt einspeisen möchten.
+      </p>
+
+      <p>
+        Besonders sinnvoll ist der Speicher, wenn tagsüber regelmäßig Solarstromüberschüsse entstehen und der Verbrauch überwiegend am Abend stattfindet.
+      </p>
+    </section>
+
+    <ProductBox
+      productKey={productKey}
+      currentProductKey={productKey}
+    />
+  </article>
+)}

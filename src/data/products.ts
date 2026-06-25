@@ -5,148 +5,91 @@ export const products = {
     manufacturerLabel: "EcoFlow",
     brand: "EcoFlow",
     category: "Balkonspeicher",
-
     capacity: "1,92 kWh",
     expandable: "ja",
-
-    useCase:
-      "Für Haushalte mit höherem Abendverbrauch und Nutzer, die ein modernes Komplettsystem suchen.",
-
+    useCase: "Für Haushalte mit höherem Abendverbrauch",
     recommendation:
-      "Eine der aktuell interessantesten Lösungen für Balkonkraftwerke. Besonders stark bei Erweiterbarkeit und App-Steuerung.",
-
-    priceLabel: "Preis prüfen",
-
-    affiliateUrl: "#",
-
-    image:
-      "/images/generated/ecoflow-stream-ultra.webp",
-
-    rating: 4.8,
-
+      "Starke Wahl für Nutzer, die ein modernes, erweiterbares System suchen.",
+    productUrl: "/produkt/ecoflow-stream-ultra",
+    affiliateUrl: "",
+    image: "/images/generated/ecoflow-stream-ultra.webp",
+    rating: 4.7,
     badge: "Empfehlung",
-
     highlights: [
       "Modular erweiterbar",
-      "Moderne App-Steuerung",
-      "Speziell für Balkonkraftwerke geeignet"
+      "App-Steuerung",
+      "Gut für Balkonkraftwerke geeignet"
     ]
   },
 
   "anker-solix-solarbank-3-pro": {
     name: "Anker SOLIX Solarbank 3 Pro",
-
     manufacturer: "anker",
     manufacturerLabel: "Anker",
-
     brand: "Anker",
-
     category: "Balkonspeicher",
-
-    capacity: "variabel",
-
+    capacity: "modellabhängig",
     expandable: "ja",
-
-    useCase:
-      "Für Nutzer, die ein modernes Komplettsystem mit hoher Flexibilität suchen.",
-
+    useCase: "Für Nutzer, die ein kompaktes Markensystem suchen",
     recommendation:
-      "Aktuelles Spitzenmodell von Anker. Besonders interessant für Nutzer, die langfristig planen.",
-
-    priceLabel: "Preis prüfen",
-
-    affiliateUrl: "#",
-
-    image:
-      "/images/generated/anker-solix-solarbank-3-pro.webp",
-
-    rating: 4.9,
-
-    badge: "Testsieger",
-
+      "Interessant für Haushalte, die Wert auf einfache Bedienung und ein starkes Komplettsystem legen.",
+    productUrl: "/produkt/anker-solix-solarbank-3-pro",
+    affiliateUrl: "",
+    image: "/images/generated/anker-solix-solarbank-3-pro.webp",
+    rating: 4.6,
+    badge: "Beliebt",
     highlights: [
-      "Aktuelle Generation",
-      "Hohe Flexibilität",
-      "Starke App-Anbindung"
+      "Einfache Bedienung",
+      "Gute App-Integration",
+      "Bekannter Hersteller"
     ]
   },
 
   "zendure-solarflow": {
     name: "Zendure SolarFlow",
-
     manufacturer: "zendure",
     manufacturerLabel: "Zendure",
-
     brand: "Zendure",
-
     category: "Balkonspeicher",
-
     capacity: "variabel",
-
     expandable: "ja",
-
-    useCase:
-      "Für Nutzer, die modular starten und später erweitern möchten.",
-
+    useCase: "Für Nutzer, die ein flexibles Speichersystem möchten",
     recommendation:
-      "Sehr flexibel und deshalb besonders interessant für wechselnde Anforderungen.",
-
-    priceLabel: "Preis prüfen",
-
-    affiliateUrl: "#",
-
-    image:
-      "/images/generated/zendure-solarflow.webp",
-
-    rating: 4.7,
-
+      "Spannend für alle, die modular starten und später erweitern möchten.",
+    productUrl: "/produkt/zendure-solarflow",
+    affiliateUrl: "",
+    image: "/images/generated/zendure-solarflow.webp",
+    rating: 4.5,
     badge: "Flexibel",
-
     highlights: [
       "Modulares System",
       "Flexibel erweiterbar",
-      "Große Systemauswahl"
+      "Für verschiedene Setups geeignet"
     ]
   },
 
   "solakon-one": {
     name: "Solakon ONE",
-
     manufacturer: "solakon",
     manufacturerLabel: "Solakon",
-
     brand: "Solakon",
-
     category: "Balkonspeicher",
-
-    capacity: "variabel",
-
-    expandable: "ja",
-
-    useCase:
-      "Für Nutzer, die ein aktuelles Komplettsystem für Balkonkraftwerke suchen.",
-
+    capacity: "modellabhängig",
+    expandable: "modellabhängig",
+    useCase: "Für Einsteiger, die eine einfache Komplettlösung suchen",
     recommendation:
-      "Spannende Alternative zu den etablierten Marktführern mit Fokus auf einfache Nutzung.",
-
-    priceLabel: "Preis prüfen",
-
-    affiliateUrl: "#",
-
-    image:
-      "/images/generated/solakon-one.webp",
-
-    rating: 4.6,
-
-    badge: "Newcomer",
-
+      "Interessant für Nutzer, die unkompliziert in Balkonkraftwerk und Speicher starten möchten.",
+    productUrl: "/produkt/solakon-one",
+    affiliateUrl: "",
+    image: "/images/generated/solakon-one.webp",
+    rating: 4.4,
+    badge: "Einsteiger",
     highlights: [
-      "Moderne Plattform",
-      "Einfache Einrichtung",
-      "Für Balkonkraftwerke optimiert"
+      "Einsteigerfreundlich",
+      "Komplettlösung",
+      "Einfache Nutzung"
     ]
   }
 };
 
-export type ProductKey =
-  keyof typeof products;
+export type ProductKey = keyof typeof products;

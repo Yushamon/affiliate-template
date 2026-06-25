@@ -1,5 +1,6 @@
 ---
 import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+import ProductReview from "../../components/product/ProductReview.astro";
 import ProductBox from "../../components/ProductBox.astro";
 import { products, type ProductKey } from "../../data/products";
 
@@ -29,77 +30,17 @@ const manufacturerProducts =
 
 <AffiliateLayout
   title={`${product.name} Erfahrungen`}
-  description={`${product.name} im Überblick. Vorteile, Einsatzbereiche und wichtige Informationen.`}
+  description={`${product.name} im Testbericht. Vorteile, Nachteile, technische Daten, Einsatzbereiche und Alternativen.`}
   canonical={`/produkt/${productKey}`}
+  ogImage={product.image}
 >
+  <ProductReview productKey={productKey as ProductKey} />
 
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <p class="eyebrow">
-        Produkt
-      </p>
-
-      <h1>
-        {product.name}
-      </h1>
-
-      <p>
-        Informationen, Erfahrungen und Empfehlungen rund um {product.name}.
-      </p>
-
-    </div>
-
-  </section>
-
-  <ProductBox
-  productKey={productKey as ProductKey}
-/>
-
-<div class="manufacturer-link">
-
-  <a
-    href={`/hersteller/${product.manufacturer}`}
-  >
-    Weitere Informationen zu
-    {product.manufacturerLabel}
-    →
-  </a>
-
-</div>
-
-  <section class="article">
-
-    <h2>
-      Für wen eignet sich das Produkt?
-    </h2>
-
-    <p>
-      {product.useCase}
-    </p>
-
-    <h2>
-      Unsere Einschätzung
-    </h2>
-
-    <p>
-      {product.recommendation}
-    </p>
-
-    <h2>
-      Highlights
-    </h2>
-
-    <ul>
-      {
-        product.highlights.map((item) => (
-          <li>{item}</li>
-        ))
-      }
-    </ul>
-
-  </section>
+  <div class="manufacturer-link">
+    <a href={`/hersteller/${product.manufacturer}`}>
+      Weitere Informationen zu {product.manufacturerLabel} →
+    </a>
+  </div>
 
   {
     manufacturerProducts.length > 0 && (
@@ -109,14 +50,12 @@ const manufacturerProducts =
         </h2>
 
         <div class="card-grid">
-
           {
             manufacturerProducts.map(([key, item]) => (
               <a
                 class="card"
                 href={`/produkt/${key}`}
               >
-
                 <div class="card-category">
                   {item.brand}
                 </div>
@@ -128,14 +67,11 @@ const manufacturerProducts =
                 <p>
                   {item.recommendation}
                 </p>
-
               </a>
             ))
           }
-
         </div>
       </>
     )
   }
-
 </AffiliateLayout>

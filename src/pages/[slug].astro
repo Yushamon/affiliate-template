@@ -79,7 +79,7 @@ const topicKey =
     : "allgemein";
 
 const internalLinkSlugs =
-  internalLinks[topicKey].filter(
+  internalLinks[topicKey as keyof typeof internalLinks].filter(
     (slug) => slug !== page.data.slug
   );
 

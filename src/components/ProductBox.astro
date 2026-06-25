@@ -3,10 +3,29 @@ import { products, type ProductKey } from "../data/products";
 
 interface Props {
   productKey: ProductKey;
+  currentProductKey?: ProductKey;
 }
 
-const { productKey } = Astro.props;
+const { productKey, currentProductKey } = Astro.props;
 const product = products[productKey];
+
+const isCurrentProduct =
+  currentProductKey === productKey;
+
+const hasAffiliate =
+  product?.affiliateUrl &&
+  product.affiliateUrl.length > 0;
+
+const buttonLabel = hasAffiliate
+  ? "Preis prüfen"
+  : "Testbericht lesen";
+
+const buttonHref = hasAffiliate
+  ? product.affiliateUrl
+  : product.productUrl;
+
+const showButton =
+  !isCurrentProduct;
 ---
 
 {product && (
@@ -60,14 +79,16 @@ const product = products[productKey];
         </div>
       </div>
 
-      <a
-        href={product.affiliateUrl}
-        target="_blank"
-        rel="nofollow sponsored"
-        class="product-button"
-      >
-        Preis prüfen
-      </a>
+      {showButton && (
+        <a
+          href={buttonHref}
+          class="product-button"
+          target={hasAffiliate ? "_blank" : undefined}
+          rel={hasAffiliate ? "nofollow sponsored" : undefined}
+        >
+          {buttonLabel}
+        </a>
+      )}
     </div>
   </section>
 )}
