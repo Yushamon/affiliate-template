@@ -34,14 +34,6 @@ faq:
     answer: "Meist sind 1 bis 2 kWh sinnvoll. Größere Speicher lohnen sich vor allem bei höherem Stromverbrauch oder einer späteren Erweiterung."
 ---
 
-## <a id="rechner"></a>Balkonspeicher Rechner
-
-Berechne in wenigen Sekunden, welche Speichergröße für dein Balkonkraftwerk sinnvoll ist.
-
-[[STORAGE_CALCULATOR]]
-
-> **Hinweis:** Die Empfehlung dient als Orientierung für typische Haushalte mit einem 800-Watt-Balkonkraftwerk.
-
 # Balkonspeicher Größe berechnen
 
 Viele Käufer stellen sich vor dem Kauf dieselbe Frage:
@@ -50,7 +42,7 @@ Viele Käufer stellen sich vor dem Kauf dieselbe Frage:
 
 Die richtige Speichergröße entscheidet darüber, wie viel Solarstrom du tatsächlich selbst nutzen kannst. Ein zu kleiner Speicher verschenkt überschüssige Energie. Ein zu großer Speicher kostet dagegen unnötig Geld und rechnet sich häufig erst nach vielen Jahren.
 
-Nutze zuerst den Rechner und finde in wenigen Sekunden heraus, welche Speichergröße zu deinem Haushalt passt.
+Nutze den Rechner auf dieser Seite und finde heraus, welche Speichergröße zu deinem Haushalt passt.
 
 <div class="toc-box">
 <p class="toc-title">Inhalt</p>
@@ -65,18 +57,6 @@ Nutze zuerst den Rechner und finde in wenigen Sekunden heraus, welche Speichergr
 <li><a href="#fazit">Fazit</a></li>
 </ul>
 </div>
-
----
-
-## <a id="rechner"></a>Balkonspeicher Rechner
-
-Berechne in wenigen Sekunden, welche Speichergröße für dein Balkonkraftwerk sinnvoll ist. Gib einfach deinen jährlichen Stromverbrauch ein und erhalte eine erste Empfehlung.
-
-<div class="calculator-wrapper">
-  <StorageCalculator />
-</div>
-
-> **Hinweis:** Die Empfehlung dient als Orientierung für typische Haushalte mit einem 800-Watt-Balkonkraftwerk.
 
 ---
 
