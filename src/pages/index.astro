@@ -1,26 +1,88 @@
 ---
 import { getCollection } from "astro:content";
 import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import HomeHero from "../components/home/HomeHero.astro";
+import HomeHighlightSection from "../components/home/HomeHighlightSection.astro";
+import HomeFeatureCards from "../components/home/HomeFeatureCards.astro";
+import HomeTrustSection from "../components/home/HomeTrustSection.astro";
+import HomeManufacturerGrid from "../components/home/HomeManufacturerGrid.astro";
+import HomeArticleGrid from "../components/home/HomeArticleGrid.astro";
 import { site } from "../utils/site";
 
 const pages = await getCollection("pages");
 
-const featuredPages = pages.filter(
-  (page) => page.data.featured
-);
+const featuredPages = pages
+  .filter((page) => page.data.featured)
+  .sort((a, b) => (a.data.hubPriority ?? 999) - (b.data.hubPriority ?? 999))
+  .slice(0, 6);
+
+const comparisonPages = pages
+  .filter((page) => page.data.category === "vergleich")
+  .slice(0, 6);
 
 const latestPages = [...pages].slice(0, 6);
 
-const categories = [
-  ...new Map(
-    pages.map((page) => [
-      page.data.category,
-      {
-        slug: page.data.category,
-        label: page.data.categoryLabel
-      }
-    ])
-  ).values()
+const featureCards = [
+  {
+    label: "Vergleich",
+    title: "Beste Balkonspeicher",
+    text: "Die wichtigsten Speicherlösungen für Balkonkraftwerke im Überblick.",
+    href: "/beste-balkonspeicher"
+  },
+  {
+    label: "Ratgeber",
+    title: "Balkonspeicher verstehen",
+    text: "Kosten, Größe, Förderung, Winterbetrieb und Nachrüstung verständlich erklärt.",
+    href: "/balkonspeicher"
+  },
+  {
+    label: "Rechner",
+    title: "Speichergröße berechnen",
+    text: "Finde heraus, welche Speichergröße zu deinem Haushalt passen könnte.",
+    href: "/balkonspeicher-groesse-berechnen"
+  }
+];
+
+const trustItems = [
+  {
+    title: "Klare Antworten",
+    text: "Jede Seite beantwortet eine konkrete Frage statt nur allgemeine Informationen zu sammeln."
+  },
+  {
+    title: "Echte Orientierung",
+    text: "Wir ordnen ein, welches System zu welchem Haushalt passt."
+  },
+  {
+    title: "Fokus auf Entscheidung",
+    text: "Kosten, Nutzen, Größe, Förderung und Produktauswahl stehen im Mittelpunkt."
+  },
+  {
+    title: "Verständlich erklärt",
+    text: "Für normale Haushalte geschrieben, nicht nur für Solar-Experten."
+  }
+];
+
+const manufacturers = [
+  {
+    name: "EcoFlow",
+    href: "/hersteller/ecoflow",
+    text: "Starkes Energie-Ökosystem und flexible Speicherlösungen."
+  },
+  {
+    name: "Anker",
+    href: "/hersteller/anker",
+    text: "Einfache Bedienung und moderne Komplettsysteme."
+  },
+  {
+    name: "Zendure",
+    href: "/hersteller/zendure",
+    text: "Modulare Lösungen für flexible Speichergrößen."
+  },
+  {
+    name: "Solakon",
+    href: "/hersteller/solakon",
+    text: "Einsteigerfreundliche Komplettlösungen."
+  }
 ];
 ---
 
@@ -29,218 +91,62 @@ const categories = [
   description={site.siteDescription}
   canonical="/"
 >
+  <HomeHero
+    badge="Balkonspeicher Ratgeber"
+    title="Der einfache Weg zum passenden Balkonspeicher."
+    description="Vergleiche, Ratgeber und Empfehlungen für alle, die mehr aus ihrem Balkonkraftwerk herausholen möchten."
+    primaryCta={{
+      label: "Balkonspeicher vergleichen",
+      href: "/beste-balkonspeicher"
+    }}
+    secondaryCta={{
+      label: "Ratgeber ansehen",
+      href: "/balkonspeicher"
+    }}
+    image="/images/generated/home-hero.webp"
+    imageAlt="Moderner Balkon mit Solarmodul und Balkonspeicher"
+    stats={[
+      { value: "15+", label: "Ratgeber" },
+      { value: "4", label: "Hersteller" },
+      { value: "100%", label: "Balkonspeicher Fokus" }
+    ]}
+  />
 
-  <section class="home-hero">
+  <HomeHighlightSection
+    eyebrow="Unsere Empfehlung"
+    title="Starte mit dem großen Balkonspeicher Vergleich."
+    text="Wenn du noch unsicher bist, welches System zu deinem Haushalt passt, ist der Vergleich der beste Einstieg."
+    href="/balkonspeicher-vergleich"
+    cta="Zum Vergleich"
+    image="/images/generated/balkonspeicher-test.webp"
+    imageAlt="Balkonspeicher auf modernem Balkon"
+  />
 
-    <div class="home-hero-content">
+  <HomeFeatureCards cards={featureCards} />
 
-      <div class="hero-badge">
-        Balkonspeicher · Balkonkraftwerke · Solarstrom
-      </div>
+  {
+    comparisonPages.length > 0 && (
+      <HomeArticleGrid
+        eyebrow="Vergleiche"
+        title="Direkte Entscheidungen treffen."
+        pages={comparisonPages}
+      />
+    )
+  }
 
-      <h1>
-        Balkonspeicher verständlich erklärt
-      </h1>
+  <HomeTrustSection items={trustItems} />
 
-      <p>
-        Vergleiche, Erfahrungen und unabhängige Ratgeber rund um
-        Balkonspeicher und Balkonkraftwerke.
-      </p>
+  <HomeManufacturerGrid manufacturers={manufacturers} />
 
-      <div class="hero-buttons">
+  <HomeArticleGrid
+    eyebrow="Beliebte Ratgeber"
+    title="Die wichtigsten Fragen zuerst."
+    pages={featuredPages}
+  />
 
-        <a
-          href="/beste-balkonspeicher"
-          class="hero-button-primary"
-        >
-          Beste Balkonspeicher
-        </a>
-
-        <a
-          href="/balkonspeicher-vergleich"
-          class="hero-button-secondary"
-        >
-          Zum Vergleich
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="home-featured">
-
-    <div class="feature-card">
-      <strong>
-        15+
-      </strong>
-
-      <span>
-        Ratgeber & Vergleiche
-      </span>
-    </div>
-
-    <div class="feature-card">
-      <strong>
-        4
-      </strong>
-
-      <span>
-        Hersteller im Vergleich
-      </span>
-    </div>
-
-    <div class="feature-card">
-      <strong>
-        100%
-      </strong>
-
-      <span>
-        Fokus auf Balkonspeicher
-      </span>
-    </div>
-
-  </section>
-
-  <h2 class="section-title">
-    Beliebte Inhalte
-  </h2>
-
-  <div class="card-grid">
-
-    <a
-      class="card"
-      href="/beste-balkonspeicher"
-    >
-      <div class="card-category">
-        Vergleich
-      </div>
-
-      <h3>
-        Beste Balkonspeicher
-      </h3>
-
-      <p>
-        Die aktuell interessantesten Speicherlösungen im Überblick.
-      </p>
-    </a>
-
-    <a
-      class="card"
-      href="/balkonspeicher-vergleich"
-    >
-      <div class="card-category">
-        Vergleich
-      </div>
-
-      <h3>
-        Balkonspeicher Vergleich
-      </h3>
-
-      <p>
-        Direkter Vergleich der wichtigsten Systeme.
-      </p>
-    </a>
-
-    <a
-      class="card"
-      href="/balkonspeicher"
-    >
-      <div class="card-category">
-        Ratgeber
-      </div>
-
-      <h3>
-        Balkonspeicher Hub
-      </h3>
-
-      <p>
-        Alle wichtigen Themen rund um Speicher und Eigenverbrauch.
-      </p>
-    </a>
-
-  </div>
-
-  <h2 class="section-title">
-    Kategorien
-  </h2>
-
-  <div class="category-list">
-
-    {
-      categories.map((category) => (
-        <a
-          class="category-pill"
-          href={`/kategorie/${category.slug}`}
-        >
-          {category.label}
-        </a>
-      ))
-    }
-
-  </div>
-
-  <h2 class="section-title">
-    Empfohlene Artikel
-  </h2>
-
-  <div class="card-grid">
-
-    {
-      featuredPages.map((page) => (
-        <a
-          class="card"
-          href={`/${page.data.slug}`}
-        >
-
-          <div class="card-category">
-            {page.data.categoryLabel}
-          </div>
-
-          <h3>
-            {page.data.title}
-          </h3>
-
-          <p>
-            {page.data.description}
-          </p>
-
-        </a>
-      ))
-    }
-
-  </div>
-
-  <h2 class="section-title">
-    Neueste Inhalte
-  </h2>
-
-  <div class="card-grid">
-
-    {
-      latestPages.map((page) => (
-        <a
-          class="card"
-          href={`/${page.data.slug}`}
-        >
-
-          <div class="card-category">
-            {page.data.categoryLabel}
-          </div>
-
-          <h3>
-            {page.data.title}
-          </h3>
-
-          <p>
-            {page.data.description}
-          </p>
-
-        </a>
-      ))
-    }
-
-  </div>
-
+  <HomeArticleGrid
+    eyebrow="Neueste Inhalte"
+    title="Aktuelle Artikel und Vergleiche."
+    pages={latestPages}
+  />
 </AffiliateLayout>

@@ -1,0 +1,54 @@
+---
+interface Page {
+  data: {
+    slug: string;
+    title: string;
+    description: string;
+    categoryLabel: string;
+    heroImage?: string;
+  };
+}
+
+interface Props {
+  title: string;
+  eyebrow: string;
+  pages: Page[];
+}
+
+const { title, eyebrow, pages } = Astro.props;
+---
+
+<section class="home-section">
+  <div class="home-section-header">
+    <span>{eyebrow}</span>
+    <h2>{title}</h2>
+  </div>
+
+  <div class="home-article-grid-v2">
+    {pages.map((page) => (
+      <a class="home-article-card-v2" href={`/${page.data.slug}`}>
+        {page.data.heroImage && (
+          <img
+            src={page.data.heroImage}
+            alt={page.data.title}
+            loading="lazy"
+          />
+        )}
+
+        <div class="home-article-card-content">
+          <div class="card-category">
+            {page.data.categoryLabel}
+          </div>
+
+          <h3>
+            {page.data.title}
+          </h3>
+
+          <p>
+            {page.data.description}
+          </p>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,34 @@
+---
+interface Manufacturer {
+  name: string;
+  href: string;
+  text: string;
+}
+
+interface Props {
+  manufacturers: Manufacturer[];
+}
+
+const { manufacturers } = Astro.props;
+---
+
+<section class="home-section">
+  <div class="home-section-header">
+    <span>Hersteller</span>
+    <h2>Die wichtigsten Anbieter auf einen Blick.</h2>
+  </div>
+
+  <div class="home-manufacturer-grid-v2">
+    {manufacturers.map((manufacturer) => (
+      <a href={manufacturer.href} class="home-manufacturer-card-v2">
+        <div class="manufacturer-logo-placeholder">
+          {manufacturer.name.slice(0, 1)}
+        </div>
+
+        <strong>{manufacturer.name}</strong>
+
+        <p>{manufacturer.text}</p>
+      </a>
+    ))}
+  </div>
+</section>

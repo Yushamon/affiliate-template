@@ -1,0 +1,31 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  text: string;
+  href: string;
+  cta: string;
+  image: string;
+  imageAlt: string;
+}
+
+const { eyebrow, title, text, href, cta, image, imageAlt } = Astro.props;
+---
+
+<section class="home-highlight">
+  <div class="home-highlight-copy">
+    <span>{eyebrow}</span>
+
+    <h2>{title}</h2>
+
+    <p>{text}</p>
+
+    <a href={href} class="premium-button premium-button-primary">
+      {cta}
+    </a>
+  </div>
+
+  <div class="home-highlight-image">
+    <img src={image} alt={imageAlt} loading="lazy" />
+  </div>
+</section>

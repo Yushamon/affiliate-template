@@ -1,0 +1,28 @@
+---
+interface Item {
+  title: string;
+  text: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="home-trust">
+  <div class="home-section-header">
+    <span>Warum diese Seite?</span>
+    <h2>Verständlich. Ehrlich. Auf Entscheidung optimiert.</h2>
+  </div>
+
+  <div class="home-trust-grid">
+    {items.map((item) => (
+      <div class="home-trust-card">
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,72 @@
+---
+interface CTA {
+  label: string;
+  href: string;
+}
+
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface Props {
+  badge: string;
+  title: string;
+  description: string;
+  primaryCta: CTA;
+  secondaryCta: CTA;
+  image: string;
+  imageAlt: string;
+  stats?: Stat[];
+}
+
+const {
+  badge,
+  title,
+  description,
+  primaryCta,
+  secondaryCta,
+  image,
+  imageAlt,
+  stats = []
+} = Astro.props;
+---
+
+<section class="home-premium-hero">
+  <div class="home-premium-copy">
+    <div class="home-premium-badge">
+      {badge}
+    </div>
+
+    <h1>
+      {title}
+    </h1>
+
+    <p>
+      {description}
+    </p>
+
+    <div class="home-premium-actions">
+      <a href={primaryCta.href} class="premium-button premium-button-primary">
+        {primaryCta.label}
+      </a>
+
+      <a href={secondaryCta.href} class="premium-button premium-button-secondary">
+        {secondaryCta.label}
+      </a>
+    </div>
+
+    <div class="home-premium-stats">
+      {stats.map((stat) => (
+        <div>
+          <strong>{stat.value}</strong>
+          <span>{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="home-premium-image">
+    <img src={image} alt={imageAlt} loading="eager" />
+  </div>
+</section>

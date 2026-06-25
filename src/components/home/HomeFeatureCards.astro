@@ -1,0 +1,31 @@
+---
+interface Card {
+  label: string;
+  title: string;
+  text: string;
+  href: string;
+}
+
+interface Props {
+  cards: Card[];
+}
+
+const { cards } = Astro.props;
+---
+
+<section class="home-section">
+  <div class="home-section-header">
+    <span>Wichtige Einstiege</span>
+    <h2>Womit möchtest du starten?</h2>
+  </div>
+
+  <div class="home-feature-grid-v2">
+    {cards.map((card) => (
+      <a href={card.href} class="home-feature-card-v2">
+        <span>{card.label}</span>
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+      </a>
+    ))}
+  </div>
+</section>
