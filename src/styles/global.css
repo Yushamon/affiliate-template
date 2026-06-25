@@ -3974,4 +3974,37 @@ body {
   .product-review-specs {
     grid-template-columns: 1fr;
   }
+}.toc-box {
+  margin: 24px 0 32px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: #f6f8f5;
+  border: 1px solid #e2eadf;
+}
+
+.toc-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #123524;
+}
+
+.toc-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.toc-box li {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.toc-box a {
+  color: #1f6f45;
+  text-decoration: none;
+}
+
+.toc-box a:hover {
+  text-decoration: underline;
 }
