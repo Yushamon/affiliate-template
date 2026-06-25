@@ -1,21 +1,23 @@
 ---
 import ProductBox from "../ProductBox.astro";
 import { products, type ProductKey } from "../../data/products";
+import { productReviews } from "../../data/productReviews";
 
 interface Props {
   productKey: ProductKey;
 }
 
 const { productKey } = Astro.props;
+
 const product = products[productKey];
+const review = productReviews[productKey];
 
 const stars = (rating: number) =>
   "★".repeat(rating) + "☆".repeat(5 - rating);
 ---
 
-{product && (
+{product && review && (
   <article class="product-review-v3">
-
     <section class="product-review-hero-v3">
       <div class="product-review-hero-copy">
         <div class="article-category">
@@ -27,7 +29,7 @@ const stars = (rating: number) =>
         </h1>
 
         <p>
-          {product.verdict}
+          {review.summary}
         </p>
 
         <div class="product-review-rating">
@@ -56,53 +58,57 @@ const stars = (rating: number) =>
       </h2>
 
       <p>
-        {product.ourOpinion}
+        {review.verdict}
       </p>
     </section>
 
     <section class="product-score-grid-v3">
       <div>
         <strong>Installation</strong>
-        <span>{stars(product.ratingCategories.installation)}</span>
+        <span>{stars(review.ratings.installation)}</span>
       </div>
 
       <div>
         <strong>App</strong>
-        <span>{stars(product.ratingCategories.app)}</span>
+        <span>{stars(review.ratings.app)}</span>
       </div>
 
       <div>
         <strong>Flexibilität</strong>
-        <span>{stars(product.ratingCategories.flexibility)}</span>
+        <span>{stars(review.ratings.flexibility)}</span>
       </div>
 
       <div>
         <strong>Preis-Leistung</strong>
-        <span>{stars(product.ratingCategories.pricePerformance)}</span>
+        <span>{stars(review.ratings.pricePerformance)}</span>
       </div>
 
       <div>
         <strong>Erweiterbarkeit</strong>
-        <span>{stars(product.ratingCategories.expandability)}</span>
+        <span>{stars(review.ratings.expandability)}</span>
       </div>
     </section>
 
     <section class="product-review-grid-v3">
       <div class="product-review-card-v3">
-        <h2>Vorteile</h2>
+        <h2>
+          Vorteile
+        </h2>
 
         <ul>
-          {product.pros.map((item) => (
+          {review.pros.map((item) => (
             <li>✓ {item}</li>
           ))}
         </ul>
       </div>
 
       <div class="product-review-card-v3">
-        <h2>Nachteile</h2>
+        <h2>
+          Nachteile
+        </h2>
 
         <ul>
-          {product.cons.map((item) => (
+          {review.cons.map((item) => (
             <li>× {item}</li>
           ))}
         </ul>
@@ -111,20 +117,24 @@ const stars = (rating: number) =>
 
     <section class="product-review-grid-v3">
       <div class="product-review-card-v3">
-        <h2>Ideal für</h2>
+        <h2>
+          Ideal für
+        </h2>
 
         <ul>
-          {product.bestFor.map((item) => (
+          {review.bestFor.map((item) => (
             <li>✓ {item}</li>
           ))}
         </ul>
       </div>
 
       <div class="product-review-card-v3">
-        <h2>Weniger geeignet für</h2>
+        <h2>
+          Weniger geeignet für
+        </h2>
 
         <ul>
-          {product.notFor.map((item) => (
+          {review.notFor.map((item) => (
             <li>× {item}</li>
           ))}
         </ul>
@@ -132,7 +142,9 @@ const stars = (rating: number) =>
     </section>
 
     <section class="product-review-card-v3">
-      <h2>Technische Daten</h2>
+      <h2>
+        Technische Daten
+      </h2>
 
       <div class="product-review-specs-v3">
         <div>
@@ -177,7 +189,7 @@ const stars = (rating: number) =>
       </h2>
 
       <p>
-        {product.ourOpinion}
+        {review.verdict}
       </p>
     </section>
 
@@ -185,6 +197,5 @@ const stars = (rating: number) =>
       productKey={productKey}
       currentProductKey={productKey}
     />
-
   </article>
 )}

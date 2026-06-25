@@ -9,23 +9,21 @@ interface Props {
 const { productKey, currentProductKey } = Astro.props;
 const product = products[productKey];
 
-const isCurrentProduct =
-  currentProductKey === productKey;
+const isCurrentProduct = currentProductKey === productKey;
 
 const hasAffiliate =
   product?.affiliateUrl &&
   product.affiliateUrl.length > 0;
 
 const buttonLabel = hasAffiliate
-  ? "Preis prüfen"
+  ? "Preis bei Amazon ansehen"
   : "Testbericht lesen";
 
 const buttonHref = hasAffiliate
   ? product.affiliateUrl
   : product.productUrl;
 
-const showButton =
-  !isCurrentProduct;
+const showButton = !isCurrentProduct || hasAffiliate;
 ---
 
 {product && (
@@ -80,14 +78,22 @@ const showButton =
       </div>
 
       {showButton && (
-        <a
-          href={buttonHref}
-          class="product-button"
-          target={hasAffiliate ? "_blank" : undefined}
-          rel={hasAffiliate ? "nofollow sponsored" : undefined}
-        >
-          {buttonLabel}
-        </a>
+        <>
+          <a
+            href={buttonHref}
+            class="product-button"
+            target={hasAffiliate ? "_blank" : undefined}
+            rel={hasAffiliate ? "nofollow sponsored" : undefined}
+          >
+            {buttonLabel}
+          </a>
+
+          {hasAffiliate && (
+            <p class="affiliate-note">
+              Als Amazon-Partner erhalten wir bei qualifizierten Verkäufen eine Provision. Für dich entstehen keine Mehrkosten.
+            </p>
+          )}
+        </>
       )}
     </div>
   </section>
