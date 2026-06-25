@@ -6,75 +6,68 @@ interface Props {
 }
 
 const { productKey } = Astro.props;
-
 const product = products[productKey];
 ---
 
 {product && (
   <section class="product-box">
+    <div class="product-image-area">
+      <div class="product-badge">
+        🏆 {product.badge}
+      </div>
 
-    <div class="product-badge">
-      🏆 {product.badge}
+      <img
+        src={product.image}
+        alt={product.name}
+        class="product-image"
+        loading="lazy"
+      />
     </div>
 
-    <div class="product-top">
+    <div class="product-content">
+      <div class="product-brand">
+        {product.brand}
+      </div>
 
-      <div>
+      <h2>
+        {product.name}
+      </h2>
 
-        <div class="product-brand">
-          {product.brand}
+      <div class="product-rating">
+        ★★★★★
+        <span>{product.rating} / 5</span>
+      </div>
+
+      <p class="product-recommendation">
+        {product.recommendation}
+      </p>
+
+      <ul class="product-highlights">
+        {product.highlights.map((item) => (
+          <li>✓ {item}</li>
+        ))}
+      </ul>
+
+      <div class="product-specs">
+        <div class="product-spec">
+          <strong>Kapazität</strong>
+          <span>{product.capacity}</span>
         </div>
 
-        <h2>
-          {product.name}
-        </h2>
-
-        <div class="product-rating">
-          ★★★★★
-          <span>{product.rating} / 5</span>
+        <div class="product-spec">
+          <strong>Erweiterbar</strong>
+          <span>{product.expandable}</span>
         </div>
-
       </div>
 
+      <a
+        href={product.affiliateUrl}
+        target="_blank"
+        rel="nofollow sponsored"
+        class="product-button"
+      >
+        Preis prüfen
+      </a>
     </div>
-
-    <p class="product-recommendation">
-      {product.recommendation}
-    </p>
-
-    <ul class="product-highlights">
-      {product.highlights.map((item) => (
-        <li>✓ {item}</li>
-      ))}
-    </ul>
-
-    <div class="product-specs">
-
-      <div class="product-spec">
-        <strong>Kapazität</strong>
-        <span>{product.capacity}</span>
-      </div>
-
-      <div class="product-spec">
-        <strong>Erweiterbar</strong>
-        <span>{product.expandable}</span>
-      </div>
-
-      <div class="product-spec">
-        <strong>Einsatzbereich</strong>
-        <span>{product.useCase}</span>
-      </div>
-
-    </div>
-
-    <a
-      href={product.affiliateUrl}
-      target="_blank"
-      rel="nofollow sponsored"
-      class="product-button"
-    >
-      Preis prüfen
-    </a>
-
   </section>
 )}

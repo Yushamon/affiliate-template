@@ -30,27 +30,81 @@ const categories = [
   canonical="/"
 >
 
-  <section class="hero">
-    <div class="hero-content">
+  <section class="home-hero">
 
-      <p class="eyebrow">
+    <div class="home-hero-content">
+
+      <div class="hero-badge">
         Balkonspeicher · Balkonkraftwerke · Solarstrom
-      </p>
+      </div>
 
       <h1>
-        Balkonspeicher einfach verstehen, vergleichen und sinnvoll nutzen
+        Balkonspeicher verständlich erklärt
       </h1>
 
       <p>
-        Verständliche Ratgeber, Vergleiche und Empfehlungen rund um
+        Vergleiche, Erfahrungen und unabhängige Ratgeber rund um
         Balkonspeicher und Balkonkraftwerke.
       </p>
 
+      <div class="hero-buttons">
+
+        <a
+          href="/beste-balkonspeicher"
+          class="hero-button-primary"
+        >
+          Beste Balkonspeicher
+        </a>
+
+        <a
+          href="/balkonspeicher-vergleich"
+          class="hero-button-secondary"
+        >
+          Zum Vergleich
+        </a>
+
+      </div>
+
     </div>
+
+  </section>
+
+  <section class="home-featured">
+
+    <div class="feature-card">
+      <strong>
+        15+
+      </strong>
+
+      <span>
+        Ratgeber & Vergleiche
+      </span>
+    </div>
+
+    <div class="feature-card">
+      <strong>
+        4
+      </strong>
+
+      <span>
+        Hersteller im Vergleich
+      </span>
+    </div>
+
+    <div class="feature-card">
+      <strong>
+        100%
+      </strong>
+
+      <span>
+        Fokus auf Balkonspeicher
+      </span>
+    </div>
+
   </section>
 
   <h2 class="section-title">
-    Empfohlen
+    Beliebte Inhalte
   </h2>
 
   <div class="card-grid">
@@ -60,7 +114,7 @@ const categories = [
       href="/beste-balkonspeicher"
     >
       <div class="card-category">
-        Ranking
+        Vergleich
       </div>
 
       <h3>
@@ -68,31 +122,48 @@ const categories = [
       </h3>
 
       <p>
-        Die besten Balkonspeicher im Vergleich inklusive Empfehlungen und Übersicht.
+        Die aktuell interessantesten Speicherlösungen im Überblick.
       </p>
     </a>
 
     <a
       class="card"
-      href="/hersteller"
+      href="/balkonspeicher-vergleich"
     >
       <div class="card-category">
-        Hersteller
+        Vergleich
       </div>
 
       <h3>
-        Hersteller Übersicht
+        Balkonspeicher Vergleich
       </h3>
 
       <p>
-        EcoFlow, Anker, Zendure und weitere Hersteller im Überblick.
+        Direkter Vergleich der wichtigsten Systeme.
+      </p>
+    </a>
+
+    <a
+      class="card"
+      href="/balkonspeicher"
+    >
+      <div class="card-category">
+        Ratgeber
+      </div>
+
+      <h3>
+        Balkonspeicher Hub
+      </h3>
+
+      <p>
+        Alle wichtigen Themen rund um Speicher und Eigenverbrauch.
       </p>
     </a>
 
   </div>
 
   <h2 class="section-title">
-    Themen
+    Kategorien
   </h2>
 
   <div class="category-list">
@@ -110,40 +181,36 @@ const categories = [
 
   </div>
 
-  {
-    featuredPages.length > 0 && (
-      <>
-        <h2 class="section-title">
-          Empfohlene Artikel
-        </h2>
+  <h2 class="section-title">
+    Empfohlene Artikel
+  </h2>
 
-        <div class="card-grid">
+  <div class="card-grid">
 
-          {
-            featuredPages.map((page) => (
-              <a
-                class="card"
-                href={`/${page.data.slug}`}
-              >
-                <div class="card-category">
-                  {page.data.categoryLabel}
-                </div>
+    {
+      featuredPages.map((page) => (
+        <a
+          class="card"
+          href={`/${page.data.slug}`}
+        >
 
-                <h3>
-                  {page.data.title}
-                </h3>
+          <div class="card-category">
+            {page.data.categoryLabel}
+          </div>
 
-                <p>
-                  {page.data.description}
-                </p>
-              </a>
-            ))
-          }
+          <h3>
+            {page.data.title}
+          </h3>
 
-        </div>
-      </>
-    )
-  }
+          <p>
+            {page.data.description}
+          </p>
+
+        </a>
+      ))
+    }
+
+  </div>
 
   <h2 class="section-title">
     Neueste Inhalte
@@ -157,6 +224,7 @@ const categories = [
           class="card"
           href={`/${page.data.slug}`}
         >
+
           <div class="card-category">
             {page.data.categoryLabel}
           </div>
@@ -168,6 +236,7 @@ const categories = [
           <p>
             {page.data.description}
           </p>
+
         </a>
       ))
     }
