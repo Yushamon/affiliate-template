@@ -1,4 +1,3 @@
-````md
 ---
 title: "Balkonspeicher Größe berechnen: Wie viel Speicher ist wirklich sinnvoll?"
 slug: "balkonspeicher-groesse-berechnen"
@@ -221,4 +220,3 @@ Für die meisten Haushalte mit einem 800-Watt-Balkonkraftwerk sind **1 bis 2 kWh
 Ein größerer Speicher lohnt sich nur dann, wenn regelmäßig viel überschüssiger Solarstrom erzeugt wird oder später eine Erweiterung der Solaranlage geplant ist.
 
 Wer langfristig flexibel bleiben möchte, fährt mit einem modularen Speichersystem meist am besten.
-````
