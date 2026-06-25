@@ -19,7 +19,46 @@ export const products = {
     "Modular erweiterbar",
     "App-Steuerung",
     "Gut für Balkonkraftwerke geeignet"
-  ]
+  ],
+  verdict:
+  "Eine der aktuell stärksten Komplettlösungen für Balkonkraftwerke. Besonders geeignet für Haushalte, die Wert auf Erweiterbarkeit, App-Steuerung und langfristige Planung legen.",
+
+pros: [
+  "Sehr einfache Installation",
+  "Modernes Energie-Ökosystem",
+  "Hervorragende App",
+  "Modular erweiterbar",
+  "Für Balkonkraftwerke optimiert"
+],
+
+cons: [
+  "Höherer Anschaffungspreis",
+  "Nicht jede Funktion wird von jedem Haushalt benötigt"
+],
+
+bestFor: [
+  "Familien",
+  "Homeoffice",
+  "800-Watt-Balkonkraftwerke",
+  "Langfristige Ausbaupläne"
+],
+
+notFor: [
+  "Sehr kleine Haushalte",
+  "Nutzer mit sehr geringem Stromverbrauch",
+  "Käufer mit sehr kleinem Budget"
+],
+
+ourOpinion:
+  "Die EcoFlow STREAM Ultra gehört aktuell zu den interessantesten Balkonspeichern am Markt. Besonders überzeugen die moderne App, die hohe Erweiterbarkeit und das starke Energie-Ökosystem.",
+
+ratingCategories: {
+  installation: 5,
+  app: 5,
+  flexibility: 5,
+  pricePerformance: 4,
+  expandability: 5
+},
 },
 
   "anker-solix-solarbank-3-pro": {
@@ -42,7 +81,45 @@ export const products = {
       "Einfache Bedienung",
       "Gute App-Integration",
       "Bekannter Hersteller"
-    ]
+    ],
+    verdict:
+  "Ideal für Einsteiger und alle, die ein besonders einfaches Komplettsystem suchen.",
+
+pros: [
+  "Sehr einfache Bedienung",
+  "Intuitive App",
+  "Schnelle Installation",
+  "Hohe Alltagstauglichkeit",
+  "Bekannter Hersteller"
+],
+
+cons: [
+  "Etwas weniger flexibel als modulare Systeme",
+  "Höherer Einstiegspreis"
+],
+
+bestFor: [
+  "Einsteiger",
+  "Paare",
+  "Familien",
+  "Komfortorientierte Nutzer"
+],
+
+notFor: [
+  "Technikbastler",
+  "Sehr individuelle Speicherkonzepte"
+],
+
+ourOpinion:
+  "Die Solarbank 3 Pro gehört zu den benutzerfreundlichsten Balkonspeichern. Besonders Einsteiger profitieren von der einfachen Einrichtung.",
+
+ratingCategories: {
+  installation: 5,
+  app: 5,
+  flexibility: 4,
+  pricePerformance: 4,
+  expandability: 4
+},
   },
 
   "zendure-solarflow": {
@@ -65,7 +142,44 @@ export const products = {
       "Modulares System",
       "Flexibel erweiterbar",
       "Für verschiedene Setups geeignet"
-    ]
+    ],
+    verdict:
+  "Die flexibelste Lösung für Nutzer, die ihr Balkonkraftwerk langfristig erweitern möchten.",
+
+pros: [
+  "Sehr modular",
+  "Hohe Erweiterbarkeit",
+  "Ideal für Nachrüstung",
+  "Flexible Speichergrößen",
+  "Interessantes Preis-Leistungs-Verhältnis"
+],
+
+cons: [
+  "Etwas komplexere Planung",
+  "Nicht ganz so intuitiv wie Anker"
+],
+
+bestFor: [
+  "Nachrüstung",
+  "Technikinteressierte",
+  "Modulare Erweiterungen",
+  "Langfristige Planung"
+],
+
+notFor: [
+  "Nutzer mit Wunsch nach maximaler Einfachheit"
+],
+
+ourOpinion:
+  "Zendure überzeugt vor allem durch Flexibilität. Wer sein System Schritt für Schritt erweitern möchte, findet hier eine der interessantesten Lösungen.",
+
+ratingCategories: {
+  installation: 4,
+  app: 4,
+  flexibility: 5,
+  pricePerformance: 5,
+  expandability: 5
+},
   },
 
   "solakon-one": {
@@ -88,7 +202,45 @@ export const products = {
       "Einsteigerfreundlich",
       "Komplettlösung",
       "Einfache Nutzung"
-    ]
+      
+    ],
+    verdict:
+  "Eine sehr gute Einstiegslösung für kleinere Haushalte und alle, die möglichst unkompliziert starten möchten.",
+
+pros: [
+  "Einsteigerfreundlich",
+  "Einfache Komplettlösung",
+  "Übersichtliche Bedienung",
+  "Für Balkonkraftwerke optimiert"
+],
+
+cons: [
+  "Weniger flexibel als EcoFlow oder Zendure",
+  "Kleinere Produktauswahl"
+],
+
+bestFor: [
+  "Singles",
+  "Mieter",
+  "Einsteiger",
+  "Kleine Haushalte"
+],
+
+notFor: [
+  "Große Haushalte",
+  "Sehr hohe Stromverbräuche"
+],
+
+ourOpinion:
+  "Solakon richtet sich klar an Einsteiger. Wer eine unkomplizierte Komplettlösung sucht, erhält ein einfaches und gut verständliches System.",
+
+ratingCategories: {
+  installation: 5,
+  app: 4,
+  flexibility: 3,
+  pricePerformance: 4,
+  expandability: 3
+},
   }
 };
 
