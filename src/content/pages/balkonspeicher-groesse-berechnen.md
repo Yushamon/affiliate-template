@@ -34,7 +34,13 @@ faq:
     answer: "Meist sind 1 bis 2 kWh sinnvoll. Größere Speicher lohnen sich vor allem bei höherem Stromverbrauch oder einer späteren Erweiterung."
 ---
 
-import StorageCalculator from "@/components/StorageCalculator.astro";
+## <a id="rechner"></a>Balkonspeicher Rechner
+
+Berechne in wenigen Sekunden, welche Speichergröße für dein Balkonkraftwerk sinnvoll ist.
+
+[[STORAGE_CALCULATOR]]
+
+> **Hinweis:** Die Empfehlung dient als Orientierung für typische Haushalte mit einem 800-Watt-Balkonkraftwerk.
 
 # Balkonspeicher Größe berechnen
 

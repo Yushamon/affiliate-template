@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import StorageCalculator from "../components/StorageCalculator.astro";
 import { site } from "../utils/site";
 
 interface FAQItem {
@@ -31,89 +32,36 @@ const imageUrl = ogImage
   : `${site.domain}/images/generated/home-hero.webp`;
 
 const isHome = canonical === "/";
+const showStorageCalculator = canonical === "/balkonspeicher-groesse-berechnen/";
 ---
 
 <html lang="de">
   <head>
     <meta charset="utf-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{title}</title>
 
-    <meta
-      name="description"
-      content={description}
-    />
+    <meta name="description" content={description} />
 
-    <meta
-      name="robots"
-      content="index,follow"
-    />
+    <meta name="robots" content="index,follow" />
 
-    <link
-      rel="canonical"
-      href={canonicalUrl}
-    />
+    <link rel="canonical" href={canonicalUrl} />
 
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <meta
-      property="og:type"
-      content={isHome ? "website" : "article"}
-    />
+    <meta property="og:type" content={isHome ? "website" : "article"} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site.siteName} />
+    <meta property="og:image" content={imageUrl} />
 
-    <meta
-      property="og:title"
-      content={title}
-    />
-
-    <meta
-      property="og:description"
-      content={description}
-    />
-
-    <meta
-      property="og:url"
-      content={canonicalUrl}
-    />
-
-    <meta
-      property="og:site_name"
-      content={site.siteName}
-    />
-
-    <meta
-      property="og:image"
-      content={imageUrl}
-    />
-
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
-
-    <meta
-      name="twitter:title"
-      content={title}
-    />
-
-    <meta
-      name="twitter:description"
-      content={description}
-    />
-
-    <meta
-      name="twitter:image"
-      content={imageUrl}
-    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
 
     <script
       type="application/ld+json"
@@ -172,6 +120,14 @@ const isHome = canonical === "/";
 
     <main class="container">
       <slot />
+
+      {
+        showStorageCalculator && (
+          <section class="storage-calculator-section" id="rechner">
+            <StorageCalculator />
+          </section>
+        )
+      }
     </main>
 
     <Footer />
