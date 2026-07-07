@@ -5,86 +5,87 @@ import { getCollection } from "astro:content";
 const pages = await getCollection("pages");
 
 const hubPages = pages
-  .filter(
-    (page) =>
-      page.data.category === "balkonspeicher"
-  )
-  .sort((a, b) => {
-    const aPriority =
-      a.data.hubPriority ?? 999;
+  .filter((page) => page.data.category === "balkonspeicher")
+  .sort((a, b) => (a.data.hubPriority ?? 999) - (b.data.hubPriority ?? 999));
 
-    const bPriority =
-      b.data.hubPriority ?? 999;
-
-    return aPriority - bPriority;
-  });
+const primaryPages = hubPages.slice(0, 4);
+const otherPages = hubPages.slice(4);
 ---
 
 <AffiliateLayout
-  title="Balkonspeicher Ratgeber"
-  description="Alle wichtigen Informationen rund um Balkonspeicher, Kosten, Tests, Förderung und Wirtschaftlichkeit."
+  title="Balkonspeicher Ratgeber: Kosten, Größe, Vergleich und Wirtschaftlichkeit"
+  description="Der zentrale Ratgeber für Balkonspeicher. Erfahre, wann sich ein Speicher lohnt, welche Größe passt, welche Kosten entstehen und welche Systeme empfehlenswert sind."
   canonical="/balkonspeicher"
 >
-
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <p class="eyebrow">
-        Themenhub
-      </p>
-
-      <h1>
-        Balkonspeicher Ratgeber
-      </h1>
-
-      <p>
-        Hier findest du alle wichtigen Informationen zu Balkonspeichern,
-        Kosten, Wirtschaftlichkeit, Speichergrößen, Förderungen und
-        Produktempfehlungen.
-      </p>
-
+  <section class="hub-hero">
+    <div class="hub-badge">
+      Themenhub
     </div>
 
-  </section>
-
-  <section class="article">
-
-    <h2>
-      Was ist ein Balkonspeicher?
-    </h2>
+    <h1>
+      Balkonspeicher einfach erklärt.
+    </h1>
 
     <p>
-      Ein Balkonspeicher speichert überschüssigen Solarstrom aus einem
-      Balkonkraftwerk und stellt ihn später wieder zur Verfügung.
-      Dadurch kann der Eigenverbrauch deutlich erhöht werden.
+      Alles, was du vor dem Kauf wissen musst: Kosten, Speichergröße,
+      Wirtschaftlichkeit, Installation, Sicherheit und passende Produkte.
     </p>
 
-    <h2>
-      Für wen lohnt sich ein Balkonspeicher?
-    </h2>
+    <div class="hub-actions">
+      <a href="/beste-balkonspeicher" class="premium-button premium-button-primary">
+        Beste Balkonspeicher ansehen
+      </a>
 
-    <p>
-      Besonders interessant sind Speicher für Haushalte, die tagsüber
-      wenig Strom verbrauchen und den erzeugten Solarstrom vor allem
-      am Abend nutzen möchten.
-    </p>
-
+      <a href="/balkonspeicher-groesse-berechnen" class="premium-button premium-button-secondary">
+        Speichergröße berechnen
+      </a>
+    </div>
   </section>
 
-  <h2 class="section-title">
-    Alle Ratgeber
-  </h2>
+  <section class="hub-answer">
+    <strong>
+      Kurzantwort
+    </strong>
 
-  <div class="card-grid">
+    <p>
+      Ein Balkonspeicher lohnt sich vor allem, wenn dein Balkonkraftwerk tagsüber mehr Strom erzeugt, als du direkt verbrauchst. Für viele Haushalte mit 800-Watt-Balkonkraftwerk sind 1 bis 2 kWh Speichergröße besonders sinnvoll.
+    </p>
+  </section>
 
-    {
-      hubPages.map((page) => (
-        <a
-          class="card"
-          href={`/${page.data.slug}`}
-        >
+  <section class="hub-decision-grid">
+    <a href="/lohnt-sich-ein-balkonspeicher" class="hub-decision-card">
+      <span>Start</span>
+      <h2>Lohnt sich ein Balkonspeicher?</h2>
+      <p>Die wichtigste Entscheidung vor dem Kauf verständlich erklärt.</p>
+    </a>
 
+    <a href="/balkonspeicher-wirtschaftlichkeit" class="hub-decision-card">
+      <span>Kosten</span>
+      <h2>Wirtschaftlichkeit prüfen</h2>
+      <p>Wann sich ein Speicher finanziell rechnet und wann eher nicht.</p>
+    </a>
+
+    <a href="/balkonspeicher-groesse-berechnen" class="hub-decision-card">
+      <span>Rechner</span>
+      <h2>Speichergröße berechnen</h2>
+      <p>Finde heraus, welche Kapazität zu deinem Haushalt passt.</p>
+    </a>
+  </section>
+
+  <section class="hub-section">
+    <div class="hub-section-header">
+      <span>
+        Wichtig zuerst
+      </span>
+
+      <h2>
+        Die wichtigsten Ratgeber.
+      </h2>
+    </div>
+
+    <div class="hub-card-grid">
+      {primaryPages.map((page) => (
+        <a class="hub-card" href={`/${page.data.slug}`}>
           <div class="card-category">
             {page.data.categoryLabel}
           </div>
@@ -96,11 +97,64 @@ const hubPages = pages
           <p>
             {page.data.description}
           </p>
-
         </a>
-      ))
-    }
+      ))}
+    </div>
+  </section>
 
-  </div>
+  <section class="hub-guide">
+    <div>
+      <h2>
+        Worauf kommt es bei einem Balkonspeicher an?
+      </h2>
 
+      <p>
+        Entscheidend ist nicht der größte Speicher, sondern die passende Größe für deinen Verbrauch. Ein zu großer Akku ist teuer und bleibt oft ungenutzt. Ein zu kleiner Speicher kann dagegen wertvollen Solarstrom verschenken.
+      </p>
+    </div>
+
+    <div class="hub-checklist">
+      <strong>
+        Vor dem Kauf prüfen
+      </strong>
+
+      <ul>
+        <li>Jährlicher Stromverbrauch</li>
+        <li>Verbrauch am Abend</li>
+        <li>Leistung des Balkonkraftwerks</li>
+        <li>Passende Speichergröße</li>
+        <li>Erweiterbarkeit und Garantie</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hub-section">
+    <div class="hub-section-header">
+      <span>
+        Alle Inhalte
+      </span>
+
+      <h2>
+        Weitere Ratgeber zum Thema Balkonspeicher.
+      </h2>
+    </div>
+
+    <div class="hub-card-grid">
+      {otherPages.map((page) => (
+        <a class="hub-card" href={`/${page.data.slug}`}>
+          <div class="card-category">
+            {page.data.categoryLabel}
+          </div>
+
+          <h3>
+            {page.data.title}
+          </h3>
+
+          <p>
+            {page.data.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
 </AffiliateLayout>
