@@ -1,0 +1,228 @@
+.calculator-section {
+  margin: 40px 0 60px;
+}
+
+.storage-calculator,
+.economic-calculator {
+  margin-top: 48px;
+}
+
+.calculator-shell {
+  padding: 42px;
+  border-radius: 42px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(240, 253, 244, 0.74)
+    );
+  box-shadow: 0 28px 80px rgba(20, 32, 26, 0.10);
+}
+
+.calculator-intro {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.calculator-intro span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.calculator-intro h2 {
+  margin: 0 0 16px;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.calculator-intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  gap: 24px;
+}
+
+.calculator-card,
+.calculator-result-card {
+  padding: 28px;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  background: white;
+}
+
+.calculator-card {
+  display: grid;
+  gap: 18px;
+}
+
+.calculator-card label {
+  display: grid;
+  gap: 8px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.calculator-card input,
+.calculator-card select,
+.calculator-form input,
+.calculator-form select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.calculator-card button,
+.calculator-form button {
+  width: fit-content;
+  margin-top: 8px;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.calculator-card button:hover,
+.calculator-form button:hover {
+  background: var(--primary-dark);
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.calculator-result,
+.calculator-result-card {
+  color: var(--text);
+}
+
+.calculator-result {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(240, 253, 244, 0.85);
+  border: 1px solid var(--border);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--primary-dark);
+}
+
+.calculator-result-card span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.calculator-result-card h3 {
+  margin: 0 0 16px;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.calculator-result-card p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.calculator-result-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.calculator-result-metrics div {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(240, 253, 244, 0.75);
+  border: 1px solid var(--border);
+}
+
+.calculator-result-metrics strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.calculator-result-metrics small {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.calculator-result-button,
+.calculator-link {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.calculator-result-button:hover,
+.calculator-link:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 900px) {
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-shell {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .calculator-shell {
+    padding: 22px;
+    border-radius: 32px;
+  }
+
+  .calculator-card,
+  .calculator-result-card {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .calculator-result-card h3 {
+    font-size: 34px;
+  }
+
+  .calculator-result-metrics {
+    grid-template-columns: 1fr;
+  }
+}

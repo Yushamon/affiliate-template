@@ -1,0 +1,22 @@
+---
+interface Props {
+  href?: string;
+  label?: string;
+  title: string;
+  text?: string;
+  cta?: string;
+}
+
+const { href, label, title, text, cta } = Astro.props;
+const Tag = href ? "a" : "article";
+---
+
+<Tag class="ui-card" href={href}>
+  {label && <span>{label}</span>}
+
+  <h3>{title}</h3>
+
+  {text && <p>{text}</p>}
+
+  {cta && <strong>{cta} →</strong>}
+</Tag>

@@ -1,32 +1,18 @@
 ---
+import Callout from "./ui/Callout.astro";
+
 interface Props {
   title: string;
   text: string;
   url: string;
 }
 
-const {
-  title,
-  text,
-  url
-} = Astro.props;
+const { title, text, url } = Astro.props;
 ---
 
-<section class="intent-cta">
-
-  <h2>
-    {title}
-  </h2>
-
-  <p>
-    {text}
-  </p>
-
-  <a
-    href={url}
-    class="intent-cta-button"
-  >
-    Jetzt ansehen
-  </a>
-
-</section>
+<Callout
+  title={title}
+  text={text}
+  href={url}
+  cta="Zum Vergleich"
+/>

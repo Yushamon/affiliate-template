@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  href?: string;
+  cta?: string;
+  variant?: "default" | "success" | "warning";
+}
+
+const {
+  title,
+  text,
+  href,
+  cta = "Mehr erfahren",
+  variant = "default"
+} = Astro.props;
+---
+
+<section class={`ui-callout ui-callout-${variant}`}>
+  <div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </div>
+
+  {href && (
+    <a href={href}>
+      {cta}
+    </a>
+  )}
+</section>

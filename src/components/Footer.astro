@@ -1,147 +1,43 @@
 ---
-import { site } from "../utils/site";
+const year = new Date().getFullYear();
 ---
 
-<footer class="footer">
+<footer class="footer-v2">
+  <div class="footer-inner-v2">
+    <div class="footer-brand-v2">
+      <strong>Balkonspeicher Ratgeber</strong>
 
-  <div class="footer-inner">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <strong>
-          {site.siteName}
-        </strong>
-
-        <p>
-          Unabhängige Vergleiche, Ratgeber und Entscheidungshilfen rund um Balkonspeicher und Balkonkraftwerke.
-        </p>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Ratgeber
-        </h4>
-
-        <ul>
-
-          <li>
-            <a href="/balkonspeicher">
-              Balkonspeicher
-            </a>
-          </li>
-
-          <li>
-            <a href="/beste-balkonspeicher">
-              Beste Balkonspeicher
-            </a>
-          </li>
-
-          <li>
-            <a href="/balkonspeicher-vergleich">
-              Balkonspeicher Vergleich
-            </a>
-          </li>
-
-          <li>
-            <a href="/balkonspeicher-groesse-berechnen">
-              Speichergröße berechnen
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Hersteller
-        </h4>
-
-        <ul>
-
-          <li>
-            <a href="/hersteller/ecoflow">
-              EcoFlow
-            </a>
-          </li>
-
-          <li>
-            <a href="/hersteller/anker">
-              Anker
-            </a>
-          </li>
-
-          <li>
-            <a href="/hersteller/zendure">
-              Zendure
-            </a>
-          </li>
-
-          <li>
-            <a href="/hersteller/solakon">
-              Solakon
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Rechtliches
-        </h4>
-
-        <ul>
-
-          <li>
-            <a href="/impressum">
-              Impressum
-            </a>
-          </li>
-
-          <li>
-            <a href="/datenschutz">
-              Datenschutz
-            </a>
-          </li>
-
-          <li>
-            <a href="/affiliate-hinweis">
-              Affiliate-Hinweis
-            </a>
-          </li>
-
-          <li>
-            <a href="/kontakt">
-              Kontakt
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+      <p>
+        Verständliche Entscheidungshilfen für Balkonkraftwerke,
+        Speichergrößen, Wirtschaftlichkeit und passende Speichersysteme.
+      </p>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-grid-v2">
+      <div>
+        <h4>Ratgeber</h4>
+        <a href="/balkonspeicher">Balkonspeicher</a>
+        <a href="/balkonkraftwerk-speicher">Balkonkraftwerk Speicher</a>
+        <a href="/speicher-fuer-balkonkraftwerk-nachruesten">Speicher nachrüsten</a>
+      </div>
 
-      <span>
-        © {new Date().getFullYear()} {site.siteName}
-      </span>
+      <div>
+        <h4>Vergleiche</h4>
+        <a href="/beste-balkonspeicher">Beste Balkonspeicher</a>
+        <a href="/ecoflow-vs-anker">EcoFlow vs Anker</a>
+        <a href="/anker-vs-zendure">Anker vs Zendure</a>
+      </div>
 
-      <span>
-        . Unabhängige Informationen rund um Balkonspeicher.
-      </span>
-
+      <div>
+        <h4>Rechtliches</h4>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
+        <a href="/affiliate-hinweis">Affiliate-Hinweis</a>
+      </div>
     </div>
 
+    <div class="footer-bottom-v2">
+      © {year} Balkonspeicher Ratgeber
+    </div>
   </div>
-
 </footer>

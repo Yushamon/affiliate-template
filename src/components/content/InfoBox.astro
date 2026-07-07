@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  variant?: "info" | "success" | "warning";
+}
+
+const {
+  title,
+  text,
+  variant = "info"
+} = Astro.props;
+---
+
+<div class={`info-box info-box-${variant}`}>
+  <div class="info-box-icon">
+    {
+      variant === "success"
+        ? "✓"
+        : variant === "warning"
+        ? "!"
+        : "i"
+    }
+  </div>
+
+  <div>
+    <strong>{title}</strong>
+
+    <p>{text}</p>
+  </div>
+</div>

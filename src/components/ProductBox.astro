@@ -1,4 +1,6 @@
 ---
+import Button from "./ui/Button.astro";
+import Badge from "./ui/Badge.astro";
 import { products, type ProductKey } from "../data/products";
 
 interface Props {
@@ -6,7 +8,10 @@ interface Props {
   currentProductKey?: ProductKey;
 }
 
-const { productKey, currentProductKey } = Astro.props;
+const {
+  productKey,
+  currentProductKey
+} = Astro.props;
 
 const product = products[productKey];
 
@@ -14,89 +19,154 @@ const isCurrentProduct =
   currentProductKey === productKey;
 
 const hasAffiliate =
-  Boolean(product?.affiliateUrl && product.affiliateUrl.trim().length > 0);
-
-const buttonLabel = hasAffiliate
-  ? "Preis bei Amazon ansehen"
-  : "Testbericht lesen";
+  Boolean(
+    product?.affiliateUrl &&
+    product.affiliateUrl.trim().length > 0
+  );
 
 const buttonHref = hasAffiliate
   ? product.affiliateUrl
   : product.productUrl;
 
+const buttonLabel = hasAffiliate
+  ? "Preis bei Amazon ansehen"
+  : "Zum Testbericht";
+
 const showButton =
   hasAffiliate || !isCurrentProduct;
 ---
 
-{product && (
-  <section class="product-box">
-    <div class="product-image-area">
-      <div class="product-badge">
-        🏆 {product.badge}
-      </div>
+{
+product && (
 
-      <img
-        src={product.image}
-        alt={product.name}
-        class="product-image"
-        loading="lazy"
-      />
-    </div>
+<section class="product-box-v2">
 
-    <div class="product-content">
-      <div class="product-brand">
-        {product.brand}
-      </div>
+<div class="product-box-image">
 
-      <h2>
-        {product.name}
-      </h2>
+<Badge
+label={product.badge}
+/>
 
-      <div class="product-rating">
-        ★★★★★
-        <span>{product.rating} / 5</span>
-      </div>
+<img
+src={product.image}
+alt={product.name}
+loading="lazy"
+/>
 
-      <p class="product-recommendation">
-        {product.recommendation}
-      </p>
+</div>
 
-      <ul class="product-highlights">
-        {product.highlights.map((item) => (
-          <li>✓ {item}</li>
-        ))}
-      </ul>
+<div class="product-box-content">
 
-      <div class="product-specs">
-        <div class="product-spec">
-          <strong>Kapazität</strong>
-          <span>{product.capacity}</span>
-        </div>
+<div class="product-box-brand">
 
-        <div class="product-spec">
-          <strong>Erweiterbar</strong>
-          <span>{product.expandable}</span>
-        </div>
-      </div>
+{product.brand}
 
-      {showButton && (
-        <>
-          <a
-            href={buttonHref}
-            class="product-button"
-            target={hasAffiliate ? "_blank" : undefined}
-            rel={hasAffiliate ? "nofollow sponsored" : undefined}
-          >
-            {buttonLabel}
-          </a>
+</div>
 
-          {hasAffiliate && (
-            <p class="affiliate-note">
-              Als Amazon-Partner erhalten wir bei qualifizierten Verkäufen eine Provision. Für dich entstehen keine Mehrkosten.
-            </p>
-          )}
-        </>
-      )}
-    </div>
-  </section>
-)}
+<h2>
+
+{product.name}
+
+</h2>
+
+<div class="product-box-rating">
+
+★★★★★
+
+<span>
+
+{product.rating} / 5
+
+</span>
+
+</div>
+
+<p class="product-box-text">
+
+{product.recommendation}
+
+</p>
+
+<div class="product-box-highlights">
+
+{
+product.highlights.map(item=>(
+<div>
+
+✓ {item}
+
+</div>
+))
+}
+
+</div>
+
+<div class="product-box-specs">
+
+<div>
+
+<strong>
+
+Kapazität
+
+</strong>
+
+<span>
+
+{product.capacity}
+
+</span>
+
+</div>
+
+<div>
+
+<strong>
+
+Erweiterbar
+
+</strong>
+
+<span>
+
+{product.expandable}
+
+</span>
+
+</div>
+
+</div>
+
+{
+
+showButton && (
+
+<Button
+href={buttonHref}
+label={buttonLabel}
+/>
+
+)
+
+}
+
+{
+
+hasAffiliate && (
+
+<p class="affiliate-note">
+
+Als Amazon-Partner erhalten wir bei qualifizierten Verkäufen eine Provision.
+
+</p>
+
+)
+
+}
+
+</div>
+
+</section>
+
+)
+}

@@ -13,6 +13,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import InternalLinks from "../components/InternalLinks.astro";
 import { recommendations } from "../data/recommendations";
 import { internalLinks } from "../data/internalLinks";
+import PremiumRenderer from "../components/content/PremiumRenderer.astro";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -138,7 +139,7 @@ const internalLinkPages = internalLinkSlugs
         </section>
       )
     }
-
+<PremiumRenderer blocks={page.data.premiumBlocks} />
     <Content />
 
     {

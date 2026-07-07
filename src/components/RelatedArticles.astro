@@ -1,36 +1,39 @@
 ---
-type RelatedPage = {
+import Card from "./ui/Card.astro";
+import Grid from "./ui/Grid.astro";
+import Section from "./ui/Section.astro";
+
+interface Page {
   data: {
     title: string;
-    slug: string;
     description: string;
+    slug: string;
     categoryLabel: string;
   };
-};
+}
 
 interface Props {
-  pages: RelatedPage[];
+  pages: Page[];
 }
 
 const { pages } = Astro.props;
 ---
 
-{
-  pages.length > 0 && (
-    <section class="related-section">
-      <h2>Passende Artikel</h2>
-
-      <div class="card-grid">
-        {pages.map((page) => (
-          <a class="card" href={`/${page.data.slug}`}>
-            <div class="card-category">{page.data.categoryLabel}</div>
-
-            <h3>{page.data.title}</h3>
-
-            <p>{page.data.description}</p>
-          </a>
-        ))}
-      </div>
-    </section>
-  )
-}
+{pages.length > 0 && (
+  <Section
+    eyebrow="Weiterführende Inhalte"
+    title="Das könnte dich auch interessieren"
+  >
+    <Grid columns={3}>
+      {pages.map((page) => (
+        <Card
+          href={`/${page.data.slug}`}
+          label={page.data.categoryLabel}
+          title={page.data.title}
+          text={page.data.description}
+          cta="Weiterlesen"
+        />
+      ))}
+    </Grid>
+  </Section>
+)}

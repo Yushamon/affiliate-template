@@ -1,9 +1,13 @@
 ---
+import Card from "./ui/Card.astro";
+import Grid from "./ui/Grid.astro";
+import Section from "./ui/Section.astro";
+
 interface Page {
   data: {
-    slug: string;
     title: string;
     description: string;
+    slug: string;
     categoryLabel: string;
   };
 }
@@ -15,39 +19,21 @@ interface Props {
 const { pages } = Astro.props;
 ---
 
-{
-  pages.length > 0 && (
-    <section class="internal-links">
-      <div class="internal-links-header">
-        <span>
-          Weiterführende Inhalte
-        </span>
-
-        <h2>
-          Das könnte dich auch interessieren
-        </h2>
-      </div>
-
-      <div class="internal-links-grid">
-        {pages.map((page) => (
-          <a
-            href={`/${page.data.slug}`}
-            class="internal-link-card"
-          >
-            <div class="card-category">
-              {page.data.categoryLabel}
-            </div>
-
-            <h3>
-              {page.data.title}
-            </h3>
-
-            <p>
-              {page.data.description}
-            </p>
-          </a>
-        ))}
-      </div>
-    </section>
-  )
-}
+{pages.length > 0 && (
+  <Section
+    eyebrow="Nächster Schritt"
+    title="Sinnvolle Ratgeber zu diesem Thema"
+  >
+    <Grid columns={2}>
+      {pages.map((page) => (
+        <Card
+          href={`/${page.data.slug}`}
+          label={page.data.categoryLabel}
+          title={page.data.title}
+          text={page.data.description}
+          cta="Jetzt ansehen"
+        />
+      ))}
+    </Grid>
+  </Section>
+)}

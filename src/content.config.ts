@@ -18,12 +18,14 @@ const pages = defineCollection({
 
     tags: z.array(z.string()).default([]),
 
-    faq: z.array(
-      z.object({
-        question: z.string(),
-        answer: z.string()
-      })
-    ).optional(),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string()
+        })
+      )
+      .optional(),
 
     intent: z.string().optional(),
 
@@ -37,7 +39,89 @@ const pages = defineCollection({
 
     ogImage: z.string().optional(),
 
-    featured: z.boolean().optional()
+    featured: z.boolean().optional(),
+
+     premiumBlocks: z
+
+      .array(
+
+        z.object({
+
+          type: z.enum([
+
+            "answer",
+
+            "quickFacts",
+
+            "scenarios",
+
+            "decision",
+
+            "steps",
+
+            "products",
+
+            "checks",
+
+            "mistakes",
+
+            "expert",
+
+            "vde",
+
+            "recommendation",
+
+            "checklist"
+
+          ]),
+
+          eyebrow: z.string().optional(),
+
+          title: z.string().optional(),
+
+          text: z.string().optional(),
+
+          href: z.string().optional(),
+
+          cta: z.string().optional(),
+
+          items: z.array(z.string()).optional(),
+
+          cards: z
+
+            .array(
+
+              z.object({
+
+                label: z.string().optional(),
+
+                title: z.string(),
+
+                text: z.string().optional(),
+
+                value: z.string().optional(),
+
+                href: z.string().optional(),
+
+                cta: z.string().optional(),
+
+                badge: z.string().optional(),
+
+                productKey: z.string().optional(),
+
+                items: z.array(z.string()).optional()
+
+              })
+
+            )
+
+            .optional()
+
+        })
+
+      )
+
+      .optional(),
   })
 });
 

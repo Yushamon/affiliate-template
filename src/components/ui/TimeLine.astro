@@ -1,0 +1,25 @@
+---
+interface Step {
+  title: string;
+  text: string;
+}
+
+interface Props {
+  steps: Step[];
+}
+
+const { steps } = Astro.props;
+---
+
+<div class="ui-timeline">
+  {steps.map((step, index) => (
+    <article class="ui-timeline-item">
+      <span>{index + 1}</span>
+
+      <div>
+        <h3>{step.title}</h3>
+        <p>{step.text}</p>
+      </div>
+    </article>
+  ))}
+</div>

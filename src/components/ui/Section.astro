@@ -1,0 +1,21 @@
+---
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+}
+
+const { eyebrow, title, text } = Astro.props;
+---
+
+<section class="ui-section">
+  {(eyebrow || title || text) && (
+    <div class="ui-section-header">
+      {eyebrow && <span>{eyebrow}</span>}
+      {title && <h2>{title}</h2>}
+      {text && <p>{text}</p>}
+    </div>
+  )}
+
+  <slot />
+</section>

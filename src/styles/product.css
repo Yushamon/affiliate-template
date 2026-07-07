@@ -1,0 +1,121 @@
+.product-box-v2 {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 44px;
+  align-items: center;
+  margin: 56px 0;
+  padding: 38px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, white, rgba(240, 253, 244, 0.55));
+  border: 1px solid rgba(20, 32, 26, 0.08);
+  box-shadow: 0 24px 70px rgba(20, 32, 26, 0.08);
+}
+
+.product-box-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,253,244,0.8));
+}
+
+.product-box-image img {
+  max-width: 85%;
+  max-height: 270px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 35px rgba(20, 32, 26, 0.18));
+}
+
+.product-box-brand {
+  margin-bottom: 8px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-box-v2 h2 {
+  margin: 0 0 12px;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.product-box-rating {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #f59e0b;
+  font-weight: 900;
+}
+
+.product-box-rating span {
+  color: var(--muted);
+}
+
+.product-box-text {
+  margin: 0 0 26px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.product-box-highlights {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.product-box-highlights div {
+  font-weight: 800;
+}
+
+.product-box-specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.product-box-specs div {
+  padding: 18px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid rgba(20, 32, 26, 0.08);
+}
+
+.product-box-specs strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.product-box-specs span {
+  font-weight: 900;
+}
+
+.affiliate-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .product-box-v2 {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .product-box-image {
+    min-height: 240px;
+  }
+
+  .product-box-specs {
+    grid-template-columns: 1fr;
+  }
+}

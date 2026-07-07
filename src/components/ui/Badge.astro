@@ -1,0 +1,12 @@
+---
+interface Props {
+  label: string;
+  variant?: "default" | "success" | "warning";
+}
+
+const { label, variant = "default" } = Astro.props;
+---
+
+<span class={`ui-badge ui-badge-${variant}`}>
+  {label}
+</span>

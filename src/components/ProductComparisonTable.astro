@@ -1,4 +1,7 @@
 ---
+import ComparisonCard from "./ui/ComparisonCard.astro";
+import Grid from "./ui/Grid.astro";
+import Section from "./ui/Section.astro";
 import { products, type ProductKey } from "../data/products";
 
 interface Props {
@@ -8,83 +11,34 @@ interface Props {
 const { productKeys } = Astro.props;
 
 const selectedProducts = productKeys
-  .map((key) => products[key])
-  .filter(Boolean);
+  .map((key) => ({
+    key,
+    product: products[key]
+  }))
+  .filter((item) => item.product);
 ---
 
 {selectedProducts.length > 0 && (
-  <section class="comparison-section">
-
-    <div class="comparison-header">
-
-      <h2>
-        Balkonspeicher im Vergleich
-      </h2>
-
-      <p>
-        Die wichtigsten Unterschiede der beliebtesten Systeme auf einen Blick.
-      </p>
-
-    </div>
-
-    <div class="comparison-table-wrap">
-
-      <table class="comparison-table">
-
-        <thead>
-
-          <tr>
-            <th>Modell</th>
-            <th>Kapazität</th>
-            <th>Erweiterbar</th>
-            <th>Bewertung</th>
-          </tr>
-
-        </thead>
-
-        <tbody>
-
-          {
-            selectedProducts.map((product) => (
-              <tr>
-
-                <td>
-
-                  <div class="comparison-product">
-
-                    <strong>
-                      {product.name}
-                    </strong>
-
-                    <span>
-                      {product.brand}
-                    </span>
-
-                  </div>
-
-                </td>
-
-                <td>
-                  {product.capacity}
-                </td>
-
-                <td>
-                  {product.expandable}
-                </td>
-
-                <td>
-                  ★ {product.rating}
-                </td>
-
-              </tr>
-            ))
-          }
-
-        </tbody>
-
-      </table>
-
-    </div>
-
-  </section>
+  <Section
+    eyebrow="Vergleich"
+    title="Passende Speicher im Überblick"
+    text="Diese Systeme passen besonders gut zur jeweiligen Suchintention."
+  >
+    <Grid columns={selectedProducts.length >= 4 ? 4 : 3}>
+      {selectedProducts.map(({ key, product }) => (
+        <ComparisonCard
+          title={product.name}
+          subtitle={product.brand}
+          rating={`★ ${product.rating} / 5`}
+          items={[
+            product.capacity,
+            product.expandable,
+            ...product.highlights.slice(0, 2)
+          ]}
+          href={product.productUrl}
+          cta="Zum Testbericht"
+        />
+      ))}
+    </Grid>
+  </Section>
 )}

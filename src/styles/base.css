@@ -1,0 +1,49 @@
+:root {
+  --primary: #16a34a;
+  --primary-dark: #0f7a3a;
+
+  --accent: #facc15;
+  --accent-soft: #fef3c7;
+
+  --text: #14201a;
+  --muted: #5f6f67;
+
+  --bg: #fbfaf3;
+  --bg-soft: #f0fdf4;
+
+  --card: #ffffff;
+
+  --border: rgba(20, 32, 26, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  background:
+    radial-gradient(circle at top left, #ecfdf5 0, transparent 35%),
+    radial-gradient(circle at top right, #fef3c7 0, transparent 28%),
+    var(--bg);
+
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}

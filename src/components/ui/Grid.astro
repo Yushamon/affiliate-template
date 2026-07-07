@@ -1,0 +1,11 @@
+---
+interface Props {
+  columns?: 2 | 3 | 4;
+}
+
+const { columns = 3 } = Astro.props;
+---
+
+<div class={`ui-grid ui-grid-${columns}`}>
+  <slot />
+</div>
