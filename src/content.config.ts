@@ -78,7 +78,9 @@ const pages = defineCollection({
           eyebrow: z.string().optional(),
 
           title: z.string().optional(),
+productFilter: z.string().optional(),
 
+productLimit: z.number().optional(),
           text: z.string().optional(),
 
           href: z.string().optional(),

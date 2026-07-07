@@ -1,5 +1,5 @@
 ---
-import { products, type ProductKey } from "../../data/products";
+import { getProductsByTag, products, type ProductKey } from "../../data/products";
 
 type PremiumBlockType =
   | "answer"
@@ -36,6 +36,8 @@ type PremiumBlock = {
   items?: string[];
   href?: string;
   cta?: string;
+  productFilter?: string;
+  productLimit?: number;
 };
 
 interface Props {
@@ -43,79 +45,168 @@ interface Props {
 }
 
 const { blocks = [] } = Astro.props;
+
+const getBlockIcon = (type: PremiumBlockType) => {
+  const icons: Record<PremiumBlockType, string> = {
+    answer: "✓",
+    quickFacts: "i",
+    scenarios: "↗",
+    decision: "→",
+    steps: "1",
+    products: "★",
+    checks: "✓",
+    mistakes: "!",
+    expert: "★",
+    vde: "i",
+    recommendation: "✓",
+    checklist: "✓"
+  };
+
+  return icons[type];
+};
 ---
 
 {blocks.length > 0 && (
-  <div class="premium-v2">
-    {blocks.map((block) => (
-      <section class={`premium-v2-block premium-v2-${block.type}`}>
-        {(block.eyebrow || block.title || block.text) && (
-          <div class="premium-v2-header">
-            {block.eyebrow && <span>{block.eyebrow}</span>}
-            {block.title && <h2>{block.title}</h2>}
-            {block.text && <p>{block.text}</p>}
-          </div>
-        )}
+  <div class="premium-v3">
+    {blocks.map((block) => {
+      const filteredProducts =
+        block.type === "products" && block.productFilter
+          ? getProductsByTag(block.productFilter, block.productLimit ?? 4)
+          : [];
 
-        {block.cards && block.cards.length > 0 && (
-          <div class="premium-v2-grid">
-            {block.cards.map((card, index) => {
-              const product = card.productKey ? products[card.productKey] : null;
-              const href = card.href ?? product?.productUrl;
+      const hasCards = block.cards && block.cards.length > 0;
+      const hasProducts = filteredProducts.length > 0;
+      const hasList = block.items && block.items.length > 0;
 
-              return (
-                <article class="premium-v2-card">
-                  {card.label && <span class="premium-v2-label">{card.label}</span>}
-                  {card.badge && <span class="premium-v2-badge">{card.badge}</span>}
+      return (
+        <section class={`premium-v3-block premium-v3-${block.type}`}>
+          {(block.eyebrow || block.title || block.text) && (
+            <div class="premium-v3-header">
+              <div class="premium-v3-header-icon">
+                {getBlockIcon(block.type)}
+              </div>
 
-                  {card.value && <strong class="premium-v2-value">{card.value}</strong>}
+              <div>
+                {block.eyebrow && (
+                  <span class="premium-v3-eyebrow">
+                    {block.eyebrow}
+                  </span>
+                )}
 
-                  <h3>{product ? product.name : card.title}</h3>
+                {block.title && <h2>{block.title}</h2>}
 
-                  {card.text && <p>{card.text}</p>}
-                  {product && <p>{product.recommendation}</p>}
+                {block.text && <p>{block.text}</p>}
+              </div>
+            </div>
+          )}
 
-                  {card.items && (
-                    <ul>
-                      {card.items.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  )}
+          {hasProducts && (
+            <div class="premium-v3-grid premium-v3-grid-products">
+              {filteredProducts.map(({ product }) => (
+                <article class="premium-v3-card premium-v3-product-card">
+                  <span class="premium-v3-label">
+                    {product.badge}
+                  </span>
 
-                  {product && (
-                    <ul>
-                      {product.highlights.slice(0, 3).map((item) => (
-                        <li>✓ {item}</li>
-                      ))}
-                    </ul>
-                  )}
+                  <h3>{product.name}</h3>
 
-                  {href && (
-                    <a href={href}>
-                      {card.cta ?? block.cta ?? "Mehr erfahren"}
-                    </a>
-                  )}
+                  <p>{product.recommendation}</p>
+
+                  <div class="premium-v3-rating">
+                    ★ {product.rating} / 5
+                  </div>
+
+                  <ul>
+                    {product.highlights.slice(0, 3).map((item) => (
+                      <li>✓ {item}</li>
+                    ))}
+                  </ul>
+
+                  <a href={product.productUrl}>
+                    {block.cta ?? "Testbericht lesen"}
+                  </a>
                 </article>
-              );
-            })}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
 
-        {block.items && block.items.length > 0 && (
-          <ul class="premium-v2-list">
-            {block.items.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        )}
+          {hasCards && (
+            <div class={`premium-v3-grid premium-v3-grid-${block.type}`}>
+              {block.cards?.map((card, index) => {
+                const product = card.productKey
+                  ? products[card.productKey]
+                  : null;
 
-        {block.href && (
-          <a class="premium-v2-button" href={block.href}>
-            {block.cta ?? "Mehr erfahren"}
-          </a>
-        )}
-      </section>
-    ))}
+                const href = card.href ?? product?.productUrl;
+
+                return (
+                  <article class={`premium-v3-card premium-v3-card-${index + 1}`}>
+                    {card.label && (
+                      <span class="premium-v3-label">
+                        {card.label}
+                      </span>
+                    )}
+
+                    {card.badge && (
+                      <span class="premium-v3-badge">
+                        {card.badge}
+                      </span>
+                    )}
+
+                    {card.value && (
+                      <strong class="premium-v3-value">
+                        {card.value}
+                      </strong>
+                    )}
+
+                    <h3>{product ? product.name : card.title}</h3>
+
+                    {card.text && <p>{card.text}</p>}
+
+                    {product && <p>{product.recommendation}</p>}
+
+                    {card.items && (
+                      <ul>
+                        {card.items.map((item) => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {product && (
+                      <ul>
+                        {product.highlights.slice(0, 3).map((item) => (
+                          <li>✓ {item}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {href && (
+                      <a href={href}>
+                        {card.cta ?? block.cta ?? "Mehr erfahren"}
+                      </a>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          )}
+
+          {hasList && (
+            <ul class="premium-v3-list">
+              {block.items?.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
+
+          {block.href && (
+            <a class="premium-v3-button" href={block.href}>
+              {block.cta ?? "Mehr erfahren"}
+            </a>
+          )}
+        </section>
+      );
+    })}
   </div>
 )}
