@@ -1,0 +1,68 @@
+---
+import { siteMeta } from "../data/siteMeta";
+---
+
+<section class="trust-box">
+
+  <div class="trust-box-header">
+
+    <span>
+      Transparenz
+    </span>
+
+    <h2>
+      Wie wir unsere Inhalte erstellen
+    </h2>
+
+    <p>
+      Unser Ziel ist eine verständliche und unabhängige Kaufberatung für
+      Balkonspeicher. Wir möchten keine Produkte aufgrund einzelner
+      Werbeaussagen empfehlen, sondern nachvollziehbare Entscheidungen
+      ermöglichen.
+    </p>
+
+  </div>
+
+  <div class="trust-box-grid">
+
+    <div class="trust-box-card">
+
+      <h3>
+        Unsere Bewertung berücksichtigt
+      </h3>
+
+      <ul>
+
+        {
+          siteMeta.reviewBasis.map((item) => (
+            <li>{item}</li>
+          ))
+        }
+
+      </ul>
+
+    </div>
+
+    <div class="trust-box-card">
+
+      <h3>
+        Was wir bewusst nicht tun
+      </h3>
+
+      <ul>
+
+        <li>Keine gekauften Testsiegel</li>
+
+        <li>Keine automatisch vergebenen Rankings</li>
+
+        <li>Keine Empfehlungen nur aufgrund des Preises</li>
+
+        <li>Keine bezahlten Platzierungen in unseren Bewertungen</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,112 @@
+---
+import { products, type ProductKey } from "../data/products";
+
+type DecisionUseCase = {
+  label: string;
+  tag: string;
+  fallbackTitle: string;
+};
+
+interface Props {
+  title?: string;
+  text?: string;
+  currentProductKey?: ProductKey;
+  limit?: number;
+}
+
+const {
+  title = "Welche Lösung passt zu dir?",
+  text = "Wähle nach deiner Situation, nicht nur nach dem Datenblatt.",
+  currentProductKey,
+  limit = 4
+} = Astro.props;
+
+const useCases: DecisionUseCase[] = [
+  {
+    label: "Möglichst einfach starten",
+    tag: "einsteiger",
+    fallbackTitle: "Einsteiger"
+  },
+  {
+    label: "Bestehendes Balkonkraftwerk nachrüsten",
+    tag: "nachruesten",
+    fallbackTitle: "Nachrüstung"
+  },
+  {
+    label: "Später erweitern",
+    tag: "erweiterbar",
+    fallbackTitle: "Erweiterbarkeit"
+  },
+  {
+    label: "Gutes Preis-Leistungs-Verhältnis",
+    tag: "preisleistung",
+    fallbackTitle: "Preis-Leistung"
+  },
+  {
+    label: "Komfortable App und Bedienung",
+    tag: "app",
+    fallbackTitle: "Komfort"
+  },
+  {
+    label: "Familie oder höherer Verbrauch",
+    tag: "familie",
+    fallbackTitle: "Familie"
+  }
+];
+
+const productEntries = Object.entries(products)
+  .map(([key, product]) => ({
+    key: key as ProductKey,
+    product
+  }))
+  .sort((a, b) => (a.product.priority ?? 999) - (b.product.priority ?? 999));
+
+const decisionItems = useCases
+  .map((useCase) => {
+    const match =
+      productEntries.find(
+        ({ key, product }) =>
+          key !== currentProductKey &&
+          product.recommendationTags?.includes(useCase.tag)
+      ) ??
+      productEntries.find(({ key }) => key !== currentProductKey);
+
+    if (!match) {
+      return null;
+    }
+
+    return {
+      situation: useCase.label,
+      recommendation: match.product.name,
+      href: match.product.productUrl,
+      reason:
+        match.product.useCase ||
+        match.product.recommendation ||
+        useCase.fallbackTitle
+    };
+  })
+  .filter(Boolean)
+  .slice(0, limit);
+---
+
+{
+  decisionItems.length > 0 && (
+    <section class="decision-box">
+      <div class="decision-box-header">
+        <span>Kaufentscheidung</span>
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+
+      <div class="decision-box-grid">
+        {decisionItems.map((item) => (
+          <a class="decision-box-card" href={item.href}>
+            <span>{item.situation}</span>
+            <h3>{item.recommendation}</h3>
+            <p>{item.reason}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

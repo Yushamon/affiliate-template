@@ -1,0 +1,90 @@
+---
+import { siteMeta } from "../data/siteMeta";
+
+interface Props {
+  author?: {
+    name: string;
+    role?: string;
+  };
+
+  publishedAt?: string;
+
+  updatedAt?: string;
+}
+
+const {
+  author,
+  publishedAt,
+  updatedAt
+} = Astro.props;
+
+const formatDate = (date?: string) => {
+  if (!date) return "";
+
+  return new Intl.DateTimeFormat("de-DE", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric"
+  }).format(new Date(date));
+};
+
+const visibleAuthor =
+  author ??
+  siteMeta.defaultAuthor;
+---
+
+<div class="article-meta">
+
+  <div class="article-meta-author">
+
+    <strong>
+      {visibleAuthor.name}
+    </strong>
+
+    {
+      visibleAuthor.role && (
+        <span>
+          {visibleAuthor.role}
+        </span>
+      )
+    }
+
+  </div>
+
+  <div class="article-meta-dates">
+
+    {
+      publishedAt && (
+        <span>
+
+          Veröffentlicht:
+
+          <strong>
+
+            {formatDate(publishedAt)}
+
+          </strong>
+
+        </span>
+      )
+    }
+
+    {
+      updatedAt && (
+        <span>
+
+          Aktualisiert:
+
+          <strong>
+
+            {formatDate(updatedAt)}
+
+          </strong>
+
+        </span>
+      )
+    }
+
+  </div>
+
+</div>

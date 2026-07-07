@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  href: string;
+  button: string;
+}
+
+const {
+  title,
+  text,
+  href,
+  button
+} = Astro.props;
+---
+
+<section class="next-step">
+
+  <div class="next-step-content">
+
+    <span>
+      Nächster Schritt
+    </span>
+
+    <h2>
+      {title}
+    </h2>
+
+    <p>
+      {text}
+    </p>
+
+    <a
+      href={href}
+      class="next-step-button"
+    >
+      {button}
+    </a>
+
+  </div>
+
+</section>

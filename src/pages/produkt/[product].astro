@@ -1,8 +1,12 @@
 ---
 import AffiliateLayout from "../../layouts/AffiliateLayout.astro";
+
 import ProductReview from "../../components/product/ProductReview.astro";
-import ProductBox from "../../components/ProductBox.astro";
+import DecisionBox from "../../components/DecisionBox.astro";
+import NextStepCTA from "../../components/NextStepCTA.astro";
+
 import { products, type ProductKey } from "../../data/products";
+import { getProductNextStep } from "../../data/productNextSteps";
 
 export async function getStaticPaths() {
   return Object.keys(products).map((key) => ({
@@ -17,15 +21,15 @@ export async function getStaticPaths() {
 
 const { productKey } = Astro.props;
 
-const product =
-  products[productKey as ProductKey];
+const product = products[productKey as ProductKey];
 
-const manufacturerProducts =
-  Object.entries(products).filter(
-    ([key, item]) =>
-      key !== productKey &&
-      item.manufacturer === product.manufacturer
-  );
+const nextStep = getProductNextStep(productKey as ProductKey);
+
+const manufacturerProducts = Object.entries(products).filter(
+  ([key, item]) =>
+    key !== productKey &&
+    item.manufacturer === product.manufacturer
+);
 ---
 
 <AffiliateLayout
@@ -34,44 +38,60 @@ const manufacturerProducts =
   canonical={`/produkt/${productKey}`}
   ogImage={product.image}
 >
-  <ProductReview productKey={productKey as ProductKey} />
+  <main class="product-detail">
+    <ProductReview productKey={productKey as ProductKey} />
 
-  <div class="manufacturer-link">
-    <a href={`/hersteller/${product.manufacturer}`}>
-      Weitere Informationen zu {product.manufacturerLabel} →
-    </a>
-  </div>
+    <DecisionBox
+      currentProductKey={productKey as ProductKey}
+      title="Passt dieser Balkonspeicher zu dir?"
+      text="Nicht jedes System passt zu jedem Haushalt. Diese Entscheidungshilfe zeigt passende Alternativen nach Einsatzzweck."
+    />
 
-  {
-    manufacturerProducts.length > 0 && (
-      <>
-        <h2 class="section-title">
-          Weitere Produkte von {product.manufacturerLabel}
-        </h2>
+    {
+      nextStep && (
+        <NextStepCTA
+          title={nextStep.title}
+          text={nextStep.text}
+          href={nextStep.href}
+          button={nextStep.button}
+        />
+      )
+    }
 
-        <div class="card-grid">
-          {
-            manufacturerProducts.map(([key, item]) => (
-              <a
-                class="card"
-                href={`/produkt/${key}`}
-              >
-                <div class="card-category">
-                  {item.brand}
-                </div>
+    <div class="manufacturer-link">
+      <a href={`/hersteller/${product.manufacturer}`}>
+        Weitere Produkte von {product.manufacturerLabel} ansehen →
+      </a>
+    </div>
 
-                <h3>
-                  {item.name}
-                </h3>
+    {
+      manufacturerProducts.length > 0 && (
+        <section class="product-related">
+          <h2 class="section-title">
+            Weitere Produkte von {product.manufacturerLabel}
+          </h2>
 
-                <p>
-                  {item.recommendation}
-                </p>
-              </a>
-            ))
-          }
-        </div>
-      </>
-    )
-  }
+          <div class="card-grid">
+            {
+              manufacturerProducts.map(([key, item]) => (
+                <a class="card" href={`/produkt/${key}`}>
+                  <div class="card-category">
+                    {item.brand}
+                  </div>
+
+                  <h3>
+                    {item.name}
+                  </h3>
+
+                  <p>
+                    {item.recommendation}
+                  </p>
+                </a>
+              ))
+            }
+          </div>
+        </section>
+      )
+    }
+  </main>
 </AffiliateLayout>

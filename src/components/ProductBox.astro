@@ -1,172 +1,123 @@
 ---
-import Button from "./ui/Button.astro";
 import Badge from "./ui/Badge.astro";
 import { products, type ProductKey } from "../data/products";
+import {
+  getScoreLabel,
+  getWeightedProductScore
+} from "../data/productScoring";
 
 interface Props {
   productKey: ProductKey;
   currentProductKey?: ProductKey;
 }
 
-const {
-  productKey,
-  currentProductKey
-} = Astro.props;
+const { productKey, currentProductKey } = Astro.props;
 
 const product = products[productKey];
 
-const isCurrentProduct =
-  currentProductKey === productKey;
+const isCurrentProduct = currentProductKey === productKey;
 
-const hasAffiliate =
-  Boolean(
-    product?.affiliateUrl &&
-    product.affiliateUrl.trim().length > 0
-  );
+const hasAffiliate = Boolean(
+  product?.affiliateUrl && product.affiliateUrl.trim().length > 0
+);
 
-const buttonHref = hasAffiliate
-  ? product.affiliateUrl
-  : product.productUrl;
+const buttonHref = hasAffiliate ? product.affiliateUrl : product.productUrl;
 
 const buttonLabel = hasAffiliate
-  ? "Preis bei Amazon ansehen"
+  ? "Aktuellen Preis prüfen"
   : "Zum Testbericht";
 
-const showButton =
-  hasAffiliate || !isCurrentProduct;
+const showButton = hasAffiliate || !isCurrentProduct;
+
+const score = getWeightedProductScore(productKey);
+const scoreLabel = getScoreLabel(score);
+
+const topHighlights = product.highlights.slice(0, 4);
 ---
 
 {
-product && (
+  product && (
+    <section class="product-box-v2 product-box-premium">
+      <div class="product-box-media">
+        <div class="product-box-badge-wrap">
+          <Badge label={product.badge} />
+        </div>
 
-<section class="product-box-v2">
+        <img
+          src={product.image}
+          alt={product.name}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
-<div class="product-box-image">
+      <div class="product-box-content">
+        <div class="product-box-eyebrow">
+          {product.brand}
+        </div>
 
-<Badge
-label={product.badge}
-/>
+        <div class="product-box-title-row">
+          <div>
+            <h2>
+              {product.name}
+            </h2>
 
-<img
-src={product.image}
-alt={product.name}
-loading="lazy"
-/>
+            <p class="product-box-text">
+              {product.recommendation}
+            </p>
+          </div>
 
-</div>
+          <div class="product-box-score">
+            <strong>{score}</strong>
+            <span>{scoreLabel}</span>
+          </div>
+        </div>
 
-<div class="product-box-content">
+        <div class="product-box-rating">
+          <span aria-hidden="true">★★★★★</span>
+          <strong>{product.rating} / 5</strong>
+          <small>Unsere Bewertung</small>
+        </div>
 
-<div class="product-box-brand">
+        <div class="product-box-highlights">
+          {topHighlights.map((item) => (
+            <div>
+              <span aria-hidden="true">✓</span>
+              {item}
+            </div>
+          ))}
+        </div>
 
-{product.brand}
+        <div class="product-box-specs">
+          <div>
+            <strong>Kapazität</strong>
+            <span>{product.capacity}</span>
+          </div>
 
-</div>
+          <div>
+            <strong>Erweiterbar</strong>
+            <span>{product.expandable}</span>
+          </div>
+        </div>
 
-<h2>
+        <div class="product-box-action-row">
+          <div class="product-box-price-hint">
+            <span>Preis</span>
+            <strong>Aktuell beim Anbieter prüfen</strong>
+          </div>
 
-{product.name}
-
-</h2>
-
-<div class="product-box-rating">
-
-★★★★★
-
-<span>
-
-{product.rating} / 5
-
-</span>
-
-</div>
-
-<p class="product-box-text">
-
-{product.recommendation}
-
-</p>
-
-<div class="product-box-highlights">
-
-{
-product.highlights.map(item=>(
-<div>
-
-✓ {item}
-
-</div>
-))
-}
-
-</div>
-
-<div class="product-box-specs">
-
-<div>
-
-<strong>
-
-Kapazität
-
-</strong>
-
-<span>
-
-{product.capacity}
-
-</span>
-
-</div>
-
-<div>
-
-<strong>
-
-Erweiterbar
-
-</strong>
-
-<span>
-
-{product.expandable}
-
-</span>
-
-</div>
-
-</div>
-
-{
-
-showButton && (
-
-<Button
-href={buttonHref}
-label={buttonLabel}
-/>
-
-)
-
-}
-
-{
-
-hasAffiliate && (
-
-<p class="affiliate-note">
-
-Als Amazon-Partner erhalten wir bei qualifizierten Verkäufen eine Provision.
-
-</p>
-
-)
-
-}
-
-</div>
-
-</section>
-
-)
+          {showButton && (
+            <a
+              href={buttonHref}
+              class="product-box-button"
+              rel={hasAffiliate ? "sponsored nofollow noopener" : undefined}
+              target={hasAffiliate ? "_blank" : undefined}
+            >
+              {buttonLabel}
+            </a>
+          )}
+        </div>
+      </div>
+    </section>
+  )
 }

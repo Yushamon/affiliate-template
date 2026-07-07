@@ -1,30 +1,43 @@
 ---
 import { getCollection, render } from "astro:content";
+
 import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import ArticleMeta from "../components/ArticleMeta.astro";
 import TableOfContents from "../components/TableOfContents.astro";
-import FAQ from "../components/FAQ.astro";
-import RelatedArticles from "../components/RelatedArticles.astro";
-import ProductBox from "../components/ProductBox.astro";
-import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+import PremiumRenderer from "../components/content/PremiumRenderer.astro";
+import DecisionBox from "../components/DecisionBox.astro";
+
 import StorageCalculator from "../components/StorageCalculator.astro";
 import EconomicCalculator from "../components/calculator/EconomicCalculator.astro";
-import IntentCTA from "../components/IntentCTA.astro";
-import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+import ProductBox from "../components/ProductBox.astro";
+import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+
+import NextStepCTA from "../components/NextStepCTA.astro";
 import InternalLinks from "../components/InternalLinks.astro";
+import IntentCTA from "../components/IntentCTA.astro";
+
+import FAQ from "../components/FAQ.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+
+import { siteMeta } from "../data/siteMeta";
 import { recommendations } from "../data/recommendations";
 import { internalLinks } from "../data/internalLinks";
-import PremiumRenderer from "../components/content/PremiumRenderer.astro";
+import { getNextStep } from "../data/nextSteps";
+import { getSeoOverride } from "../data/seoOverrides";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
   return pages.map((page) => ({
     params: {
-      slug: page.data.slug,
+      slug: page.data.slug
     },
     props: {
-      page,
-    },
+      page
+    }
   }));
 }
 
@@ -33,6 +46,22 @@ const { page } = Astro.props;
 const { Content, headings } = await render(page);
 
 const allPages = await getCollection("pages");
+
+const author = page.data.author ?? siteMeta.defaultAuthor;
+
+const publishedAt =
+  page.data.publishedAt ?? siteMeta.articleDefaults.publishedAt;
+
+const updatedAt =
+  page.data.updatedAt ?? page.data.publishedAt ?? siteMeta.articleDefaults.updatedAt;
+
+const seoOverride = getSeoOverride(page.data.slug);
+
+const seoTitle =
+  seoOverride?.seoTitle ?? page.data.seoTitle;
+
+const seoDescription =
+  seoOverride?.seoDescription ?? page.data.seoDescription;
 
 const relatedPages = allPages
   .filter((candidate) => {
@@ -44,10 +73,7 @@ const relatedPages = allPages
       page.data.tags.includes(tag)
     );
 
-    return (
-      candidate.data.category === page.data.category ||
-      commonTags.length > 0
-    );
+    return candidate.data.category === page.data.category || commonTags.length > 0;
   })
   .sort((a, b) => {
     const aMatches = a.data.tags.filter((tag) =>
@@ -69,8 +95,8 @@ const showEconomicCalculator =
   page.data.slug === "balkonspeicher-wirtschaftlichkeit" ||
   page.data.slug === "balkonspeicher-amortisation";
 
-const recommendation = page.data.intent
-  ? recommendations[page.data.intent]
+const recommendation = page.data.intent && page.data.intent in recommendations
+  ? recommendations[page.data.intent as keyof typeof recommendations]
   : null;
 
 const topicKey =
@@ -78,25 +104,39 @@ const topicKey =
     ? page.data.topic
     : "allgemein";
 
-const internalLinkSlugs =
-  internalLinks[topicKey as keyof typeof internalLinks].filter(
-    (slug) => slug !== page.data.slug
-  );
+const internalLinkSlugs = internalLinks[
+  topicKey as keyof typeof internalLinks
+].filter((slug) => slug !== page.data.slug);
 
 const internalLinkPages = internalLinkSlugs
-  .map((slug) =>
-    allPages.find((candidate) => candidate.data.slug === slug)
-  )
-  .filter(Boolean)
+  .flatMap((slug) => {
+    const page = allPages.find((candidate) => candidate.data.slug === slug);
+    return page ? [page] : [];
+  })
   .slice(0, 4);
+
+const nextStep = getNextStep(page);
+
+const showDecisionBox = [
+  "vergleich",
+  "produkt",
+  "speicher",
+  "nachruesten"
+].includes(page.data.intent ?? "");
 ---
 
 <AffiliateLayout
   title={page.data.title}
   description={page.data.description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
   canonical={`/${page.data.slug}`}
   ogImage={page.data.ogImage || page.data.heroImage}
   faq={page.data.faq}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  categoryLabel={page.data.categoryLabel}
 >
   <Breadcrumbs
     categoryLabel={page.data.categoryLabel}
@@ -115,6 +155,12 @@ const internalLinkPages = internalLinkSlugs
     <p class="article-description">
       {page.data.description}
     </p>
+
+    <ArticleMeta
+      author={author}
+      publishedAt={publishedAt}
+      updatedAt={updatedAt}
+    />
   </section>
 
   {
@@ -124,6 +170,8 @@ const internalLinkPages = internalLinkSlugs
           src={page.data.heroImage}
           alt={page.data.title}
           class="article-hero-image"
+          loading="eager"
+          decoding="async"
         />
       </section>
     )
@@ -139,12 +187,23 @@ const internalLinkPages = internalLinkSlugs
         </section>
       )
     }
-<PremiumRenderer blocks={page.data.premiumBlocks} />
+
+    <PremiumRenderer blocks={page.data.premiumBlocks as any} />
+
+    {
+      showDecisionBox && (
+        <DecisionBox />
+      )
+    }
+
     <Content />
 
     {
       showEconomicCalculator && (
-        <section id="wirtschaftlichkeitsrechner" class="calculator-section">
+        <section
+          id="wirtschaftlichkeitsrechner"
+          class="calculator-section"
+        >
           <EconomicCalculator />
         </section>
       )
@@ -152,14 +211,25 @@ const internalLinkPages = internalLinkSlugs
 
     {
       recommendation && (
-        <ProductBox productKey={recommendation.recommendedProduct} />
+        <>
+          <ProductBox
+            productKey={recommendation.recommendedProduct as "ecoflow-stream-ultra" | "anker-solix-solarbank-3-pro" | "zendure-solarflow" | "solakon-one"}
+          />
+
+          <ProductComparisonTable
+            productKeys={recommendation.comparisonProducts}
+          />
+        </>
       )
     }
 
     {
-      recommendation && (
-        <ProductComparisonTable
-          productKeys={recommendation.comparisonProducts}
+      nextStep && (
+        <NextStepCTA
+          title={nextStep.title}
+          text={nextStep.text}
+          href={nextStep.href}
+          button={nextStep.button}
         />
       )
     }
