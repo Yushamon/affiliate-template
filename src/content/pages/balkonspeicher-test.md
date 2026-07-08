@@ -20,6 +20,18 @@ topic: "vergleich"
 
 heroImage: "/images/generated/balkonspeicher-test.webp"
 
+comparisonProducts:
+  - ecoflow-stream-ultra
+  - anker-solix-solarbank-3-pro
+  - zendure-solarflow
+  - solakon-one
+
+comparisonRecommendation:
+  title: "Die beste Wahl hängt von deinem Einsatzbereich ab"
+  text: "EcoFlow ist unser stärkstes Gesamtpaket. Anker überzeugt Einsteiger, Zendure eignet sich für Nachrüstung und Solakon bietet einen verständlichen Einstieg mit guter Preis-Leistung."
+  tableTitle: "Vier empfehlenswerte Balkonspeicher im Test"
+  cardsTitle: "Unsere Empfehlungen im Detail"
+
 premiumBlocks:
   - type: "answer"
     cards:
@@ -106,14 +118,14 @@ premiumBlocks:
     eyebrow: "Checkliste"
     title: "Vor dem Kauf prüfen"
     items:
-      - "☑ Passt die Speichergröße zu deinem Verbrauch?"
-      - "☑ Ist das System später erweiterbar?"
-      - "☑ Ist die App verständlich?"
-      - "☑ Passt der Speicher zum Wechselrichter?"
-      - "☑ Gibt es eine gute Garantie?"
-      - "☑ Ist der Hersteller etabliert?"
-      - "☑ Wird der Speicher regelmäßig genutzt?"
-      - "☑ Ist der Preis im Verhältnis zum Nutzen sinnvoll?"
+      - "Passt die Speichergröße zu deinem Verbrauch?"
+      - "Ist das System später erweiterbar?"
+      - "Ist die App verständlich?"
+      - "Passt der Speicher zum Wechselrichter?"
+      - "Gibt es eine gute Garantie?"
+      - "Ist der Hersteller etabliert?"
+      - "Wird der Speicher regelmäßig genutzt?"
+      - "Ist der Preis im Verhältnis zum Nutzen sinnvoll?"
 
 faq:
   - question: "Welcher Balkonspeicher ist der beste?"

@@ -58,7 +58,7 @@ export const scoreCategories: Record<ScoreCategoryKey, ProductScore> = {
   }
 };
 
-export const productScores: Record<ProductKey, Record<ScoreCategoryKey, number>> = {
+export const productScores: Partial<Record<ProductKey, Record<ScoreCategoryKey, number>>> = {
   "ecoflow-stream-ultra": {
     usability: 92,
     expandability: 96,
@@ -97,7 +97,12 @@ export const productScores: Record<ProductKey, Record<ScoreCategoryKey, number>>
 };
 
 export function getWeightedProductScore(productKey: ProductKey) {
+  const rankingScore = products[productKey].ranking.overall;
   const scores = productScores[productKey];
+
+  if (!scores) {
+    return rankingScore;
+  }
 
   const totalWeight = Object.values(scoreCategories).reduce(
     (sum, category) => sum + category.weight,
@@ -113,7 +118,7 @@ export function getWeightedProductScore(productKey: ProductKey) {
     0
   );
 
-  return Math.round(weightedScore / totalWeight);
+  return rankingScore ?? Math.round(weightedScore / totalWeight);
 }
 
 export function getScoredProducts() {
@@ -129,6 +134,18 @@ export function getScoredProducts() {
       };
     })
     .sort((a, b) => b.score - a.score);
+}
+
+export function getProductRank(productKey: ProductKey) {
+  const index = getScoredProducts().findIndex(({ key }) => key === productKey);
+
+  return index === -1 ? null : index + 1;
+}
+
+export function getBestScoredProductByUseCase(tag: string) {
+  return getScoredProducts().find(({ product }) =>
+    (product.useCases ?? product.recommendationTags).includes(tag)
+  ) ?? null;
 }
 
 export function getScoreLabel(score: number) {

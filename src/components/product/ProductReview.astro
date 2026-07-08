@@ -10,10 +10,74 @@ interface Props {
 const { productKey } = Astro.props;
 
 const product = products[productKey];
-const review = productReviews[productKey];
+const review = productReviews[productKey] ?? (product
+  ? {
+      summary: product.review.summary,
+      verdict: product.review.verdict,
+      pros: product.pros,
+      cons: product.cons,
+      bestFor: product.bestFor,
+      notFor: product.notFor,
+      ratings: product.ratings
+    }
+  : null);
 
-const stars = (rating: number) =>
-  "★".repeat(rating) + "☆".repeat(5 - rating);
+const legacySpecs = product
+  ? [
+      { label: "Hersteller", value: product.manufacturerLabel },
+      { label: "Kategorie", value: product.category },
+      { label: "Kapazität", value: product.capacity },
+      { label: "Erweiterbar", value: product.expandable },
+      { label: "Einsatzbereich", value: product.useCase },
+      { label: "Bewertung", value: `${product.rating} / 5` }
+    ]
+  : [];
+
+const specs = product?.specs?.length ? product.specs : legacySpecs;
+
+const ratingLabels: Record<string, string> = {
+  installation: "Installation",
+  app: "App",
+  flexibility: "Flexibilität",
+  pricePerformance: "Preis-Leistung",
+  expandability: "Erweiterbarkeit",
+  battery: "Akku",
+  cleaning: "Reinigung",
+  noise: "Lautstärke",
+  safety: "Sicherheit"
+};
+
+const getRatingLabel = (key: string) => {
+  if (ratingLabels[key]) {
+    return ratingLabels[key];
+  }
+
+  return key
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+    .replace(/[-_]+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (character) => character.toUpperCase());
+};
+
+const ratingEntries =
+  review?.ratings &&
+  typeof review.ratings === "object" &&
+  !Array.isArray(review.ratings)
+    ? Object.entries(review.ratings).filter(([, rating]) =>
+        Number.isFinite(rating)
+      )
+    : [];
+
+const stars = (rating: number) => {
+  const normalizedRating = Math.max(0, Math.min(5, Math.round(rating)));
+
+  return "★".repeat(normalizedRating) + "☆".repeat(5 - normalizedRating);
+};
+
+const leadingListIcons = /^(?:\s*(?:✓|✔|✅|❌|✕|✖|✗|×))+\s*/u;
+
+const stripLeadingIcon = (value: string) =>
+  value.replace(leadingListIcons, "");
 ---
 
 {product && review && (
@@ -62,32 +126,16 @@ const stars = (rating: number) =>
       </p>
     </section>
 
-    <section class="product-score-grid-v3">
-      <div>
-        <strong>Installation</strong>
-        <span>{stars(review.ratings.installation)}</span>
-      </div>
-
-      <div>
-        <strong>App</strong>
-        <span>{stars(review.ratings.app)}</span>
-      </div>
-
-      <div>
-        <strong>Flexibilität</strong>
-        <span>{stars(review.ratings.flexibility)}</span>
-      </div>
-
-      <div>
-        <strong>Preis-Leistung</strong>
-        <span>{stars(review.ratings.pricePerformance)}</span>
-      </div>
-
-      <div>
-        <strong>Erweiterbarkeit</strong>
-        <span>{stars(review.ratings.expandability)}</span>
-      </div>
-    </section>
+    {ratingEntries.length > 0 && (
+      <section class="product-score-grid-v3">
+        {ratingEntries.map(([key, rating]) => (
+          <div>
+            <strong>{getRatingLabel(key)}</strong>
+            <span>{stars(rating)}</span>
+          </div>
+        ))}
+      </section>
+    )}
 
     <section class="product-review-grid-v3">
       <div class="product-review-card-v3">
@@ -97,7 +145,7 @@ const stars = (rating: number) =>
 
         <ul>
           {review.pros.map((item) => (
-            <li>✓ {item}</li>
+            <li>✓ {stripLeadingIcon(item)}</li>
           ))}
         </ul>
       </div>
@@ -109,7 +157,7 @@ const stars = (rating: number) =>
 
         <ul>
           {review.cons.map((item) => (
-            <li>× {item}</li>
+            <li>× {stripLeadingIcon(item)}</li>
           ))}
         </ul>
       </div>
@@ -123,7 +171,7 @@ const stars = (rating: number) =>
 
         <ul>
           {review.bestFor.map((item) => (
-            <li>✓ {item}</li>
+            <li>✓ {stripLeadingIcon(item)}</li>
           ))}
         </ul>
       </div>
@@ -135,7 +183,7 @@ const stars = (rating: number) =>
 
         <ul>
           {review.notFor.map((item) => (
-            <li>× {item}</li>
+            <li>× {stripLeadingIcon(item)}</li>
           ))}
         </ul>
       </div>
@@ -147,35 +195,12 @@ const stars = (rating: number) =>
       </h2>
 
       <div class="product-review-specs-v3">
-        <div>
-          <strong>Hersteller</strong>
-          <span>{product.manufacturerLabel}</span>
-        </div>
-
-        <div>
-          <strong>Kategorie</strong>
-          <span>{product.category}</span>
-        </div>
-
-        <div>
-          <strong>Kapazität</strong>
-          <span>{product.capacity}</span>
-        </div>
-
-        <div>
-          <strong>Erweiterbar</strong>
-          <span>{product.expandable}</span>
-        </div>
-
-        <div>
-          <strong>Einsatzbereich</strong>
-          <span>{product.useCase}</span>
-        </div>
-
-        <div>
-          <strong>Bewertung</strong>
-          <span>{product.rating} / 5</span>
-        </div>
+        {specs.map((spec) => (
+          <div>
+            <strong>{spec.label}</strong>
+            <span>{spec.value}</span>
+          </div>
+        ))}
       </div>
     </section>
 

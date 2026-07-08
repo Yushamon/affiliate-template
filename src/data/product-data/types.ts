@@ -2,7 +2,10 @@ export type ManufacturerKey =
   | "ecoflow"
   | "anker"
   | "zendure"
-  | "solakon";
+  | "solakon"
+  | "growatt"
+  | "marstek"
+  | "hoymiles";
 
 export interface Product {
   name: string;

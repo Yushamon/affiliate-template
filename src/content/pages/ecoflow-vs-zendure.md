@@ -15,6 +15,16 @@ topic: "vergleich"
 
 heroImage: "/images/generated/ecoflow-vs-zendure.webp"
 
+comparisonProducts:
+  - ecoflow-stream-ultra
+  - zendure-solarflow
+
+comparisonRecommendation:
+  title: "EcoFlow für neue Systeme, Zendure für Nachrüstung"
+  text: "EcoFlow ist unsere Empfehlung für ein neues, langfristig ausbaufähiges Energiesystem. Zendure spielt seine Stärken aus, wenn ein vorhandenes Balkonkraftwerk flexibel ergänzt werden soll."
+  tableTitle: "EcoFlow und Zendure direkt verglichen"
+  cardsTitle: "Beide Systeme im Detail"
+
 tags:
   - ecoflow
   - zendure
@@ -145,21 +155,21 @@ premiumBlocks:
 
     items:
 
-      - "☑ Bestehendes Balkonkraftwerk?"
+      - "Bestehendes Balkonkraftwerk?"
 
-      - "☑ App"
+      - "App"
 
-      - "☑ Erweiterbarkeit"
+      - "Erweiterbarkeit"
 
-      - "☑ Garantie"
+      - "Garantie"
 
-      - "☑ Speichergröße"
+      - "Speichergröße"
 
-      - "☑ Hersteller"
+      - "Hersteller"
 
-      - "☑ Preis"
+      - "Preis"
 
-      - "☑ Langfristige Ausbaupläne"
+      - "Langfristige Ausbaupläne"
 
 faq:
 

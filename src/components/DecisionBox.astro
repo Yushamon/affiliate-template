@@ -4,7 +4,7 @@ import { products, type ProductKey } from "../data/products";
 type DecisionUseCase = {
   label: string;
   tag: string;
-  fallbackTitle: string;
+  fallbackTitle?: string;
 };
 
 interface Props {
@@ -12,16 +12,10 @@ interface Props {
   text?: string;
   currentProductKey?: ProductKey;
   limit?: number;
+  useCases?: DecisionUseCase[];
 }
 
-const {
-  title = "Welche Lösung passt zu dir?",
-  text = "Wähle nach deiner Situation, nicht nur nach dem Datenblatt.",
-  currentProductKey,
-  limit = 4
-} = Astro.props;
-
-const useCases: DecisionUseCase[] = [
+const defaultUseCases: DecisionUseCase[] = [
   {
     label: "Möglichst einfach starten",
     tag: "einsteiger",
@@ -54,22 +48,47 @@ const useCases: DecisionUseCase[] = [
   }
 ];
 
+const {
+  title = "Welche Lösung passt zu dir?",
+  text = "Wähle nach deiner Situation, nicht nur nach dem Datenblatt.",
+  currentProductKey,
+  limit = 4,
+  useCases = defaultUseCases
+} = Astro.props;
+
 const productEntries = Object.entries(products)
   .map(([key, product]) => ({
     key: key as ProductKey,
     product
-  }))
-  .sort((a, b) => (a.product.priority ?? 999) - (b.product.priority ?? 999));
+  }));
+
+const rankingKeyByTag = {
+  einsteiger: "beginner",
+  nachruesten: "retrofit",
+  nachruestung: "retrofit",
+  erweiterbar: "premium",
+  preisleistung: "value",
+  app: "premium",
+  familie: "overall"
+} as const;
 
 const decisionItems = useCases
   .map((useCase) => {
-    const match =
-      productEntries.find(
+    const rankingKey = rankingKeyByTag[
+      useCase.tag as keyof typeof rankingKeyByTag
+    ] ?? "overall";
+
+    const match = productEntries
+      .filter(
         ({ key, product }) =>
           key !== currentProductKey &&
-          product.recommendationTags?.includes(useCase.tag)
-      ) ??
-      productEntries.find(({ key }) => key !== currentProductKey);
+          product.useCases.includes(useCase.tag)
+      )
+      .sort((a, b) =>
+        b.product.ranking[rankingKey] - a.product.ranking[rankingKey]
+      )[0] ?? productEntries
+        .filter(({ key }) => key !== currentProductKey)
+        .sort((a, b) => b.product.ranking.overall - a.product.ranking.overall)[0];
 
     if (!match) {
       return null;
@@ -82,7 +101,8 @@ const decisionItems = useCases
       reason:
         match.product.useCase ||
         match.product.recommendation ||
-        useCase.fallbackTitle
+        useCase.fallbackTitle ||
+        useCase.label
     };
   })
   .filter(Boolean)

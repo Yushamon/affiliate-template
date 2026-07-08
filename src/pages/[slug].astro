@@ -7,6 +7,7 @@ import TableOfContents from "../components/TableOfContents.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 
 import PremiumRenderer from "../components/content/PremiumRenderer.astro";
+import ComparisonExperience from "../components/ComparisonExperience.astro";
 import DecisionBox from "../components/DecisionBox.astro";
 
 import StorageCalculator from "../components/StorageCalculator.astro";
@@ -27,6 +28,8 @@ import { recommendations } from "../data/recommendations";
 import { internalLinks } from "../data/internalLinks";
 import { getNextStep } from "../data/nextSteps";
 import { getSeoOverride } from "../data/seoOverrides";
+import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
+import { products, type ProductKey } from "../data/products";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -62,6 +65,15 @@ const seoTitle =
 
 const seoDescription =
   seoOverride?.seoDescription ?? page.data.seoDescription;
+
+const projectKey =
+  page.data.project ?? DEFAULT_PROJECT;
+
+const heroImage =
+  page.data.heroImage ?? getProjectImage(projectKey, "hero");
+
+const ogImage =
+  page.data.ogImage ?? heroImage;
 
 const relatedPages = allPages
   .filter((candidate) => {
@@ -123,6 +135,9 @@ const showDecisionBox = [
   "speicher",
   "nachruesten"
 ].includes(page.data.intent ?? "");
+
+const comparisonProducts = (page.data.comparisonProducts ?? [])
+  .filter((key): key is ProductKey => key in products);
 ---
 
 <AffiliateLayout
@@ -131,7 +146,7 @@ const showDecisionBox = [
   seoTitle={seoTitle}
   seoDescription={seoDescription}
   canonical={`/${page.data.slug}`}
-  ogImage={page.data.ogImage || page.data.heroImage}
+  ogImage={ogImage}
   faq={page.data.faq}
   author={author}
   publishedAt={publishedAt}
@@ -164,16 +179,28 @@ const showDecisionBox = [
   </section>
 
   {
-    page.data.heroImage && (
+    heroImage && (
       <section class="article-hero">
         <img
-          src={page.data.heroImage}
+          src={heroImage}
           alt={page.data.title}
           class="article-hero-image"
           loading="eager"
           decoding="async"
         />
       </section>
+    )
+  }
+
+  {
+    comparisonProducts.length > 0 && page.data.comparisonRecommendation && (
+      <ComparisonExperience
+        productKeys={comparisonProducts}
+        recommendationTitle={page.data.comparisonRecommendation.title}
+        recommendationText={page.data.comparisonRecommendation.text}
+        tableTitle={page.data.comparisonRecommendation.tableTitle}
+        cardsTitle={page.data.comparisonRecommendation.cardsTitle}
+      />
     )
   }
 
@@ -188,10 +215,14 @@ const showDecisionBox = [
       )
     }
 
-    <PremiumRenderer blocks={page.data.premiumBlocks as any} />
+    <PremiumRenderer
+      blocks={page.data.premiumBlocks as any}
+      project={projectKey}
+      heroImage={heroImage}
+    />
 
     {
-      showDecisionBox && (
+      showDecisionBox && comparisonProducts.length === 0 && (
         <DecisionBox />
       )
     }

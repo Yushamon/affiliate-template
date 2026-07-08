@@ -1,5 +1,10 @@
 ---
 import { getProductsByTag, products, type ProductKey } from "../../data/products";
+import {
+  DEFAULT_PROJECT,
+  getProjectImage,
+  type ProjectImageKey
+} from "../../data/projectImages";
 
 type PremiumBlockType =
   | "answer"
@@ -38,13 +43,61 @@ type PremiumBlock = {
   cta?: string;
   productFilter?: string;
   productLimit?: number;
+  image?: string;
+  imageAlt?: string;
+  imageKey?: ProjectImageKey;
 };
 
 interface Props {
   blocks?: PremiumBlock[];
+  project?: string;
+  heroImage?: string;
 }
 
-const { blocks = [] } = Astro.props;
+const {
+  blocks = [],
+  project = DEFAULT_PROJECT,
+  heroImage
+} = Astro.props;
+
+const leadingListIcons = /^(?:\s*(?:✓|✔|✅|❌|✕|✖|✗|×|⚠️?|→))+\s*/u;
+
+const stripLeadingIcon = (value: string) =>
+  value.replace(leadingListIcons, "");
+
+const getBlockImageKey = (type: PremiumBlockType): ProjectImageKey | null => {
+  if (
+    type === "answer" ||
+    type === "quickFacts" ||
+    type === "expert" ||
+    type === "vde"
+  ) {
+    return "feature";
+  }
+
+  if (
+    type === "steps" ||
+    type === "checks" ||
+    type === "mistakes" ||
+    type === "checklist"
+  ) {
+    return "inline";
+  }
+
+  if (type === "scenarios") {
+    return "comparison";
+  }
+
+  if (type === "decision" || type === "recommendation") {
+    return "decision";
+  }
+
+  if (type === "products") {
+    return "product";
+  }
+
+  return null;
+};
 
 const getBlockIcon = (type: PremiumBlockType) => {
   const icons: Record<PremiumBlockType, string> = {
@@ -77,6 +130,10 @@ const getBlockIcon = (type: PremiumBlockType) => {
       const hasCards = block.cards && block.cards.length > 0;
       const hasProducts = filteredProducts.length > 0;
       const hasList = block.items && block.items.length > 0;
+      const blockImageKey = block.imageKey ?? getBlockImageKey(block.type);
+      const isExplicitBlockImage = Boolean(block.image);
+      const blockImage = block.image ?? (blockImageKey ? getProjectImage(project, blockImageKey) : null);
+      const shouldRenderBlockImage = Boolean(blockImage) && isExplicitBlockImage;
 
       return (
         <section class={`premium-v3-block premium-v3-${block.type}`}>
@@ -100,6 +157,17 @@ const getBlockIcon = (type: PremiumBlockType) => {
             </div>
           )}
 
+          {shouldRenderBlockImage && (
+            <figure class="premium-v3-image premium-v3-image-compact">
+              <img
+                src={blockImage}
+                alt={block.imageAlt ?? block.title ?? block.eyebrow ?? "Ratgeber Illustration"}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          )}
+
           {hasProducts && (
             <div class="premium-v3-grid premium-v3-grid-products">
               {filteredProducts.map(({ product }) => (
@@ -118,7 +186,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
 
                   <ul>
                     {product.highlights.slice(0, 3).map((item) => (
-                      <li>✓ {item}</li>
+                      <li>{stripLeadingIcon(item)}</li>
                     ))}
                   </ul>
 
@@ -168,7 +236,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                     {card.items && (
                       <ul>
                         {card.items.map((item) => (
-                          <li>{item}</li>
+                          <li>{stripLeadingIcon(item)}</li>
                         ))}
                       </ul>
                     )}
@@ -176,7 +244,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                     {product && (
                       <ul>
                         {product.highlights.slice(0, 3).map((item) => (
-                          <li>✓ {item}</li>
+                          <li>{stripLeadingIcon(item)}</li>
                         ))}
                       </ul>
                     )}
@@ -195,7 +263,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
           {hasList && (
             <ul class="premium-v3-list">
               {block.items?.map((item) => (
-                <li>{item}</li>
+                <li>{stripLeadingIcon(item)}</li>
               ))}
             </ul>
           )}

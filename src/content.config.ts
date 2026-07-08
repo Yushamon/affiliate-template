@@ -70,6 +70,21 @@ const premiumBlockSchema = z.object({
 
   productLimit: z.number().optional(),
 
+  image: z.string().optional(),
+
+  imageAlt: z.string().optional(),
+
+  imageKey: z.enum([
+    "hero",
+    "guide",
+    "comparison",
+    "decision",
+    "calculator",
+    "faq",
+    "product",
+    "manufacturer"
+  ]).optional(),
+
   headers: z.array(z.string()).optional(),
 
   rows: z.array(premiumRowSchema).optional(),
@@ -130,6 +145,8 @@ const pages = defineCollection({
 
     hubPriority: z.number().optional(),
 
+    project: z.string().optional(),
+
     heroImage: z.string().optional(),
 
     heroPrompt: z.string().optional(),
@@ -137,6 +154,17 @@ const pages = defineCollection({
     ogImage: z.string().optional(),
 
     featured: z.boolean().optional(),
+
+    comparisonProducts: z.array(z.string()).optional(),
+
+    comparisonRecommendation: z
+      .object({
+        title: z.string(),
+        text: z.string(),
+        tableTitle: z.string().optional(),
+        cardsTitle: z.string().optional()
+      })
+      .optional(),
 
     premiumBlocks: z.array(premiumBlockSchema).optional()
   })

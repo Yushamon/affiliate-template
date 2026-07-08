@@ -149,6 +149,54 @@ export const manufacturers = {
         href: "/hersteller/zendure"
       }
     ]
+  },
+
+  growatt: {
+    slug: "growatt",
+    label: "Growatt",
+    title: "Growatt Balkonspeicher",
+    description: "Growatt bietet modulare Speicherlösungen für Balkonkraftwerke mit hoher Grundkapazität.",
+    shortAnswer: "Growatt eignet sich für preisbewusste Haushalte, die einen modularen DC-Speicher mit einfacher Erweiterung suchen.",
+    intro: "Growatt ist ein etablierter Anbieter von Wechselrichtern und Energiespeichern. Der NOAH 2000 richtet sich an Balkonkraftwerk-Nutzer, die mit rund zwei Kilowattstunden starten und später erweitern möchten.",
+    strengths: ["Hohe Grundkapazität", "Modular erweiterbar", "DC-gekoppeltes Konzept", "Interessantes Preis-Leistungs-Verhältnis"],
+    suitableFor: ["Familien", "Preisbewusste Käufer", "Modulare Setups", "Balkonkraftwerke mit Ausbauplänen"],
+    alternatives: [
+      { label: "Anker", href: "/hersteller/anker" },
+      { label: "Zendure", href: "/hersteller/zendure" },
+      { label: "EcoFlow", href: "/hersteller/ecoflow" }
+    ]
+  },
+
+  marstek: {
+    slug: "marstek",
+    label: "Marstek",
+    title: "Marstek Balkonspeicher",
+    description: "Marstek entwickelt kompakte All-in-one-Speicher für Balkonkraftwerke und Eigenverbrauch.",
+    shortAnswer: "Marstek eignet sich besonders für Käufer, die eine kompakte Komplettlösung mit hoher Startkapazität bevorzugen.",
+    intro: "Marstek verbindet Akku und Leistungselektronik in kompakten Speichersystemen. Auf den Jupiter C folgte der aktuell erweiterbare Jupiter C Plus.",
+    strengths: ["Kompakte All-in-one-Bauweise", "LiFePO4-Technologie", "Hohe Startkapazität", "Einfache Bedienung"],
+    suitableFor: ["Einsteiger", "Kleine Haushalte", "All-in-one-Käufer", "Preisbewusste Nutzer"],
+    alternatives: [
+      { label: "Anker", href: "/hersteller/anker" },
+      { label: "Growatt", href: "/hersteller/growatt" },
+      { label: "Hoymiles", href: "/hersteller/hoymiles" }
+    ]
+  },
+
+  hoymiles: {
+    slug: "hoymiles",
+    label: "Hoymiles",
+    title: "Hoymiles Balkonspeicher",
+    description: "Hoymiles bietet AC-gekoppelte Speicherlösungen für die einfache Nachrüstung bestehender Balkonkraftwerke.",
+    shortAnswer: "Hoymiles eignet sich für Nutzer, die vorhandene Mikrowechselrichter behalten und den Speicher AC-seitig ergänzen möchten.",
+    intro: "Hoymiles ist für Mikrowechselrichter bekannt. Der MS-A2 erweitert dieses Ökosystem um einen AC-gekoppelten Speicher mit Plug-and-Play-Konzept.",
+    strengths: ["Sehr gute Wechselrichter-Kompatibilität", "Einfache AC-Nachrüstung", "Smart-Meter-Unterstützung", "S-Miles Home App"],
+    suitableFor: ["Bestehende Balkonkraftwerke", "Smart-Home-Nutzer", "Mieter", "Einfache Nachrüstung"],
+    alternatives: [
+      { label: "Zendure", href: "/hersteller/zendure" },
+      { label: "Growatt", href: "/hersteller/growatt" },
+      { label: "Marstek", href: "/hersteller/marstek" }
+    ]
   }
 };
 

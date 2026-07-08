@@ -185,6 +185,85 @@
 
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.article.article-ranking-method {
+  padding: 44px;
+  border: 1px solid rgba(22, 163, 74, 0.14);
+  background: linear-gradient(135deg, #ffffff, rgba(240, 253, 244, 0.64));
+}
+
+.article-ranking-method .ranking-section-header h2 {
+  margin-top: 0;
+}
+
+.article.comparison-advice {
+  padding: 42px;
+}
+
+.article.comparison-advice h2 {
+  margin-top: 0;
+}
+
+.article.comparison-advice p {
+  margin-bottom: 0;
+}
+
+.ranking-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ranking-criteria-grid > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+}
+
+.ranking-criteria-grid span {
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.ranking-criteria-grid strong {
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .article.article-ranking-method {
+    padding: 28px 22px;
+  }
+
+  .article.comparison-advice {
+    padding: 28px 22px;
+  }
+
+  .ranking-criteria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* List icons are presentation only; PremiumRenderer removes content markers. */
+.article .premium-v3-card li::before,
+.article .premium-v3-list li::before {
+  content: "✓";
+}
+
 .article table {
 
   width: 100%;
@@ -736,4 +815,34 @@ font-size:14px;
 
 color:var(--text);
 
+}
+
+/* Premium content images stay compact and support the content instead of acting like a second hero. */
+.article .premium-v3-image,
+.article .premium-v3-image-compact {
+  width: min(100%, 560px);
+  max-width: 560px;
+  margin: 24px 0 42px auto;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(20, 32, 26, 0.08);
+}
+
+.article .premium-v3-image img,
+.article .premium-v3-image-compact img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+@media (max-width: 760px) {
+  .article .premium-v3-image,
+  .article .premium-v3-image-compact {
+    width: 100%;
+    max-width: 100%;
+    margin: 22px 0 32px;
+    border-radius: 20px;
+  }
 }

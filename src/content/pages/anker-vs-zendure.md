@@ -15,6 +15,16 @@ topic: "vergleich"
 
 heroImage: "/images/generated/anker-vs-zendure.webp"
 
+comparisonProducts:
+  - anker-solix-solarbank-3-pro
+  - zendure-solarflow
+
+comparisonRecommendation:
+  title: "Anker für Komfort, Zendure für Flexibilität"
+  text: "Anker ist unsere Empfehlung für einen besonders einfachen Einstieg. Zendure passt besser zu bestehenden Anlagen und Käufern, die später möglichst flexibel erweitern möchten."
+  tableTitle: "Anker und Zendure direkt verglichen"
+  cardsTitle: "Beide Systeme im Detail"
+
 tags:
   - anker
   - zendure

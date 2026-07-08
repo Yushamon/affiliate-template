@@ -32,7 +32,25 @@ const showButton = hasAffiliate || !isCurrentProduct;
 const score = getWeightedProductScore(productKey);
 const scoreLabel = getScoreLabel(score);
 
-const topHighlights = product.highlights.slice(0, 4);
+const topHighlights = product.highlights?.slice(0, 4) ?? [];
+
+const specs =
+  product.specs ??
+  [
+    {
+      label: "Kapazität",
+      value: product.capacity
+    },
+    {
+      label: "Erweiterbar",
+      value: product.expandable
+    }
+  ].filter((item) => item.value);
+
+const leadingListIcons = /^(?:\s*(?:✓|✔|✅|❌|✕|✖|✗|×|⚠️?|→))+\s*/u;
+
+const stripLeadingIcon = (value: string) =>
+  value.replace(leadingListIcons, "");
 ---
 
 {
@@ -79,26 +97,31 @@ const topHighlights = product.highlights.slice(0, 4);
           <small>Unsere Bewertung</small>
         </div>
 
-        <div class="product-box-highlights">
-          {topHighlights.map((item) => (
-            <div>
-              <span aria-hidden="true">✓</span>
-              {item}
+        {
+          topHighlights.length > 0 && (
+            <div class="product-box-highlights">
+              {topHighlights.map((item) => (
+                <div>
+                  <span aria-hidden="true">✓</span>
+                  {stripLeadingIcon(item)}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          )
+        }
 
-        <div class="product-box-specs">
-          <div>
-            <strong>Kapazität</strong>
-            <span>{product.capacity}</span>
-          </div>
-
-          <div>
-            <strong>Erweiterbar</strong>
-            <span>{product.expandable}</span>
-          </div>
-        </div>
+        {
+          specs.length > 0 && (
+            <div class="product-box-specs">
+              {specs.slice(0, 4).map((spec) => (
+                <div>
+                  <strong>{spec.label}</strong>
+                  <span>{spec.value}</span>
+                </div>
+              ))}
+            </div>
+          )
+        }
 
         <div class="product-box-action-row">
           <div class="product-box-price-hint">

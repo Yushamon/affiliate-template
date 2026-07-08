@@ -1,75 +1,203 @@
 ---
 import AffiliateLayout from "../layouts/AffiliateLayout.astro";
-import ProductBox from "../components/ProductBox.astro";
-import ProductComparisonTable from "../components/ProductComparisonTable.astro";
+import ProductRankingCard from "../components/ProductRankingCard.astro";
 import { products, type ProductKey } from "../data/products";
+import { getScoredProducts } from "../data/productScoring";
 
-const rankedProducts = Object.entries(products)
-  .sort(([, a], [, b]) => b.rating - a.rating);
+const rankedProducts = getScoredProducts();
+const primaryRankedProducts = rankedProducts.slice(0, 5);
+const additionalRankedProducts = rankedProducts.slice(5);
 
-const productKeys = rankedProducts.map(([key]) => key as ProductKey);
+const recommendations: Array<{
+  label: string;
+  productKey: ProductKey;
+  reason: string;
+}> = [
+  {
+    label: "Beste Gesamtwahl",
+    productKey: "ecoflow-stream-ultra",
+    reason: "Starkes Gesamtpaket aus App, Erweiterbarkeit und Systemintegration."
+  },
+  {
+    label: "Beste Wahl für Einsteiger",
+    productKey: "anker-solix-solarbank-3-pro",
+    reason: "Einfache Installation, intuitive Bedienung und ein rundes Komplettsystem."
+  },
+  {
+    label: "Beste Wahl für Nachrüstung",
+    productKey: "zendure-solarflow",
+    reason: "Flexible, modulare Lösung für bereits vorhandene Balkonkraftwerke."
+  },
+  {
+    label: "Beste Preis-Leistung",
+    productKey: "solakon-one",
+    reason: "Verständlicher Einstieg mit guter Ausstattung und Ausbauoptionen."
+  }
+];
+
+const evaluationCriteria = [
+  "App",
+  "Installation",
+  "Erweiterbarkeit",
+  "Preis-Leistung",
+  "Garantie",
+  "Alltagstauglichkeit"
+];
 ---
 
 <AffiliateLayout
   title="Beste Balkonspeicher im Vergleich"
-  description="Die besten Balkonspeicher im Überblick. Empfehlungen, Vergleich und wichtige Kaufkriterien."
+  description="Die besten Balkonspeicher im Ranking: vier Systeme, klare Empfehlungen, transparente Scores und verständliche Kaufberatung."
   canonical="/beste-balkonspeicher"
 >
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">
-        Ranking
-      </p>
+  <main class="ranking-page">
+    <section class="ranking-hero">
+      <div class="ranking-hero-copy">
+        <p class="ranking-eyebrow">Ranking</p>
 
-      <h1>
-        Beste Balkonspeicher im Vergleich
-      </h1>
+        <h1>Beste Balkonspeicher im Vergleich</h1>
 
-      <p>
-        Welche Balkonspeicher sich lohnen, worauf du achten solltest und welche Modelle für unterschiedliche Haushalte interessant sind.
-      </p>
-    </div>
-  </section>
+        <p class="ranking-hero-intro">
+          Zehn relevante Systeme im direkten Vergleich – verständlich eingeordnet nach Alltag, Installation, Erweiterbarkeit und Preis-Leistung.
+        </p>
 
-  <section class="article">
-    <h2>
-      Unsere Empfehlungen
-    </h2>
-
-    <p>
-      Die folgende Übersicht basiert auf unseren Produktdaten, Einsatzbereichen und Bewertungen. Sie hilft dir, passende Balkonspeicher schneller einzuordnen.
-    </p>
-  </section>
-
-  {
-    rankedProducts.map(([key], index) => (
-      <section class="ranking-item">
-        <div class="ranking-position">
-          Platz {index + 1}
+        <div class="ranking-trust" aria-label="Grundlage des Vergleichs">
+          <span><strong>10</strong> Systeme verglichen</span>
+          <span>Nach Einsatzbereich bewertet</span>
+          <span>2026 aktualisiert</span>
         </div>
+      </div>
 
-        <ProductBox productKey={key as ProductKey} />
-      </section>
-    ))
-  }
+      <div class="ranking-hero-summary" aria-label="Testsieger">
+        <span>Unsere Gesamtwahl</span>
+        <img
+          src={products["ecoflow-stream-ultra"].image}
+          alt={products["ecoflow-stream-ultra"].name}
+          loading="eager"
+          decoding="async"
+        />
+        <strong>{products["ecoflow-stream-ultra"].name}</strong>
+        <a href={products["ecoflow-stream-ultra"].productUrl}>
+          Testbericht ansehen
+        </a>
+      </div>
+    </section>
 
-  <ProductComparisonTable productKeys={productKeys} />
+    <section class="ranking-section ranking-recommendations">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Schnellauswahl</p>
+        <h2>Unsere Empfehlungen auf einen Blick</h2>
+        <p>Starte mit deinem wichtigsten Einsatzbereich und öffne direkt den passenden Testbericht.</p>
+      </div>
 
-  <section class="article">
-    <h2>
-      Worauf sollte man beim Kauf achten?
-    </h2>
+      <div class="ranking-recommendation-grid">
+        {recommendations.map(({ label, productKey, reason }) => {
+          const product = products[productKey];
 
-    <p>
-      Wichtig sind vor allem Speicherkapazität, Erweiterbarkeit, App-Steuerung, Kompatibilität mit dem vorhandenen Balkonkraftwerk und das Verhältnis aus Anschaffungskosten und erwarteter Nutzung.
-    </p>
+          return (
+            <article class="ranking-recommendation-card">
+              <span>{label}</span>
+              <h3>{product.name}</h3>
+              <p>{reason}</p>
+              <a href={product.productUrl}>Zum Testbericht</a>
+            </article>
+          );
+        })}
+      </div>
+    </section>
 
-    <h2>
-      Für wen lohnt sich ein Balkonspeicher?
-    </h2>
+    <section class="ranking-section ranking-comparison-section">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Direktvergleich</p>
+        <h2>Die wichtigsten Unterschiede</h2>
+        <p>Die kompakte Übersicht zeigt, welches System zu welchem Bedarf passt.</p>
+      </div>
 
-    <p>
-      Ein Balkonspeicher lohnt sich besonders für Haushalte, die tagsüber Solarstrom erzeugen, diesen aber erst abends oder morgens verbrauchen.
-    </p>
-  </section>
+      <div class="ranking-table-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th scope="col">Rang</th>
+              <th scope="col">Produkt</th>
+              <th scope="col">Empfehlung</th>
+              <th scope="col">Score</th>
+              <th scope="col">Kapazität</th>
+              <th scope="col">Ideal für</th>
+              <th scope="col"><span class="sr-only">Aktion</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            {rankedProducts.map(({ key, product, score }, index) => (
+              <tr>
+                <td><strong>#{index + 1}</strong></td>
+                <td>
+                  <a class="ranking-table-product" href={product.productUrl}>
+                    <img src={product.image} alt="" loading="lazy" decoding="async" />
+                    <span>{product.name}</span>
+                  </a>
+                </td>
+                <td>{product.badge}</td>
+                <td><strong class="ranking-table-score">{score}</strong></td>
+                <td>{product.capacity}</td>
+                <td>{product.useCase}</td>
+                <td>
+                  <a class="ranking-table-cta" href={product.productUrl}>
+                    Testbericht
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="ranking-section ranking-products">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Alle Empfehlungen</p>
+        <h2>Das Ranking im Detail</h2>
+        <p>Die kompakten Produktkarten fassen Stärken, technische Eckdaten und unsere Bewertung zusammen.</p>
+      </div>
+
+      <div class="product-ranking-list">
+        {primaryRankedProducts.map(({ key, score }, index) => (
+          <ProductRankingCard
+            productKey={key}
+            rank={index + 1}
+            score={score}
+          />
+        ))}
+
+        {additionalRankedProducts.length > 0 && (
+          <details class="ranking-more-products">
+            <summary>Weitere Plätze 6 bis 10 anzeigen</summary>
+            <div class="product-ranking-list">
+              {additionalRankedProducts.map(({ key, score }, index) => (
+                <ProductRankingCard productKey={key} rank={index + 6} score={score} />
+              ))}
+            </div>
+          </details>
+        )}
+      </div>
+    </section>
+
+    <section class="article article-ranking-method">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Transparente Methodik</p>
+        <h2>So bewerten wir Balkonspeicher</h2>
+        <p>
+          Unser Ranking kombiniert technische Produktdaten mit der praktischen Eignung für unterschiedliche Haushalte. Einzelne Stärken werden gewichtet, damit nicht nur die höchste Kapazität entscheidet.
+        </p>
+      </div>
+
+      <div class="ranking-criteria-grid">
+        {evaluationCriteria.map((criterion, index) => (
+          <div>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <strong>{criterion}</strong>
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
 </AffiliateLayout>

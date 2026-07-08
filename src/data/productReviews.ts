@@ -1,20 +1,16 @@
-import type { ProductKey } from "./products";
+import type { ProductKey, ProductRatings } from "./products";
 
-export const productReviews: Record<ProductKey, {
+export type ProductReview = {
   summary: string;
   verdict: string;
   pros: string[];
   cons: string[];
   bestFor: string[];
   notFor: string[];
-  ratings: {
-    installation: number;
-    app: number;
-    flexibility: number;
-    pricePerformance: number;
-    expandability: number;
-  };
-}> = {
+  ratings: ProductRatings;
+};
+
+export const productReviews: Partial<Record<ProductKey, ProductReview>> = {
   "ecoflow-stream-ultra": {
     summary:
       "Eine der stärksten Komplettlösungen für Balkonkraftwerke mit sehr guter App, hoher Erweiterbarkeit und starkem Energie-Ökosystem.",

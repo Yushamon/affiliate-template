@@ -15,6 +15,16 @@ topic: "vergleich"
 
 heroImage: "/images/generated/ecoflow-vs-anker.webp"
 
+comparisonProducts:
+  - ecoflow-stream-ultra
+  - anker-solix-solarbank-3-pro
+
+comparisonRecommendation:
+  title: "EcoFlow für Ausbau, Anker für Einfachheit"
+  text: "EcoFlow ist unsere erste Wahl für langfristige Erweiterungen und ein vernetztes Energiesystem. Anker passt besser, wenn Installation und Bedienung möglichst unkompliziert bleiben sollen."
+  tableTitle: "EcoFlow und Anker direkt verglichen"
+  cardsTitle: "Beide Systeme im Detail"
+
 tags:
   - ecoflow
   - anker
