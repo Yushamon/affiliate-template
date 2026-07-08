@@ -62,13 +62,16 @@ type NewProductInput = Pick<Product,
   cons: string[];
   solarInput?: string;
   app?: string;
+  affiliateUrl?: string;
+  amazonUrl?: string;
+  asin?: string;
+  merchantLinks?: Product["merchantLinks"];
 };
 
 const createProduct = (input: NewProductInput): AffiliateProduct =>
   withGenericFields({
     ...input,
     category: "Balkonspeicher",
-    affiliateUrl: "",
     image: "/images/balkonspeicher/product.webp",
     recommendationTags: Array.from(new Set([
       ...input.useCases,

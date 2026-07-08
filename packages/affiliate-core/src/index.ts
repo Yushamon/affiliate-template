@@ -11,3 +11,4 @@ export {
   createFaqSchema,
   toAbsoluteUrl
 } from "./seo/schema";
+export * from "./affiliate/index";

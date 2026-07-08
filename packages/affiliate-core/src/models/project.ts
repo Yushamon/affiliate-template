@@ -10,6 +10,11 @@ export interface ProjectConfig {
   productTypeLabel: string;
   audienceLabel: string;
   description: string;
+  affiliate?: {
+    amazon?: {
+      trackingId?: string;
+    };
+  };
   defaultOgImage?: string;
   categoryPath?: string;
   decisionUseCases?: Array<{

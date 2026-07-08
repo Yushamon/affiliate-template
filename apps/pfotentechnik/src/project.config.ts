@@ -28,6 +28,11 @@ export const projectConfig = {
   productTypeLabel: "smarte Haustier-Gadgets",
   audienceLabel: "Hunde- und Katzenhalter",
   description: site.siteDescription,
+  affiliate: {
+    amazon: {
+      trackingId: "yusha0f-21"
+    }
+  },
   defaultOgImage: "/images/project/pfotentechnik/hero.webp",
   categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen",
   headerLinks: [

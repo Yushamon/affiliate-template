@@ -2,6 +2,8 @@
 import { products, type ProductKey } from "@app/data/products";
 import { getScoreLabel } from "@app/data/productScoring";
 import { stripLeadingIcon } from "../utils/content";
+import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
+import { projectConfig } from "@app/project.config";
 
 interface Props {
   productKey: ProductKey;
@@ -13,9 +15,12 @@ interface Props {
 const { productKey, rank, score, positionLabel = "Platz" } = Astro.props;
 const product = products[productKey];
 
-const hasAffiliate = Boolean(product.affiliateUrl?.trim());
-const buttonHref = hasAffiliate ? product.affiliateUrl : product.productUrl;
-const buttonLabel = hasAffiliate ? "Aktuellen Preis prüfen" : "Zum Testbericht";
+const primaryLink = getPrimaryAffiliateLink(
+  product,
+  projectConfig.affiliate ?? {}
+);
+const buttonHref = primaryLink.url || product.productUrl;
+const buttonLabel = primaryLink.label;
 
 const highlights = product.highlights.slice(0, 3);
 const specs = product.specs.slice(0, 3);
@@ -82,8 +87,8 @@ const specs = product.specs.slice(0, 3);
       <a
         class="product-ranking-cta"
         href={buttonHref}
-        rel={hasAffiliate ? "sponsored nofollow noopener" : undefined}
-        target={hasAffiliate ? "_blank" : undefined}
+        rel={primaryLink.rel}
+        target={primaryLink.target}
       >
         {buttonLabel}
       </a>

@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
+  "scripts": {
+    "test": "node --experimental-strip-types --test src/affiliate/*.test.ts"
+  },
   "exports": {
     ".": "./src/index.ts",
     "./*": "./src/*"

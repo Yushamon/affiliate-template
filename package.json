@@ -17,6 +17,7 @@
     "dev:pfotentechnik": "npm --workspace apps/pfotentechnik run dev",
     "build:pfotentechnik": "npm --workspace apps/pfotentechnik run build",
     "preview:pfotentechnik": "npm --workspace apps/pfotentechnik run preview",
+    "test:affiliate": "npm --workspace packages/affiliate-core test",
     "build": "npm run build:balkonspeicher && npm run build:pfotentechnik"
   }
 }

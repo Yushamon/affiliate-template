@@ -8,6 +8,11 @@ export const projectConfig = {
   ...editorialConfig,
   domain: site.domain,
   description: site.siteDescription,
+  affiliate: {
+    amazon: {
+      trackingId: "yusha0f-21"
+    }
+  },
   defaultOgImage: "/images/generated/home-hero.webp",
   categoryPath: "/balkonspeicher",
   decisionUseCases: [

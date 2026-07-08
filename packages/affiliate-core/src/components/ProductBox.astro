@@ -6,6 +6,8 @@ import {
   getWeightedProductScore
 } from "@app/data/productScoring";
 import { stripLeadingIcon } from "../utils/content";
+import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
+import { projectConfig } from "@app/project.config";
 
 interface Props {
   productKey: ProductKey;
@@ -18,15 +20,14 @@ const product = products[productKey];
 
 const isCurrentProduct = currentProductKey === productKey;
 
-const hasAffiliate = Boolean(
-  product?.affiliateUrl && product.affiliateUrl.trim().length > 0
-);
+const primaryLink = product
+  ? getPrimaryAffiliateLink(product, projectConfig.affiliate ?? {})
+  : null;
+const hasAffiliate = primaryLink?.merchant === "amazon";
 
-const buttonHref = hasAffiliate ? product.affiliateUrl : product.productUrl;
+const buttonHref = primaryLink?.url || product.productUrl;
 
-const buttonLabel = hasAffiliate
-  ? "Aktuellen Preis prüfen"
-  : "Zum Testbericht";
+const buttonLabel = primaryLink?.label ?? "Zum Testbericht";
 
 const showButton = hasAffiliate || !isCurrentProduct;
 
@@ -130,8 +131,8 @@ const specs =
             <a
               href={buttonHref}
               class="product-box-button"
-              rel={hasAffiliate ? "sponsored nofollow noopener" : undefined}
-              target={hasAffiliate ? "_blank" : undefined}
+              rel={primaryLink?.rel}
+              target={primaryLink?.target}
             >
               {buttonLabel}
             </a>

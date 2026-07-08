@@ -20,7 +20,16 @@ export interface AffiliateProduct {
   recommendation: string;
   image: string;
   productUrl: string;
-  affiliateUrl: string;
+  affiliateUrl?: string;
+  amazonUrl?: string;
+  asin?: string;
+  merchantLinks?: {
+    amazon?: {
+      asin?: string;
+      url?: string;
+      searchQuery?: string;
+    };
+  };
   rating: number;
   highlights: string[];
   specs: ProductSpec[];
