@@ -9,6 +9,7 @@ interface Props {
   recommendationText: string;
   tableTitle?: string;
   cardsTitle?: string;
+  evaluationCriteria?: string[];
 }
 
 const {
@@ -16,7 +17,15 @@ const {
   recommendationTitle,
   recommendationText,
   tableTitle = "Die wichtigsten Unterschiede",
-  cardsTitle = "Die Produkte im Detail"
+  cardsTitle = "Die Produkte im Detail",
+  evaluationCriteria = [
+    "Alltag & Bedienung",
+    "Installation",
+    "App & Software",
+    "Erweiterbarkeit",
+    "Preis-Leistung",
+    "Garantie & Support"
+  ]
 } = Astro.props;
 
 const selectedProducts = productKeys
@@ -30,14 +39,6 @@ const selectedProducts = productKeys
 
 const leadProduct = selectedProducts[0];
 
-const evaluationCriteria = [
-  "Alltag & Bedienung",
-  "Installation",
-  "App & Software",
-  "Erweiterbarkeit",
-  "Preis-Leistung",
-  "Garantie & Support"
-];
 ---
 
 {selectedProducts.length > 0 && (

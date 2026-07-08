@@ -7,8 +7,13 @@ import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import ComparisonExperience from "@affiliate-core/components/ComparisonExperience.astro";
+import HealthBridge from "../components/HealthBridge.astro";
+import MoneyPageCta from "../components/MoneyPageCta.astro";
 import { projectConfig, siteMeta } from "../project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
+import { getSeoOverride } from "../data/seoOverrides";
+import { products, type ProductKey } from "../data/products";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -29,8 +34,14 @@ const publishedAt =
 const updatedAt =
   page.data.updatedAt ?? page.data.publishedAt ?? siteMeta.articleDefaults.updatedAt;
 const projectKey = page.data.project ?? DEFAULT_PROJECT;
-const heroImage = page.data.heroImage ?? getProjectImage(projectKey, "hero");
+const heroImage = page.data.heroImage ?? getProjectImage(
+  projectKey,
+  page.data.heroImageKey ?? "hero"
+);
 const ogImage = page.data.ogImage ?? heroImage;
+const seoOverride = getSeoOverride(page.data.slug);
+const comparisonProducts = (page.data.comparisonProducts ?? [])
+  .filter((key): key is ProductKey => key in products);
 
 const relatedPages = allPages
   .filter((candidate) => {
@@ -48,8 +59,8 @@ const relatedPages = allPages
 <ProjectLayout
   title={page.data.title}
   description={page.data.description}
-  seoTitle={page.data.seoTitle}
-  seoDescription={page.data.seoDescription}
+  seoTitle={seoOverride?.seoTitle ?? page.data.seoTitle}
+  seoDescription={seoOverride?.seoDescription ?? page.data.seoDescription}
   canonical={`/${page.data.slug}`}
   ogImage={ogImage}
   faq={page.data.faq}
@@ -61,7 +72,7 @@ const relatedPages = allPages
   <Breadcrumbs
     categoryLabel={page.data.categoryLabel}
     title={page.data.title}
-    categoryHref={projectConfig.categoryPath}
+    categoryHref={page.data.categoryPath ?? projectConfig.categoryPath}
   />
 
   <header class="article-header">
@@ -92,7 +103,33 @@ const relatedPages = allPages
       project={projectKey}
       heroImage={heroImage}
     />
+    {
+      comparisonProducts.length > 0 && page.data.comparisonRecommendation && (
+        <ComparisonExperience
+          productKeys={comparisonProducts}
+          recommendationTitle={page.data.comparisonRecommendation.title}
+          recommendationText={page.data.comparisonRecommendation.text}
+          tableTitle={page.data.comparisonRecommendation.tableTitle}
+          cardsTitle={page.data.comparisonRecommendation.cardsTitle}
+          evaluationCriteria={page.data.comparisonRecommendation.criteria}
+        />
+      )
+    }
     <Content />
+    {
+      page.data.healthBridge && (
+        <HealthBridge {...page.data.healthBridge} />
+      )
+    }
+    {
+      page.data.closingCta &&
+        page.data.closingCta.productKey in products && (
+          <MoneyPageCta
+            {...page.data.closingCta}
+            productKey={page.data.closingCta.productKey as ProductKey}
+          />
+        )
+    }
     <FAQ items={page.data.faq} />
   </article>
 

@@ -49,7 +49,10 @@ const premiumBlockSchema = z.object({
     "category",
     "decision",
     "calculator",
-    "manufacturer"
+    "manufacturer",
+    "feederHero",
+    "feederComparison",
+    "feederWetFood"
   ]).optional(),
   items: z.array(z.string()).optional(),
   cards: z.array(premiumCardSchema).optional()
@@ -65,6 +68,7 @@ const pages = defineCollection({
     seoDescription: z.string().optional(),
     category: z.string(),
     categoryLabel: z.string(),
+    categoryPath: z.string().optional(),
     tags: z.array(z.string()).default([]),
     author: z.object({
       name: z.string(),
@@ -73,8 +77,22 @@ const pages = defineCollection({
     }).optional(),
     publishedAt: z.string().optional(),
     updatedAt: z.string().optional(),
+    hubPriority: z.number().optional(),
     project: z.string().optional(),
     heroImage: z.string().optional(),
+    heroImageKey: z.enum([
+      "hero",
+      "feature",
+      "inline",
+      "comparison",
+      "guide",
+      "faq",
+      "product",
+      "category",
+      "feederHero",
+      "feederComparison",
+      "feederWetFood"
+    ]).optional(),
     ogImage: z.string().optional(),
     faq: z.array(
       z.object({
@@ -82,6 +100,29 @@ const pages = defineCollection({
         answer: z.string()
       })
     ).optional(),
+    comparisonProducts: z.array(z.string()).optional(),
+    comparisonRecommendation: z.object({
+      title: z.string(),
+      text: z.string(),
+      tableTitle: z.string().optional(),
+      cardsTitle: z.string().optional(),
+      criteria: z.array(z.string()).optional()
+    }).optional(),
+    healthBridge: z.object({
+      eyebrow: z.string(),
+      title: z.string(),
+      text: z.string(),
+      href: z.string(),
+      cta: z.string()
+    }).optional(),
+    closingCta: z.object({
+      title: z.string(),
+      text: z.string(),
+      productKey: z.string(),
+      primaryLabel: z.string(),
+      secondaryHref: z.string(),
+      secondaryLabel: z.string()
+    }).optional(),
     premiumBlocks: z.array(premiumBlockSchema).optional()
   })
 });

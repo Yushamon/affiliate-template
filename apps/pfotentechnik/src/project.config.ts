@@ -81,25 +81,29 @@ export const projectConfig = {
           code: "01",
           title: "GPS Tracker",
           text: "Ortung, Akkulaufzeit und Abdeckung verständlich vergleichen.",
-          anchor: "hunde"
+          anchor: "hunde",
+          href: "/#produkte"
         },
         {
           code: "02",
           title: "Futterautomaten",
           text: "Fütterungszeiten zuverlässig planen und Portionen kontrollieren.",
-          anchor: "katzen"
+          anchor: "katzen",
+          href: "/smarte-futterautomaten"
         },
         {
           code: "03",
           title: "Trinkbrunnen",
           text: "Material, Reinigung und Filterkosten realistisch einordnen.",
-          anchor: "trinkbrunnen"
+          anchor: "trinkbrunnen",
+          href: "/#produkte"
         },
         {
           code: "04",
           title: "Haustierkameras",
           text: "Bildqualität, Datenschutz und Benachrichtigungen bewerten.",
-          anchor: "kameras"
+          anchor: "kameras",
+          href: "/#produkte"
         }
       ]
     },
@@ -152,12 +156,12 @@ export const projectConfig = {
         },
         {
           badge: "Versorgung",
-          title: "Futterautomaten & Trinkbrunnen",
-          text: "Smarte Helfer für verlässliche Routinen und eine einfache Pflege.",
+          title: "Smarte Futterautomaten",
+          text: "Sechs aktuelle Systeme für planbare Portionen, App-Steuerung und unterschiedliche Futterarten.",
           imageKey: "product",
           imageAlt: "Katze an einem automatischen Futterspender und Trinkbrunnen",
-          href: "#katzen",
-          criteria: ["Reinigung", "Ausfallsicherheit", "Folgekosten"]
+          href: "/smarte-futterautomaten",
+          criteria: ["App & Zeitpläne", "Portionierung", "Reinigung"]
         },
         {
           badge: "Zuhause",
@@ -188,7 +192,7 @@ export const projectConfig = {
         title: "Produktwelten",
         links: [
           { label: "GPS Tracker", href: "/#hunde" },
-          { label: "Futterautomaten", href: "/#katzen" },
+          { label: "Futterautomaten", href: "/smarte-futterautomaten" },
           { label: "Trinkbrunnen", href: "/#trinkbrunnen" },
           { label: "Haustierkameras", href: "/#kameras" }
         ]

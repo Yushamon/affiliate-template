@@ -1,0 +1,50 @@
+---
+import { getPrimaryAffiliateLink } from "@affiliate-core/affiliate/affiliateEngine";
+import { projectConfig } from "../project.config";
+import { products, type ProductKey } from "../data/products";
+
+interface Props {
+  title: string;
+  text: string;
+  productKey: ProductKey;
+  primaryLabel: string;
+  secondaryHref: string;
+  secondaryLabel: string;
+}
+
+const {
+  title,
+  text,
+  productKey,
+  primaryLabel,
+  secondaryHref,
+  secondaryLabel
+} = Astro.props;
+
+const product = products[productKey];
+const primaryLink = getPrimaryAffiliateLink(
+  product,
+  projectConfig.affiliate
+);
+---
+
+<section class="pt-money-cta" aria-labelledby="pt-money-cta-title">
+  <div>
+    <span>{product.badge}</span>
+    <h2 id="pt-money-cta-title">{title}</h2>
+    <p>{text}</p>
+  </div>
+  <div class="pt-money-cta-actions">
+    <a
+      class="pt-money-cta-primary"
+      href={primaryLink.url}
+      rel={primaryLink.rel}
+      target={primaryLink.target}
+    >
+      {primaryLabel}
+    </a>
+    <a class="pt-money-cta-secondary" href={secondaryHref}>
+      {secondaryLabel}
+    </a>
+  </div>
+</section>

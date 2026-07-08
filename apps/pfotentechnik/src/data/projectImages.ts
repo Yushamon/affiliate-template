@@ -9,7 +9,10 @@ const defaultImages = {
   category: "/images/project/pfotentechnik/category.webp",
   decision: "/images/project/pfotentechnik/feature.webp",
   calculator: "/images/project/pfotentechnik/inline.webp",
-  manufacturer: "/images/project/pfotentechnik/category.webp"
+  manufacturer: "/images/project/pfotentechnik/category.webp",
+  feederHero: "/images/project/pfotentechnik/feeder-hero.webp",
+  feederComparison: "/images/project/pfotentechnik/feeder-comparison.webp",
+  feederWetFood: "/images/project/pfotentechnik/feeder-wet-food.webp"
 } as const;
 
 export const DEFAULT_PROJECT = "pfotentechnik";

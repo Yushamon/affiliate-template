@@ -10,7 +10,10 @@ import {
 
 const { home } = projectConfig;
 const pages = (await getCollection("pages"))
-  .sort((a, b) => b.data.updatedAt.localeCompare(a.data.updatedAt))
+  .sort((a, b) =>
+    (b.data.hubPriority ?? 0) - (a.data.hubPriority ?? 0) ||
+    (b.data.updatedAt ?? "").localeCompare(a.data.updatedAt ?? "")
+  )
   .slice(0, 3);
 ---
 
@@ -68,12 +71,12 @@ const pages = (await getCollection("pages"))
 
       <div class="pt-category-grid">
         {home.categories.items.map((category) => (
-          <article class="pt-category-card" id={category.anchor}>
+          <a class="pt-category-card" id={category.anchor} href={category.href}>
             <span class="pt-card-index">{category.code}</span>
             <h3>{category.title}</h3>
             <p>{category.text}</p>
             <span class="pt-card-line" aria-hidden="true"></span>
-          </article>
+          </a>
         ))}
       </div>
     </section>
@@ -116,7 +119,10 @@ const pages = (await getCollection("pages"))
           <a class="pt-guide-card" href={`/${page.data.slug}`}>
             <div class="pt-guide-image">
               <img
-                src={index === 0 ? projectImages.pfotentechnik.guide : projectImages.pfotentechnik.inline}
+                src={page.data.heroImage ?? getProjectImage(
+                  "pfotentechnik",
+                  page.data.heroImageKey ?? (index === 0 ? "guide" : "inline")
+                )}
                 alt=""
                 loading="lazy"
                 decoding="async"
