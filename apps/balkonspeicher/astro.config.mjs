@@ -4,7 +4,13 @@ import { fileURLToPath } from "node:url";
 
 export default defineConfig({
   site: "https://balkonspeicher-ratgeber.de",
+
+  output: "static",
+
+  outDir: "./dist",
+
   integrations: [sitemap()],
+
   vite: {
     resolve: {
       alias: {

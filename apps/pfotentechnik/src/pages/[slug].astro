@@ -1,7 +1,14 @@
 ---
 import { getCollection, render } from "astro:content";
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
 import ArticleMeta from "@affiliate-core/components/ArticleMeta.astro";
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
+import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
+import FAQ from "@affiliate-core/components/FAQ.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import { projectConfig, siteMeta } from "../project.config";
+import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -13,32 +20,81 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { Content } = await render(page);
+const { Content, headings } = await render(page);
+const allPages = await getCollection("pages");
+
+const author = page.data.author ?? siteMeta.defaultAuthor;
+const publishedAt =
+  page.data.publishedAt ?? siteMeta.articleDefaults.publishedAt;
+const updatedAt =
+  page.data.updatedAt ?? page.data.publishedAt ?? siteMeta.articleDefaults.updatedAt;
+const projectKey = page.data.project ?? DEFAULT_PROJECT;
+const heroImage = page.data.heroImage ?? getProjectImage(projectKey, "hero");
+const ogImage = page.data.ogImage ?? heroImage;
+
+const relatedPages = allPages
+  .filter((candidate) => {
+    if (candidate.data.slug === page.data.slug) return false;
+
+    const commonTags = candidate.data.tags.filter((tag) =>
+      page.data.tags.includes(tag)
+    );
+
+    return candidate.data.category === page.data.category || commonTags.length > 0;
+  })
+  .slice(0, 3);
 ---
 
-<AffiliateLayout
+<ProjectLayout
   title={page.data.title}
   description={page.data.description}
+  seoTitle={page.data.seoTitle}
+  seoDescription={page.data.seoDescription}
   canonical={`/${page.data.slug}`}
-  author={page.data.author}
-  publishedAt={page.data.publishedAt}
-  updatedAt={page.data.updatedAt}
+  ogImage={ogImage}
+  faq={page.data.faq}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
   categoryLabel={page.data.categoryLabel}
 >
-  <article class="article">
-    <header class="article-header">
-      <span class="article-category">{page.data.categoryLabel}</span>
-      <h1>{page.data.title}</h1>
-      <p class="article-lead">{page.data.description}</p>
-      <ArticleMeta
-        author={page.data.author}
-        publishedAt={page.data.publishedAt}
-        updatedAt={page.data.updatedAt}
-      />
-    </header>
+  <Breadcrumbs
+    categoryLabel={page.data.categoryLabel}
+    title={page.data.title}
+    categoryHref={projectConfig.categoryPath}
+  />
 
-    <div class="article-content">
-      <Content />
-    </div>
+  <header class="article-header">
+    <span class="article-category">{page.data.categoryLabel}</span>
+    <h1 class="article-title">{page.data.title}</h1>
+    <p class="article-description">{page.data.description}</p>
+    <ArticleMeta
+      author={author}
+      publishedAt={publishedAt}
+      updatedAt={updatedAt}
+    />
+  </header>
+
+  <figure class="article-hero">
+    <img
+      src={heroImage}
+      alt={page.data.title}
+      class="article-hero-image"
+      loading="eager"
+      decoding="async"
+    />
+  </figure>
+
+  <article class="article">
+    <TableOfContents headings={headings} />
+    <PremiumRenderer
+      blocks={page.data.premiumBlocks as any}
+      project={projectKey}
+      heroImage={heroImage}
+    />
+    <Content />
+    <FAQ items={page.data.faq} />
   </article>
-</AffiliateLayout>
+
+  <RelatedArticles pages={relatedPages} />
+</ProjectLayout>

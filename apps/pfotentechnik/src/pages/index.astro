@@ -1,39 +1,176 @@
 ---
 import { getCollection } from "astro:content";
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+import { projectConfig } from "../project.config";
+import {
+  getProjectImage,
+  projectImages,
+  type ProjectImageKey
+} from "../data/projectImages";
 
-const pages = await getCollection("pages");
+const { home } = projectConfig;
+const pages = (await getCollection("pages"))
+  .sort((a, b) => b.data.updatedAt.localeCompare(a.data.updatedAt))
+  .slice(0, 3);
 ---
 
-<AffiliateLayout
-  title="PfotenTechnik – smarte Technik für Haustiere"
-  description="Verständliche Kaufberatung und Ratgeber zu smarter Technik für Hunde und Katzen."
+<ProjectLayout
+  title={home.seo.title}
+  description={home.seo.description}
   canonical="/"
+  ogImage={projectImages.pfotentechnik.hero}
+  publishedAt={home.seo.publishedAt}
+  updatedAt={home.seo.updatedAt}
+  schemaType="article"
+  includeBreadcrumbSchema={true}
 >
-  <section class="home-hero-v2">
-    <div class="home-hero-content">
-      <span class="home-hero-eyebrow">Pet-Tech verständlich erklärt</span>
-      <h1>Smarte Technik, die zu Tier und Alltag passt</h1>
-      <p>
-        PfotenTechnik ordnet Funktionen, Datenschutz und Alltagstauglichkeit
-        moderner Haustier-Gadgets verständlich ein.
-      </p>
-      <a class="button" href="/smarte-gadgets-fuer-hunde-und-katzen">
-        Zum ersten Ratgeber
-      </a>
-    </div>
-  </section>
+  <div class="pt-home">
+    <section class="pt-hero" aria-labelledby="pt-hero-title">
+      <div class="pt-hero-copy">
+        <p class="pt-eyebrow">{home.hero.eyebrow}</p>
+        <h1 id="pt-hero-title">{home.hero.title}</h1>
+        <p class="pt-hero-text">{home.hero.text}</p>
 
-  <section class="article">
-    <h2>Neu im Ratgeber</h2>
-    <div class="article-grid">
-      {pages.map((page) => (
-        <article class="card">
-          <span>{page.data.categoryLabel}</span>
-          <h3><a href={`/${page.data.slug}`}>{page.data.title}</a></h3>
-          <p>{page.data.description}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-</AffiliateLayout>
+        <div class="pt-hero-actions">
+          <a class="pt-button pt-button-primary" href={home.hero.primaryAction.href}>
+            {home.hero.primaryAction.label}
+          </a>
+          <a class="pt-button pt-button-secondary" href={home.hero.secondaryAction.href}>
+            {home.hero.secondaryAction.label}
+          </a>
+        </div>
+
+        <ul class="pt-signal-list" aria-label={home.hero.eyebrow}>
+          {home.hero.signals.map((signal) => <li>{signal}</li>)}
+        </ul>
+      </div>
+
+      <figure class="pt-hero-media">
+        <img
+          src={projectImages.pfotentechnik.hero}
+          alt={home.hero.imageAlt}
+          width="1728"
+          height="960"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <span class="pt-image-accent" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <section class="pt-section pt-categories" aria-labelledby="pt-categories-title">
+      <header class="pt-section-header">
+        <p class="pt-eyebrow">{home.categories.eyebrow}</p>
+        <h2 id="pt-categories-title">{home.categories.title}</h2>
+        <p>{home.categories.text}</p>
+      </header>
+
+      <div class="pt-category-grid">
+        {home.categories.items.map((category) => (
+          <article class="pt-category-card" id={category.anchor}>
+            <span class="pt-card-index">{category.code}</span>
+            <h3>{category.title}</h3>
+            <p>{category.text}</p>
+            <span class="pt-card-line" aria-hidden="true"></span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section
+      class="pt-section pt-values"
+      id="ueber-uns"
+      aria-labelledby="pt-values-title"
+    >
+      <div class="pt-values-intro">
+        <p class="pt-eyebrow">{home.values.eyebrow}</p>
+        <h2 id="pt-values-title">{home.values.title}</h2>
+        <p>{home.values.text}</p>
+      </div>
+
+      <div class="pt-value-grid">
+        {home.values.items.map((item) => (
+          <article class="pt-value-card">
+            <span>{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section
+      class="pt-section pt-guides"
+      id="ratgeber"
+      aria-labelledby="pt-guides-title"
+    >
+      <header class="pt-section-header">
+        <p class="pt-eyebrow">{home.guides.eyebrow}</p>
+        <h2 id="pt-guides-title">{home.guides.title}</h2>
+        <p>{home.guides.text}</p>
+      </header>
+
+      <div class="pt-guide-grid">
+        {pages.map((page, index) => (
+          <a class="pt-guide-card" href={`/${page.data.slug}`}>
+            <div class="pt-guide-image">
+              <img
+                src={index === 0 ? projectImages.pfotentechnik.guide : projectImages.pfotentechnik.inline}
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pt-guide-content">
+              <span>{home.guides.cardLabel}</span>
+              <h3>{page.data.title}</h3>
+              <p>{page.data.description}</p>
+              <strong>{home.guides.cardAction}</strong>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section
+      class="pt-section pt-products"
+      id="produkte"
+      aria-labelledby="pt-products-title"
+    >
+      <span id="vergleiche" class="pt-anchor" aria-hidden="true"></span>
+      <header class="pt-section-header">
+        <p class="pt-eyebrow">{home.products.eyebrow}</p>
+        <h2 id="pt-products-title">{home.products.title}</h2>
+        <p>{home.products.text}</p>
+      </header>
+
+      <div class="pt-product-grid">
+        {home.products.items.map((product) => (
+          <article class="pt-product-card">
+            <div class="pt-product-media">
+              <img
+                src={getProjectImage("pfotentechnik", product.imageKey as ProjectImageKey)}
+                alt={product.imageAlt}
+                loading="lazy"
+                decoding="async"
+              />
+              <span>{product.badge}</span>
+            </div>
+            <div class="pt-product-content">
+              <h3>{product.title}</h3>
+              <p>{product.text}</p>
+              <ul>
+                {product.criteria.map((criterion) => <li>{criterion}</li>)}
+              </ul>
+              <a href={product.href}>
+                {home.products.cardAction}
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</ProjectLayout>

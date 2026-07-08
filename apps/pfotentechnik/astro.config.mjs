@@ -4,7 +4,13 @@ import { fileURLToPath } from "node:url";
 
 export default defineConfig({
   site: "https://pfotentechnik.de",
+
+  output: "static",
+
+  outDir: "./dist",
+
   integrations: [sitemap()],
+
   vite: {
     resolve: {
       alias: {
