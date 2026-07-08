@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from "astro:content";
+import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import ArticleMeta from "@affiliate-core/components/ArticleMeta.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+
+  return pages.map((page) => ({
+    params: { slug: page.data.slug },
+    props: { page }
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<AffiliateLayout
+  title={page.data.title}
+  description={page.data.description}
+  canonical={`/${page.data.slug}`}
+  author={page.data.author}
+  publishedAt={page.data.publishedAt}
+  updatedAt={page.data.updatedAt}
+  categoryLabel={page.data.categoryLabel}
+>
+  <article class="article">
+    <header class="article-header">
+      <span class="article-category">{page.data.categoryLabel}</span>
+      <h1>{page.data.title}</h1>
+      <p class="article-lead">{page.data.description}</p>
+      <ArticleMeta
+        author={page.data.author}
+        publishedAt={page.data.publishedAt}
+        updatedAt={page.data.updatedAt}
+      />
+    </header>
+
+    <div class="article-content">
+      <Content />
+    </div>
+  </article>
+</AffiliateLayout>

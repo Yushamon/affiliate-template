@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+
+const pages = await getCollection("pages");
+---
+
+<AffiliateLayout
+  title="PfotenTechnik – smarte Technik für Haustiere"
+  description="Verständliche Kaufberatung und Ratgeber zu smarter Technik für Hunde und Katzen."
+  canonical="/"
+>
+  <section class="home-hero-v2">
+    <div class="home-hero-content">
+      <span class="home-hero-eyebrow">Pet-Tech verständlich erklärt</span>
+      <h1>Smarte Technik, die zu Tier und Alltag passt</h1>
+      <p>
+        PfotenTechnik ordnet Funktionen, Datenschutz und Alltagstauglichkeit
+        moderner Haustier-Gadgets verständlich ein.
+      </p>
+      <a class="button" href="/smarte-gadgets-fuer-hunde-und-katzen">
+        Zum ersten Ratgeber
+      </a>
+    </div>
+  </section>
+
+  <section class="article">
+    <h2>Neu im Ratgeber</h2>
+    <div class="article-grid">
+      {pages.map((page) => (
+        <article class="card">
+          <span>{page.data.categoryLabel}</span>
+          <h3><a href={`/${page.data.slug}`}>{page.data.title}</a></h3>
+          <p>{page.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</AffiliateLayout>

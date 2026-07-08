@@ -1,0 +1,23 @@
+---
+import { projectConfig } from "@app/project.config";
+---
+
+<header class="site-header-v2">
+  <div class="header-container-v2">
+    <a href="/" class="logo-v2">
+      {projectConfig.projectName}
+    </a>
+
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+
+    <label for="nav-toggle" class="nav-toggle-label">
+      Menü
+    </label>
+
+    <nav class="main-nav-v2">
+      {projectConfig.headerLinks.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

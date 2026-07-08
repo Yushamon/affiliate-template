@@ -1,0 +1,157 @@
+---
+import ProductRankingCard from "./ProductRankingCard.astro";
+import { products, type ProductKey } from "@app/data/products";
+import { getWeightedProductScore } from "@app/data/productScoring";
+
+interface Props {
+  productKeys: ProductKey[];
+  recommendationTitle: string;
+  recommendationText: string;
+  tableTitle?: string;
+  cardsTitle?: string;
+}
+
+const {
+  productKeys,
+  recommendationTitle,
+  recommendationText,
+  tableTitle = "Die wichtigsten Unterschiede",
+  cardsTitle = "Die Produkte im Detail"
+} = Astro.props;
+
+const selectedProducts = productKeys
+  .map((key, index) => ({
+    key,
+    product: products[key],
+    score: getWeightedProductScore(key),
+    rank: index + 1
+  }))
+  .filter(({ product }) => product);
+
+const leadProduct = selectedProducts[0];
+
+const evaluationCriteria = [
+  "Alltag & Bedienung",
+  "Installation",
+  "App & Software",
+  "Erweiterbarkeit",
+  "Preis-Leistung",
+  "Garantie & Support"
+];
+---
+
+{selectedProducts.length > 0 && (
+  <div class="comparison-experience">
+    <section class="ranking-section comparison-quick-decision">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Schnellentscheidung</p>
+        <h2>{recommendationTitle}</h2>
+        <p>{recommendationText}</p>
+      </div>
+
+      <div class="comparison-decision-panel">
+        {leadProduct && (
+          <div class="comparison-decision-lead">
+            <span>Unsere Empfehlung</span>
+            <img
+              src={leadProduct.product.image}
+              alt={leadProduct.product.name}
+              loading="lazy"
+              decoding="async"
+            />
+            <div>
+              <h3>{leadProduct.product.name}</h3>
+              <p>{leadProduct.product.recommendation}</p>
+              <a href={leadProduct.product.productUrl}>Testbericht ansehen</a>
+            </div>
+          </div>
+        )}
+
+        <div class="comparison-decision-options">
+          {selectedProducts.map(({ product }) => (
+            <article>
+              <span>{product.badge}</span>
+              <h3>{product.name}</h3>
+              <p>{product.useCase}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="ranking-section ranking-comparison-section">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Direktvergleich</p>
+        <h2>{tableTitle}</h2>
+        <p>Score, Kapazität und Einsatzbereich kompakt gegenübergestellt.</p>
+      </div>
+
+      <div class="ranking-table-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th scope="col">Rang</th>
+              <th scope="col">Produkt</th>
+              <th scope="col">Empfehlung</th>
+              <th scope="col">Score</th>
+              <th scope="col">Kapazität</th>
+              <th scope="col">Ideal für</th>
+              <th scope="col"><span class="sr-only">Aktion</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            {selectedProducts.map(({ product, score, rank }) => (
+              <tr>
+                <td><strong>#{rank}</strong></td>
+                <td>
+                  <a class="ranking-table-product" href={product.productUrl}>
+                    <img src={product.image} alt="" loading="lazy" decoding="async" />
+                    <span>{product.name}</span>
+                  </a>
+                </td>
+                <td>{product.badge}</td>
+                <td><strong class="ranking-table-score">{score}</strong></td>
+                <td>{product.capacity}</td>
+                <td>{product.useCase}</td>
+                <td>
+                  <a class="ranking-table-cta" href={product.productUrl}>Testbericht</a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="ranking-section ranking-products">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Empfehlungen</p>
+        <h2>{cardsTitle}</h2>
+        <p>Stärken, technische Eckdaten und Bewertung für die schnelle Kaufentscheidung.</p>
+      </div>
+
+      <div class="product-ranking-list">
+        {selectedProducts.map(({ key, score, rank }) => (
+          <ProductRankingCard productKey={key} rank={rank} score={score} />
+        ))}
+      </div>
+    </section>
+
+    <section class="article article-ranking-method">
+      <div class="ranking-section-header">
+        <p class="ranking-eyebrow">Transparenz</p>
+        <h2>So entsteht unsere Bewertung</h2>
+        <p>Wir verbinden technische Daten mit der praktischen Eignung für unterschiedliche Haushalte und Einsatzzwecke.</p>
+      </div>
+
+      <div class="ranking-criteria-grid">
+        {evaluationCriteria.map((criterion, index) => (
+          <div>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <strong>{criterion}</strong>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+)}

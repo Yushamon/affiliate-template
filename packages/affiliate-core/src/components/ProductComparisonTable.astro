@@ -1,0 +1,44 @@
+---
+import ComparisonCard from "./ui/ComparisonCard.astro";
+import Grid from "./ui/Grid.astro";
+import Section from "./ui/Section.astro";
+import { products, type ProductKey } from "@app/data/products";
+
+interface Props {
+  productKeys: ProductKey[];
+}
+
+const { productKeys } = Astro.props;
+
+const selectedProducts = productKeys
+  .map((key) => ({
+    key,
+    product: products[key]
+  }))
+  .filter((item) => item.product);
+---
+
+{selectedProducts.length > 0 && (
+  <Section
+    eyebrow="Vergleich"
+    title="Passende Speicher im Überblick"
+    text="Diese Systeme passen besonders gut zur jeweiligen Suchintention."
+  >
+    <Grid columns={selectedProducts.length >= 4 ? 4 : 3}>
+      {selectedProducts.map(({ key, product }) => (
+        <ComparisonCard
+          title={product.name}
+          subtitle={product.brand}
+          rating={`★ ${product.rating} / 5`}
+          items={[
+            product.capacity,
+            product.expandable,
+            ...product.highlights.slice(0, 2)
+          ]}
+          href={product.productUrl}
+          cta="Zum Testbericht"
+        />
+      ))}
+    </Grid>
+  </Section>
+)}

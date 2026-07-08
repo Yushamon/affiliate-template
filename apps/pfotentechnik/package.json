@@ -1,0 +1,16 @@
+{
+  "name": "@affiliate-sites/pfotentechnik",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --background",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@affiliate-core/core": "*",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.0"
+  }
+}

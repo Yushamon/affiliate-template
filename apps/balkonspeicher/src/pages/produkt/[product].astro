@@ -1,0 +1,97 @@
+---
+import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+
+import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+import DecisionBox from "@affiliate-core/components/DecisionBox.astro";
+import NextStepCTA from "@affiliate-core/components/NextStepCTA.astro";
+
+import { products, type ProductKey } from "../../data/products";
+import { getProductNextStep } from "../../data/productNextSteps";
+
+export async function getStaticPaths() {
+  return Object.keys(products).map((key) => ({
+    params: {
+      product: key
+    },
+    props: {
+      productKey: key
+    }
+  }));
+}
+
+const { productKey } = Astro.props;
+
+const product = products[productKey as ProductKey];
+
+const nextStep = getProductNextStep(productKey as ProductKey);
+
+const manufacturerProducts = Object.entries(products).filter(
+  ([key, item]) =>
+    key !== productKey &&
+    item.manufacturer === product.manufacturer
+);
+---
+
+<AffiliateLayout
+  title={`${product.name} Erfahrungen`}
+  description={`${product.name} im Testbericht. Vorteile, Nachteile, technische Daten, Einsatzbereiche und Alternativen.`}
+  canonical={`/produkt/${productKey}`}
+  ogImage={product.image}
+>
+  <main class="product-detail">
+    <ProductReview productKey={productKey as ProductKey} />
+
+    <DecisionBox
+      currentProductKey={productKey as ProductKey}
+      title="Passt dieser Balkonspeicher zu dir?"
+      text="Nicht jedes System passt zu jedem Haushalt. Diese Entscheidungshilfe zeigt passende Alternativen nach Einsatzzweck."
+    />
+
+    {
+      nextStep && (
+        <NextStepCTA
+          title={nextStep.title}
+          text={nextStep.text}
+          href={nextStep.href}
+          button={nextStep.button}
+        />
+      )
+    }
+
+    <div class="manufacturer-link">
+      <a href={`/hersteller/${product.manufacturer}`}>
+        Weitere Produkte von {product.manufacturerLabel} ansehen →
+      </a>
+    </div>
+
+    {
+      manufacturerProducts.length > 0 && (
+        <section class="product-related">
+          <h2 class="section-title">
+            Weitere Produkte von {product.manufacturerLabel}
+          </h2>
+
+          <div class="card-grid">
+            {
+              manufacturerProducts.map(([key, item]) => (
+                <a class="card" href={`/produkt/${key}`}>
+                  <div class="card-category">
+                    {item.brand}
+                  </div>
+
+                  <h3>
+                    {item.name}
+                  </h3>
+
+                  <p>
+                    {item.recommendation}
+                  </p>
+                </a>
+              ))
+            }
+          </div>
+        </section>
+      )
+    }
+  </main>
+</AffiliateLayout>

@@ -1,19 +1,22 @@
 {
-  "name": "",
+  "name": "affiliate-sites-monorepo",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "node": ">=22.12.0"
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^7.0.0",
-    "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.0.0"
+    "dev:balkonspeicher": "npm --workspace apps/balkonspeicher run dev",
+    "build:balkonspeicher": "npm --workspace apps/balkonspeicher run build",
+    "preview:balkonspeicher": "npm --workspace apps/balkonspeicher run preview",
+    "dev:pfotentechnik": "npm --workspace apps/pfotentechnik run dev",
+    "build:pfotentechnik": "npm --workspace apps/pfotentechnik run build",
+    "preview:pfotentechnik": "npm --workspace apps/pfotentechnik run preview",
+    "build": "npm run build:balkonspeicher && npm run build:pfotentechnik"
   }
 }

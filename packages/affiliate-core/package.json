@@ -1,0 +1,13 @@
+{
+  "name": "@affiliate-core/core",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "peerDependencies": {
+    "astro": "^7.0.0"
+  }
+}
