@@ -67,12 +67,14 @@ const specs =
           <Badge label={product.badge} />
         </div>
 
-        <ProductImage
-          image={productHeroImage}
-          alt={product.name}
-          loading="lazy"
-          decoding="async"
-        />
+        <a class="product-box-media-link" href={product.productUrl} aria-label={`${product.name} Testbericht öffnen`}>
+          <ProductImage
+            image={productHeroImage}
+            alt={product.name}
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
       </div>
 
       <div class="product-box-content">
@@ -83,7 +85,9 @@ const specs =
         <div class="product-box-title-row">
           <div>
             <h2>
-              {product.name}
+              <a class="product-box-title-link" href={product.productUrl}>
+                {product.name}
+              </a>
             </h2>
 
             <p class="product-box-text">
