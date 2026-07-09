@@ -83,7 +83,7 @@ export const projectConfig = {
           code: "01",
           title: "GPS Tracker",
           text: "Ortung, Akkulaufzeit und Abdeckung verständlich vergleichen.",
-          anchor: "hunde",
+          anchor: "gps-tracker",
           href: "/#produkte",
           productCategory: "gps-tracker"
         },
@@ -91,7 +91,7 @@ export const projectConfig = {
           code: "02",
           title: "Futterautomaten",
           text: "Fütterungszeiten zuverlässig planen und Portionen kontrollieren.",
-          anchor: "katzen",
+          anchor: "futterautomaten",
           href: "/smarte-futterautomaten",
           productCategory: "futterautomat"
         },
