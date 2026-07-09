@@ -105,9 +105,9 @@ export const projectConfig = {
         },
         {
           code: "04",
-          title: "Haustierkameras",
-          text: "Bildqualität, Datenschutz und Benachrichtigungen bewerten.",
-          anchor: "kameras",
+          title: "Futterautomaten mit Kamera",
+          text: "Livebild, Zwei-Wege-Audio und App-Steuerung im Vergleich.",
+          anchor: "futterautomaten-mit-kamera",
           href: "/futterautomat-mit-kamera",
           productUseCase: "kamera"
         }
@@ -192,12 +192,6 @@ export const projectConfig = {
           { label: "PETKIT", href: "/hersteller/petkit" },
           { label: "Cat Mate", href: "/hersteller/cat-mate" },
           { label: "SureFeed", href: "/hersteller/surefeed" }
-        ]
-      },
-      {
-        title: "Unternehmen",
-        links: [
-          { label: "Über uns", href: "/#ueber-uns" }
         ]
       },
       {
