@@ -36,7 +36,9 @@ const getRatingValue = (
   const directValue = ratings[criterion];
 
   if (typeof directValue === "number") {
-    return directValue;
+    return directValue <= 5
+      ? directValue * 20
+      : directValue;
   }
 
   return typeof product.rating === "number"
