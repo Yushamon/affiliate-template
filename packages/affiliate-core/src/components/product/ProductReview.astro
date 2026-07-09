@@ -185,7 +185,9 @@ const stars = (rating: number) => {
 
         <ul>
           {review.pros.map((item) => (
-            <li>✓ {stripLeadingIcon(item)}</li>
+            <li class="product-review-list-item product-review-list-item-positive">
+              {stripLeadingIcon(item)}
+            </li>
           ))}
         </ul>
       </div>
@@ -197,7 +199,9 @@ const stars = (rating: number) => {
 
         <ul>
           {review.cons.map((item) => (
-            <li>× {stripLeadingIcon(item)}</li>
+            <li class="product-review-list-item product-review-list-item-negative">
+              {stripLeadingIcon(item)}
+            </li>
           ))}
         </ul>
       </div>
@@ -217,7 +221,9 @@ const stars = (rating: number) => {
 
         <ul>
           {review.notFor.map((item) => (
-            <li>× {stripLeadingIcon(item)}</li>
+            <li class="product-review-list-item product-review-list-item-negative">
+              {stripLeadingIcon(item)}
+            </li>
           ))}
         </ul>
       </div>
