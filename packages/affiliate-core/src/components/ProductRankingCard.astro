@@ -43,12 +43,18 @@ const specs = product.specs.slice(0, 3);
 
     <span class="product-ranking-badge">{product.badge}</span>
 
-    <ProductImage
-      image={cardImage}
-      alt={product.name}
-      loading={rank === 1 ? "eager" : "lazy"}
-      decoding="async"
-    />
+    <a
+      class="product-ranking-image-link"
+      href={product.productUrl}
+      aria-label={`${product.name} Testbericht öffnen`}
+    >
+      <ProductImage
+        image={cardImage}
+        alt={product.name}
+        loading={rank === 1 ? "eager" : "lazy"}
+        decoding="async"
+      />
+    </a>
   </div>
 
   <div class="product-ranking-card-content">
@@ -61,7 +67,11 @@ const specs = product.specs.slice(0, 3);
 
     <div class="product-ranking-title-row">
       <div>
-        <h2>{product.name}</h2>
+        <h2>
+          <a class="product-ranking-title-link" href={product.productUrl}>
+            {product.name}
+          </a>
+        </h2>
         <p>{product.recommendation}</p>
       </div>
 
