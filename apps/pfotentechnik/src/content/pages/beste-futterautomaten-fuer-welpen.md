@@ -53,7 +53,7 @@ Ein guter Futterautomat hilft dabei, feste Fütterungszeiten einzuhalten und kle
 
 ## Unsere Empfehlung auf einen Blick
 
-Wenn du einen Futterautomaten speziell für einen Welpen suchst, solltest du vor allem auf zuverlässige Portionierung, flexible Fütterungszeiten und einfache Reinigung achten. Große Vorratsbehälter sind dagegen meist zweitrangig. Unsere Empfehlungen berücksichtigen deshalb besonders Modelle, die kleine Mahlzeiten sauber planen und im Alltag zuverlässig ausgeben können.
+Wenn du einen Futterautomaten speziell für einen Welpen suchst, solltest du vor allem auf zuverlässige Portionierung, flexible Fütterungszeiten und einfache Reinigung achten. Große Vorratsbehälter sind dagegen meist zweitrangig. Die passende Produktauswahl wird oberhalb des redaktionellen Ratgebers automatisch aus den hinterlegten Produkteigenschaften und Bewertungskriterien erzeugt.
 
 ## Auf einen Blick geeignet für
 
@@ -113,11 +113,6 @@ Unsere Empfehlungen basieren auf einer einheitlichen Bewertungsmethodik. Besonde
 >
 > Unsere Auswahl basiert auf einer einheitlichen Bewertungsmethodik. Für Welpen gewichten wir insbesondere eine zuverlässige Portionierung, sichere Technik, einfache Reinigung und eine alltagstaugliche Bedienung höher als einen möglichst großen Futtervorrat.
 
-## Unsere Produktempfehlungen
-
-Die Produktempfehlungen auf dieser Seite werden aus den hinterlegten Produkteigenschaften, Use Cases und Bewertungskriterien abgeleitet. Neue passende Modelle können dadurch künftig automatisch in die Empfehlung einfließen.
-
-> **Unsere Empfehlung:** Wähle nicht den größten Futterautomaten, sondern das Modell mit der zuverlässigsten Portionierung und einer einfachen Reinigung. Gerade bei Welpen sind regelmäßige kleine Mahlzeiten wichtiger als ein möglichst großer Vorratsbehälter.
 
 ## Für wen lohnt sich ein Futterautomat?
 
@@ -169,14 +164,6 @@ Nicht jeder Welpe braucht sofort einen smarten Futterautomaten. Je nach Alltag k
 * ... ausschließlich Nassfutter erhält → prüfe spezielle Nassfutterautomaten.
 * ... zum Schlingen neigt → ziehe zusätzlich einen Slow Feeder in Betracht.
 
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat mit App](/futterautomat-mit-app/)
-* [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
-
-
 ## Kauf-Checkliste
 
 Vor dem Kauf solltest du folgende Punkte prüfen:
@@ -186,6 +173,13 @@ Vor dem Kauf solltest du folgende Punkte prüfen:
 * Ist der Futternapf leicht zu reinigen?
 * Gibt es eine Notstrom- oder Batterie-Absicherung?
 * Passt der Automat zur verwendeten Futterart?
+
+## Weitere passende Ratgeber
+
+* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
+* [Futterautomat für Hunde](/futterautomat-hund/)
+* [Futterautomat mit App](/futterautomat-mit-app/)
+* [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
 
 
 ## Fachquellen
