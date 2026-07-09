@@ -40,8 +40,8 @@ export const projectConfig = {
     { label: "Für Katzen", href: "/futterautomat-katze" },
     { label: "Für Hunde", href: "/futterautomat-hund" },
     { label: "Vergleiche", href: "/#vergleiche" },
+    { label: "Hersteller", href: "/#hersteller" },
     { label: "Ratgeber", href: "/#ratgeber" },
-    { label: "Über uns", href: "/#ueber-uns" }
   ],
   home: {
     seo: {
@@ -68,7 +68,7 @@ export const projectConfig = {
         "Katze und Hund in einem hellen Zuhause neben einem modernen Futterautomaten",
       imageKey: "feederHero",
       signals: [
-        "6 Modelle eingeordnet",
+        "15 Modelle eingeordnet",
         "Nach Alltagsszenarien bewertet",
         "Ohne statische Preise"
       ]
@@ -149,6 +149,17 @@ export const projectConfig = {
       title: "Beliebte Produkte",
       text:
         "Die aktuell stärksten Empfehlungen aus unserem Katalog – kompakt mit Bewertung, Kriterien und Testbericht."
+    },
+    manufacturers: {
+      eyebrow: "Markenübersicht",
+      title: "Hersteller im Vergleich",
+      text: "Fokus, Stärken, Grenzen und die eingeordneten Modelle der wichtigsten Anbieter.",
+      items: [
+        { code: "01", title: "Petlibro", text: "App-, Kamera- und kompakte Vorratsautomaten.", href: "/hersteller/petlibro" },
+        { code: "02", title: "PETKIT", text: "Pet-Tech-Ökosystem mit Kamera- und Dual-Hopper-Modellen.", href: "/hersteller/petkit" },
+        { code: "03", title: "Cat Mate", text: "Fachautomaten und Lösungen für vorbereitete Mahlzeiten.", href: "/hersteller/cat-mate" },
+        { code: "04", title: "SureFeed", text: "Mikrochipgesteuerter Zugang für Mehrtierhaushalte.", href: "/hersteller/surefeed" }
+      ]
     }
   },
   footer: {
@@ -172,6 +183,15 @@ export const projectConfig = {
           { label: "Futterautomaten mit App", href: "/futterautomat-mit-app" },
           { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera" },
           { label: "Futterautomaten für Nassfutter", href: "/futterautomat-nassfutter" }
+        ]
+      },
+      {
+        title: "Hersteller",
+        links: [
+          { label: "Petlibro", href: "/hersteller/petlibro" },
+          { label: "PETKIT", href: "/hersteller/petkit" },
+          { label: "Cat Mate", href: "/hersteller/cat-mate" },
+          { label: "SureFeed", href: "/hersteller/surefeed" }
         ]
       },
       {

@@ -7,6 +7,13 @@ export type ManufacturerKey =
   | "marstek"
   | "hoymiles";
 
+export interface ProductImages {
+  hero?: string;
+  thumbnail?: string;
+  comparison?: string;
+  gallery?: string[];
+}
+
 export interface Product {
   name: string;
   manufacturer: ManufacturerKey;
@@ -37,6 +44,7 @@ export interface Product {
     };
   };
   image: string;
+  images?: ProductImages;
 
   rating: number;
   badge: string;

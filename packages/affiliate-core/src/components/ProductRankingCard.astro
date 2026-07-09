@@ -4,6 +4,8 @@ import { getScoreLabel } from "@app/data/productScoring";
 import { stripLeadingIcon } from "../utils/content";
 import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
+import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import { getProductThumbnail } from "../utils/productImages";
 
 interface Props {
   productKey: ProductKey;
@@ -14,10 +16,10 @@ interface Props {
 
 const { productKey, rank, score, positionLabel = "Platz" } = Astro.props;
 const product = products[productKey];
-const productImages = (product as {
-  images?: { thumbnail?: string };
-}).images;
-const cardImage = productImages?.thumbnail ?? product.image;
+const cardImage = getProductThumbnail(
+  product,
+  getProjectImage(DEFAULT_PROJECT, "product")
+);
 
 const primaryLink = getPrimaryAffiliateLink(
   product,

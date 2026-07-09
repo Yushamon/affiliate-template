@@ -66,6 +66,7 @@ type NewProductInput = Pick<Product,
   amazonUrl?: string;
   asin?: string;
   merchantLinks?: Product["merchantLinks"];
+  images?: Product["images"];
 };
 
 const createProduct = (input: NewProductInput): AffiliateProduct =>

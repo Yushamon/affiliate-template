@@ -94,6 +94,24 @@ const pages = (await getCollection("pages"))
       </div>
     </section>
 
+    <section class="pt-section pt-categories" id="hersteller" aria-labelledby="pt-manufacturers-title">
+      <header class="pt-section-header">
+        <p class="pt-eyebrow">{home.manufacturers.eyebrow}</p>
+        <h2 id="pt-manufacturers-title">{home.manufacturers.title}</h2>
+        <p>{home.manufacturers.text}</p>
+      </header>
+      <div class="pt-category-grid">
+        {home.manufacturers.items.map((manufacturer) => (
+          <a class="pt-category-card" href={manufacturer.href}>
+            <span class="pt-card-index">{manufacturer.code}</span>
+            <h3>{manufacturer.title}</h3>
+            <p>{manufacturer.text}</p>
+            <span class="pt-card-line" aria-hidden="true"></span>
+          </a>
+        ))}
+      </div>
+    </section>
+
     <section
       class="pt-section pt-values"
       id="ueber-uns"

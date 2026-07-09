@@ -2,6 +2,8 @@
 import ProductRankingCard from "./ProductRankingCard.astro";
 import { products, type ProductKey } from "@app/data/products";
 import { getWeightedProductScore } from "@app/data/productScoring";
+import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import { getProductComparisonImage } from "../utils/productImages";
 
 interface Props {
   productKeys: ProductKey[];
@@ -38,9 +40,7 @@ const selectedProducts = productKeys
   .filter(({ product }) => product);
 
 const leadProduct = selectedProducts[0];
-const getComparisonImage = (product: { image: string }) =>
-  (product as { images?: { comparison?: string } }).images?.comparison ??
-  product.image;
+const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
 
 ---
 
@@ -58,7 +58,7 @@ const getComparisonImage = (product: { image: string }) =>
           <div class="comparison-decision-lead">
             <span>Unsere Empfehlung</span>
             <img
-              src={getComparisonImage(leadProduct.product)}
+              src={getProductComparisonImage(leadProduct.product, productFallback)}
               alt={leadProduct.product.name}
               loading="lazy"
               decoding="async"
@@ -109,7 +109,7 @@ const getComparisonImage = (product: { image: string }) =>
                 <td><strong>#{rank}</strong></td>
                 <td>
                   <a class="ranking-table-product" href={product.productUrl}>
-                    <img src={getComparisonImage(product)} alt="" loading="lazy" decoding="async" />
+                    <img src={getProductComparisonImage(product, productFallback)} alt="" loading="lazy" decoding="async" />
                     <span>{product.name}</span>
                   </a>
                 </td>

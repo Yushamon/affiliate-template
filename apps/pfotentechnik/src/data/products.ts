@@ -4,9 +4,10 @@ import { projectImages } from "./projectImages";
 export type ProductSpec = { label: string; value: string };
 export type ProductRatings = Record<string, number>;
 export type ProductImages = {
-  hero: string;
-  thumbnail: string;
-  comparison: string;
+  hero?: string;
+  thumbnail?: string;
+  comparison?: string;
+  gallery?: string[];
 };
 export type ProductRanking = {
   overall: number;
@@ -71,10 +72,12 @@ type FeederInput = Omit<PetTechProduct,
 const createFeeder = (
   product: FeederInput
 ): PetTechProduct => {
-  const images: ProductImages = {
+  const images: Required<Pick<ProductImages, "hero" | "thumbnail" | "comparison">> &
+    Pick<ProductImages, "gallery"> = {
     hero: product.images?.hero ?? productImage,
     thumbnail: product.images?.thumbnail ?? productImage,
-    comparison: product.images?.comparison ?? productImage
+    comparison: product.images?.comparison ?? productImage,
+    gallery: product.images?.gallery
   };
 
   return {
@@ -416,6 +419,189 @@ export const products = {
     merchantLinks: {
       amazon: { searchQuery: "Xiaomi Smart Pet Food Feeder 2" }
     }
+  }),
+  "surefeed-microchip-pet-feeder-connect": createFeeder({
+    name: "SureFeed Microchip Pet Feeder Connect", brand: "SureFeed",
+    manufacturer: "surefeed", manufacturerLabel: "Sure Petcare",
+    productUrl: "/produkt/surefeed-microchip-pet-feeder-connect", badge: "Chip-Komfort-Tipp",
+    recommendation: "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
+    rating: 4.6, capacity: "400 ml", useCase: "Für Katzen und kleine Hunde mit individuellem Futterzugang",
+    highlights: ["Mikrochip-Zugang", "Integrierte Portionswaage", "Für Nass- und Trockenfutter"],
+    pros: ["Kontrollierter Zugang im Mehrtierhaushalt", "App-Auswertung über Sure Petcare Hub", "Herausnehmbare Schale"],
+    cons: ["Hub für App-Funktionen erforderlich", "Keine zeitgesteuerte Vorratsausgabe", "Begrenztes Schalenvolumen"],
+    specs: [
+      { label: "Futterart", value: "Nass- und Trockenfutter" }, { label: "App-Steuerung", value: "Ja, mit Sure Petcare Hub" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "400 ml" },
+      { label: "Stromversorgung", value: "4 C-Batterien" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Mikrochip-Zugang und Portionswaage" }
+    ],
+    useCases: ["katze", "mehrere-tiere", "app", "portionierung", "nassfutter", "trockenfutter", "premium", "chip-erkennung", "batteriebetrieb"],
+    ratings: { app: 4.5, portionierung: 5, reinigung: 4.5, zuverlaessigkeit: 4.5, sicherheit: 5, preisleistung: 3.5 },
+    ranking: { overall: 91, beginner: 82, premium: 95, retrofit: 88, value: 74 }, priority: 7,
+    verdict: "Eine spezialisierte Premium-Lösung, wenn Futterzugang und Dokumentation wichtiger sind als automatische Vorratsausgabe.",
+    merchantLinks: { amazon: { searchQuery: "SureFeed Microchip Pet Feeder Connect" } }
+  }),
+  "surefeed-microchip-pet-feeder": createFeeder({
+    name: "SureFeed Microchip Pet Feeder", brand: "SureFeed",
+    manufacturer: "surefeed", manufacturerLabel: "Sure Petcare",
+    productUrl: "/produkt/surefeed-microchip-pet-feeder", badge: "Mehrkatzen-Tipp",
+    recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten.",
+    rating: 4.5, capacity: "400 ml", useCase: "Für Mehrtierhaushalte mit Futterdiebstahl oder getrennten Rationen",
+    highlights: ["Zugang per Mikrochip oder RFID-Anhänger", "Bis zu 32 Chipnummern", "Ohne WLAN nutzbar"],
+    pros: ["Nass- und Trockenfutter geeignet", "Keine Cloud-Abhängigkeit", "Trainingsmodus für die Gewöhnung"],
+    cons: ["Keine App-Auswertung", "Keine automatische Mahlzeitenplanung", "Für jedes getrennt zu fütternde Tier meist eigener Napf nötig"],
+    specs: [
+      { label: "Futterart", value: "Nass- und Trockenfutter" }, { label: "App-Steuerung", value: "Nein" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "400 ml" },
+      { label: "Stromversorgung", value: "4 C-Batterien" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Mikrochipgesteuerter Deckel" }
+    ],
+    useCases: ["katze", "mehrere-tiere", "nassfutter", "trockenfutter", "ohne-wlan", "chip-erkennung", "batteriebetrieb"],
+    ratings: { app: 1, portionierung: 4, reinigung: 4.5, zuverlaessigkeit: 4.5, sicherheit: 5, preisleistung: 4 },
+    ranking: { overall: 89, beginner: 86, premium: 88, retrofit: 94, value: 82 }, priority: 8,
+    verdict: "Die klare Wahl für kontrollierten Futterzugang ohne App, aber kein klassischer zeitgesteuerter Vorratsautomat.",
+    merchantLinks: { amazon: { searchQuery: "SureFeed Microchip Pet Feeder" } }
+  }),
+  "honeyguardian-smart-pet-feeder-s305d": createFeeder({
+    name: "HoneyGuardian Smart Pet Feeder S305D", brand: "HoneyGuardian",
+    manufacturer: "honeyguardian", manufacturerLabel: "HoneyGuardian",
+    productUrl: "/produkt/honeyguardian-smart-pet-feeder-s305d", badge: "Preis-Leistungs-Alternative",
+    recommendation: "Vernetzter 5-Liter-Trockenfutterautomat mit App-Zeitplänen und Edelstahl-Napf.",
+    rating: 4.2, capacity: "5 Liter", useCase: "Für preisbewusste Haushalte mit Katze oder kleinem Hund",
+    highlights: ["5-Liter-Vorrat", "App-Steuerung", "Edelstahl-Napf"],
+    pros: ["Großer Vorrat", "Mehrere Mahlzeiten planbar", "Netz- und Reservebetrieb"],
+    cons: ["Nur Trockenfutter", "Modellvarianten im Handel genau prüfen", "Weniger etabliertes App-Ökosystem"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Ja" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "5 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, Batteriereserve" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Edelstahl-Napf" }
+    ],
+    useCases: ["katze", "hund", "app", "urlaub", "portionierung", "trockenfutter", "preisleistung"],
+    ratings: { app: 4, portionierung: 4, reinigung: 4.5, zuverlaessigkeit: 4, sicherheit: 4, preisleistung: 4.5 },
+    ranking: { overall: 84, beginner: 88, premium: 70, retrofit: 86, value: 92 }, priority: 11,
+    verdict: "Eine funktionale Alternative, sofern die konkrete S305D-Variante und App-Kompatibilität beim Händler eindeutig ausgewiesen sind.",
+    merchantLinks: { amazon: { searchQuery: "HoneyGuardian S305D 5L Smart Pet Feeder" } }
+  }),
+  "wopet-patrol-f07-pro": createFeeder({
+    name: "WOPET Patrol F07 Pro", brand: "WOPET", manufacturer: "wopet", manufacturerLabel: "WOPET",
+    productUrl: "/produkt/wopet-patrol-f07-pro", badge: "Großer-Vorrat-Tipp",
+    recommendation: "6-Liter-WLAN-Automat mit bis zu 15 Mahlzeiten und breitem Portionsbereich für Trockenfutter.",
+    rating: 4.3, capacity: "6 Liter", useCase: "Für Katzen und kleine bis mittelgroße Hunde mit hohem Vorratsbedarf",
+    highlights: ["Bis zu 15 Mahlzeiten täglich", "App über 2,4-GHz-WLAN", "Batterie-Backup"],
+    pros: ["Großer Behälter", "Breiter Portionsbereich", "Füllstandsmeldung per App"],
+    cons: ["Nur Trockenfutter", "App-Funktionen benötigen Netzbetrieb", "Deutsche Modellverfügbarkeit schwankt"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter, etwa 5–15 mm" }, { label: "App-Steuerung", value: "Ja" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "6 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, 3 D-Batterien als Backup" }, { label: "Geeignet für", value: "Katzen, kleine bis mittelgroße Hunde" },
+      { label: "Besonderheit", value: "Bis zu 15 Mahlzeiten" }
+    ],
+    useCases: ["katze", "hund", "app", "urlaub", "portionierung", "trockenfutter"],
+    ratings: { app: 4, portionierung: 4.5, reinigung: 4, zuverlaessigkeit: 4, sicherheit: 4, preisleistung: 4.5 },
+    ranking: { overall: 86, beginner: 85, premium: 78, retrofit: 86, value: 90 }, priority: 10,
+    verdict: "Ein vielseitiger Vorratsautomat, dessen konkrete F07-Pro-Ausführung beim Händler geprüft werden sollte.",
+    merchantLinks: { amazon: { searchQuery: "WOPET Patrol F07 Pro 6L Futterautomat" } }
+  }),
+  "wopet-heritage-view-camera-feeder": createFeeder({
+    name: "WOPET Heritage View Camera Feeder", brand: "WOPET", manufacturer: "wopet", manufacturerLabel: "WOPET",
+    productUrl: "/produkt/wopet-heritage-view-camera-feeder", badge: "Kamera-Alternative",
+    recommendation: "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.",
+    rating: 4.2, capacity: "6 Liter", useCase: "Für Tierhalter mit großem Trockenfuttervorrat und Kamera-Wunsch",
+    highlights: ["Kamera am Futterplatz", "App-Steuerung", "Großer Vorrat"],
+    pros: ["Video und Fütterungsplan kombiniert", "Für Katzen und kleinere Hunde", "Zwei-Wege-Audio"],
+    cons: ["Nur Trockenfutter", "Datenschutz und App-Abhängigkeit beachten", "Regionale Verfügbarkeit schwankt"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Ja" },
+      { label: "Kamera", value: "Ja" }, { label: "Kapazität", value: "6 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, modellabhängig Backup" }, { label: "Geeignet für", value: "Katzen, kleine bis mittelgroße Hunde" },
+      { label: "Besonderheit", value: "Kamera und Zwei-Wege-Audio" }
+    ],
+    useCases: ["katze", "hund", "kamera", "app", "urlaub", "portionierung", "trockenfutter"],
+    ratings: { app: 4, portionierung: 4, reinigung: 4, zuverlaessigkeit: 4, sicherheit: 4, preisleistung: 4 },
+    ranking: { overall: 83, beginner: 78, premium: 84, retrofit: 80, value: 83 }, priority: 13,
+    verdict: "Eine Kamera-Alternative für große Vorräte, sofern die konkrete Heritage-View-Version in Deutschland verfügbar ist.",
+    merchantLinks: { amazon: { searchQuery: "WOPET Heritage View Camera Feeder 6L" } }
+  }),
+  "oneisall-5l-automatic-cat-feeder": createFeeder({
+    name: "oneisall 5L Automatic Cat Feeder", brand: "oneisall", manufacturer: "oneisall", manufacturerLabel: "oneisall",
+    productUrl: "/produkt/oneisall-5l-automatic-cat-feeder", badge: "Zwei-Katzen-Tipp",
+    recommendation: "5-Liter-Trockenfutterautomat mit zwei Schalen und optionaler App-Steuerung für zwei Katzen.",
+    rating: 4.3, capacity: "5 Liter", useCase: "Für zwei Katzen mit ähnlichem Futter- und Mengenbedarf",
+    highlights: ["Zwei Futterplätze", "5-Liter-Vorrat", "App-Variante erhältlich"],
+    pros: ["Breite Futterverteilung", "Großer Vorrat", "Offizieller EU-Shop vorhanden"],
+    cons: ["Keine individuelle Zugangskontrolle", "Nur Trockenfutter", "Varianten mit und ohne App unterscheiden"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Je nach Variante" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "5 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, je nach Variante Batterie-Backup" }, { label: "Geeignet für", value: "Ein bis zwei Katzen" },
+      { label: "Besonderheit", value: "Doppelschale" }
+    ],
+    useCases: ["katze", "mehrere-tiere", "app", "urlaub", "portionierung", "trockenfutter", "preisleistung"],
+    ratings: { app: 4, portionierung: 4, reinigung: 4, zuverlaessigkeit: 4, sicherheit: 3.5, preisleistung: 4.5 },
+    ranking: { overall: 85, beginner: 88, premium: 72, retrofit: 85, value: 91 }, priority: 12,
+    verdict: "Sinnvoll für zwei friedlich fressende Katzen, aber kein Ersatz für getrennten Mikrochip-Zugang.",
+    merchantLinks: { amazon: { searchQuery: "oneisall 5L Futterautomat zwei Katzen" } }
+  }),
+  "imipaw-3l-automatic-cat-feeder": createFeeder({
+    name: "IMIPAW 3L Automatic Cat Feeder", brand: "IMIPAW", manufacturer: "imipaw", manufacturerLabel: "IMIPAW",
+    productUrl: "/produkt/imipaw-3l-automatic-cat-feeder", badge: "Einfacher Timer-Tipp",
+    recommendation: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption.",
+    rating: 4.1, capacity: "3 Liter", useCase: "Für einzelne Katzen mit einfachem, lokalem Fütterungsplan",
+    highlights: ["Kompaktes Format", "Lokale Programmierung", "Batteriebetrieb möglich"],
+    pros: ["Ohne WLAN nutzbar", "Mehrere Mahlzeiten programmierbar", "Kleiner Platzbedarf"],
+    cons: ["Keine App", "Nur Trockenfutter", "Modellbezeichnung im Handel nicht immer eindeutig"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Nein" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "3 Liter" },
+      { label: "Stromversorgung", value: "Netzteil oder Batterien, modellabhängig" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Lokaler Timer" }
+    ],
+    useCases: ["katze", "urlaub", "portionierung", "trockenfutter", "preisleistung", "ohne-wlan", "batteriebetrieb"],
+    ratings: { app: 1, portionierung: 4, reinigung: 4, zuverlaessigkeit: 4, sicherheit: 4, preisleistung: 4.5 },
+    ranking: { overall: 81, beginner: 90, premium: 58, retrofit: 88, value: 92 }, priority: 14,
+    verdict: "Eine einfache Offline-Option, wenn lokale Zeitsteuerung wichtiger ist als App und Fernzugriff.",
+    merchantLinks: { amazon: { searchQuery: "IMIPAW 3L Automatic Cat Feeder" } }
+  }),
+  "pawbby-smart-pet-feeder": createFeeder({
+    name: "PAWBBY Smart Pet Feeder", brand: "PAWBBY", manufacturer: "pawbby", manufacturerLabel: "PAWBBY",
+    productUrl: "/produkt/pawbby-smart-pet-feeder", badge: "Xiaomi-Home-Alternative",
+    recommendation: "Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.",
+    rating: 4.1, capacity: "Modellabhängig, häufig 3,6 Liter", useCase: "Für Smart-Home-Nutzer, die eine kompatible Modellvariante finden",
+    highlights: ["App-Steuerung", "Zeitpläne", "Smart-Home-Fokus"],
+    pros: ["Vernetzte Bedienung", "Kompakte Bauform", "Zeitgesteuerte Portionierung"],
+    cons: ["Varianten und regionale App-Kompatibilität prüfen", "Nur Trockenfutter", "Verfügbarkeit in Deutschland schwankt"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Ja, modellabhängig" },
+      { label: "Kamera", value: "Je nach Variante" }, { label: "Kapazität", value: "häufig 3,6 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, modellabhängig Backup" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Xiaomi-Home-Umfeld" }
+    ],
+    useCases: ["katze", "hund", "app", "urlaub", "portionierung", "trockenfutter", "preisleistung"],
+    ratings: { app: 4, portionierung: 4, reinigung: 4, zuverlaessigkeit: 3.5, sicherheit: 4, preisleistung: 4 },
+    ranking: { overall: 80, beginner: 80, premium: 70, retrofit: 78, value: 84 }, priority: 15,
+    verdict: "Nur empfehlenswert, wenn Modellnummer, App-Region und Händlerangaben eindeutig zusammenpassen.",
+    merchantLinks: { amazon: { searchQuery: "PAWBBY Smart Pet Feeder" } }
+  }),
+  "petlibro-air-wifi-feeder": createFeeder({
+    name: "PETLIBRO Air WiFi Feeder", brand: "Petlibro", manufacturer: "petlibro", manufacturerLabel: "Petlibro",
+    productUrl: "/produkt/petlibro-air-wifi-feeder", badge: "Kompakter App-Tipp",
+    recommendation: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen.",
+    rating: 4.4, capacity: "2 Liter", useCase: "Für einzelne Katzen in kleinen Haushalten mit App-Wunsch",
+    highlights: ["Kompakter 2-Liter-Behälter", "App-Zeitpläne", "Kleine Stellfläche"],
+    pros: ["Übersichtliche Grundfunktionen", "Gut für kleine Haushalte", "Petlibro-App-Ökosystem"],
+    cons: ["Kleiner Vorrat", "Nur Trockenfutter", "Air-Varianten mit und ohne WLAN unterscheiden"],
+    specs: [
+      { label: "Futterart", value: "Trockenfutter" }, { label: "App-Steuerung", value: "Ja" },
+      { label: "Kamera", value: "Nein" }, { label: "Kapazität", value: "2 Liter" },
+      { label: "Stromversorgung", value: "Netzteil, modellabhängig Batterie" }, { label: "Geeignet für", value: "Katzen, kleine Hunde" },
+      { label: "Besonderheit", value: "Kompakte Air-Bauform" }
+    ],
+    useCases: ["katze", "app", "urlaub", "portionierung", "trockenfutter", "preisleistung"],
+    ratings: { app: 4.5, portionierung: 4.5, reinigung: 4.5, zuverlaessigkeit: 4, sicherheit: 4, preisleistung: 4.5 },
+    ranking: { overall: 88, beginner: 94, premium: 76, retrofit: 90, value: 91 }, priority: 9,
+    verdict: "Eine kompakte Petlibro-Alternative für App-Steuerung ohne Kamera und großen Vorrat.",
+    merchantLinks: { amazon: { searchQuery: "PETLIBRO Air WiFi Feeder 2L" } }
   })
 } satisfies Record<string, PetTechProduct>;
 

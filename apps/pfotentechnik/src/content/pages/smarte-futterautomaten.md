@@ -155,3 +155,25 @@ Unsere Einordnung basiert auf aktuellen Herstellerangaben, Bedienkonzept, Portio
 - [Futterautomat und Ernährung](/futterautomat-und-ernaehrung)
 - [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze)
 - [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund)
+
+## Spezialisierte Vergleiche
+
+- [Beste Futterautomaten für Katzen](/beste-futterautomaten-fuer-katzen)
+- [Beste Futterautomaten für Hunde](/beste-futterautomaten-fuer-hunde)
+- [Beste Futterautomaten mit Kamera](/beste-futterautomaten-mit-kamera)
+- [Beste Futterautomaten ohne WLAN](/beste-futterautomaten-ohne-wlan)
+- [Beste Futterautomaten für zwei Katzen](/beste-futterautomaten-fuer-zwei-katzen)
+- [Beste Futterautomaten für Nassfutter](/beste-futterautomaten-fuer-nassfutter)
+
+## Hersteller-Hubs
+
+- [Petlibro Futterautomaten](/hersteller/petlibro)
+- [PETKIT Futterautomaten](/hersteller/petkit)
+- [Cat Mate und Closer Pets](/hersteller/cat-mate)
+- [Xiaomi Futterautomaten](/hersteller/xiaomi)
+- [SureFeed und Sure Petcare](/hersteller/surefeed)
+- [HoneyGuardian Futterautomaten](/hersteller/honeyguardian)
+- [WOPET Futterautomaten](/hersteller/wopet)
+- [oneisall Futterautomaten](/hersteller/oneisall)
+- [IMIPAW Futterautomaten](/hersteller/imipaw)
+- [PAWBBY Futterautomaten](/hersteller/pawbby)

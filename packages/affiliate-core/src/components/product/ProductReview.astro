@@ -6,6 +6,8 @@ import { stripLeadingIcon } from "../../utils/content";
 import { getScoreLabel, getWeightedProductScore } from "@app/data/productScoring";
 import { getPrimaryAffiliateLink } from "../../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
+import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import { getProductHeroImage } from "../../utils/productImages";
 
 interface Props {
   productKey: ProductKey;
@@ -14,10 +16,12 @@ interface Props {
 const { productKey } = Astro.props;
 
 const product = products[productKey];
-const productImages = (product as {
-  images?: { hero?: string };
-}).images;
-const productHeroImage = productImages?.hero ?? product?.image;
+const productHeroImage = product
+  ? getProductHeroImage(
+      product,
+      getProjectImage(DEFAULT_PROJECT, "product")
+    )
+  : getProjectImage(DEFAULT_PROJECT, "product");
 const score = product ? getWeightedProductScore(productKey) : 0;
 const scoreLabel = getScoreLabel(score);
 const primaryLink = product

@@ -8,6 +8,8 @@ import {
 import { stripLeadingIcon } from "../utils/content";
 import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
+import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import { getProductHeroImage } from "../utils/productImages";
 
 interface Props {
   productKey: ProductKey;
@@ -17,10 +19,10 @@ interface Props {
 const { productKey, currentProductKey } = Astro.props;
 
 const product = products[productKey];
-const productImages = (product as {
-  images?: { hero?: string };
-}).images;
-const productHeroImage = productImages?.hero ?? product.image;
+const productHeroImage = getProductHeroImage(
+  product,
+  getProjectImage(DEFAULT_PROJECT, "product")
+);
 
 const isCurrentProduct = currentProductKey === productKey;
 

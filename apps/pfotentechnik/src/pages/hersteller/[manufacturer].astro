@@ -1,0 +1,95 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+import FAQ from "@affiliate-core/components/FAQ.astro";
+import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
+import { manufacturers, type Manufacturer } from "../../data/manufacturers";
+import { getWeightedProductScore } from "../../data/productScoring";
+
+export function getStaticPaths() {
+  return manufacturers.map((manufacturer) => ({
+    params: { manufacturer: manufacturer.slug },
+    props: { manufacturer }
+  }));
+}
+
+const { manufacturer } = Astro.props as { manufacturer: Manufacturer };
+const title = `${manufacturer.name} Futterautomaten`;
+const description = `${manufacturer.name} Futterautomaten im Überblick: Modelle, Fokusbereiche, Stärken, Grenzen und passende Einsatzbereiche verständlich eingeordnet.`;
+const faq = [
+  {
+    question: `Welche ${manufacturer.name} Futterautomaten sind im Katalog enthalten?`,
+    answer: manufacturer.products.length > 0
+      ? `Aktuell sind ${manufacturer.products.length} Modelle beziehungsweise Modellvarianten redaktionell eingeordnet. Der Katalog wird bei relevanten, nachvollziehbar verfügbaren Produkten ergänzt.`
+      : "Aktuell ist noch kein konkretes Modell vollständig eingeordnet. Der Hersteller-Hub dokumentiert bereits Fokus und Auswahlkriterien für spätere Ergänzungen."
+  },
+  {
+    question: `Worauf sollte man bei ${manufacturer.name} achten?`,
+    answer: `Futterart, Portionsbereich, Tiergröße, Stromreserve und Reinigung sollten zum Alltag passen. Zusätzlich sind Modellnummer, regionale App-Kompatibilität und aktuelle Herstellerangaben zu prüfen.`
+  }
+];
+const comparisonLinks = [
+  { href: "/beste-futterautomaten-fuer-katzen", label: "Beste Futterautomaten für Katzen" },
+  { href: "/beste-futterautomaten-fuer-hunde", label: "Beste Futterautomaten für Hunde" },
+  { href: "/beste-futterautomaten-ohne-wlan", label: "Futterautomaten ohne WLAN" },
+  { href: "/beste-futterautomaten-fuer-zwei-katzen", label: "Futterautomaten für zwei Katzen" }
+];
+---
+
+<ProjectLayout
+  title={title}
+  seoTitle={`${manufacturer.name} Futterautomaten: Modelle und Empfehlungen`}
+  description={description}
+  seoDescription={description}
+  canonical={`/hersteller/${manufacturer.slug}`}
+  faq={faq}
+  categoryLabel="Hersteller"
+  schemaType="article"
+>
+  <Breadcrumbs categoryLabel="Hersteller" categoryHref="/smarte-futterautomaten" title={title} />
+
+  <header class="article-header">
+    <span class="article-category">Hersteller-Hub</span>
+    <h1 class="article-title">{manufacturer.name} Futterautomaten</h1>
+    <p class="article-description">{manufacturer.description}</p>
+  </header>
+
+  <article class="article manufacturer-hub">
+    <section>
+      <h2>Fokusbereiche</h2>
+      <ul>{manufacturer.focus.map((item) => <li>{item}</li>)}</ul>
+      <p>Produktbereiche: {manufacturer.productCategories.join(", ")}.</p>
+      {manufacturer.country && <p>Markenbezug: {manufacturer.country}.</p>}
+      <p><a href={manufacturer.website} rel="noopener" target="_blank">Offizielle Herstellerseite</a></p>
+    </section>
+
+    <section>
+      <h2>Stärken und Grenzen</h2>
+      <div class="pros-cons-v3">
+        <div class="pros-box-v3"><h3>Stärken</h3><ul>{manufacturer.strengths.map((item) => <li>{item}</li>)}</ul></div>
+        <div class="cons-box-v3"><h3>Grenzen</h3><ul>{manufacturer.limitations.map((item) => <li>{item}</li>)}</ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Verfügbare Modelle im Katalog</h2>
+      {manufacturer.products.length > 0 ? (
+        <div class="product-ranking-list">
+          {manufacturer.products.map((productKey, index) => (
+            <ProductRankingCard productKey={productKey} rank={index + 1} score={getWeightedProductScore(productKey)} />
+          ))}
+        </div>
+      ) : (
+        <p>Für diesen Hersteller ist derzeit noch kein Modell vollständig bewertet. Wir ergänzen Produkte erst nach Prüfung von Datenlage und Marktrelevanz.</p>
+      )}
+    </section>
+
+    <section>
+      <h2>Vergleiche und Orientierung</h2>
+      <ul>{comparisonLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+      <p>Alle Modelle und Auswahlkriterien stehen im <a href="/smarte-futterautomaten">Futterautomaten-Hub</a>.</p>
+    </section>
+
+    <FAQ items={faq} />
+  </article>
+</ProjectLayout>

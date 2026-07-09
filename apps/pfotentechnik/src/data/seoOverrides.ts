@@ -28,6 +28,30 @@ export const seoOverrides = {
     seoTitle: "Futterautomat für Nassfutter: Kühlung, Hygiene und Grenzen",
     seoDescription:
       "Welche Futterautomaten eignen sich für Nassfutter? Vergleich von Timer-Modellen, Kühlakkus, Hygiene, Fächern und sicheren Einsatzzeiten."
+  },
+  "beste-futterautomaten-mit-kamera": {
+    seoTitle: "Beste Futterautomaten mit Kamera im Vergleich",
+    seoDescription: "Kamera-Futterautomaten von Petlibro, PETKIT und WOPET nach Video, App, Portionierung und Datenschutz verglichen."
+  },
+  "beste-futterautomaten-ohne-wlan": {
+    seoTitle: "Beste Futterautomaten ohne WLAN im Vergleich",
+    seoDescription: "Futterautomaten ohne WLAN nach Timer, Batterie, Futterart und kontrolliertem Zugang vergleichen."
+  },
+  "beste-futterautomaten-fuer-zwei-katzen": {
+    seoTitle: "Beste Futterautomaten für zwei Katzen",
+    seoDescription: "Futterautomaten für zwei Katzen mit Mikrochip, Doppelschale oder getrennten Vorräten im Vergleich."
+  },
+  "beste-futterautomaten-fuer-nassfutter": {
+    seoTitle: "Beste Futterautomaten für Nassfutter",
+    seoDescription: "Nassfutterautomaten nach Fachsystem, Kühlakku, Mikrochip-Zugang und Reinigung vergleichen."
+  },
+  "beste-futterautomaten-fuer-hunde": {
+    seoTitle: "Beste Futterautomaten für Hunde im Vergleich",
+    seoDescription: "Futterautomaten für Hunde nach Ausgabemenge, Krokettengröße, Stabilität und Notstrom vergleichen."
+  },
+  "beste-futterautomaten-fuer-katzen": {
+    seoTitle: "Beste Futterautomaten für Katzen im Vergleich",
+    seoDescription: "Futterautomaten für Katzen nach Trockenfutter, Nassfutter, App und Mehrkatzen-Eignung vergleichen."
   }
 } as const;
 
