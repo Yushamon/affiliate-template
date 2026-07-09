@@ -184,9 +184,9 @@ Vor dem Kauf solltest du folgende Punkte prüfen:
 
 ## Fachquellen
 
-* FEDIAF – Nutritional Guidelines
-* WSAVA – Global Nutrition Guidelines
-* AAHA – Nutrition and Weight Management Guidelines
+* [FEDIAF – Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
+* [WSAVA – Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+* [AAHA – Nutrition and Weight Management Guidelines](https://www.aaha.org/resources/2021-aaha-nutrition-and-weight-management-guidelines/home/)
 
 ## Fazit
 

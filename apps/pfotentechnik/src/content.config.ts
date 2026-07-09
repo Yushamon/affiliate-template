@@ -102,6 +102,16 @@ const pages = defineCollection({
     ).optional(),
     comparisonProducts: z.array(z.string()).optional(),
     decisionKey: z.string().optional(),
+    decisionIntro: z.string().optional(),
+    heroType: z.string().optional(),
+    themeColor: z.enum([
+      "teal",
+      "amber",
+      "blue",
+      "green",
+      "rose",
+      "neutral"
+    ]).optional(),
     comparisonRecommendation: z.object({
       title: z.string(),
       text: z.string(),

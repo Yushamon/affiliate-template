@@ -172,11 +172,6 @@ const relatedPages = allPages
 
   <article class="article">
     <TableOfContents headings={headings} />
-    <PremiumRenderer
-      blocks={page.data.premiumBlocks as any}
-      project={projectKey}
-      heroImage={heroImage}
-    />
     {
       topDecisionRecommendation && (
         <section class="decision-top-recommendation">
@@ -184,7 +179,7 @@ const relatedPages = allPages
             <p class="ranking-eyebrow">Top-Empfehlung</p>
             <h2>Unser Favorit für diese Auswahl</h2>
             <p>
-              Dieses Modell passt nach unserer Bewertungslogik am besten zu den Anforderungen dieser Seite.
+              Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.
             </p>
           </div>
 
@@ -196,6 +191,21 @@ const relatedPages = allPages
             />
           </div>
         </section>
+      )
+    }
+    <PremiumRenderer
+      blocks={page.data.premiumBlocks as any}
+      project={projectKey}
+      heroImage={heroImage}
+    />
+    {
+      comparisonProducts.length > 1 && (
+        <div class="decision-comparison-intro">
+          <h2>Weitere passende Empfehlungen</h2>
+          <p>
+            Neben unserer Top-Empfehlung können – je nach Budget, Ausstattung und persönlichen Anforderungen – auch diese Modelle interessant sein.
+          </p>
+        </div>
       )
     }
     {
