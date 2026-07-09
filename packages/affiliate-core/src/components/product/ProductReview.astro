@@ -8,6 +8,7 @@ import { getPrimaryAffiliateLink } from "../../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
 import { getProductHeroImage } from "../../utils/productImages";
+import ProductImage from "../ProductImage.astro";
 
 interface Props {
   productKey: ProductKey;
@@ -19,9 +20,13 @@ const product = products[productKey];
 const productHeroImage = product
   ? getProductHeroImage(
       product,
-      getProjectImage(DEFAULT_PROJECT, "product")
+      getProjectImage(DEFAULT_PROJECT, "product"),
+      productKey
     )
-  : getProjectImage(DEFAULT_PROJECT, "product");
+  : getProductHeroImage(
+      {},
+      getProjectImage(DEFAULT_PROJECT, "product")
+    );
 const score = product ? getWeightedProductScore(productKey) : 0;
 const scoreLabel = getScoreLabel(score);
 const primaryLink = product
@@ -143,7 +148,7 @@ const stars = (rating: number) => {
       </div>
 
       <div class="product-review-hero-image">
-        <img src={productHeroImage} alt={product.name} loading="eager" />
+        <ProductImage image={productHeroImage} alt={product.name} loading="eager" />
       </div>
     </section>
 

@@ -6,6 +6,7 @@ import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
 import { getProductThumbnail } from "../utils/productImages";
+import ProductImage from "./ProductImage.astro";
 
 interface Props {
   productKey: ProductKey;
@@ -18,7 +19,8 @@ const { productKey, rank, score, positionLabel = "Platz" } = Astro.props;
 const product = products[productKey];
 const cardImage = getProductThumbnail(
   product,
-  getProjectImage(DEFAULT_PROJECT, "product")
+  getProjectImage(DEFAULT_PROJECT, "product"),
+  productKey
 );
 
 const primaryLink = getPrimaryAffiliateLink(
@@ -41,8 +43,8 @@ const specs = product.specs.slice(0, 3);
 
     <span class="product-ranking-badge">{product.badge}</span>
 
-    <img
-      src={cardImage}
+    <ProductImage
+      image={cardImage}
       alt={product.name}
       loading={rank === 1 ? "eager" : "lazy"}
       decoding="async"

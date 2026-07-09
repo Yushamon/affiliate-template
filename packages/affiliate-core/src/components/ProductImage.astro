@@ -1,0 +1,28 @@
+---
+import type { ResolvedProductImage } from "../utils/productImages";
+
+interface Props {
+  image: ResolvedProductImage;
+  alt: string;
+  loading?: "eager" | "lazy";
+  decoding?: "async" | "auto" | "sync";
+}
+
+const {
+  image,
+  alt,
+  loading = "lazy",
+  decoding = "async"
+} = Astro.props;
+
+const serializedFallbacks = JSON.stringify(image.fallbacks);
+---
+
+<img
+  src={image.src}
+  alt={alt}
+  loading={loading}
+  decoding={decoding}
+  data-product-image-fallbacks={serializedFallbacks}
+  onerror="const candidates=JSON.parse(this.dataset.productImageFallbacks||'[]');const next=candidates.shift();this.dataset.productImageFallbacks=JSON.stringify(candidates);if(next){this.src=next}else{this.onerror=null}"
+/>

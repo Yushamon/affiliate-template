@@ -1,12 +1,21 @@
 ---
 import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
 import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
+import ProductImage from "@affiliate-core/components/ProductImage.astro";
+import {
+  getProductComparisonImage,
+  getProductHeroImage
+} from "@affiliate-core/utils/productImages";
 import { products, type ProductKey } from "../data/products";
 import { getScoredProducts } from "../data/productScoring";
+import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
 
 const rankedProducts = getScoredProducts();
 const primaryRankedProducts = rankedProducts.slice(0, 5);
 const additionalRankedProducts = rankedProducts.slice(5);
+const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
+const leadProductKey: ProductKey = "ecoflow-stream-ultra";
+const leadProduct = products[leadProductKey];
 
 const recommendations: Array<{
   label: string;
@@ -70,14 +79,14 @@ const evaluationCriteria = [
 
       <div class="ranking-hero-summary" aria-label="Testsieger">
         <span>Unsere Gesamtwahl</span>
-        <img
-          src={products["ecoflow-stream-ultra"].image}
-          alt={products["ecoflow-stream-ultra"].name}
+        <ProductImage
+          image={getProductHeroImage(leadProduct, productFallback, leadProductKey)}
+          alt={leadProduct.name}
           loading="eager"
           decoding="async"
         />
-        <strong>{products["ecoflow-stream-ultra"].name}</strong>
-        <a href={products["ecoflow-stream-ultra"].productUrl}>
+        <strong>{leadProduct.name}</strong>
+        <a href={leadProduct.productUrl}>
           Testbericht ansehen
         </a>
       </div>
@@ -132,7 +141,12 @@ const evaluationCriteria = [
                 <td><strong>#{index + 1}</strong></td>
                 <td>
                   <a class="ranking-table-product" href={product.productUrl}>
-                    <img src={product.image} alt="" loading="lazy" decoding="async" />
+                    <ProductImage
+                      image={getProductComparisonImage(product, productFallback, key)}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <span>{product.name}</span>
                   </a>
                 </td>

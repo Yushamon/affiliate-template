@@ -3,6 +3,8 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 import { products, type ProductKey } from "../../data/products";
+import { DEFAULT_PROJECT, getProjectImage } from "../../data/projectImages";
+import { getProductHeroImage } from "@affiliate-core/utils/productImages";
 
 export function getStaticPaths() {
   return Object.entries(products).map(([key, product]) => ({
@@ -13,6 +15,11 @@ export function getStaticPaths() {
 
 const { productKey } = Astro.props as { productKey: ProductKey };
 const product = products[productKey];
+const productHeroImage = getProductHeroImage(
+  product,
+  getProjectImage(DEFAULT_PROJECT, "product"),
+  productKey
+);
 
 const hasApp = (product.ratings.app ?? 0) > 1;
 const supportsWetFood = product.useCases.includes("nassfutter");
@@ -68,7 +75,7 @@ const internalLinks = [
   description={`${product.name} im Testbericht: Funktionen, Portionierung, Reinigung, Vorteile, Nachteile und technische Daten verständlich eingeordnet.`}
   seoDescription={`${product.name} im Testbericht. Einordnung von App, Portionierung, Reinigung, Zuverlässigkeit und Eignung für den Alltag.`}
   canonical={product.productUrl}
-  ogImage={product.images.hero}
+  ogImage={productHeroImage.src}
   author={{ name: "PfotenTechnik Redaktion", role: "Redaktion" }}
   publishedAt="2026-07-09"
   updatedAt="2026-07-09"

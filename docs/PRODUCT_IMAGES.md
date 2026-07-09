@@ -44,14 +44,19 @@ Die Bildquelle, Lizenz beziehungsweise Freigabe und das Abrufdatum sollten proje
 1. Den passenden Ordner unter `public/images/products/<product-key>/` öffnen oder anlegen.
 2. Nur rechtlich freigegebene Dateien mit den standardisierten Namen ablegen.
 3. Das Bild auf korrekten Ausschnitt, Farbraum und angemessene Dateigröße prüfen.
-4. In der projektspezifischen `products.ts` nur tatsächlich vorhandene Dateien referenzieren.
+4. Die projektspezifische `products.ts` bleibt unverändert, sofern die
+   Standarddateinamen verwendet werden.
 5. Beide App-Builds ausführen und Produktdetail-, Ranking- und Vergleichsansicht prüfen.
 
-Fehlt eine Variante, darf kein Pfad auf eine nicht vorhandene Datei eingetragen werden. Die Core-Helfer greifen dann auf die nächste verfügbare Variante, das Legacy-Feld `image` und zuletzt auf `projectImages.product` zurück.
+Der Core erzeugt die Standardpfade aus dem Produkt-Key. Kann der Browser eine
+Datei nicht laden, probiert die gemeinsame Bildkomponente nacheinander das
+Legacy-Feld `image` und `projectImages.product`. Dafür sind keine
+Dateisystemzugriffe zur Laufzeit erforderlich.
 
-## Referenz in `products.ts`
+## Optionale Überschreibung in `products.ts`
 
-Das Bildmodell ist optional und das Legacy-Feld `image` bleibt kompatibel:
+Das Bildmodell ist optional und wird nur benötigt, wenn ein Produkt von der
+Standardkonvention abweicht. Ein manuell gesetzter Pfad hat weiterhin Vorrang:
 
 ```ts
 {
@@ -68,7 +73,7 @@ Das Bildmodell ist optional und das Legacy-Feld `image` bleibt kompatibel:
 }
 ```
 
-Nur vorhandene Varianten werden eingetragen. Ein unvollständiges Objekt ist zulässig:
+Ein unvollständiges Objekt ist zulässig:
 
 ```ts
 images: {
@@ -78,8 +83,12 @@ images: {
 
 ## Prioritäten im Core
 
-- Ranking und Teaser: `thumbnail` → `comparison` → `image` → Projektfallback
-- Produktdetail: `hero` → `thumbnail` → `image` → Projektfallback
-- Vergleich: `comparison` → `thumbnail` → `image` → Projektfallback
+- Ranking und Teaser: `images.thumbnail` → automatisches `thumbnail.webp` → `image` → Projektfallback
+- Produktdetail: `images.hero` → automatisches `hero.webp` → `image` → Projektfallback
+- Vergleich: `images.comparison` → automatisches `comparison.webp` → `image` → Projektfallback
+- Galerie: `images.gallery` → automatische Pfade `gallery-1.webp` bis `gallery-3.webp`
 
-Die Helfer in `packages/affiliate-core/src/utils/productImages.ts` werten ausschließlich die Produktdaten aus. Sie führen zur Laufzeit keine Dateisystemzugriffe aus.
+Die Helfer in `packages/affiliate-core/src/utils/productImages.ts` erzeugen die
+Pfade ausschließlich aus Produktdaten und ProductKey. Sie führen zur Laufzeit
+keine Dateisystemzugriffe aus. `ProductImage.astro` verarbeitet Ladefehler im
+Browser und wechselt dann zum nächsten Kandidaten.

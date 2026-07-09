@@ -7,6 +7,8 @@ import NextStepCTA from "@affiliate-core/components/NextStepCTA.astro";
 
 import { products, type ProductKey } from "../../data/products";
 import { getProductNextStep } from "../../data/productNextSteps";
+import { DEFAULT_PROJECT, getProjectImage } from "../../data/projectImages";
+import { getProductHeroImage } from "@affiliate-core/utils/productImages";
 
 export async function getStaticPaths() {
   return Object.keys(products).map((key) => ({
@@ -22,6 +24,11 @@ export async function getStaticPaths() {
 const { productKey } = Astro.props;
 
 const product = products[productKey as ProductKey];
+const productHeroImage = getProductHeroImage(
+  product,
+  getProjectImage(DEFAULT_PROJECT, "product"),
+  productKey
+);
 
 const nextStep = getProductNextStep(productKey as ProductKey);
 
@@ -36,7 +43,7 @@ const manufacturerProducts = Object.entries(products).filter(
   title={`${product.name} Erfahrungen`}
   description={`${product.name} im Testbericht. Vorteile, Nachteile, technische Daten, Einsatzbereiche und Alternativen.`}
   canonical={`/produkt/${productKey}`}
-  ogImage={product.image}
+  ogImage={productHeroImage.src}
 >
   <main class="product-detail">
     <ProductReview productKey={productKey as ProductKey} />

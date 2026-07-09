@@ -4,6 +4,7 @@ import { products, type ProductKey } from "@app/data/products";
 import { getWeightedProductScore } from "@app/data/productScoring";
 import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
 import { getProductComparisonImage } from "../utils/productImages";
+import ProductImage from "./ProductImage.astro";
 
 interface Props {
   productKeys: ProductKey[];
@@ -57,8 +58,12 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
         {leadProduct && (
           <div class="comparison-decision-lead">
             <span>Unsere Empfehlung</span>
-            <img
-              src={getProductComparisonImage(leadProduct.product, productFallback)}
+            <ProductImage
+              image={getProductComparisonImage(
+                leadProduct.product,
+                productFallback,
+                leadProduct.key
+              )}
               alt={leadProduct.product.name}
               loading="lazy"
               decoding="async"
@@ -104,12 +109,17 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
             </tr>
           </thead>
           <tbody>
-            {selectedProducts.map(({ product, score, rank }) => (
+            {selectedProducts.map(({ key, product, score, rank }) => (
               <tr>
                 <td><strong>#{rank}</strong></td>
                 <td>
                   <a class="ranking-table-product" href={product.productUrl}>
-                    <img src={getProductComparisonImage(product, productFallback)} alt="" loading="lazy" decoding="async" />
+                    <ProductImage
+                      image={getProductComparisonImage(product, productFallback, key)}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <span>{product.name}</span>
                   </a>
                 </td>
