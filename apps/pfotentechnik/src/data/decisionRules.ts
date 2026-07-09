@@ -1,4 +1,13 @@
-import type { DecisionRuleMap } from "@affiliate-core/data/decisionRules";
+type DecisionRule = {
+  id: string;
+  title: string;
+  description: string;
+  requiredUseCases?: string[];
+  weights: Record<string, number>;
+  limit: number;
+};
+
+type DecisionRuleMap = Record<string, DecisionRule>;
 
 export const decisionRules: DecisionRuleMap = {
   kleineHunde: {

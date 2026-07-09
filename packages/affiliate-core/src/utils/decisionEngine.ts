@@ -1,4 +1,9 @@
-import type { DecisionRule } from "../data/decisionRules";
+export interface DecisionRule {
+  requiredUseCases?: string[];
+  excludedUseCases?: string[];
+  weights: Record<string, number>;
+  limit?: number;
+}
 
 export interface DecisionProduct {
   key: string;

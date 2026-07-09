@@ -4,7 +4,9 @@ import {
 } from "@affiliate-core/utils/decisionEngine";
 
 import { decisionRules } from "./decisionRules";
-import { products, type Product, type ProductKey } from "./products";
+import { products, type ProductKey } from "./products";
+
+type Product = (typeof products)[ProductKey];
 
 export const getDecisionRule = (decisionKey: string) =>
   decisionRules[decisionKey];
