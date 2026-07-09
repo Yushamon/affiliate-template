@@ -172,7 +172,10 @@ const getBlockIcon = (type: PremiumBlockType) => {
           {hasProducts && (
             <div class="premium-v3-grid premium-v3-grid-products">
               {filteredProducts.map(({ product }) => (
-                <article class="premium-v3-card premium-v3-product-card">
+                <a
+                  class="premium-v3-card premium-v3-product-card premium-v3-card-link"
+                  href={product.productUrl}
+                >
                   <span class="premium-v3-label">
                     {product.badge}
                   </span>
@@ -190,11 +193,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                       <li>{stripLeadingIcon(item)}</li>
                     ))}
                   </ul>
-
-                  <a href={product.productUrl}>
-                    {block.cta ?? "Testbericht lesen"}
-                  </a>
-                </article>
+                </a>
               ))}
             </div>
           )}
@@ -208,8 +207,13 @@ const getBlockIcon = (type: PremiumBlockType) => {
 
                 const href = card.href ?? product?.productUrl;
 
+                const CardTag = href ? "a" : "article";
+
                 return (
-                  <article class={`premium-v3-card premium-v3-card-${index + 1}`}>
+                  <CardTag
+                    class={`premium-v3-card premium-v3-card-${index + 1}${href ? " premium-v3-card-link" : ""}`}
+                    href={href}
+                  >
                     {card.label && (
                       <span class="premium-v3-label">
                         {card.label}
@@ -249,13 +253,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                         ))}
                       </ul>
                     )}
-
-                    {href && (
-                      <a href={href}>
-                        {card.cta ?? block.cta ?? "Mehr erfahren"}
-                      </a>
-                    )}
-                  </article>
+                  </CardTag>
                 );
               })}
             </div>
