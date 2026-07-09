@@ -1516,6 +1516,37 @@ grid-template-columns:1fr;
   line-height: 1.55;
 }
 
+.product-review-list-item {
+  position: relative;
+  padding-left: 32px;
+}
+
+.product-review-list-item::before {
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  display: inline-grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.product-review-list-item-positive::before {
+  content: "✓";
+  background: rgba(20, 184, 166, 0.12);
+  color: var(--primary-dark);
+}
+
+.product-review-list-item-negative::before {
+  content: "×";
+  background: rgba(239, 68, 68, 0.10);
+  color: #dc2626;
+}
+ 
 .product-review-specs-v3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
