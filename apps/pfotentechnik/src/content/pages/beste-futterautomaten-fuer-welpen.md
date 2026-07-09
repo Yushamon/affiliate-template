@@ -45,6 +45,16 @@ Ein guter Futterautomat hilft dabei, feste Fütterungszeiten einzuhalten und kle
 
 Wenn du einen Futterautomaten speziell für einen Welpen suchst, solltest du vor allem auf zuverlässige Portionierung, flexible Fütterungszeiten und einfache Reinigung achten. Große Vorratsbehälter sind dagegen meist zweitrangig. Unsere Empfehlungen berücksichtigen deshalb besonders Modelle, die kleine Mahlzeiten sauber planen und im Alltag zuverlässig ausgeben können.
 
+## Entscheidungshilfe
+
+Ein Futterautomat passt besonders gut zu dir, wenn mindestens drei der folgenden Punkte zutreffen:
+
+* Dein Welpe erhält mehrere Mahlzeiten am Tag.
+* Du bist regelmäßig mehrere Stunden außer Haus.
+* Die Fütterungszeiten sollen möglichst konstant bleiben.
+* Du möchtest Portionen exakt planen.
+* Mehrere Personen kümmern sich um den Hund und sollen denselben Fütterungsplan nutzen.
+
 ## Worauf kommt es bei einem Welpen an?
 
 
@@ -68,6 +78,8 @@ Unsere Empfehlungen basieren auf einer einheitlichen Bewertungsmethodik. Besonde
 ## Unsere Produktempfehlungen
 
 Die Produktempfehlungen auf dieser Seite werden aus den hinterlegten Produkteigenschaften, Use Cases und Bewertungskriterien abgeleitet. Neue passende Modelle können dadurch künftig automatisch in die Empfehlung einfließen.
+
+> **Unsere Empfehlung:** Wähle nicht den größten Futterautomaten, sondern das Modell mit der zuverlässigsten Portionierung und einer einfachen Reinigung. Gerade bei Welpen sind regelmäßige kleine Mahlzeiten wichtiger als ein möglichst großer Vorratsbehälter.
 
 ## Für wen lohnt sich ein Futterautomat?
 
@@ -114,6 +126,17 @@ Nicht jeder Welpe braucht sofort einen smarten Futterautomaten. Je nach Alltag k
 * [Futterautomat für Hunde](/futterautomat-hund/)
 * [Futterautomat mit App](/futterautomat-mit-app/)
 * [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
+
+
+## Kauf-Checkliste
+
+Vor dem Kauf solltest du folgende Punkte prüfen:
+
+* Unterstützt der Automat die gewünschte Anzahl täglicher Mahlzeiten?
+* Lassen sich kleine Portionen zuverlässig einstellen?
+* Ist der Futternapf leicht zu reinigen?
+* Gibt es eine Notstrom- oder Batterie-Absicherung?
+* Passt der Automat zur verwendeten Futterart?
 
 
 ## Fazit
