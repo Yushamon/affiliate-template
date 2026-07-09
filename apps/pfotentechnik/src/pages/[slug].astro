@@ -14,6 +14,7 @@ import { projectConfig, siteMeta } from "../project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
 import { getSeoOverride } from "../data/seoOverrides";
 import { products, type ProductKey } from "../data/products";
+import { getDecisionProductRecommendations } from "../data/decisionProducts";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -40,8 +41,16 @@ const heroImage = page.data.heroImage ?? getProjectImage(
 );
 const ogImage = page.data.ogImage ?? heroImage;
 const seoOverride = getSeoOverride(page.data.slug);
-const comparisonProducts = (page.data.comparisonProducts ?? [])
-  .filter((key): key is ProductKey => key in products);
+const decisionProducts = page.data.decisionKey
+  ? getDecisionProductRecommendations(page.data.decisionKey)
+      .map(({ key }) => key)
+      .filter((key): key is ProductKey => key in products)
+  : [];
+
+const comparisonProducts = decisionProducts.length > 0
+  ? decisionProducts
+  : (page.data.comparisonProducts ?? [])
+      .filter((key): key is ProductKey => key in products);
 
 const getReadingTimeMinutes = (content: string) => {
   const plainText = content

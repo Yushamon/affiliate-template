@@ -101,6 +101,7 @@ const pages = defineCollection({
       })
     ).optional(),
     comparisonProducts: z.array(z.string()).optional(),
+    decisionKey: z.string().optional(),
     comparisonRecommendation: z.object({
       title: z.string(),
       text: z.string(),
