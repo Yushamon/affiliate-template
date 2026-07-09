@@ -78,6 +78,24 @@ const comparisonProducts = decisionProducts.length > 0
   : (page.data.comparisonProducts ?? [])
       .filter((key): key is ProductKey => key in products);
 
+const comparisonExperienceConfig = page.data.comparisonRecommendation ?? (
+  decisionProducts.length > 0
+    ? {
+        title: "Unsere Produktempfehlungen",
+        text: "Diese Auswahl wird aus den hinterlegten Produkteigenschaften, Use Cases und Bewertungskriterien abgeleitet.",
+        tableTitle: "Empfehlungen im direkten Vergleich",
+        cardsTitle: "Die passenden Modelle im Detail",
+        criteria: [
+          "Portionierung",
+          "Zuverlässigkeit",
+          "Reinigung",
+          "Sicherheit",
+          "Preis-Leistung"
+        ]
+      }
+    : null
+);
+
 const getReadingTimeMinutes = (content: string) => {
   const plainText = content
     .replace(/```[\s\S]*?```/g, " ")
@@ -182,14 +200,14 @@ const relatedPages = allPages
       )
     }
     {
-      comparisonProducts.length > 0 && page.data.comparisonRecommendation && (
+      comparisonProducts.length > 0 && comparisonExperienceConfig && (
         <ComparisonExperience
           productKeys={comparisonProducts}
-          recommendationTitle={page.data.comparisonRecommendation.title}
-          recommendationText={page.data.comparisonRecommendation.text}
-          tableTitle={page.data.comparisonRecommendation.tableTitle}
-          cardsTitle={page.data.comparisonRecommendation.cardsTitle}
-          evaluationCriteria={page.data.comparisonRecommendation.criteria}
+          recommendationTitle={comparisonExperienceConfig.title}
+          recommendationText={comparisonExperienceConfig.text}
+          tableTitle={comparisonExperienceConfig.tableTitle}
+          cardsTitle={comparisonExperienceConfig.cardsTitle}
+          evaluationCriteria={comparisonExperienceConfig.criteria}
         />
       )
     }
