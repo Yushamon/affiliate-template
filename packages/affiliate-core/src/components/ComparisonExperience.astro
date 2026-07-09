@@ -80,8 +80,13 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
           {selectedProducts.map(({ product }) => (
             <article>
               <span>{product.badge}</span>
-              <h3>{product.name}</h3>
+              <h3>
+                <a href={product.productUrl}>{product.name}</a>
+              </h3>
               <p>{product.useCase}</p>
+              <a class="comparison-decision-card-link" href={product.productUrl}>
+                Testbericht ansehen
+              </a>
             </article>
           ))}
         </div>
