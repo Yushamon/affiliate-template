@@ -108,6 +108,16 @@ export const products = {
     manufacturer: "petlibro",
     manufacturerLabel: "Petlibro",
     productUrl: "/produkt/petlibro-granary-wifi-feeder",
+    images: {
+      hero: "/images/products/petlibro-granary-wifi-feeder/hero.webp",
+      thumbnail: "/images/products/petlibro-granary-wifi-feeder/thumbnail.webp",
+      comparison: "/images/products/petlibro-granary-wifi-feeder/comparison.webp",
+      gallery: [
+        "/images/products/petlibro-granary-wifi-feeder/gallery-1.webp",
+        "/images/products/petlibro-granary-wifi-feeder/gallery-2.webp",
+        "/images/products/petlibro-granary-wifi-feeder/gallery-3.webp"
+      ]
+    },
     badge: "Beste Gesamtwahl",
     recommendation:
       "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung.",
