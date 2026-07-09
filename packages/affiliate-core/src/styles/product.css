@@ -1516,11 +1516,13 @@ grid-template-columns:1fr;
   line-height: 1.55;
 }
 
+.product-detail .product-review-list-item,
 .product-review-list-item {
   position: relative;
   padding-left: 32px;
 }
 
+.product-detail .product-review-list-item::before,
 .product-review-list-item::before {
   position: absolute;
   left: 0;
@@ -1535,12 +1537,14 @@ grid-template-columns:1fr;
   line-height: 1;
 }
 
+.product-detail .product-review-list-item-positive::before,
 .product-review-list-item-positive::before {
   content: "✓";
   background: rgba(20, 184, 166, 0.12);
   color: var(--primary-dark);
 }
 
+.product-detail .product-review-list-item-negative::before,
 .product-review-list-item-negative::before {
   content: "×";
   background: rgba(239, 68, 68, 0.10);
