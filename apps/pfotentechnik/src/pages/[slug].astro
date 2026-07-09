@@ -18,7 +18,10 @@ import { projectConfig, siteMeta } from "../project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "../data/projectImages";
 import { getSeoOverride } from "../data/seoOverrides";
 import { products, type ProductKey } from "../data/products";
-import { getDecisionProductRecommendations } from "../data/decisionProducts";
+import {
+  getDecisionProductRecommendations,
+  getDecisionRule
+} from "../data/decisionProducts";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -50,6 +53,9 @@ const localPublicImageExists = (imagePath?: string) => {
 };
 
 const pageHeroImage = `/images/pages/${page.data.slug}/hero.webp`;
+const heroTypeHeroImage = page.data.heroType
+  ? `/images/pages/${page.data.heroType}/hero.webp`
+  : undefined;
 const configuredHeroImage = page.data.heroImage;
 const fallbackHeroImage = getProjectImage(
   projectKey,
@@ -60,18 +66,29 @@ const heroImage = localPublicImageExists(configuredHeroImage)
   ? configuredHeroImage
   : localPublicImageExists(pageHeroImage)
     ? pageHeroImage
-    : fallbackHeroImage;
+    : localPublicImageExists(heroTypeHeroImage)
+      ? heroTypeHeroImage
+      : fallbackHeroImage;
 const ogImage = page.data.ogImage ?? heroImage;
 const seoOverride = getSeoOverride(page.data.slug);
 const decisionRecommendations = page.data.decisionKey
   ? getDecisionProductRecommendations(page.data.decisionKey)
   : [];
 
+const decisionRule = page.data.decisionKey
+  ? getDecisionRule(page.data.decisionKey)
+  : undefined;
+
 const decisionProducts = decisionRecommendations
   .map(({ key }) => key)
   .filter((key): key is ProductKey => key in products);
 
 const topDecisionRecommendation = decisionRecommendations[0];
+
+const decisionIntro = page.data.decisionIntro ??
+  "Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.";
+
+const decisionThemeColor = page.data.themeColor ?? "teal";
 
 const comparisonProducts = decisionProducts.length > 0
   ? decisionProducts
@@ -174,13 +191,11 @@ const relatedPages = allPages
     <TableOfContents headings={headings} />
     {
       topDecisionRecommendation && (
-        <section class="decision-top-recommendation">
+        <section class={`decision-top-recommendation decision-top-recommendation-${decisionThemeColor}`}>
           <div class="ranking-section-header">
             <p class="ranking-eyebrow">Top-Empfehlung</p>
             <h2>Unser Favorit für diese Auswahl</h2>
-            <p>
-              Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.
-            </p>
+            <p>{decisionIntro}</p>
           </div>
 
           <div class="product-ranking-list">
@@ -220,7 +235,124 @@ const relatedPages = allPages
         />
       )
     }
+
+    {
+      decisionRule?.summary && decisionRule.summary.length > 0 && (
+        <section class="decision-template-section decision-template-summary">
+          <h2>30 Sekunden Zusammenfassung</h2>
+          <ul>
+            {decisionRule.summary.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      (decisionRule?.suitableFor || decisionRule?.notSuitableFor) && (
+        <section class="decision-template-section decision-template-fit">
+          <h2>Für wen ist diese Auswahl geeignet?</h2>
+          <div class="decision-template-grid">
+            {decisionRule.suitableFor && decisionRule.suitableFor.length > 0 && (
+              <div class="decision-template-card decision-template-card-positive">
+                <h3>Geeignet für</h3>
+                <ul>
+                  {decisionRule.suitableFor.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {decisionRule.notSuitableFor && decisionRule.notSuitableFor.length > 0 && (
+              <div class="decision-template-card decision-template-card-negative">
+                <h3>Eher nicht geeignet für</h3>
+                <ul>
+                  {decisionRule.notSuitableFor.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      decisionRule?.checklist && decisionRule.checklist.length > 0 && (
+        <section class="decision-template-section decision-template-checklist">
+          <h2>Kauf-Checkliste</h2>
+          <ul>
+            {decisionRule.checklist.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      decisionRule?.commonMistakes && decisionRule.commonMistakes.length > 0 && (
+        <section class="decision-template-section decision-template-mistakes">
+          <h2>Typische Fehler beim Kauf</h2>
+          <ul>
+            {decisionRule.commonMistakes.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      decisionRule?.alternatives && decisionRule.alternatives.length > 0 && (
+        <section class="decision-template-section decision-template-alternatives">
+          <h2>Alternativen</h2>
+          <div class="decision-template-grid">
+            {decisionRule.alternatives.map((item) => (
+              <article class="decision-template-card">
+                <h3>{item.label}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      decisionRule?.decisionTree && decisionRule.decisionTree.length > 0 && (
+        <section class="decision-template-section decision-template-tree">
+          <h2>Entscheidungsbaum</h2>
+          <ul>
+            {decisionRule.decisionTree.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
     <Content />
+
+    {
+      decisionRule?.sources && decisionRule.sources.length > 0 && (
+        <section class="decision-template-section decision-template-sources">
+          <h2>Fachquellen</h2>
+          <ul>
+            {decisionRule.sources.map((source) => (
+              <li>
+                <a href={source.href} rel="noopener noreferrer" target="_blank">
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
     {
       page.data.healthBridge && (
         <HealthBridge {...page.data.healthBridge} />
