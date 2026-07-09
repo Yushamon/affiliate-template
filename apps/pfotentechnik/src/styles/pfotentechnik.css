@@ -857,3 +857,126 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+.pt-product-detail {
+  max-width: 1180px;
+}
+
+.pt-review-method,
+.pt-product-health,
+.pt-product-links {
+  margin-top: 56px;
+  padding: 32px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 28px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.pt-review-method > span,
+.pt-everyday-review header > span,
+.pt-product-health > span,
+.pt-product-links > span {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pt-review-method h2,
+.pt-everyday-review h2,
+.pt-product-health h2,
+.pt-product-links h2 {
+  margin: 10px 0 14px;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.pt-review-method p,
+.pt-everyday-review header p,
+.pt-product-health p {
+  max-width: 820px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+.pt-everyday-review {
+  margin-top: 72px;
+}
+
+.pt-everyday-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.pt-everyday-review-grid article {
+  padding: 26px;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #ffffff, #f0fdfa);
+}
+
+.pt-everyday-review-grid h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.pt-everyday-review-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.pt-product-health {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  background: linear-gradient(145deg, #f0fdfa, #ffffff);
+}
+
+.pt-product-health h2 {
+  margin-top: 0;
+}
+
+.pt-product-links > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.pt-product-links a {
+  display: inline-flex;
+  padding: 11px 15px;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  border-radius: 999px;
+  color: var(--primary-dark);
+  background: #f0fdfa;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .pt-review-method,
+  .pt-product-health,
+  .pt-product-links {
+    padding: 24px;
+  }
+
+  .pt-everyday-review-grid,
+  .pt-product-health {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pt-product-health {
+    gap: 12px;
+  }
+}

@@ -3,6 +3,9 @@ import ProductBox from "../ProductBox.astro";
 import { products, type ProductKey } from "@app/data/products";
 import { productReviews } from "@app/data/productReviews";
 import { stripLeadingIcon } from "../../utils/content";
+import { getScoreLabel, getWeightedProductScore } from "@app/data/productScoring";
+import { getPrimaryAffiliateLink } from "../../affiliate/affiliateEngine";
+import { projectConfig } from "@app/project.config";
 
 interface Props {
   productKey: ProductKey;
@@ -11,6 +14,11 @@ interface Props {
 const { productKey } = Astro.props;
 
 const product = products[productKey];
+const score = product ? getWeightedProductScore(productKey) : 0;
+const scoreLabel = getScoreLabel(score);
+const primaryLink = product
+  ? getPrimaryAffiliateLink(product, projectConfig.affiliate ?? {})
+  : null;
 const review = productReviews[productKey] ?? (product
   ? {
       summary: product.review.summary,
@@ -45,7 +53,11 @@ const ratingLabels: Record<string, string> = {
   battery: "Akku",
   cleaning: "Reinigung",
   noise: "Lautstärke",
-  safety: "Sicherheit"
+  safety: "Sicherheit",
+  portionierung: "Portionierung",
+  reinigung: "Reinigung",
+  zuverlaessigkeit: "Zuverlässigkeit",
+  preisleistung: "Preis-Leistung"
 };
 
 const getRatingLabel = (key: string) => {
@@ -93,15 +105,33 @@ const stars = (rating: number) => {
           {review.summary}
         </p>
 
-        <div class="product-review-rating">
-          <strong>
-            {product.rating} / 5
-          </strong>
+        <div class="product-review-hero-meta">
+          <div class="product-review-rating">
+            <strong>
+              {product.rating} / 5
+            </strong>
 
-          <span>
-            Unsere Bewertung
-          </span>
+            <span>
+              Unsere Bewertung
+            </span>
+          </div>
+
+          <div class="product-review-score">
+            <strong>{score}</strong>
+            <span>{scoreLabel}</span>
+          </div>
         </div>
+
+        {primaryLink && primaryLink.url && (
+          <a
+            class="product-review-affiliate-cta"
+            href={primaryLink.url}
+            rel={primaryLink.rel}
+            target={primaryLink.target}
+          >
+            {primaryLink.label}
+          </a>
+        )}
       </div>
 
       <div class="product-review-hero-image">
@@ -162,15 +192,9 @@ const stars = (rating: number) => {
 
     <section class="product-review-grid-v3">
       <div class="product-review-card-v3">
-        <h2>
-          Ideal für
-        </h2>
+        <h2>Für wen geeignet</h2>
 
-        <ul>
-          {review.bestFor.map((item) => (
-            <li>✓ {stripLeadingIcon(item)}</li>
-          ))}
-        </ul>
+        <p>{product.useCase}</p>
       </div>
 
       <div class="product-review-card-v3">

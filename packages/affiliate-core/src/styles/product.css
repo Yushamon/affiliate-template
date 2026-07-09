@@ -117,6 +117,7 @@
 
 .ranking-page {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 88px;
 }
 
@@ -289,6 +290,7 @@
 }
 
 .ranking-table-wrap {
+  contain: inline-size layout paint;
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 26px;
@@ -720,9 +722,36 @@
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.product-ranking-cta:hover {
+.product-ranking-cta,
+.article .product-ranking-cta,
+.product-box-button,
+.article .product-box-button,
+.product-review-affiliate-cta,
+.article .product-review-affiliate-cta {
+  border: 0;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.product-ranking-cta:hover,
+.article .product-ranking-cta:hover,
+.product-box-button:hover,
+.article .product-box-button:hover,
+.product-review-affiliate-cta:hover,
+.article .product-review-affiliate-cta:hover {
   transform: translateY(-2px);
   background: var(--primary-dark);
+  color: #ffffff;
+}
+
+.product-ranking-cta[aria-disabled="true"],
+.product-box-button[aria-disabled="true"],
+.product-review-affiliate-cta[aria-disabled="true"] {
+  background: #64748b;
+  color: #ffffff;
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .product-ranking-review-link {
@@ -736,7 +765,7 @@
   .ranking-hero,
   .product-ranking-card,
   .comparison-decision-panel {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .ranking-recommendation-grid {
@@ -761,10 +790,16 @@
 
   .ranking-hero h1 {
     font-size: 44px;
+    overflow-wrap: anywhere;
   }
 
   .ranking-hero-intro {
     font-size: 17px;
+  }
+
+  .ranking-section-header h2,
+  .ranking-section-header .ranking-eyebrow {
+    overflow-wrap: anywhere;
   }
 
   .ranking-recommendation-grid {
@@ -813,6 +848,19 @@
 
   .product-ranking-cta {
     width: 100%;
+  }
+
+  .ranking-criteria-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ranking-criteria-grid > div {
+    min-width: 0;
+  }
+
+  .ranking-criteria-grid strong {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 }
 .product-score-card {
@@ -1319,6 +1367,47 @@ grid-template-columns:1fr;
   color: var(--muted);
   font-size: 13px;
   font-weight: 800;
+}
+
+.product-review-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.product-review-score {
+  display: inline-grid;
+  gap: 4px;
+  margin-top: 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: white;
+}
+
+.product-review-score strong {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.product-review-score span {
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.product-review-affiliate-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin-top: 18px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 14px 36px rgba(22, 163, 74, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .product-review-hero-image img {

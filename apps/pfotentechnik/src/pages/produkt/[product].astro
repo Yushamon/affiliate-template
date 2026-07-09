@@ -1,0 +1,130 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+import { products, type ProductKey } from "../../data/products";
+
+export function getStaticPaths() {
+  return Object.entries(products).map(([key, product]) => ({
+    params: { product: product.productUrl.split("/").filter(Boolean).at(-1) },
+    props: { productKey: key as ProductKey }
+  }));
+}
+
+const { productKey } = Astro.props as { productKey: ProductKey };
+const product = products[productKey];
+
+const hasApp = (product.ratings.app ?? 0) > 1;
+const supportsWetFood = product.useCases.includes("nassfutter");
+const hasCamera = product.useCases.includes("kamera");
+
+const everydayCriteria = [
+  {
+    title: "App",
+    text: hasApp
+      ? `Die App-Funktionen von ${product.brand} werden nach Zeitplanung, Statusmeldungen und Verständlichkeit eingeordnet. Entscheidend bleibt, ob gespeicherte Abläufe auch bei kurzen Verbindungsproblemen sinnvoll weiterlaufen.`
+      : "Dieses Modell arbeitet ohne App. Das reduziert Fernfunktionen, macht die Bedienung aber unabhängig von WLAN, Konto und Cloud-Diensten."
+  },
+  {
+    title: "Portionierung",
+    text: supportsWetFood
+      ? "Die Portionen werden vorab auf getrennte Fächer verteilt. Dadurch ist die Menge direkt kontrollierbar; Kühlung und Standzeit müssen trotzdem passend geplant werden."
+      : "Förderschritte entsprechen nicht automatisch einem festen Grammgewicht. Die Ausgabe sollte mit dem verwendeten Futter mehrfach nachgewogen und anschließend passend eingestellt werden."
+  },
+  {
+    title: "Reinigung",
+    text: supportsWetFood
+      ? "Bei Nassfutter sind herausnehmbare Schalen und die Reinigung nach jeder Nutzung besonders wichtig. Auch Deckelränder und Kontaktflächen müssen frei von Resten bleiben."
+      : "Napf, Vorratsbehälter und erreichbare Teile des Futterwegs sollten regelmäßig von Krümeln und Futterfett befreit werden."
+  },
+  {
+    title: "Zuverlässigkeit",
+    text: "Bewertet werden Stromreserve, lokal gespeicherte Zeitpläne und die konstruktive Eignung für die angegebene Futterart. Eine verantwortliche Person sollte die Funktion dennoch regelmäßig kontrollieren."
+  },
+  {
+    title: "Sicherheit",
+    text: "Deckel, Futterauslass und Stand müssen zum Tier passen. Vor längerer Abwesenheit sollte geprüft werden, ob das Tier das Gerät verschieben, öffnen oder blockieren kann."
+  },
+  {
+    title: "Lautstärke",
+    text: supportsWetFood
+      ? "Der drehende Deckel ist nur kurz aktiv, kann sensible Tiere anfangs aber irritieren. Eine schrittweise Gewöhnung am vertrauten Futterplatz ist sinnvoll."
+      : `Der Motor ist bei jeder Ausgabe kurz hörbar${hasCamera ? "; zusätzliche Kamera- oder Audiofunktionen sollten behutsam eingeführt werden" : ""}. Empfindliche Tiere sollten zunächst bei einzelnen Ausgaben beobachtet werden.`
+  }
+];
+
+const internalLinks = [
+  { href: "/smarte-futterautomaten", label: "Smarte Futterautomaten im Vergleich" },
+  { href: "/futterautomat-katze", label: "Futterautomaten für Katzen" },
+  { href: "/futterautomat-hund", label: "Futterautomaten für Hunde" },
+  { href: "/futterautomat-mit-app", label: "Futterautomaten mit App" },
+  { href: "/futterautomat-mit-kamera", label: "Futterautomaten mit Kamera" }
+];
+---
+
+<ProjectLayout
+  title={`${product.name} Testbericht`}
+  seoTitle={`${product.name} im Test und Vergleich`}
+  description={`${product.name} im Testbericht: Funktionen, Portionierung, Reinigung, Vorteile, Nachteile und technische Daten verständlich eingeordnet.`}
+  seoDescription={`${product.name} im Testbericht. Einordnung von App, Portionierung, Reinigung, Zuverlässigkeit und Eignung für den Alltag.`}
+  canonical={product.productUrl}
+  ogImage={product.image}
+  author={{ name: "PfotenTechnik Redaktion", role: "Redaktion" }}
+  publishedAt="2026-07-09"
+  updatedAt="2026-07-09"
+  categoryLabel="Futterautomaten"
+  schemaType="article"
+>
+  <Breadcrumbs
+    categoryLabel="Futterautomaten"
+    categoryHref="/smarte-futterautomaten"
+    title={product.name}
+  />
+
+  <main class="product-detail pt-product-detail">
+    <ProductReview productKey={productKey} />
+
+    <section class="pt-review-method" aria-labelledby="pt-review-method-title">
+      <span>Redaktionelle Einordnung</span>
+      <h2 id="pt-review-method-title">So ist dieser Testbericht entstanden</h2>
+      <p>
+        Die Bewertung basiert auf technischen Daten, aktuellen Herstellerinformationen und einheitlichen Vergleichskriterien. Sie ist eine redaktionelle Alltagseinordnung und behauptet keinen mehrmonatigen Praxistest.
+      </p>
+    </section>
+
+    <section class="pt-everyday-review" aria-labelledby="pt-everyday-review-title">
+      <header>
+        <span>Alltagstest</span>
+        <h2 id="pt-everyday-review-title">Die wichtigsten Kriterien im Alltag</h2>
+        <p>Diese Punkte zeigen, worauf es bei Einrichtung, Fütterung und laufender Kontrolle ankommt.</p>
+      </header>
+
+      <div class="pt-everyday-review-grid">
+        {everydayCriteria.map((criterion) => (
+          <article>
+            <h3>{criterion.title}</h3>
+            <p>{criterion.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <aside class="pt-product-health" aria-labelledby="pt-product-health-title">
+      <span>Gesundheitshinweis</span>
+      <div>
+        <h2 id="pt-product-health-title">Routinen unterstützen, Veränderungen beobachten</h2>
+        <p>
+          Ein Futterautomat unterstützt Routinen, ersetzt aber keine tierärztliche Einschätzung. Auffällige Veränderungen bei Futteraufnahme, Verhalten oder Wohlbefinden müssen persönlich geprüft und gegebenenfalls fachlich abgeklärt werden.
+        </p>
+      </div>
+    </aside>
+
+    <section class="pt-product-links" aria-labelledby="pt-product-links-title">
+      <span>Weiterlesen</span>
+      <h2 id="pt-product-links-title">Passende Vergleiche und Ratgeber</h2>
+      <div>
+        {internalLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+      </div>
+    </section>
+  </main>
+</ProjectLayout>

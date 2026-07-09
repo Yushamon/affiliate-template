@@ -83,7 +83,7 @@ export const products = {
     brand: "Petlibro",
     manufacturer: "petlibro",
     manufacturerLabel: "Petlibro",
-    productUrl: "/futterautomat-mit-app",
+    productUrl: "/produkt/petlibro-granary-wifi-feeder",
     badge: "Beste Gesamtwahl",
     recommendation:
       "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung.",
@@ -136,7 +136,7 @@ export const products = {
     brand: "Petlibro",
     manufacturer: "petlibro",
     manufacturerLabel: "Petlibro",
-    productUrl: "/futterautomat-mit-kamera",
+    productUrl: "/produkt/petlibro-granary-camera-feeder",
     badge: "Beste Wahl mit Kamera",
     recommendation:
       "Futterautomat und Haustierkamera in einem, mit 1080p-Video, Nachtsicht und Zwei-Wege-Audio.",
@@ -189,7 +189,7 @@ export const products = {
     brand: "PETKIT",
     manufacturer: "petkit",
     manufacturerLabel: "PETKIT",
-    productUrl: "/futterautomat-katze",
+    productUrl: "/produkt/petkit-fresh-element-solo",
     badge: "Kompakt-Tipp",
     recommendation:
       "Schlanker 3-Liter-Automat für Katzen und kleine Hunde mit PETKIT-App und Edelstahl-Napf.",
@@ -242,7 +242,7 @@ export const products = {
     brand: "PETKIT",
     manufacturer: "petkit",
     manufacturerLabel: "PETKIT",
-    productUrl: "/futterautomat-mit-kamera",
+    productUrl: "/produkt/petkit-yumshare-dual-hopper",
     badge: "Premium für mehrere Tiere",
     recommendation:
       "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte.",
@@ -295,7 +295,7 @@ export const products = {
     brand: "Cat Mate",
     manufacturer: "closer-pets",
     manufacturerLabel: "Closer Pets / Cat Mate",
-    productUrl: "/futterautomat-nassfutter",
+    productUrl: "/produkt/cat-mate-c500",
     badge: "Beste Wahl für Nassfutter",
     recommendation:
       "Fünf zeitgesteuerte Fächer und Kühlakkus machen den C500 zur pragmatischen Nassfutter-Lösung.",
@@ -348,7 +348,7 @@ export const products = {
     brand: "Xiaomi",
     manufacturer: "xiaomi",
     manufacturerLabel: "Xiaomi",
-    productUrl: "/futterautomat-mit-app",
+    productUrl: "/produkt/xiaomi-smart-pet-food-feeder-2",
     badge: "Smart-Home-Tipp",
     recommendation:
       "Moderner 5-Liter-Automat mit Xiaomi-Home-App, Wiegenapf und automatischer Entblockung.",
