@@ -33,77 +33,83 @@ export const projectConfig = {
       trackingId: "yusha0f-21"
     }
   },
-  defaultOgImage: "/images/project/pfotentechnik/hero.webp",
+  defaultOgImage: "/images/project/pfotentechnik/feeder-hero.webp",
   categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen",
   headerLinks: [
-    { label: "Hunde", href: "/#hunde" },
-    { label: "Katzen", href: "/#katzen" },
+    { label: "Futterautomaten", href: "/smarte-futterautomaten" },
+    { label: "Für Katzen", href: "/futterautomat-katze" },
+    { label: "Für Hunde", href: "/futterautomat-hund" },
     { label: "Vergleiche", href: "/#vergleiche" },
     { label: "Ratgeber", href: "/#ratgeber" },
     { label: "Über uns", href: "/#ueber-uns" }
   ],
   home: {
     seo: {
-      title: "Smarte Technik für Hunde und Katzen | PfotenTechnik",
+      title: "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
       description:
-        "Unabhängige Kaufberatung, verständliche Vergleiche und praxisnahe Empfehlungen für GPS-Tracker, Futterautomaten, Trinkbrunnen und Haustierkameras.",
+        "Unabhängige Kaufberatung, verständliche Vergleiche und praxisnahe Empfehlungen für smarte Haustier-Technik – aktuell mit Fokus auf Futterautomaten.",
       publishedAt: "2026-07-08",
-      updatedAt: "2026-07-08"
+      updatedAt: "2026-07-09"
     },
     hero: {
-      eyebrow: "Unabhängige Pet-Tech Kaufberatung",
-      title: "Smarte Technik für Hunde und Katzen",
+      eyebrow: "Unabhängige Pet-Tech-Kaufberatung",
+      title: "Smarte Technik, die im Tieralltag wirklich hilft",
       text:
-        "Kaufberatung, Vergleiche und unabhängige Empfehlungen für moderne Haustier-Gadgets.",
+        "Wir vergleichen Funktionen, Bedienung und Alltagstauglichkeit moderner Haustier-Gadgets – transparent und ohne künstlichen Kaufdruck.",
       primaryAction: {
-        label: "Produkte entdecken",
-        href: "#produkte"
+        label: "Futterautomaten vergleichen",
+        href: "/smarte-futterautomaten"
       },
       secondaryAction: {
         label: "Ratgeber lesen",
         href: "#ratgeber"
       },
       imageAlt:
-        "Hund und Katze in einem hellen Zuhause mit smarten Haustier-Geräten",
+        "Katze und Hund in einem hellen Zuhause neben einem modernen Futterautomaten",
+      imageKey: "feederHero",
       signals: [
-        "Unabhängig eingeordnet",
-        "Praxisnah verglichen",
-        "Verständlich erklärt"
+        "6 Modelle eingeordnet",
+        "Nach Alltagsszenarien bewertet",
+        "Ohne statische Preise"
       ]
     },
     categories: {
       eyebrow: "Produktwelten",
       title: "Technik für einen entspannteren Alltag",
       text:
-        "Vier Bereiche, in denen gute Technik Orientierung, Komfort und Sicherheit schaffen kann.",
+        "Nur Produktbereiche mit bereits geprüften Modellen werden angezeigt.",
       items: [
         {
           code: "01",
           title: "GPS Tracker",
           text: "Ortung, Akkulaufzeit und Abdeckung verständlich vergleichen.",
           anchor: "hunde",
-          href: "/#produkte"
+          href: "/#produkte",
+          productCategory: "gps-tracker"
         },
         {
           code: "02",
           title: "Futterautomaten",
           text: "Fütterungszeiten zuverlässig planen und Portionen kontrollieren.",
           anchor: "katzen",
-          href: "/smarte-futterautomaten"
+          href: "/smarte-futterautomaten",
+          productCategory: "futterautomat"
         },
         {
           code: "03",
           title: "Trinkbrunnen",
           text: "Material, Reinigung und Filterkosten realistisch einordnen.",
           anchor: "trinkbrunnen",
-          href: "/#produkte"
+          href: "/#produkte",
+          productCategory: "trinkbrunnen"
         },
         {
           code: "04",
           title: "Haustierkameras",
           text: "Bildqualität, Datenschutz und Benachrichtigungen bewerten.",
           anchor: "kameras",
-          href: "/#produkte"
+          href: "/futterautomat-mit-kamera",
+          productUseCase: "kamera"
         }
       ]
     },
@@ -142,37 +148,7 @@ export const projectConfig = {
       eyebrow: "Auswahl",
       title: "Beliebte Produkte",
       text:
-        "Unsere Produktbereiche sind bereits für strukturierte Vergleiche vorbereitet – mit Fokus auf Nutzen, Bedienung und Alltagstauglichkeit.",
-      cardAction: "Auswahl ansehen",
-      items: [
-        {
-          badge: "Unterwegs",
-          title: "GPS-Tracker für Hunde",
-          text: "Für mehr Orientierung bei Spaziergängen, Reisen und Ausflügen.",
-          imageKey: "category",
-          imageAlt: "Hund mit kompaktem GPS-Tracker am Halsband",
-          href: "#hunde",
-          criteria: ["Ortungsqualität", "Akkulaufzeit", "Abo-Kosten"]
-        },
-        {
-          badge: "Versorgung",
-          title: "Smarte Futterautomaten",
-          text: "Sechs aktuelle Systeme für planbare Portionen, App-Steuerung und unterschiedliche Futterarten.",
-          imageKey: "product",
-          imageAlt: "Katze an einem automatischen Futterspender und Trinkbrunnen",
-          href: "/smarte-futterautomaten",
-          criteria: ["App & Zeitpläne", "Portionierung", "Reinigung"]
-        },
-        {
-          badge: "Zuhause",
-          title: "Haustierkameras",
-          text: "Für einen ruhigen Blick auf das Zuhause – mit Datenschutz im Fokus.",
-          imageKey: "comparison",
-          imageAlt: "Haustierkamera mit Hund und Katze in einem modernen Wohnzimmer",
-          href: "#kameras",
-          criteria: ["Bildqualität", "App", "Datenschutz"]
-        }
-      ]
+        "Die aktuell stärksten Empfehlungen aus unserem Katalog – kompakt mit Bewertung, Kriterien und Testbericht."
     }
   },
   footer: {
@@ -182,8 +158,9 @@ export const projectConfig = {
       {
         title: "Entdecken",
         links: [
-          { label: "Hunde", href: "/#hunde" },
-          { label: "Katzen", href: "/#katzen" },
+          { label: "Futterautomaten", href: "/smarte-futterautomaten" },
+          { label: "Für Katzen", href: "/futterautomat-katze" },
+          { label: "Für Hunde", href: "/futterautomat-hund" },
           { label: "Vergleiche", href: "/#vergleiche" },
           { label: "Ratgeber", href: "/#ratgeber" }
         ]
@@ -191,10 +168,10 @@ export const projectConfig = {
       {
         title: "Produktwelten",
         links: [
-          { label: "GPS Tracker", href: "/#hunde" },
-          { label: "Futterautomaten", href: "/smarte-futterautomaten" },
-          { label: "Trinkbrunnen", href: "/#trinkbrunnen" },
-          { label: "Haustierkameras", href: "/#kameras" }
+          { label: "Smarte Futterautomaten", href: "/smarte-futterautomaten" },
+          { label: "Futterautomaten mit App", href: "/futterautomat-mit-app" },
+          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera" },
+          { label: "Futterautomaten für Nassfutter", href: "/futterautomat-nassfutter" }
         ]
       },
       {

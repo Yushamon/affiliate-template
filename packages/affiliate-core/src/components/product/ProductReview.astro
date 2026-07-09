@@ -14,6 +14,10 @@ interface Props {
 const { productKey } = Astro.props;
 
 const product = products[productKey];
+const productImages = (product as {
+  images?: { hero?: string };
+}).images;
+const productHeroImage = productImages?.hero ?? product?.image;
 const score = product ? getWeightedProductScore(productKey) : 0;
 const scoreLabel = getScoreLabel(score);
 const primaryLink = product
@@ -135,7 +139,7 @@ const stars = (rating: number) => {
       </div>
 
       <div class="product-review-hero-image">
-        <img src={product.image} alt={product.name} loading="eager" />
+        <img src={productHeroImage} alt={product.name} loading="eager" />
       </div>
     </section>
 

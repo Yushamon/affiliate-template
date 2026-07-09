@@ -38,6 +38,9 @@ const selectedProducts = productKeys
   .filter(({ product }) => product);
 
 const leadProduct = selectedProducts[0];
+const getComparisonImage = (product: { image: string }) =>
+  (product as { images?: { comparison?: string } }).images?.comparison ??
+  product.image;
 
 ---
 
@@ -55,7 +58,7 @@ const leadProduct = selectedProducts[0];
           <div class="comparison-decision-lead">
             <span>Unsere Empfehlung</span>
             <img
-              src={leadProduct.product.image}
+              src={getComparisonImage(leadProduct.product)}
               alt={leadProduct.product.name}
               loading="lazy"
               decoding="async"
@@ -106,7 +109,7 @@ const leadProduct = selectedProducts[0];
                 <td><strong>#{rank}</strong></td>
                 <td>
                   <a class="ranking-table-product" href={product.productUrl}>
-                    <img src={product.image} alt="" loading="lazy" decoding="async" />
+                    <img src={getComparisonImage(product)} alt="" loading="lazy" decoding="async" />
                     <span>{product.name}</span>
                   </a>
                 </td>

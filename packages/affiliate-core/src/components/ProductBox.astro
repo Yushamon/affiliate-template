@@ -17,6 +17,10 @@ interface Props {
 const { productKey, currentProductKey } = Astro.props;
 
 const product = products[productKey];
+const productImages = (product as {
+  images?: { hero?: string };
+}).images;
+const productHeroImage = productImages?.hero ?? product.image;
 
 const isCurrentProduct = currentProductKey === productKey;
 
@@ -60,7 +64,7 @@ const specs =
         </div>
 
         <img
-          src={product.image}
+          src={productHeroImage}
           alt={product.name}
           loading="lazy"
           decoding="async"

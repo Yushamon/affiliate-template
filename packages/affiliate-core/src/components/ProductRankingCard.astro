@@ -14,6 +14,10 @@ interface Props {
 
 const { productKey, rank, score, positionLabel = "Platz" } = Astro.props;
 const product = products[productKey];
+const productImages = (product as {
+  images?: { thumbnail?: string };
+}).images;
+const cardImage = productImages?.thumbnail ?? product.image;
 
 const primaryLink = getPrimaryAffiliateLink(
   product,
@@ -36,7 +40,7 @@ const specs = product.specs.slice(0, 3);
     <span class="product-ranking-badge">{product.badge}</span>
 
     <img
-      src={product.image}
+      src={cardImage}
       alt={product.name}
       loading={rank === 1 ? "eager" : "lazy"}
       decoding="async"

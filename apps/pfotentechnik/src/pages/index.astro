@@ -1,14 +1,27 @@
 ---
 import { getCollection } from "astro:content";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
+import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
 import { projectConfig } from "../project.config";
+import { products, type ProductKey } from "../data/products";
+import { getWeightedProductScore } from "../data/productScoring";
 import {
   getProjectImage,
-  projectImages,
   type ProjectImageKey
 } from "../data/projectImages";
 
 const { home } = projectConfig;
+const catalog = Object.entries(products) as Array<[ProductKey, (typeof products)[ProductKey]]>;
+const availableCategories = home.categories.items.filter((category) =>
+  "productCategory" in category
+    ? catalog.some(([, product]) => product.category === category.productCategory)
+    : "productUseCase" in category
+      ? catalog.some(([, product]) => product.useCases.includes(category.productUseCase))
+      : false
+);
+const featuredProducts = catalog
+  .sort(([, a], [, b]) => a.priority - b.priority)
+  .slice(0, 3);
 const pages = (await getCollection("pages"))
   .sort((a, b) =>
     (b.data.hubPriority ?? 0) - (a.data.hubPriority ?? 0) ||
@@ -21,7 +34,7 @@ const pages = (await getCollection("pages"))
   title={home.seo.title}
   description={home.seo.description}
   canonical="/"
-  ogImage={projectImages.pfotentechnik.hero}
+  ogImage={getProjectImage("pfotentechnik", home.hero.imageKey as ProjectImageKey)}
   publishedAt={home.seo.publishedAt}
   updatedAt={home.seo.updatedAt}
   schemaType="article"
@@ -50,7 +63,7 @@ const pages = (await getCollection("pages"))
 
       <figure class="pt-hero-media">
         <img
-          src={projectImages.pfotentechnik.hero}
+          src={getProjectImage("pfotentechnik", home.hero.imageKey as ProjectImageKey)}
           alt={home.hero.imageAlt}
           width="1728"
           height="960"
@@ -70,7 +83,7 @@ const pages = (await getCollection("pages"))
       </header>
 
       <div class="pt-category-grid">
-        {home.categories.items.map((category) => (
+        {availableCategories.map((category) => (
           <a class="pt-category-card" id={category.anchor} href={category.href}>
             <span class="pt-card-index">{category.code}</span>
             <h3>{category.title}</h3>
@@ -151,30 +164,13 @@ const pages = (await getCollection("pages"))
         <p>{home.products.text}</p>
       </header>
 
-      <div class="pt-product-grid">
-        {home.products.items.map((product) => (
-          <article class="pt-product-card">
-            <div class="pt-product-media">
-              <img
-                src={getProjectImage("pfotentechnik", product.imageKey as ProjectImageKey)}
-                alt={product.imageAlt}
-                loading="lazy"
-                decoding="async"
-              />
-              <span>{product.badge}</span>
-            </div>
-            <div class="pt-product-content">
-              <h3>{product.title}</h3>
-              <p>{product.text}</p>
-              <ul>
-                {product.criteria.map((criterion) => <li>{criterion}</li>)}
-              </ul>
-              <a href={product.href}>
-                {home.products.cardAction}
-                <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </article>
+      <div class="product-ranking-list pt-home-ranking-list">
+        {featuredProducts.map(([productKey], index) => (
+          <ProductRankingCard
+            productKey={productKey}
+            rank={index + 1}
+            score={getWeightedProductScore(productKey)}
+          />
         ))}
       </div>
     </section>

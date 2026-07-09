@@ -34,6 +34,7 @@ interface Props {
   categoryLabel?: string;
   schemaType?: "website" | "article";
   includeBreadcrumbSchema?: boolean;
+  webAnalyticsToken?: string;
 }
 
 const {
@@ -49,7 +50,8 @@ const {
   updatedAt,
   categoryLabel,
   schemaType,
-  includeBreadcrumbSchema = false
+  includeBreadcrumbSchema = false,
+  webAnalyticsToken
 } = Astro.props;
 
 const pageTitle = seoTitle ?? title;
@@ -297,5 +299,15 @@ const faqSchema = createFaqSchema(faq);
     </main>
 
     <Footer />
+
+    {
+      webAnalyticsToken && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: webAnalyticsToken })}
+        />
+      )
+    }
   </body>
 </html>

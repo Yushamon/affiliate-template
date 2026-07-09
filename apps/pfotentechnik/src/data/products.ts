@@ -1,7 +1,13 @@
 import type { ProductAffiliateData } from "@affiliate-core/affiliate/types";
+import { projectImages } from "./projectImages";
 
 export type ProductSpec = { label: string; value: string };
 export type ProductRatings = Record<string, number>;
+export type ProductImages = {
+  hero: string;
+  thumbnail: string;
+  comparison: string;
+};
 export type ProductRanking = {
   overall: number;
   beginner: number;
@@ -18,6 +24,7 @@ export type PetTechProduct = ProductAffiliateData & {
   category: "futterautomat";
   productUrl: string;
   image: string;
+  images: ProductImages;
   badge: string;
   recommendation: string;
   rating: number;
@@ -44,38 +51,52 @@ export type PetTechProduct = ProductAffiliateData & {
   };
 };
 
-const productImage = "/images/project/pfotentechnik/product.webp";
+const productImage = projectImages.pfotentechnik.product;
+
+type FeederInput = Omit<PetTechProduct,
+  | "category"
+  | "image"
+  | "images"
+  | "recommendationTags"
+  | "ratingCategories"
+  | "expandable"
+  | "bestFor"
+  | "notFor"
+  | "ourOpinion"
+  | "review"
+> & {
+  images?: Partial<ProductImages>;
+};
 
 const createFeeder = (
-  product: Omit<PetTechProduct,
-    | "category"
-    | "image"
-    | "recommendationTags"
-    | "ratingCategories"
-    | "expandable"
-    | "bestFor"
-    | "notFor"
-    | "ourOpinion"
-    | "review"
-  >
-): PetTechProduct => ({
-  ...product,
-  category: "futterautomat",
-  image: productImage,
-  expandable: "Nicht vorgesehen",
-  recommendationTags: Array.from(new Set([
-    ...product.useCases,
-    "smarte-futterautomaten"
-  ])),
-  ratingCategories: product.ratings,
-  bestFor: product.useCases,
-  notFor: product.cons,
-  ourOpinion: product.recommendation,
-  review: {
-    summary: product.recommendation,
-    verdict: product.verdict
-  }
-});
+  product: FeederInput
+): PetTechProduct => {
+  const images: ProductImages = {
+    hero: product.images?.hero ?? productImage,
+    thumbnail: product.images?.thumbnail ?? productImage,
+    comparison: product.images?.comparison ?? productImage
+  };
+
+  return {
+    ...product,
+    category: "futterautomat",
+    images,
+    image: images.thumbnail,
+    expandable: "Nicht vorgesehen",
+    recommendationTags: Array.from(new Set([
+      ...product.useCases,
+      "smarte-futterautomaten"
+    ])),
+    ratingCategories: product.ratings,
+    bestFor: product.useCases,
+    notFor: product.cons,
+    ourOpinion: product.recommendation,
+    review: {
+      summary: product.recommendation,
+      verdict: product.verdict
+    }
+  };
+};
 
 export const products = {
   "petlibro-granary-wifi": createFeeder({
