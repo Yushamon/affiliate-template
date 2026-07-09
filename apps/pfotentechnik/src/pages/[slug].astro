@@ -7,6 +7,10 @@ import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import ComparisonExperience from "@affiliate-core/components/ComparisonExperience.astro";
 import HealthBridge from "../components/HealthBridge.astro";
 import MoneyPageCta from "../components/MoneyPageCta.astro";
@@ -35,17 +39,39 @@ const publishedAt =
 const updatedAt =
   page.data.updatedAt ?? page.data.publishedAt ?? siteMeta.articleDefaults.updatedAt;
 const projectKey = page.data.project ?? DEFAULT_PROJECT;
-const heroImage = page.data.heroImage ?? getProjectImage(
+const publicDir = fileURLToPath(new URL("../../public", import.meta.url));
+
+const localPublicImageExists = (imagePath?: string) => {
+  if (!imagePath || imagePath.startsWith("http")) {
+    return Boolean(imagePath);
+  }
+
+  return existsSync(join(publicDir, imagePath.replace(/^\//, "")));
+};
+
+const pageHeroImage = `/images/pages/${page.data.slug}/hero.webp`;
+const configuredHeroImage = page.data.heroImage;
+const fallbackHeroImage = getProjectImage(
   projectKey,
   page.data.heroImageKey ?? "hero"
 );
+
+const heroImage = localPublicImageExists(configuredHeroImage)
+  ? configuredHeroImage
+  : localPublicImageExists(pageHeroImage)
+    ? pageHeroImage
+    : fallbackHeroImage;
 const ogImage = page.data.ogImage ?? heroImage;
 const seoOverride = getSeoOverride(page.data.slug);
-const decisionProducts = page.data.decisionKey
+const decisionRecommendations = page.data.decisionKey
   ? getDecisionProductRecommendations(page.data.decisionKey)
-      .map(({ key }) => key)
-      .filter((key): key is ProductKey => key in products)
   : [];
+
+const decisionProducts = decisionRecommendations
+  .map(({ key }) => key)
+  .filter((key): key is ProductKey => key in products);
+
+const topDecisionRecommendation = decisionRecommendations[0];
 
 const comparisonProducts = decisionProducts.length > 0
   ? decisionProducts
@@ -133,6 +159,28 @@ const relatedPages = allPages
       project={projectKey}
       heroImage={heroImage}
     />
+    {
+      topDecisionRecommendation && (
+        <section class="decision-top-recommendation">
+          <div class="ranking-section-header">
+            <p class="ranking-eyebrow">Top-Empfehlung</p>
+            <h2>Unsere beste Empfehlung für diese Entscheidung</h2>
+            <p>
+              Diese Empfehlung wird aus den hinterlegten Produkteigenschaften,
+              Use Cases und Bewertungskriterien abgeleitet.
+            </p>
+          </div>
+
+          <div class="product-ranking-list">
+            <ProductRankingCard
+              productKey={topDecisionRecommendation.key as ProductKey}
+              rank={1}
+              score={topDecisionRecommendation.score}
+            />
+          </div>
+        </section>
+      )
+    }
     {
       comparisonProducts.length > 0 && page.data.comparisonRecommendation && (
         <ComparisonExperience
