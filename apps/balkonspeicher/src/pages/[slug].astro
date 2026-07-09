@@ -75,6 +75,26 @@ const heroImage =
 const ogImage =
   page.data.ogImage ?? heroImage;
 
+const getReadingTimeMinutes = (content: string) => {
+  const plainText = content
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`[^`]*`/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[{}[\]()*_#>\-|]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!plainText) {
+    return 1;
+  }
+
+  const wordCount = plainText.split(" ").filter(Boolean).length;
+
+  return Math.max(1, Math.ceil(wordCount / 200));
+};
+
+const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+
 const relatedPages = allPages
   .filter((candidate) => {
     if (candidate.data.slug === page.data.slug) {
@@ -175,6 +195,7 @@ const comparisonProducts = (page.data.comparisonProducts ?? [])
       author={author}
       publishedAt={publishedAt}
       updatedAt={updatedAt}
+      readingTimeMinutes={readingTimeMinutes}
     />
   </section>
 

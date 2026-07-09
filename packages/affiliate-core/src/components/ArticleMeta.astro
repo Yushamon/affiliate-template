@@ -59,15 +59,8 @@ const visibleAuthor =
     {
       publishedAt && (
         <span>
-
-          Veröffentlicht:
-
-          <strong>
-
-            {formatDate(publishedAt)}
-
-          </strong>
-
+          <strong>Veröffentlicht:</strong>
+          {" "}{formatDate(publishedAt)}
         </span>
       )
     }
@@ -75,15 +68,8 @@ const visibleAuthor =
     {
       updatedAt && (
         <span>
-
-          Aktualisiert:
-
-          <strong>
-
-            {formatDate(updatedAt)}
-
-          </strong>
-
+          <strong>Zuletzt aktualisiert:</strong>
+          {" "}{formatDate(updatedAt)}
         </span>
       )
     }
@@ -91,15 +77,8 @@ const visibleAuthor =
     {
       readingTimeMinutes && (
         <span>
-
-          Lesezeit:
-
-          <strong>
-
-            {readingTimeMinutes} Min.
-
-          </strong>
-
+          <strong>Lesezeit:</strong>
+          {" "}{readingTimeMinutes} Min.
         </span>
       )
     }
