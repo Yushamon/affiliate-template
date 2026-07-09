@@ -25,12 +25,15 @@ premiumBlocks:
     cards:
       - label: "Ausgewogen"
         title: "Petlibro Granary WiFi"
+        productKey: "petlibro-granary-wifi"
         text: "Großer Behälter, App-Steuerung und Batterie-Backup."
       - label: "Mengenübersicht"
         title: "Xiaomi Smart Pet Food Feeder 2"
+        productKey: "xiaomi-smart-pet-food-feeder-2"
         text: "Großer Vorrat und Wiegefunktion am Napf."
       - label: "Kontrolle"
         title: "Petlibro Granary Camera"
+        productKey: "petlibro-granary-camera"
         text: "Livebild und Audio für den Futterplatz."
 comparisonProducts: ["petlibro-granary-wifi", "xiaomi-smart-pet-food-feeder-2", "petlibro-granary-camera"]
 comparisonRecommendation:
