@@ -75,7 +75,9 @@
 
 .footer-main-v2 {
   display: grid;
-  grid-template-columns: minmax(280px, 1.45fr) repeat(3, minmax(150px, 0.8fr));
+  grid-template-columns:
+    minmax(240px, 1.35fr)
+    repeat(var(--footer-column-count, 3), minmax(130px, 0.75fr));
   gap: 54px;
   align-items: start;
 }

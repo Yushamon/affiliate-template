@@ -32,7 +32,7 @@ interface Props {
   publishedAt?: string;
   updatedAt?: string;
   categoryLabel?: string;
-  schemaType?: "website" | "article";
+  schemaType?: "website" | "article" | "webpage";
   includeBreadcrumbSchema?: boolean;
   webAnalyticsToken?: string;
 }
@@ -50,7 +50,7 @@ const {
   updatedAt,
   categoryLabel,
   schemaType,
-  includeBreadcrumbSchema = false,
+  includeBreadcrumbSchema,
   webAnalyticsToken
 } = Astro.props;
 
@@ -73,7 +73,8 @@ const imageUrl = ogImage
 const isHome = normalizedCanonical === "/";
 const resolvedSchemaType = schemaType ?? (isHome ? "website" : "article");
 const shouldRenderArticleSchema = resolvedSchemaType === "article";
-const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema || !isHome;
+const shouldRenderWebPageSchema = resolvedSchemaType === "webpage";
+const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema ?? !isHome;
 
 const visibleAuthor = author ?? siteMeta.defaultAuthor;
 
@@ -98,6 +99,20 @@ const websiteSchema = {
       "@type": "ImageObject",
       url: siteMeta.publisher.logo
     }
+  }
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: pageTitle,
+  description: pageDescription,
+  url: canonicalUrl,
+  inLanguage: "de-DE",
+  isPartOf: {
+    "@type": "WebSite",
+    name: site.siteName,
+    url: site.domain
   }
 };
 
@@ -268,6 +283,15 @@ const faqSchema = createFaqSchema(faq);
         <script
           type="application/ld+json"
           set:html={JSON.stringify(articleSchema)}
+        />
+      )
+    }
+
+    {
+      shouldRenderWebPageSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(webPageSchema)}
         />
       )
     }

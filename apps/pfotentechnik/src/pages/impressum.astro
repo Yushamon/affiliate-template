@@ -1,17 +1,60 @@
 ---
-import ProjectLayout from "../layouts/ProjectLayout.astro";
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
 ---
 
-<ProjectLayout
-  title="Impressum | PfotenTechnik"
-  description="Impressum von PfotenTechnik."
+<LegalLayout
+  title="Impressum"
+  description="Anbieterkennzeichnung und rechtliche Informationen zu PfotenTechnik."
   canonical="/impressum"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
 >
-  <article class="article">
-    <h1>Impressum</h1>
-    <p>
-      Die vollständigen Anbieterangaben werden vor dem öffentlichen Start
-      dieser Website ergänzt.
-    </p>
-  </article>
-</ProjectLayout>
+  <h2>Angaben gemäß § 5 DDG</h2>
+
+  <p class="legal-contact-data">
+    Patrick Buckowitz<br />
+    Am Danewend 37a<br />
+    13125 Berlin<br />
+    Deutschland
+  </p>
+
+  <h2>Kontakt</h2>
+
+  <p>
+    E-Mail: <span set:html={"info&#64;pfotentechnik.de"} />
+  </p>
+
+  <h2>Verantwortlich für journalistisch-redaktionelle Inhalte</h2>
+
+  <p>
+    Verantwortlich gemäß § 18 Abs. 2 MStV:<br />
+    Patrick Buckowitz<br />
+    Am Danewend 37a<br />
+    13125 Berlin
+  </p>
+
+  <h2>Redaktioneller Hinweis</h2>
+
+  <p>
+    PfotenTechnik veröffentlicht redaktionelle Informationen und Kaufberatung
+    zu smarter Haustiertechnik, Futterautomaten und Tierzubehör. Die Inhalte
+    ersetzen keine tierärztliche Diagnose oder Behandlung.
+  </p>
+
+  <h2>Haftung für Inhalte und externe Links</h2>
+
+  <p>
+    Die Inhalte werden sorgfältig recherchiert und regelmäßig überprüft. Eine
+    Gewähr für Richtigkeit, Vollständigkeit und dauerhafte Aktualität kann
+    dennoch nicht übernommen werden. Für Inhalte externer Websites sind deren
+    jeweilige Anbieter verantwortlich.
+  </p>
+
+  <h2>Verbraucherstreitbeilegung</h2>
+
+  <p>
+    Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor
+    einer Verbraucherschlichtungsstelle teilzunehmen.
+  </p>
+</LegalLayout>

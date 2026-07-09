@@ -1,0 +1,42 @@
+---
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
+---
+
+<LegalLayout
+  title="Kontakt"
+  description="Kontakt zur PfotenTechnik-Redaktion für Hinweise, Korrekturen und allgemeine Anfragen."
+  canonical="/kontakt"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
+>
+  <h2>So erreichst du uns</h2>
+
+  <p>
+    Für redaktionelle Hinweise, sachliche Korrekturen, Fragen zu unserer
+    Methodik oder allgemeine Anfragen erreichst du uns per E-Mail:
+  </p>
+
+  <p>
+    <span set:html={"info&#64;pfotentechnik.de"} />
+  </p>
+
+  <h2>Wobei wir helfen können</h2>
+
+  <ul>
+    <li>Hinweise zu fehlerhaften oder veralteten Produktangaben,</li>
+    <li>Fragen zur redaktionellen Einordnung und Bewertungsmethodik,</li>
+    <li>Hinweise zu technischen Problemen auf der Website und</li>
+    <li>Anfragen von Herstellern zu sachlichen Produktinformationen.</li>
+  </ul>
+
+  <h2>Keine tiermedizinische Beratung</h2>
+
+  <p>
+    Wir bieten keine individuelle tiermedizinische Beratung und keine
+    Notfallberatung an. Bei gesundheitlichen Beschwerden, einer auffälligen
+    Futteraufnahme oder einem tiermedizinischen Notfall wende dich bitte direkt
+    an eine Tierarztpraxis oder Tierklinik. Wir können außerdem keinen Support
+    für Produkte oder Apps der jeweiligen Hersteller übernehmen.
+  </p>
+</LegalLayout>

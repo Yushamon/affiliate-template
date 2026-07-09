@@ -1,60 +1,61 @@
 ---
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
 ---
 
-<AffiliateLayout
+<LegalLayout
   title="Impressum"
-  description="Impressum von Balkonspeicher Ratgeber."
+  description="Anbieterkennzeichnung und rechtliche Informationen zu Balkonspeicher Ratgeber."
   canonical="/impressum"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
 >
-  <article class="article legal-page">
-    <h1>Impressum</h1>
+  <h2>Angaben gemäß § 5 DDG</h2>
 
-    <h2>Angaben gemäß § 5 DDG</h2>
+  <p class="legal-contact-data">
+    Patrick Buckowitz<br />
+    Am Danewend 37a<br />
+    13125 Berlin<br />
+    Deutschland
+  </p>
 
-    <p>
-      Patrick Buckowitz<br />
-      Am Danewend 37a<br />
-      13125 Berlin<br />
-      Deutschland
-    </p>
+  <h2>Kontakt</h2>
 
-    <h2>Kontakt</h2>
+  <p>
+    E-Mail: <span set:html={"info&#64;balkonspeicher-ratgeber.de"} />
+  </p>
 
-    <p>
-      E-Mail: info@balkonspeicher-ratgeber.de
-    </p>
+  <h2>Verantwortlich für journalistisch-redaktionelle Inhalte</h2>
 
-    <h2>Verantwortlich für den Inhalt</h2>
+  <p>
+    Verantwortlich gemäß § 18 Abs. 2 MStV:<br />
+    Patrick Buckowitz<br />
+    Am Danewend 37a<br />
+    13125 Berlin
+  </p>
 
-    <p>
-      Patrick Buckowitz<br />
-      Am Danewend 37a<br />
-      13125 Berlin
-    </p>
+  <h2>Redaktioneller Hinweis</h2>
 
-    <h2>Haftung für Inhalte</h2>
+  <p>
+    Balkonspeicher Ratgeber veröffentlicht allgemeine Informationen und
+    Kaufberatung zu Balkonspeichern, Balkonkraftwerken und Stromspeichern. Die
+    Inhalte ersetzen keine individuelle Rechts-, Steuer-, Energie- oder
+    Elektrofachberatung.
+  </p>
 
-    <p>
-      Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.
-      Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-      können wir jedoch keine Gewähr übernehmen.
-    </p>
+  <h2>Haftung für Inhalte und externe Links</h2>
 
-    <h2>Haftung für Links</h2>
+  <p>
+    Die Inhalte werden sorgfältig recherchiert und regelmäßig überprüft. Eine
+    Gewähr für Richtigkeit, Vollständigkeit und dauerhafte Aktualität kann
+    dennoch nicht übernommen werden. Für Inhalte externer Websites sind deren
+    jeweilige Anbieter verantwortlich.
+  </p>
 
-    <p>
-      Diese Website enthält Links zu externen Websites Dritter, auf deren
-      Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen
-      wir keine Gewähr.
-    </p>
+  <h2>Verbraucherstreitbeilegung</h2>
 
-    <h2>Affiliate-Hinweis</h2>
-
-    <p>
-      Einige Links auf dieser Website können Affiliate-Links sein. Wenn du über
-      einen solchen Link kaufst, erhalten wir möglicherweise eine Provision.
-      Für dich entstehen dadurch keine zusätzlichen Kosten.
-    </p>
-  </article>
-</AffiliateLayout>
+  <p>
+    Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor
+    einer Verbraucherschlichtungsstelle teilzunehmen.
+  </p>
+</LegalLayout>

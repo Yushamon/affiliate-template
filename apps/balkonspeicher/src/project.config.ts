@@ -81,9 +81,16 @@ export const projectConfig = {
         links: [
           { label: "Über uns", href: "/ueber-uns" },
           { label: "Redaktion", href: "/redaktion" },
-          { label: "Bewertungsmethodik", href: "/bewertungsmethodik" },
+          { label: "Bewertungsmethodik", href: "/bewertungsmethodik" }
+        ]
+      },
+      {
+        title: "Rechtliches",
+        links: [
+          { label: "Impressum", href: "/impressum" },
           { label: "Datenschutz", href: "/datenschutz" },
-          { label: "Impressum", href: "/impressum" }
+          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis" },
+          { label: "Kontakt", href: "/kontakt" }
         ]
       }
     ],

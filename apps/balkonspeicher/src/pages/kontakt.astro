@@ -1,31 +1,42 @@
 ---
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
 ---
 
-<AffiliateLayout
+<LegalLayout
   title="Kontakt"
-  description="Kontakt zu Balkonspeicher Ratgeber."
+  description="Kontakt zur Redaktion von Balkonspeicher Ratgeber für Hinweise, Korrekturen und allgemeine Anfragen."
   canonical="/kontakt"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
 >
-  <article class="article legal-page">
-    <h1>Kontakt</h1>
+  <h2>So erreichst du uns</h2>
 
-    <p>
-      Du hast Fragen, Hinweise oder möchtest eine Korrektur vorschlagen?
-      Dann kannst du uns per E-Mail erreichen.
-    </p>
+  <p>
+    Für redaktionelle Hinweise, sachliche Korrekturen, Fragen zu unserer
+    Bewertungsmethodik oder allgemeine Anfragen erreichst du uns per E-Mail:
+  </p>
 
-    <h2>E-Mail</h2>
+  <p>
+    <span set:html={"info&#64;balkonspeicher-ratgeber.de"} />
+  </p>
 
-    <p>
-      info@balkonspeicher-ratgeber.de
-    </p>
+  <h2>Wobei wir helfen können</h2>
 
-    <h2>Hinweis</h2>
+  <ul>
+    <li>Hinweise zu fehlerhaften oder veralteten technischen Angaben,</li>
+    <li>Fragen zur redaktionellen Einordnung und Bewertungsmethodik,</li>
+    <li>Hinweise zu technischen Problemen auf der Website und</li>
+    <li>Anfragen von Herstellern zu sachlichen Produktinformationen.</li>
+  </ul>
 
-    <p>
-      Wir bieten keine individuelle Rechts, Steuer oder Energieberatung an.
-      Unsere Inhalte dienen der allgemeinen Information.
-    </p>
-  </article>
-</AffiliateLayout>
+  <h2>Grenzen unserer Beratung</h2>
+
+  <p>
+    Wir bieten keine individuelle Rechts-, Steuer-, Energie- oder
+    Elektrofachberatung. Bei Fragen zur sicheren Installation, zum Anschluss
+    oder zu einem konkreten technischen Defekt wende dich bitte an einen
+    qualifizierten Elektrofachbetrieb oder den jeweiligen Hersteller. Wir
+    können keinen Herstellersupport ersetzen.
+  </p>
+</LegalLayout>

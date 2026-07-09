@@ -1,100 +1,109 @@
 ---
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
 ---
 
-<AffiliateLayout
+<LegalLayout
   title="Datenschutzerklärung"
-  description="Datenschutzerklärung von Balkonspeicher Ratgeber."
+  description="Informationen zur Verarbeitung personenbezogener Daten bei der Nutzung von Balkonspeicher Ratgeber."
   canonical="/datenschutz"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
 >
-  <article class="article legal-page">
-    <h1>Datenschutzerklärung</h1>
+  <h2>1. Verantwortlicher</h2>
 
-    <h2>1. Verantwortlicher</h2>
+  <p class="legal-contact-data">
+    Patrick Buckowitz<br />
+    Am Danewend 37a<br />
+    13125 Berlin<br />
+    Deutschland<br />
+    E-Mail: <span set:html={"info&#64;balkonspeicher-ratgeber.de"} />
+  </p>
 
-    <p>
-      Verantwortlich für die Datenverarbeitung auf dieser Website ist:
-    </p>
+  <h2>2. Bereitstellung und Hosting</h2>
 
-    <p>
-      Patrick Buckowitz<br />
-      Am Danewend 37a<br />
-      13125 Berlin<br />
-      E-Mail: info@balkonspeicher-ratgeber.de
-    </p>
+  <p>
+    Die Website ist für die Bereitstellung über Cloudflare Pages konfiguriert.
+    Beim Aufruf können technisch erforderliche Verbindungsdaten verarbeitet
+    werden, etwa IP-Adresse, Zeitpunkt, angeforderte Datei, Referrer,
+    Browsertyp und Betriebssystem. Die Verarbeitung dient der sicheren,
+    stabilen und effizienten Auslieferung der Website. Rechtsgrundlage ist Art.
+    6 Abs. 1 lit. f DSGVO.
+  </p>
 
-    <h2>2. Zugriffsdaten</h2>
+  <p>
+    Anbieter ist Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107,
+    USA. Soweit Daten außerhalb des Europäischen Wirtschaftsraums verarbeitet
+    werden, erfolgt dies nach den jeweils anwendbaren datenschutzrechtlichen
+    Garantien des Anbieters.
+  </p>
 
-    <p>
-      Beim Besuch dieser Website können technische Zugriffsdaten verarbeitet
-      werden. Dazu gehören zum Beispiel IP-Adresse, Datum und Uhrzeit des
-      Zugriffs, Browsertyp, Betriebssystem und aufgerufene Seiten.
-    </p>
+  <h2>3. Kontaktaufnahme</h2>
 
-    <p>
-      Diese Daten dienen der technischen Bereitstellung, Sicherheit und
-      Stabilität der Website.
-    </p>
+  <p>
+    Bei einer Kontaktaufnahme per E-Mail verarbeiten wir die übermittelten
+    Angaben, um die Anfrage zu bearbeiten und mögliche Anschlussfragen zu
+    beantworten. Rechtsgrundlage ist je nach Inhalt Art. 6 Abs. 1 lit. b oder
+    lit. f DSGVO. Die Daten werden gelöscht, sobald sie für die Bearbeitung
+    nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten
+    entgegenstehen.
+  </p>
 
-    <h2>3. Kontaktaufnahme</h2>
+  <h2>4. Affiliate-Links und Amazon PartnerNet</h2>
 
-    <p>
-      Wenn du uns per E-Mail kontaktierst, verarbeiten wir die von dir
-      übermittelten Daten zur Bearbeitung deiner Anfrage.
-    </p>
+  <p>
+    Auf Balkonspeicher Ratgeber werden Affiliate-Links eingesetzt, darunter
+    Links im Rahmen des Amazon EU-Partnerprogramms. Erst wenn ein solcher Link
+    angeklickt wird, wird die Website des jeweiligen Anbieters aufgerufen.
+    Dabei können der externe Anbieter und beteiligte technische Dienstleister
+    Daten über den Aufruf verarbeiten und dem Link eine Partnerkennung
+    zuordnen. Für die weitere Verarbeitung auf der Zielseite gelten die
+    Datenschutzhinweise des jeweiligen Anbieters.
+  </p>
 
-    <h2>4. Cookies</h2>
+  <h2>5. Cookies und externe Inhalte</h2>
 
-    <p>
-      Diese Website kann technisch notwendige Cookies verwenden, um grundlegende
-      Funktionen bereitzustellen.
-    </p>
+  <p>
+    Balkonspeicher Ratgeber setzt derzeit keine eigenen, für Werbung oder
+    profilübergreifendes Tracking bestimmten Cookies. Externe Zielseiten, die
+    über Affiliate-Links geöffnet werden, können eigene Cookies oder ähnliche
+    Technologien nach ihren jeweiligen Regeln einsetzen. Werden künftig
+    weitere Analyse- oder Marketingdienste aktiviert, wird diese Erklärung vor
+    dem Einsatz angepasst und, soweit erforderlich, eine Einwilligung
+    eingeholt.
+  </p>
 
-    <p>
-      Sollten künftig Analyse, Tracking oder Marketing Dienste eingesetzt
-      werden, wird diese Datenschutzerklärung entsprechend erweitert und ein
-      geeignetes Einwilligungsmanagement ergänzt.
-    </p>
+  <h2>6. Empfänger und Speicherdauer</h2>
 
-    <h2>5. Affiliate-Links</h2>
+  <p>
+    Daten werden nur an Dienstleister weitergegeben, soweit dies für Hosting,
+    Sicherheit oder die Bearbeitung einer Anfrage erforderlich ist oder eine
+    gesetzliche Pflicht besteht. Technische Protokolldaten werden nur so lange
+    gespeichert, wie dies für Betrieb und Sicherheit erforderlich ist. Für
+    Daten auf externen Zielseiten gelten die Fristen des jeweiligen Anbieters.
+  </p>
 
-    <p>
-      Auf dieser Website können Affiliate-Links eingebunden sein. Wenn du auf
-      einen solchen Link klickst, wirst du zu einem externen Anbieter
-      weitergeleitet. Dort gelten die Datenschutzbestimmungen des jeweiligen
-      Anbieters.
-    </p>
+  <h2>7. Betroffenenrechte</h2>
 
-    <h2>6. Einbindung externer Inhalte</h2>
+  <p>Im Rahmen der gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf:</p>
 
-    <p>
-      Wenn externe Inhalte wie Bilder, Schriftarten, Videos oder Analyse Dienste
-      eingebunden werden, können personenbezogene Daten an Dritte übertragen
-      werden. Aktuell sollten solche Dienste vor Livegang gesondert geprüft und
-      dokumentiert werden.
-    </p>
+  <ul>
+    <li>Auskunft und Berichtigung personenbezogener Daten,</li>
+    <li>Löschung oder Einschränkung der Verarbeitung,</li>
+    <li>Datenübertragbarkeit,</li>
+    <li>Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen und</li>
+    <li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft.</li>
+  </ul>
 
-    <h2>7. Deine Rechte</h2>
+  <p>
+    Außerdem besteht ein Beschwerderecht bei einer zuständigen
+    Datenschutzaufsichtsbehörde.
+  </p>
 
-    <p>
-      Du hast im Rahmen der geltenden Datenschutzgesetze insbesondere das Recht
-      auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-      Datenübertragbarkeit und Widerspruch.
-    </p>
+  <h2>8. Aktualisierung dieser Erklärung</h2>
 
-    <h2>8. Beschwerderecht</h2>
-
-    <p>
-      Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde
-      zu beschweren.
-    </p>
-
-    <h2>9. Aktualität dieser Datenschutzerklärung</h2>
-
-    <p>
-      Diese Datenschutzerklärung ist ein Basisentwurf und sollte vor dem
-      Livegang rechtlich geprüft und an die tatsächlich eingesetzten Dienste
-      angepasst werden.
-    </p>
-  </article>
-</AffiliateLayout>
+  <p>
+    Diese Datenschutzerklärung wird angepasst, wenn sich eingesetzte Dienste,
+    technische Abläufe oder rechtliche Anforderungen ändern.
+  </p>
+</LegalLayout>

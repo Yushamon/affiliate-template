@@ -197,9 +197,16 @@ export const projectConfig = {
       {
         title: "Unternehmen",
         links: [
-          { label: "Über uns", href: "/#ueber-uns" },
+          { label: "Über uns", href: "/#ueber-uns" }
+        ]
+      },
+      {
+        title: "Rechtliches",
+        links: [
+          { label: "Impressum", href: "/impressum" },
           { label: "Datenschutz", href: "/datenschutz" },
-          { label: "Impressum", href: "/impressum" }
+          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis" },
+          { label: "Kontakt", href: "/kontakt" }
         ]
       }
     ],

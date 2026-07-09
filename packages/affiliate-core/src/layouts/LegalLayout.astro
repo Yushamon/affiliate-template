@@ -1,0 +1,58 @@
+---
+import AffiliateLayout from "./AffiliateLayout.astro";
+import type { ProjectConfig } from "../models/project";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  projectConfig: ProjectConfig;
+  updatedAt?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  projectConfig,
+  updatedAt
+} = Astro.props;
+
+const formattedUpdatedAt = updatedAt
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }).format(new Date(`${updatedAt}T00:00:00`))
+  : null;
+const webAnalyticsToken = import.meta.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
+---
+
+<AffiliateLayout
+  title={`${title} | ${projectConfig.projectName}`}
+  description={description}
+  canonical={canonical}
+  updatedAt={updatedAt}
+  schemaType="webpage"
+  includeBreadcrumbSchema={false}
+  webAnalyticsToken={webAnalyticsToken}
+>
+  <div class="legal-shell">
+    <header class="legal-header">
+      <span class="legal-eyebrow">{projectConfig.projectName}</span>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      {
+        formattedUpdatedAt && (
+          <p class="legal-updated">
+            Stand: <time datetime={updatedAt}>{formattedUpdatedAt}</time>
+          </p>
+        )
+      }
+    </header>
+
+    <article class="article legal-page">
+      <slot />
+    </article>
+  </div>
+</AffiliateLayout>

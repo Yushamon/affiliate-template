@@ -2,11 +2,12 @@
 import { projectConfig } from "@app/project.config";
 
 const year = new Date().getFullYear();
+const footerColumnStyle = `--footer-column-count: ${projectConfig.footer.columns.length}`;
 ---
 
 <footer class="footer-v2">
   <div class="footer-inner-v2">
-    <div class="footer-main-v2">
+    <div class="footer-main-v2" style={footerColumnStyle}>
       <section class="footer-brand-v2" aria-labelledby="footer-brand-title">
         <strong id="footer-brand-title">{projectConfig.projectName}</strong>
         <p>{projectConfig.footer.description}</p>

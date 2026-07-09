@@ -1,49 +1,50 @@
 ---
-import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import LegalLayout from "@affiliate-core/layouts/LegalLayout.astro";
+import { projectConfig } from "../project.config";
 ---
 
-<AffiliateLayout
+<LegalLayout
   title="Affiliate-Hinweis"
-  description="Informationen zu Affiliate-Links auf Balkonspeicher Ratgeber."
+  description="Transparente Informationen zur Finanzierung von Balkonspeicher Ratgeber und zum Einsatz von Affiliate-Links."
   canonical="/affiliate-hinweis"
+  projectConfig={projectConfig}
+  updatedAt="2026-07-09"
 >
-  <article class="article legal-page">
-    <h1>Affiliate-Hinweis</h1>
+  <h2>Was Affiliate-Links sind</h2>
 
-    <p>
-      Balkonspeicher Ratgeber finanziert sich teilweise über Affiliate-Links.
-    </p>
+  <p>
+    Einige Links auf Balkonspeicher Ratgeber führen zu Online-Shops oder
+    Herstellern und sind als Affiliate-Links ausgestaltet. Wenn du über einen
+    solchen Link eine qualifizierte Bestellung tätigst, kann Balkonspeicher
+    Ratgeber eine Provision vom Anbieter erhalten. Der von dir gezahlte Preis
+    erhöht sich dadurch nicht.
+  </p>
 
-    <p>
-      Wenn du auf einen solchen Link klickst und anschließend ein Produkt kaufst,
-      erhalten wir möglicherweise eine Provision vom jeweiligen Anbieter.
-      Für dich entstehen dadurch keine zusätzlichen Kosten.
-    </p>
+  <h2>Amazon PartnerNet</h2>
 
-    <h2>Unsere redaktionelle Unabhängigkeit</h2>
+  <p>
+    Balkonspeicher Ratgeber nimmt am Amazon EU-Partnerprogramm teil. Als
+    Amazon-Partner verdienen wir an qualifizierten Verkäufen. Amazon-Links
+    enthalten eine Partnerkennung, über die eine Bestellung technisch
+    zugeordnet werden kann.
+  </p>
 
-    <p>
-      Unsere Inhalte sollen bei der Kaufentscheidung helfen. Produktempfehlungen
-      beruhen auf Recherche, Marktvergleich, technischen Eigenschaften und
-      praktischer Einordnung.
-    </p>
+  <h2>Redaktionelle Unabhängigkeit</h2>
 
-    <p>
-      Eine mögliche Provision beeinflusst nicht den Preis, den du zahlst.
-    </p>
+  <p>
+    Empfehlungen und Platzierungen können nicht gekauft werden. Eine mögliche
+    Provision entscheidet weder darüber, ob ein Produkt aufgenommen wird, noch
+    über seine Bewertung. Maßgeblich sind nachvollziehbare Kriterien wie
+    technische Daten, Funktionsumfang, Alltagstauglichkeit, Sicherheit,
+    Erweiterbarkeit, App-Funktionen, Garantiebedingungen und Preis-Leistung.
+  </p>
 
-    <h2>Warum wir Affiliate-Links nutzen</h2>
+  <h2>Transparenz bei Kaufentscheidungen</h2>
 
-    <p>
-      Der Betrieb dieser Website verursacht Aufwand und Kosten. Affiliate-Links
-      helfen dabei, die Inhalte kostenlos bereitzustellen und weiter auszubauen.
-    </p>
-
-    <h2>Transparenz</h2>
-
-    <p>
-      Links zu externen Shops oder Anbietern können Affiliate-Links sein.
-      Wir kennzeichnen diese Hinweise transparent auf der Website.
-    </p>
-  </article>
-</AffiliateLayout>
+  <p>
+    Affiliate-Links werden als kommerzielle Links behandelt. Preise und
+    Verfügbarkeit können sich auf externen Zielseiten jederzeit ändern.
+    Balkonspeicher Ratgeber zeigt deshalb keine vermeintlich aktuellen
+    Shoppreise an, wenn diese nicht verlässlich aktuell gehalten werden können.
+  </p>
+</LegalLayout>
