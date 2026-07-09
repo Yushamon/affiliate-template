@@ -10,12 +10,15 @@ interface Props {
   publishedAt?: string;
 
   updatedAt?: string;
+
+  readingTimeMinutes?: number;
 }
 
 const {
   author,
   publishedAt,
-  updatedAt
+  updatedAt,
+  readingTimeMinutes
 } = Astro.props;
 
 const formatDate = (date?: string) => {
@@ -78,6 +81,22 @@ const visibleAuthor =
           <strong>
 
             {formatDate(updatedAt)}
+
+          </strong>
+
+        </span>
+      )
+    }
+
+    {
+      readingTimeMinutes && (
+        <span>
+
+          Lesezeit:
+
+          <strong>
+
+            {readingTimeMinutes} Min.
 
           </strong>
 
