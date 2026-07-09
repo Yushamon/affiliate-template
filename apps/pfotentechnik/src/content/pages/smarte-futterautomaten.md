@@ -16,7 +16,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-08"
-updatedAt: "2026-07-08"
+updatedAt: "2026-07-09"
 hubPriority: 100
 project: "pfotentechnik"
 heroImageKey: "feederHero"
@@ -142,3 +142,16 @@ Unsere Einordnung basiert auf aktuellen Herstellerangaben, Bedienkonzept, Portio
 - [Futterautomat mit Kamera](/futterautomat-mit-kamera)
 - [Futterautomat mit App](/futterautomat-mit-app)
 - [Futterautomat für Nassfutter](/futterautomat-nassfutter)
+
+## Wissen zu Technik, Auswahl und Fütterungsroutine
+
+- [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat)
+- [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige)
+- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan)
+- [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen)
+- [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde)
+- [Futterautomat im Urlaub](/futterautomat-im-urlaub)
+- [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht)
+- [Futterautomat und Ernährung](/futterautomat-und-ernaehrung)
+- [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze)
+- [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund)
