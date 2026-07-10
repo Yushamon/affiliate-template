@@ -97,10 +97,11 @@ const clusters = [
   }
 ].map((cluster) => ({
   ...cluster,
+  totalCount: cluster.pages.length,
   pages: cluster.pages.slice(0, 12)
 }));
 
-const allHubPages = uniquePages(allPages).slice(0, 24);
+const allHubPages = uniquePages(allPages);
 ---
 
 <ProjectLayout
@@ -160,7 +161,7 @@ const allHubPages = uniquePages(allPages).slice(0, 24);
         {clusters.filter((cluster) => cluster.pages.length > 0).map((cluster) => (
           <section class="pt-knowledge-cluster-card">
             <div class="pt-knowledge-cluster-head">
-              <span>{cluster.pages.length}</span>
+              <span>{cluster.totalCount}</span>
               <div>
                 <h3>{cluster.title}</h3>
                 <p>{cluster.text}</p>
@@ -185,7 +186,7 @@ const allHubPages = uniquePages(allPages).slice(0, 24);
         <div class="pt-section-header">
           <p class="pt-eyebrow">Alle Inhalte</p>
           <h2 id="all-guides-title">Aktuelle Ratgeber und Vergleiche</h2>
-          <p>Alle zentralen Inhalte aus dem PfotenTechnik-Wissensbereich auf einen Blick.</p>
+          <p>{allHubPages.length} Inhalte aus dem PfotenTechnik-Wissensbereich auf einen Blick.</p>
         </div>
 
         <div class="pt-knowledge-list-grid">
