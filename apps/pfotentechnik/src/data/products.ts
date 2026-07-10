@@ -1049,6 +1049,217 @@ export const products = {
     }
   }
 }),
+"honeyguardian-a68": createFeeder({
+  name: "HoneyGuardian A68 Smart Pet Feeder",
+  brand: "HoneyGuardian",
+  manufacturer: "honeyguardian",
+  manufacturerLabel: "HoneyGuardian",
+  productUrl: "/produkt/honeyguardian-a68",
+  images: {
+    hero: "/images/products/honeyguardian-a68/hero.webp",
+    thumbnail: "/images/products/honeyguardian-a68/thumbnail.webp",
+    comparison: "/images/products/honeyguardian-a68/comparison.webp",
+    gallery: [
+      "/images/products/honeyguardian-a68/gallery-1.webp",
+      "/images/products/honeyguardian-a68/gallery-2.webp",
+      "/images/products/honeyguardian-a68/gallery-3.webp"
+    ]
+  },
+  badge: "Großer Smart-Feeder",
+  recommendation:
+    "Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde.",
+  rating: 4.4,
+  capacity: "6 Liter",
+  useCase:
+    "Für Katzen und kleine bis mittelgroße Hunde mit regelmäßigem Trockenfutterbedarf.",
+  highlights: [
+    "6-Liter-Vorratsbehälter",
+    "App-Steuerung",
+    "Batterie-Backup"
+  ],
+  pros: [
+    "Großer Vorrat",
+    "Einfache App",
+    "Flexible Fütterungspläne"
+  ],
+  cons: [
+    "Nur Trockenfutter",
+    "Keine Kamera",
+    "Benachrichtigungen abhängig von der App"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Ja"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "6 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "Bis zu 10 täglich"
+    },
+    {
+      label: "Stromversorgung",
+      value: "Netzteil mit Batterie-Backup"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine bis mittelgroße Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "app",
+    "urlaub",
+    "portionierung",
+    "trockenfutter"
+  ],
+  ratings: {
+    app: 4.5,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 4.5,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 88,
+    beginner: 90,
+    premium: 82,
+    retrofit: 88,
+    value: 91
+  },
+  priority: 10,
+  verdict:
+    "Eine sehr gute Wahl für alle, die einen großen WLAN-Futterautomaten ohne Kamera suchen.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "HoneyGuardian A68 Smart Pet Feeder"
+    }
+  }
+}),
+"honeyguardian-a305d": createFeeder({
+  name: "HoneyGuardian A305D",
+  brand: "HoneyGuardian",
+  manufacturer: "honeyguardian",
+  manufacturerLabel: "HoneyGuardian",
+  productUrl: "/produkt/honeyguardian-a305d",
+  images: {
+    hero: "/images/products/honeyguardian-a305d/hero.webp",
+    thumbnail: "/images/products/honeyguardian-a305d/thumbnail.webp",
+    comparison: "/images/products/honeyguardian-a305d/comparison.webp",
+    gallery: [
+      "/images/products/honeyguardian-a305d/gallery-1.webp",
+      "/images/products/honeyguardian-a305d/gallery-2.webp",
+      "/images/products/honeyguardian-a305d/gallery-3.webp"
+    ]
+  },
+  badge: "Offline-Tipp für zwei Katzen",
+  recommendation:
+    "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird.",
+  rating: 4.3,
+  capacity: "5 Liter",
+  useCase:
+    "Für zwei Katzen oder kleine Hunde mit ähnlichem Trockenfutterbedarf und festen Fütterungszeiten",
+  highlights: [
+    "Zwei gleichmäßig versorgte Futternäpfe",
+    "Bis zu sechs Mahlzeiten täglich",
+    "5-Liter-Vorratsbehälter"
+  ],
+  pros: [
+    "Keine App oder WLAN-Verbindung erforderlich",
+    "Zwei Edelstahl-Näpfe für Mehrtierhaushalte",
+    "Batteriebetrieb überbrückt Stromausfälle"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Keine individuelle Zugangskontrolle",
+    "Beide Tiere erhalten dieselbe Portionsmenge"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Nein"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "5 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "1 bis 6 pro Tag"
+    },
+    {
+      label: "Portionierung",
+      value: "1 bis 24 Portionen pro Mahlzeit"
+    },
+    {
+      label: "Näpfe",
+      value: "Zwei Edelstahl-Näpfe"
+    },
+    {
+      label: "Stromversorgung",
+      value: "USB-Netzteil oder 3 D-Batterien"
+    },
+    {
+      label: "Geeignet für",
+      value: "Zwei Katzen oder kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "mehrere-tiere",
+    "urlaub",
+    "portionierung",
+    "trockenfutter",
+    "ohne-wlan",
+    "batteriebetrieb",
+    "preisleistung"
+  ],
+  ratings: {
+    app: 1,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 4,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 86,
+    beginner: 92,
+    premium: 68,
+    retrofit: 92,
+    value: 93
+  },
+  priority: 10,
+  verdict:
+    "Eine gute Offline-Lösung für zwei friedlich fressende Tiere, sofern beide dieselbe Futtersorte und ähnliche Mengen erhalten.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "HoneyGuardian A305D 5L Futterautomat"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
