@@ -7,7 +7,10 @@ import { getScoreLabel, getWeightedProductScore } from "@app/data/productScoring
 import { getPrimaryAffiliateLink } from "../../affiliate/affiliateEngine";
 import { projectConfig } from "@app/project.config";
 import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
-import { getProductHeroImage } from "../../utils/productImages";
+import {
+  getProductGallery,
+  getProductHeroImage
+} from "../../utils/productImages";
 import ProductImage from "../ProductImage.astro";
 
 interface Props {
@@ -18,15 +21,30 @@ const { productKey } = Astro.props;
 
 const product = products[productKey];
 const productHeroImage = product
+
   ? getProductHeroImage(
+
       product,
+
       getProjectImage(DEFAULT_PROJECT, "product"),
+
       productKey
+
     )
+
   : getProductHeroImage(
+
       {},
+
       getProjectImage(DEFAULT_PROJECT, "product")
+
     );
+
+const productGallery = product
+
+  ? getProductGallery(product, productKey)
+
+  : [];
 const score = product ? getWeightedProductScore(productKey) : 0;
 const scoreLabel = getScoreLabel(score);
 const primaryLink = product
@@ -93,7 +111,24 @@ const ratingEntries =
         Number.isFinite(rating)
       )
     : [];
+const normalizedCons = Array.isArray(review?.cons)
+  ? review.cons.map((item) =>
+      stripLeadingIcon(item).trim().toLowerCase()
+    )
+  : [];
 
+const uniqueNotFor = Array.isArray(review?.notFor)
+  ? review.notFor.filter((item) => {
+      const normalizedItem = stripLeadingIcon(item)
+        .trim()
+        .toLowerCase();
+
+      return (
+        normalizedItem.length > 0 &&
+        !normalizedCons.includes(normalizedItem)
+      );
+    })
+  : [];
 const stars = (rating: number) => {
   const normalizedRating = Math.max(0, Math.min(5, Math.round(rating)));
 
@@ -147,9 +182,53 @@ const stars = (rating: number) => {
         )}
       </div>
 
-      <div class="product-review-hero-image">
-        <ProductImage image={productHeroImage} alt={product.name} loading="eager" />
-      </div>
+      <div class="product-review-hero-image" data-product-gallery>
+  <div class="product-review-gallery-main">
+    <ProductImage
+      image={productHeroImage}
+      alt={product.name}
+      loading="eager"
+    />
+  </div>
+
+  {productGallery.length > 0 && (
+    <div
+      class="product-review-gallery-thumbnails"
+      aria-label={`Weitere Bilder von ${product.name}`}
+    >
+      <button
+        class="product-review-gallery-thumbnail is-active"
+        type="button"
+        aria-label="Hauptbild anzeigen"
+        aria-pressed="true"
+        data-product-gallery-src={productHeroImage.src}
+      >
+        <ProductImage
+          image={productHeroImage}
+          alt={`${product.name} Hauptbild`}
+        />
+      </button>
+
+      {productGallery.map((image, index) => (
+        <button
+          class="product-review-gallery-thumbnail"
+          type="button"
+          aria-label={`Produktbild ${index + 2} anzeigen`}
+          aria-pressed="false"
+          data-product-gallery-src={image}
+        >
+          <img
+            src={image}
+            alt={`${product.name} Produktbild ${index + 2}`}
+            loading="lazy"
+            decoding="async"
+            onerror="this.closest('button')?.remove()"
+          />
+        </button>
+      ))}
+    </div>
+  )}
+</div>
     </section>
 
     <section class="product-verdict-v3">
@@ -207,26 +286,28 @@ const stars = (rating: number) => {
       </div>
     </section>
 
-    <section class="product-review-grid-v3">
+       <section class="product-review-grid-v3">
       <div class="product-review-card-v3">
         <h2>Für wen geeignet</h2>
 
         <p>{product.useCase}</p>
       </div>
 
-      <div class="product-review-card-v3">
-        <h2>
-          Weniger geeignet für
-        </h2>
+      {uniqueNotFor.length > 0 && (
+        <div class="product-review-card-v3">
+          <h2>
+            Weniger geeignet für
+          </h2>
 
-        <ul>
-          {review.notFor.map((item) => (
-            <li class="product-review-list-item product-review-list-item-negative">
-              {stripLeadingIcon(item)}
-            </li>
-          ))}
-        </ul>
-      </div>
+          <ul>
+            {uniqueNotFor.map((item) => (
+              <li class="product-review-list-item product-review-list-item-negative">
+                {stripLeadingIcon(item)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
 
     <section class="product-review-card-v3">
@@ -264,3 +345,114 @@ const stars = (rating: number) => {
     />
   </article>
 )}
+<script>
+  const initializeProductGalleries = () => {
+    document
+      .querySelectorAll<HTMLElement>("[data-product-gallery]")
+      .forEach((gallery) => {
+        if (gallery.dataset.initialized === "true") {
+          return;
+        }
+
+        const mainImage = gallery.querySelector<HTMLImageElement>(
+          ".product-review-gallery-main img"
+        );
+
+        const thumbnails = Array.from(
+          gallery.querySelectorAll<HTMLButtonElement>(
+            ".product-review-gallery-thumbnail"
+          )
+        );
+
+        if (!mainImage || thumbnails.length === 0) {
+          return;
+        }
+
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", () => {
+            const nextImage =
+              thumbnail.dataset.productGallerySrc;
+
+            if (!nextImage) {
+              return;
+            }
+
+            mainImage.src = nextImage;
+            mainImage.alt =
+              thumbnail.querySelector("img")?.alt ??
+              mainImage.alt;
+
+            thumbnails.forEach((item) => {
+              const isActive = item === thumbnail;
+
+              item.classList.toggle(
+                "is-active",
+                isActive
+              );
+
+              item.setAttribute(
+                "aria-pressed",
+                String(isActive)
+              );
+            });
+          });
+        });
+
+        gallery.dataset.initialized = "true";
+      });
+  };
+
+  initializeProductGalleries();
+
+  document.addEventListener(
+    "astro:page-load",
+    initializeProductGalleries
+  );
+</script>
+
+<style>
+  .product-review-gallery-main {
+    display: grid;
+    place-items: center;
+  }
+
+  .product-review-gallery-main :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .product-review-gallery-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .product-review-gallery-thumbnail {
+    padding: 0.35rem;
+    border: 1px solid var(--border-color, #d9dee7);
+    border-radius: 0.75rem;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .product-review-gallery-thumbnail.is-active {
+    border-color: currentColor;
+    box-shadow: 0 0 0 1px currentColor;
+  }
+
+  .product-review-gallery-thumbnail :global(img) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
+  @media (max-width: 640px) {
+    .product-review-gallery-thumbnails {
+      gap: 0.5rem;
+    }
+  }
+</style>
