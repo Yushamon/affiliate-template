@@ -643,7 +643,7 @@ export const products = {
     }
   }
 }),
-"petkit-yumshare-solo": createFeeder({
+"petkit-yumshare-solo-2": createFeeder({
   name: "PETKIT YumShare Solo 2",
   brand: "PETKIT",
   manufacturer: "petkit",
@@ -723,6 +723,112 @@ export const products = {
   merchantLinks: {
     amazon: {
       searchQuery: "PETKIT YumShare Solo 2"
+    }
+  }
+}),
+"cat-mate-c200": createFeeder({
+  name: "Cat Mate C200",
+  brand: "Cat Mate",
+  manufacturer: "closer-pets",
+  manufacturerLabel: "Closer Pets / Cat Mate",
+  productUrl: "/produkt/cat-mate-c200",
+  images: {
+    hero: "/images/products/cat-mate-c200/hero.webp",
+    thumbnail: "/images/products/cat-mate-c200/thumbnail.webp",
+    comparison: "/images/products/cat-mate-c200/comparison.webp",
+    gallery: [
+      "/images/products/cat-mate-c200/gallery-1.webp",
+      "/images/products/cat-mate-c200/gallery-2.webp",
+      "/images/products/cat-mate-c200/gallery-3.webp"
+    ]
+  },
+  badge: "Einfacher Nassfutter-Tipp",
+  recommendation:
+    "Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN.",
+  rating: 4.3,
+  capacity: "2 Mahlzeiten mit je bis zu 400 g",
+  useCase:
+    "Für Katzen und kleine Hunde, die innerhalb von bis zu 48 Stunden zwei vorbereitete Mahlzeiten erhalten sollen",
+  highlights: [
+    "Zwei separat programmierbare 48-Stunden-Timer",
+    "Für Nass- und Trockenfutter geeignet",
+    "Kühlakku unter den Futterschalen"
+  ],
+  pros: [
+    "Keine App oder WLAN-Verbindung erforderlich",
+    "Schalen und Deckel sind herausnehmbar und spülmaschinengeeignet",
+    "Bis zu zwölf Monate Batterielaufzeit mit einer AA-Batterie"
+  ],
+  cons: [
+    "Nur zwei Mahlzeiten planbar",
+    "Keine aktive Kühlung",
+    "Mechanische Timer sind weniger exakt als digitale Zeitpläne"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Nass- und Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Nein"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "2 Schalen mit je bis zu 400 g"
+    },
+    {
+      label: "Timer",
+      value: "Zwei separate Timer, bis zu 48 Stunden"
+    },
+    {
+      label: "Kühlung",
+      value: "Kühlakku, keine aktive Kühlung"
+    },
+    {
+      label: "Stromversorgung",
+      value: "1 AA-Batterie"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "nassfutter",
+    "trockenfutter",
+    "portionierung",
+    "ohne-wlan",
+    "batteriebetrieb",
+    "preisleistung"
+  ],
+  ratings: {
+    app: 1,
+    portionierung: 4,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4,
+    sicherheit: 4,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 84,
+    beginner: 94,
+    premium: 58,
+    retrofit: 93,
+    value: 92
+  },
+  priority: 6,
+  verdict:
+    "Eine preiswerte und einfache Wahl für zwei vorbereitete Mahlzeiten, wenn App-Steuerung und aktive Kühlung nicht benötigt werden.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "Cat Mate C200 Futterautomat"
     }
   }
 }),
