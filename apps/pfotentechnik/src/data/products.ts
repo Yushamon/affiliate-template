@@ -457,6 +457,89 @@ export const products = {
       amazon: { searchQuery: "Cat Mate C500 Futterautomat" }
     }
   }),
+  "petlibro-one-rfid-smart-feeder": createFeeder({
+  name: "PETLIBRO One RFID Smart Feeder",
+  brand: "Petlibro",
+  manufacturer: "petlibro",
+  manufacturerLabel: "Petlibro",
+  productUrl: "/produkt/petlibro-one-rfid-smart-feeder",
+  images: {
+    hero: "/images/products/petlibro-one-rfid-smart-feeder/hero.webp",
+    thumbnail: "/images/products/petlibro-one-rfid-smart-feeder/thumbnail.webp",
+    comparison: "/images/products/petlibro-one-rfid-smart-feeder/comparison.webp",
+    gallery: [
+      "/images/products/petlibro-one-rfid-smart-feeder/gallery-1.webp",
+      "/images/products/petlibro-one-rfid-smart-feeder/gallery-2.webp",
+      "/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp"
+    ]
+  },
+  badge: "Beste Wahl gegen Futterdiebstahl",
+  recommendation:
+    "Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.",
+  rating: 4.7,
+  capacity: "3 Liter",
+  useCase:
+    "Für Katzen in Mehrtierhaushalten mit individuellen Futterplänen oder Futterneid",
+  highlights: [
+    "RFID-Zugang über Halsbandanhänger",
+    "App-Steuerung mit Fütterungsprotokollen",
+    "Automatische Portionierung mit geschütztem Napf"
+  ],
+  pros: [
+    "Verhindert Futterdiebstahl zuverlässig",
+    "Automatische Portionierung und Zugangskontrolle kombiniert",
+    "Unterstützt 2,4- und 5-GHz-WLAN"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Verwendet RFID-Halsbandanhänger statt implantiertem Mikrochip",
+    "Je Automat erhält nur ein Tier exklusiven Zugang"
+  ],
+  specs: [
+    { label: "Futterart", value: "Trockenfutter (ca. 2 bis 15 mm)" },
+    { label: "App-Steuerung", value: "Ja" },
+    { label: "Kamera", value: "Nein" },
+    { label: "Kapazität", value: "3 Liter" },
+    { label: "Portionierung", value: "Bis zu 10 Mahlzeiten täglich" },
+    { label: "Zugangskontrolle", value: "RFID-Halsbandanhänger" },
+    { label: "WLAN", value: "2,4 GHz und 5 GHz" },
+    { label: "Stromversorgung", value: "Netzteil mit Batterie-Backup" },
+    { label: "Geeignet für", value: "Katzen in Mehrtierhaushalten" }
+  ],
+  useCases: [
+    "katze",
+    "mehrere-tiere",
+    "app",
+    "portionierung",
+    "trockenfutter",
+    "premium",
+    "chip-erkennung",
+    "batteriebetrieb"
+  ],
+  ratings: {
+    app: 4.5,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 5,
+    preisleistung: 4
+  },
+  ranking: {
+    overall: 93,
+    beginner: 82,
+    premium: 97,
+    retrofit: 88,
+    value: 82
+  },
+  priority: 3,
+  verdict:
+    "Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETLIBRO One RFID Smart Feeder"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
