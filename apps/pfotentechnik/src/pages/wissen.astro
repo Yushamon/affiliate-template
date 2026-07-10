@@ -44,9 +44,9 @@ const preferredFeaturedSlugs = [
   "beste-futterautomaten-unter-100-euro"
 ];
 
-const preferredFeaturedPages = uniquePages(
-  allPages.filter((page) => preferredFeaturedSlugs.includes(page.data.slug))
-);
+const preferredFeaturedPages = preferredFeaturedSlugs
+  .map((slug) => allPages.find((page) => page.data.slug === slug))
+  .filter((page): page is (typeof allPages)[number] => Boolean(page));
 
 const featuredPages = uniquePages([
   ...preferredFeaturedPages,
@@ -85,8 +85,8 @@ const clusters = [
     )
   },
   {
-    title: "Produkte & Hersteller",
-    text: "Produktseiten, Markenprofile und Modellübersichten für smarte Haustiertechnik.",
+    title: "Marken & Produkte",
+    text: "Markenprofile, Modellübersichten und produktnahe Inhalte rund um smarte Haustiertechnik.",
     pages: uniquePages(
       allPages.filter((page) =>
         page.data.slug.startsWith("produkt/") ||
@@ -124,8 +124,8 @@ const allHubPages = uniquePages(allPages);
 
       <div class="pt-knowledge-hero-card">
         <span>{allPages.length}</span>
-        <strong>Ratgeber, Vergleiche und Produktseiten</strong>
-        <p>Der Wissensbereich wächst automatisch mit neuen Inhalten.</p>
+        <strong>Ratgeber und Vergleiche</strong>
+        <p>Neue veröffentlichte Inhalte werden automatisch ergänzt.</p>
 
       </div>
     </section>
