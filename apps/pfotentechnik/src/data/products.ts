@@ -1260,6 +1260,214 @@ export const products = {
     }
   }
 }),
+"petlibro-space-smart-feeder": createFeeder({
+  name: "PETLIBRO Space Smart Feeder",
+  brand: "Petlibro",
+  manufacturer: "petlibro",
+  manufacturerLabel: "Petlibro",
+  productUrl: "/produkt/petlibro-space-smart-feeder",
+  images: {
+    hero: "/images/products/petlibro-space-smart-feeder/hero.webp",
+    thumbnail: "/images/products/petlibro-space-smart-feeder/thumbnail.webp",
+    comparison: "/images/products/petlibro-space-smart-feeder/comparison.webp",
+    gallery: [
+      "/images/products/petlibro-space-smart-feeder/gallery-1.webp",
+      "/images/products/petlibro-space-smart-feeder/gallery-2.webp",
+      "/images/products/petlibro-space-smart-feeder/gallery-3.webp"
+    ]
+  },
+  badge: "Design-Tipp",
+  recommendation:
+    "Der PETLIBRO Space Smart Feeder verbindet modernes Design mit App-Steuerung und automatischer Trockenfutterausgabe. Er eignet sich besonders für Katzen und kleine Hunde in modernen Haushalten.",
+  rating: 4.6,
+  capacity: "3 Liter",
+  useCase:
+    "Für Katzen und kleine Hunde mit regelmäßigem Trockenfutterbedarf und Wunsch nach einer kompakten, modernen Lösung.",
+  highlights: [
+    "Steuerung über PETLIBRO App",
+    "Kompakte Bauform",
+    "Frischhaltesystem gegen Feuchtigkeit"
+  ],
+  pros: [
+    "Modernes und platzsparendes Design",
+    "Einfache Einrichtung per App",
+    "Zuverlässige Portionierung"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Keine Kamera integriert",
+    "Kleinerer Vorratsbehälter als Granary"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Ja"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "3 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "Bis zu 10 täglich"
+    },
+    {
+      label: "Stromversorgung",
+      value: "Netzteil mit Batterie-Backup"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "app",
+    "trockenfutter",
+    "portionierung",
+    "premium"
+  ],
+  ratings: {
+    app: 4.7,
+    portionierung: 4.5,
+    reinigung: 4.6,
+    zuverlaessigkeit: 4.6,
+    sicherheit: 4.6,
+    preisleistung: 4.3
+  },
+  ranking: {
+    overall: 91,
+    beginner: 90,
+    premium: 92,
+    retrofit: 88,
+    value: 86
+  },
+  priority: 4,
+  verdict:
+    "Eine sehr gelungene Wahl für alle, die einen kompakten Smart-Futterautomaten mit hochwertigem Design und zuverlässiger App-Steuerung suchen.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETLIBRO Space Smart Feeder"
+    }
+  }
+}),
+"petlibro-air-automatic-feeder": createFeeder({
+  name: "PETLIBRO Air Automatic Feeder",
+  brand: "Petlibro",
+  manufacturer: "petlibro",
+  manufacturerLabel: "Petlibro",
+  productUrl: "/produkt/petlibro-air-automatic-feeder",
+  images: {
+    hero: "/images/products/petlibro-air-automatic-feeder/hero.webp",
+    thumbnail:
+      "/images/products/petlibro-air-automatic-feeder/thumbnail.webp",
+    comparison:
+      "/images/products/petlibro-air-automatic-feeder/comparison.webp",
+    gallery: [
+      "/images/products/petlibro-air-automatic-feeder/gallery-1.webp",
+      "/images/products/petlibro-air-automatic-feeder/gallery-2.webp",
+      "/images/products/petlibro-air-automatic-feeder/gallery-3.webp"
+    ]
+  },
+  badge: "Kompakter Offline-Tipp",
+  recommendation:
+    "Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.",
+  rating: 4.3,
+  capacity: "2 Liter",
+  useCase:
+    "Für einzelne Katzen und kleine Hunde mit festen Fütterungszeiten und geringem bis mittlerem Trockenfutterbedarf",
+  highlights: [
+    "Bis zu sechs Mahlzeiten täglich programmierbar",
+    "Kompakter 2-Liter-Vorratsbehälter",
+    "Netz- oder Batteriebetrieb möglich"
+  ],
+  pros: [
+    "Funktioniert vollständig ohne WLAN und App",
+    "Kompakte und leichte Bauform",
+    "Bis zu etwa 180 Tage Batteriebetrieb möglich"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Keine Fernsteuerung oder Fütterungsprotokolle",
+    "Kleinerer Vorrat als beim Granary"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter, Kroketten etwa 2 bis 15 mm"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Nein"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "2 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "Bis zu 6 pro Tag"
+    },
+    {
+      label: "Bedienung",
+      value: "Lokales Bedienfeld mit Display"
+    },
+    {
+      label: "Stromversorgung",
+      value: "USB-C-Netzteil oder 3 D-Batterien"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "urlaub",
+    "portionierung",
+    "trockenfutter",
+    "ohne-wlan",
+    "batteriebetrieb",
+    "preisleistung"
+  ],
+  ratings: {
+    app: 1,
+    portionierung: 4.3,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.3,
+    sicherheit: 4.3,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 85,
+    beginner: 94,
+    premium: 65,
+    retrofit: 92,
+    value: 92
+  },
+  priority: 8,
+  verdict:
+    "Eine gute Offline-Alternative zum Air WiFi Feeder, wenn lokale Zeitpläne, kompakte Abmessungen und flexibler Batteriebetrieb wichtiger sind als App-Funktionen.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETLIBRO Air Automatic Feeder 2L"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
