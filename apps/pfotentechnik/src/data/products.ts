@@ -218,6 +218,86 @@ export const products = {
       amazon: { searchQuery: "Petlibro Granary Camera Futterautomat 5L" }
     }
   }),
+"petlibro-polar-wet-food-feeder": createFeeder({
+  name: "PETLIBRO Polar Wet Food Feeder",
+  brand: "Petlibro",
+  manufacturer: "petlibro",
+  manufacturerLabel: "Petlibro",
+  productUrl: "/produkt/petlibro-polar-wet-food-feeder",
+  images: {
+    hero: "/images/products/petlibro-polar-wet-food-feeder/hero.webp",
+    thumbnail: "/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp",
+    comparison: "/images/products/petlibro-polar-wet-food-feeder/comparison.webp",
+    gallery: [
+      "/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp",
+      "/images/products/petlibro-polar-wet-food-feeder/gallery-2.webp",
+      "/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp"
+    ]
+  },
+  badge: "Beste Wahl für gekühltes Nassfutter",
+  recommendation:
+    "Der PETLIBRO Polar hält Nassfutter aktiv gekühlt und eignet sich besonders für Katzen, die regelmäßig frische Mahlzeiten erhalten sollen.",
+  rating: 4.8,
+  capacity: "3 Mahlzeiten à bis zu 200 ml",
+  useCase:
+    "Für Katzen und kleine Hunde mit Nassfutter oder rehydriertem Gefriertrockenfutter",
+  highlights: [
+    "Thermoelektrische Kühlung bis zu 72 Stunden",
+    "App-Steuerung über WLAN",
+    "Edelstahl-Napf mit PawShield-Abdeckung"
+  ],
+  pros: [
+    "Aktive Kühlung ohne Kühlakkus",
+    "Ideal für Nassfutter",
+    "App mit Zeitplänen und manueller Fütterung"
+  ],
+  cons: [
+    "Nur drei Mahlzeiten verfügbar",
+    "Kein Batteriebetrieb",
+    "Nicht für Rohfleisch empfohlen"
+  ],
+  specs: [
+    { label: "Futterart", value: "Nassfutter, rehydriertes Gefriertrockenfutter" },
+    { label: "App-Steuerung", value: "Ja" },
+    { label: "Kamera", value: "Nein" },
+    { label: "Kapazität", value: "3 Mahlzeiten à 200 ml" },
+    { label: "Kühlung", value: "Thermoelektrisch bis zu 72 Stunden" },
+    { label: "Stromversorgung", value: "Netzbetrieb" },
+    { label: "Geeignet für", value: "Katzen, kleine Hunde" }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "app",
+    "nassfutter",
+    "premium",
+    "portionierung"
+  ],
+  ratings: {
+    app: 4.5,
+    portionierung: 5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 5,
+    preisleistung: 4
+  },
+  ranking: {
+    overall: 95,
+    beginner: 82,
+    premium: 98,
+    retrofit: 78,
+    value: 86
+  },
+  priority: 2,
+  verdict:
+    "Aktuell eine der überzeugendsten Lösungen für automatische Nassfutterfütterung mit echter Kühlung.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETLIBRO Polar Wet Food Feeder"
+    }
+  }
+}),
+
   "petkit-fresh-element-solo": createFeeder({
     name: "PETKIT Fresh Element Solo",
     brand: "PETKIT",
