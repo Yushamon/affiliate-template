@@ -540,6 +540,109 @@ export const products = {
     }
   }
 }),
+"petkit-fresh-element-infinity": createFeeder({
+  name: "PETKIT Fresh Element Infinity",
+  brand: "PETKIT",
+  manufacturer: "petkit",
+  manufacturerLabel: "PETKIT",
+  productUrl: "/produkt/petkit-fresh-element-infinity",
+  images: {
+    hero: "/images/products/petkit-fresh-element-infinity/hero.webp",
+    thumbnail:
+      "/images/products/petkit-fresh-element-infinity/thumbnail.webp",
+    comparison:
+      "/images/products/petkit-fresh-element-infinity/comparison.webp",
+    gallery: [
+      "/images/products/petkit-fresh-element-infinity/gallery-1.webp",
+      "/images/products/petkit-fresh-element-infinity/gallery-2.webp",
+      "/images/products/petkit-fresh-element-infinity/gallery-3.webp"
+    ]
+  },
+  badge: "Großer PETKIT Vorrats-Tipp",
+  recommendation:
+    "Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen.",
+  rating: 4.5,
+  capacity: "5 Liter",
+  useCase:
+    "Für Katzen und kleine Hunde mit regelmäßigem Trockenfutterbedarf und Wunsch nach größerem Vorrat",
+  highlights: [
+    "5-Liter-Vorratsbehälter",
+    "PETKIT-App mit Fütterungsplänen und Statusmeldungen",
+    "Edelstahlnapf mit integrierter Gewichtserfassung"
+  ],
+  pros: [
+    "Größerer Vorrat als beim Fresh Element Solo",
+    "App-Steuerung und Fütterungsprotokolle",
+    "Integrierter Akku überbrückt kurze Stromausfälle"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Keine Kamera",
+    "Größer und schwerer als kompakte 3-Liter-Modelle"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Ja"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "5 Liter"
+    },
+    {
+      label: "Napf",
+      value: "Edelstahl mit Gewichtserfassung"
+    },
+    {
+      label: "Stromversorgung",
+      value: "Netzteil mit integriertem Akku"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "app",
+    "urlaub",
+    "portionierung",
+    "trockenfutter",
+    "premium"
+  ],
+  ratings: {
+    app: 4.5,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 4.5,
+    preisleistung: 4
+  },
+  ranking: {
+    overall: 90,
+    beginner: 88,
+    premium: 90,
+    retrofit: 86,
+    value: 84
+  },
+  priority: 4,
+  verdict:
+    "Eine sinnvolle PETKIT Alternative für größere Trockenfuttervorräte, wenn Kamera und Doppelkammersystem nicht benötigt werden.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETKIT Fresh Element Infinity 5L Futterautomat"
+    }
+  }
+}),
 "petkit-yumshare-solo": createFeeder({
   name: "PETKIT YumShare Solo 2",
   brand: "PETKIT",
@@ -558,7 +661,7 @@ export const products = {
   },
   badge: "Top Empfehlung mit Kamera",
   recommendation:
-    "Der PETKIT YumShare Solo 2kombiniert einen zuverlässigen Futterautomaten mit integrierter Kamera und App-Steuerung. Ideal für Katzen und kleine Hunde.",
+    "Der PETKIT YumShare Solo 2 kombiniert einen zuverlässigen Futterautomaten mit integrierter Kamera und App-Steuerung. Ideal für Katzen und kleine Hunde.",
   rating: 4.8,
   capacity: "3 Liter",
   useCase:
