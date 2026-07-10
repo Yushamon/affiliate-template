@@ -540,6 +540,89 @@ export const products = {
     }
   }
 }),
+"petkit-yumshare-solo": createFeeder({
+  name: "PETKIT YumShare Solo",
+  brand: "PETKIT",
+  manufacturer: "petkit",
+  manufacturerLabel: "PETKIT",
+  productUrl: "/produkt/petkit-yumshare-solo",
+  images: {
+    hero: "/images/products/petkit-yumshare-solo/hero.webp",
+    thumbnail: "/images/products/petkit-yumshare-solo/thumbnail.webp",
+    comparison: "/images/products/petkit-yumshare-solo/comparison.webp",
+    gallery: [
+      "/images/products/petkit-yumshare-solo/gallery-1.webp",
+      "/images/products/petkit-yumshare-solo/gallery-2.webp",
+      "/images/products/petkit-yumshare-solo/gallery-3.webp"
+    ]
+  },
+  badge: "Top Empfehlung mit Kamera",
+  recommendation:
+    "Der PETKIT YumShare Solo kombiniert einen zuverlässigen Futterautomaten mit integrierter Kamera und App-Steuerung. Ideal für Katzen und kleine Hunde.",
+  rating: 4.8,
+  capacity: "3 Liter",
+  useCase:
+    "Für Katzen und kleine Hunde mit regelmäßigen Fütterungszeiten und Wunsch nach Live-Überwachung.",
+  highlights: [
+    "HD-Kamera mit Livebild",
+    "App-Steuerung über WLAN",
+    "Bis zu 10 Mahlzeiten pro Tag"
+  ],
+  pros: [
+    "Sehr gute Kameraqualität",
+    "Einfache Bedienung per App",
+    "Großer 3-Liter-Vorratsbehälter"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Cloud-Funktionen teilweise kostenpflichtig",
+    "Kamera funktioniert im Batteriebetrieb nicht"
+  ],
+  specs: [
+    { label: "Futterart", value: "Trockenfutter bis 12 mm, gefriergetrocknete Snacks bis 9 mm" },
+    { label: "App-Steuerung", value: "Ja" },
+    { label: "Kamera", value: "Ja" },
+    { label: "Kapazität", value: "3 Liter" },
+    { label: "Mahlzeiten", value: "1 bis 10 pro Tag" },
+    { label: "Portionen", value: "1 bis 5 pro Mahlzeit" },
+    { label: "WLAN", value: "2,4 GHz und 5 GHz" },
+    { label: "Stromversorgung", value: "Netzteil mit Batterie-Backup" },
+    { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "kamera",
+    "app",
+    "trockenfutter",
+    "premium",
+    "portionierung",
+    "batteriebetrieb"
+  ],
+  ratings: {
+    app: 4.8,
+    portionierung: 4.7,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.7,
+    sicherheit: 4.7,
+    preisleistung: 4.4
+  },
+  ranking: {
+    overall: 94,
+    beginner: 88,
+    premium: 96,
+    retrofit: 86,
+    value: 88
+  },
+  priority: 2,
+  verdict:
+    "Der YumShare Solo gehört aktuell zu den besten smarten Futterautomaten mit Kamera und überzeugt durch zuverlässige Portionierung sowie eine sehr gute App.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "PETKIT YumShare Solo"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
