@@ -13,9 +13,9 @@ const allPages = (await getCollection("pages"))
 const getPageUrl = (slug: string) => `/${slug}/`;
 
 const hasTag = (page: (typeof allPages)[number], tags: string[]) => {
-  const pageTags = page.data.tags ?? [];
+  const pageTags = (page.data.tags ?? []).map((tag) => tag.toLowerCase());
 
-  return tags.some((tag) => pageTags.includes(tag));
+  return tags.some((tag) => pageTags.includes(tag.toLowerCase()));
 };
 
 const includesSlug = (page: (typeof allPages)[number], fragments: string[]) =>
@@ -35,16 +35,23 @@ const uniquePages = (pages: typeof allPages) => {
   });
 };
 
-const featuredPages = uniquePages(
-  allPages.filter((page) =>
-    page.data.slug === "smarte-futterautomaten" ||
-    page.data.slug === "futterautomat-hund" ||
-    page.data.slug === "futterautomat-katze" ||
-    page.data.slug === "beste-futterautomaten-fuer-welpen" ||
-    page.data.slug === "beste-futterautomaten-fuer-berufstaetige" ||
-    page.data.slug === "beste-futterautomaten-unter-100-euro"
-  )
-).slice(0, 6);
+const preferredFeaturedSlugs = [
+  "smarte-futterautomaten",
+  "futterautomat-hund",
+  "futterautomat-katze",
+  "beste-futterautomaten-fuer-welpen",
+  "beste-futterautomaten-fuer-berufstaetige",
+  "beste-futterautomaten-unter-100-euro"
+];
+
+const preferredFeaturedPages = uniquePages(
+  allPages.filter((page) => preferredFeaturedSlugs.includes(page.data.slug))
+);
+
+const featuredPages = uniquePages([
+  ...preferredFeaturedPages,
+  ...allPages
+]).slice(0, 6);
 
 const clusters = [
   {
@@ -93,9 +100,7 @@ const clusters = [
   pages: cluster.pages.slice(0, 12)
 }));
 
-const allHubPages = uniquePages(
-  clusters.flatMap((cluster) => cluster.pages)
-).slice(0, 24);
+const allHubPages = uniquePages(allPages).slice(0, 24);
 ---
 
 <ProjectLayout
@@ -137,7 +142,7 @@ const allHubPages = uniquePages(
             <a class="pt-knowledge-featured-card" href={getPageUrl(page.data.slug)}>
               <span>{page.data.categoryLabel ?? page.data.category ?? "Ratgeber"}</span>
               <h3>{page.data.title}</h3>
-              <p>{page.data.description}</p>
+              <p>{page.data.description ?? "Mehr zu diesem Thema erfahren."}</p>
             </a>
           ))}
         </div>
@@ -166,7 +171,7 @@ const allHubPages = uniquePages(
               {cluster.pages.map((page) => (
                 <a href={getPageUrl(page.data.slug)}>
                   <strong>{page.data.title}</strong>
-                  <span>{page.data.description}</span>
+                  <span>{page.data.description ?? "Mehr zu diesem Thema erfahren."}</span>
                 </a>
               ))}
             </div>
@@ -188,7 +193,7 @@ const allHubPages = uniquePages(
             <a class="pt-knowledge-list-card" href={getPageUrl(page.data.slug)}>
               <span>{page.data.categoryLabel ?? page.data.category ?? "Wissen"}</span>
               <h3>{page.data.title}</h3>
-              <p>{page.data.description}</p>
+              <p>{page.data.description ?? "Mehr zu diesem Thema erfahren."}</p>
             </a>
           ))}
         </div>
