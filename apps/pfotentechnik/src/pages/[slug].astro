@@ -7,6 +7,7 @@ import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
@@ -22,7 +23,7 @@ import {
   getDecisionProductRecommendations,
   getDecisionRule
 } from "../data/decisionProducts";
-
+import { internalLinkDefinitions } from "../data/internalLinks";
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
@@ -89,7 +90,11 @@ const decisionIntro = page.data.decisionIntro ??
   "Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.";
 
 const decisionThemeColor = page.data.themeColor ?? "teal";
+const autoLinkSourceGroup = page.data.decisionKey
 
+  ? "decision"
+
+  : "knowledge";
 const comparisonProducts = decisionProducts.length > 0
   ? decisionProducts
   : (page.data.comparisonProducts ?? [])
@@ -335,7 +340,21 @@ const relatedPages = allPages
       )
     }
 
-    <Content />
+  <AutoLinkContent
+
+      definitions={internalLinkDefinitions}
+
+      sourcePath={`/${page.data.slug}/`}
+
+      sourceGroup={autoLinkSourceGroup}
+
+      maxLinksPerPage={10}
+
+    >
+
+      <Content />
+
+    </AutoLinkContent>
 
     {
       decisionRule?.sources && decisionRule.sources.length > 0 && (
