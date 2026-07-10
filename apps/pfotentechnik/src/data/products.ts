@@ -938,6 +938,117 @@ export const products = {
     }
   }
 }),
+"wopet-pioneer-f01-plus": createFeeder({
+  name: "WOPET Pioneer F01 Plus",
+  brand: "WOPET",
+  manufacturer: "wopet",
+  manufacturerLabel: "WOPET",
+  productUrl: "/produkt/wopet-pioneer-f01-plus",
+  images: {
+    hero: "/images/products/wopet-pioneer-f01-plus/hero.webp",
+    thumbnail:
+      "/images/products/wopet-pioneer-f01-plus/thumbnail.webp",
+    comparison:
+      "/images/products/wopet-pioneer-f01-plus/comparison.webp",
+    gallery: [
+      "/images/products/wopet-pioneer-f01-plus/gallery-1.webp",
+      "/images/products/wopet-pioneer-f01-plus/gallery-2.webp",
+      "/images/products/wopet-pioneer-f01-plus/gallery-3.webp"
+    ]
+  },
+  badge: "Großer Offline-Vorrats-Tipp",
+  recommendation:
+    "Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen.",
+  rating: 4.2,
+  capacity: "7 Liter",
+  useCase:
+    "Für Katzen sowie kleine bis mittelgroße Hunde mit hohem Trockenfutterbedarf und ohne Bedarf an App-Steuerung",
+  highlights: [
+    "Großer 7-Liter-Vorratsbehälter",
+    "Bis zu fünf Mahlzeiten täglich programmierbar",
+    "Persönliche Sprachaufnahme mit bis zu zehn Sekunden"
+  ],
+  pros: [
+    "Großer Vorrat für längere Nachfüllintervalle",
+    "Fütterungsplan funktioniert ohne WLAN oder App",
+    "Batterie-Backup schützt die Fütterung bei Stromausfällen"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Keine Fernsteuerung per App",
+    "Benötigt deutlich mehr Stellfläche als kompakte Modelle"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter, etwa 5 bis 15 mm"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Nein"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "7 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "Bis zu 5 pro Tag"
+    },
+    {
+      label: "Portionierung",
+      value: "Bis zu 40 Portionen pro Mahlzeit"
+    },
+    {
+      label: "Sprachaufnahme",
+      value: "Bis zu 10 Sekunden"
+    },
+    {
+      label: "Stromversorgung",
+      value: "Netzteil und 3 D-Batterien als Backup"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen sowie kleine bis mittelgroße Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "urlaub",
+    "portionierung",
+    "trockenfutter",
+    "ohne-wlan",
+    "batteriebetrieb"
+  ],
+  ratings: {
+    app: 1,
+    portionierung: 4.5,
+    reinigung: 4,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 4,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 84,
+    beginner: 88,
+    premium: 65,
+    retrofit: 90,
+    value: 89
+  },
+  priority: 11,
+  verdict:
+    "Eine solide Wahl für große Trockenfuttervorräte und lokale Zeitpläne, wenn Kamera, WLAN und App bewusst nicht benötigt werden.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "WOPET Pioneer F01 Plus 7L Futterautomat"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
