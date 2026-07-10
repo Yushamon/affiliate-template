@@ -832,6 +832,112 @@ export const products = {
     }
   }
 }),
+"cat-mate-c300": createFeeder({
+  name: "Cat Mate C300",
+  brand: "Cat Mate",
+  manufacturer: "closer-pets",
+  manufacturerLabel: "Closer Pets / Cat Mate",
+  productUrl: "/produkt/cat-mate-c300",
+  images: {
+    hero: "/images/products/cat-mate-c300/hero.webp",
+    thumbnail: "/images/products/cat-mate-c300/thumbnail.webp",
+    comparison: "/images/products/cat-mate-c300/comparison.webp",
+    gallery: [
+      "/images/products/cat-mate-c300/gallery-1.webp",
+      "/images/products/cat-mate-c300/gallery-2.webp",
+      "/images/products/cat-mate-c300/gallery-3.webp"
+    ]
+  },
+  badge: "Wochenend-Tipp",
+  recommendation:
+    "Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN.",
+  rating: 4.4,
+  capacity: "3 Mahlzeiten mit je bis zu 330 g",
+  useCase:
+    "Für Katzen und kleine Hunde, die bis zu drei vorbereitete Mahlzeiten erhalten sollen.",
+  highlights: [
+    "Drei separat programmierbare Mahlzeiten",
+    "Für Nass- und Trockenfutter geeignet",
+    "Kühlakku unter den Futterschalen"
+  ],
+  pros: [
+    "Ideal für Wochenenden oder kurze Abwesenheiten",
+    "Keine App oder Internetverbindung notwendig",
+    "Leicht zu reinigen"
+  ],
+  cons: [
+    "Keine aktive Kühlung",
+    "Nur drei Mahlzeiten",
+    "Mechanische Bedienung"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Nass- und Trockenfutter"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Nein"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "3 Schalen mit je bis zu 330 g"
+    },
+    {
+      label: "Timer",
+      value: "Bis zu 48 Stunden"
+    },
+    {
+      label: "Kühlung",
+      value: "Kühlakku"
+    },
+    {
+      label: "Stromversorgung",
+      value: "3 AA-Batterien"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "nassfutter",
+    "trockenfutter",
+    "portionierung",
+    "ohne-wlan",
+    "batteriebetrieb",
+    "preisleistung"
+  ],
+  ratings: {
+    app: 1,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.5,
+    sicherheit: 4,
+    preisleistung: 4.5
+  },
+  ranking: {
+    overall: 85,
+    beginner: 93,
+    premium: 60,
+    retrofit: 93,
+    value: 91
+  },
+  priority: 5,
+  verdict:
+    "Eine sehr gute Wahl für zeitgesteuerte Nassfütterung, wenn drei Mahlzeiten ausreichen und keine App benötigt wird.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "Cat Mate C300 Futterautomat"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",
