@@ -121,20 +121,6 @@ const allHubPages = uniquePages(
         <strong>Ratgeber, Vergleiche und Produktseiten</strong>
         <p>Der Wissensbereich wächst automatisch mit neuen Inhalten.</p>
 
-        {
-          import.meta.env.DEV && (
-            <details style="margin-top:16px;font-size:12px;">
-              <summary>Debug</summary>
-              <ul>
-                {allPages.map((page) => (
-                  <li>
-                    {page.data.slug} | {page.data.category ?? "-"} | {(page.data.tags ?? []).join(", ")}
-                  </li>
-                ))}
-              </ul>
-            </details>
-          )
-        }
       </div>
     </section>
 
