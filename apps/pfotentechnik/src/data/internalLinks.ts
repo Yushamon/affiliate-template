@@ -1,6 +1,14 @@
 import type { InternalLinkDictionary } from "@affiliate-core/linking/types";
+import {
+  generateInternalLinkDefinitions,
+  generateInternalLinkDictionary
+} from "@affiliate-core/linking/generator";
 
-export const internalLinks: InternalLinkDictionary = {
+import { products } from "./products";
+import { manufacturers } from "./manufacturers";
+import { decisionRules } from "./decisionRules";
+
+const manualLinks: InternalLinkDictionary = {
   wissen: {
     id: "wissen",
     keywords: [
@@ -11,7 +19,8 @@ export const internalLinks: InternalLinkDictionary = {
     priority: "low",
     maxOccurrences: 1,
     title: "PfotenTechnik Wissen",
-    group: "hub"
+    group: "hub",
+    preventNestedLinks: true
   },
 
   smarteFutterautomaten: {
@@ -24,8 +33,9 @@ export const internalLinks: InternalLinkDictionary = {
     href: "/smarte-futterautomaten/",
     priority: "high",
     maxOccurrences: 1,
-    title: "Smarte Futterautomaten",
-    group: "knowledge"
+    title: "Smarte Futterautomaten im Vergleich",
+    group: "knowledge",
+    preventNestedLinks: true
   },
 
   futterautomatHund: {
@@ -38,7 +48,8 @@ export const internalLinks: InternalLinkDictionary = {
     priority: "high",
     maxOccurrences: 1,
     title: "Futterautomaten für Hunde",
-    group: "knowledge"
+    group: "knowledge",
+    preventNestedLinks: true
   },
 
   futterautomatKatze: {
@@ -51,7 +62,8 @@ export const internalLinks: InternalLinkDictionary = {
     priority: "high",
     maxOccurrences: 1,
     title: "Futterautomaten für Katzen",
-    group: "knowledge"
+    group: "knowledge",
+    preventNestedLinks: true
   },
 
   futterautomatMitApp: {
@@ -65,7 +77,8 @@ export const internalLinks: InternalLinkDictionary = {
     priority: "normal",
     maxOccurrences: 1,
     title: "Futterautomaten mit App",
-    group: "knowledge"
+    group: "knowledge",
+    preventNestedLinks: true
   },
 
   futterautomatMitKamera: {
@@ -78,98 +91,20 @@ export const internalLinks: InternalLinkDictionary = {
     priority: "normal",
     maxOccurrences: 1,
     title: "Futterautomaten mit Kamera",
-    group: "knowledge"
-  },
-
-  welpen: {
-    id: "welpen",
-    keywords: [
-      "Welpen",
-      "Futterautomat für Welpen",
-      "Futterautomaten für Welpen"
-    ],
-    href: "/beste-futterautomaten-fuer-welpen/",
-    priority: "high",
-    maxOccurrences: 1,
-    title: "Beste Futterautomaten für Welpen",
-    group: "decision"
-  },
-
-  kleineHunde: {
-    id: "kleine-hunde",
-    keywords: [
-      "kleine Hunde",
-      "Futterautomat für kleine Hunde"
-    ],
-    href: "/beste-futterautomaten-fuer-kleine-hunde/",
-    priority: "normal",
-    maxOccurrences: 1,
-    title: "Beste Futterautomaten für kleine Hunde",
-    group: "decision"
-  },
-
-  berufstaetige: {
-    id: "berufstaetige",
-    keywords: [
-      "Berufstätige",
-      "Futterautomat für Berufstätige"
-    ],
-    href: "/beste-futterautomaten-fuer-berufstaetige/",
-    priority: "normal",
-    maxOccurrences: 1,
-    title: "Beste Futterautomaten für Berufstätige",
-    group: "decision"
-  },
-
-  petlibro: {
-    id: "petlibro",
-    keywords: [
-      "Petlibro"
-    ],
-    href: "/hersteller/petlibro/",
-    priority: "high",
-    maxOccurrences: 1,
-    title: "Petlibro",
-    group: "manufacturer"
-  },
-
-  petkit: {
-    id: "petkit",
-    keywords: [
-      "PETKIT",
-      "Petkit"
-    ],
-    href: "/hersteller/petkit/",
-    priority: "high",
-    maxOccurrences: 1,
-    title: "PETKIT",
-    group: "manufacturer"
-  },
-
-  catMate: {
-    id: "cat-mate",
-    keywords: [
-      "Cat Mate"
-    ],
-    href: "/hersteller/cat-mate/",
-    priority: "high",
-    maxOccurrences: 1,
-    title: "Cat Mate",
-    group: "manufacturer"
-  },
-
-  xiaomi: {
-    id: "xiaomi",
-    keywords: [
-      "Xiaomi"
-    ],
-    href: "/hersteller/xiaomi/",
-    priority: "high",
-    maxOccurrences: 1,
-    title: "Xiaomi",
-    group: "manufacturer"
+    group: "knowledge",
+    preventNestedLinks: true
   }
 };
 
+const generatorInput = {
+  products,
+  manufacturers,
+  decisionRules,
+  manualLinks
+};
+
+export const internalLinks =
+  generateInternalLinkDictionary(generatorInput);
+
 export const internalLinkDefinitions =
-  Object.values(internalLinks);
+  generateInternalLinkDefinitions(generatorInput);
