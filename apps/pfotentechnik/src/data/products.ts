@@ -541,24 +541,24 @@ export const products = {
   }
 }),
 "petkit-yumshare-solo": createFeeder({
-  name: "PETKIT YumShare Solo",
+  name: "PETKIT YumShare Solo 2",
   brand: "PETKIT",
   manufacturer: "petkit",
   manufacturerLabel: "PETKIT",
-  productUrl: "/produkt/petkit-yumshare-solo",
+  productUrl: "/produkt/petkit-yumshare-solo-2",
   images: {
-    hero: "/images/products/petkit-yumshare-solo/hero.webp",
-    thumbnail: "/images/products/petkit-yumshare-solo/thumbnail.webp",
-    comparison: "/images/products/petkit-yumshare-solo/comparison.webp",
+    hero: "/images/products/petkit-yumshare-solo-2/hero.webp",
+    thumbnail: "/images/products/petkit-yumshare-solo-2/thumbnail.webp",
+    comparison: "/images/products/petkit-yumshare-solo-2/comparison.webp",
     gallery: [
-      "/images/products/petkit-yumshare-solo/gallery-1.webp",
-      "/images/products/petkit-yumshare-solo/gallery-2.webp",
-      "/images/products/petkit-yumshare-solo/gallery-3.webp"
+      "/images/products/petkit-yumshare-solo-2/gallery-1.webp",
+      "/images/products/petkit-yumshare-solo-2/gallery-2.webp",
+      "/images/products/petkit-yumshare-solo-2/gallery-3.webp"
     ]
   },
   badge: "Top Empfehlung mit Kamera",
   recommendation:
-    "Der PETKIT YumShare Solo kombiniert einen zuverlässigen Futterautomaten mit integrierter Kamera und App-Steuerung. Ideal für Katzen und kleine Hunde.",
+    "Der PETKIT YumShare Solo 2kombiniert einen zuverlässigen Futterautomaten mit integrierter Kamera und App-Steuerung. Ideal für Katzen und kleine Hunde.",
   rating: 4.8,
   capacity: "3 Liter",
   useCase:
@@ -616,10 +616,10 @@ export const products = {
   },
   priority: 2,
   verdict:
-    "Der YumShare Solo gehört aktuell zu den besten smarten Futterautomaten mit Kamera und überzeugt durch zuverlässige Portionierung sowie eine sehr gute App.",
+    "Der YumShare Solo 2 gehört aktuell zu den besten smarten Futterautomaten mit Kamera und überzeugt durch zuverlässige Portionierung sowie eine sehr gute App.",
   merchantLinks: {
     amazon: {
-      searchQuery: "PETKIT YumShare Solo"
+      searchQuery: "PETKIT YumShare Solo 2"
     }
   }
 }),
