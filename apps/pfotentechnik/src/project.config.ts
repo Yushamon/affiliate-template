@@ -41,7 +41,7 @@ export const projectConfig = {
     { label: "Für Hunde", href: "/futterautomat-hund" },
     { label: "Vergleiche", href: "/#vergleiche" },
     { label: "Hersteller", href: "/#hersteller" },
-    { label: "Ratgeber", href: "/#ratgeber" },
+    { label: "Wissen", href: "/wissen/" },
   ],
   home: {
     seo: {
@@ -61,8 +61,8 @@ export const projectConfig = {
         href: "/smarte-futterautomaten"
       },
       secondaryAction: {
-        label: "Ratgeber lesen",
-        href: "#ratgeber"
+        label: "Wissen entdecken",
+        href: "/wissen/"
       },
       imageAlt:
         "Katze und Hund in einem hellen Zuhause neben einem modernen Futterautomaten",
@@ -173,7 +173,7 @@ export const projectConfig = {
           { label: "Für Katzen", href: "/futterautomat-katze" },
           { label: "Für Hunde", href: "/futterautomat-hund" },
           { label: "Vergleiche", href: "/#vergleiche" },
-          { label: "Ratgeber", href: "/#ratgeber" }
+          { label: "Wissen", href: "/wissen/" }
         ]
       },
       {
