@@ -1,22 +1,52 @@
-
-
 # Content Architecture
 
-## Ziel
+Version: 1.0
 
-Alle Affiliate-Projekte verwenden dieselbe Content-Architektur. Projekte unterscheiden sich nur durch Inhalte, Produkte und Konfigurationen – nicht durch die Struktur.
+Dieses Dokument beschreibt die Architektur aller Affiliate-Projekte.
+
+Neue Projekte sollen dieselbe Struktur verwenden.
 
 ---
 
-# Seitentypen
+# Grundprinzipien
 
-Jede Inhaltsseite gehört genau einem Typ an.
+Das Framework folgt drei Regeln.
 
-| Typ | Zweck |
-| --- | --- |
+## 1. Convention over Configuration
+
+Inhalte folgen festen Konventionen.
+
+Je weniger individuelle Sonderfälle existieren, desto einfacher wird die Pflege.
+
+---
+
+## 2. Daten statt Logik
+
+Produkte, Hersteller und Seiten beschreiben ihre Eigenschaften.
+
+Renderer, Engines und Komponenten entscheiden anhand dieser Daten.
+
+Nicht umgekehrt.
+
+---
+
+## 3. Wiederverwendbarkeit
+
+Alles, was mindestens zwei Projekte nutzen können, gehört in den affiliate-core.
+
+Projektlogik bleibt innerhalb der jeweiligen App.
+
+---
+
+# Content-Typen
+
+Jede Seite besitzt genau einen Content-Typ.
+
+| Typ | Beschreibung |
+|------|--------------|
 | hub | Themenübersicht |
 | knowledge | Wissensartikel |
-| decision | Kaufentscheidung |
+| decision | Entscheidungshilfe |
 | product | Produktdetailseite |
 | manufacturer | Herstellerseite |
 | legal | Impressum, Datenschutz usw. |
@@ -25,124 +55,296 @@ Jede Inhaltsseite gehört genau einem Typ an.
 
 # Cluster
 
-Cluster beschreiben das übergeordnete Thema einer Seite.
+Cluster gruppieren Inhalte.
 
-PfotenTechnik:
+PfotenTechnik
 
-- ernaehrung
-- gesundheit
-- alltag
-- kaufberatung
-- hersteller
+* Ernährung
+* Gesundheit
+* Alltag
+* Kaufberatung
+* Hersteller
 
 Weitere Projekte definieren eigene Cluster.
 
 ---
 
-# Frontmatter
+# Produktdaten
 
-Jede Seite darf optional besitzen:
+Alle Produktinformationen liegen ausschließlich in
 
-```yaml
-hub:
-  cluster: ernaehrung
-  type: knowledge
-  featured: false
-  priority: 50
+```
+products.ts
 ```
 
-Bedeutung:
+Dort befinden sich
 
-- cluster
-  Ordnet die Seite einem Wissensbereich zu.
+* Bewertungen
+* Spezifikationen
+* Bilder
+* Hersteller
+* Affiliate Links
+* Rankings
+* Use Cases
 
-- type
-  Bestimmt den Seitentyp.
-
-- featured
-  Seite erscheint im Hero oder im Empfehlungsbereich.
-
-- priority
-  Sortierung innerhalb eines Clusters.
+Produktseiten greifen ausschließlich auf diese Daten zu.
 
 ---
 
-# Decision Pages
+# Hersteller
 
-Decision Pages enthalten ausschließlich redaktionellen Inhalt.
-
-Automatisch gerendert werden:
-
-- Top-Empfehlung
-- Vergleich
-- Zusammenfassung
-- Geeignet für
-- Nicht geeignet für
-- Kauf-Checkliste
-- Typische Fehler
-- Alternativen
-- Entscheidungsbaum
-- Fachquellen
-
-Markdown enthält nur:
-
-- Einleitung
-- PremiumRenderer-Blöcke
-- Besonderheiten
-- Hinweise
-- Interne Links
-- Fazit
-
----
-
-# Produktseiten
-
-Produktseiten verwenden ausschließlich Produktdaten aus `products.ts` und die Affiliate Engine.
-
-Produktbilder folgen der Standardstruktur:
+Alle Herstellerdaten liegen ausschließlich in
 
 ```
-public/images/products/<product-key>/
+manufacturers.ts
 ```
 
----
-
-# Herstellerseiten
-
-Herstellerseiten beziehen ihre Informationen ausschließlich aus `manufacturers.ts`.
+Herstellerseiten enthalten keine doppelten Produktinformationen.
 
 Produktlisten werden automatisch erzeugt.
 
 ---
 
-# Wissens-Hub
+# Decision Engine
 
-Der Wissens-Hub verwendet ausschließlich `hub.cluster`, `hub.type`, `hub.featured` und `hub.priority`.
+Decision Pages definieren lediglich
 
-Keine Heuristiken anhand von Slugs oder Tags.
+```
+decisionKey
+```
+
+Die Engine erzeugt automatisch
+
+* Produktempfehlungen
+* Vergleich
+* Kauf-Checkliste
+* Geeignet für
+* Nicht geeignet
+* Typische Fehler
+* Alternativen
+* Entscheidungsbaum
+* Quellen
+
+Markdown enthält ausschließlich redaktionellen Inhalt.
 
 ---
 
-# Designprinzipien
+# Link Engine
 
-- Convention over Configuration
-- Inhalte vor Logik
-- Wiederverwendbare Core-Komponenten
-- Automatische Produktempfehlungen
-- Automatische interne Verlinkung
-- Mobile First
-- Kurze Ladezeiten
-- SEO und E-E-A-T als Standard
+Interne Links werden nicht manuell gepflegt.
+
+Der Renderer erzeugt sie automatisch.
+
+Quellen
+
+* Produkte
+* Hersteller
+* Decision Pages
+* manuelle Hub Links
+
+Später zusätzlich
+
+* Wissensseiten
+
+---
+
+# Context-System
+
+Interne Links besitzen optional
+
+```
+contexts
+```
+
+Beispiel
+
+```
+contexts:
+
+- futterautomaten
+```
+
+Dadurch kann derselbe Begriff in unterschiedlichen Themen auf verschiedene Ziele zeigen.
+
+Beispiel
+
+Welpen
+
+↓
+
+Futterautomaten
+
+↓
+
+Decision Page
+
+oder
+
+GPS Tracker
+
+↓
+
+GPS Decision Page
+
+---
+
+# Bilder
+
+Projektbilder
+
+```
+projectImages
+```
+
+Produktbilder
+
+```
+public/images/products/<product>
+```
+
+Seitenbilder
+
+```
+public/images/pages/<slug>
+```
+
+Hero
+
+```
+hero.webp
+```
+
+---
+
+# Wissens-Hub
+
+Der Wissens-Hub gruppiert Seiten nach
+
+* Cluster
+* Typ
+
+Nicht anhand von Slugs.
+
+Nicht anhand von Tags.
+
+---
+
+# PremiumRenderer
+
+Markdown enthält keine Komponenten.
+
+PremiumRenderer rendert
+
+* Hero
+* QuickFacts
+* Answer
+* Decision Box
+* usw.
+
+automatisch.
+
+---
+
+# Produktmodell
+
+Jedes Produkt besitzt
+
+* Ranking
+* Bewertungen
+* Spezifikationen
+* Bilder
+* Hersteller
+* Use Cases
+
+Geplant
+
+* Preis
+* Lifecycle
+
+---
+
+# Preis
+
+Produkte erhalten künftig
+
+```
+price
+```
+
+mit
+
+* Preis
+* Quelle
+* Datum
+* Preisniveau
+
+Preis beeinflusst später
+
+nicht
+
+die Qualität,
+
+sondern
+
+den
+
+Value Score.
+
+---
+
+# Lifecycle
+
+Produkte erhalten künftig
+
+```
+lifecycle
+```
+
+mit
+
+* Veröffentlichungsdatum
+* Generation
+* Status
+* Nachfolger
+
+Dadurch können veraltete Produkte später automatisch erkannt werden.
+
+---
+
+# SEO
+
+Alle Seiten beantworten die Suchintention möglichst früh.
+
+Interne Verlinkung erfolgt automatisch.
+
+Produktdaten werden nicht mehrfach gepflegt.
+
+---
+
+# Mobile First
+
+Alle Komponenten werden zuerst für Smartphones entwickelt.
+
+Desktop ist lediglich eine Erweiterung.
+
+---
+
+# Affiliate
+
+Affiliate Links stammen ausschließlich aus
+
+Affiliate Engine
+
+Nicht aus Markdown.
 
 ---
 
 # Zielbild
 
-Neue Projekte sollen mit minimalem Aufwand entstehen:
+Ein neues Projekt benötigt lediglich
 
-1. Projekt konfigurieren
-2. Produkte anlegen
-3. Hersteller anlegen
-4. Inhalte schreiben
+* Produkte
+* Hersteller
+* Seiten
 
-Alle anderen Funktionen werden vom Core bereitgestellt.
+Alle anderen Funktionen stellt der Core bereit.

@@ -1,57 +1,57 @@
 # Roadmap
 
-## Core
+## Sprint 1
 
-██████████
+Product Expansion
 
-100 %
+Ziel:
 
----
-
-SEO
-
-████████░░
-
-80 %
+40–50 Produkte.
 
 ---
 
-Balkonspeicher
+## Sprint 2
 
-██████████
+Herstellerseiten 2.0
 
-100 %
-
----
-
-Vergleichsseiten
-
-████████░░
-
-80 %
+- Geschichte
+- Unterschiede
+- Produktlinien
+- FAQ
+- Alternativen
 
 ---
 
-Entity SEO
+## Sprint 3
 
-██████░░░░
+Produktbilder
 
-60 %
-
----
-
-Pet Tech
-
-░░░░░░░░░░
-
-0 %
+Alle Produkte vollständig.
 
 ---
 
-Nächstes Ziel
+## Sprint 4
 
-Affiliate Core V1
+Search Console
 
-danach
+Optimierung anhand echter Daten.
 
-Pet Tech
+---
+
+## Sprint 5
+
+Rankings
+
+Optimierung bestehender Seiten.
+
+---
+
+# Später
+
+Preis-System
+
+Produkt-Lifecycle
+
+GuideHub V2
+
+Link Analytics
