@@ -11,8 +11,17 @@ export interface LinkMatch {
 }
 
 export interface LinkEngineOptions {
+
   maxLinksPerPage?: number;
+
   ignoredTags?: string[];
+
+  sourceGroup?: string;
+
+  sourcePath?: string;
+
+  sourceContext?: string;
+
 }
 
 const priorityWeight: Record<LinkPriority, number> = {
@@ -27,17 +36,42 @@ const escapeRegExp = (value: string) =>
 const getPriorityWeight = (
   definition: InternalLinkDefinition
 ) => priorityWeight[definition.priority ?? "normal"];
+const normalizeContext = (value?: string) =>
+
+  value?.trim().toLowerCase();
+const matchesSourceContext = (
+  definition: InternalLinkDefinition,
+  sourceContext?: string
+) => {
+  if (!definition.contexts || definition.contexts.length === 0) {
+    return true;
+  }
+
+  const normalizedSourceContext = normalizeContext(sourceContext);
+  if (!normalizedSourceContext) {
+    return false;
+  }
+
+  return definition.contexts.some(
+    (context) =>
+      normalizeContext(context) === normalizedSourceContext
+  );
+};
 
 const getKeywordPattern = (keyword: string) =>
   new RegExp(`\\b${escapeRegExp(keyword)}\\b`, "giu");
 
 export const findInternalLinkMatches = (
   text: string,
-  definitions: InternalLinkDefinition[]
+  definitions: InternalLinkDefinition[],
+  options: LinkEngineOptions = {}
 ): LinkMatch[] => {
   const matches: LinkMatch[] = [];
-
   for (const definition of definitions) {
+    if (!matchesSourceContext(definition, options.sourceContext)) {
+      continue;
+    }
+
     const sortedKeywords = [...definition.keywords]
       .filter(Boolean)
       .sort((a, b) => b.length - a.length);
@@ -104,7 +138,7 @@ export const selectInternalLinkMatches = (
   const maxLinksPerPage = options.maxLinksPerPage ?? 12;
   const accepted: LinkMatch[] = [];
   const occurrences = new Map<string, number>();
-
+const linkedTargets = new Set<string>();
   for (const match of matches) {
     if (accepted.length >= maxLinksPerPage) {
       break;
@@ -113,7 +147,11 @@ export const selectInternalLinkMatches = (
     if (overlaps(match, accepted)) {
       continue;
     }
+ if (linkedTargets.has(match.definition.href)) {
 
+      continue;
+
+    }
     const currentOccurrences =
       occurrences.get(match.definition.id) ?? 0;
 
@@ -125,6 +163,7 @@ export const selectInternalLinkMatches = (
     }
 
     accepted.push(match);
+    linkedTargets.add(match.definition.href);
     occurrences.set(
       match.definition.id,
       currentOccurrences + 1
@@ -140,7 +179,7 @@ export const createInternalLinkHtml = (
   options: LinkEngineOptions = {}
 ) => {
   const matches = selectInternalLinkMatches(
-    findInternalLinkMatches(text, definitions),
+    findInternalLinkMatches(text, definitions, options),
     options
   );
 

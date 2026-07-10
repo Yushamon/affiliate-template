@@ -1,37 +1,67 @@
 ---
+
 import { createInternalLinkedHtml } from "../linking/htmlLinker";
 
 import type { InternalLinkDefinition } from "../linking/types";
+
 import type { InternalLinkGroup } from "../linking/rules";
 
 interface Props {
+
   definitions: InternalLinkDefinition[];
+
   sourcePath?: string;
+
   sourceGroup?: InternalLinkGroup;
+
+  sourceContext?: string;
+
   maxLinksPerPage?: number;
+
   ignoredTags?: string[];
+
 }
 
 const {
+
   definitions,
+
   sourcePath,
+
   sourceGroup,
+
+  sourceContext,
+
   maxLinksPerPage = 12,
+
   ignoredTags = []
+
 } = Astro.props;
 
 const originalHtml = await Astro.slots.render("default");
 
 const linkedHtml = createInternalLinkedHtml(
+
   originalHtml,
+
   definitions,
+
   {
+
     sourcePath,
+
     sourceGroup,
+
+    sourceContext,
+
     maxLinksPerPage,
+
     ignoredTags
+
   }
+
 );
+
 ---
 
 <div class="auto-link-content" set:html={linkedHtml}></div>

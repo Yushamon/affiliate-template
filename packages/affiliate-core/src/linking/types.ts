@@ -56,7 +56,27 @@ export interface InternalLinkDefinition {
    * knowledge
    */
   group?: string;
+/**
 
+   * Themenbereiche, in denen dieser Link verwendet werden darf.
+
+   *
+
+   * Beispiele:
+
+   * futterautomaten
+
+   * gps-tracker
+
+   * trinkbrunnen
+
+   *
+
+   * Ohne contexts darf der Link projektweit verwendet werden.
+
+   */
+
+  contexts?: string[];
   /**
    * Verhindert,
    * dass innerhalb

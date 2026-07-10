@@ -7,6 +7,7 @@ seoDescription: "Futterautomaten für Hunde im Vergleich: Welche Modelle passen 
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten"
+linkContext: "futterautomaten"
 tags:
   - "Futterautomat"
   - "Hund"

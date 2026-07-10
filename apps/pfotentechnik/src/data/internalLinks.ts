@@ -94,7 +94,83 @@ const manualLinks: InternalLinkDictionary = {
     title: "Futterautomaten mit Kamera",
     group: "knowledge",
     preventNestedLinks: true
-  }
+  },
+    futterautomatWelpenAlias: {
+    id: "futterautomat-welpen-alias",
+    keywords: [
+      "Welpen",
+      "Welpe"
+    ],
+    href: "/beste-futterautomaten-fuer-welpen/",
+    priority: "normal",
+    maxOccurrences: 1,
+    title: "Futterautomaten für Welpen",
+    group: "decision",
+    preventNestedLinks: true,
+    contexts: ["futterautomaten"]
+  },
+
+  futterautomatKleineHundeAlias: {
+    id: "futterautomat-kleine-hunde-alias",
+    keywords: [
+      "kleine Hunde",
+      "kleiner Hund"
+    ],
+    href: "/beste-futterautomaten-fuer-kleine-hunde/",
+    priority: "normal",
+    maxOccurrences: 1,
+    title: "Futterautomaten für kleine Hunde",
+    group: "decision",
+    preventNestedLinks: true,
+    contexts: ["futterautomaten"]
+  },
+
+  futterautomatBerufstaetigeAlias: {
+    id: "futterautomat-berufstaetige-alias",
+    keywords: [
+      "Berufstätige",
+      "berufstätige Hundehalter"
+    ],
+    href: "/beste-futterautomaten-fuer-berufstaetige/",
+    priority: "normal",
+    maxOccurrences: 1,
+    title: "Futterautomaten für Berufstätige",
+    group: "decision",
+    preventNestedLinks: true,
+    contexts: ["futterautomaten"]
+  },
+
+  futterautomatMehrtierAlias: {
+    id: "futterautomat-mehrtier-alias",
+    keywords: [
+      "Mehrtierhaushalte",
+      "Mehrtierhaushalt",
+      "mehrere Tiere"
+    ],
+    href: "/beste-futterautomaten-fuer-mehrtierhaushalte/",
+    priority: "normal",
+    maxOccurrences: 1,
+    title: "Futterautomaten für Mehrtierhaushalte",
+    group: "decision",
+    preventNestedLinks: true,
+    contexts: ["futterautomaten"]
+  },
+
+  futterautomatAkkuAlias: {
+    id: "futterautomat-akku-alias",
+    keywords: [
+      "Akku",
+      "Batterie-Backup",
+      "Notstromversorgung"
+    ],
+    href: "/beste-futterautomaten-mit-akku/",
+    priority: "normal",
+    maxOccurrences: 1,
+    title: "Futterautomaten mit Akku",
+    group: "decision",
+    preventNestedLinks: true,
+    contexts: ["futterautomaten"]
+  },
 };
 
 const manufacturerRecord = Object.fromEntries(

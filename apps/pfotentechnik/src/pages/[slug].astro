@@ -95,6 +95,9 @@ const autoLinkSourceGroup = page.data.decisionKey
   ? "decision"
 
   : "knowledge";
+  const autoLinkSourceContext =
+  page.data.linkContext ??
+  page.data.category;
 const comparisonProducts = decisionProducts.length > 0
   ? decisionProducts
   : (page.data.comparisonProducts ?? [])
@@ -340,21 +343,23 @@ const relatedPages = allPages
       )
     }
 
-  <AutoLinkContent
+<AutoLinkContent
 
-      definitions={internalLinkDefinitions}
+  definitions={internalLinkDefinitions}
 
-      sourcePath={`/${page.data.slug}/`}
+  sourcePath={`/${page.data.slug}/`}
 
-      sourceGroup={autoLinkSourceGroup}
+  sourceGroup={autoLinkSourceGroup}
 
-      maxLinksPerPage={10}
+  sourceContext={autoLinkSourceContext}
 
-    >
+  maxLinksPerPage={10}
 
-      <Content />
+>
 
-    </AutoLinkContent>
+  <Content />
+
+</AutoLinkContent>
 
     {
       decisionRule?.sources && decisionRule.sources.length > 0 && (
