@@ -1,7 +1,8 @@
 import type { InternalLinkDictionary } from "@affiliate-core/linking/types";
 import {
   generateInternalLinkDefinitions,
-  generateInternalLinkDictionary
+  generateInternalLinkDictionary,
+  type LinkGeneratorInput
 } from "@affiliate-core/linking/generator";
 
 import { products } from "./products";
@@ -96,10 +97,19 @@ const manualLinks: InternalLinkDictionary = {
   }
 };
 
-const generatorInput = {
-  products,
-  manufacturers,
-  decisionRules,
+const manufacturerRecord = Object.fromEntries(
+  manufacturers.map((manufacturer) => [
+    manufacturer.key ?? manufacturer.slug ?? manufacturer.name,
+    manufacturer
+  ])
+);
+
+const generatorInput: LinkGeneratorInput = {
+  products: products as LinkGeneratorInput["products"],
+  manufacturers:
+    manufacturerRecord as LinkGeneratorInput["manufacturers"],
+  decisionRules:
+    decisionRules as LinkGeneratorInput["decisionRules"],
   manualLinks
 };
 
