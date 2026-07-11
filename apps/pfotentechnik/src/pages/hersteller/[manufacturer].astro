@@ -55,7 +55,7 @@ const faq =
           question:
             `Worauf sollte man bei ${manufacturer.name} achten?`,
           answer:
-            "Entscheidend sind Produktkategorie, Funktionsumfang, App-Kompatibilität, Ersatzteilversorgung und die Verfügbarkeit in Deutschland."
+            "Entscheidend sind Produktkategorie, Funktionsumfang, App-Kompatibilität, Ersatzteilversorgung und die regionale Verfügbarkeit."
         }
       ];
 
@@ -279,9 +279,9 @@ const ratingStars = (rating: number) => {
         {manufacturer.name}
       </h1>
 
-      <p class="manufacturer-subtitle">
-        Premium-Hersteller für smarte Haustiertechnik
-      </p>
+     <p class="manufacturer-subtitle">
+  Hersteller für smarte Haustiertechnik
+</p>
 
       {
         manufacturer.rating && (
@@ -387,79 +387,70 @@ const ratingStars = (rating: number) => {
 
       </div>
 
-      <div class="manufacturer-stats">
+<div class="manufacturer-stats">
+  <div>
+    <span>📦</span>
 
-        <div>
+    <strong>
+      {manufacturer.products.length}
+    </strong>
 
-          <span>📍</span>
+    <small>
+      Produkte
+    </small>
+  </div>
 
-          <strong>
-            Deutschland
-          </strong>
+  <div>
+    <span>🧩</span>
 
-          <small>
-            verfügbar
-          </small>
+    <strong>
+      {manufacturer.series?.length ?? 0}
+    </strong>
 
-        </div>
+    <small>
+      Serien
+    </small>
+  </div>
 
-        <div>
+  <div>
+    <span>🗂️</span>
 
-          <span>📱</span>
+    <strong>
+      {
+        manufacturer.productAreas?.length ??
+        manufacturer.productCategories.length
+      }
+    </strong>
 
-          <strong>
-            Eigene App
-          </strong>
+    <small>
+      Produktbereiche
+    </small>
+  </div>
 
-          <small>
-            modellabhängig
-          </small>
+  <div>
+    <span>🎯</span>
 
-        </div>
+    <strong>
+      {manufacturer.focus.length}
+    </strong>
 
-        <div>
+    <small>
+      Schwerpunkte
+    </small>
+  </div>
 
-          <span>📦</span>
+  <div>
+    <span>🔎</span>
 
-          <strong>
-            {manufacturer.products.length}
-          </strong>
+    <strong>
+      {manufacturer.sources?.length ?? 0}
+    </strong>
 
-          <small>
-            Produkte
-          </small>
-
-        </div>
-
-        <div>
-
-          <span>🧩</span>
-
-          <strong>
-            {manufacturer.series?.length ?? 0}
-          </strong>
-
-          <small>
-            Serien
-          </small>
-
-        </div>
-
-        <div>
-
-          <span>🛠️</span>
-
-          <strong>
-            Support
-          </strong>
-
-          <small>
-            Deutschland
-          </small>
-
-        </div>
-
-      </div>
+    <small>
+      Quellen
+    </small>
+  </div>
+</div>
 
     </div>
 
@@ -2397,10 +2388,11 @@ const ratingStars = (rating: number) => {
       font-size: clamp(1.5rem, 3vw, 1.9rem);
     }
 
-    .manufacturer-hero-media,
-    .manufacturer-hero-image {
-      min-height: 560px;
-    }
+ .manufacturer-hero-media,
+.manufacturer-hero-image,
+.manufacturer-hero-fallback {
+  min-height: 560px;
+}
 
     .manufacturer-stats {
       right: 14px;
@@ -2472,10 +2464,11 @@ const ratingStars = (rating: number) => {
       margin-top: 22px;
     }
 
-    .manufacturer-hero-media,
-    .manufacturer-hero-image {
-      min-height: 390px;
-    }
+.manufacturer-hero-media,
+.manufacturer-hero-image,
+.manufacturer-hero-fallback {
+  min-height: 390px;
+}
 
     .manufacturer-trust-badge {
       top: 14px;
