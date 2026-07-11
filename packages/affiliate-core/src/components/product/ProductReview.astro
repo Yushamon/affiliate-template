@@ -1,406 +1,1079 @@
 ---
 import ProductBox from "../ProductBox.astro";
-import { products, type ProductKey } from "@app/data/products";
-import { productReviews } from "@app/data/productReviews";
-import { stripLeadingIcon } from "../../utils/content";
-import { getScoreLabel, getWeightedProductScore } from "@app/data/productScoring";
-import { getPrimaryAffiliateLink } from "../../affiliate/affiliateEngine";
-import { projectConfig } from "@app/project.config";
-import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import ProductImage from "../ProductImage.astro";
+
+import {
+  products,
+  type ProductKey
+} from "@app/data/products";
+
+import {
+  productReviews
+} from "@app/data/productReviews";
+
+import {
+  getScoreLabel,
+  getWeightedProductScore
+} from "@app/data/productScoring";
+
+import {
+  DEFAULT_PROJECT,
+  getProjectImage
+} from "@app/data/projectImages";
+
+import {
+  projectConfig
+} from "@app/project.config";
+
+import {
+  getPrimaryAffiliateLink
+} from "../../affiliate/affiliateEngine";
+
+import {
+  stripLeadingIcon
+} from "../../utils/content";
+
 import {
   getProductGallery,
   getProductHeroImage
 } from "../../utils/productImages";
-import ProductImage from "../ProductImage.astro";
 
 interface Props {
   productKey: ProductKey;
 }
 
-const { productKey } = Astro.props;
+const { productKey } = Astro.props as Props;
 
 const product = products[productKey];
+
 const productHeroImage = product
-
   ? getProductHeroImage(
-
       product,
-
-      getProjectImage(DEFAULT_PROJECT, "product"),
-
+      getProjectImage(
+        DEFAULT_PROJECT,
+        "product"
+      ),
       productKey
-
     )
-
   : getProductHeroImage(
-
       {},
-
-      getProjectImage(DEFAULT_PROJECT, "product")
-
+      getProjectImage(
+        DEFAULT_PROJECT,
+        "product"
+      )
     );
 
 const productGallery = product
-
-  ? getProductGallery(product, productKey)
-
+  ? getProductGallery(
+      product,
+      productKey
+    )
   : [];
-const score = product ? getWeightedProductScore(productKey) : 0;
-const scoreLabel = getScoreLabel(score);
+
+const score = product
+  ? getWeightedProductScore(productKey)
+  : 0;
+
+const scoreLabel =
+  getScoreLabel(score);
+
 const primaryLink = product
-  ? getPrimaryAffiliateLink(product, projectConfig.affiliate ?? {})
+  ? getPrimaryAffiliateLink(
+      product,
+      projectConfig.affiliate ?? {}
+    )
   : null;
-const review = productReviews[productKey] ?? (product
-  ? {
-      summary: product.review.summary,
-      verdict: product.review.verdict,
-      pros: product.pros,
-      cons: product.cons,
-      bestFor: product.bestFor,
-      notFor: product.notFor,
-      ratings: product.ratings
-    }
-  : null);
+
+const review =
+  productReviews[productKey] ??
+  (
+    product
+      ? {
+          summary:
+            product.review.summary,
+
+          verdict:
+            product.review.verdict,
+
+          pros:
+            product.pros,
+
+          cons:
+            product.cons,
+
+          bestFor:
+            product.bestFor,
+
+          notFor:
+            product.notFor,
+
+          ratings:
+            product.ratings
+        }
+      : null
+  );
 
 const legacySpecs = product
   ? [
-      { label: "Hersteller", value: product.manufacturerLabel },
-      { label: "Kategorie", value: product.category },
-      { label: "Kapazität", value: product.capacity },
-      { label: "Erweiterbar", value: product.expandable },
-      { label: "Einsatzbereich", value: product.useCase },
-      { label: "Bewertung", value: `${product.rating} / 5` }
+      {
+        label: "Hersteller",
+        value:
+          product.manufacturerLabel
+      },
+      {
+        label: "Kategorie",
+        value:
+          product.category
+      },
+      {
+        label: "Kapazität",
+        value:
+          product.capacity
+      },
+      {
+        label: "Erweiterbar",
+        value:
+          product.expandable
+      },
+      {
+        label: "Einsatzbereich",
+        value:
+          product.useCase
+      },
+      {
+        label: "Bewertung",
+        value:
+          `${product.rating} / 5`
+      }
     ]
   : [];
 
-const specs = product?.specs?.length ? product.specs : legacySpecs;
+const specs =
+  product?.specs?.length
+    ? product.specs
+    : legacySpecs;
 
-const ratingLabels: Record<string, string> = {
-  installation: "Installation",
-  app: "App",
-  flexibility: "Flexibilität",
-  pricePerformance: "Preis-Leistung",
-  expandability: "Erweiterbarkeit",
-  battery: "Akku",
-  cleaning: "Reinigung",
-  noise: "Lautstärke",
-  safety: "Sicherheit",
-  portionierung: "Portionierung",
-  reinigung: "Reinigung",
-  zuverlaessigkeit: "Zuverlässigkeit",
-  preisleistung: "Preis-Leistung"
-};
+const ratingLabels:
+  Record<string, string> = {
+    installation:
+      "Installation",
 
-const getRatingLabel = (key: string) => {
+    app:
+      "App",
+
+    flexibility:
+      "Flexibilität",
+
+    pricePerformance:
+      "Preis-Leistung",
+
+    expandability:
+      "Erweiterbarkeit",
+
+    battery:
+      "Akku",
+
+    cleaning:
+      "Reinigung",
+
+    noise:
+      "Lautstärke",
+
+    safety:
+      "Sicherheit",
+
+    portionierung:
+      "Portionierung",
+
+    reinigung:
+      "Reinigung",
+
+    zuverlaessigkeit:
+      "Zuverlässigkeit",
+
+    preisleistung:
+      "Preis-Leistung"
+  };
+
+const getRatingLabel = (
+  key: string
+) => {
   if (ratingLabels[key]) {
     return ratingLabels[key];
   }
 
   return key
-    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
-    .replace(/[-_]+/g, " ")
+    .replace(
+      /([a-z0-9])([A-Z])/g,
+      "$1 $2"
+    )
+    .replace(
+      /[-_]+/g,
+      " "
+    )
     .trim()
-    .replace(/\b\w/g, (character) => character.toUpperCase());
+    .replace(
+      /\b\w/g,
+      (character) =>
+        character.toUpperCase()
+    );
 };
 
 const ratingEntries =
   review?.ratings &&
   typeof review.ratings === "object" &&
-  !Array.isArray(review.ratings)
-    ? Object.entries(review.ratings).filter(([, rating]) =>
-        Number.isFinite(rating)
+  !Array.isArray(
+    review.ratings
+  )
+    ? Object
+        .entries(
+          review.ratings
+        )
+        .filter(
+          ([, rating]) =>
+            Number.isFinite(
+              rating
+            )
+        )
+    : [];
+
+const normalizedCons =
+  Array.isArray(
+    review?.cons
+  )
+    ? review.cons.map(
+        (item) =>
+          stripLeadingIcon(item)
+            .trim()
+            .toLowerCase()
       )
     : [];
-const normalizedCons = Array.isArray(review?.cons)
-  ? review.cons.map((item) =>
-      stripLeadingIcon(item).trim().toLowerCase()
+
+const uniqueNotFor =
+  Array.isArray(
+    review?.notFor
+  )
+    ? review.notFor.filter(
+        (item) => {
+          const normalizedItem =
+            stripLeadingIcon(
+              item
+            )
+              .trim()
+              .toLowerCase();
+
+          return (
+            normalizedItem.length >
+              0 &&
+            !normalizedCons.includes(
+              normalizedItem
+            )
+          );
+        }
+      )
+    : [];
+
+const bestForItems =
+  Array.isArray(
+    review?.bestFor
+  )
+    ? review.bestFor
+        .map(
+          (item) =>
+            stripLeadingIcon(
+              item
+            ).trim()
+        )
+        .filter(Boolean)
+    : product?.useCase
+      ? [
+          product.useCase
+        ]
+      : [];
+
+const attentionItems =
+  uniqueNotFor.length > 0
+    ? uniqueNotFor
+    : Array.isArray(
+          review?.cons
+        )
+      ? review.cons.slice(
+          0,
+          4
+        )
+      : [];
+
+const practicePositiveItems =
+  Array.isArray(
+    review?.pros
+  )
+    ? review.pros.slice(
+        0,
+        4
+      )
+    : [];
+
+const practiceCriticalItems =
+  Array.isArray(
+    review?.cons
+  )
+    ? review.cons.slice(
+        0,
+        4
+      )
+    : [];
+
+const stars = (
+  rating: number
+) => {
+  const normalizedRating =
+    Math.max(
+      0,
+      Math.min(
+        5,
+        Math.round(rating)
+      )
+    );
+
+  return (
+    "★".repeat(
+      normalizedRating
+    ) +
+    "☆".repeat(
+      5 -
+        normalizedRating
     )
-  : [];
-
-const uniqueNotFor = Array.isArray(review?.notFor)
-  ? review.notFor.filter((item) => {
-      const normalizedItem = stripLeadingIcon(item)
-        .trim()
-        .toLowerCase();
-
-      return (
-        normalizedItem.length > 0 &&
-        !normalizedCons.includes(normalizedItem)
-      );
-    })
-  : [];
-const stars = (rating: number) => {
-  const normalizedRating = Math.max(0, Math.min(5, Math.round(rating)));
-
-  return "★".repeat(normalizedRating) + "☆".repeat(5 - normalizedRating);
+  );
 };
-
 ---
 
-{product && review && (
-  <article class="product-review-v3">
-    <section class="product-review-hero-v3">
-      <div class="product-review-hero-copy">
-        <div class="article-category">
-          Testbericht
+{
+  product &&
+  review && (
+    <article class="product-review-v3">
+      <section class="product-review-hero-v3">
+        <div class="product-review-hero-copy">
+          <span class="product-review-eyebrow">
+            Unsere Einschätzung
+          </span>
+
+          <h1>
+            {product.name}
+          </h1>
+
+          <p class="product-review-hero-summary">
+            {review.summary}
+          </p>
+
+          <div class="product-review-hero-rating">
+            <div>
+              <span
+                class="product-review-stars"
+                aria-hidden="true"
+              >
+                {stars(
+                  product.rating
+                )}
+              </span>
+
+              <strong>
+                {product.rating}
+                {" / 5"}
+              </strong>
+            </div>
+
+            <small>
+              Redaktionelle
+              Produktbewertung
+            </small>
+          </div>
+
+          <div class="product-review-hero-score">
+            <div>
+              <strong>
+                {score}
+              </strong>
+
+              <span>
+                von 100
+              </span>
+            </div>
+
+            <p>
+              {scoreLabel}
+            </p>
+          </div>
+
+          {
+            primaryLink &&
+            primaryLink.url && (
+              <a
+                class="product-review-affiliate-cta"
+                href={
+                  primaryLink.url
+                }
+                rel={
+                  primaryLink.rel
+                }
+                target={
+                  primaryLink.target
+                }
+              >
+                {
+                  primaryLink.label
+                }
+
+                <span
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+              </a>
+            )
+          }
         </div>
 
-        <h1>
-          {product.name}
-        </h1>
+        <div
+          class="product-review-hero-image"
+          data-product-gallery
+        >
+          <div class="product-review-gallery-main">
+            <ProductImage
+              image={
+                productHeroImage
+              }
+              alt={
+                product.name
+              }
+              loading="eager"
+            />
+          </div>
+
+          {
+            productGallery.length >
+              0 && (
+              <div
+                class="product-review-gallery-thumbnails"
+                aria-label={`Weitere Bilder von ${product.name}`}
+              >
+                <button
+                  class="product-review-gallery-thumbnail is-active"
+                  type="button"
+                  aria-label="Hauptbild anzeigen"
+                  aria-pressed="true"
+                  data-product-gallery-src={
+                    productHeroImage.src
+                  }
+                >
+                  <ProductImage
+                    image={
+                      productHeroImage
+                    }
+                    alt={`${product.name} Hauptbild`}
+                  />
+                </button>
+
+                {
+                  productGallery.map(
+                    (
+                      image,
+                      index
+                    ) => (
+                      <button
+                        class="product-review-gallery-thumbnail"
+                        type="button"
+                        aria-label={`Produktbild ${index + 2} anzeigen`}
+                        aria-pressed="false"
+                        data-product-gallery-src={
+                          image
+                        }
+                      >
+                        <img
+                          src={
+                            image
+                          }
+                          alt={`${product.name} Produktbild ${index + 2}`}
+                          loading="lazy"
+                          decoding="async"
+                          onerror="this.closest('button')?.remove()"
+                        />
+                      </button>
+                    )
+                  )
+                }
+              </div>
+            )
+          }
+        </div>
+      </section>
+
+      <div
+        class="product-review-divider"
+        aria-hidden="true"
+      >
+        <span></span>
+
+        <strong>
+          🐾
+        </strong>
+
+        <span></span>
+      </div>
+
+      <section class="product-review-verdict-v3">
+        <span class="product-review-section-eyebrow">
+          Kurzfazit
+        </span>
+
+        <h2>
+          {
+            product.recommendation
+          }
+        </h2>
 
         <p>
-          {review.summary}
+          {review.verdict}
         </p>
-
-        <div class="product-review-hero-meta">
-          <div class="product-review-rating">
-            <strong>
-              {product.rating} / 5
-            </strong>
-
-            <span>
-              Unsere Bewertung
-            </span>
-          </div>
-
-          <div class="product-review-score">
-            <strong>{score}</strong>
-            <span>{scoreLabel}</span>
-          </div>
-        </div>
-
-        {primaryLink && primaryLink.url && (
-          <a
-            class="product-review-affiliate-cta"
-            href={primaryLink.url}
-            rel={primaryLink.rel}
-            target={primaryLink.target}
-          >
-            {primaryLink.label}
-          </a>
-        )}
-      </div>
-
-      <div class="product-review-hero-image" data-product-gallery>
-  <div class="product-review-gallery-main">
-    <ProductImage
-      image={productHeroImage}
-      alt={product.name}
-      loading="eager"
-    />
-  </div>
-
-  {productGallery.length > 0 && (
-    <div
-      class="product-review-gallery-thumbnails"
-      aria-label={`Weitere Bilder von ${product.name}`}
-    >
-      <button
-        class="product-review-gallery-thumbnail is-active"
-        type="button"
-        aria-label="Hauptbild anzeigen"
-        aria-pressed="true"
-        data-product-gallery-src={productHeroImage.src}
-      >
-        <ProductImage
-          image={productHeroImage}
-          alt={`${product.name} Hauptbild`}
-        />
-      </button>
-
-      {productGallery.map((image, index) => (
-        <button
-          class="product-review-gallery-thumbnail"
-          type="button"
-          aria-label={`Produktbild ${index + 2} anzeigen`}
-          aria-pressed="false"
-          data-product-gallery-src={image}
-        >
-          <img
-            src={image}
-            alt={`${product.name} Produktbild ${index + 2}`}
-            loading="lazy"
-            decoding="async"
-            onerror="this.closest('button')?.remove()"
-          />
-        </button>
-      ))}
-    </div>
-  )}
-</div>
-    </section>
-
-    <section class="product-verdict-v3">
-      <span>
-        Kurzfazit
-      </span>
-
-      <h2>
-        {product.recommendation}
-      </h2>
-
-      <p>
-        {review.verdict}
-      </p>
-    </section>
-
-    {ratingEntries.length > 0 && (
-      <section class="product-score-grid-v3">
-        {ratingEntries.map(([key, rating]) => (
-          <div>
-            <strong>{getRatingLabel(key)}</strong>
-            <span>{stars(rating)}</span>
-          </div>
-        ))}
       </section>
-    )}
 
-    <section class="product-review-grid-v3">
-      <div class="product-review-card-v3">
-        <h2>
-          Vorteile
-        </h2>
+      <section class="product-review-decision-v3">
+        <div class="product-review-section-heading-v3">
+          <span>
+            Entscheidungshilfe
+          </span>
 
-        <ul>
-          {review.pros.map((item) => (
-            <li class="product-review-list-item product-review-list-item-positive">
-              {stripLeadingIcon(item)}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div class="product-review-card-v3">
-        <h2>
-          Nachteile
-        </h2>
-
-        <ul>
-          {review.cons.map((item) => (
-            <li class="product-review-list-item product-review-list-item-negative">
-              {stripLeadingIcon(item)}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-
-       <section class="product-review-grid-v3">
-      <div class="product-review-card-v3">
-        <h2>Für wen geeignet</h2>
-
-        <p>{product.useCase}</p>
-      </div>
-
-      {uniqueNotFor.length > 0 && (
-        <div class="product-review-card-v3">
           <h2>
-            Weniger geeignet für
+            Passt {
+              product.name
+            } zu mir?
           </h2>
 
-          <ul>
-            {uniqueNotFor.map((item) => (
-              <li class="product-review-list-item product-review-list-item-negative">
-                {stripLeadingIcon(item)}
-              </li>
-            ))}
-          </ul>
+          <p>
+            Die wichtigsten Punkte
+            für eine schnelle
+            Einschätzung vor dem
+            Kauf.
+          </p>
         </div>
-      )}
-    </section>
 
-    <section class="product-review-card-v3">
-      <h2>
-        Technische Daten
-      </h2>
+        <div class="product-review-grid-v3">
+          <div class="product-review-card-v3 product-review-card-positive-v3">
+            <div class="product-review-card-heading-v3">
+              <span
+                aria-hidden="true"
+              >
+                ✓
+              </span>
 
-      <div class="product-review-specs-v3">
-        {specs.map((spec) => (
-          <div>
-            <strong>{spec.label}</strong>
-            <span>{spec.value}</span>
+              <h3>
+                Besonders geeignet
+              </h3>
+            </div>
+
+            {
+              bestForItems.length >
+                0 ? (
+                <ul>
+                  {
+                    bestForItems.map(
+                      (
+                        item
+                      ) => (
+                        <li class="product-review-list-item product-review-list-item-positive">
+                          {
+                            item
+                          }
+                        </li>
+                      )
+                    )
+                  }
+                </ul>
+              ) : (
+                <p>
+                  {
+                    product.useCase
+                  }
+                </p>
+              )
+            }
           </div>
-        ))}
-      </div>
-    </section>
 
-    <section class="product-verdict-v3">
-      <span>
-        Unser Urteil
-      </span>
+          <div class="product-review-card-v3 product-review-card-neutral-v3">
+            <div class="product-review-card-heading-v3">
+              <span
+                aria-hidden="true"
+              >
+                !
+              </span>
 
-      <h2>
-        Lohnt sich {product.name}?
-      </h2>
+              <h3>
+                Darauf solltest
+                du achten
+              </h3>
+            </div>
 
-      <p>
-        {review.verdict}
-      </p>
-    </section>
+            <ul>
+              {
+                attentionItems.map(
+                  (
+                    item
+                  ) => (
+                    <li class="product-review-list-item product-review-list-item-negative">
+                      {
+                        stripLeadingIcon(
+                          item
+                        )
+                      }
+                    </li>
+                  )
+                )
+              }
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <ProductBox
-      productKey={productKey}
-      currentProductKey={productKey}
-    />
-  </article>
-)}
-<script>
-  const initializeProductGalleries = () => {
-    document
-      .querySelectorAll<HTMLElement>("[data-product-gallery]")
-      .forEach((gallery) => {
-        if (gallery.dataset.initialized === "true") {
-          return;
-        }
+      {
+        ratingEntries.length >
+          0 && (
+          <section class="product-review-rating-section-v3">
+            <div class="product-review-section-heading-v3">
+              <span>
+                Detailbewertung
+              </span>
 
-        const mainImage = gallery.querySelector<HTMLImageElement>(
-          ".product-review-gallery-main img"
-        );
+              <h2>
+                Wie gut ist {
+                  product.name
+                }?
+              </h2>
+            </div>
 
-        const thumbnails = Array.from(
-          gallery.querySelectorAll<HTMLButtonElement>(
-            ".product-review-gallery-thumbnail"
+            <div class="product-score-grid-v3">
+              {
+                ratingEntries.map(
+                  (
+                    [
+                      key,
+                      rating
+                    ]
+                  ) => (
+                    <div class="product-score-card-v3">
+                      <strong>
+                        {
+                          getRatingLabel(
+                            key
+                          )
+                        }
+                      </strong>
+
+                      <span
+                        aria-label={`${rating} von 5`}
+                      >
+                        {
+                          stars(
+                            rating
+                          )
+                        }
+                      </span>
+
+                      <small>
+                        {
+                          Number(
+                            rating
+                          ).toFixed(
+                            1
+                          )
+                        }
+                        {" / 5"}
+                      </small>
+                    </div>
+                  )
+                )
+              }
+            </div>
+          </section>
+        )
+      }
+
+      <section class="product-review-strengths-v3">
+        <div class="product-review-section-heading-v3">
+          <span>
+            Unsere Einordnung
+          </span>
+
+          <h2>
+            Stärken und
+            Schwächen
+          </h2>
+        </div>
+
+        <div class="product-review-grid-v3">
+          <div class="product-review-card-v3 product-review-card-positive-v3">
+            <div class="product-review-card-heading-v3">
+              <span
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+              <h3>
+                Stärken
+              </h3>
+            </div>
+
+            <ul>
+              {
+                review.pros.map(
+                  (
+                    item
+                  ) => (
+                    <li class="product-review-list-item product-review-list-item-positive">
+                      {
+                        stripLeadingIcon(
+                          item
+                        )
+                      }
+                    </li>
+                  )
+                )
+              }
+            </ul>
+          </div>
+
+          <div class="product-review-card-v3 product-review-card-neutral-v3">
+            <div class="product-review-card-heading-v3">
+              <span
+                aria-hidden="true"
+              >
+                !
+              </span>
+
+              <h3>
+                Schwächen
+              </h3>
+            </div>
+
+            <ul>
+              {
+                review.cons.map(
+                  (
+                    item
+                  ) => (
+                    <li class="product-review-list-item product-review-list-item-negative">
+                      {
+                        stripLeadingIcon(
+                          item
+                        )
+                      }
+                    </li>
+                  )
+                )
+              }
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-review-experience-v3">
+        <div class="product-review-section-heading-v3">
+          <span>
+            Alltag und Nutzung
+          </span>
+
+          <h2>
+            Erfahrungen aus
+            der Praxis
+          </h2>
+
+          <p>
+            Wiederkehrende
+            Stärken und
+            Kritikpunkte aus
+            Tests,
+            Herstellerangaben
+            und
+            Nutzererfahrungen.
+          </p>
+        </div>
+
+        <div class="product-review-experience-grid-v3">
+          <div class="product-review-experience-card-v3">
+            <span
+              class="product-review-experience-icon-v3"
+              aria-hidden="true"
+            >
+              👍
+            </span>
+
+            <h3>
+              Häufig positiv
+              genannt
+            </h3>
+
+            <ul>
+              {
+                practicePositiveItems.map(
+                  (
+                    item
+                  ) => (
+                    <li>
+                      {
+                        stripLeadingIcon(
+                          item
+                        )
+                      }
+                    </li>
+                  )
+                )
+              }
+            </ul>
+          </div>
+
+          <div class="product-review-experience-card-v3">
+            <span
+              class="product-review-experience-icon-v3"
+              aria-hidden="true"
+            >
+              ⚠
+            </span>
+
+            <h3>
+              Wiederkehrende
+              Kritik
+            </h3>
+
+            <ul>
+              {
+                practiceCriticalItems.map(
+                  (
+                    item
+                  ) => (
+                    <li>
+                      {
+                        stripLeadingIcon(
+                          item
+                        )
+                      }
+                    </li>
+                  )
+                )
+              }
+            </ul>
+          </div>
+
+          <div class="product-review-experience-card-v3 product-review-experience-summary-v3">
+            <span
+              class="product-review-experience-icon-v3"
+              aria-hidden="true"
+            >
+              ★
+            </span>
+
+            <h3>
+              Unsere
+              Einschätzung
+            </h3>
+
+            <p>
+              {
+                review.verdict
+              }
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-review-spec-section-v3">
+        <div class="product-review-section-heading-v3">
+          <span>
+            Details
+          </span>
+
+          <h2>
+            Technische Daten
+          </h2>
+        </div>
+
+        <div class="product-review-specs-v3">
+          {
+            specs.map(
+              (
+                spec
+              ) => (
+                <div>
+                  <strong>
+                    {
+                      spec.label
+                    }
+                  </strong>
+
+                  <span>
+                    {
+                      spec.value
+                    }
+                  </span>
+                </div>
+              )
+            )
+          }
+        </div>
+      </section>
+
+      <section class="product-review-final-verdict-v3">
+        <span class="product-review-section-eyebrow">
+          Unser Urteil
+        </span>
+
+        <h2>
+          Lohnt sich {
+            product.name
+          }?
+        </h2>
+
+        <p>
+          {review.verdict}
+        </p>
+
+        {
+          primaryLink &&
+          primaryLink.url && (
+            <a
+              class="product-review-affiliate-cta"
+              href={
+                primaryLink.url
+              }
+              rel={
+                primaryLink.rel
+              }
+              target={
+                primaryLink.target
+              }
+            >
+              {
+                primaryLink.label
+              }
+
+              <span
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </a>
           )
-        );
-
-        if (!mainImage || thumbnails.length === 0) {
-          return;
         }
+      </section>
 
-        thumbnails.forEach((thumbnail) => {
-          thumbnail.addEventListener("click", () => {
-            const nextImage =
-              thumbnail.dataset.productGallerySrc;
+      <ProductBox
+        productKey={
+          productKey
+        }
+        currentProductKey={
+          productKey
+        }
+      />
+    </article>
+  )
+}
 
-            if (!nextImage) {
+<script>
+  const initializeProductGalleries =
+    () => {
+      document
+        .querySelectorAll<HTMLElement>(
+          "[data-product-gallery]"
+        )
+        .forEach(
+          (
+            gallery
+          ) => {
+            if (
+              gallery
+                .dataset
+                .initialized ===
+              "true"
+            ) {
               return;
             }
 
-            mainImage.src = nextImage;
-            mainImage.alt =
-              thumbnail.querySelector("img")?.alt ??
-              mainImage.alt;
-
-            thumbnails.forEach((item) => {
-              const isActive = item === thumbnail;
-
-              item.classList.toggle(
-                "is-active",
-                isActive
+            const mainImage =
+              gallery.querySelector<HTMLImageElement>(
+                ".product-review-gallery-main img"
               );
 
-              item.setAttribute(
-                "aria-pressed",
-                String(isActive)
+            const thumbnails =
+              Array.from(
+                gallery.querySelectorAll<HTMLButtonElement>(
+                  ".product-review-gallery-thumbnail"
+                )
               );
-            });
-          });
-        });
 
-        gallery.dataset.initialized = "true";
-      });
-  };
+            if (
+              !mainImage ||
+              thumbnails.length ===
+                0
+            ) {
+              return;
+            }
+
+            thumbnails.forEach(
+              (
+                thumbnail
+              ) => {
+                thumbnail.addEventListener(
+                  "click",
+                  () => {
+                    const nextImage =
+                      thumbnail
+                        .dataset
+                        .productGallerySrc;
+
+                    if (
+                      !nextImage
+                    ) {
+                      return;
+                    }
+
+                    mainImage.src =
+                      nextImage;
+
+                    mainImage.alt =
+                      thumbnail.querySelector(
+                        "img"
+                      )?.alt ??
+                      mainImage.alt;
+
+                    thumbnails.forEach(
+                      (
+                        item
+                      ) => {
+                        const isActive =
+                          item ===
+                          thumbnail;
+
+                        item.classList.toggle(
+                          "is-active",
+                          isActive
+                        );
+
+                        item.setAttribute(
+                          "aria-pressed",
+                          String(
+                            isActive
+                          )
+                        );
+                      }
+                    );
+                  }
+                );
+              }
+            );
+
+            gallery.dataset.initialized =
+              "true";
+          }
+        );
+    };
 
   initializeProductGalleries();
 
@@ -411,36 +1084,243 @@ const stars = (rating: number) => {
 </script>
 
 <style>
+  .product-review-v3 {
+    --product-accent: #18743b;
+    --product-accent-dark: #0f5a2b;
+    --product-accent-soft: rgba(24, 116, 59, 0.09);
+    --product-warning-soft: rgba(196, 132, 31, 0.09);
+    --product-text: #0d302b;
+    --product-muted: #647579;
+    --product-border: #dce5e3;
+
+    color: var(--product-text);
+  }
+
+  .product-review-v3 *,
+  .product-review-v3 *::before,
+  .product-review-v3 *::after {
+    box-sizing: border-box;
+  }
+
+  .product-review-hero-v3 {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid var(--product-border);
+    border-radius: 1.75rem;
+    background:
+      linear-gradient(
+        135deg,
+        #ffffff,
+        #f7faf8 55%,
+        #f4eee7
+      );
+    box-shadow:
+      0 22px 55px rgba(13, 48, 43, 0.1);
+  }
+
+  .product-review-hero-copy {
+    display: flex;
+    min-width: 0;
+    padding:
+      clamp(
+        2rem,
+        4vw,
+        4rem
+      );
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-review-eyebrow,
+  .product-review-section-eyebrow {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+    color: var(--product-accent);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .product-review-hero-copy h1 {
+    margin: 0;
+    color: var(--product-text);
+    font-size:
+      clamp(
+        2.8rem,
+        5vw,
+        5.5rem
+      );
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+  }
+
+  .product-review-hero-summary {
+    max-width: 58ch;
+    margin:
+      1.5rem
+      0
+      0;
+    color: var(--product-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .product-review-hero-rating {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.85rem;
+  }
+
+  .product-review-hero-rating > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .product-review-stars {
+    color: var(--product-accent);
+    font-size: 1.12rem;
+    letter-spacing: 0.08em;
+  }
+
+  .product-review-hero-rating strong {
+    font-size: 1.05rem;
+  }
+
+  .product-review-hero-rating small {
+    color: var(--product-muted);
+  }
+
+  .product-review-hero-score {
+    display: flex;
+    width: fit-content;
+    margin-top: 1rem;
+    padding:
+      0.8rem
+      1rem;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--product-border);
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.82);
+  }
+
+  .product-review-hero-score > div {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+  }
+
+  .product-review-hero-score strong {
+    font-size: 1.45rem;
+  }
+
+  .product-review-hero-score span,
+  .product-review-hero-score p {
+    color: var(--product-muted);
+    font-size: 0.85rem;
+  }
+
+  .product-review-hero-score p {
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .product-review-affiliate-cta {
+    display: inline-flex;
+    width: fit-content;
+    min-height: 3.4rem;
+    margin-top: 1.5rem;
+    padding:
+      0.85rem
+      1.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border-radius: 0.8rem;
+    background:
+      linear-gradient(
+        135deg,
+        var(--product-accent),
+        var(--product-accent-dark)
+      );
+    box-shadow:
+      0 12px 28px rgba(24, 116, 59, 0.24);
+    color: #fff;
+    font-weight: 850;
+    text-decoration: none;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .product-review-affiliate-cta:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 16px 34px rgba(24, 116, 59, 0.3);
+  }
+
+  .product-review-hero-image {
+    min-width: 0;
+    padding:
+      clamp(
+        1rem,
+        2vw,
+        1.5rem
+      );
+    background:
+      linear-gradient(
+        145deg,
+        #f6f1eb,
+        #ffffff
+      );
+  }
+
   .product-review-gallery-main {
     display: grid;
+    min-height: 30rem;
     place-items: center;
   }
 
   .product-review-gallery-main :global(img) {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 34rem;
     object-fit: contain;
   }
 
   .product-review-gallery-thumbnails {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(
+        4,
+        minmax(0, 1fr)
+      );
     gap: 0.75rem;
     margin-top: 1rem;
   }
 
   .product-review-gallery-thumbnail {
     padding: 0.35rem;
-    border: 1px solid var(--border-color, #d9dee7);
+    border: 1px solid var(--product-border);
     border-radius: 0.75rem;
     background: #fff;
     cursor: pointer;
   }
 
   .product-review-gallery-thumbnail.is-active {
-    border-color: currentColor;
-    box-shadow: 0 0 0 1px currentColor;
+    border-color: var(--product-accent);
+    box-shadow:
+      0 0 0 1px var(--product-accent);
   }
 
   .product-review-gallery-thumbnail :global(img) {
@@ -450,9 +1330,452 @@ const stars = (rating: number) => {
     object-fit: contain;
   }
 
+  .product-review-divider {
+    display: grid;
+    width:
+      min(
+        34rem,
+        calc(100vw - 3rem)
+      );
+    margin:
+      2.5rem
+      auto;
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      auto
+      minmax(2rem, 1fr);
+    align-items: center;
+    gap: 1rem;
+    color: var(--product-accent);
+  }
+
+  .product-review-divider span {
+    height: 1px;
+    background: currentColor;
+    opacity: 0.4;
+  }
+
+  .product-review-divider strong {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .product-review-verdict-v3,
+  .product-review-final-verdict-v3 {
+    padding:
+      clamp(
+        1.5rem,
+        3vw,
+        2.5rem
+      );
+    border: 1px solid var(--product-border);
+    border-radius: 1.4rem;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(24, 116, 59, 0.07),
+        #ffffff 48%
+      );
+  }
+
+  .product-review-verdict-v3 h2,
+  .product-review-final-verdict-v3 h2 {
+    margin:
+      0
+      0
+      0.8rem;
+    color: var(--product-text);
+    font-size:
+      clamp(
+        1.75rem,
+        3vw,
+        2.6rem
+      );
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+
+  .product-review-verdict-v3 p,
+  .product-review-final-verdict-v3 p {
+    max-width: 72ch;
+    margin: 0;
+    color: var(--product-muted);
+    line-height: 1.75;
+  }
+
+  .product-review-decision-v3,
+  .product-review-rating-section-v3,
+  .product-review-strengths-v3,
+  .product-review-experience-v3,
+  .product-review-spec-section-v3,
+  .product-review-final-verdict-v3 {
+    margin-top: 3rem;
+  }
+
+  .product-review-section-heading-v3 {
+    max-width: 48rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .product-review-section-heading-v3 > span {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    color: var(--product-accent);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .product-review-section-heading-v3 h2 {
+    margin:
+      0
+      0
+      0.7rem;
+    color: var(--product-text);
+    font-size:
+      clamp(
+        2rem,
+        4vw,
+        3rem
+      );
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .product-review-section-heading-v3 p {
+    margin: 0;
+    color: var(--product-muted);
+    line-height: 1.7;
+  }
+
+  .product-review-grid-v3 {
+    display: grid;
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+    gap: 1.25rem;
+  }
+
+  .product-review-card-v3 {
+    min-width: 0;
+    padding: 1.4rem;
+    border: 1px solid var(--product-border);
+    border-radius: 1.15rem;
+    background: #fff;
+    box-shadow:
+      0 12px 30px rgba(13, 48, 43, 0.06);
+  }
+
+  .product-review-card-positive-v3 {
+    background:
+      linear-gradient(
+        145deg,
+        var(--product-accent-soft),
+        #ffffff 46%
+      );
+  }
+
+  .product-review-card-neutral-v3 {
+    background:
+      linear-gradient(
+        145deg,
+        var(--product-warning-soft),
+        #ffffff 46%
+      );
+  }
+
+  .product-review-card-heading-v3 {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .product-review-card-heading-v3 > span {
+    display: grid;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--product-accent);
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  .product-review-card-neutral-v3
+    .product-review-card-heading-v3
+    > span {
+    color: #9a6716;
+  }
+
+  .product-review-card-heading-v3 h3 {
+    margin: 0;
+    color: var(--product-text);
+    font-size: 1.25rem;
+  }
+
+  .product-review-card-v3 ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    list-style: none;
+  }
+
+  .product-review-list-item {
+    position: relative;
+    padding:
+      0.75rem
+      0
+      0.75rem
+      2rem;
+    border-bottom: 1px solid rgba(220, 229, 227, 0.8);
+    color: var(--product-text);
+    line-height: 1.5;
+  }
+
+  .product-review-list-item:last-child {
+    border-bottom: 0;
+  }
+
+  .product-review-list-item::before {
+    position: absolute;
+    top: 0.72rem;
+    left: 0;
+    display: grid;
+    width: 1.4rem;
+    height: 1.4rem;
+    place-items: center;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 900;
+  }
+
+  .product-review-list-item-positive::before {
+    background: var(--product-accent-soft);
+    color: var(--product-accent);
+    content: "✓";
+  }
+
+  .product-review-list-item-negative::before {
+    background: var(--product-warning-soft);
+    color: #9a6716;
+    content: "!";
+  }
+
+  .product-score-grid-v3 {
+    display: grid;
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+    gap: 1rem;
+  }
+
+  .product-score-card-v3 {
+    display: grid;
+    padding: 1.2rem;
+    gap: 0.45rem;
+    border: 1px solid var(--product-border);
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .product-score-card-v3 > span {
+    color: var(--product-accent);
+    letter-spacing: 0.07em;
+  }
+
+  .product-score-card-v3 small {
+    color: var(--product-muted);
+  }
+
+  .product-review-experience-grid-v3 {
+    display: grid;
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+    gap: 1.2rem;
+  }
+
+  .product-review-experience-card-v3 {
+    padding: 1.4rem;
+    border: 1px solid var(--product-border);
+    border-radius: 1.1rem;
+    background: #fff;
+    box-shadow:
+      0 12px 30px rgba(13, 48, 43, 0.05);
+  }
+
+  .product-review-experience-icon-v3 {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    font-size: 1.5rem;
+  }
+
+  .product-review-experience-card-v3 h3 {
+    margin:
+      0
+      0
+      0.85rem;
+  }
+
+  .product-review-experience-card-v3 ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .product-review-experience-card-v3 li {
+    margin-bottom: 0.55rem;
+    color: var(--product-muted);
+    line-height: 1.5;
+  }
+
+  .product-review-experience-summary-v3 {
+    grid-column: 1 / -1;
+    background:
+      linear-gradient(
+        145deg,
+        var(--product-accent-soft),
+        #ffffff 48%
+      );
+  }
+
+  .product-review-experience-summary-v3 p {
+    margin: 0;
+    color: var(--product-muted);
+    line-height: 1.75;
+  }
+
+  .product-review-specs-v3 {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+    border: 1px solid var(--product-border);
+    border-radius: 1.1rem;
+    background: #fff;
+  }
+
+  .product-review-specs-v3 > div {
+    display: flex;
+    min-width: 0;
+    padding: 1rem 1.1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--product-border);
+  }
+
+  .product-review-specs-v3 > div:nth-child(odd) {
+    border-right: 1px solid var(--product-border);
+  }
+
+  .product-review-specs-v3 strong {
+    color: var(--product-text);
+  }
+
+  .product-review-specs-v3 span {
+    color: var(--product-muted);
+    text-align: right;
+  }
+
+  .product-review-final-verdict-v3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 900px) {
+    .product-review-hero-v3 {
+      grid-template-columns: 1fr;
+    }
+
+    .product-review-gallery-main {
+      min-height: 24rem;
+    }
+
+    .product-score-grid-v3 {
+      grid-template-columns:
+        repeat(
+          2,
+          minmax(0, 1fr)
+        );
+    }
+  }
+
   @media (max-width: 640px) {
+    .product-review-hero-v3 {
+      border-radius: 1.25rem;
+    }
+
+    .product-review-hero-copy {
+      padding: 1.5rem;
+    }
+
+    .product-review-hero-copy h1 {
+      font-size:
+        clamp(
+          2.5rem,
+          12vw,
+          4rem
+        );
+    }
+
+    .product-review-affiliate-cta {
+      width: 100%;
+    }
+
+    .product-review-gallery-main {
+      min-height: 19rem;
+    }
+
     .product-review-gallery-thumbnails {
       gap: 0.5rem;
+    }
+
+    .product-review-grid-v3,
+    .product-score-grid-v3,
+    .product-review-experience-grid-v3,
+    .product-review-specs-v3 {
+      grid-template-columns: 1fr;
+    }
+
+    .product-review-specs-v3 > div:nth-child(odd) {
+      border-right: 0;
+    }
+
+    .product-review-experience-summary-v3 {
+      grid-column: auto;
+    }
+
+    .product-review-section-heading-v3 h2 {
+      font-size:
+        clamp(
+          2rem,
+          10vw,
+          2.8rem
+        );
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .product-review-affiliate-cta {
+      transition: none;
+    }
+
+    .product-review-affiliate-cta:hover {
+      transform: none;
     }
   }
 </style>
