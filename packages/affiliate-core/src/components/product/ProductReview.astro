@@ -1,7 +1,11 @@
 ---
 import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro";
 import ProductImage from "../ProductImage.astro";
+import type {
 
+  AlternativeRecommendation
+
+} from "./alternativeRecommendation.types";
 import {
   products,
   type ProductKey
@@ -40,9 +44,13 @@ import {
 
 interface Props {
   productKey: ProductKey;
+  alternativeRecommendations?: AlternativeRecommendation[];
 }
 
-const { productKey } = Astro.props as Props;
+const {
+  productKey,
+  alternativeRecommendations = []
+} = Astro.props as Props;
 
 const product = products[productKey];
 
@@ -843,7 +851,7 @@ const stars = (
   </div>
 
 <AlternativeRecommendationCard
-  currentProductKey={productKey}
+  alternatives={alternativeRecommendations}
 />
   
 </section>

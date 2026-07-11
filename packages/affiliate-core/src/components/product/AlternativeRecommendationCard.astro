@@ -1,883 +1,109 @@
 ---
 import ProductImage from "../ProductImage.astro";
 
-import {
-  products,
-  type ProductKey
-} from "@app/data/products";
-
-import {
-  getWeightedProductScore
-} from "@app/data/productScoring";
-
-import {
-  DEFAULT_PROJECT,
-  getProjectImage
-} from "@app/data/projectImages";
-
-import {
-  stripLeadingIcon
-} from "../../utils/content";
-
-import {
-  getProductHeroImage
-} from "../../utils/productImages";
+import type {
+  AlternativeRecommendation
+} from "./alternativeRecommendation.types";
 
 interface Props {
-  currentProductKey: ProductKey;
-  limit?: number;
+  alternatives?: AlternativeRecommendation[];
 }
-
-type AlternativeInsight = {
-  kind: string;
-  icon: string;
-  headline: string;
-  reason: string;
-  difference: string;
-};
-
-type AlternativeItem = {
-  productKey: ProductKey;
-  insight: AlternativeInsight;
-};
 
 const {
-  currentProductKey,
-  limit = 3
+  alternatives = []
 } = Astro.props as Props;
-
-const currentProduct =
-  products[currentProductKey];
-
-const productKeys =
-  Object.keys(
-    products
-  ) as ProductKey[];
-
-const normalizeText = (
-  value: unknown
-) =>
-  String(
-    value ?? ""
-  )
-    .toLowerCase()
-    .replace(
-      /ä/g,
-      "ae"
-    )
-    .replace(
-      /ö/g,
-      "oe"
-    )
-    .replace(
-      /ü/g,
-      "ue"
-    )
-    .replace(
-      /ß/g,
-      "ss"
-    )
-    .replace(
-      /[^a-z0-9]+/g,
-      " "
-    )
-    .trim();
-
-const getArrayText = (
-  value: unknown
-) =>
-  Array.isArray(
-    value
-  )
-    ? value
-        .map(
-          (item) =>
-            stripLeadingIcon(
-              String(item)
-            )
-        )
-        .join(" ")
-    : "";
-
-const getSpecsText = (
-  value: unknown
-) => {
-  if (
-    !Array.isArray(
-      value
-    )
-  ) {
-    return "";
-  }
-
-  return value
-    .map(
-      (spec) => {
-        if (
-          !spec ||
-          typeof spec !==
-            "object"
-        ) {
-          return "";
-        }
-
-        const record =
-          spec as Record<
-            string,
-            unknown
-          >;
-
-        return [
-          record.label,
-          record.value
-        ]
-          .filter(Boolean)
-          .join(" ");
-      }
-    )
-    .join(" ");
-};
-
-const getProductSearchText = (
-  productKey: ProductKey
-) => {
-  const product =
-    products[productKey];
-
-  return normalizeText(
-    [
-      product.name,
-      product.category,
-      product.useCase,
-      product.recommendation,
-      product.review?.summary,
-      product.review?.verdict,
-      getArrayText(
-        product.bestFor
-      ),
-      getArrayText(
-        product.notFor
-      ),
-      getArrayText(
-        product.pros
-      ),
-      getArrayText(
-        product.cons
-      ),
-      getSpecsText(
-        product.specs
-      )
-    ]
-      .filter(Boolean)
-      .join(" ")
-  );
-};
-
-const includesAny = (
-  text: string,
-  terms: string[]
-) =>
-  terms.some(
-    (term) =>
-      text.includes(
-        normalizeText(
-          term
-        )
-      )
-  );
-
-const getUsefulBestFor = (
-  productKey: ProductKey
-) => {
-  const product =
-    products[productKey];
-
-  if (
-    !Array.isArray(
-      product.bestFor
-    )
-  ) {
-    return [];
-  }
-
-  const ignoredTerms =
-    new Set([
-      "katze",
-      "katzen",
-      "hund",
-      "hunde",
-      "haustier",
-      "haustiere",
-      "tierhalter",
-      "haushalte"
-    ]);
-
-  return product.bestFor
-    .map(
-      (item) =>
-        stripLeadingIcon(
-          String(item)
-        ).trim()
-    )
-    .filter(Boolean)
-    .filter(
-      (item) =>
-        !ignoredTerms.has(
-          normalizeText(
-            item
-          )
-        )
-    )
-    .slice(
-      0,
-      3
-    );
-};
-
-const currentSearchText =
-  currentProduct
-    ? getProductSearchText(
-        currentProductKey
-      )
-    : "";
-
-const getAlternativeInsight = (
-  alternativeKey: ProductKey
-): AlternativeInsight => {
-  const alternative =
-    products[
-      alternativeKey
-    ];
-
-  const alternativeText =
-    getProductSearchText(
-      alternativeKey
-    );
-
-  const currentHasWetFood =
-    includesAny(
-      currentSearchText,
-      [
-        "nassfutter",
-        "wet food",
-        "wetfood",
-        "kuehlung",
-        "gekuehlt"
-      ]
-    );
-
-  const alternativeHasWetFood =
-    includesAny(
-      alternativeText,
-      [
-        "nassfutter",
-        "wet food",
-        "wetfood",
-        "kuehlung",
-        "gekuehlt"
-      ]
-    );
-
-  if (
-    alternativeHasWetFood &&
-    !currentHasWetFood
-  ) {
-    return {
-      kind: "wet-food",
-      icon: "🥣",
-      headline:
-        "Wenn du überwiegend Nassfutter fütterst",
-      reason:
-        "Dieses Modell ist die passendere Wahl für frische oder gekühlte Mahlzeiten.",
-      difference:
-        "Der größte Unterschied liegt in der Ausrichtung auf Nassfutter statt auf klassische Trockenfutterportionen."
-    };
-  }
-
-  const currentHasAccessControl =
-    includesAny(
-      currentSearchText,
-      [
-        "rfid",
-        "mikrochip",
-        "microchip",
-        "zugangskontrolle",
-        "futterneid"
-      ]
-    );
-
-  const alternativeHasAccessControl =
-    includesAny(
-      alternativeText,
-      [
-        "rfid",
-        "mikrochip",
-        "microchip",
-        "zugangskontrolle",
-        "futterneid"
-      ]
-    );
-
-  if (
-    alternativeHasAccessControl &&
-    !currentHasAccessControl
-  ) {
-    return {
-      kind: "access-control",
-      icon: "🔐",
-      headline:
-        "Wenn mehrere Tiere getrennt gefüttert werden sollen",
-      reason:
-        "Dieses Modell ist besser geeignet, wenn jedes Tier nur auf seine eigene Portion zugreifen soll.",
-      difference:
-        "Die Zugangskontrolle per RFID oder Mikrochip schützt Futter vor anderen Tieren im Haushalt."
-    };
-  }
-
-  const currentHasCamera =
-    includesAny(
-      currentSearchText,
-      [
-        "kamera",
-        "camera",
-        "video",
-        "live bild"
-      ]
-    );
-
-  const alternativeHasCamera =
-    includesAny(
-      alternativeText,
-      [
-        "kamera",
-        "camera",
-        "video",
-        "live bild"
-      ]
-    );
-
-  if (
-    alternativeHasCamera &&
-    !currentHasCamera
-  ) {
-    return {
-      kind: "camera",
-      icon: "📷",
-      headline:
-        "Wenn du dein Tier auch aus der Ferne sehen möchtest",
-      reason:
-        "Dieses Modell bietet zusätzliche Kontrolle durch eine integrierte Kamera.",
-      difference:
-        "Neben der Fütterung kannst du Mahlzeiten und Verhalten per Video überprüfen."
-    };
-  }
-
-  const currentHasApp =
-    includesAny(
-      currentSearchText,
-      [
-        "app",
-        "wlan",
-        "wifi",
-        "wi fi",
-        "smartphone"
-      ]
-    );
-
-  const alternativeHasApp =
-    includesAny(
-      alternativeText,
-      [
-        "app",
-        "wlan",
-        "wifi",
-        "wi fi",
-        "smartphone"
-      ]
-    );
-
-  if (
-    alternativeHasApp &&
-    !currentHasApp
-  ) {
-    return {
-      kind: "app",
-      icon: "📱",
-      headline:
-        "Wenn dir App-Steuerung besonders wichtig ist",
-      reason:
-        "Dieses Modell eignet sich besser für flexible Fütterungspläne und Steuerung aus der Ferne.",
-      difference:
-        "Zeitpläne, Portionen und Statusmeldungen lassen sich direkt über das Smartphone verwalten."
-    };
-  }
-
-  const alternativeHasMultiPet =
-    includesAny(
-      alternativeText,
-      [
-        "mehrere katzen",
-        "mehrkatzen",
-        "mehrtier",
-        "mehrere tiere",
-        "dual",
-        "doppeln",
-        "zwei naepfe",
-        "2 naepfe"
-      ]
-    );
-
-  const currentHasMultiPet =
-    includesAny(
-      currentSearchText,
-      [
-        "mehrere katzen",
-        "mehrkatzen",
-        "mehrtier",
-        "mehrere tiere",
-        "dual",
-        "doppeln",
-        "zwei naepfe",
-        "2 naepfe"
-      ]
-    );
-
-  if (
-    alternativeHasMultiPet &&
-    !currentHasMultiPet
-  ) {
-    return {
-      kind: "multi-pet",
-      icon: "🐾",
-      headline:
-        "Wenn du mehrere Tiere versorgen möchtest",
-      reason:
-        "Dieses Modell ist stärker auf Haushalte mit mehreren Katzen oder Hunden ausgerichtet.",
-      difference:
-        "Die Fütterung lässt sich besser auf mehrere Tiere, getrennte Portionen oder mehrere Näpfe abstimmen."
-    };
-  }
-
-  const alternativeHasLargeCapacity =
-    includesAny(
-      alternativeText,
-      [
-        "gross",
-        "großer",
-        "vorrat",
-        "liter",
-        "kapazitaet",
-        "lange abwesenheit"
-      ]
-    );
-
-  const currentHasLargeCapacity =
-    includesAny(
-      currentSearchText,
-      [
-        "gross",
-        "großer",
-        "vorrat",
-        "liter",
-        "kapazitaet",
-        "lange abwesenheit"
-      ]
-    );
-
-  if (
-    alternativeHasLargeCapacity &&
-    !currentHasLargeCapacity
-  ) {
-    return {
-      kind: "capacity",
-      icon: "📦",
-      headline:
-        "Wenn du einen größeren Futtervorrat benötigst",
-      reason:
-        "Dieses Modell ist für längere Zeiträume ohne häufiges Nachfüllen interessanter.",
-      difference:
-        "Der größere Behälter reduziert den Aufwand bei längerer Abwesenheit oder mehreren täglichen Portionen."
-    };
-  }
-
-  const alternativeHasCompactFocus =
-    includesAny(
-      alternativeText,
-      [
-        "kompakt",
-        "klein",
-        "platzsparend",
-        "kleine wohnung"
-      ]
-    );
-
-  const currentHasCompactFocus =
-    includesAny(
-      currentSearchText,
-      [
-        "kompakt",
-        "klein",
-        "platzsparend",
-        "kleine wohnung"
-      ]
-    );
-
-  if (
-    alternativeHasCompactFocus &&
-    !currentHasCompactFocus
-  ) {
-    return {
-      kind: "compact",
-      icon: "↘",
-      headline:
-        "Wenn du möglichst wenig Platz zur Verfügung hast",
-      reason:
-        "Dieses Modell ist kompakter und lässt sich leichter in kleinen Wohnbereichen aufstellen.",
-      difference:
-        "Der Schwerpunkt liegt stärker auf einer platzsparenden Bauform als auf maximalem Funktionsumfang."
-    };
-  }
-
-  const alternativeHasValueFocus =
-    includesAny(
-      alternativeText,
-      [
-        "preis leistung",
-        "preisleistung",
-        "guenstig",
-        "budget",
-        "einsteiger"
-      ]
-    );
-
-  if (
-    alternativeHasValueFocus
-  ) {
-    return {
-      kind: "value",
-      icon: "💰",
-      headline:
-        "Wenn dir ein gutes Preis-Leistungs-Verhältnis wichtiger ist",
-      reason:
-        "Dieses Modell konzentriert sich stärker auf die wichtigsten Funktionen ohne unnötige Extras.",
-      difference:
-        "Du erhältst eine solide Grundausstattung, verzichtest aber möglicherweise auf einzelne Premiumfunktionen."
-    };
-  }
-
-  const usefulBestFor =
-    getUsefulBestFor(
-      alternativeKey
-    );
-
-  if (
-    usefulBestFor.length >
-      0
-  ) {
-    return {
-      kind:
-        `best-for-${normalizeText(
-          usefulBestFor[0]
-        )}`,
-      icon: "🎯",
-      headline:
-        `Wenn ${usefulBestFor[0].toLowerCase()} für dich im Mittelpunkt steht`,
-      reason:
-        alternative.recommendation,
-      difference:
-        "Diese Alternative setzt andere Prioritäten als das aktuell betrachtete Modell."
-    };
-  }
-
-  return {
-    kind: "general",
-    icon: "↔",
-    headline:
-      "Wenn du ein anderes Gesamtpaket suchst",
-    reason:
-      alternative.recommendation,
-    difference:
-      "Dieses Modell bietet eine andere Kombination aus Ausstattung, Bedienung und Preis-Leistung."
-  };
-};
-
-const candidateItems =
-  currentProduct
-    ? productKeys
-        .filter(
-          (
-            candidateKey
-          ) => {
-            const candidate =
-              products[
-                candidateKey
-              ];
-
-            return (
-              candidateKey !==
-                currentProductKey &&
-              candidate.category ===
-                currentProduct.category
-            );
-          }
-        )
-        .sort(
-          (
-            a,
-            b
-          ) =>
-            getWeightedProductScore(
-              b
-            ) -
-            getWeightedProductScore(
-              a
-            )
-        )
-        .map(
-          (
-            productKey
-          ): AlternativeItem => ({
-            productKey,
-            insight:
-              getAlternativeInsight(
-                productKey
-              )
-          })
-        )
-    : [];
-
-const selectedAlternatives: AlternativeItem[] =
-  [];
-
-const selectedKinds =
-  new Set<string>();
-
-for (
-  const candidate
-  of candidateItems
-) {
-  if (
-    selectedAlternatives.length >=
-      limit
-  ) {
-    break;
-  }
-
-  if (
-    !selectedKinds.has(
-      candidate.insight.kind
-    )
-  ) {
-    selectedAlternatives.push(
-      candidate
-    );
-
-    selectedKinds.add(
-      candidate.insight.kind
-    );
-  }
-}
-
-if (
-  selectedAlternatives.length <
-    limit
-) {
-  for (
-    const candidate
-    of candidateItems
-  ) {
-    if (
-      selectedAlternatives.length >=
-        limit
-    ) {
-      break;
-    }
-
-    const alreadySelected =
-      selectedAlternatives.some(
-        (
-          selected
-        ) =>
-          selected.productKey ===
-          candidate.productKey
-      );
-
-    if (
-      !alreadySelected
-    ) {
-      selectedAlternatives.push(
-        candidate
-      );
-    }
-  }
-}
 ---
 
 {
-  selectedAlternatives.length >
-    0 ? (
+  alternatives.length > 0 ? (
     <div class="alternative-recommendation-grid">
       {
-        selectedAlternatives.map(
-          (
-            item
-          ) => {
-            const alternative =
-              products[
-                item.productKey
-              ];
+        alternatives.map((alternative) => (
+          <article class="alternative-recommendation-card">
+            <a
+              class="alternative-recommendation-image"
+              href={alternative.url}
+              aria-label={`${alternative.name} Test öffnen`}
+            >
+              <ProductImage
+                image={alternative.image}
+                alt={alternative.name}
+                loading="lazy"
+              />
+            </a>
 
-            const alternativeImage =
-              getProductHeroImage(
-                alternative,
-                getProjectImage(
-                  DEFAULT_PROJECT,
-                  "product"
-                ),
-                item.productKey
-              );
+            <div class="alternative-recommendation-content">
+              <div class="alternative-recommendation-meta">
+                <span>
+                  Wann stattdessen?
+                </span>
 
-            const alternativeScore =
-              getWeightedProductScore(
-                item.productKey
-              );
+                <strong>
+                  {alternative.score} / 100
+                </strong>
+              </div>
 
-            const usefulBestFor =
-              getUsefulBestFor(
-                item.productKey
-              );
+              <span
+                class="alternative-recommendation-icon"
+                aria-hidden="true"
+              >
+                {alternative.icon}
+              </span>
 
-            return (
-              <article class="alternative-recommendation-card">
-                <a
-                  class="alternative-recommendation-image"
-                  href={
-                    alternative.productUrl
-                  }
-                  aria-label={`${alternative.name} Test öffnen`}
-                >
-                  <ProductImage
-                    image={
-                      alternativeImage
-                    }
-                    alt={
-                      alternative.name
-                    }
-                    loading="lazy"
-                  />
+              <p class="alternative-recommendation-headline">
+                {alternative.headline}
+              </p>
+
+              <h3>
+                <a href={alternative.url}>
+                  {alternative.name}
                 </a>
+              </h3>
 
-                <div class="alternative-recommendation-content">
-                  <div class="alternative-recommendation-meta">
-                    <span>
-                      Wann stattdessen?
-                    </span>
+              <p class="alternative-recommendation-reason">
+                {alternative.reason}
+              </p>
 
-                    <strong>
-                      {
-                        alternativeScore
-                      }
-                      {" / 100"}
-                    </strong>
-                  </div>
+              <div class="alternative-recommendation-difference">
+                <strong>
+                  Größter Unterschied
+                </strong>
 
-                  <span
-                    class="alternative-recommendation-icon"
-                    aria-hidden="true"
-                  >
+                <p>
+                  {alternative.difference}
+                </p>
+              </div>
+
+              {
+                alternative.tags.length > 0 && (
+                  <ul class="alternative-recommendation-tags">
                     {
-                      item.insight
-                        .icon
+                      alternative.tags.map((tag) => (
+                        <li>
+                          {tag}
+                        </li>
+                      ))
                     }
+                  </ul>
+                )
+              }
+
+              <div class="alternative-recommendation-footer">
+                <span>
+                  {alternative.rating} / 5
+                </span>
+
+                <a href={alternative.url}>
+                  Zum vollständigen Test
+
+                  <span aria-hidden="true">
+                    →
                   </span>
-
-                  <p class="alternative-recommendation-headline">
-                    {
-                      item.insight
-                        .headline
-                    }
-                  </p>
-
-                  <h3>
-                    <a
-                      href={
-                        alternative.productUrl
-                      }
-                    >
-                      {
-                        alternative.name
-                      }
-                    </a>
-                  </h3>
-
-                  <p class="alternative-recommendation-reason">
-                    {
-                      item.insight
-                        .reason
-                    }
-                  </p>
-
-                  <div class="alternative-recommendation-difference">
-                    <strong>
-                      Größter Unterschied
-                    </strong>
-
-                    <p>
-                      {
-                        item.insight
-                          .difference
-                      }
-                    </p>
-                  </div>
-
-                  {
-                    usefulBestFor.length >
-                      0 && (
-                      <ul class="alternative-recommendation-tags">
-                        {
-                          usefulBestFor.map(
-                            (
-                              tag
-                            ) => (
-                              <li>
-                                {
-                                  tag
-                                }
-                              </li>
-                            )
-                          )
-                        }
-                      </ul>
-                    )
-                  }
-
-                  <div class="alternative-recommendation-footer">
-                    <span>
-                      {
-                        alternative.rating
-                      }
-                      {" / 5"}
-                    </span>
-
-                    <a
-                      href={
-                        alternative.productUrl
-                      }
-                    >
-                      Zum vollständigen Test
-
-                      <span
-                        aria-hidden="true"
-                      >
-                        →
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            );
-          }
-        )
+                </a>
+              </div>
+            </div>
+          </article>
+        ))
       }
     </div>
   ) : (
@@ -919,22 +145,12 @@ if (
     background:
       linear-gradient(
         145deg,
-        rgba(
-          24,
-          116,
-          59,
-          0.05
-        ),
+        rgba(24, 116, 59, 0.05),
         #ffffff 46%
       );
     box-shadow:
       0 12px 30px
-        rgba(
-          13,
-          48,
-          43,
-          0.06
-        );
+        rgba(13, 48, 43, 0.06);
   }
 
   .alternative-recommendation-image {
@@ -950,26 +166,18 @@ if (
       );
   }
 
-  .alternative-recommendation-image
-    :global(img) {
+  .alternative-recommendation-image :global(img) {
     display: block;
     width: 100%;
     height: 100%;
     max-height: 16rem;
     padding: 1.2rem;
     object-fit: contain;
-    transition:
-      transform
-      180ms
-      ease;
+    transition: transform 180ms ease;
   }
 
-  .alternative-recommendation-image:hover
-    :global(img) {
-    transform:
-      scale(
-        1.025
-      );
+  .alternative-recommendation-image:hover :global(img) {
+    transform: scale(1.025);
   }
 
   .alternative-recommendation-content {
@@ -988,8 +196,7 @@ if (
     gap: 0.75rem;
   }
 
-  .alternative-recommendation-meta
-    > span {
+  .alternative-recommendation-meta > span {
     color:
       var(
         --product-accent,
@@ -1001,20 +208,11 @@ if (
     text-transform: uppercase;
   }
 
-  .alternative-recommendation-meta
-    > strong {
+  .alternative-recommendation-meta > strong {
     flex: 0 0 auto;
-    padding:
-      0.35rem
-      0.55rem;
+    padding: 0.35rem 0.55rem;
     border-radius: 999px;
-    background:
-      rgba(
-        24,
-        116,
-        59,
-        0.09
-      );
+    background: rgba(24, 116, 59, 0.09);
     color:
       var(
         --product-accent-dark,
@@ -1030,21 +228,12 @@ if (
     margin-bottom: 0.8rem;
     place-items: center;
     border-radius: 0.8rem;
-    background:
-      rgba(
-        24,
-        116,
-        59,
-        0.09
-      );
+    background: rgba(24, 116, 59, 0.09);
     font-size: 1.25rem;
   }
 
   .alternative-recommendation-headline {
-    margin:
-      0
-      0
-      0.75rem;
+    margin: 0 0 0.75rem;
     color:
       var(
         --product-accent-dark,
@@ -1055,20 +244,14 @@ if (
     line-height: 1.45;
   }
 
-  .alternative-recommendation-content
-    h3 {
-    margin:
-      0
-      0
-      0.75rem;
+  .alternative-recommendation-content h3 {
+    margin: 0 0 0.75rem;
     font-size: 1.35rem;
     line-height: 1.18;
     letter-spacing: -0.025em;
   }
 
-  .alternative-recommendation-content
-    h3
-    a {
+  .alternative-recommendation-content h3 a {
     color:
       var(
         --product-text,
@@ -1077,9 +260,7 @@ if (
     text-decoration: none;
   }
 
-  .alternative-recommendation-content
-    h3
-    a:hover {
+  .alternative-recommendation-content h3 a:hover {
     color:
       var(
         --product-accent,
@@ -1088,10 +269,7 @@ if (
   }
 
   .alternative-recommendation-reason {
-    margin:
-      0
-      0
-      1rem;
+    margin: 0 0 1rem;
     color:
       var(
         --product-muted,
@@ -1104,17 +282,10 @@ if (
     margin-bottom: 1rem;
     padding: 0.9rem;
     border-radius: 0.85rem;
-    background:
-      rgba(
-        13,
-        48,
-        43,
-        0.04
-      );
+    background: rgba(13, 48, 43, 0.04);
   }
 
-  .alternative-recommendation-difference
-    strong {
+  .alternative-recommendation-difference strong {
     display: block;
     margin-bottom: 0.35rem;
     color:
@@ -1127,8 +298,7 @@ if (
     text-transform: uppercase;
   }
 
-  .alternative-recommendation-difference
-    p {
+  .alternative-recommendation-difference p {
     margin: 0;
     color:
       var(
@@ -1141,28 +311,27 @@ if (
 
   .alternative-recommendation-tags {
     display: flex;
-    margin:
-      0
-      0
-      1rem;
+    margin: 0 0 1rem;
     padding: 0;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.5rem;
     list-style: none;
   }
 
-  .alternative-recommendation-tags
-    li {
-    padding:
-      0.35rem
-      0.55rem;
+  .alternative-recommendation-tags li {
+    display: inline-flex;
+    min-height: 2rem;
+    padding: 0.38rem 0.7rem;
+    align-items: center;
+    gap: 0.45rem;
     border: 1px solid
-      var(
-        --product-border,
-        #dce5e3
+      color-mix(
+        in srgb,
+        var(--product-accent, #18743b) 18%,
+        var(--product-border, #dce5e3)
       );
     border-radius: 999px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.88);
     color:
       var(
         --product-text,
@@ -1170,6 +339,20 @@ if (
       );
     font-size: 0.76rem;
     font-weight: 750;
+    line-height: 1;
+  }
+
+  .alternative-recommendation-tags li::before {
+    width: 0.38rem;
+    height: 0.38rem;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background:
+      var(
+        --product-accent,
+        #18743b
+      );
+    content: "";
   }
 
   .alternative-recommendation-footer {
@@ -1186,8 +369,7 @@ if (
       );
   }
 
-  .alternative-recommendation-footer
-    > span {
+  .alternative-recommendation-footer > span {
     color:
       var(
         --product-text,
@@ -1197,8 +379,7 @@ if (
     font-weight: 850;
   }
 
-  .alternative-recommendation-footer
-    a {
+  .alternative-recommendation-footer a {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
@@ -1224,8 +405,7 @@ if (
     text-align: center;
   }
 
-  .alternative-recommendation-empty
-    strong {
+  .alternative-recommendation-empty strong {
     display: block;
     margin-bottom: 0.4rem;
     color:
@@ -1235,8 +415,7 @@ if (
       );
   }
 
-  .alternative-recommendation-empty
-    p {
+  .alternative-recommendation-empty p {
     margin: 0;
     color:
       var(
@@ -1245,10 +424,7 @@ if (
       );
   }
 
-  @media (
-    max-width:
-      1050px
-  ) {
+  @media (max-width: 1050px) {
     .alternative-recommendation-grid {
       grid-template-columns: 1fr;
     }
@@ -1256,14 +432,8 @@ if (
     .alternative-recommendation-card {
       display: grid;
       grid-template-columns:
-        minmax(
-          12rem,
-          0.7fr
-        )
-        minmax(
-          0,
-          1.3fr
-        );
+        minmax(12rem, 0.7fr)
+        minmax(0, 1.3fr);
     }
 
     .alternative-recommendation-image {
@@ -1271,10 +441,7 @@ if (
     }
   }
 
-  @media (
-    max-width:
-      640px
-  ) {
+  @media (max-width: 640px) {
     .alternative-recommendation-card {
       display: flex;
     }
@@ -1289,17 +456,12 @@ if (
     }
   }
 
-  @media (
-    prefers-reduced-motion:
-      reduce
-  ) {
-    .alternative-recommendation-image
-      :global(img) {
+  @media (prefers-reduced-motion: reduce) {
+    .alternative-recommendation-image :global(img) {
       transition: none;
     }
 
-    .alternative-recommendation-image:hover
-      :global(img) {
+    .alternative-recommendation-image:hover :global(img) {
       transform: none;
     }
   }
