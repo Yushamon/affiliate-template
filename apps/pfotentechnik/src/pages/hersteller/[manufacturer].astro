@@ -1866,13 +1866,13 @@ const ratingStars = (rating: number) => {
 .choice-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 22px;
+  gap: 24px;
   margin-top: 24px;
 }
 
 .choice-card {
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
   padding: 22px;
   border: 1px solid var(--manufacturer-border);
   border-radius: 22px;
@@ -1928,14 +1928,16 @@ const ratingStars = (rating: number) => {
   margin: 0;
   box-shadow: none;
 }
-
-@media (min-width: 980px) {
-  .choice-grid {
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
-  }
+.choice-card :global(.product-ranking-card),
+.choice-featured :global(.product-ranking-card) {
+  width: 100%;
+  max-width: 100%;
 }
 
+.choice-card :global(.product-ranking-card > *),
+.choice-featured :global(.product-ranking-card > *) {
+  min-width: 0;
+}
 @media (max-width: 759px) {
   .choice-header {
     margin-bottom: 24px;
