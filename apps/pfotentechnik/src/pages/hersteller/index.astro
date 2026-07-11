@@ -1,0 +1,260 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+import {
+  manufacturers
+} from "../../data/manufacturers";
+
+const sortedManufacturers =
+  [...manufacturers].sort(
+    (a, b) =>
+      (b.rating ?? 0) -
+      (a.rating ?? 0)
+  );
+---
+
+<ProjectLayout
+  title="Hersteller für smarte Haustiertechnik"
+  seoTitle="Hersteller für smarte Haustiertechnik im Überblick"
+  description="Alle Hersteller im Überblick mit Bewertungen, Erfahrungen und Produktempfehlungen."
+  canonical="/hersteller"
+>
+
+<section class="manufacturer-hub-hero">
+
+  <span class="manufacturer-hub-eyebrow">
+    Hersteller
+  </span>
+
+  <h1>
+    Welcher Hersteller passt zu dir?
+  </h1>
+
+  <p>
+    Nicht jede Marke verfolgt dieselbe Philosophie.
+    Manche Hersteller überzeugen durch App-Funktionen,
+    andere durch RFID-Technik, Nassfutterlösungen oder
+    ein besonders gutes Preis-Leistungs-Verhältnis.
+  </p>
+
+</section>
+
+<section class="manufacturer-hub-grid">
+
+  {
+    sortedManufacturers.map((manufacturer) => (
+
+      <a
+        class="manufacturer-hub-card"
+        href={`/hersteller/${manufacturer.slug}`}
+      >
+
+        <div class="manufacturer-hub-image">
+
+          <img
+            src={`/images/manufacturers/${manufacturer.slug}/hero.webp`}
+            alt={manufacturer.name}
+            loading="lazy"
+            decoding="async"
+          />
+
+        </div>
+
+        <div class="manufacturer-hub-content">
+
+          <span>
+            Herstellerprofil
+          </span>
+
+          <h2>
+            {manufacturer.name}
+          </h2>
+
+          <p>
+            {manufacturer.description}
+          </p>
+
+          {
+            manufacturer.rating && (
+
+              <strong>
+
+                {manufacturer.rating.toFixed(1)}
+
+                {" / 5"}
+
+              </strong>
+
+            )
+          }
+
+        </div>
+
+      </a>
+
+    ))
+  }
+
+</section>
+
+</ProjectLayout>
+
+<style>
+
+.manufacturer-hub-hero{
+
+max-width:900px;
+
+margin:0 auto 3rem;
+
+text-align:center;
+
+}
+
+.manufacturer-hub-eyebrow{
+
+display:inline-block;
+
+margin-bottom:.5rem;
+
+font-size:.8rem;
+
+font-weight:800;
+
+letter-spacing:.08em;
+
+text-transform:uppercase;
+
+color:var(--accent-color,#18743b);
+
+}
+
+.manufacturer-hub-hero h1{
+
+margin:0 0 1rem;
+
+font-size:clamp(2.6rem,6vw,4.5rem);
+
+line-height:1;
+
+}
+
+.manufacturer-hub-hero p{
+
+max-width:60ch;
+
+margin:0 auto;
+
+line-height:1.7;
+
+color:var(--text-muted,#647579);
+
+}
+
+.manufacturer-hub-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+
+gap:1.5rem;
+
+}
+
+.manufacturer-hub-card{
+
+display:flex;
+
+flex-direction:column;
+
+overflow:hidden;
+
+border:1px solid var(--border-color,#dce5e3);
+
+border-radius:1.25rem;
+
+background:#fff;
+
+text-decoration:none;
+
+color:inherit;
+
+transition:.2s;
+
+}
+
+.manufacturer-hub-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.manufacturer-hub-image{
+
+aspect-ratio:16/9;
+
+overflow:hidden;
+
+background:#f6f8f7;
+
+}
+
+.manufacturer-hub-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.manufacturer-hub-content{
+
+padding:1.4rem;
+
+}
+
+.manufacturer-hub-content span{
+
+display:block;
+
+margin-bottom:.5rem;
+
+font-size:.75rem;
+
+font-weight:800;
+
+letter-spacing:.08em;
+
+text-transform:uppercase;
+
+color:var(--accent-color,#18743b);
+
+}
+
+.manufacturer-hub-content h2{
+
+margin:0 0 .75rem;
+
+}
+
+.manufacturer-hub-content p{
+
+margin:0 0 1rem;
+
+color:var(--text-muted,#647579);
+
+line-height:1.6;
+
+}
+
+.manufacturer-hub-content strong{
+
+color:var(--accent-color,#18743b);
+
+}
+
+</style>

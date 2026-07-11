@@ -1,0 +1,867 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+const comparisonGroups = [
+  {
+    eyebrow: "Nach Tier",
+    title: "Welcher Futterautomat passt zu deinem Tier?",
+    description:
+      "Vergleiche nach Tierart und Haushalt helfen dir, die Auswahl früh einzugrenzen.",
+    items: [
+      {
+        title: "Futterautomaten für Katzen",
+        description:
+          "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten.",
+        href: "/beste-futterautomaten-fuer-katzen",
+        icon: "🐈"
+      },
+      {
+        title: "Futterautomaten für Hunde",
+        description:
+          "Automaten mit passenden Portionsgrößen, stabiler Bauweise und ausreichender Kapazität.",
+        href: "/beste-futterautomaten-fuer-hunde",
+        icon: "🐕"
+      },
+      {
+        title: "Futterautomaten für zwei Katzen",
+        description:
+          "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang.",
+        href: "/beste-futterautomaten-fuer-zwei-katzen",
+        icon: "🐾"
+      }
+    ]
+  },
+  {
+    eyebrow: "Nach Funktion",
+    title: "Welche Ausstattung brauchst du wirklich?",
+    description:
+      "Nicht jede Funktion ist für jeden Haushalt sinnvoll. Diese Vergleiche ordnen die wichtigsten Ausstattungsmerkmale ein.",
+    items: [
+      {
+        title: "Futterautomaten ohne WLAN",
+        description:
+          "Für alle, die eine einfache und unabhängige Lösung ohne App oder Cloud suchen.",
+        href: "/beste-futterautomaten-ohne-wlan",
+        icon: "📴"
+      },
+      {
+        title: "Futterautomaten mit Kamera",
+        description:
+          "Für mehr Kontrolle aus der Ferne und einen direkten Blick auf die Mahlzeiten.",
+        href: "/beste-futterautomaten-mit-kamera",
+        icon: "📷",
+        planned: true
+      },
+      {
+        title: "Futterautomaten mit RFID",
+        description:
+          "Für getrennte Rationen und einen kontrollierten Zugang in Mehrtierhaushalten.",
+        href: "/beste-futterautomaten-mit-rfid",
+        icon: "🔐",
+        planned: true
+      }
+    ]
+  },
+  {
+    eyebrow: "Nach Futterart",
+    title: "Welcher Automat passt zur Fütterung?",
+    description:
+      "Trockenfutter und Nassfutter stellen unterschiedliche Anforderungen an Lagerung, Hygiene und Portionierung.",
+    items: [
+      {
+        title: "Futterautomaten für Nassfutter",
+        description:
+          "Modelle mit Kühlung, zeitgesteuerten Fächern oder geschützter Aufbewahrung.",
+        href: "/beste-futterautomaten-fuer-nassfutter",
+        icon: "🥣",
+        planned: true
+      },
+      {
+        title: "Futterautomaten für Trockenfutter",
+        description:
+          "Automaten mit Vorratsbehälter, flexibler Portionierung und zuverlässiger Ausgabe.",
+        href: "/beste-futterautomaten-fuer-trockenfutter",
+        icon: "🍽️",
+        planned: true
+      }
+    ]
+  }
+];
+
+const manufacturerComparisons = [
+  {
+    title: "PETLIBRO oder PETKIT?",
+    description:
+      "Welche Marke überzeugt bei App, Verarbeitung, Kamera und Produktauswahl?",
+    href: "/vergleiche/petlibro-vs-petkit",
+    icon: "↔",
+    planned: true
+  },
+  {
+    title: "SureFeed oder PETLIBRO?",
+    description:
+      "RFID-Zugangskontrolle oder smarter Futterautomat mit App: Welche Lösung passt besser?",
+    href: "/vergleiche/surefeed-vs-petlibro",
+    icon: "↔",
+    planned: true
+  },
+  {
+    title: "Cat Mate oder Closer Pets?",
+    description:
+      "Klassische Futterautomaten und zeitgesteuerte Lösungen im direkten Markenvergleich.",
+    href: "/vergleiche/cat-mate-vs-closer-pets",
+    icon: "↔",
+    planned: true
+  }
+];
+---
+
+<ProjectLayout
+  title="Vergleiche für smarte Haustiertechnik"
+  seoTitle="Futterautomaten und Pet-Tech-Produkte im Vergleich"
+  description="Vergleiche Futterautomaten, Hersteller und Funktionen. Finde schneller heraus, welches Produkt zu deinem Tier und deinem Alltag passt."
+  canonical="/vergleiche"
+>
+  <section class="comparison-hub-hero">
+    <span class="comparison-hub-eyebrow">
+      Vergleiche
+    </span>
+
+    <h1>
+      Welcher Vergleich hilft dir bei deiner Entscheidung?
+    </h1>
+
+    <p>
+      Nicht jeder Haushalt braucht dieselben Funktionen.
+      Unsere Vergleiche zeigen die wichtigsten Unterschiede,
+      ordnen Produkte nach Anwendungsfall ein und erklären,
+      wann sich welches Modell besser eignet.
+    </p>
+
+    <div class="comparison-hub-principles">
+      <div>
+        <span aria-hidden="true">✓</span>
+
+        <strong>
+          Klare Unterschiede
+        </strong>
+
+        <small>
+          Keine reine Produktliste
+        </small>
+      </div>
+
+      <div>
+        <span aria-hidden="true">✓</span>
+
+        <strong>
+          Konkrete Empfehlungen
+        </strong>
+
+        <small>
+          Passend zum Anwendungsfall
+        </small>
+      </div>
+
+      <div>
+        <span aria-hidden="true">✓</span>
+
+        <strong>
+          Redaktionelle Einordnung
+        </strong>
+
+        <small>
+          Entscheidung statt Datenflut
+        </small>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="comparison-hub-divider"
+    aria-hidden="true"
+  >
+    <span></span>
+    <strong>🐾</strong>
+    <span></span>
+  </div>
+
+  <main class="comparison-hub">
+    {
+      comparisonGroups.map((group) => (
+        <section class="comparison-group">
+          <header class="comparison-group-header">
+            <span>
+              {group.eyebrow}
+            </span>
+
+            <h2>
+              {group.title}
+            </h2>
+
+            <p>
+              {group.description}
+            </p>
+          </header>
+
+          <div class="comparison-card-grid">
+            {group.items.map((item) => (
+              item.planned ? (
+                <article class="comparison-card comparison-card-planned">
+                  <div class="comparison-card-icon">
+                    <span aria-hidden="true">
+                      {item.icon}
+                    </span>
+                  </div>
+
+                  <div class="comparison-card-content">
+                    <span class="comparison-card-status">
+                      In Vorbereitung
+                    </span>
+
+                    <h3>
+                      {item.title}
+                    </h3>
+
+                    <p>
+                      {item.description}
+                    </p>
+                  </div>
+                </article>
+              ) : (
+                <a
+                  class="comparison-card"
+                  href={item.href}
+                >
+                  <div class="comparison-card-icon">
+                    <span aria-hidden="true">
+                      {item.icon}
+                    </span>
+                  </div>
+
+                  <div class="comparison-card-content">
+                    <span class="comparison-card-label">
+                      Vergleich ansehen
+                    </span>
+
+                    <h3>
+                      {item.title}
+                    </h3>
+
+                    <p>
+                      {item.description}
+                    </p>
+
+                    <strong>
+                      Zur Kaufberatung
+                      <span aria-hidden="true">→</span>
+                    </strong>
+                  </div>
+                </a>
+              )
+            ))}
+          </div>
+        </section>
+      ))
+    }
+
+    <section class="comparison-group">
+      <header class="comparison-group-header">
+        <span>
+          Hersteller
+        </span>
+
+        <h2>
+          Welche Marke passt besser zu dir?
+        </h2>
+
+        <p>
+          Hersteller unterscheiden sich bei App, Support,
+          Produktphilosophie, Spezialfunktionen und Preisniveau.
+          Die direkten Vergleiche helfen bei der Markenwahl.
+        </p>
+      </header>
+
+      <div class="comparison-card-grid">
+        {manufacturerComparisons.map((comparison) => (
+          comparison.planned ? (
+            <article class="comparison-card comparison-card-planned">
+              <div class="comparison-card-icon">
+                <span aria-hidden="true">
+                  {comparison.icon}
+                </span>
+              </div>
+
+              <div class="comparison-card-content">
+                <span class="comparison-card-status">
+                  In Vorbereitung
+                </span>
+
+                <h3>
+                  {comparison.title}
+                </h3>
+
+                <p>
+                  {comparison.description}
+                </p>
+              </div>
+            </article>
+          ) : (
+            <a
+              class="comparison-card"
+              href={comparison.href}
+            >
+              <div class="comparison-card-icon">
+                <span aria-hidden="true">
+                  {comparison.icon}
+                </span>
+              </div>
+
+              <div class="comparison-card-content">
+                <span class="comparison-card-label">
+                  Herstellervergleich
+                </span>
+
+                <h3>
+                  {comparison.title}
+                </h3>
+
+                <p>
+                  {comparison.description}
+                </p>
+
+                <strong>
+                  Vergleich öffnen
+                  <span aria-hidden="true">→</span>
+                </strong>
+              </div>
+            </a>
+          )
+        ))}
+      </div>
+    </section>
+
+    <section class="comparison-manufacturer-cta">
+      <div>
+        <span>
+          Noch unsicher bei der Marke?
+        </span>
+
+        <h2>
+          Entdecke alle Hersteller im Überblick
+        </h2>
+
+        <p>
+          Die Herstellerseiten zeigen Produktschwerpunkte,
+          Bewertungen, Erfahrungen und passende Modelle.
+        </p>
+      </div>
+
+      <a href="/hersteller">
+        Hersteller vergleichen
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="comparison-method">
+      <header class="comparison-group-header">
+        <span>
+          Bewertungsmethode
+        </span>
+
+        <h2>
+          Wie entstehen unsere Vergleiche?
+        </h2>
+
+        <p>
+          Wir vergleichen nicht nur technische Daten.
+          Entscheidend ist, welches Produkt für einen
+          konkreten Alltag und Anwendungsfall besser geeignet ist.
+        </p>
+      </header>
+
+      <div class="comparison-method-grid">
+        <article>
+          <span aria-hidden="true">1</span>
+
+          <h3>
+            Anforderungen
+          </h3>
+
+          <p>
+            Tierart, Futterart, Haushaltsgröße und gewünschte
+            Funktionen bestimmen die sinnvolle Auswahl.
+          </p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">2</span>
+
+          <h3>
+            Unterschiede
+          </h3>
+
+          <p>
+            Wir prüfen Bedienung, Verarbeitung, App,
+            Zuverlässigkeit, Reinigung und Preis-Leistung.
+          </p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">3</span>
+
+          <h3>
+            Empfehlung
+          </h3>
+
+          <p>
+            Das Ergebnis erklärt klar, wann welches Produkt
+            oder welcher Hersteller die bessere Wahl ist.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+</ProjectLayout>
+
+<style>
+  .comparison-hub-hero,
+  .comparison-hub,
+  .comparison-hub-divider {
+    --comparison-accent: #18743b;
+    --comparison-accent-dark: #0f5a2b;
+    --comparison-accent-soft: rgba(24, 116, 59, 0.09);
+    --comparison-text: #0d302b;
+    --comparison-muted: #647579;
+    --comparison-border: #dce5e3;
+    box-sizing: border-box;
+  }
+
+  .comparison-hub-hero *,
+  .comparison-hub *,
+  .comparison-hub-divider * {
+    box-sizing: border-box;
+  }
+
+  .comparison-hub-hero {
+    max-width: 980px;
+    margin: 1.5rem auto 0;
+    padding: clamp(2rem, 5vw, 4.5rem);
+    border: 1px solid var(--comparison-border);
+    border-radius: 1.75rem;
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(24, 116, 59, 0.12),
+        transparent 38%
+      ),
+      linear-gradient(
+        145deg,
+        #ffffff,
+        #f5f9f6
+      );
+    box-shadow:
+      0 20px 50px rgba(13, 48, 43, 0.08);
+    text-align: center;
+  }
+
+  .comparison-hub-eyebrow {
+    display: inline-flex;
+    margin-bottom: 0.75rem;
+    color: var(--comparison-accent);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .comparison-hub-hero h1 {
+    max-width: 18ch;
+    margin: 0 auto 1.25rem;
+    color: var(--comparison-text);
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+  }
+
+  .comparison-hub-hero > p {
+    max-width: 66ch;
+    margin: 0 auto;
+    color: var(--comparison-muted);
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .comparison-hub-principles {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .comparison-hub-principles div {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    border: 1px solid var(--comparison-border);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.78);
+  }
+
+  .comparison-hub-principles div > span {
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.3rem;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--comparison-accent-soft);
+    color: var(--comparison-accent);
+    font-weight: 900;
+  }
+
+  .comparison-hub-principles strong {
+    color: var(--comparison-text);
+    font-size: 0.9rem;
+  }
+
+  .comparison-hub-principles small {
+    color: var(--comparison-muted);
+    font-size: 0.74rem;
+  }
+
+  .comparison-hub-divider {
+    display: grid;
+    width: min(34rem, calc(100vw - 3rem));
+    margin: 2.5rem auto;
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      auto
+      minmax(2rem, 1fr);
+    align-items: center;
+    gap: 1rem;
+    color: var(--comparison-accent);
+  }
+
+  .comparison-hub-divider span {
+    height: 1px;
+    background: currentColor;
+    opacity: 0.4;
+  }
+
+  .comparison-hub-divider strong {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .comparison-group {
+    margin-bottom: 4rem;
+  }
+
+  .comparison-group-header {
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+  }
+
+  .comparison-group-header > span {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    color: var(--comparison-accent);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .comparison-group-header h2 {
+    margin: 0 0 0.8rem;
+    color: var(--comparison-text);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .comparison-group-header p {
+    max-width: 68ch;
+    margin: 0;
+    color: var(--comparison-muted);
+    line-height: 1.7;
+  }
+
+  .comparison-card-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .comparison-card {
+    display: grid;
+    min-width: 0;
+    padding: 1.4rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid var(--comparison-border);
+    border-radius: 1.2rem;
+    background:
+      linear-gradient(
+        145deg,
+        #ffffff,
+        #f8faf9
+      );
+    box-shadow:
+      0 12px 30px rgba(13, 48, 43, 0.05);
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      border-color 180ms ease;
+  }
+
+  a.comparison-card:hover {
+    transform: translateY(-4px);
+    border-color:
+      color-mix(
+        in srgb,
+        var(--comparison-accent) 28%,
+        var(--comparison-border)
+      );
+    box-shadow:
+      0 18px 38px rgba(13, 48, 43, 0.1);
+  }
+
+  .comparison-card-icon {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 0.9rem;
+    background: var(--comparison-accent-soft);
+    font-size: 1.35rem;
+  }
+
+  .comparison-card-content {
+    min-width: 0;
+  }
+
+  .comparison-card-label,
+  .comparison-card-status {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    color: var(--comparison-accent);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .comparison-card-status {
+    color: #886016;
+  }
+
+  .comparison-card-content h3 {
+    margin: 0 0 0.65rem;
+    color: var(--comparison-text);
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .comparison-card-content p {
+    margin: 0 0 1rem;
+    color: var(--comparison-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .comparison-card-content > strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--comparison-accent-dark);
+    font-size: 0.88rem;
+  }
+
+  .comparison-card-planned {
+    background:
+      linear-gradient(
+        145deg,
+        rgba(13, 48, 43, 0.025),
+        #ffffff
+      );
+  }
+
+  .comparison-card-planned .comparison-card-icon {
+    filter: grayscale(0.4);
+    opacity: 0.78;
+  }
+
+  .comparison-manufacturer-cta {
+    display: flex;
+    margin-bottom: 4rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 1px solid
+      color-mix(
+        in srgb,
+        var(--comparison-accent) 22%,
+        var(--comparison-border)
+      );
+    border-radius: 1.4rem;
+    background:
+      linear-gradient(
+        135deg,
+        var(--comparison-accent-soft),
+        #ffffff 54%
+      );
+  }
+
+  .comparison-manufacturer-cta > div {
+    max-width: 680px;
+  }
+
+  .comparison-manufacturer-cta div > span {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--comparison-accent);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .comparison-manufacturer-cta h2 {
+    margin: 0 0 0.65rem;
+    color: var(--comparison-text);
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    line-height: 1.12;
+  }
+
+  .comparison-manufacturer-cta p {
+    margin: 0;
+    color: var(--comparison-muted);
+    line-height: 1.65;
+  }
+
+  .comparison-manufacturer-cta > a {
+    display: inline-flex;
+    min-height: 3.4rem;
+    padding: 0.85rem 1.2rem;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border-radius: 0.8rem;
+    background:
+      linear-gradient(
+        135deg,
+        var(--comparison-accent),
+        var(--comparison-accent-dark)
+      );
+    box-shadow:
+      0 12px 28px rgba(24, 116, 59, 0.22);
+    color: #ffffff;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .comparison-method {
+    margin-bottom: 4rem;
+  }
+
+  .comparison-method-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .comparison-method-grid article {
+    padding: 1.4rem;
+    border: 1px solid var(--comparison-border);
+    border-radius: 1.1rem;
+    background: #ffffff;
+  }
+
+  .comparison-method-grid article > span {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    place-items: center;
+    border-radius: 0.75rem;
+    background: var(--comparison-accent-soft);
+    color: var(--comparison-accent);
+    font-weight: 900;
+  }
+
+  .comparison-method-grid h3 {
+    margin: 0 0 0.6rem;
+    color: var(--comparison-text);
+  }
+
+  .comparison-method-grid p {
+    margin: 0;
+    color: var(--comparison-muted);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 980px) {
+    .comparison-card-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+    .comparison-method-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .comparison-hub-hero {
+      padding: 2rem 1.25rem;
+      border-radius: 1.3rem;
+    }
+
+    .comparison-hub-hero h1 {
+      font-size: clamp(2.5rem, 12vw, 3.7rem);
+    }
+
+    .comparison-hub-principles {
+      grid-template-columns: 1fr;
+    }
+
+    .comparison-card-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .comparison-card {
+      padding: 1.15rem;
+    }
+
+    .comparison-manufacturer-cta {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .comparison-manufacturer-cta > a {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .comparison-card {
+      transition: none;
+    }
+
+    a.comparison-card:hover {
+      transform: none;
+    }
+  }
+</style>
