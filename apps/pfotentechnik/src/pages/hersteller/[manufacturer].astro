@@ -236,15 +236,6 @@ const heroImage =
 const logoImage =
   `/images/manufacturers/${manufacturer.slug}/logo.webp`;
 
-const primarySuitableFor =
-  manufacturer.suitableFor?.slice(0, 5) ?? [];
-
-const productCount =
-  manufacturer.products.length;
-
-const seriesCount =
-  manufacturer.series?.length ?? 0;
-
 const ratingStars = (rating: number) => {
   const rounded = Math.max(
     0,
@@ -477,7 +468,7 @@ const ratingStars = (rating: number) => {
   <div class="manufacturer-hero-bottom">
 
     {
-      manufacturer.suitableFor && (
+     manufacturer.suitableFor?.length > 0 && (
         <section class="manufacturer-info-card">
 
           <header>
@@ -1985,45 +1976,7 @@ const ratingStars = (rating: number) => {
     border-radius: 18px;
     background: #ffffff;
   }
- 
-  /* =========================================================
-   Editorial recommendations
-   ========================================================= */
 
-.manufacturer-editors-choice {
-  scroll-margin-top: 110px;
-}
-
-.choice-header {
-  max-width: 820px;
-  margin-bottom: 30px;
-}
-
-.choice-eyebrow {
-  display: inline-flex;
-  margin-bottom: 9px;
-  color: var(--manufacturer-accent);
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.choice-header h2 {
-  margin: 0 0 14px;
-  color: var(--manufacturer-text);
-  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
-  line-height: 1.04;
-  letter-spacing: -0.045em;
-}
-
-.choice-header p {
-  max-width: 68ch;
-  margin: 0;
-  color: var(--manufacturer-muted);
-  font-size: 1.05rem;
-  line-height: 1.75;
-}
 
 /* =========================================================
    Editorial product recommendations
