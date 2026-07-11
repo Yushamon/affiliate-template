@@ -502,21 +502,34 @@ const stars = (
         <span></span>
       </div>
 
-      <section class="product-review-verdict-v3">
-        <span class="product-review-section-eyebrow">
-          Kurzfazit
-        </span>
+ <section class="product-review-verdict-v3">
+  <div class="product-review-verdict-main-v3">
+    <span
+      class="product-review-verdict-icon-v3"
+      aria-hidden="true"
+    >
+      ★
+    </span>
 
-        <h2>
-          {
-            product.recommendation
-          }
-        </h2>
+    <span class="product-review-section-eyebrow">
+      Kurzfazit
+    </span>
 
-        <p>
-          {review.verdict}
-        </p>
-      </section>
+    <h2>
+      {product.recommendation}
+    </h2>
+  </div>
+
+  <div class="product-review-verdict-aside-v3">
+    <span class="product-review-verdict-label-v3">
+      Unsere Einschätzung
+    </span>
+
+    <p>
+      {review.verdict}
+    </p>
+  </div>
+</section>
 
       <section class="product-review-decision-v3">
         <div class="product-review-section-heading-v3">
@@ -1302,10 +1315,9 @@ const stars = (
     line-height: 1;
   }
 
- .product-review-verdict-v3,
+.product-review-verdict-v3,
 .product-review-final-verdict-v3 {
   position: relative;
-  padding: clamp(1.5rem, 2.5vw, 2.2rem);
   overflow: hidden;
   border: 1px solid
     color-mix(
@@ -1322,6 +1334,79 @@ const stars = (
     );
   box-shadow:
     0 14px 34px rgba(13, 48, 43, 0.06);
+}
+
+.product-review-verdict-v3 {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(18rem, 0.85fr);
+}
+
+.product-review-verdict-main-v3,
+.product-review-verdict-aside-v3 {
+  min-width: 0;
+  padding: clamp(1.5rem, 2.5vw, 2.2rem);
+}
+
+.product-review-verdict-main-v3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-review-verdict-aside-v3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid var(--product-border);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.product-review-verdict-icon-v3 {
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-bottom: 1rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: var(--product-accent-soft);
+  color: var(--product-accent);
+  font-size: 1.35rem;
+}
+
+.product-review-verdict-label-v3 {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: var(--product-accent);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.product-review-verdict-v3 h2,
+.product-review-final-verdict-v3 h2 {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: var(--product-text);
+  font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.product-review-verdict-v3 p,
+.product-review-final-verdict-v3 p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--product-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.product-review-final-verdict-v3 {
+  padding: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 .product-review-verdict-v3::before {
   display: grid;
@@ -1657,7 +1742,14 @@ const stars = (
     align-items: flex-start;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 900px) {.product-review-verdict-v3 {
+  grid-template-columns: 1fr;
+}
+
+.product-review-verdict-aside-v3 {
+  border-top: 1px solid var(--product-border);
+  border-left: 0;
+}
     .product-review-hero-v3 {
       grid-template-columns: 1fr;
     }
