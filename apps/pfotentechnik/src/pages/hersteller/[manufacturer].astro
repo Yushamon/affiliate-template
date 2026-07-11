@@ -469,132 +469,220 @@ const ratingStars = (rating: number) => {
 
 
   <article class="article manufacturer-hub">
-   <section
+ <section
   id="produktempfehlungen"
-  class="manufacturer-recommendations"
+  class="manufacturer-editors-choice"
 >
-  <div class="manufacturer-recommendations-header">
-    <span class="manufacturer-recommendations-eyebrow">
-      Redaktionelle Auswahl
+
+  <header class="choice-header">
+
+    <span class="choice-eyebrow">
+      Redaktionelle Empfehlung
     </span>
 
     <h2>
-      Unsere Kaufempfehlungen
+      Welches {manufacturer.name}-Modell passt zu dir?
     </h2>
 
     <p>
       Nicht jedes Modell eignet sich für jeden Haushalt.
-      Diese Produkte schneiden innerhalb des aktuellen
-      Sortiments besonders gut ab und bieten je nach
-      Anforderungen unterschiedliche Vorteile.
+      Unsere Redaktion empfiehlt je nach Anwendungsfall
+      unterschiedliche Modelle.
     </p>
-  </div>
 
-  {featuredProducts.length > 0 ? (
-    <div class="manufacturer-choice-grid">
-      {featuredProducts.map(
-        (recommendation, index) => (
-          <article
-            class:list={[
-              "manufacturer-choice-card",
+  </header>
+
+  <!-- ================================================= -->
+
+  <!-- Beste Gesamtwahl -->
+
+  <!-- ================================================= -->
+
+  {
+    sortedProducts.length > 0 && (
+
+      <article class="choice-featured">
+
+        <div class="choice-featured-header">
+
+          <div class="choice-badge">
+
+            🏆
+
+            Beste Gesamtwahl
+
+          </div>
+
+          <h3>
+
+            Für die meisten Nutzer unsere erste Empfehlung
+
+          </h3>
+
+        </div>
+
+        <p class="choice-intro">
+
+          Dieses Modell überzeugt durch das
+          ausgewogenste Gesamtpaket aus
+          Bedienung, Zuverlässigkeit,
+          Funktionsumfang und Alltagstauglichkeit.
+
+        </p>
+
+        <ProductRankingCard
+          productKey={sortedProducts[0]}
+          rank={1}
+          score={
+            getWeightedProductScore(
+              sortedProducts[0]
+            )
+          }
+        />
+
+      </article>
+
+    )
+  }
+
+  <!-- ================================================= -->
+
+  <!-- Weitere Empfehlungen -->
+
+  <!-- ================================================= -->
+
+  <div class="choice-grid">
+
+    {
+      sortedProducts
+        .slice(1, 4)
+        .map((productKey, index) => (
+
+          <article class="choice-card">
+
+            <div class="choice-card-header">
+
               {
-                "manufacturer-choice-card-featured":
-                  index === 0
-              }
-            ]}
-          >
-            <div class="manufacturer-choice-heading">
-              <span
-                class="manufacturer-choice-icon"
-                aria-hidden="true"
-              >
-                {recommendation.icon}
-              </span>
+                index === 0 && (
+                  <span>
 
-              <div>
-                <span class="manufacturer-choice-badge">
-                  {recommendation.badge}
-                </span>
+                    🥣
 
-                <h3>
-                  {recommendation.title}
-                </h3>
-              </div>
-            </div>
+                    Für Nassfutter
 
-            <p class="manufacturer-choice-description">
-              {recommendation.description}
-            </p>
-
-            <ProductRankingCard
-              productKey={recommendation.productKey}
-              rank={index + 1}
-              score={
-                getWeightedProductScore(
-                  recommendation.productKey
+                  </span>
                 )
               }
-            />
-          </article>
-        )
-      )}
-    </div>
-  ) : (
-    <div class="manufacturer-empty-state">
-      <strong>
-        Noch keine Kaufempfehlung verfügbar
-      </strong>
 
-      <p>
-        Für diesen Hersteller ist derzeit noch kein
-        Produkt vollständig bewertet.
-      </p>
-    </div>
-  )}
+              {
+                index === 1 && (
+                  <span>
 
-  {sortedProducts.length > featuredProducts.length && (
-    <>
-      <div
-        class="manufacturer-products-divider"
-        aria-hidden="true"
-      >
-        <span></span>
-        <strong>🐾</strong>
-        <span></span>
-      </div>
+                    🐈
 
-      <div class="manufacturer-all-products-header">
-        <span>
-          Vollständige Übersicht
-        </span>
+                    Mehrere Katzen
 
-        <h2>
-          Alle Produkte von {manufacturer.name}
-        </h2>
+                  </span>
+                )
+              }
 
-        <p>
-          Hier findest du alle aktuell eingeordneten
-          Produkte und Modellvarianten dieses Herstellers.
-        </p>
-      </div>
+              {
+                index === 2 && (
+                  <span>
 
-      <div class="product-ranking-list">
-        {sortedProducts.map(
-          (productKey, index) => (
+                    💰
+
+                    Preis-Leistung
+
+                  </span>
+                )
+              }
+
+            </div>
+
             <ProductRankingCard
               productKey={productKey}
-              rank={index + 1}
+              rank={index + 2}
               score={
                 getWeightedProductScore(
                   productKey
                 )
               }
             />
-          )
-        )}
-      </div>
-    </>
-  )}
+
+          </article>
+
+        ))
+    }
+
+  </div>
+
+</section>
+
+<div
+  class="manufacturer-divider"
+  aria-hidden="true"
+>
+
+  <span></span>
+
+  <strong>
+
+    🐾
+
+  </strong>
+
+  <span></span>
+
+</div>
+
+<section>
+
+  <header class="choice-header">
+
+    <span class="choice-eyebrow">
+
+      Vollständige Übersicht
+
+    </span>
+
+    <h2>
+
+      Alle Produkte von {manufacturer.name}
+
+    </h2>
+
+    <p>
+
+      Hier findest du alle aktuell
+      eingeordneten Modelle dieses Herstellers.
+
+    </p>
+
+  </header>
+
+  <div class="product-ranking-list">
+
+    {
+      sortedProducts.map(
+        (productKey, index) => (
+
+          <ProductRankingCard
+            productKey={productKey}
+            rank={index + 1}
+            score={
+              getWeightedProductScore(
+                productKey
+              )
+            }
+          />
+
+        )
+      )
+    }
+
+  </div>
+
 </section>
 
     {manufacturer.series?.length > 0 && (

@@ -7,7 +7,19 @@ Dieses Dokument beschreibt die Architektur aller Affiliate-Projekte.
 Neue Projekte sollen dieselbe Struktur verwenden.
 
 ---
+## Grundprinzip
 
+Jede Seite beantwortet genau eine Hauptfrage des Nutzers.
+
+Die Informationsarchitektur orientiert sich an Entscheidungen, nicht an Themen.
+PfotenTechnik ist ein Entscheidungsportal für smarte Haustiertechnik. Jede Seite hilft dem Besucher, genau eine Entscheidung sicher und nachvollziehbar zu treffen.
+Beispiele:
+
+• Herstellerseite → Welcher Hersteller passt zu mir?
+• Produktseite → Soll ich dieses Produkt kaufen?
+• Vergleich → Welches Produkt ist besser?
+• Decision Page → Welche Lösung passt zu meinem Anwendungsfall?
+• Wissensseite → Wie funktioniert das?
 # Grundprinzipien
 
 Das Framework folgt drei Regeln.
