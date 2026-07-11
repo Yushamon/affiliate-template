@@ -11,6 +11,49 @@ export interface Manufacturer {
   strengths: string[];
   limitations: string[];
   country?: string;
+  rating?: number;
+
+ratings?: {
+  innovation: number;
+  quality: number;
+  app: number;
+  support: number;
+  value: number;
+};
+
+productAreas?: Array<{
+  name: string;
+  description: string;
+}>;
+
+series?: Array<{
+  name: string;
+  suitableFor: string;
+  description: string;
+}>;
+
+suitableFor?: string[];
+
+lessSuitableFor?: string[];
+
+customerExperience?: {
+  summary: string;
+  positives: string[];
+  criticism: string[];
+  supportAssessment: string;
+};
+
+alternatives?: string[];
+
+faq?: Array<{
+  question: string;
+  answer: string;
+}>;
+
+sources?: Array<{
+  label: string;
+  url: string;
+}>;
   products: ProductKey[];
 }
 
@@ -26,12 +69,217 @@ const createManufacturer = (manufacturer: ManufacturerInput): Manufacturer => ({
 
 export const manufacturers = [
   createManufacturer({
-    key: "petlibro", name: "Petlibro", slug: "petlibro",
-    description: "Petlibro bietet vernetzte und klassische Futterautomaten für Trockenfutter sowie Modelle mit Kamera. Im Katalog stehen vor allem App-Bedienung und unterschiedliche Haushaltsgrößen im Fokus.",
-    website: "https://petlibro.com", focus: ["App-Futterautomaten", "Kamera-Modelle", "Kompakte Vorratsautomaten"],
-    productCategories: ["Futterautomaten"], strengths: ["Breite Modellauswahl", "Klare Abstufung zwischen Basis- und Kamera-Modellen", "Zeitpläne und Protokolle bei vernetzten Geräten"],
-    limitations: ["App- und Modellversionen können regional abweichen", "Viele Modelle sind auf Trockenfutter begrenzt"]
-  }),
+  key: "petlibro",
+  name: "Petlibro",
+  slug: "petlibro",
+
+  description:
+    "Petlibro entwickelt smarte Haustiertechnik mit Schwerpunkt auf automatischer Fütterung, Trinkbrunnen und vernetzten Lösungen für Katzen und Hunde. Die Marke ist besonders für modernes Design, eine vergleichsweise übersichtliche App und ein breites Sortiment an Futterautomaten bekannt.",
+
+  website: "https://de.petlibro.com",
+
+  focus: [
+    "Smarte Futterautomaten",
+    "Nassfutter- und RFID-Lösungen",
+    "Trinkbrunnen und vernetzte Haustiertechnik"
+  ],
+
+  productCategories: [
+    "Futterautomaten",
+    "Trinkbrunnen",
+    "RFID-Fütterung",
+    "Haustierkameras"
+  ],
+
+  strengths: [
+    "Breite Auswahl für unterschiedliche Fütterungssituationen",
+    "Moderne App mit Zeitplänen, Protokollen und Benachrichtigungen",
+    "Eigenständige Lösungen für Nassfutter und RFID-Zugang",
+    "Ansprechendes, meist kompaktes Produktdesign",
+    "Viele Modelle mit Notstrom- oder Batterielösung"
+  ],
+
+  limitations: [
+    "Viele Modelle liegen preislich über einfachen Offline-Automaten",
+    "App- und Modellversionen können sich regional unterscheiden",
+    "Einzelne Nutzer berichten über WLAN- oder App-Probleme",
+    "Zubehör und Ersatzteile sind nicht für jedes Modell gleich gut verfügbar"
+  ],
+
+  rating: 4.6,
+
+  ratings: {
+    innovation: 4.8,
+    quality: 4.6,
+    app: 4.5,
+    support: 4.2,
+    value: 4.3
+  },
+
+  productAreas: [
+    {
+      name: "Futterautomaten",
+      description:
+        "Petlibro bietet klassische Trockenfutterautomaten, Modelle mit Kamera, RFID-Zugang und aktive Kühlung für Nassfutter."
+    },
+    {
+      name: "Trinkbrunnen",
+      description:
+        "Das Sortiment umfasst kompakte und appfähige Trinkbrunnen mit Filter- und teilweise Verbrauchsüberwachung."
+    },
+    {
+      name: "RFID-Fütterung",
+      description:
+        "Mit RFID-Modellen richtet sich Petlibro an Mehrtierhaushalte mit getrennten Futterplänen und Futterneid."
+    },
+    {
+      name: "Haustierkameras",
+      description:
+        "Kamerafunktionen sind teilweise direkt in Futterautomaten integriert und ergänzen Livebild, Ereignisse und Benachrichtigungen."
+    }
+  ],
+
+  series: [
+    {
+      name: "Granary",
+      suitableFor:
+        "Allround-Nutzung und größere Trockenfuttervorräte",
+      description:
+        "Die Granary-Serie deckt klassische Smart-Feeder sowie Varianten mit Kamera ab und ist die breiteste Produktlinie von Petlibro."
+    },
+    {
+      name: "Air",
+      suitableFor:
+        "Kleine Haushalte und kompakte Stellflächen",
+      description:
+        "Die Air-Serie ist kompakter aufgebaut und wird als klassische sowie als appfähige Variante angeboten."
+    },
+    {
+      name: "Polar",
+      suitableFor:
+        "Zeitgesteuerte Nassfütterung",
+      description:
+        "Polar nutzt aktive Kühlung und richtet sich an Halter, die vorbereitete Nassfutterportionen länger frisch halten möchten."
+    },
+    {
+      name: "One RFID",
+      suitableFor:
+        "Mehrtierhaushalte und Schutz vor Futterdiebstahl",
+      description:
+        "Die One-Serie verbindet automatische Portionierung mit einem geschützten Zugang über einen RFID-Halsbandanhänger."
+    },
+    {
+      name: "Space",
+      suitableFor:
+        "Designorientierte Haushalte mit App-Steuerung",
+      description:
+        "Space kombiniert eine moderne Bauform mit den typischen Smart-Feeder-Funktionen der Marke."
+    }
+  ],
+
+  suitableFor: [
+    "Berufstätige mit festen oder wechselnden Fütterungszeiten",
+    "Katzenhalter mit Bedarf an kleinen, planbaren Portionen",
+    "Mehrtierhaushalte mit Futterneid oder getrennten Rationen",
+    "Nutzer, die App-Steuerung und Fütterungsprotokolle wünschen",
+    "Haushalte, die eine moderne und kompakte Produktgestaltung bevorzugen"
+  ],
+
+  lessSuitableFor: [
+    "Nutzer, die bewusst vollständig auf App und Cloud-Funktionen verzichten möchten",
+    "Sehr preisbewusste Käufer mit ausschließlich einfachen Timer-Anforderungen",
+    "Haushalte, die für jedes Produkt eine langfristig garantierte lokale Ersatzteilversorgung erwarten"
+  ],
+
+  customerExperience: {
+    summary:
+      "Über verschiedene Käuferbewertungen und Produkttests hinweg werden vor allem die einfache Einrichtung, das moderne Design und die zuverlässige Fütterung positiv hervorgehoben. Kritische Rückmeldungen betreffen vor allem vereinzelte WLAN- oder App-Probleme sowie uneinheitliche Erfahrungen bei Reklamationen und Ersatzteilen.",
+
+    positives: [
+      "Viele Nutzer beschreiben Einrichtung und tägliche Bedienung als unkompliziert.",
+      "Zeitpläne und Fütterungsprotokolle werden häufig als zuverlässig und alltagstauglich bewertet.",
+      "Design, Materialanmutung und kompakte Bauformen werden regelmäßig gelobt.",
+      "Mehrere Tests heben die übersichtliche App und die gute Funktionsabdeckung hervor.",
+      "Der Support wird in vielen Bewertungen als schnell, freundlich und lösungsorientiert beschrieben."
+    ],
+
+    criticism: [
+      "Einzelne Nutzer berichten über Verbindungsprobleme nach Einrichtung oder App-Updates.",
+      "Die ausgegebene Portionsmenge kann je nach Futterform leicht schwanken.",
+      "Erfahrungen mit Garantieabwicklung und Ersatzteilen fallen nicht durchgehend einheitlich aus.",
+      "Einige Funktionen und Modellvarianten unterscheiden sich je nach Region und verwendeter App."
+    ],
+
+    supportAssessment:
+      "Petlibro nennt für den deutschen Support eine Antwortzeit von bis zu 48 Stunden an Werktagen. Viele öffentliche Bewertungen berichten von schneller und hilfreicher Unterstützung, während andere Plattformen auch deutlich kritischere Einzelfälle enthalten. Insgesamt wirkt der Support erreichbar und überwiegend lösungsorientiert, sollte bei Garantiefällen aber nicht als durchgehend gleich schnell vorausgesetzt werden."
+  },
+
+  alternatives: [
+    "petkit",
+    "surefeed",
+    "cat-mate"
+  ],
+
+  faq: [
+    {
+      question: "Ist Petlibro eine gute Marke?",
+      answer:
+        "Petlibro gehört zu den etablierten Anbietern smarter Haustiertechnik. Besonders stark ist die Marke bei automatischer Fütterung, App-Steuerung und spezialisierten Lösungen für Nassfutter oder Mehrtierhaushalte."
+    },
+    {
+      question: "Welche Petlibro-Serie passt zu mir?",
+      answer:
+        "Granary eignet sich als vielseitige Allround-Serie, Air für kompakte Stellflächen, Polar für Nassfutter und One RFID für getrennte Fütterung in Mehrtierhaushalten."
+    },
+    {
+      question: "Wie gut ist die Petlibro-App?",
+      answer:
+        "Die App wird überwiegend als übersichtlich und gut bedienbar beschrieben. Je nach Modell werden Zeitpläne, Protokolle, Benachrichtigungen und Kamerafunktionen unterstützt. Einzelne Nutzer berichten jedoch über gelegentliche Verbindungsprobleme."
+    },
+    {
+      question: "Wie ist der Petlibro-Support?",
+      answer:
+        "Die Erfahrungen sind insgesamt eher positiv, aber nicht vollständig einheitlich. Petlibro nennt eine Antwortzeit von bis zu 48 Stunden an Werktagen. Bei komplexeren Garantie- oder Ersatzteilfällen kann die Bearbeitung länger dauern."
+    },
+    {
+      question: "Bietet Petlibro nur Futterautomaten an?",
+      answer:
+        "Nein. Neben Futterautomaten bietet Petlibro auch Trinkbrunnen, RFID-Lösungen und weitere vernetzte Haustierprodukte an."
+    }
+  ],
+
+  sources: [
+    {
+      label: "Petlibro Deutschland",
+      url: "https://de.petlibro.com"
+    },
+    {
+      label: "Petlibro Help Center",
+      url: "https://petlibro.com/pages/help-center"
+    },
+    {
+      label: "Petlibro Kontakt und Support",
+      url: "https://de.petlibro.com/pages/contact-us"
+    },
+    {
+      label: "Petlibro Garantiebedingungen",
+      url: "https://petlibro.com/pages/return-policy"
+    },
+    {
+      label: "Trustpilot Erfahrungen",
+      url: "https://de.trustpilot.com/review/petlibro.com"
+    },
+    {
+      label: "Cybernews Produkterfahrung",
+      url:
+        "https://cybernews.com/reviews/petlibro-automatic-cat-feeder-review/"
+    },
+    {
+      label: "WIRED Petlibro Einschätzung",
+      url: "https://www.wired.com/story/petlibro-discount-code"
+    }
+  ]
+}),
   createManufacturer({
     key: "petkit", name: "PETKIT", slug: "petkit",
     description: "PETKIT verbindet Futterautomaten mit einem größeren Pet-Tech-Ökosystem. Die Modelle reichen von kompakten Vorratsautomaten bis zu Kamera- und Dual-Hopper-Lösungen.",

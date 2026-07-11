@@ -1468,6 +1468,127 @@ export const products = {
     }
   }
 }),
+"wopet-cube-air-ca10": createFeeder({
+  name: "WOPET Cube Air WiFi Pet Feeder CA10",
+  brand: "WOPET",
+  manufacturer: "wopet",
+  manufacturerLabel: "WOPET",
+  productUrl: "/produkt/wopet-cube-air-ca10",
+  images: {
+    hero: "/images/products/wopet-cube-air-ca10/hero.webp",
+    thumbnail:
+      "/images/products/wopet-cube-air-ca10/thumbnail.webp",
+    comparison:
+      "/images/products/wopet-cube-air-ca10/comparison.webp",
+    gallery: [
+      "/images/products/wopet-cube-air-ca10/gallery-1.webp",
+      "/images/products/wopet-cube-air-ca10/gallery-2.webp",
+      "/images/products/wopet-cube-air-ca10/gallery-3.webp"
+    ]
+  },
+  badge: "WOPET App Preis Tipp",
+  recommendation:
+    "Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.",
+  rating: 4.4,
+  capacity: "4 Liter",
+  useCase:
+    "Für Katzen und kleine Hunde, die mehrmals täglich kontrollierte Trockenfutterportionen erhalten sollen",
+  highlights: [
+    "Bis zu zehn Mahlzeiten täglich",
+    "Langsam Fütterungsmodus in der WOPET Life App",
+    "Sprachaufnahme mit bis zu zehn Sekunden"
+  ],
+  pros: [
+    "Unterstützt 2,4 und 5 GHz WLAN",
+    "App mit Fütterungsprotokoll und Statusmeldungen",
+    "Herausnehmbarer Edelstahlnapf"
+  ],
+  cons: [
+    "Nur für Trockenfutter geeignet",
+    "Batterien dienen nur als Notstromversorgung",
+    "Keine Kamera integriert"
+  ],
+  specs: [
+    {
+      label: "Futterart",
+      value: "Trockenfutter, Kroketten etwa 2 bis 12 mm"
+    },
+    {
+      label: "App-Steuerung",
+      value: "Ja, WOPET Life"
+    },
+    {
+      label: "Kamera",
+      value: "Nein"
+    },
+    {
+      label: "Kapazität",
+      value: "4 Liter"
+    },
+    {
+      label: "Mahlzeiten",
+      value: "1 bis 10 pro Tag"
+    },
+    {
+      label: "Portionierung",
+      value: "1 bis 8 Portionen pro Mahlzeit"
+    },
+    {
+      label: "Portionsgröße",
+      value: "Etwa 10 g pro Portion"
+    },
+    {
+      label: "WLAN",
+      value: "2,4 und 5 GHz"
+    },
+    {
+      label: "Sprachaufnahme",
+      value: "Bis zu 10 Sekunden"
+    },
+    {
+      label: "Stromversorgung",
+      value: "USB C Netzteil mit Batterie Backup"
+    },
+    {
+      label: "Geeignet für",
+      value: "Katzen und kleine Hunde"
+    }
+  ],
+  useCases: [
+    "katze",
+    "hund",
+    "app",
+    "urlaub",
+    "portionierung",
+    "trockenfutter",
+    "gegen-schlingen",
+    "batteriebetrieb",
+    "preisleistung"
+  ],
+  ratings: {
+    app: 4.5,
+    portionierung: 4.5,
+    reinigung: 4.5,
+    zuverlaessigkeit: 4.3,
+    sicherheit: 4.3,
+    preisleistung: 4.6
+  },
+  ranking: {
+    overall: 88,
+    beginner: 92,
+    premium: 78,
+    retrofit: 90,
+    value: 94
+  },
+  priority: 9,
+  verdict:
+    "Eine attraktive WOPET Alternative für preisbewusste Nutzer, die App Steuerung, kleine Portionen und einen kompakten 4 Liter Vorrat miteinander kombinieren möchten.",
+  merchantLinks: {
+    amazon: {
+      searchQuery: "WOPET Cube Air CA10 Futterautomat"
+    }
+  }
+}),
   "xiaomi-smart-pet-food-feeder-2": createFeeder({
     name: "Xiaomi Smart Pet Food Feeder 2",
     brand: "Xiaomi",

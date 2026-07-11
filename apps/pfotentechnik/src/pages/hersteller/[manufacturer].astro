@@ -3,42 +3,110 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
-import { manufacturers, type Manufacturer } from "../../data/manufacturers";
-import { getWeightedProductScore } from "../../data/productScoring";
+
+import {
+  manufacturers,
+  type Manufacturer
+} from "../../data/manufacturers";
+
+import {
+  getWeightedProductScore
+} from "../../data/productScoring";
 
 export function getStaticPaths() {
   return manufacturers.map((manufacturer) => ({
-    params: { manufacturer: manufacturer.slug },
-    props: { manufacturer }
+    params: {
+      manufacturer: manufacturer.slug
+    },
+    props: {
+      manufacturer
+    }
   }));
 }
 
-const { manufacturer } = Astro.props as { manufacturer: Manufacturer };
-const title = `${manufacturer.name} Futterautomaten`;
-const description = `${manufacturer.name} Futterautomaten im Überblick: Modelle, Fokusbereiche, Stärken, Grenzen und passende Einsatzbereiche verständlich eingeordnet.`;
-const faq = [
+const { manufacturer } = Astro.props as {
+  manufacturer: Manufacturer;
+};
+
+const title =
+  `${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`;
+
+const description =
+  `${manufacturer.name} im Überblick: Produktbereiche, Serien, ` +
+  `Erfahrungen, Stärken, Schwächen und passende Empfehlungen.`;
+
+const faq =
+  manufacturer.faq?.length
+    ? manufacturer.faq
+    : [
+        {
+          question:
+            `Welche Produkte von ${manufacturer.name} sind im Katalog enthalten?`,
+          answer:
+            manufacturer.products.length > 0
+              ? `Aktuell sind ${manufacturer.products.length} Produkte beziehungsweise Modellvarianten redaktionell eingeordnet. Der Katalog wird bei relevanten und nachvollziehbar verfügbaren Produkten ergänzt.`
+              : "Aktuell ist noch kein konkretes Produkt vollständig eingeordnet. Das Herstellerprofil dokumentiert bereits Schwerpunkte und Auswahlkriterien für spätere Ergänzungen."
+        },
+        {
+          question:
+            `Worauf sollte man bei Produkten von ${manufacturer.name} achten?`,
+          answer:
+            "Entscheidend sind Produktkategorie, Funktionsumfang, App-Kompatibilität, Ersatzteilversorgung, regionale Verfügbarkeit und die Frage, ob das jeweilige Modell zum eigenen Alltag passt."
+        }
+      ];
+
+const comparisonLinks = [
   {
-    question: `Welche ${manufacturer.name} Futterautomaten sind im Katalog enthalten?`,
-    answer: manufacturer.products.length > 0
-      ? `Aktuell sind ${manufacturer.products.length} Modelle beziehungsweise Modellvarianten redaktionell eingeordnet. Der Katalog wird bei relevanten, nachvollziehbar verfügbaren Produkten ergänzt.`
-      : "Aktuell ist noch kein konkretes Modell vollständig eingeordnet. Der Hersteller-Hub dokumentiert bereits Fokus und Auswahlkriterien für spätere Ergänzungen."
+    href: "/beste-futterautomaten-fuer-katzen",
+    label: "Beste Futterautomaten für Katzen"
   },
   {
-    question: `Worauf sollte man bei ${manufacturer.name} achten?`,
-    answer: `Futterart, Portionsbereich, Tiergröße, Stromreserve und Reinigung sollten zum Alltag passen. Zusätzlich sind Modellnummer, regionale App-Kompatibilität und aktuelle Herstellerangaben zu prüfen.`
+    href: "/beste-futterautomaten-fuer-hunde",
+    label: "Beste Futterautomaten für Hunde"
+  },
+  {
+    href: "/beste-futterautomaten-ohne-wlan",
+    label: "Futterautomaten ohne WLAN"
+  },
+  {
+    href: "/beste-futterautomaten-fuer-zwei-katzen",
+    label: "Futterautomaten für zwei Katzen"
   }
 ];
-const comparisonLinks = [
-  { href: "/beste-futterautomaten-fuer-katzen", label: "Beste Futterautomaten für Katzen" },
-  { href: "/beste-futterautomaten-fuer-hunde", label: "Beste Futterautomaten für Hunde" },
-  { href: "/beste-futterautomaten-ohne-wlan", label: "Futterautomaten ohne WLAN" },
-  { href: "/beste-futterautomaten-fuer-zwei-katzen", label: "Futterautomaten für zwei Katzen" }
-];
+
+const alternativeManufacturers =
+  (manufacturer.alternatives ?? [])
+    .map((slug) =>
+      manufacturers.find(
+        (item) => item.slug === slug
+      )
+    )
+    .filter(
+      (item): item is Manufacturer =>
+        Boolean(item)
+    );
+
+const ratingLabels = {
+  innovation: "Innovation",
+  quality: "Verarbeitung",
+  app: "App und Bedienung",
+  support: "Support",
+  value: "Preis-Leistung"
+};
+
+const formatRating = (rating: number) =>
+  `${rating.toFixed(1)} von 5`;
+
+const sortedProducts = [...manufacturer.products].sort(
+  (a, b) =>
+    getWeightedProductScore(b) -
+    getWeightedProductScore(a)
+);
 ---
 
 <ProjectLayout
   title={title}
-  seoTitle={`${manufacturer.name} Futterautomaten: Modelle und Empfehlungen`}
+  seoTitle={`${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`}
   description={description}
   seoDescription={description}
   canonical={`/hersteller/${manufacturer.slug}`}
@@ -46,50 +114,553 @@ const comparisonLinks = [
   categoryLabel="Hersteller"
   schemaType="article"
 >
-  <Breadcrumbs categoryLabel="Hersteller" categoryHref="/smarte-futterautomaten" title={title} />
+  <Breadcrumbs
+    categoryLabel="Hersteller"
+    categoryHref="/smarte-futterautomaten"
+    title={title}
+  />
 
-  <header class="article-header">
-    <span class="article-category">Hersteller-Hub</span>
-    <h1 class="article-title">{manufacturer.name} Futterautomaten</h1>
-    <p class="article-description">{manufacturer.description}</p>
+  <header class="article-header manufacturer-header">
+    <span class="article-category">
+      Herstellerprofil
+    </span>
+
+    <h1 class="article-title">
+      {manufacturer.name}
+    </h1>
+
+    <p class="article-description">
+      {manufacturer.description}
+    </p>
+
+    {manufacturer.rating && (
+      <div class="manufacturer-overall-rating">
+        <strong>
+          {manufacturer.rating.toFixed(1)} / 5
+        </strong>
+
+        <span>
+          Redaktionelle Herstellerbewertung
+        </span>
+      </div>
+    )}
   </header>
 
   <article class="article manufacturer-hub">
-    <section>
-      <h2>Fokusbereiche</h2>
-      <ul>{manufacturer.focus.map((item) => <li>{item}</li>)}</ul>
-      <p>Produktbereiche: {manufacturer.productCategories.join(", ")}.</p>
-      {manufacturer.country && <p>Markenbezug: {manufacturer.country}.</p>}
-      <p><a href={manufacturer.website} rel="noopener" target="_blank">Offizielle Herstellerseite</a></p>
-    </section>
+    {manufacturer.ratings && (
+      <section>
+        <h2>
+          Unsere Einschätzung zu {manufacturer.name}
+        </h2>
+
+        <div class="manufacturer-rating-grid">
+          {Object.entries(
+            manufacturer.ratings
+          ).map(([key, value]) => (
+            <div class="manufacturer-rating-card">
+              <span>
+                {
+                  ratingLabels[
+                    key as keyof typeof ratingLabels
+                  ]
+                }
+              </span>
+
+              <strong>
+                {formatRating(value)}
+              </strong>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section>
-      <h2>Stärken und Grenzen</h2>
+      <h2>
+        Über {manufacturer.name}
+      </h2>
+
+      <p>
+        {manufacturer.description}
+      </p>
+
+      {manufacturer.focus.length > 0 && (
+        <>
+          <h3>
+            Schwerpunkte
+          </h3>
+
+          <ul>
+            {manufacturer.focus.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {manufacturer.country && (
+        <p>
+          <strong>Markenbezug:</strong>{" "}
+          {manufacturer.country}
+        </p>
+      )}
+
+      <p>
+        <a
+          href={manufacturer.website}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Offizielle Herstellerseite
+        </a>
+      </p>
+    </section>
+
+    {manufacturer.productAreas?.length ? (
+      <section>
+        <h2>
+          Produktbereiche
+        </h2>
+
+        <div class="manufacturer-card-grid">
+          {manufacturer.productAreas.map((area) => (
+            <article class="manufacturer-info-card">
+              <h3>
+                {area.name}
+              </h3>
+
+              <p>
+                {area.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+    ) : (
+      manufacturer.productCategories.length > 0 && (
+        <section>
+          <h2>
+            Produktbereiche
+          </h2>
+
+          <ul>
+            {manufacturer.productCategories.map(
+              (category) => (
+                <li>{category}</li>
+              )
+            )}
+          </ul>
+        </section>
+      )
+    )}
+
+    {manufacturer.series?.length > 0 && (
+      <section>
+        <h2>
+          Produktserien im Überblick
+        </h2>
+
+        <div class="manufacturer-series-grid">
+          {manufacturer.series.map((series) => (
+            <article class="manufacturer-series-card">
+              <h3>
+                {series.name}
+              </h3>
+
+              <p class="manufacturer-series-suitable">
+                <strong>Geeignet für:</strong>{" "}
+                {series.suitableFor}
+              </p>
+
+              <p>
+                {series.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {(
+      manufacturer.suitableFor?.length ||
+      manufacturer.lessSuitableFor?.length
+    ) && (
+      <section>
+        <h2>
+          Für wen eignet sich {manufacturer.name}?
+        </h2>
+
+        <div class="pros-cons-v3">
+          {manufacturer.suitableFor?.length > 0 && (
+            <div class="pros-box-v3">
+              <h3>
+                Besonders geeignet für
+              </h3>
+
+              <ul>
+                {manufacturer.suitableFor.map(
+                  (item) => (
+                    <li>{item}</li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
+
+          {manufacturer.lessSuitableFor?.length > 0 && (
+            <div class="cons-box-v3">
+              <h3>
+                Weniger geeignet für
+              </h3>
+
+              <ul>
+                {manufacturer.lessSuitableFor.map(
+                  (item) => (
+                    <li>{item}</li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    {manufacturer.customerExperience && (
+      <section>
+        <h2>
+          Erfahrungen aus der Praxis
+        </h2>
+
+        <p>
+          {
+            manufacturer.customerExperience
+              .summary
+          }
+        </p>
+
+        <div class="pros-cons-v3">
+          <div class="pros-box-v3">
+            <h3>
+              Häufig positiv genannt
+            </h3>
+
+            <ul>
+              {
+                manufacturer.customerExperience
+                  .positives.map((item) => (
+                    <li>{item}</li>
+                  ))
+              }
+            </ul>
+          </div>
+
+          <div class="cons-box-v3">
+            <h3>
+              Wiederkehrende Kritik
+            </h3>
+
+            <ul>
+              {
+                manufacturer.customerExperience
+                  .criticism.map((item) => (
+                    <li>{item}</li>
+                  ))
+              }
+            </ul>
+          </div>
+        </div>
+
+        <div class="manufacturer-support-box">
+          <h3>
+            Support und Service
+          </h3>
+
+          <p>
+            {
+              manufacturer.customerExperience
+                .supportAssessment
+            }
+          </p>
+        </div>
+      </section>
+    )}
+
+    <section>
+      <h2>
+        Stärken und Schwächen
+      </h2>
+
       <div class="pros-cons-v3">
-        <div class="pros-box-v3"><h3>Stärken</h3><ul>{manufacturer.strengths.map((item) => <li>{item}</li>)}</ul></div>
-        <div class="cons-box-v3"><h3>Grenzen</h3><ul>{manufacturer.limitations.map((item) => <li>{item}</li>)}</ul></div>
+        <div class="pros-box-v3">
+          <h3>
+            Stärken
+          </h3>
+
+          <ul>
+            {manufacturer.strengths.map(
+              (item) => (
+                <li>{item}</li>
+              )
+            )}
+          </ul>
+        </div>
+
+        <div class="cons-box-v3">
+          <h3>
+            Schwächen
+          </h3>
+
+          <ul>
+            {manufacturer.limitations.map(
+              (item) => (
+                <li>{item}</li>
+              )
+            )}
+          </ul>
+        </div>
       </div>
     </section>
 
     <section>
-      <h2>Verfügbare Modelle im Katalog</h2>
-      {manufacturer.products.length > 0 ? (
+      <h2>
+        Empfohlene Produkte von {manufacturer.name}
+      </h2>
+
+      {sortedProducts.length > 0 ? (
         <div class="product-ranking-list">
-          {manufacturer.products.map((productKey, index) => (
-            <ProductRankingCard productKey={productKey} rank={index + 1} score={getWeightedProductScore(productKey)} />
-          ))}
+          {sortedProducts.map(
+            (productKey, index) => (
+              <ProductRankingCard
+                productKey={productKey}
+                rank={index + 1}
+                score={
+                  getWeightedProductScore(
+                    productKey
+                  )
+                }
+              />
+            )
+          )}
         </div>
       ) : (
-        <p>Für diesen Hersteller ist derzeit noch kein Modell vollständig bewertet. Wir ergänzen Produkte erst nach Prüfung von Datenlage und Marktrelevanz.</p>
+        <p>
+          Für diesen Hersteller ist derzeit
+          noch kein Produkt vollständig
+          bewertet. Wir ergänzen Produkte erst
+          nach Prüfung von Datenlage und
+          Marktrelevanz.
+        </p>
       )}
     </section>
 
+    {alternativeManufacturers.length > 0 && (
+      <section>
+        <h2>
+          Alternativen zu {manufacturer.name}
+        </h2>
+
+        <div class="manufacturer-alternative-grid">
+          {alternativeManufacturers.map(
+            (alternative) => (
+              <a
+                class="manufacturer-alternative-card"
+                href={`/hersteller/${alternative.slug}`}
+              >
+                <strong>
+                  {alternative.name}
+                </strong>
+
+                <span>
+                  Herstellerprofil ansehen
+                </span>
+              </a>
+            )
+          )}
+        </div>
+      </section>
+    )}
+
     <section>
-      <h2>Vergleiche und Orientierung</h2>
-      <ul>{comparisonLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
-      <p>Alle Modelle und Auswahlkriterien stehen im <a href="/smarte-futterautomaten">Futterautomaten-Hub</a>.</p>
+      <h2>
+        Vergleiche und Orientierung
+      </h2>
+
+      <ul>
+        {comparisonLinks.map((link) => (
+          <li>
+            <a href={link.href}>
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <p>
+        Alle Modelle und Auswahlkriterien
+        findest du im{" "}
+        <a href="/smarte-futterautomaten">
+          Futterautomaten-Hub
+        </a>.
+      </p>
     </section>
+
+    {manufacturer.sources?.length > 0 && (
+      <section>
+        <h2>
+          Quellen und Datengrundlage
+        </h2>
+
+        <p>
+          Die Einschätzung basiert auf
+          Herstellerinformationen,
+          Supportangaben, Fachtests und
+          wiederkehrenden Mustern aus
+          öffentlichen Nutzerbewertungen.
+        </p>
+
+        <ul>
+          {manufacturer.sources.map(
+            (source) => (
+              <li>
+                <a
+                  href={source.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {source.label}
+                </a>
+              </li>
+            )
+          )}
+        </ul>
+      </section>
+    )}
 
     <FAQ items={faq} />
   </article>
 </ProjectLayout>
+
+<style>
+  .manufacturer-header {
+    margin-bottom: 2rem;
+  }
+
+  .manufacturer-overall-rating {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 1rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid
+      var(--border-color, #d9dee7);
+    border-radius: 0.9rem;
+    background: #fff;
+  }
+
+  .manufacturer-overall-rating strong {
+    font-size: 1.25rem;
+  }
+
+  .manufacturer-overall-rating span {
+    color: var(--text-muted, #5f6673);
+    font-size: 0.9rem;
+  }
+
+  .manufacturer-rating-grid,
+  .manufacturer-card-grid,
+  .manufacturer-series-grid,
+  .manufacturer-alternative-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .manufacturer-rating-card,
+  .manufacturer-info-card,
+  .manufacturer-series-card,
+  .manufacturer-support-box,
+  .manufacturer-alternative-card {
+    padding: 1rem;
+    border: 1px solid
+      var(--border-color, #d9dee7);
+    border-radius: 0.9rem;
+    background: #fff;
+  }
+
+  .manufacturer-rating-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .manufacturer-rating-card span {
+    color: var(--text-muted, #5f6673);
+  }
+
+  .manufacturer-info-card h3,
+  .manufacturer-series-card h3,
+  .manufacturer-support-box h3 {
+    margin-top: 0;
+  }
+
+  .manufacturer-series-suitable {
+    color: var(--text-muted, #5f6673);
+  }
+
+  .manufacturer-support-box {
+    margin-top: 1rem;
+  }
+
+  .manufacturer-alternative-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .manufacturer-alternative-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .manufacturer-alternative-card span {
+    color: var(--text-muted, #5f6673);
+    font-size: 0.9rem;
+  }
+
+  .manufacturer-hub section {
+    margin-bottom: 2.5rem;
+  }
+
+  .manufacturer-hub section > h2 {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .manufacturer-rating-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+    .manufacturer-card-grid,
+    .manufacturer-series-grid,
+    .manufacturer-alternative-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .manufacturer-rating-grid {
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
