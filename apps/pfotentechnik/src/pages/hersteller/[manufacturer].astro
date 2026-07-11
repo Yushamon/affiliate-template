@@ -32,8 +32,8 @@ const title =
   `${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`;
 
 const description =
-  `${manufacturer.name} im Überblick: Produktbereiche, Serien, ` +
-  `Erfahrungen, Stärken, Schwächen und passende Empfehlungen.`;
+  `${manufacturer.name} im Markencheck: Produkte, Serien, ` +
+  `Erfahrungen, Support, Stärken und passende Empfehlungen.`;
 
 const faq =
   manufacturer.faq?.length
@@ -44,14 +44,14 @@ const faq =
             `Welche Produkte von ${manufacturer.name} sind im Katalog enthalten?`,
           answer:
             manufacturer.products.length > 0
-              ? `Aktuell sind ${manufacturer.products.length} Produkte beziehungsweise Modellvarianten redaktionell eingeordnet. Der Katalog wird bei relevanten und nachvollziehbar verfügbaren Produkten ergänzt.`
-              : "Aktuell ist noch kein konkretes Produkt vollständig eingeordnet. Das Herstellerprofil dokumentiert bereits Schwerpunkte und Auswahlkriterien für spätere Ergänzungen."
+              ? `Aktuell sind ${manufacturer.products.length} Produkte beziehungsweise Modellvarianten redaktionell eingeordnet.`
+              : "Aktuell ist noch kein konkretes Produkt vollständig eingeordnet."
         },
         {
           question:
-            `Worauf sollte man bei Produkten von ${manufacturer.name} achten?`,
+            `Worauf sollte man bei ${manufacturer.name} achten?`,
           answer:
-            "Entscheidend sind Produktkategorie, Funktionsumfang, App-Kompatibilität, Ersatzteilversorgung, regionale Verfügbarkeit und die Frage, ob das jeweilige Modell zum eigenen Alltag passt."
+            "Entscheidend sind Produktkategorie, Funktionsumfang, App-Kompatibilität, Ersatzteilversorgung und die Verfügbarkeit in Deutschland."
         }
       ];
 
@@ -88,25 +88,47 @@ const alternativeManufacturers =
 
 const ratingLabels = {
   innovation: "Innovation",
-  quality: "Verarbeitung",
-  app: "App und Bedienung",
-  support: "Support",
+  quality: "Verarbeitung und Qualität",
+  app: "App und Funktionen",
+  support: "Support und Service",
   value: "Preis-Leistung"
 };
-
-const formatRating = (rating: number) =>
-  `${rating.toFixed(1)} von 5`;
 
 const sortedProducts = [...manufacturer.products].sort(
   (a, b) =>
     getWeightedProductScore(b) -
     getWeightedProductScore(a)
 );
+
+const heroImage =
+  `/images/manufacturers/${manufacturer.slug}/hero.webp`;
+
+const logoImage =
+  `/images/manufacturers/${manufacturer.slug}/logo.webp`;
+
+const primarySuitableFor =
+  manufacturer.suitableFor?.slice(0, 5) ?? [];
+
+const productCount =
+  manufacturer.products.length;
+
+const seriesCount =
+  manufacturer.series?.length ?? 0;
+
+const ratingStars = (rating: number) => {
+  const rounded = Math.max(
+    0,
+    Math.min(5, Math.round(rating))
+  );
+
+  return "★".repeat(rounded) +
+    "☆".repeat(5 - rounded);
+};
 ---
 
 <ProjectLayout
   title={title}
-  seoTitle={`${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`}
+  seoTitle={`${manufacturer.name}: Erfahrungen, Produkte und Empfehlungen`}
   description={description}
   seoDescription={description}
   canonical={`/hersteller/${manufacturer.slug}`}
@@ -117,62 +139,464 @@ const sortedProducts = [...manufacturer.products].sort(
   <Breadcrumbs
     categoryLabel="Hersteller"
     categoryHref="/smarte-futterautomaten"
-    title={title}
+    title={manufacturer.name}
   />
 
-  <header class="article-header manufacturer-header">
-    <span class="article-category">
-      Herstellerprofil
-    </span>
-
-    <h1 class="article-title">
-      {manufacturer.name}
-    </h1>
-
-    <p class="article-description">
-      {manufacturer.description}
-    </p>
-
-    {manufacturer.rating && (
-      <div class="manufacturer-overall-rating">
-        <strong>
-          {manufacturer.rating.toFixed(1)} / 5
-        </strong>
-
-        <span>
-          Redaktionelle Herstellerbewertung
+  <header class="manufacturer-hero">
+    <div class="manufacturer-hero-main">
+      <div class="manufacturer-hero-content">
+        <span class="manufacturer-hero-eyebrow">
+          Unsere Einschätzung
         </span>
+
+        <h1>
+          {manufacturer.name}
+        </h1>
+
+        <p class="manufacturer-hero-subtitle">
+          Hersteller für smarte Haustiertechnik
+        </p>
+
+        {manufacturer.rating && (
+          <div class="manufacturer-hero-rating">
+            <span
+              class="manufacturer-hero-stars"
+              aria-hidden="true"
+            >
+              {ratingStars(manufacturer.rating)}
+            </span>
+
+            <strong>
+              {manufacturer.rating.toFixed(1)} / 5
+            </strong>
+          </div>
+        )}
+
+        <p class="manufacturer-hero-rating-note">
+          Redaktionelle Einschätzung auf Basis von
+          Herstellerdaten, Fachtests und wiederkehrenden
+          Mustern aus Käufererfahrungen.
+        </p>
+
+        <p class="manufacturer-hero-summary">
+          {manufacturer.description}
+        </p>
+
+        {sortedProducts.length > 0 && (
+          <a
+            class="manufacturer-hero-cta"
+            href="#produktempfehlungen"
+          >
+            <span aria-hidden="true">★</span>
+            Unsere Empfehlungen
+            <span aria-hidden="true">→</span>
+          </a>
+        )}
       </div>
-    )}
+
+      <div
+        class="manufacturer-hero-visual"
+        data-manufacturer-visual
+      >
+        <img
+          class="manufacturer-hero-image"
+          src={heroImage}
+          alt={`Produkte von ${manufacturer.name}`}
+          loading="eager"
+          decoding="async"
+          data-manufacturer-hero-image
+          data-logo-src={logoImage}
+        />
+
+        <div
+          class="manufacturer-hero-fallback"
+          data-manufacturer-fallback
+          hidden
+        >
+          <span class="manufacturer-fallback-label">
+            {manufacturer.name}
+          </span>
+
+          <strong>
+            Smarte Haustiertechnik
+          </strong>
+
+          {manufacturer.rating && (
+            <span>
+              {ratingStars(manufacturer.rating)}
+            </span>
+          )}
+        </div>
+
+        <div class="manufacturer-hero-trust">
+          <div>
+            <span aria-hidden="true">⌖</span>
+            <strong>Deutschland</strong>
+            <small>verfügbar</small>
+          </div>
+
+          <div>
+            <span aria-hidden="true">▯</span>
+            <strong>Eigene App</strong>
+            <small>modellabhängig</small>
+          </div>
+
+          <div>
+            <span aria-hidden="true">◇</span>
+            <strong>{productCount}</strong>
+            <small>Produkte</small>
+          </div>
+
+          <div>
+            <span aria-hidden="true">▱</span>
+            <strong>{seriesCount}</strong>
+            <small>Produktserien</small>
+          </div>
+
+          <div>
+            <span aria-hidden="true">◉</span>
+            <strong>Support</strong>
+            <small>Deutschland</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="manufacturer-hero-details">
+      {primarySuitableFor.length > 0 && (
+        <section class="manufacturer-hero-card">
+          <div class="manufacturer-card-heading">
+            <span
+              class="manufacturer-card-icon"
+              aria-hidden="true"
+            >
+              ♟
+            </span>
+
+            <h2>
+              Besonders geeignet für
+            </h2>
+          </div>
+
+          <ul class="manufacturer-suitable-list">
+            {primarySuitableFor.map((item) => (
+              <li>
+                <span aria-hidden="true">✓</span>
+                <strong>{item}</strong>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {manufacturer.ratings && (
+        <section class="manufacturer-hero-card">
+          <div class="manufacturer-card-heading">
+            <span
+              class="manufacturer-card-icon"
+              aria-hidden="true"
+            >
+              ★
+            </span>
+
+            <h2>
+              Unsere Herstellerbewertung
+            </h2>
+          </div>
+
+          <div class="manufacturer-rating-list">
+            {Object.entries(
+              manufacturer.ratings
+            ).map(([key, value]) => (
+              <div class="manufacturer-rating-row">
+                <span>
+                  {
+                    ratingLabels[
+                      key as keyof typeof ratingLabels
+                    ]
+                  }
+                </span>
+
+                <span
+                  class="manufacturer-rating-stars"
+                  aria-label={`${value.toFixed(1)} von 5`}
+                >
+                  {ratingStars(value)}
+                </span>
+
+                <strong>
+                  {value.toFixed(1)}
+                </strong>
+              </div>
+            ))}
+          </div>
+
+          <div class="manufacturer-rating-method">
+            <span aria-hidden="true">✓</span>
+
+            <p>
+              Bewertet anhand von Herstellerangaben,
+              Fachtests und wiederkehrenden
+              Kundenerfahrungen.
+            </p>
+          </div>
+        </section>
+      )}
+    </div>
   </header>
 
+  <div
+    class="manufacturer-section-divider"
+    aria-hidden="true"
+  >
+    <span></span>
+    <strong>🐾</strong>
+    <span></span>
+  </div>
+
   <article class="article manufacturer-hub">
-    {manufacturer.ratings && (
+    <section id="produktempfehlungen">
+      <h2>
+        Unsere Produktempfehlungen
+      </h2>
+
+      {sortedProducts.length > 0 ? (
+        <div class="product-ranking-list">
+          {sortedProducts.map(
+            (productKey, index) => (
+              <ProductRankingCard
+                productKey={productKey}
+                rank={index + 1}
+                score={
+                  getWeightedProductScore(
+                    productKey
+                  )
+                }
+              />
+            )
+          )}
+        </div>
+      ) : (
+        <p>
+          Für diesen Hersteller ist derzeit noch
+          kein Produkt vollständig bewertet.
+        </p>
+      )}
+    </section>
+
+    {manufacturer.series?.length > 0 && (
       <section>
         <h2>
-          Unsere Einschätzung zu {manufacturer.name}
+          Produktserien im Überblick
         </h2>
 
-        <div class="manufacturer-rating-grid">
-          {Object.entries(
-            manufacturer.ratings
-          ).map(([key, value]) => (
-            <div class="manufacturer-rating-card">
-              <span>
-                {
-                  ratingLabels[
-                    key as keyof typeof ratingLabels
-                  ]
-                }
+        <div class="manufacturer-series-grid">
+          {manufacturer.series.map((series) => (
+            <article class="manufacturer-series-card">
+              <span class="manufacturer-series-label">
+                Produktserie
               </span>
 
-              <strong>
-                {formatRating(value)}
-              </strong>
-            </div>
+              <h3>
+                {series.name}
+              </h3>
+
+              <p class="manufacturer-series-suitable">
+                {series.suitableFor}
+              </p>
+
+              <p>
+                {series.description}
+              </p>
+            </article>
           ))}
         </div>
       </section>
+    )}
+
+    {manufacturer.customerExperience && (
+      <section>
+        <h2>
+          Erfahrungen aus der Praxis
+        </h2>
+
+        <p class="manufacturer-section-intro">
+          {
+            manufacturer.customerExperience
+              .summary
+          }
+        </p>
+
+        <div class="manufacturer-experience-grid">
+          <div class="manufacturer-experience-card positive">
+            <span aria-hidden="true">👍</span>
+
+            <h3>
+              Häufig positiv genannt
+            </h3>
+
+            <ul>
+              {
+                manufacturer.customerExperience
+                  .positives.map((item) => (
+                    <li>{item}</li>
+                  ))
+              }
+            </ul>
+          </div>
+
+          <div class="manufacturer-experience-card neutral">
+            <span aria-hidden="true">⚠</span>
+
+            <h3>
+              Wiederkehrende Kritik
+            </h3>
+
+            <ul>
+              {
+                manufacturer.customerExperience
+                  .criticism.map((item) => (
+                    <li>{item}</li>
+                  ))
+              }
+            </ul>
+          </div>
+
+          <div class="manufacturer-experience-card support">
+            <span aria-hidden="true">☏</span>
+
+            <h3>
+              Support und Service
+            </h3>
+
+            <p>
+              {
+                manufacturer.customerExperience
+                  .supportAssessment
+              }
+            </p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    {(
+      manufacturer.suitableFor?.length ||
+      manufacturer.lessSuitableFor?.length
+    ) && (
+      <section>
+        <h2>
+          Passt {manufacturer.name} zu mir?
+        </h2>
+
+        <div class="pros-cons-v3">
+          {manufacturer.suitableFor?.length > 0 && (
+            <div class="pros-box-v3">
+              <h3>
+                Besonders geeignet
+              </h3>
+
+              <ul>
+                {manufacturer.suitableFor.map(
+                  (item) => (
+                    <li>{item}</li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
+
+          {manufacturer.lessSuitableFor?.length > 0 && (
+            <div class="cons-box-v3">
+              <h3>
+                Darauf solltest du achten
+              </h3>
+
+              <ul>
+                {manufacturer.lessSuitableFor.map(
+                  (item) => (
+                    <li>{item}</li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    <section>
+      <h2>
+        Stärken und Schwächen
+      </h2>
+
+      <div class="pros-cons-v3">
+        <div class="pros-box-v3">
+          <h3>
+            Stärken
+          </h3>
+
+          <ul>
+            {manufacturer.strengths.map(
+              (item) => (
+                <li>{item}</li>
+              )
+            )}
+          </ul>
+        </div>
+
+        <div class="cons-box-v3">
+          <h3>
+            Zu beachten
+          </h3>
+
+          <ul>
+            {manufacturer.limitations.map(
+              (item) => (
+                <li>{item}</li>
+              )
+            )}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {manufacturer.productAreas?.length ? (
+      <section>
+        <h2>
+          Produktbereiche
+        </h2>
+
+        <div class="manufacturer-area-grid">
+          {manufacturer.productAreas.map((area) => (
+            <article class="manufacturer-area-card">
+              <h3>
+                {area.name}
+              </h3>
+
+              <p>
+                {area.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+    ) : (
+      manufacturer.productCategories.length > 0 && (
+        <section>
+          <h2>
+            Produktbereiche
+          </h2>
+
+          <ul>
+            {manufacturer.productCategories.map(
+              (category) => (
+                <li>{category}</li>
+              )
+            )}
+          </ul>
+        </section>
+      )
     )}
 
     <section>
@@ -216,244 +640,6 @@ const sortedProducts = [...manufacturer.products].sort(
       </p>
     </section>
 
-    {manufacturer.productAreas?.length ? (
-      <section>
-        <h2>
-          Produktbereiche
-        </h2>
-
-        <div class="manufacturer-card-grid">
-          {manufacturer.productAreas.map((area) => (
-            <article class="manufacturer-info-card">
-              <h3>
-                {area.name}
-              </h3>
-
-              <p>
-                {area.description}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
-    ) : (
-      manufacturer.productCategories.length > 0 && (
-        <section>
-          <h2>
-            Produktbereiche
-          </h2>
-
-          <ul>
-            {manufacturer.productCategories.map(
-              (category) => (
-                <li>{category}</li>
-              )
-            )}
-          </ul>
-        </section>
-      )
-    )}
-
-    {manufacturer.series?.length > 0 && (
-      <section>
-        <h2>
-          Produktserien im Überblick
-        </h2>
-
-        <div class="manufacturer-series-grid">
-          {manufacturer.series.map((series) => (
-            <article class="manufacturer-series-card">
-              <h3>
-                {series.name}
-              </h3>
-
-              <p class="manufacturer-series-suitable">
-                <strong>Geeignet für:</strong>{" "}
-                {series.suitableFor}
-              </p>
-
-              <p>
-                {series.description}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
-    )}
-
-    {(
-      manufacturer.suitableFor?.length ||
-      manufacturer.lessSuitableFor?.length
-    ) && (
-      <section>
-        <h2>
-          Für wen eignet sich {manufacturer.name}?
-        </h2>
-
-        <div class="pros-cons-v3">
-          {manufacturer.suitableFor?.length > 0 && (
-            <div class="pros-box-v3">
-              <h3>
-                Besonders geeignet für
-              </h3>
-
-              <ul>
-                {manufacturer.suitableFor.map(
-                  (item) => (
-                    <li>{item}</li>
-                  )
-                )}
-              </ul>
-            </div>
-          )}
-
-          {manufacturer.lessSuitableFor?.length > 0 && (
-            <div class="cons-box-v3">
-              <h3>
-                Weniger geeignet für
-              </h3>
-
-              <ul>
-                {manufacturer.lessSuitableFor.map(
-                  (item) => (
-                    <li>{item}</li>
-                  )
-                )}
-              </ul>
-            </div>
-          )}
-        </div>
-      </section>
-    )}
-
-    {manufacturer.customerExperience && (
-      <section>
-        <h2>
-          Erfahrungen aus der Praxis
-        </h2>
-
-        <p>
-          {
-            manufacturer.customerExperience
-              .summary
-          }
-        </p>
-
-        <div class="pros-cons-v3">
-          <div class="pros-box-v3">
-            <h3>
-              Häufig positiv genannt
-            </h3>
-
-            <ul>
-              {
-                manufacturer.customerExperience
-                  .positives.map((item) => (
-                    <li>{item}</li>
-                  ))
-              }
-            </ul>
-          </div>
-
-          <div class="cons-box-v3">
-            <h3>
-              Wiederkehrende Kritik
-            </h3>
-
-            <ul>
-              {
-                manufacturer.customerExperience
-                  .criticism.map((item) => (
-                    <li>{item}</li>
-                  ))
-              }
-            </ul>
-          </div>
-        </div>
-
-        <div class="manufacturer-support-box">
-          <h3>
-            Support und Service
-          </h3>
-
-          <p>
-            {
-              manufacturer.customerExperience
-                .supportAssessment
-            }
-          </p>
-        </div>
-      </section>
-    )}
-
-    <section>
-      <h2>
-        Stärken und Schwächen
-      </h2>
-
-      <div class="pros-cons-v3">
-        <div class="pros-box-v3">
-          <h3>
-            Stärken
-          </h3>
-
-          <ul>
-            {manufacturer.strengths.map(
-              (item) => (
-                <li>{item}</li>
-              )
-            )}
-          </ul>
-        </div>
-
-        <div class="cons-box-v3">
-          <h3>
-            Schwächen
-          </h3>
-
-          <ul>
-            {manufacturer.limitations.map(
-              (item) => (
-                <li>{item}</li>
-              )
-            )}
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>
-        Empfohlene Produkte von {manufacturer.name}
-      </h2>
-
-      {sortedProducts.length > 0 ? (
-        <div class="product-ranking-list">
-          {sortedProducts.map(
-            (productKey, index) => (
-              <ProductRankingCard
-                productKey={productKey}
-                rank={index + 1}
-                score={
-                  getWeightedProductScore(
-                    productKey
-                  )
-                }
-              />
-            )
-          )}
-        </div>
-      ) : (
-        <p>
-          Für diesen Hersteller ist derzeit
-          noch kein Produkt vollständig
-          bewertet. Wir ergänzen Produkte erst
-          nach Prüfung von Datenlage und
-          Marktrelevanz.
-        </p>
-      )}
-    </section>
-
     {alternativeManufacturers.length > 0 && (
       <section>
         <h2>
@@ -495,21 +681,49 @@ const sortedProducts = [...manufacturer.products].sort(
           </li>
         ))}
       </ul>
+    </section>
 
-      <p>
-        Alle Modelle und Auswahlkriterien
-        findest du im{" "}
-        <a href="/smarte-futterautomaten">
-          Futterautomaten-Hub
-        </a>.
-      </p>
+    <section class="manufacturer-trust-section">
+      <h2>
+        So entsteht unsere Bewertung
+      </h2>
+
+      <div class="manufacturer-trust-grid">
+        <div>
+          <strong>Geprüfte Daten</strong>
+          <span>
+            Herstellerseiten und Handbücher
+          </span>
+        </div>
+
+        <div>
+          <strong>Erfahrungen</strong>
+          <span>
+            Wiederkehrende Nutzermuster
+          </span>
+        </div>
+
+        <div>
+          <strong>Unabhängige Einordnung</strong>
+          <span>
+            Transparent und redaktionell
+          </span>
+        </div>
+
+        <div>
+          <strong>Regelmäßige Aktualisierung</strong>
+          <span>
+            Produkte und Hersteller im Blick
+          </span>
+        </div>
+      </div>
     </section>
 
     {manufacturer.sources?.length > 0 && (
-      <section>
-        <h2>
-          Quellen und Datengrundlage
-        </h2>
+      <details class="manufacturer-sources">
+        <summary>
+          Quellen und Datengrundlage anzeigen
+        </summary>
 
         <p>
           Die Einschätzung basiert auf
@@ -534,83 +748,486 @@ const sortedProducts = [...manufacturer.products].sort(
             )
           )}
         </ul>
-      </section>
+      </details>
     )}
 
     <FAQ items={faq} />
   </article>
 </ProjectLayout>
 
+<script>
+  const initializeManufacturerVisuals = () => {
+    document
+      .querySelectorAll<HTMLElement>(
+        "[data-manufacturer-visual]"
+      )
+      .forEach((visual) => {
+        if (
+          visual.dataset.initialized === "true"
+        ) {
+          return;
+        }
+
+        const image =
+          visual.querySelector<HTMLImageElement>(
+            "[data-manufacturer-hero-image]"
+          );
+
+        const fallback =
+          visual.querySelector<HTMLElement>(
+            "[data-manufacturer-fallback]"
+          );
+
+        if (!image || !fallback) {
+          return;
+        }
+
+        let logoAttempted = false;
+
+        image.addEventListener("error", () => {
+          const logoSrc =
+            image.dataset.logoSrc;
+
+          if (!logoAttempted && logoSrc) {
+            logoAttempted = true;
+            image.src = logoSrc;
+            image.classList.add(
+              "manufacturer-hero-logo"
+            );
+            return;
+          }
+
+          image.hidden = true;
+          fallback.hidden = false;
+        });
+
+        visual.dataset.initialized = "true";
+      });
+  };
+
+  initializeManufacturerVisuals();
+
+  document.addEventListener(
+    "astro:page-load",
+    initializeManufacturerVisuals
+  );
+</script>
+
 <style>
-  .manufacturer-header {
-    margin-bottom: 2rem;
+  .manufacturer-hero {
+    margin: 1.5rem 0 2rem;
   }
 
-  .manufacturer-overall-rating {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    margin-top: 1rem;
-    padding: 0.9rem 1.1rem;
+  .manufacturer-hero-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
     border: 1px solid
-      var(--border-color, #d9dee7);
-    border-radius: 0.9rem;
-    background: #fff;
+      var(--border-color, #dbe3e2);
+    border-radius: 1.5rem;
+    background:
+      linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f7faf8 62%,
+        #f4efe8 100%
+      );
+    box-shadow:
+      0 20px 50px rgba(15, 40, 35, 0.08);
   }
 
-  .manufacturer-overall-rating strong {
-    font-size: 1.25rem;
+  .manufacturer-hero-content {
+    padding: 1.5rem;
   }
 
-  .manufacturer-overall-rating span {
-    color: var(--text-muted, #5f6673);
+  .manufacturer-hero-eyebrow {
+    display: block;
+    margin-bottom: 0.5rem;
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-weight: 800;
+  }
+
+  .manufacturer-hero h1 {
+    margin: 0;
+    font-size:
+      clamp(3rem, 12vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+  }
+
+  .manufacturer-hero-subtitle {
+    max-width: 22ch;
+    margin: 1rem 0 0.75rem;
+    color:
+      var(--text-color, #102f2b);
+    font-size:
+      clamp(1.45rem, 4vw, 2rem);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .manufacturer-hero-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem 0 0.25rem;
+  }
+
+  .manufacturer-hero-stars,
+  .manufacturer-rating-stars {
+    color:
+      var(--manufacturer-accent, #18743b);
+    letter-spacing: 0.1em;
+  }
+
+  .manufacturer-hero-rating-note {
+    margin: 0 0 1rem;
+    color:
+      var(--text-muted, #657679);
+    font-size: 0.88rem;
+  }
+
+  .manufacturer-hero-summary {
+    max-width: 58ch;
+    color:
+      var(--text-muted, #5e7073);
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .manufacturer-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 3.25rem;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    background:
+      var(--manufacturer-accent, #18743b);
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow:
+      0 10px 25px rgba(24, 116, 59, 0.2);
+  }
+
+  .manufacturer-hero-visual {
+    position: relative;
+    min-height: 22rem;
+    background:
+      linear-gradient(
+        145deg,
+        #f6f2ec,
+        #ffffff
+      );
+  }
+
+  .manufacturer-hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 22rem;
+    object-fit: cover;
+  }
+
+  .manufacturer-hero-image.manufacturer-hero-logo {
+    padding: 4rem;
+    object-fit: contain;
+  }
+
+  .manufacturer-hero-fallback {
+    display: grid;
+    place-content: center;
+    gap: 0.75rem;
+    min-height: 22rem;
+    padding: 2rem;
+    text-align: center;
+    background:
+      radial-gradient(
+        circle at top,
+        rgba(24, 116, 59, 0.14),
+        transparent 58%
+      );
+  }
+
+  .manufacturer-hero-fallback[hidden] {
+    display: none;
+  }
+
+  .manufacturer-fallback-label {
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .manufacturer-hero-fallback strong {
+    font-size: 1.8rem;
+  }
+
+  .manufacturer-hero-fallback span:last-child {
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-size: 1.3rem;
+  }
+
+  .manufacturer-hero-trust {
+    display: grid;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+  }
+
+  .manufacturer-hero-trust div {
+    display: grid;
+    justify-items: center;
+    gap: 0.1rem;
+    padding: 0.55rem;
+    text-align: center;
+  }
+
+  .manufacturer-hero-trust div > span {
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-size: 1.2rem;
+  }
+
+  .manufacturer-hero-trust strong {
     font-size: 0.9rem;
   }
 
-  .manufacturer-rating-grid,
-  .manufacturer-card-grid,
+  .manufacturer-hero-trust small {
+    color:
+      var(--text-muted, #657679);
+    font-size: 0.72rem;
+  }
+
+  .manufacturer-hero-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .manufacturer-hero-card {
+    padding: 1.25rem;
+    border: 1px solid
+      var(--border-color, #dbe3e2);
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow:
+      0 12px 30px rgba(15, 40, 35, 0.06);
+  }
+
+  .manufacturer-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .manufacturer-card-heading h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .manufacturer-card-icon {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.65rem;
+    background:
+      rgba(24, 116, 59, 0.1);
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-size: 1.25rem;
+  }
+
+  .manufacturer-suitable-list {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .manufacturer-suitable-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid
+      var(--border-color, #edf1f0);
+  }
+
+  .manufacturer-suitable-list li:last-child {
+    border-bottom: 0;
+  }
+
+  .manufacturer-suitable-list li > span {
+    display: grid;
+    place-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background:
+      rgba(24, 116, 59, 0.1);
+    color:
+      var(--manufacturer-accent, #18743b);
+  }
+
+  .manufacturer-rating-list {
+    display: grid;
+  }
+
+  .manufacturer-rating-row {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid
+      var(--border-color, #edf1f0);
+  }
+
+  .manufacturer-rating-row:last-child {
+    border-bottom: 0;
+  }
+
+  .manufacturer-rating-row > span:first-child {
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+
+  .manufacturer-rating-row strong {
+    min-width: 2rem;
+    text-align: right;
+  }
+
+  .manufacturer-rating-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+    background:
+      rgba(24, 116, 59, 0.07);
+  }
+
+  .manufacturer-rating-method > span {
+    color:
+      var(--manufacturer-accent, #18743b);
+  }
+
+  .manufacturer-rating-method p {
+    margin: 0;
+    color:
+      var(--text-muted, #657679);
+    font-size: 0.85rem;
+  }
+
+  .manufacturer-section-divider {
+    display: grid;
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      auto
+      minmax(2rem, 1fr);
+    align-items: center;
+    gap: 1rem;
+    max-width: 34rem;
+    margin: 2rem auto 1rem;
+    color:
+      var(--manufacturer-accent, #18743b);
+  }
+
+  .manufacturer-section-divider span {
+    height: 1px;
+    background: currentColor;
+    opacity: 0.45;
+  }
+
+  .manufacturer-section-divider strong {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .manufacturer-hub section {
+    margin-bottom: 2.75rem;
+  }
+
+  .manufacturer-hub section > h2 {
+    margin-bottom: 1rem;
+  }
+
+  .manufacturer-section-intro {
+    max-width: 68ch;
+  }
+
   .manufacturer-series-grid,
-  .manufacturer-alternative-grid {
+  .manufacturer-area-grid,
+  .manufacturer-alternative-grid,
+  .manufacturer-experience-grid,
+  .manufacturer-trust-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  .manufacturer-rating-card,
-  .manufacturer-info-card,
   .manufacturer-series-card,
-  .manufacturer-support-box,
-  .manufacturer-alternative-card {
-    padding: 1rem;
+  .manufacturer-area-card,
+  .manufacturer-alternative-card,
+  .manufacturer-experience-card {
+    padding: 1.25rem;
     border: 1px solid
-      var(--border-color, #d9dee7);
-    border-radius: 0.9rem;
+      var(--border-color, #dbe3e2);
+    border-radius: 1rem;
     background: #fff;
   }
 
-  .manufacturer-rating-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+  .manufacturer-series-label {
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
-  .manufacturer-rating-card span {
-    color: var(--text-muted, #5f6673);
-  }
-
-  .manufacturer-info-card h3,
   .manufacturer-series-card h3,
-  .manufacturer-support-box h3 {
-    margin-top: 0;
+  .manufacturer-area-card h3,
+  .manufacturer-experience-card h3 {
+    margin-top: 0.5rem;
   }
 
   .manufacturer-series-suitable {
-    color: var(--text-muted, #5f6673);
+    color:
+      var(--manufacturer-accent, #18743b);
+    font-weight: 800;
   }
 
-  .manufacturer-support-box {
-    margin-top: 1rem;
+  .manufacturer-experience-card > span {
+    font-size: 1.5rem;
+  }
+
+  .manufacturer-experience-card ul {
+    margin-bottom: 0;
+  }
+
+  .manufacturer-experience-card.support {
+    grid-column: 1 / -1;
   }
 
   .manufacturer-alternative-card {
@@ -619,48 +1236,162 @@ const sortedProducts = [...manufacturer.products].sort(
     gap: 0.25rem;
     color: inherit;
     text-decoration: none;
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .manufacturer-alternative-card:hover {
-    transform: translateY(-2px);
-    box-shadow:
-      0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
   .manufacturer-alternative-card span {
-    color: var(--text-muted, #5f6673);
+    color:
+      var(--text-muted, #657679);
     font-size: 0.9rem;
   }
 
-  .manufacturer-hub section {
-    margin-bottom: 2.5rem;
+  .manufacturer-trust-section {
+    padding: 1.25rem;
+    border: 1px solid
+      var(--border-color, #dbe3e2);
+    border-radius: 1rem;
+    background:
+      linear-gradient(
+        135deg,
+        #ffffff,
+        #f4f8f5
+      );
   }
 
-  .manufacturer-hub section > h2 {
-    margin-bottom: 1rem;
+  .manufacturer-trust-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
-  @media (min-width: 720px) {
-    .manufacturer-rating-grid {
+  .manufacturer-trust-grid span {
+    color:
+      var(--text-muted, #657679);
+    font-size: 0.85rem;
+  }
+
+  .manufacturer-sources {
+    margin-bottom: 2.75rem;
+    padding: 1rem;
+    border: 1px solid
+      var(--border-color, #dbe3e2);
+    border-radius: 0.85rem;
+    background: #fff;
+  }
+
+  .manufacturer-sources summary {
+    cursor: pointer;
+    font-weight: 800;
+  }
+
+  @media (min-width: 760px) {
+    .manufacturer-hero-main {
       grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        minmax(0, 0.95fr)
+        minmax(0, 1.25fr);
     }
 
-    .manufacturer-card-grid,
+    .manufacturer-hero-content {
+      padding: 2.5rem;
+    }
+
+    .manufacturer-hero-visual {
+      min-height: 34rem;
+    }
+
+    .manufacturer-hero-image {
+      min-height: 34rem;
+    }
+
+    .manufacturer-hero-fallback {
+      min-height: 34rem;
+    }
+
+    .manufacturer-hero-trust {
+      position: absolute;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+      border-radius: 1rem;
+      box-shadow:
+        0 12px 35px
+        rgba(15, 40, 35, 0.12);
+    }
+
+    .manufacturer-hero-details {
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+    }
+
     .manufacturer-series-grid,
+    .manufacturer-area-grid,
     .manufacturer-alternative-grid {
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
     }
+
+    .manufacturer-experience-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+    .manufacturer-trust-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
   }
 
-  @media (min-width: 1024px) {
-    .manufacturer-rating-grid {
+  @media (min-width: 1100px) {
+    .manufacturer-series-grid {
       grid-template-columns:
         repeat(3, minmax(0, 1fr));
+    }
+
+    .manufacturer-trust-grid {
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 759px) {
+    .manufacturer-hero {
+      margin-top: 1rem;
+    }
+
+    .manufacturer-hero-content {
+      padding: 1.35rem;
+    }
+
+    .manufacturer-hero h1 {
+      font-size: clamp(3.2rem, 17vw, 5rem);
+    }
+
+    .manufacturer-hero-summary {
+      font-size: 1rem;
+    }
+
+    .manufacturer-hero-cta {
+      width: 100%;
+    }
+
+    .manufacturer-rating-row {
+      grid-template-columns:
+        minmax(0, 1fr) auto;
+    }
+
+    .manufacturer-rating-stars {
+      display: none;
+    }
+
+    .manufacturer-hero-trust {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+    .manufacturer-hero-trust div:last-child {
+      grid-column: 1 / -1;
     }
   }
 </style>
