@@ -892,18 +892,13 @@ const ratingStars = (rating: number) => {
 </script>
 
 <style>
-  /* =========================================================
-     Manufacturer Page V3
-     Complete page styling
-     ========================================================= */
-
   :global(html) {
     scroll-behavior: smooth;
   }
 
-  .manufacturer-hero,
+  .manufacturer-hero-v3,
   .manufacturer-hub,
-  .manufacturer-section-divider {
+  .manufacturer-divider {
     --manufacturer-accent: #18743b;
     --manufacturer-accent-dark: #0f5a2b;
     --manufacturer-accent-soft: rgba(24, 116, 59, 0.09);
@@ -911,21 +906,18 @@ const ratingStars = (rating: number) => {
     --manufacturer-muted: #647579;
     --manufacturer-border: #dce5e3;
     --manufacturer-surface: #ffffff;
-    --manufacturer-background: #f7f9f8;
     box-sizing: border-box;
   }
 
-  .manufacturer-hero *,
+  .manufacturer-hero-v3 *,
   .manufacturer-hub *,
-  .manufacturer-section-divider * {
+  .manufacturer-divider * {
     box-sizing: border-box;
   }
 
-  /* =========================================================
-     Full width breakout
-     ========================================================= */
+  /* Hero Container */
 
-  .manufacturer-hero {
+  .manufacturer-hero-v3 {
     position: relative;
     left: 50%;
     width: min(1500px, calc(100vw - 32px));
@@ -933,16 +925,14 @@ const ratingStars = (rating: number) => {
     transform: translateX(-50%);
   }
 
-  /* =========================================================
-     Main hero
-     ========================================================= */
+  /* Hero Hauptbereich */
 
-  .manufacturer-hero-main {
+  .manufacturer-hero-grid {
     display: grid;
     grid-template-columns:
       minmax(0, 44fr)
       minmax(0, 56fr);
-    min-height: 610px;
+    min-height: 620px;
     overflow: hidden;
     border: 1px solid var(--manufacturer-border);
     border-radius: 28px;
@@ -957,6 +947,8 @@ const ratingStars = (rating: number) => {
       0 22px 55px rgba(13, 48, 43, 0.1);
   }
 
+  /* Linke Hero Spalte */
+
   .manufacturer-hero-content {
     display: flex;
     min-width: 0;
@@ -965,17 +957,16 @@ const ratingStars = (rating: number) => {
     justify-content: center;
   }
 
-  .manufacturer-hero-eyebrow {
+  .manufacturer-eyebrow {
     display: inline-flex;
     width: fit-content;
     margin-bottom: 14px;
     color: var(--manufacturer-accent);
     font-size: 0.96rem;
     font-weight: 800;
-    letter-spacing: 0.01em;
   }
 
-  .manufacturer-hero h1 {
+  .manufacturer-title {
     margin: 0;
     color: var(--manufacturer-text);
     font-size: clamp(4rem, 6.4vw, 7rem);
@@ -984,7 +975,7 @@ const ratingStars = (rating: number) => {
     letter-spacing: -0.055em;
   }
 
-  .manufacturer-hero-subtitle {
+  .manufacturer-subtitle {
     max-width: 18ch;
     margin: 24px 0 0;
     color: var(--manufacturer-text);
@@ -994,7 +985,7 @@ const ratingStars = (rating: number) => {
     letter-spacing: -0.025em;
   }
 
-  .manufacturer-hero-rating {
+  .manufacturer-rating {
     display: flex;
     margin-top: 22px;
     flex-wrap: wrap;
@@ -1002,12 +993,26 @@ const ratingStars = (rating: number) => {
     gap: 12px;
   }
 
-  .manufacturer-hero-rating strong {
+  .manufacturer-rating > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .manufacturer-rating strong {
     color: var(--manufacturer-text);
     font-size: 1.08rem;
   }
 
-  .manufacturer-hero-stars {
+  .manufacturer-rating p {
+    max-width: 48ch;
+    margin: 0;
+    color: var(--manufacturer-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .manufacturer-stars {
     color: var(--manufacturer-accent);
     font-size: 1.15rem;
     line-height: 1;
@@ -1015,15 +1020,7 @@ const ratingStars = (rating: number) => {
     white-space: nowrap;
   }
 
-  .manufacturer-hero-rating-note {
-    max-width: 52ch;
-    margin: 8px 0 0;
-    color: var(--manufacturer-muted);
-    font-size: 0.88rem;
-    line-height: 1.55;
-  }
-
-  .manufacturer-hero-summary {
+  .manufacturer-summary {
     display: -webkit-box;
     max-width: 56ch;
     margin: 24px 0 0;
@@ -1035,7 +1032,7 @@ const ratingStars = (rating: number) => {
     -webkit-line-clamp: 5;
   }
 
-  .manufacturer-hero-cta {
+  .manufacturer-cta {
     display: inline-flex;
     width: fit-content;
     min-height: 58px;
@@ -1062,25 +1059,23 @@ const ratingStars = (rating: number) => {
       box-shadow 180ms ease;
   }
 
-  .manufacturer-hero-cta:hover {
+  .manufacturer-cta:hover {
     transform: translateY(-2px);
     box-shadow:
       0 16px 34px rgba(24, 116, 59, 0.3);
   }
 
-  .manufacturer-hero-cta:focus-visible {
+  .manufacturer-cta:focus-visible {
     outline: 3px solid rgba(24, 116, 59, 0.25);
     outline-offset: 3px;
   }
 
-  /* =========================================================
-     Hero image
-     ========================================================= */
+  /* Rechte Hero Spalte */
 
-  .manufacturer-hero-visual {
+  .manufacturer-hero-media {
     position: relative;
     min-width: 0;
-    min-height: 610px;
+    min-height: 620px;
     overflow: hidden;
     background:
       linear-gradient(
@@ -1094,71 +1089,62 @@ const ratingStars = (rating: number) => {
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 610px;
+    min-height: 620px;
     object-fit: cover;
     object-position: center center;
   }
 
-  .manufacturer-hero-image.manufacturer-hero-logo {
-    padding: clamp(64px, 8vw, 120px);
-    background:
-      radial-gradient(
-        circle at center,
-        rgba(24, 116, 59, 0.08),
-        transparent 64%
-      ),
-      #ffffff;
-    object-fit: contain;
+  /* Trust Badge */
+
+  .manufacturer-trust-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    max-width: 240px;
+    padding: 14px 18px;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid rgba(220, 229, 227, 0.9);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow:
+      0 12px 30px rgba(13, 48, 43, 0.12);
+    backdrop-filter: blur(14px);
   }
 
-  .manufacturer-hero-fallback {
+  .manufacturer-trust-badge > span {
     display: grid;
-    min-height: 610px;
-    padding: 48px;
-    place-content: center;
-    gap: 14px;
-    text-align: center;
-    background:
-      radial-gradient(
-        circle at top,
-        rgba(24, 116, 59, 0.16),
-        transparent 55%
-      ),
-      linear-gradient(
-        145deg,
-        #f7faf8,
-        #f3ede5
-      );
-  }
-
-  .manufacturer-hero-fallback[hidden] {
-    display: none;
-  }
-
-  .manufacturer-fallback-label {
-    color: var(--manufacturer-accent);
-    font-size: 1rem;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--manufacturer-accent);
+    color: #ffffff;
+    font-size: 1.15rem;
     font-weight: 900;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
   }
 
-  .manufacturer-hero-fallback strong {
+  .manufacturer-trust-badge div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .manufacturer-trust-badge strong {
     color: var(--manufacturer-text);
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-size: 0.9rem;
   }
 
-  .manufacturer-hero-fallback span:last-child {
-    color: var(--manufacturer-accent);
-    font-size: 1.4rem;
-    letter-spacing: 0.1em;
+  .manufacturer-trust-badge small {
+    color: var(--manufacturer-muted);
+    font-size: 0.72rem;
   }
 
-  /* =========================================================
-     Trust stats
-     ========================================================= */
+  /* Statistikleiste */
 
-  .manufacturer-hero-trust {
+  .manufacturer-stats {
     position: absolute;
     right: 24px;
     bottom: 24px;
@@ -1177,7 +1163,7 @@ const ratingStars = (rating: number) => {
     backdrop-filter: blur(16px);
   }
 
-  .manufacturer-hero-trust div {
+  .manufacturer-stats div {
     display: grid;
     min-width: 0;
     padding: 6px 12px;
@@ -1186,33 +1172,31 @@ const ratingStars = (rating: number) => {
     text-align: center;
   }
 
-  .manufacturer-hero-trust div + div {
+  .manufacturer-stats div + div {
     border-left: 1px solid var(--manufacturer-border);
   }
 
-  .manufacturer-hero-trust div > span {
+  .manufacturer-stats div > span {
     color: var(--manufacturer-accent);
     font-size: 1.3rem;
     line-height: 1;
   }
 
-  .manufacturer-hero-trust strong {
+  .manufacturer-stats strong {
     color: var(--manufacturer-text);
     font-size: 0.88rem;
     line-height: 1.2;
   }
 
-  .manufacturer-hero-trust small {
+  .manufacturer-stats small {
     color: var(--manufacturer-muted);
     font-size: 0.7rem;
     line-height: 1.2;
   }
 
-  /* =========================================================
-     Two hero detail cards
-     ========================================================= */
+  /* Karten unterhalb des Heros */
 
-  .manufacturer-hero-details {
+  .manufacturer-hero-bottom {
     display: grid;
     margin-top: 20px;
     grid-template-columns:
@@ -1221,7 +1205,7 @@ const ratingStars = (rating: number) => {
     gap: 20px;
   }
 
-  .manufacturer-hero-card {
+  .manufacturer-info-card {
     min-width: 0;
     height: 100%;
     padding: 24px;
@@ -1232,21 +1216,14 @@ const ratingStars = (rating: number) => {
       0 14px 34px rgba(13, 48, 43, 0.07);
   }
 
-  .manufacturer-card-heading {
+  .manufacturer-info-card > header {
     display: flex;
     margin-bottom: 18px;
     align-items: center;
     gap: 12px;
   }
 
-  .manufacturer-card-heading h2 {
-    margin: 0;
-    color: var(--manufacturer-text);
-    font-size: clamp(1.25rem, 2vw, 1.55rem);
-    line-height: 1.2;
-  }
-
-  .manufacturer-card-icon {
+  .manufacturer-info-card > header > span {
     display: grid;
     width: 42px;
     height: 42px;
@@ -1258,15 +1235,21 @@ const ratingStars = (rating: number) => {
     font-size: 1.25rem;
   }
 
-  .manufacturer-suitable-list {
+  .manufacturer-info-card h2 {
+    margin: 0;
+    color: var(--manufacturer-text);
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    line-height: 1.2;
+  }
+
+  .manufacturer-info-card ul {
     display: grid;
     margin: 0;
     padding: 0;
-    gap: 0;
     list-style: none;
   }
 
-  .manufacturer-suitable-list li {
+  .manufacturer-info-card li {
     display: flex;
     min-width: 0;
     padding: 12px 0;
@@ -1275,11 +1258,11 @@ const ratingStars = (rating: number) => {
     border-bottom: 1px solid #edf2f1;
   }
 
-  .manufacturer-suitable-list li:last-child {
+  .manufacturer-info-card li:last-child {
     border-bottom: 0;
   }
 
-  .manufacturer-suitable-list li > span {
+  .manufacturer-info-card li > span {
     display: grid;
     width: 28px;
     height: 28px;
@@ -1291,15 +1274,13 @@ const ratingStars = (rating: number) => {
     font-weight: 900;
   }
 
-  .manufacturer-suitable-list strong {
+  .manufacturer-info-card li strong {
     color: var(--manufacturer-text);
     font-size: 0.96rem;
     line-height: 1.35;
   }
 
-  /* =========================================================
-     Rating list
-     ========================================================= */
+  /* Bewertungskarte */
 
   .manufacturer-rating-list {
     display: grid;
@@ -1342,33 +1323,9 @@ const ratingStars = (rating: number) => {
     text-align: right;
   }
 
-  .manufacturer-rating-method {
-    display: flex;
-    margin-top: 16px;
-    padding: 14px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 13px;
-    background: var(--manufacturer-accent-soft);
-  }
+  /* Pfoten Trenner */
 
-  .manufacturer-rating-method > span {
-    color: var(--manufacturer-accent);
-    font-weight: 900;
-  }
-
-  .manufacturer-rating-method p {
-    margin: 0;
-    color: var(--manufacturer-muted);
-    font-size: 0.84rem;
-    line-height: 1.45;
-  }
-
-  /* =========================================================
-     Paw divider
-     ========================================================= */
-
-  .manufacturer-section-divider {
+  .manufacturer-divider {
     position: relative;
     left: 50%;
     display: grid;
@@ -1384,20 +1341,18 @@ const ratingStars = (rating: number) => {
     color: var(--manufacturer-accent);
   }
 
-  .manufacturer-section-divider span {
+  .manufacturer-divider span {
     height: 1px;
     background: currentColor;
     opacity: 0.4;
   }
 
-  .manufacturer-section-divider strong {
+  .manufacturer-divider strong {
     font-size: 1.55rem;
     line-height: 1;
   }
 
-  /* =========================================================
-     Article sections
-     ========================================================= */
+  /* Restliche Herstellerseite */
 
   .manufacturer-hub {
     color: var(--manufacturer-text);
@@ -1500,36 +1455,6 @@ const ratingStars = (rating: number) => {
     font-size: 0.9rem;
   }
 
-  /* =========================================================
-     Pros and cons fallback styling
-     ========================================================= */
-
-  .manufacturer-hub :global(.pros-cons-v3) {
-    display: grid;
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .manufacturer-hub :global(.pros-box-v3),
-  .manufacturer-hub :global(.cons-box-v3) {
-    min-width: 0;
-    padding: 22px;
-    border: 1px solid var(--manufacturer-border);
-    border-radius: 18px;
-    background: #ffffff;
-  }
-
-  .manufacturer-hub :global(.pros-box-v3 h3),
-  .manufacturer-hub :global(.cons-box-v3 h3) {
-    margin-top: 0;
-    color: var(--manufacturer-text);
-  }
-
-  /* =========================================================
-     Trust section
-     ========================================================= */
-
   .manufacturer-trust-section {
     padding: 24px;
     border: 1px solid var(--manufacturer-border);
@@ -1558,10 +1483,6 @@ const ratingStars = (rating: number) => {
     font-size: 0.86rem;
   }
 
-  /* =========================================================
-     Sources
-     ========================================================= */
-
   .manufacturer-sources {
     margin-bottom: 48px;
     padding: 18px;
@@ -1580,16 +1501,30 @@ const ratingStars = (rating: number) => {
     color: var(--manufacturer-muted);
   }
 
-  /* =========================================================
-     Tablet
-     ========================================================= */
+  .manufacturer-hub :global(.pros-cons-v3) {
+    display: grid;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .manufacturer-hub :global(.pros-box-v3),
+  .manufacturer-hub :global(.cons-box-v3) {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--manufacturer-border);
+    border-radius: 18px;
+    background: #ffffff;
+  }
+
+  /* Tablet */
 
   @media (min-width: 760px) and (max-width: 1100px) {
-    .manufacturer-hero {
+    .manufacturer-hero-v3 {
       width: calc(100vw - 28px);
     }
 
-    .manufacturer-hero-main {
+    .manufacturer-hero-grid {
       grid-template-columns:
         minmax(0, 46fr)
         minmax(0, 54fr);
@@ -1600,46 +1535,43 @@ const ratingStars = (rating: number) => {
       padding: 34px;
     }
 
-    .manufacturer-hero h1 {
+    .manufacturer-title {
       font-size: clamp(3.7rem, 7vw, 5rem);
     }
 
-    .manufacturer-hero-subtitle {
+    .manufacturer-subtitle {
       font-size: clamp(1.5rem, 3vw, 1.9rem);
     }
 
-    .manufacturer-hero-visual,
-    .manufacturer-hero-image,
-    .manufacturer-hero-fallback {
+    .manufacturer-hero-media,
+    .manufacturer-hero-image {
       min-height: 560px;
     }
 
-    .manufacturer-hero-trust {
+    .manufacturer-stats {
       right: 14px;
       bottom: 14px;
       left: 14px;
       padding: 10px;
     }
 
-    .manufacturer-hero-trust div {
+    .manufacturer-stats div {
       padding: 5px;
     }
 
-    .manufacturer-hero-trust strong {
+    .manufacturer-stats strong {
       font-size: 0.78rem;
     }
 
-    .manufacturer-hero-trust small {
+    .manufacturer-stats small {
       font-size: 0.62rem;
     }
   }
 
-  /* =========================================================
-     Mobile
-     ========================================================= */
+  /* Mobile */
 
   @media (max-width: 759px) {
-    .manufacturer-hero {
+    .manufacturer-hero-v3 {
       left: 50%;
       width: calc(100vw - 24px);
       margin-top: 18px;
@@ -1647,7 +1579,7 @@ const ratingStars = (rating: number) => {
       transform: translateX(-50%);
     }
 
-    .manufacturer-hero-main {
+    .manufacturer-hero-grid {
       grid-template-columns: 1fr;
       min-height: auto;
       border-radius: 22px;
@@ -1657,22 +1589,22 @@ const ratingStars = (rating: number) => {
       padding: 28px 22px 30px;
     }
 
-    .manufacturer-hero h1 {
+    .manufacturer-title {
       font-size: clamp(3.2rem, 16vw, 5rem);
       line-height: 0.95;
     }
 
-    .manufacturer-hero-subtitle {
+    .manufacturer-subtitle {
       max-width: 22ch;
       margin-top: 18px;
       font-size: clamp(1.45rem, 7vw, 1.9rem);
     }
 
-    .manufacturer-hero-rating {
+    .manufacturer-rating {
       margin-top: 18px;
     }
 
-    .manufacturer-hero-summary {
+    .manufacturer-summary {
       display: block;
       max-width: none;
       margin-top: 20px;
@@ -1681,22 +1613,22 @@ const ratingStars = (rating: number) => {
       -webkit-line-clamp: unset;
     }
 
-    .manufacturer-hero-cta {
+    .manufacturer-cta {
       width: 100%;
       margin-top: 22px;
     }
 
-    .manufacturer-hero-visual,
-    .manufacturer-hero-image,
-    .manufacturer-hero-fallback {
+    .manufacturer-hero-media,
+    .manufacturer-hero-image {
       min-height: 390px;
     }
 
-    .manufacturer-hero-image {
-      object-position: center center;
+    .manufacturer-trust-badge {
+      top: 14px;
+      right: 14px;
     }
 
-    .manufacturer-hero-trust {
+    .manufacturer-stats {
       position: static;
       display: grid;
       min-height: auto;
@@ -1711,30 +1643,30 @@ const ratingStars = (rating: number) => {
       backdrop-filter: none;
     }
 
-    .manufacturer-hero-trust div {
+    .manufacturer-stats div {
       padding: 12px 8px;
     }
 
-    .manufacturer-hero-trust div + div {
+    .manufacturer-stats div + div {
       border-left: 0;
     }
 
-    .manufacturer-hero-trust div:nth-child(even) {
+    .manufacturer-stats div:nth-child(even) {
       border-left: 1px solid var(--manufacturer-border);
     }
 
-    .manufacturer-hero-trust div:last-child {
+    .manufacturer-stats div:last-child {
       grid-column: 1 / -1;
       border-top: 1px solid var(--manufacturer-border);
     }
 
-    .manufacturer-hero-details {
+    .manufacturer-hero-bottom {
       grid-template-columns: 1fr;
       gap: 14px;
       margin-top: 14px;
     }
 
-    .manufacturer-hero-card {
+    .manufacturer-info-card {
       padding: 20px;
       border-radius: 18px;
     }
@@ -1749,7 +1681,7 @@ const ratingStars = (rating: number) => {
       display: none;
     }
 
-    .manufacturer-section-divider {
+    .manufacturer-divider {
       width: calc(100vw - 48px);
       margin-top: 34px;
     }
@@ -1759,9 +1691,7 @@ const ratingStars = (rating: number) => {
     }
   }
 
-  /* =========================================================
-     Desktop grids
-     ========================================================= */
+  /* Desktop Grids */
 
   @media (min-width: 760px) {
     .manufacturer-series-grid,
@@ -1794,17 +1724,13 @@ const ratingStars = (rating: number) => {
     }
   }
 
-  /* =========================================================
-     Reduced motion
-     ========================================================= */
-
   @media (prefers-reduced-motion: reduce) {
-    .manufacturer-hero-cta,
+    .manufacturer-cta,
     .manufacturer-alternative-card {
       transition: none;
     }
 
-    .manufacturer-hero-cta:hover,
+    .manufacturer-cta:hover,
     .manufacturer-alternative-card:hover {
       transform: none;
     }
