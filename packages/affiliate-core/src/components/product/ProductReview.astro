@@ -1,5 +1,5 @@
 ---
-import ProductBox from "../ProductBox.astro";
+import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro";
 import ProductImage from "../ProductImage.astro";
 
 import {
@@ -842,8 +842,7 @@ const stars = (
     </p>
   </div>
 
-  <div class="product-review-alternatives-card-v3">
-  <ProductBox
+<AlternativeRecommendationCard
   currentProductKey={productKey}
 />
   </div>
@@ -1657,23 +1656,6 @@ const stars = (
     color: var(--product-muted);
     line-height: 1.75;
   }
-.product-review-alternatives-card-v3 {
-  padding: clamp(1rem, 2vw, 1.4rem);
-  border: 1px solid var(--product-border);
-  border-radius: 1.15rem;
-  background:
-    linear-gradient(
-      145deg,
-      rgba(24, 116, 59, 0.05),
-      #ffffff 48%
-    );
-  box-shadow:
-    0 12px 30px rgba(13, 48, 43, 0.05);
-}
-
-.product-review-alternatives-card-v3 :global(*) {
-  max-width: 100%;
-}
   .product-review-specs-v3 {
     display: grid;
     overflow: hidden;

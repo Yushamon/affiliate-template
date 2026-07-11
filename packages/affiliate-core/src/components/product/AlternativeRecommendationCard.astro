@@ -1,0 +1,572 @@
+---
+import ProductImage from "../ProductImage.astro";
+
+import {
+  products,
+  type ProductKey
+} from "@app/data/products";
+
+import {
+  getWeightedProductScore
+} from "@app/data/productScoring";
+
+import {
+  DEFAULT_PROJECT,
+  getProjectImage
+} from "@app/data/projectImages";
+
+import {
+  stripLeadingIcon
+} from "../../utils/content";
+
+import {
+  getProductHeroImage
+} from "../../utils/productImages";
+
+interface Props {
+  currentProductKey: ProductKey;
+  limit?: number;
+}
+
+const {
+  currentProductKey,
+  limit = 3
+} = Astro.props as Props;
+
+const currentProduct =
+  products[currentProductKey];
+
+const productKeys =
+  Object.keys(
+    products
+  ) as ProductKey[];
+
+const alternatives =
+  currentProduct
+    ? productKeys
+        .filter(
+          (candidateKey) => {
+            const candidate =
+              products[candidateKey];
+
+            return (
+              candidateKey !==
+                currentProductKey &&
+              candidate.category ===
+                currentProduct.category
+            );
+          }
+        )
+        .sort(
+          (a, b) =>
+            getWeightedProductScore(
+              b
+            ) -
+            getWeightedProductScore(
+              a
+            )
+        )
+        .slice(
+          0,
+          limit
+        )
+    : [];
+
+const getAlternativeReason = (
+  alternativeKey: ProductKey
+) => {
+  const alternative =
+    products[
+      alternativeKey
+    ];
+
+  const bestFor =
+    Array.isArray(
+      alternative.bestFor
+    )
+      ? alternative.bestFor
+          .map(
+            (item) =>
+              stripLeadingIcon(
+                item
+              ).trim()
+          )
+          .filter(Boolean)
+      : [];
+
+  if (
+    bestFor.length > 0
+  ) {
+    return `Die bessere Wahl für ${bestFor[0].toLowerCase()}.`;
+  }
+
+  if (
+    alternative.useCase
+  ) {
+    return `Besonders interessant für ${alternative.useCase.toLowerCase()}.`;
+  }
+
+  return alternative.recommendation;
+};
+---
+
+{
+  alternatives.length >
+    0 ? (
+    <div class="alternative-recommendation-grid">
+      {
+        alternatives.map(
+          (
+            alternativeKey
+          ) => {
+            const alternative =
+              products[
+                alternativeKey
+              ];
+
+            const alternativeImage =
+              getProductHeroImage(
+                alternative,
+                getProjectImage(
+                  DEFAULT_PROJECT,
+                  "product"
+                ),
+                alternativeKey
+              );
+
+            const alternativeScore =
+              getWeightedProductScore(
+                alternativeKey
+              );
+
+            const alternativeReason =
+              getAlternativeReason(
+                alternativeKey
+              );
+
+            return (
+              <article class="alternative-recommendation-card">
+                <a
+                  class="alternative-recommendation-image"
+                  href={
+                    alternative.productUrl
+                  }
+                  aria-label={`${alternative.name} Test öffnen`}
+                >
+                  <ProductImage
+                    image={
+                      alternativeImage
+                    }
+                    alt={
+                      alternative.name
+                    }
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="alternative-recommendation-content">
+                  <div class="alternative-recommendation-meta">
+                    <span>
+                      Alternative
+                    </span>
+
+                    <strong>
+                      {
+                        alternativeScore
+                      }
+                      {" / 100"}
+                    </strong>
+                  </div>
+
+                  <h3>
+                    <a
+                      href={
+                        alternative.productUrl
+                      }
+                    >
+                      {
+                        alternative.name
+                      }
+                    </a>
+                  </h3>
+
+                  <p class="alternative-recommendation-reason">
+                    {
+                      alternativeReason
+                    }
+                  </p>
+
+                  <p class="alternative-recommendation-verdict">
+                    {
+                      alternative.review
+                        ?.summary ??
+                      alternative.recommendation
+                    }
+                  </p>
+
+                  <div class="alternative-recommendation-footer">
+                    <span>
+                      {
+                        alternative.rating
+                      }
+                      {" / 5"}
+                    </span>
+
+                    <a
+                      href={
+                        alternative.productUrl
+                      }
+                    >
+                      Zum vollständigen Test
+                      <span
+                        aria-hidden="true"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          }
+        )
+      }
+    </div>
+  ) : (
+    <div class="alternative-recommendation-empty">
+      <strong>
+        Noch keine passende Alternative verfügbar
+      </strong>
+
+      <p>
+        Für dieses Produkt ist derzeit noch kein ausreichend
+        vergleichbares Modell vollständig bewertet.
+      </p>
+    </div>
+  )
+}
+
+<style>
+  .alternative-recommendation-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+    gap: 1.25rem;
+  }
+
+  .alternative-recommendation-card {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid
+      var(
+        --product-border,
+        #dce5e3
+      );
+    border-radius: 1.2rem;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(
+          24,
+          116,
+          59,
+          0.05
+        ),
+        #ffffff 46%
+      );
+    box-shadow:
+      0 12px 30px
+        rgba(
+          13,
+          48,
+          43,
+          0.06
+        );
+  }
+
+  .alternative-recommendation-image {
+    display: grid;
+    min-height: 15rem;
+    overflow: hidden;
+    place-items: center;
+    background:
+      linear-gradient(
+        145deg,
+        #f5f7f6,
+        #ffffff
+      );
+  }
+
+  .alternative-recommendation-image
+    :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 17rem;
+    padding: 1.2rem;
+    object-fit: contain;
+    transition:
+      transform
+      180ms
+      ease;
+  }
+
+  .alternative-recommendation-image:hover
+    :global(img) {
+    transform:
+      scale(
+        1.025
+      );
+  }
+
+  .alternative-recommendation-content {
+    display: flex;
+    min-width: 0;
+    padding: 1.3rem;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .alternative-recommendation-meta {
+    display: flex;
+    margin-bottom: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .alternative-recommendation-meta
+    span {
+    color:
+      var(
+        --product-accent,
+        #18743b
+      );
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .alternative-recommendation-meta
+    strong {
+    flex: 0 0 auto;
+    padding:
+      0.35rem
+      0.55rem;
+    border-radius: 999px;
+    background:
+      rgba(
+        24,
+        116,
+        59,
+        0.09
+      );
+    color:
+      var(
+        --product-accent-dark,
+        #0f5a2b
+      );
+    font-size: 0.78rem;
+  }
+
+  .alternative-recommendation-content
+    h3 {
+    margin:
+      0
+      0
+      0.8rem;
+    font-size: 1.35rem;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+  }
+
+  .alternative-recommendation-content
+    h3
+    a {
+    color:
+      var(
+        --product-text,
+        #0d302b
+      );
+    text-decoration: none;
+  }
+
+  .alternative-recommendation-content
+    h3
+    a:hover {
+    color:
+      var(
+        --product-accent,
+        #18743b
+      );
+  }
+
+  .alternative-recommendation-reason {
+    margin:
+      0
+      0
+      0.75rem;
+    color:
+      var(
+        --product-text,
+        #0d302b
+      );
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .alternative-recommendation-verdict {
+    display: -webkit-box;
+    margin:
+      0
+      0
+      1.2rem;
+    overflow: hidden;
+    color:
+      var(
+        --product-muted,
+        #647579
+      );
+    line-height: 1.6;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .alternative-recommendation-footer {
+    display: flex;
+    margin-top: auto;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    border-top: 1px solid
+      var(
+        --product-border,
+        #dce5e3
+      );
+  }
+
+  .alternative-recommendation-footer
+    > span {
+    color:
+      var(
+        --product-text,
+        #0d302b
+      );
+    font-size: 0.86rem;
+    font-weight: 850;
+  }
+
+  .alternative-recommendation-footer
+    a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color:
+      var(
+        --product-accent-dark,
+        #0f5a2b
+      );
+    font-size: 0.87rem;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .alternative-recommendation-empty {
+    padding: 1.5rem;
+    border: 1px dashed
+      var(
+        --product-border,
+        #dce5e3
+      );
+    border-radius: 1rem;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .alternative-recommendation-empty
+    strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color:
+      var(
+        --product-text,
+        #0d302b
+      );
+  }
+
+  .alternative-recommendation-empty
+    p {
+    margin: 0;
+    color:
+      var(
+        --product-muted,
+        #647579
+      );
+  }
+
+  @media (
+    max-width:
+      1050px
+  ) {
+    .alternative-recommendation-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .alternative-recommendation-card {
+      display: grid;
+      grid-template-columns:
+        minmax(
+          12rem,
+          0.7fr
+        )
+        minmax(
+          0,
+          1.3fr
+        );
+    }
+
+    .alternative-recommendation-image {
+      min-height: 100%;
+    }
+  }
+
+  @media (
+    max-width:
+      640px
+  ) {
+    .alternative-recommendation-card {
+      display: flex;
+    }
+
+    .alternative-recommendation-image {
+      min-height: 13rem;
+    }
+
+    .alternative-recommendation-footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  @media (
+    prefers-reduced-motion:
+      reduce
+  ) {
+    .alternative-recommendation-image
+      :global(img) {
+      transition: none;
+    }
+
+    .alternative-recommendation-image:hover
+      :global(img) {
+      transform: none;
+    }
+  }
+</style>
