@@ -1,6 +1,5 @@
 import type { ProductAffiliateData } from "@affiliate-core/affiliate/types";
 import { projectImages } from "./projectImages";
-
 export type ProductSpec = { label: string; value: string };
 export type ProductRatings = Record<string, number>;
 export type ProductImages = {
