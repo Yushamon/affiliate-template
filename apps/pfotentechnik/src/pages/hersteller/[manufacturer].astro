@@ -142,217 +142,295 @@ const ratingStars = (rating: number) => {
     title={manufacturer.name}
   />
 
-  <header class="manufacturer-hero">
-    <div class="manufacturer-hero-main">
-      <div class="manufacturer-hero-content">
-        <span class="manufacturer-hero-eyebrow">
-          Unsere Einschätzung
+<header class="manufacturer-hero-v3">
+
+  <div class="manufacturer-hero-grid">
+
+    <!-- LEFT -->
+
+    <div class="manufacturer-hero-content">
+
+      <span class="manufacturer-eyebrow">
+        Unsere Einschätzung
+      </span>
+
+      <h1 class="manufacturer-title">
+        {manufacturer.name}
+      </h1>
+
+      <p class="manufacturer-subtitle">
+        Premium-Hersteller für smarte Haustiertechnik
+      </p>
+
+      {
+        manufacturer.rating && (
+          <div class="manufacturer-rating">
+
+            <div class="manufacturer-stars">
+              {ratingStars(manufacturer.rating)}
+            </div>
+
+            <div>
+
+              <strong>
+                {manufacturer.rating.toFixed(1)} / 5
+              </strong>
+
+              <p>
+                Basierend auf Herstellerdaten,
+                Fachtests und Käufererfahrungen.
+              </p>
+
+            </div>
+
+          </div>
+        )
+      }
+
+      <p class="manufacturer-summary">
+        {manufacturer.description}
+      </p>
+
+      <a
+        href="#produktempfehlungen"
+        class="manufacturer-cta"
+      >
+        <span aria-hidden="true">
+          ★
         </span>
 
-        <h1>
-          {manufacturer.name}
-        </h1>
+        Unsere Empfehlungen
 
-        <p class="manufacturer-hero-subtitle">
-          Hersteller für smarte Haustiertechnik
-        </p>
+        <span aria-hidden="true">
+          →
+        </span>
 
-        {manufacturer.rating && (
-          <div class="manufacturer-hero-rating">
-            <span
-              class="manufacturer-hero-stars"
-              aria-hidden="true"
-            >
-              {ratingStars(manufacturer.rating)}
-            </span>
+      </a>
 
-            <strong>
-              {manufacturer.rating.toFixed(1)} / 5
-            </strong>
-          </div>
-        )}
-
-        <p class="manufacturer-hero-rating-note">
-          Redaktionelle Einschätzung auf Basis von
-          Herstellerdaten, Fachtests und wiederkehrenden
-          Mustern aus Käufererfahrungen.
-        </p>
-
-        <p class="manufacturer-hero-summary">
-          {manufacturer.description}
-        </p>
-
-        {sortedProducts.length > 0 && (
-          <a
-            class="manufacturer-hero-cta"
-            href="#produktempfehlungen"
-          >
-            <span aria-hidden="true">★</span>
-            Unsere Empfehlungen
-            <span aria-hidden="true">→</span>
-          </a>
-        )}
-      </div>
-
-      <div
-        class="manufacturer-hero-visual"
-        data-manufacturer-visual
-      >
-        <img
-          class="manufacturer-hero-image"
-          src={heroImage}
-          alt={`Produkte von ${manufacturer.name}`}
-          loading="eager"
-          decoding="async"
-          data-manufacturer-hero-image
-          data-logo-src={logoImage}
-        />
-
-        <div
-          class="manufacturer-hero-fallback"
-          data-manufacturer-fallback
-          hidden
-        >
-          <span class="manufacturer-fallback-label">
-            {manufacturer.name}
-          </span>
-
-          <strong>
-            Smarte Haustiertechnik
-          </strong>
-
-          {manufacturer.rating && (
-            <span>
-              {ratingStars(manufacturer.rating)}
-            </span>
-          )}
-        </div>
-
-        <div class="manufacturer-hero-trust">
-          <div>
-            <span aria-hidden="true">⌖</span>
-            <strong>Deutschland</strong>
-            <small>verfügbar</small>
-          </div>
-
-          <div>
-            <span aria-hidden="true">▯</span>
-            <strong>Eigene App</strong>
-            <small>modellabhängig</small>
-          </div>
-
-          <div>
-            <span aria-hidden="true">◇</span>
-            <strong>{productCount}</strong>
-            <small>Produkte</small>
-          </div>
-
-          <div>
-            <span aria-hidden="true">▱</span>
-            <strong>{seriesCount}</strong>
-            <small>Produktserien</small>
-          </div>
-
-          <div>
-            <span aria-hidden="true">◉</span>
-            <strong>Support</strong>
-            <small>Deutschland</small>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="manufacturer-hero-details">
-      {primarySuitableFor.length > 0 && (
-        <section class="manufacturer-hero-card">
-          <div class="manufacturer-card-heading">
-            <span
-              class="manufacturer-card-icon"
-              aria-hidden="true"
-            >
-              ♟
-            </span>
+    <!-- RIGHT -->
+
+    <div class="manufacturer-hero-media">
+
+      <img
+        src={`/images/manufacturers/${manufacturer.slug}/hero.webp`}
+        alt={manufacturer.name}
+        class="manufacturer-hero-image"
+        loading="eager"
+        decoding="async"
+      />
+
+      <div class="manufacturer-trust-badge">
+
+        <span aria-hidden="true">
+          ✓
+        </span>
+
+        <div>
+
+          <strong>
+            Redaktionell geprüft
+          </strong>
+
+          <small>
+            Aktuelle Produktpalette
+          </small>
+
+        </div>
+
+      </div>
+
+      <div class="manufacturer-stats">
+
+        <div>
+
+          <span>📍</span>
+
+          <strong>
+            Deutschland
+          </strong>
+
+          <small>
+            verfügbar
+          </small>
+
+        </div>
+
+        <div>
+
+          <span>📱</span>
+
+          <strong>
+            Eigene App
+          </strong>
+
+          <small>
+            modellabhängig
+          </small>
+
+        </div>
+
+        <div>
+
+          <span>📦</span>
+
+          <strong>
+            {manufacturer.products.length}
+          </strong>
+
+          <small>
+            Produkte
+          </small>
+
+        </div>
+
+        <div>
+
+          <span>🧩</span>
+
+          <strong>
+            {manufacturer.series?.length ?? 0}
+          </strong>
+
+          <small>
+            Serien
+          </small>
+
+        </div>
+
+        <div>
+
+          <span>🛠️</span>
+
+          <strong>
+            Support
+          </strong>
+
+          <small>
+            Deutschland
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="manufacturer-hero-bottom">
+
+    {
+      manufacturer.suitableFor && (
+        <section class="manufacturer-info-card">
+
+          <header>
+
+            <span>👥</span>
 
             <h2>
               Besonders geeignet für
             </h2>
-          </div>
 
-          <ul class="manufacturer-suitable-list">
-            {primarySuitableFor.map((item) => (
-              <li>
-                <span aria-hidden="true">✓</span>
-                <strong>{item}</strong>
-              </li>
-            ))}
+          </header>
+
+          <ul>
+
+            {
+              manufacturer.suitableFor
+                .slice(0, 5)
+                .map((item) => (
+
+                  <li>
+
+                    <span>
+                      ✓
+                    </span>
+
+                    <strong>
+                      {item}
+                    </strong>
+
+                  </li>
+
+                ))
+            }
+
           </ul>
-        </section>
-      )}
 
-      {manufacturer.ratings && (
-        <section class="manufacturer-hero-card">
-          <div class="manufacturer-card-heading">
-            <span
-              class="manufacturer-card-icon"
-              aria-hidden="true"
-            >
-              ★
-            </span>
+        </section>
+      )
+    }
+
+    {
+      manufacturer.ratings && (
+        <section class="manufacturer-info-card">
+
+          <header>
+
+            <span>⭐</span>
 
             <h2>
               Unsere Herstellerbewertung
             </h2>
-          </div>
+
+          </header>
 
           <div class="manufacturer-rating-list">
-            {Object.entries(
-              manufacturer.ratings
-            ).map(([key, value]) => (
-              <div class="manufacturer-rating-row">
-                <span>
-                  {
-                    ratingLabels[
-                      key as keyof typeof ratingLabels
-                    ]
-                  }
-                </span>
 
-                <span
-                  class="manufacturer-rating-stars"
-                  aria-label={`${value.toFixed(1)} von 5`}
-                >
-                  {ratingStars(value)}
-                </span>
+            {
+              Object.entries(manufacturer.ratings)
+                .map(([key, value]) => (
 
-                <strong>
-                  {value.toFixed(1)}
-                </strong>
-              </div>
-            ))}
+                  <div class="manufacturer-rating-row">
+
+                    <span>
+                      {
+                        ratingLabels[
+                          key as keyof typeof ratingLabels
+                        ]
+                      }
+                    </span>
+
+                    <span class="manufacturer-rating-stars">
+                      {ratingStars(value)}
+                    </span>
+
+                    <strong>
+                      {value.toFixed(1)}
+                    </strong>
+
+                  </div>
+
+                ))
+            }
+
           </div>
 
-          <div class="manufacturer-rating-method">
-            <span aria-hidden="true">✓</span>
-
-            <p>
-              Bewertet anhand von Herstellerangaben,
-              Fachtests und wiederkehrenden
-              Kundenerfahrungen.
-            </p>
-          </div>
         </section>
-      )}
-    </div>
-  </header>
+      )
+    }
 
-  <div
-    class="manufacturer-section-divider"
-    aria-hidden="true"
-  >
-    <span></span>
-    <strong>🐾</strong>
-    <span></span>
   </div>
+
+</header>
+
+<div
+  class="manufacturer-divider"
+  aria-hidden="true"
+>
+  <span></span>
+
+  <strong>
+    🐾
+  </strong>
+
+  <span></span>
+
+</div>
+
+
 
   <article class="article manufacturer-hub">
     <section id="produktempfehlungen">
