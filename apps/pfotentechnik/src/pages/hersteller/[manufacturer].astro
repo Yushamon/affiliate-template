@@ -655,18 +655,24 @@ const ratingStars = (rating: number) => {
             <ul class="editorial-featured-highlights">
               {
                 getProduct(
-                  overallProductKey
-                ).highlights
-                  .slice(0, 3)
-                  .map((highlight) => (
-                    <li>
-                      <span aria-hidden="true">
-                        ✓
-                      </span>
+  overallProductKey
+).highlights
+  .slice(0, 3)
+  .map((highlight) => {
+    const cleanHighlight = highlight
+      .replace(/^[✓✔☑]+\s*/, "")
+      .trim();
 
-                      {highlight}
-                    </li>
-                  ))
+    return (
+      <li>
+        <span aria-hidden="true">
+          ✓
+        </span>
+
+        {cleanHighlight}
+      </li>
+    );
+  })
               }
             </ul>
           )
