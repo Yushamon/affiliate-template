@@ -99,43 +99,7 @@ const sortedProducts = [...manufacturer.products].sort(
     getWeightedProductScore(b) -
     getWeightedProductScore(a)
 );
-const recommendationLabels = [
-  {
-    badge: "Top-Empfehlung",
-    icon: "🏆",
-    title: "Unsere erste Wahl",
-    description:
-      "Das aktuell am stärksten bewertete Modell dieses Herstellers."
-  },
-  {
-    badge: "Starke Alternative",
-    icon: "⭐",
-    title: "Sehr gute Alternative",
-    description:
-      "Eine überzeugende Alternative mit einem ausgewogenen Gesamtpaket."
-  },
-  {
-    badge: "Empfehlenswert",
-    icon: "✓",
-    title: "Ebenfalls empfehlenswert",
-    description:
-      "Ein interessantes Modell für Nutzer mit abweichenden Anforderungen."
-  },
-  {
-    badge: "Weitere Wahl",
-    icon: "◇",
-    title: "Weitere starke Wahl",
-    description:
-      "Eine zusätzliche Option innerhalb des aktuellen Produktsortiments."
-  }
-];
 
-const featuredProducts = sortedProducts
-  .slice(0, 4)
-  .map((productKey, index) => ({
-    productKey,
-    ...recommendationLabels[index]
-  }));
 const heroImage =
   `/images/manufacturers/${manufacturer.slug}/hero.webp`;
 
@@ -522,13 +486,12 @@ const ratingStars = (rating: number) => {
         </div>
 
         <p class="choice-intro">
-
-          Dieses Modell überzeugt durch das
-          ausgewogenste Gesamtpaket aus
-          Bedienung, Zuverlässigkeit,
-          Funktionsumfang und Alltagstauglichkeit.
-
-        </p>
+  Wenn du nur eine Empfehlung mitnehmen möchtest,
+  ist dieses Modell unsere erste Wahl. Es bietet
+  innerhalb des aktuellen Sortiments das ausgewogenste
+  Gesamtpaket aus Bedienung, Zuverlässigkeit,
+  Funktionsumfang und Alltagstauglichkeit.
+</p>
 
         <ProductRankingCard
           productKey={sortedProducts[0]}
@@ -561,44 +524,29 @@ const ratingStars = (rating: number) => {
           <article class="choice-card">
 
             <div class="choice-card-header">
+  <span class="choice-card-kicker">
+    {index === 0 && "🥣 Spezialempfehlung"}
+    {index === 1 && "🐈 Spezialempfehlung"}
+    {index === 2 && "💰 Spezialempfehlung"}
+  </span>
 
-              {
-                index === 0 && (
-                  <span>
+  <h3>
+    {index === 0 && "Für Nassfutter"}
+    {index === 1 && "Für mehrere Katzen"}
+    {index === 2 && "Bestes Preis-Leistungs-Verhältnis"}
+  </h3>
 
-                    🥣
+  <p>
+    {index === 0 &&
+      "Wenn deine Katze überwiegend Nassfutter frisst, ist dieses Modell die passendere Wahl."}
 
-                    Für Nassfutter
+    {index === 1 &&
+      "Für Haushalte mit mehreren Katzen empfehlen wir ein Modell mit klarer Zugangskontrolle und getrennten Rationen."}
 
-                  </span>
-                )
-              }
-
-              {
-                index === 1 && (
-                  <span>
-
-                    🐈
-
-                    Mehrere Katzen
-
-                  </span>
-                )
-              }
-
-              {
-                index === 2 && (
-                  <span>
-
-                    💰
-
-                    Preis-Leistung
-
-                  </span>
-                )
-              }
-
-            </div>
+    {index === 2 &&
+      "Wenn dir ein ausgewogenes Verhältnis aus Preis, Ausstattung und Alltagstauglichkeit wichtig ist, ist dieses Modell besonders interessant."}
+  </p>
+</div>
 
             <ProductRankingCard
               productKey={productKey}
@@ -1987,6 +1935,207 @@ const ratingStars = (rating: number) => {
       margin-top: 38px;
     }
   }
+
+  /* =========================================================
+   Editorial recommendations
+   ========================================================= */
+
+.manufacturer-editors-choice {
+  scroll-margin-top: 110px;
+}
+
+.choice-header {
+  max-width: 820px;
+  margin-bottom: 30px;
+}
+
+.choice-eyebrow {
+  display: inline-flex;
+  margin-bottom: 9px;
+  color: var(--manufacturer-accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.choice-header h2 {
+  margin: 0 0 14px;
+  color: var(--manufacturer-text);
+  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.choice-header p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--manufacturer-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.choice-featured {
+  padding: 26px;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--manufacturer-accent) 28%,
+      var(--manufacturer-border)
+    );
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24, 116, 59, 0.075),
+      #ffffff 48%
+    );
+  box-shadow:
+    0 18px 44px rgba(13, 48, 43, 0.1);
+}
+
+.choice-featured-header {
+  margin-bottom: 14px;
+}
+
+.choice-badge {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 8px 13px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  background: var(--manufacturer-accent-soft);
+  color: var(--manufacturer-accent-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.choice-featured-header h3 {
+  margin: 0;
+  color: var(--manufacturer-text);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.choice-intro {
+  max-width: 74ch;
+  margin: 0 0 24px;
+  color: var(--manufacturer-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.choice-featured :global(.product-ranking-card) {
+  margin: 0;
+  box-shadow: none;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.choice-card {
+  min-width: 0;
+  overflow: hidden;
+  padding: 22px;
+  border: 1px solid var(--manufacturer-border);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8faf9
+    );
+  box-shadow:
+    0 14px 34px rgba(13, 48, 43, 0.07);
+}
+
+.choice-card-header {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--manufacturer-accent) 20%,
+      var(--manufacturer-border)
+    );
+  border-radius: 16px;
+  background: var(--manufacturer-accent-soft);
+}
+
+.choice-card-kicker {
+  color: var(--manufacturer-accent);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.choice-card-header h3 {
+  margin: 0;
+  color: var(--manufacturer-text);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.choice-card-header p {
+  margin: 0;
+  color: var(--manufacturer-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.choice-card :global(.product-ranking-card) {
+  margin: 0;
+  box-shadow: none;
+}
+
+@media (min-width: 980px) {
+  .choice-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 759px) {
+  .choice-header {
+    margin-bottom: 24px;
+  }
+
+  .choice-header h2 {
+    font-size: clamp(2.35rem, 12vw, 3.25rem);
+  }
+
+  .choice-featured,
+  .choice-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .choice-card-header {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 14px;
+  }
+
+  .choice-card-header h3 {
+    font-size: 1.45rem;
+  }
+
+  .choice-grid {
+    gap: 18px;
+    margin-top: 18px;
+  }
+}
   /* Tablet */
 
   @media (min-width: 760px) and (max-width: 1100px) {
