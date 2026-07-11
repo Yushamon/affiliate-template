@@ -825,7 +825,30 @@ const stars = (
   </div>
 
 </section>
+<section class="product-review-alternatives-v3">
+  <div class="product-review-section-heading-v3">
+    <span>
+      Alternativen
+    </span>
 
+    <h2>
+      Welche Alternative passt besser?
+    </h2>
+
+    <p>
+      Ein anderes Modell kann sinnvoller sein, wenn du
+      andere Anforderungen an Futterart, App, Kamera,
+      Zugangskontrolle oder Preis-Leistung hast.
+    </p>
+  </div>
+
+  <div class="product-review-alternatives-card-v3">
+    <ProductBox
+      productKey={productKey}
+      currentProductKey={productKey}
+    />
+  </div>
+</section>
       <section class="product-review-spec-section-v3">
         <div class="product-review-section-heading-v3">
           <span>
@@ -906,14 +929,7 @@ const stars = (
         }
       </section>
 
-      <ProductBox
-        productKey={
-          productKey
-        }
-        currentProductKey={
-          productKey
-        }
-      />
+     
     </article>
   )
 }
@@ -1387,6 +1403,7 @@ const stars = (
 .product-review-rating-section-v3,
 .product-review-strengths-v3,
 .product-review-experience-v3,
+.product-review-alternatives-v3,
 .product-review-spec-section-v3 {
   margin-top: 3rem;
 }
@@ -1641,7 +1658,23 @@ const stars = (
     color: var(--product-muted);
     line-height: 1.75;
   }
+.product-review-alternatives-card-v3 {
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border: 1px solid var(--product-border);
+  border-radius: 1.15rem;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24, 116, 59, 0.05),
+      #ffffff 48%
+    );
+  box-shadow:
+    0 12px 30px rgba(13, 48, 43, 0.05);
+}
 
+.product-review-alternatives-card-v3 :global(*) {
+  max-width: 100%;
+}
   .product-review-specs-v3 {
     display: grid;
     overflow: hidden;
