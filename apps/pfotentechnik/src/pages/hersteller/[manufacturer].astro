@@ -1471,5 +1471,254 @@ const ratingStars = (rating: number) => {
     .manufacturer-hero-trust div:last-child {
       grid-column: 1 / -1;
     }
+    /* =========================================================
+   Manufacturer Page V3
+   Layout and Grid Refinement
+   ========================================================= */
+
+.manufacturer-hero {
+  width: min(1500px, calc(100vw - 2rem));
+  margin: 2rem 0 2.5rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.manufacturer-hero-main {
+  grid-template-columns:
+    minmax(0, 44%)
+    minmax(0, 56%);
+  min-height: 610px;
+  max-height: 660px;
+}
+
+.manufacturer-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(2rem, 3vw, 3.5rem);
+}
+
+.manufacturer-hero h1 {
+  font-size: clamp(4.2rem, 6vw, 6.75rem);
+}
+
+.manufacturer-hero-subtitle {
+  max-width: 18ch;
+  margin-top: 1rem;
+  font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+  line-height: 1.12;
+}
+
+.manufacturer-hero-summary {
+  display: -webkit-box;
+  max-width: 50ch;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.manufacturer-hero-rating-note {
+  max-width: 48ch;
+  line-height: 1.55;
+}
+
+.manufacturer-hero-cta {
+  align-self: flex-start;
+  min-height: 3.6rem;
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 0.85rem;
+  font-size: 1rem;
+}
+
+.manufacturer-hero-visual {
+  min-width: 0;
+  min-height: 610px;
+  max-height: 660px;
+}
+
+.manufacturer-hero-image {
+  width: 100%;
+  height: 100%;
+  min-height: 610px;
+  max-height: 660px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.manufacturer-hero-image.manufacturer-hero-logo {
+  padding: clamp(3rem, 6vw, 6rem);
+  object-fit: contain;
+}
+
+.manufacturer-hero-fallback {
+  min-height: 610px;
+  max-height: 660px;
+}
+
+.manufacturer-hero-trust {
+  right: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  min-height: 5.25rem;
+  padding: 0.8rem 1rem;
+}
+
+.manufacturer-hero-trust div {
+  padding: 0.4rem 0.65rem;
+}
+
+.manufacturer-hero-trust div > span {
+  font-size: 1.35rem;
+}
+
+.manufacturer-hero-trust strong {
+  font-size: 0.9rem;
+}
+
+.manufacturer-hero-trust small {
+  font-size: 0.7rem;
+}
+
+.manufacturer-hero-details {
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+  align-items: stretch;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.manufacturer-hero-card {
+  height: 100%;
+  padding: 1.4rem;
+}
+
+.manufacturer-section-divider {
+  width: min(34rem, calc(100vw - 3rem));
+  margin-top: 2.5rem;
+}
+
+/* Large desktop screens */
+
+@media (min-width: 1500px) {
+  .manufacturer-hero {
+    width: min(1540px, calc(100vw - 4rem));
+  }
+
+  .manufacturer-hero-main {
+    min-height: 630px;
+    max-height: 680px;
+  }
+
+  .manufacturer-hero-visual,
+  .manufacturer-hero-image,
+  .manufacturer-hero-fallback {
+    min-height: 630px;
+    max-height: 680px;
+  }
+}
+
+/* Medium desktop and tablets */
+
+@media (min-width: 760px) and (max-width: 1100px) {
+  .manufacturer-hero {
+    width: min(100%, calc(100vw - 2rem));
+  }
+
+  .manufacturer-hero-main {
+    grid-template-columns:
+      minmax(0, 46%)
+      minmax(0, 54%);
+    min-height: 570px;
+    max-height: none;
+  }
+
+  .manufacturer-hero-content {
+    padding: 2rem;
+  }
+
+  .manufacturer-hero h1 {
+    font-size: clamp(3.8rem, 7vw, 5rem);
+  }
+
+  .manufacturer-hero-subtitle {
+    font-size: clamp(1.45rem, 2.8vw, 1.9rem);
+  }
+
+  .manufacturer-hero-visual,
+  .manufacturer-hero-image,
+  .manufacturer-hero-fallback {
+    min-height: 570px;
+    max-height: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 759px) {
+  .manufacturer-hero {
+    width: calc(100vw - 1.5rem);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .manufacturer-hero-main {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    max-height: none;
+  }
+
+  .manufacturer-hero-content {
+    padding: 1.5rem;
+  }
+
+  .manufacturer-hero h1 {
+    font-size: clamp(3.2rem, 16vw, 4.8rem);
+  }
+
+  .manufacturer-hero-subtitle {
+    max-width: 20ch;
+    font-size: clamp(1.45rem, 7vw, 1.85rem);
+  }
+
+  .manufacturer-hero-summary {
+    display: block;
+    max-width: none;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+
+  .manufacturer-hero-cta {
+    width: 100%;
+  }
+
+  .manufacturer-hero-visual,
+  .manufacturer-hero-image,
+  .manufacturer-hero-fallback {
+    min-height: 24rem;
+    max-height: none;
+  }
+
+  .manufacturer-hero-image {
+    object-position: center center;
+  }
+
+  .manufacturer-hero-trust {
+    position: static;
+    min-height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .manufacturer-hero-details {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
   }
 </style>
