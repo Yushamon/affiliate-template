@@ -46,6 +46,37 @@ const winnerImage = winnerProduct?.data.images.hero
   ?? winnerManufacturer?.data.images.hero;
 const winnerRating = winnerProduct?.data.rating
   ?? winnerManufacturer?.data.rating;
+const normalizeKey = (value: string) => value
+  .toLocaleLowerCase("de")
+  .replaceAll("ä", "ae")
+  .replaceAll("ö", "oe")
+  .replaceAll("ü", "ue")
+  .replaceAll("ß", "ss")
+  .replace(/[^a-z0-9]/g, "");
+const getCriterionValue = (productSlug: string, criterionKey: string, criterionLabel: string) => {
+  const product = productBySlug.get(productSlug);
+  if (!product) return "–";
+
+  const normalizedCandidates = new Set([
+    normalizeKey(criterionKey),
+    normalizeKey(criterionLabel)
+  ]);
+  const spec = product.data.specs.find((item) =>
+    normalizedCandidates.has(normalizeKey(item.label))
+  );
+
+  if (spec) {
+    return typeof spec.value === "boolean"
+      ? spec.value ? "Ja" : "Nein"
+      : String(spec.value);
+  }
+
+  const rating = Object.entries(product.data.ratings).find(([key]) =>
+    normalizedCandidates.has(normalizeKey(key))
+  )?.[1];
+
+  return typeof rating === "number" ? `${rating.toFixed(1)} / 5` : "–";
+};
 const breadcrumbs =
   getComparisonBreadcrumbs(entry);
 
@@ -170,11 +201,31 @@ const relatedItems = relatedEntries.map((related) => ({
     {comparison.criteria.length > 0 && (
       <section>
         <h2>{comparison.tableTitle ?? "Vergleichskriterien"}</h2>
-        <ul class="comparison-criteria">
-          {comparison.criteria.map((criterion) => (
-            <li><strong>{criterion.label}</strong>{criterion.description && <p>{criterion.description}</p>}</li>
-          ))}
-        </ul>
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">Kriterium</th>
+                {comparison.items.map((item) => (
+                  <th scope="col">{productBySlug.get(item.slug)?.data.title ?? item.label ?? item.slug}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {comparison.criteria.map((criterion) => (
+                <tr>
+                  <th scope="row">
+                    {criterion.label}
+                    {criterion.description && <small>{criterion.description}</small>}
+                  </th>
+                  {comparison.items.map((item) => (
+                    <td>{getCriterionValue(item.slug, criterion.key, criterion.label)}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     )}
 
@@ -202,8 +253,14 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-items h3 { margin: .5rem 0; }
   .comparison-items p, .comparison-result p { color: #647579; line-height: 1.6; }
   .comparison-items strong { margin-top: auto; padding-top: .8rem; color: #18743b; }
-  .comparison-criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; padding: 0; list-style: none; }
-  .comparison-criteria li { padding: 1rem; border: 1px solid #dce5e3; border-radius: .8rem; }
+  .comparison-table-wrap { width: 100%; overflow-x: auto; border: 1px solid #dce5e3; border-radius: 1rem; background: #fff; }
+  .comparison-table { width: 100%; min-width: 760px; border-collapse: collapse; }
+  .comparison-table th, .comparison-table td { padding: 1rem; border-bottom: 1px solid #e7eeec; text-align: left; vertical-align: top; }
+  .comparison-table thead th { color: #0d302b; background: #f2f8f4; font-size: .78rem; line-height: 1.35; }
+  .comparison-table tbody th { min-width: 150px; color: #0d302b; }
+  .comparison-table tbody td { min-width: 130px; color: #647579; font-size: .92rem; line-height: 1.5; }
+  .comparison-table small { display: block; margin-top: .35rem; color: #647579; font-weight: 400; line-height: 1.4; }
+  .comparison-table tbody tr:last-child th, .comparison-table tbody tr:last-child td { border-bottom: 0; }
   .comparison-result { padding: 2rem; border-radius: 1.2rem; background: rgba(24, 116, 59, .08); }
   .comparison-winner { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: clamp(1.4rem, 4vw, 2.5rem); border: 1px solid rgba(24, 116, 59, .24); border-radius: 1.5rem; background: linear-gradient(145deg, #fff, #eff9f1); box-shadow: 0 18px 48px rgba(20, 32, 26, .08); }
   .comparison-winner img { width: 100%; aspect-ratio: 4 / 3; border-radius: 1.1rem; object-fit: contain; background: #fff; }
@@ -213,5 +270,5 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-winner strong { display: block; margin: 1rem 0; color: #18743b; font-size: 1.1rem; }
   .comparison-winner a { display: inline-flex; padding: .85rem 1.2rem; border-radius: 999px; color: #fff; background: #18743b; font-weight: 900; text-decoration: none; }
   .comparison-content { max-width: 780px; line-height: 1.75; }
-  @media(max-width: 800px) { .comparison-items, .comparison-criteria, .comparison-winner { grid-template-columns: 1fr; } .comparison-winner { padding: 1.2rem; } }
+  @media(max-width: 800px) { .comparison-items, .comparison-winner { grid-template-columns: 1fr; } .comparison-winner { padding: 1.2rem; } .comparison-table th, .comparison-table td { padding: .8rem; } }
 </style>
