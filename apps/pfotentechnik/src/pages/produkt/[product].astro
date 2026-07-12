@@ -1,72 +1,409 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
-import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
-import { products, type ProductKey } from "../../data/products";
-import { DEFAULT_PROJECT, getProjectImage } from "../../data/projectImages";
-import { getProductHeroImage } from "@affiliate-core/utils/productImages";
 import {
+  getCollection,
+  getEntry
+} from "astro:content";
 
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+
+import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+
+import {
+  products,
+  type ProductKey
+} from "../../data/products";
+
+import {
+  DEFAULT_PROJECT,
+  getProjectImage
+} from "../../data/projectImages";
+
+import {
+  getProductHeroImage
+} from "@affiliate-core/utils/productImages";
+
+import {
   getAlternativeRecommendations
-
 } from "@app/domain/productAlternatives";
-export function getStaticPaths() {
-  return Object.entries(products).map(([key, product]) => ({
-    params: { product: product.productUrl.split("/").filter(Boolean).at(-1) },
-    props: { productKey: key as ProductKey }
-  }));
+
+type PageProps = {
+  contentProductId?: string;
+  legacyProductKey?: ProductKey;
+};
+
+const getLegacyProductSlug = (
+  productKey: ProductKey
+) => {
+  const product =
+    products[productKey];
+
+  return product.productUrl
+    .split("/")
+    .filter(Boolean)
+    .at(-1);
+};
+
+const findLegacyProductKeyBySlug = (
+  slug: string
+): ProductKey | undefined => {
+  const entry =
+    (
+      Object.entries(
+        products
+      ) as [
+        ProductKey,
+        (typeof products)[ProductKey]
+      ][]
+    ).find(
+      ([
+        productKey
+      ]) =>
+        getLegacyProductSlug(
+          productKey
+        ) === slug
+    );
+
+  return entry?.[0];
+};
+
+export async function getStaticPaths() {
+  const contentProducts =
+    await getCollection(
+      "products"
+    );
+
+  const contentSlugs =
+    new Set(
+      contentProducts.map(
+        (entry) =>
+          entry.data.slug
+      )
+    );
+
+  const contentPaths =
+    contentProducts.map(
+      (entry) => ({
+        params: {
+          product:
+            entry.data.slug
+        },
+
+        props: {
+          contentProductId:
+            entry.id,
+
+          legacyProductKey:
+  (
+    Object.entries(
+      products
+    ) as [
+      ProductKey,
+      (typeof products)[ProductKey]
+    ][]
+  ).find(
+    ([, product]) =>
+      product.productUrl
+        .split("/")
+        .filter(Boolean)
+        .at(-1) ===
+      entry.data.slug
+  )?.[0]
+        } satisfies PageProps
+      })
+    );
+
+  const legacyPaths =
+    (
+      Object.entries(
+        products
+      ) as [
+        ProductKey,
+        (typeof products)[ProductKey]
+      ][]
+    )
+      .map(
+        ([
+          productKey
+        ]) => {
+         const product =
+  products[productKey];
+
+const slug =
+  product.productUrl
+    .split("/")
+    .filter(Boolean)
+    .at(-1);
+
+          if (
+            !slug ||
+            contentSlugs.has(
+              slug
+            )
+          ) {
+            return null;
+          }
+
+          return {
+            params: {
+              product: slug
+            },
+
+            props: {
+              legacyProductKey:
+                productKey
+            } satisfies PageProps
+          };
+        }
+      )
+      .filter(
+        (
+          path
+        ): path is NonNullable<
+          typeof path
+        > =>
+          path !== null
+      );
+
+  return [
+    ...contentPaths,
+    ...legacyPaths
+  ];
 }
 
-const { productKey } = Astro.props as { productKey: ProductKey };
-const product = products[productKey];
-const alternativeRecommendations =
+const {
+  contentProductId,
+  legacyProductKey:
+    legacyProductKeyFromProps
+} = Astro.props as PageProps;
 
-  getAlternativeRecommendations(
+const contentEntry =
+  contentProductId
+    ? await getEntry(
+        "products",
+        contentProductId
+      )
+    : undefined;
 
-    productKey,
+const contentProduct =
+  contentEntry?.data;
 
-    3
+const currentSlug =
+  Astro.params.product ?? "";
 
+const legacyProductKey =
+  legacyProductKeyFromProps ??
+  findLegacyProductKeyBySlug(
+    currentSlug
   );
-const productHeroImage = getProductHeroImage(
-  product,
-  getProjectImage(DEFAULT_PROJECT, "product"),
-  productKey
-);
 
-const hasApp = (product.ratings.app ?? 0) > 1;
-const supportsWetFood = product.useCases.includes("nassfutter");
-const hasCamera = product.useCases.includes("kamera");
+if (!legacyProductKey) {
+  throw new Error(
+    `Für das Produkt "${currentSlug}" fehlt während der Migration noch die Zuordnung zu products.ts.`
+  );
+}
+
+const legacyProduct =
+  products[
+    legacyProductKey
+  ];
+
+if (!legacyProduct) {
+  throw new Error(
+    `Das Legacy-Produkt "${legacyProductKey}" wurde nicht gefunden.`
+  );
+}
+
+const alternativeRecommendations =
+  getAlternativeRecommendations(
+    legacyProductKey,
+    3
+  );
+
+const legacyHeroImage =
+  getProductHeroImage(
+    legacyProduct,
+    getProjectImage(
+      DEFAULT_PROJECT,
+      "product"
+    ),
+    legacyProductKey
+  );
+
+const pageTitle =
+  contentProduct?.title ??
+  legacyProduct.name;
+
+const pageDescription =
+  contentProduct?.description ??
+  `${legacyProduct.name} im Testbericht: Funktionen, Portionierung, Reinigung, Vorteile, Nachteile und technische Daten verständlich eingeordnet.`;
+
+const seoTitle =
+  contentProduct?.seo?.title ??
+  `${legacyProduct.name} im Test und Vergleich`;
+
+const seoDescription =
+  contentProduct?.seo
+    ?.description ??
+  `${legacyProduct.name} im Testbericht. Einordnung von App, Portionierung, Reinigung, Zuverlässigkeit und Eignung für den Alltag.`;
+
+const canonical =
+  contentProduct?.seo
+    ?.canonical ??
+  legacyProduct.productUrl;
+
+const heroImage =
+  contentProduct?.images
+    ?.hero?.src ??
+  legacyHeroImage.src;
+
+const heroImageAlt =
+  contentProduct?.images
+    ?.hero?.alt ??
+  pageTitle;
+
+const categoryLabel =
+  contentProduct?.category
+    ?.label ??
+  "Futterautomaten";
+
+const categoryHref =
+  contentProduct?.category
+    ?.path ??
+  "/smarte-futterautomaten";
+
+const author =
+  contentProduct?.author ?? {
+    name:
+      "PfotenTechnik Redaktion",
+
+    role:
+      "Redaktion"
+  };
+
+const publishedAt =
+  contentProduct?.publishedAt ??
+  "2026-07-09";
+
+const updatedAt =
+  contentProduct?.updatedAt ??
+  publishedAt;
+
+const productSearchValues = [
+  contentProduct?.useCase,
+  ...(contentProduct?.tags ?? []),
+  ...(contentProduct?.features ??
+    []),
+  ...(
+    contentProduct?.decision
+      ?.bestFor ?? []
+  ),
+  ...(
+    contentProduct?.decision
+      ?.attention ?? []
+  )
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
+
+const hasApp =
+  contentProduct
+    ? (
+        contentProduct.ratings
+          .app ?? 0
+      ) > 1 ||
+      productSearchValues.includes(
+        "app"
+      )
+    : (
+        legacyProduct.ratings
+          .app ?? 0
+      ) > 1;
+
+const supportsWetFood =
+  contentProduct
+    ? [
+        "nassfutter",
+        "wetfood",
+        "wet food",
+        "kühlung",
+        "gekühlt"
+      ].some(
+        (term) =>
+          productSearchValues.includes(
+            term
+          )
+      )
+    : legacyProduct.useCases.includes(
+        "nassfutter"
+      );
+
+const hasCamera =
+  contentProduct
+    ? [
+        "kamera",
+        "camera",
+        "video"
+      ].some(
+        (term) =>
+          productSearchValues.includes(
+            term
+          )
+      )
+    : legacyProduct.useCases.includes(
+        "kamera"
+      );
+
+const brandLabel =
+  contentProduct?.manufacturer
+    ?.name ??
+  legacyProduct.brand;
 
 const everydayCriteria = [
   {
-    title: "App",
+    title:
+      "App",
+
     text: hasApp
-      ? `Die App-Funktionen von ${product.brand} werden nach Zeitplanung, Statusmeldungen und Verständlichkeit eingeordnet. Entscheidend bleibt, ob gespeicherte Abläufe auch bei kurzen Verbindungsproblemen sinnvoll weiterlaufen.`
+      ? `Die App-Funktionen von ${brandLabel} werden nach Zeitplanung, Statusmeldungen und Verständlichkeit eingeordnet. Entscheidend bleibt, ob gespeicherte Abläufe auch bei kurzen Verbindungsproblemen sinnvoll weiterlaufen.`
       : "Dieses Modell arbeitet ohne App. Das reduziert Fernfunktionen, macht die Bedienung aber unabhängig von WLAN, Konto und Cloud-Diensten."
   },
   {
-    title: "Portionierung",
+    title:
+      "Portionierung",
+
     text: supportsWetFood
-      ? "Die Portionen werden vorab auf getrennte Fächer verteilt. Dadurch ist die Menge direkt kontrollierbar; Kühlung und Standzeit müssen trotzdem passend geplant werden."
+      ? "Die Portionen werden vorab auf getrennte Fächer verteilt. Dadurch ist die Menge direkt kontrollierbar. Kühlung und Standzeit müssen trotzdem passend geplant werden."
       : "Förderschritte entsprechen nicht automatisch einem festen Grammgewicht. Die Ausgabe sollte mit dem verwendeten Futter mehrfach nachgewogen und anschließend passend eingestellt werden."
   },
   {
-    title: "Reinigung",
+    title:
+      "Reinigung",
+
     text: supportsWetFood
       ? "Bei Nassfutter sind herausnehmbare Schalen und die Reinigung nach jeder Nutzung besonders wichtig. Auch Deckelränder und Kontaktflächen müssen frei von Resten bleiben."
       : "Napf, Vorratsbehälter und erreichbare Teile des Futterwegs sollten regelmäßig von Krümeln und Futterfett befreit werden."
   },
   {
-    title: "Zuverlässigkeit",
-    text: "Bewertet werden Stromreserve, lokal gespeicherte Zeitpläne und die konstruktive Eignung für die angegebene Futterart. Eine verantwortliche Person sollte die Funktion dennoch regelmäßig kontrollieren."
+    title:
+      "Zuverlässigkeit",
+
+    text:
+      "Bewertet werden Stromreserve, lokal gespeicherte Zeitpläne und die konstruktive Eignung für die angegebene Futterart. Eine verantwortliche Person sollte die Funktion dennoch regelmäßig kontrollieren."
   },
   {
-    title: "Sicherheit",
-    text: "Deckel, Futterauslass und Stand müssen zum Tier passen. Vor längerer Abwesenheit sollte geprüft werden, ob das Tier das Gerät verschieben, öffnen oder blockieren kann."
+    title:
+      "Sicherheit",
+
+    text:
+      "Deckel, Futterauslass und Stand müssen zum Tier passen. Vor längerer Abwesenheit sollte geprüft werden, ob das Tier das Gerät verschieben, öffnen oder blockieren kann."
   },
   {
-    title: "Lautstärke",
+    title:
+      "Lautstärke",
+
     text: supportsWetFood
       ? "Der drehende Deckel ist nur kurz aktiv, kann sensible Tiere anfangs aber irritieren. Eine schrittweise Gewöhnung am vertrauten Futterplatz ist sinnvoll."
       : `Der Motor ist bei jeder Ausgabe kurz hörbar${hasCamera ? "; zusätzliche Kamera- oder Audiofunktionen sollten behutsam eingeführt werden" : ""}. Empfindliche Tiere sollten zunächst bei einzelnen Ausgaben beobachtet werden.`
@@ -74,81 +411,181 @@ const everydayCriteria = [
 ];
 
 const internalLinks = [
-  { href: "/smarte-futterautomaten", label: "Smarte Futterautomaten im Vergleich" },
-  { href: "/futterautomat-katze", label: "Futterautomaten für Katzen" },
-  { href: "/futterautomat-hund", label: "Futterautomaten für Hunde" },
-  { href: "/futterautomat-mit-app", label: "Futterautomaten mit App" },
-  { href: "/futterautomat-mit-kamera", label: "Futterautomaten mit Kamera" }
+  {
+    href:
+      "/smarte-futterautomaten",
+
+    label:
+      "Smarte Futterautomaten im Vergleich"
+  },
+  {
+    href:
+      "/futterautomat-katze",
+
+    label:
+      "Futterautomaten für Katzen"
+  },
+  {
+    href:
+      "/futterautomat-hund",
+
+    label:
+      "Futterautomaten für Hunde"
+  },
+  {
+    href:
+      "/futterautomat-mit-app",
+
+    label:
+      "Futterautomaten mit App"
+  },
+  {
+    href:
+      "/futterautomat-mit-kamera",
+
+    label:
+      "Futterautomaten mit Kamera"
+  }
 ];
 ---
 
 <ProjectLayout
-  title={`${product.name} Testbericht`}
-  seoTitle={`${product.name} im Test und Vergleich`}
-  description={`${product.name} im Testbericht: Funktionen, Portionierung, Reinigung, Vorteile, Nachteile und technische Daten verständlich eingeordnet.`}
-  seoDescription={`${product.name} im Testbericht. Einordnung von App, Portionierung, Reinigung, Zuverlässigkeit und Eignung für den Alltag.`}
-  canonical={product.productUrl}
-  ogImage={productHeroImage.src}
-  author={{ name: "PfotenTechnik Redaktion", role: "Redaktion" }}
-  publishedAt="2026-07-09"
-  updatedAt="2026-07-09"
-  categoryLabel="Futterautomaten"
+  title={`${pageTitle} Testbericht`}
+  seoTitle={seoTitle}
+  description={pageDescription}
+  seoDescription={seoDescription}
+  canonical={canonical}
+  ogImage={heroImage}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  categoryLabel={categoryLabel}
   schemaType="article"
 >
   <Breadcrumbs
-    categoryLabel="Futterautomaten"
-    categoryHref="/smarte-futterautomaten"
-    title={product.name}
+    categoryLabel={categoryLabel}
+    categoryHref={categoryHref}
+    title={pageTitle}
   />
 
   <main class="product-detail pt-product-detail">
- <ProductReview
-  productKey={productKey}
-  alternativeRecommendations={
-    alternativeRecommendations
-  }
-/>
+    <ProductReview
+      productKey={
+        legacyProductKey
+      }
+      alternativeRecommendations={
+        alternativeRecommendations
+      }
+    />
 
-    <section class="pt-review-method" aria-labelledby="pt-review-method-title">
-      <span>Redaktionelle Einordnung</span>
-      <h2 id="pt-review-method-title">So ist dieser Testbericht entstanden</h2>
+    <section
+      class="pt-review-method"
+      aria-labelledby="pt-review-method-title"
+    >
+      <span>
+        Redaktionelle Einordnung
+      </span>
+
+      <h2 id="pt-review-method-title">
+        So ist dieser Testbericht entstanden
+      </h2>
+
       <p>
-        Die Bewertung basiert auf technischen Daten, aktuellen Herstellerinformationen und einheitlichen Vergleichskriterien. Sie ist eine redaktionelle Alltagseinordnung und behauptet keinen mehrmonatigen Praxistest.
+        Die Bewertung basiert auf technischen Daten,
+        aktuellen Herstellerinformationen und einheitlichen
+        Vergleichskriterien. Sie ist eine redaktionelle
+        Alltagseinordnung und behauptet keinen mehrmonatigen
+        Praxistest.
       </p>
     </section>
 
-    <section class="pt-everyday-review" aria-labelledby="pt-everyday-review-title">
+    <section
+      class="pt-everyday-review"
+      aria-labelledby="pt-everyday-review-title"
+    >
       <header>
-        <span>Alltagstest</span>
-        <h2 id="pt-everyday-review-title">Die wichtigsten Kriterien im Alltag</h2>
-        <p>Diese Punkte zeigen, worauf es bei Einrichtung, Fütterung und laufender Kontrolle ankommt.</p>
+        <span>
+          Alltagstest
+        </span>
+
+        <h2 id="pt-everyday-review-title">
+          Die wichtigsten Kriterien im Alltag
+        </h2>
+
+        <p>
+          Diese Punkte zeigen, worauf es bei Einrichtung,
+          Fütterung und laufender Kontrolle ankommt.
+        </p>
       </header>
 
       <div class="pt-everyday-review-grid">
-        {everydayCriteria.map((criterion) => (
-          <article>
-            <h3>{criterion.title}</h3>
-            <p>{criterion.text}</p>
-          </article>
-        ))}
+        {
+          everydayCriteria.map(
+            (criterion) => (
+              <article>
+                <h3>
+                  {
+                    criterion.title
+                  }
+                </h3>
+
+                <p>
+                  {
+                    criterion.text
+                  }
+                </p>
+              </article>
+            )
+          )
+        }
       </div>
     </section>
 
-    <aside class="pt-product-health" aria-labelledby="pt-product-health-title">
-      <span>Gesundheitshinweis</span>
+    <aside
+      class="pt-product-health"
+      aria-labelledby="pt-product-health-title"
+    >
+      <span>
+        Gesundheitshinweis
+      </span>
+
       <div>
-        <h2 id="pt-product-health-title">Routinen unterstützen, Veränderungen beobachten</h2>
+        <h2 id="pt-product-health-title">
+          Routinen unterstützen, Veränderungen beobachten
+        </h2>
+
         <p>
-          Ein Futterautomat unterstützt Routinen, ersetzt aber keine tierärztliche Einschätzung. Auffällige Veränderungen bei Futteraufnahme, Verhalten oder Wohlbefinden müssen persönlich geprüft und gegebenenfalls fachlich abgeklärt werden.
+          Ein Futterautomat unterstützt Routinen, ersetzt
+          aber keine tierärztliche Einschätzung. Auffällige
+          Veränderungen bei Futteraufnahme, Verhalten oder
+          Wohlbefinden müssen persönlich geprüft und
+          gegebenenfalls fachlich abgeklärt werden.
         </p>
       </div>
     </aside>
 
-    <section class="pt-product-links" aria-labelledby="pt-product-links-title">
-      <span>Weiterlesen</span>
-      <h2 id="pt-product-links-title">Passende Vergleiche und Ratgeber</h2>
+    <section
+      class="pt-product-links"
+      aria-labelledby="pt-product-links-title"
+    >
+      <span>
+        Weiterlesen
+      </span>
+
+      <h2 id="pt-product-links-title">
+        Passende Vergleiche und Ratgeber
+      </h2>
+
       <div>
-        {internalLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+        {
+          internalLinks.map(
+            (link) => (
+              <a href={link.href}>
+                {link.label}
+              </a>
+            )
+          )
+        }
       </div>
     </section>
   </main>
