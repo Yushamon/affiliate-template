@@ -2,22 +2,20 @@
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 
 import {
-  manufacturers
-} from "../../data/manufacturers";
+  getContentByHub
+} from "@app/domain/content";
 
-const sortedManufacturers =
-  [...manufacturers].sort(
-    (a, b) =>
-      (b.rating ?? 0) -
-      (a.rating ?? 0)
+const manufacturers =
+  await getContentByHub(
+    "hersteller"
   );
 ---
 
 <ProjectLayout
   title="Hersteller für smarte Haustiertechnik"
-  seoTitle="Hersteller für smarte Haustiertechnik im Überblick"
-  description="Alle Hersteller im Überblick mit Bewertungen, Erfahrungen und Produktempfehlungen."
-  canonical="/hersteller"
+  seoTitle="Hersteller im Überblick"
+  description="Alle Hersteller für smarte Haustiertechnik mit Bewertungen, Produktschwerpunkten und Erfahrungen."
+  canonical="/hersteller/"
 >
 
 <section class="manufacturer-hub-hero">
@@ -31,68 +29,103 @@ const sortedManufacturers =
   </h1>
 
   <p>
-    Nicht jede Marke verfolgt dieselbe Philosophie.
-    Manche Hersteller überzeugen durch App-Funktionen,
-    andere durch RFID-Technik, Nassfutterlösungen oder
-    ein besonders gutes Preis-Leistungs-Verhältnis.
+    Jede Marke setzt andere Schwerpunkte.
+    Manche Hersteller konzentrieren sich auf
+    Kamera und App, andere auf RFID,
+    Nassfutter oder besonders einfache Bedienung.
   </p>
 
 </section>
 
-<section class="manufacturer-hub-grid">
+<div
+  class="manufacturer-divider"
+  aria-hidden="true"
+>
+  <span></span>
+  <strong>🐾</strong>
+  <span></span>
+</div>
+
+<section class="manufacturer-grid">
 
   {
-    sortedManufacturers.map((manufacturer) => (
+    manufacturers.map(
+      (manufacturer) => (
 
-      <a
-        class="manufacturer-hub-card"
-        href={`/hersteller/${manufacturer.slug}`}
-      >
-
-        <div class="manufacturer-hub-image">
-
-          <img
-            src={`/images/manufacturers/${manufacturer.slug}/hero.webp`}
-            alt={manufacturer.name}
-            loading="lazy"
-            decoding="async"
-          />
-
-        </div>
-
-        <div class="manufacturer-hub-content">
-
-          <span>
-            Herstellerprofil
-          </span>
-
-          <h2>
-            {manufacturer.name}
-          </h2>
-
-          <p>
-            {manufacturer.description}
-          </p>
+        <a
+          class="manufacturer-card"
+          href={manufacturer.href}
+        >
 
           {
-            manufacturer.rating && (
+            manufacturer.image && (
 
-              <strong>
+              <div class="manufacturer-card-image">
 
-                {manufacturer.rating.toFixed(1)}
+                <img
+                  src={manufacturer.image}
+                  alt={manufacturer.title}
+                  loading="lazy"
+                  decoding="async"
+                />
 
-                {" / 5"}
-
-              </strong>
+              </div>
 
             )
           }
 
-        </div>
+          <div class="manufacturer-card-content">
 
-      </a>
+            <span class="manufacturer-card-eyebrow">
 
-    ))
+              {manufacturer.icon ?? "🏭"}
+
+              Hersteller
+
+            </span>
+
+            <h2>
+
+              {manufacturer.hubTitle}
+
+            </h2>
+
+            <p>
+
+              {manufacturer.hubDescription}
+
+            </p>
+
+            {
+              manufacturer.rating && (
+
+                <div class="manufacturer-rating">
+
+                  ⭐
+
+                  {manufacturer.rating.toFixed(1)}
+
+                  {" / 5"}
+
+                </div>
+
+              )
+            }
+
+            <span class="manufacturer-link">
+
+              Hersteller ansehen
+
+              →
+
+            </span>
+
+          </div>
+
+        </a>
+
+      )
+    )
   }
 
 </section>
@@ -103,7 +136,7 @@ const sortedManufacturers =
 
 .manufacturer-hub-hero{
 
-max-width:900px;
+max-width:860px;
 
 margin:0 auto 3rem;
 
@@ -113,19 +146,19 @@ text-align:center;
 
 .manufacturer-hub-eyebrow{
 
-display:inline-block;
+display:inline-flex;
 
-margin-bottom:.5rem;
+margin-bottom:.6rem;
 
-font-size:.8rem;
+color:#18743b;
 
-font-weight:800;
+font-size:.78rem;
+
+font-weight:900;
 
 letter-spacing:.08em;
 
 text-transform:uppercase;
-
-color:var(--accent-color,#18743b);
 
 }
 
@@ -133,9 +166,11 @@ color:var(--accent-color,#18743b);
 
 margin:0 0 1rem;
 
-font-size:clamp(2.6rem,6vw,4.5rem);
+font-size:clamp(2.8rem,6vw,4.8rem);
 
 line-height:1;
+
+letter-spacing:-.05em;
 
 }
 
@@ -145,23 +180,57 @@ max-width:60ch;
 
 margin:0 auto;
 
-line-height:1.7;
+line-height:1.75;
 
-color:var(--text-muted,#647579);
+color:#647579;
 
 }
 
-.manufacturer-hub-grid{
+.manufacturer-divider{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+width:min(34rem,calc(100vw - 3rem));
+
+margin:3rem auto;
+
+grid-template-columns:minmax(2rem,1fr) auto minmax(2rem,1fr);
+
+align-items:center;
+
+gap:1rem;
+
+color:#18743b;
+
+}
+
+.manufacturer-divider span{
+
+height:1px;
+
+background:currentColor;
+
+opacity:.3;
+
+}
+
+.manufacturer-divider strong{
+
+font-size:1.5rem;
+
+}
+
+.manufacturer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
 
 gap:1.5rem;
 
 }
 
-.manufacturer-hub-card{
+.manufacturer-card{
 
 display:flex;
 
@@ -169,9 +238,9 @@ flex-direction:column;
 
 overflow:hidden;
 
-border:1px solid var(--border-color,#dce5e3);
+border:1px solid #dce5e3;
 
-border-radius:1.25rem;
+border-radius:1.3rem;
 
 background:#fff;
 
@@ -179,29 +248,31 @@ text-decoration:none;
 
 color:inherit;
 
-transition:.2s;
+transition:.18s;
+
+box-shadow:0 12px 30px rgba(13,48,43,.05);
 
 }
 
-.manufacturer-hub-card:hover{
+.manufacturer-card:hover{
 
 transform:translateY(-4px);
 
-box-shadow:0 18px 40px rgba(0,0,0,.08);
+box-shadow:0 18px 40px rgba(13,48,43,.09);
 
 }
 
-.manufacturer-hub-image{
+.manufacturer-card-image{
 
 aspect-ratio:16/9;
 
 overflow:hidden;
 
-background:#f6f8f7;
+background:#f7f8f7;
 
 }
 
-.manufacturer-hub-image img{
+.manufacturer-card-image img{
 
 width:100%;
 
@@ -211,49 +282,89 @@ object-fit:cover;
 
 }
 
-.manufacturer-hub-content{
+.manufacturer-card-content{
+
+display:flex;
 
 padding:1.4rem;
 
+flex:1;
+
+flex-direction:column;
+
 }
 
-.manufacturer-hub-content span{
+.manufacturer-card-eyebrow{
 
-display:block;
+display:inline-flex;
 
-margin-bottom:.5rem;
+align-items:center;
 
-font-size:.75rem;
+gap:.45rem;
 
-font-weight:800;
+margin-bottom:.7rem;
+
+font-size:.72rem;
+
+font-weight:900;
 
 letter-spacing:.08em;
 
 text-transform:uppercase;
 
-color:var(--accent-color,#18743b);
+color:#18743b;
 
 }
 
-.manufacturer-hub-content h2{
+.manufacturer-card-content h2{
 
-margin:0 0 .75rem;
+margin:0 0 .8rem;
 
-}
+font-size:1.7rem;
 
-.manufacturer-hub-content p{
-
-margin:0 0 1rem;
-
-color:var(--text-muted,#647579);
-
-line-height:1.6;
+line-height:1.2;
 
 }
 
-.manufacturer-hub-content strong{
+.manufacturer-card-content p{
 
-color:var(--accent-color,#18743b);
+margin:0;
+
+color:#647579;
+
+line-height:1.65;
+
+}
+
+.manufacturer-rating{
+
+margin-top:1rem;
+
+font-weight:800;
+
+color:#18743b;
+
+}
+
+.manufacturer-link{
+
+margin-top:auto;
+
+padding-top:1.4rem;
+
+font-weight:800;
+
+color:#0f5a2b;
+
+}
+
+@media(max-width:760px){
+
+.manufacturer-grid{
+
+grid-template-columns:1fr;
+
+}
 
 }
 
