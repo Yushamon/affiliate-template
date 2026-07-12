@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomaten für Katzen"
+  description: "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen."
+  icon: "📖"
+  order: 300
 hubPriority: 90
 project: "pfotentechnik"
 heroImageKey: "feederHero"

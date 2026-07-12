@@ -20,6 +20,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten mit Akku"
+  description: "Welche Futterautomaten funktionieren auch bei Stromausfall? Unsere Empfehlungen mit Akku oder Batterie-Backup."
+  icon: "📖"
+  order: 190
 
 decisionKey: "akku"
 

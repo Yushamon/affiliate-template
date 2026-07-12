@@ -17,6 +17,13 @@ author:
   role: "Redaktion"
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Smarte Futterautomaten"
+  description: "Smarte Futterautomaten helfen, Hunde und Katzen zuverlässig, planbar und per App zu füttern."
+  icon: "📖"
+  order: 360
 hubPriority: 100
 project: "pfotentechnik"
 heroImageKey: "feederHero"

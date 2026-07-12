@@ -17,6 +17,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten für kleine Hunde"
+  description: "Welche Futterautomaten eignen sich besonders für kleine Hunde? Unsere Empfehlungen für präzise Portionierung, zuverlässige Fütterung und einfache Bedienung."
+  icon: "📖"
+  order: 130
 
 decisionKey: "kleineHunde"
 

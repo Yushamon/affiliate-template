@@ -12,6 +12,13 @@ author:
   role: "Redaktion"
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+hub:
+  sections:
+    - "wissen"
+  title: "Smarte Gadgets für Hunde und Katzen: ein erster Überblick"
+  description: "Welche vernetzten Helfer im Haustieralltag sinnvoll sein können und worauf Halter vor dem Kauf achten sollten."
+  icon: "📖"
+  order: 370
 ---
 
 ## Technik sollte ein konkretes Problem lösen

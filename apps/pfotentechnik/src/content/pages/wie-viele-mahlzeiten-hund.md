@@ -11,6 +11,13 @@ tags: ["Hund", "Mahlzeiten", "Fütterung", "Futterautomat"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Wie viele Mahlzeiten braucht ein Hund?"
+  description: "Mahlzeiten für Hunde nach Lebensphase, Tagesration, Verhalten und gesundheitlicher Situation sinnvoll planen."
+  icon: "📖"
+  order: 400
 hubPriority: 66
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

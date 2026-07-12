@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Ohne WLAN", "Datenschutz", "Offline"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat ohne WLAN"
+  description: "Futterautomaten ohne WLAN nach Zeitsteuerung, Batterie, Bedienung und Ausfallsicherheit auswählen."
+  icon: "📖"
+  order: 340
 hubPriority: 68
 project: "pfotentechnik"
 heroImageKey: "inline"

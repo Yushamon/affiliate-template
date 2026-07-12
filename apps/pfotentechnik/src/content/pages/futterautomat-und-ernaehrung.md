@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Ernährung", "Tagesration", "Fütterung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat und Ernährung"
+  description: "Wie sich Futterart, Tagesration, Portionierung und Fütterungsrhythmus sinnvoll mit einem Futterautomaten verbinden lassen."
+  icon: "📖"
+  order: 350
 hubPriority: 72
 project: "pfotentechnik"
 heroImageKey: "feederWetFood"

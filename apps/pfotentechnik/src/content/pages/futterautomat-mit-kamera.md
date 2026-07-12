@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Kamera", "App"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomaten mit Kamera"
+  description: "Futterautomaten mit Kamera vergleichen: Livebild, Nachtsicht, Audio, Datenschutz und zuverlässige Futterausgabe."
+  icon: "📖"
+  order: 320
 hubPriority: 85
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

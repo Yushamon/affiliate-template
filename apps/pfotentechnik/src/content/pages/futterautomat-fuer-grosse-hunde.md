@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Große Hunde", "Portionierung", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat für große Hunde"
+  description: "Futterautomaten für große Hunde nach Portionsmenge, Napf, Stabilität und sicherem Zugang beurteilen."
+  icon: "📖"
+  order: 250
 hubPriority: 63
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

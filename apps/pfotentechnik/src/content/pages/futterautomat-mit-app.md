@@ -11,6 +11,13 @@ tags: ["Futterautomat", "App", "Smart Home"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomaten mit App"
+  description: "Futterautomaten mit App vergleichen: Zeitpläne, Protokolle, Offline-Betrieb, Benachrichtigungen und Portionierung."
+  icon: "📖"
+  order: 310
 hubPriority: 84
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

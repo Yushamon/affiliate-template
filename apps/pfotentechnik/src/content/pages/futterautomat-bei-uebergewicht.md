@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Übergewicht", "Gewichtsmanagement", "Portionierung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat bei Übergewicht"
+  description: "Wie Futterautomaten einen tierärztlich begleiteten Gewichtsplan durch kleine, nachvollziehbare Portionen unterstützen können."
+  icon: "📖"
+  order: 240
 hubPriority: 69
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

@@ -14,6 +14,7 @@ updatedAt: "2026-07-09"
 hub:
   sections:
     - "vergleiche"
+    - "wissen"
   title: "Beste Futterautomaten für Katzen"
   description: "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten."
   icon: "🐈"

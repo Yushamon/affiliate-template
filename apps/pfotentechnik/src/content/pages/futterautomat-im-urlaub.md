@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Urlaub", "Betreuung", "Ausfallsicherheit"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat im Urlaub"
+  description: "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests, Notfallplan und Futterreserve einsetzen."
+  icon: "📖"
+  order: 290
 hubPriority: 71
 project: "pfotentechnik"
 heroImageKey: "feederHero"

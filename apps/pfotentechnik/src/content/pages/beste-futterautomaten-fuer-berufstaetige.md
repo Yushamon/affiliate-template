@@ -20,6 +20,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten für Berufstätige"
+  description: "Welche Futterautomaten eignen sich für Berufstätige? Unsere Empfehlungen für zuverlässige Fütterung während der Arbeitszeit."
+  icon: "📖"
+  order: 100
 
 decisionKey: "berufstaetige"
 

@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Kaufberatung", "Katze", "Hund"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Welcher Futterautomat ist der richtige?"
+  description: "Futterautomaten systematisch nach Tier, Futterart, Portionierung, Betreuung und Technik auswählen."
+  icon: "📖"
+  order: 380
 hubPriority: 73
 project: "pfotentechnik"
 heroImageKey: "guide"

@@ -14,6 +14,7 @@ updatedAt: "2026-07-09"
 hub:
   sections:
     - "vergleiche"
+    - "wissen"
   title: "Beste Futterautomaten für zwei Katzen"
   description: "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang."
   icon: "🐾"

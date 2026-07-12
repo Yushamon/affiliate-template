@@ -19,6 +19,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten unter 100 Euro"
+  description: "Welche Futterautomaten unter 100 Euro bieten das beste Preis-Leistungs-Verhältnis? Unsere Empfehlungen im Vergleich."
+  icon: "📖"
+  order: 230
 
 decisionKey: "unter100"
 

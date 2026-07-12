@@ -11,6 +11,13 @@ tags: ["Katze", "Mahlzeiten", "Fütterung", "Futterautomat"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Wie viele Mahlzeiten braucht eine Katze?"
+  description: "Mahlzeiten für Katzen nach Tagesration, Verhalten, Lebensphase und Mehrkatzenhaushalt sinnvoll verteilen."
+  icon: "📖"
+  order: 410
 hubPriority: 67
 project: "pfotentechnik"
 heroImageKey: "feederHero"

@@ -19,6 +19,13 @@ author:
 
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-10"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomaten für Hunde"
+  description: "Futterautomaten für Hunde nach Größe, Portionierung, Standfestigkeit und App-Funktionen vergleichen."
+  icon: "📖"
+  order: 280
 
 hubPriority: 90
 project: "pfotentechnik"

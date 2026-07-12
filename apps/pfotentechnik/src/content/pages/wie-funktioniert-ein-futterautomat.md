@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Funktionsweise", "Portionierung", "Grundlagen"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Wie funktioniert ein Futterautomat?"
+  description: "Aufbau, Portionierung, Zeitsteuerung und Grenzen automatischer Futterspender verständlich erklärt."
+  icon: "📖"
+  order: 390
 hubPriority: 74
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

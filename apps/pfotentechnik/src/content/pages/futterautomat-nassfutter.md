@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Nassfutter", "Katze"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomaten für Nassfutter"
+  description: "Futterautomaten für Nassfutter richtig auswählen: Fachsysteme, Kühlakkus, Hygiene, Standzeiten und Grenzen."
+  icon: "📖"
+  order: 330
 hubPriority: 83
 project: "pfotentechnik"
 heroImageKey: "feederWetFood"

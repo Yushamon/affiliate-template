@@ -15,6 +15,13 @@ tags:
   - kaufberatung
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten für Welpen"
+  description: "Welche automatischen Futterautomaten eignen sich für Welpen? Unsere Empfehlungen für kleine Portionen, zuverlässige Fütterung und App-Steuerung."
+  icon: "📖"
+  order: 170
 decisionKey: "welpen"
 heroImage: "/images/pages/beste-futterautomaten-fuer-welpen/hero.webp"
 heroImageKey: "hero"

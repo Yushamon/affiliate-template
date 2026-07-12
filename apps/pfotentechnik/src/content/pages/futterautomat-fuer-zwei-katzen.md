@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Zwei Katzen", "Mehrkatzenhaushalt", "Fütterung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat für zwei Katzen"
+  description: "Futterautomaten für zwei Katzen nach Zugang, Futterplätzen, Portionen und Konkurrenzverhalten planen."
+  icon: "📖"
+  order: 260
 hubPriority: 70
 project: "pfotentechnik"
 heroImageKey: "feederHero"

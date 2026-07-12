@@ -19,6 +19,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten für Seniorenkatzen"
+  description: "Welche Futterautomaten eignen sich für ältere Katzen? Unsere Empfehlungen für regelmäßige Fütterung, kleine Portionen und einfache Reinigung."
+  icon: "📖"
+  order: 160
 
 decisionKey: "seniorenkatzen"
 

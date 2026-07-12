@@ -14,6 +14,7 @@ updatedAt: "2026-07-09"
 hub:
   sections:
     - "vergleiche"
+    - "wissen"
   title: "Beste Futterautomaten ohne WLAN"
   description: "Einfache und unabhängige Lösungen ohne App oder Cloud."
   icon: "📴"

@@ -14,6 +14,7 @@ updatedAt: "2026-07-09"
 hub:
   sections:
     - "vergleiche"
+    - "wissen"
   title: "Beste Futterautomaten für Hunde"
   description: "Automaten mit passenden Portionsgrößen, stabiler Bauweise und ausreichender Kapazität."
   icon: "🐕"

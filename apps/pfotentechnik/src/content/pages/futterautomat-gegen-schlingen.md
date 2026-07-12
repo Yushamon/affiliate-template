@@ -20,6 +20,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Futterautomat gegen Schlingen"
+  description: "Welche Futterautomaten helfen Hunden und Katzen, langsamer zu fressen? Unsere Empfehlungen und Alternativen."
+  icon: "📖"
+  order: 270
 
 decisionKey: "gegenSchlingen"
 

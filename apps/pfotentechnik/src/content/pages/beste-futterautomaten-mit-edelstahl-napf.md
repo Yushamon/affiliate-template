@@ -20,6 +20,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten mit Edelstahlnapf"
+  description: "Welche Futterautomaten mit Edelstahlnapf sind besonders hygienisch? Unsere Empfehlungen im Vergleich."
+  icon: "📖"
+  order: 200
 
 decisionKey: "edelstahlNapf"
 

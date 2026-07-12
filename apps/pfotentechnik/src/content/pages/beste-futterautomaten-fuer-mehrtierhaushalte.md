@@ -19,6 +19,13 @@ tags:
 
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "wissen"
+  title: "Beste Futterautomaten für Mehrtierhaushalte"
+  description: "Welche Futterautomaten eignen sich für Haushalte mit mehreren Hunden oder Katzen? Unsere Empfehlungen im Vergleich."
+  icon: "📖"
+  order: 140
 
 decisionKey: "mehrtierhaushalte"
 
