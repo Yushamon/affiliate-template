@@ -1,7 +1,6 @@
-import {
-  products,
-  type ProductKey
-} from "@app/data/products";
+import type {
+  CollectionEntry
+} from "astro:content";
 
 import type {
   AlternativeRecommendation
@@ -11,38 +10,29 @@ import {
   getFutterautomatenAlternatives
 } from "./categories/futterautomaten";
 
-export const getAlternativeRecommendations =
-  (
-    currentProductKey: ProductKey,
-    limit = 3
-  ): AlternativeRecommendation[] => {
-    const product =
-      products[currentProductKey];
+export type ProductEntry =
+  CollectionEntry<"products">;
 
-    if (!product) {
-      return [];
-    }
+export const getAlternativeRecommendations = (
+  currentProduct: ProductEntry,
+  products: ProductEntry[],
+  limit = 3
+): AlternativeRecommendation[] => {
+  const category =
+    currentProduct.data.category.key
+      .toLowerCase()
+      .trim();
 
-    const category =
-      String(
-        product.category ?? ""
-      )
-        .toLowerCase()
-        .trim();
+  if (
+    category.includes("futterautomat") ||
+    category.includes("fütter")
+  ) {
+    return getFutterautomatenAlternatives(
+      currentProduct,
+      products,
+      limit
+    );
+  }
 
-    if (
-      category.includes(
-        "futterautomat"
-      ) ||
-      category.includes(
-        "fütter"
-      )
-    ) {
-      return getFutterautomatenAlternatives(
-        currentProductKey,
-        limit
-      );
-    }
-
-    return [];
-  };
+  return [];
+};

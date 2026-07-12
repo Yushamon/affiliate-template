@@ -11,61 +11,11 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 
 import {
-  products,
-  type ProductKey
-} from "../../data/products";
-
-import {
-  DEFAULT_PROJECT,
-  getProjectImage
-} from "../../data/projectImages";
-
-import {
-  getProductHeroImage
-} from "@affiliate-core/utils/productImages";
-
-import {
   getAlternativeRecommendations
 } from "@app/domain/productAlternatives";
 
 type PageProps = {
-  contentProductId?: string;
-  legacyProductKey?: ProductKey;
-};
-
-const getLegacyProductSlug = (
-  productKey: ProductKey
-) => {
-  const product =
-    products[productKey];
-
-  return product.productUrl
-    .split("/")
-    .filter(Boolean)
-    .at(-1);
-};
-
-const findLegacyProductKeyBySlug = (
-  slug: string
-): ProductKey | undefined => {
-  const entry =
-    (
-      Object.entries(
-        products
-      ) as [
-        ProductKey,
-        (typeof products)[ProductKey]
-      ][]
-    ).find(
-      ([
-        productKey
-      ]) =>
-        getLegacyProductSlug(
-          productKey
-        ) === slug
-    );
-
-  return entry?.[0];
+  contentProductId: string;
 };
 
 export async function getStaticPaths() {
@@ -74,198 +24,73 @@ export async function getStaticPaths() {
       "products"
     );
 
-  const contentSlugs =
-    new Set(
-      contentProducts.map(
-        (entry) =>
-          entry.data.slug
-      )
-    );
-
-  const contentPaths =
-    contentProducts.map(
-      (entry) => ({
-        params: {
-          product:
-            entry.data.slug
-        },
-
-        props: {
-          contentProductId:
-            entry.id,
-
-          legacyProductKey:
-  (
-    Object.entries(
-      products
-    ) as [
-      ProductKey,
-      (typeof products)[ProductKey]
-    ][]
-  ).find(
-    ([, product]) =>
-      product.productUrl
-        .split("/")
-        .filter(Boolean)
-        .at(-1) ===
-      entry.data.slug
-  )?.[0]
-        } satisfies PageProps
-      })
-    );
-
-  const legacyPaths =
-    (
-      Object.entries(
-        products
-      ) as [
-        ProductKey,
-        (typeof products)[ProductKey]
-      ][]
-    )
-      .map(
-        ([
-          productKey
-        ]) => {
-         const product =
-  products[productKey];
-
-const slug =
-  product.productUrl
-    .split("/")
-    .filter(Boolean)
-    .at(-1);
-
-          if (
-            !slug ||
-            contentSlugs.has(
-              slug
-            )
-          ) {
-            return null;
-          }
-
-          return {
-            params: {
-              product: slug
-            },
-
-            props: {
-              legacyProductKey:
-                productKey
-            } satisfies PageProps
-          };
-        }
-      )
-      .filter(
-        (
-          path
-        ): path is NonNullable<
-          typeof path
-        > =>
-          path !== null
-      );
-
-  return [
-    ...contentPaths,
-    ...legacyPaths
-  ];
+  return contentProducts.map(
+    (entry) => ({
+      params: {
+        product: entry.data.slug
+      },
+      props: {
+        contentProductId: entry.id
+      } satisfies PageProps
+    })
+  );
 }
 
-const {
-  contentProductId,
-  legacyProductKey:
-    legacyProductKeyFromProps
-} = Astro.props as PageProps;
+const { contentProductId } =
+  Astro.props as PageProps;
 
 const contentEntry =
-  contentProductId
-    ? await getEntry(
-        "products",
-        contentProductId
-      )
-    : undefined;
+  await getEntry(
+    "products",
+    contentProductId
+  );
+
+if (!contentEntry) {
+  throw new Error(
+    `Das Content-Produkt "${contentProductId}" wurde nicht gefunden.`
+  );
+}
 
 const contentProduct =
-  contentEntry?.data;
+  contentEntry.data;
 
-const currentSlug =
-  Astro.params.product ?? "";
-
-const legacyProductKey =
-  legacyProductKeyFromProps ??
-  findLegacyProductKeyBySlug(
-    currentSlug
-  );
-
-if (!legacyProductKey) {
-  throw new Error(
-    `Für das Produkt "${currentSlug}" fehlt während der Migration noch die Zuordnung zu products.ts.`
-  );
-}
-
-const legacyProduct =
-  products[
-    legacyProductKey
-  ];
-
-if (!legacyProduct) {
-  throw new Error(
-    `Das Legacy-Produkt "${legacyProductKey}" wurde nicht gefunden.`
-  );
-}
+const allProducts =
+  await getCollection("products");
 
 const alternativeRecommendations =
   getAlternativeRecommendations(
-    legacyProductKey,
+    contentEntry,
+    allProducts,
     3
   );
 
-const legacyHeroImage =
-  getProductHeroImage(
-    legacyProduct,
-    getProjectImage(
-      DEFAULT_PROJECT,
-      "product"
-    ),
-    legacyProductKey
-  );
-
 const pageTitle =
-  contentProduct?.title ??
-  legacyProduct.name;
+  contentProduct.title;
 
 const pageDescription =
-  contentProduct?.description ??
-  `${legacyProduct.name} im Testbericht: Funktionen, Portionierung, Reinigung, Vorteile, Nachteile und technische Daten verständlich eingeordnet.`;
+  contentProduct.description;
 
 const seoTitle =
-  contentProduct?.seo?.title ??
-  `${legacyProduct.name} im Test und Vergleich`;
+  contentProduct.seo?.title ??
+  `${contentProduct.title} im Test und Vergleich`;
 
 const seoDescription =
-  contentProduct?.seo
-    ?.description ??
-  `${legacyProduct.name} im Testbericht. Einordnung von App, Portionierung, Reinigung, Zuverlässigkeit und Eignung für den Alltag.`;
+  contentProduct.seo?.description ??
+  contentProduct.description;
 
 const canonical =
-  contentProduct?.seo
-    ?.canonical ??
-  legacyProduct.productUrl;
+  contentProduct.seo?.canonical ??
+  contentProduct.productUrl ??
+  `/produkt/${contentProduct.slug}/`;
 
 const heroImage =
-  contentProduct?.images
-    ?.hero?.src ??
-  legacyHeroImage.src;
+  contentProduct.images.hero.src;
 
 const heroImageAlt =
-  contentProduct?.images
-    ?.hero?.alt ??
+  contentProduct.images.hero.alt ??
   pageTitle;
 
-const reviewProduct =
-  contentProduct
-    ? {
+const reviewProduct = {
         name: contentProduct.title,
         manufacturerLabel:
           contentProduct.manufacturer.name,
@@ -306,61 +131,17 @@ const reviewProduct =
         },
         affiliate:
           contentProduct.affiliate
-      }
-    : {
-        name: legacyProduct.name,
-        manufacturerLabel:
-          legacyProduct.manufacturerLabel,
-        category:
-          legacyProduct.category,
-        recommendation:
-          legacyProduct.recommendation,
-        rating: legacyProduct.rating,
-        score:
-          legacyProduct.ranking.overall,
-        capacity:
-          legacyProduct.capacity,
-        expandable:
-          legacyProduct.expandable,
-        useCase:
-          legacyProduct.useCase,
-        pros: legacyProduct.pros,
-        cons: legacyProduct.cons,
-        bestFor: legacyProduct.bestFor,
-        notFor: legacyProduct.notFor,
-        ratings: legacyProduct.ratings,
-        specs: legacyProduct.specs,
-        review: legacyProduct.review,
-        images: {
-          hero: {
-            src: legacyHeroImage.src,
-            alt:
-              legacyHeroImage.alt ??
-              legacyProduct.name
-          },
-          gallery:
-            (
-              legacyProduct.images.gallery ?? []
-            ).map((src, index) => ({
-              src,
-              alt:
-                `${legacyProduct.name} Ansicht ${index + 1}`
-            }))
-        }
       };
 
 const categoryLabel =
-  contentProduct?.category
-    ?.label ??
-  "Futterautomaten";
+  contentProduct.category.label;
 
 const categoryHref =
-  contentProduct?.category
-    ?.path ??
+  contentProduct.category.path ??
   "/smarte-futterautomaten";
 
 const author =
-  contentProduct?.author ?? {
+  contentProduct.author ?? {
     name:
       "PfotenTechnik Redaktion",
 
@@ -369,48 +150,30 @@ const author =
   };
 
 const publishedAt =
-  contentProduct?.publishedAt ??
+  contentProduct.publishedAt ??
   "2026-07-09";
 
 const updatedAt =
-  contentProduct?.updatedAt ??
+  contentProduct.updatedAt ??
   publishedAt;
 
 const productSearchValues = [
-  contentProduct?.useCase,
-  ...(contentProduct?.tags ?? []),
-  ...(contentProduct?.features ??
-    []),
-  ...(
-    contentProduct?.decision
-      ?.bestFor ?? []
-  ),
-  ...(
-    contentProduct?.decision
-      ?.attention ?? []
-  )
+  contentProduct.useCase,
+  ...contentProduct.tags,
+  ...contentProduct.features,
+  ...contentProduct.decision.bestFor,
+  ...contentProduct.decision.attention
 ]
   .filter(Boolean)
   .join(" ")
   .toLowerCase();
 
 const hasApp =
-  contentProduct
-    ? (
-        contentProduct.ratings
-          .app ?? 0
-      ) > 1 ||
-      productSearchValues.includes(
-        "app"
-      )
-    : (
-        legacyProduct.ratings
-          .app ?? 0
-      ) > 1;
+  (contentProduct.ratings.app ?? 0) > 1 ||
+  productSearchValues.includes("app");
 
 const supportsWetFood =
-  contentProduct
-    ? [
+  [
         "nassfutter",
         "wetfood",
         "wet food",
@@ -421,14 +184,10 @@ const supportsWetFood =
           productSearchValues.includes(
             term
           )
-      )
-    : legacyProduct.useCases.includes(
-        "nassfutter"
       );
 
 const hasCamera =
-  contentProduct
-    ? [
+  [
         "kamera",
         "camera",
         "video"
@@ -437,15 +196,10 @@ const hasCamera =
           productSearchValues.includes(
             term
           )
-      )
-    : legacyProduct.useCases.includes(
-        "kamera"
       );
 
 const brandLabel =
-  contentProduct?.manufacturer
-    ?.name ??
-  legacyProduct.brand;
+  contentProduct.manufacturer.name;
 
 const everydayCriteria = [
   {
