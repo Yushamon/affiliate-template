@@ -36,14 +36,17 @@ items:
     label: "Cat Mate C500"
     type: "product"
     recommendation: "Fünf zeitgesteuerte Fächer und Kühlakkus machen den C500 zur pragmatischen Nassfutter-Lösung."
+    values: { steuerungsprinzip: "Lokaler Timer mit Drehteller", batterie: "3 AA-Batterien", zugang: "Zeitgesteuerter Drehdeckel" }
   - slug: "surefeed-microchip-pet-feeder"
     label: "SureFeed Microchip Pet Feeder"
     type: "product"
     recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+    values: { steuerungsprinzip: "Mikrochipgesteuerter Deckel", batterie: "4 C-Batterien" }
   - slug: "imipaw-3l-automatic-cat-feeder"
     label: "IMIPAW 3L Automatic Cat Feeder"
     type: "product"
     recommendation: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
+    values: { steuerungsprinzip: "Lokale Tastensteuerung und Timer", batterie: "Batterieoption laut Modellangabe prüfen" }
 criteria:
   - key: "steuerungsprinzip"
     label: "Steuerungsprinzip"

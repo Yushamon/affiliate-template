@@ -36,26 +36,32 @@ items:
     label: "Petlibro Granary WiFi Feeder"
     type: "product"
     recommendation: "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung."
+    values: { zugang: "Keine individuelle Zugangskontrolle" }
   - slug: "petkit-fresh-element-solo"
     label: "PETKIT Fresh Element Solo"
     type: "product"
     recommendation: "Schlanker 3-Liter-Automat für Katzen und kleine Hunde mit PETKIT-App und Edelstahl-Napf."
+    values: { zugang: "Keine individuelle Zugangskontrolle" }
   - slug: "xiaomi-smart-pet-food-feeder-2"
     label: "Xiaomi Smart Pet Food Feeder 2"
     type: "product"
     recommendation: "Moderner 5-Liter-Automat mit Xiaomi-Home-App, Wiegenapf und automatischer Entblockung."
+    values: { zugang: "Keine individuelle Zugangskontrolle" }
   - slug: "cat-mate-c500"
     label: "Cat Mate C500"
     type: "product"
     recommendation: "Fünf zeitgesteuerte Fächer und Kühlakkus machen den C500 zur pragmatischen Nassfutter-Lösung."
+    values: { zugang: "Zeitgesteuerter Drehdeckel, keine Tiererkennung" }
   - slug: "surefeed-microchip-pet-feeder"
     label: "SureFeed Microchip Pet Feeder"
     type: "product"
     recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+    values: { zugang: "Mikrochipgesteuerter Zugang" }
   - slug: "oneisall-5l-automatic-cat-feeder"
     label: "oneisall 5L Automatic Cat Feeder"
     type: "product"
     recommendation: "5-Liter-Trockenfutterautomat mit zwei Schalen und optionaler App-Steuerung für zwei Katzen."
+    values: { zugang: "Doppelschale ohne individuelle Zugangskontrolle" }
 criteria:
   - key: "futterart"
     label: "Futterart"

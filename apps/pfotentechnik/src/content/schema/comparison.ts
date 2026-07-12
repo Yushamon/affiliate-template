@@ -31,7 +31,18 @@ const comparisonItemSchema =
       ]),
 
     recommendation:
-      z.string().optional()
+      z.string().optional(),
+
+    values: z
+      .record(
+        z.string(),
+        z.union([
+          z.string(),
+          z.number(),
+          z.boolean()
+        ])
+      )
+      .default({})
   });
 
 const comparisonCriterionSchema =

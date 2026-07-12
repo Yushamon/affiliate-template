@@ -29,9 +29,23 @@ const products = await getCollection("products");
 const manufacturers = await getCollection("manufacturers");
 const productBySlug = new Map(products.map((product) => [product.data.slug, product]));
 const manufacturerBySlug = new Map(manufacturers.map((manufacturer) => [manufacturer.data.slug, manufacturer]));
+const explicitItemSlugs = new Set(comparison.items.map((item) => item.slug));
+const automaticItems = products
+  .filter((product) =>
+    (product.data.comparisons ?? []).includes(comparison.slug) &&
+    !explicitItemSlugs.has(product.data.slug)
+  )
+  .map((product) => ({
+    slug: product.data.slug,
+    label: product.data.title,
+    type: "product" as const,
+    recommendation: product.data.recommendation,
+    values: {}
+  }));
+const comparisonItems = [...comparison.items, ...automaticItems];
 const winnerSlug = comparison.recommendation.winnerSlug;
 const winnerItem = winnerSlug
-  ? comparison.items.find((item) => item.slug === winnerSlug)
+  ? comparisonItems.find((item) => item.slug === winnerSlug)
   : undefined;
 const winnerProduct = winnerItem?.type === "product"
   ? products.find((product) => product.data.slug === winnerSlug)
@@ -65,8 +79,23 @@ const criterionAliases: Record<string, string[]> = {
   reinigung: ["reinigung"],
   ausfallsicherheit: ["ausfallsicherheit", "zuverlaessigkeit", "stromversorgung"]
 };
-const getCriterionValue = (productSlug: string, criterionKey: string, criterionLabel: string) => {
-  const product = productBySlug.get(productSlug);
+const getCriterionValue = (
+  item: (typeof comparisonItems)[number],
+  criterionKey: string,
+  criterionLabel: string
+) => {
+  const normalizedCriterion = normalizeKey(criterionKey);
+  const override = Object.entries(item.values ?? {}).find(([key]) =>
+    normalizeKey(key) === normalizedCriterion
+  )?.[1];
+
+  if (override !== undefined) {
+    return typeof override === "boolean"
+      ? override ? "Ja" : "Nein"
+      : String(override);
+  }
+
+  const product = productBySlug.get(item.slug);
   if (!product) return "–";
 
   const normalizedKey = normalizeKey(criterionKey);
@@ -180,7 +209,7 @@ const relatedItems = relatedEntries.map((related) => ({
     <section>
       <h2>{comparison.cardsTitle ?? "Verglichene Produkte"}</h2>
       <div class="comparison-items">
-        {comparison.items.map((item) => {
+        {comparisonItems.map((item) => {
           const product = item.type === "product"
             ? productBySlug.get(item.slug)
             : undefined;
@@ -237,7 +266,7 @@ const relatedItems = relatedEntries.map((related) => ({
         <p>Die folgenden Punkte stammen aus den Stärken und Einschränkungen der jeweiligen Produkt-Markdowns.</p>
       </div>
       <div class="comparison-difference-grid">
-        {comparison.items.map((item) => {
+        {comparisonItems.map((item) => {
           const product = item.type === "product"
             ? productBySlug.get(item.slug)
             : undefined;
@@ -275,7 +304,7 @@ const relatedItems = relatedEntries.map((related) => ({
             <thead>
               <tr>
                 <th scope="col">Kriterium</th>
-                {comparison.items.map((item) => (
+                {comparisonItems.map((item) => (
                   <th scope="col">{productBySlug.get(item.slug)?.data.title ?? item.label ?? item.slug}</th>
                 ))}
               </tr>
@@ -287,8 +316,8 @@ const relatedItems = relatedEntries.map((related) => ({
                     {criterion.label}
                     {criterion.description && <small>{criterion.description}</small>}
                   </th>
-                  {comparison.items.map((item) => (
-                    <td>{getCriterionValue(item.slug, criterion.key, criterion.label)}</td>
+                  {comparisonItems.map((item) => (
+                    <td>{getCriterionValue(item, criterion.key, criterion.label)}</td>
                   ))}
                 </tr>
               ))}
@@ -311,10 +340,11 @@ const relatedItems = relatedEntries.map((related) => ({
 </ProjectLayout>
 
 <style>
-  .comparison-detail { display: grid; gap: 3.5rem; padding-bottom: 5rem; }
+  .comparison-detail { display: grid; width: 100%; min-width: 0; gap: 3.5rem; padding-bottom: 5rem; }
+  .comparison-detail > * { min-width: 0; }
   .comparison-hero { padding: clamp(2rem, 6vw, 5rem); border: 1px solid #dce5e3; border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); text-align: center; }
   .comparison-hero span, .comparison-result > span, .comparison-items span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
-  .comparison-hero h1 { max-width: 18ch; margin: .7rem auto 1rem; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; letter-spacing: -.05em; }
+  .comparison-hero h1 { max-width: 18ch; margin: .7rem auto 1rem; overflow-wrap: anywhere; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; letter-spacing: -.05em; }
   .comparison-hero p { max-width: 65ch; margin: 0 auto; color: #647579; line-height: 1.7; }
   .comparison-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .comparison-items a { display: flex; flex-direction: column; min-width: 0; padding: 1.4rem; border: 1px solid #dce5e3; border-radius: 1rem; color: inherit; background: #fff; text-decoration: none; box-shadow: 0 10px 30px rgba(20, 32, 26, .04); }
@@ -336,7 +366,7 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-positive li::before { content: "✓"; position: absolute; left: 0; color: #18743b; font-weight: 900; }
   .comparison-negative li::before { content: "–"; position: absolute; left: 0; color: #a15c21; font-weight: 900; }
   .comparison-difference-card > a { align-self: flex-start; margin-top: auto; color: #18743b; font-weight: 900; text-decoration-thickness: 2px; text-underline-offset: 4px; }
-  .comparison-table-wrap { width: 100%; overflow-x: auto; border: 1px solid #dce5e3; border-radius: 1rem; background: #fff; }
+  .comparison-table-wrap { width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; overscroll-behavior-inline: contain; border: 1px solid #dce5e3; border-radius: 1rem; background: #fff; -webkit-overflow-scrolling: touch; }
   .comparison-table { width: 100%; min-width: 760px; border-collapse: collapse; }
   .comparison-table th, .comparison-table td { padding: 1rem; border-bottom: 1px solid #e7eeec; text-align: left; vertical-align: top; }
   .comparison-table thead th { color: #0d302b; background: #f2f8f4; font-size: .78rem; line-height: 1.35; }
@@ -353,5 +383,18 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-winner strong { display: block; margin: 1rem 0; color: #18743b; font-size: 1.1rem; }
   .comparison-winner a { display: inline-flex; padding: .85rem 1.2rem; border-radius: 999px; color: #fff; background: #18743b; font-weight: 900; text-decoration: none; }
   .comparison-content { max-width: 780px; line-height: 1.75; }
-  @media(max-width: 800px) { .comparison-items, .comparison-winner, .comparison-difference-grid { grid-template-columns: 1fr; } .comparison-winner { padding: 1.2rem; } .comparison-table th, .comparison-table td { padding: .8rem; } }
+  @media(max-width: 800px) {
+    .comparison-detail { gap: 2.5rem; padding-bottom: 3.5rem; }
+    .comparison-hero { padding: 1.6rem 1rem; border-radius: 1.25rem; }
+    .comparison-hero h1 { max-width: 100%; font-size: clamp(2.05rem, 10vw, 3rem); line-height: 1.02; }
+    .comparison-items, .comparison-winner, .comparison-difference-grid { grid-template-columns: minmax(0, 1fr); }
+    .comparison-items a, .comparison-difference-card { width: 100%; min-width: 0; padding: 1.1rem; }
+    .comparison-items h3, .comparison-difference-card h3 { overflow-wrap: anywhere; }
+    .comparison-winner { padding: 1.1rem; border-radius: 1.2rem; }
+    .comparison-winner h2 { overflow-wrap: anywhere; font-size: 1.85rem; }
+    .comparison-section-intro h2 { overflow-wrap: anywhere; font-size: 2rem; }
+    .comparison-table { min-width: 680px; }
+    .comparison-table th, .comparison-table td { padding: .75rem; }
+    .comparison-result { padding: 1.35rem; }
+  }
 </style>

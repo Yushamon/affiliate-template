@@ -36,22 +36,27 @@ items:
     label: "SureFeed Microchip Pet Feeder"
     type: "product"
     recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+    values: { zugangskontrolle: "Mikrochip", zahl-der-futterplatze: "Ein kontrollierter Futterplatz", futterarten: "Nass- und Trockenfutter" }
   - slug: "surefeed-microchip-pet-feeder-connect"
     label: "SureFeed Microchip Pet Feeder Connect"
     type: "product"
     recommendation: "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt."
+    values: { zugangskontrolle: "Mikrochip", zahl-der-futterplatze: "Ein kontrollierter Futterplatz", futterarten: "Nass- und Trockenfutter" }
   - slug: "petkit-yumshare-dual-hopper"
     label: "PETKIT YumShare Dual-Hopper 2"
     type: "product"
     recommendation: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
+    values: { zugangskontrolle: "Tiererkennung, keine Zugangssperre", zahl-der-futterplatze: "Ein Auslass, zwei Futterkammern", futterarten: "Zwei Trockenfuttersorten" }
   - slug: "oneisall-5l-automatic-cat-feeder"
     label: "oneisall 5L Automatic Cat Feeder"
     type: "product"
     recommendation: "5-Liter-Trockenfutterautomat mit zwei Schalen und optionaler App-Steuerung für zwei Katzen."
+    values: { zugangskontrolle: "Keine individuelle Kontrolle", zahl-der-futterplatze: "Zwei Schalen", futterarten: "Trockenfutter" }
   - slug: "petlibro-granary-wifi-feeder"
     label: "Petlibro Granary WiFi Feeder"
     type: "product"
     recommendation: "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung."
+    values: { zugangskontrolle: "Keine individuelle Kontrolle", zahl-der-futterplatze: "Einzel- oder Doppelschale je Variante", futterarten: "Trockenfutter" }
 criteria:
   - key: "zugangskontrolle"
     label: "Zugangskontrolle"

@@ -204,6 +204,10 @@ export const productContentSchema =
       .array(z.string())
       .default([]),
 
+    comparisons: z
+      .array(z.string())
+      .default([]),
+
     specs: z
       .array(
         productSpecSchema

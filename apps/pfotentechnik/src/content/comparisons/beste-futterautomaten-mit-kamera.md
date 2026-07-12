@@ -36,14 +36,17 @@ items:
     label: "Petlibro Granary Camera Feeder"
     type: "product"
     recommendation: "Futterautomat und Haustierkamera in einem, mit 1080p-Video, Nachtsicht und Zwei-Wege-Audio."
+    values: { bild-und-nachtsicht: "1080p, Nachtsicht, Zwei-Wege-Audio", datenschutz: "Cloud- und Speicherfunktionen prüfen", offline-plan: "Zeitplan lokal prüfen; Video benötigt Verbindung" }
   - slug: "petkit-yumshare-dual-hopper"
     label: "PETKIT YumShare Dual-Hopper 2"
     type: "product"
     recommendation: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
+    values: { bild-und-nachtsicht: "Kamera mit Tiererkennung", datenschutz: "App-, Konto- und Cloud-Einstellungen prüfen", offline-plan: "Zeitplan lokal prüfen; Kamera benötigt Verbindung" }
   - slug: "wopet-heritage-view-camera-feeder"
     label: "WOPET Heritage View Camera Feeder"
     type: "product"
     recommendation: "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz."
+    values: { bild-und-nachtsicht: "1080p-Livebild, Zwei-Wege-Audio", datenschutz: "Speicher- und Freigabeeinstellungen prüfen", offline-plan: "Fütterungsplan und Backup vorab testen" }
 criteria:
   - key: "bild-und-nachtsicht"
     label: "Bild und Nachtsicht"
