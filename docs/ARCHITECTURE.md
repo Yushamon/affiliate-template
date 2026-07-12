@@ -1,323 +1,135 @@
-# Affiliate Platform Architecture
+# PfotenTechnik Content-Architektur
 
-## Vision
-# Architekturprinzipien
+## Single Source of Truth
 
-## 1. Single Source of Truth
+Produkte, Hersteller, Vergleiche und Wissensseiten werden durch Markdown-Dateien beschrieben. Ein Inhalt wird nicht zusätzlich in TypeScript-Listen registriert.
 
-Jede Content-Datei beschreibt sich vollständig selbst.
+Die Content-Datei liefert Inhalt, SEO, Hub-Zuordnung, Navigation, Related-Content-Steuerung und fachliche Beziehungen. Astro Content Collections validieren diese Daten beim Build.
 
-Es darf niemals notwendig sein, eine zweite Datei anzupassen, damit eine neue Seite im Portal erscheint.
+## Verantwortlichkeiten
 
----
+### Content
 
-## 2. Content First
+`apps/pfotentechnik/src/content/`
 
-Navigation, Hubseiten, Related Articles, Breadcrumbs, Sitemap und interne Verlinkungen werden aus den Metadaten der Content-Datei generiert.
+- `products/`: Produktdaten und Produkttests
+- `manufacturers/`: Herstellerprofile
+- `comparisons/`: strukturierte Vergleiche
+- `pages/`: Ratgeber, Wissen und Legacy-Entscheidungsseiten
+- `schema/`: Zod-Schemas der Collections
 
-Nicht umgekehrt.
+Markdown beschreibt Entitäten und redaktionelle Inhalte. Es enthält keine Astro-Imports oder fachlichen Berechnungen.
 
----
+### Content Collections
 
-## 3. Core bleibt generisch
+`apps/pfotentechnik/src/content.config.ts` registriert `pages`, `products`, `manufacturers` und `comparisons`.
 
-Der Core kennt keine Projekte, Produkte oder Kategorien.
+Schemas importieren Zod ausschließlich über:
 
-Er enthält ausschließlich wiederverwendbare Komponenten und Logik.
+```ts
+import { z } from "astro/zod";
+```
 
----
+### Content Registry
 
-## 4. Domainwissen gehört ins Projekt
+`apps/pfotentechnik/src/domain/content/registry.ts` vereinheitlicht alle Collections. Sie stellt unter anderem bereit:
 
-Fachliche Regeln werden ausschließlich innerhalb des jeweiligen Projekts definiert.
+- `getAllContent()`
+- `getContentByHub()`
+- `getContentByTag()`
+- `getContentByType()`
+- `getContentEntryBySlug()`
+- `getNavigationItems()`
 
-Beispiel:
+Die Registry enthält keine Produkt- oder Kategorielogik.
 
-apps/pfotentechnik/src/domain/
+### Domain
 
-apps/balkonspeicher/src/domain/
+`apps/pfotentechnik/src/domain/` enthält fachliche Filter, Regeln und Berechnungen.
 
----
+Aktuelle Beispiele:
 
-## 5. Komponenten rendern
+- `content/related.ts`
+- `content/breadcrumbs.ts`
+- `productAlternatives/`
 
-Komponenten treffen keine fachlichen Entscheidungen.
+Neue Kategorien dürfen eigene Domain-Regeln ergänzen. Futterautomatenbegriffe wie RFID, Nassfutter oder Mehrkatzenhaushalt bleiben außerhalb des Core.
 
-Sie stellen ausschließlich Daten dar.
+### Affiliate Core
 
----
+`packages/affiliate-core/` enthält generische Komponenten und Layouts. Core-Komponenten rendern fertige Props und importieren keine PfotenTechnik-Produkt- oder Herstellerdaten.
 
-## 6. Daten beschreiben
+### Pages
 
-Daten enthalten Informationen.
+Astro-Routen laden Collections und Domain-Ergebnisse und reichen fertige Daten an Komponenten weiter.
 
-Keine Logik.
+- `/produkt/[product]/`: Produkte aus `products`
+- `/hersteller/[manufacturer]/`: Hersteller aus `manufacturers`, mit Legacy-Produktdarstellung während der Restmigration
+- `/vergleiche/[comparison]/`: Vergleiche aus `comparisons`
+- `/[slug]/`: Wissens- und Legacy-Pages aus `pages`
 
----
+## Automatische Plattformfunktionen
 
-## 7. Domain entscheidet
+### Hubseiten
 
-Die Domain verbindet Daten mit Komponenten.
+Hubseiten verwenden `getContentByHub(section)`. Die Zuordnung erfolgt über:
 
-Sie enthält sämtliche fachlichen Regeln.
-Die Plattform ist ein wiederverwendbares Affiliate-Framework für beliebig viele Projekte und Produktkategorien.
+```yaml
+hub:
+  sections:
+    - "wissen"
+```
 
-Beispiele:
+Es gibt keine manuell gepflegten Kartenlisten und keinen Status wie `planned` oder `draft`. Eine vorhandene Markdown-Datei gilt als veröffentlicht.
 
-* Balkonspeicher
-* PfotenTechnik
-* Smart Home
-* Camping
-* Werkzeug
+### Navigation
 
-Die Plattform besteht aus einem generischen Core und projektspezifischen Domains.
+Die Hauptnavigation wird aus `navigation` im Frontmatter erzeugt:
 
----
+```yaml
+navigation:
+  show: true
+  label: "Wissen"
+  section: "wissen"
+  order: 60
+```
 
-# Architektur
+### Related Content
 
-Affiliate Platform
+`getRelatedContent()` bewertet gemeinsame Tags, Hubsektionen und Inhaltstypen. Optional kann Frontmatter die Auswahl steuern:
 
-↓
+```yaml
+related:
+  tags: ["app", "kamera"]
+  exclude: ["anderer-slug"]
+  limit: 4
+```
 
-Core
+### Breadcrumbs
 
-↓
+Breadcrumbs werden in `domain/content/breadcrumbs.ts` aus Inhaltstyp, Kategorie, Hersteller und Hubbeziehungen erzeugt. Sichtbare Breadcrumbs und Breadcrumb-JSON-LD verwenden dieselbe Item-Liste.
 
-Projekt
+### Sitemap
 
-↓
+`apps/pfotentechnik/astro.config.mjs` liest Frontmatter während des Builds. `updatedAt` oder `publishedAt` werden als `lastmod` ausgegeben. `seo.sitemap`, `seo.noindex`, `seo.changefreq` und `seo.priority` werden berücksichtigt.
 
-Domain
+## Business-Logik und `data`
 
-↓
+Berechnungen, Regeln und Filter gehören nach `domain`. `data` darf nur strukturierte Legacy-Inhalte enthalten und wird schrittweise reduziert.
 
-Content
+Noch vorhandene Dateien wie `products.ts`, `manufacturers.ts`, `projectImages.ts` und Decision-Daten werden erst entfernt, wenn keine Route oder Komponente sie mehr importiert.
 
-↓
+## Migrationsstrategie
 
-Daten
+Alte und neue Systeme dürfen vorübergehend parallel bestehen. Entfernt wird erst, wenn:
 
----
+- alle Inhalte migriert sind;
+- dynamische Routen funktionieren;
+- Hubseiten aus Collections entstehen;
+- Navigation, Related Content, Breadcrumbs und Sitemap arbeiten;
+- keine relevanten Legacy-Imports verbleiben;
+- `npm run build:pfotentechnik` erfolgreich ist.
 
-# Core
+## Goldene Regel
 
-Der Core enthält ausschließlich wiederverwendbare Funktionen und UI-Komponenten.
-
-Er kennt keine Produkte, Marken oder Kategorien.
-
-Beispiele:
-
-* Hero-Komponenten
-* Produktkarten
-* Tabellen
-* FAQ
-* Vergleichskomponenten
-* CTA-Komponenten
-* Bewertungskomponenten
-
-Nicht erlaubt:
-
-* Hund
-* Katze
-* Balkonspeicher
-* PV
-* RFID
-* Nassfutter
-
-Der Core kennt ausschließlich Datenstrukturen.
-
----
-
-# Projekte
-
-Jedes Projekt besitzt:
-
-* project.config.ts
-* eigene Daten
-* eigene Bilder
-* eigene SEO
-* eigene Domains
-* eigene Regeln
-
-Beispiel:
-
-apps/
-    pfotentechnik/
-
-apps/
-    balkonspeicher/
-
----
-
-# Domains
-
-Fachliche Logik gehört niemals in den Core.
-
-Sie wird innerhalb eines Projekts in Domains organisiert.
-
-Beispiel:
-
-domain/
-
-    manufacturerHero/
-
-    productHero/
-
-    productRecommendations/
-
-    productAlternatives/
-
-    seo/
-
-    calculators/
-
----
-
-# Kategorien
-
-Jede Produktkategorie besitzt eigene Regeln.
-
-Beispiel:
-
-productAlternatives/
-
-    categories/
-
-        futterautomaten.ts
-
-        trinkbrunnen.ts
-
-        katzentoiletten.ts
-
-        gpsTracker.ts
-
-Später:
-
-balkonspeicher/
-
-    categories/
-
-        speicher.ts
-
-        wechselrichter.ts
-
-        balkonkraftwerke.ts
-
----
-
-# Daten
-Jede Seite beschreibt sich selbst vollständig im Frontmatter. Navigation, Hubseiten, interne Verlinkung und SEO werden daraus automatisch generiert. Das reduziert Pflegeaufwand erheblich und sorgt dafür, dass neue Inhalte nur an einer Stelle angelegt werden müssen
-Daten enthalten ausschließlich Informationen.
-
-Keine Logik.
-
-Beispiele:
-
-products.ts
-
-manufacturers.ts
-
-productReviews.ts
-
-faq.ts
-
-images.ts
-
----
-
-# Regeln
-
-Der Core rendert.
-
-Die Domain entscheidet.
-
-Die Daten beschreiben.
-
-Content erklärt.
-
----
-
-# Komponenten
-
-Eine Komponente besitzt genau eine Verantwortung.
-
-Beispiele:
-
-ProductHero
-
-ProductDecisionSection
-
-ProductRatingGrid
-
-ProductExperienceSection
-
-AlternativeRecommendationCard
-
-ProductSpecificationTable
-
-ManufacturerHero
-
-ManufacturerRecommendationSection
-
----
-
-# Wiederverwendung
-
-Neue Projekte sollen möglichst ohne Änderungen am Core entstehen.
-
-Neue Produktkategorien sollen ausschließlich durch neue Domain-Regeln ergänzt werden.
-
----
-
-# Entscheidungsprinzip
-
-Jeder Abschnitt beantwortet genau eine Nutzerfrage.
-
-Beispiele:
-
-Hero
-
-→ Ist das Produkt gut?
-
-Passt zu mir?
-
-→ Ist das Produkt für meinen Anwendungsfall geeignet?
-
-Bewertung
-
-→ Wie gut ist das Produkt?
-
-Stärken und Schwächen
-
-→ Wo liegen die größten Vor- und Nachteile?
-
-Erfahrungen
-
-→ Wie schlägt sich das Produkt im Alltag?
-
-Alternativen
-
-→ Wann würden wir stattdessen ein anderes Produkt empfehlen?
-
-Technische Daten
-
-→ Welche Details sollte ich kennen?
-
-FAQ
-
-→ Welche Fragen bleiben noch offen?
-
----
-
-# Entwicklung
-
-Vor jeder neuen Funktion wird entschieden:
-
-1. Gehört sie in den Core?
-2. Gehört sie in ein Projekt?
-3. Gehört sie in eine Domain?
-4. Gehört sie in die Daten?
-5. Gehört sie in den Content?
-
-Nur wenn diese Reihenfolge eingehalten wird, bleibt die Plattform langfristig wartbar und erweiterbar.
+Ein neuer Standardinhalt benötigt genau eine Markdown-Datei. Eine zusätzliche Codeänderung ist nur bei einer neuen Kategorie, einer neuen fachlichen Regel oder einer neuen Plattformfähigkeit zulässig.

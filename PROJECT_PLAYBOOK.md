@@ -1,466 +1,163 @@
-# PLAYBOOK.md
+# PfotenTechnik Content Playbook
 
-## Universal Affiliate Content Playbook
+## Pflichtprüfung
 
-**Version:** 1.0
+Nach jeder größeren Änderung aus dem Monorepo-Root ausführen:
 
-Dieses Dokument definiert den verbindlichen Standard für alle Affiliate-Projekte.
-
-Das Playbook ist **projektunabhängig** und kann für beliebige Themen verwendet werden, beispielsweise Balkonkraftwerke, Balkonspeicher, Wärmepumpen, Wallboxen, Haushaltsgeräte, Software oder Finanzprodukte.
-
-Die projektspezifischen Besonderheiten werden **nicht** hier definiert, sondern in einer separaten `PROJECT.md`.
-
----
-
-# Grundprinzip
-
-Unser Ziel ist nicht, möglichst viel Text zu schreiben.
-
-Unser Ziel ist, die hilfreichste Seite im deutschsprachigen Internet zu erstellen.
-
-Jede Seite muss:
-
-* die Suchintention vollständig beantworten
-* dem Nutzer eine Entscheidung erleichtern
-* echten Mehrwert bieten
-* besser sein als die aktuellen Top-Ergebnisse
-
-SEO dient dem Nutzer und niemals umgekehrt.
-
----
-
-# Arbeitsweise
-
-Vor jeder neuen Seite oder jeder Überarbeitung gilt derselbe Ablauf.
-
-## 1. Aktuelle Recherche
-
-Vor jeder Markdown-Datei wird recherchiert.
-
-Mindestens geprüft werden:
-
-* Herstellerinformationen
-* aktuelle Produktdaten
-* neue Modelle
-* Firmware- oder Softwareänderungen
-* gesetzliche Änderungen
-* aktuelle Tests
-* seriöse Nutzererfahrungen
-* häufige Fragen der Nutzer
-* Konkurrenzseiten
-
-Es wird niemals eine Markdown-Datei ohne vorherige Recherche erstellt oder aktualisiert.
-
----
-
-## 2. Suchintention verstehen
-
-Vor dem Schreiben beantworten wir folgende Fragen:
-
-* Was möchte der Nutzer wirklich wissen?
-* Welche Entscheidung möchte er treffen?
-* Welche Unsicherheit hat er?
-* Welche Folgefragen entstehen anschließend?
-
-Die Seite beantwortet diese Fragen vollständig.
-
----
-
-## 3. Konkurrenz analysieren
-
-Vor jeder wichtigen Seite wird geprüft:
-
-* Welche Inhalte bieten die Top-Ergebnisse?
-* Was fehlt dort?
-* Welche Fragen bleiben offen?
-* Wie können wir hilfreicher werden?
-
-Unser Ziel ist nicht ähnlich gut zu sein.
-
-Unser Ziel ist besser zu sein.
-
----
-
-## 4. Erst danach schreiben
-
-Die eigentliche Markdown-Datei entsteht erst nach:
-
-* Recherche
-* Suchintention
-* Konkurrenzanalyse
-
----
-
-# Seitenprinzip
-
-Jede Seite beantwortet möglichst früh die wichtigste Frage.
-
-Nicht:
-
-lange Einleitung
-
-Dann irgendwann die Antwort.
-
-Sondern:
-
-Antwort
-
-↓
-
-Einordnung
-
-↓
-
-Details
-
-↓
-
-Kaufberatung
-
----
-
-# Einleitung
-
-Die Einleitung beantwortet innerhalb weniger Sekunden:
-
-* Worum geht es?
-* Für wen ist die Seite?
-* Was bekommt der Nutzer?
-
-Maximal drei bis vier kurze Absätze.
-
-Keine langen Geschichten.
-
----
-
-# Quick Answer
-
-Nach der Einleitung folgt möglichst schnell eine schnelle Antwort.
-
-Geeignet sind:
-
-* Tabelle
-* Infobox
-* Rechner
-* Entscheidungshilfe
-* kurze Empfehlung
-
-Der Nutzer soll bereits nach wenigen Sekunden eine erste Entscheidung treffen können.
-
----
-
-# Tabellen
-
-Tabellen gehören möglichst weit nach oben.
-
-Sie helfen dem Nutzer schneller als Fließtext.
-
-Tabellen beantworten konkrete Fragen.
-
-Beispiele:
-
-* Welche Größe passt?
-* Welches Produkt ist besser?
-* Welche Leistung wird benötigt?
-* Welche Variante lohnt sich?
-
----
-
-# Rechner
-
-Rechner gehören möglichst weit nach oben.
-
-Rechner werden niemals direkt in Markdown eingebunden.
-
-Sie werden ausschließlich über das Astro-Template anhand des Slugs oder Seitentyps gerendert.
-
-Ein Rechner soll:
-
-* einfach sein
-* schnell Ergebnisse liefern
-* verständliche Empfehlungen geben
-
----
-
-# Markdown-Regeln
-
-Markdown enthält ausschließlich den eigentlichen Inhalt.
-
-Markdown enthält keine:
-
-* Astro Imports
-* Komponenten
-* H1
-* FAQ-Blöcke
-* manuelle Inhaltsverzeichnisse
-* Rechner
-
-Diese Elemente werden vom Template erzeugt.
-
----
-
-# Textstil
-
-Der Stil ist:
-
-* hilfreich
-* verständlich
-* präzise
-* ruhig
-* professionell
-
-Vermeiden:
-
-* Fülltexte
-* Marketingfloskeln
-* künstliche Verlängerungen
-* Keyword-Stuffing
-* unnötige Wiederholungen
-
-Jeder Absatz beantwortet eine konkrete Frage.
-
----
-
-# Designprinzipien
-
-Alle Seiten werden Mobile First gedacht.
-
-Wichtige Regeln:
-
-* kurze Absätze
-* große Weißräume
-* viele Zwischenüberschriften
-* Tabellen früh einsetzen
-* Rechner möglichst weit oben
-* Infoboxen nutzen
-* keine Textwüsten
-
----
-
-# Komponenten
-
-Komponenten werden ausschließlich über das Template eingebunden.
-
-Beispiele:
-
-* Hero
-* Breadcrumbs
-* Inhaltsverzeichnis
-* FAQ
-* Rechner
-* Produktboxen
-* Vergleichstabellen
-* CTA
-* Related Articles
-* interne Links
-
-Markdown liefert ausschließlich den Inhalt.
-
----
-
-# FAQ
-
-FAQ stehen ausschließlich im Frontmatter.
-
-Sie werden automatisch gerendert.
-
-Es gibt niemals einen zweiten FAQ-Bereich im Fließtext.
-
----
-
-# Produktempfehlungen
-
-Produkte werden niemals ohne Begründung empfohlen.
-
-Reihenfolge:
-
-1. Problem erklären
-2. Entscheidungskriterien zeigen
-3. passende Lösung empfehlen
-4. Alternative nennen
-
-Keine aggressive Verkaufssprache.
-
----
-
-# Seitentypen
-
-## Ratgeber
-
-Standardaufbau:
-
-1. Einleitung
-2. Quick Answer
-3. Tabelle
-4. Erklärung
-5. Beispiele
-6. Häufige Fehler
-7. Kaufberatung
-8. Fazit
-
----
-
-## Rechnerseite
-
-Standardaufbau:
-
-1. Einleitung
-2. Rechner
-3. Quick Answer
-4. Tabelle
-5. Erklärung
-6. Praxisbeispiele
-7. Kaufberatung
-8. Fazit
-
----
-
-## Vergleich
-
-Standardaufbau:
-
-1. kurze Einleitung
-2. Gewinner auf einen Blick
-3. Vergleichstabelle
-4. Gemeinsamkeiten
-5. Unterschiede
-6. Für wen geeignet?
-7. Alternativen
-8. Fazit
-
----
-
-## Produktseite
-
-Standardaufbau:
-
-1. Kurzfazit
-2. Für wen geeignet?
-3. Vorteile
-4. Nachteile
-5. technische Daten
-6. Praxiseinschätzung
-7. Alternativen
-8. Fazit
-
----
-
-## Bestenliste
-
-Standardaufbau:
-
-1. Empfehlung
-2. Top-Auswahl
-3. Vergleichstabelle
-4. Einzelbewertungen
-5. Kaufberatung
-6. FAQ
-7. Fazit
-
----
-
-# Bilder
-
-Jede wichtige Seite erhält mindestens:
-
-* Hero-Bild
-* zwei weitere Bilder
-
-Bilder sollen:
-
-* realistisch wirken
-* modern aussehen
-* zur Suchintention passen
-* keine unnötigen Texte enthalten
-
----
-
-# Interne Verlinkung
-
-Jede Seite verlinkt sinnvoll auf:
-
-* passende Ratgeber
-* Vergleichsseiten
-* Produktseiten
-* Rechner
-* weiterführende Inhalte
-
-Interne Links müssen dem Nutzer helfen.
-
----
-
-# SEO
-
-Jede Seite muss:
-
-* die Suchintention direkt beantworten
-* hilfreicher sein als die Konkurrenz
-* strukturierte Tabellen enthalten
-* natürliche Sprache verwenden
-* FAQ im Frontmatter besitzen
-* interne Links enthalten
-
-SEO ist niemals wichtiger als Nutzerhilfe.
-
----
-
-# Qualitätscheck
-
-Vor jeder Veröffentlichung prüfen:
-
-- Aktuelle Recherche durchgeführt?
-- Suchintention beantwortet?
-- Konkurrenz analysiert?
-- Quick Answer vorhanden?
-- Tabelle vorhanden?
-- Rechner eingebunden (falls vorhanden)?
-- Keine doppelte H1?
-- Keine doppelte FAQ?
-- Keine Komponenten in Markdown?
-- Interne Links vorhanden?
-- CTA vorhanden?
-- Produktempfehlung sinnvoll?
-- Keine Wiederholungen?
-- Mobil gut lesbar?
-- Mehrwert gegenüber den Top-Ergebnissen vorhanden?
-
-Wenn einer dieser Punkte nicht erfüllt ist, gilt die Seite nicht als fertig.
-
----
-
-# Projektdateien
-
-Dieses Dokument bleibt für alle Projekte identisch.
-
-Jedes Projekt erhält zusätzlich eine eigene Datei:
-
-```text
-PROJECT_BALKONKRAFTWERK.md
-PROJECT_WAERMEPUMPE.md
-PROJECT_VPN.md
-PROJECT_KAFFEE.md
+```powershell
+npm run build:pfotentechnik
 ```
 
-Diese Datei beschreibt ausschließlich die projektspezifischen Besonderheiten:
+Datumswerte im Frontmatter immer als String schreiben:
 
-* Zielgruppe
-* Kategorien
-* Komponenten
-* Rechner
-* Datenquellen
-* interne Linklogik
-* Designbesonderheiten
-* Tonalität
-* Produkttypen
+```yaml
+publishedAt: "2026-07-12"
+updatedAt: "2026-07-12"
+```
 
-Alle allgemeinen Regeln kommen ausschließlich aus diesem Playbook.
+## Produktseite erstellen
 
----
+Eine Datei anlegen unter:
 
-# Leitfrage
+```text
+apps/pfotentechnik/src/content/products/<slug>.md
+```
 
-Vor jeder Veröffentlichung stellen wir uns genau eine Frage:
+Pflichtbereiche:
 
-> **Hilft diese Seite dem Nutzer schneller, verständlicher und besser als die aktuellen Top-Ergebnisse bei Google?**
+- `title`, `slug`, `type`, `layout`, `description`
+- `recommendation`
+- `manufacturer`
+- `category`
+- `images.hero`
+- `rating`
+- `decision`
+- `review`
+- `strengths`, `weaknesses`
+- `ratings`, `specs`, `alternatives`, `faq`
+- `publishedAt`, `updatedAt`
+- `seo`, `hub`, `tags`
 
-Wenn die Antwort nicht eindeutig **Ja** lautet, wird die Seite weiter verbessert.
+Standardroute:
+
+```text
+/produkt/<slug>/
+```
+
+Produktbilder:
+
+```text
+apps/pfotentechnik/public/images/products/<slug>/hero.webp
+apps/pfotentechnik/public/images/products/<slug>/thumbnail.webp
+apps/pfotentechnik/public/images/products/<slug>/comparison.webp
+apps/pfotentechnik/public/images/products/<slug>/gallery-1.webp
+```
+
+## Herstellerseite erstellen
+
+Eine Datei anlegen unter:
+
+```text
+apps/pfotentechnik/src/content/manufacturers/<slug>.md
+```
+
+Pflichtbereiche:
+
+- Basisfelder und SEO
+- `key`, `name`, `recommendation`, `summary`
+- `images.hero`
+- `productSlugs`, `featuredProductSlugs`
+- Produktschwerpunkte, Zielgruppen und Hinweise
+- Stärken, Schwächen, Serien, Erfahrungen
+- Alternativhersteller, Quellen und FAQ
+- `hub.sections: ["hersteller"]`
+
+Herstellerbild:
+
+```text
+apps/pfotentechnik/public/images/manufacturers/<slug>/hero.webp
+```
+
+## Vergleich erstellen
+
+Eine Datei anlegen unter:
+
+```text
+apps/pfotentechnik/src/content/comparisons/<slug>.md
+```
+
+Mindestens zwei `items` sind erforderlich. Zusätzlich werden `comparisonType`, `group`, `criteria`, `recommendation` und `faq` gepflegt.
+
+Für die automatische Hubaufnahme:
+
+```yaml
+hub:
+  sections:
+    - "vergleiche"
+```
+
+Standardroute:
+
+```text
+/vergleiche/<slug>/
+```
+
+## Wissensseite erstellen
+
+Eine Datei anlegen unter:
+
+```text
+apps/pfotentechnik/src/content/pages/<slug>.md
+```
+
+Die Seite benötigt mindestens Titel, Slug, Beschreibung, Tags, Autor, Datum, SEO und Markdown-Inhalt.
+
+Für den Wissen-Hub:
+
+```yaml
+hub:
+  sections:
+    - "wissen"
+```
+
+## SEO
+
+Empfohlene Struktur:
+
+```yaml
+seo:
+  title: "SEO-Titel"
+  description: "Präzise Beschreibung"
+  canonical: "/ziel/"
+  sitemap: true
+  priority: 0.8
+  changefreq: "monthly"
+```
+
+`updatedAt` steuert `lastmod` in der Sitemap.
+
+## Tags und Beziehungen
+
+Tags werden kleingeschrieben und verbinden verwandte Inhalte. Sie beeinflussen Related Content und fachliche Auffindbarkeit.
+
+Beziehungen verwenden veröffentlichte Slugs, keine Anzeigenamen.
+
+## Navigation
+
+Nur Inhalte mit `navigation.show: true` erscheinen im Header. `section` wird als kanonischer Pfad interpretiert und `order` bestimmt die Reihenfolge.
+
+## Related Content
+
+Standardmäßig werden Inhaltstags und Hubsektionen verwendet. `related` muss nur gepflegt werden, wenn Tags überschrieben, Slugs ausgeschlossen oder das Limit geändert werden sollen.
+
+## Qualitätscheck
+
+- Frontmatter validiert?
+- Slug und Ordnernamen identisch?
+- Bildpfade vorhanden?
+- Canonical mit abschließendem Slash?
+- `updatedAt` aktuell?
+- Hubsektion korrekt?
+- Produkt- und Herstellerbeziehungen gültig?
+- Keine zweite TypeScript-Inhaltsliste ergänzt?
+- Build erfolgreich?
