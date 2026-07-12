@@ -1,38 +1,75 @@
 ---
 title: "Beste Futterautomaten für zwei Katzen"
-seoTitle: "Beste Futterautomaten für zwei Katzen im Vergleich"
 slug: "beste-futterautomaten-fuer-zwei-katzen"
+type: "comparison"
+layout: "comparison"
 description: "Futterautomaten für zwei Katzen nach Zugangskontrolle, Doppelschale, getrennten Vorräten und App-Funktionen vergleichen."
-seoDescription: "Futterautomaten für zwei Katzen: SureFeed, PETKIT, oneisall und Petlibro nach Zugang, Doppelschale und Portionierung verglichen."
-category: "futterautomaten"
-categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
-tags: ["Futterautomat", "Zwei Katzen", "Vergleich", "Mehrtierhaushalt"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+tags:
+  - "Futterautomat"
+  - "Zwei Katzen"
+  - "Vergleich"
+  - "Mehrtierhaushalt"
 hub:
   sections:
-    - "wissen"
+    - "vergleiche"
   title: "Beste Futterautomaten für zwei Katzen"
   description: "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang."
   icon: "🐾"
   order: 30
-hubPriority: 87
-project: "pfotentechnik"
-heroImageKey: "feederHero"
-premiumBlocks:
-  - type: "answer"
-    eyebrow: "Kurzantwort"
-    title: "SureFeed trennt den Zugang am klarsten"
-    text: "Wenn zwei Katzen unterschiedliche Rationen oder Futtersorten benötigen, bieten SureFeed-Modelle den kontrolliertesten Zugang. PETKIT Dual-Hopper trennt zwei Vorräte, oneisall verteilt auf zwei Schalen und Petlibro bietet Doppelschalen-Varianten. Doppelte Auslässe verhindern jedoch nicht, dass eine Katze beide Portionen frisst."
-comparisonProducts: ["surefeed-microchip-pet-feeder", "surefeed-microchip-pet-feeder-connect", "petkit-yumshare-dual-hopper-2", "oneisall-5l-automatic-cat-feeder", "petlibro-granary-wifi"]
-comparisonRecommendation:
+seo:
+  title: "Beste Futterautomaten für zwei Katzen im Vergleich"
+  description: "Futterautomaten für zwei Katzen: SureFeed, PETKIT, oneisall und Petlibro nach Zugang, Doppelschale und Portionierung verglichen."
+  canonical: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
+  sitemap: true
+  priority: 0.8
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "🐾"
+items:
+  - slug: "surefeed-microchip-pet-feeder"
+    label: "SureFeed Microchip Pet Feeder"
+    type: "product"
+    recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+  - slug: "surefeed-microchip-pet-feeder-connect"
+    label: "SureFeed Microchip Pet Feeder Connect"
+    type: "product"
+    recommendation: "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt."
+  - slug: "petkit-yumshare-dual-hopper"
+    label: "PETKIT YumShare Dual-Hopper 2"
+    type: "product"
+    recommendation: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
+  - slug: "oneisall-5l-automatic-cat-feeder"
+    label: "oneisall 5L Automatic Cat Feeder"
+    type: "product"
+    recommendation: "5-Liter-Trockenfutterautomat mit zwei Schalen und optionaler App-Steuerung für zwei Katzen."
+  - slug: "petlibro-granary-wifi-feeder"
+    label: "Petlibro Granary WiFi Feeder"
+    type: "product"
+    recommendation: "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung."
+criteria:
+  - key: "zugangskontrolle"
+    label: "Zugangskontrolle"
+  - key: "zahl-der-futterplatze"
+    label: "Zahl der Futterplätze"
+  - key: "futterarten"
+    label: "Futterarten"
+  - key: "portionierung"
+    label: "Portionierung"
+  - key: "app"
+    label: "App"
+  - key: "reinigung"
+    label: "Reinigung"
+recommendation:
   title: "Mikrochip-Zugang bei unterschiedlichen Rationen"
   text: "SureFeed ist die stärkste Lösung gegen Futterklau. Für ähnlich fressende Katzen können Dual-Hopper oder Doppelschale komfortabler und günstiger sein."
-  tableTitle: "Fünf Lösungen für zwei Katzen"
-  cardsTitle: "Modelle für Mehrkatzenhaushalte"
-  criteria: ["Zugangskontrolle", "Zahl der Futterplätze", "Futterarten", "Portionierung", "App", "Reinigung"]
+tableTitle: "Fünf Lösungen für zwei Katzen"
+cardsTitle: "Modelle für Mehrkatzenhaushalte"
 faq:
   - question: "Reicht eine Doppelschale für zwei Katzen?"
     answer: "Nur wenn beide ähnlich viel fressen und keinen Futterneid zeigen. Sie garantiert keine individuelle Mengenzuordnung."

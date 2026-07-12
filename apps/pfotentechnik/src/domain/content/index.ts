@@ -6,6 +6,7 @@ export {
   getContentByType,
   getContentEntryBySlug,
   getManufacturers,
+  getNavigationItems,
   getPages,
   getProducts,
   sortHubEntries
@@ -20,6 +21,7 @@ export type {
   ContentEntry,
   HubContentEntry,
   ManufacturerEntry,
+  NavigationItem,
   PageEntry,
   ProductEntry
 } from "./registry";

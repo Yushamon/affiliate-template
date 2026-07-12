@@ -1,11 +1,22 @@
 ---
-import { projectConfig } from "@app/project.config";
+interface Props {
+  projectName: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
+}
+
+const {
+  projectName,
+  links
+} = Astro.props as Props;
 ---
 
 <header class="site-header-v2">
   <div class="header-container-v2">
     <a href="/" class="logo-v2">
-      {projectConfig.projectName}
+      {projectName}
     </a>
 
     <input id="nav-toggle" class="nav-toggle" type="checkbox" />
@@ -15,7 +26,7 @@ import { projectConfig } from "@app/project.config";
     </label>
 
     <nav class="main-nav-v2">
-      {projectConfig.headerLinks.map((link) => (
+      {links.map((link) => (
         <a href={link.href}>{link.label}</a>
       ))}
     </nav>

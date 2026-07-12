@@ -11,6 +11,11 @@ tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-08"
+navigation:
+  show: true
+  label: "Für Katzen"
+  section: "futterautomat-katze"
+  order: 20
 hub:
   sections:
     - "wissen"

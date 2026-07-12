@@ -1,0 +1,94 @@
+---
+import { getCollection, getEntry, render } from "astro:content";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+import FAQ from "@affiliate-core/components/FAQ.astro";
+
+type Props = { comparisonId: string };
+
+export async function getStaticPaths() {
+  const comparisons = await getCollection("comparisons");
+  return comparisons.map((entry) => ({
+    params: { comparison: entry.data.slug },
+    props: { comparisonId: entry.id } satisfies Props
+  }));
+}
+
+const { comparisonId } = Astro.props as Props;
+const entry = await getEntry("comparisons", comparisonId);
+if (!entry) throw new Error(`Vergleich "${comparisonId}" wurde nicht gefunden.`);
+
+const comparison = entry.data;
+const { Content } = await render(entry);
+---
+
+<ProjectLayout
+  title={comparison.title}
+  seoTitle={comparison.seo?.title ?? comparison.title}
+  description={comparison.description}
+  seoDescription={comparison.seo?.description ?? comparison.description}
+  canonical={comparison.seo?.canonical ?? `/vergleiche/${comparison.slug}/`}
+  faq={comparison.faq}
+  categoryLabel="Vergleiche"
+  schemaType="article"
+>
+  <Breadcrumbs categoryLabel="Vergleiche" categoryHref="/vergleiche/" title={comparison.title} />
+
+  <main class="comparison-detail">
+    <header class="comparison-hero">
+      <span>{comparison.icon ?? "↔"} Vergleich</span>
+      <h1>{comparison.title}</h1>
+      <p>{comparison.description}</p>
+    </header>
+
+    <section>
+      <h2>{comparison.cardsTitle ?? "Verglichene Produkte"}</h2>
+      <div class="comparison-items">
+        {comparison.items.map((item) => (
+          <a href={`/produkt/${item.slug}/`}>
+            <span>{item.type === "product" ? "Produkt" : "Hersteller"}</span>
+            <h3>{item.label ?? item.slug}</h3>
+            {item.recommendation && <p>{item.recommendation}</p>}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {comparison.criteria.length > 0 && (
+      <section>
+        <h2>{comparison.tableTitle ?? "Vergleichskriterien"}</h2>
+        <ul class="comparison-criteria">
+          {comparison.criteria.map((criterion) => (
+            <li><strong>{criterion.label}</strong>{criterion.description && <p>{criterion.description}</p>}</li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section class="comparison-result">
+      <span>Unsere Empfehlung</span>
+      <h2>{comparison.recommendation.title}</h2>
+      <p>{comparison.recommendation.text}</p>
+    </section>
+
+    <article class="comparison-content"><Content /></article>
+    {comparison.faq.length > 0 && <FAQ items={comparison.faq} />}
+  </main>
+</ProjectLayout>
+
+<style>
+  .comparison-detail { display: grid; gap: 3.5rem; padding-bottom: 5rem; }
+  .comparison-hero { padding: clamp(2rem, 6vw, 5rem); border: 1px solid #dce5e3; border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); text-align: center; }
+  .comparison-hero span, .comparison-result > span, .comparison-items span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+  .comparison-hero h1 { max-width: 18ch; margin: .7rem auto 1rem; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; letter-spacing: -.05em; }
+  .comparison-hero p { max-width: 65ch; margin: 0 auto; color: #647579; line-height: 1.7; }
+  .comparison-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .comparison-items a { padding: 1.4rem; border: 1px solid #dce5e3; border-radius: 1rem; color: inherit; text-decoration: none; }
+  .comparison-items h3 { margin: .5rem 0; }
+  .comparison-items p, .comparison-result p { color: #647579; line-height: 1.6; }
+  .comparison-criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; padding: 0; list-style: none; }
+  .comparison-criteria li { padding: 1rem; border: 1px solid #dce5e3; border-radius: .8rem; }
+  .comparison-result { padding: 2rem; border-radius: 1.2rem; background: rgba(24, 116, 59, .08); }
+  .comparison-content { max-width: 780px; line-height: 1.75; }
+  @media(max-width: 800px) { .comparison-items, .comparison-criteria { grid-template-columns: 1fr; } }
+</style>

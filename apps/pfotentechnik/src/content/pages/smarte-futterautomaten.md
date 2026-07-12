@@ -17,6 +17,11 @@ author:
   role: "Redaktion"
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-09"
+navigation:
+  show: true
+  label: "Futterautomaten"
+  section: "smarte-futterautomaten"
+  order: 10
 hub:
   sections:
     - "wissen"

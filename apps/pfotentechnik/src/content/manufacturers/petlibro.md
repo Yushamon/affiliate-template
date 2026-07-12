@@ -15,6 +15,11 @@ summary: "PETLIBRO gehört zu den bekanntesten Herstellern smarter Futterautomat
 
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
+navigation:
+  show: true
+  label: "Hersteller"
+  section: "hersteller"
+  order: 50
 
 author:
   name: "PfotenTechnik Redaktion"

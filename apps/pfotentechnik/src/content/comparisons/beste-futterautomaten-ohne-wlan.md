@@ -1,38 +1,67 @@
 ---
 title: "Beste Futterautomaten ohne WLAN"
-seoTitle: "Beste Futterautomaten ohne WLAN im Vergleich"
 slug: "beste-futterautomaten-ohne-wlan"
+type: "comparison"
+layout: "comparison"
 description: "Futterautomaten ohne WLAN nach lokaler Zeitsteuerung, Batterie, Futterart und kontrolliertem Zugang vergleichen."
-seoDescription: "Futterautomaten ohne WLAN: Cat Mate, SureFeed und IMIPAW nach Timer, Batterie, Nassfutter und Mikrochip-Zugang verglichen."
-category: "futterautomaten"
-categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
-tags: ["Futterautomat", "Ohne WLAN", "Vergleich", "Batterie"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+tags:
+  - "Futterautomat"
+  - "Ohne WLAN"
+  - "Vergleich"
+  - "Batterie"
 hub:
   sections:
-    - "wissen"
+    - "vergleiche"
   title: "Beste Futterautomaten ohne WLAN"
   description: "Einfache und unabhängige Lösungen ohne App oder Cloud."
   icon: "📴"
   order: 40
-hubPriority: 86
-project: "pfotentechnik"
-heroImageKey: "inline"
-premiumBlocks:
-  - type: "answer"
-    eyebrow: "Kurzantwort"
-    title: "Die beste Wahl hängt vom Offline-Zweck ab"
-    text: "Cat Mate C500 eignet sich für vorbereitete Fachmahlzeiten, SureFeed für individuellen Mikrochip-Zugang und IMIPAW für einfache zeitgesteuerte Trockenfutter-Ausgaben. Alle arbeiten ohne dauerhafte WLAN-Verbindung, lösen aber unterschiedliche Aufgaben. Entscheidend sind Futterart, Stromversorgung und die notwendige Kontrolle vor Ort."
-comparisonProducts: ["cat-mate-c500", "surefeed-microchip-pet-feeder", "imipaw-3l-automatic-cat-feeder"]
-comparisonRecommendation:
+seo:
+  title: "Beste Futterautomaten ohne WLAN im Vergleich"
+  description: "Futterautomaten ohne WLAN: Cat Mate, SureFeed und IMIPAW nach Timer, Batterie, Nassfutter und Mikrochip-Zugang verglichen."
+  canonical: "/vergleiche/beste-futterautomaten-ohne-wlan/"
+  sitemap: true
+  priority: 0.8
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "📴"
+items:
+  - slug: "cat-mate-c500"
+    label: "Cat Mate C500"
+    type: "product"
+    recommendation: "Fünf zeitgesteuerte Fächer und Kühlakkus machen den C500 zur pragmatischen Nassfutter-Lösung."
+  - slug: "surefeed-microchip-pet-feeder"
+    label: "SureFeed Microchip Pet Feeder"
+    type: "product"
+    recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+  - slug: "imipaw-3l-automatic-cat-feeder"
+    label: "IMIPAW 3L Automatic Cat Feeder"
+    type: "product"
+    recommendation: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
+criteria:
+  - key: "steuerungsprinzip"
+    label: "Steuerungsprinzip"
+  - key: "futterart"
+    label: "Futterart"
+  - key: "batterie"
+    label: "Batterie"
+  - key: "portionierung"
+    label: "Portionierung"
+  - key: "zugang"
+    label: "Zugang"
+  - key: "reinigung"
+    label: "Reinigung"
+recommendation:
   title: "Cat Mate ist die vielseitigste reine Timer-Lösung"
   text: "Für mehrere vorbereitete Mahlzeiten ist der C500 besonders klar. SureFeed kontrolliert statt Zeiten den Zugang; IMIPAW dosiert Trockenfutter aus einem Vorrat."
-  tableTitle: "Drei Offline-Konzepte verglichen"
-  cardsTitle: "Futterautomaten ohne WLAN im Detail"
-  criteria: ["Steuerungsprinzip", "Futterart", "Batterie", "Portionierung", "Zugang", "Reinigung"]
+tableTitle: "Drei Offline-Konzepte verglichen"
+cardsTitle: "Futterautomaten ohne WLAN im Detail"
 faq:
   - question: "Ist ein Automat ohne WLAN zuverlässiger?"
     answer: "Er hat weniger Netzwerkabhängigkeiten, kann aber weiterhin durch leere Batterien, falsche Uhrzeit oder Mechanik ausfallen. Tests und Kontrolle bleiben notwendig."

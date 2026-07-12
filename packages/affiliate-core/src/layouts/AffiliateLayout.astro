@@ -35,6 +35,10 @@ interface Props {
   schemaType?: "website" | "article" | "webpage";
   includeBreadcrumbSchema?: boolean;
   webAnalyticsToken?: string;
+  headerLinks?: Array<{
+    label: string;
+    href: string;
+  }>;
 }
 
 const {
@@ -51,7 +55,8 @@ const {
   categoryLabel,
   schemaType,
   includeBreadcrumbSchema,
-  webAnalyticsToken
+  webAnalyticsToken,
+  headerLinks = projectConfig.headerLinks
 } = Astro.props;
 
 const pageTitle = seoTitle ?? title;
@@ -316,7 +321,10 @@ const faqSchema = createFaqSchema(faq);
   </head>
 
   <body>
-    <Header />
+    <Header
+      projectName={projectConfig.projectName}
+      links={headerLinks}
+    />
 
     <main class="container">
       <slot />

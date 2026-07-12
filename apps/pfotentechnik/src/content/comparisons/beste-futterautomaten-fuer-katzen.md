@@ -1,43 +1,79 @@
 ---
 title: "Beste Futterautomaten für Katzen"
-seoTitle: "Beste Futterautomaten für Katzen im Vergleich"
 slug: "beste-futterautomaten-fuer-katzen"
+type: "comparison"
+layout: "comparison"
 description: "Futterautomaten für Katzen nach Futterart, Portionierung, App, Zugang und Mehrkatzen-Eignung vergleichen."
-seoDescription: "Futterautomaten für Katzen im Vergleich: Petlibro, PETKIT, Xiaomi, SureFeed, Cat Mate und oneisall verständlich eingeordnet."
-category: "futterautomaten"
-categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
-tags: ["Futterautomat", "Katze", "Vergleich", "Kaufberatung"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
-navigation:
-  show: true
-  label: "Vergleiche"
-  section: "vergleiche"
-  order: 40
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+tags:
+  - "Futterautomat"
+  - "Katze"
+  - "Vergleich"
+  - "Kaufberatung"
 hub:
   sections:
-    - "wissen"
+    - "vergleiche"
   title: "Beste Futterautomaten für Katzen"
   description: "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten."
   icon: "🐈"
   order: 10
-hubPriority: 89
-project: "pfotentechnik"
-heroImageKey: "feederHero"
-premiumBlocks:
-  - type: "answer"
-    eyebrow: "Kurzantwort"
-    title: "Petlibro für Trockenfutter, Cat Mate für Nassfutter, SureFeed für getrennten Zugang"
-    text: "Die beste Wahl folgt dem Einsatzbereich. Petlibro Granary WiFi ist ein ausgewogener Trockenfutter-Allrounder, PETKIT Fresh Element Solo besonders kompakt, Xiaomi stark im Smart-Home-Kontext. Cat Mate organisiert vorbereitete Nassfutter-Fächer, während SureFeed in Mehrkatzenhaushalten den Zugang kontrolliert."
-comparisonProducts: ["petlibro-granary-wifi", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500", "surefeed-microchip-pet-feeder", "oneisall-5l-automatic-cat-feeder"]
-comparisonRecommendation:
+seo:
+  title: "Beste Futterautomaten für Katzen im Vergleich"
+  description: "Futterautomaten für Katzen im Vergleich: Petlibro, PETKIT, Xiaomi, SureFeed, Cat Mate und oneisall verständlich eingeordnet."
+  canonical: "/vergleiche/beste-futterautomaten-fuer-katzen/"
+  sitemap: true
+  priority: 0.8
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "🐈"
+items:
+  - slug: "petlibro-granary-wifi-feeder"
+    label: "Petlibro Granary WiFi Feeder"
+    type: "product"
+    recommendation: "Ausgewogener 5-Liter-Automat mit App, flexiblen Zeitplänen und verständlicher Bedienung."
+  - slug: "petkit-fresh-element-solo"
+    label: "PETKIT Fresh Element Solo"
+    type: "product"
+    recommendation: "Schlanker 3-Liter-Automat für Katzen und kleine Hunde mit PETKIT-App und Edelstahl-Napf."
+  - slug: "xiaomi-smart-pet-food-feeder-2"
+    label: "Xiaomi Smart Pet Food Feeder 2"
+    type: "product"
+    recommendation: "Moderner 5-Liter-Automat mit Xiaomi-Home-App, Wiegenapf und automatischer Entblockung."
+  - slug: "cat-mate-c500"
+    label: "Cat Mate C500"
+    type: "product"
+    recommendation: "Fünf zeitgesteuerte Fächer und Kühlakkus machen den C500 zur pragmatischen Nassfutter-Lösung."
+  - slug: "surefeed-microchip-pet-feeder"
+    label: "SureFeed Microchip Pet Feeder"
+    type: "product"
+    recommendation: "Batteriebetriebener Mikrochip-Napf ohne App für getrennte Rationen und unterschiedliche Futtersorten."
+  - slug: "oneisall-5l-automatic-cat-feeder"
+    label: "oneisall 5L Automatic Cat Feeder"
+    type: "product"
+    recommendation: "5-Liter-Trockenfutterautomat mit zwei Schalen und optionaler App-Steuerung für zwei Katzen."
+criteria:
+  - key: "futterart"
+    label: "Futterart"
+  - key: "portionierung"
+    label: "Portionierung"
+  - key: "zugang"
+    label: "Zugang"
+  - key: "app"
+    label: "App"
+  - key: "reinigung"
+    label: "Reinigung"
+  - key: "ausfallsicherheit"
+    label: "Ausfallsicherheit"
+recommendation:
   title: "Granary WiFi ist der ausgewogenste Trockenfutter-Allrounder"
   text: "Für Nassfutter und Mehrtierhaushalte sind andere Bauarten sinnvoller. Deshalb ist die Gesamtwahl kein Ersatz für die Auswahl nach Futterart und Zugang."
-  tableTitle: "Sechs Katzen-Futterautomaten verglichen"
-  cardsTitle: "Empfehlungen nach Einsatzbereich"
-  criteria: ["Futterart", "Portionierung", "Zugang", "App", "Reinigung", "Ausfallsicherheit"]
+tableTitle: "Sechs Katzen-Futterautomaten verglichen"
+cardsTitle: "Empfehlungen nach Einsatzbereich"
 faq:
   - question: "Welcher Futterautomat eignet sich für Nassfutter?"
     answer: "Fachautomaten wie der Cat Mate C500 oder geschlossene Mikrochip-Näpfe können geeignet sein. Kühlung, Standzeit und Reinigung bleiben entscheidend."

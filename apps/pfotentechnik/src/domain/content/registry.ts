@@ -51,6 +51,12 @@ export type HubContentEntry = {
   entry: ContentEntry;
 };
 
+export type NavigationItem = {
+  label: string;
+  href: string;
+  order: number;
+};
+
 const normalizePath = (
   path: string
 ) => {
@@ -432,5 +438,67 @@ export const getContentEntryBySlug =
           .trim()
           .toLowerCase() ===
         normalizedSlug
+    );
+  };
+
+export const getNavigationItems =
+  async (): Promise<NavigationItem[]> => {
+    const [
+      pages,
+      products,
+      manufacturers
+    ] = await Promise.all([
+      getPages(),
+      getProducts(),
+      getManufacturers()
+    ]);
+
+    const content = [
+      ...pages.map(mapPageEntry),
+      ...products.map(mapProductEntry),
+      ...manufacturers.map(
+        mapManufacturerEntry
+      )
+    ];
+    const items = content
+      .map((item) => {
+        const navigation =
+          item.entry.data.navigation;
+
+        if (!navigation?.show) {
+          return null;
+        }
+
+        const section =
+          navigation.section?.trim();
+
+        const href = section
+          ? normalizePath(section)
+          : item.href;
+
+        return {
+          label:
+            navigation.label ??
+            item.hubTitle,
+          href,
+          order: navigation.order
+        };
+      })
+      .filter(
+        (item): item is NavigationItem =>
+          item !== null
+      )
+      .sort(
+        (a, b) =>
+          a.order - b.order ||
+          a.label.localeCompare(b.label, "de")
+      );
+
+    return items.filter(
+      (item, index) =>
+        items.findIndex(
+          (candidate) =>
+            candidate.href === item.href
+        ) === index
     );
   };

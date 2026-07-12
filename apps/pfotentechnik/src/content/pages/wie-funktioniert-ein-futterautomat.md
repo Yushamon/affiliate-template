@@ -11,6 +11,11 @@ tags: ["Futterautomat", "Funktionsweise", "Portionierung", "Grundlagen"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+navigation:
+  show: true
+  label: "Wissen"
+  section: "wissen"
+  order: 60
 hub:
   sections:
     - "wissen"

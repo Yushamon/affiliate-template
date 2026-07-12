@@ -1,38 +1,67 @@
 ---
 title: "Beste Futterautomaten mit Kamera"
-seoTitle: "Beste Futterautomaten mit Kamera im Vergleich"
 slug: "beste-futterautomaten-mit-kamera"
+type: "comparison"
+layout: "comparison"
 description: "Futterautomaten mit Kamera nach Bildkontrolle, App, Portionierung, Datenschutz und Alltagstauglichkeit vergleichen."
-seoDescription: "Futterautomaten mit Kamera im Vergleich: Petlibro, PETKIT und WOPET nach Video, App, Fütterungsplan und Datenschutz eingeordnet."
-category: "futterautomaten"
-categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
-tags: ["Futterautomat", "Kamera", "Vergleich", "App"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+tags:
+  - "Futterautomat"
+  - "Kamera"
+  - "Vergleich"
+  - "App"
 hub:
   sections:
-    - "wissen"
+    - "vergleiche"
   title: "Beste Futterautomaten mit Kamera"
   description: "Kamera-Modelle nach Bildkontrolle, App, Portionierung und Datenschutz."
   icon: "📷"
   order: 50
-hubPriority: 88
-project: "pfotentechnik"
-heroImageKey: "feederComparison"
-premiumBlocks:
-  - type: "answer"
-    eyebrow: "Kurzantwort"
-    title: "Petlibro bietet die ausgewogenste Kamera-Kombination"
-    text: "Der Petlibro Granary Camera Feeder verbindet einen großen Vorrat mit 1080p-Video, Nachtsicht und App-Steuerung. PETKIT ist interessant, wenn zwei Futterkammern und Kamera gemeinsam benötigt werden. WOPET bietet eine Alternative mit großem Vorrat. Eine Kamera zeigt nur den Futterplatz und ersetzt weder Zugangskontrolle noch persönliche Betreuung."
-comparisonProducts: ["petlibro-granary-camera", "petkit-yumshare-dual-hopper-2", "wopet-heritage-view-camera-feeder"]
-comparisonRecommendation:
+seo:
+  title: "Beste Futterautomaten mit Kamera im Vergleich"
+  description: "Futterautomaten mit Kamera im Vergleich: Petlibro, PETKIT und WOPET nach Video, App, Fütterungsplan und Datenschutz eingeordnet."
+  canonical: "/vergleiche/beste-futterautomaten-mit-kamera/"
+  sitemap: true
+  priority: 0.8
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "📷"
+items:
+  - slug: "petlibro-granary-camera-feeder"
+    label: "Petlibro Granary Camera Feeder"
+    type: "product"
+    recommendation: "Futterautomat und Haustierkamera in einem, mit 1080p-Video, Nachtsicht und Zwei-Wege-Audio."
+  - slug: "petkit-yumshare-dual-hopper"
+    label: "PETKIT YumShare Dual-Hopper 2"
+    type: "product"
+    recommendation: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
+  - slug: "wopet-heritage-view-camera-feeder"
+    label: "WOPET Heritage View Camera Feeder"
+    type: "product"
+    recommendation: "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz."
+criteria:
+  - key: "bild-und-nachtsicht"
+    label: "Bild und Nachtsicht"
+  - key: "app"
+    label: "App"
+  - key: "portionierung"
+    label: "Portionierung"
+  - key: "datenschutz"
+    label: "Datenschutz"
+  - key: "offline-plan"
+    label: "Offline-Plan"
+  - key: "reinigung"
+    label: "Reinigung"
+recommendation:
   title: "Granary Camera ist die ausgewogenste Gesamtwahl"
   text: "Petlibro kombiniert nachvollziehbare Kameradaten mit einem etablierten Fütterungskonzept. PETKIT richtet sich stärker an Zwei-Futter-Szenarien, WOPET an große Vorräte."
-  tableTitle: "Drei Kamera-Futterautomaten verglichen"
-  cardsTitle: "Kamera-Modelle im Detail"
-  criteria: ["Bild und Nachtsicht", "App", "Portionierung", "Datenschutz", "Offline-Plan", "Reinigung"]
+tableTitle: "Drei Kamera-Futterautomaten verglichen"
+cardsTitle: "Kamera-Modelle im Detail"
 faq:
   - question: "Erkennt eine Kamera, welches Tier gefressen hat?"
     answer: "Nicht zuverlässig in jeder Situation. Blickwinkel, ähnliche Tiere und Futtertausch begrenzen die Zuordnung. Für sicheren individuellen Zugang ist Mikrochip-Steuerung geeigneter."
