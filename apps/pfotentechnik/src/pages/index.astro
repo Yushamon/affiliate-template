@@ -1,26 +1,36 @@
 ---
 import { getCollection } from "astro:content";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
-import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
 import { projectConfig } from "../project.config";
-import { products, type ProductKey } from "../data/products";
-import { getWeightedProductScore } from "../data/productScoring";
-import {
-  getProjectImage,
-  type ProjectImageKey
-} from "../data/projectImages";
 
 const { home } = projectConfig;
-const catalog = Object.entries(products) as Array<[ProductKey, (typeof products)[ProductKey]]>;
+const products = await getCollection("products");
+const manufacturers = (await getCollection("manufacturers"))
+  .sort((a, b) =>
+    Number(b.data.hub?.featured ?? false) - Number(a.data.hub?.featured ?? false) ||
+    (a.data.hub?.order ?? 100) - (b.data.hub?.order ?? 100) ||
+    a.data.name.localeCompare(b.data.name, "de")
+  )
+  .slice(0, 4);
 const availableCategories = home.categories.items.filter((category) =>
   "productCategory" in category
-    ? catalog.some(([, product]) => product.category === category.productCategory)
+    ? products.some((product) =>
+        product.data.category.key === category.productCategory ||
+        product.data.category.path?.includes(category.productCategory)
+      )
     : "productUseCase" in category
-      ? catalog.some(([, product]) => product.useCases.includes(category.productUseCase))
+      ? products.some((product) =>
+          product.data.useCase === category.productUseCase ||
+          product.data.tags.includes(category.productUseCase)
+        )
       : false
 );
-const featuredProducts = catalog
-  .sort(([, a], [, b]) => a.priority - b.priority)
+const featuredProducts = products
+  .sort((a, b) =>
+    Number(b.data.hub?.featured ?? false) - Number(a.data.hub?.featured ?? false) ||
+    (a.data.hub?.order ?? 100) - (b.data.hub?.order ?? 100) ||
+    (b.data.score ?? b.data.rating * 20) - (a.data.score ?? a.data.rating * 20)
+  )
   .slice(0, 3);
 const pages = (await getCollection("pages"))
   .sort((a, b) =>
@@ -34,7 +44,7 @@ const pages = (await getCollection("pages"))
   title={home.seo.title}
   description={home.seo.description}
   canonical="/"
-  ogImage={getProjectImage("pfotentechnik", home.hero.imageKey as ProjectImageKey)}
+  ogImage="/images/project/pfotentechnik/feeder-hero.webp"
   publishedAt={home.seo.publishedAt}
   updatedAt={home.seo.updatedAt}
   schemaType="article"
@@ -63,7 +73,7 @@ const pages = (await getCollection("pages"))
 
       <figure class="pt-hero-media">
         <img
-          src={getProjectImage("pfotentechnik", home.hero.imageKey as ProjectImageKey)}
+          src="/images/project/pfotentechnik/feeder-hero.webp"
           alt={home.hero.imageAlt}
           width="1728"
           height="960"
@@ -101,11 +111,11 @@ const pages = (await getCollection("pages"))
         <p>{home.manufacturers.text}</p>
       </header>
       <div class="pt-category-grid">
-        {home.manufacturers.items.map((manufacturer) => (
-          <a class="pt-category-card" href={manufacturer.href}>
-            <span class="pt-card-index">{manufacturer.code}</span>
-            <h3>{manufacturer.title}</h3>
-            <p>{manufacturer.text}</p>
+        {manufacturers.map((manufacturer, index) => (
+          <a class="pt-category-card" href={`/hersteller/${manufacturer.data.slug}/`}>
+            <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{manufacturer.data.name}</h3>
+            <p>{manufacturer.data.description}</p>
             <span class="pt-card-line" aria-hidden="true"></span>
           </a>
         ))}
@@ -146,14 +156,11 @@ const pages = (await getCollection("pages"))
       </header>
 
       <div class="pt-guide-grid">
-        {pages.map((page, index) => (
+        {pages.map((page) => (
           <a class="pt-guide-card" href={`/${page.data.slug}`}>
             <div class="pt-guide-image">
               <img
-                src={page.data.heroImage ?? getProjectImage(
-                  "pfotentechnik",
-                  page.data.heroImageKey ?? (index === 0 ? "guide" : "inline")
-                )}
+                src={page.data.heroImage ?? "/images/project/pfotentechnik/guide.webp"}
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -182,13 +189,22 @@ const pages = (await getCollection("pages"))
         <p>{home.products.text}</p>
       </header>
 
-      <div class="product-ranking-list pt-home-ranking-list">
-        {featuredProducts.map(([productKey], index) => (
-          <ProductRankingCard
-            productKey={productKey}
-            rank={index + 1}
-            score={getWeightedProductScore(productKey)}
-          />
+      <div class="pt-category-grid pt-home-ranking-list">
+        {featuredProducts.map((product, index) => (
+          <a class="pt-category-card" href={`/produkt/${product.data.slug}/`}>
+            <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
+            <img
+              src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
+              alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
+              loading="lazy"
+              decoding="async"
+            />
+            <p class="pt-eyebrow">{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</p>
+            <h3>{product.data.title}</h3>
+            <p>{product.data.recommendation}</p>
+            <strong>Produkttest lesen</strong>
+            <span class="pt-card-line" aria-hidden="true"></span>
+          </a>
         ))}
       </div>
     </section>
