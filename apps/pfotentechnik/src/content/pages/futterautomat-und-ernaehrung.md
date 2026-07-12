@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Wann"
         title: "Mahlzeitenplan"
         text: "Der Automat verteilt die festgelegte Menge passend zum Alltag."
-comparisonProducts: ["petlibro-granary-wifi", "cat-mate-c500", "xiaomi-smart-pet-food-feeder-2"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "cat-mate-c500", "xiaomi-smart-pet-food-feeder-2"]
 comparisonRecommendation:
   title: "Das Futter bestimmt die Bauart"
   text: "Vorratsautomaten organisieren geeignetes Trockenfutter, Fachautomaten vorbereitete Mahlzeiten. Wiege- und App-Funktionen können dokumentieren, ersetzen aber keine Ernährungsbeurteilung."

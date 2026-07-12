@@ -30,7 +30,7 @@ premiumBlocks:
     eyebrow: "Übergabe"
     title: "Was vorbereitet sein muss"
     items: ["Betreuung und Besuchszeiten verbindlich klären", "Automaten mehrere Tage im Normalbetrieb testen", "Tagesrationen und Reserve eindeutig beschriften", "Tierarztkontakt und Notfallvollmacht hinterlegen", "Manuelle Fütterung ohne App erklären"]
-comparisonProducts: ["petlibro-granary-wifi", "petlibro-granary-camera", "xiaomi-smart-pet-food-feeder-2"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petlibro-granary-camera-feeder", "xiaomi-smart-pet-food-feeder-2"]
 comparisonRecommendation:
   title: "Fernfunktionen sind Ergänzung, keine Betreuung"
   text: "App, Kamera und Füllstandsanzeige können Hinweise liefern. Für eine Urlaubsplanung zählen aber vor allem lokale Zeitpläne, Stromreserve, einfache manuelle Bedienung und eine Person vor Ort."

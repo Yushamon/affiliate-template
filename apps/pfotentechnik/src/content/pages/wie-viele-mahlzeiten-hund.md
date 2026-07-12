@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Veränderung"
         title: "Senioren und Erkrankungen"
         text: "Appetit, Muskelzustand und medizinische Anforderungen individuell prüfen."
-comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi", "petlibro-granary-camera"]
+comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "petlibro-granary-camera-feeder"]
 comparisonRecommendation:
   title: "Ein Automat verteilt nur geeignete Teilmengen"
   text: "Größere Vorräte und mehrere Zeitpläne können den Alltag organisieren. Für große Hunde bleiben maximale Ausgabe, Krokettengröße, Napf und Stabilität entscheidende Grenzen."

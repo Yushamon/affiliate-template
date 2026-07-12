@@ -50,8 +50,6 @@ healthBridge:
   eyebrow: "Gesundheit"
   title: "Futterhygiene bleibt Handarbeit"
   text: "Verdorbenes oder auffällig riechendes Futter darf nicht verfüttert werden. Frisst ein Tier ungewohnt wenig oder zeigt Beschwerden, sollte die Ursache fachlich abgeklärt werden."
-  href: "/tierkrankenversicherung"
-  cta: "Absicherung für Tierarztkosten prüfen"
 closingCta:
   title: "Nassfutter nur mit passender Bauart automatisieren"
   text: "Plane kurze Standzeiten, vollständig gekühlte Akkus und eine tägliche Reinigung fest ein."

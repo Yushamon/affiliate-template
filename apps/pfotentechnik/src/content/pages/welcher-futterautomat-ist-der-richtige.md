@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Schritt 3"
         title: "Technik begrenzen"
         text: "Nur Funktionen wählen, die ein reales Alltagsproblem lösen."
-comparisonProducts: ["petlibro-granary-wifi", "petlibro-granary-camera", "cat-mate-c500"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petlibro-granary-camera-feeder", "cat-mate-c500"]
 comparisonRecommendation:
   title: "Drei unterschiedliche Antworten auf drei Bedürfnisse"
   text: "Granary WiFi deckt planbare Trockenfütterung ab, Granary Camera ergänzt Sichtkontrolle und Cat Mate C500 arbeitet mit vorbereiteten Fächern für andere Futterarten."

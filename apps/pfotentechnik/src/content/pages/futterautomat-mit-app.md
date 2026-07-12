@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Mit Wiegenapf"
         title: "Xiaomi Smart Pet Food Feeder 2"
         text: "App-Steuerung plus integrierte Gewichtsübersicht am Napf."
-comparisonProducts: ["petlibro-granary-wifi", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "petlibro-granary-camera", "petkit-yumshare-dual-hopper-2"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "petlibro-granary-camera-feeder", "petkit-yumshare-dual-hopper"]
 comparisonRecommendation:
   title: "Granary WiFi bietet das ausgewogenste App-Paket"
   text: "Er konzentriert sich auf Zeitpläne und Ausgabe statt auf Zusatztechnik. Xiaomi ergänzt eine Wiegefunktion; Petlibro Camera und PETKIT YumShare verbinden die App zusätzlich mit Video."
@@ -50,12 +50,10 @@ healthBridge:
   eyebrow: "Gesundheit"
   title: "App-Protokolle richtig lesen"
   text: "Eine bestätigte Ausgabe ist kein Nachweis dafür, dass das Tier die Portion vollständig gefressen hat. Verhalten, Gewicht und Futteraufnahme müssen weiterhin persönlich beobachtet werden."
-  href: "/tierkrankenversicherung"
-  cta: "Absicherung für Tierarztkosten prüfen"
 closingCta:
   title: "Zuverlässigkeit vor Funktionsfülle"
   text: "Wähle eine App, deren Zeitpläne verständlich sind und deren Automat auch bei kurzen Verbindungsproblemen weiterarbeitet."
-  productKey: "petlibro-granary-wifi"
+  productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
   secondaryHref: "/futterautomat-mit-kamera"
   secondaryLabel: "Kamera-Funktionen vergleichen"

@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Zugang"
         title: "Stressfreier Platz"
         text: "In Mehrkatzenhaushalten muss jede Katze ihre Portion erreichen können."
-comparisonProducts: ["petkit-fresh-element-solo", "petlibro-granary-wifi", "petkit-yumshare-dual-hopper-2"]
+comparisonProducts: ["petkit-fresh-element-solo", "petlibro-granary-wifi-feeder", "petkit-yumshare-dual-hopper"]
 comparisonRecommendation:
   title: "Feine Schritte erleichtern kleine Mahlzeiten"
   text: "Kompakte und vernetzte Vorratsautomaten können mehrere Trockenfutterzeiten organisieren. In Mehrkatzenhaushalten bleibt die individuelle Zuordnung wichtiger als die Zahl programmierbarer Ausgaben."

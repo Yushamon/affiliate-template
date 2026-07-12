@@ -3,8 +3,8 @@ interface Props {
   eyebrow: string;
   title: string;
   text: string;
-  href: string;
-  cta: string;
+  href?: string;
+  cta?: string;
 }
 
 const { eyebrow, title, text, href, cta } = Astro.props;
@@ -16,5 +16,5 @@ const { eyebrow, title, text, href, cta } = Astro.props;
     <h2 id="pt-health-bridge-title">{title}</h2>
     <p>{text}</p>
   </div>
-  <a href={href}>{cta}</a>
+  {href && cta && <a href={href}>{cta}</a>}
 </aside>

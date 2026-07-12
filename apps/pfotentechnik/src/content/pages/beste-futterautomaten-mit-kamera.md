@@ -26,7 +26,7 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "Petlibro bietet die ausgewogenste Kamera-Kombination"
     text: "Der Petlibro Granary Camera Feeder verbindet einen großen Vorrat mit 1080p-Video, Nachtsicht und App-Steuerung. PETKIT ist interessant, wenn zwei Futterkammern und Kamera gemeinsam benötigt werden. WOPET bietet eine Alternative mit großem Vorrat. Eine Kamera zeigt nur den Futterplatz und ersetzt weder Zugangskontrolle noch persönliche Betreuung."
-comparisonProducts: ["petlibro-granary-camera", "petkit-yumshare-dual-hopper-2", "wopet-heritage-view-camera-feeder"]
+comparisonProducts: ["petlibro-granary-camera-feeder", "petkit-yumshare-dual-hopper", "wopet-heritage-view-camera-feeder"]
 comparisonRecommendation:
   title: "Granary Camera ist die ausgewogenste Gesamtwahl"
   text: "Petlibro kombiniert nachvollziehbare Kameradaten mit einem etablierten Fütterungskonzept. PETKIT richtet sich stärker an Zwei-Futter-Szenarien, WOPET an große Vorräte."

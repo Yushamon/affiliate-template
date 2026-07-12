@@ -49,13 +49,7 @@ images:
   comparison:
     src: "/images/products/wopet-cube-air-ca10/comparison.webp"
     alt: "WOPET Cube Air WiFi Pet Feeder CA10"
-  gallery:
-    - src: "/images/products/wopet-cube-air-ca10/gallery-1.webp"
-      alt: "WOPET Cube Air WiFi Pet Feeder CA10 Ansicht 1"
-    - src: "/images/products/wopet-cube-air-ca10/gallery-2.webp"
-      alt: "WOPET Cube Air WiFi Pet Feeder CA10 Ansicht 2"
-    - src: "/images/products/wopet-cube-air-ca10/gallery-3.webp"
-      alt: "WOPET Cube Air WiFi Pet Feeder CA10 Ansicht 3"
+  gallery: []
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

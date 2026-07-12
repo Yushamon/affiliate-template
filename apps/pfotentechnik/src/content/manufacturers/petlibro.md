@@ -111,13 +111,13 @@ weaknesses:
   - "Nicht jedes Modell ist für mehrere Tiere geeignet"
 
 productSlugs:
-  - "petlibro-granary-camera"
+  - "petlibro-granary-camera-feeder"
   - "petlibro-polar"
   - "petlibro-one-rfid"
   - "petlibro-air"
 
 featuredProductSlugs:
-  - "petlibro-granary-camera"
+  - "petlibro-granary-camera-feeder"
   - "petlibro-polar"
   - "petlibro-one-rfid"
 
@@ -131,7 +131,7 @@ series:
       - "App-Steuerung"
       - "Kameraüberwachung"
     productSlugs:
-      - "petlibro-granary-camera"
+      - "petlibro-granary-camera-feeder"
 
   - key: "polar"
     name: "Polar"

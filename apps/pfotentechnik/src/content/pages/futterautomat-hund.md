@@ -49,12 +49,12 @@ premiumBlocks:
     cards:
       - label: "Preis-Leistung"
         title: "Petlibro Granary WiFi"
-        productKey: "petlibro-granary-wifi"
+        productKey: "petlibro-granary-wifi-feeder"
         text: "Großer Behälter, App-Steuerung und Batterie-Backup."
 
       - label: "Kontrolle"
         title: "Petlibro Granary Camera"
-        productKey: "petlibro-granary-camera"
+        productKey: "petlibro-granary-camera-feeder"
         text: "Livebild, Benachrichtigungen und Zwei-Wege-Audio."
 
       - label: "Portionskontrolle"
@@ -63,9 +63,9 @@ premiumBlocks:
         text: "Wiegefunktion und gleichmäßige Portionierung."
 
 comparisonProducts:
-  - "petlibro-granary-wifi"
+  - "petlibro-granary-wifi-feeder"
   - "xiaomi-smart-pet-food-feeder-2"
-  - "petlibro-granary-camera"
+  - "petlibro-granary-camera-feeder"
 
 comparisonRecommendation:
   title: "Unsere Empfehlung für die meisten Hunde"
@@ -84,13 +84,11 @@ healthBridge:
   eyebrow: "Gesundheit"
   title: "Automatisierung ersetzt keine Beobachtung"
   text: "Ein Futterautomat unterstützt regelmäßige Mahlzeiten, erkennt aber weder Krankheiten noch verändertes Fressverhalten zuverlässig."
-  href: "/tierkrankenversicherung"
-  cta: "Absicherung für Tierarztkosten prüfen"
 
 closingCta:
   title: "Den passenden Futterautomaten auswählen"
   text: "Vergleiche Größe, Portionierung und Alltagstauglichkeit, bevor du dich für ein Modell entscheidest."
-  productKey: "petlibro-granary-wifi"
+  productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
   secondaryHref: "/smarte-futterautomaten"
   secondaryLabel: "Alle Futterautomaten vergleichen"

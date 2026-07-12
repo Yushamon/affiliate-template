@@ -31,7 +31,7 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "Petlibro für Trockenfutter, Cat Mate für Nassfutter, SureFeed für getrennten Zugang"
     text: "Die beste Wahl folgt dem Einsatzbereich. Petlibro Granary WiFi ist ein ausgewogener Trockenfutter-Allrounder, PETKIT Fresh Element Solo besonders kompakt, Xiaomi stark im Smart-Home-Kontext. Cat Mate organisiert vorbereitete Nassfutter-Fächer, während SureFeed in Mehrkatzenhaushalten den Zugang kontrolliert."
-comparisonProducts: ["petlibro-granary-wifi", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500", "surefeed-microchip-pet-feeder", "oneisall-5l-automatic-cat-feeder"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500", "surefeed-microchip-pet-feeder", "oneisall-5l-automatic-cat-feeder"]
 comparisonRecommendation:
   title: "Granary WiFi ist der ausgewogenste Trockenfutter-Allrounder"
   text: "Für Nassfutter und Mehrtierhaushalte sind andere Bauarten sinnvoller. Deshalb ist die Gesamtwahl kein Ersatz für die Auswahl nach Futterart und Zugang."

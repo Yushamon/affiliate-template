@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Bewusst"
         title: "Weniger Meldungen"
         text: "Füllstand, Stau und Fressverhalten müssen direkt kontrolliert werden."
-comparisonProducts: ["cat-mate-c500", "petlibro-granary-wifi", "petkit-fresh-element-solo"]
+comparisonProducts: ["cat-mate-c500", "petlibro-granary-wifi-feeder", "petkit-fresh-element-solo"]
 comparisonRecommendation:
   title: "Offline ist ein Bedienkonzept, kein Qualitätsurteil"
   text: "Der Cat Mate C500 arbeitet ohne App. Vernetzte Modelle können Zeitpläne lokal weiterführen, bieten aber zusätzliche Fernfunktionen. Entscheidend ist das dokumentierte Verhalten bei Verbindungsabbruch."

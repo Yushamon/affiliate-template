@@ -26,7 +26,7 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "Xiaomi und Petlibro sind die ausgewogensten Optionen für kleinere Hunde"
     text: "Xiaomi Smart Pet Food Feeder 2 und Petlibro Granary WiFi verbinden größere Vorräte mit App und Backup. WOPET bietet besonders viel Behältervolumen, HoneyGuardian eine preisorientierte Alternative. Für große oder kräftige Hunde sind viele dieser Modelle nur eingeschränkt geeignet; maximale Ausgabe, Napf und Standfestigkeit müssen ausdrücklich passen."
-comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi", "wopet-patrol-f07-pro", "honeyguardian-smart-pet-feeder-s305d"]
+comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "wopet-patrol-f07-pro", "honeyguardian-smart-pet-feeder-s305d"]
 comparisonRecommendation:
   title: "Xiaomi für Übersicht, Petlibro für ausgewogene Bedienung"
   text: "Beide eignen sich vor allem für kleine bis mittelgroße Hunde. WOPET punktet beim Vorrat, HoneyGuardian beim Preis-Leistungs-Ansatz."

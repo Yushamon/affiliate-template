@@ -36,7 +36,7 @@ premiumBlocks:
       - label: "Mehr Funktionen"
         title: "PETKIT YumShare Dual-Hopper 2"
         text: "Zwei Futterkammern, Kamera und erweiterte Tiererkennung in einem System."
-comparisonProducts: ["petlibro-granary-camera", "petkit-yumshare-dual-hopper-2"]
+comparisonProducts: ["petlibro-granary-camera-feeder", "petkit-yumshare-dual-hopper"]
 comparisonRecommendation:
   title: "Granary Camera ist die unkompliziertere Kamera-Wahl"
   text: "Wer zwei Futtersorten oder erweiterte Erkennungsfunktionen benötigt, findet im YumShare Dual-Hopper 2 das vielseitigere, komplexere System."
@@ -47,12 +47,10 @@ healthBridge:
   eyebrow: "Gesundheit"
   title: "Ein Livebild ist keine Diagnose"
   text: "Video kann zeigen, dass ein Tier am Napf war. Es erklärt nicht, warum es weniger frisst oder sich anders verhält. Auffällige Veränderungen müssen persönlich geprüft und gegebenenfalls fachlich abgeklärt werden."
-  href: "/tierkrankenversicherung"
-  cta: "Absicherung für Tierarztkosten prüfen"
 closingCta:
   title: "Kamera nur mit klarem Nutzen wählen"
   text: "Wenn Livekontrolle deinen Alltag verbessert, ist ein Kameramodell sinnvoll. Für reine Zeitpläne reicht ein einfacheres App-System."
-  productKey: "petlibro-granary-camera"
+  productKey: "petlibro-granary-camera-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
   secondaryHref: "/futterautomat-mit-app"
   secondaryLabel: "App-Modelle ohne Kamerafokus ansehen"

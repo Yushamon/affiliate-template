@@ -30,7 +30,7 @@ premiumBlocks:
     eyebrow: "Vor dem Kauf"
     title: "Vier Ausschlusskriterien"
     items: ["Zu kleine maximale Ausgabe", "Nicht freigegebene Krokettengröße", "Leichtes oder kippbares Gehäuse", "Unpassende Napfform und Fresshaltung"]
-comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi", "petlibro-granary-camera"]
+comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "petlibro-granary-camera-feeder"]
 comparisonRecommendation:
   title: "Großer Vorrat allein reicht nicht"
   text: "Die verglichenen Modelle bieten größere Behälter oder zusätzliche Kontrolle, sind aber nicht pauschal für jeden großen Hund geeignet. Herstellerfreigabe und praktischer Portionsbereich bleiben entscheidend."

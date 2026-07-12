@@ -54,8 +54,6 @@ images:
       alt: "HoneyGuardian A305D Ansicht 1"
     - src: "/images/products/honeyguardian-a305d/gallery-2.webp"
       alt: "HoneyGuardian A305D Ansicht 2"
-    - src: "/images/products/honeyguardian-a305d/gallery-3.webp"
-      alt: "HoneyGuardian A305D Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

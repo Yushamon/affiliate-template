@@ -44,7 +44,7 @@ premiumBlocks:
       - label: "Ausgabe"
         title: "Napf oder Futterfach"
         text: "Hier entscheidet sich, ob Menge, Futterart und Reinigung zum Tier passen."
-comparisonProducts: ["petlibro-granary-wifi", "petkit-fresh-element-solo", "cat-mate-c500"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "cat-mate-c500"]
 comparisonRecommendation:
   title: "Die Bauart ist wichtiger als die Zahl der Funktionen"
   text: "Granary WiFi und Fresh Element Solo dosieren Trockenfutter aus einem Vorrat. Der Cat Mate C500 arbeitet mit vorbereiteten Fächern und folgt damit einem anderen technischen Prinzip."

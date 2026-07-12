@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "3"
         title: "Automat kalibrieren"
         text: "Mehrere Ausgaben wiegen und Verlauf regelmäßig kontrollieren."
-comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petkit-fresh-element-solo", "petlibro-granary-wifi"]
+comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petkit-fresh-element-solo", "petlibro-granary-wifi-feeder"]
 comparisonRecommendation:
   title: "Feine Dosierung und Kontrolle sind wichtiger als Behältergröße"
   text: "Wiegefunktion, kleine Förderschritte und ein nachvollziehbares Protokoll können die Umsetzung erleichtern. Sie ersetzen weder Zielration noch Verlaufskontrolle."

@@ -39,7 +39,7 @@ premiumBlocks:
       - label: "Individuell"
         title: "Diät oder Krankheit"
         text: "Zugangskontrolle und tierärztlich festgelegte Rationen sind wichtiger als App-Komfort."
-comparisonProducts: ["petkit-yumshare-dual-hopper-2", "petlibro-granary-camera", "petlibro-granary-wifi"]
+comparisonProducts: ["petkit-yumshare-dual-hopper", "petlibro-granary-camera-feeder", "petlibro-granary-wifi-feeder"]
 comparisonRecommendation:
   title: "Getrennte Ausgabe ist nur der erste Schritt"
   text: "Ein Dual-Hopper trennt Futterquellen, eine Kamera erleichtert Beobachtung und ein klassischer Vorratsautomat kann zwei Schalen bedienen. Keines dieser Konzepte garantiert automatisch, welche Katze frisst."

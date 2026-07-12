@@ -79,12 +79,12 @@ weaknesses:
   - "Ersatzteile teilweise teuer"
 productSlugs:
   - "petkit-yumshare-solo-2"
-  - "petkit-yumshare-dual-hopper-2"
+  - "petkit-yumshare-dual-hopper"
   - "petkit-fresh-element-solo"
   - "petkit-fresh-element-infinity"
 featuredProductSlugs:
   - "petkit-yumshare-solo-2"
-  - "petkit-yumshare-dual-hopper-2"
+  - "petkit-yumshare-dual-hopper"
   - "petkit-fresh-element-solo"
 series:
   - key: "fresh-element"

@@ -179,7 +179,7 @@ experience:
 
 alternatives:
 
-  - petlibro-granary-camera
+  - petlibro-granary-camera-feeder
 
   - petlibro-polar
 

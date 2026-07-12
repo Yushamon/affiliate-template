@@ -46,7 +46,7 @@ premiumBlocks:
         text: "Fünf Fächer und Kühlakkus statt offenem Vorratsbehälter."
         href: "/futterautomat-nassfutter"
         cta: "Nassfutter-Lösung ansehen"
-comparisonProducts: ["petlibro-granary-wifi", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500"]
+comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500"]
 comparisonRecommendation:
   title: "Der Granary WiFi ist die vielseitigste Trockenfutter-Wahl"
   text: "Er bietet verständliche App-Funktionen und ausreichend Vorrat. Für kleine Stellflächen ist der Fresh Element Solo interessant; bei Nassfutter passt die Konstruktion des Cat Mate C500 besser."
@@ -57,12 +57,10 @@ healthBridge:
   eyebrow: "Gesundheit"
   title: "Verändertes Fressverhalten ernst nehmen"
   text: "Ein Automat dokumentiert Ausgaben, aber nicht zuverlässig die tatsächliche Futteraufnahme. Frisst eine Katze plötzlich deutlich weniger oder gar nicht, sollte das zeitnah fachlich abgeklärt werden."
-  href: "/tierkrankenversicherung"
-  cta: "Absicherung für Tierarztkosten prüfen"
 closingCta:
   title: "Routine wählen, Funktionen danach"
   text: "Prüfe zuerst Futterart, Portionsgröße und Zugang zum Napf. Danach lassen sich App und Komfortfunktionen sinnvoll auswählen."
-  productKey: "petlibro-granary-wifi"
+  productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
   secondaryHref: "/futterautomat-mit-app"
   secondaryLabel: "App-Modelle vergleichen"

@@ -44,11 +44,6 @@ const premiumProducts = products.map((product) => ({
   highlights: product.data.strengths,
   tags: product.data.tags
 }));
-const resolveProduct = (key: string) =>
-  productBySlug.get(key) ??
-  products.find((product) =>
-    product.data.slug.replace(/-feeder(?=-|$)/g, "") === key
-  );
 
 const author = page.data.author ?? siteMeta.defaultAuthor;
 const publishedAt =
@@ -99,11 +94,11 @@ const decisionRule = page.data.decisionKey
 
 const decisionProducts = decisionRecommendations
   .map(({ key }) => key)
-  .filter((key) => Boolean(resolveProduct(key)));
+  .filter((key) => productBySlug.has(key));
 
 const topDecisionRecommendation = decisionRecommendations[0];
 const topDecisionProduct = topDecisionRecommendation
-  ? resolveProduct(topDecisionRecommendation.key)
+  ? productBySlug.get(topDecisionRecommendation.key)
   : undefined;
 
 const decisionIntro = page.data.decisionIntro ??
@@ -113,7 +108,7 @@ const decisionThemeColor = page.data.themeColor ?? "teal";
 const comparisonProducts = decisionProducts.length > 0
   ? decisionProducts
   : (page.data.comparisonProducts ?? [])
-      .filter((key) => Boolean(resolveProduct(key)));
+      .filter((key) => productBySlug.has(key));
 
 const comparisonExperienceConfig = page.data.comparisonRecommendation ?? (
   decisionProducts.length > 0
@@ -133,10 +128,10 @@ const comparisonExperienceConfig = page.data.comparisonRecommendation ?? (
     : null
 );
 const comparisonProductEntries = comparisonProducts
-  .map((slug) => resolveProduct(slug))
+  .map((slug) => productBySlug.get(slug))
   .filter((product): product is (typeof products)[number] => Boolean(product));
 const closingProduct = page.data.closingCta
-  ? resolveProduct(page.data.closingCta.productKey)
+  ? productBySlug.get(page.data.closingCta.productKey)
   : undefined;
 
 const getReadingTimeMinutes = (content: string) => {

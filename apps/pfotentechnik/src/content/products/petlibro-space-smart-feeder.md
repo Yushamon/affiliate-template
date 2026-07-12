@@ -51,8 +51,6 @@ images:
       alt: "PETLIBRO Space Smart Feeder Ansicht 1"
     - src: "/images/products/petlibro-space-smart-feeder/gallery-2.webp"
       alt: "PETLIBRO Space Smart Feeder Ansicht 2"
-    - src: "/images/products/petlibro-space-smart-feeder/gallery-3.webp"
-      alt: "PETLIBRO Space Smart Feeder Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

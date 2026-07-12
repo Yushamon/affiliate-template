@@ -26,7 +26,7 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "SureFeed trennt den Zugang am klarsten"
     text: "Wenn zwei Katzen unterschiedliche Rationen oder Futtersorten benötigen, bieten SureFeed-Modelle den kontrolliertesten Zugang. PETKIT Dual-Hopper trennt zwei Vorräte, oneisall verteilt auf zwei Schalen und Petlibro bietet Doppelschalen-Varianten. Doppelte Auslässe verhindern jedoch nicht, dass eine Katze beide Portionen frisst."
-comparisonProducts: ["surefeed-microchip-pet-feeder", "surefeed-microchip-pet-feeder-connect", "petkit-yumshare-dual-hopper-2", "oneisall-5l-automatic-cat-feeder", "petlibro-granary-wifi"]
+comparisonProducts: ["surefeed-microchip-pet-feeder", "surefeed-microchip-pet-feeder-connect", "petkit-yumshare-dual-hopper", "oneisall-5l-automatic-cat-feeder", "petlibro-granary-wifi-feeder"]
 comparisonRecommendation:
   title: "Mikrochip-Zugang bei unterschiedlichen Rationen"
   text: "SureFeed ist die stärkste Lösung gegen Futterklau. Für ähnlich fressende Katzen können Dual-Hopper oder Doppelschale komfortabler und günstiger sein."

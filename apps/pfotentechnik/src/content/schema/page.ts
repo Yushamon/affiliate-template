@@ -228,9 +228,9 @@ export const pageContentSchema =
 
         text: z.string(),
 
-        href: z.string(),
+        href: z.string().optional(),
 
-        cta: z.string()
+        cta: z.string().optional()
       })
       .optional(),
 
