@@ -432,3 +432,76 @@ const relatedItems = relatedEntries.map((entry) => ({
 
   <RelatedArticles items={relatedItems} />
 </ProjectLayout>
+
+<style>
+  .decision-comparison-intro,
+  .decision-template-section { margin: 52px 0; }
+  .decision-comparison-intro { max-width: 820px; }
+  .decision-comparison-intro h2,
+  .decision-template-section > h2 {
+    margin: 0 0 14px;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+  }
+  .decision-comparison-intro p,
+  .decision-template-section > p {
+    max-width: 820px;
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .decision-template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .decision-template-card {
+    display: block;
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    color: inherit;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 12px 34px rgba(20, 32, 26, 0.05);
+  }
+  a.decision-template-card {
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  a.decision-template-card:hover {
+    border-color: rgba(22, 163, 74, 0.28);
+    transform: translateY(-2px);
+    box-shadow: 0 16px 42px rgba(20, 32, 26, 0.09);
+  }
+  .decision-template-card h3 {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+  }
+  .decision-template-card p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .decision-template-card p:last-child { margin-bottom: 0; }
+  .decision-template-card strong { color: var(--primary-dark); }
+  .decision-template-card-positive {
+    background: linear-gradient(135deg, #fff, rgba(240, 253, 244, 0.72));
+  }
+  .decision-template-card-negative {
+    background: linear-gradient(135deg, #fff, rgba(255, 247, 237, 0.75));
+  }
+  @media (max-width: 820px) {
+    .decision-comparison-intro,
+    .decision-template-section { margin: 38px 0; }
+    .decision-template-grid { grid-template-columns: 1fr; gap: 14px; }
+    .decision-template-card { padding: 20px; border-radius: 18px; }
+    .decision-template-card h3 { overflow-wrap: anywhere; font-size: 20px; }
+  }
+</style>
