@@ -1,12 +1,21 @@
 ---
-import { getProductsByTag, products, type ProductKey } from "@app/data/products";
-import {
-  DEFAULT_PROJECT,
-  getProjectImage,
-  type ProjectImageKey
-} from "@app/data/projectImages";
 import { stripLeadingIcon } from "../utils/content";
-import { resolveImage } from "../utils/images";
+
+type ProjectImageKey =
+  | "hero" | "feature" | "inline" | "comparison" | "guide" | "faq"
+  | "product" | "category" | "decision" | "calculator" | "manufacturer"
+  | "feederHero" | "feederComparison" | "feederWetFood";
+
+type PremiumProduct = {
+  key: string;
+  name: string;
+  productUrl: string;
+  badge?: string;
+  recommendation: string;
+  rating: number;
+  highlights: string[];
+  tags: string[];
+};
 
 type PremiumBlockType =
   | "answer"
@@ -30,7 +39,7 @@ type PremiumCard = {
   href?: string;
   cta?: string;
   badge?: string;
-  productKey?: ProductKey;
+  productKey?: string;
   items?: string[];
 };
 
@@ -54,13 +63,15 @@ interface Props {
   blocks?: PremiumBlock[];
   project?: string;
   heroImage?: string;
+  products?: PremiumProduct[];
 }
 
 const {
   blocks = [],
-  project = DEFAULT_PROJECT,
-  heroImage
+  products = []
 } = Astro.props;
+
+const productByKey = new Map(products.map((product) => [product.key, product]));
 
 const getBlockImageKey = (type: PremiumBlockType): ProjectImageKey | null => {
   if (
@@ -121,19 +132,16 @@ const getBlockIcon = (type: PremiumBlockType) => {
     {blocks.map((block) => {
       const filteredProducts =
         block.type === "products" && block.productFilter
-          ? getProductsByTag(block.productFilter, block.productLimit ?? 4)
+          ? products
+              .filter((product) => product.tags.includes(block.productFilter!))
+              .slice(0, block.productLimit ?? 4)
           : [];
 
       const hasCards = block.cards && block.cards.length > 0;
       const hasProducts = filteredProducts.length > 0;
       const hasList = block.items && block.items.length > 0;
-      const blockImageKey = block.imageKey ?? getBlockImageKey(block.type);
       const isExplicitBlockImage = Boolean(block.image);
-      const blockImage = resolveImage({
-        image: block.image,
-        imageKey: blockImageKey,
-        getFallback: (key) => getProjectImage(project, key)
-      });
+      const blockImage = block.image;
       const shouldRenderBlockImage = Boolean(blockImage) && isExplicitBlockImage;
 
       return (
@@ -171,7 +179,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
 
           {hasProducts && (
             <div class="premium-v3-grid premium-v3-grid-products">
-              {filteredProducts.map(({ product }) => (
+              {filteredProducts.map((product) => (
                 <a
                   class="premium-v3-card premium-v3-product-card premium-v3-card-link"
                   href={product.productUrl}
@@ -202,7 +210,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
             <div class={`premium-v3-grid premium-v3-grid-${block.type}`}>
               {block.cards?.map((card, index) => {
                 const product = card.productKey
-                  ? products[card.productKey]
+                  ? productByKey.get(card.productKey)
                   : null;
 
                 const href = card.href ?? product?.productUrl;

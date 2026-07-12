@@ -46,6 +46,17 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 
+const premiumProducts = Object.entries(products).map(([key, product]) => ({
+  key,
+  name: product.name,
+  productUrl: product.productUrl,
+  badge: product.badge,
+  recommendation: product.recommendation,
+  rating: product.rating,
+  highlights: product.highlights,
+  tags: product.useCases
+}));
+
 const { Content, headings } = await render(page);
 
 const allPages = await getCollection("pages");
@@ -240,6 +251,7 @@ const comparisonProducts = (page.data.comparisonProducts ?? [])
       blocks={page.data.premiumBlocks as any}
       project={projectKey}
       heroImage={heroImage}
+      products={premiumProducts}
     />
 
     {

@@ -15,7 +15,7 @@ import { siteMeta } from "../project.config";
 import {
   getDecisionProductRecommendations,
   getDecisionRule
-} from "../data/decisionProducts";
+} from "../domain/productDecision";
 import {
   getPageBreadcrumbs,
   getRelatedContent
@@ -34,6 +34,16 @@ const { Content, headings } = await render(page);
 const breadcrumbs = getPageBreadcrumbs(page);
 const products = await getCollection("products");
 const productBySlug = new Map(products.map((product) => [product.data.slug, product]));
+const premiumProducts = products.map((product) => ({
+  key: product.data.slug,
+  name: product.data.title,
+  productUrl: `/produkt/${product.data.slug}/`,
+  badge: product.data.manufacturer.name,
+  recommendation: product.data.recommendation,
+  rating: product.data.rating,
+  highlights: product.data.strengths,
+  tags: product.data.tags
+}));
 const resolveProduct = (key: string) =>
   productBySlug.get(key) ??
   products.find((product) =>
@@ -80,7 +90,7 @@ const heroImage = localPublicImageExists(configuredHeroImage)
       : fallbackHeroImage;
 const ogImage = page.data.ogImage ?? heroImage;
 const decisionRecommendations = page.data.decisionKey
-  ? getDecisionProductRecommendations(page.data.decisionKey)
+  ? getDecisionProductRecommendations(page.data.decisionKey, products)
   : [];
 
 const decisionRule = page.data.decisionKey
@@ -244,6 +254,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       blocks={page.data.premiumBlocks as any}
       project={projectKey}
       heroImage={heroImage}
+      products={premiumProducts}
     />
     {
       comparisonProducts.length > 1 && (

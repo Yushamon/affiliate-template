@@ -17,7 +17,7 @@ manufacturer:
 category:
   key: futterautomaten
   label: Futterautomaten
-  path: /futterautomaten/
+  path: /smarte-futterautomaten/
 
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
@@ -28,7 +28,7 @@ author:
 seo:
   title: "PETKIT YumShare Solo 2 Test"
   description: "Bewertung, Erfahrungen, Alternativen und Praxiseinschätzung."
-  canonical: "/produkte/petkit-yumshare-solo-2/"
+  canonical: "/produkt/petkit-yumshare-solo-2/"
   sitemap: true
   priority: 0.9
 

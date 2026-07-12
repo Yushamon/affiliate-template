@@ -12,7 +12,7 @@ manufacturer:
 category:
   key: "futterautomaten"
   label: "Futterautomaten"
-  path: "/futterautomaten/"
+  path: "/smarte-futterautomaten/"
 productUrl: "/produkt/wopet-patrol-f07-pro"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"

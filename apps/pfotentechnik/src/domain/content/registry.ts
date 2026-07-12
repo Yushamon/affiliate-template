@@ -86,7 +86,7 @@ const getProductHref = (
 ) =>
   normalizePath(
     entry.data.productUrl ??
-      `/produkte/${entry.data.slug}`
+      `/produkt/${entry.data.slug}/`
   );
 
 const getManufacturerHref = (
