@@ -20,6 +20,11 @@ interface Author {
   url?: string;
 }
 
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
 interface Props {
   title: string;
   description: string;
@@ -39,6 +44,7 @@ interface Props {
     label: string;
     href: string;
   }>;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 const {
@@ -56,7 +62,8 @@ const {
   schemaType,
   includeBreadcrumbSchema,
   webAnalyticsToken,
-  headerLinks = projectConfig.headerLinks
+  headerLinks = projectConfig.headerLinks,
+  breadcrumbs
 } = Astro.props;
 
 const pageTitle = seoTitle ?? title;
@@ -151,9 +158,20 @@ const articleSchema = {
 };
 
 const breadcrumbSchema = createBreadcrumbSchema(
-  isHome
-    ? [{ name: "Startseite", url: site.domain }]
-    : [
+  breadcrumbs?.length
+    ? breadcrumbs.map((item, index) => ({
+        name: item.label,
+        url: toAbsoluteUrl(
+          site.domain,
+          item.href ??
+            (index === breadcrumbs.length - 1
+              ? normalizedCanonical
+              : "/")
+        )
+      }))
+    : isHome
+      ? [{ name: "Startseite", url: site.domain }]
+      : [
         { name: "Startseite", url: site.domain },
         ...(categoryLabel
           ? [
@@ -167,7 +185,7 @@ const breadcrumbSchema = createBreadcrumbSchema(
             ]
           : []),
         { name: pageTitle, url: canonicalUrl }
-      ]
+        ]
 );
 
 const faqSchema = createFaqSchema(faq);

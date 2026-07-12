@@ -3,6 +3,11 @@ import { getCollection, getEntry, render } from "astro:content";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import {
+  getComparisonBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
 
 type Props = { comparisonId: string };
 
@@ -20,6 +25,32 @@ if (!entry) throw new Error(`Vergleich "${comparisonId}" wurde nicht gefunden.`)
 
 const comparison = entry.data;
 const { Content } = await render(entry);
+const breadcrumbs =
+  getComparisonBreadcrumbs(entry);
+
+const relatedEntries = await getRelatedContent({
+  currentSlug: comparison.slug,
+  tags: comparison.related?.tags.length
+    ? comparison.related.tags
+    : comparison.tags,
+  sections: comparison.hub?.sections ?? [],
+  type: "comparison",
+  exclude: comparison.related?.exclude ?? [],
+  limit: comparison.related?.limit ?? 4
+});
+
+const relatedItems = relatedEntries.map((related) => ({
+  href: related.href,
+  label: related.type === "product"
+    ? "Produkt"
+    : related.type === "manufacturer"
+      ? "Hersteller"
+      : related.type === "comparison"
+        ? "Vergleich"
+        : "Ratgeber",
+  title: related.hubTitle,
+  text: related.hubDescription
+}));
 ---
 
 <ProjectLayout
@@ -30,9 +61,10 @@ const { Content } = await render(entry);
   canonical={comparison.seo?.canonical ?? `/vergleiche/${comparison.slug}/`}
   faq={comparison.faq}
   categoryLabel="Vergleiche"
+  breadcrumbs={breadcrumbs}
   schemaType="article"
 >
-  <Breadcrumbs categoryLabel="Vergleiche" categoryHref="/vergleiche/" title={comparison.title} />
+  <Breadcrumbs items={breadcrumbs} />
 
   <main class="comparison-detail">
     <header class="comparison-hero">
@@ -72,6 +104,7 @@ const { Content } = await render(entry);
     </section>
 
     <article class="comparison-content"><Content /></article>
+    <RelatedArticles items={relatedItems} />
     {comparison.faq.length > 0 && <FAQ items={comparison.faq} />}
   </main>
 </ProjectLayout>

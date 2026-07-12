@@ -24,6 +24,10 @@ import {
   getDecisionRule
 } from "../data/decisionProducts";
 import { internalLinkDefinitions } from "../data/internalLinks";
+import {
+  getPageBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
@@ -35,7 +39,7 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content, headings } = await render(page);
-const allPages = await getCollection("pages");
+const breadcrumbs = getPageBreadcrumbs(page);
 
 const author = page.data.author ?? siteMeta.defaultAuthor;
 const publishedAt =
@@ -141,17 +145,29 @@ const getReadingTimeMinutes = (content: string) => {
 
 const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
 
-const relatedPages = allPages
-  .filter((candidate) => {
-    if (candidate.data.slug === page.data.slug) return false;
+const relatedEntries = await getRelatedContent({
+  currentSlug: page.data.slug,
+  tags: page.data.related?.tags.length
+    ? page.data.related.tags
+    : page.data.tags,
+  sections: page.data.hub?.sections ?? [],
+  type: page.data.type,
+  exclude: page.data.related?.exclude ?? [],
+  limit: page.data.related?.limit ?? 3
+});
 
-    const commonTags = candidate.data.tags.filter((tag) =>
-      page.data.tags.includes(tag)
-    );
-
-    return candidate.data.category === page.data.category || commonTags.length > 0;
-  })
-  .slice(0, 3);
+const relatedItems = relatedEntries.map((entry) => ({
+  href: entry.href,
+  label: entry.type === "product"
+    ? "Produkt"
+    : entry.type === "manufacturer"
+      ? "Hersteller"
+      : entry.type === "comparison"
+        ? "Vergleich"
+        : "Ratgeber",
+  title: entry.hubTitle,
+  text: entry.hubDescription
+}));
 ---
 
 <ProjectLayout
@@ -166,12 +182,9 @@ const relatedPages = allPages
   publishedAt={publishedAt}
   updatedAt={updatedAt}
   categoryLabel={page.data.categoryLabel}
+  breadcrumbs={breadcrumbs}
 >
-  <Breadcrumbs
-    categoryLabel={page.data.categoryLabel}
-    title={page.data.title}
-    categoryHref={page.data.categoryPath ?? projectConfig.categoryPath}
-  />
+  <Breadcrumbs items={breadcrumbs} />
 
   <header class="article-header">
     <span class="article-category">{page.data.categoryLabel}</span>
@@ -394,5 +407,5 @@ const relatedPages = allPages
     <FAQ items={page.data.faq} />
   </article>
 
-  <RelatedArticles pages={relatedPages} />
+  <RelatedArticles items={relatedItems} />
 </ProjectLayout>

@@ -3,34 +3,32 @@ import Card from "./ui/Card.astro";
 import Grid from "./ui/Grid.astro";
 import Section from "./ui/Section.astro";
 
-interface Page {
-  data: {
-    title: string;
-    description: string;
-    slug: string;
-    categoryLabel: string;
-  };
+interface RelatedItem {
+  href: string;
+  label: string;
+  title: string;
+  text: string;
 }
 
 interface Props {
-  pages: Page[];
+  items: RelatedItem[];
 }
 
-const { pages } = Astro.props;
+const { items } = Astro.props as Props;
 ---
 
-{pages.length > 0 && (
+{items.length > 0 && (
   <Section
     eyebrow="Weiterführende Inhalte"
     title="Das könnte dich auch interessieren"
   >
     <Grid columns={3}>
-      {pages.map((page) => (
+      {items.map((item) => (
         <Card
-          href={`/${page.data.slug}`}
-          label={page.data.categoryLabel}
-          title={page.data.title}
-          text={page.data.description}
+          href={item.href}
+          label={item.label}
+          title={item.title}
+          text={item.text}
           cta="Weiterlesen"
         />
       ))}

@@ -9,10 +9,15 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 
 import {
   getAlternativeRecommendations
 } from "@app/domain/productAlternatives";
+import {
+  getProductBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
 
 type PageProps = {
   contentProductId: string;
@@ -54,6 +59,9 @@ if (!contentEntry) {
 const contentProduct =
   contentEntry.data;
 
+const breadcrumbs =
+  getProductBreadcrumbs(contentEntry);
+
 const allProducts =
   await getCollection("products");
 
@@ -63,6 +71,30 @@ const alternativeRecommendations =
     allProducts,
     3
   );
+
+const relatedEntries = await getRelatedContent({
+  currentSlug: contentProduct.slug,
+  tags: contentProduct.related?.tags.length
+    ? contentProduct.related.tags
+    : contentProduct.tags,
+  sections: contentProduct.hub?.sections ?? [],
+  type: "product",
+  exclude: contentProduct.related?.exclude ?? [],
+  limit: contentProduct.related?.limit ?? 4
+});
+
+const relatedItems = relatedEntries.map((entry) => ({
+  href: entry.href,
+  label: entry.type === "product"
+    ? "Produkt"
+    : entry.type === "manufacturer"
+      ? "Hersteller"
+      : entry.type === "comparison"
+        ? "Vergleich"
+        : "Ratgeber",
+  title: entry.hubTitle,
+  text: entry.hubDescription
+}));
 
 const pageTitle =
   contentProduct.title;
@@ -250,43 +282,6 @@ const everydayCriteria = [
   }
 ];
 
-const internalLinks = [
-  {
-    href:
-      "/smarte-futterautomaten",
-
-    label:
-      "Smarte Futterautomaten im Vergleich"
-  },
-  {
-    href:
-      "/futterautomat-katze",
-
-    label:
-      "Futterautomaten für Katzen"
-  },
-  {
-    href:
-      "/futterautomat-hund",
-
-    label:
-      "Futterautomaten für Hunde"
-  },
-  {
-    href:
-      "/futterautomat-mit-app",
-
-    label:
-      "Futterautomaten mit App"
-  },
-  {
-    href:
-      "/futterautomat-mit-kamera",
-
-    label:
-      "Futterautomaten mit Kamera"
-  }
-];
 ---
 
 <ProjectLayout
@@ -300,13 +295,10 @@ const internalLinks = [
   publishedAt={publishedAt}
   updatedAt={updatedAt}
   categoryLabel={categoryLabel}
+  breadcrumbs={breadcrumbs}
   schemaType="article"
 >
-  <Breadcrumbs
-    categoryLabel={categoryLabel}
-    categoryHref={categoryHref}
-    title={pageTitle}
-  />
+  <Breadcrumbs items={breadcrumbs} />
 
   <main class="product-detail pt-product-detail">
     <ProductReview
@@ -404,29 +396,6 @@ const internalLinks = [
       </div>
     </aside>
 
-    <section
-      class="pt-product-links"
-      aria-labelledby="pt-product-links-title"
-    >
-      <span>
-        Weiterlesen
-      </span>
-
-      <h2 id="pt-product-links-title">
-        Passende Vergleiche und Ratgeber
-      </h2>
-
-      <div>
-        {
-          internalLinks.map(
-            (link) => (
-              <a href={link.href}>
-                {link.label}
-              </a>
-            )
-          )
-        }
-      </div>
-    </section>
+    <RelatedArticles items={relatedItems} />
   </main>
 </ProjectLayout>

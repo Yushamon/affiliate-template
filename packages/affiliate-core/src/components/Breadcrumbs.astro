@@ -1,23 +1,25 @@
 ---
-import { projectConfig } from "@app/project.config";
-
-interface Props {
-  categoryLabel: string;
-  title: string;
-  categoryHref?: string;
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
 }
 
-const {
-  categoryLabel,
-  title,
-  categoryHref = projectConfig.categoryPath ?? "/"
-} = Astro.props;
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props as Props;
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
-  <a href="/">Startseite</a>
-  <span>›</span>
-  <a href={categoryHref}>{categoryLabel}</a>
-  <span>›</span>
-  <span>{title}</span>
+  {items.map((item, index) => (
+    <>
+      {index > 0 && <span aria-hidden="true">›</span>}
+      {item.href ? (
+        <a href={item.href}>{item.label}</a>
+      ) : (
+        <span aria-current="page">{item.label}</span>
+      )}
+    </>
+  ))}
 </nav>

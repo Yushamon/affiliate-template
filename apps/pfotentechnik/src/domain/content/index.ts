@@ -16,6 +16,17 @@ export {
   getRelatedContent
 } from "./related";
 
+export {
+  getComparisonBreadcrumbs,
+  getManufacturerBreadcrumbs,
+  getPageBreadcrumbs,
+  getProductBreadcrumbs
+} from "./breadcrumbs";
+
+export type {
+  BreadcrumbItem
+} from "./breadcrumbs";
+
 export type {
   ComparisonEntry,
   ContentEntry,

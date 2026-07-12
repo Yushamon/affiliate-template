@@ -3,7 +3,12 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import { getCollection } from "astro:content";
+import {
+  getManufacturerBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
 import {
   products,
   type ProductKey
@@ -123,6 +128,57 @@ const {
   manufacturer: Manufacturer;
   manufacturerDirectory: Manufacturer[];
 };
+
+const manufacturerEntry =
+  (await getCollection("manufacturers"))
+    .find(
+      (entry) =>
+        entry.data.slug === manufacturer.slug
+    );
+
+const breadcrumbs = manufacturerEntry
+  ? getManufacturerBreadcrumbs(
+      manufacturerEntry
+    )
+  : [
+      {
+        label: "Startseite",
+        href: "/"
+      },
+      {
+        label: "Hersteller",
+        href: "/hersteller/"
+      },
+      {
+        label: manufacturer.name
+      }
+    ];
+
+const relatedEntries = manufacturerEntry
+  ? await getRelatedContent({
+      currentSlug: manufacturerEntry.data.slug,
+      tags: manufacturerEntry.data.related?.tags.length
+        ? manufacturerEntry.data.related.tags
+        : manufacturerEntry.data.tags,
+      sections: manufacturerEntry.data.hub?.sections ?? [],
+      type: "manufacturer",
+      exclude: manufacturerEntry.data.related?.exclude ?? [],
+      limit: manufacturerEntry.data.related?.limit ?? 4
+    })
+  : [];
+
+const relatedItems = relatedEntries.map((entry) => ({
+  href: entry.href,
+  label: entry.type === "product"
+    ? "Produkt"
+    : entry.type === "manufacturer"
+      ? "Hersteller"
+      : entry.type === "comparison"
+        ? "Vergleich"
+        : "Ratgeber",
+  title: entry.hubTitle,
+  text: entry.hubDescription
+}));
 
 const title =
   `${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`;
@@ -347,13 +403,10 @@ const ratingStars = (rating: number) => {
   canonical={`/hersteller/${manufacturer.slug}`}
   faq={faq}
   categoryLabel="Hersteller"
+  breadcrumbs={breadcrumbs}
   schemaType="article"
 >
-  <Breadcrumbs
-    categoryLabel="Hersteller"
-    categoryHref="/smarte-futterautomaten"
-    title={manufacturer.name}
-  />
+  <Breadcrumbs items={breadcrumbs} />
 
 <header class="manufacturer-hero-v3">
 
@@ -1319,6 +1372,7 @@ const ratingStars = (rating: number) => {
       </details>
     )}
 
+    <RelatedArticles items={relatedItems} />
     <FAQ items={faq} />
   </article>
 </ProjectLayout>
