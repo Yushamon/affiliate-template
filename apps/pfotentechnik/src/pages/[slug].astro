@@ -7,11 +7,12 @@ import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import HealthBridge from "../components/HealthBridge.astro";
-import { siteMeta } from "../project.config";
+import { projectConfig, siteMeta } from "../project.config";
 import {
   getDecisionProductRecommendations,
   getDecisionRule
@@ -413,7 +414,10 @@ const relatedItems = relatedEntries.map((entry) => ({
             {closingProduct.data.affiliate && (
               <a
                 class="pt-money-cta-primary"
-                href={closingProduct.data.affiliate.url}
+                href={addAmazonTrackingId(
+                  closingProduct.data.affiliate.url,
+                  projectConfig.affiliate.amazon.trackingId
+                )}
                 rel={closingProduct.data.affiliate.rel}
                 target={closingProduct.data.affiliate.target}
               >

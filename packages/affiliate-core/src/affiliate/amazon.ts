@@ -109,6 +109,23 @@ export function buildAmazonSearchAffiliateUrl(
   return url.toString();
 }
 
+export function addAmazonTrackingId(
+  input: string,
+  trackingId: string
+): string {
+  const source = input.trim();
+  const normalizedTrackingId = trackingId.trim();
+
+  if (!source || !normalizedTrackingId) return source;
+
+  const url = parseAmazonUrl(source);
+  if (!url) return source;
+
+  url.searchParams.set("tag", normalizedTrackingId);
+
+  return url.toString();
+}
+
 function normalizeMarketplace(value?: string) {
   const candidate = (value ?? DEFAULT_AMAZON_MARKETPLACE)
     .trim()

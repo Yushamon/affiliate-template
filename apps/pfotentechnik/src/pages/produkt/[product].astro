@@ -10,6 +10,8 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+import { projectConfig } from "../../project.config";
 
 import {
   getAlternativeRecommendations
@@ -163,6 +165,14 @@ const reviewProduct = {
         },
         affiliate:
           contentProduct.affiliate
+            ? {
+                ...contentProduct.affiliate,
+                url: addAmazonTrackingId(
+                  contentProduct.affiliate.url,
+                  projectConfig.affiliate.amazon.trackingId
+                )
+              }
+            : undefined
       };
 
 const categoryLabel =

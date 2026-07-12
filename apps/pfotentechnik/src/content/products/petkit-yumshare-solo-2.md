@@ -73,7 +73,7 @@ affiliate:
 
   label: "Aktuellen Preis prüfen"
 
-  url: "https://..."
+  url: "https://www.amazon.de/s?k=PETKIT%20YumShare%20Solo%202%20Futterautomat"
 
 rating: 4.8
 

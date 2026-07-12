@@ -10,6 +10,7 @@ export type {
 export {
   DEFAULT_AMAZON_MARKETPLACE,
   DEFAULT_AMAZON_TRACKING_ID,
+  addAmazonTrackingId,
   buildAmazonAffiliateUrl,
   buildAmazonSearchAffiliateUrl,
   createAmazonAffiliateUrl,
