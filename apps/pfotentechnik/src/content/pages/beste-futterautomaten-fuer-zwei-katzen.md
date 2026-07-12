@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Zwei Katzen", "Vergleich", "Mehrtierhaushalt"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "vergleiche"
+  title: "Beste Futterautomaten für zwei Katzen"
+  description: "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang."
+  icon: "🐾"
+  order: 30
 hubPriority: 87
 project: "pfotentechnik"
 heroImageKey: "feederHero"

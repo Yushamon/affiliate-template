@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Katze", "Vergleich", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "vergleiche"
+  title: "Beste Futterautomaten für Katzen"
+  description: "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten."
+  icon: "🐈"
+  order: 10
 hubPriority: 89
 project: "pfotentechnik"
 heroImageKey: "feederHero"

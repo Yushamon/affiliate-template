@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Ohne WLAN", "Vergleich", "Batterie"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "vergleiche"
+  title: "Beste Futterautomaten ohne WLAN"
+  description: "Einfache und unabhängige Lösungen ohne App oder Cloud."
+  icon: "📴"
+  order: 40
 hubPriority: 86
 project: "pfotentechnik"
 heroImageKey: "inline"

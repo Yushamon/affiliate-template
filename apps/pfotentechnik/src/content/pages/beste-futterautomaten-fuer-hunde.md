@@ -11,6 +11,13 @@ tags: ["Futterautomat", "Hund", "Vergleich", "Trockenfutter"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-09"
+hub:
+  sections:
+    - "vergleiche"
+  title: "Beste Futterautomaten für Hunde"
+  description: "Automaten mit passenden Portionsgrößen, stabiler Bauweise und ausreichender Kapazität."
+  icon: "🐕"
+  order: 20
 hubPriority: 84
 project: "pfotentechnik"
 heroImageKey: "feederComparison"

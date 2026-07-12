@@ -20,6 +20,13 @@ tags:
 
 publishedAt: "2026-07-10"
 updatedAt: "2026-07-10"
+hub:
+  sections:
+    - "vergleiche"
+  title: "Beste Futterautomaten für Nassfutter"
+  description: "Modelle mit Kühlung, zeitgesteuerten Fächern oder geschützter Aufbewahrung."
+  icon: "🥣"
+  order: 60
 
 decisionKey: "nassfutter"
 
