@@ -39,8 +39,8 @@ export const projectConfig = {
     { label: "Futterautomaten", href: "/smarte-futterautomaten" },
     { label: "Für Katzen", href: "/futterautomat-katze" },
     { label: "Für Hunde", href: "/futterautomat-hund" },
-    { label: "Vergleiche", href: "/#vergleiche" },
-    { label: "Hersteller", href: "/#hersteller" },
+    { label: "Vergleiche", href: "/vergleiche/" },
+    { label: "Hersteller", href: "/hersteller/" },
     { label: "Wissen", href: "/wissen/" },
   ],
   home: {

@@ -1,7 +1,65 @@
 # Affiliate Platform Architecture
 
 ## Vision
+# Architekturprinzipien
 
+## 1. Single Source of Truth
+
+Jede Content-Datei beschreibt sich vollständig selbst.
+
+Es darf niemals notwendig sein, eine zweite Datei anzupassen, damit eine neue Seite im Portal erscheint.
+
+---
+
+## 2. Content First
+
+Navigation, Hubseiten, Related Articles, Breadcrumbs, Sitemap und interne Verlinkungen werden aus den Metadaten der Content-Datei generiert.
+
+Nicht umgekehrt.
+
+---
+
+## 3. Core bleibt generisch
+
+Der Core kennt keine Projekte, Produkte oder Kategorien.
+
+Er enthält ausschließlich wiederverwendbare Komponenten und Logik.
+
+---
+
+## 4. Domainwissen gehört ins Projekt
+
+Fachliche Regeln werden ausschließlich innerhalb des jeweiligen Projekts definiert.
+
+Beispiel:
+
+apps/pfotentechnik/src/domain/
+
+apps/balkonspeicher/src/domain/
+
+---
+
+## 5. Komponenten rendern
+
+Komponenten treffen keine fachlichen Entscheidungen.
+
+Sie stellen ausschließlich Daten dar.
+
+---
+
+## 6. Daten beschreiben
+
+Daten enthalten Informationen.
+
+Keine Logik.
+
+---
+
+## 7. Domain entscheidet
+
+Die Domain verbindet Daten mit Komponenten.
+
+Sie enthält sämtliche fachlichen Regeln.
 Die Plattform ist ein wiederverwendbares Affiliate-Framework für beliebig viele Projekte und Produktkategorien.
 
 Beispiele:
@@ -149,7 +207,7 @@ balkonspeicher/
 ---
 
 # Daten
-
+Jede Seite beschreibt sich selbst vollständig im Frontmatter. Navigation, Hubseiten, interne Verlinkung und SEO werden daraus automatisch generiert. Das reduziert Pflegeaufwand erheblich und sorgt dafür, dass neue Inhalte nur an einer Stelle angelegt werden müssen
 Daten enthalten ausschließlich Informationen.
 
 Keine Logik.
