@@ -62,6 +62,7 @@ criteria:
   - key: "notstrom"
     label: "Notstrom"
 recommendation:
+  winnerSlug: "xiaomi-smart-pet-food-feeder-2"
   title: "Xiaomi für Übersicht, Petlibro für ausgewogene Bedienung"
   text: "Beide eignen sich vor allem für kleine bis mittelgroße Hunde. WOPET punktet beim Vorrat, HoneyGuardian beim Preis-Leistungs-Ansatz."
 tableTitle: "Vier Hunde-Futterautomaten verglichen"

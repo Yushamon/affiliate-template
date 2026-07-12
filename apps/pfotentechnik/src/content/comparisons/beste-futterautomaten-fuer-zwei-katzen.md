@@ -66,6 +66,7 @@ criteria:
   - key: "reinigung"
     label: "Reinigung"
 recommendation:
+  winnerSlug: "surefeed-microchip-pet-feeder"
   title: "Mikrochip-Zugang bei unterschiedlichen Rationen"
   text: "SureFeed ist die stärkste Lösung gegen Futterklau. Für ähnlich fressende Katzen können Dual-Hopper oder Doppelschale komfortabler und günstiger sein."
 tableTitle: "Fünf Lösungen für zwei Katzen"

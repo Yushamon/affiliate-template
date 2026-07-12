@@ -58,6 +58,7 @@ criteria:
   - key: "reinigung"
     label: "Reinigung"
 recommendation:
+  winnerSlug: "petlibro-granary-camera-feeder"
   title: "Granary Camera ist die ausgewogenste Gesamtwahl"
   text: "Petlibro kombiniert nachvollziehbare Kameradaten mit einem etablierten Fütterungskonzept. PETKIT richtet sich stärker an Zwei-Futter-Szenarien, WOPET an große Vorräte."
 tableTitle: "Drei Kamera-Futterautomaten verglichen"

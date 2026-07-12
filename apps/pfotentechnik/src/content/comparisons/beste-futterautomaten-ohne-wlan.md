@@ -58,6 +58,7 @@ criteria:
   - key: "reinigung"
     label: "Reinigung"
 recommendation:
+  winnerSlug: "cat-mate-c500"
   title: "Cat Mate ist die vielseitigste reine Timer-Lösung"
   text: "Für mehrere vorbereitete Mahlzeiten ist der C500 besonders klar. SureFeed kontrolliert statt Zeiten den Zugang; IMIPAW dosiert Trockenfutter aus einem Vorrat."
 tableTitle: "Drei Offline-Konzepte verglichen"

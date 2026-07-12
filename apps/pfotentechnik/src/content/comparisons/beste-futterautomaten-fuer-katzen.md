@@ -70,6 +70,7 @@ criteria:
   - key: "ausfallsicherheit"
     label: "Ausfallsicherheit"
 recommendation:
+  winnerSlug: "petlibro-granary-wifi-feeder"
   title: "Granary WiFi ist der ausgewogenste Trockenfutter-Allrounder"
   text: "Für Nassfutter und Mehrtierhaushalte sind andere Bauarten sinnvoller. Deshalb ist die Gesamtwahl kein Ersatz für die Auswahl nach Futterart und Zugang."
 tableTitle: "Sechs Katzen-Futterautomaten verglichen"

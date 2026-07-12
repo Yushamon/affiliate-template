@@ -25,6 +25,25 @@ if (!entry) throw new Error(`Vergleich "${comparisonId}" wurde nicht gefunden.`)
 
 const comparison = entry.data;
 const { Content } = await render(entry);
+const products = await getCollection("products");
+const manufacturers = await getCollection("manufacturers");
+const winnerSlug = comparison.recommendation.winnerSlug;
+const winnerItem = winnerSlug
+  ? comparison.items.find((item) => item.slug === winnerSlug)
+  : undefined;
+const winnerProduct = winnerItem?.type === "product"
+  ? products.find((product) => product.data.slug === winnerSlug)
+  : undefined;
+const winnerManufacturer = winnerItem?.type === "manufacturer"
+  ? manufacturers.find((manufacturer) => manufacturer.data.slug === winnerSlug)
+  : undefined;
+const winnerHref = winnerItem?.type === "manufacturer"
+  ? `/hersteller/${winnerSlug}/`
+  : `/produkt/${winnerSlug}/`;
+const winnerImage = winnerProduct?.data.images.hero
+  ?? winnerManufacturer?.data.images.hero;
+const winnerRating = winnerProduct?.data.rating
+  ?? winnerManufacturer?.data.rating;
 const breadcrumbs =
   getComparisonBreadcrumbs(entry);
 
@@ -72,6 +91,26 @@ const relatedItems = relatedEntries.map((related) => ({
       <h1>{comparison.title}</h1>
       <p>{comparison.description}</p>
     </header>
+
+    {winnerItem && (
+      <section class="comparison-winner" aria-labelledby="comparison-winner-title">
+        {winnerImage && (
+          <img
+            src={winnerImage.src}
+            alt={winnerImage.alt ?? winnerItem.label ?? "Top-Empfehlung"}
+            loading="eager"
+            decoding="async"
+          />
+        )}
+        <div>
+          <span>Top-Empfehlung</span>
+          <h2 id="comparison-winner-title">{winnerItem.label ?? winnerItem.slug}</h2>
+          <p>{winnerItem.recommendation ?? comparison.recommendation.text}</p>
+          {winnerRating && <strong>{winnerRating.toFixed(1)} / 5</strong>}
+          <a href={winnerHref}>Ausführlichen Test lesen</a>
+        </div>
+      </section>
+    )}
 
     <section>
       <h2>{comparison.cardsTitle ?? "Verglichene Produkte"}</h2>
@@ -122,6 +161,13 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; padding: 0; list-style: none; }
   .comparison-criteria li { padding: 1rem; border: 1px solid #dce5e3; border-radius: .8rem; }
   .comparison-result { padding: 2rem; border-radius: 1.2rem; background: rgba(24, 116, 59, .08); }
+  .comparison-winner { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: clamp(1.4rem, 4vw, 2.5rem); border: 1px solid rgba(24, 116, 59, .24); border-radius: 1.5rem; background: linear-gradient(145deg, #fff, #eff9f1); box-shadow: 0 18px 48px rgba(20, 32, 26, .08); }
+  .comparison-winner img { width: 100%; aspect-ratio: 4 / 3; border-radius: 1.1rem; object-fit: contain; background: #fff; }
+  .comparison-winner span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+  .comparison-winner h2 { margin: .55rem 0 .8rem; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.04em; }
+  .comparison-winner p { color: #647579; line-height: 1.65; }
+  .comparison-winner strong { display: block; margin: 1rem 0; color: #18743b; font-size: 1.1rem; }
+  .comparison-winner a { display: inline-flex; padding: .85rem 1.2rem; border-radius: 999px; color: #fff; background: #18743b; font-weight: 900; text-decoration: none; }
   .comparison-content { max-width: 780px; line-height: 1.75; }
-  @media(max-width: 800px) { .comparison-items, .comparison-criteria { grid-template-columns: 1fr; } }
+  @media(max-width: 800px) { .comparison-items, .comparison-criteria, .comparison-winner { grid-template-columns: 1fr; } .comparison-winner { padding: 1.2rem; } }
 </style>
