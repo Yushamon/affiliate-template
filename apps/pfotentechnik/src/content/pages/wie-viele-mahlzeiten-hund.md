@@ -20,7 +20,7 @@ hub:
   order: 400
 hubPriority: 66
 project: "pfotentechnik"
-heroImageKey: "feederComparison"
+heroImage: "/images/editorial/dog-mealtime.webp"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"

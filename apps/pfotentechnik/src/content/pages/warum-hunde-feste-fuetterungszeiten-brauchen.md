@@ -7,6 +7,7 @@ description: "Regelmäßige Mahlzeiten schaffen Routine, erleichtern Mengenkontr
 category: "hundeernaehrung"
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
+heroImage: "/images/editorial/dog-mealtime.webp"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:
@@ -108,4 +109,3 @@ Mehr dazu: [Futterautomat für Hunde](/futterautomat-hund/) und [Wie viele Mahlz
 ## Fazit
 
 Hunde brauchen keine sekundengenaue Fütterung, profitieren aber häufig von einem berechenbaren Rhythmus. Feste Mahlzeiten verbinden Routine mit besserer Mengen- und Gesundheitskontrolle. Die passende Häufigkeit richtet sich nach dem einzelnen Hund – nicht nach einer starren Universalregel.
-

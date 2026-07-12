@@ -35,7 +35,7 @@ hub:
 hubPriority: 90
 project: "pfotentechnik"
 
-heroImageKey: "feederComparison"
+heroImage: "/images/editorial/dog-automatic-feeder.webp"
 
 premiumBlocks:
   - type: answer

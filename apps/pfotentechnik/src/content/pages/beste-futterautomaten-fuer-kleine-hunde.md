@@ -30,7 +30,7 @@ decisionKey: "kleineHunde"
 heroType: "kleine-hunde"
 themeColor: "teal"
 
-heroImage: "/images/pages/beste-futterautomaten-fuer-kleine-hunde/hero.webp"
+heroImage: "/images/editorial/dog-automatic-feeder.webp"
 
 decisionIntro: "Für kleine Hunde sind eine präzise Portionierung und zuverlässige Fütterungszeiten wichtiger als möglichst große Vorratsbehälter. Unsere Empfehlung berücksichtigt genau diese Kriterien."
 

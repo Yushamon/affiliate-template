@@ -20,7 +20,7 @@ hub:
   order: 250
 hubPriority: 63
 project: "pfotentechnik"
-heroImageKey: "feederComparison"
+heroImage: "/images/editorial/dog-automatic-feeder.webp"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"

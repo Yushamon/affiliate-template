@@ -23,8 +23,7 @@ hub:
   icon: "📖"
   order: 170
 decisionKey: "welpen"
-heroImage: "/images/pages/beste-futterautomaten-fuer-welpen/hero.webp"
-heroImageKey: "hero"
+heroImage: "/images/editorial/puppy-feeding.webp"
 premiumBlocks:
   - type: answer
     eyebrow: "Kurzantwort"

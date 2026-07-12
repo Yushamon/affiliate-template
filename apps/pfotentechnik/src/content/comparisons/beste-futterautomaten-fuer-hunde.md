@@ -31,6 +31,9 @@ seo:
 comparisonType: "use-case"
 group: "Futterautomaten"
 icon: "🐕"
+heroImage:
+  src: "/images/editorial/dog-automatic-feeder.webp"
+  alt: "Hund neben einem automatischen Futterautomaten"
 items:
   - slug: "xiaomi-smart-pet-food-feeder-2"
     label: "Xiaomi Smart Pet Food Feeder 2"

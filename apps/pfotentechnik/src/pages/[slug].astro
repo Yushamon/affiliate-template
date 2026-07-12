@@ -10,7 +10,6 @@ import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { fileURLToPath } from "node:url";
 import HealthBridge from "../components/HealthBridge.astro";
 import { projectConfig, siteMeta } from "../project.config";
 import {
@@ -52,7 +51,7 @@ const publishedAt =
 const updatedAt =
   page.data.updatedAt ?? page.data.publishedAt ?? siteMeta.articleDefaults.updatedAt;
 const projectKey = page.data.project ?? "pfotentechnik";
-const publicDir = fileURLToPath(new URL("../../public", import.meta.url));
+const publicDir = join(process.cwd(), "public");
 
 const localPublicImageExists = (imagePath?: string) => {
   if (!imagePath || imagePath.startsWith("http")) {
