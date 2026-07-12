@@ -2,127 +2,100 @@
 import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro";
 import ProductImage from "../ProductImage.astro";
 import type {
-
   AlternativeRecommendation
-
 } from "./alternativeRecommendation.types";
-import {
-  products,
-  type ProductKey
-} from "@app/data/products";
-
-import {
-  productReviews
-} from "@app/data/productReviews";
-
-import {
-  getScoreLabel,
-  getWeightedProductScore
-} from "@app/data/productScoring";
-
-import {
-  DEFAULT_PROJECT,
-  getProjectImage
-} from "@app/data/projectImages";
-
-import {
-  projectConfig
-} from "@app/project.config";
-
-import {
-  getPrimaryAffiliateLink
-} from "../../affiliate/affiliateEngine";
 
 import {
   stripLeadingIcon
 } from "../../utils/content";
 
-import {
-  getProductGallery,
-  getProductHeroImage
-} from "../../utils/productImages";
+type ProductReviewData = {
+  name: string;
+  manufacturerLabel: string;
+  category: string;
+  recommendation: string;
+  rating: number;
+  score: number;
+  capacity?: string;
+  expandable?: string | boolean;
+  useCase?: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string[];
+  notFor: string[];
+  ratings: Record<string, number>;
+  specs: Array<{
+    label: string;
+    value: string | number | boolean;
+  }>;
+  review: {
+    summary: string;
+    verdict: string;
+  };
+  images: {
+    hero: {
+      src: string;
+      alt: string;
+    };
+    gallery: Array<{
+      src: string;
+      alt: string;
+    }>;
+  };
+  affiliate?: {
+    url: string;
+    label: string;
+    rel: string;
+    target: "_blank" | "_self";
+  };
+};
 
 interface Props {
-  productKey: ProductKey;
+  product: ProductReviewData;
   alternativeRecommendations?: AlternativeRecommendation[];
+  relatedContent?: unknown[];
 }
 
 const {
-  productKey,
+  product,
   alternativeRecommendations = []
 } = Astro.props as Props;
 
-const product = products[productKey];
+const productHeroImage =
+  product.images.hero;
 
-const productHeroImage = product
-  ? getProductHeroImage(
-      product,
-      getProjectImage(
-        DEFAULT_PROJECT,
-        "product"
-      ),
-      productKey
-    )
-  : getProductHeroImage(
-      {},
-      getProjectImage(
-        DEFAULT_PROJECT,
-        "product"
-      )
-    );
-
-const productGallery = product
-  ? getProductGallery(
-      product,
-      productKey
-    )
-  : [];
-
-const score = product
-  ? getWeightedProductScore(productKey)
-  : 0;
-
-const scoreLabel =
-  getScoreLabel(score);
-
-const primaryLink = product
-  ? getPrimaryAffiliateLink(
-      product,
-      projectConfig.affiliate ?? {}
-    )
-  : null;
-
-const review =
-  productReviews[productKey] ??
-  (
-    product
-      ? {
-          summary:
-            product.review.summary,
-
-          verdict:
-            product.review.verdict,
-
-          pros:
-            product.pros,
-
-          cons:
-            product.cons,
-
-          bestFor:
-            product.bestFor,
-
-          notFor:
-            product.notFor,
-
-          ratings:
-            product.ratings
-        }
-      : null
+const productGallery =
+  product.images.gallery.map(
+    (image) => image.src
   );
 
-const legacySpecs = product
-  ? [
+const score = product.score;
+
+const scoreLabel =
+  score >= 90
+    ? "Hervorragend"
+    : score >= 80
+      ? "Sehr gut"
+      : score >= 70
+        ? "Gut"
+        : score >= 60
+          ? "Solide"
+          : "Mit Einschränkungen";
+
+const primaryLink =
+  product.affiliate ?? null;
+
+const review = {
+  summary: product.review.summary,
+  verdict: product.review.verdict,
+  pros: product.pros,
+  cons: product.cons,
+  bestFor: product.bestFor,
+  notFor: product.notFor,
+  ratings: product.ratings
+};
+
+const legacySpecs = [
       {
         label: "Hersteller",
         value:
@@ -153,8 +126,7 @@ const legacySpecs = product
         value:
           `${product.rating} / 5`
       }
-    ]
-  : [];
+    ];
 
 const specs =
   product?.specs?.length

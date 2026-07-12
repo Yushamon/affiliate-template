@@ -3,6 +3,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import ProductRankingCard from "@affiliate-core/components/ProductRankingCard.astro";
+import { getCollection } from "astro:content";
 import {
   products,
   type ProductKey
@@ -17,19 +18,110 @@ import {
   getWeightedProductScore
 } from "../../data/productScoring";
 
-export function getStaticPaths() {
-  return manufacturers.map((manufacturer) => ({
+export async function getStaticPaths() {
+  const manufacturerEntries =
+    await getCollection("manufacturers");
+
+  const contentSlugs = new Set(
+    manufacturerEntries.map(
+      (entry) => entry.data.slug
+    )
+  );
+
+  const contentManufacturers =
+    manufacturerEntries.map((entry) => {
+      const data = entry.data;
+
+      return {
+        key: data.key,
+        name: data.name,
+        slug: data.slug,
+        description: data.description,
+        website: data.website ?? "",
+        focus: data.focus,
+        productCategories:
+          data.productCategories,
+        strengths: data.strengths,
+        limitations: data.weaknesses,
+        rating: data.rating,
+        productAreas:
+          data.productAreas.map((name) => ({
+            name,
+            description: ""
+          })),
+        series:
+          data.series.map((series) => ({
+            name: series.name,
+            suitableFor:
+              series.suitableFor.join(", "),
+            description:
+              series.description ?? ""
+          })),
+        suitableFor: data.suitableFor,
+        lessSuitableFor: data.attention,
+        customerExperience:
+          data.experience
+            ? {
+                summary:
+                  data.experience.summary ??
+                  data.summary,
+                positives:
+                  data.experience.positives,
+                criticism:
+                  data.experience.criticism,
+                supportAssessment:
+                  data.experience.support ?? ""
+              }
+            : undefined,
+        alternatives:
+          data.alternativeManufacturerSlugs,
+        faq: data.faq,
+        sources:
+          data.sources
+            .filter(
+              (source) => Boolean(source.url)
+            )
+            .map((source) => ({
+              label: source.label,
+              url: source.url ?? ""
+            })),
+        products:
+          data.productSlugs.filter(
+            (slug): slug is ProductKey =>
+              slug in products
+          )
+      } satisfies Manufacturer;
+    });
+
+  const legacyManufacturers =
+    manufacturers.filter(
+      (manufacturer) =>
+        !contentSlugs.has(manufacturer.slug)
+    );
+
+  const resolvedManufacturers = [
+    ...contentManufacturers,
+    ...legacyManufacturers
+  ];
+
+  return resolvedManufacturers.map((manufacturer) => ({
     params: {
       manufacturer: manufacturer.slug
     },
     props: {
-      manufacturer
+      manufacturer,
+      manufacturerDirectory:
+        resolvedManufacturers
     }
   }));
 }
 
-const { manufacturer } = Astro.props as {
+const {
+  manufacturer,
+  manufacturerDirectory
+} = Astro.props as {
   manufacturer: Manufacturer;
+  manufacturerDirectory: Manufacturer[];
 };
 
 const title =
@@ -81,7 +173,7 @@ const comparisonLinks = [
 const alternativeManufacturers =
   (manufacturer.alternatives ?? [])
     .map((slug) =>
-      manufacturers.find(
+      manufacturerDirectory.find(
         (item) => item.slug === slug
       )
     )

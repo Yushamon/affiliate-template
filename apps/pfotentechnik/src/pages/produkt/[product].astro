@@ -263,6 +263,92 @@ const heroImageAlt =
     ?.hero?.alt ??
   pageTitle;
 
+const reviewProduct =
+  contentProduct
+    ? {
+        name: contentProduct.title,
+        manufacturerLabel:
+          contentProduct.manufacturer.name,
+        category:
+          contentProduct.category.label,
+        recommendation:
+          contentProduct.recommendation,
+        rating: contentProduct.rating,
+        score:
+          contentProduct.score ?? 0,
+        capacity:
+          contentProduct.capacity,
+        expandable:
+          contentProduct.expandable,
+        useCase:
+          contentProduct.useCase,
+        pros:
+          contentProduct.strengths,
+        cons:
+          contentProduct.weaknesses,
+        bestFor:
+          contentProduct.decision.bestFor,
+        notFor:
+          contentProduct.decision.attention,
+        ratings:
+          contentProduct.ratings,
+        specs:
+          contentProduct.specs,
+        review:
+          contentProduct.review,
+        images: {
+          hero: {
+            src: heroImage,
+            alt: heroImageAlt
+          },
+          gallery:
+            contentProduct.images.gallery
+        },
+        affiliate:
+          contentProduct.affiliate
+      }
+    : {
+        name: legacyProduct.name,
+        manufacturerLabel:
+          legacyProduct.manufacturerLabel,
+        category:
+          legacyProduct.category,
+        recommendation:
+          legacyProduct.recommendation,
+        rating: legacyProduct.rating,
+        score:
+          legacyProduct.ranking.overall,
+        capacity:
+          legacyProduct.capacity,
+        expandable:
+          legacyProduct.expandable,
+        useCase:
+          legacyProduct.useCase,
+        pros: legacyProduct.pros,
+        cons: legacyProduct.cons,
+        bestFor: legacyProduct.bestFor,
+        notFor: legacyProduct.notFor,
+        ratings: legacyProduct.ratings,
+        specs: legacyProduct.specs,
+        review: legacyProduct.review,
+        images: {
+          hero: {
+            src: legacyHeroImage.src,
+            alt:
+              legacyHeroImage.alt ??
+              legacyProduct.name
+          },
+          gallery:
+            (
+              legacyProduct.images.gallery ?? []
+            ).map((src, index) => ({
+              src,
+              alt:
+                `${legacyProduct.name} Ansicht ${index + 1}`
+            }))
+        }
+      };
+
 const categoryLabel =
   contentProduct?.category
     ?.label ??
@@ -470,8 +556,8 @@ const internalLinks = [
 
   <main class="product-detail pt-product-detail">
     <ProductReview
-      productKey={
-        legacyProductKey
+      product={
+        reviewProduct
       }
       alternativeRecommendations={
         alternativeRecommendations

@@ -1,0 +1,130 @@
+---
+title: "HoneyGuardian A305D"
+slug: "honeyguardian-a305d"
+type: "product"
+layout: "product"
+description: "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird."
+recommendation: "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird."
+manufacturer:
+  key: "honeyguardian"
+  name: "HoneyGuardian"
+  slug: "honeyguardian"
+category:
+  key: "futterautomaten"
+  label: "Futterautomaten"
+  path: "/futterautomaten/"
+productUrl: "/produkt/honeyguardian-a305d"
+publishedAt: "2026-07-12"
+updatedAt: "2026-07-12"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "HoneyGuardian A305D Test"
+  description: "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird."
+  canonical: "/produkt/honeyguardian-a305d/"
+  sitemap: true
+  priority: 0.9
+hub:
+  sections:
+    - "produkte"
+    - "futterautomaten"
+tags:
+  - "katze"
+  - "hund"
+  - "mehrere-tiere"
+  - "urlaub"
+  - "portionierung"
+  - "trockenfutter"
+  - "ohne-wlan"
+  - "batteriebetrieb"
+  - "preisleistung"
+  - "smarte-futterautomaten"
+images:
+  hero:
+    src: "/images/products/honeyguardian-a305d/hero.webp"
+    alt: "HoneyGuardian A305D"
+  thumbnail:
+    src: "/images/products/honeyguardian-a305d/thumbnail.webp"
+    alt: "HoneyGuardian A305D"
+  comparison:
+    src: "/images/products/honeyguardian-a305d/comparison.webp"
+    alt: "HoneyGuardian A305D"
+  gallery:
+    - src: "/images/products/honeyguardian-a305d/gallery-1.webp"
+      alt: "HoneyGuardian A305D Ansicht 1"
+    - src: "/images/products/honeyguardian-a305d/gallery-2.webp"
+      alt: "HoneyGuardian A305D Ansicht 2"
+    - src: "/images/products/honeyguardian-a305d/gallery-3.webp"
+      alt: "HoneyGuardian A305D Ansicht 3"
+affiliate:
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat"
+rating: 4.3
+score: 86
+ratings:
+  "app": 1
+  "portionierung": 4.5
+  "reinigung": 4.5
+  "zuverlaessigkeit": 4.5
+  "sicherheit": 4
+  "preisleistung": 4.5
+decision:
+  bestFor:
+    - "katze"
+    - "hund"
+    - "mehrere-tiere"
+    - "urlaub"
+    - "portionierung"
+    - "trockenfutter"
+    - "ohne-wlan"
+    - "batteriebetrieb"
+    - "preisleistung"
+  attention:
+    - "Nur für Trockenfutter geeignet"
+    - "Keine individuelle Zugangskontrolle"
+    - "Beide Tiere erhalten dieselbe Portionsmenge"
+review:
+  summary: "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird."
+  verdict: "Eine gute Offline-Lösung für zwei friedlich fressende Tiere, sofern beide dieselbe Futtersorte und ähnliche Mengen erhalten."
+strengths:
+  - "Keine App oder WLAN-Verbindung erforderlich"
+  - "Zwei Edelstahl-Näpfe für Mehrtierhaushalte"
+  - "Batteriebetrieb überbrückt Stromausfälle"
+weaknesses:
+  - "Nur für Trockenfutter geeignet"
+  - "Keine individuelle Zugangskontrolle"
+  - "Beide Tiere erhalten dieselbe Portionsmenge"
+alternatives: []
+specs:
+  - label: "Futterart"
+    value: "Trockenfutter"
+  - label: "App-Steuerung"
+    value: "Nein"
+  - label: "Kamera"
+    value: "Nein"
+  - label: "Kapazität"
+    value: "5 Liter"
+  - label: "Mahlzeiten"
+    value: "1 bis 6 pro Tag"
+  - label: "Portionierung"
+    value: "1 bis 24 Portionen pro Mahlzeit"
+  - label: "Näpfe"
+    value: "Zwei Edelstahl-Näpfe"
+  - label: "Stromversorgung"
+    value: "USB-Netzteil oder 3 D-Batterien"
+  - label: "Geeignet für"
+    value: "Zwei Katzen oder kleine Hunde"
+faq: []
+useCase: "Für zwei Katzen oder kleine Hunde mit ähnlichem Trockenfutterbedarf und festen Fütterungszeiten"
+capacity: "5 Liter"
+expandable: "Nicht vorgesehen"
+features:
+  - "Zwei gleichmäßig versorgte Futternäpfe"
+  - "Bis zu sechs Mahlzeiten täglich"
+  - "5-Liter-Vorratsbehälter"
+---
+
+Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird.
+
+Eine gute Offline-Lösung für zwei friedlich fressende Tiere, sofern beide dieselbe Futtersorte und ähnliche Mengen erhalten.
