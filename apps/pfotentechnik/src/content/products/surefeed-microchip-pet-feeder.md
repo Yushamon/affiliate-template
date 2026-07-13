@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder"
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder/hero.webp"
+    alt: "SureFeed Microchip Pet Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder"
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder/thumbnail.webp"
+    alt: "SureFeed Microchip Pet Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder"
-  gallery: []
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder/comparison.webp"
+    alt: "SureFeed Microchip Pet Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/surefeed-microchip-pet-feeder/gallery-1.webp"
+      alt: "SureFeed Microchip Pet Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/surefeed-microchip-pet-feeder/gallery-2.webp"
+      alt: "SureFeed Microchip Pet Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/surefeed-microchip-pet-feeder/gallery-3.webp"
+      alt: "SureFeed Microchip Pet Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

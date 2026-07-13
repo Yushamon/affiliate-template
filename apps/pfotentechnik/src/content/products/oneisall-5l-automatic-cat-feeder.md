@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "oneisall 5L Automatic Cat Feeder"
+    src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/hero.webp"
+    alt: "oneisall 5L Futterautomat mit zwei Näpfen und zwei Katzen"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "oneisall 5L Automatic Cat Feeder"
+    src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/thumbnail.webp"
+    alt: "oneisall 5L Automatic Cat Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "oneisall 5L Automatic Cat Feeder"
-  gallery: []
+    src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/comparison.webp"
+    alt: "oneisall 5L Automatic Cat Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/gallery-1.webp"
+      alt: "Geöffneter 5-Liter-Behälter des oneisall Futterautomaten beim Nachfüllen"
+    - src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/gallery-2.webp"
+      alt: "Y-Verteiler des oneisall Futterautomaten bei der Ausgabe in zwei Näpfe"
+    - src: "../../assets/images/products/oneisall-5l-automatic-cat-feeder/gallery-3.webp"
+      alt: "Abgenommene Doppelnäpfe des oneisall Futterautomaten bei der Reinigung"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

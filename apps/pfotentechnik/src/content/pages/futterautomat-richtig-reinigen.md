@@ -7,7 +7,9 @@ description: "Futterautomat hygienisch reinigen: Napf, Vorratsbehälter und Ausg
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-cleaning.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-cleaning.webp"
+  alt: "Wie reinigt man einen Futterautomaten richtig?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

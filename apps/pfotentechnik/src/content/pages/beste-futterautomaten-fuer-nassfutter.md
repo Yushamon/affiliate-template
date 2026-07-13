@@ -36,8 +36,6 @@ linkContext: "futterautomaten"
 heroType: "nassfutter"
 themeColor: "blue"
 
-heroImage: "/images/pages/beste-futterautomaten-fuer-nassfutter/hero.webp"
-
 decisionIntro: "Nassfutter stellt deutlich höhere Anforderungen an Hygiene und Kühlung als Trockenfutter. Unsere Empfehlungen berücksichtigen genau diese Punkte."
 
 premiumBlocks:

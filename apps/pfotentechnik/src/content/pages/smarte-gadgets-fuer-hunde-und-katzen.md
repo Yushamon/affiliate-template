@@ -1,7 +1,9 @@
 ---
 title: "Smarte Gadgets für Hunde und Katzen: ein erster Überblick"
 slug: "smarte-gadgets-fuer-hunde-und-katzen"
-heroImage: "/images/editorial/dog-and-cat-feeder.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-and-cat-feeder.webp"
+  alt: "Smarte Gadgets für Hunde und Katzen: ein erster Überblick"
 description: "Welche vernetzten Helfer im Haustieralltag sinnvoll sein können und worauf Halter vor dem Kauf achten sollten."
 category: "ratgeber"
 categoryLabel: "Ratgeber"

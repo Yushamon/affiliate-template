@@ -38,7 +38,7 @@ website: "https://oneisall.com"
 rating: 4.2
 images:
   hero:
-    src: "/images/manufacturers/oneisall/hero.webp"
+    src: "../../assets/images/manufacturers/oneisall/hero.webp"
     alt: "oneisall Herstellerübersicht"
   gallery: []
 productCategories:

@@ -41,14 +41,14 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/wopet-cube-air-ca10/hero.webp"
-    alt: "WOPET Cube Air WiFi Pet Feeder CA10"
+    src: "../../assets/images/products/wopet-cube-air-ca10/hero.webp"
+    alt: "WOPET Cube Air WiFi Pet Feeder CA10 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/wopet-cube-air-ca10/thumbnail.webp"
-    alt: "WOPET Cube Air WiFi Pet Feeder CA10"
+    src: "../../assets/images/products/wopet-cube-air-ca10/thumbnail.webp"
+    alt: "WOPET Cube Air WiFi Pet Feeder CA10 als kompakte Produktansicht"
   comparison:
-    src: "/images/products/wopet-cube-air-ca10/comparison.webp"
-    alt: "WOPET Cube Air WiFi Pet Feeder CA10"
+    src: "../../assets/images/products/wopet-cube-air-ca10/comparison.webp"
+    alt: "WOPET Cube Air WiFi Pet Feeder CA10 im Produktvergleich"
   gallery: []
 affiliate:
   provider: "amazon"

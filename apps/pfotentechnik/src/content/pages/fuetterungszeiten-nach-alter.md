@@ -7,7 +7,9 @@ description: "Wie sich Mahlzeitenrhythmus und Fütterungsplan bei jungen, erwach
 category: "tierernaehrung"
 categoryLabel: "Ernährungswissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/dog-and-cat-feeder.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-and-cat-feeder.webp"
+  alt: "Fütterungszeiten nach Alter: Katze und Hund"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

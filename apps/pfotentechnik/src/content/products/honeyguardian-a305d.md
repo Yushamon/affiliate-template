@@ -41,19 +41,19 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/honeyguardian-a305d/hero.webp"
-    alt: "HoneyGuardian A305D"
+    src: "../../assets/images/products/honeyguardian-a305d/hero.webp"
+    alt: "HoneyGuardian A305D in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/honeyguardian-a305d/thumbnail.webp"
-    alt: "HoneyGuardian A305D"
+    src: "../../assets/images/products/honeyguardian-a305d/thumbnail.webp"
+    alt: "HoneyGuardian A305D als kompakte Produktansicht"
   comparison:
-    src: "/images/products/honeyguardian-a305d/comparison.webp"
-    alt: "HoneyGuardian A305D"
+    src: "../../assets/images/products/honeyguardian-a305d/comparison.webp"
+    alt: "HoneyGuardian A305D im Produktvergleich"
   gallery:
-    - src: "/images/products/honeyguardian-a305d/gallery-1.webp"
-      alt: "HoneyGuardian A305D Ansicht 1"
-    - src: "/images/products/honeyguardian-a305d/gallery-2.webp"
-      alt: "HoneyGuardian A305D Ansicht 2"
+    - src: "../../assets/images/products/honeyguardian-a305d/gallery-1.webp"
+      alt: "HoneyGuardian A305D, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/honeyguardian-a305d/gallery-2.webp"
+      alt: "HoneyGuardian A305D, weitere redaktionelle Ansicht 2"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

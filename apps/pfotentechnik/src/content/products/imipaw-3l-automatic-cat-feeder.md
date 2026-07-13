@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "IMIPAW 3L Automatic Cat Feeder"
+    src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/hero.webp"
+    alt: "IMIPAW 3L Automatic Cat Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "IMIPAW 3L Automatic Cat Feeder"
+    src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/thumbnail.webp"
+    alt: "IMIPAW 3L Automatic Cat Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "IMIPAW 3L Automatic Cat Feeder"
-  gallery: []
+    src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/comparison.webp"
+    alt: "IMIPAW 3L Automatic Cat Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/gallery-1.webp"
+      alt: "IMIPAW 3L Futterautomat mit Katze in einer realistischen Fütterungssituation"
+    - src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/gallery-2.webp"
+      alt: "Ausgabeschacht und Bedienfeld des IMIPAW 3L beim Portionieren von Trockenfutter"
+    - src: "../../assets/images/products/imipaw-3l-automatic-cat-feeder/gallery-3.webp"
+      alt: "IMIPAW 3L Automatic Cat Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

@@ -38,15 +38,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Patrol F07 Pro"
+    src: "../../assets/images/products/wopet-patrol-f07-pro/hero.webp"
+    alt: "WOPET Patrol F07 Pro als weißer 6-Liter-Futterautomat"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Patrol F07 Pro"
+    src: "../../assets/images/products/wopet-patrol-f07-pro/thumbnail.webp"
+    alt: "WOPET Patrol F07 Pro als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Patrol F07 Pro"
-  gallery: []
+    src: "../../assets/images/products/wopet-patrol-f07-pro/comparison.webp"
+    alt: "WOPET Patrol F07 Pro im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/wopet-patrol-f07-pro/gallery-1.webp"
+      alt: "WOPET Patrol F07 Pro mit Hund in einer realistischen Fütterungssituation"
+    - src: "../../assets/images/products/wopet-patrol-f07-pro/gallery-2.webp"
+      alt: "Geöffneter Vorratsbehälter des WOPET Patrol F07 Pro beim Nachfüllen"
+    - src: "../../assets/images/products/wopet-patrol-f07-pro/gallery-3.webp"
+      alt: "Netzanschluss und Batteriefach des WOPET Patrol F07 Pro"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

@@ -14,10 +14,18 @@ seo: { title: "PetSafe Smart Feed 2.0 Test", description: "PetSafe Smart Feed 2.
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "hunde", "app", "grosse-portionen", "slow-feed", "batterie-backup"]
 images:
-  hero: { src: "/images/products/petsafe-smart-feed-2/hero.webp", alt: "Redaktionelle Darstellung des PetSafe Smart Feed 2.0" }
-  thumbnail: { src: "/images/products/petsafe-smart-feed-2/thumbnail.webp", alt: "PetSafe Smart Feed 2.0" }
-  comparison: { src: "/images/products/petsafe-smart-feed-2/comparison.webp", alt: "PetSafe Smart Feed 2.0 im Vergleich" }
-  gallery: [{ src: "/images/products/petsafe-smart-feed-2/gallery-1.webp", alt: "Großer Vorrat und Napf des PetSafe Smart Feed 2.0" }]
+  hero:
+    src: "../../assets/images/products/petsafe-smart-feed-2/hero.webp"
+    alt: "PetSafe Smart Feed 2.0 in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/petsafe-smart-feed-2/thumbnail.webp"
+    alt: "PetSafe Smart Feed 2.0 als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/petsafe-smart-feed-2/comparison.webp"
+    alt: "PetSafe Smart Feed 2.0 im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petsafe-smart-feed-2/gallery-1.webp"
+      alt: "PetSafe Smart Feed 2.0, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Aktuellen Preis prüfen", url: "https://www.amazon.de/s?k=PetSafe+Smart+Feed+2.0" }
 rating: 4.4
 score: 88

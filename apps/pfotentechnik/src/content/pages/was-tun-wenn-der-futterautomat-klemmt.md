@@ -7,7 +7,9 @@ description: "Blockaden am Futterautomaten sicher prüfen: Strom trennen, Futter
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-jam.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-jam.webp"
+  alt: "Was tun, wenn der Futterautomat klemmt?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

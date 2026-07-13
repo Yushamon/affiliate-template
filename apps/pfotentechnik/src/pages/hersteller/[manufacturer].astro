@@ -1,9 +1,11 @@
 ---
 import { getCollection, getEntry } from "astro:content";
+import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import {
   getManufacturerBreadcrumbs,
   getRelatedContent
@@ -34,6 +36,11 @@ if (!entry) {
 }
 
 const manufacturer = entry.data;
+const optimizedOgImage = await getImage({
+  src: manufacturer.images.hero.src,
+  width: 1200,
+  quality: "high"
+});
 const allProducts = await getCollection("products");
 const allManufacturers = await getCollection("manufacturers");
 
@@ -110,7 +117,7 @@ const productHref = (slug: string, productUrl?: string) =>
   description={manufacturer.description}
   seoDescription={manufacturer.seo?.description ?? manufacturer.description}
   canonical={manufacturer.seo?.canonical ?? `/hersteller/${manufacturer.slug}/`}
-  ogImage={manufacturer.images.hero.src}
+  ogImage={optimizedOgImage.src}
   faq={manufacturer.faq}
   author={manufacturer.author}
   publishedAt={manufacturer.publishedAt}
@@ -143,11 +150,11 @@ const productHref = (slug: string, productUrl?: string) =>
         )}
       </div>
 
-      <img
+      <OptimizedImage
         src={manufacturer.images.hero.src}
         alt={manufacturer.images.hero.alt ?? manufacturer.name}
-        loading="eager"
-        decoding="async"
+        layout="full-width"
+        priority
       />
     </header>
 
@@ -179,7 +186,7 @@ const productHref = (slug: string, productUrl?: string) =>
           {displayedFeaturedProducts.map((product, index) => (
             <article class="product-card">
               <div class="product-rank">{index + 1}</div>
-              <img src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.title} loading="lazy" />
+              <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.title} width={480} height={360} layout="constrained" />
               <span>{product.data.manufacturer.name}</span>
               <h3><a href={productHref(product.data.slug, product.data.productUrl)}>{product.data.title}</a></h3>
               <p>{product.data.recommendation}</p>
@@ -198,7 +205,7 @@ const productHref = (slug: string, productUrl?: string) =>
         <div class="product-list">
           {manufacturerProducts.map((product) => (
             <a href={productHref(product.data.slug, product.data.productUrl)}>
-              <img src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.title} loading="lazy" />
+              <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.title} width={240} height={180} layout="constrained" />
               <div><strong>{product.data.title}</strong><span>{product.data.recommendation}</span></div>
               <b>{product.data.rating.toFixed(1)} / 5</b>
             </a>
@@ -244,7 +251,7 @@ const productHref = (slug: string, productUrl?: string) =>
         <div class="alternative-grid">
           {alternativeManufacturers.map((alternative) => (
             <a href={`/hersteller/${alternative.data.slug}/`}>
-              <img src={alternative.data.images.hero.src} alt={alternative.data.name} loading="lazy" />
+              <OptimizedImage src={alternative.data.images.hero.src} alt={alternative.data.name} width={480} height={360} layout="constrained" />
               <h3>{alternative.data.name}</h3>
               <p>{alternative.data.recommendation}</p>
             </a>

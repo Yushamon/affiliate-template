@@ -7,7 +7,7 @@
 - [x] Content Registry
 - [x] Zehn Hersteller als Markdown
 - [x] Dynamische Herstellerroute mit Collection-Vorrang
-- [x] 27 Produkte als Markdown
+- [x] 35 Produkte als Markdown
 - [x] ProductReview auf übergebene Markdown-Daten umgestellt
 - [x] Produktalternativen auf Product-Collection umgestellt
 - [x] Fünf belegbare Vergleiche in `comparisons` migriert
@@ -18,6 +18,8 @@
 - [x] Related Content für Produkte, Hersteller, Vergleiche und Wissen
 - [x] Automatische Breadcrumbs und Breadcrumb-JSON-LD
 - [x] Sitemap mit Frontmatter-basiertem `lastmod`
+- [x] Content-Bilder nach `src/assets` und Rendering auf `astro:assets` migriert
+- [x] Produktgalerien auf eigenständige Anwendungs- und Detailmotive geprüft
 
 ## Offen
 
@@ -49,6 +51,7 @@
 - [ ] `manufacturers.ts` entfernen, sobald keine Abhängigkeiten verbleiben
 - [ ] `productReviews.ts`, `productScoring.ts`, `projectImages.ts`, `seoOverrides.ts`, `internalLinks.ts`, `decisionProducts.ts` und `decisionRules.ts` einzeln prüfen
 - [ ] Einmalige Migrationsskripte nach bestätigtem Commit entfernen
+- [ ] Parallele Produktkopien unter `public/images` nach Entfernung aller Legacy-URL-Strings löschen
 - [ ] Abschließenden Build und Sitemap-Audit durchführen
 
 ## Später

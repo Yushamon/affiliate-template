@@ -38,7 +38,7 @@ website: "https://closerpets.com"
 rating: 4.4
 images:
   hero:
-    src: "/images/manufacturers/cat-mate/hero.webp"
+    src: "../../assets/images/manufacturers/cat-mate/hero.webp"
     alt: "Cat Mate Herstellerübersicht"
   gallery: []
 productCategories:

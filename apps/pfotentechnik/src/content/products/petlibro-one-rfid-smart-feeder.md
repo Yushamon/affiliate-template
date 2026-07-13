@@ -40,21 +40,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petlibro-one-rfid-smart-feeder/hero.webp"
-    alt: "PETLIBRO One RFID Smart Feeder"
+    src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/hero.webp"
+    alt: "PETLIBRO One RFID Smart Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petlibro-one-rfid-smart-feeder/thumbnail.webp"
-    alt: "PETLIBRO One RFID Smart Feeder"
+    src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/thumbnail.webp"
+    alt: "PETLIBRO One RFID Smart Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petlibro-one-rfid-smart-feeder/comparison.webp"
-    alt: "PETLIBRO One RFID Smart Feeder"
+    src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/comparison.webp"
+    alt: "PETLIBRO One RFID Smart Feeder im Produktvergleich"
   gallery:
-    - src: "/images/products/petlibro-one-rfid-smart-feeder/gallery-1.webp"
-      alt: "PETLIBRO One RFID Smart Feeder Ansicht 1"
-    - src: "/images/products/petlibro-one-rfid-smart-feeder/gallery-2.webp"
-      alt: "PETLIBRO One RFID Smart Feeder Ansicht 2"
-    - src: "/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp"
-      alt: "PETLIBRO One RFID Smart Feeder Ansicht 3"
+    - src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-1.webp"
+      alt: "PETLIBRO One RFID Smart Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-2.webp"
+      alt: "PETLIBRO One RFID Smart Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp"
+      alt: "Katze mit RFID-Halsbandanhänger vor dem geöffneten Zugang des PETLIBRO One"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

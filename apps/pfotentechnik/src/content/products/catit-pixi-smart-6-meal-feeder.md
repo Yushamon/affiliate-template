@@ -14,10 +14,18 @@ seo: { title: "Catit PIXI Smart 6-Meal Feeder Test", description: "Catit PIXI Sm
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "nassfutter", "trockenfutter", "app", "6-mahlzeiten", "kuehlakku"]
 images:
-  hero: { src: "/images/products/catit-pixi-smart-6-meal-feeder/hero.webp", alt: "Redaktionelle Darstellung des Catit PIXI Smart 6-Meal Feeder" }
-  thumbnail: { src: "/images/products/catit-pixi-smart-6-meal-feeder/thumbnail.webp", alt: "Catit PIXI Smart 6-Meal Feeder" }
-  comparison: { src: "/images/products/catit-pixi-smart-6-meal-feeder/comparison.webp", alt: "Catit PIXI Smart 6-Meal Feeder im Vergleich" }
-  gallery: [{ src: "/images/products/catit-pixi-smart-6-meal-feeder/gallery-1.webp", alt: "Sechs Fächer des Catit PIXI Smart Feeders" }]
+  hero:
+    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/hero.webp"
+    alt: "Catit PIXI Smart 6-Meal Feeder in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/thumbnail.webp"
+    alt: "Catit PIXI Smart 6-Meal Feeder als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/comparison.webp"
+    alt: "Catit PIXI Smart 6-Meal Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-1.webp"
+      alt: "Catit PIXI Smart 6-Meal Feeder, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Aktuellen Preis prüfen", url: "https://www.amazon.de/s?k=Catit+PIXI+Smart+6+Meal+Feeder" }
 rating: 4.3
 score: 86

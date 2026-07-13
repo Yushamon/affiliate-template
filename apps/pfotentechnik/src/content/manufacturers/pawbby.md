@@ -38,7 +38,7 @@ website: "https://www.pawbby.com"
 rating: 4.1
 images:
   hero:
-    src: "/images/manufacturers/pawbby/hero.webp"
+    src: "../../assets/images/manufacturers/pawbby/hero.webp"
     alt: "PAWBBY Herstellerübersicht"
   gallery: []
 productCategories:

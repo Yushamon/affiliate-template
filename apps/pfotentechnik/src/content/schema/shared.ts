@@ -1,4 +1,5 @@
 import { z } from "astro/zod";
+import type { ImageFunction } from "astro:content";
 
 export const faqSchema = z.object({
   question: z.string(),
@@ -20,11 +21,9 @@ export const hubSchema = z.object({
   featured: z.boolean().default(false)
 });
 
-export const imageSchema = z.object({
-  src: z.string(),
+export const createImageSchema = (image: ImageFunction) => z.object({
+  src: image(),
   alt: z.string().optional(),
-  width: z.number().optional(),
-  height: z.number().optional()
 });
 
 export const seoSchema = z.object({

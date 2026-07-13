@@ -33,8 +33,9 @@ decisionKey: "gegenSchlingen"
 heroType: "slow-feeding"
 themeColor: "rose"
 
-heroImage: "/images/editorial/dog-mealtime.webp"
-
+heroImage:
+  src: "../../assets/images/editorial/dog-mealtime.webp"
+  alt: "Futterautomat gegen Schlingen"
 decisionIntro: "Bei schlingenden Hunden und Katzen steht nicht die Größe des Futterbehälters im Vordergrund, sondern eine möglichst kontrollierte Ausgabe kleiner Portionen."
 
 premiumBlocks:

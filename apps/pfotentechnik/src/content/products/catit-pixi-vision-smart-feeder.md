@@ -19,11 +19,18 @@ seo:
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "kamera", "app", "trockenfutter", "neu", "batterie-backup"]
 images:
-  hero: { src: "/images/products/catit-pixi-vision-smart-feeder/hero.webp", alt: "Redaktionelle Darstellung des Catit PIXI Vision Smart Feeder" }
-  thumbnail: { src: "/images/products/catit-pixi-vision-smart-feeder/thumbnail.webp", alt: "Catit PIXI Vision Smart Feeder" }
-  comparison: { src: "/images/products/catit-pixi-vision-smart-feeder/comparison.webp", alt: "Catit PIXI Vision Smart Feeder im Vergleich" }
+  hero:
+    src: "../../assets/images/products/catit-pixi-vision-smart-feeder/hero.webp"
+    alt: "Catit PIXI Vision Smart Feeder in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/catit-pixi-vision-smart-feeder/thumbnail.webp"
+    alt: "Catit PIXI Vision Smart Feeder als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/catit-pixi-vision-smart-feeder/comparison.webp"
+    alt: "Catit PIXI Vision Smart Feeder im Produktvergleich"
   gallery:
-    - { src: "/images/products/catit-pixi-vision-smart-feeder/gallery-1.webp", alt: "Redaktionelle Ansicht des Catit PIXI Vision Smart Feeder" }
+    - src: "../../assets/images/products/catit-pixi-vision-smart-feeder/gallery-1.webp"
+      alt: "Catit PIXI Vision Smart Feeder, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Aktuellen Preis prüfen", url: "https://www.amazon.de/s?k=Catit+PIXI+Vision+Smart+Feeder" }
 rating: 4.5
 score: 89

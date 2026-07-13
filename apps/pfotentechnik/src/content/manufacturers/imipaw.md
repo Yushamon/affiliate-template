@@ -38,7 +38,7 @@ website: "https://imipaw.com"
 rating: 4
 images:
   hero:
-    src: "/images/manufacturers/imipaw/hero.webp"
+    src: "../../assets/images/manufacturers/imipaw/hero.webp"
     alt: "IMIPAW Herstellerübersicht"
   gallery: []
 productCategories:

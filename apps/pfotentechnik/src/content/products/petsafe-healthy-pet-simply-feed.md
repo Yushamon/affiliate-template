@@ -14,10 +14,18 @@ seo: { title: "PetSafe Healthy Pet Simply Feed Test", description: "PetSafe Heal
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "hunde", "offline", "slow-feed", "grosse-portionen", "batterie"]
 images:
-  hero: { src: "/images/products/petsafe-healthy-pet-simply-feed/hero.webp", alt: "Redaktionelle Darstellung des PetSafe Healthy Pet Simply Feed" }
-  thumbnail: { src: "/images/products/petsafe-healthy-pet-simply-feed/thumbnail.webp", alt: "PetSafe Healthy Pet Simply Feed" }
-  comparison: { src: "/images/products/petsafe-healthy-pet-simply-feed/comparison.webp", alt: "PetSafe Healthy Pet Simply Feed im Vergleich" }
-  gallery: [{ src: "/images/products/petsafe-healthy-pet-simply-feed/gallery-1.webp", alt: "Bedienfeld und großer Vorrat des PetSafe Simply Feed" }]
+  hero:
+    src: "../../assets/images/products/petsafe-healthy-pet-simply-feed/hero.webp"
+    alt: "PetSafe Healthy Pet Simply Feed in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/petsafe-healthy-pet-simply-feed/thumbnail.webp"
+    alt: "PetSafe Healthy Pet Simply Feed als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/petsafe-healthy-pet-simply-feed/comparison.webp"
+    alt: "PetSafe Healthy Pet Simply Feed im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petsafe-healthy-pet-simply-feed/gallery-1.webp"
+      alt: "PetSafe Healthy Pet Simply Feed, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Aktuellen Preis prüfen", url: "https://www.amazon.de/s?k=PetSafe+Healthy+Pet+Simply+Feed" }
 rating: 4.3
 score: 86

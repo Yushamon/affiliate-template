@@ -39,21 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/wopet-pioneer-f01-plus/hero.webp"
-    alt: "WOPET Pioneer F01 Plus"
+    src: "../../assets/images/products/wopet-pioneer-f01-plus/hero.webp"
+    alt: "WOPET Pioneer F01 Plus in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/wopet-pioneer-f01-plus/thumbnail.webp"
-    alt: "WOPET Pioneer F01 Plus"
+    src: "../../assets/images/products/wopet-pioneer-f01-plus/thumbnail.webp"
+    alt: "WOPET Pioneer F01 Plus als kompakte Produktansicht"
   comparison:
-    src: "/images/products/wopet-pioneer-f01-plus/comparison.webp"
-    alt: "WOPET Pioneer F01 Plus"
+    src: "../../assets/images/products/wopet-pioneer-f01-plus/comparison.webp"
+    alt: "WOPET Pioneer F01 Plus im Produktvergleich"
   gallery:
-    - src: "/images/products/wopet-pioneer-f01-plus/gallery-1.webp"
-      alt: "WOPET Pioneer F01 Plus Ansicht 1"
-    - src: "/images/products/wopet-pioneer-f01-plus/gallery-2.webp"
-      alt: "WOPET Pioneer F01 Plus Ansicht 2"
-    - src: "/images/products/wopet-pioneer-f01-plus/gallery-3.webp"
-      alt: "WOPET Pioneer F01 Plus Ansicht 3"
+    - src: "../../assets/images/products/wopet-pioneer-f01-plus/gallery-1.webp"
+      alt: "WOPET Pioneer F01 Plus, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/wopet-pioneer-f01-plus/gallery-2.webp"
+      alt: "WOPET Pioneer F01 Plus, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/wopet-pioneer-f01-plus/gallery-3.webp"
+      alt: "WOPET Pioneer F01 Plus, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

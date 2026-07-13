@@ -7,7 +7,9 @@ description: "Welche Geräusche Futterautomaten machen, warum Tiere unterschiedl
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-noise.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-noise.webp"
+  alt: "Wie laut sind automatische Futterautomaten?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

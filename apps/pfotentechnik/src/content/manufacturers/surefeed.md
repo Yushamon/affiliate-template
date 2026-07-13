@@ -38,7 +38,7 @@ website: "https://www.surepetcare.com"
 rating: 4.7
 images:
   hero:
-    src: "/images/manufacturers/surefeed/hero.webp"
+    src: "../../assets/images/manufacturers/surefeed/hero.webp"
     alt: "SureFeed Herstellerübersicht"
   gallery: []
 productCategories:

@@ -20,7 +20,9 @@ hub:
   order: 400
 hubPriority: 66
 project: "pfotentechnik"
-heroImage: "/images/editorial/dog-mealtime.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-mealtime.webp"
+  alt: "Wie viele Mahlzeiten braucht ein Hund?"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"

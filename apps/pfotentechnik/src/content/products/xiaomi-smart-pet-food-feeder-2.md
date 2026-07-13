@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2"
+    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/hero.webp"
+    alt: "Xiaomi Smart Pet Food Feeder 2 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2"
+    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/thumbnail.webp"
+    alt: "Xiaomi Smart Pet Food Feeder 2 als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2"
-  gallery: []
+    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/comparison.webp"
+    alt: "Xiaomi Smart Pet Food Feeder 2 im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-1.webp"
+      alt: "Xiaomi Smart Pet Food Feeder 2, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-2.webp"
+      alt: "Xiaomi Smart Pet Food Feeder 2, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-3.webp"
+      alt: "Xiaomi Smart Pet Food Feeder 2, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

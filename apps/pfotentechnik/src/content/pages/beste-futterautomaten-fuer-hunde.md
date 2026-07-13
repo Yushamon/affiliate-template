@@ -20,7 +20,9 @@ hub:
   order: 20
 hubPriority: 84
 project: "pfotentechnik"
-heroImage: "/images/editorial/dog-automatic-feeder.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-automatic-feeder.webp"
+  alt: "Beste Futterautomaten für Hunde"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"

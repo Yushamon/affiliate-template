@@ -2,6 +2,7 @@ import {
   getCollection,
   type CollectionEntry
 } from "astro:content";
+import type { ImageMetadata } from "astro";
 
 export type PageEntry =
   CollectionEntry<"pages">;
@@ -41,7 +42,7 @@ export type HubContentEntry = {
   hubTitle: string;
   hubDescription: string;
   icon?: string;
-  image?: string;
+  image?: ImageMetadata;
   rating?: number;
   collection:
     | "pages"

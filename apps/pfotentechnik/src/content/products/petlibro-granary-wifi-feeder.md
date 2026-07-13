@@ -38,21 +38,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petlibro-granary-wifi-feeder/hero.webp"
-    alt: "Petlibro Granary WiFi Feeder"
+    src: "../../assets/images/products/petlibro-granary-wifi-feeder/hero.webp"
+    alt: "Petlibro Granary WiFi Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petlibro-granary-wifi-feeder/thumbnail.webp"
-    alt: "Petlibro Granary WiFi Feeder"
+    src: "../../assets/images/products/petlibro-granary-wifi-feeder/thumbnail.webp"
+    alt: "Petlibro Granary WiFi Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petlibro-granary-wifi-feeder/comparison.webp"
-    alt: "Petlibro Granary WiFi Feeder"
+    src: "../../assets/images/products/petlibro-granary-wifi-feeder/comparison.webp"
+    alt: "Petlibro Granary WiFi Feeder im Produktvergleich"
   gallery:
-    - src: "/images/products/petlibro-granary-wifi-feeder/gallery-1.webp"
-      alt: "Petlibro Granary WiFi Feeder Ansicht 1"
-    - src: "/images/products/petlibro-granary-wifi-feeder/gallery-2.webp"
-      alt: "Petlibro Granary WiFi Feeder Ansicht 2"
-    - src: "/images/products/petlibro-granary-wifi-feeder/gallery-3.webp"
-      alt: "Petlibro Granary WiFi Feeder Ansicht 3"
+    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-1.webp"
+      alt: "Petlibro Granary WiFi Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-2.webp"
+      alt: "Petlibro Granary WiFi Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp"
+      alt: "Petlibro Granary WiFi Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

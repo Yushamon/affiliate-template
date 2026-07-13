@@ -33,8 +33,6 @@ decisionKey: "akku"
 heroType: "akku"
 themeColor: "blue"
 
-heroImage: "/images/pages/beste-futterautomaten-mit-akku/hero.webp"
-
 decisionIntro: "Ein Batterie- oder Akku-Backup sorgt dafür, dass dein Haustier auch bei einem Stromausfall zuverlässig gefüttert wird."
 
 premiumBlocks:

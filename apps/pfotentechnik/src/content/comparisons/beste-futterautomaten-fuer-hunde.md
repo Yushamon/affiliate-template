@@ -32,7 +32,7 @@ comparisonType: "use-case"
 group: "Futterautomaten"
 icon: "🐕"
 heroImage:
-  src: "/images/editorial/dog-automatic-feeder.webp"
+  src: "../../assets/images/editorial/dog-automatic-feeder.webp"
   alt: "Hund neben einem automatischen Futterautomaten"
 items:
   - slug: "xiaomi-smart-pet-food-feeder-2"

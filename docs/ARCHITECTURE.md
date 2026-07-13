@@ -113,6 +113,16 @@ Breadcrumbs werden in `domain/content/breadcrumbs.ts` aus Inhaltstyp, Kategorie,
 
 `apps/pfotentechnik/astro.config.mjs` liest Frontmatter während des Builds. `updatedAt` oder `publishedAt` werden als `lastmod` ausgegeben. `seo.sitemap`, `seo.noindex`, `seo.changefreq` und `seo.priority` werden berücksichtigt.
 
+## Bild-Pipeline mit `astro:assets`
+
+Content-Bilder liegen unter `apps/pfotentechnik/src/assets/images/`. Frontmatter verweist relativ auf diese Dateien. Die Collection-Schemas validieren Bildfelder mit Astros `image()`-Resolver und liefern `ImageMetadata` statt öffentlicher URL-Strings.
+
+Astro-Seiten und Core-Komponenten rendern diese Metadaten über `Image`, `getImage` oder die generische Komponente `OptimizedImage.astro`. Dadurch entstehen responsive Formate, feste Abmessungen und optimierte Build-Artefakte. Direkte `<img>`-Ausgabe bleibt ausschließlich als Übergang für externe oder noch nicht migrierte Legacy-Strings bestehen.
+
+`public/images/` wird während der Legacy-Phase parallel beibehalten. Neue Content-Dateien dürfen diesen Ordner nicht mehr referenzieren. Die dortigen Produktkopien können entfernt werden, sobald keine Legacy-Daten und keine direkten URLs mehr darauf zugreifen.
+
+Für Produktseiten ist `hero` die neutrale Hauptansicht. `gallery-1` bis `gallery-3` zeigen jeweils andere Motive, beispielsweise Anwendung, Befüllung, Bedienelemente, Ausgabe, Reinigung oder Stromversorgung. Eine Galerie darf weder das Hero-Bild noch ein anderes Galeriebild duplizieren.
+
 ## Business-Logik und `data`
 
 Berechnungen, Regeln und Filter gehören nach `domain`. `data` darf nur strukturierte Legacy-Inhalte enthalten und wird schrittweise reduziert.

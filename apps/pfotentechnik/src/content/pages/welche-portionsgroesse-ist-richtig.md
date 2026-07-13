@@ -7,7 +7,9 @@ description: "So wird aus Hersteller-Portionen eine passende Futtermenge: Tagesr
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-portion-size.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-portion-size.webp"
+  alt: "Welche Portionsgröße ist beim Futterautomaten richtig?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

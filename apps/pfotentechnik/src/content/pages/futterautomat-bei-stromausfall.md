@@ -7,7 +7,9 @@ description: "Ob Zeitpläne bei Stromausfall weiterlaufen, wie Batterie-Backup f
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-power-outage.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-power-outage.webp"
+  alt: "Was passiert mit dem Futterautomaten bei Stromausfall?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

@@ -33,8 +33,6 @@ decisionKey: "edelstahlNapf"
 heroType: "edelstahl"
 themeColor: "neutral"
 
-heroImage: "/images/pages/beste-futterautomaten-mit-edelstahl-napf/hero.webp"
-
 decisionIntro: "Ein Edelstahlnapf lässt sich besonders einfach reinigen und gilt als hygienische Lösung für Hunde und Katzen."
 
 premiumBlocks:

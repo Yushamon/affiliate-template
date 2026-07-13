@@ -7,7 +7,9 @@ description: "Wie Futterpuzzles, Kameras und automatische Beschäftigung sinnvol
 category: "tierbeschaeftigung"
 categoryLabel: "Alltagswissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/dog-and-cat-feeder.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-and-cat-feeder.webp"
+  alt: "Wie kann Technik gegen Langeweile bei Haustieren helfen?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

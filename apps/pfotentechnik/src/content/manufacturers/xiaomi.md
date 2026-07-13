@@ -38,7 +38,7 @@ website: "https://www.mi.com"
 rating: 4.4
 images:
   hero:
-    src: "/images/manufacturers/xiaomi/hero.webp"
+    src: "../../assets/images/manufacturers/xiaomi/hero.webp"
     alt: "Xiaomi Herstellerübersicht"
   gallery: []
 productCategories:

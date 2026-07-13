@@ -34,8 +34,6 @@ heroType: "berufstaetige"
 
 themeColor: "blue"
 
-heroImage: "/images/pages/beste-futterautomaten-fuer-berufstaetige/hero.webp"
-
 decisionIntro: "Wenn dein Haustier regelmäßig mehrere Stunden allein zu Hause bleibt, sind zuverlässige Fütterungszeiten besonders wichtig. Unsere Empfehlung berücksichtigt genau diese Anforderungen."
 
 premiumBlocks:

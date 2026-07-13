@@ -7,7 +7,9 @@ description: "Regelmäßige Mahlzeiten schaffen Routine, erleichtern Mengenkontr
 category: "hundeernaehrung"
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/dog-mealtime.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-mealtime.webp"
+  alt: "Warum feste Fütterungszeiten für Hunde sinnvoll sind"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

@@ -7,7 +7,9 @@ description: "Was ältere Hunde bei Ernährung, Bewegung, Vorsorge, Zahngesundhe
 category: "hundegesundheit"
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/senior-dog-care.webp"
+heroImage:
+  src: "../../assets/images/editorial/senior-dog-care.webp"
+  alt: "Seniorenhunde richtig versorgen"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

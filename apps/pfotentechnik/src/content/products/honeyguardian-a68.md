@@ -38,21 +38,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/honeyguardian-a68/hero.webp"
-    alt: "HoneyGuardian A68 Smart Pet Feeder"
+    src: "../../assets/images/products/honeyguardian-a68/hero.webp"
+    alt: "HoneyGuardian A68 Smart Pet Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/honeyguardian-a68/thumbnail.webp"
-    alt: "HoneyGuardian A68 Smart Pet Feeder"
+    src: "../../assets/images/products/honeyguardian-a68/thumbnail.webp"
+    alt: "HoneyGuardian A68 Smart Pet Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/products/honeyguardian-a68/comparison.webp"
-    alt: "HoneyGuardian A68 Smart Pet Feeder"
+    src: "../../assets/images/products/honeyguardian-a68/comparison.webp"
+    alt: "HoneyGuardian A68 Smart Pet Feeder im Produktvergleich"
   gallery:
-    - src: "/images/products/honeyguardian-a68/gallery-1.webp"
-      alt: "HoneyGuardian A68 Smart Pet Feeder Ansicht 1"
-    - src: "/images/products/honeyguardian-a68/gallery-2.webp"
-      alt: "HoneyGuardian A68 Smart Pet Feeder Ansicht 2"
-    - src: "/images/products/honeyguardian-a68/gallery-3.webp"
-      alt: "HoneyGuardian A68 Smart Pet Feeder Ansicht 3"
+    - src: "../../assets/images/products/honeyguardian-a68/gallery-1.webp"
+      alt: "HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/honeyguardian-a68/gallery-2.webp"
+      alt: "HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/honeyguardian-a68/gallery-3.webp"
+      alt: "HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

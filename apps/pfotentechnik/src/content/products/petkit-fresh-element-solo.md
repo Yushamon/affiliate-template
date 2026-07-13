@@ -37,15 +37,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT Fresh Element Solo"
+    src: "../../assets/images/products/petkit-fresh-element-solo/hero.webp"
+    alt: "PETKIT Fresh Element Solo in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT Fresh Element Solo"
+    src: "../../assets/images/products/petkit-fresh-element-solo/thumbnail.webp"
+    alt: "PETKIT Fresh Element Solo als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT Fresh Element Solo"
-  gallery: []
+    src: "../../assets/images/products/petkit-fresh-element-solo/comparison.webp"
+    alt: "PETKIT Fresh Element Solo im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petkit-fresh-element-solo/gallery-1.webp"
+      alt: "PETKIT Fresh Element Solo, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petkit-fresh-element-solo/gallery-2.webp"
+      alt: "PETKIT Fresh Element Solo, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petkit-fresh-element-solo/gallery-3.webp"
+      alt: "PETKIT Fresh Element Solo, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/petkit-fresh-element-solo/gallery-4.webp"
+      alt: "PETKIT Fresh Element Solo, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

@@ -1,5 +1,6 @@
 import {
-  defineCollection
+  defineCollection,
+  type ImageFunction
 } from "astro:content";
 
 import {
@@ -13,7 +14,8 @@ import {
 } from "./base";
 
 import {
-  faqSchema
+  faqSchema,
+  createImageSchema
 } from "./shared";
 
 const premiumCardSchema =
@@ -120,7 +122,7 @@ const premiumBlockSchema =
       .optional()
   });
 
-export const pageContentSchema =
+export const createPageContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
       .enum([
@@ -157,7 +159,7 @@ export const pageContentSchema =
       z.string().optional(),
 
     heroImage:
-      z.string().optional(),
+      createImageSchema(image).optional(),
 
     heroImageKey: z
       .enum([
@@ -176,7 +178,7 @@ export const pageContentSchema =
       .optional(),
 
     ogImage:
-      z.string().optional(),
+      createImageSchema(image).optional(),
 
     comparisonProducts: z
       .array(z.string())
@@ -275,11 +277,11 @@ export const pagesCollection =
         "./src/content/pages"
     }),
 
-    schema:
-      pageContentSchema
+    schema: ({ image }) =>
+      createPageContentSchema(image)
   });
 
 export type PageContentData =
   z.infer<
-    typeof pageContentSchema
+    ReturnType<typeof createPageContentSchema>
   >;

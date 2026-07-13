@@ -14,10 +14,18 @@ seo: { title: "Aqara Smart Pet Feeder C1 Test", description: "Aqara Smart Pet Fe
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "kleine-hunde", "zigbee", "smart-home", "offline-zeitplan", "trockenfutter"]
 images:
-  hero: { src: "/images/products/aqara-smart-pet-feeder-c1/hero.webp", alt: "Redaktionelle Darstellung des Aqara Smart Pet Feeder C1" }
-  thumbnail: { src: "/images/products/aqara-smart-pet-feeder-c1/thumbnail.webp", alt: "Aqara Smart Pet Feeder C1" }
-  comparison: { src: "/images/products/aqara-smart-pet-feeder-c1/comparison.webp", alt: "Aqara Smart Pet Feeder C1 im Vergleich" }
-  gallery: [{ src: "/images/products/aqara-smart-pet-feeder-c1/gallery-1.webp", alt: "Aqara C1 für Katze und kleinen Hund" }]
+  hero:
+    src: "../../assets/images/products/aqara-smart-pet-feeder-c1/hero.webp"
+    alt: "Aqara Smart Pet Feeder C1 in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/aqara-smart-pet-feeder-c1/thumbnail.webp"
+    alt: "Aqara Smart Pet Feeder C1 als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/aqara-smart-pet-feeder-c1/comparison.webp"
+    alt: "Aqara Smart Pet Feeder C1 im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/aqara-smart-pet-feeder-c1/gallery-1.webp"
+      alt: "Aqara Smart Pet Feeder C1, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Aktuellen Preis prüfen", url: "https://www.amazon.de/s?k=Aqara+Smart+Pet+Feeder+C1" }
 rating: 4.4
 score: 88

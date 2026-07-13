@@ -40,21 +40,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petlibro-air-automatic-feeder/hero.webp"
-    alt: "PETLIBRO Air Automatic Feeder"
+    src: "../../assets/images/products/petlibro-air-automatic-feeder/hero.webp"
+    alt: "PETLIBRO Air Automatic Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petlibro-air-automatic-feeder/thumbnail.webp"
-    alt: "PETLIBRO Air Automatic Feeder"
+    src: "../../assets/images/products/petlibro-air-automatic-feeder/thumbnail.webp"
+    alt: "PETLIBRO Air Automatic Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petlibro-air-automatic-feeder/comparison.webp"
-    alt: "PETLIBRO Air Automatic Feeder"
+    src: "../../assets/images/products/petlibro-air-automatic-feeder/comparison.webp"
+    alt: "PETLIBRO Air Automatic Feeder im Produktvergleich"
   gallery:
-    - src: "/images/products/petlibro-air-automatic-feeder/gallery-1.webp"
-      alt: "PETLIBRO Air Automatic Feeder Ansicht 1"
-    - src: "/images/products/petlibro-air-automatic-feeder/gallery-2.webp"
-      alt: "PETLIBRO Air Automatic Feeder Ansicht 2"
-    - src: "/images/products/petlibro-air-automatic-feeder/gallery-3.webp"
-      alt: "PETLIBRO Air Automatic Feeder Ansicht 3"
+    - src: "../../assets/images/products/petlibro-air-automatic-feeder/gallery-1.webp"
+      alt: "PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-air-automatic-feeder/gallery-2.webp"
+      alt: "PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-air-automatic-feeder/gallery-3.webp"
+      alt: "PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/petlibro-air-automatic-feeder/gallery-4.webp"
+      alt: "PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

@@ -39,14 +39,14 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "HoneyGuardian Smart Pet Feeder S305D"
+    src: "../../assets/images/products/honeyguardian-smart-pet-feeder-s305d/hero.webp"
+    alt: "HoneyGuardian Smart Pet Feeder S305D in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "HoneyGuardian Smart Pet Feeder S305D"
+    src: "../../assets/images/products/honeyguardian-smart-pet-feeder-s305d/thumbnail.webp"
+    alt: "HoneyGuardian Smart Pet Feeder S305D als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "HoneyGuardian Smart Pet Feeder S305D"
+    src: "../../assets/images/products/honeyguardian-smart-pet-feeder-s305d/comparison.webp"
+    alt: "HoneyGuardian Smart Pet Feeder S305D im Produktvergleich"
   gallery: []
 affiliate:
   provider: "amazon"

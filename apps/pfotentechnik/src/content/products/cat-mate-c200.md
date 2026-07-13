@@ -40,21 +40,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/cat-mate-c200/hero.webp"
-    alt: "Cat Mate C200"
+    src: "../../assets/images/products/cat-mate-c200/hero.webp"
+    alt: "Cat Mate C200 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/cat-mate-c200/thumbnail.webp"
-    alt: "Cat Mate C200"
+    src: "../../assets/images/products/cat-mate-c200/thumbnail.webp"
+    alt: "Cat Mate C200 als kompakte Produktansicht"
   comparison:
-    src: "/images/products/cat-mate-c200/comparison.webp"
-    alt: "Cat Mate C200"
+    src: "../../assets/images/products/cat-mate-c200/comparison.webp"
+    alt: "Cat Mate C200 im Produktvergleich"
   gallery:
-    - src: "/images/products/cat-mate-c200/gallery-1.webp"
-      alt: "Cat Mate C200 Ansicht 1"
-    - src: "/images/products/cat-mate-c200/gallery-2.webp"
-      alt: "Cat Mate C200 Ansicht 2"
-    - src: "/images/products/cat-mate-c200/gallery-3.webp"
-      alt: "Cat Mate C200 Ansicht 3"
+    - src: "../../assets/images/products/cat-mate-c200/gallery-1.webp"
+      alt: "Cat Mate C200, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/cat-mate-c200/gallery-2.webp"
+      alt: "Cat Mate C200, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/cat-mate-c200/gallery-3.webp"
+      alt: "Cat Mate C200, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

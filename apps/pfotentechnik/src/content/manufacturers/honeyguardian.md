@@ -38,7 +38,7 @@ website: "https://www.honeyguardian.com"
 rating: 4.2
 images:
   hero:
-    src: "/images/manufacturers/honeyguardian/hero.webp"
+    src: "../../assets/images/manufacturers/honeyguardian/hero.webp"
     alt: "HoneyGuardian Herstellerübersicht"
   gallery: []
 productCategories:

@@ -32,8 +32,6 @@ decisionKey: "seniorenkatzen"
 heroType: "seniorenkatze"
 themeColor: "amber"
 
-heroImage: "/images/pages/beste-futterautomaten-fuer-seniorenkatzen/hero.webp"
-
 decisionIntro: "Für ältere Katzen sind regelmäßige Fütterungszeiten, kleine Portionen und eine zuverlässige Technik besonders wichtig. Unsere Empfehlung berücksichtigt genau diese Anforderungen."
 
 premiumBlocks:

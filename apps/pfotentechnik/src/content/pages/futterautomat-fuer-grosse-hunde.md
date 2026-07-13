@@ -20,7 +20,9 @@ hub:
   order: 250
 hubPriority: 63
 project: "pfotentechnik"
-heroImage: "/images/editorial/dog-automatic-feeder.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-automatic-feeder.webp"
+  alt: "Futterautomat für große Hunde"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"

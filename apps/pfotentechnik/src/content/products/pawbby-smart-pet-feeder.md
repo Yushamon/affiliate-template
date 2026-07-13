@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PAWBBY Smart Pet Feeder"
+    src: "../../assets/images/products/pawbby-smart-pet-feeder/hero.webp"
+    alt: "PAWBBY Smart Pet Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PAWBBY Smart Pet Feeder"
+    src: "../../assets/images/products/pawbby-smart-pet-feeder/thumbnail.webp"
+    alt: "PAWBBY Smart Pet Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PAWBBY Smart Pet Feeder"
-  gallery: []
+    src: "../../assets/images/products/pawbby-smart-pet-feeder/comparison.webp"
+    alt: "PAWBBY Smart Pet Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/pawbby-smart-pet-feeder/gallery-1.webp"
+      alt: "PAWBBY Smart Pet Feeder mit Katze in einer realistischen Fütterungssituation"
+    - src: "../../assets/images/products/pawbby-smart-pet-feeder/gallery-2.webp"
+      alt: "Geöffneter Vorratsbehälter des PAWBBY Smart Pet Feeder beim Nachfüllen"
+    - src: "../../assets/images/products/pawbby-smart-pet-feeder/gallery-3.webp"
+      alt: "Ausgabeschacht und Edelstahlnapf des PAWBBY beim Portionieren von Trockenfutter"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

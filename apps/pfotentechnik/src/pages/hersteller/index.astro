@@ -1,5 +1,6 @@
 ---
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 
 import {
   getContentByHub
@@ -62,11 +63,12 @@ const manufacturers =
 
               <div class="manufacturer-card-image">
 
-                <img
+                <OptimizedImage
                   src={manufacturer.image}
                   alt={manufacturer.title}
-                  loading="lazy"
-                  decoding="async"
+                  width={640}
+                  height={420}
+                  layout="constrained"
                 />
 
               </div>

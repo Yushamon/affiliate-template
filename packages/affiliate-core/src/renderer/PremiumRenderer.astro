@@ -1,5 +1,6 @@
 ---
 import { stripLeadingIcon } from "../utils/content";
+import OptimizedImage from "../components/OptimizedImage.astro";
 
 type ProjectImageKey =
   | "hero" | "feature" | "inline" | "comparison" | "guide" | "faq"
@@ -168,11 +169,10 @@ const getBlockIcon = (type: PremiumBlockType) => {
 
           {shouldRenderBlockImage && (
             <figure class="premium-v3-image premium-v3-image-compact">
-              <img
+              <OptimizedImage
                 src={blockImage}
                 alt={block.imageAlt ?? block.title ?? block.eyebrow ?? "Ratgeber Illustration"}
-                loading="lazy"
-                decoding="async"
+                layout="constrained"
               />
             </figure>
           )}

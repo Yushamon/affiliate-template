@@ -39,15 +39,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT YumShare Dual-Hopper 2"
+    src: "../../assets/images/products/petkit-yumshare-dual-hopper/hero.webp"
+    alt: "PETKIT YumShare Dual-Hopper 2 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT YumShare Dual-Hopper 2"
+    src: "../../assets/images/products/petkit-yumshare-dual-hopper/thumbnail.webp"
+    alt: "PETKIT YumShare Dual-Hopper 2 als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETKIT YumShare Dual-Hopper 2"
-  gallery: []
+    src: "../../assets/images/products/petkit-yumshare-dual-hopper/comparison.webp"
+    alt: "PETKIT YumShare Dual-Hopper 2 im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petkit-yumshare-dual-hopper/gallery-1.webp"
+      alt: "PETKIT YumShare Dual-Hopper 2, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petkit-yumshare-dual-hopper/gallery-2.webp"
+      alt: "PETKIT YumShare Dual-Hopper 2, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petkit-yumshare-dual-hopper/gallery-3.webp"
+      alt: "PETKIT YumShare Dual-Hopper 2, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/petkit-yumshare-dual-hopper/gallery-4.webp"
+      alt: "PETKIT YumShare Dual-Hopper 2, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

@@ -1,5 +1,6 @@
 import {
-  defineCollection
+  defineCollection,
+  type ImageFunction
 } from "astro:content";
 
 import {
@@ -14,7 +15,7 @@ import {
 
 import {
   faqSchema,
-  imageSchema
+  createImageSchema
 } from "./shared";
 
 const comparisonItemSchema =
@@ -73,7 +74,7 @@ const comparisonResultSchema =
       z.string().optional()
   });
 
-export const comparisonContentSchema =
+export const createComparisonContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
       .literal("comparison")
@@ -98,7 +99,7 @@ export const comparisonContentSchema =
       z.string().optional(),
 
     heroImage:
-      imageSchema.optional(),
+      createImageSchema(image).optional(),
 
     items: z
       .array(
@@ -136,11 +137,11 @@ export const comparisonsCollection =
         "./src/content/comparisons"
     }),
 
-    schema:
-      comparisonContentSchema
+    schema: ({ image }) =>
+      createComparisonContentSchema(image)
   });
 
 export type ComparisonContentData =
   z.infer<
-    typeof comparisonContentSchema
+    ReturnType<typeof createComparisonContentSchema>
   >;

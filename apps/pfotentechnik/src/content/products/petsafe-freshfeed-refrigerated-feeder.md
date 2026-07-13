@@ -14,10 +14,18 @@ seo: { title: "PetSafe FreshFeed Refrigerated Test", description: "PetSafe Fresh
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "kleine-hunde", "nassfutter", "aktive-kuehlung", "app", "neu-2026"]
 images:
-  hero: { src: "/images/products/petsafe-freshfeed-refrigerated-feeder/hero.webp", alt: "Redaktionelle Darstellung des PetSafe FreshFeed Refrigerated Pet Feeder" }
-  thumbnail: { src: "/images/products/petsafe-freshfeed-refrigerated-feeder/thumbnail.webp", alt: "PetSafe FreshFeed Refrigerated Pet Feeder" }
-  comparison: { src: "/images/products/petsafe-freshfeed-refrigerated-feeder/comparison.webp", alt: "PetSafe FreshFeed im Vergleich" }
-  gallery: [{ src: "/images/products/petsafe-freshfeed-refrigerated-feeder/gallery-1.webp", alt: "Sechs gekühlte Mahlzeiten des PetSafe FreshFeed" }]
+  hero:
+    src: "../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/hero.webp"
+    alt: "PetSafe FreshFeed Refrigerated Pet Feeder in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/thumbnail.webp"
+    alt: "PetSafe FreshFeed Refrigerated Pet Feeder als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/comparison.webp"
+    alt: "PetSafe FreshFeed Refrigerated Pet Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/gallery-1.webp"
+      alt: "PetSafe FreshFeed Refrigerated Pet Feeder, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Verfügbarkeit prüfen", url: "https://www.amazon.de/s?k=PetSafe+FreshFeed+Refrigerated+Pet+Feeder" }
 rating: 4.5
 score: 90

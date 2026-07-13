@@ -1,9 +1,11 @@
 ---
 import { getCollection, getEntry, render } from "astro:content";
+import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import {
   getComparisonBreadcrumbs,
   getRelatedContent
@@ -24,6 +26,9 @@ const entry = await getEntry("comparisons", comparisonId);
 if (!entry) throw new Error(`Vergleich "${comparisonId}" wurde nicht gefunden.`);
 
 const comparison = entry.data;
+const optimizedOgImage = comparison.heroImage
+  ? await getImage({ src: comparison.heroImage.src, width: 1200, quality: "high" })
+  : undefined;
 const { Content } = await render(entry);
 const products = await getCollection("products");
 const manufacturers = await getCollection("manufacturers");
@@ -172,6 +177,7 @@ const relatedItems = relatedEntries.map((related) => ({
   description={comparison.description}
   seoDescription={comparison.seo?.description ?? comparison.description}
   canonical={comparison.seo?.canonical ?? `/vergleiche/${comparison.slug}/`}
+  ogImage={optimizedOgImage?.src}
   faq={comparison.faq}
   categoryLabel="Vergleiche"
   breadcrumbs={breadcrumbs}
@@ -182,11 +188,11 @@ const relatedItems = relatedEntries.map((related) => ({
   <main class="comparison-detail">
     <header class="comparison-hero">
       {comparison.heroImage && (
-        <img
+        <OptimizedImage
           src={comparison.heroImage.src}
           alt={comparison.heroImage.alt ?? comparison.title}
-          loading="eager"
-          decoding="async"
+          layout="full-width"
+          priority
         />
       )}
       <span>{comparison.icon ?? "↔"} Vergleich</span>
@@ -197,11 +203,12 @@ const relatedItems = relatedEntries.map((related) => ({
     {winnerItem && (
       <section class="comparison-winner" aria-labelledby="comparison-winner-title">
         {winnerImage && (
-          <img
+          <OptimizedImage
             src={winnerImage.src}
             alt={winnerImage.alt ?? winnerItem.label ?? "Top-Empfehlung"}
-            loading="eager"
-            decoding="async"
+            width={720}
+            height={540}
+            layout="constrained"
           />
         )}
         <div>
@@ -244,11 +251,12 @@ const relatedItems = relatedEntries.map((related) => ({
           return (
             <a href={href}>
               {image && (
-                <img
+                <OptimizedImage
                   src={image.src}
                   alt={image.alt ?? title}
-                  loading="lazy"
-                  decoding="async"
+                  width={480}
+                  height={360}
+                  layout="constrained"
                 />
               )}
               <span>

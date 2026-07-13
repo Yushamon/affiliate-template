@@ -32,8 +32,6 @@ decisionKey: "mehrtierhaushalte"
 heroType: "mehrtierhaushalt"
 themeColor: "teal"
 
-heroImage: "/images/pages/beste-futterautomaten-fuer-mehrtierhaushalte/hero.webp"
-
 decisionIntro: "Mehrere Tiere stellen andere Anforderungen an einen Futterautomaten. Besonders wichtig sind Zuverlässigkeit, Portionierung und eine sichere Trennung der Mahlzeiten."
 
 premiumBlocks:

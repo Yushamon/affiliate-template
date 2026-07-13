@@ -1,5 +1,6 @@
 import {
-  defineCollection
+  defineCollection,
+  type ImageFunction
 } from "astro:content";
 
 import {
@@ -14,11 +15,13 @@ import {
 
 import {
   faqSchema,
-  imageSchema
+  createImageSchema
 } from "./shared";
 
-const manufacturerImagesSchema =
-  z.object({
+const createManufacturerImagesSchema = (image: ImageFunction) => {
+  const imageSchema = createImageSchema(image);
+
+  return z.object({
     hero: imageSchema,
 
     logo:
@@ -28,6 +31,7 @@ const manufacturerImagesSchema =
       .array(imageSchema)
       .default([])
   });
+};
 
 const manufacturerSeriesSchema =
   z.object({
@@ -78,7 +82,7 @@ const manufacturerSourceSchema =
       z.string().optional()
   });
 
-export const manufacturerContentSchema =
+export const createManufacturerContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
       .literal("manufacturer")
@@ -108,7 +112,7 @@ export const manufacturerContentSchema =
       z.string(),
 
     images:
-      manufacturerImagesSchema,
+      createManufacturerImagesSchema(image),
 
     productCategories: z
       .array(z.string())
@@ -181,11 +185,11 @@ export const manufacturersCollection =
         "./src/content/manufacturers"
     }),
 
-    schema:
-      manufacturerContentSchema
+    schema: ({ image }) =>
+      createManufacturerContentSchema(image)
   });
 
 export type ManufacturerContentData =
   z.infer<
-    typeof manufacturerContentSchema
+    ReturnType<typeof createManufacturerContentSchema>
   >;

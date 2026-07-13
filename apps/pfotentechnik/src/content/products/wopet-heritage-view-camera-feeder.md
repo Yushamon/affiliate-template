@@ -39,15 +39,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Heritage View Camera Feeder"
+    src: "../../assets/images/products/wopet-heritage-view-camera-feeder/hero.webp"
+    alt: "WOPET Heritage View Camera Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Heritage View Camera Feeder"
+    src: "../../assets/images/products/wopet-heritage-view-camera-feeder/thumbnail.webp"
+    alt: "WOPET Heritage View Camera Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "WOPET Heritage View Camera Feeder"
-  gallery: []
+    src: "../../assets/images/products/wopet-heritage-view-camera-feeder/comparison.webp"
+    alt: "WOPET Heritage View Camera Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-1.webp"
+      alt: "WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-2.webp"
+      alt: "WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-3.webp"
+      alt: "WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-4.webp"
+      alt: "WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

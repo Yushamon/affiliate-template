@@ -23,7 +23,9 @@ hub:
   icon: "📖"
   order: 170
 decisionKey: "welpen"
-heroImage: "/images/editorial/puppy-feeding.webp"
+heroImage:
+  src: "../../assets/images/editorial/puppy-feeding.webp"
+  alt: "Beste Futterautomaten für Welpen"
 premiumBlocks:
   - type: answer
     eyebrow: "Kurzantwort"

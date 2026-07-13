@@ -7,7 +7,9 @@ description: "Häufige Gründe für hastiges Fressen, geeignete Gegenmaßnahmen 
 category: "hundeverhalten"
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/dog-mealtime.webp"
+heroImage:
+  src: "../../assets/images/editorial/dog-mealtime.webp"
+  alt: "Warum schlingt mein Hund?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

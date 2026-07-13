@@ -1,7 +1,11 @@
 ---
 import { getCollection } from "astro:content";
+import { getImage } from "astro:assets";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import { projectConfig } from "../project.config";
+import feederHeroImage from "../assets/images/project/pfotentechnik/feeder-hero.webp";
+import guideImage from "../assets/images/project/pfotentechnik/guide.webp";
 
 const { home } = projectConfig;
 const products = await getCollection("products");
@@ -38,13 +42,18 @@ const pages = (await getCollection("pages"))
     (b.data.updatedAt ?? "").localeCompare(a.data.updatedAt ?? "")
   )
   .slice(0, 3);
+const optimizedOgImage = await getImage({
+  src: feederHeroImage,
+  width: 1200,
+  quality: "high"
+});
 ---
 
 <ProjectLayout
   title={home.seo.title}
   description={home.seo.description}
   canonical="/"
-  ogImage="/images/project/pfotentechnik/feeder-hero.webp"
+  ogImage={optimizedOgImage.src}
   publishedAt={home.seo.publishedAt}
   updatedAt={home.seo.updatedAt}
   schemaType="article"
@@ -72,14 +81,11 @@ const pages = (await getCollection("pages"))
       </div>
 
       <figure class="pt-hero-media">
-        <img
-          src="/images/project/pfotentechnik/feeder-hero.webp"
+        <OptimizedImage
+          src={feederHeroImage}
           alt={home.hero.imageAlt}
-          width="1728"
-          height="960"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
+          layout="full-width"
+          priority
         />
         <span class="pt-image-accent" aria-hidden="true"></span>
       </figure>
@@ -159,11 +165,12 @@ const pages = (await getCollection("pages"))
         {pages.map((page) => (
           <a class="pt-guide-card" href={`/${page.data.slug}`}>
             <div class="pt-guide-image">
-              <img
-                src={page.data.heroImage ?? "/images/project/pfotentechnik/guide.webp"}
+              <OptimizedImage
+                src={page.data.heroImage?.src ?? guideImage}
                 alt=""
-                loading="lazy"
-                decoding="async"
+                width={640}
+                height={420}
+                layout="constrained"
               />
             </div>
             <div class="pt-guide-content">
@@ -193,11 +200,12 @@ const pages = (await getCollection("pages"))
         {featuredProducts.map((product, index) => (
           <a class="pt-category-card" href={`/produkt/${product.data.slug}/`}>
             <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
-            <img
+            <OptimizedImage
               src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
               alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
-              loading="lazy"
-              decoding="async"
+              width={480}
+              height={360}
+              layout="constrained"
             />
             <p class="pt-eyebrow">{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</p>
             <h3>{product.data.title}</h3>

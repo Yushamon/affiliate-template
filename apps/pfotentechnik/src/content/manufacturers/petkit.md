@@ -38,7 +38,7 @@ website: "https://petkit.com"
 rating: 4.7
 images:
   hero:
-    src: "/images/manufacturers/petkit/hero.webp"
+    src: "../../assets/images/manufacturers/petkit/hero.webp"
     alt: "PETKIT Herstellerübersicht"
   gallery: []
 productCategories:

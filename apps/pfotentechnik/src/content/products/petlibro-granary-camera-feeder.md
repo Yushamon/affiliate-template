@@ -39,15 +39,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Petlibro Granary Camera Feeder"
+    src: "../../assets/images/products/petlibro-granary-camera/hero.webp"
+    alt: "Petlibro Granary Camera Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Petlibro Granary Camera Feeder"
+    src: "../../assets/images/products/petlibro-granary-camera/thumbnail.webp"
+    alt: "Petlibro Granary Camera Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Petlibro Granary Camera Feeder"
-  gallery: []
+    src: "../../assets/images/products/petlibro-granary-camera/comparison.webp"
+    alt: "Petlibro Granary Camera Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petlibro-granary-camera/gallery-1.webp"
+      alt: "Petlibro Granary Camera Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-granary-camera/gallery-2.webp"
+      alt: "Petlibro Granary Camera Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-granary-camera/gallery-3.webp"
+      alt: "Petlibro Granary Camera Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

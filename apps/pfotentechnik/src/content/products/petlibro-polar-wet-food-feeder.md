@@ -38,21 +38,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petlibro-polar-wet-food-feeder/hero.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder"
+    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/hero.webp"
+    alt: "PETLIBRO Polar Wet Food Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder"
+    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp"
+    alt: "PETLIBRO Polar Wet Food Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petlibro-polar-wet-food-feeder/comparison.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder"
+    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp"
+    alt: "PETLIBRO Polar Wet Food Feeder im Produktvergleich"
   gallery:
-    - src: "/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp"
-      alt: "PETLIBRO Polar Wet Food Feeder Ansicht 1"
-    - src: "/images/products/petlibro-polar-wet-food-feeder/gallery-2.webp"
-      alt: "PETLIBRO Polar Wet Food Feeder Ansicht 2"
-    - src: "/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp"
-      alt: "PETLIBRO Polar Wet Food Feeder Ansicht 3"
+    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp"
+      alt: "PETLIBRO Polar Wet Food Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-2.webp"
+      alt: "PETLIBRO Polar Wet Food Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp"
+      alt: "PETLIBRO Polar Wet Food Feeder, weitere redaktionelle Ansicht 3"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

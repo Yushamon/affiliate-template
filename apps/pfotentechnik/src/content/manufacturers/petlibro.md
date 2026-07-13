@@ -59,11 +59,8 @@ rating: 4.6
 
 images:
   hero:
-    src: "/images/manufacturers/petlibro/hero.webp"
+    src: "../../assets/images/manufacturers/petlibro/hero.webp"
     alt: "PETLIBRO Futterautomat in einem modernen Zuhause"
-  logo:
-    src: "/images/manufacturers/petlibro/logo.webp"
-    alt: "PETLIBRO Logo"
   gallery: []
 
 productCategories:

@@ -38,7 +38,7 @@ website: "https://wopet.com"
 rating: 4.3
 images:
   hero:
-    src: "/images/manufacturers/wopet/hero.webp"
+    src: "../../assets/images/manufacturers/wopet/hero.webp"
     alt: "WOPET Herstellerübersicht"
   gallery: []
 productCategories:

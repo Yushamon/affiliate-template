@@ -39,21 +39,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petkit-fresh-element-infinity/hero.webp"
-    alt: "PETKIT Fresh Element Infinity"
+    src: "../../assets/images/products/petkit-fresh-element-infinity/hero.webp"
+    alt: "PETKIT Fresh Element Infinity in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petkit-fresh-element-infinity/thumbnail.webp"
-    alt: "PETKIT Fresh Element Infinity"
+    src: "../../assets/images/products/petkit-fresh-element-infinity/thumbnail.webp"
+    alt: "PETKIT Fresh Element Infinity als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petkit-fresh-element-infinity/comparison.webp"
-    alt: "PETKIT Fresh Element Infinity"
+    src: "../../assets/images/products/petkit-fresh-element-infinity/comparison.webp"
+    alt: "PETKIT Fresh Element Infinity im Produktvergleich"
   gallery:
-    - src: "/images/products/petkit-fresh-element-infinity/gallery-1.webp"
-      alt: "PETKIT Fresh Element Infinity Ansicht 1"
-    - src: "/images/products/petkit-fresh-element-infinity/gallery-2.webp"
-      alt: "PETKIT Fresh Element Infinity Ansicht 2"
-    - src: "/images/products/petkit-fresh-element-infinity/gallery-3.webp"
-      alt: "PETKIT Fresh Element Infinity Ansicht 3"
+    - src: "../../assets/images/products/petkit-fresh-element-infinity/gallery-1.webp"
+      alt: "PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petkit-fresh-element-infinity/gallery-2.webp"
+      alt: "PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petkit-fresh-element-infinity/gallery-3.webp"
+      alt: "PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/petkit-fresh-element-infinity/gallery-4.webp"
+      alt: "PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

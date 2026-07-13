@@ -33,8 +33,6 @@ heroType: "budget"
 
 themeColor: "green"
 
-heroImage: "/images/pages/beste-futterautomaten-unter-100-euro/hero.webp"
-
 decisionIntro: "Auch unter 100 Euro gibt es zuverlässige Futterautomaten. Besonders wichtig sind eine präzise Portionierung und eine solide Verarbeitung."
 
 premiumBlocks:

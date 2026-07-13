@@ -14,10 +14,18 @@ seo: { title: "Oneisall 2-in-1 Futterautomat & Wasser Test", description: "Oneis
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "trockenfutter", "wasser", "2-in-1", "neu", "oneisall"]
 images:
-  hero: { src: "/images/products/oneisall-2-in-1-feeder-water/hero.webp", alt: "Redaktionelle Darstellung der Oneisall 2-in-1 Futter- und Wasserstation" }
-  thumbnail: { src: "/images/products/oneisall-2-in-1-feeder-water/thumbnail.webp", alt: "Oneisall 2-in-1 Futterautomat und Wasserspender" }
-  comparison: { src: "/images/products/oneisall-2-in-1-feeder-water/comparison.webp", alt: "Oneisall 2-in-1 Station im Vergleich" }
-  gallery: [{ src: "/images/products/oneisall-2-in-1-feeder-water/gallery-1.webp", alt: "Oneisall Futter- und Wasserbereiche" }]
+  hero:
+    src: "../../assets/images/products/oneisall-2-in-1-feeder-water/hero.webp"
+    alt: "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/oneisall-2-in-1-feeder-water/thumbnail.webp"
+    alt: "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/oneisall-2-in-1-feeder-water/comparison.webp"
+    alt: "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/oneisall-2-in-1-feeder-water/gallery-1.webp"
+      alt: "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Verfügbarkeit prüfen", url: "https://www.amazon.de/s?k=oneisall+2+in+1+automatic+cat+feeder+water+dispenser" }
 rating: 4.1
 score: 82

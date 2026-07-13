@@ -3,6 +3,7 @@ import {
   getCollection,
   getEntry
 } from "astro:content";
+import { getImage } from "astro:assets";
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 
@@ -175,6 +176,12 @@ const reviewProduct = {
             : undefined
       };
 
+const optimizedOgImage = await getImage({
+  src: heroImage,
+  width: 1200,
+  quality: "high"
+});
+
 const categoryLabel =
   contentProduct.category.label;
 
@@ -300,7 +307,7 @@ const everydayCriteria = [
   description={pageDescription}
   seoDescription={seoDescription}
   canonical={canonical}
-  ogImage={heroImage}
+  ogImage={optimizedOgImage.src}
   author={author}
   publishedAt={publishedAt}
   updatedAt={updatedAt}

@@ -7,7 +7,9 @@ description: "Batteriebetrieb, Netzteil und kombinierte Stromversorgung bei Futt
 category: "futterautomaten"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/feeder-battery-or-mains.webp"
+heroImage:
+  src: "../../assets/images/editorial/feeder-battery-or-mains.webp"
+  alt: "Futterautomat mit Batterie oder Netzteil?"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

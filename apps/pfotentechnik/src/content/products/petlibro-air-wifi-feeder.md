@@ -38,15 +38,23 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETLIBRO Air WiFi Feeder"
+    src: "../../assets/images/products/petlibro-air-wifi-feeder/hero.webp"
+    alt: "PETLIBRO Air WiFi Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETLIBRO Air WiFi Feeder"
+    src: "../../assets/images/products/petlibro-air-wifi-feeder/thumbnail.webp"
+    alt: "PETLIBRO Air WiFi Feeder als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "PETLIBRO Air WiFi Feeder"
-  gallery: []
+    src: "../../assets/images/products/petlibro-air-wifi-feeder/comparison.webp"
+    alt: "PETLIBRO Air WiFi Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-1.webp"
+      alt: "PETLIBRO Air WiFi Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-2.webp"
+      alt: "PETLIBRO Air WiFi Feeder, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-3.webp"
+      alt: "PETLIBRO Air WiFi Feeder, weitere redaktionelle Ansicht 3"
+    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-4.webp"
+      alt: "PETLIBRO Air WiFi Feeder, weitere redaktionelle Ansicht 4"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

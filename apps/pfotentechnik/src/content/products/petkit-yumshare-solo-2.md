@@ -46,27 +46,22 @@ tags:
   - kleine-hunde
 
 images:
-
   hero:
-    src: "/images/products/petkit-yumshare-solo-2/hero.webp"
-    alt: "PETKIT YumShare Solo 2"
-
+    src: "../../assets/images/products/petkit-yumshare-solo-2/hero.webp"
+    alt: "PETKIT YumShare Solo 2 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petkit-yumshare-solo-2/thumbnail.webp"
-    alt: "PETKIT YumShare Solo 2"
-
+    src: "../../assets/images/products/petkit-yumshare-solo-2/thumbnail.webp"
+    alt: "PETKIT YumShare Solo 2 als kompakte Produktansicht"
   comparison:
-    src: "/images/products/petkit-yumshare-solo-2/comparison.webp"
-    alt: "PETKIT YumShare Solo 2"
-
+    src: "../../assets/images/products/petkit-yumshare-solo-2/comparison.webp"
+    alt: "PETKIT YumShare Solo 2 im Produktvergleich"
   gallery:
-
-    - src: "/images/products/petkit-yumshare-solo-2/gallery-1.webp"
-      alt: "Produkt"
-
-    - src: "/images/products/petkit-yumshare-solo-2/gallery-2.webp"
-      alt: "App"
-
+    - src: "../../assets/images/products/petkit-yumshare-solo-2/gallery-1.webp"
+      alt: "PETKIT YumShare Solo 2, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petkit-yumshare-solo-2/gallery-2.webp"
+      alt: "PETKIT YumShare Solo 2, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/petkit-yumshare-solo-2/gallery-3.webp"
+      alt: "PETKIT YumShare Solo 2, weitere redaktionelle Ansicht 3"
 affiliate:
 
   provider: amazon

@@ -14,10 +14,18 @@ seo: { title: "PawSync Smart Pet Feeder Test", description: "PawSync Smart Pet F
 hub: { sections: ["produkte", "futterautomaten"] }
 tags: ["katzen", "kleine-hunde", "app", "waage", "portionierung", "trockenfutter"]
 images:
-  hero: { src: "/images/products/pawsync-smart-pet-feeder/hero.webp", alt: "Redaktionelle Darstellung des PawSync Smart Pet Feeder" }
-  thumbnail: { src: "/images/products/pawsync-smart-pet-feeder/thumbnail.webp", alt: "PawSync Smart Pet Feeder" }
-  comparison: { src: "/images/products/pawsync-smart-pet-feeder/comparison.webp", alt: "PawSync Smart Pet Feeder im Vergleich" }
-  gallery: [{ src: "/images/products/pawsync-smart-pet-feeder/gallery-1.webp", alt: "PawSync Smart Pet Feeder mit Wiegeplattform" }]
+  hero:
+    src: "../../assets/images/products/pawsync-smart-pet-feeder/hero.webp"
+    alt: "PawSync Smart Pet Feeder in redaktioneller Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/pawsync-smart-pet-feeder/thumbnail.webp"
+    alt: "PawSync Smart Pet Feeder als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/pawsync-smart-pet-feeder/comparison.webp"
+    alt: "PawSync Smart Pet Feeder im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/pawsync-smart-pet-feeder/gallery-1.webp"
+      alt: "PawSync Smart Pet Feeder, weitere redaktionelle Ansicht 1"
 affiliate: { provider: "amazon", label: "Verfügbarkeit prüfen", url: "https://www.amazon.de/s?k=PawSync+Smart+Pet+Feeder" }
 rating: 4.6
 score: 91

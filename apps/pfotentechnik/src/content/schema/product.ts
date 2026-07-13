@@ -1,5 +1,6 @@
 import {
-  defineCollection
+  defineCollection,
+  type ImageFunction
 } from "astro:content";
 
 import {
@@ -14,7 +15,7 @@ import {
 
 import {
   faqSchema,
-  imageSchema
+  createImageSchema
 } from "./shared";
 
 const productManufacturerSchema =
@@ -31,8 +32,10 @@ const productCategorySchema =
     path: z.string().optional()
   });
 
-const productImagesSchema =
-  z.object({
+const createProductImagesSchema = (image: ImageFunction) => {
+  const imageSchema = createImageSchema(image);
+
+  return z.object({
     hero: imageSchema,
 
     thumbnail:
@@ -45,6 +48,7 @@ const productImagesSchema =
       .array(imageSchema)
       .default([])
   });
+};
 
 const productAffiliateSchema =
   z.object({
@@ -131,7 +135,7 @@ const productSpecSchema =
     ])
   });
 
-export const productContentSchema =
+export const createProductContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
       .literal("product")
@@ -155,7 +159,7 @@ export const productContentSchema =
       .optional(),
 
     images:
-      productImagesSchema,
+      createProductImagesSchema(image),
 
     affiliate:
       productAffiliateSchema
@@ -256,11 +260,11 @@ export const productsCollection =
         "./src/content/products"
     }),
 
-    schema:
-      productContentSchema
+    schema: ({ image }) =>
+      createProductContentSchema(image)
   });
 
 export type ProductContentData =
   z.infer<
-    typeof productContentSchema
+    ReturnType<typeof createProductContentSchema>
   >;

@@ -38,15 +38,21 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Cat Mate C500"
+    src: "../../assets/images/products/cat-mate-c500/hero.webp"
+    alt: "Cat Mate C500 in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Cat Mate C500"
+    src: "../../assets/images/products/cat-mate-c500/thumbnail.webp"
+    alt: "Cat Mate C500 als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "Cat Mate C500"
-  gallery: []
+    src: "../../assets/images/products/cat-mate-c500/comparison.webp"
+    alt: "Cat Mate C500 im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/cat-mate-c500/gallery-1.webp"
+      alt: "Cat Mate C500, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/cat-mate-c500/gallery-2.webp"
+      alt: "Cat Mate C500, weitere redaktionelle Ansicht 2"
+    - src: "../../assets/images/products/cat-mate-c500/gallery-3.webp"
+      alt: "Cat Mate C500 mit geöffnetem Fünf-Fächer-Einsatz beim Befüllen"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

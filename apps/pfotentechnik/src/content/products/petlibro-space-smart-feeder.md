@@ -38,19 +38,16 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/products/petlibro-space-smart-feeder/hero.webp"
-    alt: "PETLIBRO Space Smart Feeder"
+    src: "../../assets/images/products/petlibro-space-smart-feeder/hero.webp"
+    alt: "PETLIBRO Space Smart Feeder in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/products/petlibro-space-smart-feeder/thumbnail.webp"
-    alt: "PETLIBRO Space Smart Feeder"
-  comparison:
-    src: "/images/products/petlibro-space-smart-feeder/comparison.webp"
-    alt: "PETLIBRO Space Smart Feeder"
+    src: "../../assets/images/products/petlibro-space-smart-feeder/thumbnail.webp"
+    alt: "PETLIBRO Space Smart Feeder als kompakte Produktansicht"
   gallery:
-    - src: "/images/products/petlibro-space-smart-feeder/gallery-1.webp"
-      alt: "PETLIBRO Space Smart Feeder Ansicht 1"
-    - src: "/images/products/petlibro-space-smart-feeder/gallery-2.webp"
-      alt: "PETLIBRO Space Smart Feeder Ansicht 2"
+    - src: "../../assets/images/products/petlibro-space-smart-feeder/gallery-1.webp"
+      alt: "PETLIBRO Space Smart Feeder, weitere redaktionelle Ansicht 1"
+    - src: "../../assets/images/products/petlibro-space-smart-feeder/gallery-2.webp"
+      alt: "PETLIBRO Space Smart Feeder, weitere redaktionelle Ansicht 2"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

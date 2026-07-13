@@ -41,15 +41,17 @@ tags:
   - "smarte-futterautomaten"
 images:
   hero:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder Connect"
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder-connect/hero.webp"
+    alt: "SureFeed Microchip Pet Feeder Connect in redaktioneller Produktdarstellung"
   thumbnail:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder Connect"
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder-connect/thumbnail.webp"
+    alt: "SureFeed Microchip Pet Feeder Connect als kompakte Produktansicht"
   comparison:
-    src: "/images/project/pfotentechnik/product.webp"
-    alt: "SureFeed Microchip Pet Feeder Connect"
-  gallery: []
+    src: "../../assets/images/products/surefeed-microchip-pet-feeder-connect/comparison.webp"
+    alt: "SureFeed Microchip Pet Feeder Connect im Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/surefeed-microchip-pet-feeder-connect/gallery-1.webp"
+      alt: "SureFeed Microchip Pet Feeder Connect, weitere redaktionelle Ansicht 1"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

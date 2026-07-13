@@ -7,7 +7,9 @@ description: "Welpen bedarfsgerecht füttern: geeignetes Wachstumsfutter, Mahlze
 category: "hundeernaehrung"
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
-heroImage: "/images/editorial/puppy-feeding.webp"
+heroImage:
+  src: "../../assets/images/editorial/puppy-feeding.webp"
+  alt: "Welpen richtig füttern"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
