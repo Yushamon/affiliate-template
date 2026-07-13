@@ -113,11 +113,26 @@ export const projectConfig = {
         }
       ]
     },
+    intents: {
+      label: "Direkt zur passenden Lösung",
+      items: [
+        { label: "Für Katzen", href: "/futterautomat-katze/" },
+        { label: "Für Hunde", href: "/futterautomat-hund/" },
+        { label: "Für Nassfutter", href: "/futterautomat-nassfutter/" },
+        { label: "Für mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" },
+        { label: "Ohne WLAN", href: "/futterautomat-ohne-wlan/" },
+        { label: "Mit Kamera", href: "/futterautomat-mit-kamera/" }
+      ]
+    },
     values: {
       eyebrow: "Warum PfotenTechnik",
       title: "Weniger Marketing. Mehr Orientierung.",
       text:
         "Wir betrachten Technik aus Sicht von Tier und Alltag – nachvollziehbar, ruhig und ohne künstlichen Kaufdruck.",
+      methodologyAction: {
+        label: "Unsere Bewertungsmethodik ansehen",
+        href: "/so-bewerten-wir/"
+      },
       items: [
         {
           number: "01",
@@ -126,8 +141,8 @@ export const projectConfig = {
         },
         {
           number: "02",
-          title: "Aktuelle Produkttests",
-          text: "Funktionen, Apps und Folgekosten werden regelmäßig neu eingeordnet."
+          title: "Aktuelle Einordnungen",
+          text: "Funktionen, Apps, Folgekosten und dokumentierte Praxiserfahrungen werden regelmäßig neu geprüft."
         },
         {
           number: "03",

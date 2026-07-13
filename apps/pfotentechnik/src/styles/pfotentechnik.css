@@ -81,7 +81,7 @@ body {
   transform: translateY(-50%);
 }
 
-.nav-toggle-label {
+.nav-toggle-button {
   border-color: rgba(15, 118, 110, 0.16);
   background: rgba(255, 255, 255, 0.88);
   color: var(--primary-dark);
@@ -233,7 +233,8 @@ body {
 .pt-hero-media img {
   display: block;
   width: 100%;
-  min-height: 350px;
+  height: clamp(280px, 82vw, 420px);
+  min-height: 0;
   border-radius: 30px;
   box-shadow: var(--shadow-strong);
   object-fit: cover;
@@ -255,6 +256,51 @@ body {
 .pt-section {
   position: relative;
   margin-top: 92px;
+}
+
+.pt-intents {
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px solid rgba(15, 118, 110, 0.11);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.pt-intents > p {
+  margin: 0 0 14px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.pt-intent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pt-intent-list a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 9px 15px;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+  border-radius: 999px;
+  background: white;
+  color: var(--primary-dark);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.pt-intent-list a:hover {
+  border-color: var(--secondary);
+  transform: translateY(-2px);
 }
 
 .pt-section-header {
@@ -337,6 +383,13 @@ body {
   line-height: 1.65;
 }
 
+.pt-manufacturer-grid .pt-category-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .pt-card-line {
   position: absolute;
   right: 28px;
@@ -367,6 +420,15 @@ body {
 
 .pt-values-intro > p:last-child {
   color: rgba(255, 255, 255, 0.67);
+}
+
+.pt-methodology-link {
+  display: inline-flex;
+  margin-top: 22px;
+  color: #99f6e4;
+  font-size: 14px;
+  font-weight: 850;
+  text-underline-offset: 4px;
 }
 
 .pt-value-grid {
@@ -773,7 +835,8 @@ body {
   }
 
   .pt-hero-media img {
-    min-height: 570px;
+    height: 570px;
+    min-height: 0;
     border-radius: 38px;
     object-position: 62% center;
   }
@@ -846,6 +909,23 @@ body {
 
   .footer-v2 {
     margin-top: 90px;
+  }
+
+  .pt-section {
+    margin-top: 76px;
+  }
+
+  .pt-category-card {
+    min-height: 220px;
+    padding: 24px;
+  }
+
+  .pt-category-card h3 {
+    margin-top: 30px;
+  }
+
+  .pt-intents {
+    padding: 18px;
   }
 }
 

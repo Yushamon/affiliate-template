@@ -42,6 +42,8 @@ const pages = (await getCollection("pages"))
     (b.data.updatedAt ?? "").localeCompare(a.data.updatedAt ?? "")
   )
   .slice(0, 3);
+const modelSignal = `${products.length} ${products.length === 1 ? "Modell" : "Modelle"} eingeordnet`;
+const heroSignals = [modelSignal, ...home.hero.signals.slice(1)];
 const optimizedOgImage = await getImage({
   src: feederHeroImage,
   width: 1200,
@@ -74,7 +76,7 @@ const optimizedOgImage = await getImage({
         </div>
 
         <ul class="pt-signal-list" aria-label={home.hero.eyebrow}>
-          {home.hero.signals.map((signal) => <li>{signal}</li>)}
+          {heroSignals.map((signal) => <li>{signal}</li>)}
         </ul>
       </div>
 
@@ -89,6 +91,15 @@ const optimizedOgImage = await getImage({
       </figure>
     </section>
 
+    <nav class="pt-intents" aria-label={home.intents.label}>
+      <p>{home.intents.label}</p>
+      <ul class="pt-intent-list">
+        {home.intents.items.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
     <section class="pt-section pt-categories" aria-labelledby="pt-categories-title">
       <header class="pt-section-header">
         <p class="pt-eyebrow">{home.categories.eyebrow}</p>
@@ -97,9 +108,9 @@ const optimizedOgImage = await getImage({
       </header>
 
       <div class="pt-category-grid">
-        {availableCategories.map((category) => (
+        {availableCategories.map((category, index) => (
           <a class="pt-category-card" id={category.anchor} href={category.href}>
-            <span class="pt-card-index">{category.code}</span>
+            <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
             <h3>{category.title}</h3>
             <p>{category.text}</p>
             <span class="pt-card-line" aria-hidden="true"></span>
@@ -108,42 +119,35 @@ const optimizedOgImage = await getImage({
       </div>
     </section>
 
-    <section class="pt-section pt-categories" id="hersteller" aria-labelledby="pt-manufacturers-title">
+    <section
+      class="pt-section pt-products"
+      id="produkte"
+      aria-labelledby="pt-products-title"
+    >
+      <span id="vergleiche" class="pt-anchor" aria-hidden="true"></span>
       <header class="pt-section-header">
-        <p class="pt-eyebrow">{home.manufacturers.eyebrow}</p>
-        <h2 id="pt-manufacturers-title">{home.manufacturers.title}</h2>
-        <p>{home.manufacturers.text}</p>
+        <p class="pt-eyebrow">{home.products.eyebrow}</p>
+        <h2 id="pt-products-title">{home.products.title}</h2>
+        <p>{home.products.text}</p>
       </header>
-      <div class="pt-category-grid">
-        {manufacturers.map((manufacturer, index) => (
-          <a class="pt-category-card" href={`/hersteller/${manufacturer.data.slug}/`}>
+
+      <div class="pt-category-grid pt-home-ranking-list">
+        {featuredProducts.map((product, index) => (
+          <a class="pt-category-card" href={`/produkt/${product.data.slug}/`}>
             <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
-            <h3>{manufacturer.data.name}</h3>
-            <p>{manufacturer.data.description}</p>
+            <OptimizedImage
+              src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
+              alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
+              width={480}
+              height={360}
+              layout="constrained"
+            />
+            <p class="pt-eyebrow">{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</p>
+            <h3>{product.data.title}</h3>
+            <p>{product.data.recommendation}</p>
+            <strong>Produkttest lesen</strong>
             <span class="pt-card-line" aria-hidden="true"></span>
           </a>
-        ))}
-      </div>
-    </section>
-
-    <section
-      class="pt-section pt-values"
-      id="ueber-uns"
-      aria-labelledby="pt-values-title"
-    >
-      <div class="pt-values-intro">
-        <p class="pt-eyebrow">{home.values.eyebrow}</p>
-        <h2 id="pt-values-title">{home.values.title}</h2>
-        <p>{home.values.text}</p>
-      </div>
-
-      <div class="pt-value-grid">
-        {home.values.items.map((item) => (
-          <article class="pt-value-card">
-            <span>{item.number}</span>
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-          </article>
         ))}
       </div>
     </section>
@@ -182,35 +186,45 @@ const optimizedOgImage = await getImage({
       </div>
     </section>
 
-    <section
-      class="pt-section pt-products"
-      id="produkte"
-      aria-labelledby="pt-products-title"
-    >
-      <span id="vergleiche" class="pt-anchor" aria-hidden="true"></span>
+    <section class="pt-section pt-categories" id="hersteller" aria-labelledby="pt-manufacturers-title">
       <header class="pt-section-header">
-        <p class="pt-eyebrow">{home.products.eyebrow}</p>
-        <h2 id="pt-products-title">{home.products.title}</h2>
-        <p>{home.products.text}</p>
+        <p class="pt-eyebrow">{home.manufacturers.eyebrow}</p>
+        <h2 id="pt-manufacturers-title">{home.manufacturers.title}</h2>
+        <p>{home.manufacturers.text}</p>
       </header>
-
-      <div class="pt-category-grid pt-home-ranking-list">
-        {featuredProducts.map((product, index) => (
-          <a class="pt-category-card" href={`/produkt/${product.data.slug}/`}>
+      <div class="pt-category-grid pt-manufacturer-grid">
+        {manufacturers.map((manufacturer, index) => (
+          <a class="pt-category-card" href={`/hersteller/${manufacturer.data.slug}/`}>
             <span class="pt-card-index">{String(index + 1).padStart(2, "0")}</span>
-            <OptimizedImage
-              src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
-              alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
-              width={480}
-              height={360}
-              layout="constrained"
-            />
-            <p class="pt-eyebrow">{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</p>
-            <h3>{product.data.title}</h3>
-            <p>{product.data.recommendation}</p>
-            <strong>Produkttest lesen</strong>
+            <h3>{manufacturer.data.name}</h3>
+            <p>{manufacturer.data.hub?.description ?? manufacturer.data.description}</p>
             <span class="pt-card-line" aria-hidden="true"></span>
           </a>
+        ))}
+      </div>
+    </section>
+
+    <section
+      class="pt-section pt-values"
+      id="ueber-uns"
+      aria-labelledby="pt-values-title"
+    >
+      <div class="pt-values-intro">
+        <p class="pt-eyebrow">{home.values.eyebrow}</p>
+        <h2 id="pt-values-title">{home.values.title}</h2>
+        <p>{home.values.text}</p>
+        <a class="pt-methodology-link" href={home.values.methodologyAction.href}>
+          {home.values.methodologyAction.label}
+        </a>
+      </div>
+
+      <div class="pt-value-grid">
+        {home.values.items.map((item) => (
+          <article class="pt-value-card">
+            <span>{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </article>
         ))}
       </div>
     </section>

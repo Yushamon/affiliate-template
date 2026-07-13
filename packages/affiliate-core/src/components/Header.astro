@@ -19,16 +19,61 @@ const {
       {projectName}
     </a>
 
-    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
-
-    <label for="nav-toggle" class="nav-toggle-label">
+    <button
+      class="nav-toggle-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      data-nav-toggle
+    >
       Menü
-    </label>
+    </button>
 
-    <nav class="main-nav-v2">
+    <nav id="main-navigation" class="main-nav-v2" aria-label="Hauptnavigation" data-main-navigation>
       {links.map((link) => (
         <a href={link.href}>{link.label}</a>
       ))}
     </nav>
   </div>
 </header>
+
+<script>
+  const initializeNavigation = () => {
+    document.querySelectorAll<HTMLButtonElement>("[data-nav-toggle]").forEach((button) => {
+      if (button.dataset.initialized === "true") return;
+
+      const navigationId = button.getAttribute("aria-controls");
+      const navigation = navigationId ? document.getElementById(navigationId) : null;
+      if (!navigation) return;
+
+      const setOpen = (open: boolean) => {
+        button.setAttribute("aria-expanded", String(open));
+        navigation.toggleAttribute("data-open", open);
+      };
+
+      button.dataset.initialized = "true";
+      button.addEventListener("click", () => {
+        setOpen(button.getAttribute("aria-expanded") !== "true");
+      });
+
+      navigation.addEventListener("click", (event) => {
+        if ((event.target as HTMLElement).closest("a")) setOpen(false);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+          setOpen(false);
+          button.focus();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        const target = event.target as Node;
+        if (!button.contains(target) && !navigation.contains(target)) setOpen(false);
+      });
+    });
+  };
+
+  initializeNavigation();
+  document.addEventListener("astro:page-load", initializeNavigation);
+</script>
