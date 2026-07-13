@@ -4,7 +4,7 @@ import { getImage } from "astro:assets";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import { projectConfig } from "../project.config";
-import feederHeroImage from "../assets/images/project/pfotentechnik/feeder-hero.webp";
+import petTechHeroImage from "../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import guideImage from "../assets/images/project/pfotentechnik/guide.webp";
 
 const { home } = projectConfig;
@@ -45,7 +45,7 @@ const pages = (await getCollection("pages"))
 const modelSignal = `${products.length} ${products.length === 1 ? "Modell" : "Modelle"} eingeordnet`;
 const heroSignals = [modelSignal, ...home.hero.signals.slice(1)];
 const optimizedOgImage = await getImage({
-  src: feederHeroImage,
+  src: petTechHeroImage,
   width: 1200,
   quality: "high"
 });
@@ -82,7 +82,7 @@ const optimizedOgImage = await getImage({
 
       <figure class="pt-hero-media">
         <OptimizedImage
-          src={feederHeroImage}
+          src={petTechHeroImage}
           alt={home.hero.imageAlt}
           layout="full-width"
           priority
@@ -100,7 +100,7 @@ const optimizedOgImage = await getImage({
       </ul>
     </nav>
 
-    <section class="pt-section pt-categories" aria-labelledby="pt-categories-title">
+    <section id="produktwelten" class="pt-section pt-categories" aria-labelledby="pt-categories-title">
       <header class="pt-section-header">
         <p class="pt-eyebrow">{home.categories.eyebrow}</p>
         <h2 id="pt-categories-title">{home.categories.title}</h2>

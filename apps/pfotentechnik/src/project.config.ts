@@ -37,8 +37,7 @@ export const projectConfig = {
   categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen/",
   headerLinks: [
     { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
-    { label: "Für Katzen", href: "/futterautomat-katze/" },
-    { label: "Für Hunde", href: "/futterautomat-hund/" },
+    { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
     { label: "Vergleiche", href: "/vergleiche/" },
     { label: "Hersteller", href: "/hersteller/" },
     { label: "Wissen", href: "/wissen/" },
@@ -47,7 +46,7 @@ export const projectConfig = {
     seo: {
       title: "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
       description:
-        "Unabhängige Kaufberatung, verständliche Vergleiche und praxisnahe Empfehlungen für smarte Haustier-Technik – aktuell mit Fokus auf Futterautomaten.",
+        "Unabhängige Kaufberatung, verständliche Vergleiche und praxisnahe Empfehlungen für Futterautomaten, Trinkbrunnen und weitere Haustier-Technik.",
       publishedAt: "2026-07-08",
       updatedAt: "2026-07-09"
     },
@@ -57,16 +56,16 @@ export const projectConfig = {
       text:
         "Wir vergleichen Funktionen, Bedienung und Alltagstauglichkeit moderner Haustier-Gadgets – transparent und ohne künstlichen Kaufdruck.",
       primaryAction: {
-        label: "Futterautomaten vergleichen",
-        href: "/smarte-futterautomaten/"
+        label: "Produktwelten entdecken",
+        href: "/#produktwelten"
       },
       secondaryAction: {
         label: "Wissen entdecken",
         href: "/wissen/"
       },
       imageAlt:
-        "Katze und Hund in einem hellen Zuhause neben einem modernen Futterautomaten",
-      imageKey: "feederHero",
+        "Katze und Hund in einem hellen Zuhause neben einem Futterautomaten und einem Trinkbrunnen",
+      imageKey: "petTechHero",
       signals: [
         "15 Modelle eingeordnet",
         "Nach Alltagsszenarien bewertet",
@@ -100,7 +99,7 @@ export const projectConfig = {
           title: "Trinkbrunnen",
           text: "Material, Reinigung und Filterkosten realistisch einordnen.",
           anchor: "trinkbrunnen",
-          href: "/#produkte",
+          href: "/trinkbrunnen/",
           productCategory: "trinkbrunnen"
         },
         {
@@ -114,12 +113,14 @@ export const projectConfig = {
       ]
     },
     intents: {
-      label: "Direkt zur passenden Lösung",
+      label: "Direkt nach Tier oder Bedarf",
       items: [
-        { label: "Für Katzen", href: "/futterautomat-katze/" },
-        { label: "Für Hunde", href: "/futterautomat-hund/" },
-        { label: "Für Nassfutter", href: "/futterautomat-nassfutter/" },
-        { label: "Für mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" },
+        { label: "Katzen · Futterautomaten", href: "/futterautomat-katze/" },
+        { label: "Hunde · Futterautomaten", href: "/futterautomat-hund/" },
+        { label: "Katzen · Trinkbrunnen", href: "/trinkbrunnen/#katzen" },
+        { label: "Hunde · Trinkbrunnen", href: "/trinkbrunnen/#hunde" },
+        { label: "Nassfutter", href: "/futterautomat-nassfutter/" },
+        { label: "Mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" },
         { label: "Ohne WLAN", href: "/futterautomat-ohne-wlan/" },
         { label: "Mit Kamera", href: "/futterautomat-mit-kamera/" }
       ]
@@ -182,32 +183,31 @@ export const projectConfig = {
       "Unabhängige Kaufberatung rund um smarte Technik für Hunde und Katzen.",
     columns: [
       {
-        title: "Entdecken",
-        links: [
-          { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
-          { label: "Für Katzen", href: "/futterautomat-katze/" },
-          { label: "Für Hunde", href: "/futterautomat-hund/" },
-          { label: "Vergleiche", href: "/vergleiche/" },
-          { label: "Hersteller", href: "/hersteller/" },
-          { label: "Wissen", href: "/wissen/" }
-        ]
-      },
-      {
         title: "Produktwelten",
         links: [
-          { label: "Smarte Futterautomaten", href: "/smarte-futterautomaten/" },
+          { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
+          { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
           { label: "Futterautomaten mit App", href: "/futterautomat-mit-app/" },
-          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera/" },
-          { label: "Futterautomaten für Nassfutter", href: "/futterautomat-nassfutter/" }
+          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera/" }
         ]
       },
       {
-        title: "Hersteller",
+        title: "Nach Tier & Bedarf",
         links: [
-          { label: "Petlibro", href: "/hersteller/petlibro/" },
-          { label: "PETKIT", href: "/hersteller/petkit/" },
-          { label: "Cat Mate", href: "/hersteller/cat-mate/" },
-          { label: "SureFeed", href: "/hersteller/surefeed/" }
+          { label: "Futterautomaten für Katzen", href: "/futterautomat-katze/" },
+          { label: "Futterautomaten für Hunde", href: "/futterautomat-hund/" },
+          { label: "Trinkbrunnen für Katzen", href: "/trinkbrunnen/#katzen" },
+          { label: "Trinkbrunnen für Hunde", href: "/trinkbrunnen/#hunde" },
+          { label: "Für mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" }
+        ]
+      },
+      {
+        title: "Orientierung",
+        links: [
+          { label: "Vergleiche", href: "/vergleiche/" },
+          { label: "Hersteller", href: "/hersteller/" },
+          { label: "Wissen", href: "/wissen/" },
+          { label: "So bewerten wir", href: "/so-bewerten-wir/" }
         ]
       },
       {

@@ -20,7 +20,7 @@ author:
 publishedAt: "2026-07-08"
 updatedAt: "2026-07-10"
 navigation:
-  show: true
+  show: false
   label: "Für Hunde"
   section: "futterautomat-hund"
   order: 30
