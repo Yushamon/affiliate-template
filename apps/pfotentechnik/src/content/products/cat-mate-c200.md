@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/cat-mate-c200"
+productUrl: "/produkt/cat-mate-c200/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

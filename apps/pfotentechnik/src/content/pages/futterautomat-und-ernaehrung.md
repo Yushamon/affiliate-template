@@ -6,7 +6,7 @@ description: "Wie sich Futterart, Tagesration, Portionierung und Fütterungsrhyt
 seoDescription: "Futterautomat und Ernährung: Tagesration, Alleinfutter, Snacks, Portionen und Mahlzeiten für Hund und Katze fachlich trennen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Ernährung", "Tagesration", "Fütterung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -65,7 +65,7 @@ Der Automat stellt eine zweite Frage: Lässt sich dieses Futter mechanisch und h
 
 Zuerst wird die Tagesmenge festgelegt, anschließend ihre Verteilung. Packungsangaben können einen Startbereich liefern, müssen aber an Körperzustand, Aktivität und Verlauf angepasst werden. WSAVA empfiehlt, Ernährung und Körperkondition regelmäßig zu beurteilen.
 
-Alle zusätzlichen Kalorien gehören in die Bilanz. Leckerlis, Trainingsfutter, Kauartikel und Reste aus einem zweiten Napf können einen präzisen Automatenplan unterlaufen. Für einen Gewichtsplan beschreibt [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht) die notwendigen Kontrollen.
+Alle zusätzlichen Kalorien gehören in die Bilanz. Leckerlis, Trainingsfutter, Kauartikel und Reste aus einem zweiten Napf können einen präzisen Automatenplan unterlaufen. Für einen Gewichtsplan beschreibt [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/) die notwendigen Kontrollen.
 
 | Ernährungsfrage | Technische Frage | Typischer Fehler |
 | --- | --- | --- |
@@ -84,13 +84,13 @@ Ein großer Vorrat verführt dazu, selten nachzusehen. Für Hygiene und Funktion
 
 ## Nassfutter und vorbereitete Mahlzeiten
 
-Nassfutter bietet keine lange ungekühlte Standzeit. Fachautomaten trennen Portionen und können Kühlakkus aufnehmen, doch Raumtemperatur und Dauer bleiben relevant. Reste müssen entfernt, Fächer gründlich gereinigt und vollständig getrocknet werden. Der [Nassfutter-Ratgeber](/futterautomat-nassfutter) behandelt die praktische Planung ausführlich.
+Nassfutter bietet keine lange ungekühlte Standzeit. Fachautomaten trennen Portionen und können Kühlakkus aufnehmen, doch Raumtemperatur und Dauer bleiben relevant. Reste müssen entfernt, Fächer gründlich gereinigt und vollständig getrocknet werden. Der [Nassfutter-Ratgeber](/futterautomat-nassfutter/) behandelt die praktische Planung ausführlich.
 
 ## Mahlzeitenrhythmus ohne starre Universalzahl
 
-Katzen profitieren häufig von mehreren kleinen, räumlich und zeitlich passenden Fütterungsgelegenheiten. Die AAFP beschreibt solche Programme einschließlich Puzzle- und Automatenlösungen. Wie viele Mahlzeiten konkret passen, hängt vom Tier und der Tagesration ab; siehe [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze).
+Katzen profitieren häufig von mehreren kleinen, räumlich und zeitlich passenden Fütterungsgelegenheiten. Die AAFP beschreibt solche Programme einschließlich Puzzle- und Automatenlösungen. Wie viele Mahlzeiten konkret passen, hängt vom Tier und der Tagesration ab; siehe [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/).
 
-Bei Hunden variieren Bedarf und Rhythmus nach Lebensphase und individueller Situation. Beobachtungsdaten zu einmal täglicher Fütterung belegen keine Ursache-Wirkungs-Empfehlung. Ein Alltagsschema sollte daher nicht aus einer einzelnen Studie oder Gerätefunktion abgeleitet werden. Mehr dazu unter [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund).
+Bei Hunden variieren Bedarf und Rhythmus nach Lebensphase und individueller Situation. Beobachtungsdaten zu einmal täglicher Fütterung belegen keine Ursache-Wirkungs-Empfehlung. Ein Alltagsschema sollte daher nicht aus einer einzelnen Studie oder Gerätefunktion abgeleitet werden. Mehr dazu unter [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/).
 
 ## Veränderungen ernst nehmen
 
@@ -109,4 +109,4 @@ Wir trennen Nährstoffversorgung, Tagesmenge, Mahlzeitenrhythmus und technische 
 
 ## Interne Links und weiterführende Ratgeber
 
-Der Einstieg ist [Smarte Futterautomaten](/smarte-futterautomaten). Technische Grundlagen stehen unter [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat), die Auswahl unter [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige). Passende Produktbeispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder), [Cat Mate C500](/produkt/cat-mate-c500) und [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2).
+Der Einstieg ist [Smarte Futterautomaten](/smarte-futterautomaten/). Technische Grundlagen stehen unter [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/), die Auswahl unter [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/). Passende Produktbeispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/), [Cat Mate C500](/produkt/cat-mate-c500/) und [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/).

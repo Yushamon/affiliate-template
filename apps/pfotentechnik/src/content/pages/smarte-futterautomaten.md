@@ -44,17 +44,17 @@ premiumBlocks:
       - label: "Gesamtwahl"
         title: "Petlibro Granary WiFi"
         text: "Großer Vorrat, gute App-Funktionen und klare Zeitpläne ohne Kamera-Aufpreis."
-        href: "/futterautomat-mit-app"
+        href: "/futterautomat-mit-app/"
         cta: "App-Modelle vergleichen"
       - label: "Mit Kamera"
         title: "Petlibro Granary Camera"
         text: "Livebild, Nachtsicht und Audio für die Kontrolle des Futterplatzes von unterwegs."
-        href: "/futterautomat-mit-kamera"
+        href: "/futterautomat-mit-kamera/"
         cta: "Kamera-Modelle vergleichen"
       - label: "Nassfutter"
         title: "Cat Mate C500"
         text: "Fünf Fächer und Kühlakkus für zeitgesteuerte Nass- und Mischfütterung."
-        href: "/futterautomat-nassfutter"
+        href: "/futterautomat-nassfutter/"
         cta: "Nassfutter-Ratgeber lesen"
 comparisonProducts:
   - "petlibro-granary-wifi-feeder"
@@ -84,7 +84,7 @@ closingCta:
   text: "Wähle zuerst nach Futterart und Tiergröße. App, Kamera und Zusatzfunktionen kommen erst danach."
   productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Futterautomat-Angebot prüfen"
-  secondaryHref: "/futterautomat-katze"
+  secondaryHref: "/futterautomat-katze/"
   secondaryLabel: "Ratgeber zur passenden Fütterungsroutine lesen"
 faq:
   - question: "Ist ein smarter Futterautomat für Katzen und Hunde geeignet?"
@@ -107,7 +107,7 @@ Für Trockenfutter sind Vorratsautomaten mit Förderschnecke oder Dosierrad die 
 
 Modelle mit Kamera ergänzen Livebild, Nachtsicht und teilweise Zwei-Wege-Audio. Das ist hilfreich, wenn du sehen möchtest, ob ein Tier tatsächlich am Napf war. Die Kamera erkennt jedoch nicht automatisch jede gesundheitlich relevante Veränderung. Auch eine Aufnahme ist kein Beleg dafür, dass die vorgesehene Menge vollständig gefressen wurde.
 
-Für Nassfutter gelten andere Anforderungen. Hier sind kleine, einzeln verschlossene Fächer, kurze Standzeiten und ein durchdachtes Kühlkonzept wichtiger als WLAN. Der [Ratgeber zu Nassfutter-Automaten](/futterautomat-nassfutter) erklärt die Grenzen genauer.
+Für Nassfutter gelten andere Anforderungen. Hier sind kleine, einzeln verschlossene Fächer, kurze Standzeiten und ein durchdachtes Kühlkonzept wichtiger als WLAN. Der [Ratgeber zu Nassfutter-Automaten](/futterautomat-nassfutter/) erklärt die Grenzen genauer.
 
 ## Worauf es bei Hardware und Portionierung ankommt
 
@@ -127,7 +127,7 @@ Ein Batterie-Backup ist sinnvoll, ersetzt aber keine regelmäßige Kontrolle. En
 
 Eine gute App sollte Zeitpläne verständlich abbilden, jede Ausgabe protokollieren und auf Störungen hinweisen. Prüfe nach der Einrichtung, ob Push-Mitteilungen zuverlässig ankommen. Bei Kameramodellen kommen Datenschutz, lokale Speicheroptionen und mögliche Cloud-Abos hinzu. Positioniere die Kamera so, dass nur der Futterplatz und keine unnötigen Wohnbereiche erfasst werden.
 
-Mehr Details findest du im [Vergleich der Futterautomaten mit App](/futterautomat-mit-app) und in der [Kaufberatung für Modelle mit Kamera](/futterautomat-mit-kamera).
+Mehr Details findest du im [Vergleich der Futterautomaten mit App](/futterautomat-mit-app/) und in der [Kaufberatung für Modelle mit Kamera](/futterautomat-mit-kamera/).
 
 ## Reinigung, Lautstärke und Futterstau
 
@@ -147,43 +147,43 @@ Unsere Einordnung basiert auf aktuellen Herstellerangaben, Bedienkonzept, Portio
 
 ## Weitere Ratgeber im Cluster
 
-- [Futterautomat für Katzen](/futterautomat-katze)
-- [Futterautomat für Hunde](/futterautomat-hund)
-- [Futterautomat mit Kamera](/futterautomat-mit-kamera)
-- [Futterautomat mit App](/futterautomat-mit-app)
-- [Futterautomat für Nassfutter](/futterautomat-nassfutter)
+- [Futterautomat für Katzen](/futterautomat-katze/)
+- [Futterautomat für Hunde](/futterautomat-hund/)
+- [Futterautomat mit Kamera](/futterautomat-mit-kamera/)
+- [Futterautomat mit App](/futterautomat-mit-app/)
+- [Futterautomat für Nassfutter](/futterautomat-nassfutter/)
 
 ## Wissen zu Technik, Auswahl und Fütterungsroutine
 
-- [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat)
-- [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige)
-- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan)
-- [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen)
-- [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde)
-- [Futterautomat im Urlaub](/futterautomat-im-urlaub)
-- [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht)
-- [Futterautomat und Ernährung](/futterautomat-und-ernaehrung)
-- [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze)
-- [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund)
+- [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/)
+- [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/)
+- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/)
+- [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/)
+- [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/)
+- [Futterautomat im Urlaub](/futterautomat-im-urlaub/)
+- [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/)
+- [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/)
+- [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/)
+- [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
 
 ## Spezialisierte Vergleiche
 
-- [Beste Futterautomaten für Katzen](/beste-futterautomaten-fuer-katzen)
-- [Beste Futterautomaten für Hunde](/beste-futterautomaten-fuer-hunde)
-- [Beste Futterautomaten mit Kamera](/beste-futterautomaten-mit-kamera)
-- [Beste Futterautomaten ohne WLAN](/beste-futterautomaten-ohne-wlan)
-- [Beste Futterautomaten für zwei Katzen](/beste-futterautomaten-fuer-zwei-katzen)
-- [Beste Futterautomaten für Nassfutter](/beste-futterautomaten-fuer-nassfutter)
+- [Beste Futterautomaten für Katzen](/beste-futterautomaten-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/beste-futterautomaten-fuer-hunde/)
+- [Beste Futterautomaten mit Kamera](/beste-futterautomaten-mit-kamera/)
+- [Beste Futterautomaten ohne WLAN](/beste-futterautomaten-ohne-wlan/)
+- [Beste Futterautomaten für zwei Katzen](/beste-futterautomaten-fuer-zwei-katzen/)
+- [Beste Futterautomaten für Nassfutter](/beste-futterautomaten-fuer-nassfutter/)
 
 ## Hersteller-Hubs
 
-- [Petlibro Futterautomaten](/hersteller/petlibro)
-- [PETKIT Futterautomaten](/hersteller/petkit)
-- [Cat Mate und Closer Pets](/hersteller/cat-mate)
-- [Xiaomi Futterautomaten](/hersteller/xiaomi)
-- [SureFeed und Sure Petcare](/hersteller/surefeed)
-- [HoneyGuardian Futterautomaten](/hersteller/honeyguardian)
-- [WOPET Futterautomaten](/hersteller/wopet)
-- [oneisall Futterautomaten](/hersteller/oneisall)
-- [IMIPAW Futterautomaten](/hersteller/imipaw)
-- [PAWBBY Futterautomaten](/hersteller/pawbby)
+- [Petlibro Futterautomaten](/hersteller/petlibro/)
+- [PETKIT Futterautomaten](/hersteller/petkit/)
+- [Cat Mate und Closer Pets](/hersteller/cat-mate/)
+- [Xiaomi Futterautomaten](/hersteller/xiaomi/)
+- [SureFeed und Sure Petcare](/hersteller/surefeed/)
+- [HoneyGuardian Futterautomaten](/hersteller/honeyguardian/)
+- [WOPET Futterautomaten](/hersteller/wopet/)
+- [oneisall Futterautomaten](/hersteller/oneisall/)
+- [IMIPAW Futterautomaten](/hersteller/imipaw/)
+- [PAWBBY Futterautomaten](/hersteller/pawbby/)

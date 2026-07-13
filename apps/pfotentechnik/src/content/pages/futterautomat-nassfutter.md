@@ -6,7 +6,7 @@ description: "Futterautomaten für Nassfutter richtig auswählen: Fachsysteme, K
 seoDescription: "Welcher Futterautomat eignet sich für Nassfutter? Kaufberatung zu Kühlakkus, Reinigung, Portionen und dem Cat Mate C500."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Nassfutter", "Katze"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
@@ -55,7 +55,7 @@ closingCta:
   text: "Plane kurze Standzeiten, vollständig gekühlte Akkus und eine tägliche Reinigung fest ein."
   productKey: "cat-mate-c500"
   primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/futterautomat-katze"
+  secondaryHref: "/futterautomat-katze/"
   secondaryLabel: "Katzen-Ratgeber lesen"
 faq:
   - question: "Wie lange darf Nassfutter im Automaten stehen?"
@@ -88,6 +88,6 @@ Der Cat Mate C500 kombiniert fünf Mahlzeitenfächer mit Kühlakkus und einem di
 
 ## Wann Trockenfutter-Systeme sinnvoller sind
 
-Wenn dein Tier Trockenfutter verträgt und viele kleine Mahlzeiten benötigt, bieten Vorratsautomaten mehr Zeitpunkte und App-Komfort. Der [Hauptvergleich](/smarte-futterautomaten) und der [App-Ratgeber](/futterautomat-mit-app) zeigen diese Alternativen.
+Wenn dein Tier Trockenfutter verträgt und viele kleine Mahlzeiten benötigt, bieten Vorratsautomaten mehr Zeitpunkte und App-Komfort. Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/futterautomat-mit-app/) zeigen diese Alternativen.
 
-Wir bewerten Nassfutter-Automaten nach Abdeckung, Kühlkonzept, Reinigbarkeit, Timer, Stromversorgung und realistischer Alltagstauglichkeit. Weitere Hinweise findest du bei den Empfehlungen für [Katzen](/futterautomat-katze), [Hunde](/futterautomat-hund) und [Kamera-Modelle](/futterautomat-mit-kamera).
+Wir bewerten Nassfutter-Automaten nach Abdeckung, Kühlkonzept, Reinigbarkeit, Timer, Stromversorgung und realistischer Alltagstauglichkeit. Weitere Hinweise findest du bei den Empfehlungen für [Katzen](/futterautomat-katze/), [Hunde](/futterautomat-hund/) und [Kamera-Modelle](/futterautomat-mit-kamera/).

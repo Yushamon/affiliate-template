@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/wopet-pioneer-f01-plus"
+productUrl: "/produkt/wopet-pioneer-f01-plus/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

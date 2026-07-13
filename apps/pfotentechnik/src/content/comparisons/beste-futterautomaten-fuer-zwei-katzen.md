@@ -97,4 +97,4 @@ Prüfe Futterart, Tagesmengen, ruhige Standorte und Gewöhnung. Eine Kamera doku
 
 ## Methodik und interne Links
 
-Wir gewichten kontrollierten Zugang stärker als Behältergröße oder App. Keine Empfehlung ersetzt eine tierärztlich festgelegte Diät. Weiterführend: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen), [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht) und [Smarte Futterautomaten](/smarte-futterautomaten). Hersteller: [SureFeed](/hersteller/surefeed), [PETKIT](/hersteller/petkit), [oneisall](/hersteller/oneisall) und [Petlibro](/hersteller/petlibro).
+Wir gewichten kontrollierten Zugang stärker als Behältergröße oder App. Keine Empfehlung ersetzt eine tierärztlich festgelegte Diät. Weiterführend: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/), [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Hersteller: [SureFeed](/hersteller/surefeed/), [PETKIT](/hersteller/petkit/), [oneisall](/hersteller/oneisall/) und [Petlibro](/hersteller/petlibro/).

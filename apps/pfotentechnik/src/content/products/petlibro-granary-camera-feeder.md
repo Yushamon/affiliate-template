@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-granary-camera-feeder"
+productUrl: "/produkt/petlibro-granary-camera-feeder/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

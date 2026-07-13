@@ -6,7 +6,7 @@ description: "Futterautomaten für große Hunde nach Portionsmenge, Napf, Stabil
 seoDescription: "Futterautomat für große Hunde auswählen: Ausgabemenge, Krokettengröße, Napfhöhe, Standfestigkeit und Betreuung richtig prüfen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Große Hunde", "Portionierung", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -83,13 +83,13 @@ Der Napf muss zur ausgegebenen Menge passen, ohne überzulaufen. Herausnehmbare 
 
 ## Mehrere Mahlzeiten und App-Steuerung
 
-Kleinere, verteilte Ausgaben können organisatorisch sinnvoll sein. Wie viele Mahlzeiten passen, hängt jedoch vom einzelnen Hund ab. Der Ratgeber [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund) ordnet Lebensphase und Alltag ein, ohne eine starre Zahl vorzugeben.
+Kleinere, verteilte Ausgaben können organisatorisch sinnvoll sein. Wie viele Mahlzeiten passen, hängt jedoch vom einzelnen Hund ab. Der Ratgeber [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/) ordnet Lebensphase und Alltag ein, ohne eine starre Zahl vorzugeben.
 
 Eine App erleichtert Zeitpläne, ändert aber nicht die mechanische Kapazität. Kamera und Protokoll können zeigen, dass eine Ausgabe ausgelöst wurde. Sie beweisen nicht, dass der Hund alles gefressen hat oder sich wohlfühlt. Besonders bei großen Hunden sollte die erste längere Nutzung nicht ohne vorherige Beobachtung erfolgen.
 
 ## Einsatz im Urlaub realistisch bewerten
 
-Ein kräftiger Hund braucht ohnehin regelmäßige persönliche Betreuung, Bewegung, Wasser und Verhaltenskontrolle. Ein Automat kann eine vereinbarte Mahlzeit vorbereiten, aber keine Betreuung ersetzen. Für Übergabe, Reservefutter und Fehlerszenarien hilft [Futterautomat im Urlaub](/futterautomat-im-urlaub).
+Ein kräftiger Hund braucht ohnehin regelmäßige persönliche Betreuung, Bewegung, Wasser und Verhaltenskontrolle. Ein Automat kann eine vereinbarte Mahlzeit vorbereiten, aber keine Betreuung ersetzen. Für Übergabe, Reservefutter und Fehlerszenarien hilft [Futterautomat im Urlaub](/futterautomat-im-urlaub/).
 
 ## Methodik unserer Einordnung
 
@@ -103,4 +103,4 @@ Wir beginnen bei Herstellerfreigabe, Ausgabemenge und Krokettengröße. Danach b
 
 ## Interne Links und weiterführende Ratgeber
 
-Die vollständige Modellübersicht steht unter [Smarte Futterautomaten](/smarte-futterautomaten). Ergänzend helfen [Futterautomat für Hunde](/futterautomat-hund), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) und [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat). Technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder).
+Die vollständige Modellübersicht steht unter [Smarte Futterautomaten](/smarte-futterautomaten/). Ergänzend helfen [Futterautomat für Hunde](/futterautomat-hund/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) und [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/). Technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/).

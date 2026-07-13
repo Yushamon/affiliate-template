@@ -6,7 +6,7 @@ description: "Mahlzeiten für Hunde nach Lebensphase, Tagesration, Verhalten und
 seoDescription: "Wie oft Hunde füttern? Mahlzeitenzahl, Tagesration, Welpen, erwachsene Hunde, Senioren und Futterautomaten fachlich eingeordnet."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Hund", "Mahlzeiten", "Fütterung", "Futterautomat"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -86,19 +86,19 @@ Die Autoren selbst verweisen auf den Bedarf weiterer Längsschnittforschung. Ein
 
 ## Wann mehrere Teilmahlzeiten praktisch sein können
 
-Verteilte Mahlzeiten können bei einem langen Tagesablauf, sehr kleinen Portionen oder einem abgestimmten Management hilfreich sein. Sie sind aber kein automatisches Mittel zur Gewichtsabnahme. Entscheidend bleibt die Gesamtenergie. Der Ratgeber [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht) erklärt die notwendige Kalibrierung.
+Verteilte Mahlzeiten können bei einem langen Tagesablauf, sehr kleinen Portionen oder einem abgestimmten Management hilfreich sein. Sie sind aber kein automatisches Mittel zur Gewichtsabnahme. Entscheidend bleibt die Gesamtenergie. Der Ratgeber [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/) erklärt die notwendige Kalibrierung.
 
 Bei hastigem Fressen können kleinere Ausgaben das Tempo beeinflussen. Verhalten, Futterform und geeignete Näpfe müssen trotzdem betrachtet werden. Wiederholtes Würgen, Erbrechen oder Schmerzen gehören nicht durch eine bloße Zeitplanänderung behandelt.
 
 ## Grenzen von Futterautomaten bei Hunden
 
-Viele Vorratsautomaten sind für Katzen und kleine bis mittelgroße Hunde konzipiert. Für große Hunde können maximale Ausgabe, Krokettengröße, Napf und Gehäuse ungeeignet sein. [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde) bietet eine vollständige Prüfliste.
+Viele Vorratsautomaten sind für Katzen und kleine bis mittelgroße Hunde konzipiert. Für große Hunde können maximale Ausgabe, Krokettengröße, Napf und Gehäuse ungeeignet sein. [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/) bietet eine vollständige Prüfliste.
 
 Förderschritte werden mit dem verwendeten Futter gewogen. Eine App bestätigt häufig nur die Motorauslösung. Sie misst nicht sicher, ob alles im Napf landet oder gefressen wird. Beobachte die Einführung und teste Strom- sowie Internetausfall.
 
 ## Alltag und Bewegung nicht automatisieren
 
-Ein Automat kann eine Mahlzeit bereitstellen, aber keine Betreuung, Bewegung oder Verhaltenskontrolle übernehmen. Im Urlaub braucht jeder Hund eine geeignete persönliche Versorgung. [Futterautomat im Urlaub](/futterautomat-im-urlaub) beschreibt Übergabe und Notfallplan.
+Ein Automat kann eine Mahlzeit bereitstellen, aber keine Betreuung, Bewegung oder Verhaltenskontrolle übernehmen. Im Urlaub braucht jeder Hund eine geeignete persönliche Versorgung. [Futterautomat im Urlaub](/futterautomat-im-urlaub/) beschreibt Übergabe und Notfallplan.
 
 ## Methodik unserer Einordnung
 
@@ -113,4 +113,4 @@ Wir verbinden Leitlinien zur Ernährungsbeurteilung mit einer vorsichtigen Inter
 
 ## Interne Links und weiterführende Ratgeber
 
-Der Produktüberblick steht unter [Smarte Futterautomaten](/smarte-futterautomaten). Vertiefend folgen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige) und [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat). Passende technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2), [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder).
+Der Produktüberblick steht unter [Smarte Futterautomaten](/smarte-futterautomaten/). Vertiefend folgen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/). Passende technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/), [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder/).

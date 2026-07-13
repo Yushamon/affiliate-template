@@ -6,7 +6,7 @@ description: "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehr
 seoDescription: "Welcher Futterautomat passt zu Katzen? Vergleich von App-Modellen, Nassfutter-Lösungen und Funktionen für verlässliche Routinen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
@@ -44,7 +44,7 @@ premiumBlocks:
       - label: "Nassfutter"
         title: "Cat Mate C500"
         text: "Fünf Fächer und Kühlakkus statt offenem Vorratsbehälter."
-        href: "/futterautomat-nassfutter"
+        href: "/futterautomat-nassfutter/"
         cta: "Nassfutter-Lösung ansehen"
 comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500"]
 comparisonRecommendation:
@@ -62,7 +62,7 @@ closingCta:
   text: "Prüfe zuerst Futterart, Portionsgröße und Zugang zum Napf. Danach lassen sich App und Komfortfunktionen sinnvoll auswählen."
   productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/futterautomat-mit-app"
+  secondaryHref: "/futterautomat-mit-app/"
   secondaryLabel: "App-Modelle vergleichen"
 faq:
   - question: "Wie viele Mahlzeiten sollte ein Katzen-Futterautomat ausgeben?"
@@ -83,7 +83,7 @@ Vorratsautomaten sind für trockene, ausreichend gleichmäßige Kroketten konstr
 
 ## App und Zeitpläne sinnvoll nutzen
 
-Eine App erleichtert Änderungen und kann Ausgaben protokollieren. Entscheidend bleibt, dass Zeitpläne lokal gespeichert werden und ein kurzer Netzausfall nicht die komplette Routine stoppt. Mehr dazu zeigt unser [Vergleich von Futterautomaten mit App](/futterautomat-mit-app).
+Eine App erleichtert Änderungen und kann Ausgaben protokollieren. Entscheidend bleibt, dass Zeitpläne lokal gespeichert werden und ein kurzer Netzausfall nicht die komplette Routine stoppt. Mehr dazu zeigt unser [Vergleich von Futterautomaten mit App](/futterautomat-mit-app/).
 
 ## Mehrere Katzen am selben Napf
 
@@ -95,6 +95,6 @@ Napf und Futterkontaktteile sollten leicht abnehmbar sein. Stelle das neue Gerä
 
 ## So bewerten wir Katzen-Futterautomaten
 
-Wir gewichten kleine Portionen, Zuverlässigkeit, Reinigung, Geräuschentwicklung, Stromreserve und eine verständliche Bedienung. Kamera oder App sind Zusatznutzen, keine Voraussetzung für eine gute Fütterungsroutine. Einen breiteren Überblick bietet der [Vergleich smarter Futterautomaten](/smarte-futterautomaten).
+Wir gewichten kleine Portionen, Zuverlässigkeit, Reinigung, Geräuschentwicklung, Stromreserve und eine verständliche Bedienung. Kamera oder App sind Zusatznutzen, keine Voraussetzung für eine gute Fütterungsroutine. Einen breiteren Überblick bietet der [Vergleich smarter Futterautomaten](/smarte-futterautomaten/).
 
-Weitere passende Ratgeber sind [Futterautomaten mit Kamera](/futterautomat-mit-kamera), [Modelle für Nassfutter](/futterautomat-nassfutter) und die [Kaufberatung für Hunde](/futterautomat-hund).
+Weitere passende Ratgeber sind [Futterautomaten mit Kamera](/futterautomat-mit-kamera/), [Modelle für Nassfutter](/futterautomat-nassfutter/) und die [Kaufberatung für Hunde](/futterautomat-hund/).

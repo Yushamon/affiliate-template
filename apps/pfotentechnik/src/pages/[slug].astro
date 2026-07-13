@@ -187,7 +187,8 @@ const relatedItems = relatedEntries.map((entry) => ({
   description={page.data.description}
   seoTitle={page.data.seo?.title ?? page.data.seoTitle}
   seoDescription={page.data.seo?.description ?? page.data.seoDescription}
-  canonical={`/${page.data.slug}`}
+  canonical={`/${page.data.slug}/`}
+  noindex={page.data.seo?.noindex ?? false}
   ogImage={optimizedOgImage.src}
   faq={page.data.faq}
   author={author}

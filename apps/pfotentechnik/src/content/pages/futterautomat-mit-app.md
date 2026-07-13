@@ -6,7 +6,7 @@ description: "Futterautomaten mit App vergleichen: Zeitpläne, Protokolle, Offli
 seoDescription: "Smarte Futterautomaten mit App im Vergleich: zuverlässige Zeitpläne, Ausgabeprotokolle, Notstrom und passende Empfehlungen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "App", "Smart Home"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
@@ -55,7 +55,7 @@ closingCta:
   text: "Wähle eine App, deren Zeitpläne verständlich sind und deren Automat auch bei kurzen Verbindungsproblemen weiterarbeitet."
   productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/futterautomat-mit-kamera"
+  secondaryHref: "/futterautomat-mit-kamera/"
   secondaryLabel: "Kamera-Funktionen vergleichen"
 faq:
   - question: "Funktioniert ein App-Futterautomat ohne WLAN?"
@@ -88,6 +88,6 @@ Relevant sind Meldungen zu leerem Vorrat, Blockade, fehlender Stromversorgung od
 
 ## Datenschutz und Kontosicherheit
 
-Nutze ein einzigartiges Passwort, halte App und Gerätefirmware aktuell und vergib Freigaben sparsam. Bei Kameramodellen kommen Bildspeicherung und Cloud-Bedingungen hinzu; unser [Kamera-Ratgeber](/futterautomat-mit-kamera) behandelt diese Punkte ausführlicher.
+Nutze ein einzigartiges Passwort, halte App und Gerätefirmware aktuell und vergib Freigaben sparsam. Bei Kameramodellen kommen Bildspeicherung und Cloud-Bedingungen hinzu; unser [Kamera-Ratgeber](/futterautomat-mit-kamera/) behandelt diese Punkte ausführlicher.
 
-Unsere Bewertung gewichtet Planbarkeit, Protokolle, Offline-Verhalten, Benachrichtigungen, Kontosicherheit und die mechanische Futterausgabe. Weitere Auswahlhilfen bieten der [Gesamtvergleich](/smarte-futterautomaten) sowie die Ratgeber für [Katzen](/futterautomat-katze), [Hunde](/futterautomat-hund) und [Nassfutter](/futterautomat-nassfutter).
+Unsere Bewertung gewichtet Planbarkeit, Protokolle, Offline-Verhalten, Benachrichtigungen, Kontosicherheit und die mechanische Futterausgabe. Weitere Auswahlhilfen bieten der [Gesamtvergleich](/smarte-futterautomaten/) sowie die Ratgeber für [Katzen](/futterautomat-katze/), [Hunde](/futterautomat-hund/) und [Nassfutter](/futterautomat-nassfutter/).

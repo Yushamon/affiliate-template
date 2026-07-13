@@ -6,7 +6,7 @@ description: "Aufbau, Portionierung, Zeitsteuerung und Grenzen automatischer Fut
 seoDescription: "So funktionieren Futterautomaten: Vorrat, Dosierung, Zeitplan, App, Notstrom und Reinigung bei Modellen für Hunde und Katzen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Funktionsweise", "Portionierung", "Grundlagen"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -64,7 +64,7 @@ Ein Futterautomat verbindet eine einfache Aufgabe mit mehreren technischen Abhä
 
 Ein Vorratsautomat besitzt einen größeren Behälter über dem Napf. Zur programmierten Zeit bewegt ein Motor ein Dosierrad, einen Rotor oder eine Förderschnecke. Dadurch fallen Kroketten durch einen Kanal in den Napf. Diese Bauart ist auf trockenes, ausreichend rieselfähiges Futter angewiesen. Sehr große, ungleichmäßige oder klebrige Stücke können die Ausgabe verändern oder den Weg blockieren.
 
-Ein Fachautomat verfolgt ein anderes Prinzip. Mehrere Mahlzeiten werden vorab in getrennte Schalen gefüllt. Eine Zeitschaltung dreht den Deckel weiter oder öffnet ein bestimmtes Fach. Die Portion ist dadurch direkt sichtbar und nicht vom Volumen eines Förderschritts abhängig. Bei Nassfutter bleiben dennoch Kühlung, Raumtemperatur und Standzeit kritisch. Der [Nassfutter-Ratgeber](/futterautomat-nassfutter) erklärt diese Grenzen ausführlicher.
+Ein Fachautomat verfolgt ein anderes Prinzip. Mehrere Mahlzeiten werden vorab in getrennte Schalen gefüllt. Eine Zeitschaltung dreht den Deckel weiter oder öffnet ein bestimmtes Fach. Die Portion ist dadurch direkt sichtbar und nicht vom Volumen eines Förderschritts abhängig. Bei Nassfutter bleiben dennoch Kühlung, Raumtemperatur und Standzeit kritisch. Der [Nassfutter-Ratgeber](/futterautomat-nassfutter/) erklärt diese Grenzen ausführlicher.
 
 ## So entsteht aus einem Zeitplan eine Portion
 
@@ -84,13 +84,13 @@ Der Begriff „Portion“ ist technisch nicht einheitlich. Häufig beschreibt er
 
 WLAN verbindet den Automaten mit App und Herstellerdienst. Dadurch lassen sich Zeitpläne ändern, spontane Portionen auslösen oder Statusmeldungen empfangen. Die Verbindung sagt aber nichts über die mechanische Zuverlässigkeit aus. Ein verlorenes WLAN darf eine lokal geplante Mahlzeit idealerweise nicht verhindern. Vor längerer Abwesenheit sollte das Offline-Verhalten praktisch getestet werden: Router kurz trennen, eine kleine Testausgabe abwarten und anschließend Protokoll sowie Uhrzeit kontrollieren.
 
-Wer bewusst auf Cloud-Funktionen verzichten möchte, findet im Ratgeber [Futterautomaten ohne WLAN](/futterautomat-ohne-wlan) die passenden Entscheidungskriterien. App-Modelle werden separat unter [Futterautomat mit App](/futterautomat-mit-app) eingeordnet.
+Wer bewusst auf Cloud-Funktionen verzichten möchte, findet im Ratgeber [Futterautomaten ohne WLAN](/futterautomat-ohne-wlan/) die passenden Entscheidungskriterien. App-Modelle werden separat unter [Futterautomat mit App](/futterautomat-mit-app/) eingeordnet.
 
 ## Stromausfall, leere Batterien und andere Grenzen
 
 Ein Batterie-Backup kann gespeicherte Zeitpläne bei einer Stromunterbrechung weiterführen. Es ist jedoch keine Garantie für unbegrenzten Betrieb. Batteriestand, Motorkraft und Häufigkeit der Ausgaben beeinflussen die Laufzeit. Manche Geräte nutzen Batterien nur als Reserve, andere können vollständig damit betrieben werden. Diese Unterschiede gehören vor dem Kauf in die Anleitungskontrolle.
 
-Weitere Grenzen bleiben unabhängig von der Technik bestehen. Der Automat erkennt nicht sicher, ob das vorgesehene Tier gefressen hat, ob es erbricht oder ob ein anderes Tier die Portion übernimmt. Eine Kamera zeigt nur einen Ausschnitt. In einem Haushalt mit zwei Katzen braucht es deshalb zusätzlich ein Konzept für getrennte Fressplätze; dazu führt der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen).
+Weitere Grenzen bleiben unabhängig von der Technik bestehen. Der Automat erkennt nicht sicher, ob das vorgesehene Tier gefressen hat, ob es erbricht oder ob ein anderes Tier die Portion übernimmt. Eine Kamera zeigt nur einen Ausschnitt. In einem Haushalt mit zwei Katzen braucht es deshalb zusätzlich ein Konzept für getrennte Fressplätze; dazu führt der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
 
 ## Reinigung gehört zur Funktion
 
@@ -110,4 +110,4 @@ Wir trennen technische Funktion, praktische Eignung und Ernährungsfragen. Bewer
 
 ## Interne Links und weiterführende Ratgeber
 
-Den Überblick über Bauarten und aktuelle Modelle bietet [Smarte Futterautomaten](/smarte-futterautomaten). Danach helfen [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige), [Futterautomat im Urlaub](/futterautomat-im-urlaub) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) bei der konkreten Planung. Passende technische Beispiele sind der [Petlibro Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder) und der fachbasierte [Cat Mate C500](/produkt/cat-mate-c500).
+Den Überblick über Bauarten und aktuelle Modelle bietet [Smarte Futterautomaten](/smarte-futterautomaten/). Danach helfen [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/), [Futterautomat im Urlaub](/futterautomat-im-urlaub/) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) bei der konkreten Planung. Passende technische Beispiele sind der [Petlibro Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/) und der fachbasierte [Cat Mate C500](/produkt/cat-mate-c500/).

@@ -117,6 +117,7 @@ const productHref = (slug: string, productUrl?: string) =>
   description={manufacturer.description}
   seoDescription={manufacturer.seo?.description ?? manufacturer.description}
   canonical={manufacturer.seo?.canonical ?? `/hersteller/${manufacturer.slug}/`}
+  noindex={manufacturer.seo?.noindex ?? false}
   ogImage={optimizedOgImage.src}
   faq={manufacturer.faq}
   author={manufacturer.author}
@@ -278,7 +279,7 @@ const productHref = (slug: string, productUrl?: string) =>
   .manufacturer-detail * { box-sizing: border-box; }
   .manufacturer-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); overflow: hidden; border: 1px solid var(--border); border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); }
   .manufacturer-hero > div { padding: clamp(2rem, 5vw, 4.5rem); }
-  .manufacturer-hero > img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
+  .manufacturer-hero > :global(img) { display: block; width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
   .manufacturer-hero h1 { margin: .5rem 0 1rem; color: var(--dark); font-size: clamp(3rem, 7vw, 5.6rem); line-height: .95; letter-spacing: -.06em; }
   .manufacturer-hero > div > span, .manufacturer-section > header span, .decision-grid article > span { color: var(--green); font-size: .75rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
   .manufacturer-hero p { color: var(--muted); line-height: 1.7; }
@@ -289,12 +290,12 @@ const productHref = (slug: string, productUrl?: string) =>
   .decision-grid, .strength-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }.decision-grid article, .strength-grid article { padding: 1.6rem; border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; }.decision-grid .attention, .strength-grid .weakness { background: #fffaf4; }
   .manufacturer-section { display: grid; gap: 1.5rem; }.manufacturer-section > header { max-width: 800px; }.manufacturer-section h2 { margin: .4rem 0 0; color: var(--dark); font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.04em; }
   .product-grid, .series-grid, .alternative-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-  .product-card, .series-grid article, .alternative-grid a { position: relative; padding: 1.4rem; border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; color: inherit; text-decoration: none; }.product-card > img { width: 100%; height: 190px; object-fit: contain; }.product-card h3, .alternative-grid h3 { margin: .5rem 0; }.product-card h3 a { color: var(--dark); text-decoration: none; }.product-card p, .series-grid p, .alternative-grid p { color: var(--muted); line-height: 1.55; }.product-rank { position: absolute; top: 1rem; left: 1rem; display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 999px; background: var(--green); color: #fff; font-weight: 900; }.product-score { display: flex; align-items: baseline; gap: .4rem; }.product-score strong { color: var(--green); font-size: 1.5rem; }.product-score span { color: var(--muted); }
-  .product-list { display: grid; gap: .75rem; }.product-list > a { display: grid; padding: .9rem; grid-template-columns: 80px minmax(0, 1fr) auto; align-items: center; gap: 1rem; border: 1px solid var(--border); border-radius: 1rem; color: inherit; text-decoration: none; }.product-list img { width: 80px; height: 70px; object-fit: contain; }.product-list div { display: grid; gap: .3rem; }.product-list div span { color: var(--muted); }.product-list b { color: var(--green); }
-  .alternative-grid img { width: 100%; height: 180px; object-fit: cover; border-radius: .8rem; }
+  .product-card, .series-grid article, .alternative-grid a { position: relative; padding: 1.4rem; border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; color: inherit; text-decoration: none; }.product-card > :global(img) { display: block; width: 100%; height: 190px; object-fit: contain; }.product-card h3, .alternative-grid h3 { margin: .5rem 0; }.product-card h3 a { color: var(--dark); text-decoration: none; }.product-card p, .series-grid p, .alternative-grid p { color: var(--muted); line-height: 1.55; }.product-rank { position: absolute; top: 1rem; left: 1rem; display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 999px; background: var(--green); color: #fff; font-weight: 900; }.product-score { display: flex; align-items: baseline; gap: .4rem; }.product-score strong { color: var(--green); font-size: 1.5rem; }.product-score span { color: var(--muted); }
+  .product-list { display: grid; gap: .75rem; }.product-list > a { display: grid; padding: .9rem; grid-template-columns: 80px minmax(0, 1fr) auto; align-items: center; gap: 1rem; border: 1px solid var(--border); border-radius: 1rem; color: inherit; text-decoration: none; }.product-list :global(img) { display: block; width: 80px; height: 70px; object-fit: contain; }.product-list div { display: grid; gap: .3rem; }.product-list div span { color: var(--muted); }.product-list b { color: var(--green); }
+  .alternative-grid :global(img) { display: block; width: 100%; height: 180px; object-fit: cover; border-radius: .8rem; }
   .experience > p { max-width: 75ch; color: var(--muted); line-height: 1.7; }.experience aside { padding: 1.4rem; border-left: 4px solid var(--green); background: #f5f9f6; }.experience aside p { margin-bottom: 0; }
   .sources { padding: 1.25rem; border: 1px solid var(--border); border-radius: 1rem; }.sources summary { cursor: pointer; font-weight: 850; }
   li { margin-bottom: .45rem; line-height: 1.5; }
-  @media(max-width: 900px) { .manufacturer-hero, .decision-grid, .strength-grid { grid-template-columns: 1fr; }.manufacturer-hero > img { min-height: 280px; }.product-grid, .series-grid, .alternative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media(max-width: 900px) { .manufacturer-hero, .decision-grid, .strength-grid { grid-template-columns: 1fr; }.manufacturer-hero > :global(img) { height: clamp(280px, 72vw, 420px); min-height: 280px; }.product-grid, .series-grid, .alternative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media(max-width: 640px) { .manufacturer-stats, .product-grid, .series-grid, .alternative-grid { grid-template-columns: 1fr; }.product-list > a { grid-template-columns: 60px minmax(0, 1fr); }.product-list b { grid-column: 2; } }
 </style>

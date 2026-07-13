@@ -6,7 +6,7 @@ description: "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests,
 seoDescription: "Futterautomat im Urlaub nutzen: Warum Betreuung nötig bleibt und wie Zeitplan, Wasser, Stromreserve und Notfallübergabe vorbereitet werden."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Urlaub", "Betreuung", "Ausfallsicherheit"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -83,11 +83,11 @@ Benachrichtigungen sollten an mindestens eine erreichbare Person gehen. Gleichze
 
 Mehrere Wasserstellen bieten Reserve, müssen aber täglich kontrolliert und gereinigt werden. Ein Trinkbrunnen kann ebenfalls ausfallen. Katzentoiletten, Wohnraumtemperatur und sichere Umgebung gehören zur Versorgung, auch wenn der Futterautomat störungsfrei arbeitet.
 
-Bei zwei Katzen muss klar sein, wer welche Portion erhält. Eine Kamera oder Doppelschale löst Futterdiebstahl nicht automatisch. Getrennte Plätze und direkte Beobachtung sind im Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen) beschrieben.
+Bei zwei Katzen muss klar sein, wer welche Portion erhält. Eine Kamera oder Doppelschale löst Futterdiebstahl nicht automatisch. Getrennte Plätze und direkte Beobachtung sind im Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) beschrieben.
 
 ## Besonderheiten bei Nassfutter
 
-Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Kühlakkus sind keine unbegrenzte Kühlung. Die Betreuungsperson muss Reste entfernen, Fächer reinigen und neue Mahlzeiten hygienisch vorbereiten. Für längere Abstände sind viele einfache Fachautomaten ungeeignet. Mehr dazu steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter).
+Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Kühlakkus sind keine unbegrenzte Kühlung. Die Betreuungsperson muss Reste entfernen, Fächer reinigen und neue Mahlzeiten hygienisch vorbereiten. Für längere Abstände sind viele einfache Fachautomaten ungeeignet. Mehr dazu steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
 
 ## Methodik unserer Einordnung
 
@@ -101,4 +101,4 @@ Wir behandeln Urlaub als Betreuungssituation, nicht als Reichweitentest eines Ge
 
 ## Interne Links und weiterführende Ratgeber
 
-Modelle und Grundlagen bündelt [Smarte Futterautomaten](/smarte-futterautomaten). Vor der Reise helfen [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat), [Futterautomat ohne WLAN](/futterautomat-ohne-wlan), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung). Als technische Beispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder) eingeordnet.
+Modelle und Grundlagen bündelt [Smarte Futterautomaten](/smarte-futterautomaten/). Vor der Reise helfen [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/), [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/). Als technische Beispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder/) eingeordnet.

@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/honeyguardian-smart-pet-feeder-s305d"
+productUrl: "/produkt/honeyguardian-smart-pet-feeder-s305d/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

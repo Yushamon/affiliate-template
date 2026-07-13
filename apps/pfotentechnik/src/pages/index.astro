@@ -54,10 +54,8 @@ const optimizedOgImage = await getImage({
   description={home.seo.description}
   canonical="/"
   ogImage={optimizedOgImage.src}
-  publishedAt={home.seo.publishedAt}
-  updatedAt={home.seo.updatedAt}
-  schemaType="article"
-  includeBreadcrumbSchema={true}
+  schemaType="website"
+  includeBreadcrumbSchema={false}
 >
   <div class="pt-home">
     <section class="pt-hero" aria-labelledby="pt-hero-title">
@@ -163,7 +161,7 @@ const optimizedOgImage = await getImage({
 
       <div class="pt-guide-grid">
         {pages.map((page) => (
-          <a class="pt-guide-card" href={`/${page.data.slug}`}>
+          <a class="pt-guide-card" href={`/${page.data.slug}/`}>
             <div class="pt-guide-image">
               <OptimizedImage
                 src={page.data.heroImage?.src ?? guideImage}

@@ -6,7 +6,7 @@ description: "Futterautomaten für Katzen nach Futterart, Portionierung, App, Zu
 seoDescription: "Futterautomaten für Katzen im Vergleich: Petlibro, PETKIT, Xiaomi, SureFeed, Cat Mate und oneisall verständlich eingeordnet."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Katze", "Vergleich", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -55,4 +55,4 @@ Beginne bei Futterart und Tagesration. Prüfe danach kleinste Portionsstufe, Ger
 
 ## Methodik und interne Links
 
-Unsere Einordnung basiert auf Herstellerdaten, Bauart und einheitlichen Alltagsszenarien; sie behauptet keinen Langzeittest. Es gibt keine statischen Preise. Vertiefend: [Futterautomat für Katzen](/futterautomat-katze), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) und [Smarte Futterautomaten](/smarte-futterautomaten). Herstellerübersichten: [Petlibro](/hersteller/petlibro), [PETKIT](/hersteller/petkit), [Cat Mate](/hersteller/cat-mate), [Xiaomi](/hersteller/xiaomi) und [SureFeed](/hersteller/surefeed).
+Unsere Einordnung basiert auf Herstellerdaten, Bauart und einheitlichen Alltagsszenarien; sie behauptet keinen Langzeittest. Es gibt keine statischen Preise. Vertiefend: [Futterautomat für Katzen](/futterautomat-katze/), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Herstellerübersichten: [Petlibro](/hersteller/petlibro/), [PETKIT](/hersteller/petkit/), [Cat Mate](/hersteller/cat-mate/), [Xiaomi](/hersteller/xiaomi/) und [SureFeed](/hersteller/surefeed/).

@@ -6,7 +6,7 @@ description: "Futterautomaten für Hunde nach Größe, Portionierung, Standfesti
 seoDescription: "Futterautomaten für Hunde im Vergleich: Welche Modelle passen zu kleinen und mittelgroßen Hunden, Portionen und Alltag?"
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 linkContext: "futterautomaten"
 tags:
   - "Futterautomat"
@@ -91,7 +91,7 @@ closingCta:
   text: "Vergleiche Größe, Portionierung und Alltagstauglichkeit, bevor du dich für ein Modell entscheidest."
   productKey: "petlibro-granary-wifi-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/smarte-futterautomaten"
+  secondaryHref: "/smarte-futterautomaten/"
   secondaryLabel: "Alle Futterautomaten vergleichen"
 
 faq:

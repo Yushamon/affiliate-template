@@ -6,7 +6,7 @@ description: "Mahlzeiten für Katzen nach Tagesration, Verhalten, Lebensphase un
 seoDescription: "Wie oft Katzen füttern? Kleine Mahlzeiten, Tagesration, Automaten, Mehrkatzenhaushalt und besondere Lebensphasen fachlich eingeordnet."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Katze", "Mahlzeiten", "Fütterung", "Futterautomat"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -65,7 +65,7 @@ Ein Wohnungsalltag muss dieses Muster nicht exakt nachbilden. Entscheidend ist e
 
 Die passende Menge hängt unter anderem von Energiegehalt, Körperzustand, Aktivität, Alter und Gesundheit ab. Packungsangaben sind Ausgangswerte. WSAVA empfiehlt eine regelmäßige Ernährungs- und Körperkonditionsbeurteilung. Leckerlis und zusätzliches Futter werden in die Gesamtmenge einbezogen.
 
-Bei Übergewicht oder Erkrankungen sollte der Plan tierärztlich festgelegt und kontrolliert werden. Ein Automat kann die vereinbarte Menge verteilen, aber nicht berechnen. Mehr dazu erklärt [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht).
+Bei Übergewicht oder Erkrankungen sollte der Plan tierärztlich festgelegt und kontrolliert werden. Ein Automat kann die vereinbarte Menge verteilen, aber nicht berechnen. Mehr dazu erklärt [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/).
 
 | Situation | Mögliche Verteilung | Worauf achten? |
 | --- | --- | --- |
@@ -82,11 +82,11 @@ Die Tabelle zeigt Entscheidungsrichtungen, keine individuelle Verordnung. Gerade
 
 Ein Trockenfutterautomat kann dieselbe Tagesmenge in mehrere Zeitfenster verteilen. Das hilft bei frühen Morgenstunden oder langen Arbeitstagen. Die kleinste Portionsstufe muss dafür zum Futter passen. Mehrere Testausgaben werden gewogen, weil Förderschritte keine einheitliche Grammzahl darstellen.
 
-Bei Nassfutter kommen Fachautomaten infrage. Kühlakkus und Raumtemperatur begrenzen die Standzeit. Näheres steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter). Ein Vorratsautomat für Trockenfutter darf nicht mit feuchtem Futter befüllt werden.
+Bei Nassfutter kommen Fachautomaten infrage. Kühlakkus und Raumtemperatur begrenzen die Standzeit. Näheres steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter/). Ein Vorratsautomat für Trockenfutter darf nicht mit feuchtem Futter befüllt werden.
 
 ## Mehrkatzenhaushalt: Mahlzeiten müssen ankommen
 
-Zwei programmierte Portionen sind nutzlos, wenn eine Katze beide frisst. Achte auf Tempo, Standort und Ausweichverhalten. Getrennte Fressplätze, räumlicher Abstand oder individueller Zugang können nötig sein. [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen) beschreibt die Unterschiede zwischen Doppelschale und echter Trennung.
+Zwei programmierte Portionen sind nutzlos, wenn eine Katze beide frisst. Achte auf Tempo, Standort und Ausweichverhalten. Getrennte Fressplätze, räumlicher Abstand oder individueller Zugang können nötig sein. [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) beschreibt die Unterschiede zwischen Doppelschale und echter Trennung.
 
 Ein Protokoll zeigt meist nur die ausgelöste Ausgabe. Es belegt nicht, welches Tier gefressen hat. Kameraaufnahmen können ergänzen, bleiben aber ausschnitthaft.
 
@@ -109,4 +109,4 @@ Wir leiten keine starre Mahlzeitenzahl aus einer Gerätefunktion ab. Grundlage s
 
 ## Interne Links und weiterführende Ratgeber
 
-Aktuelle Modelle stehen unter [Smarte Futterautomaten](/smarte-futterautomaten). Weiter führen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige) und [Futterautomat ohne WLAN](/futterautomat-ohne-wlan). Beispiele sind [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo), [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder) und [PETKIT YumShare Dual-Hopper 2](/produkt/petkit-yumshare-dual-hopper).
+Aktuelle Modelle stehen unter [Smarte Futterautomaten](/smarte-futterautomaten/). Weiter führen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/). Beispiele sind [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/), [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [PETKIT YumShare Dual-Hopper 2](/produkt/petkit-yumshare-dual-hopper/).

@@ -177,6 +177,7 @@ const relatedItems = relatedEntries.map((related) => ({
   description={comparison.description}
   seoDescription={comparison.seo?.description ?? comparison.description}
   canonical={comparison.seo?.canonical ?? `/vergleiche/${comparison.slug}/`}
+  noindex={comparison.seo?.noindex ?? false}
   ogImage={optimizedOgImage?.src}
   faq={comparison.faq}
   categoryLabel="Vergleiche"

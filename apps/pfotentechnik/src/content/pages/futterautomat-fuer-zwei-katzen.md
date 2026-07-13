@@ -6,7 +6,7 @@ description: "Futterautomaten für zwei Katzen nach Zugang, Futterplätzen, Port
 seoDescription: "Futterautomat für zwei Katzen: Doppelschale, getrennte Automaten, Zugangskontrolle und Fütterungsplan sinnvoll auswählen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Zwei Katzen", "Mehrkatzenhaushalt", "Fütterung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -85,7 +85,7 @@ Zeitversetzte Ausgaben helfen nur, wenn beide Katzen tatsächlich zu ihrer Zeit 
 
 Bei zwei Tieren sollte jede Tagesration separat abgewogen werden. Förderschritte eines Vorratsautomaten werden mit dem verwendeten Futter kalibriert. Leckerlis, Trainingsfutter und manuell gefütterte Mahlzeiten gehören zur Gesamtmenge. Ein App-Protokoll zeigt nur, was der Motor ausgelöst hat; es beweist nicht, welche Katze die Ausgabe aufgenommen hat.
 
-Für die Aufteilung kleiner Mahlzeiten hilft [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze). Bei unterschiedlichem Körperzustand oder einem Gewichtsplan ist [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht) relevant. Individuelle Zielmengen sollten mit der Tierarztpraxis abgestimmt werden.
+Für die Aufteilung kleiner Mahlzeiten hilft [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/). Bei unterschiedlichem Körperzustand oder einem Gewichtsplan ist [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/) relevant. Individuelle Zielmengen sollten mit der Tierarztpraxis abgestimmt werden.
 
 ## Kamera und Mikrochip-Zugang einordnen
 
@@ -109,4 +109,4 @@ Wir bewerten Mehrkatzen-Lösungen nach kontrollierbarem Zugang, räumlicher Tren
 
 ## Interne Links und weiterführende Ratgeber
 
-Den Produktüberblick liefert [Smarte Futterautomaten](/smarte-futterautomaten). Vertiefend passen [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) und [Futterautomat im Urlaub](/futterautomat-im-urlaub). Technische Beispiele sind [PETKIT YumShare Dual-Hopper 2](/produkt/petkit-yumshare-dual-hopper), [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder).
+Den Produktüberblick liefert [Smarte Futterautomaten](/smarte-futterautomaten/). Vertiefend passen [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/), [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) und [Futterautomat im Urlaub](/futterautomat-im-urlaub/). Technische Beispiele sind [PETKIT YumShare Dual-Hopper 2](/produkt/petkit-yumshare-dual-hopper/), [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder/) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/).

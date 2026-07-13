@@ -34,11 +34,11 @@ export const projectConfig = {
     }
   },
   defaultOgImage: "/images/project/pfotentechnik/feeder-hero.webp",
-  categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen",
+  categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen/",
   headerLinks: [
-    { label: "Futterautomaten", href: "/smarte-futterautomaten" },
-    { label: "Für Katzen", href: "/futterautomat-katze" },
-    { label: "Für Hunde", href: "/futterautomat-hund" },
+    { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
+    { label: "Für Katzen", href: "/futterautomat-katze/" },
+    { label: "Für Hunde", href: "/futterautomat-hund/" },
     { label: "Vergleiche", href: "/vergleiche/" },
     { label: "Hersteller", href: "/hersteller/" },
     { label: "Wissen", href: "/wissen/" },
@@ -58,7 +58,7 @@ export const projectConfig = {
         "Wir vergleichen Funktionen, Bedienung und Alltagstauglichkeit moderner Haustier-Gadgets – transparent und ohne künstlichen Kaufdruck.",
       primaryAction: {
         label: "Futterautomaten vergleichen",
-        href: "/smarte-futterautomaten"
+        href: "/smarte-futterautomaten/"
       },
       secondaryAction: {
         label: "Wissen entdecken",
@@ -92,7 +92,7 @@ export const projectConfig = {
           title: "Futterautomaten",
           text: "Fütterungszeiten zuverlässig planen und Portionen kontrollieren.",
           anchor: "futterautomaten",
-          href: "/smarte-futterautomaten",
+          href: "/smarte-futterautomaten/",
           productCategory: "futterautomat"
         },
         {
@@ -108,7 +108,7 @@ export const projectConfig = {
           title: "Futterautomaten mit Kamera",
           text: "Livebild, Zwei-Wege-Audio und App-Steuerung im Vergleich.",
           anchor: "futterautomaten-mit-kamera",
-          href: "/futterautomat-mit-kamera",
+          href: "/futterautomat-mit-kamera/",
           productUseCase: "kamera"
         }
       ]
@@ -155,10 +155,10 @@ export const projectConfig = {
       title: "Hersteller im Vergleich",
       text: "Fokus, Stärken, Grenzen und die eingeordneten Modelle der wichtigsten Anbieter.",
       items: [
-        { code: "01", title: "Petlibro", text: "App-, Kamera- und kompakte Vorratsautomaten.", href: "/hersteller/petlibro" },
-        { code: "02", title: "PETKIT", text: "Pet-Tech-Ökosystem mit Kamera- und Dual-Hopper-Modellen.", href: "/hersteller/petkit" },
-        { code: "03", title: "Cat Mate", text: "Fachautomaten und Lösungen für vorbereitete Mahlzeiten.", href: "/hersteller/cat-mate" },
-        { code: "04", title: "SureFeed", text: "Mikrochipgesteuerter Zugang für Mehrtierhaushalte.", href: "/hersteller/surefeed" }
+        { code: "01", title: "Petlibro", text: "App-, Kamera- und kompakte Vorratsautomaten.", href: "/hersteller/petlibro/" },
+        { code: "02", title: "PETKIT", text: "Pet-Tech-Ökosystem mit Kamera- und Dual-Hopper-Modellen.", href: "/hersteller/petkit/" },
+        { code: "03", title: "Cat Mate", text: "Fachautomaten und Lösungen für vorbereitete Mahlzeiten.", href: "/hersteller/cat-mate/" },
+        { code: "04", title: "SureFeed", text: "Mikrochipgesteuerter Zugang für Mehrtierhaushalte.", href: "/hersteller/surefeed/" }
       ]
     }
   },
@@ -169,9 +169,9 @@ export const projectConfig = {
       {
         title: "Entdecken",
         links: [
-          { label: "Futterautomaten", href: "/smarte-futterautomaten" },
-          { label: "Für Katzen", href: "/futterautomat-katze" },
-          { label: "Für Hunde", href: "/futterautomat-hund" },
+          { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
+          { label: "Für Katzen", href: "/futterautomat-katze/" },
+          { label: "Für Hunde", href: "/futterautomat-hund/" },
           { label: "Vergleiche", href: "/vergleiche/" },
           { label: "Hersteller", href: "/hersteller/" },
           { label: "Wissen", href: "/wissen/" }
@@ -180,28 +180,28 @@ export const projectConfig = {
       {
         title: "Produktwelten",
         links: [
-          { label: "Smarte Futterautomaten", href: "/smarte-futterautomaten" },
-          { label: "Futterautomaten mit App", href: "/futterautomat-mit-app" },
-          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera" },
-          { label: "Futterautomaten für Nassfutter", href: "/futterautomat-nassfutter" }
+          { label: "Smarte Futterautomaten", href: "/smarte-futterautomaten/" },
+          { label: "Futterautomaten mit App", href: "/futterautomat-mit-app/" },
+          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera/" },
+          { label: "Futterautomaten für Nassfutter", href: "/futterautomat-nassfutter/" }
         ]
       },
       {
         title: "Hersteller",
         links: [
-          { label: "Petlibro", href: "/hersteller/petlibro" },
-          { label: "PETKIT", href: "/hersteller/petkit" },
-          { label: "Cat Mate", href: "/hersteller/cat-mate" },
-          { label: "SureFeed", href: "/hersteller/surefeed" }
+          { label: "Petlibro", href: "/hersteller/petlibro/" },
+          { label: "PETKIT", href: "/hersteller/petkit/" },
+          { label: "Cat Mate", href: "/hersteller/cat-mate/" },
+          { label: "SureFeed", href: "/hersteller/surefeed/" }
         ]
       },
       {
         title: "Rechtliches",
         links: [
-          { label: "Impressum", href: "/impressum" },
-          { label: "Datenschutz", href: "/datenschutz" },
-          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis" },
-          { label: "Kontakt", href: "/kontakt" }
+          { label: "Impressum", href: "/impressum/" },
+          { label: "Datenschutz", href: "/datenschutz/" },
+          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis/" },
+          { label: "Kontakt", href: "/kontakt/" }
         ]
       }
     ],

@@ -39,6 +39,7 @@ interface Props {
   categoryLabel?: string;
   schemaType?: "website" | "article" | "webpage";
   includeBreadcrumbSchema?: boolean;
+  noindex?: boolean;
   webAnalyticsToken?: string;
   headerLinks?: Array<{
     label: string;
@@ -61,6 +62,7 @@ const {
   categoryLabel,
   schemaType,
   includeBreadcrumbSchema,
+  noindex = false,
   webAnalyticsToken,
   headerLinks = projectConfig.headerLinks,
   breadcrumbs
@@ -209,7 +211,7 @@ const faqSchema = createFaqSchema(faq);
 
     <meta
       name="robots"
-      content="index,follow"
+      content={noindex ? "noindex,follow" : "index,follow"}
     />
 
     <link

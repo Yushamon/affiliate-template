@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/oneisall-5l-automatic-cat-feeder"
+productUrl: "/produkt/oneisall-5l-automatic-cat-feeder/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

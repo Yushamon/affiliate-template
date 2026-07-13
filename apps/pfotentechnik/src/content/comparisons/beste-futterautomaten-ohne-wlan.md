@@ -85,4 +85,4 @@ Prüfe Display, Uhrzeit, Batteriestand und manuelle Bedienung. Bei Vorratsautoma
 
 ## Methodik und interne Links
 
-Die Einordnung basiert auf Funktionsprinzip, Herstellerangaben, Stromkonzept und Futterart. Keine Seite zeigt statische Preise oder verspricht medizinische Wirkungen. Vertiefend helfen [Futterautomat ohne WLAN](/futterautomat-ohne-wlan), [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat) und [Smarte Futterautomaten](/smarte-futterautomaten). Hersteller-Hubs: [Cat Mate](/hersteller/cat-mate), [SureFeed](/hersteller/surefeed) und [IMIPAW](/hersteller/imipaw).
+Die Einordnung basiert auf Funktionsprinzip, Herstellerangaben, Stromkonzept und Futterart. Keine Seite zeigt statische Preise oder verspricht medizinische Wirkungen. Vertiefend helfen [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/), [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Hersteller-Hubs: [Cat Mate](/hersteller/cat-mate/), [SureFeed](/hersteller/surefeed/) und [IMIPAW](/hersteller/imipaw/).

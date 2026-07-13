@@ -6,7 +6,7 @@ description: "Futterautomaten ohne WLAN nach Zeitsteuerung, Batterie, Bedienung 
 seoDescription: "Futterautomat ohne WLAN finden: Vorteile, Grenzen und Prüfkriterien für lokale Zeitpläne, Batteriebetrieb und einfache Bedienung."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Ohne WLAN", "Datenschutz", "Offline"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -86,19 +86,19 @@ Netzbetrieb mit Batterie-Backup kombiniert den normalen Anschluss mit einer Rese
 
 Ohne WLAN gibt es keine spontane Portion aus der Ferne, kein cloudbasiertes Protokoll und keine Push-Meldung bei niedrigem Füllstand. Diese Funktionen können nützlich sein, sind aber kein Ersatz für Beobachtung. Eine App bestätigt häufig nur den Motorvorgang, nicht die vollständige Futteraufnahme.
 
-Wer wechselnde Arbeitszeiten hat und Pläne häufig anpasst, profitiert eventuell von einem [Futterautomaten mit App](/futterautomat-mit-app). Wer nur morgens und abends kleinere Portionen bereitstellen möchte, kann mit lokaler Steuerung besser bedient sein. Die systematische Auswahl erklärt [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige).
+Wer wechselnde Arbeitszeiten hat und Pläne häufig anpasst, profitiert eventuell von einem [Futterautomaten mit App](/futterautomat-mit-app/). Wer nur morgens und abends kleinere Portionen bereitstellen möchte, kann mit lokaler Steuerung besser bedient sein. Die systematische Auswahl erklärt [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/).
 
 ## Portionierung bleibt eine mechanische Frage
 
 Auch ein Offline-Modell muss zur Futterart passen. Bei Vorratsautomaten werden Förderschritte mit dem verwendeten Trockenfutter gewogen. Bei Fachautomaten wird jede Mahlzeit direkt eingefüllt, wodurch die Menge gut kontrollierbar ist. Für Nassfutter kommen zusätzliche Anforderungen an Kühlung und Standzeit hinzu.
 
-In Mehrtierhaushalten löst fehlendes WLAN weder Futterdiebstahl noch Konkurrenz. Fressen zwei Katzen am selben zugänglichen Napf, ist die Zuordnung weiterhin unklar. Der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen) beschreibt räumliche Trennung und Zugangskontrolle.
+In Mehrtierhaushalten löst fehlendes WLAN weder Futterdiebstahl noch Konkurrenz. Fressen zwei Katzen am selben zugänglichen Napf, ist die Zuordnung weiterhin unklar. Der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) beschreibt räumliche Trennung und Zugangskontrolle.
 
 ## Sicher einrichten und testen
 
 Nach dem Programmieren sollte ein kompletter Tagesablauf unter Beobachtung stattfinden. Kontrolliere Uhr, Display, jede Ausgabe und das Verhalten des Tieres. Trenne bei einem vernetzten Modell testweise das WLAN. Simuliere bei vorhandenem Backup kurz den Stromausfall. Nach Zeitumstellungen oder Batteriewechseln muss die Uhr erneut geprüft werden.
 
-Für Urlaub ist ein solcher Test besonders wichtig, ersetzt aber keine Betreuung. Der [Urlaubs-Ratgeber](/futterautomat-im-urlaub) zeigt, welche Aufgaben einer Person vor Ort übergeben werden sollten.
+Für Urlaub ist ein solcher Test besonders wichtig, ersetzt aber keine Betreuung. Der [Urlaubs-Ratgeber](/futterautomat-im-urlaub/) zeigt, welche Aufgaben einer Person vor Ort übergeben werden sollten.
 
 ## Methodik unserer Einordnung
 
@@ -112,4 +112,4 @@ Wir bewerten Offline-Systeme nicht pauschal als sicherer oder unsicherer. Maßge
 
 ## Interne Links und weiterführende Ratgeber
 
-Der Cluster beginnt bei [Smarte Futterautomaten](/smarte-futterautomaten). Ergänzend erklären [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat), [Futterautomat im Urlaub](/futterautomat-im-urlaub) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) die technischen und organisatorischen Grenzen. Ein passendes Offline-Beispiel ist der [Cat Mate C500](/produkt/cat-mate-c500); zum Vergleich dienen [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder) und [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo).
+Der Cluster beginnt bei [Smarte Futterautomaten](/smarte-futterautomaten/). Ergänzend erklären [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/), [Futterautomat im Urlaub](/futterautomat-im-urlaub/) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) die technischen und organisatorischen Grenzen. Ein passendes Offline-Beispiel ist der [Cat Mate C500](/produkt/cat-mate-c500/); zum Vergleich dienen [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/).

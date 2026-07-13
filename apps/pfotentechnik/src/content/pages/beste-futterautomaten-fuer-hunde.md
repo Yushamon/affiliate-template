@@ -6,7 +6,7 @@ description: "Futterautomaten für Hunde nach Ausgabemenge, Krokettengröße, St
 seoDescription: "Futterautomaten für Hunde im Vergleich: Xiaomi, Petlibro, WOPET und HoneyGuardian nach Größe, Portionen und Zuverlässigkeit."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Hund", "Vergleich", "Trockenfutter"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -50,4 +50,4 @@ Wiege mehrere Ausgaben mit dem verwendeten Futter. Prüfe Krokettengröße, maxi
 
 ## Methodik und interne Links
 
-Wir gewichten Eignung und Ausfallsicherheit stärker als App-Komfort. Es werden keine Preise oder medizinischen Wirkungen angegeben. Weiterführend: [Futterautomat für Hunde](/futterautomat-hund), [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde), [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund) und [Smarte Futterautomaten](/smarte-futterautomaten). Hersteller: [Xiaomi](/hersteller/xiaomi), [Petlibro](/hersteller/petlibro), [WOPET](/hersteller/wopet), [HoneyGuardian](/hersteller/honeyguardian).
+Wir gewichten Eignung und Ausfallsicherheit stärker als App-Komfort. Es werden keine Preise oder medizinischen Wirkungen angegeben. Weiterführend: [Futterautomat für Hunde](/futterautomat-hund/), [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/), [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Hersteller: [Xiaomi](/hersteller/xiaomi/), [Petlibro](/hersteller/petlibro/), [WOPET](/hersteller/wopet/), [HoneyGuardian](/hersteller/honeyguardian/).

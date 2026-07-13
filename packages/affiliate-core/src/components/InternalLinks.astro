@@ -27,7 +27,7 @@ const { pages } = Astro.props;
     <Grid columns={2}>
       {pages.map((page) => (
         <Card
-          href={`/${page.data.slug}`}
+          href={`/${page.data.slug}/`}
           label={page.data.categoryLabel}
           title={page.data.title}
           text={page.data.description}

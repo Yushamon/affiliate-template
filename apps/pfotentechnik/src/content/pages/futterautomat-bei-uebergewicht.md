@@ -6,7 +6,7 @@ description: "Wie Futterautomaten einen tierärztlich begleiteten Gewichtsplan d
 seoDescription: "Futterautomat bei Übergewicht: Tagesration, Portionen, Wiegekontrolle und Mehrtierhaushalt sicher in einen Gewichtsplan integrieren."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Übergewicht", "Gewichtsmanagement", "Portionierung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -80,7 +80,7 @@ Tagesportionen lassen sich vorab abwiegen. So wird sichtbar, ob Behälter und Ap
 
 Katzen zeigen natürlicherweise ein Muster häufiger kleiner Mahlzeiten. Ein Automat kann eine festgelegte Tagesration entsprechend verteilen. Eine Studie in Mehrkatzenhaushalten zeigte, dass automatisierte, getrennte Portionierung die Umsetzung eines Gewichtsplans erleichtern konnte; sechs statt zwei Mahlzeiten führten jedoch nicht automatisch zu schnellerem Gewichtsverlust. Die Gesamtenergie und kontrollierter Zugang blieben entscheidend.
 
-Für Hunde gibt es keine universelle Mahlzeitenzahl. Eine große Beobachtungsstudie fand Zusammenhänge zwischen einmal täglicher Fütterung und bestimmten Gesundheitsmerkmalen, konnte aber keine Kausalität beweisen. Daraus folgt keine pauschale Empfehlung. Lebensphase und individuelle Situation gehören in die Entscheidung; mehr dazu unter [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund).
+Für Hunde gibt es keine universelle Mahlzeitenzahl. Eine große Beobachtungsstudie fand Zusammenhänge zwischen einmal täglicher Fütterung und bestimmten Gesundheitsmerkmalen, konnte aber keine Kausalität beweisen. Daraus folgt keine pauschale Empfehlung. Lebensphase und individuelle Situation gehören in die Entscheidung; mehr dazu unter [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/).
 
 ## Den Automaten kalibrieren
 
@@ -90,7 +90,7 @@ Eine integrierte Napfwaage kann zusätzliche Orientierung liefern. Auch sie muss
 
 ## Mehrtierhaushalt und Futterdiebstahl
 
-Wenn nur ein Tier abnehmen soll, ist ein frei zugänglicher gemeinsamer Automat meist ungeeignet. Räumliche Trennung, beaufsichtigte Fütterung oder individueller Zugang können nötig sein. Der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen) zeigt, warum eine Doppelschale keine sichere Zuordnung schafft.
+Wenn nur ein Tier abnehmen soll, ist ein frei zugänglicher gemeinsamer Automat meist ungeeignet. Räumliche Trennung, beaufsichtigte Fütterung oder individueller Zugang können nötig sein. Der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) zeigt, warum eine Doppelschale keine sichere Zuordnung schafft.
 
 ## Verlauf und Warnzeichen
 
@@ -109,4 +109,4 @@ Wir bewerten technische Unterstützung getrennt von medizinischer Entscheidung. 
 
 ## Interne Links und weiterführende Ratgeber
 
-Den Katalog zeigt [Smarte Futterautomaten](/smarte-futterautomaten). Für die fachliche Einordnung folgen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze) und [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige). Technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2), [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder).
+Den Katalog zeigt [Smarte Futterautomaten](/smarte-futterautomaten/). Für die fachliche Einordnung folgen [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/), [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/) und [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/). Technische Beispiele sind [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/), [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/) und [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/).

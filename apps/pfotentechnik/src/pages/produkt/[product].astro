@@ -187,7 +187,7 @@ const categoryLabel =
 
 const categoryHref =
   contentProduct.category.path ??
-  "/smarte-futterautomaten";
+  "/smarte-futterautomaten/";
 
 const author =
   contentProduct.author ?? {
@@ -307,6 +307,7 @@ const everydayCriteria = [
   description={pageDescription}
   seoDescription={seoDescription}
   canonical={canonical}
+  noindex={contentProduct.seo?.noindex ?? false}
   ogImage={optimizedOgImage.src}
   author={author}
   publishedAt={publishedAt}

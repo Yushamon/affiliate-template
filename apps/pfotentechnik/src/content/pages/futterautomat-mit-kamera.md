@@ -6,7 +6,7 @@ description: "Futterautomaten mit Kamera vergleichen: Livebild, Nachtsicht, Audi
 seoDescription: "Futterautomaten mit Kamera im Vergleich: Petlibro und PETKIT mit App, Nachtsicht, Audio und sinnvoller Kaufberatung."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Kamera", "App"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
@@ -52,7 +52,7 @@ closingCta:
   text: "Wenn Livekontrolle deinen Alltag verbessert, ist ein Kameramodell sinnvoll. Für reine Zeitpläne reicht ein einfacheres App-System."
   productKey: "petlibro-granary-camera-feeder"
   primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/futterautomat-mit-app"
+  secondaryHref: "/futterautomat-mit-app/"
   secondaryLabel: "App-Modelle ohne Kamerafokus ansehen"
 faq:
   - question: "Zeigt die Kamera, ob mein Tier gefressen hat?"
@@ -81,6 +81,6 @@ Kameras im Wohnraum verarbeiten sensible Daten. Verwende ein eigenes, starkes Ke
 
 ## Zwei Kammern oder einfacher Vorrat
 
-Der YumShare Dual-Hopper 2 kann zwei Futtersorten getrennt bevorraten. Das ist praktisch für Mischpläne, bringt aber mehr Teile und Reinigungsaufwand. Der Granary Camera verfolgt ein klassischeres Ein-Kammer-Konzept. Für Modelle ohne Video zeigt der [App-Vergleich](/futterautomat-mit-app) günstigere Funktionsschwerpunkte.
+Der YumShare Dual-Hopper 2 kann zwei Futtersorten getrennt bevorraten. Das ist praktisch für Mischpläne, bringt aber mehr Teile und Reinigungsaufwand. Der Granary Camera verfolgt ein klassischeres Ein-Kammer-Konzept. Für Modelle ohne Video zeigt der [App-Vergleich](/futterautomat-mit-app/) günstigere Funktionsschwerpunkte.
 
-Wir bewerten Kameramodelle nach zuverlässiger Grundfunktion, Sichtfeld, Nachtsicht, App, Reinigung, Datenschutzoptionen und Ausfallsicherheit. Der [große Futterautomaten-Vergleich](/smarte-futterautomaten) ordnet sie neben Modellen für [Katzen](/futterautomat-katze), [Hunde](/futterautomat-hund) und [Nassfutter](/futterautomat-nassfutter) ein.
+Wir bewerten Kameramodelle nach zuverlässiger Grundfunktion, Sichtfeld, Nachtsicht, App, Reinigung, Datenschutzoptionen und Ausfallsicherheit. Der [große Futterautomaten-Vergleich](/smarte-futterautomaten/) ordnet sie neben Modellen für [Katzen](/futterautomat-katze/), [Hunde](/futterautomat-hund/) und [Nassfutter](/futterautomat-nassfutter/) ein.

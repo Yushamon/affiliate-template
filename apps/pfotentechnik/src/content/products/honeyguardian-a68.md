@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/honeyguardian-a68"
+productUrl: "/produkt/honeyguardian-a68/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

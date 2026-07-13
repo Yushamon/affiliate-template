@@ -6,7 +6,7 @@ description: "Futterautomaten systematisch nach Tier, Futterart, Portionierung, 
 seoDescription: "Futterautomat auswählen: Entscheidungshilfe für Futterart, Tiergröße, App, Kamera, Mehrtierhaushalt, Reinigung und Ausfallsicherheit."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Kaufberatung", "Katze", "Hund"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -59,13 +59,13 @@ Die Produktauswahl beginnt häufig bei sichtbaren Funktionen: App, Kamera, Sprac
 
 Klassische Vorratsautomaten sind für trockenes, rieselfähiges Futter konstruiert. Ein Motor transportiert Kroketten aus einem Behälter zum Napf. Größe, Form und Fettgehalt des Futters müssen zum Fördermechanismus passen. Die vom Hersteller angegebene Krokettengröße ist deshalb ein wichtiges Ausschlusskriterium.
 
-Nassfutter, Frischfutter und gemischte Mahlzeiten gehören nicht in einen Trockenfutterbehälter. Dafür kommen Fachautomaten infrage, bei denen jede Portion vorher eingelegt wird. Kühlakkus verlangsamen die Erwärmung, ersetzen aber keine aktive Kühlung und keine hygienische Zeitplanung. Details stehen unter [Futterautomat für Nassfutter](/futterautomat-nassfutter).
+Nassfutter, Frischfutter und gemischte Mahlzeiten gehören nicht in einen Trockenfutterbehälter. Dafür kommen Fachautomaten infrage, bei denen jede Portion vorher eingelegt wird. Kühlakkus verlangsamen die Erwärmung, ersetzen aber keine aktive Kühlung und keine hygienische Zeitplanung. Details stehen unter [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
 
 ## Schritt zwei: Passt die Ausgabe zum Tier?
 
 Eine kleine Katze benötigt andere Portionsschritte als ein großer Hund. Auch bei gleicher Tagesmenge kann eine feinere Dosierung wichtig sein, wenn mehrere kleine Mahlzeiten geplant sind. Prüfe deshalb nicht nur die maximale Behältergröße, sondern minimale und maximale Ausgabe sowie die praktische Grammmenge mit dem eigenen Futter.
 
-Körpergröße und Verhalten beeinflussen die Hardwarewahl. Der Napf sollte erreichbar sein, ohne eine unnatürliche Haltung zu erzwingen. Ein futtermotivierter Hund kann ein leichtes Gehäuse verschieben oder den Deckel bearbeiten. Eine schreckhafte Katze reagiert möglicherweise auf Motorgeräusche. Für besondere Situationen helfen die Ratgeber [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde) und [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen).
+Körpergröße und Verhalten beeinflussen die Hardwarewahl. Der Napf sollte erreichbar sein, ohne eine unnatürliche Haltung zu erzwingen. Ein futtermotivierter Hund kann ein leichtes Gehäuse verschieben oder den Deckel bearbeiten. Eine schreckhafte Katze reagiert möglicherweise auf Motorgeräusche. Für besondere Situationen helfen die Ratgeber [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/) und [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
 
 | Bedarf | Geeignete Richtung | Besonders prüfen | Warnsignal |
 | --- | --- | --- | --- |
@@ -78,13 +78,13 @@ Körpergröße und Verhalten beeinflussen die Hardwarewahl. Der Napf sollte erre
 
 ## Schritt drei: Wie viel Automatisierung ist sinnvoll?
 
-Ein lokaler Zeitplan und eine zuverlässige Uhr sind die Grundlage. WLAN erleichtert Änderungen aus der Ferne, kann aber ausfallen. Daher sollte vor dem Kauf geklärt werden, ob geplante Ausgaben ohne Internet weiterlaufen. Wer bewusst wenig Vernetzung möchte, findet unter [Futterautomat ohne WLAN](/futterautomat-ohne-wlan) einfachere Systeme und Prüfkriterien.
+Ein lokaler Zeitplan und eine zuverlässige Uhr sind die Grundlage. WLAN erleichtert Änderungen aus der Ferne, kann aber ausfallen. Daher sollte vor dem Kauf geklärt werden, ob geplante Ausgaben ohne Internet weiterlaufen. Wer bewusst wenig Vernetzung möchte, findet unter [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/) einfachere Systeme und Prüfkriterien.
 
-Eine Kamera lohnt sich nur, wenn der Blick auf den Futterplatz eine konkrete Frage beantwortet. Sie kann zeigen, ob ein Tier am Napf erscheint, aber nicht sicher messen, wie viel es gefressen hat. In Wohnräumen kommen Datenschutz, Blickwinkel und möglicherweise kostenpflichtige Cloud-Funktionen hinzu. Der [Kamera-Ratgeber](/futterautomat-mit-kamera) trennt Nutzen von Komfort.
+Eine Kamera lohnt sich nur, wenn der Blick auf den Futterplatz eine konkrete Frage beantwortet. Sie kann zeigen, ob ein Tier am Napf erscheint, aber nicht sicher messen, wie viel es gefressen hat. In Wohnräumen kommen Datenschutz, Blickwinkel und möglicherweise kostenpflichtige Cloud-Funktionen hinzu. Der [Kamera-Ratgeber](/futterautomat-mit-kamera/) trennt Nutzen von Komfort.
 
 ## Betreuung und Ausfallsicherheit mitdenken
 
-Ein Futterautomat ersetzt keine verantwortliche Betreuung. Wasser kann verschmutzen, ein Futterkanal kann blockieren und das Tier kann sein Verhalten ändern. Im Urlaub braucht es weiterhin eine Person, die Tier, Wasser, Futterstelle und Technik regelmäßig kontrolliert. Das gilt selbst bei Kamera und Push-Meldungen. Eine konkrete Übergabeplanung beschreibt [Futterautomat im Urlaub](/futterautomat-im-urlaub).
+Ein Futterautomat ersetzt keine verantwortliche Betreuung. Wasser kann verschmutzen, ein Futterkanal kann blockieren und das Tier kann sein Verhalten ändern. Im Urlaub braucht es weiterhin eine Person, die Tier, Wasser, Futterstelle und Technik regelmäßig kontrolliert. Das gilt selbst bei Kamera und Push-Meldungen. Eine konkrete Übergabeplanung beschreibt [Futterautomat im Urlaub](/futterautomat-im-urlaub/).
 
 Für Stromunterbrechungen ist ein Batterie-Backup hilfreich. Prüfe, ob Batterien nur Uhr und Plan erhalten oder auch den Motor antreiben. Teste den Reservebetrieb vor dem ersten längeren Einsatz. Ebenso wichtig ist eine gut sichtbare Füllstandskontrolle; eine App-Meldung sollte den direkten Blick nicht ersetzen.
 
@@ -94,7 +94,7 @@ Alle Teile mit Futterkontakt sollten erreichbar, abnehmbar und nach Herstelleran
 
 ## Ernährung ist kein Gerätemerkmal
 
-Der Automat verteilt eine vorgegebene Menge, bestimmt aber nicht, ob sie individuell richtig ist. Energiebedarf, Lebensphase, Aktivität, Körper- und Muskelzustand müssen getrennt bewertet werden. Bei Übergewicht, Erkrankungen, Wachstum, Trächtigkeit oder auffälligem Fressverhalten gehört die Ration in tierärztliche Hände. Der Ratgeber [Futterautomat und Ernährung](/futterautomat-und-ernaehrung) erklärt diese Grenze; [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht) betrachtet das Gewichtsmanagement.
+Der Automat verteilt eine vorgegebene Menge, bestimmt aber nicht, ob sie individuell richtig ist. Energiebedarf, Lebensphase, Aktivität, Körper- und Muskelzustand müssen getrennt bewertet werden. Bei Übergewicht, Erkrankungen, Wachstum, Trächtigkeit oder auffälligem Fressverhalten gehört die Ration in tierärztliche Hände. Der Ratgeber [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/) erklärt diese Grenze; [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/) betrachtet das Gewichtsmanagement.
 
 ## Methodik unserer Entscheidungshilfe
 
@@ -108,4 +108,4 @@ Wir ordnen Geräte nach Ausschlusskriterien: ungeeignete Futterart, unpassende T
 
 ## Interne Links und weiterführende Ratgeber
 
-Alle aktuellen Modelle und Bauarten bündelt [Smarte Futterautomaten](/smarte-futterautomaten). Für die technische Grundlage folgt [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat); für konkrete Routinen passen [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze) und [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund). Als Produktbeispiele dienen der [Petlibro Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder), der [Petlibro Granary Camera Feeder](/produkt/petlibro-granary-camera-feeder) und der [Cat Mate C500](/produkt/cat-mate-c500).
+Alle aktuellen Modelle und Bauarten bündelt [Smarte Futterautomaten](/smarte-futterautomaten/). Für die technische Grundlage folgt [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/); für konkrete Routinen passen [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/) und [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/). Als Produktbeispiele dienen der [Petlibro Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/), der [Petlibro Granary Camera Feeder](/produkt/petlibro-granary-camera-feeder/) und der [Cat Mate C500](/produkt/cat-mate-c500/).

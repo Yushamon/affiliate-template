@@ -91,4 +91,4 @@ Wähle zuerst nach Futterart und Portionsbereich. Danach entscheidet der echte K
 
 ## Methodik und interne Links
 
-Wir vergleichen Herstellerdaten, Bedienkonzept, Portionierung, Reinigung und konkrete Alltagsszenarien. Es werden keine eigenen Langzeittests behauptet. Mehr Grundlagen liefern [Futterautomat mit Kamera](/futterautomat-mit-kamera), [Futterautomat im Urlaub](/futterautomat-im-urlaub) und der Hub [Smarte Futterautomaten](/smarte-futterautomaten). Herstellerdetails stehen bei [Petlibro](/hersteller/petlibro), [PETKIT](/hersteller/petkit) und [WOPET](/hersteller/wopet).
+Wir vergleichen Herstellerdaten, Bedienkonzept, Portionierung, Reinigung und konkrete Alltagsszenarien. Es werden keine eigenen Langzeittests behauptet. Mehr Grundlagen liefern [Futterautomat mit Kamera](/futterautomat-mit-kamera/), [Futterautomat im Urlaub](/futterautomat-im-urlaub/) und der Hub [Smarte Futterautomaten](/smarte-futterautomaten/). Herstellerdetails stehen bei [Petlibro](/hersteller/petlibro/), [PETKIT](/hersteller/petkit/) und [WOPET](/hersteller/wopet/).

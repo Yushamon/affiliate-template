@@ -73,7 +73,7 @@ export const getFutterautomatenAlternatives = (
     recommendations.push({
       productKey: candidate.data.slug,
       name: candidate.data.title,
-      url: candidate.data.productUrl ?? `/produkt/${candidate.data.slug}`,
+      url: candidate.data.productUrl ?? `/produkt/${candidate.data.slug}/`,
       image: candidate.data.images.hero,
       score: candidate.data.score ?? 0,
       rating: candidate.data.rating,

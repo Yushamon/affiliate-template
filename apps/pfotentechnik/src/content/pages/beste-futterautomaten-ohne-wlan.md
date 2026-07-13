@@ -6,7 +6,7 @@ description: "Futterautomaten ohne WLAN nach lokaler Zeitsteuerung, Batterie, Fu
 seoDescription: "Futterautomaten ohne WLAN: Cat Mate, SureFeed und IMIPAW nach Timer, Batterie, Nassfutter und Mikrochip-Zugang verglichen."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten"
+categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Ohne WLAN", "Vergleich", "Batterie"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
@@ -52,4 +52,4 @@ Prüfe Display, Uhrzeit, Batteriestand und manuelle Bedienung. Bei Vorratsautoma
 
 ## Methodik und interne Links
 
-Die Einordnung basiert auf Funktionsprinzip, Herstellerangaben, Stromkonzept und Futterart. Keine Seite zeigt statische Preise oder verspricht medizinische Wirkungen. Vertiefend helfen [Futterautomat ohne WLAN](/futterautomat-ohne-wlan), [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat) und [Smarte Futterautomaten](/smarte-futterautomaten). Hersteller-Hubs: [Cat Mate](/hersteller/cat-mate), [SureFeed](/hersteller/surefeed) und [IMIPAW](/hersteller/imipaw).
+Die Einordnung basiert auf Funktionsprinzip, Herstellerangaben, Stromkonzept und Futterart. Keine Seite zeigt statische Preise oder verspricht medizinische Wirkungen. Vertiefend helfen [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/), [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Hersteller-Hubs: [Cat Mate](/hersteller/cat-mate/), [SureFeed](/hersteller/surefeed/) und [IMIPAW](/hersteller/imipaw/).

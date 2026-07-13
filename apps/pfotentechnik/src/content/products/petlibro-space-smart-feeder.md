@@ -13,7 +13,7 @@ category:
   key: "futterautomaten"
   label: "Futterautomaten"
   path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-space-smart-feeder"
+productUrl: "/produkt/petlibro-space-smart-feeder/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:
