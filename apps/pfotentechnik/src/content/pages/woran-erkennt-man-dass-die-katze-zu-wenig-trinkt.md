@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Typische Anzeichen von Flüssigkeitsmangel bei Katzen, sinnvolle Kontrollen zu Hause und Warnzeichen für den Tierarzt."
 category: "katzengesundheit"
+linking:
+  keywords: ["zu wenig trinkt", "trinkt zu wenig", "Anzeichen für Flüssigkeitsmangel", "Flüssigkeitsmangel"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
+  priority: "high"
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-12"
@@ -84,4 +88,3 @@ Dehydration kann Folge einer Erkrankung sein und sich rasch verschlechtern. Bei 
 ## Passender Technik-Hinweis
 
 Ein Trinkbrunnen kann bei Katzen helfen, die bewegtes Wasser bevorzugen. Da wir derzeit keinen Trinkbrunnen belastbar getestet haben, empfehlen wir an dieser Stelle bewusst kein bestimmtes Produkt. Mehr Hintergründe finden Sie unter [Warum Katzen lieber fließendes Wasser trinken](/warum-katzen-fliessendes-wasser-trinken/).
-

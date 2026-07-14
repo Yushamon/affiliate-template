@@ -62,6 +62,8 @@ export const createInternalLinkedHtml = (
 
   const openIgnoredTags: string[] = [];
   const tokens = html.split(/(<[^>]+>)/g);
+  let remainingLinks = options.maxLinksPerPage ?? 12;
+  let availableDefinitions = [...definitions];
 
   return tokens
     .map((token) => {
@@ -74,11 +76,33 @@ export const createInternalLinkedHtml = (
           return token;
         }
 
-        return createInternalLinkHtml(
+        if (remainingLinks <= 0 || availableDefinitions.length === 0) {
+          return token;
+        }
+
+        const linkedToken = createInternalLinkHtml(
           token,
-          definitions,
-          options
+          availableDefinitions,
+          {
+            ...options,
+            maxLinksPerPage: remainingLinks
+          }
         );
+
+        const linkedHrefs = Array.from(
+          linkedToken.matchAll(/<a href="([^"]+)"/g),
+          (match) => match[1]
+        );
+
+        if (linkedHrefs.length > 0) {
+          const usedHrefs = new Set(linkedHrefs);
+          remainingLinks -= linkedHrefs.length;
+          availableDefinitions = availableDefinitions.filter(
+            (definition) => !usedHrefs.has(definition.href)
+          );
+        }
+
+        return linkedToken;
       }
 
       const tagName = getTagName(token);

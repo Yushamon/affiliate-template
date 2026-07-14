@@ -5,6 +5,9 @@ slug: "futterautomat-im-urlaub"
 description: "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests, Notfallplan und Futterreserve einsetzen."
 seoDescription: "Futterautomat im Urlaub nutzen: Warum Betreuung nötig bleibt und wie Zeitplan, Wasser, Stromreserve und Notfallübergabe vorbereitet werden."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat im Urlaub", "Urlaubsbetrieb", "während des Urlaubs", "längere Abwesenheit"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Urlaub", "Betreuung", "Ausfallsicherheit"]

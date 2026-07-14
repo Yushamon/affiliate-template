@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wovon das Filterintervall abhängt, was ein Filter tatsächlich leistet und warum Wechseln die Reinigung nicht ersetzt."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Filter wechseln", "Filterwechsel", "Brunnenfilter", "Filter im Trinkbrunnen"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

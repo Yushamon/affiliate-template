@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Futterautomat hygienisch reinigen: Napf, Vorratsbehälter und Ausgabemechanik säubern, Elektronik schützen und Intervalle festlegen."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat reinigen", "Futterautomaten reinigen", "Reinigung des Futterautomaten", "Reinigungsroutine"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -71,4 +75,3 @@ Nassfutterautomaten benötigen deutlich engere Intervalle: Schalen und futterber
 ## Passende Produktempfehlung
 
 Beim [PETLIBRO Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/) sind Edelstahl-Napf und zentrale Futterteile entnehmbar. Maßgeblich bleibt die mitgelieferte Modellanleitung; die elektrische Basis darf nicht eingeweicht werden.
-

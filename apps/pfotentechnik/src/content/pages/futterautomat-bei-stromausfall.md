@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Ob Zeitpläne bei Stromausfall weiterlaufen, wie Batterie-Backup funktioniert und welche Tests vor Abwesenheit wichtig sind."
 category: "futterautomaten"
+linking:
+  keywords: ["Stromausfall", "bei Stromausfall", "Notstromversorgung"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -69,4 +73,3 @@ Verlassen Sie sich bei längerer Abwesenheit nie allein auf Technik. Eine Betreu
 ## Passende Produktempfehlung
 
 Der [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/) unterstützt laut Produktdaten ein Backup mit vier AA-Batterien. Testen Sie den konkreten Notbetrieb trotzdem selbst; App und WLAN-Funktionen können bei einem Netzausfall eingeschränkt sein.
-

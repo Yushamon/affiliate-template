@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Warum Trinkbrunnen brummen, rattern oder plätschern und wie Wasserstand, Haare, Rotor und Untergrund geprüft werden."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen ist laut", "laute Pumpe", "Pumpengeräusch", "Brummgeräusch"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

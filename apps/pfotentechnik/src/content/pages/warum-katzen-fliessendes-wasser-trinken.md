@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Manche Katzen trinken lieber aus einem Brunnen oder Wasserhahn. Was Forschung und Tiermedizin dazu sagen und wie du die Wasseraufnahme sinnvoll unterstützt."
 category: "katzengesundheit"
+linking:
+  keywords: ["fließendes Wasser", "bewegtes Wasser", "Katzen lieber fließendes Wasser"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "katzenverhalten"]
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-12"
@@ -101,4 +104,3 @@ Plötzlich deutlich mehr oder weniger Durst ist keine Frage der Brunnenwahl. Auc
 ## Fazit
 
 Katzen trinken nicht pauschal lieber fließendes Wasser. Manche tun es, andere nicht. Hilfreicher als eine starre Regel ist ein kleines Wahlangebot aus sauberen, gut platzierten Wasserstellen. Der beste Napf oder Brunnen ist der, den deine Katze zuverlässig und stressfrei nutzt.
-

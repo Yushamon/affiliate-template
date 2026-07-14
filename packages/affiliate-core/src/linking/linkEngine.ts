@@ -85,7 +85,10 @@ const normalizePath = (path?: string) => {
 };
 
 const getKeywordPattern = (keyword: string) =>
-  new RegExp(`\\b${escapeRegExp(keyword)}\\b`, "giu");
+  new RegExp(
+    `(?<![\\p{L}\\p{N}])${escapeRegExp(keyword)}(?![\\p{L}\\p{N}])`,
+    "giu"
+  );
 
 export const findInternalLinkMatches = (
   text: string,

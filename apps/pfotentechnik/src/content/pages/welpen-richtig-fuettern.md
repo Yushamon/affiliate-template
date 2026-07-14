@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Welpen bedarfsgerecht füttern: geeignetes Wachstumsfutter, Mahlzeiten, Portionen, Gewichtskontrolle und sichere Umstellung."
 category: "hundeernaehrung"
+linking:
+  keywords: ["Welpen füttern", "Welpen richtig füttern", "Welpenfütterung", "Fütterung eines Welpen"]
+  contexts: ["hundeernaehrung"]
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
 heroImage:

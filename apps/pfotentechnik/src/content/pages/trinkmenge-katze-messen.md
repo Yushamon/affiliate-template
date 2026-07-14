@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wasseraufnahme zu Hause nachvollziehbar messen und Grenzen durch Nassfutter, Verdunstung, mehrere Katzen und Trinkbrunnen verstehen."
 category: "gesundheit"
+linking:
+  keywords: ["Trinkmenge messen", "Trinkmenge kontrollieren", "Wasseraufnahme messen", "Trinkprotokoll"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
 categoryLabel: "Gesundheit & Wasser"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -49,4 +52,3 @@ Deutlich vermehrtes Trinken und Urinieren kann unter anderem bei Nieren- oder St
 Bring ein mehrtägiges Protokoll zur Untersuchung mit. Es ergänzt Anamnese, Blut- und Urinuntersuchung, ersetzt sie aber nicht.
 
 **Quellen:** [Cats Protection – Trinkmenge mit Messbecher beobachten](https://www.cats.org.uk/cats-blog/8-tips-get-your-cat-to-drink-more-water), [VCA – Wasserbedarf und Einflussfaktoren](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water), [VCA – Urinanalyse und verdünnter Urin](https://vcahospitals.com/know-your-pet/urinalysis).
-

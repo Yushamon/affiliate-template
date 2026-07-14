@@ -49,7 +49,8 @@ const pages = await getCollection("pages");
 const internalLinkDefinitions = getPageInternalLinkDefinitions(pages);
 const sourceContexts = Array.from(new Set([
   page.data.linkContext,
-  page.data.category
+  page.data.category,
+  ...page.data.tags
 ].filter((context): context is string => Boolean(context))));
 const breadcrumbs = getPageBreadcrumbs(page);
 const products = await getCollection("products");

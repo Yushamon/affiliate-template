@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Materialien für Katzenbrunnen nach Hygiene, Gewicht, Bruchrisiko, Geräusch und Reinigung vergleichen."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Edelstahl, Keramik oder Kunststoff", "Material des Trinkbrunnens", "Edelstahlbrunnen", "Keramikbrunnen"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

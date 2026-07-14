@@ -5,6 +5,9 @@ slug: "futterautomat-fuer-grosse-hunde"
 description: "Futterautomaten für große Hunde nach Portionsmenge, Napf, Stabilität und sicherem Zugang beurteilen."
 seoDescription: "Futterautomat für große Hunde auswählen: Ausgabemenge, Krokettengröße, Napfhöhe, Standfestigkeit und Betreuung richtig prüfen."
 category: "futterautomaten"
+linking:
+  keywords: ["große Hunde", "großen Hund", "Futterautomat für große Hunde", "größere Portionen"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Große Hunde", "Portionierung", "Kaufberatung"]

@@ -5,6 +5,10 @@ slug: "futterautomat-mit-app"
 description: "Futterautomaten mit App vergleichen: Zeitpläne, Protokolle, Offline-Betrieb, Benachrichtigungen und Portionierung."
 seoDescription: "Smarte Futterautomaten mit App im Vergleich: zuverlässige Zeitpläne, Ausgabeprotokolle, Notstrom und passende Empfehlungen."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat mit App", "Futterautomaten mit App", "App-Steuerung", "per App steuern"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "App", "Smart Home"]

@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wie oft Wasser in Napf und Katzenbrunnen erneuert werden sollte und warum Nachfüllen allein nicht reicht."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Katzenwasser wechseln", "Wasser täglich wechseln", "frisches Trinkwasser", "Wasserwechsel"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -49,4 +52,3 @@ Wichtig: Plötzlich deutlich mehr oder weniger Trinken ist kein Reinigungsproble
 Fülle morgens frisches Wasser ein und prüfe abends kurz Füllstand und Sauberkeit. Mehrere Wasserstellen geben der Katze Wahlmöglichkeiten und verhindern, dass eine einzelne ausgefallene Pumpe die einzige Quelle blockiert. Stelle Wasser nicht direkt neben Futter oder Katzentoilette.
 
 **Quellen:** [Cats Protection – Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [VCA – How to get your cat to drink more water](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water), [International Cat Care – Encouraging your cat to drink](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf).
-

@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Häufige Gründe für hastiges Fressen, geeignete Gegenmaßnahmen und Warnzeichen, bei denen der Hund untersucht werden sollte."
 category: "hundeverhalten"
+linking:
+  keywords: ["Hund schlingt", "Schlingverhalten", "zu schnelles Fressen", "frisst zu schnell"]
+  contexts: ["hundeverhalten", "hundeernaehrung", "futterautomaten"]
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
 heroImage:

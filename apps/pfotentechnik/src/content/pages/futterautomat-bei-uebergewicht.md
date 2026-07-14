@@ -5,6 +5,9 @@ slug: "futterautomat-bei-uebergewicht"
 description: "Wie Futterautomaten einen tierärztlich begleiteten Gewichtsplan durch kleine, nachvollziehbare Portionen unterstützen können."
 seoDescription: "Futterautomat bei Übergewicht: Tagesration, Portionen, Wiegekontrolle und Mehrtierhaushalt sicher in einen Gewichtsplan integrieren."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat bei Übergewicht", "Gewichtsmanagement", "kontrollierte Portionen", "Portionskontrolle"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Übergewicht", "Gewichtsmanagement", "Portionierung"]

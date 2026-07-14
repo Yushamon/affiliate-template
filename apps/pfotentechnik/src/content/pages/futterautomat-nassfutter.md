@@ -5,6 +5,10 @@ slug: "futterautomat-nassfutter"
 description: "Futterautomaten für Nassfutter richtig auswählen: Fachsysteme, Kühlakkus, Hygiene, Standzeiten und Grenzen."
 seoDescription: "Welcher Futterautomat eignet sich für Nassfutter? Kaufberatung zu Kühlakkus, Reinigung, Portionen und dem Cat Mate C500."
 category: "futterautomaten"
+linking:
+  keywords: ["Nassfutterautomat", "Nassfutterautomaten", "Futterautomat für Nassfutter", "Nassfutter"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Nassfutter", "Katze"]

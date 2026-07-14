@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Blockaden am Futterautomaten sicher prüfen: Strom trennen, Futterweg leeren, Krokettengröße kontrollieren und Testausgabe durchführen."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat klemmt", "Futterstau", "Ausgabekanal blockiert", "blockierter Futterautomat"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -76,4 +80,3 @@ Vergleichen Sie Krokettengröße und -form mit der Herstellerfreigabe. Lagern Si
 ## Passende Produktempfehlung
 
 Der [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/) besitzt eine automatische Entblockungsfunktion. Sie reduziert einzelne Störungen, ersetzt aber weder passendes Futter noch Reinigung und regelmäßige Testausgaben.
-

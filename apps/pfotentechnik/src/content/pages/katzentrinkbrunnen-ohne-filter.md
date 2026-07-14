@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Was filterlose Katzenbrunnen leisten, welche Arbeit der Filter wirklich übernimmt und wann ein Modell ohne Kartusche passen kann."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen ohne Filter", "filterloser Trinkbrunnen", "ohne Filter"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -51,4 +54,3 @@ Prüfe, ob Tank, Trinkfläche, Auslauf und Pumpenrotor ohne Spezialwerkzeug erre
 Die beste Lösung ist nicht automatisch mit oder ohne Filter. Sie ist diejenige, die du dauerhaft korrekt warten kannst und die deine Katze akzeptiert.
 
 **Quellen:** [International Cat Care – Brunnen reinigen und Filter wechseln](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf), [PETKIT – Filteraufbau und Wechselintervall](https://www.petkit.com/products/filter), [PETKIT – filterloses Eversweet Ultra als Produktbeispiel](https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain).
-

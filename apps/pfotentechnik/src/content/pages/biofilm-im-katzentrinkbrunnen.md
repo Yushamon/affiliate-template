@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Wie Biofilm entsteht, warum ein Filter ihn nicht verhindert und wie du einen Katzenbrunnen wirksam sauber hältst."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Biofilm", "schmieriger Belag", "bakterieller Belag"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
+  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

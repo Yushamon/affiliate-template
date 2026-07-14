@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wie viele Näpfe und Trinkbrunnen sinnvoll sind und wie Standorte in Ein- und Mehrkatzenhaushalten verteilt werden."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Wasserstellen", "mehrere Wasserstellen", "Anzahl der Wasserstellen"]
+  contexts: ["trinkbrunnen", "katzenhaltung", "katzengesundheit"]
 categoryLabel: "Wasser & Verhalten"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -51,4 +54,3 @@ International Cat Care empfiehlt mehrere Ressourcen, um Wahl und Zugang zu verbe
 Ein großer Brunnen für alle wirkt praktisch, schafft aber eine gemeinsame Engstelle. Ergänze ihn um breite Näpfe. RFID- oder App-Daten können Hinweise liefern, messen aber nicht automatisch die gesamte Wasseraufnahme aus Nassfutter und anderen Quellen.
 
 **Quellen:** [International Cat Care – mehrere Wasserstationen und Wahlmöglichkeiten](https://icatcare.org/resources/cat-carer-guide-home-modifications.pdf), [Cats Protection – mehrere Näpfe an verschiedenen Orten](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [VCA – Wasserquellen verteilen](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water).
-

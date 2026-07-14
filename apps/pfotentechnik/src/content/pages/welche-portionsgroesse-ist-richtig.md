@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "So wird aus Hersteller-Portionen eine passende Futtermenge: Tagesration festlegen, Ausgaben wiegen und regelmäßig kontrollieren."
 category: "futterautomaten"
+linking:
+  keywords: ["Portionsgröße", "Portionsgrößen", "richtige Portion", "Portion einstellen"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -74,4 +78,3 @@ Wiegen Sie das Tier regelmäßig und beobachten Sie die Körperform. Prüfen Sie
 ## Passende Produktempfehlung
 
 Der [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/) ergänzt die Portionierung durch einen Wiegenapf. Auch hier muss die tatsächliche Ausgabe mit dem verwendeten Futter geprüft und die Tagesration fachlich passend festgelegt werden.
-

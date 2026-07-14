@@ -5,6 +5,9 @@ slug: "wie-viele-mahlzeiten-katze"
 description: "Mahlzeiten für Katzen nach Tagesration, Verhalten, Lebensphase und Mehrkatzenhaushalt sinnvoll verteilen."
 seoDescription: "Wie oft Katzen füttern? Kleine Mahlzeiten, Tagesration, Automaten, Mehrkatzenhaushalt und besondere Lebensphasen fachlich eingeordnet."
 category: "futterautomaten"
+linking:
+  keywords: ["Mahlzeiten für Katzen", "Mahlzeiten einer Katze", "Fütterungszeiten für Katzen", "kleine Mahlzeiten"]
+  contexts: ["futterautomaten", "katzenernaehrung"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Katze", "Mahlzeiten", "Fütterung", "Futterautomat"]

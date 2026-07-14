@@ -5,6 +5,10 @@ slug: "futterautomat-ohne-wlan"
 description: "Futterautomaten ohne WLAN nach Zeitsteuerung, Batterie, Bedienung und Ausfallsicherheit auswählen."
 seoDescription: "Futterautomat ohne WLAN finden: Vorteile, Grenzen und Prüfkriterien für lokale Zeitpläne, Batteriebetrieb und einfache Bedienung."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat ohne WLAN", "Futterautomaten ohne WLAN", "Offline-Futterautomat", "ohne WLAN"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Ohne WLAN", "Datenschutz", "Offline"]

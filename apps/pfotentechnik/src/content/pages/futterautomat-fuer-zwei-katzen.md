@@ -5,6 +5,9 @@ slug: "futterautomat-fuer-zwei-katzen"
 description: "Futterautomaten für zwei Katzen nach Zugang, Futterplätzen, Portionen und Konkurrenzverhalten planen."
 seoDescription: "Futterautomat für zwei Katzen: Doppelschale, getrennte Automaten, Zugangskontrolle und Fütterungsplan sinnvoll auswählen."
 category: "futterautomaten"
+linking:
+  keywords: ["zwei Katzen", "Futterautomat für zwei Katzen", "Mehrkatzenhaushalt", "Futterneid"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Zwei Katzen", "Mehrkatzenhaushalt", "Fütterung"]

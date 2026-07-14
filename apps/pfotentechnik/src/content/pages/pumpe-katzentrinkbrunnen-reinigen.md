@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Pumpengehäuse, Rotor und Vorfilter reinigen, damit der Katzenbrunnen leise und zuverlässig läuft."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Pumpe reinigen", "Pumpenreinigung", "Laufrad reinigen", "Trinkbrunnenpumpe"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -49,4 +52,3 @@ Kommt das Problem sofort zurück, nicht einfach die Leistung erhöhen. Prüfe Fi
 Auch ein gut gewarteter Brunnen kann ausfallen. Mindestens ein zusätzlicher Wassernapf schützt die Katze vor einer unbemerkten Unterbrechung. Bei längerer Abwesenheit ersetzt Technik keine zuverlässige Betreuung.
 
 **Quellen:** [PETLIBRO – Pumpenreinigung bei schwachem Durchfluss](https://petlibro.com/pages/what-can-i-do-if-my-water-fountain-is-not-flowing-as-much-as-it-used-to-wf002-wf003-wf006-wf008-wf005-wf115-wf105), [PETKIT – Bedienungsanleitung mit Pumpenhinweisen](https://instructions.petkit.com/App%20Manual/CTW3/CT-W3_User%20Manual_EN.pdf), [International Cat Care – Brunnenpflege](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf).
-

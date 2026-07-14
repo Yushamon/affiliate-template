@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Wie du den Flüssigkeitsbedarf deiner Katze sinnvoll einschätzt und warum Trinkmenge und gesamte Wasseraufnahme nicht dasselbe sind."
 category: "katzengesundheit"
+linking:
+  keywords: ["Wasserbedarf", "wie viel Wasser", "Wasserbedarf einer Katze", "tägliche Trinkmenge"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
+  priority: "high"
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

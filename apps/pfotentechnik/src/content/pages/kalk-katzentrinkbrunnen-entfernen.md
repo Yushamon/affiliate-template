@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Kalkablagerungen an Tank, Trinkfläche und Pumpe materialschonend lösen und erneute Ablagerungen reduzieren."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Kalk entfernen", "Kalkablagerungen", "verkalkt", "Entkalken"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -49,4 +52,3 @@ Ein schwacher Wasserlauf trotz sauberem Filter spricht für eine kontrollbedürf
 Tiefe Kratzer, spröde Dichtungen, Korrosion, nicht erreichbare Kanäle oder eine dauerhaft verschmutzte Pumpe sprechen gegen weitere Nutzung. Ein leicht vollständig zerlegbares Modell ist langfristig oft wichtiger als zusätzliche App-Funktionen.
 
 **Quellen:** [PETLIBRO – schwacher Durchfluss und hartes Wasser](https://petlibro.com/pages/what-can-i-do-if-my-water-fountain-is-not-flowing-as-much-as-it-used-to-wf002-wf003-wf006-wf008-wf005-wf115-wf105), [International Cat Care – Trinkbrunnen regelmäßig zerlegen und reinigen](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf).
-

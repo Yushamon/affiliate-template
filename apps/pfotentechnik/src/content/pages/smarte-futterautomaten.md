@@ -5,6 +5,10 @@ slug: "smarte-futterautomaten"
 description: "Smarte Futterautomaten helfen, Hunde und Katzen zuverlässig, planbar und per App zu füttern."
 seoDescription: "Welche smarten Futterautomaten lohnen sich? Vergleich für Hunde und Katzen mit App, Kamera, Portionierung und Empfehlungen."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat", "Futterautomaten", "automatische Fütterung"]
+  contexts: ["futterautomaten"]
+  priority: "low"
 categoryLabel: "Futterautomaten"
 tags:
   - "Futterautomat"

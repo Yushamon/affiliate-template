@@ -5,6 +5,9 @@ slug: "wie-viele-mahlzeiten-hund"
 description: "Mahlzeiten für Hunde nach Lebensphase, Tagesration, Verhalten und gesundheitlicher Situation sinnvoll planen."
 seoDescription: "Wie oft Hunde füttern? Mahlzeitenzahl, Tagesration, Welpen, erwachsene Hunde, Senioren und Futterautomaten fachlich eingeordnet."
 category: "futterautomaten"
+linking:
+  keywords: ["Mahlzeiten für Hunde", "Mahlzeiten pro Tag", "Fütterungszeiten für Hunde", "Fütterungsroutine des Hundes"]
+  contexts: ["futterautomaten", "hundeernaehrung"]
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Hund", "Mahlzeiten", "Fütterung", "Futterautomat"]

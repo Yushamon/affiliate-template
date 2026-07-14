@@ -5,6 +5,10 @@ type: knowledge
 layout: knowledge
 description: "Wie du Tank, Trinkfläche, Filter und Pumpe hygienisch reinigst und welche Stellen besonders häufig übersehen werden."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen reinigen", "Katzentrinkbrunnen reinigen", "Brunnenreinigung", "Reinigung des Trinkbrunnens"]
+  contexts: ["trinkbrunnen"]
+  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

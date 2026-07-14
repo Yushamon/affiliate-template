@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Was bei Mehrkatzenhaushalten wirklich zählt: mehrere Wasserstellen, passende Tankgröße, Reinigung und ehrliche Grenzen von App- und RFID-Daten."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen für mehrere Katzen", "mehrere Katzen", "Mehrkatzenhaushalt", "Brunnengröße"]
+  contexts: ["trinkbrunnen"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

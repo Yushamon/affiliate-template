@@ -5,6 +5,10 @@ slug: "futterautomat-mit-kamera"
 description: "Futterautomaten mit Kamera vergleichen: Livebild, Nachtsicht, Audio, Datenschutz und zuverlässige Futterausgabe."
 seoDescription: "Futterautomaten mit Kamera im Vergleich: Petlibro und PETKIT mit App, Nachtsicht, Audio und sinnvoller Kaufberatung."
 category: "futterautomaten"
+linking:
+  keywords: ["Futterautomat mit Kamera", "Futterautomaten mit Kamera", "Kamera-Futterautomat", "Kameramodelle"]
+  contexts: ["futterautomaten"]
+  priority: "high"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Kamera", "App"]

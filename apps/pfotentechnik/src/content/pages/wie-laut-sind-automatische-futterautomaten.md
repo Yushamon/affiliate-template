@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Welche Geräusche Futterautomaten machen, warum Tiere unterschiedlich reagieren und wie eine stressarme Gewöhnung gelingt."
 category: "futterautomaten"
+linking:
+  keywords: ["lauter Futterautomat", "Geräuschentwicklung", "Betriebsgeräusch", "Lautstärke des Futterautomaten"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -64,4 +67,3 @@ Stellen Sie den ausgeschalteten Automaten zunächst neben den vertrauten Napf. B
 ## Passende Produktempfehlung
 
 Beim [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/) gehört die kompakte Ausgabe zu den alltagstauglichen Lösungen. Eine verbindliche Lautstärke lässt sich dennoch nur mit Futter, Napf und Standort im eigenen Haushalt beurteilen.
-

@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Trinkbrunnen für Kitten sicher einführen: flache Trinkfläche, stabiler Stand, Kabelschutz, Reinigung und Aufsicht."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen für Kitten", "Kitten sicher", "junge Katzen am Trinkbrunnen"]
+  contexts: ["trinkbrunnen", "katzenhaltung"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -51,4 +54,3 @@ Reinigungsmittel gründlich abspülen. Duftende Zusätze oder ätherische Öle g
 Ein Kitten, das nicht trinkt, nicht frisst, erbricht, Durchfall hat oder ungewöhnlich ruhig ist, braucht rasch tierärztliche Beurteilung. Ein Trinkbrunnen löst keine Dehydrierung oder Erkrankung.
 
 **Quellen:** [Cats Protection – Was Katzen und Kitten trinken sollten](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [International Cat Care – Wasserquellen schrittweise anbieten](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf), [ASPCA – Risiken ungeeigneter Wasserquellen](https://www.aspca.org/news/toilet-bowl-water-and-your-pets-dangers-arent-always-crystal-clear).
-

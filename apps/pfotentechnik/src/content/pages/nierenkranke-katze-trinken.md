@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wie frisches Wasser, Nassfutter und mehrere Quellen Katzen mit Nierenerkrankung unterstützen können – und wo Selbsthilfe endet."
 category: "gesundheit"
+linking:
+  keywords: ["nierenkranke Katze", "Nierenerkrankung", "chronische Nierenerkrankung", "Nierenprobleme"]
+  contexts: ["trinkbrunnen", "katzengesundheit", "gesundheit"]
 categoryLabel: "Gesundheit & Wasser"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -49,4 +52,3 @@ Zwangseinflößen birgt Risiken und gehört nur nach konkreter tierärztlicher A
 Ein Brunnen ist dann sinnvoll, wenn die Katze ihn zuverlässig und gern nutzt und das Gerät hygienisch gepflegt wird. Er ersetzt weder mehrere Quellen noch Behandlung, Kontrollen oder eine individuell angepasste Ernährung. Bei eingeschränkter Beweglichkeit sollte die Trinkhöhe bequem sein.
 
 **Quellen:** [VCA – Nutrition for cats with chronic kidney disease](https://vcahospitals.com/know-your-pet/nutrition-for-cats-with-chronic-kidney-disease), [Cornell Feline Health Center – Hydration](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration), [International Cat Care – Wasseraufnahme fördern](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf).
-

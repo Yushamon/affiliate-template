@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Batteriebetrieb, Netzteil und kombinierte Stromversorgung bei Futterautomaten nach Zuverlässigkeit und Einsatzort vergleichen."
 category: "futterautomaten"
+linking:
+  keywords: ["Batterie-Backup", "Batteriebetrieb", "Batterie oder Netzteil", "Netzbetrieb"]
+  contexts: ["futterautomaten"]
 categoryLabel: "Futterautomaten-Wissen"
 categoryPath: "/wissen/"
 heroImage:
@@ -68,4 +71,3 @@ Bei einer echten Backup-Lösung läuft das Gerät am Netz und schaltet bei Ausfa
 ## Passende Produktempfehlung
 
 Der [PETLIBRO Air Automatic Feeder](/produkt/petlibro-air-automatic-feeder/) eignet sich als kompakte Lösung mit lokaler Zeitsteuerung. Wer zusätzlich ein klar dokumentiertes Batterie-Backup sucht, sollte vor dem Kauf die konkrete Modellversion und deren Funktionsumfang prüfen.
-

@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wie lange geöffnetes Trockenfutter verwendet werden kann, welche Lagerung sinnvoll ist und woran verdorbenes Futter erkennbar wird."
 category: "tierernaehrung"
+linking:
+  keywords: ["Trockenfutter frisch", "Haltbarkeit von Trockenfutter", "Trockenfutter lagern", "Futterlagerung"]
+  contexts: ["futterautomaten", "tierernaehrung", "hundeernaehrung", "katzenernaehrung"]
 categoryLabel: "Futterwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-12"
@@ -105,4 +108,3 @@ Wird ein Tier nach dem Fressen krank, empfiehlt die FDA, die Fütterung zu stopp
 ## Fazit
 
 Trockenfutter bleibt nicht allein deshalb frisch, weil es trocken aussieht. Kaufe eine passende Packungsgröße, beachte die Herstellerfrist nach dem Öffnen und schütze das Futter vor Luft, Wärme, Feuchtigkeit und Rückständen. Im Zweifel gilt: Auffälliges Futter entsorgen statt testen.
-

@@ -5,6 +5,9 @@ type: knowledge
 layout: knowledge
 description: "Wie Trinkhöhe, Zugang, Geräusch, Hygiene und Gesundheitsbeobachtung bei älteren Katzen zusammenpassen."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Trinkbrunnen für Seniorenkatzen", "Seniorenkatze", "ältere Katze", "niedrige Trinkhöhe"]
+  contexts: ["trinkbrunnen", "katzengesundheit"]
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
@@ -51,4 +54,3 @@ Bevorzuge einen leisen Brunnen, der ohne Kraftaufwand zerlegt werden kann. Trink
 Biete unterschiedliche Höhen und Materialien an. Die Katze entscheidet durch zuverlässige Nutzung, welche Quelle passt.
 
 **Quellen:** [International Cat Care – Wasserstellen bei Mobilitätsproblemen](https://icatcare.org/resources/cat-carer-guide-home-modifications.pdf), [International Cat Care – Trinkmöglichkeiten](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [VCA – Ernährung und Wasser bei chronischer Nierenerkrankung](https://vcahospitals.com/know-your-pet/nutrition-for-cats-with-chronic-kidney-disease).
-
