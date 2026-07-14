@@ -1,82 +1,332 @@
 ---
-title: "Was tun, wenn der Futterautomat klemmt?"
-slug: "was-tun-wenn-der-futterautomat-klemmt"
+title: "Wo sollte das Wasser für Katzen stehen?"
+slug: "wasserstelle-katze-richtiger-standort"
 type: knowledge
 layout: knowledge
-description: "Blockaden am Futterautomaten sicher prüfen: Strom trennen, Futterweg leeren, Krokettengröße kontrollieren und Testausgabe durchführen."
-category: "futterautomaten"
-linking:
-  keywords: ["Futterautomat klemmt", "Futterstau", "Ausgabekanal blockiert", "blockierter Futterautomat"]
-  contexts: ["futterautomaten"]
-  priority: "high"
-categoryLabel: "Futterautomaten-Wissen"
+description: "Der richtige Standort für Wassernapf und Trinkbrunnen: Abstand zu Futter und Toilette, mehrere Wasserstellen und Lösungen für Mehrkatzenhaushalte."
+category: "katzenhaltung"
+categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
-heroImage:
-  src: "../../assets/images/editorial/feeder-jam.webp"
-  alt: "Was tun, wenn der Futterautomat klemmt?"
-publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+publishedAt: "2026-07-13"
+updatedAt: "2026-07-14"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-tags: ["futterautomat", "stoerung", "blockade", "trockenfutter", "wartung"]
-hub:
-  sections: ["wissen"]
-  title: "Wenn der Futterautomat klemmt"
-  description: "Blockaden sicher lösen und erneute Ausgabefehler vermeiden."
-  order: 63
-seo:
-  title: "Futterautomat klemmt: sichere Fehlerbehebung"
-  description: "Der Futterautomat gibt nichts aus? So prüfen Sie Strom, Futterweg, Krokettengröße, Sensoren und Mechanik sicher."
-  canonical: "/was-tun-wenn-der-futterautomat-klemmt/"
-  sitemap: true
-  priority: 0.7
-  changefreq: "yearly"
-related: { tags: ["futterautomat", "stoerung", "wartung"], limit: 4 }
+tags: [katze, wasser, standort, wassernapf, mehrkatzen, trinkbrunnen]
+hub: { sections: [wissen], title: "Der richtige Standort für Katzenwasser", description: "Ruhige, getrennte und gut erreichbare Wasserstellen sinnvoll planen.", order: 53 }
+seo: { title: "Wassernapf für Katzen: der richtige Standort", description: "Wo sollte Katzenwasser stehen? Abstand zu Futter und Toilette, mehrere Wasserstellen, Trinkbrunnen und Tipps für mehrere Katzen.", canonical: "/wasserstelle-katze-richtiger-standort/", sitemap: true, priority: 0.75, changefreq: yearly }
+related: { tags: [katze, wasser, mehrkatzen, trinkbrunnen], limit: 4 }
+linking:
+  keywords:
+    - "Wassernapf Katze Standort"
+    - "Wasserstelle Katze"
+    - "Trinkbrunnen Standort"
+    - "Wasser neben Futter"
+    - "Wasserstelle Mehrkatzenhaushalt"
+  contexts:
+    - "Katzenhaltung"
+    - "Wasseraufnahme"
+    - "Trinkbrunnen"
+  priority: high
+  maxOccurrences: 1
 faq:
-  - question: "Warum blockiert ein Futterautomat?"
-    answer: "Häufig sind Kroketten zu groß oder unregelmäßig, Futter ist feucht, Krümel liegen im Rotor oder der Auslass beziehungsweise ein Sensor ist verschmutzt. Auch Strom- und Motorfehler sind möglich."
-  - question: "Darf ich in den laufenden Rotor greifen?"
-    answer: "Nein. Schalten Sie das Gerät aus und trennen Sie Netzteil und gegebenenfalls Batterien, bevor Sie freigegebene Teile entnehmen."
-  - question: "Wann ist der Kundendienst nötig?"
-    answer: "Wenn der Fehler nach Reinigung, korrektem Zusammenbau und Test mit freigegebenem Futter wiederkehrt oder Motor, Kabel und Gehäuse beschädigt wirken."
+  - question: "Soll der Wassernapf direkt neben dem Futter stehen?"
+    answer: "Viele Katzen akzeptieren Wasser besser, wenn es mit etwas Abstand zum Futter steht. Ein separater Standort ist deshalb einen Versuch wert, besonders wenn die Katze bisher wenig trinkt."
+  - question: "Wie weit sollte das Wasser von der Katzentoilette entfernt stehen?"
+    answer: "Es gibt keine feste Zentimeterzahl. Wichtig ist eine klare räumliche Trennung, sodass weder Geruch noch Streu die Wasserstelle beeinträchtigen."
+  - question: "Wie viele Wasserstellen braucht eine Katze?"
+    answer: "Für eine einzelne Katze sind mindestens zwei gut erreichbare Wasserstellen sinnvoll. In Mehrkatzenhaushalten sollten mehrere räumlich getrennte Stellen vorhanden sein, damit kein Tier den Zugang kontrollieren kann."
+  - question: "Wo sollte ein Trinkbrunnen stehen?"
+    answer: "Ein Trinkbrunnen sollte ruhig, eben, standsicher und nicht direkt neben Futter oder Toilette stehen. Kabel müssen geschützt sein, und der Standort sollte leicht zu reinigen sein."
+  - question: "Darf ein Wassernapf auf dem Boden stehen?"
+    answer: "Ja. Für viele Katzen ist das problemlos. Senioren oder Katzen mit Arthrose können jedoch von einer leicht erhöhten, stabilen Wasserstelle profitieren."
 ---
 
 ## Die kurze Antwort
 
-Trennen Sie den Automaten zuerst vollständig von der Stromversorgung. Leeren Sie den Behälter, entfernen Sie nur laut Anleitung zugängliche Teile und säubern Sie Auslass, Rotor und Sensorbereich. Prüfen Sie anschließend mit wenigen passenden Kroketten eine manuelle Ausgabe.
+Der Wassernapf oder Trinkbrunnen sollte **ruhig, gut erreichbar und deutlich von der Katzentoilette getrennt** stehen. Viele Katzen trinken außerdem lieber, wenn Wasser und Futter nicht direkt nebeneinander stehen.
 
-## Die häufigsten Ursachen
+Für eine einzelne Katze sind mehrere Wasserstellen sinnvoll. In einem Mehrkatzenhaushalt sollten sie räumlich getrennt sein, damit kein Tier alle Zugänge kontrollieren kann.
 
-- Kroketten liegen außerhalb der freigegebenen Größe.
-- Sehr unterschiedliche Formen verkeilen sich.
-- Feuchtigkeit lässt Futter verklumpen.
-- Fett, Staub und Bruchstücke bremsen den Rotor.
-- Der Napf ist überfüllt und staut den Auslass zurück.
-- Ein Sensor ist verdeckt oder verschmutzt.
-- Netzteil, Batterie oder Motor liefern keine sichere Funktion.
+Ein Trinkbrunnen braucht zusätzlich einen ebenen Untergrund, eine sichere Stromversorgung und genug Platz für die vollständige Reinigung. Ob ein Brunnen überhaupt zur Katze passt, erklären wir im Ratgeber [Ist ein Trinkbrunnen für Katzen sinnvoll?](/trinkbrunnen-fuer-katzen-sinnvoll/).
 
-## Sichere Reihenfolge
+## Das Wichtigste in Kürze
 
-1. Prüfen Sie, ob das Tier seine Mahlzeit erhalten hat, und füttern Sie bei Bedarf kontrolliert von Hand.
-2. Schalten Sie das Gerät aus, ziehen Sie den Stecker und entfernen Sie Batterien nach Anleitung.
-3. Leeren Sie den Vorratsbehälter.
-4. Entfernen Sie lose Kroketten mit einer trockenen Bürste.
-5. Reinigen und trocknen Sie freigegebene Bauteile.
-6. Setzen Sie alles exakt nach Anleitung zusammen.
-7. Füllen Sie eine kleine Menge geeigneten Futters ein.
-8. Führen Sie mehrere manuelle Testausgaben durch.
+- Wasser nicht direkt neben die Katzentoilette stellen.
+- Etwas Abstand zum Futter kann die Akzeptanz erhöhen.
+- Ruhige Plätze sind meist besser als Durchgänge oder laute Räume.
+- Mehrere Wasserstellen schaffen Wahlmöglichkeiten.
+- In Mehrkatzenhaushalten müssen die Stellen räumlich getrennt sein.
+- Senioren brauchen leicht erreichbare, stabile Gefäße.
+- Trinkbrunnen sollten nie die einzige Wasserquelle sein.
 
-Öffnen Sie kein versiegeltes Motorgehäuse und verwenden Sie keine Werkzeuge im laufenden Gerät. Wiederkehrende Blockaden sind ein Grund für Support oder Austausch.
+## Der beste Standort für Katzenwasser
 
-## So beugen Sie Blockaden vor
+Ein guter Standort erfüllt vier Bedingungen:
 
-Vergleichen Sie Krokettengröße und -form mit der Herstellerfreigabe. Lagern Sie Futter kühl und trocken, mischen Sie nicht unkontrolliert alte und neue Chargen und reinigen Sie Futterweg sowie Rotor regelmäßig. Testen Sie nach jedem Nachfüllen eine Ausgabe.
+1. Die Katze kann ihn leicht erreichen.
+2. Sie fühlt sich dort nicht eingeengt.
+3. Es gibt keinen starken Lärm oder Durchgangsverkehr.
+4. Wasser bleibt sauber und kühl.
+
+Geeignet sind zum Beispiel:
+
+- eine ruhige Ecke im Wohnzimmer
+- ein breiter Flur ohne ständigen Durchgang
+- ein Platz im Schlafzimmer
+- eine leicht zugängliche Stelle in einem zweiten Raum
+- eine erhöhte, stabile Fläche für ältere Katzen
+
+Weniger geeignet sind:
+
+- direkt neben der Katzentoilette
+- direkt neben Waschmaschine oder Trockner
+- in praller Sonne
+- unmittelbar an Heizkörpern
+- in engen Nischen ohne Ausweichmöglichkeit
+- direkt hinter Türen
+- an Stellen, die andere Tiere blockieren können
+
+## Warum Abstand zum Futter sinnvoll sein kann
+
+Viele Katzen trinken bereitwilliger, wenn das Wasser nicht direkt neben dem Futternapf steht.
+
+Dafür gibt es keine Regel, die für jede Katze gilt. Manche Tiere trinken problemlos am kombinierten Futterplatz. Andere ignorieren das Wasser dort fast vollständig und nutzen lieber einen separaten Napf im Flur oder Schlafzimmer.
+
+Praktisch bedeutet das:
+
+- Lass den bisherigen Napf stehen.
+- Stelle zusätzlich einen zweiten Napf in einem anderen Raum auf.
+- Beobachte über mehrere Tage, welcher Standort häufiger genutzt wird.
+- Behalte die besser angenommene Lösung bei.
+
+Es geht nicht darum, einen vermeintlich natürlichen Abstand exakt nachzubilden. Entscheidend ist, was deine Katze tatsächlich nutzt.
+
+## Warum Wasser nicht neben die Katzentoilette gehört
+
+Wasser sollte klar von der Toilette getrennt stehen.
+
+Mögliche Probleme in unmittelbarer Nähe sind:
+
+- Gerüche
+- herumliegende Streu
+- Staub
+- ein allgemein unruhiger oder unangenehmer Bereich
+- weniger Bereitschaft, dort länger zu trinken
+
+Eine feste Mindestentfernung gibt es nicht. In einer kleinen Wohnung kann ein anderer Bereich desselben Raumes ausreichen. Besser ist jedoch eine räumlich deutlich getrennte Stelle.
+
+## Wie viele Wasserstellen sind sinnvoll?
+
+Für eine einzelne Katze sind **mindestens zwei Wasserstellen** eine gute praktische Lösung.
+
+Das hat mehrere Vorteile:
+
+- Die Katze kann wählen.
+- Ein Napf bleibt verfügbar, wenn der andere verschmutzt ist.
+- Unterschiedliche Räume werden abgedeckt.
+- Der Zugang bleibt auch bei geschlossenen Türen erhalten.
+- Vorlieben werden leichter erkennbar.
+
+Mehr bedeutet nicht automatisch besser. Fünf Näpfe nebeneinander sind funktional nur eine einzige Ressource.
+
+## Wasserstellen im Mehrkatzenhaushalt
+
+Bei mehreren Katzen ist die Verteilung wichtiger als die bloße Anzahl.
+
+Ein dominantes Tier kann einen zentralen Wasserplatz kontrollieren, ohne offen aggressiv zu wirken. Schon die bloße Anwesenheit im Durchgang kann eine unsichere Katze fernhalten.
+
+Sinnvoll sind daher:
+
+- Wasserstellen in verschiedenen Räumen
+- mehrere Wege zu den Näpfen
+- keine Sackgassen
+- kein Platz direkt neben Futter- oder Schlafplätzen anderer Tiere
+- mindestens eine ruhige Ausweichstelle
+
+Ein großer Trinkbrunnen ersetzt mehrere getrennte Wasserquellen nicht. Auch wenn drei Katzen denselben Brunnen nutzen, sollte zusätzlich mindestens ein normaler Napf verfügbar sein.
+
+## Wo sollte ein Trinkbrunnen stehen?
+
+Ein Trinkbrunnen braucht etwas mehr Planung als ein Napf.
+
+Der Standort sollte:
+
+- eben und standsicher sein
+- leicht zu reinigen sein
+- nicht direkt an einer Wand vibrieren
+- genug Abstand zu Futter und Toilette haben
+- vor direkter Sonne geschützt sein
+- keine Stolperstelle bilden
+- eine sichere Kabelverlegung erlauben
+
+Ein Modell wie der [PETLIBRO Dockstream](/produkt/petlibro-dockstream/) kann je nach Variante flexibler aufgestellt werden, wenn kein dauerhaftes Kabel benötigt wird. Trotzdem sollte geprüft werden, ob der Platz ruhig, gut erreichbar und leicht zu reinigen ist.
+
+Wer verschiedene Modelle nach Material, Lautstärke und Stromversorgung vergleichen möchte, findet im [Trinkbrunnen-Vergleich](/trinkbrunnen/) die passendere Übersicht.
+
+## Napf oder Brunnen: Standort im Vergleich
+
+| Kriterium | Wassernapf | Trinkbrunnen |
+|---|---|---|
+| Standortwahl | sehr flexibel | Kabel oder Akku beachten |
+| Geräusch | geräuschlos | Pumpengeräusch möglich |
+| Reinigung am Standort | einfach | mehr Platz nötig |
+| Standsicherheit | meist unkompliziert | ebener Untergrund wichtig |
+| Mobilität | leicht umzustellen | je nach Modell eingeschränkt |
+| zusätzliche Wasserquelle nötig | sinnvoll | besonders wichtig |
+
+Ein Trinkbrunnen sollte nie die einzige Wasserquelle sein. Bei Stromausfall, leerem Akku oder Pumpenfehler muss weiterhin Wasser verfügbar bleiben.
+
+## Welche Gefäßform passt zum Standort?
+
+Nicht nur der Standort, auch Form und Material beeinflussen die Nutzung.
+
+### Breite, flache Näpfe
+
+Viele Katzen mögen breite Gefäße, bei denen die Schnurrhaare nicht ständig den Rand berühren.
+
+### Edelstahl
+
+Edelstahl ist robust, leicht zu reinigen und meist unempfindlich gegen Gerüche.
+
+### Keramik
+
+Glasierte Keramik steht stabil und wirkt hochwertig. Beschädigte Glasur sollte jedoch ersetzt werden.
+
+### Glas
+
+Glas ist geschmacksneutral und gut zu reinigen, kann aber leichter zerbrechen.
+
+### Kunststoff
+
+Kunststoff ist leicht und günstig. Kratzer können jedoch schwerer vollständig sauber gehalten werden.
+
+## Wasserstellen für Senioren und eingeschränkte Katzen
+
+Ältere Katzen oder Tiere mit Arthrose brauchen kurze, einfache Wege.
+
+Hilfreich sind:
+
+- Wasser auf derselben Etage wie Schlafplätze
+- keine hohen Sprünge
+- rutschfeste Unterlagen
+- breite, stabile Näpfe
+- bei Bedarf leicht erhöhte Gefäße
+- mehrere kleine Stationen statt eines weit entfernten Hauptplatzes
+
+Eine Erhöhung sollte nur so hoch sein, dass die Katze bequem trinken kann. Wackelige Gestelle oder schmale Ablagen sind ungeeignet.
+
+## Wasserstellen bei Kitten
+
+Kitten brauchen flache und standsichere Gefäße.
+
+Achte darauf, dass:
+
+- der Rand nicht zu hoch ist
+- der Napf nicht leicht kippt
+- keine tiefen offenen Behälter verwendet werden
+- Kabel eines Trinkbrunnens gesichert sind
+- das Wasser jederzeit erreichbar bleibt
+
+Ein großer Brunnen kann für ein kleines Kitten zunächst einschüchternd wirken. Ein normaler, flacher Napf sollte parallel bestehen bleiben.
+
+## Wasser im Sommer richtig platzieren
+
+Bei Wärme sollte Wasser:
+
+- nicht in direkter Sonne stehen
+- nicht neben Heizquellen platziert sein
+- häufiger erneuert werden
+- an mehreren kühlen Orten verfügbar sein
+
+Ein großer Tank wirkt praktisch, darf aber nicht dazu führen, dass Wasser tagelang unverändert stehen bleibt.
+
+## So findest du den bevorzugten Standort
+
+Ein einfacher Test über sieben Tage hilft mehr als Vermutungen.
+
+### Tag 1 bis 3
+
+Stelle zwei identische Näpfe auf:
+
+- einen am bisherigen Platz
+- einen an einem ruhigen, getrennten Standort
+
+### Tag 4 bis 7
+
+Tausche die Standorte der Näpfe, aber nicht die Gefäße.
+
+So erkennst du besser, ob die Katze den Standort oder das Gefäß bevorzugt.
+
+Beobachte:
+
+- wie oft sie dort trinkt
+- wie entspannt sie wirkt
+- ob sie sich umschaut oder schnell wieder geht
+- ob andere Tiere den Zugang blockieren
+- ob Wasser verschüttet wird
+
+Der Wasserstand allein ist kein perfekter Messwert. Verdunstung, Planschen und mehrere Tiere verfälschen ihn.
+
+## Häufige Fehler
+
+| Fehler | Warum problematisch | Bessere Lösung |
+|---|---|---|
+| Wasser direkt neben die Toilette stellen | Geruch, Streu und Unruhe können stören | räumlich trennen |
+| alle Näpfe nebeneinander aufstellen | es entsteht nur eine Ressource | auf mehrere Räume verteilen |
+| Brunnen als einzige Quelle nutzen | Technik kann ausfallen | zusätzlichen Napf anbieten |
+| Platz im Durchgang wählen | Katze wird gestört | ruhigen Standort suchen |
+| Wasser in die Sonne stellen | es erwärmt sich schneller | schattigen Platz wählen |
+| Zugang durch Möbel blockieren | unsichere Katze meidet die Stelle | freien An- und Abgang schaffen |
+| Standort nie testen | Vorlieben bleiben unentdeckt | mehrere Positionen vergleichen |
+
+## Praktische Standort-Empfehlungen nach Wohnsituation
+
+| Wohnsituation | Sinnvolle Lösung |
+|---|---|
+| kleine Wohnung | zwei klar getrennte Plätze in verschiedenen Bereichen |
+| Haus mit mehreren Etagen | mindestens eine Wasserstelle pro häufig genutzter Etage |
+| Mehrkatzenhaushalt | mehrere Räume und freie Fluchtwege |
+| Katze mit Arthrose | kurze Wege, stabile und leicht erhöhte Näpfe |
+| Trinkbrunnen mit Kabel | ruhiger Platz nahe Steckdose, Kabel sichern |
+| kabelloser Brunnen | frei wählbarer Standort, Akku regelmäßig prüfen |
+
+## Woran erkennst du einen guten Standort?
+
+Ein Standort funktioniert, wenn die Katze:
+
+- freiwillig und regelmäßig dorthin geht
+- entspannt trinkt
+- nicht ständig unterbrochen wird
+- nicht von anderen Tieren blockiert wird
+- nicht erst nach Alternativen suchen muss
+
+Wichtig ist das individuelle Muster. Eine Katze kann den Napf im Schlafzimmer bevorzugen, eine andere den Brunnen im Flur.
+
+## Wann der Standort nicht das eigentliche Problem ist
+
+Ein schlechter Standort kann dazu führen, dass eine Katze weniger trinkt. Plötzliche und deutliche Veränderungen sollten aber nicht allein mit Umstellen erklärt werden.
+
+Tierärztlich abklären solltest du es, wenn deine Katze:
+
+- plötzlich sehr viel trinkt
+- kaum noch trinkt
+- häufiger uriniert
+- Gewicht verliert
+- schlecht frisst
+- erbricht
+- schwach wirkt
+
+Wie viel Wasser eine Katze insgesamt benötigt und wie Nassfutter mitzählt, erklären wir im Ratgeber [Wie viel Wasser braucht eine Katze am Tag?](/wie-viel-wasser-braucht-eine-katze/).
+
+## Fazit
+
+Der beste Standort für Katzenwasser ist **ruhig, gut erreichbar, sauber und von Katzentoilette sowie möglichst auch vom Futter getrennt**.
+
+Mehrere räumlich getrennte Wasserstellen sind meist sinnvoller als ein einzelner großer Napf oder Brunnen. Besonders in Mehrkatzenhaushalten verhindert das, dass eine Katze den Zugang kontrolliert.
+
+Ein Trinkbrunnen kann eine gute Ergänzung sein, wenn die Katze bewegtes Wasser bevorzugt. Er sollte aber nie die einzige Wasserquelle sein und muss am gewählten Standort vollständig gereinigt werden können.
 
 ## Quellen
 
-- [PetSafe – Cleaning an Automatic Pet Feeder](https://support.petsafe.net/articles/how-to-clean-your-healthy-pet-simply-feed-meal-automatic-pet-feeder/)
-- [PETLIBRO – Troubleshooting Food Not Dispensing](https://designlibro.zendesk.com/hc/en-us/articles/43684124997145-Troubleshooting-the-Issue-of-Food-Not-Dispensing-As-Scheduled-on-Easy-Feed-Automatic-Feeder-PLAF003-AF003-PLAF004-AF004)
-- [FDA – Proper Storage of Pet Food](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
-
-## Passende Produktempfehlung
-
-Der [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/) besitzt eine automatische Entblockungsfunktion. Sie reduziert einzelne Störungen, ersetzt aber weder passendes Futter noch Reinigung und regelmäßige Testausgaben.
+- [Cats Protection: Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking)
+- [International Cat Care: Encouraging your cat to drink](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf)
+- [Cornell Feline Health Center: Hydration](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration)
