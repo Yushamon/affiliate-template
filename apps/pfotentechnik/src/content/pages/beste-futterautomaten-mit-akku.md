@@ -8,6 +8,13 @@ seoDescription: "Die besten Futterautomaten mit Akku oder Batterie-Backup im Ver
 
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "Futterautomaten mit Akku"
+    - "Modelle mit Akku"
+    - "integriertem Akku"
+  contexts:
+    - "futterautomaten"
 
 project: "pfotentechnik"
 

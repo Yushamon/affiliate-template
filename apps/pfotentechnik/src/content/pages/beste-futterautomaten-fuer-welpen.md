@@ -6,6 +6,13 @@ description: "Welche automatischen Futterautomaten eignen sich für Welpen? Unse
 seoDescription: "Die besten Futterautomaten für Welpen im Vergleich. Erfahre, welche Modelle sich für regelmäßige kleine Mahlzeiten besonders eignen."
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "Welpe"
+    - "Welpen"
+  contexts:
+    - "futterautomaten"
+  priority: "high"
 project: "pfotentechnik"
 tags:
   - futterautomat

@@ -8,6 +8,13 @@ seoDescription: "Die besten Futterautomaten für Mehrtierhaushalte. Empfehlungen
 
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "Mehrtierhaushalt"
+    - "Mehrtierhaushalte"
+    - "mehrere Tiere"
+  contexts:
+    - "futterautomaten"
 
 project: "pfotentechnik"
 

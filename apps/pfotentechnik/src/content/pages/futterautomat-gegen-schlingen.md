@@ -7,6 +7,13 @@ seoDescription: "Futterautomat gegen Schlingen im Vergleich. Erfahre, welche Mod
 
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "gegen Schlingen"
+    - "Futterautomat gegen Schlingen"
+    - "Schlingverhalten"
+  contexts:
+    - "futterautomaten"
 
 project: "pfotentechnik"
 

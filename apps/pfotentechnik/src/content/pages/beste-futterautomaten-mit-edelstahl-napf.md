@@ -8,6 +8,13 @@ seoDescription: "Die besten Futterautomaten mit Edelstahlnapf. Empfehlungen für
 
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "Edelstahlnapf"
+    - "Edelstahl-Napf"
+    - "Futterautomaten mit Edelstahlnapf"
+  contexts:
+    - "futterautomaten"
 
 project: "pfotentechnik"
 

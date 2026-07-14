@@ -22,6 +22,8 @@ export interface LinkEngineOptions {
 
   sourceContext?: string;
 
+  sourceContexts?: string[];
+
 }
 
 const priorityWeight: Record<LinkPriority, number> = {
@@ -41,21 +43,45 @@ const normalizeContext = (value?: string) =>
   value?.trim().toLowerCase();
 const matchesSourceContext = (
   definition: InternalLinkDefinition,
-  sourceContext?: string
+  sourceContext?: string,
+  sourceContexts: string[] = []
 ) => {
   if (!definition.contexts || definition.contexts.length === 0) {
     return true;
   }
 
-  const normalizedSourceContext = normalizeContext(sourceContext);
-  if (!normalizedSourceContext) {
+  const normalizedSourceContexts = [sourceContext, ...sourceContexts]
+    .map(normalizeContext)
+    .filter((context): context is string => Boolean(context));
+
+  if (normalizedSourceContexts.length === 0) {
     return false;
   }
 
   return definition.contexts.some(
-    (context) =>
-      normalizeContext(context) === normalizedSourceContext
+    (context) => {
+      const normalizedContext = normalizeContext(context);
+
+      return normalizedContext
+        ? normalizedSourceContexts.includes(normalizedContext)
+        : false;
+    }
   );
+};
+
+const normalizePath = (path?: string) => {
+  if (!path) {
+    return "";
+  }
+
+  const normalized = path.split("#")[0].split("?")[0];
+  const withLeadingSlash = normalized.startsWith("/")
+    ? normalized
+    : `/${normalized}`;
+
+  return withLeadingSlash.endsWith("/")
+    ? withLeadingSlash
+    : `${withLeadingSlash}/`;
 };
 
 const getKeywordPattern = (keyword: string) =>
@@ -68,7 +94,18 @@ export const findInternalLinkMatches = (
 ): LinkMatch[] => {
   const matches: LinkMatch[] = [];
   for (const definition of definitions) {
-    if (!matchesSourceContext(definition, options.sourceContext)) {
+    if (
+      normalizePath(options.sourcePath) &&
+      normalizePath(options.sourcePath) === normalizePath(definition.href)
+    ) {
+      continue;
+    }
+
+    if (!matchesSourceContext(
+      definition,
+      options.sourceContext,
+      options.sourceContexts
+    )) {
       continue;
     }
 

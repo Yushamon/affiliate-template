@@ -6,6 +6,13 @@ description: "Welche Futterautomaten eignen sich besonders für kleine Hunde? Un
 seoDescription: "Die besten Futterautomaten für kleine Hunde im Vergleich. Erfahre, welche Modelle sich für kleine Portionen und feste Fütterungszeiten besonders eignen."
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "kleine Hunde"
+    - "kleinen Hund"
+    - "kleiner Hund"
+  contexts:
+    - "futterautomaten"
 project: "pfotentechnik"
 
 tags:

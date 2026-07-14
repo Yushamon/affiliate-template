@@ -152,6 +152,24 @@ export const createPageContentSchema = (image: ImageFunction) =>
     categoryPath:
       z.string().optional(),
 
+    linkContext:
+      z.string().optional(),
+
+    linking: z
+      .object({
+        keywords: z.array(z.string()).min(1),
+        contexts: z.array(z.string()).default([]),
+        priority: z
+          .enum(["low", "normal", "high"])
+          .default("normal"),
+        maxOccurrences: z
+          .number()
+          .int()
+          .positive()
+          .default(1)
+      })
+      .optional(),
+
     hubPriority:
       z.number().optional(),
 

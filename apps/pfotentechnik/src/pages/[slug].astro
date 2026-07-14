@@ -10,6 +10,7 @@ import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import HealthBridge from "../components/HealthBridge.astro";
 import { projectConfig, siteMeta } from "../project.config";
@@ -21,6 +22,7 @@ import {
   getPageBreadcrumbs,
   getRelatedContent
 } from "@app/domain/content";
+import { getPageInternalLinkDefinitions } from "../domain/content/internalLinks";
 import defaultHero from "../assets/images/project/pfotentechnik/hero.webp";
 import categoryImage from "../assets/images/project/pfotentechnik/category.webp";
 import comparisonImage from "../assets/images/project/pfotentechnik/comparison.webp";
@@ -43,6 +45,12 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content, headings } = await render(page);
+const pages = await getCollection("pages");
+const internalLinkDefinitions = getPageInternalLinkDefinitions(pages);
+const sourceContexts = Array.from(new Set([
+  page.data.linkContext,
+  page.data.category
+].filter((context): context is string => Boolean(context))));
 const breadcrumbs = getPageBreadcrumbs(page);
 const products = await getCollection("products");
 const productBySlug = new Map(products.map((product) => [product.data.slug, product]));
@@ -382,7 +390,14 @@ const relatedItems = relatedEntries.map((entry) => ({
       )
     }
 
-  <Content />
+    <AutoLinkContent
+      definitions={internalLinkDefinitions}
+      sourcePath={`/${page.data.slug}/`}
+      sourceGroup="knowledge"
+      sourceContexts={sourceContexts}
+    >
+      <Content />
+    </AutoLinkContent>
 
     {
       decisionRule?.sources && decisionRule.sources.length > 0 && (

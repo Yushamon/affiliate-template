@@ -7,6 +7,14 @@ seoDescription: "Die besten Futterautomaten für Berufstätige im Vergleich. Fin
 
 category: "vergleich"
 categoryLabel: "Entscheidungshilfe"
+linking:
+  keywords:
+    - "Berufstätige"
+    - "berufstätige Hundehalter"
+    - "berufstätige Tierhalter"
+  contexts:
+    - "futterautomaten"
+  priority: "high"
 
 project: "pfotentechnik"
 

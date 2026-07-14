@@ -16,6 +16,8 @@ interface Props {
 
   sourceContext?: string;
 
+  sourceContexts?: string[];
+
   maxLinksPerPage?: number;
 
   ignoredTags?: string[];
@@ -31,6 +33,8 @@ const {
   sourceGroup,
 
   sourceContext,
+
+  sourceContexts = [],
 
   maxLinksPerPage = 12,
 
@@ -54,6 +58,8 @@ const linkedHtml = createInternalLinkedHtml(
 
     sourceContext,
 
+    sourceContexts,
+
     maxLinksPerPage,
 
     ignoredTags
@@ -64,4 +70,4 @@ const linkedHtml = createInternalLinkedHtml(
 
 ---
 
-<div class="auto-link-content" set:html={linkedHtml}></div>
+<Fragment set:html={linkedHtml} />
