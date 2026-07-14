@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from "astro:content";
+import AffiliateLayout from "../layouts/AffiliateLayout.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+import FAQ from "../components/FAQ.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+
+  return pages.map((page) => ({
+    params: {
+      slug: page.data.slug,
+    },
+    props: {
+      page,
+    },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content, headings } = await render(page);
+
+const allPages = await getCollection("pages");
+
+const relatedPages = allPages
+  .filter((candidate) => {
+    if (candidate.data.slug === page.data.slug) {
+      return false;
+    }
+
+    const commonTags = candidate.data.tags.filter((tag) =>
+      page.data.tags.includes(tag),
+    );
+
+    return (
+      candidate.data.category === page.data.category || commonTags.length > 0
+    );
+  })
+  .sort((a, b) => {
+    const aMatches = a.data.tags.filter((tag) =>
+      page.data.tags.includes(tag),
+    ).length;
+
+    const bMatches = b.data.tags.filter((tag) =>
+      page.data.tags.includes(tag),
+    ).length;
+
+    return bMatches - aMatches;
+  })
+  .slice(0, 3);
+---
+
+<AffiliateLayout
+  title={page.data.title}
+  description={page.data.description}
+  canonical={`/${page.data.slug}`}
+  ogImage={page.data.ogImage || page.data.heroImage}
+  faq={page.data.faq}
+>
+  {
+    page.data.heroImage && (
+      <img
+        class="article-hero-image"
+        src={page.data.heroImage}
+        alt={page.data.title}
+      />
+    )
+  }
+
+  <article class="article">
+    <TableOfContents headings={headings} />
+
+    <Content />
+
+    <FAQ items={page.data.faq} />
+  </article>
+
+  <RelatedArticles pages={relatedPages} />
+</AffiliateLayout>
