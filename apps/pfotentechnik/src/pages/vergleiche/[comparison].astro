@@ -214,13 +214,13 @@ const relatedItems = relatedEntries.map((related) => ({
     layout="constrained"
   />
 )}
-        <div>
-          <span>Top-Empfehlung</span>
-          <h2 id="comparison-winner-title">{winnerItem.label ?? winnerItem.slug}</h2>
-          <p>{winnerItem.recommendation ?? comparison.recommendation.text}</p>
-          {winnerRating && <strong>{winnerRating.toFixed(1)} / 5</strong>}
-          <a href={winnerHref}>Ausführlichen Test lesen</a>
-        </div>
+        <div class="comparison-winner-content">
+  <span>Top-Empfehlung</span>
+  <h2 id="comparison-winner-title">{winnerItem.label ?? winnerItem.slug}</h2>
+  <p>{winnerItem.recommendation ?? comparison.recommendation.text}</p>
+  {winnerRating && <strong>{winnerRating.toFixed(1)} / 5</strong>}
+  <a href={winnerHref}>Ausführlichen Test lesen</a>
+</div>
       </section>
     )}
 
@@ -419,16 +419,52 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-table small { display: block; margin-top: .35rem; color: #647579; font-weight: 400; line-height: 1.4; }
   .comparison-table tbody tr:last-child th, .comparison-table tbody tr:last-child td { border-bottom: 0; }
   .comparison-result { padding: 2rem; border-radius: 1.2rem; background: rgba(24, 116, 59, .08); }
-  .comparison-winner { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: clamp(1.4rem, 4vw, 2.5rem); border: 1px solid rgba(24, 116, 59, .24); border-radius: 1.5rem; background: linear-gradient(145deg, #fff, #eff9f1); box-shadow: 0 18px 48px rgba(20, 32, 26, .08); }
-  :global(.comparison-winner-image) {
+ .comparison-winner {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid rgba(24, 116, 59, .24);
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, #fff, #eff9f1);
+  box-shadow: 0 18px 48px rgba(20, 32, 26, .08);
+}
+
+:global(.comparison-winner-image) {
   display: block;
   width: 100%;
+  max-width: 320px;
   height: auto;
   aspect-ratio: 4 / 3;
+  margin: 0 auto;
   border-radius: 1.1rem;
   object-fit: contain;
   object-position: center;
   background: #fff;
+}
+
+.comparison-winner-content {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comparison-winner-content > span {
+  margin-bottom: .75rem;
+}
+
+.comparison-winner-content h2 {
+  margin: 0 0 1rem;
+}
+
+.comparison-winner-content p {
+  margin: 0 0 1.25rem;
+}
+
+.comparison-winner-content strong {
+  margin: 0 0 1.25rem;
 }
   .comparison-winner span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
   .comparison-winner h2 { margin: .55rem 0 .8rem; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.04em; }
@@ -461,7 +497,39 @@ const relatedItems = relatedEntries.map((related) => ({
     .comparison-items, .comparison-winner, .comparison-difference-grid { grid-template-columns: minmax(0, 1fr); }
     .comparison-items a, .comparison-difference-card { width: 100%; min-width: 0; padding: 1.1rem; }
     .comparison-items h3, .comparison-difference-card h3 { overflow-wrap: anywhere; }
-    .comparison-winner { padding: 1.1rem; border-radius: 1.2rem; }
+    .comparison-winner {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.1rem;
+  border-radius: 1.2rem;
+}
+
+:global(.comparison-winner-image) {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.comparison-winner-content {
+  width: 100%;
+}
+
+.comparison-winner-content > span {
+  margin-bottom: .65rem;
+}
+
+.comparison-winner-content h2 {
+  margin-bottom: 1rem;
+}
+
+.comparison-winner-content p {
+  margin-bottom: 1.2rem;
+}
     .comparison-winner h2 { overflow-wrap: anywhere; font-size: 1.85rem; }
     .comparison-section-intro h2 { overflow-wrap: anywhere; font-size: 2rem; }
     .comparison-table { min-width: 680px; }
