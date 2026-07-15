@@ -45,7 +45,71 @@
   font-size: 17px;
   font-weight: 900;
 }
+.toc {
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 0.875rem;
+  background: var(--surface-color, #fff);
+}
 
+.toc summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.125rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.toc summary::after {
+  content: "›";
+  font-size: 1.4rem;
+  line-height: 1;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.toc[open] summary::after {
+  transform: rotate(-90deg);
+}
+
+.toc summary span {
+  color: var(--text-muted, #6b7280);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.toc ol {
+  margin: 0;
+  padding: 0 1.125rem 1.125rem 2.5rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.toc li {
+  break-inside: avoid;
+  margin: 0.35rem 0;
+}
+
+.toc a {
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .toc ol {
+    columns: 1;
+  }
+}
 .toc ol,
 .toc-box ul {
   margin: 0;

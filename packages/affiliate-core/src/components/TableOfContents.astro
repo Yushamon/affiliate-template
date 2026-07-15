@@ -6,18 +6,24 @@ interface Heading {
 }
 
 interface Props {
-  headings: Heading[];
+  headings?: Heading[];
 }
 
-const { headings } = Astro.props;
+const headings = Array.isArray(Astro.props.headings)
+  ? Astro.props.headings
+  : [];
 
 const tocHeadings = headings.filter((heading) => heading.depth === 2);
+const initiallyOpen = tocHeadings.length <= 6;
 ---
 
 {
   tocHeadings.length > 0 && (
-    <nav class="toc">
-      <strong>Inhaltsverzeichnis</strong>
+    <details class="toc" open={initiallyOpen}>
+      <summary>
+        <strong>Inhaltsverzeichnis</strong>
+        <span>{tocHeadings.length} Abschnitte</span>
+      </summary>
 
       <ol>
         {tocHeadings.map((heading) => (
@@ -26,6 +32,6 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
           </li>
         ))}
       </ol>
-    </nav>
+    </details>
   )
 }
