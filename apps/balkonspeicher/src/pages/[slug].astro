@@ -184,10 +184,21 @@ const comparisonProducts = (page.data.comparisonProducts ?? [])
   updatedAt={updatedAt}
   categoryLabel={page.data.categoryLabel}
 >
-  <Breadcrumbs
-    categoryLabel={page.data.categoryLabel}
-    title={page.data.title}
-  />
+<Breadcrumbs
+  items={[
+    {
+      label: "Startseite",
+      href: "/"
+    },
+    {
+      label: page.data.categoryLabel,
+      href: page.data.categoryPath ?? "/wissen/"
+    },
+    {
+      label: page.data.title
+    }
+  ]}
+/>
 
   <section class="article-header">
     <div class="article-category">

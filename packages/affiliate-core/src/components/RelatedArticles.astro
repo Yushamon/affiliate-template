@@ -14,7 +14,7 @@ interface Props {
   items: RelatedItem[];
 }
 
-const { items } = Astro.props as Props;
+const { items = [] } = Astro.props as Partial<Props>;
 ---
 
 {items.length > 0 && (

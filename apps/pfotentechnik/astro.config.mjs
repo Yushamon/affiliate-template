@@ -52,6 +52,12 @@ export default defineConfig({
   site: siteUrl,
   output: "static",
   outDir: "./dist",
+
+  image: {
+
+    layout: "constrained"
+
+  },
   integrations: [
     sitemap({
       filter: (page) =>

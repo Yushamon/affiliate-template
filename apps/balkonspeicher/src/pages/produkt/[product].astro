@@ -46,8 +46,10 @@ const manufacturerProducts = Object.entries(products).filter(
   ogImage={productHeroImage.src}
 >
   <main class="product-detail">
-    <ProductReview productKey={productKey as ProductKey} />
-
+   <ProductReview
+  product={product}
+  heroImage={productHeroImage}
+/>
     <DecisionBox
       currentProductKey={productKey as ProductKey}
       title="Passt dieser Balkonspeicher zu dir?"

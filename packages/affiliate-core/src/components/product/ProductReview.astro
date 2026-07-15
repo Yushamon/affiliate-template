@@ -54,41 +54,43 @@ type ProductReviewData = {
 
 interface Props {
   product: ProductReviewData;
+  heroImage?: {
+    src: string;
+    fallbacks?: string[];
+  };
   alternativeRecommendations?: AlternativeRecommendation[];
   relatedContent?: unknown[];
 }
 
 const {
   product,
+  heroImage,
   alternativeRecommendations = []
 } = Astro.props as Props;
 
-const productHeroImage =
-  product.images.hero;
+const productHeroImage = product.images?.hero ?? null;
+const legacyHeroSrc = heroImage?.src ?? product.image ?? "";
+const galleryImages = product.images?.gallery ?? [];
 
-const galleryImages = [
-  productHeroImage,
-  ...product.images.gallery
-];
+const optimizedGallery = productHeroImage
+  ? await Promise.all(
+      [productHeroImage, ...galleryImages].map(async (image) => {
+        const main = await getImage({
+          src: image.src,
+          widths: [480, 768, 1024, 1200],
+          sizes: "(max-width: 900px) 100vw, 50vw",
+          quality: "high"
+        });
 
-const optimizedGallery = await Promise.all(
-  galleryImages.map(async (image) => {
-    const main = await getImage({
-      src: image.src,
-      widths: [480, 768, 1024, 1200],
-      sizes: "(max-width: 900px) 100vw, 50vw",
-      quality: "high"
-    });
-
-    return {
-      image,
-      main
-    };
-  })
-);
+        return {
+          image,
+          main
+        };
+      })
+    )
+  : [];
 
 const [optimizedHero, ...optimizedProductGallery] = optimizedGallery;
-
 const score = product.score;
 
 const scoreLabel =
@@ -433,19 +435,31 @@ const stars = (
           class="product-review-hero-image"
           data-product-gallery
         >
-          <div class="product-review-gallery-main">
-            <img
-              src={optimizedHero.main.src}
-              srcset={optimizedHero.main.srcSet.attribute}
-              sizes="(max-width: 900px) 100vw, 50vw"
-              width={productHeroImage.src.width}
-              height={productHeroImage.src.height}
-              alt={productHeroImage.alt || product.name}
-              loading="eager"
-              decoding="sync"
-              fetchpriority="high"
-            />
-          </div>
+      <div class="product-review-gallery-main">
+  {
+    optimizedHero && productHeroImage ? (
+      <img
+        src={optimizedHero.main.src}
+        srcset={optimizedHero.main.srcSet.attribute}
+        sizes="(max-width: 900px) 100vw, 50vw"
+        width={productHeroImage.src.width}
+        height={productHeroImage.src.height}
+        alt={productHeroImage.alt || product.name}
+        loading="eager"
+        decoding="sync"
+        fetchpriority="high"
+      />
+    ) : (
+      <img
+        src={legacyHeroSrc}
+        alt={product.name}
+        loading="eager"
+        decoding="sync"
+        fetchpriority="high"
+      />
+    )
+  }
+</div>
 
           {
             optimizedProductGallery.length >

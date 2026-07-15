@@ -3,12 +3,13 @@ interface BreadcrumbItem {
   label: string;
   href?: string;
 }
-
 interface Props {
-  items: BreadcrumbItem[];
+  items?: BreadcrumbItem[];
 }
 
-const { items } = Astro.props as Props;
+const items = Array.isArray(Astro.props.items)
+  ? Astro.props.items
+  : [];
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
