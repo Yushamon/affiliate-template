@@ -188,15 +188,17 @@ const relatedItems = relatedEntries.map((related) => ({
 
   <main class="comparison-detail">
     <header class="comparison-hero">
-      {comparison.heroImage && (
-        <OptimizedImage
-  src={comparison.heroImage.src}
-  alt={comparison.heroImage.alt ?? comparison.title}
-  class="comparison-hero-image"
-  layout="full-width"
-  priority
-/>
-      )}
+{comparison.heroImage && (
+  <div class="comparison-hero-media">
+    <OptimizedImage
+      src={comparison.heroImage.src}
+      alt={comparison.heroImage.alt ?? comparison.title}
+      class="comparison-hero-image"
+      layout="full-width"
+      priority
+    />
+  </div>
+)}
       <span>{comparison.icon ?? "↔"} Vergleich</span>
       <h1>{comparison.title}</h1>
       <p>{comparison.description}</p>
@@ -362,32 +364,25 @@ const relatedItems = relatedEntries.map((related) => ({
 <style>
   .comparison-detail { display: grid; width: 100%; min-width: 0; gap: 3.5rem; padding-bottom: 5rem; }
   .comparison-detail > * { min-width: 0; }
-  .comparison-hero { padding: clamp(2rem, 6vw, 5rem); border: 1px solid #dce5e3; border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); text-align: center; }
- .comparison-hero picture {
-  display: block;
+  .comparison-hero-media {
   width: 100%;
+  max-height: 430px;
   margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background: #f8faf9;
 }
 
 :global(.comparison-hero-image) {
-
   display: block;
-
   width: 100%;
-
-  height: auto;
-
-  max-height: 430px;
-
-  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
-
-  border-radius: 1.2rem;
-
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-
   object-position: center;
-
 }
+  .comparison-hero { padding: clamp(2rem, 6vw, 5rem); border: 1px solid #dce5e3; border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); text-align: center; }
   .comparison-hero span, .comparison-result > span, .comparison-items span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
   .comparison-hero h1 { max-width: 18ch; margin: .7rem auto 1rem; overflow-wrap: anywhere; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; letter-spacing: -.05em; }
   .comparison-hero p { max-width: 65ch; margin: 0 auto; color: #647579; line-height: 1.7; }
@@ -517,13 +512,26 @@ const relatedItems = relatedEntries.map((related) => ({
 
   object-fit: contain;
 
-}
-    .comparison-detail { gap: 2.5rem; padding-bottom: 3.5rem; }
-   .comparison-hero {
+}.comparison-hero {
   padding: 1.6rem 1rem;
   border-radius: 1.25rem;
 }
 
+.comparison-hero-media {
+  max-height: none;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+}
+
+:global(.comparison-hero-image) {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+    .comparison-detail { gap: 2.5rem; padding-bottom: 3.5rem; }
+  
 .comparison-hero picture {
   margin-bottom: 1.25rem;
 }
