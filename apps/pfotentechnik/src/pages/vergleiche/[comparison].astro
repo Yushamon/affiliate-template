@@ -205,14 +205,15 @@ const relatedItems = relatedEntries.map((related) => ({
     {winnerItem && (
       <section class="comparison-winner" aria-labelledby="comparison-winner-title">
         {winnerImage && (
-          <OptimizedImage
-            src={winnerImage.src}
-            alt={winnerImage.alt ?? winnerItem.label ?? "Top-Empfehlung"}
-            width={720}
-            height={540}
-            layout="constrained"
-          />
-        )}
+  <OptimizedImage
+    src={winnerImage.src}
+    alt={winnerImage.alt ?? winnerItem.label ?? "Top-Empfehlung"}
+    class="comparison-winner-image"
+    width={720}
+    height={540}
+    layout="constrained"
+  />
+)}
         <div>
           <span>Top-Empfehlung</span>
           <h2 id="comparison-winner-title">{winnerItem.label ?? winnerItem.slug}</h2>
@@ -419,7 +420,16 @@ const relatedItems = relatedEntries.map((related) => ({
   .comparison-table tbody tr:last-child th, .comparison-table tbody tr:last-child td { border-bottom: 0; }
   .comparison-result { padding: 2rem; border-radius: 1.2rem; background: rgba(24, 116, 59, .08); }
   .comparison-winner { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: clamp(1.4rem, 4vw, 2.5rem); border: 1px solid rgba(24, 116, 59, .24); border-radius: 1.5rem; background: linear-gradient(145deg, #fff, #eff9f1); box-shadow: 0 18px 48px rgba(20, 32, 26, .08); }
-  .comparison-winner img { width: 100%; aspect-ratio: 4 / 3; border-radius: 1.1rem; object-fit: contain; background: #fff; }
+  :global(.comparison-winner-image) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 1.1rem;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
   .comparison-winner span { color: #18743b; font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
   .comparison-winner h2 { margin: .55rem 0 .8rem; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.04em; }
   .comparison-winner p { color: #647579; line-height: 1.65; }
@@ -430,9 +440,9 @@ const relatedItems = relatedEntries.map((related) => ({
     :global(.comparison-hero-image) {
   width: 100%;
   height: auto;
-  max-height: none;
+  max-height: 320px;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
     .comparison-detail { gap: 2.5rem; padding-bottom: 3.5rem; }
