@@ -23,10 +23,16 @@ const formatHeadline = (value: string) =>
     .replace(/\bapp-auswertung\b/giu, "App-Auswertung")
     .replace(/\bpremiumanspruch\b/giu, "Premiumanspruch")
     .replace(/\baufstellung\b/giu, "Aufstellung")
+    .replace(/\bkatze\b/giu, "Katze")
+    .replace(/\bhund\b/giu, "Hund")
+    .replace(/\bxiaomi-home-nutzer\b/giu, "Xiaomi-Home-Nutzer")
+    .replace(/\bxiaomi home nutzer\b/giu, "Xiaomi-Home-Nutzer")
+    .replace(/\bxiaomi-home\b/giu, "Xiaomi Home")
     .replace(/\bapp\b/giu, "App")
     .replace(/\buvc\b/giu, "UVC");
 
 const iconType = (alternative: AlternativeRecommendation) => {
+  const headline = alternative.headline.toLocaleLowerCase("de");
   const evidence = [
     alternative.icon,
     alternative.headline,
@@ -37,16 +43,28 @@ const iconType = (alternative: AlternativeRecommendation) => {
     .join(" ")
     .toLocaleLowerCase("de");
 
-  if (/akku|kabellos|cordless|batterie/.test(evidence)) {
+  if (/app-auswertung|app auswertung|analyse|statistik/.test(headline)) {
+    return "chart";
+  }
+
+  if (/premiumanspruch|premium|uvc|hygiene|filter/.test(headline)) {
+    return "premium";
+  }
+
+  if (/xiaomi-home|xiaomi home|smart-home|smart home/.test(headline)) {
+    return "home";
+  }
+
+  if (/katze|hund|tier/.test(headline)) {
+    return "pet";
+  }
+
+  if (/akku|kabellos|cordless|batterie|aufstellung/.test(headline)) {
     return "battery";
   }
 
   if (/app|smart|auswertung|wlan|wifi/.test(evidence)) {
     return "app";
-  }
-
-  if (/premium|uvc|hygiene|filter/.test(evidence)) {
-    return "shield";
   }
 
   if (/schloss|zugang|chip|mikrochip/.test(evidence)) {
@@ -71,6 +89,22 @@ const iconSvg = (type: string) => {
 
   if (type === "lock") {
     return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V7a5 5 0 0 1 10 0v3h1a2 2 0 0 1 2 2v8H4v-8a2 2 0 0 1 2-2h1Zm2 0h6V7a3 3 0 0 0-6 0v3Zm-3 2v6h12v-6H6Zm5 1h2v4h-2v-4Z"/></svg>`;
+  }
+
+  if (type === "chart") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16v18H4V3Zm2 2v14h12V5H6Zm2 9h2v3H8v-3Zm3-4h2v7h-2v-7Zm3-3h2v10h-2V7Z"/></svg>`;
+  }
+
+  if (type === "premium") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.6 5.3 5.9.9-4.3 4.2 1 5.9L12 15.5 6.8 18.3l1-5.9-4.3-4.2 5.9-.9L12 2Zm0 4.5-1.3 2.7-3 .4 2.2 2.1-.5 3 2.6-1.4 2.6 1.4-.5-3 2.2-2.1-3-.4L12 6.5Z"/></svg>`;
+  }
+
+  if (type === "home") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 8h-3v9h-5v-6h-2v6H6v-9H3l9-8Zm0 2.7L7.4 9.8H8V18h1v-6h6v6h1V9.8h.6L12 5.7Z"/></svg>`;
+  }
+
+  if (type === "pet") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 10.2c-1.3 0-2.2-1.2-2.2-2.6S5.9 5 7.2 5s2.2 1.2 2.2 2.6-.9 2.6-2.2 2.6Zm9.6 0c-1.3 0-2.2-1.2-2.2-2.6S15.5 5 16.8 5 19 6.2 19 7.6s-.9 2.6-2.2 2.6ZM12 21c-3.5 0-6.5-2.1-6.5-5.2 0-2.6 2.1-4.1 4-4.1 1.1 0 1.8.4 2.5 1 .7-.6 1.4-1 2.5-1 1.9 0 4 1.5 4 4.1C18.5 18.9 15.5 21 12 21Z"/></svg>`;
   }
 
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v2H7V3Zm-3 4h16v14H4V7Zm2 2v10h12V9H6Zm2 2h8v2H8v-2Zm0 4h5v2H8v-2Z"/></svg>`;
@@ -185,20 +219,30 @@ const iconSvg = (type: string) => {
   }
 
   .alternative-recommendation-image {
-    display: grid;
-    min-height: 14rem;
+    display: block;
+    margin: 14px 14px 0;
+    aspect-ratio: 16 / 10;
+    min-height: 0;
     overflow: hidden;
-    place-items: center;
-    background: linear-gradient(145deg, #f5f7f6, #ffffff);
+    border-radius: 16px;
+    background: #eef3f1;
+  }
+
+  .alternative-recommendation-image :global(picture) {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .alternative-recommendation-image :global(img) {
     display: block;
     width: 100%;
     height: 100%;
-    max-height: 16rem;
-    padding: 1.2rem;
-    object-fit: contain;
+    max-height: none;
+    padding: 0;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
     transition: transform 180ms ease;
   }
 
@@ -387,7 +431,10 @@ const iconSvg = (type: string) => {
     }
 
     .alternative-recommendation-image {
-      min-height: 100%;
+      height: calc(100% - 28px);
+      aspect-ratio: auto;
+      min-height: 14rem;
+      margin-bottom: 14px;
     }
   }
 
@@ -397,7 +444,11 @@ const iconSvg = (type: string) => {
     }
 
     .alternative-recommendation-image {
-      min-height: 13rem;
+      width: auto;
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 16 / 10;
+      margin: 14px 14px 0;
     }
 
     .alternative-recommendation-footer {
