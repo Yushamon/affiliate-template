@@ -156,9 +156,30 @@ const scoreLabel =
           ? "Solide"
           : "Mit Einschränkungen";
 
+const capitalizeFirst = (value: string) => {
+  const trimmed = value.trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  return (
+    trimmed.charAt(0).toLocaleUpperCase("de-DE") +
+    trimmed.slice(1)
+  );
+};
+
 const normalizeList = (items: string[] = []) =>
   items
-    .map((item) => stripLeadingIcon(item).trim())
+    .map((item) =>
+      item
+        .replace(
+          /^\s*(?:[✓✔☑✅✕✖×❌✗✘•\-–—]+\s*)+/u,
+          ""
+        )
+        .trim()
+    )
+    .map(capitalizeFirst)
     .filter(Boolean);
 
 const bestForItems = normalizeList(product.bestFor);
@@ -743,6 +764,7 @@ const displayHighlights = [
   .product-hero-v4__media {
     min-width: 0;
     align-self: start;
+    overflow: hidden;
     background: #edf2ef;
   }
 
@@ -1003,10 +1025,22 @@ const displayHighlights = [
 
   .product-highlights-v4 li,
   .product-icon-list li {
+    position: relative;
     display: grid;
     grid-template-columns: 22px minmax(0, 1fr);
     gap: 11px;
     align-items: start;
+    padding: 0 !important;
+    margin: 0;
+    list-style: none !important;
+  }
+
+  .product-highlights-v4 li::before,
+  .product-highlights-v4 li::after,
+  .product-icon-list li::before,
+  .product-icon-list li::after {
+    content: none !important;
+    display: none !important;
   }
 
   .product-highlights-v4 p {
@@ -1121,8 +1155,13 @@ const displayHighlights = [
     display: grid;
     gap: 10px;
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .product-highlights-v4 ul {
+    padding-left: 0 !important;
+    list-style: none !important;
   }
 
   .product-icon-list li > span:last-child {
@@ -1188,11 +1227,25 @@ const displayHighlights = [
         minmax(0, 0.92fr)
         minmax(0, 1.08fr);
       align-items: start;
+      gap: 16px;
+      overflow: visible;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
     .product-hero-v4__media,
     .product-hero-v4__content {
       align-self: start;
+      border: 1px solid var(--v4-border);
+      border-radius: 24px;
+      background: var(--v4-surface);
+      box-shadow: 0 16px 42px rgb(16 63 54 / 8%);
+    }
+
+    .product-hero-v4__media {
+      overflow: hidden;
     }
 
     .product-hero-v4__image {
