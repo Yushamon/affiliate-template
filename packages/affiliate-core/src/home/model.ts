@@ -51,6 +51,16 @@ export type HomeFaqItem = {
   answer: string;
 };
 
+export type HomeDecisionCard = {
+  href: string;
+  label: string;
+  title: string;
+  text: string;
+  image?: HomeImage;
+  itemCount: number;
+  updatedLabel?: string;
+};
+
 export type HomepageModel = {
   hero: {
     eyebrow: string;
@@ -66,6 +76,7 @@ export type HomepageModel = {
     }>;
   };
   decisionLinks: HomeLink[];
+  decisionComparisons: HomeDecisionCard[];
   categories: HomeCategoryCard[];
   comparisons: HomeEditorialCard[];
   guides: HomeEditorialCard[];

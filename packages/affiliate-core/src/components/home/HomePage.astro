@@ -20,8 +20,8 @@ const { model } = Astro.props as Props;
   <HomeHero hero={model.hero} />
 
   <HomeNavigation
-    mode="decision"
-    links={model.decisionLinks}
+    mode="comparison-decision"
+    decisionCards={model.decisionComparisons}
   />
 
   <HomeSection

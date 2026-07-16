@@ -79,6 +79,38 @@ const sortComparisons = (comparisons: ComparisonEntry[]) =>
     )
   );
 
+
+const decisionComparisonDefinitions = [
+  {
+    slug: "beste-futterautomaten-fuer-katzen",
+    label: "Katzen · Futterautomaten",
+    title: "Beste Futterautomaten für Katzen",
+    fallbackText:
+      "Modelle nach Futterart, Portionierung, App, Zugang und Alltagseignung vergleichen."
+  },
+  {
+    slug: "beste-futterautomaten-fuer-hunde",
+    label: "Hunde · Futterautomaten",
+    title: "Beste Futterautomaten für Hunde",
+    fallbackText:
+      "Kapazität, Napfgröße, Portionierung und Ausfallsicherheit direkt gegenüberstellen."
+  },
+  {
+    slug: "beste-trinkbrunnen-fuer-katzen",
+    label: "Katzen · Trinkbrunnen",
+    title: "Beste Trinkbrunnen für Katzen",
+    fallbackText:
+      "Material, Filter, Reinigung, Lautstärke und Trinkfläche sinnvoll vergleichen."
+  },
+  {
+    slug: "beste-trinkbrunnen-fuer-hunde",
+    label: "Hunde · Trinkbrunnen",
+    title: "Beste Trinkbrunnen für Hunde",
+    fallbackText:
+      "Kapazität, Standfestigkeit, Trinkhöhe und Reinigung für Hunde einordnen."
+  }
+] as const;
+
 const sortPages = (pages: PageEntry[]) =>
   [...pages].sort((a, b) =>
     (b.data.hubPriority ?? 0) -
@@ -237,6 +269,43 @@ export function buildHomepageModel({
     .slice(0, 3)
     .map(({ updatedAt: _updatedAt, ...item }) => item);
 
+
+  const decisionComparisons =
+    decisionComparisonDefinitions
+      .map((definition) => {
+        const entry = sortedComparisons.find(
+          (comparison) =>
+            comparison.data.slug === definition.slug
+        );
+
+        if (!entry) return null;
+
+        return {
+          href: `/vergleiche/${entry.data.slug}/`,
+          label: definition.label,
+          title:
+            entry.data.hub?.title ??
+            definition.title,
+          text:
+            entry.data.hub?.description ??
+            entry.data.description ??
+            definition.fallbackText,
+          image: entry.data.heroImage ?? {
+            src: petTechHeroImage,
+            alt: ""
+          },
+          itemCount: entry.data.items.length,
+          updatedLabel:
+            formatUpdatedAt(entry.data.updatedAt)
+        };
+      })
+      .filter(
+        (
+          item
+        ): item is NonNullable<typeof item> =>
+          Boolean(item)
+      );
+
   return {
     hero: {
       eyebrow: "Herstellerunabhängig recherchiert",
@@ -277,6 +346,7 @@ export function buildHomepageModel({
       ]
     },
     decisionLinks: home.intents.items.slice(0, 6),
+    decisionComparisons,
     categories,
     comparisons: comparisonCards,
     guides: guideCards,
