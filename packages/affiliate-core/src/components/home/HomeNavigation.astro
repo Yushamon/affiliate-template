@@ -19,38 +19,121 @@ const {
   methodologyAction,
   groups = []
 } = Astro.props as Props;
+
+const decisionLinks = links.slice(0, 4);
+
+const getDecisionIcon = (label: string) => {
+  const normalized = label.toLocaleLowerCase("de");
+
+  if (
+    normalized.includes("futter") ||
+    normalized.includes("automat")
+  ) {
+    return "bowl";
+  }
+
+  if (
+    normalized.includes("trink") ||
+    normalized.includes("wasser")
+  ) {
+    return "drop";
+  }
+
+  if (
+    normalized.includes("ratgeber") ||
+    normalized.includes("wissen")
+  ) {
+    return "guide";
+  }
+
+  return "star";
+};
 ---
 
-{mode === "decision" && links.length > 0 && (
-  <nav class="home3-decision" aria-labelledby="home3-decision-title">
-    <div>
+{mode === "decision" && decisionLinks.length > 0 && (
+  <nav
+    class="home3-decision"
+    aria-labelledby="home3-decision-title"
+  >
+    <header class="home3-decision__header">
       <p class="home3-eyebrow">Schnelle Orientierung</p>
       <h2 id="home3-decision-title">Ich suche gerade …</h2>
-    </div>
-    <ul>
-      {links.map((link) => (
-        <li>
-          <a href={link.href}>
-            <span>{link.label}</span>
-            <strong aria-hidden="true">→</strong>
-          </a>
-        </li>
-      ))}
+    </header>
+
+    <ul class="home3-decision__grid">
+      {decisionLinks.map((link) => {
+        const icon = getDecisionIcon(link.label);
+
+        return (
+          <li>
+            <a href={link.href}>
+              <span
+                class:list={[
+                  "home3-decision__icon",
+                  `home3-decision__icon--${icon}`
+                ]}
+                aria-hidden="true"
+              >
+                {icon === "bowl" && (
+                  <svg viewBox="0 0 48 48">
+                    <path d="M9 22h30l-3 12H12L9 22Z" />
+                    <path d="M14 34h20" />
+                    <path d="M17 18c2-3 4-4 7-4s5 1 7 4" />
+                  </svg>
+                )}
+
+                {icon === "drop" && (
+                  <svg viewBox="0 0 48 48">
+                    <path d="M24 7s12 13 12 23a12 12 0 0 1-24 0C12 20 24 7 24 7Z" />
+                    <path d="M18 31c1 3 3 5 6 6" />
+                  </svg>
+                )}
+
+                {icon === "guide" && (
+                  <svg viewBox="0 0 48 48">
+                    <path d="M15 9h18a4 4 0 0 1 4 4v25H17a6 6 0 0 1-6-6V13a4 4 0 0 1 4-4Z" />
+                    <path d="M17 38a6 6 0 0 1 0-12h20" />
+                    <path d="M20 16h10M20 21h8" />
+                  </svg>
+                )}
+
+                {icon === "star" && (
+                  <svg viewBox="0 0 48 48">
+                    <path d="m24 8 5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2 5-10Z" />
+                  </svg>
+                )}
+              </span>
+
+              <strong>{link.label}</strong>
+              <span class="home3-decision__arrow" aria-hidden="true">
+                →
+              </span>
+            </a>
+          </li>
+        );
+      })}
     </ul>
   </nav>
 )}
 
 {mode === "method" && methods.length > 0 && methodologyAction && (
-  <section class="home3-method" aria-labelledby="home3-method-title">
+  <section
+    class="home3-method"
+    aria-labelledby="home3-method-title"
+  >
     <div class="home3-method__intro">
-      <p class="home3-eyebrow home3-eyebrow--light">So arbeiten wir</p>
+      <p class="home3-eyebrow home3-eyebrow--light">
+        So arbeiten wir
+      </p>
       <h2 id="home3-method-title">
         Empfehlungen brauchen eine überprüfbare Grundlage
       </h2>
       <p>
         Wir trennen technische Produktdaten, dokumentierte Erfahrungen und redaktionelle Einordnung. Unklare Angaben werden nicht geraten.
       </p>
-      <a href={methodologyAction.href}>{methodologyAction.label}</a>
+      <a href={methodologyAction.href}>
+        {methodologyAction.label}
+      </a>
     </div>
 
     <ol>
@@ -66,7 +149,10 @@ const {
 )}
 
 {mode === "topics" && groups.length > 0 && (
-  <nav class="home3-topics" aria-labelledby="home3-topics-title">
+  <nav
+    class="home3-topics"
+    aria-labelledby="home3-topics-title"
+  >
     <div>
       <p class="home3-eyebrow">Themenübersicht</p>
       <h2 id="home3-topics-title">
@@ -80,7 +166,9 @@ const {
           <h3>{group.title}</h3>
           <ul>
             {group.links.map((link) => (
-              <li><a href={link.href}>{link.label}</a></li>
+              <li>
+                <a href={link.href}>{link.label}</a>
+              </li>
             ))}
           </ul>
         </section>
