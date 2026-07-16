@@ -156,21 +156,23 @@ const scoreLabel =
           ? "Solide"
           : "Mit Einschränkungen";
 
-const bestForItems = (product.bestFor ?? [])
-  .map((item) => stripLeadingIcon(item).trim())
-  .filter(Boolean);
+const normalizeList = (items: string[] = []) =>
+  items
+    .map((item) => stripLeadingIcon(item).trim())
+    .filter(Boolean);
 
-const attentionItems = (product.notFor?.length
-  ? product.notFor
-  : product.cons
-).map((item) => stripLeadingIcon(item).trim());
+const bestForItems = normalizeList(product.bestFor);
+
+const attentionItems = normalizeList(
+  product.notFor?.length
+    ? product.notFor
+    : product.cons
+);
 
 const displayHighlights = [
-  ...product.pros,
+  ...normalizeList(product.pros),
   ...bestForItems
 ]
-  .map((item) => stripLeadingIcon(item).trim())
-  .filter(Boolean)
   .filter(
     (item, index, items) =>
       items.indexOf(item) === index
@@ -223,13 +225,15 @@ const displayHighlights = [
                       optimizedHero.main.srcSet.attribute
                     }
                   >
-                    <OptimizedImage
-                      src={productHeroImage.src}
-                      alt={`${product.name} Hauptbild`}
-                      width={144}
-                      height={108}
-                      layout="fixed"
-                    />
+                    <span class="product-hero-v4__thumb-image">
+                      <OptimizedImage
+                        src={productHeroImage.src}
+                        alt={`${product.name} Hauptbild`}
+                        width={160}
+                        height={120}
+                        layout="fixed"
+                      />
+                    </span>
                   </button>
 
                   {
@@ -245,16 +249,18 @@ const displayHighlights = [
                             main.srcSet.attribute
                           }
                         >
-                          <OptimizedImage
-                            src={image.src}
-                            alt={
-                              image.alt ||
-                              `${product.name} Produktbild ${index + 2}`
-                            }
-                            width={144}
-                            height={108}
-                            layout="fixed"
-                          />
+                          <span class="product-hero-v4__thumb-image">
+                            <OptimizedImage
+                              src={image.src}
+                              alt={
+                                image.alt ||
+                                `${product.name} Produktbild ${index + 2}`
+                              }
+                              width={160}
+                              height={120}
+                              layout="fixed"
+                            />
+                          </span>
                         </button>
                       )
                     )
@@ -410,7 +416,12 @@ const displayHighlights = [
                   {
                     displayHighlights.map((item) => (
                       <li>
-                        <span aria-hidden="true">✓</span>
+                        <span
+                          class="product-list-icon product-list-icon--positive"
+                          aria-hidden="true"
+                        >
+                          ✓
+                        </span>
                         <p>{item}</p>
                       </li>
                     ))
@@ -450,10 +461,18 @@ const displayHighlights = [
         <div class="product-decision-v4__grid">
           <article class="product-decision-v4__positive">
             <h3>Besonders geeignet</h3>
-            <ul>
+            <ul class="product-icon-list">
               {
                 bestForItems.map((item) => (
-                  <li>{item}</li>
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--positive"
+                      aria-hidden="true"
+                    >
+                      ✓
+                    </span>
+                    <span>{item}</span>
+                  </li>
                 ))
               }
             </ul>
@@ -461,10 +480,18 @@ const displayHighlights = [
 
           <article class="product-decision-v4__attention">
             <h3>Darauf solltest du achten</h3>
-            <ul>
+            <ul class="product-icon-list">
               {
                 attentionItems.map((item) => (
-                  <li>{item}</li>
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--negative"
+                      aria-hidden="true"
+                    >
+                      ×
+                    </span>
+                    <span>{item}</span>
+                  </li>
                 ))
               }
             </ul>
@@ -507,10 +534,18 @@ const displayHighlights = [
         <div class="product-strengths-v4__grid">
           <article class="product-strengths-v4__positive">
             <h3>Stärken</h3>
-            <ul>
+            <ul class="product-icon-list">
               {
-                product.pros.map((item) => (
-                  <li>{stripLeadingIcon(item)}</li>
+                normalizeList(product.pros).map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--positive"
+                      aria-hidden="true"
+                    >
+                      ✓
+                    </span>
+                    <span>{item}</span>
+                  </li>
                 ))
               }
             </ul>
@@ -518,10 +553,18 @@ const displayHighlights = [
 
           <article class="product-strengths-v4__neutral">
             <h3>Schwächen</h3>
-            <ul>
+            <ul class="product-icon-list">
               {
-                product.cons.map((item) => (
-                  <li>{stripLeadingIcon(item)}</li>
+                normalizeList(product.cons).map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--negative"
+                      aria-hidden="true"
+                    >
+                      ×
+                    </span>
+                    <span>{item}</span>
+                  </li>
                 ))
               }
             </ul>
@@ -678,10 +721,11 @@ const displayHighlights = [
     --v4-muted: #6a7d79;
     --v4-green: #0f765b;
     --v4-green-dark: #075944;
+    --v4-red: #b5413c;
+    --v4-red-soft: #fff2f0;
     --v4-border: #dce7e3;
     --v4-surface: #ffffff;
     --v4-soft: #f1f7f4;
-    --v4-warm: #fff8ee;
 
     display: grid;
     gap: clamp(48px, 7vw, 88px);
@@ -698,7 +742,13 @@ const displayHighlights = [
 
   .product-hero-v4__media {
     min-width: 0;
+    align-self: start;
     background: #edf2ef;
+  }
+
+  .product-hero-v4__desktop-gallery {
+    display: grid;
+    gap: 0;
   }
 
   .product-hero-v4__image {
@@ -733,21 +783,25 @@ const displayHighlights = [
   }
 
   .product-hero-v4__thumbs {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(78px, 1fr)
+    );
     gap: 10px;
     padding: 14px;
-    overflow-x: auto;
     border-top: 1px solid var(--v4-border);
-    scrollbar-width: thin;
+    background: #f7faf8;
   }
 
   .product-hero-v4__thumb {
-    flex: 0 0 78px;
-    height: 58px;
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     padding: 0;
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: 12px;
     background: #fff;
     cursor: pointer;
   }
@@ -756,10 +810,21 @@ const displayHighlights = [
     border-color: var(--v4-green);
   }
 
-  .product-hero-v4__thumb :global(img) {
+  .product-hero-v4__thumb-image {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+
+  .product-hero-v4__thumb-image :global(img) {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   .product-hero-v4__mobile-carousel,
@@ -936,28 +1001,37 @@ const displayHighlights = [
     list-style: none;
   }
 
-  .product-highlights-v4 li {
+  .product-highlights-v4 li,
+  .product-icon-list li {
     display: grid;
-    grid-template-columns: 22px 1fr;
+    grid-template-columns: 22px minmax(0, 1fr);
     gap: 11px;
     align-items: start;
   }
 
-  .product-highlights-v4 li > span {
+  .product-highlights-v4 p {
+    margin: 0;
+    line-height: 1.48;
+  }
+
+  .product-list-icon {
     display: grid;
     place-items: center;
     width: 22px;
     height: 22px;
     border-radius: 50%;
     color: #fff;
-    background: var(--v4-green);
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     font-weight: 900;
+    line-height: 1;
   }
 
-  .product-highlights-v4 p {
-    margin: 0;
-    line-height: 1.48;
+  .product-list-icon--positive {
+    background: var(--v4-green);
+  }
+
+  .product-list-icon--negative {
+    background: var(--v4-red);
   }
 
   .product-facts-v4 {
@@ -1033,7 +1107,8 @@ const displayHighlights = [
 
   .product-decision-v4__attention,
   .product-strengths-v4__neutral {
-    background: var(--v4-warm);
+    background: var(--v4-red-soft);
+    border-color: #efd0cc;
   }
 
   .product-decision-v4 h3,
@@ -1042,12 +1117,17 @@ const displayHighlights = [
     color: var(--v4-ink);
   }
 
-  .product-decision-v4 ul,
-  .product-strengths-v4 ul {
+  .product-icon-list {
     display: grid;
-    gap: 9px;
+    gap: 10px;
     margin: 0;
-    padding-left: 19px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .product-icon-list li > span:last-child {
+    min-width: 0;
+    line-height: 1.45;
   }
 
   .product-ratings-v4__grid {
@@ -1110,16 +1190,13 @@ const displayHighlights = [
       align-items: start;
     }
 
-    .product-hero-v4__media {
+    .product-hero-v4__media,
+    .product-hero-v4__content {
       align-self: start;
     }
 
     .product-hero-v4__image {
       aspect-ratio: 4 / 3;
-    }
-
-    .product-hero-v4__content {
-      align-self: start;
     }
 
     .product-decision-v4__grid,
