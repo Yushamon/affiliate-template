@@ -1,6 +1,7 @@
 ---
 import type { ComparisonViewModel } from "../../comparison/model";
 import ComparisonHero from "./ComparisonHero.astro";
+import ComparisonFilterBar from "./ComparisonFilterBar.astro";
 import RecommendationGrid from "./RecommendationGrid.astro";
 import ComparisonProsCons from "./ComparisonProsCons.astro";
 import ComparisonTable from "./ComparisonTable.astro";
@@ -24,6 +25,11 @@ const { model } = Astro.props as Props;
     facts={model.facts}
   />
 
+  <ComparisonFilterBar
+    filters={model.filters}
+    products={model.products}
+  />
+
   <RecommendationGrid products={model.recommendationProducts} />
 
   <ComparisonProsCons products={model.products} />
@@ -32,6 +38,11 @@ const { model } = Astro.props as Props;
     products={model.products}
     rows={model.rows}
   />
+
+  <div class="comparison-empty-state" hidden data-comparison-empty>
+    <h2>Keine passende Kombination gefunden</h2>
+    <p>Entferne einen Filter, um wieder Modelle anzuzeigen.</p>
+  </div>
 
   <ComparisonVerdict
     title={model.verdict.title}

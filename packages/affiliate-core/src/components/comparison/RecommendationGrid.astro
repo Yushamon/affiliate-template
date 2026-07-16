@@ -24,7 +24,10 @@ const { products } = Astro.props as Props;
       const price = getPriceDisplay(product.price);
 
       return (
-        <article class="recommendation-card">
+        <article
+          class="recommendation-card"
+          data-product-slug={product.slug}
+        >
           {product.badge && (
             <span class="recommendation-card__badge">{product.badge}</span>
           )}

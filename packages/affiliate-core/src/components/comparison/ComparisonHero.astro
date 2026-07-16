@@ -6,7 +6,7 @@ type Props = {
   eyebrow: string;
   title: string;
   description: string;
-  image?: CoreImage;
+  image: CoreImage;
   facts?: Array<{ label: string; value: string }>;
 };
 
@@ -20,8 +20,20 @@ const {
 ---
 
 <header class="comparison-hero">
+  <div class="comparison-hero__media" aria-hidden="true">
+    <OptimizedImage
+      src={image.src}
+      alt=""
+      class="comparison-hero__image"
+      layout="full-width"
+      priority
+    />
+  </div>
+
+  <div class="comparison-hero__shade" aria-hidden="true"></div>
+
   <div class="comparison-hero__copy">
-    <span class="comparison-eyebrow">{eyebrow}</span>
+    <span class="comparison-eyebrow comparison-eyebrow--hero">{eyebrow}</span>
     <h1>{title}</h1>
     <p>{description}</p>
 
@@ -34,26 +46,6 @@ const {
           </div>
         ))}
       </dl>
-    )}
-  </div>
-
-  <div class:list={[
-    "comparison-hero__media",
-    !image && "comparison-hero__media--placeholder"
-  ]}>
-    {image ? (
-      <OptimizedImage
-        src={image.src}
-        alt={image.alt ?? ""}
-        class="comparison-hero__image"
-        layout="full-width"
-        priority
-      />
-    ) : (
-      <div class="comparison-placeholder" role="img" aria-label="Platzhalter für das Vergleichsbild">
-        <span aria-hidden="true">↔</span>
-        <strong>Vergleichsbild folgt</strong>
-      </div>
     )}
   </div>
 </header>

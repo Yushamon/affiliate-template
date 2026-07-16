@@ -18,7 +18,10 @@ const { products } = Astro.props as Props;
 
   <div class="comparison-fit-grid">
     {products.map((product) => (
-      <article class="comparison-fit-card">
+      <article
+        class="comparison-fit-card"
+        data-product-slug={product.slug}
+      >
         <div>
           {product.badge && (
             <span class="comparison-fit-card__badge">{product.badge}</span>

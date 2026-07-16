@@ -26,18 +26,16 @@ const normalizeKey = (value: string) =>
     .replaceAll("ß", "ss")
     .replace(/[^a-z0-9]/g, "");
 
-const normalizeFilterValue = (value: string) =>
-  value.trim().toLocaleLowerCase("de");
-
 const criterionAliases: Record<string, string[]> = {
   portionierung: ["portionierung", "ausgabemenge"],
   krokettengroesse: ["krokettengroesse", "futterart"],
   napf: ["napf", "schale"],
   kapazitaet: ["kapazitaet"],
   app: ["app", "appsteuerung"],
-  notstrom: ["notstrom", "stromversorgung"],
+  kamera: ["kamera", "videokamera", "ueberwachung"],
+  notstrom: ["notstrom", "stromversorgung", "backup"],
   futterart: ["futterart"],
-  zugang: ["zugang", "besonderheit"],
+  zugang: ["zugang", "besonderheit", "mikrochip"],
   reinigung: ["reinigung"],
   ausfallsicherheit: [
     "ausfallsicherheit",
@@ -46,14 +44,45 @@ const criterionAliases: Record<string, string[]> = {
   ]
 };
 
-const automaticFilterKeys = new Set([
-  "app",
-  "futterart",
-  "zugang",
-  "notstrom",
-  "ausfallsicherheit",
-  "krokettengroesse"
-]);
+const priceCategoryLabels = {
+  budget: "Budget",
+  midrange: "Mittelklasse",
+  premium: "Premium"
+} as const;
+
+const collectEvidence = (product: ProductEntry): string => {
+  const data = product.data;
+
+  return [
+    data.title,
+    data.recommendation,
+    data.useCase ?? "",
+    data.capacity ?? "",
+    data.priceCategory ?? "",
+    ...data.features,
+    ...data.strengths,
+    ...data.weaknesses,
+    ...data.decision.bestFor,
+    ...data.decision.attention,
+    ...data.specs.map(
+      (spec) => `${spec.label}: ${String(spec.value)}`
+    )
+  ]
+    .join(" ")
+    .toLocaleLowerCase("de");
+};
+
+const addValue = (
+  values: Record<string, string[]>,
+  key: string,
+  value: string
+) => {
+  const current = values[key] ?? [];
+
+  if (!current.includes(value)) {
+    values[key] = [...current, value];
+  }
+};
 
 export function buildComparisonViewModel({
   comparison,
@@ -176,43 +205,6 @@ export function buildComparisonViewModel({
     })
   );
 
-  const filterRows = rows.filter((row) =>
-    automaticFilterKeys.has(normalizeKey(row.criterion.key))
-  );
-
-  const filters: ComparisonFilter[] = filterRows
-    .map((row) => {
-      const distinct = Array.from(
-        new Map(
-          row.cells
-            .map((cell) => cell.value)
-            .filter((value) => value && value !== "–")
-            .map((value) => [
-              normalizeFilterValue(value),
-              value
-            ])
-        ).entries()
-      );
-
-      if (distinct.length < 2 || distinct.length > 6) {
-        return null;
-      }
-
-      return {
-        key: normalizeKey(row.criterion.key),
-        label: row.criterion.label,
-        options: distinct.map(([value, label]) => ({
-          value,
-          label
-        }))
-      };
-    })
-    .filter(
-      (filter): filter is ComparisonFilter =>
-        filter !== null
-    )
-    .slice(0, 4);
-
   const filterValuesBySlug = new Map<
     string,
     Record<string, string[]>
@@ -220,25 +212,124 @@ export function buildComparisonViewModel({
 
   items.forEach((item) => {
     const values: Record<string, string[]> = {};
+    const product = productBySlug.get(item.slug);
 
-    filters.forEach((filter) => {
-      const row = rows.find(
-        (candidate) =>
-          normalizeKey(candidate.criterion.key) === filter.key
+    if (!product) {
+      filterValuesBySlug.set(item.slug, values);
+      return;
+    }
+
+    const evidence = collectEvidence(product);
+
+    if (/trockenfutter|kroketten|dry food/.test(evidence)) {
+      addValue(values, "futterart", "trockenfutter");
+    }
+
+    if (/nassfutter|wet food|kuehl|gekuehlt|kühl/.test(evidence)) {
+      addValue(values, "futterart", "nassfutter");
+    }
+
+    if (/ohne app|keine app|nicht per app/.test(evidence)) {
+      addValue(values, "app", "ohne-app");
+    } else if (/app|wlan|wi-fi|wifi/.test(evidence)) {
+      addValue(values, "app", "mit-app");
+    }
+
+    if (/ohne kamera|keine kamera/.test(evidence)) {
+      addValue(values, "kamera", "ohne-kamera");
+    } else if (/kamera|video|ueberwachung|überwachung/.test(evidence)) {
+      addValue(values, "kamera", "mit-kamera");
+    }
+
+    if (/mikrochip|chip-erkennung|chipzugang/.test(evidence)) {
+      addValue(values, "zugang", "mikrochip");
+    } else {
+      addValue(values, "zugang", "freier-zugang");
+    }
+
+    if (/notstrom|backup|batteriebetrieb|batteriebackup|doppelte stromversorgung/.test(evidence)) {
+      addValue(values, "strombackup", "mit-backup");
+    } else if (/netzteil|netzbetrieb|stromanschluss/.test(evidence)) {
+      addValue(values, "strombackup", "ohne-backup");
+    }
+
+    if (product.data.priceCategory) {
+      addValue(
+        values,
+        "preisklasse",
+        product.data.priceCategory
       );
-
-      const cell = row?.cells.find(
-        (candidate) => candidate.productSlug === item.slug
-      );
-
-      values[filter.key] =
-        cell?.value && cell.value !== "–"
-          ? [normalizeFilterValue(cell.value)]
-          : [];
-    });
+    }
 
     filterValuesBySlug.set(item.slug, values);
   });
+
+  const filterDefinitions: ComparisonFilter[] = [
+    {
+      key: "futterart",
+      label: "Futterart",
+      options: [
+        { value: "trockenfutter", label: "Trockenfutter" },
+        { value: "nassfutter", label: "Nassfutter" }
+      ]
+    },
+    {
+      key: "app",
+      label: "Steuerung",
+      options: [
+        { value: "mit-app", label: "Mit App oder WLAN" },
+        { value: "ohne-app", label: "Ohne App" }
+      ]
+    },
+    {
+      key: "kamera",
+      label: "Kamera",
+      options: [
+        { value: "mit-kamera", label: "Mit Kamera" },
+        { value: "ohne-kamera", label: "Ohne Kamera" }
+      ]
+    },
+    {
+      key: "zugang",
+      label: "Zugang",
+      options: [
+        { value: "mikrochip", label: "Mikrochipgesteuert" },
+        { value: "freier-zugang", label: "Freier Zugang" }
+      ]
+    },
+    {
+      key: "strombackup",
+      label: "Stromversorgung",
+      options: [
+        { value: "mit-backup", label: "Mit Batterie-Backup" },
+        { value: "ohne-backup", label: "Nur Netzbetrieb" }
+      ]
+    },
+    {
+      key: "preisklasse",
+      label: "Preisklasse",
+      options: Object.entries(priceCategoryLabels).map(
+        ([value, label]) => ({ value, label })
+      )
+    }
+  ];
+
+  const filters = filterDefinitions
+    .map((filter) => {
+      const options = filter.options.filter((option) =>
+        Array.from(filterValuesBySlug.values()).some(
+          (values) =>
+            values[filter.key]?.includes(option.value)
+        )
+      );
+
+      return {
+        ...filter,
+        options
+      };
+    })
+    .filter((filter) => filter.options.length >= 2)
+    .slice(0, 4);
 
   const views = items
     .map((item, index): ComparisonProduct | null => {

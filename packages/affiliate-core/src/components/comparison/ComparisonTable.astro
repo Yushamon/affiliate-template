@@ -35,7 +35,10 @@ const { products, rows } = Astro.props as Props;
           <tr>
             <th scope="col">Kriterium</th>
             {products.map((product) => (
-              <th scope="col">
+              <th
+                scope="col"
+                data-product-column={product.slug}
+              >
                 <a href={product.href}>{product.title}</a>
               </th>
             ))}
@@ -62,7 +65,12 @@ const { products, rows } = Astro.props as Props;
                     : "Keine Angabe";
 
                 return (
-                  <td data-label={product.title}>{value}</td>
+                  <td
+                    data-label={product.title}
+                    data-product-column={product.slug}
+                  >
+                    {value}
+                  </td>
                 );
               })}
             </tr>

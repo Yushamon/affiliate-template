@@ -25,6 +25,8 @@ export type PriceState =
   | { kind: "link-only"; link: AffiliateLink }
   | { kind: "live"; link: AffiliateLink; snapshot: PriceSnapshot };
 
+export type ProductFilterValues = Record<string, string[]>;
+
 export type ComparisonProduct = {
   slug: string;
   title: string;
@@ -38,6 +40,7 @@ export type ComparisonProduct = {
   attention: string[];
   affiliate?: AffiliateLink;
   price: PriceState;
+  filterValues: ProductFilterValues;
 };
 
 export type ComparisonCriterion = {
@@ -56,6 +59,17 @@ export type ComparisonRow = {
   cells: ComparisonCell[];
 };
 
+export type ComparisonFilterOption = {
+  value: string;
+  label: string;
+};
+
+export type ComparisonFilter = {
+  key: string;
+  label: string;
+  options: ComparisonFilterOption[];
+};
+
 export type ComparisonViewModel = {
   title: string;
   description: string;
@@ -65,6 +79,7 @@ export type ComparisonViewModel = {
   products: ComparisonProduct[];
   recommendationProducts: ComparisonProduct[];
   rows: ComparisonRow[];
+  filters: ComparisonFilter[];
   verdict: {
     title: string;
     text: string;
