@@ -125,7 +125,9 @@ const getStructuredFilters = (
   const source = product.data.comparisonFilters;
   const values: Record<string, string[]> = {};
 
-  source.foodType.forEach((foodType) => {
+  const foodTypes = source?.foodType ?? [];
+
+  foodTypes.forEach((foodType) => {
     addValue(
       values,
       "futterart",
@@ -133,11 +135,11 @@ const getStructuredFilters = (
     );
   });
 
-  if (typeof source.app === "boolean") {
+  if (typeof source?.app === "boolean") {
     addValue(values, "app", source.app ? "mit-app" : "ohne-app");
   }
 
-  if (typeof source.camera === "boolean") {
+  if (typeof source?.camera === "boolean") {
     addValue(
       values,
       "kamera",
@@ -145,7 +147,7 @@ const getStructuredFilters = (
     );
   }
 
-  if (source.access) {
+  if (source?.access) {
     addValue(
       values,
       "zugang",
@@ -155,7 +157,7 @@ const getStructuredFilters = (
     );
   }
 
-  if (typeof source.backupPower === "boolean") {
+  if (typeof source?.backupPower === "boolean") {
     addValue(
       values,
       "strombackup",
@@ -163,7 +165,7 @@ const getStructuredFilters = (
     );
   }
 
-  if (source.priceTier) {
+  if (source?.priceTier) {
     addValue(values, "preisklasse", source.priceTier);
   }
 
