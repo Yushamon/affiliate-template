@@ -32,18 +32,7 @@ seo:
   changefreq: "yearly"
 related: { tags: ["hund", "gesundheit", "fütterung"], limit: 4 }
 faq:
-  - question: "Wie lange darf ein Hund nichts fressen?"
-    answer: "Ein gesunder erwachsener Hund, der nur eine Mahlzeit auslässt und völlig unauffällig bleibt, kann kurz beobachtet werden. Frisst er länger als etwa 24 Stunden nichts oder deutlich weniger als üblich, sollte die Tierarztpraxis kontaktiert werden. Bei Welpen, Senioren, sehr kleinen Hunden, chronisch kranken Tieren oder zusätzlichen Symptomen ist früheres Handeln nötig."
-  - question: "Wann ist Futterverweigerung beim Hund ein Notfall?"
-    answer: "Sofortige Hilfe ist nötig bei aufgeblähtem Bauch, erfolglosem Würgen, Atemnot, Kollaps, starker Schwäche, wiederholtem Erbrechen, Blutungen, Vergiftungs- oder Fremdkörperverdacht, starken Schmerzen, blassen oder blauen Schleimhäuten sowie rascher Verschlechterung."
-  - question: "Was kann ich tun, wenn mein Hund nicht frisst?"
-    answer: "Prüfen Sie Allgemeinzustand, Wasseraufnahme, Erbrechen, Kot und Urin, bieten Sie eine kleine Portion des vertrauten Futters in ruhiger Umgebung an und dokumentieren Sie die tatsächlich aufgenommene Menge. Zwangsfütterung, Humanmedikamente und ständig wechselnde Lockmittel sind ungeeignet."
-  - question: "Warum geht mein Hund zum Napf, frisst aber nicht?"
-    answer: "Das kann auf Übelkeit, Zahn- oder Maulschmerzen, Schluckprobleme, Schmerzen beim Beugen, eine verstopfte Nase oder eine negative Verknüpfung mit dem Futter hinweisen."
-  - question: "Kann Stress dazu führen, dass ein Hund nicht frisst?"
-    answer: "Ja. Umzug, Tierpension, neue Tiere, Trennung, Lärm oder Konflikte können die Futteraufnahme reduzieren. Stress sollte jedoch nicht vorschnell als einzige Ursache gelten, wenn die Futterverweigerung anhält oder weitere Symptome auftreten."
-  - question: "Darf man einen Hund mit einer Spritze füttern?"
-    answer: "Nicht ohne tierärztliche Anleitung. Gegen Widerstand eingegebenes Futter kann eingeatmet werden, eine Futteraversion verstärken oder bei einer Schluckstörung gefährlich sein."
+  source: article
 premiumBlocks:
   - type: answer
     eyebrow: "Kurz erklärt"
@@ -1158,7 +1147,7 @@ Kontrolliere regelmäßig:
 - Fressverhalten
 - Gewichtsverlauf
 
-## Entscheidungsmatrix: Was ist jetzt sinnvoll?
+## Typische Fehleinschätzungen in der Praxis
 
 | Situation | Sinnvolle Reaktion | Nicht sinnvoll |
 |---|---|---|
@@ -1171,21 +1160,30 @@ Kontrolliere regelmäßig:
 | Automat meldet Ausgabe, Napf bleibt leer | Mechanik und Portion direkt prüfen | App-Meldung als Fressnachweis werten |
 | Stressverdacht, sonst stabil | ruhiger Futterplatz, kurze Beobachtung | körperliche Ursache dauerhaft ausschließen |
 
-## Checkliste: Hund frisst nicht
 
-- [ ] Zeitpunkt der letzten normalen Mahlzeit notiert
-- [ ] normale und aktuelle Tagesmenge verglichen
-- [ ] Leckerli und Kauartikel mitgerechnet
-- [ ] Wasseraufnahme kontrolliert
-- [ ] Erbrechen oder Regurgitieren unterschieden
-- [ ] Kot und Urin kontrolliert
-- [ ] Bauchumfang und Schmerzzeichen geprüft
-- [ ] Maul, Speicheln und Kauverhalten beobachtet
-- [ ] Gift- oder Fremdkörperkontakt bedacht
-- [ ] Medikamente und neue Ereignisse notiert
-- [ ] Futter und Automat technisch kontrolliert
-- [ ] Risikogruppe berücksichtigt
-- [ ] bei Warnzeichen sofort Praxis oder Notdienst kontaktiert
+
+## Häufige Denkfehler
+
+Viele Hundehalter interpretieren Futterverweigerung vorschnell.
+
+| Annahme | Bessere Einordnung |
+|---|---|
+| „Er hat nur keine Lust.“ | Plötzliche Appetitlosigkeit ist immer zunächst ein Symptom, keine Charaktereigenschaft. |
+| „Er nimmt Leckerli, also ist alles in Ordnung.“ | Kleine Belohnungen ersetzen keine ausreichende Energieaufnahme. |
+| „Ich probiere einfach zehn Futtersorten.“ | Häufige Wechsel erschweren die Beurteilung und können Futteraversionen verstärken. |
+| „Morgen wird es schon besser.“ | Bei Warnzeichen oder ausbleibender Aufnahme verschlechtert Abwarten häufig die Prognose. |
+
+## Welche Ursachen sind tatsächlich häufig?
+
+In der Praxis dominieren keine exotischen Erkrankungen. Häufig sind zunächst Zahnprobleme, Magen-Darm-Erkrankungen, Schmerzen, Stresssituationen oder Nebenwirkungen von Medikamenten. Schwerwiegende Ursachen wie Fremdkörper, Magendrehung oder Vergiftungen sind zwar seltener, müssen wegen ihres Risikos aber früh erkannt werden.
+
+## Typischer Verlauf
+
+- Erste Mahlzeit ausgelassen
+- Allgemeinzustand prüfen
+- Aufnahme in Gramm dokumentieren
+- Warnzeichen beobachten
+- Tierarztkontakt je nach Verlauf und Risikoprofil
 
 ## FAQ
 
