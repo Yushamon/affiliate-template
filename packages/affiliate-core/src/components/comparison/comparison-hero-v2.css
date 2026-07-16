@@ -1,0 +1,183 @@
+/*
+ * Comparison Hero V2
+ * Zusätzlicher, isolierter Design-Layer.
+ * Wird nach comparison.css geladen.
+ */
+
+.comparison-hero--editorial {
+  min-height: min(680px, 74vh);
+  border-radius: 1.65rem;
+}
+
+.comparison-hero--editorial .comparison-hero__copy {
+  width: min(100%, 780px);
+  padding: clamp(2.25rem, 6vw, 4.75rem);
+}
+
+.comparison-hero--editorial h1 {
+  max-width: 12.5ch;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  font-size: clamp(2.7rem, 5.6vw, 5rem);
+  line-height: .98;
+}
+
+.comparison-hero--editorial .comparison-hero__copy > p {
+  max-width: 56ch;
+}
+
+.comparison-hero--editorial .comparison-hero__facts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 640px;
+  gap: .65rem;
+  margin-top: 1.75rem;
+}
+
+.comparison-hero--editorial .comparison-hero__facts div {
+  padding: .85rem 1rem;
+  border-radius: .9rem;
+  background: rgba(6, 29, 25, .48);
+}
+
+.comparison-hero--editorial .comparison-hero__facts dd {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.comparison-hero--editorial .comparison-hero__facts dt {
+  margin-top: .2rem;
+  font-size: .68rem;
+  letter-spacing: .02em;
+}
+
+@media (max-width: 760px) {
+  .comparison-shell {
+    gap: 2.75rem;
+  }
+
+  .comparison-hero--editorial {
+    min-height: 590px;
+    border-radius: 1.2rem;
+  }
+
+  .comparison-hero--editorial .comparison-hero__media {
+    position: absolute;
+    min-height: 0;
+    max-height: none;
+    inset: 0;
+  }
+
+  .comparison-hero--editorial .comparison-hero__media img {
+    object-position: 58% 58%;
+  }
+
+  .comparison-hero--editorial .comparison-hero__shade {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 31, 27, .2) 0%,
+        rgba(7, 31, 27, .4) 30%,
+        rgba(7, 31, 27, .88) 68%,
+        rgba(7, 31, 27, .97) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(7, 31, 27, .34),
+        rgba(7, 31, 27, .08)
+      );
+  }
+
+  .comparison-hero--editorial .comparison-hero__copy {
+    min-height: 590px;
+    justify-content: flex-end;
+    padding: 1.2rem 1.1rem 1rem;
+  }
+
+  .comparison-hero--editorial h1 {
+    max-width: 12ch;
+    margin: .55rem 0 .8rem;
+    overflow-wrap: normal;
+    word-break: normal;
+    font-size: clamp(2.3rem, 10.5vw, 3.35rem);
+    line-height: .98;
+  }
+
+  .comparison-hero--editorial .comparison-hero__copy > p {
+    max-width: 34ch;
+    font-size: .98rem;
+    line-height: 1.55;
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .5rem;
+    width: 100%;
+    max-width: none;
+    margin-top: 1.2rem;
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts div {
+    min-width: 0;
+    padding: .7rem .65rem;
+    text-align: left;
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts dd {
+    overflow: hidden;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts dt {
+    font-size: .62rem;
+    line-height: 1.2;
+  }
+
+  .comparison-sticky-bar {
+    right: .75rem;
+    bottom: .75rem;
+    left: .75rem;
+    gap: .65rem;
+    padding: .65rem;
+    border-radius: .9rem;
+  }
+
+  .comparison-sticky-bar > div:first-child {
+    min-width: 0;
+  }
+
+  .comparison-sticky-bar > div:first-child strong {
+    overflow: hidden;
+    max-width: 17ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .comparison-sticky-bar > div:last-child {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .comparison-hero--editorial {
+    min-height: 610px;
+  }
+
+  .comparison-hero--editorial .comparison-hero__copy {
+    min-height: 610px;
+  }
+
+  .comparison-hero--editorial h1 {
+    font-size: clamp(2.15rem, 10.2vw, 3rem);
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts {
+    gap: .4rem;
+  }
+
+  .comparison-hero--editorial .comparison-hero__facts div {
+    padding: .65rem .55rem;
+  }
+}

@@ -7,6 +7,7 @@ import ComparisonExplorer from "./ComparisonExplorer.astro";
 import ComparisonVerdict from "./ComparisonVerdict.astro";
 import ComparisonStickyBar from "./ComparisonStickyBar.astro";
 import "./comparison.css";
+import "./comparison-hero-v2.css";
 
 type Props = {
   model: ComparisonViewModel;
@@ -24,7 +25,9 @@ const { model } = Astro.props as Props;
     facts={model.facts}
   />
 
-  <RecommendationGrid products={model.recommendationProducts} />
+  <RecommendationGrid
+    products={model.recommendationProducts}
+  />
 
   <ComparisonProsCons products={model.products} />
 

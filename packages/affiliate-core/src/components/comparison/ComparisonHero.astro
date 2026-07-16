@@ -7,7 +7,10 @@ type Props = {
   title: string;
   description: string;
   image: CoreImage;
-  facts?: Array<{ label: string; value: string }>;
+  facts?: Array<{
+    label: string;
+    value: string;
+  }>;
 };
 
 const {
@@ -19,7 +22,7 @@ const {
 } = Astro.props as Props;
 ---
 
-<header class="comparison-hero">
+<header class="comparison-hero comparison-hero--editorial">
   <div class="comparison-hero__media" aria-hidden="true">
     <OptimizedImage
       src={image.src}
@@ -33,16 +36,20 @@ const {
   <div class="comparison-hero__shade" aria-hidden="true"></div>
 
   <div class="comparison-hero__copy">
-    <span class="comparison-eyebrow comparison-eyebrow--hero">{eyebrow}</span>
+    <span class="comparison-eyebrow comparison-eyebrow--hero">
+      {eyebrow}
+    </span>
+
     <h1>{title}</h1>
+
     <p>{description}</p>
 
     {facts.length > 0 && (
-      <dl class="comparison-hero__facts">
+      <dl class="comparison-hero__facts" aria-label="Vergleich auf einen Blick">
         {facts.map((fact) => (
           <div>
-            <dt>{fact.label}</dt>
             <dd>{fact.value}</dd>
+            <dt>{fact.label}</dt>
           </div>
         ))}
       </dl>
