@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev --background",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "audit:products": "node scripts/audit-product-data.mjs",
+    "audit:products:strict": "node scripts/audit-product-data.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

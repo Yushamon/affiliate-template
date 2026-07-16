@@ -111,6 +111,27 @@ const decisionComparisonDefinitions = [
   }
 ] as const;
 
+const getComparisonItemCount = (
+  comparison: ComparisonEntry,
+  products: ProductEntry[]
+) => {
+  const slugs = new Set(
+    comparison.data.items.map((item) => item.slug)
+  );
+
+  for (const product of products) {
+    if (
+      (product.data.comparisons ?? []).includes(
+        comparison.data.slug
+      )
+    ) {
+      slugs.add(product.data.slug);
+    }
+  }
+
+  return slugs.size;
+};
+
 const sortPages = (pages: PageEntry[]) =>
   [...pages].sort((a, b) =>
     (b.data.hubPriority ?? 0) -
@@ -294,7 +315,10 @@ export function buildHomepageModel({
             src: petTechHeroImage,
             alt: ""
           },
-          itemCount: entry.data.items.length,
+          itemCount: getComparisonItemCount(
+            entry,
+            products
+          ),
           updatedLabel:
             formatUpdatedAt(entry.data.updatedAt)
         };
