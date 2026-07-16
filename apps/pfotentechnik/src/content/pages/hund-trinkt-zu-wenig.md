@@ -32,7 +32,50 @@ seo:
   changefreq: "yearly"
 related: { tags: ["hund", "trinken", "gesundheit", "fütterung"], limit: 4 }
 faq:
-  source: article
+  - question: "Wie viel Wasser sollte ein Hund täglich trinken?"
+    answer: "Als grobe Orientierung werden häufig etwa 40 bis 60 Milliliter Gesamtwasser pro Kilogramm Körpergewicht und Tag angesetzt. Dabei zählt Wasser aus Nassfutter oder eingeweichtem Futter mit. Ein einzelner Wert ist weniger wichtig als der Vergleich mit dem üblichen Muster des Hundes. Hitze, Bewegung, Hecheln, Fieber, Erbrechen, Durchfall, Alter, Medikamente und Erkrankungen können den Bedarf deutlich verändern. Bei auffälligen Abweichungen sollte deshalb nicht nur die Napfmenge, sondern die gesamte Wasserbilanz betrachtet werden."
+
+  - question: "Wie lange darf ein Hund nichts trinken?"
+    answer: "Eine feste sichere Zeitspanne gibt es nicht. Ein großer, gesunder Hund mit Nassfutter und ohne Verluste ist anders zu bewerten als ein Welpe mit Durchfall oder ein Senior mit Nierenerkrankung. Trinkt ein Hund gar nicht und wirkt gleichzeitig matt, frisst nicht, erbricht, hat Durchfall, uriniert wenig oder zeigt trockenes Zahnfleisch, sollte er noch am selben Tag untersucht werden. Bei Kollaps, Hitzschlagverdacht oder wiederholtem Erbrechen von Wasser ist sofortige Hilfe nötig."
+
+  - question: "Ist wenig Trinken bei Nassfutter normal?"
+    answer: "Ja, das kann normal sein. Nassfutter enthält meist deutlich mehr Wasser als Trockenfutter. Ein Hund kann daher sichtbar wenig aus dem Napf trinken und dennoch ausreichend Gesamtwasser aufnehmen. Entscheidend sind die Futtermenge, der Feuchtigkeitsgehalt, die zusätzliche Trinkmenge, der Urinabsatz und der Allgemeinzustand. Wird die Futteraufnahme geringer oder treten Erbrechen, Durchfall, wenig Urin, Schwäche oder trockenes Zahnfleisch hinzu, ist die geringe Napfaufnahme nicht mehr automatisch harmlos."
+
+  - question: "Wie erkenne ich Dehydration beim Hund?"
+    answer: "Mögliche Hinweise sind trocken-klebriges Zahnfleisch, Mattigkeit, wenig oder dunkler Urin, eingesunkene Augen, nachlassende Hautelastizität und Schwäche. Diese Zeichen sind unterschiedlich zuverlässig und können andere Ursachen haben. Der Hautfaltentest ist bei alten, dünnen, übergewichtigen oder sehr lockerhäutigen Hunden nur eingeschränkt aussagekräftig. Blasse, graue oder blaue Schleimhäute, Kollaps und schwache Pulse sprechen eher für ein akutes Kreislaufproblem und gehören sofort tierärztlich abgeklärt."
+
+  - question: "Kann ich Wasser ins Futter mischen?"
+    answer: "Bei einem stabilen Hund ohne Schluckprobleme kann etwas Wasser im vertrauten Futter die Flüssigkeitsaufnahme erhöhen. Die Menge sollte schrittweise angepasst werden, damit der Hund das Futter weiterhin akzeptiert. Eingeweichte Reste dürfen nicht lange stehen bleiben. Bei wiederholtem Erbrechen, Schluckstörungen, Herz- oder Nierenerkrankungen sollte die Flüssigkeitszufuhr mit der Tierarztpraxis abgestimmt werden. Wasser darf nicht gegen Widerstand mit einer Spritze eingegeben werden, weil es in die Atemwege gelangen kann."
+
+  - question: "Hilft ein Trinkbrunnen, wenn mein Hund wenig trinkt?"
+    answer: "Manche Hunde mögen bewegtes Wasser, andere meiden Geräusche, Vibrationen oder eine ungewohnte Trinkfläche. Ein Brunnen ist deshalb eine zusätzliche Option, aber keine Garantie für mehr Wasseraufnahme. Entscheidend sind tatsächliche Nutzung, leichte Reinigung, ausreichender Wasserstand, eine funktionierende Pumpe und ein sauberer Filter. Ein normaler Napf sollte zunächst zusätzlich stehen bleiben. Bei Warnzeichen darf ein Trinkbrunnen keine tierärztliche Abklärung verzögern."
+
+  - question: "Warum trinkt mein Hund plötzlich weniger?"
+    answer: "Mögliche Ursachen reichen von einer Futterumstellung auf Nassfutter oder kühlerem Wetter bis zu Übelkeit, Schmerzen, Fieber, Maulproblemen, Stress, Schwäche oder einer technischen Störung am Wasserspender. Entscheidend ist, ob die Veränderung neu und deutlich ist und ob Begleitsymptome auftreten. Miss die Menge, prüfe Futterwasser, Urin und Allgemeinzustand. Bei zusätzlicher Futterverweigerung, Erbrechen, Durchfall, wenig Urin oder Mattigkeit sollte die Ursache zeitnah tierärztlich abgeklärt werden."
+
+  - question: "Warum trinkt mein Hund wenig und uriniert wenig?"
+    answer: "Diese Kombination kann auf eine geringe Gesamtaufnahme oder einen relevanten Flüssigkeitsmangel hinweisen. Sie kann aber auch bei Kreislaufproblemen oder Störungen des Harntrakts auftreten. Besonders wichtig sind Allgemeinzustand, Zahnfleisch, Schmerzen, Pressen beim Urinieren und der zeitliche Verlauf. Wasser zu rationieren wäre falsch. Zeigt der Hund Schwäche, trockenes Zahnfleisch, Erbrechen, Durchfall oder setzt kaum beziehungsweise gar keinen Urin ab, sollte er noch am selben Tag untersucht werden."
+
+  - question: "Mein Hund geht zum Napf, trinkt aber nicht. Woran kann das liegen?"
+    answer: "Dieses Verhalten kann auf Maul- oder Zahnschmerzen, Übelkeit, einen unangenehmen Geruch, einen ungewohnten Napf, zu laute Pumpengeräusche oder Schluckprobleme hindeuten. Achte auf Speicheln, Maulgeruch, Zurückzucken, Husten, Würgen oder Futter, das aus dem Maul fällt. Nicht gegen Widerstand ins Maul greifen und kein Wasser einflößen. Bei Schmerzen, Schluckauffälligkeiten oder gleichzeitigem Krankheitsgefühl sollte die Tierarztpraxis zeitnah kontaktiert werden."
+
+  - question: "Darf ich meinem Hund bei Erbrechen Wasser geben?"
+    answer: "Eine pauschale Antwort ist nicht sinnvoll. Große Mengen können erneutes Erbrechen auslösen, vollständiger Wasserentzug kann eine Dehydration verschärfen. Wenn Wasser wiederholt erbrochen wird, der Hund schwach ist, Bauchschmerzen hat, Blut erbricht oder ein Welpe betroffen ist, ist eine rasche tierärztliche Abklärung nötig. Kleine Angebote sind nur bei einem stabilen Hund und ohne wiederholtes Erbrechen vertretbar. Im Zweifel entscheidet die Praxis, ob eine Flüssigkeitstherapie erforderlich ist."
+
+  - question: "Warum trinkt mein alter Hund plötzlich weniger?"
+    answer: "Bei älteren Hunden kommen Maul- und Zahnschmerzen, Übelkeit, Schwäche, kognitive Veränderungen, Medikamente sowie Nieren-, Herz- oder Stoffwechselerkrankungen häufiger vor. Eine neue deutliche Veränderung sollte deshalb nicht vorschnell mit dem Alter erklärt werden. Miss die Trinkmenge, beobachte Urin, Futteraufnahme, Gewicht und Aktivität. Bei zusätzlicher Müdigkeit, Erbrechen, Durchfall, wenig Urin oder Gewichtsverlust sollte der Senior frühzeitig untersucht werden."
+
+  - question: "Kann zu wenig Trinken durch Stress entstehen?"
+    answer: "Ja. Umzug, Reise, Tierarztaufenthalt, neue Tiere, Lärm oder ein ungewohnter Napf können die Wasseraufnahme vorübergehend reduzieren. Stress ist aber eine Ausschlussdiagnose im Alltag, keine sichere Erklärung. Der Hund sollte weiterhin wach sein, normal urinieren und keine körperlichen Warnzeichen zeigen. Biete vertraute Näpfe an ruhigen Orten an und dokumentiere die Menge. Bleibt die Aufnahme deutlich vermindert oder kommen Futterverweigerung, Erbrechen, Durchfall oder Schwäche hinzu, ist eine medizinische Ursache wahrscheinlicher."
+
+  - question: "Ist dunkler Urin ein Zeichen für zu wenig Wasser?"
+    answer: "Dunkler, konzentrierter Urin kann bei geringer Flüssigkeitsaufnahme auftreten, ist aber nicht spezifisch. Auch Blut, Leberprobleme, Muskelabbau, Medikamente oder andere Veränderungen können die Farbe beeinflussen. Wichtiger sind Menge, Häufigkeit, Geruch, Schmerzen und Begleitsymptome. Bei sehr wenig Urin, Pressen, Schmerzen, Schwäche oder auffälliger Verfärbung sollte der Hund untersucht werden. Eine Urinprobe kann der Praxis helfen, die Ursache einzugrenzen."
+
+  - question: "Soll ich Wasser rationieren, wenn mein Hund sehr viel uriniert?"
+    answer: "Nein. Wasserentzug kann gefährlich sein und eine Dehydration verursachen. Starkes Trinken und häufiges Urinieren können unter anderem bei Diabetes, Nierenerkrankungen, hormonellen Störungen oder durch Medikamente auftreten. Miss die getrunkene Menge über 24 Stunden und notiere Urinabsatz, Futter, Gewicht und Medikamente. Diese Angaben gehören in die Tierarztpraxis. Die Wasserzufuhr darf nur auf ausdrückliche tierärztliche Anweisung verändert werden."
+
+  - question: "Wann ist wenig Trinken ein Notfall?"
+    answer: "Ein Notfall liegt vor, wenn geringe Aufnahme mit Kollaps, Bewusstseinsveränderung, Atemnot, Hitzschlagverdacht, Krampfanfällen, sehr blassen oder blauen Schleimhäuten oder wiederholtem Erbrechen von Wasser einhergeht. Auch starke Schwäche und deutliche Kreislaufzeichen sind akut. In solchen Situationen nicht versuchen, große Wassermengen einzuflößen. Den Hund sicher transportieren, gegebenenfalls vorsichtig kühlen und den tierärztlichen Notdienst sofort kontaktieren."
 premiumBlocks:
   - type: answer
     eyebrow: "Kurz erklärt"
@@ -654,68 +697,6 @@ Nicht jede Untersuchung ist bei jedem Hund erforderlich. Die Auswahl richtet sic
 - [ ] bei Notfallzeichen sofort gehandelt
 
 Die Checkliste soll keine zweite Diagnoseebene schaffen. Sie bündelt nur die entscheidenden Beobachtungen vor der nächsten Handlung.
-
-## Häufige Fragen
-
-### Wie viel Wasser sollte ein Hund täglich trinken?
-
-Als grobe Orientierung werden häufig etwa 40 bis 60 Milliliter Gesamtwasser pro Kilogramm Körpergewicht und Tag angesetzt. Dabei zählt Wasser aus Nassfutter oder eingeweichtem Futter mit. Ein einzelner Wert ist weniger wichtig als der Vergleich mit dem üblichen Muster des Hundes. Hitze, Bewegung, Hecheln, Fieber, Erbrechen, Durchfall, Alter, Medikamente und Erkrankungen können den Bedarf deutlich verändern. Bei auffälligen Abweichungen sollte deshalb nicht nur die Napfmenge, sondern die gesamte Wasserbilanz betrachtet werden.
-
-### Wie lange darf ein Hund nichts trinken?
-
-Eine feste sichere Zeitspanne gibt es nicht. Ein großer, gesunder Hund mit Nassfutter und ohne Verluste ist anders zu bewerten als ein Welpe mit Durchfall oder ein Senior mit Nierenerkrankung. Trinkt ein Hund gar nicht und wirkt gleichzeitig matt, frisst nicht, erbricht, hat Durchfall, uriniert wenig oder zeigt trockenes Zahnfleisch, sollte er noch am selben Tag untersucht werden. Bei Kollaps, Hitzschlagverdacht oder wiederholtem Erbrechen von Wasser ist sofortige Hilfe nötig.
-
-### Ist wenig Trinken bei Nassfutter normal?
-
-Ja, das kann normal sein. Nassfutter enthält meist deutlich mehr Wasser als Trockenfutter. Ein Hund kann daher sichtbar wenig aus dem Napf trinken und dennoch ausreichend Gesamtwasser aufnehmen. Entscheidend sind die Futtermenge, der Feuchtigkeitsgehalt, die zusätzliche Trinkmenge, der Urinabsatz und der Allgemeinzustand. Wird die Futteraufnahme geringer oder treten Erbrechen, Durchfall, wenig Urin, Schwäche oder trockenes Zahnfleisch hinzu, ist die geringe Napfaufnahme nicht mehr automatisch harmlos.
-
-### Wie erkenne ich Dehydration beim Hund?
-
-Mögliche Hinweise sind trocken-klebriges Zahnfleisch, Mattigkeit, wenig oder dunkler Urin, eingesunkene Augen, nachlassende Hautelastizität und Schwäche. Diese Zeichen sind unterschiedlich zuverlässig und können andere Ursachen haben. Der Hautfaltentest ist bei alten, dünnen, übergewichtigen oder sehr lockerhäutigen Hunden nur eingeschränkt aussagekräftig. Blasse, graue oder blaue Schleimhäute, Kollaps und schwache Pulse sprechen eher für ein akutes Kreislaufproblem und gehören sofort tierärztlich abgeklärt.
-
-### Kann ich Wasser ins Futter mischen?
-
-Bei einem stabilen Hund ohne Schluckprobleme kann etwas Wasser im vertrauten Futter die Flüssigkeitsaufnahme erhöhen. Die Menge sollte schrittweise angepasst werden, damit der Hund das Futter weiterhin akzeptiert. Eingeweichte Reste dürfen nicht lange stehen bleiben. Bei wiederholtem Erbrechen, Schluckstörungen, Herz- oder Nierenerkrankungen sollte die Flüssigkeitszufuhr mit der Tierarztpraxis abgestimmt werden. Wasser darf nicht gegen Widerstand mit einer Spritze eingegeben werden, weil es in die Atemwege gelangen kann.
-
-### Hilft ein Trinkbrunnen, wenn mein Hund wenig trinkt?
-
-Manche Hunde mögen bewegtes Wasser, andere meiden Geräusche, Vibrationen oder eine ungewohnte Trinkfläche. Ein Brunnen ist deshalb eine zusätzliche Option, aber keine Garantie für mehr Wasseraufnahme. Entscheidend sind tatsächliche Nutzung, leichte Reinigung, ausreichender Wasserstand, eine funktionierende Pumpe und ein sauberer Filter. Ein normaler Napf sollte zunächst zusätzlich stehen bleiben. Bei Warnzeichen darf ein Trinkbrunnen keine tierärztliche Abklärung verzögern.
-
-### Warum trinkt mein Hund plötzlich weniger?
-
-Mögliche Ursachen reichen von einer Futterumstellung auf Nassfutter oder kühlerem Wetter bis zu Übelkeit, Schmerzen, Fieber, Maulproblemen, Stress, Schwäche oder einer technischen Störung am Wasserspender. Entscheidend ist, ob die Veränderung neu und deutlich ist und ob Begleitsymptome auftreten. Miss die Menge, prüfe Futterwasser, Urin und Allgemeinzustand. Bei zusätzlicher Futterverweigerung, Erbrechen, Durchfall, wenig Urin oder Mattigkeit sollte die Ursache zeitnah tierärztlich abgeklärt werden.
-
-### Warum trinkt mein Hund wenig und uriniert wenig?
-
-Diese Kombination kann auf eine geringe Gesamtaufnahme oder einen relevanten Flüssigkeitsmangel hinweisen. Sie kann aber auch bei Kreislaufproblemen oder Störungen des Harntrakts auftreten. Besonders wichtig sind Allgemeinzustand, Zahnfleisch, Schmerzen, Pressen beim Urinieren und der zeitliche Verlauf. Wasser zu rationieren wäre falsch. Zeigt der Hund Schwäche, trockenes Zahnfleisch, Erbrechen, Durchfall oder setzt kaum beziehungsweise gar keinen Urin ab, sollte er noch am selben Tag untersucht werden.
-
-### Mein Hund geht zum Napf, trinkt aber nicht. Woran kann das liegen?
-
-Dieses Verhalten kann auf Maul- oder Zahnschmerzen, Übelkeit, einen unangenehmen Geruch, einen ungewohnten Napf, zu laute Pumpengeräusche oder Schluckprobleme hindeuten. Achte auf Speicheln, Maulgeruch, Zurückzucken, Husten, Würgen oder Futter, das aus dem Maul fällt. Nicht gegen Widerstand ins Maul greifen und kein Wasser einflößen. Bei Schmerzen, Schluckauffälligkeiten oder gleichzeitigem Krankheitsgefühl sollte die Tierarztpraxis zeitnah kontaktiert werden.
-
-### Darf ich meinem Hund bei Erbrechen Wasser geben?
-
-Eine pauschale Antwort ist nicht sinnvoll. Große Mengen können erneutes Erbrechen auslösen, vollständiger Wasserentzug kann eine Dehydration verschärfen. Wenn Wasser wiederholt erbrochen wird, der Hund schwach ist, Bauchschmerzen hat, Blut erbricht oder ein Welpe betroffen ist, ist eine rasche tierärztliche Abklärung nötig. Kleine Angebote sind nur bei einem stabilen Hund und ohne wiederholtes Erbrechen vertretbar. Im Zweifel entscheidet die Praxis, ob eine Flüssigkeitstherapie erforderlich ist.
-
-### Warum trinkt mein alter Hund plötzlich weniger?
-
-Bei älteren Hunden kommen Maul- und Zahnschmerzen, Übelkeit, Schwäche, kognitive Veränderungen, Medikamente sowie Nieren-, Herz- oder Stoffwechselerkrankungen häufiger vor. Eine neue deutliche Veränderung sollte deshalb nicht vorschnell mit dem Alter erklärt werden. Miss die Trinkmenge, beobachte Urin, Futteraufnahme, Gewicht und Aktivität. Bei zusätzlicher Müdigkeit, Erbrechen, Durchfall, wenig Urin oder Gewichtsverlust sollte der Senior frühzeitig untersucht werden.
-
-### Kann zu wenig Trinken durch Stress entstehen?
-
-Ja. Umzug, Reise, Tierarztaufenthalt, neue Tiere, Lärm oder ein ungewohnter Napf können die Wasseraufnahme vorübergehend reduzieren. Stress ist aber eine Ausschlussdiagnose im Alltag, keine sichere Erklärung. Der Hund sollte weiterhin wach sein, normal urinieren und keine körperlichen Warnzeichen zeigen. Biete vertraute Näpfe an ruhigen Orten an und dokumentiere die Menge. Bleibt die Aufnahme deutlich vermindert oder kommen Futterverweigerung, Erbrechen, Durchfall oder Schwäche hinzu, ist eine medizinische Ursache wahrscheinlicher.
-
-### Ist dunkler Urin ein Zeichen für zu wenig Wasser?
-
-Dunkler, konzentrierter Urin kann bei geringer Flüssigkeitsaufnahme auftreten, ist aber nicht spezifisch. Auch Blut, Leberprobleme, Muskelabbau, Medikamente oder andere Veränderungen können die Farbe beeinflussen. Wichtiger sind Menge, Häufigkeit, Geruch, Schmerzen und Begleitsymptome. Bei sehr wenig Urin, Pressen, Schmerzen, Schwäche oder auffälliger Verfärbung sollte der Hund untersucht werden. Eine Urinprobe kann der Praxis helfen, die Ursache einzugrenzen.
-
-### Soll ich Wasser rationieren, wenn mein Hund sehr viel uriniert?
-
-Nein. Wasserentzug kann gefährlich sein und eine Dehydration verursachen. Starkes Trinken und häufiges Urinieren können unter anderem bei Diabetes, Nierenerkrankungen, hormonellen Störungen oder durch Medikamente auftreten. Miss die getrunkene Menge über 24 Stunden und notiere Urinabsatz, Futter, Gewicht und Medikamente. Diese Angaben gehören in die Tierarztpraxis. Die Wasserzufuhr darf nur auf ausdrückliche tierärztliche Anweisung verändert werden.
-
-### Wann ist wenig Trinken ein Notfall?
-
-Ein Notfall liegt vor, wenn geringe Aufnahme mit Kollaps, Bewusstseinsveränderung, Atemnot, Hitzschlagverdacht, Krampfanfällen, sehr blassen oder blauen Schleimhäuten oder wiederholtem Erbrechen von Wasser einhergeht. Auch starke Schwäche und deutliche Kreislaufzeichen sind akut. In solchen Situationen nicht versuchen, große Wassermengen einzuflößen. Den Hund sicher transportieren, gegebenenfalls vorsichtig kühlen und den tierärztlichen Notdienst sofort kontaktieren.
 
 ## Fazit
 

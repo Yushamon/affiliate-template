@@ -32,7 +32,53 @@ seo:
   changefreq: "yearly"
 related: { tags: ["hund", "gesundheit", "fütterung"], limit: 4 }
 faq:
-  source: article
+  - question: "Mein Hund frisst seit heute Morgen nicht. Muss ich sofort zum Tierarzt?"
+    answer: "Nicht zwingend, wenn es ein gesunder erwachsener Hund ist, der nur eine Mahlzeit auslässt und vollständig unauffällig bleibt. Prüfe Wasseraufnahme, Atmung, Bauch, Erbrechen, Kot, Urin und Verhalten. Bei aufgeblähtem Bauch, erfolglosem Würgen, Schmerz, Schwäche, Giftverdacht oder wiederholtem Erbrechen ist sofortige Hilfe nötig. Bleibt die Aufnahme deutlich reduziert oder fällt die nächste Mahlzeit ebenfalls aus, sollte die Tierarztpraxis kontaktiert werden."
+
+  - question: "Mein Hund frisst nicht, trinkt aber normal. Ist das beruhigend?"
+    answer: "Normales Trinken ist günstiger als gleichzeitige Wasserverweigerung, schließt eine Erkrankung aber nicht aus. Zahnschmerzen, Übelkeit, Infektionen, Pankreatitis oder Organerkrankungen können trotz normalem Trinken bestehen. Miss die Futtermenge und beobachte Allgemeinzustand, Urin, Kot und Erbrechen. Trinkt der Hund plötzlich deutlich mehr, kann das selbst ein wichtiges Symptom sein. Bei anhaltender Futterverweigerung oder weiteren Auffälligkeiten ist eine Untersuchung sinnvoll."
+
+  - question: "Warum frisst mein Hund nur Leckerli, aber kein normales Futter?"
+    answer: "Leckerli sind oft kleiner, weicher, energiereicher und stärker riechend. Ein Hund kann sie trotz Übelkeit oder Zahnschmerz annehmen. Außerdem kann gelerntes Auswahlverhalten entstehen, wenn nach jeder abgelehnten Mahlzeit etwas Attraktiveres folgt. Entscheidend ist nicht, ob überhaupt etwas gefressen wird, sondern wie viel Energie im Verhältnis zur normalen Tagesration aufgenommen wird. Ein plötzlich neues Muster sollte zuerst körperlich eingeordnet werden."
+
+  - question: "Mein Hund geht zum Napf, nimmt aber nichts auf. Was bedeutet das?"
+    answer: "Interesse ohne normale Aufnahme spricht eher für Übelkeit, Maul- oder Zahnschmerz, eine Schluckstörung, Schmerzen beim Senken des Kopfes oder eine Futteraversion. Achte darauf, ob Futter aus dem Maul fällt, nur einseitig gekaut wird, Speicheln, Husten oder Würgen auftreten. Öffne das Maul nicht gewaltsam und gib nichts mit einer Spritze ein. Bei Schluckproblemen oder sichtbarem Schmerz sollte der Hund zeitnah untersucht werden."
+
+  - question: "Kann Stress allein dazu führen, dass ein Hund nicht frisst?"
+    answer: "Ja. Reise, Tierpension, Umzug, Lärm, neue Tiere oder Konflikte am Futterplatz können die Aufnahme vorübergehend senken. Stress ist aber keine sichere Erklärung, solange Schmerzen, Übelkeit und Erkrankungen nicht berücksichtigt wurden. Ein stabiler Hund kann in ruhiger Umgebung mit einer kleinen vertrauten Portion getestet werden. Bleibt die Aufnahme reduziert, verliert er Gewicht oder treten weitere Symptome auf, gehört die Situation medizinisch abgeklärt."
+
+  - question: "Wie lange darf ein gesunder erwachsener Hund nichts fressen?"
+    answer: "Es gibt keine für alle Hunde sichere Zeitspanne. Eine ausgelassene Mahlzeit kann bei einem sonst gesunden und völlig unauffälligen erwachsenen Hund kurz beobachtet werden. Etwa 24 Stunden ohne relevante Aufnahme sind ein sinnvoller Anlass, die Praxis zu kontaktieren, aber kein Freibrief zum Warten. Bei Welpen, Senioren, sehr kleinen oder chronisch kranken Hunden sowie bei Erbrechen, Schmerz, Schwäche oder Wasserverweigerung ist deutlich früher Hilfe nötig."
+
+  - question: "Darf ich das Futter erwärmen?"
+    answer: "Leichtes Erwärmen von Nassfutter kann den Geruch verstärken und bei einem stabilen Hund die Akzeptanz verbessern. Das Futter darf nicht heiß sein und sollte gründlich umgerührt werden. Wärme behandelt jedoch keine Übelkeit, Zahnfraktur, Schluckstörung oder Blockade. Wenn der Hund trotz Interesse nicht kauen kann, erbricht, Schmerzen zeigt oder die Aufnahme weiter sinkt, sollte nicht weiter mit Temperatur und Sorten experimentiert werden."
+
+  - question: "Ist gekochtes Huhn mit Reis eine gute Schonkost?"
+    answer: "Eine kleine ungewürzte Portion kann bei einzelnen stabilen Hunden kurzfristig verträglich sein, ist aber keine vollständige Dauerernährung und keine universelle Therapie. Bei Pankreatitisverdacht, Futtermittelunverträglichkeit, tierärztlicher Diät, Erbrechen, Bauchschmerz oder Fremdkörperverdacht kann Selbstbehandlung die Abklärung verzögern. Besser ist, die Ursache und eine geeignete Fütterung mit der Tierarztpraxis abzustimmen."
+
+  - question: "Mein Hund frisst nach einer Impfung nicht. Wann wird es kritisch?"
+    answer: "Eine leichte vorübergehende Müdigkeit und geringere Aufnahme können vorkommen. Gesichtsschwellung, Atemnot, Kollaps, wiederholtes Erbrechen, starke Schwäche oder rasche Verschlechterung sind jedoch Notfallzeichen. Bleibt die Futteraufnahme deutlich reduziert oder passt das Verhalten nicht zur üblichen Reaktion des Hundes, kontaktiere die behandelnde Praxis. Der zeitliche Zusammenhang mit der Impfung beweist nicht automatisch, dass sie die einzige Ursache ist."
+
+  - question: "Mein Hund frisst nach einer Operation nicht. Wie lange soll ich warten?"
+    answer: "Die Entlassungsanweisung der Praxis ist maßgeblich, weil Eingriff, Narkose und Medikamente unterschiedlich wirken. Kontaktiere die Praxis bei wiederholtem Erbrechen, starken Schmerzen, Atemproblemen, extremer Benommenheit, Blutung, fehlendem Urin oder wenn die genannte Frist zur Futteraufnahme überschritten wird. Gib nur verordnete Medikamente. Human-Schmerzmittel dürfen nicht eingesetzt werden."
+
+  - question: "Kann Zahnschmerz vorliegen, obwohl mein Hund noch Leckerli frisst?"
+    answer: "Ja. Kleine, weiche oder stark riechende Leckerli können leichter aufgenommen werden als große Kroketten oder Kauartikel. Hinweise auf Zahnschmerz sind einseitiges Kauen, Futterverlust aus dem Maul, Speicheln, Mundgeruch, Blut, Kopfscheu oder das plötzliche Meiden harter Nahrung. Ein Blick auf die Vorderzähne reicht nicht aus, da schmerzhafte Veränderungen häufig an Backenzähnen oder unter dem Zahnfleisch liegen."
+
+  - question: "Woran erkenne ich Regurgitieren statt Erbrechen?"
+    answer: "Erbrechen ist aktiv und wird meist von Übelkeit, Speicheln, Würgen und Bauchpresse begleitet. Regurgitieren erfolgt eher passiv, häufig kurz nach der Aufnahme. Das Futter ist oft unverdaut und kann röhrenförmig wirken. Ein Video ist für die Tierarztpraxis hilfreich. Wiederholtes Regurgitieren sollte abgeklärt werden, weil Erkrankungen der Speiseröhre und das Risiko einer Aspirationspneumonie dahinterstehen können."
+
+  - question: "Kann ein Futterautomat Ursache der Futterverweigerung sein?"
+    answer: "Ein Automat kann die Situation vortäuschen oder verstärken, wenn der Auslass blockiert, der Behälter leer, das Futter verklumpt oder die Portion falsch programmiert ist. Geräusche und Bewegungen können einzelne Hunde abschrecken. Eine App-Meldung beweist nur begrenzt, dass Futter im Napf lag und vom richtigen Hund gefressen wurde. Kontrolliere die tatsächliche Ausgabe, den Napf und bei mehreren Tieren das Verhalten per direkter Beobachtung oder Kamera."
+
+  - question: "Ist Grasfressen zusammen mit Appetitlosigkeit ein Zeichen für Übelkeit?"
+    answer: "Grasfressen kann normales Verhalten sein, tritt aber auch bei Übelkeit auf. Aussagekräftiger wird es zusammen mit Schmatzen, Lippenlecken, Speicheln, Unruhe, Erbrechen oder Bauchschmerz. Allein beweist Grasfressen keine Erkrankung. Verweigert der Hund gleichzeitig seine normale Mahlzeit oder verschlechtert sich sein Allgemeinzustand, sollte die Kombination nicht als harmlose Angewohnheit abgetan werden."
+
+  - question: "Wann ist Futterverweigerung bei einem Welpen gefährlich?"
+    answer: "Welpen, besonders sehr junge und kleine, haben geringere Energie- und Flüssigkeitsreserven. Mehrere ausgelassene Mahlzeiten, Zittern, Taumeln, Schwäche, Erbrechen, Durchfall oder ungewöhnliche Müdigkeit sind früh abklärungsbedürftig. Eine pauschale 24-Stunden-Wartezeit ist bei Welpen ungeeignet. Je jünger, kleiner und symptomatischer der Hund ist, desto früher sollte die Tierarztpraxis kontaktiert werden."
+
+  - question: "Darf ich meinen Hund mit einer Spritze füttern?"
+    answer: "Nicht ohne konkrete tierärztliche Anleitung. Bei Übelkeit, Maulschmerz oder Schluckstörung kann das Futter in die Atemwege gelangen. Zwangsfütterung erhöht Stress, verstärkt Abwehr und kann eine Futteraversion fördern. Wird eine Ernährungsunterstützung nötig, sind kontrollierte tierärztliche Verfahren bis hin zu einer Ernährungssonde oft sicherer und schonender als wiederholtes Eingeben gegen Widerstand."
 premiumBlocks:
   - type: answer
     eyebrow: "Kurz erklärt"
@@ -749,71 +795,6 @@ In Mehrhundehaushalten sollte jeder Hund ungestört fressen können. Getrennte P
 - [ ] Futtercharge, Napf, Umgebung und Automat kontrolliert
 - [ ] bei Verschlechterung oder ausbleibender Aufnahme Praxis kontaktiert
 
-## Häufige Fragen
-
-### Mein Hund frisst seit heute Morgen nicht. Muss ich sofort zum Tierarzt?
-
-Nicht zwingend, wenn es ein gesunder erwachsener Hund ist, der nur eine Mahlzeit auslässt und vollständig unauffällig bleibt. Prüfe Wasseraufnahme, Atmung, Bauch, Erbrechen, Kot, Urin und Verhalten. Bei aufgeblähtem Bauch, erfolglosem Würgen, Schmerz, Schwäche, Giftverdacht oder wiederholtem Erbrechen ist sofortige Hilfe nötig. Bleibt die Aufnahme deutlich reduziert oder fällt die nächste Mahlzeit ebenfalls aus, sollte die Tierarztpraxis kontaktiert werden.
-
-### Mein Hund frisst nicht, trinkt aber normal. Ist das beruhigend?
-
-Normales Trinken ist günstiger als gleichzeitige Wasserverweigerung, schließt eine Erkrankung aber nicht aus. Zahnschmerzen, Übelkeit, Infektionen, Pankreatitis oder Organerkrankungen können trotz normalem Trinken bestehen. Miss die Futtermenge und beobachte Allgemeinzustand, Urin, Kot und Erbrechen. Trinkt der Hund plötzlich deutlich mehr, kann das selbst ein wichtiges Symptom sein. Bei anhaltender Futterverweigerung oder weiteren Auffälligkeiten ist eine Untersuchung sinnvoll.
-
-### Warum frisst mein Hund nur Leckerli, aber kein normales Futter?
-
-Leckerli sind oft kleiner, weicher, energiereicher und stärker riechend. Ein Hund kann sie trotz Übelkeit oder Zahnschmerz annehmen. Außerdem kann gelerntes Auswahlverhalten entstehen, wenn nach jeder abgelehnten Mahlzeit etwas Attraktiveres folgt. Entscheidend ist nicht, ob überhaupt etwas gefressen wird, sondern wie viel Energie im Verhältnis zur normalen Tagesration aufgenommen wird. Ein plötzlich neues Muster sollte zuerst körperlich eingeordnet werden.
-
-### Mein Hund geht zum Napf, nimmt aber nichts auf. Was bedeutet das?
-
-Interesse ohne normale Aufnahme spricht eher für Übelkeit, Maul- oder Zahnschmerz, eine Schluckstörung, Schmerzen beim Senken des Kopfes oder eine Futteraversion. Achte darauf, ob Futter aus dem Maul fällt, nur einseitig gekaut wird, Speicheln, Husten oder Würgen auftreten. Öffne das Maul nicht gewaltsam und gib nichts mit einer Spritze ein. Bei Schluckproblemen oder sichtbarem Schmerz sollte der Hund zeitnah untersucht werden.
-
-### Kann Stress allein dazu führen, dass ein Hund nicht frisst?
-
-Ja. Reise, Tierpension, Umzug, Lärm, neue Tiere oder Konflikte am Futterplatz können die Aufnahme vorübergehend senken. Stress ist aber keine sichere Erklärung, solange Schmerzen, Übelkeit und Erkrankungen nicht berücksichtigt wurden. Ein stabiler Hund kann in ruhiger Umgebung mit einer kleinen vertrauten Portion getestet werden. Bleibt die Aufnahme reduziert, verliert er Gewicht oder treten weitere Symptome auf, gehört die Situation medizinisch abgeklärt.
-
-### Wie lange darf ein gesunder erwachsener Hund nichts fressen?
-
-Es gibt keine für alle Hunde sichere Zeitspanne. Eine ausgelassene Mahlzeit kann bei einem sonst gesunden und völlig unauffälligen erwachsenen Hund kurz beobachtet werden. Etwa 24 Stunden ohne relevante Aufnahme sind ein sinnvoller Anlass, die Praxis zu kontaktieren, aber kein Freibrief zum Warten. Bei Welpen, Senioren, sehr kleinen oder chronisch kranken Hunden sowie bei Erbrechen, Schmerz, Schwäche oder Wasserverweigerung ist deutlich früher Hilfe nötig.
-
-### Darf ich das Futter erwärmen?
-
-Leichtes Erwärmen von Nassfutter kann den Geruch verstärken und bei einem stabilen Hund die Akzeptanz verbessern. Das Futter darf nicht heiß sein und sollte gründlich umgerührt werden. Wärme behandelt jedoch keine Übelkeit, Zahnfraktur, Schluckstörung oder Blockade. Wenn der Hund trotz Interesse nicht kauen kann, erbricht, Schmerzen zeigt oder die Aufnahme weiter sinkt, sollte nicht weiter mit Temperatur und Sorten experimentiert werden.
-
-### Ist gekochtes Huhn mit Reis eine gute Schonkost?
-
-Eine kleine ungewürzte Portion kann bei einzelnen stabilen Hunden kurzfristig verträglich sein, ist aber keine vollständige Dauerernährung und keine universelle Therapie. Bei Pankreatitisverdacht, Futtermittelunverträglichkeit, tierärztlicher Diät, Erbrechen, Bauchschmerz oder Fremdkörperverdacht kann Selbstbehandlung die Abklärung verzögern. Besser ist, die Ursache und eine geeignete Fütterung mit der Tierarztpraxis abzustimmen.
-
-### Mein Hund frisst nach einer Impfung nicht. Wann wird es kritisch?
-
-Eine leichte vorübergehende Müdigkeit und geringere Aufnahme können vorkommen. Gesichtsschwellung, Atemnot, Kollaps, wiederholtes Erbrechen, starke Schwäche oder rasche Verschlechterung sind jedoch Notfallzeichen. Bleibt die Futteraufnahme deutlich reduziert oder passt das Verhalten nicht zur üblichen Reaktion des Hundes, kontaktiere die behandelnde Praxis. Der zeitliche Zusammenhang mit der Impfung beweist nicht automatisch, dass sie die einzige Ursache ist.
-
-### Mein Hund frisst nach einer Operation nicht. Wie lange soll ich warten?
-
-Die Entlassungsanweisung der Praxis ist maßgeblich, weil Eingriff, Narkose und Medikamente unterschiedlich wirken. Kontaktiere die Praxis bei wiederholtem Erbrechen, starken Schmerzen, Atemproblemen, extremer Benommenheit, Blutung, fehlendem Urin oder wenn die genannte Frist zur Futteraufnahme überschritten wird. Gib nur verordnete Medikamente. Human-Schmerzmittel dürfen nicht eingesetzt werden.
-
-### Kann Zahnschmerz vorliegen, obwohl mein Hund noch Leckerli frisst?
-
-Ja. Kleine, weiche oder stark riechende Leckerli können leichter aufgenommen werden als große Kroketten oder Kauartikel. Hinweise auf Zahnschmerz sind einseitiges Kauen, Futterverlust aus dem Maul, Speicheln, Mundgeruch, Blut, Kopfscheu oder das plötzliche Meiden harter Nahrung. Ein Blick auf die Vorderzähne reicht nicht aus, da schmerzhafte Veränderungen häufig an Backenzähnen oder unter dem Zahnfleisch liegen.
-
-### Woran erkenne ich Regurgitieren statt Erbrechen?
-
-Erbrechen ist aktiv und wird meist von Übelkeit, Speicheln, Würgen und Bauchpresse begleitet. Regurgitieren erfolgt eher passiv, häufig kurz nach der Aufnahme. Das Futter ist oft unverdaut und kann röhrenförmig wirken. Ein Video ist für die Tierarztpraxis hilfreich. Wiederholtes Regurgitieren sollte abgeklärt werden, weil Erkrankungen der Speiseröhre und das Risiko einer Aspirationspneumonie dahinterstehen können.
-
-### Kann ein Futterautomat Ursache der Futterverweigerung sein?
-
-Ein Automat kann die Situation vortäuschen oder verstärken, wenn der Auslass blockiert, der Behälter leer, das Futter verklumpt oder die Portion falsch programmiert ist. Geräusche und Bewegungen können einzelne Hunde abschrecken. Eine App-Meldung beweist nur begrenzt, dass Futter im Napf lag und vom richtigen Hund gefressen wurde. Kontrolliere die tatsächliche Ausgabe, den Napf und bei mehreren Tieren das Verhalten per direkter Beobachtung oder Kamera.
-
-### Ist Grasfressen zusammen mit Appetitlosigkeit ein Zeichen für Übelkeit?
-
-Grasfressen kann normales Verhalten sein, tritt aber auch bei Übelkeit auf. Aussagekräftiger wird es zusammen mit Schmatzen, Lippenlecken, Speicheln, Unruhe, Erbrechen oder Bauchschmerz. Allein beweist Grasfressen keine Erkrankung. Verweigert der Hund gleichzeitig seine normale Mahlzeit oder verschlechtert sich sein Allgemeinzustand, sollte die Kombination nicht als harmlose Angewohnheit abgetan werden.
-
-### Wann ist Futterverweigerung bei einem Welpen gefährlich?
-
-Welpen, besonders sehr junge und kleine, haben geringere Energie- und Flüssigkeitsreserven. Mehrere ausgelassene Mahlzeiten, Zittern, Taumeln, Schwäche, Erbrechen, Durchfall oder ungewöhnliche Müdigkeit sind früh abklärungsbedürftig. Eine pauschale 24-Stunden-Wartezeit ist bei Welpen ungeeignet. Je jünger, kleiner und symptomatischer der Hund ist, desto früher sollte die Tierarztpraxis kontaktiert werden.
-
-### Darf ich meinen Hund mit einer Spritze füttern?
-
-Nicht ohne konkrete tierärztliche Anleitung. Bei Übelkeit, Maulschmerz oder Schluckstörung kann das Futter in die Atemwege gelangen. Zwangsfütterung erhöht Stress, verstärkt Abwehr und kann eine Futteraversion fördern. Wird eine Ernährungsunterstützung nötig, sind kontrollierte tierärztliche Verfahren bis hin zu einer Ernährungssonde oft sicherer und schonender als wiederholtes Eingeben gegen Widerstand.
 
 ## Fazit
 
