@@ -1,63 +1,158 @@
 ---
 title: "PETLIBRO Dockstream Cordless"
 slug: "petlibro-dockstream-cordless"
-type: product
-layout: product
-description: "Kabelloser Brunnen mit Bewegungssensor, Edelstahl-Trinkfläche und entnehmbarem Tank."
-recommendation: "Interessante Katzenbrunnen-Option für Haushalte, denen 2,5 Liter Kapazität und eine alltagstaugliche Reinigung wichtig sind."
-manufacturer: { key: petlibro, name: "PETLIBRO", slug: petlibro }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "Kabelloser 2,5-Liter-Trinkbrunnen der ersten Dockstream-Generation mit 5000-mAh-Akku, Bewegungssensor und vierstufiger Filterung."
+recommendation: "Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden."
+manufacturer:
+  key: "petlibro"
+  name: "PETLIBRO"
+  slug: "petlibro"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "PETLIBRO Dockstream Cordless im Check", description: "Kabelloser Brunnen mit Bewegungssensor, Edelstahl-Trinkfläche und entnehmbarem Tank.", canonical: "/produkt/petlibro-dockstream-cordless/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, petlibro, hygiene]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "PETLIBRO Dockstream Cordless im Check"
+  description: "PETLIBRO Dockstream Cordless mit 2,5 Litern, 5000-mAh-Akku, Sensorbetrieb, 23 dB und vierstufiger Filterung."
+  canonical: "/produkt/petlibro-dockstream-cordless/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "kleine-hunde"
+  - "kabellos"
+  - "sensor"
+  - "ohne-app"
 images:
-  hero: { src: "../../assets/images/products/petlibro-dockstream-cordless/hero.webp", alt: "PETLIBRO Dockstream Cordless in redaktioneller Visualisierung" }
-  thumbnail: { src: "../../assets/images/products/petlibro-dockstream-cordless/thumbnail.webp", alt: "PETLIBRO Dockstream Cordless als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/petlibro-dockstream-cordless/comparison.webp", alt: "PETLIBRO Dockstream Cordless im Vergleich" }
+  hero:
+    src: "../../assets/images/products/petlibro-dockstream-cordless/hero.webp"
+    alt: "PETLIBRO Dockstream Cordless in redaktioneller Visualisierung"
+  thumbnail:
+    src: "../../assets/images/products/petlibro-dockstream-cordless/thumbnail.webp"
+    alt: "PETLIBRO Dockstream Cordless als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/petlibro-dockstream-cordless/comparison.webp"
+    alt: "PETLIBRO Dockstream Cordless im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-1.webp", alt: "PETLIBRO Dockstream Cordless mit Wasserlauf in Nahaufnahme" }
-    - { src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-2.webp", alt: "PETLIBRO Dockstream Cordless mit Filter oder Pumpe" }
-    - { src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp", alt: "PETLIBRO Dockstream Cordless bei Reinigung oder Nutzung" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=PETLIBRO%20Dockstream%20Cordless" }
+    - src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-1.webp"
+      alt: "Wasserlauf des PETLIBRO Dockstream Cordless"
+    - src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-2.webp"
+      alt: "Tank und Pumpe des PETLIBRO Dockstream Cordless"
+    - src: "../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp"
+      alt: "PETLIBRO Dockstream Cordless im Katzenhaushalt"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+Cordless"
 rating: 4.5
 score: 89
-ratings: { verarbeitung: 4.5, bedienung: 4.5, reinigung: 4.4, lautstaerke: 4.6, preisleistung: 4.3 }
+ratings:
+  verarbeitung: 4.5
+  bedienung: 4.5
+  reinigung: 4.4
+  lautstaerke: 4.6
+  preisleistung: 4.3
 decision:
-  bestFor: [Katzenhaushalte, regelmäßige Wasserpflege, passende Stellfläche]
-  attention: [Filterfolgekosten, wöchentliche Komplettreinigung, individuelle Akzeptanz]
+  bestFor:
+    - "eine bis zwei Katzen"
+    - "kleine Hunde"
+    - "kabellose Aufstellung"
+    - "Nutzer ohne Bedarf an App oder Trinktracking"
+  attention:
+    - "erste Dockstream-Generation, nicht Dockstream 2"
+    - "im Akkubetrieb nur sensoraktivierter Wasserfluss"
+    - "keine App-Verbindung"
+    - "nicht spülmaschinengeeignet"
 review:
-  summary: "Kabelloser Brunnen mit Bewegungssensor, Edelstahl-Trinkfläche und entnehmbarem Tank."
-  verdict: "Eine prüfenswerte Option, wenn 2,5 Liter zum Haushalt passen und Ersatzfilter verfügbar sind."
-strengths: [tiergerechter Wasserlauf, alltagstaugliche Kapazität, auf Katzen ausgelegte Trinkfläche]
-weaknesses: [Filterfolgekosten, Pumpe muss separat gereinigt werden, keine Garantie für höhere Trinkmenge]
+  summary: "Der ursprüngliche Dockstream Cordless kombiniert 2,5 Liter, einen 5000-mAh-Akku, Bewegungssensor und vierstufige Filterung."
+  verdict: "Eine einfache kabellose Lösung. Der Dockstream 2 Smart Cordless bietet mehr Funktionen, ist aber ein anderes Produkt."
+strengths:
+  - "2,5 Liter Kapazität"
+  - "5000-mAh-Akku"
+  - "Herstellerangabe bis 30 Tage Akkulaufzeit"
+  - "Herstellerangabe 23 dB"
+  - "vierstufige Filterung"
+  - "abnehmbarer Tank"
+weaknesses:
+  - "keine App"
+  - "kein Trinktracking"
+  - "im Akkubetrieb kein Dauerfluss"
+  - "Kunststoffteile nicht spülmaschinengeeignet"
 experience:
-  summary: "Die Einordnung berücksichtigt Herstellerdaten, Anleitung, unabhängige Vergleiche und wiederkehrende Nutzerberichte."
-  methodology: "Redaktioneller Produkt-Check; kein eigener Langzeittest. Herstellerangaben werden als solche gekennzeichnet."
-  maintenance: "Wasser täglich kontrollieren, Brunnen mindestens wöchentlich zerlegen und Pumpe sowie Auslauf mechanisch reinigen."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, oneisall-3-5l-cordless-fountain]
+  summary: "Die beworbenen 30 Tage basieren laut Hersteller auf einem Tier und 48 Aktivierungen pro Tag."
+  methodology: "Redaktionelle Einordnung anhand offizieller PETLIBRO-Produkt- und Supportseiten; kein eigener Langzeittest."
+  maintenance: "Pumpe mindestens alle zwei Wochen zerlegen. Kunststoffteile von Hand reinigen und Filter etwa alle zwei Wochen wechseln."
+alternatives:
+  - "petlibro-dockstream-2-smart"
+  - "petkit-eversweet-max-cordless"
+  - "oneisall-3-2l-cordless-fountain"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "2,5 Liter" }
-  - { label: Zielgruppe, value: Katzen }
-  - { label: Wartung, value: wöchentlich vollständig reinigen }
+  - label: "Modell"
+    value: "PLWF115"
+  - label: "Kapazität"
+    value: "2,5 Liter"
+  - label: "Material"
+    value: "BPA-freies ABS"
+  - label: "Stromversorgung"
+    value: "Netz- und Akkubetrieb"
+  - label: "Akku"
+    value: "5000 mAh"
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 30 Tage"
+  - label: "Ladezeit"
+    value: "etwa 7 bis 8 Stunden ohne Nutzung"
+  - label: "App"
+    value: "Nein"
+  - label: "Betriebsmodi"
+    value: "Dauerfluss am Netz, sensoraktiviert im Akkubetrieb"
+  - label: "Sensorreichweite"
+    value: "etwa 50 cm"
+  - label: "Lautstärke"
+    value: "Herstellerangabe 23 dB"
+  - label: "Filter"
+    value: "vierstufig"
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung etwa alle zwei Wochen"
+  - label: "Reinigung"
+    value: "nicht spülmaschinengeeignet"
+  - label: "Abmessungen"
+    value: "226 × 187 × 161 mm"
+  - label: "Gewicht"
+    value: "990 g"
+  - label: "Geeignet für"
+    value: "Katzen und kleine Hunde"
 faq:
-  - { question: "Für wen passt der PETLIBRO Dockstream Cordless?", answer: "Vor allem für Katzenhaushalte, bei denen 2,5 Liter und die konkrete Bauform zum Alltag passen." }
-  - { question: "Ersetzt der Filter die Reinigung?", answer: "Nein. Tank, Trinkfläche, Auslauf und Pumpe müssen unabhängig vom Filtersystem gereinigt werden." }
+  - question: "Hat der ursprüngliche Dockstream Cordless eine App?"
+    answer: "Nein. PETLIBRO grenzt ihn ausdrücklich von der Smart-Version ab."
+  - question: "Läuft das Wasser im Akkubetrieb dauerhaft?"
+    answer: "Nein. Ohne Kabel startet der Wasserfluss bei Annäherung für ungefähr 42 Sekunden und zusätzlich etwa einmal pro Stunde."
+  - question: "Wie lange hält der Akku?"
+    answer: "PETLIBRO nennt bis zu 30 Tage bei einem Tier und 48 Aktivierungen pro Tag."
+  - question: "Kann der Brunnen in die Spülmaschine?"
+    answer: "Nein. PETLIBRO rät wegen möglicher Verformung der ABS-Teile davon ab."
 ---
 
-## Redaktionelle Einordnung
+Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.
 
-Kabelloser Brunnen mit Bewegungssensor, Edelstahl-Trinkfläche und entnehmbarem Tank. Entscheidend sind nicht möglichst viele Funktionen, sondern Akzeptanz durch die Katze, leiser Betrieb, verfügbare Ersatzfilter und vollständig erreichbare wasserführende Teile.
+## Kein App-Modell
 
-## Alltag, Hygiene und Nutzererfahrungen
+Der ursprüngliche Dockstream Cordless bietet weder WLAN noch App-Tracking. Seine Stärke liegt allein in kabelloser Platzierung und sensoraktivierter Wasserausgabe.
 
-Wiederkehrende Erfahrungsberichte zu Pumpengeräusch, Zerlegbarkeit und Filterkosten werden stärker gewichtet als eine einzelne Sternebewertung. Auch ein großer Tank sollte regelmäßig geleert und frisch befüllt werden. Filter oder UVC-Technik verhindern Biofilm nicht zuverlässig ohne mechanische Reinigung.
+## Wasserfluss
 
-## Für wen lohnt sich das Modell?
+Am Netz läuft das Wasser kontinuierlich. Im Akkubetrieb aktiviert der Näherungssensor den Fluss für ungefähr 42 Sekunden.
 
-Das Modell ist eine passende Auswahl, wenn die Kapazität von 2,5 Liter zum Tierbestand passt. Ein vertrauter Wassernapf sollte bei der Einführung parallel stehen bleiben. Plötzlich stark verändertes Trinkverhalten gehört tierärztlich abgeklärt.
-
-**Quelle:** [Offizielle Herstellerinformation](https://petlibro.com/collections/dockstream). Das Bildmaterial ist eine KI-gestützte redaktionelle Visualisierung und kein offizielles Produktfoto.
-
+**Quellen:** [PETLIBRO Dockstream Cordless](https://au.petlibro.com/products/dockstream-battery-operated-water-fountain), [PETLIBRO Support](https://petlibro.com/pages/pre-sale-inquiries-about-dockstream-cordless-fountain-wf115-plwf115). Bild: redaktionelle Visualisierung.

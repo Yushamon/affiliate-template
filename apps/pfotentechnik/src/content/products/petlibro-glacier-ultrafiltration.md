@@ -1,63 +1,147 @@
 ---
 title: "PETLIBRO Glacier Ultrafiltration Fountain"
 slug: "petlibro-glacier-ultrafiltration"
-type: product
-layout: product
-description: "Edelstahl-Trinkbrunnen mit Ultrafiltrationsmodul und Fokus auf feine Wasserfilterung."
-recommendation: "Interessante Katzenbrunnen-Option für Haushalte, denen ca. 2,1 Liter Kapazität und eine alltagstaugliche Reinigung wichtig sind."
-manufacturer: { key: petlibro, name: "PETLIBRO", slug: petlibro }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "2,5-Liter-Trinkbrunnen aus Edelstahl 304 mit Ultrafiltrationsmembran, Bewegungssensor und breiter, flacher Trinkfläche."
+recommendation: "Spezialisierte Premiumoption für Katzenhalter, denen eine breite Edelstahl-Trinkfläche und besonders feine Filterung wichtiger sind als App oder kabelloser Betrieb."
+manufacturer:
+  key: "petlibro"
+  name: "PETLIBRO"
+  slug: "petlibro"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "PETLIBRO Glacier Ultrafiltration Fountain im Check", description: "Edelstahl-Trinkbrunnen mit Ultrafiltrationsmodul und Fokus auf feine Wasserfilterung.", canonical: "/produkt/petlibro-glacier-ultrafiltration/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, petlibro, hygiene]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "PETLIBRO Glacier Ultrafiltration Fountain im Check"
+  description: "PETLIBRO Glacier mit 2,5 Litern, Edelstahl 304, Ultrafiltration, Bewegungssensor und spülmaschinengeeignetem Tank."
+  canonical: "/produkt/petlibro-glacier-ultrafiltration/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "kleine-hunde"
+  - "edelstahl"
+  - "ultrafiltration"
+  - "sensor"
+  - "premium"
 images:
-  hero: { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/hero.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain in redaktioneller Visualisierung" }
-  thumbnail: { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/thumbnail.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/comparison.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain im Vergleich" }
+  hero:
+    src: "../../assets/images/products/petlibro-glacier-ultrafiltration/hero.webp"
+    alt: "PETLIBRO Glacier Ultrafiltration Fountain in redaktioneller Visualisierung"
+  thumbnail:
+    src: "../../assets/images/products/petlibro-glacier-ultrafiltration/thumbnail.webp"
+    alt: "PETLIBRO Glacier Ultrafiltration Fountain als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/petlibro-glacier-ultrafiltration/comparison.webp"
+    alt: "PETLIBRO Glacier Ultrafiltration Fountain im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-1.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain mit Wasserlauf in Nahaufnahme" }
-    - { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-2.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain mit Filter oder Pumpe" }
-    - { src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-3.webp", alt: "PETLIBRO Glacier Ultrafiltration Fountain bei Reinigung oder Nutzung" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=PETLIBRO%20Glacier%20Ultrafiltration%20Fountain" }
+    - src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-1.webp"
+      alt: "Breite Trinkfläche des PETLIBRO Glacier"
+    - src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-2.webp"
+      alt: "Ultrafiltrationsmodul des PETLIBRO Glacier"
+    - src: "../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-3.webp"
+      alt: "PETLIBRO Glacier im Katzenhaushalt"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETLIBRO+Glacier+Ultrafiltration+Fountain"
 rating: 4.4
 score: 88
-ratings: { verarbeitung: 4.4, bedienung: 4.4, reinigung: 4.300000000000001, lautstaerke: 4.5, preisleistung: 4.2 }
+ratings:
+  verarbeitung: 4.4
+  bedienung: 4.4
+  reinigung: 4.3
+  lautstaerke: 4.5
+  preisleistung: 4.2
 decision:
-  bestFor: [Katzenhaushalte, regelmäßige Wasserpflege, passende Stellfläche]
-  attention: [Filterfolgekosten, wöchentliche Komplettreinigung, individuelle Akzeptanz]
+  bestFor:
+    - "Katzen mit empfindlichen Schnurrhaaren"
+    - "Haushalte mit Wunsch nach Edelstahl 304"
+    - "Nutzer, die Ultrafiltration priorisieren"
+    - "Katzen und kleine Hunde"
+  attention:
+    - "kabelgebundener Betrieb"
+    - "proprietäres Ultrafiltrationsmodul verursacht Folgekosten"
+    - "Sensorbetrieb bedeutet keinen permanenten Wasserfluss"
+    - "Filtertechnik ersetzt keine mechanische Reinigung"
 review:
-  summary: "Edelstahl-Trinkbrunnen mit Ultrafiltrationsmodul und Fokus auf feine Wasserfilterung."
-  verdict: "Eine prüfenswerte Option, wenn ca. 2,1 Liter zum Haushalt passen und Ersatzfilter verfügbar sind."
-strengths: [tiergerechter Wasserlauf, alltagstaugliche Kapazität, auf Katzen ausgelegte Trinkfläche]
-weaknesses: [Filterfolgekosten, Pumpe muss separat gereinigt werden, keine Garantie für höhere Trinkmenge]
+  summary: "Der Glacier verbindet einen 2,5-Liter-Edelstahltank mit einer breiten, flachen Trinkfläche und einem Ultrafiltrationsmodul."
+  verdict: "Eine interessante Speziallösung für Filter- und Edelstahlfokus. Für einfache Wartung ohne proprietäres Filtersystem gibt es günstigere Alternativen."
+strengths:
+  - "Tank und Trinkfläche aus Edelstahl 304"
+  - "2,5 Liter Kapazität"
+  - "breite, flache Trinkfläche"
+  - "Ultrafiltrationsmodul"
+  - "bewegungsaktivierte Filterung"
+  - "spülmaschinengeeigneter Tank laut Hersteller"
+weaknesses:
+  - "hohe Filterfolgekosten möglich"
+  - "kein Akku und keine App"
+  - "Ultrafilter muss verfügbar und regelmäßig ersetzt werden"
+  - "Sensor- und Elektronikbereich bleiben von Hand zu reinigen"
 experience:
-  summary: "Die Einordnung berücksichtigt Herstellerdaten, Anleitung, unabhängige Vergleiche und wiederkehrende Nutzerberichte."
-  methodology: "Redaktioneller Produkt-Check; kein eigener Langzeittest. Herstellerangaben werden als solche gekennzeichnet."
-  maintenance: "Wasser täglich kontrollieren, Brunnen mindestens wöchentlich zerlegen und Pumpe sowie Auslauf mechanisch reinigen."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, oneisall-3-5l-cordless-fountain]
+  summary: "Die breite Trinkfläche kann für Katzen angenehmer sein als tiefe oder enge Schalen. Ob sie tatsächlich mehr trinken, bleibt individuell."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseite und Anleitung; kein eigener Langzeittest."
+  maintenance: "Tank und Trinkfläche regelmäßig reinigen. Ultrafiltrationsmodul, Ansaugung und Sensorbereich nach Herstellerangaben pflegen."
+alternatives:
+  - "petlibro-stainless-steel-fountain"
+  - "petkit-eversweet-3-pro-uvc"
+  - "petlibro-dockstream-2-smart"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "ca. 2,1 Liter" }
-  - { label: Zielgruppe, value: Katzen }
-  - { label: Wartung, value: wöchentlich vollständig reinigen }
+  - label: "Modell"
+    value: "PLWF007"
+  - label: "Kapazität"
+    value: "2,5 Liter"
+  - label: "Material"
+    value: "SUS 304 Edelstahl"
+  - label: "Trinkfläche"
+    value: "ca. 23,5 cm breite, flache Edelstahlfläche"
+  - label: "Stromversorgung"
+    value: "Netzbetrieb"
+  - label: "App"
+    value: "Nein"
+  - label: "Wasserfluss"
+    value: "bewegungsaktivierte Filterung"
+  - label: "Filter"
+    value: "Ultrafiltrationsmodul"
+  - label: "Reinigung"
+    value: "Tank laut Hersteller spülmaschinengeeignet"
+  - label: "Abmessungen"
+    value: "265 × 220 × 167 mm"
+  - label: "Gewicht"
+    value: "1,75 kg"
+  - label: "Geeignet für"
+    value: "Katzen und kleine Hunde"
 faq:
-  - { question: "Für wen passt der PETLIBRO Glacier Ultrafiltration Fountain?", answer: "Vor allem für Katzenhaushalte, bei denen ca. 2,1 Liter und die konkrete Bauform zum Alltag passen." }
-  - { question: "Ersetzt der Filter die Reinigung?", answer: "Nein. Tank, Trinkfläche, Auslauf und Pumpe müssen unabhängig vom Filtersystem gereinigt werden." }
+  - question: "Hat der PETLIBRO Glacier 2,1 oder 2,5 Liter?"
+    answer: "PETLIBRO nennt in der aktuellen offiziellen Spezifikation 2,5 Liter. Die frühere Angabe von rund 2,1 Litern war nicht korrekt."
+  - question: "Ist der Glacier komplett spülmaschinengeeignet?"
+    answer: "PETLIBRO nennt den Tank als spülmaschinengeeignet. Elektronik, Sensorik und Filtermodul dürfen nicht pauschal in die Spülmaschine."
+  - question: "Ersetzt die Ultrafiltration die Reinigung?"
+    answer: "Nein. Auch feine Filterung verhindert Ablagerungen und Biofilm nicht vollständig."
 ---
 
-## Redaktionelle Einordnung
+Der PETLIBRO Glacier unterscheidet sich von klassischen Pumpenbrunnen vor allem durch den Edelstahlaufbau und das Ultrafiltrationsmodul.
 
-Edelstahl-Trinkbrunnen mit Ultrafiltrationsmodul und Fokus auf feine Wasserfilterung. Entscheidend sind nicht möglichst viele Funktionen, sondern Akzeptanz durch die Katze, leiser Betrieb, verfügbare Ersatzfilter und vollständig erreichbare wasserführende Teile.
+## Breite Trinkfläche
 
-## Alltag, Hygiene und Nutzererfahrungen
+PETLIBRO bewirbt eine etwa 9,25 Zoll breite, flache Trinkfläche. Das kann Katzen entgegenkommen, die tiefe oder enge Näpfe meiden.
 
-Wiederkehrende Erfahrungsberichte zu Pumpengeräusch, Zerlegbarkeit und Filterkosten werden stärker gewichtet als eine einzelne Sternebewertung. Auch ein großer Tank sollte regelmäßig geleert und frisch befüllt werden. Filter oder UVC-Technik verhindern Biofilm nicht zuverlässig ohne mechanische Reinigung.
+## Filter und Wartung
 
-## Für wen lohnt sich das Modell?
+Das Ultrafiltrationssystem ist der zentrale Vorteil, bindet den Nutzer aber zugleich an passende Ersatzmodule. Tank, Trinkfläche, Ansaugung und Sensorik müssen unabhängig davon regelmäßig gereinigt werden.
 
-Das Modell ist eine passende Auswahl, wenn die Kapazität von ca. 2,1 Liter zum Tierbestand passt. Ein vertrauter Wassernapf sollte bei der Einführung parallel stehen bleiben. Plötzlich stark verändertes Trinkverhalten gehört tierärztlich abgeklärt.
-
-**Quelle:** [Offizielle Herstellerinformation](https://petlibro.com/collections/dockstream). Das Bildmaterial ist eine KI-gestützte redaktionelle Visualisierung und kein offizielles Produktfoto.
-
+**Quelle:** [PETLIBRO Glacier Ultrafiltration Fountain](https://petlibro.com/pages/glacier-ultrafiltration-stainless-steel-pet-water-fountain). Bild: redaktionelle Visualisierung.

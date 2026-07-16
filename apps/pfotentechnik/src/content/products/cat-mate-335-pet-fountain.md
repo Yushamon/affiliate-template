@@ -1,63 +1,147 @@
 ---
 title: "Cat Mate Pet Fountain 335"
 slug: "cat-mate-335-pet-fountain"
-type: product
-layout: product
-description: "Klassischer mehrstufiger Trinkbrunnen mit oberen und unteren Trinkbereichen."
-recommendation: "Interessante Katzenbrunnen-Option für Haushalte, denen ca. 2 Liter Kapazität und eine alltagstaugliche Reinigung wichtig sind."
-manufacturer: { key: cat-mate, name: "Cat Mate", slug: cat-mate }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "Klassischer 2-Liter-Trinkbrunnen aus BPA-freiem Polypropylen mit drei Trinkebenen, regelbarer Pumpe und austauschbarem Filter."
+recommendation: "Einfache Mehrstufen-Option für eine Katze oder einen kleinen Hund, wenn drei Trinkhöhen und gute Ersatzteilversorgung wichtiger sind als große Reserve oder Smart-Funktionen."
+manufacturer:
+  key: "cat-mate"
+  name: "Cat Mate"
+  slug: "cat-mate"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "Cat Mate Pet Fountain 335 im Check", description: "Klassischer mehrstufiger Trinkbrunnen mit oberen und unteren Trinkbereichen.", canonical: "/produkt/cat-mate-335-pet-fountain/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, cat-mate, hygiene]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "Cat Mate Pet Fountain 335 im Check"
+  description: "Cat Mate Pet Fountain 335 mit 2 Litern, drei Trinkebenen, BPA-freiem Kunststoff und monatlichem Filterwechsel."
+  canonical: "/produkt/cat-mate-335-pet-fountain/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "kleine-hunde"
+  - "offline"
+  - "drei-trinkebenen"
 images:
-  hero: { src: "../../assets/images/products/cat-mate-335-pet-fountain/hero.webp", alt: "Cat Mate Pet Fountain 335 in redaktioneller Visualisierung" }
-  thumbnail: { src: "../../assets/images/products/cat-mate-335-pet-fountain/thumbnail.webp", alt: "Cat Mate Pet Fountain 335 als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/cat-mate-335-pet-fountain/comparison.webp", alt: "Cat Mate Pet Fountain 335 im Vergleich" }
+  hero:
+    src: "../../assets/images/products/cat-mate-335-pet-fountain/hero.webp"
+    alt: "Cat Mate Pet Fountain 335 in redaktioneller Visualisierung"
+  thumbnail:
+    src: "../../assets/images/products/cat-mate-335-pet-fountain/thumbnail.webp"
+    alt: "Cat Mate Pet Fountain 335 als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/cat-mate-335-pet-fountain/comparison.webp"
+    alt: "Cat Mate Pet Fountain 335 im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-1.webp", alt: "Cat Mate Pet Fountain 335 mit Wasserlauf in Nahaufnahme" }
-    - { src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-2.webp", alt: "Cat Mate Pet Fountain 335 mit Filter oder Pumpe" }
-    - { src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-3.webp", alt: "Cat Mate Pet Fountain 335 bei Reinigung oder Nutzung" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=Cat%20Mate%20Pet%20Fountain%20335" }
+    - src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-1.webp"
+      alt: "Drei Trinkebenen des Cat Mate Pet Fountain 335"
+    - src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-2.webp"
+      alt: "Pumpe und Filter des Cat Mate Pet Fountain 335"
+    - src: "../../assets/images/products/cat-mate-335-pet-fountain/gallery-3.webp"
+      alt: "Cat Mate Pet Fountain 335 im Katzenhaushalt"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=Cat+Mate+Pet+Fountain+335"
 rating: 4.1
 score: 80
-ratings: { verarbeitung: 4.1, bedienung: 4.1, reinigung: 3.9999999999999996, lautstaerke: 4.199999999999999, preisleistung: 3.8999999999999995 }
+ratings:
+  verarbeitung: 4.1
+  bedienung: 4.1
+  reinigung: 4.0
+  lautstaerke: 4.2
+  preisleistung: 3.9
 decision:
-  bestFor: [Katzenhaushalte, regelmäßige Wasserpflege, passende Stellfläche]
-  attention: [Filterfolgekosten, wöchentliche Komplettreinigung, individuelle Akzeptanz]
+  bestFor:
+    - "eine Katze"
+    - "kleine Hunde"
+    - "Tiere mit unterschiedlichen bevorzugten Trinkhöhen"
+    - "Nutzer, die ein etabliertes Modell mit Ersatzteilen suchen"
+  attention:
+    - "nur 2 Liter Kapazität"
+    - "dauerhafter Netzbetrieb"
+    - "mehrere Ebenen erhöhen den Reinigungsaufwand"
+    - "Filterwechsel monatlich"
 review:
-  summary: "Klassischer mehrstufiger Trinkbrunnen mit oberen und unteren Trinkbereichen."
-  verdict: "Eine prüfenswerte Option, wenn ca. 2 Liter zum Haushalt passen und Ersatzfilter verfügbar sind."
-strengths: [tiergerechter Wasserlauf, alltagstaugliche Kapazität, auf Katzen ausgelegte Trinkfläche]
-weaknesses: [Filterfolgekosten, Pumpe muss separat gereinigt werden, keine Garantie für höhere Trinkmenge]
+  summary: "Der Cat Mate 335 kombiniert zwei Liter Kapazität mit drei Trinkebenen und einer regelbaren Niedervolt-Pumpe."
+  verdict: "Funktional, aber technisch altmodisch. Sein stärkstes Argument ist die weiterhin vorhandene Ersatzteilversorgung."
+strengths:
+  - "drei Trinkebenen"
+  - "einstellbarer Wasserfluss"
+  - "BPA-freies Polypropylen"
+  - "Niedervolt-Pumpe"
+  - "offizielle Ersatzpumpe und Netzteile verfügbar"
+  - "Filter für weiches und hartes Wasser erhältlich"
+weaknesses:
+  - "nur 2 Liter Kapazität"
+  - "kein Akku und keine App"
+  - "vergleichsweise viele Kanten und Ebenen zu reinigen"
+  - "Kunststoff statt Edelstahl"
 experience:
-  summary: "Die Einordnung berücksichtigt Herstellerdaten, Anleitung, unabhängige Vergleiche und wiederkehrende Nutzerberichte."
-  methodology: "Redaktioneller Produkt-Check; kein eigener Langzeittest. Herstellerangaben werden als solche gekennzeichnet."
-  maintenance: "Wasser täglich kontrollieren, Brunnen mindestens wöchentlich zerlegen und Pumpe sowie Auslauf mechanisch reinigen."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, oneisall-3-5l-cordless-fountain]
+  summary: "Mehrere Trinkebenen können die Akzeptanz verbessern, erschweren aber eine schnelle tägliche Reinigung."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen Closer-Pets-Support- und Ersatzteilinformationen; kein eigener Langzeittest."
+  maintenance: "Wasser alle zwei bis drei Tage wechseln. Pumpe monatlich vollständig zerlegen und bei Kalk gegebenenfalls mit verdünnter Essiglösung behandeln."
+alternatives:
+  - "cat-mate-shell-fountain"
+  - "petkit-eversweet-solo-se"
+  - "petlibro-stainless-steel-fountain"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "ca. 2 Liter" }
-  - { label: Zielgruppe, value: Katzen }
-  - { label: Wartung, value: wöchentlich vollständig reinigen }
+  - label: "Modell"
+    value: "CP335 / 335"
+  - label: "Kapazität"
+    value: "2 Liter"
+  - label: "Material"
+    value: "BPA-freies Polypropylen"
+  - label: "Trinkhöhen"
+    value: "drei Ebenen"
+  - label: "Stromversorgung"
+    value: "Niedervolt-Netzbetrieb"
+  - label: "App"
+    value: "Nein"
+  - label: "Wasserfluss"
+    value: "an der Pumpe einstellbar"
+  - label: "Filter"
+    value: "Polymer-Aktivkohle oder dreistufig mit Ionenaustauschharz"
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung monatlich"
+  - label: "Wasserwechsel"
+    value: "Herstellerempfehlung alle zwei bis drei Tage"
+  - label: "Pumpenreinigung"
+    value: "monatlich, bei hartem Wasser häufiger"
+  - label: "Geeignet für"
+    value: "Katzen und kleine Hunde"
 faq:
-  - { question: "Für wen passt der Cat Mate Pet Fountain 335?", answer: "Vor allem für Katzenhaushalte, bei denen ca. 2 Liter und die konkrete Bauform zum Alltag passen." }
-  - { question: "Ersetzt der Filter die Reinigung?", answer: "Nein. Tank, Trinkfläche, Auslauf und Pumpe müssen unabhängig vom Filtersystem gereinigt werden." }
+  - question: "Wie viel Wasser fasst der Cat Mate 335?"
+    answer: "Closer Pets führt das Modell als Zwei-Liter-Brunnen."
+  - question: "Wie oft muss der Filter gewechselt werden?"
+    answer: "Der Hersteller empfiehlt einen monatlichen Wechsel."
+  - question: "Kann der Wasserfluss angepasst werden?"
+    answer: "Ja. Die Pumpenleistung lässt sich über einen Min-Max-Regler verändern."
+  - question: "Sind Ersatzpumpe und Netzteil verfügbar?"
+    answer: "Ja. Closer Pets bietet beide Teile weiterhin separat an."
 ---
 
-## Redaktionelle Einordnung
+Der Cat Mate Pet Fountain 335 ist ein langjähriges, einfaches Modell mit drei Trinkebenen. Seine Technik ist nicht modern, aber nachvollziehbar und reparierbar.
 
-Klassischer mehrstufiger Trinkbrunnen mit oberen und unteren Trinkbereichen. Entscheidend sind nicht möglichst viele Funktionen, sondern Akzeptanz durch die Katze, leiser Betrieb, verfügbare Ersatzfilter und vollständig erreichbare wasserführende Teile.
+## Drei Trinkzonen
 
-## Alltag, Hygiene und Nutzererfahrungen
+Katzen und kleine Hunde können auf unterschiedlichen Höhen trinken. Bei empfindlichen Tieren kann das hilfreich sein, allerdings steigt mit jeder Ebene der Pflegeaufwand.
 
-Wiederkehrende Erfahrungsberichte zu Pumpengeräusch, Zerlegbarkeit und Filterkosten werden stärker gewichtet als eine einzelne Sternebewertung. Auch ein großer Tank sollte regelmäßig geleert und frisch befüllt werden. Filter oder UVC-Technik verhindern Biofilm nicht zuverlässig ohne mechanische Reinigung.
+## Wartung
 
-## Für wen lohnt sich das Modell?
+Closer Pets empfiehlt monatliche Pumpenreinigung und Filterwechsel. Das Wasser sollte alle zwei bis drei Tage vollständig erneuert werden.
 
-Das Modell ist eine passende Auswahl, wenn die Kapazität von ca. 2 Liter zum Tierbestand passt. Ein vertrauter Wassernapf sollte bei der Einführung parallel stehen bleiben. Plötzlich stark verändertes Trinkverhalten gehört tierärztlich abgeklärt.
-
-**Quelle:** [Offizielle Herstellerinformation](https://closerpets.com/products/replacement-power-supply-pet-fountain). Das Bildmaterial ist eine KI-gestützte redaktionelle Visualisierung und kein offizielles Produktfoto.
-
+**Quellen:** [Closer Pets Support](https://closerpets.com/pages/faq-cat-mate-pet-fountain-2-litre-335), [Filter](https://closerpets.com/products/3-stage-filter-cartridges-pet-fountain-4-pack). Bild: redaktionelle Visualisierung.

@@ -1,63 +1,153 @@
 ---
 title: "PETKIT Eversweet Solo SE"
 slug: "petkit-eversweet-solo-se"
-type: product
-layout: product
-description: "Kompakter Einstiegsbrunnen mit mehrstufigem Filter und lokaler Statusanzeige."
-recommendation: "Interessante Katzenbrunnen-Option für Haushalte, denen 1,8 Liter Kapazität und eine alltagstaugliche Reinigung wichtig sind."
-manufacturer: { key: petkit, name: "PETKIT", slug: petkit }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "Einfacher 1,8-Liter-Trinkbrunnen mit kabelloser Pumpe, kontinuierlichem Wasserfluss und mehrstufiger Filterung."
+recommendation: "Solider Einstieg für eine bis zwei Katzen oder einen kleinen Hund, wenn einfache Technik und leiser Betrieb wichtiger sind als App, Akku oder variable Modi."
+manufacturer:
+  key: "petkit"
+  name: "PETKIT"
+  slug: "petkit"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "PETKIT Eversweet Solo SE im Check", description: "Kompakter Einstiegsbrunnen mit mehrstufigem Filter und lokaler Statusanzeige.", canonical: "/produkt/petkit-eversweet-solo-se/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, petkit, hygiene]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "PETKIT Eversweet Solo SE im Check"
+  description: "PETKIT Eversweet Solo SE mit 1,8 Litern, kabelloser Pumpe, Dauerbetrieb und mehrstufigem Filter eingeordnet."
+  canonical: "/produkt/petkit-eversweet-solo-se/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "kleine-hunde"
+  - "einstieg"
+  - "leise"
 images:
-  hero: { src: "../../assets/images/products/petkit-eversweet-solo-se/hero.webp", alt: "PETKIT Eversweet Solo SE in redaktioneller Visualisierung" }
-  thumbnail: { src: "../../assets/images/products/petkit-eversweet-solo-se/thumbnail.webp", alt: "PETKIT Eversweet Solo SE als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/petkit-eversweet-solo-se/comparison.webp", alt: "PETKIT Eversweet Solo SE im Vergleich" }
+  hero:
+    src: "../../assets/images/products/petkit-eversweet-solo-se/hero.webp"
+    alt: "PETKIT Eversweet Solo SE in redaktioneller Visualisierung"
+  thumbnail:
+    src: "../../assets/images/products/petkit-eversweet-solo-se/thumbnail.webp"
+    alt: "PETKIT Eversweet Solo SE als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/petkit-eversweet-solo-se/comparison.webp"
+    alt: "PETKIT Eversweet Solo SE im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-1.webp", alt: "PETKIT Eversweet Solo SE mit Wasserlauf in Nahaufnahme" }
-    - { src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-2.webp", alt: "PETKIT Eversweet Solo SE mit Filter oder Pumpe" }
-    - { src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-3.webp", alt: "PETKIT Eversweet Solo SE bei Reinigung oder Nutzung" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=PETKIT%20Eversweet%20Solo%20SE" }
+    - src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-1.webp"
+      alt: "Wasserlauf des PETKIT Eversweet Solo SE"
+    - src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-2.webp"
+      alt: "Kabellose Pumpe des PETKIT Eversweet Solo SE"
+    - src: "../../assets/images/products/petkit-eversweet-solo-se/gallery-3.webp"
+      alt: "PETKIT Eversweet Solo SE im Katzenhaushalt"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+SE"
 rating: 4.3
 score: 84
-ratings: { verarbeitung: 4.3, bedienung: 4.3, reinigung: 4.2, lautstaerke: 4.3999999999999995, preisleistung: 4.1 }
+ratings:
+  verarbeitung: 4.3
+  bedienung: 4.3
+  reinigung: 4.2
+  lautstaerke: 4.4
+  preisleistung: 4.1
 decision:
-  bestFor: [Katzenhaushalte, regelmäßige Wasserpflege, passende Stellfläche]
-  attention: [Filterfolgekosten, wöchentliche Komplettreinigung, individuelle Akzeptanz]
+  bestFor:
+    - "eine bis zwei Katzen"
+    - "kleine Hunde"
+    - "Nutzer ohne Bedarf an App oder Akku"
+    - "ruhige Wohnbereiche"
+  attention:
+    - "nur kontinuierlicher Wasserfluss"
+    - "dauerhafter USB-Netzbetrieb erforderlich"
+    - "keine App-Verbindung"
+    - "nicht spülmaschinengeeignet"
 review:
-  summary: "Kompakter Einstiegsbrunnen mit mehrstufigem Filter und lokaler Statusanzeige."
-  verdict: "Eine prüfenswerte Option, wenn 1,8 Liter zum Haushalt passen und Ersatzfilter verfügbar sind."
-strengths: [tiergerechter Wasserlauf, alltagstaugliche Kapazität, auf Katzen ausgelegte Trinkfläche]
-weaknesses: [Filterfolgekosten, Pumpe muss separat gereinigt werden, keine Garantie für höhere Trinkmenge]
+  summary: "Der Eversweet Solo SE ist ein einfacher Netzbrunnen mit 1,8 Litern, kabelloser Pumpe und kontinuierlichem Wasserfluss."
+  verdict: "Eine solide Basislösung. Für App-Steuerung, variable Modi oder Edelstahl ist der Solo 2 beziehungsweise 3 Pro geeigneter."
+strengths:
+  - "1,8 Liter Kapazität"
+  - "kabellose Pumpe im Tank"
+  - "Herstellerangabe unter 25 dB"
+  - "mehrstufige Filterung"
+  - "automatische Abschaltung bei Wassermangel"
+  - "kompakte und vollständig zerlegbare Bauform"
+weaknesses:
+  - "kein Akku"
+  - "keine App"
+  - "kein einstellbarer Wasserfluss"
+  - "nicht spülmaschinengeeignet"
 experience:
-  summary: "Die Einordnung berücksichtigt Herstellerdaten, Anleitung, unabhängige Vergleiche und wiederkehrende Nutzerberichte."
-  methodology: "Redaktioneller Produkt-Check; kein eigener Langzeittest. Herstellerangaben werden als solche gekennzeichnet."
-  maintenance: "Wasser täglich kontrollieren, Brunnen mindestens wöchentlich zerlegen und Pumpe sowie Auslauf mechanisch reinigen."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, oneisall-3-5l-cordless-fountain]
+  summary: "Die einfache Technik reduziert Fehlbedienung, bietet aber kaum Anpassungsmöglichkeiten."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen PETKIT-Produktseite; kein eigener Langzeittest."
+  maintenance: "Alle Teile von Hand reinigen. Filter etwa alle vier Wochen wechseln und Pumpe regelmäßig von Haaren und Ablagerungen befreien."
+alternatives:
+  - "petkit-eversweet-solo-2-fountain"
+  - "petkit-eversweet-3-pro-uvc"
+  - "oneisall-2-2l-cordless-fountain"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "1,8 Liter" }
-  - { label: Zielgruppe, value: Katzen }
-  - { label: Wartung, value: wöchentlich vollständig reinigen }
+  - label: "Modell"
+    value: "P4103S"
+  - label: "Kapazität"
+    value: "1,8 Liter"
+  - label: "Material"
+    value: "BPA-freies ABS und Silikon"
+  - label: "Trinkfläche"
+    value: "Kunststoff"
+  - label: "Stromversorgung"
+    value: "USB-Kabel, 5 V/1 A; Netzteil nicht enthalten"
+  - label: "Nennleistung"
+    value: "2 W"
+  - label: "App"
+    value: "Nein"
+  - label: "Wasserfluss"
+    value: "kontinuierlich"
+  - label: "Lautstärke"
+    value: "Herstellerangabe bis 25 dB"
+  - label: "Filter"
+    value: "mehrstufig"
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung etwa alle vier Wochen"
+  - label: "Trockenlaufschutz"
+    value: "automatische Abschaltung bei Wassermangel"
+  - label: "Reinigung"
+    value: "vollständig zerlegbar, nicht spülmaschinengeeignet"
+  - label: "Abmessungen"
+    value: "160 × 160 × 154 mm"
+  - label: "Gewicht"
+    value: "0,75 kg"
+  - label: "Geeignet für"
+    value: "Katzen und kleine Hunde"
 faq:
-  - { question: "Für wen passt der PETKIT Eversweet Solo SE?", answer: "Vor allem für Katzenhaushalte, bei denen 1,8 Liter und die konkrete Bauform zum Alltag passen." }
-  - { question: "Ersetzt der Filter die Reinigung?", answer: "Nein. Tank, Trinkfläche, Auslauf und Pumpe müssen unabhängig vom Filtersystem gereinigt werden." }
+  - question: "Kann der PETKIT Eversweet Solo SE kabellos betrieben werden?"
+    answer: "Nein. Nur die Pumpe arbeitet kabellos im Tank. Der Brunnen selbst benötigt dauerhaft Strom."
+  - question: "Hat das Modell eine App?"
+    answer: "Nein. Der Solo SE arbeitet ohne App und ohne einstellbare Betriebsmodi."
+  - question: "Kann der Brunnen in die Spülmaschine?"
+    answer: "Nein. PETKIT gibt an, dass die Teile nicht spülmaschinengeeignet sind."
 ---
 
-## Redaktionelle Einordnung
+Der Eversweet Solo SE ist die einfachste aktuelle PETKIT-Variante. Er verzichtet auf App, Akku und variable Modi und konzentriert sich auf kontinuierlichen Wasserfluss.
 
-Kompakter Einstiegsbrunnen mit mehrstufigem Filter und lokaler Statusanzeige. Entscheidend sind nicht möglichst viele Funktionen, sondern Akzeptanz durch die Katze, leiser Betrieb, verfügbare Ersatzfilter und vollständig erreichbare wasserführende Teile.
+## Einfache Technik
 
-## Alltag, Hygiene und Nutzererfahrungen
+Die kabellose Pumpe erleichtert das Abheben des Tanks. Das bedeutet aber nicht, dass der Brunnen ohne Stromkabel arbeitet.
 
-Wiederkehrende Erfahrungsberichte zu Pumpengeräusch, Zerlegbarkeit und Filterkosten werden stärker gewichtet als eine einzelne Sternebewertung. Auch ein großer Tank sollte regelmäßig geleert und frisch befüllt werden. Filter oder UVC-Technik verhindern Biofilm nicht zuverlässig ohne mechanische Reinigung.
+## Reinigung
 
-## Für wen lohnt sich das Modell?
+Alle Teile lassen sich zerlegen, müssen laut PETKIT jedoch von Hand gereinigt werden. Der Filter sollte ungefähr alle vier Wochen gewechselt werden.
 
-Das Modell ist eine passende Auswahl, wenn die Kapazität von 1,8 Liter zum Tierbestand passt. Ein vertrauter Wassernapf sollte bei der Einführung parallel stehen bleiben. Plötzlich stark verändertes Trinkverhalten gehört tierärztlich abgeklärt.
-
-**Quelle:** [Offizielle Herstellerinformation](https://www.petkit.com/blogs/blog/which-is-the-best-automatic-cat-water-fountain-in-2026). Das Bildmaterial ist eine KI-gestützte redaktionelle Visualisierung und kein offizielles Produktfoto.
-
+**Quelle:** [PETKIT Eversweet Solo SE](https://www.petkit.com/products/eversweet-solo-se). Bild: redaktionelle Visualisierung.

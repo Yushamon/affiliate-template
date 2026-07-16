@@ -1,63 +1,146 @@
 ---
 title: "oneisall 2,2L Cordless Cat Fountain"
 slug: "oneisall-2-2l-cordless-fountain"
-type: product
-layout: product
-description: "Kompakter kabelloser Edelstahl-Trinkbrunnen mit bewegungsaktiviertem Wasserlauf."
-recommendation: "Interessante Katzenbrunnen-Option für Haushalte, denen 2,2 Liter Kapazität und eine alltagstaugliche Reinigung wichtig sind."
-manufacturer: { key: oneisall, name: "oneisall", slug: oneisall }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "Kompakter kabelloser 2,2-Liter-Trinkbrunnen aus PP mit Bewegungssensor, Dauerbetrieb und fünfstufiger Filterung."
+recommendation: "Günstige kabellose Option für Katzen und kleine Hunde, wenn kompakte Abmessungen und sehr leiser Betrieb wichtiger sind als Edelstahl oder App-Funktionen."
+manufacturer:
+  key: "oneisall"
+  name: "oneisall"
+  slug: "oneisall"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "oneisall 2,2L Cordless Cat Fountain im Check", description: "Kompakter kabelloser Edelstahl-Trinkbrunnen mit bewegungsaktiviertem Wasserlauf.", canonical: "/produkt/oneisall-2-2l-cordless-fountain/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, oneisall, hygiene]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "oneisall 2,2L Cordless Cat Fountain im Check"
+  description: "oneisall 2,2L Cordless Cat Fountain mit PP-Tank, Akku, Bewegungssensor, 20 dB und fünfstufigem Filter."
+  canonical: "/produkt/oneisall-2-2l-cordless-fountain/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "kleine-hunde"
+  - "kabellos"
+  - "sensor"
+  - "budget"
 images:
-  hero: { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/hero.webp", alt: "oneisall 2,2L Cordless Cat Fountain in redaktioneller Visualisierung" }
-  thumbnail: { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/thumbnail.webp", alt: "oneisall 2,2L Cordless Cat Fountain als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/comparison.webp", alt: "oneisall 2,2L Cordless Cat Fountain im Vergleich" }
+  hero:
+    src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/hero.webp"
+    alt: "oneisall 2,2L Cordless Cat Fountain in redaktioneller Visualisierung"
+  thumbnail:
+    src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/thumbnail.webp"
+    alt: "oneisall 2,2L Cordless Cat Fountain als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/comparison.webp"
+    alt: "oneisall 2,2L Cordless Cat Fountain im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-1.webp", alt: "oneisall 2,2L Cordless Cat Fountain mit Wasserlauf in Nahaufnahme" }
-    - { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-2.webp", alt: "oneisall 2,2L Cordless Cat Fountain mit Filter oder Pumpe" }
-    - { src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-3.webp", alt: "oneisall 2,2L Cordless Cat Fountain bei Reinigung oder Nutzung" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=oneisall%202%2C2L%20Cordless%20Cat%20Fountain" }
+    - src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-1.webp"
+      alt: "Wasserlauf des oneisall 2,2L Cordless Cat Fountain"
+    - src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-2.webp"
+      alt: "Pumpe und Filter des oneisall 2,2L Cordless Cat Fountain"
+    - src: "../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-3.webp"
+      alt: "oneisall 2,2L Cordless Cat Fountain im Katzenhaushalt"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=oneisall+2%2C2L+Cordless+Cat+Fountain"
 rating: 4.3
 score: 84
-ratings: { verarbeitung: 4.3, bedienung: 4.3, reinigung: 4.2, lautstaerke: 4.4, preisleistung: 4.1 }
+ratings:
+  verarbeitung: 4.3
+  bedienung: 4.3
+  reinigung: 4.2
+  lautstaerke: 4.4
+  preisleistung: 4.1
 decision:
-  bestFor: [Katzenhaushalte, regelmäßige Wasserpflege, passende Stellfläche]
-  attention: [Filterfolgekosten, wöchentliche Komplettreinigung, individuelle Akzeptanz]
+  bestFor:
+    - "eine Katze"
+    - "kleine Hunde"
+    - "kabellose Platzierung"
+    - "preisbewusste Haushalte"
+  attention:
+    - "Tank und Trinkfläche bestehen aus PP, nicht aus Edelstahl"
+    - "Akkulaufzeit von 30 Tagen ist eine Herstellerangabe"
+    - "keine App"
+    - "Filterwechsel alle zwei bis vier Wochen"
 review:
-  summary: "Kompakter kabelloser Edelstahl-Trinkbrunnen mit bewegungsaktiviertem Wasserlauf."
-  verdict: "Eine prüfenswerte Option, wenn 2,2 Liter zum Haushalt passen und Ersatzteile verfügbar sind."
-strengths: [tiergerechter Wasserlauf, alltagstaugliche Kapazität, auf Katzen ausgelegte Trinkfläche]
-weaknesses: [laufender Reinigungsaufwand, Pumpe muss separat gereinigt werden, keine Garantie für höhere Trinkmenge]
+  summary: "Der 2,2-Liter-Brunnen kombiniert einen PP-Tank, kabellosen Betrieb, Bewegungssensor und Dauerfluss."
+  verdict: "Eine einfache, leise Budgetlösung. Wer Edelstahl möchte, sollte zum 3,2-Liter-Modell greifen."
+strengths:
+  - "kabelloser Betrieb"
+  - "Herstellerangabe bis 30 Tage Akkulaufzeit"
+  - "Herstellerangabe unter 20 dB"
+  - "Bewegungs- und Dauerbetrieb"
+  - "fünfstufige Filterung"
+  - "abnehmbare Pumpeneinheit"
+weaknesses:
+  - "kein Edelstahl"
+  - "keine App oder Trinkprotokolle"
+  - "kleinere Reserve als 3,2- und 3,5-Liter-Modelle"
+  - "Filterfolgekosten"
 experience:
-  summary: "Die Einordnung berücksichtigt Herstellerdaten, Anleitung und wiederkehrende Nutzerberichte."
-  methodology: "Redaktioneller Produkt-Check; kein eigener Langzeittest. Herstellerangaben werden als solche gekennzeichnet."
-  maintenance: "Wasser täglich kontrollieren, Brunnen mindestens wöchentlich zerlegen und Pumpe sowie Auslauf mechanisch reinigen."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, oneisall-3-5l-cordless-fountain]
+  summary: "Der kompakte Kunststoffaufbau ist leicht, aber weniger robust und kratzfest als Edelstahl."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen oneisall-Produktseite; kein eigener Langzeittest."
+  maintenance: "Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis vier Wochen wechseln."
+alternatives:
+  - "oneisall-3-2l-cordless-fountain"
+  - "oneisall-3-5l-cordless-fountain"
+  - "petkit-eversweet-solo-se"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "2,2 Liter" }
-  - { label: Zielgruppe, value: Katzen }
-  - { label: Wartung, value: wöchentlich vollständig reinigen }
+  - label: "Modell"
+    value: "PW13"
+  - label: "Kapazität"
+    value: "2,2 Liter"
+  - label: "Material"
+    value: "Polypropylen (PP)"
+  - label: "Stromversorgung"
+    value: "Akku, Laden über USB-C mit 5 V/1 A"
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 30 Tage"
+  - label: "App"
+    value: "Nein"
+  - label: "Betriebsmodi"
+    value: "Bewegungssensor und Dauerfluss"
+  - label: "Lautstärke"
+    value: "Herstellerangabe unter 20 dB"
+  - label: "Filter"
+    value: "fünfstufig"
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung alle zwei bis vier Wochen"
+  - label: "Gewicht"
+    value: "ca. 0,62 kg"
+  - label: "Geeignet für"
+    value: "Katzen und kleine Hunde"
 faq:
-  - { question: "Für wen passt der oneisall 2,2L Cordless Cat Fountain?", answer: "Vor allem für Katzenhaushalte, bei denen 2,2 Liter und die konkrete Bauform zum Alltag passen." }
-  - { question: "Ersetzt der Filter die Reinigung?", answer: "Nein. Tank, Trinkfläche, Auslauf und Pumpe müssen unabhängig vom Filtersystem gereinigt werden." }
+  - question: "Ist der oneisall 2,2L aus Edelstahl?"
+    answer: "Nein. oneisall nennt Polypropylen als Material. Die frühere Edelstahlbeschreibung war falsch."
+  - question: "Wie lange hält der Akku?"
+    answer: "oneisall bewirbt bis zu 30 Tage. Die tatsächliche Laufzeit hängt von Modus und Nutzung ab."
+  - question: "Wie oft muss der Filter gewechselt werden?"
+    answer: "oneisall empfiehlt etwa alle zwei bis vier Wochen."
 ---
 
-## Redaktionelle Einordnung
+Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.
 
-Kompakter kabelloser Edelstahl-Trinkbrunnen mit bewegungsaktiviertem Wasserlauf. Entscheidend sind nicht möglichst viele Funktionen, sondern Akzeptanz durch die Katze, leiser Betrieb, verfügbare Ersatzteile und vollständig erreichbare wasserführende Teile.
+## Materialkorrektur
 
-## Alltag, Hygiene und Nutzererfahrungen
+Die offizielle Produktspezifikation nennt Polypropylen. Das Modell sollte daher nicht als Edelstahlbrunnen beworben oder gefiltert werden.
 
-Wiederkehrende Erfahrungsberichte zu Pumpengeräusch, Zerlegbarkeit und Filterkosten werden stärker gewichtet als eine einzelne Sternebewertung. Auch ein großer Tank sollte regelmäßig geleert und frisch befüllt werden. Filtertechnik verhindert Biofilm nicht zuverlässig ohne mechanische Reinigung.
+## Pflege
 
-## Für wen lohnt sich das Modell?
+Kontrollmodul und Elektronik dürfen nicht eingetaucht werden. Filter vor dem ersten Einsatz einweichen und den Brunnen regelmäßig vollständig zerlegen.
 
-Das Modell ist eine passende Auswahl, wenn die Kapazität von 2,2 Liter zum Tierbestand passt. Ein vertrauter Wassernapf sollte bei der Einführung parallel stehen bleiben. Plötzlich stark verändertes Trinkverhalten gehört tierärztlich abgeklärt.
-
-**Quelle:** [Offizielle Herstellerinformation](https://oneisall.com/pages/support-fountains). Das Bildmaterial ist eine KI-gestützte redaktionelle Visualisierung und kein offizielles Produktfoto.
-
+**Quelle:** [oneisall 2,2L Cordless Cat Water Fountain](https://oneisall.com/products/oneisall-2-2l-cordless-cat-water-fountain). Bild: redaktionelle Visualisierung.

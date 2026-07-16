@@ -1,51 +1,157 @@
 ---
 title: "PETLIBRO Dockstream RFID Smart"
 slug: "petlibro-dockstream-rfid-smart"
-type: product
-layout: product
-description: "3-Liter-Trinkbrunnen mit RFID-Anhängern zur Zuordnung von Trinkdaten in Mehrkatzenhaushalten."
-recommendation: "Besonders interessant, wenn Trinkmengen mehrerer Katzen getrennt beobachtet werden sollen."
-manufacturer: { key: petlibro, name: PETLIBRO, slug: petlibro }
-category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
+type: "product"
+layout: "product"
+description: "3-Liter-Trinkbrunnen mit RFID-Halsbandanhängern, tierbezogener App-Auswertung, Edelstahl-Trinkfläche und 2,4-GHz-WLAN."
+recommendation: "Spezialisierte Wahl für Mehrkatzenhaushalte, wenn Trinkmenge, Häufigkeit und Dauer pro Tier getrennt protokolliert werden sollen."
+manufacturer:
+  key: "petlibro"
+  name: "PETLIBRO"
+  slug: "petlibro"
+category:
+  key: "trinkbrunnen"
+  label: "Trinkbrunnen"
+  path: "/trinkbrunnen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
-author: { name: PfotenTechnik Redaktion }
-seo: { title: "PETLIBRO Dockstream RFID Smart im Check", description: "RFID-Trinkbrunnen für mehrere Katzen: Funktionen, Grenzen und Alternativen.", canonical: "/produkt/petlibro-dockstream-rfid-smart/", sitemap: true, priority: 0.8 }
-hub: { sections: [produkte, trinkbrunnen] }
-tags: [trinkbrunnen, katzen, rfid, mehrkatzen, app]
+updatedAt: "2026-07-16"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "PETLIBRO Dockstream RFID Smart im Check"
+  description: "PETLIBRO Dockstream RFID Smart mit 3 Litern, RFID-Tierzuordnung, App, Edelstahl-Trinkfläche und 2,4-GHz-WLAN."
+  canonical: "/produkt/petlibro-dockstream-rfid-smart/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "trinkbrunnen"
+tags:
+  - "trinkbrunnen"
+  - "katzen"
+  - "mehrkatzen"
+  - "rfid"
+  - "app"
+  - "edelstahl"
 images:
-  hero: { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/hero.webp", alt: "PETLIBRO Dockstream RFID Smart in redaktioneller Produktvisualisierung" }
-  thumbnail: { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/thumbnail.webp", alt: "Dockstream RFID als kompakte Ansicht" }
-  comparison: { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/comparison.webp", alt: "Dockstream RFID im Vergleich" }
+  hero:
+    src: "../../assets/images/products/petlibro-dockstream-rfid-smart/hero.webp"
+    alt: "PETLIBRO Dockstream RFID Smart in redaktioneller Produktvisualisierung"
+  thumbnail:
+    src: "../../assets/images/products/petlibro-dockstream-rfid-smart/thumbnail.webp"
+    alt: "PETLIBRO Dockstream RFID Smart als kompakte Ansicht"
+  comparison:
+    src: "../../assets/images/products/petlibro-dockstream-rfid-smart/comparison.webp"
+    alt: "PETLIBRO Dockstream RFID Smart im Vergleich"
   gallery:
-    - { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-1.webp", alt: "RFID-Anhänger des Trinkbrunnens" }
-    - { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-2.webp", alt: "Edelstahl-Trinkfläche in Nahaufnahme" }
-    - { src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-3.webp", alt: "RFID-Trinkbrunnen mit mehreren Katzen" }
-affiliate: { provider: amazon, label: "Verfügbarkeit und Preis prüfen", url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart" }
+    - src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-1.webp"
+      alt: "RFID-Anhänger des PETLIBRO Dockstream RFID Smart"
+    - src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-2.webp"
+      alt: "Edelstahl-Trinkfläche des PETLIBRO Dockstream RFID Smart"
+    - src: "../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-3.webp"
+      alt: "PETLIBRO Dockstream RFID Smart mit mehreren Katzen"
+affiliate:
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart"
 rating: 4.6
 score: 91
-ratings: { verarbeitung: 4.5, bedienung: 4.5, reinigung: 4.6, lautstaerke: 4.5, smartfunktionen: 4.8, preisleistung: 4.1 }
+ratings:
+  verarbeitung: 4.5
+  bedienung: 4.5
+  reinigung: 4.6
+  lautstaerke: 4.5
+  smartfunktionen: 4.8
+  preisleistung: 4.1
 decision:
-  bestFor: [Mehrkatzenhaushalte, getrennte Trinkprotokolle, App-Nutzer]
-  attention: [RFID-Anhänger statt implantiertem Mikrochip, Halsband erforderlich, kabelgebundener Betrieb]
-review: { summary: "Der Dockstream RFID ergänzt den bekannten 3-Liter-Brunnen um tierbezogene Trinkprotokolle.", verdict: "Die sinnvollere Dockstream-Variante, wenn nicht nur der Gesamtverbrauch, sondern einzelne Katzen beobachtet werden sollen." }
-strengths: [RFID-Zuordnung, App-Auswertung, 3-Liter-Tank, Edelstahl-Trinkfläche, Mehrkatzen-Fokus]
-weaknesses: [Halsbandanhänger nötig, kein Mikrochip-Leser, kabelgebunden, laufende Filterkosten]
+  bestFor:
+    - "Mehrkatzenhaushalte"
+    - "getrennte Trinkprotokolle für bis zu fünf Katzen"
+    - "Nutzer, die Menge, Häufigkeit und Dauer pro Tier beobachten möchten"
+    - "Katzen, die einen Sicherheits-Halsbandanhänger akzeptieren"
+  attention:
+    - "funktioniert nur mit PETLIBRO-RFID-Halsbandanhängern"
+    - "liest keinen implantierten Mikrochip"
+    - "RFID-Anhänger kann andere Mikrochip-Futterautomaten beeinflussen"
+    - "nur 2,4-GHz-WLAN und kabelgebundener Betrieb"
+review:
+  summary: "Der Dockstream RFID Smart ordnet Trinkereignisse über PETLIBRO-Halsbandanhänger einzelnen Katzen zu."
+  verdict: "Die sinnvollste Dockstream-Variante für echte Mehrtierauswertung, sofern Halsband und proprietärer RFID-Anhänger akzeptiert werden."
+strengths:
+  - "tierbezogene Trinkdaten für bis zu fünf Katzen"
+  - "erfasst Menge, Häufigkeit und Dauer"
+  - "3-Liter-Tank"
+  - "Edelstahl-Trinkfläche"
+  - "Herstellerangabe 23 dB"
+  - "abnehmbarer Tank ohne eingebaute Pumpe"
+weaknesses:
+  - "Halsbandanhänger zwingend erforderlich"
+  - "kein implantierter Mikrochip lesbar"
+  - "nur 2,4-GHz-WLAN"
+  - "Filterwechsel etwa alle zwei Wochen"
 experience:
-  summary: "RFID kann Veränderungen pro Tier sichtbarer machen, ersetzt bei auffälligem Trinkverhalten aber keine tierärztliche Abklärung."
-  methodology: "Redaktioneller Produkt-Check aus Herstellerdaten, Anleitung und Nutzerberichten; kein eigener Langzeittest."
-alternatives: [petlibro-dockstream-2-smart, petkit-eversweet-max-2-uvc, xiaomi-smart-pet-fountain-2]
+  summary: "RFID kann Unterschiede zwischen Tieren sichtbar machen. Messwerte bleiben Alltagshinweise und ersetzen keine kontrollierte Trinkmengenmessung."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseite; kein eigener Langzeittest."
+  maintenance: "Tank, Trinkfläche, Rotor und Filterbereich regelmäßig reinigen. Filter etwa alle zwei Wochen wechseln."
+alternatives:
+  - "petlibro-dockstream-2-smart"
+  - "petkit-eversweet-ultra"
+  - "surefeed-microchip-pet-feeder"
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 specs:
-  - { label: Kapazität, value: "3 Liter" }
-  - { label: Tiererkennung, value: "RFID-Halsbandanhänger" }
-  - { label: Verbindung, value: "WLAN und App" }
-  - { label: Stromversorgung, value: "Netzteil" }
-  - { label: Lieferumfang, value: "zwei RFID-Anhänger laut Hersteller" }
+  - label: "Modell"
+    value: "PLWF305"
+  - label: "Kapazität"
+    value: "3 Liter"
+  - label: "Material"
+    value: "ABS und Edelstahl"
+  - label: "Trinkfläche"
+    value: "Edelstahl"
+  - label: "Tiererkennung"
+    value: "PETLIBRO-RFID-Halsbandanhänger"
+  - label: "Anzahl Tiere"
+    value: "Tracking für bis zu fünf Katzen"
+  - label: "App"
+    value: "PETLIBRO-App"
+  - label: "Verbindung"
+    value: "2,4-GHz-WLAN"
+  - label: "Stromversorgung"
+    value: "kabelgebunden, 5 V/1 A"
+  - label: "Lautstärke"
+    value: "Herstellerangabe 23 dB"
+  - label: "Filter"
+    value: "mehrstufig"
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung etwa alle zwei Wochen"
+  - label: "Abmessungen"
+    value: "245 × 200 × 231 mm"
+  - label: "Gewicht"
+    value: "1,6 kg"
+  - label: "Lieferumfang"
+    value: "zwei RFID-Halsbandanhänger"
+  - label: "Geeignet für"
+    value: "vor allem Katzen, nachrangig kleine Hunde"
 faq:
-  - { question: "Liest der Brunnen den implantierten Mikrochip?", answer: "Nein. Die Zuordnung erfolgt über kompatible RFID-Anhänger am Halsband." }
-  - { question: "Ist RFID eine medizinische Messung?", answer: "Nein. Die Daten sind Alltagshinweise und ersetzen keine Diagnose oder kontrollierte Trinkmengenmessung." }
+  - question: "Liest der Dockstream RFID den implantierten Mikrochip?"
+    answer: "Nein. Er funktioniert nur mit kompatiblen PETLIBRO-RFID-Halsbandanhängern."
+  - question: "Wie viele Katzen können getrennt verfolgt werden?"
+    answer: "PETLIBRO nennt eine tierbezogene Auswertung für bis zu fünf Katzen."
+  - question: "Kann der Anhänger einen Mikrochip-Futterautomaten stören?"
+    answer: "PETLIBRO weist darauf hin, dass der RFID-Anhänger die Funktion fremder Mikrochip-Futterautomaten beeinflussen kann."
+  - question: "Ist der Brunnen für Hunde geeignet?"
+    answer: "PETLIBRO ordnet ihn primär Katzen und kleinen Hunden zu. Für mittelgroße und große Hunde empfiehlt der Hersteller die Capsule Dog Fountain."
 ---
 
-Der RFID-Dockstream adressiert ein echtes Problem: In Mehrkatzenhaushalten sagt der Gesamtwasserverbrauch wenig darüber aus, welches Tier tatsächlich getrunken hat. Die Zuordnung funktioniert jedoch nur, wenn die Katze den Anhänger zuverlässig trägt.
+Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.
 
-**Quelle:** [PETLIBRO Dockstream RFID](https://petlibro.com/products/dockstream-rfid-smart-fountain). Das Bildmaterial ist eine redaktionelle Visualisierung.
+## Proprietäres RFID-System
+
+Die Zuordnung funktioniert ausschließlich über PETLIBRO-Halsbandanhänger. Implantierte Mikrochips und fremde RFID-Tags werden nicht gelesen. Das Halsband ist deshalb keine optionale Ergänzung, sondern Voraussetzung.
+
+## Grenzen der Daten
+
+Menge, Häufigkeit und Dauer können Trends zeigen. Sie sind keine medizinische Messung und ersetzen bei auffälligem Trinkverhalten keine tierärztliche Abklärung.
+
+**Quelle:** [PETLIBRO Dockstream RFID Smart](https://petlibro.com/products/dockstream-rfid-smart-fountain). Bild: redaktionelle Visualisierung.
