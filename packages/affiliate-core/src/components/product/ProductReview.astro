@@ -344,6 +344,47 @@ const displayHighlights = [
           }
         </div>
 
+        <aside class="product-summary-card-v4">
+          {
+            displayHighlights.length > 0 && (
+              <section class="product-highlights-v4">
+                <h2>Das Wichtigste in Kürze</h2>
+
+                <ul>
+                  {
+                    displayHighlights.map((item) => (
+                      <li>
+                        <span
+                          class="product-list-icon product-list-icon--positive"
+                          aria-hidden="true"
+                        >
+                          ✓
+                        </span>
+                        <p>{item}</p>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </section>
+            )
+          }
+
+          {
+            quickFacts.length > 0 && (
+              <dl class="product-facts-v4">
+                {
+                  quickFacts.map((item) => (
+                    <div>
+                      <dt>{item.label}</dt>
+                      <dd>{String(item.value)}</dd>
+                    </div>
+                  ))
+                }
+              </dl>
+            )
+          }
+        </aside>
+
         <div class="product-hero-v4__content">
           <h1>{product.name}</h1>
 
@@ -428,44 +469,6 @@ const displayHighlights = [
             )
           }
 
-          {
-            displayHighlights.length > 0 && (
-              <section class="product-highlights-v4">
-                <h2>Das Wichtigste in Kürze</h2>
-
-                <ul>
-                  {
-                    displayHighlights.map((item) => (
-                      <li>
-                        <span
-                          class="product-list-icon product-list-icon--positive"
-                          aria-hidden="true"
-                        >
-                          ✓
-                        </span>
-                        <p>{item}</p>
-                      </li>
-                    ))
-                  }
-                </ul>
-              </section>
-            )
-          }
-
-          {
-            quickFacts.length > 0 && (
-              <dl class="product-facts-v4">
-                {
-                  quickFacts.map((item) => (
-                    <div>
-                      <dt>{item.label}</dt>
-                      <dd>{String(item.value)}</dd>
-                    </div>
-                  ))
-                }
-              </dl>
-            )
-          }
         </div>
       </section>
 
@@ -1005,8 +1008,12 @@ const displayHighlights = [
     text-align: center;
   }
 
+  .product-summary-card-v4 {
+    display: none;
+  }
+
   .product-highlights-v4 {
-    margin-top: 31px;
+    margin-top: 0;
   }
 
   .product-highlights-v4 h2 {
@@ -1069,7 +1076,7 @@ const displayHighlights = [
   }
 
   .product-facts-v4 {
-    margin-top: 27px;
+    margin-top: 24px;
   }
 
   .product-decision-v4,
@@ -1226,6 +1233,9 @@ const displayHighlights = [
       grid-template-columns:
         minmax(0, 0.92fr)
         minmax(0, 1.08fr);
+      grid-template-areas:
+        "media content"
+        "summary content";
       align-items: start;
       gap: 16px;
       overflow: visible;
@@ -1236,7 +1246,8 @@ const displayHighlights = [
     }
 
     .product-hero-v4__media,
-    .product-hero-v4__content {
+    .product-hero-v4__content,
+    .product-summary-card-v4 {
       align-self: start;
       border: 1px solid var(--v4-border);
       border-radius: 24px;
@@ -1245,7 +1256,29 @@ const displayHighlights = [
     }
 
     .product-hero-v4__media {
+      grid-area: media;
       overflow: hidden;
+    }
+
+    .product-hero-v4__content {
+      grid-area: content;
+    }
+
+    .product-summary-card-v4 {
+      grid-area: summary;
+      display: block;
+      padding: 26px;
+    }
+
+    .product-summary-card-v4 .product-highlights-v4 h2 {
+      margin-top: 0;
+    }
+
+    .product-summary-card-v4 .product-facts-v4 {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(140px, 1fr)
+      );
     }
 
     .product-hero-v4__image {
@@ -1259,6 +1292,32 @@ const displayHighlights = [
   }
 
   @media (max-width: 759px) {
+    .product-hero-v4 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-hero-v4__media {
+      order: 1;
+    }
+
+    .product-hero-v4__content {
+      order: 2;
+    }
+
+    .product-summary-card-v4 {
+      order: 3;
+      display: block;
+      margin: 0 20px 20px;
+      padding: 22px 0 0;
+      border-top: 1px solid var(--v4-border);
+    }
+
+    .product-summary-card-v4 .product-highlights-v4,
+    .product-summary-card-v4 .product-facts-v4 {
+      margin-inline: 0;
+    }
+
     .product-hero-v4__desktop-gallery {
       display: none;
     }
@@ -1289,6 +1348,10 @@ const displayHighlights = [
       scroll-snap-align: start;
       scroll-snap-stop: always;
       background: #edf2ef;
+    }
+
+    .product-summary-card-v4 .product-facts-v4 {
+      border-radius: 14px;
     }
 
     .product-hero-v4__dots {
