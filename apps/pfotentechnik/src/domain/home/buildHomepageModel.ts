@@ -239,7 +239,7 @@ export function buildHomepageModel({
 
   return {
     hero: {
-      eyebrow: "Unabhängiges Fachportal für Haustiertechnik",
+      eyebrow: "Herstellerunabhängig recherchiert",
       title:
         "Unabhängige Orientierung für smarte Haustiertechnik",
       text:
@@ -257,8 +257,8 @@ export function buildHomepageModel({
         href: "/wissen/"
       },
       signals: [
-        "Herstellerunabhängig eingeordnet",
-        "Technisch nachvollziehbar recherchiert",
+        "Herstellerunabhängig",
+        "Technisch recherchiert",
         "Regelmäßig aktualisiert"
       ],
       stats: [
