@@ -22,30 +22,35 @@ const { hero } = Astro.props as Props;
   <div class="home3-hero__shade" aria-hidden="true"></div>
 
   <div class="home3-hero__content">
-    <p class="home3-eyebrow home3-eyebrow--light">{hero.eyebrow}</p>
+    <p class="home3-eyebrow home3-eyebrow--light">
+      {hero.eyebrow}
+    </p>
+
     <h1 id="home3-title">{hero.title}</h1>
+
     <p class="home3-hero__text">{hero.text}</p>
 
     <div class="home3-hero__actions">
-      <a class="home3-button home3-button--primary" href={hero.primaryAction.href}>
+      <a
+        class="home3-button home3-button--primary"
+        href={hero.primaryAction.href}
+      >
         {hero.primaryAction.label}
       </a>
-      <a class="home3-button home3-button--ghost" href={hero.secondaryAction.href}>
+
+      <a
+        class="home3-button home3-button--ghost"
+        href={hero.secondaryAction.href}
+      >
         {hero.secondaryAction.label}
       </a>
     </div>
 
-    <ul class="home3-signals" aria-label="Redaktionelle Grundsätze">
+    <ul
+      class="home3-signals"
+      aria-label="Redaktionelle Grundsätze"
+    >
       {hero.signals.map((signal) => <li>{signal}</li>)}
     </ul>
   </div>
-
-  <dl class="home3-stats">
-    {hero.stats.map((stat) => (
-      <div>
-        <dd>{stat.value}</dd>
-        <dt>{stat.label}</dt>
-      </div>
-    ))}
-  </dl>
 </section>
