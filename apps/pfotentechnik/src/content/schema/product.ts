@@ -135,6 +135,48 @@ const productSpecSchema =
     ])
   });
 
+const productComparisonFiltersSchema =
+  z.object({
+    foodType: z
+      .array(
+        z.enum([
+          "dry",
+          "wet"
+        ])
+      )
+      .default([]),
+
+    app: z
+      .boolean()
+      .optional(),
+
+    camera: z
+      .boolean()
+      .optional(),
+
+    access: z
+      .enum([
+        "open",
+        "microchip"
+      ])
+      .optional(),
+
+    backupPower: z
+      .boolean()
+      .optional(),
+
+    priceTier: z
+      .enum([
+        "budget",
+        "midrange",
+        "premium"
+      ])
+      .optional()
+  })
+  .default({
+    foodType: []
+  });
+
 export const createProductContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
@@ -247,7 +289,10 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     features: z
       .array(z.string())
-      .default([])
+      .default([]),
+
+    comparisonFilters:
+      productComparisonFiltersSchema
   });
 
 export const productsCollection =

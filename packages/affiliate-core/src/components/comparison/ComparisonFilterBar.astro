@@ -20,17 +20,18 @@ const productFilterData = Object.fromEntries(
 ---
 
 {filters.length > 0 && (
-  <section
+  <div
     class="comparison-filter-panel"
     aria-labelledby="comparison-filter-title"
   >
     <div class="comparison-filter-panel__head">
       <div>
-        <span class="comparison-eyebrow">Auswahl eingrenzen</span>
-        <h2 id="comparison-filter-title">Welche Modelle passen zu dir?</h2>
+        <span class="comparison-eyebrow">Tabelle filtern</span>
+        <h2 id="comparison-filter-title">
+          Passende Modelle eingrenzen
+        </h2>
         <p>
-          Wähle ein oder mehrere Merkmale. Innerhalb einer Gruppe gilt „oder“,
-          zwischen den Gruppen „und“.
+          Die Auswahl wirkt direkt auf Tabelle und mobile Produktkarten.
         </p>
       </div>
 
@@ -69,99 +70,10 @@ const productFilterData = Object.fromEntries(
     </div>
 
     <p class="comparison-filter-count" aria-live="polite">
-      <strong data-comparison-result-count>{products.length}</strong>
+      <strong data-comparison-result-count>
+        {products.length}
+      </strong>
       <span> passende Modelle</span>
     </p>
-  </section>
+  </div>
 )}
-
-<script>
-  document.querySelectorAll("[data-comparison-filters]").forEach((filterRoot) => {
-    if (!(filterRoot instanceof HTMLElement)) return;
-
-    const shell = filterRoot.closest(".comparison-shell");
-    if (!(shell instanceof HTMLElement)) return;
-
-    const rawProducts = filterRoot.dataset.products;
-    if (!rawProducts) return;
-
-    const productData = JSON.parse(rawProducts);
-    const inputs = Array.from(
-      filterRoot.querySelectorAll("input[data-filter-key]")
-    );
-
-    const count = shell.querySelector("[data-comparison-result-count]");
-    const resetButton = shell.querySelector("[data-comparison-filter-reset]");
-    const emptyState = shell.querySelector("[data-comparison-empty]");
-
-    const getSelected = () => {
-      const selected = new Map();
-
-      inputs.forEach((input) => {
-        if (!(input instanceof HTMLInputElement) || !input.checked) return;
-
-        const key = input.dataset.filterKey;
-        if (!key) return;
-
-        const current = selected.get(key) ?? [];
-        selected.set(key, [...current, input.value]);
-      });
-
-      return selected;
-    };
-
-    const applyFilters = () => {
-      const selected = getSelected();
-      let visibleCount = 0;
-
-      Object.entries(productData).forEach(([slug, values]) => {
-        const matches = Array.from(selected.entries()).every(
-          ([key, selectedValues]) => {
-            const productValues = values[key] ?? [];
-            return selectedValues.some((value) =>
-              productValues.includes(value)
-            );
-          }
-        );
-
-        shell
-          .querySelectorAll(`[data-product-slug="${CSS.escape(slug)}"]`)
-          .forEach((element) => {
-            if (element instanceof HTMLElement) {
-              element.hidden = !matches;
-            }
-          });
-
-        shell
-          .querySelectorAll(`[data-product-column="${CSS.escape(slug)}"]`)
-          .forEach((element) => {
-            if (element instanceof HTMLElement) {
-              element.hidden = !matches;
-            }
-          });
-
-        if (matches) visibleCount += 1;
-      });
-
-      if (count) count.textContent = String(visibleCount);
-
-      if (emptyState instanceof HTMLElement) {
-        emptyState.hidden = visibleCount !== 0;
-      }
-    };
-
-    inputs.forEach((input) => {
-      input.addEventListener("change", applyFilters);
-    });
-
-    resetButton?.addEventListener("click", () => {
-      inputs.forEach((input) => {
-        if (input instanceof HTMLInputElement) {
-          input.checked = false;
-        }
-      });
-
-      applyFilters();
-    });
-  });
-</script>

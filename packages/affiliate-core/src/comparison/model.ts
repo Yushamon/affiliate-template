@@ -57,6 +57,7 @@ export type ComparisonCell = {
 export type ComparisonRow = {
   criterion: ComparisonCriterion;
   cells: ComparisonCell[];
+  hasDifferences: boolean;
 };
 
 export type ComparisonFilterOption = {
@@ -74,12 +75,13 @@ export type ComparisonViewModel = {
   title: string;
   description: string;
   eyebrow: string;
-  heroImage?: CoreImage;
+  heroImage: CoreImage;
   facts: Array<{ label: string; value: string }>;
   products: ComparisonProduct[];
   recommendationProducts: ComparisonProduct[];
   rows: ComparisonRow[];
   filters: ComparisonFilter[];
+  initialVisibleProducts: number;
   verdict: {
     title: string;
     text: string;

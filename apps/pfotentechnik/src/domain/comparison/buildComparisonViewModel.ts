@@ -44,34 +44,6 @@ const criterionAliases: Record<string, string[]> = {
   ]
 };
 
-const priceCategoryLabels = {
-  budget: "Budget",
-  midrange: "Mittelklasse",
-  premium: "Premium"
-} as const;
-
-const collectEvidence = (product: ProductEntry): string => {
-  const data = product.data;
-
-  return [
-    data.title,
-    data.recommendation,
-    data.useCase ?? "",
-    data.capacity ?? "",
-    data.priceCategory ?? "",
-    ...data.features,
-    ...data.strengths,
-    ...data.weaknesses,
-    ...data.decision.bestFor,
-    ...data.decision.attention,
-    ...data.specs.map(
-      (spec) => `${spec.label}: ${String(spec.value)}`
-    )
-  ]
-    .join(" ")
-    .toLocaleLowerCase("de");
-};
-
 const addValue = (
   values: Record<string, string[]>,
   key: string,
@@ -82,6 +54,135 @@ const addValue = (
   if (!current.includes(value)) {
     values[key] = [...current, value];
   }
+};
+
+const collectEvidence = (product: ProductEntry): string =>
+  [
+    product.data.title,
+    product.data.recommendation,
+    product.data.useCase ?? "",
+    product.data.capacity ?? "",
+    ...product.data.features,
+    ...product.data.strengths,
+    ...product.data.weaknesses,
+    ...product.data.decision.bestFor,
+    ...product.data.decision.attention,
+    ...product.data.specs.map(
+      (spec) => `${spec.label}: ${String(spec.value)}`
+    )
+  ]
+    .join(" ")
+    .toLocaleLowerCase("de");
+
+const inferFallbackFilters = (
+  product: ProductEntry
+): Record<string, string[]> => {
+  const values: Record<string, string[]> = {};
+  const evidence = collectEvidence(product);
+
+  if (/trockenfutter|kroketten|dry food/.test(evidence)) {
+    addValue(values, "futterart", "trockenfutter");
+  }
+
+  if (/nassfutter|wet food|kuehl|gekuehlt|kühl/.test(evidence)) {
+    addValue(values, "futterart", "nassfutter");
+  }
+
+  if (/ohne app|keine app|nicht per app/.test(evidence)) {
+    addValue(values, "app", "ohne-app");
+  } else if (/app|wlan|wi-fi|wifi/.test(evidence)) {
+    addValue(values, "app", "mit-app");
+  }
+
+  if (/ohne kamera|keine kamera/.test(evidence)) {
+    addValue(values, "kamera", "ohne-kamera");
+  } else if (/kamera|video|ueberwachung|überwachung/.test(evidence)) {
+    addValue(values, "kamera", "mit-kamera");
+  }
+
+  if (/mikrochip|chip-erkennung|chipzugang/.test(evidence)) {
+    addValue(values, "zugang", "mikrochip");
+  } else {
+    addValue(values, "zugang", "freier-zugang");
+  }
+
+  if (/notstrom|backup|batteriebetrieb|batteriebackup|doppelte stromversorgung/.test(evidence)) {
+    addValue(values, "strombackup", "mit-backup");
+  } else if (/netzteil|netzbetrieb|stromanschluss/.test(evidence)) {
+    addValue(values, "strombackup", "ohne-backup");
+  }
+
+  if (product.data.priceCategory) {
+    addValue(values, "preisklasse", product.data.priceCategory);
+  }
+
+  return values;
+};
+
+const getStructuredFilters = (
+  product: ProductEntry
+): Record<string, string[]> => {
+  const source = product.data.comparisonFilters;
+  const values: Record<string, string[]> = {};
+
+  source.foodType.forEach((foodType) => {
+    addValue(
+      values,
+      "futterart",
+      foodType === "dry" ? "trockenfutter" : "nassfutter"
+    );
+  });
+
+  if (typeof source.app === "boolean") {
+    addValue(values, "app", source.app ? "mit-app" : "ohne-app");
+  }
+
+  if (typeof source.camera === "boolean") {
+    addValue(
+      values,
+      "kamera",
+      source.camera ? "mit-kamera" : "ohne-kamera"
+    );
+  }
+
+  if (source.access) {
+    addValue(
+      values,
+      "zugang",
+      source.access === "microchip"
+        ? "mikrochip"
+        : "freier-zugang"
+    );
+  }
+
+  if (typeof source.backupPower === "boolean") {
+    addValue(
+      values,
+      "strombackup",
+      source.backupPower ? "mit-backup" : "ohne-backup"
+    );
+  }
+
+  if (source.priceTier) {
+    addValue(values, "preisklasse", source.priceTier);
+  }
+
+  return values;
+};
+
+const mergeFilterValues = (
+  primary: Record<string, string[]>,
+  fallback: Record<string, string[]>
+) => {
+  const result = { ...fallback };
+
+  Object.entries(primary).forEach(([key, values]) => {
+    if (values.length > 0) {
+      result[key] = values;
+    }
+  });
+
+  return result;
 };
 
 export function buildComparisonViewModel({
@@ -187,23 +288,36 @@ export function buildComparisonViewModel({
     return "–";
   };
 
-  const rows: ComparisonRow[] = data.criteria.map(
-    (criterion) => ({
-      criterion: {
-        key: criterion.key,
-        label: criterion.label,
-        description: criterion.description
-      },
-      cells: items.map((item) => ({
-        productSlug: item.slug,
-        value: getCriterionValue(
-          item,
-          criterion.key,
-          criterion.label
-        )
-      }))
-    })
-  );
+  const rawRows = data.criteria.map((criterion) => ({
+    criterion: {
+      key: criterion.key,
+      label: criterion.label,
+      description: criterion.description
+    },
+    cells: items.map((item) => ({
+      productSlug: item.slug,
+      value: getCriterionValue(
+        item,
+        criterion.key,
+        criterion.label
+      )
+    }))
+  }));
+
+  const rows: ComparisonRow[] = rawRows.map((row) => {
+    const normalizedValues = new Set(
+      row.cells.map((cell) =>
+        cell.value && cell.value !== "–"
+          ? cell.value.trim().toLocaleLowerCase("de")
+          : "keine-angabe"
+      )
+    );
+
+    return {
+      ...row,
+      hasDifferences: normalizedValues.size > 1
+    };
+  });
 
   const filterValuesBySlug = new Map<
     string,
@@ -211,57 +325,20 @@ export function buildComparisonViewModel({
   >();
 
   items.forEach((item) => {
-    const values: Record<string, string[]> = {};
     const product = productBySlug.get(item.slug);
 
     if (!product) {
-      filterValuesBySlug.set(item.slug, values);
+      filterValuesBySlug.set(item.slug, {});
       return;
     }
 
-    const evidence = collectEvidence(product);
-
-    if (/trockenfutter|kroketten|dry food/.test(evidence)) {
-      addValue(values, "futterart", "trockenfutter");
-    }
-
-    if (/nassfutter|wet food|kuehl|gekuehlt|kühl/.test(evidence)) {
-      addValue(values, "futterart", "nassfutter");
-    }
-
-    if (/ohne app|keine app|nicht per app/.test(evidence)) {
-      addValue(values, "app", "ohne-app");
-    } else if (/app|wlan|wi-fi|wifi/.test(evidence)) {
-      addValue(values, "app", "mit-app");
-    }
-
-    if (/ohne kamera|keine kamera/.test(evidence)) {
-      addValue(values, "kamera", "ohne-kamera");
-    } else if (/kamera|video|ueberwachung|überwachung/.test(evidence)) {
-      addValue(values, "kamera", "mit-kamera");
-    }
-
-    if (/mikrochip|chip-erkennung|chipzugang/.test(evidence)) {
-      addValue(values, "zugang", "mikrochip");
-    } else {
-      addValue(values, "zugang", "freier-zugang");
-    }
-
-    if (/notstrom|backup|batteriebetrieb|batteriebackup|doppelte stromversorgung/.test(evidence)) {
-      addValue(values, "strombackup", "mit-backup");
-    } else if (/netzteil|netzbetrieb|stromanschluss/.test(evidence)) {
-      addValue(values, "strombackup", "ohne-backup");
-    }
-
-    if (product.data.priceCategory) {
-      addValue(
-        values,
-        "preisklasse",
-        product.data.priceCategory
-      );
-    }
-
-    filterValuesBySlug.set(item.slug, values);
+    filterValuesBySlug.set(
+      item.slug,
+      mergeFilterValues(
+        getStructuredFilters(product),
+        inferFallbackFilters(product)
+      )
+    );
   });
 
   const filterDefinitions: ComparisonFilter[] = [
@@ -308,9 +385,11 @@ export function buildComparisonViewModel({
     {
       key: "preisklasse",
       label: "Preisklasse",
-      options: Object.entries(priceCategoryLabels).map(
-        ([value, label]) => ({ value, label })
-      )
+      options: [
+        { value: "budget", label: "Budget" },
+        { value: "midrange", label: "Mittelklasse" },
+        { value: "premium", label: "Premium" }
+      ]
     }
   ];
 
@@ -453,6 +532,7 @@ export function buildComparisonViewModel({
     recommendationProducts: recommendations,
     rows,
     filters,
+    initialVisibleProducts: 5,
     verdict: {
       title: data.recommendation.title,
       text: data.recommendation.text,
