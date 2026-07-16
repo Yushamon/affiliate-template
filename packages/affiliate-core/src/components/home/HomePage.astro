@@ -16,21 +16,12 @@ type Props = {
 const { model } = Astro.props as Props;
 ---
 
-<div class="home3">
+<div class="home3 home5">
   <HomeHero hero={model.hero} />
 
   <HomeNavigation
     mode="comparison-decision"
     decisionCards={model.decisionComparisons}
-  />
-
-  <HomeSection
-    kind="editorial"
-    id="vergleiche"
-    eyebrow="Beliebte Entscheidungen"
-    title="Vergleiche mit klaren Unterschieden"
-    text="Modelle, Kriterien und Einsatzzwecke direkt gegenübergestellt. Fehlende Angaben werden sichtbar gemacht und nicht geschätzt."
-    items={model.comparisons}
   />
 
   <HomeSection
@@ -57,15 +48,6 @@ const { model } = Astro.props as Props;
   />
 
   <HomeUseCases items={model.useCases} />
-
-  <HomeSection
-    kind="categories"
-    id="produktwelten"
-    eyebrow="Produktwelten"
-    title="Weitere Orientierung nach Thema"
-    text="Alle vorhandenen Inhalte nach Produktart und Alltagssituation gebündelt."
-    items={model.categories}
-  />
 
   <HomeStats stats={model.hero.stats} />
 
