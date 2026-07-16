@@ -119,6 +119,17 @@ const ratingEntries = Object
 
 const topMetrics = ratingEntries.slice(0, 3);
 
+const getRatingDescriptor = (rating: number) => {
+  if (rating >= 4.7) return "Stark";
+  if (rating >= 4.4) return "Überzeugend";
+  if (rating >= 4.1) return "Gut";
+  if (rating >= 3.7) return "Solide";
+  return "Mit Abstrichen";
+};
+
+const getRatingWidth = (rating: number) =>
+  `${Math.max(0, Math.min(100, (rating / 5) * 100))}%`;
+
 const specValue = (label: string) =>
   product.specs.find(
     (item) =>
@@ -533,16 +544,34 @@ const displayHighlights = [
 
             <div class="product-ratings-v4__grid">
               {
-                ratingEntries.map(([key, value]) => (
-                  <article>
-                    <strong>{getRatingLabel(key)}</strong>
-                    <span>
-                      {Number(value)
-                        .toFixed(1)
-                        .replace(".", ",")} / 5
-                    </span>
-                  </article>
-                ))
+                ratingEntries.map(([key, value]) => {
+                  const numericValue = Number(value);
+
+                  return (
+                    <article class="product-rating-card-v4">
+                      <div class="product-rating-card-v4__top">
+                        <strong>{getRatingLabel(key)}</strong>
+
+                        <span>
+                          {numericValue
+                            .toFixed(1)
+                            .replace(".", ",")} / 5
+                        </span>
+                      </div>
+
+                      <div
+                        class="product-rating-card-v4__bar"
+                        aria-hidden="true"
+                      >
+                        <span
+                          style={`--rating-progress:${getRatingWidth(numericValue)}`}
+                        ></span>
+                      </div>
+
+                      <small>{getRatingDescriptor(numericValue)}</small>
+                    </article>
+                  );
+                })
               }
             </div>
           </section>
@@ -1180,28 +1209,62 @@ const displayHighlights = [
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(145px, 1fr)
+      minmax(190px, 1fr)
     );
-    gap: 10px;
+    gap: 12px;
   }
 
-  .product-ratings-v4__grid article {
+  .product-rating-card-v4 {
+    padding: 18px;
+    border: 1px solid var(--v4-border);
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .product-rating-card-v4__top {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    gap: 14px;
-    padding: 15px 17px;
-    border-bottom: 1px solid var(--v4-border);
+    gap: 12px;
   }
 
-  .product-ratings-v4__grid article strong {
+  .product-rating-card-v4__top strong {
     color: var(--v4-ink);
+    font-size: 0.98rem;
   }
 
-  .product-ratings-v4__grid article span {
+  .product-rating-card-v4__top > span {
     flex: none;
     color: var(--v4-green);
-    font-weight: 800;
+    font-weight: 850;
+  }
+
+  .product-rating-card-v4__bar {
+    height: 7px;
+    margin-top: 13px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e7efec;
+  }
+
+  .product-rating-card-v4__bar > span {
+    display: block;
+    width: var(--rating-progress);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(
+      90deg,
+      var(--v4-green),
+      #36a27f
+    );
+  }
+
+  .product-rating-card-v4 small {
+    display: block;
+    margin-top: 9px;
+    color: var(--v4-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
   }
 
   .product-specs-v4 dl {

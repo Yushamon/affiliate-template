@@ -12,6 +12,69 @@ interface Props {
 const {
   alternatives = []
 } = Astro.props as Props;
+
+const cleanText = (value: string) =>
+  value
+    .replace(/^\s*(?:[✓✔☑✅✕✖×❌✗✘•\-–—]+\s*)+/u, "")
+    .trim();
+
+const formatHeadline = (value: string) =>
+  cleanText(value)
+    .replace(/\bapp-auswertung\b/giu, "App-Auswertung")
+    .replace(/\bpremiumanspruch\b/giu, "Premiumanspruch")
+    .replace(/\baufstellung\b/giu, "Aufstellung")
+    .replace(/\bapp\b/giu, "App")
+    .replace(/\buvc\b/giu, "UVC");
+
+const iconType = (alternative: AlternativeRecommendation) => {
+  const evidence = [
+    alternative.icon,
+    alternative.headline,
+    alternative.reason,
+    alternative.difference,
+    ...alternative.tags
+  ]
+    .join(" ")
+    .toLocaleLowerCase("de");
+
+  if (/akku|kabellos|cordless|batterie/.test(evidence)) {
+    return "battery";
+  }
+
+  if (/app|smart|auswertung|wlan|wifi/.test(evidence)) {
+    return "app";
+  }
+
+  if (/premium|uvc|hygiene|filter/.test(evidence)) {
+    return "shield";
+  }
+
+  if (/schloss|zugang|chip|mikrochip/.test(evidence)) {
+    return "lock";
+  }
+
+  return "compare";
+};
+
+const iconSvg = (type: string) => {
+  if (type === "battery") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h9a2 2 0 0 1 2 2v1h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v10h9V7H7Zm2 2h5v6H9V9Z"/></svg>`;
+  }
+
+  if (type === "app") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2h8a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8Zm3 13h2v2h-2v-2Z"/></svg>`;
+  }
+
+  if (type === "shield") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 3v6c0 5.1-3.4 9.6-8 11-4.6-1.4-8-5.9-8-11V5l8-3Zm0 2.2L6 6.4V11c0 3.9 2.4 7.4 6 8.7 3.6-1.3 6-4.8 6-8.7V6.4l-6-2.2Zm-1 4.3h2V11h2.5v2H13v2.5h-2V13H8.5v-2H11V8.5Z"/></svg>`;
+  }
+
+  if (type === "lock") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V7a5 5 0 0 1 10 0v3h1a2 2 0 0 1 2 2v8H4v-8a2 2 0 0 1 2-2h1Zm2 0h6V7a3 3 0 0 0-6 0v3Zm-3 2v6h12v-6H6Zm5 1h2v4h-2v-4Z"/></svg>`;
+  }
+
+  return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v2H7V3Zm-3 4h16v14H4V7Zm2 2v10h12V9H6Zm2 2h8v2H8v-2Zm0 4h5v2H8v-2Z"/></svg>`;
+};
 ---
 
 {
@@ -34,24 +97,19 @@ const {
 
             <div class="alternative-recommendation-content">
               <div class="alternative-recommendation-meta">
-                <span>
-                  Wann stattdessen?
-                </span>
+                <span>Wann stattdessen?</span>
 
-                <strong>
-                  {alternative.score} / 100
-                </strong>
+                <strong>{alternative.score} / 100</strong>
               </div>
 
               <span
                 class="alternative-recommendation-icon"
                 aria-hidden="true"
-              >
-                {alternative.icon}
-              </span>
+                set:html={iconSvg(iconType(alternative))}
+              />
 
               <p class="alternative-recommendation-headline">
-                {alternative.headline}
+                {formatHeadline(alternative.headline)}
               </p>
 
               <h3>
@@ -65,13 +123,8 @@ const {
               </p>
 
               <div class="alternative-recommendation-difference">
-                <strong>
-                  Größter Unterschied
-                </strong>
-
-                <p>
-                  {alternative.difference}
-                </p>
+                <strong>Größter Unterschied</strong>
+                <p>{alternative.difference}</p>
               </div>
 
               {
@@ -79,9 +132,7 @@ const {
                   <ul class="alternative-recommendation-tags">
                     {
                       alternative.tags.map((tag) => (
-                        <li>
-                          {tag}
-                        </li>
+                        <li>{cleanText(tag)}</li>
                       ))
                     }
                   </ul>
@@ -89,16 +140,11 @@ const {
               }
 
               <div class="alternative-recommendation-footer">
-                <span>
-                  {alternative.rating} / 5
-                </span>
+                <span>{alternative.rating} / 5</span>
 
                 <a href={alternative.url}>
                   Zum vollständigen Test
-
-                  <span aria-hidden="true">
-                    →
-                  </span>
+                  <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -123,11 +169,7 @@ const {
 <style>
   .alternative-recommendation-grid {
     display: grid;
-    grid-template-columns:
-      repeat(
-        3,
-        minmax(0, 1fr)
-      );
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
   }
 
@@ -136,21 +178,10 @@ const {
     min-width: 0;
     overflow: hidden;
     flex-direction: column;
-    border: 1px solid
-      var(
-        --product-border,
-        #dce5e3
-      );
+    border: 1px solid var(--product-border, #dce5e3);
     border-radius: 1.2rem;
-    background:
-      linear-gradient(
-        145deg,
-        rgba(24, 116, 59, 0.05),
-        #ffffff 46%
-      );
-    box-shadow:
-      0 12px 30px
-        rgba(13, 48, 43, 0.06);
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(13, 48, 43, 0.06);
   }
 
   .alternative-recommendation-image {
@@ -158,12 +189,7 @@ const {
     min-height: 14rem;
     overflow: hidden;
     place-items: center;
-    background:
-      linear-gradient(
-        145deg,
-        #f5f7f6,
-        #ffffff
-      );
+    background: linear-gradient(145deg, #f5f7f6, #ffffff);
   }
 
   .alternative-recommendation-image :global(img) {
@@ -197,11 +223,7 @@ const {
   }
 
   .alternative-recommendation-meta > span {
-    color:
-      var(
-        --product-accent,
-        #18743b
-      );
+    color: var(--product-accent, #18743b);
     font-size: 0.72rem;
     font-weight: 900;
     letter-spacing: 0.09em;
@@ -213,11 +235,7 @@ const {
     padding: 0.35rem 0.55rem;
     border-radius: 999px;
     background: rgba(24, 116, 59, 0.09);
-    color:
-      var(
-        --product-accent-dark,
-        #0f5a2b
-      );
+    color: var(--product-accent-dark, #0f5a2b);
     font-size: 0.78rem;
   }
 
@@ -229,16 +247,18 @@ const {
     place-items: center;
     border-radius: 0.8rem;
     background: rgba(24, 116, 59, 0.09);
-    font-size: 1.25rem;
+    color: var(--product-accent, #18743b);
+  }
+
+  .alternative-recommendation-icon :global(svg) {
+    width: 1.35rem;
+    height: 1.35rem;
+    fill: currentColor;
   }
 
   .alternative-recommendation-headline {
     margin: 0 0 0.75rem;
-    color:
-      var(
-        --product-accent-dark,
-        #0f5a2b
-      );
+    color: var(--product-accent-dark, #0f5a2b);
     font-size: 1rem;
     font-weight: 850;
     line-height: 1.45;
@@ -252,29 +272,13 @@ const {
   }
 
   .alternative-recommendation-content h3 a {
-    color:
-      var(
-        --product-text,
-        #0d302b
-      );
+    color: var(--product-text, #0d302b);
     text-decoration: none;
-  }
-
-  .alternative-recommendation-content h3 a:hover {
-    color:
-      var(
-        --product-accent,
-        #18743b
-      );
   }
 
   .alternative-recommendation-reason {
     margin: 0 0 1rem;
-    color:
-      var(
-        --product-muted,
-        #647579
-      );
+    color: var(--product-muted, #647579);
     line-height: 1.6;
   }
 
@@ -288,11 +292,7 @@ const {
   .alternative-recommendation-difference strong {
     display: block;
     margin-bottom: 0.35rem;
-    color:
-      var(
-        --product-text,
-        #0d302b
-      );
+    color: var(--product-text, #0d302b);
     font-size: 0.78rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -300,57 +300,47 @@ const {
 
   .alternative-recommendation-difference p {
     margin: 0;
-    color:
-      var(
-        --product-muted,
-        #647579
-      );
+    color: var(--product-muted, #647579);
     font-size: 0.88rem;
     line-height: 1.5;
   }
 
-.alternative-recommendation-tags {
-  display: flex;
-  margin: 0 0 1rem;
-  padding: 0;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  list-style: none;
-}
+  .alternative-recommendation-tags {
+    display: flex;
+    margin: 0 0 1rem;
+    padding: 0 !important;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    list-style: none !important;
+  }
 
-.alternative-recommendation-tags li {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 1.9rem;
-  padding: 0.35rem 0.8rem;
-  border: 1px solid
-    color-mix(
+  .alternative-recommendation-tags li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.9rem;
+    padding: 0.35rem 0.8rem !important;
+    border: 1px solid color-mix(
       in srgb,
       var(--product-accent, #18743b) 14%,
       var(--product-border, #dce5e3)
     );
-  border-radius: 999px;
-  background: #fafcfb;
-  color: var(--product-text, #0d302b);
-  font-size: 0.73rem;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  transition:
-    background-color 160ms ease,
-    border-color 160ms ease;
-}
+    border-radius: 999px;
+    background: #fafcfb;
+    color: var(--product-text, #0d302b);
+    font-size: 0.73rem;
+    font-weight: 700;
+    line-height: 1;
+    list-style: none !important;
+    white-space: nowrap;
+  }
 
-.alternative-recommendation-tags li:hover {
-  background: rgba(24, 116, 59, 0.05);
-  border-color:
-    color-mix(
-      in srgb,
-      var(--product-accent, #18743b) 30%,
-      var(--product-border, #dce5e3)
-    );
-}
+  .alternative-recommendation-tags li::before,
+  .alternative-recommendation-tags li::after {
+    content: none !important;
+    display: none !important;
+  }
 
   .alternative-recommendation-footer {
     display: flex;
@@ -359,19 +349,11 @@ const {
     align-items: center;
     justify-content: space-between;
     gap: 0.8rem;
-    border-top: 1px solid
-      var(
-        --product-border,
-        #dce5e3
-      );
+    border-top: 1px solid var(--product-border, #dce5e3);
   }
 
   .alternative-recommendation-footer > span {
-    color:
-      var(
-        --product-text,
-        #0d302b
-      );
+    color: var(--product-text, #0d302b);
     font-size: 0.86rem;
     font-weight: 850;
   }
@@ -380,11 +362,7 @@ const {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    color:
-      var(
-        --product-accent-dark,
-        #0f5a2b
-      );
+    color: var(--product-accent-dark, #0f5a2b);
     font-size: 0.87rem;
     font-weight: 850;
     text-decoration: none;
@@ -392,33 +370,10 @@ const {
 
   .alternative-recommendation-empty {
     padding: 1.5rem;
-    border: 1px dashed
-      var(
-        --product-border,
-        #dce5e3
-      );
+    border: 1px dashed var(--product-border, #dce5e3);
     border-radius: 1rem;
     background: #ffffff;
     text-align: center;
-  }
-
-  .alternative-recommendation-empty strong {
-    display: block;
-    margin-bottom: 0.4rem;
-    color:
-      var(
-        --product-text,
-        #0d302b
-      );
-  }
-
-  .alternative-recommendation-empty p {
-    margin: 0;
-    color:
-      var(
-        --product-muted,
-        #647579
-      );
   }
 
   @media (max-width: 1050px) {
@@ -428,9 +383,7 @@ const {
 
     .alternative-recommendation-card {
       display: grid;
-      grid-template-columns:
-        minmax(12rem, 0.7fr)
-        minmax(0, 1.3fr);
+      grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr);
     }
 
     .alternative-recommendation-image {
@@ -456,10 +409,6 @@ const {
   @media (prefers-reduced-motion: reduce) {
     .alternative-recommendation-image :global(img) {
       transition: none;
-    }
-
-    .alternative-recommendation-image:hover :global(img) {
-      transform: none;
     }
   }
 </style>
