@@ -1,8 +1,16 @@
 import type { ImageMetadata } from "astro";
 
-export type HomeImage = { src: ImageMetadata | string; alt?: string };
-export type HomeLink = { label: string; href: string };
-export type HomeCard = {
+export type HomeImage = {
+  src: ImageMetadata | string;
+  alt?: string;
+};
+
+export type HomeLink = {
+  label: string;
+  href: string;
+};
+
+export type HomeEditorialCard = {
   href: string;
   label: string;
   title: string;
@@ -11,8 +19,17 @@ export type HomeCard = {
   meta?: string;
   action: string;
 };
-export type HomeCategory = HomeCard & { code: string; count: number };
-export type HomeProduct = {
+
+export type HomeCategoryCard = {
+  code: string;
+  title: string;
+  text: string;
+  href: string;
+  count: number;
+  image?: HomeImage;
+};
+
+export type HomeProductCard = {
   href: string;
   title: string;
   manufacturer: string;
@@ -20,6 +37,7 @@ export type HomeProduct = {
   rating: number;
   image: HomeImage;
 };
+
 export type HomepageModel = {
   hero: {
     eyebrow: string;
@@ -29,15 +47,25 @@ export type HomepageModel = {
     primaryAction: HomeLink;
     secondaryAction: HomeLink;
     signals: string[];
-    stats: Array<{ value: string; label: string }>;
+    stats: Array<{
+      value: string;
+      label: string;
+    }>;
   };
-  categories: HomeCategory[];
-  comparisons: HomeCard[];
-  guides: HomeCard[];
-  recentlyUpdated: HomeCard[];
-  products: HomeProduct[];
-  decisions: HomeLink[];
-  methods: Array<{ number: string; title: string; text: string }>;
+  decisionLinks: HomeLink[];
+  categories: HomeCategoryCard[];
+  comparisons: HomeEditorialCard[];
+  guides: HomeEditorialCard[];
+  products: HomeProductCard[];
+  recentlyUpdated: HomeEditorialCard[];
+  methods: Array<{
+    number: string;
+    title: string;
+    text: string;
+  }>;
   methodologyAction: HomeLink;
-  topicGroups: Array<{ title: string; links: HomeLink[] }>;
+  topicGroups: Array<{
+    title: string;
+    links: HomeLink[];
+  }>;
 };

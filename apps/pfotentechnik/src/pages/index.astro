@@ -7,19 +7,21 @@ import petTechHeroImage from "../assets/images/project/pfotentechnik/pet-tech-he
 import { projectConfig } from "../project.config";
 import { buildHomepageModel } from "../domain/home/buildHomepageModel";
 
-const [products, comparisons, pages, manufacturers] = await Promise.all([
+const [
+  products,
+  comparisons,
+  pages
+] = await Promise.all([
   getCollection("products"),
   getCollection("comparisons"),
-  getCollection("pages"),
-  getCollection("manufacturers")
+  getCollection("pages")
 ]);
 
 const model = buildHomepageModel({
   home: projectConfig.home,
   products,
   comparisons,
-  pages,
-  manufacturers
+  pages
 });
 
 const optimizedOgImage = await getImage({
@@ -28,6 +30,7 @@ const optimizedOgImage = await getImage({
   quality: "high"
 });
 ---
+
 <ProjectLayout
   title={projectConfig.home.seo.title}
   description={projectConfig.home.seo.description}
