@@ -3,7 +3,7 @@ title: "Hund frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen"
 slug: "hund-frisst-nicht"
 type: knowledge
 layout: knowledge
-description: "Was zu tun ist, wenn ein Hund nicht frisst: Dringlichkeit einschätzen, Warnzeichen erkennen, Futteraufnahme prüfen und tierärztliche Hilfe richtig einordnen."
+description: "Hund frisst nicht? So unterscheiden Sie harmlose Futterpausen von Schmerzen, Übelkeit, Fremdkörpern und Notfällen und bereiten die tierärztliche Abklärung sinnvoll vor."
 category: "hundegesundheit"
 linking:
   keywords: ["Hund frisst nicht", "Hund verweigert Futter", "Appetitlosigkeit Hund", "Hund isst nicht"]
@@ -13,7 +13,7 @@ categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
 heroImage:
   src: "../../assets/images/guides/hund-frisst-nicht/hero.webp"
-  alt: "Ruhiger Hund vor einem unberührten Futternapf, während Futtermenge, Verhalten und Warnzeichen kontrolliert werden."
+  alt: "Hund vor einem unberührten Futternapf, während Futtermenge, Verhalten und Warnzeichen beurteilt werden."
 publishedAt: "2026-07-16"
 updatedAt: "2026-07-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
@@ -21,11 +21,11 @@ tags: ["hund", "appetitlosigkeit", "futterverweigerung", "gesundheit", "fütteru
 hub:
   sections: ["wissen"]
   title: "Hund frisst nicht"
-  description: "Dringlichkeit einschätzen, mögliche Ursachen erkennen und sinnvoll handeln."
+  description: "Dringlichkeit einschätzen, Ursachen eingrenzen und richtig handeln."
   order: 53
 seo:
-  title: "Hund frisst nicht: Wann zum Tierarzt?"
-  description: "Hund frisst nicht? So schätzen Sie die Dringlichkeit ein, erkennen Warnzeichen und wissen, was Sie bis zum Tierarzttermin sicher tun können."
+  title: "Hund frisst nicht: Ursachen und Warnzeichen"
+  description: "Hund frisst nicht? Erkennen Sie Notfälle, messen Sie die tatsächliche Futteraufnahme und erfahren Sie, wann tierärztliche Hilfe nötig ist."
   canonical: "/hund-frisst-nicht/"
   sitemap: true
   priority: 0.75
@@ -36,1260 +36,805 @@ faq:
 premiumBlocks:
   - type: answer
     eyebrow: "Kurz erklärt"
-    title: "Nicht nur auf den leeren Napf schauen"
+    title: "Appetitverlust ist ein Symptom, keine Diagnose"
     text: |
-      Ein gesunder erwachsener Hund, der eine Mahlzeit auslässt und sonst völlig unauffällig ist, kann kurz beobachtet werden. Bei Warnzeichen, Welpen, Senioren, sehr kleinen oder chronisch kranken Hunden sowie bei ausbleibender Aufnahme über etwa 24 Stunden ist tierärztliche Abklärung nötig.
+      Ein gesunder erwachsener Hund darf eine einzelne Mahlzeit auslassen, wenn er wach, schmerzfrei und sonst völlig unauffällig bleibt. Dringend wird es bei aufgeblähtem Bauch, erfolglosem Würgen, Kollaps, wiederholtem Erbrechen, Gift- oder Fremdkörperverdacht sowie bei Welpen, Senioren und chronisch kranken Hunden.
   - type: quickFacts
     eyebrow: "Auf einen Blick"
-    title: "Die Dringlichkeit bestimmen"
+    title: "Vier Fragen bestimmen das Vorgehen"
     cards:
-      - label: "Sofort"
-        title: "Aufgeblähter Bauch, erfolgloses Würgen oder Kollaps"
-      - label: "Heute"
-        title: "Futterverweigerung mit Erbrechen, Schmerz oder Schwäche"
-      - label: "Kurz beobachten"
-        title: "Nur eine Mahlzeit bei sonst gutem Allgemeinzustand"
-      - label: "Dokumentieren"
-        title: "Menge, Wasser, Kot, Urin und Begleitsymptome"
-  - type: checklist
-    eyebrow: "Für die Tierarztpraxis"
-    title: "Diese Angaben vorbereiten"
-    items:
-      - "Zeitpunkt der letzten normalen Mahlzeit"
-      - "angebotene und tatsächlich gefressene Menge"
-      - "Erbrechen, Durchfall, Kot- und Urinabsatz"
-      - "Medikamente, Vorerkrankungen und möglicher Fremdkörperkontakt"
+      - label: "Notfall?"
+        title: "Bauch, Atmung, Kreislauf und Erbrechen zuerst prüfen"
+      - label: "Kann er?"
+        title: "Interesse, Kauen und Schlucken getrennt beobachten"
+      - label: "Wie viel?"
+        title: "Aufnahme in Gramm und Prozent statt nach Gefühl erfassen"
+      - label: "Verlauf"
+        title: "Eine Mahlzeit ist anders als mehrere Tage mit 20 Prozent"
 ---
+
 ## Die kurze Antwort
 
-Wenn ein Hund nicht frisst, ist die entscheidende Frage nicht zuerst, welches Futter besonders verlockend riecht. Wichtiger ist, **warum die Aufnahme sinkt und wie dringend die Situation ist**.
+Wenn ein Hund nicht frisst, zählt nicht nur die Dauer. Entscheidend ist die Kombination aus **Allgemeinzustand, Begleitsymptomen, Risikoprofil und tatsächlich aufgenommener Menge**.
 
-Appetitlosigkeit ist keine Diagnose. Sie kann nach einem ungewohnten Tag, Stress oder einer abrupten Futterumstellung auftreten. Sie kann aber ebenso durch Schmerzen, Übelkeit, Zahnprobleme, Infektionen, Erkrankungen von Magen, Darm, Leber, Nieren oder Bauchspeicheldrüse, einen Fremdkörper, eine Vergiftung oder eine Magendrehung ausgelöst werden.
+Ein erwachsener, bisher gesunder Hund, der eine Mahlzeit auslässt, normal trinkt, normal uriniert und sich unverändert verhält, kann kurz kontrolliert beobachtet werden. Bleibt die Aufnahme deutlich reduziert oder fällt die nächste Mahlzeit ebenfalls aus, sollte die Tierarztpraxis kontaktiert werden. Für Welpen, sehr kleine Hunde, Senioren, trächtige oder säugende Hündinnen sowie Hunde mit Diabetes, Nieren-, Leber-, Herz- oder anderen Vorerkrankungen gilt eine niedrigere Schwelle.
 
-Ein gesunder erwachsener Hund, der eine einzelne Mahlzeit auslässt, normal trinkt, aufmerksam bleibt und keine weiteren Beschwerden zeigt, kann für kurze Zeit kontrolliert beobachtet werden. Bleibt eine relevante Futteraufnahme länger als etwa 24 Stunden aus, sollte die Tierarztpraxis kontaktiert werden. Diese Zeitspanne ist kein allgemeiner Sicherheitswert. Bei Welpen, sehr kleinen Hunden, Senioren, trächtigen Hündinnen, Diabetes, bekannten Organerkrankungen oder zusätzlichen Symptomen ist deutlich früher Hilfe nötig.
+**Sofort in den Notdienst** gehören Hunde mit aufgeblähtem Bauch und erfolglosem Würgen, Kollaps, Atemnot, sehr blassen oder blauen Schleimhäuten, starkem Bauchschmerz, wiederholtem Erbrechen, Gift- oder Fremdkörperverdacht oder einer raschen Verschlechterung.
 
-Sofort in den tierärztlichen Notdienst gehören Hunde mit:
-
-- aufgeblähtem oder rasch größer werdendem Bauch
-- wiederholtem erfolglosem Würgen
-- starker Unruhe, Speicheln und Kreislaufschwäche
-- Atemnot
-- Kollaps oder kaum vorhandener Reaktion
-- sehr blassen, grauen oder blauen Schleimhäuten
-- wiederholtem Erbrechen, besonders wenn Wasser nicht im Magen bleibt
-- Blut im Erbrochenen oder größeren Blutmengen im Kot
-- starken Bauchschmerzen
-- Vergiftungsverdacht
-- möglichem verschlucktem Fremdkörper
-- Krampfanfällen
-- rascher Verschlechterung
-
-Zwinge den Hund nicht zum Fressen. Gib keine Humanmedikamente und keine übrig gebliebenen Tiermedikamente. Biete das vertraute Futter in einer kleinen Portion an, dokumentiere die tatsächliche Aufnahme und richte das weitere Vorgehen nach Allgemeinzustand und Begleitsymptomen aus.
-
-AAHA nennt plötzliche Veränderungen des Appetits als relevantes Gesundheitszeichen und empfiehlt eine tierärztliche Abklärung, wenn ein Tier aufhört zu fressen oder ungewöhnlich wählerisch wird. VCA unterscheidet zwischen echter Appetitlosigkeit und Pseudoanorexie: Manche Hunde möchten fressen, können Futter aber wegen Problemen beim Aufnehmen, Kauen oder Schlucken nicht normal aufnehmen.
+Zwinge den Hund nicht zum Fressen. Gib keine Humanmedikamente. Miss stattdessen die tatsächliche Aufnahme, beobachte den vollständigen Fressvorgang und prüfe, ob der Hund trinken und Wasser behalten kann.
 
 ## Direkt zum passenden Problem
 
-- [Der Hund frisst seit heute nichts](#wie-dringend-ist-die-situation)
-- [Er geht zum Napf, frisst aber nicht](#er-geht-zum-napf-frisst-aber-nicht)
-- [Er frisst Leckerli, aber kein Futter](#er-frisst-leckerli-aber-kein-futter)
-- [Er frisst nicht und erbricht](#erbrechen-durchfall-und-bauchbeschwerden)
-- [Der Bauch ist aufgebläht](#magendrehung-und-akuter-aufgeblähter-bauch)
-- [Was kann ich zu Hause tun?](#was-du-zu-hause-sicher-tun-kannst)
-- [Wann muss er zum Tierarzt?](#wann-tierärztliche-hilfe-nötig-ist)
-- [Was ist bei Welpen oder Senioren anders?](#welpen-senioren-und-risikogruppen)
+- [Wie dringend ist die Situation?](#wie-dringend-ist-die-situation)
+- [Frisst der Hund wirklich nichts?](#frisst-der-hund-wirklich-nichts)
+- [Will er nicht oder kann er nicht?](#echte-appetitlosigkeit-oder-pseudoanorexie)
+- [Welche Ursachen sind wahrscheinlich?](#ursachen-nach-wahrscheinlichkeit-und-risiko)
+- [Was darf ich zu Hause tun?](#was-du-zu-hause-sicher-tun-kannst)
+- [Was untersucht die Tierarztpraxis?](#diagnostik-aus-tierärztlicher-sicht)
+- [Wann ist der Notdienst nötig?](#entscheidungsbaum-für-die-dringlichkeit)
 
 ## Wie dringend ist die Situation?
 
 ![Entscheidungsbaum zur Dringlichkeit bei einem Hund, der nicht frisst](../../assets/images/guides/hund-frisst-nicht/urgency-flow.webp)
 
-Die Dauer allein reicht nicht zur Einschätzung. Ein Hund, der seit drei Stunden nicht frisst, aber erfolglos würgt und einen zunehmenden Bauchumfang hat, ist ein Notfall. Ein erwachsener Hund, der nach einem sehr aufregenden Tag eine Mahlzeit auslässt, normal trinkt und am nächsten Morgen wieder frisst, ist anders zu bewerten.
+Die Grafik trennt drei Situationen: sofortiger Notfall, Abklärung am selben Tag und kurze kontrollierte Beobachtung. Die Dauer allein reicht dafür nicht aus.
 
-### Sofort in den tierärztlichen Notdienst
+Ein Hund, der seit zwei Stunden nicht frisst, aber erfolglos würgt und einen zunehmend gespannten Bauch hat, ist ein Notfall. Ein gesunder erwachsener Hund, der nach einer anstrengenden Reise eine Mahlzeit auslässt und am Abend wieder normal frisst, ist anders einzuordnen.
+
+### Sofortige tierärztliche Hilfe
 
 - aufgeblähter, gespannter oder rasch größer werdender Bauch
 - wiederholtes erfolgloses Würgen
-- starke Unruhe, Hecheln, Speicheln oder Kreislaufschwäche
-- Kollaps oder Bewusstseinsveränderung
+- Kollaps, Bewusstseinsstörung oder Krampfanfälle
 - Atemnot
 - sehr blasse, graue oder blaue Schleimhäute
-- wiederholtes Erbrechen mit Schwäche
-- Wasser kann nicht behalten werden
-- starker Bauchschmerz
-- Gift- oder Fremdkörperverdacht
-- schwarzer, teerartiger Kot oder größere sichtbare Blutmengen
-- Krampfanfälle
-- plötzlich gelähmte, stark schwache oder desorientierte Bewegungen
-- rasche Verschlechterung innerhalb weniger Stunden
+- wiederholtes Erbrechen, besonders wenn Wasser nicht im Magen bleibt
+- starker oder rasch zunehmender Bauchschmerz
+- Giftverdacht
+- möglicher Fremdkörper
+- größere Blutmengen im Erbrochenen oder Kot
+- schwarzer, teerartiger Kot
+- deutliche Verschlechterung innerhalb weniger Stunden
 
-Die Kombination aus aufgeblähtem Bauch, Unruhe und erfolglosem Würgen ist besonders verdächtig auf eine Magendrehung. Dabei zählt Zeit. Nicht füttern, nicht auf eine spontane Besserung warten und nicht versuchen, den Bauch zu massieren.
+### Noch am selben Tag abklären
 
-### Noch heute abklären
-
-- seit etwa 24 Stunden keine relevante Nahrungsaufnahme
-- deutlich geringere Aufnahme als üblich mit Mattigkeit
+- keine relevante Aufnahme über ungefähr 24 Stunden
+- deutlich reduzierte Aufnahme zusammen mit Mattigkeit
 - wiederholtes Erbrechen oder deutlicher Durchfall
-- Schmerzen beim Kauen, Schlucken oder Beugen
-- starkes Speicheln oder übler Maulgeruch
+- Schmerzen beim Kauen oder Schlucken
+- starkes Speicheln, auffälliger Maulgeruch oder Blut im Maul
+- ungewöhnlich viel oder wenig Trinken
+- kaum Urin
 - Fieberverdacht
-- ungewöhnlicher Rückzug
-- auffällige Wasseraufnahme
-- kaum oder kein Urin
+- neue neurologische Auffälligkeiten
 - Gewichtsverlust
-- neue Medikamenteneinnahme mit zeitlichem Zusammenhang
-- bekannte chronische Erkrankung
-- Senior oder sehr kleiner Hund mit deutlicher Futterverweigerung
-- Welpe, der mehrere Mahlzeiten auslässt
+- neue Medikamente mit zeitlichem Zusammenhang
+- Welpe, Senior, sehr kleiner oder chronisch kranker Hund
 
-### Nur kurz beobachten
+Die oft genannte 24-Stunden-Marke ist kein Sicherheitsversprechen. Sie ist höchstens eine grobe Grenze für einen stabilen erwachsenen Hund ohne Begleitsymptome.
 
-Eine kurze kontrollierte Beobachtung kommt nur infrage, wenn alle Punkte zutreffen:
+### Kurze Beobachtung ist nur vertretbar, wenn
 
-- erwachsener, bisher gesunder Hund
-- nur eine Mahlzeit ausgelassen
-- wach, ansprechbar und bewegungsfreudig
-- normale Atmung
-- kein Erbrechen
-- kein Durchfall
-- kein sichtbarer Schmerz
-- Bauch weich und nicht vergrößert
-- normale Wasseraufnahme
-- normaler Urin- und Kotabsatz
-- kein Gift- oder Fremdkörperverdacht
-- keine relevante Vorerkrankung
-- kurze Zeit später wieder erkennbare Futteraufnahme
+der Hund erwachsen und bisher gesund ist, lediglich eine Mahlzeit auslässt, wach und bewegungsfreudig bleibt, normal atmet, normal trinkt, nicht erbricht, keinen Durchfall zeigt, einen weichen nicht vergrößerten Bauch hat und normal Urin sowie Kot absetzt.
 
-„Beobachten“ bedeutet, den Verlauf aktiv zu kontrollieren. Es bedeutet nicht, den Napf zwei oder drei Tage unverändert stehen zu lassen.
+„Beobachten“ bedeutet messen und vergleichen. Es bedeutet nicht, mehrere Tage abzuwarten.
 
 ## Frisst der Hund wirklich nichts?
 
-Die Aussage „Er frisst nicht“ kann sehr Unterschiedliches bedeuten:
+Die Aussage „Mein Hund frisst nicht“ kann medizinisch sehr unterschiedliche Situationen meinen:
 
-- Er hat eine Mahlzeit ausgelassen.
-- Er frisst nur die Hälfte.
-- Er nimmt ausschließlich Leckerli.
-- Er kaut und spuckt wieder aus.
-- Er frisst draußen, aber nicht aus dem Napf.
-- Ein anderer Hund leert den Napf.
-- Er nimmt nur Soße oder weiche Bestandteile auf.
-- Er frisst nachts unbeobachtet.
-- Der Futterautomat gibt gar keine vollständige Portion aus.
+- eine Mahlzeit ausgelassen
+- nur die Hälfte der Tagesration gefressen
+- Leckerli genommen, Hauptfutter verweigert
+- Futter aufgenommen und wieder ausgespuckt
+- nur weiche Bestandteile oder Soße gefressen
+- nachts oder unbeobachtet gefressen
+- bei mehreren Tieren vom falschen Napf gefressen
+- wegen eines blockierten Automaten gar kein Futter erhalten
 
-Diese Unterschiede sind medizinisch relevant. Ein Hund mit 60 Prozent seiner üblichen Tagesmenge ist anders zu bewerten als ein Hund, der seit 24 Stunden nichts geschluckt hat. Eine kleine Menge Leckerli beweist nicht, dass die Energieaufnahme ausreicht.
+### Aufnahme in Gramm statt nach Gefühl
 
-### So misst du die tatsächliche Aufnahme
+Wiege die normale Tagesration, die angebotene Menge und die Reste. Leckerli, Kauartikel und Tischreste gehören in dieselbe Bilanz. Bei mehreren Tieren muss vorübergehend getrennt gefüttert werden.
 
-1. Normale Tagesration in Gramm bestimmen.
-2. Eine exakt abgewogene Portion anbieten.
-3. Reste nach einer festgelegten Zeit wiegen.
-4. Leckerli, Kauartikel und Tischreste mitzählen.
-5. Verschüttetes oder verschlepptes Futter berücksichtigen.
-6. Bei mehreren Tieren getrennt füttern.
-7. Zeitpunkt und Menge notieren.
+![Prozentuale Einordnung der aufgenommenen Tagesration](../../assets/images/guides/hund-frisst-nicht/intake-percentage.webp)
 
-Eine Kamera kann zeigen, ob der Hund den Napf aufsucht. Sie ersetzt jedoch keine Mengenmessung. Bei automatischer Fütterung ist außerdem zu prüfen, ob die Portion tatsächlich ausgegeben wurde und nicht im Auslass hängen blieb.
+Die Prozentrechnung macht Verläufe vergleichbar:
 
-## Appetitlosigkeit oder mechanisches Fressproblem?
+**gefressene Menge ÷ normale Tagesmenge × 100**
 
-VCA unterscheidet echte Anorexie von Pseudoanorexie. Bei echter Appetitlosigkeit fehlt der Antrieb zu fressen. Bei Pseudoanorexie ist Interesse vorhanden, der Hund kann das Futter aber nicht normal aufnehmen, kauen oder schlucken.
+Ein Hund mit einer normalen Tagesration von 400 Gramm, der 100 Gramm frisst, liegt bei 25 Prozent. Das ist keine klinische Diagnosegrenze, zeigt aber deutlich, dass „ein bisschen gefressen“ keine ausreichende Versorgung bedeutet.
 
-### Eher fehlender Appetit
+| Tatsächliche Aufnahme | Praktische Einordnung | Nächster sinnvoller Schritt |
+|---:|---|---|
+| 75–100 % | geringe Abweichung | Verlauf und Begleitsymptome beobachten |
+| 50–75 % | relevante Reduktion | Ursache, Futterwechsel und Allgemeinzustand prüfen |
+| 20–50 % | deutliche Unterversorgung | bei Fortbestehen zeitnah Praxis kontaktieren |
+| unter 20 % | fast vollständige Verweigerung | niedrigere Schwelle zur Untersuchung |
+| 0 % | vollständige Anorexie | Risikoprofil und Warnzeichen sofort bewerten |
 
-- Hund ignoriert den Napf vollständig
-- reagiert auch auf Lieblingsfutter kaum
-- wirkt matt oder übel
-- zieht sich zurück
-- frisst weder weiches noch festes Futter
-- zeigt zusätzlich Erbrechen, Fieber oder Schmerzen
+Die Prozentwerte sind Dokumentationshilfen, keine pauschalen medizinischen Grenzwerte.
 
-### Eher Problem beim Aufnehmen oder Kauen
+## Echte Appetitlosigkeit oder Pseudoanorexie?
 
-- geht erwartungsvoll zum Napf
-- versucht zu fressen
-- lässt Futter wieder fallen
-- kaut nur auf einer Seite
-- winselt oder zuckt beim Kauen
-- reibt das Maul mit der Pfote
-- speichelt
-- bevorzugt plötzlich weiche Nahrung
-- nimmt kleine Stücke aus der Hand, aber keine größeren Brocken
+![Unterschied zwischen echter Appetitlosigkeit und Pseudoanorexie](../../assets/images/guides/hund-frisst-nicht/true-vs-pseudo-anorexia.webp)
 
-### Eher Schluckproblem
+**Echte Appetitlosigkeit** bedeutet: Der Hund hat wenig oder keinen Antrieb zu fressen.
 
-- wiederholtes Schlucken ohne normale Aufnahme
-- Husten oder Würgen beim Fressen
-- gestreckter Hals
-- Futter oder Flüssigkeit kommt aus der Nase
-- auffällige Atemgeräusche
-- passives Hochkommen kurz nach dem Schlucken
-- deutliche Panik oder Abbruch beim Fressversuch
+**Pseudoanorexie** bedeutet: Der Hund möchte fressen, kann Futter aber wegen Problemen beim Aufnehmen, Kauen oder Schlucken nicht normal aufnehmen.
 
-Bei einem möglichen Schluckproblem darf nicht mit einer Spritze gefüttert werden. Futter oder Flüssigkeit kann in die Atemwege gelangen.
+Diese Unterscheidung ist wichtig, weil sich die Ursachen unterscheiden.
 
-## Er geht zum Napf, frisst aber nicht
+### Eher echte Appetitlosigkeit
 
-Dieses Verhalten ist besonders aufschlussreich. Es zeigt häufig, dass Hunger oder Interesse vorhanden ist, aber der Fressvorgang unangenehm oder unmöglich wird.
+- der Hund ignoriert selbst vertrautes Futter
+- er schnuppert kurz und wendet sich ab
+- er wirkt übel, matt oder schmerzhaft
+- er nimmt weder weiches noch festes Futter
+- Erbrechen, Fieber oder Rückzug kommen hinzu
 
-Mögliche Ursachen:
+### Eher Pseudoanorexie
 
-- Zahnschmerzen
-- entzündetes Zahnfleisch
-- abgebrochener Zahn
-- Fremdkörper im Maul
-- Verletzung der Zunge
-- Übelkeit
-- Schmerzen beim Senken des Kopfes
-- Hals- oder Nackenschmerz
-- Schluckstörung
-- verstopfte Nase
-- Futteraversion nach Übelkeit
-- unangenehme Napfhöhe oder rutschender Napf
+- der Hund geht erwartungsvoll zum Napf
+- Futter fällt aus dem Maul
+- er kaut nur auf einer Seite
+- er leckt Soße, lässt feste Stücke liegen
+- er speichelt oder reibt die Pfote am Maul
+- er hustet oder würgt beim Schlucken
+- Futter oder Wasser kommt aus der Nase
+- er nimmt kleine weiche Stücke, aber keine harten Brocken
 
-Achte auf das genaue Muster:
+Bei möglicher Schluckstörung darf kein Futter mit Spritze oder Löffel gegen Widerstand eingegeben werden. Es kann in die Atemwege gelangen.
 
-- Nimmt er Futter auf und lässt es fallen?
-- Kaut er nur auf einer Seite?
-- Leckt er Soße ab, lässt Stücke aber liegen?
-- Zieht er nach dem ersten Bissen zurück?
-- Speichelt er stärker als sonst?
-- Riecht das Maul auffällig?
-- Reagiert er empfindlich auf Berührung an Kiefer oder Hals?
+## Den Fressvorgang in vier Stationen beobachten
 
-Öffne das Maul nicht gewaltsam. Ein schmerzender Hund kann auch dann schnappen, wenn er normalerweise sehr freundlich ist. Tief sitzende Fremdkörper, Verletzungen hinter der Zunge und Zahnerkrankungen sind zu Hause oft nicht sicher erkennbar.
+![Vier Stationen des Fressvorgangs vom Annähern bis zur Verträglichkeit](../../assets/images/guides/hund-frisst-nicht/eating-sequence.webp)
 
-## Er frisst Leckerli, aber kein Futter
+Die Grafik zerlegt den Vorgang in vier Fragen:
 
-Das wird häufig als Beweis für Mäkeligkeit gewertet. Diese Schlussfolgerung ist zu einfach.
+1. **Annäherung:** Geht der Hund zum Napf?
+2. **Interesse:** Riecht oder leckt er?
+3. **Mechanik:** Kann er aufnehmen, kauen und schlucken?
+4. **Verträglichkeit:** Bleibt das Futter im Magen?
 
-Ein Hund kann Leckerli nehmen, obwohl er krank ist, weil:
+Diese Reihenfolge liefert mehr Information als die pauschale Aussage „frisst nicht“.
 
-- kleine Mengen leichter toleriert werden
-- stark riechende Stücke attraktiver sind
-- weiche Snacks weniger Schmerzen verursachen
-- Erwartung und Gewohnheit kurzfristig den Appetit überlagern
-- das normale Futter mit Übelkeit verknüpft wurde
-- Leckerli direkt aus der Hand angeboten werden
-- die Tagesration bereits durch Snacks ersetzt wurde
+### Fallbeispiel 1: Interesse ohne Aufnahme
 
-Entscheidend ist nicht, ob überhaupt etwas aufgenommen wurde, sondern wie viel im Verhältnis zur normalen Tagesration. Drei kleine Leckerli können weniger als fünf Prozent des täglichen Energiebedarfs liefern.
+Ein Senior geht mehrfach zum Napf, nimmt Trockenfutter auf und lässt es wieder fallen. Weiches Futter leckt er. Das Muster passt eher zu Maul-, Zahn- oder Kauschmerz als zu reiner Mäkeligkeit.
 
-### Wann es eher nach gelerntem Auswahlverhalten aussieht
+### Fallbeispiel 2: Kein Interesse und Schmatzen
 
-- Allgemeinzustand ist vollständig normal.
-- Hund frisst energiereiche Extras sofort.
-- Das Verhalten besteht länger und folgt einem stabilen Muster.
-- Nach jeder Ablehnung erscheint eine attraktivere Alternative.
-- Gewicht und Aktivität bleiben stabil.
-- Es bestehen keine Begleitsymptome.
+Ein erwachsener Hund schnuppert, schmatzt, leckt die Lippen und zieht sich zurück. Zwei Stunden später erbricht er. Dieses Muster passt eher zu Übelkeit als zu einem Napfproblem.
 
-Auch dann sollte eine plötzlich neu auftretende Futterselektion zunächst körperlich eingeordnet werden, besonders bei älteren Hunden oder wenn harte Bestandteile gemieden werden.
+### Fallbeispiel 3: Fressen, dann passives Hochkommen
 
-## Häufige Ursachen im Überblick
+Ein Hund schluckt hastig und kurz danach kommt unverdautes Futter ohne deutliche Bauchpresse zurück. Das spricht eher für Regurgitieren als für Erbrechen und kann auf ein Problem der Speiseröhre hinweisen.
+
+## Ursachen nach Wahrscheinlichkeit und Risiko
 
 ![Ursachenübersicht für Futterverweigerung bei Hunden](../../assets/images/guides/hund-frisst-nicht/cause-map.webp)
 
-| Bereich | Beispiele | Mögliche Begleitzeichen |
+Die häufigste Ursache lässt sich nicht allein aus dem Symptom „frisst nicht“ ableiten. Sinnvoll ist eine Ordnung nach **typischen Mustern**, nicht nach einer scheinbar exakten Rangliste.
+
+| Ursachengruppe | Typische Hinweise | Risiko bei Verzögerung |
 |---|---|---|
-| Maul und Zähne | Zahnfraktur, Parodontitis, Fremdkörper, Wunde | Speicheln, Mundgeruch, Futter fällt heraus |
-| Magen und Darm | Gastritis, Fremdkörper, Verstopfung, Darmverschluss | Erbrechen, Bauchschmerz, veränderter Kot |
-| Bauchspeicheldrüse | Pankreatitis | Gebetsstellung, Erbrechen, Bauchschmerz |
-| Leber und Galle | Hepatitis, Gallenwegsprobleme | Gelbfärbung, Erbrechen, Müdigkeit |
-| Nieren und Stoffwechsel | Nierenerkrankung, Addison, Diabetesentgleisung | verändertes Trinken, Schwäche, Erbrechen |
-| Infektion und Entzündung | Fieber, Leptospirose, Atemwegsinfekt | Mattigkeit, Schmerz, erhöhte Temperatur |
-| Schmerz | Arthrose, Verletzung, Rücken- oder Bauchschmerz | Schonhaltung, Unruhe, weniger Bewegung |
-| Medikamente und Giftstoffe | Nebenwirkung, Vergiftung | Speicheln, Zittern, Erbrechen, Durchfall |
-| Stress und Umgebung | Umzug, Tierpension, Konflikte, Lärm | Rückzug, Unruhe, selektives Fressen |
-| Futter und Technik | verdorben, neue Rezeptur, Automat blockiert | Ablehnung einer Charge, leerer Napf |
+| Übelkeit und Magen-Darm-Erkrankung | Schmatzen, Speicheln, Erbrechen, Durchfall, Bauchschmerz | von selbstlimitierend bis akut |
+| Maul, Zähne, Rachen | Futter fällt heraus, einseitiges Kauen, Maulgeruch | Schmerz, Gewichtsverlust, Infektion |
+| Schmerz außerhalb des Verdauungstrakts | steifer Gang, Hecheln, Meiden von Bewegung | anhaltender Schmerz, Verschlechterung |
+| Futter und Umgebung | neue Charge, rutschender Napf, Stress, Konkurrenz | meist gering, wenn Hund sonst gesund |
+| Medikamente oder Narkose | klarer zeitlicher Zusammenhang | abhängig vom Präparat |
+| Organ- und Stoffwechselerkrankung | Gewichtsverlust, verändertes Trinken, Schwäche | oft zunehmend |
+| Fremdkörper, Magendrehung, Vergiftung | akuter Beginn, Würgen, Erbrechen, Schmerz, Kollaps | potenziell lebensbedrohlich |
 
-Diese Tabelle dient der Orientierung. Das Verhalten allein erlaubt selten eine sichere Diagnose.
+### Häufig, aber nicht automatisch harmlos
 
-## Maul- und Zahnerkrankungen
+Magen-Darm-Reizungen, Zahnschmerzen, Stress, Schmerzen und Nebenwirkungen von Medikamenten sind in der Praxis häufige Erklärungen. Trotzdem müssen seltenere, aber gefährliche Ursachen früh ausgeschlossen werden, wenn das Muster dazu passt.
 
-Zahnerkrankungen werden leicht übersehen, weil viele Hunde trotz Schmerzen zum Napf gehen. Manche schlucken Trockenfutter nahezu unzerkaut. Andere wechseln plötzlich zu weichem Futter oder nehmen nur kleine Stücke.
+### Gefährlich, obwohl anfangs unspezifisch
 
-Hinweise sind:
+Fremdkörper, Pankreatitis, schwere Infektionen, Stoffwechselentgleisungen und Vergiftungen können anfangs nur mit Appetitverlust und leichter Mattigkeit beginnen. Der Verlauf und die Begleitsymptome entscheiden deshalb stärker als die erste Momentaufnahme.
 
-- Futter fällt aus dem Maul
+## Maul, Zähne und Schlucken
+
+Zahnerkrankungen werden leicht unterschätzt, weil viele Hunde Schmerzen lange kompensieren. Einige schlucken Kroketten nahezu unzerkaut. Andere nehmen Leckerli weiterhin, weil diese kleiner, weicher oder stärker riechend sind.
+
+Hinweise auf ein Maulproblem:
+
 - einseitiges Kauen
+- Futter fällt aus dem Maul
+- plötzliches Meiden harter Bestandteile
 - starker Mundgeruch
 - Blut am Spielzeug oder im Speichel
-- Pfote am Maul
-- Kopfscheu
 - vermehrtes Speicheln
 - Schwellung im Gesicht
-- plötzliches Meiden harter Kauartikel
+- Abwehr bei Berührung am Kopf
 - Jaulen beim Gähnen oder Kauen
 
-Ein Blick auf die Schneidezähne reicht nicht. Schmerzhafte Veränderungen sitzen häufig an Backenzähnen, unter Zahnstein oder unterhalb des Zahnfleischrandes. Eine vollständige Beurteilung kann eine Untersuchung unter Sedierung und Dentalröntgen erfordern.
+Ein kurzer Blick auf die Schneidezähne schließt eine schmerzhafte Zahnerkrankung nicht aus. Veränderungen sitzen häufig an Backenzähnen, unter Zahnstein oder unterhalb des Zahnfleischrandes. Für eine vollständige Beurteilung können Sedierung und Dentalröntgen nötig sein.
 
-## Übelkeit ohne Erbrechen
+### Schluckstörung nicht mit Appetitanreger überdecken
 
-Ein Hund kann deutlich übel sein, ohne zu erbrechen. Typische Hinweise:
+Husten, Würgen, gestreckter Hals, Futter aus der Nase oder auffällige Atemgeräusche nach dem Fressen können auf eine Störung im Rachen oder in der Speiseröhre hindeuten. Hier ist Zwangsfütterung besonders riskant.
+
+## Übelkeit ohne sichtbares Erbrechen
+
+Übelkeit wird häufig erst erkannt, wenn der Hund erbricht. Sie kann jedoch vorher oder ganz ohne Erbrechen auftreten.
+
+Typische Beobachtungen:
 
 - Lippenlecken
+- Schmatzen
 - häufiges Schlucken
 - Speicheln
 - Grasfressen
 - Unruhe
-- gekrümmte Körperhaltung
-- Geruch am Futter, dann Abwenden
-- Schmatzen
+- gekrümmte Haltung
+- Annäherung an den Napf, dann Abwenden
 - Aufstoßen
-- Wechsel zwischen Interesse und Rückzug
+- wechselndes Interesse
 
-Ständig neue Futtersorten anzubieten löst die Ursache nicht. Es kann dazu führen, dass mehrere Futtermittel mit Übelkeit verknüpft werden. Ein Appetitanreger allein ist ebenfalls keine sichere Lösung, wenn Schmerzen, ein Fremdkörper oder eine andere behandlungsbedürftige Ursache bestehen.
+Ständig neue Futtersorten anzubieten, löst die Ursache nicht. Im Gegenteil: Ein Hund kann mehrere Futtermittel mit dem schlechten Gefühl verknüpfen und später meiden.
 
-## Erbrechen, Durchfall und Bauchbeschwerden
+## Erbrechen, Regurgitieren und Durchfall
 
-Appetitverlust zusammen mit Magen-Darm-Symptomen ist häufig, aber nicht automatisch harmlos. Entscheidend sind Häufigkeit, Menge, Allgemeinzustand, Flüssigkeitsaufnahme und Schmerz.
+Erbrechen ist ein aktiver Vorgang. Häufig gehen Speicheln, Übelkeit, Würgen und sichtbare Bauchpresse voraus.
 
-### Dringend sind
+Regurgitieren erfolgt meist passiver, oft kurz nach der Aufnahme. Das Futter ist häufig unverdaut. Ein Video der Episode kann der Tierarztpraxis bei der Einordnung helfen.
 
-- wiederholtes Erbrechen
+Wiederholtes Regurgitieren ist relevant, weil Erkrankungen der Speiseröhre und das Risiko einer Aspirationspneumonie dahinterstehen können.
+
+### Wann Magen-Darm-Symptome dringend sind
+
 - Wasser bleibt nicht im Magen
-- Blut im Erbrochenen
-- schwarzer, teerartiger Kot
-- starke Bauchschmerzen
-- aufgeblähter oder harter Bauch
-- erfolgloses Würgen
-- rasche Schwäche
-- möglicher Fremdkörper
-- sehr wässriger oder blutiger Durchfall
-- gleichzeitige Futter- und Wasserverweigerung
+- Erbrechen tritt mehrfach innerhalb weniger Stunden auf
+- der Hund wird schwach oder apathisch
+- Blut ist sichtbar
+- Kot ist schwarz und teerartig
+- der Bauch ist deutlich schmerzhaft
+- der Hund setzt kaum Urin ab
+- ein Welpe, Senior oder sehr kleiner Hund ist betroffen
+- ein Fremdkörper ist möglich
 
-Einmaliges Erbrechen bei einem sonst völlig munteren erwachsenen Hund ist anders zu bewerten als fünf Episoden innerhalb weniger Stunden. Kleine Hunde, Welpen und Senioren trocknen schneller aus.
-
-### Erbrechen oder Regurgitieren?
-
-Erbrechen ist ein aktiver Vorgang. Häufig gehen Übelkeit, Speicheln, Würgen und sichtbare Bauchpresse voraus. Regurgitieren geschieht meist passiver, oft kurz nach der Aufnahme. Das Futter ist häufig unverdaut und kann röhrenförmig aussehen.
-
-Ein Video hilft der Tierarztpraxis bei der Unterscheidung. Wiederholtes Regurgitieren ist relevant, weil eine Erkrankung der Speiseröhre oder eine Schluckstörung dahinterstehen kann und das Risiko einer Aspirationspneumonie besteht.
+Einmaliges Erbrechen bei einem sonst munteren erwachsenen Hund ist anders zu bewerten als wiederholtes Erbrechen mit Futter- und Wasserverweigerung.
 
 ## Magendrehung und akuter aufgeblähter Bauch
 
-Die Magendrehung, medizinisch Gastric Dilatation-Volvulus, ist einer der wichtigsten Notfälle bei einem Hund, der plötzlich nicht frisst.
+![Notfallsymptome bei Magendrehung, Fremdkörper und schwerem Bauchproblem](../../assets/images/guides/hund-frisst-nicht/stomach-emergency.webp)
 
-Typische Zeichen:
+Die Magendrehung, medizinisch Gastric Dilatation-Volvulus, gehört zu den wichtigsten Notfällen bei plötzlicher Futterverweigerung.
 
-- plötzlich aufgeblähter oder gespannter Bauch
+Verdächtig sind:
+
 - erfolgloses Würgen
+- gespannter oder größer werdender Bauch
 - starke Unruhe
-- rastloses Aufstehen und Hinlegen
 - Speicheln
 - Hecheln
-- Schmerz
+- sichtbarer Schmerz
 - blasse Schleimhäute
 - Schwäche oder Kollaps
 
-Nicht jeder betroffene Hund zeigt alle Zeichen. Der Bauch kann bei tiefbrüstigen Hunden äußerlich weniger eindrucksvoll wirken. Warte nicht auf eine eindeutige sichtbare Aufblähung, wenn erfolgloses Würgen und Kreislaufzeichen auftreten.
+Nicht jeder Hund zeigt alle Zeichen. Bei tiefbrüstigen Hunden kann die äußere Aufblähung weniger deutlich sein. Die Kombination aus erfolglosem Würgen, Unruhe und Kreislaufveränderung reicht für sofortiges Handeln.
 
-### Was du nicht tun solltest
-
-- kein Futter oder Wasser einflößen
-- keine Bewegung erzwingen
-- Bauch nicht massieren
-- nicht auf eine telefonische Selbstdiagnose vertrauen
-- nicht bis zum nächsten Morgen warten
-
-Rufe den Notdienst an und fahre los. Eine Magendrehung kann nur tierärztlich diagnostiziert und behandelt werden.
+Nicht füttern, nichts einflößen, Bauch nicht massieren und nicht bis zum Morgen warten.
 
 ## Fremdkörper und Darmverschluss
 
-Hunde verschlucken unter anderem Socken, Spielzeugteile, Maiskolben, Knochen, Steine, Schnüre, Verpackungen und Stoffstücke. Ein Fremdkörper kann den Magen reizen oder den Darm teilweise beziehungsweise vollständig blockieren.
-
-Mögliche Zeichen:
-
-- plötzliches Erbrechen
-- Futterverweigerung
-- Bauchschmerz
-- gekrümmte Haltung
-- Unruhe
-- fehlender oder geringer Kotabsatz
-- Durchfall trotz Teilverschluss
-- Speicheln
-- wiederholtes Schlucken
-- rasche Verschlechterung
-
-Kotabsatz schließt einen Darmverschluss nicht aus. Material, das bereits hinter der Blockade lag, kann zunächst noch ausgeschieden werden. Ziehe nicht an sichtbaren Schnüren aus Maul oder After.
-
-## Pankreatitis
-
-Bei einer Entzündung der Bauchspeicheldrüse können Appetitverlust, Erbrechen, Schwäche, Dehydration, Durchfall und Bauchschmerz auftreten. Das MSD Veterinary Manual nennt diese Zeichen besonders bei schweren Verläufen.
-
-Manche Hunde nehmen eine sogenannte Gebetsstellung ein: Vorderkörper tief, Hinterhand hoch. Diese Haltung ist nicht beweisend, kann aber auf Bauchschmerz hindeuten.
-
-Pankreatitis lässt sich zu Hause weder sicher bestätigen noch ausschließen. Fettiges Futter ist keine geeignete „Lockmahlzeit“, wenn Bauchschmerzen oder Erbrechen bestehen.
-
-## Nieren-, Leber- und Stoffwechselerkrankungen
-
-Appetitminderung ist bei vielen inneren Erkrankungen ein frühes oder unspezifisches Zeichen.
-
-### Nierenerkrankung
-
-Mögliche Begleitzeichen:
-
-- deutlich mehr oder weniger trinken
-- häufiger oder seltener urinieren
-- Erbrechen
-- Gewichtsverlust
-- Mundgeruch
-- Schwäche
-- Austrocknung
-
-Bei fortgeschrittener Nierenerkrankung können urämische Stoffwechselprodukte Übelkeit und Erbrechen auslösen. Die Behandlung richtet sich nach Ursache, Hydratation, Elektrolyten und Nierenwerten.
-
-### Leber- oder Gallenerkrankung
+Socken, Spielzeugteile, Maiskolben, Knochen, Steine, Stoff, Verpackungen und Schnüre können Magen oder Darm blockieren.
 
 Mögliche Hinweise:
 
-- gelbe Augen oder Schleimhäute
-- dunkler Urin
-- sehr heller Kot
-- Erbrechen
-- Gewichtsverlust
-- ausgeprägte Müdigkeit
-- vergrößerter oder schmerzhafter Bauch
+- plötzliches Erbrechen
+- vollständige oder zunehmende Futterverweigerung
+- Bauchschmerz
+- gekrümmte Haltung
+- Unruhe
+- wenig oder kein Kot
+- Durchfall trotz Teilverschluss
+- Speicheln
+- rasche Verschlechterung
 
-Gelbfärbung ist ein dringendes Zeichen und gehört tierärztlich abgeklärt.
+Kotabsatz schließt einen Darmverschluss nicht sicher aus. Material, das sich bereits hinter der Blockade befindet, kann zunächst noch ausgeschieden werden.
 
-### Addison-Krise
+Sichtbare Schnüre dürfen weder aus dem Maul noch aus dem After gezogen werden. Sie können im Darm fixiert sein und Gewebe verletzen.
 
-Bei Morbus Addison können unspezifische Episoden aus Appetitverlust, Erbrechen, Durchfall und Schwäche auftreten. In einer Krise kann der Kreislauf kollabieren. Ein Hund mit bekannter Addison-Erkrankung und akuter Futterverweigerung braucht eine klare Notfallanweisung der behandelnden Praxis.
+## Pankreatitis
+
+Eine Entzündung der Bauchspeicheldrüse kann Appetitverlust, Erbrechen, Schwäche, Dehydration, Durchfall und Bauchschmerz verursachen. Die Zeichen sind nicht spezifisch.
+
+Manche Hunde nehmen die sogenannte Gebetsstellung ein: Vorderkörper tief, Hinterhand hoch. Die Haltung beweist keine Pankreatitis, kann aber auf Bauchschmerz hinweisen.
+
+Fettreiche Lockmittel sind bei möglicher Pankreatitis ungeeignet. Die Diagnose erfordert die Kombination aus Untersuchung, Laborwerten und häufig Bildgebung.
+
+## Erkrankungen von Nieren, Leber und Stoffwechsel
+
+### Nierenerkrankungen
+
+Mögliche Begleitzeichen sind verändertes Trinken, häufiger oder seltener Urin, Erbrechen, Gewichtsverlust, Mundgeruch und Schwäche. Appetitverlust kann durch Übelkeit, Dehydration oder Stoffwechselprodukte entstehen.
+
+### Leber und Galle
+
+Gelbe Augen oder Schleimhäute, dunkler Urin, sehr heller Kot, Erbrechen und ein schmerzhafter Bauch sind wichtige Hinweise. Eine sichtbare Gelbfärbung gehört zeitnah untersucht.
 
 ### Diabetes
 
-Ein Hund mit Diabetes frisst häufig zunächst mehr und nimmt trotzdem ab. Bei einer Entgleisung kann der Appetit jedoch sinken. Futterverweigerung zusammen mit Erbrechen, Schwäche, Dehydration oder auffälliger Atmung ist dringend.
+Bei einer Entgleisung können Appetitverlust, Erbrechen, Schwäche, Dehydration und auffällige Atmung auftreten. Die Insulindosis darf bei Futterverweigerung nicht nach einer allgemeinen Internetregel angepasst werden.
 
-Die Insulindosis darf nicht nach einer allgemeinen Internetregel verändert werden. Kontaktiere die behandelnde Praxis oder den Notdienst.
+### Addison-Erkrankung
+
+Wiederkehrende Episoden aus Mattigkeit, Erbrechen, Durchfall und Appetitverlust können vorkommen. In einer Addison-Krise kann der Kreislauf zusammenbrechen.
 
 ## Infektionen, Fieber und Entzündungen
 
-Viele Infektionen reduzieren den Appetit. Dazu gehören lokale Entzündungen, Atemwegsinfektionen, Gebärmuttervereiterung, Leptospirose, durch Zecken übertragene Erkrankungen und schwere systemische Infektionen.
+Appetitverlust begleitet viele Infektionen. Dazu gehören Atemwegsinfekte, Harnwegsinfektionen, Gebärmuttervereiterung, Leptospirose, durch Zecken übertragene Erkrankungen und schwere systemische Entzündungen.
 
-Mögliche Begleitzeichen:
+Warme Ohren oder eine trockene Nase beweisen kein Fieber. Eine zuverlässige Messung erfolgt rektal, sollte aber nicht gegen starken Widerstand durchgeführt werden.
 
-- Mattigkeit
-- Fieber
-- Zittern
-- beschleunigte Atmung
-- Schmerzen
-- Husten
-- Nasenausfluss
-- Lahmheit
-- vergrößerte Lymphknoten
-- Erbrechen oder Durchfall
+Zusätzliche Hinweise sind Zittern, beschleunigte Atmung, Schmerzen, Husten, Nasenausfluss, Lahmheit oder ungewöhnlicher Rückzug.
 
-Warme Ohren oder eine trockene Nase beweisen kein Fieber. Eine zuverlässige Temperaturmessung erfolgt rektal. Zwinge einen schmerzhaften oder abwehrenden Hund nicht zur Messung.
+## Schmerz außerhalb des Verdauungstrakts
 
-## Schmerzen außerhalb des Verdauungstrakts
-
-Appetitverlust kann durch Schmerzen entstehen, selbst wenn Magen und Darm gesund sind.
-
-Mögliche Ursachen:
-
-- Arthrose
-- Rücken- oder Nackenschmerz
-- Verletzung
-- Abszess
-- Harnwegsschmerz
-- Operationsschmerz
-- Ohrentzündung
-- Tumorerkrankung
-- Schmerz beim Senken des Kopfes
-
-AAHA führt verminderte Aktivität und verminderten Appetit als mögliche Schmerzzeichen auf. Manche Hunde fressen aus der Hand oder aus einem erhöhten Napf, weil die Körperhaltung angenehmer ist.
+Hunde mit Arthrose, Rücken-, Nacken-, Harnwegs- oder Operationsschmerz können weniger fressen, obwohl Magen und Darm nicht die Hauptursache sind.
 
 Achte auf:
 
-- steifen Gang
 - Zögern beim Aufstehen
+- steifen Gang
 - Meiden von Treppen
 - Abwehr beim Hochheben
 - ungewöhnliches Hecheln
 - nächtliche Unruhe
 - gekrümmten Rücken
 - weniger Kontakt
-- veränderten Gesichtsausdruck
+- Probleme beim Senken des Kopfes
 
-Ein höherer, stabiler Napf kann kurzfristig helfen, ersetzt aber keine Schmerzdiagnostik.
+Ein erhöhter Napf kann bei einzelnen Hunden kurzfristig das Fressen erleichtern, ersetzt aber keine Schmerzdiagnostik.
 
-## Medikamente, Narkose und Impfungen
+## Medikamente, Impfungen und Narkose
 
-Appetitminderung kann zeitlich mit Medikamenten, einer Narkose oder einer Impfung zusammenfallen. Der zeitliche Zusammenhang beweist jedoch nicht automatisch die Ursache.
+Appetitminderung kann zeitlich nach Medikamenten, Narkose oder Impfung auftreten. Der Zusammenhang sollte dokumentiert, aber nicht vorschnell als einzige Ursache angenommen werden.
 
-Dokumentiere:
+Notiere Präparat, Dosis, Zeitpunkt der Gabe und Beginn der Beschwerden. Verordnete Medikamente nicht eigenmächtig absetzen. Manche müssen ausgeschlichen werden, andere sind bei geringer Futteraufnahme besonders kritisch.
 
-- Name des Präparats
-- Dosis
-- Zeitpunkt der Gabe
-- Beginn der Beschwerden
-- Erbrechen oder Durchfall
-- andere neue Symptome
-
-Setze verordnete Medikamente nicht eigenmächtig ab. Einige Arzneimittel müssen ausgeschlichen werden, andere sind bei geringer Futteraufnahme besonders kritisch. Kontaktiere die behandelnde Praxis.
-
-Nach einer Narkose kann leichte Müdigkeit am selben Tag vorkommen. Die konkrete Entlassungsanweisung geht vor. Wiederholtes Erbrechen, starke Schmerzen, Atemprobleme, extreme Müdigkeit, Blutung oder ausbleibender Urin sind keine normalen Beobachtungsbefunde.
+Nach einer Narkose kann am selben Tag Müdigkeit auftreten. Wiederholtes Erbrechen, starke Schmerzen, Atemprobleme, extreme Benommenheit, Blutungen oder fehlender Urin sind keine normalen Beobachtungsbefunde.
 
 ## Vergiftungen
 
-Viele Giftstoffe verursachen Appetitverlust, oft zusammen mit Erbrechen, Speicheln, Zittern, Durchfall, Schwäche oder neurologischen Auffälligkeiten.
+Mögliche Auslöser sind unter anderem Humanmedikamente, Xylit, Schokolade, Weintrauben und Rosinen, Rodentizide, Schneckenkorn, Nikotinprodukte, Frostschutzmittel, Reinigungsmittel und bestimmte Pflanzen.
 
-Mögliche Auslöser:
+Bei Verdacht:
 
-- Medikamente für Menschen
-- Schokolade
-- Xylit
-- Weintrauben oder Rosinen
-- Zwiebeln und Knoblauch in relevanter Menge
-- Rodentizide
-- Schneckenkorn
-- Reinigungsmittel
-- Nikotinprodukte
-- bestimmte Pflanzen
-- Frostschutzmittel
-- illegale Drogen
+- Verpackung oder Produktname sichern
+- geschätzte Menge notieren
+- Zeitpunkt eingrenzen
+- sofort Tierarztpraxis oder Notdienst kontaktieren
+- kein Erbrechen auslösen, sofern es nicht ausdrücklich angewiesen wird
 
-Bei Verdacht nicht abwarten. Verpackung, Produktname, geschätzte Menge und Zeitpunkt bereithalten. Kein Erbrechen auslösen, sofern die Tierarztpraxis oder Giftnotrufstelle dies nicht ausdrücklich anweist.
+Appetitverlust kann bei Vergiftungen ein frühes, aber unspezifisches Zeichen sein.
 
-## Stress als Ursache: möglich, aber nicht bequem
+## Stress und Umwelt: möglich, aber nicht bequem
 
-Stress kann die Futteraufnahme reduzieren. Typische Auslöser:
+Stress kann die Aufnahme reduzieren. Häufige Auslöser sind Umzug, Reise, Tierpension, Lärm, neue Tiere, Trennung von einer Bezugsperson oder Konflikte am Futterplatz.
 
-- Umzug
-- Tierpension
-- Reise
-- neue Menschen oder Tiere
-- Trennung von einer Bezugsperson
-- Lärm und Bauarbeiten
-- Konflikte im Mehrhundehaushalt
-- neuer Napf oder Futterplatz
-- abrupt veränderte Routine
+Stress sollte nicht zur bequemen Ausschlussdiagnose werden. Ein Hund kann gleichzeitig gestresst und krank sein.
 
-Stress sollte nicht vorschnell zur Hauptdiagnose werden. Schmerzen, Übelkeit oder eine beginnende Erkrankung können gleichzeitig bestehen.
+### Fallbeispiel: Mehrhundehaushalt
 
-### Hinweise auf einen starken Umwelteinfluss
+Ein Hund frisst nachts, aber tagsüber nicht. Im Video zeigt sich, dass ein zweiter Hund den Zugang zum Napf durch Blickkontakt und Körperposition blockiert. Getrennte Fütterung normalisiert die Aufnahme.
 
-- Hund frisst in ruhiger Umgebung, aber nicht im belebten Raum
-- Aufnahme normalisiert sich nach Rückkehr nach Hause
-- er zeigt gleichzeitig Unruhe, Hecheln oder Meideverhalten
-- er frisst nachts oder unbeobachtet
-- er wird am Napf von einem anderen Tier bedrängt
+Das spricht für einen sozialen Einfluss, schließt eine körperliche Ursache bei erneutem Rückgang aber nicht aus.
 
-Bleibt die Aufnahme deutlich reduziert, gilt trotzdem die medizinische Abklärung.
+## Futter, Lagerung und Technik prüfen
 
-## Futter und Futterplatz prüfen
+Manchmal liegt die Ursache tatsächlich im Angebot:
 
-Manchmal liegt das Problem tatsächlich am Angebot.
-
-Prüfe:
-
-- Mindesthaltbarkeit
-- Geruch, Farbe und Konsistenz
-- beschädigte Verpackung
-- Lagerung und Feuchtigkeit
 - neue Rezeptur oder Charge
-- Rückrufmeldungen
-- abrupten Futterwechsel
-- verschmutzten Napf
-- starken Reinigungsmittelgeruch
-- rutschenden oder klappernden Napf
+- verdorbener Geruch
+- feucht gewordenes Trockenfutter
+- beschädigte Verpackung
+- abruptes Umstellen
+- verschmutzter Napf
+- Reinigungsmittelgeruch
+- rutschender oder klappernder Napf
 - Futterplatz neben lauten Geräten
-- Konkurrenz durch andere Tiere
-- zu große oder zu harte Kroketten
-- blockierten Futterautomaten
+- blockierter Futterautomat
 
-### Futterautomat kontrollieren
+Bei automatischer Fütterung muss geprüft werden, ob Futter wirklich im Napf angekommen ist. Eine App-Meldung beweist weder die vollständige Ausgabe noch die Aufnahme durch den richtigen Hund.
 
-Bei automatischer Fütterung kann eine technische Störung unbemerkt bleiben.
+Mehr zur Einordnung verschiedener Futterarten findest du im Ratgeber [Trockenfutter oder Nassfutter für Hunde?](/trockenfutter-oder-nassfutter-hund/). Technische und hygienische Ursachen behandelt der Artikel [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/).
 
-- Wurde wirklich Futter ausgegeben?
-- Ist der Auslass frei?
-- Ist Trockenfutter verklumpt?
-- Stimmt die Uhrzeit?
-- Ist der Behälter leer?
-- Dreht der Rotor?
-- Meldet die App Erfolg, obwohl nichts im Napf liegt?
-- Frisst ein anderes Tier die Portion?
+## Denkfehler, die die Abklärung verzögern
 
-Eine App-Meldung dokumentiert meist nur einen technischen Vorgang. Sie beweist nicht, dass der Hund gefressen hat.
-
-Mehr zur Auswahl der Futterart findest du im Ratgeber [Trockenfutter oder Nassfutter für Hunde?](/trockenfutter-oder-nassfutter-hund/). Bei technischen Problemen hilft die Anleitung [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/).
+| Denkfehler | Warum er problematisch ist | Bessere Frage |
+|---|---|---|
+| „Er wird schon fressen, wenn er Hunger hat.“ | Schmerz, Übelkeit oder Blockaden verschwinden nicht durch Hunger. | Welche Begleitsymptome und welches Muster sehe ich? |
+| „Leckerli gehen, also ist er gesund.“ | Kleinstmengen sagen wenig über Versorgung und Ursache. | Wie viel Prozent der normalen Tagesenergie nimmt er auf? |
+| „Das ist Trotz.“ | Moralische Erklärungen verdecken medizinische oder soziale Ursachen. | Ist das Verhalten neu, situationsabhängig oder schmerzbedingt? |
+| „Kot kommt noch, also kein Fremdkörper.“ | Kot hinter einer Blockade kann zunächst weiter ausgeschieden werden. | Gibt es Erbrechen, Schmerz oder einen möglichen Verschluckmoment? |
+| „Der Automat meldet Erfolg.“ | Technische Ausgabe ist kein Fressnachweis. | Liegt die Portion tatsächlich im Napf und fehlt sie später? |
+| „Ich probiere zehn Sorten.“ | Häufige Wechsel erschweren die Beobachtung und können Aversionen verstärken. | Bleibt eine kleine vertraute Portion im Magen? |
 
 ## Was du zu Hause sicher tun kannst
 
-![Sechs sichere Schritte bei verminderter Futteraufnahme des Hundes](../../assets/images/guides/hund-frisst-nicht/home-actions.webp)
+![Sichere Schritte bei verminderter Futteraufnahme](../../assets/images/guides/hund-frisst-nicht/home-actions.webp)
 
-Häusliche Maßnahmen sind eine kurze Überbrückung bei einem stabilen Hund. Sie behandeln keine unbekannte Ursache.
+Häusliche Maßnahmen sind nur eine kurze Überbrückung bei einem wachen, stabilen Hund ohne Notfallzeichen.
 
-### 1. Allgemeinzustand prüfen
+### Allgemeinzustand vor dem Futter prüfen
 
-Achte auf:
+Beurteile Atmung, Wachheit, Bewegung, Bauchumfang, Schleimhautfarbe, Wasseraufnahme, Urin, Kot, Erbrechen und Schmerz. Bei Auffälligkeiten endet der Futterversuch.
 
-- Atmung
-- Wachheit
-- Bewegung
-- Bauchumfang
-- Schleimhautfarbe
-- Erbrechen und Durchfall
-- Schmerz
-- Wasseraufnahme
-- Urin- und Kotabsatz
+### Kleine vertraute Portion anbieten
 
-Bei Warnzeichen nicht weiter mit Futter experimentieren.
+Eine kleine frische Portion des gewohnten Futters ist sinnvoller als ein übervoller Napf oder eine Folge ständig neuer Lockmittel. So bleibt die Aufnahme messbar.
 
-### 2. Tatsächliche Menge dokumentieren
+Nassfutter kann leicht temperiert werden. Trockenfutter kann bei einem Hund ohne Schluckproblem mit etwas warmem Wasser angefeuchtet werden. Das Futter darf nicht heiß sein.
 
-Notiere:
+### Ruhige Bedingungen schaffen
 
-- letzte normale Mahlzeit
-- normale Tagesration
-- angebotene Menge
-- Restmenge
-- Leckerli und Kauartikel
-- Erbrechen
-- Wasseraufnahme
-- Kot und Urin
-- Medikamente
-- neue Ereignisse
+Ein stabiler, sauberer Napf an einem ruhigen Ort hilft besonders in Mehrhundehaushalten. Füttere vorübergehend getrennt, damit klar ist, welcher Hund wie viel frisst.
 
-Grammangaben sind aussagekräftiger als „ein bisschen“.
+### Frisches Wasser bereitstellen
 
-### 3. Vertrautes Futter anbieten
+Wasser darf nicht entzogen werden. Trinkt der Hund nicht, erbricht Wasser oder kann nicht sicher schlucken, steigt die Dringlichkeit.
 
-Biete zunächst das Futter an, das der Hund normalerweise gut verträgt. Eine akute Futterverweigerung ist kein guter Zeitpunkt für eine radikale Umstellung.
+### Was du nicht tun solltest
 
-Kleine Portionen sind sinnvoller als ein voller Napf, weil sie frisch bleiben und die Aufnahme leichter messbar ist.
+- Futter gegen Widerstand eingeben
+- Wasser oder Brei mit einer Spritze verabreichen
+- Humanmedikamente geben
+- alte Tiermedikamente erneut verwenden
+- sehr fettreiche oder gewürzte Lockmittel anbieten
+- über mehrere Tage auf „Mäkeligkeit“ testen
+- bei Bauchaufblähung oder erfolglosem Würgen weiterfüttern
 
-### 4. Futter leicht temperieren
+## Kalorien statt Napfvolumen
 
-Nassfutter kann leicht erwärmt werden, damit der Geruch intensiver wird. Es darf nicht heiß sein. Nach dem Erwärmen gründlich umrühren und die Temperatur prüfen.
+Bei Mischfütterung kann das Volumen täuschen. 100 Gramm Trockenfutter enthalten meist deutlich mehr Energie als 100 Gramm Nassfutter.
 
-Trockenfutter kann bei einem Hund ohne Schluckproblem mit etwas warmem Wasser angefeuchtet werden. Bei Zahn- oder Schluckproblemen gehört die Ursache abgeklärt.
+Zur Berechnung:
 
-### 5. Ruhigen Futterplatz schaffen
+**gefressene Gramm × Kilokalorien pro 100 Gramm ÷ 100**
 
-- getrennt von anderen Tieren
-- nicht im engen Durchgang
-- abseits lauter Geräte
-- rutschfeste Unterlage
-- stabiler, sauberer Napf
-- bei Nacken- oder Gelenkproblemen gegebenenfalls leicht erhöht
+Beispiel: Ein Trockenfutter liefert 380 kcal pro 100 Gramm. Frisst der Hund 25 Gramm, sind das 95 kcal.
 
-### 6. Wasser bereitstellen
+Diese Rechnung ersetzt keine tierärztliche Bedarfsermittlung, zeigt aber, ob ein scheinbar halbvoller Napf tatsächlich nur einen kleinen Teil des normalen Energiebedarfs deckt.
 
-Frisches Wasser muss verfügbar sein. Wenn der Hund nicht trinkt, wiederholt erbricht oder Wasser sofort wieder hochkommt, steigt die Dringlichkeit deutlich.
+## Verlauf statt Einzelmoment
 
-## Kleine Portionen statt Futterbuffet
+Eine einzelne ausgelassene Mahlzeit ist ein Moment. Medizinisch aussagekräftiger ist der Trend.
 
-Viele Halter stellen nacheinander Trockenfutter, Nassfutter, Wurst, Käse, Brühe und Leckerli bereit. Das erschwert die Beurteilung und kann eine Futteraversion ausweiten.
+### Beispiel eines stabilen Verlaufs
 
-Besser:
+- morgens kein Interesse
+- normale Wasseraufnahme
+- normale Aktivität
+- kein Erbrechen
+- abends 80 Prozent der normalen Portion
+- am Folgetag normal
 
-- eine vertraute Sorte
-- kleine frische Portion
-- ruhige Beobachtung
-- Restmenge messen
-- nicht im Minutentakt wechseln
+### Beispiel eines problematischen Verlaufs
 
-Ein Hund, der wegen Übelkeit mehrere stark riechende Futtermittel angeboten bekommt, kann diese später ebenfalls meiden.
+- Tag 1: 50 Prozent
+- Tag 2: 25 Prozent
+- Tag 3: nur Leckerli
+- zusätzlich Gewichtsverlust und mehr Trinken
 
-## Was du nicht tun solltest
+Die zweite Entwicklung ist auch ohne dramatischen Notfall ein klarer Grund für eine Untersuchung.
 
-### Nicht zwangsernähren
+### Praktische 12-Stunden-Zeitachse
 
-Futter gegen Widerstand ins Maul zu drücken kann:
+Diese Zeitachse gilt nur für einen gesunden erwachsenen Hund ohne Warnzeichen.
 
-- zum Verschlucken führen
-- Futter in die Atemwege bringen
-- Stress und Abwehr verstärken
-- eine Futteraversion fördern
-- Schmerzen verschlimmern
-- eine Schluckstörung übersehen
+**Stunde 0:** letzte normale Mahlzeit, Menge, Wasser, Kot und Urin notieren. Kleine Portion anbieten.
 
-### Keine Humanmedikamente
+**Nach 2 bis 4 Stunden:** Verhalten am Napf beobachten und Restmenge wiegen.
 
-Gib ohne tierärztliche Anweisung keine:
+**Nach 6 bis 8 Stunden:** bei unverändert fehlender Aufnahme oder neuen Auffälligkeiten Praxis kontaktieren.
 
-- Schmerzmittel
-- Magenmittel
-- Appetitanreger
-- Antihistaminika
-- Beruhigungsmittel
-- Abführmittel
-- hoch dosierten Vitaminpräparate
+**Spätestens bei ungefähr 24 Stunden:** fehlende relevante Aufnahme tierärztlich abklären. Für Risikogruppen gilt diese Wartezeit nicht.
 
-Ibuprofen, Naproxen, Paracetamol und andere Humanpräparate können für Hunde gefährlich oder tödlich sein.
+## Unterschiede nach Alter und Risikoprofil
 
-### Keine übrig gebliebenen Tiermedikamente
-
-Ein früher verordnetes Mittel passt nicht automatisch zur aktuellen Ursache. Dosis, Haltbarkeit, Wechselwirkungen und Organfunktion müssen berücksichtigt werden.
-
-### Kein endloses Lockmittel-Wettrüsten
-
-Sehr fettreiche, salzige oder gewürzte Lebensmittel können weitere Beschwerden auslösen. Bei Verdacht auf Pankreatitis sind fettreiche Extras besonders ungeeignet.
-
-### Nicht über Tage auf „Mäkeligkeit“ testen
-
-Ein kranker Hund kann zwischendurch Leckerli nehmen oder kurz spielen. Das schließt eine relevante Erkrankung nicht aus.
-
-## Information Gain: Vier Stationen des Fressvorgangs beobachten
-
-Die pauschale Aussage „frisst nicht“ verliert wichtige Informationen. Beobachte vier getrennte Stationen:
-
-1. **Annäherung:** Geht der Hund zum Napf?
-2. **Interesse:** Riecht, leckt oder sucht er Futter?
-3. **Mechanik:** Kann er aufnehmen, kauen und schlucken?
-4. **Verträglichkeit:** Bleibt das Futter im Magen?
-
-Beispiele:
-
-- Kein Annähern passt eher zu starkem Krankheitsgefühl, Angst oder ausgeprägter Übelkeit.
-- Interesse ohne Aufnahme spricht eher für Maulschmerz, Übelkeit oder Schluckprobleme.
-- Futter fällt heraus, wenn Kauen oder Greifen gestört ist.
-- Passives Hochkommen direkt nach dem Schlucken weist eher auf Regurgitieren als auf Erbrechen hin.
-- Erbrechen nach mehreren Stunden deutet auf ein anderes Muster als sofortiges Regurgitieren.
-
-Diese Beobachtung ersetzt keine Untersuchung. Sie macht die Vorgeschichte aber wesentlich präziser.
-
-## Information Gain: Aufnahme als Prozent der normalen Tagesmenge
-
-„Weniger“ ist schwer vergleichbar. Eine Prozentangabe zeigt den Verlauf klarer.
-
-### Berechnung
-
-1. Normale Tagesmenge bestimmen.
-2. Tatsächlich gefressene Menge messen.
-3. Gefressene Menge durch normale Menge teilen.
-4. Mit 100 multiplizieren.
-
-Beispiel:
-
-Normal: 400 Gramm Nassfutter pro Tag  
-Tatsächlich: 100 Gramm  
-100 ÷ 400 × 100 = 25 Prozent
-
-Diese Rechnung ist kein medizinischer Grenzwert. Sie verhindert aber, dass eine geringe Restaufnahme überschätzt wird. Ein Hund, der mehrere Tage nur 20 bis 30 Prozent seiner normalen Ration frisst, ist nicht annähernd normal versorgt.
-
-## Information Gain: Kalorien statt Napfvolumen
-
-Bei Mischfütterung ist das Volumen besonders irreführend. 100 Gramm eines energiereichen Trockenfutters liefern oft wesentlich mehr Kalorien als 100 Gramm Nassfutter.
-
-Für eine bessere Dokumentation:
-
-- Energiegehalt auf der Verpackung notieren
-- gefressene Gramm mit Kilokalorien pro 100 Gramm verrechnen
-- Leckerli einbeziehen
-- normale Energieaufnahme als Vergleich verwenden
-
-Beispiel:
-
-Trockenfutter: 380 kcal pro 100 g  
-Gefressen: 25 g  
-Aufnahme: 95 kcal
-
-Diese Berechnung ersetzt keine tierärztliche Bedarfsermittlung. Sie zeigt aber, ob ein vermeintlich „halber Napf“ tatsächlich nur einen kleinen Anteil der üblichen Energie liefert.
-
-## Information Gain: Appetit, Hunger und Belohnungsreaktion trennen
-
-Ein Hund kann ein Leckerli annehmen, obwohl sein normaler Appetit gestört ist. Hochwertige Belohnungen lösen eine starke erlernte Reaktion aus. Das bedeutet nicht, dass Übelkeit oder Schmerz ausgeschlossen sind.
-
-Praktisch sind drei getrennte Fragen:
-
-- Frisst er seine normale Mahlzeit?
-- Nimmt er stark belohnende Kleinstmengen?
-- Frisst er genug, um seinen Bedarf annähernd zu decken?
-
-Nur die dritte Frage beschreibt die Versorgung. Die ersten beiden helfen bei der Ursachenfindung.
-
-## Welpen, Senioren und Risikogruppen
+| Gruppe | Besonderes Risiko | Früh abklären bei |
+|---|---|---|
+| Welpe | geringe Energiereserven, rasche Unterzuckerung und Dehydration | mehreren ausgelassenen Mahlzeiten, Zittern, Schwäche, Durchfall |
+| sehr kleiner Hund | geringe absolute Reserven | Erbrechen, Mattigkeit, fast vollständiger Verweigerung |
+| Senior | häufiger Zahn-, Organ-, Schmerz- und Tumorerkrankungen | neuer Futterselektion, Gewichtsverlust, verändertem Trinken |
+| Hund mit Diabetes | Zusammenhang zwischen Futter und Insulin | jeder deutlichen Verweigerung, Erbrechen, Schwäche |
+| Nieren-, Leber- oder Herzpatient | geringe Kompensationsreserve | neuer Übelkeit, Wasser- oder Urinveränderung |
+| trächtige oder säugende Hündin | hoher Energiebedarf, mögliche Geburts- oder Stoffwechselprobleme | Fieber, Ausfluss, Zittern, Krämpfen, Schwäche |
 
 ### Welpen
 
-Welpen haben geringere Energiereserven und trocknen schneller aus. Sehr kleine Rassen können bei längerer Futterpause in eine Unterzuckerung geraten.
-
-Dringend sind:
-
-- mehrere ausgelassene Mahlzeiten
-- Schwäche
-- Zittern
-- Taumeln
-- ungewöhnliche Müdigkeit
-- Erbrechen oder Durchfall
-- aufgeblähter Bauch
-- blasse Schleimhäute
-- fehlende Gewichtszunahme
-
-Bei einem jungen Welpen ist keine pauschale 24-Stunden-Beobachtung angemessen. Je jünger, kleiner und symptomatischer das Tier ist, desto früher muss die Praxis kontaktiert werden.
+Bei jungen und sehr kleinen Welpen sind mehrere ausgelassene Mahlzeiten keine Situation für eine pauschale 24-Stunden-Beobachtung. Zittern, Taumeln, ungewöhnliche Müdigkeit, Erbrechen und Durchfall sind früh abklärungsbedürftig.
 
 ### Senioren
 
-Appetitverlust ist keine normale Alterserscheinung. Bei älteren Hunden sind unter anderem häufiger:
+Appetitverlust ist keine normale Alterserscheinung. Ein langsamer Rückgang über Wochen kann auf Zahnprobleme, Nieren-, Leber- oder Tumorerkrankungen, Schmerzen oder Nebenwirkungen mehrerer Medikamente hindeuten.
 
-- Zahnerkrankungen
-- Nieren- oder Lebererkrankungen
-- Tumorerkrankungen
-- Arthrose und Rückenschmerz
-- kognitive Veränderungen
-- Nebenwirkungen mehrerer Medikamente
-- verminderter Geruchssinn
+Regelmäßiges Wiegen ist hier besonders wertvoll.
 
-Ein langsamer Rückgang über Wochen ist ebenso relevant wie eine akute Verweigerung. Regelmäßiges Wiegen hilft, schleichenden Gewichtsverlust früher zu erkennen.
+## Diagnostik aus tierärztlicher Sicht
 
-### Sehr kleine Hunde
+Die Untersuchung folgt keiner starren Liste. Sie richtet sich nach Muster, Dauer, Alter, Vorerkrankungen und klinischem Befund.
 
-Sehr kleine Hunde haben im Verhältnis geringe Reserven. Bei gleichzeitigem Erbrechen, Durchfall oder Diabetes kann sich der Zustand rasch verschlechtern.
+### 1. Vorgeschichte
 
-### Trächtige oder säugende Hündinnen
+Die Praxis fragt typischerweise nach:
 
-Der Energiebedarf ist erhöht. Futterverweigerung kann durch Übelkeit, Schmerz, Geburtskomplikationen, Entzündung der Gebärmutter oder Milchdrüsen sowie Stoffwechselstörungen begleitet sein. Bei Mattigkeit, Fieber, ungewöhnlichem Ausfluss, Zittern oder Krämpfen ist sofortige Hilfe nötig.
-
-### Hunde mit Diabetes
-
-Futteraufnahme und Insulin stehen in direktem Zusammenhang. Eine ausgefallene Mahlzeit erfordert eine individuelle Anweisung der behandelnden Praxis. Die Dosis nicht schematisch geben, halbieren oder auslassen.
-
-### Hunde mit Nieren-, Leber- oder Herzerkrankung
-
-Chronisch kranke Hunde können schneller entgleisen. Appetitminderung kann auf Übelkeit, Dehydration, Elektrolytstörungen, Medikamentennebenwirkungen oder eine Verschlechterung der Grunderkrankung hinweisen.
-
-## Nach Operation oder Narkose
-
-Leichte Müdigkeit am Operationstag kann vorkommen. Die Entlassungsanweisung der Praxis ist verbindlicher als allgemeine Internetangaben.
-
-Kontaktiere die Praxis bei:
-
-- vollständiger Futterverweigerung über die dort genannte Frist
-- wiederholtem Erbrechen
-- starken Schmerzen
-- auffälliger Schwellung oder Blutung
-- Atemproblemen
-- extremer Müdigkeit
-- aufgegangener Wunde
-- fehlendem Urinabsatz
-- deutlicher Verschlechterung
-
-Gib nur verordnete Schmerzmittel. Humanpräparate sind ungeeignet.
-
-## Mehrhundehaushalt
-
-Konflikte am Futterplatz können subtil sein. Ein Hund muss nicht sichtbar angegriffen werden, um den Napf zu meiden.
-
-Mögliche Zeichen:
-
-- wartet, bis der andere Hund den Raum verlässt
-- frisst nur aus der Hand oder nachts
-- nähert sich geduckt
-- bricht bei Blickkontakt ab
-- wird im Durchgang blockiert
-- frisst hastig und geht sofort weg
-- verliert langsam Gewicht
-
-### Praktische Prüfung
-
-Füttere den betroffenen Hund vorübergehend in einem separaten ruhigen Raum. Verwende eine exakt abgewogene Portion und entferne Reste nach der Beobachtungszeit.
-
-Frisst er getrennt, ist ein sozialer Einfluss wahrscheinlicher. Eine Erkrankung ist dadurch nicht ausgeschlossen.
-
-## Kamera und Futtertechnik sinnvoll nutzen
-
-Eine Kamera kann zeigen:
-
-- welcher Hund zum Napf geht
-- wie lange er dort bleibt
-- ob er verdrängt wird
-- ob der Automat ausgibt
-- ob er nur schnuppert
-- ob er kurz nach dem Fressen erbricht oder regurgitiert
-
-Sie zeigt nicht sicher:
-
-- wie viele Gramm geschluckt wurden
-- ob Schmerzen bestehen
-- ob Übelkeit vorliegt
-- ob ein Fremdkörper vorhanden ist
-- ob die aufgenommene Energiemenge reicht
-
-Technik ist besonders nützlich, wenn sie eine konkrete Unsicherheit beseitigt. Sie ersetzt keine Untersuchung.
-
-## Vor dem Tierarzttermin
-
-![Checkliste mit wichtigen Beobachtungen für die Tierarztpraxis](../../assets/images/guides/hund-frisst-nicht/vet-checklist.webp)
-
-Bereite vor:
-
-- Zeitpunkt der letzten normalen Mahlzeit
-- normale Tagesmenge
-- aktuelle Aufnahme in Gramm
-- Futterart und neue Charge
-- Leckerli und Kauartikel
-- Wasseraufnahme
-- letzter Urin- und Kotabsatz
-- Erbrechen oder Durchfall
-- Video auffälliger Fressversuche
+- letzter normaler Mahlzeit
+- normaler und aktueller Menge
+- Art und Charge des Futters
+- Erbrechen, Regurgitieren und Durchfall
+- Wasser- und Urinverhalten
+- möglichen Fremdkörpern oder Giftstoffen
+- Medikamenten
 - Gewichtsverlauf
-- Medikamente und Nahrungsergänzungen
-- bekannte Erkrankungen
-- mögliche Giftstoffe
-- fehlende Spielzeugteile oder Stoffstücke
-- kürzliche Veränderungen im Haushalt
-- Reisen oder Aufenthalt in einer Tierpension
+- Veränderungen in Haltung und Umgebung
 
-Bei Giftverdacht Verpackung oder Foto mitnehmen. Bei Erbrechen kann ein Foto der Menge und Zusammensetzung hilfreich sein.
+### 2. Klinische Untersuchung
 
-## Was die Tierarztpraxis untersucht
+Wichtig sind Allgemeinzustand, Schleimhäute, Hydratation, Temperatur, Maul, Zähne, Rachen, Bauch, Herz, Lunge, Schmerzreaktion und neurologische Auffälligkeiten.
 
-Je nach Verlauf und Befund können sinnvoll sein:
+### 3. Labor
 
-- Allgemeinuntersuchung
-- Gewicht, Körper- und Muskelzustand
-- Hydratation
-- Temperatur
-- Maul- und Zahnkontrolle
-- Abtasten des Bauches
-- Blutuntersuchung
-- Elektrolyte und Blutzucker
-- Urinuntersuchung
-- Röntgen
-- Ultraschall
-- Blutdruck
-- Tests auf Infektionen
-- weiterführende Zahnuntersuchung
-- Kotuntersuchung
+Blutbild, Organwerte, Elektrolyte, Blutzucker und Entzündungsparameter helfen, Infektion, Dehydration, Stoffwechselentgleisung und Organerkrankungen einzugrenzen. Eine Urinuntersuchung ergänzt die Beurteilung von Nieren, Diabetes und Hydratation.
 
-Nicht jeder Hund braucht sofort alle Untersuchungen. Die Auswahl richtet sich nach Alter, Symptomen, Vorerkrankungen und klinischem Befund.
+### 4. Bildgebung
 
-## Behandlung
+Röntgen und Ultraschall werden bei Fremdkörperverdacht, Bauchschmerz, Organveränderungen, Flüssigkeitsansammlungen oder unklarer anhaltender Futterverweigerung eingesetzt.
 
-Die Behandlung verfolgt zwei Ziele:
+### 5. Weiterführende Untersuchungen
 
-1. Ursache behandeln.
-2. Flüssigkeits- und Energieversorgung sichern.
+Je nach Befund kommen Dentalröntgen, Endoskopie, spezifische Pankreas- oder Hormontests, Kotuntersuchungen, Blutdruckmessung oder Gewebeproben infrage.
 
-Mögliche Maßnahmen:
+Nicht jeder Hund braucht alle Untersuchungen. Gute Diagnostik bedeutet, die wahrscheinlichsten und gefährlichsten Ursachen mit möglichst gezielten Schritten zu prüfen.
+
+## Tierarztperspektive: Warum „ein Appetitanreger“ oft zu kurz greift
+
+Ein Appetitanreger kann bei ausgewählten Patienten sinnvoll sein. Er behandelt aber weder Zahnfraktur noch Darmverschluss, Pankreatitis, Schluckstörung oder schwere Übelkeit.
+
+Die tierärztliche Reihenfolge ist deshalb:
+
+1. gefährliche und mechanische Ursachen ausschließen
+2. Übelkeit, Schmerz und Flüssigkeitshaushalt beurteilen
+3. Grunderkrankung behandeln
+4. Energieversorgung sichern
+5. bei Bedarf gezielt Appetit stimulieren
+
+Ein Hund kann unter einem Appetitanreger Hunger entwickeln und trotzdem nicht sicher schlucken oder wegen eines Fremdkörpers erbrechen.
+
+## Behandlung und Ernährungsunterstützung
+
+Die Therapie richtet sich nach der Ursache. Mögliche Maßnahmen sind:
 
 - Schmerztherapie
 - Behandlung von Übelkeit
 - Flüssigkeitstherapie
 - Zahnsanierung
-- Behandlung einer Infektion
+- Antibiotika bei klarer Indikation
 - Entfernung eines Fremdkörpers
 - Operation bei Magendrehung oder Darmverschluss
-- Therapie einer Grunderkrankung
-- tierärztlich verordneter Appetitanreger
-- unterstützte Ernährung
+- Therapie einer Nieren-, Leber- oder Stoffwechselerkrankung
+- kontrollierte Ernährungsunterstützung
 - Ernährungssonde
 
-Ein Appetitanreger ersetzt keine Ursachenklärung. Ein Hund kann Hunger entwickeln und trotzdem wegen eines mechanischen Hindernisses nicht sicher fressen.
+Mehrere Tage mit sehr geringer oder fehlender Aufnahme sind nicht nur ein Symptom. Sie verschlechtern die Energie- und Proteinversorgung und können Genesung sowie Medikamentenverträglichkeit beeinträchtigen.
 
-## Unterstützte Ernährung und Ernährungssonden
+### Ernährungssonden nüchtern betrachtet
 
-WSAVA betont bei hospitalisierten Hunden und Katzen die Bedeutung einer frühzeitigen Ernährungsbewertung. Mehrere Tage mit vollständiger oder teilweiser Anorexie müssen bei der Entscheidung über Ernährungsunterstützung berücksichtigt werden.
-
-Eine Sonde klingt drastisch, kann aber eine kontrollierte Versorgung ermöglichen, ohne bei jeder Mahlzeit gegen das Tier zu arbeiten.
+Eine Sonde wirkt auf den ersten Blick drastisch, kann aber deutlich schonender sein als wiederholtes Zwangsfüttern.
 
 Mögliche Vorteile:
 
-- berechenbare Energieaufnahme
-- Medikamentengabe
-- weniger Futterkampf
-- geringeres Aspirationsrisiko als unkontrolliertes Eingeben, abhängig von Sondentyp und Situation
-- Schutz vor weiterer Futteraversion
-- Versorgung während die Ursache behandelt wird
+- berechenbare Nährstoffzufuhr
+- kontrollierte Medikamentengabe
+- weniger Stress bei jeder Mahlzeit
+- Schutz vor zusätzlicher Futteraversion
+- Versorgung, während die Ursache behandelt wird
 
-Die Entscheidung über Art und Zeitpunkt trifft die Tierarztpraxis.
+Art und Zeitpunkt entscheidet die Tierarztpraxis.
 
-## Wenn der Hund nach dem Termin weiter nicht frisst
+## Nach Operation oder Narkose
 
-Kläre bei der Entlassung:
+Die Entlassungsanweisung der behandelnden Praxis geht vor allgemeinen Angaben.
 
-- welche Mindestmenge erwartet wird
-- bis wann der Hund fressen sollte
-- welche Medikamente wann gegeben werden
-- was bei Erbrechen gilt
-- wann erneut Kontakt nötig ist
-- welcher Notdienst zuständig ist
-- ob Wasser und Futter gemessen werden sollen
-- ob eine spezielle Diät notwendig ist
+Kontaktiere die Praxis bei wiederholtem Erbrechen, starken Schmerzen, extremer Benommenheit, Atemproblemen, Blutung, fehlendem Urin oder wenn die dort genannte Frist zur Futteraufnahme überschritten wird.
 
-Kontaktiere die Praxis früher, wenn sich der Zustand verschlechtert. Eine einmalige Untersuchung garantiert keinen harmlosen Verlauf.
+Verordnete Schmerzmittel werden nach Anweisung gegeben. Humanpräparate sind ungeeignet.
 
-## Praktischer 12-Stunden-Verlauf
+## Tierarzt-Checkliste
 
-Diese Struktur gilt nur für einen stabilen erwachsenen Hund ohne Warnzeichen. Sie ist keine Erlaubnis, bei Erbrechen, Schmerz, aufgeblähtem Bauch oder Schwäche zwölf Stunden zu warten.
+![Wichtige Angaben für die tierärztliche Abklärung](../../assets/images/guides/hund-frisst-nicht/vet-checklist.webp)
 
-### Stunde 0
+- [ ] Zeitpunkt der letzten normalen Mahlzeit
+- [ ] normale Tagesration und aktuelle Aufnahme in Gramm
+- [ ] Leckerli, Kauartikel und Tischreste
+- [ ] Wasseraufnahme sowie letzter Urin- und Kotabsatz
+- [ ] Erbrechen, Regurgitieren oder Durchfall
+- [ ] Video auffälliger Fress- oder Schluckversuche
+- [ ] Medikamente, Nahrungsergänzungen und Vorerkrankungen
+- [ ] möglicher Kontakt zu Giftstoffen oder fehlenden Gegenständen
+- [ ] aktuelles Gewicht und Gewichtsverlauf
+- [ ] neue Futtercharge, Reise, Stress oder Veränderungen im Haushalt
 
-- letzte normale Mahlzeit notieren
-- Allgemeinzustand prüfen
-- Bauch ansehen und vorsichtig beurteilen
-- Urin und Kot kontrollieren
-- Gift- und Fremdkörperrisiko prüfen
-- kleine Portion vertrautes Futter anbieten
+Diese Liste ist die erste von maximal zwei Checklisten im Artikel. Sie dient nicht der Selbstdiagnose, sondern verbessert die Anamnese.
 
-### Nach 2 bis 4 Stunden
+## Entscheidungsbaum für die Dringlichkeit
 
-- kleine frische Portion anbieten
-- tatsächliche Aufnahme messen
-- Verhalten am Napf beobachten
-- Wasseraufnahme prüfen
-- nicht zwangsernähren
+![Ampelübersicht zur Dringlichkeit bei Futterverweigerung](../../assets/images/guides/hund-frisst-nicht/urgency-cards.webp)
 
-### Nach 6 bis 8 Stunden
+1. **Aufgeblähter Bauch, erfolgloses Würgen, Atemnot, Kollaps, starke Schmerzen, Gift- oder Fremdkörperverdacht?**  
+   Ja: sofort Notdienst.  
+   Nein: weiter zu 2.
 
-- bei weiter fehlender Aufnahme Praxis kontaktieren, besonders bei ungewöhnlichem Verhalten
-- Videos und Notizen vorbereiten
-- keine immer neuen Lockmittel einsetzen
+2. **Erbricht der Hund wiederholt oder bleibt Wasser nicht im Magen?**  
+   Ja: noch heute, bei Schwäche oder rascher Verschlechterung sofort.  
+   Nein: weiter zu 3.
 
-### Spätestens bei etwa 24 Stunden
+3. **Will der Hund fressen, kann aber nicht aufnehmen, kauen oder schlucken?**  
+   Ja: Maul, Zähne, Rachen oder Speiseröhre zeitnah untersuchen lassen. Nichts erzwingen.  
+   Nein: weiter zu 4.
 
-Ein erwachsener Hund ohne relevante Nahrungsaufnahme sollte untersucht werden. Für Welpen, Senioren, sehr kleine, chronisch kranke oder symptomatische Hunde gilt diese Frist nicht.
+4. **Welpe, Senior, sehr kleiner Hund, Diabetes oder relevante Organerkrankung?**  
+   Ja: frühzeitig Praxis kontaktieren.  
+   Nein: weiter zu 5.
 
-## Wann tierärztliche Hilfe nötig ist
+5. **Nur eine Mahlzeit ausgelassen und sonst vollständig normal?**  
+   Ja: kurze kontrollierte Beobachtung, Menge messen.  
+   Nein: tierärztlich abklären.
 
-![Ampelübersicht zur Dringlichkeit bei Futterverweigerung eines Hundes](../../assets/images/guides/hund-frisst-nicht/urgency-cards.webp)
-
-### Sofort
-
-- aufgeblähter Bauch und erfolgloses Würgen
-- Atemnot
-- Kollaps, Krampf oder Bewusstseinsstörung
-- sehr blasse, graue oder blaue Schleimhäute
-- starker Bauchschmerz
-- wiederholtes Erbrechen mit Schwäche
-- Gift- oder Fremdkörperverdacht
-- größere Blutmengen oder schwarzer Kot
-- rasche Verschlechterung
-
-### Heute
-
-- seit etwa 24 Stunden keine relevante Nahrung
-- deutlich weniger als üblich mit schlechtem Allgemeinzustand
-- wiederholtes Erbrechen oder Durchfall
-- Maulschmerz oder starkes Speicheln
-- Gewichtsverlust
-- verändertes Trinken oder Urinieren
-- Fieberverdacht
-- Welpe, Senior oder chronisch kranker Hund mit reduzierter Aufnahme
-- neue Medikamenteneinnahme mit Beschwerden
-
-### Kurz beobachten
-
-Nur bei einem erwachsenen, sonst gesunden und völlig unauffälligen Hund, der eine einzelne Mahlzeit auslässt und bald wieder normal frisst.
-
-## Häufige Fehleinschätzungen
-
-### „Er wird schon fressen, wenn er Hunger hat“
-
-Kranke Hunde tun das nicht zuverlässig. Übelkeit, Schmerz oder ein Hindernis verschwinden nicht durch mehr Hunger.
-
-### „Er nimmt Leckerli, also ist nichts Ernstes“
-
-Eine Belohnungsreaktion sagt wenig über die ausreichende Tagesaufnahme aus.
-
-### „Das ist nur Trotz“
-
-Hunde verweigern Futter nicht aus moralischem Protest. Stress und erlerntes Auswahlverhalten sind möglich, müssen aber von Krankheit unterschieden werden.
-
-### „Ein großer Hund kann problemlos mehrere Tage fasten“
-
-Körpergröße schützt nicht vor Dehydration, Grunderkrankung, Darmverschluss oder Magendrehung.
-
-### „Ich gebe etwas mit der Spritze“
-
-Ohne Anleitung kann das gefährlich sein und eine Schluckstörung übersehen.
-
-### „Der Automat meldet die Portion als ausgegeben“
-
-Eine technische Meldung beweist weder, dass das Futter im Napf angekommen ist, noch dass der richtige Hund gefressen hat.
-
-## Prävention und frühzeitiges Erkennen
-
-Nicht jede Appetitlosigkeit lässt sich verhindern. Einige Probleme werden aber früher sichtbar, wenn Futteraufnahme und Gewicht nicht nur gefühlt beurteilt werden.
-
-### Regelmäßig wiegen
-
-- dieselbe Waage verwenden
-- möglichst ähnliche Tageszeit
-- Gewicht dokumentieren
-- bei kleinen Hunden kleinere Veränderungen ernst nehmen
-- bei Senioren engere Intervalle wählen
-
-Ein einzelner Wert ist weniger aussagekräftig als der Trend.
-
-### Normale Futtermenge kennen
-
-Wer den Napf dauerhaft nachfüllt, erkennt einen schleichenden Rückgang spät. Portionierte Fütterung macht Veränderungen sichtbarer.
-
-### Zahngesundheit kontrollieren lassen
-
-Viele Zahnerkrankungen bleiben lange unbemerkt. Regelmäßige Kontrollen sind sinnvoll, besonders bei Mundgeruch, Zahnstein oder verändertem Kauen.
-
-### Futter hygienisch lagern
-
-- Originalverpackung oder sauberer, geeigneter Behälter
-- kühl und trocken lagern
-- Nassfutterreste zeitnah entfernen
-- Näpfe regelmäßig reinigen
-- verdächtige Chargen nicht weiterfüttern
-- Futterautomaten auf Fettfilm, Feuchtigkeit und Blockaden prüfen
-
-### Ressourcen trennen
-
-In Mehrhundehaushalten helfen räumlich getrennte Futterplätze. Jeder Hund sollte ungestört fressen können.
-
-### Technik nicht blind vertrauen
-
-Kontrolliere regelmäßig:
-
-- tatsächliche Portion
-- Füllstand
-- Blockaden
-- Frische
-- Fressverhalten
-- Gewichtsverlauf
-
-## Typische Fehleinschätzungen in der Praxis
+## Entscheidungsmatrix
 
 | Situation | Sinnvolle Reaktion | Nicht sinnvoll |
 |---|---|---|
-| Eine Mahlzeit ausgelassen, sonst völlig normal | kleine vertraute Portion, kurz beobachten, Menge messen | sofort fünf neue Futtersorten |
-| Interesse, aber Futter fällt heraus | Maul- und Zahnproblem zeitnah abklären | harte Kauartikel testen |
-| Erbrechen und Futterverweigerung | Praxis kontaktieren, Verlauf dokumentieren | fettreiche Lockmittel |
-| Aufgeblähter Bauch, erfolgloses Würgen | sofort Notdienst | abwarten oder Bauch massieren |
-| Nur Leckerli, sonst kein Futter | Gesamtmenge berechnen, Ursache prüfen | Leckerli als volle Mahlzeit zählen |
+| eine Mahlzeit ausgelassen, sonst unauffällig | kleine vertraute Portion, Menge messen, kurz beobachten | sofort viele neue Futtersorten |
+| Interesse, aber Futter fällt heraus | Maul und Zähne zeitnah untersuchen lassen | harte Kauartikel testen |
+| nur Leckerli, keine Mahlzeit | Gesamtenergie berechnen, Ursache prüfen | Leckerli als ausreichende Versorgung werten |
+| Erbrechen und Futterverweigerung | Verlauf dokumentieren, Praxis kontaktieren | fettreiche Lockmittel |
+| aufgeblähter Bauch und Würgen | sofort Notdienst | abwarten oder Bauch massieren |
 | Welpe lässt mehrere Mahlzeiten aus | frühzeitig Praxis kontaktieren | 24 Stunden warten |
-| Automat meldet Ausgabe, Napf bleibt leer | Mechanik und Portion direkt prüfen | App-Meldung als Fressnachweis werten |
-| Stressverdacht, sonst stabil | ruhiger Futterplatz, kurze Beobachtung | körperliche Ursache dauerhaft ausschließen |
+| Automat meldet Ausgabe, Napf bleibt leer | Gerät und tatsächliche Portion direkt prüfen | App als Fressnachweis ansehen |
+| Stressverdacht, Hund sonst stabil | ruhiger separater Futterplatz, kurzer Test | medizinische Ursache dauerhaft ausschließen |
 
+## Verlauf nach dem Tierarzttermin
 
+Eine Untersuchung ist eine Momentaufnahme. Kläre bei der Entlassung:
 
-## Häufige Denkfehler
+- welche Mindestmenge erwartet wird
+- bis wann der Hund fressen sollte
+- wie Medikamente gegeben werden
+- was bei Erbrechen gilt
+- wann erneut Kontakt nötig ist
+- welcher Notdienst zuständig ist
+- ob Futter und Wasser gemessen werden sollen
+- ob eine spezielle Diät erforderlich ist
 
-Viele Hundehalter interpretieren Futterverweigerung vorschnell.
+Wird der Hund schwächer, erbricht erneut, entwickelt Bauchschmerz oder verweigert auch Wasser, sollte die Praxis früher kontaktiert werden als ursprünglich geplant.
 
-| Annahme | Bessere Einordnung |
-|---|---|
-| „Er hat nur keine Lust.“ | Plötzliche Appetitlosigkeit ist immer zunächst ein Symptom, keine Charaktereigenschaft. |
-| „Er nimmt Leckerli, also ist alles in Ordnung.“ | Kleine Belohnungen ersetzen keine ausreichende Energieaufnahme. |
-| „Ich probiere einfach zehn Futtersorten.“ | Häufige Wechsel erschweren die Beurteilung und können Futteraversionen verstärken. |
-| „Morgen wird es schon besser.“ | Bei Warnzeichen oder ausbleibender Aufnahme verschlechtert Abwarten häufig die Prognose. |
+## Prävention und frühes Erkennen
 
-## Welche Ursachen sind tatsächlich häufig?
+Nicht jede Appetitlosigkeit lässt sich verhindern. Einige Probleme fallen aber früher auf, wenn Fütterung messbar bleibt.
 
-In der Praxis dominieren keine exotischen Erkrankungen. Häufig sind zunächst Zahnprobleme, Magen-Darm-Erkrankungen, Schmerzen, Stresssituationen oder Nebenwirkungen von Medikamenten. Schwerwiegende Ursachen wie Fremdkörper, Magendrehung oder Vergiftungen sind zwar seltener, müssen wegen ihres Risikos aber früh erkannt werden.
+### Gewicht als Verlaufssignal
 
-## Typischer Verlauf
+Wiege den Hund regelmäßig unter ähnlichen Bedingungen. Ein einzelner Wert sagt wenig, der Trend dagegen viel. Bei Senioren und chronisch kranken Hunden sind kürzere Intervalle sinnvoll.
 
-- Erste Mahlzeit ausgelassen
-- Allgemeinzustand prüfen
-- Aufnahme in Gramm dokumentieren
-- Warnzeichen beobachten
-- Tierarztkontakt je nach Verlauf und Risikoprofil
+### Normale Tagesration kennen
 
-## FAQ
+Ein dauerhaft gefüllter Napf verdeckt schleichende Veränderungen. Portionierte Fütterung macht sichtbar, wenn die Aufnahme langsam sinkt.
+
+### Zahngesundheit
+
+Regelmäßige Maul- und Zahnkontrollen sind besonders bei Mundgeruch, Zahnstein, verändertem Kauen oder dem plötzlichen Meiden harter Nahrung wichtig.
+
+### Hygiene und Lagerung
+
+Trockenfutter kühl und trocken lagern, Nassfutterreste zeitnah entfernen, Näpfe reinigen und Futterautomaten auf Fettfilm, Feuchtigkeit und Blockaden prüfen.
+
+### Konkurrenz vermeiden
+
+In Mehrhundehaushalten sollte jeder Hund ungestört fressen können. Getrennte Plätze verbessern nicht nur das Wohlbefinden, sondern auch die Mengenmessung.
+
+## Abschlusscheckliste
+
+![Abschlusscheckliste zur Einordnung einer Futterverweigerung](../../assets/images/guides/hund-frisst-nicht/final-checklist.webp)
+
+- [ ] Notfallzeichen zuerst ausgeschlossen
+- [ ] tatsächliche Aufnahme in Gramm und Prozent erfasst
+- [ ] Interesse, Kauen, Schlucken und Verträglichkeit getrennt beobachtet
+- [ ] Wasser, Urin, Kot, Erbrechen und Schmerz geprüft
+- [ ] Alter, Körpergröße und Vorerkrankungen berücksichtigt
+- [ ] Futtercharge, Napf, Umgebung und Automat kontrolliert
+- [ ] bei Verschlechterung oder ausbleibender Aufnahme Praxis kontaktiert
+
+## Häufige Fragen
 
 ### Mein Hund frisst seit heute Morgen nicht. Muss ich sofort zum Tierarzt?
 
-Nicht zwingend, wenn es sich um einen gesunden erwachsenen Hund handelt, der nur eine Mahlzeit ausgelassen hat und vollständig unauffällig bleibt. Bei Erbrechen, Schmerz, aufgeblähtem Bauch, Schwäche, verändertem Trinken, Giftverdacht oder anderen Warnzeichen ist sofortige oder noch am selben Tag erfolgende Hilfe nötig. Bleibt die relevante Aufnahme bis etwa 24 Stunden aus, sollte er untersucht werden.
+Nicht zwingend, wenn es ein gesunder erwachsener Hund ist, der nur eine Mahlzeit auslässt und vollständig unauffällig bleibt. Prüfe Wasseraufnahme, Atmung, Bauch, Erbrechen, Kot, Urin und Verhalten. Bei aufgeblähtem Bauch, erfolglosem Würgen, Schmerz, Schwäche, Giftverdacht oder wiederholtem Erbrechen ist sofortige Hilfe nötig. Bleibt die Aufnahme deutlich reduziert oder fällt die nächste Mahlzeit ebenfalls aus, sollte die Tierarztpraxis kontaktiert werden.
 
-### Mein Hund frisst nicht, trinkt aber. Ist das weniger schlimm?
+### Mein Hund frisst nicht, trinkt aber normal. Ist das beruhigend?
 
-Trinken ist positiv, schließt eine Erkrankung aber nicht aus. Vermehrtes Trinken kann sogar auf Nieren-, Stoffwechsel- oder hormonelle Erkrankungen hinweisen. Dauer, Allgemeinzustand, Urin, Erbrechen und Futtermenge müssen gemeinsam bewertet werden.
+Normales Trinken ist günstiger als gleichzeitige Wasserverweigerung, schließt eine Erkrankung aber nicht aus. Zahnschmerzen, Übelkeit, Infektionen, Pankreatitis oder Organerkrankungen können trotz normalem Trinken bestehen. Miss die Futtermenge und beobachte Allgemeinzustand, Urin, Kot und Erbrechen. Trinkt der Hund plötzlich deutlich mehr, kann das selbst ein wichtiges Symptom sein. Bei anhaltender Futterverweigerung oder weiteren Auffälligkeiten ist eine Untersuchung sinnvoll.
 
-### Mein Hund frisst nicht und schläft viel. Was bedeutet das?
+### Warum frisst mein Hund nur Leckerli, aber kein normales Futter?
 
-Mehr Schlaf zusammen mit Futterverweigerung kann auf Schmerzen, Fieber, Übelkeit, Stoffwechselstörungen oder andere Erkrankungen hindeuten. Das sollte zeitnah tierärztlich eingeordnet werden.
+Leckerli sind oft kleiner, weicher, energiereicher und stärker riechend. Ein Hund kann sie trotz Übelkeit oder Zahnschmerz annehmen. Außerdem kann gelerntes Auswahlverhalten entstehen, wenn nach jeder abgelehnten Mahlzeit etwas Attraktiveres folgt. Entscheidend ist nicht, ob überhaupt etwas gefressen wird, sondern wie viel Energie im Verhältnis zur normalen Tagesration aufgenommen wird. Ein plötzlich neues Muster sollte zuerst körperlich eingeordnet werden.
 
-### Mein Hund frisst nur Leckerli. Ist er einfach mäkelig?
+### Mein Hund geht zum Napf, nimmt aber nichts auf. Was bedeutet das?
 
-Möglich, aber nicht bewiesen. Kleine, stark riechende oder weiche Snacks können trotz Übelkeit oder Zahnschmerz angenommen werden. Entscheidend ist die gesamte Energieaufnahme und ob das Verhalten neu ist.
+Interesse ohne normale Aufnahme spricht eher für Übelkeit, Maul- oder Zahnschmerz, eine Schluckstörung, Schmerzen beim Senken des Kopfes oder eine Futteraversion. Achte darauf, ob Futter aus dem Maul fällt, nur einseitig gekaut wird, Speicheln, Husten oder Würgen auftreten. Öffne das Maul nicht gewaltsam und gib nichts mit einer Spritze ein. Bei Schluckproblemen oder sichtbarem Schmerz sollte der Hund zeitnah untersucht werden.
 
-### Warum frisst mein Hund aus der Hand, aber nicht aus dem Napf?
+### Kann Stress allein dazu führen, dass ein Hund nicht frisst?
 
-Mögliche Gründe sind Erwartung, Unsicherheit am Futterplatz, ein rutschender Napf, Nacken- oder Zahnschmerz sowie gelerntes Verhalten. Ein plötzlicher Wechsel sollte medizinisch eingeordnet werden.
+Ja. Reise, Tierpension, Umzug, Lärm, neue Tiere oder Konflikte am Futterplatz können die Aufnahme vorübergehend senken. Stress ist aber keine sichere Erklärung, solange Schmerzen, Übelkeit und Erkrankungen nicht berücksichtigt wurden. Ein stabiler Hund kann in ruhiger Umgebung mit einer kleinen vertrauten Portion getestet werden. Bleibt die Aufnahme reduziert, verliert er Gewicht oder treten weitere Symptome auf, gehört die Situation medizinisch abgeklärt.
 
-### Kann Stress dazu führen, dass mein Hund nicht frisst?
+### Wie lange darf ein gesunder erwachsener Hund nichts fressen?
 
-Ja. Reisen, Tierpension, Umzug, Lärm, Trennung und Konflikte können die Aufnahme reduzieren. Hält die Futterverweigerung an oder treten weitere Symptome auf, darf Stress eine körperliche Abklärung nicht ersetzen.
+Es gibt keine für alle Hunde sichere Zeitspanne. Eine ausgelassene Mahlzeit kann bei einem sonst gesunden und völlig unauffälligen erwachsenen Hund kurz beobachtet werden. Etwa 24 Stunden ohne relevante Aufnahme sind ein sinnvoller Anlass, die Praxis zu kontaktieren, aber kein Freibrief zum Warten. Bei Welpen, Senioren, sehr kleinen oder chronisch kranken Hunden sowie bei Erbrechen, Schmerz, Schwäche oder Wasserverweigerung ist deutlich früher Hilfe nötig.
 
-### Soll ich das Futter stehen lassen?
+### Darf ich das Futter erwärmen?
 
-Kleine frische Portionen sind meist sinnvoller. Sie erleichtern die Mengenmessung und verhindern, dass Nassfutter lange bei Raumtemperatur steht.
+Leichtes Erwärmen von Nassfutter kann den Geruch verstärken und bei einem stabilen Hund die Akzeptanz verbessern. Das Futter darf nicht heiß sein und sollte gründlich umgerührt werden. Wärme behandelt jedoch keine Übelkeit, Zahnfraktur, Schluckstörung oder Blockade. Wenn der Hund trotz Interesse nicht kauen kann, erbricht, Schmerzen zeigt oder die Aufnahme weiter sinkt, sollte nicht weiter mit Temperatur und Sorten experimentiert werden.
 
-### Darf ich Hühnerbrühe anbieten?
+### Ist gekochtes Huhn mit Reis eine gute Schonkost?
 
-Nur ungewürzt und ohne Zwiebel, Knoblauch, Lauch oder starke Salzung. Viele fertige Brühen sind ungeeignet. Brühe ersetzt weder eine ausgewogene Mahlzeit noch die Abklärung.
+Eine kleine ungewürzte Portion kann bei einzelnen stabilen Hunden kurzfristig verträglich sein, ist aber keine vollständige Dauerernährung und keine universelle Therapie. Bei Pankreatitisverdacht, Futtermittelunverträglichkeit, tierärztlicher Diät, Erbrechen, Bauchschmerz oder Fremdkörperverdacht kann Selbstbehandlung die Abklärung verzögern. Besser ist, die Ursache und eine geeignete Fütterung mit der Tierarztpraxis abzustimmen.
 
-### Kann ich gekochtes Huhn und Reis geben?
+### Mein Hund frisst nach einer Impfung nicht. Wann wird es kritisch?
 
-Eine kleine, fettarme, ungewürzte Portion kann bei einem stabilen Hund kurzfristig akzeptiert werden, sofern keine tierärztliche Diät oder Unverträglichkeit dagegenspricht. Sie ist keine vollständige Dauerernährung und bei Erbrechen, Bauchschmerz oder Fremdkörperverdacht keine Selbstbehandlung.
+Eine leichte vorübergehende Müdigkeit und geringere Aufnahme können vorkommen. Gesichtsschwellung, Atemnot, Kollaps, wiederholtes Erbrechen, starke Schwäche oder rasche Verschlechterung sind jedoch Notfallzeichen. Bleibt die Futteraufnahme deutlich reduziert oder passt das Verhalten nicht zur üblichen Reaktion des Hundes, kontaktiere die behandelnde Praxis. Der zeitliche Zusammenhang mit der Impfung beweist nicht automatisch, dass sie die einzige Ursache ist.
 
-### Hilft es, das Futter anzuwärmen?
+### Mein Hund frisst nach einer Operation nicht. Wie lange soll ich warten?
 
-Leichtes Erwärmen kann den Geruch verstärken. Das Futter darf nicht heiß sein. Wenn Übelkeit, Zahnschmerz oder eine Blockade die Ursache ist, löst Wärme das Problem nicht.
+Die Entlassungsanweisung der Praxis ist maßgeblich, weil Eingriff, Narkose und Medikamente unterschiedlich wirken. Kontaktiere die Praxis bei wiederholtem Erbrechen, starken Schmerzen, Atemproblemen, extremer Benommenheit, Blutung, fehlendem Urin oder wenn die genannte Frist zur Futteraufnahme überschritten wird. Gib nur verordnete Medikamente. Human-Schmerzmittel dürfen nicht eingesetzt werden.
 
-### Mein Hund frisst nach einer Impfung nicht. Ist das normal?
+### Kann Zahnschmerz vorliegen, obwohl mein Hund noch Leckerli frisst?
 
-Eine leichte vorübergehende Müdigkeit kann vorkommen. Vollständige Futterverweigerung, wiederholtes Erbrechen, Gesichtsschwellung, Atemnot, Kollaps oder starke Schwäche müssen sofort abgeklärt werden.
+Ja. Kleine, weiche oder stark riechende Leckerli können leichter aufgenommen werden als große Kroketten oder Kauartikel. Hinweise auf Zahnschmerz sind einseitiges Kauen, Futterverlust aus dem Maul, Speicheln, Mundgeruch, Blut, Kopfscheu oder das plötzliche Meiden harter Nahrung. Ein Blick auf die Vorderzähne reicht nicht aus, da schmerzhafte Veränderungen häufig an Backenzähnen oder unter dem Zahnfleisch liegen.
 
-### Mein Hund frisst nach einer Operation nicht. Wie lange darf ich warten?
+### Woran erkenne ich Regurgitieren statt Erbrechen?
 
-Die Entlassungsanweisung der Praxis ist entscheidend. Kontaktiere die Praxis, wenn die dort genannte Frist überschritten wird oder Erbrechen, Schmerz, starke Müdigkeit, Blutung, Atemprobleme oder fehlender Urin auftreten.
+Erbrechen ist aktiv und wird meist von Übelkeit, Speicheln, Würgen und Bauchpresse begleitet. Regurgitieren erfolgt eher passiv, häufig kurz nach der Aufnahme. Das Futter ist oft unverdaut und kann röhrenförmig wirken. Ein Video ist für die Tierarztpraxis hilfreich. Wiederholtes Regurgitieren sollte abgeklärt werden, weil Erkrankungen der Speiseröhre und das Risiko einer Aspirationspneumonie dahinterstehen können.
 
-### Kann Zahnschmerz die Ursache sein, obwohl mein Hund Leckerli nimmt?
+### Kann ein Futterautomat Ursache der Futterverweigerung sein?
 
-Ja. Kleine oder weiche Leckerli können leichter aufgenommen werden. Einseitiges Kauen, Mundgeruch, Speicheln, Blut oder das Fallenlassen von Futter sprechen zusätzlich für ein Maulproblem.
+Ein Automat kann die Situation vortäuschen oder verstärken, wenn der Auslass blockiert, der Behälter leer, das Futter verklumpt oder die Portion falsch programmiert ist. Geräusche und Bewegungen können einzelne Hunde abschrecken. Eine App-Meldung beweist nur begrenzt, dass Futter im Napf lag und vom richtigen Hund gefressen wurde. Kontrolliere die tatsächliche Ausgabe, den Napf und bei mehreren Tieren das Verhalten per direkter Beobachtung oder Kamera.
 
-### Was bedeutet es, wenn mein Hund Gras frisst und das Futter verweigert?
+### Ist Grasfressen zusammen mit Appetitlosigkeit ein Zeichen für Übelkeit?
 
-Grasfressen kann normales Verhalten sein, tritt aber auch bei Übelkeit auf. Zusammen mit Appetitverlust, Erbrechen oder Bauchschmerz sollte es nicht isoliert bewertet werden.
+Grasfressen kann normales Verhalten sein, tritt aber auch bei Übelkeit auf. Aussagekräftiger wird es zusammen mit Schmatzen, Lippenlecken, Speicheln, Unruhe, Erbrechen oder Bauchschmerz. Allein beweist Grasfressen keine Erkrankung. Verweigert der Hund gleichzeitig seine normale Mahlzeit oder verschlechtert sich sein Allgemeinzustand, sollte die Kombination nicht als harmlose Angewohnheit abgetan werden.
 
-### Kann ein Futterautomat helfen?
+### Wann ist Futterverweigerung bei einem Welpen gefährlich?
 
-Ein Automat kann feste Zeiten und portionierte Mengen unterstützen. Er hilft nicht gegen Schmerz, Übelkeit oder Krankheit. Die tatsächliche Ausgabe und Aufnahme müssen kontrolliert werden.
-
-### Woran erkenne ich eine Magendrehung?
-
-Verdächtig sind aufgeblähter Bauch, erfolgloses Würgen, Unruhe, Speicheln, Hecheln, Schmerz und Kreislaufschwäche. Das ist ein sofortiger Notfall.
+Welpen, besonders sehr junge und kleine, haben geringere Energie- und Flüssigkeitsreserven. Mehrere ausgelassene Mahlzeiten, Zittern, Taumeln, Schwäche, Erbrechen, Durchfall oder ungewöhnliche Müdigkeit sind früh abklärungsbedürftig. Eine pauschale 24-Stunden-Wartezeit ist bei Welpen ungeeignet. Je jünger, kleiner und symptomatischer der Hund ist, desto früher sollte die Tierarztpraxis kontaktiert werden.
 
 ### Darf ich meinen Hund mit einer Spritze füttern?
 
-Nicht ohne tierärztliche Anleitung. Es besteht das Risiko, dass Futter eingeatmet wird oder eine Schluckstörung übersehen wird.
-
-### Wann ist Appetitlosigkeit bei einem Welpen gefährlich?
-
-Mehrere ausgelassene Mahlzeiten, Schwäche, Zittern, Taumeln, Erbrechen oder Durchfall sind bei Welpen früh abklärungsbedürftig. Sehr kleine Welpen können rasch unterzuckern.
-
-### Kann eine neue Futtersorte Appetitlosigkeit auslösen?
-
-Ein abrupter Wechsel kann Ablehnung oder Verdauungsbeschwerden verursachen. Verdorbenes Futter, eine Rezepturänderung oder ein ungewohnter Geruch sind ebenfalls möglich. Anhaltende Futterverweigerung sollte dennoch nicht nur der Sorte zugeschrieben werden.
-
-### Wie erkenne ich, ob mein Hund genug gefressen hat?
-
-Wiege die angebotene und verbleibende Menge und vergleiche sie mit der normalen Tagesration. Bei Mischfütterung ist zusätzlich der Energiegehalt hilfreich. Einzelne Leckerli gelten nicht als ausreichende Tagesaufnahme.
+Nicht ohne konkrete tierärztliche Anleitung. Bei Übelkeit, Maulschmerz oder Schluckstörung kann das Futter in die Atemwege gelangen. Zwangsfütterung erhöht Stress, verstärkt Abwehr und kann eine Futteraversion fördern. Wird eine Ernährungsunterstützung nötig, sind kontrollierte tierärztliche Verfahren bis hin zu einer Ernährungssonde oft sicherer und schonender als wiederholtes Eingeben gegen Widerstand.
 
 ## Fazit
 
-Ein Hund, der nicht frisst, braucht keine immer längere Reihe attraktiver Lockmittel. Er braucht eine nüchterne Einschätzung von Allgemeinzustand, Begleitsymptomen und tatsächlicher Futtermenge.
+Ein leerer Napf ist nur der Ausgangspunkt. Entscheidend sind Dringlichkeit, tatsächliche Menge und das genaue Muster des Fressvorgangs.
 
-Prüfe zuerst auf Notfallzeichen: aufgeblähter Bauch, erfolgloses Würgen, Atemnot, Kollaps, starke Schmerzen, wiederholtes Erbrechen, Gift- oder Fremdkörperverdacht. In diesen Situationen zählt Zeit.
+Prüfe zuerst auf Notfälle: aufgeblähter Bauch, erfolgloses Würgen, Kollaps, Atemnot, starke Schmerzen, wiederholtes Erbrechen, Gift- oder Fremdkörperverdacht. In diesen Situationen zählt Zeit.
 
-Bei einem stabilen erwachsenen Hund kann eine einzelne ausgelassene Mahlzeit kurz beobachtet werden. Bleibt eine relevante Aufnahme länger als etwa 24 Stunden aus, sollte die Tierarztpraxis kontaktiert werden. Für Welpen, Senioren, sehr kleine, chronisch kranke oder symptomatische Hunde gilt diese Frist nicht.
+Bei einem stabilen erwachsenen Hund kann eine einzelne ausgelassene Mahlzeit kurz beobachtet werden. Miss die Aufnahme, kontrolliere Wasser, Urin und Kot und unterscheide zwischen fehlendem Appetit und einem Problem beim Kauen oder Schlucken.
 
-Biete vertrautes Futter in kleinen Portionen an, miss die Aufnahme, kontrolliere Wasser, Kot und Urin und beobachte den vollständigen Fressvorgang. Zwinge nichts ins Maul und gib keine Medikamente auf eigene Faust.
-
-Frühes Handeln ist nicht übervorsichtig. Es verhindert, dass eine behandelbare Ursache durch Dehydration, Kreislaufprobleme oder Mangelversorgung komplizierter wird.
+Zwinge nichts ins Maul und gib keine Medikamente auf eigene Faust. Bleibt die Aufnahme deutlich reduziert, verschlechtert sich der Hund oder gehört er zu einer Risikogruppe, ist eine frühe tierärztliche Abklärung vernünftiger als immer neue Lockmittel.
 
 ## Quellen
 
 - [VCA Animal Hospitals: Anorexia in Dogs](https://vcahospitals.com/know-your-pet/anorexia-in-dogs)
 - [VCA Animal Hospitals: Testing for Decreased Appetite with Listlessness](https://vcahospitals.com/know-your-pet/testing-for-decreased-appetite-with-listlessness)
-- [VCA Animal Hospitals: Nutritional Support for the Canine Critical Care Patient](https://vcahospitals.com/know-your-pet/nutritional-support-for-the-canine-critical-care-patient)
-- [AAHA: 10 Pet Health Signs You Should Never Ignore](https://www.aaha.org/resources/10-pet-health-signs-you-should-never-ignore/)
-- [AAHA: Common Pet Pain Signs](https://www.aaha.org/resources/whats-wrong-common-pet-pain-signs/)
-- [AAHA: Recognizing the Signs of Poisoning in Dogs](https://www.aaha.org/resources/recognizing-the-signs-of-poisoning-in-dogs/)
-- [MSD Veterinary Manual: Disorders of the Stomach and Intestines in Dogs](https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs)
+- [VCA Animal Hospitals: Critical Care Nutrition for Dogs](https://vcahospitals.com/know-your-pet/nutritional-support-for-the-canine-critical-care-patient)
+- [AAHA: Anesthesia for Dogs and Cats](https://www.aaha.org/resources/anesthesia-for-dogs-and-cats/)
+- [MSD Veterinary Manual: Gastrointestinal Obstruction in Small Animals](https://www.msdvetmanual.com/digestive-system/surgical-problems-of-the-gastrointestinal-tract-in-small-animals/gastrointestinal-obstruction-in-small-animals)
 - [MSD Veterinary Manual: Pancreatitis in Dogs and Cats](https://www.msdvetmanual.com/digestive-system/the-exocrine-pancreas/pancreatitis-in-dogs-and-cats)
-- [MSD Veterinary Manual: Drugs That Affect Appetite in Monogastric Animals](https://www.msdvetmanual.com/pharmacology/systemic-pharmacotherapeutics-of-the-digestive-system/drugs-that-affect-appetite-in-monogastric-animals)
+- [MSD Veterinary Manual: Gastritis in Small Animals](https://www.msdvetmanual.com/digestive-system/diseases-of-the-stomach-in-small-animals/gastritis-in-small-animals)
+- [MSD Veterinary Manual: Vomiting in Dogs](https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/vomiting-in-dogs)
 - [WSAVA: Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
 - [WSAVA: Feeding Guide for Hospitalized Dogs and Cats](https://wsava.org/wp-content/uploads/2020/08/Feeding-Guide-for-Hospitalized-Dogs-and-Cats.pdf)
 - [WSAVA: Nutritional Assessment Guidelines](https://wsava.org/wp-content/uploads/2020/01/WSAVA-Nutrition-Assessment-Guidelines-2011-JSAP.pdf)
