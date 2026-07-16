@@ -1,29 +1,51 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
 import type { HomepageModel } from "../../home/model";
-type Props = { hero: HomepageModel["hero"] };
+
+type Props = {
+  hero: HomepageModel["hero"];
+};
+
 const { hero } = Astro.props as Props;
 ---
-<section class="home2-hero" aria-labelledby="home2-title">
-  <div class="home2-hero__media" aria-hidden="true">
-    <OptimizedImage src={hero.image.src} alt="" layout="full-width" priority />
+
+<section class="home3-hero" aria-labelledby="home3-title">
+  <div class="home3-hero__media" aria-hidden="true">
+    <OptimizedImage
+      src={hero.image.src}
+      alt=""
+      layout="full-width"
+      priority
+    />
   </div>
-  <div class="home2-hero__shade" aria-hidden="true"></div>
-  <div class="home2-hero__content">
-    <p class="home2-eyebrow home2-eyebrow--light">{hero.eyebrow}</p>
-    <h1 id="home2-title">{hero.title}</h1>
-    <p class="home2-hero__text">{hero.text}</p>
-    <div class="home2-hero__actions">
-      <a class="home2-button home2-button--primary" href={hero.primaryAction.href}>{hero.primaryAction.label}</a>
-      <a class="home2-button home2-button--ghost" href={hero.secondaryAction.href}>{hero.secondaryAction.label}</a>
+
+  <div class="home3-hero__shade" aria-hidden="true"></div>
+
+  <div class="home3-hero__content">
+    <p class="home3-eyebrow home3-eyebrow--light">{hero.eyebrow}</p>
+    <h1 id="home3-title">{hero.title}</h1>
+    <p class="home3-hero__text">{hero.text}</p>
+
+    <div class="home3-hero__actions">
+      <a class="home3-button home3-button--primary" href={hero.primaryAction.href}>
+        {hero.primaryAction.label}
+      </a>
+      <a class="home3-button home3-button--ghost" href={hero.secondaryAction.href}>
+        {hero.secondaryAction.label}
+      </a>
     </div>
-    <ul class="home2-signals">
+
+    <ul class="home3-signals" aria-label="Redaktionelle Grundsätze">
       {hero.signals.map((signal) => <li>{signal}</li>)}
     </ul>
   </div>
-  <dl class="home2-stats">
+
+  <dl class="home3-stats">
     {hero.stats.map((stat) => (
-      <div><dd>{stat.value}</dd><dt>{stat.label}</dt></div>
+      <div>
+        <dd>{stat.value}</dd>
+        <dt>{stat.label}</dt>
+      </div>
     ))}
   </dl>
 </section>

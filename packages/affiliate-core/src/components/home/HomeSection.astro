@@ -1,0 +1,134 @@
+---
+import OptimizedImage from "../OptimizedImage.astro";
+import type {
+  HomeCategoryCard,
+  HomeEditorialCard,
+  HomeProductCard
+} from "../../home/model";
+
+type Props = {
+  kind: "categories" | "editorial" | "products";
+  eyebrow: string;
+  title: string;
+  text: string;
+  id?: string;
+  items:
+    | HomeCategoryCard[]
+    | HomeEditorialCard[]
+    | HomeProductCard[];
+};
+
+const {
+  kind,
+  eyebrow,
+  title,
+  text,
+  id,
+  items
+} = Astro.props as Props;
+---
+
+{items.length > 0 && (
+  <section
+    id={id}
+    class="home3-section"
+    aria-labelledby={id ? `${id}-title` : undefined}
+  >
+    <header class="home3-section__header">
+      <div>
+        <p class="home3-eyebrow">{eyebrow}</p>
+        <h2 id={id ? `${id}-title` : undefined}>{title}</h2>
+      </div>
+      <p>{text}</p>
+    </header>
+
+    {kind === "categories" && (
+      <div class="home3-category-grid">
+        {(items as HomeCategoryCard[]).map((item) => (
+          <a class="home3-category-card" href={item.href}>
+            {item.image && (
+              <div class="home3-category-card__media">
+                <OptimizedImage
+                  src={item.image.src}
+                  alt={item.image.alt ?? ""}
+                  width={720}
+                  height={480}
+                  layout="constrained"
+                />
+              </div>
+            )}
+            <div class="home3-category-card__content">
+              <span>{item.code}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              <strong>
+                {item.count} {item.count === 1 ? "Inhalt" : "Inhalte"} ansehen
+              </strong>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+
+    {kind === "editorial" && (
+      <div class="home3-editorial-grid">
+        {(items as HomeEditorialCard[]).map((item, index) => (
+          <a
+            class:list={[
+              "home3-editorial-card",
+              index === 0 && "home3-editorial-card--featured"
+            ]}
+            href={item.href}
+          >
+            <div class="home3-editorial-card__media">
+              {item.image && (
+                <OptimizedImage
+                  src={item.image.src}
+                  alt={item.image.alt ?? ""}
+                  width={900}
+                  height={600}
+                  layout="constrained"
+                />
+              )}
+            </div>
+            <div class="home3-card-content">
+              <span>{item.label}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              {item.meta && <small>{item.meta}</small>}
+              <strong>{item.action}</strong>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+
+    {kind === "products" && (
+      <div class="home3-product-grid">
+        {(items as HomeProductCard[]).map((item) => (
+          <a class="home3-product-card" href={item.href}>
+            <div class="home3-product-card__media">
+              <OptimizedImage
+                src={item.image.src}
+                alt={item.image.alt ?? item.title}
+                width={480}
+                height={360}
+                layout="constrained"
+              />
+            </div>
+            <div class="home3-card-content">
+              <span>{item.manufacturer}</span>
+              <h3>{item.title}</h3>
+              <p>{item.recommendation}</p>
+              <div class="home3-rating">
+                <strong>{item.rating.toFixed(1)} / 5</strong>
+                <small>Redaktionelle Bewertung</small>
+              </div>
+              <b>Produkttest lesen</b>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+)}

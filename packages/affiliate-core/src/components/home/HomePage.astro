@@ -1,24 +1,27 @@
 ---
 import type { HomepageModel } from "../../home/model";
 import HomeHero from "./HomeHero.astro";
-import HomeSections from "./HomeSections.astro";
+import HomeSection from "./HomeSection.astro";
 import HomeNavigation from "./HomeNavigation.astro";
 import HomeBrandStatement from "./HomeBrandStatement.astro";
 import "./home.css";
 
-type Props = { model: HomepageModel };
+type Props = {
+  model: HomepageModel;
+};
+
 const { model } = Astro.props as Props;
 ---
 
-<div class="home2">
+<div class="home3">
   <HomeHero hero={model.hero} />
 
   <HomeNavigation
     mode="decision"
-    decisions={model.decisions}
+    links={model.decisionLinks}
   />
 
-  <HomeSections
+  <HomeSection
     kind="categories"
     id="produktwelten"
     eyebrow="Wobei können wir helfen?"
@@ -27,7 +30,7 @@ const { model } = Astro.props as Props;
     items={model.categories}
   />
 
-  <HomeSections
+  <HomeSection
     kind="editorial"
     id="vergleiche"
     eyebrow="Beliebte Entscheidungen"
@@ -36,7 +39,7 @@ const { model } = Astro.props as Props;
     items={model.comparisons}
   />
 
-  <HomeSections
+  <HomeSection
     kind="editorial"
     id="ratgeber"
     eyebrow="Fragen aus dem Tieralltag"
@@ -51,7 +54,7 @@ const { model } = Astro.props as Props;
     methodologyAction={model.methodologyAction}
   />
 
-  <HomeSections
+  <HomeSection
     kind="products"
     eyebrow="Nach Einsatzzweck eingeordnet"
     title="Produkte mit einer klaren Stärke"
@@ -59,7 +62,7 @@ const { model } = Astro.props as Props;
     items={model.products}
   />
 
-  <HomeSections
+  <HomeSection
     kind="editorial"
     eyebrow="Aktuell geprüft"
     title="Zuletzt überarbeitete Inhalte"
@@ -69,7 +72,7 @@ const { model } = Astro.props as Props;
 
   <HomeNavigation
     mode="topics"
-    topicGroups={model.topicGroups}
+    groups={model.topicGroups}
   />
 
   <HomeBrandStatement />
