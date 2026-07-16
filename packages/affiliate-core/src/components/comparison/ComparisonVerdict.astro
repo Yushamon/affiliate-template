@@ -1,0 +1,55 @@
+---
+import type { ComparisonProductView } from "./types";
+
+type Props = {
+  title: string;
+  text: string;
+  winner?: ComparisonProductView;
+  alternative?: ComparisonProductView;
+};
+
+const { title, text, winner, alternative } = Astro.props as Props;
+---
+
+<section class="comparison-verdict" aria-labelledby="comparison-verdict-title">
+  <div class="comparison-verdict__copy">
+    <span class="comparison-eyebrow">Redaktionelles Fazit</span>
+    <h2 id="comparison-verdict-title">{title}</h2>
+    <p>{text}</p>
+  </div>
+
+  {(winner || alternative) && (
+    <div class="comparison-verdict__choices">
+      {winner && (
+        <article>
+          <span>Unsere Empfehlung</span>
+          <h3>{winner.title}</h3>
+          {winner.recommendation && <p>{winner.recommendation}</p>}
+          <div>
+            <a href={winner.href} class="comparison-button comparison-button--secondary">Test lesen</a>
+            {winner.affiliate && (
+              <a
+                href={winner.affiliate.url}
+                class="comparison-button"
+                rel={winner.affiliate.rel ?? "sponsored nofollow noopener"}
+                target={winner.affiliate.target ?? "_blank"}
+                data-affiliate-link
+              >
+                {winner.affiliate.label}
+              </a>
+            )}
+          </div>
+        </article>
+      )}
+
+      {alternative && (
+        <article>
+          <span>Gute Alternative</span>
+          <h3>{alternative.title}</h3>
+          {alternative.recommendation && <p>{alternative.recommendation}</p>}
+          <a href={alternative.href} class="comparison-text-link">Alternative ansehen</a>
+        </article>
+      )}
+    </div>
+  )}
+</section>

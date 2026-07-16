@@ -1,0 +1,48 @@
+---
+import OptimizedImage from "../OptimizedImage.astro";
+import type { ComparisonHeroProps } from "./types";
+
+const {
+  eyebrow = "Unabhängiger Vergleich",
+  title,
+  description,
+  image,
+  facts = []
+} = Astro.props as ComparisonHeroProps;
+---
+
+<header class="comparison-hero">
+  <div class="comparison-hero__copy">
+    <span class="comparison-eyebrow">{eyebrow}</span>
+    <h1>{title}</h1>
+    <p>{description}</p>
+
+    {facts.length > 0 && (
+      <dl class="comparison-hero__facts">
+        {facts.map((fact) => (
+          <div>
+            <dt>{fact.label}</dt>
+            <dd>{fact.value}</dd>
+          </div>
+        ))}
+      </dl>
+    )}
+  </div>
+
+  <div class:list={["comparison-hero__media", !image && "comparison-hero__media--placeholder"]}>
+    {image ? (
+      <OptimizedImage
+        src={image.src}
+        alt={image.alt ?? ""}
+        class="comparison-hero__image"
+        layout="full-width"
+        priority
+      />
+    ) : (
+      <div class="comparison-placeholder" role="img" aria-label="Platzhalter für das Vergleichsbild">
+        <span aria-hidden="true">↔</span>
+        <strong>Vergleichsbild folgt</strong>
+      </div>
+    )}
+  </div>
+</header>
