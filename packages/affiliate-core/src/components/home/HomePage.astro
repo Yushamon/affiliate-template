@@ -1,0 +1,76 @@
+---
+import type { HomepageModel } from "../../home/model";
+import HomeHero from "./HomeHero.astro";
+import HomeSections from "./HomeSections.astro";
+import HomeNavigation from "./HomeNavigation.astro";
+import HomeBrandStatement from "./HomeBrandStatement.astro";
+import "./home.css";
+
+type Props = { model: HomepageModel };
+const { model } = Astro.props as Props;
+---
+
+<div class="home2">
+  <HomeHero hero={model.hero} />
+
+  <HomeNavigation
+    mode="decision"
+    decisions={model.decisions}
+  />
+
+  <HomeSections
+    kind="categories"
+    id="produktwelten"
+    eyebrow="Wobei können wir helfen?"
+    title="Orientierung nach Alltagssituation"
+    text="Starte bei dem Thema, das gerade wichtig ist: Fütterung, Trinken, Gesundheit oder smarte Funktionen."
+    items={model.categories}
+  />
+
+  <HomeSections
+    kind="editorial"
+    id="vergleiche"
+    eyebrow="Beliebte Entscheidungen"
+    title="Vergleiche mit klaren Unterschieden"
+    text="Modelle, Kriterien und Einsatzzwecke direkt gegenübergestellt, ohne künstliche Siegerlogik."
+    items={model.comparisons}
+  />
+
+  <HomeSections
+    kind="editorial"
+    id="ratgeber"
+    eyebrow="Fragen aus dem Tieralltag"
+    title="Fundierte Antworten auf konkrete Probleme"
+    text="Gesundheitliche Warnzeichen, Fütterung und Technik verständlich erklärt."
+    items={model.guides}
+  />
+
+  <HomeNavigation
+    mode="method"
+    methods={model.methods}
+    methodologyAction={model.methodologyAction}
+  />
+
+  <HomeSections
+    kind="products"
+    eyebrow="Nach Einsatzzweck eingeordnet"
+    title="Produkte mit einer klaren Stärke"
+    text="Keine pauschale Bestenliste, sondern nachvollziehbare Empfehlungen für konkrete Anforderungen."
+    items={model.products}
+  />
+
+  <HomeSections
+    kind="editorial"
+    eyebrow="Aktuell geprüft"
+    title="Zuletzt überarbeitete Inhalte"
+    text="Diese Seiten wurden zuletzt fachlich, redaktionell oder strukturell aktualisiert."
+    items={model.recentlyUpdated}
+  />
+
+  <HomeNavigation
+    mode="topics"
+    topicGroups={model.topicGroups}
+  />
+
+  <HomeBrandStatement />
+</div>

@@ -1,0 +1,63 @@
+---
+import type { HomeLink, HomepageModel } from "../../home/model";
+type Props = {
+  mode: "decision" | "method" | "topics";
+  decisions?: HomeLink[];
+  methods?: HomepageModel["methods"];
+  methodologyAction?: HomeLink;
+  topicGroups?: HomepageModel["topicGroups"];
+};
+const {
+  mode,
+  decisions = [],
+  methods = [],
+  methodologyAction,
+  topicGroups = []
+} = Astro.props as Props;
+---
+{mode === "decision" && decisions.length > 0 && (
+  <nav class="home2-decision" aria-labelledby="home2-decision-title">
+    <div>
+      <p class="home2-eyebrow">Schnelle Orientierung</p>
+      <h2 id="home2-decision-title">Ich suche gerade …</h2>
+    </div>
+    <ul>
+      {decisions.map((link) => (
+        <li><a href={link.href}><span>{link.label}</span><strong aria-hidden="true">→</strong></a></li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+{mode === "method" && methods.length > 0 && methodologyAction && (
+  <section class="home2-method" aria-labelledby="home2-method-title">
+    <div>
+      <p class="home2-eyebrow home2-eyebrow--light">So arbeiten wir</p>
+      <h2 id="home2-method-title">Empfehlungen brauchen eine überprüfbare Grundlage</h2>
+      <p>Wir trennen technische Produktdaten, dokumentierte Erfahrungen und redaktionelle Bewertung. Unklare Angaben werden nicht geraten.</p>
+      <a href={methodologyAction.href}>{methodologyAction.label}</a>
+    </div>
+    <ol>
+      {methods.map((step) => (
+        <li><span>{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></li>
+      ))}
+    </ol>
+  </section>
+)}
+
+{mode === "topics" && topicGroups.length > 0 && (
+  <nav class="home2-topics" aria-labelledby="home2-topics-title">
+    <div>
+      <p class="home2-eyebrow">Themenübersicht</p>
+      <h2 id="home2-topics-title">Weiter nach Tier, Produkt oder Problem</h2>
+    </div>
+    <div class="home2-topic-groups">
+      {topicGroups.map((group) => (
+        <section>
+          <h3>{group.title}</h3>
+          <ul>{group.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+        </section>
+      ))}
+    </div>
+  </nav>
+)}
