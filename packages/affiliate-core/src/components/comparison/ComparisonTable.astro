@@ -1,20 +1,15 @@
 ---
 import type {
-  ComparisonProductView,
-  ComparisonTableRow
-} from "./types";
+  ComparisonProduct,
+  ComparisonRow
+} from "../../comparison/model";
 
 type Props = {
-  products: ComparisonProductView[];
-  rows: ComparisonTableRow[];
-  title?: string;
+  products: ComparisonProduct[];
+  rows: ComparisonRow[];
 };
 
-const {
-  products,
-  rows,
-  title = "Direkter Vergleich"
-} = Astro.props as Props;
+const { products, rows } = Astro.props as Props;
 ---
 
 {rows.length > 0 && (
@@ -22,16 +17,20 @@ const {
     <div class="comparison-section__head">
       <div>
         <span class="comparison-eyebrow">Merkmale gegenübergestellt</span>
-        <h2 id="comparison-table-title">{title}</h2>
+        <h2 id="comparison-table-title">Direkter Vergleich</h2>
       </div>
       <p class="comparison-section__note">
-        Fehlende Angaben werden bewusst als „Keine Angabe“ dargestellt und nicht geschätzt.
+        Fehlende Angaben werden nicht geschätzt.
       </p>
     </div>
 
-    <div class="comparison-table-wrap" tabindex="0" aria-label="Horizontal scrollbarer Produktvergleich">
+    <div
+      class="comparison-table-wrap"
+      tabindex="0"
+      aria-label="Horizontal scrollbarer Produktvergleich"
+    >
       <table class="comparison-table">
-        <caption class="sr-only">{title}</caption>
+        <caption class="sr-only">Direkter Produktvergleich</caption>
         <thead>
           <tr>
             <th scope="col">Kriterium</th>
@@ -47,14 +46,23 @@ const {
             <tr>
               <th scope="row">
                 <strong>{row.criterion.label}</strong>
-                {row.criterion.description && <small>{row.criterion.description}</small>}
+                {row.criterion.description && (
+                  <small>{row.criterion.description}</small>
+                )}
               </th>
+
               {products.map((product) => {
-                const cell = row.values.find((value) => value.productSlug === product.slug);
+                const cell = row.cells.find(
+                  (entry) => entry.productSlug === product.slug
+                );
+
+                const value =
+                  cell?.value && cell.value !== "–"
+                    ? cell.value
+                    : "Keine Angabe";
+
                 return (
-                  <td data-label={product.title}>
-                    {cell?.value && cell.value !== "–" ? cell.value : "Keine Angabe"}
-                  </td>
+                  <td data-label={product.title}>{value}</td>
                 );
               })}
             </tr>

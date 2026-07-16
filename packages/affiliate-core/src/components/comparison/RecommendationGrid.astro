@@ -1,78 +1,101 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
-import type { ComparisonProductView } from "./types";
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
 
 type Props = {
-  products: ComparisonProductView[];
-  title?: string;
+  products: ComparisonProduct[];
 };
 
-const {
-  products,
-  title = "Unsere Empfehlungen in Kürze"
-} = Astro.props as Props;
+const { products } = Astro.props as Props;
 ---
 
 <section class="comparison-section" aria-labelledby="comparison-recommendations-title">
   <div class="comparison-section__head">
     <div>
       <span class="comparison-eyebrow">Schnelle Orientierung</span>
-      <h2 id="comparison-recommendations-title">{title}</h2>
+      <h2 id="comparison-recommendations-title">Unsere Empfehlungen in Kürze</h2>
     </div>
     <a href="#direktvergleich" class="comparison-text-link">Direkt vergleichen</a>
   </div>
 
   <div class="recommendation-grid">
-    {products.map((product) => (
-      <article class="recommendation-card">
-        {product.badge && <span class="recommendation-card__badge">{product.badge}</span>}
+    {products.map((product) => {
+      const price = getPriceDisplay(product.price);
 
-        <a href={product.href} class="recommendation-card__image-link" tabindex="-1" aria-hidden="true">
-          {product.image ? (
-            <OptimizedImage
-              src={product.image.src}
-              alt={product.image.alt ?? product.title}
-              class="recommendation-card__image"
-              width={420}
-              height={320}
-              layout="constrained"
-            />
-          ) : (
-            <div class="comparison-placeholder comparison-placeholder--product">
-              <span aria-hidden="true">□</span>
-            </div>
+      return (
+        <article class="recommendation-card">
+          {product.badge && (
+            <span class="recommendation-card__badge">{product.badge}</span>
           )}
-        </a>
 
-        <div class="recommendation-card__content">
-          {product.manufacturer && <span class="recommendation-card__manufacturer">{product.manufacturer}</span>}
-          <h3><a href={product.href}>{product.title}</a></h3>
-          {product.recommendation && <p>{product.recommendation}</p>}
-          {typeof product.rating === "number" && (
-            <strong class="recommendation-card__rating">
-              {product.rating.toFixed(1)} / 5
-              <span>Redaktionelle Bewertung</span>
-            </strong>
-          )}
-        </div>
-
-        <div class="recommendation-card__actions">
-          <a href={product.href} class="comparison-button comparison-button--secondary">
-            Test lesen
+          <a
+            href={product.href}
+            class="recommendation-card__image-link"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            {product.image ? (
+              <OptimizedImage
+                src={product.image.src}
+                alt={product.image.alt ?? product.title}
+                class="recommendation-card__image"
+                width={420}
+                height={320}
+                layout="constrained"
+              />
+            ) : (
+              <div class="comparison-placeholder comparison-placeholder--product">
+                <span aria-hidden="true">□</span>
+              </div>
+            )}
           </a>
-          {product.affiliate && (
+
+          <div class="recommendation-card__content">
+            {product.manufacturer && (
+              <span class="recommendation-card__manufacturer">
+                {product.manufacturer}
+              </span>
+            )}
+
+            <h3><a href={product.href}>{product.title}</a></h3>
+
+            {product.recommendation && <p>{product.recommendation}</p>}
+
+            {typeof product.rating === "number" && (
+              <strong class="recommendation-card__rating">
+                {product.rating.toFixed(1)} / 5
+                <span>Redaktionelle Bewertung</span>
+              </strong>
+            )}
+          </div>
+
+          <div class="recommendation-card__actions">
             <a
-              href={product.affiliate.url}
-              class="comparison-button"
-              rel={product.affiliate.rel ?? "sponsored nofollow noopener"}
-              target={product.affiliate.target ?? "_blank"}
-              data-affiliate-link
+              href={product.href}
+              class="comparison-button comparison-button--secondary"
             >
-              {product.affiliate.label}
+              Test lesen
             </a>
-          )}
-        </div>
-      </article>
-    ))}
+
+            {price.url && (
+              <a
+                href={price.url}
+                class="comparison-button"
+                rel={price.rel}
+                target={price.target}
+                data-affiliate-link
+              >
+                {price.label}
+              </a>
+            )}
+
+            {price.meta && (
+              <small class="comparison-price-meta">{price.meta}</small>
+            )}
+          </div>
+        </article>
+      );
+    })}
   </div>
 </section>

@@ -1,0 +1,49 @@
+/*
+ * Mobile image hotfix for comparison cards.
+ * Add this block at the END of comparison.css.
+ */
+
+@media (max-width: 760px) {
+  .recommendation-card {
+    align-items: stretch;
+  }
+
+  .recommendation-card__image-link {
+    display: flex;
+    min-height: 0;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    padding: 0.75rem;
+  }
+
+  .recommendation-card__image-link :global(picture),
+  .recommendation-card__image-link :global(.recommendation-card__image) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .recommendation-card__image-link :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .recommendation-card__content {
+    min-width: 0;
+  }
+}
+
+/*
+ * General protection for product images inside comparison cards.
+ * Prevents inherited height:100% rules from stretching source images.
+ */
+.recommendation-card__image-link :global(img) {
+  object-fit: contain;
+  object-position: center;
+}

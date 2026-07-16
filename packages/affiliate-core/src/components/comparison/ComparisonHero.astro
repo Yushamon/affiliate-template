@@ -1,14 +1,22 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
-import type { ComparisonHeroProps } from "./types";
+import type { CoreImage } from "../../comparison/model";
+
+type Props = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  image?: CoreImage;
+  facts?: Array<{ label: string; value: string }>;
+};
 
 const {
-  eyebrow = "Unabhängiger Vergleich",
+  eyebrow,
   title,
   description,
   image,
   facts = []
-} = Astro.props as ComparisonHeroProps;
+} = Astro.props as Props;
 ---
 
 <header class="comparison-hero">
@@ -29,7 +37,10 @@ const {
     )}
   </div>
 
-  <div class:list={["comparison-hero__media", !image && "comparison-hero__media--placeholder"]}>
+  <div class:list={[
+    "comparison-hero__media",
+    !image && "comparison-hero__media--placeholder"
+  ]}>
     {image ? (
       <OptimizedImage
         src={image.src}

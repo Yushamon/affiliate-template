@@ -1,0 +1,44 @@
+---
+import type { ComparisonViewModel } from "../../comparison/model";
+import ComparisonHero from "./ComparisonHero.astro";
+import RecommendationGrid from "./RecommendationGrid.astro";
+import ComparisonProsCons from "./ComparisonProsCons.astro";
+import ComparisonTable from "./ComparisonTable.astro";
+import ComparisonVerdict from "./ComparisonVerdict.astro";
+import ComparisonStickyBar from "./ComparisonStickyBar.astro";
+import "./comparison.css";
+
+type Props = {
+  model: ComparisonViewModel;
+};
+
+const { model } = Astro.props as Props;
+---
+
+<div class="comparison-shell">
+  <ComparisonHero
+    eyebrow={model.eyebrow}
+    title={model.title}
+    description={model.description}
+    image={model.heroImage}
+    facts={model.facts}
+  />
+
+  <RecommendationGrid products={model.recommendationProducts} />
+
+  <ComparisonProsCons products={model.products} />
+
+  <ComparisonTable
+    products={model.products}
+    rows={model.rows}
+  />
+
+  <ComparisonVerdict
+    title={model.verdict.title}
+    text={model.verdict.text}
+    winner={model.verdict.winner}
+    alternative={model.verdict.alternative}
+  />
+</div>
+
+<ComparisonStickyBar product={model.verdict.winner} />

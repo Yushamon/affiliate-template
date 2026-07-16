@@ -1,14 +1,20 @@
 ---
-import type { ComparisonProductView } from "./types";
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
 
 type Props = {
   title: string;
   text: string;
-  winner?: ComparisonProductView;
-  alternative?: ComparisonProductView;
+  winner?: ComparisonProduct;
+  alternative?: ComparisonProduct;
 };
 
-const { title, text, winner, alternative } = Astro.props as Props;
+const {
+  title,
+  text,
+  winner,
+  alternative
+} = Astro.props as Props;
 ---
 
 <section class="comparison-verdict" aria-labelledby="comparison-verdict-title">
@@ -20,34 +26,48 @@ const { title, text, winner, alternative } = Astro.props as Props;
 
   {(winner || alternative) && (
     <div class="comparison-verdict__choices">
-      {winner && (
-        <article>
-          <span>Unsere Empfehlung</span>
-          <h3>{winner.title}</h3>
-          {winner.recommendation && <p>{winner.recommendation}</p>}
-          <div>
-            <a href={winner.href} class="comparison-button comparison-button--secondary">Test lesen</a>
-            {winner.affiliate && (
+      {winner && (() => {
+        const price = getPriceDisplay(winner.price);
+
+        return (
+          <article>
+            <span>Unsere Empfehlung</span>
+            <h3>{winner.title}</h3>
+            {winner.recommendation && <p>{winner.recommendation}</p>}
+            <div>
               <a
-                href={winner.affiliate.url}
-                class="comparison-button"
-                rel={winner.affiliate.rel ?? "sponsored nofollow noopener"}
-                target={winner.affiliate.target ?? "_blank"}
-                data-affiliate-link
+                href={winner.href}
+                class="comparison-button comparison-button--secondary"
               >
-                {winner.affiliate.label}
+                Test lesen
               </a>
-            )}
-          </div>
-        </article>
-      )}
+
+              {price.url && (
+                <a
+                  href={price.url}
+                  class="comparison-button"
+                  rel={price.rel}
+                  target={price.target}
+                  data-affiliate-link
+                >
+                  {price.label}
+                </a>
+              )}
+            </div>
+          </article>
+        );
+      })()}
 
       {alternative && (
         <article>
           <span>Gute Alternative</span>
           <h3>{alternative.title}</h3>
-          {alternative.recommendation && <p>{alternative.recommendation}</p>}
-          <a href={alternative.href} class="comparison-text-link">Alternative ansehen</a>
+          {alternative.recommendation && (
+            <p>{alternative.recommendation}</p>
+          )}
+          <a href={alternative.href} class="comparison-text-link">
+            Alternative ansehen
+          </a>
         </article>
       )}
     </div>
