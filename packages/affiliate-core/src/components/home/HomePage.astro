@@ -4,6 +4,9 @@ import HomeHero from "./HomeHero.astro";
 import HomeSection from "./HomeSection.astro";
 import HomeNavigation from "./HomeNavigation.astro";
 import HomeBrandStatement from "./HomeBrandStatement.astro";
+import HomeStats from "./HomeStats.astro";
+import HomeUseCases from "./HomeUseCases.astro";
+import HomeFaq from "./HomeFaq.astro";
 import "./home.css";
 
 type Props = {
@@ -22,29 +25,28 @@ const { model } = Astro.props as Props;
   />
 
   <HomeSection
-    kind="categories"
-    id="produktwelten"
-    eyebrow="Wobei können wir helfen?"
-    title="Orientierung nach Alltagssituation"
-    text="Starte bei dem Thema, das gerade wichtig ist: Fütterung, Trinken, Gesundheit oder smarte Funktionen."
-    items={model.categories}
-  />
-
-  <HomeSection
     kind="editorial"
     id="vergleiche"
     eyebrow="Beliebte Entscheidungen"
     title="Vergleiche mit klaren Unterschieden"
-    text="Modelle, Kriterien und Einsatzzwecke direkt gegenübergestellt, ohne künstliche Siegerlogik."
+    text="Modelle, Kriterien und Einsatzzwecke direkt gegenübergestellt. Fehlende Angaben werden sichtbar gemacht und nicht geschätzt."
     items={model.comparisons}
+  />
+
+  <HomeSection
+    kind="products"
+    eyebrow="Aktuelle Produktempfehlungen"
+    title="Starke Optionen für konkrete Anforderungen"
+    text="Keine pauschale Bestenliste. Die Empfehlungen unterscheiden sich nach Futterart, Tierzahl, Bedienung und gewünschter Kontrolle."
+    items={model.products}
   />
 
   <HomeSection
     kind="editorial"
     id="ratgeber"
-    eyebrow="Fragen aus dem Tieralltag"
-    title="Fundierte Antworten auf konkrete Probleme"
-    text="Gesundheitliche Warnzeichen, Fütterung und Technik verständlich erklärt."
+    eyebrow="Neu im Ratgeber"
+    title="Fundierte Antworten auf konkrete Fragen"
+    text="Gesundheitliche Warnzeichen, Fütterung und Haustiertechnik verständlich und ohne unnötige Dramatisierung erklärt."
     items={model.guides}
   />
 
@@ -54,13 +56,18 @@ const { model } = Astro.props as Props;
     methodologyAction={model.methodologyAction}
   />
 
+  <HomeUseCases items={model.useCases} />
+
   <HomeSection
-    kind="products"
-    eyebrow="Nach Einsatzzweck eingeordnet"
-    title="Produkte mit einer klaren Stärke"
-    text="Keine pauschale Bestenliste, sondern nachvollziehbare Empfehlungen für konkrete Anforderungen."
-    items={model.products}
+    kind="categories"
+    id="produktwelten"
+    eyebrow="Produktwelten"
+    title="Weitere Orientierung nach Thema"
+    text="Alle vorhandenen Inhalte nach Produktart und Alltagssituation gebündelt."
+    items={model.categories}
   />
+
+  <HomeStats stats={model.hero.stats} />
 
   <HomeSection
     kind="editorial"
@@ -69,6 +76,8 @@ const { model } = Astro.props as Props;
     text="Diese Seiten wurden zuletzt fachlich, redaktionell oder strukturell aktualisiert."
     items={model.recentlyUpdated}
   />
+
+  <HomeFaq items={model.faq} />
 
   <HomeNavigation
     mode="topics"

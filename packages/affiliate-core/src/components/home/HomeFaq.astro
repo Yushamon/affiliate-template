@@ -1,0 +1,28 @@
+---
+import type { HomepageModel } from "../../home/model";
+
+type Props = {
+  items: HomepageModel["faq"];
+};
+
+const { items } = Astro.props as Props;
+---
+
+<section class="home4-faq" aria-labelledby="home4-faq-title">
+  <header>
+    <p class="home3-eyebrow">Häufig gefragt</p>
+    <h2 id="home4-faq-title">Transparenz vor der Produktauswahl</h2>
+    <p>
+      Die wichtigsten Fragen zur Recherche, Aktualität und Finanzierung der Inhalte.
+    </p>
+  </header>
+
+  <div class="home4-faq__list">
+    {items.map((item, index) => (
+      <details open={index === 0}>
+        <summary>{item.question}</summary>
+        <p>{item.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>

@@ -117,6 +117,11 @@ const {
               />
             </div>
             <div class="home3-card-content">
+              {item.badge && (
+                <em class="home4-product-badge">
+                  {item.badge}
+                </em>
+              )}
               <span>{item.manufacturer}</span>
               <h3>{item.title}</h3>
               <p>{item.recommendation}</p>

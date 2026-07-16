@@ -1,0 +1,32 @@
+---
+import type { HomepageModel } from "../../home/model";
+
+type Props = {
+  items: HomepageModel["useCases"];
+};
+
+const { items } = Astro.props as Props;
+---
+
+<section class="home4-usecases" aria-labelledby="home4-usecases-title">
+  <header class="home3-section__header">
+    <div>
+      <p class="home3-eyebrow">Nach Alltag auswählen</p>
+      <h2 id="home4-usecases-title">Welche Lösung passt zu wem?</h2>
+    </div>
+    <p>
+      Die passende Technik beginnt nicht beim Modellnamen, sondern bei Futterart, Tierzahl, Betreuung und gewünschter Kontrolle.
+    </p>
+  </header>
+
+  <div class="home4-usecases__grid">
+    {items.map((item) => (
+      <a href={item.href}>
+        <span class:list={["home4-usecases__icon", `home4-usecases__icon--${item.icon}`]} aria-hidden="true"></span>
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+        <strong>Passende Inhalte ansehen →</strong>
+      </a>
+    ))}
+  </div>
+</section>

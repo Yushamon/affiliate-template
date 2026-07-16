@@ -36,6 +36,19 @@ export type HomeProductCard = {
   recommendation: string;
   rating: number;
   image: HomeImage;
+  badge?: string;
+};
+
+export type HomeUseCase = {
+  title: string;
+  text: string;
+  href: string;
+  icon: "clock" | "cats" | "wet" | "dog" | "cat" | "travel";
+};
+
+export type HomeFaqItem = {
+  question: string;
+  answer: string;
 };
 
 export type HomepageModel = {
@@ -64,6 +77,8 @@ export type HomepageModel = {
     text: string;
   }>;
   methodologyAction: HomeLink;
+  useCases: HomeUseCase[];
+  faq: HomeFaqItem[];
   topicGroups: Array<{
     title: string;
     links: HomeLink[];

@@ -799,3 +799,210 @@
     min-height: 610px;
   }
 }
+
+
+.home4-product-badge {
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.38rem 0.62rem;
+  border-radius: 999px;
+  color: var(--home3-accent);
+  background: rgba(24, 116, 59, 0.09);
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.home4-usecases,
+.home4-faq {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.home4-usecases__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.home4-usecases__grid a {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 1.3rem;
+  border: 1px solid var(--home3-line);
+  border-radius: 1.1rem;
+  color: inherit;
+  background: #fff;
+  text-decoration: none;
+}
+
+.home4-usecases__grid h3 {
+  margin: 1rem 0 0.55rem;
+  color: var(--home3-text);
+  font-size: 1.25rem;
+}
+
+.home4-usecases__grid p {
+  color: var(--home3-muted);
+  line-height: 1.6;
+}
+
+.home4-usecases__grid strong {
+  margin-top: auto;
+  color: var(--home3-accent);
+  font-size: 0.86rem;
+}
+
+.home4-usecases__icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 0.9rem;
+  color: var(--home3-accent);
+  background: rgba(24, 116, 59, 0.1);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.home4-usecases__icon--clock::after { content: "◷"; }
+.home4-usecases__icon--cats::after { content: "● ●"; font-size: .8rem; }
+.home4-usecases__icon--wet::after { content: "◒"; }
+.home4-usecases__icon--dog::after { content: "●"; }
+.home4-usecases__icon--cat::after { content: "◆"; }
+.home4-usecases__icon--travel::after { content: "↗"; }
+
+.home4-stats {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: 1.5rem;
+  color: #fff;
+  background: var(--home3-dark);
+}
+
+.home4-stats__intro h2 {
+  max-width: 15ch;
+  margin: 0.55rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+}
+
+.home4-stats__intro > p:last-child {
+  max-width: 58ch;
+  color: rgba(255,255,255,.7);
+  line-height: 1.7;
+}
+
+.home4-stats dl {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.home4-stats dl div {
+  padding: 1.2rem;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 1rem;
+  background: rgba(255,255,255,.05);
+}
+
+.home4-stats dd {
+  margin: 0;
+  color: #bcefc7;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+}
+
+.home4-stats dt {
+  margin-top: 0.35rem;
+  color: rgba(255,255,255,.68);
+  font-size: 0.78rem;
+}
+
+.home4-faq {
+  display: grid;
+  grid-template-columns: minmax(260px, .55fr) minmax(0, 1.45fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  padding-top: 3rem;
+  border-top: 1px solid var(--home3-line);
+}
+
+.home4-faq header h2 {
+  margin: 0.55rem 0 0.8rem;
+  color: var(--home3-text);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+}
+
+.home4-faq header > p:last-child {
+  color: var(--home3-muted);
+  line-height: 1.65;
+}
+
+.home4-faq__list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.home4-faq details {
+  border: 1px solid var(--home3-line);
+  border-radius: 0.9rem;
+  background: #fff;
+}
+
+.home4-faq summary {
+  padding: 1rem 1.1rem;
+  color: var(--home3-text);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.home4-faq details p {
+  margin: 0;
+  padding: 0 1.1rem 1.1rem;
+  color: var(--home3-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .home4-usecases__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home4-stats,
+  .home4-faq {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .home4-usecases__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home4-usecases__grid a {
+    min-height: 210px;
+  }
+
+  .home4-stats dl {
+    grid-template-columns: 1fr;
+  }
+
+  .home4-stats dl div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .home4-stats dd {
+    font-size: 2rem;
+  }
+}

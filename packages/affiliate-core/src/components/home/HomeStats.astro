@@ -1,0 +1,28 @@
+---
+import type { HomepageModel } from "../../home/model";
+
+type Props = {
+  stats: HomepageModel["hero"]["stats"];
+};
+
+const { stats } = Astro.props as Props;
+---
+
+<section class="home4-stats" aria-labelledby="home4-stats-title">
+  <div class="home4-stats__intro">
+    <p class="home3-eyebrow home3-eyebrow--light">Warum PfotenTechnik?</p>
+    <h2 id="home4-stats-title">Orientierung statt Produktwerbung</h2>
+    <p>
+      Die Zahlen zeigen den Umfang der redaktionell gepflegten Datenbasis. Entscheidend bleibt aber, ob eine Empfehlung zu Tier, Alltag und Fütterungsform passt.
+    </p>
+  </div>
+
+  <dl>
+    {stats.map((stat) => (
+      <div>
+        <dd>{stat.value}</dd>
+        <dt>{stat.label}</dt>
+      </div>
+    ))}
+  </dl>
+</section>

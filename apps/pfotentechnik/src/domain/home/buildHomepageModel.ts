@@ -281,7 +281,7 @@ export function buildHomepageModel({
     comparisons: comparisonCards,
     guides: guideCards,
     products: sortedProducts.slice(0, 3).map(
-      (product) => ({
+      (product, index) => ({
         href: `/produkt/${product.data.slug}/`,
         title: product.data.title,
         manufacturer: product.data.manufacturer.name,
@@ -289,7 +289,13 @@ export function buildHomepageModel({
         rating: product.data.rating,
         image:
           product.data.images.thumbnail ??
-          product.data.images.hero
+          product.data.images.hero,
+        badge:
+          index === 0
+            ? "Redaktionelle Empfehlung"
+            : index === 1
+              ? "Starke Alternative"
+              : "Für besondere Anforderungen"
       })
     ),
     recentlyUpdated: recentItems,
@@ -320,6 +326,77 @@ export function buildHomepageModel({
       }
     ],
     methodologyAction: home.values.methodologyAction,
+    useCases: [
+      {
+        title: "Für lange Arbeitstage",
+        text:
+          "Zeitpläne, zuverlässige Ausgabe und gut erreichbare Reinigung stehen im Vordergrund.",
+        href: "/vergleiche/",
+        icon: "clock"
+      },
+      {
+        title: "Für mehrere Katzen",
+        text:
+          "Zugangskontrolle, Futterneid und getrennte Portionen sinnvoll berücksichtigen.",
+        href: "/futterautomat-fuer-zwei-katzen/",
+        icon: "cats"
+      },
+      {
+        title: "Für Nassfutter",
+        text:
+          "Kühlung, kurze Standzeiten und hygienische Reinigung sind wichtiger als App-Funktionen.",
+        href: "/futterautomat-nassfutter/",
+        icon: "wet"
+      },
+      {
+        title: "Für Hunde",
+        text:
+          "Napfgröße, Standfestigkeit und passende Portionsmengen nach Körpergröße auswählen.",
+        href: "/futterautomat-hund/",
+        icon: "dog"
+      },
+      {
+        title: "Für Katzen",
+        text:
+          "Kleine Portionen, ruhige Mechanik und tiergerechte Bauform richtig einordnen.",
+        href: "/futterautomat-katze/",
+        icon: "cat"
+      },
+      {
+        title: "Für Reisen und Betreuung",
+        text:
+          "Ausfallsicherheit, lokale Zeitpläne und einfache Kontrolle zählen mehr als Zusatzfunktionen.",
+        href: "/vergleiche/",
+        icon: "travel"
+      }
+    ],
+    faq: [
+      {
+        question: "Wie entstehen die Empfehlungen auf PfotenTechnik?",
+        answer:
+          "Wir vergleichen dokumentierte technische Daten, Bedienungsanleitungen, Herstellerangaben und den konkreten Einsatzzweck. Fehlende Angaben werden nicht aus Bewertungen oder ähnlichen Produkten abgeleitet."
+      },
+      {
+        question: "Testet PfotenTechnik jedes Produkt selbst?",
+        answer:
+          "Nicht jede Einordnung basiert auf einem eigenen Langzeittest. Die jeweilige Produktseite macht kenntlich, worauf die Bewertung beruht. Unbelegte Praxiserfahrungen werden nicht behauptet."
+      },
+      {
+        question: "Beeinflussen Affiliate-Links die Bewertung?",
+        answer:
+          "Nein. Affiliate-Links können die Finanzierung der Seite unterstützen. Die Reihenfolge, Bewertung und redaktionelle Einordnung sollen davon unabhängig bleiben."
+      },
+      {
+        question: "Warum fehlen bei manchen Produkten einzelne Angaben?",
+        answer:
+          "Hersteller veröffentlichen technische Daten nicht immer vollständig oder eindeutig. In solchen Fällen zeigen wir lieber eine fehlende Angabe, statt einen Wert zu schätzen."
+      },
+      {
+        question: "Wie aktuell sind Vergleiche und Ratgeber?",
+        answer:
+          "Inhalte werden bei relevanten Produktänderungen, neuen Modellen oder fachlichen Ergänzungen überarbeitet. Das Aktualisierungsdatum steht auf der jeweiligen Seite."
+      }
+    ],
     topicGroups: [
       {
         title: "Für Katzen",
