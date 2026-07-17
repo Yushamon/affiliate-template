@@ -11,84 +11,1049 @@ const products = (await getCollection("products"))
     (b.data.score ?? b.data.rating * 20) - (a.data.score ?? a.data.rating * 20)
   );
 
-const catProducts = products.filter((product) => !product.data.tags.includes("hunde") || product.data.tags.includes("katzen"));
-const dogProducts = products.filter((product) => product.data.tags.includes("hunde"));
+const catProducts = products.filter(
+  (product) =>
+    !product.data.tags.includes("hunde") ||
+    product.data.tags.includes("katzen")
+);
+
+const dogProducts = products.filter(
+  (product) => product.data.tags.includes("hunde")
+);
+
+const featuredProducts = products.slice(0, 3);
+
+const faq = [
+  {
+    question: "Welcher Trinkbrunnen ist für Katzen am besten geeignet?",
+    answer:
+      "Für viele Katzen sind leise Brunnen mit breiter, gut zugänglicher Trinkfläche und niedrigem Rand geeignet. Wichtiger als App oder Beleuchtung sind einfache Reinigung, gut erreichbare Pumpe, passendes Material und ein Wasserfluss, den die Katze akzeptiert."
+  },
+  {
+    question: "Welcher Trinkbrunnen eignet sich für Hunde?",
+    answer:
+      "Für Hunde sind eine größere Trinkfläche, ausreichend Volumen, ein stabiler Stand und eine zur Schnauzengröße passende Höhe besonders wichtig. Große Hunde benötigen häufig mehr Durchfluss und einen breiteren Zugang als typische Katzenbrunnen bieten."
+  },
+  {
+    question: "Ist Edelstahl besser als Kunststoff?",
+    answer:
+      "Edelstahl ist robust, geruchsarm und meist gut zu reinigen. Kunststoff kann leichter und günstiger sein, sollte aber kratzfrei bleiben und regelmäßig gründlich gereinigt werden. Entscheidend sind Verarbeitung, Zugänglichkeit und der vollständige Reinigungsweg."
+  },
+  {
+    question: "Wie oft muss ein Trinkbrunnen gereinigt werden?",
+    answer:
+      "Napf, Auslauf und sichtbare Kontaktflächen sollten regelmäßig kontrolliert und je nach Nutzung mehrmals pro Woche gereinigt werden. Pumpe, Rotorraum, Schläuche und schwer zugängliche Bereiche benötigen ebenfalls einen festen Reinigungsrhythmus. Filter und UVC ersetzen die Reinigung nicht."
+  },
+  {
+    question: "Wie oft muss der Filter gewechselt werden?",
+    answer:
+      "Das hängt vom Modell, Filtertyp, Wasser, Tierzahl und Verschmutzungsgrad ab. Herstellerintervalle sind nur ein Ausgangspunkt. Ein verfärbter, riechender oder zugesetzter Filter sollte früher ersetzt werden."
+  },
+  {
+    question: "Braucht ein Trinkbrunnen einen Filter?",
+    answer:
+      "Ein Filter kann Haare, Partikel und je nach Aufbau Gerüche reduzieren. Er macht Wasser jedoch nicht automatisch hygienisch sicher und ersetzt weder Wasserwechsel noch die Reinigung von Behälter und Pumpe."
+  },
+  {
+    question: "Sind Trinkbrunnen mit Akku sinnvoll?",
+    answer:
+      "Ein Akku erleichtert die freie Platzierung ohne sichtbares Kabel. Prüfe Laufzeit, Ladezeit, Betriebsmodus und ob der Brunnen bei niedrigem Akkustand rechtzeitig warnt. Für dauerhaften Betrieb kann ein Netzmodell praktischer sein."
+  },
+  {
+    question: "Ist Sensorbetrieb besser als Dauerbetrieb?",
+    answer:
+      "Sensorbetrieb spart Energie und kann leiser wirken, wird aber nicht von jedem Tier gleich gut angenommen. Manche Katzen trinken lieber an dauerhaft bewegtem Wasser. Entscheidend ist die Akzeptanz des Tieres, nicht der technisch aufwendigere Modus."
+  },
+  {
+    question: "Kann ein Trinkbrunnen die Trinkmenge erhöhen?",
+    answer:
+      "Bewegtes Wasser kann für manche Tiere attraktiver sein. Eine höhere Trinkmenge ist jedoch nicht garantiert. Futterart, Standort, Anzahl der Wasserstellen, Napfform und individuelle Vorlieben spielen ebenfalls eine große Rolle."
+  },
+  {
+    question: "Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?",
+    answer:
+      "Nein. Besonders in Mehrtierhaushalten sind mehrere räumlich getrennte Wasserstellen sinnvoll. Ein technischer Defekt, Stromausfall oder verschmutzter Brunnen darf nicht die einzige Trinkmöglichkeit unbrauchbar machen."
+  }
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer
+    }
+  }))
+};
 ---
 
 <ProjectLayout
   title="Trinkbrunnen für Katzen und Hunde"
-  seoTitle="Die besten Trinkbrunnen für Katzen und Hunde"
-  description="Trinkbrunnen nach Tierart, Kapazität, Material, Reinigung, Lautstärke, Akku und App verständlich vergleichen."
+  seoTitle="Trinkbrunnen für Katzen & Hunde: Vergleich und Kaufberatung"
+  description="Trinkbrunnen für Katzen und Hunde vergleichen: Material, Lautstärke, Reinigung, Filter, Akku, Kapazität und passende Modelle verständlich erklärt."
   canonical="/trinkbrunnen/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+
   <main class="fountain-hub">
     <header class="fountain-hero">
-      <p>Trinkbrunnen im Vergleich</p>
-      <h1>Welcher Trinkbrunnen passt zu deinem Tier?</h1>
-      <div class="fountain-hero-copy">
-        <p>Entscheidend sind nicht möglichst viele Smart-Funktionen, sondern eine tiergerechte Trinkfläche, leiser Betrieb, gut erreichbare Bauteile und eine Reinigung, die im Alltag wirklich durchgehalten wird.</p>
-        <strong>{products.length} aktuelle Modelle eingeordnet</strong>
+      <div class="fountain-hero__content">
+        <p class="eyebrow">Trinkbrunnen im Vergleich</p>
+        <h1>Welcher Trinkbrunnen passt zu deinem Tier?</h1>
+        <p class="fountain-hero__lead">
+          Der beste Trinkbrunnen ist nicht der mit den meisten Funktionen,
+          sondern der, den dein Tier gern nutzt und den du vollständig,
+          regelmäßig und ohne Umwege reinigen kannst.
+        </p>
+
+        <div class="fountain-hero__actions">
+          <a class="button button--primary" href="#modelle">Modelle vergleichen</a>
+          <a class="button button--secondary" href="#auswahlhilfe">Auswahlhilfe starten</a>
+        </div>
+
+        <div class="fountain-hero__meta">
+          <span>{products.length} aktuelle Modelle eingeordnet</span>
+          <span>Für Katzen und Hunde</span>
+          <span>Kaufberatung ohne Funktionshype</span>
+        </div>
       </div>
-      <nav aria-label="Trinkbrunnen-Auswahl">
-        <a href="#katzen">Für Katzen</a>
-        <a href="#hunde">Für Hunde</a>
-        <a href="#auswahl">Auswahlkriterien</a>
-      </nav>
+
+      {featuredProducts[0] && (
+        <a class="fountain-hero__feature" href={`/produkt/${featuredProducts[0].data.slug}/`}>
+          <figure>
+            <OptimizedImage
+              src={featuredProducts[0].data.images.hero.src}
+              alt={featuredProducts[0].data.images.hero.alt}
+              width={760}
+              height={570}
+              layout="constrained"
+            />
+          </figure>
+          <div>
+            <span>Aktuell hervorgehoben</span>
+            <strong>{featuredProducts[0].data.title}</strong>
+            <small>{featuredProducts[0].data.recommendation}</small>
+          </div>
+        </a>
+      )}
     </header>
 
-    <section id="auswahl" class="fountain-advice">
-      <article><span>01</span><h2>Kapazität</h2><p>Ein größerer Tank spart Nachfüllen, verlängert aber nicht automatisch die hygienische Standzeit des Wassers.</p></article>
-      <article><span>02</span><h2>Reinigung</h2><p>Pumpe, Rotorraum und Auslauf müssen ohne Spezialwerkzeug erreichbar sein. UVC und Filter ersetzen das Reinigen nicht.</p></article>
-      <article><span>03</span><h2>Betriebsart</h2><p>Akku schafft flexible Standorte. Dauerfluss wird häufig gut angenommen; Sensorbetrieb spart Energie, passt aber nicht zu jedem Tier.</p></article>
+    <nav class="fountain-jump" aria-label="Trinkbrunnen-Auswahl">
+      <a href="#auswahlhilfe">Auswahlhilfe</a>
+      <a href="#katzen">Für Katzen</a>
+      <a href="#hunde">Für Hunde</a>
+      <a href="#kaufkriterien">Kaufkriterien</a>
+      <a href="#reinigung">Reinigung</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <section id="auswahlhilfe" class="fountain-section fountain-section--compact">
+      <header class="section-heading">
+        <p class="eyebrow">Schnell entscheiden</p>
+        <h2>Wähle zuerst nach Tier, Reinigung und Standort</h2>
+        <p>
+          Material, App und Beleuchtung sind nachgeordnet. Die drei wichtigsten
+          Fragen sind: Trinkt dein Tier bequem daraus, lässt sich der komplette
+          Wasserweg reinigen und passt die Betriebsart zum Standort?
+        </p>
+      </header>
+
+      <div class="decision-grid">
+        <a href="#katzen" class="decision-card">
+          <span>Katze</span>
+          <h3>Leise und niedrig zugänglich</h3>
+          <p>Breite Trinkfläche, geringer Rand, ruhiger Wasserfluss und mehrere Aufstellorte.</p>
+          <strong>Katzenmodelle ansehen →</strong>
+        </a>
+
+        <a href="#hunde" class="decision-card">
+          <span>Hund</span>
+          <h3>Stabil und ausreichend groß</h3>
+          <p>Breite Trinkzone, robuste Bauform und ein Volumen, das zur Tagesmenge passt.</p>
+          <strong>Hundemodelle ansehen →</strong>
+        </a>
+
+        <a href="#kaufkriterien" class="decision-card">
+          <span>Leiser Betrieb</span>
+          <h3>Die Pumpe ist nur ein Teil</h3>
+          <p>Wasserstand, Resonanzkörper, Aufstellung und Verschmutzung beeinflussen das Geräusch.</p>
+          <strong>Lautstärke einordnen →</strong>
+        </a>
+
+        <a href="#reinigung" class="decision-card">
+          <span>Hygiene</span>
+          <h3>Jeder Bereich muss erreichbar sein</h3>
+          <p>Auslauf, Pumpe, Rotorraum, Dichtung und Behälter brauchen einen realistischen Reinigungsweg.</p>
+          <strong>Reinigung prüfen →</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Bauarten</p>
+        <h2>Welcher Trinkbrunnen-Typ passt zu deinem Alltag?</h2>
+      </header>
+
+      <div class="type-table-wrap">
+        <table class="type-table">
+          <thead>
+            <tr>
+              <th>Bauart</th>
+              <th>Stärke</th>
+              <th>Darauf achten</th>
+              <th>Geeignet für</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Netzbetrieb</td>
+              <td>Dauerhafter Betrieb ohne Ladepausen</td>
+              <td>Kabelführung, Ersatzpumpe, Trockenlaufschutz</td>
+              <td>Feste Wasserstelle</td>
+            </tr>
+            <tr>
+              <td>Akku</td>
+              <td>Flexible Platzierung</td>
+              <td>Laufzeit, Ladezeit, Akkustand, Betriebsmodus</td>
+              <td>Standorte ohne Steckdose</td>
+            </tr>
+            <tr>
+              <td>Sensorbetrieb</td>
+              <td>Weniger Laufzeit und Geräusch</td>
+              <td>Erfassungsbereich und Tierakzeptanz</td>
+              <td>Flexible, sparsame Nutzung</td>
+            </tr>
+            <tr>
+              <td>Dauerfluss</td>
+              <td>Ständig verfügbares bewegtes Wasser</td>
+              <td>Pumpengeräusch und Verdunstung</td>
+              <td>Tiere, die Bewegung bevorzugen</td>
+            </tr>
+            <tr>
+              <td>Mit App</td>
+              <td>Status- und Wartungshinweise</td>
+              <td>Cloud-Abhängigkeit und tatsächlicher Mehrwert</td>
+              <td>Technisch kontrollierte Routine</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="modelle" class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Direktvergleich</p>
+        <h2>Aktuelle Trinkbrunnen im Überblick</h2>
+        <p>
+          Die Einordnung trennt klar zwischen Herstellerangaben,
+          redaktioneller Bewertung und tatsächlicher Eignung für den Alltag.
+        </p>
+      </header>
+
+      {featuredProducts.length > 0 && (
+        <div class="featured-grid">
+          {featuredProducts.map((product, index) => (
+            <a class:list={["featured-card", { "featured-card--primary": index === 0 }]} href={`/produkt/${product.data.slug}/`}>
+              <figure>
+                <OptimizedImage
+                  src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
+                  alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
+                  width={720}
+                  height={540}
+                  layout="constrained"
+                />
+              </figure>
+              <div>
+                <span>{index === 0 ? "Hervorgehoben" : "Weitere Empfehlung"}</span>
+                <h3>{product.data.title}</h3>
+                <p>{product.data.recommendation}</p>
+                <div class="featured-card__meta">
+                  <strong>{product.data.manufacturer.name}</strong>
+                  <strong>{product.data.rating.toFixed(1)} / 5</strong>
+                </div>
+                <b>Einordnung lesen →</b>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
     </section>
 
     <section id="katzen" class="fountain-section">
-      <header><p>Für Katzen</p><h2>Leise, zugänglich und gut zu reinigen</h2></header>
+      <header class="section-heading">
+        <p class="eyebrow">Für Katzen</p>
+        <h2>Leise, offen zugänglich und leicht zu reinigen</h2>
+        <p>
+          Viele Katzen bevorzugen mehrere Wasserstellen, Abstand zum Futterplatz
+          und eine breite Trinkfläche ohne Kontakt der Schnurrhaare mit engen Rändern.
+        </p>
+      </header>
+
       <div class="fountain-grid">
         {catProducts.map((product) => (
           <a class="fountain-card" href={`/produkt/${product.data.slug}/`}>
-            <figure><OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt} width={640} height={480} layout="constrained" /></figure>
-            <div><span>{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</span><h3>{product.data.title}</h3><p>{product.data.recommendation}</p><strong>Einordnung lesen →</strong></div>
+            <figure>
+              <OptimizedImage
+                src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
+                alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
+                width={640}
+                height={480}
+                layout="constrained"
+              />
+            </figure>
+            <div>
+              <span>{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</span>
+              <h3>{product.data.title}</h3>
+              <p>{product.data.recommendation}</p>
+              <strong>Einordnung lesen →</strong>
+            </div>
           </a>
         ))}
       </div>
     </section>
 
     <section id="hunde" class="fountain-section">
-      <header><p>Für Hunde</p><h2>Mehr Volumen und eine breite Trinkfläche</h2></header>
-      <div class="fountain-grid">
-        {dogProducts.map((product) => (
-          <a class="fountain-card" href={`/produkt/${product.data.slug}/`}>
-            <figure><OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt} width={640} height={480} layout="constrained" /></figure>
-            <div><span>{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</span><h3>{product.data.title}</h3><p>{product.data.recommendation}</p><strong>Einordnung lesen →</strong></div>
-          </a>
+      <header class="section-heading">
+        <p class="eyebrow">Für Hunde</p>
+        <h2>Mehr Volumen, stabiler Stand und breite Trinkfläche</h2>
+        <p>
+          Für Hunde muss der Brunnen zur Kopf- und Körpergröße passen.
+          Große Behälter allein reichen nicht, wenn Auslauf und Trinkzone zu klein sind.
+        </p>
+      </header>
+
+      {dogProducts.length > 0 ? (
+        <div class="fountain-grid">
+          {dogProducts.map((product) => (
+            <a class="fountain-card" href={`/produkt/${product.data.slug}/`}>
+              <figure>
+                <OptimizedImage
+                  src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
+                  alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
+                  width={640}
+                  height={480}
+                  layout="constrained"
+                />
+              </figure>
+              <div>
+                <span>{product.data.manufacturer.name} · {product.data.rating.toFixed(1)} / 5</span>
+                <h3>{product.data.title}</h3>
+                <p>{product.data.recommendation}</p>
+                <strong>Einordnung lesen →</strong>
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <h3>Noch keine speziell für Hunde markierten Modelle</h3>
+          <p>
+            Bis die Auswahl erweitert ist, prüfe bei den vorhandenen Modellen
+            besonders Trinkfläche, Standfestigkeit, Kapazität und Napfhöhe.
+          </p>
+        </div>
+      )}
+    </section>
+
+    <section id="kaufkriterien" class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Kaufberatung</p>
+        <h2>Die acht wichtigsten Kriterien</h2>
+      </header>
+
+      <div class="criteria-grid">
+        <article><span>01</span><h3>Reinigung</h3><p>Alle wasserführenden Teile müssen erreichbar und ohne Spezialwerkzeug zerlegbar sein.</p></article>
+        <article><span>02</span><h3>Trinkfläche</h3><p>Breite, Tiefe und Randhöhe müssen zur Schnauze und zum Trinkverhalten passen.</p></article>
+        <article><span>03</span><h3>Lautstärke</h3><p>Pumpe, Wasserstand, Untergrund und Resonanz beeinflussen den tatsächlichen Betrieb.</p></article>
+        <article><span>04</span><h3>Kapazität</h3><p>Mehr Volumen spart Nachfüllen, verlängert aber nicht automatisch die hygienische Standzeit.</p></article>
+        <article><span>05</span><h3>Material</h3><p>Edelstahl, Keramik und Kunststoff unterscheiden sich bei Gewicht, Kratzfestigkeit und Pflege.</p></article>
+        <article><span>06</span><h3>Filter</h3><p>Filter können Haare und Partikel reduzieren, ersetzen aber keinen Wasserwechsel und keine Reinigung.</p></article>
+        <article><span>07</span><h3>Betriebsart</h3><p>Netz, Akku, Sensor oder Dauerfluss müssen zum Standort und zur Tierakzeptanz passen.</p></article>
+        <article><span>08</span><h3>Ersatzteile</h3><p>Filter, Pumpen und Dichtungen sollten langfristig verfügbar und preislich nachvollziehbar sein.</p></article>
+      </div>
+    </section>
+
+    <section id="reinigung" class="fountain-section fountain-section--split">
+      <div>
+        <p class="eyebrow">Hygiene</p>
+        <h2>Der wichtigste Test beginnt beim Zerlegen</h2>
+        <p>
+          Ein Trinkbrunnen kann außen sauber wirken, während sich in Pumpe,
+          Rotorraum, Auslauf oder Dichtungen Biofilm und Ablagerungen sammeln.
+          Filter und UVC-Systeme reduzieren den Reinigungsbedarf nicht auf null.
+        </p>
+        <a class="text-link" href="/trinkbrunnen-richtig-reinigen/">Reinigungsanleitung lesen →</a>
+      </div>
+
+      <div class="cleaning-check">
+        <h3>Vor dem Kauf prüfen</h3>
+        <ul>
+          <li>Lässt sich die Pumpe vollständig entnehmen?</li>
+          <li>Ist der Rotorraum ohne Beschädigung zugänglich?</li>
+          <li>Sind Auslauf und Schläuche erreichbar?</li>
+          <li>Können Behälter und Trinkschale getrennt gereinigt werden?</li>
+          <li>Sind Filter und Ersatzpumpe dauerhaft verfügbar?</li>
+          <li>Gibt es enge Spalten oder dauerhaft feuchte Dichtungen?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Typische Fehlkäufe</p>
+        <h2>Worauf du dich nicht verlassen solltest</h2>
+      </header>
+
+      <div class="mistake-grid">
+        <article><h3>„UVC macht Reinigung überflüssig“</h3><p>UVC wirkt nur unter passenden Bedingungen und reinigt weder Oberflächen noch Pumpe oder Ablagerungen.</p></article>
+        <article><h3>„Großer Tank bedeutet frisches Wasser“</h3><p>Volumen reduziert das Nachfüllen, nicht automatisch Keime, Haare, Speichel und Biofilm.</p></article>
+        <article><h3>„Leise“ gilt unter allen Bedingungen</h3><p>Ein sinkender Wasserstand, harter Untergrund oder verschmutzte Pumpe können das Geräusch deutlich verändern.</p></article>
+        <article><h3>„Zwei Liter reichen für jedes Tier“</h3><p>Bedarf, Tierzahl, Temperatur, Futterart und tägliche Kontrolle bestimmen die passende Größe.</p></article>
+      </div>
+    </section>
+
+    <aside class="fountain-note">
+      <div>
+        <p class="eyebrow">Gesundheit</p>
+        <h2>Ein Trinkbrunnen ist eine Wasserstelle, kein Behandlungsgerät</h2>
+      </div>
+      <p>
+        Plötzlich deutlich mehr oder weniger Trinken, häufigeres Urinieren,
+        Erbrechen, Schwäche, Appetitverlust oder Gewichtsveränderungen sollten
+        tierärztlich abgeklärt werden. Wasser nie eigenständig einschränken.
+      </p>
+    </aside>
+
+    <section class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Weiterlesen</p>
+        <h2>Ratgeber zu Trinkverhalten und Wasserstellen</h2>
+      </header>
+
+      <div class="link-grid">
+        <a href="/katze-trinkt-zu-wenig/"><strong>Katze trinkt zu wenig</strong><span>Trinkverhalten und Warnzeichen einordnen</span></a>
+        <a href="/katze-trinkt-viel/"><strong>Katze trinkt viel</strong><span>Mögliche Ursachen und Dringlichkeit</span></a>
+        <a href="/hund-trinkt-zu-wenig/"><strong>Hund trinkt zu wenig</strong><span>Bedarf, Messung und Dehydrierung</span></a>
+        <a href="/hund-trinkt-ploetzlich-viel/"><strong>Hund trinkt plötzlich viel</strong><span>Normale Auslöser und Erkrankungen</span></a>
+        <a href="/wasserstelle-katze-richtiger-standort/"><strong>Wasserstelle richtig platzieren</strong><span>Standort, Abstand und mehrere Näpfe</span></a>
+        <a href="/trinkbrunnen-richtig-reinigen/"><strong>Trinkbrunnen richtig reinigen</strong><span>Pumpe, Filter, Rotor und Behälter</span></a>
+      </div>
+    </section>
+
+    <section id="faq" class="fountain-section">
+      <header class="section-heading">
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2>Trinkbrunnen verständlich erklärt</h2>
+      </header>
+
+      <div class="faq-list">
+        {faq.map((item) => (
+          <details>
+            <summary>{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
         ))}
       </div>
     </section>
 
-    <aside class="fountain-note"><h2>Wichtig für die Gesundheit</h2><p>Ein Trinkbrunnen kann Wasser attraktiver machen, ist aber kein Behandlungsgerät. Plötzlich deutlich mehr oder weniger Trinken, häufiges Urinieren, Schwäche oder Erbrechen sollten tierärztlich abgeklärt werden.</p></aside>
+    <section class="fountain-final">
+      <p class="eyebrow">Fazit</p>
+      <h2>Reinigung und Tierakzeptanz schlagen jede Zusatzfunktion</h2>
+      <p>
+        Beginne bei Tiergröße, Trinkfläche, Standort und Reinigungsweg.
+        Vergleiche danach Lautstärke, Kapazität, Filter, Akku und App.
+        So kaufst du keinen technisch beeindruckenden Brunnen, der im Alltag
+        zu laut, zu klein oder zu aufwendig zu pflegen ist.
+      </p>
+      <a class="button button--primary" href="#modelle">Modelle vergleichen</a>
+    </section>
   </main>
 </ProjectLayout>
 
 <style>
-  .fountain-hub{display:grid;gap:clamp(4rem,8vw,7rem)}
-  .fountain-hero{max-width:1050px;padding:clamp(2rem,5vw,5rem) 0 0}
-  .fountain-hero>p,.fountain-section header p{margin:0 0 .75rem;color:#18743b;font-size:.78rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
-  .fountain-hero h1{max-width:900px;margin:0;font-size:clamp(3rem,8vw,6.5rem);line-height:.94;letter-spacing:-.065em}
-  .fountain-hero-copy{display:grid;grid-template-columns:minmax(0,2fr) minmax(180px,1fr);gap:2rem;align-items:end;margin-top:2rem;padding-top:2rem;border-top:1px solid #dce5e3}
-  .fountain-hero-copy p{max-width:700px;margin:0;color:#647579;font-size:1.15rem;line-height:1.75}
-  .fountain-hero-copy strong{color:#0f5a2b}
-  .fountain-hero nav{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
-  .fountain-hero nav a{padding:.7rem 1rem;border:1px solid #cfe0dc;border-radius:999px;color:#0f5a2b;font-weight:800;text-decoration:none}
-  .fountain-advice{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
-  .fountain-advice article{padding:1.5rem;border:1px solid #dce5e3;border-radius:1.4rem;background:#fff}
-  .fountain-advice span{color:#18743b;font-weight:900}.fountain-advice h2{margin:.7rem 0;font-size:1.35rem}.fountain-advice p{margin:0;color:#647579;line-height:1.65}
-  .fountain-section header{max-width:760px;margin-bottom:2rem}.fountain-section h2{margin:0;font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.05em}
-  .fountain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
-  .fountain-card{display:grid;grid-template-columns:190px minmax(0,1fr);overflow:hidden;border:1px solid #dce5e3;border-radius:1.4rem;background:#fff;color:inherit;text-decoration:none;box-shadow:0 12px 30px rgba(13,48,43,.05)}
-  .fountain-card figure{min-height:230px;margin:0;overflow:hidden;background:#f2f7f5}.fountain-card figure :global(img){width:100%;height:100%;object-fit:cover}
-  .fountain-card>div{display:flex;flex-direction:column;padding:1.35rem}.fountain-card span{color:#18743b;font-size:.75rem;font-weight:900;text-transform:uppercase}.fountain-card h3{margin:.55rem 0;font-size:1.45rem;line-height:1.1}.fountain-card p{margin:0;color:#647579;line-height:1.55}.fountain-card strong{margin-top:auto;padding-top:1rem;color:#0f5a2b}
-  .fountain-note{padding:clamp(1.5rem,4vw,3rem);border-radius:1.7rem;background:linear-gradient(135deg,#eefaf6,#fff)}.fountain-note h2{margin-top:0}.fountain-note p{max-width:800px;margin-bottom:0;color:#526568;line-height:1.75}
-  @media(max-width:900px){.fountain-grid{grid-template-columns:1fr}}
-  @media(max-width:650px){.fountain-hero-copy,.fountain-advice{grid-template-columns:1fr}.fountain-card{grid-template-columns:1fr}.fountain-card figure{aspect-ratio:4/3;min-height:0}.fountain-hub{gap:4rem}}
+  .fountain-hub {
+    display: grid;
+    gap: clamp(4rem, 8vw, 7rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+  }
+
+  .fountain-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+    padding: clamp(2.5rem, 6vw, 6rem) 0 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 .75rem;
+    color: #18743b;
+    font-size: .78rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .fountain-hero h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(3.2rem, 7vw, 6.7rem);
+    line-height: .94;
+    letter-spacing: -.065em;
+  }
+
+  .fountain-hero__lead {
+    max-width: 760px;
+    margin: 1.6rem 0 0;
+    color: #596d71;
+    font-size: clamp(1.08rem, 2vw, 1.3rem);
+    line-height: 1.7;
+  }
+
+  .fountain-hero__actions,
+  .fountain-hero__meta,
+  .fountain-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
+  .fountain-hero__actions {
+    margin-top: 1.8rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: .8rem 1.15rem;
+    border-radius: 999px;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .button--primary {
+    background: #0f5a2b;
+    color: #fff;
+  }
+
+  .button--secondary {
+    border: 1px solid #bed5ce;
+    background: #fff;
+    color: #0f5a2b;
+  }
+
+  .fountain-hero__meta {
+    margin-top: 1.35rem;
+    color: #526568;
+    font-size: .86rem;
+    font-weight: 750;
+  }
+
+  .fountain-hero__meta span {
+    padding: .48rem .7rem;
+    border-radius: 999px;
+    background: #eef7f4;
+  }
+
+  .fountain-hero__feature {
+    overflow: hidden;
+    border: 1px solid #dce5e3;
+    border-radius: 1.8rem;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 22px 60px rgba(13, 48, 43, .09);
+  }
+
+  .fountain-hero__feature figure {
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    overflow: hidden;
+    background: #f2f7f5;
+  }
+
+  .fountain-hero__feature figure :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fountain-hero__feature div {
+    display: grid;
+    gap: .35rem;
+    padding: 1.25rem;
+  }
+
+  .fountain-hero__feature span {
+    color: #18743b;
+    font-size: .72rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .fountain-hero__feature strong {
+    font-size: 1.25rem;
+  }
+
+  .fountain-hero__feature small {
+    color: #647579;
+    line-height: 1.5;
+  }
+
+  .fountain-jump {
+    position: sticky;
+    z-index: 5;
+    top: .75rem;
+    padding: .65rem;
+    border: 1px solid rgba(207, 224, 220, .9);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(13, 48, 43, .06);
+  }
+
+  .fountain-jump a {
+    padding: .62rem .85rem;
+    border-radius: 999px;
+    color: #0f5a2b;
+    font-size: .88rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .fountain-jump a:hover {
+    background: #eef7f4;
+  }
+
+  .fountain-section {
+    scroll-margin-top: 6rem;
+  }
+
+  .fountain-section--compact {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .section-heading {
+    max-width: 850px;
+    margin-bottom: 2rem;
+  }
+
+  .section-heading h2,
+  .fountain-section--split h2,
+  .fountain-note h2,
+  .fountain-final h2 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -.05em;
+  }
+
+  .section-heading > p:last-child,
+  .fountain-section--split > div > p,
+  .fountain-note > p,
+  .fountain-final > p {
+    color: #5d7074;
+    line-height: 1.75;
+  }
+
+  .decision-grid,
+  .criteria-grid,
+  .mistake-grid,
+  .link-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .decision-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .decision-card,
+  .criteria-grid article,
+  .mistake-grid article,
+  .link-grid a,
+  .empty-state {
+    padding: 1.35rem;
+    border: 1px solid #dce5e3;
+    border-radius: 1.35rem;
+    background: #fff;
+  }
+
+  .decision-card,
+  .link-grid a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .decision-card span,
+  .criteria-grid span {
+    color: #18743b;
+    font-size: .75rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .decision-card h3,
+  .criteria-grid h3,
+  .mistake-grid h3 {
+    margin: .6rem 0;
+    font-size: 1.25rem;
+  }
+
+  .decision-card p,
+  .criteria-grid p,
+  .mistake-grid p {
+    margin: 0;
+    color: #647579;
+    line-height: 1.6;
+  }
+
+  .decision-card strong {
+    display: block;
+    margin-top: 1rem;
+    color: #0f5a2b;
+  }
+
+  .type-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #dce5e3;
+    border-radius: 1.4rem;
+    background: #fff;
+  }
+
+  .type-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+  }
+
+  .type-table th,
+  .type-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e4ecea;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .type-table th {
+    color: #0f5a2b;
+    font-size: .8rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .type-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 1.15fr repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .featured-card,
+  .fountain-card {
+    overflow: hidden;
+    border: 1px solid #dce5e3;
+    border-radius: 1.4rem;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 12px 30px rgba(13, 48, 43, .05);
+  }
+
+  .featured-card--primary {
+    border-color: #9ccab9;
+  }
+
+  .featured-card figure,
+  .fountain-card figure {
+    margin: 0;
+    overflow: hidden;
+    background: #f2f7f5;
+  }
+
+  .featured-card figure {
+    aspect-ratio: 4 / 3;
+  }
+
+  .featured-card figure :global(img),
+  .fountain-card figure :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-card > div {
+    display: grid;
+    gap: .6rem;
+    padding: 1.3rem;
+  }
+
+  .featured-card span,
+  .fountain-card span {
+    color: #18743b;
+    font-size: .73rem;
+    font-weight: 900;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .featured-card h3,
+  .fountain-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+
+  .featured-card p,
+  .fountain-card p {
+    margin: 0;
+    color: #647579;
+    line-height: 1.55;
+  }
+
+  .featured-card__meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #43585c;
+    font-size: .82rem;
+  }
+
+  .featured-card b,
+  .fountain-card strong {
+    color: #0f5a2b;
+  }
+
+  .fountain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .fountain-card {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+
+  .fountain-card figure {
+    min-height: 230px;
+  }
+
+  .fountain-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    padding: 1.35rem;
+  }
+
+  .fountain-card strong {
+    margin-top: auto;
+    padding-top: .6rem;
+  }
+
+  .criteria-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .fountain-section--split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: 1.7rem;
+    background: linear-gradient(135deg, #eefaf6, #fff);
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0f5a2b;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .cleaning-check {
+    padding: 1.4rem;
+    border: 1px solid #d5e7e1;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, .8);
+  }
+
+  .cleaning-check h3 {
+    margin-top: 0;
+  }
+
+  .cleaning-check ul {
+    display: grid;
+    gap: .7rem;
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #526568;
+    line-height: 1.5;
+  }
+
+  .mistake-grid,
+  .link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fountain-note {
+    display: grid;
+    grid-template-columns: minmax(250px, .75fr) minmax(0, 1.25fr);
+    gap: 2rem;
+    align-items: end;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: 1.7rem;
+    background: linear-gradient(135deg, #eefaf6, #fff);
+  }
+
+  .link-grid a {
+    display: grid;
+    gap: .3rem;
+  }
+
+  .link-grid strong {
+    color: #173c32;
+  }
+
+  .link-grid span {
+    color: #647579;
+  }
+
+  .faq-list {
+    display: grid;
+    gap: .75rem;
+  }
+
+  .faq-list details {
+    border: 1px solid #dce5e3;
+    border-radius: 1.1rem;
+    background: #fff;
+  }
+
+  .faq-list summary {
+    padding: 1.1rem 1.2rem;
+    cursor: pointer;
+    color: #173c32;
+    font-weight: 850;
+  }
+
+  .faq-list p {
+    margin: 0;
+    padding: 0 1.2rem 1.2rem;
+    color: #5d7074;
+    line-height: 1.7;
+  }
+
+  .fountain-final {
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 1.8rem;
+    background: #102f27;
+    color: #fff;
+  }
+
+  .fountain-final .eyebrow {
+    color: #8bd9b8;
+  }
+
+  .fountain-final > p {
+    max-width: 760px;
+    color: #d4e2de;
+  }
+
+  .fountain-final .button--primary {
+    margin-top: .7rem;
+    background: #fff;
+    color: #0f5a2b;
+  }
+
+  @media (max-width: 1050px) {
+    .decision-grid,
+    .criteria-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .featured-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .featured-card--primary {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .fountain-hero,
+    .fountain-section--split,
+    .fountain-note {
+      grid-template-columns: 1fr;
+    }
+
+    .fountain-hero__feature {
+      max-width: 680px;
+    }
+
+    .fountain-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .fountain-jump {
+      position: static;
+      border-radius: 1.3rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .fountain-hub {
+      gap: 4rem;
+    }
+
+    .fountain-hero h1 {
+      font-size: clamp(2.8rem, 14vw, 4.5rem);
+    }
+
+    .decision-grid,
+    .criteria-grid,
+    .featured-grid,
+    .mistake-grid,
+    .link-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .featured-card--primary {
+      grid-column: auto;
+    }
+
+    .fountain-card {
+      grid-template-columns: 1fr;
+    }
+
+    .fountain-card figure {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    .fountain-jump {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    .fountain-jump a {
+      flex: 0 0 auto;
+    }
+  }
 </style>
