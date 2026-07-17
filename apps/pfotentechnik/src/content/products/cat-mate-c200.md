@@ -3,11 +3,11 @@ title: "Cat Mate C200"
 slug: "cat-mate-c200"
 type: "product"
 layout: "product"
-description: "Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN."
-recommendation: "Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN."
+description: "Analoger Zwei-Mahlzeiten-Automat für Nass- und Trockenfutter mit zwei 48-Stunden-Timern, Kühlakku und einer AA-Batterie."
+recommendation: "Preiswerte Offline-Lösung für zwei vorbereitete Mahlzeiten, wenn einfache Bedienung wichtiger ist als minutengenaue Öffnung oder App-Steuerung."
 manufacturer:
-  key: "closer-pets"
-  name: "Closer Pets / Cat Mate"
+  key: "cat-mate"
+  name: "Cat Mate"
   slug: "cat-mate"
 category:
   key: "futterautomaten"
@@ -15,12 +15,12 @@ category:
   path: "/smarte-futterautomaten/"
 productUrl: "/produkt/cat-mate-c200/"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-16"
 author:
   name: "PfotenTechnik Redaktion"
 seo:
-  title: "Cat Mate C200 Test"
-  description: "Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN."
+  title: "Cat Mate C200 im Check"
+  description: "Cat Mate C200 mit zwei 48-Stunden-Timern, zwei 400-g-Fächern, Kühlakku und rund zwölf Monaten Batterielaufzeit."
   canonical: "/produkt/cat-mate-c200/"
   sitemap: true
   priority: 0.9
@@ -30,14 +30,11 @@ hub:
     - "futterautomaten"
 tags:
   - "katze"
-  - "hund"
+  - "kleiner-hund"
   - "nassfutter"
   - "trockenfutter"
-  - "portionierung"
-  - "ohne-wlan"
+  - "analogtimer"
   - "batteriebetrieb"
-  - "preisleistung"
-  - "smarte-futterautomaten"
 images:
   hero:
     src: "../../assets/images/products/cat-mate-c200/hero.webp"
@@ -50,77 +47,111 @@ images:
     alt: "Cat Mate C200 im Produktvergleich"
   gallery:
     - src: "../../assets/images/products/cat-mate-c200/gallery-1.webp"
-      alt: "Cat Mate C200, weitere redaktionelle Ansicht 1"
+      alt: "Zwei Fächer des Cat Mate C200"
     - src: "../../assets/images/products/cat-mate-c200/gallery-2.webp"
-      alt: "Cat Mate C200, weitere redaktionelle Ansicht 2"
+      alt: "Analoge Timer des Cat Mate C200"
     - src: "../../assets/images/products/cat-mate-c200/gallery-3.webp"
-      alt: "Cat Mate C200, weitere redaktionelle Ansicht 3"
+      alt: "Kühlakku des Cat Mate C200"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=Cat%20Mate%20C200%20Futterautomat"
+  url: "https://www.amazon.de/s?k=Cat+Mate+C200+Futterautomat"
 rating: 4.3
 score: 84
 ratings:
-  "app": 1
-  "portionierung": 4
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4
-  "sicherheit": 4
-  "preisleistung": 4.5
+  app: 1
+  portionierung: 4
+  reinigung: 4.5
+  zuverlaessigkeit: 4
+  sicherheit: 4
+  preisleistung: 4.5
 decision:
   bestFor:
-    - "katze"
-    - "hund"
-    - "nassfutter"
-    - "trockenfutter"
-    - "portionierung"
-    - "ohne-wlan"
-    - "batteriebetrieb"
-    - "preisleistung"
+    - "eine oder zwei Katzen"
+    - "kleine Hunde"
+    - "Nass- und Trockenfutter"
+    - "zwei Mahlzeiten innerhalb von 48 Stunden"
   attention:
-    - "Nur zwei Mahlzeiten planbar"
-    - "Keine aktive Kühlung"
-    - "Mechanische Timer sind weniger exakt als digitale Zeitpläne"
+    - "analoge Timer öffnen nicht minutengenau"
+    - "keine aktive Kühlung"
+    - "keine App oder Fernkontrolle"
+    - "für komplexe Zeitpläne ungeeignet"
 review:
-  summary: "Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN."
-  verdict: "Eine preiswerte und einfache Wahl für zwei vorbereitete Mahlzeiten, wenn App-Steuerung und aktive Kühlung nicht benötigt werden."
+  summary: "Der C200 besitzt zwei unabhängig einstellbare 48-Stunden-Timer und zwei große Fächer für Nass- oder Trockenfutter."
+  verdict: "Einfach, günstig und reparierbar. Die analogen Timer sind aber merklich ungenauer als digitale Modelle."
 strengths:
-  - "Keine App oder WLAN-Verbindung erforderlich"
-  - "Schalen und Deckel sind herausnehmbar und spülmaschinengeeignet"
-  - "Bis zu zwölf Monate Batterielaufzeit mit einer AA-Batterie"
+  - "zwei separat einstellbare Fächer"
+  - "bis zu 400 g je Fach laut Produktseite"
+  - "Nass- und Trockenfutter"
+  - "Kühlakku inklusive"
+  - "spülmaschinengeeignete Deckel und Schalen"
+  - "bis zu zwölf Monate mit einer AA-Batterie"
 weaknesses:
-  - "Nur zwei Mahlzeiten planbar"
-  - "Keine aktive Kühlung"
-  - "Mechanische Timer sind weniger exakt als digitale Zeitpläne"
-alternatives: []
+  - "analoge Timer mit begrenzter Genauigkeit"
+  - "keine aktive Kühlung"
+  - "keine App"
+  - "nur zwei Mahlzeiten"
+experience:
+  summary: "Closer Pets weist selbst darauf hin, dass die analogen Timer einige Minuten früher oder später öffnen können."
+  methodology: "Redaktionelle Einordnung anhand offizieller Closer-Pets-Produkt- und Supportseiten; kein eigener Langzeittest."
+  maintenance: "Deckel und Schalen regelmäßig reinigen. Kühlakku vollständig einfrieren und Timermechanik trocken halten."
+alternatives:
+  - "cat-mate-c300"
+  - "cat-mate-c500"
+  - "petlibro-polar-wet-food-feeder"
+comparisons:
+  - "beste-futterautomaten-fuer-katzen"
 specs:
   - label: "Futterart"
     value: "Nass- und Trockenfutter"
-  - label: "App-Steuerung"
+  - label: "Kapazität"
+    value: "zwei Fächer mit je bis zu 400 g"
+  - label: "Mahlzeiten"
+    value: "zwei"
+  - label: "Timer"
+    value: "zwei analoge 48-Stunden-Timer"
+  - label: "App"
     value: "Nein"
   - label: "Kamera"
     value: "Nein"
-  - label: "Kapazität"
-    value: "2 Schalen mit je bis zu 400 g"
-  - label: "Timer"
-    value: "Zwei separate Timer, bis zu 48 Stunden"
   - label: "Kühlung"
-    value: "Kühlakku, keine aktive Kühlung"
+    value: "ein Kühlakku, keine aktive Kühlung"
   - label: "Stromversorgung"
-    value: "1 AA-Batterie"
+    value: "eine AA-Batterie"
+  - label: "Batterielaufzeit"
+    value: "Herstellerangabe bis zwölf Monate"
+  - label: "Material"
+    value: "BPA-freies Polypropylen"
+  - label: "Reinigung"
+    value: "Deckel und Schalen bei niedriger Temperatur spülmaschinengeeignet"
   - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
-faq: []
-useCase: "Für Katzen und kleine Hunde, die innerhalb von bis zu 48 Stunden zwei vorbereitete Mahlzeiten erhalten sollen"
-capacity: "2 Mahlzeiten mit je bis zu 400 g"
-expandable: "Nicht vorgesehen"
+    value: "zwei Katzen oder einen kleinen Hund"
+faq:
+  - question: "Öffnen beide Timer exakt zur eingestellten Zeit?"
+    answer: "Nein. Closer Pets weist darauf hin, dass analoge Timer einige Minuten früher oder später öffnen können."
+  - question: "Wie viel Futter passt in ein Fach?"
+    answer: "Die aktuelle Produktseite nennt bis zu 400 g je Fach. Eine ältere Supportseite nennt 450 g."
+  - question: "Kann der C200 Nassfutter kühlen?"
+    answer: "Der Kühlakku verlangsamt die Erwärmung, ist aber keine aktive Kühlung."
+  - question: "Kann man beide Deckel gleichzeitig öffnen lassen?"
+    answer: "Ja. Ein mitgelieferter Verbindungsclip kann beide Deckel gleichzeitig öffnen."
+useCase: "Für zwei vorbereitete Mahlzeiten innerhalb von 48 Stunden"
+capacity: "Zwei Fächer mit je bis zu 400 g"
+expandable: "Edelstahleinsätze separat erhältlich"
 features:
-  - "Zwei separat programmierbare 48-Stunden-Timer"
-  - "Für Nass- und Trockenfutter geeignet"
-  - "Kühlakku unter den Futterschalen"
+  - "Zwei 48-Stunden-Timer"
+  - "Nass- und Trockenfutter"
+  - "Kühlakku"
 ---
 
-Der Cat Mate C200 ist eine unkomplizierte Lösung für zwei zeitgesteuerte Mahlzeiten mit Nass- oder Trockenfutter und funktioniert vollständig ohne App oder WLAN.
+Der Cat Mate C200 ist bewusst einfach. Zwei analoge Timer steuern zwei getrennte Fächer, ohne App, WLAN oder Netzanschluss.
 
-Eine preiswerte und einfache Wahl für zwei vorbereitete Mahlzeiten, wenn App-Steuerung und aktive Kühlung nicht benötigt werden.
+## Genauigkeit
+
+Die Timer sind nicht minutengenau. Closer Pets empfiehlt bei höherem Genauigkeitsbedarf die digitalen Modelle C300 oder C500.
+
+## Kühlung
+
+Der mitgelieferte Kühlakku kann Nassfutter länger kühl halten. Die tatsächliche Dauer hängt von Raumtemperatur, Futtertemperatur und Standort ab.
+
+**Quellen:** [Cat Mate C200](https://closerpets.com/products/two-meal-automatic-pet-feeder-c200-petmate), [C200 Support](https://closerpets.com/pages/support-two-meal-automatic-pet-feeder-c200). Bild: redaktionelle Visualisierung.

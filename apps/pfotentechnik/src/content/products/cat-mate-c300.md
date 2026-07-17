@@ -3,11 +3,11 @@ title: "Cat Mate C300"
 slug: "cat-mate-c300"
 type: "product"
 layout: "product"
-description: "Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN."
-recommendation: "Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN."
+description: "Batteriebetriebener Drei-Fächer-Automat mit Digitaltimer, zwei programmierbaren Zeiten, Kühlakku und spülmaschinengeeignetem Einsatz."
+recommendation: "Einfache digitale Nass- und Trockenfutterlösung für bis zu zwei Katzen oder einen kleinen Hund, wenn drei Fächer und lokale Bedienung ausreichen."
 manufacturer:
-  key: "closer-pets"
-  name: "Closer Pets / Cat Mate"
+  key: "cat-mate"
+  name: "Cat Mate"
   slug: "cat-mate"
 category:
   key: "futterautomaten"
@@ -15,12 +15,12 @@ category:
   path: "/smarte-futterautomaten/"
 productUrl: "/produkt/cat-mate-c300/"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-16"
 author:
   name: "PfotenTechnik Redaktion"
 seo:
-  title: "Cat Mate C300 Test"
-  description: "Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN."
+  title: "Cat Mate C300 im Check"
+  description: "Cat Mate C300 mit drei 170-g-Fächern, zwei programmierbaren Zeiten, Kühlakku und rund zwölf Monaten Batterielaufzeit."
   canonical: "/produkt/cat-mate-c300/"
   sitemap: true
   priority: 0.9
@@ -30,14 +30,11 @@ hub:
     - "futterautomaten"
 tags:
   - "katze"
-  - "hund"
+  - "kleiner-hund"
   - "nassfutter"
   - "trockenfutter"
-  - "portionierung"
-  - "ohne-wlan"
+  - "digitaltimer"
   - "batteriebetrieb"
-  - "preisleistung"
-  - "smarte-futterautomaten"
 images:
   hero:
     src: "../../assets/images/products/cat-mate-c300/hero.webp"
@@ -50,79 +47,115 @@ images:
     alt: "Cat Mate C300 im Produktvergleich"
   gallery:
     - src: "../../assets/images/products/cat-mate-c300/gallery-1.webp"
-      alt: "Cat Mate C300, weitere redaktionelle Ansicht 1"
+      alt: "Drei Fächer des Cat Mate C300"
     - src: "../../assets/images/products/cat-mate-c300/gallery-2.webp"
-      alt: "Cat Mate C300, weitere redaktionelle Ansicht 2"
+      alt: "Digitaltimer des Cat Mate C300"
     - src: "../../assets/images/products/cat-mate-c300/gallery-3.webp"
-      alt: "Cat Mate C300, weitere redaktionelle Ansicht 3"
+      alt: "Kühlakku unter dem Cat Mate C300"
     - src: "../../assets/images/products/cat-mate-c300/gallery-4.webp"
-      alt: "Cat Mate C300, weitere redaktionelle Ansicht 4"
+      alt: "Cat Mate C300 im Katzenhaushalt"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=Cat%20Mate%20C300%20Futterautomat"
+  url: "https://www.amazon.de/s?k=Cat+Mate+C300+Futterautomat"
 rating: 4.4
 score: 85
 ratings:
-  "app": 1
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4
-  "preisleistung": 4.5
+  app: 1
+  portionierung: 4.5
+  reinigung: 4.5
+  zuverlaessigkeit: 4.5
+  sicherheit: 4
+  preisleistung: 4.5
 decision:
   bestFor:
-    - "katze"
-    - "hund"
-    - "nassfutter"
-    - "trockenfutter"
-    - "portionierung"
-    - "ohne-wlan"
-    - "batteriebetrieb"
-    - "preisleistung"
+    - "eine bis zwei Katzen"
+    - "kleine Hunde"
+    - "Nass- und Trockenfutter"
+    - "lokale Digitaltimer-Steuerung"
   attention:
-    - "Keine aktive Kühlung"
-    - "Nur drei Mahlzeiten"
-    - "Mechanische Bedienung"
+    - "nur zwei spätere Mahlzeiten programmierbar; ein Fach ist sofort verfügbar"
+    - "Kühlakku bietet keine aktive Kühlung"
+    - "Hersteller nennt auf verschiedenen Seiten 170 beziehungsweise 330 g pro Fach"
+    - "keine App oder Fernkontrolle"
 review:
-  summary: "Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN."
-  verdict: "Eine sehr gute Wahl für zeitgesteuerte Nassfütterung, wenn drei Mahlzeiten ausreichen und keine App benötigt wird."
+  summary: "Der C300 besitzt drei Fächer, von denen eines sofort verfügbar ist und zwei über den Digitaltimer geöffnet werden."
+  verdict: "Eine zuverlässige Zwischenlösung zwischen dem analogen C200 und dem größeren C500."
 strengths:
-  - "Ideal für Wochenenden oder kurze Abwesenheiten"
-  - "Keine App oder Internetverbindung notwendig"
-  - "Leicht zu reinigen"
+  - "digitaler Timer"
+  - "Nass- und Trockenfutter"
+  - "drei Fächer"
+  - "Kühlakku inklusive"
+  - "spülmaschinengeeigneter Deckel und Einsatz"
+  - "Herstellerangabe etwa zwölf Monate Batterielaufzeit"
 weaknesses:
-  - "Keine aktive Kühlung"
-  - "Nur drei Mahlzeiten"
-  - "Mechanische Bedienung"
-alternatives: []
+  - "nur zwei programmierbare Zeiten"
+  - "keine aktive Kühlung"
+  - "keine App"
+  - "offizielle Kapazitätsangaben widersprechen sich"
+experience:
+  summary: "Der Digitaltimer ist präziser als die analogen Drehregler des C200, erlaubt aber keine komplexen Wochenpläne."
+  methodology: "Redaktionelle Einordnung anhand offizieller Closer-Pets-Produkt- und Supportseiten; kein eigener Langzeittest."
+  maintenance: "Deckel und Einsatz nach Nassfutter in der Spülmaschine oder von Hand reinigen. Kühlakku vollständig vorfrieren."
+alternatives:
+  - "cat-mate-c200"
+  - "cat-mate-c500"
+  - "petlibro-polar-wet-food-feeder"
+comparisons:
+  - "beste-futterautomaten-fuer-katzen"
 specs:
   - label: "Futterart"
     value: "Nass- und Trockenfutter"
-  - label: "App-Steuerung"
+  - label: "Kapazität"
+    value: "drei Fächer; aktuelle Produktseite nennt 170 g je Fach, Supportseite 330 g"
+  - label: "Mahlzeiten"
+    value: "ein Fach sofort, zwei Zeiten programmierbar"
+  - label: "Timer"
+    value: "digital"
+  - label: "App"
     value: "Nein"
   - label: "Kamera"
     value: "Nein"
-  - label: "Kapazität"
-    value: "3 Schalen mit je bis zu 330 g"
-  - label: "Timer"
-    value: "Bis zu 48 Stunden"
   - label: "Kühlung"
-    value: "Kühlakku"
+    value: "ein Kühlakku, keine aktive Kühlung"
   - label: "Stromversorgung"
-    value: "3 AA-Batterien"
+    value: "drei AA-Batterien"
+  - label: "Batterielaufzeit"
+    value: "Herstellerangabe etwa zwölf Monate"
+  - label: "Material"
+    value: "BPA-freies Polypropylen"
+  - label: "Reinigung"
+    value: "Deckel und Einsatz spülmaschinengeeignet"
+  - label: "Garantie"
+    value: "Herstellerangabe drei Jahre"
   - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
-faq: []
-useCase: "Für Katzen und kleine Hunde, die bis zu drei vorbereitete Mahlzeiten erhalten sollen."
-capacity: "3 Mahlzeiten mit je bis zu 330 g"
+    value: "bis zu zwei Katzen oder einen kleinen Hund"
+faq:
+  - question: "Hat der Cat Mate C300 drei programmierbare Zeiten?"
+    answer: "Nein. Ein Fach ist sofort zugänglich, zwei weitere Mahlzeiten werden programmiert."
+  - question: "Wie viel passt in jedes Fach?"
+    answer: "Die offizielle Produktseite nennt 170 g, die Supportseite 330 g. Wegen dieses Widerspruchs sollte die konkrete regionale Version geprüft werden."
+  - question: "Ist die Kühlung aktiv?"
+    answer: "Nein. Ein vorgefrorener Kühlakku verlangsamt lediglich die Erwärmung."
+  - question: "Wie lange halten die Batterien?"
+    answer: "Closer Pets nennt mit drei AA-Alkalibatterien ungefähr zwölf Monate."
+useCase: "Für bis zu drei vorbereitete Nass- oder Trockenfuttermahlzeiten"
+capacity: "Drei Fächer"
 expandable: "Nicht vorgesehen"
 features:
-  - "Drei separat programmierbare Mahlzeiten"
-  - "Für Nass- und Trockenfutter geeignet"
-  - "Kühlakku unter den Futterschalen"
+  - "Digitaltimer"
+  - "Nass- und Trockenfutter"
+  - "Kühlakku"
 ---
 
-Der Cat Mate C300 eignet sich für drei zeitgesteuerte Mahlzeiten und ist eine einfache Lösung für Nass- oder Trockenfutter ohne App oder WLAN.
+Der Cat Mate C300 kombiniert die einfache Drehtellerbauweise mit einem Digitaltimer. Er ist präziser als der analoge C200, bleibt aber vollständig offline.
 
-Eine sehr gute Wahl für zeitgesteuerte Nassfütterung, wenn drei Mahlzeiten ausreichen und keine App benötigt wird.
+## Zwei Timer, drei Fächer
+
+Ein Fach steht sofort bereit. Für die beiden weiteren Fächer werden Öffnungszeiten programmiert.
+
+## Widersprüchliche Kapazität
+
+Closer Pets nennt auf der aktuellen Produktseite 170 g je Fach, in der Supportseite dagegen 330 g. Diese Abweichung sollte nicht stillschweigend geglättet werden.
+
+**Quellen:** [Cat Mate C300 Produktseite](https://closerpets.com/products/three-meal-automatic-pet-feeder-with-digital-timer-c300-petmate), [C300 Support](https://closerpets.com/pages/faq-cat-mate-c500-c300-automatic-pet-feeder-with-digital-timer-365-366). Bild: redaktionelle Visualisierung.
