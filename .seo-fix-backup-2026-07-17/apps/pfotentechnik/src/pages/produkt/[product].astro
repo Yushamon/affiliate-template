@@ -13,7 +13,7 @@ import ProductReview from "@affiliate-core/components/product/ProductReview.astr
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
-import { projectConfig, site } from "../../project.config";
+import { projectConfig } from "../../project.config";
 
 import {
   getAlternativeRecommendations
@@ -216,43 +216,13 @@ const author =
       "Redaktion"
   };
 
-const publishedAt = contentProduct.publishedAt;
+const publishedAt =
+  contentProduct.publishedAt ??
+  "2026-07-09";
+
 const updatedAt =
   contentProduct.updatedAt ??
   publishedAt;
-
-
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: contentProduct.title,
-  description: seoDescription,
-  url: new URL(canonical, site.domain).toString(),
-  image: [
-    new URL(optimizedOgImage.src, site.domain).toString()
-  ],
-  sku: contentProduct.slug,
-  category: contentProduct.category.label,
-  brand: {
-    "@type": "Brand",
-    name: contentProduct.manufacturer.name
-  },
-  review: {
-    "@type": "Review",
-    name: `${contentProduct.title} – redaktionelle Einordnung`,
-    reviewBody: contentProduct.recommendation,
-    author: {
-      "@type": "Organization",
-      name: "PfotenTechnik Redaktion"
-    },
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: contentProduct.rating,
-      bestRating: 5,
-      worstRating: 1
-    }
-  }
-};
 
 const productSearchValues = [
   contentProduct.useCase,
@@ -362,13 +332,8 @@ const everydayCriteria = [
   updatedAt={updatedAt}
   categoryLabel={categoryLabel}
   breadcrumbs={breadcrumbs}
-  schemaType="webpage"
+  schemaType="article"
 >
-  <script
-    type="application/ld+json"
-    set:html={JSON.stringify(productSchema)}
-  />
-
   <Breadcrumbs items={breadcrumbs} />
 
   <main class="product-detail pt-product-detail">

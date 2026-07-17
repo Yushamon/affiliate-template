@@ -1,76 +1,44 @@
-# PfotenTechnik Label- und Grammatik-Fix V4
+# PfotenTechnik – technisches SEO-Fixpaket
 
-Dieses Paket basiert auf den vollständigen Dateien aus dem aktuellen
-`main`-Branch von:
+Dieses Paket setzt die priorisierten technischen Korrekturen aus dem SEO-Audit um, ohne komplette Repository-Dateien blind zu überschreiben.
 
-```text
-Yushamon/affiliate-template
-```
+## Enthaltene Korrekturen
 
-## Behobene Ursache
-
-In den Trinkbrunnen-Alternativen wurde bisher pauschal Folgendes erzeugt:
-
-```ts
-`Wenn ${bestFor.toLowerCase()} wichtig ist`
-```
-
-Dadurch entstanden Texte wie:
-
-```text
-Wenn große hunde wichtig ist
-```
-
-Die neue Lösung verwendet semantische Formulierungen:
-
-```text
-Für große Hunde
-Bei hohem Wasserbedarf
-Für Mehrkatzenhaushalte
-Mit App
-Mit Kamera
-Für Nassfutter
-```
-
-## Ebenfalls angepasst
-
-Die Empfehlungstitel für Futterautomaten wurden vereinheitlicht:
-
-```text
-Für die Fütterung mit Nassfutter
-Für die getrennte Fütterung mehrerer Tiere
-Für die Kontrolle per Kamera
-Für flexible Steuerung per App
-Für Mehrtierhaushalte
-Für wenig Stellfläche
-Als Preis-Leistungs-Alternative
-```
-
-Sichtbare Tags beginnen außerdem mit einem Großbuchstaben.
+1. Nicht-Startseiten erhalten standardmäßig `WebPage` statt pauschal `Article`.
+2. `Article`-Datumsangaben werden nur ausgegeben, wenn die jeweilige Seite echte Daten liefert.
+3. Wissensseiten berücksichtigen `seo.canonical`.
+4. Vergleichsseiten verwenden `WebPage`-Schema.
+5. Produktseiten verlieren den fest codierten Veröffentlichungs-Fallback.
+6. Produktseiten erhalten `Product`-JSON-LD mit eingebettetem redaktionellem `Review`.
+7. Produktseiten verwenden zusätzlich `WebPage` statt eines parallelen generischen `Article`.
 
 ## Installation
 
-ZIP entpacken und im Stamm des Repositories ausführen:
+ZIP im Root von `Yushamon/affiliate-template` entpacken und ausführen:
 
 ```bash
-node /PFAD/ZUM/ENTPACKTEN-PAKET/install.mjs
+node install-seo-fixes.mjs
+npm run build:pfotentechnik
 ```
 
-Danach den vorhandenen Build-Befehl für PfotenTechnik ausführen.
-
-Der Installer erzeugt vor dem Überschreiben Sicherungskopien mit der Endung:
+Vor jeder Änderung legt der Installer Backups unter folgendem Pfad an:
 
 ```text
-.before-label-fix-v4
+.seo-fix-backup-2026-07-17/
 ```
 
-## Enthaltene vollständige Ersatzdateien
+Der Installer prüft jeden erwarteten Codeabschnitt. Weicht eine Datei inzwischen ab, bricht er ab, statt unkontrolliert Code zu verändern.
 
-```text
-apps/pfotentechnik/src/domain/productAlternatives/index.ts
-apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
-```
+## Betroffene Dateien
 
-`AlternativeRecommendationCard.astro` wird bewusst nicht mehr durch fragiles
-String-Matching verändert. Die sichtbaren Texte werden bereits in den beiden
-Datenquellen korrekt formatiert.
+- `packages/affiliate-core/src/layouts/AffiliateLayout.astro`
+- `apps/pfotentechnik/src/pages/[slug].astro`
+- `apps/pfotentechnik/src/pages/vergleiche/[comparison].astro`
+- `apps/pfotentechnik/src/pages/produkt/[product].astro`
+
+## Noch manuell zu prüfen
+
+- Das Publisher-Logo sollte ein eigenständiges, crawlbares Markenlogo sein und nicht nur das Favicon.
+- Die Standard-OG-Grafik sollte mindestens 1200 × 630 px groß sein.
+- Nach dem Build sollten einzelne Produktseiten mit dem Rich Results Test und dem Schema Markup Validator geprüft werden.
+- Der Sitemap-Output sollte kontrolliert werden, insbesondere die Produktpfade unter `/produkt/`.

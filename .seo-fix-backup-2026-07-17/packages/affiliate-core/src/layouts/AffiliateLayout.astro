@@ -85,7 +85,7 @@ const imageUrl = ogImage
   : toAbsoluteUrl(site.domain, projectConfig.defaultOgImage ?? "/favicon.svg");
 
 const isHome = normalizedCanonical === "/";
-const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");
+const resolvedSchemaType = schemaType ?? (isHome ? "website" : "article");
 const shouldRenderArticleSchema = resolvedSchemaType === "article";
 const shouldRenderWebPageSchema = resolvedSchemaType === "webpage";
 const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema ?? !isHome;
@@ -152,10 +152,11 @@ const articleSchema = {
       url: siteMeta.publisher.logo
     }
   },
-  ...(publishedAt ? { datePublished: publishedAt } : {}),
-  ...(updatedAt || publishedAt
-    ? { dateModified: updatedAt ?? publishedAt }
-    : {})
+  datePublished: publishedAt ?? siteMeta.articleDefaults.publishedAt,
+  dateModified:
+    updatedAt ??
+    publishedAt ??
+    siteMeta.articleDefaults.updatedAt
 };
 
 const breadcrumbSchema = createBreadcrumbSchema(
