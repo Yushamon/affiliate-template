@@ -6,11 +6,16 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
+import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
 import {
   getComparisonBreadcrumbs,
   getRelatedContent
 } from "@app/domain/content";
+import {
+  getInternalLinkDefinitions,
+  getSourceContexts
+} from "../../domain/content/internalLinks";
 
 type Props = {
   comparisonId: string;
@@ -41,10 +46,20 @@ if (!entry) {
 const comparison = entry.data;
 const { Content } = await render(entry);
 
-const [products, manufacturers] = await Promise.all([
+const [products, manufacturers, pages, comparisons] = await Promise.all([
   getCollection("products"),
-  getCollection("manufacturers")
+  getCollection("manufacturers"),
+  getCollection("pages"),
+  getCollection("comparisons")
 ]);
+
+const internalLinkDefinitions = getInternalLinkDefinitions({
+  pages,
+  products,
+  comparisons,
+  manufacturers
+});
+const sourceContexts = getSourceContexts(comparison);
 
 const model = buildComparisonViewModel({
   comparison: entry,
@@ -113,7 +128,15 @@ const relatedItems = relatedEntries.map((related) => ({
     <ComparisonShell model={model} />
 
     <article class="comparison-content">
-      <Content />
+      <AutoLinkContent
+        definitions={internalLinkDefinitions}
+        sourcePath={`/vergleiche/${comparison.slug}/`}
+        sourceGroup="comparison"
+        sourceContexts={sourceContexts}
+        maxLinksPerPage={6}
+      >
+        <Content />
+      </AutoLinkContent>
     </article>
 
     <RelatedArticles items={relatedItems} />

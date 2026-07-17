@@ -19,7 +19,10 @@ import {
   getDecisionRule,
 } from "../domain/productDecision";
 import { getPageBreadcrumbs, getRelatedContent } from "@app/domain/content";
-import { getPageInternalLinkDefinitions } from "../domain/content/internalLinks";
+import {
+  getInternalLinkDefinitions,
+  getSourceContexts
+} from "../domain/content/internalLinks";
 import defaultHero from "../assets/images/project/pfotentechnik/hero.webp";
 import categoryImage from "../assets/images/project/pfotentechnik/category.webp";
 import comparisonImage from "../assets/images/project/pfotentechnik/comparison.webp";
@@ -42,17 +45,20 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content, headings } = await render(page);
-const pages = await getCollection("pages");
-const internalLinkDefinitions = getPageInternalLinkDefinitions(pages);
-const sourceContexts = Array.from(
-  new Set(
-    [page.data.linkContext, page.data.category].filter(
-      (context): context is string => Boolean(context),
-    ),
-  ),
-);
+const [pages, comparisons, manufacturers] = await Promise.all([
+  getCollection("pages"),
+  getCollection("comparisons"),
+  getCollection("manufacturers")
+]);
 const breadcrumbs = getPageBreadcrumbs(page);
 const products = await getCollection("products");
+const internalLinkDefinitions = getInternalLinkDefinitions({
+  pages,
+  products,
+  comparisons,
+  manufacturers
+});
+const sourceContexts = getSourceContexts(page.data);
 const productBySlug = new Map(
   products.map((product) => [product.data.slug, product]),
 );
@@ -281,11 +287,19 @@ const relatedItems = relatedEntries.map((entry) => ({
         </section>
       )
     }
-    <PremiumRenderer
-      blocks={page.data.premiumBlocks as any}
-      project={projectKey}
-      products={premiumProducts}
-    />
+    <AutoLinkContent
+      definitions={internalLinkDefinitions}
+      sourcePath={`/${page.data.slug}/`}
+      sourceGroup="knowledge"
+      sourceContexts={sourceContexts}
+      maxLinksPerPage={3}
+    >
+      <PremiumRenderer
+        blocks={page.data.premiumBlocks as any}
+        project={projectKey}
+        products={premiumProducts}
+      />
+    </AutoLinkContent>
     {
       comparisonProducts.length > 1 && (
         <div class="decision-comparison-intro">
@@ -428,6 +442,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       sourcePath={`/${page.data.slug}/`}
       sourceGroup="knowledge"
       sourceContexts={sourceContexts}
+      maxLinksPerPage={7}
     >
       <Content />
     </AutoLinkContent>

@@ -10,6 +10,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig } from "../../project.config";
@@ -21,6 +22,10 @@ import {
   getProductBreadcrumbs,
   getRelatedContent
 } from "@app/domain/content";
+import {
+  getInternalLinkDefinitions,
+  getSourceContexts
+} from "../../domain/content/internalLinks";
 
 type PageProps = {
   contentProductId: string;
@@ -65,8 +70,21 @@ const contentProduct =
 const breadcrumbs =
   getProductBreadcrumbs(contentEntry);
 
-const allProducts =
-  await getCollection("products");
+const [allProducts, pages, comparisons, manufacturers] =
+  await Promise.all([
+    getCollection("products"),
+    getCollection("pages"),
+    getCollection("comparisons"),
+    getCollection("manufacturers")
+  ]);
+
+const internalLinkDefinitions = getInternalLinkDefinitions({
+  pages,
+  products: allProducts,
+  comparisons,
+  manufacturers
+});
+const sourceContexts = getSourceContexts(contentProduct);
 
 const alternativeRecommendations =
   getAlternativeRecommendations(
@@ -319,14 +337,22 @@ const everydayCriteria = [
   <Breadcrumbs items={breadcrumbs} />
 
   <main class="product-detail pt-product-detail">
-    <ProductReview
-      product={
-        reviewProduct
-      }
-      alternativeRecommendations={
-        alternativeRecommendations
-      }
-    />
+    <AutoLinkContent
+      definitions={internalLinkDefinitions}
+      sourcePath={canonical}
+      sourceGroup="product"
+      sourceContexts={sourceContexts}
+      maxLinksPerPage={5}
+    >
+      <ProductReview
+        product={
+          reviewProduct
+        }
+        alternativeRecommendations={
+          alternativeRecommendations
+        }
+      />
+    </AutoLinkContent>
 
     <section
       class="pt-review-method"
