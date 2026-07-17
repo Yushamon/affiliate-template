@@ -189,7 +189,7 @@ faq:
     answer: "Nein. Besonders in Mehrtierhaushalten sind mehrere räumlich getrennte Wasserstellen sinnvoll. Ein Defekt, Stromausfall oder verschmutzter Brunnen darf nicht die einzige Trinkmöglichkeit unbrauchbar machen."
 ---
 
-## Auswahlhilfe: Tier, Reinigung und Standort zuerst {#auswahlhilfe}
+## Auswahlhilfe: Tier, Reinigung und Standort zuerst
 
 Der beste Trinkbrunnen ist nicht der mit den meisten Funktionen. Er ist der, den dein Tier gern nutzt und den du ohne Umwege vollständig reinigen kannst.
 
@@ -199,7 +199,7 @@ Bevor du Modelle vergleichst, kläre drei Punkte:
 2. **Ist der gesamte Wasserweg erreichbar?** Pumpe, Rotorraum, Auslauf, Schläuche, Trinkschale, Behälter und Dichtungen müssen realistisch zu reinigen sein.
 3. **Passt die Betriebsart zum Standort?** Netzbetrieb, Akku, Sensor oder Dauerfluss haben unterschiedliche Anforderungen an Steckdose, Ladezyklus und Tierakzeptanz.
 
-## Bauarten: Welcher Trinkbrunnen-Typ passt zu deinem Alltag? {#bauarten}
+## Bauarten: Welcher Trinkbrunnen-Typ passt zu deinem Alltag?
 
 | Bauart | Stärke | Darauf achten | Geeignet für |
 |---|---|---|---|
@@ -211,7 +211,7 @@ Bevor du Modelle vergleichst, kläre drei Punkte:
 
 Eine technisch aufwendigere Betriebsart ist nicht automatisch besser. Beobachte, ob dein Tier den Wasserfluss akzeptiert und zuverlässig an die Wasserstelle geht.
 
-## Trinkbrunnen für Katzen {#fuer-katzen}
+## Trinkbrunnen für Katzen
 
 Viele Katzen profitieren von mehreren räumlich getrennten Wasserstellen. Der Brunnen sollte nicht automatisch direkt neben dem Futter stehen.
 
@@ -224,7 +224,7 @@ Passende Inhalte:
 - [Katze trinkt zu wenig](/katze-trinkt-zu-wenig/)
 - [Katze trinkt viel](/katze-trinkt-viel/)
 
-## Trinkbrunnen für Hunde {#fuer-hunde}
+## Trinkbrunnen für Hunde
 
 Für Hunde muss der Brunnen zur Kopf- und Körpergröße passen. Ein großer Tank allein reicht nicht, wenn Trinkzone und Höhe unpraktisch sind.
 
@@ -261,7 +261,7 @@ Die Pumpe ist nur eine Geräuschquelle. Zusätzlich beeinflussen Wasserstand, Un
 
 Vergleiche nicht nur den Kaufpreis. Rechne Filter, Ersatzpumpe und gegebenenfalls proprietäre UV-Komponenten mit ein.
 
-## Reinigung: Der wichtigste Test beginnt beim Zerlegen {#reinigung}
+## Reinigung: Der wichtigste Test beginnt beim Zerlegen
 
 Ein Trinkbrunnen kann außen sauber wirken, während sich in Pumpe, Rotorraum, Auslauf oder Dichtungen Ablagerungen bilden.
 
