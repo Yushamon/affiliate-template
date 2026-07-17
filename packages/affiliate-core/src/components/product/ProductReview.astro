@@ -136,6 +136,19 @@ const specValue = (label: string) =>
       item.label.toLowerCase() === label.toLowerCase()
   )?.value;
 
+const appControl =
+  specValue("App-Steuerung") ??
+  specValue("App");
+
+const wifi =
+  specValue("WLAN");
+
+const hasAppControl =
+  typeof appControl === "string" &&
+  ["ja", "app", "mit app", "wlan & app"].includes(
+    appControl.trim().toLowerCase()
+  );
+
 const quickFacts = [
   {
     label: "Kapazität",
@@ -143,10 +156,13 @@ const quickFacts = [
   },
   {
     label: "Steuerung",
-    value:
-      specValue("App-Steuerung") === "Ja"
+    value: hasAppControl
+      ? wifi
         ? "WLAN & App"
-        : specValue("App-Steuerung") ?? "Ohne App"
+        : "Mit App"
+      : appControl
+        ? String(appControl)
+        : "Ohne App"
   },
   {
     label: "Portionen",
