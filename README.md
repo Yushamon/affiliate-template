@@ -1,46 +1,76 @@
-# Astro Starter Kit: Basics
+# PfotenTechnik Label- und Grammatik-Fix V4
 
-```sh
-npm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dieses Paket basiert auf den vollständigen Dateien aus dem aktuellen
+`main`-Branch von:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+Yushamon/affiliate-template
 ```
- as
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+## Behobene Ursache
 
-All commands are run from the root of the project, from a terminal:
+In den Trinkbrunnen-Alternativen wurde bisher pauschal Folgendes erzeugt:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-sdsd
-## 👀 Want to learn more?
+```ts
+`Wenn ${bestFor.toLowerCase()} wichtig ist`
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Dadurch entstanden Texte wie:
+
+```text
+Wenn große hunde wichtig ist
+```
+
+Die neue Lösung verwendet semantische Formulierungen:
+
+```text
+Für große Hunde
+Bei hohem Wasserbedarf
+Für Mehrkatzenhaushalte
+Mit App
+Mit Kamera
+Für Nassfutter
+```
+
+## Ebenfalls angepasst
+
+Die Empfehlungstitel für Futterautomaten wurden vereinheitlicht:
+
+```text
+Für die Fütterung mit Nassfutter
+Für die getrennte Fütterung mehrerer Tiere
+Für die Kontrolle per Kamera
+Für flexible Steuerung per App
+Für Mehrtierhaushalte
+Für wenig Stellfläche
+Als Preis-Leistungs-Alternative
+```
+
+Sichtbare Tags beginnen außerdem mit einem Großbuchstaben.
+
+## Installation
+
+ZIP entpacken und im Stamm des Repositories ausführen:
+
+```bash
+node /PFAD/ZUM/ENTPACKTEN-PAKET/install.mjs
+```
+
+Danach den vorhandenen Build-Befehl für PfotenTechnik ausführen.
+
+Der Installer erzeugt vor dem Überschreiben Sicherungskopien mit der Endung:
+
+```text
+.before-label-fix-v4
+```
+
+## Enthaltene vollständige Ersatzdateien
+
+```text
+apps/pfotentechnik/src/domain/productAlternatives/index.ts
+apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+```
+
+`AlternativeRecommendationCard.astro` wird bewusst nicht mehr durch fragiles
+String-Matching verändert. Die sichtbaren Texte werden bereits in den beiden
+Datenquellen korrekt formatiert.

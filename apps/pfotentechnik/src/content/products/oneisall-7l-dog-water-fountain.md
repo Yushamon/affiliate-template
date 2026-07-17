@@ -25,7 +25,7 @@ affiliate: { provider: amazon, label: "Aktuellen Preis prüfen", url: "https://w
 rating: 4.4
 score: 88
 ratings: { verarbeitung: 4.5, bedienung: 4.4, reinigung: 4.2, lautstaerke: 4.2, kapazitaet: 4.8, preisleistung: 4.5 }
-decision: { bestFor: [große Hunde, Mehrhundehaushalte, hoher Wasserbedarf], attention: [gefüllt schwer, hoher Platzbedarf, kabelgebunden] }
+decision: { bestFor: [Große Hunde, Mehrhundehaushalte, Hoher Wasserbedarf], attention: [gefüllt schwer, hoher Platzbedarf, kabelgebunden] }
 review: { summary: "Der oneisall 7L bietet eine hundegerechte Trinkfläche und deutlich mehr Reserve als typische Katzenbrunnen.", verdict: "Eine funktionale Großtank-Option, wenn Smart-Funktionen keine Rolle spielen." }
 strengths: [7 Liter, breite Trinkfläche, Edelstahl, für große Hunde geeignet, gutes Preis-Leistungs-Verhältnis]
 weaknesses: [sperrig, voll schwer zu tragen, keine App, Pumpe und Ecken sorgfältig reinigen]
