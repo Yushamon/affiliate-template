@@ -1,0 +1,355 @@
+diff --git a/packages/affiliate-core/src/linking/types.ts b/packages/affiliate-core/src/linking/types.ts
+index 711f8c6..9c1b7d2 100644
+--- a/packages/affiliate-core/src/linking/types.ts
++++ b/packages/affiliate-core/src/linking/types.ts
+@@ -1,6 +1,12 @@
+ export type LinkPriority =
+   | "low"
+   | "normal"
+   | "high";
++
++export type InternalLinkGroup =
++  | "knowledge"
++  | "comparison"
++  | "product"
++  | "manufacturer";
+
+ export interface InternalLinkDefinition {
+@@ -57,7 +63,7 @@ export interface InternalLinkDefinition {
+      *
+      * knowledge
+      */
+-  group?: string;
++  group?: InternalLinkGroup;
+  /**
+
+     * Themenbereiche, in denen dieser Link verwendet werden darf.
+diff --git a/packages/affiliate-core/src/linking/linkEngine.ts b/packages/affiliate-core/src/linking/linkEngine.ts
+index 0da5b2e..8c4d89f 100644
+--- a/packages/affiliate-core/src/linking/linkEngine.ts
++++ b/packages/affiliate-core/src/linking/linkEngine.ts
+@@ -1,9 +1,11 @@
+ import type {
+   InternalLinkDefinition,
++  InternalLinkGroup,
+   LinkPriority
+ } from "./types";
+
+ export interface LinkMatch {
+   definition: InternalLinkDefinition;
+   keyword: string;
+   index: number;
+   length: number;
++  score: number;
+ }
+
+ export interface LinkEngineOptions {
+@@ -18,7 +20,7 @@ export interface LinkEngineOptions {
+
+   ignoredTags?: string[];
+
+-  sourceGroup?: string;
++  sourceGroup?: InternalLinkGroup;
+
+   sourcePath?: string;
+
+@@ -34,12 +36,64 @@ const priorityWeight: Record<LinkPriority, number> = {
+   high: 3
+ };
+
++const funnelWeight: Record<
++  InternalLinkGroup,
++  Partial<Record<InternalLinkGroup, number>>
++> = {
++  knowledge: {
++    comparison: 40,
++    knowledge: 30,
++    product: 20,
++    manufacturer: 10
++  },
++  comparison: {
++    product: 40,
++    manufacturer: 25,
++    knowledge: 15,
++    comparison: 0
++  },
++  product: {
++    manufacturer: 35,
++    comparison: 30,
++    knowledge: 20,
++    product: 0
++  },
++  manufacturer: {
++    product: 35,
++    comparison: 25,
++    knowledge: 20,
++    manufacturer: 0
++  }
++};
++
+ const escapeRegExp = (value: string) =>
+   value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+ const getPriorityWeight = (
+   definition: InternalLinkDefinition
+-) => priorityWeight[definition.priority ?? "normal"];
++) => priorityWeight[definition.priority ?? "normal"] * 100;
++
++const getFunnelWeight = (
++  sourceGroup?: InternalLinkGroup,
++  targetGroup?: InternalLinkGroup
++) => {
++  if (!sourceGroup || !targetGroup) {
++    return 0;
++  }
++
++  return funnelWeight[sourceGroup]?.[targetGroup] ?? 0;
++};
++
++const getDefinitionScore = (
++  definition: InternalLinkDefinition,
++  options: LinkEngineOptions,
++  keywordLength: number,
++  index: number
++) =>
++  getPriorityWeight(definition) +
++  getFunnelWeight(options.sourceGroup, definition.group) +
++  Math.min(keywordLength, 40) -
++  Math.min(Math.floor(index / 500), 20);
++
+ const normalizeContext = (value?: string) =>
+-
+-  value?.trim().toLowerCase();
++  value
++    ?.trim()
++    .toLowerCase()
++    .replace(/ä/g, "ae")
++    .replace(/ö/g, "oe")
++    .replace(/ü/g, "ue")
++    .replace(/ß/g, "ss")
++    .replace(/[^a-z0-9]+/g, " ")
++    .replace(/\s+/g, " ")
++    .trim();
++
++const tokenizeContext = (value?: string) =>
++  new Set(
++    (normalizeContext(value) ?? "")
++      .split(" ")
++      .filter((token) => token.length >= 3)
++      .map((token) =>
++        token
++          .replace(/(en|er|e|n|s)$/i, "")
++          .trim()
++      )
++      .filter((token) => token.length >= 3)
++  );
++
++const contextsOverlap = (
++  left?: string,
++  right?: string
++) => {
++  const normalizedLeft = normalizeContext(left);
++  const normalizedRight = normalizeContext(right);
++
++  if (!normalizedLeft || !normalizedRight) {
++    return false;
++  }
++
++  if (
++    normalizedLeft === normalizedRight ||
++    normalizedLeft.includes(normalizedRight) ||
++    normalizedRight.includes(normalizedLeft)
++  ) {
++    return true;
++  }
++
++  const leftTokens = tokenizeContext(normalizedLeft);
++  const rightTokens = tokenizeContext(normalizedRight);
++
++  return [...leftTokens].some((token) =>
++    rightTokens.has(token)
++  );
++};
++
+ const matchesSourceContext = (
+   definition: InternalLinkDefinition,
+   sourceContext?: string,
+@@ -55,19 +109,12 @@ const matchesSourceContext = (
+   const normalizedSourceContexts = [sourceContext, ...sourceContexts]
+     .map(normalizeContext)
+     .filter((context): context is string => Boolean(context));
+-
+   if (normalizedSourceContexts.length === 0) {
+     return false;
+   }
+
+-  return definition.contexts.some(
+-    (context) => {
+-      const normalizedContext = normalizeContext(context);
+-
+-      return normalizedContext
+-        ? normalizedSourceContexts.includes(normalizedContext)
+-        : false;
+-    }
+-  );
++  return definition.contexts.some((context) =>
++    normalizedSourceContexts.some((source) =>
++      contextsOverlap(context, source)
++    )
++  );
+ };
+
+ const normalizePath = (path?: string) => {
+@@ -126,20 +173,20 @@ export const findInternalLinkMatches = (
+           definition,
+           keyword: match[0],
+           index: match.index,
+-          length: match[0].length
++          length: match[0].length,
++          score: getDefinitionScore(
++            definition,
++            options,
++            match[0].length,
++            match.index
++          )
+         });
+       }
+     }
+   }
+
+   return matches.sort((a, b) => {
+-    const priorityDifference =
+-      getPriorityWeight(b.definition) -
+-      getPriorityWeight(a.definition);
+-
+-    if (priorityDifference !== 0) {
+-      return priorityDifference;
++    const scoreDifference = b.score - a.score;
++    if (scoreDifference !== 0) {
++      return scoreDifference;
+     }
+
+     const lengthDifference = b.length - a.length;
+@@ -180,7 +227,8 @@ export const selectInternalLinkMatches = (
+   const maxLinksPerPage = options.maxLinksPerPage ?? 12;
+   const accepted: LinkMatch[] = [];
+   const occurrences = new Map<string, number>();
+-const linkedTargets = new Set<string>();
++  const linkedTargets = new Set<string>();
++
+   for (const match of matches) {
+     if (accepted.length >= maxLinksPerPage) {
+       break;
+@@ -189,12 +237,9 @@ const linkedTargets = new Set<string>();
+       continue;
+     }
+
+- if (linkedTargets.has(match.definition.href)) {
+-
++    if (linkedTargets.has(match.definition.href)) {
+       continue;
+-
+     }
++
+     const currentOccurrences =
+       occurrences.get(match.definition.id) ?? 0;
+
+diff --git a/apps/pfotentechnik/src/domain/content/internalLinks.ts b/apps/pfotentechnik/src/domain/content/internalLinks.ts
+index bc646b9..6d5e94a 100644
+--- a/apps/pfotentechnik/src/domain/content/internalLinks.ts
++++ b/apps/pfotentechnik/src/domain/content/internalLinks.ts
+@@ -56,13 +56,26 @@ const buildTitleKeywords = (
+   title: string,
+   extra: string[] = []
+ ) =>
+-  uniqueStrings([
+-    title,
+-    titleWithoutYear(title),
+-    titleWithoutSuffix(title),
+-    titleWithoutSuffix(titleWithoutYear(title)),
+-    ...extra
+-  ]).filter((keyword) => keyword.length >= 4);
++  uniqueStrings(
++    [
++      title,
++      titleWithoutYear(title),
++      titleWithoutSuffix(title),
++      titleWithoutSuffix(titleWithoutYear(title)),
++      ...extra
++    ].flatMap((keyword) => {
++      const normalized = keyword
++        .replace(/[|:–—]/g, " ")
++        .replace(/\s+/g, " ")
++        .trim();
++
++      return [
++        keyword,
++        normalized,
++        normalized.replace(/\b(?:Test|Vergleich|Ratgeber)\b/gi, "").trim()
++      ];
++    })
++  ).filter((keyword) => keyword.length >= 4);
+
+ const toPriority = (
+   value?: LinkPriority
+@@ -81,7 +94,12 @@ const pageDefinition = (
+
+   return {
+     id: `page:${page.data.slug}`,
+-    keywords: uniqueStrings(linking.keywords),
++    keywords: uniqueStrings([
++      ...linking.keywords,
++      ...(linking.priority === "high"
++        ? buildTitleKeywords(page.data.title)
++        : [])
++    ]),
+     href: normalizePath(page.data.slug),
+     title: page.data.title,
+     group: "knowledge",
+@@ -137,7 +155,7 @@ const comparisonDefinition = (
+   title: comparison.data.title,
+   group: "comparison",
+   priority: "high",
+-  maxOccurrences: 1,
++  maxOccurrences: 2,
+   contexts: uniqueStrings([
+     ...(comparison.data.tags ?? []),
+     ...(comparison.data.hub?.sections ?? []),
+@@ -158,7 +176,7 @@ const manufacturerDefinition = (
+   ),
+   title: manufacturer.data.name,
+   group: "manufacturer",
+-  priority: "normal",
++  priority: "low",
+   maxOccurrences: 1,
+   contexts: uniqueStrings([
+     ...(manufacturer.data.tags ?? []),
+@@ -191,11 +209,13 @@ const dedupeDefinitions = (
+  * Baut eine projektweite, konservative Linkliste:
+  *
+  * - Seiten: nur explizit gepflegte linking.keywords
+- * - Vergleiche: exakter Titel und bereinigte Titelvarianten
++ * - hoch priorisierte Seiten: zusätzlich bereinigte Titelvarianten
++ * - Vergleiche: Titel, SEO-Titel und bereinigte Varianten
+  * - Produkte: exakter Produktname
+  * - Hersteller: exakter Herstellername
+  *
+- * Generische Tags werden bewusst nicht als Anchor-Texte verwendet.
++ * Tags dienen nur als Kontextsignal und werden nicht als Anchor-Texte
++ * verwendet.
+  */
+ export const getInternalLinkDefinitions = ({
+   pages,
+diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+index 6f6b7c0..91e2b40 100644
+--- a/apps/pfotentechnik/src/pages/[slug].astro
++++ b/apps/pfotentechnik/src/pages/[slug].astro
+@@ -283,7 +283,7 @@ const relatedItems = relatedEntries.map((entry) => ({
+       sourcePath={`/${page.data.slug}/`}
+       sourceGroup="knowledge"
+       sourceContexts={sourceContexts}
+-      maxLinksPerPage={3}
++      maxLinksPerPage={5}
+     >
+       <PremiumRenderer
+         blocks={page.data.premiumBlocks as any}

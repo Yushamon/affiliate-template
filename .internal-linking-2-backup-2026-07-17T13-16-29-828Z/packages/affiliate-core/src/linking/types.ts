@@ -3,12 +3,6 @@ export type LinkPriority =
   | "normal"
   | "high";
 
-export type InternalLinkGroup =
-  | "knowledge"
-  | "comparison"
-  | "product"
-  | "manufacturer";
-
 export interface InternalLinkDefinition {
 
   /**
@@ -61,7 +55,7 @@ export interface InternalLinkDefinition {
    *
    * knowledge
    */
-  group?: InternalLinkGroup;
+  group?: string;
 /**
 
    * Themenbereiche, in denen dieser Link verwendet werden darf.

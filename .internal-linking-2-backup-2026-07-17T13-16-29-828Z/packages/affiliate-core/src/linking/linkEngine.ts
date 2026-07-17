@@ -1,6 +1,5 @@
 import type {
   InternalLinkDefinition,
-  InternalLinkGroup,
   LinkPriority
 } from "./types";
 
@@ -9,7 +8,6 @@ export interface LinkMatch {
   keyword: string;
   index: number;
   length: number;
-  score: number;
 }
 
 export interface LinkEngineOptions {
@@ -18,7 +16,7 @@ export interface LinkEngineOptions {
 
   ignoredTags?: string[];
 
-  sourceGroup?: InternalLinkGroup;
+  sourceGroup?: string;
 
   sourcePath?: string;
 
@@ -34,113 +32,15 @@ const priorityWeight: Record<LinkPriority, number> = {
   high: 3
 };
 
-const funnelWeight: Record<
-  InternalLinkGroup,
-  Partial<Record<InternalLinkGroup, number>>
-> = {
-  knowledge: {
-    comparison: 40,
-    knowledge: 30,
-    product: 20,
-    manufacturer: 10
-  },
-  comparison: {
-    product: 40,
-    manufacturer: 25,
-    knowledge: 15,
-    comparison: 0
-  },
-  product: {
-    manufacturer: 35,
-    comparison: 30,
-    knowledge: 20,
-    product: 0
-  },
-  manufacturer: {
-    product: 35,
-    comparison: 25,
-    knowledge: 20,
-    manufacturer: 0
-  }
-};
-
 const escapeRegExp = (value: string) =>
   value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const getPriorityWeight = (
   definition: InternalLinkDefinition
-) => priorityWeight[definition.priority ?? "normal"] * 100;
-
-const getFunnelWeight = (
-  sourceGroup?: InternalLinkGroup,
-  targetGroup?: InternalLinkGroup
-) => {
-  if (!sourceGroup || !targetGroup) {
-    return 0;
-  }
-
-  return funnelWeight[sourceGroup]?.[targetGroup] ?? 0;
-};
-
-const getDefinitionScore = (
-  definition: InternalLinkDefinition,
-  options: LinkEngineOptions,
-  keywordLength: number,
-  index: number
-) =>
-  getPriorityWeight(definition) +
-  getFunnelWeight(options.sourceGroup, definition.group) +
-  Math.min(keywordLength, 40) -
-  Math.min(Math.floor(index / 500), 20);
+) => priorityWeight[definition.priority ?? "normal"];
 const normalizeContext = (value?: string) =>
-  value
-    ?.trim()
-    .toLowerCase()
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
 
-const tokenizeContext = (value?: string) =>
-  new Set(
-    (normalizeContext(value) ?? "")
-      .split(" ")
-      .filter((token) => token.length >= 3)
-      .map((token) =>
-        token.replace(/(en|er|e|n|s)$/i, "").trim()
-      )
-      .filter((token) => token.length >= 3)
-  );
-
-const contextsOverlap = (
-  left?: string,
-  right?: string
-) => {
-  const normalizedLeft = normalizeContext(left);
-  const normalizedRight = normalizeContext(right);
-
-  if (!normalizedLeft || !normalizedRight) {
-    return false;
-  }
-
-  if (
-    normalizedLeft === normalizedRight ||
-    normalizedLeft.includes(normalizedRight) ||
-    normalizedRight.includes(normalizedLeft)
-  ) {
-    return true;
-  }
-
-  const leftTokens = tokenizeContext(normalizedLeft);
-  const rightTokens = tokenizeContext(normalizedRight);
-
-  return [...leftTokens].some((token) =>
-    rightTokens.has(token)
-  );
-};
+  value?.trim().toLowerCase();
 const matchesSourceContext = (
   definition: InternalLinkDefinition,
   sourceContext?: string,
@@ -158,10 +58,14 @@ const matchesSourceContext = (
     return false;
   }
 
-  return definition.contexts.some((context) =>
-    normalizedSourceContexts.some((source) =>
-      contextsOverlap(context, source)
-    )
+  return definition.contexts.some(
+    (context) => {
+      const normalizedContext = normalizeContext(context);
+
+      return normalizedContext
+        ? normalizedSourceContexts.includes(normalizedContext)
+        : false;
+    }
   );
 };
 
@@ -224,23 +128,19 @@ export const findInternalLinkMatches = (
           definition,
           keyword: match[0],
           index: match.index,
-          length: match[0].length,
-          score: getDefinitionScore(
-            definition,
-            options,
-            match[0].length,
-            match.index
-          )
+          length: match[0].length
         });
       }
     }
   }
 
   return matches.sort((a, b) => {
-    const scoreDifference = b.score - a.score;
+    const priorityDifference =
+      getPriorityWeight(b.definition) -
+      getPriorityWeight(a.definition);
 
-    if (scoreDifference !== 0) {
-      return scoreDifference;
+    if (priorityDifference !== 0) {
+      return priorityDifference;
     }
 
     const lengthDifference = b.length - a.length;
@@ -278,7 +178,7 @@ export const selectInternalLinkMatches = (
   const maxLinksPerPage = options.maxLinksPerPage ?? 12;
   const accepted: LinkMatch[] = [];
   const occurrences = new Map<string, number>();
-  const linkedTargets = new Set<string>();
+const linkedTargets = new Set<string>();
   for (const match of matches) {
     if (accepted.length >= maxLinksPerPage) {
       break;
@@ -287,9 +187,10 @@ export const selectInternalLinkMatches = (
     if (overlaps(match, accepted)) {
       continue;
     }
+ if (linkedTargets.has(match.definition.href)) {
 
-    if (linkedTargets.has(match.definition.href)) {
       continue;
+
     }
     const currentOccurrences =
       occurrences.get(match.definition.id) ?? 0;

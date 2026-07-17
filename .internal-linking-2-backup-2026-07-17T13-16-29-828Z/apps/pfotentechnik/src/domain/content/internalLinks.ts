@@ -55,28 +55,13 @@ const buildTitleKeywords = (
   title: string,
   extra: string[] = []
 ) =>
-  uniqueStrings(
-    [
-      title,
-      titleWithoutYear(title),
-      titleWithoutSuffix(title),
-      titleWithoutSuffix(titleWithoutYear(title)),
-      ...extra
-    ].flatMap((keyword) => {
-      const normalized = keyword
-        .replace(/[|:–—]/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
-
-      return [
-        keyword,
-        normalized,
-        normalized
-          .replace(/\b(?:Test|Vergleich|Ratgeber)\b/gi, "")
-          .trim()
-      ];
-    })
-  ).filter((keyword) => keyword.length >= 4);
+  uniqueStrings([
+    title,
+    titleWithoutYear(title),
+    titleWithoutSuffix(title),
+    titleWithoutSuffix(titleWithoutYear(title)),
+    ...extra
+  ]).filter((keyword) => keyword.length >= 4);
 
 const toPriority = (
   value?: LinkPriority
@@ -93,12 +78,7 @@ const pageDefinition = (
 
   return {
     id: `page:${page.data.slug}`,
-    keywords: uniqueStrings([
-      ...linking.keywords,
-      ...(linking.priority === "high"
-        ? buildTitleKeywords(page.data.title)
-        : [])
-    ]),
+    keywords: uniqueStrings(linking.keywords),
     href: normalizePath(page.data.slug),
     title: page.data.title,
     group: "knowledge",
@@ -176,7 +156,7 @@ const manufacturerDefinition = (
   ),
   title: manufacturer.data.name,
   group: "manufacturer",
-  priority: "low",
+  priority: "normal",
   maxOccurrences: 1,
   contexts: uniqueStrings([
     ...(manufacturer.data.tags ?? []),
