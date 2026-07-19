@@ -78,6 +78,35 @@ const productAffiliateSchema =
       .default("_blank")
   });
 
+const productConversionSchema =
+  z.object({
+    badge: z
+      .enum([
+        "testsieger",
+        "top-empfehlung",
+        "preis-leistungs-tipp",
+        "premium-tipp",
+        "spezialempfehlung",
+        "none"
+      ])
+      .default("none"),
+
+    primaryCtaLabel: z
+      .string()
+      .optional(),
+
+    secondaryCtaLabel: z
+      .string()
+      .default(
+        "Preis und Verfügbarkeit prüfen"
+      ),
+
+    showSecondaryCta: z
+      .boolean()
+      .default(true)
+  })
+  .optional();
+
 const productDecisionSchema =
   z.object({
     bestFor: z
@@ -207,6 +236,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
     affiliate:
       productAffiliateSchema
         .optional(),
+
+    conversion:
+      productConversionSchema,
 
     rating: z
       .number()

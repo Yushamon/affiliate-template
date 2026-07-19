@@ -49,12 +49,23 @@ type ProductReviewData = {
     rel: string;
     target: "_blank" | "_self";
   };
+  conversion?: {
+    badge?:
+      | "testsieger"
+      | "top-empfehlung"
+      | "preis-leistungs-tipp"
+      | "premium-tipp"
+      | "spezialempfehlung"
+      | "none";
+    primaryCtaLabel?: string;
+    secondaryCtaLabel?: string;
+    showSecondaryCta?: boolean;
+  };
 };
 
 interface Props {
   product: ProductReviewData;
   alternativeRecommendations?: AlternativeRecommendation[];
-  relatedContent?: unknown[];
 }
 
 const {
@@ -183,6 +194,26 @@ const scoreLabel =
           ? "Solide"
           : "Mit Einschränkungen";
 
+const badgeLabels: Record<string, string> = {
+  testsieger: "Testsieger",
+  "top-empfehlung": "Top-Empfehlung",
+  "preis-leistungs-tipp": "Preis-Leistungs-Tipp",
+  "premium-tipp": "Premium-Tipp",
+  spezialempfehlung: "Spezialempfehlung"
+};
+
+const badgeKey =
+  product.conversion?.badge ?? "none";
+
+const badgeLabel =
+  badgeKey === "none"
+    ? undefined
+    : badgeLabels[badgeKey];
+
+const primaryCtaLabel =
+  product.conversion?.primaryCtaLabel ??
+  product.affiliate?.label;
+
 const capitalizeFirst = (value: string) => {
   const trimmed = value.trim();
 
@@ -250,9 +281,11 @@ const displayHighlights = [
                 fetchpriority="high"
               />
 
-              <span class="product-hero-v4__badge">
-                Top-Empfehlung
-              </span>
+              {badgeLabel && (
+                <span class="product-hero-v4__badge">
+                  {badgeLabel}
+                </span>
+              )}
             </div>
 
             {
@@ -349,9 +382,11 @@ const displayHighlights = [
               )
             }
 
-            <span class="product-hero-v4__badge">
-              Top-Empfehlung
-            </span>
+            {badgeLabel && (
+              <span class="product-hero-v4__badge">
+                {badgeLabel}
+              </span>
+            )}
           </div>
 
           {
@@ -485,7 +520,7 @@ const displayHighlights = [
                   rel={product.affiliate.rel}
                   target={product.affiliate.target}
                 >
-                  <span>{product.affiliate.label}</span>
+                  <span>{primaryCtaLabel}</span>
                   <span aria-hidden="true">→</span>
                 </a>
 
