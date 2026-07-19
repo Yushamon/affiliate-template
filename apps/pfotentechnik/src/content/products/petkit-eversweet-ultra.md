@@ -3,6 +3,8 @@ title: "PETKIT Eversweet Ultra"
 slug: "petkit-eversweet-ultra"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Großer 5-Liter-Smart-Trinkbrunnen mit 1,8-Liter-Abwassertank, Kamera, automatischer Nachfüllung und Mehrtier-Erkennung."
 recommendation: "Spezialisierte Premiumlösung für Mehrkatzenhaushalte, die Trinkereignisse per Kamera auswerten und Frisch- sowie Abwasser getrennt führen möchten."
 manufacturer:

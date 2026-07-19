@@ -3,6 +3,8 @@ title: "WOPET Pioneer F01 Plus"
 slug: "wopet-pioneer-f01-plus"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen."
 recommendation: "Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen."
 manufacturer:

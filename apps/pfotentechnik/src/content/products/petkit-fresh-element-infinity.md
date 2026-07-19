@@ -3,6 +3,8 @@ title: "PETKIT Fresh Element Infinity"
 slug: "petkit-fresh-element-infinity"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen."
 recommendation: "Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen."
 manufacturer:

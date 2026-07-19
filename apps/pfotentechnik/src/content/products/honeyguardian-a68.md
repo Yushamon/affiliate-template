@@ -3,6 +3,8 @@ title: "HoneyGuardian A68 Smart Pet Feeder"
 slug: "honeyguardian-a68"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde."
 recommendation: "Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde."
 manufacturer:

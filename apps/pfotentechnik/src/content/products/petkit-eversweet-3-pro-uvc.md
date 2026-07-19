@@ -3,6 +3,8 @@ title: "PETKIT Eversweet 3 Pro UVC"
 slug: "petkit-eversweet-3-pro-uvc"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kompakter 1,6-Liter-Trinkbrunnen mit Edelstahlbehälter, UVC-Pumpe, vierstufiger Filterung und Bluetooth-App."
 recommendation: "Kompakte Smart-Option für eine Katze oder einen kleinen Hund, wenn wenig Stellfläche, Edelstahl und eine gut zerlegbare UVC-Pumpe wichtiger sind als ein großer Wasservorrat."
 manufacturer:

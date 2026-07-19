@@ -3,6 +3,8 @@ title: "PETKIT YumShare Dual-Hopper 2"
 slug: "petkit-yumshare-dual"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-Doppelkammer-Futterautomat mit KI-Kamera, zwei getrennten Ausgabesystemen, Gesichtserkennung und bis zu zehn Mahlzeiten täglich."
 recommendation: "Premiumlösung für Haushalte, die zwei Trockenfuttersorten getrennt lagern, mischen oder individuell dosieren und gleichzeitig Kameraauswertung nutzen möchten."
 manufacturer: { key: "petkit", name: "PETKIT", slug: "petkit" }

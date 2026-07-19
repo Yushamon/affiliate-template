@@ -3,6 +3,8 @@ title: "Catit PIXI Vision Smart Feeder"
 slug: "catit-pixi-vision-smart-feeder"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kompakter 2,9-Liter-Futterautomat für Katzen mit HD-Kamera, Zwei-Wege-Audio, App und Batterie-Backup."
 recommendation: "Spannender neuer Kamera-Automat für Katzen, wenn lokale microSD-Aufzeichnung und Dualband-WLAN wichtiger sind als ein großer Vorrat."
 manufacturer: { key: "catit", name: "Catit", slug: "catit" }

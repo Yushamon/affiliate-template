@@ -3,6 +3,8 @@ title: "PetSafe Healthy Pet Simply Feed"
 slug: "petsafe-healthy-pet-simply-feed"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Offline-Futterautomat mit 24-Cup-Vorrat, Förderband, zwölf Mahlzeiten, großen Portionen und Slow-Feed-Modus."
 recommendation: "Robuste Offline-Wahl für Katzen und kleine bis mittelgroße Hunde, wenn lokale Bedienung, großer Vorrat und breite Portionierung wichtiger sind als App oder Kamera."
 manufacturer: { key: "petsafe", name: "PetSafe", slug: "petsafe" }

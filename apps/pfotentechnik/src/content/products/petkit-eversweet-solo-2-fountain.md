@@ -3,6 +3,8 @@ title: "PETKIT Eversweet Solo 2"
 slug: "petkit-eversweet-solo-2-fountain"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Leiser 2-Liter-Trinkbrunnen mit kabelloser Pumpeneinheit und Bluetooth-App."
 recommendation: "Ausgewogene Mittelklasse für Katzenhalter, die eine leise Pumpe und einfache Statushinweise suchen."
 manufacturer: { key: petkit, name: PETKIT, slug: petkit }

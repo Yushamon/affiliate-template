@@ -3,6 +3,8 @@ title: "SureFeed Microchip Pet Feeder"
 slug: "surefeed-microchip-pet-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Batteriebetriebener Mikrochip-Napf für kontrollierten Futterzugang mit Nass- oder Trockenfutter, ganz ohne WLAN."
 recommendation: "Die klare Wahl für Mehrtierhaushalte mit Futterklau, Spezialdiäten oder unterschiedlichen Rationen, wenn Zeitpläne und App-Auswertung nicht benötigt werden."
 manufacturer:

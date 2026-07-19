@@ -3,6 +3,8 @@ title: "PETLIBRO Glacier Ultrafiltration Fountain"
 slug: "petlibro-glacier-ultrafiltration"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "2,5-Liter-Trinkbrunnen aus Edelstahl 304 mit Ultrafiltrationsmembran, Bewegungssensor und breiter, flacher Trinkfläche."
 recommendation: "Spezialisierte Premiumoption für Katzenhalter, denen eine breite Edelstahl-Trinkfläche und besonders feine Filterung wichtiger sind als App oder kabelloser Betrieb."
 manufacturer:

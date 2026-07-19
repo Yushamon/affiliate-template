@@ -3,6 +3,8 @@ title: "PETLIBRO Granary WiFi Feeder"
 slug: "petlibro-granary-wifi-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-Trockenfutterautomat mit PETLIBRO-App, 2,4- und 5-GHz-WLAN, bis zu zehn Mahlzeiten täglich und Batterie-Backup."
 recommendation: "Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle."
 manufacturer:

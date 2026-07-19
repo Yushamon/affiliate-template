@@ -3,6 +3,8 @@ title: "PETKIT YumShare Dual-Hopper 2"
 slug: "petkit-yumshare-dual-hopper"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
 recommendation: "Zwei getrennte Futterkammern, Kamera und Tiererkennung für anspruchsvolle Mehrkatzenhaushalte."
 manufacturer:

@@ -3,6 +3,8 @@ title: "PETKIT YumShare Solo 2"
 slug: "petkit-yumshare-solo"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "3-Liter-Futterautomat mit KI-Kamera, 2,4/5-GHz-WLAN, Gesichtserkennung, Zwei-Wege-Audio und bis zu zehn Mahlzeiten täglich."
 recommendation: "Kamera-Premiumlösung für Katzen und kleine Hunde, wenn individuelle Aktivitätsprotokolle, Livebild und intelligente Napfüberwachung wichtiger sind als große Kapazität."
 manufacturer: { key: "petkit", name: "PETKIT", slug: "petkit" }

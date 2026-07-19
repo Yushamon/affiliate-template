@@ -3,6 +3,8 @@ title: "PETLIBRO Dockstream 2 Smart"
 slug: "petlibro-dockstream-2-smart"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "3-Liter-Smart-Trinkbrunnen mit Wiegesensoren, App-Auswertung, vierstufiger Filterung und Varianten für Netz- oder Akkubetrieb."
 recommendation: "Starke Smart-Option für Katzen und kleine Hunde, wenn Trinkmengen in der App verfolgt werden sollen und die konkrete Netz- oder Akkuvariante vor dem Kauf geprüft wird."
 manufacturer:

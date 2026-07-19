@@ -3,6 +3,8 @@ title: "Cat Mate C300"
 slug: "cat-mate-c300"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Batteriebetriebener Drei-Fächer-Automat mit Digitaltimer, zwei programmierbaren Zeiten, Kühlakku und spülmaschinengeeignetem Einsatz."
 recommendation: "Einfache digitale Nass- und Trockenfutterlösung für bis zu zwei Katzen oder einen kleinen Hund, wenn drei Fächer und lokale Bedienung ausreichen."
 manufacturer:

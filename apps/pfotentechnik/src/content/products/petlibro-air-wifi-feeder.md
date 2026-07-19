@@ -3,6 +3,8 @@ title: "PETLIBRO Air WiFi Feeder"
 slug: "petlibro-air-wifi-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen."
 recommendation: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen."
 manufacturer:

@@ -3,6 +3,8 @@ title: "HoneyGuardian Smart Pet Feeder S305D"
 slug: "honeyguardian-smart-pet-feeder-s305d"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Vernetzter 5-Liter-Trockenfutterautomat mit App-Zeitplänen, Edelstahl-Napf und Reservebetrieb."
 recommendation: "Solide Preis-Leistungs-Alternative für Katze oder kleinen Hund, sofern die konkrete S305D-Version und App-Unterstützung beim Händler eindeutig ausgewiesen sind."
 manufacturer:

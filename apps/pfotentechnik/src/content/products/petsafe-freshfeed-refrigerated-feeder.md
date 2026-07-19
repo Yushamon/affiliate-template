@@ -3,6 +3,8 @@ title: "PetSafe FreshFeed Refrigerated Pet Feeder"
 slug: "petsafe-freshfeed-refrigerated-feeder"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Aktiv gekühlter Sechs-Mahlzeiten-Automat für Nass- und Frischfutter mit App, Edelstahl-Einsätzen und doppelter Deckelverriegelung."
 recommendation: "Eine der spannendsten Nassfutter-Neuerscheinungen 2026 für Katzen und kleine Hunde, wenn echte Kühlung wichtiger ist als Batterie- oder Offline-Betrieb."
 manufacturer: { key: "petsafe", name: "PetSafe", slug: "petsafe" }
@@ -72,4 +74,3 @@ capacity: "6 Fächer / 4,5 Cups"
 Der PetSafe FreshFeed ist das interessanteste der drei Modelle, weil er eine echte Marktlücke schließt. Im Gegensatz zu Drehtellern mit Eisakku soll er Nass- und Frischfutter aktiv auf Kühlschranktemperatur halten. Das ist praktisch, macht den Automaten aber vollständig von einer stabilen Stromversorgung abhängig.
 
 Quellen: [PetSafe Produktseite](https://www.petsafe.com/p/freshfeed-refrigerated-pet-feeder/PFD00-18290/), [Chewy-Käuferberichte](https://www.chewy.com/petsafe-freshfeed-refrigerated-dog/dp/3967454) und [Nutzererfahrung 2026](https://www.reddit.com/r/catfood/comments/1tucb4m/new_petsafe_automatic_wet_food_refrigerated_feeder/).
-

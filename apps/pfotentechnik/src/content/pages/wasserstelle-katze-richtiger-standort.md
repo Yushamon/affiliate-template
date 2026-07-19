@@ -8,7 +8,7 @@ category: "katzenhaltung"
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, wasser, standort, mehrkatzen, trinkbrunnen]
 hub: { sections: [wissen], title: "Der richtige Standort für Katzenwasser", description: "Ruhige, getrennte und gut erreichbare Wasserstellen planen.", order: 53 }
@@ -42,5 +42,7 @@ Ein Brunnen muss nicht die einzige Quelle sein. Eine gute Kombination ist ein Br
 ## Erfolg prüfen
 
 Beobachte freiwillige Nutzung statt nur den Wasserstand. Verdunstung und spielerisches Planschen verfälschen ihn. Verändert sich das Trinkverhalten plötzlich deutlich, gehört die Ursache medizinisch geprüft und nicht allein durch Umstellen behandelt.
+
+Trinkt die Katze deutlich weniger oder mehr als sonst und kommen Futterverweigerung, Erbrechen, Schwäche oder veränderter Urinabsatz hinzu, sollte sie zeitnah tierärztlich untersucht werden. Pressen ohne Urin, Kollaps oder Atemnot sind Notfälle.
 
 **Quellen:** [Cats Protection – Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [International Cat Care – Encouraging your cat to drink](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [Cornell – Hydration](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration).

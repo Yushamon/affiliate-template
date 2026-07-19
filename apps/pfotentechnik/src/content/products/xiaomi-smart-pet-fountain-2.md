@@ -3,6 +3,8 @@ title: "Xiaomi Smart Pet Fountain 2"
 slug: "xiaomi-smart-pet-fountain-2"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 3-Liter-Trinkbrunnen mit 4000-mAh-Akku, Xiaomi-Home-App, vierstufiger Filterung und drei Wasserausgabemodi."
 recommendation: "Ausgewogene Smart-Option für Katzen und kleine Hunde, besonders für bestehende Xiaomi-Home-Nutzer, die kabellose Platzierung und App-Erinnerungen möchten."
 manufacturer:

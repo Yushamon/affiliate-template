@@ -3,6 +3,8 @@ title: "WOPET Patrol F07 Pro"
 slug: "wopet-patrol-f07-pro"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "6-Liter-Trockenfutterautomat mit WOpet-Life-App, bis zu 15 Mahlzeiten, 50 Portionen pro Mahlzeit und Backup über drei D-Batterien."
 recommendation: "Großvolumiger App-Automat für Katzen und kleine bis mittelgroße Hunde, wenn viele Mahlzeiten, breite Portionierung und sechs Liter Vorrat wichtiger sind als 5-GHz-WLAN."
 manufacturer:

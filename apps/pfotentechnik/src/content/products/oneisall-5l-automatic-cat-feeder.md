@@ -3,6 +3,8 @@ title: "oneisall 5L Automatic Cat Feeder"
 slug: "oneisall-5l-automatic-cat-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-Trockenfutterautomat mit zwei Näpfen, verstellbarem Verteiler und je nach Variante App-Steuerung für zwei Katzen."
 recommendation: "Preislich interessante Doppelschalen-Lösung für zwei friedlich fressende Katzen mit ähnlichem Bedarf, solange keine individuelle Zugangskontrolle nötig ist."
 manufacturer:

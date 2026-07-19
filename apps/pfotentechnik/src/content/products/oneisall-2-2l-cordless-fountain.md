@@ -3,6 +3,8 @@ title: "oneisall 2,2L Cordless Cat Fountain"
 slug: "oneisall-2-2l-cordless-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kompakter kabelloser 2,2-Liter-Trinkbrunnen aus PP mit Bewegungssensor, Dauerbetrieb und fünfstufiger Filterung."
 recommendation: "Günstige kabellose Option für Katzen und kleine Hunde, wenn kompakte Abmessungen und sehr leiser Betrieb wichtiger sind als Edelstahl oder App-Funktionen."
 manufacturer:

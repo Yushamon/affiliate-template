@@ -3,6 +3,8 @@ title: "PETLIBRO Granary Camera Feeder"
 slug: "petlibro-granary-camera-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-Trockenfutterautomat mit 1080p-Kamera, 145°-Weitwinkel, Nachtsicht, Zwei-Wege-Audio und PETLIBRO-App."
 recommendation: "Premiumoption für Katzen und kleine bis mittelgroße Hunde, wenn Fütterung, Livebild und Zwei-Wege-Audio in einem Gerät wichtiger sind als ein niedriger Preis."
 manufacturer: { key: "petlibro", name: "PETLIBRO", slug: "petlibro" }

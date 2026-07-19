@@ -3,6 +3,8 @@ title: "PETLIBRO Dockstream Cordless"
 slug: "petlibro-dockstream-cordless"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 2,5-Liter-Trinkbrunnen der ersten Dockstream-Generation mit 5000-mAh-Akku, Bewegungssensor und vierstufiger Filterung."
 recommendation: "Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden."
 manufacturer:

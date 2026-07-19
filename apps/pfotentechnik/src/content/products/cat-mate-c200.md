@@ -3,6 +3,8 @@ title: "Cat Mate C200"
 slug: "cat-mate-c200"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Analoger Zwei-Mahlzeiten-Automat für Nass- und Trockenfutter mit zwei 48-Stunden-Timern, Kühlakku und einer AA-Batterie."
 recommendation: "Preiswerte Offline-Lösung für zwei vorbereitete Mahlzeiten, wenn einfache Bedienung wichtiger ist als minutengenaue Öffnung oder App-Steuerung."
 manufacturer:

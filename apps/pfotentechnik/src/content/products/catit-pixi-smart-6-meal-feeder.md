@@ -3,6 +3,8 @@ title: "Catit PIXI Smart 6-Meal Feeder"
 slug: "catit-pixi-smart-6-meal-feeder"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Flacher App-gesteuerter Sechs-Mahlzeiten-Automat für Nassfutter, Trockenfutter und Snacks mit zwei Kühlakkus."
 recommendation: "Flexible Wahl für Katzen mit kleinen Nass- oder Trockenfuttermahlzeiten, wenn sechs Fächer reichen und der Deckel vor der eigenen Katze sicher bleibt."
 manufacturer: { key: "catit", name: "Catit", slug: "catit" }

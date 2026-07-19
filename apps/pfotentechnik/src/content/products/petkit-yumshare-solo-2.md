@@ -4,6 +4,8 @@ slug: "petkit-yumshare-solo-2"
 
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 
 description: "Smarter Futterautomat mit Kamera und App-Steuerung für Katzen und kleine Hunde."
 

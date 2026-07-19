@@ -3,6 +3,8 @@ title: "IMIPAW 3L Automatic Cat Feeder"
 slug: "imipaw-3l-automatic-cat-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
 recommendation: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
 manufacturer:

@@ -3,6 +3,8 @@ title: "PETKIT Fresh Element Solo"
 slug: "petkit-fresh-element-solo"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kompakter 3-Liter-Futterautomat mit PETKIT-App, Edelstahl-Napf, 2,4-GHz-WLAN und Backup über fünf AAA-Batterien."
 recommendation: "Kompakte App-Lösung für eine Katze oder einen kleinen Hund, wenn drei Liter Vorrat, Edelstahl-Napf und einfache Reinigung wichtiger sind als Kamera oder große Kapazität."
 manufacturer:

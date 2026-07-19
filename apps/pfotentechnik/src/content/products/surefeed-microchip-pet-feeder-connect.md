@@ -3,6 +3,8 @@ title: "SureFeed Microchip Pet Feeder Connect"
 slug: "surefeed-microchip-pet-feeder-connect"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt."
 recommendation: "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt."
 manufacturer:

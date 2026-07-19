@@ -3,6 +3,8 @@ title: "PETLIBRO Dockstream RFID Smart"
 slug: "petlibro-dockstream-rfid-smart"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "3-Liter-Trinkbrunnen mit RFID-Halsbandanhängern, tierbezogener App-Auswertung, Edelstahl-Trinkfläche und 2,4-GHz-WLAN."
 recommendation: "Spezialisierte Wahl für Mehrkatzenhaushalte, wenn Trinkmenge, Häufigkeit und Dauer pro Tier getrennt protokolliert werden sollen."
 manufacturer:

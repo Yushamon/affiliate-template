@@ -3,6 +3,8 @@ title: "PETKIT Eversweet Max 2 UVC"
 slug: "petkit-eversweet-max-2-uvc"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 3-Liter-Trinkbrunnen mit UVC-Pumpe, Edelstahl-Trinkfläche, App-Anbindung und bis zu 83 Tagen Hersteller-Akkulaufzeit."
 recommendation: "Premiumoption für Katzen und kleine Hunde, wenn kabellose Aufstellung, UVC-Pumpe, spülmaschinengeeignete Teile und App-Status wichtiger sind als ein niedriger Preis."
 manufacturer:

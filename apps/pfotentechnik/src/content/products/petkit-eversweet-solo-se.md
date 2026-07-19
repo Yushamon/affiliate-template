@@ -3,6 +3,8 @@ title: "PETKIT Eversweet Solo SE"
 slug: "petkit-eversweet-solo-se"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Einfacher 1,8-Liter-Trinkbrunnen mit kabelloser Pumpe, kontinuierlichem Wasserfluss und mehrstufiger Filterung."
 recommendation: "Solider Einstieg für eine bis zwei Katzen oder einen kleinen Hund, wenn einfache Technik und leiser Betrieb wichtiger sind als App, Akku oder variable Modi."
 manufacturer:

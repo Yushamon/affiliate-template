@@ -3,6 +3,8 @@ title: "PETLIBRO Capsule Dog Fountain"
 slug: "petlibro-capsule-dog-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Großer Hundetrinkbrunnen mit 2,1 Gallonen beziehungsweise knapp 8 Litern, breiter Trinkzone, Spritzschutz und fünfstufiger Filterung."
 recommendation: "Plausible Gesamtoption für mittelgroße und große Hunde, wenn breite Trinkfläche, hohe Reserve und Spritzschutz wichtiger sind als App oder kabellose Aufstellung."
 manufacturer:

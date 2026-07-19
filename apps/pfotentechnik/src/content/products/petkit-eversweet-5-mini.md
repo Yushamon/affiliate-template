@@ -3,6 +3,8 @@ title: "PETKIT Eversweet 5 Mini"
 slug: "petkit-eversweet-5-mini"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Sehr kompakter 1-Liter-Keramik-Trinkbrunnen für Katzen, kleine Hunde und kleine Stellflächen."
 recommendation: "Kompakte Einstiegsoption für eine Katze, wenn wenig Stellfläche wichtiger ist als große Reserve, App-Funktionen oder kabelloser Betrieb."
 manufacturer:

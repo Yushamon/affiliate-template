@@ -3,6 +3,8 @@ title: "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser"
 slug: "oneisall-2-in-1-feeder-water"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Neue Kombistation aus automatischem Trockenfutterspender und separater Wasserstation für Katzen."
 recommendation: "Interessante platzsparende Kombilösung für einen Katzen-Futterplatz, sofern getrennte Reinigung und aktuelle EU-Verfügbarkeit passen."
 manufacturer: { key: "oneisall", name: "oneisall", slug: "oneisall" }

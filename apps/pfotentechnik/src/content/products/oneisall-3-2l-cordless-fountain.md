@@ -3,6 +3,8 @@ title: "oneisall 3,2L Cordless Cat Fountain"
 slug: "oneisall-3-2l-cordless-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 3,2-Liter-Trinkbrunnen aus ABS und Edelstahl mit Bewegungssensor, Dauerbetrieb und fünfstufiger Filterung."
 recommendation: "Ausgewogene kabellose Option für Katzen und kleine Hunde, wenn mehr Reserve und eine Edelstahl-Trinkfläche ohne App-Zwang gewünscht sind."
 manufacturer:

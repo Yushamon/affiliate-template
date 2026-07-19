@@ -3,6 +3,8 @@ title: "PAWBBY Smart Pet Feeder"
 slug: "pawbby-smart-pet-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion."
 recommendation: "Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion."
 manufacturer:

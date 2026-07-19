@@ -259,6 +259,21 @@ export const createProductContentSchema = (image: ImageFunction) =>
       .literal("product")
       .default("product"),
 
+    testStatus: z.enum([
+      "hands-on",
+      "editorial-review",
+      "manufacturer-data",
+      "long-term-test",
+      "not-tested"
+    ]),
+
+    productStatus: z.enum([
+      "active",
+      "discontinued",
+      "legacy",
+      "unknown"
+    ]),
+
     recommendation:
       z.string(),
 

@@ -3,6 +3,8 @@ title: "oneisall 3,5L Cordless Fountain"
 slug: "oneisall-3-5l-cordless-fountain"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 3,5-Liter-Edelstahl-Trinkbrunnen mit Bewegungssensor und mehreren Betriebsarten."
 recommendation: "Preis-Leistungs-Tipp für Katzenhalter, die einen großen kabellosen Tank ohne App-Zwang suchen."
 manufacturer: { key: oneisall, name: oneisall, slug: oneisall }

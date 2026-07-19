@@ -3,6 +3,8 @@ title: "PETLIBRO Polar Wet Food Feeder"
 slug: "petlibro-polar-wet-food-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Aktiv gekühlter Nassfutterautomat mit drei 200-ml-Fächern, App-Steuerung und thermoelektrischer Kühlung."
 recommendation: "Eine der sinnvollsten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn echte Kühlung wichtiger ist als Batteriebetrieb oder viele Mahlzeiten."
 manufacturer:

@@ -3,6 +3,8 @@ title: "PetSafe Smart Feed 2.0"
 slug: "petsafe-smart-feed-2"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Großer 24-Cup-WLAN-Futterautomat für Katzen und kleine bis mittelgroße Hunde mit Förderband, App, Slow Feed und Batterie-Backup."
 recommendation: "Eine etablierte Smart-Feed-Lösung für größere Portionen und Kroketten, sofern 2,4-GHz-WLAN, App und das große Gehäuse zum Haushalt passen."
 manufacturer: { key: "petsafe", name: "PetSafe", slug: "petsafe" }

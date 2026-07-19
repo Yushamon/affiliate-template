@@ -3,12 +3,14 @@ title: "PawSync Smart Pet Feeder"
 slug: "pawsync-smart-pet-feeder"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "3,6-Liter-Futterautomat mit integrierter Waage, grammgenauer Planung, Fressprotokoll und automatischer Blockadelösung."
 recommendation: "Starke Wahl für datenorientierte Halter, die Trockenfutter nach Gewicht statt nur nach mechanischen Portionen planen möchten."
 manufacturer: { key: "pawsync", name: "PawSync", slug: "pawsync" }
 category: { key: "futterautomaten", label: "Futterautomaten", path: "/smarte-futterautomaten/" }
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion" }
 seo: { title: "PawSync Smart Pet Feeder Test", description: "PawSync Smart Pet Feeder mit Waage im Recherche-Test: Genauigkeit, App, Erfahrungen, Vorteile und Schwächen.", canonical: "/produkt/pawsync-smart-pet-feeder/", sitemap: true, priority: 0.9 }
 hub: { sections: ["produkte", "futterautomaten"] }
@@ -42,7 +44,7 @@ experience:
   summary: "Ein unabhängiger Zweiwochen-Test von Reviewed berichtet pünktliche und mengenstabile Ausgaben ohne Blockaden. Herstellerbewertungen loben Einrichtung und frühe Mahlzeiten; langfristige europäische Serviceerfahrung ist noch dünn."
   positives: ["Im unabhängigen Test pünktliche Mahlzeiten", "Waage erkannte Futteraufnahme", "App wurde als leicht einzurichten beschrieben"]
   criticism: ["Waage muss kalibriert werden", "Auf weichem Boden kann die Plattform verrutschen", "Kein individueller Tierzugang"]
-  methodology: "Herstellerdaten, unabhängiger Reviewed-Praxistest und aggregierte Nutzerberichte; kein eigener Langzeittest."
+  methodology: "Herstellerdaten, eine unabhängige Produktbesprechung von Reviewed und aggregierte Nutzerberichte; keine eigene praktische Erprobung."
 alternatives: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "catit-pixi-vision-smart-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen", "beste-futterautomaten-fuer-hunde"]
 specs:
@@ -72,4 +74,4 @@ capacity: "3,6 Liter"
 
 Der PawSync Smart Pet Feeder adressiert einen echten Schwachpunkt vieler Automaten: mechanische Portionen schwanken mit dem Futter. Die integrierte Waage macht die Kontrolle nachvollziehbarer, ersetzt aber keine fachlich bestimmte Tagesration.
 
-Quellen: [PawSync Produktseite](https://pawsync.com/products/smart-pet-feeder), [Reviewed Praxistest](https://www.reviewed.com/pets/content/pawsync-smart-pet-feeder-review) und [PawSync App-Funktionen](https://pawsync.com/pages/app-features).
+Quellen: [PawSync Produktseite](https://pawsync.com/products/smart-pet-feeder), [Reviewed Produktbesprechung](https://www.reviewed.com/pets/content/pawsync-smart-pet-feeder-review) und [PawSync App-Funktionen](https://pawsync.com/pages/app-features).

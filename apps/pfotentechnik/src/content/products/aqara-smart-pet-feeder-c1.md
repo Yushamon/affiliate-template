@@ -3,6 +3,8 @@ title: "Aqara Smart Pet Feeder C1"
 slug: "aqara-smart-pet-feeder-c1"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "4-Liter-Zigbee-Futterautomat für Katzen und kleine Hunde mit lokalen Zeitplänen, Smart-Home-Automationen und Batterie-Backup."
 recommendation: "Besonders interessant für bestehende Aqara-Haushalte, die lokale Zeitpläne und Smart-Home-Verknüpfungen höher gewichten als Kamera oder direkte WLAN-Nutzung."
 manufacturer: { key: "aqara", name: "Aqara", slug: "aqara" }

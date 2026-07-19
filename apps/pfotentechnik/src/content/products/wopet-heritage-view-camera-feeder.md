@@ -3,6 +3,8 @@ title: "WOPET Heritage View Camera Feeder"
 slug: "wopet-heritage-view-camera-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz."
 recommendation: "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz."
 manufacturer:

@@ -3,6 +3,8 @@ title: "Cat Mate Shell Pet Fountain"
 slug: "cat-mate-shell-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Klassischer 3-Liter-Trinkbrunnen aus BPA-freiem Polypropylen mit zwei Trinkhöhen, einstellbarer Pumpe und austauschbarem Filter."
 recommendation: "Einfache Offline-Option für Katzen und kleine Hunde, wenn mehrere Trinkhöhen, drei Liter Reserve und gut verfügbare Ersatzteile wichtiger sind als App oder Akku."
 manufacturer:

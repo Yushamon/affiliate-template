@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/hund-trinkt-zu-wenig/hero.webp"
   alt: "Hund neben einem Wassernapf, während Trinkmenge, Zahnfleisch, Futter und Urin kontrolliert werden."
 publishedAt: "2026-07-16"
-updatedAt: "2026-07-16"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["hund", "trinken", "dehydration", "wasser", "gesundheit"]
 hub:
@@ -504,7 +504,7 @@ Nicht zwingend. Nassfutter, mehrere Wasserstellen oder unbeobachtetes Trinken k�
 
 Nicht zuverlässig. Alter, Körperbau und Hautbeschaffenheit beeinflussen das Ergebnis. Ein normaler Test schließt eine relevante Störung nicht aus.
 
-### „Ein Trinkbrunnen garantiert mehr Wasseraufnahme“
+### „Ein Trinkbrunnen führt automatisch zu mehr Wasseraufnahme“
 
 Nein. Manche Hunde mögen bewegtes Wasser, andere meiden Geräusche oder Vibrationen. Entscheidend ist die tatsächliche Nutzung.
 

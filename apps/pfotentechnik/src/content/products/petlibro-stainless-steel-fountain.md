@@ -3,6 +3,8 @@ title: "PETLIBRO Stainless Steel Fountain 3L"
 slug: "petlibro-stainless-steel-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelgebundener 3-Liter-Trinkbrunnen mit Tank aus Edelstahl 304, einstellbarem Dauerfluss und dreistufiger Filterung."
 recommendation: "Solide Offline-Wahl für Katzen sowie kleine bis mittelgroße Hunde, wenn Edelstahl, einstellbarer Wasserfluss und Spülmaschinenreinigung wichtiger sind als App oder Akku."
 manufacturer:

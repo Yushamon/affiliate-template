@@ -8,7 +8,7 @@ category: "katzenverhalten"
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, gewoehnung, verhalten, wasser]
 hub: { sections: [wissen], title: "Katze an den Trinkbrunnen gewöhnen", description: "Schrittweise Einführung ohne Zwang.", order: 52 }
@@ -42,5 +42,7 @@ Die Katze nähert sich mit lockerer Körperhaltung, schnuppert, trinkt und kehrt
 ## Wann du abbrechen solltest
 
 Ducken, Flucht, Fixieren der Pumpe, Verweigerung aller Wasserstellen oder deutliche Verhaltensänderungen sind Gründe, den Brunnen zunächst auszuschalten oder zu entfernen. Studien dokumentieren individuelle Ablehnung; ein Brunnen ist nicht für jede Katze besser.
+
+Trinkt die Katze deutlich weniger, frisst nicht, erbricht, wirkt schwach oder setzt auffällig wenig Urin ab, sollte sie zeitnah tierärztlich untersucht werden. Bei Kollaps, Atemnot oder Pressen ohne Urin ist der tierärztliche Notdienst sofort die richtige Anlaufstelle.
 
 **Quellen:** [Cornell – Hydration](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration), [Studie zu Brunnenakzeptanz](https://pmc.ncbi.nlm.nih.gov/articles/PMC10822276/), [International Cat Care – water preferences](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf).

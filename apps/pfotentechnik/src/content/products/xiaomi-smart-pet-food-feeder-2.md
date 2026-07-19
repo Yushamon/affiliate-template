@@ -3,6 +3,8 @@ title: "Xiaomi Smart Pet Food Feeder 2"
 slug: "xiaomi-smart-pet-food-feeder-2"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-Futterautomat mit Xiaomi-Home-App, Wiegenapf, automatischer Entblockung, Edelstahl-Napf und vier AA-Batterien als Notstrom."
 recommendation: "Starke Smart-Home-Option für Katzen und Hunde bis 40 cm Schulterhöhe, wenn Napfgewicht, Füllstandswarnung und automatische Entblockung wichtig sind."
 manufacturer:

@@ -3,6 +3,8 @@ title: "oneisall 7L Dog Water Fountain"
 slug: "oneisall-7l-dog-water-fountain"
 type: product
 layout: product
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Großer 7-Liter-Edelstahl-Trinkbrunnen für Hunde und Haushalte mit hohem Wasserbedarf."
 recommendation: "Preisbewusste Alternative für größere Hunde, wenn ein breiter Napf und viel Volumen benötigt werden."
 manufacturer: { key: oneisall, name: oneisall, slug: oneisall }

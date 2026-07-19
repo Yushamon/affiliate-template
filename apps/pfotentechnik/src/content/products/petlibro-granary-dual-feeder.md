@@ -3,6 +3,8 @@ title: "PETLIBRO Granary WiFi Dual Food Tray Feeder"
 slug: "petlibro-granary-dual-feeder"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "5-Liter-WLAN-Futterautomat mit zwei Edelstahlnäpfen, verstellbarem Mahlzeitenteiler und bis zu zehn Mahlzeiten täglich."
 recommendation: "Sinnvolle Doppelschalen-Lösung für zwei friedlich fressende Tiere mit ähnlichem Bedarf, wenn App-Steuerung und ein großer Trockenfuttervorrat wichtiger sind als Zugangskontrolle."
 manufacturer: { key: "petlibro", name: "PETLIBRO", slug: "petlibro" }

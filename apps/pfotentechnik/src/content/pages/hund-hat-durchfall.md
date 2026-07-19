@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/hund-hat-durchfall/hero.webp"
   alt: "Hund nach einem Durchfallereignis, während Kot, Flüssigkeitshaushalt und Warnzeichen beurteilt werden."
 publishedAt: "2026-07-16"
-updatedAt: "2026-07-16"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["hund", "durchfall", "verdauung", "magen-darm", "gesundheit"]
 hub:
@@ -257,7 +257,7 @@ Antibiotika sind nicht bei jedem Durchfall angezeigt.
 
 | Denkfehler | Warum problematisch |
 |---|---|
-| „Ein bisschen Blut ist immer harmlos.“ | Menge und Allgemeinzustand entscheiden. |
+| „Ein bisschen Blut kann man ignorieren.“ | Menge und Allgemeinzustand entscheiden. |
 | „Kot kommt noch, also kein Fremdkörper.“ | Teilverschlüsse können Durchfall zulassen. |
 | „Er trinkt, also kann er nicht austrocknen.“ | Verluste können die Aufnahme übersteigen. |
 | „Antibiotika helfen immer.“ | Viele Ursachen sind nicht bakteriell. |

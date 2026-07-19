@@ -3,6 +3,8 @@ title: "PETKIT Eversweet Max Cordless"
 slug: "petkit-eversweet-max-cordless"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Kabelloser 3-Liter-Trinkbrunnen mit integriertem Akku, Edelstahl-Trinkfläche, Bewegungssensor und Bluetooth-App."
 recommendation: "Starke kabellose Option für Katzen und kleine Hunde, wenn flexible Platzierung und Trinkprotokolle wichtiger sind als UVC oder ein niedriger Preis."
 manufacturer:

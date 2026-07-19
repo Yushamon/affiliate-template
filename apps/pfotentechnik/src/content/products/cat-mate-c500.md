@@ -3,6 +3,8 @@ title: "Cat Mate C500"
 slug: "cat-mate-c500"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Batteriebetriebener Fünf-Fächer-Automat für Nass-, Trocken- und Mischfutter mit digitalem Timer und zwei Kühlakkus."
 recommendation: "Pragmatische Nassfutter-Lösung für eine oder zwei Katzen beziehungsweise einen kleinen Hund, wenn lokale Timersteuerung und Kühlakkus ausreichen."
 manufacturer:

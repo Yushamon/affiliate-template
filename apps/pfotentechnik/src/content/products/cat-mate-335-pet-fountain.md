@@ -3,6 +3,8 @@ title: "Cat Mate Pet Fountain 335"
 slug: "cat-mate-335-pet-fountain"
 type: "product"
 layout: "product"
+testStatus: "editorial-review"
+productStatus: "unknown"
 description: "Klassischer 2-Liter-Trinkbrunnen aus BPA-freiem Polypropylen mit drei Trinkebenen, regelbarer Pumpe und austauschbarem Filter."
 recommendation: "Einfache Mehrstufen-Option für eine Katze oder einen kleinen Hund, wenn drei Trinkhöhen und gute Ersatzteilversorgung wichtiger sind als große Reserve oder Smart-Funktionen."
 manufacturer:
