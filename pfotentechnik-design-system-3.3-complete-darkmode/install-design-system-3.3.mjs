@@ -5,15 +5,19 @@ import { fileURLToPath } from "node:url";
 
 const root = process.cwd();
 const installerRoot = path.dirname(fileURLToPath(import.meta.url));
+
 const cssRelative =
-  "apps/pfotentechnik/src/styles/pfotentechnik-home-comparison-v3.1.css";
+  "apps/pfotentechnik/src/styles/pfotentechnik-design-system-v3.3.css";
+const advisorRelative =
+  "apps/pfotentechnik/src/components/AdvisorCta.astro";
 const layoutRelative =
   "apps/pfotentechnik/src/layouts/ProjectLayout.astro";
 const manifestRelative =
-  ".pfotentechnik-design-system-v3.1-manifest.json";
+  ".pfotentechnik-design-system-v3.3-manifest.json";
+
 const backupRoot = path.join(
   root,
-  `.pfotentechnik-design-system-v3.1-backup-${new Date()
+  `.pfotentechnik-design-system-v3.3-backup-${new Date()
     .toISOString()
     .replace(/[:.]/g, "-")}`
 );
@@ -29,6 +33,7 @@ function backup(relative) {
 
 function restore(relative) {
   const saved = path.join(backupRoot, relative);
+
   if (fs.existsSync(saved)) {
     fs.mkdirSync(path.dirname(abs(relative)), { recursive: true });
     fs.copyFileSync(saved, abs(relative));
@@ -37,17 +42,21 @@ function restore(relative) {
   }
 }
 
-const touched = [cssRelative, layoutRelative];
+const touched = [cssRelative, advisorRelative, layoutRelative];
 
 try {
   const required = [
     "package.json",
     layoutRelative,
+    advisorRelative,
+    "packages/affiliate-core/src/components/product/ProductReview.astro",
     "packages/affiliate-core/src/components/home/home.css",
-    "packages/affiliate-core/src/components/comparison/comparison.css"
+    "packages/affiliate-core/src/styles/header-footer.css",
+    "apps/pfotentechnik/src/pages/wissen.astro"
   ];
 
   const missing = required.filter((file) => !fs.existsSync(abs(file)));
+
   if (missing.length) {
     throw new Error(
       "Installer im Root von affiliate-template ausführen. Fehlend: " +
@@ -57,37 +66,42 @@ try {
 
   touched.forEach(backup);
 
-  const source = path.join(installerRoot, "files", cssRelative);
-  if (!fs.existsSync(source)) {
-    throw new Error(`Payload fehlt: ${cssRelative}`);
-  }
+  for (const relative of [cssRelative, advisorRelative]) {
+    const source = path.join(installerRoot, "files", relative);
 
-  fs.mkdirSync(path.dirname(abs(cssRelative)), { recursive: true });
-  fs.copyFileSync(source, abs(cssRelative));
+    if (!fs.existsSync(source)) {
+      throw new Error(`Payload fehlt: ${relative}`);
+    }
+
+    fs.mkdirSync(path.dirname(abs(relative)), { recursive: true });
+    fs.copyFileSync(source, abs(relative));
+    console.log(`Installiert: ${relative}`);
+  }
 
   let layout = fs.readFileSync(abs(layoutRelative), "utf8");
   const importLine =
-    'import "../styles/pfotentechnik-home-comparison-v3.1.css";';
+    'import "../styles/pfotentechnik-design-system-v3.3.css";';
 
   if (!layout.includes(importLine)) {
-    const v3 =
-      'import "../styles/pfotentechnik-design-system-v3.css";';
-    const v2 =
-      'import "../styles/pfotentechnik-brand-system-v2.css";';
-    const v1 =
-      'import "../styles/pfotentechnik-brand-system.css";';
+    const anchors = [
+      'import "../styles/pfotentechnik-product-v3.2.css";',
+      'import "../styles/pfotentechnik-home-comparison-v3.1.css";',
+      'import "../styles/pfotentechnik-design-system-v3.css";',
+      'import "../styles/pfotentechnik-brand-system-v2.css";',
+      'import "../styles/pfotentechnik-brand-system.css";'
+    ];
 
-    if (layout.includes(v3)) {
-      layout = layout.replace(v3, `${v3}\n${importLine}`);
-    } else if (layout.includes(v2)) {
-      layout = layout.replace(v2, `${v2}\n${importLine}`);
-    } else if (layout.includes(v1)) {
-      layout = layout.replace(v1, `${v1}\n${importLine}`);
+    const anchor = anchors.find((candidate) => layout.includes(candidate));
+
+    if (anchor) {
+      layout = layout.replace(anchor, `${anchor}\n${importLine}`);
     } else {
       const end = layout.indexOf("\n---", 3);
+
       if (end < 0) {
         throw new Error("Frontmatter in ProjectLayout.astro nicht erkannt.");
       }
+
       layout =
         layout.slice(0, end) +
         "\n" +
@@ -113,9 +127,8 @@ try {
   );
 
   console.log("");
-  console.log("Design System 3.1 wurde installiert.");
-  console.log("Betroffen: Homepage und Vergleichsseiten.");
-  console.log("Wissensseiten wurden nicht verändert.");
+  console.log("Design System 3.3 erfolgreich installiert.");
+  console.log("Korrigiert: Produktseiten, Homepage, Advisor-CTA, Wissen und Footer.");
   console.log("");
   console.log("Jetzt ausführen:");
   console.log("  npm run build:pfotentechnik");

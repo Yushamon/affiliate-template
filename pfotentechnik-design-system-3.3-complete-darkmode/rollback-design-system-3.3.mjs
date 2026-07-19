@@ -3,10 +3,13 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const manifestPath = path.join(root, ".pfotentechnik-brand-system-v2-manifest.json");
+const manifestPath = path.join(
+  root,
+  ".pfotentechnik-design-system-v3.3-manifest.json"
+);
 
 if (!fs.existsSync(manifestPath)) {
-  console.error("Kein Brand-System-2.0-Manifest gefunden.");
+  console.error("Kein Design-System-3.3-Manifest gefunden.");
   process.exit(1);
 }
 
@@ -27,4 +30,4 @@ for (const relative of [...manifest.files].reverse()) {
 }
 
 fs.rmSync(manifestPath, { force: true });
-console.log("PfotenTechnik Brand System 2.0 wurde zurückgerollt.");
+console.log("Design System 3.3 wurde zurückgerollt.");
