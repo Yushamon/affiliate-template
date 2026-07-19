@@ -1,0 +1,208 @@
+diff --git a/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts b/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+index 679c908..cf20001 100644
+--- a/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
++++ b/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+@@ -215,42 +215,152 @@ const cleanTags = (entry: ProductEntry) => {
+ export const getFutterautomatenAlternatives = (
+   currentProduct: ProductEntry,
+   products: ProductEntry[],
+   limit = 3
+ ): AlternativeRecommendation[] => {
+   const currentText = getProductText(currentProduct);
+-
+-  const candidates = products
++  const preferred = new Map(
++    currentProduct.data.alternatives.map(
++      (slug, index) => [slug, index]
++    )
++  );
++
++  const currentFilters =
++    currentProduct.data.comparisonFilters;
++
++  const getScore = (candidate: ProductEntry) => {
++    const candidateText = getProductText(candidate);
++    const candidateFilters =
++      candidate.data.comparisonFilters;
++
++    let score =
++      candidate.data.score ??
++      Math.round(candidate.data.rating * 20);
++
++    const preferredIndex = preferred.get(
++      candidate.data.slug
++    );
++
++    if (preferredIndex !== undefined) {
++      score += 100 - preferredIndex * 5;
++    }
++
++    const currentFoodTypes =
++      currentFilters?.foodType ?? [];
++    const candidateFoodTypes =
++      candidateFilters?.foodType ?? [];
++
++    if (
++      currentFoodTypes.length > 0 &&
++      candidateFoodTypes.some((type) =>
++        currentFoodTypes.includes(type)
++      )
++    ) {
++      score += 30;
++    }
++
++    if (
++      currentProduct.data.useCase &&
++      candidate.data.useCase &&
++      normalizeText(currentProduct.data.useCase) ===
++        normalizeText(candidate.data.useCase)
++    ) {
++      score += 25;
++    }
++
++    const currentBestFor = new Set(
++      currentProduct.data.decision.bestFor.map(
++        normalizeText
++      )
++    );
++
++    const bestForOverlap =
++      candidate.data.decision.bestFor.filter(
++        (item) =>
++          currentBestFor.has(normalizeText(item))
++      ).length;
++
++    score += Math.min(20, bestForOverlap * 10);
++
++    if (
++      candidate.data.priceCategory &&
++      currentProduct.data.priceCategory &&
++      candidate.data.priceCategory !==
++        currentProduct.data.priceCategory
++    ) {
++      score += 10;
++    }
++
++    const featureDifference = features.some(
++      (item) =>
++        item.terms.some((term) =>
++          candidateText.includes(
++            normalizeText(term)
++          )
++        ) &&
++        !item.terms.some((term) =>
++          currentText.includes(
++            normalizeText(term)
++          )
++        )
++    );
++
++    if (featureDifference) {
++      score += 20;
++    }
++
++    return score;
++  };
++
++  const candidates = products
+     .filter(
+       (candidate) =>
+         candidate.id !== currentProduct.id &&
+         candidate.data.category.key ===
+           currentProduct.data.category.key
+     )
+-    .sort(
+-      (a, b) =>
+-        (b.data.score ?? 0) -
+-        (a.data.score ?? 0)
+-    );
++    .map((candidate) => ({
++      candidate,
++      score: getScore(candidate)
++    }))
++    .sort((a, b) => b.score - a.score);
+
+   const recommendations: AlternativeRecommendation[] = [];
+   const usedKinds = new Set<string>();
+
+-  for (const candidate of candidates) {
++  for (const { candidate } of candidates) {
+     if (recommendations.length >= limit) {
+       break;
+     }
+
+     const candidateText = getProductText(candidate);
+-    const feature = features.find(
++    const preferredAlternative =
++      preferred.has(candidate.data.slug);
++
++    const feature =
++      features.find(
+       (item) =>
+         item.terms.some((term) =>
+           candidateText.includes(normalizeText(term))
+         ) &&
+         !item.terms.some((term) =>
+           currentText.includes(normalizeText(term))
+         ) &&
+         !usedKinds.has(item.kind)
+-    );
++      ) ??
++      (preferredAlternative
++        ? {
++            kind:
++              `editorial-${candidate.data.slug}`,
++            icon: "↗",
++            headline:
++              "Redaktionell priorisierte Alternative",
++            reason:
++              candidate.data.recommendation,
++            difference:
++              candidate.data.review.verdict,
++            terms: []
++          }
++        : undefined);
+
+     if (!feature) {
+       continue;
+@@ -274,7 +391,40 @@ export const getFutterautomatenAlternatives = (
+     });
+
+     usedKinds.add(feature.kind);
+   }
+
++  if (recommendations.length < limit) {
++    for (const { candidate } of candidates) {
++      if (
++        recommendations.length >= limit ||
++        recommendations.some(
++          (item) =>
++            item.productKey ===
++            candidate.data.slug
++        )
++      ) {
++        continue;
++      }
++
++      recommendations.push({
++        productKey: candidate.data.slug,
++        name: candidate.data.title,
++        url:
++          candidate.data.productUrl ??
++          `/produkt/${candidate.data.slug}/`,
++        image:
++          candidate.data.images.comparison?.src ??
++          candidate.data.images.hero,
++        score: candidate.data.score ?? 0,
++        rating: candidate.data.rating,
++        icon: "↔",
++        headline: "Im direkten Vergleich",
++        reason: candidate.data.recommendation,
++        difference: candidate.data.review.verdict,
++        tags: cleanTags(candidate)
++      });
++    }
++  }
++
+   return recommendations;
+ };

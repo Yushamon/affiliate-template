@@ -54,6 +54,9 @@ hub:
   order: 360
 hubPriority: 100
 project: "pfotentechnik"
+heroImage:
+  src: "../../assets/images/guides/smarte-futterautomaten/hero.webp"
+  alt: "Smarte Futterautomaten für Hunde und Katzen im Vergleich."
 heroImageKey: "feederHero"
 visualAssets:
   directory: "/images/guides/smarte-futterautomaten/"
@@ -234,7 +237,7 @@ Für viele Haushalte ist ein Trockenfutterautomat mit lokal gespeichertem Zeitpl
 
 Ein Doppelnapf verhindert keinen Futterneid. Die tatsächliche Portionsmenge sollte immer mit dem verwendeten Futter nachgewogen werden. Und unabhängig von der Technik gilt: Ein Futterautomat ersetzt weder tägliche Betreuung noch die Beobachtung von Appetit, Gewicht und Gesundheit.
 
-![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](/images/guides/smarte-futterautomaten/decision-tree.webp)
+![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](../../assets/images/guides/smarte-futterautomaten/decision-tree.webp)
 
 <a id="auswahlhilfe"></a>
 
@@ -260,7 +263,7 @@ Eine Kamera kann sinnvoll sein, wenn du sehen möchtest, ob ein Tier zum Futterp
 
 Prüfe Blickwinkel, Nachtsicht, lokale Speicherung oder Cloud, Abokosten, Mikrofon, Zwei-Wege-Audio und Datenschutz. Zum spezialisierten Vergleich: [Futterautomaten mit Kamera](/futterautomat-mit-kamera/).
 
-![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
 
 ### Du hast zwei Katzen oder mehrere Tiere
 
@@ -294,7 +297,7 @@ Für große Tiere ist ein größerer Behälter allein nicht ausreichend. Prüfe,
 | unregelmäßige Arbeitszeiten | App-Modell mit lokalem Zeitplan | Offline-Betrieb, Notstrom, Protokoll | Cloud-Abhängigkeit |
 | Sichtkontrolle gewünscht | Kamera-Automat | Datenschutz, Blickwinkel, Nachtsicht | Kamera als Fressmengenmessung betrachten |
 
-![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](/images/guides/smarte-futterautomaten/feeder-types.webp)
+![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](../../assets/images/guides/smarte-futterautomaten/feeder-types.webp)
 
 ## Alle Bauarten im Überblick
 
@@ -348,7 +351,7 @@ Nassfutterautomaten halten vorbereitete Mahlzeiten in einzelnen Fächern geschlo
 
 Die tatsächliche Eignung hängt nicht nur von der Technik ab. Raumtemperatur, Futterart, Ausgangstemperatur, Standzeit und Reinigung beeinflussen die hygienische Sicherheit. Maßgeblich sind die Anleitung des Geräts und die Empfehlungen des Futtermittelherstellers.
 
-![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](/images/guides/smarte-futterautomaten/comparison-overview.webp)
+![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/comparison-overview.webp)
 
 ## Funktionsvergleich der Bauarten
 
@@ -379,13 +382,13 @@ Nicht jeder Haushalt benötigt WLAN.
 
 Ein einfacher Automat kann die bessere Wahl sein, wenn ausschließlich feste Mahlzeiten gebraucht werden. Smarte Technik lohnt sich, wenn Fernzugriff, Benachrichtigungen oder Protokolle im Alltag tatsächlich genutzt werden.
 
-![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](/images/guides/smarte-futterautomaten/portioning-system.webp)
+![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/portioning-system.webp)
 
 ## Technik verstehen: Was im Inneren über Zuverlässigkeit entscheidet
 
 Die App ist sichtbar, die Mechanik bleibt verborgen. Im Alltag entscheidet jedoch vor allem das Zusammenspiel aus Vorratsbehälter, Nachrutschzone, Dosiermechanismus, Auslass, Sensorik und Stromversorgung darüber, ob eine Mahlzeit wirklich im Napf landet.
 
-![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](../../assets/images/guides/smarte-futterautomaten/feeding-workflow.webp)
 
 ### Der Weg des Futters
 
@@ -423,7 +426,7 @@ Das Geräusch einer Ausgabe kann Tiere anlocken oder erschrecken. Sensible Katze
 
 Die Lautstärke in Dezibel ist nur ein Teil der Wahrnehmung. Tonhöhe, Vibrationen und der Untergrund beeinflussen ebenfalls, wie das Tier reagiert. Eine rutschfeste Matte kann Vibrationen reduzieren, darf aber Lüftungsöffnungen nicht verdecken.
 
-![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](../../assets/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
 
 ## WLAN, Internet, Cloud und App: Vier verschiedene Ebenen
 
@@ -463,7 +466,7 @@ Prüfe daher:
 
 Ein sinnvoller Praxistest besteht darin, den Automaten nach der Einrichtung bewusst vom Netz zu trennen und eine kleine Testportion zur nächsten geplanten Zeit ausgeben zu lassen.
 
-![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](/images/guides/smarte-futterautomaten/buying-checklist.webp)
+![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](../../assets/images/guides/smarte-futterautomaten/buying-checklist.webp)
 
 ## Die zehn wichtigsten Kaufkriterien
 
@@ -697,7 +700,7 @@ Die laufenden Kosten eines Futterautomaten können über mehrere Jahre relevante
 
 Ein günstiger Automat ohne verfügbare Ersatzteile kann langfristig teurer sein als ein solides Modell mit austauschbaren Komponenten.
 
-![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](/images/guides/smarte-futterautomaten/privacy-security.webp)
+![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](../../assets/images/guides/smarte-futterautomaten/privacy-security.webp)
 
 ## Datenschutz bei Kamera und Mikrofon
 
@@ -715,7 +718,7 @@ Praktische Datenschutzmaßnahmen:
 
 Eine lokal gespeicherte Aufnahme ist nicht automatisch sicherer, wenn Speicherkarte oder Gerät frei zugänglich sind. Entscheidend ist das gesamte Schutzkonzept.
 
-![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](../../assets/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
 
 ## Wartungsplan für den Alltag
 
@@ -779,7 +782,7 @@ Eine seriöse Bewertung trennt drei Arten von Informationen:
 
 Diese Ebenen dürfen nicht vermischt werden. Eine Produktseite sollte nicht den Eindruck eines Langzeittests erzeugen, wenn nur technische Daten und Herstellerangaben ausgewertet wurden.
 
-![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](/images/guides/smarte-futterautomaten/common-mistakes.webp)
+![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](../../assets/images/guides/smarte-futterautomaten/common-mistakes.webp)
 
 ## Fehlkauf-Check: Zwölf Warnsignale vor der Bestellung
 
@@ -903,7 +906,7 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 
 **Zugangskontrolle:** Das Futterfach öffnet sich nur für ein bestimmtes Tier, etwa über Mikrochip oder Halsbandanhänger.
 
-![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](/images/guides/smarte-futterautomaten/final-checklist.webp)
+![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/final-checklist.webp)
 
 ## Fazit: Die beste Wahl beginnt nicht beim Produktnamen
 

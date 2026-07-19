@@ -1,0 +1,120 @@
+diff --git a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+index 2ea1ec3..a764562 100644
+--- a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
++++ b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+@@ -56,6 +56,9 @@ placeholder line 55
+ placeholder line 56
+ placeholder line 57
+ placeholder line 58
++heroImage:
++  src: "../../assets/images/guides/smarte-futterautomaten/hero.webp"
++  alt: "Smarte Futterautomaten für Hunde und Katzen im Vergleich."
+ heroImageKey: "feederHero"
+ placeholder line 60
+ placeholder line 61
+@@ -234,7 +237,7 @@ placeholder line 233
+ placeholder line 234
+ placeholder line 235
+ placeholder line 236
+-![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](/images/guides/smarte-futterautomaten/decision-tree.webp)
++![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](../../assets/images/guides/smarte-futterautomaten/decision-tree.webp)
+ placeholder line 238
+ placeholder line 239
+ placeholder line 240
+@@ -260,7 +263,7 @@ placeholder line 259
+ placeholder line 260
+ placeholder line 261
+ placeholder line 262
+-![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
++![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+ placeholder line 264
+ placeholder line 265
+ placeholder line 266
+@@ -294,7 +297,7 @@ placeholder line 293
+ placeholder line 294
+ placeholder line 295
+ placeholder line 296
+-![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](/images/guides/smarte-futterautomaten/feeder-types.webp)
++![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](../../assets/images/guides/smarte-futterautomaten/feeder-types.webp)
+ placeholder line 298
+ placeholder line 299
+ placeholder line 300
+@@ -348,7 +351,7 @@ placeholder line 347
+ placeholder line 348
+ placeholder line 349
+ placeholder line 350
+-![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](/images/guides/smarte-futterautomaten/comparison-overview.webp)
++![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/comparison-overview.webp)
+ placeholder line 352
+ placeholder line 353
+ placeholder line 354
+@@ -379,13 +382,13 @@ placeholder line 378
+ placeholder line 379
+ placeholder line 380
+ placeholder line 381
+-![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](/images/guides/smarte-futterautomaten/portioning-system.webp)
++![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/portioning-system.webp)
+ placeholder line 383
+ placeholder line 384
+ placeholder line 385
+ placeholder line 386
+ placeholder line 387
+-![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](/images/guides/smarte-futterautomaten/feeding-workflow.webp)
++![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](../../assets/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+ placeholder line 389
+ placeholder line 390
+ placeholder line 391
+@@ -423,7 +426,7 @@ placeholder line 422
+ placeholder line 423
+ placeholder line 424
+ placeholder line 425
+-![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
++![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](../../assets/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+ placeholder line 427
+ placeholder line 428
+ placeholder line 429
+@@ -463,7 +466,7 @@ placeholder line 462
+ placeholder line 463
+ placeholder line 464
+ placeholder line 465
+-![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](/images/guides/smarte-futterautomaten/buying-checklist.webp)
++![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](../../assets/images/guides/smarte-futterautomaten/buying-checklist.webp)
+ placeholder line 467
+ placeholder line 468
+ placeholder line 469
+@@ -697,7 +700,7 @@ placeholder line 696
+ placeholder line 697
+ placeholder line 698
+ placeholder line 699
+-![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](/images/guides/smarte-futterautomaten/privacy-security.webp)
++![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](../../assets/images/guides/smarte-futterautomaten/privacy-security.webp)
+ placeholder line 701
+ placeholder line 702
+ placeholder line 703
+@@ -715,7 +718,7 @@ placeholder line 714
+ placeholder line 715
+ placeholder line 716
+ placeholder line 717
+-![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
++![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](../../assets/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+ placeholder line 719
+ placeholder line 720
+ placeholder line 721
+@@ -779,7 +782,7 @@ placeholder line 778
+ placeholder line 779
+ placeholder line 780
+ placeholder line 781
+-![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](/images/guides/smarte-futterautomaten/common-mistakes.webp)
++![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](../../assets/images/guides/smarte-futterautomaten/common-mistakes.webp)
+ placeholder line 783
+ placeholder line 784
+ placeholder line 785
+@@ -903,7 +906,7 @@ placeholder line 902
+ placeholder line 903
+ placeholder line 904
+ placeholder line 905
+-![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](/images/guides/smarte-futterautomaten/final-checklist.webp)
++![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/final-checklist.webp)
+ placeholder line 907
+ placeholder line 908
+ placeholder line 909

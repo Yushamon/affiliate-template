@@ -1,44 +1,99 @@
-# PfotenTechnik – technisches SEO-Fixpaket
+# PfotenTechnik Conversion Framework 1.0
 
-Dieses Paket setzt die priorisierten technischen Korrekturen aus dem SEO-Audit um, ohne komplette Repository-Dateien blind zu überschreiben.
+Dieses Paket enthält vier aufeinander aufbauende Git-Patches.
 
-## Enthaltene Korrekturen
-
-1. Nicht-Startseiten erhalten standardmäßig `WebPage` statt pauschal `Article`.
-2. `Article`-Datumsangaben werden nur ausgegeben, wenn die jeweilige Seite echte Daten liefert.
-3. Wissensseiten berücksichtigen `seo.canonical`.
-4. Vergleichsseiten verwenden `WebPage`-Schema.
-5. Produktseiten verlieren den fest codierten Veröffentlichungs-Fallback.
-6. Produktseiten erhalten `Product`-JSON-LD mit eingebettetem redaktionellem `Review`.
-7. Produktseiten verwenden zusätzlich `WebPage` statt eines parallelen generischen `Article`.
-
-## Installation
-
-ZIP im Root von `Yushamon/affiliate-template` entpacken und ausführen:
+## Reihenfolge
 
 ```bash
-node install-seo-fixes.mjs
+git apply --check conversion-framework-1-foundation.patch
+git apply conversion-framework-1-foundation.patch
+npm run build:pfotentechnik
+
+git apply --check conversion-framework-2-recommendations.patch
+git apply conversion-framework-2-recommendations.patch
+npm run build:pfotentechnik
+
+git apply --check conversion-framework-3-trust.patch
+git apply conversion-framework-3-trust.patch
+npm run build:pfotentechnik
+
+git apply --check conversion-framework-4-journey.patch
+git apply conversion-framework-4-journey.patch
 npm run build:pfotentechnik
 ```
 
-Vor jeder Änderung legt der Installer Backups unter folgendem Pfad an:
+Danach:
 
-```text
-.seo-fix-backup-2026-07-17/
+```bash
+git diff --check
+git status
 ```
 
-Der Installer prüft jeden erwarteten Codeabschnitt. Weicht eine Datei inzwischen ab, bricht er ab, statt unkontrolliert Code zu verändern.
+## Patch 1 – Foundation
 
-## Betroffene Dateien
+- entfernt pauschale „Top-Empfehlung“-Badges
+- führt optionale Conversion-Metadaten ein
+- erlaubt produktspezifische CTA-Beschriftungen
+- entfernt den ungenutzten `relatedContent`-Prop
 
-- `packages/affiliate-core/src/layouts/AffiliateLayout.astro`
-- `apps/pfotentechnik/src/pages/[slug].astro`
-- `apps/pfotentechnik/src/pages/vergleiche/[comparison].astro`
-- `apps/pfotentechnik/src/pages/produkt/[product].astro`
+Beispiel:
 
-## Noch manuell zu prüfen
+```yaml
+conversion:
+  badge: preis-leistungs-tipp
+  primaryCtaLabel: Aktuellen Preis prüfen
+  secondaryCtaLabel: Preis und Verfügbarkeit prüfen
+  showSecondaryCta: true
+```
 
-- Das Publisher-Logo sollte ein eigenständiges, crawlbares Markenlogo sein und nicht nur das Favicon.
-- Die Standard-OG-Grafik sollte mindestens 1200 × 630 px groß sein.
-- Nach dem Build sollten einzelne Produktseiten mit dem Rich Results Test und dem Schema Markup Validator geprüft werden.
-- Der Sitemap-Output sollte kontrolliert werden, insbesondere die Produktpfade unter `/produkt/`.
+Ohne `conversion` bleibt die Produktdatei gültig und es wird kein Badge angezeigt.
+
+## Patch 2 – Recommendation Engine 2.0
+
+- priorisiert redaktionell hinterlegte `alternatives`
+- berücksichtigt Futterart, Use Case, Zielgruppe und Preisstufe
+- bevorzugt sinnvolle Funktionsunterschiede
+- liefert robuste Fallback-Alternativen
+
+## Patch 3 – Trust Framework
+
+- ersetzt den statischen Methodikblock
+- macht Bewertungsstatus, Datenbasis und Aktualität sichtbar
+- trennt Praxistest und redaktionelle Einordnung sauber
+
+Beispiel:
+
+```yaml
+editorial:
+  assessmentType: editorial-review
+  evidence:
+    - manufacturer-documentation
+    - technical-specifications
+    - comparative-analysis
+  testedHandsOn: false
+  lastVerifiedAt: 2026-07-18
+```
+
+## Patch 4 – Conversion Journey
+
+- ergänzt eine zentrale nächste-Schritte-Komponente
+- integriert sie auf Ratgeber-, Vergleichs- und Produktseiten
+- verwendet bestehende Related-Content-Daten
+- erzeugt keine zusätzlichen Affiliate-Buttons
+
+## Rollback
+
+In umgekehrter Reihenfolge:
+
+```bash
+git apply -R conversion-framework-4-journey.patch
+git apply -R conversion-framework-3-trust.patch
+git apply -R conversion-framework-2-recommendations.patch
+git apply -R conversion-framework-1-foundation.patch
+```
+
+## Hinweis zum Repository-Stand
+
+Die Patches wurden gegen den am 18. Juli 2026 gelesenen Stand von
+`Yushamon/affiliate-template` erstellt. Bereits installierte lokale Patches können
+Kontextzeilen verschieben. In diesem Fall zuerst `git apply --check` verwenden.

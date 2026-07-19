@@ -37,56 +37,6 @@ const uniqueStrings = (
     )
   );
 
-
-const semanticKeywordGroups = [
-  ["futterautomat", "futterautomaten", "smarter futterautomat", "smarte futterautomaten", "smart feeder"],
-  ["trinkbrunnen", "katzenbrunnen", "hundebrunnen", "haustierbrunnen", "wasserbrunnen"],
-  ["gps tracker", "gps-tracker", "haustier tracker", "tierortung", "gps ortung"],
-  ["nassfutter", "feuchtfutter"],
-  ["trockenfutter", "trockennahrung"],
-  ["katze", "katzen"],
-  ["hund", "hunde"],
-  ["mehrkatzenhaushalt", "mehrere katzen", "multi cat"],
-  ["mehrhundehaushalt", "mehrere hunde", "multi dog"]
-] as const;
-
-const normalizeKeyword = (value: string) =>
-  value
-    .trim()
-    .toLowerCase()
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-
-const expandSemanticKeywords = (keywords: string[]) => {
-  const expanded = new Set(keywords);
-
-  for (const keyword of keywords) {
-    const normalizedKeyword = normalizeKeyword(keyword);
-
-    for (const group of semanticKeywordGroups) {
-      const normalizedGroup = group.map(normalizeKeyword);
-
-      if (
-        normalizedGroup.some(
-          (candidate) =>
-            normalizedKeyword === candidate ||
-            normalizedKeyword.includes(candidate) ||
-            candidate.includes(normalizedKeyword)
-        )
-      ) {
-        group.forEach((candidate) => expanded.add(candidate));
-      }
-    }
-  }
-
-  return uniqueStrings([...expanded]);
-};
-
 const titleWithoutYear = (title: string) =>
   title
     .replace(/\b20\d{2}\b/g, "")
@@ -143,7 +93,7 @@ const pageDefinition = (
 
   return {
     id: `page:${page.data.slug}`,
-    keywords: expandSemanticKeywords([
+    keywords: uniqueStrings([
       ...linking.keywords,
       ...(linking.priority === "high"
         ? buildTitleKeywords(page.data.title)
@@ -172,9 +122,7 @@ const productDefinition = (
   product: ProductEntry
 ): InternalLinkDefinition => ({
   id: `product:${product.data.slug}`,
-  keywords: expandSemanticKeywords(
-    buildTitleKeywords(product.data.title)
-  ),
+  keywords: buildTitleKeywords(product.data.title),
   href: normalizePath(
     product.data.productUrl ??
       `/produkt/${product.data.slug}/`
@@ -219,7 +167,7 @@ const manufacturerDefinition = (
   manufacturer: ManufacturerEntry
 ): InternalLinkDefinition => ({
   id: `manufacturer:${manufacturer.data.slug}`,
-  keywords: expandSemanticKeywords([
+  keywords: uniqueStrings([
     manufacturer.data.name,
     manufacturer.data.title
   ]),

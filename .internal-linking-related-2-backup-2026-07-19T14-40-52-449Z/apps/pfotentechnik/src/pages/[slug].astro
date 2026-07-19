@@ -11,7 +11,6 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
-import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import HealthBridge from "../components/HealthBridge.astro";
 import { projectConfig, siteMeta } from "../project.config";
@@ -182,8 +181,6 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
 
 const relatedEntries = await getRelatedContent({
   currentSlug: page.data.slug,
-  title: page.data.title,
-  description: page.data.description,
   tags: page.data.related?.tags.length
     ? page.data.related.tags
     : page.data.tags,
@@ -504,8 +501,6 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
     <FAQ items={page.data.faq} />
   </article>
-
-  <ArticleImageLightbox />
 
   <RelatedArticles items={relatedItems} />
 </ProjectLayout>
