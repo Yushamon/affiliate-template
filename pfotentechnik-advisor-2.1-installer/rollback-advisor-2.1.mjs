@@ -1,2 +1,0 @@
-#!/usr/bin/env node
-import fs from "node:fs";import path from "node:path";const root=process.cwd(),m=path.join(root,".advisor-2.1-manifest.json");if(!fs.existsSync(m)){console.error("Kein Advisor-Manifest gefunden.");process.exit(1)}const x=JSON.parse(fs.readFileSync(m,"utf8"));for(const r of [...x.files].reverse()){const t=path.join(root,r),b=path.join(x.backupRoot,r);if(fs.existsSync(b)){fs.mkdirSync(path.dirname(t),{recursive:true});fs.copyFileSync(b,t)}else if(fs.existsSync(t))fs.rmSync(t,{force:true})}fs.rmSync(m,{force:true});console.log("Advisor 2.1 zurückgerollt.");
