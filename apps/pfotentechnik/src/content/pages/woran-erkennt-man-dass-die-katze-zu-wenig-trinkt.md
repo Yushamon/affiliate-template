@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/hero.webp"
   alt: "Katze neben mehreren Wasserstellen, während Trinkmenge, Futter und Katzenklo beobachtet werden."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["katze", "trinken", "dehydration", "gesundheit", "wasser"]
 hub:
@@ -613,7 +613,7 @@ Ein Gramm Gewichtsverlust entspricht bei Wasser ungefähr einem Milliliter.
 
 Die Messung bleibt dennoch fehleranfällig.
 
-### Vorgehen
+### Messablauf
 
 1. trockenen Napf wiegen
 2. Wasser einfüllen
@@ -647,7 +647,7 @@ Beispiel:
 
 Hinzu kommt die gemessene Trinkmenge.
 
-### Grenzen
+### Grenzen der Schätzung
 
 - Feuchtigkeitsangaben sind Durchschnittswerte.
 - Nicht gefressene Reste müssen abgezogen werden.
@@ -694,7 +694,7 @@ Sie kann außerdem kurze, häufige Besuche von echtem Trinken unterscheiden.
 - Spielen statt Trinken
 - häufiges Aufsuchen ohne erkennbare Aufnahme
 
-### Grenzen
+### Grenzen der Kamera-Beobachtung
 
 Eine Kamera misst keine Milliliter.
 
@@ -813,8 +813,6 @@ Er ist keine Pflicht und muss hygienisch gepflegt werden.
 
 Weitere Hintergründe findest du unter [Warum Katzen lieber fließendes Wasser trinken](/warum-katzen-fliessendes-wasser-trinken/).
 
-Dieser interne Link ist im Repository belegt.
-
 ## Futter mit Wasser anreichern
 
 Wasser kann schrittweise unter Nassfutter gemischt werden.
@@ -823,7 +821,7 @@ Beginne mit einer kleinen Menge.
 
 Zu viel Wasser kann Geruch, Konsistenz und Akzeptanz verändern.
 
-### Vorgehen
+### Wasser schrittweise untermischen
 
 1. kleine Wassermenge zugeben
 2. gründlich vermischen
@@ -1187,243 +1185,3 @@ Mehrere saubere Wasserstellen, Nassfutter und gegebenenfalls ein Trinkbrunnen k�
 Sie behandeln jedoch keine Erkrankung.
 
 Bei deutlicher Schwäche, Problemen beim Urinieren, wiederholtem Erbrechen oder rascher Verschlechterung ist tierärztliche Hilfe wichtiger als weitere Messversuche zu Hause.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.
-
-## Wasser nachts
-
-Viele Katzen trinken zu Zeiten, in denen Menschen schlafen.
-
-Eine nur tagsüber beobachtete Katze kann deshalb fälschlich als Nichttrinkerin erscheinen.
-
-Eine Kamera oder Gewichtsprotokollierung kann nächtliche Nutzung sichtbar machen.
-
-Auch hier zählt die Gesamtaufnahme.

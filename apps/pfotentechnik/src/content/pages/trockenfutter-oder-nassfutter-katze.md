@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/trockenfutter-oder-nassfutter-katze/hero.webp"
   alt: "Katze zwischen einer Portion Nassfutter und einer abgewogenen Portion Trockenfutter."
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["katze", "trockenfutter", "nassfutter", "mischfütterung", "katzenernährung"]
 hub:
@@ -173,7 +173,7 @@ Nassfutter enthält häufig ungefähr 70 bis 80 Prozent Wasser. Trockenfutter li
 
 Dadurch nimmt eine Katze mit Nassfutter einen großen Teil ihrer Flüssigkeit bereits über die Mahlzeit auf.
 
-### Beispiel
+### Beispiel zur Wasseraufnahme
 
 Eine Katze frisst 250 Gramm Nassfutter mit 78 Prozent Feuchtigkeit. Das Futter liefert rechnerisch rund 195 Milliliter Wasser.
 
@@ -325,7 +325,7 @@ Die wichtigeren Fragen sind:
 
 Ein häufiger Fehler ist der direkte Vergleich der Deklaration auf der Verpackung. Nassfutter enthält viel Wasser. Dadurch wirkt der Rohproteinwert auf den ersten Blick niedriger.
 
-### Beispiel
+### Beispiel für den Trockenmassevergleich
 
 - Nassfutter: 10 Prozent Rohprotein bei 78 Prozent Feuchtigkeit
 - Trockenfutter: 35 Prozent Rohprotein bei 8 Prozent Feuchtigkeit

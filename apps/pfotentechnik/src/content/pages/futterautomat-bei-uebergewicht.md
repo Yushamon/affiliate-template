@@ -31,7 +31,7 @@ tags:
   - "Wiegefunktion"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-14"
+updatedAt: "2026-07-19"
 hub:
   sections:
     - "wissen"
@@ -231,7 +231,7 @@ Zur Gesamtmenge gehören:
 
 Ein Automat ist nur so präzise wie der gesamte Plan.
 
-### Beispiel
+### Beispiel für die Tagesration
 
 | Bestandteil | Energieanteil |
 |---|---:|
@@ -256,7 +256,7 @@ So gehst du vor:
 6. Tagesration auf die echte Grammmenge umrechnen.
 7. nach Futterwechsel neu testen.
 
-### Beispiel
+### Beispiel für die Ausgabestreuung
 
 | Ausgabe | Gewicht |
 |---|---:|

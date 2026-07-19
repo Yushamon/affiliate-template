@@ -25,7 +25,7 @@ heroImage:
   src: "../../assets/images/guides/futterautomat-richtig-reinigen/hero.webp"
   alt: "Geöffneter automatischer Futterautomat mit entnommenem Napf, Vorratsbehälter und Reinigungsutensilien."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["futterautomat", "reinigung", "hygiene", "trockenfutter", "nassfutter", "wartung"]
 hub:
@@ -310,30 +310,6 @@ Viele vermeintliche Defekte sind zunächst Reinigungs- oder Montageprobleme. Ble
 - Gerätefüße
 - Batteriefach außen
 - Bereich hinter dem Napf
-
-## Besondere Situationen
-
-### Sommer und hohe Luftfeuchtigkeit
-
-Stelle den Automaten nicht in direkte Sonne oder neben Herd und Heizkörper. Fülle nur so viel ein, wie in überschaubarer Zeit verbraucht wird. Prüfe häufiger auf Geruch, Klumpen und Kondenswasser.
-
-### Vor dem Urlaub
-
-Reinige den Automaten nicht erst unmittelbar vor der Abreise und lasse ihn dann ungeprüft laufen. Führe nach dem Zusammenbau mehrere Testausgaben durch. Kontrolliere Stromversorgung, Batterien, Dichtung und Füllstand.
-
-Weitere Hinweise findest du im Ratgeber [Futterautomat im Urlaub](/futterautomat-im-urlaub/), sofern die Seite im Projekt veröffentlicht ist.
-
-### Mehrtierhaushalt
-
-Mehr Tiere bedeuten mehr Speichel am Napf und häufigere Ausgaben. Reinige den Napf täglich, kontrolliere den Auslass häufiger und stelle sicher, dass nicht ein Tier die Portionen der anderen frisst.
-
-### Nach Krankheit
-
-Reinige alle Futterkontaktflächen gründlich und tausche das Futter aus. Zusätzliche Desinfektionsmaßnahmen hängen von Erkrankung, Material und tierärztlicher Empfehlung ab. Pauschale aggressive Desinfektion ist keine gute Standardlösung.
-
-### Längere Nichtbenutzung
-
-Leere das Gerät vollständig, reinige es und lasse alle Teile trocknen. Lagere es so, wie der Hersteller empfiehlt. Vor der erneuten Nutzung folgt ein kurzer Reinigungs- und Funktionstest.
 
 ## Reinigungsfreundlichkeit als Kaufkriterium
 
@@ -903,7 +879,7 @@ Reste trocknen nicht einfach zu Krümeln ein.
 
 Sie können an Deckel, Schalen, Scharnieren und Dichtungen haften.
 
-### Nach jeder Mahlzeit
+### Sofortmaßnahme nach jeder Mahlzeit
 
 - nicht gefressene Reste entfernen
 - Schale reinigen
@@ -1017,7 +993,7 @@ Hohe Luftfeuchtigkeit verändert die Bedingungen zusätzlich.
 
 ## Praxisplan für Trockenfutterautomaten
 
-### Täglich
+### Trockenfutter: täglich
 
 Napf kontrollieren.
 
@@ -1027,7 +1003,7 @@ Auf ungewöhnlichen Geruch achten.
 
 Ausgabe mindestens einmal beobachten, wenn möglich.
 
-### Wöchentlich
+### Trockenfutter: wöchentlich
 
 Napf gründlich reinigen.
 
@@ -1055,7 +1031,7 @@ Chargendaten des neuen Futters sichern.
 
 Testportion ausgeben.
 
-### Monatlich
+### Trockenfutter: monatlich
 
 Dichtungen auf Verschleiß prüfen.
 
@@ -1079,7 +1055,7 @@ Kabel, Stecker und Gehäuse auf Schäden prüfen.
 
 ## Praxisplan für Nassfutterautomaten
 
-### Nach jeder Mahlzeit
+### Nassfutter: nach jeder Mahlzeit
 
 Reste entfernen.
 
@@ -1089,7 +1065,7 @@ Deckelunterseite abwischen.
 
 Dichtung kontrollieren.
 
-### Täglich
+### Nassfutter: täglich
 
 Alle benutzten Schalen vollständig waschen.
 
@@ -1099,7 +1075,7 @@ Kühlakku oder Kühlbereich nach Anleitung prüfen.
 
 Gerät auf Geruch kontrollieren.
 
-### Wöchentlich
+### Nassfutter: wöchentlich
 
 Scharniere und Führungen reinigen.
 
@@ -1107,7 +1083,7 @@ Napfaufnahme und Geräteunterseite prüfen.
 
 Sensorflächen vorsichtig säubern.
 
-### Monatlich
+### Nassfutter: monatlich
 
 Dichtungen und Schließmechanismus prüfen.
 
@@ -1265,7 +1241,7 @@ Kleine Käfer, Motten, Larven oder Gespinste können aus dem Futtervorrat stamme
 
 Der Automat ist dann nicht nur oberflächlich zu reinigen.
 
-### Vorgehen
+### Vorgehen bei Schädlingsbefall
 
 Futter entsorgen oder nach fachlicher Empfehlung sichern.
 
@@ -1291,7 +1267,7 @@ Deshalb empfiehlt die FDA, Originalverpackung und Produktinformationen aufzubewa
 
 Quelle: [FDA: Proper Storage of Pet Food and Treats](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats).
 
-### Vorgehen
+### Vorgehen nach einem Rückruf
 
 Fütterung der betroffenen Charge stoppen.
 
