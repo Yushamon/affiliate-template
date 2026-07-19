@@ -6,7 +6,6 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import ConversionJourney from "../../components/ConversionJourney.astro";
-import AdvisorCta from "../../components/AdvisorCta.astro";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
@@ -140,10 +139,6 @@ const relatedItems = relatedEntries.map((related) => ({
         <Content />
       </AutoLinkContent>
     </article>
-
-    <div data-advisor-integration="comparison">
-      <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text="Beantworte fünf kurze Fragen und grenze Futterart, Steuerung, Tierzahl und Portionsbereich ein, bevor du einzelne Modelle vergleichst." />
-    </div>
 
     <ConversionJourney
       title="Von der Vorauswahl zur passenden Entscheidung"

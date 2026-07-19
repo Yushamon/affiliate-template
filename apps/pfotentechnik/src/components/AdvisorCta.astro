@@ -1,0 +1,6 @@
+---
+interface Props { title?: string; text?: string; }
+const { title = "Noch unsicher, welcher Futterautomat passt?", text = "Der kostenlose Berater grenzt anhand von Tier, Futterart, Portionsgröße und gewünschten Funktionen die passende Gerätekategorie ein." } = Astro.props;
+---
+<aside class="pt-advisor-cta" aria-labelledby="pt-advisor-cta-title"><div><span>Interaktive Auswahlhilfe</span><h2 id="pt-advisor-cta-title">{title}</h2><p>{text}</p></div><a href="/berater/futterautomat/">Berater starten</a></aside>
+<style>.pt-advisor-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:40px 0;padding:clamp(22px,4vw,34px);border-radius:24px;background:#eff7ef;border:1px solid rgba(46,125,50,.18)}.pt-advisor-cta div{max-width:720px}.pt-advisor-cta span{color:#2e7d32;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.pt-advisor-cta h2{margin:7px 0 9px;font-size:clamp(1.35rem,3vw,2rem)}.pt-advisor-cta p{margin:0;color:#475569;line-height:1.6}.pt-advisor-cta a{flex:0 0 auto;display:inline-flex;min-height:48px;align-items:center;padding:12px 19px;border-radius:999px;background:#2e7d32;color:#fff;font-weight:800;text-decoration:none}@media(max-width:720px){.pt-advisor-cta{align-items:flex-start;flex-direction:column}}</style>

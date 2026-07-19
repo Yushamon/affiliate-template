@@ -6,7 +6,6 @@ import HomePage from "@affiliate-core/components/home/HomePage.astro";
 import petTechHeroImage from "../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import { projectConfig } from "../project.config";
 import { buildHomepageModel } from "../domain/home/buildHomepageModel";
-import AdvisorCta from "../components/AdvisorCta.astro";
 
 const [
   products,
@@ -41,11 +40,4 @@ const optimizedOgImage = await getImage({
   includeBreadcrumbSchema={false}
 >
   <HomePage model={model} />
-  <div data-advisor-integration="homepage" class="advisor-home-entry">
-    <AdvisorCta />
-  </div>
 </ProjectLayout>
-
-<style>
-  .advisor-home-entry { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
-</style>

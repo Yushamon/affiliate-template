@@ -20,8 +20,6 @@
     "test:affiliate": "npm --workspace packages/affiliate-core test",
     "build": "npm run build:balkonspeicher && npm run build:pfotentechnik",
     "seo:audit": "node tools/seo-platform/audit.mjs",
-    "seo:audit:strict": "node tools/seo-platform/audit.mjs --strict",
-    "build:content-graph": "npm --workspace apps/pfotentechnik run build:content-graph",
-    "audit:content-graph": "npm --workspace apps/pfotentechnik run audit:content-graph"
+    "seo:audit:strict": "node tools/seo-platform/audit.mjs --strict"
   }
 }
