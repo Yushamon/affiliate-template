@@ -107,6 +107,14 @@ specs:
     value: "Katzen, kleine Hunde"
   - label: "Besonderheit"
     value: "Lokaler Timer"
+  - label: "Portionierung"
+    value: "zeitgesteuerte Trockenfutterportionen über das lokale Bedienfeld"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für einzelne Katzen mit einfachem, lokalem Fütterungsplan"
 capacity: "3 Liter"

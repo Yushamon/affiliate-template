@@ -113,6 +113,12 @@ specs:
     value: "USB-C-Netzteil oder 3 D-Batterien"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für einzelne Katzen und kleine Hunde mit festen Fütterungszeiten und geringem bis mittlerem Trockenfutterbedarf"
 capacity: "2 Liter"

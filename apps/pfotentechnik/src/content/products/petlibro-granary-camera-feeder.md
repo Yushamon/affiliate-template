@@ -56,6 +56,10 @@ specs:
   - { label: "Napfoption", value: "Einzel- oder Doppelschale" }
   - { label: "Stromversorgung", value: "Netzbetrieb mit Batterie-Backup" }
   - { label: "Geeignet für", value: "Katzen und kleine bis mittelgroße Hunde" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?", answer: "Nein. Das Modell ist nur für Trockenfutter vorgesehen." }
   - { question: "Ist die Videoaufzeichnung kostenlos?", answer: "Livebild und Grundfunktionen sind appbasiert. Für Cloud-Aufzeichnung und längere Speicherung können kostenpflichtige Dienste nötig sein." }

@@ -53,6 +53,13 @@ specs:
   - { label: "App", value: "PetSafe Pet Companion, kein Pflichtabo" }
   - { label: "Stromversorgung", value: "Netzteil" }
   - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Hat der PetSafe FreshFeed ein Batterie-Backup?", answer: "PetSafe nennt für das FreshFeed-Modell Netzbetrieb; ein Batterie-Backup ist in den ausgewerteten Produktdaten nicht angegeben." }
   - { question: "Ist die App kostenpflichtig?", answer: "Nein. Laut PetSafe ist für die FreshFeed-App kein Abonnement erforderlich." }

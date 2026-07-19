@@ -130,6 +130,11 @@ specs:
     value: "ca. 1,77 kg Netzversion oder 1,89 kg Akkuversion"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Ist jeder Dockstream 2 Smart kabellos?"
     answer: "Nein. PETLIBRO bietet kabelgebundene und akkubetriebene Varianten. Die genaue Ausführung muss vor dem Kauf geprüft werden."

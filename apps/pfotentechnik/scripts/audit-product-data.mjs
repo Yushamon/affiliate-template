@@ -207,9 +207,13 @@ function detectContradictions(product, errors, warnings) {
     ...product.weaknesses,
     ...product.specs.map((spec) => `${spec.label} ${spec.value}`)
   ].join(" "));
+  const evidenceWithoutNegativeLargeDogClaims = evidence
+    .replaceAll("nicht fuer grosse hunde", "");
 
   if (
-    evidence.includes("grosse hunde") &&
+    /(?:geeignet fuer|best for|fuer) grosse hunde/.test(
+      evidenceWithoutNegativeLargeDogClaims
+    ) &&
     evidence.includes("nicht fuer grosse hunde")
   ) {
     errors.push("Widerspruch: zugleich für große Hunde geeignet und nicht geeignet");
@@ -270,6 +274,8 @@ function parseProduct(frontmatter, source, file) {
   const imagesBlock = getBlock(frontmatter, "images");
   const decisionBlock = getBlock(frontmatter, "decision");
   const affiliateBlock = getBlock(frontmatter, "affiliate");
+  const inlineDecision = getObject(frontmatter, "decision");
+  const inlineAffiliate = getObject(frontmatter, "affiliate");
 
   return {
     file,
@@ -290,8 +296,14 @@ function parseProduct(frontmatter, source, file) {
     tags: getArray(frontmatter, "tags"),
     strengths: getArray(frontmatter, "strengths"),
     weaknesses: getArray(frontmatter, "weaknesses"),
-    decisionBestFor: getNestedArray(decisionBlock, "bestFor"),
-    decisionAttention: getNestedArray(decisionBlock, "attention"),
+    decisionBestFor:
+      getNestedArray(decisionBlock, "bestFor").length
+        ? getNestedArray(decisionBlock, "bestFor")
+        : parseInlineArray(inlineDecision.bestFor),
+    decisionAttention:
+      getNestedArray(decisionBlock, "attention").length
+        ? getNestedArray(decisionBlock, "attention")
+        : parseInlineArray(inlineDecision.attention),
     specs: getSpecs(frontmatter),
     images: {
       hero: hasNestedKey(imagesBlock, "hero"),
@@ -301,7 +313,8 @@ function parseProduct(frontmatter, source, file) {
     },
     affiliateUrl:
       getNestedScalar(affiliateBlock, "", "url") ??
-      getNestedScalar(frontmatter, "affiliate", "url"),
+      getNestedScalar(frontmatter, "affiliate", "url") ??
+      inlineAffiliate.url,
     source
   };
 }
@@ -389,6 +402,13 @@ function getNestedArray(block, key) {
     if (item) result.push(stripQuotes(item[1]));
   }
   return result;
+}
+
+function parseInlineArray(value) {
+  if (!value?.startsWith("[") || !value.endsWith("]")) return [];
+  return splitTopLevel(value.slice(1, -1), ",")
+    .map((item) => stripQuotes(item.trim()))
+    .filter(Boolean);
 }
 
 function getNestedScalar(blockOrFrontmatter, parent, child) {

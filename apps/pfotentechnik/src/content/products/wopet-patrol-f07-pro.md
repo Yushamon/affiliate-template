@@ -134,6 +134,10 @@ specs:
     value: "340 × 216 × 185 mm"
   - label: "Geeignet für"
     value: "Katzen und kleine bis mittelgroße Hunde"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Unterstützt der WOPET Patrol F07 Pro 5-GHz-WLAN?"
     answer: "Nein. WOPET nennt ausschließlich 2,4-GHz-WLAN."

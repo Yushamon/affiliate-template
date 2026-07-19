@@ -3,7 +3,7 @@ title: "PETKIT Eversweet 5 Mini"
 slug: "petkit-eversweet-5-mini"
 type: "product"
 layout: "product"
-description: "Sehr kompakter 1,35-Liter-Trinkbrunnen für Einzelkatzen und kleine Stellflächen."
+description: "Sehr kompakter 1-Liter-Keramik-Trinkbrunnen für Katzen, kleine Hunde und kleine Stellflächen."
 recommendation: "Kompakte Einstiegsoption für eine Katze, wenn wenig Stellfläche wichtiger ist als große Reserve, App-Funktionen oder kabelloser Betrieb."
 manufacturer:
   key: "petkit"
@@ -19,7 +19,7 @@ author:
   name: "PfotenTechnik Redaktion"
 seo:
   title: "PETKIT Eversweet 5 Mini im Check"
-  description: "PETKIT Eversweet 5 Mini mit rund 1,35 Litern Kapazität, kompakter Bauform und mehrstufiger Filterung eingeordnet."
+  description: "PETKIT Eversweet 5 Mini mit 1 Liter Kapazität, Keramikeinsatz, Bluetooth und mehrstufiger Filterung eingeordnet."
   canonical: "/produkt/petkit-eversweet-5-mini/"
   sitemap: true
   priority: 0.8
@@ -67,7 +67,7 @@ decision:
     - "sehr kleine Stellflächen"
     - "Haushalte ohne Bedarf an App oder Akku"
   attention:
-    - "geringe Kapazität von rund 1,35 Litern"
+    - "geringe Kapazität von 1 Liter"
     - "häufigere Füllstandskontrolle erforderlich"
     - "älteres Modell mit eingeschränkter aktueller Herstellerdokumentation"
 review:
@@ -79,7 +79,7 @@ strengths:
   - "mehrstufige Filterung"
   - "übersichtliche Technik ohne App-Zwang"
 weaknesses:
-  - "nur etwa 1,35 Liter Kapazität"
+  - "nur 1 Liter Kapazität"
   - "keine App- oder Akku-Funktionen"
   - "häufigeres Nachfüllen nötig"
   - "aktuelle Ersatzteil- und Modellverfügbarkeit prüfen"
@@ -95,17 +95,30 @@ comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
 specs:
   - label: "Kapazität"
-    value: "ca. 1,35 Liter"
+    value: "1 Liter"
+  - label: "Material"
+    value: "Keramik, PP und Silikon"
   - label: "Stromversorgung"
     value: "Netzbetrieb"
-  - label: "App"
-    value: "Nein"
+  - label: "Verbindung"
+    value: "Bluetooth"
   - label: "Filter"
     value: "mehrstufig"
   - label: "Reinigung"
     value: "regelmäßig vollständig zerlegen und von Hand reinigen"
   - label: "Geeignet für"
-    value: "vor allem eine Katze"
+    value: "Katzen und kleine Hunde"
+  - label: "Maße"
+    value: "15,4 × 15,4 × 13,3 cm"
+  - label: "Gewicht"
+    value: "1,4 kg"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "App", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Reicht der PETKIT Eversweet 5 Mini für mehrere Katzen?"
     answer: "Die Kapazität ist dafür knapp. Für mehrere Katzen sind größere Modelle meist praktischer."

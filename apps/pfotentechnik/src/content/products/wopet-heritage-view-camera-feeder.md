@@ -109,6 +109,14 @@ specs:
     value: "Katzen, kleine bis mittelgroße Hunde"
   - label: "Besonderheit"
     value: "Kamera und Zwei-Wege-Audio"
+  - label: "Portionierung"
+    value: "1 bis 6 Mahlzeiten pro Tag; 1 bis 20 Portionen à etwa 10 g pro Mahlzeit"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für Tierhalter mit großem Trockenfuttervorrat und Kamera-Wunsch"
 capacity: "6 Liter"

@@ -107,6 +107,14 @@ specs:
     value: "Katzen, kleine Hunde"
   - label: "Besonderheit"
     value: "Mikrochip-Zugang und Portionswaage"
+  - label: "Portionierung"
+    value: "manuell eingefüllte Portion mit integrierter Waage; keine automatische Futterausgabe"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für Katzen und kleine Hunde mit individuellem Futterzugang"
 capacity: "400 ml"

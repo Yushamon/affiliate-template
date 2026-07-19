@@ -53,7 +53,15 @@ specs:
   - { label: "Portionierung", value: "1/8 bis 4 Cups" }
   - { label: "Bedienung", value: "Lokales LCD und fünf Tasten" }
   - { label: "Stromversorgung", value: "4 D-Batterien; Netzadapter optional" }
+  - { label: "Geeignet für", value: "Katzen sowie kleine und mittelgroße Hunde" }
   - { label: "Maße", value: "Etwa 48,3 × 22,9 × 31,8 cm" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Benötigt der Healthy Pet Simply Feed WLAN?", answer: "Nein. Zeitplan und Portionen werden direkt am Gerät eingestellt." }
   - { question: "Ist er für große Hunde geeignet?", answer: "PetSafe gibt ihn für Katzen sowie kleine bis mittelgroße Hunde an. Große Hunde können Napf, Gehäuse und Zugang mechanisch überfordern." }
@@ -66,4 +74,3 @@ capacity: "24 Cups / etwa 5,7 Liter"
 Der PetSafe Healthy Pet Simply Feed ist funktional älter als viele App-Modelle, bleibt aber durch seinen Fördermechanismus relevant. Wer WLAN bewusst vermeiden möchte und größere Portionen benötigt, bekommt mehr Spielraum als bei vielen kompakten Rotorautomaten.
 
 Quellen: [PetSafe Produktseite](https://www.petsafe.com/p/healthy-pet-simply-feed/PFD00-14574/), [PetSafe Handbuch](https://www.petsafe.net/media/manuals/PFD00-14574_Healthy_Pet_Simply_Feed_Product_Manual.pdf) und [Petco-Nutzerbewertungen](https://www.petco.com/product/petsafe-healthy-pet-simply-feed-automatic-dog-and-cat-feeder-24-cups-2466146).
-

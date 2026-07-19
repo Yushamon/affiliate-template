@@ -49,10 +49,18 @@ specs:
   - { label: "Futterart", value: "Trockenfutter" }
   - { label: "Kapazität", value: "4 Liter / etwa 1,7 kg" }
   - { label: "Krokettengröße", value: "2 bis 12 mm" }
-  - { label: "Portion", value: "Etwa 6 bis 10 g, futterabhängig" }
+  - { label: "Portionierung", value: "Etwa 6 bis 10 g je Ausgabeeinheit, futterabhängig" }
+  - { label: "Stromversorgung", value: "USB-A, 5 V/1 A; optional 3 LR20/D-Batterien als Backup" }
+  - { label: "Geeignet für", value: "Katzen sowie kleine und mittelgroße Hunde" }
   - { label: "Funk", value: "Zigbee 3.0, Aqara Hub erforderlich" }
   - { label: "Notstrom", value: "3 LR20/D-Batterien" }
   - { label: "Maße", value: "19,3 × 19,3 × 31,2 cm" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Funktioniert der Aqara C1 ohne Internet?", answer: "Bereits gespeicherte Fütterungspläne sollen lokal weiterlaufen. Für Fernzugriff und viele Automationen ist der Aqara Hub erforderlich." }
   - { question: "Misst der C1 wirklich Gramm?", answer: "Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage." }
@@ -65,4 +73,3 @@ capacity: "4 Liter"
 Der Aqara C1 ist nicht der jüngste Automat im Feld, aber 2026 weiterhin eines der wenigen ernsthaften Zigbee-Modelle. Seine Stärke ist nicht eine lange Featureliste, sondern die Kombination aus lokalen Plänen, Batterie-Reserve und Smart-Home-Szenen.
 
 Quellen: [Aqara Produktseite](https://www.aqara.com/eu/product/smart-pet-feeder-c1/), [Aqara FAQ](https://www.aqara.com/eu/product/smart-pet-feeder-c1/faq/) und [aktuelle Nutzererfahrungen](https://www.reddit.com/r/Aqara/comments/1i73xau/aqara_pet_feeder/).
-

@@ -200,8 +200,19 @@ specs:
   - label: RFID
     value: Nein
 
+  - label: Stromversorgung
+    value: "6-V-Netzteil; Batterie-Backup"
+
+  - label: Portionierung
+    value: "1 bis 10 Mahlzeiten pro Tag; 1 bis 5 Portionen beziehungsweise 10 bis 50 g pro Mahlzeit"
+
   - label: Geeignet für
     value: Katzen und kleine Hunde
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 
 faq:
 

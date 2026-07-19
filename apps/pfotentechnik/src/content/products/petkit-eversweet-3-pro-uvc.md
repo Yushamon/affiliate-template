@@ -136,6 +136,11 @@ specs:
     value: "1,28 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Reicht der PETKIT Eversweet 3 Pro UVC für mehrere Katzen?"
     answer: "Technisch können mehrere Tiere daraus trinken. Mit 1,6 Litern wird der Tank in einem Mehrkatzenhaushalt aber schneller knapp und muss häufiger kontrolliert und gereinigt werden."

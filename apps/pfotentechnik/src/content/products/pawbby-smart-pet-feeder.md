@@ -107,6 +107,14 @@ specs:
     value: "Katzen, kleine Hunde"
   - label: "Besonderheit"
     value: "Xiaomi-Home-Umfeld"
+  - label: "Portionierung"
+    value: "zeitgesteuerte Trockenfutterportionen per App"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für Smart-Home-Nutzer, die eine kompatible Modellvariante finden"
 capacity: "Modellabhängig, häufig 3,6 Liter"

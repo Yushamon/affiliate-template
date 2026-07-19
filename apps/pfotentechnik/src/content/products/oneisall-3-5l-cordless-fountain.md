@@ -35,8 +35,21 @@ specs:
   - { label: Kapazität, value: "3,5 Liter" }
   - { label: Material, value: "Edelstahl" }
   - { label: Betrieb, value: "Akku" }
+  - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: Lautstärke, value: "Herstellerangabe unter 30 dB" }
+  - { label: Akku, value: "5000 mAh; Herstellerangabe bis zu 60 Tage" }
+  - { label: Filter, value: "fünfstufig" }
+  - { label: Ersatzfilter, value: "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln" }
+  - { label: Maße, value: "ca. 20 × 20 × 15,2 cm" }
+  - { label: Gewicht, value: "ca. 0,91 kg" }
   - { label: Modus, value: "Sensor und Intervall" }
   - { label: Laufzeit, value: "Herstellerangabe bis 60 Tage" }
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "App", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Läuft das Wasser dauerhaft?", answer: "Je nach gewähltem Modus wird der Fluss durch Bewegung oder in Intervallen aktiviert." }
   - { question: "Sind 60 Tage Laufzeit realistisch?", answer: "Das ist ein Maximalwert des Herstellers; Häufigkeit der Aktivierung und Akkuzustand wirken sich stark aus." }
@@ -44,4 +57,4 @@ faq:
 
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.
 
-**Quellen:** [oneisall Produktseite](https://oneisall.com/products/oneisall-3-5l-cordless-smart-cat-water-fountain-stainless-steel), [WIRED Vergleich](https://www.wired.com/gallery/the-best-cat-water-fountains/). Bild: redaktionelle Visualisierung.
+**Quelle:** [oneisall Produktseite](https://oneisall.com/products/oneisall-3-5l-cordless-black-stainless-steel-pet-water-fountain-with-3pcs-filters). Bild: redaktionelle Visualisierung.

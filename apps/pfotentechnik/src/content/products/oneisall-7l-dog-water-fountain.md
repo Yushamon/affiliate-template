@@ -37,6 +37,18 @@ specs:
   - { label: Material, value: "Edelstahl 304 und Kunststoff" }
   - { label: Lautstärke, value: "Herstellerangabe ca. 35 dB" }
   - { label: Betrieb, value: "Netzteil" }
+  - { label: "Geeignet für", value: "Große Hunde und Mehrtierhaushalte" }
+  - { label: Filter, value: "fünfstufig" }
+  - { label: Ersatzfilter, value: "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln" }
+  - { label: Reinigung, value: "Pumpe und Auslauf alle 1 bis 2 Wochen reinigen" }
+  - { label: Maße, value: "ca. 31,8 × 31,5 × 12,4 cm" }
+  - { label: Gewicht, value: "ca. 1,36 kg" }
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "App", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Eignet sich der Brunnen für große Hunde?", answer: "Ja. Volumen und Trinkfläche sind auf einen deutlich höheren Wasserbedarf ausgelegt." }
   - { question: "Muss ein 7-Liter-Tank seltener gereinigt werden?", answer: "Nein. Tankgröße verlängert nicht automatisch die hygienisch sinnvolle Standzeit des Wassers." }
@@ -44,4 +56,4 @@ faq:
 
 Der oneisall 7L ist auf Volumen statt Smart-Funktionen ausgelegt. Gerade für große Hunde ist die ergonomische Trinkfläche wichtiger als eine App.
 
-**Quelle:** [oneisall 7L Dog Water Fountain](https://www.oneisallpetclippers.com/product/oneisall-dog-water-fountain-bowl-dispenser-7l-quiet-automatic-stainless-steel-pet-water-fountain-for-large-dog100-bpa-free-for-cats-and-small-and-medium-large-sized-dogs/). Bild: redaktionelle Visualisierung.
+**Quelle:** [oneisall 7L Dog Water Fountain](https://oneisall.com/products/oneisall-7l-dog-water-fountain-with-visual-water-level-for-large-dogs). Bild: redaktionelle Visualisierung.

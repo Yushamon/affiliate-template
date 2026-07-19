@@ -1,36 +1,26 @@
 {
   "summary": {
-    "generatedAt": "2026-07-16T20:04:00.343Z",
-    "totalProducts": 55,
+    "generatedAt": "2026-07-19T19:51:06.080Z",
+    "totalProducts": 58,
     "byCategory": {
-      "futterautomaten": 35,
+      "futterautomaten": 38,
       "trinkbrunnen": 20
     },
-    "errors": 73,
-    "warnings": 503,
+    "errors": 0,
+    "warnings": 71,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
   "products": [
     {
-      "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
+      "file": "src\\content\\products\\aqara-smart-pet-feeder-c1.md",
       "slug": "aqara-smart-pet-feeder-c1",
       "title": "Aqara Smart Pet Feeder C1",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -46,8 +36,16 @@
           "value": "2 bis 12 mm"
         },
         {
-          "label": "Portion",
-          "value": "Etwa 6 bis 10 g, futterabhängig"
+          "label": "Portionierung",
+          "value": "Etwa 6 bis 10 g je Ausgabeeinheit, futterabhängig"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-A, 5 V/1 A; optional 3 LR20/D-Batterien als Backup"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen sowie kleine und mittelgroße Hunde"
         },
         {
           "label": "Funk",
@@ -60,73 +58,167 @@
         {
           "label": "Maße",
           "value": "19,3 × 19,3 × 31,2 cm"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 46
+      "completeness": 94
     },
     {
-      "file": "src/content/products/cat-mate-335-pet-fountain.md",
+      "file": "src\\content\\products\\cat-mate-335-pet-fountain.md",
       "slug": "cat-mate-335-pet-fountain",
       "title": "Cat Mate Pet Fountain 335",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "CP335 / 335"
+        },
+        {
           "label": "Kapazität",
-          "value": "ca. 2 Liter"
+          "value": "2 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "BPA-freies Polypropylen"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkhöhen",
+          "value": "drei Ebenen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Niedervolt-Netzbetrieb"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "an der Pumpe einstellbar"
+        },
+        {
+          "label": "Filter",
+          "value": "Polymer-Aktivkohle oder dreistufig mit Ionenaustauschharz"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung monatlich"
+        },
+        {
+          "label": "Wasserwechsel",
+          "value": "Herstellerempfehlung alle zwei bis drei Tage"
+        },
+        {
+          "label": "Pumpenreinigung",
+          "value": "monatlich, bei hartem Wasser häufiger"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/cat-mate-c200.md",
+      "file": "src\\content\\products\\cat-mate-c200.md",
       "slug": "cat-mate-c200",
       "title": "Cat Mate C200",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Nass- und Trockenfutter"
         },
         {
-          "label": "App-Steuerung",
+          "label": "Kapazität",
+          "value": "zwei Fächer mit je bis zu 400 g"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "zwei"
+        },
+        {
+          "label": "Timer",
+          "value": "zwei analoge 48-Stunden-Timer"
+        },
+        {
+          "label": "App",
           "value": "Nein"
         },
         {
@@ -134,52 +226,76 @@
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "2 Schalen mit je bis zu 400 g"
-        },
-        {
-          "label": "Timer",
-          "value": "Zwei separate Timer, bis zu 48 Stunden"
-        },
-        {
           "label": "Kühlung",
-          "value": "Kühlakku, keine aktive Kühlung"
+          "value": "ein Kühlakku, keine aktive Kühlung"
         },
         {
           "label": "Stromversorgung",
-          "value": "1 AA-Batterie"
+          "value": "eine AA-Batterie"
+        },
+        {
+          "label": "Batterielaufzeit",
+          "value": "Herstellerangabe bis zwölf Monate"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freies Polypropylen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Deckel und Schalen bei niedriger Temperatur spülmaschinengeeignet"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen und kleine Hunde"
+          "value": "zwei Katzen oder einen kleinen Hund"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/cat-mate-c300.md",
+      "file": "src\\content\\products\\cat-mate-c300.md",
       "slug": "cat-mate-c300",
       "title": "Cat Mate C300",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Nass- und Trockenfutter"
         },
         {
-          "label": "App-Steuerung",
+          "label": "Kapazität",
+          "value": "drei Fächer; aktuelle Produktseite nennt 170 g je Fach, Supportseite 330 g"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "ein Fach sofort, zwei Zeiten programmierbar"
+        },
+        {
+          "label": "Timer",
+          "value": "digital"
+        },
+        {
+          "label": "App",
           "value": "Nein"
         },
         {
@@ -187,140 +303,212 @@
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "3 Schalen mit je bis zu 330 g"
-        },
-        {
-          "label": "Timer",
-          "value": "Bis zu 48 Stunden"
-        },
-        {
           "label": "Kühlung",
-          "value": "Kühlakku"
+          "value": "ein Kühlakku, keine aktive Kühlung"
         },
         {
           "label": "Stromversorgung",
-          "value": "3 AA-Batterien"
+          "value": "drei AA-Batterien"
+        },
+        {
+          "label": "Batterielaufzeit",
+          "value": "Herstellerangabe etwa zwölf Monate"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freies Polypropylen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Deckel und Einsatz spülmaschinengeeignet"
+        },
+        {
+          "label": "Garantie",
+          "value": "Herstellerangabe drei Jahre"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "bis zu zwei Katzen oder einen kleinen Hund"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\cat-mate-c500.md",
+      "slug": "cat-mate-c500",
+      "title": "Cat Mate C500",
+      "category": "futterautomaten",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Futterart",
+          "value": "Nass-, Trocken- und Mischfutter"
+        },
+        {
+          "label": "Kapazität",
+          "value": "fünf Fächer mit je 155 g"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "ein Fach sofort, vier Zeiten programmierbar"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nein"
+        },
+        {
+          "label": "Kühlung",
+          "value": "zwei Kühlakkus, keine aktive Kühlung"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "drei AA-Batterien"
+        },
+        {
+          "label": "Batterielaufzeit",
+          "value": "Herstellerangabe bis etwa zwölf Monate"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Deckel und Futtereinsatz spülmaschinengeeignet"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "bis zu zwei Katzen oder einen kleinen Hund"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\cat-mate-shell-fountain.md",
+      "slug": "cat-mate-shell-fountain",
+      "title": "Cat Mate Shell Pet Fountain",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "410, 411, 412 oder 413 je nach Farbvariante"
+        },
+        {
+          "label": "Kapazität",
+          "value": "3 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freies Polypropylen"
+        },
+        {
+          "label": "Trinkhöhen",
+          "value": "zwei Ebenen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Niedervolt-Netzbetrieb mit etwa 3 m Kabel"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "an der Pumpe einstellbar"
+        },
+        {
+          "label": "Filter",
+          "value": "Polymer-Aktivkohle oder dreistufig mit Ionenaustauschharz"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung monatlich"
+        },
+        {
+          "label": "Wasserwechsel",
+          "value": "Herstellerempfehlung alle zwei bis drei Tage"
+        },
+        {
+          "label": "Pumpenreinigung",
+          "value": "monatlich, bei hartem Wasser häufiger"
         },
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/cat-mate-c500.md",
-      "slug": "cat-mate-c500",
-      "title": "Cat Mate C500",
-      "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
-      ],
-      "specs": [
-        {
-          "label": "Futterart",
-          "value": "Nass- und Trockenfutter"
-        },
-        {
-          "label": "App-Steuerung",
-          "value": "Nein"
-        },
-        {
-          "label": "Kamera",
-          "value": "Nein"
-        },
-        {
-          "label": "Kapazität",
-          "value": "5 Mahlzeiten"
-        },
-        {
-          "label": "Stromversorgung",
-          "value": "Batteriebetrieb"
-        },
-        {
-          "label": "Geeignet für",
-          "value": "Katzen, kleine Hunde"
-        },
-        {
-          "label": "Kühlung",
-          "value": "Kühlakkus, nicht aktiv gekühlt"
-        }
-      ],
-      "completeness": 69
-    },
-    {
-      "file": "src/content/products/cat-mate-shell-fountain.md",
-      "slug": "cat-mate-shell-fountain",
-      "title": "Cat Mate Shell Pet Fountain",
-      "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
-      "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
-      ],
-      "specs": [
-        {
-          "label": "Kapazität",
-          "value": "ca. 3 Liter"
-        },
-        {
-          "label": "Zielgruppe",
-          "value": "Katzen"
-        },
-        {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
-        }
-      ],
-      "completeness": 44
-    },
-    {
-      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "file": "src\\content\\products\\catit-pixi-smart-6-meal-feeder.md",
       "slug": "catit-pixi-smart-6-meal-feeder",
       "title": "Catit PIXI Smart 6-Meal Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: kapazität",
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: batterie",
-        "capacity ist vorhanden, aber nicht als Spec normalisiert"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
           "label": "Futterart",
           "value": "Nassfutter, Trockenfutter und Snacks"
+        },
+        {
+          "label": "Kapazität",
+          "value": "6 Fächer mit je 170 ml"
         },
         {
           "label": "Mahlzeiten",
@@ -339,33 +527,53 @@
           "value": "App und LCD-Touchpanel"
         },
         {
+          "label": "Stromversorgung",
+          "value": "USB-Netzteil, Eingang 5 V/1 A; Backup mit 4 C/LR14-Batterien"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen"
+        },
+        {
           "label": "Maße",
-          "value": "32 × 34 × 9,1 cm"
+          "value": "32 × 34,5 × 9,2 cm"
         },
         {
           "label": "Gewicht",
-          "value": "2,25 kg"
+          "value": "1,204 kg leer; 1,708 kg mit Kühlakkus"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 46
+      "completeness": 94
     },
     {
-      "file": "src/content/products/catit-pixi-vision-smart-feeder.md",
+      "file": "src\\content\\products\\catit-pixi-vision-smart-feeder.md",
       "slug": "catit-pixi-vision-smart-feeder",
       "title": "Catit PIXI Vision Smart Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -397,28 +605,71 @@
           "value": "4 C/LR14-Batterien"
         },
         {
+          "label": "Stromversorgung",
+          "value": "USB-Netzteil, Eingang 5 V/2 A und 10 W; Backup mit 4 C/LR14-Batterien"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen"
+        },
+        {
+          "label": "Portionierung",
+          "value": "Individuell einstellbare Mahlzeitengrößen, bis zu 12 Mahlzeiten pro Tag"
+        },
+        {
           "label": "Maße",
           "value": "19,1 × 32,1 × 34,2 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,782 kg"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 52
+      "completeness": 94
     },
     {
-      "file": "src/content/products/honeyguardian-a305d.md",
+      "file": "src\\content\\products\\honeyguardian-a305d.md",
       "slug": "honeyguardian-a305d",
       "title": "HoneyGuardian A305D",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Empfohlenes Feld fehlt: napf"
       ],
       "specs": [
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -456,24 +707,42 @@
           "value": "Zwei Katzen oder kleine Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 94
     },
     {
-      "file": "src/content/products/honeyguardian-a68.md",
+      "file": "src\\content\\products\\honeyguardian-a68.md",
       "slug": "honeyguardian-a68",
       "title": "HoneyGuardian A68 Smart Pet Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -503,76 +772,108 @@
           "value": "Katzen und kleine bis mittelgroße Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 97
     },
     {
-      "file": "src/content/products/honeyguardian-smart-pet-feeder-s305d.md",
+      "file": "src\\content\\products\\honeyguardian-smart-pet-feeder-s305d.md",
       "slug": "honeyguardian-smart-pet-feeder-s305d",
       "title": "HoneyGuardian Smart Pet Feeder S305D",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
           "label": "Futterart",
           "value": "Trockenfutter"
-        },
-        {
-          "label": "App-Steuerung",
-          "value": "Ja"
-        },
-        {
-          "label": "Kamera",
-          "value": "Nein"
         },
         {
           "label": "Kapazität",
           "value": "5 Liter"
         },
         {
+          "label": "App",
+          "value": "Ja, abhängig von der konkreten Version"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nein"
+        },
+        {
+          "label": "Napfmaterial",
+          "value": "Edelstahl"
+        },
+        {
           "label": "Stromversorgung",
-          "value": "Netzteil, Batteriereserve"
+          "value": "Netzteil und Batteriereserve"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine Hunde"
+          "value": "Katzen und kleine Hunde"
         },
         {
-          "label": "Besonderheit",
-          "value": "Edelstahl-Napf"
+          "label": "Portionierung",
+          "value": "mehrere planbare Mahlzeiten; konkrete Portionsschritte unterscheiden sich je nach S305D-Version"
         }
       ],
-      "completeness": 66
+      "completeness": 94
     },
     {
-      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
+      "file": "src\\content\\products\\imipaw-3l-automatic-cat-feeder.md",
       "slug": "imipaw-3l-automatic-cat-feeder",
       "title": "IMIPAW 3L Automatic Cat Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -600,70 +901,108 @@
         {
           "label": "Besonderheit",
           "value": "Lokaler Timer"
+        },
+        {
+          "label": "Portionierung",
+          "value": "zeitgesteuerte Trockenfutterportionen über das lokale Bedienfeld"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/oneisall-2-2l-cordless-fountain.md",
+      "file": "src\\content\\products\\oneisall-2-2l-cordless-fountain.md",
       "slug": "oneisall-2-2l-cordless-fountain",
       "title": "oneisall 2,2L Cordless Cat Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PW13"
+        },
         {
           "label": "Kapazität",
           "value": "2,2 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "Polypropylen (PP)"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Stromversorgung",
+          "value": "Akku, Laden über USB-C mit 5 V/1 A"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis 30 Tage"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Bewegungssensor und Dauerfluss"
+        },
+        {
+          "label": "Filter",
+          "value": "fünfstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung alle zwei bis vier Wochen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 0,62 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
+      "file": "src\\content\\products\\oneisall-2-in-1-feeder-water.md",
       "slug": "oneisall-2-in-1-feeder-water",
       "title": "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: kapazität",
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -675,8 +1014,28 @@
           "value": "Trockenfutter"
         },
         {
+          "label": "Kapazität",
+          "value": "Vom Hersteller nicht ausgewiesen"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 6 Mahlzeiten pro Tag mit einstellbaren Portionen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-C-Netzteil mit Batterie-Backup"
+        },
+        {
           "label": "Wasserstation",
           "value": "Integrierte separate Einheit"
+        },
+        {
+          "label": "Material",
+          "value": "Edelstahl-Näpfe und Edelstahlbasis"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Edelstahl-Näpfe laut Hersteller spülmaschinengeeignet"
         },
         {
           "label": "Geeignet für",
@@ -685,72 +1044,135 @@
         {
           "label": "Marktstart",
           "value": "2026"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 40
+      "completeness": 94
     },
     {
-      "file": "src/content/products/oneisall-3-2l-cordless-fountain.md",
+      "file": "src\\content\\products\\oneisall-3-2l-cordless-fountain.md",
       "slug": "oneisall-3-2l-cordless-fountain",
       "title": "oneisall 3,2L Cordless Cat Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PW14"
+        },
         {
           "label": "Kapazität",
           "value": "3,2 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "ABS und Edelstahl"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkfläche",
+          "value": "Edelstahl"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Akku, Laden über USB-C mit 5 V/1 A"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis 30 Tage"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Bewegungssensor und Dauerfluss"
+        },
+        {
+          "label": "Filter",
+          "value": "fünfstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung alle zwei bis vier Wochen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 0,65 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
+      "file": "src\\content\\products\\oneisall-3-5l-cordless-fountain.md",
       "slug": "oneisall-3-5l-cordless-fountain",
       "title": "oneisall 3,5L Cordless Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -766,49 +1188,117 @@
           "value": "Akku"
         },
         {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Herstellerangabe unter 30 dB"
+        },
+        {
+          "label": "Akku",
+          "value": "5000 mAh; Herstellerangabe bis zu 60 Tage"
+        },
+        {
+          "label": "Filter",
+          "value": "fünfstufig"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln"
+        },
+        {
+          "label": "Maße",
+          "value": "ca. 20 × 20 × 15,2 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 0,91 kg"
+        },
+        {
           "label": "Modus",
           "value": "Sensor und Intervall"
         },
         {
           "label": "Laufzeit",
           "value": "Herstellerangabe bis 60 Tage"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "App",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 48
+      "completeness": 97
     },
     {
-      "file": "src/content/products/oneisall-5l-automatic-cat-feeder.md",
+      "file": "src\\content\\products\\oneisall-5l-automatic-cat-feeder.md",
       "slug": "oneisall-5l-automatic-cat-feeder",
       "title": "oneisall 5L Automatic Cat Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
         },
         {
-          "label": "App-Steuerung",
-          "value": "Je nach Variante"
+          "label": "Kapazität",
+          "value": "5 Liter"
+        },
+        {
+          "label": "Napfanzahl",
+          "value": "zwei Näpfe"
+        },
+        {
+          "label": "App",
+          "value": "je nach Variante"
         },
         {
           "label": "Kamera",
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "5 Liter"
+          "label": "Zugangskontrolle",
+          "value": "Nein"
         },
         {
           "label": "Stromversorgung",
@@ -816,37 +1306,23 @@
         },
         {
           "label": "Geeignet für",
-          "value": "Ein bis zwei Katzen"
+          "value": "ein bis zwei Katzen"
         },
         {
-          "label": "Besonderheit",
-          "value": "Doppelschale"
+          "label": "Portionierung",
+          "value": "programmierbare Trockenfutterportionen auf zwei Näpfe verteilt"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/oneisall-7l-dog-water-fountain.md",
+      "file": "src\\content\\products\\oneisall-7l-dog-water-fountain.md",
       "slug": "oneisall-7l-dog-water-fountain",
       "title": "oneisall 7L Dog Water Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -868,28 +1344,88 @@
         {
           "label": "Betrieb",
           "value": "Netzteil"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Große Hunde und Mehrtierhaushalte"
+        },
+        {
+          "label": "Filter",
+          "value": "fünfstufig"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Pumpe und Auslauf alle 1 bis 2 Wochen reinigen"
+        },
+        {
+          "label": "Maße",
+          "value": "ca. 31,8 × 31,5 × 12,4 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 1,36 kg"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "App",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 51
+      "completeness": 97
     },
     {
-      "file": "src/content/products/pawbby-smart-pet-feeder.md",
+      "file": "src\\content\\products\\pawbby-smart-pet-feeder.md",
       "slug": "pawbby-smart-pet-feeder",
       "title": "PAWBBY Smart Pet Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -917,29 +1453,23 @@
         {
           "label": "Besonderheit",
           "value": "Xiaomi-Home-Umfeld"
+        },
+        {
+          "label": "Portionierung",
+          "value": "zeitgesteuerte Trockenfutterportionen per App"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/pawsync-smart-pet-feeder.md",
+      "file": "src\\content\\products\\pawsync-smart-pet-feeder.md",
       "slug": "pawsync-smart-pet-feeder",
       "title": "PawSync Smart Pet Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -965,213 +1495,415 @@
         {
           "label": "App",
           "value": "PawSync App"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Portionierung",
+          "value": "gewichtskontrollierte Ausgabe mit integrierter Napfwaage"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 53
+      "completeness": 94
     },
     {
-      "file": "src/content/products/petkit-eversweet-3-pro-uvc.md",
+      "file": "src\\content\\products\\petkit-eversweet-3-pro-uvc.md",
       "slug": "petkit-eversweet-3-pro-uvc",
       "title": "PETKIT Eversweet 3 Pro UVC",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: kapazität",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Nutzvolumen",
-          "value": "1,6 Liter"
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
           "label": "Modell",
           "value": "P4108"
         },
         {
-          "label": "Stromversorgung",
-          "value": "USB/Netzteil"
+          "label": "Kapazität",
+          "value": "1,6 Liter"
         },
         {
           "label": "Material",
-          "value": "ABS, Silikon und Edelstahl 304"
+          "value": "BPA-freies ABS, Silikon, PP und Edelstahl 304"
         },
         {
-          "label": "Verbindung",
-          "value": "Bluetooth/App"
+          "label": "Trinkbehälter",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-Kabel, 5 V/1 A; Netzteil nicht enthalten"
+        },
+        {
+          "label": "Nennleistung",
+          "value": "2 W"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT-App über Bluetooth"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Normal, Smart und Nicht-stören"
+        },
+        {
+          "label": "Filter",
+          "value": "vierstufiger Filter 3.0 plus Pumpenvorfilter"
+        },
+        {
+          "label": "UVC",
+          "value": "kabellose UVC-Pumpe"
+        },
+        {
+          "label": "Trockenlaufschutz",
+          "value": "vorhanden"
+        },
+        {
+          "label": "Wasserreserve bei Stromausfall",
+          "value": "60 ml in der Trinkschale"
+        },
+        {
+          "label": "Reinigung",
+          "value": "vollständig zerlegbar; elektrische Basis nicht eintauchen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "195 × 195 × 148 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,28 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 38
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-eversweet-5-mini.md",
+      "file": "src\\content\\products\\petkit-eversweet-5-mini.md",
       "slug": "petkit-eversweet-5-mini",
       "title": "PETKIT Eversweet 5 Mini",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Kapazität",
-          "value": "ca. 1,35 Liter"
-        },
-        {
-          "label": "Zielgruppe",
-          "value": "Katzen"
-        },
-        {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
-        }
-      ],
-      "completeness": 44
-    },
-    {
-      "file": "src/content/products/petkit-eversweet-max-2-uvc.md",
-      "slug": "petkit-eversweet-max-2-uvc",
-      "title": "PETKIT Eversweet Max 2 UVC",
-      "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
-      "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
-      ],
-      "specs": [
-        {
-          "label": "Kapazität",
-          "value": "3 Liter"
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
           "label": "Akku",
-          "value": "Herstellerangabe bis 83 Tage"
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "Lautstärke",
-          "value": "Herstellerangabe 26 dB"
+          "label": "App",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "Hygiene",
-          "value": "UVC und Filter"
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kapazität",
+          "value": "1 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "Keramik, PP und Silikon"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb"
         },
         {
           "label": "Verbindung",
-          "value": "App/Bluetooth"
+          "value": "Bluetooth"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufig"
+        },
+        {
+          "label": "Reinigung",
+          "value": "regelmäßig vollständig zerlegen und von Hand reinigen"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Maße",
+          "value": "15,4 × 15,4 × 13,3 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,4 kg"
         }
       ],
-      "completeness": 34
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-eversweet-max-cordless.md",
-      "slug": "petkit-eversweet-max-cordless",
-      "title": "PETKIT Eversweet Max Cordless",
+      "file": "src\\content\\products\\petkit-eversweet-max-2-uvc.md",
+      "slug": "petkit-eversweet-max-2-uvc",
+      "title": "PETKIT Eversweet Max 2 UVC",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "P4116"
+        },
         {
           "label": "Kapazität",
           "value": "3 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "BPA-freies ABS und Edelstahl 304"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkfläche",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB 5 V/1 A und integrierter Akku"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis 83 Tage"
+        },
+        {
+          "label": "Nennleistung",
+          "value": "2 W"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT App über Bluetooth"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufiger Filter und Pumpenvorfilter"
+        },
+        {
+          "label": "UVC",
+          "value": "UVC-Pumpe vorhanden"
+        },
+        {
+          "label": "Reinigung",
+          "value": "laut Hersteller vollständig spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "265 × 171 × 191 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,2 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
+      "file": "src\\content\\products\\petkit-eversweet-max-cordless.md",
+      "slug": "petkit-eversweet-max-cordless",
+      "title": "PETKIT Eversweet Max Cordless",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "P4115"
+        },
+        {
+          "label": "Kapazität",
+          "value": "3 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freies ABS und Edelstahl 304"
+        },
+        {
+          "label": "Trinkfläche",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-Kabel und integrierter Lithium-Akku"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis 83 Tage"
+        },
+        {
+          "label": "Nennleistung",
+          "value": "2 W"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT-App über Bluetooth"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Akku-, Standard-, Intervall- und Bewegungssensormodus"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufige Einweg-Zirkulationsfilterung"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei bis vier Wochen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "265 × 171 × 191 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,2 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\petkit-eversweet-solo-2-fountain.md",
       "slug": "petkit-eversweet-solo-2-fountain",
       "title": "PETKIT Eversweet Solo 2",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
           "label": "Kapazität",
           "value": "2 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freies ABS und Silikon"
         },
         {
           "label": "Lautstärke",
@@ -1184,105 +1916,270 @@
         {
           "label": "Betrieb",
           "value": "Netzteil"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufig mit Aktivkohle und Ionenaustauscher"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Filter Unit 3.0; Herstellerempfehlung alle 4 Wochen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "vollständig zerlegbar; nicht spülmaschinengeeignet"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; dauerhafter Netzbetrieb erforderlich"
+        },
+        {
+          "label": "UVC",
+          "value": "Nein; UVC-Ersatzpumpe optional erhältlich"
+        },
+        {
+          "label": "Maße",
+          "value": "18,5 × 18,5 × 16,4 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "0,8 kg"
+        },
+        {
+          "label": "App",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 41
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-eversweet-solo-se.md",
+      "file": "src\\content\\products\\petkit-eversweet-solo-se.md",
       "slug": "petkit-eversweet-solo-se",
       "title": "PETKIT Eversweet Solo SE",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "P4103S"
+        },
         {
           "label": "Kapazität",
           "value": "1,8 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "BPA-freies ABS und Silikon"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkfläche",
+          "value": "Kunststoff"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-Kabel, 5 V/1 A; Netzteil nicht enthalten"
+        },
+        {
+          "label": "Nennleistung",
+          "value": "2 W"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "kontinuierlich"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle vier Wochen"
+        },
+        {
+          "label": "Trockenlaufschutz",
+          "value": "automatische Abschaltung bei Wassermangel"
+        },
+        {
+          "label": "Reinigung",
+          "value": "vollständig zerlegbar, nicht spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "160 × 160 × 154 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "0,75 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-eversweet-ultra.md",
+      "file": "src\\content\\products\\petkit-eversweet-ultra.md",
       "slug": "petkit-eversweet-ultra",
       "title": "PETKIT Eversweet Ultra",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Filter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "P4117"
+        },
         {
           "label": "Kapazität",
           "value": "5 Liter Frischwasser und 1,8 Liter Abwasser"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "ABS, PP, PPO und Edelstahl 304"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkfläche",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb, 12 V/2 A"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT App"
+        },
+        {
+          "label": "Verbindung",
+          "value": "2,4- und 5-GHz-WLAN, Bluetooth 4.0"
+        },
+        {
+          "label": "Kamera",
+          "value": "140-Grad-Kamera mit Mehrtier-Erkennung laut Hersteller"
+        },
+        {
+          "label": "Tiererkennung",
+          "value": "laut Hersteller bis zu 15 Tiere"
+        },
+        {
+          "label": "Reinigung",
+          "value": "automatische Zwischenspülung; regelmäßige Komplettreinigung erforderlich"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "290 × 304 × 353 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "3,5 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-fresh-element-infinity.md",
+      "file": "src\\content\\products\\petkit-fresh-element-infinity.md",
       "slug": "petkit-fresh-element-infinity",
       "title": "PETKIT Fresh Element Infinity",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -1310,75 +2207,129 @@
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Portionierung",
+          "value": "App-gesteuerte Portionierung; integrierte Napfwaage erfasst die Futtermenge"
         }
       ],
-      "completeness": 72
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-fresh-element-solo.md",
+      "file": "src\\content\\products\\petkit-fresh-element-solo.md",
       "slug": "petkit-fresh-element-solo",
       "title": "PETKIT Fresh Element Solo",
       "category": "futterautomaten",
-      "errors": [
-        "Widerspruch: zugleich für große Hunde geeignet und nicht geeignet"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Futterart",
-          "value": "Trockenfutter, begrenzt Freeze-dried"
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "App-Steuerung",
-          "value": "Ja"
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "P570"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter und passende gefriergetrocknete Stücke"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "Trockenfutter bis 12 mm, gefriergetrocknet bis 9 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "3 Liter, etwa 1,33 kg"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "per App planbar"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 5 Portionen pro Mahlzeit"
+        },
+        {
+          "label": "Portionsgröße",
+          "value": "Herstellerangabe etwa 10 g"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
         },
         {
           "label": "Kamera",
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "3 Liter"
+          "label": "Napfmaterial",
+          "value": "Edelstahl 304"
         },
         {
           "label": "Stromversorgung",
-          "value": "USB, 5 AAA als Backup"
+          "value": "USB-Kabel und fünf AAA-Batterien als Backup"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "167 × 296 × 316 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,32 kg"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine Hunde"
-        },
-        {
-          "label": "Portionierung",
-          "value": "1 bis 5 Portionen je Mahlzeit"
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-yumshare-dual-hopper.md",
+      "file": "src\\content\\products\\petkit-yumshare-dual-hopper.md",
       "slug": "petkit-yumshare-dual-hopper",
       "title": "PETKIT YumShare Dual-Hopper 2",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -1408,26 +2359,123 @@
           "value": "1 bis 10 Portionen je Kammer"
         }
       ],
-      "completeness": 79
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petkit-yumshare-solo-2.md",
+      "file": "src\\content\\products\\petkit-yumshare-dual.md",
+      "slug": "petkit-yumshare-dual",
+      "title": "PETKIT YumShare Dual-Hopper 2",
+      "category": "futterautomaten",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P591 beziehungsweise P592 je nach Generation"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter und passende gefriergetrocknete Stücke"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "Trockenfutter bis 12 mm, Freeze-dried bis 9 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "5 Liter"
+        },
+        {
+          "label": "Kammern",
+          "value": "Zwei getrennte Futterkammern"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "1 bis 10 pro Tag"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 10 Portionen pro Kammer und Mahlzeit"
+        },
+        {
+          "label": "Kamera",
+          "value": "1080p-KI-Kamera mit Nachtsicht"
+        },
+        {
+          "label": "Tiererkennung",
+          "value": "Gesichtserkennung"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "P591: 2,4 GHz; P592: 2,4 und 5 GHz"
+        },
+        {
+          "label": "Napfmaterial",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "6-V-Netzadapter und vier D-Batterien"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "247,5 × 293 × 362 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 2,5 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\petkit-yumshare-solo-2.md",
       "slug": "petkit-yumshare-solo-2",
       "title": "PETKIT YumShare Solo 2",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -1453,28 +2501,135 @@
           "value": "Nein"
         },
         {
+          "label": "Stromversorgung",
+          "value": "6-V-Netzteil; Batterie-Backup"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 10 Mahlzeiten pro Tag; 1 bis 5 Portionen beziehungsweise 10 bis 50 g pro Mahlzeit"
+        },
+        {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 62
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-air-automatic-feeder.md",
+      "file": "src\\content\\products\\petkit-yumshare-solo.md",
+      "slug": "petkit-yumshare-solo",
+      "title": "PETKIT YumShare Solo 2",
+      "category": "futterautomaten",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P572"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter und passende gefriergetrocknete Stücke"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "Trockenfutter bis 12 mm, Freeze-dried bis 9 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "3 Liter"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "1 bis 10 pro Tag"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 5 Portionen pro Mahlzeit"
+        },
+        {
+          "label": "Kamera",
+          "value": "KI-Kamera mit Livebild und Nachtsicht"
+        },
+        {
+          "label": "Tiererkennung",
+          "value": "Gesichtserkennung für mehrere Tiere"
+        },
+        {
+          "label": "App",
+          "value": "PETKIT-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "Napfmaterial",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "6-V-Netzadapter und fünf AAA-Batterien"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "186 × 300 × 383 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,8 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\petlibro-air-automatic-feeder.md",
       "slug": "petlibro-air-automatic-feeder",
       "title": "PETLIBRO Air Automatic Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter, Kroketten etwa 2 bis 15 mm"
@@ -1508,26 +2663,42 @@
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-air-wifi-feeder.md",
+      "file": "src\\content\\products\\petlibro-air-wifi-feeder.md",
       "slug": "petlibro-air-wifi-feeder",
       "title": "PETLIBRO Air WiFi Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -1555,333 +2726,732 @@
         {
           "label": "Besonderheit",
           "value": "Kompakte Air-Bauform"
+        },
+        {
+          "label": "Portionierung",
+          "value": "programmierbare Trockenfutterportionen per PETLIBRO-App"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-capsule-dog-fountain.md",
+      "file": "src\\content\\products\\petlibro-capsule-dog-fountain.md",
       "slug": "petlibro-capsule-dog-fountain",
       "title": "PETLIBRO Capsule Dog Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Kapazität",
-          "value": "ca. 8 Liter"
-        },
-        {
-          "label": "Zielgruppe",
-          "value": "mittelgroße und große Hunde"
-        },
-        {
           "label": "Lautstärke",
-          "value": "Herstellerangabe ca. 28 dB"
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "Betrieb",
-          "value": "Netzteil"
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "App",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "WF008 / PLWF008"
+        },
+        {
+          "label": "Kapazität",
+          "value": "2,1 Gallonen, etwa 7,95 Liter"
+        },
+        {
+          "label": "Trinkfläche",
+          "value": "breite Hundetrinkzone mit etwa 3,6 cm Tiefe"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB 5 V/1 A, Kabel etwa 2 m"
+        },
+        {
+          "label": "Notstromreserve",
+          "value": "Herstellerangabe bis 16 Stunden"
+        },
+        {
+          "label": "Ladezeit der Pumpenreserve",
+          "value": "etwa 8 Stunden"
+        },
+        {
+          "label": "Filter",
+          "value": "fünfstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei Wochen"
+        },
+        {
+          "label": "Trockenlaufschutz",
+          "value": "automatische Abschaltung bei zu niedrigem Wasserstand"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "mittelgroße und große Hunde ab etwa 27 cm Schulterhöhe"
         }
       ],
-      "completeness": 51
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-dockstream-2-smart.md",
+      "file": "src\\content\\products\\petlibro-dockstream-2-smart.md",
       "slug": "petlibro-dockstream-2-smart",
       "title": "PETLIBRO Dockstream 2 Smart",
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Kapazität",
           "value": "3 Liter"
         },
         {
-          "label": "Verbindung",
-          "value": "2,4 und 5 GHz WLAN"
+          "label": "Material",
+          "value": "ABS und Edelstahl"
+        },
+        {
+          "label": "Trinkfläche",
+          "value": "Edelstahl"
         },
         {
           "label": "Stromversorgung",
-          "value": "Akku je nach Variante"
+          "value": "je nach Variante Netzbetrieb oder Akku"
         },
         {
-          "label": "Material",
-          "value": "Kunststoff und Edelstahl-Trinkfläche"
+          "label": "Akku",
+          "value": "Akkuvariante mit 5200 mAh"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO App mit Trink- und Wasserstandsdaten"
+        },
+        {
+          "label": "Verbindung",
+          "value": "2,4- und 5-GHz-WLAN"
+        },
+        {
+          "label": "Filter",
+          "value": "vierstufige Filterung"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei Wochen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "abnehmbarer Tank; Edelstahl-Trinkfläche spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "246 × 200 × 198 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 1,77 kg Netzversion oder 1,89 kg Akkuversion"
         },
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 64
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-dockstream-cordless.md",
+      "file": "src\\content\\products\\petlibro-dockstream-cordless.md",
       "slug": "petlibro-dockstream-cordless",
       "title": "PETLIBRO Dockstream Cordless",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PLWF115"
+        },
         {
           "label": "Kapazität",
           "value": "2,5 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "BPA-freies ABS"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Stromversorgung",
+          "value": "Netz- und Akkubetrieb"
+        },
+        {
+          "label": "Akku",
+          "value": "5000 mAh"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis 30 Tage"
+        },
+        {
+          "label": "Ladezeit",
+          "value": "etwa 7 bis 8 Stunden ohne Nutzung"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Dauerfluss am Netz, sensoraktiviert im Akkubetrieb"
+        },
+        {
+          "label": "Sensorreichweite",
+          "value": "etwa 50 cm"
+        },
+        {
+          "label": "Filter",
+          "value": "vierstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei Wochen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "nicht spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "226 × 187 × 161 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "990 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-dockstream-rfid-smart.md",
+      "file": "src\\content\\products\\petlibro-dockstream-rfid-smart.md",
       "slug": "petlibro-dockstream-rfid-smart",
       "title": "PETLIBRO Dockstream RFID Smart",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PLWF305"
+        },
         {
           "label": "Kapazität",
           "value": "3 Liter"
         },
         {
+          "label": "Material",
+          "value": "ABS und Edelstahl"
+        },
+        {
+          "label": "Trinkfläche",
+          "value": "Edelstahl"
+        },
+        {
           "label": "Tiererkennung",
-          "value": "RFID-Halsbandanhänger"
+          "value": "PETLIBRO-RFID-Halsbandanhänger"
+        },
+        {
+          "label": "Anzahl Tiere",
+          "value": "Tracking für bis zu fünf Katzen"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App"
         },
         {
           "label": "Verbindung",
-          "value": "WLAN und App"
+          "value": "2,4-GHz-WLAN"
         },
         {
           "label": "Stromversorgung",
-          "value": "Netzteil"
+          "value": "kabelgebunden, 5 V/1 A"
+        },
+        {
+          "label": "Filter",
+          "value": "mehrstufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei Wochen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "245 × 200 × 231 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,6 kg"
         },
         {
           "label": "Lieferumfang",
-          "value": "zwei RFID-Anhänger laut Hersteller"
+          "value": "zwei RFID-Halsbandanhänger"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "vor allem Katzen, nachrangig kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-glacier-ultrafiltration.md",
+      "file": "src\\content\\products\\petlibro-glacier-ultrafiltration.md",
       "slug": "petlibro-glacier-ultrafiltration",
       "title": "PETLIBRO Glacier Ultrafiltration Fountain",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PLWF007"
+        },
+        {
           "label": "Kapazität",
-          "value": "ca. 2,1 Liter"
+          "value": "2,5 Liter"
         },
         {
-          "label": "Zielgruppe",
-          "value": "Katzen"
+          "label": "Material",
+          "value": "SUS 304 Edelstahl"
         },
         {
-          "label": "Wartung",
-          "value": "wöchentlich vollständig reinigen"
+          "label": "Trinkfläche",
+          "value": "ca. 23,5 cm breite, flache Edelstahlfläche"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "bewegungsaktivierte Filterung"
+        },
+        {
+          "label": "Filter",
+          "value": "Ultrafiltrationsmodul"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Tank laut Hersteller spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "265 × 220 × 167 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,75 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 44
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-granary-camera-feeder.md",
+      "file": "src\\content\\products\\petlibro-granary-camera-feeder.md",
       "slug": "petlibro-granary-camera-feeder",
-      "title": "Petlibro Granary Camera Feeder",
+      "title": "PETLIBRO Granary Camera Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
           "label": "Futterart",
           "value": "Trockenfutter"
-        },
-        {
-          "label": "App-Steuerung",
-          "value": "Ja"
-        },
-        {
-          "label": "Kamera",
-          "value": "1080p, Nachtsicht"
         },
         {
           "label": "Kapazität",
           "value": "5 Liter"
         },
         {
-          "label": "Stromversorgung",
-          "value": "Netzteil, Batterie-Backup"
+          "label": "Mahlzeiten",
+          "value": "Bis zu 10 pro Tag"
         },
         {
-          "label": "Geeignet für",
-          "value": "Katze, kleine bis mittelgroße Hunde"
+          "label": "Kamera",
+          "value": "1080p mit 145°-Weitwinkel und Nachtsicht"
         },
         {
           "label": "Audio",
           "value": "Zwei-Wege-Audio"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "WLAN-Verbindung erforderlich"
+        },
+        {
+          "label": "Napfoption",
+          "value": "Einzel- oder Doppelschale"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb mit Batterie-Backup"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine bis mittelgroße Hunde"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-granary-wifi-feeder.md",
-      "slug": "petlibro-granary-wifi-feeder",
-      "title": "Petlibro Granary WiFi Feeder",
+      "file": "src\\content\\products\\petlibro-granary-dual-feeder.md",
+      "slug": "petlibro-granary-dual-feeder",
+      "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Modell",
+          "value": "PLAF103 mit Dual Food Tray"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
         },
         {
-          "label": "App-Steuerung",
-          "value": "Ja"
+          "label": "Krokettengröße",
+          "value": "2 bis 15 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "5 Liter"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "1 bis 10 pro Tag"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 50 Portionen je Mahlzeit"
+        },
+        {
+          "label": "Portionsgröße",
+          "value": "20 ml, ungefähr 10 g"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "Napfanzahl",
+          "value": "Zwei Edelstahlnäpfe"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzadapter und drei D-Batterien"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "340 × 190 × 190 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 2 kg"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine bis mittelgroße Hunde"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\petlibro-granary-wifi-feeder.md",
+      "slug": "petlibro-granary-wifi-feeder",
+      "title": "PETLIBRO Granary WiFi Feeder",
+      "category": "futterautomaten",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "specs": [
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PLAF103"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "2 bis 15 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "5 Liter"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "1 bis 10 pro Tag"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 50 Portionen pro Mahlzeit"
+        },
+        {
+          "label": "Portionsgröße",
+          "value": "20 ml, laut Hersteller ungefähr 10 g"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
         },
         {
           "label": "Kamera",
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "5 Liter"
+          "label": "Napfmaterial",
+          "value": "Edelstahl"
         },
         {
           "label": "Stromversorgung",
-          "value": "Netzteil, Batterie-Backup"
+          "value": "Netzadapter und Batterie-Backup"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "340 × 190 × 190 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "1,66 kg"
         },
         {
           "label": "Geeignet für",
-          "value": "Katze, kleine bis mittelgroße Hunde"
-        },
-        {
-          "label": "Portionierung",
-          "value": "Bis zu 10 Mahlzeiten täglich"
+          "value": "Katzen und kleine bis mittelgroße Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
+      "file": "src\\content\\products\\petlibro-one-rfid-smart-feeder.md",
       "slug": "petlibro-one-rfid-smart-feeder",
       "title": "PETLIBRO One RFID Smart Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter (ca. 2 bis 15 mm)"
@@ -1919,32 +3489,60 @@
           "value": "Katzen in Mehrtierhaushalten"
         }
       ],
-      "completeness": 82
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-polar-wet-food-feeder.md",
+      "file": "src\\content\\products\\petlibro-polar-wet-food-feeder.md",
       "slug": "petlibro-polar-wet-food-feeder",
       "title": "PETLIBRO Polar Wet Food Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Futterart",
-          "value": "Nassfutter, rehydriertes Gefriertrockenfutter"
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "App-Steuerung",
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Futterart",
+          "value": "Nassfutter und rehydriertes gefriergetrocknetes Futter"
+        },
+        {
+          "label": "Kapazität",
+          "value": "drei Fächer mit je 200 ml"
+        },
+        {
+          "label": "Kühlung",
+          "value": "thermoelektrisch"
+        },
+        {
+          "label": "Kühldauer",
+          "value": "laut Hersteller bis zu 72 Stunden"
+        },
+        {
+          "label": "App",
           "value": "Ja"
         },
         {
@@ -1952,41 +3550,55 @@
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "3 Mahlzeiten à 200 ml"
-        },
-        {
-          "label": "Kühlung",
-          "value": "Thermoelektrisch bis zu 72 Stunden"
-        },
-        {
           "label": "Stromversorgung",
           "value": "Netzbetrieb"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine Hunde"
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Portionierung",
+          "value": "3 Fächer mit je 200 ml; Mahlzeiten einzeln per App planbar"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petlibro-space-smart-feeder.md",
+      "file": "src\\content\\products\\petlibro-space-smart-feeder.md",
       "slug": "petlibro-space-smart-feeder",
       "title": "PETLIBRO Space Smart Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
         "Comparison-Bild fehlt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -2016,67 +3628,98 @@
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 76
+      "completeness": 94
     },
     {
-      "file": "src/content/products/petlibro-stainless-steel-fountain.md",
+      "file": "src\\content\\products\\petlibro-stainless-steel-fountain.md",
       "slug": "petlibro-stainless-steel-fountain",
       "title": "PETLIBRO Stainless Steel Fountain 3L",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Akku",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "PLWF006"
+        },
         {
           "label": "Kapazität",
           "value": "3 Liter"
         },
         {
           "label": "Material",
-          "value": "Edelstahl"
+          "value": "Tank aus Edelstahl 304, Auslauf aus Polypropylen"
         },
         {
-          "label": "Betrieb",
-          "value": "Netzteil"
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb, Ausgang 5 V/1 A"
         },
         {
-          "label": "Filterung",
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "kontinuierlich und mechanisch einstellbar"
+        },
+        {
+          "label": "Filter",
           "value": "dreistufig"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung etwa alle zwei Wochen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Edelstahltank spülmaschinengeeignet"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "276 × 205 × 120 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "717 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen sowie ein kleiner oder mittelgroßer Hund"
         }
       ],
-      "completeness": 51
+      "completeness": 97
     },
     {
-      "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
+      "file": "src\\content\\products\\petsafe-freshfeed-refrigerated-feeder.md",
       "slug": "petsafe-freshfeed-refrigerated-feeder",
       "title": "PetSafe FreshFeed Refrigerated Pet Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -2106,28 +3749,47 @@
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 73
+      "completeness": 94
     },
     {
-      "file": "src/content/products/petsafe-healthy-pet-simply-feed.md",
+      "file": "src\\content\\products\\petsafe-healthy-pet-simply-feed.md",
       "slug": "petsafe-healthy-pet-simply-feed",
       "title": "PetSafe Healthy Pet Simply Feed",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -2159,29 +3821,53 @@
           "value": "4 D-Batterien; Netzadapter optional"
         },
         {
+          "label": "Geeignet für",
+          "value": "Katzen sowie kleine und mittelgroße Hunde"
+        },
+        {
           "label": "Maße",
           "value": "Etwa 48,3 × 22,9 × 31,8 cm"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 63
+      "completeness": 94
     },
     {
-      "file": "src/content/products/petsafe-smart-feed-2.md",
+      "file": "src\\content\\products\\petsafe-smart-feed-2.md",
       "slug": "petsafe-smart-feed-2",
       "title": "PetSafe Smart Feed 2.0",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app-steuerung",
-        "Empfohlenes Feld fehlt: kamera",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -2209,31 +3895,75 @@
           "value": "4 D-Batterien, separat"
         },
         {
+          "label": "Stromversorgung",
+          "value": "Netzadapter; Backup mit 4 D-Batterien"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen sowie kleine und mittelgroße Hunde"
+        },
+        {
           "label": "Maße",
           "value": "Etwa 51,6 × 23,9 × 32 cm"
+        },
+        {
+          "label": "App-Steuerung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
         }
       ],
-      "completeness": 59
+      "completeness": 94
     },
     {
-      "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md",
+      "file": "src\\content\\products\\surefeed-microchip-pet-feeder-connect.md",
       "slug": "surefeed-microchip-pet-feeder-connect",
       "title": "SureFeed Microchip Pet Feeder Connect",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Nass- und Trockenfutter"
@@ -2261,75 +3991,118 @@
         {
           "label": "Besonderheit",
           "value": "Mikrochip-Zugang und Portionswaage"
+        },
+        {
+          "label": "Portionierung",
+          "value": "manuell eingefüllte Portion mit integrierter Waage; keine automatische Futterausgabe"
         }
       ],
-      "completeness": 66
+      "completeness": 94
     },
     {
-      "file": "src/content/products/surefeed-microchip-pet-feeder.md",
+      "file": "src\\content\\products\\surefeed-microchip-pet-feeder.md",
       "slug": "surefeed-microchip-pet-feeder",
       "title": "SureFeed Microchip Pet Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
           "label": "Futterart",
           "value": "Nass- und Trockenfutter"
-        },
-        {
-          "label": "App-Steuerung",
-          "value": "Nein"
-        },
-        {
-          "label": "Kamera",
-          "value": "Nein"
         },
         {
           "label": "Kapazität",
           "value": "400 ml"
         },
         {
+          "label": "Zugang",
+          "value": "Mikrochip oder RFID-Halsbandanhänger"
+        },
+        {
+          "label": "Speicher",
+          "value": "bis zu 32 Chipnummern"
+        },
+        {
+          "label": "App",
+          "value": "Nein, Standardversion"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nein"
+        },
+        {
           "label": "Stromversorgung",
-          "value": "4 C-Batterien"
+          "value": "vier C-Batterien"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine Hunde"
+          "value": "Katzen und kleine Hunde"
         },
         {
-          "label": "Besonderheit",
-          "value": "Mikrochipgesteuerter Deckel"
+          "label": "Portionierung",
+          "value": "manuell eingefüllte Napfportion; keine automatische Dosierung"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/wopet-cube-air-ca10.md",
+      "file": "src\\content\\products\\wopet-cube-air-ca10.md",
       "slug": "wopet-cube-air-ca10",
       "title": "WOPET Cube Air WiFi Pet Feeder CA10",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
         "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter, Kroketten etwa 2 bis 12 mm"
@@ -2375,26 +4148,42 @@
           "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 94
     },
     {
-      "file": "src/content/products/wopet-heritage-view-camera-feeder.md",
+      "file": "src\\content\\products\\wopet-heritage-view-camera-feeder.md",
       "slug": "wopet-heritage-view-camera-feeder",
       "title": "WOPET Heritage View Camera Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter"
@@ -2422,75 +4211,137 @@
         {
           "label": "Besonderheit",
           "value": "Kamera und Zwei-Wege-Audio"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 6 Mahlzeiten pro Tag; 1 bis 20 Portionen à etwa 10 g pro Mahlzeit"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/wopet-patrol-f07-pro.md",
+      "file": "src\\content\\products\\wopet-patrol-f07-pro.md",
       "slug": "wopet-patrol-f07-pro",
       "title": "WOPET Patrol F07 Pro",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "F07 Pro"
+        },
+        {
           "label": "Futterart",
-          "value": "Trockenfutter, etwa 5–15 mm"
+          "value": "Trockenfutter"
         },
         {
-          "label": "App-Steuerung",
-          "value": "Ja"
-        },
-        {
-          "label": "Kamera",
-          "value": "Nein"
+          "label": "Krokettengröße",
+          "value": "offiziell uneinheitlich mit 2 bis 15 oder 5 bis 15 mm angegeben"
         },
         {
           "label": "Kapazität",
           "value": "6 Liter"
         },
         {
+          "label": "Mahlzeiten",
+          "value": "1 bis 15 pro Tag"
+        },
+        {
+          "label": "Portionierung",
+          "value": "1 bis 50 Portionen pro Mahlzeit"
+        },
+        {
+          "label": "Portionsgröße",
+          "value": "Herstellerangabe etwa 5 g"
+        },
+        {
+          "label": "App",
+          "value": "WOpet Life"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nein"
+        },
+        {
+          "label": "Sprachaufnahme",
+          "value": "10 Sekunden"
+        },
+        {
           "label": "Stromversorgung",
-          "value": "Netzteil, 3 D-Batterien als Backup"
+          "value": "5 V/1 A über USB-C und drei D-Batterien als Backup"
+        },
+        {
+          "label": "Material",
+          "value": "ABS"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "340 × 216 × 185 mm"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine bis mittelgroße Hunde"
-        },
-        {
-          "label": "Besonderheit",
-          "value": "Bis zu 15 Mahlzeiten"
+          "value": "Katzen und kleine bis mittelgroße Hunde"
         }
       ],
-      "completeness": 69
+      "completeness": 97
     },
     {
-      "file": "src/content/products/wopet-pioneer-f01-plus.md",
+      "file": "src\\content\\products\\wopet-pioneer-f01-plus.md",
       "slug": "wopet-pioneer-f01-plus",
       "title": "WOPET Pioneer F01 Plus",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Napf",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Batterie",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Maße",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
         {
           "label": "Futterart",
           "value": "Trockenfutter, etwa 5 bis 15 mm"
@@ -2528,105 +4379,185 @@
           "value": "Katzen sowie kleine bis mittelgroße Hunde"
         }
       ],
-      "completeness": 79
+      "completeness": 97
     },
     {
-      "file": "src/content/products/xiaomi-smart-pet-food-feeder-2.md",
+      "file": "src\\content\\products\\xiaomi-smart-pet-food-feeder-2.md",
       "slug": "xiaomi-smart-pet-food-feeder-2",
       "title": "Xiaomi Smart Pet Food Feeder 2",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung",
-        "Widerspruch: zugleich für große Hunde geeignet und nicht geeignet"
-      ],
+      "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
-          "label": "Futterart",
-          "value": "Trockenfutter bis 12 mm"
+          "label": "Reinigung",
+          "value": "Nicht vom Hersteller ausgewiesen"
         },
         {
-          "label": "App-Steuerung",
+          "label": "Modell",
+          "value": "XMWSQ02"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter und gemischte gefriergetrocknete Anteile"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "bis 12 mm"
+        },
+        {
+          "label": "Kapazität",
+          "value": "5 Liter, etwa 2,5 kg"
+        },
+        {
+          "label": "Portionierung",
+          "value": "ab etwa 1 g über App steuerbar"
+        },
+        {
+          "label": "App",
           "value": "Xiaomi Home"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
         },
         {
           "label": "Kamera",
           "value": "Nein"
         },
         {
-          "label": "Kapazität",
-          "value": "5 Liter"
+          "label": "Napfmaterial",
+          "value": "Edelstahl 304"
+        },
+        {
+          "label": "Wiegenapf",
+          "value": "Echtzeiterfassung mit Herstellerabweichung bis 1 g"
         },
         {
           "label": "Stromversorgung",
-          "value": "Netzteil, 4 AA als Backup"
+          "value": "Netzbetrieb und vier AA-Batterien als Backup"
+        },
+        {
+          "label": "Notstrom",
+          "value": "Herstellerangabe etwa 14 Tage"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "370 × 220 × 324 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "4 kg"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen, kleine bis mittelgroße Hunde"
-        },
-        {
-          "label": "Besonderheit",
-          "value": "Wiegenapf und LED-Display"
+          "value": "Katzen und Hunde bis 40 cm Schulterhöhe"
         }
       ],
-      "completeness": 59
+      "completeness": 97
     },
     {
-      "file": "src/content/products/xiaomi-smart-pet-fountain-2.md",
+      "file": "src\\content\\products\\xiaomi-smart-pet-fountain-2.md",
       "slug": "xiaomi-smart-pet-fountain-2",
       "title": "Xiaomi Smart Pet Fountain 2",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: material",
-        "Vergleichsfeld fehlt: stromversorgung",
-        "Vergleichsfeld fehlt: geeignet für"
-      ],
+      "errors": [],
       "warnings": [
-        "decision.bestFor ist zu knapp oder fehlt",
-        "decision.attention ist zu knapp oder fehlt",
-        "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: filter",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld fehlt: maße",
-        "Empfohlenes Feld fehlt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
+          "label": "Lautstärke",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "UV",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        },
+        {
+          "label": "Modell",
+          "value": "MJCWYSJ03"
+        },
+        {
           "label": "Kapazität",
           "value": "3 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "Wassertank, Trinkschale und äußere wasserführende Teile aus ABS"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "integrierter Akku, Laden mit 5 V/2 A"
         },
         {
           "label": "Akku",
           "value": "4000 mAh"
         },
         {
-          "label": "Laufzeit",
+          "label": "Akkulaufzeit",
           "value": "Herstellerangabe bis 100 Tage"
         },
         {
-          "label": "Modi",
-          "value": "Sensor, Intervall, kontinuierlich"
+          "label": "Nennleistung",
+          "value": "10 W"
         },
         {
           "label": "App",
           "value": "Xiaomi Home"
+        },
+        {
+          "label": "Verbindung",
+          "value": "2,4-GHz-WLAN"
+        },
+        {
+          "label": "Modi",
+          "value": "Sensor, Intervall und kontinuierlich"
+        },
+        {
+          "label": "Filter",
+          "value": "vierstufig mit PP-Filter, Aktivkohle, Ionenaustauschharz und bakteriostatischer Baumwolle"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Herstellerempfehlung monatlich"
+        },
+        {
+          "label": "Reinigung",
+          "value": "zerlegbar; Hersteller empfiehlt wöchentliche Reinigung"
+        },
+        {
+          "label": "Wasserbeständigkeit",
+          "value": "IPX7 bei vollständig verschlossenem Ladeanschluss"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "190 × 230 × 180 mm"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
         }
       ],
-      "completeness": 34
+      "completeness": 97
     }
   ]
 }

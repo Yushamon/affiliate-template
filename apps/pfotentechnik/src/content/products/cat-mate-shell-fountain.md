@@ -123,6 +123,13 @@ specs:
     value: "monatlich, bei hartem Wasser häufiger"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Wie oft sollte das Wasser gewechselt werden?"
     answer: "Closer Pets empfiehlt einen vollständigen Wechsel alle zwei bis drei Tage und dazwischen eine Kontrolle des Füllstands."

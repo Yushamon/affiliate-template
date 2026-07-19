@@ -135,6 +135,8 @@ specs:
     value: "1,32 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Kann der Fresh Element Solo gefriergetrocknetes Futter ausgeben?"
     answer: "Ja, sofern die Stücke laut PETKIT höchstens 9 mm groß sind. Reines, sehr leichtes Freeze-dried-Futter kann trotzdem ungleichmäßig dosiert werden."

@@ -134,6 +134,7 @@ specs:
     value: "4 kg"
   - label: "Geeignet für"
     value: "Katzen und Hunde bis 40 cm Schulterhöhe"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Ist der Xiaomi Smart Pet Food Feeder 2 für gefriergetrocknetes Futter geeignet?"
     answer: "Gemischte Freeze-dried-Anteile bis 12 mm sind möglich. Reines gefriergetrocknetes Futter wird von Xiaomi nicht empfohlen."

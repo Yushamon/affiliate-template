@@ -113,6 +113,11 @@ specs:
     value: "Netzteil mit Batterie-Backup"
   - label: "Geeignet für"
     value: "Katzen in Mehrtierhaushalten"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für Katzen in Mehrtierhaushalten mit individuellen Futterplänen oder Futterneid"
 capacity: "3 Liter"

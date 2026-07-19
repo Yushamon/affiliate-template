@@ -109,6 +109,13 @@ specs:
     value: "Netzteil und Batteriereserve"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - label: "Portionierung"
+    value: "mehrere planbare Mahlzeiten; konkrete Portionsschritte unterscheiden sich je nach S305D-Version"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Kann der HoneyGuardian S305D Nassfutter ausgeben?"
     answer: "Nein. Das Modell ist für Trockenfutter vorgesehen."

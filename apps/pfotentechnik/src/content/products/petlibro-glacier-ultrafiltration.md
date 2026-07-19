@@ -125,6 +125,11 @@ specs:
     value: "1,75 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Hat der PETLIBRO Glacier 2,1 oder 2,5 Liter?"
     answer: "PETLIBRO nennt in der aktuellen offiziellen Spezifikation 2,5 Liter. Die frühere Angabe von rund 2,1 Litern war nicht korrekt."

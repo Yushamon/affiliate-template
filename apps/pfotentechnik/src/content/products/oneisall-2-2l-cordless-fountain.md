@@ -124,6 +124,13 @@ specs:
     value: "ca. 0,62 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Ist der oneisall 2,2L aus Edelstahl?"
     answer: "Nein. oneisall nennt Polypropylen als Material. Die frühere Edelstahlbeschreibung war falsch."

@@ -126,6 +126,10 @@ specs:
     value: "Deckel und Schalen bei niedriger Temperatur spülmaschinengeeignet"
   - label: "Geeignet für"
     value: "zwei Katzen oder einen kleinen Hund"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Öffnen beide Timer exakt zur eingestellten Zeit?"
     answer: "Nein. Closer Pets weist darauf hin, dass analoge Timer einige Minuten früher oder später öffnen können."

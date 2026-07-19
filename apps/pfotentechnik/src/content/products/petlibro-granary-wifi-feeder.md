@@ -134,6 +134,8 @@ specs:
     value: "1,66 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine bis mittelgroße Hunde"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Kann der PETLIBRO Granary Nassfutter ausgeben?"
     answer: "Nein. PETLIBRO gibt das Modell ausschließlich für Trockenfutter frei."

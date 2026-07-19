@@ -129,6 +129,13 @@ specs:
     value: "3,5 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Filter", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Reinigt sich der PETKIT Eversweet Ultra selbst?"
     answer: "Er kann die Trinkschale automatisch spülen und neu befüllen. Das ersetzt keine vollständige Reinigung von Tanks, Leitungen, Pumpe und Filter."

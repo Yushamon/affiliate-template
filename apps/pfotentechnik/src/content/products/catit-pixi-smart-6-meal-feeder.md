@@ -47,12 +47,20 @@ alternatives: ["cat-mate-c500", "petlibro-polar-wet-food-feeder", "cat-mate-c300
 comparisons: ["beste-futterautomaten-fuer-katzen"]
 specs:
   - { label: "Futterart", value: "Nassfutter, Trockenfutter und Snacks" }
+  - { label: "Kapazität", value: "6 Fächer mit je 170 ml" }
   - { label: "Mahlzeiten", value: "Bis zu 6" }
   - { label: "Kühlung", value: "2 Kühlakkus" }
   - { label: "WLAN", value: "2,4 GHz" }
   - { label: "Bedienung", value: "App und LCD-Touchpanel" }
-  - { label: "Maße", value: "32 × 34 × 9,1 cm" }
-  - { label: "Gewicht", value: "2,25 kg" }
+  - { label: "Stromversorgung", value: "USB-Netzteil, Eingang 5 V/1 A; Backup mit 4 C/LR14-Batterien" }
+  - { label: "Geeignet für", value: "Katzen" }
+  - { label: "Maße", value: "32 × 34,5 × 9,2 cm" }
+  - { label: "Gewicht", value: "1,204 kg leer; 1,708 kg mit Kühlakkus" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Wie lange bleibt Nassfutter frisch?", answer: "Dafür gibt es keine pauschale sichere Zeit. Kühlakkus ersetzen keinen Kühlschrank; Raumtemperatur, Futter und Hygiene müssen berücksichtigt werden." }
   - { question: "Funktioniert der Feeder ohne App?", answer: "Ja, die Planung ist auch am integrierten Touchpanel möglich." }
@@ -65,4 +73,3 @@ capacity: "6 Fächer"
 Der Catit PIXI Smart 6-Meal Feeder ist keine klassische Vorratssäule, sondern ein vorbereiteter Mahlzeitenteller. Gerade bei Nassfutter ist das flexibler, erfordert aber konsequente Reinigung und eine realistische Beurteilung der Kühlzeit.
 
 Quellen: [Catit Produktseite und Nutzerbewertungen](https://catit.co.uk/products/catit-pixi-smart-6-meal-feeder), [Catit Hilfe](https://www.catit.com/help-advice/feeders-dishes/catit-pixi-smart-6-meal-feeder/) sowie [Nutzerberichte auf Reddit](https://www.reddit.com/r/cats/comments/1sby8d5/cat_removing_lid_from_catit_pixi_smart_feeder/).
-

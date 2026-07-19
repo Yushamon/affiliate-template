@@ -59,7 +59,14 @@ specs:
   - { label: "WLAN", value: "2,4 und 5 GHz" }
   - { label: "Speicher", value: "microSD bis 256 GB, separat" }
   - { label: "Notstrom", value: "4 C/LR14-Batterien" }
+  - { label: "Stromversorgung", value: "USB-Netzteil, Eingang 5 V/2 A und 10 W; Backup mit 4 C/LR14-Batterien" }
+  - { label: "Geeignet für", value: "Katzen" }
+  - { label: "Portionierung", value: "Individuell einstellbare Mahlzeitengrößen, bis zu 12 Mahlzeiten pro Tag" }
   - { label: "Maße", value: "19,1 × 32,1 × 34,2 cm" }
+  - { label: "Gewicht", value: "1,782 kg" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Speichert der Catit PIXI Vision Videos lokal?", answer: "Ja, mit einer separat erhältlichen microSD-Karte bis 256 GB. Ohne Karte stehen Livebild und manuelle Aufnahmen je nach App-Funktion weiterhin zur Verfügung." }
   - { question: "Ist er für Nassfutter geeignet?", answer: "Nein. Der PIXI Vision ist für trockenes Futter und Snacks bis 9 mm vorgesehen." }
@@ -72,4 +79,3 @@ capacity: "2,9 Liter"
 Der Catit PIXI Vision Smart Feeder gehört zu den interessanteren neuen Kamera-Modellen für Katzen. Positiv sind Dualband-WLAN, lokale microSD-Aufzeichnung und ein echtes Batterie-Backup. Die Kamera dokumentiert allerdings nur den Futterplatz und verhindert keinen Futterdiebstahl.
 
 Quellen: [Catit Produktseite](https://www.catit.com/products/feeders-dishes/pixi-vision-smart-feeder/) und [Catit Deutschland](https://www.catit.com/de/produkte/futterspender-napfe/pixi-smart-futterautomat-vision/).
-

@@ -117,6 +117,13 @@ specs:
     value: "Netzteil, je nach Variante Batterie-Backup"
   - label: "Geeignet für"
     value: "ein bis zwei Katzen"
+  - label: "Portionierung"
+    value: "programmierbare Trockenfutterportionen auf zwei Näpfe verteilt"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Teilt der oneisall 5L das Futter exakt gleich auf?"
     answer: "Nein. Der Verteiler teilt die Ausgabe, kleine Unterschiede zwischen beiden Näpfen sind möglich."

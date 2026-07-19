@@ -106,6 +106,8 @@ specs:
     value: "MJCWYSJ03"
   - label: "Kapazität"
     value: "3 Liter"
+  - label: "Material"
+    value: "Wassertank, Trinkschale und äußere wasserführende Teile aus ABS"
   - label: "Stromversorgung"
     value: "integrierter Akku, Laden mit 5 V/2 A"
   - label: "Akku"
@@ -132,6 +134,12 @@ specs:
     value: "190 × 230 × 180 mm"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Funktioniert der Xiaomi Smart Pet Fountain 2 kabellos?"
     answer: "Ja. Der integrierte 4000-mAh-Akku ermöglicht kabellosen Betrieb. Zum Laden wird ein 5-V/2-A-Anschluss benötigt."

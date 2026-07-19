@@ -113,6 +113,11 @@ specs:
     value: "USB-Netzteil oder 3 D-Batterien"
   - label: "Geeignet für"
     value: "Zwei Katzen oder kleine Hunde"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für zwei Katzen oder kleine Hunde mit ähnlichem Trockenfutterbedarf und festen Fütterungszeiten"
 capacity: "5 Liter"

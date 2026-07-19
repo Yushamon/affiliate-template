@@ -109,6 +109,12 @@ specs:
     value: "Katzen, kleine Hunde, mehrere Tiere"
   - label: "Portionierung"
     value: "1 bis 10 Portionen je Kammer"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für mehrere Katzen und unterschiedliche Trockenfuttersorten"
 capacity: "5 Liter"

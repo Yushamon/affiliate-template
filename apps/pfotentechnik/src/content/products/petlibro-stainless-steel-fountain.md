@@ -128,6 +128,11 @@ specs:
     value: "717 g"
   - label: "Geeignet für"
     value: "Katzen sowie ein kleiner oder mittelgroßer Hund"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Besteht der gesamte Brunnen aus Edelstahl?"
     answer: "Nein. Der Tank besteht aus Edelstahl 304, der Wasserauslauf aus Polypropylen."

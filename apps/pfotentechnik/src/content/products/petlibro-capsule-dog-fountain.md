@@ -123,6 +123,16 @@ specs:
     value: "automatische Abschaltung bei zu niedrigem Wasserstand"
   - label: "Geeignet für"
     value: "mittelgroße und große Hunde ab etwa 27 cm Schulterhöhe"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "App", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Wie groß ist der Tank der Capsule Dog Fountain?"
     answer: "PETLIBRO nennt 2,1 US-Gallonen, das entspricht ungefähr 7,95 Litern."

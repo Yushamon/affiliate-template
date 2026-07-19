@@ -117,6 +117,14 @@ specs:
     value: "vier C-Batterien"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - label: "Portionierung"
+    value: "manuell eingefüllte Napfportion; keine automatische Dosierung"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Funktioniert der SureFeed mit dem implantierten Mikrochip?"
     answer: "Ja. Kompatible Mikrochipnummern können direkt gespeichert werden. Alternativ ist ein RFID-Halsbandanhänger nutzbar."

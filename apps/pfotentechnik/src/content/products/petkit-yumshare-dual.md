@@ -62,6 +62,8 @@ specs:
   - { label: "Abmessungen", value: "247,5 × 293 × 362 mm" }
   - { label: "Gewicht", value: "ca. 2,5 kg" }
   - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Kann der YumShare Dual zwei Tiere getrennt füttern?", answer: "Nicht zuverlässig. Die zwei Kammern lagern verschiedene Futtersorten, ausgegeben wird aber in denselben Napf." }
   - { question: "Kann ich zwei Futtersorten mischen?", answer: "Ja. Beide Kammern können separat oder kombiniert ausgegeben werden." }

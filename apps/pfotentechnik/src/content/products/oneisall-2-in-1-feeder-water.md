@@ -48,9 +48,21 @@ comparisons: ["beste-futterautomaten-fuer-katzen"]
 specs:
   - { label: "Modell", value: "PF14WAU" }
   - { label: "Futterart", value: "Trockenfutter" }
+  - { label: "Kapazität", value: "Vom Hersteller nicht ausgewiesen" }
+  - { label: "Portionierung", value: "1 bis 6 Mahlzeiten pro Tag mit einstellbaren Portionen" }
+  - { label: "Stromversorgung", value: "USB-C-Netzteil mit Batterie-Backup" }
   - { label: "Wasserstation", value: "Integrierte separate Einheit" }
+  - { label: "Material", value: "Edelstahl-Näpfe und Edelstahlbasis" }
+  - { label: "Reinigung", value: "Edelstahl-Näpfe laut Hersteller spülmaschinengeeignet" }
   - { label: "Geeignet für", value: "Katzen" }
   - { label: "Marktstart", value: "2026" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Ersetzt die Wasserstation die tägliche Kontrolle?", answer: "Nein. Wasserstand, Sauberkeit, Pumpe und Trinkverhalten müssen täglich kontrolliert werden." }
   - { question: "Kann der Spender Nassfutter ausgeben?", answer: "Nein. Die automatische Futtereinheit ist für Trockenfutter vorgesehen." }
@@ -62,4 +74,3 @@ useCase: "Kombinierter Katzen-Futterplatz"
 Oneisall bringt mit dem PF14WAU eine neue 2-in-1-Kategorie in den Vergleich. Der Platzgewinn ist nachvollziehbar; die wichtigste offene Frage bleibt, wie wartungsarm Wassertechnik und Futterausgabe über längere Zeit gemeinsam funktionieren.
 
 Quellen: [Oneisall Produktseite](https://oneisall.com/products/oneisall-2-in-1-automatic-cat-feeder-and-water-dispenser) und [WIRED – Automatic Feeders 2026](https://www.wired.com/gallery/best-automatic-cat-feeders/).
-

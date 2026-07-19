@@ -130,6 +130,10 @@ specs:
     value: "Herstellerangabe drei Jahre"
   - label: "Geeignet für"
     value: "bis zu zwei Katzen oder einen kleinen Hund"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Hat der Cat Mate C300 drei programmierbare Zeiten?"
     answer: "Nein. Ein Fach ist sofort zugänglich, zwei weitere Mahlzeiten werden programmiert."

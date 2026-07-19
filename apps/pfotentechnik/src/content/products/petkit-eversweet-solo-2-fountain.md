@@ -33,9 +33,22 @@ experience: { summary: "Leise Brunnen werden oft erst bei niedrigem Wasserstand 
 alternatives: [petkit-eversweet-3-pro-uvc, petlibro-stainless-steel-fountain, xiaomi-smart-pet-fountain-2]
 specs:
   - { label: Kapazität, value: "2 Liter" }
+  - { label: Material, value: "BPA-freies ABS und Silikon" }
   - { label: Lautstärke, value: "Herstellerangabe bis 25 dB" }
   - { label: Verbindung, value: "Bluetooth/App" }
   - { label: Betrieb, value: "Netzteil" }
+  - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: Filter, value: "mehrstufig mit Aktivkohle und Ionenaustauscher" }
+  - { label: Ersatzfilter, value: "Filter Unit 3.0; Herstellerempfehlung alle 4 Wochen" }
+  - { label: Reinigung, value: "vollständig zerlegbar; nicht spülmaschinengeeignet" }
+  - { label: Akku, value: "Nein; dauerhafter Netzbetrieb erforderlich" }
+  - { label: UVC, value: "Nein; UVC-Ersatzpumpe optional erhältlich" }
+  - { label: Maße, value: "18,5 × 18,5 × 16,4 cm" }
+  - { label: Gewicht, value: "0,8 kg" }
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "App", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Ist der Solo 2 wirklich kabellos?", answer: "Die Pumpe arbeitet ohne Kabel im Tank; der Brunnen selbst benötigt weiterhin einen Netzanschluss." }
   - { question: "Wie oft muss der Filter gewechselt werden?", answer: "PETKIT nennt ungefähr vier Wochen, abhängig von Wasserqualität, Tierzahl und Verschmutzung." }

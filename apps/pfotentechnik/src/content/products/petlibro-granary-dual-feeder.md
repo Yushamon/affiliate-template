@@ -60,6 +60,9 @@ specs:
   - { label: "Abmessungen", value: "340 × 190 × 190 mm" }
   - { label: "Gewicht", value: "ca. 2 kg" }
   - { label: "Geeignet für", value: "Katzen und kleine bis mittelgroße Hunde" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Teilt der Granary Dual jede Portion exakt gleich?", answer: "Der verstellbare Teiler kann die Verteilung beeinflussen, eine vollkommen identische Menge in beiden Näpfen ist aber nicht garantiert." }
   - { question: "Verhindert die Doppelschale Futterklau?", answer: "Nein. Beide Tiere können beide Näpfe erreichen." }

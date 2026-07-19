@@ -133,6 +133,13 @@ specs:
     value: "zwei RFID-Halsbandanhänger"
   - label: "Geeignet für"
     value: "vor allem Katzen, nachrangig kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Liest der Dockstream RFID den implantierten Mikrochip?"
     answer: "Nein. Er funktioniert nur mit kompatiblen PETLIBRO-RFID-Halsbandanhängern."

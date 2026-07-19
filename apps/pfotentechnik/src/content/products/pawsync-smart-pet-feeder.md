@@ -52,6 +52,15 @@ specs:
   - { label: "Waage", value: "Integriert" }
   - { label: "Stromversorgung", value: "5 V Netzteil plus 3 D-Batterien" }
   - { label: "App", value: "PawSync App" }
+  - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: "Portionierung", value: "gewichtskontrollierte Ausgabe mit integrierter Napfwaage" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Wie misst PawSync die Portion?", answer: "Eine Waage unter dem Napf erfasst ausgegebene und verbleibende Futtermenge. Der Automat muss dafür stabil auf einem harten, ebenen Boden stehen." }
   - { question: "Ist PawSync in Deutschland erhältlich?", answer: "Die Verfügbarkeit ist nicht durchgehend gesichert. Vor dem Kauf sollten EU-Stecker, Garantie, Rückgabe und App-Region geprüft werden." }
@@ -64,4 +73,3 @@ capacity: "3,6 Liter"
 Der PawSync Smart Pet Feeder adressiert einen echten Schwachpunkt vieler Automaten: mechanische Portionen schwanken mit dem Futter. Die integrierte Waage macht die Kontrolle nachvollziehbarer, ersetzt aber keine fachlich bestimmte Tagesration.
 
 Quellen: [PawSync Produktseite](https://pawsync.com/products/smart-pet-feeder), [Reviewed Praxistest](https://www.reviewed.com/pets/content/pawsync-smart-pet-feeder-review) und [PawSync App-Funktionen](https://pawsync.com/pages/app-features).
-

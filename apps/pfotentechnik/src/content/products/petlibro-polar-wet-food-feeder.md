@@ -118,6 +118,14 @@ specs:
     value: "Netzbetrieb"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - label: "Portionierung"
+    value: "3 Fächer mit je 200 ml; Mahlzeiten einzeln per App planbar"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Braucht der PETLIBRO Polar Kühlakkus?"
     answer: "Nein. Das Gerät nutzt eine aktive thermoelektrische Kühlung."

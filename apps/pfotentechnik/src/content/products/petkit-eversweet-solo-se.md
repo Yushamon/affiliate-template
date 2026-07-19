@@ -131,6 +131,11 @@ specs:
     value: "0,75 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Akku", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "UV", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Kann der PETKIT Eversweet Solo SE kabellos betrieben werden?"
     answer: "Nein. Nur die Pumpe arbeitet kabellos im Tank. Der Brunnen selbst benötigt dauerhaft Strom."

@@ -52,7 +52,14 @@ specs:
   - { label: "Portionierung", value: "1/8 bis 4 Cups je Mahlzeit" }
   - { label: "WLAN", value: "2,4 GHz" }
   - { label: "Notstrom", value: "4 D-Batterien, separat" }
+  - { label: "Stromversorgung", value: "Netzadapter; Backup mit 4 D-Batterien" }
+  - { label: "Geeignet für", value: "Katzen sowie kleine und mittelgroße Hunde" }
   - { label: "Maße", value: "Etwa 51,6 × 23,9 × 32 cm" }
+  - { label: "App-Steuerung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Kamera", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Ist der PetSafe Smart Feed 2.0 für große Hunde geeignet?", answer: "PetSafe nennt Katzen sowie kleine bis mittelgroße Hunde. Für große Hunde müssen Napf, Standfestigkeit, maximale Mahlzeit und Zugriffsschutz individuell geprüft werden." }
   - { question: "Läuft er bei Stromausfall weiter?", answer: "Mit vier eingesetzten D-Alkalibatterien steht eine Backup-Option zur Verfügung. Der konkrete Notbetrieb sollte vorab getestet werden." }
@@ -65,4 +72,3 @@ capacity: "24 Cups / etwa 5,7 Liter"
 Der PetSafe Smart Feed 2.0 ist nicht neu, schließt im PfotenTechnik-Katalog aber eine wichtige Lücke: Er kann deutlich größere Mahlzeiten ausgeben als typische kompakte Katzenautomaten. Für sehr große oder kräftige Hunde bleibt er dennoch keine pauschale Empfehlung.
 
 Quellen: [PetSafe Produktseite](https://www.petsafe.com/product/smart-feed/), [Tom's Guide](https://www.tomsguide.com/reviews/petsafe-smart-feed) und [Chewy-Nutzerbewertungen](https://www.chewy.com/petsafe-smart-feed-20-wifi-enabled/product-reviews/218595).
-

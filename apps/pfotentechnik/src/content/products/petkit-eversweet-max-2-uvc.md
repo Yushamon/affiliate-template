@@ -134,6 +134,10 @@ specs:
     value: "1,2 kg"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - { label: "Lautstärke", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Trinkhöhe", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Wasserfluss", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Ersatzfilter", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Macht die UVC-Pumpe die Reinigung überflüssig?"
     answer: "Nein. UVC ist eine Zusatzfunktion. Haare, Kalk, Futterreste und Biofilm müssen weiterhin mechanisch entfernt werden."

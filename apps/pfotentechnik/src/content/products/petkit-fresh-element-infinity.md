@@ -109,6 +109,13 @@ specs:
     value: "Netzteil mit integriertem Akku"
   - label: "Geeignet für"
     value: "Katzen und kleine Hunde"
+  - label: "Portionierung"
+    value: "App-gesteuerte Portionierung; integrierte Napfwaage erfasst die Futtermenge"
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für Katzen und kleine Hunde mit regelmäßigem Trockenfutterbedarf und Wunsch nach größerem Vorrat"
 capacity: "5 Liter"

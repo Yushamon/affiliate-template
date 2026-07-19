@@ -61,6 +61,8 @@ specs:
   - { label: "Abmessungen", value: "186 × 300 × 383 mm" }
   - { label: "Gewicht", value: "1,8 kg" }
   - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - { question: "Erkennt der YumShare Solo 2 mehrere Katzen?", answer: "PETKIT bewirbt eine Gesichtserkennung für mehrere Tiere. Die Zuverlässigkeit hängt von Umgebung, Blickwinkel und Profilbildern ab." }
   - { question: "Kann Nassfutter verwendet werden?", answer: "Nein. Das Modell ist nur für Trockenfutter und passende gefriergetrocknete Stücke geeignet." }

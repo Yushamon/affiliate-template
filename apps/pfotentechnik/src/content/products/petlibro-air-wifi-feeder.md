@@ -107,6 +107,14 @@ specs:
     value: "Katzen, kleine Hunde"
   - label: "Besonderheit"
     value: "Kompakte Air-Bauform"
+  - label: "Portionierung"
+    value: "programmierbare Trockenfutterportionen per PETLIBRO-App"
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq: []
 useCase: "Für einzelne Katzen in kleinen Haushalten mit App-Wunsch"
 capacity: "2 Liter"
