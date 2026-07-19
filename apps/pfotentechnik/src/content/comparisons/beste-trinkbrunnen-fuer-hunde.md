@@ -5,7 +5,7 @@ type: "comparison"
 layout: "comparison"
 description: "Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Standfestigkeit, Lautstärke, Filter und Reinigung vergleichen."
 publishedAt: "2026-07-16"
-updatedAt: "2026-07-16"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -32,27 +32,22 @@ items:
     label: "PETLIBRO Capsule Dog Fountain"
     type: "product"
     recommendation: "Gesamtempfehlung für mittelgroße und große Hunde."
-    values: { kapazitaet: "ca. 8 Liter", material: "breite Trinkfläche", lautstaerke: "Herstellerangabe ca. 28 dB", filter: "mehrstufige Filterung", reinigung: "Tank, Pumpe und Auslauf wöchentlich reinigen", stromversorgung: "Netzteil", eignung: "Für mittelgroße und große Hunde" }
   - slug: "oneisall-7l-dog-water-fountain"
     label: "oneisall 7L Dog Water Fountain"
     type: "product"
     recommendation: "Preis-Leistungs-Alternative für größere Hunde und Mehrhundehaushalte."
-    values: { kapazitaet: "7 Liter", material: "Edelstahl 304 und Kunststoff", lautstaerke: "Herstellerangabe ca. 35 dB", reinigung: "alle wasserführenden Teile mindestens wöchentlich reinigen", stromversorgung: "Netzteil", eignung: "Für große Hunde und Mehrhundehaushalte" }
   - slug: "petlibro-stainless-steel-fountain"
     label: "PETLIBRO Stainless Steel Fountain 3L"
     type: "product"
     recommendation: "Kompaktere Edelstahloption für kleine Hunde oder gemischte Haushalte."
-    values: { kapazitaet: "3 Liter", material: "Edelstahl", filter: "dreistufig", eignung: "Für kleine Hunde und Katzen einzuordnen" }
   - slug: "xiaomi-smart-pet-fountain-2"
     label: "Xiaomi Smart Pet Fountain 2"
     type: "product"
     recommendation: "Smart-Option für kleine Hunde oder gemischte Haushalte."
-    values: { kapazitaet: "3 Liter", filter: "vierstufige Filterung", stromversorgung: "4000 mAh", eignung: "Eher für kleine Hunde und Katzen" }
   - slug: "petlibro-dockstream-2-smart"
     label: "PETLIBRO Dockstream 2 Smart"
     type: "product"
     recommendation: "App-orientierte Option für kleine Hunde oder gemischte Haushalte."
-    values: { kapazitaet: "3 Liter", material: "Kunststoff und Edelstahl-Trinkfläche", filter: "mehrstufige Filterung", stromversorgung: "Akku je nach Variante", eignung: "Eher für kleine Hunde und Katzen" }
 criteria:
   - key: "kapazitaet"
     label: "Kapazität"
@@ -94,3 +89,5 @@ Viele kompakte Haustierbrunnen sind primär auf Katzen ausgelegt. Für Hunde zä
 ## Methodik und Transparenz
 
 Die Rangfolge berücksichtigt die dokumentierte Hunde-Eignung. Katzenorientierte Modelle werden nicht mehr allein wegen einer hohen Gesamtbewertung zum Hundesieger erklärt.
+
+Für die Auswahl zählen zuerst Trinkhöhe, Standfläche und Reserve. Der Grundlagenratgeber [Trinkbrunnen](/trinkbrunnen/) vertieft diese Entscheidung; [Hund trinkt zu wenig](/hund-trinkt-zu-wenig/) erklärt, wie die Wasseraufnahme sinnvoll beobachtet wird. Kleine oder gemischte Haushalte finden zusätzliche Modelle im [Trinkbrunnen-Vergleich für Katzen](/vergleiche/beste-trinkbrunnen-fuer-katzen/). Zu Ersatzfiltern und App-Systemen helfen die Profile von [PETLIBRO](/hersteller/petlibro/), [oneisall](/hersteller/oneisall/) und [Xiaomi](/hersteller/xiaomi/).
