@@ -1,36 +1,29 @@
-# Conversion Framework 3 – Trust Installer
+# Conversion Framework 4 – Journey Installer
 
-Dieser Installer ersetzt den nicht anwendbaren Git-Patch.
-
-Er arbeitet mit stabilen Codeankern statt Zeilennummern und ist idempotent:
-bereits vorhandene Änderungen werden übersprungen.
+Robuster, idempotenter Installer für Teil 4.
 
 ## Installation
 
-Entpacke den Ordner in den Repository-Root und führe aus:
+Den Ordner in den Repository-Root entpacken und ausführen:
 
 ```bash
-node conversion-framework-3-trust-installer/install-trust.mjs
+node conversion-framework-4-journey-installer/install-journey.mjs
 npm run build:pfotentechnik
 ```
 
 ## Rollback
 
 ```bash
-node conversion-framework-3-trust-installer/rollback-trust.mjs
+node conversion-framework-4-journey-installer/rollback-journey.mjs
 ```
 
-## Änderungen
+## Enthalten
 
-- `productEditorialSchema`
-- optionales `editorial`-Feld im Produktschema
-- neue Komponente `ProductTrustPanel.astro`
-- korrekter Import aus `../../components/ProductTrustPanel.astro`
-- Ersatz des bisherigen `pt-review-method`-Blocks
-- automatisches Backup vor Änderungen
+- neue Komponente `ConversionJourney.astro`
+- Journey auf Produktseiten
+- Journey auf Vergleichsseiten
+- Journey auf Ratgeberseiten
+- automatische Backups
+- wiederholbare Installation ohne doppelte Blöcke
 
-## Warum kein weiterer Git-Patch?
-
-Dein lokaler Stand enthält bereits Foundation und Recommendations.
-Dadurch unterscheiden sich Zeilenpositionen und Kontextbereiche vom GitHub-Stand.
-Der Installer prüft stattdessen semantische Anker in den tatsächlichen Dateien.
+Der Installer verwendet stabile Import- und Komponentenanker statt fester Zeilennummern.

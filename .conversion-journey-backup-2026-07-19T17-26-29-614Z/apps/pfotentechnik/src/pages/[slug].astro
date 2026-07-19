@@ -9,7 +9,6 @@ import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
-import ConversionJourney from "../components/ConversionJourney.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
@@ -507,34 +506,6 @@ const relatedItems = relatedEntries.map((entry) => ({
   </article>
 
   <ArticleImageLightbox />
-
-  <ConversionJourney
-    title="Was jetzt sinnvoll ist"
-    intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
-    items={[
-      {
-        eyebrow: "Orientierung",
-        title: "Passende Kaufberatung öffnen",
-        text: "Nutze die zentrale Übersicht, um Anforderungen und Gerätetypen strukturiert einzuordnen.",
-        href: "/smarte-futterautomaten/",
-        label: "Zur Kaufberatung"
-      },
-      {
-        eyebrow: "Vergleich",
-        title: "Geeignete Modelle gegenüberstellen",
-        text: "Vergleiche Funktionen und Einsatzbereiche, statt nur einzelne Produktversprechen zu betrachten.",
-        href: "/vergleiche/",
-        label: "Zu den Vergleichen"
-      },
-      {
-        eyebrow: "Praxis",
-        title: "Technik sicher im Alltag nutzen",
-        text: "Prüfe Reinigung, Kontrollroutinen und Grenzen automatisierter Fütterung.",
-        href: "/futterautomat-richtig-reinigen/",
-        label: "Praxiswissen lesen"
-      }
-    ]}
-  />
 
   <RelatedArticles items={relatedItems} />
 </ProjectLayout>

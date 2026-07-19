@@ -12,7 +12,6 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
-import ConversionJourney from "../../components/ConversionJourney.astro";
 import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
@@ -465,34 +464,6 @@ const everydayCriteria = [
         </p>
       </div>
     </aside>
-
-    <ConversionJourney
-      title="So geht es nach dem Produkttest weiter"
-      intro="Vergleiche das Modell mit passenden Alternativen oder vertiefe die wichtigsten Kaufkriterien."
-      items={[
-        {
-          eyebrow: "Vergleichen",
-          title: "Passende Modelle direkt gegenüberstellen",
-          text: "Prüfe Unterschiede bei Funktionen, Einsatzbereich und Bewertung in der passenden Vergleichsübersicht.",
-          href: categoryHref,
-          label: "Zum Vergleich"
-        },
-        {
-          eyebrow: "Alternativen",
-          title: "Andere Lösungen für deinen Anwendungsfall",
-          text: "Sieh dir Modelle an, die bei Preis, Ausstattung oder Futterart einen anderen Schwerpunkt setzen.",
-          href: "#alternativen",
-          label: "Alternativen ansehen"
-        },
-        {
-          eyebrow: "Grundlagen",
-          title: "Kaufkriterien noch einmal prüfen",
-          text: "Vertiefe Portionierung, Reinigung, Stromausfall und Alltagssicherheit vor der endgültigen Entscheidung.",
-          href: "/smarte-futterautomaten/",
-          label: "Ratgeber lesen"
-        }
-      ]}
-    />
 
     <RelatedArticles items={relatedItems} />
   </main>
