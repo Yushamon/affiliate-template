@@ -122,75 +122,6 @@ const premiumBlockSchema =
       .optional()
   });
 
-
-const contentPlatformSchema =
-  z.object({
-    version: z.literal(2).default(2),
-    cluster: z.string(),
-    intent: z
-      .enum([
-        "informational",
-        "buying-guide",
-        "comparison-support",
-        "troubleshooting",
-        "how-to",
-        "health-guide"
-      ])
-      .default("informational"),
-    animal: z
-      .enum(["dog", "cat", "both"])
-      .optional(),
-    products: z.array(z.string()).default([]),
-    decision: z
-      .union([
-        z.literal("auto"),
-        z.literal("off"),
-        z.string()
-      ])
-      .default("auto"),
-    blocks: z
-      .array(
-        z.enum([
-          "summary",
-          "recommendation",
-          "comparison",
-          "fit",
-          "checklist",
-          "mistakes"
-        ])
-      )
-      .default([]),
-    summary: z.array(z.string()).default([]),
-    suitableFor: z.array(z.string()).default([]),
-    notSuitableFor: z.array(z.string()).default([]),
-    checklist: z.array(z.string()).default([]),
-    mistakes: z.array(z.string()).default([]),
-    faqMode: z
-      .enum(["manual", "none"])
-      .default("manual"),
-    cta: z
-      .object({
-        mode: z
-          .enum(["auto", "off"])
-          .default("auto"),
-        productKey: z.string().optional(),
-        title: z.string().optional(),
-        text: z.string().optional()
-      })
-      .optional(),
-    theme: z
-      .enum([
-        "teal",
-        "amber",
-        "blue",
-        "green",
-        "rose",
-        "neutral"
-      ])
-      .optional()
-  })
-  .optional();
-
 export const createPageContentSchema = (image: ImageFunction) =>
   baseContentSchema.extend({
     type: z
@@ -213,14 +144,10 @@ export const createPageContentSchema = (image: ImageFunction) =>
     seoDescription:
       z.string().optional(),
 
-    category:
-      z.string().optional(),
+    category: z.string(),
 
     categoryLabel:
-      z.string().optional(),
-
-    contentPlatform:
-      contentPlatformSchema,
+      z.string(),
 
     categoryPath:
       z.string().optional(),

@@ -14,9 +14,7 @@ import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import HealthBridge from "../components/HealthBridge.astro";
-import AutoContentBlocks from "../components/AutoContentBlocks.astro";
 import { projectConfig, siteMeta } from "../project.config";
-import { assembleContentPage } from "../domain/contentPlatform";
 import {
   getDecisionProductRecommendations,
   getDecisionRule,
@@ -62,7 +60,6 @@ const internalLinkDefinitions = getInternalLinkDefinitions({
   manufacturers
 });
 const sourceContexts = getSourceContexts(page.data);
-const assembledPage = assembleContentPage(page.data);
 const productBySlug = new Map(
   products.map((product) => [product.data.slug, product]),
 );
@@ -110,12 +107,12 @@ const optimizedOgImage = await getImage({
   width: 1200,
   quality: "high",
 });
-const decisionRecommendations = assembledPage.decisionKey
-  ? getDecisionProductRecommendations(assembledPage.decisionKey, products)
+const decisionRecommendations = page.data.decisionKey
+  ? getDecisionProductRecommendations(page.data.decisionKey, products)
   : [];
 
-const decisionRule = assembledPage.decisionKey
-  ? getDecisionRule(assembledPage.decisionKey)
+const decisionRule = page.data.decisionKey
+  ? getDecisionRule(page.data.decisionKey)
   : undefined;
 
 const decisionProducts = decisionRecommendations
@@ -131,11 +128,11 @@ const decisionIntro =
   page.data.decisionIntro ??
   "Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.";
 
-const decisionThemeColor = assembledPage.themeColor;
+const decisionThemeColor = page.data.themeColor ?? "teal";
 const comparisonProducts =
   decisionProducts.length > 0
     ? decisionProducts
-    : assembledPage.comparisonProducts.filter((key) =>
+    : (page.data.comparisonProducts ?? []).filter((key) =>
         productBySlug.has(key),
       );
 
@@ -159,8 +156,8 @@ const comparisonExperienceConfig =
 const comparisonProductEntries = comparisonProducts
   .map((slug) => productBySlug.get(slug))
   .filter((product): product is (typeof products)[number] => Boolean(product));
-const closingProduct = assembledPage.closingCta
-  ? productBySlug.get(assembledPage.closingCta.productKey)
+const closingProduct = page.data.closingCta
+  ? productBySlug.get(page.data.closingCta.productKey)
   : undefined;
 
 const getReadingTimeMinutes = (content: string) => {
@@ -222,17 +219,17 @@ const relatedItems = relatedEntries.map((entry) => ({
   }
   noindex={page.data.seo?.noindex ?? false}
   ogImage={optimizedOgImage.src}
-  faq={assembledPage.faq}
+  faq={page.data.faq}
   author={author}
   publishedAt={publishedAt}
   updatedAt={updatedAt}
-  categoryLabel={assembledPage.categoryLabel}
+  categoryLabel={page.data.categoryLabel}
   breadcrumbs={breadcrumbs}
 >
   <Breadcrumbs items={breadcrumbs} />
 
   <header class="article-header">
-    <span class="article-category">{assembledPage.categoryLabel}</span>
+    <span class="article-category">{page.data.categoryLabel}</span>
     <h1 class="article-title">{page.data.title}</h1>
     <p class="article-description">{page.data.description}</p>
     <ArticleMeta
@@ -255,11 +252,6 @@ const relatedItems = relatedEntries.map((entry) => ({
 
   <article class="article">
     <TableOfContents headings={headings} />
-
-    <AutoContentBlocks
-      page={assembledPage}
-      products={products}
-    />
     {
       topDecisionRecommendation && topDecisionProduct && (
         <section
@@ -479,12 +471,12 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
     {page.data.healthBridge && <HealthBridge {...page.data.healthBridge} />}
     {
-      assembledPage.closingCta && closingProduct && (
+      page.data.closingCta && closingProduct && (
         <section class="pt-money-cta" aria-labelledby="pt-money-cta-title">
           <div>
             <span>{closingProduct.data.manufacturer.name}</span>
-            <h2 id="pt-money-cta-title">{assembledPage.closingCta.title}</h2>
-            <p>{assembledPage.closingCta.text}</p>
+            <h2 id="pt-money-cta-title">{page.data.closingCta.title}</h2>
+            <p>{page.data.closingCta.text}</p>
           </div>
           <div class="pt-money-cta-actions">
             {closingProduct.data.affiliate && (
@@ -497,20 +489,20 @@ const relatedItems = relatedEntries.map((entry) => ({
                 rel={closingProduct.data.affiliate.rel}
                 target={closingProduct.data.affiliate.target}
               >
-                {assembledPage.closingCta.primaryLabel}
+                {page.data.closingCta.primaryLabel}
               </a>
             )}
             <a
               class="pt-money-cta-secondary"
-              href={assembledPage.closingCta.secondaryHref}
+              href={page.data.closingCta.secondaryHref}
             >
-              {assembledPage.closingCta.secondaryLabel}
+              {page.data.closingCta.secondaryLabel}
             </a>
           </div>
         </section>
       )
     }
-    <FAQ items={assembledPage.faq} />
+    <FAQ items={page.data.faq} />
   </article>
 
 <ConversionJourney
