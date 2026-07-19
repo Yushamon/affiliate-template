@@ -12,7 +12,6 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
-import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
 
@@ -392,13 +391,26 @@ const everydayCriteria = [
       />
     </AutoLinkContent>
 
-    <ProductTrustPanel
-      assessmentType={contentProduct.editorial?.assessmentType}
-      evidence={contentProduct.editorial?.evidence}
-      testedHandsOn={contentProduct.editorial?.testedHandsOn}
-      lastVerifiedAt={contentProduct.editorial?.lastVerifiedAt ?? updatedAt}
-      note={contentProduct.editorial?.note}
-    />
+    <section
+      class="pt-review-method"
+      aria-labelledby="pt-review-method-title"
+    >
+      <span>
+        Redaktionelle Einordnung
+      </span>
+
+      <h2 id="pt-review-method-title">
+        So ist dieser Testbericht entstanden
+      </h2>
+
+      <p>
+        Die Bewertung basiert auf technischen Daten,
+        aktuellen Herstellerinformationen und einheitlichen
+        Vergleichskriterien. Sie ist eine redaktionelle
+        Alltagseinordnung und behauptet keinen mehrmonatigen
+        Praxistest.
+      </p>
+    </section>
 
     <section
       class="pt-everyday-review"

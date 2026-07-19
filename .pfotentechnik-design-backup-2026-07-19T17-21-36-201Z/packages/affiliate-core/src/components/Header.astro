@@ -15,18 +15,13 @@ const {
 
 <header class="site-header-v2">
   <div class="header-container-v2">
-    <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
-      <span class="brand-mark" aria-hidden="true">
-        <span class="brand-mark__cut"></span>
-        <span class="brand-mark__dot"></span>
-      </span>
-      <span class="brand-name">{projectName}</span>
+    <a href="/" class="logo-v2">
+      {projectName}
     </a>
 
     <button
       class="nav-toggle-button"
       type="button"
-      aria-label="Navigation öffnen"
       aria-expanded="false"
       aria-controls="main-navigation"
       data-nav-toggle
@@ -34,20 +29,11 @@ const {
       Menü
     </button>
 
-    <nav
-      id="main-navigation"
-      class="main-nav-v2"
-      aria-label="Hauptnavigation"
-      data-main-navigation
-    >
+    <nav id="main-navigation" class="main-nav-v2" aria-label="Hauptnavigation" data-main-navigation>
       {links.map((link) => (
         <a href={link.href}>{link.label}</a>
       ))}
     </nav>
-
-    <a class="header-advisor-link" href="/futterautomat-berater/">
-      Berater finden
-    </a>
   </div>
 </header>
 
@@ -62,7 +48,6 @@ const {
 
       const setOpen = (open: boolean) => {
         button.setAttribute("aria-expanded", String(open));
-        button.setAttribute("aria-label", open ? "Navigation schließen" : "Navigation öffnen");
         navigation.toggleAttribute("data-open", open);
       };
 

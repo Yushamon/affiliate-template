@@ -107,48 +107,6 @@ const productConversionSchema =
   })
   .optional();
 
-
-const productEditorialSchema =
-  z.object({
-    assessmentType: z
-      .enum([
-        "hands-on-test",
-        "editorial-review",
-        "data-review"
-      ])
-      .default("editorial-review"),
-
-    evidence: z
-      .array(
-        z.enum([
-          "hands-on-testing",
-          "manufacturer-documentation",
-          "technical-specifications",
-          "comparative-analysis",
-          "user-feedback"
-        ])
-      )
-      .default([
-        "manufacturer-documentation",
-        "technical-specifications",
-        "comparative-analysis"
-      ]),
-
-    testedHandsOn: z
-      .boolean()
-      .default(false),
-
-    lastVerifiedAt: z
-      .coerce
-      .date()
-      .optional(),
-
-    note: z
-      .string()
-      .optional()
-  })
-  .optional();
-
 const productDecisionSchema =
   z.object({
     bestFor: z
@@ -282,9 +240,6 @@ export const createProductContentSchema = (image: ImageFunction) =>
     conversion:
       productConversionSchema,
 
-
-    editorial:
-      productEditorialSchema,
     rating: z
       .number()
       .min(0)

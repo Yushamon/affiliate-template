@@ -9,24 +9,8 @@ const footerColumnStyle = `--footer-column-count: ${projectConfig.footer.columns
   <div class="footer-inner-v2">
     <div class="footer-main-v2" style={footerColumnStyle}>
       <section class="footer-brand-v2" aria-labelledby="footer-brand-title">
-        <a class="footer-brand-lockup" href="/" aria-label={`${projectConfig.projectName} – Startseite`}>
-          <span class="brand-mark" aria-hidden="true">
-            <span class="brand-mark__cut"></span>
-            <span class="brand-mark__dot"></span>
-          </span>
-          <span class="footer-brand-name" id="footer-brand-title">
-            {projectConfig.projectName}
-          </span>
-        </a>
-
+        <strong id="footer-brand-title">{projectConfig.projectName}</strong>
         <p>{projectConfig.footer.description}</p>
-
-        <ul class="footer-values" aria-label="Redaktionelle Grundsätze">
-          <li>Unabhängig & objektiv</li>
-          <li>Verständlich erklärt</li>
-          <li>Praxisnah bewertet</li>
-          <li>Transparent empfohlen</li>
-        </ul>
       </section>
 
       {projectConfig.footer.columns.map((column, index) => {
