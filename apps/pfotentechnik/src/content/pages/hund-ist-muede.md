@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/hund-ist-muede/hero.webp"
   alt: "Ruhender Hund, während Wachheit, Atmung, Bewegung und weitere Warnzeichen beurteilt werden."
 publishedAt: "2026-07-16"
-updatedAt: "2026-07-16"
+updatedAt: "2026-07-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["hund", "müdigkeit", "schlappheit", "gesundheit", "verhalten"]
 hub:
@@ -98,8 +98,6 @@ premiumBlocks:
       - label: "Begleitsymptome"
         title: "Futter, Wasser, Erbrechen, Durchfall und Urin mitbewerten"
 ---
-
-# Hund ist müde
 
 ![Ruhender Hund, während Wachheit und Warnzeichen beurteilt werden](../../assets/images/guides/hund-ist-muede/hero.webp)
 

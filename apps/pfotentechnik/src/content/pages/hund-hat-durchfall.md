@@ -72,8 +72,6 @@ premiumBlocks:
       Ein einzelner weicher Kotabsatz kann bei einem sonst fitten erwachsenen Hund kurz beobachtet werden. Dringend wird es bei wiederholtem wässrigem Durchfall, Blut, schwarzem Kot, Erbrechen, Bauchschmerzen, deutlicher Schwäche oder wenn ein Welpe, Senior oder chronisch kranker Hund betroffen ist.
 ---
 
-# Hund hat Durchfall
-
 ![Hund nach einem Durchfallereignis](../../assets/images/guides/hund-hat-durchfall/hero.webp)
 
 ## Die kurze Antwort
