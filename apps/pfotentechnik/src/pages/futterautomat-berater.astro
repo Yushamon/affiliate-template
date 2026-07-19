@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+import PetAdvisor from "../components/advisor/PetAdvisor.astro";
+import { mapProductToAdvisor } from "../domain/advisor";
+
+const products = (await getCollection("products"))
+  .filter(
+    (entry) =>
+      entry.data.category.key === "futterautomat"
+  )
+  .map(mapProductToAdvisor);
+---
+
+<ProjectLayout
+  title="Futterautomaten-Berater: Welches Modell passt? | PfotenTechnik"
+  description="Beantworte sechs kurze Fragen und finde passende Futterautomaten für Tier, Futterart, Alltag, Funktionen und Budget."
+  canonical="/futterautomat-berater/"
+  schemaType="website"
+>
+  <PetAdvisor products={products} />
+</ProjectLayout>

@@ -1,0 +1,142 @@
+---
+import type { AdvisorMatch } from "../../domain/advisor";
+
+const { matches } = Astro.props as {
+  matches: AdvisorMatch[];
+};
+
+const rows = [
+  {
+    label: "Futterart",
+    value: (match: AdvisorMatch) =>
+      match.product.foodType
+        .map((type) =>
+          type === "dry" ? "Trockenfutter" : "Nassfutter"
+        )
+        .join(" & ") || "nicht dokumentiert"
+  },
+  {
+    label: "App",
+    value: (match: AdvisorMatch) =>
+      match.product.app === true ? "Ja" : "Nicht ausgewiesen"
+  },
+  {
+    label: "Kamera",
+    value: (match: AdvisorMatch) =>
+      match.product.camera === true ? "Ja" : "Nein"
+  },
+  {
+    label: "Zugang",
+    value: (match: AdvisorMatch) =>
+      match.product.access === "microchip"
+        ? "Mikrochip"
+        : "Offen"
+  },
+  {
+    label: "Notstrom",
+    value: (match: AdvisorMatch) =>
+      match.product.backupPower === true
+        ? "Ja"
+        : "Nicht ausgewiesen"
+  },
+  {
+    label: "Preisklasse",
+    value: (match: AdvisorMatch) =>
+      ({
+        budget: "Preisbewusst",
+        midrange: "Mittelklasse",
+        premium: "Premium"
+      })[match.product.priceCategory ?? ""] ??
+      "Nicht eingeordnet"
+  }
+];
+
+const differenceRows = rows.filter((row) => {
+  const values = matches.map(row.value);
+  return new Set(values).size > 1;
+});
+---
+
+{
+  matches.length > 1 && (
+    <section class="compare" aria-labelledby="compare-heading">
+      <div class="compare-heading">
+        <p>Direktvergleich</p>
+        <h2 id="compare-heading">Nur die Unterschiede</h2>
+      </div>
+
+      <div class="compare-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Kriterium</th>
+              {matches.map((match) => (
+                <th scope="col">{match.product.title}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {differenceRows.map((row) => (
+              <tr>
+                <th scope="row">{row.label}</th>
+                {matches.map((match) => (
+                  <td>{row.value(match)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .compare {
+    margin-top: 44px;
+    padding-top: 36px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .compare-heading p {
+    margin: 0 0 6px;
+    color: #2e7d32;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .compare-heading h2 {
+    margin: 0 0 22px;
+    font-size: clamp(1.55rem, 4vw, 2.5rem);
+  }
+
+  .compare-scroll {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+  }
+
+  table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead th {
+    background: #f8fafc;
+  }
+
+  tbody th {
+    color: #334155;
+  }
+</style>

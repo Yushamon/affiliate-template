@@ -1,29 +1,32 @@
-# Conversion Framework 4 – Journey Installer
+# Installation – Content Platform 2.0
 
-Robuster, idempotenter Installer für Teil 4.
+Dieser Patch ist als achter Patch nach den sieben zuvor vorbereiteten Patches gedacht.
+
+## Voraussetzung
+
+Insbesondere `conversion-framework-4-journey.patch` muss bereits angewendet sein.
+Der Patch erwartet deshalb `ConversionJourney` in `apps/pfotentechnik/src/pages/[slug].astro`.
 
 ## Installation
 
-Den Ordner in den Repository-Root entpacken und ausführen:
-
 ```bash
-node conversion-framework-4-journey-installer/install-journey.mjs
+git apply --check content-platform-2.0.patch
+git apply content-platform-2.0.patch
 npm run build:pfotentechnik
+git diff --check
 ```
 
-## Rollback
+## Rückgängig machen
 
 ```bash
-node conversion-framework-4-journey-installer/rollback-journey.mjs
+git apply -R content-platform-2.0.patch
 ```
 
-## Enthalten
+## Inhalt
 
-- neue Komponente `ConversionJourney.astro`
-- Journey auf Produktseiten
-- Journey auf Vergleichsseiten
-- Journey auf Ratgeberseiten
-- automatische Backups
-- wiederholbare Installation ohne doppelte Blöcke
-
-Der Installer verwendet stabile Import- und Komponentenanker statt fester Zeilennummern.
+- kompaktes `contentPlatform`-Frontmatter
+- Defaults für Kategorie, Theme, Blöcke und CTA
+- automatische Empfehlungs- und Vergleichsblöcke
+- bestehendes Frontmatter bleibt kompatibel
+- keine automatisch erfundenen FAQ oder Fachinformationen
+- schrittweise Migration

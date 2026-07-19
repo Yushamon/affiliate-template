@@ -1,0 +1,4672 @@
+diff --git a/README.md b/README.md
+index 2b8235e..e9793ff 100644
+--- a/README.md
++++ b/README.md
+@@ -1,29 +1,32 @@
+-# Conversion Framework 4 – Journey Installer
++# Installation – Content Platform 2.0
+ 
+-Robuster, idempotenter Installer für Teil 4.
++Dieser Patch ist als achter Patch nach den sieben zuvor vorbereiteten Patches gedacht.
+ 
+-## Installation
++## Voraussetzung
++
++Insbesondere `conversion-framework-4-journey.patch` muss bereits angewendet sein.
++Der Patch erwartet deshalb `ConversionJourney` in `apps/pfotentechnik/src/pages/[slug].astro`.
+ 
+-Den Ordner in den Repository-Root entpacken und ausführen:
++## Installation
+ 
+ ```bash
+-node conversion-framework-4-journey-installer/install-journey.mjs
++git apply --check content-platform-2.0.patch
++git apply content-platform-2.0.patch
+ npm run build:pfotentechnik
++git diff --check
+ ```
+ 
+-## Rollback
++## Rückgängig machen
+ 
+ ```bash
+-node conversion-framework-4-journey-installer/rollback-journey.mjs
++git apply -R content-platform-2.0.patch
+ ```
+ 
+-## Enthalten
+-
+-- neue Komponente `ConversionJourney.astro`
+-- Journey auf Produktseiten
+-- Journey auf Vergleichsseiten
+-- Journey auf Ratgeberseiten
+-- automatische Backups
+-- wiederholbare Installation ohne doppelte Blöcke
++## Inhalt
+ 
+-Der Installer verwendet stabile Import- und Komponentenanker statt fester Zeilennummern.
++- kompaktes `contentPlatform`-Frontmatter
++- Defaults für Kategorie, Theme, Blöcke und CTA
++- automatische Empfehlungs- und Vergleichsblöcke
++- bestehendes Frontmatter bleibt kompatibel
++- keine automatisch erfundenen FAQ oder Fachinformationen
++- schrittweise Migration
+diff --git a/apps/pfotentechnik/src/layouts/ProjectLayout.astro b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
+index 45a4628..50da1cf 100644
+--- a/apps/pfotentechnik/src/layouts/ProjectLayout.astro
++++ b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
+@@ -3,6 +3,7 @@ import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+ import "../styles/pfotentechnik.css";
+ import "../styles/pfotentechnik-brand-system.css";
+ import { getNavigationItems } from "@app/domain/content";
++import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
+ 
+ const props = Astro.props;
+ const headerLinks = await getNavigationItems();
+@@ -21,4 +22,5 @@ const canonical =
+   headerLinks={headerLinks}
+ >
+   <slot />
++  <ImageLightbox />
+ </AffiliateLayout>
+diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+index e67c15a..b19d2e5 100644
+--- a/apps/pfotentechnik/src/pages/[slug].astro
++++ b/apps/pfotentechnik/src/pages/[slug].astro
+@@ -12,7 +12,6 @@ import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+ import ConversionJourney from "../components/ConversionJourney.astro";
+ import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+ import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+-import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
+ import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+ import HealthBridge from "../components/HealthBridge.astro";
+ import { projectConfig, siteMeta } from "../project.config";
+@@ -506,9 +505,7 @@ const relatedItems = relatedEntries.map((entry) => ({
+     <FAQ items={page.data.faq} />
+   </article>
+ 
+-  <ArticleImageLightbox />
+-
+-  <ConversionJourney
++<ConversionJourney
+     title="Was jetzt sinnvoll ist"
+     intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
+     items={[
+diff --git a/article-image-lightbox.patch b/article-image-lightbox.patch
+deleted file mode 100644
+index c29d2c0..0000000
+--- a/article-image-lightbox.patch
++++ /dev/null
+@@ -1,250 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+-index 893bf00..166553a 100644
+---- a/apps/pfotentechnik/src/pages/[slug].astro
+-+++ b/apps/pfotentechnik/src/pages/[slug].astro
+-@@ -11,6 +11,7 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
+- import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+- import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+-+import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
+- import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+- import HealthBridge from "../components/HealthBridge.astro";
+- import { projectConfig, siteMeta } from "../project.config";
+-@@ -18,18 +19,25 @@ const relatedItems = [];
+- ---
+- <ProjectLayout>
+-   <article class="article">
+--    <AutoLinkContent
+--      definitions={internalLinkDefinitions}
+--      sourcePath={`/${page.data.slug}/`}
+--      sourceGroup="knowledge"
+--      sourceContexts={sourceContexts}
+--      maxLinksPerPage={7}
+--    >
+--      <Content />
+--    </AutoLinkContent>
+-+    <div class="article-content">
+-+      <AutoLinkContent
+-+        definitions={internalLinkDefinitions}
+-+        sourcePath={`/${page.data.slug}/`}
+-+        sourceGroup="knowledge"
+-+        sourceContexts={sourceContexts}
+-+        maxLinksPerPage={7}
+-+      >
+-+        <Content />
+-+      </AutoLinkContent>
+-+    </div>
+- 
+-     <FAQ items={page.data.faq} />
+-   </article>
+- 
+-+  <ArticleImageLightbox
+-+    selector=".article-content img, .premium-v3-image img"
+-+    hint="Zum Vergrößern antippen"
+-+  />
+-+
+-   <RelatedArticles items={relatedItems} />
+- </ProjectLayout>
+-diff --git a/packages/affiliate-core/src/components/ArticleImageLightbox.astro b/packages/affiliate-core/src/components/ArticleImageLightbox.astro
+-new file mode 100644
+-index 0000000..6e61174
+---- /dev/null
+-+++ b/packages/affiliate-core/src/components/ArticleImageLightbox.astro
+-@@ -0,0 +1,197 @@
+-+---
+-+interface Props {
+-+  selector?: string;
+-+  hint?: string;
+-+}
+-+
+-+const {
+-+  selector = ".article-content img, .premium-v3-image img",
+-+  hint = "Zum Vergrößern antippen",
+-+} = Astro.props;
+-+
+-+const dialogId = "article-image-lightbox";
+-+---
+-+
+-+<dialog id={dialogId} class="article-image-lightbox" aria-label="Vergrößerte Infografik">
+-+  <div class="article-image-lightbox__surface">
+-+    <button class="article-image-lightbox__close" type="button" aria-label="Vergrößerte Ansicht schließen">
+-+      <span aria-hidden="true">×</span>
+-+    </button>
+-+    <div class="article-image-lightbox__viewport">
+-+      <img class="article-image-lightbox__image" src="" alt="" decoding="async" />
+-+    </div>
+-+    <p class="article-image-lightbox__caption" hidden></p>
+-+    <p class="article-image-lightbox__help">Mit zwei Fingern zoomen · Zum Schließen außerhalb des Bildes tippen</p>
+-+  </div>
+-+</dialog>
+-+
+-+<script define:vars={{ selector, dialogId, hint }}>
+-+  const enhanceArticleImages = () => {
+-+    const dialog = document.getElementById(dialogId);
+-+    if (!(dialog instanceof HTMLDialogElement)) return;
+-+
+-+    const lightboxImage = dialog.querySelector(".article-image-lightbox__image");
+-+    const caption = dialog.querySelector(".article-image-lightbox__caption");
+-+    const closeButton = dialog.querySelector(".article-image-lightbox__close");
+-+
+-+    if (!(lightboxImage instanceof HTMLImageElement) || !(caption instanceof HTMLParagraphElement) || !(closeButton instanceof HTMLButtonElement)) return;
+-+
+-+    let activeTrigger = null;
+-+    const closeDialog = () => dialog.open && dialog.close();
+-+    const openDialog = (image) => {
+-+      activeTrigger = image;
+-+      lightboxImage.src = image.currentSrc || image.src;
+-+      lightboxImage.alt = image.alt || "";
+-+      const figcaption = image.closest("figure")?.querySelector("figcaption");
+-+      const captionText = figcaption?.textContent?.trim() || image.alt?.trim() || "";
+-+      caption.textContent = captionText;
+-+      caption.hidden = !captionText;
+-+      dialog.showModal();
+-+      document.documentElement.classList.add("has-image-lightbox");
+-+      closeButton.focus();
+-+    };
+-+
+-+    document.querySelectorAll(selector).forEach((element) => {
+-+      if (!(element instanceof HTMLImageElement)) return;
+-+      if (element.dataset.lightboxReady === "true" || element.dataset.noLightbox === "true" || element.closest("a, button, dialog")) return;
+-+
+-+      element.dataset.lightboxReady = "true";
+-+      element.classList.add("zoomable-article-image");
+-+      element.tabIndex = 0;
+-+      element.setAttribute("role", "button");
+-+      element.setAttribute("aria-label", `${element.alt || "Infografik"}. ${hint}`);
+-+      element.setAttribute("title", hint);
+-+      element.addEventListener("click", () => openDialog(element));
+-+      element.addEventListener("keydown", (event) => {
+-+        if (event.key === "Enter" || event.key === " ") {
+-+          event.preventDefault();
+-+          openDialog(element);
+-+        }
+-+      });
+-+    });
+-+
+-+    if (dialog.dataset.listenersReady !== "true") {
+-+      dialog.dataset.listenersReady = "true";
+-+      closeButton.addEventListener("click", closeDialog);
+-+      dialog.addEventListener("click", (event) => event.target === dialog && closeDialog());
+-+      dialog.addEventListener("close", () => {
+-+        document.documentElement.classList.remove("has-image-lightbox");
+-+        lightboxImage.removeAttribute("src");
+-+        lightboxImage.alt = "";
+-+        caption.textContent = "";
+-+        caption.hidden = true;
+-+        if (activeTrigger instanceof HTMLElement) activeTrigger.focus();
+-+        activeTrigger = null;
+-+      });
+-+    }
+-+  };
+-+
+-+  enhanceArticleImages();
+-+  document.addEventListener("astro:page-load", enhanceArticleImages);
+-+</script>
+-+
+-+<style is:global>
+-+  .zoomable-article-image { cursor: zoom-in; outline-offset: 5px; }
+-+  .zoomable-article-image:focus-visible { outline: 3px solid var(--primary, #2e7d32); }
+-+  .article-content p:has(> .zoomable-article-image)::after,
+-+  .premium-v3-image:has(.zoomable-article-image)::after {
+-+    content: "Zum Vergrößern antippen";
+-+    display: block;
+-+    margin-top: 8px;
+-+    color: var(--muted);
+-+    font-size: 13px;
+-+    font-weight: 700;
+-+    line-height: 1.4;
+-+    text-align: center;
+-+    pointer-events: none;
+-+  }
+-+  .has-image-lightbox { overflow: hidden; }
+-+  .article-image-lightbox {
+-+    width: 100%;
+-+    max-width: none;
+-+    height: 100%;
+-+    max-height: none;
+-+    margin: 0;
+-+    padding: clamp(16px, 3vw, 32px);
+-+    border: 0;
+-+    background: transparent;
+-+    overflow: hidden;
+-+  }
+-+  .article-image-lightbox::backdrop {
+-+    background: rgba(8, 15, 12, 0.88);
+-+    backdrop-filter: blur(8px);
+-+  }
+-+  .article-image-lightbox__surface {
+-+    position: relative;
+-+    display: flex;
+-+    width: 100%;
+-+    height: 100%;
+-+    flex-direction: column;
+-+    align-items: center;
+-+    justify-content: center;
+-+  }
+-+  .article-image-lightbox__viewport {
+-+    display: flex;
+-+    width: 100%;
+-+    min-height: 0;
+-+    flex: 1;
+-+    align-items: center;
+-+    justify-content: center;
+-+    overflow: auto;
+-+    overscroll-behavior: contain;
+-+    -webkit-overflow-scrolling: touch;
+-+  }
+-+  .article-image-lightbox__image {
+-+    display: block;
+-+    width: auto;
+-+    max-width: 100%;
+-+    height: auto;
+-+    max-height: calc(100dvh - 150px);
+-+    object-fit: contain;
+-+    border-radius: 16px;
+-+    background: white;
+-+    touch-action: pinch-zoom;
+-+    user-select: none;
+-+    -webkit-user-drag: none;
+-+  }
+-+  .article-image-lightbox__close {
+-+    position: absolute;
+-+    z-index: 2;
+-+    top: 0;
+-+    right: 0;
+-+    display: grid;
+-+    width: 48px;
+-+    height: 48px;
+-+    place-items: center;
+-+    border: 1px solid rgba(255,255,255,.25);
+-+    border-radius: 999px;
+-+    color: white;
+-+    background: rgba(8,15,12,.82);
+-+    font: inherit;
+-+    font-size: 32px;
+-+    line-height: 1;
+-+    cursor: pointer;
+-+  }
+-+  .article-image-lightbox__close:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+-+  .article-image-lightbox__caption {
+-+    max-width: 820px;
+-+    margin: 14px auto 0;
+-+    color: white;
+-+    font-size: 15px;
+-+    line-height: 1.5;
+-+    text-align: center;
+-+  }
+-+  .article-image-lightbox__help {
+-+    margin: 6px auto 0;
+-+    color: rgba(255,255,255,.7);
+-+    font-size: 12px;
+-+    line-height: 1.4;
+-+    text-align: center;
+-+  }
+-+  @media (max-width: 760px) {
+-+    .article-image-lightbox { padding: 12px; }
+-+    .article-image-lightbox__image { max-height: calc(100dvh - 130px); border-radius: 12px; }
+-+    .article-image-lightbox__close { top: 4px; right: 4px; width: 44px; height: 44px; }
+-+    .article-image-lightbox__help { font-size: 11px; }
+-+  }
+-+</style>
+diff --git a/article-image-lightbox.repo-aligned.patch b/article-image-lightbox.repo-aligned.patch
+deleted file mode 100644
+index 82182d5..0000000
+--- a/article-image-lightbox.repo-aligned.patch
++++ /dev/null
+@@ -1,316 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+-index 9d356dd..53492e9 100644
+---- a/apps/pfotentechnik/src/pages/[slug].astro
+-+++ b/apps/pfotentechnik/src/pages/[slug].astro
+-@@ -11,6 +11,7 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
+- import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+- import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+-+import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
+- import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+- import HealthBridge from "../components/HealthBridge.astro";
+- import { projectConfig, siteMeta } from "../project.config";
+-@@ -479,5 +480,7 @@ import { projectConfig, siteMeta } from "../project.config";
+-     <FAQ items={page.data.faq} />
+-   </article>
+- 
+-+  <ArticleImageLightbox />
+-+
+-   <RelatedArticles items={relatedItems} />
+- </ProjectLayout>
+-diff --git a/packages/affiliate-core/src/components/ArticleImageLightbox.astro b/packages/affiliate-core/src/components/ArticleImageLightbox.astro
+-new file mode 100644
+-index 0000000..bee00e6
+---- /dev/null
+-+++ b/packages/affiliate-core/src/components/ArticleImageLightbox.astro
+-@@ -0,0 +1,290 @@
+-+---
+-+interface Props {
+-+  selector?: string;
+-+  hint?: string;
+-+}
+-+
+-+const {
+-+  selector = ".article > p > img, .premium-v3-image img",
+-+  hint = "Zum Vergrößern antippen",
+-+} = Astro.props;
+-+
+-+const dialogId = "article-image-lightbox";
+-+---
+-+
+-+<dialog
+-+  id={dialogId}
+-+  class="article-image-lightbox"
+-+  aria-label="Vergrößerte Infografik"
+-+>
+-+  <div class="article-image-lightbox__surface">
+-+    <button
+-+      class="article-image-lightbox__close"
+-+      type="button"
+-+      aria-label="Vergrößerte Ansicht schließen"
+-+    >
+-+      <span aria-hidden="true">×</span>
+-+    </button>
+-+
+-+    <div class="article-image-lightbox__viewport">
+-+      <img
+-+        class="article-image-lightbox__image"
+-+        alt=""
+-+        decoding="async"
+-+      />
+-+    </div>
+-+
+-+    <p class="article-image-lightbox__caption" hidden></p>
+-+    <p class="article-image-lightbox__help">
+-+      Mit zwei Fingern zoomen · Zum Schließen außerhalb des Bildes tippen
+-+    </p>
+-+  </div>
+-+</dialog>
+-+
+-+<script define:vars={{ selector, dialogId, hint }}>
+-+  const setupArticleImageLightbox = () => {
+-+    const dialog = document.getElementById(dialogId);
+-+
+-+    if (!(dialog instanceof HTMLDialogElement)) {
+-+      return;
+-+    }
+-+
+-+    const preview = dialog.querySelector(".article-image-lightbox__image");
+-+    const caption = dialog.querySelector(".article-image-lightbox__caption");
+-+    const closeButton = dialog.querySelector(".article-image-lightbox__close");
+-+
+-+    if (
+-+      !(preview instanceof HTMLImageElement) ||
+-+      !(caption instanceof HTMLParagraphElement) ||
+-+      !(closeButton instanceof HTMLButtonElement)
+-+    ) {
+-+      return;
+-+    }
+-+
+-+    let activeTrigger = null;
+-+
+-+    const close = () => {
+-+      if (dialog.open) {
+-+        dialog.close();
+-+      }
+-+    };
+-+
+-+    const open = (image) => {
+-+      activeTrigger = image;
+-+      preview.src = image.currentSrc || image.src;
+-+      preview.alt = image.alt || "";
+-+
+-+      const figureCaption = image
+-+        .closest("figure")
+-+        ?.querySelector("figcaption")
+-+        ?.textContent
+-+        ?.trim();
+-+
+-+      const captionText = figureCaption || image.alt?.trim() || "";
+-+      caption.textContent = captionText;
+-+      caption.hidden = captionText.length === 0;
+-+
+-+      dialog.showModal();
+-+      document.documentElement.classList.add("has-image-lightbox");
+-+      closeButton.focus();
+-+    };
+-+
+-+    document.querySelectorAll(selector).forEach((node) => {
+-+      if (!(node instanceof HTMLImageElement)) {
+-+        return;
+-+      }
+-+
+-+      if (
+-+        node.dataset.lightboxReady === "true" ||
+-+        node.dataset.noLightbox === "true" ||
+-+        node.closest("a, button, dialog")
+-+      ) {
+-+        return;
+-+      }
+-+
+-+      node.dataset.lightboxReady = "true";
+-+      node.classList.add("zoomable-article-image");
+-+      node.tabIndex = 0;
+-+      node.setAttribute("role", "button");
+-+      node.setAttribute(
+-+        "aria-label",
+-+        `${node.alt || "Infografik"}. ${hint}`,
+-+      );
+-+      node.setAttribute("title", hint);
+-+
+-+      node.addEventListener("click", () => open(node));
+-+      node.addEventListener("keydown", (event) => {
+-+        if (event.key === "Enter" || event.key === " ") {
+-+          event.preventDefault();
+-+          open(node);
+-+        }
+-+      });
+-+    });
+-+
+-+    if (dialog.dataset.lightboxReady === "true") {
+-+      return;
+-+    }
+-+
+-+    dialog.dataset.lightboxReady = "true";
+-+    closeButton.addEventListener("click", close);
+-+
+-+    dialog.addEventListener("click", (event) => {
+-+      if (event.target === dialog) {
+-+        close();
+-+      }
+-+    });
+-+
+-+    dialog.addEventListener("close", () => {
+-+      document.documentElement.classList.remove("has-image-lightbox");
+-+      preview.removeAttribute("src");
+-+      preview.alt = "";
+-+      caption.textContent = "";
+-+      caption.hidden = true;
+-+
+-+      if (activeTrigger instanceof HTMLElement) {
+-+        activeTrigger.focus();
+-+      }
+-+
+-+      activeTrigger = null;
+-+    });
+-+  };
+-+
+-+  setupArticleImageLightbox();
+-+  document.addEventListener("astro:page-load", setupArticleImageLightbox);
+-+</script>
+-+
+-+<style is:global>
+-+  .zoomable-article-image {
+-+    cursor: zoom-in;
+-+    outline-offset: 5px;
+-+  }
+-+
+-+  .zoomable-article-image:focus-visible {
+-+    outline: 3px solid var(--primary-dark);
+-+  }
+-+
+-+  .article > p:has(> .zoomable-article-image)::after,
+-+  .premium-v3-image:has(.zoomable-article-image)::after {
+-+    content: "Zum Vergrößern antippen";
+-+    display: block;
+-+    margin-top: 8px;
+-+    color: var(--muted);
+-+    font-size: 13px;
+-+    font-weight: 700;
+-+    line-height: 1.4;
+-+    text-align: center;
+-+    pointer-events: none;
+-+  }
+-+
+-+  .has-image-lightbox {
+-+    overflow: hidden;
+-+  }
+-+
+-+  .article-image-lightbox {
+-+    width: 100%;
+-+    max-width: none;
+-+    height: 100%;
+-+    max-height: none;
+-+    margin: 0;
+-+    padding: clamp(12px, 3vw, 32px);
+-+    border: 0;
+-+    background: transparent;
+-+    overflow: hidden;
+-+  }
+-+
+-+  .article-image-lightbox::backdrop {
+-+    background: rgba(8, 15, 12, 0.9);
+-+    backdrop-filter: blur(8px);
+-+  }
+-+
+-+  .article-image-lightbox__surface {
+-+    position: relative;
+-+    display: flex;
+-+    width: 100%;
+-+    height: 100%;
+-+    flex-direction: column;
+-+    align-items: center;
+-+    justify-content: center;
+-+  }
+-+
+-+  .article-image-lightbox__viewport {
+-+    display: flex;
+-+    width: 100%;
+-+    min-height: 0;
+-+    flex: 1;
+-+    align-items: center;
+-+    justify-content: center;
+-+    overflow: auto;
+-+    overscroll-behavior: contain;
+-+    -webkit-overflow-scrolling: touch;
+-+  }
+-+
+-+  .article-image-lightbox__image {
+-+    display: block;
+-+    width: auto;
+-+    max-width: 100%;
+-+    height: auto;
+-+    max-height: calc(100dvh - 140px);
+-+    object-fit: contain;
+-+    border-radius: 16px;
+-+    background: white;
+-+    touch-action: pinch-zoom;
+-+    user-select: none;
+-+    -webkit-user-drag: none;
+-+  }
+-+
+-+  .article-image-lightbox__close {
+-+    position: absolute;
+-+    z-index: 2;
+-+    top: 0;
+-+    right: 0;
+-+    display: grid;
+-+    width: 48px;
+-+    height: 48px;
+-+    place-items: center;
+-+    border: 1px solid rgba(255, 255, 255, 0.25);
+-+    border-radius: 999px;
+-+    color: white;
+-+    background: rgba(8, 15, 12, 0.82);
+-+    font: inherit;
+-+    font-size: 32px;
+-+    line-height: 1;
+-+    cursor: pointer;
+-+  }
+-+
+-+  .article-image-lightbox__close:focus-visible {
+-+    outline: 3px solid white;
+-+    outline-offset: 3px;
+-+  }
+-+
+-+  .article-image-lightbox__caption {
+-+    max-width: 820px;
+-+    margin: 14px auto 0;
+-+    color: white;
+-+    font-size: 15px;
+-+    line-height: 1.5;
+-+    text-align: center;
+-+  }
+-+
+-+  .article-image-lightbox__help {
+-+    margin: 6px auto 0;
+-+    color: rgba(255, 255, 255, 0.72);
+-+    font-size: 12px;
+-+    line-height: 1.4;
+-+    text-align: center;
+-+  }
+-+
+-+  @media (max-width: 760px) {
+-+    .article-image-lightbox__image {
+-+      max-height: calc(100dvh - 124px);
+-+      border-radius: 12px;
+-+    }
+-+
+-+    .article-image-lightbox__close {
+-+      top: 4px;
+-+      right: 4px;
+-+      width: 44px;
+-+      height: 44px;
+-+    }
+-+  }
+-+</style>
+diff --git a/conversion-framework-1-foundation.patch b/conversion-framework-1-foundation.patch
+deleted file mode 100644
+index 4d19e13..0000000
+--- a/conversion-framework-1-foundation.patch
++++ /dev/null
+@@ -1,148 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/content/schema/product.ts b/apps/pfotentechnik/src/content/schema/product.ts
+-index f5db4dd..cf10001 100644
+---- a/apps/pfotentechnik/src/content/schema/product.ts
+-+++ b/apps/pfotentechnik/src/content/schema/product.ts
+-@@ -80,6 +80,35 @@ const productAffiliateSchema =
+-       .default("_blank")
+-   });
+-
+-+const productConversionSchema =
+-+  z.object({
+-+    badge: z
+-+      .enum([
+-+        "testsieger",
+-+        "top-empfehlung",
+-+        "preis-leistungs-tipp",
+-+        "premium-tipp",
+-+        "spezialempfehlung",
+-+        "none"
+-+      ])
+-+      .default("none"),
+-+
+-+    primaryCtaLabel: z
+-+      .string()
+-+      .optional(),
+-+
+-+    secondaryCtaLabel: z
+-+      .string()
+-+      .default(
+-+        "Preis und Verfügbarkeit prüfen"
+-+      ),
+-+
+-+    showSecondaryCta: z
+-+      .boolean()
+-+      .default(true)
+-+  })
+-+  .optional();
+-+
+- const productDecisionSchema =
+-   z.object({
+-     bestFor: z
+-@@ -208,6 +235,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
+-     affiliate:
+-       productAffiliateSchema
+-         .optional(),
+-+
+-+    conversion:
+-+      productConversionSchema,
+-
+-     rating: z
+-       .number()
+-diff --git a/packages/affiliate-core/src/components/product/ProductReview.astro b/packages/affiliate-core/src/components/product/ProductReview.astro
+-index 9a4bfe4..cf10002 100644
+---- a/packages/affiliate-core/src/components/product/ProductReview.astro
+-+++ b/packages/affiliate-core/src/components/product/ProductReview.astro
+-@@ -51,10 +51,21 @@ type ProductReviewData = {
+-     rel: string;
+-     target: "_blank" | "_self";
+-   };
+-+  conversion?: {
+-+    badge?:
+-+      | "testsieger"
+-+      | "top-empfehlung"
+-+      | "preis-leistungs-tipp"
+-+      | "premium-tipp"
+-+      | "spezialempfehlung"
+-+      | "none";
+-+    primaryCtaLabel?: string;
+-+    secondaryCtaLabel?: string;
+-+    showSecondaryCta?: boolean;
+-+  };
+- };
+-
+- interface Props {
+-   product: ProductReviewData;
+-   alternativeRecommendations?: AlternativeRecommendation[];
+--  relatedContent?: unknown[];
+- }
+-@@ -184,4 +194,24 @@ const scoreLabel =
+-           : "Mit Einschränkungen";
+-
+-+const badgeLabels: Record<string, string> = {
+-+  testsieger: "Testsieger",
+-+  "top-empfehlung": "Top-Empfehlung",
+-+  "preis-leistungs-tipp": "Preis-Leistungs-Tipp",
+-+  "premium-tipp": "Premium-Tipp",
+-+  spezialempfehlung: "Spezialempfehlung"
+-+};
+-+
+-+const badgeKey =
+-+  product.conversion?.badge ?? "none";
+-+
+-+const badgeLabel =
+-+  badgeKey === "none"
+-+    ? undefined
+-+    : badgeLabels[badgeKey];
+-+
+-+const primaryCtaLabel =
+-+  product.conversion?.primaryCtaLabel ??
+-+  product.affiliate?.label;
+-+
+- const capitalizeFirst = (value: string) => {
+-   const trimmed = value.trim();
+-@@ -252,7 +282,9 @@ const displayHighlights = [
+-                 fetchpriority="high"
+-               />
+-
+--              <span class="product-hero-v4__badge">
+--                Top-Empfehlung
+--              </span>
+-+              {badgeLabel && (
+-+                <span class="product-hero-v4__badge">
+-+                  {badgeLabel}
+-+                </span>
+-+              )}
+-             </div>
+-@@ -351,7 +383,9 @@ const displayHighlights = [
+-               )
+-             }
+-
+--            <span class="product-hero-v4__badge">
+--              Top-Empfehlung
+--            </span>
+-+            {badgeLabel && (
+-+              <span class="product-hero-v4__badge">
+-+                {badgeLabel}
+-+              </span>
+-+            )}
+-           </div>
+-@@ -508,6 +542,6 @@ const displayHighlights = [
+-                   rel={product.affiliate.rel}
+-                   target={product.affiliate.target}
+-                 >
+--                  <span>{product.affiliate.label}</span>
+-+                  <span>{primaryCtaLabel}</span>
+-                   <span aria-hidden="true">→</span>
+-                 </a>
+-diff --git a/apps/pfotentechnik/src/pages/produkt/[product].astro b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-index 0c17348..cf10003 100644
+---- a/apps/pfotentechnik/src/pages/produkt/[product].astro
+-+++ b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-@@ -184,5 +184,7 @@ const reviewProduct = {
+-            contentProduct.images.gallery
+-         },
+-+        conversion:
+-+          contentProduct.conversion,
+-         affiliate:
+-           contentProduct.affiliate
+-             ? {
+diff --git a/conversion-framework-2-recommendations.patch b/conversion-framework-2-recommendations.patch
+deleted file mode 100644
+index 13292cb..0000000
+--- a/conversion-framework-2-recommendations.patch
++++ /dev/null
+@@ -1,208 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts b/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+-index 679c908..cf20001 100644
+---- a/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+-+++ b/apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts
+-@@ -215,42 +215,152 @@ const cleanTags = (entry: ProductEntry) => {
+- export const getFutterautomatenAlternatives = (
+-   currentProduct: ProductEntry,
+-   products: ProductEntry[],
+-   limit = 3
+- ): AlternativeRecommendation[] => {
+-   const currentText = getProductText(currentProduct);
+--
+--  const candidates = products
+-+  const preferred = new Map(
+-+    currentProduct.data.alternatives.map(
+-+      (slug, index) => [slug, index]
+-+    )
+-+  );
+-+
+-+  const currentFilters =
+-+    currentProduct.data.comparisonFilters;
+-+
+-+  const getScore = (candidate: ProductEntry) => {
+-+    const candidateText = getProductText(candidate);
+-+    const candidateFilters =
+-+      candidate.data.comparisonFilters;
+-+
+-+    let score =
+-+      candidate.data.score ??
+-+      Math.round(candidate.data.rating * 20);
+-+
+-+    const preferredIndex = preferred.get(
+-+      candidate.data.slug
+-+    );
+-+
+-+    if (preferredIndex !== undefined) {
+-+      score += 100 - preferredIndex * 5;
+-+    }
+-+
+-+    const currentFoodTypes =
+-+      currentFilters?.foodType ?? [];
+-+    const candidateFoodTypes =
+-+      candidateFilters?.foodType ?? [];
+-+
+-+    if (
+-+      currentFoodTypes.length > 0 &&
+-+      candidateFoodTypes.some((type) =>
+-+        currentFoodTypes.includes(type)
+-+      )
+-+    ) {
+-+      score += 30;
+-+    }
+-+
+-+    if (
+-+      currentProduct.data.useCase &&
+-+      candidate.data.useCase &&
+-+      normalizeText(currentProduct.data.useCase) ===
+-+        normalizeText(candidate.data.useCase)
+-+    ) {
+-+      score += 25;
+-+    }
+-+
+-+    const currentBestFor = new Set(
+-+      currentProduct.data.decision.bestFor.map(
+-+        normalizeText
+-+      )
+-+    );
+-+
+-+    const bestForOverlap =
+-+      candidate.data.decision.bestFor.filter(
+-+        (item) =>
+-+          currentBestFor.has(normalizeText(item))
+-+      ).length;
+-+
+-+    score += Math.min(20, bestForOverlap * 10);
+-+
+-+    if (
+-+      candidate.data.priceCategory &&
+-+      currentProduct.data.priceCategory &&
+-+      candidate.data.priceCategory !==
+-+        currentProduct.data.priceCategory
+-+    ) {
+-+      score += 10;
+-+    }
+-+
+-+    const featureDifference = features.some(
+-+      (item) =>
+-+        item.terms.some((term) =>
+-+          candidateText.includes(
+-+            normalizeText(term)
+-+          )
+-+        ) &&
+-+        !item.terms.some((term) =>
+-+          currentText.includes(
+-+            normalizeText(term)
+-+          )
+-+        )
+-+    );
+-+
+-+    if (featureDifference) {
+-+      score += 20;
+-+    }
+-+
+-+    return score;
+-+  };
+-+
+-+  const candidates = products
+-     .filter(
+-       (candidate) =>
+-         candidate.id !== currentProduct.id &&
+-         candidate.data.category.key ===
+-           currentProduct.data.category.key
+-     )
+--    .sort(
+--      (a, b) =>
+--        (b.data.score ?? 0) -
+--        (a.data.score ?? 0)
+--    );
+-+    .map((candidate) => ({
+-+      candidate,
+-+      score: getScore(candidate)
+-+    }))
+-+    .sort((a, b) => b.score - a.score);
+-
+-   const recommendations: AlternativeRecommendation[] = [];
+-   const usedKinds = new Set<string>();
+-
+--  for (const candidate of candidates) {
+-+  for (const { candidate } of candidates) {
+-     if (recommendations.length >= limit) {
+-       break;
+-     }
+-
+-     const candidateText = getProductText(candidate);
+--    const feature = features.find(
+-+    const preferredAlternative =
+-+      preferred.has(candidate.data.slug);
+-+
+-+    const feature =
+-+      features.find(
+-       (item) =>
+-         item.terms.some((term) =>
+-           candidateText.includes(normalizeText(term))
+-         ) &&
+-         !item.terms.some((term) =>
+-           currentText.includes(normalizeText(term))
+-         ) &&
+-         !usedKinds.has(item.kind)
+--    );
+-+      ) ??
+-+      (preferredAlternative
+-+        ? {
+-+            kind:
+-+              `editorial-${candidate.data.slug}`,
+-+            icon: "↗",
+-+            headline:
+-+              "Redaktionell priorisierte Alternative",
+-+            reason:
+-+              candidate.data.recommendation,
+-+            difference:
+-+              candidate.data.review.verdict,
+-+            terms: []
+-+          }
+-+        : undefined);
+-
+-     if (!feature) {
+-       continue;
+-@@ -274,7 +391,40 @@ export const getFutterautomatenAlternatives = (
+-     });
+-
+-     usedKinds.add(feature.kind);
+-   }
+-
+-+  if (recommendations.length < limit) {
+-+    for (const { candidate } of candidates) {
+-+      if (
+-+        recommendations.length >= limit ||
+-+        recommendations.some(
+-+          (item) =>
+-+            item.productKey ===
+-+            candidate.data.slug
+-+        )
+-+      ) {
+-+        continue;
+-+      }
+-+
+-+      recommendations.push({
+-+        productKey: candidate.data.slug,
+-+        name: candidate.data.title,
+-+        url:
+-+          candidate.data.productUrl ??
+-+          `/produkt/${candidate.data.slug}/`,
+-+        image:
+-+          candidate.data.images.comparison?.src ??
+-+          candidate.data.images.hero,
+-+        score: candidate.data.score ?? 0,
+-+        rating: candidate.data.rating,
+-+        icon: "↔",
+-+        headline: "Im direkten Vergleich",
+-+        reason: candidate.data.recommendation,
+-+        difference: candidate.data.review.verdict,
+-+        tags: cleanTags(candidate)
+-+      });
+-+    }
+-+  }
+-+
+-   return recommendations;
+- };
+diff --git a/conversion-framework-3-trust.patch b/conversion-framework-3-trust.patch
+deleted file mode 100644
+index 4d78f7c..0000000
+--- a/conversion-framework-3-trust.patch
++++ /dev/null
+@@ -1,280 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/content/schema/product.ts b/apps/pfotentechnik/src/content/schema/product.ts
+-index cf10001..cf30001 100644
+---- a/apps/pfotentechnik/src/content/schema/product.ts
+-+++ b/apps/pfotentechnik/src/content/schema/product.ts
+-@@ -107,5 +107,46 @@ const productConversionSchema =
+-   })
+-   .optional();
+-
+-+const productEditorialSchema =
+-+  z.object({
+-+    assessmentType: z
+-+      .enum([
+-+        "hands-on-test",
+-+        "editorial-review",
+-+        "data-review"
+-+      ])
+-+      .default("editorial-review"),
+-+
+-+    evidence: z
+-+      .array(
+-+        z.enum([
+-+          "hands-on-testing",
+-+          "manufacturer-documentation",
+-+          "technical-specifications",
+-+          "comparative-analysis",
+-+          "user-feedback"
+-+        ])
+-+      )
+-+      .default([
+-+        "manufacturer-documentation",
+-+        "technical-specifications",
+-+        "comparative-analysis"
+-+      ]),
+-+
+-+    testedHandsOn: z
+-+      .boolean()
+-+      .default(false),
+-+
+-+    lastVerifiedAt: z
+-+      .coerce
+-+      .date()
+-+      .optional(),
+-+
+-+    note: z
+-+      .string()
+-+      .optional()
+-+  })
+-+  .optional();
+-+
+- const productDecisionSchema =
+-   z.object({
+-@@ -238,5 +274,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
+-     conversion:
+-       productConversionSchema,
+-
+-+    editorial:
+-+      productEditorialSchema,
+-+
+-     rating: z
+-       .number()
+-diff --git a/apps/pfotentechnik/src/components/ProductTrustPanel.astro b/apps/pfotentechnik/src/components/ProductTrustPanel.astro
+-new file mode 100644
+-index 0000000..cf30002
+---- /dev/null
+-+++ b/apps/pfotentechnik/src/components/ProductTrustPanel.astro
+-@@ -0,0 +1,170 @@
+-+---
+-+type Evidence =
+-+  | "hands-on-testing"
+-+  | "manufacturer-documentation"
+-+  | "technical-specifications"
+-+  | "comparative-analysis"
+-+  | "user-feedback";
+-+
+-+interface Props {
+-+  assessmentType?:
+-+    | "hands-on-test"
+-+    | "editorial-review"
+-+    | "data-review";
+-+  evidence?: Evidence[];
+-+  testedHandsOn?: boolean;
+-+  lastVerifiedAt?: Date | string;
+-+  note?: string;
+-+}
+-+
+-+const {
+-+  assessmentType = "editorial-review",
+-+  evidence = [
+-+    "manufacturer-documentation",
+-+    "technical-specifications",
+-+    "comparative-analysis"
+-+  ],
+-+  testedHandsOn = false,
+-+  lastVerifiedAt,
+-+  note
+-+} = Astro.props as Props;
+-+
+-+const assessmentLabels = {
+-+  "hands-on-test": "Praxistest",
+-+  "editorial-review": "Redaktionelle Einordnung",
+-+  "data-review": "Datenbasierte Einordnung"
+-+};
+-+
+-+const evidenceLabels: Record<Evidence, string> = {
+-+  "hands-on-testing": "eigene praktische Prüfung",
+-+  "manufacturer-documentation": "Herstellerunterlagen",
+-+  "technical-specifications": "technische Daten",
+-+  "comparative-analysis": "einheitliche Vergleichskriterien",
+-+  "user-feedback": "ausgewertete Nutzerhinweise"
+-+};
+-+
+-+const formattedDate = lastVerifiedAt
+-+  ? new Intl.DateTimeFormat("de-DE", {
+-+      day: "2-digit",
+-+      month: "long",
+-+      year: "numeric"
+-+    }).format(new Date(lastVerifiedAt))
+-+  : undefined;
+-+
+-+const evidenceText = evidence
+-+  .map((item) => evidenceLabels[item])
+-+  .filter(Boolean)
+-+  .join(", ");
+-+---
+-+
+-+<section
+-+  class="pt-trust-panel"
+-+  aria-labelledby="pt-trust-panel-title"
+-+>
+-+  <div class="pt-trust-panel__heading">
+-+    <span>{assessmentLabels[assessmentType]}</span>
+-+    <h2 id="pt-trust-panel-title">
+-+      So ist diese Bewertung entstanden
+-+    </h2>
+-+  </div>
+-+
+-+  <div class="pt-trust-panel__content">
+-+    <p>
+-+      Die Einordnung basiert auf {evidenceText}.
+-+      {
+-+        testedHandsOn
+-+          ? " Das Produkt wurde zusätzlich praktisch geprüft."
+-+          : " Sie behauptet keinen mehrmonatigen Praxistest."
+-+      }
+-+    </p>
+-+
+-+    {note && <p>{note}</p>}
+-+
+-+    <dl>
+-+      <div>
+-+        <dt>Prüfstatus</dt>
+-+        <dd>{assessmentLabels[assessmentType]}</dd>
+-+      </div>
+-+      <div>
+-+        <dt>Praxistest</dt>
+-+        <dd>{testedHandsOn ? "Ja" : "Nicht behauptet"}</dd>
+-+      </div>
+-+      {formattedDate && (
+-+        <div>
+-+          <dt>Zuletzt geprüft</dt>
+-+          <dd>{formattedDate}</dd>
+-+        </div>
+-+      )}
+-+    </dl>
+-+  </div>
+-+</section>
+-+
+-+<style>
+-+  .pt-trust-panel {
+-+    margin: 48px auto;
+-+    padding: clamp(24px, 4vw, 38px);
+-+    border: 1px solid rgba(15, 23, 42, 0.12);
+-+    border-radius: 24px;
+-+    background: #f8fafc;
+-+    display: grid;
+-+    gap: 24px;
+-+  }
+-+
+-+  .pt-trust-panel__heading span {
+-+    display: block;
+-+    margin-bottom: 8px;
+-+    font-size: 0.78rem;
+-+    font-weight: 800;
+-+    letter-spacing: 0.08em;
+-+    text-transform: uppercase;
+-+    color: #2e7d32;
+-+  }
+-+
+-+  .pt-trust-panel h2 {
+-+    margin: 0;
+-+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+-+    line-height: 1.15;
+-+  }
+-+
+-+  .pt-trust-panel p {
+-+    margin: 0;
+-+    line-height: 1.72;
+-+    color: #334155;
+-+  }
+-+
+-+  .pt-trust-panel__content {
+-+    display: grid;
+-+    gap: 16px;
+-+  }
+-+
+-+  .pt-trust-panel dl {
+-+    margin: 4px 0 0;
+-+    display: grid;
+-+    grid-template-columns: repeat(3, minmax(0, 1fr));
+-+    gap: 12px;
+-+  }
+-+
+-+  .pt-trust-panel dl div {
+-+    padding: 14px 16px;
+-+    border-radius: 16px;
+-+    background: #ffffff;
+-+  }
+-+
+-+  .pt-trust-panel dt {
+-+    font-size: 0.78rem;
+-+    font-weight: 700;
+-+    color: #64748b;
+-+  }
+-+
+-+  .pt-trust-panel dd {
+-+    margin: 4px 0 0;
+-+    font-weight: 800;
+-+    color: #0f172a;
+-+  }
+-+
+-+  @media (max-width: 720px) {
+-+    .pt-trust-panel dl {
+-+      grid-template-columns: 1fr;
+-+    }
+-+  }
+-+</style>
+-diff --git a/apps/pfotentechnik/src/pages/produkt/[product].astro b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-index cf10003..cf30003 100644
+---- a/apps/pfotentechnik/src/pages/produkt/[product].astro
+-+++ b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-@@ -13,4 +13,5 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+- import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+- import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+-+import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
+- import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+-@@ -391,23 +392,13 @@ const everydayCriteria = [
+-       />
+-     </AutoLinkContent>
+-
+--    <section
+--      class="pt-review-method"
+--      aria-labelledby="pt-review-method-title"
+--    >
+--      <span>
+--        Redaktionelle Einordnung
+--      </span>
+--
+--      <h2 id="pt-review-method-title">
+--        So ist dieser Testbericht entstanden
+--      </h2>
+--
+--      <p>
+--        Die Bewertung basiert auf technischen Daten,
+--        aktuellen Herstellerinformationen und einheitlichen
+--        Vergleichskriterien. Sie ist eine redaktionelle
+--        Alltagseinordnung und behauptet keinen mehrmonatigen
+--        Praxistest.
+--      </p>
+--    </section>
+-+    <ProductTrustPanel
+-+      assessmentType={contentProduct.editorial?.assessmentType}
+-+      evidence={contentProduct.editorial?.evidence}
+-+      testedHandsOn={contentProduct.editorial?.testedHandsOn}
+-+      lastVerifiedAt={
+-+        contentProduct.editorial?.lastVerifiedAt ??
+-+        updatedAt
+-+      }
+-+      note={contentProduct.editorial?.note}
+-+    />
+diff --git a/conversion-framework-4-journey.patch b/conversion-framework-4-journey.patch
+deleted file mode 100644
+index 219ad24..0000000
+--- a/conversion-framework-4-journey.patch
++++ /dev/null
+@@ -1,271 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/components/ConversionJourney.astro b/apps/pfotentechnik/src/components/ConversionJourney.astro
+-new file mode 100644
+-index 0000000..cf40001
+---- /dev/null
+-+++ b/apps/pfotentechnik/src/components/ConversionJourney.astro
+-@@ -0,0 +1,193 @@
+-+---
+-+type JourneyItem = {
+-+  href: string;
+-+  label: string;
+-+  title: string;
+-+  text?: string;
+-+};
+-+
+-+interface Props {
+-+  eyebrow?: string;
+-+  title?: string;
+-+  text?: string;
+-+  items: JourneyItem[];
+-+}
+-+
+-+const {
+-+  eyebrow = "Nächster Schritt",
+-+  title = "So gehst du sinnvoll weiter",
+-+  text =
+-+    "Vertiefe nur den Schritt, der für deine Entscheidung noch fehlt.",
+-+  items
+-+} = Astro.props as Props;
+-+
+-+const visibleItems = items
+-+  .filter(
+-+    (item, index, allItems) =>
+-+      item.href &&
+-+      allItems.findIndex(
+-+        (candidate) =>
+-+          candidate.href === item.href
+-+      ) === index
+-+  )
+-+  .slice(0, 3);
+-+---
+-+
+-+{visibleItems.length > 0 && (
+-+  <nav
+-+    class="pt-conversion-journey"
+-+    aria-label="Empfohlene nächste Schritte"
+-+  >
+-+    <header>
+-+      <span>{eyebrow}</span>
+-+      <h2>{title}</h2>
+-+      <p>{text}</p>
+-+    </header>
+-+
+-+    <ol>
+-+      {visibleItems.map((item, index) => (
+-+        <li>
+-+          <a href={item.href}>
+-+            <span
+-+              class="pt-conversion-journey__number"
+-+              aria-hidden="true"
+-+            >
+-+              {index + 1}
+-+            </span>
+-+            <span class="pt-conversion-journey__content">
+-+              <small>{item.label}</small>
+-+              <strong>{item.title}</strong>
+-+              {item.text && <p>{item.text}</p>}
+-+            </span>
+-+            <span
+-+              class="pt-conversion-journey__arrow"
+-+              aria-hidden="true"
+-+            >
+-+              →
+-+            </span>
+-+          </a>
+-+        </li>
+-+      ))}
+-+    </ol>
+-+  </nav>
+-+)}
+-+
+-+<style>
+-+  .pt-conversion-journey {
+-+    margin: 56px auto;
+-+    padding: clamp(24px, 4vw, 42px);
+-+    border-radius: 28px;
+-+    background:
+-+      linear-gradient(
+-+        135deg,
+-+        rgba(46, 125, 50, 0.08),
+-+        rgba(79, 70, 229, 0.06)
+-+      );
+-+  }
+-+
+-+  .pt-conversion-journey header {
+-+    max-width: 760px;
+-+    margin-bottom: 24px;
+-+  }
+-+
+-+  .pt-conversion-journey header > span {
+-+    display: block;
+-+    margin-bottom: 8px;
+-+    font-size: 0.78rem;
+-+    font-weight: 800;
+-+    letter-spacing: 0.08em;
+-+    text-transform: uppercase;
+-+    color: #2e7d32;
+-+  }
+-+
+-+  .pt-conversion-journey h2 {
+-+    margin: 0 0 10px;
+-+    font-size: clamp(1.65rem, 3vw, 2.4rem);
+-+    line-height: 1.12;
+-+  }
+-+
+-+  .pt-conversion-journey header p {
+-+    margin: 0;
+-+    color: #475569;
+-+    line-height: 1.65;
+-+  }
+-+
+-+  .pt-conversion-journey ol {
+-+    margin: 0;
+-+    padding: 0;
+-+    list-style: none;
+-+    display: grid;
+-+    gap: 12px;
+-+  }
+-+
+-+  .pt-conversion-journey a {
+-+    display: grid;
+-+    grid-template-columns: auto 1fr auto;
+-+    gap: 16px;
+-+    align-items: center;
+-+    padding: 18px;
+-+    border: 1px solid rgba(15, 23, 42, 0.1);
+-+    border-radius: 18px;
+-+    background: #ffffff;
+-+    color: inherit;
+-+    text-decoration: none;
+-+    transition:
+-+      transform 160ms ease,
+-+      border-color 160ms ease,
+-+      box-shadow 160ms ease;
+-+  }
+-+
+-+  .pt-conversion-journey a:hover,
+-+  .pt-conversion-journey a:focus-visible {
+-+    transform: translateY(-2px);
+-+    border-color: rgba(46, 125, 50, 0.35);
+-+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+-+  }
+-+
+-+  .pt-conversion-journey__number {
+-+    width: 36px;
+-+    height: 36px;
+-+    display: grid;
+-+    place-items: center;
+-+    border-radius: 999px;
+-+    background: #2e7d32;
+-+    color: #ffffff;
+-+    font-weight: 800;
+-+  }
+-+
+-+  .pt-conversion-journey__content {
+-+    min-width: 0;
+-+    display: grid;
+-+    gap: 3px;
+-+  }
+-+
+-+  .pt-conversion-journey small {
+-+    color: #64748b;
+-+    font-weight: 700;
+-+  }
+-+
+-+  .pt-conversion-journey strong {
+-+    font-size: 1.04rem;
+-+  }
+-+
+-+  .pt-conversion-journey__content p {
+-+    margin: 2px 0 0;
+-+    color: #475569;
+-+    line-height: 1.5;
+-+  }
+-+
+-+  .pt-conversion-journey__arrow {
+-+    font-size: 1.4rem;
+-+    color: #2e7d32;
+-+  }
+-+
+-+  @media (max-width: 640px) {
+-+    .pt-conversion-journey a {
+-+      grid-template-columns: auto 1fr;
+-+    }
+-+
+-+    .pt-conversion-journey__arrow {
+-+      display: none;
+-+    }
+-+  }
+-+</style>
+-diff --git a/apps/pfotentechnik/src/pages/produkt/[product].astro b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-index cf30003..cf40002 100644
+---- a/apps/pfotentechnik/src/pages/produkt/[product].astro
+-+++ b/apps/pfotentechnik/src/pages/produkt/[product].astro
+-@@ -14,4 +14,5 @@ import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+- import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+- import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
+-+import ConversionJourney from "../../components/ConversionJourney.astro";
+- import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+-@@ -477,6 +478,13 @@ const everydayCriteria = [
+-       </div>
+-     </aside>
+-
+-+    <ConversionJourney
+-+      eyebrow="Entscheidung abschließen"
+-+      title="Vergleichen, einordnen oder direkt weitergehen"
+-+      text="Diese Auswahl führt dich zu den nächsten passenden Informationen, ohne die Produktbewertung zu wiederholen."
+-+      items={relatedItems}
+-+    />
+-+
+-     <RelatedArticles items={relatedItems} />
+-   </main>
+- </ProjectLayout>
+-diff --git a/apps/pfotentechnik/src/pages/vergleiche/[comparison].astro b/apps/pfotentechnik/src/pages/vergleiche/[comparison].astro
+-index a8dfed7..cf40003 100644
+---- a/apps/pfotentechnik/src/pages/vergleiche/[comparison].astro
+-+++ b/apps/pfotentechnik/src/pages/vergleiche/[comparison].astro
+-@@ -9,4 +9,5 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
+- import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+- import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+-+import ConversionJourney from "../../components/ConversionJourney.astro";
+- import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
+-@@ -141,6 +142,13 @@ const relatedItems = relatedEntries.map((related) => ({
+-       </AutoLinkContent>
+-     </article>
+-
+-+    <ConversionJourney
+-+      eyebrow="Nach dem Vergleich"
+-+      title="Prüfe jetzt die engere Auswahl"
+-+      text="Öffne einen Produkttest oder vertiefe den Anwendungsfall, der für deine Entscheidung noch offen ist."
+-+      items={relatedItems}
+-+    />
+-+
+-     <RelatedArticles items={relatedItems} />
+-
+-     {comparison.faq.length > 0 && (
+-diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+-index f587025..cf40004 100644
+---- a/apps/pfotentechnik/src/pages/[slug].astro
+-+++ b/apps/pfotentechnik/src/pages/[slug].astro
+-@@ -15,4 +15,5 @@ import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+- import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+- import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+- import HealthBridge from "../components/HealthBridge.astro";
+-+import ConversionJourney from "../components/ConversionJourney.astro";
+- import { projectConfig, siteMeta } from "../project.config";
+-@@ -507,6 +508,13 @@ const relatedItems = relatedEntries.map((entry) => ({
+-       )
+-     }
+-     <FAQ items={page.data.faq} />
+-+
+-+    <ConversionJourney
+-+      eyebrow="Passender nächster Schritt"
+-+      title="Von der Information zur passenden Entscheidung"
+-+      text="Nutze nur den nächsten Schritt, der zu deiner aktuellen Frage passt."
+-+      items={relatedItems}
+-+    />
+-   </article>
+-
+-   <RelatedArticles items={relatedItems} />
+diff --git a/fix-smarte-futterautomaten-hero-1.py b/fix-smarte-futterautomaten-hero-1.py
+deleted file mode 100644
+index bc892f7..0000000
+--- a/fix-smarte-futterautomaten-hero-1.py
++++ /dev/null
+@@ -1,33 +0,0 @@
+-#!/usr/bin/env python3
+-from pathlib import Path
+-
+-ARTICLE = Path("apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md")
+-
+-OLD = 'heroImageKey: "feederHero"\n'
+-NEW = '''heroImage:
+-  src: "../../assets/images/guides/smarte-futterautomaten/hero.webp"
+-  alt: "Smarte Futterautomaten für Hunde und Katzen im Vergleich."
+-heroImageKey: "feederHero"
+-'''
+-
+-if not ARTICLE.exists():
+-    raise SystemExit(f"Datei nicht gefunden: {ARTICLE}")
+-
+-text = ARTICLE.read_text(encoding="utf-8")
+-
+-if NEW in text:
+-    print("Der Hero-Fix ist bereits installiert.")
+-    raise SystemExit(0)
+-
+-if OLD not in text:
+-    raise SystemExit(
+-        'Erwartete Frontmatter-Zeile `heroImageKey: "feederHero"` nicht gefunden. '
+-        "Die Datei wurde möglicherweise bereits verändert."
+-    )
+-
+-ARTICLE.write_text(text.replace(OLD, NEW, 1), encoding="utf-8")
+-
+-print("Guide-Hero ergänzt.")
+-print("Der allgemeine Hero bleibt als Fallback über heroImageKey erhalten.")
+-print("Danach ausführen:")
+-print("  npm run build:pfotentechnik")
+diff --git a/fix-smarte-futterautomaten-images-1.py b/fix-smarte-futterautomaten-images-1.py
+deleted file mode 100644
+index c4df04f..0000000
+--- a/fix-smarte-futterautomaten-images-1.py
++++ /dev/null
+@@ -1,32 +0,0 @@
+-#!/usr/bin/env python3
+-from pathlib import Path
+-import sys
+-
+-ARTICLE = Path("apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md")
+-OLD = "](/images/guides/smarte-futterautomaten/"
+-NEW = "](../../assets/images/guides/smarte-futterautomaten/"
+-
+-if not ARTICLE.exists():
+-    raise SystemExit(f"Datei nicht gefunden: {ARTICLE}")
+-
+-text = ARTICLE.read_text(encoding="utf-8")
+-count = text.count(OLD)
+-
+-if count == 0:
+-    if NEW in text:
+-        print("Die Bildpfade sind bereits korrigiert.")
+-        raise SystemExit(0)
+-    raise SystemExit(
+-        "Keine erwarteten Bildpfade gefunden. "
+-        "Die Datei wurde möglicherweise bereits anders geändert."
+-    )
+-
+-updated = text.replace(OLD, NEW)
+-ARTICLE.write_text(updated, encoding="utf-8")
+-
+-print(f"{count} Bildpfade korrigiert:")
+-print(f"  {OLD}")
+-print(f"  {NEW}")
+-print()
+-print("Danach ausführen:")
+-print("  npm run build:pfotentechnik")
+diff --git a/install-design-system.mjs b/install-design-system.mjs
+deleted file mode 100644
+index 5a4f55a..0000000
+--- a/install-design-system.mjs
++++ /dev/null
+@@ -1,98 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const repoRoot = process.cwd();
+-const packageRoot = path.dirname(new URL(import.meta.url).pathname);
+-const backupRoot = path.join(
+-  repoRoot,
+-  `.pfotentechnik-design-backup-${new Date().toISOString().replace(/[:.]/g, "-")}`
+-);
+-
+-const replacements = [
+-  {
+-    source: "files/apps/pfotentechnik/src/styles/pfotentechnik-brand-system.css",
+-    target: "apps/pfotentechnik/src/styles/pfotentechnik-brand-system.css"
+-  },
+-  {
+-    source: "files/packages/affiliate-core/src/components/Header.astro",
+-    target: "packages/affiliate-core/src/components/Header.astro"
+-  },
+-  {
+-    source: "files/packages/affiliate-core/src/components/Footer.astro",
+-    target: "packages/affiliate-core/src/components/Footer.astro"
+-  }
+-];
+-
+-const layoutPath = path.join(
+-  repoRoot,
+-  "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
+-);
+-
+-if (!fs.existsSync(layoutPath)) {
+-  console.error("Abbruch: ProjectLayout.astro wurde nicht gefunden.");
+-  process.exit(1);
+-}
+-
+-for (const item of replacements) {
+-  const source = path.join(packageRoot, item.source);
+-  if (!fs.existsSync(source)) {
+-    console.error(`Abbruch: Paketdatei fehlt: ${item.source}`);
+-    process.exit(1);
+-  }
+-}
+-
+-fs.mkdirSync(backupRoot, { recursive: true });
+-
+-const backup = (relativePath) => {
+-  const source = path.join(repoRoot, relativePath);
+-  if (!fs.existsSync(source)) return;
+-
+-  const target = path.join(backupRoot, relativePath);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.copyFileSync(source, target);
+-};
+-
+-backup("apps/pfotentechnik/src/layouts/ProjectLayout.astro");
+-for (const item of replacements) backup(item.target);
+-
+-for (const item of replacements) {
+-  const source = path.join(packageRoot, item.source);
+-  const target = path.join(repoRoot, item.target);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.copyFileSync(source, target);
+-  console.log(`installiert: ${item.target}`);
+-}
+-
+-let layout = fs.readFileSync(layoutPath, "utf8");
+-const importLine = 'import "../styles/pfotentechnik-brand-system.css";';
+-
+-if (!layout.includes(importLine)) {
+-  const anchor = 'import "../styles/pfotentechnik.css";';
+-
+-  if (!layout.includes(anchor)) {
+-    console.error("Abbruch: CSS-Importanker wurde nicht gefunden.");
+-    process.exit(1);
+-  }
+-
+-  layout = layout.replace(anchor, `${anchor}\n${importLine}`);
+-  fs.writeFileSync(layoutPath, layout, "utf8");
+-  console.log("aktualisiert: apps/pfotentechnik/src/layouts/ProjectLayout.astro");
+-}
+-
+-const manifest = {
+-  installedAt: new Date().toISOString(),
+-  backupRoot,
+-  files: replacements.map((item) => item.target).concat([
+-    "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
+-  ])
+-};
+-
+-fs.writeFileSync(
+-  path.join(repoRoot, ".pfotentechnik-design-system-v1.json"),
+-  JSON.stringify(manifest, null, 2),
+-  "utf8"
+-);
+-
+-console.log(`\nBackup: ${backupRoot}`);
+-console.log("Nächster Schritt: npm run build:pfotentechnik");
+diff --git a/install-internal-linking-2.mjs b/install-internal-linking-2.mjs
+deleted file mode 100644
+index 27506c2..0000000
+--- a/install-internal-linking-2.mjs
++++ /dev/null
+@@ -1,411 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const backupRoot = path.join(
+-  root,
+-  `.internal-linking-2-backup-${new Date().toISOString().replace(/[:.]/g, "-")}`
+-);
+-
+-const files = {
+-  types: "packages/affiliate-core/src/linking/types.ts",
+-  engine: "packages/affiliate-core/src/linking/linkEngine.ts",
+-  internal: "apps/pfotentechnik/src/domain/content/internalLinks.ts",
+-  page: "apps/pfotentechnik/src/pages/[slug].astro"
+-};
+-
+-const read = (relativePath) => {
+-  const absolutePath = path.join(root, relativePath);
+-  if (!fs.existsSync(absolutePath)) {
+-    throw new Error(`Datei nicht gefunden: ${relativePath}`);
+-  }
+-  return fs.readFileSync(absolutePath, "utf8");
+-};
+-
+-const backup = (relativePath, content) => {
+-  const target = path.join(backupRoot, relativePath);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.writeFileSync(target, content, "utf8");
+-};
+-
+-const write = (relativePath, before, after) => {
+-  if (before === after) {
+-    console.log(`Unverändert: ${relativePath}`);
+-    return false;
+-  }
+-
+-  backup(relativePath, before);
+-  fs.writeFileSync(path.join(root, relativePath), after, "utf8");
+-  console.log(`Aktualisiert: ${relativePath}`);
+-  return true;
+-};
+-
+-const replaceOnce = (content, pattern, replacement, label) => {
+-  if (typeof pattern === "string") {
+-    if (!content.includes(pattern)) {
+-      throw new Error(`Muster nicht gefunden: ${label}`);
+-    }
+-    return content.replace(pattern, replacement);
+-  }
+-
+-  if (!pattern.test(content)) {
+-    throw new Error(`Muster nicht gefunden: ${label}`);
+-  }
+-
+-  pattern.lastIndex = 0;
+-  return content.replace(pattern, replacement);
+-};
+-
+-const updateTypes = () => {
+-  const before = read(files.types);
+-  let after = before;
+-
+-  if (!after.includes("export type InternalLinkGroup")) {
+-    after = replaceOnce(
+-      after,
+-      /export type LinkPriority\s*=\s*\|\s*"low"\s*\|\s*"normal"\s*\|\s*"high";/,
+-      `export type LinkPriority =
+-  | "low"
+-  | "normal"
+-  | "high";
+-
+-export type InternalLinkGroup =
+-  | "knowledge"
+-  | "comparison"
+-  | "product"
+-  | "manufacturer";`,
+-      "InternalLinkGroup nach LinkPriority"
+-    );
+-  }
+-
+-  if (!after.includes("group?: InternalLinkGroup;")) {
+-    after = replaceOnce(
+-      after,
+-      /group\?:\s*string;/,
+-      "group?: InternalLinkGroup;",
+-      "group-Typ"
+-    );
+-  }
+-
+-  return write(files.types, before, after);
+-};
+-
+-const updateEngine = () => {
+-  const before = read(files.engine);
+-  let after = before;
+-
+-  if (!after.includes("InternalLinkGroup,")) {
+-    after = replaceOnce(
+-      after,
+-      /import type \{\s*InternalLinkDefinition,\s*LinkPriority\s*\} from "\.\/types";/,
+-      `import type {
+-  InternalLinkDefinition,
+-  InternalLinkGroup,
+-  LinkPriority
+-} from "./types";`,
+-      "Engine-Typimport"
+-    );
+-  }
+-
+-  if (!after.includes("score: number;")) {
+-    after = replaceOnce(
+-      after,
+-      /export interface LinkMatch \{([\s\S]*?)length:\s*number;\s*\}/,
+-      (match, body) =>
+-        `export interface LinkMatch {${body}length: number;\n  score: number;\n}`,
+-      "LinkMatch.score"
+-    );
+-  }
+-
+-  after = after.replace(
+-    /sourceGroup\?:\s*string;/,
+-    "sourceGroup?: InternalLinkGroup;"
+-  );
+-
+-  if (!after.includes("const funnelWeight:")) {
+-    after = replaceOnce(
+-      after,
+-      /const priorityWeight:[\s\S]*?\n\};/,
+-      (match) => `${match}
+-
+-const funnelWeight: Record<
+-  InternalLinkGroup,
+-  Partial<Record<InternalLinkGroup, number>>
+-> = {
+-  knowledge: {
+-    comparison: 40,
+-    knowledge: 30,
+-    product: 20,
+-    manufacturer: 10
+-  },
+-  comparison: {
+-    product: 40,
+-    manufacturer: 25,
+-    knowledge: 15,
+-    comparison: 0
+-  },
+-  product: {
+-    manufacturer: 35,
+-    comparison: 30,
+-    knowledge: 20,
+-    product: 0
+-  },
+-  manufacturer: {
+-    product: 35,
+-    comparison: 25,
+-    knowledge: 20,
+-    manufacturer: 0
+-  }
+-};`,
+-      "Funnel-Gewichtung"
+-    );
+-  }
+-
+-  if (!after.includes("const getDefinitionScore")) {
+-    after = replaceOnce(
+-      after,
+-      /const getPriorityWeight = \([\s\S]*?\)\s*=>\s*priorityWeight\[definition\.priority \?\? "normal"\];/,
+-      `const getPriorityWeight = (
+-  definition: InternalLinkDefinition
+-) => priorityWeight[definition.priority ?? "normal"] * 100;
+-
+-const getFunnelWeight = (
+-  sourceGroup?: InternalLinkGroup,
+-  targetGroup?: InternalLinkGroup
+-) => {
+-  if (!sourceGroup || !targetGroup) {
+-    return 0;
+-  }
+-
+-  return funnelWeight[sourceGroup]?.[targetGroup] ?? 0;
+-};
+-
+-const getDefinitionScore = (
+-  definition: InternalLinkDefinition,
+-  options: LinkEngineOptions,
+-  keywordLength: number,
+-  index: number
+-) =>
+-  getPriorityWeight(definition) +
+-  getFunnelWeight(options.sourceGroup, definition.group) +
+-  Math.min(keywordLength, 40) -
+-  Math.min(Math.floor(index / 500), 20);`,
+-      "Scoring-Funktionen"
+-    );
+-  }
+-
+-  if (!after.includes("const contextsOverlap")) {
+-    after = replaceOnce(
+-      after,
+-      /const normalizeContext = \(value\?: string\) =>[\s\S]*?value\?\.trim\(\)\.toLowerCase\(\);/,
+-      `const normalizeContext = (value?: string) =>
+-  value
+-    ?.trim()
+-    .toLowerCase()
+-    .replace(/ä/g, "ae")
+-    .replace(/ö/g, "oe")
+-    .replace(/ü/g, "ue")
+-    .replace(/ß/g, "ss")
+-    .replace(/[^a-z0-9]+/g, " ")
+-    .replace(/\\s+/g, " ")
+-    .trim();
+-
+-const tokenizeContext = (value?: string) =>
+-  new Set(
+-    (normalizeContext(value) ?? "")
+-      .split(" ")
+-      .filter((token) => token.length >= 3)
+-      .map((token) =>
+-        token.replace(/(en|er|e|n|s)$/i, "").trim()
+-      )
+-      .filter((token) => token.length >= 3)
+-  );
+-
+-const contextsOverlap = (
+-  left?: string,
+-  right?: string
+-) => {
+-  const normalizedLeft = normalizeContext(left);
+-  const normalizedRight = normalizeContext(right);
+-
+-  if (!normalizedLeft || !normalizedRight) {
+-    return false;
+-  }
+-
+-  if (
+-    normalizedLeft === normalizedRight ||
+-    normalizedLeft.includes(normalizedRight) ||
+-    normalizedRight.includes(normalizedLeft)
+-  ) {
+-    return true;
+-  }
+-
+-  const leftTokens = tokenizeContext(normalizedLeft);
+-  const rightTokens = tokenizeContext(normalizedRight);
+-
+-  return [...leftTokens].some((token) =>
+-    rightTokens.has(token)
+-  );
+-};`,
+-      "Kontext-Normalisierung"
+-    );
+-
+-    after = replaceOnce(
+-      after,
+-      /return definition\.contexts\.some\([\s\S]*?\n\s*\);\n\};/,
+-      `return definition.contexts.some((context) =>
+-    normalizedSourceContexts.some((source) =>
+-      contextsOverlap(context, source)
+-    )
+-  );
+-};`,
+-      "Kontextabgleich"
+-    );
+-  }
+-
+-  if (!after.includes("score: getDefinitionScore(")) {
+-    after = replaceOnce(
+-      after,
+-      /length:\s*match\[0\]\.length\s*\n\s*\}/,
+-      `length: match[0].length,
+-          score: getDefinitionScore(
+-            definition,
+-            options,
+-            match[0].length,
+-            match.index
+-          )
+-        }`,
+-      "Match-Score"
+-    );
+-  }
+-
+-  if (!after.includes("const scoreDifference = b.score - a.score;")) {
+-    after = replaceOnce(
+-      after,
+-      /const priorityDifference =[\s\S]*?return priorityDifference;\s*\}/,
+-      `const scoreDifference = b.score - a.score;
+-
+-    if (scoreDifference !== 0) {
+-      return scoreDifference;
+-    }`,
+-      "Sortierung nach Score"
+-    );
+-  }
+-
+-  after = after
+-    .replace(
+-      /\nconst linkedTargets = new Set<string>\(\);/,
+-      "\n  const linkedTargets = new Set<string>();"
+-    )
+-    .replace(
+-      /\n\s*if \(linkedTargets\.has\(match\.definition\.href\)\) \{\s*\n+\s*continue;\s*\n+\s*\}/,
+-      `
+-
+-    if (linkedTargets.has(match.definition.href)) {
+-      continue;
+-    }`
+-    );
+-
+-  return write(files.engine, before, after);
+-};
+-
+-const updateInternalLinks = () => {
+-  const before = read(files.internal);
+-  let after = before;
+-
+-  if (!after.includes(".flatMap((keyword) =>")) {
+-    after = replaceOnce(
+-      after,
+-      /const buildTitleKeywords = \([\s\S]*?\)\s*=>\s*uniqueStrings\(\[[\s\S]*?\]\)\.filter\(\(keyword\) => keyword\.length >= 4\);/,
+-      `const buildTitleKeywords = (
+-  title: string,
+-  extra: string[] = []
+-) =>
+-  uniqueStrings(
+-    [
+-      title,
+-      titleWithoutYear(title),
+-      titleWithoutSuffix(title),
+-      titleWithoutSuffix(titleWithoutYear(title)),
+-      ...extra
+-    ].flatMap((keyword) => {
+-      const normalized = keyword
+-        .replace(/[|:–—]/g, " ")
+-        .replace(/\\s+/g, " ")
+-        .trim();
+-
+-      return [
+-        keyword,
+-        normalized,
+-        normalized
+-          .replace(/\\b(?:Test|Vergleich|Ratgeber)\\b/gi, "")
+-          .trim()
+-      ];
+-    })
+-  ).filter((keyword) => keyword.length >= 4);`,
+-      "Titelvarianten"
+-    );
+-  }
+-
+-  if (!after.includes("...(linking.priority === \"high\"")) {
+-    after = replaceOnce(
+-      after,
+-      /keywords:\s*uniqueStrings\(linking\.keywords\),/,
+-      `keywords: uniqueStrings([
+-      ...linking.keywords,
+-      ...(linking.priority === "high"
+-        ? buildTitleKeywords(page.data.title)
+-        : [])
+-    ]),`,
+-      "Cornerstone-Keywords"
+-    );
+-  }
+-
+-  after = after.replace(
+-    /(const manufacturerDefinition[\s\S]*?group:\s*"manufacturer",[\s\S]*?priority:\s*)"normal"/,
+-    '$1"low"'
+-  );
+-
+-  return write(files.internal, before, after);
+-};
+-
+-const updatePage = () => {
+-  const before = read(files.page);
+-  let after = before;
+-
+-  if (/maxLinksPerPage=\{3\}/.test(after)) {
+-    after = after.replace(
+-      /maxLinksPerPage=\{3\}/,
+-      "maxLinksPerPage={5}"
+-    );
+-  }
+-
+-  return write(files.page, before, after);
+-};
+-
+-try {
+-  const changed = [
+-    updateTypes(),
+-    updateEngine(),
+-    updateInternalLinks(),
+-    updatePage()
+-  ].filter(Boolean).length;
+-
+-  console.log("");
+-  console.log(`Internal Linking 2.0 installiert. ${changed} Datei(en) geändert.`);
+-  console.log(`Backups: ${path.relative(root, backupRoot)}`);
+-  console.log("");
+-  console.log("Jetzt ausführen:");
+-  console.log("  npm run build:pfotentechnik");
+-  console.log("  git diff --check");
+-  console.log("  git diff");
+-} catch (error) {
+-  console.error("");
+-  console.error("Installation abgebrochen:");
+-  console.error(error instanceof Error ? error.message : error);
+-  console.error("");
+-  console.error("Es wurden nur Dateien geschrieben, deren Muster eindeutig erkannt wurden.");
+-  console.error(`Vorherige Versionen liegen unter: ${path.relative(root, backupRoot)}`);
+-  process.exit(1);
+-}
+diff --git a/install-internal-linking-related-2.mjs b/install-internal-linking-related-2.mjs
+deleted file mode 100644
+index 03bfde4..0000000
+--- a/install-internal-linking-related-2.mjs
++++ /dev/null
+@@ -1,323 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+-const backupRoot = path.join(root, `.internal-linking-related-2-backup-${stamp}`);
+-
+-const files = {
+-  internalLinks: "apps/pfotentechnik/src/domain/content/internalLinks.ts",
+-  related: "apps/pfotentechnik/src/domain/content/related.ts",
+-  page: "apps/pfotentechnik/src/pages/[slug].astro"
+-};
+-
+-const read = (file) => {
+-  const absolute = path.join(root, file);
+-  if (!fs.existsSync(absolute)) throw new Error(`Datei nicht gefunden: ${file}`);
+-  return fs.readFileSync(absolute, "utf8");
+-};
+-
+-const backupAndWrite = (file, before, after) => {
+-  if (before === after) {
+-    console.log(`Unverändert: ${file}`);
+-    return false;
+-  }
+-  const backup = path.join(backupRoot, file);
+-  fs.mkdirSync(path.dirname(backup), { recursive: true });
+-  fs.writeFileSync(backup, before, "utf8");
+-  fs.writeFileSync(path.join(root, file), after, "utf8");
+-  console.log(`Aktualisiert: ${file}`);
+-  return true;
+-};
+-
+-const replaceOnce = (content, pattern, replacement, label) => {
+-  if (!pattern.test(content)) throw new Error(`Muster nicht gefunden: ${label}`);
+-  pattern.lastIndex = 0;
+-  return content.replace(pattern, replacement);
+-};
+-
+-const updateInternalLinks = () => {
+-  const before = read(files.internalLinks);
+-  let after = before;
+-
+-  if (!after.includes("const semanticKeywordGroups")) {
+-    const marker = /const uniqueStrings = \([\s\S]*?\n\s*\);\n/;
+-    after = replaceOnce(after, marker, (match) => `${match}
+-
+-const semanticKeywordGroups = [
+-  ["futterautomat", "futterautomaten", "smarter futterautomat", "smarte futterautomaten", "smart feeder"],
+-  ["trinkbrunnen", "katzenbrunnen", "hundebrunnen", "haustierbrunnen", "wasserbrunnen"],
+-  ["gps tracker", "gps-tracker", "haustier tracker", "tierortung", "gps ortung"],
+-  ["nassfutter", "feuchtfutter"],
+-  ["trockenfutter", "trockennahrung"],
+-  ["katze", "katzen"],
+-  ["hund", "hunde"],
+-  ["mehrkatzenhaushalt", "mehrere katzen", "multi cat"],
+-  ["mehrhundehaushalt", "mehrere hunde", "multi dog"]
+-] as const;
+-
+-const normalizeKeyword = (value: string) =>
+-  value
+-    .trim()
+-    .toLowerCase()
+-    .replace(/ä/g, "ae")
+-    .replace(/ö/g, "oe")
+-    .replace(/ü/g, "ue")
+-    .replace(/ß/g, "ss")
+-    .replace(/[^a-z0-9]+/g, " ")
+-    .replace(/\\s+/g, " ")
+-    .trim();
+-
+-const expandSemanticKeywords = (keywords: string[]) => {
+-  const expanded = new Set(keywords);
+-
+-  for (const keyword of keywords) {
+-    const normalizedKeyword = normalizeKeyword(keyword);
+-
+-    for (const group of semanticKeywordGroups) {
+-      const normalizedGroup = group.map(normalizeKeyword);
+-
+-      if (
+-        normalizedGroup.some(
+-          (candidate) =>
+-            normalizedKeyword === candidate ||
+-            normalizedKeyword.includes(candidate) ||
+-            candidate.includes(normalizedKeyword)
+-        )
+-      ) {
+-        group.forEach((candidate) => expanded.add(candidate));
+-      }
+-    }
+-  }
+-
+-  return uniqueStrings([...expanded]);
+-};
+-`, "semantische Keyword-Gruppen");
+-  }
+-
+-  after = after.replace(
+-    /keywords:\s*uniqueStrings\(\[\s*\.\.\.linking\.keywords,([\s\S]*?)\]\),/,
+-    `keywords: expandSemanticKeywords([\n      ...linking.keywords,$1]),`
+-  );
+-
+-  after = after.replace(
+-    /keywords:\s*buildTitleKeywords\(product\.data\.title\),/,
+-    `keywords: expandSemanticKeywords(\n    buildTitleKeywords(product.data.title)\n  ),`
+-  );
+-
+-  after = after.replace(
+-    /keywords:\s*uniqueStrings\(\[\s*manufacturer\.data\.name,\s*manufacturer\.data\.title\s*\]\),/,
+-    `keywords: expandSemanticKeywords([\n    manufacturer.data.name,\n    manufacturer.data.title\n  ]),`
+-  );
+-
+-  return backupAndWrite(files.internalLinks, before, after);
+-};
+-
+-const relatedSource = `import type { HubContentEntry } from "./registry";
+-import { getAllContent } from "./registry";
+-
+-type RelatedContentOptions = {
+-  currentSlug: string;
+-  tags: string[];
+-  sections?: string[];
+-  type?: HubContentEntry["type"];
+-  title?: string;
+-  description?: string;
+-  exclude?: string[];
+-  limit?: number;
+-};
+-
+-type ScoredEntry = {
+-  entry: HubContentEntry;
+-  score: number;
+-};
+-
+-const normalizeValue = (value: string) =>
+-  value
+-    .trim()
+-    .toLowerCase()
+-    .replace(/ä/g, "ae")
+-    .replace(/ö/g, "oe")
+-    .replace(/ü/g, "ue")
+-    .replace(/ß/g, "ss")
+-    .replace(/[^a-z0-9]+/g, " ")
+-    .replace(/\\s+/g, " ")
+-    .trim();
+-
+-const stopWords = new Set([
+-  "aber", "alle", "auch", "beim", "eine", "einem", "einen", "einer", "eines",
+-  "fuer", "haben", "ihre", "oder", "sind", "ueber", "unter", "vergleich",
+-  "ratgeber", "test", "tests", "welche", "welcher", "welches"
+-]);
+-
+-const stemToken = (token: string) =>
+-  token.replace(/(ern|em|en|er|es|e|n|s)$/i, "").trim();
+-
+-const tokenize = (values: Array<string | undefined>) =>
+-  new Set(
+-    values
+-      .flatMap((value) => normalizeValue(value ?? "").split(" "))
+-      .map(stemToken)
+-      .filter((token) => token.length >= 3 && !stopWords.has(token))
+-  );
+-
+-const exactMatchCount = (sourceValues: string[], targetValues: string[]) => {
+-  const normalizedTargets = new Set(targetValues.map(normalizeValue));
+-  return sourceValues.reduce(
+-    (score, value) => normalizedTargets.has(normalizeValue(value)) ? score + 1 : score,
+-    0
+-  );
+-};
+-
+-const tokenOverlapScore = (sourceTokens: Set<string>, targetTokens: Set<string>) => {
+-  if (sourceTokens.size === 0 || targetTokens.size === 0) return 0;
+-  const matches = [...sourceTokens].filter((token) => targetTokens.has(token)).length;
+-  const union = new Set([...sourceTokens, ...targetTokens]).size;
+-  return union > 0 ? matches / union : 0;
+-};
+-
+-const getTypeBonus = (
+-  sourceType: HubContentEntry["type"] | undefined,
+-  targetType: HubContentEntry["type"]
+-) => {
+-  const matrix: Partial<Record<HubContentEntry["type"], Partial<Record<HubContentEntry["type"], number>>>> = {
+-    knowledge: { comparison: 4, knowledge: 3, product: 2, manufacturer: 1 },
+-    page: { comparison: 4, knowledge: 3, product: 2, manufacturer: 1 },
+-    comparison: { product: 4, knowledge: 3, manufacturer: 2, comparison: 1 },
+-    product: { comparison: 4, knowledge: 3, manufacturer: 2, product: 1 },
+-    manufacturer: { product: 4, comparison: 3, knowledge: 2, manufacturer: 1 }
+-  };
+-  return sourceType ? matrix[sourceType]?.[targetType] ?? 0 : 0;
+-};
+-
+-const scoreEntry = (
+-  entry: HubContentEntry,
+-  options: RelatedContentOptions,
+-  sourceTokens: Set<string>
+-): ScoredEntry => {
+-  const tagMatches = exactMatchCount(entry.tags, options.tags);
+-  const sectionMatches = exactMatchCount(entry.sections, options.sections ?? []);
+-  const targetTokens = tokenize([
+-    entry.title,
+-    entry.description,
+-    entry.hubTitle,
+-    entry.hubDescription,
+-    ...entry.tags,
+-    ...entry.sections
+-  ]);
+-  const semanticScore = tokenOverlapScore(sourceTokens, targetTokens) * 20;
+-  const clusterBonus = sectionMatches > 0 ? 8 : 0;
+-  const cornerstoneBonus =
+-    (entry.featured ? 5 : 0) +
+-    Math.max(0, Math.min(3, (100 - entry.order) / 25));
+-  const score =
+-    tagMatches * 5 +
+-    sectionMatches * 7 +
+-    semanticScore +
+-    clusterBonus +
+-    getTypeBonus(options.type, entry.type) +
+-    cornerstoneBonus;
+-  return { entry, score };
+-};
+-
+-const selectDiverseEntries = (entries: ScoredEntry[], limit: number) => {
+-  const selected: HubContentEntry[] = [];
+-  const typeCounts = new Map<HubContentEntry["type"], number>();
+-  const maxPerType = limit <= 3 ? 1 : 2;
+-
+-  for (const candidate of entries) {
+-    if (selected.length >= limit) break;
+-    const currentTypeCount = typeCounts.get(candidate.entry.type) ?? 0;
+-    if (currentTypeCount >= maxPerType) continue;
+-    selected.push(candidate.entry);
+-    typeCounts.set(candidate.entry.type, currentTypeCount + 1);
+-  }
+-
+-  if (selected.length < limit) {
+-    for (const candidate of entries) {
+-      if (selected.length >= limit) break;
+-      if (!selected.includes(candidate.entry)) selected.push(candidate.entry);
+-    }
+-  }
+-
+-  return selected;
+-};
+-
+-export const getRelatedContent = async ({
+-  currentSlug,
+-  tags,
+-  sections = [],
+-  type,
+-  title,
+-  description,
+-  exclude = [],
+-  limit = 4
+-}: RelatedContentOptions): Promise<HubContentEntry[]> => {
+-  const content = await getAllContent();
+-  const excludedSlugs = new Set([currentSlug, ...exclude].map(normalizeValue));
+-  const sourceTokens = tokenize([title, description, ...tags, ...sections]);
+-
+-  const scoredEntries = content
+-    .filter((entry) => !excludedSlugs.has(normalizeValue(entry.slug)))
+-    .map((entry) => scoreEntry(entry, {
+-      currentSlug,
+-      tags,
+-      sections,
+-      type,
+-      title,
+-      description,
+-      exclude,
+-      limit
+-    }, sourceTokens))
+-    .filter(({ score }) => score >= 3)
+-    .sort((a, b) =>
+-      b.score - a.score ||
+-      Number(b.entry.featured) - Number(a.entry.featured) ||
+-      a.entry.order - b.entry.order ||
+-      a.entry.hubTitle.localeCompare(b.entry.hubTitle, "de")
+-    );
+-
+-  return selectDiverseEntries(scoredEntries, limit);
+-};
+-`;
+-
+-const updateRelated = () => {
+-  const before = read(files.related);
+-  return backupAndWrite(files.related, before, relatedSource);
+-};
+-
+-const updatePage = () => {
+-  const before = read(files.page);
+-  let after = before;
+-
+-  if (!after.includes("title: page.data.title,") || !after.includes("description: page.data.description,")) {
+-    after = replaceOnce(
+-      after,
+-      /const relatedEntries = await getRelatedContent\(\{\s*currentSlug: page\.data\.slug,/,
+-      `const relatedEntries = await getRelatedContent({\n  currentSlug: page.data.slug,\n  title: page.data.title,\n  description: page.data.description,`,
+-      "Related-Content-Quelltext"
+-    );
+-  }
+-
+-  after = after.replace(/maxLinksPerPage=\{3\}/, "maxLinksPerPage={5}");
+-  return backupAndWrite(files.page, before, after);
+-};
+-
+-try {
+-  const changed = [updateInternalLinks(), updateRelated(), updatePage()].filter(Boolean).length;
+-  console.log("");
+-  console.log(`Internal Linking 2.1 + Related Articles 2.0 installiert. ${changed} Datei(en) geändert.`);
+-  console.log(`Backups: ${path.relative(root, backupRoot)}`);
+-  console.log("");
+-  console.log("Jetzt prüfen:");
+-  console.log("  npm run build:pfotentechnik");
+-  console.log("  git diff --check");
+-  console.log("  git diff --stat");
+-} catch (error) {
+-  console.error("");
+-  console.error("Installation abgebrochen:");
+-  console.error(error instanceof Error ? error.message : error);
+-  console.error(`Backups: ${path.relative(root, backupRoot)}`);
+-  process.exit(1);
+-}
+diff --git a/install-journey.mjs b/install-journey.mjs
+deleted file mode 100644
+index a2e3aa5..0000000
+--- a/install-journey.mjs
++++ /dev/null
+@@ -1,210 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-import { fileURLToPath } from "node:url";
+-
+-const root = process.cwd();
+-const installerDir = path.dirname(fileURLToPath(import.meta.url));
+-
+-const targets = {
+-  product: path.join(root, "apps/pfotentechnik/src/pages/produkt/[product].astro"),
+-  comparison: path.join(root, "apps/pfotentechnik/src/pages/vergleiche/[comparison].astro"),
+-  article: path.join(root, "apps/pfotentechnik/src/pages/[slug].astro"),
+-  component: path.join(root, "apps/pfotentechnik/src/components/ConversionJourney.astro")
+-};
+-
+-for (const file of [targets.product, targets.comparison, targets.article]) {
+-  if (!fs.existsSync(file)) {
+-    console.error(`Abbruch: Datei nicht gefunden: ${file}`);
+-    process.exit(1);
+-  }
+-}
+-
+-const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+-const backupRoot = path.join(root, `.conversion-journey-backup-${stamp}`);
+-
+-const backup = (file) => {
+-  if (!fs.existsSync(file)) return;
+-  const relative = path.relative(root, file);
+-  const target = path.join(backupRoot, relative);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.copyFileSync(file, target);
+-};
+-
+-Object.values(targets).forEach(backup);
+-
+-const ensureImport = (source, anchor, importLine) => {
+-  if (source.includes(importLine)) return source;
+-  if (!source.includes(anchor)) {
+-    throw new Error(`Importanker nicht gefunden: ${anchor}`);
+-  }
+-  return source.replace(anchor, `${anchor}\n${importLine}`);
+-};
+-
+-const insertBefore = (source, anchor, block, marker) => {
+-  if (source.includes(marker)) return source;
+-  if (!source.includes(anchor)) {
+-    throw new Error(`Einfügeanker nicht gefunden: ${anchor}`);
+-  }
+-  return source.replace(anchor, `${block}\n\n${anchor}`);
+-};
+-
+-const productImport =
+-  'import ConversionJourney from "../../components/ConversionJourney.astro";';
+-const comparisonImport =
+-  'import ConversionJourney from "../../components/ConversionJourney.astro";';
+-const articleImport =
+-  'import ConversionJourney from "../components/ConversionJourney.astro";';
+-
+-let product = fs.readFileSync(targets.product, "utf8");
+-let comparison = fs.readFileSync(targets.comparison, "utf8");
+-let article = fs.readFileSync(targets.article, "utf8");
+-
+-product = ensureImport(
+-  product,
+-  'import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";',
+-  productImport
+-);
+-
+-comparison = ensureImport(
+-  comparison,
+-  'import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";',
+-  comparisonImport
+-);
+-
+-article = ensureImport(
+-  article,
+-  'import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";',
+-  articleImport
+-);
+-
+-const productBlock = `    <ConversionJourney
+-      title="So geht es nach dem Produkttest weiter"
+-      intro="Vergleiche das Modell mit passenden Alternativen oder vertiefe die wichtigsten Kaufkriterien."
+-      items={[
+-        {
+-          eyebrow: "Vergleichen",
+-          title: "Passende Modelle direkt gegenüberstellen",
+-          text: "Prüfe Unterschiede bei Funktionen, Einsatzbereich und Bewertung in der passenden Vergleichsübersicht.",
+-          href: categoryHref,
+-          label: "Zum Vergleich"
+-        },
+-        {
+-          eyebrow: "Alternativen",
+-          title: "Andere Lösungen für deinen Anwendungsfall",
+-          text: "Sieh dir Modelle an, die bei Preis, Ausstattung oder Futterart einen anderen Schwerpunkt setzen.",
+-          href: "#alternativen",
+-          label: "Alternativen ansehen"
+-        },
+-        {
+-          eyebrow: "Grundlagen",
+-          title: "Kaufkriterien noch einmal prüfen",
+-          text: "Vertiefe Portionierung, Reinigung, Stromausfall und Alltagssicherheit vor der endgültigen Entscheidung.",
+-          href: "/smarte-futterautomaten/",
+-          label: "Ratgeber lesen"
+-        }
+-      ]}
+-    />`;
+-
+-product = insertBefore(
+-  product,
+-  "    <RelatedArticles items={relatedItems} />",
+-  productBlock,
+-  'title="So geht es nach dem Produkttest weiter"'
+-);
+-
+-const comparisonBlock = `    <ConversionJourney
+-      title="Von der Vorauswahl zur passenden Entscheidung"
+-      intro="Nutze den Vergleich als Ausgangspunkt und vertiefe anschließend das Modell oder die Kriterien, die für deinen Alltag entscheidend sind."
+-      items={[
+-        {
+-          eyebrow: "Produkte",
+-          title: "Favoriten im Detail prüfen",
+-          text: "Öffne die Produkttests der Modelle, die bei deinen wichtigsten Kriterien vorne liegen.",
+-          href: "#vergleich",
+-          label: "Modelle vergleichen"
+-        },
+-        {
+-          eyebrow: "Kaufberatung",
+-          title: "Anforderungen genauer einordnen",
+-          text: "Prüfe Futterart, Tierzahl, Portionsgröße, App, Stromversorgung und Reinigungsaufwand.",
+-          href: "/smarte-futterautomaten/",
+-          label: "Kaufberatung lesen"
+-        },
+-        {
+-          eyebrow: "Praxis",
+-          title: "Betrieb und Reinigung vorbereiten",
+-          text: "Plane Einrichtung, Testportionen und regelmäßige Pflege schon vor dem Kauf.",
+-          href: "/futterautomat-richtig-reinigen/",
+-          label: "Praxisratgeber öffnen"
+-        }
+-      ]}
+-    />`;
+-
+-comparison = insertBefore(
+-  comparison,
+-  "    <RelatedArticles items={relatedItems} />",
+-  comparisonBlock,
+-  'title="Von der Vorauswahl zur passenden Entscheidung"'
+-);
+-
+-const articleBlock = `  <ConversionJourney
+-    title="Was jetzt sinnvoll ist"
+-    intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
+-    items={[
+-      {
+-        eyebrow: "Orientierung",
+-        title: "Passende Kaufberatung öffnen",
+-        text: "Nutze die zentrale Übersicht, um Anforderungen und Gerätetypen strukturiert einzuordnen.",
+-        href: "/smarte-futterautomaten/",
+-        label: "Zur Kaufberatung"
+-      },
+-      {
+-        eyebrow: "Vergleich",
+-        title: "Geeignete Modelle gegenüberstellen",
+-        text: "Vergleiche Funktionen und Einsatzbereiche, statt nur einzelne Produktversprechen zu betrachten.",
+-        href: "/vergleiche/",
+-        label: "Zu den Vergleichen"
+-      },
+-      {
+-        eyebrow: "Praxis",
+-        title: "Technik sicher im Alltag nutzen",
+-        text: "Prüfe Reinigung, Kontrollroutinen und Grenzen automatisierter Fütterung.",
+-        href: "/futterautomat-richtig-reinigen/",
+-        label: "Praxiswissen lesen"
+-      }
+-    ]}
+-  />`;
+-
+-article = insertBefore(
+-  article,
+-  "  <RelatedArticles items={relatedItems} />",
+-  articleBlock,
+-  'title="Was jetzt sinnvoll ist"'
+-);
+-
+-fs.mkdirSync(path.dirname(targets.component), { recursive: true });
+-fs.copyFileSync(
+-  path.join(installerDir, "ConversionJourney.astro"),
+-  targets.component
+-);
+-
+-fs.writeFileSync(targets.product, product, "utf8");
+-fs.writeFileSync(targets.comparison, comparison, "utf8");
+-fs.writeFileSync(targets.article, article, "utf8");
+-
+-const manifest = {
+-  installedAt: new Date().toISOString(),
+-  backupRoot,
+-  files: Object.values(targets).map((file) => path.relative(root, file))
+-};
+-
+-fs.writeFileSync(
+-  path.join(root, ".conversion-framework-journey.json"),
+-  JSON.stringify(manifest, null, 2),
+-  "utf8"
+-);
+-
+-console.log(`Backup erstellt: ${backupRoot}`);
+-console.log("Conversion Journey installiert.");
+-console.log("Jetzt ausführen: npm run build:pfotentechnik");
+diff --git a/install-seo-fixes.mjs b/install-seo-fixes.mjs
+deleted file mode 100644
+index a43911e..0000000
+--- a/install-seo-fixes.mjs
++++ /dev/null
+@@ -1,226 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const backupRoot = path.join(root, ".seo-fix-backup-2026-07-17");
+-
+-const files = {
+-  layout: "packages/affiliate-core/src/layouts/AffiliateLayout.astro",
+-  product: "apps/pfotentechnik/src/pages/produkt/[product].astro",
+-  comparison: "apps/pfotentechnik/src/pages/vergleiche/[comparison].astro",
+-  knowledge: "apps/pfotentechnik/src/pages/[slug].astro",
+-};
+-
+-function read(rel) {
+-  const abs = path.join(root, rel);
+-  if (!fs.existsSync(abs)) {
+-    throw new Error(`Datei nicht gefunden: ${rel}`);
+-  }
+-  return fs.readFileSync(abs, "utf8");
+-}
+-
+-function backup(rel, content) {
+-  const target = path.join(backupRoot, rel);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.writeFileSync(target, content, "utf8");
+-}
+-
+-function write(rel, content) {
+-  const abs = path.join(root, rel);
+-  fs.writeFileSync(abs, content, "utf8");
+-  console.log(`✓ ${rel}`);
+-}
+-
+-function replaceOnce(content, before, after, label) {
+-  const count = content.split(before).length - 1;
+-  if (count !== 1) {
+-    throw new Error(
+-      `${label}: Erwartet wurde genau ein Treffer, gefunden wurden ${count}. ` +
+-      `Es wurde nichts geschrieben.`
+-    );
+-  }
+-  return content.replace(before, after);
+-}
+-
+-function insertOnce(content, marker, insertion, label) {
+-  return replaceOnce(content, marker, `${insertion}${marker}`, label);
+-}
+-
+-fs.mkdirSync(backupRoot, { recursive: true });
+-
+-try {
+-  // 1) Core layout: non-home pages default to WebPage, not Article.
+-  // Article dates are emitted only when the page actually supplies them.
+-  {
+-    const rel = files.layout;
+-    const original = read(rel);
+-    backup(rel, original);
+-    let next = original;
+-
+-    next = replaceOnce(
+-      next,
+-      'const resolvedSchemaType = schemaType ?? (isHome ? "website" : "article");',
+-      'const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");',
+-      "AffiliateLayout: Schema-Standard"
+-    );
+-
+-    next = replaceOnce(
+-      next,
+-`  datePublished: publishedAt ?? siteMeta.articleDefaults.publishedAt,
+-  dateModified:
+-    updatedAt ??
+-    publishedAt ??
+-    siteMeta.articleDefaults.updatedAt`,
+-`  ...(publishedAt ? { datePublished: publishedAt } : {}),
+-  ...(updatedAt || publishedAt
+-    ? { dateModified: updatedAt ?? publishedAt }
+-    : {})`,
+-      "AffiliateLayout: Artikeldaten"
+-    );
+-
+-    write(rel, next);
+-  }
+-
+-  // 2) Knowledge pages: honor an explicitly configured SEO canonical.
+-  {
+-    const rel = files.knowledge;
+-    const original = read(rel);
+-    backup(rel, original);
+-    let next = original;
+-
+-    next = replaceOnce(
+-      next,
+-      '  canonical={`/${page.data.slug}/`}',
+-      `  canonical={
+-    page.data.seo?.canonical ??
+-    \`/\${page.data.slug}/\`
+-  }`,
+-      "Knowledge page: Canonical"
+-    );
+-
+-    write(rel, next);
+-  }
+-
+-  // 3) Comparison pages are collection/list-style WebPages, not dated Articles.
+-  {
+-    const rel = files.comparison;
+-    const original = read(rel);
+-    backup(rel, original);
+-    let next = original;
+-
+-    next = replaceOnce(
+-      next,
+-      '  schemaType="article"',
+-      '  schemaType="webpage"',
+-      "Comparison page: Schema-Typ"
+-    );
+-
+-    write(rel, next);
+-  }
+-
+-  // 4) Product pages: replace generic Article markup with Product + Review JSON-LD.
+-  {
+-    const rel = files.product;
+-    const original = read(rel);
+-    backup(rel, original);
+-    let next = original;
+-
+-    next = replaceOnce(
+-      next,
+-      'import { projectConfig } from "../../project.config";',
+-      'import { projectConfig, site } from "../../project.config";',
+-      "Product page: site import"
+-    );
+-
+-    next = replaceOnce(
+-      next,
+-`const publishedAt =
+-  contentProduct.publishedAt ??
+-  "2026-07-09";
+-
+-const updatedAt =
+-  contentProduct.updatedAt ??
+-  publishedAt;`,
+-`const publishedAt = contentProduct.publishedAt;
+-const updatedAt =
+-  contentProduct.updatedAt ??
+-  publishedAt;`,
+-      "Product page: Datums-Fallback"
+-    );
+-
+-    const schemaBlock = `
+-const productSchema = {
+-  "@context": "https://schema.org",
+-  "@type": "Product",
+-  name: contentProduct.title,
+-  description: seoDescription,
+-  url: new URL(canonical, site.domain).toString(),
+-  image: [
+-    new URL(optimizedOgImage.src, site.domain).toString()
+-  ],
+-  sku: contentProduct.slug,
+-  category: contentProduct.category.label,
+-  brand: {
+-    "@type": "Brand",
+-    name: contentProduct.manufacturer.name
+-  },
+-  review: {
+-    "@type": "Review",
+-    name: \`\${contentProduct.title} – redaktionelle Einordnung\`,
+-    reviewBody: contentProduct.recommendation,
+-    author: {
+-      "@type": "Organization",
+-      name: "PfotenTechnik Redaktion"
+-    },
+-    reviewRating: {
+-      "@type": "Rating",
+-      ratingValue: contentProduct.rating,
+-      bestRating: 5,
+-      worstRating: 1
+-    }
+-  }
+-};
+-
+-`;
+-
+-    next = insertOnce(
+-      next,
+-      'const productSearchValues = [',
+-      schemaBlock,
+-      "Product page: Product-Schema"
+-    );
+-
+-    next = replaceOnce(
+-      next,
+-      '  schemaType="article"',
+-      '  schemaType="webpage"',
+-      "Product page: Schema-Typ"
+-    );
+-
+-    next = replaceOnce(
+-      next,
+-      '  <Breadcrumbs items={breadcrumbs} />',
+-`  <script
+-    type="application/ld+json"
+-    set:html={JSON.stringify(productSchema)}
+-  />
+-
+-  <Breadcrumbs items={breadcrumbs} />`,
+-      "Product page: JSON-LD-Ausgabe"
+-    );
+-
+-    write(rel, next);
+-  }
+-
+-  console.log("");
+-  console.log("SEO-Fixes erfolgreich installiert.");
+-  console.log(`Backups: ${path.relative(root, backupRoot)}`);
+-  console.log("Als Nächstes ausführen: npm run build:pfotentechnik");
+-} catch (error) {
+-  console.error("");
+-  console.error("Installation abgebrochen:");
+-  console.error(error instanceof Error ? error.message : error);
+-  console.error("Bereits geschriebene Dateien können aus dem Backup-Verzeichnis wiederhergestellt werden.");
+-  process.exit(1);
+-}
+diff --git a/install-seo-platform-3.mjs b/install-seo-platform-3.mjs
+deleted file mode 100644
+index 9687a74..0000000
+--- a/install-seo-platform-3.mjs
++++ /dev/null
+@@ -1,45 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+-const backupRoot = path.join(root, `.seo-platform-3-backup-${stamp}`);
+-const payload = {"tools/seo-platform/audit.mjs": "#!/usr/bin/env node\nimport fs from \"node:fs\";\nimport path from \"node:path\";\n\nconst root = process.cwd();\nconst roots = [\n  \"apps/pfotentechnik/src/content/pages\",\n  \"apps/pfotentechnik/src/content/products\",\n  \"apps/pfotentechnik/src/content/comparisons\",\n  \"apps/pfotentechnik/src/content/manufacturers\"\n];\nconst strict = process.argv.includes(\"--strict\");\n\nconst walk = (dir, result = []) => {\n  if (!fs.existsSync(dir)) return result;\n  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {\n    const full = path.join(dir, entry.name);\n    if (entry.isDirectory()) walk(full, result);\n    else if (/\\.(md|mdx)$/i.test(entry.name)) result.push(full);\n  }\n  return result;\n};\n\nconst scalar = (value) => {\n  const v = value.trim().replace(/^[\"']|[\"']$/g, \"\");\n  if (v === \"true\") return true;\n  if (v === \"false\") return false;\n  if (/^-?\\d+(\\.\\d+)?$/.test(v)) return Number(v);\n  return v;\n};\n\nconst frontmatter = (source) => {\n  const match = source.match(/^---\\r?\\n([\\s\\S]*?)\\r?\\n---/);\n  if (!match) return { data: {}, body: source };\n  const data = {};\n  const lines = match[1].split(/\\r?\\n/);\n  const stack = [{ indent: -1, value: data }];\n  for (let i = 0; i < lines.length; i += 1) {\n    const line = lines[i];\n    if (!line.trim() || line.trimStart().startsWith(\"#\")) continue;\n    const indent = line.match(/^\\s*/)?.[0].length ?? 0;\n    const text = line.trim();\n    while (stack.length > 1 && indent <= stack.at(-1).indent) stack.pop();\n    const parent = stack.at(-1).value;\n    if (text.startsWith(\"- \")) {\n      if (Array.isArray(parent)) parent.push(scalar(text.slice(2)));\n      continue;\n    }\n    const pos = text.indexOf(\":\");\n    if (pos < 0) continue;\n    const key = text.slice(0, pos).trim();\n    const raw = text.slice(pos + 1).trim();\n    if (!raw) {\n      const next = lines[i + 1] ?? \"\";\n      const container = next.trim().startsWith(\"- \") ? [] : {};\n      parent[key] = container;\n      stack.push({ indent, value: container });\n    } else if (raw.startsWith(\"[\") && raw.endsWith(\"]\")) {\n      parent[key] = raw.slice(1, -1).split(\",\").map(scalar).filter(Boolean);\n    } else parent[key] = scalar(raw);\n  }\n  return { data, body: source.slice(match[0].length) };\n};\n\nconst normalize = (value) => String(value ?? \"\")\n  .toLowerCase()\n  .replace(/ä/g, \"ae\").replace(/ö/g, \"oe\")\n  .replace(/ü/g, \"ue\").replace(/ß/g, \"ss\")\n  .replace(/[^a-z0-9]+/g, \" \").trim();\n\nconst documents = roots.flatMap((item) => walk(path.join(root, item))).sort()\n  .map((file) => {\n    const source = fs.readFileSync(file, \"utf8\");\n    const { data, body } = frontmatter(source);\n    const relative = path.relative(root, file).replace(/\\\\/g, \"/\");\n    const slug = data.slug ?? path.basename(file).replace(/\\.(md|mdx)$/i, \"\");\n    const type = relative.includes(\"/products/\") ? \"product\"\n      : relative.includes(\"/comparisons/\") ? \"comparison\"\n      : relative.includes(\"/manufacturers/\") ? \"manufacturer\" : \"page\";\n    const issues = [];\n    const add = (severity, code, message) => issues.push({ severity, code, message });\n\n    if (!data.title) add(\"error\", \"META_TITLE\", \"Titel fehlt.\");\n    if (!data.description) add(\"error\", \"META_DESCRIPTION\", \"Description fehlt.\");\n    else if (String(data.description).length < 90 || String(data.description).length > 180)\n      add(\"warning\", \"META_DESCRIPTION_LENGTH\", \"Description sollte ungefähr 90–180 Zeichen lang sein.\");\n    if (!data.updatedAt && !data.publishedAt)\n      add(\"warning\", \"CONTENT_DATE\", \"publishedAt und updatedAt fehlen.\");\n\n    const faqCount = [...body.matchAll(/^#{2,4}\\s+.*(faq|häufige fragen)/gim)].length;\n    if (faqCount > 1) add(\"error\", \"DUPLICATE_FAQ\", `${faqCount} FAQ-Bereiche erkannt.`);\n\n    const checklistCount = [...body.matchAll(/^#{2,4}\\s+.*checkliste/gim)].length;\n    if (checklistCount > 1) add(\"warning\", \"CHECKLIST_OVERUSE\", `${checklistCount} Checklisten erkannt.`);\n\n    for (const match of body.matchAll(/!\\[([^\\]]*)\\]\\(([^)]+)\\)/g)) {\n      if (!match[1].trim()) add(\"error\", \"IMAGE_ALT\", `Alt-Text fehlt bei ${match[2]}.`);\n    }\n\n    if (type === \"page\" && !data.sources && !/\\bquellen\\b/i.test(body))\n      add(\"warning\", \"SOURCES_MISSING\", \"Keine Quellenmetadaten oder Quellenüberschrift erkannt.\");\n\n    const clusterRole = data.cluster?.role;\n    const roles = [\"cornerstone\", \"comparison\", \"supporting-guide\", \"product\", \"manufacturer\", \"troubleshooting\"];\n    if (data.cluster && !roles.includes(clusterRole))\n      add(\"error\", \"CLUSTER_ROLE\", `Unbekannte Cluster-Rolle: ${clusterRole}`);\n\n    const medical = type === \"page\" && /(hund-|katze-|durchfall|erbrechen|trinkt|frisst|dehydr|gesund|krank|mued)/i.test(slug);\n    if (medical) {\n      if (!/(tierarzt|tierärzt|notfall|sofort|atemnot|kollaps)/i.test(body))\n        add(\"error\", \"MEDICAL_ESCALATION\", \"Kein Tierarzt- oder Notfallhinweis erkannt.\");\n      if (/\\b(garantiert|heilt|immer harmlos)\\b/i.test(body))\n        add(\"error\", \"MEDICAL_PROMISE\", \"Problematische medizinische Zusicherung erkannt.\");\n      if (/\\b\\d+([,.]\\d+)?\\s*(mg|ml|tabletten?)\\b/i.test(body))\n        add(\"warning\", \"MEDICATION_DOSAGE\", \"Mögliche Dosierungsangabe gefunden.\");\n      if (!/\\bwelp/i.test(body) && !/\\bsenior/i.test(body))\n        add(\"warning\", \"MEDICAL_RISK_GROUPS\", \"Welpen und Senioren möglicherweise nicht berücksichtigt.\");\n    }\n\n    if (type === \"product\") {\n      const allowed = [\"hands-on\", \"editorial-review\", \"manufacturer-data\", \"long-term-test\", \"not-tested\"];\n      if (!data.testStatus) add(\"warning\", \"TEST_STATUS\", \"testStatus fehlt.\");\n      else if (!allowed.includes(data.testStatus))\n        add(\"error\", \"TEST_STATUS_VALUE\", `Unbekannter Teststatus: ${data.testStatus}`);\n      if (!data.productStatus) add(\"warning\", \"PRODUCT_STATUS\", \"productStatus fehlt.\");\n      if ((!data.testStatus || [\"editorial-review\", \"manufacturer-data\", \"not-tested\"].includes(data.testStatus))\n          && /\\b(wir haben getestet|in unserem test|praxistest|langzeittest)\\b/i.test(body))\n        add(\"error\", \"TEST_CLAIM_CONFLICT\", \"Testbehauptung widerspricht dem Teststatus.\");\n    }\n\n    return { file: relative, slug: normalize(slug), title: data.title ?? slug, type, data, issues };\n  });\n\nconst portfolio = [];\nconst owners = new Map();\nfor (const doc of documents) {\n  const primary = doc.data.queryOwnership?.primary ?? [];\n  for (const query of (Array.isArray(primary) ? primary : [primary])) {\n    if (!query) continue;\n    const key = normalize(query);\n    owners.set(key, [...(owners.get(key) ?? []), doc]);\n  }\n}\nfor (const [query, docs] of owners) {\n  if (docs.length > 1) portfolio.push({\n    severity: \"error\",\n    code: \"QUERY_CANNIBALIZATION\",\n    message: `„${query}“ gehört mehreren Seiten: ${docs.map(d => d.title).join(\", \")}`\n  });\n}\n\nconst findings = documents.flatMap(doc => doc.issues.map(issue => ({ ...issue, file: doc.file })));\nconst errors = findings.filter(x => x.severity === \"error\").length\n  + portfolio.filter(x => x.severity === \"error\").length;\nconst warnings = findings.filter(x => x.severity === \"warning\").length\n  + portfolio.filter(x => x.severity === \"warning\").length;\n\nconst reportDir = path.join(root, \"reports/seo-platform\");\nfs.mkdirSync(reportDir, { recursive: true });\nfs.writeFileSync(path.join(reportDir, \"seo-platform-report.json\"),\n  JSON.stringify({ generatedAt: new Date().toISOString(), errors, warnings, portfolio, documents }, null, 2));\n\nconst md = [\n  \"# PfotenTechnik SEO Platform Report\", \"\",\n  `- Dokumente: ${documents.length}`,\n  `- Fehler: ${errors}`,\n  `- Warnungen: ${warnings}`, \"\",\n  \"## Portfolio-Befunde\", \"\",\n  ...(portfolio.length ? portfolio.map(x => `- **${x.severity.toUpperCase()} · ${x.code}:** ${x.message}`)\n    : [\"Keine Portfolio-Konflikte erkannt.\"]), \"\",\n  \"## Datei-Befunde\", \"\",\n  ...(findings.length ? findings.map(x => `- **${x.severity.toUpperCase()} · ${x.code}** — \\`${x.file}\\`: ${x.message}`)\n    : [\"Keine Befunde erkannt.\"]), \"\"\n].join(\"\\n\");\nfs.writeFileSync(path.join(reportDir, \"seo-platform-report.md\"), md);\n\nconsole.log(`SEO Platform: ${documents.length} Dokumente, ${errors} Fehler, ${warnings} Warnungen.`);\nconsole.log(\"Report: reports/seo-platform/seo-platform-report.md\");\nif (strict && errors > 0) process.exit(1);\n", "docs/SEO_PLATFORM_3_METADATA.md": "# SEO Platform 3.0 – Metadatenstandard\n\nDie Felder werden schrittweise ergänzt und sind zunächst optional.\n\n## Ratgeber\n\n```yaml\nreviewCycle: 180\nlastReviewedAt: 2026-07-18\nreviewPriority: high\n\nsearchIntent:\n  primary: informational\n  secondary:\n    - commercial-investigation\n  funnelStage: awareness\n\ncluster:\n  key: smarte-futterautomaten\n  role: supporting-guide\n\nqueryOwnership:\n  primary:\n    - futterautomat reinigen\n  supporting:\n    - futterautomat hygiene\n\nsources:\n  - title: WSAVA Nutritional Assessment Guidelines\n    publisher: WSAVA\n    type: guideline\n    accessedAt: 2026-07-18\n```\n\n## Produkte\n\n```yaml\ntestStatus: editorial-review\nproductStatus: active\nmodelYear: 2026\n\ntestScores:\n  portioning: 4.4\n  reliability: 4.6\n  cleaning: 4.1\n  app: 3.9\n  safety: 4.5\n  noise: 4.0\n  value: 4.2\n```\n\nZulässige Teststatus:\n\n- `hands-on`\n- `editorial-review`\n- `manufacturer-data`\n- `long-term-test`\n- `not-tested`\n\n`hands-on` und `long-term-test` dürfen nur bei einem tatsächlich durchgeführten eigenen Test verwendet werden.\n"};
+-
+-const backup = (relative, current) => {
+-  const target = path.join(backupRoot, relative);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.writeFileSync(target, current, "utf8");
+-};
+-
+-for (const [relative, content] of Object.entries(payload)) {
+-  const target = path.join(root, relative);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  if (fs.existsSync(target)) {
+-    const current = fs.readFileSync(target, "utf8");
+-    if (current === content) continue;
+-    backup(relative, current);
+-  }
+-  fs.writeFileSync(target, content, "utf8");
+-  console.log(`Installiert: ${relative}`);
+-}
+-
+-const packagePath = path.join(root, "package.json");
+-if (!fs.existsSync(packagePath)) throw new Error("package.json im Repo-Root nicht gefunden.");
+-const currentPackage = fs.readFileSync(packagePath, "utf8");
+-const pkg = JSON.parse(currentPackage);
+-pkg.scripts ??= {};
+-pkg.scripts["seo:audit"] = "node tools/seo-platform/audit.mjs";
+-pkg.scripts["seo:audit:strict"] = "node tools/seo-platform/audit.mjs --strict";
+-const nextPackage = JSON.stringify(pkg, null, 2) + "\n";
+-if (nextPackage !== currentPackage) {
+-  backup("package.json", currentPackage);
+-  fs.writeFileSync(packagePath, nextPackage, "utf8");
+-  console.log("Aktualisiert: package.json");
+-}
+-
+-console.log("");
+-console.log("SEO Platform 3.0 installiert.");
+-console.log(`Backups: ${path.relative(root, backupRoot)}`);
+-console.log("Ausführen: npm run seo:audit");
+diff --git a/install-trinkbrunnen-vergleiche.sh b/install-trinkbrunnen-vergleiche.sh
+deleted file mode 100755
+index 5f41b26..0000000
+--- a/install-trinkbrunnen-vergleiche.sh
++++ /dev/null
+@@ -1,9 +0,0 @@
+-#!/usr/bin/env bash
+-set -euo pipefail
+-
+-node apps/pfotentechnik/scripts/generate-water-fountain-comparisons.mjs --write "$@"
+-
+-echo
+-echo "Vergleichsseiten erzeugt. Jetzt bauen mit:"
+-echo "rm -rf apps/pfotentechnik/dist apps/pfotentechnik/.astro"
+-echo "npm run build:pfotentechnik"
+diff --git a/install-trust.mjs b/install-trust.mjs
+deleted file mode 100644
+index 52a5d25..0000000
+--- a/install-trust.mjs
++++ /dev/null
+@@ -1,215 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-
+-const schemaPath = path.join(
+-  root,
+-  "apps/pfotentechnik/src/content/schema/product.ts"
+-);
+-const pagePath = path.join(
+-  root,
+-  "apps/pfotentechnik/src/pages/produkt/[product].astro"
+-);
+-const componentPath = path.join(
+-  root,
+-  "apps/pfotentechnik/src/components/ProductTrustPanel.astro"
+-);
+-const sourceComponentPath = path.join(
+-  path.dirname(new URL(import.meta.url).pathname),
+-  "ProductTrustPanel.astro"
+-);
+-
+-for (const required of [schemaPath, pagePath, sourceComponentPath]) {
+-  if (!fs.existsSync(required)) {
+-    console.error(`Abbruch: Datei nicht gefunden: ${required}`);
+-    process.exit(1);
+-  }
+-}
+-
+-const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+-const backupRoot = path.join(root, `.conversion-trust-backup-${stamp}`);
+-
+-const backup = (filePath) => {
+-  if (!fs.existsSync(filePath)) return;
+-  const relative = path.relative(root, filePath);
+-  const target = path.join(backupRoot, relative);
+-  fs.mkdirSync(path.dirname(target), { recursive: true });
+-  fs.copyFileSync(filePath, target);
+-};
+-
+-backup(schemaPath);
+-backup(pagePath);
+-backup(componentPath);
+-
+-let schema = fs.readFileSync(schemaPath, "utf8");
+-let page = fs.readFileSync(pagePath, "utf8");
+-
+-const editorialSchema = `
+-const productEditorialSchema =
+-  z.object({
+-    assessmentType: z
+-      .enum([
+-        "hands-on-test",
+-        "editorial-review",
+-        "data-review"
+-      ])
+-      .default("editorial-review"),
+-
+-    evidence: z
+-      .array(
+-        z.enum([
+-          "hands-on-testing",
+-          "manufacturer-documentation",
+-          "technical-specifications",
+-          "comparative-analysis",
+-          "user-feedback"
+-        ])
+-      )
+-      .default([
+-        "manufacturer-documentation",
+-        "technical-specifications",
+-        "comparative-analysis"
+-      ]),
+-
+-    testedHandsOn: z
+-      .boolean()
+-      .default(false),
+-
+-    lastVerifiedAt: z
+-      .coerce
+-      .date()
+-      .optional(),
+-
+-    note: z
+-      .string()
+-      .optional()
+-  })
+-  .optional();
+-
+-`;
+-
+-if (!schema.includes("const productEditorialSchema")) {
+-  const decisionAnchor = "const productDecisionSchema =";
+-
+-  if (!schema.includes(decisionAnchor)) {
+-    console.error(
+-      "Abbruch: productDecisionSchema-Anker nicht gefunden."
+-    );
+-    process.exit(1);
+-  }
+-
+-  schema = schema.replace(
+-    decisionAnchor,
+-    editorialSchema + decisionAnchor
+-  );
+-  console.log("ergänzt: productEditorialSchema");
+-} else {
+-  console.log("übersprungen: productEditorialSchema bereits vorhanden");
+-}
+-
+-if (!schema.includes("editorial:\n      productEditorialSchema")) {
+-  const conversionPattern =
+-    /(\n\s{4}conversion:\s*\n\s{6}productConversionSchema,\s*\n)/;
+-
+-  if (conversionPattern.test(schema)) {
+-    schema = schema.replace(
+-      conversionPattern,
+-      `$1\n    editorial:\n      productEditorialSchema,\n`
+-    );
+-  } else {
+-    const ratingAnchor = "\n    rating: z";
+-
+-    if (!schema.includes(ratingAnchor)) {
+-      console.error(
+-        "Abbruch: Weder Conversion- noch Rating-Anker gefunden."
+-      );
+-      process.exit(1);
+-    }
+-
+-    schema = schema.replace(
+-      ratingAnchor,
+-      "\n    editorial:\n      productEditorialSchema,\n" +
+-      ratingAnchor
+-    );
+-  }
+-
+-  console.log("ergänzt: editorial-Feld im Produktschema");
+-} else {
+-  console.log("übersprungen: editorial-Feld bereits vorhanden");
+-}
+-
+-const importLine =
+-  'import ProductTrustPanel from "../../components/ProductTrustPanel.astro";';
+-
+-if (!page.includes(importLine)) {
+-  const relatedImport =
+-    'import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";';
+-
+-  if (!page.includes(relatedImport)) {
+-    console.error(
+-      "Abbruch: RelatedArticles-Importanker nicht gefunden."
+-    );
+-    process.exit(1);
+-  }
+-
+-  page = page.replace(
+-    relatedImport,
+-    `${relatedImport}\n${importLine}`
+-  );
+-
+-  console.log("ergänzt: ProductTrustPanel-Import");
+-} else {
+-  console.log("übersprungen: ProductTrustPanel-Import bereits vorhanden");
+-}
+-
+-const trustBlock = `    <ProductTrustPanel
+-      assessmentType={contentProduct.editorial?.assessmentType}
+-      evidence={contentProduct.editorial?.evidence}
+-      testedHandsOn={contentProduct.editorial?.testedHandsOn}
+-      lastVerifiedAt={contentProduct.editorial?.lastVerifiedAt ?? updatedAt}
+-      note={contentProduct.editorial?.note}
+-    />`;
+-
+-if (!page.includes("<ProductTrustPanel")) {
+-  const oldBlockPattern =
+-    /\n\s{4}<section\s*\n\s{6}class="pt-review-method"[\s\S]*?\n\s{4}<\/section>/;
+-
+-  if (!oldBlockPattern.test(page)) {
+-    console.error(
+-      "Abbruch: Bestehender pt-review-method-Block nicht gefunden."
+-    );
+-    process.exit(1);
+-  }
+-
+-  page = page.replace(oldBlockPattern, `\n${trustBlock}`);
+-  console.log("ersetzt: pt-review-method durch ProductTrustPanel");
+-} else {
+-  console.log("übersprungen: ProductTrustPanel bereits eingebunden");
+-}
+-
+-fs.mkdirSync(path.dirname(componentPath), { recursive: true });
+-fs.copyFileSync(sourceComponentPath, componentPath);
+-fs.writeFileSync(schemaPath, schema, "utf8");
+-fs.writeFileSync(pagePath, page, "utf8");
+-
+-const manifest = {
+-  installedAt: new Date().toISOString(),
+-  backupRoot,
+-  files: [
+-    path.relative(root, schemaPath),
+-    path.relative(root, pagePath),
+-    path.relative(root, componentPath)
+-  ]
+-};
+-
+-fs.writeFileSync(
+-  path.join(root, ".conversion-framework-trust.json"),
+-  JSON.stringify(manifest, null, 2),
+-  "utf8"
+-);
+-
+-console.log(`\nBackup erstellt: ${backupRoot}`);
+-console.log("Trust-Modul installiert.");
+-console.log("Jetzt ausführen: npm run build:pfotentechnik");
+diff --git a/install.mjs b/install.mjs
+deleted file mode 100644
+index a77e1a8..0000000
+--- a/install.mjs
++++ /dev/null
+@@ -1,39 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-import { fileURLToPath } from "node:url";
+-
+-const packageRoot = path.dirname(fileURLToPath(import.meta.url));
+-const repositoryRoot = process.cwd();
+-
+-const files = [
+-  "apps/pfotentechnik/src/domain/productAlternatives/index.ts",
+-  "apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts"
+-];
+-
+-for (const relativePath of files) {
+-  const source = path.join(packageRoot, relativePath);
+-  const target = path.join(repositoryRoot, relativePath);
+-
+-  if (!fs.existsSync(source)) {
+-    throw new Error(`Paketdatei fehlt: ${relativePath}`);
+-  }
+-
+-  if (!fs.existsSync(target)) {
+-    throw new Error(`Repository-Datei fehlt: ${relativePath}`);
+-  }
+-
+-  const backup = `${target}.before-label-fix-v4`;
+-
+-  if (!fs.existsSync(backup)) {
+-    fs.copyFileSync(target, backup);
+-    console.log(`✓ Backup: ${path.relative(repositoryRoot, backup)}`);
+-  }
+-
+-  fs.copyFileSync(source, target);
+-  console.log(`✓ Ersetzt: ${relativePath}`);
+-}
+-
+-console.log("");
+-console.log("Fix vollständig installiert.");
+-console.log("Als Nächstes den PfotenTechnik-Build ausführen.");
+diff --git a/internal-linking-2.0-fixed.patch b/internal-linking-2.0-fixed.patch
+deleted file mode 100644
+index 64ccf07..0000000
+--- a/internal-linking-2.0-fixed.patch
++++ /dev/null
+@@ -1,382 +0,0 @@
+---- a/packages/affiliate-core/src/linking/types.ts
+-+++ b/packages/affiliate-core/src/linking/types.ts
+-@@ -2,6 +2,12 @@
+-   | "low"
+-   | "normal"
+-   | "high";
+-+
+-+export type InternalLinkGroup =
+-+  | "knowledge"
+-+  | "comparison"
+-+  | "product"
+-+  | "manufacturer";
+- 
+- export interface InternalLinkDefinition {
+- 
+-@@ -44,43 +50,16 @@
+- 
+-   /**
+-    * Linkgruppe.
+--   *
+--   * Beispiele:
+--   *
+--   * product
+--   *
+--   * manufacturer
+--   *
+--   * decision
+--   *
+--   * knowledge
+-    */
+--  group?: string;
+-- /**
+-+  group?: InternalLinkGroup;
+- 
+--    * Themenbereiche, in denen dieser Link verwendet werden darf.
+-+  /**
+-+   * Themenbereiche, in denen dieser Link verwendet werden darf.
+-+   */
+-+  contexts?: string[];
+- 
+--    *
+--
+--    * Beispiele:
+--
+--    * futterautomaten
+--
+--    * gps-tracker
+--
+--    * trinkbrunnen
+--
+--    *
+--
+--    * Ohne contexts darf der Link projektweit verwendet werden.
+--
+--    */
+--
+--  contexts?: string[];
+-   /**
+--   * Verhindert,
+--   * dass innerhalb
+--   * bereits verlinkter Bereiche
+-+   * Verhindert, dass innerhalb bereits verlinkter Bereiche
+-    * erneut ersetzt wird.
+-    */
+-   preventNestedLinks?: boolean;
+---- a/packages/affiliate-core/src/linking/linkEngine.ts
+-+++ b/packages/affiliate-core/src/linking/linkEngine.ts
+-@@ -1,5 +1,6 @@
+- import type {
+-   InternalLinkDefinition,
+-+  InternalLinkGroup,
+-   LinkPriority
+- } from "./types";
+- 
+-@@ -8,22 +9,16 @@
+-   keyword: string;
+-   index: number;
+-   length: number;
+-+  score: number;
+- }
+- 
+- export interface LinkEngineOptions {
+--
+-   maxLinksPerPage?: number;
+--
+-   ignoredTags?: string[];
+--
+--  sourceGroup?: string;
+--
+-+  sourceGroup?: InternalLinkGroup;
+-   sourcePath?: string;
+--
+-   sourceContext?: string;
+--
+-   sourceContexts?: string[];
+--
+- }
+- 
+- const priorityWeight: Record<LinkPriority, number> = {
+-@@ -32,15 +27,115 @@
+-   high: 3
+- };
+- 
+-+const funnelWeight: Record<
+-+  InternalLinkGroup,
+-+  Partial<Record<InternalLinkGroup, number>>
+-+> = {
+-+  knowledge: {
+-+    comparison: 40,
+-+    knowledge: 30,
+-+    product: 20,
+-+    manufacturer: 10
+-+  },
+-+  comparison: {
+-+    product: 40,
+-+    manufacturer: 25,
+-+    knowledge: 15,
+-+    comparison: 0
+-+  },
+-+  product: {
+-+    manufacturer: 35,
+-+    comparison: 30,
+-+    knowledge: 20,
+-+    product: 0
+-+  },
+-+  manufacturer: {
+-+    product: 35,
+-+    comparison: 25,
+-+    knowledge: 20,
+-+    manufacturer: 0
+-+  }
+-+};
+-+
+- const escapeRegExp = (value: string) =>
+-   value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+- 
+- const getPriorityWeight = (
+-   definition: InternalLinkDefinition
+--) => priorityWeight[definition.priority ?? "normal"];
+-+) => priorityWeight[definition.priority ?? "normal"] * 100;
+-+
+-+const getFunnelWeight = (
+-+  sourceGroup?: InternalLinkGroup,
+-+  targetGroup?: InternalLinkGroup
+-+) => {
+-+  if (!sourceGroup || !targetGroup) {
+-+    return 0;
+-+  }
+-+
+-+  return funnelWeight[sourceGroup]?.[targetGroup] ?? 0;
+-+};
+-+
+-+const getDefinitionScore = (
+-+  definition: InternalLinkDefinition,
+-+  options: LinkEngineOptions,
+-+  keywordLength: number,
+-+  index: number
+-+) =>
+-+  getPriorityWeight(definition) +
+-+  getFunnelWeight(options.sourceGroup, definition.group) +
+-+  Math.min(keywordLength, 40) -
+-+  Math.min(Math.floor(index / 500), 20);
+-+
+- const normalizeContext = (value?: string) =>
+--
+--  value?.trim().toLowerCase();
+-+  value
+-+    ?.trim()
+-+    .toLowerCase()
+-+    .replace(/ä/g, "ae")
+-+    .replace(/ö/g, "oe")
+-+    .replace(/ü/g, "ue")
+-+    .replace(/ß/g, "ss")
+-+    .replace(/[^a-z0-9]+/g, " ")
+-+    .replace(/\s+/g, " ")
+-+    .trim();
+-+
+-+const tokenizeContext = (value?: string) =>
+-+  new Set(
+-+    (normalizeContext(value) ?? "")
+-+      .split(" ")
+-+      .filter((token) => token.length >= 3)
+-+      .map((token) =>
+-+        token.replace(/(en|er|e|n|s)$/i, "").trim()
+-+      )
+-+      .filter((token) => token.length >= 3)
+-+  );
+-+
+-+const contextsOverlap = (
+-+  left?: string,
+-+  right?: string
+-+) => {
+-+  const normalizedLeft = normalizeContext(left);
+-+  const normalizedRight = normalizeContext(right);
+-+
+-+  if (!normalizedLeft || !normalizedRight) {
+-+    return false;
+-+  }
+-+
+-+  if (
+-+    normalizedLeft === normalizedRight ||
+-+    normalizedLeft.includes(normalizedRight) ||
+-+    normalizedRight.includes(normalizedLeft)
+-+  ) {
+-+    return true;
+-+  }
+-+
+-+  const leftTokens = tokenizeContext(normalizedLeft);
+-+  const rightTokens = tokenizeContext(normalizedRight);
+-+
+-+  return [...leftTokens].some((token) =>
+-+    rightTokens.has(token)
+-+  );
+-+};
+-+
+- const matchesSourceContext = (
+-   definition: InternalLinkDefinition,
+-   sourceContext?: string,
+-@@ -58,14 +153,10 @@
+-     return false;
+-   }
+- 
+--  return definition.contexts.some(
+--    (context) => {
+--      const normalizedContext = normalizeContext(context);
+--
+--      return normalizedContext
+--        ? normalizedSourceContexts.includes(normalizedContext)
+--        : false;
+--    }
+-+  return definition.contexts.some((context) =>
+-+    normalizedSourceContexts.some((source) =>
+-+      contextsOverlap(context, source)
+-+    )
+-   );
+- };
+- 
+-@@ -96,6 +187,7 @@
+-   options: LinkEngineOptions = {}
+- ): LinkMatch[] => {
+-   const matches: LinkMatch[] = [];
+-+
+-   for (const definition of definitions) {
+-     if (
+-       normalizePath(options.sourcePath) &&
+-@@ -128,19 +220,23 @@
+-           definition,
+-           keyword: match[0],
+-           index: match.index,
+--          length: match[0].length
+-+          length: match[0].length,
+-+          score: getDefinitionScore(
+-+            definition,
+-+            options,
+-+            match[0].length,
+-+            match.index
+-+          )
+-         });
+-       }
+-     }
+-   }
+- 
+-   return matches.sort((a, b) => {
+--    const priorityDifference =
+--      getPriorityWeight(b.definition) -
+--      getPriorityWeight(a.definition);
+--
+--    if (priorityDifference !== 0) {
+--      return priorityDifference;
+-+    const scoreDifference = b.score - a.score;
+-+
+-+    if (scoreDifference !== 0) {
+-+      return scoreDifference;
+-     }
+- 
+-     const lengthDifference = b.length - a.length;
+-@@ -178,7 +274,8 @@
+-   const maxLinksPerPage = options.maxLinksPerPage ?? 12;
+-   const accepted: LinkMatch[] = [];
+-   const occurrences = new Map<string, number>();
+--const linkedTargets = new Set<string>();
+-+  const linkedTargets = new Set<string>();
+-+
+-   for (const match of matches) {
+-     if (accepted.length >= maxLinksPerPage) {
+-       break;
+-@@ -187,11 +284,11 @@
+-     if (overlaps(match, accepted)) {
+-       continue;
+-     }
+-- if (linkedTargets.has(match.definition.href)) {
+--
+--      continue;
+--
+--    }
+-+
+-+    if (linkedTargets.has(match.definition.href)) {
+-+      continue;
+-+    }
+-+
+-     const currentOccurrences =
+-       occurrences.get(match.definition.id) ?? 0;
+- 
+---- a/apps/pfotentechnik/src/domain/content/internalLinks.ts
+-+++ b/apps/pfotentechnik/src/domain/content/internalLinks.ts
+-@@ -55,13 +55,28 @@
+-   title: string,
+-   extra: string[] = []
+- ) =>
+--  uniqueStrings([
+--    title,
+--    titleWithoutYear(title),
+--    titleWithoutSuffix(title),
+--    titleWithoutSuffix(titleWithoutYear(title)),
+--    ...extra
+--  ]).filter((keyword) => keyword.length >= 4);
+-+  uniqueStrings(
+-+    [
+-+      title,
+-+      titleWithoutYear(title),
+-+      titleWithoutSuffix(title),
+-+      titleWithoutSuffix(titleWithoutYear(title)),
+-+      ...extra
+-+    ].flatMap((keyword) => {
+-+      const normalized = keyword
+-+        .replace(/[|:–—]/g, " ")
+-+        .replace(/\s+/g, " ")
+-+        .trim();
+-+
+-+      return [
+-+        keyword,
+-+        normalized,
+-+        normalized
+-+          .replace(/\b(?:Test|Vergleich|Ratgeber)\b/gi, "")
+-+          .trim()
+-+      ];
+-+    })
+-+  ).filter((keyword) => keyword.length >= 4);
+- 
+- const toPriority = (
+-   value?: LinkPriority
+-@@ -78,7 +93,12 @@
+- 
+-   return {
+-     id: `page:${page.data.slug}`,
+--    keywords: uniqueStrings(linking.keywords),
+-+    keywords: uniqueStrings([
+-+      ...linking.keywords,
+-+      ...(linking.priority === "high"
+-+        ? buildTitleKeywords(page.data.title)
+-+        : [])
+-+    ]),
+-     href: normalizePath(page.data.slug),
+-     title: page.data.title,
+-     group: "knowledge",
+-@@ -156,7 +176,7 @@
+-   ),
+-   title: manufacturer.data.name,
+-   group: "manufacturer",
+--  priority: "normal",
+-+  priority: "low",
+-   maxOccurrences: 1,
+-   contexts: uniqueStrings([
+-     ...(manufacturer.data.tags ?? []),
+-@@ -188,12 +208,14 @@
+- /**
+-  * Baut eine projektweite, konservative Linkliste:
+-  *
+-- * - Seiten: nur explizit gepflegte linking.keywords
+-- * - Vergleiche: exakter Titel und bereinigte Titelvarianten
+-+ * - Seiten: explizit gepflegte linking.keywords
+-+ * - hoch priorisierte Seiten: zusätzlich bereinigte Titelvarianten
+-+ * - Vergleiche: Titel, SEO-Titel und bereinigte Varianten
+-  * - Produkte: exakter Produktname
+-  * - Hersteller: exakter Herstellername
+-  *
+-- * Generische Tags werden bewusst nicht als Anchor-Texte verwendet.
+-+ * Tags dienen nur als Kontextsignal und werden nicht als Anchor-Texte
+-+ * verwendet.
+-  */
+- export const getInternalLinkDefinitions = ({
+-   pages,
+diff --git a/internal-linking-2.0.patch b/internal-linking-2.0.patch
+deleted file mode 100644
+index bb2fbc9..0000000
+--- a/internal-linking-2.0.patch
++++ /dev/null
+@@ -1,355 +0,0 @@
+-diff --git a/packages/affiliate-core/src/linking/types.ts b/packages/affiliate-core/src/linking/types.ts
+-index 711f8c6..9c1b7d2 100644
+---- a/packages/affiliate-core/src/linking/types.ts
+-+++ b/packages/affiliate-core/src/linking/types.ts
+-@@ -1,6 +1,12 @@
+- export type LinkPriority =
+-   | "low"
+-   | "normal"
+-   | "high";
+-+
+-+export type InternalLinkGroup =
+-+  | "knowledge"
+-+  | "comparison"
+-+  | "product"
+-+  | "manufacturer";
+-
+- export interface InternalLinkDefinition {
+-@@ -57,7 +63,7 @@ export interface InternalLinkDefinition {
+-      *
+-      * knowledge
+-      */
+--  group?: string;
+-+  group?: InternalLinkGroup;
+-  /**
+-
+-     * Themenbereiche, in denen dieser Link verwendet werden darf.
+-diff --git a/packages/affiliate-core/src/linking/linkEngine.ts b/packages/affiliate-core/src/linking/linkEngine.ts
+-index 0da5b2e..8c4d89f 100644
+---- a/packages/affiliate-core/src/linking/linkEngine.ts
+-+++ b/packages/affiliate-core/src/linking/linkEngine.ts
+-@@ -1,9 +1,11 @@
+- import type {
+-   InternalLinkDefinition,
+-+  InternalLinkGroup,
+-   LinkPriority
+- } from "./types";
+-
+- export interface LinkMatch {
+-   definition: InternalLinkDefinition;
+-   keyword: string;
+-   index: number;
+-   length: number;
+-+  score: number;
+- }
+-
+- export interface LinkEngineOptions {
+-@@ -18,7 +20,7 @@ export interface LinkEngineOptions {
+-
+-   ignoredTags?: string[];
+-
+--  sourceGroup?: string;
+-+  sourceGroup?: InternalLinkGroup;
+-
+-   sourcePath?: string;
+-
+-@@ -34,12 +36,64 @@ const priorityWeight: Record<LinkPriority, number> = {
+-   high: 3
+- };
+-
+-+const funnelWeight: Record<
+-+  InternalLinkGroup,
+-+  Partial<Record<InternalLinkGroup, number>>
+-+> = {
+-+  knowledge: {
+-+    comparison: 40,
+-+    knowledge: 30,
+-+    product: 20,
+-+    manufacturer: 10
+-+  },
+-+  comparison: {
+-+    product: 40,
+-+    manufacturer: 25,
+-+    knowledge: 15,
+-+    comparison: 0
+-+  },
+-+  product: {
+-+    manufacturer: 35,
+-+    comparison: 30,
+-+    knowledge: 20,
+-+    product: 0
+-+  },
+-+  manufacturer: {
+-+    product: 35,
+-+    comparison: 25,
+-+    knowledge: 20,
+-+    manufacturer: 0
+-+  }
+-+};
+-+
+- const escapeRegExp = (value: string) =>
+-   value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+-
+- const getPriorityWeight = (
+-   definition: InternalLinkDefinition
+--) => priorityWeight[definition.priority ?? "normal"];
+-+) => priorityWeight[definition.priority ?? "normal"] * 100;
+-+
+-+const getFunnelWeight = (
+-+  sourceGroup?: InternalLinkGroup,
+-+  targetGroup?: InternalLinkGroup
+-+) => {
+-+  if (!sourceGroup || !targetGroup) {
+-+    return 0;
+-+  }
+-+
+-+  return funnelWeight[sourceGroup]?.[targetGroup] ?? 0;
+-+};
+-+
+-+const getDefinitionScore = (
+-+  definition: InternalLinkDefinition,
+-+  options: LinkEngineOptions,
+-+  keywordLength: number,
+-+  index: number
+-+) =>
+-+  getPriorityWeight(definition) +
+-+  getFunnelWeight(options.sourceGroup, definition.group) +
+-+  Math.min(keywordLength, 40) -
+-+  Math.min(Math.floor(index / 500), 20);
+-+
+- const normalizeContext = (value?: string) =>
+--
+--  value?.trim().toLowerCase();
+-+  value
+-+    ?.trim()
+-+    .toLowerCase()
+-+    .replace(/ä/g, "ae")
+-+    .replace(/ö/g, "oe")
+-+    .replace(/ü/g, "ue")
+-+    .replace(/ß/g, "ss")
+-+    .replace(/[^a-z0-9]+/g, " ")
+-+    .replace(/\s+/g, " ")
+-+    .trim();
+-+
+-+const tokenizeContext = (value?: string) =>
+-+  new Set(
+-+    (normalizeContext(value) ?? "")
+-+      .split(" ")
+-+      .filter((token) => token.length >= 3)
+-+      .map((token) =>
+-+        token
+-+          .replace(/(en|er|e|n|s)$/i, "")
+-+          .trim()
+-+      )
+-+      .filter((token) => token.length >= 3)
+-+  );
+-+
+-+const contextsOverlap = (
+-+  left?: string,
+-+  right?: string
+-+) => {
+-+  const normalizedLeft = normalizeContext(left);
+-+  const normalizedRight = normalizeContext(right);
+-+
+-+  if (!normalizedLeft || !normalizedRight) {
+-+    return false;
+-+  }
+-+
+-+  if (
+-+    normalizedLeft === normalizedRight ||
+-+    normalizedLeft.includes(normalizedRight) ||
+-+    normalizedRight.includes(normalizedLeft)
+-+  ) {
+-+    return true;
+-+  }
+-+
+-+  const leftTokens = tokenizeContext(normalizedLeft);
+-+  const rightTokens = tokenizeContext(normalizedRight);
+-+
+-+  return [...leftTokens].some((token) =>
+-+    rightTokens.has(token)
+-+  );
+-+};
+-+
+- const matchesSourceContext = (
+-   definition: InternalLinkDefinition,
+-   sourceContext?: string,
+-@@ -55,19 +109,12 @@ const matchesSourceContext = (
+-   const normalizedSourceContexts = [sourceContext, ...sourceContexts]
+-     .map(normalizeContext)
+-     .filter((context): context is string => Boolean(context));
+--
+-   if (normalizedSourceContexts.length === 0) {
+-     return false;
+-   }
+-
+--  return definition.contexts.some(
+--    (context) => {
+--      const normalizedContext = normalizeContext(context);
+--
+--      return normalizedContext
+--        ? normalizedSourceContexts.includes(normalizedContext)
+--        : false;
+--    }
+--  );
+-+  return definition.contexts.some((context) =>
+-+    normalizedSourceContexts.some((source) =>
+-+      contextsOverlap(context, source)
+-+    )
+-+  );
+- };
+-
+- const normalizePath = (path?: string) => {
+-@@ -126,20 +173,20 @@ export const findInternalLinkMatches = (
+-           definition,
+-           keyword: match[0],
+-           index: match.index,
+--          length: match[0].length
+-+          length: match[0].length,
+-+          score: getDefinitionScore(
+-+            definition,
+-+            options,
+-+            match[0].length,
+-+            match.index
+-+          )
+-         });
+-       }
+-     }
+-   }
+-
+-   return matches.sort((a, b) => {
+--    const priorityDifference =
+--      getPriorityWeight(b.definition) -
+--      getPriorityWeight(a.definition);
+--
+--    if (priorityDifference !== 0) {
+--      return priorityDifference;
+-+    const scoreDifference = b.score - a.score;
+-+    if (scoreDifference !== 0) {
+-+      return scoreDifference;
+-     }
+-
+-     const lengthDifference = b.length - a.length;
+-@@ -180,7 +227,8 @@ export const selectInternalLinkMatches = (
+-   const maxLinksPerPage = options.maxLinksPerPage ?? 12;
+-   const accepted: LinkMatch[] = [];
+-   const occurrences = new Map<string, number>();
+--const linkedTargets = new Set<string>();
+-+  const linkedTargets = new Set<string>();
+-+
+-   for (const match of matches) {
+-     if (accepted.length >= maxLinksPerPage) {
+-       break;
+-@@ -189,12 +237,9 @@ const linkedTargets = new Set<string>();
+-       continue;
+-     }
+-
+-- if (linkedTargets.has(match.definition.href)) {
+--
+-+    if (linkedTargets.has(match.definition.href)) {
+-       continue;
+--
+-     }
+-+
+-     const currentOccurrences =
+-       occurrences.get(match.definition.id) ?? 0;
+-
+-diff --git a/apps/pfotentechnik/src/domain/content/internalLinks.ts b/apps/pfotentechnik/src/domain/content/internalLinks.ts
+-index bc646b9..6d5e94a 100644
+---- a/apps/pfotentechnik/src/domain/content/internalLinks.ts
+-+++ b/apps/pfotentechnik/src/domain/content/internalLinks.ts
+-@@ -56,13 +56,26 @@ const buildTitleKeywords = (
+-   title: string,
+-   extra: string[] = []
+- ) =>
+--  uniqueStrings([
+--    title,
+--    titleWithoutYear(title),
+--    titleWithoutSuffix(title),
+--    titleWithoutSuffix(titleWithoutYear(title)),
+--    ...extra
+--  ]).filter((keyword) => keyword.length >= 4);
+-+  uniqueStrings(
+-+    [
+-+      title,
+-+      titleWithoutYear(title),
+-+      titleWithoutSuffix(title),
+-+      titleWithoutSuffix(titleWithoutYear(title)),
+-+      ...extra
+-+    ].flatMap((keyword) => {
+-+      const normalized = keyword
+-+        .replace(/[|:–—]/g, " ")
+-+        .replace(/\s+/g, " ")
+-+        .trim();
+-+
+-+      return [
+-+        keyword,
+-+        normalized,
+-+        normalized.replace(/\b(?:Test|Vergleich|Ratgeber)\b/gi, "").trim()
+-+      ];
+-+    })
+-+  ).filter((keyword) => keyword.length >= 4);
+-
+- const toPriority = (
+-   value?: LinkPriority
+-@@ -81,7 +94,12 @@ const pageDefinition = (
+-
+-   return {
+-     id: `page:${page.data.slug}`,
+--    keywords: uniqueStrings(linking.keywords),
+-+    keywords: uniqueStrings([
+-+      ...linking.keywords,
+-+      ...(linking.priority === "high"
+-+        ? buildTitleKeywords(page.data.title)
+-+        : [])
+-+    ]),
+-     href: normalizePath(page.data.slug),
+-     title: page.data.title,
+-     group: "knowledge",
+-@@ -137,7 +155,7 @@ const comparisonDefinition = (
+-   title: comparison.data.title,
+-   group: "comparison",
+-   priority: "high",
+--  maxOccurrences: 1,
+-+  maxOccurrences: 2,
+-   contexts: uniqueStrings([
+-     ...(comparison.data.tags ?? []),
+-     ...(comparison.data.hub?.sections ?? []),
+-@@ -158,7 +176,7 @@ const manufacturerDefinition = (
+-   ),
+-   title: manufacturer.data.name,
+-   group: "manufacturer",
+--  priority: "normal",
+-+  priority: "low",
+-   maxOccurrences: 1,
+-   contexts: uniqueStrings([
+-     ...(manufacturer.data.tags ?? []),
+-@@ -191,11 +209,13 @@ const dedupeDefinitions = (
+-  * Baut eine projektweite, konservative Linkliste:
+-  *
+-  * - Seiten: nur explizit gepflegte linking.keywords
+-- * - Vergleiche: exakter Titel und bereinigte Titelvarianten
+-+ * - hoch priorisierte Seiten: zusätzlich bereinigte Titelvarianten
+-+ * - Vergleiche: Titel, SEO-Titel und bereinigte Varianten
+-  * - Produkte: exakter Produktname
+-  * - Hersteller: exakter Herstellername
+-  *
+-- * Generische Tags werden bewusst nicht als Anchor-Texte verwendet.
+-+ * Tags dienen nur als Kontextsignal und werden nicht als Anchor-Texte
+-+ * verwendet.
+-  */
+- export const getInternalLinkDefinitions = ({
+-   pages,
+-diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+-index 6f6b7c0..91e2b40 100644
+---- a/apps/pfotentechnik/src/pages/[slug].astro
+-+++ b/apps/pfotentechnik/src/pages/[slug].astro
+-@@ -283,7 +283,7 @@ const relatedItems = relatedEntries.map((entry) => ({
+-       sourcePath={`/${page.data.slug}/`}
+-       sourceGroup="knowledge"
+-       sourceContexts={sourceContexts}
+--      maxLinksPerPage={3}
+-+      maxLinksPerPage={5}
+-     >
+-       <PremiumRenderer
+-         blocks={page.data.premiumBlocks as any}
+diff --git a/packages/affiliate-core/src/components/ArticleImageLightbox.astro b/packages/affiliate-core/src/components/ArticleImageLightbox.astro
+deleted file mode 100644
+index bee00e6..0000000
+--- a/packages/affiliate-core/src/components/ArticleImageLightbox.astro
++++ /dev/null
+@@ -1,290 +0,0 @@
+----
+-interface Props {
+-  selector?: string;
+-  hint?: string;
+-}
+-
+-const {
+-  selector = ".article > p > img, .premium-v3-image img",
+-  hint = "Zum Vergrößern antippen",
+-} = Astro.props;
+-
+-const dialogId = "article-image-lightbox";
+----
+-
+-<dialog
+-  id={dialogId}
+-  class="article-image-lightbox"
+-  aria-label="Vergrößerte Infografik"
+->
+-  <div class="article-image-lightbox__surface">
+-    <button
+-      class="article-image-lightbox__close"
+-      type="button"
+-      aria-label="Vergrößerte Ansicht schließen"
+-    >
+-      <span aria-hidden="true">×</span>
+-    </button>
+-
+-    <div class="article-image-lightbox__viewport">
+-      <img
+-        class="article-image-lightbox__image"
+-        alt=""
+-        decoding="async"
+-      />
+-    </div>
+-
+-    <p class="article-image-lightbox__caption" hidden></p>
+-    <p class="article-image-lightbox__help">
+-      Mit zwei Fingern zoomen · Zum Schließen außerhalb des Bildes tippen
+-    </p>
+-  </div>
+-</dialog>
+-
+-<script define:vars={{ selector, dialogId, hint }}>
+-  const setupArticleImageLightbox = () => {
+-    const dialog = document.getElementById(dialogId);
+-
+-    if (!(dialog instanceof HTMLDialogElement)) {
+-      return;
+-    }
+-
+-    const preview = dialog.querySelector(".article-image-lightbox__image");
+-    const caption = dialog.querySelector(".article-image-lightbox__caption");
+-    const closeButton = dialog.querySelector(".article-image-lightbox__close");
+-
+-    if (
+-      !(preview instanceof HTMLImageElement) ||
+-      !(caption instanceof HTMLParagraphElement) ||
+-      !(closeButton instanceof HTMLButtonElement)
+-    ) {
+-      return;
+-    }
+-
+-    let activeTrigger = null;
+-
+-    const close = () => {
+-      if (dialog.open) {
+-        dialog.close();
+-      }
+-    };
+-
+-    const open = (image) => {
+-      activeTrigger = image;
+-      preview.src = image.currentSrc || image.src;
+-      preview.alt = image.alt || "";
+-
+-      const figureCaption = image
+-        .closest("figure")
+-        ?.querySelector("figcaption")
+-        ?.textContent
+-        ?.trim();
+-
+-      const captionText = figureCaption || image.alt?.trim() || "";
+-      caption.textContent = captionText;
+-      caption.hidden = captionText.length === 0;
+-
+-      dialog.showModal();
+-      document.documentElement.classList.add("has-image-lightbox");
+-      closeButton.focus();
+-    };
+-
+-    document.querySelectorAll(selector).forEach((node) => {
+-      if (!(node instanceof HTMLImageElement)) {
+-        return;
+-      }
+-
+-      if (
+-        node.dataset.lightboxReady === "true" ||
+-        node.dataset.noLightbox === "true" ||
+-        node.closest("a, button, dialog")
+-      ) {
+-        return;
+-      }
+-
+-      node.dataset.lightboxReady = "true";
+-      node.classList.add("zoomable-article-image");
+-      node.tabIndex = 0;
+-      node.setAttribute("role", "button");
+-      node.setAttribute(
+-        "aria-label",
+-        `${node.alt || "Infografik"}. ${hint}`,
+-      );
+-      node.setAttribute("title", hint);
+-
+-      node.addEventListener("click", () => open(node));
+-      node.addEventListener("keydown", (event) => {
+-        if (event.key === "Enter" || event.key === " ") {
+-          event.preventDefault();
+-          open(node);
+-        }
+-      });
+-    });
+-
+-    if (dialog.dataset.lightboxReady === "true") {
+-      return;
+-    }
+-
+-    dialog.dataset.lightboxReady = "true";
+-    closeButton.addEventListener("click", close);
+-
+-    dialog.addEventListener("click", (event) => {
+-      if (event.target === dialog) {
+-        close();
+-      }
+-    });
+-
+-    dialog.addEventListener("close", () => {
+-      document.documentElement.classList.remove("has-image-lightbox");
+-      preview.removeAttribute("src");
+-      preview.alt = "";
+-      caption.textContent = "";
+-      caption.hidden = true;
+-
+-      if (activeTrigger instanceof HTMLElement) {
+-        activeTrigger.focus();
+-      }
+-
+-      activeTrigger = null;
+-    });
+-  };
+-
+-  setupArticleImageLightbox();
+-  document.addEventListener("astro:page-load", setupArticleImageLightbox);
+-</script>
+-
+-<style is:global>
+-  .zoomable-article-image {
+-    cursor: zoom-in;
+-    outline-offset: 5px;
+-  }
+-
+-  .zoomable-article-image:focus-visible {
+-    outline: 3px solid var(--primary-dark);
+-  }
+-
+-  .article > p:has(> .zoomable-article-image)::after,
+-  .premium-v3-image:has(.zoomable-article-image)::after {
+-    content: "Zum Vergrößern antippen";
+-    display: block;
+-    margin-top: 8px;
+-    color: var(--muted);
+-    font-size: 13px;
+-    font-weight: 700;
+-    line-height: 1.4;
+-    text-align: center;
+-    pointer-events: none;
+-  }
+-
+-  .has-image-lightbox {
+-    overflow: hidden;
+-  }
+-
+-  .article-image-lightbox {
+-    width: 100%;
+-    max-width: none;
+-    height: 100%;
+-    max-height: none;
+-    margin: 0;
+-    padding: clamp(12px, 3vw, 32px);
+-    border: 0;
+-    background: transparent;
+-    overflow: hidden;
+-  }
+-
+-  .article-image-lightbox::backdrop {
+-    background: rgba(8, 15, 12, 0.9);
+-    backdrop-filter: blur(8px);
+-  }
+-
+-  .article-image-lightbox__surface {
+-    position: relative;
+-    display: flex;
+-    width: 100%;
+-    height: 100%;
+-    flex-direction: column;
+-    align-items: center;
+-    justify-content: center;
+-  }
+-
+-  .article-image-lightbox__viewport {
+-    display: flex;
+-    width: 100%;
+-    min-height: 0;
+-    flex: 1;
+-    align-items: center;
+-    justify-content: center;
+-    overflow: auto;
+-    overscroll-behavior: contain;
+-    -webkit-overflow-scrolling: touch;
+-  }
+-
+-  .article-image-lightbox__image {
+-    display: block;
+-    width: auto;
+-    max-width: 100%;
+-    height: auto;
+-    max-height: calc(100dvh - 140px);
+-    object-fit: contain;
+-    border-radius: 16px;
+-    background: white;
+-    touch-action: pinch-zoom;
+-    user-select: none;
+-    -webkit-user-drag: none;
+-  }
+-
+-  .article-image-lightbox__close {
+-    position: absolute;
+-    z-index: 2;
+-    top: 0;
+-    right: 0;
+-    display: grid;
+-    width: 48px;
+-    height: 48px;
+-    place-items: center;
+-    border: 1px solid rgba(255, 255, 255, 0.25);
+-    border-radius: 999px;
+-    color: white;
+-    background: rgba(8, 15, 12, 0.82);
+-    font: inherit;
+-    font-size: 32px;
+-    line-height: 1;
+-    cursor: pointer;
+-  }
+-
+-  .article-image-lightbox__close:focus-visible {
+-    outline: 3px solid white;
+-    outline-offset: 3px;
+-  }
+-
+-  .article-image-lightbox__caption {
+-    max-width: 820px;
+-    margin: 14px auto 0;
+-    color: white;
+-    font-size: 15px;
+-    line-height: 1.5;
+-    text-align: center;
+-  }
+-
+-  .article-image-lightbox__help {
+-    margin: 6px auto 0;
+-    color: rgba(255, 255, 255, 0.72);
+-    font-size: 12px;
+-    line-height: 1.4;
+-    text-align: center;
+-  }
+-
+-  @media (max-width: 760px) {
+-    .article-image-lightbox__image {
+-      max-height: calc(100dvh - 124px);
+-      border-radius: 12px;
+-    }
+-
+-    .article-image-lightbox__close {
+-      top: 4px;
+-      right: 4px;
+-      width: 44px;
+-      height: 44px;
+-    }
+-  }
+-</style>
+diff --git a/pfotentechnik-design-system-v1.patch b/pfotentechnik-design-system-v1.patch
+deleted file mode 100644
+index a178f9e..0000000
+--- a/pfotentechnik-design-system-v1.patch
++++ /dev/null
+@@ -1,9 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/layouts/ProjectLayout.astro b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
+---- a/apps/pfotentechnik/src/layouts/ProjectLayout.astro
+-+++ b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
+-@@ -3,6 +3,7 @@
+- ---
+- import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+- import "../styles/pfotentechnik.css";
+-+import "../styles/pfotentechnik-brand-system.css";
+- import { getNavigationItems } from "@app/domain/content";
+diff --git a/rollback-design-system.mjs b/rollback-design-system.mjs
+deleted file mode 100644
+index 8c7055e..0000000
+--- a/rollback-design-system.mjs
++++ /dev/null
+@@ -1,36 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const repoRoot = process.cwd();
+-const manifestPath = path.join(
+-  repoRoot,
+-  ".pfotentechnik-design-system-v1.json"
+-);
+-
+-if (!fs.existsSync(manifestPath)) {
+-  console.error("Kein Installationsmanifest gefunden.");
+-  process.exit(1);
+-}
+-
+-const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+-
+-for (const relativePath of manifest.files) {
+-  const backup = path.join(manifest.backupRoot, relativePath);
+-  const target = path.join(repoRoot, relativePath);
+-
+-  if (fs.existsSync(backup)) {
+-    fs.mkdirSync(path.dirname(target), { recursive: true });
+-    fs.copyFileSync(backup, target);
+-    console.log(`wiederhergestellt: ${relativePath}`);
+-  } else if (
+-    relativePath.endsWith("pfotentechnik-brand-system.css") &&
+-    fs.existsSync(target)
+-  ) {
+-    fs.unlinkSync(target);
+-    console.log(`entfernt: ${relativePath}`);
+-  }
+-}
+-
+-fs.unlinkSync(manifestPath);
+-console.log("PfotenTechnik Design System 1.0 wurde zurückgerollt.");
+diff --git a/rollback-journey.mjs b/rollback-journey.mjs
+deleted file mode 100644
+index 4d27aa1..0000000
+--- a/rollback-journey.mjs
++++ /dev/null
+@@ -1,33 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const manifestPath = path.join(root, ".conversion-framework-journey.json");
+-
+-if (!fs.existsSync(manifestPath)) {
+-  console.error("Kein Journey-Installationsmanifest gefunden.");
+-  process.exit(1);
+-}
+-
+-const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+-
+-for (const relative of manifest.files) {
+-  const backup = path.join(manifest.backupRoot, relative);
+-  const target = path.join(root, relative);
+-
+-  if (fs.existsSync(backup)) {
+-    fs.mkdirSync(path.dirname(target), { recursive: true });
+-    fs.copyFileSync(backup, target);
+-    console.log(`wiederhergestellt: ${relative}`);
+-  } else if (
+-    relative.endsWith("ConversionJourney.astro") &&
+-    fs.existsSync(target)
+-  ) {
+-    fs.unlinkSync(target);
+-    console.log(`entfernt: ${relative}`);
+-  }
+-}
+-
+-fs.unlinkSync(manifestPath);
+-console.log("Conversion Journey zurückgerollt.");
+diff --git a/rollback-trust.mjs b/rollback-trust.mjs
+deleted file mode 100644
+index eb110eb..0000000
+--- a/rollback-trust.mjs
++++ /dev/null
+@@ -1,38 +0,0 @@
+-#!/usr/bin/env node
+-import fs from "node:fs";
+-import path from "node:path";
+-
+-const root = process.cwd();
+-const manifestPath = path.join(
+-  root,
+-  ".conversion-framework-trust.json"
+-);
+-
+-if (!fs.existsSync(manifestPath)) {
+-  console.error("Kein Trust-Installationsmanifest gefunden.");
+-  process.exit(1);
+-}
+-
+-const manifest = JSON.parse(
+-  fs.readFileSync(manifestPath, "utf8")
+-);
+-
+-for (const relative of manifest.files) {
+-  const backup = path.join(manifest.backupRoot, relative);
+-  const target = path.join(root, relative);
+-
+-  if (fs.existsSync(backup)) {
+-    fs.mkdirSync(path.dirname(target), { recursive: true });
+-    fs.copyFileSync(backup, target);
+-    console.log(`wiederhergestellt: ${relative}`);
+-  } else if (
+-    relative.endsWith("ProductTrustPanel.astro") &&
+-    fs.existsSync(target)
+-  ) {
+-    fs.unlinkSync(target);
+-    console.log(`entfernt: ${relative}`);
+-  }
+-}
+-
+-fs.unlinkSync(manifestPath);
+-console.log("Trust-Modul zurückgerollt.");
+diff --git a/smarte-futterautomaten-images-and-hero-v2.patch b/smarte-futterautomaten-images-and-hero-v2.patch
+deleted file mode 100644
+index a6041bf..0000000
+--- a/smarte-futterautomaten-images-and-hero-v2.patch
++++ /dev/null
+@@ -1,45 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+---- a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+-+++ b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+-@@ -57,1 +57,4 @@
+--heroImageKey: "feederHero"
+-+heroImage:
+-+  src: "../../assets/images/guides/smarte-futterautomaten/hero.webp"
+-+  alt: "Smarte Futterautomaten für Hunde und Katzen im Vergleich."
+-+heroImageKey: "feederHero"
+-@@ -235,1 +238,1 @@
+--![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](/images/guides/smarte-futterautomaten/decision-tree.webp)
+-+![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](../../assets/images/guides/smarte-futterautomaten/decision-tree.webp)
+-@@ -261,1 +264,1 @@
+--![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+-+![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+-@@ -295,1 +298,1 @@
+--![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](/images/guides/smarte-futterautomaten/feeder-types.webp)
+-+![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](../../assets/images/guides/smarte-futterautomaten/feeder-types.webp)
+-@@ -349,1 +352,1 @@
+--![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](/images/guides/smarte-futterautomaten/comparison-overview.webp)
+-+![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/comparison-overview.webp)
+-@@ -380,1 +383,1 @@
+--![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](/images/guides/smarte-futterautomaten/portioning-system.webp)
+-+![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/portioning-system.webp)
+-@@ -386,1 +389,1 @@
+--![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+-+![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](../../assets/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+-@@ -424,1 +427,1 @@
+--![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+-+![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](../../assets/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+-@@ -464,1 +467,1 @@
+--![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](/images/guides/smarte-futterautomaten/buying-checklist.webp)
+-+![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](../../assets/images/guides/smarte-futterautomaten/buying-checklist.webp)
+-@@ -698,1 +701,1 @@
+--![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](/images/guides/smarte-futterautomaten/privacy-security.webp)
+-+![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](../../assets/images/guides/smarte-futterautomaten/privacy-security.webp)
+-@@ -716,1 +719,1 @@
+--![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+-+![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](../../assets/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+-@@ -780,1 +783,1 @@
+--![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](/images/guides/smarte-futterautomaten/common-mistakes.webp)
+-+![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](../../assets/images/guides/smarte-futterautomaten/common-mistakes.webp)
+-@@ -904,1 +907,1 @@
+--![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](/images/guides/smarte-futterautomaten/final-checklist.webp)
+-+![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/final-checklist.webp)
+diff --git a/smarte-futterautomaten-images-and-hero.patch b/smarte-futterautomaten-images-and-hero.patch
+deleted file mode 100644
+index 99e0071..0000000
+--- a/smarte-futterautomaten-images-and-hero.patch
++++ /dev/null
+@@ -1,120 +0,0 @@
+-diff --git a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+-index 2ea1ec3..a764562 100644
+---- a/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+-+++ b/apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md
+-@@ -56,6 +56,9 @@ placeholder line 55
+- placeholder line 56
+- placeholder line 57
+- placeholder line 58
+-+heroImage:
+-+  src: "../../assets/images/guides/smarte-futterautomaten/hero.webp"
+-+  alt: "Smarte Futterautomaten für Hunde und Katzen im Vergleich."
+- heroImageKey: "feederHero"
+- placeholder line 60
+- placeholder line 61
+-@@ -234,7 +237,7 @@ placeholder line 233
+- placeholder line 234
+- placeholder line 235
+- placeholder line 236
+--![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](/images/guides/smarte-futterautomaten/decision-tree.webp)
+-+![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](../../assets/images/guides/smarte-futterautomaten/decision-tree.webp)
+- placeholder line 238
+- placeholder line 239
+- placeholder line 240
+-@@ -260,7 +263,7 @@ placeholder line 259
+- placeholder line 260
+- placeholder line 261
+- placeholder line 262
+--![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+-+![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
+- placeholder line 264
+- placeholder line 265
+- placeholder line 266
+-@@ -294,7 +297,7 @@ placeholder line 293
+- placeholder line 294
+- placeholder line 295
+- placeholder line 296
+--![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](/images/guides/smarte-futterautomaten/feeder-types.webp)
+-+![Übersicht der wichtigsten Bauarten smarter Futterautomaten für Trockenfutter, Nassfutter und Mehrtierhaushalte.](../../assets/images/guides/smarte-futterautomaten/feeder-types.webp)
+- placeholder line 298
+- placeholder line 299
+- placeholder line 300
+-@@ -348,7 +351,7 @@ placeholder line 347
+- placeholder line 348
+- placeholder line 349
+- placeholder line 350
+--![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](/images/guides/smarte-futterautomaten/comparison-overview.webp)
+-+![Vergleichsmatrix der Futterautomaten-Bauarten nach Futterart, Zeitplan, App, Kamera und Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/comparison-overview.webp)
+- placeholder line 352
+- placeholder line 353
+- placeholder line 354
+-@@ -379,13 +382,13 @@ placeholder line 378
+- placeholder line 379
+- placeholder line 380
+- placeholder line 381
+--![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](/images/guides/smarte-futterautomaten/portioning-system.webp)
+-+![Schematische Darstellung von Rotor, Förderschnecke und Drehteller als Dosiersysteme in Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/portioning-system.webp)
+- placeholder line 383
+- placeholder line 384
+- placeholder line 385
+- placeholder line 386
+- placeholder line 387
+--![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+-+![Ablauf einer automatischen Futterausgabe vom Zeitplan über Mechanik und Sensorik bis zum Napf.](../../assets/images/guides/smarte-futterautomaten/feeding-workflow.webp)
+- placeholder line 389
+- placeholder line 390
+- placeholder line 391
+-@@ -423,7 +426,7 @@ placeholder line 422
+- placeholder line 423
+- placeholder line 424
+- placeholder line 425
+--![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+-+![Infografik zu den Unterschieden zwischen lokalem Zeitplan, WLAN, Internet, Hersteller-Cloud und Smartphone-App.](../../assets/images/guides/smarte-futterautomaten/offline-vs-cloud.webp)
+- placeholder line 427
+- placeholder line 428
+- placeholder line 429
+-@@ -463,7 +466,7 @@ placeholder line 462
+- placeholder line 463
+- placeholder line 464
+- placeholder line 465
+--![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](/images/guides/smarte-futterautomaten/buying-checklist.webp)
+-+![Kaufcheckliste für smarte Futterautomaten mit Portionierung, Ausfallsicherheit, Reinigung und Sicherheit.](../../assets/images/guides/smarte-futterautomaten/buying-checklist.webp)
+- placeholder line 467
+- placeholder line 468
+- placeholder line 469
+-@@ -697,7 +700,7 @@ placeholder line 696
+- placeholder line 697
+- placeholder line 698
+- placeholder line 699
+--![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](/images/guides/smarte-futterautomaten/privacy-security.webp)
+-+![Datenschutz- und Sicherheitscheck für Futterautomaten mit Kamera, Mikrofon, App und Cloud-Speicher.](../../assets/images/guides/smarte-futterautomaten/privacy-security.webp)
+- placeholder line 701
+- placeholder line 702
+- placeholder line 703
+-@@ -715,7 +718,7 @@ placeholder line 714
+- placeholder line 715
+- placeholder line 716
+- placeholder line 717
+--![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+-+![Wartungskalender für Futterautomaten mit täglichen, wöchentlichen und monatlichen Kontrollen.](../../assets/images/guides/smarte-futterautomaten/maintenance-calendar.webp)
+- placeholder line 719
+- placeholder line 720
+- placeholder line 721
+-@@ -779,7 +782,7 @@ placeholder line 778
+- placeholder line 779
+- placeholder line 780
+- placeholder line 781
+--![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](/images/guides/smarte-futterautomaten/common-mistakes.webp)
+-+![Häufige Fehlkäufe bei smarten Futterautomaten wie ungeprüfte Portionen, Cloud-Abhängigkeit und ungeeignete Mehrtierlösungen.](../../assets/images/guides/smarte-futterautomaten/common-mistakes.webp)
+- placeholder line 783
+- placeholder line 784
+- placeholder line 785
+-@@ -903,7 +906,7 @@ placeholder line 902
+- placeholder line 903
+- placeholder line 904
+- placeholder line 905
+--![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](/images/guides/smarte-futterautomaten/final-checklist.webp)
+-+![Mobile Abschlusscheckliste zur Auswahl und sicheren Einrichtung eines smarten Futterautomaten.](../../assets/images/guides/smarte-futterautomaten/final-checklist.webp)
+- placeholder line 907
+- placeholder line 908
+- placeholder line 909

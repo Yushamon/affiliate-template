@@ -1,9 +1,0 @@
-diff --git a/apps/pfotentechnik/src/layouts/ProjectLayout.astro b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
---- a/apps/pfotentechnik/src/layouts/ProjectLayout.astro
-+++ b/apps/pfotentechnik/src/layouts/ProjectLayout.astro
-@@ -3,6 +3,7 @@
- ---
- import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
- import "../styles/pfotentechnik.css";
-+import "../styles/pfotentechnik-brand-system.css";
- import { getNavigationItems } from "@app/domain/content";

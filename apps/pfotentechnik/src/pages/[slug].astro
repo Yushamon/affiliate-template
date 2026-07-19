@@ -12,7 +12,6 @@ import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import ConversionJourney from "../components/ConversionJourney.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
-import ArticleImageLightbox from "@affiliate-core/components/ArticleImageLightbox.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import HealthBridge from "../components/HealthBridge.astro";
 import { projectConfig, siteMeta } from "../project.config";
@@ -506,9 +505,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     <FAQ items={page.data.faq} />
   </article>
 
-  <ArticleImageLightbox />
-
-  <ConversionJourney
+<ConversionJourney
     title="Was jetzt sinnvoll ist"
     intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
     items={[

@@ -1,0 +1,701 @@
+diff --git a/apps/pfotentechnik/src/content/schema/page.ts b/apps/pfotentechnik/src/content/schema/page.ts
+index 99933c6..c200001 100644
+--- a/apps/pfotentechnik/src/content/schema/page.ts
++++ b/apps/pfotentechnik/src/content/schema/page.ts
+@@ -124,5 +124,73 @@ const premiumBlockSchema =
+       .optional()
+   });
+ 
++const contentPlatformSchema =
++  z.object({
++    version: z.literal(2).default(2),
++    cluster: z.string(),
++    intent: z
++      .enum([
++        "informational",
++        "buying-guide",
++        "comparison-support",
++        "troubleshooting",
++        "how-to",
++        "health-guide"
++      ])
++      .default("informational"),
++    animal: z
++      .enum(["dog", "cat", "both"])
++      .optional(),
++    products: z.array(z.string()).default([]),
++    decision: z
++      .union([
++        z.literal("auto"),
++        z.literal("off"),
++        z.string()
++      ])
++      .default("auto"),
++    blocks: z
++      .array(
++        z.enum([
++          "summary",
++          "recommendation",
++          "comparison",
++          "fit",
++          "checklist",
++          "mistakes"
++        ])
++      )
++      .default([]),
++    summary: z.array(z.string()).default([]),
++    suitableFor: z.array(z.string()).default([]),
++    notSuitableFor: z.array(z.string()).default([]),
++    checklist: z.array(z.string()).default([]),
++    mistakes: z.array(z.string()).default([]),
++    faqMode: z
++      .enum(["manual", "none"])
++      .default("manual"),
++    cta: z
++      .object({
++        mode: z
++          .enum(["auto", "off"])
++          .default("auto"),
++        productKey: z.string().optional(),
++        title: z.string().optional(),
++        text: z.string().optional()
++      })
++      .optional(),
++    theme: z
++      .enum([
++        "teal",
++        "amber",
++        "blue",
++        "green",
++        "rose",
++        "neutral"
++      ])
++      .optional()
++  })
++  .optional();
++
+ export const createPageContentSchema = (image: ImageFunction) =>
+   baseContentSchema.extend({
+@@ -146,10 +238,14 @@ export const createPageContentSchema = (image: ImageFunction) =>
+     seoDescription:
+       z.string().optional(),
+ 
+-    category: z.string(),
++    category:
++      z.string().optional(),
+ 
+     categoryLabel:
+-      z.string(),
++      z.string().optional(),
++
++    contentPlatform:
++      contentPlatformSchema,
+ 
+     categoryPath:
+       z.string().optional(),
+diff --git a/apps/pfotentechnik/src/domain/contentPlatform/assembleContentPage.ts b/apps/pfotentechnik/src/domain/contentPlatform/assembleContentPage.ts
+new file mode 100644
+index 0000000..c200002
+--- /dev/null
++++ b/apps/pfotentechnik/src/domain/contentPlatform/assembleContentPage.ts
+@@ -0,0 +1,197 @@
++import type { PageContentData } from "../../content/schema/page";
++
++export type AutoContentBlock =
++  | "summary"
++  | "recommendation"
++  | "comparison"
++  | "fit"
++  | "checklist"
++  | "mistakes";
++
++export type AssembledClosingCta = {
++  title: string;
++  text: string;
++  productKey: string;
++  primaryLabel: string;
++  secondaryHref: string;
++  secondaryLabel: string;
++};
++
++export type AssembledContentPage = {
++  category: string;
++  categoryLabel: string;
++  categoryPath?: string;
++  themeColor:
++    | "teal"
++    | "amber"
++    | "blue"
++    | "green"
++    | "rose"
++    | "neutral";
++  decisionKey?: string;
++  comparisonProducts: string[];
++  blocks: AutoContentBlock[];
++  summary: string[];
++  suitableFor: string[];
++  notSuitableFor: string[];
++  checklist: string[];
++  mistakes: string[];
++  faq: NonNullable<PageContentData["faq"]>;
++  closingCta?: AssembledClosingCta;
++};
++
++const clusterDefaults: Record<
++  string,
++  { category: string; label: string; path?: string }
++> = {
++  "smart-feeders": {
++    category: "futterautomaten",
++    label: "Smarte Futterautomaten",
++    path: "/smarte-futterautomaten/"
++  },
++  "water-fountains": {
++    category: "trinkbrunnen",
++    label: "Trinkbrunnen",
++    path: "/trinkbrunnen/"
++  },
++  "dog-feeding": {
++    category: "hundeernaehrung",
++    label: "Hundeernährung",
++    path: "/hundeernaehrung/"
++  },
++  "cat-feeding": {
++    category: "katzenernaehrung",
++    label: "Katzenernährung",
++    path: "/katzenernaehrung/"
++  },
++  "dog-health": {
++    category: "hundegesundheit",
++    label: "Hundegesundheit"
++  },
++  "cat-health": {
++    category: "katzengesundheit",
++    label: "Katzengesundheit"
++  }
++};
++
++const intentBlocks: Record<string, AutoContentBlock[]> = {
++  informational: ["summary"],
++  "buying-guide": [
++    "summary",
++    "recommendation",
++    "comparison",
++    "fit",
++    "checklist",
++    "mistakes"
++  ],
++  "comparison-support": [
++    "summary",
++    "comparison",
++    "fit",
++    "checklist"
++  ],
++  troubleshooting: ["summary", "checklist", "mistakes"],
++  "how-to": ["summary", "checklist", "mistakes"],
++  "health-guide": ["summary", "checklist"]
++};
++
++const intentThemes: Record<
++  string,
++  AssembledContentPage["themeColor"]
++> = {
++  informational: "neutral",
++  "buying-guide": "teal",
++  "comparison-support": "blue",
++  troubleshooting: "amber",
++  "how-to": "green",
++  "health-guide": "rose"
++};
++
++const unique = (items: string[] = []) =>
++  items.filter(
++    (item, index, allItems) =>
++      Boolean(item) && allItems.indexOf(item) === index
++  );
++
++export const assembleContentPage = (
++  page: PageContentData
++): AssembledContentPage => {
++  const platform = page.contentPlatform;
++  const cluster = platform?.cluster ?? page.category ?? "wissen";
++  const intent = platform?.intent ?? "informational";
++  const clusterDefault = clusterDefaults[cluster];
++
++  const category =
++    page.category ?? clusterDefault?.category ?? cluster;
++  const categoryLabel =
++    page.categoryLabel ?? clusterDefault?.label ?? "Ratgeber";
++  const categoryPath =
++    page.categoryPath ?? clusterDefault?.path;
++
++  const platformProducts = platform?.products ?? [];
++  const comparisonProducts = unique(
++    page.comparisonProducts?.length
++      ? page.comparisonProducts
++      : platformProducts
++  );
++
++  const decisionSetting = platform?.decision ?? "auto";
++  const decisionKey =
++    decisionSetting === "off"
++      ? undefined
++      : decisionSetting !== "auto"
++        ? decisionSetting
++        : page.decisionKey;
++
++  const blocks = platform?.blocks?.length
++    ? platform.blocks
++    : intentBlocks[intent] ?? ["summary"];
++
++  const faq =
++    platform?.faqMode === "none"
++      ? []
++      : page.faq ?? [];
++
++  const ctaConfig = platform?.cta;
++  const ctaProductKey =
++    ctaConfig?.productKey ??
++    platformProducts[0] ??
++    comparisonProducts[0];
++
++  const closingCta =
++    page.closingCta ??
++    (ctaConfig?.mode !== "off" && ctaProductKey
++      ? {
++          title:
++            ctaConfig?.title ?? "Passendes Modell gefunden?",
++          text:
++            ctaConfig?.text ??
++            "Prüfe vor dem Kauf noch einmal Ausstattung, Preis und aktuelle Verfügbarkeit.",
++          productKey: ctaProductKey,
++          primaryLabel: "Preis und Verfügbarkeit prüfen",
++          secondaryHref: `/produkt/${ctaProductKey}/`,
++          secondaryLabel: "Produkttest lesen"
++        }
++      : undefined);
++
++  return {
++    category,
++    categoryLabel,
++    categoryPath,
++    themeColor:
++      page.themeColor ??
++      platform?.theme ??
++      intentThemes[intent] ??
++      "neutral",
++    decisionKey,
++    comparisonProducts,
++    blocks,
++    summary: platform?.summary ?? [],
++    suitableFor: platform?.suitableFor ?? [],
++    notSuitableFor: platform?.notSuitableFor ?? [],
++    checklist: platform?.checklist ?? [],
++    mistakes: platform?.mistakes ?? [],
++    faq,
++    closingCta
++  };
++};
+diff --git a/apps/pfotentechnik/src/domain/contentPlatform/index.ts b/apps/pfotentechnik/src/domain/contentPlatform/index.ts
+new file mode 100644
+index 0000000..c200003
+--- /dev/null
++++ b/apps/pfotentechnik/src/domain/contentPlatform/index.ts
+@@ -0,0 +1,1 @@
++export * from "./assembleContentPage";
+diff --git a/apps/pfotentechnik/src/components/AutoContentBlocks.astro b/apps/pfotentechnik/src/components/AutoContentBlocks.astro
+new file mode 100644
+index 0000000..c200004
+--- /dev/null
++++ b/apps/pfotentechnik/src/components/AutoContentBlocks.astro
+@@ -0,0 +1,180 @@
++---
++import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
++import type { CollectionEntry } from "astro:content";
++import type { AssembledContentPage } from "../domain/contentPlatform";
++
++interface Props {
++  page: AssembledContentPage;
++  products: CollectionEntry<"products">[];
++}
++
++const { page, products } = Astro.props as Props;
++const productBySlug = new Map(
++  products.map((product) => [product.data.slug, product])
++);
++const selectedProducts = page.comparisonProducts
++  .map((slug) => productBySlug.get(slug))
++  .filter(
++    (product): product is CollectionEntry<"products"> =>
++      Boolean(product)
++  );
++const hasBlock = (
++  block: AssembledContentPage["blocks"][number]
++) => page.blocks.includes(block);
++---
++
++{hasBlock("summary") && page.summary.length > 0 && (
++  <section class="cp-auto-block cp-auto-summary">
++    <header>
++      <span>Auf einen Blick</span>
++      <h2>Das Wichtigste in Kürze</h2>
++    </header>
++    <ul>{page.summary.map((item) => <li>{item}</li>)}</ul>
++  </section>
++)}
++
++{hasBlock("recommendation") && selectedProducts.length > 0 && (
++  <section class="cp-auto-block">
++    <header>
++      <span>Passende Modelle</span>
++      <h2>Redaktionell eingeordnete Empfehlungen</h2>
++      <p>
++        Die Auswahl stammt aus den hinterlegten Produktdaten.
++        Es werden keine Modelle allein durch Textgenerierung ergänzt.
++      </p>
++    </header>
++    <div class="cp-product-grid">
++      {selectedProducts.slice(0, 3).map((product) => (
++        <a class="cp-product-card" href={`/produkt/${product.data.slug}/`}>
++          <OptimizedImage
++            src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
++            alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}
++            width={480}
++            height={360}
++            layout="constrained"
++          />
++          <div>
++            <small>{product.data.manufacturer.name}</small>
++            <h3>{product.data.title}</h3>
++            <p>{product.data.recommendation}</p>
++            <strong>Produkttest lesen →</strong>
++          </div>
++        </a>
++      ))}
++    </div>
++  </section>
++)}
++
++{hasBlock("comparison") && selectedProducts.length > 1 && (
++  <section class="cp-auto-block">
++    <header>
++      <span>Direkter Überblick</span>
++      <h2>Empfehlungen kompakt vergleichen</h2>
++    </header>
++    <div class="cp-table-wrap">
++      <table>
++        <thead>
++          <tr>
++            <th>Modell</th>
++            <th>Bewertung</th>
++            <th>Geeignet für</th>
++            <th>Preisklasse</th>
++          </tr>
++        </thead>
++        <tbody>
++          {selectedProducts.map((product) => (
++            <tr>
++              <th><a href={`/produkt/${product.data.slug}/`}>{product.data.title}</a></th>
++              <td>{product.data.rating.toFixed(1).replace(".", ",")} / 5</td>
++              <td>{product.data.decision.bestFor[0] ?? product.data.useCase ?? "siehe Produkttest"}</td>
++              <td>{product.data.priceCategory ?? "nicht eingeordnet"}</td>
++            </tr>
++          ))}
++        </tbody>
++      </table>
++    </div>
++  </section>
++)}
++
++{hasBlock("fit") && (page.suitableFor.length > 0 || page.notSuitableFor.length > 0) && (
++  <section class="cp-auto-block">
++    <header>
++      <span>Einordnung</span>
++      <h2>Passt diese Auswahl zu dir?</h2>
++    </header>
++    <div class="cp-fit-grid">
++      {page.suitableFor.length > 0 && (
++        <article>
++          <h3>Geeignet für</h3>
++          <ul>{page.suitableFor.map((item) => <li>{item}</li>)}</ul>
++        </article>
++      )}
++      {page.notSuitableFor.length > 0 && (
++        <article>
++          <h3>Eher nicht geeignet für</h3>
++          <ul>{page.notSuitableFor.map((item) => <li>{item}</li>)}</ul>
++        </article>
++      )}
++    </div>
++  </section>
++)}
++
++{hasBlock("checklist") && page.checklist.length > 0 && (
++  <section class="cp-auto-block cp-auto-list">
++    <header><span>Prüfen</span><h2>Kurze Checkliste</h2></header>
++    <ol>{page.checklist.map((item) => <li>{item}</li>)}</ol>
++  </section>
++)}
++
++{hasBlock("mistakes") && page.mistakes.length > 0 && (
++  <section class="cp-auto-block cp-auto-list">
++    <header><span>Vermeiden</span><h2>Typische Fehler</h2></header>
++    <ul>{page.mistakes.map((item) => <li>{item}</li>)}</ul>
++  </section>
++)}
++
++<style>
++  .cp-auto-block { margin: 52px 0; }
++  .cp-auto-block > header { max-width: 780px; margin-bottom: 22px; }
++  .cp-auto-block > header > span {
++    display: block; margin-bottom: 7px; color: #2e7d32;
++    font-size: .78rem; font-weight: 800; letter-spacing: .08em;
++    text-transform: uppercase;
++  }
++  .cp-auto-block h2 {
++    margin: 0 0 10px; font-size: clamp(1.65rem, 3vw, 2.35rem);
++    line-height: 1.12;
++  }
++  .cp-auto-block header p { margin: 0; color: #475569; line-height: 1.65; }
++  .cp-auto-summary, .cp-auto-list {
++    padding: clamp(22px, 4vw, 34px); border: 1px solid rgba(15,23,42,.1);
++    border-radius: 24px; background: #f8fafc;
++  }
++  .cp-auto-block ul, .cp-auto-block ol { margin: 0; padding-left: 1.25rem; }
++  .cp-auto-block li + li { margin-top: 10px; }
++  .cp-product-grid, .cp-fit-grid {
++    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
++    gap: 16px;
++  }
++  .cp-product-card, .cp-fit-grid article {
++    border: 1px solid rgba(15,23,42,.1); border-radius: 20px;
++    background: #fff; overflow: hidden;
++  }
++  .cp-product-card { color: inherit; text-decoration: none; }
++  .cp-product-card > div, .cp-fit-grid article { padding: 20px; }
++  .cp-product-card h3, .cp-fit-grid h3 { margin: 5px 0 10px; }
++  .cp-product-card p { color: #475569; line-height: 1.55; }
++  .cp-product-card strong { color: #2e7d32; }
++  .cp-table-wrap {
++    overflow-x: auto; border: 1px solid rgba(15,23,42,.1);
++    border-radius: 20px;
++  }
++  .cp-table-wrap table {
++    width: 100%; min-width: 680px; border-collapse: collapse; background: #fff;
++  }
++  .cp-table-wrap th, .cp-table-wrap td {
++    padding: 15px 16px; border-bottom: 1px solid rgba(15,23,42,.08);
++    text-align: left; vertical-align: top;
++  }
++  .cp-table-wrap thead th { background: #f8fafc; font-size: .82rem; color: #475569; }
++</style>
+diff --git a/apps/pfotentechnik/src/pages/[slug].astro b/apps/pfotentechnik/src/pages/[slug].astro
+index cf40004..c200005 100644
+--- a/apps/pfotentechnik/src/pages/[slug].astro
++++ b/apps/pfotentechnik/src/pages/[slug].astro
+@@ -15,5 +15,7 @@ import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+ import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+ import { addAmazonTrackingId } from "@affiliate-core/affiliate";
+ import HealthBridge from "../components/HealthBridge.astro";
++import AutoContentBlocks from "../components/AutoContentBlocks.astro";
+ import ConversionJourney from "../components/ConversionJourney.astro";
+ import { projectConfig, siteMeta } from "../project.config";
++import { assembleContentPage } from "../domain/contentPlatform";
+@@ -61,3 +63,4 @@ const internalLinkDefinitions = getInternalLinkDefinitions({
+ });
+ const sourceContexts = getSourceContexts(page.data);
++const assembledPage = assembleContentPage(page.data);
+ const productBySlug = new Map(
+@@ -108,8 +111,8 @@ const optimizedOgImage = await getImage({
+ });
+-const decisionRecommendations = page.data.decisionKey
+-  ? getDecisionProductRecommendations(page.data.decisionKey, products)
++const decisionRecommendations = assembledPage.decisionKey
++  ? getDecisionProductRecommendations(assembledPage.decisionKey, products)
+   : [];
+ 
+-const decisionRule = page.data.decisionKey
+-  ? getDecisionRule(page.data.decisionKey)
++const decisionRule = assembledPage.decisionKey
++  ? getDecisionRule(assembledPage.decisionKey)
+   : undefined;
+@@ -129,9 +132,9 @@ const decisionIntro =
+   page.data.decisionIntro ??
+   "Basierend auf unseren Bewertungskriterien ist dies aktuell die passendste Empfehlung für diesen Anwendungsfall.";
+-const decisionThemeColor = page.data.themeColor ?? "teal";
++const decisionThemeColor = assembledPage.themeColor;
+ const comparisonProducts =
+   decisionProducts.length > 0
+     ? decisionProducts
+-    : (page.data.comparisonProducts ?? []).filter((key) =>
++    : assembledPage.comparisonProducts.filter((key) =>
+         productBySlug.has(key),
+       );
+@@ -157,5 +160,5 @@ const comparisonProductEntries = comparisonProducts
+   .map((slug) => productBySlug.get(slug))
+   .filter((product): product is (typeof products)[number] => Boolean(product));
+-const closingProduct = page.data.closingCta
+-  ? productBySlug.get(page.data.closingCta.productKey)
++const closingProduct = assembledPage.closingCta
++  ? productBySlug.get(assembledPage.closingCta.productKey)
+   : undefined;
+@@ -218,9 +221,9 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+   noindex={page.data.seo?.noindex ?? false}
+   ogImage={optimizedOgImage.src}
+-  faq={page.data.faq}
++  faq={assembledPage.faq}
+   author={author}
+   publishedAt={publishedAt}
+   updatedAt={updatedAt}
+-  categoryLabel={page.data.categoryLabel}
++  categoryLabel={assembledPage.categoryLabel}
+   breadcrumbs={breadcrumbs}
+ >
+@@ -230,3 +233,3 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+ 
+   <header class="article-header">
+-    <span class="article-category">{page.data.categoryLabel}</span>
++    <span class="article-category">{assembledPage.categoryLabel}</span>
+@@ -252,2 +255,8 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+   <article class="article">
+     <TableOfContents headings={headings} />
++
++    <AutoContentBlocks
++      page={assembledPage}
++      products={products}
++    />
++
+@@ -480,8 +488,8 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+     }
+     {
+-      page.data.closingCta && closingProduct && (
++      assembledPage.closingCta && closingProduct && (
+         <section class="pt-money-cta" aria-labelledby="pt-money-cta-title">
+           <div>
+             <span>{closingProduct.data.manufacturer.name}</span>
+-            <h2 id="pt-money-cta-title">{page.data.closingCta.title}</h2>
+-            <p>{page.data.closingCta.text}</p>
++            <h2 id="pt-money-cta-title">{assembledPage.closingCta.title}</h2>
++            <p>{assembledPage.closingCta.text}</p>
+@@ -500,11 +508,11 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+                   target={closingProduct.data.affiliate.target}
+                 >
+-                  {page.data.closingCta.primaryLabel}
++                  {assembledPage.closingCta.primaryLabel}
+                 </a>
+               )}
+               <a
+                 class="pt-money-cta-secondary"
+-                href={page.data.closingCta.secondaryHref}
++                href={assembledPage.closingCta.secondaryHref}
+               >
+-                {page.data.closingCta.secondaryLabel}
++                {assembledPage.closingCta.secondaryLabel}
+               </a>
+@@ -520,3 +528,3 @@ const readingTimeMinutes = getReadingTimeMinutes(page.body ?? "");
+       )
+     }
+-    <FAQ items={page.data.faq} />
++    <FAQ items={assembledPage.faq} />
+diff --git a/docs/CONTENT_PLATFORM_2.md b/docs/CONTENT_PLATFORM_2.md
+new file mode 100644
+index 0000000..c200006
+--- /dev/null
++++ b/docs/CONTENT_PLATFORM_2.md
+@@ -0,0 +1,96 @@
++# PfotenTechnik Content Platform 2.0
++
++Die Plattform reduziert wiederkehrendes Frontmatter, ohne fachliche Inhalte
++automatisch zu erfinden.
++
++## Kompaktes Frontmatter
++
++```yaml
++contentPlatform:
++  version: 2
++  cluster: smart-feeders
++  intent: buying-guide
++  animal: cat
++  products:
++    - surefeed-microchip-pet-feeder
++    - petlibro-granary-camera-feeder
++  summary:
++    - Zugangskontrolle verhindert Futterdiebstahl.
++    - Zwei offene Näpfe lösen Futterneid nicht automatisch.
++  suitableFor:
++    - Haushalte mit unterschiedlichen Futtermengen
++  notSuitableFor:
++    - vollständig unbeaufsichtigte Langzeitversorgung
++  checklist:
++    - Zugang je Tier prüfen
++    - Notstrom und Offline-Verhalten testen
++  mistakes:
++    - Nur nach Behältergröße auswählen
++```
++
++## Automatische Standardwerte
++
++Aus `cluster` werden Kategorie, sichtbares Label und Kategoriepfad abgeleitet.
++Aus `intent` werden Theme und Blockreihenfolge abgeleitet.
++Aus `products` entstehen Empfehlungskarten, Vergleichstabelle und Standard-CTA.
++
++## Cluster
++
++- `smart-feeders`
++- `water-fountains`
++- `dog-feeding`
++- `cat-feeding`
++- `dog-health`
++- `cat-health`
++
++## Intents
++
++- `informational`
++- `buying-guide`
++- `comparison-support`
++- `troubleshooting`
++- `how-to`
++- `health-guide`
++
++## Blocks
++
++- `summary`
++- `recommendation`
++- `comparison`
++- `fit`
++- `checklist`
++- `mistakes`
++
++Ein Block erscheint nur, wenn die benötigten Daten vorhanden sind.
++
++## Abwärtskompatibilität
++
++Bestehende Felder bleiben gültig und haben Vorrang:
++
++- `category`
++- `categoryLabel`
++- `categoryPath`
++- `decisionKey`
++- `comparisonProducts`
++- `themeColor`
++- `closingCta`
++- `faq`
++
++## FAQ
++
++Die Plattform generiert keine fachlichen Antworten. Bestehende FAQ bleiben
++erhalten. Mit `faqMode: none` lassen sie sich deaktivieren.
++
++## CTA
++
++Bei hinterlegten Produkten wird ein zurückhaltender Abschluss-CTA erzeugt.
++Mit `cta.mode: off` wird er deaktiviert. Bestehende `closingCta`-Daten gewinnen.
++
++## Migration
++
++1. `contentPlatform` ergänzen.
++2. Build ausführen.
++3. Seite visuell prüfen.
++4. Redundante alte Felder erst danach entfernen.
++
++Eine sofortige Massenmigration ist nicht erforderlich.

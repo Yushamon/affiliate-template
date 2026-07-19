@@ -3,6 +3,7 @@ import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
 import "../styles/pfotentechnik.css";
 import "../styles/pfotentechnik-brand-system.css";
 import { getNavigationItems } from "@app/domain/content";
+import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
 
 const props = Astro.props;
 const headerLinks = await getNavigationItems();
@@ -21,4 +22,5 @@ const canonical =
   headerLinks={headerLinks}
 >
   <slot />
+  <ImageLightbox />
 </AffiliateLayout>
