@@ -4,7 +4,7 @@ slug: "xiaomi"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
+description: "Xiaomi Smart Pet im Überblick: Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile und Alternativen."
 key: "xiaomi"
 name: "Xiaomi"
 recommendation: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "Xiaomi"
-  description: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
+  description: "Xiaomi Smart Pet: Futterautomaten, Trinkbrunnen, App, Filter und Alternativen."
   icon: "🏭"
   order: 40
   featured: false
 seo:
   title: "Xiaomi Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
+  description: "Xiaomi Smart Pet im Überblick: Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile und Alternativen."
   canonical: "/hersteller/xiaomi/"
   noindex: false
   sitemap: true

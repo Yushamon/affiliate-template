@@ -5,7 +5,7 @@ type: "product"
 layout: "product"
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen."
+description: "PETLIBRO Air WiFi Feeder im Datencheck: 2-Liter-Behälter, App-Steuerung, Portionierung, Reinigung und Eignung für Katzen."
 recommendation: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen."
 manufacturer:
   key: "petlibro"
@@ -22,7 +22,7 @@ author:
   name: "PfotenTechnik Redaktion"
 seo:
   title: "PETLIBRO Air WiFi Feeder Test"
-  description: "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen."
+  description: "PETLIBRO Air WiFi Feeder im Datencheck: 2-Liter-Behälter, App-Steuerung, Portionierung, Reinigung und Eignung für Katzen."
   canonical: "/produkt/petlibro-air-wifi-feeder/"
   sitemap: true
   priority: 0.9

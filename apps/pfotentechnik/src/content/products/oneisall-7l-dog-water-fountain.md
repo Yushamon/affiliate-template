@@ -5,14 +5,14 @@ type: product
 layout: product
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Großer 7-Liter-Edelstahl-Trinkbrunnen für Hunde und Haushalte mit hohem Wasserbedarf."
+description: "oneisall 7L Hundetrinkbrunnen im Datencheck: Edelstahl, Kapazität, Lautstärke, Filter, Reinigung und Eignung für große Hunde."
 recommendation: "Preisbewusste Alternative für größere Hunde, wenn ein breiter Napf und viel Volumen benötigt werden."
 manufacturer: { key: oneisall, name: oneisall, slug: oneisall }
 category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author: { name: PfotenTechnik Redaktion }
-seo: { title: "oneisall 7L Hundetrinkbrunnen im Check", description: "7-Liter-Edelstahlbrunnen für Hunde: Kapazität, Lautstärke und Reinigung.", canonical: "/produkt/oneisall-7l-dog-water-fountain/", sitemap: true, priority: 0.8 }
+seo: { title: "oneisall 7L Hundetrinkbrunnen im Check", description: "oneisall 7L Hundetrinkbrunnen im Datencheck: Edelstahl, Kapazität, Lautstärke, Filter, Reinigung und Eignung für große Hunde.", canonical: "/produkt/oneisall-7l-dog-water-fountain/", sitemap: true, priority: 0.8 }
 hub: { sections: [produkte, trinkbrunnen] }
 tags: [trinkbrunnen, hunde, grosse-hunde, edelstahl, grosser-tank]
 images:

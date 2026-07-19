@@ -4,7 +4,7 @@ slug: "honeyguardian"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag."
+description: "HoneyGuardian im Überblick: Futterautomaten mit Timer oder WLAN, Zielgruppen, App, Ersatzteile, Garantie sowie Stärken und Schwächen."
 key: "honeyguardian"
 name: "HoneyGuardian"
 recommendation: "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "HoneyGuardian"
-  description: "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag."
+  description: "HoneyGuardian: Futterautomaten mit Timer oder WLAN, App, Ersatzteile und Alternativen."
   icon: "🏭"
   order: 60
   featured: false
 seo:
   title: "HoneyGuardian Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag."
+  description: "HoneyGuardian im Überblick: Futterautomaten mit Timer oder WLAN, Zielgruppen, App, Ersatzteile, Garantie sowie Stärken und Schwächen."
   canonical: "/hersteller/honeyguardian/"
   noindex: false
   sitemap: true

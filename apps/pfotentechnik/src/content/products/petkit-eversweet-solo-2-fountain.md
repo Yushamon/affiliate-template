@@ -5,14 +5,14 @@ type: product
 layout: product
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Leiser 2-Liter-Trinkbrunnen mit kabelloser Pumpeneinheit und Bluetooth-App."
+description: "PETKIT Eversweet Solo 2 im Datencheck: 2-Liter-Tank, kabellose Pumpe, Lautstärke, Filter, Reinigung und Bluetooth-App."
 recommendation: "Ausgewogene Mittelklasse für Katzenhalter, die eine leise Pumpe und einfache Statushinweise suchen."
 manufacturer: { key: petkit, name: PETKIT, slug: petkit }
 category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author: { name: PfotenTechnik Redaktion }
-seo: { title: "PETKIT Eversweet Solo 2 im Check", description: "PETKIT Eversweet Solo 2: Lautstärke, Reinigung, App und Alternativen.", canonical: "/produkt/petkit-eversweet-solo-2-fountain/", sitemap: true, priority: 0.75 }
+seo: { title: "PETKIT Eversweet Solo 2 im Check", description: "PETKIT Eversweet Solo 2 im Datencheck: 2-Liter-Tank, kabellose Pumpe, Lautstärke, Filter, Reinigung und Bluetooth-App.", canonical: "/produkt/petkit-eversweet-solo-2-fountain/", sitemap: true, priority: 0.75 }
 hub: { sections: [produkte, trinkbrunnen] }
 tags: [trinkbrunnen, katzen, leise, bluetooth, mittelklasse]
 images:

@@ -5,7 +5,7 @@ type: "product"
 layout: "product"
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird."
+description: "PETLIBRO Air Automatic Feeder im Datencheck: kompakter Trockenfutterautomat mit Zeitsteuerung, Portionierung und Batterieoption ohne App."
 recommendation: "Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird."
 manufacturer:
   key: "petlibro"
@@ -22,7 +22,7 @@ author:
   name: "PfotenTechnik Redaktion"
 seo:
   title: "PETLIBRO Air Automatic Feeder Test"
-  description: "Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird."
+  description: "PETLIBRO Air Automatic Feeder im Datencheck: kompakter Trockenfutterautomat mit Zeitsteuerung, Portionierung und Batterieoption ohne App."
   canonical: "/produkt/petlibro-air-automatic-feeder/"
   sitemap: true
   priority: 0.9

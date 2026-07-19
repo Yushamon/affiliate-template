@@ -7,7 +7,7 @@ layout: product
 testStatus: "editorial-review"
 productStatus: "unknown"
 
-description: "Smarter Futterautomat mit Kamera und App-Steuerung für Katzen und kleine Hunde."
+description: "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde."
 
 recommendation: "Premium-Futterautomat mit Kamera für Nutzer, die ihre Fütterung flexibel aus der Ferne steuern möchten."
 
@@ -29,7 +29,7 @@ author:
 
 seo:
   title: "PETKIT YumShare Solo 2 Test"
-  description: "Bewertung, Erfahrungen, Alternativen und Praxiseinschätzung."
+  description: "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde."
   canonical: "/produkt/petkit-yumshare-solo-2/"
   sitemap: true
   priority: 0.9

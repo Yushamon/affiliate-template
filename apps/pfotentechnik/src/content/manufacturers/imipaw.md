@@ -4,7 +4,7 @@ slug: "imipaw"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
+description: "IMIPAW im Überblick: einfache Futterautomaten für den Einstieg, Zielgruppen, Funktionen, Ersatzteile, Garantie und passende Alternativen."
 key: "imipaw"
 name: "IMIPAW"
 recommendation: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "IMIPAW"
-  description: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
+  description: "IMIPAW: einfache Futterautomaten, Zielgruppen, Ersatzteile und Alternativen."
   icon: "🏭"
   order: 90
   featured: false
 seo:
   title: "IMIPAW Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
+  description: "IMIPAW im Überblick: einfache Futterautomaten für den Einstieg, Zielgruppen, Funktionen, Ersatzteile, Garantie und passende Alternativen."
   canonical: "/hersteller/imipaw/"
   noindex: false
   sitemap: true

@@ -4,7 +4,7 @@ slug: "wopet"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment."
+description: "WOPET im Überblick: Futterautomaten ohne WLAN sowie Modelle mit App und Kamera, Zielgruppen, Ersatzteile, Garantie und Alternativen."
 key: "wopet"
 name: "WOPET"
 recommendation: "WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "WOPET"
-  description: "WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment."
+  description: "WOPET: Futterautomaten ohne WLAN oder mit App und Kamera sowie Alternativen."
   icon: "🏭"
   order: 70
   featured: false
 seo:
   title: "WOPET Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment."
+  description: "WOPET im Überblick: Futterautomaten ohne WLAN sowie Modelle mit App und Kamera, Zielgruppen, Ersatzteile, Garantie und Alternativen."
   canonical: "/hersteller/wopet/"
   noindex: false
   sitemap: true

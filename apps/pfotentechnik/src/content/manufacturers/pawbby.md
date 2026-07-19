@@ -4,7 +4,7 @@ slug: "pawbby"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden."
+description: "PAWBBY im Überblick: smarte Haustiertechnik im Xiaomi-Umfeld, Zielgruppen, App-Ökosystem, Ersatzteile, Garantie und Alternativen."
 key: "pawbby"
 name: "PAWBBY"
 recommendation: "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "PAWBBY"
-  description: "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden."
+  description: "PAWBBY: smarte Haustiertechnik, App-Ökosystem, Ersatzteile und Alternativen."
   icon: "🏭"
   order: 100
   featured: false
 seo:
   title: "PAWBBY Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden."
+  description: "PAWBBY im Überblick: smarte Haustiertechnik im Xiaomi-Umfeld, Zielgruppen, App-Ökosystem, Ersatzteile, Garantie und Alternativen."
   canonical: "/hersteller/pawbby/"
   noindex: false
   sitemap: true

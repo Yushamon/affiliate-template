@@ -5,7 +5,7 @@ type: "product"
 layout: "product"
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Der PETLIBRO Space Smart Feeder verbindet modernes Design mit App-Steuerung und automatischer Trockenfutterausgabe. Er eignet sich besonders für Katzen und kleine Hunde in modernen Haushalten."
+description: "PETLIBRO Space Smart Feeder im Datencheck: App-Steuerung, Trockenfutterausgabe, Portionierung, Reinigung und Eignung für kleine Tiere."
 recommendation: "Der PETLIBRO Space Smart Feeder verbindet modernes Design mit App-Steuerung und automatischer Trockenfutterausgabe. Er eignet sich besonders für Katzen und kleine Hunde in modernen Haushalten."
 manufacturer:
   key: "petlibro"
@@ -22,7 +22,7 @@ author:
   name: "PfotenTechnik Redaktion"
 seo:
   title: "PETLIBRO Space Smart Feeder Test"
-  description: "Der PETLIBRO Space Smart Feeder verbindet modernes Design mit App-Steuerung und automatischer Trockenfutterausgabe. Er eignet sich besonders für Katzen und kleine Hunde in modernen Haushalten."
+  description: "PETLIBRO Space Smart Feeder im Datencheck: App-Steuerung, Trockenfutterausgabe, Portionierung, Reinigung und Eignung für kleine Tiere."
   canonical: "/produkt/petlibro-space-smart-feeder/"
   sitemap: true
   priority: 0.9

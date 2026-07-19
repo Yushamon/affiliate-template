@@ -4,7 +4,7 @@ slug: "cat-mate"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
+description: "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen."
 key: "cat-mate"
 name: "Cat Mate"
 recommendation: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "Cat Mate"
-  description: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
+  description: "Cat Mate im Überblick: Futterautomaten, Zielgruppen, Ersatzteile und Alternativen."
   icon: "🏭"
   order: 30
   featured: false
 seo:
   title: "Cat Mate Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
+  description: "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen."
   canonical: "/hersteller/cat-mate/"
   noindex: false
   sitemap: true

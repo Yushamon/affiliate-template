@@ -4,7 +4,7 @@ slug: "petkit"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
+description: "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen."
 key: "petkit"
 name: "PETKIT"
 recommendation: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "PETKIT"
-  description: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
+  description: "PETKIT: smarte Futterautomaten, Trinkbrunnen, App, Filter und Alternativen."
   icon: "🏭"
   order: 20
   featured: false
 seo:
   title: "PETKIT Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
+  description: "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen."
   canonical: "/hersteller/petkit/"
   noindex: false
   sitemap: true

@@ -5,7 +5,7 @@ type: "product"
 layout: "product"
 testStatus: "editorial-review"
 productStatus: "unknown"
-description: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
+description: "IMIPAW 3L Futterautomat im Datencheck: lokale Zeitsteuerung, Portionierung, Batterieoption, Reinigung und Eignung für Katzen."
 recommendation: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
 manufacturer:
   key: "imipaw"
@@ -22,7 +22,7 @@ author:
   name: "PfotenTechnik Redaktion"
 seo:
   title: "IMIPAW 3L Automatic Cat Feeder Test"
-  description: "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption."
+  description: "IMIPAW 3L Futterautomat im Datencheck: lokale Zeitsteuerung, Portionierung, Batterieoption, Reinigung und Eignung für Katzen."
   canonical: "/produkt/imipaw-3l-automatic-cat-feeder/"
   sitemap: true
   priority: 0.9

@@ -4,7 +4,7 @@ slug: "oneisall"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen."
+description: "oneisall im Überblick: Futterautomaten und Trinkbrunnen für Hunde und Katzen, Zielgruppen, Ersatzteile, Garantie und Alternativen."
 key: "oneisall"
 name: "oneisall"
 recommendation: "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen."
@@ -22,13 +22,13 @@ hub:
   sections:
     - "hersteller"
   title: "oneisall"
-  description: "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen."
+  description: "oneisall: Futterautomaten, Trinkbrunnen, Zielgruppen, Ersatzteile und Alternativen."
   icon: "🏭"
   order: 80
   featured: false
 seo:
   title: "oneisall Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen."
+  description: "oneisall im Überblick: Futterautomaten und Trinkbrunnen für Hunde und Katzen, Zielgruppen, Ersatzteile, Garantie und Alternativen."
   canonical: "/hersteller/oneisall/"
   noindex: false
   sitemap: true
