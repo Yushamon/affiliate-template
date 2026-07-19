@@ -109,7 +109,7 @@ specs:
     value: "1 bis 6 pro Tag"
   - label: "Portionierung"
     value: "1 bis 24 Portionen pro Mahlzeit"
-  - label: "Näpfe"
+  - label: "Napf"
     value: "Zwei Edelstahl-Näpfe"
   - label: "Stromversorgung"
     value: "USB-Netzteil oder 3 D-Batterien"
