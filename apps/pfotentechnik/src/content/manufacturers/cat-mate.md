@@ -10,7 +10,7 @@ name: "Cat Mate"
 recommendation: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
 summary: "Cat Mate wird von vielen Käufern für seine einfache Bedienung und hohe Zuverlässigkeit gelobt. Die Produkte funktionieren meist viele Jahre problemlos. Kritik richtet sich vor allem gegen den fehlenden Smart-Funktionsumfang."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -76,8 +76,23 @@ weaknesses:
   - "Keine Kamera"
   - "Keine Smart-Home-Funktionen"
   - "Weniger Innovation als moderne Wettbewerber"
-productSlugs: []
-featuredProductSlugs: []
+productSlugs:
+  - "cat-mate-c200"
+  - "cat-mate-c300"
+  - "cat-mate-c500"
+  - "cat-mate-335-pet-fountain"
+  - "cat-mate-shell-fountain"
+profile:
+  company: "Cat Mate gehört zu Closer Pets. Die Marke konzentriert sich auf Fütterungs-, Trink- und Zugangslösungen für Katzen und kleinere Hunde; viele Geräte sind bewusst ohne Cloud-Zwang ausgelegt."
+  appEcosystem: "Die hier eingeordneten Futterautomaten arbeiten überwiegend lokal. Vernetzte Closer-Pets-Produkte existieren, bilden aber kein einheitliches App-Ökosystem für das gesamte Cat-Mate-Sortiment."
+  replacementParts: "Closer Pets führt einen eigenen Ersatzteilbereich mit Näpfen, Deckeln, Kühlakkus, Pumpen und Netzteilen. Die Kompatibilität muss anhand der Modellbezeichnung geprüft werden."
+  filterSupply: "Für Cat-Mate-Trinkbrunnen sind modellbezogene Polymer-Kohle- und Mehrstufenfilter erhältlich. Closer Pets empfiehlt bei den entsprechenden Filtern mindestens einen monatlichen Wechsel."
+  warranty: "Closer Pets nennt für Hauptprodukte bis zu drei Jahre Garantie; je nach Region und Bedingungen kann dafür eine Registrierung innerhalb von 14 Tagen erforderlich sein. Pumpen, Netzteile und Zubehör haben abweichende Fristen."
+  competitorComparison: "Cat Mate ist besonders stark bei einfacher Offline-Bedienung und zeitgesteuertem Nassfutter. PETLIBRO und PETKIT bieten mehr App- und Kamerafunktionen, SureFeed den gezielteren Zugang per Mikrochip."
+featuredProductSlugs:
+  - "cat-mate-c500"
+  - "cat-mate-c300"
+  - "cat-mate-shell-fountain"
 series:
   - key: "c200"
     name: "C200"
@@ -116,12 +131,12 @@ alternativeManufacturerSlugs:
   - "surefeed"
   - "petkit"
 sources:
-  - label: "Closer Pets"
-    url: "https://closerpets.com"
-  - label: "Closer Pets Support"
-    url: "https://support.closerpets.com"
-  - label: "Trustpilot"
-    url: "https://www.trustpilot.com"
+  - label: "Closer Pets Ersatzteile und Zubehör"
+    url: "https://closerpets.com/collections/accessories-spares"
+  - label: "Closer Pets Garantiebedingungen"
+    url: "https://closerpets.com/pages/terms-conditions"
+  - label: "Closer Pets Lieferung und Rückgabe"
+    url: "https://closerpets.com/pages/delivery-returns"
 faq:
   - question: "Ist Cat Mate eine gute Marke?"
     answer: "Ja. Cat Mate gehört seit vielen Jahren zu den etablierten Herstellern einfacher und zuverlässiger Futterautomaten."

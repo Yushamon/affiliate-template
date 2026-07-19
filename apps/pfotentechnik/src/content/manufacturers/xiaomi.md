@@ -10,7 +10,7 @@ name: "Xiaomi"
 recommendation: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
 summary: "Der Xiaomi Smart Pet Feeder wird häufig für seine Verarbeitung, den leisen Betrieb und die Integration in die Mi Home App gelobt. Kritik betrifft vor allem die geringe Produktauswahl und regionale Unterschiede einzelner App-Funktionen."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -75,8 +75,17 @@ weaknesses:
   - "Weniger Speziallösungen als Petlibro oder PETKIT"
 productSlugs:
   - "xiaomi-smart-pet-food-feeder-2"
+  - "xiaomi-smart-pet-fountain-2"
+profile:
+  company: "Xiaomi integriert Futterautomaten und Trinkbrunnen in sein breites Smart-Home-Portfolio. Die Haustiertechnik ist kleiner als bei spezialisierten Marken, profitiert aber von etablierter Hardware- und App-Infrastruktur."
+  appEcosystem: "Kompatible Geräte werden in Xiaomi Home verwaltet. Das ist besonders praktisch für bestehende Xiaomi-Haushalte; spezialisierte Tierprofile und Produktvielfalt sind bei PETKIT oder PETLIBRO umfangreicher."
+  replacementParts: "Xiaomi dokumentiert Verbrauchsteile und einzelne Zubehörprodukte modellbezogen. Für Pumpen oder mechanische Ersatzteile ist die Verfügbarkeit stärker von Region und Händler abhängig."
+  filterSupply: "Original-Filtersets sind für die Smart-Pet-Fountain-Modelle erhältlich. Filterform und Generation müssen exakt zum Brunnen passen; die App beziehungsweise Produktanleitung erinnert an Wartung und Wechsel."
+  warranty: "Xiaomi-Garantieleistungen richten sich nach Produkt, Kaufland und Vertriebsweg. Eine pauschale, für alle Haustiergeräte in Deutschland identische Zusatzgarantie ist auf den Produktseiten nicht ausgewiesen; Kaufbeleg und Händlerbedingungen sind maßgeblich."
+  competitorComparison: "Xiaomi ist besonders attraktiv für ein bestehendes Xiaomi-Home-Setup. PETKIT und PETLIBRO bieten mehr spezialisierte Haustiergeräte und Auswertungen, Oneisall eine größere Auswahl an Akku-Trinkbrunnen."
 featuredProductSlugs:
   - "xiaomi-smart-pet-food-feeder-2"
+  - "xiaomi-smart-pet-fountain-2"
 series:
   - key: "smart-pet-feeder"
     name: "Smart Pet Feeder"
@@ -102,12 +111,12 @@ alternativeManufacturerSlugs:
   - "petkit"
   - "wopet"
 sources:
-  - label: "Xiaomi Global"
-    url: "https://www.mi.com"
-  - label: "Mi Home"
-    url: "https://home.mi.com"
-  - label: "Amazon Kundenbewertungen"
-    url: "https://www.amazon.de"
+  - label: "Xiaomi Smart Pet Fountain Filter"
+    url: "https://www.mi.com/global/product/xiaomi-smart-pet-fountain-filter/"
+  - label: "Xiaomi Smart Pet Fountain 2 FAQ"
+    url: "https://www.mi.com/global/support/faq/details/KA-501444/"
+  - label: "Xiaomi Deutschland Gewährleistung"
+    url: "https://www.mi.com/de/support/warranty/"
 faq:
   - question: "Ist Xiaomi eine gute Marke für Futterautomaten?"
     answer: "Ja. Xiaomi bietet hochwertige Smart-Futterautomaten mit sehr guter Integration in die Mi Home App und einem attraktiven Preis-Leistungs-Verhältnis."

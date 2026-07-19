@@ -10,7 +10,7 @@ name: "IMIPAW"
 recommendation: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
 summary: "IMIPAW wird häufig als unkomplizierte und preiswerte Lösung beschrieben. Käufer loben insbesondere die einfache Einrichtung und die zuverlässige Portionierung. Kritik richtet sich hauptsächlich gegen den geringeren Funktionsumfang im Vergleich zu Premium-Herstellern."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -73,6 +73,13 @@ weaknesses:
   - "Kaum Speziallösungen"
 productSlugs:
   - "imipaw-3l-automatic-cat-feeder"
+profile:
+  company: "IMIPAW bietet kompakte automatische Futterautomaten mit lokaler Zeitplanung sowie einzelne WLAN-Varianten. Die öffentlich zugängliche Herstellerdokumentation und das Sortiment sind vergleichsweise überschaubar."
+  appEcosystem: "App-Funktionen sind auf ausgewählte WLAN-Modelle beschränkt; Offline-Geräte werden direkt am Automaten programmiert. Ein breites Ökosystem über Fütterung und Wasseraufnahme hinweg ist nicht dokumentiert."
+  replacementParts: "Ein vollständiger öffentlicher Ersatzteilshop ist nicht ausgewiesen. Verfügbarkeit von Näpfen, Netzteilen und Dosierkomponenten sollte vor dem Kauf beim Support erfragt werden."
+  filterSupply: "IMIPAW ist in dieser Datenbasis mit Futterautomaten vertreten; Wasserfilter werden dafür nicht benötigt."
+  warranty: "Die veröffentlichten Garantieangaben nennen zwölf Monate für die dokumentierten Futterautomaten. Für Käufe in Deutschland gelten zusätzlich die gesetzlichen Rechte gegenüber dem Verkäufer."
+  competitorComparison: "IMIPAW eignet sich für einfache, preisbewusste Zeitfütterung. PETLIBRO und PETKIT bieten ein breiteres App- und Zubehörsystem, Cat Mate die etabliertere Offline-Alternative."
 featuredProductSlugs:
   - "imipaw-3l-automatic-cat-feeder"
 series:
@@ -101,8 +108,8 @@ alternativeManufacturerSlugs:
 sources:
   - label: "IMIPAW"
     url: "https://imipaw.com"
-  - label: "Amazon Kundenbewertungen"
-    url: "https://www.amazon.de"
+  - label: "IMIPAW Garantie"
+    url: "https://imipaw.org/warranty/"
 faq:
   - question: "Ist IMIPAW eine gute Marke?"
     answer: "IMIPAW bietet solide automatische Futterautomaten mit einem guten Preis-Leistungs-Verhältnis und richtet sich vor allem an Einsteiger."

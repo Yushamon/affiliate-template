@@ -10,7 +10,7 @@ name: "SureFeed"
 recommendation: "SureFeed gehört zu den bekanntesten Herstellern intelligenter Fütterungssysteme für Katzen und kleine Hunde. Die Marke konzentriert sich auf Mikrochip- und RFID-gestützte Lösungen, mit denen einzelne Tiere gezielt gefüttert werden können. Besonders in Mehrkatzenhaushalten gilt SureFeed seit Jahren als Referenz."
 summary: "SureFeed wird von vielen Katzenhaltern als äußerst zuverlässige Lösung gegen Futterdiebstahl beschrieben. Besonders gelobt werden die präzise Mikrochip-Erkennung und die einfache Bedienung. Kritik gibt es hauptsächlich am Preis und am vergleichsweise kleinen Produktsortiment."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -78,6 +78,13 @@ weaknesses:
 productSlugs:
   - "surefeed-microchip-pet-feeder-connect"
   - "surefeed-microchip-pet-feeder"
+profile:
+  company: "SureFeed ist die Fütterungsmarke von Sure Petcare, dem aus SureFlap hervorgegangenen Anbieter für mikrochipgesteuerte Haustierprodukte. Der Schwerpunkt liegt auf selektivem Futterzugang statt automatischer Portionierung nach Uhrzeit."
+  appEcosystem: "Der Microchip Pet Feeder Connect arbeitet über den Sure Petcare Hub mit der App. Dort lassen sich unter anderem Fütterungshäufigkeit, Dauer und Menge verfolgen; der klassische Mikrochip-Futterautomat funktioniert ohne App."
+  replacementParts: "Sure Petcare bietet passende Näpfe, Matten, Deckel, Rückabdeckungen, RFID-Halsbandanhänger und den Hub als Zubehör oder Ersatz an."
+  filterSupply: "Die hier betrachteten SureFeed-Futterautomaten brauchen keine Filter. Auch der offene Felaqua-Connect-Wassernapf ist nicht als klassischer Filterbrunnen konzipiert."
+  warranty: "Für die Mikrochip-Futterautomaten nennt Sure Petcare drei Jahre Garantie. Beim Connect-Modell wird die Aktivierung über die App-Registrierung beschrieben; die jeweiligen Bedingungen bleiben maßgeblich."
+  competitorComparison: "SureFeed ist die stärkste Option, wenn nur ein bestimmtes Tier ans Futter darf. PETLIBRO und PETKIT automatisieren Zeitpläne und Portionen umfassender, ersetzen aber nicht bei jedem Modell die Mikrochip-Zugangskontrolle."
 featuredProductSlugs:
   - "surefeed-microchip-pet-feeder-connect"
   - "surefeed-microchip-pet-feeder"
@@ -113,12 +120,12 @@ alternativeManufacturerSlugs:
   - "petkit"
   - "cat-mate"
 sources:
-  - label: "Sure Petcare"
-    url: "https://www.surepetcare.com"
+  - label: "SureFeed Mikrochip-Futterautomaten"
+    url: "https://www.surepetcare.com/de-de/futterautomat"
+  - label: "SureFeed Connect Produktseite"
+    url: "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder-connect"
   - label: "SureFeed Support"
     url: "https://support.surepetcare.com"
-  - label: "Trustpilot"
-    url: "https://www.trustpilot.com"
 faq:
   - question: "Ist SureFeed eine gute Marke?"
     answer: "Ja. SureFeed gilt als einer der führenden Hersteller für Mikrochip-Fütterung und wird besonders in Mehrkatzenhaushalten empfohlen."

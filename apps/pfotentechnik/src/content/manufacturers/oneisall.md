@@ -10,7 +10,7 @@ name: "oneisall"
 recommendation: "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen."
 summary: "oneisall wird vor allem für das gute Preis-Leistungs-Verhältnis und die einfache Einrichtung gelobt. Käufer bewerten die Geräte häufig als unkompliziert und alltagstauglich. Kritik betrifft überwiegend den geringeren Funktionsumfang gegenüber Premium-Herstellern."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -74,8 +74,22 @@ weaknesses:
   - "Noch geringe Markenbekanntheit im Bereich Fütterung"
 productSlugs:
   - "oneisall-5l-automatic-cat-feeder"
+  - "oneisall-2-in-1-feeder-water"
+  - "oneisall-2-2l-cordless-fountain"
+  - "oneisall-3-2l-cordless-fountain"
+  - "oneisall-3-5l-cordless-fountain"
+  - "oneisall-7l-dog-water-fountain"
+profile:
+  company: "Oneisall führt neben Pflegeprodukten auch Futterautomaten und Trinkbrunnen für Katzen und Hunde. Auffällig sind große Kapazitäten sowie Akku- und Sensorlösungen bei ausgewählten Brunnen."
+  appEcosystem: "App-Funktionen hängen vom jeweiligen Futterautomaten ab. Die Trinkbrunnen arbeiten überwiegend mit Sensor- oder Akkusteuerung; ein durchgängiges, geräteübergreifendes Haustierprofil ist nicht ausgewiesen."
+  replacementParts: "Der Hersteller verkauft für ausgewählte Brunnen Ersatzpumpen, Pumpenmodule und Filtersets. Bei Futterautomaten ist die öffentlich sichtbare Ersatzteilauswahl kleiner und modellbezogen."
+  filterSupply: "Originalfilter sind für mehrere Brunnenserien erhältlich. Oneisall empfiehlt je nach Modell einen Wechsel etwa alle zwei bis vier Wochen und die regelmäßige Reinigung von Pumpe und Auslauf."
+  warranty: "Oneisall Europe nennt zwei Jahre Garantie und ein 30-tägiges Rückgabefenster; Ausschlüsse und Kaufnachweis richten sich nach den veröffentlichten Bedingungen."
+  competitorComparison: "Oneisall ist stark bei großen, leisen Akku-Trinkbrunnen und einem guten Kapazitäts-Preis-Verhältnis. PETKIT und PETLIBRO bieten das geschlossenere App-System, Xiaomi die stärkere Smart-Home-Anbindung."
 featuredProductSlugs:
   - "oneisall-5l-automatic-cat-feeder"
+  - "oneisall-3-5l-cordless-fountain"
+  - "oneisall-7l-dog-water-fountain"
 series:
   - key: "automatic-feeder"
     name: "Automatic Feeder"
@@ -101,10 +115,10 @@ alternativeManufacturerSlugs:
   - "petlibro"
   - "xiaomi"
 sources:
-  - label: "oneisall"
-    url: "https://oneisall.com"
-  - label: "Amazon Kundenbewertungen"
-    url: "https://www.amazon.de"
+  - label: "oneisall Europe"
+    url: "https://eu.oneisall.com"
+  - label: "oneisall Garantie"
+    url: "https://eu.oneisall.com/pages/warranty"
 faq:
   - question: "Ist oneisall eine gute Marke?"
     answer: "oneisall überzeugt besonders durch ein attraktives Preis-Leistungs-Verhältnis und unkomplizierte Produkte für Tierhalter."

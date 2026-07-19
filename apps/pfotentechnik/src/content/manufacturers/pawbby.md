@@ -10,7 +10,7 @@ name: "PAWBBY"
 recommendation: "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden."
 summary: "PAWBBY wird überwiegend als günstige Alternative zu Xiaomi bewertet. Käufer loben insbesondere die einfache Bedienung und das moderne Design. Kritik betrifft vor allem die noch kleine Produktpalette."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -70,6 +70,13 @@ weaknesses:
   - "Außerhalb Asiens noch wenig verbreitet"
 productSlugs:
   - "pawbby-smart-pet-feeder"
+profile:
+  company: "PAWBBY entwickelt vernetzte Haustierprodukte, darunter Futterautomaten. Ein Teil des Sortiments wird in das Xiaomi-Home-Umfeld eingebunden; Funktionsumfang und Vertrieb unterscheiden sich je nach Markt."
+  appEcosystem: "Bei kompatiblen Geräten erfolgt die Steuerung über Xiaomi Home. Dadurch passen sie gut in bestehende Xiaomi-Installationen, bilden aber kein eigenständiges, umfassend dokumentiertes PAWBBY-Gesundheitsprofil."
+  replacementParts: "Für einzelne Produktgruppen werden Verbrauchsmaterialien angeboten. Ein klarer öffentlicher Ersatzteilkatalog für die hier betrachteten Futterautomaten ist jedoch nicht ausgewiesen."
+  filterSupply: "Die eingeordneten PAWBBY-Futterautomaten benötigen keine Wasserfilter. Für andere PAWBBY-Produktgruppen muss die Versorgung separat und modellbezogen geprüft werden."
+  warranty: "Die öffentlich auffindbare PAWBBY-Garantieseite bezieht sich auf den US-Markt und bestimmte Produktgruppen; eine einheitliche deutsche Frist für Futterautomaten ist dort nicht ausgewiesen. Händlerbedingungen und gesetzliche Gewährleistung sind daher entscheidend."
+  competitorComparison: "PAWBBY ist vor allem für Nutzer von Xiaomi Home interessant. PETLIBRO und PETKIT bieten bei Futterautomaten mehr eigene App-, Zubehör- und Supportdokumentation."
 featuredProductSlugs:
   - "pawbby-smart-pet-feeder"
 series:
@@ -98,8 +105,8 @@ alternativeManufacturerSlugs:
 sources:
   - label: "PAWBBY"
     url: "https://www.pawbby.com"
-  - label: "Amazon Kundenbewertungen"
-    url: "https://www.amazon.de"
+  - label: "PAWBBY Garantiebedingungen"
+    url: "https://pawbby.com/pages/warranty-policy-1"
 faq:
   - question: "Ist PAWBBY eine gute Marke?"
     answer: "PAWBBY bietet moderne Smart-Futterautomaten mit gutem Preis-Leistungs-Verhältnis und richtet sich insbesondere an Xiaomi-Nutzer."

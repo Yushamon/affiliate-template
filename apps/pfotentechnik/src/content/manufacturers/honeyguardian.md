@@ -10,7 +10,7 @@ name: "HoneyGuardian"
 recommendation: "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag."
 summary: "HoneyGuardian wird häufig für die einfache Bedienung und das gute Preis-Leistungs-Verhältnis gelobt. Besonders positiv werden die großen Vorratsbehälter bewertet. Kritik richtet sich hauptsächlich gegen den geringeren Smart-Funktionsumfang und die kleinere Produktauswahl."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -77,6 +77,13 @@ productSlugs:
   - "honeyguardian-a68"
   - "honeyguardian-a305d"
   - "honeyguardian-smart-pet-feeder-s305d"
+profile:
+  company: "HoneyGuardian positioniert sich mit automatischen Trockenfutterautomaten im preisorientierten Segment. Im Mittelpunkt stehen große Vorratsbehälter, Timer-Modelle und Varianten für zwei Futterschalen."
+  appEcosystem: "WLAN und App-Steuerung sind modellabhängig. Eine herstellerübergreifende Plattform mit Gesundheitsauswertung oder vernetzten Trinkbrunnen ist in der öffentlichen Produktdokumentation nicht ausgewiesen."
+  replacementParts: "Ein breit dokumentierter deutscher Ersatzteilkatalog ist öffentlich nicht ausgewiesen. Vor dem Kauf sollte geklärt werden, ob Schalen, Rotor, Netzteil oder Deckel für das konkrete Modell über Hersteller oder Händler verfügbar sind."
+  filterSupply: "Die hier betrachteten HoneyGuardian-Futterautomaten benötigen keine Wasserfilter. Eine Filterversorgung ist deshalb kein Auswahlkriterium."
+  warranty: "Eine einheitliche, öffentlich klar ausgewiesene Garantiefrist für Deutschland ist auf den Herstellerseiten nicht belegt. Maßgeblich sind die Bedingungen des konkreten Händlers sowie die gesetzliche Gewährleistung."
+  competitorComparison: "HoneyGuardian bietet oft viel Behältervolumen fürs Geld. PETLIBRO und PETKIT dokumentieren App, Service und Zubehör umfangreicher; WOPET ist bei preisnahen Kamera- und WLAN-Modellen der direktere Vergleich."
 featuredProductSlugs:
   - "honeyguardian-a68"
   - "honeyguardian-a305d"
@@ -117,8 +124,6 @@ sources:
     url: "https://www.honeyguardian.com"
   - label: "HoneyGuardian Support"
     url: "https://www.honeyguardian.com/pages/contact-us"
-  - label: "Amazon Kundenbewertungen"
-    url: "https://www.amazon.de"
 faq:
   - question: "Ist HoneyGuardian eine gute Marke?"
     answer: "HoneyGuardian bietet solide Futterautomaten mit gutem Preis-Leistungs-Verhältnis und richtet sich vor allem an preisbewusste Tierhalter."

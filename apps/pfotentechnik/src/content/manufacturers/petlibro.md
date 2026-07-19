@@ -14,7 +14,7 @@ recommendation: "Besonders interessant für Nutzer, die moderne App-Funktionen, 
 summary: "PETLIBRO gehört zu den bekanntesten Herstellern smarter Futterautomaten. Die Marke bietet Modelle für Trockenfutter, Nassfutter, Kameraüberwachung und kontrollierten Futterzugang."
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-19"
 navigation:
   show: true
   label: "Hersteller"
@@ -109,14 +109,31 @@ weaknesses:
 
 productSlugs:
   - "petlibro-granary-camera-feeder"
-  - "petlibro-polar"
-  - "petlibro-one-rfid"
-  - "petlibro-air"
+  - "petlibro-granary-wifi-feeder"
+  - "petlibro-granary-dual-feeder"
+  - "petlibro-polar-wet-food-feeder"
+  - "petlibro-one-rfid-smart-feeder"
+  - "petlibro-air-wifi-feeder"
+  - "petlibro-air-automatic-feeder"
+  - "petlibro-space-smart-feeder"
+  - "petlibro-dockstream-cordless"
+  - "petlibro-dockstream-2-smart"
+  - "petlibro-dockstream-rfid-smart"
+  - "petlibro-capsule-dog-fountain"
+  - "petlibro-stainless-steel-fountain"
+  - "petlibro-glacier-ultrafiltration"
 
+profile:
+  company: "PETLIBRO entwickelt seit 2019 Futterautomaten, Trinkbrunnen und ergänzende Lösungen für Katzen und Hunde. Der Schwerpunkt liegt auf planbarer Fütterung, Kamerafunktionen und der Auswertung von Futter- oder Wasseraufnahme."
+  appEcosystem: "Die PETLIBRO-App verbindet kompatible Futterautomaten, Trinkbrunnen und Kamerafunktionen. Einige Video- und Analysefunktionen werden als optionale Abonnements angeboten; Basisumfang und Tarifbedarf unterscheiden sich je Modell."
+  replacementParts: "Der offizielle Shop führt modellbezogene Pumpen, Näpfe und weiteres Zubehör. Die Produktgeneration muss vor der Bestellung geprüft werden, da Teile nicht generell kompatibel sind."
+  filterSupply: "Originalfilter sind für Dockstream-, Capsule-, Glacier- und weitere Brunnenserien erhältlich. Damit ist die Versorgung vergleichsweise transparent, bleibt aber an die jeweilige Filterform gebunden."
+  warranty: "PETLIBRO Deutschland nennt für Futterautomaten und Trinkbrunnen 24 Monate Herstellergarantie bei Käufen über autorisierte Vertriebswege; Verbrauchsmaterialien sind ausgenommen."
+  competitorComparison: "PETLIBRO deckt besonders viele Fütterungsszenarien ab, von Kamera bis Nassfutter und RFID. PETKIT bietet ein breiteres Geräteökosystem, SureFeed den konsequenteren Mikrochip-Zugang und Cat Mate mehr Offline-Einfachheit."
 featuredProductSlugs:
   - "petlibro-granary-camera-feeder"
-  - "petlibro-polar"
-  - "petlibro-one-rfid"
+  - "petlibro-polar-wet-food-feeder"
+  - "petlibro-one-rfid-smart-feeder"
 
 series:
   - key: "granary"
@@ -138,7 +155,7 @@ series:
       - "Vorbereitete Mahlzeiten"
       - "Katzen mit festen Fütterungszeiten"
     productSlugs:
-      - "petlibro-polar"
+      - "petlibro-polar-wet-food-feeder"
 
   - key: "one-rfid"
     name: "One RFID"
@@ -149,7 +166,7 @@ series:
       - "Spezialfutter"
       - "Kontrollierter Zugang"
     productSlugs:
-      - "petlibro-one-rfid"
+      - "petlibro-one-rfid-smart-feeder"
 
 experience:
   summary: "PETLIBRO bietet eine ungewöhnlich breite Auswahl smarter Fütterungslösungen. Besonders stark ist die Marke bei App-Funktionen, Kamera und spezialisierten Modellen."
@@ -171,9 +188,13 @@ alternativeManufacturerSlugs:
   - "cat-mate"
 
 sources:
-  - label: "PETLIBRO Herstellerseite"
-    url: "https://petlibro.com"
-    description: "Produktinformationen und technische Angaben des Herstellers."
+  - label: "PETLIBRO Unternehmensprofil"
+    url: "https://de.petlibro.com/pages/about-us"
+    description: "Unternehmens- und Sortimentsinformationen des Herstellers."
+  - label: "PETLIBRO Rückgabe und Garantie"
+    url: "https://de.petlibro.com/pages/return-refund-policy"
+  - label: "PETLIBRO Zubehör"
+    url: "https://de.petlibro.com/collections/accessories"
 
 faq:
   - question: "Ist PETLIBRO ein guter Hersteller?"

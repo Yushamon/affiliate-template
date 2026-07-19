@@ -71,6 +71,21 @@ const manufacturerExperienceSchema =
       z.string().optional()
   });
 
+const manufacturerProfileSchema =
+  z.object({
+    company: z.string(),
+
+    appEcosystem: z.string(),
+
+    replacementParts: z.string(),
+
+    filterSupply: z.string(),
+
+    warranty: z.string(),
+
+    competitorComparison: z.string()
+  });
+
 const manufacturerSourceSchema =
   z.object({
     label: z.string(),
@@ -141,6 +156,9 @@ export const createManufacturerContentSchema = (image: ImageFunction) =>
     weaknesses: z
       .array(z.string())
       .default([]),
+
+    profile:
+      manufacturerProfileSchema,
 
     productSlugs: z
       .array(z.string())
