@@ -296,7 +296,7 @@ Ein Automat ist nur alltagstauglich, wenn alle Futterkontaktflächen erreichbar 
 
 Prüfe, ob Napf, Behälter, Fördereinheit und Futterkanal gereinigt und vollständig getrocknet werden können.
 
-Futterstaub und Fett können Geruch, Hygiene und Dosierung verändern. Die vollständige Pflege erklärt [Futterautomat reinigen](/futterautomat-richtig-reinigen/).
+Futterstaub und Fett können Geruch, Hygiene und Dosierung verändern. Die vollständige Pflege erklärt [Futterautomat reinigen](/futterautomat-reinigen/).
 
 ## Wie groß sollte der Vorrat sein?
 

@@ -215,7 +215,7 @@ Für Hunde muss geprüft werden:
 - wird nur geeignetes Trockenfutter verwendet?
 - bleibt eine persönliche Kontrolle erhalten?
 
-Weitere Modelle findest du im [Futterautomaten-Vergleich](/smarte-futterautomaten/) und im Ratgeber [Futterautomat für Hunde](/futterautomat-hund/).
+Weitere Modelle findest du im [Futterautomaten-Vergleich](/futterautomaten/) und im Ratgeber [Futterautomat für Hunde](/futterautomat-hund/).
 
 ## Wann Appetitveränderungen medizinisch relevant sind
 

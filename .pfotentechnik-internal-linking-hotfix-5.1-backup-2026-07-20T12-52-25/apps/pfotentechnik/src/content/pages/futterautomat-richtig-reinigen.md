@@ -337,7 +337,7 @@ Leere das Gerät vollständig, reinige es und lasse alle Teile trocknen. Lagere 
 
 ## Reinigungsfreundlichkeit als Kaufkriterium
 
-Beim [Futterautomaten-Vergleich](/smarte-futterautomaten/) lohnt sich ein Blick auf Merkmale, die im Alltag mehr bewirken als eine weitere App-Funktion:
+Beim [Futterautomaten-Vergleich](/futterautomaten/) lohnt sich ein Blick auf Merkmale, die im Alltag mehr bewirken als eine weitere App-Funktion:
 
 - Napf ohne Werkzeug entnehmbar
 - Auslass gut erreichbar
