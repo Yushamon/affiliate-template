@@ -9,26 +9,30 @@ const target = path.join(
   root,
   "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
 );
-const source = path.join(packageRoot, "ui-fix-3.6.3.css");
-const backup = `${target}.before-ui-fix-3.6.3`;
+const source = path.join(packageRoot, "ui-fix-3.6.6.css");
+const backup = `${target}.before-ui-fix-3.6.6`;
 
-const startMarker = "/* === PfotenTechnik UI Fix 3.6.3 === */";
-const endMarker = "/* === End PfotenTechnik UI Fix 3.6.3 === */";
+const startMarker = "/* === PfotenTechnik UI Fix 3.6.6 === */";
+const endMarker = "/* === End PfotenTechnik UI Fix 3.6.6 === */";
 
 if (!fs.existsSync(target)) {
   console.error("Konsolidierte Design-System-CSS nicht gefunden.");
+  console.error("Installer im Repository-Root ausführen.");
   process.exit(1);
 }
+
 if (!fs.existsSync(source)) {
-  console.error("ui-fix-3.6.3.css fehlt.");
+  console.error("ui-fix-3.6.6.css fehlt im Paket.");
   process.exit(1);
 }
+
 if (!fs.existsSync(backup)) {
   fs.copyFileSync(target, backup);
 }
 
 let content = fs.readFileSync(target, "utf8");
 const patch = fs.readFileSync(source, "utf8").trim();
+
 const start = content.indexOf(startMarker);
 const end = content.indexOf(endMarker);
 
@@ -47,19 +51,21 @@ fs.writeFileSync(target, content, "utf8");
 const verification = fs.readFileSync(target, "utf8");
 const required = [
   startMarker,
-  ".pt-product-health",
-  ".product-facts-v4:has(> div:nth-child(2):last-child)",
-  "padding-inline: 12px !important",
+  ".alternative-recommendation-meta > strong",
+  ".manufacturer-card {",
+  "aspect-ratio: 16 / 10 !important",
+  "object-position: center 42% !important",
   endMarker
 ];
 
-for (const entry of required) {
-  if (!verification.includes(entry)) {
+for (const item of required) {
+  if (!verification.includes(item)) {
     fs.copyFileSync(backup, target);
     console.error("Verifikation fehlgeschlagen. Patch wurde zurückgerollt.");
+    console.error("Fehlend:", item);
     process.exit(1);
   }
 }
 
-console.log("PfotenTechnik UI Fix 3.6.3 installiert.");
+console.log("PfotenTechnik UI Fix 3.6.6 installiert.");
 console.log("Jetzt: npm run build:pfotentechnik");

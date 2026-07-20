@@ -7,12 +7,12 @@ const target = path.join(
   root,
   "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
 );
-const backup = `${target}.before-ui-fix-3.6.5`;
+const backup = `${target}.before-ui-fix-3.6.6`;
 
 if (!fs.existsSync(backup)) {
-  console.error("Kein Backup für UI Fix 3.6.5 gefunden.");
+  console.error("Kein Backup für UI Fix 3.6.6 gefunden.");
   process.exit(1);
 }
 
 fs.copyFileSync(backup, target);
-console.log("UI Fix 3.6.5 wurde zurückgerollt.");
+console.log("UI Fix 3.6.6 wurde zurückgerollt.");
