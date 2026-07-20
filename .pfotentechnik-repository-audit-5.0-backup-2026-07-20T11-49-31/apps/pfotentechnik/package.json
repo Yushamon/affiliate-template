@@ -10,9 +10,7 @@
     "audit:products": "node scripts/audit-product-data.mjs",
     "audit:products:strict": "node scripts/audit-product-data.mjs --strict",
     "build:content-graph": "node scripts/build-content-graph.mjs",
-    "audit:content-graph": "node scripts/build-content-graph.mjs --strict",
-    "audit:repository": "node scripts/audit-repository.mjs",
-    "audit:repository:strict": "node scripts/audit-repository.mjs --strict"
+    "audit:content-graph": "node scripts/build-content-graph.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

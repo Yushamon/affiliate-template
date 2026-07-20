@@ -80,21 +80,23 @@ const normalizedCanonical =
 
 const canonicalUrl = toAbsoluteUrl(site.domain, normalizedCanonical);
 
-const visibleAuthor = author ?? siteMeta.defaultAuthor;
-
 const imageUrl = ogImage
   ? toAbsoluteUrl(site.domain, ogImage)
   : toAbsoluteUrl(site.domain, projectConfig.defaultOgImage ?? "/favicon.svg");
 const publisherLogoUrl = toAbsoluteUrl(site.domain, siteMeta.publisher.logo);
 const authorUrl = visibleAuthor.url
   ? toAbsoluteUrl(site.domain, visibleAuthor.url)
-  : undefined;
+  : siteMeta.defaultAuthor.url
+    ? toAbsoluteUrl(site.domain, siteMeta.defaultAuthor.url)
+    : undefined;
 
 const isHome = normalizedCanonical === "/";
 const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");
 const shouldRenderArticleSchema = resolvedSchemaType === "article";
 const shouldRenderWebPageSchema = resolvedSchemaType === "webpage";
 const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema ?? !isHome;
+
+const visibleAuthor = author ?? siteMeta.defaultAuthor;
 
 const organizationSchema = {
   "@context": "https://schema.org",
