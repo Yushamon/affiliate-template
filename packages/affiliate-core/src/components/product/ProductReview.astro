@@ -3,6 +3,7 @@ import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro
 import OptimizedImage from "../OptimizedImage.astro";
 import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
+import EditorialScore from "../EditorialScore.astro";
 import type {
   AlternativeRecommendation
 } from "./alternativeRecommendation.types";
@@ -131,11 +132,12 @@ const ratingEntries = Object
 const topMetrics = ratingEntries.slice(0, 3);
 
 const getRatingDescriptor = (rating: number) => {
-  if (rating >= 4.7) return "Stark";
-  if (rating >= 4.4) return "Überzeugend";
-  if (rating >= 4.1) return "Gut";
-  if (rating >= 3.7) return "Solide";
-  return "Mit Abstrichen";
+  const score = Math.round(rating * 20);
+  if (score >= 90) return "Hervorragend";
+  if (score >= 80) return "Sehr gut";
+  if (score >= 70) return "Gut";
+  if (score >= 60) return "Solide";
+  return "Mit Einschränkungen";
 };
 
 const getRatingWidth = (rating: number) =>
@@ -182,17 +184,6 @@ const quickFacts = [
       specValue("Mahlzeiten")
   }
 ].filter((item) => item.value);
-
-const scoreLabel =
-  product.score >= 90
-    ? "Hervorragend"
-    : product.score >= 80
-      ? "Sehr gut"
-      : product.score >= 70
-        ? "Gut"
-        : product.score >= 60
-          ? "Solide"
-          : "Mit Einschränkungen";
 
 const badgeLabels: Record<string, string> = {
   testsieger: "Testsieger",
@@ -467,28 +458,12 @@ const displayHighlights = [
             }
           </div>
 
-          <section
-            class="product-verdict-v4"
-            aria-label="Gesamtbewertung"
-          >
-            <div class="product-verdict-v4__top">
-              <div>
-                <span>Gesamturteil</span>
-                <h2>{scoreLabel}</h2>
-              </div>
-
-              <strong>
-                {product.rating.toFixed(1).replace(".", ",")} / 5
-              </strong>
-            </div>
-
-            <div
-              class="product-verdict-v4__stars"
-              aria-label={`${product.rating} von 5 Sternen`}
-            >
-              ★★★★★
-            </div>
-
+          <section class="product-verdict-v4" aria-label="Gesamtbewertung">
+            <EditorialScore
+              value={product.score}
+              variant="detailed"
+              showMethodology
+            />
             <p>{product.review.verdict}</p>
           </section>
 
@@ -500,9 +475,7 @@ const displayHighlights = [
                     <div>
                       <dt>{getRatingLabel(key)}</dt>
                       <dd>
-                        {Number(value)
-                          .toFixed(1)
-                          .replace(".", ",")} / 5
+                        {Math.round(Number(value) * 20)}
                       </dd>
                     </div>
                   ))
@@ -604,9 +577,7 @@ const displayHighlights = [
                         <strong>{getRatingLabel(key)}</strong>
 
                         <span>
-                          {numericValue
-                            .toFixed(1)
-                            .replace(".", ",")} / 5
+                          {Math.round(numericValue * 20)}
                         </span>
                       </div>
 

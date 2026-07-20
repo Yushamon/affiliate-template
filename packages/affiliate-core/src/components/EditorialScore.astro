@@ -17,39 +17,24 @@ const {
   class: className
 } = Astro.props;
 
-const normalizedValue = Number.isFinite(value)
-  ? scale === 5
-    ? value * 20
-    : scale === 10
-      ? value * 10
-      : value
-  : 0;
-
-const score = Math.max(0, Math.min(100, Math.round(normalizedValue)));
+const normalized =
+  scale === 5 ? value * 20 : scale === 10 ? value * 10 : value;
+const score = Math.max(0, Math.min(100, Math.round(normalized)));
 
 const verdict =
-  score >= 90
-    ? "Hervorragend"
-    : score >= 80
-      ? "Sehr gut"
-      : score >= 70
-        ? "Gut"
-        : score >= 60
-          ? "Solide"
-          : score >= 50
-            ? "Mit Einschränkungen"
-            : "Nicht empfohlen";
+  score >= 90 ? "Hervorragend"
+  : score >= 80 ? "Sehr gut"
+  : score >= 70 ? "Gut"
+  : score >= 60 ? "Solide"
+  : score >= 50 ? "Mit Einschränkungen"
+  : "Nicht empfohlen";
 
 const tone =
-  score >= 80
-    ? "excellent"
-    : score >= 70
-      ? "good"
-      : score >= 60
-        ? "solid"
-        : score >= 50
-          ? "limited"
-          : "poor";
+  score >= 80 ? "excellent"
+  : score >= 70 ? "good"
+  : score >= 60 ? "solid"
+  : score >= 50 ? "limited"
+  : "poor";
 ---
 
 <div
@@ -59,11 +44,10 @@ const tone =
     `pt-score--${tone}`,
     className
   ]}
-  aria-label={`PfotenTechnik-Score ${score} von 100, ${verdict}`}
+  aria-label={`PfotenTechnik-Score ${score} von 100: ${verdict}`}
 >
   <div class="pt-score__summary">
     <strong class="pt-score__value">{score}</strong>
-
     <div class="pt-score__copy">
       <span class="pt-score__verdict">{verdict}</span>
       <small class="pt-score__label">PfotenTechnik-Score</small>
@@ -77,7 +61,7 @@ const tone =
     aria-valuemax="100"
     aria-valuenow={score}
   >
-    <span style={`--pt-score-value: ${score}%`}></span>
+    <span style={`--pt-score-value:${score}%`}></span>
   </div>
 
   {
@@ -92,44 +76,23 @@ const tone =
 
 <style>
   .pt-score {
-    --score-accent: #1f9d55;
-    --score-soft: rgba(31, 157, 85, 0.12);
+    --score-accent: #22a95b;
+    --score-soft: rgba(34, 169, 91, 0.1);
     display: grid;
     min-width: 0;
-    gap: 0.65rem;
-    color: var(--text, #10231f);
+    gap: 0.55rem;
   }
 
-  .pt-score--excellent {
-    --score-accent: #169447;
-    --score-soft: rgba(22, 148, 71, 0.12);
-  }
-
-  .pt-score--good {
-    --score-accent: #65a30d;
-    --score-soft: rgba(101, 163, 13, 0.13);
-  }
-
-  .pt-score--solid {
-    --score-accent: #d39a00;
-    --score-soft: rgba(211, 154, 0, 0.14);
-  }
-
-  .pt-score--limited {
-    --score-accent: #ea7b22;
-    --score-soft: rgba(234, 123, 34, 0.13);
-  }
-
-  .pt-score--poor {
-    --score-accent: #dc4545;
-    --score-soft: rgba(220, 69, 69, 0.13);
-  }
+  .pt-score--good { --score-accent: #75b817; }
+  .pt-score--solid { --score-accent: #e2a400; }
+  .pt-score--limited { --score-accent: #ea7d25; }
+  .pt-score--poor { --score-accent: #df4d4d; }
 
   .pt-score__summary {
     display: flex;
     min-width: 0;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.7rem;
   }
 
   .pt-score__value {
@@ -138,26 +101,26 @@ const tone =
     font-size: clamp(1.65rem, 4vw, 2.25rem);
     font-weight: 950;
     line-height: 0.95;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.05em;
   }
 
   .pt-score__copy {
     display: grid;
     min-width: 0;
-    gap: 0.08rem;
+    gap: 0.05rem;
   }
 
   .pt-score__verdict {
     color: var(--text, #10231f);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 900;
     line-height: 1.2;
   }
 
   .pt-score__label {
-    color: var(--muted, #66736f);
-    font-size: 0.69rem;
-    line-height: 1.25;
+    color: var(--muted, #687670);
+    font-size: 0.68rem;
+    line-height: 1.2;
   }
 
   .pt-score__track {
@@ -165,14 +128,10 @@ const tone =
     height: 5px;
     overflow: hidden;
     border-radius: 999px;
-    background: color-mix(
-      in srgb,
-      var(--muted, #66736f) 16%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--muted, #687670) 16%, transparent);
   }
 
-  .pt-score__track span {
+  .pt-score__track > span {
     display: block;
     width: var(--pt-score-value);
     height: 100%;
@@ -183,11 +142,10 @@ const tone =
   .pt-score__method {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3rem 0.85rem;
-    align-items: baseline;
-    color: var(--muted, #66736f);
+    gap: 0.25rem 0.8rem;
+    color: var(--muted, #687670);
     font-size: 0.72rem;
-    line-height: 1.45;
+    line-height: 1.4;
   }
 
   .pt-score__method a {
@@ -203,17 +161,9 @@ const tone =
     gap: 0.55rem;
   }
 
-  .pt-score--inline .pt-score__summary {
-    gap: 0.45rem;
-  }
-
-  .pt-score--inline .pt-score__value {
-    font-size: 1.2rem;
-  }
-
-  .pt-score--inline .pt-score__verdict {
-    font-size: 0.78rem;
-  }
+  .pt-score--inline .pt-score__summary { gap: 0.45rem; }
+  .pt-score--inline .pt-score__value { font-size: 1.3rem; }
+  .pt-score--inline .pt-score__verdict { font-size: 0.78rem; }
 
   .pt-score--inline .pt-score__label,
   .pt-score--inline .pt-score__track {
@@ -222,64 +172,33 @@ const tone =
 
   .pt-score--compact {
     width: 100%;
+    margin-top: auto;
     padding-top: 0.9rem;
-    border-top: 1px solid color-mix(
-      in srgb,
-      var(--muted, #66736f) 18%,
-      transparent
-    );
+    border-top: 1px solid color-mix(in srgb, var(--muted, #687670) 17%, transparent);
   }
 
-  .pt-score--standard {
+  .pt-score--standard,
+  .pt-score--detailed {
     padding: 1rem;
-    border: 1px solid color-mix(
-      in srgb,
-      var(--score-accent) 18%,
-      transparent
-    );
+    border: 1px solid color-mix(in srgb, var(--score-accent) 20%, transparent);
     border-radius: 1rem;
-    background: color-mix(
-      in srgb,
-      var(--score-soft) 46%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--score-soft) 52%, transparent);
   }
 
   .pt-score--detailed {
-    padding: clamp(1rem, 3vw, 1.4rem);
-    border: 1px solid color-mix(
-      in srgb,
-      var(--score-accent) 20%,
-      transparent
-    );
-    border-radius: 1.15rem;
-    background: color-mix(
-      in srgb,
-      var(--score-soft) 44%,
-      transparent
-    );
+    padding: clamp(1.1rem, 3vw, 1.45rem);
   }
 
   .pt-score--detailed .pt-score__value {
-    font-size: clamp(2.6rem, 7vw, 4.5rem);
-  }
-
-  .pt-score--detailed .pt-score__verdict {
-    font-size: 1rem;
+    font-size: clamp(2.7rem, 8vw, 4.7rem);
   }
 
   @media (prefers-color-scheme: dark) {
-    .pt-score {
-      color: #f3f7f5;
-    }
-
-    .pt-score__verdict {
-      color: #f3f7f5;
-    }
+    .pt-score__verdict { color: #f7faf9; }
 
     .pt-score__label,
     .pt-score__method {
-      color: rgba(226, 232, 240, 0.72);
+      color: rgba(226, 232, 240, 0.7);
     }
 
     .pt-score--standard,

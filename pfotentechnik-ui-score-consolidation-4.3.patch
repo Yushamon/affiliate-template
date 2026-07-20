@@ -1,0 +1,656 @@
+diff --git a/packages/affiliate-core/src/components/EditorialScore.astro b/packages/affiliate-core/src/components/EditorialScore.astro
+index 5b3098e..da794f8 100644
+--- a/packages/affiliate-core/src/components/EditorialScore.astro
++++ b/packages/affiliate-core/src/components/EditorialScore.astro
+@@ -17,39 +17,24 @@ const {
+   class: className
+ } = Astro.props;
+ 
+-const normalizedValue = Number.isFinite(value)
+-  ? scale === 5
+-    ? value * 20
+-    : scale === 10
+-      ? value * 10
+-      : value
+-  : 0;
+-
+-const score = Math.max(0, Math.min(100, Math.round(normalizedValue)));
++const normalized =
++  scale === 5 ? value * 20 : scale === 10 ? value * 10 : value;
++const score = Math.max(0, Math.min(100, Math.round(normalized)));
+ 
+ const verdict =
+-  score >= 90
+-    ? "Hervorragend"
+-    : score >= 80
+-      ? "Sehr gut"
+-      : score >= 70
+-        ? "Gut"
+-        : score >= 60
+-          ? "Solide"
+-          : score >= 50
+-            ? "Mit Einschränkungen"
+-            : "Nicht empfohlen";
++  score >= 90 ? "Hervorragend"
++  : score >= 80 ? "Sehr gut"
++  : score >= 70 ? "Gut"
++  : score >= 60 ? "Solide"
++  : score >= 50 ? "Mit Einschränkungen"
++  : "Nicht empfohlen";
+ 
+ const tone =
+-  score >= 80
+-    ? "excellent"
+-    : score >= 70
+-      ? "good"
+-      : score >= 60
+-        ? "solid"
+-        : score >= 50
+-          ? "limited"
+-          : "poor";
++  score >= 80 ? "excellent"
++  : score >= 70 ? "good"
++  : score >= 60 ? "solid"
++  : score >= 50 ? "limited"
++  : "poor";
+ ---
+ 
+ <div
+@@ -59,11 +44,10 @@ const tone =
+     `pt-score--${tone}`,
+     className
+   ]}
+-  aria-label={`PfotenTechnik-Score ${score} von 100, ${verdict}`}
++  aria-label={`PfotenTechnik-Score ${score} von 100: ${verdict}`}
+ >
+   <div class="pt-score__summary">
+     <strong class="pt-score__value">{score}</strong>
+-
+     <div class="pt-score__copy">
+       <span class="pt-score__verdict">{verdict}</span>
+       <small class="pt-score__label">PfotenTechnik-Score</small>
+@@ -77,7 +61,7 @@ const tone =
+     aria-valuemax="100"
+     aria-valuenow={score}
+   >
+-    <span style={`--pt-score-value: ${score}%`}></span>
++    <span style={`--pt-score-value:${score}%`}></span>
+   </div>
+ 
+   {
+@@ -92,44 +76,23 @@ const tone =
+ 
+ <style>
+   .pt-score {
+-    --score-accent: #1f9d55;
+-    --score-soft: rgba(31, 157, 85, 0.12);
++    --score-accent: #22a95b;
++    --score-soft: rgba(34, 169, 91, 0.1);
+     display: grid;
+     min-width: 0;
+-    gap: 0.65rem;
+-    color: var(--text, #10231f);
+-  }
+-
+-  .pt-score--excellent {
+-    --score-accent: #169447;
+-    --score-soft: rgba(22, 148, 71, 0.12);
+-  }
+-
+-  .pt-score--good {
+-    --score-accent: #65a30d;
+-    --score-soft: rgba(101, 163, 13, 0.13);
+-  }
+-
+-  .pt-score--solid {
+-    --score-accent: #d39a00;
+-    --score-soft: rgba(211, 154, 0, 0.14);
+-  }
+-
+-  .pt-score--limited {
+-    --score-accent: #ea7b22;
+-    --score-soft: rgba(234, 123, 34, 0.13);
++    gap: 0.55rem;
+   }
+ 
+-  .pt-score--poor {
+-    --score-accent: #dc4545;
+-    --score-soft: rgba(220, 69, 69, 0.13);
+-  }
++  .pt-score--good { --score-accent: #75b817; }
++  .pt-score--solid { --score-accent: #e2a400; }
++  .pt-score--limited { --score-accent: #ea7d25; }
++  .pt-score--poor { --score-accent: #df4d4d; }
+ 
+   .pt-score__summary {
+     display: flex;
+     min-width: 0;
+     align-items: center;
+-    gap: 0.8rem;
++    gap: 0.7rem;
+   }
+ 
+   .pt-score__value {
+@@ -138,26 +101,26 @@ const tone =
+     font-size: clamp(1.65rem, 4vw, 2.25rem);
+     font-weight: 950;
+     line-height: 0.95;
+-    letter-spacing: -0.055em;
++    letter-spacing: -0.05em;
+   }
+ 
+   .pt-score__copy {
+     display: grid;
+     min-width: 0;
+-    gap: 0.08rem;
++    gap: 0.05rem;
+   }
+ 
+   .pt-score__verdict {
+     color: var(--text, #10231f);
+-    font-size: 0.9rem;
++    font-size: 0.88rem;
+     font-weight: 900;
+     line-height: 1.2;
+   }
+ 
+   .pt-score__label {
+-    color: var(--muted, #66736f);
+-    font-size: 0.69rem;
+-    line-height: 1.25;
++    color: var(--muted, #687670);
++    font-size: 0.68rem;
++    line-height: 1.2;
+   }
+ 
+   .pt-score__track {
+@@ -165,14 +128,10 @@ const tone =
+     height: 5px;
+     overflow: hidden;
+     border-radius: 999px;
+-    background: color-mix(
+-      in srgb,
+-      var(--muted, #66736f) 16%,
+-      transparent
+-    );
++    background: color-mix(in srgb, var(--muted, #687670) 16%, transparent);
+   }
+ 
+-  .pt-score__track span {
++  .pt-score__track > span {
+     display: block;
+     width: var(--pt-score-value);
+     height: 100%;
+@@ -183,11 +142,10 @@ const tone =
+   .pt-score__method {
+     display: flex;
+     flex-wrap: wrap;
+-    gap: 0.3rem 0.85rem;
+-    align-items: baseline;
+-    color: var(--muted, #66736f);
++    gap: 0.25rem 0.8rem;
++    color: var(--muted, #687670);
+     font-size: 0.72rem;
+-    line-height: 1.45;
++    line-height: 1.4;
+   }
+ 
+   .pt-score__method a {
+@@ -203,17 +161,9 @@ const tone =
+     gap: 0.55rem;
+   }
+ 
+-  .pt-score--inline .pt-score__summary {
+-    gap: 0.45rem;
+-  }
+-
+-  .pt-score--inline .pt-score__value {
+-    font-size: 1.2rem;
+-  }
+-
+-  .pt-score--inline .pt-score__verdict {
+-    font-size: 0.78rem;
+-  }
++  .pt-score--inline .pt-score__summary { gap: 0.45rem; }
++  .pt-score--inline .pt-score__value { font-size: 1.3rem; }
++  .pt-score--inline .pt-score__verdict { font-size: 0.78rem; }
+ 
+   .pt-score--inline .pt-score__label,
+   .pt-score--inline .pt-score__track {
+@@ -222,64 +172,33 @@ const tone =
+ 
+   .pt-score--compact {
+     width: 100%;
++    margin-top: auto;
+     padding-top: 0.9rem;
+-    border-top: 1px solid color-mix(
+-      in srgb,
+-      var(--muted, #66736f) 18%,
+-      transparent
+-    );
++    border-top: 1px solid color-mix(in srgb, var(--muted, #687670) 17%, transparent);
+   }
+ 
+-  .pt-score--standard {
++  .pt-score--standard,
++  .pt-score--detailed {
+     padding: 1rem;
+-    border: 1px solid color-mix(
+-      in srgb,
+-      var(--score-accent) 18%,
+-      transparent
+-    );
++    border: 1px solid color-mix(in srgb, var(--score-accent) 20%, transparent);
+     border-radius: 1rem;
+-    background: color-mix(
+-      in srgb,
+-      var(--score-soft) 46%,
+-      transparent
+-    );
++    background: color-mix(in srgb, var(--score-soft) 52%, transparent);
+   }
+ 
+   .pt-score--detailed {
+-    padding: clamp(1rem, 3vw, 1.4rem);
+-    border: 1px solid color-mix(
+-      in srgb,
+-      var(--score-accent) 20%,
+-      transparent
+-    );
+-    border-radius: 1.15rem;
+-    background: color-mix(
+-      in srgb,
+-      var(--score-soft) 44%,
+-      transparent
+-    );
++    padding: clamp(1.1rem, 3vw, 1.45rem);
+   }
+ 
+   .pt-score--detailed .pt-score__value {
+-    font-size: clamp(2.6rem, 7vw, 4.5rem);
+-  }
+-
+-  .pt-score--detailed .pt-score__verdict {
+-    font-size: 1rem;
++    font-size: clamp(2.7rem, 8vw, 4.7rem);
+   }
+ 
+   @media (prefers-color-scheme: dark) {
+-    .pt-score {
+-      color: #f3f7f5;
+-    }
+-
+-    .pt-score__verdict {
+-      color: #f3f7f5;
+-    }
++    .pt-score__verdict { color: #f7faf9; }
+ 
+     .pt-score__label,
+     .pt-score__method {
+-      color: rgba(226, 232, 240, 0.72);
++      color: rgba(226, 232, 240, 0.7);
+     }
+ 
+     .pt-score--standard,
+diff --git a/packages/affiliate-core/src/components/home/HomeNavigation.astro b/packages/affiliate-core/src/components/home/HomeNavigation.astro
+index 7797556..e4d50e9 100644
+--- a/packages/affiliate-core/src/components/home/HomeNavigation.astro
++++ b/packages/affiliate-core/src/components/home/HomeNavigation.astro
+@@ -52,6 +52,23 @@ const getDecisionIcon = (label: string) => {
+ 
+   return "star";
+ };
++
++const getDecisionIconSvg = (type: string) => {
++  if (type === "drop") {
++    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.2 6 11a6 6 0 0 1-12 0c0-4.8 6-11 6-11Z"/><path d="M9.5 15.2c.7 1.1 1.6 1.6 2.8 1.6"/></svg>`;
++  }
++
++  if (type === "bowl") {
++    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.6 8H5.6L4 10Z"/><path d="M7 10c.3-2.5 2.1-4 5-4s4.7 1.5 5 4"/><path d="M9 14h6"/></svg>`;
++  }
++
++  if (type === "guide") {
++    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h6a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H5V4Z"/><path d="M19 4h-3a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h3V4Z"/></svg>`;
++  }
++
++  return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.2 5.2 5.6.5-4.3 3.7 1.3 5.5L12 15l-4.8 2.9 1.3-5.5-4.3-3.7 5.6-.5L12 3Z"/></svg>`;
++};
++
+ ---
+ 
+ {mode === "comparison-decision" && decisionCards.length > 0 && (
+@@ -82,6 +99,9 @@ const getDecisionIcon = (label: string) => {
+               )}`
+             ]}
+             aria-hidden="true"
++            set:html={getDecisionIconSvg(
++              getDecisionIcon(`${card.label} ${card.title}`)
++            )}
+           ></span>
+ 
+           <div class="home41-decision__media">
+diff --git a/packages/affiliate-core/src/components/home/HomeSection.astro b/packages/affiliate-core/src/components/home/HomeSection.astro
+index f14972b..ca13b22 100644
+--- a/packages/affiliate-core/src/components/home/HomeSection.astro
++++ b/packages/affiliate-core/src/components/home/HomeSection.astro
+@@ -1,6 +1,6 @@
+ ---
+ import OptimizedImage from "../OptimizedImage.astro";
+-import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
++import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+ import type {
+   HomeCategoryCard,
+   HomeEditorialCard,
+diff --git a/packages/affiliate-core/src/components/home/HomeSections.astro b/packages/affiliate-core/src/components/home/HomeSections.astro
+index 94778b6..073773f 100644
+--- a/packages/affiliate-core/src/components/home/HomeSections.astro
++++ b/packages/affiliate-core/src/components/home/HomeSections.astro
+@@ -2,7 +2,7 @@
+ import OptimizedImage from "../OptimizedImage.astro";
+ import type { HomeCard, HomeCategory, HomeProduct } from "../../home/model";
+ 
+-import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
++import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+ type Props = {
+   kind: "categories" | "editorial" | "products";
+   eyebrow: string;
+diff --git a/packages/affiliate-core/src/components/home/home.css b/packages/affiliate-core/src/components/home/home.css
+index 3cc97b4..55efdef 100644
+--- a/packages/affiliate-core/src/components/home/home.css
++++ b/packages/affiliate-core/src/components/home/home.css
+@@ -1404,3 +1404,159 @@
+   }
+ }
+ /* End PT homepage hero + quick comparison chips 4.2 */
++
++/* PT homepage mobile alignment 4.3 */
++@media (max-width: 720px) {
++  .home5 > .home3-hero,
++  .home3 > .home3-hero {
++    width: 100vw;
++    min-height: clamp(620px, 84svh, 760px);
++    margin-top: 0;
++    margin-right: calc(50% - 50vw);
++    margin-left: calc(50% - 50vw);
++    border-radius: 0;
++    box-shadow: none;
++  }
++
++  .home3-hero__content {
++    width: min(100%, 42rem);
++    min-height: inherit;
++    margin-inline: auto;
++    justify-content: flex-end;
++    padding:
++      clamp(8rem, 24svh, 13rem)
++      max(1.5rem, env(safe-area-inset-right))
++      clamp(1.65rem, 5vw, 2.2rem)
++      max(1.5rem, env(safe-area-inset-left));
++  }
++
++  .home3-hero h1 {
++    max-width: 10.4ch;
++    margin: 0.55rem 0 1rem;
++    font-size: clamp(2.55rem, 11.2vw, 3.65rem);
++    line-height: 0.98;
++    letter-spacing: -0.055em;
++  }
++
++  .home3-hero__text {
++    max-width: 31ch;
++    font-size: 1rem;
++    line-height: 1.55;
++  }
++
++  .home3-hero__actions {
++    display: grid;
++    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
++    gap: 0.65rem;
++    margin-top: 1.35rem;
++  }
++
++  .home3-signals {
++    gap: 0.5rem;
++    margin-top: 1rem;
++  }
++
++  .home3-signals li {
++    min-height: 32px;
++    padding: 0.34rem 0.62rem;
++    font-size: 0.75rem;
++  }
++
++  .home3-hero__media img {
++    object-position: 60% 50%;
++  }
++
++  .home41-decision__grid {
++    grid-template-columns: repeat(2, minmax(0, 1fr));
++    gap: 0.8rem;
++  }
++
++  .home41-decision__card {
++    position: relative;
++    display: grid;
++    min-height: 104px;
++    grid-template-columns: 44px minmax(0, 1fr) 18px;
++    gap: 0.72rem;
++    align-items: center;
++    padding: 0.95rem;
++    border-radius: 1rem;
++    background: var(--home3-soft);
++    box-shadow: none;
++  }
++
++  .home41-decision__media {
++    display: none;
++  }
++
++  .home41-decision__quick-icon {
++    display: grid;
++    width: 44px;
++    height: 44px;
++    place-items: center;
++    border: 1px solid color-mix(in srgb, var(--home3-accent) 20%, transparent);
++    border-radius: 999px;
++    color: var(--home3-accent);
++    background: color-mix(in srgb, var(--home3-accent) 10%, var(--home3-soft));
++  }
++
++  .home41-decision__quick-icon svg {
++    width: 22px;
++    height: 22px;
++    fill: none;
++    stroke: currentColor;
++    stroke-width: 1.8;
++    stroke-linecap: round;
++    stroke-linejoin: round;
++  }
++
++  .home41-decision__content {
++    display: block;
++    min-width: 0;
++    padding: 0;
++  }
++
++  .home41-decision__content h3 {
++    margin: 0;
++    font-size: clamp(0.98rem, 4vw, 1.12rem);
++    line-height: 1.22;
++    overflow-wrap: normal;
++    word-break: normal;
++    hyphens: none;
++  }
++
++  .home41-decision__content > p,
++  .home41-decision__meta,
++  .home41-decision__cta-label {
++    display: none;
++  }
++
++  .home41-decision__content > b {
++    position: static;
++    margin: 0;
++    font-size: 0;
++  }
++
++  .home41-decision__content > b > span:last-child {
++    position: absolute;
++    top: 50%;
++    right: 0.95rem;
++    color: var(--home3-accent);
++    font-size: 1.3rem;
++    transform: translateY(-50%);
++  }
++}
++
++@media (max-width: 390px) {
++  .home3-hero__actions {
++    grid-template-columns: 1fr;
++  }
++
++  .home41-decision__grid {
++    grid-template-columns: 1fr;
++  }
++
++  .home41-decision__card {
++    min-height: 88px;
++  }
++}
++/* End PT homepage mobile alignment 4.3 */
+diff --git a/packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro b/packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro
+index b38546b..7c1ab56 100644
+--- a/packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro
++++ b/packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro
+@@ -1,6 +1,7 @@
+ ---
+ import ProductImage from "../ProductImage.astro";
+ 
++import EditorialScore from "../EditorialScore.astro";
+ import type {
+   AlternativeRecommendation
+ } from "./alternativeRecommendation.types";
+@@ -133,7 +134,7 @@ const iconSvg = (type: string) => {
+               <div class="alternative-recommendation-meta">
+                 <span>Wann stattdessen?</span>
+ 
+-                <strong>{alternative.score} / 100</strong>
++                <EditorialScore value={alternative.score} variant="inline" />
+               </div>
+ 
+               <span
+@@ -174,7 +175,7 @@ const iconSvg = (type: string) => {
+               }
+ 
+               <div class="alternative-recommendation-footer">
+-                <span>{alternative.rating} / 5</span>
++                <EditorialScore value={alternative.rating} scale={5} variant="inline" />
+ 
+                 <a href={alternative.url}>
+                   Zum vollständigen Test
+diff --git a/packages/affiliate-core/src/components/product/ProductReview.astro b/packages/affiliate-core/src/components/product/ProductReview.astro
+index b989b5d..73cab03 100644
+--- a/packages/affiliate-core/src/components/product/ProductReview.astro
++++ b/packages/affiliate-core/src/components/product/ProductReview.astro
+@@ -3,6 +3,7 @@ import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro
+ import OptimizedImage from "../OptimizedImage.astro";
+ import { getImage } from "astro:assets";
+ import type { ImageMetadata } from "astro";
++import EditorialScore from "../EditorialScore.astro";
+ import type {
+   AlternativeRecommendation
+ } from "./alternativeRecommendation.types";
+@@ -131,11 +132,12 @@ const ratingEntries = Object
+ const topMetrics = ratingEntries.slice(0, 3);
+ 
+ const getRatingDescriptor = (rating: number) => {
+-  if (rating >= 4.7) return "Stark";
+-  if (rating >= 4.4) return "Überzeugend";
+-  if (rating >= 4.1) return "Gut";
+-  if (rating >= 3.7) return "Solide";
+-  return "Mit Abstrichen";
++  const score = Math.round(rating * 20);
++  if (score >= 90) return "Hervorragend";
++  if (score >= 80) return "Sehr gut";
++  if (score >= 70) return "Gut";
++  if (score >= 60) return "Solide";
++  return "Mit Einschränkungen";
+ };
+ 
+ const getRatingWidth = (rating: number) =>
+@@ -183,17 +185,6 @@ const quickFacts = [
+   }
+ ].filter((item) => item.value);
+ 
+-const scoreLabel =
+-  product.score >= 90
+-    ? "Hervorragend"
+-    : product.score >= 80
+-      ? "Sehr gut"
+-      : product.score >= 70
+-        ? "Gut"
+-        : product.score >= 60
+-          ? "Solide"
+-          : "Mit Einschränkungen";
+-
+ const badgeLabels: Record<string, string> = {
+   testsieger: "Testsieger",
+   "top-empfehlung": "Top-Empfehlung",
+@@ -467,28 +458,12 @@ const displayHighlights = [
+             }
+           </div>
+ 
+-          <section
+-            class="product-verdict-v4"
+-            aria-label="Gesamtbewertung"
+-          >
+-            <div class="product-verdict-v4__top">
+-              <div>
+-                <span>Gesamturteil</span>
+-                <h2>{scoreLabel}</h2>
+-              </div>
+-
+-              <strong>
+-                {product.rating.toFixed(1).replace(".", ",")} / 5
+-              </strong>
+-            </div>
+-
+-            <div
+-              class="product-verdict-v4__stars"
+-              aria-label={`${product.rating} von 5 Sternen`}
+-            >
+-              ★★★★★
+-            </div>
+-
++          <section class="product-verdict-v4" aria-label="Gesamtbewertung">
++            <EditorialScore
++              value={product.score}
++              variant="detailed"
++              showMethodology
++            />
+             <p>{product.review.verdict}</p>
+           </section>
+ 
+@@ -500,9 +475,7 @@ const displayHighlights = [
+                     <div>
+                       <dt>{getRatingLabel(key)}</dt>
+                       <dd>
+-                        {Number(value)
+-                          .toFixed(1)
+-                          .replace(".", ",")} / 5
++                        {Math.round(Number(value) * 20)}
+                       </dd>
+                     </div>
+                   ))
+@@ -604,9 +577,7 @@ const displayHighlights = [
+                         <strong>{getRatingLabel(key)}</strong>
+ 
+                         <span>
+-                          {numericValue
+-                            .toFixed(1)
+-                            .replace(".", ",")} / 5
++                          {Math.round(numericValue * 20)}
+                         </span>
+                       </div>
+ 

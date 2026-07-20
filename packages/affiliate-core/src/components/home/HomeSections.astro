@@ -2,7 +2,7 @@
 import OptimizedImage from "../OptimizedImage.astro";
 import type { HomeCard, HomeCategory, HomeProduct } from "../../home/model";
 
-import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
+import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
 type Props = {
   kind: "categories" | "editorial" | "products";
   eyebrow: string;

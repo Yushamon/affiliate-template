@@ -1,6 +1,7 @@
 ---
 import ProductImage from "../ProductImage.astro";
 
+import EditorialScore from "../EditorialScore.astro";
 import type {
   AlternativeRecommendation
 } from "./alternativeRecommendation.types";
@@ -133,7 +134,7 @@ const iconSvg = (type: string) => {
               <div class="alternative-recommendation-meta">
                 <span>Wann stattdessen?</span>
 
-                <strong>{alternative.score} / 100</strong>
+                <EditorialScore value={alternative.score} variant="inline" />
               </div>
 
               <span
@@ -174,7 +175,7 @@ const iconSvg = (type: string) => {
               }
 
               <div class="alternative-recommendation-footer">
-                <span>{alternative.rating} / 5</span>
+                <EditorialScore value={alternative.rating} scale={5} variant="inline" />
 
                 <a href={alternative.url}>
                   Zum vollständigen Test
