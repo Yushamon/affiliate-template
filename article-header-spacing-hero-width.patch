@@ -1,0 +1,50 @@
+diff --git a/packages/affiliate-core/src/styles/article.css b/packages/affiliate-core/src/styles/article.css
+index 1d2347b..9878dd9 100644
+--- a/packages/affiliate-core/src/styles/article.css
++++ b/packages/affiliate-core/src/styles/article.css
+@@ -37,7 +37,9 @@
+ }
+ 
+ .article-hero {
+-  margin-bottom: 32px;
++  max-width: none;
++  width: 100%;
++  margin: 0 0 32px;
+   aspect-ratio: 16 / 9;
+   overflow: hidden;
+   border-radius: 32px;
+@@ -922,6 +924,17 @@ font-size:14px;
+ 
+ }
+ 
++.article-meta-dates > span {
++  display: inline-flex;
++  align-items: baseline;
++  gap: 0.35em;
++}
++
++.article-meta-dates > span > strong {
++  flex: 0 0 auto;
++}
++
++
+ .article-meta strong{
+ 
+ color:var(--text);
+@@ -1006,3 +1019,16 @@ color:var(--text);
+     border-radius: 20px;
+   }
+ }
++
++/* PfotenTechnik mobile article header fixes */
++
++@media (max-width: 760px) {
++  .article-hero {
++    width: 100%;
++    margin-inline: 0;
++  }
++
++  .article-meta-dates {
++    row-gap: 12px;
++  }
++}
