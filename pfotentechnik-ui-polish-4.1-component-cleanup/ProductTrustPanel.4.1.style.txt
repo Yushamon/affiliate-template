@@ -1,0 +1,96 @@
+
+<style>
+  .pt-trust-panel {
+    --trust-surface: #f8fafc;
+    --trust-card: #ffffff;
+    --trust-text: #0f172a;
+    --trust-muted: #334155;
+    --trust-subtle: #64748b;
+    --trust-accent: #2e7d32;
+    --trust-border: rgba(15, 23, 42, 0.12);
+
+    display: grid;
+    gap: 24px;
+    margin: 48px auto;
+    padding: clamp(24px, 4vw, 38px);
+    border: 1px solid var(--trust-border);
+    border-radius: 24px;
+    background: var(--trust-surface);
+  }
+
+  .pt-trust-panel__heading span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--trust-accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pt-trust-panel h2 {
+    margin: 0;
+    color: var(--trust-text);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  .pt-trust-panel__content {
+    display: grid;
+    gap: 16px;
+  }
+
+  .pt-trust-panel p {
+    margin: 0;
+    color: var(--trust-muted);
+    line-height: 1.72;
+  }
+
+  .pt-trust-panel dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 4px 0 0;
+  }
+
+  .pt-trust-panel dl div {
+    min-width: 0;
+    padding: 14px 16px;
+    border: 1px solid color-mix(in srgb, var(--trust-border) 70%, transparent);
+    border-radius: 16px;
+    background: var(--trust-card);
+  }
+
+  .pt-trust-panel dt {
+    color: var(--trust-subtle);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .pt-trust-panel dd {
+    margin: 4px 0 0;
+    color: var(--trust-text);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .pt-trust-panel {
+      --trust-surface: #101f32;
+      --trust-card: #16263c;
+      --trust-text: #f8fafc;
+      --trust-muted: #b8c4d3;
+      --trust-subtle: #94a3b8;
+      --trust-accent: #5ee19a;
+      --trust-border: rgba(203, 213, 225, 0.16);
+    }
+  }
+
+  @media (max-width: 720px) {
+    .pt-trust-panel dl {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
