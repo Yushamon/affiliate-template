@@ -1,0 +1,175 @@
+/* === PfotenTechnik UI Fix 3.6.5 === */
+
+/*
+ * A: Der Seiten-/Produktwrapper darf keine eigene Kartenfarbe tragen.
+ * Nur echte Karten und Panels erhalten eine Oberfläche.
+ */
+.product-detail,
+.pt-product-detail,
+.product-review-v4 {
+  background: transparent !important;
+}
+
+.product-review-v4 {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Abschnitte ohne eigene Karte bleiben auf dem Seitenhintergrund */
+.product-decision-v4,
+.product-ratings-v4,
+.product-strengths-v4,
+.product-alternatives-v4,
+.product-specs-v4,
+.pt-everyday-review,
+.pt-conversion-journey {
+  background: transparent !important;
+}
+
+/* Überschriftenbereiche dürfen ebenfalls keinen durchgehenden Block bilden */
+.product-decision-v4 > header,
+.product-ratings-v4 > header,
+.product-strengths-v4 > header,
+.product-alternatives-v4 > header,
+.product-specs-v4 > header,
+.pt-everyday-review > header {
+  background: transparent !important;
+}
+
+/*
+ * Die echten Produktkarten behalten eine einheitliche dunkle Fläche.
+ */
+@media (prefers-color-scheme: dark) {
+  .product-hero-v4,
+  .product-hero-v4__content,
+  .product-summary-card-v4,
+  .product-decision-v4__grid > article,
+  .product-strengths-v4__grid > article,
+  .product-rating-card-v4,
+  .product-specs-v4 dl,
+  .pt-everyday-review-grid > article,
+  .pt-trust-panel,
+  .pt-product-health,
+  .alternative-recommendation-card {
+    border-color: rgba(203, 213, 225, 0.16) !important;
+    background: #101f32 !important;
+  }
+
+  /*
+   * Positive/negative Entscheidungskarten behalten ihre semantische Farbe,
+   * ohne den gesamten Seitenbereich einzufärben.
+   */
+  .product-decision-v4__positive,
+  .product-strengths-v4__positive {
+    background: #123d3b !important;
+  }
+
+  .product-decision-v4__attention,
+  .product-strengths-v4__neutral {
+    border-color: rgba(248, 113, 113, 0.22) !important;
+    background: #352332 !important;
+  }
+}
+
+/*
+ * B: Vergleichsbilder kompakter und hochwertiger darstellen.
+ * Der bisherige große weiße Canvas wird entfernt.
+ */
+.recommendation-card__image-link,
+.comparison-card__image,
+.comparison-mobile-product__image {
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  padding: 10px !important;
+  border-radius: 18px !important;
+  background:
+    linear-gradient(
+      145deg,
+      #edf2f0,
+      #dfe8e4
+    ) !important;
+}
+
+/* Bildfläche in der Empfehlung nicht übermäßig hoch */
+.recommendation-card__image-link {
+  width: 100% !important;
+  min-height: 0 !important;
+  aspect-ratio: 16 / 10 !important;
+}
+
+/* Astro picture-Wrapper füllt die Fläche */
+.recommendation-card__image-link picture,
+.comparison-card__image picture,
+.comparison-mobile-product__image picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+}
+
+/*
+ * Leichtes Zoomen reduziert eingebettete weiße Ränder in bestehenden
+ * Produktbildern, ohne neue Bilddateien zu benötigen.
+ */
+.recommendation-card__image-link img,
+.comparison-card__image img,
+.comparison-mobile-product__image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 12px !important;
+  transform: scale(1.06);
+  transform-origin: center;
+}
+
+/* Empfehlungskarte: Bild und Inhalt mobil sauber untereinander */
+@media (max-width: 760px) {
+  .recommendation-card {
+    overflow: hidden !important;
+  }
+
+  .recommendation-card__image-link {
+    margin: 14px 14px 0 !important;
+    width: calc(100% - 28px) !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+
+  .recommendation-card__content {
+    min-width: 0 !important;
+    padding-top: 18px !important;
+  }
+
+  .recommendation-card__image-link img {
+    transform: scale(1.1);
+  }
+}
+
+/*
+ * Falls eine Variante das Bild als direktes Kind statt über picture rendert.
+ */
+.recommendation-card__image-link > img,
+.comparison-card__image > img,
+.comparison-mobile-product__image > img {
+  max-width: none !important;
+}
+
+/* Manuelles Dark Theme */
+:root[data-theme="dark"] .product-review-v4,
+html.dark .product-review-v4,
+body.dark-mode .product-review-v4 {
+  background: transparent !important;
+}
+
+:root[data-theme="dark"] .recommendation-card__image-link,
+html.dark .recommendation-card__image-link,
+body.dark-mode .recommendation-card__image-link {
+  background: linear-gradient(145deg, #edf2f0, #dfe8e4) !important;
+}
+
+/* === End PfotenTechnik UI Fix 3.6.5 === */
