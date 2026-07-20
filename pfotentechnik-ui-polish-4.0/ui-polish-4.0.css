@@ -1,0 +1,444 @@
+/* === PfotenTechnik UI Polish 4.0 === */
+
+/*
+ * Foundation
+ */
+:root {
+  --pt-polish-radius-card: 24px;
+  --pt-polish-radius-soft: 18px;
+  --pt-polish-space-section: clamp(52px, 7vw, 88px);
+  --pt-polish-space-card: clamp(22px, 4vw, 34px);
+  --pt-polish-icon-size: 42px;
+  --pt-polish-line: rgba(15, 23, 42, 0.12);
+  --pt-polish-shadow: 0 18px 54px rgba(15, 23, 42, 0.08);
+}
+
+/*
+ * Section rhythm
+ */
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card,
+  .pt-trust-panel,
+  .pt-product-health,
+  .pt-conversion-journey,
+  .pt-everyday-review,
+  .product-decision-v4,
+  .product-ratings-v4,
+  .product-strengths-v4,
+  .product-alternatives-v4,
+  .product-specs-v4
+) {
+  scroll-margin-top: 104px;
+}
+
+:where(
+  .pt-everyday-review,
+  .pt-product-health,
+  .pt-conversion-journey,
+  .product-decision-v4,
+  .product-ratings-v4,
+  .product-strengths-v4,
+  .product-alternatives-v4,
+  .product-specs-v4
+) {
+  margin-block: var(--pt-polish-space-section) !important;
+}
+
+/*
+ * Unified card polish
+ */
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card,
+  .pt-trust-panel,
+  .pt-product-health,
+  .pt-conversion-journey__card,
+  .pt-everyday-review-grid > article,
+  .alternative-recommendation-card,
+  .manufacturer-card,
+  .recommendation-card,
+  .home41-decision__card,
+  .home3-product-card,
+  .home3-editorial-card
+) {
+  border-radius: var(--pt-polish-radius-card) !important;
+  box-shadow: var(--pt-polish-shadow);
+}
+
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card
+) {
+  padding: var(--pt-polish-space-card) !important;
+}
+
+/*
+ * Premium block header pattern
+ * Existing free-floating icons become compact badges beside the eyebrow.
+ */
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card
+) > :first-child:is(
+  span,
+  strong,
+  b,
+  i,
+  em
+) {
+  display: inline-flex !important;
+  width: var(--pt-polish-icon-size) !important;
+  height: var(--pt-polish-icon-size) !important;
+  margin: 0 10px 14px 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid rgba(46, 125, 50, 0.18) !important;
+  border-radius: 14px !important;
+  background: rgba(46, 125, 50, 0.1) !important;
+  color: #2e7d32 !important;
+  font-size: 0 !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card
+) > :first-child:is(
+  span,
+  strong,
+  b,
+  i,
+  em
+)::before {
+  content: "•";
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+/* Semantic icon fallbacks */
+:where(.premium-block,.decision-template-card,.article-callout)
+  > :first-child:is(span,strong,b,i,em)::before {
+  content: "✓";
+}
+
+:where(.info-card,.feature-card,.summary-card)
+  > :first-child:is(span,strong,b,i,em)::before {
+  content: "i";
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+:where(.warning-card,.health-bridge)
+  > :first-child:is(span,strong,b,i,em)::before {
+  content: "!";
+}
+
+/*
+ * Eyebrows
+ */
+:where(
+  .pt-eyebrow,
+  .section-eyebrow,
+  .card-eyebrow,
+  .manufacturer-hub-eyebrow,
+  .manufacturer-card-eyebrow,
+  .pt-trust-panel__heading > span,
+  .pt-product-health > span,
+  .pt-everyday-review > header > span,
+  .pt-conversion-journey__header > span,
+  .product-decision-v4 > header > span,
+  .product-ratings-v4 > header > span,
+  .product-strengths-v4 > header > span,
+  .product-alternatives-v4 > header > span,
+  .product-specs-v4 > header > span
+) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 10px !important;
+  font-size: 0.76rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.09em !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
+}
+
+/*
+ * Headings
+ */
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card,
+  .pt-trust-panel,
+  .pt-product-health,
+  .pt-everyday-review,
+  .pt-conversion-journey
+) :where(h2,h3) {
+  text-wrap: balance;
+  letter-spacing: -0.035em !important;
+}
+
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card
+) h2 {
+  margin-top: 0 !important;
+  font-size: clamp(1.75rem, 4.7vw, 2.8rem) !important;
+  line-height: 1.08 !important;
+}
+
+:where(
+  .premium-block,
+  .decision-template-card,
+  .article-callout,
+  .info-card,
+  .feature-card,
+  .health-bridge,
+  .warning-card,
+  .summary-card
+) p {
+  max-width: 68ch;
+  line-height: 1.7 !important;
+}
+
+/*
+ * Buttons and links
+ */
+:where(
+  .pt-button,
+  .manufacturer-link,
+  .home41-decision__content > b,
+  .recommendation-card__actions a,
+  .alternative-recommendation-footer a,
+  .pt-conversion-journey__card a
+) {
+  text-underline-offset: 3px;
+}
+
+:where(
+  .pt-button,
+  .recommendation-card__actions a,
+  .alternative-recommendation-footer a
+) {
+  min-height: 48px;
+  border-radius: 999px !important;
+}
+
+/*
+ * Chips
+ */
+:where(
+  .alternative-recommendation-tags li,
+  .product-hero-v4__tags span,
+  .tag,
+  .chip,
+  .category-pill,
+  .fit-badge
+) {
+  min-height: 34px !important;
+  padding: 7px 12px !important;
+  border-radius: 999px !important;
+  font-size: 0.82rem !important;
+  font-weight: 750 !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/*
+ * Score polish
+ */
+:where(
+  .manufacturer-rating,
+  .home3-rating,
+  .recommendation-card__rating,
+  .alternative-recommendation-meta > strong,
+  .product-score,
+  .rating
+) {
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Image cards
+ */
+:where(
+  .manufacturer-card-image,
+  .recommendation-card__image-link,
+  .comparison-card__image,
+  .comparison-mobile-product__image,
+  .home3-product-card__media
+) {
+  isolation: isolate;
+}
+
+:where(
+  .manufacturer-card-image,
+  .recommendation-card__image-link,
+  .comparison-card__image,
+  .comparison-mobile-product__image
+) img {
+  transition: transform 220ms ease;
+}
+
+@media (hover: hover) {
+  :where(
+    .manufacturer-card,
+    .recommendation-card,
+    .comparison-card,
+    .home3-product-card
+  ):hover img {
+    transform: scale(1.025);
+  }
+}
+
+/*
+ * Dark mode
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pt-polish-line: rgba(203, 213, 225, 0.16);
+    --pt-polish-shadow: 0 20px 58px rgba(0, 0, 0, 0.28);
+  }
+
+  :where(
+    .premium-block,
+    .decision-template-card,
+    .article-callout,
+    .info-card,
+    .feature-card,
+    .health-bridge,
+    .warning-card,
+    .summary-card
+  ) > :first-child:is(
+    span,
+    strong,
+    b,
+    i,
+    em
+  ) {
+    border-color: rgba(94, 225, 154, 0.24) !important;
+    background: rgba(94, 225, 154, 0.1) !important;
+    color: #86efac !important;
+  }
+
+  :where(.warning-card,.health-bridge)
+    > :first-child:is(span,strong,b,i,em) {
+    border-color: rgba(245, 158, 11, 0.25) !important;
+    background: rgba(245, 158, 11, 0.1) !important;
+    color: #fbbf24 !important;
+  }
+}
+
+/*
+ * Mobile polish
+ */
+@media (max-width: 760px) {
+  :root {
+    --pt-polish-radius-card: 20px;
+    --pt-polish-radius-soft: 16px;
+    --pt-polish-space-section: 48px;
+    --pt-polish-space-card: 22px;
+    --pt-polish-icon-size: 38px;
+  }
+
+  :where(
+    .premium-block,
+    .decision-template-card,
+    .article-callout,
+    .info-card,
+    .feature-card,
+    .health-bridge,
+    .warning-card,
+    .summary-card
+  ) {
+    padding: 22px !important;
+  }
+
+  :where(
+    .premium-block,
+    .decision-template-card,
+    .article-callout,
+    .info-card,
+    .feature-card,
+    .health-bridge,
+    .warning-card,
+    .summary-card
+  ) h2 {
+    font-size: clamp(1.7rem, 8vw, 2.3rem) !important;
+  }
+
+  :where(
+    .premium-block,
+    .decision-template-card,
+    .article-callout,
+    .info-card,
+    .feature-card,
+    .health-bridge,
+    .warning-card,
+    .summary-card
+  ) p {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+}
+
+/*
+ * Reduced motion
+ */
+@media (prefers-reduced-motion: reduce) {
+  :where(
+    .manufacturer-card-image,
+    .recommendation-card__image-link,
+    .comparison-card__image,
+    .comparison-mobile-product__image
+  ) img {
+    transition: none !important;
+  }
+}
+
+/* === End PfotenTechnik UI Polish 4.0 === */
