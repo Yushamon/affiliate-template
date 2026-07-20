@@ -1,18 +1,19 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-19T19:51:06.080Z
+Erstellt: 2026-07-20T04:44:20.152Z
 
 ## Zusammenfassung
 
-- Produkte: 58
+- Produkte: 66
 - Fehler: 0
-- Warnungen: 71
+- Warnungen: 70
 - Doppelte Slugs: 0
 
 ## Kategorien
 
 - futterautomaten: 38
 - trinkbrunnen: 20
+- gps-tracker: 8
 
 ## Produkte mit Handlungsbedarf
 
@@ -42,15 +43,6 @@ Erstellt: 2026-07-19T19:51:06.080Z
 - Warnungen:
   - Nur 1 Galerie-Bilder hinterlegt
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-
-### HoneyGuardian A305D
-
-- Datei: `src\content\products\honeyguardian-a305d.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld fehlt: napf
 
 ### HoneyGuardian Smart Pet Feeder S305D
 
@@ -169,6 +161,14 @@ Erstellt: 2026-07-19T19:51:06.080Z
 
 - Datei: `src\content\products\cat-mate-shell-fountain.md`
 - Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+
+### HoneyGuardian A305D
+
+- Datei: `src\content\products\honeyguardian-a305d.md`
+- Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink

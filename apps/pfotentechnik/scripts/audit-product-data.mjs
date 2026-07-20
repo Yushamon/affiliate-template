@@ -52,6 +52,27 @@ const CATEGORY_RULES = {
       ["maße", "masse", "abmessungen"],
       ["gewicht"]
     ]
+  },
+  "gps-tracker": {
+    requiredSpecs: [
+      ["ortung", "satellitensysteme"],
+      ["übertragung", "uebertragung", "funksystem"],
+      ["reichweite", "funkreichweite"],
+      ["abo", "abonnement"],
+      ["akkulaufzeit", "akku"],
+      ["stromversorgung", "betrieb"],
+      ["geeignet für", "geeignet fuer", "zielgruppe"],
+      ["befestigung", "halsband"]
+    ],
+    recommendedSpecs: [
+      ["app", "app-steuerung"],
+      ["wlan", "wifi"],
+      ["bluetooth"],
+      ["wasserschutz", "wasserdicht", "ip-schutz"],
+      ["abmessungen", "maße", "masse"],
+      ["gewicht"],
+      ["material"]
+    ]
   }
 };
 

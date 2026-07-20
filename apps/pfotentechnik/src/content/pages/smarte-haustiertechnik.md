@@ -275,6 +275,8 @@ Trinkbrunnen schaffen eine zusätzliche Wasserstelle mit bewegtem Wasser. Releva
 
 GPS-Tracker verbinden Satellitenortung meist mit Mobilfunk oder einem anderen Übertragungsweg. Deshalb zählen nicht nur Größe und Akku, sondern Netzabdeckung, Aktualisierungsintervall, Abo, Befestigung und die Frage, wie der Tracker sich bei leerem Akku verhält. Ein virtueller Zaun ist eine Benachrichtigung – keine physische Begrenzung.
 
+Der Cornerstone [GPS-Tracker für Hunde und Katzen](/gps-tracker/) trennt Positionsbestimmung, Übertragung und App-Anzeige, führt zu den Tiervergleichen und ordnet Abo-, Akku-, Befestigungs- und Datenschutzfragen ein.
+
 ### Smarte Katzenklappen
 
 Smarte Klappen erkennen Tiere etwa über einen vorhandenen Mikrochip oder einen Halsbandanhänger und können Ein- und Ausgangsregeln anwenden. Wichtig sind kompatible Chipstandards, Durchgangsmaß, Verriegelungslogik, Geräusch, Batteriewarnung und manuelle Entriegelung. In Mehrtierhaushalten muss die Regel je Tier und Richtung verständlich konfigurierbar sein.

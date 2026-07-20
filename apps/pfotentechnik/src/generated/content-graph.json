@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-19T19:09:44.169Z",
+  "generatedAt": "2026-07-20T04:44:19.766Z",
   "nodes": [
     {
       "id": "manufacturer:cat-mate",
       "slug": "cat-mate",
       "route": "/hersteller/cat-mate/",
       "title": "Cat Mate",
-      "description": "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind.",
+      "description": "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -20,11 +20,29 @@
       "cornerstone": false
     },
     {
+      "id": "manufacturer:garmin",
+      "slug": "garmin",
+      "route": "/hersteller/garmin/",
+      "title": "Garmin",
+      "description": "Garmin im GPS-Hundebereich: Alpha-Handgeräte, T 20 und TT 25, VHF-Reichweite, Akku, Zubehör, Garantie und Abgrenzung zu Mobilfunktrackern.",
+      "type": "manufacturer",
+      "cluster": "",
+      "topics": [
+        "hersteller",
+        "garmin",
+        "gps-tracker",
+        "vhf"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "manufacturer:honeyguardian",
       "slug": "honeyguardian",
       "route": "/hersteller/honeyguardian/",
       "title": "HoneyGuardian",
-      "description": "HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag.",
+      "description": "HoneyGuardian im Überblick: Futterautomaten mit Timer oder WLAN, Zielgruppen, App, Ersatzteile, Garantie sowie Stärken und Schwächen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -41,7 +59,7 @@
       "slug": "imipaw",
       "route": "/hersteller/imipaw/",
       "title": "IMIPAW",
-      "description": "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen.",
+      "description": "IMIPAW im Überblick: einfache Futterautomaten für den Einstieg, Zielgruppen, Funktionen, Ersatzteile, Garantie und passende Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -58,7 +76,7 @@
       "slug": "oneisall",
       "route": "/hersteller/oneisall/",
       "title": "oneisall",
-      "description": "oneisall entwickelt vor allem Produkte für die Fellpflege von Hunden und Katzen und hat sein Sortiment in den vergangenen Jahren um automatische Futterautomaten erweitert. Die Marke richtet sich vor allem an preisbewusste Tierhalter, die moderne Funktionen zu einem attraktiven Preis suchen.",
+      "description": "oneisall im Überblick: Futterautomaten und Trinkbrunnen für Hunde und Katzen, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -71,11 +89,28 @@
       "cornerstone": false
     },
     {
+      "id": "manufacturer:paj-gps",
+      "slug": "paj-gps",
+      "route": "/hersteller/paj-gps/",
+      "title": "PAJ GPS",
+      "description": "PAJ GPS im Überblick: PET Finder 4G Mini, FINDER Portal, enthaltene Servicezeit, EU-Server, Zubehör und Garantie.",
+      "type": "manufacturer",
+      "cluster": "",
+      "topics": [
+        "hersteller",
+        "paj-gps",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "manufacturer:pawbby",
       "slug": "pawbby",
       "route": "/hersteller/pawbby/",
       "title": "PAWBBY",
-      "description": "PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden.",
+      "description": "PAWBBY im Überblick: smarte Haustiertechnik im Xiaomi-Umfeld, Zielgruppen, App-Ökosystem, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -92,7 +127,7 @@
       "slug": "petkit",
       "route": "/hersteller/petkit/",
       "title": "PETKIT",
-      "description": "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung.",
+      "description": "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -131,7 +166,7 @@
       "slug": "surefeed",
       "route": "/hersteller/surefeed/",
       "title": "SureFeed",
-      "description": "SureFeed gehört zu den bekanntesten Herstellern intelligenter Fütterungssysteme für Katzen und kleine Hunde. Die Marke konzentriert sich auf Mikrochip- und RFID-gestützte Lösungen, mit denen einzelne Tiere gezielt gefüttert werden können. Besonders in Mehrkatzenhaushalten gilt SureFeed seit Jahren als Referenz.",
+      "description": "SureFeed im Überblick: Mikrochip-Futterautomaten für getrennte Rationen, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -144,11 +179,45 @@
       "cornerstone": false
     },
     {
+      "id": "manufacturer:tractive",
+      "slug": "tractive",
+      "route": "/hersteller/tractive/",
+      "title": "Tractive",
+      "description": "Tractive im Überblick: GPS-Tracker für Hunde und Katzen, App-Ökosystem, Abo, Zubehör, Garantie, Datenschutz und Alternativen.",
+      "type": "manufacturer",
+      "cluster": "",
+      "topics": [
+        "hersteller",
+        "tractive",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "manufacturer:weenect",
+      "slug": "weenect",
+      "route": "/hersteller/weenect/",
+      "title": "Weenect",
+      "description": "Weenect im Überblick: XS und XT, App, Multi-Netz-SIM, Abo, Zubehör, lebenslange Garantie und Alternativen.",
+      "type": "manufacturer",
+      "cluster": "",
+      "topics": [
+        "hersteller",
+        "weenect",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "manufacturer:wopet",
       "slug": "wopet",
       "route": "/hersteller/wopet/",
       "title": "WOPET",
-      "description": "WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment.",
+      "description": "WOPET im Überblick: Futterautomaten ohne WLAN sowie Modelle mit App und Kamera, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -165,7 +234,7 @@
       "slug": "xiaomi",
       "route": "/hersteller/xiaomi/",
       "title": "Xiaomi",
-      "description": "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis.",
+      "description": "Xiaomi Smart Pet im Überblick: Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile und Alternativen.",
       "type": "manufacturer",
       "cluster": "",
       "topics": [
@@ -459,6 +528,26 @@
         "biofilm",
         "hygiene",
         "reinigung"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:datenschutz-bei-gps-trackern",
+      "slug": "datenschutz-bei-gps-trackern",
+      "route": "/datenschutz-bei-gps-trackern/",
+      "title": "Datenschutz bei GPS-Trackern",
+      "description": "Datenschutzcheck für Haustier-GPS: Standortverlauf, Haushaltsroutinen, App-Rechte, Familienfreigabe, Konto, Löschung, Export und Anbieterwechsel.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "datenschutz",
+        "standortdaten",
+        "app",
+        "sicherheit",
+        "gps-tracker"
       ],
       "entities": [],
       "priority": 50,
@@ -807,6 +896,125 @@
       "cornerstone": false
     },
     {
+      "id": "page:futtermenge-hund",
+      "slug": "futtermenge-hund",
+      "route": "/futtermenge-hund/",
+      "title": "Futtermenge beim Hund richtig berechnen",
+      "description": "Tägliche Futtermenge beim Hund aus Kalorienbedarf und Energiedichte ableiten, exakt wiegen und anhand der Körperkondition anpassen.",
+      "type": "page",
+      "cluster": "fuetterung",
+      "topics": [
+        "hund",
+        "futtermenge",
+        "fuetterung",
+        "kalorien",
+        "gewicht"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:futtermenge-katze",
+      "slug": "futtermenge-katze",
+      "route": "/futtermenge-katze/",
+      "title": "Futtermenge bei Katzen richtig berechnen",
+      "description": "Tägliche Futtermenge bei Katzen aus Kalorien und Energiedichte berechnen, Mischfütterung einplanen und Gewicht sicher kontrollieren.",
+      "type": "page",
+      "cluster": "fuetterung",
+      "topics": [
+        "katze",
+        "futtermenge",
+        "fuetterung",
+        "kalorien",
+        "gewicht",
+        "nassfutter"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:gps-oder-bluetooth",
+      "slug": "gps-oder-bluetooth",
+      "route": "/gps-oder-bluetooth/",
+      "title": "GPS oder Bluetooth?",
+      "description": "GPS-Tracker und Bluetooth-Tags für Haustiere unterscheiden: Ortungsweg, Reichweite, Aktualisierung, Akku, Abo und passende Einsätze.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "bluetooth",
+        "airtag",
+        "hund",
+        "katze",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:gps-tracker",
+      "slug": "gps-tracker",
+      "route": "/gps-tracker/",
+      "title": "GPS-Tracker für Hunde und Katzen",
+      "description": "Der zentrale Ratgeber zu GPS-Trackern für Hunde und Katzen: Technik, Tier-Fit, Reichweite, Akku, Abo, Datenschutz, Vergleiche und Produkte.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hund",
+        "katze",
+        "kaufberatung",
+        "ortung",
+        "datenschutz"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:gps-tracker-richtig-befestigen",
+      "slug": "gps-tracker-richtig-befestigen",
+      "route": "/gps-tracker-richtig-befestigen/",
+      "title": "GPS-Tracker richtig befestigen",
+      "description": "GPS-Tracker sicher an Halsband oder Geschirr befestigen: Sitz, Gewicht, Katzen-Sicherheitsverschluss, Scheuern, Antenne und tägliche Kontrolle.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "befestigung",
+        "halsband",
+        "geschirr",
+        "sicherheit",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:hund-entlaufen-gps-sinnvoll",
+      "slug": "hund-entlaufen-gps-sinnvoll",
+      "route": "/hund-entlaufen-gps-sinnvoll/",
+      "title": "Hund entlaufen – GPS sinnvoll?",
+      "description": "Hund entlaufen: GPS-Position richtig lesen, ruhig verfolgen, Helfer koordinieren, Registrierung nutzen und typische Suchfehler vermeiden.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "hund",
+        "entlaufen",
+        "gps",
+        "notfall",
+        "suche",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:hund-frisst-nicht",
       "slug": "hund-frisst-nicht",
       "route": "/hund-frisst-nicht/",
@@ -860,6 +1068,26 @@
         "schlappheit",
         "gesundheit",
         "verhalten",
+        "hundegesundheit"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:hund-trinkt-viel",
+      "slug": "hund-trinkt-viel",
+      "route": "/hund-trinkt-viel/",
+      "title": "Hund trinkt viel: Ursachen und Warnzeichen",
+      "description": "Vermehrten Durst beim Hund einordnen, Trinkmenge korrekt messen und erkennen, wann tierärztliche Abklärung wichtig ist.",
+      "type": "page",
+      "cluster": "hundegesundheit",
+      "topics": [
+        "hund",
+        "trinken",
+        "wasser",
+        "gesundheit",
+        "polydipsie",
         "hundegesundheit"
       ],
       "entities": [],
@@ -921,6 +1149,26 @@
         "verhalten",
         "wasser",
         "katzenverhalten"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:katze-entlaufen-gps-sinnvoll",
+      "slug": "katze-entlaufen-gps-sinnvoll",
+      "route": "/katze-entlaufen-gps-sinnvoll/",
+      "title": "Katze entlaufen – GPS sinnvoll?",
+      "description": "Katze entlaufen: GPS-Punkt und Zeitstempel richtig nutzen, ruhig im Nahbereich suchen, Nachbarn einbeziehen und Vermisstmeldung starten.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "katze",
+        "entlaufen",
+        "gps",
+        "notfall",
+        "suche",
+        "gps-tracker"
       ],
       "entities": [],
       "priority": 50,
@@ -1126,6 +1374,26 @@
       "cornerstone": false
     },
     {
+      "id": "page:reichweite-von-gps-trackern",
+      "slug": "reichweite-von-gps-trackern",
+      "route": "/reichweite-von-gps-trackern/",
+      "title": "Reichweite von GPS-Trackern",
+      "description": "GPS-Reichweite richtig verstehen: Satellitenempfang, Mobilfunkabdeckung, VHF-Funk, Bluetooth-Nähe und realistische Grenzen.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "reichweite",
+        "mobilfunk",
+        "vhf",
+        "bluetooth",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:seniorenhunde-richtig-versorgen",
       "slug": "seniorenhunde-richtig-versorgen",
       "route": "/seniorenhunde-richtig-versorgen/",
@@ -1181,6 +1449,29 @@
         "pet-tech",
         "kaufberatung",
         "ratgeber"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:smarte-haustiertechnik",
+      "slug": "smarte-haustiertechnik",
+      "route": "/smarte-haustiertechnik/",
+      "title": "Smarte Haustiertechnik – Der große Ratgeber",
+      "description": "Der zentrale Ratgeber für smarte Haustiertechnik: Gerätekategorien, Nutzen, Datenschutz, Verbindungen, Folgekosten und Kaufentscheidung.",
+      "type": "page",
+      "cluster": "haustiertechnik",
+      "topics": [
+        "smarte-haustiertechnik",
+        "pet-tech",
+        "kaufberatung",
+        "datenschutz",
+        "wlan",
+        "bluetooth",
+        "hund",
+        "katze",
+        "haustiertechnik"
       ],
       "entities": [],
       "priority": 50,
@@ -1288,6 +1579,26 @@
       "cornerstone": false
     },
     {
+      "id": "page:trinkbrunnen-hund",
+      "slug": "trinkbrunnen-hund",
+      "route": "/trinkbrunnen-hund/",
+      "title": "Trinkbrunnen für Hunde: Auswahl und Pflege",
+      "description": "Hundetrinkbrunnen nach Größe, Standfestigkeit, Trinkhöhe, Material, Reinigung und Folgekosten auswählen.",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "topics": [
+        "hund",
+        "trinkbrunnen",
+        "wasser",
+        "kaufberatung",
+        "reinigung",
+        "filter"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:trinkbrunnen-seniorenkatzen",
       "slug": "trinkbrunnen-seniorenkatzen",
       "route": "/trinkbrunnen-seniorenkatzen/",
@@ -1302,6 +1613,26 @@
         "wasser",
         "mobilitaet",
         "niere"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:trinkmenge-hund-messen",
+      "slug": "trinkmenge-hund-messen",
+      "route": "/trinkmenge-hund-messen/",
+      "title": "Trinkmenge beim Hund richtig messen",
+      "description": "Trinkmenge beim Hund über 24 Stunden messen, Wasser im Futter berücksichtigen und typische Messfehler vermeiden.",
+      "type": "page",
+      "cluster": "hundegesundheit",
+      "topics": [
+        "hund",
+        "trinkmenge",
+        "wasser",
+        "messen",
+        "gesundheit",
+        "hundegesundheit"
       ],
       "entities": [],
       "priority": 50,
@@ -1363,6 +1694,26 @@
         "bewegung",
         "body-condition-score",
         "katzenernaehrung"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:warum-brauchen-gps-tracker-ein-abo",
+      "slug": "warum-brauchen-gps-tracker-ein-abo",
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "title": "Warum benötigen viele Tracker ein Abo?",
+      "description": "Warum Mobilfunk-GPS-Tracker laufende Gebühren haben: SIM, Daten, Server, Karten, App, Support, Tarifmodelle und Alternativen ohne Abo.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "abo",
+        "kosten",
+        "sim",
+        "cloud",
+        "gps-tracker"
       ],
       "entities": [],
       "priority": 50,
@@ -1511,6 +1862,26 @@
       "cornerstone": false
     },
     {
+      "id": "page:wie-funktionieren-gps-tracker",
+      "slug": "wie-funktionieren-gps-tracker",
+      "route": "/wie-funktionieren-gps-tracker/",
+      "title": "Wie funktionieren GPS-Tracker?",
+      "description": "GPS-Tracker verständlich erklärt: Satellitenposition, Mobilfunk oder VHF, App, Live-Modus, Geozaun, Akku und typische Ausfälle.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "funktionsweise",
+        "mobilfunk",
+        "vhf",
+        "haustiere",
+        "gps-tracker"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:wie-funktioniert-ein-futterautomat",
       "slug": "wie-funktioniert-ein-futterautomat",
       "route": "/wie-funktioniert-ein-futterautomat/",
@@ -1524,6 +1895,26 @@
         "portionierung",
         "grundlagen",
         "futterautomaten"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:wie-genau-sind-gps-tracker",
+      "slug": "wie-genau-sind-gps-tracker",
+      "route": "/wie-genau-sind-gps-tracker/",
+      "title": "Wie genau sind GPS-Tracker?",
+      "description": "GPS-Genauigkeit bei Haustiertrackern realistisch einordnen: freier Himmel, Wald, Stadt, Innenraum, Kartenfehler, Zeitstempel und Suchstrategie.",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "topics": [
+        "gps",
+        "genauigkeit",
+        "ortung",
+        "karten",
+        "signal",
+        "gps-tracker"
       ],
       "entities": [],
       "priority": 50,
@@ -1604,6 +1995,27 @@
         "katze",
         "hund",
         "futterautomaten"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "page:wie-viel-wasser-braucht-ein-hund",
+      "slug": "wie-viel-wasser-braucht-ein-hund",
+      "route": "/wie-viel-wasser-braucht-ein-hund/",
+      "title": "Wie viel Wasser braucht ein Hund am Tag?",
+      "description": "Wasserbedarf beim Hund berechnen, Wasser im Futter berücksichtigen und Abweichungen richtig einordnen.",
+      "type": "page",
+      "cluster": "hundegesundheit",
+      "topics": [
+        "hund",
+        "wasser",
+        "trinken",
+        "gesundheit",
+        "nassfutter",
+        "trockenfutter",
+        "hundegesundheit"
       ],
       "entities": [],
       "priority": 50,
@@ -1877,11 +2289,55 @@
       "cornerstone": false
     },
     {
+      "id": "product:garmin-alpha-t-20",
+      "slug": "garmin-alpha-t-20",
+      "route": "/produkte/garmin-alpha-t-20/",
+      "title": "Garmin Alpha T 20",
+      "description": "VHF-GPS-Hundehalsband mit austauschbarem Akku, bis zu 68 Stunden Laufzeit und bis zu 14,48 km Hersteller-Funkreichweite.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "ohne-abo",
+        "vhf",
+        "jagdhunde",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-garmin-name-garmin-slug-garmin"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:garmin-alpha-tt-25",
+      "slug": "garmin-alpha-tt-25",
+      "route": "/produkte/garmin-alpha-tt-25/",
+      "title": "Garmin Alpha TT 25",
+      "description": "VHF-GPS-Hundehalsband für Ortung und kompatible Trainingsfunktionen mit bis zu 68 Stunden Akku und 14,48 km Maximalreichweite.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "ohne-abo",
+        "vhf",
+        "jagdhunde",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-garmin-name-garmin-slug-garmin"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "product:honeyguardian-a305d",
       "slug": "honeyguardian-a305d",
       "route": "/produkte/honeyguardian-a305d/",
       "title": "HoneyGuardian A305D",
-      "description": "Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird.",
+      "description": "HoneyGuardian A305D mit 5-Liter-Behälter und zwei Edelstahl-Näpfen: Portionierung, Stromversorgung und Eignung ohne App.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -1945,7 +2401,7 @@
       "slug": "imipaw-3l-automatic-cat-feeder",
       "route": "/produkte/imipaw-3l-automatic-cat-feeder/",
       "title": "IMIPAW 3L Automatic Cat Feeder",
-      "description": "Kompakter 3-Liter-Trockenfutterautomat mit lokaler Zeitsteuerung und Batterieoption.",
+      "description": "IMIPAW 3L Futterautomat im Datencheck: lokale Zeitsteuerung, Portionierung, Batterieoption, Reinigung und Eignung für Katzen.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2073,7 +2529,7 @@
       "slug": "oneisall-7l-dog-water-fountain",
       "route": "/produkte/oneisall-7l-dog-water-fountain/",
       "title": "oneisall 7L Dog Water Fountain",
-      "description": "Großer 7-Liter-Edelstahl-Trinkbrunnen für Hunde und Haushalte mit hohem Wasserbedarf.",
+      "description": "oneisall 7L Hundetrinkbrunnen im Datencheck: Edelstahl, Kapazität, Lautstärke, Filter, Reinigung und Eignung für große Hunde.",
       "type": "product",
       "cluster": "key-trinkbrunnen-label-trinkbrunnen-path-trinkbrunnen",
       "topics": [
@@ -2086,6 +2542,28 @@
       ],
       "entities": [
         "key-oneisall-name-oneisall-slug-oneisall"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:paj-pet-finder-4g-mini",
+      "slug": "paj-pet-finder-4g-mini",
+      "route": "/produkte/paj-pet-finder-4g-mini/",
+      "title": "PAJ PET Finder 4G Mini",
+      "description": "33 g leichter 4G-Haustiertracker mit IP67, Europa-Abdeckung, 27 Monaten enthaltenem Tracking und bis zu zehn Tagen Energiesparlaufzeit.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "katzen",
+        "4g",
+        "inklusive-tracking",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-paj-gps-name-paj-gps-slug-paj-gps"
       ],
       "priority": 50,
       "cornerstone": false
@@ -2161,7 +2639,7 @@
       "slug": "petkit-eversweet-5-mini",
       "route": "/produkte/petkit-eversweet-5-mini/",
       "title": "PETKIT Eversweet 5 Mini",
-      "description": "Sehr kompakter 1,35-Liter-Trinkbrunnen für Einzelkatzen und kleine Stellflächen.",
+      "description": "Sehr kompakter 1-Liter-Keramik-Trinkbrunnen für Katzen, kleine Hunde und kleine Stellflächen.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2221,7 +2699,7 @@
       "slug": "petkit-eversweet-solo-2-fountain",
       "route": "/produkte/petkit-eversweet-solo-2-fountain/",
       "title": "PETKIT Eversweet Solo 2",
-      "description": "Leiser 2-Liter-Trinkbrunnen mit kabelloser Pumpeneinheit und Bluetooth-App.",
+      "description": "PETKIT Eversweet Solo 2 im Datencheck: 2-Liter-Tank, kabellose Pumpe, Lautstärke, Filter, Reinigung und Bluetooth-App.",
       "type": "product",
       "cluster": "key-trinkbrunnen-label-trinkbrunnen-path-trinkbrunnen",
       "topics": [
@@ -2395,7 +2873,7 @@
       "slug": "petkit-yumshare-solo-2",
       "route": "/produkte/petkit-yumshare-solo-2/",
       "title": "PETKIT YumShare Solo 2",
-      "description": "Smarter Futterautomat mit Kamera und App-Steuerung für Katzen und kleine Hunde.",
+      "description": "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2415,7 +2893,7 @@
       "slug": "petlibro-air-automatic-feeder",
       "route": "/produkte/petlibro-air-automatic-feeder/",
       "title": "PETLIBRO Air Automatic Feeder",
-      "description": "Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.",
+      "description": "PETLIBRO Air Automatic Feeder im Datencheck: kompakter Trockenfutterautomat mit Zeitsteuerung, Portionierung und Batterieoption ohne App.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2438,7 +2916,7 @@
       "slug": "petlibro-air-wifi-feeder",
       "route": "/produkte/petlibro-air-wifi-feeder/",
       "title": "PETLIBRO Air WiFi Feeder",
-      "description": "Schlanker 2-Liter-App-Automat für einzelne Katzen und kleine Trockenfutterrationen.",
+      "description": "PETLIBRO Air WiFi Feeder im Datencheck: 2-Liter-Behälter, App-Steuerung, Portionierung, Reinigung und Eignung für Katzen.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2671,7 +3149,7 @@
       "slug": "petlibro-space-smart-feeder",
       "route": "/produkte/petlibro-space-smart-feeder/",
       "title": "PETLIBRO Space Smart Feeder",
-      "description": "Der PETLIBRO Space Smart Feeder verbindet modernes Design mit App-Steuerung und automatischer Trockenfutterausgabe. Er eignet sich besonders für Katzen und kleine Hunde in modernen Haushalten.",
+      "description": "PETLIBRO Space Smart Feeder im Datencheck: App-Steuerung, Trockenfutterausgabe, Portionierung, Reinigung und Eignung für kleine Tiere.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -2821,6 +3299,116 @@
       "cornerstone": false
     },
     {
+      "id": "product:tractive-cat-6-mini",
+      "slug": "tractive-cat-6-mini",
+      "route": "/produkte/tractive-cat-6-mini/",
+      "title": "Tractive CAT 6 Mini",
+      "description": "In ein Sicherheitshalsband integrierter GPS-Tracker für Katzen von 3 bis 8 kg mit 31 g Gesamtgewicht, LTE und bis zu sieben Tagen Akku.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "katzen",
+        "klein",
+        "sicherheitshalsband",
+        "abo",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-tractive-name-tractive-slug-tractive"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:tractive-dog-6",
+      "slug": "tractive-dog-6",
+      "route": "/produkte/tractive-dog-6/",
+      "title": "Tractive DOG 6",
+      "description": "Kompakter GPS- und Gesundheitstracker für Hunde über 4 kg mit LTE, Live-Ortung, Sicherheitszonen und Herstellerlaufzeit bis zwei Wochen.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "mobilfunk",
+        "app",
+        "abo",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-tractive-name-tractive-slug-tractive"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:tractive-dog-6-xl",
+      "slug": "tractive-dog-6-xl",
+      "route": "/produkte/tractive-dog-6-xl/",
+      "title": "Tractive DOG 6 XL",
+      "description": "Großer GPS-Tracker für Hunde ab 20 kg mit LTE, IP68 und einer Herstellerlaufzeit von bis zu sechs Wochen.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "grosse-hunde",
+        "langer-akku",
+        "abo",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-tractive-name-tractive-slug-tractive"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:weenect-xs",
+      "slug": "weenect-xs",
+      "route": "/produkte/weenect-xs/",
+      "title": "Weenect XS",
+      "description": "27 g leichter GPS-Tracker für Katzen und kleine Hunde ab 3 kg mit Multi-Netz-SIM, Sekundentracking, Ton, Vibration und Licht.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "katzen",
+        "kleine-hunde",
+        "27-g",
+        "abo",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-weenect-name-weenect-slug-weenect"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
+      "id": "product:weenect-xt",
+      "slug": "weenect-xt",
+      "route": "/produkte/weenect-xt/",
+      "title": "Weenect XT",
+      "description": "Robuster Hundetracker mit 54,2 g, IP68, großer Leuchte und einer Herstellerlaufzeit von bis zu drei Wochen im Energiesparmodus.",
+      "type": "product",
+      "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
+      "topics": [
+        "gps-tracker",
+        "hunde",
+        "langer-akku",
+        "outdoor",
+        "abo",
+        "key-gps-tracker-label-gps-tracker-path-gps-tracker"
+      ],
+      "entities": [
+        "key-weenect-name-weenect-slug-weenect"
+      ],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "product:wopet-cube-air-ca10",
       "slug": "wopet-cube-air-ca10",
       "route": "/produkte/wopet-cube-air-ca10/",
@@ -2892,7 +3480,7 @@
       "slug": "wopet-pioneer-f01-plus",
       "route": "/produkte/wopet-pioneer-f01-plus/",
       "title": "WOPET Pioneer F01 Plus",
-      "description": "Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen.",
+      "description": "WOPET Pioneer F01 Plus im Datencheck: 7-Liter-Vorrat, lokale Zeitsteuerung, Portionierung, Stromversorgung und Betrieb ohne App.",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -3016,6 +3604,55 @@
       "explicit": false
     },
     {
+      "source": "manufacturer:garmin",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "manufacturer:paj-gps",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "manufacturer:tractive",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "manufacturer:weenect",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "manufacturer:honeyguardian",
       "target": "manufacturer:cat-mate",
       "type": "manufacturer",
@@ -3200,6 +3837,27 @@
     {
       "source": "manufacturer:oneisall",
       "target": "manufacturer:xiaomi",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:paj-gps",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:paj-gps",
+      "target": "manufacturer:tractive",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:paj-gps",
+      "target": "manufacturer:weenect",
       "type": "manufacturer",
       "score": 24,
       "explicit": false
@@ -3653,6 +4311,48 @@
       "explicit": false
     },
     {
+      "source": "manufacturer:tractive",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:tractive",
+      "target": "manufacturer:paj-gps",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:tractive",
+      "target": "manufacturer:weenect",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:weenect",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:weenect",
+      "target": "manufacturer:paj-gps",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:weenect",
+      "target": "manufacturer:tractive",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "manufacturer:wopet",
       "target": "manufacturer:cat-mate",
       "type": "manufacturer",
@@ -3955,6 +4655,27 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-berufstaetige",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-berufstaetige",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-berufstaetige",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-berufstaetige",
       "target": "page:wie-kann-technik-gegen-langeweile-helfen",
       "type": "semantic",
       "score": 24,
@@ -4305,6 +5026,13 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-hunde",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-hunde",
       "target": "product:honeyguardian-a305d",
       "type": "product",
       "score": 24,
@@ -4627,7 +5355,21 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-katzen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-katzen",
       "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-katzen",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -4782,6 +5524,27 @@
     {
       "source": "page:beste-futterautomaten-fuer-kleine-hunde",
       "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -5047,6 +5810,20 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
       "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
@@ -5124,6 +5901,20 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 24,
@@ -5138,6 +5929,13 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -5146,6 +5944,13 @@
     {
       "source": "page:beste-futterautomaten-fuer-nassfutter",
       "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -5432,7 +6237,21 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-seniorenkatzen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-seniorenkatzen",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -5622,6 +6441,27 @@
     {
       "source": "page:beste-futterautomaten-fuer-welpen",
       "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-welpen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-welpen",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:beste-futterautomaten-fuer-welpen",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -6972,6 +7812,13 @@
     },
     {
       "source": "page:biofilm-im-katzentrinkbrunnen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:biofilm-im-katzentrinkbrunnen",
       "target": "page:trinkbrunnen-seniorenkatzen",
       "type": "cluster",
       "score": 59,
@@ -7016,6 +7863,83 @@
       "source": "page:biofilm-im-katzentrinkbrunnen",
       "target": "page:wasserstelle-katze-richtiger-standort",
       "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:futterautomat-mit-kamera",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "product:tractive-dog-6",
+      "type": "product",
       "score": 24,
       "explicit": false
     },
@@ -7112,6 +8036,13 @@
     },
     {
       "source": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:filter-im-katzentrinkbrunnen-wechseln",
       "target": "page:trinkbrunnen-seniorenkatzen",
       "type": "cluster",
       "score": 59,
@@ -7189,7 +8120,28 @@
     },
     {
       "source": "page:fuetterungszeiten-nach-alter",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
       "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -8470,6 +9422,20 @@
     },
     {
       "source": "page:futterautomat-gegen-schlingen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-gegen-schlingen",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-gegen-schlingen",
       "target": "page:warum-schlingt-mein-hund",
       "type": "semantic",
       "score": 36,
@@ -8547,6 +9513,13 @@
     },
     {
       "source": "page:futterautomat-gegen-schlingen",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-gegen-schlingen",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 24,
@@ -8555,6 +9528,13 @@
     {
       "source": "page:futterautomat-gegen-schlingen",
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-gegen-schlingen",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -8974,6 +9954,27 @@
     },
     {
       "source": "page:futterautomat-hund",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -8982,6 +9983,13 @@
     {
       "source": "page:futterautomat-hund",
       "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -9506,7 +10514,21 @@
     },
     {
       "source": "page:futterautomat-katze",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-katze",
       "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-katze",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -9905,6 +10927,13 @@
     },
     {
       "source": "page:futterautomat-mit-kamera",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-mit-kamera",
       "target": "product:catit-pixi-vision-smart-feeder",
       "type": "product",
       "score": 24,
@@ -10186,6 +11215,13 @@
     {
       "source": "page:futterautomat-nassfutter",
       "target": "page:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-nassfutter",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -10724,6 +11760,13 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
       "target": "page:wie-viel-wasser-braucht-eine-katze",
       "type": "semantic",
       "score": 24,
@@ -10990,6 +12033,13 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
       "target": "page:wie-viel-wasser-braucht-eine-katze",
       "type": "semantic",
       "score": 24,
@@ -11136,6 +12186,727 @@
       "explicit": false
     },
     {
+      "source": "page:futtermenge-hund",
+      "target": "page:futtermenge-katze",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-hund",
+      "target": "page:warum-schlingt-mein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-hund",
+      "target": "page:welpen-richtig-fuettern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:futtermenge-hund",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:futterautomat-nassfutter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:cat-mate-c200",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:cat-mate-c300",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:cat-mate-c500",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-polar-wet-food-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-katzen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
       "source": "page:hund-frisst-nicht",
       "target": "page:hund-hat-durchfall",
       "type": "cluster",
@@ -11151,6 +12922,13 @@
     },
     {
       "source": "page:hund-frisst-nicht",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-frisst-nicht",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "cluster",
       "score": 71,
@@ -11159,6 +12937,20 @@
     {
       "source": "page:hund-frisst-nicht",
       "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-frisst-nicht",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-frisst-nicht",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -11193,6 +12985,13 @@
     },
     {
       "source": "page:hund-hat-durchfall",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-hat-durchfall",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "cluster",
       "score": 71,
@@ -11201,6 +13000,20 @@
     {
       "source": "page:hund-hat-durchfall",
       "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -11221,6 +13034,13 @@
     },
     {
       "source": "page:hund-ist-muede",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-ist-muede",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "cluster",
       "score": 71,
@@ -11235,9 +13055,156 @@
     },
     {
       "source": "page:hund-ist-muede",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-ist-muede",
       "target": "page:warum-schlingt-mein-hund",
       "type": "semantic",
       "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:hund-frisst-nicht",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:hund-hat-durchfall",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:hund-ist-muede",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 83,
       "explicit": false
     },
     {
@@ -11306,6 +13273,13 @@
     {
       "source": "page:hund-trinkt-zu-wenig",
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -11411,6 +13385,13 @@
     {
       "source": "page:kalk-katzentrinkbrunnen-entfernen",
       "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:kalk-katzentrinkbrunnen-entfernen",
+      "target": "page:trinkbrunnen-hund",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -11599,6 +13580,13 @@
     },
     {
       "source": "page:katze-an-trinkbrunnen-gewoehnen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-an-trinkbrunnen-gewoehnen",
       "target": "page:trinkmenge-katze-messen",
       "type": "semantic",
       "score": 24,
@@ -11623,6 +13611,69 @@
       "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "type": "semantic",
       "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
       "explicit": false
     },
     {
@@ -11711,6 +13762,13 @@
     },
     {
       "source": "page:katze-trinkt-viel",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-trinkt-viel",
       "target": "page:nierenkranke-katze-trinken",
       "type": "semantic",
       "score": 36,
@@ -11733,6 +13791,13 @@
     {
       "source": "page:katze-trinkt-viel",
       "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-trinkt-viel",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -11840,6 +13905,13 @@
       "target": "page:wie-viele-wasserstellen-katze",
       "type": "cluster",
       "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 47,
       "explicit": false
     },
     {
@@ -12047,6 +14119,13 @@
     },
     {
       "source": "page:katzentrinkbrunnen-laut-pumpe",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-laut-pumpe",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 24,
@@ -12176,6 +14255,13 @@
       "target": "page:wie-viele-wasserstellen-katze",
       "type": "cluster",
       "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 47,
       "explicit": false
     },
     {
@@ -12320,6 +14406,13 @@
     },
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "cluster",
       "score": 59,
@@ -12418,6 +14511,13 @@
     },
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 24,
@@ -12426,6 +14526,13 @@
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-ohne-filter",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -12538,6 +14645,13 @@
     {
       "source": "page:katzentrinkbrunnen-richtig-reinigen",
       "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-richtig-reinigen",
+      "target": "page:trinkbrunnen-hund",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -12657,6 +14771,13 @@
     {
       "source": "page:katzenwasser-taeglich-wechseln",
       "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:katzenwasser-taeglich-wechseln",
+      "target": "page:trinkbrunnen-hund",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -12789,6 +14910,13 @@
     },
     {
       "source": "page:nierenkranke-katze-trinken",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:nierenkranke-katze-trinken",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "semantic",
       "score": 36,
@@ -12811,6 +14939,13 @@
     {
       "source": "page:nierenkranke-katze-trinken",
       "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:nierenkranke-katze-trinken",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -12853,6 +14988,13 @@
     {
       "source": "page:nierenkranke-katze-trinken",
       "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:nierenkranke-katze-trinken",
+      "target": "page:trinkmenge-hund-messen",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -12957,6 +15099,13 @@
     },
     {
       "source": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:pumpe-katzentrinkbrunnen-reinigen",
       "target": "page:trinkbrunnen-seniorenkatzen",
       "type": "cluster",
       "score": 59,
@@ -13005,6 +15154,97 @@
       "explicit": false
     },
     {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "product:garmin-alpha-t-20",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "product:tractive-dog-6",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:seniorenhunde-richtig-versorgen",
       "target": "page:hund-frisst-nicht",
       "type": "cluster",
@@ -13027,7 +15267,28 @@
     },
     {
       "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
       "target": "page:hund-trinkt-zu-wenig",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -13377,7 +15638,28 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -13559,6 +15841,20 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 24,
@@ -13567,6 +15863,13 @@
     {
       "source": "page:smarte-futterautomaten",
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -13611,6 +15914,244 @@
       "target": "product:petsafe-freshfeed-refrigerated-feeder",
       "type": "product",
       "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-katzen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 100,
       "explicit": false
     },
     {
@@ -13776,7 +16317,21 @@
     },
     {
       "source": "page:trinkbrunnen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -13846,6 +16401,20 @@
     },
     {
       "source": "page:trinkbrunnen",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "semantic",
       "score": 24,
@@ -13854,6 +16423,13 @@
     {
       "source": "page:trinkbrunnen",
       "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
+      "target": "page:trinkmenge-hund-messen",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -13889,6 +16465,13 @@
     {
       "source": "page:trinkbrunnen",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14035,6 +16618,13 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:trinkbrunnen-seniorenkatzen",
       "type": "cluster",
       "score": 71,
@@ -14161,6 +16751,20 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "semantic",
       "score": 24,
@@ -14182,6 +16786,13 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:trinkmenge-katze-messen",
       "type": "semantic",
       "score": 24,
@@ -14190,6 +16801,13 @@
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14288,6 +16906,13 @@
     {
       "source": "page:trinkbrunnen-fuer-kitten-sicher",
       "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-kitten-sicher",
+      "target": "page:trinkbrunnen-hund",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -14449,6 +17074,13 @@
     {
       "source": "page:trinkbrunnen-fuer-mehrere-katzen",
       "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "target": "page:trinkbrunnen-hund",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -14517,6 +17149,230 @@
       "explicit": false
     },
     {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkbrunnen",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzenwasser-taeglich-wechseln",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:biofilm-im-katzentrinkbrunnen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:kalk-katzentrinkbrunnen-entfernen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzentrinkbrunnen-richtig-reinigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkbrunnen-fuer-kitten-sicher",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzentrinkbrunnen-laut-pumpe",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:wie-viele-wasserstellen-katze",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:katze-an-trinkbrunnen-gewoehnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:trinkbrunnen-seniorenkatzen",
       "target": "page:katzenwasser-taeglich-wechseln",
       "type": "cluster",
@@ -14616,6 +17472,13 @@
     },
     {
       "source": "page:trinkbrunnen-seniorenkatzen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-seniorenkatzen",
       "target": "page:wie-viele-wasserstellen-katze",
       "type": "cluster",
       "score": 59,
@@ -14678,10 +17541,115 @@
       "explicit": false
     },
     {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:hund-frisst-nicht",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:hund-hat-durchfall",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:hund-ist-muede",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:trinkmenge-katze-messen",
       "target": "page:nierenkranke-katze-trinken",
       "type": "cluster",
       "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-katze-messen",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 48,
       "explicit": false
     },
     {
@@ -14703,6 +17671,13 @@
       "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "type": "semantic",
       "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-katze-messen",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 24,
       "explicit": false
     },
     {
@@ -14778,6 +17753,13 @@
     {
       "source": "page:trinkmenge-katze-messen",
       "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkmenge-katze-messen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14862,6 +17844,20 @@
     {
       "source": "page:trockenfutter-oder-nassfutter-katze",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15049,6 +18045,104 @@
       "explicit": false
     },
     {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "product:tractive-cat-6-mini",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "product:tractive-dog-6-xl",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "product:tractive-dog-6",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "product:weenect-xs",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "product:weenect-xt",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "target": "page:welpen-richtig-fuettern",
       "type": "cluster",
@@ -15127,6 +18221,13 @@
     },
     {
       "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
       "target": "page:hund-trinkt-zu-wenig",
       "type": "semantic",
       "score": 36,
@@ -15184,6 +18285,13 @@
     {
       "source": "page:warum-katzen-fliessendes-wasser-trinken",
       "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -15253,6 +18361,20 @@
     },
     {
       "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
       "target": "page:wie-viele-wasserstellen-katze",
       "type": "semantic",
       "score": 24,
@@ -15263,6 +18385,13 @@
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-schlingt-mein-hund",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 24,
       "explicit": false
     },
     {
@@ -15401,6 +18530,13 @@
     {
       "source": "page:wasserstelle-katze-richtiger-standort",
       "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wasserstelle-katze-richtiger-standort",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15673,7 +18809,28 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15995,6 +19152,20 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 36,
@@ -16003,6 +19174,13 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -16128,6 +19306,20 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 24,
@@ -16136,6 +19328,13 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:trinkbrunnen-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -16289,6 +19488,13 @@
     },
     {
       "source": "page:welpen-richtig-fuettern",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welpen-richtig-fuettern",
       "target": "page:seniorenhunde-richtig-versorgen",
       "type": "semantic",
       "score": 24,
@@ -16305,6 +19511,97 @@
       "source": "page:welpen-richtig-fuettern",
       "target": "page:wie-viele-mahlzeiten-hund",
       "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "product:garmin-alpha-t-20",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "product:tractive-dog-6",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
       "score": 24,
       "explicit": false
     },
@@ -16486,6 +19783,69 @@
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:gps-oder-bluetooth",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:gps-tracker",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:wie-funktionieren-gps-tracker",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -16786,6 +20146,27 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -16863,7 +20244,28 @@
     },
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17262,6 +20664,20 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 24,
@@ -17277,6 +20693,13 @@
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17359,6 +20782,286 @@
       "explicit": false
     },
     {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:hund-frisst-nicht",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:hund-hat-durchfall",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:hund-ist-muede",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 60,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:beste-futterautomaten-fuer-hunde",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:cat-mate-c200",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:cat-mate-c300",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:cat-mate-c500",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:warum-katzen-fliessendes-wasser-trinken",
       "type": "cluster",
@@ -17388,9 +21091,23 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 60,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:nierenkranke-katze-trinken",
       "type": "semantic",
       "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
       "explicit": false
     },
     {
@@ -17500,6 +21217,13 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 24,
@@ -17536,6 +21260,13 @@
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:trinkmenge-hund-messen",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -18312,6 +22043,13 @@
     },
     {
       "source": "page:wie-viele-wasserstellen-katze",
+      "target": "page:trinkbrunnen-hund",
+      "type": "cluster",
+      "score": 47,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viele-wasserstellen-katze",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 36,
@@ -18375,6 +22113,13 @@
     },
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "type": "semantic",
       "score": 36,
@@ -18383,6 +22128,13 @@
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -18425,6 +22177,13 @@
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "page:trinkmenge-hund-messen",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -18613,6 +22372,13 @@
     },
     {
       "source": "product:aqara-smart-pet-feeder-c1",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:aqara-smart-pet-feeder-c1",
       "target": "product:xiaomi-smart-pet-fountain-2",
       "type": "semantic",
       "score": 24,
@@ -18780,6 +22546,13 @@
       "explicit": false
     },
     {
+      "source": "product:cat-mate-335-pet-fountain",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:cat-mate-c200",
       "target": "product:cat-mate-c300",
       "type": "semantic",
@@ -18971,6 +22744,20 @@
     {
       "source": "product:cat-mate-c200",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19236,6 +23023,20 @@
     },
     {
       "source": "product:cat-mate-c300",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c300",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c300",
       "target": "product:catit-pixi-smart-6-meal-feeder",
       "type": "semantic",
       "score": 24,
@@ -19489,6 +23290,20 @@
     {
       "source": "product:cat-mate-c500",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19718,6 +23533,13 @@
       "explicit": false
     },
     {
+      "source": "product:cat-mate-shell-fountain",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:catit-pixi-smart-6-meal-feeder",
       "target": "product:catit-pixi-vision-smart-feeder",
       "type": "cluster",
@@ -19846,6 +23668,13 @@
     {
       "source": "product:catit-pixi-smart-6-meal-feeder",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20334,6 +24163,146 @@
       "explicit": false
     },
     {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "manufacturer:garmin",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:honeyguardian-a305d",
       "target": "product:petlibro-air-automatic-feeder",
       "type": "semantic",
@@ -20545,7 +24514,28 @@
     },
     {
       "source": "product:honeyguardian-a305d",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20581,6 +24571,13 @@
     {
       "source": "product:honeyguardian-a305d",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20888,7 +24885,28 @@
     },
     {
       "source": "product:honeyguardian-a68",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20924,6 +24942,13 @@
     {
       "source": "product:honeyguardian-a68",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21650,6 +25675,13 @@
       "explicit": false
     },
     {
+      "source": "product:oneisall-2-2l-cordless-fountain",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:oneisall-2-in-1-feeder-water",
       "target": "product:catit-pixi-vision-smart-feeder",
       "type": "cluster",
@@ -21731,6 +25763,13 @@
       "target": "product:oneisall-3-5l-cordless-fountain",
       "type": "semantic",
       "score": 30,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
       "explicit": false
     },
     {
@@ -21904,6 +25943,13 @@
     {
       "source": "product:oneisall-3-2l-cordless-fountain",
       "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-3-2l-cordless-fountain",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -22392,6 +26438,76 @@
       "explicit": false
     },
     {
+      "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:pawbby-smart-pet-feeder",
       "target": "product:wopet-cube-air-ca10",
       "type": "semantic",
@@ -22631,7 +26747,28 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -22667,6 +26804,13 @@
     {
       "source": "product:pawbby-smart-pet-feeder",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -23065,6 +27209,13 @@
     },
     {
       "source": "product:pawsync-smart-pet-feeder",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawsync-smart-pet-feeder",
       "target": "product:wopet-patrol-f07-pro",
       "type": "semantic",
       "score": 24,
@@ -23269,6 +27420,13 @@
     {
       "source": "product:petkit-eversweet-3-pro-uvc",
       "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-eversweet-3-pro-uvc",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -23646,6 +27804,13 @@
     },
     {
       "source": "product:petkit-eversweet-max-2-uvc",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-eversweet-max-2-uvc",
       "target": "manufacturer:petlibro",
       "type": "manufacturer",
       "score": 24,
@@ -23829,6 +27994,13 @@
     {
       "source": "product:petkit-eversweet-max-cordless",
       "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-eversweet-max-cordless",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24114,6 +28286,13 @@
       "explicit": false
     },
     {
+      "source": "product:petkit-eversweet-solo-se",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:petkit-eversweet-ultra",
       "target": "product:petkit-eversweet-max-2-uvc",
       "type": "semantic",
@@ -24368,6 +28547,13 @@
     {
       "source": "product:petkit-eversweet-ultra",
       "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-eversweet-ultra",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24633,7 +28819,28 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24669,6 +28876,13 @@
     {
       "source": "product:petkit-fresh-element-infinity",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -26278,6 +30492,13 @@
     },
     {
       "source": "product:petkit-yumshare-solo-2",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
       "target": "product:wopet-cube-air-ca10",
       "type": "semantic",
       "score": 24,
@@ -26509,7 +30730,28 @@
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -26545,6 +30787,13 @@
     {
       "source": "product:petlibro-air-automatic-feeder",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -26935,6 +31184,13 @@
       "explicit": false
     },
     {
+      "source": "product:petlibro-capsule-dog-fountain",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:petlibro-dockstream-2-smart",
       "target": "product:petkit-eversweet-3-pro-uvc",
       "type": "semantic",
@@ -27118,6 +31374,13 @@
     },
     {
       "source": "product:petlibro-dockstream-2-smart",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-dockstream-2-smart",
       "target": "manufacturer:petlibro",
       "type": "manufacturer",
       "score": 24,
@@ -27266,6 +31529,13 @@
     {
       "source": "product:petlibro-dockstream-cordless",
       "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-dockstream-cordless",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -27635,6 +31905,13 @@
       "explicit": false
     },
     {
+      "source": "product:petlibro-glacier-ultrafiltration",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:petlibro-granary-camera-feeder",
       "target": "product:petkit-yumshare-dual",
       "type": "cluster",
@@ -28959,6 +33236,13 @@
     },
     {
       "source": "product:petlibro-polar-wet-food-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-polar-wet-food-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -29316,6 +33600,27 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -29345,6 +33650,13 @@
     {
       "source": "product:petlibro-space-smart-feeder",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -29588,6 +33900,13 @@
       "explicit": false
     },
     {
+      "source": "product:petlibro-stainless-steel-fountain",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "product:petsafe-freshfeed-refrigerated-feeder",
       "target": "product:petsafe-smart-feed-2",
       "type": "cluster",
@@ -29799,6 +34118,13 @@
     },
     {
       "source": "product:petsafe-freshfeed-refrigerated-feeder",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petsafe-freshfeed-refrigerated-feeder",
       "target": "manufacturer:petlibro",
       "type": "manufacturer",
       "score": 24,
@@ -29897,6 +34223,13 @@
     },
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "product:petlibro-capsule-dog-fountain",
       "type": "semantic",
       "score": 24,
@@ -29988,6 +34321,13 @@
     },
     {
       "source": "product:petsafe-smart-feed-2",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
       "target": "product:petkit-eversweet-3-pro-uvc",
       "type": "semantic",
       "score": 24,
@@ -30038,6 +34378,13 @@
     {
       "source": "product:petsafe-smart-feed-2",
       "target": "product:petlibro-granary-wifi-feeder",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
+      "target": "product:tractive-dog-6",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30192,6 +34539,20 @@
     {
       "source": "product:surefeed-microchip-pet-feeder",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30597,7 +34958,21 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30634,6 +35009,454 @@
       "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "manufacturer:petlibro",
       "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6",
+      "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:oneisall-7l-dog-water-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "product:petlibro-capsule-dog-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:weenect-xt",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:cat-mate-335-pet-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:cat-mate-shell-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:oneisall-3-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:pawsync-smart-pet-feeder",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-eversweet-3-pro-uvc",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-eversweet-max-2-uvc",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-eversweet-max-cordless",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-eversweet-solo-se",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-eversweet-ultra",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petlibro-dockstream-2-smart",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petlibro-dockstream-cordless",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petlibro-glacier-ultrafiltration",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "product:xiaomi-smart-pet-fountain-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:tractive-dog-6-xl",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:weenect-xs",
+      "type": "cluster",
+      "score": 89,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:tractive-dog-6",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:garmin-alpha-t-20",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "product:tractive-cat-6-mini",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
       "score": 24,
       "explicit": false
     },
@@ -30898,7 +35721,28 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30934,6 +35778,13 @@
     {
       "source": "product:wopet-cube-air-ca10",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31248,7 +36099,28 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31284,6 +36156,13 @@
     {
       "source": "product:wopet-heritage-view-camera-feeder",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31808,7 +36687,28 @@
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:smarte-haustiertechnik",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31844,6 +36744,13 @@
     {
       "source": "product:wopet-pioneer-f01-plus",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -32362,6 +37269,13 @@
     {
       "source": "product:xiaomi-smart-pet-fountain-2",
       "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-fountain-2",
+      "target": "product:weenect-xs",
       "type": "semantic",
       "score": 24,
       "explicit": false

@@ -1,13 +1,14 @@
 {
   "summary": {
-    "generatedAt": "2026-07-19T19:51:06.080Z",
-    "totalProducts": 58,
+    "generatedAt": "2026-07-20T04:44:20.152Z",
+    "totalProducts": 66,
     "byCategory": {
       "futterautomaten": 38,
-      "trinkbrunnen": 20
+      "trinkbrunnen": 20,
+      "gps-tracker": 8
     },
     "errors": 0,
-    "warnings": 71,
+    "warnings": 70,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -640,14 +641,155 @@
       "completeness": 94
     },
     {
+      "file": "src\\content\\products\\garmin-alpha-t-20.md",
+      "slug": "garmin-alpha-t-20",
+      "title": "Garmin Alpha T 20",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS-Hundehalsbandgerät"
+        },
+        {
+          "label": "Übertragung",
+          "value": "VHF-Funk direkt zum kompatiblen Alpha-Handgerät"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Bis zu 14,48 km VHF-Funkreichweite laut Hersteller"
+        },
+        {
+          "label": "Abo",
+          "value": "Für die VHF-Hundeortung nicht erforderlich"
+        },
+        {
+          "label": "App",
+          "value": "Nur indirekt über kompatibles Alpha-Handgerät; Kernbetrieb am Handgerät"
+        },
+        {
+          "label": "WLAN",
+          "value": "Für Geräteeinrichtung und Updates"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "ANT-Reichweite bis 10 m; kein Smartphone-Bluetooth-Tracker"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 68 Stunden; optional bis zu 136 Stunden"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Austauschbarer Lithium-Ionen-Akku"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "1 ATM"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "Nicht im offiziellen Handbuch ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht im offiziellen Handbuch ausgewiesen"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Jagd- und Arbeitshunde; nicht für Katzen"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Flexibles Hundehalsband; straffer Sitz nach Garmin-Anleitung"
+        },
+        {
+          "label": "Material",
+          "value": "Kunststoffgehäuse und flexibles Band; genaue Werkstoffe nicht ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\garmin-alpha-tt-25.md",
+      "slug": "garmin-alpha-tt-25",
+      "title": "Garmin Alpha TT 25",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS-Hundehalsbandgerät"
+        },
+        {
+          "label": "Übertragung",
+          "value": "VHF-Funk direkt zum kompatiblen Alpha-Handgerät"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Bis zu 14,48 km VHF-Funkreichweite laut Hersteller"
+        },
+        {
+          "label": "Abo",
+          "value": "Für die VHF-Hundeortung nicht erforderlich"
+        },
+        {
+          "label": "App",
+          "value": "Nur indirekt über kompatibles Alpha-Handgerät; Kernbetrieb am Handgerät"
+        },
+        {
+          "label": "WLAN",
+          "value": "Für Geräteeinrichtung und Updates"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "ANT-Reichweite bis 10 m; kein Smartphone-Bluetooth-Tracker"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 68 Stunden; optional bis zu 136 Stunden"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Austauschbarer Lithium-Ionen-Akku"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "1 ATM"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "Nicht im offiziellen Handbuch ausgewiesen"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Nicht im offiziellen Handbuch ausgewiesen"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Jagd- und Arbeitshunde; nicht für Katzen"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Flexibles Hundehalsband"
+        },
+        {
+          "label": "Material",
+          "value": "Genaue Werkstoffe nicht ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
       "file": "src\\content\\products\\honeyguardian-a305d.md",
       "slug": "honeyguardian-a305d",
       "title": "HoneyGuardian A305D",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
         {
@@ -695,7 +837,7 @@
           "value": "1 bis 24 Portionen pro Mahlzeit"
         },
         {
-          "label": "Näpfe",
+          "label": "Napf",
           "value": "Zwei Edelstahl-Näpfe"
         },
         {
@@ -707,7 +849,7 @@
           "value": "Zwei Katzen oder kleine Hunde"
         }
       ],
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\honeyguardian-a68.md",
@@ -1391,6 +1533,77 @@
         }
       ],
       "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\paj-pet-finder-4g-mini.md",
+      "slug": "paj-pet-finder-4g-mini",
+      "title": "PAJ PET Finder 4G Mini",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS; ergänzende WLAN- und Bluetooth-Nähe laut Hersteller"
+        },
+        {
+          "label": "Übertragung",
+          "value": "Integrierte 4G-SIM"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; 4G-Abdeckung in über 40 europäischen Ländern"
+        },
+        {
+          "label": "Abo",
+          "value": "3 Monate Premium plus 2 Jahre Lite enthalten; danach Tarif erforderlich"
+        },
+        {
+          "label": "App",
+          "value": "PAJ FINDER Portal App und Webportal"
+        },
+        {
+          "label": "WLAN",
+          "value": "WLAN-Energiesparzone"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Näheverbindung zur App"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 10 Tage im Energiesparmodus; laut Produkt-FAQ 1 bis 3 Tage bei aktivem Tracking"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Integrierter Akku"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP67; bis 1 m für 30 Minuten"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "33 × 51 × 17 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "33 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde ab 3 kg; im offiziellen Shop auch unter Katzen gelistet"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Clip für Standard-Halsbänder"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\pawbby-smart-pet-feeder.md",
@@ -4071,6 +4284,361 @@
         }
       ],
       "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\tractive-cat-6-mini.md",
+      "slug": "tractive-cat-6-mini",
+      "title": "Tractive CAT 6 Mini",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS, GLONASS und Galileo"
+        },
+        {
+          "label": "Übertragung",
+          "value": "LTE/4G (Cat 1 bis)"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich"
+        },
+        {
+          "label": "Abo",
+          "value": "Erforderlich; ein Abo pro Tracker"
+        },
+        {
+          "label": "App",
+          "value": "Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz für Energiesparzonen"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.0"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 7 Tage mit Energiesparzonen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Integrierter Akku"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "95 × 20 × 13 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "31 g inklusive Halsband"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen von 3 bis 8 kg"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Integriertes Halsband für 19 bis 22,9 cm Halsumfang"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\tractive-dog-6-xl.md",
+      "slug": "tractive-dog-6-xl",
+      "title": "Tractive DOG 6 XL",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS, GLONASS und Galileo"
+        },
+        {
+          "label": "Übertragung",
+          "value": "LTE/4G (Cat 1 bis)"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich"
+        },
+        {
+          "label": "Abo",
+          "value": "Erforderlich; ein Abo pro Tracker"
+        },
+        {
+          "label": "App",
+          "value": "Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz für Energiesparzonen"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.0"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 6 Wochen mit Energiesparzonen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Integrierter Akku, USB-C-Ladekabel"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "83 × 47 × 20 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "70 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde ab 20 kg"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Clip für Halsbänder bis 4 cm Breite"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\tractive-dog-6.md",
+      "slug": "tractive-dog-6",
+      "title": "Tractive DOG 6",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS, GLONASS und Galileo"
+        },
+        {
+          "label": "Übertragung",
+          "value": "LTE/4G (Cat 1 bis)"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich"
+        },
+        {
+          "label": "Abo",
+          "value": "Erforderlich; ein Abo pro Tracker"
+        },
+        {
+          "label": "App",
+          "value": "Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz für Energiesparzonen"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.0"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 2 Wochen mit Energiesparzonen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Integrierter Akku, USB-C-Ladekabel"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "71 × 29 × 17 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "39 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde über 4 kg"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Clip für Halsbänder bis 2,8 cm Breite"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\weenect-xs.md",
+      "slug": "weenect-xs",
+      "title": "Weenect XS",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS, Galileo, BeiDou und GLONASS"
+        },
+        {
+          "label": "Übertragung",
+          "value": "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; unterstützte Netzabdeckung erforderlich"
+        },
+        {
+          "label": "Abo",
+          "value": "Erforderlich; eigenes Abo pro Tracker"
+        },
+        {
+          "label": "App",
+          "value": "Weenect App und Web-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "WLAN-Energiesparzonen"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Nicht als Ortungsweg ausgewiesen"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 7 Tage mit WLAN-Zonen; etwa 2 Tage bei kontinuierlichem Tracking"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "500-mAh-Akku; magnetisches USB-A-Ladekabel"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68; bis 1,5 m für 60 Minuten"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "60,5 × 24,5 × 15 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "27 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und Hunde ab 3 kg"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Silikonhüllen; Katzenversion mit Anti-Strangulations-Elastikband"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\weenect-xt.md",
+      "slug": "weenect-xt",
+      "title": "Weenect XT",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "Satellitenortung über Weenect InfinityTrack"
+        },
+        {
+          "label": "Übertragung",
+          "value": "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzgrenze; unterstützte Netzabdeckung erforderlich"
+        },
+        {
+          "label": "Abo",
+          "value": "Erforderlich"
+        },
+        {
+          "label": "App",
+          "value": "Weenect App und Web-App"
+        },
+        {
+          "label": "WLAN",
+          "value": "WLAN-Energiesparzonen"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Nicht als Ortungsweg ausgewiesen"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 3 Wochen im Energiesparmodus"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "3,8 V, 1.250 mAh, 4,75 Wh Akku"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68; bis 1,5 m für 60 Minuten"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "82 × 35 × 22 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "54,2 g"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde; besonders Outdoor-Einsatz"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Julius-K9-Halsband oder Universalbefestigung je Variante"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht vom Hersteller ausgewiesen"
+        }
+      ],
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\wopet-cube-air-ca10.md",

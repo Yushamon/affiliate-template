@@ -42,6 +42,15 @@ const criterionAliases: Record<string, string[]> = {
   futterart: ["futterart"],
   zugang: ["zugang", "besonderheit", "mikrochip"],
   reinigung: ["reinigung"],
+  ortung: ["ortung", "satellitensysteme"],
+  uebertragung: ["uebertragung", "mobilfunk", "funksystem"],
+  reichweite: ["reichweite", "funkreichweite"],
+  abo: ["abo", "abonnement", "laufende-kosten"],
+  akkulaufzeit: ["akkulaufzeit", "akku"],
+  gewicht: ["gewicht"],
+  abmessungen: ["abmessungen", "masse", "groesse"],
+  wasserschutz: ["wasserschutz", "wasserdicht", "ip-schutz"],
+  befestigung: ["befestigung", "halsband"],
   ausfallsicherheit: [
     "ausfallsicherheit",
     "zuverlaessigkeit",
@@ -119,6 +128,31 @@ const inferFallbackFilters = (
 
   if (product.data.priceCategory) {
     addValue(values, "preisklasse", product.data.priceCategory);
+  }
+
+  if (product.data.category.key === "gps-tracker") {
+    const getSpec = (label: RegExp) =>
+      product.data.specs.find((spec) => label.test(spec.label))?.value;
+    const suitability = String(getSpec(/geeignet/i) ?? "").toLocaleLowerCase("de");
+    const subscription = String(getSpec(/abo/i) ?? "").toLocaleLowerCase("de");
+    const transmission = String(getSpec(/übertragung|uebertragung/i) ?? "").toLocaleLowerCase("de");
+    const weight = Number.parseFloat(String(getSpec(/gewicht/i) ?? "").replace(",", "."));
+
+    if (/katze/.test(suitability)) addValue(values, "tier", "katze");
+    if (/hund/.test(suitability)) addValue(values, "tier", "hund");
+    addValue(
+      values,
+      "abo",
+      /nicht erforderlich/.test(subscription) ? "ohne-abo" : "mit-abo"
+    );
+    addValue(
+      values,
+      "system",
+      /vhf/.test(transmission) ? "vhf" : "mobilfunk"
+    );
+    if (Number.isFinite(weight)) {
+      addValue(values, "gewicht", weight <= 35 ? "bis-35-g" : "ueber-35-g");
+    }
   }
 
   return values;
@@ -348,7 +382,44 @@ export function buildComparisonViewModel({
     );
   });
 
-  const filterDefinitions: ComparisonFilter[] = [
+  const isGpsComparison = items.length > 0 && items.every((item) =>
+    productBySlug.get(item.slug)?.data.category.key === "gps-tracker"
+  );
+
+  const filterDefinitions: ComparisonFilter[] = isGpsComparison ? [
+    {
+      key: "tier",
+      label: "Tier",
+      options: [
+        { value: "hund", label: "Hund" },
+        { value: "katze", label: "Katze" }
+      ]
+    },
+    {
+      key: "abo",
+      label: "Laufender Dienst",
+      options: [
+        { value: "mit-abo", label: "Abo erforderlich" },
+        { value: "ohne-abo", label: "Ohne Mobilfunkabo" }
+      ]
+    },
+    {
+      key: "system",
+      label: "Übertragung",
+      options: [
+        { value: "mobilfunk", label: "Mobilfunk und App" },
+        { value: "vhf", label: "VHF und Handgerät" }
+      ]
+    },
+    {
+      key: "gewicht",
+      label: "Gerätegewicht",
+      options: [
+        { value: "bis-35-g", label: "Bis 35 g" },
+        { value: "ueber-35-g", label: "Über 35 g" }
+      ]
+    }
+  ] : [
     {
       key: "futterart",
       label: "Futterart",
