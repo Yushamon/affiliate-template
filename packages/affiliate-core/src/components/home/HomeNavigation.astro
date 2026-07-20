@@ -74,6 +74,16 @@ const getDecisionIcon = (label: string) => {
     <div class="home41-decision__grid">
       {decisionCards.map((card) => (
         <a class="home41-decision__card" href={card.href}>
+          <span
+            class:list={[
+              "home41-decision__quick-icon",
+              `home41-decision__quick-icon--${getDecisionIcon(
+                `${card.label} ${card.title}`
+              )}`
+            ]}
+            aria-hidden="true"
+          ></span>
+
           <div class="home41-decision__media">
             {card.image && (
               <OptimizedImage
@@ -106,7 +116,12 @@ const getDecisionIcon = (label: string) => {
               )}
             </div>
 
-            <b>Vergleich ansehen <span aria-hidden="true">→</span></b>
+            <b>
+                <span class="home41-decision__cta-label">
+                  Vergleich ansehen
+                </span>
+                <span aria-hidden="true">→</span>
+              </b>
           </div>
         </a>
       ))}

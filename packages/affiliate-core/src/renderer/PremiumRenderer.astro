@@ -69,7 +69,8 @@ interface Props {
 
 const {
   blocks = [],
-  products = []
+  products = [],
+  project
 } = Astro.props;
 
 const productByKey = new Map(products.map((product) => [product.key, product]));
@@ -129,7 +130,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
 ---
 
 {blocks.length > 0 && (
-  <div class="premium-v3">
+  <div class:list={["premium-v3", { "premium-v3--pfotentechnik": project === "pfotentechnik" }]}>
     {blocks.map((block) => {
       const filteredProducts =
         block.type === "products" && block.productFilter
@@ -261,6 +262,12 @@ const getBlockIcon = (type: PremiumBlockType) => {
                         ))}
                       </ul>
                     )}
+
+                    {href && (
+                      <span class="premium-v3-card-cta">
+                        {card.cta ?? "Mehr ansehen"}
+                      </span>
+                    )}
                   </CardTag>
                 );
               })}
@@ -285,3 +292,244 @@ const getBlockIcon = (type: PremiumBlockType) => {
     })}
   </div>
 )}
+
+<style>
+  .premium-v3--pfotentechnik {
+    --premium-surface: #ffffff;
+    --premium-surface-soft: #f8fafc;
+    --premium-text: #0f172a;
+    --premium-muted: #52626b;
+    --premium-accent: #2e7d32;
+    --premium-border: rgba(15, 23, 42, 0.12);
+    --premium-shadow: 0 14px 36px rgba(15, 23, 42, 0.07);
+
+    display: grid;
+    gap: clamp(42px, 6vw, 72px);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-block {
+    min-width: 0;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header-icon {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--premium-accent) 22%, transparent);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--premium-accent) 10%, transparent);
+    color: var(--premium-accent);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header > div:last-child {
+    min-width: 0;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow,
+  .premium-v3--pfotentechnik .premium-v3-label {
+    color: var(--premium-accent);
+    font-size: 0.76rem;
+    font-weight: 850;
+    letter-spacing: 0.09em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow {
+    display: block;
+    margin: 2px 0 10px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header h2 {
+    margin: 0 0 14px;
+    color: var(--premium-text);
+    font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header p {
+    max-width: 68ch;
+    margin: 0;
+    color: var(--premium-muted);
+    line-height: 1.7;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-grid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-grid-quickFacts,
+  .premium-v3--pfotentechnik .premium-v3-grid-products,
+  .premium-v3--pfotentechnik .premium-v3-grid-scenarios {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--premium-border);
+    border-radius: 22px;
+    background: var(--premium-surface);
+    color: var(--premium-text);
+    text-align: left;
+    text-decoration: none;
+    box-shadow: var(--premium-shadow);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link {
+    cursor: pointer;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--premium-accent) 34%, transparent);
+    box-shadow: 0 20px 46px rgba(15, 23, 42, 0.12);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-label {
+    display: inline-flex;
+    margin: 0 0 14px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card h3 {
+    margin: 0 0 12px;
+    color: var(--premium-text);
+    font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+    line-height: 1.18;
+    text-wrap: balance;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card p {
+    margin: 0 0 20px;
+    color: var(--premium-muted);
+    line-height: 1.6;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card ul,
+  .premium-v3--pfotentechnik .premium-v3-list {
+    margin: 4px 0 20px;
+    padding-left: 1.15rem;
+    color: var(--premium-muted);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card li,
+  .premium-v3--pfotentechnik .premium-v3-list li {
+    margin-top: 8px;
+    line-height: 1.55;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-rating,
+  .premium-v3--pfotentechnik .premium-v3-value {
+    color: var(--premium-accent);
+    font-weight: 850;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-cta {
+    display: inline-flex;
+    margin-top: auto;
+    padding-top: 6px;
+    align-items: center;
+    gap: 8px;
+    color: var(--premium-accent);
+    font-size: 0.92rem;
+    font-weight: 800;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-cta::after {
+    content: "→";
+    transition: transform 160ms ease;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link:hover .premium-v3-card-cta::after {
+    transform: translateX(3px);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-button {
+    display: inline-flex;
+    width: fit-content;
+    min-height: 46px;
+    margin-top: 20px;
+    padding: 10px 18px;
+    align-items: center;
+    border-radius: 999px;
+    background: var(--premium-accent);
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .premium-v3--pfotentechnik {
+      --premium-surface: #101f32;
+      --premium-surface-soft: #16263c;
+      --premium-text: #f8fafc;
+      --premium-muted: #b8c4d3;
+      --premium-accent: #5ee19a;
+      --premium-border: rgba(203, 213, 225, 0.16);
+      --premium-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-card-link:hover {
+      box-shadow: 0 22px 52px rgba(0, 0, 0, 0.34);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .premium-v3--pfotentechnik .premium-v3-grid-quickFacts,
+    .premium-v3--pfotentechnik .premium-v3-grid-products,
+    .premium-v3--pfotentechnik .premium-v3-grid-scenarios {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .premium-v3--pfotentechnik .premium-v3-header {
+      grid-template-columns: 40px minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-card {
+      padding: 22px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .premium-v3--pfotentechnik .premium-v3-card-link,
+    .premium-v3--pfotentechnik .premium-v3-card-cta::after {
+      transition: none;
+    }
+  }
+</style>

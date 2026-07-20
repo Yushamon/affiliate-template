@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "generatedAt": "2026-07-20T10:52:25.551Z",
+    "countsByCollection": {
+      "pages": 77,
+      "products": 58,
+      "manufacturers": 10,
+      "comparisons": 7
+    },
+    "categoryCounts": {
+      "vergleich": 10,
+      "futterautomaten": 27,
+      "trinkbrunnen": 16,
+      "tierernaehrung": 2,
+      "hundegesundheit": 5,
+      "katzenverhalten": 1,
+      "katzengesundheit": 5,
+      "gesundheit": 2,
+      "ratgeber": 1,
+      "redaktion": 1,
+      "katzenfutter": 1,
+      "katzenernaehrung": 1,
+      "hundeernaehrung": 2,
+      "hundeverhalten": 1,
+      "katzenhaltung": 1,
+      "tierbeschaeftigung": 1
+    },
+    "routes": 162,
+    "findings": {
+      "error": 0,
+      "warning": 11,
+      "info": 5
+    }
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "area": "css",
+      "message": "CSS-Datei sollte modularisiert werden",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
+      "file": "src/content/pages/hund-frisst-nicht.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
+      "file": "src/content/pages/hund-hat-durchfall.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
+      "file": "src/content/pages/hund-trinkt-zu-wenig.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /hund-trinkt-ploetzlich-viel/",
+      "file": "src/content/pages/trinkbrunnen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1509 Zeilen",
+      "file": "src/components/advisor/PetAdvisor.astro"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1700 Zeilen",
+      "file": "src/content/pages/futterautomat-richtig-reinigen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1484 Zeilen",
+      "file": "src/content/pages/katze-frisst-nicht.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1421 Zeilen",
+      "file": "src/content/pages/katze-trinkt-viel.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1006 Zeilen",
+      "file": "src/content/pages/trockenfutter-oder-nassfutter-katze.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1430 Zeilen",
+      "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 7× definiert: :root",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 3× definiert: .main-nav-v2",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 3× definiert: .article",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "unused-components",
+      "message": "Komponente ohne erkannten Import: AdvisorCompare",
+      "file": "src/components/advisor/AdvisorCompare.astro"
+    },
+    {
+      "severity": "info",
+      "area": "unused-components",
+      "message": "Komponente ohne erkannten Import: ContentGraphSections",
+      "file": "src/components/ContentGraphSections.astro"
+    }
+  ]
+}

@@ -80,9 +80,15 @@ const normalizedCanonical =
 
 const canonicalUrl = toAbsoluteUrl(site.domain, normalizedCanonical);
 
+const visibleAuthor = author ?? siteMeta.defaultAuthor;
+
 const imageUrl = ogImage
   ? toAbsoluteUrl(site.domain, ogImage)
   : toAbsoluteUrl(site.domain, projectConfig.defaultOgImage ?? "/favicon.svg");
+const publisherLogoUrl = toAbsoluteUrl(site.domain, siteMeta.publisher.logo);
+const authorUrl = visibleAuthor.url
+  ? toAbsoluteUrl(site.domain, visibleAuthor.url)
+  : undefined;
 
 const isHome = normalizedCanonical === "/";
 const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");
@@ -90,14 +96,12 @@ const shouldRenderArticleSchema = resolvedSchemaType === "article";
 const shouldRenderWebPageSchema = resolvedSchemaType === "webpage";
 const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema ?? !isHome;
 
-const visibleAuthor = author ?? siteMeta.defaultAuthor;
-
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: site.siteName,
   url: site.domain,
-  logo: siteMeta.publisher.logo
+  logo: publisherLogoUrl
 };
 
 const websiteSchema = {
@@ -111,7 +115,7 @@ const websiteSchema = {
     name: site.siteName,
     logo: {
       "@type": "ImageObject",
-      url: siteMeta.publisher.logo
+      url: publisherLogoUrl
     }
   }
 };
@@ -142,14 +146,14 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: visibleAuthor.name,
-    url: visibleAuthor.url ?? siteMeta.defaultAuthor.url
+    ...(authorUrl ? { url: authorUrl } : {})
   },
   publisher: {
     "@type": "Organization",
     name: site.siteName,
     logo: {
       "@type": "ImageObject",
-      url: siteMeta.publisher.logo
+      url: publisherLogoUrl
     }
   },
   ...(publishedAt ? { datePublished: publishedAt } : {}),
@@ -210,7 +214,9 @@ const faqSchema = createFaqSchema(faq);
 
     <meta
       name="robots"
-      content={noindex ? "noindex,follow" : "index,follow"}
+      content={noindex
+        ? "noindex,follow,max-image-preview:large"
+        : "index,follow,max-image-preview:large"}
     />
 
     <link
@@ -223,6 +229,9 @@ const faqSchema = createFaqSchema(faq);
       type="image/svg+xml"
       href="/favicon.svg"
     />
+    <meta name="theme-color" content="#101512" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:locale" content="de_DE" />
 
     <meta
       property="og:type"
@@ -297,10 +306,14 @@ const faqSchema = createFaqSchema(faq);
       set:html={JSON.stringify(organizationSchema)}
     />
 
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify(websiteSchema)}
-    />
+    {
+      isHome && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(websiteSchema)}
+        />
+      )
+    }
 
     {
       shouldRenderArticleSchema && (

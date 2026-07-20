@@ -1,0 +1,364 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { projectConfig, site, siteMeta } from "@app/project.config";
+import {
+  createBreadcrumbSchema,
+  createFaqSchema,
+  toAbsoluteUrl
+} from "../seo/schema";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Author {
+  name: string;
+  role?: string;
+  url?: string;
+}
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  canonical?: string;
+  ogImage?: string;
+  faq?: FAQItem[];
+  author?: Author;
+  publishedAt?: string;
+  updatedAt?: string;
+  categoryLabel?: string;
+  schemaType?: "website" | "article" | "webpage";
+  includeBreadcrumbSchema?: boolean;
+  noindex?: boolean;
+  webAnalyticsToken?: string;
+  headerLinks?: Array<{
+    label: string;
+    href: string;
+  }>;
+  breadcrumbs?: BreadcrumbItem[];
+}
+
+const {
+  title,
+  description,
+  seoTitle,
+  seoDescription,
+  canonical = "/",
+  ogImage,
+  faq = [],
+  author,
+  publishedAt,
+  updatedAt,
+  categoryLabel,
+  schemaType,
+  includeBreadcrumbSchema,
+  noindex = false,
+  webAnalyticsToken,
+  headerLinks = projectConfig.headerLinks,
+  breadcrumbs
+} = Astro.props;
+
+const pageTitle = seoTitle ?? title;
+const pageDescription = seoDescription ?? description;
+
+const normalizedCanonical =
+  canonical === "/"
+    ? "/"
+    : canonical.startsWith("/")
+      ? canonical
+      : `/${canonical}`;
+
+const canonicalUrl = toAbsoluteUrl(site.domain, normalizedCanonical);
+
+const imageUrl = ogImage
+  ? toAbsoluteUrl(site.domain, ogImage)
+  : toAbsoluteUrl(site.domain, projectConfig.defaultOgImage ?? "/favicon.svg");
+
+const isHome = normalizedCanonical === "/";
+const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");
+const shouldRenderArticleSchema = resolvedSchemaType === "article";
+const shouldRenderWebPageSchema = resolvedSchemaType === "webpage";
+const shouldRenderBreadcrumbSchema = includeBreadcrumbSchema ?? !isHome;
+
+const visibleAuthor = author ?? siteMeta.defaultAuthor;
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.siteName,
+  url: site.domain,
+  logo: siteMeta.publisher.logo
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.siteName,
+  url: site.domain,
+  description: site.siteDescription,
+  publisher: {
+    "@type": "Organization",
+    name: site.siteName,
+    logo: {
+      "@type": "ImageObject",
+      url: siteMeta.publisher.logo
+    }
+  }
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: pageTitle,
+  description: pageDescription,
+  url: canonicalUrl,
+  inLanguage: "de-DE",
+  isPartOf: {
+    "@type": "WebSite",
+    name: site.siteName,
+    url: site.domain
+  }
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: pageTitle,
+  description: pageDescription,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  image: [imageUrl],
+  inLanguage: "de-DE",
+  author: {
+    "@type": "Person",
+    name: visibleAuthor.name,
+    url: visibleAuthor.url ?? siteMeta.defaultAuthor.url
+  },
+  publisher: {
+    "@type": "Organization",
+    name: site.siteName,
+    logo: {
+      "@type": "ImageObject",
+      url: siteMeta.publisher.logo
+    }
+  },
+  ...(publishedAt ? { datePublished: publishedAt } : {}),
+  ...(updatedAt || publishedAt
+    ? { dateModified: updatedAt ?? publishedAt }
+    : {})
+};
+
+const breadcrumbSchema = createBreadcrumbSchema(
+  breadcrumbs?.length
+    ? breadcrumbs.map((item, index) => ({
+        name: item.label,
+        url: toAbsoluteUrl(
+          site.domain,
+          item.href ??
+            (index === breadcrumbs.length - 1
+              ? normalizedCanonical
+              : "/")
+        )
+      }))
+    : isHome
+      ? [{ name: "Startseite", url: site.domain }]
+      : [
+        { name: "Startseite", url: site.domain },
+        ...(categoryLabel
+          ? [
+              {
+                name: categoryLabel,
+                url: toAbsoluteUrl(
+                  site.domain,
+                  projectConfig.categoryPath ?? "/"
+                )
+              }
+            ]
+          : []),
+        { name: pageTitle, url: canonicalUrl }
+        ]
+);
+
+const faqSchema = createFaqSchema(faq);
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <title>{pageTitle}</title>
+
+    <meta
+      name="description"
+      content={pageDescription}
+    />
+
+    <meta
+      name="robots"
+      content={noindex ? "noindex,follow" : "index,follow"}
+    />
+
+    <link
+      rel="canonical"
+      href={canonicalUrl}
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <meta
+      property="og:type"
+      content={shouldRenderArticleSchema ? "article" : "website"}
+    />
+
+    <meta
+      property="og:title"
+      content={pageTitle}
+    />
+
+    <meta
+      property="og:description"
+      content={pageDescription}
+    />
+
+    <meta
+      property="og:url"
+      content={canonicalUrl}
+    />
+
+    <meta
+      property="og:site_name"
+      content={site.siteName}
+    />
+
+    <meta
+      property="og:image"
+      content={imageUrl}
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={pageTitle}
+    />
+
+    <meta
+      name="twitter:description"
+      content={pageDescription}
+    />
+
+    <meta
+      name="twitter:image"
+      content={imageUrl}
+    />
+
+    {
+      shouldRenderArticleSchema && publishedAt && (
+        <meta
+          property="article:published_time"
+          content={publishedAt}
+        />
+      )
+    }
+
+    {
+      shouldRenderArticleSchema && updatedAt && (
+        <meta
+          property="article:modified_time"
+          content={updatedAt}
+        />
+      )
+    }
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(organizationSchema)}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(websiteSchema)}
+    />
+
+    {
+      shouldRenderArticleSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(articleSchema)}
+        />
+      )
+    }
+
+    {
+      shouldRenderWebPageSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(webPageSchema)}
+        />
+      )
+    }
+
+    {
+      shouldRenderBreadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(breadcrumbSchema)}
+        />
+      )
+    }
+
+    {
+      faqSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(faqSchema)}
+        />
+      )
+    }
+  </head>
+
+  <body>
+    <Header
+      projectName={projectConfig.projectName}
+      links={headerLinks}
+    />
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <Footer />
+
+    {
+      webAnalyticsToken && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: webAnalyticsToken })}
+        />
+      )
+    }
+  </body>
+</html>

@@ -310,7 +310,7 @@ Ein Automat löst aber nicht jedes Problem:
 - Manche Katzen manipulieren Geräte.
 - Der Energiebedarf wird nicht berechnet.
 
-Wie du Futterautomaten sinnvoll auswählst, findest du im [Futterautomaten-Vergleich](/futterautomaten/).
+Wie du Futterautomaten sinnvoll auswählst, findest du im [Futterautomaten-Vergleich](/smarte-futterautomaten/).
 
 ## Häufige Fehler
 

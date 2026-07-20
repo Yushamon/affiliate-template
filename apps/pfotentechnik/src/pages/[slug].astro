@@ -37,6 +37,7 @@ import feederWetFoodImage from "../assets/images/project/pfotentechnik/feeder-we
 import guideImage from "../assets/images/project/pfotentechnik/guide.webp";
 import inlineImage from "../assets/images/project/pfotentechnik/inline.webp";
 import productImage from "../assets/images/project/pfotentechnik/product.webp";
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
@@ -340,7 +341,7 @@ const relatedItems = relatedEntries.map((entry) => ({
                 <h3>{product.data.title}</h3>
                 <p>{product.data.recommendation}</p>
                 <p>
-                  <strong>{product.data.rating.toFixed(1)} / 5</strong>
+                  <strong>{toEditorialScore(product.data.rating, 5)}</strong>
                 </p>
               </a>
             ))}

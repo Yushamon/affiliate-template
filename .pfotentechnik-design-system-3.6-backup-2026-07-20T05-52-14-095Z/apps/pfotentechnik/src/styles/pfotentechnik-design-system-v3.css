@@ -1,0 +1,276 @@
+/*
+ * PfotenTechnik Design System 3.0
+ * Component correction layer.
+ *
+ * Loaded after Brand System 1.0 and 2.0.
+ * This layer fixes legacy hard-coded colors in article layouts and premium blocks.
+ */
+
+/* Article shell */
+
+.article {
+  width: min(100%, 860px);
+  margin-inline: auto;
+  padding: clamp(22px, 5vw, 54px);
+  border: 1px solid var(--pt-theme-border, var(--border));
+  border-radius: clamp(22px, 5vw, 34px);
+  background: var(--pt-theme-surface, var(--surface));
+  color: var(--pt-theme-text-soft, var(--text));
+  box-shadow: var(--pt-theme-shadow-sm, var(--shadow-soft));
+}
+
+.article > :first-child {
+  margin-top: 0;
+}
+
+.article :where(h1, h2, h3, h4, h5, h6) {
+  color: var(--pt-theme-text, var(--text)) !important;
+}
+
+.article :where(p, li, dd, dt, figcaption) {
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+.article :where(a:not(.button):not([class*="button"])) {
+  color: var(--pt-theme-accent, var(--primary)) !important;
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--pt-theme-accent, var(--primary)) 62%,
+    transparent
+  ) !important;
+}
+
+.article :where(a:not(.button):not([class*="button"])):hover {
+  color: var(--pt-theme-accent-hover, var(--primary-dark)) !important;
+}
+
+/* Premium renderer blocks */
+
+.article :where(
+  [class*="premium"],
+  [class*="quick-answer"],
+  [class*="short-answer"],
+  [class*="key-takeaway"],
+  [class*="summary"],
+  [class*="at-a-glance"],
+  [class*="explained"],
+  [class*="callout"],
+  [class*="highlight"],
+  [class*="info-box"],
+  [class*="answer-box"]
+) {
+  border-color: var(--pt-theme-border, var(--border)) !important;
+  background: var(--pt-theme-surface-2, var(--surface-soft)) !important;
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+  box-shadow: none !important;
+}
+
+.article :where(
+  [class*="premium"],
+  [class*="quick-answer"],
+  [class*="short-answer"],
+  [class*="key-takeaway"],
+  [class*="summary"],
+  [class*="at-a-glance"],
+  [class*="explained"],
+  [class*="callout"],
+  [class*="highlight"],
+  [class*="info-box"],
+  [class*="answer-box"]
+) :where(h1, h2, h3, h4, strong, b) {
+  color: var(--pt-theme-text, var(--text)) !important;
+}
+
+.article :where(
+  [class*="premium"],
+  [class*="quick-answer"],
+  [class*="short-answer"],
+  [class*="key-takeaway"],
+  [class*="summary"],
+  [class*="at-a-glance"],
+  [class*="explained"],
+  [class*="callout"],
+  [class*="highlight"],
+  [class*="info-box"],
+  [class*="answer-box"]
+) :where(p, li, span:not([class*="icon"]):not([class*="badge"])) {
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+/* Eyebrows and block labels */
+
+.article :where(
+  [class*="eyebrow"],
+  [class*="kicker"],
+  [class*="label"],
+  [class*="overline"]
+) {
+  color: var(--pt-theme-accent, var(--primary)) !important;
+}
+
+/* Icon tiles */
+
+.article :where(
+  [class*="icon-wrap"],
+  [class*="icon-box"],
+  [class*="block-icon"],
+  [class*="premium-icon"]
+) {
+  border-color: color-mix(
+    in srgb,
+    var(--pt-theme-accent, var(--primary)) 22%,
+    transparent
+  ) !important;
+  background: var(--pt-theme-accent-soft, var(--primary-soft)) !important;
+  color: var(--pt-theme-accent-text, var(--primary-dark)) !important;
+}
+
+/* Existing old TOC must never compete with the new component */
+
+.article > .toc:not(.pt-toc),
+.article > .table-of-contents:not(.pt-toc) {
+  display: none !important;
+}
+
+/* Lists */
+
+.article :where(ul, ol) {
+  color: var(--pt-theme-text-soft, var(--text));
+}
+
+.article :where(li)::marker {
+  color: var(--pt-theme-accent, var(--primary));
+}
+
+/* Tables */
+
+.article :where(.table-wrapper, .responsive-table) {
+  border: 1px solid var(--pt-theme-border, var(--border));
+  border-radius: 18px;
+  background: var(--pt-theme-surface, var(--surface));
+}
+
+.article table {
+  background: var(--pt-theme-surface, var(--surface)) !important;
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+.article th {
+  border-color: var(--pt-theme-border, var(--border)) !important;
+  background: var(--pt-theme-surface-3, var(--bg-soft)) !important;
+  color: var(--pt-theme-text, var(--text)) !important;
+}
+
+.article td {
+  border-color: var(--pt-theme-border, var(--border)) !important;
+  background: var(--pt-theme-surface, var(--surface)) !important;
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+.article tbody tr:nth-child(even) td {
+  background: var(--pt-theme-surface-2, var(--surface-soft)) !important;
+}
+
+/* FAQ and details */
+
+.article details:not(.pt-toc),
+.faq-item {
+  border-color: var(--pt-theme-border, var(--border)) !important;
+  background: var(--pt-theme-surface-2, var(--surface-soft)) !important;
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+.article details:not(.pt-toc) summary,
+.faq-item :where(summary, h2, h3, button) {
+  color: var(--pt-theme-text, var(--text)) !important;
+}
+
+/* Buttons and form controls */
+
+.article :where(input, select, textarea) {
+  border-color: var(--pt-theme-border-strong, var(--border-strong)) !important;
+  background: var(--pt-theme-surface, var(--surface)) !important;
+  color: var(--pt-theme-text, var(--text)) !important;
+}
+
+.article :where(input, textarea)::placeholder {
+  color: var(--pt-theme-text-muted, var(--muted)) !important;
+}
+
+/* Images */
+
+.article figure {
+  color: var(--pt-theme-text-muted, var(--muted));
+}
+
+.article figcaption {
+  color: var(--pt-theme-text-muted, var(--muted)) !important;
+}
+
+/* Article-level cards */
+
+.article :where(
+  .product-card,
+  .comparison-card,
+  .guide-card,
+  .recommendation-card,
+  .result-card
+) {
+  border-color: var(--pt-theme-border, var(--border)) !important;
+  background: var(--pt-theme-surface-2, var(--surface-soft)) !important;
+  color: var(--pt-theme-text-soft, var(--text)) !important;
+}
+
+/* Dark mode: stable, calm surfaces instead of a white island */
+
+@media (prefers-color-scheme: dark) {
+  .article {
+    background: #101b2c;
+    color: #d7e0eb;
+    border-color: rgba(226, 232, 240, 0.13);
+    box-shadow: 0 24px 68px rgba(0, 0, 0, 0.30);
+  }
+
+  .article :where(
+    [class*="premium"],
+    [class*="quick-answer"],
+    [class*="short-answer"],
+    [class*="key-takeaway"],
+    [class*="summary"],
+    [class*="at-a-glance"],
+    [class*="explained"],
+    [class*="callout"],
+    [class*="highlight"],
+    [class*="info-box"],
+    [class*="answer-box"]
+  ) {
+    background: #162338 !important;
+  }
+}
+
+/* Mobile: card remains readable without giant white frame */
+
+@media (max-width: 760px) {
+  .article {
+    width: 100%;
+    padding: 22px 18px 34px;
+    border-radius: 24px;
+  }
+
+  .article :where(h2) {
+    font-size: clamp(1.65rem, 8vw, 2.3rem);
+    line-height: 1.12;
+  }
+
+  .article :where(p, li) {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+}
+
+@media (max-width: 430px) {
+  .article {
+    padding-inline: 16px;
+    border-radius: 22px;
+  }
+}

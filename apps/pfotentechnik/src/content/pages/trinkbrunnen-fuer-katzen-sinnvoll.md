@@ -78,7 +78,7 @@ Ein Brunnen passt besonders gut, wenn deine Katze deutliches Interesse an bewegt
 
 Ein Trinkbrunnen kann auch praktisch sein, wenn du mehrere Katzen hast und zusätzliche Wasserstellen anbieten möchtest. Ein größeres Reservoir reduziert das Nachfüllen, ersetzt aber nicht die tägliche Kontrolle.
 
-Für Katzen, die empfindlich auf Pumpengeräusche reagieren, kann ein besonders leises Modell sinnvoll sein. Der [PETKIT Eversweet 3 Pro](/produkt/petkit-eversweet-3-pro/) ist beispielsweise für Halter interessant, die Wert auf einen ruhigen Betrieb und eine weitgehend geschlossene Bauweise legen.
+Für Katzen, die empfindlich auf Pumpengeräusche reagieren, kann ein besonders leises Modell sinnvoll sein. Der [PETKIT Eversweet 3 Pro](/produkt/petkit-eversweet-3-pro-uvc/) ist beispielsweise für Halter interessant, die Wert auf einen ruhigen Betrieb und eine weitgehend geschlossene Bauweise legen.
 
 ## Wann ist ein Trinkbrunnen eher unnötig?
 
@@ -133,7 +133,7 @@ Trotzdem sollte der Füllstand täglich geprüft werden. Eine blockierte Pumpe, 
 
 Kabellose oder akkubetriebene Brunnen können weiter entfernt von Steckdosen platziert werden. Das erleichtert einen ruhigen Standort.
 
-Ein Beispiel ist der [PETLIBRO Dockstream](/produkt/petlibro-dockstream/), der je nach Variante kabellos betrieben werden kann. Das ist vor allem dann interessant, wenn die beste Trinkstelle nicht direkt an einer Steckdose liegt.
+Ein Beispiel ist der [PETLIBRO Dockstream](/produkt/petlibro-dockstream-rfid-smart/), der je nach Variante kabellos betrieben werden kann. Das ist vor allem dann interessant, wenn die beste Trinkstelle nicht direkt an einer Steckdose liegt.
 
 ### Smarte Funktionen können Trends zeigen
 
@@ -209,13 +209,13 @@ Achte auf:
 - ausreichende Mindestfüllmenge
 - entkoppelte Motoreinheit
 
-Der [PETKIT Eversweet 3 Pro](/produkt/petkit-eversweet-3-pro/) kann hier interessant sein, sofern deine Katze einen eher geschlossenen, ruhigen Brunnen akzeptiert.
+Der [PETKIT Eversweet 3 Pro](/produkt/petkit-eversweet-3-pro-uvc/) kann hier interessant sein, sofern deine Katze einen eher geschlossenen, ruhigen Brunnen akzeptiert.
 
 ### Für Katzen, die sichtbares Fließen mögen
 
 Ein offener Auslauf oder eine deutlich bewegte Oberfläche kann besser passen als ein kaum sichtbarer Kreislauf.
 
-Der [PETLIBRO Dockstream](/produkt/petlibro-dockstream/) ist ein Beispiel für einen Brunnen mit gut erkennbarer Trinkfläche und unterschiedlichen Betriebsvarianten.
+Der [PETLIBRO Dockstream](/produkt/petlibro-dockstream-rfid-smart/) ist ein Beispiel für einen Brunnen mit gut erkennbarer Trinkfläche und unterschiedlichen Betriebsvarianten.
 
 ### Für Halter, die möglichst wenig Kunststoff möchten
 

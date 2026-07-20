@@ -1,0 +1,170 @@
+---
+type Evidence =
+  | "hands-on-testing"
+  | "manufacturer-documentation"
+  | "technical-specifications"
+  | "comparative-analysis"
+  | "user-feedback";
+
+interface Props {
+  assessmentType?:
+    | "hands-on-test"
+    | "editorial-review"
+    | "data-review";
+  evidence?: Evidence[];
+  testedHandsOn?: boolean;
+  lastVerifiedAt?: Date | string;
+  note?: string;
+}
+
+const {
+  assessmentType = "editorial-review",
+  evidence = [
+    "manufacturer-documentation",
+    "technical-specifications",
+    "comparative-analysis"
+  ],
+  testedHandsOn = false,
+  lastVerifiedAt,
+  note
+} = Astro.props as Props;
+
+const assessmentLabels = {
+  "hands-on-test": "Praxistest",
+  "editorial-review": "Redaktionelle Einordnung",
+  "data-review": "Datenbasierte Einordnung"
+};
+
+const evidenceLabels: Record<Evidence, string> = {
+  "hands-on-testing": "eigene praktische Prüfung",
+  "manufacturer-documentation": "Herstellerunterlagen",
+  "technical-specifications": "technische Daten",
+  "comparative-analysis": "einheitliche Vergleichskriterien",
+  "user-feedback": "ausgewertete Nutzerhinweise"
+};
+
+const formattedDate = lastVerifiedAt
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }).format(new Date(lastVerifiedAt))
+  : undefined;
+
+const evidenceText = evidence
+  .map((item) => evidenceLabels[item])
+  .filter(Boolean)
+  .join(", ");
+---
+
+<section
+  class="pt-trust-panel"
+  aria-labelledby="pt-trust-panel-title"
+>
+  <div class="pt-trust-panel__heading">
+    <span>{assessmentLabels[assessmentType]}</span>
+    <h2 id="pt-trust-panel-title">
+      So ist diese Bewertung entstanden
+    </h2>
+  </div>
+
+  <div class="pt-trust-panel__content">
+    <p>
+      Die Einordnung basiert auf {evidenceText}.
+      {
+        testedHandsOn
+          ? " Das Produkt wurde zusätzlich praktisch geprüft."
+          : " Sie behauptet keinen mehrmonatigen Praxistest."
+      }
+    </p>
+
+    {note && <p>{note}</p>}
+
+    <dl>
+      <div>
+        <dt>Prüfstatus</dt>
+        <dd>{assessmentLabels[assessmentType]}</dd>
+      </div>
+      <div>
+        <dt>Praxistest</dt>
+        <dd>{testedHandsOn ? "Ja" : "Nicht behauptet"}</dd>
+      </div>
+      {formattedDate && (
+        <div>
+          <dt>Zuletzt geprüft</dt>
+          <dd>{formattedDate}</dd>
+        </div>
+      )}
+    </dl>
+  </div>
+</section>
+
+<style>
+  .pt-trust-panel {
+    display: grid;
+    gap: 24px;
+    margin: 48px auto;
+    padding: clamp(24px, 4vw, 38px);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 24px;
+    background: #f8fafc;
+  }
+
+  .pt-trust-panel__heading span {
+    display: block;
+    margin-bottom: 8px;
+    color: #2e7d32;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pt-trust-panel h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.15;
+  }
+
+  .pt-trust-panel__content {
+    display: grid;
+    gap: 16px;
+  }
+
+  .pt-trust-panel p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.72;
+  }
+
+  .pt-trust-panel dl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 4px 0 0;
+  }
+
+  .pt-trust-panel dl div {
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: #ffffff;
+  }
+
+  .pt-trust-panel dt {
+    color: #64748b;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .pt-trust-panel dd {
+    margin: 4px 0 0;
+    color: #0f172a;
+    font-weight: 800;
+  }
+
+  @media (max-width: 720px) {
+    .pt-trust-panel dl {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

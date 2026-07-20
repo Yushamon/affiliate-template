@@ -1,0 +1,293 @@
+---
+import { stripLeadingIcon } from "../utils/content";
+import OptimizedImage from "../components/OptimizedImage.astro";
+
+type ProjectImageKey =
+  | "hero" | "feature" | "inline" | "comparison" | "guide" | "faq"
+  | "product" | "category" | "decision" | "calculator" | "manufacturer"
+  | "feederHero" | "feederComparison" | "feederWetFood";
+
+type PremiumProduct = {
+  key: string;
+  name: string;
+  productUrl: string;
+  badge?: string;
+  recommendation: string;
+  rating: number;
+  highlights: string[];
+  tags: string[];
+};
+
+type PremiumBlockType =
+  | "answer"
+  | "quickFacts"
+  | "scenarios"
+  | "decision"
+  | "steps"
+  | "products"
+  | "checks"
+  | "mistakes"
+  | "expert"
+  | "vde"
+  | "recommendation"
+  | "checklist";
+
+type PremiumCard = {
+  label?: string;
+  title: string;
+  text?: string;
+  value?: string;
+  href?: string;
+  cta?: string;
+  badge?: string;
+  productKey?: string;
+  items?: string[];
+};
+
+type PremiumBlock = {
+  type: PremiumBlockType;
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  cards?: PremiumCard[];
+  items?: string[];
+  href?: string;
+  cta?: string;
+  productFilter?: string;
+  productLimit?: number;
+  image?: string;
+  imageAlt?: string;
+  imageKey?: ProjectImageKey;
+};
+
+interface Props {
+  blocks?: PremiumBlock[];
+  project?: string;
+  heroImage?: string;
+  products?: PremiumProduct[];
+}
+
+const {
+  blocks = [],
+  products = []
+} = Astro.props;
+
+const productByKey = new Map(products.map((product) => [product.key, product]));
+
+const getBlockImageKey = (type: PremiumBlockType): ProjectImageKey | null => {
+  if (
+    type === "answer" ||
+    type === "quickFacts" ||
+    type === "expert" ||
+    type === "vde"
+  ) {
+    return "feature";
+  }
+
+  if (
+    type === "steps" ||
+    type === "checks" ||
+    type === "mistakes" ||
+    type === "checklist"
+  ) {
+    return "inline";
+  }
+
+  if (type === "scenarios") {
+    return "comparison";
+  }
+
+  if (type === "decision" || type === "recommendation") {
+    return "decision";
+  }
+
+  if (type === "products") {
+    return "product";
+  }
+
+  return null;
+};
+
+const getBlockIcon = (type: PremiumBlockType) => {
+  const icons: Record<PremiumBlockType, string> = {
+    answer: "✓",
+    quickFacts: "i",
+    scenarios: "↗",
+    decision: "→",
+    steps: "1",
+    products: "★",
+    checks: "✓",
+    mistakes: "!",
+    expert: "★",
+    vde: "i",
+    recommendation: "✓",
+    checklist: "✓"
+  };
+
+  return icons[type];
+};
+---
+
+{blocks.length > 0 && (
+  <div class="premium-v3">
+    {blocks.map((block) => {
+      const filteredProducts =
+        block.type === "products" && block.productFilter
+          ? products
+              .filter((product) => product.tags.includes(block.productFilter!))
+              .slice(0, block.productLimit ?? 4)
+          : [];
+
+      const hasCards = block.cards && block.cards.length > 0;
+      const hasProducts = filteredProducts.length > 0;
+      const hasList = block.items && block.items.length > 0;
+      const isExplicitBlockImage = Boolean(block.image);
+      const blockImage = block.image;
+      const shouldRenderBlockImage = Boolean(blockImage) && isExplicitBlockImage;
+
+      return (
+        <section class={`premium-v3-block premium-v3-${block.type}`}>
+          {(block.eyebrow || block.title || block.text) && (
+            <div class="premium-v3-header">
+              <div class="premium-v3-header-icon">
+                {getBlockIcon(block.type)}
+              </div>
+
+              <div>
+                {block.eyebrow && (
+                  <span class="premium-v3-eyebrow">
+                    {block.eyebrow}
+                  </span>
+                )}
+
+                {block.title && <h2>{block.title}</h2>}
+
+                {block.text && <p>{block.text}</p>}
+              </div>
+            </div>
+          )}
+
+          {shouldRenderBlockImage && (
+            <figure class="premium-v3-image premium-v3-image-compact">
+              <OptimizedImage
+                src={blockImage}
+                alt={block.imageAlt ?? block.title ?? block.eyebrow ?? "Ratgeber Illustration"}
+                layout="constrained"
+              />
+            </figure>
+          )}
+
+          {hasProducts && (
+            <div class="premium-v3-grid premium-v3-grid-products">
+              {filteredProducts.map((product) => (
+                <a
+                  class="premium-v3-card premium-v3-product-card premium-v3-card-link"
+                  href={product.productUrl}
+                >
+                  <span class="premium-v3-label">
+                    {product.badge}
+                  </span>
+
+                  <h3>{product.name}</h3>
+
+                  <p>{product.recommendation}</p>
+
+                  <div class="premium-v3-rating">
+                    ★ {product.rating} / 5
+                  </div>
+
+                  <ul>
+                    {product.highlights.slice(0, 3).map((item) => (
+                      <li>{stripLeadingIcon(item)}</li>
+                    ))}
+                  </ul>
+                </a>
+              ))}
+            </div>
+          )}
+
+          {hasCards && (
+            <div class={`premium-v3-grid premium-v3-grid-${block.type}`}>
+              {block.cards?.map((card, index) => {
+                const product = card.productKey
+                  ? productByKey.get(card.productKey)
+                  : null;
+
+                const href = card.href ?? product?.productUrl;
+
+                const CardTag = href ? "a" : "article";
+
+                return (
+                  <CardTag
+                    class={`premium-v3-card premium-v3-card-${index + 1}${href ? " premium-v3-card-link" : ""}`}
+                    href={href}
+                  >
+                    {card.label && (
+                      <span class="premium-v3-label">
+                        {card.label}
+                      </span>
+                    )}
+
+                    {card.badge && (
+                      <span class="premium-v3-badge">
+                        {card.badge}
+                      </span>
+                    )}
+
+                    {card.value && (
+                      <strong class="premium-v3-value">
+                        {card.value}
+                      </strong>
+                    )}
+
+                    <h3>{product ? product.name : card.title}</h3>
+
+                    {card.text && <p>{card.text}</p>}
+
+                    {product && <p>{product.recommendation}</p>}
+
+                    {card.items && (
+                      <ul>
+                        {card.items.map((item) => (
+                          <li>{stripLeadingIcon(item)}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {product && (
+                      <ul>
+                        {product.highlights.slice(0, 3).map((item) => (
+                          <li>{stripLeadingIcon(item)}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {href && (
+                      <span class="premium-v3-card-cta">
+                        {card.cta ?? "Mehr ansehen"}
+                      </span>
+                    )}
+                  </CardTag>
+                );
+              })}
+            </div>
+          )}
+
+          {hasList && (
+            <ul class="premium-v3-list">
+              {block.items?.map((item) => (
+                <li>{stripLeadingIcon(item)}</li>
+              ))}
+            </ul>
+          )}
+
+          {block.href && (
+            <a class="premium-v3-button" href={block.href}>
+              {block.cta ?? "Mehr erfahren"}
+            </a>
+          )}
+        </section>
+      );
+    })}
+  </div>
+)}

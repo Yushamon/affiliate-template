@@ -3,6 +3,7 @@ import OptimizedImage from "../OptimizedImage.astro";
 import type { ComparisonProduct } from "../../comparison/model";
 import { getPriceDisplay } from "../../comparison/price";
 
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 type Props = {
   products: ComparisonProduct[];
 };
@@ -67,8 +68,8 @@ const { products } = Astro.props as Props;
 
             {typeof product.rating === "number" && (
               <strong class="recommendation-card__rating">
-                {product.rating.toFixed(1)} / 5
-                <span>Redaktionelle Bewertung</span>
+                {toEditorialScore(product.rating, 5)}
+                <span>PfotenTechnik-Score</span>
               </strong>
             )}
           </div>

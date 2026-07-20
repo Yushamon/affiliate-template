@@ -216,7 +216,7 @@ Fülle besser nur so viel ein, wie dein Tier in überschaubarer Zeit verbraucht.
 
 Beim [PETLIBRO Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/) oder vergleichbaren Vorratsautomaten gilt deshalb: Nicht die maximale Kapazität ist entscheidend, sondern ein sinnvoller Nachfüllrhythmus.
 
-Welche Modelle sich leicht zerlegen und reinigen lassen, zeigt der [Futterautomaten-Vergleich](/futterautomaten/).
+Welche Modelle sich leicht zerlegen und reinigen lassen, zeigt der [Futterautomaten-Vergleich](/smarte-futterautomaten/).
 
 ## Trockenfutter im Automaten richtig lagern
 

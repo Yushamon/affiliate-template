@@ -155,7 +155,7 @@ healthBridge:
   eyebrow: "Gesundheit & Trinkverhalten"
   title: "Ein Trinkbrunnen ist eine Wasserstelle, kein Behandlungsgerät"
   text: "Plötzlich deutlich mehr oder weniger Trinken, häufigeres Urinieren, Erbrechen, Schwäche, Appetitverlust oder Gewichtsveränderungen sollten unabhängig von der verwendeten Wasserstelle tierärztlich abgeklärt werden. Wasser nie eigenständig einschränken."
-  href: "/katze-trinkt-zu-wenig/"
+  href: "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/"
   cta: "Verändertes Trinkverhalten einordnen"
 
 closingCta:
@@ -163,7 +163,7 @@ closingCta:
   text: "Vergleiche anschließend nur Modelle, deren Trinkfläche, Betriebsart und laufende Filterkosten zu deinem Alltag passen. Ein leicht zu reinigender Brunnen, den dein Tier akzeptiert, ist wertvoller als eine lange Funktionsliste."
   productKey: "petkit-eversweet-ultra"
   primaryLabel: "Beispielmodell ansehen"
-  secondaryHref: "/trinkbrunnen-richtig-reinigen/"
+  secondaryHref: "/katzentrinkbrunnen-richtig-reinigen/"
   secondaryLabel: "Reinigungsaufwand vorher prüfen"
 
 faq:
@@ -221,7 +221,7 @@ Passende Inhalte:
 
 - [Trinkbrunnen für Katzen vergleichen](/vergleiche/beste-trinkbrunnen-fuer-katzen/)
 - [Der richtige Standort für die Wasserstelle](/wasserstelle-katze-richtiger-standort/)
-- [Katze trinkt zu wenig](/katze-trinkt-zu-wenig/)
+- [Katze trinkt zu wenig](/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/)
 - [Katze trinkt viel](/katze-trinkt-viel/)
 
 ## Trinkbrunnen für Hunde
@@ -277,7 +277,7 @@ Vor dem Kauf solltest du beantworten können:
 
 Filter und UVC-Systeme ersetzen die Reinigung nicht.
 
-Die vollständige Anleitung findest du unter [Trinkbrunnen richtig reinigen](/trinkbrunnen-richtig-reinigen/).
+Die vollständige Anleitung findest du unter [Trinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/).
 
 ## Material: Edelstahl, Keramik oder Kunststoff?
 

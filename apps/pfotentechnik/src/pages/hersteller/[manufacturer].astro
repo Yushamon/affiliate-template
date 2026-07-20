@@ -6,6 +6,7 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import {
   getManufacturerBreadcrumbs,
   getRelatedContent
@@ -139,7 +140,7 @@ const productHref = (slug: string, productUrl?: string) =>
 
         {manufacturer.rating && (
           <div class="rating">
-            <strong>{manufacturer.rating.toFixed(1)} / 5</strong>
+            <strong>{toEditorialScore(manufacturer.rating, 5)}</strong>
             <span>Redaktionelle Herstellerbewertung</span>
           </div>
         )}
@@ -208,7 +209,7 @@ const productHref = (slug: string, productUrl?: string) =>
             <a href={productHref(product.data.slug, product.data.productUrl)}>
               <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.title} width={240} height={180} layout="constrained" />
               <div><strong>{product.data.title}</strong><span>{product.data.recommendation}</span></div>
-              <b>{product.data.rating.toFixed(1)} / 5</b>
+              <b>{toEditorialScore(product.data.rating, 5)}</b>
             </a>
           ))}
         </div>
@@ -311,4 +312,198 @@ const productHref = (slug: string, productUrl?: string) =>
   li { margin-bottom: .45rem; line-height: 1.5; }
   @media(max-width: 900px) { .manufacturer-hero, .decision-grid, .strength-grid, .profile-grid { grid-template-columns: 1fr; }.manufacturer-hero > :global(img) { height: auto; min-height: 0; aspect-ratio: 16 / 9; }.product-grid, .series-grid, .alternative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media(max-width: 640px) { .manufacturer-stats, .product-grid, .series-grid, .alternative-grid { grid-template-columns: 1fr; }.product-list > a { grid-template-columns: 60px minmax(0, 1fr); }.product-list b { grid-column: 2; } }
+
+/* manufacturer-dark-mode-5.2.1 */
+  @media (prefers-color-scheme: dark) {
+    .manufacturer-detail {
+      --green: var(--pt-theme-accent, #58d391);
+      --dark: var(--pt-theme-text, #f7fafc);
+      --muted: var(--pt-theme-text-soft, #d7e0eb);
+      --border: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-hero {
+      border-color: var(--border);
+      background: linear-gradient(145deg, var(--pt-theme-surface, #111d2f), var(--pt-theme-canvas-elevated, #0c1728));
+      box-shadow: var(--pt-theme-shadow-sm, 0 14px 38px rgb(0 0 0 / 28%));
+    }
+
+    .manufacturer-hero h1,
+    .manufacturer-hero .recommendation,
+    .manufacturer-section h2,
+    .product-card h3,
+    .product-card h3 a,
+    .alternative-grid h3,
+    .series-grid h3,
+    .decision-grid h2,
+    .strength-grid h3,
+    .product-list strong,
+    .sources summary {
+      color: var(--pt-theme-text, #f7fafc);
+    }
+
+    .manufacturer-hero p,
+    .rating span,
+    .manufacturer-stats span,
+    .decision-grid li,
+    .strength-grid li,
+    .product-card p,
+    .product-card li,
+    .series-grid p,
+    .series-grid li,
+    .alternative-grid p,
+    .product-list div span,
+    .experience > p,
+    .experience aside p,
+    .sources li {
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-stats div,
+    .decision-grid article,
+    .strength-grid article,
+    .product-card,
+    .series-grid article,
+    .alternative-grid a,
+    .product-list > a,
+    .sources {
+      border-color: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      background: var(--pt-theme-surface, #111d2f);
+      color: var(--pt-theme-text-soft, #d7e0eb);
+      box-shadow: var(--pt-theme-shadow-sm, 0 14px 38px rgb(0 0 0 / 28%));
+    }
+
+    .decision-grid .attention,
+    .strength-grid .weakness {
+      border-color: color-mix(in srgb, var(--pt-theme-warning, #f9b75f) 24%, var(--pt-theme-border));
+      background: var(--pt-theme-warning-soft, rgba(245, 158, 11, 0.14));
+    }
+
+    .experience aside {
+      border-left-color: var(--pt-theme-accent, #58d391);
+      background: var(--pt-theme-success-soft, rgba(34, 197, 94, 0.14));
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .product-card > :global(img),
+    .product-list :global(img),
+    .alternative-grid :global(img) {
+      background: #f5f7f6;
+    }
+
+    .website,
+    .product-link,
+    .product-list b,
+    .product-score strong,
+    .rating strong,
+    .manufacturer-stats strong {
+      color: var(--pt-theme-accent, #58d391);
+    }
+
+    .manufacturer-detail :global(.faq-item),
+    .manufacturer-detail :global(details) {
+      border-color: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      background: var(--pt-theme-surface, #111d2f);
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-detail :global(.faq-item summary),
+    .manufacturer-detail :global(details summary),
+    .manufacturer-detail :global(.faq-question) {
+      color: var(--pt-theme-text, #f7fafc);
+    }
+
+    .manufacturer-detail :global(.faq-answer),
+    .manufacturer-detail :global(details p) {
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+  }
+
+/* manufacturer-hero-redesign-5.3 */
+  .manufacturer-detail {
+    gap: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .manufacturer-hero {
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+    align-items: stretch;
+    min-height: 560px;
+  }
+
+  .manufacturer-hero > div {
+    display: grid;
+    align-content: center;
+    padding: clamp(2.5rem, 4.5vw, 4.25rem);
+  }
+
+  .manufacturer-hero > div > p {
+    max-width: 58ch;
+  }
+
+  .manufacturer-hero h1 {
+    font-size: clamp(2.9rem, 5.5vw, 5rem);
+  }
+
+  .manufacturer-hero .recommendation {
+    max-width: 40ch;
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+    line-height: 1.45;
+  }
+
+  .manufacturer-hero > :global(img) {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .manufacturer-stats {
+    margin-top: -1rem;
+  }
+
+  @media (max-width: 900px) {
+    .manufacturer-hero {
+      min-height: 0;
+    }
+
+    .manufacturer-hero > div {
+      padding: clamp(2rem, 7vw, 3rem);
+    }
+
+    .manufacturer-hero > :global(img) {
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 16 / 9;
+    }
+
+    .manufacturer-stats {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .manufacturer-detail {
+      gap: 2.25rem;
+    }
+
+    .manufacturer-hero {
+      border-radius: 1.35rem;
+    }
+
+    .manufacturer-hero h1 {
+      font-size: clamp(2.5rem, 13vw, 3.8rem);
+    }
+
+    .manufacturer-hero .recommendation {
+      font-size: 1.08rem;
+    }
+  }
 </style>
