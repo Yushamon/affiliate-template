@@ -6,6 +6,7 @@ import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import {
   getManufacturerBreadcrumbs,
   getRelatedContent
@@ -139,7 +140,7 @@ const productHref = (slug: string, productUrl?: string) =>
 
         {manufacturer.rating && (
           <div class="rating">
-            <strong>{manufacturer.rating.toFixed(1)} / 5</strong>
+            <strong>{toEditorialScore(manufacturer.rating, 5)}</strong>
             <span>Redaktionelle Herstellerbewertung</span>
           </div>
         )}
@@ -208,7 +209,7 @@ const productHref = (slug: string, productUrl?: string) =>
             <a href={productHref(product.data.slug, product.data.productUrl)}>
               <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.title} width={240} height={180} layout="constrained" />
               <div><strong>{product.data.title}</strong><span>{product.data.recommendation}</span></div>
-              <b>{product.data.rating.toFixed(1)} / 5</b>
+              <b>{toEditorialScore(product.data.rating, 5)}</b>
             </a>
           ))}
         </div>

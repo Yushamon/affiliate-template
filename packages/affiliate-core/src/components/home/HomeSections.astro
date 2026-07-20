@@ -2,6 +2,7 @@
 import OptimizedImage from "../OptimizedImage.astro";
 import type { HomeCard, HomeCategory, HomeProduct } from "../../home/model";
 
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 type Props = {
   kind: "categories" | "editorial" | "products";
   eyebrow: string;
@@ -62,7 +63,7 @@ const { kind, eyebrow, title, text, items, id } = Astro.props as Props;
             </div>
             <div class="home2-card-content">
               <span>{item.manufacturer}</span><h3>{item.title}</h3><p>{item.recommendation}</p>
-              <div class="home2-rating"><strong>{item.rating.toFixed(1)} / 5</strong><small>Redaktionelle Bewertung</small></div>
+              <div class="home2-rating"><strong>{toEditorialScore(item.rating, 5)}</strong><small>PfotenTechnik-Score</small></div>
               <b>Produkttest lesen</b>
             </div>
           </a>

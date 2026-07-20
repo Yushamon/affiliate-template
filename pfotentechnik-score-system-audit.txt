@@ -1,0 +1,22 @@
+PfotenTechnik Score System Audit
+================================
+
+Gemeinsame Score-Komponenten eingesetzt: 0
+Übrige 5er-Werte auf 100er-Skala umgestellt: 7
+Alte Bewertungshinweise ersetzt: 3
+
+Geänderte Dateien:
+- apps/pfotentechnik/src/pages/[slug].astro
+- apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro
+- packages/affiliate-core/src/components/comparison/ComparisonMobileCards.astro
+- packages/affiliate-core/src/components/comparison/RecommendationGrid.astro
+- packages/affiliate-core/src/components/comparison/comparison.css
+- packages/affiliate-core/src/components/home/HomeSection.astro
+- packages/affiliate-core/src/components/home/HomeSections.astro
+- packages/affiliate-core/src/components/home/home.css
+
+Verbleibende Prüfpunkte:
+- packages/affiliate-core/src/components/ProductBox.astro: Sternsymbol
+- packages/affiliate-core/src/components/ProductComparisonTable.astro: Sternsymbol
+- packages/affiliate-core/src/components/ProductRankingCard.astro: Sternsymbol
+- packages/affiliate-core/src/components/product/ProductReview.astro: Sternsymbol

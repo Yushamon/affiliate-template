@@ -293,20 +293,7 @@
   line-height: 1.55;
 }
 
-.recommendation-card__rating {
-  display: flex;
-  justify-content: space-between;
-  gap: .5rem;
-  margin-top: auto;
-  padding-top: 1rem;
-  color: var(--comparison-accent);
-}
 
-.recommendation-card__rating span {
-  color: var(--comparison-muted);
-  font-size: .68rem;
-  font-weight: 500;
-}
 
 .recommendation-card__actions {
   display: grid;

@@ -6,6 +6,7 @@ import type {
 } from "../../comparison/model";
 import { getPriceDisplay } from "../../comparison/price";
 
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 type Props = {
   products: ComparisonProduct[];
   rows: ComparisonRow[];
@@ -46,7 +47,7 @@ const {
             )}
             <h3>{product.title}</h3>
             {typeof product.rating === "number" && (
-              <strong>{product.rating.toFixed(1)} / 5</strong>
+              <strong>{toEditorialScore(product.rating, 5)}</strong>
             )}
           </div>
         </header>

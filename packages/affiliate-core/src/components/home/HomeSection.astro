@@ -1,5 +1,6 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import type {
   HomeCategoryCard,
   HomeEditorialCard,
@@ -126,8 +127,8 @@ const {
               <h3>{item.title}</h3>
               <p>{item.recommendation}</p>
               <div class="home3-rating">
-                <strong>{item.rating.toFixed(1)} / 5</strong>
-                <small>Redaktionelle Bewertung</small>
+                <strong>{toEditorialScore(item.rating, 5)}</strong>
+                <small>PfotenTechnik-Score</small>
               </div>
               <b>Produkttest lesen</b>
             </div>
