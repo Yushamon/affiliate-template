@@ -61,6 +61,28 @@ const getDecisionIcon = (label: string) => {
   return "star";
 };
 
+
+const getDecisionTheme = (label: string) => {
+  const normalized = label.toLocaleLowerCase("de");
+  if (normalized.includes("trink") || normalized.includes("wasser")) return "drinking";
+  if (normalized.includes("gps") || normalized.includes("tracker") || normalized.includes("ortung")) return "safety";
+  return "feeding";
+};
+
+const getDecisionAnimal = (label: string) => {
+  const normalized = label.toLocaleLowerCase("de");
+  if (normalized.includes("katze")) return "Für Katzen";
+  if (normalized.includes("hund")) return "Für Hunde";
+  return "Vergleich";
+};
+
+const getDecisionHighlights = (label: string) => {
+  const theme = getDecisionTheme(label);
+  if (theme === "drinking") return ["Leise", "Filter", "Reinigung"];
+  if (theme === "safety") return ["Live-Ortung", "Akku", "Abo"];
+  return ["App", "Portionen", "Futterart"];
+};
+
 const getDecisionIconSvg = (type: string) => {
   if (type === "location") {
     return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>`;
@@ -102,7 +124,15 @@ const getDecisionIconSvg = (type: string) => {
 
     <div class="home41-decision__grid">
       {decisionCards.map((card) => (
-        <a class="home41-decision__card" href={card.href}>
+        <a
+          class:list={[
+            "home41-decision__card",
+            `home41-decision__card--${getDecisionTheme(
+              `${card.label} ${card.title}`
+            )}`
+          ]}
+          href={card.href}
+        >
           <span
             class:list={[
               "home41-decision__quick-icon",
@@ -130,6 +160,9 @@ const getDecisionIconSvg = (type: string) => {
           </div>
 
           <div class="home41-decision__content">
+            <span class="home41-decision__animal">
+              {getDecisionAnimal(`${card.label} ${card.title}`)}
+            </span>
             <h3>{card.title}</h3>
             <p>{card.text}</p>
 
@@ -147,6 +180,14 @@ const getDecisionIconSvg = (type: string) => {
                 <small>{card.updatedLabel}</small>
               )}
             </div>
+
+            <ul class="home41-decision__highlights" aria-label="Schwerpunkte">
+              {getDecisionHighlights(
+                `${card.label} ${card.title}`
+              ).map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
 
             <b><span class="home41-decision__cta-label">Vergleich ansehen</span></b>
           </div>

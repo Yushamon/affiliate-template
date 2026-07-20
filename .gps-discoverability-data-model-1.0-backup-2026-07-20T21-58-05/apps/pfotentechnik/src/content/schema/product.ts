@@ -206,34 +206,6 @@ const productSpecSchema =
     ])
   });
 
-const productGpsSchema =
-  z.object({
-    animal: z.array(z.enum(["dog", "cat"])).min(1),
-    minimumPetWeightKg: z.number().nonnegative().optional(),
-    maximumPetWeightKg: z.number().positive().optional(),
-    deviceWeightGrams: z.number().positive().optional(),
-    totalWeightGrams: z.number().positive().optional(),
-    weightBasis: z.enum(["device", "including-collar", "system"]).default("device"),
-    subscriptionRequired: z.boolean(),
-    includedServiceMonths: z.number().int().nonnegative().default(0),
-    transmission: z.enum(["lte", "vhf", "bluetooth", "other"]),
-    batteryMaxDays: z.number().positive().optional(),
-    batteryCondition: z.string().optional(),
-    waterproofRating: z.string().optional(),
-    liveTracking: z.boolean().default(false),
-    virtualFence: z.boolean().default(false),
-    activityTracking: z.boolean().default(false),
-    attachmentType: z.enum([
-      "clip",
-      "collar",
-      "safety-collar",
-      "collar-attachment",
-      "harness",
-      "other"
-    ]).optional()
-  })
-  .optional();
-
 const productComparisonFiltersSchema =
   z.object({
     foodType: z
@@ -411,8 +383,6 @@ export const createProductContentSchema = (image: ImageFunction) =>
     features: z
       .array(z.string())
       .default([]),
-
-    gps: productGpsSchema,
 
     comparisonFilters:
       productComparisonFiltersSchema

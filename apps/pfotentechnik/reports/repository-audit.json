@@ -1,22 +1,25 @@
 {
   "summary": {
-    "generatedAt": "2026-07-20T10:52:25.551Z",
+    "generatedAt": "2026-07-20T19:57:27.341Z",
     "countsByCollection": {
-      "pages": 77,
-      "products": 58,
-      "manufacturers": 10,
-      "comparisons": 7
+      "pages": 94,
+      "products": 66,
+      "manufacturers": 14,
+      "comparisons": 12
     },
     "categoryCounts": {
       "vergleich": 10,
       "futterautomaten": 27,
-      "trinkbrunnen": 16,
+      "trinkbrunnen": 17,
+      "gps-tracker": 10,
       "tierernaehrung": 2,
-      "hundegesundheit": 5,
+      "fuetterung": 2,
+      "hundegesundheit": 8,
       "katzenverhalten": 1,
       "katzengesundheit": 5,
       "gesundheit": 2,
       "ratgeber": 1,
+      "haustiertechnik": 1,
       "redaktion": 1,
       "katzenfutter": 1,
       "katzenernaehrung": 1,
@@ -25,11 +28,11 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 162,
+    "routes": 196,
     "findings": {
       "error": 0,
       "warning": 11,
-      "info": 5
+      "info": 7
     }
   },
   "findings": [
@@ -72,7 +75,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1700 Zeilen",
+      "message": "Sehr große Datei mit 1676 Zeilen",
       "file": "src/content/pages/futterautomat-richtig-reinigen.md"
     },
     {
@@ -84,7 +87,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1421 Zeilen",
+      "message": "Sehr große Datei mit 1069 Zeilen",
       "file": "src/content/pages/katze-trinkt-viel.md"
     },
     {
@@ -96,7 +99,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1430 Zeilen",
+      "message": "Sehr große Datei mit 1188 Zeilen",
       "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
     },
     {
@@ -115,6 +118,18 @@
       "severity": "info",
       "area": "css",
       "message": "Selektor 3× definiert: .article",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 3× definiert: .home41-decision__card",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 3× definiert: main.container.container--home .home3-hero",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {

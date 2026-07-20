@@ -166,35 +166,6 @@ const getStructuredFilters = (
 
   const foodTypes = source?.foodType ?? [];
 
-  const gps = product.data.gps;
-
-  if (gps) {
-    gps.animal.forEach((animal) =>
-      addValue(values, "tier", animal === "dog" ? "hund" : "katze")
-    );
-    addValue(
-      values,
-      "abo",
-      gps.subscriptionRequired ? "mit-abo" : "ohne-abo"
-    );
-    addValue(
-      values,
-      "system",
-      gps.transmission === "vhf" ? "vhf" : "mobilfunk"
-    );
-
-    const comparableWeight =
-      gps.deviceWeightGrams ?? gps.totalWeightGrams;
-
-    if (typeof comparableWeight === "number") {
-      addValue(
-        values,
-        "gewicht",
-        comparableWeight <= 35 ? "bis-35-g" : "ueber-35-g"
-      );
-    }
-  }
-
   foodTypes.forEach((foodType) => {
     addValue(
       values,

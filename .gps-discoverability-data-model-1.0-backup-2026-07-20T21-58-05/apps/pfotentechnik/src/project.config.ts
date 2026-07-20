@@ -38,7 +38,6 @@ export const projectConfig = {
   headerLinks: [
     { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
     { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
-    { label: "GPS-Tracker", href: "/gps-tracker/" },
     { label: "Vergleiche", href: "/vergleiche/" },
     { label: "Hersteller", href: "/hersteller/" },
     { label: "Wissen", href: "/wissen/" },
@@ -84,7 +83,7 @@ export const projectConfig = {
           title: "GPS Tracker",
           text: "Ortung, Akkulaufzeit und Abdeckung verständlich vergleichen.",
           anchor: "gps-tracker",
-          href: "/gps-tracker/",
+          href: "/#produkte",
           productCategory: "gps-tracker"
         },
         {
@@ -120,8 +119,6 @@ export const projectConfig = {
         { label: "Hunde · Futterautomaten", href: "/futterautomat-hund/" },
         { label: "Katzen · Trinkbrunnen", href: "/trinkbrunnen/#katzen" },
         { label: "Hunde · Trinkbrunnen", href: "/trinkbrunnen/#hunde" },
-        { label: "Hunde · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-hunde/" },
-        { label: "Katzen · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-katzen/" },
         { label: "Nassfutter", href: "/futterautomat-nassfutter/" },
         { label: "Mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" },
         { label: "Ohne WLAN", href: "/futterautomat-ohne-wlan/" },
@@ -190,7 +187,6 @@ export const projectConfig = {
         links: [
           { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
           { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
-          { label: "GPS-Tracker", href: "/gps-tracker/" },
           { label: "Futterautomaten mit App", href: "/futterautomat-mit-app/" },
           { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera/" }
         ]
