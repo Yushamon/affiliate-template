@@ -1,0 +1,98 @@
+diff --git a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+index 341693d..c803a86 100644
+--- a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
++++ b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+@@ -4562,3 +4562,93 @@ body.dark-mode .manufacturer-card-content p {
+ }
+ 
+ /* === End PfotenTechnik UI Polish 4.0 === */
++
++/* PT hero flush + chip arrow 4.5.2 */
++
++main.container.container--home {
++  padding-top: 0 !important;
++}
++
++main.container.container--home > .home3 {
++  margin-top: 0 !important;
++  padding-top: 0 !important;
++}
++
++main.container.container--home .home3-hero {
++  margin-top: 0 !important;
++}
++
++@media (max-width: 768px) {
++  main.container.container--home {
++    padding-top: 0 !important;
++  }
++
++  main.container.container--home > .home3 {
++    margin-top: 0 !important;
++    padding-top: 0 !important;
++  }
++
++  main.container.container--home .home3-hero {
++    margin-top: 0 !important;
++  }
++}
++
++@media (max-width: 760px) {
++  .home41-decision__card {
++    grid-template-columns: 34px minmax(0, 1fr) 18px;
++  }
++
++  .home41-decision__content {
++    grid-column: 2;
++  }
++
++  .home41-decision__arrow {
++    display: grid;
++    width: 18px;
++    height: 32px;
++    grid-column: 3;
++    place-items: center;
++    align-self: center;
++    color: var(--home3-accent);
++    font-size: 1rem;
++    font-weight: 800;
++    line-height: 1;
++  }
++}
++
++@media (min-width: 761px) {
++  .home41-decision__arrow {
++    display: none;
++  }
++}
++/* End PT hero flush + chip arrow 4.5.2 */
++
++/* PT mobile hero text position 4.5.3 */
++
++@media (max-width: 720px) {
++  /*
++   * Keep the full content group intact and move it upward in relation
++   * to the image by increasing the bottom breathing room.
++   */
++  main.container.container--home .home3-hero__content {
++    justify-content: flex-end;
++    padding-bottom: clamp(4.75rem, 13vw, 6.25rem);
++  }
++
++  main.container.container--home .home3-hero h1 {
++    margin-top: 0.45rem;
++    margin-bottom: 0.9rem;
++  }
++}
++
++/* Prevent crowding on unusually short mobile viewports. */
++@media (max-width: 720px) and (max-height: 740px) {
++  main.container.container--home .home3-hero__content {
++    padding-bottom: 2.5rem;
++  }
++
++  main.container.container--home .home3-hero h1 {
++    font-size: clamp(2.35rem, 10.4vw, 3.15rem);
++  }
++}
++/* End PT mobile hero text position 4.5.3 */
