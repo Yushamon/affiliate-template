@@ -37,6 +37,14 @@ const getDecisionIcon = (label: string) => {
   }
 
   if (
+    normalized.includes("gps") ||
+    normalized.includes("tracker") ||
+    normalized.includes("ortung")
+  ) {
+    return "location";
+  }
+
+  if (
     normalized.includes("trink") ||
     normalized.includes("wasser")
   ) {
@@ -54,6 +62,10 @@ const getDecisionIcon = (label: string) => {
 };
 
 const getDecisionIconSvg = (type: string) => {
+  if (type === "location") {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>`;
+  }
+
   if (type === "drop") {
     return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.2 6 11a6 6 0 0 1-12 0c0-4.8 6-11 6-11Z"/><path d="M9.5 15.2c.7 1.1 1.6 1.6 2.8 1.6"/></svg>`;
   }

@@ -126,10 +126,11 @@ const {
               <span>{item.manufacturer}</span>
               <h3>{item.title}</h3>
               <p>{item.recommendation}</p>
-              <div class="home3-rating">
-                <strong>{toEditorialScore(item.rating, 5)}</strong>
-                <small>PfotenTechnik-Score</small>
-              </div>
+              <EditorialScore
+                value={item.rating}
+                scale={5}
+                variant="compact"
+              />
               <b>Produkttest lesen</b>
             </div>
           </a>

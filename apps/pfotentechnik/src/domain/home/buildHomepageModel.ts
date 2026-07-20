@@ -108,6 +108,20 @@ const decisionComparisonDefinitions = [
     title: "Beste Trinkbrunnen für Hunde",
     fallbackText:
       "Kapazität, Standfestigkeit, Trinkhöhe und Reinigung für Hunde einordnen."
+  },
+  {
+    slug: "beste-gps-tracker-fuer-katzen",
+    label: "Katzen · GPS-Tracker",
+    title: "GPS-Tracker für Katzen",
+    fallbackText:
+      "Gewicht, Ortungsintervall, Akkulaufzeit, Abo und Sicherheitszonen vergleichen."
+  },
+  {
+    slug: "beste-gps-tracker-fuer-hunde",
+    label: "Hunde · GPS-Tracker",
+    title: "GPS-Tracker für Hunde",
+    fallbackText:
+      "Ortung, Robustheit, Akkulaufzeit, Größe und laufende Kosten vergleichen."
   }
 ] as const;
 

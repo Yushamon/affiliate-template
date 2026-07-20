@@ -1560,3 +1560,59 @@
   }
 }
 /* End PT homepage mobile alignment 4.3 */
+
+/* PT GPS quick chips and score audit polish 4.4 */
+
+@media (max-width: 760px) {
+  .home41-decision__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home41-decision__card {
+    min-height: 108px;
+    grid-template-columns: 44px minmax(0, 1fr) 18px;
+  }
+
+  .home41-decision__content h3 {
+    font-size: clamp(0.94rem, 3.85vw, 1.08rem);
+    line-height: 1.2;
+    text-wrap: pretty;
+  }
+}
+
+@media (max-width: 390px) {
+  .home41-decision__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recommendation-card .pt-score {
+  margin-top: auto;
+}
+
+.recommendation-card .pt-score--compact {
+  padding-top: 0.85rem;
+}
+
+.product-rating-card-v4__top > span {
+  color: var(--product-accent, #18743b);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.product-rating-card-v4__top > span::after {
+  margin-left: 0.18rem;
+  color: var(--product-muted, #627471);
+  content: "/100";
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.product-metrics-v4 dd::after {
+  margin-left: 0.16rem;
+  color: var(--product-muted, #627471);
+  content: "/100";
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+/* End PT GPS quick chips and score audit polish 4.4 */

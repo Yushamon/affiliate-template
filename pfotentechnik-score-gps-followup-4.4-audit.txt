@@ -1,0 +1,50 @@
+PfotenTechnik Score + GPS Follow-up 4.4
+======================================
+
+Vorherige lokale Audits:
+Quelle: pfotentechnik-ui-score-consolidation-4.3-audit.txt
+PfotenTechnik UI + Score Consolidation 4.3
+==========================================
+
+Verbleibende alte Rating-Muster:
+- packages/affiliate-core/src/components/ProductRankingCard.astro: /\s*5\b
+- packages/affiliate-core/src/components/ProductBox.astro: /\s*5\b, ★★★★★
+- packages/affiliate-core/src/components/ProductComparisonTable.astro: /\s*5\b
+- packages/affiliate-core/src/components/product/ProductReview.astro: /\s*5\b
+- apps/pfotentechnik/src/components/AutoContentBlocks.astro: /\s*5\b
+- apps/pfotentechnik/src/pages/hersteller/index.astro: /\s*5\b
+- apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro: /\s*5\b
+
+Quelle: pfotentechnik-score-system-audit.txt
+PfotenTechnik Score System Audit
+================================
+
+Gemeinsame Score-Komponenten eingesetzt: 0
+Übrige 5er-Werte auf 100er-Skala umgestellt: 7
+Alte Bewertungshinweise ersetzt: 3
+
+Geänderte Dateien:
+- apps/pfotentechnik/src/pages/[slug].astro
+- apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro
+- packages/affiliate-core/src/components/comparison/ComparisonMobileCards.astro
+- packages/affiliate-core/src/components/comparison/RecommendationGrid.astro
+- packages/affiliate-core/src/components/comparison/comparison.css
+- packages/affiliate-core/src/components/home/HomeSection.astro
+- packages/affiliate-core/src/components/home/HomeSections.astro
+- packages/affiliate-core/src/components/home/home.css
+
+Verbleibende Prüfpunkte:
+- packages/affiliate-core/src/components/ProductBox.astro: Sternsymbol
+- packages/affiliate-core/src/components/ProductComparisonTable.astro: Sternsymbol
+- packages/affiliate-core/src/components/ProductRankingCard.astro: Sternsymbol
+- packages/affiliate-core/src/components/product/ProductReview.astro: Sternsymbol
+
+
+Neuer Scan aktiver Komponenten:
+- packages/affiliate-core/src/components/ProductRankingCard.astro: 5er-Skala
+- packages/affiliate-core/src/components/ProductBox.astro: 5er-Skala, Sterne
+- packages/affiliate-core/src/components/ProductComparisonTable.astro: 5er-Skala
+- packages/affiliate-core/src/components/product/ProductReview.astro: 5er-Skala
+- apps/pfotentechnik/src/components/AutoContentBlocks.astro: 5er-Skala
+- apps/pfotentechnik/src/pages/hersteller/index.astro: 5er-Skala
+- apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro: 5er-Skala
