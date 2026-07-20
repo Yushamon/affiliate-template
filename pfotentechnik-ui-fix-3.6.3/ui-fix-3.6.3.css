@@ -1,0 +1,152 @@
+/* === PfotenTechnik UI Fix 3.6.3 === */
+
+/* Mobile Gesamtbreite: weniger verschachtelter Außenraum */
+@media (max-width: 759px) {
+  .container {
+    padding-inline: 12px !important;
+  }
+
+  .product-detail,
+  .pt-product-detail,
+  .product-review-v4,
+  .product-decision-v4,
+  .product-ratings-v4,
+  .product-strengths-v4,
+  .product-alternatives-v4,
+  .product-specs-v4,
+  .pt-trust-panel,
+  .pt-everyday-review,
+  .pt-product-health,
+  .pt-conversion-journey {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .product-decision-v4,
+  .product-ratings-v4,
+  .product-strengths-v4,
+  .product-alternatives-v4,
+  .product-specs-v4,
+  .pt-trust-panel,
+  .pt-everyday-review,
+  .pt-product-health,
+  .pt-conversion-journey {
+    margin-inline: 0 !important;
+  }
+}
+
+/* Produkt-Hero: alle Hauptflächen konsistent */
+@media (prefers-color-scheme: dark) {
+  .product-hero-v4,
+  .product-hero-v4__content,
+  .product-summary-card-v4 {
+    background: #101f32 !important;
+    color: #dbe5ef !important;
+  }
+
+  .product-hero-v4__content {
+    border-top-color: rgba(203, 213, 225, 0.16) !important;
+  }
+
+  .product-summary-card-v4 {
+    border-top-color: rgba(203, 213, 225, 0.16) !important;
+  }
+}
+
+/* Fakten: bei zwei Einträgen exakt gleich breit */
+.product-facts-v4 {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(140px, 100%), 1fr)
+  ) !important;
+}
+
+.product-facts-v4:has(> div:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.product-facts-v4:has(> div:nth-child(2):last-child) > div {
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.product-facts-v4:has(> div:nth-child(2):last-child) > div:nth-child(2) {
+  border-left: 1px solid var(--v4-border) !important;
+}
+
+.product-facts-v4 dd {
+  overflow-wrap: anywhere !important;
+  hyphens: auto;
+}
+
+/* Gesundheitshinweis */
+@media (prefers-color-scheme: dark) {
+  .pt-product-health {
+    border: 1px solid rgba(94, 225, 154, 0.2) !important;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(94, 225, 154, 0.08),
+        rgba(16, 31, 50, 0.98)
+      ) !important;
+    color: #dbe5ef !important;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.24) !important;
+  }
+
+  .pt-product-health > span {
+    color: #5ee19a !important;
+  }
+
+  .pt-product-health h2 {
+    color: #f8fafc !important;
+  }
+
+  .pt-product-health p {
+    color: #b8c4d3 !important;
+  }
+}
+
+/* Mobile Gesundheitshinweis kompakter */
+@media (max-width: 759px) {
+  .pt-product-health {
+    padding: 24px !important;
+    border-radius: 20px !important;
+  }
+
+  .pt-product-health > div {
+    min-width: 0 !important;
+  }
+
+  .pt-product-health h2 {
+    font-size: clamp(1.55rem, 8vw, 2.2rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .pt-product-health p {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+}
+
+/* Manual dark theme fallback */
+:root[data-theme="dark"] .pt-product-health,
+html.dark .pt-product-health,
+body.dark-mode .pt-product-health {
+  border-color: rgba(94, 225, 154, 0.2) !important;
+  background: #101f32 !important;
+  color: #dbe5ef !important;
+}
+
+:root[data-theme="dark"] .pt-product-health h2,
+html.dark .pt-product-health h2,
+body.dark-mode .pt-product-health h2 {
+  color: #f8fafc !important;
+}
+
+:root[data-theme="dark"] .pt-product-health p,
+html.dark .pt-product-health p,
+body.dark-mode .pt-product-health p {
+  color: #b8c4d3 !important;
+}
+
+/* === End PfotenTechnik UI Fix 3.6.3 === */
