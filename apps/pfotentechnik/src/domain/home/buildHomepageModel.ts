@@ -84,28 +84,28 @@ const decisionComparisonDefinitions = [
   {
     slug: "beste-futterautomaten-fuer-katzen",
     label: "Katzen · Futterautomaten",
-    title: "Beste Futterautomaten für Katzen",
+    title: "Futterautomaten für Katzen",
     fallbackText:
       "Modelle nach Futterart, Portionierung, App, Zugang und Alltagseignung vergleichen."
   },
   {
     slug: "beste-futterautomaten-fuer-hunde",
     label: "Hunde · Futterautomaten",
-    title: "Beste Futterautomaten für Hunde",
+    title: "Futterautomaten für Hunde",
     fallbackText:
       "Kapazität, Napfgröße, Portionierung und Ausfallsicherheit direkt gegenüberstellen."
   },
   {
     slug: "beste-trinkbrunnen-fuer-katzen",
     label: "Katzen · Trinkbrunnen",
-    title: "Beste Trinkbrunnen für Katzen",
+    title: "Trinkbrunnen für Katzen",
     fallbackText:
       "Material, Filter, Reinigung, Lautstärke und Trinkfläche sinnvoll vergleichen."
   },
   {
     slug: "beste-trinkbrunnen-fuer-hunde",
     label: "Hunde · Trinkbrunnen",
-    title: "Beste Trinkbrunnen für Hunde",
+    title: "Trinkbrunnen für Hunde",
     fallbackText:
       "Kapazität, Standfestigkeit, Trinkhöhe und Reinigung für Hunde einordnen."
   },
@@ -394,7 +394,9 @@ export function buildHomepageModel({
         title: product.data.title,
         manufacturer: product.data.manufacturer.name,
         recommendation: product.data.recommendation,
-        rating: product.data.rating,
+        rating:
+          product.data.score ??
+          Math.round(product.data.rating * 20),
         image:
           product.data.images.thumbnail ??
           product.data.images.hero,

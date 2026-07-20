@@ -358,7 +358,7 @@ const faqSchema = createFaqSchema(faq);
       links={headerLinks}
     />
 
-    <main class="container">
+    <main class:list={["container", isHome && "container--home"]}>
       <slot />
     </main>
 

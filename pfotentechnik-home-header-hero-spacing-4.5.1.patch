@@ -1,0 +1,52 @@
+diff --git a/packages/affiliate-core/src/layouts/AffiliateLayout.astro b/packages/affiliate-core/src/layouts/AffiliateLayout.astro
+index 8c03184..441d5b8 100644
+--- a/packages/affiliate-core/src/layouts/AffiliateLayout.astro
++++ b/packages/affiliate-core/src/layouts/AffiliateLayout.astro
+@@ -358,7 +358,7 @@ const faqSchema = createFaqSchema(faq);
+       links={headerLinks}
+     />
+ 
+-    <main class="container">
++    <main class:list={["container", isHome && "container--home"]}>
+       <slot />
+     </main>
+ 
+diff --git a/packages/affiliate-core/src/styles/layout.css b/packages/affiliate-core/src/styles/layout.css
+index a68cb39..338c194 100644
+--- a/packages/affiliate-core/src/styles/layout.css
++++ b/packages/affiliate-core/src/styles/layout.css
+@@ -92,3 +92,34 @@
+     font-size: 21px;
+   }
+ }
++
++/* PT homepage header-to-hero spacing 4.5.1 */
++
++/*
++ * The regular page container needs generous top spacing below the header.
++ * The homepage hero does not: it starts directly at the header edge.
++ */
++.container--home {
++  padding-top: 0;
++}
++
++@media (max-width: 768px) {
++  .container--home {
++    padding-top: 0;
++  }
++}
++
++@media (max-width: 720px) {
++  .container--home .home3-hero {
++    margin-top: 0;
++  }
++
++  /*
++   * Move the complete text group slightly upward while keeping the content
++   * bottom-aligned and preserving enough room for both buttons and signals.
++   */
++  .container--home .home3-hero__content {
++    padding-bottom: clamp(2.65rem, 7vw, 3.5rem);
++  }
++}
++/* End PT homepage header-to-hero spacing 4.5.1 */

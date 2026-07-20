@@ -69,7 +69,7 @@ const { products } = Astro.props as Props;
             {typeof product.rating === "number" && (
               <EditorialScore
                 value={product.rating}
-                scale={5}
+                scale={100}
                 variant="compact"
               />
             )}

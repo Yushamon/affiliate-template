@@ -542,7 +542,9 @@ export function buildComparisonViewModel({
         recommendation:
           item.recommendation ??
           product.data.recommendation,
-        rating: product.data.rating,
+        rating:
+          product.data.score ??
+          Math.round(product.data.rating * 20),
         badge:
           item.slug === data.recommendation.winnerSlug
             ? "Top-Empfehlung"
