@@ -14,7 +14,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-08"
-updatedAt: "2026-07-08"
+updatedAt: "2026-07-20"
 hub:
   sections:
     - "wissen"
@@ -27,6 +27,8 @@ hub:
 ## Technik sollte ein konkretes Problem lösen
 
 Automatische Futterspender, GPS-Tracker, Trinkbrunnen und vernetzte Kameras können Abläufe erleichtern. Entscheidend ist nicht die Zahl der Funktionen, sondern ob ein Gerät zuverlässig zum Tier, zum Haushalt und zur Betreuungssituation passt.
+
+Die zentrale Einordnung aller Gerätekategorien, Verbindungsarten, Datenschutzfragen und Folgekosten findest du im Cornerstone-Ratgeber [Smarte Haustiertechnik](/smarte-haustiertechnik/).
 
 ## Darauf kommt es vor dem Kauf an
 
