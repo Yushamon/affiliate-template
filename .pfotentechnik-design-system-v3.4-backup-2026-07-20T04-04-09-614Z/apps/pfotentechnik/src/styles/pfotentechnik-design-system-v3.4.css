@@ -1,0 +1,241 @@
+
+/*
+ * PfotenTechnik Design System 3.4
+ * Precision fix for remaining dark-mode contrast issues.
+ * Uses exact component selectors and !important where Astro scoped CSS wins.
+ */
+
+/* HOME: exact HomeUseCases cards */
+.home4-usecases__grid a {
+  border-color: var(--pt-theme-border) !important;
+  background: var(--pt-theme-surface) !important;
+  color: var(--pt-theme-text-soft) !important;
+}
+.home4-usecases__grid h3 {
+  color: var(--pt-theme-text) !important;
+}
+.home4-usecases__grid p {
+  color: var(--pt-theme-text-muted) !important;
+}
+.home4-usecases__grid strong,
+.home4-usecases__icon {
+  color: var(--pt-theme-accent) !important;
+}
+.home4-usecases__icon {
+  background: var(--pt-theme-accent-soft) !important;
+}
+
+/* HOME: exact editorial/comparison cards */
+.home3-editorial-card,
+.home3-product-card {
+  border-color: var(--pt-theme-border) !important;
+  background: var(--pt-theme-surface) !important;
+}
+.home3-card-content {
+  background: var(--pt-theme-surface) !important;
+}
+.home3-card-content h3 {
+  color: var(--pt-theme-text) !important;
+}
+.home3-card-content p,
+.home3-card-content small {
+  color: var(--pt-theme-text-muted) !important;
+}
+.home3-card-content > strong,
+.home3-card-content > b,
+.home3-card-content > span {
+  color: var(--pt-theme-accent) !important;
+}
+
+/* COMPARISON recommendations */
+.recommendation-card {
+  border-color: var(--pt-theme-border) !important;
+  background: var(--pt-theme-surface) !important;
+}
+.recommendation-card__content,
+.recommendation-card__actions {
+  background: var(--pt-theme-surface) !important;
+}
+.recommendation-card__image-link {
+  background: var(--pt-theme-surface-2) !important;
+}
+.recommendation-card h3,
+.recommendation-card h3 a {
+  color: var(--pt-theme-text) !important;
+}
+.recommendation-card p,
+.recommendation-card__manufacturer,
+.recommendation-card__rating span {
+  color: var(--pt-theme-text-muted) !important;
+}
+
+/* PRODUCT: force theme variables over scoped component variables */
+.product-review-v4 {
+  --v4-ink: var(--pt-theme-text) !important;
+  --v4-text: var(--pt-theme-text-soft) !important;
+  --v4-muted: var(--pt-theme-text-muted) !important;
+  --v4-green: var(--pt-theme-accent) !important;
+  --v4-green-dark: var(--pt-theme-accent-hover) !important;
+  --v4-red: var(--pt-theme-danger) !important;
+  --v4-red-soft: var(--pt-theme-danger-soft) !important;
+  --v4-border: var(--pt-theme-border) !important;
+  --v4-surface: var(--pt-theme-surface) !important;
+  --v4-soft: var(--pt-theme-surface-2) !important;
+}
+
+/* Product hero */
+.product-hero-v4,
+.product-hero-v4__content,
+.product-summary-card-v4,
+.product-metrics-v4,
+.product-facts-v4,
+.product-rating-card-v4,
+.product-specs-v4 dl {
+  background: var(--pt-theme-surface) !important;
+  color: var(--pt-theme-text-soft) !important;
+  border-color: var(--pt-theme-border) !important;
+}
+.product-hero-v4__media,
+.product-hero-v4__image,
+.product-hero-v4__mobile-carousel,
+.product-hero-v4__slide,
+.product-hero-v4__thumbs {
+  background: var(--pt-theme-surface-2) !important;
+}
+.product-hero-v4 h1,
+.product-highlights-v4 h2,
+.product-decision-v4 h2,
+.product-ratings-v4 h2,
+.product-strengths-v4 h2,
+.product-alternatives-v4 h2,
+.product-specs-v4 h2,
+.product-decision-v4 h3,
+.product-strengths-v4 h3,
+.product-rating-card-v4__top strong {
+  color: var(--pt-theme-text) !important;
+}
+.product-hero-v4__summary,
+.product-highlights-v4 p,
+.product-icon-list li > span:last-child,
+.product-decision-v4 header p,
+.product-metrics-v4 dt,
+.product-facts-v4 dt,
+.product-specs-v4 dt {
+  color: var(--pt-theme-text-muted) !important;
+}
+
+/* Verdict is intentionally green with light text */
+.product-verdict-v4,
+.product-verdict-v4 h2,
+.product-verdict-v4 strong,
+.product-verdict-v4 p,
+.product-verdict-v4 span {
+  color: #f7fafc !important;
+}
+.product-verdict-v4__top span {
+  color: rgba(247,250,252,.76) !important;
+}
+.product-verdict-v4 > p {
+  color: rgba(247,250,252,.88) !important;
+}
+
+/* Strengths / weaknesses */
+.product-decision-v4__positive,
+.product-strengths-v4__positive {
+  background: rgba(34,197,94,.14) !important;
+}
+.product-decision-v4__attention,
+.product-strengths-v4__neutral {
+  background: rgba(220,38,38,.14) !important;
+}
+.product-decision-v4__positive h3,
+.product-strengths-v4__positive h3,
+.product-decision-v4__attention h3,
+.product-strengths-v4__neutral h3 {
+  color: var(--pt-theme-text) !important;
+}
+.product-decision-v4__grid article p,
+.product-strengths-v4__grid article p,
+.product-decision-v4__grid article li,
+.product-strengths-v4__grid article li {
+  color: var(--pt-theme-text-soft) !important;
+}
+
+/* Product table/spec values */
+.product-specs-v4 dt {
+  color: var(--pt-theme-text-muted) !important;
+}
+.product-specs-v4 dd {
+  color: var(--pt-theme-text) !important;
+}
+
+/* Everyday criteria cards */
+.pt-everyday-review-grid article {
+  border-color: var(--pt-theme-border) !important;
+  background: var(--pt-theme-surface) !important;
+}
+.pt-everyday-review-grid h3 {
+  color: var(--pt-theme-text) !important;
+}
+.pt-everyday-review-grid p {
+  color: var(--pt-theme-text-muted) !important;
+}
+
+/* Related content cards */
+.ui-card {
+  border-color: var(--pt-theme-border) !important;
+  background: var(--pt-theme-surface) !important;
+  color: var(--pt-theme-text-soft) !important;
+}
+.ui-card h3 {
+  color: var(--pt-theme-text) !important;
+}
+.ui-card p {
+  color: var(--pt-theme-text-muted) !important;
+}
+.ui-card > span,
+.ui-card > strong {
+  color: var(--pt-theme-accent) !important;
+}
+
+/* Sticky comparison bar */
+.comparison-sticky-bar {
+  border-color: var(--pt-theme-border-strong) !important;
+  background: rgba(17,29,47,.97) !important;
+  color: var(--pt-theme-text) !important;
+}
+.comparison-sticky-bar span,
+.comparison-sticky-bar strong {
+  color: var(--pt-theme-text-soft) !important;
+}
+
+/* Dark mode exact surfaces */
+@media (prefers-color-scheme: dark) {
+  .home4-usecases__grid a,
+  .home3-editorial-card,
+  .home3-product-card,
+  .home3-card-content,
+  .recommendation-card,
+  .recommendation-card__content,
+  .recommendation-card__actions,
+  .product-hero-v4,
+  .product-hero-v4__content,
+  .product-summary-card-v4,
+  .product-metrics-v4,
+  .product-facts-v4,
+  .product-rating-card-v4,
+  .product-specs-v4 dl,
+  .pt-everyday-review-grid article,
+  .ui-card {
+    background: #111d2f !important;
+  }
+
+  .recommendation-card__image-link,
+  .product-hero-v4__media,
+  .product-hero-v4__image,
+  .product-hero-v4__mobile-carousel,
+  .product-hero-v4__slide,
+  .product-hero-v4__thumbs {
+    background: #162338 !important;
+  }
+}
