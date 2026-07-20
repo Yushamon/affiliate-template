@@ -1,0 +1,480 @@
+
+/* === PfotenTechnik Dark Mode 3.6.1 Corrective Layer === */
+
+/*
+ * Supports:
+ * - operating-system dark mode
+ * - html[data-theme="dark"]
+ * - html.dark
+ * - body.dark-mode
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pt-theme-bg: #071321 !important;
+    --pt-theme-bg-soft: #0d1a2b !important;
+    --pt-theme-surface: #101f32 !important;
+    --pt-theme-surface-2: #16263c !important;
+    --pt-theme-surface-3: #1b2d45 !important;
+    --pt-theme-text: #f8fafc !important;
+    --pt-theme-text-soft: #dbe5ef !important;
+    --pt-theme-text-muted: #b8c4d3 !important;
+    --pt-theme-border: rgba(203, 213, 225, .16) !important;
+    --pt-theme-border-strong: rgba(203, 213, 225, .27) !important;
+    --pt-theme-accent: #5ee19a !important;
+    --pt-theme-accent-hover: #86efac !important;
+    --pt-theme-accent-soft: rgba(94, 225, 154, .12) !important;
+
+    --pt-canvas: #071321 !important;
+    --pt-surface: #101f32 !important;
+    --pt-line: rgba(203, 213, 225, .16) !important;
+    --pt-line-strong: rgba(203, 213, 225, .27) !important;
+
+    --bg: #071321 !important;
+    --bg-soft: #0d1a2b !important;
+    --surface: #101f32 !important;
+    --surface-soft: #16263c !important;
+    --card: #101f32 !important;
+    --text: #f8fafc !important;
+    --muted: #b8c4d3 !important;
+    --border: rgba(203, 213, 225, .16) !important;
+    --border-strong: rgba(203, 213, 225, .27) !important;
+  }
+
+  html {
+    color-scheme: dark !important;
+    background: #071321 !important;
+  }
+
+  body,
+  main.container {
+    background: #071321 !important;
+    color: #f8fafc !important;
+  }
+
+  /* Header */
+  .site-header-v2 {
+    border-bottom-color: rgba(203, 213, 225, .15) !important;
+    background: rgba(7, 19, 33, .96) !important;
+  }
+
+  .brand-lockup,
+  .brand-name {
+    color: #f8fafc !important;
+  }
+
+  .nav-toggle-button {
+    border-color: rgba(203, 213, 225, .24) !important;
+    background: #16263c !important;
+    color: #f8fafc !important;
+  }
+
+  .main-nav-v2 {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+  }
+
+  .main-nav-v2 a {
+    color: #dbe5ef !important;
+  }
+
+  .main-nav-v2 a:hover {
+    background: rgba(255, 255, 255, .07) !important;
+    color: #fff !important;
+  }
+
+  /* HOME — exact current selectors */
+  .pt-home,
+  .home3,
+  .home4,
+  .home3-section,
+  .home4-section {
+    background: transparent !important;
+    color: #f8fafc !important;
+  }
+
+  .home3-editorial-card,
+  .home3-product-card,
+  .home3-card-content,
+  .home4-usecases__grid a,
+  .pt-product-card,
+  .pt-category-card,
+  .pt-value-card {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #dbe5ef !important;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, .28) !important;
+  }
+
+  .home3-card-content h3,
+  .home3-product-card h3,
+  .home3-editorial-card h3,
+  .home4-usecases__grid h3,
+  .pt-product-card h3,
+  .pt-category-card h3,
+  .pt-value-card h3 {
+    color: #f8fafc !important;
+  }
+
+  .home3-card-content p,
+  .home3-card-content small,
+  .home4-usecases__grid p,
+  .pt-product-card p,
+  .pt-category-card p,
+  .pt-value-card p {
+    color: #b8c4d3 !important;
+  }
+
+  .home3-card-content > strong,
+  .home3-card-content > span,
+  .home4-usecases__grid strong,
+  .home4-usecases__icon,
+  .pt-product-card a,
+  .pt-category-card a {
+    color: #5ee19a !important;
+  }
+
+  /* COMPARISON — recommendations, cards, controls and FAQ */
+  .comparison-detail,
+  .comparison-hub,
+  .comparison-hub-hero {
+    color: #dbe5ef !important;
+  }
+
+  .comparison-hub-hero,
+  .comparison-card,
+  .recommendation-card,
+  .recommendation-card__content,
+  .recommendation-card__actions,
+  .comparison-verdict,
+  .comparison-mobile-product,
+  .comparison-mobile-product__head,
+  .comparison-mobile-product__values,
+  .comparison-mobile-product__actions,
+  .comparison-detail .comparison-filter-panel,
+  .comparison-detail .comparison-difference-toggle,
+  .comparison-detail .comparison-results-control,
+  .comparison-detail .comparison-view-control {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #dbe5ef !important;
+  }
+
+  .comparison-hub-hero h1,
+  .comparison-hub h2,
+  .comparison-card h3,
+  .recommendation-card h3,
+  .recommendation-card h3 a,
+  .comparison-verdict h2,
+  .comparison-verdict h3,
+  .comparison-mobile-product h3 {
+    color: #f8fafc !important;
+  }
+
+  .comparison-hub-hero p,
+  .comparison-card p,
+  .recommendation-card p,
+  .recommendation-card__manufacturer,
+  .comparison-verdict p,
+  .comparison-mobile-product :where(dt, dd, p, span) {
+    color: #b8c4d3 !important;
+  }
+
+  .comparison-hub > header > span,
+  .comparison-card small,
+  .comparison-card strong,
+  .recommendation-card__rating strong,
+  .comparison-verdict > span {
+    color: #5ee19a !important;
+  }
+
+  .recommendation-card__image-link,
+  .comparison-product-image,
+  .comparison-mobile-product__image {
+    background: #f4f7f6 !important;
+  }
+
+  .comparison-detail details,
+  .comparison-detail summary,
+  .comparison-faq details,
+  .comparison-faq summary {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #f8fafc !important;
+  }
+
+  .comparison-detail details p,
+  .comparison-faq details p {
+    color: #b8c4d3 !important;
+  }
+
+  /* Conversion Journey */
+  .pt-conversion-journey__header h2 {
+    color: #f8fafc !important;
+  }
+
+  .pt-conversion-journey__header p {
+    color: #b8c4d3 !important;
+  }
+
+  .pt-conversion-journey__header > span {
+    color: #5ee19a !important;
+  }
+
+  .pt-conversion-journey__card {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, .25) !important;
+  }
+
+  .pt-conversion-journey__card h3 {
+    color: #f8fafc !important;
+  }
+
+  .pt-conversion-journey__card p {
+    color: #b8c4d3 !important;
+  }
+
+  .pt-conversion-journey__card > span {
+    color: #94a3b8 !important;
+  }
+
+  .pt-conversion-journey__card a {
+    color: #5ee19a !important;
+  }
+
+  /* PRODUCT — exact V4 selectors */
+  .product-review-v4 {
+    --v4-ink: #f8fafc !important;
+    --v4-text: #dbe5ef !important;
+    --v4-muted: #b8c4d3 !important;
+    --v4-green: #5ee19a !important;
+    --v4-green-dark: #86efac !important;
+    --v4-border: rgba(203, 213, 225, .16) !important;
+    --v4-surface: #101f32 !important;
+    --v4-soft: #16263c !important;
+  }
+
+  .product-review-v4,
+  .product-hero-v4,
+  .product-hero-v4__content,
+  .product-summary-card-v4,
+  .product-metrics-v4,
+  .product-facts-v4,
+  .product-rating-card-v4,
+  .product-specs-v4 dl,
+  .pt-everyday-review-grid article {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #dbe5ef !important;
+  }
+
+  .product-hero-v4 h1,
+  .product-highlights-v4 h2,
+  .product-decision-v4 h2,
+  .product-ratings-v4 h2,
+  .product-strengths-v4 h2,
+  .product-alternatives-v4 h2,
+  .product-specs-v4 h2,
+  .product-decision-v4 h3,
+  .product-strengths-v4 h3,
+  .pt-everyday-review-grid h3 {
+    color: #f8fafc !important;
+  }
+
+  .product-hero-v4__summary,
+  .product-highlights-v4 p,
+  .product-icon-list li > span:last-child,
+  .product-decision-v4 header p,
+  .product-metrics-v4 dt,
+  .product-facts-v4 dt,
+  .product-specs-v4 dt,
+  .pt-everyday-review-grid p {
+    color: #b8c4d3 !important;
+  }
+
+  .product-hero-v4__media,
+  .product-hero-v4__image,
+  .product-hero-v4__mobile-carousel,
+  .product-hero-v4__slide,
+  .product-hero-v4__thumbs {
+    background: #16263c !important;
+  }
+
+  /* Product Trust Panel */
+  .pt-trust-panel {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+  }
+
+  .pt-trust-panel h2,
+  .pt-trust-panel dd {
+    color: #f8fafc !important;
+  }
+
+  .pt-trust-panel p {
+    color: #b8c4d3 !important;
+  }
+
+  .pt-trust-panel dt {
+    color: #94a3b8 !important;
+  }
+
+  .pt-trust-panel dl div {
+    border: 1px solid rgba(203, 213, 225, .11) !important;
+    background: #16263c !important;
+  }
+
+  .pt-trust-panel__heading span {
+    color: #5ee19a !important;
+  }
+
+  /* Product alternative cards */
+  .alternative-recommendation-card {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+  }
+
+  .alternative-recommendation-headline,
+  .alternative-recommendation-card h3,
+  .alternative-recommendation-card h3 a {
+    color: #f8fafc !important;
+  }
+
+  .alternative-recommendation-reason,
+  .alternative-recommendation-difference p {
+    color: #b8c4d3 !important;
+  }
+
+  .alternative-recommendation-meta > span,
+  .alternative-recommendation-footer > span,
+  .alternative-recommendation-footer > a,
+  .alternative-recommendation-difference > strong {
+    color: #5ee19a !important;
+  }
+
+  .alternative-recommendation-tags li {
+    border-color: rgba(203, 213, 225, .18) !important;
+    background: #16263c !important;
+    color: #dbe5ef !important;
+  }
+
+  /* Ratgeber / premium blocks */
+  .decision-template-card,
+  .decision-template-card-positive,
+  .decision-template-card-negative,
+  .premium-block,
+  .info-card,
+  .feature-card,
+  .fit-card,
+  .warning-card,
+  .health-bridge,
+  .content-card,
+  .ui-card {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #dbe5ef !important;
+  }
+
+  :where(
+    .decision-template-card,
+    .premium-block,
+    .info-card,
+    .feature-card,
+    .fit-card,
+    .warning-card,
+    .health-bridge,
+    .content-card,
+    .ui-card
+  ) :where(h2, h3, h4, strong) {
+    color: #f8fafc !important;
+  }
+
+  :where(
+    .decision-template-card,
+    .premium-block,
+    .info-card,
+    .feature-card,
+    .fit-card,
+    .warning-card,
+    .health-bridge,
+    .content-card,
+    .ui-card
+  ) :where(p, li) {
+    color: #b8c4d3 !important;
+  }
+
+  /* FAQ, tables and article elements */
+  .faq-item,
+  article details,
+  article summary {
+    border-color: rgba(203, 213, 225, .16) !important;
+    background: #101f32 !important;
+    color: #f8fafc !important;
+  }
+
+  article p,
+  article li {
+    color: #b8c4d3 !important;
+  }
+
+  article h1,
+  article h2,
+  article h3,
+  article h4 {
+    color: #f8fafc !important;
+  }
+
+  article table,
+  article th,
+  article td {
+    border-color: rgba(203, 213, 225, .16) !important;
+  }
+
+  article table {
+    background: #101f32 !important;
+  }
+
+  article th {
+    background: #16263c !important;
+    color: #f8fafc !important;
+  }
+
+  article td {
+    color: #dbe5ef !important;
+  }
+
+  /* Footer icon */
+  .footer-brand-lockup .brand-mark {
+    border: 1px solid rgba(255, 255, 255, .18) !important;
+    background: #f8fafc !important;
+  }
+
+  .footer-brand-lockup .brand-mark__cut {
+    background: #071321 !important;
+  }
+
+  .footer-brand-lockup .brand-mark__dot {
+    border-color: #f8fafc !important;
+    background: #1fa463 !important;
+  }
+
+  .footer-brand-name {
+    color: #fff !important;
+  }
+}
+
+/* Manual theme fallbacks */
+:root[data-theme="dark"],
+html.dark {
+  color-scheme: dark !important;
+  --pt-theme-bg: #071321 !important;
+  --pt-theme-surface: #101f32 !important;
+  --pt-theme-surface-2: #16263c !important;
+  --pt-theme-text: #f8fafc !important;
+  --pt-theme-text-soft: #dbe5ef !important;
+  --pt-theme-text-muted: #b8c4d3 !important;
+  --pt-theme-border: rgba(203, 213, 225, .16) !important;
+  --pt-theme-accent: #5ee19a !important;
+}
+
+/* === End PfotenTechnik Dark Mode 3.6.1 Corrective Layer === */
