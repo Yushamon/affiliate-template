@@ -69,8 +69,7 @@ interface Props {
 
 const {
   blocks = [],
-  products = [],
-  project
+  products = []
 } = Astro.props;
 
 const productByKey = new Map(products.map((product) => [product.key, product]));
