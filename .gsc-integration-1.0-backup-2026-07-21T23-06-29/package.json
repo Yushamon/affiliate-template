@@ -27,10 +27,6 @@
     "lint:content:strict": "npm --workspace apps/pfotentechnik run lint:content:strict",
     "indexnow:pfotentechnik": "npm --workspace apps/pfotentechnik run indexnow:submit",
     "indexnow:pfotentechnik:all": "npm --workspace apps/pfotentechnik run indexnow:submit:all",
-    "indexnow:status": "npm --workspace apps/pfotentechnik run indexnow:status",
-    "gsc:setup": "npm --workspace apps/pfotentechnik run gsc:setup --",
-    "gsc:test": "npm --workspace apps/pfotentechnik run gsc:test",
-    "gsc:audit": "npm --workspace apps/pfotentechnik run gsc:audit",
-    "gsc:report": "npm --workspace apps/pfotentechnik run gsc:report"
+    "indexnow:status": "npm --workspace apps/pfotentechnik run indexnow:status"
   }
 }
