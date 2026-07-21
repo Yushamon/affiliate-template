@@ -59,15 +59,15 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC"
-rating: 4.7
-score: 94
+rating: 4
+score: 81
 ratings:
-  verarbeitung: 4.7
-  bedienung: 4.7
-  reinigung: 4.6
-  lautstaerke: 4.7
-  smartfunktionen: 4.8
-  preisleistung: 4.0
+  verarbeitung: 4.15
+  bedienung: 4.15
+  reinigung: 4.05
+  lautstaerke: 4.15
+  smartfunktionen: 4.2
+  preisleistung: 3.65
 decision:
   bestFor:
     - "Katzen und kleine Hunde"

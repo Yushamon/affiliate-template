@@ -59,15 +59,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat"
-rating: 4.3
-score: 86
+rating: 3.8
+score: 75
 ratings:
-  app: 4
-  portionierung: 4.5
-  reinigung: 4
-  zuverlaessigkeit: 4
-  sicherheit: 4
-  preisleistung: 4.5
+  app: 3.65
+  portionierung: 4
+  reinigung: 3.65
+  zuverlaessigkeit: 3.65
+  sicherheit: 3.65
+  preisleistung: 4
 decision:
   bestFor:
     - "Katzen"

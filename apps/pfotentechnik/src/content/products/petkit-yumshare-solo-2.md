@@ -72,25 +72,23 @@ affiliate:
 
   url: "https://www.amazon.de/s?k=PETKIT%20YumShare%20Solo%202%20Futterautomat"
 
-rating: 4.8
-
-score: 95
-
+rating: 4.1
+score: 82
 ratings:
 
-  verarbeitung: 4.7
+  verarbeitung: 4.15
 
-  bedienung: 4.8
+  bedienung: 4.2
 
-  app: 4.8
+  app: 4.2
 
-  zuverlässigkeit: 4.7
+  zuverlässigkeit: 4.15
 
-  preisleistung: 4.3
+  preisleistung: 3.85
 
-  reinigung: 4.5
+  reinigung: 4
 
-  kamera: 4.8
+  kamera: 4.2
 
 decision:
 

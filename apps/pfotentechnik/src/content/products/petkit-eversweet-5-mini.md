@@ -55,14 +55,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini"
-rating: 4.2
-score: 81
+rating: 3.7
+score: 74
 ratings:
-  verarbeitung: 4.2
-  bedienung: 4.2
-  reinigung: 4.1
-  lautstaerke: 4.3
-  preisleistung: 4.0
+  verarbeitung: 3.7
+  bedienung: 3.7
+  reinigung: 3.65
+  lautstaerke: 3.8
+  preisleistung: 3.6
 decision:
   bestFor:
     - "eine Katze"

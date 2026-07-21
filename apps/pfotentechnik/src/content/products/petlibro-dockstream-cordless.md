@@ -57,14 +57,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+Cordless"
-rating: 4.5
-score: 89
+rating: 4
+score: 79
 ratings:
-  verarbeitung: 4.5
-  bedienung: 4.5
-  reinigung: 4.4
-  lautstaerke: 4.6
-  preisleistung: 4.3
+  verarbeitung: 4
+  bedienung: 4
+  reinigung: 3.9
+  lautstaerke: 4.05
+  preisleistung: 3.85
 decision:
   bestFor:
     - "eine bis zwei Katzen"

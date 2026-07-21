@@ -57,15 +57,15 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Fountain+2"
-rating: 4.6
-score: 92
+rating: 4
+score: 81
 ratings:
-  verarbeitung: 4.6
-  bedienung: 4.6
-  reinigung: 4.5
-  lautstaerke: 4.5
-  smartfunktionen: 4.7
-  preisleistung: 4.4
+  verarbeitung: 4.05
+  bedienung: 4.05
+  reinigung: 4
+  lautstaerke: 4
+  smartfunktionen: 4.15
+  preisleistung: 3.9
 decision:
   bestFor:
     - "Katzen und kleine Hunde"

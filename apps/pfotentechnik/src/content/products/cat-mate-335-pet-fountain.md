@@ -56,14 +56,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=Cat+Mate+Pet+Fountain+335"
-rating: 4.1
-score: 80
+rating: 3.6
+score: 73
 ratings:
-  verarbeitung: 4.1
-  bedienung: 4.1
-  reinigung: 4.0
-  lautstaerke: 4.2
-  preisleistung: 3.9
+  verarbeitung: 3.7
+  bedienung: 3.7
+  reinigung: 3.65
+  lautstaerke: 3.75
+  preisleistung: 3.55
 decision:
   bestFor:
     - "eine Katze"

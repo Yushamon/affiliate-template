@@ -58,14 +58,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Glacier+Ultrafiltration+Fountain"
-rating: 4.4
-score: 88
+rating: 3.9
+score: 78
 ratings:
-  verarbeitung: 4.4
-  bedienung: 4.4
-  reinigung: 4.3
-  lautstaerke: 4.5
-  preisleistung: 4.2
+  verarbeitung: 3.9
+  bedienung: 3.9
+  reinigung: 3.85
+  lautstaerke: 4
+  preisleistung: 3.75
 decision:
   bestFor:
     - "Katzen mit empfindlichen Schnurrhaaren"

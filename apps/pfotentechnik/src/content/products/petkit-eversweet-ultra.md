@@ -58,14 +58,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT+Eversweet+Ultra"
-rating: 4.7
-score: 95
+rating: 4.1
+score: 82
 ratings:
-  verarbeitung: 4.7
-  bedienung: 4.7
-  reinigung: 4.6
-  lautstaerke: 4.7
-  preisleistung: 4.5
+  verarbeitung: 4.15
+  bedienung: 4.15
+  reinigung: 4.05
+  lautstaerke: 4.15
+  preisleistung: 4
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit Wunsch nach individueller Trinkauswertung"

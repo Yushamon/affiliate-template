@@ -60,15 +60,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=IMIPAW%203L%20Automatic%20Cat%20Feeder"
-rating: 4.1
-score: 81
+rating: 3.5
+score: 69
 ratings:
-  "app": 1
-  "portionierung": 4
-  "reinigung": 4
-  "zuverlaessigkeit": 4
-  "sicherheit": 4
-  "preisleistung": 4.5
+  "app": 2.25
+  "portionierung": 3.6
+  "reinigung": 3.6
+  "zuverlaessigkeit": 3.6
+  "sicherheit": 3.6
+  "preisleistung": 3.95
 decision:
   bestFor:
     - "katze"

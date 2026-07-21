@@ -57,15 +57,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Edelstahl+Trinkbrunnen+3L"
-rating: 4.4
-score: 86
+rating: 3.8
+score: 75
 ratings:
-  verarbeitung: 4.6
-  bedienung: 4.4
-  reinigung: 4.5
-  lautstaerke: 4.3
-  smartfunktionen: 3.0
-  preisleistung: 4.4
+  verarbeitung: 4.05
+  bedienung: 3.9
+  reinigung: 4
+  lautstaerke: 3.85
+  smartfunktionen: 2.85
+  preisleistung: 3.9
 decision:
   bestFor:
     - "Katzen"

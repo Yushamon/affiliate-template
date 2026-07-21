@@ -59,15 +59,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Food+Feeder+2"
-rating: 4.5
-score: 90
+rating: 4
+score: 81
 ratings:
-  app: 4.5
-  portionierung: 4.5
-  reinigung: 4.5
-  zuverlaessigkeit: 4.5
-  sicherheit: 4.5
-  preisleistung: 4.5
+  app: 4.05
+  portionierung: 4.05
+  reinigung: 4.05
+  zuverlaessigkeit: 4.05
+  sicherheit: 4.05
+  preisleistung: 4.05
 decision:
   bestFor:
     - "Katzen"

@@ -56,15 +56,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=WOPET%20Cube%20Air%20CA10%20Futterautomat"
-rating: 4.4
-score: 88
+rating: 4
+score: 79
 ratings:
-  "app": 4.5
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.3
-  "sicherheit": 4.3
-  "preisleistung": 4.6
+  "app": 4
+  "portionierung": 4
+  "reinigung": 4
+  "zuverlaessigkeit": 3.85
+  "sicherheit": 3.85
+  "preisleistung": 4.05
 decision:
   bestFor:
     - "katze"

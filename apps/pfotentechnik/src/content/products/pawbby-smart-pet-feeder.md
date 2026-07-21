@@ -60,15 +60,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder"
-rating: 4.1
-score: 80
+rating: 3.5
+score: 71
 ratings:
-  "app": 4
-  "portionierung": 4
-  "reinigung": 4
-  "zuverlaessigkeit": 3.5
-  "sicherheit": 4
-  "preisleistung": 4
+  "app": 3.6
+  "portionierung": 3.6
+  "reinigung": 3.6
+  "zuverlaessigkeit": 3.35
+  "sicherheit": 3.6
+  "preisleistung": 3.6
 decision:
   bestFor:
     - "katze"

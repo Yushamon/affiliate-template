@@ -58,15 +58,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT+Eversweet+3+Pro+UVC"
-rating: 4.5
-score: 89
+rating: 4
+score: 79
 ratings:
-  verarbeitung: 4.6
-  bedienung: 4.5
-  reinigung: 4.5
-  lautstaerke: 4.6
-  smartfunktionen: 4.5
-  preisleistung: 4.1
+  verarbeitung: 4.05
+  bedienung: 4
+  reinigung: 4
+  lautstaerke: 4.05
+  smartfunktionen: 4
+  preisleistung: 3.7
 decision:
   bestFor:
     - "eine Katze oder einen kleinen Hund"

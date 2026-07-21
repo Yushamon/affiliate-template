@@ -60,15 +60,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat"
-rating: 4.3
-score: 86
+rating: 3.6
+score: 73
 ratings:
-  "app": 1
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4
-  "preisleistung": 4.5
+  "app": 2.25
+  "portionierung": 4
+  "reinigung": 4
+  "zuverlaessigkeit": 4
+  "sicherheit": 3.65
+  "preisleistung": 4
 decision:
   bestFor:
     - "katze"

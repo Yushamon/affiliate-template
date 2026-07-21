@@ -57,15 +57,15 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart"
-rating: 4.6
-score: 91
+rating: 4
+score: 80
 ratings:
-  verarbeitung: 4.5
-  bedienung: 4.5
-  reinigung: 4.6
-  lautstaerke: 4.5
-  smartfunktionen: 4.8
-  preisleistung: 4.1
+  verarbeitung: 4
+  bedienung: 4
+  reinigung: 4.05
+  lautstaerke: 4
+  smartfunktionen: 4.2
+  preisleistung: 3.7
 decision:
   bestFor:
     - "Mehrkatzenhaushalte"

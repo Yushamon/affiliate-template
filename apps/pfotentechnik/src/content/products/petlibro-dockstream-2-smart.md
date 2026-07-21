@@ -57,15 +57,15 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Dockstream+2+Smart"
-rating: 4.7
-score: 93
+rating: 4
+score: 81
 ratings:
-  verarbeitung: 4.6
-  bedienung: 4.7
-  reinigung: 4.7
-  lautstaerke: 4.6
-  smartfunktionen: 4.8
-  preisleistung: 4.2
+  verarbeitung: 4.05
+  bedienung: 4.15
+  reinigung: 4.15
+  lautstaerke: 4.05
+  smartfunktionen: 4.2
+  preisleistung: 3.75
 decision:
   bestFor:
     - "eine Katze mit Wunsch nach App-Auswertung"

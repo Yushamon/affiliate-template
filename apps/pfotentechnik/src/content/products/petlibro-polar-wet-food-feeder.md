@@ -58,15 +58,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder"
-rating: 4.8
-score: 95
+rating: 4
+score: 80
 ratings:
-  app: 4.5
-  portionierung: 5
-  reinigung: 4.5
-  zuverlaessigkeit: 4.5
-  sicherheit: 5
-  preisleistung: 4
+  app: 3.95
+  portionierung: 4.3
+  reinigung: 3.95
+  zuverlaessigkeit: 3.95
+  sicherheit: 4.3
+  preisleistung: 3.6
 decision:
   bestFor:
     - "Katzen und kleine Hunde mit Nassfutter"

@@ -54,15 +54,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder"
-rating: 4.6
-score: 91
+rating: 4
+score: 80
 ratings:
-  "app": 4.7
-  "portionierung": 4.5
-  "reinigung": 4.6
-  "zuverlaessigkeit": 4.6
-  "sicherheit": 4.6
-  "preisleistung": 4.3
+  "app": 4.1
+  "portionierung": 3.95
+  "reinigung": 4
+  "zuverlaessigkeit": 4
+  "sicherheit": 4
+  "preisleistung": 3.8
 decision:
   bestFor:
     - "katze"

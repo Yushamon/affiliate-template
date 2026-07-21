@@ -61,15 +61,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO%20One%20RFID%20Smart%20Feeder"
-rating: 4.7
-score: 93
+rating: 3.7
+score: 74
 ratings:
-  "app": 4.5
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 5
-  "preisleistung": 4
+  "app": 3.75
+  "portionierung": 3.9
+  "reinigung": 3.5
+  "zuverlaessigkeit": 3.75
+  "sicherheit": 3.9
+  "preisleistung": 3.45
 decision:
   bestFor:
     - "katze"

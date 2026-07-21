@@ -58,15 +58,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=Cat+Mate+C200+Futterautomat"
-rating: 4.3
-score: 84
+rating: 3.5
+score: 71
 ratings:
-  app: 1
-  portionierung: 4
-  reinigung: 4.5
-  zuverlaessigkeit: 4
-  sicherheit: 4
-  preisleistung: 4.5
+  app: 2.25
+  portionierung: 3.65
+  reinigung: 4
+  zuverlaessigkeit: 3.65
+  sicherheit: 3.65
+  preisleistung: 4
 decision:
   bestFor:
     - "eine oder zwei Katzen"

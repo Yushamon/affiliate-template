@@ -62,15 +62,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT%20YumShare%20Dual%20Hopper%202%20Futterautomat"
-rating: 4.6
-score: 91
+rating: 3.9
+score: 77
 ratings:
-  "app": 4.5
-  "portionierung": 5
-  "reinigung": 4
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4.5
-  "preisleistung": 3.5
+  "app": 3.95
+  "portionierung": 4.3
+  "reinigung": 3.6
+  "zuverlaessigkeit": 3.95
+  "sicherheit": 3.95
+  "preisleistung": 3.35
 decision:
   bestFor:
     - "katze"

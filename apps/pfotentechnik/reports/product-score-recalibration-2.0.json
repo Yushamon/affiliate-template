@@ -1,0 +1,2652 @@
+{
+  "generatedAt": "2026-07-21T19:51:25.013Z",
+  "mode": "applied",
+  "methodology": {
+    "scale": "0-100",
+    "total": "Gerundeter Mittelwert aller sichtbaren Kriterien",
+    "ranges": {
+      "95-100": "Referenzklasse – nur belegte Ausnahmeprodukte",
+      "90-94": "Hervorragend",
+      "85-89": "Sehr gut",
+      "80-84": "Gut",
+      "75-79": "Empfehlenswert",
+      "70-74": "Solide",
+      "<70": "Mit deutlichen Einschränkungen"
+    },
+    "evidenceRules": [
+      "Bewertungen werden bei rein redaktioneller Einordnung konservativer kalibriert.",
+      "Unbekannter Produktstatus reduziert Score und Obergrenze.",
+      "Nicht ausgewiesene Spezifikationen reduzieren die Evidenz.",
+      "90+ ist ohne bestätigten Praxistest grundsätzlich ausgeschlossen.",
+      "Der Gesamtscore wird nicht länger unabhängig von Einzelkriterien gepflegt."
+    ]
+  },
+  "summary": {
+    "totalFiles": 66,
+    "analyzed": 43,
+    "skipped": 23,
+    "changed": 43,
+    "averageOld": 87.6,
+    "averageNew": 76.6,
+    "oldScores90Plus": 16,
+    "newScores90Plus": 0
+  },
+  "products": [
+    {
+      "file": "aqara-smart-pet-feeder-c1.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "cat-mate-335-pet-fountain.md",
+      "slug": "cat-mate-335-pet-fountain",
+      "title": "Cat Mate Pet Fountain 335",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 80,
+      "calculatedOld": 81,
+      "newScore": 73,
+      "oldRating": 4.1,
+      "newRating": 3.6,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 19,
+        "ratio": 0.3684210526315789
+      },
+      "reasons": [
+        "Gesamtscore 80 entspricht nicht dem sichtbaren Mittel 81",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 19 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 82,
+          "calibrated": 74
+        },
+        {
+          "key": "bedienung",
+          "old": 82,
+          "calibrated": 74
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "lautstaerke",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "preisleistung",
+          "old": 78,
+          "calibrated": 71
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "cat-mate-c200.md",
+      "slug": "cat-mate-c200",
+      "title": "Cat Mate C200",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 84,
+      "calculatedOld": 73,
+      "newScore": 71,
+      "oldRating": 4.3,
+      "newRating": 3.5,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 4,
+        "total": 16,
+        "ratio": 0.25
+      },
+      "reasons": [
+        "Gesamtscore 84 entspricht nicht dem sichtbaren Mittel 73",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "4 von 16 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "cat-mate-c300.md",
+      "slug": "cat-mate-c300",
+      "title": "Cat Mate C300",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 85,
+      "calculatedOld": 77,
+      "newScore": 73,
+      "oldRating": 4.4,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 4,
+        "total": 17,
+        "ratio": 0.23529411764705882
+      },
+      "reasons": [
+        "Gesamtscore 85 entspricht nicht dem sichtbaren Mittel 77",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "4 von 17 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "cat-mate-c500.md",
+      "slug": "cat-mate-c500",
+      "title": "Cat Mate C500",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 86,
+      "calculatedOld": 77,
+      "newScore": 73,
+      "oldRating": 4.4,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 4,
+        "total": 14,
+        "ratio": 0.2857142857142857
+      },
+      "reasons": [
+        "Gesamtscore 86 entspricht nicht dem sichtbaren Mittel 77",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "4 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "cat-mate-shell-fountain.md",
+      "slug": "cat-mate-shell-fountain",
+      "title": "Cat Mate Shell Pet Fountain",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 82,
+      "calculatedOld": 83,
+      "newScore": 75,
+      "oldRating": 4.2,
+      "newRating": 3.8,
+      "oldLabel": "Gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 19,
+        "ratio": 0.3684210526315789
+      },
+      "reasons": [
+        "Gesamtscore 82 entspricht nicht dem sichtbaren Mittel 83",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 19 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "bedienung",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "reinigung",
+          "old": 82,
+          "calibrated": 74
+        },
+        {
+          "key": "lautstaerke",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 73
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "catit-pixi-smart-6-meal-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "catit-pixi-vision-smart-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "garmin-alpha-t-20.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "garmin-alpha-tt-25.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "honeyguardian-a305d.md",
+      "slug": "honeyguardian-a305d",
+      "title": "HoneyGuardian A305D",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 86,
+      "calculatedOld": 77,
+      "newScore": 73,
+      "oldRating": 4.3,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 14,
+        "ratio": 0.35714285714285715
+      },
+      "reasons": [
+        "Gesamtscore 86 entspricht nicht dem sichtbaren Mittel 77",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "honeyguardian-a68.md",
+      "slug": "honeyguardian-a68",
+      "title": "HoneyGuardian A68 Smart Pet Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 88,
+      "calculatedOld": 90,
+      "newScore": 79,
+      "oldRating": 4.4,
+      "newRating": 4,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 13,
+        "ratio": 0.46153846153846156
+      },
+      "reasons": [
+        "Gesamtscore 88 entspricht nicht dem sichtbaren Mittel 90",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 13 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 79
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "honeyguardian-smart-pet-feeder-s305d.md",
+      "slug": "honeyguardian-smart-pet-feeder-s305d",
+      "title": "HoneyGuardian Smart Pet Feeder S305D",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 84,
+      "calculatedOld": 83,
+      "newScore": 75,
+      "oldRating": 4.2,
+      "newRating": 3.8,
+      "oldLabel": "Gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 13,
+        "ratio": 0.38461538461538464
+      },
+      "reasons": [
+        "Gesamtscore 84 entspricht nicht dem sichtbaren Mittel 83",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 13 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "imipaw-3l-automatic-cat-feeder.md",
+      "slug": "imipaw-3l-automatic-cat-feeder",
+      "title": "IMIPAW 3L Automatic Cat Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 81,
+      "calculatedOld": 72,
+      "newScore": 69,
+      "oldRating": 4.1,
+      "newRating": 3.5,
+      "oldLabel": "Gut",
+      "newLabel": "Mit deutlichen Einschränkungen",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 81 entspricht nicht dem sichtbaren Mittel 72",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 79
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "oneisall-2-2l-cordless-fountain.md",
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "title": "oneisall 2,2L Cordless Cat Fountain",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 84,
+      "calculatedOld": 85,
+      "newScore": 76,
+      "oldRating": 4.3,
+      "newRating": 3.8,
+      "oldLabel": "Gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 19,
+        "ratio": 0.3684210526315789
+      },
+      "reasons": [
+        "Gesamtscore 84 entspricht nicht dem sichtbaren Mittel 85",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 19 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "bedienung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "reinigung",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "lautstaerke",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "preisleistung",
+          "old": 82,
+          "calibrated": 74
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "oneisall-2-in-1-feeder-water.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "oneisall-3-2l-cordless-fountain.md",
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "title": "oneisall 3,2L Cordless Cat Fountain",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 87,
+      "calculatedOld": 87,
+      "newScore": 78,
+      "oldRating": 4.4,
+      "newRating": 3.9,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 20,
+        "ratio": 0.35
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 20 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "bedienung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "reinigung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "lautstaerke",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "preisleistung",
+          "old": 84,
+          "calibrated": 75
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "oneisall-3-5l-cordless-fountain.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "oneisall-5l-automatic-cat-feeder.md",
+      "slug": "oneisall-5l-automatic-cat-feeder",
+      "title": "oneisall 5L Automatic Cat Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 85,
+      "calculatedOld": 80,
+      "newScore": 73,
+      "oldRating": 4.3,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 14,
+        "ratio": 0.35714285714285715
+      },
+      "reasons": [
+        "Gesamtscore 85 entspricht nicht dem sichtbaren Mittel 80",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "sicherheit",
+          "old": 70,
+          "calibrated": 67
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "oneisall-7l-dog-water-fountain.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "paj-pet-finder-4g-mini.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "pawbby-smart-pet-feeder.md",
+      "slug": "pawbby-smart-pet-feeder",
+      "title": "PAWBBY Smart Pet Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 80,
+      "calculatedOld": 78,
+      "newScore": 71,
+      "oldRating": 4.1,
+      "newRating": 3.5,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 80 entspricht nicht dem sichtbaren Mittel 78",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 70,
+          "calibrated": 67
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 72
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "pawsync-smart-pet-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petkit-eversweet-3-pro-uvc.md",
+      "slug": "petkit-eversweet-3-pro-uvc",
+      "title": "PETKIT Eversweet 3 Pro UVC",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 89,
+      "calculatedOld": 89,
+      "newScore": 79,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 22,
+        "ratio": 0.22727272727272727
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 22 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "bedienung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "lautstaerke",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "preisleistung",
+          "old": 82,
+          "calibrated": 74
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-eversweet-5-mini.md",
+      "slug": "petkit-eversweet-5-mini",
+      "title": "PETKIT Eversweet 5 Mini",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 81,
+      "calculatedOld": 83,
+      "newScore": 74,
+      "oldRating": 4.2,
+      "newRating": 3.7,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 16,
+        "ratio": 0.4375
+      },
+      "reasons": [
+        "Gesamtscore 81 entspricht nicht dem sichtbaren Mittel 83",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 16 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 84,
+          "calibrated": 74
+        },
+        {
+          "key": "bedienung",
+          "old": 84,
+          "calibrated": 74
+        },
+        {
+          "key": "reinigung",
+          "old": 82,
+          "calibrated": 73
+        },
+        {
+          "key": "lautstaerke",
+          "old": 86,
+          "calibrated": 76
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 72
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-eversweet-max-2-uvc.md",
+      "slug": "petkit-eversweet-max-2-uvc",
+      "title": "PETKIT Eversweet Max 2 UVC",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 94,
+      "calculatedOld": 92,
+      "newScore": 81,
+      "oldRating": 4.7,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 4,
+        "total": 19,
+        "ratio": 0.21052631578947367
+      },
+      "reasons": [
+        "Gesamtscore 94 entspricht nicht dem sichtbaren Mittel 92",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "4 von 19 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "bedienung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "reinigung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "lautstaerke",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 96,
+          "calibrated": 84
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 73
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-eversweet-max-cordless.md",
+      "slug": "petkit-eversweet-max-cordless",
+      "title": "PETKIT Eversweet Max Cordless",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 90,
+      "calculatedOld": 89,
+      "newScore": 79,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 21,
+        "ratio": 0.2857142857142857
+      },
+      "reasons": [
+        "Gesamtscore 90 entspricht nicht dem sichtbaren Mittel 89",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 21 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "bedienung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "lautstaerke",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "preisleistung",
+          "old": 86,
+          "calibrated": 77
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-eversweet-solo-2-fountain.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petkit-eversweet-solo-se.md",
+      "slug": "petkit-eversweet-solo-se",
+      "title": "PETKIT Eversweet Solo SE",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 84,
+      "calculatedOld": 85,
+      "newScore": 76,
+      "oldRating": 4.3,
+      "newRating": 3.8,
+      "oldLabel": "Gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 21,
+        "ratio": 0.23809523809523808
+      },
+      "reasons": [
+        "Gesamtscore 84 entspricht nicht dem sichtbaren Mittel 85",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 21 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "bedienung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "reinigung",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "lautstaerke",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "preisleistung",
+          "old": 82,
+          "calibrated": 74
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-eversweet-ultra.md",
+      "slug": "petkit-eversweet-ultra",
+      "title": "PETKIT Eversweet Ultra",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 95,
+      "calculatedOld": 93,
+      "newScore": 82,
+      "oldRating": 4.7,
+      "newRating": 4.1,
+      "oldLabel": "Referenzklasse",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 21,
+        "ratio": 0.3333333333333333
+      },
+      "reasons": [
+        "Gesamtscore 95 entspricht nicht dem sichtbaren Mittel 93",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 21 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "bedienung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "reinigung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "lautstaerke",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-fresh-element-infinity.md",
+      "slug": "petkit-fresh-element-infinity",
+      "title": "PETKIT Fresh Element Infinity",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 90,
+      "calculatedOld": 88,
+      "newScore": 79,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 13,
+        "ratio": 0.38461538461538464
+      },
+      "reasons": [
+        "Gesamtscore 90 entspricht nicht dem sichtbaren Mittel 88",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 13 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 73
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-fresh-element-solo.md",
+      "slug": "petkit-fresh-element-solo",
+      "title": "PETKIT Fresh Element Solo",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 90,
+      "calculatedOld": 90,
+      "newScore": 81,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 2,
+        "total": 17,
+        "ratio": 0.11764705882352941
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "2 von 17 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 81
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-yumshare-dual-hopper.md",
+      "slug": "petkit-yumshare-dual-hopper",
+      "title": "PETKIT YumShare Dual-Hopper 2",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 91,
+      "calculatedOld": 87,
+      "newScore": 77,
+      "oldRating": 4.6,
+      "newRating": 3.9,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 13,
+        "ratio": 0.46153846153846156
+      },
+      "reasons": [
+        "Gesamtscore 91 entspricht nicht dem sichtbaren Mittel 87",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 13 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "portionierung",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "preisleistung",
+          "old": 70,
+          "calibrated": 67
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-yumshare-dual.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petkit-yumshare-solo-2.md",
+      "slug": "petkit-yumshare-solo-2",
+      "title": "PETKIT YumShare Solo 2",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 95,
+      "calculatedOld": 93,
+      "newScore": 82,
+      "oldRating": 4.8,
+      "newRating": 4.1,
+      "oldLabel": "Referenzklasse",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 14,
+        "ratio": 0.35714285714285715
+      },
+      "reasons": [
+        "Gesamtscore 95 entspricht nicht dem sichtbaren Mittel 93",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 14 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "bedienung",
+          "old": 96,
+          "calibrated": 84
+        },
+        {
+          "key": "app",
+          "old": 96,
+          "calibrated": 84
+        },
+        {
+          "key": "zuverlässigkeit",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "preisleistung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "kamera",
+          "old": 96,
+          "calibrated": 84
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petkit-yumshare-solo.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petlibro-air-automatic-feeder.md",
+      "slug": "petlibro-air-automatic-feeder",
+      "title": "PETLIBRO Air Automatic Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 85,
+      "calculatedOld": 76,
+      "newScore": 72,
+      "oldRating": 4.3,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 85 entspricht nicht dem sichtbaren Mittel 76",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 86,
+          "calibrated": 76
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 86,
+          "calibrated": 76
+        },
+        {
+          "key": "sicherheit",
+          "old": 86,
+          "calibrated": 76
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 79
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-air-wifi-feeder.md",
+      "slug": "petlibro-air-wifi-feeder",
+      "title": "PETLIBRO Air WiFi Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 88,
+      "calculatedOld": 87,
+      "newScore": 77,
+      "oldRating": 4.4,
+      "newRating": 3.9,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 88 entspricht nicht dem sichtbaren Mittel 87",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 79
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-capsule-dog-fountain.md",
+      "slug": "petlibro-capsule-dog-fountain",
+      "title": "PETLIBRO Capsule Dog Fountain",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 90,
+      "calculatedOld": 89,
+      "newScore": 78,
+      "oldRating": 4.5,
+      "newRating": 3.9,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 10,
+        "total": 21,
+        "ratio": 0.47619047619047616
+      },
+      "reasons": [
+        "Gesamtscore 90 entspricht nicht dem sichtbaren Mittel 89",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "10 von 21 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "bedienung",
+          "old": 88,
+          "calibrated": 77
+        },
+        {
+          "key": "reinigung",
+          "old": 84,
+          "calibrated": 74
+        },
+        {
+          "key": "lautstaerke",
+          "old": 88,
+          "calibrated": 77
+        },
+        {
+          "key": "kapazitaet",
+          "old": 98,
+          "calibrated": 85
+        },
+        {
+          "key": "preisleistung",
+          "old": 86,
+          "calibrated": 76
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-dockstream-2-smart.md",
+      "slug": "petlibro-dockstream-2-smart",
+      "title": "PETLIBRO Dockstream 2 Smart",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 93,
+      "calculatedOld": 92,
+      "newScore": 81,
+      "oldRating": 4.7,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 19,
+        "ratio": 0.2631578947368421
+      },
+      "reasons": [
+        "Gesamtscore 93 entspricht nicht dem sichtbaren Mittel 92",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 19 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "bedienung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "reinigung",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "lautstaerke",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 96,
+          "calibrated": 84
+        },
+        {
+          "key": "preisleistung",
+          "old": 84,
+          "calibrated": 75
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-dockstream-cordless.md",
+      "slug": "petlibro-dockstream-cordless",
+      "title": "PETLIBRO Dockstream Cordless",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 89,
+      "calculatedOld": 89,
+      "newScore": 79,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 22,
+        "ratio": 0.22727272727272727
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 22 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "bedienung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "lautstaerke",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "preisleistung",
+          "old": 86,
+          "calibrated": 77
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-dockstream-rfid-smart.md",
+      "slug": "petlibro-dockstream-rfid-smart",
+      "title": "PETLIBRO Dockstream RFID Smart",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 91,
+      "calculatedOld": 90,
+      "newScore": 80,
+      "oldRating": 4.6,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 7,
+        "total": 23,
+        "ratio": 0.30434782608695654
+      },
+      "reasons": [
+        "Gesamtscore 91 entspricht nicht dem sichtbaren Mittel 90",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "7 von 23 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "bedienung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "lautstaerke",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 96,
+          "calibrated": 84
+        },
+        {
+          "key": "preisleistung",
+          "old": 82,
+          "calibrated": 74
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-glacier-ultrafiltration.md",
+      "slug": "petlibro-glacier-ultrafiltration",
+      "title": "PETLIBRO Glacier Ultrafiltration Fountain",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 88,
+      "calculatedOld": 87,
+      "newScore": 78,
+      "oldRating": 4.4,
+      "newRating": 3.9,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 17,
+        "ratio": 0.29411764705882354
+      },
+      "reasons": [
+        "Gesamtscore 88 entspricht nicht dem sichtbaren Mittel 87",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 17 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "bedienung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "reinigung",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "lautstaerke",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "preisleistung",
+          "old": 84,
+          "calibrated": 75
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-granary-camera-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petlibro-granary-dual-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petlibro-granary-wifi-feeder.md",
+      "slug": "petlibro-granary-wifi-feeder",
+      "title": "PETLIBRO Granary WiFi Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 94,
+      "calculatedOld": 92,
+      "newScore": 82,
+      "oldRating": 4.7,
+      "newRating": 4.1,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 2,
+        "total": 17,
+        "ratio": 0.11764705882352941
+      },
+      "reasons": [
+        "Gesamtscore 94 entspricht nicht dem sichtbaren Mittel 92",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "2 von 17 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 100,
+          "calibrated": 88
+        },
+        {
+          "key": "portionierung",
+          "old": 100,
+          "calibrated": 88
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 74
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 81
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-one-rfid-smart-feeder.md",
+      "slug": "petlibro-one-rfid-smart-feeder",
+      "title": "PETLIBRO One RFID Smart Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 82,
+      "calculatedOld": 82,
+      "newScore": 74,
+      "oldRating": 4.1,
+      "newRating": 3.7,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 14,
+        "ratio": 0.35714285714285715
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "portionierung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "reinigung",
+          "old": 76,
+          "calibrated": 70
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 84,
+          "calibrated": 75
+        },
+        {
+          "key": "sicherheit",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "preisleistung",
+          "old": 72,
+          "calibrated": 69
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-polar-wet-food-feeder.md",
+      "slug": "petlibro-polar-wet-food-feeder",
+      "title": "PETLIBRO Polar Wet Food Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 95,
+      "calculatedOld": 92,
+      "newScore": 80,
+      "oldRating": 4.8,
+      "newRating": 4,
+      "oldLabel": "Referenzklasse",
+      "newLabel": "Gut",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 15,
+        "ratio": 0.4
+      },
+      "reasons": [
+        "Gesamtscore 95 entspricht nicht dem sichtbaren Mittel 92",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 15 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "portionierung",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 72
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-space-smart-feeder.md",
+      "slug": "petlibro-space-smart-feeder",
+      "title": "PETLIBRO Space Smart Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 91,
+      "calculatedOld": 91,
+      "newScore": 80,
+      "oldRating": 4.6,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 13,
+        "ratio": 0.46153846153846156
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 13 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 94,
+          "calibrated": 82
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "reinigung",
+          "old": 92,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 92,
+          "calibrated": 80
+        },
+        {
+          "key": "sicherheit",
+          "old": 92,
+          "calibrated": 80
+        },
+        {
+          "key": "preisleistung",
+          "old": 86,
+          "calibrated": 76
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petlibro-stainless-steel-fountain.md",
+      "slug": "petlibro-stainless-steel-fountain",
+      "title": "PETLIBRO Stainless Steel Fountain 3L",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 86,
+      "calculatedOld": 84,
+      "newScore": 75,
+      "oldRating": 4.4,
+      "newRating": 3.8,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 18,
+        "ratio": 0.2777777777777778
+      },
+      "reasons": [
+        "Gesamtscore 86 entspricht nicht dem sichtbaren Mittel 84",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 18 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "bedienung",
+          "old": 88,
+          "calibrated": 78
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "lautstaerke",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 60,
+          "calibrated": 57
+        },
+        {
+          "key": "preisleistung",
+          "old": 88,
+          "calibrated": 78
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "petsafe-freshfeed-refrigerated-feeder.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petsafe-healthy-pet-simply-feed.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "petsafe-smart-feed-2.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "surefeed-microchip-pet-feeder-connect.md",
+      "slug": "surefeed-microchip-pet-feeder-connect",
+      "title": "SureFeed Microchip Pet Feeder Connect",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 91,
+      "calculatedOld": 90,
+      "newScore": 79,
+      "oldRating": 4.6,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 91 entspricht nicht dem sichtbaren Mittel 90",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "portionierung",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "preisleistung",
+          "old": 70,
+          "calibrated": 67
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "surefeed-microchip-pet-feeder.md",
+      "slug": "surefeed-microchip-pet-feeder",
+      "title": "SureFeed Microchip Pet Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 89,
+      "calculatedOld": 77,
+      "newScore": 72,
+      "oldRating": 4.5,
+      "newRating": 3.6,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 15,
+        "ratio": 0.4
+      },
+      "reasons": [
+        "Gesamtscore 89 entspricht nicht dem sichtbaren Mittel 77",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 15 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 100,
+          "calibrated": 86
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 72
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "tractive-cat-6-mini.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "tractive-dog-6-xl.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "tractive-dog-6.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "weenect-xs.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "weenect-xt.md",
+      "status": "skipped",
+      "reason": "Keine Einzelbewertungen vorhanden"
+    },
+    {
+      "file": "wopet-cube-air-ca10.md",
+      "slug": "wopet-cube-air-ca10",
+      "title": "WOPET Cube Air WiFi Pet Feeder CA10",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 88,
+      "calculatedOld": 89,
+      "newScore": 79,
+      "oldRating": 4.4,
+      "newRating": 4,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 5,
+        "total": 16,
+        "ratio": 0.3125
+      },
+      "reasons": [
+        "Gesamtscore 88 entspricht nicht dem sichtbaren Mittel 89",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "5 von 16 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "sicherheit",
+          "old": 86,
+          "calibrated": 77
+        },
+        {
+          "key": "preisleistung",
+          "old": 92,
+          "calibrated": 81
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "wopet-heritage-view-camera-feeder.md",
+      "slug": "wopet-heritage-view-camera-feeder",
+      "title": "WOPET Heritage View Camera Feeder",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 83,
+      "calculatedOld": 80,
+      "newScore": 72,
+      "oldRating": 4.2,
+      "newRating": 3.6,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 14,
+        "ratio": 0.42857142857142855
+      },
+      "reasons": [
+        "Gesamtscore 83 entspricht nicht dem sichtbaren Mittel 80",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 14 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "portionierung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "preisleistung",
+          "old": 80,
+          "calibrated": 72
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "wopet-patrol-f07-pro.md",
+      "slug": "wopet-patrol-f07-pro",
+      "title": "WOPET Patrol F07 Pro",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 86,
+      "calculatedOld": 83,
+      "newScore": 75,
+      "oldRating": 4.3,
+      "newRating": 3.8,
+      "oldLabel": "Sehr gut",
+      "newLabel": "Empfehlenswert",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 4,
+        "total": 19,
+        "ratio": 0.21052631578947367
+      },
+      "reasons": [
+        "Gesamtscore 86 entspricht nicht dem sichtbaren Mittel 83",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "4 von 19 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 73
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 80
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "wopet-pioneer-f01-plus.md",
+      "slug": "wopet-pioneer-f01-plus",
+      "title": "WOPET Pioneer F01 Plus",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 84,
+      "calculatedOld": 75,
+      "newScore": 71,
+      "oldRating": 4.2,
+      "newRating": 3.5,
+      "oldLabel": "Gut",
+      "newLabel": "Solide",
+      "evidenceCap": 86,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 15,
+        "ratio": 0.4
+      },
+      "reasons": [
+        "Gesamtscore 84 entspricht nicht dem sichtbaren Mittel 75",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 15 Spezifikationen nicht ausgewiesen"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 20,
+          "calibrated": 45
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "reinigung",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 79
+        },
+        {
+          "key": "sicherheit",
+          "old": 80,
+          "calibrated": 72
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 79
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "xiaomi-smart-pet-food-feeder-2.md",
+      "slug": "xiaomi-smart-pet-food-feeder-2",
+      "title": "Xiaomi Smart Pet Food Feeder 2",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 90,
+      "calculatedOld": 90,
+      "newScore": 81,
+      "oldRating": 4.5,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 1,
+        "total": 16,
+        "ratio": 0.0625
+      },
+      "reasons": [
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "1 von 16 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "app",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "portionierung",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "zuverlaessigkeit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "sicherheit",
+          "old": 90,
+          "calibrated": 81
+        },
+        {
+          "key": "preisleistung",
+          "old": 90,
+          "calibrated": 81
+        }
+      ],
+      "changed": true
+    },
+    {
+      "file": "xiaomi-smart-pet-fountain-2.md",
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "title": "Xiaomi Smart Pet Fountain 2",
+      "testStatus": "editorial-review",
+      "productStatus": "unknown",
+      "oldScore": 92,
+      "calculatedOld": 91,
+      "newScore": 81,
+      "oldRating": 4.6,
+      "newRating": 4,
+      "oldLabel": "Hervorragend",
+      "newLabel": "Gut",
+      "evidenceCap": 88,
+      "unknownSpecs": {
+        "unknown": 6,
+        "total": 22,
+        "ratio": 0.2727272727272727
+      },
+      "reasons": [
+        "Gesamtscore 92 entspricht nicht dem sichtbaren Mittel 91",
+        "Kein bestätigter Praxistest (editorial-review)",
+        "Produktstatus nicht verifiziert (unknown)",
+        "6 von 22 Spezifikationen nicht ausgewiesen",
+        "Bisheriger Wert liegt im außergewöhnlichen 90+-Bereich"
+      ],
+      "criteria": [
+        {
+          "key": "verarbeitung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "bedienung",
+          "old": 92,
+          "calibrated": 81
+        },
+        {
+          "key": "reinigung",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "lautstaerke",
+          "old": 90,
+          "calibrated": 80
+        },
+        {
+          "key": "smartfunktionen",
+          "old": 94,
+          "calibrated": 83
+        },
+        {
+          "key": "preisleistung",
+          "old": 88,
+          "calibrated": 78
+        }
+      ],
+      "changed": true
+    }
+  ]
+}

@@ -62,15 +62,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L"
-rating: 4.2
-score: 83
+rating: 3.6
+score: 72
 ratings:
-  "app": 4
-  "portionierung": 4
-  "reinigung": 4
-  "zuverlaessigkeit": 4
-  "sicherheit": 4
-  "preisleistung": 4
+  "app": 3.6
+  "portionierung": 3.6
+  "reinigung": 3.6
+  "zuverlaessigkeit": 3.6
+  "sicherheit": 3.6
+  "preisleistung": 3.6
 decision:
   bestFor:
     - "katze"

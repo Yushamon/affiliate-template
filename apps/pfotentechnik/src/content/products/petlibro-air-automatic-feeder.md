@@ -63,15 +63,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO%20Air%20Automatic%20Feeder%202L"
-rating: 4.3
-score: 85
+rating: 3.6
+score: 72
 ratings:
-  "app": 1
-  "portionierung": 4.3
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.3
-  "sicherheit": 4.3
-  "preisleistung": 4.5
+  "app": 2.25
+  "portionierung": 3.8
+  "reinigung": 3.95
+  "zuverlaessigkeit": 3.8
+  "sicherheit": 3.8
+  "preisleistung": 3.95
 decision:
   bestFor:
     - "katze"

@@ -58,15 +58,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=oneisall+5L+Futterautomat+zwei+Katzen"
-rating: 4.3
-score: 85
+rating: 3.6
+score: 73
 ratings:
-  app: 4
-  portionierung: 4
-  reinigung: 4
-  zuverlaessigkeit: 4
-  sicherheit: 3.5
-  preisleistung: 4.5
+  app: 3.65
+  portionierung: 3.65
+  reinigung: 3.65
+  zuverlaessigkeit: 3.65
+  sicherheit: 3.35
+  preisleistung: 4
 decision:
   bestFor:
     - "zwei friedlich fressende Katzen"

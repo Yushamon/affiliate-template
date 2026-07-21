@@ -56,14 +56,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+SE"
-rating: 4.3
-score: 84
+rating: 3.8
+score: 76
 ratings:
-  verarbeitung: 4.3
-  bedienung: 4.3
-  reinigung: 4.2
-  lautstaerke: 4.4
-  preisleistung: 4.1
+  verarbeitung: 3.85
+  bedienung: 3.85
+  reinigung: 3.75
+  lautstaerke: 3.9
+  preisleistung: 3.7
 decision:
   bestFor:
     - "eine bis zwei Katzen"

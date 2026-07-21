@@ -61,15 +61,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO%20Air%20WiFi%20Feeder%202L"
-rating: 4.4
-score: 88
+rating: 3.9
+score: 77
 ratings:
-  "app": 4.5
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4
-  "sicherheit": 4
-  "preisleistung": 4.5
+  "app": 3.95
+  "portionierung": 3.95
+  "reinigung": 3.95
+  "zuverlaessigkeit": 3.6
+  "sicherheit": 3.6
+  "preisleistung": 3.95
 decision:
   bestFor:
     - "katze"

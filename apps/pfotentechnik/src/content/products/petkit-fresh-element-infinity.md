@@ -62,15 +62,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat"
-rating: 4.5
-score: 90
+rating: 4
+score: 79
 ratings:
-  "app": 4.5
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4.5
-  "preisleistung": 4
+  "app": 4
+  "portionierung": 4
+  "reinigung": 4
+  "zuverlaessigkeit": 4
+  "sicherheit": 4
+  "preisleistung": 3.65
 decision:
   bestFor:
     - "katze"

@@ -56,14 +56,14 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain"
-rating: 4.2
-score: 82
+rating: 3.8
+score: 75
 ratings:
-  verarbeitung: 4.2
-  bedienung: 4.2
-  reinigung: 4.1
-  lautstaerke: 4.3
-  preisleistung: 4.0
+  verarbeitung: 3.75
+  bedienung: 3.75
+  reinigung: 3.7
+  lautstaerke: 3.85
+  preisleistung: 3.65
 decision:
   bestFor:
     - "eine bis zwei Katzen"

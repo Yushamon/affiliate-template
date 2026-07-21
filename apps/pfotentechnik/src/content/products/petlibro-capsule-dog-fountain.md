@@ -57,15 +57,15 @@ affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
   url: "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain"
-rating: 4.5
-score: 90
+rating: 3.9
+score: 78
 ratings:
-  verarbeitung: 4.5
-  bedienung: 4.4
-  reinigung: 4.2
-  lautstaerke: 4.4
-  kapazitaet: 4.9
-  preisleistung: 4.3
+  verarbeitung: 3.95
+  bedienung: 3.85
+  reinigung: 3.7
+  lautstaerke: 3.85
+  kapazitaet: 4.25
+  preisleistung: 3.8
 decision:
   bestFor:
     - "mittelgroße und große Hunde"

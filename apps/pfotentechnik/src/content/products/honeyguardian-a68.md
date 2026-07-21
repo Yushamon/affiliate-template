@@ -59,15 +59,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=HoneyGuardian%20A68%20Smart%20Pet%20Feeder"
-rating: 4.4
-score: 88
+rating: 4
+score: 79
 ratings:
-  "app": 4.5
-  "portionierung": 4.5
-  "reinigung": 4.5
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4.5
-  "preisleistung": 4.5
+  "app": 3.95
+  "portionierung": 3.95
+  "reinigung": 3.95
+  "zuverlaessigkeit": 3.95
+  "sicherheit": 3.95
+  "preisleistung": 3.95
 decision:
   bestFor:
     - "katze"

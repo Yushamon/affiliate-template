@@ -60,15 +60,15 @@ affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat"
-rating: 4.2
-score: 84
+rating: 3.5
+score: 71
 ratings:
-  "app": 1
-  "portionierung": 4.5
-  "reinigung": 4
-  "zuverlaessigkeit": 4.5
-  "sicherheit": 4
-  "preisleistung": 4.5
+  "app": 2.25
+  "portionierung": 3.95
+  "reinigung": 3.6
+  "zuverlaessigkeit": 3.95
+  "sicherheit": 3.6
+  "preisleistung": 3.95
 decision:
   bestFor:
     - "katze"
