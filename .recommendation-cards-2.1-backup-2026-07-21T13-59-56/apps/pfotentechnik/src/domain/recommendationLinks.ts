@@ -182,52 +182,23 @@ const productLink = (entry: RecommendationEntry): RecommendationLink => ({
     ...asArray(entry.data.features)
   ].map((value) => String(value)).filter(Boolean).slice(0, 3)
 });
-const comparisonLink = (
-  entry: RecommendationEntry,
-  products: RecommendationEntry[] = []
-): RecommendationLink => {
-  const explicitSlugs = asArray(entry.data.items)
-    .map((item) =>
-      typeof item === "string"
-        ? item
-        : typeof item === "object" && item
-          ? String((item as Record<string, any>).slug ?? "")
-          : ""
-    )
-    .filter(Boolean);
-
-  const automaticSlugs = products
-    .filter((product) =>
-      asArray(product.data.comparisons).includes(entry.data.slug)
-    )
-    .map((product) => String(product.data.slug))
-    .filter(Boolean);
-
-  const modelCount = new Set([
-    ...explicitSlugs,
-    ...automaticSlugs
-  ]).size;
-
-  return {
-    kind: "comparison",
-    eyebrow: "Vergleich",
-    title: entry.data.title,
-    text:
-      entry.data.description ??
-      "Vergleiche passende Modelle direkt miteinander.",
-    href: `/vergleiche/${entry.data.slug}/`,
-    label: "Zum Vergleich",
-    stat: {
-      value: modelCount > 0 ? String(modelCount) : "Alle",
-      label: modelCount === 1 ? "Modell" : "Modelle"
-    },
-    highlights: [
-      "Pfotentechnik-Score",
-      "Modelle direkt filtern",
-      "Stärken und Grenzen vergleichen"
-    ]
-  };
-};
+const comparisonLink = (entry: RecommendationEntry): RecommendationLink => ({
+  kind: "comparison",
+  eyebrow: "Vergleich",
+  title: entry.data.title,
+  text: entry.data.description ?? "Vergleiche passende Modelle direkt miteinander.",
+  href: `/vergleiche/${entry.data.slug}/`,
+  label: "Zum Vergleich",
+  stat: {
+    value: String(asArray(entry.data.items).length || "Alle"),
+    label: asArray(entry.data.items).length === 1 ? "Modell" : "Modelle"
+  },
+  highlights: [
+    "Pfotentechnik-Score",
+    "Modelle direkt filtern",
+    "Stärken und Grenzen vergleichen"
+  ]
+});
 const guideLink = (entry: RecommendationEntry): RecommendationLink => ({
   eyebrow: "Kaufberatung", title: entry.data.title,
   text: entry.data.description ?? "Ordne die wichtigsten Anforderungen vor der Auswahl genauer ein.",
@@ -239,10 +210,7 @@ export const buildMoneyPageNextSteps = ({ page, comparisons, products }: {
 }): RecommendationLink[] => {
   const product = getBestProduct(page, products);
   const comparison = getBestComparison(page, comparisons);
-  return [
-    ...(product ? [productLink(product)] : []),
-    ...(comparison ? [comparisonLink(comparison, products)] : [])
-  ].slice(0, 2);
+  return [...(product ? [productLink(product)] : []), ...(comparison ? [comparisonLink(comparison)] : [])].slice(0, 2);
 };
 
 export const buildComparisonNextSteps = ({ comparison, pages, products }: {
