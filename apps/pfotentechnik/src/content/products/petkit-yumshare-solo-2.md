@@ -182,6 +182,10 @@ alternatives:
 
   - surefeed-microchip-feeder
 
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
 
   - label: Futterart
@@ -230,7 +234,6 @@ faq:
   - question: "Funktioniert die Kamera ohne WLAN?"
     answer: >
       Nein. Für Livebild und Fernzugriff wird WLAN benötigt.
-
 ---
 
 Der PETKIT YumShare Solo 2 gehört aktuell zu den stärksten

@@ -100,6 +100,10 @@ alternatives:
   - "petlibro-stainless-steel-fountain"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "CP335 / 335"

@@ -66,6 +66,8 @@ specs:
   - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "large"]
   largeDogFitReason: "Für große Hunde nur eingeschränkt: 3 L Vorrat, bis ca. 50 g je Mahlzeit, Kroketten bis 12 mm."
   largeDogFit: "limited"
   manufacturerSizeClaim: "small"

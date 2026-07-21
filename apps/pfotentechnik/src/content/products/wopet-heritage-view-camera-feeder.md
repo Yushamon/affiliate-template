@@ -96,6 +96,10 @@ weaknesses:
   - "Datenschutz und App-Abhängigkeit beachten"
   - "Regionale Verfügbarkeit schwankt"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

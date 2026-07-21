@@ -102,6 +102,10 @@ alternatives:
   - "surefeed-microchip-pet-feeder"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium", "large"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "PLWF305"

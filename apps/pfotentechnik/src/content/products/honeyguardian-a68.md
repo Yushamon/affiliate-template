@@ -92,6 +92,10 @@ weaknesses:
   - "Keine Kamera"
   - "Benachrichtigungen abhängig von der App"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

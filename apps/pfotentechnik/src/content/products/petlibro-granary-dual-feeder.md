@@ -47,6 +47,10 @@ experience:
   maintenance: "Verteiler, Ausgabekanal und beide Näpfe regelmäßig reinigen. Trockenmittel ungefähr alle zwei Wochen ersetzen."
 alternatives: ["oneisall-5l-automatic-cat-feeder", "honeyguardian-smart-pet-feeder-s305d", "petlibro-granary-camera-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen"]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - { label: "Modell", value: "PLAF103 mit Dual Food Tray" }
   - { label: "Futterart", value: "Trockenfutter" }

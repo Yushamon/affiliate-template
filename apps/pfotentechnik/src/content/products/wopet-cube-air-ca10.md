@@ -92,6 +92,10 @@ weaknesses:
   - "Batterien dienen nur als Notstromversorgung"
   - "Keine Kamera integriert"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter, Kroketten etwa 2 bis 12 mm"

@@ -33,6 +33,10 @@ strengths: [7 Liter, breite Trinkfläche, Edelstahl, für große Hunde geeignet,
 weaknesses: [sperrig, voll schwer zu tragen, keine App, Pumpe und Ecken sorgfältig reinigen]
 experience: { summary: "Großes Volumen reduziert das Nachfüllen, aber nicht die erforderliche Frischekontrolle.", methodology: "Redaktioneller Check aus offizieller Produktbeschreibung, Handbuchdaten und Nutzerberichten; kein eigener Langzeittest.", maintenance: "Wasser regelmäßig komplett austauschen und alle wasserführenden Teile mindestens wöchentlich reinigen." }
 alternatives: [petlibro-capsule-dog-fountain, oneisall-3-5l-cordless-fountain, petlibro-stainless-steel-fountain]
+comparisonFilters:
+  animal: ["dog"]
+  petSize: ["large"]
+  foodType: []
 specs:
   - { label: Kapazität, value: "7 Liter" }
   - { label: Modell, value: "PW07" }

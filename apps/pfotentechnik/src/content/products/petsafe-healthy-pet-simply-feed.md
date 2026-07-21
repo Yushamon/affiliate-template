@@ -47,6 +47,10 @@ experience:
   methodology: "Offizielle PetSafe-Daten, Handbuch und mehr als 100 Händlerbewertungen; kein eigener Langzeittest."
 alternatives: ["petsafe-smart-feed-2", "wopet-pioneer-f01-plus", "petlibro-air-automatic-feeder"]
 comparisons: ["beste-futterautomaten-fuer-hunde", "beste-futterautomaten-fuer-katzen", "beste-futterautomaten-ohne-wlan"]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium", "large"]
+  foodType: []
 specs:
   - { label: "Futterart", value: "Trocken- und halbfeuchtes Futter" }
   - { label: "Kapazität", value: "24 Cups / etwa 5,7 Liter" }

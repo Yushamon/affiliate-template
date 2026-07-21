@@ -94,6 +94,10 @@ weaknesses:
   - "Keine zeitgesteuerte Vorratsausgabe"
   - "Begrenztes Schalenvolumen"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Nass- und Trockenfutter"

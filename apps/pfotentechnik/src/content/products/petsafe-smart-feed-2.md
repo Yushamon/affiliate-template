@@ -47,6 +47,10 @@ experience:
   methodology: "Offizielle PetSafe-Unterlagen, Tom's Guide und Händler-Nutzerberichte; kein eigener Langzeittest."
 alternatives: ["petsafe-healthy-pet-simply-feed", "wopet-pioneer-f01-plus", "pawsync-smart-pet-feeder"]
 comparisons: ["beste-futterautomaten-fuer-hunde", "beste-futterautomaten-fuer-katzen"]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium", "large"]
+  foodType: []
 specs:
   - { label: "Futterart", value: "Trocken- und halbfeuchtes Futter" }
   - { label: "Kapazität", value: "24 Cups / etwa 5,7 Liter" }

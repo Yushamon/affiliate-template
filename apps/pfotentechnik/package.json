@@ -16,7 +16,8 @@
     "lint:content:strict": "node scripts/editorial-lint.mjs --strict",
     "audit:repository": "node scripts/audit-repository.mjs",
     "audit:repository:strict": "node scripts/audit-repository.mjs --strict",
-    "audit:gps": "node scripts/audit-gps-cluster.mjs"
+    "audit:gps": "node scripts/audit-gps-cluster.mjs",
+    "audit:suitability": "node scripts/audit-product-suitability.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

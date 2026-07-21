@@ -101,6 +101,10 @@ alternatives:
   - "oneisall-3-2l-cordless-fountain"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "PLWF115"

@@ -61,7 +61,10 @@ const productFilterData = Object.fromEntries(
                   value={option.value}
                   data-filter-key={filter.key}
                 />
-                <span>{option.label}</span>
+                <span class="comparison-control-box" aria-hidden="true"></span>
+                <span class="comparison-filter-option__text">
+                  {option.label}
+                </span>
               </label>
             ))}
           </div>

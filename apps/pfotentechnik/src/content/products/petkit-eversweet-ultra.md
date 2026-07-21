@@ -102,6 +102,10 @@ alternatives:
   - "petlibro-dockstream-2-smart"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "large"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "P4117"

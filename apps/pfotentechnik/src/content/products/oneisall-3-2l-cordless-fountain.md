@@ -101,6 +101,10 @@ alternatives:
   - "petkit-eversweet-max-cordless"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "PW14"

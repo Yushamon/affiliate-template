@@ -47,6 +47,10 @@ experience:
   methodology: "Offizielle Catit-Daten, Händlerbewertungen und thematisch passende Nutzerberichte; kein eigener hygienischer Langzeittest."
 alternatives: ["cat-mate-c500", "petlibro-polar-wet-food-feeder", "cat-mate-c300"]
 comparisons: ["beste-futterautomaten-fuer-katzen"]
+comparisonFilters:
+  animal: ["cat"]
+  petSize: []
+  foodType: []
 specs:
   - { label: "Futterart", value: "Nassfutter, Trockenfutter und Snacks" }
   - { label: "Kapazität", value: "6 Fächer mit je 170 ml" }

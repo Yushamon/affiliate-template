@@ -33,6 +33,10 @@ strengths: [leiser Betrieb, 2-Liter-Tank, kabellose Pumpe im Tank, Statusanzeige
 weaknesses: [kabelgebundener Brunnen, begrenzte App-Reichweite, Filter etwa monatlich, Teile nur von Hand reinigen]
 experience: { summary: "Leise Brunnen werden oft erst bei niedrigem Wasserstand hörbar; tägliche Sichtkontrolle bleibt sinnvoll.", methodology: "Redaktioneller Check aus offizieller Spezifikation und Nutzerberichten; kein eigener Langzeittest.", maintenance: "Filter laut Hersteller ungefähr alle vier Wochen wechseln und Pumpe wöchentlich kontrollieren." }
 alternatives: [petkit-eversweet-3-pro-uvc, petlibro-stainless-steel-fountain, xiaomi-smart-pet-fountain-2]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: Kapazität, value: "2 Liter" }
   - { label: Material, value: "BPA-freies ABS und Silikon" }

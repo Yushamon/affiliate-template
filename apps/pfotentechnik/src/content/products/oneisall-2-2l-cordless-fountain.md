@@ -101,6 +101,10 @@ alternatives:
   - "petkit-eversweet-solo-se"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "PW13"

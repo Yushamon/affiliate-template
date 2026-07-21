@@ -96,6 +96,10 @@ weaknesses:
   - "Großes Gehäuse"
   - "Premium-Preis und komplexere Einrichtung"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

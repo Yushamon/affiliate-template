@@ -119,6 +119,8 @@ specs:
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
   largeDogFitReason: "Technisch grundsätzlich interessant: 6 L Vorrat. Maximale Mahlzeit ist noch nicht vollständig belegt."
   largeDogFit: "conditional"
   manufacturerSizeClaim: "unknown"

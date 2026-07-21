@@ -95,6 +95,10 @@ alternatives:
   - "oneisall-2-2l-cordless-fountain"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Kapazität"
     value: "1 Liter"

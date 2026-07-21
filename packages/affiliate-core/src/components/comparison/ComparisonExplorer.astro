@@ -40,7 +40,11 @@ const {
         type="checkbox"
         data-differences-only
       />
-      <span>Nur Unterschiede anzeigen</span>
+      <span class="comparison-control-box" aria-hidden="true"></span>
+      <span class="comparison-toggle__copy">
+        <strong>Nur Unterschiede anzeigen</strong>
+        <small>Identische Merkmale vorübergehend ausblenden</small>
+      </span>
     </label>
 
     {products.length > initialVisibleProducts && (

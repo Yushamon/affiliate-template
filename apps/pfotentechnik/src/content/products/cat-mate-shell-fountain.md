@@ -100,6 +100,10 @@ alternatives:
   - "petkit-eversweet-solo-se"
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "410, 411, 412 oder 413 je nach Farbvariante"

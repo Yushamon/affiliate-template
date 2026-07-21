@@ -38,6 +38,10 @@ comparisons: ["beste-gps-tracker-fuer-hunde", "gps-tracker-mit-langer-akkulaufze
 features: ["Live-Ortung", "Sicherheitszonen", "Ton", "Vibration", "starke LED-Leuchte"]
 priceCategory: "premium"
 useCase: "Robuster Mobilfunktracker für lange Outdoor-Einsätze mit Hunden"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "large"]
+  foodType: []
 specs:
   - { label: "Ortung", value: "Satellitenortung über Weenect InfinityTrack" }
   - { label: "Übertragung", value: "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM" }

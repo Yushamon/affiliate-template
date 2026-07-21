@@ -96,6 +96,10 @@ weaknesses:
   - "Keine individuelle Zugangskontrolle"
   - "Beide Tiere erhalten dieselbe Portionsmenge"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

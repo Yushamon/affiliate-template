@@ -38,6 +38,10 @@ comparisons: ["gps-tracker-ohne-abo", "gps-tracker-mit-langer-akkulaufzeit"]
 features: ["VHF-Hundeortung", "dynamische Aktualisierungsrate", "Bakenlicht", "kompatible Trainingsfunktionen"]
 priceCategory: "premium"
 useCase: "Spezialsystem für Hundeortung und Training im Garmin-Alpha-Ökosystem"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS-Hundehalsbandgerät" }
   - { label: "Übertragung", value: "VHF-Funk direkt zum kompatiblen Alpha-Handgerät" }

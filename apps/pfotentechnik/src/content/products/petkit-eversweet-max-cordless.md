@@ -102,6 +102,10 @@ alternatives:
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
   - "beste-trinkbrunnen-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "P4115"

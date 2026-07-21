@@ -38,6 +38,10 @@ comparisons: ["beste-gps-tracker-fuer-hunde", "beste-gps-tracker-fuer-katzen", "
 features: ["Live-Tracking", "Geozaun", "Ton", "Aktivitätstracking", "Standort teilen"]
 priceCategory: "midrange"
 useCase: "4G-Tracker mit langfristig enthaltener Basisortung in Europa"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: []
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS; ergänzende WLAN- und Bluetooth-Nähe laut Hersteller" }
   - { label: "Übertragung", value: "Integrierte 4G-SIM" }

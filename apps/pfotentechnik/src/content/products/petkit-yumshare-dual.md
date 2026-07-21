@@ -47,6 +47,10 @@ experience:
   maintenance: "Beide Kammern, Trennwand, Ausgabekanäle und Napf regelmäßig getrennt reinigen. Vermischung im Ausgabebereich kontrollieren."
 alternatives: ["petkit-yumshare-solo", "petlibro-granary-camera-feeder", "petlibro-granary-dual-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen", "beste-futterautomaten-fuer-hunde"]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: "Modell", value: "P591 beziehungsweise P592 je nach Generation" }
   - { label: "Futterart", value: "Trockenfutter und passende gefriergetrocknete Stücke" }

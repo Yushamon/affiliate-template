@@ -64,6 +64,8 @@ specs:
   - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
   largeDogFitReason: "Technisch grundsätzlich interessant: 4 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
   largeDogFit: "conditional"
   manufacturerSizeClaim: "small-medium"

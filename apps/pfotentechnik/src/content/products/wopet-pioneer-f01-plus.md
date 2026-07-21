@@ -120,6 +120,8 @@ specs:
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
   largeDogFitReason: "Technisch stark für größere Rationen: 7 L Vorrat, bis ca. 400 g je Mahlzeit, Kroketten bis 12 mm. Napf und Standfestigkeit individuell prüfen."
   largeDogFit: "technical-fit"
   manufacturerSizeClaim: "unknown"

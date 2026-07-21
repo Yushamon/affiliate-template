@@ -38,6 +38,10 @@ comparisons: ["beste-gps-tracker-fuer-hunde", "gps-tracker-ohne-abo", "gps-track
 features: ["VHF-Hundeortung", "dynamische Aktualisierungsrate", "Bakenlicht", "austauschbarer Akku"]
 priceCategory: "premium"
 useCase: "Professionelle Hundeortung ohne Mobilfunk in Verbindung mit Alpha-Handgerät"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS-Hundehalsbandgerät" }
   - { label: "Übertragung", value: "VHF-Funk direkt zum kompatiblen Alpha-Handgerät" }

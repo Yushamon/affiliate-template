@@ -38,6 +38,10 @@ comparisons: ["beste-gps-tracker-fuer-hunde", "beste-gps-tracker-fuer-katzen", "
 features: ["Superlive mit Sekundenupdates", "Sicherheitszonen", "Ton", "Vibration", "Licht", "Mehrnutzerzugriff"]
 priceCategory: "midrange"
 useCase: "Leichter Mobilfunktracker für Katzen und kleine Hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS, Galileo, BeiDou und GLONASS" }
   - { label: "Übertragung", value: "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM" }

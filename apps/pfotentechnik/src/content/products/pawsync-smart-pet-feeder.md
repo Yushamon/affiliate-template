@@ -47,6 +47,10 @@ experience:
   methodology: "Herstellerdaten, eine unabhängige Produktbesprechung von Reviewed und aggregierte Nutzerberichte; keine eigene praktische Erprobung."
 alternatives: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "catit-pixi-vision-smart-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen", "beste-futterautomaten-fuer-hunde"]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: "Futterart", value: "Trocken-, luftgetrocknetes und gefriergetrocknetes Futter" }
   - { label: "Kapazität", value: "3,6 Liter" }

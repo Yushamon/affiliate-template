@@ -102,6 +102,10 @@ alternatives:
   - "oneisall-3-5l-cordless-fountain"
 comparisons:
   - "beste-trinkbrunnen-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "large"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "WF008 / PLWF008"

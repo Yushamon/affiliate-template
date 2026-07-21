@@ -94,6 +94,10 @@ weaknesses:
   - "Nur Trockenfutter"
   - "Air-Varianten mit und ohne WLAN unterscheiden"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

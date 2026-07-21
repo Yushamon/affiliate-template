@@ -144,7 +144,7 @@ comparisonFilters:
   kibbleMaxMm: 12
   portionGrams: 10
   reservoirLiters: 5
-  animal: ["cat", "dog"]
+  animal: ["dog", "cat"]
   petSize: ["small", "medium"]
 faq:
   - question: "Ist der Xiaomi Smart Pet Food Feeder 2 für gefriergetrocknetes Futter geeignet?"

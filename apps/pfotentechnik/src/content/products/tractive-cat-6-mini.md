@@ -38,6 +38,10 @@ comparisons: ["beste-gps-tracker-fuer-katzen", "kleine-gps-tracker-fuer-katzen",
 features: ["Live-Ortung", "Sicherheitszonen", "Positionsverlauf", "Aktivitäts- und Schlaftracking", "Herz- und Atemfrequenz-Trends"]
 priceCategory: "midrange"
 useCase: "Katzenspezifischer Mobilfunktracker mit integriertem Sicherheitshalsband"
+comparisonFilters:
+  animal: ["cat"]
+  petSize: []
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS, GLONASS und Galileo" }
   - { label: "Übertragung", value: "LTE/4G (Cat 1 bis)" }

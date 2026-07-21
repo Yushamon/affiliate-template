@@ -98,6 +98,10 @@ weaknesses:
   - "Keine Fernsteuerung oder Fütterungsprotokolle"
   - "Kleinerer Vorrat als beim Granary"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter, Kroketten etwa 2 bis 15 mm"

@@ -48,6 +48,10 @@ comparisons: ["beste-gps-tracker-fuer-hunde", "gps-tracker-mit-langer-akkulaufze
 features: ["Live-Ortung", "virtuelle Zäune", "Positionsverlauf", "Aktivitäts- und Schlaftracking", "Familienfreigabe je nach Abo"]
 priceCategory: "midrange"
 useCase: "Alltagstracker für Hunde über 4 kg"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - { label: "Ortung", value: "GPS, GLONASS und Galileo" }
   - { label: "Übertragung", value: "LTE/4G (Cat 1 bis)" }

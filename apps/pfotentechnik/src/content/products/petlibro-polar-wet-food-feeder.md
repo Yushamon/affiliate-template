@@ -103,6 +103,10 @@ alternatives:
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
   - "beste-futterautomaten-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Nassfutter und rehydriertes gefriergetrocknetes Futter"

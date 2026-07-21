@@ -149,7 +149,7 @@ comparisonFilters:
   portionMl: 20
   portionGrams: 10
   reservoirLiters: 5
-  animal: ["cat", "dog"]
+  animal: ["dog", "cat"]
   petSize: ["small", "medium"]
 faq:
   - question: "Kann der PETLIBRO Granary Nassfutter ausgeben?"

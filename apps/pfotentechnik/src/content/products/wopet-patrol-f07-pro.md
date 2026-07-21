@@ -105,6 +105,10 @@ alternatives:
 comparisons:
   - "beste-futterautomaten-fuer-hunde"
   - "beste-futterautomaten-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "F07 Pro"

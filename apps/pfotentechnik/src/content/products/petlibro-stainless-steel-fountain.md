@@ -103,6 +103,10 @@ alternatives:
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
   - "beste-trinkbrunnen-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "medium"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "PLWF006"

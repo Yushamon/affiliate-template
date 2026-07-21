@@ -33,6 +33,10 @@ strengths: ["3,5 Liter", kabellos, Edelstahl, Bewegungssensor, mehrere Modi, gut
 weaknesses: [keine App, Herstellerlaufzeit nicht pauschal erreichbar, Filterfolgekosten, Sensorfluss nicht für jedes Tier ideal]
 experience: { summary: "Bewegungssensoren sparen Energie, manche Tiere bevorzugen jedoch einen kontinuierlichen Wasserlauf.", methodology: "Redaktioneller Check aus Herstellerangaben und unabhängigen Vergleichserfahrungen; kein eigener Langzeittest.", maintenance: "Filter etwa zweiwöchentlich prüfen und Tank sowie Pumpe wöchentlich reinigen." }
 alternatives: [petlibro-dockstream-2-smart, petlibro-stainless-steel-fountain, xiaomi-smart-pet-fountain-2]
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - { label: Kapazität, value: "3,5 Liter" }
   - { label: Material, value: "Edelstahl" }

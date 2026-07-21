@@ -73,7 +73,7 @@ comparisonFilters:
   portionMl: 20
   portionGrams: 10
   reservoirLiters: 5
-  animal: ["cat", "dog"]
+  animal: ["dog", "cat"]
   petSize: ["small", "medium"]
 faq:
   - { question: "Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?", answer: "Nein. Das Modell ist nur für Trockenfutter vorgesehen." }

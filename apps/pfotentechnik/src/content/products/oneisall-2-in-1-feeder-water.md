@@ -47,6 +47,10 @@ experience:
   methodology: "Offizielle Oneisall-Produktdaten und Einordnung im WIRED-Vergleich 2026; frühe Marktphase, kein eigener Langzeittest."
 alternatives: ["oneisall-5l-automatic-cat-feeder", "petlibro-granary-wifi-feeder", "catit-pixi-vision-smart-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen"]
+comparisonFilters:
+  animal: ["cat"]
+  petSize: []
+  foodType: []
 specs:
   - { label: "Modell", value: "PF14WAU" }
   - { label: "Futterart", value: "Trockenfutter" }

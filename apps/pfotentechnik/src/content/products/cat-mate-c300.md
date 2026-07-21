@@ -105,6 +105,10 @@ alternatives:
   - "petlibro-polar-wet-food-feeder"
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Nass- und Trockenfutter"

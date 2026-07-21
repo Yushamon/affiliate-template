@@ -96,6 +96,10 @@ weaknesses:
   - "Verwendet RFID-Halsbandanhänger statt implantiertem Mikrochip"
   - "Je Automat erhält nur ein Tier exklusiven Zugang"
 alternatives: []
+comparisonFilters:
+  animal: ["cat"]
+  petSize: []
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter (ca. 2 bis 15 mm)"

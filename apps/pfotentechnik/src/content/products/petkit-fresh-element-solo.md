@@ -106,6 +106,10 @@ alternatives:
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
   - "beste-futterautomaten-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small", "large"]
+  foodType: []
 specs:
   - label: "Modell"
     value: "P570"

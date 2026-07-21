@@ -127,6 +127,8 @@ specs:
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
+  animal: ["cat"]
+  petSize: ["small"]
   largeDogFitReason: "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 15 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
   largeDogFit: "conditional"
   manufacturerSizeClaim: "cats-small-pets"

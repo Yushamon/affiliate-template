@@ -96,6 +96,10 @@ weaknesses:
   - "Keine Kamera"
   - "Größer und schwerer als kompakte 3-Liter-Modelle"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

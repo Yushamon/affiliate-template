@@ -87,6 +87,10 @@ weaknesses:
   - "Keine Kamera integriert"
   - "Kleinerer Vorratsbehälter als Granary"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

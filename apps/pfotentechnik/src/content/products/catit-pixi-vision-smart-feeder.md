@@ -53,6 +53,10 @@ experience:
   support: "Catit bietet deutschsprachige Produkt- und Hilfeseiten."
 alternatives: ["petkit-yumshare-solo-2", "petlibro-granary-camera-feeder", "pawsync-smart-pet-feeder"]
 comparisons: ["beste-futterautomaten-fuer-katzen", "beste-futterautomaten-mit-kamera"]
+comparisonFilters:
+  animal: ["cat"]
+  petSize: []
+  foodType: []
 specs:
   - { label: "Futterart", value: "Trockenfutter und trockene Snacks" }
   - { label: "Kapazität", value: "2,9 Liter / etwa 1,2 kg" }

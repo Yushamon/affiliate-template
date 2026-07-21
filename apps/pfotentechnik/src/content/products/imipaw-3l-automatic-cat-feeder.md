@@ -94,6 +94,10 @@ weaknesses:
   - "Nur Trockenfutter"
   - "Modellbezeichnung im Handel nicht immer eindeutig"
 alternatives: []
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Futterart"
     value: "Trockenfutter"

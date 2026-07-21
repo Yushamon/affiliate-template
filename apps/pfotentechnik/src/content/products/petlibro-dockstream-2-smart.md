@@ -103,6 +103,10 @@ alternatives:
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
   - "beste-trinkbrunnen-fuer-hunde"
+comparisonFilters:
+  animal: ["dog", "cat"]
+  petSize: ["small"]
+  foodType: []
 specs:
   - label: "Kapazität"
     value: "3 Liter"
