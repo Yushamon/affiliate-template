@@ -169,11 +169,6 @@ const isMoneyPage =
   page.data.contentPlatform?.intent === "buying-guide" ||
   page.data.contentPlatform?.intent === "comparison-support";
 
-const isRecommendationPage =
-  isMoneyPage ||
-  Boolean(assembledPage.closingCta) ||
-  Boolean(assembledPage.decisionKey);
-
 const matchesRecommendationJourney = (product: (typeof products)[number]) => {
   if (!recommendationJourney || recommendationJourney.mode === "off") return true;
   const filters = product.data.comparisonFilters;
@@ -227,7 +222,7 @@ const closingProduct = assembledPage.closingCta
   ? productBySlug.get(assembledPage.closingCta.productKey)
   : undefined;
 
-const moneyPageNextSteps = isRecommendationPage
+const moneyPageNextSteps = isMoneyPage
   ? buildMoneyPageNextSteps({
       page: page.data,
       comparisons,
@@ -559,10 +554,10 @@ const relatedItems = relatedEntries.map((entry) => ({
     </AutoLinkContent>
 
     {
-      isRecommendationPage && moneyPageNextSteps.length > 0 && (
+      isMoneyPage && moneyPageNextSteps.length > 0 && (
         <DecisionNextSteps
-          title="Deine nächsten Schritte"
-          intro="Wähle zwischen der passenden Produktempfehlung, dem direkten Vergleich und weiterführender Einordnung."
+          title="Passend weiterentscheiden"
+          intro="Öffne die stärkste passende Produktempfehlung oder den zugehörigen Vergleich."
           items={moneyPageNextSteps}
         />
       )
@@ -586,7 +581,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
     {page.data.healthBridge && <HealthBridge {...page.data.healthBridge} />}
     {
-      !isRecommendationPage && assembledPage.closingCta && closingProduct && (
+      !isMoneyPage && assembledPage.closingCta && closingProduct && (
         <section class="pt-money-cta" aria-labelledby="pt-money-cta-title">
           <div>
             <span>{closingProduct.data.manufacturer.name}</span>
@@ -620,7 +615,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     <FAQ items={assembledPage.faq} />
   </article>
 
-{!isRecommendationPage && (
+{!isMoneyPage && (
   <ConversionJourney
     title="Was jetzt sinnvoll ist"
     intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
