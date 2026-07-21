@@ -6,14 +6,9 @@ import type { AssembledContentPage } from "../domain/contentPlatform";
 interface Props {
   page: AssembledContentPage;
   products: CollectionEntry<"products">[];
-  hideRecommendationBlocks?: boolean;
 }
 
-const {
-  page,
-  products,
-  hideRecommendationBlocks = false
-} = Astro.props as Props;
+const { page, products } = Astro.props as Props;
 const productBySlug = new Map(
   products.map((product) => [product.data.slug, product])
 );
@@ -38,7 +33,7 @@ const hasBlock = (
   </section>
 )}
 
-{!hideRecommendationBlocks && hasBlock("recommendation") && selectedProducts.length > 0 && (
+{hasBlock("recommendation") && selectedProducts.length > 0 && (
   <section class="cp-auto-block">
     <header>
       <span>Passende Modelle</span>
@@ -70,7 +65,7 @@ const hasBlock = (
   </section>
 )}
 
-{!hideRecommendationBlocks && hasBlock("comparison") && selectedProducts.length > 1 && (
+{hasBlock("comparison") && selectedProducts.length > 1 && (
   <section class="cp-auto-block">
     <header>
       <span>Direkter Überblick</span>

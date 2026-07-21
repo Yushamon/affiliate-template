@@ -1,0 +1,28 @@
+{
+  "name": "@affiliate-sites/pfotentechnik",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --background",
+    "build": "astro build",
+    "preview": "astro preview",
+    "audit:products": "node scripts/audit-product-data.mjs",
+    "audit:products:strict": "node scripts/audit-product-data.mjs --strict",
+    "normalize:products": "node scripts/normalize-product-specs.mjs",
+    "build:content-graph": "node scripts/build-content-graph.mjs",
+    "audit:content-graph": "node scripts/build-content-graph.mjs --strict",
+    "lint:content": "node scripts/editorial-lint.mjs",
+    "lint:content:strict": "node scripts/editorial-lint.mjs --strict",
+    "audit:repository": "node scripts/audit-repository.mjs",
+    "audit:repository:strict": "node scripts/audit-repository.mjs --strict",
+    "audit:gps": "node scripts/audit-gps-cluster.mjs",
+    "audit:suitability": "node scripts/audit-product-suitability.mjs",
+    "audit:recommendations": "node ../../scripts/audit-recommendation-engine-4.mjs"
+  },
+  "dependencies": {
+    "@affiliate-core/core": "*",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.0"
+  }
+}

@@ -331,7 +331,6 @@ const relatedItems = relatedEntries.map((entry) => ({
     <AutoContentBlocks
       page={assembledPage}
       products={products}
-      hideRecommendationBlocks={isRecommendationPage}
     />
 
     {
@@ -358,9 +357,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
 
     {
-      !isRecommendationPage &&
-      topDecisionRecommendation &&
-      topDecisionProduct && (
+      topDecisionRecommendation && topDecisionProduct && (
         <section
           class={`decision-top-recommendation decision-top-recommendation-${decisionThemeColor}`}
         >
@@ -414,7 +411,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       />
     </AutoLinkContent>
     {
-      !isRecommendationPage && comparisonProducts.length > 1 && (
+      !recommendationJourney && comparisonProducts.length > 1 && (
         <div class="decision-comparison-intro">
           <h2>Weitere passende Empfehlungen</h2>
           <p>
@@ -426,7 +423,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       )
     }
     {
-      !isRecommendationPage && comparisonProductEntries.length > 0 && comparisonExperienceConfig && (
+      !recommendationJourney && comparisonProductEntries.length > 0 && comparisonExperienceConfig && (
         <section class="decision-template-section">
           <h2>{comparisonExperienceConfig.title}</h2>
           <p>{comparisonExperienceConfig.text}</p>
