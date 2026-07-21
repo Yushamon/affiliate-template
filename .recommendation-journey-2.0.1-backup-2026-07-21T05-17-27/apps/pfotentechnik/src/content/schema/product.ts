@@ -236,14 +236,6 @@ const productGpsSchema =
 
 const productComparisonFiltersSchema =
   z.object({
-    animal: z
-      .array(z.enum(["dog", "cat"]))
-      .default([]),
-
-    petSize: z
-      .array(z.enum(["small", "medium", "large"]))
-      .default([]),
-
     foodType: z
       .array(
         z.enum([
@@ -282,8 +274,6 @@ const productComparisonFiltersSchema =
   })
   .optional()
   .default({
-    animal: [],
-    petSize: [],
     foodType: []
   });
 

@@ -36,14 +36,6 @@ premiumBlocks:
     title: "Vier Ausschlusskriterien"
     items: ["Zu kleine maximale Ausgabe", "Nicht freigegebene Krokettengröße", "Leichtes oder kippbares Gehäuse", "Unpassende Napfform und Fresshaltung"]
 comparisonProducts: ["xiaomi-smart-pet-food-feeder-2", "petlibro-granary-wifi-feeder", "petlibro-granary-camera-feeder"]
-recommendationJourney:
-  mode: "filtered"
-  animal: "dog"
-  petSize: "large"
-  comparisonHref: "/vergleiche/beste-futterautomaten-fuer-hunde/"
-  comparisonLabel: "Futterautomaten für große Hunde vergleichen"
-  emptyTitle: "Aktuell keine uneingeschränkte Top-Empfehlung"
-  emptyText: "Die derzeit eingeordneten Modelle sind überwiegend für Katzen sowie kleine bis mittelgroße Hunde dokumentiert. Für große Hunde müssen maximale Ausgabe, Krokettengröße, Napf und Standfestigkeit individuell geprüft werden."
 comparisonRecommendation:
   title: "Großer Vorrat allein reicht nicht"
   text: "Die verglichenen Modelle bieten größere Behälter oder zusätzliche Kontrolle, sind aber nicht pauschal für jeden großen Hund geeignet. Herstellerfreigabe und praktischer Portionsbereich bleiben entscheidend."

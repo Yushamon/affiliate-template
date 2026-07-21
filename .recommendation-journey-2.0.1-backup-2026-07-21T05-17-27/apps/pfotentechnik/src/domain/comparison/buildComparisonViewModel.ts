@@ -166,18 +166,6 @@ const getStructuredFilters = (
 
   const foodTypes = source?.foodType ?? [];
 
-  (source?.animal ?? []).forEach((animal) => {
-    addValue(values, "tier", animal === "dog" ? "hund" : "katze");
-  });
-
-  (source?.petSize ?? []).forEach((size) => {
-    addValue(
-      values,
-      "tiergroesse",
-      size === "small" ? "klein" : size === "medium" ? "mittel" : "gross"
-    );
-  });
-
   const gps = product.data.gps;
 
   if (gps) {
@@ -423,16 +411,6 @@ export function buildComparisonViewModel({
     );
   });
 
-  const hasUsefulFilterCoverage = (key: string) => {
-    const productsWithValue = items.filter((item) => {
-      const values = filterValuesBySlug.get(item.slug)?.[key] ?? [];
-      return values.length > 0;
-    }).length;
-
-    return productsWithValue >= 2 &&
-      productsWithValue / Math.max(items.length, 1) >= 0.5;
-  };
-
   const isGpsComparison = items.length > 0 && items.every((item) =>
     productBySlug.get(item.slug)?.data.category.key === "gps-tracker"
   );
@@ -471,27 +449,6 @@ export function buildComparisonViewModel({
       ]
     }
   ] : [
-    ...(hasUsefulFilterCoverage("tier")
-      ? [{
-          key: "tier",
-          label: "Tier",
-          options: [
-            { value: "hund", label: "Hund" },
-            { value: "katze", label: "Katze" }
-          ]
-        }]
-      : []),
-    ...(hasUsefulFilterCoverage("tiergroesse")
-      ? [{
-          key: "tiergroesse",
-          label: "Tiergröße",
-          options: [
-            { value: "klein", label: "Klein" },
-            { value: "mittel", label: "Mittel" },
-            { value: "gross", label: "Groß" }
-          ]
-        }]
-      : []),
     {
       key: "futterart",
       label: "Futterart",

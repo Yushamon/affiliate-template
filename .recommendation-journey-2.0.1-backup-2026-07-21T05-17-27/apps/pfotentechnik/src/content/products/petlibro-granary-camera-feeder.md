@@ -62,9 +62,6 @@ specs:
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  animal: ["cat", "dog"]
-  petSize: ["small", "medium"]
 faq:
   - { question: "Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?", answer: "Nein. Das Modell ist nur für Trockenfutter vorgesehen." }
   - { question: "Ist die Videoaufzeichnung kostenlos?", answer: "Livebild und Grundfunktionen sind appbasiert. Für Cloud-Aufzeichnung und längere Speicherung können kostenpflichtige Dienste nötig sein." }

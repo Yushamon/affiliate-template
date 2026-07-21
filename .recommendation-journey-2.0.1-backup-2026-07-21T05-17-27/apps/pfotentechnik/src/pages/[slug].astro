@@ -160,49 +160,6 @@ const comparisonExperienceConfig =
 const comparisonProductEntries = comparisonProducts
   .map((slug) => productBySlug.get(slug))
   .filter((product): product is (typeof products)[number] => Boolean(product));
-
-const recommendationJourney = page.data.recommendationJourney;
-
-const matchesRecommendationJourney = (product: (typeof products)[number]) => {
-  if (!recommendationJourney || recommendationJourney.mode === "off") return true;
-  const filters = product.data.comparisonFilters;
-  const animalMatches = recommendationJourney.animal
-    ? (filters?.animal ?? []).includes(recommendationJourney.animal)
-    : true;
-  const sizeMatches = recommendationJourney.petSize
-    ? (filters?.petSize ?? []).includes(recommendationJourney.petSize)
-    : true;
-  return animalMatches && sizeMatches;
-};
-
-const journeyProducts = comparisonProductEntries
-  .filter(matchesRecommendationJourney)
-  .sort((a, b) =>
-    (b.data.score ?? toEditorialScore(b.data.rating, 5)) -
-    (a.data.score ?? toEditorialScore(a.data.rating, 5))
-  );
-
-const journeyTopProduct = journeyProducts[0];
-
-const journeyComparisonHref = recommendationJourney
-  ? `${recommendationJourney.comparisonHref}${
-      recommendationJourney.comparisonHref.includes("?") ? "&" : "?"
-    }${[
-      recommendationJourney.animal
-        ? `filter-tier=${recommendationJourney.animal === "dog" ? "hund" : "katze"}`
-        : "",
-      recommendationJourney.petSize
-        ? `filter-tiergroesse=${
-            recommendationJourney.petSize === "small"
-              ? "klein"
-              : recommendationJourney.petSize === "medium"
-                ? "mittel"
-                : "gross"
-          }`
-        : ""
-    ].filter(Boolean).join("&")}#direktvergleich`
-  : undefined;
-
 const closingProduct = assembledPage.closingCta
   ? productBySlug.get(assembledPage.closingCta.productKey)
   : undefined;
@@ -305,53 +262,6 @@ const relatedItems = relatedEntries.map((entry) => ({
       products={products}
     />
     {
-      recommendationJourney && (
-        <section class="recommendation-journey-state">
-          {
-            journeyTopProduct ? (
-              <>
-                <div class="ranking-section-header">
-                  <p class="ranking-eyebrow">Top-Empfehlung</p>
-                  <h2>Die passendste dokumentierte Auswahl</h2>
-                  <p>Dieses Modell erfüllt die hinterlegten Eignungsfilter.</p>
-                </div>
-                <a class="decision-product-card" href={`/produkt/${journeyTopProduct.data.slug}/`}>
-                  <OptimizedImage
-                    src={journeyTopProduct.data.images.thumbnail?.src ?? journeyTopProduct.data.images.hero.src}
-                    alt={journeyTopProduct.data.images.thumbnail?.alt ?? journeyTopProduct.data.images.hero.alt}
-                    width={480}
-                    height={360}
-                    layout="constrained"
-                  />
-                  <div>
-                    <p>{journeyTopProduct.data.manufacturer.name} · {journeyTopProduct.data.score ?? toEditorialScore(journeyTopProduct.data.rating, 5)} Punkte</p>
-                    <h3>{journeyTopProduct.data.title}</h3>
-                    <p>{journeyTopProduct.data.recommendation}</p>
-                    <strong>Produktdetails lesen</strong>
-                  </div>
-                </a>
-              </>
-            ) : (
-              <div class="recommendation-journey-empty">
-                <p class="ranking-eyebrow">Redaktionelle Einordnung</p>
-                <h2>{recommendationJourney.emptyTitle}</h2>
-                <p>{recommendationJourney.emptyText}</p>
-              </div>
-            )
-          }
-          {
-            journeyComparisonHref && (
-              <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
-                <span>{recommendationJourney.comparisonLabel}</span>
-                <strong>Mit vorausgewählten Filtern öffnen →</strong>
-              </a>
-            )
-          }
-        </section>
-      )
-    }
-
-    {
       topDecisionRecommendation && topDecisionProduct && (
         <section
           class={`decision-top-recommendation decision-top-recommendation-${decisionThemeColor}`}
@@ -406,7 +316,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       />
     </AutoLinkContent>
     {
-      !recommendationJourney && comparisonProducts.length > 1 && (
+      comparisonProducts.length > 1 && (
         <div class="decision-comparison-intro">
           <h2>Weitere passende Empfehlungen</h2>
           <p>
@@ -418,7 +328,7 @@ const relatedItems = relatedEntries.map((entry) => ({
       )
     }
     {
-      !recommendationJourney && comparisonProductEntries.length > 0 && comparisonExperienceConfig && (
+      comparisonProductEntries.length > 0 && comparisonExperienceConfig && (
         <section class="decision-template-section">
           <h2>{comparisonExperienceConfig.title}</h2>
           <p>{comparisonExperienceConfig.text}</p>
@@ -726,39 +636,6 @@ const relatedItems = relatedEntries.map((entry) => ({
     .decision-template-card h3 {
       overflow-wrap: anywhere;
       font-size: 20px;
-    }
-  }
-</style>
-
-<style>
-  .recommendation-journey-state {
-    display: grid;
-    gap: 1.25rem;
-    margin-block: 2.5rem;
-    padding: clamp(1.25rem, 4vw, 2rem);
-    border: 1px solid var(--pt-theme-border, #d9e2e7);
-    border-radius: 1.5rem;
-    background: var(--pt-theme-surface, #fff);
-  }
-  .recommendation-journey-empty { max-width: 62ch; }
-  .recommendation-journey-comparison {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-    padding: 1rem 1.1rem;
-    border-radius: 1rem;
-    background: var(--pt-theme-accent-soft, #eaf8f0);
-    color: var(--pt-theme-text, #12342f);
-    text-decoration: none;
-  }
-  .recommendation-journey-comparison strong {
-    color: var(--pt-theme-accent, #238657);
-  }
-  @media (max-width: 640px) {
-    .recommendation-journey-comparison {
-      align-items: flex-start;
-      flex-direction: column;
     }
   }
 </style>

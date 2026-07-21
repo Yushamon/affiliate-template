@@ -295,20 +295,6 @@ export const createPageContentSchema = (image: ImageFunction) =>
       ])
       .optional(),
 
-    recommendationJourney: z
-      .object({
-        mode: z.enum(["filtered", "off"]).default("filtered"),
-        animal: z.enum(["dog", "cat"]).optional(),
-        petSize: z.enum(["small", "medium", "large"]).optional(),
-        comparisonHref: z.string(),
-        comparisonLabel: z.string().default("Passende Modelle vergleichen"),
-        emptyTitle: z.string().default("Aktuell keine uneingeschränkte Top-Empfehlung"),
-        emptyText: z.string().default(
-          "Im gepflegten Datenbestand ist derzeit kein Modell eindeutig für diesen Anwendungsfall dokumentiert."
-        )
-      })
-      .optional(),
-
     comparisonRecommendation: z
       .object({
         title: z.string(),

@@ -138,9 +138,6 @@ specs:
     value: "Katzen und kleine bis mittelgroße Hunde"
   - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  animal: ["cat", "dog"]
-  petSize: ["small", "medium"]
 faq:
   - question: "Kann der PETLIBRO Granary Nassfutter ausgeben?"
     answer: "Nein. PETLIBRO gibt das Modell ausschließlich für Trockenfutter frei."

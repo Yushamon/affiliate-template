@@ -147,26 +147,6 @@ const {
         return selected;
       };
 
-      const applyUrlFilters = () => {
-        const params = new URLSearchParams(window.location.search);
-
-        inputs.forEach((input) => {
-          if (!(input instanceof HTMLInputElement)) return;
-          const key = input.dataset.filterKey;
-          if (!key) return;
-
-          const values = [
-            ...params.getAll(`filter-${key}`),
-            ...params.getAll(key)
-          ]
-            .flatMap((value) => value.split(","))
-            .map((value) => value.trim())
-            .filter(Boolean);
-
-          if (values.includes(input.value)) input.checked = true;
-        });
-      };
-
       const applyState = () => {
         const selected = getSelected();
 
@@ -279,7 +259,6 @@ const {
         applyState();
       });
 
-      applyUrlFilters();
       applyState();
     });
 </script>
