@@ -180,6 +180,16 @@ faq:
     answer: "Er kann Hinweise auf Futterreste oder Gewichtsveränderungen im Napf liefern. Er beweist aber nicht sicher, welches Tier wie viel gefressen hat."
   - question: "Muss ich nach einem Futterwechsel neu kalibrieren?"
     answer: "Ja. Andere Krokettengröße, Form und Dichte können das Gewicht pro Förderschritt verändern, auch wenn dieselbe App-Stufe eingestellt bleibt."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

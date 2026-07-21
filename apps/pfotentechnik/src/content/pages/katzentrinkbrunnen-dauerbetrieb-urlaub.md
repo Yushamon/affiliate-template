@@ -22,6 +22,16 @@ premiumBlocks:
 faq:
   - { question: "Soll ein Katzenbrunnen nachts ausgeschaltet werden?", answer: "Das hängt vom vorgesehenen Betriebsmodus ab. Häufiges Ausschalten kann Akzeptanz und Wasserzirkulation verändern. Die Herstelleranleitung ist maßgeblich." }
   - { question: "Reicht ein großer Brunnen während des Urlaubs?", answer: "Nein. Tank, Pumpe, Strom und Wasserqualität können ausfallen. Eine Betreuungsperson und mehrere unabhängige Wasserstellen bleiben notwendig." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

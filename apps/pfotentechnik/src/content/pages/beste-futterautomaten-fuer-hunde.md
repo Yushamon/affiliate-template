@@ -40,6 +40,15 @@ faq:
     answer: "Manche Hersteller geben Modelle für Katzen und kleinere Hunde frei. Bei größeren Hunden können Menge, Napf und Stabilität unpassend sein."
   - question: "Ist ein 6-Liter-Behälter automatisch besser für große Hunde?"
     answer: "Nein. Vorratsvolumen sagt nichts über maximale Mahlzeit, Krokettengröße oder Gehäusestabilität aus."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Für Hunde ist die mechanische Passform entscheidend. Eine lange Funktionsliste gleicht einen zu kleinen Napf oder unzureichende Portionsmenge nicht aus.

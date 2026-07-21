@@ -205,6 +205,11 @@ faq:
     answer: "Führe das ausgeschaltete Gerät zunächst in der vertrauten Umgebung ein und lass dem Tier eine echte Ausweichmöglichkeit. Geräusche, Bewegung und neue Oberflächen werden schrittweise ergänzt. Verknüpfe freiwilliges Erkunden positiv, ohne Futter oder Wasser als Druckmittel zu entziehen. Erst wenn die Nutzung stabil ist, darf eine alte Lösung entfallen. Bei Angst, Meideverhalten oder Konflikten zwischen mehreren Tieren wird ein Schritt zurückgegangen."
   - question: "Welche smarte Haustiertechnik sollte ich zuerst kaufen?"
     answer: "Beginne nicht mit einer Gerätekategorie, sondern mit dem größten konkreten Problem. Unregelmäßige Mahlzeiten führen zur Fütterung, ungeeignete Wasserstellen zum Trinksystem, Freigang zur Ortung oder Zugangskontrolle. Formuliere vorher ein messbares Erfolgskriterium und wähle die technisch einfachste Lösung, die es erfüllt. Bleibt kein klarer Nutzen, ist kein Kauf häufig die bessere Entscheidung."
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Smarte Haustiertechnik kann füttern, Wasser bewegen, Zugänge regeln, Aufenthaltsorte melden oder Nutzungsmuster dokumentieren. Sie ist dann hilfreich, wenn sie eine klar definierte Aufgabe **zuverlässiger, sicherer oder nachvollziehbarer** macht. Eine App, Kamera oder Cloud-Anbindung ist dagegen kein Selbstzweck.

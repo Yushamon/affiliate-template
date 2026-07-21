@@ -38,6 +38,16 @@ faq:
     answer: "Hitze, mehr Trockenfutter oder höhere Aktivität können die Trinkmenge steigern. Ein deutlicher und anhaltender Anstieg kann aber auch bei Nierenproblemen, Diabetes oder einer Schilddrüsenerkrankung auftreten und sollte tierärztlich abgeklärt werden."
   - question: "Hilft ein Trinkbrunnen jeder Katze?"
     answer: "Nein. Manche Katzen trinken lieber aus bewegtem Wasser, andere bevorzugen einen ruhigen, breiten Napf. Ein Trinkbrunnen ist eine Option, aber keine Garantie für eine höhere Wasseraufnahme."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

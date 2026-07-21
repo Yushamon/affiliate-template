@@ -173,6 +173,16 @@ faq:
     answer: "Ja, sofern beide Katzen entspannt sind und dieselbe Ration erhalten. Die Schalen sollten ausreichend Abstand haben. Eine sichere Zuordnung der gefressenen Menge ist trotzdem nicht gewährleistet."
   - question: "Ist ein Mikrochip-Futterautomat stressig?"
     answer: "Manche Katzen müssen sich an Deckelbewegung und Geräusch gewöhnen. Eine langsame Einführung mit offenem Deckel, positiver Verstärkung und mehreren kurzen Trainingsschritten ist sinnvoll."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

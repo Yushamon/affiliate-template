@@ -40,6 +40,16 @@ faq:
     answer: "Bei strikt getrennten Rationen ist häufig ein eigener kontrollierter Futterplatz pro Tier nötig. Die konkrete Anordnung sollte stressarm getestet werden."
   - question: "Kann ein Dual-Hopper zwei Futtersorten trennen?"
     answer: "Ja, ein getrenntes Kammersystem kann zwei Sorten bevorraten. Ohne Zugangskontrolle bleibt aber offen, welche Katze daraus frisst."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Zwei Katzen stellen nicht nur eine Mengen-, sondern eine Zugangsfrage. Beobachte Fresstempo, Schalenwechsel und Ausweichverhalten, bevor Technik gewählt wird.

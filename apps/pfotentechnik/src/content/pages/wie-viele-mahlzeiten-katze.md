@@ -54,6 +54,16 @@ faq:
     answer: "Nicht automatisch. Mehrere kleine Mahlzeiten können Verhalten und Routine unterstützen, aber die passende Gesamtenergie bleibt entscheidend. Eine Studie zum Gewichtsmanagement fand bei sechs statt zwei Mahlzeiten keinen automatisch schnelleren Gewichtsverlust."
   - question: "Kann Trockenfutter den ganzen Tag frei stehen?"
     answer: "Freier Zugang kann bei manchen Katzen funktionieren, erschwert aber Mengenkontrolle und Zuordnung im Mehrkatzenhaushalt. Körperzustand, Verhalten und Tagesmenge sollten regelmäßig überprüft werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Die Frage nach der Mahlzeitenzahl klingt einfach, wird aber oft mit der Tagesration verwechselt. Eine Katze kann dieselbe angemessene Tagesmenge in zwei, vier oder mehreren kleinen Mahlzeiten erhalten. Die Verteilung verändert nicht automatisch den Energiebedarf. Sie soll Verhalten, Verdauung, Alltag und kontrollierten Zugang sinnvoll zusammenbringen.

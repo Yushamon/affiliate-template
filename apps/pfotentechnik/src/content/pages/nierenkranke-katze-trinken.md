@@ -23,6 +23,16 @@ related: { tags: [katze, niere, wasser, trinken, tierarzt], limit: 4 }
 faq:
   - { question: "Hilft ein Trinkbrunnen bei Nierenerkrankung?", answer: "Er kann eine zusätzliche akzeptierte Wasserquelle sein, behandelt die Erkrankung aber nicht. Manche Katzen bevorzugen fließendes Wasser, andere einen stillen Napf." }
   - { question: "Darf Wasser eingeschränkt werden, wenn die Katze viel trinkt?", answer: "Nein. Bei Nierenerkrankungen muss frisches Wasser frei verfügbar sein. Veränderungen gehören mit der behandelnden Tierarztpraxis besprochen." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Wichtig vorweg

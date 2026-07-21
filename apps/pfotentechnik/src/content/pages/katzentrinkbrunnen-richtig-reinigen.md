@@ -21,6 +21,16 @@ related: { tags: [trinkbrunnen, hygiene, biofilm], limit: 4 }
 faq:
   - { question: "Wie oft sollte ein Katzenbrunnen gereinigt werden?", answer: "Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten oder sichtbarem Belag ist sie häufiger nötig." }
   - { question: "Darf die Pumpe in die Spülmaschine?", answer: "Nein. Elektrische Pumpenteile werden nach Anleitung von Hand gereinigt. Nur ausdrücklich spülmaschinengeeignete, nicht elektrische Teile dürfen in die Maschine." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Kurzantwort

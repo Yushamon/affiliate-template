@@ -35,6 +35,16 @@ faq:
   - { question: "Wann reicht ein Trinkprotokoll nicht aus?", answer: "Bei Schwäche, Kollaps, wiederholtem Erbrechen, deutlichem Gewichtsverlust oder stark verändertem Urinabsatz sollte nicht erst tagelang gemessen werden. Dann ist eine zeitnahe tierärztliche Untersuchung wichtiger. Das Protokoll unterstützt Anamnese und Diagnostik, ersetzt sie aber nicht." }
   - { question: "Was gilt bei einem Welpen?", answer: "Ein Welpe kann bei Erbrechen oder Durchfall schneller Flüssigkeit verlieren. Wenn er matt wirkt, nicht frisst oder Wasser nicht bei sich behält, sollte er rasch tierärztlich beurteilt werden. Eine Messung darf die Untersuchung nicht verzögern und Wasser bleibt frei verfügbar." }
   - { question: "Was gilt bei einem Senior-Hund?", answer: "Bei einem Senior können Nieren-, Hormon- oder Stoffwechselerkrankungen sowie Medikamente die Trinkmenge verändern. Dokumentiere neben Wasser und Futter besonders Urinabsatz, Gewicht und Allgemeinzustand. Eine neue, anhaltende Veränderung sollte auch ohne dramatische Symptome besprochen werden." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

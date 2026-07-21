@@ -35,6 +35,15 @@ faq:
     answer: "Meist nicht. Motor, Gehäuse, Futter und Untergrund beeinflussen das Geräusch. Herstellerangaben sind nur vergleichbar, wenn Messabstand und Bedingungen genannt werden."
   - question: "Warum erschrickt meine Katze vor dem Automaten?"
     answer: "Plötzliches Motorbrummen und klappernde Kroketten können ungewohnt sein. Eine langsame Gewöhnung mit ausgeschaltetem Gerät und beaufsichtigten Testausgaben hilft."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

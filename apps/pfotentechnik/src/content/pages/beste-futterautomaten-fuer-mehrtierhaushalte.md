@@ -53,6 +53,15 @@ faq:
 
   - question: "Sind Chip-Futterautomaten sinnvoll?"
     answer: "Bei stark unterschiedlichem Fressverhalten können Chip-Futterautomaten eine gute Lösung sein."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 In Haushalten mit mehreren Haustieren entstehen oft ganz andere Anforderungen als bei einem einzelnen Tier. Ein geeigneter Futterautomat sollte nicht nur zuverlässig arbeiten, sondern auch Futterneid vermeiden und regelmäßige Mahlzeiten unterstützen.

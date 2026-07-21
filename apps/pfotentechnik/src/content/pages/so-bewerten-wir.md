@@ -34,6 +34,15 @@ faq:
     answer: "Nein. Wir unterscheiden eigene praktische Beobachtungen, technische Produktanalyse und ausgewertete Nutzererfahrungen. Wenn kein eigener Langzeittest vorliegt, stellen wir das nicht anders dar."
   - question: "Warum können sich Bewertungen ändern?"
     answer: "Apps, Firmware, Lieferumfang, Produktvarianten und dokumentierte Langzeiterfahrungen können sich verändern. Deshalb werden Einordnungen bei neuen belastbaren Informationen aktualisiert."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 PfotenTechnik soll zuerst bei einer konkreten Entscheidung helfen. Eine hohe Bewertung entsteht deshalb nicht aus der längsten Funktionsliste, sondern aus der Frage, wie zuverlässig und sinnvoll ein Gerät im Alltag mit Hund oder Katze arbeitet.

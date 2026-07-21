@@ -45,6 +45,16 @@ faq:
     answer: "Trinkflächen und Behälter sollten je nach Nutzung mehrmals pro Woche gereinigt werden. Pumpe, Leitungen und schwer zugängliche Stellen gehören regelmäßig dazu. Filter werden nach Herstellerangabe gewechselt, ersetzen aber keine Reinigung."
   - question: "Welches Material ist für einen Katzenbrunnen am besten?"
     answer: "Edelstahl und glasierte Keramik sind robust und meist leicht zu reinigen. Kunststoff kann ebenfalls funktionieren, sollte aber kratzfrei bleiben und regelmäßig auf Ablagerungen geprüft werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

@@ -55,6 +55,10 @@ faq:
     answer: "Bei manchen Modellen lässt sich eine Mahlzeit aus mehreren Förderschritten zusammensetzen. Ob die resultierende Menge reicht und zuverlässig ausgegeben wird, muss mit dem eigenen Futter getestet werden."
   - question: "Ist ein großer Vorratsbehälter automatisch für große Hunde geeignet?"
     answer: "Nein. Behältervolumen sagt wenig über maximale Mahlzeit, Krokettengröße, Napfhöhe oder Gehäusestabilität aus. Alle Punkte müssen separat passen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
 ---
 
 Große Hunde stellen an einen Futterautomaten andere mechanische Anforderungen als Katzen oder kleine Hunde. Ein Behälter kann mehrere Liter fassen und trotzdem nur kleine Einzelschritte ausgeben. Ein breiter Hundekopf passt möglicherweise schlecht an einen kompakten Napf, und ein leichtes Gehäuse lässt sich verschieben. Deshalb ist die sichtbare Größe des Produkts kein ausreichendes Auswahlkriterium.

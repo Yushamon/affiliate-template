@@ -62,6 +62,15 @@ faq:
 
   - question: "Ist ein Slow Feeder sinnvoller?"
     answer: "Bei Hunden oder Katzen, die ihr Futter innerhalb weniger Sekunden aufnehmen, ist ein Slow Feeder häufig die effektivere Lösung."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Viele Hunde und Katzen verschlingen ihr Futter innerhalb kürzester Zeit. Ein Futterautomat kann dabei helfen, die tägliche Futtermenge auf mehrere kleinere Mahlzeiten zu verteilen und dadurch längere Fresspausen zu vermeiden.

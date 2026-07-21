@@ -59,6 +59,15 @@ faq:
 
   - question: "Ist Edelstahl für Hunde und Katzen geeignet?"
     answer: "Ja. Viele Tierhalter bevorzugen Edelstahlnäpfe wegen ihrer Robustheit und einfachen Reinigung."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein sauberer Futternapf trägt wesentlich zur Hygiene im Alltag bei. Besonders Edelstahlnäpfe lassen sich schnell reinigen und gelten als langlebige Lösung für Hunde und Katzen.

@@ -192,6 +192,15 @@ faq:
     answer: "Portionsstufen sind meist keine festen Grammwerte. Form, Größe und Dichte der Kroketten beeinflussen die Ausgabe. Mehrere Testportionen sollten nachgewogen werden."
   - question: "Kann Nassfutter in einem normalen Hunde-Futterautomaten verwendet werden?"
     answer: "Nein. Klassische Vorratsautomaten sind für Trockenfutter vorgesehen. Für Nassfutter kommen vorbereitete Fachautomaten mit begrenzter Standzeit infrage."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

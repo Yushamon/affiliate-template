@@ -70,6 +70,16 @@ premiumBlocks:
       - "Futterart und gefressene Menge"
       - "Erbrechen, Durchfall oder Verstopfung"
       - "Anzahl und Größe der Urinklumpen"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

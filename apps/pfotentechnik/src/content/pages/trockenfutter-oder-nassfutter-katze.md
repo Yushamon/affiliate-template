@@ -69,6 +69,16 @@ premiumBlocks:
       - "Kalorien pro Tagesration bekannt"
       - "Katze frisst es zuverlässig"
       - "Gewicht und Wasseraufnahme werden kontrolliert"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

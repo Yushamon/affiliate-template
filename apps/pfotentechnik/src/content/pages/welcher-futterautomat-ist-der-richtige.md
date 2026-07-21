@@ -169,6 +169,15 @@ faq:
     answer: "Viele App-Modelle führen lokal gespeicherte Zeitpläne weiter aus. Fernzugriff und Benachrichtigungen können ausfallen."
   - question: "Kann ein Futterautomat im Urlaub die Betreuung ersetzen?"
     answer: "Nein. Eine Betreuungsperson muss weiterhin Tier, Wasser, Futter, Ausscheidungen, Raumtemperatur und Technik regelmäßig vor Ort prüfen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

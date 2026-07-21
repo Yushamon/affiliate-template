@@ -51,6 +51,16 @@ faq:
     answer: "Ein Futterautomat kann abgewogene Portionen zu festen Zeiten ausgeben. Er berechnet aber weder den Kalorienbedarf noch verhindert er in jedem Mehrkatzenhaushalt, dass die falsche Katze frisst."
   - question: "Wie oft sollte ich meine Katze wiegen?"
     answer: "Zur Vorbeugung reicht oft eine regelmäßige Kontrolle unter vergleichbaren Bedingungen, etwa alle zwei bis vier Wochen. Bei einer geplanten Gewichtsabnahme legt die Tierarztpraxis passende Kontrollintervalle fest."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

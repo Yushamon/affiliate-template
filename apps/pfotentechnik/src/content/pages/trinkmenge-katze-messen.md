@@ -23,6 +23,16 @@ related: { tags: [katze, trinkmenge, wasser, gesundheit], limit: 4 }
 faq:
   - { question: "Wie genau sind Smart-Trinkbrunnen?", answer: "Sie können Nutzungstrends zeigen. Verdunstung, Verschütten, Reinigung und mehrere Tiere begrenzen die Aussagekraft; ohne sichere Tiererkennung ist keine individuelle Zuordnung möglich." }
   - { question: "Welche Trinkmenge ist normal?", answer: "Der Gesamtbedarf hängt unter anderem von Gewicht, Futterfeuchte, Temperatur, Aktivität und Gesundheit ab. Eine einzelne Zahl ersetzt keine tierärztliche Einschätzung." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Warum Messen sinnvoll sein kann

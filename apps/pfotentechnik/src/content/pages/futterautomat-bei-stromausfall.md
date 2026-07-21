@@ -38,6 +38,15 @@ faq:
     answer: "Nur wenn das Modell Parallelbetrieb ausdrücklich unterstützt. Manche Geräte verwenden Batterien alternativ zum Netzteil, andere schalten automatisch um."
   - question: "Wie teste ich den Notbetrieb?"
     answer: "Richten Sie einen Testplan ein, setzen Sie frische Batterien ein und trennen Sie kontrolliert das Netzteil, während Sie anwesend sind. Prüfen Sie Ausgabe, Uhrzeit und Fehlermeldungen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

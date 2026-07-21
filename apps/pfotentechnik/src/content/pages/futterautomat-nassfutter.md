@@ -173,6 +173,16 @@ faq:
     answer: "Nur als Unterstützung einer Betreuungsperson. Fächer müssen gereinigt, Kühlakkus gewechselt und neue Portionen hygienisch vorbereitet werden."
   - question: "Kann ich Nass- und Trockenfutter im selben Fachautomaten verwenden?"
     answer: "Ja, sofern der Hersteller beide Futterarten erlaubt. Die hygienischen Anforderungen richten sich dann nach dem empfindlicheren Nassfutter."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

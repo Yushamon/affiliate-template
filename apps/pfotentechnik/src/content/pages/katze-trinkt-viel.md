@@ -80,6 +80,16 @@ premiumBlocks:
       - "Futterart und Futtermenge"
       - "Anzahl und Größe der Urinklumpen"
       - "Gewicht, Appetit und Medikamente"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

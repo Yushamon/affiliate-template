@@ -35,6 +35,17 @@ faq:
   - { question: "Kann ein Trinkbrunnen den Bedarf decken?", answer: "Ein Brunnen kann eine zusätzliche, attraktive Wasserstelle sein, deckt den Bedarf aber nicht von selbst. Entscheidend sind eine passende Trinkhöhe, ausreichend Volumen, Standfestigkeit und konsequente Reinigung. Ein normaler Napf sollte während der Gewöhnung als Alternative verfügbar bleiben." }
   - { question: "Wie genau sind Wasserbedarfs-Tabellen?", answer: "Sie liefern nur einen Orientierungsbereich für gesunde Tiere. Individuelle Unterschiede, Futterfeuchte und Wasserverlust durch Bewegung oder Erkrankungen sind darin nicht vollständig abgebildet. Aussagekräftiger sind eine mehrtägige Messung unter ähnlichen Bedingungen und die Abweichung vom persönlichen Normalwert." }
   - { question: "Wann sollte die Trinkmenge gemessen werden?", answer: "Messen ist sinnvoll, wenn das Trinkverhalten auffällig erscheint oder die Tierarztpraxis ein Protokoll empfiehlt. Dokumentiere mehrere vollständige Tage, Futterart, Wetter, Aktivität, Medikamente und Urinabsatz. Rationiere Wasser niemals, um einen scheinbar genaueren Messwert zu erhalten." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: small
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

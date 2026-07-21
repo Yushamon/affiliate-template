@@ -25,6 +25,16 @@ premiumBlocks:
 faq:
   - { question: "Reicht ein Trinkbrunnen für zwei Katzen?", answer: "Er kann genutzt werden, sollte aber nicht die einzige Quelle sein. Mehrere räumlich getrennte Wasserstellen reduzieren Konkurrenz und sichern Ausfälle ab." }
   - { question: "Müssen Wasserstellen in jedem Zimmer stehen?", answer: "Nein. Wichtig sind ruhige, gut erreichbare und voneinander getrennte Standorte auf den tatsächlich genutzten Ebenen der Wohnung." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

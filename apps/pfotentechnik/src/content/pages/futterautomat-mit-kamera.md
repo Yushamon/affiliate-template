@@ -85,6 +85,15 @@ faq:
     answer: "Es kann für kurze Ansprache nützlich sein. Manche Tiere reagieren jedoch irritiert auf eine Stimme aus dem Gerät und sollten langsam daran gewöhnt werden."
   - question: "Wie schütze ich meine Privatsphäre?"
     answer: "Richte die Kamera nur auf den Futterplatz, verwende ein starkes Passwort, halte Firmware aktuell und prüfe Cloud-Speicherung, Freigaben und Mikrofonrechte."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

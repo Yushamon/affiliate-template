@@ -77,6 +77,16 @@ faq:
     answer: "Das hängt von Deckel, Auslass und Standfestigkeit ab. Bei sehr futtermotivierten Katzen sollte das Gerät zunächst unter Beobachtung getestet werden."
   - question: "Ist eine Kamera notwendig?"
     answer: "Nein. Sie kann den Futterplatz sichtbar machen, ersetzt aber weder eine zuverlässige Ausgabe noch die persönliche Kontrolle."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Katzen profitieren von gleichmäßigen Abläufen, stellen an einen Automaten aber besondere Anforderungen: Portionen sind oft klein, manche Tiere reagieren sensibel auf Motorgeräusche und in Mehrkatzenhaushalten ist nicht automatisch klar, wer tatsächlich gefressen hat.

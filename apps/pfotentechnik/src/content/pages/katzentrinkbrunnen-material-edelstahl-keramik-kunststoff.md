@@ -22,6 +22,16 @@ premiumBlocks:
 faq:
   - { question: "Ist Edelstahl immer hygienischer?", answer: "Edelstahl ist glatt und robust, bleibt aber nur bei regelmäßiger vollständiger Reinigung hygienisch. Pumpe und Kunststoff-Innenteile bleiben ebenso relevant." }
   - { question: "Ist Keramik für Katzen sicher?", answer: "Hochwertige, unbeschädigte und lebensmittelechte Glasur kann gut geeignet sein. Abplatzer und Risse sind ein Austauschgrund." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

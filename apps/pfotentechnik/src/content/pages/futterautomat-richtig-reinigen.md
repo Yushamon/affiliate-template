@@ -80,6 +80,15 @@ premiumBlocks:
       - "Keine klebrigen Fettfilme"
       - "Alle Teile vollständig trocken"
       - "Rotor, Deckel und Dichtungen korrekt eingesetzt"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 ## Die kurze Antwort
 

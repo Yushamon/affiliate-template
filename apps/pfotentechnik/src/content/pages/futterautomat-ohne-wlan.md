@@ -55,6 +55,15 @@ faq:
     answer: "Er hat weniger Netzwerkabhängigkeiten, kann aber weiterhin durch leere Batterien, falsche Uhrzeit oder mechanische Blockaden ausfallen. Ausfallsicherheit entsteht durch Tests, regelmäßige Kontrolle und eine passende Stromreserve."
   - question: "Kann ich einen App-Futterautomaten ohne WLAN verwenden?"
     answer: "Das hängt vom Modell ab. Manche Geräte benötigen WLAN nur für Einrichtung und Fernfunktionen, andere setzen ein Konto oder eine Verbindung voraus. Anleitung und Offline-Verhalten sollten vor dem Kauf geprüft werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein Futterautomat ohne WLAN wirkt im Vergleich zu App-Modellen zunächst schlicht. Für einen stabilen Tagesplan kann genau das ein Vorteil sein. Uhrzeiten und Portionen werden am Gerät eingestellt, der Automat benötigt kein Benutzerkonto und sendet keine Daten an einen Herstellerdienst. Diese Einfachheit beseitigt jedoch nicht den Bedarf an sorgfältiger Einrichtung und Kontrolle.

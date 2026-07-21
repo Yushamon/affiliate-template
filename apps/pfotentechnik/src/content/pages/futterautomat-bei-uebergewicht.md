@@ -183,6 +183,15 @@ faq:
     answer: "Die passenden Abstände hängen vom Tier und vom Gewichtsplan ab. Sie sollten fachlich festgelegt und unter vergleichbaren Bedingungen eingehalten werden."
   - question: "Was tun, wenn das Tier plötzlich nicht frisst?"
     answer: "Futterverweigerung, Erbrechen, Apathie oder schneller Gewichtsverlust sollten fachlich abgeklärt werden. Die Portionsstufe einfach zu erhöhen oder zu senken reicht nicht."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

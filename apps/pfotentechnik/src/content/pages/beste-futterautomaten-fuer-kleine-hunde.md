@@ -59,6 +59,17 @@ faq:
 
   - question: "Sind große Futterbehälter für kleine Hunde sinnvoll?"
     answer: "Nur bedingt. Für kleine Hunde stehen eine exakte Portionierung und eine einfache Reinigung meist deutlich stärker im Vordergrund als ein möglichst großer Vorratsbehälter."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Kleine Hunderassen wie Chihuahua, Yorkshire Terrier, Malteser oder Zwergspitz benötigen häufig deutlich kleinere Portionen als große Hunde. Deshalb unterscheiden sich die Anforderungen an einen Futterautomaten oft deutlich. Eine zuverlässige Portionierung ist hier meist wichtiger als eine besonders große Futterkapazität.

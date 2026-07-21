@@ -52,6 +52,15 @@ faq:
 
   - question: "Lohnt sich ein teureres Modell?"
     answer: "Wenn Funktionen wie Kamera, umfangreiche App-Steuerung oder größere Futterbehälter benötigt werden, kann ein höherpreisiges Modell sinnvoll sein."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein guter Futterautomat muss nicht teuer sein. Viele Modelle unter 100 Euro bieten bereits eine zuverlässige Portionierung, einfache Bedienung und eine gute Alltagstauglichkeit. Entscheidend ist, dass die wichtigsten Funktionen zuverlässig arbeiten.

@@ -102,6 +102,17 @@ premiumBlocks:
       - "Futterart und geschätztes Wasser aus dem Futter"
       - "Erbrechen, Durchfall, Hecheln und Urinmenge"
       - "Medikamente, Vorerkrankungen und Temperaturbelastung"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

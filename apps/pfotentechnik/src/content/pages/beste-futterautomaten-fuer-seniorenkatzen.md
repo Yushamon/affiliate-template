@@ -51,6 +51,16 @@ faq:
 
   - question: "Ist ein Futterautomat für Nassfutter geeignet?"
     answer: "Viele klassische Automaten sind für Trockenfutter ausgelegt. Für Nassfutter können spezielle Modelle sinnvoll sein."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Mit zunehmendem Alter verändern sich häufig die Ernährungsgewohnheiten von Katzen. Viele Senioren profitieren von kleineren, regelmäßigeren Mahlzeiten. Ein passender Futterautomat kann dabei helfen, feste Routinen zuverlässig einzuhalten.

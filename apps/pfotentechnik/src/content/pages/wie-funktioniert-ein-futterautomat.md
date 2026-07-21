@@ -56,6 +56,15 @@ faq:
     answer: "Viele Modelle führen lokal gespeicherte Zeitpläne ohne aktive Internetverbindung weiter aus. App-Befehle, Protokolle und Benachrichtigungen können dann ausfallen. Das konkrete Verhalten muss in der Anleitung des jeweiligen Modells geprüft werden."
   - question: "Gibt eine Portion immer dieselbe Grammzahl aus?"
     answer: "Nicht zwingend. Bei Vorratsautomaten beeinflussen Form, Größe und Dichte der Kroketten das Gewicht eines Förderschritts. Mehrere Testausgaben sollten deshalb mit dem tatsächlich verwendeten Futter gewogen werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein Futterautomat verbindet eine einfache Aufgabe mit mehreren technischen Abhängigkeiten: Futter lagern, eine Menge abteilen und sie zu einer bestimmten Zeit zugänglich machen. Ob das zuverlässig gelingt, hängt weniger von der App als von Mechanik, Futterart und Pflege ab. Wer die Baugruppen versteht, kann Herstellerangaben besser einordnen und erkennt schneller, welches System zum eigenen Alltag passt.

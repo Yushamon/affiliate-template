@@ -56,6 +56,15 @@ faq:
     answer: "Nein. Eine große Beobachtungsstudie fand Zusammenhänge mit bestimmten Gesundheitsmerkmalen, belegt aber keine Ursache und begründet keine allgemeine Umstellung. Der passende Rhythmus muss individuell beurteilt werden."
   - question: "Kann ein Futterautomat die Mahlzeit eines großen Hundes ausgeben?"
     answer: "Nur wenn das Modell ausdrücklich zu Ausgabemenge, Krokettengröße, Napf und Kraft des Hundes passt. Viele kompakte Geräte sind für Katzen und kleinere Hunde ausgelegt."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Eine feste Zahl wirkt praktisch, wird der Vielfalt von Hunden aber nicht gerecht. Ein Welpe im Wachstum, ein gesunder erwachsener Hund und ein Senior mit verändertem Appetit benötigen nicht denselben Plan. Auch Körpergröße, Aktivität und Futter unterscheiden sich. Deshalb ist die Mahlzeitenzahl das Ergebnis einer Beurteilung, nicht deren Ausgangspunkt.

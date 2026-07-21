@@ -97,6 +97,17 @@ premiumBlocks:
         title: "Aufnahme in Gramm und Prozent statt nach Gefühl erfassen"
       - label: "Verlauf"
         title: "Eine Mahlzeit ist anders als mehrere Tage mit 20 Prozent"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

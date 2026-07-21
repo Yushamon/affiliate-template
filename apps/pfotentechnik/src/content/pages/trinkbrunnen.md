@@ -187,6 +187,10 @@ faq:
     answer: "Bewegtes Wasser kann für manche Tiere attraktiver sein. Eine höhere Trinkmenge ist nicht garantiert. Futterart, Standort, Anzahl der Wasserstellen, Napfform und individuelle Vorlieben spielen ebenfalls eine Rolle."
   - question: "Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?"
     answer: "Nein. Besonders in Mehrtierhaushalten sind mehrere räumlich getrennte Wasserstellen sinnvoll. Ein Defekt, Stromausfall oder verschmutzter Brunnen darf nicht die einzige Trinkmöglichkeit unbrauchbar machen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
 ---
 
 ## Auswahlhilfe: Tier, Reinigung und Standort zuerst

@@ -61,6 +61,15 @@ faq:
 
   - question: "Kann ein Futterautomat mein Haustier tagsüber komplett versorgen?"
     answer: "Ein Futterautomat sorgt für regelmäßige Mahlzeiten, ersetzt aber keine Betreuung oder Beschäftigung."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Viele Hunde und Katzen verbringen werktags mehrere Stunden allein zu Hause. Ein automatischer Futterautomat hilft dabei, regelmäßige Mahlzeiten zuverlässig bereitzustellen und den Alltag planbarer zu gestalten.

@@ -35,6 +35,17 @@ faq:
   - { question: "Ist UV-C im Trinkbrunnen notwendig?", answer: "UV-C ist eine Zusatzfunktion, deren Nutzen von Bauart, Dosis, Durchfluss und Wartung abhängt. Sie ersetzt weder Filterwechsel noch die Reinigung von Biofilm. Vergleiche ein Modell deshalb zuerst nach Trinkgeometrie, Zerlegbarkeit und Ersatzteilversorgung und erst danach nach Zusatztechnik." }
   - { question: "Wie gewöhne ich den Hund an den Brunnen?", answer: "Stelle den ausgeschalteten Brunnen zunächst neben den vertrauten Napf, belohne ruhiges Erkunden und aktiviere ihn später kurz. Lass dem Hund eine Wahl und entferne den bisherigen Napf erst, wenn die Nutzung stabil ist. Zwang oder Durst als Motivation sind ungeeignet." }
   - { question: "Eignet sich ein Katzenbrunnen auch für Hunde?", answer: "Für kleine Hunde kann ein Katzenmodell passen, wenn Trinkfläche, Höhe und Kapazität ausreichen. Bei mittelgroßen und großen Hunden sind viele Modelle zu eng, leicht oder flach. Entscheidend ist die reale Geometrie; die Bezeichnung des Herstellers allein genügt nicht." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

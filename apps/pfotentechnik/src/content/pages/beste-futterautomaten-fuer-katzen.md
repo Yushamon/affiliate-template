@@ -45,6 +45,16 @@ faq:
     answer: "Mikrochipgesteuerte Modelle kontrollieren den Zugang besser als Doppelschalen oder Kameras."
   - question: "Wie viele Mahlzeiten sollte der Automat ausgeben?"
     answer: "Es gibt keine starre Zahl. Zuerst wird die passende Tagesration festgelegt und anschließend sinnvoll verteilt."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Katzen-Futterautomaten lösen unterschiedliche Aufgaben: Trockenfutter portionieren, Nassfutter zeitlich bereitstellen oder den Zugang in einem Mehrkatzenhaushalt kontrollieren. Ein einziges Modell ist deshalb nicht in jeder Kategorie die beste Wahl.

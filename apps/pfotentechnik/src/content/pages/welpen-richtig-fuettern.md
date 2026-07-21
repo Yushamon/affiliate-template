@@ -54,6 +54,17 @@ faq:
     answer: "Beides ist möglich, sofern die Gesamtration ausgewogen und als vollständiges Futter für Wachstum geeignet ist. Bei Mischfütterung müssen Kalorien aus beiden Futtersorten zusammen gerechnet werden."
   - question: "Wie lange sollte eine Futterumstellung dauern?"
     answer: "Sofern kein medizinischer Grund für einen sofortigen Wechsel besteht, wird neues Futter meist über fünf bis sieben Tage schrittweise untergemischt. Bei empfindlicher Verdauung kann eine langsamere Umstellung sinnvoll sein."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

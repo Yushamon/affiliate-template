@@ -70,6 +70,16 @@ premiumBlocks:
       - "angebotene und tatsächlich gefressene Menge"
       - "Erbrechen, Durchfall, Kot- und Urinabsatz"
       - "Medikamente, Erkrankungen und mögliche Fremdkörper"
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 ## Die kurze Antwort
 

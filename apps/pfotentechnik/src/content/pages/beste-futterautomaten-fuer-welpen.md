@@ -49,6 +49,17 @@ faq:
     answer: "Das hängt von Alter, Rasse und Tierarzt-Empfehlung ab. Viele Welpen erhalten mehrere kleine Mahlzeiten über den Tag verteilt."
   - question: "Kann ein Futterautomat die Betreuung ersetzen?"
     answer: "Nein. Ein Futterautomat unterstützt regelmäßige Fütterungszeiten, ersetzt aber keine Betreuung oder tierärztliche Beratung."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 

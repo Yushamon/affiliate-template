@@ -58,6 +58,15 @@ faq:
 
   - question: "Wie oft sollte ein Nassfutterautomat gereinigt werden?"
     answer: "Nach jeder Verwendung sollten Futterschale und Futterreste gründlich gereinigt werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Nicht jeder Futterautomat eignet sich für Nassfutter. Während klassische Trockenfutterautomaten große Vorratsbehälter verwenden, müssen Nassfutterautomaten deutlich höhere Anforderungen an Hygiene, Kühlung und Reinigung erfüllen.

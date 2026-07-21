@@ -92,6 +92,15 @@ faq:
     answer: "Portionsschritte sind meist keine exakten Grammwerte. Die tatsächliche Menge hängt von Form, Größe und Dichte der Kroketten ab und sollte mit einer Küchenwaage geprüft werden."
   - question: "Ist ein App-Futterautomat sicher im Urlaub?"
     answer: "Nur als Unterstützung einer Betreuungsperson. App, Kamera und Vorrat ersetzen keine regelmäßige persönliche Kontrolle von Tier, Wasser, Futter und Technik."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

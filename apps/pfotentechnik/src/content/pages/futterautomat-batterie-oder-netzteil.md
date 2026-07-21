@@ -37,6 +37,15 @@ faq:
     answer: "Nicht zwingend. Manche Geräte reduzieren im Batteriemodus energieintensive Funktionen oder unterstützen Batterien nur als Motor- und Zeitplan-Backup."
   - question: "Sind wiederaufladbare Batterien erlaubt?"
     answer: "Nur wenn der Hersteller Typ und Spannung ausdrücklich freigibt. Unterschiedliche Zellspannungen können Laufzeit und Funktion beeinflussen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

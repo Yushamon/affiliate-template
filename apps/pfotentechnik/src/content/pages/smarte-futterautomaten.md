@@ -225,6 +225,15 @@ faq:
     answer: "Für die Grundversorgung ist die Ausfallsicherheit meist wichtiger. Eine App erhöht den Komfort, während Batterie-Backup und lokal gespeicherte Zeitpläne verhindern können, dass eine Mahlzeit bei Strom- oder Internetausfall ausfällt."
   - question: "Welche Nachteile haben smarte Futterautomaten?"
     answer: "Mögliche Nachteile sind Portionierungsschwankungen, Futterstau, Reinigungsaufwand, App- oder Cloud-Abhängigkeit, Motorgeräusche, Datenschutzfragen und die Gefahr, sich zu stark auf die Technik zu verlassen."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Smarte Futterautomaten sind dann sinnvoll, wenn sie ein konkretes Problem lösen: feste Fütterungszeiten trotz Arbeit, mehrere kleine Mahlzeiten, kontrollierte Tagesrationen oder eine zusätzliche Kontrolle von unterwegs. **Die wichtigste Kaufentscheidung ist nicht App gegen Kamera, sondern Trockenfutter gegen Nassfutter, ein Tier gegen mehrere Tiere und Komfort gegen echte Ausfallsicherheit.**

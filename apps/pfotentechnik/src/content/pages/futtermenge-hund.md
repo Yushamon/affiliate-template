@@ -35,6 +35,17 @@ faq:
   - { question: "Was gilt für einen Senior-Hund?", answer: "Bei einem Senior können Aktivität und Energiebedarf sinken, während Krankheit oder Muskelverlust andere Anpassungen verlangen. Bewerte deshalb nicht nur das Gewicht, sondern auch die Muskelkondition. Unbeabsichtigte Gewichts- oder Muskelabnahme sollte tierärztlich untersucht und nicht einfach mit mehr Futter überdeckt werden." }
   - { question: "Wie kontrolliere ich einen Futterautomaten?", answer: "Lass zehn bis zwanzig Portionen in eine Schüssel ausgeben und wiege sie einzeln sowie zusammen. So erkennst du Durchschnitt und Streuung. Wiederhole die Prüfung nach Futterwechsel, weil Krokettengröße und -form die Ausgabemenge verändern können. Kalibriere nach Geräteanleitung." }
   - { question: "Wann sollte ein Tierarzt die Futtermenge festlegen?", answer: "Bei Wachstum, Trächtigkeit, starkem Über- oder Untergewicht, chronischen Erkrankungen, Allergien, Verdauungsproblemen oder unerklärlicher Gewichtsänderung ist ein individueller Plan sinnvoll. Bei rascher Abnahme, Schwäche oder Futterverweigerung sollte die Abklärung nicht zugunsten eigener Rechenversuche verzögert werden." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: small
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

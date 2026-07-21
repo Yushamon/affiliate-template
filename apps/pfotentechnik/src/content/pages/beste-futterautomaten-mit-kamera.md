@@ -40,6 +40,15 @@ faq:
     answer: "Livebild ist häufig ohne Abo verfügbar, während Aufzeichnung oder Cloud-Speicher kostenpflichtig sein können. Die aktuellen Bedingungen müssen beim konkreten Modell geprüft werden."
   - question: "Funktioniert der Zeitplan ohne Internet?"
     answer: "Viele Modelle speichern Pläne lokal, doch Video, Benachrichtigungen und Fernzugriff fallen ohne Verbindung aus. Das Offline-Verhalten sollte vor längerer Abwesenheit getestet werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Eine Kamera beantwortet eine begrenzte Frage: Was passiert im sichtbaren Bereich am Futterplatz? Sie kann zeigen, ob ein Tier erscheint oder ob offensichtlich Futter im Napf liegt. Sie misst aber nicht sicher die aufgenommene Menge und erkennt gesundheitliche Veränderungen nicht zuverlässig.

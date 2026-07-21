@@ -27,6 +27,13 @@ faq:
   - { question: "Was zeigt die App im Funkloch?", answer: "Meist den letzten übertragenen Punkt samt Zeitstempel. Manche Geräte speichern Verlauf und übertragen später. Der alte Punkt darf nicht als aktuelle Position gelesen werden." }
   - { question: "Hilft WLAN bei der Reichweite?", answer: "Bekanntes WLAN dient bei vielen Trackern als Energiesparzone oder Näherungsinformation. Es ersetzt außerhalb des Hauses weder Mobilfunkübertragung noch Satellitenortung." }
   - { question: "Welche Reichweite hat Bluetooth?", answer: "Es gibt keinen einzigen Bluetooth-Wert. Design, Sendeleistung und Hindernisse bestimmen die direkte Reichweite. Netzwerk-Tags können indirekt weiter melden, wenn kompatible Fremdgeräte vorbeikommen." }
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  petSize: large
+  comparisonHref: /vergleiche/beste-gps-tracker-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Reichweite hat drei Ebenen: **Satellit zum Tracker, Tracker zum Netz oder Empfänger, Anzeige zum Halter.** Nur die zweite Ebene hat bei VHF eine feste Herstellerdistanz.

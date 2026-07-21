@@ -45,6 +45,16 @@ faq:
     answer: "Ein Automat legt keine vertretbare Alleinzeit fest. Katzen benötigen regelmäßige persönliche Kontrolle und Versorgung. Alter, Gesundheit, Verhalten und rechtliche Tierschutzanforderungen müssen individuell berücksichtigt werden."
   - question: "Reicht eine Kamera als Kontrolle im Urlaub?"
     answer: "Nein. Sie zeigt nur einen Ausschnitt und erkennt weder alle Gesundheitsveränderungen noch Probleme mit Wasser, Toilette oder Raum. Persönliche Besuche bleiben notwendig."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein Futterautomat kann im Urlaub einen bekannten Zeitplan beibehalten. Er kann aber weder Wasser erneuern noch Verhalten, Körperzustand oder Ausscheidungen zuverlässig beurteilen. Deshalb ist er ein Werkzeug für die Betreuungsperson, nicht deren Ersatz. Eine professionelle Planung behandelt Technikfehler als normalen möglichen Fall und legt fest, wer dann handelt.

@@ -22,6 +22,16 @@ premiumBlocks:
 faq:
   - { question: "Reicht ein großer Brunnen für drei Katzen?", answer: "Nicht zwingend. Ein einzelner Standort kann sozial blockiert werden oder technisch ausfallen. Mehrere getrennte Wasserstellen bleiben sinnvoll." }
   - { question: "Erkennt ein RFID-Brunnen den Mikrochip?", answer: "Nicht automatisch. Manche Systeme arbeiten mit Halsbandanhängern statt dem implantierten Mikrochip; die Produktbeschreibung muss genau geprüft werden." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Kurzantwort

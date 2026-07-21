@@ -35,6 +35,16 @@ faq:
   - { question: "Was gilt für eine Senior-Katze?", answer: "Bei einer Senior-Katze können sich Energiebedarf, Verdauung und Muskelmasse verändern. Gewichtsverlust ist nicht automatisch normal. Kontrolliere Body und Muscle Condition Score getrennt und lass unbeabsichtigte Abnahme, mehr Durst, Erbrechen oder Appetitveränderungen tierärztlich abklären." }
   - { question: "Wie verhindert man Futterdiebstahl bei mehreren Katzen?", answer: "Füttere räumlich getrennt oder nutze bei Bedarf einen zuverlässig zugeordneten Mikrochip-Futterautomaten. Wiege die Tagesration jeder Katze separat und kontrolliere, ob sie tatsächlich frisst. Ein gemeinsamer Napf erlaubt keine sichere individuelle Mengenkontrolle." }
   - { question: "Wann ist die Futtermenge ein Fall für den Tierarzt?", answer: "Bei Kitten, Trächtigkeit, deutlichem Über- oder Untergewicht, chronischer Erkrankung, Allergie, Verdauungsproblemen oder unerklärlicher Gewichtsänderung ist ein individueller Plan sinnvoll. Frisst eine Katze gar nicht, wirkt schwach oder erbricht wiederholt, sollte die Untersuchung nicht durch Rechenversuche verzögert werden." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

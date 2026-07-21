@@ -25,6 +25,16 @@ premiumBlocks:
 faq:
   - { question: "Soll der Trinkbrunnen für alte Katzen erhöht stehen?", answer: "Manche Katzen mit Gelenkproblemen trinken bequemer aus leicht erhöhten Gefäßen. Höhe und Stand müssen individuell sicher getestet werden." }
   - { question: "Ist mehr Trinken bei Senioren normal?", answer: "Deutlich vermehrtes Trinken kann unter anderem bei Nieren- oder Stoffwechselerkrankungen auftreten und sollte tierärztlich abgeklärt werden." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

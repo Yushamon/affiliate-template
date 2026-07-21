@@ -45,6 +45,15 @@ faq:
     answer: "Nein, nicht zuverlässig. Krokettengröße, Form und Dichte unterscheiden sich. Wiege ab, wie viele Gramm deines Futters in einen bekannten Messbecher passen."
   - question: "Ist ein größerer Futterautomat immer besser?"
     answer: "Nein. Ein großer Behälter braucht mehr Stellfläche und Futter bleibt länger geöffnet. Entscheidend sind zuverlässige Portionierung, passende Napfgröße, Reinigung und eine realistische Reichweite."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

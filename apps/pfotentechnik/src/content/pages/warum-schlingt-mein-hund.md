@@ -37,6 +37,16 @@ faq:
     answer: "Er kann das Fressen verlangsamen, muss aber zu Schnauze und Futter passen. Der Hund darf sich nicht verletzen oder frustriert werden und sollte anfangs beaufsichtigt werden."
   - question: "Kann Hunger die Ursache sein?"
     answer: "Ja. Zu lange Pausen oder eine unpassende Ration können beitragen. Plötzlich starker Hunger trotz ausreichender Menge kann aber auch medizinische Ursachen haben."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  animal: dog
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

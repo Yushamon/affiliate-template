@@ -25,6 +25,16 @@ premiumBlocks:
 faq:
   - { question: "Kann jeder Trinkbrunnen ohne Filter laufen?", answer: "Nein. Manche Pumpen und Wasserwege sind auf einen bestimmten Filterwiderstand ausgelegt. Maßgeblich ist die Herstelleranleitung." }
   - { question: "Ist filterlos automatisch hygienischer?", answer: "Nein. Entscheidend sind Wasserwechsel, vollständige Zerlegbarkeit und mechanische Reinigung. Ein fehlender Filter beseitigt keinen Biofilm." }
+
+contentPlatform:
+  intent: buying-guide
+  cluster: trinkbrunnen
+
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort

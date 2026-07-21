@@ -59,6 +59,15 @@ faq:
 
   - question: "Wie lange hält ein Batterie-Backup?"
     answer: "Das hängt vom jeweiligen Modell und der Nutzung ab. Hersteller geben dazu meist Richtwerte an."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ein Stromausfall kommt meist unerwartet. Ein Futterautomat mit Akku oder Batterie-Backup sorgt dafür, dass die geplanten Mahlzeiten trotzdem ausgegeben werden. Gerade bei regelmäßigen Fütterungszeiten kann das ein großer Vorteil sein.

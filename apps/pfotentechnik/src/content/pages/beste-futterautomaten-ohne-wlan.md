@@ -38,6 +38,15 @@ faq:
     answer: "Er hat weniger Netzwerkabhängigkeiten, kann aber weiterhin durch leere Batterien, falsche Uhrzeit oder Mechanik ausfallen. Tests und Kontrolle bleiben notwendig."
   - question: "Welches Modell eignet sich für Nassfutter?"
     answer: "Cat Mate und SureFeed können je nach Nutzung Nassfutter aufnehmen. Standzeit, Kühlung und Reinigung müssen trotzdem passend geplant werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 Ohne WLAN bedeutet nicht ohne Technik. Lokale Uhr, Motor, Batterien und Mechanik müssen weiterhin zuverlässig zusammenspielen. Dafür entfallen Konto, Router und Cloud als Voraussetzung.

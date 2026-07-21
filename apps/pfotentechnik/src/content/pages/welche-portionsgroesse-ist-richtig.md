@@ -38,6 +38,15 @@ faq:
     answer: "Führen Sie mehrere manuelle Ausgaben in eine leere, tarierte Schale durch, wiegen Sie die Gesamtmenge und teilen Sie sie durch die Zahl der Ausgaben."
   - question: "Bestimmt der Automat den Futterbedarf?"
     answer: "Nein. Die passende Tagesenergie und Futtermenge richten sich nach Tier, Futter und Gesundheitszustand und sollten bei Unsicherheit tierärztlich festgelegt werden."
+
+contentPlatform:
+  intent: buying-guide
+  cluster: futterautomaten
+
+recommendationJourney:
+  mode: filtered
+  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonLabel: Passende Modelle vergleichen
 ---
 
 ## Die kurze Antwort
