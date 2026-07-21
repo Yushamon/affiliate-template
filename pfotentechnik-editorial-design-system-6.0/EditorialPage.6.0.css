@@ -1,0 +1,42 @@
+/* === PfotenTechnik Editorial Design System 6.0 === */
+
+/*
+ * Entfernt nur auf redaktionellen Seiten mit PremiumRenderer V2
+ * die zusätzliche äußere Artikel-Schachtel.
+ */
+.article:has(.premium-v3--pfotentechnik) {
+  padding-inline: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/*
+ * Inhaltsverzeichnis bleibt eine eigenständige Komponente,
+ * erhält aber keine zusätzliche umschließende Kartenfläche.
+ */
+.article:has(.premium-v3--pfotentechnik) > .table-of-contents,
+.article:has(.premium-v3--pfotentechnik) > nav[aria-label*="Inhalt"] {
+  margin-inline: 0 !important;
+}
+
+/*
+ * Die eigentlichen Inhalte erhalten einen konsistenten Lesebereich.
+ */
+.article:has(.premium-v3--pfotentechnik) > :not(.premium-v3) {
+  max-width: 100%;
+}
+
+@media (max-width: 760px) {
+  .article:has(.premium-v3--pfotentechnik) {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .premium-v3--pfotentechnik {
+    width: 100%;
+  }
+}
+
+/* === End PfotenTechnik Editorial Design System 6.0 === */

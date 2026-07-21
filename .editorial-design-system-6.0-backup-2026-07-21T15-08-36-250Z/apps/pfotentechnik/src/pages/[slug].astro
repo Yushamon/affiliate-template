@@ -78,14 +78,6 @@ const premiumProducts = products.map((product) => ({
   rating: product.data.rating,
   highlights: product.data.strengths,
   tags: product.data.tags,
-  image: {
-    src:
-      product.data.images.thumbnail?.src ??
-      product.data.images.hero.src,
-    alt:
-      product.data.images.thumbnail?.alt ??
-      product.data.images.hero.alt,
-  },
 }));
 
 const author = page.data.author ?? siteMeta.defaultAuthor;
