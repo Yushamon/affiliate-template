@@ -5,14 +5,12 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
-import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import {
   getManufacturerBreadcrumbs,
   getRelatedContent
 } from "@app/domain/content";
-import { buildManufacturerNextSteps } from "../../domain/recommendationLinks";
 
 type Props = {
   manufacturerId: string;
@@ -44,12 +42,8 @@ const optimizedOgImage = await getImage({
   width: 1200,
   quality: "high"
 });
-const [allProducts, allManufacturers, pages, comparisons] = await Promise.all([
-  getCollection("products"),
-  getCollection("manufacturers"),
-  getCollection("pages"),
-  getCollection("comparisons")
-]);
+const allProducts = await getCollection("products");
+const allManufacturers = await getCollection("manufacturers");
 
 const productOrder = new Map(
   manufacturer.productSlugs.map((slug, index) => [slug, index])
@@ -116,13 +110,6 @@ const relatedItems = relatedEntries.map((related) => ({
 
 const productHref = (slug: string, productUrl?: string) =>
   productUrl ?? `/produkt/${slug}/`;
-
-const manufacturerNextSteps = buildManufacturerNextSteps({
-  manufacturer,
-  pages,
-  comparisons,
-  products: allProducts
-});
 ---
 
 <ProjectLayout
@@ -286,12 +273,6 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
         </div>
       </section>
     )}
-
-    <DecisionNextSteps
-      title="Marke sinnvoll einordnen"
-      intro="Vergleiche die Produktklasse oder öffne die passende Kaufberatung."
-      items={manufacturerNextSteps}
-    />
 
     <RelatedArticles items={relatedItems} />
 

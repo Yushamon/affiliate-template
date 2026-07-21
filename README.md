@@ -1,26 +1,25 @@
-# Pfotentechnik Repository Audit 5.0
+# PfotenTechnik Recommendation Engine 4.0.2 Safe
 
-Dieses Paket ergänzt das Repository um eine prüfbare Audit-Schicht und korrigiert konkrete SEO-Probleme im gemeinsamen Layout.
+Diese Version korrigiert den Audit-Pfad.
 
-## Enthaltene Änderungen
+## Ursache
 
-- absolute Publisher- und Autoren-URLs in strukturierten Daten
-- `WebSite`-Schema nur auf der Startseite
-- `max-image-preview:large`, Open-Graph-Locale, Theme-Color und Color-Scheme
-- Audit für doppelte Routen, fehlende Metadaten, interne Links und verwaiste Inhalte
-- Hinweise auf ungenutzte Komponenten, CSS-Dopplungen und übergroße Dateien
-- Markdown- und JSON-Report unter `apps/pfotentechnik/reports/`
+`npm --workspace apps/pfotentechnik run audit:recommendations` startet das Audit mit
+`apps/pfotentechnik` als Arbeitsverzeichnis. Der bisherige Audit ergänzte trotzdem
+noch einmal `apps/pfotentechnik` und suchte dadurch in einem nicht existierenden
+doppelten Pfad.
 
-## Ausführung
+## Installation
 
 ```bash
-python3 apply-pfotentechnik-repository-audit-5.0.py
-npm --workspace apps/pfotentechnik run audit:repository
-npm run build:pfotentechnik
+python3 apply-pfotentechnik-recommendation-engine-4.0.2-safe.py
 ```
 
-Strikter Modus:
+Der fehlgeschlagene Lauf hat automatisch vollständig zurückgerollt. Es ist keine
+manuelle Bereinigung nötig.
+
+Nach erfolgreicher Installation:
 
 ```bash
-npm --workspace apps/pfotentechnik run audit:repository:strict
+python3 apply-pfotentechnik-money-page-intent-hotfix-4.1-safe.py
 ```

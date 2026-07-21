@@ -17,8 +17,7 @@
     "audit:repository": "node scripts/audit-repository.mjs",
     "audit:repository:strict": "node scripts/audit-repository.mjs --strict",
     "audit:gps": "node scripts/audit-gps-cluster.mjs",
-    "audit:suitability": "node scripts/audit-product-suitability.mjs",
-    "audit:recommendations": "node ../../scripts/audit-recommendation-engine-4.mjs"
+    "audit:suitability": "node scripts/audit-product-suitability.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

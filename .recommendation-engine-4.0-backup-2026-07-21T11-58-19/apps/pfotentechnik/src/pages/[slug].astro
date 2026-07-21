@@ -10,7 +10,6 @@ import PremiumRenderer from "@affiliate-core/renderer/PremiumRenderer.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import ConversionJourney from "../components/ConversionJourney.astro";
-import DecisionNextSteps from "../components/DecisionNextSteps.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
@@ -27,7 +26,6 @@ import {
   getInternalLinkDefinitions,
   getSourceContexts
 } from "../domain/content/internalLinks";
-import { buildMoneyPageNextSteps } from "../domain/recommendationLinks";
 import defaultHero from "../assets/images/project/pfotentechnik/hero.webp";
 import categoryImage from "../assets/images/project/pfotentechnik/category.webp";
 import comparisonImage from "../assets/images/project/pfotentechnik/comparison.webp";
@@ -221,14 +219,6 @@ const journeyComparisonHref = recommendationJourney
 const closingProduct = assembledPage.closingCta
   ? productBySlug.get(assembledPage.closingCta.productKey)
   : undefined;
-
-const moneyPageNextSteps = isMoneyPage
-  ? buildMoneyPageNextSteps({
-      page: page.data,
-      comparisons,
-      products
-    })
-  : [];
 
 const getReadingTimeMinutes = (content: string) => {
   const plainText = content
@@ -554,12 +544,72 @@ const relatedItems = relatedEntries.map((entry) => ({
     </AutoLinkContent>
 
     {
-      isMoneyPage && moneyPageNextSteps.length > 0 && (
-        <DecisionNextSteps
-          title="Passend weiterentscheiden"
-          intro="Öffne die stärkste passende Produktempfehlung oder den zugehörigen Vergleich."
-          items={moneyPageNextSteps}
-        />
+      recommendationJourney && (
+        <section class="recommendation-journey-state">
+          {
+            journeyRecommendedProduct ? (
+              <>
+                <div class="ranking-section-header">
+                  <p class="ranking-eyebrow">
+                    {journeyHasExactMatch ? "Top-Empfehlung" : "Beste verfügbare Option"}
+                  </p>
+                  <h2>
+                    {journeyHasExactMatch
+                      ? "Die passendste dokumentierte Auswahl"
+                      : "Dieses Modell kommt den Anforderungen am nächsten"}
+                  </h2>
+                  <p>
+                    {journeyHasExactMatch
+                      ? "Dieses Modell erfüllt die hinterlegten Eignungsfilter."
+                      : recommendationJourney.emptyText}
+                  </p>
+                </div>
+                <a
+                  class="decision-product-card"
+                  href={`/produkt/${journeyRecommendedProduct.data.slug}/`}
+                >
+                  <OptimizedImage
+                    src={
+                      journeyRecommendedProduct.data.images.thumbnail?.src ??
+                      journeyRecommendedProduct.data.images.hero.src
+                    }
+                    alt={
+                      journeyRecommendedProduct.data.images.thumbnail?.alt ??
+                      journeyRecommendedProduct.data.images.hero.alt
+                    }
+                    width={480}
+                    height={360}
+                    layout="constrained"
+                  />
+                  <div>
+                    <p>
+                      {journeyRecommendedProduct.data.manufacturer.name} ·{" "}
+                      {journeyRecommendedProduct.data.score ??
+                        toEditorialScore(journeyRecommendedProduct.data.rating, 5)} Punkte
+                    </p>
+                    <h3>{journeyRecommendedProduct.data.title}</h3>
+                    <p>{journeyRecommendedProduct.data.recommendation}</p>
+                    <strong>Produkt ansehen</strong>
+                  </div>
+                </a>
+              </>
+            ) : (
+              <div class="recommendation-journey-empty">
+                <p class="ranking-eyebrow">Redaktionelle Einordnung</p>
+                <h2>{recommendationJourney.emptyTitle}</h2>
+                <p>{recommendationJourney.emptyText}</p>
+              </div>
+            )
+          }
+          {
+            journeyComparisonHref && (
+              <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
+                <span>Passende Modelle vergleichen</span>
+                <strong>Zum Vergleich</strong>
+              </a>
+            )
+          }
+        </section>
       )
     }
 
