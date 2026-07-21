@@ -1,0 +1,535 @@
+---
+import { stripLeadingIcon } from "../utils/content";
+import OptimizedImage from "../components/OptimizedImage.astro";
+
+type ProjectImageKey =
+  | "hero" | "feature" | "inline" | "comparison" | "guide" | "faq"
+  | "product" | "category" | "decision" | "calculator" | "manufacturer"
+  | "feederHero" | "feederComparison" | "feederWetFood";
+
+type PremiumProduct = {
+  key: string;
+  name: string;
+  productUrl: string;
+  badge?: string;
+  recommendation: string;
+  rating: number;
+  highlights: string[];
+  tags: string[];
+};
+
+type PremiumBlockType =
+  | "answer"
+  | "quickFacts"
+  | "scenarios"
+  | "decision"
+  | "steps"
+  | "products"
+  | "checks"
+  | "mistakes"
+  | "expert"
+  | "vde"
+  | "recommendation"
+  | "checklist";
+
+type PremiumCard = {
+  label?: string;
+  title: string;
+  text?: string;
+  value?: string;
+  href?: string;
+  cta?: string;
+  badge?: string;
+  productKey?: string;
+  items?: string[];
+};
+
+type PremiumBlock = {
+  type: PremiumBlockType;
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  cards?: PremiumCard[];
+  items?: string[];
+  href?: string;
+  cta?: string;
+  productFilter?: string;
+  productLimit?: number;
+  image?: string;
+  imageAlt?: string;
+  imageKey?: ProjectImageKey;
+};
+
+interface Props {
+  blocks?: PremiumBlock[];
+  project?: string;
+  heroImage?: string;
+  products?: PremiumProduct[];
+}
+
+const {
+  blocks = [],
+  products = [],
+  project
+} = Astro.props;
+
+const productByKey = new Map(products.map((product) => [product.key, product]));
+
+const getBlockImageKey = (type: PremiumBlockType): ProjectImageKey | null => {
+  if (
+    type === "answer" ||
+    type === "quickFacts" ||
+    type === "expert" ||
+    type === "vde"
+  ) {
+    return "feature";
+  }
+
+  if (
+    type === "steps" ||
+    type === "checks" ||
+    type === "mistakes" ||
+    type === "checklist"
+  ) {
+    return "inline";
+  }
+
+  if (type === "scenarios") {
+    return "comparison";
+  }
+
+  if (type === "decision" || type === "recommendation") {
+    return "decision";
+  }
+
+  if (type === "products") {
+    return "product";
+  }
+
+  return null;
+};
+
+const getBlockIcon = (type: PremiumBlockType) => {
+  const icons: Record<PremiumBlockType, string> = {
+    answer: "✓",
+    quickFacts: "i",
+    scenarios: "↗",
+    decision: "→",
+    steps: "1",
+    products: "★",
+    checks: "✓",
+    mistakes: "!",
+    expert: "★",
+    vde: "i",
+    recommendation: "✓",
+    checklist: "✓"
+  };
+
+  return icons[type];
+};
+---
+
+{blocks.length > 0 && (
+  <div class:list={["premium-v3", { "premium-v3--pfotentechnik": project === "pfotentechnik" }]}>
+    {blocks.map((block) => {
+      const filteredProducts =
+        block.type === "products" && block.productFilter
+          ? products
+              .filter((product) => product.tags.includes(block.productFilter!))
+              .slice(0, block.productLimit ?? 4)
+          : [];
+
+      const hasCards = block.cards && block.cards.length > 0;
+      const hasProducts = filteredProducts.length > 0;
+      const hasList = block.items && block.items.length > 0;
+      const isExplicitBlockImage = Boolean(block.image);
+      const blockImage = block.image;
+      const shouldRenderBlockImage = Boolean(blockImage) && isExplicitBlockImage;
+
+      return (
+        <section class={`premium-v3-block premium-v3-${block.type}`}>
+          {(block.eyebrow || block.title || block.text) && (
+            <div class="premium-v3-header">
+              <div class="premium-v3-header-icon">
+                {getBlockIcon(block.type)}
+              </div>
+
+              <div>
+                {block.eyebrow && (
+                  <span class="premium-v3-eyebrow">
+                    {block.eyebrow}
+                  </span>
+                )}
+
+                {block.title && <h2>{block.title}</h2>}
+
+                {block.text && <p>{block.text}</p>}
+              </div>
+            </div>
+          )}
+
+          {shouldRenderBlockImage && (
+            <figure class="premium-v3-image premium-v3-image-compact">
+              <OptimizedImage
+                src={blockImage}
+                alt={block.imageAlt ?? block.title ?? block.eyebrow ?? "Ratgeber Illustration"}
+                layout="constrained"
+              />
+            </figure>
+          )}
+
+          {hasProducts && (
+            <div class="premium-v3-grid premium-v3-grid-products">
+              {filteredProducts.map((product) => (
+                <a
+                  class="premium-v3-card premium-v3-product-card premium-v3-card-link"
+                  href={product.productUrl}
+                >
+                  <span class="premium-v3-label">
+                    {product.badge}
+                  </span>
+
+                  <h3>{product.name}</h3>
+
+                  <p>{product.recommendation}</p>
+
+                  <div class="premium-v3-rating">
+                    ★ {product.rating} / 5
+                  </div>
+
+                  <ul>
+                    {product.highlights.slice(0, 3).map((item) => (
+                      <li>{stripLeadingIcon(item)}</li>
+                    ))}
+                  </ul>
+                </a>
+              ))}
+            </div>
+          )}
+
+          {hasCards && (
+            <div class={`premium-v3-grid premium-v3-grid-${block.type}`}>
+              {block.cards?.map((card, index) => {
+                const product = card.productKey
+                  ? productByKey.get(card.productKey)
+                  : null;
+
+                const href = card.href ?? product?.productUrl;
+
+                const CardTag = href ? "a" : "article";
+
+                return (
+                  <CardTag
+                    class={`premium-v3-card premium-v3-card-${index + 1}${href ? " premium-v3-card-link" : ""}`}
+                    href={href}
+                  >
+                    {card.label && (
+                      <span class="premium-v3-label">
+                        {card.label}
+                      </span>
+                    )}
+
+                    {card.badge && (
+                      <span class="premium-v3-badge">
+                        {card.badge}
+                      </span>
+                    )}
+
+                    {card.value && (
+                      <strong class="premium-v3-value">
+                        {card.value}
+                      </strong>
+                    )}
+
+                    <h3>{product ? product.name : card.title}</h3>
+
+                    {card.text && <p>{card.text}</p>}
+
+                    {product && <p>{product.recommendation}</p>}
+
+                    {card.items && (
+                      <ul>
+                        {card.items.map((item) => (
+                          <li>{stripLeadingIcon(item)}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {product && (
+                      <ul>
+                        {product.highlights.slice(0, 3).map((item) => (
+                          <li>{stripLeadingIcon(item)}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {href && (
+                      <span class="premium-v3-card-cta">
+                        {card.cta ?? "Mehr ansehen"}
+                      </span>
+                    )}
+                  </CardTag>
+                );
+              })}
+            </div>
+          )}
+
+          {hasList && (
+            <ul class="premium-v3-list">
+              {block.items?.map((item) => (
+                <li>{stripLeadingIcon(item)}</li>
+              ))}
+            </ul>
+          )}
+
+          {block.href && (
+            <a class="premium-v3-button" href={block.href}>
+              {block.cta ?? "Mehr erfahren"}
+            </a>
+          )}
+        </section>
+      );
+    })}
+  </div>
+)}
+
+<style>
+  .premium-v3--pfotentechnik {
+    --premium-surface: #ffffff;
+    --premium-surface-soft: #f8fafc;
+    --premium-text: #0f172a;
+    --premium-muted: #52626b;
+    --premium-accent: #2e7d32;
+    --premium-border: rgba(15, 23, 42, 0.12);
+    --premium-shadow: 0 14px 36px rgba(15, 23, 42, 0.07);
+
+    display: grid;
+    gap: clamp(26px, 4vw, 44px);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-block {
+    min-width: 0;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header-icon {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--premium-accent) 22%, transparent);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--premium-accent) 10%, transparent);
+    color: var(--premium-accent);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header > div:last-child {
+    min-width: 0;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow,
+  .premium-v3--pfotentechnik .premium-v3-label {
+    color: var(--premium-accent);
+    font-size: 0.76rem;
+    font-weight: 850;
+    letter-spacing: 0.09em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow {
+    display: block;
+    margin: 2px 0 10px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header h2 {
+    margin: 0 0 14px;
+    color: var(--premium-text);
+    font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header p {
+    max-width: 68ch;
+    margin: 0;
+    color: var(--premium-muted);
+    line-height: 1.7;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-grid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-grid-quickFacts,
+  .premium-v3--pfotentechnik .premium-v3-grid-products,
+  .premium-v3--pfotentechnik .premium-v3-grid-scenarios {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--premium-border);
+    border-radius: 22px;
+    background: var(--premium-surface);
+    color: var(--premium-text);
+    text-align: left;
+    text-decoration: none;
+    box-shadow: var(--premium-shadow);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link {
+    cursor: pointer;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--premium-accent) 34%, transparent);
+    box-shadow: 0 20px 46px rgba(15, 23, 42, 0.12);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-label {
+    display: inline-flex;
+    margin: 0 0 14px;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card h3 {
+    margin: 0 0 12px;
+    color: var(--premium-text);
+    font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+    line-height: 1.18;
+    text-wrap: balance;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card p {
+    margin: 0 0 20px;
+    color: var(--premium-muted);
+    line-height: 1.6;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card ul,
+  .premium-v3--pfotentechnik .premium-v3-list {
+    margin: 4px 0 20px;
+    padding-left: 1.15rem;
+    color: var(--premium-muted);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card li,
+  .premium-v3--pfotentechnik .premium-v3-list li {
+    margin-top: 8px;
+    line-height: 1.55;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-rating,
+  .premium-v3--pfotentechnik .premium-v3-value {
+    color: var(--premium-accent);
+    font-weight: 850;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-cta {
+    display: inline-flex;
+    margin-top: auto;
+    padding-top: 6px;
+    align-items: center;
+    gap: 8px;
+    color: var(--premium-accent);
+    font-size: 0.92rem;
+    font-weight: 800;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-cta::after {
+    content: "→";
+    transition: transform 160ms ease;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-card-link:hover .premium-v3-card-cta::after {
+    transform: translateX(3px);
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-button {
+    display: inline-flex;
+    width: fit-content;
+    min-height: 46px;
+    margin-top: 20px;
+    padding: 10px 18px;
+    align-items: center;
+    border-radius: 999px;
+    background: var(--premium-accent);
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .premium-v3--pfotentechnik {
+      --premium-surface: #101f32;
+      --premium-surface-soft: #16263c;
+      --premium-text: #f8fafc;
+      --premium-muted: #b8c4d3;
+      --premium-accent: #5ee19a;
+      --premium-border: rgba(203, 213, 225, 0.16);
+      --premium-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-card-link:hover {
+      box-shadow: 0 22px 52px rgba(0, 0, 0, 0.34);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .premium-v3--pfotentechnik .premium-v3-grid-quickFacts,
+    .premium-v3--pfotentechnik .premium-v3-grid-products,
+    .premium-v3--pfotentechnik .premium-v3-grid-scenarios {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .premium-v3--pfotentechnik .premium-v3-header {
+      grid-template-columns: 40px minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+    }
+
+    .premium-v3--pfotentechnik .premium-v3-card {
+      padding: 22px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .premium-v3--pfotentechnik .premium-v3-card-link,
+    .premium-v3--pfotentechnik .premium-v3-card-cta::after {
+      transition: none;
+    }
+  }
+</style>
