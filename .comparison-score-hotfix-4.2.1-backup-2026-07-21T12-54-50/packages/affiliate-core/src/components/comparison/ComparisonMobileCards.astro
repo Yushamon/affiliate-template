@@ -46,8 +46,8 @@ const {
             )}
             <h3>{product.title}</h3>
             {typeof product.rating === "number" && (
-              <strong data-feature="comparison-score-hotfix-4.2.1">
-                {Math.round(product.rating)} / 100
+              <strong>
+                {product.rating.toFixed(1).replace(".", ",")} / 5
               </strong>
             )}
           </div>
