@@ -5,7 +5,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
-import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
+import ConversionJourney from "../../components/ConversionJourney.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
@@ -18,7 +18,6 @@ import {
   getInternalLinkDefinitions,
   getSourceContexts
 } from "../../domain/content/internalLinks";
-import { buildComparisonNextSteps } from "../../domain/recommendationLinks";
 
 type Props = {
   comparisonId: string;
@@ -104,12 +103,6 @@ const relatedItems = relatedEntries.map((related) => ({
   title: related.hubTitle,
   text: related.hubDescription
 }));
-
-const comparisonNextSteps = buildComparisonNextSteps({
-  comparison,
-  pages,
-  products
-});
 ---
 
 <ProjectLayout
@@ -152,10 +145,32 @@ const comparisonNextSteps = buildComparisonNextSteps({
       <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text="Beantworte fünf kurze Fragen und grenze Futterart, Steuerung, Tierzahl und Portionsbereich ein, bevor du einzelne Modelle vergleichst." />
     </div>
 
-    <DecisionNextSteps
-      title="Vom Vergleich zur Entscheidung"
-      intro="Vertiefe die passende Kaufberatung oder öffne die stärkste passende Produktempfehlung."
-      items={comparisonNextSteps}
+    <ConversionJourney
+      title="Von der Vorauswahl zur passenden Entscheidung"
+      intro="Nutze den Vergleich als Ausgangspunkt und vertiefe anschließend das Modell oder die Kriterien, die für deinen Alltag entscheidend sind."
+      items={[
+        {
+          eyebrow: "Produkte",
+          title: "Favoriten im Detail prüfen",
+          text: "Öffne die Produkttests der Modelle, die bei deinen wichtigsten Kriterien vorne liegen.",
+          href: "#vergleich",
+          label: "Modelle vergleichen"
+        },
+        {
+          eyebrow: "Kaufberatung",
+          title: "Anforderungen genauer einordnen",
+          text: "Prüfe Futterart, Tierzahl, Portionsgröße, App, Stromversorgung und Reinigungsaufwand.",
+          href: "/smarte-futterautomaten/",
+          label: "Kaufberatung lesen"
+        },
+        {
+          eyebrow: "Praxis",
+          title: "Betrieb und Reinigung vorbereiten",
+          text: "Plane Einrichtung, Testportionen und regelmäßige Pflege schon vor dem Kauf.",
+          href: "/futterautomat-richtig-reinigen/",
+          label: "Praxisratgeber öffnen"
+        }
+      ]}
     />
 
     <RelatedArticles items={relatedItems} />

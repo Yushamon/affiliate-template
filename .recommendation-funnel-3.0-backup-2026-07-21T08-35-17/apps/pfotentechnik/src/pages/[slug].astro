@@ -327,7 +327,7 @@ const relatedItems = relatedEntries.map((entry) => ({
                     <p>{journeyTopProduct.data.manufacturer.name} · {journeyTopProduct.data.score ?? toEditorialScore(journeyTopProduct.data.rating, 5)} Punkte</p>
                     <h3>{journeyTopProduct.data.title}</h3>
                     <p>{journeyTopProduct.data.recommendation}</p>
-                    <strong>Produkt ansehen</strong>
+                    <strong>Produktdetails lesen</strong>
                   </div>
                 </a>
               </>
@@ -343,7 +343,7 @@ const relatedItems = relatedEntries.map((entry) => ({
             journeyComparisonHref && (
               <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
                 <span>{recommendationJourney.comparisonLabel}</span>
-                <strong>Zum Vergleich</strong>
+                <strong>Mit vorausgewählten Filtern öffnen →</strong>
               </a>
             )
           }
@@ -386,7 +386,7 @@ const relatedItems = relatedEntries.map((entry) => ({
               </p>
               <h3>{topDecisionProduct.data.title}</h3>
               <p>{topDecisionProduct.data.recommendation}</p>
-              <strong>Produkt ansehen</strong>
+              <strong>Produkttest lesen</strong>
             </div>
           </a>
         </section>
