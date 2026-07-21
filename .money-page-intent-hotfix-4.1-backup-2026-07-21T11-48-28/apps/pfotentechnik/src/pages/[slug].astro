@@ -187,15 +187,6 @@ const journeyProducts = comparisonProductEntries
   );
 
 const journeyTopProduct = journeyProducts[0];
-const journeyFallbackProduct = comparisonProductEntries
-  .slice()
-  .sort((a, b) =>
-    (b.data.score ?? toEditorialScore(b.data.rating, 5)) -
-    (a.data.score ?? toEditorialScore(a.data.rating, 5))
-  )[0];
-const journeyRecommendedProduct =
-  journeyTopProduct ?? journeyFallbackProduct;
-const journeyHasExactMatch = Boolean(journeyTopProduct);
 
 const journeyComparisonHref = recommendationJourney
   ? `${recommendationJourney.comparisonHref}${
@@ -317,30 +308,6 @@ const relatedItems = relatedEntries.map((entry) => ({
       page={assembledPage}
       products={products}
     />
-
-    {
-      isMoneyPage && journeyComparisonHref && (
-        <nav
-          class="money-page-intent-entry"
-          aria-label="Direkteinstieg"
-          data-feature="money-page-intent-entry-4.1"
-        >
-          <div>
-            <p>Schon kaufbereit?</p>
-            <h2>Direkt vergleichen oder erst Kriterien prüfen?</h2>
-          </div>
-          <div class="money-page-intent-actions">
-            <a class="money-page-intent-primary" href={journeyComparisonHref}>
-              Zum Vergleich
-            </a>
-            <a class="money-page-intent-secondary" href="#kaufberatung">
-              Kriterien prüfen
-            </a>
-          </div>
-        </nav>
-      )
-    }
-
     {
       topDecisionRecommendation && topDecisionProduct && (
         <section
@@ -532,7 +499,6 @@ const relatedItems = relatedEntries.map((entry) => ({
       )
     }
 
-    <div id="kaufberatung" class="money-page-guide-anchor" aria-hidden="true"></div>
     <AutoLinkContent
       definitions={internalLinkDefinitions}
       sourcePath={`/${page.data.slug}/`}
@@ -547,48 +513,25 @@ const relatedItems = relatedEntries.map((entry) => ({
       recommendationJourney && (
         <section class="recommendation-journey-state">
           {
-            journeyRecommendedProduct ? (
+            journeyTopProduct ? (
               <>
                 <div class="ranking-section-header">
-                  <p class="ranking-eyebrow">
-                    {journeyHasExactMatch ? "Top-Empfehlung" : "Beste verfügbare Option"}
-                  </p>
-                  <h2>
-                    {journeyHasExactMatch
-                      ? "Die passendste dokumentierte Auswahl"
-                      : "Dieses Modell kommt den Anforderungen am nächsten"}
-                  </h2>
-                  <p>
-                    {journeyHasExactMatch
-                      ? "Dieses Modell erfüllt die hinterlegten Eignungsfilter."
-                      : recommendationJourney.emptyText}
-                  </p>
+                  <p class="ranking-eyebrow">Top-Empfehlung</p>
+                  <h2>Die passendste dokumentierte Auswahl</h2>
+                  <p>Dieses Modell erfüllt die hinterlegten Eignungsfilter.</p>
                 </div>
-                <a
-                  class="decision-product-card"
-                  href={`/produkt/${journeyRecommendedProduct.data.slug}/`}
-                >
+                <a class="decision-product-card" href={`/produkt/${journeyTopProduct.data.slug}/`}>
                   <OptimizedImage
-                    src={
-                      journeyRecommendedProduct.data.images.thumbnail?.src ??
-                      journeyRecommendedProduct.data.images.hero.src
-                    }
-                    alt={
-                      journeyRecommendedProduct.data.images.thumbnail?.alt ??
-                      journeyRecommendedProduct.data.images.hero.alt
-                    }
+                    src={journeyTopProduct.data.images.thumbnail?.src ?? journeyTopProduct.data.images.hero.src}
+                    alt={journeyTopProduct.data.images.thumbnail?.alt ?? journeyTopProduct.data.images.hero.alt}
                     width={480}
                     height={360}
                     layout="constrained"
                   />
                   <div>
-                    <p>
-                      {journeyRecommendedProduct.data.manufacturer.name} ·{" "}
-                      {journeyRecommendedProduct.data.score ??
-                        toEditorialScore(journeyRecommendedProduct.data.rating, 5)} Punkte
-                    </p>
-                    <h3>{journeyRecommendedProduct.data.title}</h3>
-                    <p>{journeyRecommendedProduct.data.recommendation}</p>
+                    <p>{journeyTopProduct.data.manufacturer.name} · {journeyTopProduct.data.score ?? toEditorialScore(journeyTopProduct.data.rating, 5)} Punkte</p>
+                    <h3>{journeyTopProduct.data.title}</h3>
+                    <p>{journeyTopProduct.data.recommendation}</p>
                     <strong>Produkt ansehen</strong>
                   </div>
                 </a>
@@ -604,7 +547,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           {
             journeyComparisonHref && (
               <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
-                <span>Passende Modelle vergleichen</span>
+                <span>{recommendationJourney.comparisonLabel}</span>
                 <strong>Zum Vergleich</strong>
               </a>
             )
@@ -794,68 +737,6 @@ const relatedItems = relatedEntries.map((entry) => ({
 </style>
 
 <style>
-  .money-page-guide-anchor {
-    position: relative;
-    top: -1rem;
-    scroll-margin-top: 6rem;
-  }
-
-  .money-page-intent-entry {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 1.5rem 0 2.25rem;
-    padding: clamp(1.15rem, 3vw, 1.5rem);
-    border: 1px solid var(--pt-theme-border, #d9e2e7);
-    border-radius: 1.25rem;
-    background: var(--pt-theme-surface, #fff);
-    box-shadow: 0 12px 34px rgba(20, 32, 26, 0.06);
-  }
-
-  .money-page-intent-entry p {
-    margin: 0 0 0.35rem;
-    color: var(--pt-theme-accent, #238657);
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-  }
-
-  .money-page-intent-entry h2 {
-    margin: 0;
-    font-size: clamp(1.15rem, 2.5vw, 1.45rem);
-    line-height: 1.25;
-  }
-
-  .money-page-intent-actions {
-    display: flex;
-    flex: 0 0 auto;
-    gap: 0.75rem;
-  }
-
-  .money-page-intent-actions a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0.75rem 1rem;
-    border-radius: 0.85rem;
-    font-weight: 800;
-    text-decoration: none;
-  }
-
-  .money-page-intent-primary {
-    background: var(--pt-theme-accent, #238657);
-    color: #fff;
-  }
-
-  .money-page-intent-secondary {
-    border: 1px solid var(--pt-theme-border, #d9e2e7);
-    color: var(--pt-theme-text, #12342f);
-    background: transparent;
-  }
-
   .recommendation-journey-state {
     display: grid;
     gap: 1.25rem;
@@ -881,17 +762,6 @@ const relatedItems = relatedEntries.map((entry) => ({
     color: var(--pt-theme-accent, #238657);
   }
   @media (max-width: 640px) {
-    .money-page-intent-entry {
-      align-items: stretch;
-      flex-direction: column;
-      margin-top: 1.25rem;
-    }
-
-    .money-page-intent-actions {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
     .recommendation-journey-state {
       margin-block: 2rem;
       padding: 1.25rem;
