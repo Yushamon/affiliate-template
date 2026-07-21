@@ -1,10 +1,17 @@
 ---
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+
 type Item = {
+  kind?: "product" | "comparison" | "guide" | "manufacturer";
   eyebrow: string;
   title: string;
-  text: string;
+  text?: string;
   href: string;
   label: string;
+  image?: { src: any; alt?: string };
+  score?: number;
+  stat?: { value: string; label: string };
+  highlights?: string[];
 };
 
 interface Props {
@@ -14,16 +21,18 @@ interface Props {
 }
 
 const {
-  title = "Passend weiterentscheiden",
-  intro = "Nutze den nächsten Schritt, der zu deiner aktuellen Auswahl passt.",
+  title = "Deine nächsten Schritte",
+  intro = "Direkt zum passenden Produkt oder alle geeigneten Modelle vergleichen.",
   items
 } = Astro.props;
 
-const visibleItems = items.filter((item) => item?.href && item?.title && item?.label).slice(0, 2);
+const visibleItems = items
+  .filter((item) => item?.href && item?.title && item?.label)
+  .slice(0, 2);
 ---
 
 {visibleItems.length > 0 && (
-  <section class="pt-next-steps" aria-labelledby="pt-next-steps-title">
+  <section class="pt-next-steps" aria-labelledby="pt-next-steps-title" data-feature="recommendation-cards-2.0">
     <header class="pt-next-steps__header">
       <p class="pt-next-steps__eyebrow">Nächster Schritt</p>
       <h2 id="pt-next-steps-title">{title}</h2>
@@ -31,175 +40,164 @@ const visibleItems = items.filter((item) => item?.href && item?.title && item?.l
     </header>
 
     <div class="pt-next-steps__grid">
-      {visibleItems.map((item) => (
-        <a class="pt-next-steps__card" href={item.href}>
-          <span class="pt-next-steps__label">{item.eyebrow}</span>
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
-          <strong>{item.label}<span aria-hidden="true"> →</span></strong>
-        </a>
-      ))}
+      {visibleItems.map((item) => {
+        const kind = item.kind ?? "comparison";
+        const highlights = (item.highlights ?? []).filter(Boolean).slice(0, 3);
+
+        return (
+          <a class:list={["pt-next-steps__card", `pt-next-steps__card--${kind}`]} href={item.href}>
+            {item.image && (
+              <div class="pt-next-steps__media">
+                <OptimizedImage
+                  src={item.image.src}
+                  alt={item.image.alt ?? item.title}
+                  width={360}
+                  height={270}
+                  layout="constrained"
+                />
+              </div>
+            )}
+
+            <div class="pt-next-steps__body">
+              <div class="pt-next-steps__topline">
+                <span class="pt-next-steps__label">{item.eyebrow}</span>
+                {typeof item.score === "number" && (
+                  <span class="pt-next-steps__score">
+                    <strong>{Math.round(item.score)}</strong><small>/ 100</small>
+                  </span>
+                )}
+                {typeof item.score !== "number" && item.stat && (
+                  <span class="pt-next-steps__stat">
+                    <strong>{item.stat.value}</strong><small>{item.stat.label}</small>
+                  </span>
+                )}
+              </div>
+
+              <h3>{item.title}</h3>
+
+              {highlights.length > 0 ? (
+                <ul class="pt-next-steps__highlights">
+                  {highlights.map((highlight) => <li>{highlight}</li>)}
+                </ul>
+              ) : (
+                item.text && <p>{item.text}</p>
+              )}
+
+              <strong class="pt-next-steps__cta">{item.label}<span aria-hidden="true">→</span></strong>
+            </div>
+          </a>
+        );
+      })}
     </div>
   </section>
 )}
 
 <style>
   .pt-next-steps {
+    --next-bg: linear-gradient(145deg, #0a4d3f 0%, #082f2a 100%);
+    --next-card: rgba(255, 255, 255, 0.075);
+    --next-border: rgba(184, 239, 197, 0.22);
+    --next-text: #f8fafc;
+    --next-muted: #d4e2dc;
+    --next-accent: #63e6a3;
     width: min(100%, 1120px);
     margin: clamp(2.5rem, 6vw, 5rem) auto;
-    padding: clamp(1.25rem, 3vw, 2rem);
-    border: 1px solid var(--border-color, rgba(15, 23, 42, 0.12));
+    padding: clamp(1.2rem, 3vw, 2rem);
+    border: 1px solid rgba(184, 239, 197, 0.2);
     border-radius: 24px;
-    background: var(--surface-color, #fff);
-    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.07);
+    color: var(--next-text);
+    background: var(--next-bg);
+    box-shadow: 0 22px 60px rgba(4, 24, 20, 0.25);
   }
-  .pt-next-steps__header { max-width: 760px; margin-bottom: 1.25rem; }
+  .pt-next-steps__header { max-width: 700px; margin-bottom: 1.25rem; }
   .pt-next-steps__eyebrow, .pt-next-steps__label {
-    margin: 0 0 0.45rem;
-    color: var(--accent-color, #2e7d32);
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    margin: 0; color: var(--next-accent); font-size: .75rem; font-weight: 850;
+    letter-spacing: .09em; text-transform: uppercase;
   }
-  .pt-next-steps__header h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1.15; }
-  .pt-next-steps__header > p:last-child { margin: 0.7rem 0 0; color: var(--text-muted, #475569); }
-  .pt-next-steps__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .pt-next-steps__header h2 {
+    margin: .45rem 0 0; color: var(--next-text);
+    font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1.12;
+  }
+  .pt-next-steps__header > p:last-child {
+    max-width: 58ch; margin: .65rem 0 0; color: var(--next-muted); line-height: 1.55;
+  }
+  .pt-next-steps__grid {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
+  }
   .pt-next-steps__card {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-    padding: clamp(1.1rem, 2.5vw, 1.5rem);
-    border: 1px solid var(--border-color, rgba(15, 23, 42, 0.12));
-    border-radius: 18px;
-    background: var(--surface-subtle, rgba(248, 250, 252, 0.8));
-    color: inherit;
-    text-decoration: none;
-    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    display: grid; min-width: 0; overflow: hidden; border: 1px solid var(--next-border);
+    border-radius: 20px; color: var(--next-text); background: var(--next-card);
+    text-decoration: none; transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .pt-next-steps__card--product {
+    grid-template-columns: minmax(120px, 34%) minmax(0, 1fr);
+    border-color: rgba(99, 230, 163, .58);
+    background: linear-gradient(145deg, rgba(99,230,163,.15), rgba(255,255,255,.06));
   }
   .pt-next-steps__card:hover, .pt-next-steps__card:focus-visible {
-    transform: translateY(-2px);
-    border-color: var(--accent-color, #2e7d32);
-    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
-    outline: none;
+    transform: translateY(-2px); border-color: var(--next-accent);
+    box-shadow: 0 14px 34px rgba(3, 20, 16, .28); outline: none;
   }
-  .pt-next-steps__card h3 { margin: 0; font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.3; }
-  .pt-next-steps__card p { margin: 0.7rem 0 1rem; color: var(--text-muted, #475569); line-height: 1.6; }
-  .pt-next-steps__card strong { margin-top: auto; color: var(--accent-color, #2e7d32); }
-  @media (max-width: 720px) {
-    .pt-next-steps { border-radius: 20px; }
-    .pt-next-steps__grid { grid-template-columns: 1fr; }
+  .pt-next-steps__media {
+    min-height: 100%; padding: .8rem; background: rgba(255,255,255,.94);
   }
-  :global([data-theme="dark"]) .pt-next-steps,
-  :global(html.dark) .pt-next-steps {
-    --surface-color: #111827;
-    --surface-subtle: rgba(30, 41, 59, 0.72);
-    --text-muted: #cbd5e1;
-    --border-color: rgba(148, 163, 184, 0.24);
+  .pt-next-steps__media :global(picture), .pt-next-steps__media :global(img) {
+    display: block; width: 100%; height: 100%;
   }
-</style>
-
-<style is:global>
-  /* pfotentechnik-mobile-ux-hotfix-4.2 */
-  @media (prefers-color-scheme: dark) {
-    .pt-next-steps {
-      --surface-color: #101f32;
-      --surface-subtle: #16263c;
-      --text-muted: #b8c4d3;
-      --border-color: rgba(203, 213, 225, 0.16);
-      --accent-color: #5ee19a;
-      color: #f8fafc;
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
-    }
-
-    .pt-next-steps__header h2,
-    .pt-next-steps__card h3 {
-      color: #f8fafc;
-    }
-
-    .pt-next-steps__card {
-      color: #f8fafc;
-    }
+  .pt-next-steps__media :global(img) { object-fit: contain; border-radius: 14px; }
+  .pt-next-steps__body {
+    display: flex; min-width: 0; flex-direction: column; padding: clamp(1.05rem, 2.5vw, 1.4rem);
   }
-</style>
-
-<style is:global>
-  /* money-pages-next-steps-4.3 */
-  .pt-next-steps {
-    --next-bg: linear-gradient(145deg, #0a4d3f 0%, #0b3e36 100%);
-    --next-card: rgba(255, 255, 255, 0.08);
-    --next-card-border: rgba(184, 239, 197, 0.24);
-    --next-text: #f8fafc;
-    --next-muted: #d7e4df;
-    --next-accent: #63e6a3;
-
-    color: var(--next-text);
-    border-color: rgba(184, 239, 197, 0.2);
-    background: var(--next-bg);
-    box-shadow: 0 22px 60px rgba(4, 24, 20, 0.24);
+  .pt-next-steps__topline {
+    display: flex; min-height: 2.3rem; align-items: flex-start; justify-content: space-between; gap: .75rem;
   }
-
-  .pt-next-steps__header h2,
+  .pt-next-steps__score, .pt-next-steps__stat {
+    display: inline-flex; flex: 0 0 auto; align-items: baseline; gap: .25rem; color: var(--next-accent);
+  }
+  .pt-next-steps__score strong, .pt-next-steps__stat strong { font-size: 1.35rem; line-height: 1; }
+  .pt-next-steps__score small, .pt-next-steps__stat small {
+    color: var(--next-muted); font-size: .67rem; font-weight: 700;
+  }
+  .pt-next-steps__stat { flex-direction: column; align-items: flex-end; gap: .1rem; }
   .pt-next-steps__card h3 {
-    color: var(--next-text);
+    margin: .35rem 0 0; color: var(--next-text); font-size: clamp(1.08rem, 2.2vw, 1.35rem);
+    line-height: 1.22; text-wrap: balance;
   }
-
-  .pt-next-steps__header > p:last-child,
   .pt-next-steps__card p {
-    color: var(--next-muted);
+    display: -webkit-box; margin: .7rem 0 1rem; overflow: hidden; color: var(--next-muted);
+    line-height: 1.55; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
   }
-
-  .pt-next-steps__eyebrow,
-  .pt-next-steps__label,
-  .pt-next-steps__card strong {
-    color: var(--next-accent);
+  .pt-next-steps__highlights {
+    display: grid; gap: .45rem; margin: .85rem 0 1rem; padding: 0; list-style: none;
   }
-
-  .pt-next-steps__card {
-    border-color: var(--next-card-border);
-    background: var(--next-card);
-    color: var(--next-text);
-    box-shadow: none;
+  .pt-next-steps__highlights li {
+    position: relative; margin: 0; padding-left: 1.25rem; color: var(--next-muted);
+    font-size: .9rem; line-height: 1.35;
   }
-
-  .pt-next-steps__card:first-child {
-    border-color: rgba(99, 230, 163, 0.6);
-    background: linear-gradient(
-      145deg,
-      rgba(99, 230, 163, 0.15),
-      rgba(255, 255, 255, 0.07)
-    );
+  .pt-next-steps__highlights li::before {
+    position: absolute; left: 0; color: var(--next-accent); font-weight: 900; content: "✓";
   }
-
-  .pt-next-steps__card:hover,
-  .pt-next-steps__card:focus-visible {
-    border-color: var(--next-accent);
-    box-shadow: 0 14px 34px rgba(3, 20, 16, 0.24);
+  .pt-next-steps__cta {
+    display: inline-flex; width: fit-content; margin-top: auto; align-items: center;
+    gap: .45rem; color: var(--next-accent); font-size: .95rem;
   }
+  .pt-next-steps__cta span { transition: transform 160ms ease; }
+  .pt-next-steps__card:hover .pt-next-steps__cta span { transform: translateX(3px); }
 
-  @media (prefers-color-scheme: dark) {
-    .pt-next-steps {
-      --next-bg: linear-gradient(145deg, #0a4d3f 0%, #082f2a 100%);
-      --next-card: rgba(15, 35, 47, 0.58);
-      --next-card-border: rgba(99, 230, 163, 0.26);
-      --next-text: #f8fafc;
-      --next-muted: #d5e2dd;
-      --next-accent: #63e6a3;
-    }
+  @media (max-width: 820px) {
+    .pt-next-steps__grid { grid-template-columns: 1fr; }
+    .pt-next-steps__card--product { grid-template-columns: 132px minmax(0, 1fr); }
   }
-
-  @media (max-width: 720px) {
-    .pt-next-steps {
-      padding: 1.35rem;
-    }
-
-    .pt-next-steps__grid {
-      gap: 0.85rem;
-    }
-
-    .pt-next-steps__card {
-      padding: 1.2rem;
-    }
+  @media (max-width: 520px) {
+    .pt-next-steps { padding: 1.15rem; border-radius: 20px; }
+    .pt-next-steps__header > p:last-child { font-size: .95rem; }
+    .pt-next-steps__card--product { grid-template-columns: 104px minmax(0, 1fr); }
+    .pt-next-steps__media { padding: .5rem; }
+    .pt-next-steps__body { padding: 1rem; }
+    .pt-next-steps__score strong, .pt-next-steps__stat strong { font-size: 1.12rem; }
+    .pt-next-steps__highlights li:nth-child(3) { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pt-next-steps__card, .pt-next-steps__cta span { transition: none; }
   }
 </style>
-

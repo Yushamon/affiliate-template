@@ -1,16 +1,5 @@
 export type RecommendationEntry = { data: Record<string, any> };
-export type RecommendationLink = {
-  kind?: "product" | "comparison" | "guide" | "manufacturer";
-  eyebrow: string;
-  title: string;
-  text?: string;
-  href: string;
-  label: string;
-  image?: { src: any; alt?: string };
-  score?: number;
-  stat?: { value: string; label: string };
-  highlights?: string[];
-};
+export type RecommendationLink = { eyebrow: string; title: string; text: string; href: string; label: string };
 
 type Topic = "feeder" | "fountain" | "gps" | "cat-flap" | "litter-box" | "health" | "nutrition";
 type Context = {
@@ -149,55 +138,14 @@ export const getBestProduct = (
 )[0]?.entry;
 
 const productLink = (entry: RecommendationEntry): RecommendationLink => ({
-  kind: "product",
-  eyebrow: "Top-Empfehlung",
-  title: entry.data.title,
+  eyebrow: "Top-Empfehlung", title: entry.data.title,
   text: entry.data.recommendation ?? "Öffne die vollständige redaktionelle Einordnung dieses Modells.",
-  href: `/produkt/${entry.data.slug}/`,
-  label: "Produkt ansehen",
-  image: entry.data.images
-    ? {
-        src:
-          entry.data.images.comparison?.src ??
-          entry.data.images.thumbnail?.src ??
-          entry.data.images.hero?.src ??
-          entry.data.images.comparison ??
-          entry.data.images.thumbnail ??
-          entry.data.images.hero,
-        alt:
-          entry.data.images.comparison?.alt ??
-          entry.data.images.thumbnail?.alt ??
-          entry.data.images.hero?.alt ??
-          entry.data.title
-      }
-    : undefined,
-  score:
-    typeof entry.data.score === "number"
-      ? entry.data.score
-      : typeof entry.data.rating === "number"
-        ? Math.round(entry.data.rating * 20)
-        : undefined,
-  highlights: [
-    ...asArray(entry.data.strengths),
-    ...asArray(entry.data.features)
-  ].map((value) => String(value)).filter(Boolean).slice(0, 3)
+  href: `/produkt/${entry.data.slug}/`, label: "Produkt ansehen"
 });
 const comparisonLink = (entry: RecommendationEntry): RecommendationLink => ({
-  kind: "comparison",
-  eyebrow: "Vergleich",
-  title: entry.data.title,
+  eyebrow: "Vergleich", title: entry.data.title,
   text: entry.data.description ?? "Vergleiche passende Modelle direkt miteinander.",
-  href: `/vergleiche/${entry.data.slug}/`,
-  label: "Zum Vergleich",
-  stat: {
-    value: String(asArray(entry.data.items).length || "Alle"),
-    label: asArray(entry.data.items).length === 1 ? "Modell" : "Modelle"
-  },
-  highlights: [
-    "Pfotentechnik-Score",
-    "Modelle direkt filtern",
-    "Stärken und Grenzen vergleichen"
-  ]
+  href: `/vergleiche/${entry.data.slug}/`, label: "Zum Vergleich"
 });
 const guideLink = (entry: RecommendationEntry): RecommendationLink => ({
   eyebrow: "Kaufberatung", title: entry.data.title,
