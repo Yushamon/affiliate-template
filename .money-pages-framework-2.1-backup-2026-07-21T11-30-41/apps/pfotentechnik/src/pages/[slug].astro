@@ -162,10 +162,6 @@ const comparisonProductEntries = comparisonProducts
   .filter((product): product is (typeof products)[number] => Boolean(product));
 
 const recommendationJourney = page.data.recommendationJourney;
-const isMoneyPage =
-  recommendationJourney?.mode === "filtered" ||
-  page.data.contentPlatform?.intent === "buying-guide" ||
-  page.data.contentPlatform?.intent === "comparison-support";
 
 const matchesRecommendationJourney = (product: (typeof products)[number]) => {
   if (!recommendationJourney || recommendationJourney.mode === "off") return true;
@@ -308,6 +304,53 @@ const relatedItems = relatedEntries.map((entry) => ({
       page={assembledPage}
       products={products}
     />
+    {
+      recommendationJourney && (
+        <section class="recommendation-journey-state">
+          {
+            journeyTopProduct ? (
+              <>
+                <div class="ranking-section-header">
+                  <p class="ranking-eyebrow">Top-Empfehlung</p>
+                  <h2>Die passendste dokumentierte Auswahl</h2>
+                  <p>Dieses Modell erfüllt die hinterlegten Eignungsfilter.</p>
+                </div>
+                <a class="decision-product-card" href={`/produkt/${journeyTopProduct.data.slug}/`}>
+                  <OptimizedImage
+                    src={journeyTopProduct.data.images.thumbnail?.src ?? journeyTopProduct.data.images.hero.src}
+                    alt={journeyTopProduct.data.images.thumbnail?.alt ?? journeyTopProduct.data.images.hero.alt}
+                    width={480}
+                    height={360}
+                    layout="constrained"
+                  />
+                  <div>
+                    <p>{journeyTopProduct.data.manufacturer.name} · {journeyTopProduct.data.score ?? toEditorialScore(journeyTopProduct.data.rating, 5)} Punkte</p>
+                    <h3>{journeyTopProduct.data.title}</h3>
+                    <p>{journeyTopProduct.data.recommendation}</p>
+                    <strong>Produkt ansehen</strong>
+                  </div>
+                </a>
+              </>
+            ) : (
+              <div class="recommendation-journey-empty">
+                <p class="ranking-eyebrow">Redaktionelle Einordnung</p>
+                <h2>{recommendationJourney.emptyTitle}</h2>
+                <p>{recommendationJourney.emptyText}</p>
+              </div>
+            )
+          }
+          {
+            journeyComparisonHref && (
+              <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
+                <span>{recommendationJourney.comparisonLabel}</span>
+                <strong>Zum Vergleich</strong>
+              </a>
+            )
+          }
+        </section>
+      )
+    }
+
     {
       topDecisionRecommendation && topDecisionProduct && (
         <section
@@ -510,53 +553,6 @@ const relatedItems = relatedEntries.map((entry) => ({
     </AutoLinkContent>
 
     {
-      recommendationJourney && (
-        <section class="recommendation-journey-state">
-          {
-            journeyTopProduct ? (
-              <>
-                <div class="ranking-section-header">
-                  <p class="ranking-eyebrow">Top-Empfehlung</p>
-                  <h2>Die passendste dokumentierte Auswahl</h2>
-                  <p>Dieses Modell erfüllt die hinterlegten Eignungsfilter.</p>
-                </div>
-                <a class="decision-product-card" href={`/produkt/${journeyTopProduct.data.slug}/`}>
-                  <OptimizedImage
-                    src={journeyTopProduct.data.images.thumbnail?.src ?? journeyTopProduct.data.images.hero.src}
-                    alt={journeyTopProduct.data.images.thumbnail?.alt ?? journeyTopProduct.data.images.hero.alt}
-                    width={480}
-                    height={360}
-                    layout="constrained"
-                  />
-                  <div>
-                    <p>{journeyTopProduct.data.manufacturer.name} · {journeyTopProduct.data.score ?? toEditorialScore(journeyTopProduct.data.rating, 5)} Punkte</p>
-                    <h3>{journeyTopProduct.data.title}</h3>
-                    <p>{journeyTopProduct.data.recommendation}</p>
-                    <strong>Produkt ansehen</strong>
-                  </div>
-                </a>
-              </>
-            ) : (
-              <div class="recommendation-journey-empty">
-                <p class="ranking-eyebrow">Redaktionelle Einordnung</p>
-                <h2>{recommendationJourney.emptyTitle}</h2>
-                <p>{recommendationJourney.emptyText}</p>
-              </div>
-            )
-          }
-          {
-            journeyComparisonHref && (
-              <a class="recommendation-journey-comparison" href={journeyComparisonHref}>
-                <span>{recommendationJourney.comparisonLabel}</span>
-                <strong>Zum Vergleich</strong>
-              </a>
-            )
-          }
-        </section>
-      )
-    }
-
-    {
       decisionRule?.sources && decisionRule.sources.length > 0 && (
         <section class="decision-template-section decision-template-sources">
           <h2>Fachquellen</h2>
@@ -574,7 +570,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
     {page.data.healthBridge && <HealthBridge {...page.data.healthBridge} />}
     {
-      !isMoneyPage && assembledPage.closingCta && closingProduct && (
+      assembledPage.closingCta && closingProduct && (
         <section class="pt-money-cta" aria-labelledby="pt-money-cta-title">
           <div>
             <span>{closingProduct.data.manufacturer.name}</span>
@@ -608,8 +604,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     <FAQ items={assembledPage.faq} />
   </article>
 
-{!isMoneyPage && (
-  <ConversionJourney
+<ConversionJourney
     title="Was jetzt sinnvoll ist"
     intro="Vertiefe das Thema oder gehe gezielt zur passenden Produkt- und Vergleichsebene weiter."
     items={[
@@ -636,7 +631,6 @@ const relatedItems = relatedEntries.map((entry) => ({
       }
     ]}
   />
-)}
 
   <RelatedArticles items={relatedItems} />
 </ProjectLayout>
@@ -762,12 +756,7 @@ const relatedItems = relatedEntries.map((entry) => ({
     color: var(--pt-theme-accent, #238657);
   }
   @media (max-width: 640px) {
-    .recommendation-journey-state {
-      margin-block: 2rem;
-      padding: 1.25rem;
-    }
     .recommendation-journey-comparison {
-      flex-direction: column;
       align-items: flex-start;
       flex-direction: column;
     }
