@@ -26,7 +26,6 @@
     "lint:content": "npm --workspace apps/pfotentechnik run lint:content",
     "lint:content:strict": "npm --workspace apps/pfotentechnik run lint:content:strict",
     "indexnow:pfotentechnik": "npm --workspace apps/pfotentechnik run indexnow:submit",
-    "indexnow:pfotentechnik:all": "npm --workspace apps/pfotentechnik run indexnow:submit:all",
-    "indexnow:status": "npm --workspace apps/pfotentechnik run indexnow:status"
+    "indexnow:pfotentechnik:all": "npm --workspace apps/pfotentechnik run indexnow:submit:all"
   }
 }

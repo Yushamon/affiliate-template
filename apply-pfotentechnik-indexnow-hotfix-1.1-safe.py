@@ -1,4 +1,42 @@
-#!/usr/bin/env node
+#!/usr/bin/env python3
+from pathlib import Path
+from datetime import datetime
+import json, subprocess, sys
+
+APP = Path('apps/pfotentechnik')
+APP_PACKAGE = APP / 'package.json'
+ROOT_PACKAGE = Path('package.json')
+SCRIPT = APP / 'scripts/submit-indexnow.mjs'
+
+def fail(msg):
+    print(f'FEHLER: {msg}', file=sys.stderr)
+    raise SystemExit(1)
+
+def find_root(start):
+    for p in (start, *start.parents):
+        if (p/APP_PACKAGE).is_file() and (p/ROOT_PACKAGE).is_file():
+            return p
+    fail('Repository-Root nicht gefunden.')
+
+def run(cmd, cwd):
+    print('$', ' '.join(cmd))
+    if subprocess.run(cmd, cwd=cwd).returncode:
+        raise RuntimeError('Befehl fehlgeschlagen: ' + ' '.join(cmd))
+
+def write_json(path, data):
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+root = find_root(Path.cwd().resolve())
+app_pkg_path = root / APP_PACKAGE
+root_pkg_path = root / ROOT_PACKAGE
+script_path = root / SCRIPT
+if not script_path.is_file():
+    fail(f'IndexNow-Script fehlt: {SCRIPT}')
+
+app_pkg = json.loads(app_pkg_path.read_text(encoding='utf-8'))
+root_pkg = json.loads(root_pkg_path.read_text(encoding='utf-8'))
+
+replacement = r'''#!/usr/bin/env node
 /** pfotentechnik-indexnow-1.1 */
 import { execFileSync } from "node:child_process";
 import { readFileSync, existsSync, readdirSync } from "node:fs";
@@ -114,3 +152,42 @@ async function submit(urls) {
 }
 if (statusOnly) { const healthy = await printStatus(); process.exitCode = healthy ? 0 : 1; }
 else { const urls = explicitUrls.length ? unique(explicitUrls) : submitAll ? sitemapUrls() : changedUrls(); await submit(urls); }
+'''
+
+app_pkg.setdefault('scripts', {}).update({
+    'indexnow:status': 'node scripts/submit-indexnow.mjs --status',
+    'indexnow:submit': 'node scripts/submit-indexnow.mjs --changed',
+    'indexnow:submit:all': 'node scripts/submit-indexnow.mjs --all',
+    'indexnow:dry-run': 'node scripts/submit-indexnow.mjs --changed --dry-run',
+    'indexnow:dry-run:all': 'node scripts/submit-indexnow.mjs --all --dry-run',
+})
+root_pkg.setdefault('scripts', {}).update({
+    'indexnow:status': 'npm --workspace apps/pfotentechnik run indexnow:status',
+    'indexnow:pfotentechnik': 'npm --workspace apps/pfotentechnik run indexnow:submit',
+    'indexnow:pfotentechnik:all': 'npm --workspace apps/pfotentechnik run indexnow:submit:all',
+})
+
+originals = {p: (root/p).read_text(encoding='utf-8') for p in [APP_PACKAGE, ROOT_PACKAGE, SCRIPT]}
+backup = root / f'.indexnow-1.1-backup-{datetime.now().strftime("%Y-%m-%dT%H-%M-%S")}'
+for rel, content in originals.items():
+    dest = backup / rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(content, encoding='utf-8')
+
+try:
+    write_json(app_pkg_path, app_pkg)
+    write_json(root_pkg_path, root_pkg)
+    script_path.write_text(replacement, encoding='utf-8')
+    run(['npm', 'run', 'build:pfotentechnik'], root)
+    run(['npm', '--workspace', 'apps/pfotentechnik', 'run', 'indexnow:dry-run:all'], root)
+except Exception as exc:
+    print(f'Validierung fehlgeschlagen: {exc}', file=sys.stderr)
+    print('Automatischer Rollback wird ausgeführt.', file=sys.stderr)
+    for rel, content in originals.items():
+        (root/rel).write_text(content, encoding='utf-8')
+    raise SystemExit(1)
+
+print('IndexNow Hotfix 1.1 erfolgreich installiert.')
+print('Status prüfen: npm run indexnow:status')
+print('Danach: npm run indexnow:pfotentechnik:all')
+print(f'Backup: {backup}')

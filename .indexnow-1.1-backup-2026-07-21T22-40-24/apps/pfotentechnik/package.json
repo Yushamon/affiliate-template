@@ -22,8 +22,7 @@
     "indexnow:submit": "node scripts/submit-indexnow.mjs --changed",
     "indexnow:submit:all": "node scripts/submit-indexnow.mjs --all",
     "indexnow:dry-run": "node scripts/submit-indexnow.mjs --changed --dry-run",
-    "indexnow:dry-run:all": "node scripts/submit-indexnow.mjs --all --dry-run",
-    "indexnow:status": "node scripts/submit-indexnow.mjs --status"
+    "indexnow:dry-run:all": "node scripts/submit-indexnow.mjs --all --dry-run"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
