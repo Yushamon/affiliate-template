@@ -24,8 +24,6 @@
     "build:content-graph": "npm --workspace apps/pfotentechnik run build:content-graph",
     "audit:content-graph": "npm --workspace apps/pfotentechnik run audit:content-graph",
     "lint:content": "npm --workspace apps/pfotentechnik run lint:content",
-    "lint:content:strict": "npm --workspace apps/pfotentechnik run lint:content:strict",
-    "indexnow:pfotentechnik": "npm --workspace apps/pfotentechnik run indexnow:submit",
-    "indexnow:pfotentechnik:all": "npm --workspace apps/pfotentechnik run indexnow:submit:all"
+    "lint:content:strict": "npm --workspace apps/pfotentechnik run lint:content:strict"
   }
 }

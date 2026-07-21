@@ -18,11 +18,7 @@
     "audit:repository:strict": "node scripts/audit-repository.mjs --strict",
     "audit:gps": "node scripts/audit-gps-cluster.mjs",
     "audit:suitability": "node scripts/audit-product-suitability.mjs",
-    "audit:recommendations": "node ../../scripts/audit-recommendation-engine-4.mjs",
-    "indexnow:submit": "node scripts/submit-indexnow.mjs --changed",
-    "indexnow:submit:all": "node scripts/submit-indexnow.mjs --all",
-    "indexnow:dry-run": "node scripts/submit-indexnow.mjs --changed --dry-run",
-    "indexnow:dry-run:all": "node scripts/submit-indexnow.mjs --all --dry-run"
+    "audit:recommendations": "node ../../scripts/audit-recommendation-engine-4.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
