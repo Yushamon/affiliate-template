@@ -1,0 +1,135 @@
+diff --git a/apps/pfotentechnik/src/content/pages/gps-tracker.md b/apps/pfotentechnik/src/content/pages/gps-tracker.md
+index 519d9d8..7653193 100644
+--- a/apps/pfotentechnik/src/content/pages/gps-tracker.md
++++ b/apps/pfotentechnik/src/content/pages/gps-tracker.md
+@@ -18,7 +18,7 @@ tags: ["GPS-Tracker", "Hund", "Katze", "Kaufberatung", "Ortung", "Datenschutz"]
+ author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
+ publishedAt: "2026-07-20"
+ updatedAt: "2026-07-20"
+-navigation: { show: true, label: "GPS-Tracker", section: "wissen", order: 15 }
++navigation: { show: true, label: "GPS-Tracker", section: "gps-tracker", order: 35 }
+ hub: { sections: ["wissen", "gps-tracker"], title: "GPS-Tracker für Hunde und Katzen", description: "Cornerstone zu Technik, Tier-Fit, Kosten und aktuellen Modellen.", icon: "📍", order: 360, featured: true }
+ hubPriority: 120
+ project: "pfotentechnik"
+diff --git a/apps/pfotentechnik/src/domain/content/registry.ts b/apps/pfotentechnik/src/domain/content/registry.ts
+index 2431cd1..425a53d 100644
+--- a/apps/pfotentechnik/src/domain/content/registry.ts
++++ b/apps/pfotentechnik/src/domain/content/registry.ts
+@@ -495,11 +495,29 @@ export const getNavigationItems =
+           a.label.localeCompare(b.label, "de")
+       );
+ 
+-    return items.filter(
++    const requiredItems: NavigationItem[] = [
++      { label: "Wissen & Ratgeber", href: "/wissen/", order: 30 },
++      { label: "GPS-Tracker", href: "/gps-tracker/", order: 35 }
++    ];
++
++    const mergedItems = [
++      ...items.filter(
++        (item) =>
++          !requiredItems.some(
++            (required) => required.href === item.href
++          )
++      ),
++      ...requiredItems
++    ].sort(
++      (a, b) =>
++        a.order - b.order ||
++        a.label.localeCompare(b.label, "de")
++    );
++
++    return mergedItems.filter(
+       (item, index) =>
+-        items.findIndex(
+-          (candidate) =>
+-            candidate.href === item.href
++        mergedItems.findIndex(
++          (candidate) => candidate.href === item.href
+         ) === index
+     );
+   };
+diff --git a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+index 1ee0bd4..8c93d03 100644
+--- a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
++++ b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+@@ -5142,3 +5142,79 @@ main.container.container--home .home3-hero__shade {
+   }
+ }
+ /* End PT premium comparison entry cards 6.0 */
++
++/* PT home comparison cards + primary nav 6.4 */
++@media (max-width:720px){
++  main.container.container--home .home41-decision .home41-decision__grid{
++    display:grid;grid-template-columns:1fr;gap:.7rem;
++  }
++  main.container.container--home .home41-decision .home41-decision__card{
++    position:relative;display:grid!important;width:100%;min-height:112px;
++    grid-template-columns:96px minmax(0,1fr);grid-template-rows:112px;
++    overflow:hidden;border-radius:1rem;box-shadow:none;
++  }
++  main.container.container--home .home41-decision .home41-decision__media{
++    position:relative;display:block!important;width:96px;min-width:96px;
++    height:112px;min-height:112px;grid-column:1;grid-row:1;overflow:hidden;
++    border:0;border-radius:0;
++  }
++  main.container.container--home .home41-decision .home41-decision__media picture,
++  main.container.container--home .home41-decision .home41-decision__media img{
++    display:block;width:100%;height:100%;
++  }
++  main.container.container--home .home41-decision .home41-decision__media img{
++    max-width:none;object-fit:cover;object-position:center;
++  }
++  main.container.container--home .home41-decision .home41-decision__media::after{
++    position:absolute;inset:0;background:linear-gradient(90deg,transparent 48%,rgba(16,29,47,.5));
++    content:"";pointer-events:none;
++  }
++  main.container.container--home .home41-decision .home41-decision__quick-icon{
++    position:absolute;z-index:3;top:50%;left:79px;display:grid;width:34px;height:34px;
++    place-items:center;transform:translateY(-50%);
++  }
++  main.container.container--home .home41-decision .home41-decision__quick-icon svg{
++    width:17px;height:17px;
++  }
++  main.container.container--home .home41-decision .home41-decision__content{
++    display:flex!important;min-width:0;height:112px;grid-column:2;grid-row:1;
++    flex-direction:column;justify-content:center;align-items:flex-start;
++    padding:.7rem 2.75rem .7rem 1.1rem;
++  }
++  main.container.container--home .home41-decision .home41-decision__animal{
++    margin:0 0 .2rem;font-size:.56rem;line-height:1.1;
++  }
++  main.container.container--home .home41-decision .home41-decision__content h3{
++    max-width:19ch;margin:0;font-size:clamp(.98rem,4.25vw,1.12rem);
++    line-height:1.13;letter-spacing:-.018em;
++  }
++  main.container.container--home .home41-decision .home41-decision__meta{margin-top:.45rem}
++  main.container.container--home .home41-decision .home41-decision__meta strong{
++    min-height:23px;padding:.2rem .48rem;font-size:.61rem;
++  }
++  main.container.container--home .home41-decision .home41-decision__content>p,
++  main.container.container--home .home41-decision .home41-decision__highlights,
++  main.container.container--home .home41-decision .home41-decision__content>b,
++  main.container.container--home .home41-decision .home41-decision__meta small{
++    display:none!important;
++  }
++  main.container.container--home .home41-decision .home41-decision__arrow{
++    position:absolute;z-index:4;top:50%;right:.72rem;bottom:auto;display:grid;
++    width:28px;height:28px;place-items:center;transform:translateY(-50%);
++  }
++}
++@media (max-width:380px){
++  main.container.container--home .home41-decision .home41-decision__card{
++    grid-template-columns:84px minmax(0,1fr);
++  }
++  main.container.container--home .home41-decision .home41-decision__media{
++    width:84px;min-width:84px;
++  }
++  main.container.container--home .home41-decision .home41-decision__quick-icon{left:68px}
++}
++@media (min-width:1051px){
++  main.container.container--home .home41-decision .home41-decision__grid{
++    grid-template-columns:repeat(3,minmax(0,1fr));
++  }
++}
++/* End PT home comparison cards + primary nav 6.4 */

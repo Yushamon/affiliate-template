@@ -18,7 +18,7 @@ tags: ["GPS-Tracker", "Hund", "Katze", "Kaufberatung", "Ortung", "Datenschutz"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-20"
-navigation: { show: true, label: "GPS-Tracker", section: "wissen", order: 15 }
+navigation: { show: true, label: "GPS-Tracker", section: "gps-tracker", order: 35 }
 hub: { sections: ["wissen", "gps-tracker"], title: "GPS-Tracker für Hunde und Katzen", description: "Cornerstone zu Technik, Tier-Fit, Kosten und aktuellen Modellen.", icon: "📍", order: 360, featured: true }
 hubPriority: 120
 project: "pfotentechnik"

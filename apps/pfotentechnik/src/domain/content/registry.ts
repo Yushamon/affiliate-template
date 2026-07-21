@@ -495,11 +495,29 @@ export const getNavigationItems =
           a.label.localeCompare(b.label, "de")
       );
 
-    return items.filter(
+    const requiredItems: NavigationItem[] = [
+      { label: "Wissen & Ratgeber", href: "/wissen/", order: 30 },
+      { label: "GPS-Tracker", href: "/gps-tracker/", order: 35 }
+    ];
+
+    const mergedItems = [
+      ...items.filter(
+        (item) =>
+          !requiredItems.some(
+            (required) => required.href === item.href
+          )
+      ),
+      ...requiredItems
+    ].sort(
+      (a, b) =>
+        a.order - b.order ||
+        a.label.localeCompare(b.label, "de")
+    );
+
+    return mergedItems.filter(
       (item, index) =>
-        items.findIndex(
-          (candidate) =>
-            candidate.href === item.href
+        mergedItems.findIndex(
+          (candidate) => candidate.href === item.href
         ) === index
     );
   };
