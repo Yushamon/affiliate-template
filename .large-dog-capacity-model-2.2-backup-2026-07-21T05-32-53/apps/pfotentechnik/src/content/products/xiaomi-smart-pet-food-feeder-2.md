@@ -138,12 +138,6 @@ specs:
     value: "Katzen und Hunde bis 40 cm Schulterhöhe"
   - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
-  largeDogFitReason: "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
-  largeDogFit: "conditional"
-  manufacturerSizeClaim: "max-40cm"
-  kibbleMaxMm: 12
-  portionGrams: 10
-  reservoirLiters: 5
   animal: ["cat", "dog"]
   petSize: ["small", "medium"]
 faq:

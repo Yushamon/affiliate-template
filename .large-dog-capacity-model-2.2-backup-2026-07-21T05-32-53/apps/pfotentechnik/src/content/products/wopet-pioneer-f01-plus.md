@@ -119,15 +119,6 @@ specs:
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  largeDogFitReason: "Technisch stark für größere Rationen: 7 L Vorrat, bis ca. 400 g je Mahlzeit, Kroketten bis 12 mm. Napf und Standfestigkeit individuell prüfen."
-  largeDogFit: "technical-fit"
-  manufacturerSizeClaim: "unknown"
-  kibbleMaxMm: 12
-  maxMealGrams: 400
-  maxPortionsPerMeal: 40
-  portionGrams: 10
-  reservoirLiters: 7
 faq: []
 useCase: "Für Katzen sowie kleine bis mittelgroße Hunde mit hohem Trockenfutterbedarf und ohne Bedarf an App-Steuerung"
 capacity: "7 Liter"

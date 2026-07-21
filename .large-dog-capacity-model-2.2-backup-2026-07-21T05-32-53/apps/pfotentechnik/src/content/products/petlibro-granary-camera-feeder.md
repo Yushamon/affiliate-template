@@ -63,16 +63,6 @@ specs:
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 comparisonFilters:
-  largeDogFitReason: "Technisch stark für größere Rationen: 5 L Vorrat, bis ca. 500 g je Mahlzeit, Kroketten bis 15 mm. Napf und Standfestigkeit individuell prüfen."
-  largeDogFit: "technical-fit"
-  manufacturerSizeClaim: "small-medium"
-  kibbleMaxMm: 15
-  maxMealMl: 1000
-  maxMealGrams: 500
-  maxPortionsPerMeal: 50
-  portionMl: 20
-  portionGrams: 10
-  reservoirLiters: 5
   animal: ["cat", "dog"]
   petSize: ["small", "medium"]
 faq:

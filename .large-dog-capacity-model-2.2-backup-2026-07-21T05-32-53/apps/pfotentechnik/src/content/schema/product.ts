@@ -272,17 +272,6 @@ const productComparisonFiltersSchema =
       .boolean()
       .optional(),
 
-    reservoirLiters: z.number().positive().optional(),
-    portionGrams: z.number().positive().optional(),
-    portionMl: z.number().positive().optional(),
-    maxPortionsPerMeal: z.number().int().positive().optional(),
-    maxMealGrams: z.number().positive().optional(),
-    maxMealMl: z.number().positive().optional(),
-    kibbleMaxMm: z.number().positive().optional(),
-    manufacturerSizeClaim: z.enum(["large","all-dogs","small-medium","small","max-40cm","cats-small-pets","unknown"]).default("unknown"),
-    largeDogFit: z.enum(["technical-fit","conditional","limited","unknown"]).default("unknown"),
-    largeDogFitReason: z.string().optional(),
-
     priceTier: z
       .enum([
         "budget",

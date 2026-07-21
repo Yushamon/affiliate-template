@@ -126,13 +126,6 @@ specs:
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  largeDogFitReason: "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 15 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
-  largeDogFit: "conditional"
-  manufacturerSizeClaim: "cats-small-pets"
-  kibbleMaxMm: 15
-  portionGrams: 8
-  reservoirLiters: 5
 faq:
   - question: "Teilt der oneisall 5L das Futter exakt gleich auf?"
     answer: "Nein. Der Verteiler teilt die Ausgabe, kleine Unterschiede zwischen beiden Näpfen sind möglich."

@@ -118,11 +118,6 @@ specs:
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  largeDogFitReason: "Technisch grundsätzlich interessant: 6 L Vorrat. Maximale Mahlzeit ist noch nicht vollständig belegt."
-  largeDogFit: "conditional"
-  manufacturerSizeClaim: "unknown"
-  reservoirLiters: 6
 faq:
   - question: "Kann der HoneyGuardian S305D Nassfutter ausgeben?"
     answer: "Nein. Das Modell ist für Trockenfutter vorgesehen."

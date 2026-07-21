@@ -65,15 +65,6 @@ specs:
   - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
   - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  largeDogFitReason: "Für große Hunde nur eingeschränkt: 3 L Vorrat, bis ca. 50 g je Mahlzeit, Kroketten bis 12 mm."
-  largeDogFit: "limited"
-  manufacturerSizeClaim: "small"
-  kibbleMaxMm: 12
-  maxMealGrams: 50
-  maxPortionsPerMeal: 5
-  portionGrams: 10
-  reservoirLiters: 3
 faq:
   - { question: "Erkennt der YumShare Solo 2 mehrere Katzen?", answer: "PETKIT bewirbt eine Gesichtserkennung für mehrere Tiere. Die Zuverlässigkeit hängt von Umgebung, Blickwinkel und Profilbildern ab." }
   - { question: "Kann Nassfutter verwendet werden?", answer: "Nein. Das Modell ist nur für Trockenfutter und passende gefriergetrocknete Stücke geeignet." }

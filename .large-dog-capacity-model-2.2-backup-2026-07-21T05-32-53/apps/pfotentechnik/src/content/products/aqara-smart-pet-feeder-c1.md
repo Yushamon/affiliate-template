@@ -63,13 +63,6 @@ specs:
   - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
-comparisonFilters:
-  largeDogFitReason: "Technisch grundsätzlich interessant: 4 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
-  largeDogFit: "conditional"
-  manufacturerSizeClaim: "small-medium"
-  kibbleMaxMm: 12
-  portionGrams: 10
-  reservoirLiters: 4
 faq:
   - { question: "Funktioniert der Aqara C1 ohne Internet?", answer: "Bereits gespeicherte Fütterungspläne sollen lokal weiterlaufen. Für Fernzugriff und viele Automationen ist der Aqara Hub erforderlich." }
   - { question: "Misst der C1 wirklich Gramm?", answer: "Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage." }
