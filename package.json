@@ -33,6 +33,8 @@
     "gsc:audit": "npm --workspace apps/pfotentechnik run gsc:audit",
     "gsc:report": "npm --workspace apps/pfotentechnik run gsc:report",
     "ratings:fix": "node apps/pfotentechnik/scripts/normalize-product-ratings.mjs",
-    "ratings:check": "node apps/pfotentechnik/scripts/normalize-product-ratings.mjs --check"
+    "ratings:check": "node apps/pfotentechnik/scripts/normalize-product-ratings.mjs --check",
+    "gsc:sync": "npm --workspace apps/pfotentechnik run gsc:sync",
+    "seo:sync": "npm --workspace apps/pfotentechnik run seo:sync"
   }
 }
