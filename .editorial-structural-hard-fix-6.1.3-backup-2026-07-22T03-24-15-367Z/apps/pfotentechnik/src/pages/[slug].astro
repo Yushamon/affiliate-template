@@ -80,11 +80,11 @@ const premiumProducts = products.map((product) => ({
   tags: product.data.tags,
   image: {
     src:
-      product.data.images.hero.src ??
-      product.data.images.thumbnail?.src,
+      product.data.images.thumbnail?.src ??
+      product.data.images.hero.src,
     alt:
-      product.data.images.hero.alt ??
-      product.data.images.thumbnail?.alt,
+      product.data.images.thumbnail?.alt ??
+      product.data.images.hero.alt,
   },
 }));
 
