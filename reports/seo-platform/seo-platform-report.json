@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T04:44:19.398Z",
+  "generatedAt": "2026-07-22T17:25:38.857Z",
   "errors": 0,
   "warnings": 38,
   "portfolio": [],
@@ -2876,7 +2876,16 @@
         "faq": [
           "question: \"Brauche ich zwingend einen Futterautomaten mit App?",
           "question: \"Kann ein Futterautomat mein Haustier tagsüber komplett versorgen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -2950,7 +2959,16 @@
         "faq": [
           "question: \"Eignen sich Katzen-Futterautomaten für Hunde?",
           "question: \"Ist ein 6-Liter-Behälter automatisch besser für große Hunde?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3030,7 +3048,17 @@
           "question: \"Welcher Futterautomat eignet sich für Nassfutter?",
           "question: \"Welcher Automat verhindert Futterklau?",
           "question: \"Wie viele Mahlzeiten sollte der Automat ausgeben?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3097,7 +3125,18 @@
         "faq": [
           "question: \"Brauchen kleine Hunde spezielle Futterautomaten?",
           "question: \"Sind große Futterbehälter für kleine Hunde sinnvoll?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3158,7 +3197,16 @@
         "faq": [
           "question: \"Reicht ein Futterautomat für zwei Katzen?",
           "question: \"Sind Chip-Futterautomaten sinnvoll?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3214,7 +3262,16 @@
           "question: \"Kann jeder Futterautomat Nassfutter ausgeben?",
           "question: \"Braucht ein Nassfutterautomat eine Kühlung?",
           "question: \"Wie oft sollte ein Nassfutterautomat gereinigt werden?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3267,7 +3324,17 @@
         "faq": [
           "question: \"Warum profitieren ältere Katzen von einem Futterautomaten?",
           "question: \"Ist ein Futterautomat für Nassfutter geeignet?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3331,7 +3398,18 @@
         "faq": [
           "question: \"Wie oft sollte ein Welpe gefüttert werden?",
           "question: \"Kann ein Futterautomat die Betreuung ersetzen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3404,7 +3482,17 @@
           "question: \"Reicht eine Doppelschale für zwei Katzen?",
           "question: \"Braucht jede Katze einen eigenen Mikrochip-Napf?",
           "question: \"Kann ein Dual-Hopper zwei Futtersorten trennen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3467,7 +3555,16 @@
         "faq": [
           "question: \"Brauche ich unbedingt einen Akku?",
           "question: \"Wie lange hält ein Batterie-Backup?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3530,7 +3627,16 @@
         "faq": [
           "question: \"Warum ist Edelstahl hygienischer?",
           "question: \"Ist Edelstahl für Hunde und Katzen geeignet?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3601,7 +3707,16 @@
           "question: \"Erkennt eine Kamera, welches Tier gefressen hat?",
           "question: \"Braucht ein Kamera-Futterautomat ein Cloud-Abo?",
           "question: \"Funktioniert der Zeitplan ohne Internet?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3671,7 +3786,16 @@
         "faq": [
           "question: \"Ist ein Automat ohne WLAN zuverlässiger?",
           "question: \"Welches Modell eignet sich für Nassfutter?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3724,7 +3848,16 @@
         "faq": [
           "question: \"Sind günstige Futterautomaten zuverlässig?",
           "question: \"Lohnt sich ein teureres Modell?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -3984,7 +4117,16 @@
           "question: \"Welche Stromversorgung ist am zuverlässigsten?",
           "question: \"Funktionieren Kamera und WLAN im Batteriebetrieb?",
           "question: \"Sind wiederaufladbare Batterien erlaubt?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -4048,7 +4190,16 @@
           "question: \"Funktioniert ein WLAN-Futterautomat ohne Internet?",
           "question: \"Sind eingelegte Batterien automatisch ein Backup?",
           "question: \"Wie teste ich den Notbetrieb?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -4145,10 +4296,10 @@
           "cta": "Gewicht und Körperzustand richtig kontrollieren"
         },
         "closingCta": {
-          "title": "Für nachvollziehbare Trockenfutterportionen",
-          "text": "Ein Modell mit kleinen Dosierschritten und zusätzlicher Gewichtskontrolle kann einen bestehenden Gewichtsplan sinnvoll unterstützen.",
+          "title": "Passende Modelle nach Portionskontrolle vergleichen",
+          "text": "Achte auf kleine Ausgabeschritte, kontrollierten Futterzugang und eine nachvollziehbare Dokumentation.",
           "productKey": "xiaomi-smart-pet-food-feeder-2",
-          "primaryLabel": "Aktuellen Preis prüfen",
+          "primaryLabel": "Passende Modelle vergleichen",
           "secondaryHref": "/futterautomat-und-ernaehrung/",
           "secondaryLabel": "Tagesration richtig planen"
         },
@@ -4161,7 +4312,16 @@
           "question: \"Welcher Automat eignet sich bei mehreren Katzen?",
           "question: \"Wie oft sollte das Gewicht kontrolliert werden?",
           "question: \"Was tun, wenn das Tier plötzlich nicht frisst?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -4223,6 +4383,15 @@
           "petlibro-granary-wifi-feeder",
           "petlibro-granary-camera-feeder"
         ],
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Futterautomaten für große Hunde vergleichen",
+          "emptyTitle": "Aktuell keine uneingeschränkte Top-Empfehlung",
+          "emptyText": "Die derzeit eingeordneten Modelle sind überwiegend für Katzen sowie kleine bis mittelgroße Hunde dokumentiert. Für große Hunde müssen maximale Ausgabe, Krokettengröße, Napf und Standfestigkeit individuell geprüft werden."
+        },
         "comparisonRecommendation": {
           "title": "Großer Vorrat allein reicht nicht",
           "text": "Die verglichenen Modelle bieten größere Behälter oder zusätzliche Kontrolle, sind aber nicht pauschal für jeden großen Hund geeignet. Herstellerfreigabe und praktischer Portionsbereich bleiben entscheidend.",
@@ -4240,7 +4409,11 @@
         "faq": [
           "question: \"Kann ich mehrere Portionen direkt hintereinander programmieren?",
           "question: \"Ist ein großer Vorratsbehälter automatisch für große Hunde geeignet?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        }
       },
       "issues": []
     },
@@ -4351,7 +4524,17 @@
           "question: \"Wie verhindere ich Futterneid bei zwei Katzen?",
           "question: \"Können zwei Katzen aus einem Automaten mit zwei Schalen fressen?",
           "question: \"Ist ein Mikrochip-Futterautomat stressig?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -4419,7 +4602,16 @@
         "faq": [
           "question: \"Hilft ein Futterautomat wirklich gegen Schlingen?",
           "question: \"Ist ein Slow Feeder sinnvoller?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -4550,7 +4742,16 @@
           "question: \"Eignet sich ein Futterautomat für Welpen?",
           "question: \"Wie genau sind die Portionen?",
           "question: \"Kann Nassfutter in einem normalen Hunde-Futterautomaten verwendet werden?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -4632,7 +4833,17 @@
         "faq": [
           "question: \"Wie lange kann eine Katze mit Futterautomat allein bleiben?",
           "question: \"Reicht eine Kamera als Kontrolle im Urlaub?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -4718,7 +4929,17 @@
           "question: \"Eignet sich ein Futterautomat für zwei Katzen?",
           "question: \"Kann eine Katze den Automaten öffnen?",
           "question: \"Ist eine Kamera notwendig?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -4826,7 +5047,16 @@
           "question: \"Können mehrere Personen dieselbe App nutzen?",
           "question: \"Wie genau sind die Portionsangaben in der App?",
           "question: \"Ist ein App-Futterautomat sicher im Urlaub?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -4931,7 +5161,16 @@
           "question: \"Kann eine Kamera Futterdiebstahl erkennen?",
           "question: \"Ist Zwei-Wege-Audio sinnvoll?",
           "question: \"Wie schütze ich meine Privatsphäre?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -5047,7 +5286,17 @@
           "question: \"Kann ein Nassfutterautomat im Sommer genutzt werden?",
           "question: \"Eignet sich ein Nassfutterautomat für den Urlaub?",
           "question: \"Kann ich Nass- und Trockenfutter im selben Fachautomaten verwenden?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -5130,7 +5379,16 @@
         "faq": [
           "question: \"Ist ein Futterautomat ohne WLAN ausfallsicherer?",
           "question: \"Kann ich einen App-Futterautomaten ohne WLAN verwenden?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -5209,7 +5467,16 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -5327,7 +5594,17 @@
           "question: \"Hilft ein Futterautomat gegen Übergewicht?",
           "question: \"Ist ein Wiegenapf genauer als ein normaler Automat?",
           "question: \"Muss ich nach einem Futterwechsel neu kalibrieren?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -5395,7 +5672,18 @@
           "{ question: \"Was gilt für einen Senior-Hund?\", answer: \"Bei einem Senior können Aktivität und Energiebedarf sinken, während Krankheit oder Muskelverlust andere Anpassungen verlangen. Bewerte deshalb nicht nur das Gewicht, sondern auch die Muskelkondition. Unbeabsichtigte Gewichts- oder Muskelabnahme sollte tierärztlich untersucht und nicht einfach mit mehr Futter überdeckt werden.\" }",
           "{ question: \"Wie kontrolliere ich einen Futterautomaten?\", answer: \"Lass zehn bis zwanzig Portionen in eine Schüssel ausgeben und wiege sie einzeln sowie zusammen. So erkennst du Durchschnitt und Streuung. Wiederhole die Prüfung nach Futterwechsel, weil Krokettengröße und -form die Ausgabemenge verändern können. Kalibriere nach Geräteanleitung.\" }",
           "{ question: \"Wann sollte ein Tierarzt die Futtermenge festlegen?\", answer: \"Bei Wachstum, Trächtigkeit, starkem Über- oder Untergewicht, chronischen Erkrankungen, Allergien, Verdauungsproblemen oder unerklärlicher Gewichtsänderung ist ein individueller Plan sinnvoll. Bei rascher Abnahme, Schwäche oder Futterverweigerung sollte die Abklärung nicht zugunsten eigener Rechenversuche verzögert werden.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "small",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -5458,7 +5746,17 @@
           "{ question: \"Was gilt für eine Senior-Katze?\", answer: \"Bei einer Senior-Katze können sich Energiebedarf, Verdauung und Muskelmasse verändern. Gewichtsverlust ist nicht automatisch normal. Kontrolliere Body und Muscle Condition Score getrennt und lass unbeabsichtigte Abnahme, mehr Durst, Erbrechen oder Appetitveränderungen tierärztlich abklären.\" }",
           "{ question: \"Wie verhindert man Futterdiebstahl bei mehreren Katzen?\", answer: \"Füttere räumlich getrennt oder nutze bei Bedarf einen zuverlässig zugeordneten Mikrochip-Futterautomaten. Wiege die Tagesration jeder Katze separat und kontrolliere, ob sie tatsächlich frisst. Ein gemeinsamer Napf erlaubt keine sichere individuelle Mengenkontrolle.\" }",
           "{ question: \"Wann ist die Futtermenge ein Fall für den Tierarzt?\", answer: \"Bei Kitten, Trächtigkeit, deutlichem Über- oder Untergewicht, chronischer Erkrankung, Allergie, Verdauungsproblemen oder unerklärlicher Gewichtsänderung ist ein individueller Plan sinnvoll. Frisst eine Katze gar nicht, wirkt schwach oder erbricht wiederholt, sollte die Untersuchung nicht durch Rechenversuche verzögert werden.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -5596,7 +5894,7 @@
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion für smarte Haustiertechnik\" }",
         "publishedAt": "2026-07-20",
         "updatedAt": "2026-07-20",
-        "navigation": "{ show: true, label: \"GPS-Tracker\", section: \"wissen\", order: 15 }",
+        "navigation": "{ show: true, label: \"GPS-Tracker\", section: \"gps-tracker\", order: 35 }",
         "hub": "{ sections: [\"wissen\", \"gps-tracker\"], title: \"GPS-Tracker für Hunde und Katzen\", description: \"Cornerstone zu Technik, Tier-Fit, Kosten und aktuellen Modellen.\", icon: \"📍\", order: 360, featured: true }",
         "hubPriority": 120,
         "project": "pfotentechnik",
@@ -5821,7 +6119,18 @@
         "premiumBlocks": [
           "type: answer",
           "type: quickFacts"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -6157,7 +6466,18 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -6380,7 +6700,17 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -6460,7 +6790,17 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -6508,7 +6848,17 @@
         "faq": [
           "{ question: \"Soll ein Katzenbrunnen nachts ausgeschaltet werden?\", answer: \"Das hängt vom vorgesehenen Betriebsmodus ab. Häufiges Ausschalten kann Akzeptanz und Wasserzirkulation verändern. Die Herstelleranleitung ist maßgeblich.\" }",
           "{ question: \"Reicht ein großer Brunnen während des Urlaubs?\", answer: \"Nein. Tank, Pumpe, Strom und Wasserqualität können ausfallen. Eine Betreuungsperson und mehrere unabhängige Wasserstellen bleiben notwendig.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -6605,7 +6955,17 @@
         "faq": [
           "{ question: \"Ist Edelstahl immer hygienischer?\", answer: \"Edelstahl ist glatt und robust, bleibt aber nur bei regelmäßiger vollständiger Reinigung hygienisch. Pumpe und Kunststoff-Innenteile bleiben ebenso relevant.\" }",
           "{ question: \"Ist Keramik für Katzen sicher?\", answer: \"Hochwertige, unbeschädigte und lebensmittelechte Glasur kann gut geeignet sein. Abplatzer und Risse sind ein Austauschgrund.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -6657,7 +7017,17 @@
         "faq": [
           "{ question: \"Kann jeder Trinkbrunnen ohne Filter laufen?\", answer: \"Nein. Manche Pumpen und Wasserwege sind auf einen bestimmten Filterwiderstand ausgelegt. Maßgeblich ist die Herstelleranleitung.\" }",
           "{ question: \"Ist filterlos automatisch hygienischer?\", answer: \"Nein. Entscheidend sind Wasserwechsel, vollständige Zerlegbarkeit und mechanische Reinigung. Ein fehlender Filter beseitigt keinen Biofilm.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -6703,7 +7073,17 @@
         "faq": [
           "{ question: \"Wie oft sollte ein Katzenbrunnen gereinigt werden?\", answer: \"Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten oder sichtbarem Belag ist sie häufiger nötig.\" }",
           "{ question: \"Darf die Pumpe in die Spülmaschine?\", answer: \"Nein. Elektrische Pumpenteile werden nach Anleitung von Hand gereinigt. Nur ausdrücklich spülmaschinengeeignete, nicht elektrische Teile dürfen in die Maschine.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -6806,7 +7186,17 @@
         "faq": [
           "{ question: \"Hilft ein Trinkbrunnen bei Nierenerkrankung?\", answer: \"Er kann eine zusätzliche akzeptierte Wasserquelle sein, behandelt die Erkrankung aber nicht. Manche Katzen bevorzugen fließendes Wasser, andere einen stillen Napf.\" }",
           "{ question: \"Darf Wasser eingeschränkt werden, wenn die Katze viel trinkt?\", answer: \"Nein. Bei Nierenerkrankungen muss frisches Wasser frei verfügbar sein. Veränderungen gehören mit der behandelnden Tierarztpraxis besprochen.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -6907,7 +7297,14 @@
           "{ question: \"Was zeigt die App im Funkloch?\", answer: \"Meist den letzten übertragenen Punkt samt Zeitstempel. Manche Geräte speichern Verlauf und übertragen später. Der alte Punkt darf nicht als aktuelle Position gelesen werden.\" }",
           "{ question: \"Hilft WLAN bei der Reichweite?\", answer: \"Bekanntes WLAN dient bei vielen Trackern als Energiesparzone oder Näherungsinformation. Es ersetzt außerhalb des Hauses weder Mobilfunkübertragung noch Satellitenortung.\" }",
           "{ question: \"Welche Reichweite hat Bluetooth?\", answer: \"Es gibt keinen einzigen Bluetooth-Wert. Design, Sendeleistung und Hindernisse bestimmen die direkte Reichweite. Netzwerk-Tags können indirekt weiter melden, wenn kompatible Fremdgeräte vorbeikommen.\" }"
-        ]
+        ],
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7120,7 +7517,16 @@
           "question: \"Kann ein Futterautomat im Urlaub die Betreuung ersetzen?",
           "question: \"Was ist wichtiger: App oder Batterie-Backup?",
           "question: \"Welche Nachteile haben smarte Futterautomaten?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -7324,7 +7730,12 @@
           "question: \"Können Gesundheits-Tracker Krankheiten erkennen?",
           "question: \"Wie gewöhne ich Hund oder Katze an ein neues Gerät?",
           "question: \"Welche smarte Haustiertechnik sollte ich zuerst kaufen?"
-        ]
+        ],
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7374,7 +7785,16 @@
           "question: \"Kauft PfotenTechnik seine Empfehlungen?",
           "question: \"Sind alle Produkte selbst im Langzeittest geprüft?",
           "question: \"Warum können sich Bewertungen ändern?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7437,7 +7857,17 @@
           "question: \"Soll der Wassernapf entfernt werden, wenn ein Brunnen aufgestellt wird?",
           "question: \"Wie oft muss ein Katzenbrunnen gereinigt werden?",
           "question: \"Welches Material ist für einen Katzenbrunnen am besten?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7538,7 +7968,17 @@
         "faq": [
           "{ question: \"Reicht ein großer Brunnen für drei Katzen?\", answer: \"Nicht zwingend. Ein einzelner Standort kann sozial blockiert werden oder technisch ausfallen. Mehrere getrennte Wasserstellen bleiben sinnvoll.\" }",
           "{ question: \"Erkennt ein RFID-Brunnen den Mikrochip?\", answer: \"Nicht automatisch. Manche Systeme arbeiten mit Halsbandanhängern statt dem implantierten Mikrochip; die Produktbeschreibung muss genau geprüft werden.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7601,7 +8041,18 @@
           "{ question: \"Ist UV-C im Trinkbrunnen notwendig?\", answer: \"UV-C ist eine Zusatzfunktion, deren Nutzen von Bauart, Dosis, Durchfluss und Wartung abhängt. Sie ersetzt weder Filterwechsel noch die Reinigung von Biofilm. Vergleiche ein Modell deshalb zuerst nach Trinkgeometrie, Zerlegbarkeit und Ersatzteilversorgung und erst danach nach Zusatztechnik.\" }",
           "{ question: \"Wie gewöhne ich den Hund an den Brunnen?\", answer: \"Stelle den ausgeschalteten Brunnen zunächst neben den vertrauten Napf, belohne ruhiges Erkunden und aktiviere ihn später kurz. Lass dem Hund eine Wahl und entferne den bisherigen Napf erst, wenn die Nutzung stabil ist. Zwang oder Durst als Motivation sind ungeeignet.\" }",
           "{ question: \"Eignet sich ein Katzenbrunnen auch für Hunde?\", answer: \"Für kleine Hunde kann ein Katzenmodell passen, wenn Trinkfläche, Höhe und Kapazität ausreichen. Bei mittelgroßen und großen Hunden sind viele Modelle zu eng, leicht oder flach. Entscheidend ist die reale Geometrie; die Bezeichnung des Herstellers allein genügt nicht.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7655,7 +8106,17 @@
         "faq": [
           "{ question: \"Soll der Trinkbrunnen für alte Katzen erhöht stehen?\", answer: \"Manche Katzen mit Gelenkproblemen trinken bequemer aus leicht erhöhten Gefäßen. Höhe und Stand müssen individuell sicher getestet werden.\" }",
           "{ question: \"Ist mehr Trinken bei Senioren normal?\", answer: \"Deutlich vermehrtes Trinken kann unter anderem bei Nieren- oder Stoffwechselerkrankungen auftreten und sollte tierärztlich abgeklärt werden.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7743,7 +8204,7 @@
           "eyebrow": "Gesundheit & Trinkverhalten",
           "title": "Ein Trinkbrunnen ist eine Wasserstelle, kein Behandlungsgerät",
           "text": "Plötzlich deutlich mehr oder weniger Trinken, häufigeres Urinieren, Erbrechen, Schwäche, Appetitverlust oder Gewichtsveränderungen sollten unabhängig von der verwendeten Wasserstelle tierärztlich abgeklärt werden. Wasser nie eigenständig einschränken.",
-          "href": "/katze-trinkt-zu-wenig/",
+          "href": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
           "cta": "Verändertes Trinkverhalten einordnen"
         },
         "closingCta": {
@@ -7751,7 +8212,7 @@
           "text": "Vergleiche anschließend nur Modelle, deren Trinkfläche, Betriebsart und laufende Filterkosten zu deinem Alltag passen. Ein leicht zu reinigender Brunnen, den dein Tier akzeptiert, ist wertvoller als eine lange Funktionsliste.",
           "productKey": "petkit-eversweet-ultra",
           "primaryLabel": "Beispielmodell ansehen",
-          "secondaryHref": "/trinkbrunnen-richtig-reinigen/",
+          "secondaryHref": "/katzentrinkbrunnen-richtig-reinigen/",
           "secondaryLabel": "Reinigungsaufwand vorher prüfen"
         },
         "faq": [
@@ -7765,7 +8226,11 @@
           "question: \"Ist Sensorbetrieb besser als Dauerbetrieb?",
           "question: \"Kann ein Trinkbrunnen die Trinkmenge erhöhen?",
           "question: \"Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        }
       },
       "issues": [
         {
@@ -7833,7 +8298,17 @@
           "{ question: \"Wann reicht ein Trinkprotokoll nicht aus?\", answer: \"Bei Schwäche, Kollaps, wiederholtem Erbrechen, deutlichem Gewichtsverlust oder stark verändertem Urinabsatz sollte nicht erst tagelang gemessen werden. Dann ist eine zeitnahe tierärztliche Untersuchung wichtiger. Das Protokoll unterstützt Anamnese und Diagnostik, ersetzt sie aber nicht.\" }",
           "{ question: \"Was gilt bei einem Welpen?\", answer: \"Ein Welpe kann bei Erbrechen oder Durchfall schneller Flüssigkeit verlieren. Wenn er matt wirkt, nicht frisst oder Wasser nicht bei sich behält, sollte er rasch tierärztlich beurteilt werden. Eine Messung darf die Untersuchung nicht verzögern und Wasser bleibt frei verfügbar.\" }",
           "{ question: \"Was gilt bei einem Senior-Hund?\", answer: \"Bei einem Senior können Nieren-, Hormon- oder Stoffwechselerkrankungen sowie Medikamente die Trinkmenge verändern. Dokumentiere neben Wasser und Futter besonders Urinabsatz, Gewicht und Allgemeinzustand. Eine neue, anhaltende Veränderung sollte auch ohne dramatische Symptome besprochen werden.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -7885,7 +8360,17 @@
         "faq": [
           "{ question: \"Wie genau sind Smart-Trinkbrunnen?\", answer: \"Sie können Nutzungstrends zeigen. Verdunstung, Verschütten, Reinigung und mehrere Tiere begrenzen die Aussagekraft; ohne sichere Tiererkennung ist keine individuelle Zuordnung möglich.\" }",
           "{ question: \"Welche Trinkmenge ist normal?\", answer: \"Der Gesamtbedarf hängt unter anderem von Gewicht, Futterfeuchte, Temperatur, Aktivität und Gesundheit ab. Eine einzelne Zahl ersetzt keine tierärztliche Einschätzung.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -7967,7 +8452,17 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8037,7 +8532,17 @@
           "question: \"Zählen Leckerlis zur Tagesration?",
           "question: \"Hilft ein Futterautomat gegen Übergewicht?",
           "question: \"Wie oft sollte ich meine Katze wiegen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8291,7 +8796,17 @@
           "question: \"Ist Schlingen bei Hunden gefährlich?",
           "question: \"Hilft ein Anti-Schling-Napf immer?",
           "question: \"Kann Hunger die Ursache sein?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8390,7 +8905,16 @@
           "question: \"Ist eine Portion bei jedem Futterautomaten gleich groß?",
           "question: \"Wie messe ich eine Automatenportion?",
           "question: \"Bestimmt der Automat den Futterbedarf?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8503,7 +9027,16 @@
           "question: \"Wie genau sind die Portionen eines Futterautomaten?",
           "question: \"Funktioniert ein Futterautomat bei WLAN-Ausfall?",
           "question: \"Kann ein Futterautomat im Urlaub die Betreuung ersetzen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -8583,7 +9116,18 @@
           "question: \"Brauchen Welpen großer Rassen besonderes Futter?",
           "question: \"Darf ein Welpe Trocken- und Nassfutter bekommen?",
           "question: \"Wie lange sollte eine Futterumstellung dauern?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "large",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8700,7 +9244,16 @@
         "faq": [
           "question: \"Funktioniert ein Futterautomat auch ohne Internet?",
           "question: \"Gibt eine Portion immer dieselbe Grammzahl aus?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -8805,7 +9358,16 @@
           "question: \"Wie viele Liter braucht ein Futterautomat für eine Katze?",
           "question: \"Kann man Liter direkt in Kilogramm Trockenfutter umrechnen?",
           "question: \"Ist ein größerer Futterautomat immer besser?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -8996,7 +9558,16 @@
         "faq": [
           "question: \"Gibt es einen festen Dezibelwert für Futterautomaten?",
           "question: \"Warum erschrickt meine Katze vor dem Automaten?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9059,7 +9630,18 @@
           "{ question: \"Kann ein Trinkbrunnen den Bedarf decken?\", answer: \"Ein Brunnen kann eine zusätzliche, attraktive Wasserstelle sein, deckt den Bedarf aber nicht von selbst. Entscheidend sind eine passende Trinkhöhe, ausreichend Volumen, Standfestigkeit und konsequente Reinigung. Ein normaler Napf sollte während der Gewöhnung als Alternative verfügbar bleiben.\" }",
           "{ question: \"Wie genau sind Wasserbedarfs-Tabellen?\", answer: \"Sie liefern nur einen Orientierungsbereich für gesunde Tiere. Individuelle Unterschiede, Futterfeuchte und Wasserverlust durch Bewegung oder Erkrankungen sind darin nicht vollständig abgebildet. Aussagekräftiger sind eine mehrtägige Messung unter ähnlichen Bedingungen und die Abweichung vom persönlichen Normalwert.\" }",
           "{ question: \"Wann sollte die Trinkmenge gemessen werden?\", answer: \"Messen ist sinnvoll, wenn das Trinkverhalten auffällig erscheint oder die Tierarztpraxis ein Protokoll empfiehlt. Dokumentiere mehrere vollständige Tage, Futterart, Wetter, Aktivität, Medikamente und Urinabsatz. Rationiere Wasser niemals, um einen scheinbar genaueren Messwert zu erhalten.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "petSize": "small",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9114,7 +9696,17 @@
           "question: \"Ist es gefährlich, wenn eine Katze wenig trinkt?",
           "question: \"Warum trinkt meine Katze plötzlich so viel?",
           "question: \"Hilft ein Trinkbrunnen jeder Katze?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9194,7 +9786,16 @@
         "faq": [
           "question: \"Ist einmal tägliches Füttern für jeden erwachsenen Hund besser?",
           "question: \"Kann ein Futterautomat die Mahlzeit eines großen Hundes ausgeben?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9271,7 +9872,17 @@
         "faq": [
           "question: \"Sind sechs kleine Mahlzeiten besser als zwei?",
           "question: \"Kann Trockenfutter den ganzen Tag frei stehen?"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "futterautomaten"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9325,7 +9936,17 @@
         "faq": [
           "{ question: \"Reicht ein Trinkbrunnen für zwei Katzen?\", answer: \"Er kann genutzt werden, sollte aber nicht die einzige Quelle sein. Mehrere räumlich getrennte Wasserstellen reduzieren Konkurrenz und sichern Ausfälle ab.\" }",
           "{ question: \"Müssen Wasserstellen in jedem Zimmer stehen?\", answer: \"Nein. Wichtig sind ruhige, gut erreichbare und voneinander getrennte Standorte auf den tatsächlich genutzten Ebenen der Wohnung.\" }"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": []
     },
@@ -9400,7 +10021,17 @@
           "type: answer",
           "type: quickFacts",
           "type: checklist"
-        ]
+        ],
+        "contentPlatform": {
+          "intent": "buying-guide",
+          "cluster": "trinkbrunnen"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Passende Modelle vergleichen"
+        }
       },
       "issues": [
         {
@@ -9533,6 +10164,22 @@
           "{ label: \"WLAN\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "largeDogFitReason": "Technisch grundsätzlich interessant: 4 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt.",
+          "largeDogFit": "conditional",
+          "manufacturerSizeClaim": "small-medium",
+          "kibbleMaxMm": 12,
+          "portionGrams": 10,
+          "reservoirLiters": 4
+        },
         "faq": [
           "{ question: \"Funktioniert der Aqara C1 ohne Internet?\", answer: \"Bereits gespeicherte Fütterungspläne sollen lokal weiterlaufen. Für Fernzugriff und viele Automationen ist der Aqara Hub erforderlich.\" }",
           "{ question: \"Misst der C1 wirklich Gramm?\", answer: \"Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage.\" }"
@@ -9622,14 +10269,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=Cat+Mate+Pet+Fountain+335"
         },
-        "rating": 4.1,
-        "score": 80,
+        "rating": 3.6,
+        "score": 73,
         "ratings": {
-          "verarbeitung": 4.1,
-          "bedienung": 4.1,
-          "reinigung": 4,
-          "lautstaerke": 4.2,
-          "preisleistung": 3.9
+          "verarbeitung": 3.7,
+          "bedienung": 3.7,
+          "reinigung": 3.65,
+          "lautstaerke": 3.75,
+          "preisleistung": 3.55
         },
         "decision": {
           "bestFor": [
@@ -9676,6 +10323,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -9781,15 +10438,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=Cat+Mate+C200+Futterautomat"
         },
-        "rating": 4.3,
-        "score": 84,
+        "rating": 3.5,
+        "score": 71,
         "ratings": {
-          "app": 1,
-          "portionierung": 4,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4,
-          "sicherheit": 4,
-          "preisleistung": 4.5
+          "app": 2.25,
+          "portionierung": 3.65,
+          "reinigung": 4,
+          "zuverlaessigkeit": 3.65,
+          "sicherheit": 3.65,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -9836,6 +10493,16 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"Kapazität",
@@ -9947,15 +10614,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=Cat+Mate+C300+Futterautomat"
         },
-        "rating": 4.4,
-        "score": 85,
+        "rating": 3.6,
+        "score": 73,
         "ratings": {
-          "app": 1,
-          "portionierung": 4.5,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4,
-          "preisleistung": 4.5
+          "app": 2.25,
+          "portionierung": 4,
+          "reinigung": 4,
+          "zuverlaessigkeit": 4,
+          "sicherheit": 3.65,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -10002,6 +10669,16 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"Kapazität",
@@ -10113,15 +10790,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=Cat+Mate+C500+Futterautomat"
         },
-        "rating": 4.4,
-        "score": 86,
+        "rating": 3.6,
+        "score": 73,
         "ratings": {
-          "app": 1,
-          "portionierung": 4.5,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4,
-          "preisleistung": 4.5
+          "app": 2.25,
+          "portionierung": 4,
+          "reinigung": 4,
+          "zuverlaessigkeit": 4,
+          "sicherheit": 3.65,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -10169,6 +10846,16 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"Kapazität",
@@ -10275,14 +10962,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain"
         },
-        "rating": 4.2,
-        "score": 82,
+        "rating": 3.8,
+        "score": 75,
         "ratings": {
-          "verarbeitung": 4.2,
-          "bedienung": 4.2,
-          "reinigung": 4.1,
-          "lautstaerke": 4.3,
-          "preisleistung": 4
+          "verarbeitung": 3.75,
+          "bedienung": 3.75,
+          "reinigung": 3.7,
+          "lautstaerke": 3.85,
+          "preisleistung": 3.65
         },
         "decision": {
           "bestFor": [
@@ -10329,6 +11016,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -10463,6 +11160,13 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Nassfutter, Trockenfutter und Snacks\" }",
           "{ label: \"Kapazität\", value: \"6 Fächer mit je 170 ml\" }",
@@ -10611,6 +11315,13 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-mit-kamera"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Trockenfutter und trockene Snacks\" }",
           "{ label: \"Kapazität\", value: \"2,9 Liter / etwa 1,2 kg\" }",
@@ -10733,6 +11444,16 @@
         ],
         "priceCategory": "premium",
         "useCase": "Professionelle Hundeortung ohne Mobilfunk in Verbindung mit Alpha-Handgerät",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS-Hundehalsbandgerät\" }",
           "{ label: \"Übertragung\", value: \"VHF-Funk direkt zum kompatiblen Alpha-Handgerät\" }",
@@ -10750,6 +11471,23 @@
           "{ label: \"Befestigung\", value: \"Flexibles Hundehalsband; straffer Sitz nach Garmin-Anleitung\" }",
           "{ label: \"Material\", value: \"Kunststoffgehäuse und flexibles Band; genaue Werkstoffe nicht ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog"
+          ],
+          "deviceWeightGrams": 247,
+          "weightBasis": "device",
+          "subscriptionRequired": false,
+          "includedServiceMonths": 0,
+          "transmission": "vhf",
+          "batteryMaxDays": 3,
+          "batteryCondition": "abhängig vom Aktualisierungsintervall",
+          "waterproofRating": "1 ATM",
+          "liveTracking": true,
+          "virtualFence": false,
+          "activityTracking": false,
+          "attachmentType": "collar"
+        },
         "faq": [
           "{ question: \"Braucht der Garmin Alpha T 20 ein Abo?\", answer: \"Für die direkte VHF-Hundeortung nicht. Er benötigt jedoch ein kompatibles Garmin-Alpha-Handgerät. Optionale inReach-Kommunikationsfunktionen eines Handgeräts können separat abonnementsgebunden sein.\" }",
           "{ question: \"Reicht der T 20 wirklich 14,48 km weit?\", answer: \"Garmin nennt bis zu 14,48 km. Gelände, Bewuchs, Antennenlage und lokale Funkbedingungen können die praktische Reichweite verkürzen.\" }",
@@ -10846,6 +11584,16 @@
         ],
         "priceCategory": "premium",
         "useCase": "Spezialsystem für Hundeortung und Training im Garmin-Alpha-Ökosystem",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS-Hundehalsbandgerät\" }",
           "{ label: \"Übertragung\", value: \"VHF-Funk direkt zum kompatiblen Alpha-Handgerät\" }",
@@ -10863,6 +11611,23 @@
           "{ label: \"Befestigung\", value: \"Flexibles Hundehalsband\" }",
           "{ label: \"Material\", value: \"Genaue Werkstoffe nicht ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog"
+          ],
+          "deviceWeightGrams": 253,
+          "weightBasis": "device",
+          "subscriptionRequired": false,
+          "includedServiceMonths": 0,
+          "transmission": "vhf",
+          "batteryMaxDays": 3,
+          "batteryCondition": "abhängig vom Aktualisierungsintervall",
+          "waterproofRating": "1 ATM",
+          "liveTracking": true,
+          "virtualFence": false,
+          "activityTracking": false,
+          "attachmentType": "collar"
+        },
         "faq": [
           "{ question: \"Was ist der Unterschied zwischen T 20 und TT 25?\", answer: \"Beide dienen der Hundeortung im Alpha-System. Das TT 25 ergänzt kompatible Trainingsfunktionen. Für reine Ortung ist das T 20 die zurückhaltendere Wahl.\" }",
           "{ question: \"Funktioniert das TT 25 ohne Abo?\", answer: \"Die direkte VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Alpha-Handgerät. Optionale inReach-Dienste am Handgerät sind davon getrennt.\" }",
@@ -10949,15 +11714,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat"
         },
-        "rating": 4.3,
-        "score": 86,
+        "rating": 3.6,
+        "score": 73,
         "ratings": {
-          "\"app\"": 1,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 2.25,
+          "\"portionierung\"": 4,
+          "\"reinigung\"": 4,
+          "\"zuverlaessigkeit\"": 4,
+          "\"sicherheit\"": 3.65,
+          "\"preisleistung\"": 4
         },
         "decision": {
           "bestFor": [
@@ -10992,6 +11757,16 @@
           "Beide Tiere erhalten dieselbe Portionsmenge"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -11096,15 +11871,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=HoneyGuardian%20A68%20Smart%20Pet%20Feeder"
         },
-        "rating": 4.4,
-        "score": 88,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 4.5,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 3.95,
+          "\"portionierung\"": 3.95,
+          "\"reinigung\"": 3.95,
+          "\"zuverlaessigkeit\"": 3.95,
+          "\"sicherheit\"": 3.95,
+          "\"preisleistung\"": 3.95
         },
         "decision": {
           "bestFor": [
@@ -11136,6 +11911,17 @@
           "Benachrichtigungen abhängig von der App"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -11233,15 +12019,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=HoneyGuardian+S305D+5L+Smart+Pet+Feeder"
         },
-        "rating": 4.2,
-        "score": 84,
+        "rating": 3.8,
+        "score": 75,
         "ratings": {
-          "app": 4,
-          "portionierung": 4,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4,
-          "sicherheit": 4,
-          "preisleistung": 4.5
+          "app": 3.65,
+          "portionierung": 3.65,
+          "reinigung": 4,
+          "zuverlaessigkeit": 3.65,
+          "sicherheit": 3.65,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -11303,6 +12089,19 @@
           "{ label: \"Maße\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "largeDogFitReason": "Technisch grundsätzlich interessant: 6 L Vorrat. Maximale Mahlzeit ist noch nicht vollständig belegt.",
+          "largeDogFit": "conditional",
+          "manufacturerSizeClaim": "unknown",
+          "reservoirLiters": 6
+        },
         "faq": [
           "question: \"Kann der HoneyGuardian S305D Nassfutter ausgeben?",
           "question: \"Hat jede S305D-Version dieselbe App?",
@@ -11397,15 +12196,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=IMIPAW%203L%20Automatic%20Cat%20Feeder"
         },
-        "rating": 4.1,
-        "score": 81,
+        "rating": 3.5,
+        "score": 69,
         "ratings": {
-          "\"app\"": 1,
-          "\"portionierung\"": 4,
-          "\"reinigung\"": 4,
-          "\"zuverlaessigkeit\"": 4,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 2.25,
+          "\"portionierung\"": 3.6,
+          "\"reinigung\"": 3.6,
+          "\"zuverlaessigkeit\"": 3.6,
+          "\"sicherheit\"": 3.6,
+          "\"preisleistung\"": 3.95
         },
         "decision": {
           "bestFor": [
@@ -11438,6 +12237,16 @@
           "Modellbezeichnung im Handel nicht immer eindeutig"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -11540,14 +12349,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=oneisall+2%2C2L+Cordless+Cat+Fountain"
         },
-        "rating": 4.3,
-        "score": 84,
+        "rating": 3.8,
+        "score": 76,
         "ratings": {
-          "verarbeitung": 4.3,
-          "bedienung": 4.3,
-          "reinigung": 4.2,
-          "lautstaerke": 4.4,
-          "preisleistung": 4.1
+          "verarbeitung": 3.85,
+          "bedienung": 3.85,
+          "reinigung": 3.75,
+          "lautstaerke": 3.9,
+          "preisleistung": 3.7
         },
         "decision": {
           "bestFor": [
@@ -11594,6 +12403,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -11726,6 +12545,13 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Modell\", value: \"PF14WAU\" }",
           "{ label: \"Futterart\", value: \"Trockenfutter\" }",
@@ -11833,14 +12659,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=oneisall+3%2C2L+Cordless+Cat+Fountain"
         },
-        "rating": 4.4,
-        "score": 87,
+        "rating": 3.9,
+        "score": 78,
         "ratings": {
-          "verarbeitung": 4.4,
-          "bedienung": 4.4,
-          "reinigung": 4.3,
-          "lautstaerke": 4.5,
-          "preisleistung": 4.2
+          "verarbeitung": 3.9,
+          "bedienung": 3.9,
+          "reinigung": 3.85,
+          "lautstaerke": 4,
+          "preisleistung": 3.75
         },
         "decision": {
           "bestFor": [
@@ -11887,6 +12713,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -11983,6 +12819,16 @@
           "petlibro-stainless-steel-fountain",
           "xiaomi-smart-pet-fountain-2"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: Kapazität, value: \"3,5 Liter\" }",
           "{ label: Material, value: \"Edelstahl\" }",
@@ -12085,15 +12931,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=oneisall+5L+Futterautomat+zwei+Katzen"
         },
-        "rating": 4.3,
-        "score": 85,
+        "rating": 3.6,
+        "score": 73,
         "ratings": {
-          "app": 4,
-          "portionierung": 4,
-          "reinigung": 4,
-          "zuverlaessigkeit": 4,
-          "sicherheit": 3.5,
-          "preisleistung": 4.5
+          "app": 3.65,
+          "portionierung": 3.65,
+          "reinigung": 3.65,
+          "zuverlaessigkeit": 3.65,
+          "sicherheit": 3.35,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -12155,6 +13001,20 @@
           "{ label: \"Maße\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "largeDogFitReason": "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 15 mm. Maximale Mahlzeit ist noch nicht vollständig belegt.",
+          "largeDogFit": "conditional",
+          "manufacturerSizeClaim": "cats-small-pets",
+          "kibbleMaxMm": 15,
+          "portionGrams": 8,
+          "reservoirLiters": 5
+        },
         "faq": [
           "question: \"Teilt der oneisall 5L das Futter exakt gleich auf?",
           "question: \"Verhindert die Doppelschale Futterklau?",
@@ -12235,6 +13095,15 @@
           "oneisall-3-5l-cordless-fountain",
           "petlibro-stainless-steel-fountain"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog"
+          ],
+          "petSize": [
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: Kapazität, value: \"7 Liter\" }",
           "{ label: Modell, value: \"PW07\" }",
@@ -12350,6 +13219,14 @@
         ],
         "priceCategory": "midrange",
         "useCase": "4G-Tracker mit langfristig enthaltener Basisortung in Europa",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS; ergänzende WLAN- und Bluetooth-Nähe laut Hersteller\" }",
           "{ label: \"Übertragung\", value: \"Integrierte 4G-SIM\" }",
@@ -12367,6 +13244,25 @@
           "{ label: \"Befestigung\", value: \"Clip für Standard-Halsbänder\" }",
           "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "minimumPetWeightKg": 3,
+          "deviceWeightGrams": 48,
+          "weightBasis": "device",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 27,
+          "transmission": "lte",
+          "batteryMaxDays": 10,
+          "batteryCondition": "Hersteller-Maximalwert",
+          "waterproofRating": "IP67",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": false,
+          "attachmentType": "collar-attachment"
+        },
         "faq": [
           "{ question: \"Ist der PAJ PET Finder 4G Mini ohne Abo?\", answer: \"Nicht dauerhaft. 27 Monate Nutzung sind beim Kauf enthalten. Danach ist für weitere Mobilfunk- und Portalnutzung ein Tarif erforderlich; PAJ nennt Lite ab 2 Euro monatlich bei Jahreszahlung.\" }",
           "{ question: \"Wie lange hält der Akku?\", answer: \"PAJ nennt bis zu zehn Tage im Batteriesparmodus und auf der Produktseite ein bis drei Tage bei aktivem täglichem Tracking. Der Modus ist daher entscheidend.\" }",
@@ -12452,15 +13348,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder"
         },
-        "rating": 4.1,
-        "score": 80,
+        "rating": 3.5,
+        "score": 71,
         "ratings": {
-          "\"app\"": 4,
-          "\"portionierung\"": 4,
-          "\"reinigung\"": 4,
-          "\"zuverlaessigkeit\"": 3.5,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4
+          "\"app\"": 3.6,
+          "\"portionierung\"": 3.6,
+          "\"reinigung\"": 3.6,
+          "\"zuverlaessigkeit\"": 3.35,
+          "\"sicherheit\"": 3.6,
+          "\"preisleistung\"": 3.6
         },
         "decision": {
           "bestFor": [
@@ -12493,6 +13389,16 @@
           "Verfügbarkeit in Deutschland schwankt"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -12626,6 +13532,16 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Trocken-, luftgetrocknetes und gefriergetrocknetes Futter\" }",
           "{ label: \"Kapazität\", value: \"3,6 Liter\" }",
@@ -12734,15 +13650,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+3+Pro+UVC"
         },
-        "rating": 4.5,
-        "score": 89,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "verarbeitung": 4.6,
-          "bedienung": 4.5,
-          "reinigung": 4.5,
-          "lautstaerke": 4.6,
-          "smartfunktionen": 4.5,
-          "preisleistung": 4.1
+          "verarbeitung": 4.05,
+          "bedienung": 4,
+          "reinigung": 4,
+          "lautstaerke": 4.05,
+          "smartfunktionen": 4,
+          "preisleistung": 3.7
         },
         "decision": {
           "bestFor": [
@@ -12789,6 +13705,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -12894,14 +13820,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini"
         },
-        "rating": 4.2,
-        "score": 81,
+        "rating": 3.7,
+        "score": 74,
         "ratings": {
-          "verarbeitung": 4.2,
-          "bedienung": 4.2,
-          "reinigung": 4.1,
-          "lautstaerke": 4.3,
-          "preisleistung": 4
+          "verarbeitung": 3.7,
+          "bedienung": 3.7,
+          "reinigung": 3.65,
+          "lautstaerke": 3.8,
+          "preisleistung": 3.6
         },
         "decision": {
           "bestFor": [
@@ -12944,6 +13870,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Kapazität",
           "label: \"Material",
@@ -13046,15 +13982,15 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC"
         },
-        "rating": 4.7,
-        "score": 94,
+        "rating": 4,
+        "score": 81,
         "ratings": {
-          "verarbeitung": 4.7,
-          "bedienung": 4.7,
-          "reinigung": 4.6,
-          "lautstaerke": 4.7,
-          "smartfunktionen": 4.8,
-          "preisleistung": 4
+          "verarbeitung": 4.15,
+          "bedienung": 4.15,
+          "reinigung": 4.05,
+          "lautstaerke": 4.15,
+          "smartfunktionen": 4.2,
+          "preisleistung": 3.65
         },
         "decision": {
           "bestFor": [
@@ -13102,6 +14038,16 @@
           "beste-trinkbrunnen-fuer-katzen",
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -13205,14 +14151,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+Cordless"
         },
-        "rating": 4.5,
-        "score": 90,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "verarbeitung": 4.5,
-          "bedienung": 4.5,
-          "reinigung": 4.4,
-          "lautstaerke": 4.6,
-          "preisleistung": 4.3
+          "verarbeitung": 4,
+          "bedienung": 4,
+          "reinigung": 3.9,
+          "lautstaerke": 4.05,
+          "preisleistung": 3.85
         },
         "decision": {
           "bestFor": [
@@ -13260,6 +14206,16 @@
           "beste-trinkbrunnen-fuer-katzen",
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -13354,6 +14310,16 @@
           "petlibro-stainless-steel-fountain",
           "xiaomi-smart-pet-fountain-2"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: Kapazität, value: \"2 Liter\" }",
           "{ label: Material, value: \"BPA-freies ABS und Silikon\" }",
@@ -13453,14 +14419,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+SE"
         },
-        "rating": 4.3,
-        "score": 84,
+        "rating": 3.8,
+        "score": 76,
         "ratings": {
-          "verarbeitung": 4.3,
-          "bedienung": 4.3,
-          "reinigung": 4.2,
-          "lautstaerke": 4.4,
-          "preisleistung": 4.1
+          "verarbeitung": 3.85,
+          "bedienung": 3.85,
+          "reinigung": 3.75,
+          "lautstaerke": 3.9,
+          "preisleistung": 3.7
         },
         "decision": {
           "bestFor": [
@@ -13507,6 +14473,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -13613,14 +14589,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Eversweet+Ultra"
         },
-        "rating": 4.7,
-        "score": 95,
+        "rating": 4.1,
+        "score": 82,
         "ratings": {
-          "verarbeitung": 4.7,
-          "bedienung": 4.7,
-          "reinigung": 4.6,
-          "lautstaerke": 4.7,
-          "preisleistung": 4.5
+          "verarbeitung": 4.15,
+          "bedienung": 4.15,
+          "reinigung": 4.05,
+          "lautstaerke": 4.15,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -13667,6 +14643,17 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -13776,15 +14763,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat"
         },
-        "rating": 4.5,
-        "score": 90,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 4.5,
-          "\"preisleistung\"": 4
+          "\"app\"": 4,
+          "\"portionierung\"": 4,
+          "\"reinigung\"": 4,
+          "\"zuverlaessigkeit\"": 4,
+          "\"sicherheit\"": 4,
+          "\"preisleistung\"": 3.65
         },
         "decision": {
           "bestFor": [
@@ -13817,6 +14804,16 @@
           "Größer und schwerer als kompakte 3-Liter-Modelle"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -13920,15 +14917,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT+Fresh+Element+Solo+Futterautomat"
         },
-        "rating": 4.5,
-        "score": 90,
+        "rating": 4,
+        "score": 81,
         "ratings": {
-          "app": 4.5,
-          "portionierung": 4.5,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4.5,
-          "preisleistung": 4.5
+          "app": 4.05,
+          "portionierung": 4.05,
+          "reinigung": 4.05,
+          "zuverlaessigkeit": 4.05,
+          "sicherheit": 4.05,
+          "preisleistung": 4.05
         },
         "decision": {
           "bestFor": [
@@ -13976,6 +14973,17 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Futterart",
@@ -14090,15 +15098,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT%20YumShare%20Dual%20Hopper%202%20Futterautomat"
         },
-        "rating": 4.6,
-        "score": 91,
+        "rating": 3.9,
+        "score": 77,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 5,
-          "\"reinigung\"": 4,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 4.5,
-          "\"preisleistung\"": 3.5
+          "\"app\"": 3.95,
+          "\"portionierung\"": 4.3,
+          "\"reinigung\"": 3.6,
+          "\"zuverlaessigkeit\"": 3.95,
+          "\"sicherheit\"": 3.95,
+          "\"preisleistung\"": 3.35
         },
         "decision": {
           "bestFor": [
@@ -14131,6 +15139,16 @@
           "Premium-Preis und komplexere Einrichtung"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -14256,6 +15274,16 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Modell\", value: \"P591 beziehungsweise P592 je nach Generation\" }",
           "{ label: \"Futterart\", value: \"Trockenfutter und passende gefriergetrocknete Stücke\" }",
@@ -14367,16 +15395,16 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETKIT%20YumShare%20Solo%202%20Futterautomat"
         },
-        "rating": 4.8,
-        "score": 95,
+        "rating": 4.1,
+        "score": 82,
         "ratings": {
-          "verarbeitung": 4.7,
-          "bedienung": 4.8,
-          "app": 4.8,
-          "zuverlässigkeit": 4.7,
-          "preisleistung": 4.3,
-          "reinigung": 4.5,
-          "kamera": 4.8
+          "verarbeitung": 4.15,
+          "bedienung": 4.2,
+          "app": 4.2,
+          "zuverlässigkeit": 4.15,
+          "preisleistung": 3.85,
+          "reinigung": 4,
+          "kamera": 4.2
         },
         "decision": {
           "bestFor": {},
@@ -14395,6 +15423,16 @@
           "support": ">"
         },
         "alternatives": {},
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": {
           "value": "Katzen und kleine Hunde"
         },
@@ -14522,6 +15560,24 @@
           "{ label: \"Reinigung\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Batterie\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "largeDogFitReason": "Für große Hunde nur eingeschränkt: 3 L Vorrat, bis ca. 50 g je Mahlzeit, Kroketten bis 12 mm.",
+          "largeDogFit": "limited",
+          "manufacturerSizeClaim": "small",
+          "kibbleMaxMm": 12,
+          "maxMealGrams": 50,
+          "maxPortionsPerMeal": 5,
+          "portionGrams": 10,
+          "reservoirLiters": 3
+        },
         "faq": [
           "{ question: \"Erkennt der YumShare Solo 2 mehrere Katzen?\", answer: \"PETKIT bewirbt eine Gesichtserkennung für mehrere Tiere. Die Zuverlässigkeit hängt von Umgebung, Blickwinkel und Profilbildern ab.\" }",
           "{ question: \"Kann Nassfutter verwendet werden?\", answer: \"Nein. Das Modell ist nur für Trockenfutter und passende gefriergetrocknete Stücke geeignet.\" }",
@@ -14618,15 +15674,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO%20Air%20Automatic%20Feeder%202L"
         },
-        "rating": 4.3,
-        "score": 85,
+        "rating": 3.6,
+        "score": 72,
         "ratings": {
-          "\"app\"": 1,
-          "\"portionierung\"": 4.3,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.3,
-          "\"sicherheit\"": 4.3,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 2.25,
+          "\"portionierung\"": 3.8,
+          "\"reinigung\"": 3.95,
+          "\"zuverlaessigkeit\"": 3.8,
+          "\"sicherheit\"": 3.8,
+          "\"preisleistung\"": 3.95
         },
         "decision": {
           "bestFor": [
@@ -14660,6 +15716,16 @@
           "Kleinerer Vorrat als beim Granary"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -14765,15 +15831,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO%20Air%20WiFi%20Feeder%202L"
         },
-        "rating": 4.4,
-        "score": 88,
+        "rating": 3.9,
+        "score": 77,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 3.95,
+          "\"portionierung\"": 3.95,
+          "\"reinigung\"": 3.95,
+          "\"zuverlaessigkeit\"": 3.6,
+          "\"sicherheit\"": 3.6,
+          "\"preisleistung\"": 3.95
         },
         "decision": {
           "bestFor": [
@@ -14805,6 +15871,16 @@
           "Air-Varianten mit und ohne WLAN unterscheiden"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -14907,15 +15983,15 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain"
         },
-        "rating": 4.5,
-        "score": 90,
+        "rating": 3.9,
+        "score": 78,
         "ratings": {
-          "verarbeitung": 4.5,
-          "bedienung": 4.4,
-          "reinigung": 4.2,
-          "lautstaerke": 4.4,
-          "kapazitaet": 4.9,
-          "preisleistung": 4.3
+          "verarbeitung": 3.95,
+          "bedienung": 3.85,
+          "reinigung": 3.7,
+          "lautstaerke": 3.85,
+          "kapazitaet": 4.25,
+          "preisleistung": 3.8
         },
         "decision": {
           "bestFor": [
@@ -14962,6 +16038,17 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -15068,15 +16155,15 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Dockstream+2+Smart"
         },
-        "rating": 4.7,
-        "score": 93,
+        "rating": 4,
+        "score": 81,
         "ratings": {
-          "verarbeitung": 4.6,
-          "bedienung": 4.7,
-          "reinigung": 4.7,
-          "lautstaerke": 4.6,
-          "smartfunktionen": 4.8,
-          "preisleistung": 4.2
+          "verarbeitung": 4.05,
+          "bedienung": 4.15,
+          "reinigung": 4.15,
+          "lautstaerke": 4.05,
+          "smartfunktionen": 4.2,
+          "preisleistung": 3.75
         },
         "decision": {
           "bestFor": [
@@ -15124,6 +16211,16 @@
           "beste-trinkbrunnen-fuer-katzen",
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Kapazität",
           "label: \"Material",
@@ -15227,14 +16324,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Dockstream+Cordless"
         },
-        "rating": 4.5,
-        "score": 89,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "verarbeitung": 4.5,
-          "bedienung": 4.5,
-          "reinigung": 4.4,
-          "lautstaerke": 4.6,
-          "preisleistung": 4.3
+          "verarbeitung": 4,
+          "bedienung": 4,
+          "reinigung": 3.9,
+          "lautstaerke": 4.05,
+          "preisleistung": 3.85
         },
         "decision": {
           "bestFor": [
@@ -15281,6 +16378,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -15388,15 +16495,15 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart"
         },
-        "rating": 4.6,
-        "score": 91,
+        "rating": 4,
+        "score": 80,
         "ratings": {
-          "verarbeitung": 4.5,
-          "bedienung": 4.5,
-          "reinigung": 4.6,
-          "lautstaerke": 4.5,
-          "smartfunktionen": 4.8,
-          "preisleistung": 4.1
+          "verarbeitung": 4,
+          "bedienung": 4,
+          "reinigung": 4.05,
+          "lautstaerke": 4,
+          "smartfunktionen": 4.2,
+          "preisleistung": 3.7
         },
         "decision": {
           "bestFor": [
@@ -15443,6 +16550,18 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -15552,14 +16671,14 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Glacier+Ultrafiltration+Fountain"
         },
-        "rating": 4.4,
-        "score": 88,
+        "rating": 3.9,
+        "score": 78,
         "ratings": {
-          "verarbeitung": 4.4,
-          "bedienung": 4.4,
-          "reinigung": 4.3,
-          "lautstaerke": 4.5,
-          "preisleistung": 4.2
+          "verarbeitung": 3.9,
+          "bedienung": 3.9,
+          "reinigung": 3.85,
+          "lautstaerke": 4,
+          "preisleistung": 3.75
         },
         "decision": {
           "bestFor": [
@@ -15606,6 +16725,16 @@
         "comparisons": [
           "beste-trinkbrunnen-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -15747,6 +16876,26 @@
           "{ label: \"Maße\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "largeDogFitReason": "Technisch stark für größere Rationen: 5 L Vorrat, bis ca. 500 g je Mahlzeit, Kroketten bis 15 mm. Napf und Standfestigkeit individuell prüfen.",
+          "largeDogFit": "technical-fit",
+          "manufacturerSizeClaim": "small-medium",
+          "kibbleMaxMm": 15,
+          "maxMealMl": 1000,
+          "maxMealGrams": 500,
+          "maxPortionsPerMeal": 50,
+          "portionMl": 20,
+          "portionGrams": 10,
+          "reservoirLiters": 5,
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ]
+        },
         "faq": [
           "{ question: \"Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?\", answer: \"Nein. Das Modell ist nur für Trockenfutter vorgesehen.\" }",
           "{ question: \"Ist die Videoaufzeichnung kostenlos?\", answer: \"Livebild und Grundfunktionen sind appbasiert. Für Cloud-Aufzeichnung und längere Speicherung können kostenpflichtige Dienste nötig sein.\" }",
@@ -15861,6 +17010,17 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Modell\", value: \"PLAF103 mit Dual Food Tray\" }",
           "{ label: \"Futterart\", value: \"Trockenfutter\" }",
@@ -15973,15 +17133,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L"
         },
-        "rating": 4.7,
-        "score": 94,
+        "rating": 4.1,
+        "score": 82,
         "ratings": {
-          "app": 5,
-          "portionierung": 5,
-          "reinigung": 4,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4.5,
-          "preisleistung": 4.5
+          "app": 4.4,
+          "portionierung": 4.4,
+          "reinigung": 3.7,
+          "zuverlaessigkeit": 4.05,
+          "sicherheit": 4.05,
+          "preisleistung": 4.05
         },
         "decision": {
           "bestFor": [
@@ -16048,6 +17208,26 @@
           "{ label: \"Reinigung\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Batterie\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "largeDogFitReason": "Technisch stark für größere Rationen: 5 L Vorrat, bis ca. 500 g je Mahlzeit, Kroketten bis 15 mm. Napf und Standfestigkeit individuell prüfen.",
+          "largeDogFit": "technical-fit",
+          "manufacturerSizeClaim": "small-medium",
+          "kibbleMaxMm": 15,
+          "maxMealMl": 1000,
+          "maxMealGrams": 500,
+          "maxPortionsPerMeal": 50,
+          "portionMl": 20,
+          "portionGrams": 10,
+          "reservoirLiters": 5,
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ]
+        },
         "faq": [
           "question: \"Kann der PETLIBRO Granary Nassfutter ausgeben?",
           "question: \"Wie groß ist eine Portion?",
@@ -16143,15 +17323,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO%20One%20RFID%20Smart%20Feeder"
         },
-        "rating": 4.7,
-        "score": 93,
+        "rating": 3.7,
+        "score": 74,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 5,
-          "\"preisleistung\"": 4
+          "\"app\"": 3.75,
+          "\"portionierung\"": 3.9,
+          "\"reinigung\"": 3.5,
+          "\"zuverlaessigkeit\"": 3.75,
+          "\"sicherheit\"": 3.9,
+          "\"preisleistung\"": 3.45
         },
         "decision": {
           "bestFor": [
@@ -16185,6 +17365,13 @@
           "Je Automat erhält nur ein Tier exklusiven Zugang"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -16288,15 +17475,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder"
         },
-        "rating": 4.8,
-        "score": 95,
+        "rating": 4,
+        "score": 80,
         "ratings": {
-          "app": 4.5,
-          "portionierung": 5,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 5,
-          "preisleistung": 4
+          "app": 3.95,
+          "portionierung": 4.3,
+          "reinigung": 3.95,
+          "zuverlaessigkeit": 3.95,
+          "sicherheit": 4.3,
+          "preisleistung": 3.6
         },
         "decision": {
           "bestFor": [
@@ -16343,6 +17530,16 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"Kapazität",
@@ -16448,15 +17645,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder"
         },
-        "rating": 4.6,
-        "score": 91,
+        "rating": 4,
+        "score": 80,
         "ratings": {
-          "\"app\"": 4.7,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.6,
-          "\"zuverlaessigkeit\"": 4.6,
-          "\"sicherheit\"": 4.6,
-          "\"preisleistung\"": 4.3
+          "\"app\"": 4.1,
+          "\"portionierung\"": 3.95,
+          "\"reinigung\"": 4,
+          "\"zuverlaessigkeit\"": 4,
+          "\"sicherheit\"": 4,
+          "\"preisleistung\"": 3.8
         },
         "decision": {
           "bestFor": [
@@ -16488,6 +17685,16 @@
           "Kleinerer Vorratsbehälter als Granary"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -16589,15 +17796,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=PETLIBRO+Edelstahl+Trinkbrunnen+3L"
         },
-        "rating": 4.4,
-        "score": 86,
+        "rating": 3.8,
+        "score": 75,
         "ratings": {
-          "verarbeitung": 4.6,
-          "bedienung": 4.4,
-          "reinigung": 4.5,
-          "lautstaerke": 4.3,
-          "smartfunktionen": 3,
-          "preisleistung": 4.4
+          "verarbeitung": 4.05,
+          "bedienung": 3.9,
+          "reinigung": 4,
+          "lautstaerke": 3.85,
+          "smartfunktionen": 2.85,
+          "preisleistung": 3.9
         },
         "decision": {
           "bestFor": [
@@ -16645,6 +17852,17 @@
           "beste-trinkbrunnen-fuer-katzen",
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
@@ -16779,6 +17997,16 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Nass-, Frisch- und Rohfutter nach tierärztlicher Eignung\" }",
           "{ label: \"Mahlzeiten\", value: \"6\" }",
@@ -16921,6 +18149,18 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-ohne-wlan"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Trocken- und halbfeuchtes Futter\" }",
           "{ label: \"Kapazität\", value: \"24 Cups / etwa 5,7 Liter\" }",
@@ -17066,6 +18306,18 @@
           "beste-futterautomaten-fuer-hunde",
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Futterart\", value: \"Trocken- und halbfeuchtes Futter\" }",
           "{ label: \"Kapazität\", value: \"24 Cups / etwa 5,7 Liter\" }",
@@ -17176,15 +18428,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=SureFeed%20Microchip%20Pet%20Feeder%20Connect"
         },
-        "rating": 4.6,
-        "score": 91,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 5,
-          "\"preisleistung\"": 3.5
+          "\"app\"": 3.95,
+          "\"portionierung\"": 4.3,
+          "\"reinigung\"": 3.95,
+          "\"zuverlaessigkeit\"": 3.95,
+          "\"sicherheit\"": 4.3,
+          "\"preisleistung\"": 3.35
         },
         "decision": {
           "bestFor": [
@@ -17219,6 +18471,16 @@
           "Begrenztes Schalenvolumen"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -17322,15 +18584,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=SureFeed+Microchip+Pet+Feeder"
         },
-        "rating": 4.5,
-        "score": 89,
+        "rating": 3.6,
+        "score": 72,
         "ratings": {
-          "app": 1,
-          "portionierung": 4,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 5,
-          "preisleistung": 4
+          "app": 2.25,
+          "portionierung": 3.6,
+          "reinigung": 3.95,
+          "zuverlaessigkeit": 3.95,
+          "sicherheit": 4.3,
+          "preisleistung": 3.6
         },
         "decision": {
           "bestFor": [
@@ -17376,6 +18638,16 @@
         "comparisons": [
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"Kapazität",
@@ -17422,15 +18694,26 @@
         "layout": "product",
         "testStatus": "manufacturer-data",
         "productStatus": "active",
-        "description": "In ein Sicherheitshalsband integrierter GPS-Tracker für Katzen von 3 bis 8 kg mit 31 g Gesamtgewicht, LTE und bis zu sieben Tagen Akku.",
-        "recommendation": "Stärkste Gesamtlösung für Katzen von 3 bis 8 kg, wenn integrierte Bauform und Sicherheitsverschluss wichtiger sind als minimale Gerätemasse oder Abo-Freiheit.",
+        "description": "In ein Sicherheitshalsband integrierter LTE-GPS-Tracker für Katzen von 3 bis 8 kg mit 32 g Gesamtgewicht, IP68 und bis zu sieben Tagen Akkulaufzeit mit Energiesparzone.",
+        "recommendation": "Starke Gesamtlösung für Freigängerkatzen von 3 bis 8 kg, wenn eine integrierte, ergonomische Halsbandlösung mit Live-Ortung und Gesundheitsdaten wichtiger ist als Abo-Freiheit oder ein frei wählbares Halsband.",
         "manufacturer": "{ key: \"tractive\", name: \"Tractive\", slug: \"tractive\" }",
         "category": "{ key: \"gps-tracker\", label: \"GPS-Tracker\", path: \"/gps-tracker/\" }",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
+        "updatedAt": "2026-07-22",
         "author": "{ name: \"PfotenTechnik Redaktion\" }",
-        "seo": "{ title: \"Tractive CAT 6 Mini: Gewicht, Akku & Daten\", description: \"CAT 6 Mini mit 31 g inklusive Halsband, IP68, LTE, Sicherheitsverschluss und bis zu sieben Tagen Akku.\", canonical: \"/produkt/tractive-cat-6-mini/\", sitemap: true, priority: 0.8 }",
-        "hub": "{ sections: [\"produkte\", \"gps-tracker\"] }",
+        "seo": {
+          "title": "Tractive CAT 6 Mini: Gewicht, Akku und Daten",
+          "description": "Tractive CAT 6 Mini mit 32 g inklusive Halsband, IP68, LTE/4G, Sicherheitsverschluss und bis zu sieben Tagen Akku.",
+          "canonical": "/produkt/tractive-cat-6-mini/",
+          "sitemap": true,
+          "priority": 0.8
+        },
+        "hub": {
+          "sections": [
+            "produkte",
+            "gps-tracker"
+          ]
+        },
         "tags": [
           "gps-tracker",
           "katzen",
@@ -17439,47 +18722,79 @@
           "abo"
         ],
         "images": {
-          "hero": "{ src: \"../../assets/images/guides/gps-tracker/hero.webp\", alt: \"Generische GPS-Tracker-Darstellung an einer Katze; nicht das konkrete Produkt\" }",
-          "thumbnail": "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Sichere Tracker-Befestigung an Katzen\" }",
-          "comparison": "{ src: \"../../assets/images/guides/gps-tracker/gps-vs-bluetooth.webp\", alt: \"GPS und Bluetooth für Katzen im Vergleich\" }",
+          "hero": {
+            "src": "../../assets/images/products/tractive-cat-6-mini/hero.webp",
+            "alt": "Katze mit einem runden, in das Sicherheitshalsband integrierten GPS-Tracker"
+          },
+          "thumbnail": {
+            "src": "../../assets/images/products/tractive-cat-6-mini/thumbnail.webp",
+            "alt": "Rundes GPS-Tracker-Halsband für Katzen in einer freigestellten Produktansicht"
+          },
+          "comparison": {
+            "src": "../../assets/images/products/tractive-cat-6-mini/comparison.webp",
+            "alt": "Katzenhalsband mit integriertem rundem GPS-Tracker für den Produktvergleich"
+          },
           "gallery": [
-            "{ src: \"../../assets/images/guides/gps-tracker/missing-pet.webp\", alt: \"Ortung einer entlaufenen Katze\" }",
-            "{ src: \"../../assets/images/guides/gps-tracker/range-accuracy.webp\", alt: \"Umgebungseinflüsse auf GPS-Ortung\" }"
+            "src: \"../../assets/images/products/tractive-cat-6-mini/gallery-1.webp",
+            "src: \"../../assets/images/products/tractive-cat-6-mini/gallery-2.webp",
+            "src: \"../../assets/images/products/tractive-cat-6-mini/gallery-3.webp"
           ]
         },
-        "affiliate": "{ provider: \"manufacturer\", label: \"Beim Hersteller ansehen\", url: \"https://tractive.com/de/pd/gps-tracker-cat\" }",
-        "rating": 4.7,
-        "score": 94,
-        "ratings": "{ ortung: 4.7, app: 4.8, akku: 4.5, tragekomfort: 4.7, kosten: 4.0 }",
+        "affiliate": {
+          "provider": "manufacturer",
+          "label": "Beim Hersteller ansehen",
+          "url": "https://tractive.com/de/pd/gps-tracker-cat"
+        },
+        "rating": 4.5,
+        "score": 91,
+        "ratings": {
+          "ortung": 4.7,
+          "app": 4.8,
+          "akku": 4.5,
+          "tragekomfort": 4.7,
+          "kosten": 4
+        },
         "decision": {
           "bestFor": [
-            "Katzen von 3 bis 8 kg",
+            "Freigängerkatzen von 3 bis 8 kg",
             "integrierte Halsbandlösung",
-            "Live-Ortung",
-            "Aktivitäts- und Gesundheitstrends"
+            "Live-Ortung und virtuelle Zäune",
+            "Aktivitäts-, Schlaf- und Gesundheitstrends"
           ],
           "attention": [
-            "31 g beziehen sich auf Tracker inklusive Halsband",
-            "nur für 19 bis 22",
-            "9 cm Halsumfang",
-            "Abo pro Tracker erforderlich",
-            "Sicherheitsverschluss kann zum Verlust des Trackers führen und soll genau das im Hängenbleibefall ermöglichen"
+            "32 g beziehen sich auf Tracker und Halsband zusammen",
+            "geeignet für Halsumfänge von 19 bis 22,9 cm",
+            "ein aktives Abo ist für die Mobilfunkübertragung erforderlich",
+            "der Sicherheitsverschluss kann sich bei Zug öffnen; dadurch kann der Tracker verloren gehen"
           ]
         },
-        "review": "{ summary: \"Der CAT 6 Mini integriert Ortung und Sicherheitsverschluss in eine runde, katzenspezifische Halsbandlösung.\", verdict: \"Die klarste Katzen-Gesamtlösung im Datensatz, solange Größe und Halsumfang passen.\" }",
+        "review": {
+          "summary": "Der CAT 6 Mini kombiniert LTE-GPS-Ortung, Aktivitätsdaten und Gesundheitsfunktionen mit einem speziell für Katzen entwickelten Sicherheitshalsband.",
+          "verdict": "Eine besonders schlüssige Komplettlösung für passende Freigängerkatzen, sofern Abo, Halsumfang und Sicherheitsverschluss zum Einsatzprofil passen."
+        },
         "strengths": [
-          "31 g inklusive Halsband",
-          "integrierte Bauform",
-          "gewichtsverstellbarer Sicherheitsverschluss",
-          "bis zu sieben Tage Akku",
+          "32 g inklusive Halsband",
+          "Tracker direkt in das Halsband integriert",
+          "Sicherheitsverschluss für Katzen",
+          "bis zu sieben Tage Akku mit Energiesparzone",
+          "bis zu vier Tage Akku ohne Energiesparzone",
+          "Live-Ortung, Positionsverlauf und virtuelle Zäune",
+          "Aktivitäts-, Schlaf-, Herz- und Atemfrequenz-Trends",
+          "Signalton und LED-Licht",
           "IP68"
         ],
         "weaknesses": [
-          "Abo zwingend",
+          "Abo zwingend erforderlich",
           "enger Gewichts- und Halsumfangsbereich",
-          "Sicherheitsöffnung kann Trackerverlust bedeuten"
+          "Halsband nicht frei wählbar",
+          "Akkulaufzeit sinkt bei häufiger Live-Ortung und schwacher Mobilfunkabdeckung",
+          "Sicherheitsöffnung kann zum Verlust von Halsband und Tracker führen"
         ],
-        "experience": "{ summary: \"Einordnung anhand aktueller Tractive-Daten.\", methodology: \"Kein eigener Praxistest.\", maintenance: \"Sitz und Sicherheitsverschluss täglich prüfen; Halsband nach starkem Zug ersetzen und Akku vor Freigang kontrollieren.\" }",
+        "experience": {
+          "summary": "Redaktionelle Einordnung anhand aktueller Hersteller- und Supportangaben.",
+          "methodology": "Kein eigener Praxistest; technische Daten und Funktionsumfang wurden mit den offiziellen Angaben von Tractive abgeglichen.",
+          "maintenance": "Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den Akku vor längerem Freigang ausreichend laden."
+        },
         "alternatives": [
           "weenect-xs",
           "paj-pet-finder-4g-mini"
@@ -17492,33 +18807,68 @@
         "features": [
           "Live-Ortung",
           "Sicherheitszonen",
-          "Positionsverlauf",
+          "Positionsverlauf und Revieranalyse",
           "Aktivitäts- und Schlaftracking",
-          "Herz- und Atemfrequenz-Trends"
+          "Herz- und Atemfrequenz-Trends",
+          "Gesundheitswarnungen",
+          "Signalton",
+          "LED-Licht"
         ],
         "priceCategory": "midrange",
         "useCase": "Katzenspezifischer Mobilfunktracker mit integriertem Sicherheitshalsband",
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, GLONASS und Galileo\" }",
           "{ label: \"Übertragung\", value: \"LTE/4G (Cat 1 bis)\" }",
-          "{ label: \"Reichweite\", value: \"Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich\" }",
+          "{ label: \"Reichweite\", value: \"Keine feste Distanzgrenze; unterstützte Mobilfunkabdeckung erforderlich\" }",
           "{ label: \"Abo\", value: \"Erforderlich; ein Abo pro Tracker\" }",
           "{ label: \"App\", value: \"Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer\" }",
-          "{ label: \"WLAN\", value: \"2,4 GHz für Energiesparzonen\" }",
+          "{ label: \"WLAN\", value: \"2,4 GHz b/g/n für Energiesparzonen\" }",
           "{ label: \"Bluetooth\", value: \"Bluetooth 5.0\" }",
-          "{ label: \"Akkulaufzeit\", value: \"Bis zu 7 Tage mit Energiesparzonen\" }",
+          "{ label: \"Akkukapazität\", value: \"450 mAh\" }",
+          "{ label: \"Akkulaufzeit\", value: \"Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone\" }",
           "{ label: \"Stromversorgung\", value: \"Integrierter Akku\" }",
           "{ label: \"Wasserschutz\", value: \"IP68\" }",
           "{ label: \"Abmessungen\", value: \"95 × 20 × 13 mm\" }",
-          "{ label: \"Gewicht\", value: \"31 g inklusive Halsband\" }",
+          "{ label: \"Gewicht\", value: \"32 g inklusive Halsband\" }",
           "{ label: \"Geeignet für\", value: \"Katzen von 3 bis 8 kg\" }",
-          "{ label: \"Befestigung\", value: \"Integriertes Halsband für 19 bis 22,9 cm Halsumfang\" }",
-          "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
+          "{ label: \"Befestigung\", value: \"Integriertes Sicherheitshalsband für 19 bis 22,9 cm Halsumfang\" }",
+          "{ label: \"Zusatzfunktionen\", value: \"Signalton und LED-Licht\" }",
+          "{ label: \"Material\", value: \"Nicht vom Hersteller konkret ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "cat"
+          ],
+          "minimumPetWeightKg": 3,
+          "maximumPetWeightKg": 8,
+          "deviceWeightGrams": 32,
+          "weightBasis": "including-collar",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 0,
+          "transmission": "lte",
+          "batteryMaxDays": 7,
+          "batteryCondition": "bis zu 7 Tage mit Energiesparzone, bis zu 4 Tage ohne Energiesparzone; abhängig von Nutzung, GPS-Signal und Mobilfunkabdeckung",
+          "waterproofRating": "IP68",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": true,
+          "attachmentType": "safety-collar"
+        },
         "faq": [
-          "{ question: \"Wie schwer ist der CAT 6 Mini?\", answer: \"Tractive nennt rund 31 g inklusive Halsband. Das ist nicht direkt mit reinen Gerätegewichten anderer Tracker vergleichbar.\" }",
-          "{ question: \"Warum hat das Halsband einen Sicherheitsverschluss?\", answer: \"Er soll sich unter definierter Zugbelastung öffnen, damit sich eine hängengebliebene Katze befreien kann. Dabei kann der Tracker verloren gehen; die Sicherheitsfunktion hat Vorrang.\" }",
-          "{ question: \"Braucht der CAT 6 Mini ein Abo?\", answer: \"Ja. Die Standortübertragung über Mobilfunk und die App-Funktionen setzen ein aktives Abo voraus.\" }"
+          "question: \"Wie schwer ist der Tractive CAT 6 Mini?",
+          "question: \"Für welche Katzen ist der CAT 6 Mini geeignet?",
+          "question: \"Wie lange hält der Akku?",
+          "question: \"Warum hat das Halsband einen Sicherheitsverschluss?",
+          "question: \"Braucht der Tractive CAT 6 Mini ein Abo?",
+          "question: \"Funktioniert der Tracker ohne Mobilfunkempfang?",
+          "question: \"Diagnostiziert der Tracker Krankheiten?"
         ]
       },
       "issues": []
@@ -17609,6 +18959,17 @@
         ],
         "priceCategory": "midrange",
         "useCase": "Mobilfunktracker für große Hunde und lange Akkureserve",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, GLONASS und Galileo\" }",
           "{ label: \"Übertragung\", value: \"LTE/4G (Cat 1 bis)\" }",
@@ -17626,6 +18987,24 @@
           "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis 4 cm Breite\" }",
           "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog"
+          ],
+          "minimumPetWeightKg": 20,
+          "deviceWeightGrams": 90,
+          "weightBasis": "device",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 0,
+          "transmission": "lte",
+          "batteryMaxDays": 42,
+          "batteryCondition": "mit Energiesparzonen",
+          "waterproofRating": "IP68",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": true,
+          "attachmentType": "clip"
+        },
         "faq": [
           "{ question: \"Wie lange hält der DOG 6 XL?\", answer: \"Tractive nennt bis zu sechs Wochen mit Energiesparzonen. Häufiges Live-Tracking und schwacher Empfang verkürzen die Laufzeit.\" }",
           "{ question: \"Ist er für kleine Hunde geeignet?\", answer: \"Nein. Der Hersteller empfiehlt das 70-g-Modell für Hunde ab 20 kg. Für leichtere Hunde ist der DOG 6 vorgesehen.\" }",
@@ -17735,6 +19114,17 @@
         ],
         "priceCategory": "midrange",
         "useCase": "Alltagstracker für Hunde über 4 kg",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, GLONASS und Galileo\" }",
           "{ label: \"Übertragung\", value: \"LTE/4G (Cat 1 bis)\" }",
@@ -17752,6 +19142,24 @@
           "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis 2,8 cm Breite\" }",
           "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog"
+          ],
+          "minimumPetWeightKg": 4,
+          "deviceWeightGrams": 39,
+          "weightBasis": "device",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 0,
+          "transmission": "lte",
+          "batteryMaxDays": 14,
+          "batteryCondition": "mit Energiesparzonen",
+          "waterproofRating": "IP68",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": true,
+          "attachmentType": "clip"
+        },
         "faq": [
           "{ question: \"Braucht der Tractive DOG 6 ein Abo?\", answer: \"Ja. Die integrierte Mobilfunkverbindung und die App-Dienste werden über ein eigenes Abo pro Tracker bereitgestellt. Ohne aktives Abo ist der Tracker nicht für die laufende Ortung nutzbar.\" }",
           "{ question: \"Für welche Hunde ist der DOG 6 gedacht?\", answer: \"Tractive empfiehlt den DOG 6 für Hunde über 4 kg. Zusätzlich muss das Halsband zur mitgelieferten Klammer und der Tracker zum individuellen Tragekomfort passen.\" }",
@@ -17851,6 +19259,16 @@
         ],
         "priceCategory": "midrange",
         "useCase": "Leichter Mobilfunktracker für Katzen und kleine Hunde",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, Galileo, BeiDou und GLONASS\" }",
           "{ label: \"Übertragung\", value: \"5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM\" }",
@@ -17868,6 +19286,25 @@
           "{ label: \"Befestigung\", value: \"Silikonhüllen; Katzenversion mit Anti-Strangulations-Elastikband\" }",
           "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "minimumPetWeightKg": 3,
+          "deviceWeightGrams": 27,
+          "weightBasis": "device",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 0,
+          "transmission": "lte",
+          "batteryMaxDays": 10,
+          "batteryCondition": "Hersteller-Maximalwert",
+          "waterproofRating": "IP68",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": true,
+          "attachmentType": "collar-attachment"
+        },
         "faq": [
           "{ question: \"Ist der Weenect XS für Katzen geeignet?\", answer: \"Ja. Weenect bietet ihn für Katzen ab 3 kg mit einem Anti-Strangulations-Elastikband an. Sitz und sichere Öffnungsfunktion müssen individuell geprüft werden.\" }",
           "{ question: \"Wie lange hält sein Akku?\", answer: \"Weenect nennt bis zu sieben Tage mit WLAN-Zonen und rund zwei Tage bei kontinuierlichem Tracking. Die Nutzungsart verändert den Wert erheblich.\" }",
@@ -17965,6 +19402,17 @@
         ],
         "priceCategory": "premium",
         "useCase": "Robuster Mobilfunktracker für lange Outdoor-Einsätze mit Hunden",
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "{ label: \"Ortung\", value: \"Satellitenortung über Weenect InfinityTrack\" }",
           "{ label: \"Übertragung\", value: \"5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM\" }",
@@ -17982,6 +19430,23 @@
           "{ label: \"Befestigung\", value: \"Julius-K9-Halsband oder Universalbefestigung je Variante\" }",
           "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "gps": {
+          "animal": [
+            "dog"
+          ],
+          "deviceWeightGrams": 54,
+          "weightBasis": "device",
+          "subscriptionRequired": true,
+          "includedServiceMonths": 0,
+          "transmission": "lte",
+          "batteryMaxDays": 21,
+          "batteryCondition": "Hersteller-Maximalwert",
+          "waterproofRating": "IP68",
+          "liveTracking": true,
+          "virtualFence": true,
+          "activityTracking": true,
+          "attachmentType": "collar-attachment"
+        },
         "faq": [
           "{ question: \"Was unterscheidet den Weenect XT vom XS?\", answer: \"Der XT ist größer und schwerer, bietet aber laut Hersteller bis zu drei Wochen Akkulaufzeit, eine stärkere Leuchte und eine auf Outdoor-Nutzung ausgelegte Befestigung.\" }",
           "{ question: \"Braucht der Weenect XT ein Abo?\", answer: \"Ja. Der Tracker überträgt Positionen über eine integrierte Multi-Netz-SIM; dafür ist ein Weenect-Abo erforderlich.\" }",
@@ -18065,15 +19530,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=WOPET%20Cube%20Air%20CA10%20Futterautomat"
         },
-        "rating": 4.4,
-        "score": 88,
+        "rating": 4,
+        "score": 79,
         "ratings": {
-          "\"app\"": 4.5,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4.5,
-          "\"zuverlaessigkeit\"": 4.3,
-          "\"sicherheit\"": 4.3,
-          "\"preisleistung\"": 4.6
+          "\"app\"": 4,
+          "\"portionierung\"": 4,
+          "\"reinigung\"": 4,
+          "\"zuverlaessigkeit\"": 3.85,
+          "\"sicherheit\"": 3.85,
+          "\"preisleistung\"": 4.05
         },
         "decision": {
           "bestFor": [
@@ -18108,6 +19573,16 @@
           "Keine Kamera integriert"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -18216,15 +19691,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L"
         },
-        "rating": 4.2,
-        "score": 83,
+        "rating": 3.6,
+        "score": 72,
         "ratings": {
-          "\"app\"": 4,
-          "\"portionierung\"": 4,
-          "\"reinigung\"": 4,
-          "\"zuverlaessigkeit\"": 4,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4
+          "\"app\"": 3.6,
+          "\"portionierung\"": 3.6,
+          "\"reinigung\"": 3.6,
+          "\"zuverlaessigkeit\"": 3.6,
+          "\"sicherheit\"": 3.6,
+          "\"preisleistung\"": 3.6
         },
         "decision": {
           "bestFor": [
@@ -18257,6 +19732,17 @@
           "Regionale Verfügbarkeit schwankt"
         ],
         "alternatives": [],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Futterart",
           "label: \"App-Steuerung",
@@ -18361,15 +19847,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat"
         },
-        "rating": 4.3,
-        "score": 86,
+        "rating": 3.8,
+        "score": 75,
         "ratings": {
-          "app": 4,
-          "portionierung": 4.5,
-          "reinigung": 4,
-          "zuverlaessigkeit": 4,
-          "sicherheit": 4,
-          "preisleistung": 4.5
+          "app": 3.65,
+          "portionierung": 4,
+          "reinigung": 3.65,
+          "zuverlaessigkeit": 3.65,
+          "sicherheit": 3.65,
+          "preisleistung": 4
         },
         "decision": {
           "bestFor": [
@@ -18417,6 +19903,17 @@
           "beste-futterautomaten-fuer-hunde",
           "beste-futterautomaten-fuer-katzen"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Futterart",
@@ -18532,15 +20029,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat"
         },
-        "rating": 4.2,
-        "score": 84,
+        "rating": 3.5,
+        "score": 71,
         "ratings": {
-          "\"app\"": 1,
-          "\"portionierung\"": 4.5,
-          "\"reinigung\"": 4,
-          "\"zuverlaessigkeit\"": 4.5,
-          "\"sicherheit\"": 4,
-          "\"preisleistung\"": 4.5
+          "\"app\"": 2.25,
+          "\"portionierung\"": 3.95,
+          "\"reinigung\"": 3.6,
+          "\"zuverlaessigkeit\"": 3.95,
+          "\"sicherheit\"": 3.6,
+          "\"preisleistung\"": 3.95
         },
         "decision": {
           "bestFor": [
@@ -18590,6 +20087,24 @@
           "{ label: \"Maße\", value: \"Nicht vom Hersteller ausgewiesen\" }",
           "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ],
+          "largeDogFitReason": "Technisch stark für größere Rationen: 7 L Vorrat, bis ca. 400 g je Mahlzeit, Kroketten bis 12 mm. Napf und Standfestigkeit individuell prüfen.",
+          "largeDogFit": "technical-fit",
+          "manufacturerSizeClaim": "unknown",
+          "kibbleMaxMm": 12,
+          "maxMealGrams": 400,
+          "maxPortionsPerMeal": 40,
+          "portionGrams": 10,
+          "reservoirLiters": 7
+        },
         "faq": [],
         "useCase": "Für Katzen sowie kleine bis mittelgroße Hunde mit hohem Trockenfutterbedarf und ohne Bedarf an App-Steuerung",
         "capacity": "7 Liter",
@@ -18678,15 +20193,15 @@
           "label": "Aktuellen Preis prüfen",
           "url": "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Food+Feeder+2"
         },
-        "rating": 4.5,
-        "score": 90,
+        "rating": 4,
+        "score": 81,
         "ratings": {
-          "app": 4.5,
-          "portionierung": 4.5,
-          "reinigung": 4.5,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4.5,
-          "preisleistung": 4.5
+          "app": 4.05,
+          "portionierung": 4.05,
+          "reinigung": 4.05,
+          "zuverlaessigkeit": 4.05,
+          "sicherheit": 4.05,
+          "preisleistung": 4.05
         },
         "decision": {
           "bestFor": [
@@ -18752,6 +20267,22 @@
           "label: \"Geeignet für",
           "{ label: \"Reinigung\", value: \"Nicht vom Hersteller ausgewiesen\" }"
         ],
+        "comparisonFilters": {
+          "largeDogFitReason": "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt.",
+          "largeDogFit": "conditional",
+          "manufacturerSizeClaim": "max-40cm",
+          "kibbleMaxMm": 12,
+          "portionGrams": 10,
+          "reservoirLiters": 5,
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "medium"
+          ]
+        },
         "faq": [
           "question: \"Ist der Xiaomi Smart Pet Food Feeder 2 für gefriergetrocknetes Futter geeignet?",
           "question: \"Misst der Napf, wie viel das Tier gefressen hat?",
@@ -18843,15 +20374,15 @@
           "label": "Verfügbarkeit und Preis prüfen",
           "url": "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Fountain+2"
         },
-        "rating": 4.6,
-        "score": 92,
+        "rating": 4,
+        "score": 81,
         "ratings": {
-          "verarbeitung": 4.6,
-          "bedienung": 4.6,
-          "reinigung": 4.5,
-          "lautstaerke": 4.5,
-          "smartfunktionen": 4.7,
-          "preisleistung": 4.4
+          "verarbeitung": 4.05,
+          "bedienung": 4.05,
+          "reinigung": 4,
+          "lautstaerke": 4,
+          "smartfunktionen": 4.15,
+          "preisleistung": 3.9
         },
         "decision": {
           "bestFor": [
@@ -18899,6 +20430,17 @@
           "beste-trinkbrunnen-fuer-katzen",
           "beste-trinkbrunnen-fuer-hunde"
         ],
+        "comparisonFilters": {
+          "animal": [
+            "dog",
+            "cat"
+          ],
+          "petSize": [
+            "small",
+            "large"
+          ],
+          "foodType": []
+        },
         "specs": [
           "label: \"Modell",
           "label: \"Kapazität",
