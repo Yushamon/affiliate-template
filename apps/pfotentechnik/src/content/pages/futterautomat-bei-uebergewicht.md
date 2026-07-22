@@ -158,7 +158,7 @@ healthBridge:
 closingCta:
   title: "Passende Modelle nach Portionskontrolle vergleichen"
   text: "Achte auf kleine Ausgabeschritte, kontrollierten Futterzugang und eine nachvollziehbare Dokumentation."
-  primaryHref: "/vergleiche/beste-futterautomaten/"
+  productKey: "xiaomi-smart-pet-food-feeder-2"
   primaryLabel: "Passende Modelle vergleichen"
   secondaryHref: "/futterautomat-und-ernaehrung/"
   secondaryLabel: "Tagesration richtig planen"
