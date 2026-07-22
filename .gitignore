@@ -26,3 +26,14 @@ pnpm-debug.log*
 apps/pfotentechnik/.gsc/client-secret.json
 apps/pfotentechnik/.gsc/token.json
 apps/pfotentechnik/.gsc/config.json
+
+# Local Google OAuth credentials
+
+client_secret_*.apps.googleusercontent.com.json
+
+client_secret*.json
+
+.google-oauth/
+
+*.oauth-token.json
+
