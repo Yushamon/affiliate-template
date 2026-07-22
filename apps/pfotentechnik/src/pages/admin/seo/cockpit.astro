@@ -1,82 +1,319 @@
 ---
-import payload from "../../../data/seo/gsc-dashboard-ranges.json";
-const json = JSON.stringify(payload).replace(/</g, "\\u003c");
+import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
+
+const payload = loadSeoDashboard();
+const serializedPayload = JSON.stringify(payload).replace(/</g, "\\u003c");
+const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
 ---
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<meta name="robots" content="noindex,nofollow" />
-<title>SEO Cockpit | PfotenTechnik</title>
-<style>
-:root{color-scheme:light dark;font-family:Inter,system-ui,sans-serif;--bg:#f4f6f8;--card:#fff;--border:#dce5df;--text:#17211b;--muted:#66736b;--accent:#2e7d32}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text)}main{width:min(1280px,calc(100% - 28px));margin:auto;padding:28px 0 60px}
-header{display:flex;justify-content:space-between;gap:20px;align-items:end}h1{margin:3px 0;font-size:clamp(2rem,4vw,3rem)}h2{font-size:1.15rem}
-.muted{color:var(--muted)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.range{padding:10px 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);color:var(--text);font-weight:700;cursor:pointer}.range.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.notice{display:none;padding:11px 14px;border-radius:12px;background:#fff3d8;color:#805300;margin-bottom:16px}.notice.show{display:block}.grid{display:grid;gap:16px}.metrics{grid-template-columns:repeat(4,1fr);margin-bottom:16px}.columns{grid-template-columns:repeat(2,1fr)}
-.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px}.metric strong{display:block;font-size:1.8rem;margin:6px 0}.positive{color:#2e7d32}.negative{color:#b42318}.list{display:grid;gap:10px}.item{padding:12px;border:1px solid var(--border);border-radius:13px}.item strong{display:block;overflow-wrap:anywhere}.meta{font-size:.86rem;color:var(--muted);margin-top:5px}
-table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:9px;border-bottom:1px solid var(--border);text-align:right}th:first-child,td:first-child{text-align:left}.scroll{overflow:auto}
-@media(max-width:850px){.metrics,.columns{grid-template-columns:1fr 1fr}}@media(max-width:560px){.metrics,.columns{grid-template-columns:1fr}header{display:block}}
-@media(prefers-color-scheme:dark){:root{--bg:#101512;--card:#171e19;--border:#2b352e;--text:#edf4ef;--muted:#aebbb2}.notice{background:#382b14;color:#ffd88b}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>SEO Cockpit | PfotenTechnik</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: Inter, system-ui, sans-serif;
+      --bg: #f4f6f8;
+      --card: #fff;
+      --border: #dce5df;
+      --text: #17211b;
+      --muted: #66736b;
+      --accent: #2e7d32;
+      --warning-bg: #fff3d8;
+      --warning-text: #805300;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); }
+    main { width: min(1280px, calc(100% - 28px)); margin: auto; padding: 28px 0 60px; }
+    header { display: flex; justify-content: space-between; gap: 20px; align-items: end; }
+    h1 { margin: 3px 0; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { font-size: 1.15rem; }
+    code { font-size: .9em; }
+    .muted { color: var(--muted); }
+    .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 22px 0; }
+    .range {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--text);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .range.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .range[hidden] { display: none; }
+    .notice {
+      padding: 11px 14px;
+      border-radius: 12px;
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      margin-bottom: 16px;
+    }
+    .notice[data-dynamic] { display: none; }
+    .notice[data-dynamic].show { display: block; }
+    .grid { display: grid; gap: 16px; }
+    .metrics { grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
+    .columns { grid-template-columns: repeat(2, 1fr); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .metric strong { display: block; font-size: 1.8rem; margin: 6px 0; }
+    .positive { color: #2e7d32; }
+    .negative { color: #b42318; }
+    .neutral { color: var(--muted); }
+    .list { display: grid; gap: 10px; }
+    .item { padding: 12px; border: 1px solid var(--border); border-radius: 13px; }
+    .item strong { display: block; overflow-wrap: anywhere; }
+    .meta { font-size: .86rem; color: var(--muted); margin-top: 5px; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    th, td { padding: 9px; border-bottom: 1px solid var(--border); text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    .scroll { overflow: auto; }
+
+    @media (max-width: 850px) {
+      .metrics, .columns { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .metrics, .columns { grid-template-columns: 1fr; }
+      header { display: block; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101512;
+        --card: #171e19;
+        --border: #2b352e;
+        --text: #edf4ef;
+        --muted: #aebbb2;
+        --warning-bg: #382b14;
+        --warning-text: #ffd88b;
+      }
+    }
+  </style>
 </head>
 <body>
-<main>
-<header>
-<div><div class="muted">Google Search Console</div><h1>SEO Cockpit</h1><div id="period" class="muted"></div></div>
-<div class="muted">Synchronisiert: {new Date(payload.generatedAt).toLocaleString("de-DE")}</div>
-</header>
+  <main>
+    <header>
+      <div>
+        <div class="muted">Google Search Console</div>
+        <h1>SEO Cockpit</h1>
+        <div id="period" class="muted"></div>
+      </div>
+      <div class="muted">Synchronisiert: {generatedAt}</div>
+    </header>
 
-<div class="toolbar">
-<button class="range" data-range="24h">24 Stunden</button>
-<button class="range active" data-range="7d">7 Tage</button>
-<button class="range" data-range="28d">28 Tage</button>
-<button class="range" data-range="3m">3 Monate</button>
-<button class="range" data-range="6m">6 Monate</button>
-<button class="range" data-range="12m">12 Monate</button>
-</div>
+    <div class="toolbar" aria-label="Zeitraum auswählen">
+      <button class="range" data-range="24h">24 Stunden</button>
+      <button class="range" data-range="7d">7 Tage</button>
+      <button class="range" data-range="28d">28 Tage</button>
+      <button class="range" data-range="3m">3 Monate</button>
+      <button class="range" data-range="6m">6 Monate</button>
+      <button class="range" data-range="12m">12 Monate</button>
+    </div>
 
-<div id="notice" class="notice">Aktuelle GSC-Daten sind noch nicht vollständig verarbeitet und können sich nachträglich ändern.</div>
-<section id="metrics" class="grid metrics"></section>
-<section class="grid columns">
-<article class="card"><h2>🚀 Quick Wins</h2><div id="quick" class="list"></div></article>
-<article class="card"><h2>📉 Schwache CTR</h2><div id="ctr" class="list"></div></article>
-<article class="card"><h2>🔎 Suchbegriffe</h2><div class="scroll"><table><thead><tr><th>Suchanfrage</th><th>Impr.</th><th>Klicks</th><th>Pos.</th></tr></thead><tbody id="queries"></tbody></table></div></article>
-<article class="card"><h2>🤖 Empfehlungen</h2><div id="recs" class="list"></div></article>
-</section>
-</main>
+    {payload.fallbackMode && (
+      <div class="notice">
+        Die neue Multi-Zeitraum-Datei fehlt noch. Das Cockpit zeigt vorübergehend die vorhandenen 7-Tage-Daten.
+        Führe <code>npm run gsc:sync</code> aus.
+      </div>
+    )}
 
-<script type="application/json" id="seo-data" set:html={json}></script>
-<script>
-const payload=JSON.parse(document.getElementById("seo-data").textContent);
-const number=new Intl.NumberFormat("de-DE");
-const clean=(url)=>url?.replace("https://www.pfotentechnik.de","")||"/";
-const card=(title,meta)=>'<div class="item"><strong>'+title+'</strong><div class="meta">'+meta+'</div></div>';
-function render(key){
- const data=payload.ranges[key];
- document.querySelectorAll(".range").forEach((button)=>button.classList.toggle("active",button.dataset.range===key));
- document.getElementById("notice").classList.toggle("show",Boolean(data.partial));
- document.getElementById("period").textContent=data.label+" · Vergleich: "+data.comparisonStartDate+" bis "+data.comparisonEndDate;
- const m=data.metrics.current,c=data.metrics.change;
- const metrics=[
-  ["Klicks",number.format(m.clicks),c.clicks+" %"],
-  ["Impressionen",number.format(m.impressions),c.impressions+" %"],
-  ["CTR",m.ctr.toFixed(2)+" %",(c.ctr>=0?"+":"")+c.ctr.toFixed(2)+" Pp."],
-  ["Position",m.position.toFixed(1),(c.position>=0?"+":"")+c.position.toFixed(1)]
- ];
- document.getElementById("metrics").innerHTML=metrics.map(([label,value,delta])=>'<article class="card metric"><div class="muted">'+label+'</div><strong>'+value+'</strong><div class="'+(delta.startsWith("-")?"negative":"positive")+'">'+delta+'</div></article>').join("");
- const quick=data.pages.filter((r)=>r.position>=8&&r.position<=20&&r.impressions>=20).slice(0,20);
- document.getElementById("quick").innerHTML=quick.map((r)=>card(clean(r.page),number.format(r.impressions)+" Impressionen · Position "+r.position.toFixed(1)+" · CTR "+r.ctr.toFixed(2)+" %")).join("")||card("Keine Quick Wins","Für diesen Zeitraum wurden keine passenden Seiten gefunden.");
- const weak=data.pages.filter((r)=>r.impressions>=20&&r.ctr<2.5).slice(0,20);
- document.getElementById("ctr").innerHTML=weak.map((r)=>card(clean(r.page),number.format(r.impressions)+" Impressionen · CTR "+r.ctr.toFixed(2)+" % · Position "+r.position.toFixed(1))).join("")||card("Keine auffälligen Seiten","Für diesen Zeitraum liegt keine Seite unter dem Schwellenwert.");
- document.getElementById("queries").innerHTML=data.queries.slice(0,30).map((r)=>"<tr><td>"+r.query+"</td><td>"+number.format(r.impressions)+"</td><td>"+number.format(r.clicks)+"</td><td>"+r.position.toFixed(1)+"</td></tr>").join("");
- document.getElementById("recs").innerHTML=(data.recommendations||[]).slice(0,20).map((r)=>card(r.title+": "+clean(r.page),r.reason+" · "+r.action)).join("")||card("Keine dringende Empfehlung","Für diesen Zeitraum gibt es aktuell keinen Regel-Treffer.");
- localStorage.setItem("seo-cockpit-range",key);
-}
-document.querySelectorAll(".range").forEach((button)=>button.addEventListener("click",()=>render(button.dataset.range)));
-const saved=localStorage.getItem("seo-cockpit-range");
-render(payload.ranges[saved]?saved:(payload.defaultRange||"7d"));
-</script>
+    {payload.emptyMode && (
+      <div class="notice">
+        Noch keine GSC-Daten vorhanden. Führe zuerst <code>npm run gsc:sync</code> aus.
+      </div>
+    )}
+
+    <div id="partialNotice" class="notice" data-dynamic>
+      Der ausgewählte Zeitraum enthält aktuelle, noch nicht vollständig verarbeitete GSC-Daten.
+      Die Werte können sich nachträglich ändern.
+    </div>
+
+    <section id="metrics" class="grid metrics"></section>
+
+    <section class="grid columns">
+      <article class="card">
+        <h2>🚀 Quick Wins</h2>
+        <div id="quickWins" class="list"></div>
+      </article>
+
+      <article class="card">
+        <h2>📉 Schwache CTR</h2>
+        <div id="weakCtr" class="list"></div>
+      </article>
+
+      <article class="card">
+        <h2>🔎 Suchbegriffe</h2>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Suchanfrage</th>
+                <th>Impr.</th>
+                <th>Klicks</th>
+                <th>Pos.</th>
+              </tr>
+            </thead>
+            <tbody id="queries"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>🤖 Empfehlungen</h2>
+        <div id="recommendations" class="list"></div>
+      </article>
+    </section>
+  </main>
+
+  <script type="application/json" id="seo-data" set:html={serializedPayload}></script>
+  <script>
+    const payload = JSON.parse(document.getElementById("seo-data").textContent);
+    const number = new Intl.NumberFormat("de-DE");
+
+    const cleanUrl = (url) =>
+      (url || "/")
+        .replace("https://www.pfotentechnik.de", "")
+        .replace("https://pfotentechnik.de", "") || "/";
+
+    const item = (title, meta) =>
+      '<div class="item"><strong>' +
+      title +
+      '</strong><div class="meta">' +
+      meta +
+      "</div></div>";
+
+    const signed = (value, suffix = "") =>
+      `${value > 0 ? "+" : ""}${value}${suffix}`;
+
+    function deltaClass(value) {
+      if (value > 0) return "positive";
+      if (value < 0) return "negative";
+      return "neutral";
+    }
+
+    function render(rangeKey) {
+      const data = payload.ranges[rangeKey];
+      if (!data) return;
+
+      document.querySelectorAll(".range").forEach((button) => {
+        const exists = Boolean(payload.ranges[button.dataset.range]);
+        button.hidden = !exists;
+        button.classList.toggle("active", button.dataset.range === rangeKey);
+      });
+
+      document
+        .getElementById("partialNotice")
+        .classList.toggle("show", Boolean(data.partial));
+
+      const compareStart = String(data.comparisonStartDate || "").slice(0, 10);
+      const compareEnd = String(data.comparisonEndDate || "").slice(0, 10);
+      document.getElementById("period").textContent =
+        data.label +
+        (compareStart && compareEnd
+          ? ` · Vergleich: ${compareStart} bis ${compareEnd}`
+          : "");
+
+      const current = data.metrics.current;
+      const change = data.metrics.change;
+
+      const metrics = [
+        ["Klicks", number.format(current.clicks), signed(change.clicks, " %"), change.clicks],
+        ["Impressionen", number.format(current.impressions), signed(change.impressions, " %"), change.impressions],
+        ["CTR", `${current.ctr.toFixed(2)} %`, signed(change.ctr, " Pp."), change.ctr],
+        ["Position", current.position.toFixed(1), signed(change.position), change.position],
+      ];
+
+      document.getElementById("metrics").innerHTML = metrics
+        .map(
+          ([label, value, delta, numericDelta]) =>
+            '<article class="card metric">' +
+            `<div class="muted">${label}</div>` +
+            `<strong>${value}</strong>` +
+            `<div class="${deltaClass(numericDelta)}">${delta}</div>` +
+            "</article>"
+        )
+        .join("");
+
+      const quickWins = (data.pages || [])
+        .filter((row) => row.position >= 8 && row.position <= 20 && row.impressions >= 20)
+        .slice(0, 20);
+
+      document.getElementById("quickWins").innerHTML =
+        quickWins
+          .map((row) =>
+            item(
+              cleanUrl(row.page),
+              `${number.format(row.impressions)} Impressionen · Position ${row.position.toFixed(1)} · CTR ${row.ctr.toFixed(2)} %`
+            )
+          )
+          .join("") ||
+        item("Keine Quick Wins", "Für diesen Zeitraum wurden keine passenden Seiten gefunden.");
+
+      const weakCtr = (data.pages || [])
+        .filter((row) => row.impressions >= 20 && row.ctr < 2.5)
+        .slice(0, 20);
+
+      document.getElementById("weakCtr").innerHTML =
+        weakCtr
+          .map((row) =>
+            item(
+              cleanUrl(row.page),
+              `${number.format(row.impressions)} Impressionen · CTR ${row.ctr.toFixed(2)} % · Position ${row.position.toFixed(1)}`
+            )
+          )
+          .join("") ||
+        item("Keine auffälligen Seiten", "Für diesen Zeitraum liegt keine Seite unter dem Schwellenwert.");
+
+      document.getElementById("queries").innerHTML = (data.queries || [])
+        .slice(0, 30)
+        .map(
+          (row) =>
+            "<tr>" +
+            `<td>${row.query}</td>` +
+            `<td>${number.format(row.impressions)}</td>` +
+            `<td>${number.format(row.clicks)}</td>` +
+            `<td>${row.position.toFixed(1)}</td>` +
+            "</tr>"
+        )
+        .join("");
+
+      document.getElementById("recommendations").innerHTML =
+        (data.recommendations || [])
+          .slice(0, 20)
+          .map((recommendation) =>
+            item(
+              `${recommendation.title}: ${cleanUrl(recommendation.page)}`,
+              `${recommendation.reason} · ${recommendation.action}`
+            )
+          )
+          .join("") ||
+        item("Keine dringende Empfehlung", "Für diesen Zeitraum gibt es aktuell keinen Regel-Treffer.");
+
+      localStorage.setItem("seo-cockpit-range", rangeKey);
+    }
+
+    const savedRange = localStorage.getItem("seo-cockpit-range");
+    const initialRange =
+      savedRange && payload.ranges[savedRange]
+        ? savedRange
+        : payload.defaultRange && payload.ranges[payload.defaultRange]
+          ? payload.defaultRange
+          : Object.keys(payload.ranges)[0];
+
+    document.querySelectorAll(".range").forEach((button) => {
+      button.addEventListener("click", () => render(button.dataset.range));
+    });
+
+    render(initialRange);
+  </script>
 </body>
 </html>

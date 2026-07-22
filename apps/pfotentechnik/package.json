@@ -30,12 +30,12 @@
     "gsc:report": "node scripts/gsc/audit.mjs",
     "gsc:sync": "node scripts/gsc/sync.mjs",
     "seo:sync": "npm run gsc:sync",
-    "seo:cockpit": "npm run gsc:sync:ranges",
-    "gsc:sync:ranges": "node scripts/gsc/sync-ranges.mjs"
+    "seo:cockpit": "npm run gsc:sync"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.0.0"
+    "astro": "^7.0.0",
+    "googleapis": "^173.0.0"
   }
 }
