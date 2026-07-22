@@ -45,8 +45,30 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
     </article>
 
     <article class="provider-card bing-card">
-      <div class="provider-title"><div><span class="provider-mark bing" aria-hidden="true">B</span><h3>Bing Webmaster Tools</h3></div><span class="seo-badge">vorbereitet</span></div>
-      <p>Provider-Typen, Registry und Statusmodell sind vorbereitet. API-Zugang und Datensynchronisierung sind noch nicht eingerichtet; deshalb werden keine funktionslosen Aktionen angeboten.</p>
+      <div class="provider-title"><div><span class="provider-mark bing" aria-hidden="true">B</span><h3>Bing Webmaster Tools</h3></div><span class="seo-badge" data-bing-health>{config.bing.configured ? "konfiguriert" : "nicht konfiguriert"}</span></div>
+      <dl class="status-grid">
+        <div><dt>Website</dt><dd data-bing-site>{initial.bing.siteUrl || config.bing.siteUrl}</dd></div>
+        <div><dt>Verbindungstest</dt><dd data-bing-test>{date(initial.bing.lastTestAt)}</dd></div>
+        <div><dt>Erfolgreicher Sync</dt><dd data-bing-sync>{date(initial.bing.lastSuccessfulSyncAt)}</dd></div>
+        <div><dt>Datenstand</dt><dd data-bing-data>{date(initial.bing.dataUpdatedAt)}</dd></div>
+        <div><dt>Datenumfang</dt><dd data-bing-counts>{initial.bing.pagesCount} Seiten · {initial.bing.queriesCount} Queries</dd></div>
+        <div><dt>Crawl-Daten</dt><dd data-bing-crawl>{initial.bing.crawlRowsCount || 0} Zeilen</dd></div>
+      </dl>
+      <p class="provider-error" data-bing-error hidden></p>
+      <div class="action-row"><button type="button" data-action="bing.test" data-requires-service>Bing testen</button><button type="button" data-action="bing.sync" data-requires-service>Bing synchronisieren</button><button class="secondary" type="button" data-action="bing.report" data-requires-service>Bing-Bericht</button></div>
+    </article>
+
+    <article class="provider-card combined-card">
+      <div class="provider-title"><div><span class="provider-mark combined" aria-hidden="true">Σ</span><h3>Combined Search</h3></div><span class="seo-badge" data-combined-status>{initial.combined.status}</span></div>
+      <dl class="status-grid">
+        <div><dt>Gemeinsamer Sync</dt><dd data-combined-sync>{date(initial.combined.lastSuccessfulSyncAt)}</dd></div>
+        <div><dt>Provider</dt><dd data-combined-providers>Google {initial.combined.providerResults.google} · Bing {initial.combined.providerResults.bing}</dd></div>
+        <div><dt>Klicks</dt><dd data-combined-clicks>{initial.combined.metrics?.clicks || 0}</dd></div>
+        <div><dt>Impressionen</dt><dd data-combined-impressions>{initial.combined.metrics?.impressions || 0}</dd></div>
+        <div><dt>CTR</dt><dd data-combined-ctr>{(initial.combined.metrics?.ctr || 0).toFixed(2)} %</dd></div>
+        <div><dt>Datenumfang</dt><dd data-combined-counts>{initial.combined.pagesCount} Seiten · {initial.combined.queriesCount} Queries</dd></div>
+      </dl>
+      <div class="action-row combined-actions"><button class="primary" type="button" data-action="search.sync" data-requires-service>Alle Suchdaten synchronisieren</button><button type="button" data-action="search.test" data-requires-service>Alle Verbindungen testen</button><button class="secondary" type="button" data-action="search.report" data-requires-service>Gemeinsamen Bericht erzeugen</button></div>
     </article>
   </div>
   <div class="action-message" data-action-message aria-live="polite">Die Ansicht zeigt den zuletzt lokal gespeicherten Status.</div>
@@ -82,6 +104,19 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
       setText("[data-google-counts]", `${google.pagesCount || 0} Seiten · ${google.queriesCount || 0} Queries`);
       const error = root.querySelector("[data-google-error]");
       if (error) { error.hidden = !google.lastError; error.textContent = google.lastError ? `${google.lastError.message} ${google.lastError.nextAction} (${google.lastError.code})` : ""; }
+      const bing = payload?.providers?.bing;
+      if (bing) {
+        setText("[data-bing-health]", health[bing.health] || bing.health); setText("[data-bing-site]", bing.siteUrl || bing.property || "nicht konfiguriert");
+        setText("[data-bing-test]", formatDate(bing.lastTestAt)); setText("[data-bing-sync]", formatDate(bing.lastSuccessfulSyncAt)); setText("[data-bing-data]", formatDate(bing.dataUpdatedAt));
+        setText("[data-bing-counts]", `${bing.pagesCount || 0} Seiten · ${bing.queriesCount || 0} Queries`); setText("[data-bing-crawl]", `${bing.crawlRowsCount || 0} Zeilen`);
+        const bingError = root.querySelector("[data-bing-error]"); if (bingError) { bingError.hidden = !bing.lastError; bingError.textContent = bing.lastError ? `${bing.lastError.message} ${bing.lastError.nextAction} (${bing.lastError.code})` : ""; }
+      }
+      const combined = payload?.combined;
+      if (combined) {
+        setText("[data-combined-status]", combined.status || "skipped"); setText("[data-combined-sync]", formatDate(combined.lastSuccessfulSyncAt));
+        setText("[data-combined-providers]", `Google ${combined.providerResults?.google || "skipped"} · Bing ${combined.providerResults?.bing || "skipped"}`);
+        setText("[data-combined-clicks]", String(combined.metrics?.clicks || 0)); setText("[data-combined-impressions]", String(combined.metrics?.impressions || 0)); setText("[data-combined-ctr]", `${Number(combined.metrics?.ctr || 0).toFixed(2)} %`); setText("[data-combined-counts]", `${combined.pagesCount || 0} Seiten · ${combined.queriesCount || 0} Queries`);
+      }
     }
 
     async function api(path, options = {}) {
@@ -147,8 +182,12 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
         } else {
           const queued = await api("/api/admin/search/actions", { method: "POST", body: JSON.stringify({ action }) });
           const completed = await pollAction(queued.id);
-          setMessage(`${button.textContent}: erfolgreich abgeschlossen.`, "success");
-          if (completed.action === "google.sync") window.setTimeout(() => window.location.reload(), 900);
+          if (completed.action === "search.sync") {
+            const result = completed.result || {}; const google = result.providerOutcomes?.google; const bing = result.providerOutcomes?.bing;
+            const detail = `Google: ${result.providerResults?.google || "skipped"}${google?.result ? `, ${google.result.pagesCount} Seiten und ${google.result.queriesCount} Queries` : google?.error ? ` – ${google.error.message}` : ""}. Bing: ${result.providerResults?.bing || "skipped"}${bing?.result ? `, ${bing.result.pagesCount} Seiten und ${bing.result.queriesCount} Queries` : bing?.error ? ` – ${bing.error.message}` : ""}. Combined: ${result.combined?.pagesCount || 0} Seiten, ${result.combined?.queriesCount || 0} Queries.`;
+            setMessage(`Search-Daten wurden ${result.status === "partial" ? "teilweise" : "vollständig"} aktualisiert. ${detail}`, result.status === "partial" ? "warning" : "success");
+          } else setMessage(`${button.textContent}: erfolgreich abgeschlossen.`, "success");
+          if (["google.sync", "bing.sync", "search.sync"].includes(completed.action)) window.setTimeout(() => window.location.reload(), 1400);
         }
         await refreshStatus();
       } catch (error) {
@@ -166,8 +205,8 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
   .integration-heading h2 { margin: 8px 0 5px; font-size: 1.55rem; }.integration-heading p, .provider-card p { margin: 0; color: var(--seo-muted); line-height: 1.55; }
   .service-state { padding: 8px 11px; border-radius: 999px; background: var(--seo-warning-soft); color: var(--seo-warning); font-size: .78rem; font-weight: 800; text-align: center; }
   .service-state[data-state="connected"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }.service-state[data-state="offline"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
-  .provider-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 14px; margin-top: 20px; }.provider-card { padding: 18px; border: 1px solid var(--seo-border); border-radius: 16px; background: var(--seo-surface-soft); }.provider-card:first-child { grid-row: span 2; }.provider-title h3 { margin: 0; }
-  .provider-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: #4285f4; color: #fff; font-weight: 900; }.provider-mark.maintenance { background: var(--seo-accent); color: #08120a; }.provider-mark.bing { background: #008373; }
+  .provider-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }.provider-card { padding: 18px; border: 1px solid var(--seo-border); border-radius: 16px; background: var(--seo-surface-soft); }.combined-card { grid-column: 1 / -1; }.provider-title h3 { margin: 0; }
+  .provider-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: #4285f4; color: #fff; font-weight: 900; }.provider-mark.maintenance { background: var(--seo-accent); color: #08120a; }.provider-mark.bing { background: #008373; }.provider-mark.combined { background: #6d5bd0; }.combined-actions .primary { min-height: 46px; padding-inline: 18px; }
   .status-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 18px 0; }.status-grid div { min-width: 0; padding: 10px; border-radius: 11px; background: var(--seo-surface); }.status-grid dt { color: var(--seo-muted); font-size: .74rem; }.status-grid dd { margin: 4px 0 0; overflow-wrap: anywhere; font-size: .88rem; font-weight: 750; }
   .provider-error { margin: 12px 0 !important; padding: 10px; border-radius: 10px; background: var(--seo-danger-soft); color: var(--seo-danger) !important; }.action-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }.action-row button { min-height: 40px; padding: 8px 12px; border: 1px solid var(--seo-accent); border-radius: 10px; background: var(--seo-accent); color: #08120a; font-weight: 800; cursor: pointer; }.action-row button.secondary { background: transparent; color: var(--seo-accent-strong); }.action-row button:disabled { cursor: not-allowed; opacity: .5; }
   .action-message { margin-top: 16px; padding: 11px 13px; border-radius: 11px; background: var(--seo-surface-soft); color: var(--seo-muted); }.action-message[data-state="success"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }.action-message[data-state="warning"] { background: var(--seo-warning-soft); color: var(--seo-warning); }.action-message[data-state="error"] { background: var(--seo-danger-soft); color: var(--seo-danger); }

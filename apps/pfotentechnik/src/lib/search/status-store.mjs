@@ -7,6 +7,12 @@ const emptyProvider = (provider, label) => ({
   lastDurationMs: null, lastError: null, pagesCount: 0, queriesCount: 0,
 });
 
+const emptyCombined = () => ({
+  status: "skipped", lastAttemptAt: null, lastSuccessfulSyncAt: null, lastReportAt: null,
+  lastDurationMs: null, lastError: null, providerResults: { google: "skipped", bing: "skipped" },
+  pagesCount: 0, queriesCount: 0, metrics: null,
+});
+
 export function readSearchStatus(file = STATUS_FILE) {
   const stored = readJson(file, false) || {};
   return {
@@ -14,6 +20,7 @@ export function readSearchStatus(file = STATUS_FILE) {
     updatedAt: stored.updatedAt || null,
     google: { ...emptyProvider("google", "Google Search Console"), ...(stored.google || {}) },
     bing: { ...emptyProvider("bing", "Bing Webmaster Tools"), health: "not-configured", ...(stored.bing || {}) },
+    combined: { ...emptyCombined(), ...(stored.combined || {}) },
   };
 }
 

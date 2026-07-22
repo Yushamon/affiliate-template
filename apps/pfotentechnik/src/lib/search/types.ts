@@ -1,6 +1,6 @@
 export type SearchProviderId = "google" | "bing";
 export type SearchProviderHealth = "connected" | "needs-auth" | "not-configured" | "degraded" | "unavailable";
-export type SearchActionName = "google.setup" | "google.test" | "google.sync" | "google.report" | "seo.audit" | "contentGraph.build";
+export type SearchActionName = "google.setup" | "google.test" | "google.sync" | "google.report" | "bing.test" | "bing.sync" | "bing.report" | "search.test" | "search.sync" | "search.report" | "advisor.rebuild" | "seo.audit" | "contentGraph.build";
 export type SearchActionStatus = "queued" | "running" | "succeeded" | "failed" | "cancelled";
 
 export interface SearchMetricValues {

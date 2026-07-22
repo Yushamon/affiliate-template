@@ -1,12 +1,5 @@
 # Bing-Provider
 
-Der Bing-Provider ist absichtlich nur vorbereitet. Registry, Typen und Statusmodell existieren, aber es gibt noch keine API-Konfiguration, Authentifizierung oder Synchronisierung. Er liefert keine Dummy-Daten und meldet Aktionen als nicht konfiguriert.
+Der Provider nutzt die offizielle JSON-API von Bing Webmaster Tools mit API-Key-Authentifizierung. Unterstützt werden `GetUserSites`, `GetQueryStats`, `GetPageStats` und `GetCrawlStats`. Trafficdaten werden ohne Interpolation nach den tatsächlich gelieferten Datumswerten gefiltert; Crawl-Daten bleiben als eigene Bing-Felder erhalten.
 
-Vor neuen `bing:*`-Commands müssen implementiert werden:
-
-1. sichere lokale API-Konfiguration,
-2. echter Bing-Webmaster-Tools-Client,
-3. normalisierte Range-Abfragen,
-4. atomare Provider-Datendateien,
-5. gemockte Provider-Tests,
-6. Dashboard-Aktionen über dieselbe Allowlist.
+Der API-Key wird ausschließlich serverseitig aus `BING_WEBMASTER_API_KEY` gelesen und weder in Status, Dashboarddateien, Logs noch Browserantworten übernommen.

@@ -5,6 +5,8 @@ import { APP_ROOT, REPO_ROOT } from "./config.mjs";
 import { SearchError, redactSecrets, toPublicError } from "./errors.mjs";
 import { searchLog } from "./logging.mjs";
 import { getSearchProvider } from "./provider-registry.mjs";
+import { rebuildAdvisorSource, syncSearchPlatform, testSearchPlatform } from "./platform.mjs";
+import { generateSearchReport } from "./search-report.mjs";
 
 const MAX_OUTPUT = 80_000;
 const ACTION_TIMEOUT = 12 * 60_000;
@@ -26,6 +28,13 @@ const DEFAULT_HANDLERS = {
   "google.test": ({ progress }) => { progress({ step: "connection", message: "OAuth, Token, API und Property werden geprüft." }); return getSearchProvider("google").test(); },
   "google.sync": ({ progress }) => getSearchProvider("google").sync({ onProgress: progress }),
   "google.report": ({ progress }) => { progress({ step: "report", message: "Bericht wird aus lokalen Sync-Daten erzeugt." }); return getSearchProvider("google").report(); },
+  "bing.test": ({ progress }) => { progress({ step: "bing-test", message: "Bing API-Key, Website und Zugriff werden geprüft." }); return getSearchProvider("bing").test(); },
+  "bing.sync": ({ progress }) => getSearchProvider("bing").sync({ onProgress: progress }),
+  "bing.report": ({ progress }) => { progress({ step: "bing-report", message: "Bing-Bericht wird aus lokalen Sync-Daten erzeugt." }); return getSearchProvider("bing").report(); },
+  "search.test": ({ progress }) => { progress({ step: "search-test", message: "Alle konfigurierten Search-Provider werden geprüft." }); return testSearchPlatform(); },
+  "search.sync": ({ progress }) => syncSearchPlatform({ onProgress: progress }),
+  "search.report": ({ progress }) => { progress({ step: "search-report", message: "Gemeinsamer Search-Bericht wird erzeugt." }); return generateSearchReport(); },
+  "advisor.rebuild": ({ progress }) => { progress({ step: "advisor", message: "Advisor-Datenquelle wird validiert." }); return rebuildAdvisorSource(); },
   "seo.audit": ({ progress }) => { progress({ step: "audit", message: "SEO-Audit läuft." }); return runFixedScript(path.join(REPO_ROOT, "tools", "seo-platform", "audit.mjs"), REPO_ROOT); },
   "contentGraph.build": ({ progress }) => { progress({ step: "graph", message: "Content Graph wird aktualisiert." }); return runFixedScript(path.join(APP_ROOT, "scripts", "build-content-graph.mjs"), APP_ROOT); },
 };
@@ -46,7 +55,8 @@ export function createSearchActionService(handlers = DEFAULT_HANDLERS, { maxStar
   function start(action) {
     if (typeof action !== "string" || !Object.hasOwn(handlers, action)) throw new SearchError("SEARCH_ACTION_NOT_ALLOWED");
     enforceRateLimit();
-    if (locks.has(action)) throw new SearchError("SEARCH_SYNC_ALREADY_RUNNING");
+    const conflicts = action === "search.sync" ? ["search.sync", "google.sync", "bing.sync"] : action === "google.sync" || action === "bing.sync" ? [action, "search.sync"] : [action];
+    if (conflicts.some((candidate) => locks.has(candidate))) throw new SearchError("SEARCH_SYNC_ALREADY_RUNNING");
     const id = randomUUID();
     const record = { id, action, status: "queued", progress: null, queuedAt: new Date().toISOString(), startedAt: null, finishedAt: null, result: null, error: null };
     actions.set(id, record);

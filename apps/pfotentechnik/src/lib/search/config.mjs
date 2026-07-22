@@ -5,6 +5,20 @@ import { SearchError } from "./errors.mjs";
 
 export const APP_ROOT = fileURLToPath(new URL("../../../", import.meta.url));
 export const REPO_ROOT = path.resolve(APP_ROOT, "../..");
+const LOCAL_ENV_FILE = path.join(APP_ROOT, ".env");
+
+function loadLocalEnv() {
+  if (!fs.existsSync(LOCAL_ENV_FILE)) return;
+  for (const line of fs.readFileSync(LOCAL_ENV_FILE, "utf8").split(/\r?\n/)) {
+    const match = line.match(/^\s*([A-Z][A-Z0-9_]*)\s*=\s*(.*?)\s*$/);
+    if (!match || Object.hasOwn(process.env, match[1])) continue;
+    let value = match[2];
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) value = value.slice(1, -1);
+    process.env[match[1]] = value;
+  }
+}
+
+loadLocalEnv();
 export const SEARCH_DIR = path.join(APP_ROOT, ".search");
 export const LEGACY_GSC_DIR = path.join(APP_ROOT, ".gsc");
 export const DATA_DIR = path.join(APP_ROOT, "src", "data", "seo");
@@ -18,6 +32,7 @@ export const RUNTIME_FILE = path.join(SEARCH_DIR, "admin-runtime.json");
 export const READONLY_SCOPE = "https://www.googleapis.com/auth/webmasters.readonly";
 export const DEFAULT_PROPERTY = process.env.GOOGLE_SEARCH_PROPERTY || "sc-domain:pfotentechnik.de";
 export const DEFAULT_REDIRECT_URI = process.env.GOOGLE_SEARCH_REDIRECT_URI || "http://127.0.0.1:53682/oauth2callback";
+export const DEFAULT_BING_SITE_URL = process.env.BING_WEBMASTER_SITE_URL || process.env.BING_SITE_URL || "https://pfotentechnik.de";
 
 export function ensureSearchDirectories() {
   fs.mkdirSync(SEARCH_DIR, { recursive: true });
@@ -104,6 +119,6 @@ export function safeSearchConfig() {
       property: config?.property || config?.siteUrl || DEFAULT_PROPERTY,
       redirectUri: DEFAULT_REDIRECT_URI,
     },
-    bing: { configured: false, status: "prepared" },
+    bing: { configured: Boolean(process.env.BING_WEBMASTER_API_KEY), siteUrl: DEFAULT_BING_SITE_URL, status: process.env.BING_WEBMASTER_API_KEY ? "configured" : "not-configured" },
   };
 }

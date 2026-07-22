@@ -1,0 +1,21 @@
+import fs from "node:fs";
+import path from "node:path";
+import { DATA_DIR, REPORTS_DIR, atomicWriteJson, ensureSearchDirectories } from "./config.mjs";
+import { SearchError } from "./errors.mjs";
+import { searchLog } from "./logging.mjs";
+import { readSearchStatus, updateProviderStatus } from "./status-store.mjs";
+
+export async function generateSearchReport({ range = "28d" } = {}) {
+  const source = path.join(DATA_DIR, "search-dashboard-ranges.json"); const started = Date.now(); if (!fs.existsSync(source)) throw new SearchError("SEARCH_NO_DATA", { message: "Der gemeinsame Bericht benötigt zuerst npm run search:sync." });
+  let payload; try { payload = JSON.parse(fs.readFileSync(source, "utf8")); } catch (cause) { throw new SearchError("SEARCH_INVALID_DATA", { cause }); }
+  const data = payload.ranges?.[range] || payload.ranges?.[payload.defaultRange]; if (!data) throw new SearchError("SEARCH_NO_DATA");
+  const status = readSearchStatus(); const generatedAt = new Date().toISOString(); ensureSearchDirectories();
+  const topPages = data.pages.slice(0, 15); const topQueries = data.queries.slice(0, 15); const googleOnly = [...data.pages, ...data.queries].filter((row) => row.sources?.length === 1 && row.sources[0] === "google").slice(0, 15); const bingOnly = [...data.pages, ...data.queries].filter((row) => row.sources?.length === 1 && row.sources[0] === "bing").slice(0, 15);
+  const differences = data.recommendations.filter((item) => item.type === "provider-ctr-gap" || item.type === "provider-position-gap").slice(0, 20); const crawlHints = data.recommendations.filter((item) => item.type === "bing-crawl");
+  const report = { schemaVersion: 1, provider: "combined", generatedAt, range: data.key, dataUpdatedAt: payload.dataUpdatedAt, providerStatus: payload.providerStatus, status: status.combined, metrics: data.metrics, topPages, topQueries, googleOnly, bingOnly, differences, crawlHints, quickWins: data.recommendations.filter((item) => ["quick-win", "bing-ranking", "bing-ctr"].includes(item.type)).slice(0, 20), dataNotices: [payload.providerStatus?.bing === "stale" ? "Bing-Daten sind veraltet." : null, "Bing-Trafficdaten können wöchentlich, Google-Daten zeitverzögert aktualisiert werden."].filter(Boolean) };
+  const jsonFile = path.join(REPORTS_DIR, "search-report.json"); const markdownFile = path.join(REPORTS_DIR, "search-report.md"); atomicWriteJson(jsonFile, report);
+  const table = (items, field) => items.length ? `| Ziel | Klicks | Impressionen | CTR | Position | Quellen |\n|---|---:|---:|---:|---:|---|\n${items.map((item) => `| ${item[field]} | ${item.clicks} | ${item.impressions} | ${item.ctr.toFixed(2)} % | ${item.position ?? "–"} | ${(item.sources || []).join(", ")} |`).join("\n")}` : "Keine Einträge.";
+  fs.writeFileSync(markdownFile, `# PfotenTechnik Search Report\n\nGeneriert: ${generatedAt}\n\nGoogle-Datenstand: ${payload.dataUpdatedAt?.google || "nicht verfügbar"}\n\nBing-Datenstand: ${payload.dataUpdatedAt?.bing || "nicht verfügbar"}\n\nGesamtstatus: ${status.combined.status}\n\n## Combined\n\n- Klicks: ${data.metrics.current.clicks}\n- Impressionen: ${data.metrics.current.impressions}\n- CTR: ${data.metrics.current.ctr.toFixed(2)} %\n- Position: ${data.metrics.current.position ?? "nicht verfügbar"}\n\n## Top-Seiten\n\n${table(topPages, "page")}\n\n## Top-Queries\n\n${table(topQueries, "query")}\n\n## Provider-Unterschiede\n\n${differences.length ? differences.map((item) => `- ${item.title}: ${item.reason}`).join("\n") : "Keine belastbaren großen Unterschiede."}\n\n## Google-only\n\n${googleOnly.map((item) => `- ${item.page || item.query}: ${item.impressions} Impressionen`).join("\n") || "Keine."}\n\n## Bing-only\n\n${bingOnly.map((item) => `- ${item.page || item.query}: ${item.impressions} Impressionen`).join("\n") || "Keine."}\n\n## Crawl-Hinweise\n\n${crawlHints.map((item) => `- ${item.reason}`).join("\n") || "Keine."}\n\n## Datenhinweise\n\n${report.dataNotices.map((item) => `- ${item}`).join("\n")}\n`, "utf8");
+  const durationMs = Date.now() - started; updateProviderStatus("combined", { lastReportAt: generatedAt, lastDurationMs: durationMs }); searchLog({ provider: "combined", action: "report", status: "succeeded", durationMs });
+  return { ok: true, markdownFile, jsonFile, generatedAt };
+}

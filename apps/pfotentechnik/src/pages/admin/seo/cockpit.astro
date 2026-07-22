@@ -11,7 +11,7 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>SEO Cockpit | PfotenTechnik</title>
+  <title>Search Cockpit | PfotenTechnik</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -103,7 +103,7 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
   <main>
     <header>
       <div>
-        <div class="muted">Google Search Console</div>
+        <div class="muted">Google Search Console · Bing Webmaster Tools · Combined</div>
         <h1>SEO Cockpit</h1>
         <div id="period" class="muted"></div>
       </div>
@@ -224,12 +224,13 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
 
       const current = data.metrics.current;
       const change = data.metrics.change;
+      const comparisonAvailable = data.comparisonAvailable !== false;
 
       const metrics = [
-        ["Klicks", number.format(current.clicks), signed(change.clicks, " %"), change.clicks],
-        ["Impressionen", number.format(current.impressions), signed(change.impressions, " %"), change.impressions],
-        ["CTR", `${current.ctr.toFixed(2)} %`, signed(change.ctr, " Pp."), change.ctr],
-        ["Position", current.position.toFixed(1), signed(change.position), change.position],
+        ["Klicks", number.format(current.clicks), comparisonAvailable ? signed(change.clicks, " %") : "kein Vergleich", comparisonAvailable ? change.clicks : 0],
+        ["Impressionen", number.format(current.impressions), comparisonAvailable ? signed(change.impressions, " %") : "kein Vergleich", comparisonAvailable ? change.impressions : 0],
+        ["CTR", `${current.ctr.toFixed(2)} %`, comparisonAvailable ? signed(change.ctr, " Pp.") : "kein Vergleich", comparisonAvailable ? change.ctr : 0],
+        ["Position", current.position.toFixed(1), comparisonAvailable ? signed(change.position) : "kein Vergleich", comparisonAvailable ? change.position : 0],
       ];
 
       document.getElementById("metrics").innerHTML = metrics

@@ -3,6 +3,7 @@ import { randomUUID } from "node:crypto";
 import fs from "node:fs";
 import { URL } from "node:url";
 import { RUNTIME_FILE, atomicWriteJson, loadGoogleClient, loadGoogleToken } from "./config.mjs";
+import { readSearchStatus } from "./status-store.mjs";
 import { SearchError, toPublicError } from "./errors.mjs";
 import { startSearchAction, getSearchAction, getRunningActions, ALLOWED_SEARCH_ACTIONS } from "./action-service.mjs";
 import { getSearchProvider } from "./provider-registry.mjs";
@@ -34,6 +35,7 @@ function publicServiceStatus() {
   return Promise.all([getSearchProvider("google").getStatus(), getSearchProvider("bing").getStatus()]).then(([google, bing]) => ({
     service: { connected: true, localOnly: host === "127.0.0.1" || host === "localhost", host, port, allowedActions: ALLOWED_SEARCH_ACTIONS, runningActions: getRunningActions() },
     providers: { google, bing },
+    combined: readSearchStatus().combined,
   }));
 }
 

@@ -117,8 +117,8 @@ const buildPrompt = (opportunity: Omit<AdvisorOpportunity, "prompt" | "codexProm
   "Du arbeitest an PfotenTechnik.de, einer deutschsprachigen Wissensplattform für smarte Haustiertechnik.",
   `Betroffene URL: ${opportunity.url ?? "nicht eindeutig einer URL zugeordnet"}`,
   `Betroffene Datei: ${opportunity.affectedFile ?? "Route zuerst zur Quelldatei auflösen"}`,
-  opportunity.query ? `GSC-Suchanfrage: ${opportunity.query}` : "GSC-Suchanfrage: keine eindeutige Query-Zuordnung vorhanden",
-  `GSC-Daten (${opportunity.rangeKey}): ${opportunity.dataBasis.impressions ?? 0} Impressionen, ${opportunity.dataBasis.clicks ?? 0} Klicks, CTR ${(opportunity.dataBasis.ctr ?? 0).toFixed(2)} %, Position ${(opportunity.dataBasis.position ?? 0).toFixed(1)}.`,
+  opportunity.query ? `Search-Suchanfrage: ${opportunity.query}` : "Search-Suchanfrage: keine eindeutige Query-Zuordnung vorhanden",
+  `Search-Daten (${opportunity.rangeKey}, Quelle: ${opportunity.source}): ${opportunity.dataBasis.impressions ?? 0} Impressionen, ${opportunity.dataBasis.clicks ?? 0} Klicks, CTR ${(opportunity.dataBasis.ctr ?? 0).toFixed(2)} %, Position ${(opportunity.dataBasis.position ?? 0).toFixed(1)}.`,
   `Problem: ${opportunity.description}`,
   `Ziel: ${opportunity.nextAction}`,
   "Maßnahmen:",
@@ -128,7 +128,7 @@ const buildPrompt = (opportunity: Omit<AdvisorOpportunity, "prompt" | "codexProm
   "- Keine unbelegten Aussagen, erfundenen Messwerte oder künstliche Textverlängerung ergänzen.",
   "- Suchintention klarer bedienen, interne Verlinkung semantisch sinnvoll halten und Kannibalisierung vermeiden.",
   "Akzeptanzkriterien:",
-  "- Die Maßnahme ist anhand der genannten GSC-Daten nachvollziehbar.",
+  "- Die Maßnahme ist anhand der genannten Search-Daten nachvollziehbar.",
   "- Bestehende PfotenTechnik-Standards sind eingehalten.",
   "- Build und vorhandene SEO-/Content-Audits bestehen.",
 ].join("\n");
@@ -139,7 +139,7 @@ const buildCodexPrompt = (opportunity: Omit<AdvisorOpportunity, "prompt" | "code
   opportunity.affectedFile
     ? `Vermutlich betroffene Datei: ${opportunity.affectedFile}`
     : `Betroffene URL: ${opportunity.url ?? "nicht eindeutig"}. Löse zuerst die Route zur tatsächlichen Quelldatei auf; nicht raten.`,
-  opportunity.query ? `Suchanfrage: ${opportunity.query}` : "Nutze nur die vorhandene GSC-Datenbasis; keine Query erfinden.",
+  opportunity.query ? `Suchanfrage: ${opportunity.query}` : "Nutze nur die vorhandene Search-Datenbasis; keine Query erfinden.",
   `Aufgabe: ${opportunity.nextAction}`,
   ...opportunity.steps.map((step) => `- ${step}`),
   "Respektiere die bestehende Astro-Architektur, Komponenten, Content-Standards und Slugs.",
@@ -393,6 +393,7 @@ const dedupeOpportunities = (items: AdvisorOpportunity[]): AdvisorOpportunity[] 
 
 export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
   const { range, documents } = input;
+  const providerLabel = input.payload.provider === "combined" ? "Google + Bing Combined" : input.payload.provider === "bing" ? "Bing Webmaster Tools" : "Google Search Console";
   const totalImpressions = range.metrics.current.impressions;
   const lowDomainData = totalImpressions < 1000;
   const maxImpressions = Math.max(1, ...range.pages.map((row) => row.impressions));
@@ -414,7 +415,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
         query: query?.query,
         rationale: `${row.impressions} Impressionen bei Position ${row.position.toFixed(1)}; das ist ein realistischer Optimierungskorridor ohne Ranking-Versprechen.`,
         nextAction: "Suchintention, Antworttiefe und passende interne Links gezielt verbessern.",
-        source: "Google Search Console + lokaler Content Graph",
+        source: `${providerLabel} + lokaler Content Graph`,
         rangeKey: range.key,
         impressions: row.impressions, clicks: row.clicks, ctr: row.ctr, position: row.position,
         impact: row.impressions >= 30 ? 4 : 3,
@@ -441,7 +442,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
         query: query?.query,
         rationale: `${row.impressions} Impressionen liefern ein ${row.impressions < 20 ? "noch schwaches" : "verwertbares"} Snippet-Signal; keine Klickprognose wird abgeleitet.`,
         nextAction: "Title und Description auf Klarheit, Intent und konkreten Nutzen prüfen.",
-        source: "Google Search Console",
+        source: providerLabel,
         rangeKey: range.key,
         impressions: row.impressions, clicks: row.clicks, ctr: row.ctr, position: row.position,
         impact: row.impressions >= 30 ? 4 : 3,
@@ -451,7 +452,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
           "SERP-Intent anhand der vorhandenen Query-Signale bestimmen.",
           "Title und Description auf eindeutigen Nutzen und Seiteninhalt abgleichen.",
           "Keine unbelegten Superlative oder erfundenen Testaussagen verwenden.",
-          "Nach Änderung im nächsten GSC-Snapshot beobachten.",
+          "Nach Änderung im nächsten Search-Snapshot beobachten.",
         ],
         document,
         maxImpressions,
@@ -470,13 +471,13 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
       query: recommendation.query,
       rationale: recommendation.reason,
       nextAction: recommendation.action,
-      source: "Vorhandene GSC-Regel",
+      source: `Vorhandene ${recommendation.source ?? input.payload.provider}-Regel`,
       rangeKey: range.key,
       impressions: row?.impressions ?? 0, clicks: row?.clicks ?? 0, ctr: row?.ctr ?? 0, position: row?.position ?? 0,
       impact: recommendation.priority === "high" ? 4 : 3,
       effortValue: 2.5,
       confidence: confidenceFor(row?.impressions ?? 0),
-      steps: [recommendation.action, "Änderung gegen vorhandenen Content und interne Links prüfen.", "Ergebnis im nächsten GSC-Snapshot beobachten."],
+      steps: [recommendation.action, "Änderung gegen vorhandenen Content und interne Links prüfen.", "Ergebnis im nächsten Search-Snapshot beobachten."],
       document,
       maxImpressions,
     }));
@@ -543,7 +544,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
       query: gap.query,
       rationale: `${gap.rationale} ${gap.lowData ? "Die Datenbasis ist gering; keine neue Seite automatisch anlegen." : ""}`.trim(),
       nextAction: gap.recommendation,
-      source: "GSC Queries + lokale Titel, Slugs, Beschreibungen und Inhalte",
+      source: `${providerLabel} Queries + lokale Titel, Slugs, Beschreibungen und Inhalte`,
       rangeKey: range.key,
       impressions: gap.impressions,
       clicks: queryRow?.clicks ?? 0,
@@ -573,7 +574,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
       url: normalizedRoute,
       rationale: finding.evidence,
       nextAction: finding.recommendation,
-      source: "Normalisierte GSC-Seiten-URLs",
+      source: "Normalisierte Search-Seiten-URLs",
       rangeKey: range.key,
       impressions: row?.impressions ?? 0,
       clicks: row?.clicks ?? 0,
@@ -584,7 +585,7 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
       confidence: 0.9,
       steps: [
         "Canonical, interne Links und Host-Weiterleitung für beide URL-Varianten prüfen.",
-        "Nicht addierte GSC-Varianten gegen den Serverstatus abgleichen.",
+        "Nicht addierte Search-Varianten gegen den Serverstatus abgleichen.",
         "Redirect oder Canonical nur bei bestätigter technischer Dublette anpassen.",
       ],
       document,

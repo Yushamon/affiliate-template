@@ -1,6 +1,10 @@
 export interface BingSearchConfig {
-  apiKeyPresent: boolean;
-  siteUrl?: string;
+  apiKey: string;
+  siteUrl: string;
 }
 
-export const BING_IMPLEMENTATION_STATUS = "prepared" as const;
+export interface BingFreshness {
+  status: "current" | "stale" | "unknown";
+  ageDays: number | null;
+  note: string;
+}

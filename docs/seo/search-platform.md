@@ -192,9 +192,24 @@ Ein Token darf nur bewusst lokal entfernt werden. Zuerst Admin-Service und Astro
 
 Die Property wird beim Setup gewählt und in `.search/google-config.json` gespeichert. Alternativ vor dem Setup `GOOGLE_SEARCH_PROPERTY` setzen. Die Property muss in der Liste des verbundenen Google-Kontos vorkommen.
 
-## 16. Bing-Vorbereitung
+## 16. Bing Webmaster Tools und Combined Search
 
-Bing besitzt Provider-ID, Konfigurationstyp, Registry-Eintrag und ehrlichen Status `not-configured`. Es werden keine Dummy-Metriken und keine scheinbar funktionsfähigen Buttons ausgegeben. Für die spätere Integration fehlen noch sichere API-Konfiguration, Authentifizierung, Bing-spezifischer Client, normalisierter Sync und echte CLI-Commands. Erst danach sollten `bing:setup`, `bing:test` und `bing:sync` ergänzt werden.
+Bing ist über die offizielle JSON/HTTP-API integriert. Der API-Key wird ausschließlich serverseitig aus `BING_WEBMASTER_API_KEY` gelesen. `BING_WEBMASTER_SITE_URL` hat Vorrang vor dem kompatiblen Alias `BING_SITE_URL`; ohne explizite URL gilt `https://pfotentechnik.de` als dokumentierter Projektstandard.
+
+```powershell
+npm run bing:test
+npm run bing:sync
+npm run bing:report
+npm run search:test
+npm run search:sync
+npm run search:report
+```
+
+`bing:sync` ruft `GetUserSites`, `GetQueryStats`, `GetPageStats` und `GetCrawlStats` ab. Trafficdaten werden nach ihren real gelieferten Datumswerten in 7d, 28d, 3m, 6m und 12m gefiltert. Es gibt keine Interpolation oder Tagesverteilung. Bing aktualisiert Query-/Page-Statistiken typischerweise wöchentlich, Crawl-Daten täglich; `dataUpdatedAt` und `freshness` machen das Datenalter sichtbar.
+
+`search:sync` behandelt Google und Bing getrennt. Ein einzelner Fehler führt bei mindestens einem erfolgreichen Provider zum Status `partial`; die letzte gültige Datei des fehlgeschlagenen Providers darf als `stale` in Combined weiterverwendet werden. Scheitern alle konfigurierten Provider, wird keine neue Combined-Datei geschrieben. Combined addiert Klicks und Impressionen, berechnet CTR neu und gewichtet Positionen nach Impressionen. Datensätze behalten `sources` und providerbezogene Teilmetriken.
+
+Ausführliche Einrichtung und Fehlerbehebung: [Bing Webmaster Tools](./bing-webmaster-tools.md).
 
 ## 17. Tests und Wartung
 

@@ -32,6 +32,7 @@ export type SeoRecommendation = {
   query?: string;
   reason: string;
   action: string;
+  source?: "google" | "bing" | "combined" | "content" | "technical";
 };
 
 export type SeoRange = {
@@ -43,6 +44,7 @@ export type SeoRange = {
   comparisonEndDate: string;
   dataState: string;
   partial: boolean;
+  comparisonAvailable: boolean;
   metrics: {
     current: SeoMetricValues;
     previous: SeoMetricValues;
@@ -92,8 +94,10 @@ const resolveDataFile = (name: string): string => {
 };
 
 const DATA_FILES = {
-  ranges: resolveDataFile("gsc-dashboard-ranges.json"),
-  single: resolveDataFile("gsc-dashboard.json"),
+  combinedRanges: resolveDataFile("search-dashboard-ranges.json"),
+  combinedSingle: resolveDataFile("search-dashboard.json"),
+  googleRanges: resolveDataFile("gsc-dashboard-ranges.json"),
+  googleSingle: resolveDataFile("gsc-dashboard.json"),
 };
 
 const RANGE_LABELS: Record<string, string> = {
@@ -227,6 +231,7 @@ const normalizeRecommendations = (value: unknown): SeoRecommendation[] => {
       query,
       reason,
       action,
+      source: item.source === "google" || item.source === "bing" || item.source === "combined" || item.source === "content" || item.source === "technical" ? item.source : undefined,
     };
     const key = [normalized.type, normalized.page, query?.toLocaleLowerCase("de-DE"), title].join("|");
     if (!rows.has(key)) rows.set(key, normalized);
@@ -251,6 +256,7 @@ const normalizeRange = (
     comparisonEndDate: stringValue(value.comparisonEndDate),
     dataState: stringValue(value.dataState),
     partial: booleanValue(value.partial),
+    comparisonAvailable: value.comparisonAvailable !== false && isObject(metrics.previous),
     metrics: {
       current: normalizeMetrics(metrics.current),
       previous: normalizeMetrics(metrics.previous),
@@ -345,26 +351,32 @@ const finalisePayload = (
 export function loadSeoDashboard(): SeoDashboardPayload {
   const diagnostics: SeoDiagnostic[] = [];
   const duplicateMap = new Map<string, Set<string>>();
-  const rangesRoot = readJson(DATA_FILES.ranges, diagnostics);
+  const candidates = [
+    { ranges: DATA_FILES.combinedRanges, single: DATA_FILES.combinedSingle, provider: "combined" },
+    { ranges: DATA_FILES.googleRanges, single: DATA_FILES.googleSingle, provider: "google" },
+  ];
 
-  if (rangesRoot && isObject(rangesRoot.ranges)) {
-    const ranges: Record<string, SeoRange> = {};
-    for (const [key, value] of Object.entries(rangesRoot.ranges)) {
-      const range = normalizeRange(value, key, duplicateMap);
-      if (range) ranges[key] = range;
-      else diagnostics.push({ level: "warning", code: "invalid-range", message: `Zeitraum „${key}“ ist kein gültiges Objekt.` });
+  for (const candidate of candidates) {
+    const rangesRoot = readJson(candidate.ranges, diagnostics);
+    if (rangesRoot && isObject(rangesRoot.ranges)) {
+      const ranges: Record<string, SeoRange> = {};
+      for (const [key, value] of Object.entries(rangesRoot.ranges)) {
+        const range = normalizeRange(value, key, duplicateMap);
+        if (range) ranges[key] = range;
+        else diagnostics.push({ level: "warning", code: "invalid-range", message: `Zeitraum „${key}“ ist kein gültiges Objekt.` });
+      }
+      if (Object.keys(ranges).length) {
+        diagnostics.push({ level: "info", code: "search-provider", message: `Aktive Search-Datenquelle: ${candidate.provider}.` });
+        return finalisePayload(rangesRoot, ranges, "ranges", diagnostics, duplicateMap);
+      }
+      diagnostics.push({ level: "warning", code: "ranges-empty", message: `Die ${candidate.provider}-Zeitraum-Datei enthält keine nutzbaren Zeiträume.` });
     }
-    if (Object.keys(ranges).length) {
-      return finalisePayload(rangesRoot, ranges, "ranges", diagnostics, duplicateMap);
+    const singleRoot = readJson(candidate.single, diagnostics);
+    if (singleRoot) {
+      const key = stringValue(singleRoot.key) || stringValue(singleRoot.range) || "7d";
+      const range = normalizeRange(singleRoot, key, duplicateMap);
+      if (range) return finalisePayload(singleRoot, { [key]: range }, "single", diagnostics, duplicateMap);
     }
-    diagnostics.push({ level: "warning", code: "ranges-empty", message: "Die Multi-Zeitraum-Datei enthält keine nutzbaren Zeiträume." });
-  }
-
-  const singleRoot = readJson(DATA_FILES.single, diagnostics);
-  if (singleRoot) {
-    const key = stringValue(singleRoot.key) || stringValue(singleRoot.range) || "7d";
-    const range = normalizeRange(singleRoot, key, duplicateMap);
-    if (range) return finalisePayload(singleRoot, { [key]: range }, "single", diagnostics, duplicateMap);
   }
 
   diagnostics.push({ level: "error", code: "no-dashboard-data", message: "Keine nutzbaren GSC-Dashboarddaten gefunden." });
