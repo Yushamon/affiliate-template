@@ -1,0 +1,21 @@
+/* === PfotenTechnik Article Media Polish 6.1.4 === */
+.article :is(figure, .article-image, .content-image) {
+  margin-block: clamp(28px, 5vw, 44px);
+}
+
+.article :is(figure, .article-image, .content-image) img {
+  display: block;
+  width: 100%;
+  border-radius: 22px;
+}
+
+@media (max-width: 679px) {
+  .article :is(figure, .article-image, .content-image) {
+    margin-block: 30px 34px;
+  }
+
+  .article :is(figure, .article-image, .content-image) img {
+    border-radius: 18px;
+  }
+}
+/* === End PfotenTechnik Article Media Polish 6.1.4 === */

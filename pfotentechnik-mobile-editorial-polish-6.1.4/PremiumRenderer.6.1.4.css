@@ -1,0 +1,147 @@
+/* === PfotenTechnik Mobile Editorial Polish 6.1.4 === */
+@media (max-width: 679px) {
+  .premium-v3--pfotentechnik {
+    row-gap: 72px !important;
+  }
+
+  .premium-v3--pfotentechnik > .premium-v3-block > .premium-v3-header {
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header-icon {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 10px !important;
+    font-size: .78rem !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow {
+    position: relative !important;
+    display: flex !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    gap: 10px !important;
+    overflow: hidden !important;
+    font-size: .7rem !important;
+    letter-spacing: .085em !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-eyebrow::after {
+    content: "" !important;
+    width: min(72px, 18vw) !important;
+    height: 1px !important;
+    flex: 0 1 72px !important;
+    background: currentColor !important;
+    opacity: .22 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header h2 {
+    max-width: 17ch !important;
+    margin-top: 18px !important;
+    font-size: clamp(1.92rem, 8vw, 2.38rem) !important;
+    line-height: 1.07 !important;
+    letter-spacing: -.036em !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-header p {
+    margin-top: 16px !important;
+    font-size: 1rem !important;
+  }
+
+  /* Fehlerlisten: kompakter, aber weiterhin klar als Warnblock erkennbar */
+  .premium-v3--pfotentechnik .premium-v3-mistakes .premium-v3-list {
+    display: grid !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 4px 16px !important;
+    border: 1px solid var(--ed-border) !important;
+    border-radius: 22px !important;
+    background: var(--ed-surface) !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-mistakes .premium-v3-list li {
+    display: grid !important;
+    grid-template-columns: 22px minmax(0, 1fr) !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid var(--ed-border) !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-mistakes .premium-v3-list li:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-mistakes .premium-v3-list li::before {
+    content: "!" !important;
+    display: inline-flex !important;
+    width: 20px !important;
+    height: 20px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 6px !important;
+    background: color-mix(in srgb, #f59e0b 14%, transparent) !important;
+    color: #f59e0b !important;
+    font-size: .78rem !important;
+    font-weight: 900 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-mistakes .premium-v3-list li > span {
+    color: var(--ed-text) !important;
+    font-weight: 680 !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Checkliste: eine Fläche, keine neun Karten in einer Karte */
+  .premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list {
+    display: grid !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 4px 16px !important;
+    border: 1px solid var(--ed-border) !important;
+    border-radius: 22px !important;
+    background: var(--ed-surface) !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list li {
+    display: grid !important;
+    grid-template-columns: 22px minmax(0, 1fr) !important;
+    gap: 10px !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--ed-border) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list li:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list li::before {
+    content: "✓" !important;
+    color: #5ee19a !important;
+    font-weight: 900 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list li > span {
+    color: var(--ed-text) !important;
+    font-weight: 680 !important;
+    line-height: 1.45 !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-image {
+    margin-top: 26px !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+  }
+
+  .premium-v3--pfotentechnik .premium-v3-image img {
+    border-radius: 20px !important;
+  }
+}
+/* === End PfotenTechnik Mobile Editorial Polish 6.1.4 === */
