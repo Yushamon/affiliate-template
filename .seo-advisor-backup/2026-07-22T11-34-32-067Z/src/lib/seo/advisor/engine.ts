@@ -1,0 +1,3 @@
+import type { AdvisorContext, AdvisorResult } from "./types";
+import { advisorRules } from "./registry";
+export function runAdvisor(context:AdvisorContext):AdvisorResult{const recommendations=advisorRules.flatMap((rule)=>{try{return rule.run(context);}catch(error){console.warn(`SEO Advisor rule "${rule.id}" failed:`,error);return[];}}).sort((a,b)=>b.score-a.score);return{generatedAt:new Date().toISOString(),period:context.period,recommendations,counts:{A:recommendations.filter((i)=>i.priority==="A").length,B:recommendations.filter((i)=>i.priority==="B").length,C:recommendations.filter((i)=>i.priority==="C").length,D:recommendations.filter((i)=>i.priority==="D").length}};}
