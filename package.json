@@ -36,7 +36,6 @@
     "ratings:check": "node apps/pfotentechnik/scripts/normalize-product-ratings.mjs --check",
     "gsc:sync": "npm --workspace apps/pfotentechnik run gsc:sync",
     "seo:sync": "npm --workspace apps/pfotentechnik run seo:sync",
-    "seo:cockpit": "npm --workspace apps/pfotentechnik run seo:cockpit",
-    "gsc:sync:ranges": "npm --workspace apps/pfotentechnik run gsc:sync:ranges"
+    "seo:cockpit": "npm --workspace apps/pfotentechnik run seo:cockpit"
   }
 }
