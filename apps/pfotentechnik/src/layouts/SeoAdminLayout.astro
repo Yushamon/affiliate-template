@@ -1,0 +1,149 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  active?: "overview" | "cockpit" | "advisor" | "tasks" | "history" | "prompts";
+}
+
+const { title, description, active = "overview" } = Astro.props;
+const nav = [
+  ["overview", "/admin/seo/", "Übersicht"],
+  ["cockpit", "/admin/seo/cockpit/", "Cockpit"],
+  ["advisor", "/admin/seo/advisor/", "Co-Pilot"],
+  ["tasks", "/admin/seo/tasks/", "Aufgaben"],
+  ["history", "/admin/seo/history/", "Historie"],
+  ["prompts", "/admin/seo/prompts/", "Prompts"],
+] as const;
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title} | PfotenTechnik SEO</title>
+    <style is:global>
+      :root {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color-scheme: light;
+        --seo-bg: #f3f7f4;
+        --seo-surface: #ffffff;
+        --seo-surface-soft: #edf5ef;
+        --seo-border: #d6e2da;
+        --seo-text: #17211b;
+        --seo-muted: #5d6d63;
+        --seo-accent: #2e7d32;
+        --seo-accent-strong: #1f6426;
+        --seo-accent-soft: #e2f3e5;
+        --seo-warning: #8a5a00;
+        --seo-warning-soft: #fff4d8;
+        --seo-danger: #a42b20;
+        --seo-danger-soft: #fee9e7;
+        --seo-focus: #4f46e5;
+        --seo-shadow: 0 14px 38px rgba(31, 64, 39, .08);
+      }
+      html[data-theme="dark"] {
+        color-scheme: dark;
+        --seo-bg: #0d1410;
+        --seo-surface: #151e18;
+        --seo-surface-soft: #1b2920;
+        --seo-border: #304137;
+        --seo-text: #eef7f0;
+        --seo-muted: #afbeb4;
+        --seo-accent: #72d889;
+        --seo-accent-strong: #8ee6a1;
+        --seo-accent-soft: #183b23;
+        --seo-warning: #ffd27a;
+        --seo-warning-soft: #3b2d13;
+        --seo-danger: #ffaaa2;
+        --seo-danger-soft: #43201f;
+        --seo-focus: #a5b4fc;
+        --seo-shadow: none;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--seo-bg); color: var(--seo-text); }
+      a { color: var(--seo-accent-strong); }
+      button, select, input, textarea { font: inherit; }
+      button, select, input, textarea, a { outline-offset: 3px; }
+      :focus-visible { outline: 3px solid var(--seo-focus); }
+      .seo-shell { width: min(1320px, calc(100% - 28px)); margin: 0 auto; padding: 18px 0 64px; }
+      .seo-topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+      .seo-brand { display: flex; align-items: center; gap: 10px; color: var(--seo-text); font-weight: 850; text-decoration: none; }
+      .seo-brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 12px; background: var(--seo-accent); color: #08120a; }
+      .seo-theme { min-height: 40px; border: 1px solid var(--seo-border); border-radius: 999px; padding: 8px 13px; background: var(--seo-surface); color: var(--seo-text); cursor: pointer; }
+      .seo-nav { display: flex; gap: 6px; overflow-x: auto; padding: 5px; margin-bottom: 28px; border: 1px solid var(--seo-border); border-radius: 16px; background: var(--seo-surface); }
+      .seo-nav a { flex: 0 0 auto; padding: 9px 13px; border-radius: 11px; color: var(--seo-muted); text-decoration: none; font-weight: 750; }
+      .seo-nav a[aria-current="page"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }
+      .seo-page-header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 24px; }
+      .seo-eyebrow { color: var(--seo-accent-strong); font-size: .78rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+      .seo-page-header h1 { max-width: 900px; margin: 7px 0 9px; font-size: clamp(2rem, 5vw, 3.75rem); line-height: 1; letter-spacing: -.035em; }
+      .seo-page-header p { max-width: 780px; margin: 0; color: var(--seo-muted); line-height: 1.6; }
+      .seo-card { border: 1px solid var(--seo-border); border-radius: 20px; background: var(--seo-surface); box-shadow: var(--seo-shadow); }
+      .seo-muted { color: var(--seo-muted); }
+      .seo-badge { display: inline-flex; align-items: center; min-height: 27px; padding: 4px 9px; border-radius: 999px; background: var(--seo-surface-soft); color: var(--seo-muted); font-size: .76rem; font-weight: 800; }
+      .seo-badge[data-level="high"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
+      .seo-badge[data-level="medium"] { background: var(--seo-warning-soft); color: var(--seo-warning); }
+      .seo-badge[data-level="low"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }
+      .seo-empty { padding: 18px; border: 1px dashed var(--seo-border); border-radius: 14px; color: var(--seo-muted); }
+      @media (max-width: 680px) {
+        .seo-shell { width: min(100% - 18px, 1320px); padding-top: 10px; }
+        .seo-page-header { display: block; }
+        .seo-page-header h1 { font-size: clamp(2rem, 12vw, 3rem); }
+      }
+      @media (prefers-color-scheme: dark) {
+        html:not([data-theme="light"]) {
+          color-scheme: dark;
+          --seo-bg: #0d1410;
+          --seo-surface: #151e18;
+          --seo-surface-soft: #1b2920;
+          --seo-border: #304137;
+          --seo-text: #eef7f0;
+          --seo-muted: #afbeb4;
+          --seo-accent: #72d889;
+          --seo-accent-strong: #8ee6a1;
+          --seo-accent-soft: #183b23;
+          --seo-warning: #ffd27a;
+          --seo-warning-soft: #3b2d13;
+          --seo-danger: #ffaaa2;
+          --seo-danger-soft: #43201f;
+          --seo-focus: #a5b4fc;
+          --seo-shadow: none;
+        }
+      }
+    </style>
+    <script is:inline>
+      (() => {
+        const saved = localStorage.getItem("pfotentechnik-seo-theme");
+        if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="seo-shell">
+      <div class="seo-topbar">
+        <a class="seo-brand" href="/admin/seo/"><span class="seo-brand-mark" aria-hidden="true">PT</span> SEO Workspace</a>
+        <button class="seo-theme" type="button" data-theme-toggle aria-label="Farbschema wechseln">Theme wechseln</button>
+      </div>
+      <nav class="seo-nav" aria-label="SEO-Administration">
+        {nav.map(([key, href, label]) => <a href={href} aria-current={active === key ? "page" : undefined}>{label}</a>)}
+      </nav>
+      <header class="seo-page-header">
+        <div>
+          <div class="seo-eyebrow">PfotenTechnik Redaktion</div>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </header>
+      <slot />
+    </div>
+    <script is:inline>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", () => {
+        const current = document.documentElement.dataset.theme;
+        const next = current === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("pfotentechnik-seo-theme", next);
+      });
+    </script>
+  </body>
+</html>

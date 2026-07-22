@@ -1,62 +1,35 @@
 ---
-import data from "../../../data/seo/gsc-dashboard.json";
-const period = data.period ?? {
-  startDate: "",
-  endDate: "",
-};
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 
-const metricsData = data.metrics ?? {
-  current: {
-    clicks: 0,
-    impressions: 0,
-    ctr: 0,
-    position: 0,
-  },
-  change: {
-    clicks: 0,
-    impressions: 0,
-    ctr: 0,
-    position: 0,
-  },
-};
-
-const pages = data.pages ?? [];
-const queries = data.queries ?? [];
-const recommendations = data.recommendations ?? [];
-const metrics = [
-  {
-    label: "Klicks",
-    value: metricsData.current.clicks.toLocaleString("de-DE"),
-    change: metricsData.change.clicks,
-    suffix: "%",
-  },
-  {
-    label: "Impressionen",
-    value: metricsData.current.impressions.toLocaleString("de-DE"),
-    change: metricsData.change.impressions,
-    suffix: "%",
-  },
-  {
-    label: "CTR",
-    value: metricsData.current.ctr.toFixed(2) + " %",
-    change: metricsData.change.ctr,
-    suffix: " Pp.",
-  },
-  {
-    label: "Position",
-    value: metricsData.current.position.toFixed(1),
-    change: metricsData.change.position,
-    suffix: "",
-  },
+const payload = loadSeoDashboard();
+const active = payload.ranges[payload.defaultRange] ?? Object.values(payload.ranges)[0];
+const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(value);
+const sections = [
+  { href: "/admin/seo/cockpit/", title: "GSC Cockpit", text: "Kennzahlen, Seiten, Queries und vorhandene GSC-Regeln nach Zeitraum." },
+  { href: "/admin/seo/advisor/", title: "SEO Co-Pilot", text: "Priorisierte Top-5, Traffic-Fokus, EEAT, Gaps, Überschneidungen und Linkchancen." },
+  { href: "/admin/seo/tasks/", title: "Aufgaben", text: "Lokal gespeicherte Advisor-Aufgaben planen, kommentieren und exportieren." },
+  { href: "/admin/seo/history/", title: "Historie", text: "Vorhandene Snapshots und Grenzen der historischen Vergleichsbasis nachvollziehen." },
+  { href: "/admin/seo/prompts/", title: "Prompt-Bibliothek", text: "Fertige ChatGPT- und Codex-Arbeitsaufträge aus der aktuellen Datenbasis kopieren." },
 ];
-const formatChange = (value, suffix) => (value > 0 ? "+" : "") + value.toLocaleString("de-DE") + suffix;
-const changeClass = (label, change) => label === "Position" ? (change <= 0 ? "positive" : "negative") : (change >= 0 ? "positive" : "negative");
 ---
-<!doctype html><html lang="de"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex,nofollow"/><title>SEO Dashboard | PfotenTechnik</title><style>
-:root{color-scheme:light dark;font-family:Inter,ui-sans-serif,system-ui,sans-serif}body{margin:0;background:#f4f6f8;color:#17211b}main{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:32px 0 64px}header{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}h1{margin:0 0 6px;font-size:clamp(1.8rem,4vw,2.8rem)}h2{margin:0 0 16px;font-size:1.25rem}p{margin:0;color:#5f6d64}.grid{display:grid;gap:16px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:24px}.card{background:#fff;border:1px solid #dfe6e1;border-radius:18px;padding:20px;box-shadow:0 8px 30px rgba(23,33,27,.05)}.metric strong{display:block;margin:8px 0 4px;font-size:1.8rem}.metric small{font-weight:700}.positive{color:#16784a}.negative{color:#b42318}.columns{grid-template-columns:1.15fr .85fr;align-items:start}table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{padding:12px 10px;border-bottom:1px solid #edf0ee;text-align:right;vertical-align:top}th:first-child,td:first-child{text-align:left}td:first-child{max-width:420px;overflow-wrap:anywhere}.recommendation{padding:16px 0;border-bottom:1px solid #edf0ee}.badge{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:.75rem;font-weight:800;background:#fff1d6;color:#815300}.recommendation h3{margin:8px 0 6px;font-size:1rem}.recommendation p{margin-top:5px;font-size:.9rem}.meta{font-size:.86rem}@media(max-width:900px){.metrics,.columns{grid-template-columns:1fr 1fr}.columns>*{grid-column:1/-1}}@media(max-width:560px){main{width:min(100% - 20px,1180px);padding-top:20px}header{align-items:start;flex-direction:column}.metrics{grid-template-columns:1fr 1fr}.card{border-radius:14px;padding:15px}.metric strong{font-size:1.45rem}.table-wrap{overflow-x:auto}table{min-width:680px}}@media(prefers-color-scheme:dark){body{background:#101512;color:#edf4ef}p{color:#aebbb2}.card{background:#171e19;border-color:#2b352e;box-shadow:none}th,td,.recommendation{border-color:#2b352e}}
-</style></head><body><main><header><div><h1>SEO Dashboard</h1><p>
-  Google Search Console ·
-  {data.period?.startDate ?? "noch nicht synchronisiert"}
-  bis
-  {data.period?.endDate ?? "–"}
-</p></div><p class="meta">Letztes Update: {data.generatedAt ? new Date(data.generatedAt).toLocaleString("de-DE") : "npm run gsc:sync ausführen"}</p></header><section class="grid metrics">{metrics.map((metric)=><article class="card metric"><p>{metric.label}</p><strong>{metric.value}</strong><small class={changeClass(metric.label,metric.change)}>{formatChange(metric.change,metric.suffix)}</small></article>)}</section><section class="grid columns"><article class="card"><h2>Seiten mit der größten Sichtbarkeit</h2><div class="table-wrap"><table><thead><tr><th>Seite</th><th>Klicks</th><th>Impressionen</th><th>CTR</th><th>Position</th></tr></thead><tbody>{pages.slice(0,30).map((row)=><tr><td>{row.page.replace("https://www.pfotentechnik.de","")||"/"}</td><td>{row.clicks}</td><td>{row.impressions}</td><td>{row.ctr.toFixed(2)} %</td><td>{row.position.toFixed(1)}</td></tr>)}</tbody></table></div></article><article class="card"><h2>Direkte Empfehlungen</h2>{data.recommendations.length?data.recommendations.slice(0,20).map((item)=><div class="recommendation"><span class="badge">{item.priority==="high"?"Hohe Priorität":"Mittlere Priorität"}</span><h3>{item.title}</h3><p>{item.page.replace("https://www.pfotentechnik.de","")}</p><p>{item.reason}</p><p><strong>Nächster Schritt:</strong> {item.action}</p></div>):<p>Noch keine Empfehlungen. Zuerst <code>npm run gsc:sync</code> ausführen.</p>}</article></section><section class="card" style="margin-top:16px"><h2>Top-Suchanfragen</h2><div class="table-wrap"><table><thead><tr><th>Suchanfrage</th><th>Klicks</th><th>Impressionen</th><th>CTR</th><th>Position</th></tr></thead><tbody>{data.queries.slice(0,50).map((row)=><tr><td>{row.query}</td><td>{row.clicks}</td><td>{row.impressions}</td><td>{row.ctr.toFixed(2)} %</td><td>{row.position.toFixed(1)}</td></tr>)}</tbody></table></div></section></main></body></html>
+<SeoAdminLayout title="SEO Workspace" description="Zentrale Übersicht über die vorhandenen Google-Search-Console-Daten und redaktionellen SEO-Werkzeuge." active="overview">
+  {active ? (
+    <>
+      <section class="overview-status seo-card">
+        <div><span class="seo-badge">{active.label}</span><h2>{active.startDate} bis {active.endDate}</h2><p>{payload.source === "ranges" ? "Multi-Zeitraum-Datei aktiv" : "Fallback auf Einzeldatei aktiv"}</p></div>
+        <dl><div><dt>Klicks</dt><dd>{formatNumber(active.metrics.current.clicks)}</dd></div><div><dt>Impressionen</dt><dd>{formatNumber(active.metrics.current.impressions)}</dd></div><div><dt>CTR</dt><dd>{active.metrics.current.ctr.toFixed(2)} %</dd></div><div><dt>Position</dt><dd>{active.metrics.current.position.toFixed(1)}</dd></div></dl>
+      </section>
+      <section class="overview-grid">{sections.map((section) => <a class="seo-card overview-link" href={section.href}><h2>{section.title}</h2><p>{section.text}</p><span>Öffnen →</span></a>)}</section>
+      <section class="seo-card data-summary"><h2>Datenstatus</h2><p>Generiert: {payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("de-DE") : "nicht verfügbar"}</p><p>{Object.keys(payload.ranges).length} Zeitraum/Zeiträume · {active.pages.length} Seiten · {active.queries.length} Queries · {active.trend.length} Trendpunkte · {active.recommendations.length} GSC-Empfehlungen</p>{payload.diagnostics.map((item) => <p class="diagnostic">{item.level}: {item.message}</p>)}</section>
+    </>
+  ) : <section class="seo-card empty"><h2>Keine nutzbaren GSC-Daten</h2>{payload.diagnostics.map((item) => <p>{item.message}</p>)}</section>}
+</SeoAdminLayout>
+<style>
+  .overview-status { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; align-items: center; padding: 24px; }
+  .overview-status h2 { margin: 10px 0 5px; }.overview-status p { margin: 0; color: var(--seo-muted); }
+  dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; } dl div { padding: 13px; border-radius: 13px; background: var(--seo-surface-soft); } dt { color: var(--seo-muted); font-size: .78rem; } dd { margin: 5px 0 0; font-size: 1.35rem; font-weight: 850; }
+  .overview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }.overview-link { display: block; min-height: 180px; padding: 21px; color: var(--seo-text); text-decoration: none; }.overview-link h2 { margin: 0 0 9px; }.overview-link p { color: var(--seo-muted); line-height: 1.55; }.overview-link span { color: var(--seo-accent-strong); font-weight: 850; }
+  .data-summary { margin-top: 18px; padding: 21px; }.data-summary p { color: var(--seo-muted); }.diagnostic { padding: 9px; border-radius: 9px; background: var(--seo-warning-soft); }.empty { padding: 24px; }
+  @media(max-width:850px){.overview-status{grid-template-columns:1fr}.overview-grid{grid-template-columns:1fr 1fr}} @media(max-width:560px){dl{grid-template-columns:1fr 1fr}.overview-grid{grid-template-columns:1fr}}
+</style>
