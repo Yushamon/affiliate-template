@@ -4,17 +4,17 @@ slug: "petlibro"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "PETLIBRO entwickelt smarte Futterautomaten, Trinkbrunnen und weitere vernetzte Produkte für Katzen und Hunde."
+description: "PETLIBRO im Überblick: Futterautomaten und Trinkbrunnen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Modelle."
 
 key: "petlibro"
 name: "PETLIBRO"
 
-recommendation: "Besonders interessant für Nutzer, die moderne App-Funktionen, Kameras und eine breite Produktauswahl suchen."
+recommendation: "PETLIBRO passt besonders zu Katzen- und Hundehaltern, die zwischen App-Feeder, Kamera, RFID, gekühltem Nassfutter und smarten Trinkbrunnen wählen möchten. Für reine Offline-Nutzung sind einfachere Hersteller oft übersichtlicher."
 
-summary: "PETLIBRO gehört zu den bekanntesten Herstellern smarter Futterautomaten. Die Marke bietet Modelle für Trockenfutter, Nassfutter, Kameraüberwachung und kontrollierten Futterzugang."
+summary: "PETLIBRO entwickelt seit 2019 smarte Futterautomaten und Trinkbrunnen. Die Stärke liegt in der ungewöhnlich breiten Auswahl: Trocken- oder Nassfutter, Kamera, RFID-Zugang sowie Brunnen mit App- oder Verbrauchserfassung. App-, Cloud- und Filterbedarf müssen jedoch für jedes Modell getrennt geprüft werden."
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-19"
+updatedAt: "2026-07-22"
 navigation:
   show: true
   label: "Hersteller"
@@ -46,7 +46,7 @@ hub:
 
 seo:
   title: "PETLIBRO Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "PETLIBRO im Überblick: Erfahrungen, Stärken, Schwächen, Produktserien und Empfehlungen für Futterautomaten."
+  description: "PETLIBRO im Überblick: Futterautomaten, Trinkbrunnen, App, optionale Abos, Erfahrungen, Garantie sowie Stärken und Schwächen der Modelle."
   canonical: "/hersteller/petlibro/"
   noindex: false
   sitemap: true
@@ -124,12 +124,12 @@ productSlugs:
   - "petlibro-glacier-ultrafiltration"
 
 profile:
-  company: "PETLIBRO entwickelt seit 2019 Futterautomaten, Trinkbrunnen und ergänzende Lösungen für Katzen und Hunde. Der Schwerpunkt liegt auf planbarer Fütterung, Kamerafunktionen und der Auswertung von Futter- oder Wasseraufnahme."
-  appEcosystem: "Die PETLIBRO-App verbindet kompatible Futterautomaten, Trinkbrunnen und Kamerafunktionen. Einige Video- und Analysefunktionen werden als optionale Abonnements angeboten; Basisumfang und Tarifbedarf unterscheiden sich je Modell."
-  replacementParts: "Der offizielle Shop führt modellbezogene Pumpen, Näpfe und weiteres Zubehör. Die Produktgeneration muss vor der Bestellung geprüft werden, da Teile nicht generell kompatibel sind."
-  filterSupply: "Originalfilter sind für Dockstream-, Capsule-, Glacier- und weitere Brunnenserien erhältlich. Damit ist die Versorgung vergleichsweise transparent, bleibt aber an die jeweilige Filterform gebunden."
-  warranty: "PETLIBRO Deutschland nennt für Futterautomaten und Trinkbrunnen 24 Monate Herstellergarantie bei Käufen über autorisierte Vertriebswege; Verbrauchsmaterialien sind ausgenommen."
-  competitorComparison: "PETLIBRO deckt besonders viele Fütterungsszenarien ab, von Kamera bis Nassfutter und RFID. PETKIT bietet ein breiteres Geräteökosystem, SureFeed den konsequenteren Mikrochip-Zugang und Cat Mate mehr Offline-Einfachheit."
+  company: "PETLIBRO entwickelt laut eigener Unternehmensdarstellung seit 2019 Haustiertechnik. Das aktuelle Sortiment umfasst vor allem Futterautomaten und Trinkbrunnen; der offizielle Hilfebereich führt außerdem Kameras, eine smarte Katzentoilette und weiteres Zubehör."
+  appEcosystem: "Die PETLIBRO-App verwaltet kompatible Feeder, Brunnen und Kamerafunktionen. Zeitpläne, Gerätestatus und Live-Funktionen hängen vom Modell ab. Kostenpflichtige Dienste wie Video Cloud oder Video Cloud AI ergänzen bei kompatiblen Geräten Cloud-Aufzeichnung und Analyse; sie sind nicht pauschal für den Grundbetrieb jedes Feeders erforderlich."
+  replacementParts: "PETLIBRO verkauft modellbezogene Pumpen, Näpfe, Netzteile und Zubehör. Laut offiziellem Support sind Ersatzteile auch außerhalb der Garantie erhältlich, ausgenommen eingestellte Produkte. Vor der Bestellung müssen Modellnummer und Produktgeneration übereinstimmen."
+  filterSupply: "Für Dockstream-, Capsule-, Glacier- und weitere Brunnenserien gibt es eigene Originalfilter. Filterform, Stückzahl und Wechselbedarf unterscheiden sich nach Modell; ein Dockstream-Filter ist deshalb nicht automatisch mit jedem PETLIBRO-Brunnen kompatibel."
+  warranty: "Die offizielle Garantieübersicht nennt 24 Monate für Futterautomaten und Trinkbrunnen aus autorisierten Vertriebswegen. Erforderlich sind unter anderem ein Kaufnachweis und die Identifikation des Modells. Verschleißteile wie Batterien, Trockenmittelbeutel und Brunnenfilter sind von der Herstellergarantie ausgenommen."
+  competitorComparison: "PETLIBRO ist besonders breit bei Fütterungsvarianten: App, Kamera, gekühltes Nassfutter und RFID-Zugang. PETKIT bietet das größere geräteübergreifende Ökosystem, SureFeed fokussiert Mikrochip-Zugang und Cat Mate einfache, überwiegend offline nutzbare Fächerautomaten. Bei Trinkbrunnen ist PETLIBRO stärker vernetzt, dadurch aber häufiger an App und modellgebundene Filter gebunden."
 featuredProductSlugs:
   - "petlibro-granary-camera-feeder"
   - "petlibro-polar-wet-food-feeder"
@@ -138,7 +138,7 @@ featuredProductSlugs:
 series:
   - key: "granary"
     name: "Granary"
-    description: "Trockenfutterautomaten mit unterschiedlichen Größen, App-Funktionen und teilweise integrierter Kamera."
+    description: "Trockenfutterautomaten als lokale, App- oder Kameravariante sowie mit Einzel- oder Doppelschale. Granary ist die naheliegende Serie für planbare Trockenfutterrationen."
     suitableFor:
       - "Berufstätige"
       - "Trockenfutter"
@@ -146,6 +146,19 @@ series:
       - "Kameraüberwachung"
     productSlugs:
       - "petlibro-granary-camera-feeder"
+      - "petlibro-granary-wifi-feeder"
+      - "petlibro-granary-dual-feeder"
+
+  - key: "air"
+    name: "Air"
+    description: "Kompaktere Trockenfutterautomaten mit oder ohne App. Die Serie ist übersichtlicher als Granary, bietet aber weniger Spezialvarianten."
+    suitableFor:
+      - "Kleine Stellflächen"
+      - "Trockenfutter"
+      - "Wahl zwischen App und Offline-Bedienung"
+    productSlugs:
+      - "petlibro-air-wifi-feeder"
+      - "petlibro-air-automatic-feeder"
 
   - key: "polar"
     name: "Polar"
@@ -168,8 +181,40 @@ series:
     productSlugs:
       - "petlibro-one-rfid-smart-feeder"
 
+  - key: "space"
+    name: "Space"
+    description: "Vakuumorientierter Trockenfutterautomat mit großem Vorrat. Interessant, wenn Vorratsschutz wichtiger als Kamera oder Zugangskontrolle ist."
+    suitableFor:
+      - "Großer Trockenfuttervorrat"
+      - "App-Steuerung"
+      - "Längere Nachfüllintervalle"
+    productSlugs:
+      - "petlibro-space-smart-feeder"
+
+  - key: "dockstream"
+    name: "Dockstream"
+    description: "Trinkbrunnenfamilie mit kabelgebundenen, kabellosen, App- und RFID-Varianten. Die genaue Version entscheidet über Laufzeit, Messfunktionen und Filtertyp."
+    suitableFor:
+      - "Katzen und kleine Hunde"
+      - "Flexible Aufstellung"
+      - "Optionale App- oder RFID-Auswertung"
+    productSlugs:
+      - "petlibro-dockstream-cordless"
+      - "petlibro-dockstream-2-smart"
+      - "petlibro-dockstream-rfid-smart"
+
+  - key: "glacier"
+    name: "Glacier"
+    description: "Trinkbrunnen mit Ultrafiltration. Die Serie richtet sich an Nutzer, die eine aufwendigere Wasseraufbereitung akzeptieren und die Versorgung mit passenden Filtern einplanen."
+    suitableFor:
+      - "Mehrstufige Wasserfilterung"
+      - "Planbare Filterversorgung"
+      - "Technikorientierte Haushalte"
+    productSlugs:
+      - "petlibro-glacier-ultrafiltration"
+
 experience:
-  summary: "PETLIBRO bietet eine ungewöhnlich breite Auswahl smarter Fütterungslösungen. Besonders stark ist die Marke bei App-Funktionen, Kamera und spezialisierten Modellen."
+  summary: "Unsere Einordnung ist kein pauschaler PETLIBRO-Langzeittest. Sie vergleicht die offiziell dokumentierten Funktionen der gepflegten Modelle. Dabei fällt vor allem die Breite des Sortiments positiv auf; App-Abhängigkeit, optionale Cloud-Dienste und modellgebundene Verbrauchsteile müssen dagegen vor dem Kauf einzeln bewertet werden."
   positives:
     - "Große Auswahl unterschiedlicher Geräte"
     - "Moderne und übersichtliche Produktgestaltung"
@@ -180,7 +225,7 @@ experience:
     - "Die Modellvielfalt erschwert teilweise den direkten Vergleich"
     - "Nicht alle Geräte bieten dieselbe App- und Funktionsqualität"
   support: "PETLIBRO bietet produktbezogene Hilfe, App-Support und internationale Supportkanäle. Verfügbarkeit und Reaktionszeit können regional variieren."
-  methodology: "Die Einordnung basiert auf Herstellerinformationen, technischen Daten, Fachtests und wiederkehrenden Erfahrungen aus der Nutzung."
+  methodology: "Die Einordnung basiert auf offiziellen PETLIBRO-Produkt-, Support-, Garantie- und Abonnementinformationen sowie den einheitlich gepflegten PfotenTechnik-Produktdaten. Sie behauptet keinen eigenen Langzeittest und überträgt keine Aussage pauschal auf alle Modellgenerationen."
 
 alternativeManufacturerSlugs:
   - "petkit"
@@ -189,28 +234,54 @@ alternativeManufacturerSlugs:
 
 sources:
   - label: "PETLIBRO Unternehmensprofil"
-    url: "https://de.petlibro.com/pages/about-us"
-    description: "Unternehmens- und Sortimentsinformationen des Herstellers."
-  - label: "PETLIBRO Rückgabe und Garantie"
-    url: "https://de.petlibro.com/pages/return-refund-policy"
-  - label: "PETLIBRO Zubehör"
-    url: "https://de.petlibro.com/collections/accessories"
+    url: "https://petlibro.com/pages/about-us"
+    description: "Herstellerangabe zur Marke und zum Start im Jahr 2019."
+  - label: "PETLIBRO Garantiebedingungen"
+    url: "https://petlibro.com/pages/return-policy"
+    description: "Garantiezeiträume, autorisierte Vertriebswege und Ausschlüsse."
+  - label: "PETLIBRO Produkt-Support"
+    url: "https://petlibro.com/pages/help-center"
+    description: "Offizielle Übersicht der unterstützten Produktfamilien."
+  - label: "PETLIBRO Abonnementbedingungen"
+    url: "https://petlibro.com/pages/subscription-service-terms"
+    description: "Bedingungen für optionale Software- und Verbrauchsmaterial-Abonnements."
+  - label: "PETLIBRO Video Cloud AI"
+    url: "https://petlibro.com/pages/video-cloud-ai"
+    description: "Abgrenzung kostenloser Grundfunktionen und optionaler Video-/AI-Dienste."
+  - label: "PETLIBRO Ersatzteile außerhalb der Garantie"
+    url: "https://petlibro.com/pages/what-are-my-options-if-my-petlibro-product-is-out-of-warranty"
+    description: "Herstellerhinweis zur Ersatzteilversorgung nach Garantieende."
 
 faq:
   - question: "Ist PETLIBRO ein guter Hersteller?"
-    answer: "PETLIBRO bietet eine breite Auswahl moderner Futterautomaten und gehört besonders bei App-Steuerung, Kamera und spezialisierten Fütterungslösungen zu den interessanten Marken."
+    answer: "PETLIBRO ist besonders interessant, wenn ein konkreter Anwendungsfall gelöst werden soll: App-Steuerung, Kamera, gekühltes Nassfutter, RFID-Zugang oder ein smarter Trinkbrunnen. Die Marke bietet dafür mehr Varianten als viele Wettbewerber. Eine pauschale Qualitätsaussage wäre dennoch zu grob, weil App-Umfang, Offline-Verhalten, Filter und Reinigung je nach Modell deutlich variieren."
 
   - question: "Welcher PETLIBRO Futterautomat ist der beste?"
-    answer: "Für viele Nutzer ist ein Granary-Modell eine ausgewogene Wahl. Für Nassfutter ist der Polar interessanter, während der One RFID bei getrennten Rationen in Mehrkatzenhaushalten Vorteile bietet."
+    answer: "Es gibt keinen besten PETLIBRO-Automaten für alle Haushalte. Granary passt zu planbaren Trockenfutterportionen, Polar zu vorbereitetem Nassfutter und One RFID zu getrennten Rationen im Mehrkatzenhaushalt. Air ist kompakter, während Space einen großen, geschützten Vorrat priorisiert. Entscheidend sind Futterart und Zugangskontrolle – erst danach App oder Kamera."
 
   - question: "Benötigen PETLIBRO Futterautomaten WLAN?"
-    answer: "Modelle mit App, Kamera oder Fernsteuerung benötigen in der Regel WLAN. Einfache Zeitpläne können je nach Modell auch lokal gespeichert und ausgeführt werden."
+    answer: "Nur die vernetzten Funktionen benötigen WLAN. App-Steuerung, Fernzugriff, Benachrichtigungen und Live-Kamera setzen bei kompatiblen Modellen eine Netzwerkverbindung voraus. PETLIBRO führt zugleich Automaten ohne App. Ob ein zuvor gespeicherter Zeitplan bei einem Netzausfall weiterläuft und welche Batterieabsicherung vorhanden ist, muss in der Anleitung des konkreten Modells geprüft werden."
+
+  - question: "Braucht man für PETLIBRO ein Abo?"
+    answer: "Nicht grundsätzlich. PETLIBRO bietet kostenpflichtige Softwaredienste wie Video Cloud und Video Cloud AI für kompatible Geräte an. Sie ergänzen beispielsweise Cloud-Aufzeichnung oder AI-Auswertungen. Grundfunktionen hängen vom Modell ab; PETLIBRO erklärt für die Granary-2-Serie ausdrücklich, dass Zeitpläne, Futterprotokoll und Livebild ohne Video-Cloud-Abo nutzbar bleiben."
 
   - question: "Gibt es PETLIBRO Futterautomaten für Nassfutter?"
-    answer: "Ja. Der PETLIBRO Polar wurde speziell für vorbereitete und gekühlte Nassfutterportionen entwickelt."
+    answer: "Ja. Der PETLIBRO Polar ist für vorbereitete Nassfutterportionen konzipiert und arbeitet anders als ein klassischer Vorratsautomat für Trockenfutter. Kühlung verlängert jedoch nicht unbegrenzt die sichere Standzeit. Portionsgröße, Vorbereitungszeit, Reinigung und die Herstellerhinweise zum verwendeten Futter müssen deshalb gemeinsam berücksichtigt werden."
 
   - question: "Eignet sich PETLIBRO für mehrere Katzen?"
-    answer: "Einige Modelle können mehrere Tiere versorgen. Bei Futterneid oder Spezialfutter ist ein RFID-Modell mit kontrolliertem Zugang meist die bessere Wahl."
+    answer: "Ja, aber nicht jedes Mehrtierproblem wird durch einen Doppelnapf gelöst. Zwei Schalen verteilen Futter, verhindern aber nicht, dass eine Katze beide Portionen frisst. Bei Spezialfutter, Futterneid oder unterschiedlichen Rationen ist der One RFID mit kontrolliertem Zugang die passendere PETLIBRO-Bauart. Für jedes Tier kann ein separates Gerät nötig sein."
+
+  - question: "Welche PETLIBRO Trinkbrunnen gibt es?"
+    answer: "Das Sortiment umfasst unter anderem Dockstream-Varianten mit Kabel, Akku, App oder RFID-Auswertung sowie Capsule-, Edelstahl- und Glacier-Modelle. Nicht jede Variante misst die Wasseraufnahme oder arbeitet kabellos. Wähle daher zuerst nach Tiergröße, Trinkfläche, Standort und Reinigungsaufwand und prüfe anschließend App-, Akku- und Filterfunktionen."
+
+  - question: "Wie lange gibt PETLIBRO Garantie?"
+    answer: "PETLIBRO nennt in der offiziellen Garantieübersicht 24 Monate für Futterautomaten und Trinkbrunnen aus autorisierten Vertriebswegen. Ein Kaufnachweis und die Modellidentifikation werden benötigt. Normaler Verschleiß sowie Verbrauchsteile wie Batterien, Trockenmittelbeutel und Brunnenfilter sind ausgenommen. Gesetzliche Gewährleistungsrechte können daneben bestehen."
+
+  - question: "Sind PETLIBRO Filter und Ersatzteile untereinander kompatibel?"
+    answer: "Nein, von einer allgemeinen Kompatibilität sollte man nicht ausgehen. Dockstream-, Capsule- und Glacier-Geräte verwenden unterschiedliche Filter- oder Pumpenkonzepte. Vor der Bestellung müssen Modellnummer, Generation und Zubehörbezeichnung übereinstimmen. PETLIBRO verkauft Ersatzteile auch für Geräte außerhalb der Garantie, schließt eingestellte Produkte von dieser Zusage jedoch aus."
+
+  - question: "Hat PfotenTechnik PETLIBRO selbst getestet?"
+    answer: "Die Herstellerbewertung ist kein pauschaler eigener Langzeittest aller PETLIBRO-Produkte. PfotenTechnik ordnet offizielle Produktdaten, Bedienkonzepte, Garantie, Ersatzteilversorgung und die gepflegten Einzelmodelle nach einheitlichen Kriterien ein. Wenn zu einem Gerät keine belastbare Herstellerangabe vorliegt, wird diese Lücke nicht durch eine Schätzung ersetzt."
 ---
 
 PETLIBRO gehört zu den bekanntesten Marken für smarte Futterautomaten. Der Hersteller deckt mit seinen Produkten unterschiedliche Anforderungen ab, von klassischer Trockenfutterportionierung über Kamerafunktionen bis zu gekühltem Nassfutter und RFID-Zugangskontrolle.
