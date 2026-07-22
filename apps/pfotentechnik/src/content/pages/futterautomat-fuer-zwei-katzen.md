@@ -185,6 +185,8 @@ recommendationJourney:
   comparisonLabel: Passende Modelle vergleichen
 ---
 
+Dieser Ratgeber vertieft den Spezialfall der getrennten Fütterung im übergeordneten Themenbereich [Smarte Futterautomaten](/smarte-futterautomaten/) und grenzt Doppelschale, getrennte Geräte sowie Mikrochip-Zugang voneinander ab.
+
 ## Die kurze Antwort
 
 Für zwei Katzen ist nicht die Zahl der Näpfe entscheidend, sondern die Frage, **wer Zugang zu welcher Portion erhält**.
