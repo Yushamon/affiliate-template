@@ -27,10 +27,13 @@
     "gsc:setup": "node scripts/gsc/setup.mjs",
     "gsc:test": "node scripts/gsc/test.mjs",
     "gsc:audit": "node scripts/gsc/audit.mjs",
-    "gsc:report": "node scripts/gsc/audit.mjs",
+    "gsc:report": "node scripts/gsc/report.mjs",
     "gsc:sync": "node scripts/gsc/sync.mjs",
     "seo:sync": "npm run gsc:sync",
-    "seo:cockpit": "npm run gsc:sync"
+    "seo:cockpit": "npm run gsc:sync",
+    "seo:admin": "node scripts/search/admin.mjs",
+    "dev:seo": "node scripts/search/dev.mjs",
+    "test:search": "node --test test/search-platform.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

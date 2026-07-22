@@ -1,0 +1,175 @@
+---
+import { readSearchStatus } from "../../lib/search/status-store.mjs";
+import { safeSearchConfig } from "../../lib/search/config.mjs";
+
+const initial = readSearchStatus();
+const config = safeSearchConfig();
+const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
+const serialized = JSON.stringify({ initial, config, serviceUrl }).replace(/</g, "\\u003c");
+const date = (value: string | null) => value ? new Date(value).toLocaleString("de-DE") : "noch nie";
+---
+<section class="search-integrations seo-card" aria-labelledby="search-integrations-title" data-search-integrations>
+  <div class="integration-heading">
+    <div><span class="seo-badge">Search Platform</span><h2 id="search-integrations-title">Search Integrations</h2><p>Google-Daten, lokale Wartungsaktionen und Provider-Status an einem Ort.</p></div>
+    <span class="service-state" data-service-state data-state="checking">Lokaler Admin-Service wird geprüft</span>
+  </div>
+
+  <div class="provider-grid">
+    <article class="provider-card" data-provider="google">
+      <div class="provider-title"><div><span class="provider-mark" aria-hidden="true">G</span><h3>Google Search Console</h3></div><span class="seo-badge" data-google-health>{config.google.tokenPresent ? "lokal konfiguriert" : "nicht verbunden"}</span></div>
+      <dl class="status-grid">
+        <div><dt>Property</dt><dd data-google-property>{initial.google.property || config.google.property}</dd></div>
+        <div><dt>Verbindungstest</dt><dd data-google-test>{date(initial.google.lastTestAt)}</dd></div>
+        <div><dt>Letzter Versuch</dt><dd data-google-attempt>{date(initial.google.lastAttemptAt)}</dd></div>
+        <div><dt>Erfolgreicher Sync</dt><dd data-google-sync>{date(initial.google.lastSuccessfulSyncAt)}</dd></div>
+        <div><dt>Sync-Dauer</dt><dd data-google-duration>{initial.google.lastDurationMs ? `${initial.google.lastDurationMs} ms` : "–"}</dd></div>
+        <div><dt>Datenumfang</dt><dd data-google-counts>{initial.google.pagesCount} Seiten · {initial.google.queriesCount} Queries</dd></div>
+      </dl>
+      <p class="provider-error" data-google-error hidden></p>
+      <div class="action-row">
+        <button type="button" data-setup data-requires-service>Google verbinden</button>
+        <button type="button" data-action="google.test" data-requires-service>Verbindung testen</button>
+        <button type="button" data-action="google.sync" data-requires-service>Jetzt synchronisieren</button>
+        <button type="button" data-action="google.report" data-requires-service>Bericht erzeugen</button>
+        <button class="secondary" type="button" data-setup data-reconnect data-requires-service>OAuth neu verbinden</button>
+      </div>
+    </article>
+
+    <article class="provider-card maintenance-card">
+      <div class="provider-title"><div><span class="provider-mark maintenance" aria-hidden="true">W</span><h3>Lokale Wartung</h3></div><span class="seo-badge">Allowlist</span></div>
+      <p>Diese Aktionen laufen ausschließlich im lokalen Admin-Service. Der Browser kann keine Befehle oder Dateipfade übergeben.</p>
+      <div class="action-row">
+        <button type="button" data-action="contentGraph.build" data-requires-service>Content Graph aktualisieren</button>
+        <button type="button" data-action="seo.audit" data-requires-service>SEO Audit starten</button>
+      </div>
+    </article>
+
+    <article class="provider-card bing-card">
+      <div class="provider-title"><div><span class="provider-mark bing" aria-hidden="true">B</span><h3>Bing Webmaster Tools</h3></div><span class="seo-badge">vorbereitet</span></div>
+      <p>Provider-Typen, Registry und Statusmodell sind vorbereitet. API-Zugang und Datensynchronisierung sind noch nicht eingerichtet; deshalb werden keine funktionslosen Aktionen angeboten.</p>
+    </article>
+  </div>
+  <div class="action-message" data-action-message aria-live="polite">Die Ansicht zeigt den zuletzt lokal gespeicherten Status.</div>
+  <script type="application/json" data-search-config set:html={serialized}></script>
+</section>
+
+<script>
+  const root = document.querySelector("[data-search-integrations]");
+  if (root) {
+    const configNode = root.querySelector("[data-search-config]");
+    const config = JSON.parse(configNode?.textContent || "{}");
+    const serviceUrl = String(config.serviceUrl || "http://127.0.0.1:4178").replace(/\/$/, "");
+    const message = root.querySelector("[data-action-message]");
+    const serviceState = root.querySelector("[data-service-state]");
+    const buttons = [...root.querySelectorAll("[data-requires-service]")];
+    let serviceAvailable = false;
+
+    const setText = (selector, value) => { const node = root.querySelector(selector); if (node) node.textContent = value; };
+    const formatDate = (value) => value ? new Date(value).toLocaleString("de-DE") : "noch nie";
+    const setMessage = (text, state = "info") => { if (message) { message.textContent = text; message.dataset.state = state; } };
+    const setBusy = (busy) => { root.setAttribute("aria-busy", String(busy)); buttons.forEach((button) => { button.disabled = busy || !serviceAvailable; }); };
+
+    function renderStatus(payload) {
+      const google = payload?.providers?.google;
+      if (!google) return;
+      const health = { connected: "verbunden", "needs-auth": "Authentifizierung erforderlich", "not-configured": "nicht konfiguriert", degraded: "Fehler", unavailable: "nicht verfügbar" };
+      setText("[data-google-health]", health[google.health] || google.health);
+      setText("[data-google-property]", google.property || "nicht gewählt");
+      setText("[data-google-test]", formatDate(google.lastTestAt));
+      setText("[data-google-attempt]", formatDate(google.lastAttemptAt));
+      setText("[data-google-sync]", formatDate(google.lastSuccessfulSyncAt));
+      setText("[data-google-duration]", google.lastDurationMs ? `${google.lastDurationMs} ms` : "–");
+      setText("[data-google-counts]", `${google.pagesCount || 0} Seiten · ${google.queriesCount || 0} Queries`);
+      const error = root.querySelector("[data-google-error]");
+      if (error) { error.hidden = !google.lastError; error.textContent = google.lastError ? `${google.lastError.message} ${google.lastError.nextAction} (${google.lastError.code})` : ""; }
+    }
+
+    async function api(path, options = {}) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), options.timeout || 5000);
+      try {
+        const response = await fetch(`${serviceUrl}${path}`, { ...options, signal: controller.signal, headers: { "content-type": "application/json", ...(options.headers || {}) } });
+        const body = await response.json().catch(() => ({}));
+        if (!response.ok) throw body.error || { message: `HTTP ${response.status}`, code: "SEARCH_ADMIN_SERVICE_UNAVAILABLE" };
+        return body;
+      } finally { clearTimeout(timer); }
+    }
+
+    async function refreshStatus() {
+      try {
+        const status = await api("/api/admin/search/status", { timeout: 1800 });
+        serviceAvailable = true;
+        serviceState.textContent = "Lokaler Admin-Service verbunden";
+        serviceState.dataset.state = "connected";
+        renderStatus(status);
+        setBusy(false);
+        return status;
+      } catch {
+        serviceAvailable = false;
+        serviceState.textContent = "Admin-Aktionen nur lokal verfügbar";
+        serviceState.dataset.state = "offline";
+        buttons.forEach((button) => { button.disabled = true; });
+        setMessage("Starte „npm run seo:admin“, um lokale Aktionen zu aktivieren. Die gespeicherten Search-Daten bleiben lesbar.", "warning");
+        return null;
+      }
+    }
+
+    async function pollAction(id) {
+      for (let count = 0; count < 360; count += 1) {
+        const action = await api(`/api/admin/search/actions/${encodeURIComponent(id)}`);
+        setMessage(action.progress?.message || `Aktion: ${action.status}`);
+        if (action.status === "succeeded") return action;
+        if (action.status === "failed" || action.status === "cancelled") throw action.error || { message: "Aktion fehlgeschlagen." };
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
+      throw { message: "Statusabfrage hat das Zeitlimit überschritten.", code: "SEARCH_ACTION_TIMEOUT" };
+    }
+
+    root.addEventListener("click", async (event) => {
+      const button = event.target.closest("button");
+      if (!button || !serviceAvailable) return;
+      const action = button.dataset.action;
+      const setup = button.hasAttribute("data-setup");
+      if (!action && !setup) return;
+      if (button.hasAttribute("data-reconnect") && !window.confirm("OAuth wirklich neu verbinden? Der vorhandene Token bleibt erhalten, bis die neue Verbindung erfolgreich ist.")) return;
+      setBusy(true);
+      try {
+        if (setup) {
+          const session = await api("/api/admin/search/google/setup/start", { method: "POST", body: "{}" });
+          const popup = window.open(session.authorizationUrl, "pfotentechnik-google-oauth", "popup,width=720,height=760");
+          if (!popup) setMessage("Popup blockiert. Erlaube Popups und starte „Google verbinden“ erneut.", "warning");
+          for (let count = 0; count < 300; count += 1) {
+            const state = await api(`/api/admin/search/google/setup/status?id=${encodeURIComponent(session.id)}`);
+            if (state.status === "succeeded") { setMessage(`Google Search Console ist mit ${state.property} verbunden.`, "success"); break; }
+            if (state.status === "failed") throw state.error;
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+          }
+        } else {
+          const queued = await api("/api/admin/search/actions", { method: "POST", body: JSON.stringify({ action }) });
+          const completed = await pollAction(queued.id);
+          setMessage(`${button.textContent}: erfolgreich abgeschlossen.`, "success");
+          if (completed.action === "google.sync") window.setTimeout(() => window.location.reload(), 900);
+        }
+        await refreshStatus();
+      } catch (error) {
+        setMessage(`${error?.message || "Aktion fehlgeschlagen."}${error?.nextAction ? ` ${error.nextAction}` : ""}${error?.code ? ` (${error.code})` : ""}`, "error");
+      } finally { setBusy(false); }
+    });
+
+    refreshStatus();
+  }
+</script>
+
+<style>
+  .search-integrations { margin-bottom: 18px; padding: 22px; }
+  .integration-heading, .provider-title, .provider-title > div { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+  .integration-heading h2 { margin: 8px 0 5px; font-size: 1.55rem; }.integration-heading p, .provider-card p { margin: 0; color: var(--seo-muted); line-height: 1.55; }
+  .service-state { padding: 8px 11px; border-radius: 999px; background: var(--seo-warning-soft); color: var(--seo-warning); font-size: .78rem; font-weight: 800; text-align: center; }
+  .service-state[data-state="connected"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }.service-state[data-state="offline"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
+  .provider-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 14px; margin-top: 20px; }.provider-card { padding: 18px; border: 1px solid var(--seo-border); border-radius: 16px; background: var(--seo-surface-soft); }.provider-card:first-child { grid-row: span 2; }.provider-title h3 { margin: 0; }
+  .provider-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: #4285f4; color: #fff; font-weight: 900; }.provider-mark.maintenance { background: var(--seo-accent); color: #08120a; }.provider-mark.bing { background: #008373; }
+  .status-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 18px 0; }.status-grid div { min-width: 0; padding: 10px; border-radius: 11px; background: var(--seo-surface); }.status-grid dt { color: var(--seo-muted); font-size: .74rem; }.status-grid dd { margin: 4px 0 0; overflow-wrap: anywhere; font-size: .88rem; font-weight: 750; }
+  .provider-error { margin: 12px 0 !important; padding: 10px; border-radius: 10px; background: var(--seo-danger-soft); color: var(--seo-danger) !important; }.action-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }.action-row button { min-height: 40px; padding: 8px 12px; border: 1px solid var(--seo-accent); border-radius: 10px; background: var(--seo-accent); color: #08120a; font-weight: 800; cursor: pointer; }.action-row button.secondary { background: transparent; color: var(--seo-accent-strong); }.action-row button:disabled { cursor: not-allowed; opacity: .5; }
+  .action-message { margin-top: 16px; padding: 11px 13px; border-radius: 11px; background: var(--seo-surface-soft); color: var(--seo-muted); }.action-message[data-state="success"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }.action-message[data-state="warning"] { background: var(--seo-warning-soft); color: var(--seo-warning); }.action-message[data-state="error"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
+  @media(max-width:850px){.provider-grid{grid-template-columns:1fr}.provider-card:first-child{grid-row:auto}} @media(max-width:580px){.search-integrations{padding:15px}.integration-heading{align-items:flex-start;flex-direction:column}.status-grid{grid-template-columns:1fr}.action-row button{width:100%}.provider-title{align-items:flex-start}}
+</style>

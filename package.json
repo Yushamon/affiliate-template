@@ -15,6 +15,7 @@
     "build:balkonspeicher": "npm --workspace apps/balkonspeicher run build",
     "preview:balkonspeicher": "npm --workspace apps/balkonspeicher run preview",
     "dev:pfotentechnik": "npm --workspace apps/pfotentechnik run dev",
+    "dev:pfotentechnik:seo": "npm --workspace apps/pfotentechnik run dev:seo",
     "build:pfotentechnik": "npm --workspace apps/pfotentechnik run build",
     "preview:pfotentechnik": "npm --workspace apps/pfotentechnik run preview",
     "test:affiliate": "npm --workspace packages/affiliate-core test",
@@ -36,6 +37,8 @@
     "ratings:check": "node apps/pfotentechnik/scripts/normalize-product-ratings.mjs --check",
     "gsc:sync": "npm --workspace apps/pfotentechnik run gsc:sync",
     "seo:sync": "npm --workspace apps/pfotentechnik run seo:sync",
-    "seo:cockpit": "npm --workspace apps/pfotentechnik run seo:cockpit"
+    "seo:cockpit": "npm --workspace apps/pfotentechnik run seo:cockpit",
+    "seo:admin": "npm --workspace apps/pfotentechnik run seo:admin",
+    "test:search": "npm --workspace apps/pfotentechnik run test:search"
   }
 }

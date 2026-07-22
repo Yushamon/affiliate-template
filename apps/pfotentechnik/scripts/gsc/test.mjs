@@ -1,13 +1,23 @@
-import { loadConfig } from "./config.mjs";
-import { getSite, listSitemaps } from "./client.mjs";
+#!/usr/bin/env node
+import { testGoogleSearch } from "../../src/lib/search/providers/google/test.mjs";
+import { toPublicError } from "../../src/lib/search/errors.mjs";
 
-const config = loadConfig();
-const site = await getSite(config.siteUrl);
-const sitemaps = await listSitemaps(config.siteUrl);
-
-console.log("Google Search Console");
-console.log("=====================");
-console.log(`Property: ${site.siteUrl}`);
-console.log(`Berechtigung: ${site.permissionLevel}`);
-console.log(`Sitemaps: ${(sitemaps.sitemap || []).length}`);
-console.log("Status: Verbindung erfolgreich");
+try {
+  const result = await testGoogleSearch();
+  console.log("Google Search Console");
+  console.log("- OAuth: verbunden");
+  console.log(`- Property: ${result.property}`);
+  console.log("- Token Refresh: erfolgreich");
+  console.log("- API: erreichbar");
+  console.log("- Datenzugriff: erfolgreich");
+  console.log(`- Schreibpfad: ${result.writePath}`);
+} catch (error) {
+  const safe = toPublicError(error);
+  console.error("Google Search Console");
+  console.error(`- Status: fehlgeschlagen`);
+  console.error(`- Ursache: ${safe.message}`);
+  console.error(`- Nächste Aktion: ${safe.nextAction}`);
+  console.error(`- Fehlercode: ${safe.code}`);
+  if (process.env.SEARCH_DEBUG === "1") console.error(error?.stack);
+  process.exitCode = 1;
+}

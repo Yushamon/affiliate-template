@@ -1,8 +1,9 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
-import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
+import SearchIntegrations from "../../../components/admin/SearchIntegrations.astro";
+import { loadSearchDashboard } from "../../../lib/search/dashboard-loader";
 
-const payload = loadSeoDashboard();
+const payload = loadSearchDashboard();
 const active = payload.ranges[payload.defaultRange] ?? Object.values(payload.ranges)[0];
 const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(value);
 const sections = [
@@ -14,6 +15,7 @@ const sections = [
 ];
 ---
 <SeoAdminLayout title="SEO Workspace" description="Zentrale Übersicht über die vorhandenen Google-Search-Console-Daten und redaktionellen SEO-Werkzeuge." active="overview">
+  <SearchIntegrations />
   {active ? (
     <>
       <section class="overview-status seo-card">

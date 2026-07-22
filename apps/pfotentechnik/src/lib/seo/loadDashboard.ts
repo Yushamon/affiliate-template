@@ -70,6 +70,7 @@ export type SeoDashboardPayload = {
   schemaVersion: number;
   generatedAt: string;
   property: string;
+  provider: "google" | "bing" | "combined";
   defaultRange: string;
   ranges: Record<string, SeoRange>;
   source: "ranges" | "single" | "none";
@@ -330,6 +331,7 @@ const finalisePayload = (
     schemaVersion: numberValue(root.schemaVersion) || 1,
     generatedAt: stringValue(root.generatedAt),
     property: stringValue(root.property),
+    provider: root.provider === "bing" || root.provider === "combined" ? root.provider : "google",
     defaultRange,
     ranges,
     source,
