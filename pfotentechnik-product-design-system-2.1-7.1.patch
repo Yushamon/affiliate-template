@@ -1,0 +1,618 @@
+diff --git a/apps/pfotentechnik/src/pages/produkt/[product].astro b/apps/pfotentechnik/src/pages/produkt/[product].astro
+index b0a6f60..625f1f8 100644
+--- a/apps/pfotentechnik/src/pages/produkt/[product].astro
++++ b/apps/pfotentechnik/src/pages/produkt/[product].astro
+@@ -446,7 +446,7 @@ const everydayCriteria = [
+ 
+   <Breadcrumbs items={breadcrumbs} />
+ 
+-  <main class="product-detail pt-product-detail">
++  <main class="product-detail pt-product-detail" data-product-page>
+     <AutoLinkContent
+       definitions={internalLinkDefinitions}
+       sourcePath={canonical}
+@@ -536,4 +536,33 @@ const everydayCriteria = [
+ 
+     <RelatedArticles items={relatedItems} />
+   </main>
++
++<script is:inline data-pt-editorial-status-cleanup>
++  (() => {
++    const root = document.querySelector('[data-product-page]');
++    if (!root) return;
++
++    const hiddenLabels = new Set([
++      'editorial review',
++      'editorial-review',
++      'redaktionelle bewertung',
++      'redaktionell bewertet'
++    ]);
++
++    root.querySelectorAll(
++      '[data-test-status], [data-review-status], [class*="test-status"], [class*="review-status"], [class*="status"]'
++    ).forEach((element) => {
++      const value = (
++        element.getAttribute('data-test-status') ||
++        element.getAttribute('data-review-status') ||
++        element.textContent ||
++        ''
++      ).trim().toLocaleLowerCase('de');
++
++      if (hiddenLabels.has(value)) {
++        element.remove();
++      }
++    });
++  })();
++</script>
+ </ProjectLayout>
+diff --git a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+index 79aa626..af930ca 100644
+--- a/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
++++ b/apps/pfotentechnik/src/styles/pfotentechnik-design-system.css
+@@ -5684,3 +5684,566 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
+ }
+ 
+ /* === End PfotenTechnik Editorial Design System 6.1.2 Recommendation & Product Card Fix === */
++
++/* PT product design system 2.1 / 7.1 */
++[data-product-page] {
++  --pt-product-surface:#fff;
++  --pt-product-surface-soft:#f6f8f8;
++  --pt-product-border:#dce5e2;
++  --pt-product-border-strong:#cbd8d4;
++  --pt-product-text:#101c2c;
++  --pt-product-text-soft:#435165;
++  --pt-product-text-muted:#718096;
++  --pt-product-accent:#198a46;
++  --pt-product-accent-bright:#57da8a;
++  --pt-product-accent-soft:#eaf7ee;
++  --pt-product-good:#198a46;
++  --pt-product-good-soft:#edf9f1;
++  --pt-product-bad:#c63b3b;
++  --pt-product-bad-soft:#fff1f1;
++  --pt-product-shadow:0 12px 34px rgba(17,35,29,.07);
++  color:var(--pt-product-text);
++}
++
++[data-product-page] :is(.product-fit-card,.product-pros-cons,.product-recommendation,.product-alternatives,.product-faq,.technical-data,.technical-specs,.product-specs,[class*="technical-data"],[class*="technical-specs"]) {
++  border:1px solid var(--pt-product-border);
++  border-radius:1.25rem;
++  color:var(--pt-product-text);
++  background:var(--pt-product-surface);
++  box-shadow:var(--pt-product-shadow);
++}
++
++[data-product-page] :is(.product-fit-card,.product-pros-cons,.product-recommendation,.product-alternatives,.product-faq) :is(h2,h3,h4,strong) { color:var(--pt-product-text)!important; }
++[data-product-page] :is(.product-fit-card,.product-pros-cons,.product-recommendation,.product-alternatives,.product-faq) :is(p,li,small) { color:var(--pt-product-text-soft)!important; }
++
++[data-product-page] :is(.product-fit-good,.product-suitability-good,[class*="fit-good"],[class*="suitability-good"]),
++[data-product-page] :is(.product-fit-bad,.product-suitability-bad,[class*="fit-bad"],[class*="suitability-bad"]) {
++  padding:1.15rem;
++  border:1px solid var(--pt-product-border);
++  border-radius:1rem;
++}
++[data-product-page] :is(.product-fit-good,.product-suitability-good,[class*="fit-good"],[class*="suitability-good"]) { border-left:4px solid var(--pt-product-good); background:var(--pt-product-good-soft); }
++[data-product-page] :is(.product-fit-bad,.product-suitability-bad,[class*="fit-bad"],[class*="suitability-bad"]) { border-left:4px solid var(--pt-product-bad); background:var(--pt-product-bad-soft); }
++[data-product-page] :is(.product-fit-good,.product-fit-bad,.product-suitability-good,.product-suitability-bad,[class*="fit-good"],[class*="fit-bad"],[class*="suitability-good"],[class*="suitability-bad"]) :is(h3,h4,strong) { color:var(--pt-product-text)!important; }
++[data-product-page] :is(.product-fit-good,.product-fit-bad,.product-suitability-good,.product-suitability-bad,[class*="fit-good"],[class*="fit-bad"],[class*="suitability-good"],[class*="suitability-bad"]) li { color:var(--pt-product-text-soft)!important; }
++
++[data-product-page] :is(.product-pros,.pros-card,[class*="advantages"],[class*="pros-card"]),
++[data-product-page] :is(.product-cons,.cons-card,[class*="disadvantages"],[class*="cons-card"]) {
++  padding:1.15rem;
++  border:1px solid var(--pt-product-border);
++  border-radius:1rem;
++  background:var(--pt-product-surface);
++}
++[data-product-page] :is(.product-pros,.pros-card,[class*="advantages"],[class*="pros-card"]) { border-top:3px solid var(--pt-product-good); }
++[data-product-page] :is(.product-cons,.cons-card,[class*="disadvantages"],[class*="cons-card"]) { border-top:3px solid var(--pt-product-bad); }
++[data-product-page] :is(.product-pros,.product-cons,.pros-card,.cons-card,[class*="advantages"],[class*="disadvantages"]) :is(h3,h4,strong) { color:var(--pt-product-text)!important; }
++[data-product-page] :is(.product-pros,.product-cons,.pros-card,.cons-card,[class*="advantages"],[class*="disadvantages"]) li { color:var(--pt-product-text-soft)!important; }
++
++[data-product-page] :is(.product-recommendation,.editorial-recommendation,[class*="editorial-recommendation"],[class*="recommendation-card"]) {
++  padding:clamp(1.1rem,3vw,1.5rem);
++  border-color:color-mix(in srgb,var(--pt-product-accent) 28%,var(--pt-product-border));
++  background:linear-gradient(135deg,color-mix(in srgb,var(--pt-product-accent-soft) 78%,transparent),transparent 65%),var(--pt-product-surface);
++}
++
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) { overflow:hidden; }
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) :is(dl,ul,ol) { margin:0; padding:0; }
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) :is(dl>div,li,.technical-data__row,.technical-specs__row,.product-specs__row,.specification-row) { min-width:0; padding:1rem 1.05rem; border-bottom:1px solid var(--pt-product-border); background:var(--pt-product-surface); }
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) :is(dl>div,li,.technical-data__row,.technical-specs__row,.product-specs__row,.specification-row):last-child { border-bottom:0; }
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) :is(dt,[class*="label"],[class*="term"]) { color:var(--pt-product-text-muted)!important; font-size:.82rem; line-height:1.35; }
++[data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"],[class*="specification-list"]) :is(dd,[class*="value"]) { min-width:0; margin:.28rem 0 0; color:var(--pt-product-text)!important; font-size:.96rem; font-weight:760; line-height:1.35; overflow-wrap:anywhere; }
++
++[data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) {
++  display:grid;
++  grid-template-columns:116px minmax(0,1fr);
++  gap:1rem;
++  align-items:center;
++  padding:1rem;
++  border:1px solid var(--pt-product-border);
++  border-radius:1rem;
++  color:var(--pt-product-text);
++  background:var(--pt-product-surface-soft);
++}
++[data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) :is(h3,h4,strong) { color:var(--pt-product-text)!important; }
++[data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) :is(p,small) { color:var(--pt-product-text-soft)!important; }
++[data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) img { width:116px; height:96px; border-radius:.8rem; object-fit:cover; }
++
++[data-product-page] :is(.product-faq,.faq-section,[class*="product-faq"],[class*="faq-section"]) :is(details,.faq-item,[class*="faq-item"]) {
++  border:1px solid var(--pt-product-border);
++  border-radius:.9rem;
++  color:var(--pt-product-text);
++  background:var(--pt-product-surface-soft);
++}
++[data-product-page] :is(.product-faq,.faq-section,[class*="product-faq"],[class*="faq-section"]) :is(summary,button,[class*="question"]) { color:var(--pt-product-text)!important; background:transparent!important; }
++[data-product-page] :is(.product-faq,.faq-section,[class*="product-faq"],[class*="faq-section"]) :is(details[open],.faq-item[open]) { border-color:color-mix(in srgb,var(--pt-product-accent) 24%,var(--pt-product-border)); background:var(--pt-product-accent-soft); }
++[data-product-page] :is(.product-faq,.faq-section,[class*="product-faq"],[class*="faq-section"]) :is(p,[class*="answer"]) { color:var(--pt-product-text-soft)!important; }
++
++[data-product-page] :is(.product-score,.score-card,.rating-card,[class*="score-card"],[class*="rating-card"]) { color:var(--pt-product-text); background:var(--pt-product-surface); }
++[data-product-page] :is(.product-score,.score-card,.rating-card,[class*="score-card"],[class*="rating-card"]) :is(h2,h3,strong,[class*="score"]) { color:var(--pt-product-text)!important; }
++
++[data-product-page] :is(.sticky-product-cta,.product-sticky-cta,[class*="sticky-cta"]) {
++  border-color:var(--pt-product-border-strong);
++  color:var(--pt-product-text);
++  background:color-mix(in srgb,var(--pt-product-surface) 94%,transparent);
++  box-shadow:0 12px 36px rgba(5,18,15,.18);
++  backdrop-filter:blur(14px);
++}
++[data-product-page] :is(.sticky-product-cta,.product-sticky-cta,[class*="sticky-cta"]) :is(span,small,strong) { color:var(--pt-product-text-soft); }
++[data-product-page] :is(.sticky-product-cta,.product-sticky-cta,[class*="sticky-cta"]) :is(a,button) { color:#071811; background:var(--pt-product-accent-bright); }
++
++[data-product-page] :is(.product-gallery,[class*="product-gallery"]) { border-color:var(--pt-product-border); background:var(--pt-product-surface); }
++[data-product-page] :is(.product-gallery,[class*="product-gallery"]) :is(.thumbnail,[class*="thumbnail"]) { border-color:var(--pt-product-border); background:var(--pt-product-surface-soft); }
++[data-product-page] :is(.product-gallery,[class*="product-gallery"]) :is(.thumbnail[aria-current="true"],[class*="thumbnail"].is-active,[class*="thumbnail"][data-active="true"]) { border-color:var(--pt-product-accent); box-shadow:0 0 0 3px color-mix(in srgb,var(--pt-product-accent) 16%,transparent); }
++
++@media (max-width:720px) {
++  [data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) { grid-template-columns:96px minmax(0,1fr); gap:.8rem; padding:.85rem; }
++  [data-product-page] :is(.alternative-card,.product-alternative-card,[class*="alternative-card"]) img { width:96px; height:86px; }
++  [data-product-page] :is(.technical-data,.technical-specs,.product-specs,.specification-list,[class*="technical-data"],[class*="technical-specs"]) :is(dl>div,li,.technical-data__row,.technical-specs__row,.product-specs__row,.specification-row) { padding:.9rem .95rem; }
++}
++
++@media (prefers-color-scheme:dark) {
++  [data-product-page] {
++    --pt-product-surface:#101d2f;
++    --pt-product-surface-soft:#142238;
++    --pt-product-border:rgba(203,218,232,.14);
++    --pt-product-border-strong:rgba(203,218,232,.22);
++    --pt-product-text:#f4f8fb;
++    --pt-product-text-soft:#b8c6d4;
++    --pt-product-text-muted:#93a5b8;
++    --pt-product-accent:#57da8a;
++    --pt-product-accent-bright:#5cdf91;
++    --pt-product-accent-soft:rgba(87,218,138,.1);
++    --pt-product-good:#61dc92;
++    --pt-product-good-soft:rgba(47,182,103,.11);
++    --pt-product-bad:#ff7777;
++    --pt-product-bad-soft:rgba(218,73,73,.11);
++    --pt-product-shadow:none;
++  }
++}
++
++:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],body.dark,[data-theme="dark"]) [data-product-page] {
++  --pt-product-surface:#101d2f;
++  --pt-product-surface-soft:#142238;
++  --pt-product-border:rgba(203,218,232,.14);
++  --pt-product-border-strong:rgba(203,218,232,.22);
++  --pt-product-text:#f4f8fb;
++  --pt-product-text-soft:#b8c6d4;
++  --pt-product-text-muted:#93a5b8;
++  --pt-product-accent:#57da8a;
++  --pt-product-accent-bright:#5cdf91;
++  --pt-product-accent-soft:rgba(87,218,138,.1);
++  --pt-product-good:#61dc92;
++  --pt-product-good-soft:rgba(47,182,103,.11);
++  --pt-product-bad:#ff7777;
++  --pt-product-bad-soft:rgba(218,73,73,.11);
++  --pt-product-shadow:none;
++}
++
++@media (prefers-color-scheme:dark) {
++  [data-product-page] :is(.product-fit-card,.product-pros-cons,.product-recommendation,.product-alternatives,.product-faq,.technical-data,.technical-specs,.product-specs,[class*="technical-data"],[class*="technical-specs"],.alternative-card,.product-alternative-card,[class*="alternative-card"],.score-card,.rating-card,[class*="score-card"],[class*="rating-card"]) {
++    border-color:var(--pt-product-border)!important;
++    color:var(--pt-product-text)!important;
++    background-color:var(--pt-product-surface)!important;
++    box-shadow:none!important;
++  }
++}
++
++:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],body.dark,[data-theme="dark"]) [data-product-page] :is(.product-fit-card,.product-pros-cons,.product-recommendation,.product-alternatives,.product-faq,.technical-data,.technical-specs,.product-specs,[class*="technical-data"],[class*="technical-specs"],.alternative-card,.product-alternative-card,[class*="alternative-card"],.score-card,.rating-card,[class*="score-card"],[class*="rating-card"]) {
++  border-color:var(--pt-product-border)!important;
++  color:var(--pt-product-text)!important;
++  background-color:var(--pt-product-surface)!important;
++  box-shadow:none!important;
++}
++
++/* ============================================================
++   Layout alignment, status cleanup and product-page polish 7.1
++   ============================================================ */
++
++[data-product-page] {
++  width: 100%;
++  max-width: 100%;
++  overflow-x: clip;
++}
++
++[data-product-page] :is(
++  .product-layout,
++  .product-detail-layout,
++  .product-page__layout,
++  .product-shell,
++  [class*="product-layout"],
++  [class*="product-detail-layout"]
++) {
++  min-width: 0;
++}
++
++[data-product-page] :is(
++  .product-main,
++  .product-content,
++  .product-page__content,
++  .product-detail__content,
++  .product-layout__main,
++  [class*="product-main"],
++  [class*="product-content"],
++  [class*="product-layout__main"]
++) {
++  min-width: 0;
++  max-width: 100%;
++}
++
++/* Editorial review is an internal content status, not user-facing copy. */
++[data-product-page] :is(
++  [data-test-status="editorial-review"],
++  [data-review-status="editorial-review"],
++  [data-status="editorial-review"],
++  .test-status--editorial-review,
++  .review-status--editorial-review,
++  .status--editorial-review,
++  .editorial-review,
++  [class*="test-status"],
++  [class*="review-status"]
++) {
++  display: none !important;
++}
++
++/* Keep all primary product modules on one visual axis. */
++[data-product-page] :is(
++  .product-breadcrumbs,
++  .breadcrumbs,
++  [class*="breadcrumb"],
++  .product-hero,
++  .product-intro,
++  .product-summary,
++  .product-identity,
++  .product-gallery,
++  .product-overview,
++  .product-content,
++  .product-main,
++  .product-section,
++  [class*="product-hero"],
++  [class*="product-intro"],
++  [class*="product-summary"],
++  [class*="product-identity"],
++  [class*="product-gallery"],
++  [class*="product-overview"]
++) {
++  width: 100%;
++  max-width: 100%;
++  margin-inline: 0;
++}
++
++[data-product-page] :is(
++  .product-breadcrumbs,
++  .breadcrumbs,
++  [class*="breadcrumb"]
++) {
++  margin-bottom: clamp(1.35rem, 3.5vw, 2.25rem);
++}
++
++[data-product-page] :is(
++  .product-hero,
++  .product-intro,
++  .product-summary,
++  .product-identity,
++  [class*="product-hero"],
++  [class*="product-intro"],
++  [class*="product-summary"],
++  [class*="product-identity"]
++) {
++  border-color: var(--pt-product-border);
++  color: var(--pt-product-text);
++  background: var(--pt-product-surface);
++  box-shadow: var(--pt-product-shadow);
++}
++
++[data-product-page] :is(
++  .product-hero,
++  .product-intro,
++  .product-summary,
++  .product-identity,
++  [class*="product-hero"],
++  [class*="product-intro"],
++  [class*="product-summary"],
++  [class*="product-identity"]
++) :is(h1, h2, h3, strong) {
++  color: var(--pt-product-text) !important;
++}
++
++[data-product-page] :is(
++  .product-hero,
++  .product-intro,
++  .product-summary,
++  .product-identity,
++  [class*="product-hero"],
++  [class*="product-intro"],
++  [class*="product-summary"],
++  [class*="product-identity"]
++) :is(p, small) {
++  color: var(--pt-product-text-soft) !important;
++}
++
++/* Category/manufacturer pills stay compact and readable in both themes. */
++[data-product-page] :is(
++  .product-chip,
++  .product-badge,
++  .product-tag,
++  [class*="product-chip"],
++  [class*="product-badge"],
++  [class*="product-tag"]
++) {
++  min-height: 34px;
++  padding: 0.42rem 0.72rem;
++  border: 1px solid color-mix(in srgb, var(--pt-product-accent) 24%, var(--pt-product-border));
++  border-radius: 999px;
++  color: var(--pt-product-accent) !important;
++  background: var(--pt-product-accent-soft);
++  font-size: 0.72rem;
++  font-weight: 850;
++  line-height: 1;
++}
++
++/* Reduce empty gallery stage while preserving uncropped product imagery. */
++[data-product-page] :is(
++  .product-gallery__stage,
++  .product-gallery__main,
++  .product-gallery__viewport,
++  .gallery-stage,
++  .gallery-main,
++  [class*="gallery__stage"],
++  [class*="gallery__main"],
++  [class*="gallery__viewport"]
++) {
++  width: 100%;
++  min-height: 0;
++  aspect-ratio: 16 / 10;
++  padding: clamp(0.65rem, 2vw, 1rem);
++  overflow: hidden;
++  border-radius: 1rem;
++  background: #f7f8f6;
++}
++
++[data-product-page] :is(
++  .product-gallery__stage,
++  .product-gallery__main,
++  .product-gallery__viewport,
++  .gallery-stage,
++  .gallery-main,
++  [class*="gallery__stage"],
++  [class*="gallery__main"],
++  [class*="gallery__viewport"]
++) :is(picture, img) {
++  width: 100%;
++  height: 100%;
++}
++
++[data-product-page] :is(
++  .product-gallery__stage,
++  .product-gallery__main,
++  .product-gallery__viewport,
++  .gallery-stage,
++  .gallery-main,
++  [class*="gallery__stage"],
++  [class*="gallery__main"],
++  [class*="gallery__viewport"]
++) img {
++  display: block;
++  object-fit: contain;
++  object-position: center;
++}
++
++[data-product-page] :is(
++  .gallery-arrow,
++  .product-gallery__arrow,
++  [class*="gallery-arrow"],
++  [class*="gallery__arrow"]
++) {
++  top: 50%;
++  transform: translateY(-50%);
++}
++
++/* Sticky CTA stays centered, compact and above mobile browser UI. */
++[data-product-page] :is(
++  .sticky-product-cta,
++  .product-sticky-cta,
++  [class*="sticky-cta"]
++) {
++  right: max(0.85rem, env(safe-area-inset-right));
++  bottom: max(0.85rem, env(safe-area-inset-bottom));
++  left: max(0.85rem, env(safe-area-inset-left));
++  width: auto;
++  max-width: 62rem;
++  margin-inline: auto;
++}
++
++[data-product-page] :is(
++  a,
++  button,
++  summary,
++  input,
++  select,
++  textarea
++):focus-visible {
++  outline: 3px solid color-mix(in srgb, var(--pt-product-accent) 35%, transparent);
++  outline-offset: 3px;
++}
++
++@media (max-width: 760px) {
++  [data-product-page] {
++    padding-inline: max(1rem, env(safe-area-inset-left));
++  }
++
++  [data-product-page] :is(
++    .product-layout,
++    .product-detail-layout,
++    .product-page__layout,
++    .product-shell,
++    [class*="product-layout"],
++    [class*="product-detail-layout"]
++  ) {
++    display: grid !important;
++    width: 100% !important;
++    max-width: 100% !important;
++    grid-template-columns: minmax(0, 1fr) !important;
++    margin-inline: 0 !important;
++    padding-inline: 0 !important;
++  }
++
++  [data-product-page] :is(
++    .product-main,
++    .product-content,
++    .product-page__content,
++    .product-detail__content,
++    .product-layout__main,
++    [class*="product-main"],
++    [class*="product-content"],
++    [class*="product-layout__main"]
++  ) {
++    width: 100% !important;
++    max-width: 100% !important;
++    grid-column: 1 / -1 !important;
++    margin-inline: 0 !important;
++    padding-inline: 0 !important;
++    transform: none !important;
++  }
++
++  [data-product-page] :is(
++    .product-hero,
++    .product-intro,
++    .product-summary,
++    .product-identity,
++    .product-gallery,
++    [class*="product-hero"],
++    [class*="product-intro"],
++    [class*="product-summary"],
++    [class*="product-identity"],
++    [class*="product-gallery"]
++  ) {
++    width: 100% !important;
++    max-width: none !important;
++    margin-inline: 0 !important;
++  }
++
++  [data-product-page] :is(
++    .product-hero,
++    .product-intro,
++    .product-summary,
++    .product-identity,
++    [class*="product-hero"],
++    [class*="product-intro"],
++    [class*="product-summary"],
++    [class*="product-identity"]
++  ) {
++    padding: 1.15rem;
++    border-radius: 1.15rem;
++  }
++
++  [data-product-page] :is(
++    .product-hero,
++    .product-intro,
++    .product-summary,
++    .product-identity,
++    [class*="product-hero"],
++    [class*="product-intro"],
++    [class*="product-summary"],
++    [class*="product-identity"]
++  ) h1 {
++    font-size: clamp(2rem, 8.5vw, 2.8rem);
++    line-height: 1.02;
++    letter-spacing: -0.045em;
++  }
++
++  [data-product-page] :is(
++    .product-gallery__stage,
++    .product-gallery__main,
++    .product-gallery__viewport,
++    .gallery-stage,
++    .gallery-main,
++    [class*="gallery__stage"],
++    [class*="gallery__main"],
++    [class*="gallery__viewport"]
++  ) {
++    aspect-ratio: 16 / 10;
++  }
++}
++
++@media (max-width: 390px) {
++  [data-product-page] {
++    padding-inline: max(0.8rem, env(safe-area-inset-left));
++  }
++
++  [data-product-page] :is(
++    .product-hero,
++    .product-intro,
++    .product-summary,
++    .product-identity,
++    [class*="product-hero"],
++    [class*="product-intro"],
++    [class*="product-summary"],
++    [class*="product-identity"]
++  ) {
++    padding: 1rem;
++  }
++}
++
++@media (prefers-color-scheme: dark) {
++  [data-product-page] :is(
++    .product-hero,
++    .product-intro,
++    .product-summary,
++    .product-identity,
++    .product-gallery,
++    [class*="product-hero"],
++    [class*="product-intro"],
++    [class*="product-summary"],
++    [class*="product-identity"],
++    [class*="product-gallery"]
++  ) {
++    border-color: var(--pt-product-border) !important;
++    color: var(--pt-product-text) !important;
++    background-color: var(--pt-product-surface) !important;
++    box-shadow: none !important;
++  }
++}
++
++:is(
++  html.dark,
++  html[data-theme="dark"],
++  html[data-color-scheme="dark"],
++  body.dark,
++  [data-theme="dark"]
++) [data-product-page] :is(
++  .product-hero,
++  .product-intro,
++  .product-summary,
++  .product-identity,
++  .product-gallery,
++  [class*="product-hero"],
++  [class*="product-intro"],
++  [class*="product-summary"],
++  [class*="product-identity"],
++  [class*="product-gallery"]
++) {
++  border-color: var(--pt-product-border) !important;
++  color: var(--pt-product-text) !important;
++  background-color: var(--pt-product-surface) !important;
++  box-shadow: none !important;
++}
++/* End PT product design system 2.1 / 7.1 */

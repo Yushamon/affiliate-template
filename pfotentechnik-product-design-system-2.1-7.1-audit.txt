@@ -1,0 +1,104 @@
+PfotenTechnik Product Design System 2.1 / 7.1
+================================================
+
+Produktseite: apps\pfotentechnik\src\pages\produkt\[product].astro
+Design-CSS: apps\pfotentechnik\src\styles\pfotentechnik-design-system.css
+Produktseiten-Markierung oder Status-Cleanup ergänzt: ja
+
+Neue Korrekturen:
+- mobile Produktinhalte auf einer gemeinsamen linken Achse
+- persistierende Desktop-Spalten auf Mobile entfernt
+- Editorial Review vollständig aus der sichtbaren UI entfernt
+- Hero, Summary und Galerie in Dark Mode vereinheitlicht
+- Galerie-Stage auf 16:10 verkürzt
+- Breadcrumb-/Hero-Abstand reduziert
+- Sticky CTA zentriert und Safe-Area-fähig
+- Chips, Fokuszustände und mobile Überschriften verbessert
+
+Bereits enthalten:
+- Eignung / weniger geeignet
+- Vorteile / Nachteile
+- redaktionelle Empfehlung
+- technische Daten
+- Alternativen
+- FAQ
+- Score, Galerie und Sticky CTA
+- Light und Dark Mode
+
+Dateien mit Statusbezug:
+- apps\pfotentechnik\src\components\ProductTrustPanel.astro
+- apps\pfotentechnik\src\components\product-standard-2\ProductRenderer.astro
+- apps\pfotentechnik\src\components\product-standard-2\TrustBar.astro
+- apps\pfotentechnik\src\content\products\aqara-smart-pet-feeder-c1.md
+- apps\pfotentechnik\src\content\products\cat-mate-335-pet-fountain.md
+- apps\pfotentechnik\src\content\products\cat-mate-c200.md
+- apps\pfotentechnik\src\content\products\cat-mate-c300.md
+- apps\pfotentechnik\src\content\products\cat-mate-c500.md
+- apps\pfotentechnik\src\content\products\cat-mate-shell-fountain.md
+- apps\pfotentechnik\src\content\products\catit-pixi-smart-6-meal-feeder.md
+- apps\pfotentechnik\src\content\products\catit-pixi-vision-smart-feeder.md
+- apps\pfotentechnik\src\content\products\garmin-alpha-t-20.md
+- apps\pfotentechnik\src\content\products\garmin-alpha-tt-25.md
+- apps\pfotentechnik\src\content\products\honeyguardian-a305d.md
+- apps\pfotentechnik\src\content\products\honeyguardian-a68.md
+- apps\pfotentechnik\src\content\products\honeyguardian-smart-pet-feeder-s305d.md
+- apps\pfotentechnik\src\content\products\imipaw-3l-automatic-cat-feeder.md
+- apps\pfotentechnik\src\content\products\oneisall-2-2l-cordless-fountain.md
+- apps\pfotentechnik\src\content\products\oneisall-2-in-1-feeder-water.md
+- apps\pfotentechnik\src\content\products\oneisall-3-2l-cordless-fountain.md
+- apps\pfotentechnik\src\content\products\oneisall-3-5l-cordless-fountain.md
+- apps\pfotentechnik\src\content\products\oneisall-5l-automatic-cat-feeder.md
+- apps\pfotentechnik\src\content\products\oneisall-7l-dog-water-fountain.md
+- apps\pfotentechnik\src\content\products\paj-pet-finder-4g-mini.md
+- apps\pfotentechnik\src\content\products\pawbby-smart-pet-feeder.md
+- apps\pfotentechnik\src\content\products\pawsync-smart-pet-feeder.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-3-pro-uvc.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-5-mini.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-max-2-uvc.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-max-cordless.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-solo-2-fountain.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-solo-se.md
+- apps\pfotentechnik\src\content\products\petkit-eversweet-ultra.md
+- apps\pfotentechnik\src\content\products\petkit-fresh-element-infinity.md
+- apps\pfotentechnik\src\content\products\petkit-fresh-element-solo.md
+- apps\pfotentechnik\src\content\products\petkit-yumshare-dual-hopper.md
+- apps\pfotentechnik\src\content\products\petkit-yumshare-dual.md
+- apps\pfotentechnik\src\content\products\petkit-yumshare-solo-2.md
+- apps\pfotentechnik\src\content\products\petkit-yumshare-solo.md
+- apps\pfotentechnik\src\content\products\petlibro-air-automatic-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-air-wifi-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-capsule-dog-fountain.md
+- apps\pfotentechnik\src\content\products\petlibro-dockstream-2-smart.md
+- apps\pfotentechnik\src\content\products\petlibro-dockstream-cordless.md
+- apps\pfotentechnik\src\content\products\petlibro-dockstream-rfid-smart.md
+- apps\pfotentechnik\src\content\products\petlibro-glacier-ultrafiltration.md
+- apps\pfotentechnik\src\content\products\petlibro-granary-camera-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-granary-dual-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-granary-wifi-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-one-rfid-smart-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-polar-wet-food-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-space-smart-feeder.md
+- apps\pfotentechnik\src\content\products\petlibro-stainless-steel-fountain.md
+- apps\pfotentechnik\src\content\products\petsafe-freshfeed-refrigerated-feeder.md
+- apps\pfotentechnik\src\content\products\petsafe-healthy-pet-simply-feed.md
+- apps\pfotentechnik\src\content\products\petsafe-smart-feed-2.md
+- apps\pfotentechnik\src\content\products\surefeed-microchip-pet-feeder-connect.md
+- apps\pfotentechnik\src\content\products\surefeed-microchip-pet-feeder.md
+- apps\pfotentechnik\src\content\products\tractive-cat-6-mini.md
+- apps\pfotentechnik\src\content\products\tractive-dog-6-xl.md
+- apps\pfotentechnik\src\content\products\tractive-dog-6.md
+- apps\pfotentechnik\src\content\products\weenect-xs.md
+- apps\pfotentechnik\src\content\products\weenect-xt.md
+- apps\pfotentechnik\src\content\products\wopet-cube-air-ca10.md
+- apps\pfotentechnik\src\content\products\wopet-heritage-view-camera-feeder.md
+- apps\pfotentechnik\src\content\products\wopet-patrol-f07-pro.md
+- apps\pfotentechnik\src\content\products\wopet-pioneer-f01-plus.md
+- apps\pfotentechnik\src\content\products\xiaomi-smart-pet-food-feeder-2.md
+- apps\pfotentechnik\src\content\products\xiaomi-smart-pet-fountain-2.md
+- apps\pfotentechnik\src\content\schema\product.ts
+- apps\pfotentechnik\src\lib\product-engine\normalizeProduct.ts
+- apps\pfotentechnik\src\lib\product-engine\productQuality.ts
+- apps\pfotentechnik\src\lib\product-engine\types.ts
+- apps\pfotentechnik\src\lib\seo\advisor\loadContent.ts
+- apps\pfotentechnik\src\pages\produkt\[product].astro
+- apps\pfotentechnik\src\styles\pfotentechnik-design-system.css

@@ -446,7 +446,7 @@ const everydayCriteria = [
 
   <Breadcrumbs items={breadcrumbs} />
 
-  <main class="product-detail pt-product-detail">
+  <main class="product-detail pt-product-detail" data-product-page>
     <AutoLinkContent
       definitions={internalLinkDefinitions}
       sourcePath={canonical}
@@ -536,4 +536,33 @@ const everydayCriteria = [
 
     <RelatedArticles items={relatedItems} />
   </main>
+
+<script is:inline data-pt-editorial-status-cleanup>
+  (() => {
+    const root = document.querySelector('[data-product-page]');
+    if (!root) return;
+
+    const hiddenLabels = new Set([
+      'editorial review',
+      'editorial-review',
+      'redaktionelle bewertung',
+      'redaktionell bewertet'
+    ]);
+
+    root.querySelectorAll(
+      '[data-test-status], [data-review-status], [class*="test-status"], [class*="review-status"], [class*="status"]'
+    ).forEach((element) => {
+      const value = (
+        element.getAttribute('data-test-status') ||
+        element.getAttribute('data-review-status') ||
+        element.textContent ||
+        ''
+      ).trim().toLocaleLowerCase('de');
+
+      if (hiddenLabels.has(value)) {
+        element.remove();
+      }
+    });
+  })();
+</script>
 </ProjectLayout>
