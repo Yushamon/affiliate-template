@@ -14,12 +14,8 @@ import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
-import { addAmazonTrackingId } from "@affiliate-core/affiliate";
-import { projectConfig, site } from "../../project.config";
+import { site } from "../../project.config";
 
-import {
-  getAlternativeRecommendations
-} from "@app/domain/productAlternatives";
 import {
   getProductBreadcrumbs,
   getRelatedContent
@@ -89,12 +85,6 @@ const internalLinkDefinitions = getInternalLinkDefinitions({
 });
 const sourceContexts = getSourceContexts(contentProduct);
 
-const alternativeRecommendations =
-  getAlternativeRecommendations(
-    contentEntry,
-    allProducts,
-    3
-  );
 
 const relatedEntries = await getRelatedContent({
   currentSlug: contentProduct.slug,
@@ -152,58 +142,10 @@ const heroImageAlt =
   contentProduct.images.hero.alt ??
   pageTitle;
 
-const reviewProduct = {
-        name: contentProduct.title,
-        manufacturerLabel:
-          contentProduct.manufacturer.name,
-        category:
-          contentProduct.category.label,
-        recommendation:
-          contentProduct.recommendation,
-        rating: contentProduct.rating,
-        score:
-          contentProduct.score ?? 0,
-        capacity:
-          contentProduct.capacity,
-        expandable:
-          contentProduct.expandable,
-        useCase:
-          contentProduct.useCase,
-        pros:
-          contentProduct.strengths,
-        cons:
-          contentProduct.weaknesses,
-        bestFor:
-          contentProduct.decision.bestFor,
-        notFor:
-          contentProduct.decision.attention,
-        ratings:
-          contentProduct.ratings,
-        specs:
-          contentProduct.specs,
-        review:
-          contentProduct.review,
-        images: {
-          hero: {
-            src: heroImage,
-            alt: heroImageAlt
-          },
-          gallery:
-            contentProduct.images.gallery
-        },
-        conversion:
-          contentProduct.conversion,
-        affiliate:
-          contentProduct.affiliate
-            ? {
-                ...contentProduct.affiliate,
-                url: addAmazonTrackingId(
-                  contentProduct.affiliate.url,
-                  projectConfig.affiliate.amazon.trackingId
-                )
-              }
-            : undefined
-      };
+const normalizedProductInput = {
+  slug: contentEntry.slug,
+  data: contentProduct
+};
 
 const optimizedOgImage = await getImage({
   src: heroImage,
@@ -390,13 +332,9 @@ const everydayCriteria = [
       sourceContexts={sourceContexts}
       maxLinksPerPage={5}
     >
-      <ProductRenderer
-        product={{
-          slug: contentEntry.slug,
-          data: contentProduct
-        }}
-        reviewProduct={reviewProduct}
-        alternativeRecommendations={alternativeRecommendations}
+            <ProductRenderer
+        product={normalizedProductInput}
+        debug={import.meta.env.DEV}
       />
     </AutoLinkContent>
 
