@@ -1,137 +1,18 @@
----
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+#!/usr/bin/env python3
+from __future__ import annotations
 
-import {
-  getContentByHub
-} from "@app/domain/content";
+import re
+import shutil
+import subprocess
+import sys
+from datetime import datetime
+from pathlib import Path
 
-const manufacturers =
-  await getContentByHub(
-    "hersteller"
-  );
----
+VERSION = "4.3.0"
+START = "/* PT manufacturer media and score 4.3.0 */"
+END = "/* End PT manufacturer media and score 4.3.0 */"
 
-<ProjectLayout
-  title="Hersteller für smarte Haustiertechnik"
-  seoTitle="Hersteller im Überblick"
-  description="Alle Hersteller für smarte Haustiertechnik mit Bewertungen, Produktschwerpunkten und Erfahrungen."
-  canonical="/hersteller/"
->
-
-<section class="manufacturer-hub-hero">
-
-  <span class="manufacturer-hub-eyebrow">
-    Hersteller
-  </span>
-
-  <h1>
-    Welcher Hersteller passt zu dir?
-  </h1>
-
-  <p>
-    Jede Marke setzt andere Schwerpunkte.
-    Manche Hersteller konzentrieren sich auf
-    Kamera und App, andere auf RFID,
-    Nassfutter oder besonders einfache Bedienung.
-  </p>
-
-</section>
-
-<div
-  class="manufacturer-divider"
-  aria-hidden="true"
->
-  <span></span>
-  <strong>🐾</strong>
-  <span></span>
-</div>
-
-<section class="manufacturer-grid">
-
-  {
-    manufacturers.map(
-      (manufacturer) => (
-
-        <a
-          class="manufacturer-card"
-          href={manufacturer.href}
-        >
-
-          {
-            manufacturer.image && (
-
-              <div class="manufacturer-card-image">
-
-                <OptimizedImage
-                  src={manufacturer.image}
-                  alt={manufacturer.title}
-                  width={640}
-                  height={420}
-                  layout="constrained"
-                />
-
-              </div>
-
-            )
-          }
-
-          <div class="manufacturer-card-content">
-
-            <span class="manufacturer-card-eyebrow">
-
-              {manufacturer.icon ?? "🏭"}
-
-              Hersteller
-
-            </span>
-
-            <h2>
-
-              {manufacturer.hubTitle}
-
-            </h2>
-
-            <p>
-
-              {manufacturer.hubDescription}
-
-            </p>
-
-            {
-              manufacturer.rating && (
-
-                <div class="manufacturer-rating">
-
-                  ⭐
-
-                  {manufacturer.rating.toFixed(1)}
-
-                  {" / 5"}
-
-                </div>
-
-              )
-            }
-
-            <span class="manufacturer-link">
-
-              Hersteller ansehen
-
-              →
-
-            </span>
-
-          </div>
-
-        </a>
-
-      )
-    )
-  }
-
-</section>
-
+PATCH = r'''
 <style is:global>
 /* PT manufacturer media and score 4.3.0 */
 
@@ -365,243 +246,97 @@ const manufacturers =
   observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
 </script>
-
-</ProjectLayout>
-
-<style>
-
-.manufacturer-hub-hero{
-
-max-width:860px;
-
-margin:0 auto 3rem;
-
-text-align:center;
-
-}
-
-.manufacturer-hub-eyebrow{
-
-display:inline-flex;
-
-margin-bottom:.6rem;
-
-color:#18743b;
-
-font-size:.78rem;
-
-font-weight:900;
-
-letter-spacing:.08em;
-
-text-transform:uppercase;
-
-}
-
-.manufacturer-hub-hero h1{
-
-margin:0 0 1rem;
-
-font-size:clamp(2.8rem,6vw,4.8rem);
-
-line-height:1;
-
-letter-spacing:-.05em;
-
-}
-
-.manufacturer-hub-hero p{
-
-max-width:60ch;
-
-margin:0 auto;
-
-line-height:1.75;
-
-color:#647579;
-
-}
-
-.manufacturer-divider{
-
-display:grid;
-
-width:min(34rem,calc(100vw - 3rem));
-
-margin:3rem auto;
-
-grid-template-columns:minmax(2rem,1fr) auto minmax(2rem,1fr);
-
-align-items:center;
-
-gap:1rem;
-
-color:#18743b;
-
-}
-
-.manufacturer-divider span{
-
-height:1px;
-
-background:currentColor;
-
-opacity:.3;
-
-}
-
-.manufacturer-divider strong{
-
-font-size:1.5rem;
-
-}
-
-.manufacturer-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
-
-gap:1.5rem;
-
-}
-
-.manufacturer-card{
-
-display:flex;
-
-flex-direction:column;
-
-overflow:hidden;
-
-border:1px solid #dce5e3;
-
-border-radius:1.3rem;
-
-background:#fff;
-
-text-decoration:none;
-
-color:inherit;
-
-transition:.18s;
-
-box-shadow:0 12px 30px rgba(13,48,43,.05);
-
-}
-
-.manufacturer-card:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 18px 40px rgba(13,48,43,.09);
-
-}
-
-.manufacturer-card-image{
-
-aspect-ratio:16/9;
-
-overflow:hidden;
-
-background:#f7f8f7;
-
-}
-
-.manufacturer-card-image img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-}
-
-.manufacturer-card-content{
-
-display:flex;
-
-padding:1.4rem;
-
-flex:1;
-
-flex-direction:column;
-
-}
-
-.manufacturer-card-eyebrow{
-
-display:inline-flex;
-
-align-items:center;
-
-gap:.45rem;
-
-margin-bottom:.7rem;
-
-font-size:.72rem;
-
-font-weight:900;
-
-letter-spacing:.08em;
-
-text-transform:uppercase;
-
-color:#18743b;
-
-}
-
-.manufacturer-card-content h2{
-
-margin:0 0 .8rem;
-
-font-size:1.7rem;
-
-line-height:1.2;
-
-}
-
-.manufacturer-card-content p{
-
-margin:0;
-
-color:#647579;
-
-line-height:1.65;
-
-}
-
-.manufacturer-rating{
-
-margin-top:1rem;
-
-font-weight:800;
-
-color:#18743b;
-
-}
-
-.manufacturer-link{
-
-margin-top:auto;
-
-padding-top:1.4rem;
-
-font-weight:800;
-
-color:#0f5a2b;
-
-}
-
-@media(max-width:760px){
-
-.manufacturer-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-</style>
+'''
+
+def repo_root() -> Path:
+    proc = subprocess.run(
+        ["git", "rev-parse", "--show-toplevel"],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode:
+        raise RuntimeError("Bitte den Installer im Root des Git-Repositorys ausführen.")
+    return Path(proc.stdout.strip())
+
+def remove_old(text: str) -> str:
+    pattern = re.compile(re.escape(START) + r"[\s\S]*?" + re.escape(END))
+    text = pattern.sub("", text)
+    return re.sub(r"<style is:global>\s*</style>", "", text)
+
+def manufacturer_routes(root: Path) -> list[Path]:
+    folder = root / "apps/pfotentechnik/src/pages/hersteller"
+    if not folder.exists():
+        raise RuntimeError("Hersteller-Routenordner wurde nicht gefunden.")
+
+    files = sorted(folder.glob("*.astro"))
+    dynamic = [p for p in files if "[" in p.name]
+    index = [p for p in files if p.name == "index.astro"]
+
+    selected = dynamic + index
+    if not selected:
+        raise RuntimeError("Keine Herstellerseite oder Herstellerübersicht gefunden.")
+    return selected
+
+def inject(path: Path) -> None:
+    text = remove_old(path.read_text(encoding="utf-8"))
+
+    if "</ProjectLayout>" in text:
+        text = text.replace("</ProjectLayout>", PATCH.strip() + "\n\n</ProjectLayout>", 1)
+    elif "</BaseLayout>" in text:
+        text = text.replace("</BaseLayout>", PATCH.strip() + "\n\n</BaseLayout>", 1)
+    elif "</Layout>" in text:
+        text = text.replace("</Layout>", PATCH.strip() + "\n\n</Layout>", 1)
+    else:
+        text = text.rstrip() + "\n\n" + PATCH.strip() + "\n"
+
+    path.write_text(text, encoding="utf-8")
+
+def locate_npm() -> str | None:
+    return shutil.which("npm.cmd") or shutil.which("npm.exe") or shutil.which("npm")
+
+def main() -> int:
+    root = repo_root()
+    files = manufacturer_routes(root)
+
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    backup = root / ".patch-backups" / f"manufacturer-media-score-{VERSION}-{stamp}"
+
+    for source in files:
+        target = backup / source.relative_to(root)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+
+    try:
+        for path in files:
+            inject(path)
+            print(f"Angepasst: {path.relative_to(root)}")
+
+        npm = locate_npm()
+        if npm:
+            print(f"\nBuild mit {npm}")
+            result = subprocess.run([npm, "run", "build:pfotentechnik"], cwd=root, shell=False)
+            if result.returncode:
+                raise RuntimeError("Build fehlgeschlagen.")
+        else:
+            print(
+                "\nHinweis: npm wurde von Python nicht gefunden. "
+                "Die Änderungen bleiben installiert.\n"
+                "Bitte manuell ausführen:\n"
+                "  npm run build:pfotentechnik\n"
+            )
+
+    except Exception as error:
+        for source in files:
+            saved = backup / source.relative_to(root)
+            if saved.exists():
+                shutil.copy2(saved, source)
+        print("\nPatch fehlgeschlagen; Dateien wurden zurückgesetzt.", file=sys.stderr)
+        print(f"Ursache: {error}", file=sys.stderr)
+        raise
+
+    print("\nPatch erfolgreich installiert.")
+    print(f"Backup: {backup.relative_to(root)}")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())
