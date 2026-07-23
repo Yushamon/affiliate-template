@@ -9,7 +9,7 @@ productStatus: "unknown"
 
 description: "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde."
 
-recommendation: "Premium-Futterautomat mit Kamera für Nutzer, die ihre Fütterung flexibel aus der Ferne steuern möchten."
+recommendation: "Premium-Futterautomat mit 1080p-Kamera, App-Steuerung und intelligenter Portionierung für Katzen und kleine Hunde. Besonders geeignet für Nutzer, die Fütterung und Tierbeobachtung aus der Ferne kombinieren möchten."
 
 manufacturer:
   key: petkit
@@ -22,7 +22,7 @@ category:
   path: /smarte-futterautomaten/
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-07-23"
 
 author:
   name: PfotenTechnik Redaktion
@@ -70,7 +70,7 @@ affiliate:
 
   label: "Aktuellen Preis prüfen"
 
-  url: "https://www.amazon.de/s?k=PETKIT%20YumShare%20Solo%202%20Futterautomat"
+  url: "https://amzn.to/4fM0YNrc"
 
 rating: 4.1
 score: 82
@@ -113,14 +113,10 @@ decision:
 review:
 
   summary: >
-    Der PETKIT YumShare Solo 2 kombiniert zuverlässige
-    Portionierung mit einer hochwertigen Kamera und einer
-    sehr gelungenen App.
+    Der PETKIT YumShare Solo 2 kombiniert eine präzise Trockenfutter-Ausgabe mit einer 1080p-Kamera, Zwei-Wege-Audio und einer modernen App. Im Alltag überzeugt insbesondere die Kombination aus Fernzugriff, zuverlässiger Zeitplanung und hochwertiger Verarbeitung.
 
   verdict: >
-    Für Nutzer, die ihr Haustier auch aus der Ferne im Blick
-    behalten möchten, gehört der YumShare Solo 2 aktuell zu
-    den überzeugendsten Komplettlösungen.
+    Wer einen hochwertigen Smart-Futterautomaten mit Kamera sucht, erhält eine der derzeit umfangreichsten Lösungen für Katzen und kleine Hunde. Der höhere Preis wird durch Ausstattung, App und Bedienkomfort weitgehend gerechtfertigt.
 
 strengths:
 
@@ -212,8 +208,8 @@ specs:
 
   - label: Geeignet für
     value: Katzen und kleine Hunde
-  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
-  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Napf", value: "Edelstahlnapf" }
+  - { label: "Reinigung", value: "Herausnehmbarer Edelstahlnapf und leicht zugänglicher Futterweg" }
   - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
   - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
