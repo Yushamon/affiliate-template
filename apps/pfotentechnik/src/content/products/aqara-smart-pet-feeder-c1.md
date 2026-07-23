@@ -75,12 +75,68 @@ comparisonFilters:
 faq:
   - { question: "Funktioniert der Aqara C1 ohne Internet?", answer: "Bereits gespeicherte Fütterungspläne sollen lokal weiterlaufen. Für Fernzugriff und viele Automationen ist der Aqara Hub erforderlich." }
   - { question: "Misst der C1 wirklich Gramm?", answer: "Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage." }
+  - { question: "Benötigt der Aqara C1 zwingend einen Hub?", answer: "Für Einrichtung, Fernzugriff und viele Automationen wird ein kompatibler Aqara Hub benötigt." }
+  - { question: "Ist der C1 für Nassfutter geeignet?", answer: "Nein. Das Gerät ist für Trockenfutter ausgelegt." }
+  - { question: "Funktionieren Fütterungspläne bei Internetausfall?", answer: "Bereits gespeicherte Zeitpläne laufen lokal weiter. Fernzugriff ist davon ausgenommen." }
 features: ["Zigbee 3.0", "Lokale Fütterungspläne", "Smart-Home-Szenen", "Batterie-Backup"]
 priceCategory: midrange
 useCase: "Smart-Home-Futterautomat"
 capacity: "4 Liter"
 ---
 
-Der Aqara C1 ist nicht der jüngste Automat im Feld, aber 2026 weiterhin eines der wenigen ernsthaften Zigbee-Modelle. Seine Stärke ist nicht eine lange Featureliste, sondern die Kombination aus lokalen Plänen, Batterie-Reserve und Smart-Home-Szenen.
+Der Aqara Smart Pet Feeder C1 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), richtet sich jedoch vor allem an Nutzer des Aqara-Ökosystems. Statt möglichst vieler Komfortfunktionen stehen lokale Zeitpläne, Zigbee-Automationen und ein Batterie-Backup im Mittelpunkt. Wer bereits Aqara-Komponenten nutzt, erhält dadurch einen besonders zuverlässigen Futterautomaten auch dann, wenn die Internetverbindung ausfällt.
+
+## Für wen eignet sich der Aqara C1?
+
+Der C1 ist eine gute Wahl für Katzen sowie kleine bis mittelgroße Hunde, die überwiegend Trockenfutter erhalten. Besonders interessant ist das Modell für Smart-Home-Nutzer, die Fütterungen mit Sensoren, Zeitplänen oder anderen Aqara-Geräten kombinieren möchten. Wer dagegen eine integrierte Kamera, Mikrochip-Erkennung oder eine unabhängige WLAN-Lösung sucht, sollte andere Modelle vergleichen.
+
+## Das solltest du vor dem Kauf wissen
+
+| Gut geeignet | Weniger geeignet |
+| --- | --- |
+| Bestehendes Aqara Smart Home | Nutzung ohne Hub |
+| Lokale Zeitpläne | Nassfutter |
+| Zigbee-Automationen | Kameraüberwachung |
+| Batterie-Backup | Grammsichere Portionierung |
+
+## Warum Zigbee hier sinnvoll ist
+
+Im Gegensatz zu vielen WLAN-Futterautomaten bleiben gespeicherte Zeitpläne lokal verfügbar. Dadurch funktionieren automatische Fütterungen auch bei Internetproblemen weiter. Voraussetzung ist allerdings ein kompatibler Aqara Hub für Einrichtung, Fernzugriff und Smart-Home-Automationen.
+
+## Unterschiede zu ähnlichen Modellen
+
+* **Xiaomi Smart Pet Food Feeder 2:** WLAN statt Zigbee, einfacher ohne Smart-Home-Hub.
+* **PETLIBRO Air WiFi:** Direkte WLAN-Anbindung, weniger Smart-Home-Integration.
+* **PawSync Smart Pet Feeder:** Fokus auf klassische App-Steuerung statt Automationen.
+
+## Redaktionelles Fazit
+
+Der Aqara Smart Pet Feeder C1 ist kein Universal-Futterautomat für jeden Haushalt. Seine größte Stärke liegt in der engen Einbindung in das Aqara-Ökosystem. Wer bereits Zigbee-Geräte nutzt, erhält eine zuverlässige Lösung mit lokalen Zeitplänen und Batterie-Backup. Ohne vorhandenen Hub verliert das Gerät dagegen einen Teil seines Mehrwerts.
+
+## Smart Home im Alltag
+
+Der größte Unterschied zu vielen WLAN-Futterautomaten liegt nicht in der Fütterung selbst, sondern in den Automationen. Innerhalb des Aqara-Ökosystems lässt sich der C1 beispielsweise mit Türsensoren, Bewegungsmeldern oder Zeitplänen kombinieren. So können Routinen wie ein Abwesenheitsmodus, Benachrichtigungen oder gekoppelte Smart-Home-Szenen eingerichtet werden. Die konkrete Umsetzung hängt von den vorhandenen Geräten und der gewählten Plattform ab.
+
+## Zigbee oder WLAN?
+
+| Zigbee (Aqara C1) | WLAN-Futterautomat |
+| --- | --- |
+| Lokale Zeitpläne | Meist Cloud-abhängig |
+| Geringer Energieverbrauch | Direkte Verbindung zum Router |
+| Smart-Home-Automationen | Einfachere Ersteinrichtung |
+| Hub erforderlich | Kein Hub nötig |
+
+## Portionskalibrierung
+
+Die Portionsgröße basiert nicht auf einer integrierten Waage. Stattdessen gibt der Automat eine definierte Menge Trockenfutter pro Portion aus. Da Größe, Form und Dichte der Kroketten variieren, empfiehlt es sich, mehrere Portionen abzuwiegen und den tatsächlichen Durchschnitt zu ermitteln. Nach einem Futterwechsel sollte die Kalibrierung erneut überprüft werden.
+
+## Mehrkatzenhaushalt
+
+Der Aqara C1 erkennt einzelne Tiere nicht. Leben mehrere Katzen zusammen, kann dominantes Verhalten dazu führen, dass ein Tier mehr Futter aufnimmt als vorgesehen. In solchen Haushalten sind Modelle mit Mikrochip-Erkennung häufig besser geeignet.
+
+## Redaktionelle Einordnung
+
+Aus redaktioneller Sicht richtet sich der Aqara C1 an Nutzer, die ihr Smart Home bereits mit Aqara oder Matter erweitern und Wert auf lokale Abläufe legen. Wer lediglich einen per App steuerbaren Futterautomaten sucht, findet oft günstigere WLAN-Modelle. Wer dagegen ein stabiles Zigbee-System betreibt, profitiert von der engen Integration und der hohen Ausfallsicherheit lokaler Zeitpläne.
+
 
 Quellen: [Aqara Produktseite](https://www.aqara.com/eu/product/smart-pet-feeder-c1/), [Aqara FAQ](https://www.aqara.com/eu/product/smart-pet-feeder-c1/faq/) und [aktuelle Nutzererfahrungen](https://www.reddit.com/r/Aqara/comments/1i73xau/aqara_pet_feeder/).
