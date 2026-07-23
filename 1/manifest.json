@@ -1,0 +1,17 @@
+{
+  "name": "pfotentechnik-theme-kaufberatung-8.0.2",
+  "repository": "Yushamon/affiliate-template",
+  "baselineCommit": "66f0b597e5b313273dcd1a654dd6f18477f80574",
+  "createdAt": "2026-07-23",
+  "replaces": [
+    "8.0",
+    "8.0.1"
+  ],
+  "strategy": "frontmatter-and-closing-element structural patch; no exact text anchors",
+  "files": [
+    "apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css",
+    "apps/pfotentechnik/src/components/SiteRuntimeFixes.astro",
+    "apps/pfotentechnik/src/pages/kaufberatung.astro",
+    "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
+  ]
+}

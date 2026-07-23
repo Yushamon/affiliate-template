@@ -14,8 +14,6 @@ const canonical =
   requestedCanonical === "/" || requestedCanonical.endsWith("/")
     ? requestedCanonical
     : `${requestedCanonical}/`;
-import "../styles/pfotentechnik-theme-fixes.css";
-import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
 ---
 
 <AffiliateLayout
@@ -26,5 +24,4 @@ import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
 >
   <slot />
   <ImageLightbox />
-<SiteRuntimeFixes />
 </AffiliateLayout>

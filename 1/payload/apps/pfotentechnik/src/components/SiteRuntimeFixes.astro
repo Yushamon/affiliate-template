@@ -1,0 +1,43 @@
+<script is:inline>
+  (() => {
+    const editorialStatuses = new Set([
+      "editorial review",
+      "editorial-review",
+      "redaktionelle einordnung",
+      "redaktionelle bewertung",
+      "redaktionell bewertet"
+    ]);
+
+    const normalize = (value) =>
+      String(value ?? "")
+        .trim()
+        .toLocaleLowerCase("de-DE")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ");
+
+    const removeGenericEditorialStatus = () => {
+      document
+        .querySelectorAll(
+          "[data-product-page] .native-buybox__meta > div"
+        )
+        .forEach((row) => {
+          const label = normalize(row.querySelector("dt")?.textContent);
+          const value = normalize(row.querySelector("dd")?.textContent);
+
+          if (label === "status" && editorialStatuses.has(value)) {
+            row.remove();
+          }
+        });
+    };
+
+    removeGenericEditorialStatus();
+
+    if (!window.__ptSiteRuntimeFixesInstalled) {
+      window.__ptSiteRuntimeFixesInstalled = true;
+      document.addEventListener(
+        "astro:page-load",
+        removeGenericEditorialStatus
+      );
+    }
+  })();
+</script>
