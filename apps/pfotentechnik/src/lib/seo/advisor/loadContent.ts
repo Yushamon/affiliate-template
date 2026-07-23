@@ -69,7 +69,9 @@ export const loadAdvisorContent = async (): Promise<{
         topics: graphNode?.topics ?? [...stringArray(contentGraph?.topics), ...stringArray(data.tags)],
         body,
         authorPresent: Boolean(stringValue(author?.name)),
-        authorVisible: collection !== "comparisons",
+        authorVisible:
+          collection !== "comparisons" ||
+          /(?:von|autor(?:in)?|redaktionell geprüft)[^\n]{0,80}PfotenTechnik Redaktion/i.test(body),
         publishedAt: stringValue(data.publishedAt),
         updatedAt: stringValue(data.updatedAt),
         hasEditorialReview: Boolean(editorial || data.review || data.testStatus === "editorial-review"),

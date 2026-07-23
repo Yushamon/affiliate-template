@@ -238,7 +238,7 @@ const makeOpportunity = ({
 
 const analyseEeat = (documents: ContentDocument[], visibleRoutes: Set<string>): EeatFinding[] => {
   const sourcePattern = /(?:^|\n)#{1,3}\s+quellen|\*\*quellen:?\*\*|https?:\/\//i;
-  const qualitySourcePattern = /aaha\.org|vcahospitals\.com|cornell\.edu|icatcare\.org|pmc\.ncbi\.nlm\.nih\.gov|europa\.eu|edpb\.europa\.eu|gps\.gov|support\.|manual|bedienungsanleitung/i;
+  const qualitySourcePattern = /aaha\.org|wsava\.org|vcahospitals\.com|cornell\.edu|icatcare\.org|pmc\.ncbi\.nlm\.nih\.gov|europa\.eu|edpb\.europa\.eu|gps\.gov|support\.|manual|bedienungsanleitung/i;
   const ymylPattern = /krank|gesund|tierarzt|durchfall|erbrechen|niere|gewicht|trinkt (viel|wenig)|frisst nicht|medizin|dehydrat|vergift/i;
   const medicalNoticePattern = /tierarzt|tierärzt|fachlich abklären|kein ersatz für|notfall/i;
   const methodologyPattern = /methodik|bewertungsgrundlage|so bewerten|testmethod|redaktionell geprüft|datenbasis/i;
