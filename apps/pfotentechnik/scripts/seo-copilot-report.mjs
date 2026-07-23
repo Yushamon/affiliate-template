@@ -22,17 +22,16 @@ const findings = products.map((product) => {
   const frontmatter = source.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/m)?.[1] || "";
   const comparisons = [...frontmatter.matchAll(/comparisons:\s*\[([^\]]*)\]/g)]
     .flatMap((match) => [...match[1].matchAll(/["']([^"']+)["']/g)].map((entry) => entry[1]));
-  const imageDirectoryCandidates = [
-    path.join(APP_ROOT, "src", "assets", "images", "products", product.slug),
-    path.join(APP_ROOT, "public", "images", "products", product.slug),
-  ];
-  const imageFiles = imageDirectoryCandidates.flatMap((directory) => fs.existsSync(directory) ? fs.readdirSync(directory) : []);
+  const galleryRoles = [...frontmatter.matchAll(/gallery-(\d+)\.webp/gi)].map((match) => `gallery-${match[1]}`);
   const problems = [];
   if (!/^##\s+Quellen/im.test(source) || !/https?:\/\//i.test(source)) problems.push("keine ausreichenden sichtbaren Quellen");
   if (!comparisons.some((slug) => comparisonSlugs.has(slug))) problems.push("keine gültige Vergleichszuordnung");
   if (!manufacturerSlugs.has(product.manufacturerSlug)) problems.push("keine Herstellerseite");
   for (const role of ["hero", "thumbnail", "comparison", "gallery-1", "gallery-2", "gallery-3"]) {
-    if (!imageFiles.some((name) => name.toLocaleLowerCase("de") === `${role}.webp`)) problems.push(`Bild fehlt: ${role}.webp`);
+    const present = role.startsWith("gallery-")
+      ? galleryRoles.includes(role)
+      : new RegExp(`^\\s{2}${role}:\\s*\\{[^\\r\\n]*\\.webp`, "mi").test(frontmatter);
+    if (!present) problems.push(`Bild fehlt: ${role}.webp`);
   }
   if (!/^updatedAt:\s*["']?\d{4}-\d{2}-\d{2}/m.test(frontmatter)) problems.push("Aktualisierungsdatum fehlt");
   return { slug: product.slug, title: product.name, manufacturer: product.brand, problems };
