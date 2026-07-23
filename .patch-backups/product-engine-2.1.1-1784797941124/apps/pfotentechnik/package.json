@@ -53,8 +53,7 @@
     "product:preflight": "node scripts/seo-copilot-cli.mjs preflight",
     "product:draft": "node scripts/seo-copilot-cli.mjs draft",
     "audit:product-standard-2": "node scripts/audit-product-standard-2.mjs",
-    "audit:product-standard-2:strict": "node scripts/audit-product-standard-2.mjs --strict",
-    "audit:product-engine": "node scripts/audit-product-engine.mjs"
+    "audit:product-standard-2:strict": "node scripts/audit-product-standard-2.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

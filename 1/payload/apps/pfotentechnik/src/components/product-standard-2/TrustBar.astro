@@ -1,0 +1,39 @@
+---
+const { trust = {} } = Astro.props;
+const items = [
+  trust.testStatus && { label: "Prüfstatus", value: trust.testStatus },
+  trust.testedAt && { label: "Geprüft", value: trust.testedAt },
+  trust.updatedAt && { label: "Aktualisiert", value: trust.updatedAt },
+  trust.method && { label: "Bewertung", value: trust.method },
+  Array.isArray(trust.sources) && trust.sources.length > 0 && { label: "Quellen", value: `${trust.sources.length} Quellen` }
+].filter(Boolean);
+---
+
+{items.length > 0 && (
+  <section class="trust-bar" aria-label="Transparenz und Vertrauen">
+    {items.map((item) => <div><span>{item.label}</span><strong>{item.value}</strong></div>)}
+  </section>
+)}
+
+<style>
+  .trust-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(145px,1fr));
+    gap: 1px;
+    overflow: hidden;
+    border: 1px solid var(--ps2-border, #dce5e0);
+    border-radius: 16px;
+    background: var(--ps2-border, #dce5e0);
+    color: var(--ps2-text, #15211b);
+  }
+  .trust-bar > div { padding: 15px 17px; background: var(--ps2-surface, #fff); }
+  .trust-bar span { display: block; margin-bottom: 3px; color: var(--ps2-muted, #637069); font-size: .78rem; }
+  .trust-bar strong { font-size: .92rem; }
+  :global([data-theme="dark"]) .trust-bar,
+  :global(.dark) .trust-bar {
+    --ps2-surface: #171f1b;
+    --ps2-border: #2c3932;
+    --ps2-muted: #a0aea6;
+    --ps2-text: #eff6f2;
+  }
+</style>

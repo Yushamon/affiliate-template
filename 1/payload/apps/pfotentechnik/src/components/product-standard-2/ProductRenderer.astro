@@ -1,0 +1,74 @@
+---
+import { normalizeProduct } from "../../lib/product-engine/normalizeProduct";
+import { buildProductBlocks } from "../../lib/product-engine/buildProductBlocks";
+
+import DecisionCard from "./DecisionCard.astro";
+import QuickFacts from "./QuickFacts.astro";
+import SuitabilityMatrix from "./SuitabilityMatrix.astro";
+import ProsCons from "./ProsCons.astro";
+import ContextSpecs from "./ContextSpecs.astro";
+import AlternativesGrid from "./AlternativesGrid.astro";
+import TrustBar from "./TrustBar.astro";
+
+interface Props {
+  product: any;
+  debug?: boolean;
+}
+
+const { product, debug = false } = Astro.props;
+const normalized = normalizeProduct(product);
+const blocks = buildProductBlocks(normalized);
+---
+
+{blocks.length > 0 && (
+  <div
+    class="product-renderer"
+    data-product-standard="2.1"
+    data-product-source={normalized.source}
+  >
+    {blocks.map((block) => {
+      switch (block.type) {
+        case "decision":
+          return <DecisionCard decision={block.data} />;
+        case "quickFacts":
+          return <QuickFacts facts={block.data} />;
+        case "suitability":
+          return <SuitabilityMatrix suitability={block.data} />;
+        case "prosCons":
+          return <ProsCons pros={block.data.pros} cons={block.data.cons} />;
+        case "contextSpecs":
+          return <ContextSpecs specs={block.data} />;
+        case "alternatives":
+          return <AlternativesGrid alternatives={block.data} />;
+        case "trust":
+          return <TrustBar trust={block.data} />;
+      }
+    })}
+
+    {debug && (
+      <details class="product-renderer-debug">
+        <summary>Product Engine Debug</summary>
+        <pre>{JSON.stringify(normalized, null, 2)}</pre>
+      </details>
+    )}
+  </div>
+)}
+
+<style>
+  .product-renderer {
+    display: grid;
+    gap: 20px;
+    margin-block: 24px;
+  }
+  .product-renderer-debug {
+    padding: 14px;
+    border: 1px dashed currentColor;
+    border-radius: 12px;
+    opacity: .8;
+  }
+  .product-renderer-debug pre {
+    overflow: auto;
+    max-height: 420px;
+    font-size: .72rem;
+  }
+</style>
