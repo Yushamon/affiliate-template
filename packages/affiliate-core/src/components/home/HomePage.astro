@@ -19,10 +19,12 @@ const { model } = Astro.props as Props;
 <div class="home3 home5">
   <HomeHero hero={model.hero} />
 
-  <HomeNavigation
+    <div id="kaufberatung">
+<HomeNavigation
     mode="comparison-decision"
     decisionCards={model.decisionComparisons}
   />
+  </div>
 
   <HomeSection
     kind="products"
