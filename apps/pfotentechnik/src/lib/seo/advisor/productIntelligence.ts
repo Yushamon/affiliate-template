@@ -1,4 +1,6 @@
 import { getCollection } from "astro:content";
+import { buildPromptPair } from "../../seo-copilot/prompts";
+import type { PromptResult } from "../../seo-copilot/types";
 
 export type ProductDiscovery = {
   slug: string;
@@ -19,9 +21,20 @@ export type ProductHealth = {
   manufacturer: string;
   category: string;
   score: number;
-  status: "gesund" | "prüfen" | "kritisch";
-  checks: Array<{ label: string; ok: boolean; points: number; evidence: string }>;
+  status: "vollständig" | "optimierung" | "wichtig" | "kritisch";
+  checks: Array<{
+    id: string;
+    group: "Grunddaten" | "Technische Daten" | "Redaktion" | "SEO" | "Visuals";
+    label: string;
+    ok: boolean;
+    severity: "kritisch" | "wichtig" | "optimierung";
+    points: number;
+    evidence: string;
+    chatgptPrompt?: string;
+    codexPrompt?: string;
+  }>;
   gaps: string[];
+  prompts: { chatgpt: PromptResult; codex: PromptResult };
 };
 
 export type ProductCoverageGap = {
@@ -31,6 +44,7 @@ export type ProductCoverageGap = {
   kind: "kein-vergleich" | "keine-herstellerseite" | "keine-kategorie" | "großer-hund-ohne-vergleich";
   evidence: string;
   recommendation: string;
+  prompts: { chatgpt: PromptResult; codex: PromptResult };
 };
 
 export type ProductIntelligence = {
@@ -48,6 +62,37 @@ const ageDays = (date: string | Date | undefined): number | undefined => {
   if (!date) return undefined;
   const parsed = date instanceof Date ? date.getTime() : Date.parse(date);
   return Number.isFinite(parsed) ? Math.max(0, Math.floor((Date.now() - parsed) / 86_400_000)) : undefined;
+};
+
+const confirmedValue = (value: unknown): boolean => {
+  if (value === true || (typeof value === "number" && Number.isFinite(value))) return true;
+  if (Array.isArray(value)) return value.some(confirmedValue);
+  if (typeof value !== "string") return false;
+  const normalized = value.trim();
+  return Boolean(normalized) && !/nicht (?:vom hersteller )?(?:ausgewiesen|angegeben|bestätigt)|unbekannt|keine angabe|unknown/i.test(normalized);
+};
+
+const specValue = (specs: Array<{ label: string; value: string | number | boolean }>, patterns: RegExp[]) =>
+  specs.find((spec) => patterns.some((pattern) => pattern.test(spec.label)))?.value;
+
+const bodyHasSection = (body: string, pattern: RegExp) =>
+  new RegExp(`(?:^|\\n)#{1,3}\\s+[^\\n]*${pattern.source}`, pattern.flags.includes("i") ? "i" : "").test(body);
+
+type RawHealthCheck = {
+  id: string;
+  group: ProductHealth["checks"][number]["group"];
+  label: string;
+  ok: boolean;
+  severity: ProductHealth["checks"][number]["severity"];
+  evidence: string;
+};
+
+const withPoints = (checks: RawHealthCheck[]) => {
+  const totalWeight = checks.reduce((sum, check) => sum + (check.severity === "kritisch" ? 3 : check.severity === "wichtig" ? 2 : 1), 0);
+  return checks.map((check) => ({
+    ...check,
+    points: Number((((check.severity === "kritisch" ? 3 : check.severity === "wichtig" ? 2 : 1) / totalWeight) * 100).toFixed(2)),
+  }));
 };
 
 export const loadProductIntelligence = async (): Promise<ProductIntelligence> => {
@@ -102,41 +147,120 @@ export const loadProductIntelligence = async (): Promise<ProductIntelligence> =>
     const images = imageCount(data.images);
     const manufacturerExists = manufacturerBySlug.has(data.manufacturer.slug);
     const linkedComparisons = data.comparisons.filter((slug) => comparisonSlugs.has(slug));
-    const hasSources = /https?:\/\//i.test(body) || Boolean(data.editorial?.evidence.includes("manufacturer-documentation"));
     const updated = ageDays(data.updatedAt);
     const canonicalValid = data.seo?.canonical === `/produkt/${data.slug}/`;
-    const checks = [
-      { label: "Schema", ok: true, points: 15, evidence: "Astro-Collection validiert" },
-      { label: "Bilder", ok: images >= 6, points: 15, evidence: `${images}/6 vorgesehene Bildrollen belegt` },
-      { label: "Quellen", ok: hasSources, points: 15, evidence: hasSources ? "Quelle oder Herstellerdokumentation ausgewiesen" : "Keine Quelle erkannt" },
-      { label: "Vergleiche", ok: linkedComparisons.length > 0, points: 15, evidence: `${linkedComparisons.length} gültige Vergleichszuordnung(en)` },
-      { label: "Hersteller", ok: manufacturerExists, points: 12, evidence: manufacturerExists ? "Herstellerseite vorhanden" : "Herstellerseite fehlt" },
-      { label: "Interne Links", ok: /]\(\/(?:vergleiche|hersteller|produkt)\//i.test(body), points: 10, evidence: "Kontextuelle Money-Page-Verlinkung im Inhalt" },
-      { label: "Aktualität", ok: updated !== undefined && updated <= 365, points: 8, evidence: updated === undefined ? "Datum fehlt" : `${updated} Tage seit Aktualisierung` },
-      { label: "Technik", ok: canonicalValid && data.productStatus !== "unknown", points: 10, evidence: canonicalValid ? `Status: ${data.productStatus}` : "Canonical passt nicht zum Slug" },
+    const specs = data.specs ?? [];
+    const hasSources = bodyHasSection(body, /quellen/i) && /https?:\/\//i.test(body);
+    const hasManufacturerLink = new RegExp(`\\]\\(\\/hersteller\\/${data.manufacturer.slug}\\/?\\)`, "i").test(body);
+    const hasGuideLink = /]\(\/(?!produkt\/|vergleiche\/|hersteller\/)[^)]+\)/i.test(body);
+    const appValue = specValue(specs, [/^app$/i, /app.unterstützung/i]);
+    const cameraValue = specValue(specs, [/kamera/i]);
+    const audioValue = specValue(specs, [/mikrofon/i, /lautsprecher/i, /audio/i]);
+    const cloudValue = specValue(specs, [/cloud/i, /abo/i]);
+    const rawChecks: RawHealthCheck[] = [
+      { id: "schema", group: "Grunddaten", label: "Collection-Schema", ok: true, severity: "kritisch", evidence: "Astro-Collection wurde erfolgreich geladen." },
+      { id: "identity", group: "Grunddaten", label: "Titel und Slug", ok: confirmedValue(data.title) && confirmedValue(data.slug), severity: "kritisch", evidence: `${data.title} · ${data.slug}` },
+      { id: "manufacturer", group: "Grunddaten", label: "Hersteller", ok: manufacturerExists, severity: "kritisch", evidence: manufacturerExists ? "Herstellerseite vorhanden." : "Herstellerseite fehlt." },
+      { id: "category", group: "Grunddaten", label: "Kategorie und Produkttyp", ok: confirmedValue(data.category.key) && confirmedValue(data.category.label), severity: "kritisch", evidence: `${data.category.key} · ${data.category.label}` },
+      { id: "audience", group: "Grunddaten", label: "Tierart und Tiergröße", ok: data.comparisonFilters.animal.length > 0 && (data.comparisonFilters.petSize.length > 0 || Boolean(data.gps?.animal.length)), severity: "wichtig", evidence: `${data.comparisonFilters.animal.join(", ") || data.gps?.animal.join(", ") || "Tierart fehlt"} · ${data.comparisonFilters.petSize.join(", ") || "Tiergröße fehlt"}` },
+      { id: "summary", group: "Grunddaten", label: "Kurzbeschreibung", ok: confirmedValue(data.description) && confirmedValue(data.recommendation), severity: "wichtig", evidence: "Description und Empfehlung geprüft." },
+      { id: "availability", group: "Grunddaten", label: "Produkt- und Verfügbarkeitsstatus", ok: data.productStatus !== "unknown" && Boolean(data.affiliate?.label || data.productUrl), severity: "wichtig", evidence: `Status: ${data.productStatus}; ${data.affiliate?.label || data.productUrl || "kein Verfügbarkeitshinweis"}` },
+      { id: "capacity", group: "Technische Daten", label: "Kapazität", ok: confirmedValue(data.capacity) || confirmedValue(specValue(specs, [/kapazität/i, /volumen/i])), severity: "wichtig", evidence: String(data.capacity || specValue(specs, [/kapazität/i, /volumen/i]) || "Fehlt") },
+      { id: "portions", group: "Technische Daten", label: "Portionsgrößen und Portionierung", ok: confirmedValue(specValue(specs, [/portion/i, /mahlzeit/i])) || Boolean(data.comparisonFilters.portionGrams || data.comparisonFilters.portionMl), severity: "wichtig", evidence: String(specValue(specs, [/portion/i, /mahlzeit/i]) || "Keine bestätigte Portionsangabe") },
+      { id: "dimensions", group: "Technische Daten", label: "Maße", ok: confirmedValue(specValue(specs, [/maße/i, /abmessung/i])), severity: "wichtig", evidence: String(specValue(specs, [/maße/i, /abmessung/i]) || "Fehlt") },
+      { id: "weight", group: "Technische Daten", label: "Gewicht", ok: confirmedValue(specValue(specs, [/gewicht/i])) || Boolean(data.gps?.deviceWeightGrams), severity: "wichtig", evidence: String(specValue(specs, [/gewicht/i]) || data.gps?.deviceWeightGrams || "Fehlt") },
+      { id: "power", group: "Technische Daten", label: "Stromversorgung", ok: confirmedValue(specValue(specs, [/stromversorgung/i, /netzbetrieb/i, /usb/i])), severity: "wichtig", evidence: String(specValue(specs, [/stromversorgung/i, /netzbetrieb/i, /usb/i]) || "Fehlt") },
+      { id: "backup-power", group: "Technische Daten", label: "Akku, Batterie oder Notstrom", ok: confirmedValue(specValue(specs, [/akku/i, /batterie/i, /notstrom/i])) || data.comparisonFilters.backupPower !== undefined || Boolean(data.gps?.batteryMaxDays), severity: "optimierung", evidence: String(specValue(specs, [/akku/i, /batterie/i, /notstrom/i]) ?? data.comparisonFilters.backupPower ?? data.gps?.batteryMaxDays ?? "Fehlt") },
+      { id: "wifi", group: "Technische Daten", label: "WLAN und Funk", ok: confirmedValue(specValue(specs, [/wlan/i, /wi.fi/i, /funk/i, /übertragung/i])) || Boolean(data.gps?.transmission), severity: "optimierung", evidence: String(specValue(specs, [/wlan/i, /wi.fi/i, /funk/i, /übertragung/i]) || data.gps?.transmission || "Fehlt") },
+      { id: "app", group: "Technische Daten", label: "App-Unterstützung", ok: confirmedValue(appValue) || data.comparisonFilters.app !== undefined, severity: "wichtig", evidence: String(appValue ?? data.comparisonFilters.app ?? "Fehlt") },
+      { id: "camera", group: "Technische Daten", label: "Kamera", ok: confirmedValue(cameraValue) || data.comparisonFilters.camera !== undefined, severity: "optimierung", evidence: String(cameraValue ?? data.comparisonFilters.camera ?? "Fehlt") },
+      { id: "audio", group: "Technische Daten", label: "Mikrofon und Lautsprecher", ok: confirmedValue(audioValue) || !confirmedValue(cameraValue), severity: "optimierung", evidence: String(audioValue || (!confirmedValue(cameraValue) ? "Für Produkt ohne bestätigte Kamera nicht relevant." : "Fehlt")) },
+      { id: "cloud", group: "Technische Daten", label: "Cloud- und Abo-Abhängigkeit", ok: confirmedValue(cloudValue) || /cloud|abo|lokale speicherung|offline/i.test(body), severity: "wichtig", evidence: String(cloudValue || "Im Fließtext prüfen") },
+      { id: "offline", group: "Technische Daten", label: "Offline-Funktion", ok: /offline|ohne (?:wlan|cloud)|lokale speicherung|funktioniert.*ausfall/i.test(body), severity: "optimierung", evidence: /offline|ohne (?:wlan|cloud)|lokale speicherung|funktioniert.*ausfall/i.test(body) ? "Im Inhalt eingeordnet." : "Fehlt" },
+      { id: "material", group: "Technische Daten", label: "Material", ok: confirmedValue(specValue(specs, [/material/i, /edelstahl/i, /kunststoff/i, /keramik/i])), severity: "wichtig", evidence: String(specValue(specs, [/material/i, /edelstahl/i, /kunststoff/i, /keramik/i]) || "Fehlt") },
+      { id: "cleaning", group: "Technische Daten", label: "Reinigung", ok: confirmedValue(specValue(specs, [/reinigung/i, /spülmaschine/i])) && /reinig/i.test(body), severity: "wichtig", evidence: String(specValue(specs, [/reinigung/i, /spülmaschine/i]) || "Fehlt") },
+      { id: "compatibility", group: "Technische Daten", label: "Futter- oder Einsatzkompatibilität", ok: confirmedValue(specValue(specs, [/futterart/i, /krokette/i, /geeignet/i, /kompat/i])) || data.comparisonFilters.foodType.length > 0 || Boolean(data.gps), severity: "wichtig", evidence: String(specValue(specs, [/futterart/i, /krokette/i, /geeignet/i, /kompat/i]) || data.comparisonFilters.foodType.join(", ") || (data.gps ? "GPS-Eignungsdaten" : "Fehlt")) },
+      { id: "strengths", group: "Redaktion", label: "Stärken", ok: data.strengths.length >= 3, severity: "wichtig", evidence: `${data.strengths.length} Einträge` },
+      { id: "weaknesses", group: "Redaktion", label: "Schwächen", ok: data.weaknesses.length >= 2, severity: "wichtig", evidence: `${data.weaknesses.length} Einträge` },
+      { id: "best-for", group: "Redaktion", label: "Zielgruppe", ok: data.decision.bestFor.length >= 2, severity: "wichtig", evidence: `${data.decision.bestFor.length} Best-for-Einträge` },
+      { id: "attention", group: "Redaktion", label: "Ungeeignete Fälle und Aufmerksamkeit", ok: data.decision.attention.length >= 2, severity: "wichtig", evidence: `${data.decision.attention.length} Attention-Einträge` },
+      { id: "buying-criteria", group: "Redaktion", label: "Kaufkriterien", ok: /kauf|entscheidung|geeignet|achte auf/i.test(body), severity: "optimierung", evidence: /kauf|entscheidung|geeignet|achte auf/i.test(body) ? "Im Inhalt erkannt." : "Fehlt" },
+      { id: "alternatives", group: "Redaktion", label: "Alternativen", ok: data.alternatives.length >= 1, severity: "wichtig", evidence: `${data.alternatives.length} Alternative(n)` },
+      { id: "verdict", group: "Redaktion", label: "Fazit und Einordnung", ok: confirmedValue(data.review.summary) && confirmedValue(data.review.verdict), severity: "wichtig", evidence: "Review-Zusammenfassung und Verdict vorhanden." },
+      { id: "sources", group: "Redaktion", label: "Nachvollziehbare Quellen", ok: hasSources, severity: "kritisch", evidence: hasSources ? "Sichtbarer Quellenabschnitt mit URL." : "Quellenabschnitt oder konkrete URLs fehlen." },
+      { id: "freshness", group: "Redaktion", label: "Aktualisierungsdatum", ok: updated !== undefined && updated <= 365, severity: "wichtig", evidence: updated === undefined ? "Datum fehlt." : `${updated} Tage seit Aktualisierung` },
+      { id: "transparency", group: "Redaktion", label: "Transparenz und Methodik", ok: Boolean(data.editorial) && /kein eigener|redaktionell|herstellerdaten|methodik|datenbasis/i.test(`${data.editorial?.note ?? ""} ${data.experience?.methodology ?? ""} ${body}`), severity: "wichtig", evidence: data.editorial?.assessmentType || "Fehlt" },
+      { id: "meta-title", group: "SEO", label: "Meta Title", ok: confirmedValue(data.seo?.title), severity: "wichtig", evidence: data.seo?.title || "Fehlt" },
+      { id: "meta-description", group: "SEO", label: "Meta Description", ok: confirmedValue(data.seo?.description), severity: "wichtig", evidence: data.seo?.description || "Fehlt" },
+      { id: "canonical", group: "SEO", label: "Canonical", ok: canonicalValid, severity: "kritisch", evidence: data.seo?.canonical || "Fehlt" },
+      { id: "structured-data", group: "SEO", label: "Strukturierte Produktdaten", ok: true, severity: "kritisch", evidence: "Produkt-Collection und Produktlayout liefern strukturierte Daten." },
+      { id: "internal-links", group: "SEO", label: "Interne Links", ok: /]\(\/(?:vergleiche|hersteller|produkt)\//i.test(body), severity: "wichtig", evidence: "Kontextuelle Money-Page-Verlinkung im Inhalt." },
+      { id: "comparisons", group: "SEO", label: "Vergleichszuordnung", ok: linkedComparisons.length > 0, severity: "wichtig", evidence: `${linkedComparisons.length} gültige Vergleichszuordnung(en)` },
+      { id: "manufacturer-link", group: "SEO", label: "Herstellerlink", ok: hasManufacturerLink, severity: "optimierung", evidence: hasManufacturerLink ? "Kontextueller Herstellerlink vorhanden." : "Fehlt" },
+      { id: "guide-links", group: "SEO", label: "Ratgeberlinks", ok: hasGuideLink, severity: "optimierung", evidence: hasGuideLink ? "Mindestens ein Ratgeberlink erkannt." : "Fehlt" },
+      { id: "hero", group: "Visuals", label: "hero.webp", ok: Boolean(data.images.hero), severity: "kritisch", evidence: data.images.hero ? "Vorhanden" : "Fehlt" },
+      { id: "thumbnail", group: "Visuals", label: "thumbnail.webp", ok: Boolean(data.images.thumbnail), severity: "wichtig", evidence: data.images.thumbnail ? "Vorhanden" : "Fehlt" },
+      { id: "comparison-image", group: "Visuals", label: "comparison.webp", ok: Boolean(data.images.comparison), severity: "wichtig", evidence: data.images.comparison ? "Vorhanden" : "Fehlt" },
+      { id: "gallery-1", group: "Visuals", label: "gallery-1.webp", ok: data.images.gallery.length >= 1, severity: "optimierung", evidence: `${data.images.gallery.length} Galeriebilder` },
+      { id: "gallery-2", group: "Visuals", label: "gallery-2.webp", ok: data.images.gallery.length >= 2, severity: "optimierung", evidence: `${data.images.gallery.length} Galeriebilder` },
+      { id: "gallery-3", group: "Visuals", label: "gallery-3.webp", ok: data.images.gallery.length >= 3, severity: "optimierung", evidence: `${data.images.gallery.length} Galeriebilder` },
     ];
-    const score = checks.reduce((sum, check) => sum + (check.ok ? check.points : 0), 0);
+    const weightedChecks = withPoints(rawChecks);
+    const missing = weightedChecks.filter((check) => !check.ok);
+    const commonContext = {
+      kind: "product-health" as const,
+      title: data.title,
+      affectedFile: `apps/pfotentechnik/src/content/products/${data.slug}.md`,
+      slug: data.slug,
+      manufacturer: data.manufacturer.name,
+      category: data.category.label,
+      existingData: weightedChecks.filter((check) => check.ok).map((check) => `${check.label}: ${check.evidence}`),
+      missingData: missing.map((check) => `${check.label}: ${check.evidence}`),
+      problems: missing.map((check) => `${check.severity}: ${check.label}`),
+      comparisons: data.comparisons,
+      guides: [...body.matchAll(/\]\((\/(?!produkt\/|vergleiche\/|hersteller\/)[^)]+)\)/g)].map((match) => match[1]),
+      acceptanceCriteria: ["Nur nachweisbare Daten ergänzen", "Bestehendes Produktschema respektieren", "Keine URL oder Slug ändern"],
+    };
+    const checks = weightedChecks;
+    const score = Math.round(checks.reduce((sum, check) => sum + (check.ok ? check.points : 0), 0));
+    const prompts = buildPromptPair(commonContext);
     return {
       slug: data.slug,
       title: data.title,
       manufacturer: data.manufacturer.name,
       category: data.category.label,
       score,
-      status: score >= 85 ? "gesund" : score >= 65 ? "prüfen" : "kritisch",
+      status: score >= 95 ? "vollständig" : score >= 85 ? "optimierung" : score >= 65 ? "wichtig" : "kritisch",
       checks,
-      gaps: checks.filter((check) => !check.ok).map((check) => check.label),
+      gaps: missing.map((check) => check.label),
+      prompts,
     };
   }).sort((a, b) => a.score - b.score || a.title.localeCompare(b.title, "de"));
 
   const coverageGaps: ProductCoverageGap[] = products.flatMap((entry) => {
     const data = entry.data;
     const gaps: ProductCoverageGap[] = [];
-    if (!data.comparisons.length) gaps.push({ id: `comparison|${data.slug}`, slug: data.slug, title: data.title, kind: "kein-vergleich", evidence: "Frontmatter enthält keine Vergleichszuordnung.", recommendation: "Passende bestehende Vergleiche fachlich prüfen; nicht automatisch zuordnen." });
-    if (!manufacturerBySlug.has(data.manufacturer.slug)) gaps.push({ id: `manufacturer|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-herstellerseite", evidence: `Hersteller-Slug „${data.manufacturer.slug}“ hat keine Collection-Seite.`, recommendation: "Herstelleridentität prüfen und nur mit belastbaren Quellen eine Herstellerseite planen." });
-    if (!data.category.key || !data.category.label) gaps.push({ id: `category|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-kategorie", evidence: "Kategorie ist nicht vollständig gepflegt.", recommendation: "Vorhandene Kategorieterminologie übernehmen." });
+    const addGap = (gap: Omit<ProductCoverageGap, "prompts">) => {
+      const prompts = buildPromptPair({
+        kind: "content-gap",
+        title: data.title,
+        affectedFile: `apps/pfotentechnik/src/content/products/${data.slug}.md`,
+        slug: data.slug,
+        manufacturer: data.manufacturer.name,
+        category: data.category.label,
+        problems: [gap.evidence],
+        missingData: [gap.recommendation],
+        comparisons: data.comparisons,
+        acceptanceCriteria: ["Bestehende Repository-Abdeckung zuerst prüfen", "Nur fachlich passende Beziehung ergänzen", "Keine automatische Veröffentlichung"],
+      });
+      gaps.push({ ...gap, prompts });
+    };
+    if (!data.comparisons.length) addGap({ id: `comparison|${data.slug}`, slug: data.slug, title: data.title, kind: "kein-vergleich", evidence: "Frontmatter enthält keine Vergleichszuordnung.", recommendation: "Passende bestehende Vergleiche fachlich prüfen; nicht automatisch zuordnen." });
+    if (!manufacturerBySlug.has(data.manufacturer.slug)) addGap({ id: `manufacturer|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-herstellerseite", evidence: `Hersteller-Slug „${data.manufacturer.slug}“ hat keine Collection-Seite.`, recommendation: "Herstelleridentität prüfen und nur mit belastbaren Quellen eine Herstellerseite planen." });
+    if (!data.category.key || !data.category.label) addGap({ id: `category|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-kategorie", evidence: "Kategorie ist nicht vollständig gepflegt.", recommendation: "Vorhandene Kategorieterminologie übernehmen." });
     const largeDog = data.comparisonFilters.largeDogFit === "technical-fit";
     const inLargeDogComparison = data.comparisons.some((slug) => /grosse-hunde|große-hunde/i.test(slug));
-    if (largeDog && !inLargeDogComparison) gaps.push({ id: `large-dog|${data.slug}`, slug: data.slug, title: data.title, kind: "großer-hund-ohne-vergleich", evidence: "Das strukturierte Eignungsfeld lautet „technical-fit“, aber kein Großhunde-Vergleich ist zugeordnet.", recommendation: "Nur bei passender Geräteart und Suchintention in einen bestehenden Großhunde-Vergleich aufnehmen." });
+    if (largeDog && !inLargeDogComparison) addGap({ id: `large-dog|${data.slug}`, slug: data.slug, title: data.title, kind: "großer-hund-ohne-vergleich", evidence: "Das strukturierte Eignungsfeld lautet „technical-fit“, aber kein Großhunde-Vergleich ist zugeordnet.", recommendation: "Nur bei passender Geräteart und Suchintention in einen bestehenden Großhunde-Vergleich aufnehmen." });
     return gaps;
   });
 

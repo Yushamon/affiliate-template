@@ -39,7 +39,19 @@
     "seo:cockpit": "npm run search:sync",
     "seo:admin": "node scripts/search/admin.mjs",
     "dev:seo": "node scripts/search/dev.mjs",
-    "test:search": "node --test test/search-platform.test.mjs"
+    "test:search": "node --test test/search-platform.test.mjs",
+    "test:seo-copilot": "node --test test/seo-copilot.test.mjs",
+    "seo-copilot:health": "node scripts/seo-copilot-cli.mjs health",
+    "seo-copilot:discover": "node scripts/seo-copilot-cli.mjs discover",
+    "seo-copilot:gaps": "node scripts/seo-copilot-cli.mjs gaps",
+    "seo-copilot:niches": "node scripts/seo-copilot-cli.mjs niches",
+    "seo-copilot:validate": "node scripts/seo-copilot-cli.mjs validate",
+    "seo-copilot:preflight": "node scripts/seo-copilot-cli.mjs preflight",
+    "seo-copilot:report": "node scripts/seo-copilot-cli.mjs report",
+    "product:discover": "node scripts/seo-copilot-cli.mjs discover",
+    "product:validate": "node scripts/seo-copilot-cli.mjs validate",
+    "product:preflight": "node scripts/seo-copilot-cli.mjs preflight",
+    "product:draft": "node scripts/seo-copilot-cli.mjs draft"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-23T07:24:23.639Z",
+  "schema": {
+    "detected": true,
+    "version": "sha256:15db0536e5f45b2d",
+    "path": "apps/pfotentechnik/src/content/schema/product.ts",
+    "requiredFields": [
+      "title",
+      "slug",
+      "description",
+      "testStatus",
+      "productStatus",
+      "recommendation",
+      "manufacturer",
+      "category",
+      "images",
+      "conversion",
+      "editorial",
+      "rating",
+      "decision",
+      "review",
+      "gps",
+      "comparisonFilters",
+      "loader",
+      "schema"
+    ]
+  },
+  "productHealth": {
+    "total": 66,
+    "complete": 0,
+    "critical": 66,
+    "findings": [
+      {
+        "slug": "aqara-smart-pet-feeder-c1",
+        "title": "Aqara Smart Pet Feeder C1",
+        "manufacturer": "Aqara",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "cat-mate-335-pet-fountain",
+        "title": "Cat Mate Pet Fountain 335",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "cat-mate-c200",
+        "title": "Cat Mate C200",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "cat-mate-c300",
+        "title": "Cat Mate C300",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "cat-mate-c500",
+        "title": "Cat Mate C500",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "cat-mate-shell-fountain",
+        "title": "Cat Mate Shell Pet Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "catit-pixi-smart-6-meal-feeder",
+        "title": "Catit PIXI Smart 6-Meal Feeder",
+        "manufacturer": "Catit",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "catit-pixi-vision-smart-feeder",
+        "title": "Catit PIXI Vision Smart Feeder",
+        "manufacturer": "Catit",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "garmin-alpha-t-20",
+        "title": "Garmin Alpha T 20",
+        "manufacturer": "Garmin",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "garmin-alpha-tt-25",
+        "title": "Garmin Alpha TT 25",
+        "manufacturer": "Garmin",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "honeyguardian-a305d",
+        "title": "HoneyGuardian A305D",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "honeyguardian-a68",
+        "title": "HoneyGuardian A68 Smart Pet Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "honeyguardian-smart-pet-feeder-s305d",
+        "title": "HoneyGuardian Smart Pet Feeder S305D",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "imipaw-3l-automatic-cat-feeder",
+        "title": "IMIPAW 3L Automatic Cat Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "oneisall-2-2l-cordless-fountain",
+        "title": "oneisall 2,2L Cordless Cat Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "oneisall-2-in-1-feeder-water",
+        "title": "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser",
+        "manufacturer": "oneisall",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "oneisall-3-2l-cordless-fountain",
+        "title": "oneisall 3,2L Cordless Cat Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "oneisall-3-5l-cordless-fountain",
+        "title": "oneisall 3,5L Cordless Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "oneisall-5l-automatic-cat-feeder",
+        "title": "oneisall 5L Automatic Cat Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "oneisall-7l-dog-water-fountain",
+        "title": "oneisall 7L Dog Water Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "paj-pet-finder-4g-mini",
+        "title": "PAJ PET Finder 4G Mini",
+        "manufacturer": "PAJ GPS",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "pawbby-smart-pet-feeder",
+        "title": "PAWBBY Smart Pet Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "pawsync-smart-pet-feeder",
+        "title": "PawSync Smart Pet Feeder",
+        "manufacturer": "PawSync",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-3-pro-uvc",
+        "title": "PETKIT Eversweet 3 Pro UVC",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-5-mini",
+        "title": "PETKIT Eversweet 5 Mini",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-max-2-uvc",
+        "title": "PETKIT Eversweet Max 2 UVC",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-max-cordless",
+        "title": "PETKIT Eversweet Max Cordless",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-solo-2-fountain",
+        "title": "PETKIT Eversweet Solo 2",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-solo-se",
+        "title": "PETKIT Eversweet Solo SE",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-eversweet-ultra",
+        "title": "PETKIT Eversweet Ultra",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-fresh-element-infinity",
+        "title": "PETKIT Fresh Element Infinity",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-fresh-element-solo",
+        "title": "PETKIT Fresh Element Solo",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-yumshare-dual-hopper",
+        "title": "PETKIT YumShare Dual-Hopper 2",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-yumshare-dual",
+        "title": "PETKIT YumShare Dual-Hopper 2",
+        "manufacturer": "PETKIT",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen"
+        ]
+      },
+      {
+        "slug": "petkit-yumshare-solo-2",
+        "title": "PETKIT YumShare Solo 2",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petkit-yumshare-solo",
+        "title": "PETKIT YumShare Solo 2",
+        "manufacturer": "PETKIT",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen"
+        ]
+      },
+      {
+        "slug": "petlibro-air-automatic-feeder",
+        "title": "PETLIBRO Air Automatic Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-air-wifi-feeder",
+        "title": "PETLIBRO Air WiFi Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-capsule-dog-fountain",
+        "title": "PETLIBRO Capsule Dog Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-dockstream-2-smart",
+        "title": "PETLIBRO Dockstream 2 Smart",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-dockstream-cordless",
+        "title": "PETLIBRO Dockstream Cordless",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-dockstream-rfid-smart",
+        "title": "PETLIBRO Dockstream RFID Smart",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-glacier-ultrafiltration",
+        "title": "PETLIBRO Glacier Ultrafiltration Fountain",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-granary-camera-feeder",
+        "title": "PETLIBRO Granary Camera Feeder",
+        "manufacturer": "PETLIBRO",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "petlibro-granary-dual-feeder",
+        "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
+        "manufacturer": "PETLIBRO",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen"
+        ]
+      },
+      {
+        "slug": "petlibro-granary-wifi-feeder",
+        "title": "PETLIBRO Granary WiFi Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-one-rfid-smart-feeder",
+        "title": "PETLIBRO One RFID Smart Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-polar-wet-food-feeder",
+        "title": "PETLIBRO Polar Wet Food Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petlibro-space-smart-feeder",
+        "title": "PETLIBRO Space Smart Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "petlibro-stainless-steel-fountain",
+        "title": "PETLIBRO Stainless Steel Fountain 3L",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "petsafe-freshfeed-refrigerated-feeder",
+        "title": "PetSafe FreshFeed Refrigerated Pet Feeder",
+        "manufacturer": "PetSafe",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "petsafe-healthy-pet-simply-feed",
+        "title": "PetSafe Healthy Pet Simply Feed",
+        "manufacturer": "PetSafe",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "petsafe-smart-feed-2",
+        "title": "PetSafe Smart Feed 2.0",
+        "manufacturer": "PetSafe",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "surefeed-microchip-pet-feeder-connect",
+        "title": "SureFeed Microchip Pet Feeder Connect",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "surefeed-microchip-pet-feeder",
+        "title": "SureFeed Microchip Pet Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "tractive-cat-6-mini",
+        "title": "Tractive CAT 6 Mini",
+        "manufacturer": "Tractive",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen"
+        ]
+      },
+      {
+        "slug": "tractive-dog-6-xl",
+        "title": "Tractive DOG 6 XL",
+        "manufacturer": "Tractive",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "tractive-dog-6",
+        "title": "Tractive DOG 6",
+        "manufacturer": "Tractive",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "weenect-xs",
+        "title": "Weenect XS",
+        "manufacturer": "Weenect",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "weenect-xt",
+        "title": "Weenect XT",
+        "manufacturer": "Weenect",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "Bild fehlt: hero.webp",
+          "Bild fehlt: thumbnail.webp",
+          "Bild fehlt: comparison.webp",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "wopet-cube-air-ca10",
+        "title": "WOPET Cube Air WiFi Pet Feeder CA10",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite",
+          "Bild fehlt: gallery-1.webp",
+          "Bild fehlt: gallery-2.webp",
+          "Bild fehlt: gallery-3.webp"
+        ]
+      },
+      {
+        "slug": "wopet-heritage-view-camera-feeder",
+        "title": "WOPET Heritage View Camera Feeder",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "wopet-patrol-f07-pro",
+        "title": "WOPET Patrol F07 Pro",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "wopet-pioneer-f01-plus",
+        "title": "WOPET Pioneer F01 Plus",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "xiaomi-smart-pet-food-feeder-2",
+        "title": "Xiaomi Smart Pet Food Feeder 2",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      },
+      {
+        "slug": "xiaomi-smart-pet-fountain-2",
+        "title": "Xiaomi Smart Pet Fountain 2",
+        "manufacturer": "",
+        "problems": [
+          "keine ausreichenden sichtbaren Quellen",
+          "keine gültige Vergleichszuordnung",
+          "keine Herstellerseite"
+        ]
+      }
+    ]
+  },
+  "productCandidates": [],
+  "newManufacturers": [],
+  "contentGaps": [],
+  "nicheOpportunities": [],
+  "blockedCreations": [],
+  "drafts": [],
+  "jobs": [],
+  "recommendedNextActions": [
+    {
+      "type": "product-health",
+      "target": "aqara-smart-pet-feeder-c1",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "cat-mate-335-pet-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "cat-mate-c200",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "cat-mate-c300",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "cat-mate-c500",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "cat-mate-shell-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "catit-pixi-smart-6-meal-feeder",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "catit-pixi-vision-smart-feeder",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "garmin-alpha-t-20",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "garmin-alpha-tt-25",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "honeyguardian-a305d",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "honeyguardian-a68",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "honeyguardian-smart-pet-feeder-s305d",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "imipaw-3l-automatic-cat-feeder",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-2-2l-cordless-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-2-in-1-feeder-water",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-3-2l-cordless-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-3-5l-cordless-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-5l-automatic-cat-feeder",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    },
+    {
+      "type": "product-health",
+      "target": "oneisall-7l-dog-water-fountain",
+      "action": "keine ausreichenden sichtbaren Quellen"
+    }
+  ]
+}

@@ -5,12 +5,13 @@ import { URL } from "node:url";
 import { RUNTIME_FILE, atomicWriteJson, loadGoogleClient, loadGoogleToken } from "./config.mjs";
 import { readSearchStatus } from "./status-store.mjs";
 import { SearchError, toPublicError } from "./errors.mjs";
-import { startSearchAction, getSearchAction, getRunningActions, ALLOWED_SEARCH_ACTIONS } from "./action-service.mjs";
+import { startSearchAction, getSearchAction, getRunningActions, cancelSearchAction, retrySearchAction, ALLOWED_SEARCH_ACTIONS } from "./action-service.mjs";
 import { getSearchProvider } from "./provider-registry.mjs";
 import { createOriginPolicy, assertJsonRequest, readJsonBody } from "./security.mjs";
 import { createAuthorizationSession, exchangeAuthorizationCode, validateOAuthCallback } from "./providers/google/auth.mjs";
 import { chooseGoogleProperty } from "./providers/google/setup.mjs";
 import { readCopilotState } from "./copilot-actions.mjs";
+import { getCopilotWorkspaceStatus } from "../seo-copilot/workflow.mjs";
 
 const host = process.env.SEARCH_ADMIN_HOST || "127.0.0.1";
 const port = Number(process.env.SEARCH_ADMIN_PORT || 4178);
@@ -37,7 +38,7 @@ function publicServiceStatus() {
     service: { connected: true, localOnly: host === "127.0.0.1" || host === "localhost", host, port, allowedActions: ALLOWED_SEARCH_ACTIONS, runningActions: getRunningActions() },
     providers: { google, bing },
     combined: readSearchStatus().combined,
-    copilot: readCopilotState(),
+    copilot: { ...readCopilotState(), ...getCopilotWorkspaceStatus() },
   }));
 }
 
@@ -74,6 +75,19 @@ const server = createServer(async (request, response) => {
       const action = getSearchAction(actionMatch[1]);
       if (!action) { json(response, 404, { error: { code: "SEARCH_ACTION_NOT_FOUND", message: "Aktion wurde nicht gefunden." } }, origin); return; }
       json(response, 200, action, origin); return;
+    }
+    const cancelMatch = requestUrl.pathname.match(/^\/api\/admin\/search\/actions\/([0-9a-f-]+)\/cancel$/i);
+    if (request.method === "POST" && cancelMatch) {
+      assertJsonRequest(request); await readJsonBody(request);
+      if (!cancelSearchAction(cancelMatch[1])) { json(response, 409, { error: { code: "SEARCH_ACTION_NOT_CANCELLABLE", message: "Aktion ist nicht aktiv oder kann nicht abgebrochen werden." } }, origin); return; }
+      json(response, 200, getSearchAction(cancelMatch[1]), origin); return;
+    }
+    const retryMatch = requestUrl.pathname.match(/^\/api\/admin\/search\/actions\/([0-9a-f-]+)\/retry$/i);
+    if (request.method === "POST" && retryMatch) {
+      assertJsonRequest(request); await readJsonBody(request);
+      const retried = retrySearchAction(retryMatch[1]);
+      if (!retried) { json(response, 409, { error: { code: "SEARCH_ACTION_NOT_RETRYABLE", message: "Nur fehlgeschlagene oder abgebrochene Aktionen können wiederholt werden." } }, origin); return; }
+      json(response, 202, retried, origin); return;
     }
     if (request.method === "POST" && requestUrl.pathname === "/api/admin/search/google/setup/start") {
       assertJsonRequest(request); await readJsonBody(request);
