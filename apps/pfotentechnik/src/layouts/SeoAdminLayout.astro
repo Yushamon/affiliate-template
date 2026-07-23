@@ -145,5 +145,236 @@ const nav = [
         localStorage.setItem("pfotentechnik-seo-theme", next);
       });
     </script>
-  </body>
+
+<script is:inline data-pt-editorial-theme-advisor-7-2>
+  (() => {
+    const norm = (v = "") =>
+      v.replace(/\s+/g, " ").trim().toLocaleLowerCase("de");
+
+    const rgb = (value) => {
+      const match = value?.match(
+        /rgba?\(\s*([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)(?:[,\s/]+([\d.]+))?\s*\)/
+      );
+      return match
+        ? {
+            r: Number(match[1]),
+            g: Number(match[2]),
+            b: Number(match[3]),
+            a: match[4] === undefined ? 1 : Number(match[4])
+          }
+        : null;
+    };
+
+    const channel = (v) => {
+      const n = v / 255;
+      return n <= 0.03928
+        ? n / 12.92
+        : ((n + 0.055) / 1.055) ** 2.4;
+    };
+
+    const lum = (c) =>
+      c
+        ? 0.2126 * channel(c.r) +
+          0.7152 * channel(c.g) +
+          0.0722 * channel(c.b)
+        : null;
+
+    const ratio = (a, b) => {
+      const first = lum(a);
+      const second = lum(b);
+      if (first === null || second === null) return 21;
+      return (Math.max(first, second) + 0.05) /
+        (Math.min(first, second) + 0.05);
+    };
+
+    const background = (element) => {
+      let current = element;
+      while (current && current !== document.documentElement) {
+        const color = rgb(getComputedStyle(current).backgroundColor);
+        if (color && color.a > 0.08) return color;
+        current = current.parentElement;
+      }
+      return rgb(getComputedStyle(document.body).backgroundColor);
+    };
+
+    const panelFor = (heading) => {
+      let current = heading.parentElement;
+      let fallback = null;
+
+      for (let depth = 0; current && depth < 7; depth += 1) {
+        if (
+          current.matches?.(
+            "section,article,aside,[class*='panel'],[class*='card'],[class*='method'],[class*='proof'],[class*='trust'],[class*='position']"
+          )
+        ) {
+          fallback ||= current;
+          const style = getComputedStyle(current);
+          const radius = Number.parseFloat(style.borderRadius) || 0;
+          const color = rgb(style.backgroundColor);
+          if (radius >= 12 && color && color.a > 0.08) return current;
+        }
+        current = current.parentElement;
+      }
+
+      return fallback ||
+        heading.closest("section,article,aside") ||
+        heading.parentElement;
+    };
+
+    const classifyKnownPanels = () => {
+      const rules = [
+        ["empfehlungen brauchen eine überprüfbare grundlage", "pt-method-panel"],
+        ["orientierung statt produktwerbung", "pt-proof-panel"],
+        ["kein shop. keine herstellerplattform.", "pt-positioning-panel"],
+        ["transparenz vor der produktauswahl", "pt-transparency-faq"]
+      ];
+
+      document
+        .querySelectorAll("main h1,main h2,main h3,main h4")
+        .forEach((heading) => {
+          const text = norm(heading.textContent);
+          const rule = rules.find(([phrase]) => text.includes(phrase));
+          if (!rule) return;
+
+          const panel = panelFor(heading);
+          panel?.classList.add(rule[1]);
+
+          if (rule[1] !== "pt-transparency-faq") {
+            panel?.classList.add("pt-editorial-dark-panel");
+          }
+        });
+    };
+
+    const fixLowContrast = () => {
+      document
+        .querySelectorAll(
+          "main section,main article,main aside,main details,main [class*='card'],main [class*='panel']"
+        )
+        .forEach((element) => {
+          if (
+            element.classList.contains("pt-editorial-dark-panel") ||
+            element.classList.contains("pt-transparency-faq")
+          ) return;
+
+          const heading = element.querySelector(
+            ":scope>h1,:scope>h2,:scope>h3,:scope>header h2,:scope>header h3"
+          );
+          const copy = element.querySelector(
+            ":scope>p,:scope>div>p,:scope li"
+          );
+          if (!heading && !copy) return;
+
+          const bg = background(element);
+          const bgLum = lum(bg);
+          if (bgLum === null) return;
+
+          const headingColor = heading
+            ? rgb(getComputedStyle(heading).color)
+            : null;
+          const copyColor = copy
+            ? rgb(getComputedStyle(copy).color)
+            : null;
+
+          const bad =
+            (headingColor && ratio(bg, headingColor) < 3.2) ||
+            (copyColor && ratio(bg, copyColor) < 4.05);
+
+          if (!bad) return;
+
+          if (bgLum < 0.24) {
+            element.classList.add("pt-auto-dark-panel");
+          } else if (bgLum > 0.72) {
+            element.classList.add("pt-auto-light-panel");
+          }
+        });
+    };
+
+    const configureAdvisor = () => {
+      let section = document.querySelector(
+        "#kaufberatung,.home41-decision"
+      );
+
+      if (!section) {
+        const heading = [...document.querySelectorAll("main h1,main h2,main h3")]
+          .find((element) =>
+            norm(element.textContent).includes(
+              "direkt zum passenden vergleich"
+            )
+          );
+        section = heading?.closest("section,article,div");
+      }
+
+      if (section) section.id = "kaufberatung";
+
+      document
+        .querySelectorAll("header a,header button,nav a")
+        .forEach((element) => {
+          const text = norm(element.textContent);
+          const href = norm(element.getAttribute?.("href") || "");
+          const advisor =
+            text.includes("berater") ||
+            text.includes("kaufberatung") ||
+            href.includes("berater") ||
+            href.includes("advisor");
+
+          if (!advisor) return;
+
+          if (element.tagName === "A") {
+            element.setAttribute("href", "/#kaufberatung");
+          }
+
+          const textNode = [...element.childNodes].find(
+            (node) =>
+              node.nodeType === Node.TEXT_NODE &&
+              norm(node.textContent)
+          );
+
+          if (textNode) {
+            textNode.textContent = "Kaufberatung";
+          } else if (!element.querySelector("svg,img")) {
+            element.textContent = "Kaufberatung";
+          }
+
+          element.classList.add("pt-nav-advisor-cta");
+          element.setAttribute(
+            "aria-label",
+            "Kaufberatung für Futterautomaten, Trinkbrunnen und GPS-Tracker"
+          );
+          element.setAttribute(
+            "title",
+            "Kaufberatung für Futterautomaten, Trinkbrunnen und GPS-Tracker"
+          );
+        });
+
+      if (location.hash === "#kaufberatung" && section) {
+        requestAnimationFrame(() =>
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          })
+        );
+      }
+    };
+
+    const apply = () => {
+      classifyKnownPanels();
+      fixLowContrast();
+      configureAdvisor();
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        apply,
+        { once: true }
+      );
+    } else {
+      apply();
+    }
+
+    document.addEventListener("astro:page-load", apply);
+    setTimeout(apply, 350);
+  })();
+</script>
+</body>
 </html>

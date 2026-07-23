@@ -6247,3 +6247,208 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
   box-shadow: none !important;
 }
 /* End PT product design system 2.1 / 7.1 */
+
+/* PT editorial theme + advisor UX 2.2 / 7.2 */
+:root {
+  --pt-dark-bg:#07372f;
+  --pt-dark-border:rgba(151,227,185,.22);
+  --pt-dark-heading:#f4fbf7;
+  --pt-dark-copy:#c6d8d0;
+  --pt-dark-accent:#8ce9b2;
+  --pt-light-bg:#fff;
+  --pt-light-border:#dfe7e4;
+  --pt-light-heading:#101827;
+  --pt-light-copy:#4d5b6d;
+  --pt-accent:#208b50;
+}
+
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel,.pt-auto-dark-panel){
+  color:var(--pt-dark-copy);
+  border-color:var(--pt-dark-border)!important;
+}
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel){
+  background:
+    radial-gradient(circle at 100% 0,rgba(88,216,143,.08),transparent 34%),
+    var(--pt-dark-bg)!important;
+}
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel,.pt-auto-dark-panel)
+:is(h1,h2,h3,h4,h5,h6,strong){
+  color:var(--pt-dark-heading)!important;
+}
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel,.pt-auto-dark-panel)
+:is(p,li,dd,small,figcaption){
+  color:var(--pt-dark-copy)!important;
+}
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel,.pt-auto-dark-panel)
+:is([class*="eyebrow"],[class*="kicker"],[class*="label"],[class*="index"],[class*="number"]){
+  color:var(--pt-dark-accent)!important;
+}
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel,.pt-auto-dark-panel) a{
+  color:var(--pt-dark-accent)!important;
+  text-decoration-color:color-mix(in srgb,var(--pt-dark-accent) 55%,transparent);
+  text-underline-offset:.18em;
+}
+.pt-auto-light-panel :is(h1,h2,h3,h4,h5,h6,strong){
+  color:var(--pt-light-heading)!important;
+}
+.pt-auto-light-panel :is(p,li,dd,small,figcaption){
+  color:var(--pt-light-copy)!important;
+}
+
+.pt-method-panel,
+.pt-proof-panel,
+.pt-positioning-panel{
+  padding:clamp(1.45rem,5vw,2.5rem)!important;
+}
+.pt-method-panel>:is(h1,h2,h3),
+.pt-positioning-panel>:is(h1,h2,h3){
+  max-width:13ch;
+  margin-bottom:1rem;
+  font-size:clamp(2rem,7vw,3.6rem);
+  line-height:.98;
+  letter-spacing:-.052em;
+  text-wrap:balance;
+}
+.pt-proof-panel>:is(h1,h2,h3){
+  max-width:14ch;
+  font-size:clamp(2rem,6.5vw,3.45rem);
+  line-height:1;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+}
+.pt-method-panel :is(ol,ul)>li{
+  border-color:rgba(218,238,228,.16)!important;
+}
+.pt-method-panel :is(ol,ul)>li :is(h3,h4,strong){
+  color:var(--pt-dark-heading)!important;
+}
+.pt-proof-panel :is([class*="stats"],[class*="metrics"],[class*="numbers"]){
+  display:grid;
+  gap:.75rem;
+  margin-top:1.35rem;
+}
+.pt-proof-panel :is([class*="stat"],[class*="metric"]){
+  min-width:0;
+  border:1px solid rgba(211,238,225,.18)!important;
+  border-radius:1rem;
+  background:rgba(255,255,255,.045)!important;
+}
+.pt-proof-panel :is([class*="stat"],[class*="metric"])
+:is(strong,b,[class*="value"],[class*="number"]){
+  color:var(--pt-dark-accent)!important;
+  font-variant-numeric:tabular-nums;
+}
+.pt-positioning-panel :is(p,li){max-width:38ch}
+
+.pt-transparency-faq{
+  padding-inline:0!important;
+  border:0!important;
+  color:var(--pt-light-heading);
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.pt-transparency-faq>:is(h1,h2,h3),
+.pt-transparency-faq>:is(header,div):first-child :is(h1,h2,h3){
+  max-width:16ch;
+  color:var(--pt-light-heading)!important;
+  font-size:clamp(2rem,7vw,3.25rem);
+  line-height:1;
+  letter-spacing:-.045em;
+  text-wrap:balance;
+}
+.pt-transparency-faq>:is(p,header p,div:first-child p){
+  max-width:46ch;
+  color:var(--pt-light-copy)!important;
+}
+.pt-transparency-faq :is(details,[class*="faq-item"],[class*="accordion-item"]){
+  overflow:hidden;
+  border:1px solid var(--pt-light-border)!important;
+  border-radius:1rem!important;
+  color:var(--pt-light-heading);
+  background:var(--pt-light-bg)!important;
+  box-shadow:0 8px 24px rgba(20,33,28,.045);
+}
+.pt-transparency-faq :is(summary,[class*="question"],[class*="trigger"]){
+  min-height:58px;
+  color:var(--pt-light-heading)!important;
+  background:transparent!important;
+}
+.pt-transparency-faq :is(details p,[class*="answer"],[class*="content"]){
+  color:var(--pt-light-copy)!important;
+}
+
+#kaufberatung{scroll-margin-top:7rem}
+.pt-nav-advisor-cta{
+  display:inline-flex!important;
+  min-height:42px;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+  padding:.68rem .95rem!important;
+  border:1px solid rgba(32,139,80,.35)!important;
+  border-radius:999px!important;
+  color:#071811!important;
+  background:#5cdf91!important;
+  font-weight:850!important;
+  text-decoration:none!important;
+  box-shadow:0 8px 20px rgba(28,151,80,.15);
+  transition:transform 150ms ease,background 150ms ease,box-shadow 150ms ease;
+}
+.pt-nav-advisor-cta::after{content:"→";font-size:.95em}
+.pt-nav-advisor-cta:hover{
+  transform:translateY(-1px);
+  background:#72e7a2!important;
+  box-shadow:0 12px 26px rgba(28,151,80,.2);
+}
+.pt-nav-advisor-cta:focus-visible{
+  outline:3px solid rgba(70,205,127,.34);
+  outline-offset:3px;
+}
+
+@media (max-width:720px){
+  :is(.pt-method-panel,.pt-proof-panel,.pt-positioning-panel){
+    width:min(100%,calc(100vw - 2rem));
+    margin-inline:auto!important;
+    border-radius:1.35rem!important;
+  }
+  .pt-transparency-faq{
+    width:min(100%,calc(100vw - 2rem));
+    margin-inline:auto!important;
+  }
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --pt-light-bg:#101d2f;
+    --pt-light-border:rgba(203,218,232,.14);
+    --pt-light-heading:#f4f8fb;
+    --pt-light-copy:#b8c6d4;
+    --pt-accent:#5cdf91;
+  }
+  .pt-transparency-faq :is(details,[class*="faq-item"],[class*="accordion-item"]){
+    box-shadow:none;
+  }
+  :is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel){
+    border-color:rgba(131,225,174,.2)!important;
+    background:
+      radial-gradient(circle at 100% 0,rgba(88,216,143,.075),transparent 34%),
+      #0b302a!important;
+    box-shadow:none!important;
+  }
+}
+:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],body.dark,[data-theme="dark"]){
+  --pt-light-bg:#101d2f;
+  --pt-light-border:rgba(203,218,232,.14);
+  --pt-light-heading:#f4f8fb;
+  --pt-light-copy:#b8c6d4;
+  --pt-accent:#5cdf91;
+}
+:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],body.dark,[data-theme="dark"])
+:is(.pt-editorial-dark-panel,.pt-method-panel,.pt-proof-panel,.pt-positioning-panel){
+  border-color:rgba(131,225,174,.2)!important;
+  background:
+    radial-gradient(circle at 100% 0,rgba(88,216,143,.075),transparent 34%),
+    #0b302a!important;
+  box-shadow:none!important;
+}
+/* End PT editorial theme + advisor UX 2.2 / 7.2 */
