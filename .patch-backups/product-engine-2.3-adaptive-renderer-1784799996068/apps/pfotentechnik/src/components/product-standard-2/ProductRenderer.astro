@@ -2,7 +2,6 @@
 import ProductReview from "@affiliate-core/components/product/ProductReview.astro";
 import { normalizeProduct } from "../../lib/product-engine/normalizeProduct";
 
-import ProductEngineInsights from "./ProductEngineInsights.astro";
 import SuitabilityMatrix from "./SuitabilityMatrix.astro";
 import ContextSpecs from "./ContextSpecs.astro";
 
@@ -30,6 +29,7 @@ const hasContextSpecs =
   Array.isArray(normalized.contextSpecs) &&
   normalized.contextSpecs.length > 0;
 
+// Debug output is opt-in only. It is never enabled merely because Astro runs in DEV.
 const showDebug =
   debug === true &&
   import.meta.env.PUBLIC_PRODUCT_ENGINE_DEBUG === "true";
@@ -37,7 +37,7 @@ const showDebug =
 
 <div
   class="product-renderer"
-  data-product-standard="2.3"
+  data-product-standard="2.2"
   data-product-source={normalized.source}
 >
   <ProductReview
@@ -45,21 +45,17 @@ const showDebug =
     alternativeRecommendations={alternativeRecommendations}
   />
 
-  <div class="product-renderer__engine-layer">
-    <ProductEngineInsights
-      benefits={normalized.intelligence.inferredBenefits}
-      warnings={normalized.intelligence.inferredWarnings}
-      targetGroups={normalized.intelligence.inferredTargetGroups}
-    />
+  {(hasSuitability || hasContextSpecs) && (
+    <div class="product-renderer__extensions" aria-label="Weitere Produktdetails">
+      {hasSuitability && (
+        <SuitabilityMatrix suitability={normalized.suitability} />
+      )}
 
-    {hasSuitability && (
-      <SuitabilityMatrix suitability={normalized.suitability} />
-    )}
-
-    {hasContextSpecs && (
-      <ContextSpecs specs={normalized.contextSpecs} />
-    )}
-  </div>
+      {hasContextSpecs && (
+        <ContextSpecs specs={normalized.contextSpecs} />
+      )}
+    </div>
+  )}
 
   {showDebug && (
     <details class="product-renderer-debug">
@@ -74,7 +70,7 @@ const showDebug =
     display: contents;
   }
 
-  .product-renderer__engine-layer {
+  .product-renderer__extensions {
     display: grid;
     gap: 20px;
     margin-block: 24px;
