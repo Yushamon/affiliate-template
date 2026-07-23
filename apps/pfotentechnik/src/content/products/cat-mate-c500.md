@@ -143,21 +143,21 @@ faq:
   - question: "Kann der Einsatz in die Spülmaschine?"
     answer: "Ja. Deckel und Futterschale sind laut Hersteller spülmaschinengeeignet."
 
-- question: "Ist der Cat Mate C500 für Nassfutter geeignet?"
-  answer: "Ja. Der Automat wurde speziell für mehrere Portionen Nass-, Trocken- oder Mischfutter entwickelt. Die mitgelieferten Kühlakkus können das Erwärmen verlangsamen, ersetzen jedoch keine aktive Kühlung."
-- question: "Benötigt der Cat Mate C500 WLAN oder eine App?"
-  answer: "Nein. Alle Mahlzeiten werden direkt am Gerät programmiert. Eine Internetverbindung oder Smartphone-App ist nicht erforderlich."
-- question: "Kann der Cat Mate C500 für zwei Katzen genutzt werden?"
-  answer: "Das hängt vom Fressverhalten der Tiere ab. Teilen beide Katzen zuverlässig ihre Portionen, kann der Automat geeignet sein. Für kontrollierte Einzelportionen oder Futterdiebe ist er jedoch nicht ausgelegt."
-- question: "Ist der Cat Mate C500 laut?"
-  answer: "Beim Wechsel zum nächsten Fach ist ein kurzes Motorgeräusch hörbar. Im normalen Betrieb arbeitet der Automat vergleichsweise leise."
+  - question: "Ist der Cat Mate C500 für Nassfutter geeignet?"
+    answer: "Ja. Der Automat wurde speziell für mehrere Portionen Nass-, Trocken- oder Mischfutter entwickelt. Die mitgelieferten Kühlakkus können das Erwärmen verlangsamen, ersetzen jedoch keine aktive Kühlung."
+  - question: "Benötigt der Cat Mate C500 WLAN oder eine App?"
+    answer: "Nein. Alle Mahlzeiten werden direkt am Gerät programmiert. Eine Internetverbindung oder Smartphone-App ist nicht erforderlich."
+  - question: "Kann der Cat Mate C500 für zwei Katzen genutzt werden?"
+    answer: "Das hängt vom Fressverhalten der Tiere ab. Teilen beide Katzen zuverlässig ihre Portionen, kann der Automat geeignet sein. Für kontrollierte Einzelportionen oder Futterdiebe ist er jedoch nicht ausgelegt."
+  - question: "Ist der Cat Mate C500 laut?"
+    answer: "Beim Wechsel zum nächsten Fach ist ein kurzes Motorgeräusch hörbar. Im normalen Betrieb arbeitet der Automat vergleichsweise leise."
 
-- question: "Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?"
-  answer: "Ja. Die einzelnen Fächer können unterschiedlich befüllt werden, solange das Futter sicher gelagert werden kann."
-- question: "Ist der Cat Mate C500 für Reisen geeignet?"
-  answer: "Für kurze Abwesenheiten kann er sinnvoll sein. Bei langen Zeiträumen oder hohen Temperaturen sollte insbesondere Nassfutter nicht über viele Stunden im Gerät verbleiben."
-- question: "Muss der Automat mit dem Internet verbunden werden?"
-  answer: "Nein. Sämtliche Einstellungen erfolgen direkt am Gerät."
+  - question: "Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?"
+    answer: "Ja. Die einzelnen Fächer können unterschiedlich befüllt werden, solange das Futter sicher gelagert werden kann."
+  - question: "Ist der Cat Mate C500 für Reisen geeignet?"
+    answer: "Für kurze Abwesenheiten kann er sinnvoll sein. Bei langen Zeiträumen oder hohen Temperaturen sollte insbesondere Nassfutter nicht über viele Stunden im Gerät verbleiben."
+  - question: "Muss der Automat mit dem Internet verbunden werden?"
+    answer: "Nein. Sämtliche Einstellungen erfolgen direkt am Gerät."
 useCase: "Für Katzen und kleine Hunde mit Nass- oder Mischfütterung"
 capacity: "Fünf Fächer mit je 155 g"
 expandable: "Nicht vorgesehen"
@@ -166,6 +166,7 @@ features:
   - "Nass- und Trockenfutter"
   - "Zwei Kühlakkus"
 
+---
 
 Der Cat Mate C500 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), verfolgt jedoch ein anderes Konzept als viele moderne WLAN-Modelle. Statt eines großen Vorratsbehälters arbeitet er mit einem zeitgesteuerten Drehteller. Diese Bauweise eignet sich besonders für mehrere Nassfutterportionen über den Tag und kommt vollständig ohne App oder Internetverbindung aus.
 
