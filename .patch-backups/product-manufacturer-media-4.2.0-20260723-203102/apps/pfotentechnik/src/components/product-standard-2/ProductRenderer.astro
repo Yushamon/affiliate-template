@@ -47,14 +47,6 @@ const manufacturer = asText(
   source.manufacturer?.name ??
   source.manufacturer
 );
-const manufacturerSlug = asText(
-  source.manufacturer?.slug ??
-  source.manufacturer?.key
-);
-const manufacturerHref = manufacturerSlug
-  ? `/hersteller/${manufacturerSlug}/`
-  : "";
-
 const category = asText(
   value.category ??
   source.category?.label ??
@@ -338,11 +330,7 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
   <header class="native-product__intro">
     <div class="native-product__badges">
       {category && <span class="native-product__badge">{category}</span>}
-      {manufacturer && (
-        manufacturerHref
-          ? <a class="native-product__badge native-product__badge--soft native-product__badge--manufacturer" href={manufacturerHref} aria-label={`Alle Inhalte und Produkte von ${manufacturer}`}>{manufacturer}</a>
-          : <span class="native-product__badge native-product__badge--soft">{manufacturer}</span>
-      )}
+      {manufacturer && <span class="native-product__badge native-product__badge--soft">{manufacturer}</span>}
     </div>
 
     <h1>{name}</h1>
@@ -1587,17 +1575,4 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
       transition: none !important;
     }
   }
-/* PT product navigation and gallery 4.2.0 */
-.native-product__badge--manufacturer{ text-decoration:none; transition:border-color .18s ease,background-color .18s ease,color .18s ease,transform .18s ease; }
-.native-product__badge--manufacturer:hover{ border-color:color-mix(in srgb,var(--np-green,#198a46) 48%,var(--np-border,#dce5e2)); background:color-mix(in srgb,var(--np-green-soft,#eaf7ee) 80%,white); transform:translateY(-1px); }
-.native-product__badge--manufacturer:focus-visible{ outline:3px solid color-mix(in srgb,var(--np-green,#198a46) 35%,transparent); outline-offset:3px; }
-.native-gallery__stage{ position:relative; display:grid!important; place-items:center!important; min-height:0!important; aspect-ratio:4/3; padding:clamp(.5rem,2vw,.9rem)!important; overflow:hidden; }
-.native-gallery__slide{ position:absolute!important; inset:0!important; display:none!important; place-items:center!important; width:100%!important; height:100%!important; margin:0!important; padding:clamp(.5rem,2vw,.9rem)!important; }
-.native-gallery__slide.is-active{ display:grid!important; }
-.native-gallery__slide>img{ display:block!important; width:100%!important; height:100%!important; max-width:100%!important; max-height:100%!important; margin:auto!important; object-fit:contain!important; object-position:center center!important; transform:none!important; }
-.native-gallery__slide figcaption{ position:absolute; inset-inline:.75rem; bottom:.75rem; }
-.native-gallery__thumb{ display:grid!important; place-items:center!important; overflow:hidden!important; }
-.native-gallery__thumb img{ display:block!important; width:100%!important; height:100%!important; margin:0!important; object-fit:contain!important; object-position:center center!important; transform:none!important; }
-@media(max-width:720px){ .native-gallery__stage{ aspect-ratio:1/1; padding:.45rem!important; } .native-gallery__slide{ padding:.45rem!important; } }
-/* End PT product navigation and gallery 4.2.0 */
 </style>

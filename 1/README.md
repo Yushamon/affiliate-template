@@ -1,28 +1,28 @@
-# PfotenTechnik Theme + Kaufberatung 8.0.2
+# PfotenTechnik Light-Mode Islands 8.0.3
 
-Diese Version ersetzt 8.0 und 8.0.1.
+Gezielter Nachpatch für die zwei noch dunkel gebliebenen Komponenten im Light Mode:
 
-Der Installer verwendet keine exakten Textanker wie `Header Props` oder `Runtime Fix Component` mehr. Er verändert ausschließlich:
+- `DecisionNextSteps.astro`: „Deine nächsten Schritte“
+- `HomeNavigation.astro`: „Empfehlungen brauchen eine überprüfbare Grundlage“
 
-- `apps/pfotentechnik/src/layouts/ProjectLayout.astro`
-- `apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css`
-- `apps/pfotentechnik/src/components/SiteRuntimeFixes.astro`
-- `apps/pfotentechnik/src/pages/kaufberatung.astro`
+Der Installer verändert ausschließlich:
 
-`Header.astro`, `registry.ts` und `project.config.ts` bleiben unangetastet.
+`apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css`
+
+Er verwendet keine Header-, Astro- oder Runtime-Textanker. Vor der Änderung wird unter `.patch-backups/` eine Sicherung angelegt. Eine zweite Ausführung ersetzt nur den markierten Patchblock und erzeugt keine Duplikate.
 
 ## Windows
 
-Im Repository-Stamm:
+Im Repository:
 
 ```powershell
-node .\1\apply-pfotentechnik-theme-kaufberatung-8.0.2.mjs --build
+node .\1\apply-pfotentechnik-light-mode-islands-8.0.3.mjs --build
 ```
 
-Ohne Build:
+Alternativ:
 
 ```powershell
-node .\1\apply-pfotentechnik-theme-kaufberatung-8.0.2.mjs
+.\1\install-windows.cmd --build
 ```
 
-Der Installer legt Backups unter `.patch-backups/` an und ist wiederholt ausführbar.
+Ohne Build `--build` weglassen.
