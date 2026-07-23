@@ -87,6 +87,8 @@ export type AdvisorOpportunity = {
   effort: AdvisorEffort;
   confidence: number;
   score: number;
+  estimatedMinutes: number;
+  forecast: AdvisorForecast;
   url?: string;
   query?: string;
   rationale: string;
@@ -101,6 +103,47 @@ export type AdvisorOpportunity = {
   dataBasis: AdvisorDataBasis;
   prompt: string;
   codexPrompt?: string;
+};
+
+export type AdvisorForecast = {
+  ctrPotential: number;
+  positionPotential: number;
+  clickPotential: number;
+  trafficPotential: number;
+  confidence: number;
+  assumptions: string[];
+  dataBasis: string;
+};
+
+export type GraphGapFinding = {
+  id: string;
+  kind: "fehlender-cluster" | "fehlender-cornerstone" | "verwaiste-seite" | "schwache-verlinkung";
+  route?: string;
+  cluster?: string;
+  evidence: string;
+  recommendation: string;
+  priority: AdvisorPriority;
+};
+
+export type EditorialCalendarItem = {
+  id: string;
+  route: string;
+  title: string;
+  reason: string;
+  due: "überfällig" | "diesen-monat" | "beobachten";
+  ageDays?: number;
+  priority: AdvisorPriority;
+};
+
+export type ConversionInsight = {
+  id: string;
+  route: string;
+  impressions: number;
+  clicks: number;
+  missingSignals: string[];
+  evidence: string;
+  recommendation: string;
+  confidence: number;
 };
 
 export type EeatFinding = {
@@ -168,10 +211,14 @@ export type SeoAdvisorResult = {
   dataNotice: string;
   opportunities: AdvisorOpportunity[];
   topTasks: AdvisorOpportunity[];
+  quickWins: AdvisorOpportunity[];
   trafficWin?: AdvisorOpportunity;
   eeat: EeatFinding[];
   contentGaps: ContentGapFinding[];
   cannibalization: CannibalizationFinding[];
   linkRecommendations: LinkRecommendation[];
+  graphGaps: GraphGapFinding[];
+  editorialCalendar: EditorialCalendarItem[];
+  conversionInsights: ConversionInsight[];
   history: AdvisorHistory;
 };

@@ -7,6 +7,13 @@ import { searchLog } from "./logging.mjs";
 import { getSearchProvider } from "./provider-registry.mjs";
 import { rebuildAdvisorSource, syncSearchPlatform, testSearchPlatform } from "./platform.mjs";
 import { generateSearchReport } from "./search-report.mjs";
+import {
+  buildImagePack,
+  completeCopilotTask,
+  createImagePromptPack,
+  createProductDraft,
+  generateCopilotPrompt,
+} from "./copilot-actions.mjs";
 
 const MAX_OUTPUT = 80_000;
 const ACTION_TIMEOUT = 12 * 60_000;
@@ -37,6 +44,11 @@ const DEFAULT_HANDLERS = {
   "advisor.rebuild": ({ progress }) => { progress({ step: "advisor", message: "Advisor-Datenquelle wird validiert." }); return rebuildAdvisorSource(); },
   "seo.audit": ({ progress }) => { progress({ step: "audit", message: "SEO-Audit läuft." }); return runFixedScript(path.join(REPO_ROOT, "tools", "seo-platform", "audit.mjs"), REPO_ROOT); },
   "contentGraph.build": ({ progress }) => { progress({ step: "graph", message: "Content Graph wird aktualisiert." }); return runFixedScript(path.join(APP_ROOT, "scripts", "build-content-graph.mjs"), APP_ROOT); },
+  "copilot.prompt": ({ payload, progress }) => { progress({ step: "prompt", message: "Prompt wird aus der vorhandenen Empfehlung erzeugt." }); return generateCopilotPrompt(payload); },
+  "copilot.task.complete": ({ payload, progress }) => { progress({ step: "learning", message: "Abschluss-Snapshot wird lokal gespeichert." }); return completeCopilotTask(payload); },
+  "product.draft.create": ({ payload, progress }) => { progress({ step: "product-draft", message: "Sicherer Produktentwurf wird außerhalb der Content-Collection angelegt." }); return createProductDraft(payload); },
+  "product.images.prompts": ({ payload, progress }) => { progress({ step: "image-prompts", message: "Sechs Bildprompts werden erzeugt." }); return createImagePromptPack(payload); },
+  "product.images.pack": ({ payload, progress }) => { progress({ step: "image-pack", message: "Importbilder werden validiert, zugeschnitten und als WebP/ZIP paketiert." }); return buildImagePack(payload); },
 };
 
 export function createSearchActionService(handlers = DEFAULT_HANDLERS, { maxStartsPerMinute = 8, logger = searchLog } = {}) {
@@ -52,7 +64,7 @@ export function createSearchActionService(handlers = DEFAULT_HANDLERS, { maxStar
     starts.push(Date.now());
   }
 
-  function start(action) {
+  function start(action, payload = {}) {
     if (typeof action !== "string" || !Object.hasOwn(handlers, action)) throw new SearchError("SEARCH_ACTION_NOT_ALLOWED");
     enforceRateLimit();
     const conflicts = action === "search.sync" ? ["search.sync", "google.sync", "bing.sync"] : action === "google.sync" || action === "bing.sync" ? [action, "search.sync"] : [action];
@@ -66,7 +78,7 @@ export function createSearchActionService(handlers = DEFAULT_HANDLERS, { maxStar
       record.status = "running"; record.startedAt = new Date().toISOString();
       logger({ provider: action.split(".")[0], action, status: "running" });
       try {
-        record.result = await handlers[action]({ progress: (progress) => { record.progress = { ...progress }; } });
+        record.result = await handlers[action]({ payload: structuredClone(payload), progress: (progress) => { record.progress = { ...progress }; } });
         record.status = "succeeded";
         logger({ provider: action.split(".")[0], action, status: "succeeded" });
       } catch (error) {
@@ -87,6 +99,6 @@ export function createSearchActionService(handlers = DEFAULT_HANDLERS, { maxStar
 
 const service = createSearchActionService();
 export const ALLOWED_SEARCH_ACTIONS = service.allowedActions;
-export const startSearchAction = (action) => service.start(action);
+export const startSearchAction = (action, payload) => service.start(action, payload);
 export const getSearchAction = (id) => service.get(id);
 export const getRunningActions = () => service.running();

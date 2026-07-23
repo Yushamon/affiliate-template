@@ -19,6 +19,7 @@ import { classifyProviderResults } from "../src/lib/search/platform.mjs";
 import { toPublicError } from "../src/lib/search/errors.mjs";
 import { atomicWriteJson } from "../src/lib/search/config.mjs";
 import { sanitizeLogEntry } from "../src/lib/search/logging.mjs";
+import { buildForecast, estimateMinutes, quickWins } from "../src/lib/seo/advisor/intelligence.ts";
 
 test("URL-Normalisierung entfernt Hostvarianten, Query, Hash und vereinheitlicht Slashes", () => {
   assert.equal(normalizeUrl("http://www.pfotentechnik.de//ratgeber/?utm_source=x#teil"), "/ratgeber/");
@@ -234,4 +235,35 @@ test("Combined-Datei bleibt mit dem Advisor-Dashboardformat kompatibel", () => {
     fs.writeFileSync(rangesFile, JSON.stringify(payload), "utf8"); const loaded = readSearchDashboardCandidates({ rangesFile, singleFile });
     assert.equal(loaded.root.provider, "combined"); assert.equal(loaded.root.ranges["7d"].metrics.current.clicks, 1); assert.equal(loaded.source, "ranges");
   } finally { fs.rmSync(directory, { recursive: true, force: true }); }
+});
+
+test("Priority Engine berechnet konservativen Forecast und Zeitbedarf deterministisch", () => {
+  const forecast = buildForecast({ impressions: 1000, ctr: 1, position: 8, confidence: 0.8, rangeKey: "28d" });
+  assert.deepEqual(
+    { ctr: forecast.ctrPotential, positions: forecast.positionPotential, clicks: forecast.clickPotential, traffic: forecast.trafficPotential },
+    { ctr: 2, positions: 1, clicks: 20, traffic: 2 },
+  );
+  assert.equal(forecast.assumptions.some((item) => item.includes("kein Ranking-Versprechen")), true);
+  assert.deepEqual([estimateMinutes(1.5), estimateMinutes(2.5), estimateMinutes(3.5), estimateMinutes(4)], [20, 45, 90, 180]);
+});
+
+test("Quick Wins verlangen niedrigen Aufwand, Wirkung und belastbare Confidence", () => {
+  const base = { score: 70, effortValue: 2, impact: 4, confidence: 0.8 };
+  const result = quickWins([
+    { ...base, id: "good" },
+    { ...base, id: "slow", effortValue: 4 },
+    { ...base, id: "weak", impact: 2 },
+    { ...base, id: "uncertain", confidence: 0.4 },
+  ]);
+  assert.deepEqual(result.map((item) => item.id), ["good"]);
+});
+
+test("Sichere Admin-Actions reichen nur strukturierte Payloads an feste Handler weiter", async () => {
+  let received;
+  const service = createSearchActionService({ "copilot.prompt": ({ payload }) => { received = payload; return { ok: true }; } }, { logger: () => {} });
+  const queued = service.start("copilot.prompt", { kind: "meta", task: { id: "x" } });
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  assert.deepEqual(received, { kind: "meta", task: { id: "x" } });
+  assert.equal(service.get(queued.id).status, "succeeded");
+  assert.throws(() => service.start("shell.exec", { command: "echo unsafe" }), (error) => error.code === "SEARCH_ACTION_NOT_ALLOWED");
 });

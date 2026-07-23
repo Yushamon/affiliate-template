@@ -1,5 +1,13 @@
 import { normalizeSeoPath, type SeoQueryRow } from "../loadDashboard";
 import { calculatePriorityScore, effectFromScore, effortLabel, priorityFromScore } from "./score";
+import {
+  buildConversionInsights,
+  buildEditorialCalendar,
+  buildForecast,
+  buildGraphGaps,
+  estimateMinutes,
+  quickWins,
+} from "./intelligence";
 import type {
   AdvisorCategory,
   AdvisorOpportunity,
@@ -211,6 +219,8 @@ const makeOpportunity = ({
     effort: effortLabel(effortValue),
     confidence,
     score,
+    estimatedMinutes: estimateMinutes(effortValue),
+    forecast: buildForecast({ impressions, ctr, position, confidence, rangeKey }),
     url,
     query,
     rationale,
@@ -613,6 +623,9 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
   const trafficWin = [...sorted]
     .filter((item) => (item.category === "ranking" || item.category === "ctr") && (item.dataBasis.position ?? 0) >= 4 && (item.dataBasis.position ?? 0) <= 20)
     .sort((a, b) => selectionScore(b) - selectionScore(a) || b.score - a.score)[0] ?? topTasks[0];
+  const graphGaps = buildGraphGaps(input);
+  const editorialCalendar = buildEditorialCalendar(documents);
+  const conversionInsights = buildConversionInsights(input);
 
   return {
     range,
@@ -622,11 +635,15 @@ export const buildSeoAdvisor = (input: SeoAdvisorInput): SeoAdvisorResult => {
       : `Der Zeitraum enthält ${totalImpressions} Impressionen; einzelne Aufgaben bleiben anhand ihrer URL-Daten gekennzeichnet.`,
     opportunities: sorted,
     topTasks,
+    quickWins: quickWins(sorted),
     trafficWin,
     eeat: eeat.slice(0, 12),
     contentGaps: contentGaps.slice(0, 12),
     cannibalization,
     linkRecommendations,
+    graphGaps,
+    editorialCalendar,
+    conversionInsights,
     history: {
       hasComparison: false,
       message: "Noch keine historische Vergleichsbasis: Die vorhandene Datei enthält mehrere Zeitfenster desselben Snapshots, aber keine früheren Advisor-Snapshots.",

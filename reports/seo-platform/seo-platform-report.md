@@ -2,7 +2,7 @@
 
 - Dokumente: 186
 - Fehler: 0
-- Warnungen: 38
+- Warnungen: 37
 
 ## Portfolio-Befunde
 
@@ -14,7 +14,6 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-mehrtierhaushalte.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-nassfutter.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-welpen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.

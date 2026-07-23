@@ -10,6 +10,7 @@ import { getSearchProvider } from "./provider-registry.mjs";
 import { createOriginPolicy, assertJsonRequest, readJsonBody } from "./security.mjs";
 import { createAuthorizationSession, exchangeAuthorizationCode, validateOAuthCallback } from "./providers/google/auth.mjs";
 import { chooseGoogleProperty } from "./providers/google/setup.mjs";
+import { readCopilotState } from "./copilot-actions.mjs";
 
 const host = process.env.SEARCH_ADMIN_HOST || "127.0.0.1";
 const port = Number(process.env.SEARCH_ADMIN_PORT || 4178);
@@ -36,6 +37,7 @@ function publicServiceStatus() {
     service: { connected: true, localOnly: host === "127.0.0.1" || host === "localhost", host, port, allowedActions: ALLOWED_SEARCH_ACTIONS, runningActions: getRunningActions() },
     providers: { google, bing },
     combined: readSearchStatus().combined,
+    copilot: readCopilotState(),
   }));
 }
 
@@ -63,8 +65,8 @@ const server = createServer(async (request, response) => {
     }
     if (request.method === "POST" && requestUrl.pathname === "/api/admin/search/actions") {
       assertJsonRequest(request);
-      const body = await readJsonBody(request);
-      const action = startSearchAction(body.action);
+      const body = await readJsonBody(request, 32_768);
+      const action = startSearchAction(body.action, body.payload);
       json(response, 202, action, origin); return;
     }
     const actionMatch = requestUrl.pathname.match(/^\/api\/admin\/search\/actions\/([0-9a-f-]+)$/i);

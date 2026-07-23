@@ -3,6 +3,11 @@ import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 import { buildSeoAdvisor } from "../../../lib/seo/advisor";
 import { loadAdvisorContent } from "../../../lib/seo/advisor/loadContent";
+import {
+  buildProductImagePrompts,
+  buildProductMarkdownPrompt,
+  loadProductIntelligence,
+} from "../../../lib/seo/advisor/productIntelligence";
 
 const payload = loadSeoDashboard();
 const { documents, graph } = await loadAdvisorContent();
@@ -10,6 +15,12 @@ const results = Object.fromEntries(
   Object.entries(payload.ranges).map(([key, range]) => [key, buildSeoAdvisor({ payload, range, documents, graph })]),
 );
 const defaultResult = results[payload.defaultRange] ?? Object.values(results)[0];
+const productIntelligence = await loadProductIntelligence();
+const productDiscoveries = productIntelligence.discoveries.map((product) => ({
+  ...product,
+  markdownPrompt: buildProductMarkdownPrompt(product),
+  imagePrompts: buildProductImagePrompts(product),
+}));
 const clientPayload = JSON.stringify({
   defaultRange: payload.defaultRange,
   generatedAt: payload.generatedAt,
@@ -17,12 +28,13 @@ const clientPayload = JSON.stringify({
   source: payload.source,
   diagnostics: payload.diagnostics,
   results,
+  productIntelligence: { ...productIntelligence, discoveries: productDiscoveries },
 }).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
 const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(value);
 ---
 <SeoAdminLayout
   title="SEO Co-Pilot"
-  description="Priorisierte, nachvollziehbare Aufgaben aus echten GSC-, Content- und Content-Graph-Daten. Keine Traffic-Prognosen, keine Dummy-Werte."
+  description="Tägliche Prioritäten, konservative Szenarien und Product Intelligence aus Search-Daten, Content Graph und validierten Astro-Collections."
   active="advisor"
 >
   {defaultResult ? (
@@ -94,6 +106,18 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         </div>
       </section>
 
+      <section class="analysis-grid intelligence-row" aria-label="Priorität und Forecast">
+        <article class="seo-card analysis-card">
+          <div class="section-heading"><div><span class="seo-eyebrow">Niedriger Aufwand</span><h2>Quick Wins</h2></div></div>
+          <div id="quick-win-list"></div>
+        </article>
+        <article class="seo-card analysis-card">
+          <div class="section-heading"><div><span class="seo-eyebrow">Konservatives Szenario</span><h2>Forecast</h2></div></div>
+          <p class="disclaimer">Szenarien auf Basis vorhandener Impressionen – keine Traffic- oder Ranking-Versprechen.</p>
+          <div id="forecast-list"></div>
+        </article>
+      </section>
+
       <section class="advisor-section" aria-labelledby="opportunities-title">
         <div class="section-heading"><div><span class="seo-eyebrow">Arbeitsvorrat</span><h2 id="opportunities-title">Chancen nach Kategorie</h2></div></div>
         <div class="filter-grid" aria-label="Chancen filtern">
@@ -110,7 +134,64 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Suchintention</span><h2>Content Gaps</h2></div></div><div id="gap-list"></div></article>
         <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Risikoanalyse</span><h2>Kannibalisierung</h2></div></div><div id="cannibal-list"></div></article>
         <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Content Graph</span><h2>Cornerstone-Links</h2></div></div><div id="link-list"></div></article>
+        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Cluster-Abdeckung</span><h2>Graph Gaps</h2></div></div><div id="graph-gap-list"></div></article>
+        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Funnel-Struktur</span><h2>Conversion Insights</h2></div></div><p class="disclaimer">Keine Interaktionsmessung: bewertet werden Search-Traffic und strukturelle CTA-/Linksignale.</p><div id="conversion-list"></div></article>
       </section>
+
+      <section class="advisor-section" aria-labelledby="calendar-title">
+        <div class="section-heading"><div><span class="seo-eyebrow">Redaktionsplanung</span><h2 id="calendar-title">Editorial Calendar</h2></div></div>
+        <div class="intelligence-cards" id="calendar-list"></div>
+      </section>
+
+      <section class="advisor-section" aria-labelledby="products-title">
+        <div class="section-heading">
+          <div><span class="seo-eyebrow">Product Intelligence 1.0</span><h2 id="products-title">Produkte, Abdeckung und Datenqualität</h2></div>
+          <span class="seo-badge">{productIntelligence.health.length} validierte Produkte</span>
+        </div>
+        <div class="product-summary">
+          <article class="seo-card summary-tile"><strong>{productIntelligence.discoveries.length}</strong><span>Neue, in Herstellerdaten belegte Produktkandidaten</span></article>
+          <article class="seo-card summary-tile"><strong>{productIntelligence.coverageGaps.length}</strong><span>Product Gaps</span></article>
+          <article class="seo-card summary-tile"><strong>{productIntelligence.health.filter((item) => item.status === "gesund").length}</strong><span>Produkte mit Health ≥ 85</span></article>
+        </div>
+        <div class="product-grid">
+          <article class="seo-card analysis-card">
+            <div class="section-heading"><div><span class="seo-eyebrow">Hersteller-Collection</span><h2>Neue Produkte</h2></div></div>
+            {productDiscoveries.length ? productDiscoveries.map((product) => (
+              <div class="finding product-candidate">
+                <h3>{product.name}</h3><p>{product.manufacturerName} · <code>{product.slug}</code></p>
+                <p>{product.knownData.join(" · ")}</p>
+                <div class="task-actions">
+                  <button type="button" class="button secondary" data-product-action="product.draft.create" data-slug={product.slug} data-name={product.name}>Produkt erstellen</button>
+                  <button type="button" class="button secondary" data-copy-product-prompt={product.slug}>Markdown Prompt</button>
+                  <button type="button" class="button secondary" data-product-action="product.images.prompts" data-slug={product.slug} data-name={product.name}>Bilder erstellen</button>
+                  <button type="button" class="button secondary" data-product-action="product.images.pack" data-slug={product.slug} data-name={product.name}>Bildpaket bauen</button>
+                </div>
+              </div>
+            )) : <div class="seo-empty">Keine neue Produktdatei ist durch die vorhandenen Hersteller-Produktlisten belegt. Es wird kein Dummy-Produkt vorgeschlagen.</div>}
+          </article>
+          <article class="seo-card analysis-card">
+            <div class="section-heading"><div><span class="seo-eyebrow">Coverage</span><h2>Product Gaps</h2></div></div>
+            {productIntelligence.coverageGaps.slice(0, 16).map((gap) => <div class="finding"><span class="seo-badge">{gap.kind}</span><h3>{gap.title}</h3><p>{gap.evidence}</p><p>{gap.recommendation}</p></div>)}
+            {!productIntelligence.coverageGaps.length && <div class="seo-empty">Keine strukturelle Produktlücke erkannt.</div>}
+          </article>
+        </div>
+        <article class="seo-card health-card">
+          <div class="section-heading"><div><span class="seo-eyebrow">Schema · Bilder · Quellen · Links</span><h2>Product Health</h2></div></div>
+          <div class="table-scroll"><table><thead><tr><th>Produkt</th><th>Hersteller</th><th>Kategorie</th><th>Score</th><th>Offen</th></tr></thead><tbody>
+            {productIntelligence.health.map((product) => <tr><td><a href={`/produkt/${product.slug}/`}>{product.title}</a></td><td>{product.manufacturer}</td><td>{product.category}</td><td><span class="seo-badge" data-level={product.status === "kritisch" ? "high" : product.status === "prüfen" ? "medium" : "low"}>{product.score}/100</span></td><td>{product.gaps.join(", ") || "–"}</td></tr>)}
+          </tbody></table></div>
+        </article>
+      </section>
+
+      <section class="advisor-section learning-section" aria-labelledby="learning-title">
+        <div class="section-heading"><div><span class="seo-eyebrow">Wirkungsmessung</span><h2 id="learning-title">Learning</h2></div></div>
+        <article class="seo-card analysis-card">
+          <p>Abgeschlossene Aufgaben erhalten einen lokalen Baseline-Snapshot und werden frühestens nach 14 Tagen mit neuen Search-Daten verglichen. Veränderungen gelten nur als zeitliche Assoziation; der Co-Pilot behauptet keine Kausalität.</p>
+          <div id="learning-list" class="intelligence-cards"><div class="seo-empty">Verbinde den lokalen Admin-Service, um Abschluss-Snapshots zu laden.</div></div>
+        </article>
+      </section>
+
+      <div class="action-message seo-card" id="copilot-action-message" aria-live="polite">One-Click-Aktionen benötigen den lokalen Admin-Service auf Port 4178.</div>
 
       <details class="seo-card raw-details">
         <summary>Rohdaten und Diagnose</summary>
@@ -171,6 +252,23 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
   .opportunity { padding: 18px; }
   .analysis-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 34px; }
   .analysis-card { padding: 20px; min-width: 0; }
+  .intelligence-row { margin-top: 34px; }
+  .intelligence-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .mini-card { padding: 16px; }
+  .mini-card h3 { margin: 10px 0 5px; font-size: 1rem; }
+  .mini-card p { margin: 5px 0; color: var(--seo-muted); line-height: 1.5; }
+  .product-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .summary-tile { display: grid; gap: 6px; padding: 18px; }
+  .summary-tile strong { font-size: 2rem; color: var(--seo-accent-strong); }
+  .summary-tile span { color: var(--seo-muted); line-height: 1.4; }
+  .product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .health-card { margin-top: 16px; padding: 20px; }
+  .health-card table td:first-child a { font-weight: 780; }
+  .product-candidate code { overflow-wrap: anywhere; }
+  .learning-section .analysis-card > p { max-width: 900px; color: var(--seo-muted); line-height: 1.6; }
+  .action-message { margin-top: 22px; padding: 14px 18px; color: var(--seo-muted); }
+  .action-message[data-state="success"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }
+  .action-message[data-state="error"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
   .disclaimer { margin-top: -6px; padding: 9px 11px; border-radius: 10px; background: var(--seo-warning-soft); color: var(--seo-warning); font-size: .86rem; }
   .finding { padding: 13px 0; border-top: 1px solid var(--seo-border); }
   .finding:first-child { border-top: 0; }
@@ -189,7 +287,9 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
   .export-bar p { margin: 4px 0 0; color: var(--seo-muted); }
   .fatal-state { padding: 24px; }
   @media (max-width: 1050px) { .metric-grid { grid-template-columns: repeat(4, 1fr); } }
-  @media (max-width: 800px) { .status-grid, .analysis-grid { grid-template-columns: 1fr; } .status-main { grid-template-columns: 1fr; gap: 12px; } .filter-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 900px) { .intelligence-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 800px) { .status-grid, .analysis-grid, .product-grid { grid-template-columns: 1fr; } .status-main { grid-template-columns: 1fr; gap: 12px; } .filter-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .product-summary, .intelligence-cards { grid-template-columns: 1fr; } }
   @media (max-width: 520px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } .filter-grid { grid-template-columns: 1fr; } .task-card { grid-template-columns: 36px 1fr; padding: 15px; } .task-rank { width: 34px; height: 34px; } .export-bar { align-items: stretch; flex-direction: column; } .button { width: 100%; } }
 </style>
 
@@ -241,6 +341,73 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     }
   };
 
+  const adminServiceUrl = "http://127.0.0.1:4178";
+  const actionMessage = document.getElementById("copilot-action-message");
+  const setActionMessage = (text, level = "info") => {
+    if (!actionMessage) return;
+    actionMessage.textContent = text;
+    actionMessage.dataset.state = level;
+  };
+  const adminApi = async (path, options = {}) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), options.timeout || 5000);
+    try {
+      const response = await fetch(`${adminServiceUrl}${path}`, { ...options, signal: controller.signal, headers: { "content-type": "application/json", ...(options.headers || {}) } });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) throw body.error || { message: `HTTP ${response.status}` };
+      return body;
+    } finally { clearTimeout(timer); }
+  };
+  const runAdminAction = async (action, payload, button) => {
+    const original = button?.textContent;
+    if (button) { button.disabled = true; button.textContent = "Läuft …"; }
+    try {
+      const queued = await adminApi("/api/admin/search/actions", { method: "POST", body: JSON.stringify({ action, payload }) });
+      for (let attempt = 0; attempt < 360; attempt += 1) {
+        const current = await adminApi(`/api/admin/search/actions/${encodeURIComponent(queued.id)}`);
+        setActionMessage(current.progress?.message || `${action}: ${current.status}`);
+        if (current.status === "succeeded") { setActionMessage(`${action} erfolgreich abgeschlossen.`, "success"); return current; }
+        if (current.status === "failed") throw current.error || { message: "Aktion fehlgeschlagen." };
+        await new Promise((resolve) => setTimeout(resolve, 500));
+      }
+      throw { message: "Zeitlimit der Statusabfrage überschritten." };
+    } catch (error) {
+      setActionMessage(`${error?.message || "Lokaler Admin-Service nicht erreichbar."}${error?.nextAction ? ` ${error.nextAction}` : ""}`, "error");
+      return null;
+    } finally {
+      if (button) { button.disabled = false; button.textContent = original; }
+    }
+  };
+
+  const renderLearning = async () => {
+    const container = document.getElementById("learning-list");
+    if (!container) return;
+    try {
+      const status = await adminApi("/api/admin/search/status", { timeout: 1800 });
+      const completions = status?.copilot?.completions || [];
+      const result = advisorData.results[activeRange];
+      container.replaceChildren(...completions.slice().reverse().map((completion) => {
+        const card = element("article", "seo-card mini-card");
+        const reviewReady = Date.parse(completion.reviewAfter) <= Date.now();
+        const current = result?.range?.pages?.find((row) => row.normalizedPath === completion.url);
+        let assessment = `Nachmessung ab ${new Date(completion.reviewAfter).toLocaleDateString("de-DE")}.`;
+        let adjusted = completion.baselineConfidence || 0;
+        if (reviewReady && current) {
+          const clickDelta = current.clicks - completion.baseline.clicks;
+          const positionImproved = current.position > 0 && current.position < completion.baseline.position;
+          const associatedImprovement = clickDelta > 0 || positionImproved;
+          adjusted = Math.max(0.25, Math.min(0.95, adjusted + (associatedImprovement ? 0.05 : -0.03)));
+          assessment = `${associatedImprovement ? "Positive" : "Keine positive"} zeitliche Assoziation: Klicks ${clickDelta >= 0 ? "+" : ""}${clickDelta}, Position ${completion.baseline.position.toFixed(1)} → ${current.position.toFixed(1)}.`;
+        }
+        card.append(badge(reviewReady ? "Nachmessung fällig" : "Wartefenster", reviewReady ? "medium" : "low"), element("h3", "", completion.title || completion.id), element("p", "target", completion.url || completion.query || ""), element("p", "", assessment), element("p", "", `Angepasste Confidence ${Math.round(adjusted * 100)} % · Keine Kausalitätsaussage.`));
+        return card;
+      }));
+      if (!completions.length) container.append(element("div", "seo-empty", "Noch keine Aufgabe über die sichere Admin-Action abgeschlossen."));
+    } catch {
+      container.replaceChildren(element("div", "seo-empty", "Lokaler Admin-Service nicht verbunden. Starte npm run seo:admin."));
+    }
+  };
+
   const badge = (text, level) => {
     const node = element("span", "seo-badge", text);
     if (level) node.dataset.level = level;
@@ -263,6 +430,21 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     const actions = element("div", "task-actions");
     const prompt = element("button", "button secondary", "ChatGPT-Prompt kopieren"); prompt.type = "button"; prompt.addEventListener("click", () => copyText(task.prompt, prompt)); actions.append(prompt);
     if (task.codexPrompt) { const codex = element("button", "button secondary", "Codex-Prompt kopieren"); codex.type = "button"; codex.addEventListener("click", () => copyText(task.codexPrompt, codex)); actions.append(codex); }
+    [["optimization", "Optimierung"], ["faq", "FAQ"], ["internal-links", "Interne Links"], ["meta", "Meta"], ["schema", "Schema prüfen"]].forEach(([kind, label]) => {
+      const action = element("button", "button secondary", label); action.type = "button";
+      action.addEventListener("click", async () => {
+        const completed = await runAdminAction("copilot.prompt", { kind, task }, action);
+        if (completed?.result?.prompt) await copyText(completed.result.prompt, action);
+      });
+      actions.append(action);
+    });
+    const complete = element("button", "button", "Task abschließen"); complete.type = "button";
+    complete.addEventListener("click", async () => {
+      persistTask(task, "erledigt");
+      await runAdminAction("copilot.task.complete", { task }, complete);
+      renderTopTasks(advisorData.results[activeRange]); renderOpportunities();
+    });
+    actions.append(complete);
     const select = element("select", "task-status"); select.setAttribute("aria-label", `Status für ${task.title}`);
     ["offen", "geplant", "in-arbeit", "erledigt", "verworfen"].forEach((status) => { const option = element("option", "", statusLabel(status)); option.value = status; select.append(option); });
     select.value = taskStatus(task.id); select.addEventListener("change", () => { persistTask(task, select.value); renderOpportunities(); }); actions.append(select);
@@ -315,6 +497,26 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     renderFindingList("gap-list", result.contentGaps, (item) => { const node = element("div", "finding"); const head = element("div", "task-meta"); head.append(badge(item.kind), badge(`${item.impressions} Impr.`), item.lowData ? badge("Geringe Datenbasis", "medium") : badge(item.matchStrength)); node.append(head, element("h3", "", item.query), element("p", "target", item.matchedRoute || "Keine passende Zielseite erkannt"), element("p", "", item.rationale), element("p", "", item.recommendation)); return node; });
     renderFindingList("cannibal-list", result.cannibalization, (item) => { const node = element("div", "finding"); const head = element("div", "task-meta"); head.append(badge(item.kind), badge(`Risiko ${item.risk}`, item.risk === "hoch" ? "high" : item.risk === "mittel" ? "medium" : "low")); node.append(head, element("h3", "", item.routes.join(" ↔ ")), element("p", "", item.evidence), element("p", "", item.recommendation)); return node; });
     renderFindingList("link-list", result.linkRecommendations, (item) => { const node = element("div", "finding"); const head = element("div", "task-meta"); head.append(badge(`Priorität ${item.priority}`, item.priority)); node.append(head, element("h3", "", `${item.sourceRoute} → ${item.targetRoute}`), element("p", "", `Anker: ${item.anchorText}`), element("p", "", item.context), element("p", "", item.rationale)); return node; });
+    renderFindingList("graph-gap-list", result.graphGaps, (item) => { const node = element("div", "finding"); node.append(badge(item.kind, item.priority), element("h3", "", item.route || item.cluster || "Cluster"), element("p", "", item.evidence), element("p", "", item.recommendation)); return node; });
+    renderFindingList("conversion-list", result.conversionInsights, (item) => { const node = element("div", "finding"); node.append(badge(`${item.impressions} Impr.`), badge(`Confidence ${Math.round(item.confidence * 100)} %`), element("h3", "", item.route), element("p", "", item.evidence), element("p", "", item.recommendation)); return node; });
+  };
+
+  const renderIntelligence = (result) => {
+    renderFindingList("quick-win-list", result.quickWins, (item) => {
+      const node = element("div", "finding"); node.append(badge(`${item.score}/100`, item.priority), badge(`${item.estimatedMinutes} Min.`), element("h3", "", item.title), element("p", "target", item.url || item.query || ""), element("p", "", item.nextAction)); return node;
+    });
+    renderFindingList("forecast-list", result.topTasks, (item) => {
+      const node = element("div", "finding"); const forecast = item.forecast;
+      node.append(element("h3", "", item.url || item.query || item.title), element("p", "", `CTR-Potenzial +${forecast.ctrPotential.toFixed(2)} PP · Positionsszenario ${forecast.positionPotential || "–"} · Klickpotenzial +${forecast.clickPotential} · Trafficpotenzial +${forecast.trafficPotential.toFixed(2)} %`), element("p", "", `Confidence ${Math.round(forecast.confidence * 100)} % · ${forecast.dataBasis}`));
+      const list = element("ul"); forecast.assumptions.forEach((assumption) => list.append(element("li", "", assumption))); node.append(list); return node;
+    });
+    const calendar = document.getElementById("calendar-list");
+    if (calendar) {
+      calendar.replaceChildren(...result.editorialCalendar.map((item) => {
+        const card = element("article", "seo-card mini-card"); card.append(badge(item.due, item.priority), element("h3", "", item.title), element("p", "target", item.route), element("p", "", item.reason)); return card;
+      }));
+      if (!result.editorialCalendar.length) calendar.append(element("div", "seo-empty", "Keine fällige redaktionelle Prüfung erkannt."));
+    }
   };
 
   const appendRows = (tbodyId, rows, firstKey) => {
@@ -333,11 +535,20 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     document.getElementById("active-period").textContent = result.range.label;
     document.getElementById("active-dates").textContent = `${result.range.startDate || "Start unbekannt"} bis ${result.range.endDate || "Ende unbekannt"}`;
     document.getElementById("data-notice").textContent = result.dataNotice;
-    renderMetrics(result.range); renderTrafficWin(result); renderTopTasks(result); renderOpportunities(); renderAnalyses(result); renderRaw(result);
+    renderMetrics(result.range); renderTrafficWin(result); renderTopTasks(result); renderOpportunities(); renderAnalyses(result); renderIntelligence(result); renderRaw(result); renderLearning();
   };
 
   document.querySelectorAll("[data-range]").forEach((button) => button.addEventListener("click", () => render(button.dataset.range)));
   ["filter-category", "filter-priority", "filter-page-type", "filter-status"].forEach((id) => document.getElementById(id)?.addEventListener("change", renderOpportunities));
   document.getElementById("export-tasks")?.addEventListener("click", () => { const blob = new Blob([JSON.stringify(Object.values(getTasks()), null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const anchor = element("a"); anchor.href = url; anchor.download = `pfotentechnik-seo-aufgaben-${new Date().toISOString().slice(0, 10)}.json`; anchor.click(); URL.revokeObjectURL(url); });
+  document.querySelectorAll("[data-copy-product-prompt]").forEach((button) => button.addEventListener("click", () => {
+    const product = advisorData.productIntelligence?.discoveries?.find((item) => item.slug === button.dataset.copyProductPrompt);
+    if (product) copyText(product.markdownPrompt, button);
+  }));
+  document.querySelectorAll("[data-product-action]").forEach((button) => button.addEventListener("click", async () => {
+    const product = advisorData.productIntelligence?.discoveries?.find((item) => item.slug === button.dataset.slug);
+    const completed = await runAdminAction(button.dataset.productAction, { slug: button.dataset.slug, name: button.dataset.name, comparisonSuggestions: product?.comparisonSuggestions || [] }, button);
+    if (completed?.result?.prompts) await copyText(completed.result.prompts.map((item) => `${item.role}\nZiel: ${item.target}\n${item.prompt}`).join("\n\n"), button);
+  }));
   if (advisorData.results[activeRange]) render(activeRange);
 </script>
