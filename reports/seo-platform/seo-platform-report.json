@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T06:57:12.835Z",
+  "generatedAt": "2026-07-23T07:48:24.305Z",
   "errors": 0,
   "warnings": 37,
   "portfolio": [],
@@ -10189,7 +10189,10 @@
         },
         "faq": [
           "{ question: \"Funktioniert der Aqara C1 ohne Internet?\", answer: \"Bereits gespeicherte Fütterungspläne sollen lokal weiterlaufen. Für Fernzugriff und viele Automationen ist der Aqara Hub erforderlich.\" }",
-          "{ question: \"Misst der C1 wirklich Gramm?\", answer: \"Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage.\" }"
+          "{ question: \"Misst der C1 wirklich Gramm?\", answer: \"Nein. Eine mechanische Portion wird zunächst gewogen und als Grammwert hinterlegt; das Gerät besitzt keine Napfwaage.\" }",
+          "{ question: \"Benötigt der Aqara C1 zwingend einen Hub?\", answer: \"Für Einrichtung, Fernzugriff und viele Automationen wird ein kompatibler Aqara Hub benötigt.\" }",
+          "{ question: \"Ist der C1 für Nassfutter geeignet?\", answer: \"Nein. Das Gerät ist für Trockenfutter ausgelegt.\" }",
+          "{ question: \"Funktionieren Fütterungspläne bei Internetausfall?\", answer: \"Bereits gespeicherte Zeitpläne laufen lokal weiter. Fernzugriff ist davon ausgenommen.\" }"
         ],
         "features": [
           "Zigbee 3.0",
@@ -10840,9 +10843,9 @@
           "keine Zugangskontrolle"
         ],
         "experience": {
-          "summary": "Die Kühlwirkung ist begrenzt und hängt stark von Raumtemperatur, Futtertemperatur und vorgekühlten Akkus ab.",
-          "methodology": "Redaktionelle Einordnung anhand der offiziellen Closer-Pets-Produktseite; kein eigener Langzeittest.",
-          "maintenance": "Futtereinsatz und Deckel nach Nassfutter gründlich reinigen. Kühlakkus vollständig durchfrieren und Dichtflächen sauber halten."
+          "summary": "Der Cat Mate C500 setzt bewusst auf eine einfache, lokale Zeitsteuerung ohne App oder WLAN. Für mehrere Nassfutterportionen über den Tag ist dieses Konzept häufig praktischer als klassische Vorratsautomaten.",
+          "methodology": "Redaktionelle Einordnung anhand offizieller Herstellerinformationen und technischer Produktdaten; kein eigener Langzeittest.",
+          "maintenance": "Futtereinsatz und Deckel nach jeder Nassfütterung gründlich reinigen. Kühlakkus vollständig durchfrieren lassen und Dichtflächen sauber halten."
         },
         "alternatives": [
           "cat-mate-c300",
@@ -10883,7 +10886,14 @@
           "question: \"Hat der Cat Mate C500 fünf programmierbare Zeiten?",
           "question: \"Hält der C500 Nassfutter aktiv kalt?",
           "question: \"Wie lange halten die Batterien?",
-          "question: \"Kann der Einsatz in die Spülmaschine?"
+          "question: \"Kann der Einsatz in die Spülmaschine?",
+          "question: \"Ist der Cat Mate C500 für Nassfutter geeignet?",
+          "question: \"Benötigt der Cat Mate C500 WLAN oder eine App?",
+          "question: \"Kann der Cat Mate C500 für zwei Katzen genutzt werden?",
+          "question: \"Ist der Cat Mate C500 laut?",
+          "question: \"Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?",
+          "question: \"Ist der Cat Mate C500 für Reisen geeignet?",
+          "question: \"Muss der Automat mit dem Internet verbunden werden?"
         ],
         "useCase": "Für Katzen und kleine Hunde mit Nass- oder Mischfütterung",
         "capacity": "Fünf Fächer mit je 155 g",
