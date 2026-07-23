@@ -1,0 +1,157 @@
+---
+interface Props {
+  rootSelector?: string;
+}
+
+const { rootSelector = "main" } = Astro.props;
+---
+
+<div class="product-page-polish-marker" data-root-selector={rootSelector}></div>
+
+<script is:inline define:vars={{ rootSelector }}>
+  (() => {
+    const clean = () => {
+      const root = document.querySelector(rootSelector) || document.body;
+
+      // Interne Enum-Werte niemals redaktionell ausgeben.
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+      for (const node of textNodes) {
+        const value = node.nodeValue || "";
+
+        if (value.includes("editorial-review")) {
+          node.nodeValue = value.replaceAll("editorial-review", "Redaktionell geprüft");
+        }
+
+        if (/\/\s*10\b/.test(value)) {
+          node.nodeValue = value.replace(/\/\s*10\b/g, "/100");
+        }
+      }
+
+      // Sternezeilen entfernen; die numerische 100er-Bewertung bleibt bestehen.
+      for (const element of root.querySelectorAll("span, div, p")) {
+        const text = (element.textContent || "").trim();
+        const ownChildren = element.children.length;
+
+        if (
+          ownChildren <= 4 &&
+          /[★☆]{2,}/.test(text) &&
+          text.length < 80
+        ) {
+          element.setAttribute("data-product-stars-hidden", "true");
+        }
+      }
+
+      // Status-Zeilen mit rein technischen Enum-Bezeichnungen ausblenden.
+      for (const element of root.querySelectorAll("dt, dd, li, span, p, div")) {
+        const text = (element.textContent || "").trim().toLowerCase();
+        if (text === "status editorial-review" || text === "editorial-review") {
+          const row =
+            element.closest("li, tr, dl > div, [class*='meta'], [class*='spec']") ||
+            element;
+          row.setAttribute("data-internal-status-hidden", "true");
+        }
+      }
+
+      // Überlange Kurzfakten optisch markieren. CSS begrenzt sie anschließend.
+      for (const element of root.querySelectorAll(
+        "[class*='fact'], [class*='spec'], [class*='quick'], [class*='highlight']"
+      )) {
+        const text = (element.textContent || "").trim();
+        if (text.length > 145) {
+          element.setAttribute("data-long-product-fact", "true");
+        }
+      }
+    };
+
+    clean();
+
+    // Komponenten können nach Hydration nachladen.
+    const observer = new MutationObserver(() => clean());
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true
+    });
+
+    window.addEventListener("load", clean, { once: true });
+  })();
+</script>
+
+<style is:global>
+  [data-product-stars-hidden="true"],
+  [data-internal-status-hidden="true"] {
+    display: none !important;
+  }
+
+  /* Kurzfakten: keine extrem hohen, schmalen Karten mehr. */
+  [data-long-product-fact="true"] {
+    min-width: 0 !important;
+    align-content: start !important;
+  }
+
+  [data-long-product-fact="true"] p,
+  [data-long-product-fact="true"] dd,
+  [data-long-product-fact="true"] strong,
+  [data-long-product-fact="true"] span {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  /* Einheitlicheres Raster für Facts/Specs, ohne interne Komponentennamen vorauszusetzen. */
+  .product-renderer :is(
+    [class*="quick-fact"],
+    [class*="quickFact"],
+    [class*="spec-card"],
+    [class*="fact-card"]
+  ) {
+    min-height: 132px !important;
+    padding: clamp(14px, 2vw, 18px) !important;
+    align-content: start !important;
+  }
+
+  .product-renderer :is(
+    [class*="quick-facts"],
+    [class*="quickFacts"],
+    [class*="spec-grid"],
+    [class*="facts-grid"]
+  ) {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)) !important;
+    align-items: stretch !important;
+  }
+
+  @media (max-width: 720px) {
+    .product-renderer :is(
+      [class*="quick-facts"],
+      [class*="quickFacts"],
+      [class*="spec-grid"],
+      [class*="facts-grid"]
+    ) {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .product-renderer :is(
+      [class*="quick-fact"],
+      [class*="quickFact"],
+      [class*="spec-card"],
+      [class*="fact-card"]
+    ) {
+      min-height: 118px !important;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .product-renderer :is(
+      [class*="quick-facts"],
+      [class*="quickFacts"],
+      [class*="spec-grid"],
+      [class*="facts-grid"]
+    ) {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

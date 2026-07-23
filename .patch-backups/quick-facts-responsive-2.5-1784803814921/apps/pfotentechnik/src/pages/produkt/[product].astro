@@ -6,7 +6,6 @@ import {
 import { getImage } from "astro:assets";
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import ProductQuickFactsEnhancer from "../../components/ProductQuickFactsEnhancer.astro";
 import ProductPagePresentationFix from "../../components/ProductPagePresentationFix.astro";
 
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
@@ -545,5 +544,4 @@ const everydayCriteria = [
     <RelatedArticles items={relatedItems} />
   </main>
   <ProductPagePresentationFix rootSelector="main" />
-  <ProductQuickFactsEnhancer rootSelector="main" />
 </ProjectLayout>

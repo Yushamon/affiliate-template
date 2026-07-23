@@ -6,8 +6,6 @@ import {
 import { getImage } from "astro:assets";
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import ProductQuickFactsEnhancer from "../../components/ProductQuickFactsEnhancer.astro";
-import ProductPagePresentationFix from "../../components/ProductPagePresentationFix.astro";
 
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 
@@ -15,6 +13,7 @@ import ProductRenderer from "../../components/product-standard-2/ProductRenderer
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
+import ProductTrustPanel from "../../components/ProductTrustPanel.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
 
@@ -153,79 +152,6 @@ const heroImageAlt =
   contentProduct.images.hero.alt ??
   pageTitle;
 
-const productScoreRaw = Number(contentProduct.score ?? contentProduct.rating ?? 0);
-const productScore100 =
-  productScoreRaw > 0 && productScoreRaw <= 10
-    ? Math.round(productScoreRaw * 10)
-    : Math.max(0, Math.min(100, Math.round(productScoreRaw)));
-
-const productSuitabilityLabels = Array.from(new Set([
-  ...(Array.isArray(contentProduct.decision?.bestFor)
-    ? contentProduct.decision.bestFor
-    : []),
-  ...(Array.isArray(contentProduct.petSize)
-    ? contentProduct.petSize
-    : contentProduct.petSize
-      ? [contentProduct.petSize]
-      : []),
-  ...(contentProduct.animal
-    ? [contentProduct.animal]
-    : [])
-]))
-  .map((value) => String(value).trim())
-  .filter(Boolean)
-  .slice(0, 4);
-
-const compactProductSpecs = (() => {
-  const source = contentProduct.specs ?? {};
-  const entries = Array.isArray(source)
-    ? source
-    : Object.entries(source).map(([label, value]) => ({
-        label,
-        value:
-          value && typeof value === "object"
-            ? value.value ?? value.label ?? value.text ?? ""
-            : value
-      }));
-
-  const blocked = new Set([
-    "status",
-    "prüfstatus",
-    "teststatus",
-    "bewertungsstatus"
-  ]);
-
-  const normalized = entries
-    .map((item) => ({
-      ...item,
-      label: String(item?.label ?? item?.title ?? item?.name ?? "").trim(),
-      value: String(item?.value ?? item?.text ?? item?.description ?? "").trim()
-    }))
-    .filter((item) =>
-      item.label &&
-      item.value &&
-      !blocked.has(item.label.toLowerCase()) &&
-      item.value.toLowerCase() !== "editorial-review"
-    )
-    .map((item) => ({
-      ...item,
-      value:
-        item.value.length > 92
-          ? `${item.value.slice(0, 89).trim()}…`
-          : item.value
-    }))
-    .slice(0, 8);
-
-  if (productSuitabilityLabels.length) {
-    normalized.unshift({
-      label: "Geeignet für",
-      value: productSuitabilityLabels.join(", ")
-    });
-  }
-
-  return normalized.slice(0, 8);
-})();
-
 const reviewProduct = {
         name: contentProduct.title,
         manufacturerLabel:
@@ -234,8 +160,9 @@ const reviewProduct = {
           contentProduct.category.label,
         recommendation:
           contentProduct.recommendation,
-        rating: undefined,
-        score: productScore100,
+        rating: contentProduct.rating,
+        score:
+          contentProduct.score ?? 0,
         capacity:
           contentProduct.capacity,
         expandable:
@@ -252,7 +179,8 @@ const reviewProduct = {
           contentProduct.decision.attention,
         ratings:
           contentProduct.ratings,
-        specs: compactProductSpecs,
+        specs:
+          contentProduct.specs,
         review:
           contentProduct.review,
         images: {
@@ -471,7 +399,16 @@ const everydayCriteria = [
         alternativeRecommendations={alternativeRecommendations}
       />
     </AutoLinkContent>
-<section
+
+    <ProductTrustPanel
+      assessmentType={contentProduct.editorial?.assessmentType}
+      evidence={contentProduct.editorial?.evidence}
+      testedHandsOn={contentProduct.editorial?.testedHandsOn}
+      lastVerifiedAt={contentProduct.editorial?.lastVerifiedAt ?? updatedAt}
+      note={contentProduct.editorial?.note}
+    />
+
+    <section
       class="pt-everyday-review"
       aria-labelledby="pt-everyday-review-title"
     >
@@ -544,6 +481,4 @@ const everydayCriteria = [
 
     <RelatedArticles items={relatedItems} />
   </main>
-  <ProductPagePresentationFix rootSelector="main" />
-  <ProductQuickFactsEnhancer rootSelector="main" />
 </ProjectLayout>

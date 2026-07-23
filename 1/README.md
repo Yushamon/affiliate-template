@@ -1,21 +1,27 @@
-# Product Engine 2.1.1 Complete
+# PfotenTechnik Product Page Polish 2.4
 
-Dieses Paket behebt den UNRESOLVED_IMPORT-Fehler und installiert in einem Lauf:
+Dieser Installer verbessert die aktuelle produktive Produktseite, ohne Bilder zu verändern.
 
-- Product Standard 2.0 Foundation
-- Product Standard 2.0 Part 2
-- Product Engine 2.1
-- ProductRenderer.astro
-- alle abhängigen Komponenten
-- Product-Engine-Libraries
-- die migrierte `src/pages/produkt/[product].astro`
+## Änderungen
+
+- Sternebewertung wird entfernt
+- Bewertung wird einheitlich als `xx/100` dargestellt
+- interne Werte wie `editorial-review` werden nicht mehr ausgegeben
+- `Geeignet für` wird aus `decision.bestFor`, `petSize` und `animal` ergänzt
+- Kurzfakten werden auf maximal acht Einträge begrenzt
+- sehr lange Kurzfakten werden gekürzt
+- das Kurzfakten-Raster wird responsiver und weniger schmal
+- der doppelte `ProductTrustPanel` wird aus der Produktseitenroute entfernt
+- Product-Engine-Debug wird deaktiviert
+- Light- und Dark-Mode bleiben erhalten
 
 ## Installation
 
-Im Repository-Root:
+ZIP entpacken und im Repository-Root ausführen:
 
 ```bash
 node <entpackter-ordner>/install.mjs
 ```
 
-Der Installer legt ein Backup an, kopiert alle Dateien, ergänzt die Audit-Skripte und führt anschließend `npm run build:pfotentechnik` aus. Bei einem Fehler erfolgt ein Rollback.
+Der Installer erstellt vor jeder Änderung ein Backup, führt
+`npm run build:pfotentechnik` aus und setzt bei einem Fehler alle Änderungen zurück.

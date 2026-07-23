@@ -7,11 +7,26 @@ import { fileURLToPath } from "node:url";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repo = process.cwd();
 const app = path.join(repo, "apps", "pfotentechnik");
-const payload = path.join(here, "payload");
+const route = path.join(app, "src", "pages", "produkt", "[product].astro");
+const source = path.join(
+  here,
+  "payload",
+  "apps",
+  "pfotentechnik",
+  "src",
+  "components",
+  "ProductQuickFactsEnhancer.astro"
+);
+const componentTarget = path.join(
+  app,
+  "src",
+  "components",
+  "ProductQuickFactsEnhancer.astro"
+);
 const backupRoot = path.join(
   repo,
   ".patch-backups",
-  `product-engine-2.2-production-renderer-${Date.now()}`
+  `quick-facts-responsive-2.5-${Date.now()}`
 );
 const changed = [];
 
@@ -20,18 +35,33 @@ if (!fs.existsSync(path.join(app, "package.json"))) {
   process.exit(1);
 }
 
-function walk(dir) {
-  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    const full = path.join(dir, entry.name);
-    return entry.isDirectory() ? walk(full) : [full];
-  });
+if (!fs.existsSync(route)) {
+  console.error("Produktseitenroute nicht gefunden: " + route);
+  process.exit(1);
+}
+
+function backup(target) {
+  const rel = path.relative(repo, target);
+  const destination = path.join(backupRoot, rel);
+  if (fs.existsSync(target)) {
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(target, destination);
+    return destination;
+  }
+  return null;
+}
+
+function write(target, content) {
+  const saved = backup(target);
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  fs.writeFileSync(target, content);
+  changed.push({ target, saved });
 }
 
 function rollback() {
   for (const item of changed.reverse()) {
-    if (item.backup && fs.existsSync(item.backup)) {
-      fs.mkdirSync(path.dirname(item.target), { recursive: true });
-      fs.copyFileSync(item.backup, item.target);
+    if (item.saved && fs.existsSync(item.saved)) {
+      fs.copyFileSync(item.saved, item.target);
     } else if (fs.existsSync(item.target)) {
       fs.rmSync(item.target, { force: true });
     }
@@ -39,27 +69,41 @@ function rollback() {
 }
 
 try {
-  for (const source of walk(payload)) {
-    const rel = path.relative(payload, source);
-    const target = path.join(repo, rel);
-    const backup = path.join(backupRoot, rel);
+  write(componentTarget, fs.readFileSync(source));
+  console.log("✓ ProductQuickFactsEnhancer.astro");
 
-    if (fs.existsSync(target)) {
-      fs.mkdirSync(path.dirname(backup), { recursive: true });
-      fs.copyFileSync(target, backup);
+  let text = fs.readFileSync(route, "utf8");
+
+  if (!text.includes("ProductQuickFactsEnhancer.astro")) {
+    const anchor =
+      'import ProjectLayout from "../../layouts/ProjectLayout.astro";';
+
+    if (!text.includes(anchor)) {
+      throw new Error("Sicherer Import-Anker wurde nicht gefunden");
     }
 
-    fs.mkdirSync(path.dirname(target), { recursive: true });
-    fs.copyFileSync(source, target);
-    changed.push({
-      target,
-      backup: fs.existsSync(backup) ? backup : null
-    });
-
-    console.log(`✓ ${rel}`);
+    text = text.replace(
+      anchor,
+      `${anchor}
+import ProductQuickFactsEnhancer from "../../components/ProductQuickFactsEnhancer.astro";`
+    );
   }
 
-  console.log("\nPrüfe Produktseiten-Build …");
+  if (!text.includes("<ProductQuickFactsEnhancer")) {
+    const close = "</ProjectLayout>";
+    if (!text.includes(close)) {
+      throw new Error("ProjectLayout-Ende wurde nicht gefunden");
+    }
+
+    text = text.replace(
+      close,
+      '  <ProductQuickFactsEnhancer rootSelector="main" />\n</ProjectLayout>'
+    );
+  }
+
+  write(route, text);
+  console.log("✓ apps/pfotentechnik/src/pages/produkt/[product].astro");
+
   const result = spawnSync("npm", ["run", "build:pfotentechnik"], {
     cwd: repo,
     stdio: "inherit",
@@ -70,9 +114,12 @@ try {
     throw new Error("Build fehlgeschlagen");
   }
 
-  console.log("\nProduct Engine 2.2 Production Renderer installiert.");
-  console.log("Die vollständige bisherige Produktdarstellung läuft jetzt innerhalb des neuen ProductRenderer.");
-  console.log("Debug ist standardmäßig vollständig deaktiviert.");
+  console.log("\nQuick Facts Responsive 2.5 installiert.");
+  console.log("- keine abgeschnittenen Texte");
+  console.log("- Kapazität, Einsatz und Geeignet für optisch hervorgehoben");
+  console.log("- restliche Fakten in flexiblem Raster");
+  console.log("- passende SVG-Icons je Datentyp");
+  console.log("- vollständig responsive und Dark-Mode-fähig");
   console.log(`Backup: ${backupRoot}`);
 } catch (error) {
   console.error(`\n${error.message}. Rollback wird ausgeführt …`);
