@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, kitten, trinkbrunnen, sicherheit, wasser, eingewoehnung]
 hub: { sections: [wissen], title: "Trinkbrunnen für Kitten sicher nutzen", description: "Stabilität, Kabel, Wassertiefe und schrittweise Gewöhnung.", order: 63 }
@@ -26,6 +26,8 @@ faq:
   - { question: "Ab wann darf ein Kitten einen Trinkbrunnen nutzen?", answer: "Sobald es selbstständig Wasser trinkt, kann ein geeignetes Modell zusätzlich angeboten werden. Die konkrete Situation sollte sicher und zunächst beaufsichtigt sein." }
   - { question: "Darf der normale Wassernapf weg?", answer: "Nein. Ein vertrauter, flacher Napf sollte während der Gewöhnung und als unabhängige Reserve verfügbar bleiben." }
 ---
+
+Dieser Ratgeber vertieft die Auswahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) für Kitten und stellt Zugänglichkeit, Stand- und elektrische Sicherheit in den Mittelpunkt.
 
 ## Die kurze Antwort
 

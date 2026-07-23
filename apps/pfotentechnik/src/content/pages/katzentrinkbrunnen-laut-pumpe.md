@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, pumpe, lautstaerke, wartung]
 hub: { sections: [wissen], title: "Wenn der Katzenbrunnen laut wird", description: "Brummen, Rattern und Plätschern systematisch beheben.", order: 55 }
@@ -23,6 +23,8 @@ faq:
   - { question: "Warum wird die Pumpe bei wenig Wasser laut?", answer: "Sie kann Luft ansaugen oder Vibrationen stärker übertragen. Wasser bis zur vorgesehenen Markierung auffüllen und niemals trocken laufen lassen." }
   - { question: "Kann man eine laute Pumpe weiterbetreiben?", answer: "Nach Ausschalten sollten Wasserstand, Rotor und Verschmutzung geprüft werden. Bei beschädigtem Kabel, Überhitzung oder anhaltendem Rattern muss die Pumpe ersetzt werden." }
 ---
+
+Dieser Ratgeber vertieft die Fehlersuche innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und konzentriert sich auf Pumpen- und Strömungsgeräusche.
 
 ## Die kurze Antwort
 

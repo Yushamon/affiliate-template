@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, seniorenkatze, trinkbrunnen, wasser, mobilitaet, niere]
 hub: { sections: [wissen], title: "Trinkbrunnen für Seniorenkatzen", description: "Bequemer Zugang, geringe Einstiegshöhe und sichere Alternativen.", order: 62 }
@@ -36,6 +36,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+Dieser Ratgeber vertieft die Auswahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) für ältere Katzen und priorisiert Zugänglichkeit, Standfestigkeit und eine vertraute Alternative.
 
 ## Die kurze Antwort
 

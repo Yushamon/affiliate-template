@@ -32,7 +32,7 @@ tags:
   - "Nassfutter"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-14"
+updatedAt: "2026-07-23"
 hub:
   sections:
     - "wissen"
@@ -191,6 +191,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+Im Themenbereich [Smarte Futterautomaten](/smarte-futterautomaten/) ordnet dieser Ratgeber ein, warum Gerät, Futterart und individuelle Tagesration zusammenpassen müssen.
 
 ## Die kurze Antwort
 

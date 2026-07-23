@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, mehrkatzen, rfid, wasser]
 hub: { sections: [wissen], title: "Trinkbrunnen für mehrere Katzen", description: "Tankgröße, Ausweichstellen und RFID sinnvoll planen.", order: 54 }
@@ -33,6 +33,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+Dieser Ratgeber vertieft die Mehrkatzen-Nutzung innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und ordnet Tankgröße, Zugang und RFID-Funktionen ein.
 
 ## Kurzantwort
 

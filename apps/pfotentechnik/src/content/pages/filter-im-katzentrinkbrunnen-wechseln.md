@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, filter, hygiene, folgekosten]
 hub: { sections: [wissen], title: "Filter im Katzenbrunnen wechseln", description: "Intervalle, Filterarten und Folgekosten richtig einordnen.", order: 51 }
@@ -21,6 +21,8 @@ faq:
   - { question: "Reicht ein Filter vier Wochen?", answer: "Vier Wochen sind bei manchen Herstellern ein Richtwert. Mehrere Tiere, hartes Wasser, viele Haare oder sichtbare Verschmutzung können einen früheren Wechsel erfordern." }
   - { question: "Kann man einen Filter auswaschen?", answer: "Vorsichtiges Spülen entfernt lose Partikel, stellt verbrauchte Aktivkohle oder Ionentauscher aber nicht wieder her." }
 ---
+
+Dieser Ratgeber vertieft die Filterpflege innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und hilft, Wechselintervalle praktisch einzuordnen.
 
 ## Kurzantwort
 

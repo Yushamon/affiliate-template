@@ -12,7 +12,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, biofilm, hygiene, reinigung]
 hub: { sections: [wissen], title: "Biofilm im Katzenbrunnen", description: "Glitschigen Belag erkennen, entfernen und vorbeugen.", order: 49 }
@@ -22,6 +22,8 @@ faq:
   - { question: "Ist der Schleim im Katzenbrunnen Biofilm?", answer: "Ein glitschiger, haftender Film ist häufig Biofilm aus Mikroorganismen und organischem Material. Verfärbung oder Geruch können weitere Hinweise sein." }
   - { question: "Tötet der Filter Biofilm ab?", answer: "Nein. Ein Filter hält je nach Bauart Partikel zurück oder bindet Stoffe, reinigt aber nicht automatisch Tank, Pumpe und Leitungen." }
 ---
+
+Dieser Ratgeber vertieft die Hygiene innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und konzentriert sich auf Biofilm in wasserführenden Bauteilen.
 
 ## Die kurze Antwort
 

@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, pumpe, reinigung, wartung, lautstaerke]
 hub: { sections: [wissen], title: "Pumpe im Katzenbrunnen reinigen", description: "Rotor, Pumpenraum und Vorfilter ohne blinde Stellen säubern.", order: 59 }
@@ -24,6 +24,8 @@ faq:
   - { question: "Wie oft sollte die Pumpe gereinigt werden?", answer: "Als Ausgangspunkt mindestens bei der wöchentlichen Grundreinigung. Haare, schwacher Durchfluss, Brummen oder hartes Wasser können kürzere Intervalle erfordern." }
   - { question: "Warum brummt eine saubere Pumpe?", answer: "Mögliche Gründe sind zu wenig Wasser, eingeschlossene Luft, ein beschädigter Rotor, Vibrationen auf hartem Untergrund oder Verschleiß." }
 ---
+
+Dieser Ratgeber vertieft die Pumpenpflege innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und behandelt die sichere Reinigung von Rotorraum und Ansaugung.
 
 ## Warum die Pumpe besondere Aufmerksamkeit braucht
 

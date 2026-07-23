@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, wasser, trinkbrunnen, hygiene, reinigung]
 hub: { sections: [wissen], title: "Wie oft Katzenwasser wechseln?", description: "Frisches Wasser, tägliche Routine und sinnvolle Reinigungsintervalle.", order: 57 }
@@ -24,6 +24,8 @@ faq:
   - { question: "Reicht es, Wasser nur nachzufüllen?", answer: "Nein. Nachfüllen verdünnt Speichel, Haare und Ablagerungen lediglich. Restwasser entsorgen, Gefäß ausspülen und frisch befüllen ist hygienischer." }
   - { question: "Muss Brunnenwasser ebenfalls täglich erneuert werden?", answer: "Der Filter ersetzt keinen Wasserwechsel. Füllstand und Wasser sollten täglich kontrolliert und je nach Modell, Nutzung und Verschmutzung regelmäßig vollständig erneuert werden." }
 ---
+
+Dieser Ratgeber vertieft den Wasserwechsel innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und unterscheidet vollständiges Erneuern vom bloßen Nachfüllen.
 
 ## Die kurze Antwort
 

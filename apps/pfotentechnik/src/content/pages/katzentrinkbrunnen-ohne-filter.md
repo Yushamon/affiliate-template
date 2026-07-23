@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, filter, hygiene, folgekosten, kaufberatung]
 hub: { sections: [wissen], title: "Katzentrinkbrunnen ohne Filter", description: "Filterwirkung, Reinigungsaufwand und laufende Kosten ehrlich abwägen.", order: 60 }
@@ -36,6 +36,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+Dieser Ratgeber vertieft die Filterfrage innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und erklärt die zusätzlichen Pflegeanforderungen filterloser Systeme.
 
 ## Die kurze Antwort
 

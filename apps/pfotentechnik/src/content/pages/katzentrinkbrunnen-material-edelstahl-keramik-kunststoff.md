@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, edelstahl, keramik, kunststoff]
 hub: { sections: [wissen], title: "Welches Material beim Katzenbrunnen?", description: "Edelstahl, Keramik und Kunststoff fair vergleichen.", order: 50 }
@@ -33,6 +33,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+Dieser Ratgeber vertieft die Materialwahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und vergleicht Edelstahl, Keramik und Kunststoff.
 
 ## Die kurze Antwort
 

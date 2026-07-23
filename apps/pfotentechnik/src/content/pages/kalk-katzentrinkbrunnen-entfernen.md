@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, kalk, pumpe, reinigung, hygiene]
 hub: { sections: [wissen], title: "Kalk im Katzentrinkbrunnen entfernen", description: "Materialschonend entkalken, spülen und die Pumpe schützen.", order: 58 }
@@ -24,6 +24,8 @@ faq:
   - { question: "Darf Essig in einen Katzentrinkbrunnen?", answer: "Nur wenn die Herstelleranleitung das Material und die Verdünnung erlaubt. Anschließend müssen alle Teile sehr gründlich gespült werden; elektrische Basen dürfen nicht eingeweicht werden." }
   - { question: "Ist Kalk für die Pumpe problematisch?", answer: "Ablagerungen können den Rotor bremsen, den Durchfluss senken und Geräusche verursachen. Besonders der Pumpenraum sollte deshalb kontrolliert werden." }
 ---
+
+Dieser Ratgeber vertieft die Entkalkung innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und grenzt mineralische Ablagerungen von Biofilm ab.
 
 ## Die kurze Antwort
 
