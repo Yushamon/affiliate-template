@@ -3,13 +3,8 @@ import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 import { buildSeoAdvisor } from "../../../lib/seo/advisor";
 import { loadAdvisorContent } from "../../../lib/seo/advisor/loadContent";
-import {
-  buildProductImagePrompts,
-  buildProductMarkdownPrompt,
-  loadProductIntelligence,
-} from "../../../lib/seo/advisor/productIntelligence";
+import { loadProductIntelligence } from "../../../lib/seo/advisor/productIntelligence";
 import { getCopilotWorkspaceStatus } from "../../../lib/seo-copilot/workflow.mjs";
-import { buildPromptPair } from "../../../lib/seo-copilot/prompts";
 
 const payload = loadSeoDashboard();
 const { documents, graph } = await loadAdvisorContent();
@@ -19,25 +14,6 @@ const results = Object.fromEntries(
 const defaultResult = results[payload.defaultRange] ?? Object.values(results)[0];
 const productIntelligence = await loadProductIntelligence();
 const copilotWorkspace = getCopilotWorkspaceStatus();
-const discoveryPrompts = buildPromptPair({
-  kind: "product-discovery",
-  title: "Neue Produkte außerhalb vorhandener Herstellerlisten finden",
-  problems: ["Bestehende Themengebiete auf reale, noch nicht abgedeckte Produkte prüfen"],
-  missingData: ["Produktidentität", "Primärquellen", "Deutschland-/EU-Verfügbarkeit", "Repository-Abdeckung", "Marktsignale"],
-  acceptanceCriteria: ["Mindestens eine Primärquelle", "Mehrere Quellenbelege", "Validation Score mindestens 60", "Duplikat- und Variantenprüfung"],
-});
-const nichePrompts = buildPromptPair({
-  kind: "niche-opportunity",
-  title: "Strategisch angrenzende Nischen für PfotenTechnik validieren",
-  problems: ["Nur zielgruppennahe, intern verlinkbare und redaktionell glaubwürdige Nischen prüfen"],
-  missingData: ["Suchpotenzial", "Produktlandschaft", "Hersteller", "interne Verlinkbarkeit", "fachliche Risiken"],
-  acceptanceCriteria: ["Niche Fit Score mindestens 65", "Keine medizinische Beratung", "Keine unbelegte Marktbehauptung"],
-});
-const productDiscoveries = productIntelligence.discoveries.map((product) => ({
-  ...product,
-  markdownPrompt: buildProductMarkdownPrompt(product),
-  imagePrompts: buildProductImagePrompts(product),
-}));
 const clientPayload = JSON.stringify({
   defaultRange: payload.defaultRange,
   generatedAt: payload.generatedAt,
@@ -45,11 +21,10 @@ const clientPayload = JSON.stringify({
   source: payload.source,
   diagnostics: payload.diagnostics,
   results,
-  productIntelligence: { ...productIntelligence, discoveries: productDiscoveries },
+  productIntelligence,
   copilotWorkspace,
-  discoveryPrompts,
-  nichePrompts,
-}).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+}, (key, value) => key === "prompt" || key === "codexPrompt" || key === "prompts" ? undefined : value)
+  .replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
 const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(value);
 ---
 <SeoAdminLayout
@@ -199,7 +174,7 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         <div class="product-grid">
           <article class="seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Vorhandene Herstellerdaten</span><h2>Interne Produktkandidaten</h2></div></div>
-            {productDiscoveries.length ? productDiscoveries.map((product) => (
+            {productIntelligence.discoveries.length ? productIntelligence.discoveries.map((product) => (
               <div class="finding product-candidate">
                 <h3>{product.name}</h3><p>{product.manufacturerName} · <code>{product.slug}</code></p>
                 <p>{product.knownData.join(" · ")}</p>
@@ -433,7 +408,7 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     tasks[task.id] = {
       id: task.id, title: task.title, type: task.category, url: task.url || "", query: task.query || "",
       score: task.score, createdAt: previous?.createdAt || now, updatedAt: now, status, note: note || previous?.note || "",
-      dataBasis: task.dataBasis, prompt: task.prompt, codexPrompt: task.codexPrompt || "", history,
+      dataBasis: task.dataBasis, history,
     };
     localStorage.setItem(taskStoreKey, JSON.stringify(tasks));
   };
@@ -487,6 +462,19 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
       if (button) { button.disabled = false; button.textContent = original; }
     }
   };
+  const taskPromptContext = (task) => ({
+    kind: "content-health",
+    title: task.title,
+    affectedFile: task.filePath,
+    problems: [task.rationale].filter(Boolean),
+    existingData: [task.dataBasis, task.url || task.query].flat().filter(Boolean),
+    missingData: [task.nextAction, ...(task.steps || [])].filter(Boolean),
+    acceptanceCriteria: ["Bestehende Architektur, Content-Standards und Slugs respektieren", "Nur belegbare Änderungen vornehmen", "Vorhandene Audits und Build ausführen"],
+  });
+  const copyGeneratedPrompt = async (kind, context, button) => {
+    const completed = await runAdminAction(`prompt.${kind}.generate`, context, button);
+    if (completed?.result?.prompt) await copyText(completed.result.prompt, button);
+  };
 
   const renderLearning = async () => {
     const container = document.getElementById("learning-list");
@@ -537,8 +525,8 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     content.append(meta);
     const steps = element("ol", "task-steps"); task.steps.forEach((step) => steps.append(element("li", "", step))); content.append(steps);
     const actions = element("div", "task-actions");
-    const prompt = element("button", "button secondary", "ChatGPT-Prompt kopieren"); prompt.type = "button"; prompt.addEventListener("click", () => copyText(task.prompt, prompt)); actions.append(prompt);
-    if (task.codexPrompt) { const codex = element("button", "button secondary", "Codex-Prompt kopieren"); codex.type = "button"; codex.addEventListener("click", () => copyText(task.codexPrompt, codex)); actions.append(codex); }
+    const prompt = element("button", "button secondary", "ChatGPT-Prompt kopieren"); prompt.type = "button"; prompt.addEventListener("click", () => copyGeneratedPrompt("chatgpt", taskPromptContext(task), prompt)); actions.append(prompt);
+    const codex = element("button", "button secondary", "Codex-Prompt kopieren"); codex.type = "button"; codex.addEventListener("click", () => copyGeneratedPrompt("codex", taskPromptContext(task), codex)); actions.append(codex);
     [["optimization", "Optimierung"], ["faq", "FAQ"], ["internal-links", "Interne Links"], ["meta", "Meta"], ["schema", "Schema prüfen"]].forEach(([kind, label]) => {
       const action = element("button", "button secondary", label); action.type = "button";
       action.addEventListener("click", async () => {
@@ -589,8 +577,8 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
       const labels = element("div", "opportunity-meta"); labels.append(badge(item.category), badge(`Priorität ${item.priority}`, item.priority), badge(`${item.score}/100`), badge(statusLabel(taskStatus(item.id))));
       card.append(labels, element("h3", "", item.title), element("p", "target", item.url || item.query || ""), element("p", "", item.rationale));
       const action = element("p"); action.append(element("strong", "", "Nächste Aktion: "), document.createTextNode(item.nextAction)); card.append(action);
-      const buttons = element("div", "task-actions"); const prompt = element("button", "button secondary", "Prompt kopieren"); prompt.type = "button"; prompt.addEventListener("click", () => copyText(item.prompt, prompt)); buttons.append(prompt);
-      if (item.codexPrompt) { const codex = element("button", "button secondary", "Codex-Prompt kopieren"); codex.type = "button"; codex.addEventListener("click", () => copyText(item.codexPrompt, codex)); buttons.append(codex); }
+      const buttons = element("div", "task-actions"); const prompt = element("button", "button secondary", "ChatGPT-Prompt"); prompt.type = "button"; prompt.addEventListener("click", () => copyGeneratedPrompt("chatgpt", taskPromptContext(item), prompt)); buttons.append(prompt);
+      const codex = element("button", "button secondary", "Codex-Prompt"); codex.type = "button"; codex.addEventListener("click", () => copyGeneratedPrompt("codex", taskPromptContext(item), codex)); buttons.append(codex);
       card.append(buttons); return card;
     }));
     if (!filtered.length) container.append(element("div", "seo-empty", "Keine Chance entspricht den gewählten Filtern."));
@@ -663,29 +651,62 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
   document.querySelectorAll("[data-range]").forEach((button) => button.addEventListener("click", () => render(button.dataset.range)));
   ["filter-category", "filter-priority", "filter-page-type", "filter-status"].forEach((id) => document.getElementById(id)?.addEventListener("change", renderOpportunities));
   document.getElementById("export-tasks")?.addEventListener("click", () => { const blob = new Blob([JSON.stringify(Object.values(getTasks()), null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const anchor = element("a"); anchor.href = url; anchor.download = `pfotentechnik-seo-aufgaben-${new Date().toISOString().slice(0, 10)}.json`; anchor.click(); URL.revokeObjectURL(url); });
-  document.querySelectorAll("[data-copy-product-prompt]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-copy-product-prompt]").forEach((button) => button.addEventListener("click", async () => {
     const product = advisorData.productIntelligence?.discoveries?.find((item) => item.slug === button.dataset.copyProductPrompt);
-    if (product) copyText(product.markdownPrompt, button);
+    if (product) await copyGeneratedPrompt("codex", {
+      kind: "product-create",
+      title: product.name,
+      affectedFile: `apps/pfotentechnik/src/content/products/${product.slug}.md`,
+      slug: product.slug,
+      manufacturer: product.manufacturerName,
+      existingData: product.knownData,
+      missingData: ["Vollständige Herstellerdaten", "Produktbilder", "Preflight-Freigabe"],
+      comparisons: product.comparisonSuggestions,
+      acceptanceCriteria: ["Nur offizielle Herstellerdaten verwenden", "Produktschema dynamisch prüfen", "Keine Veröffentlichung ohne bestandenen Preflight"],
+    }, button);
   }));
   document.querySelectorAll("[data-product-action]").forEach((button) => button.addEventListener("click", async () => {
     const product = advisorData.productIntelligence?.discoveries?.find((item) => item.slug === button.dataset.slug);
     const completed = await runAdminAction(button.dataset.productAction, { slug: button.dataset.slug, name: button.dataset.name, comparisonSuggestions: product?.comparisonSuggestions || [] }, button);
     if (completed?.result?.prompts) await copyText(completed.result.prompts.map((item) => `${item.role}\nZiel: ${item.target}\n${item.prompt}`).join("\n\n"), button);
   }));
-  const staticPrompts = {
-    "discovery-chatgpt": advisorData.discoveryPrompts?.chatgpt?.prompt,
-    "discovery-codex": advisorData.discoveryPrompts?.codex?.prompt,
-    "niche-chatgpt": advisorData.nichePrompts?.chatgpt?.prompt,
-    "niche-codex": advisorData.nichePrompts?.codex?.prompt,
+  const staticPromptContexts = {
+    discovery: {
+      kind: "product-discovery",
+      title: "Neue Produkte außerhalb vorhandener Herstellerlisten finden",
+      problems: ["Bestehende Themengebiete auf reale, noch nicht abgedeckte Produkte prüfen"],
+      missingData: ["Produktidentität", "Primärquellen", "Deutschland-/EU-Verfügbarkeit", "Repository-Abdeckung", "Marktsignale"],
+      acceptanceCriteria: ["Mindestens eine Primärquelle", "Mehrere Quellenbelege", "Validation Score mindestens 60", "Duplikat- und Variantenprüfung"],
+    },
+    niche: {
+      kind: "niche-opportunity",
+      title: "Strategisch angrenzende Nischen für PfotenTechnik validieren",
+      problems: ["Nur zielgruppennahe, intern verlinkbare und redaktionell glaubwürdige Nischen prüfen"],
+      missingData: ["Suchpotenzial", "Produktlandschaft", "Hersteller", "interne Verlinkbarkeit", "fachliche Risiken"],
+      acceptanceCriteria: ["Niche Fit Score mindestens 65", "Keine medizinische Beratung", "Keine unbelegte Marktbehauptung"],
+    },
   };
-  document.querySelectorAll("[data-copy-static-prompt]").forEach((button) => button.addEventListener("click", () => {
-    const prompt = staticPrompts[button.dataset.copyStaticPrompt];
-    if (prompt) copyText(prompt, button);
+  document.querySelectorAll("[data-copy-static-prompt]").forEach((button) => button.addEventListener("click", async () => {
+    const [contextKey, kind] = String(button.dataset.copyStaticPrompt || "").split("-");
+    const context = staticPromptContexts[contextKey];
+    if (context && kind) await copyGeneratedPrompt(kind, context, button);
   }));
-  document.querySelectorAll("[data-health-prompt]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-health-prompt]").forEach((button) => button.addEventListener("click", async () => {
     const product = advisorData.productIntelligence?.health?.find((item) => item.slug === button.dataset.healthPrompt);
-    const prompt = product?.prompts?.[button.dataset.promptKind]?.prompt;
-    if (prompt) copyText(prompt, button);
+    if (!product) return;
+    const missing = product.checks.filter((check) => !check.ok);
+    await copyGeneratedPrompt(button.dataset.promptKind, {
+      kind: "product-health",
+      title: product.title,
+      affectedFile: `apps/pfotentechnik/src/content/products/${product.slug}.md`,
+      slug: product.slug,
+      manufacturer: product.manufacturer,
+      category: product.category,
+      problems: missing.map((check) => `${check.severity}: ${check.label}`),
+      existingData: product.checks.filter((check) => check.ok).map((check) => `${check.label}: ${check.evidence}`),
+      missingData: missing.map((check) => `${check.label}: ${check.evidence}`),
+      acceptanceCriteria: ["Nur nachweisbare Daten ergänzen", "Bestehendes Produktschema respektieren", "Keine URL oder Slug ändern"],
+    }, button);
   }));
   document.querySelectorAll("[data-health-check]").forEach((button) => button.addEventListener("click", async () => {
     const product = advisorData.productIntelligence?.health?.find((item) => item.slug === button.dataset.productSlug);
@@ -705,10 +726,18 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
     }, button);
     if (completed?.result?.prompt) await copyText(completed.result.prompt, button);
   }));
-  document.querySelectorAll("[data-gap-prompt]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-gap-prompt]").forEach((button) => button.addEventListener("click", async () => {
     const gap = advisorData.productIntelligence?.coverageGaps?.find((item) => item.id === button.dataset.gapPrompt);
-    const prompt = gap?.prompts?.[button.dataset.promptKind]?.prompt;
-    if (prompt) copyText(prompt, button);
+    if (!gap) return;
+    await copyGeneratedPrompt(button.dataset.promptKind, {
+      kind: "content-gap",
+      title: gap.title,
+      affectedFile: `apps/pfotentechnik/src/content/products/${gap.slug}.md`,
+      slug: gap.slug,
+      problems: [gap.evidence],
+      missingData: [gap.recommendation],
+      acceptanceCriteria: ["Repository-Abdeckung zuerst prüfen", "Nur fachlich passende Beziehung ergänzen", "Keine automatische Veröffentlichung"],
+    }, button);
   }));
   document.querySelectorAll("[data-candidate-action]").forEach((button) => button.addEventListener("click", async () => {
     const completed = await runAdminAction(button.dataset.candidateAction, { candidateId: button.dataset.candidateId }, button);

@@ -1,6 +1,4 @@
 import { getCollection } from "astro:content";
-import { buildPromptPair } from "../../seo-copilot/prompts";
-import type { PromptResult } from "../../seo-copilot/types";
 
 export type ProductDiscovery = {
   slug: string;
@@ -30,11 +28,8 @@ export type ProductHealth = {
     severity: "kritisch" | "wichtig" | "optimierung";
     points: number;
     evidence: string;
-    chatgptPrompt?: string;
-    codexPrompt?: string;
   }>;
   gaps: string[];
-  prompts: { chatgpt: PromptResult; codex: PromptResult };
 };
 
 export type ProductCoverageGap = {
@@ -44,7 +39,6 @@ export type ProductCoverageGap = {
   kind: "kein-vergleich" | "keine-herstellerseite" | "keine-kategorie" | "großer-hund-ohne-vergleich";
   evidence: string;
   recommendation: string;
-  prompts: { chatgpt: PromptResult; codex: PromptResult };
 };
 
 export type ProductIntelligence = {
@@ -209,23 +203,8 @@ export const loadProductIntelligence = async (): Promise<ProductIntelligence> =>
     ];
     const weightedChecks = withPoints(rawChecks);
     const missing = weightedChecks.filter((check) => !check.ok);
-    const commonContext = {
-      kind: "product-health" as const,
-      title: data.title,
-      affectedFile: `apps/pfotentechnik/src/content/products/${data.slug}.md`,
-      slug: data.slug,
-      manufacturer: data.manufacturer.name,
-      category: data.category.label,
-      existingData: weightedChecks.filter((check) => check.ok).map((check) => `${check.label}: ${check.evidence}`),
-      missingData: missing.map((check) => `${check.label}: ${check.evidence}`),
-      problems: missing.map((check) => `${check.severity}: ${check.label}`),
-      comparisons: data.comparisons,
-      guides: [...body.matchAll(/\]\((\/(?!produkt\/|vergleiche\/|hersteller\/)[^)]+)\)/g)].map((match) => match[1]),
-      acceptanceCriteria: ["Nur nachweisbare Daten ergänzen", "Bestehendes Produktschema respektieren", "Keine URL oder Slug ändern"],
-    };
     const checks = weightedChecks;
     const score = Math.round(checks.reduce((sum, check) => sum + (check.ok ? check.points : 0), 0));
-    const prompts = buildPromptPair(commonContext);
     return {
       slug: data.slug,
       title: data.title,
@@ -235,28 +214,13 @@ export const loadProductIntelligence = async (): Promise<ProductIntelligence> =>
       status: score >= 95 ? "vollständig" : score >= 85 ? "optimierung" : score >= 65 ? "wichtig" : "kritisch",
       checks,
       gaps: missing.map((check) => check.label),
-      prompts,
     };
   }).sort((a, b) => a.score - b.score || a.title.localeCompare(b.title, "de"));
 
   const coverageGaps: ProductCoverageGap[] = products.flatMap((entry) => {
     const data = entry.data;
     const gaps: ProductCoverageGap[] = [];
-    const addGap = (gap: Omit<ProductCoverageGap, "prompts">) => {
-      const prompts = buildPromptPair({
-        kind: "content-gap",
-        title: data.title,
-        affectedFile: `apps/pfotentechnik/src/content/products/${data.slug}.md`,
-        slug: data.slug,
-        manufacturer: data.manufacturer.name,
-        category: data.category.label,
-        problems: [gap.evidence],
-        missingData: [gap.recommendation],
-        comparisons: data.comparisons,
-        acceptanceCriteria: ["Bestehende Repository-Abdeckung zuerst prüfen", "Nur fachlich passende Beziehung ergänzen", "Keine automatische Veröffentlichung"],
-      });
-      gaps.push({ ...gap, prompts });
-    };
+    const addGap = (gap: ProductCoverageGap) => gaps.push(gap);
     if (!data.comparisons.length) addGap({ id: `comparison|${data.slug}`, slug: data.slug, title: data.title, kind: "kein-vergleich", evidence: "Frontmatter enthält keine Vergleichszuordnung.", recommendation: "Passende bestehende Vergleiche fachlich prüfen; nicht automatisch zuordnen." });
     if (!manufacturerBySlug.has(data.manufacturer.slug)) addGap({ id: `manufacturer|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-herstellerseite", evidence: `Hersteller-Slug „${data.manufacturer.slug}“ hat keine Collection-Seite.`, recommendation: "Herstelleridentität prüfen und nur mit belastbaren Quellen eine Herstellerseite planen." });
     if (!data.category.key || !data.category.label) addGap({ id: `category|${data.slug}`, slug: data.slug, title: data.title, kind: "keine-kategorie", evidence: "Kategorie ist nicht vollständig gepflegt.", recommendation: "Vorhandene Kategorieterminologie übernehmen." });

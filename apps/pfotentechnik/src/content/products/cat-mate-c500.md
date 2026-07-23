@@ -94,9 +94,9 @@ weaknesses:
   - "keine Fernkontrolle"
   - "keine Zugangskontrolle"
 experience:
-  summary: "Die Kühlwirkung ist begrenzt und hängt stark von Raumtemperatur, Futtertemperatur und vorgekühlten Akkus ab."
-  methodology: "Redaktionelle Einordnung anhand der offiziellen Closer-Pets-Produktseite; kein eigener Langzeittest."
-  maintenance: "Futtereinsatz und Deckel nach Nassfutter gründlich reinigen. Kühlakkus vollständig durchfrieren und Dichtflächen sauber halten."
+  summary: "Der Cat Mate C500 setzt bewusst auf eine einfache, lokale Zeitsteuerung ohne App oder WLAN. Für mehrere Nassfutterportionen über den Tag ist dieses Konzept häufig praktischer als klassische Vorratsautomaten."
+  methodology: "Redaktionelle Einordnung anhand offizieller Herstellerinformationen und technischer Produktdaten; kein eigener Langzeittest."
+  maintenance: "Futtereinsatz und Deckel nach jeder Nassfütterung gründlich reinigen. Kühlakkus vollständig durchfrieren lassen und Dichtflächen sauber halten."
 alternatives:
   - "cat-mate-c300"
   - "surefeed-microchip-pet-feeder"
@@ -142,6 +142,22 @@ faq:
     answer: "Closer Pets nennt mit drei AA-Batterien bis zu ungefähr zwölf Monate."
   - question: "Kann der Einsatz in die Spülmaschine?"
     answer: "Ja. Deckel und Futterschale sind laut Hersteller spülmaschinengeeignet."
+
+- question: "Ist der Cat Mate C500 für Nassfutter geeignet?"
+  answer: "Ja. Der Automat wurde speziell für mehrere Portionen Nass-, Trocken- oder Mischfutter entwickelt. Die mitgelieferten Kühlakkus können das Erwärmen verlangsamen, ersetzen jedoch keine aktive Kühlung."
+- question: "Benötigt der Cat Mate C500 WLAN oder eine App?"
+  answer: "Nein. Alle Mahlzeiten werden direkt am Gerät programmiert. Eine Internetverbindung oder Smartphone-App ist nicht erforderlich."
+- question: "Kann der Cat Mate C500 für zwei Katzen genutzt werden?"
+  answer: "Das hängt vom Fressverhalten der Tiere ab. Teilen beide Katzen zuverlässig ihre Portionen, kann der Automat geeignet sein. Für kontrollierte Einzelportionen oder Futterdiebe ist er jedoch nicht ausgelegt."
+- question: "Ist der Cat Mate C500 laut?"
+  answer: "Beim Wechsel zum nächsten Fach ist ein kurzes Motorgeräusch hörbar. Im normalen Betrieb arbeitet der Automat vergleichsweise leise."
+
+- question: "Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?"
+  answer: "Ja. Die einzelnen Fächer können unterschiedlich befüllt werden, solange das Futter sicher gelagert werden kann."
+- question: "Ist der Cat Mate C500 für Reisen geeignet?"
+  answer: "Für kurze Abwesenheiten kann er sinnvoll sein. Bei langen Zeiträumen oder hohen Temperaturen sollte insbesondere Nassfutter nicht über viele Stunden im Gerät verbleiben."
+- question: "Muss der Automat mit dem Internet verbunden werden?"
+  answer: "Nein. Sämtliche Einstellungen erfolgen direkt am Gerät."
 useCase: "Für Katzen und kleine Hunde mit Nass- oder Mischfütterung"
 capacity: "Fünf Fächer mit je 155 g"
 expandable: "Nicht vorgesehen"
@@ -149,9 +165,9 @@ features:
   - "Vier programmierbare Öffnungszeiten"
   - "Nass- und Trockenfutter"
   - "Zwei Kühlakkus"
----
 
-Der Cat Mate C500 ist kein smarter Futterautomat, sondern ein zeitgesteuerter Drehteller. Gerade für Nassfutter ist diese einfache Bauart oft sinnvoller als ein großer Vorratsbehälter.
+
+Der Cat Mate C500 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), verfolgt jedoch ein anderes Konzept als viele moderne WLAN-Modelle. Statt eines großen Vorratsbehälters arbeitet er mit einem zeitgesteuerten Drehteller. Diese Bauweise eignet sich besonders für mehrere Nassfutterportionen über den Tag und kommt vollständig ohne App oder Internetverbindung aus.
 
 ## Fünf Fächer, vier Timer
 
@@ -159,6 +175,41 @@ Ein Fach ist zu Beginn zugänglich. Für die übrigen vier Fächer lassen sich �
 
 ## Kühlung realistisch bewerten
 
-Die mitgelieferten Akkus helfen, Futter kühl zu halten, liefern aber keine kontrollierte Temperatur. Bei Hitze oder langen Standzeiten bleibt besondere Vorsicht nötig.
+Die beiden mitgelieferten Kühlakkus verzögern lediglich das Erwärmen des Futters. Sie ersetzen weder einen Kühlschrank noch eine aktive Kühlung. Wie lange Nassfutter sicher verwendet werden kann, hängt unter anderem von Raumtemperatur, Ausgangstemperatur des Futters und der Vorbereitung der Kühlakkus ab. An heißen Sommertagen oder bei langen Standzeiten ist besondere Vorsicht geboten.
+
+## Sinnvolles Zubehör
+
+Für den Cat Mate C500 sind passende Edelstahleinsätze als Zubehör erhältlich. Sie nehmen Gerüche schlechter an als Kunststoff und erleichtern die Reinigung nach der Nassfütterung. Gerade bei täglichem Einsatz können sie hygienische Vorteile bieten. Unabhängig vom Material sollten Futterschalen regelmäßig gründlich gereinigt und vollständig getrocknet werden.
+
+
+## Für wen eignet sich der Cat Mate C500?
+
+Der Cat Mate C500 eignet sich vor allem für Katzen sowie kleine Hunde, die mehrere Portionen Nass-, Trocken- oder Mischfutter über den Tag verteilt erhalten sollen. Jede Mahlzeit wird bereits vor dem Befüllen portioniert. Dadurch lässt sich die Futtermenge besser kontrollieren als bei klassischen Vorratsautomaten.
+
+Wer dagegen Futter spontan per Smartphone ausgeben, den Füllstand überwachen oder Benachrichtigungen erhalten möchte, ist mit einem vernetzten Modell aus unserem Ratgeber zu [Smarten Futterautomaten](/smarte-futterautomaten/) meist besser beraten.
+
+## Das solltest du vor dem Kauf wissen
+
+| Gut geeignet | Weniger geeignet |
+| --- | --- |
+| Mehrere Nassfutterportionen | Lange Abwesenheiten bei hohen Temperaturen |
+| Einfache Bedienung ohne App | Fernsteuerung per Smartphone |
+| Seniorenkatzen | Haushalte mit Futterneid |
+| Batteriebetrieb | Individuelle Tiererkennung |
+
+## Lokale Steuerung statt Cloud
+
+Der Cat Mate C500 arbeitet vollständig offline. Dadurch gibt es keine Abhängigkeit von WLAN, Apps oder Cloud-Diensten. Das reduziert mögliche Fehlerquellen und macht die Bedienung unkompliziert. Der Verzicht auf smarte Funktionen ist deshalb nicht grundsätzlich ein Nachteil, sondern eine bewusste Gerätephilosophie.
+
+## Unterschiede zu ähnlichen Modellen
+
+* **Cat Mate C300:** kompakter und für weniger Mahlzeiten ausgelegt.
+* **PETLIBRO Polar:** aktive Kühlung und App-Steuerung, dafür deutlich teurer.
+* **SureFeed Microchip Feeder:** kontrolliert den Zugang über den Mikrochip, bietet jedoch keine zeitgesteuerte Mehrfachfütterung.
+
+## Redaktionelles Fazit
+
+Der Cat Mate C500 gehört nicht zu den technisch umfangreichsten Futterautomaten. Seine Stärke liegt vielmehr in einer zuverlässigen, einfach verständlichen Zeitsteuerung für mehrere vorbereitete Portionen. Wer regelmäßig Nassfutter füttert und keine App benötigt, erhält ein ausgereiftes Konzept mit geringem Wartungsaufwand. Für Haushalte mit mehreren Tieren oder dem Wunsch nach Fernsteuerung sind moderne WLAN-Futterautomaten jedoch häufig die bessere Wahl.
+
 
 **Quelle:** [Cat Mate C500](https://closerpets.com/products/five-meal-automatic-pet-feeder-with-digital-timer-c500-petmate). Bild: redaktionelle Visualisierung.
