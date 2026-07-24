@@ -25,7 +25,7 @@ const { scenarios } = Astro.props;
           </h3>
           <p>{scenario.reason}</p>
           <div class="scenario-meta">
-            <span class="scenario-match">Beste Übereinstimmung</span>
+            <span>Score {Math.round(scenario.score)}</span>
             {scenario.alternative && (
               <a href={scenario.alternative.href}>
                 Alternative: {scenario.alternative.title}
