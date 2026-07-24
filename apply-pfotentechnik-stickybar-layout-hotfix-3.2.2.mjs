@@ -1,48 +1,61 @@
----
-import type { ComparisonProduct } from "../../comparison/model";
-import { getPriceDisplay } from "../../comparison/price";
+#!/usr/bin/env node
+/**
+ * PfotenTechnik Sticky Bar Layout Hotfix 3.2.2
+ *
+ * Usage:
+ *   node apply-pfotentechnik-stickybar-layout-hotfix-3.2.2.mjs --check
+ *   node apply-pfotentechnik-stickybar-layout-hotfix-3.2.2.mjs
+ */
 
-type Props = {
-  product?: ComparisonProduct;
-};
+import fs from "node:fs";
+import path from "node:path";
 
-const { product } = Astro.props as Props;
-const price = product ? getPriceDisplay(product.price) : null;
----
+const VERSION = "3.2.2";
+const CHECK = process.argv.includes("--check");
+const TARGET = "packages/affiliate-core/src/components/comparison/ComparisonStickyBar.astro";
+const OLD_START = "/* comparison-stickybar-theme-3.2.1 */";
+const OLD_END = "/* end comparison-stickybar-theme-3.2.1 */";
+const NEW_START = "/* comparison-stickybar-layout-hotfix-3.2.2 */";
+const NEW_END = "/* end comparison-stickybar-layout-hotfix-3.2.2 */";
 
-{product && (
-  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung">
-    <div>
-      <span>Top-Empfehlung</span>
-      <strong>{product.title}</strong>
-    </div>
+function findRoot(start = process.cwd()) {
+  let current = path.resolve(start);
+  while (true) {
+    if (fs.existsSync(path.join(current, TARGET))) return current;
+    const parent = path.dirname(current);
+    if (parent === current) throw new Error("Repository-Wurzel nicht gefunden.");
+    current = parent;
+  }
+}
 
-    <div>
-      <a
-        href={product.href}
-        class="comparison-button comparison-button--secondary"
-      >
-        Test lesen
-      </a>
+function removeBlock(source, startMarker, endMarker) {
+  const start = source.indexOf(startMarker);
+  if (start === -1) return source;
+  const end = source.indexOf(endMarker, start);
+  if (end === -1) throw new Error(`Unvollständiger Style-Block: ${startMarker}`);
+  return source.slice(0, start).trimEnd() + "\n" + source.slice(end + endMarker.length).trimStart();
+}
 
-      {price?.url && (
-        <a
-          href={price.url}
-          class="comparison-button"
-          rel={price.rel}
-          target={price.target}
-          data-affiliate-link
-        >
-          {price.label}
-        </a>
-      )}
-    </div>
-  </aside>
-)}
+const root = findRoot();
+const file = path.join(root, TARGET);
+const original = fs.readFileSync(file, "utf8");
 
-<style is:global>
+for (const required of [
+  'class="comparison-sticky-bar"',
+  "Top-Empfehlung",
+  "comparison-button--secondary",
+  "<style is:global>"
+]) {
+  if (!original.includes(required)) {
+    throw new Error(`Unbekannter Repository-Stand. Fehlend: ${required}`);
+  }
+}
 
-/* comparison-stickybar-layout-hotfix-3.2.2 */
+let next = removeBlock(original, OLD_START, OLD_END);
+next = removeBlock(next, NEW_START, NEW_END);
+
+const css = `
+${NEW_START}
 .comparison-sticky-bar {
   position: fixed;
   z-index: 90;
@@ -181,5 +194,44 @@ body.dark .comparison-sticky-bar,
     box-shadow: 0 14px 38px rgba(0, 0, 0, .32);
   }
 }
-/* end comparison-stickybar-layout-hotfix-3.2.2 */
-</style>
+${NEW_END}
+`;
+
+const styleClose = next.lastIndexOf("</style>");
+if (styleClose === -1) throw new Error("Style-Block nicht gefunden.");
+
+next =
+  next.slice(0, styleClose).trimEnd() +
+  "\n\n" +
+  css.trim() +
+  "\n" +
+  next.slice(styleClose);
+
+if (next === original) {
+  console.log(`[stickybar-layout-hotfix-${VERSION}] Bereits installiert.`);
+  process.exit(0);
+}
+
+console.log(`[stickybar-layout-hotfix-${VERSION}] Ziel: ${TARGET}`);
+console.log(`[stickybar-layout-hotfix-${VERSION}] Modus: ${CHECK ? "--check" : "installieren"}`);
+
+if (CHECK) {
+  console.log("Check erfolgreich. Eine Datei würde geändert.");
+  process.exit(0);
+}
+
+const backup = path.join(
+  root,
+  ".patch-backups",
+  `stickybar-layout-hotfix-${VERSION}-${Date.now()}`,
+  TARGET
+);
+
+fs.mkdirSync(path.dirname(backup), { recursive: true });
+fs.copyFileSync(file, backup);
+fs.writeFileSync(file, next, "utf8");
+
+console.log("Patch erfolgreich installiert.");
+console.log(`Backup: ${backup}`);
+console.log("Jetzt ausführen:");
+console.log("  npm run build:pfotentechnik");

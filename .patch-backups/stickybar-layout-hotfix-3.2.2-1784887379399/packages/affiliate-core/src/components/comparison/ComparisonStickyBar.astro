@@ -1,0 +1,105 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+type Props = {
+  product?: ComparisonProduct;
+};
+
+const { product } = Astro.props as Props;
+const price = product ? getPriceDisplay(product.price) : null;
+---
+
+{product && (
+  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung">
+    <div>
+      <span>Top-Empfehlung</span>
+      <strong>{product.title}</strong>
+    </div>
+
+    <div>
+      <a
+        href={product.href}
+        class="comparison-button comparison-button--secondary"
+      >
+        Test lesen
+      </a>
+
+      {price?.url && (
+        <a
+          href={price.url}
+          class="comparison-button"
+          rel={price.rel}
+          target={price.target}
+          data-affiliate-link
+        >
+          {price.label}
+        </a>
+      )}
+    </div>
+  </aside>
+)}
+
+<style is:global>
+/* comparison-stickybar-theme-3.2.1 */
+.comparison-sticky-bar {
+  position: fixed;
+  z-index: 90;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  left: max(1rem, env(safe-area-inset-left));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding: .8rem;
+  border: 1px solid var(--comparison-line);
+  border-radius: 1.15rem;
+  color: var(--comparison-text);
+  background: color-mix(in srgb, var(--comparison-surface) 96%, transparent);
+  box-shadow: 0 -10px 35px rgba(20, 32, 26, .12);
+  backdrop-filter: blur(16px);
+}
+.comparison-sticky-bar > div { min-width: 0; }
+.comparison-sticky-bar > div:first-child { display: grid; gap: .12rem; padding-inline: .25rem; }
+.comparison-sticky-bar > div:first-child span { color: var(--comparison-muted); font-size: .72rem; font-weight: 750; line-height: 1.2; }
+.comparison-sticky-bar > div:first-child strong { min-width: 0; overflow: hidden; color: var(--comparison-text); font-size: .95rem; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.comparison-sticky-bar > div:last-child { display: grid; grid-template-columns: repeat(2, minmax(138px, auto)); gap: .65rem; }
+.comparison-sticky-bar .comparison-button { min-height: 46px; padding-inline: 1.1rem; }
+.comparison-sticky-bar .comparison-button--secondary {
+  color: var(--comparison-accent) !important;
+  border-color: color-mix(in srgb, var(--comparison-accent) 42%, var(--comparison-line)) !important;
+  background: var(--comparison-surface) !important;
+}
+.comparison-sticky-bar .comparison-button--secondary:hover { color: var(--comparison-text) !important; background: var(--comparison-surface-soft) !important; }
+.comparison-sticky-bar .comparison-button:focus-visible { outline: 3px solid var(--comparison-focus); outline-offset: 2px; }
+.scenario-match { color: var(--comparison-accent); }
+@media (max-width: 760px) {
+  .comparison-sticky-bar { right: .75rem; bottom: max(.75rem, env(safe-area-inset-bottom)); left: .75rem; grid-template-columns: minmax(0, 1fr); gap: .65rem; padding: .65rem; border-radius: 1rem; }
+  .comparison-sticky-bar > div:first-child { display: none; }
+  .comparison-sticky-bar > div:last-child { grid-template-columns: minmax(0, .82fr) minmax(0, 1.45fr); width: 100%; }
+  .comparison-sticky-bar .comparison-button { width: 100%; min-width: 0; min-height: 48px; padding: .7rem .65rem; font-size: .82rem; line-height: 1.2; }
+}
+@media (max-width: 390px) { .comparison-sticky-bar > div:last-child { grid-template-columns: minmax(0, 1fr); } }
+html[data-theme="dark"] .comparison-sticky-bar,
+html.dark .comparison-sticky-bar,
+body.dark .comparison-sticky-bar,
+[data-theme="dark"] .comparison-sticky-bar {
+  border-color: var(--comparison-line);
+  color: var(--comparison-text);
+  background: color-mix(in srgb, var(--comparison-surface-raised) 96%, transparent);
+  box-shadow: 0 -12px 38px rgba(0, 0, 0, .34);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.light) .comparison-sticky-bar {
+    border-color: var(--comparison-line);
+    color: var(--comparison-text);
+    background: color-mix(in srgb, var(--comparison-surface-raised) 96%, transparent);
+    box-shadow: 0 -12px 38px rgba(0, 0, 0, .34);
+  }
+}
+/* end comparison-stickybar-theme-3.2.1 */
+</style>
