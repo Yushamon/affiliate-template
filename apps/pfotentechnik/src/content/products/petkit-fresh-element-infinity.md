@@ -130,6 +130,18 @@ features:
   - "5-Liter-Vorratsbehälter"
   - "PETKIT-App mit Fütterungsplänen und Statusmeldungen"
   - "Edelstahlnapf mit integrierter Gewichtserfassung"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen.

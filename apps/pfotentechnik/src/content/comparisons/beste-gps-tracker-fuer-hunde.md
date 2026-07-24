@@ -85,6 +85,9 @@ recommendation:
   alternativeSlug: "weenect-xs"
   title: "Der beste Tracker hängt vom Einsatzzweck ab"
   text: "Tractive DOG 6 eignet sich für die meisten Familienhunde. Kleine Hunde profitieren vom leichteren Weenect XS, große Hunde vom DOG 6 XL und Jagdhunde vom Garmin Alpha T20."
+tableTitle: "Direkter Vergleich"
+cardsTitle: "Produkte im Überblick"
+faq: []
 ---
 
 # Beste GPS-Tracker für Hunde

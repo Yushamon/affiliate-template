@@ -78,6 +78,19 @@ useCase: "Für zwei Tiere mit ähnlichem Trockenfutterbedarf"
 capacity: "5 Liter"
 expandable: "Verstellbare Doppelschale"
 features: ["Zwei Edelstahlnäpfe", "Verstellbarer Mahlzeitenteiler", "App-Steuerung"]
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+  editorial:
+    rating: 4.5
+    score: 90
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO Granary Dual ist technisch der bekannte PLAF103 mit Doppelschale und Futterteiler. Er ist für gemeinsame, nicht für individuell kontrollierte Fütterung gedacht.

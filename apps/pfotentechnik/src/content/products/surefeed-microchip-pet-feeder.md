@@ -147,6 +147,18 @@ features:
   - "Mikrochip-Zugang"
   - "Nass- und Trockenfutter"
   - "Ohne WLAN"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.6
+    score: 72
+    productStatus: "unknown"
 ---
 
 Der SureFeed Microchip Pet Feeder ist kein klassischer Futterautomat. Er dosiert keine Mahlzeiten, sondern kontrolliert, welches Tier Zugang zum Napf erhält.

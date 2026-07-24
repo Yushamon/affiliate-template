@@ -149,6 +149,18 @@ faq:
     answer: "Nein. Der Solo SE arbeitet ohne App und ohne einstellbare Betriebsmodi."
   - question: "Kann der Brunnen in die Spülmaschine?"
     answer: "Nein. PETKIT gibt an, dass die Teile nicht spülmaschinengeeignet sind."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.8
+    score: 76
+    productStatus: "unknown"
 ---
 
 Der Eversweet Solo SE ist die einfachste aktuelle PETKIT-Variante. Er verzichtet auf App, Akku und variable Modi und konzentriert sich auf kontinuierlichen Wasserfluss.

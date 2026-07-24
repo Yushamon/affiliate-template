@@ -141,6 +141,20 @@ features:
   - "5-Liter-Vorrat"
   - "App-Steuerung"
   - "Edelstahl-Napf"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    reservoirLiters: 6
+    largeDogFit: "conditional"
+  editorial:
+    rating: 3.8
+    score: 75
+    productStatus: "unknown"
 ---
 
 Der HoneyGuardian S305D ist eine funktionale Alternative zu bekannteren Markenmodellen. Seine Stärke liegt im Verhältnis aus Kapazität, App-Steuerung und Preis.

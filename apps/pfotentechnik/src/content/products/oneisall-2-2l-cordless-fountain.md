@@ -144,6 +144,18 @@ faq:
     answer: "oneisall bewirbt bis zu 30 Tage. Die tatsächliche Laufzeit hängt von Modus und Nutzung ab."
   - question: "Wie oft muss der Filter gewechselt werden?"
     answer: "oneisall empfiehlt etwa alle zwei bis vier Wochen."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.8
+    score: 76
+    productStatus: "unknown"
 ---
 
 Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.

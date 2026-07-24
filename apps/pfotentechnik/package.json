@@ -54,7 +54,15 @@
     "product:draft": "node scripts/seo-copilot-cli.mjs draft",
     "audit:product-standard-2": "node scripts/audit-product-standard-2.mjs",
     "audit:product-standard-2:strict": "node scripts/audit-product-standard-2.mjs --strict",
-    "audit:product-engine": "node scripts/audit-product-engine.mjs"
+    "audit:product-engine": "node scripts/audit-product-engine.mjs",
+    "comparison:audit": "node scripts/comparison-platform/audit.mjs",
+    "comparison:audit:strict": "node scripts/comparison-platform/audit.mjs --strict",
+    "comparison:report": "node scripts/comparison-platform/report.mjs",
+    "comparison:integrity": "node scripts/comparison-platform/integrity.mjs",
+    "comparison:metadata": "node scripts/comparison-platform/metadata.mjs",
+    "comparison:metadata:check": "node scripts/comparison-platform/metadata.mjs --check",
+    "comparison:fix": "node scripts/comparison-platform/autofix.mjs",
+    "comparison:fix:check": "node scripts/comparison-platform/autofix.mjs --check"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

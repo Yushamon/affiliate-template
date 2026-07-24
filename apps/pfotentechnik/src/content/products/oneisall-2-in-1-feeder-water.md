@@ -207,6 +207,20 @@ priceCategory: "midrange"
 useCase: "Kombinierter Futter- und Wasserplatz für eine Katze mit Trockenfutter"
 capacity: "5 Liter Futter plus 3,5 Liter Wasser"
 expandable: "Trockenmittelbeutel als Verbrauchsmaterial; keine funktionale Erweiterung vorgesehen"
+comparisonData:
+  general:
+    animal:
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+    priceTier: "midrange"
+  editorial:
+    rating: 3.9
+    score: 79
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der Oneisall PF14 ist keine Kombination aus Futterautomat und Trinkbrunnen. Er verbindet einen programmierbaren Trockenfutterspender mit einem separaten Schwerkraft-Wassertank.

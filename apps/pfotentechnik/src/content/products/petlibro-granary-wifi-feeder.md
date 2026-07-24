@@ -167,6 +167,25 @@ features:
   - "Bis zu zehn Mahlzeiten täglich"
   - "App-Steuerung und Fütterungsprotokoll"
   - "Batterie-Backup"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+    reservoirLiters: 5
+    portionGrams: 10
+    maxPortionsPerMeal: 50
+    maxMealGrams: 500
+    kibbleMaxMm: 15
+    largeDogFit: "technical-fit"
+  editorial:
+    rating: 4.1
+    score: 82
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.

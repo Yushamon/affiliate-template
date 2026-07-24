@@ -82,6 +82,25 @@ features: ["Zigbee 3.0", "Lokale Fütterungspläne", "Smart-Home-Szenen", "Batte
 priceCategory: midrange
 useCase: "Smart-Home-Futterautomat"
 capacity: "4 Liter"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+    reservoirLiters: 4
+    portionGrams: 10
+    kibbleMaxMm: 12
+    largeDogFit: "conditional"
+    priceTier: "midrange"
+  editorial:
+    rating: 4.4
+    score: 88
+    priceCategory: "midrange"
+    productStatus: "unknown"
 ---
 
 Der Aqara Smart Pet Feeder C1 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), richtet sich jedoch vor allem an Nutzer des Aqara-Ökosystems. Statt möglichst vieler Komfortfunktionen stehen lokale Zeitpläne, Zigbee-Automationen und ein Batterie-Backup im Mittelpunkt. Wer bereits Aqara-Komponenten nutzt, erhält dadurch einen besonders zuverlässigen Futterautomaten auch dann, wenn die Internetverbindung ausfällt.

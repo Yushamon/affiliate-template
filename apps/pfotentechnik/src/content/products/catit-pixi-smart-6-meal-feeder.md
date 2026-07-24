@@ -191,6 +191,18 @@ priceCategory: "midrange"
 useCase: "Zeitgesteuerte kleine Nass- und Trockenfuttermahlzeiten für Katzen"
 capacity: "6 × 170 ml"
 expandable: "Zusätzliche Kühlakkus und Ersatz-Futtereinsatz separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "cat"
+    petSize: []
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4
+    score: 80
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der Catit PIXI Smart 6-Meal Feeder ist kein Vorratsautomat, der Futter grammweise aus einem Behälter ausgibt. Stattdessen werden sechs Fächer vorab von Hand befüllt. Das ist bei Nassfutter, Medikamentengaben oder genau abgewogenen Portionen oft sinnvoller als ein klassischer Trockenfutterspender.

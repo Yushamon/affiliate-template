@@ -75,6 +75,22 @@ features: ["Lokaler Offline-Zeitplan", "Förderband", "Slow Feed", "24-Cup-Vorra
 priceCategory: midrange
 useCase: "Offline-Fütterung mit großen Portionen"
 capacity: "24 Cups / etwa 5,7 Liter"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+      - "large"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.3
+    score: 86
+    priceCategory: "midrange"
+    productStatus: "unknown"
 ---
 
 Der PetSafe Healthy Pet Simply Feed ist funktional älter als viele App-Modelle, bleibt aber durch seinen Fördermechanismus relevant. Wer WLAN bewusst vermeiden möchte und größere Portionen benötigt, bekommt mehr Spielraum als bei vielen kompakten Rotorautomaten.

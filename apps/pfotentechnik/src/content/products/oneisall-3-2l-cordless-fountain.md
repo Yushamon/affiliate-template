@@ -214,6 +214,20 @@ priceCategory: "midrange"
 useCase: "Kabellose Wasserversorgung für Katzen und kleine Hunde mit größerer Reserve"
 capacity: "3,2 Liter"
 expandable: "Ersatzfilter und Vorfilterschwämme separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.1
+    score: 81
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.

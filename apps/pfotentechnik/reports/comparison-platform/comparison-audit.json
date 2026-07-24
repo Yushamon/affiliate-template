@@ -1,0 +1,3387 @@
+{
+  "generatedAt": "2026-07-24T07:54:21.981Z",
+  "version": "2.2.0",
+  "summary": {
+    "comparisons": 12,
+    "products": 65,
+    "manufacturers": 14,
+    "usedProducts": 40,
+    "productCoveragePercent": 61.5,
+    "errors": 19,
+    "warnings": 299,
+    "qualityScore": 0
+  },
+  "byCode": [
+    {
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "count": 8,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "ALTERNATIVE_NOT_IN_ITEMS",
+      "count": 3,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "ITEM_SLUG_MISSING",
+      "count": 3,
+      "category": "structure",
+      "level": "error"
+    },
+    {
+      "code": "WINNER_NOT_IN_ITEMS",
+      "count": 3,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "count": 1,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "PRODUCT_REFERENCE_BROKEN",
+      "count": 1,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "VALUE_MISSING",
+      "count": 280,
+      "category": "content",
+      "level": "warning"
+    },
+    {
+      "code": "HERO_IMAGE_MISSING",
+      "count": 8,
+      "category": "content",
+      "level": "warning"
+    },
+    {
+      "code": "PRODUCT_NOT_COVERED",
+      "count": 5,
+      "category": "coverage",
+      "level": "warning"
+    },
+    {
+      "code": "FAQ_THIN",
+      "count": 4,
+      "category": "content",
+      "level": "warning"
+    },
+    {
+      "code": "CRITERIA_THIN",
+      "count": 2,
+      "category": "content",
+      "level": "warning"
+    }
+  ],
+  "byFile": [
+    {
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+      "errors": 3,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
+      "errors": 3,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
+      "errors": 3,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "errors": 1,
+      "warnings": 2,
+      "total": 3
+    },
+    {
+      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "errors": 1,
+      "warnings": 1,
+      "total": 2
+    },
+    {
+      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/petlibro-granary-camera-feeder.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/tractive-cat-6-mini.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/tractive-dog-6-xl.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/tractive-dog-6.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/weenect-xs.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/weenect-xt.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "errors": 0,
+      "warnings": 141,
+      "total": 141
+    },
+    {
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "errors": 0,
+      "warnings": 141,
+      "total": 141
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "errors": 0,
+      "warnings": 3,
+      "total": 3
+    },
+    {
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "errors": 0,
+      "warnings": 3,
+      "total": 3
+    },
+    {
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+      "errors": 0,
+      "warnings": 2,
+      "total": 2
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/garmin-alpha-tt-25.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/petlibro-air-wifi-feeder.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    }
+  ],
+  "comparisons": [
+    {
+      "slug": "beste-futterautomaten-fuer-hunde",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md"
+    },
+    {
+      "slug": "beste-futterautomaten-fuer-katzen",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md"
+    },
+    {
+      "slug": "beste-futterautomaten-fuer-zwei-katzen",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
+    },
+    {
+      "slug": "beste-futterautomaten-mit-kamera",
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md"
+    },
+    {
+      "slug": "beste-futterautomaten-ohne-wlan",
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md"
+    },
+    {
+      "slug": "beste-gps-tracker-fuer-hunde",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md"
+    },
+    {
+      "slug": "beste-gps-tracker-fuer-katzen",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
+    },
+    {
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md"
+    },
+    {
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md"
+    },
+    {
+      "slug": "gps-tracker-mit-langer-akkulaufzeit",
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md"
+    },
+    {
+      "slug": "gps-tracker-ohne-abo",
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md"
+    },
+    {
+      "slug": "kleine-gps-tracker-fuer-katzen",
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
+    }
+  ],
+  "issues": [
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
+      "slug": "beste-futterautomaten-fuer-katzen",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
+      "slug": "beste-futterautomaten-fuer-zwei-katzen",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "slug": "beste-futterautomaten-mit-kamera",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "FAQ_THIN",
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "slug": "beste-futterautomaten-mit-kamera",
+      "message": "Weniger als drei FAQ-Einträge.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "CRITERIA_THIN",
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "slug": "beste-futterautomaten-mit-kamera",
+      "message": "Weniger als drei Vergleichskriterien.",
+      "count": 0,
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/petlibro-granary-camera-feeder.md",
+      "slug": "petlibro-granary-camera-feeder",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "slug": "beste-futterautomaten-ohne-wlan",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "FAQ_THIN",
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "slug": "beste-futterautomaten-ohne-wlan",
+      "message": "Weniger als drei FAQ-Einträge.",
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_REFERENCE_BROKEN",
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "slug": "beste-futterautomaten-ohne-wlan",
+      "message": "Produkt imipaw-3l existiert nicht.",
+      "itemSlug": "imipaw-3l",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+      "slug": "beste-gps-tracker-fuer-hunde",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "FAQ_THIN",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+      "slug": "beste-gps-tracker-fuer-hunde",
+      "message": "Weniger als drei FAQ-Einträge.",
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/tractive-dog-6.md",
+      "slug": "tractive-dog-6",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/weenect-xs.md",
+      "slug": "weenect-xs",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/tractive-dog-6-xl.md",
+      "slug": "tractive-dog-6-xl",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/weenect-xt.md",
+      "slug": "weenect-xt",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "slug": "beste-gps-tracker-fuer-katzen",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "FAQ_THIN",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "slug": "beste-gps-tracker-fuer-katzen",
+      "message": "Weniger als drei FAQ-Einträge.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "CRITERIA_THIN",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "slug": "beste-gps-tracker-fuer-katzen",
+      "message": "Weniger als drei Vergleichskriterien.",
+      "count": 0,
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/tractive-cat-6-mini.md",
+      "slug": "tractive-cat-6-mini",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
+      "slug": "petkit-eversweet-solo-2-fountain",
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-7l-dog-water-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-ultra: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-2-uvc: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-max-cordless: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-2-smart: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-cordless: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-dockstream-rfid-smart: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für kapazitaet fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für material fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für lautstaerke fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für filter fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für reinigung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für stromversorgung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für eignung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für material fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für filter fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-335-pet-fountain: Wert für eignung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für material fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für filter fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-capsule-dog-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für material fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für filter fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-glacier-ultrafiltration: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für material fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für filter fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "cat-mate-shell-fountain: Wert für eignung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-solo-se: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für material fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für filter fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petlibro-stainless-steel-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "message": "petkit-eversweet-5-mini: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "HERO_IMAGE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "heroImage fehlt.",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-5l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-3-5l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-2-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-2-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-3-pro-uvc: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-3-pro-uvc",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-3-2l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-3-2l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-7l-dog-water-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-7l-dog-water-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-ultra: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-ultra",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-2-uvc: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-max-2-uvc",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-max-cordless: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-max-cordless",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-2-smart: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-2-smart",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-cordless: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-cordless",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für material fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für filter fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-dockstream-rfid-smart: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-dockstream-rfid-smart",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für kapazitaet fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für material fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für lautstaerke fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für filter fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für reinigung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für stromversorgung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "xiaomi-smart-pet-fountain-2: Wert für eignung fehlt.",
+      "itemSlug": "xiaomi-smart-pet-fountain-2",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für material fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für filter fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-335-pet-fountain: Wert für eignung fehlt.",
+      "itemSlug": "cat-mate-335-pet-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für material fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für filter fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-capsule-dog-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-capsule-dog-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für material fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für filter fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-glacier-ultrafiltration: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-glacier-ultrafiltration",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für material fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für filter fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "cat-mate-shell-fountain: Wert für eignung fehlt.",
+      "itemSlug": "cat-mate-shell-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für material fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für filter fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "oneisall-2-2l-cordless-fountain: Wert für eignung fehlt.",
+      "itemSlug": "oneisall-2-2l-cordless-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-solo-se: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-solo-se",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für kapazitaet fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für material fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für lautstaerke fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für filter fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für reinigung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für stromversorgung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petlibro-stainless-steel-fountain: Wert für eignung fehlt.",
+      "itemSlug": "petlibro-stainless-steel-fountain",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für kapazitaet fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "kapazitaet",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für material fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "material",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für lautstaerke fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "lautstaerke",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für filter fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "filter",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für reinigung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "reinigung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für stromversorgung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "stromversorgung",
+      "category": "content"
+    },
+    {
+      "level": "warning",
+      "code": "VALUE_MISSING",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "message": "petkit-eversweet-5-mini: Wert für eignung fehlt.",
+      "itemSlug": "petkit-eversweet-5-mini",
+      "criterionKey": "eignung",
+      "category": "content"
+    },
+    {
+      "level": "error",
+      "code": "ITEM_SLUG_MISSING",
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+      "slug": "gps-tracker-mit-langer-akkulaufzeit",
+      "message": "Ein item besitzt keinen slug.",
+      "category": "structure"
+    },
+    {
+      "level": "error",
+      "code": "WINNER_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+      "slug": "gps-tracker-mit-langer-akkulaufzeit",
+      "message": "winnerSlug tractive-dog-6-xl ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "ALTERNATIVE_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+      "slug": "gps-tracker-mit-langer-akkulaufzeit",
+      "message": "alternativeSlug weenect-xt ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "ITEM_SLUG_MISSING",
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
+      "slug": "gps-tracker-ohne-abo",
+      "message": "Ein item besitzt keinen slug.",
+      "category": "structure"
+    },
+    {
+      "level": "error",
+      "code": "WINNER_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
+      "slug": "gps-tracker-ohne-abo",
+      "message": "winnerSlug garmin-alpha-t-20 ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "ALTERNATIVE_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
+      "slug": "gps-tracker-ohne-abo",
+      "message": "alternativeSlug garmin-alpha-tt-25 ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "ITEM_SLUG_MISSING",
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
+      "slug": "kleine-gps-tracker-fuer-katzen",
+      "message": "Ein item besitzt keinen slug.",
+      "category": "structure"
+    },
+    {
+      "level": "error",
+      "code": "WINNER_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
+      "slug": "kleine-gps-tracker-fuer-katzen",
+      "message": "winnerSlug weenect-xs ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "ALTERNATIVE_NOT_IN_ITEMS",
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
+      "slug": "kleine-gps-tracker-fuer-katzen",
+      "message": "alternativeSlug tractive-cat-6-mini ist nicht in items.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "slug": "catit-pixi-smart-6-meal-feeder",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "error",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "slug": "catit-pixi-smart-6-meal-feeder",
+      "message": "Hersteller catit existiert nicht.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/garmin-alpha-tt-25.md",
+      "slug": "garmin-alpha-tt-25",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
+      "slug": "imipaw-3l-automatic-cat-feeder",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
+      "slug": "oneisall-2-in-1-feeder-water",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/petlibro-air-wifi-feeder.md",
+      "slug": "petlibro-air-wifi-feeder",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    }
+  ]
+}

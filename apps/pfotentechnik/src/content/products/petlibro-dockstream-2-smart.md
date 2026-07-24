@@ -148,6 +148,18 @@ faq:
     answer: "Der Dockstream 2 Smart erfasst Trinkereignisse, ordnet sie ohne RFID-Variante aber nicht sicher einzelnen Tieren zu."
   - question: "Wie häufig muss der Filter gewechselt werden?"
     answer: "PETLIBRO empfiehlt etwa zwei Wochen. Wasserqualität, Tierzahl und Verschmutzung können das sinnvolle Intervall verändern."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 81
+    productStatus: "unknown"
 ---
 
 Der Dockstream 2 Smart ist vor allem ein Trinkbrunnen mit Verbrauchs- und Statusanzeige. Seine Wiegesensoren liefern App-Daten über Wasserstand und Trinkereignisse.

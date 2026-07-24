@@ -81,7 +81,11 @@ faq:
 - {question: "Ist Zwei-Wege-Audio sinnvoll?", answer: "Kann hilfreich sein, ist aber kein Muss."}
 - {question: "Wie teste ich den Offline-Betrieb?", answer: "Internet und Strom getrennt testen."}
 - {question: "Ist eine Kamera für zwei Katzen ausreichend?", answer: "Nein, nicht bei getrennten Rationen."}
+tableTitle: "Direkter Vergleich"
+cardsTitle: "Produkte im Überblick"
+faq: []
 ---
+
 # Beste Futterautomaten mit Kamera
 
 Eine Kamera beantwortet nur eine Frage: **Was passiert im sichtbaren Bereich des Napfes?** Sie beweist weder sicher, welches Tier gefressen hat, noch wie viel aufgenommen wurde.

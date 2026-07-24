@@ -156,6 +156,18 @@ features:
   - "Digitaltimer"
   - "Nass- und Trockenfutter"
   - "Kühlakku"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.6
+    score: 73
+    productStatus: "unknown"
 ---
 
 Der Cat Mate C300 kombiniert die einfache Drehtellerbauweise mit einem Digitaltimer. Er ist präziser als der analoge C200, bleibt aber vollständig offline.

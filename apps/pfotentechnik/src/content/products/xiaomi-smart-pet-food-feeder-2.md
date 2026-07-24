@@ -162,6 +162,23 @@ features:
   - "Wiegenapf"
   - "automatische Entblockung"
   - "LED-Display und Xiaomi-Home-App"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+    reservoirLiters: 5
+    portionGrams: 10
+    kibbleMaxMm: 12
+    largeDogFit: "conditional"
+  editorial:
+    rating: 4
+    score: 81
+    productStatus: "unknown"
 ---
 
 Der Xiaomi Smart Pet Food Feeder 2 ist technisch umfangreicher als viele klassische Vorratsautomaten. Der Wiegenapf und die automatische Entblockung sind seine wichtigsten Unterschiede.

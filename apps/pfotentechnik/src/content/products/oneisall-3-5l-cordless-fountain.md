@@ -59,6 +59,18 @@ specs:
 faq:
   - { question: "Läuft das Wasser dauerhaft?", answer: "Je nach gewähltem Modus wird der Fluss durch Bewegung oder in Intervallen aktiviert." }
   - { question: "Sind 60 Tage Laufzeit realistisch?", answer: "Das ist ein Maximalwert des Herstellers; Häufigkeit der Aktivierung und Akkuzustand wirken sich stark aus." }
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4.5
+    score: 89
+    productStatus: "unknown"
 ---
 
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.

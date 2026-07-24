@@ -152,6 +152,18 @@ features:
   - "Zwei 48-Stunden-Timer"
   - "Nass- und Trockenfutter"
   - "Kühlakku"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.5
+    score: 71
+    productStatus: "unknown"
 ---
 
 Der Cat Mate C200 ist bewusst einfach. Zwei analoge Timer steuern zwei getrennte Fächer, ohne App, WLAN oder Netzanschluss.

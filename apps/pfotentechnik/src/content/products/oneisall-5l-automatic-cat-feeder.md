@@ -151,6 +151,21 @@ features:
   - "Zwei Futterplätze"
   - "5-Liter-Vorrat"
   - "App-Variante erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    reservoirLiters: 5
+    portionGrams: 8
+    kibbleMaxMm: 15
+    largeDogFit: "conditional"
+  editorial:
+    rating: 3.6
+    score: 73
+    productStatus: "unknown"
 ---
 
 Der oneisall 5L Automatic Cat Feeder richtet sich vor allem an Haushalte mit zwei Katzen. Ein Y-Verteiler führt das Futter in zwei getrennte Näpfe.

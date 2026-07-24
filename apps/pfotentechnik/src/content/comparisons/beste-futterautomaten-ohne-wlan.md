@@ -58,6 +58,9 @@ recommendation:
   alternativeSlug: "surefeed-microchip-pet-feeder"
   title: "Offline bedeutet nicht automatisch einfacher"
   text: "Cat Mate ist die beste Timer-Lösung für mehrere vorbereitete Mahlzeiten. SureFeed gewinnt bei geschütztem Zugang. IMIPAW ist die klassische Offline-Lösung für Trockenfutter."
+tableTitle: "Direkter Vergleich"
+cardsTitle: "Produkte im Überblick"
+faq: []
 ---
 
 # Beste Futterautomaten ohne WLAN

@@ -148,6 +148,19 @@ faq:
     answer: "Ja. Der Brunnen arbeitet kontinuierlich und wird durch Ausstecken ausgeschaltet."
   - question: "Ist er auch für Hunde geeignet?"
     answer: "PETLIBRO nennt ihn für einen einzelnen kleinen oder mittelgroßen Hund als geeignet."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+  editorial:
+    rating: 3.8
+    score: 75
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO Stainless Steel Fountain verzichtet bewusst auf App, Akku und Sensorik. Seine Stärken sind Edelstahl, einfache Bedienung und ein mechanisch regelbarer Dauerfluss.

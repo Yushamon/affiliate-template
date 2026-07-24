@@ -153,6 +153,19 @@ faq:
     answer: "Xiaomi ermittelte diesen Wert im Sensormodus bei 24 Ausgaben pro Tag. Im Intervall- oder Dauerbetrieb und bei häufigerer Nutzung fällt die Laufzeit geringer aus."
   - question: "Wie oft muss der Filter gewechselt werden?"
     answer: "Xiaomi empfiehlt einen monatlichen Wechsel. Wasserqualität, Tierzahl und Verschmutzung können ein kürzeres Intervall erforderlich machen."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "large"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 81
+    productStatus: "unknown"
 ---
 
 Der Xiaomi Smart Pet Fountain 2 ist auf kabellose Platzierung und App-Unterstützung ausgelegt. Drei Betriebsarten erlauben unterschiedliche Kompromisse zwischen dauerhaftem Wasserfluss und Akkulaufzeit.

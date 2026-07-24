@@ -73,6 +73,22 @@ features: ["App-Steuerung", "24-Cup-Förderband", "Slow Feed", "Füllstandssenso
 priceCategory: premium
 useCase: "Große, app-gesteuerte Trockenfutterportionen"
 capacity: "24 Cups / etwa 5,7 Liter"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+      - "large"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.4
+    score: 88
+    priceCategory: "premium"
+    productStatus: "unknown"
 ---
 
 Der PetSafe Smart Feed 2.0 ist nicht neu, schließt im PfotenTechnik-Katalog aber eine wichtige Lücke: Er kann deutlich größere Mahlzeiten ausgeben als typische kompakte Katzenautomaten. Für sehr große oder kräftige Hunde bleibt er dennoch keine pauschale Empfehlung.

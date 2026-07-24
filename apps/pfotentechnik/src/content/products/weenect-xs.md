@@ -77,6 +77,33 @@ faq:
   - { question: "Ist der Weenect XS für Katzen geeignet?", answer: "Ja. Weenect bietet ihn für Katzen ab 3 kg mit einem Anti-Strangulations-Elastikband an. Sitz und sichere Öffnungsfunktion müssen individuell geprüft werden." }
   - { question: "Wie lange hält sein Akku?", answer: "Weenect nennt bis zu sieben Tage mit WLAN-Zonen und rund zwei Tage bei kontinuierlichem Tracking. Die Nutzungsart verändert den Wert erheblich." }
   - { question: "Kann ein Abo mehrere Tracker versorgen?", answer: "Mehrere Tiere lassen sich in einem Konto verwalten, aber jeder Tracker benötigt laut Weenect ein eigenes Abo." }
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+      - "cat"
+    minimumPetWeightKg: 3
+    deviceWeightGrams: 27
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 10
+    waterproofRating: "IP68"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.6
+    score: 92
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der Weenect XS ist mit 27 g der leichteste reine Gerätewert im gepflegten Vergleich. Entscheidend ist die ehrliche Laufzeitangabe: Der Maximalwert gilt im Energiesparbetrieb, nicht im dauerhaften Sekundenmodus.
