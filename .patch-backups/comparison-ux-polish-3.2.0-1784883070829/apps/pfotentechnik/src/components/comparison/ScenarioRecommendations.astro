@@ -9,7 +9,7 @@ const { scenarios } = Astro.props;
 ---
 
 {scenarios.length > 0 && (
-  <section class="scenario-recommendations" aria-labelledby="scenario-title" data-comparison-scenarios>
+  <section class="scenario-recommendations" aria-labelledby="scenario-title">
     <div class="scenario-heading">
       <span>Automatisch eingeordnet</span>
       <h2 id="scenario-title">Empfehlungen nach Einsatzzweck</h2>
@@ -40,9 +40,9 @@ const { scenarios } = Astro.props;
 
 <style>
   .scenario-recommendations {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
+    width: min(100%, 1180px);
+    margin: clamp(2.5rem, 6vw, 5rem) auto;
+    padding-inline: clamp(1rem, 3vw, 1.5rem);
   }
   .scenario-heading {
     max-width: 760px;
@@ -50,71 +50,45 @@ const { scenarios } = Astro.props;
   }
   .scenario-heading > span,
   .scenario-label {
-    color: var(--comparison-accent);
     font-size: .78rem;
     font-weight: 800;
     letter-spacing: .08em;
     text-transform: uppercase;
+    color: var(--color-primary, #2e7d32);
   }
   .scenario-heading h2 {
     margin: .35rem 0 .6rem;
-    color: var(--comparison-text);
   }
   .scenario-heading p,
   .scenario-card p {
-    color: var(--comparison-muted);
+    color: var(--color-text-muted, #5f6368);
   }
   .scenario-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 1rem;
-    min-width: 0;
   }
   .scenario-card {
-    min-width: 0;
     padding: 1.25rem;
-    border: 1px solid var(--comparison-line);
+    border: 1px solid var(--color-border, rgba(127, 127, 127, .25));
     border-radius: 1rem;
-    color: var(--comparison-text);
-    background: var(--comparison-surface);
-    box-shadow: var(--comparison-premium-shadow);
+    background: var(--color-surface, #fff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
   }
   .scenario-card h3 {
     margin: .3rem 0 .65rem;
     font-size: 1.08rem;
-    overflow-wrap: anywhere;
   }
   .scenario-card h3 a,
   .scenario-meta a {
     color: inherit;
-  }
-  .scenario-card a:hover {
-    color: var(--comparison-accent);
-  }
-  .scenario-card a:focus-visible {
-    outline: 3px solid var(--comparison-focus);
-    outline-offset: 3px;
-    border-radius: .25rem;
   }
   .scenario-meta {
     display: flex;
     flex-wrap: wrap;
     gap: .55rem 1rem;
     margin-top: 1rem;
-    min-width: 0;
     font-size: .86rem;
     font-weight: 700;
-  }
-  .scenario-meta > * {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-  @media (max-width: 760px) {
-    .scenario-grid {
-      grid-template-columns: minmax(0, 1fr);
-    }
-    .scenario-card {
-      padding: 1.05rem;
-    }
   }
 </style>

@@ -153,9 +153,9 @@ const comparisonNextSteps = buildComparisonNextSteps({
   <Breadcrumbs items={breadcrumbs} />
 
   <main class="comparison-detail">
-    <ComparisonShell model={model}>
-      <ScenarioRecommendations slot="scenario-recommendations" scenarios={model.scenarioRecommendations} />
-    </ComparisonShell>
+    <ComparisonShell model={model} />
+
+    <ScenarioRecommendations scenarios={model.scenarioRecommendations} />
 
     <article class="comparison-content">
       <AutoLinkContent
@@ -179,12 +179,10 @@ const comparisonNextSteps = buildComparisonNextSteps({
       items={comparisonNextSteps}
     />
 
-    {comparison.faq.length > 0 && (
-      <section id="faq" aria-label="Häufige Fragen zum Vergleich">
-        <FAQ items={comparison.faq} />
-      </section>
-    )}
-
     <RelatedArticles items={relatedItems} />
+
+    {comparison.faq.length > 0 && (
+      <FAQ items={comparison.faq} />
+    )}
   </main>
 </ProjectLayout>

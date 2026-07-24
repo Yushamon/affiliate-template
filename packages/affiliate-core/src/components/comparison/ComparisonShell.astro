@@ -13,6 +13,7 @@ import "./comparison.css";
 import "./comparison-hero-v2.css";
 import "./comparison-premium-ux.css";
 import "./comparison-premium-seo.css";
+import "./comparison-ux-polish-3.2.css";
 
 type Props = {
   model: ComparisonViewModel;
@@ -22,8 +23,7 @@ const { model } = Astro.props as Props;
 const winner = model.verdict.winner;
 const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
 ---
-
-<div class="comparison-shell comparison-shell--premium">
+<div class="comparison-shell comparison-shell--premium" data-comparison-polish="3.2">
   <ComparisonHero
     eyebrow={model.eyebrow}
     title={model.title}
@@ -32,102 +32,70 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
     facts={model.facts}
   />
 
-  <nav class="comparison-premium-nav" aria-label="Vergleichsbereiche">
-    <a href="#empfehlungen">Empfehlungen</a>
-    <a href="#direktvergleich">Direktvergleich</a>
-    <a href="#vergleich-fazit">Fazit</a>
+  <nav class="comparison-premium-nav" aria-label="Sprungnavigation zum Vergleich">
+    <a href="#schnelle-empfehlung">30-Sekunden-Empfehlung</a>
+    <a href="#vergleichssieger">Testsieger</a>
+    <a href="#einsatzzwecke">Einsatzzwecke</a>
+    <a href="#redaktionelle-zusammenfassung">Zusammenfassung</a>
+    <a href="#direktvergleich">Vergleich</a>
+    <a href="#methodik">Methodik</a>
   </nav>
 
-  <ComparisonInsightSummary products={model.products} rows={model.rows} />
-
-  <div class="comparison-premium-layout">
-    <div class="comparison-premium-main">
-      <section id="empfehlungen" class="comparison-premium-section">
-        <div class="comparison-premium-section__heading">
-          <div>
-            <span class="comparison-eyebrow">Schnelle Orientierung</span>
-            <h2>Die stärksten Modelle auf einen Blick</h2>
-          </div>
-          <p>
-            Wähle nach Einsatzgebiet statt nur nach Ausstattung. Die vollständigen
-            Unterschiede findest du anschließend im Direktvergleich.
-          </p>
+  <div class="comparison-decision-flow">
+    <section id="schnelle-empfehlung" class="comparison-premium-section">
+      <div class="comparison-premium-section__heading">
+        <div>
+          <span class="comparison-eyebrow">30-Sekunden-Empfehlung</span>
+          <h2>Die stärksten Modelle auf einen Blick</h2>
         </div>
-
-        <RecommendationGrid products={model.recommendationProducts} />
-      </section>
-
-      <ComparisonProsCons products={model.products} />
-
-      <ComparisonExplorer
-        products={model.products}
-        rows={model.rows}
-        filters={model.filters}
-        initialVisibleProducts={model.initialVisibleProducts}
-      />
-
-      <ComparisonMethodology
-        productCount={model.products.length}
-        criterionCount={model.rows.length}
-      />
-
-      <div id="vergleich-fazit">
-        <ComparisonVerdict
-          title={model.verdict.title}
-          text={model.verdict.text}
-          winner={model.verdict.winner}
-          alternative={model.verdict.alternative}
-        />
+        <p>Starte mit dem Einsatzgebiet. Die vollständigen Unterschiede folgen anschließend im Direktvergleich.</p>
       </div>
-    </div>
+      <RecommendationGrid products={model.recommendationProducts} />
+    </section>
 
     {winner && (
-      <aside class="comparison-premium-aside" aria-label="Unsere Empfehlung">
+      <section id="vergleichssieger" class="comparison-premium-section comparison-winner-section" aria-labelledby="vergleichssieger-title">
+        <div class="comparison-premium-section__heading">
+          <div>
+            <span class="comparison-eyebrow">Gesamtsieger</span>
+            <h2 id="vergleichssieger-title">Unsere stärkste Empfehlung</h2>
+          </div>
+          <p>Entscheidend sind nicht einzelne Funktionen, sondern die ausgewogene Gesamtleistung im Vergleich.</p>
+        </div>
+
         <div class="comparison-winner-card">
           <span class="comparison-winner-card__eyebrow">Unsere Empfehlung</span>
-          {winner.badge && (
-            <span class="comparison-winner-card__badge">{winner.badge}</span>
-          )}
-
+          {winner.badge && <span class="comparison-winner-card__badge">{winner.badge}</span>}
           {winner.image && (
             <a href={winner.href} class="comparison-winner-card__image">
               <img
                 src={typeof winner.image.src === "string" ? winner.image.src : winner.image.src.src}
                 alt={winner.image.alt ?? winner.title}
-                width="260"
-                height="210"
-                loading="lazy"
+                width="520"
+                height="420"
+                loading="eager"
+                decoding="async"
               />
             </a>
           )}
-
           <div class="comparison-winner-card__copy">
             {winner.manufacturer && <span>{winner.manufacturer}</span>}
-            <h2><a href={winner.href}>{winner.title}</a></h2>
-
+            <h3><a href={winner.href}>{winner.title}</a></h3>
             {typeof winner.rating === "number" && (
               <div class="comparison-winner-card__score">
                 <strong>{Math.round(winner.rating)}</strong>
                 <span>von 100 Punkten</span>
               </div>
             )}
-
             {winner.recommendation && <p>{winner.recommendation}</p>}
-
             {winner.strengths.length > 0 && (
               <ul>
-                {winner.strengths.slice(0, 4).map((strength) => (
-                  <li>{strength}</li>
-                ))}
+                {winner.strengths.slice(0, 4).map((strength) => <li>{strength}</li>)}
               </ul>
             )}
           </div>
-
           <div class="comparison-winner-card__actions">
-            <a href={winner.href} class="comparison-button comparison-button--secondary">
-              Test lesen
-            </a>
-
+            <a href={winner.href} class="comparison-button comparison-button--secondary">Test lesen</a>
             {winnerPrice?.url && (
               <a
                 href={winnerPrice.url}
@@ -141,8 +109,41 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
             )}
           </div>
         </div>
-      </aside>
+      </section>
     )}
+
+    <section id="einsatzzwecke" class="comparison-premium-section comparison-slot-section">
+      <slot name="scenario-recommendations" />
+    </section>
+
+    <section id="redaktionelle-zusammenfassung" class="comparison-premium-section" aria-label="Redaktionelle Zusammenfassung">
+      <ComparisonInsightSummary products={model.products} rows={model.rows} />
+    </section>
+
+    <ComparisonExplorer
+      products={model.products}
+      rows={model.rows}
+      filters={model.filters}
+      initialVisibleProducts={model.initialVisibleProducts}
+    />
+
+    <ComparisonProsCons products={model.products} />
+
+    <section id="methodik" class="comparison-premium-section">
+      <ComparisonMethodology
+        productCount={model.products.length}
+        criterionCount={model.rows.length}
+      />
+    </section>
+
+    <div id="vergleich-fazit">
+      <ComparisonVerdict
+        title={model.verdict.title}
+        text={model.verdict.text}
+        winner={model.verdict.winner}
+        alternative={model.verdict.alternative}
+      />
+    </div>
   </div>
 </div>
 
