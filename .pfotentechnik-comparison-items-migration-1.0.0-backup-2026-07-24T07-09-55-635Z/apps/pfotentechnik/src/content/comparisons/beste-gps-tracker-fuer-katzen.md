@@ -14,26 +14,13 @@ group: "GPS-Tracker"
 icon: "🐈"
 automaticRecommendations:
   enabled: true
-items:
-  - slug: "tractive-cat-6-mini"
-    type: "product"
-    label: "Tractive CAT 6 Mini"
-    values: {}
-  - slug: "weenect-xs"
-    type: "product"
-    label: "Weenect XS"
-    values: {}
-  - slug: "paj-pet-finder-4g-mini"
-    type: "product"
-    label: "PAJ PET Finder 4G Mini"
-    values: {}
-
 recommendation:
   winnerSlug: "tractive-cat-6-mini"
   alternativeSlug: "weenect-xs"
   title: "Passform und Sicherheit sind wichtiger als jedes Gramm"
   text: "Tractive CAT 6 Mini ist die ausgewogenste Komplettlösung für Freigängerkatzen. Weenect XS eignet sich besonders für sehr leichte Tracker-Setups."
 ---
+
 # Beste GPS-Tracker für Katzen
 
 Bei Katzen ist **nicht der Funktionsumfang**, sondern die **sichere Passform** entscheidend. Ein Tracker darf die natürliche Bewegung nicht beeinträchtigen und sollte nur mit einem geeigneten Sicherheitshalsband verwendet werden.
