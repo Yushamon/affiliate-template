@@ -146,6 +146,8 @@ criteria:
     label: "Systemaufwand"
     description: "Ob ein Gerät genügt oder zwei geschützte Futterplätze nötig sind."
     weight: 1.0
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "surefeed-microchip-pet-feeder"
   alternativeSlug: "petlibro-granary-wifi-feeder"

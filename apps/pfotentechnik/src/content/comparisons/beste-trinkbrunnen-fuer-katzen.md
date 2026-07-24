@@ -156,9 +156,11 @@ criteria:
   - key: "eignung"
     label: "Eignung für Katzen"
     description: "Bauform, Trinkhöhe und Kapazität passend zum Einsatzzweck."
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "oneisall-3-5l-cordless-fountain"
-  alternativeSlug: "petkit-eversweet-solo-2-fountain"
+  alternativeSlug: "cat-mate-335-pet-fountain"
   title: "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment"
   text: "Die beste Wahl hängt trotzdem von Trinkverhalten, Schnurrhaarfreundlichkeit, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
 tableTitle: "20 Trinkbrunnen für Katzen verglichen"
@@ -181,6 +183,18 @@ Trinkbrunnen unterscheiden sich nicht nur durch ihr Fassungsvermögen. Material,
 ## Worauf es bei Trinkbrunnen für Katzen ankommt
 
 Für Katzen sind eine gut zugängliche, möglichst breite Trinkfläche und ein ruhiger Wasserfluss häufig wichtiger als spektakuläre Zusatzfunktionen. In Mehrkatzenhaushalten zählen zusätzlich Kapazität, Standfestigkeit und einfache tägliche Kontrolle.
+
+## Empfehlungen nach Haushaltsgröße
+
+Die Empfehlungen werden aus dokumentierter Tier-Eignung, Kapazität, Bauform und Gesamtbewertung berechnet. Eine hohe allgemeine Bewertung reicht nicht aus, wenn der Brunnen für die jeweilige Tiergröße ungeeignet ist.
+
+| Einsatz | Empfehlung | Begründung |
+|---|---|---|
+| Eine Katze | PETKIT Eversweet 3 Pro UVC | 1,6 Liter Kapazität; Scoring für Eine Katze |
+| Mehrkatzenhaushalte | oneisall 3,5L Cordless Fountain | 3,5 Liter Kapazität; Scoring für Mehrkatzenhaushalte |
+| Wenig Stellfläche | PETKIT Eversweet 3 Pro UVC | 1,6 Liter Kapazität; Scoring für Wenig Stellfläche |
+
+> **Größenlogik:** Ein kompakter 3-Liter-Brunnen kann für kleine Hunde sehr gut abschneiden, wird bei großen Hunden oder Mehrhundehaushalten jedoch automatisch abgewertet.
 
 ## Material und Hygiene
 

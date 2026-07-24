@@ -12,6 +12,74 @@ author:
 comparisonType: "use-case"
 group: "GPS-Tracker"
 icon: "🐕"
+items:
+  - slug: "tractive-dog-6"
+    type: "product"
+    label: "Bester Allrounder"
+    recommendation: "Für die meisten Familienhunde mit Mobilfunkabdeckung."
+    values:
+      einsatzgebiet: "Alltag und Auslauf"
+      hundegroesse: "Kleine bis große Hunde"
+      ortung: "GPS und Mobilfunk"
+      abo: true
+  - slug: "weenect-xs"
+    type: "product"
+    label: "Für kleine Hunde"
+    recommendation: "Leichte Lösung für kleine Hunde, sofern Größe und Befestigung zum Geschirr passen."
+    values:
+      einsatzgebiet: "Alltag"
+      hundegroesse: "Kleine Hunde"
+      ortung: "GPS und Mobilfunk"
+      abo: true
+  - slug: "paj-pet-finder-4g-mini"
+    type: "product"
+    label: "Alternative beim Kostenmodell"
+    recommendation: "Interessant für Halter, die verschiedene Laufzeiten und Gesamtkosten vergleichen."
+    values:
+      einsatzgebiet: "Alltag"
+      hundegroesse: "Kleine bis mittelgroße Hunde"
+      ortung: "GPS und Mobilfunk"
+      abo: true
+  - slug: "tractive-dog-6-xl"
+    type: "product"
+    label: "Für große Hunde"
+    recommendation: "Für große Hunde und längere Laufzeit zwischen den Ladevorgängen."
+    values:
+      einsatzgebiet: "Alltag und längere Touren"
+      hundegroesse: "Große Hunde"
+      ortung: "GPS und Mobilfunk"
+      abo: true
+  - slug: "weenect-xt"
+    type: "product"
+    label: "Für Outdoor-Einsätze"
+    recommendation: "Robustere Mobilfunklösung für längere Aktivitäten im Freien."
+    values:
+      einsatzgebiet: "Outdoor und Wandern"
+      hundegroesse: "Mittelgroße bis große Hunde"
+      ortung: "GPS und Mobilfunk"
+      abo: true
+  - slug: "garmin-alpha-t-20"
+    type: "product"
+    label: "Für Jagd- und Arbeitshunde"
+    recommendation: "Speziallösung mit VHF-Funk, wenn Mobilfunk keine verlässliche Grundlage ist."
+    values:
+      einsatzgebiet: "Jagd und Arbeit"
+      hundegroesse: "Mittelgroße bis große Hunde"
+      ortung: "GPS und VHF"
+      abo: false
+
+criteria:
+  - key: "einsatzgebiet"
+    label: "Einsatzgebiet"
+  - key: "hundegroesse"
+    label: "Geeignete Hundegröße"
+  - key: "ortung"
+    label: "Ortungssystem"
+  - key: "abo"
+    label: "Abo erforderlich"
+
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "tractive-dog-6"
   alternativeSlug: "weenect-xs"

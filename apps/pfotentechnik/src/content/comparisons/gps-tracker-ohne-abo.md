@@ -24,6 +24,8 @@ criteria:
   - { key: "akkulaufzeit", label: "Akkulaufzeit", description: "Standard- und optionaler Akku." }
   - { key: "app", label: "Bedienung", description: "Handgerät und optionale App-Anbindung." }
   - { key: "eignung", label: "Geeignet für", description: "Spezialisierte Tier- und Einsatzgruppe." }
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "garmin-alpha-t-20"
   alternativeSlug: "garmin-alpha-tt-25"

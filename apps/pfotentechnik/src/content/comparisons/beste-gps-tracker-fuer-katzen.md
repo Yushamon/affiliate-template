@@ -12,6 +12,8 @@ author:
 comparisonType: "use-case"
 group: "GPS-Tracker"
 icon: "🐈"
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "tractive-cat-6-mini"
   alternativeSlug: "weenect-xs"

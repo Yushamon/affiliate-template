@@ -61,6 +61,8 @@ criteria:
 - {key: futter, label: "Futterart", weight: 1.0}
 - {key: mehrtiere, label: "Mehrtier-Eignung", weight: 1.4}
 - {key: kamera, label: "Kamera", weight: 0.2}
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "petlibro-granary-camera-feeder"
   alternativeSlug: "petkit-yumshare-dual-hopper"

@@ -131,6 +131,8 @@ criteria:
   - key: "tiertrennung"
     label: "Individuelle Tiertrennung"
     weight: 1.1
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "petlibro-granary-wifi-feeder"
   alternativeSlug: "xiaomi-smart-pet-food-feeder-2"

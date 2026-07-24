@@ -156,9 +156,11 @@ criteria:
   - key: "eignung"
     label: "Eignung für Hunde"
     description: "Bauform, Trinkhöhe und Kapazität passend zum Einsatzzweck."
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "oneisall-3-5l-cordless-fountain"
-  alternativeSlug: "petkit-eversweet-solo-2-fountain"
+  alternativeSlug: "petkit-eversweet-ultra"
   title: "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment"
   text: "Die beste Wahl hängt trotzdem von Körpergröße, Trinkhöhe, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
 tableTitle: "20 Trinkbrunnen für Hunde verglichen"
@@ -181,6 +183,19 @@ Trinkbrunnen unterscheiden sich nicht nur durch ihr Fassungsvermögen. Material,
 ## Worauf es bei Trinkbrunnen für Hunde ankommt
 
 Für Hunde zählen vor allem eine ausreichend große Trinkfläche, gute Standfestigkeit und eine zur Körpergröße passende Höhe. Bei großen oder mehreren Hunden ist die nutzbare Wassermenge wichtiger als eine möglichst kompakte Bauform.
+
+## Empfehlungen nach Hundegröße
+
+Die Empfehlungen werden aus dokumentierter Tier-Eignung, Kapazität, Bauform und Gesamtbewertung berechnet. Eine hohe allgemeine Bewertung reicht nicht aus, wenn der Brunnen für die jeweilige Tiergröße ungeeignet ist.
+
+| Einsatz | Empfehlung | Begründung |
+|---|---|---|
+| Kleine Hunde | PETKIT Eversweet 3 Pro UVC | 1,6 Liter Kapazität; Scoring für Kleine Hunde |
+| Mittelgroße Hunde | oneisall 3,5L Cordless Fountain | 3,5 Liter Kapazität; Scoring für Mittelgroße Hunde |
+| Große Hunde | PETKIT Eversweet Ultra | 5 Liter Kapazität; Scoring für Große Hunde |
+| Mehrhundehaushalte | oneisall 7L Dog Water Fountain | 7 Liter Kapazität; Scoring für Mehrhundehaushalte |
+
+> **Größenlogik:** Ein kompakter 3-Liter-Brunnen kann für kleine Hunde sehr gut abschneiden, wird bei großen Hunden oder Mehrhundehaushalten jedoch automatisch abgewertet.
 
 ## Material und Hygiene
 

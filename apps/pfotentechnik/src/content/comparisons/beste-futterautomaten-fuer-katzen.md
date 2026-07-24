@@ -161,6 +161,8 @@ criteria:
   - key: "besonderheit"
     label: "Wichtigster Vorteil"
     weight: 1.0
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "petlibro-granary-wifi-feeder"
   alternativeSlug: "surefeed-microchip-pet-feeder"

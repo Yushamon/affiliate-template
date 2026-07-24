@@ -82,6 +82,14 @@ export type ComparisonViewModel = {
   rows: ComparisonRow[];
   filters: ComparisonFilter[];
   initialVisibleProducts: number;
+  scenarioRecommendations: Array<{
+    key: string;
+    label: string;
+    score: number;
+    reason: string;
+    winner: ComparisonProduct;
+    alternative?: ComparisonProduct;
+  }>;
   verdict: {
     title: string;
     text: string;

@@ -12,6 +12,47 @@ author:
 comparisonType: "use-case"
 group: "Futterautomaten"
 icon: "📴"
+items:
+  - slug: "cat-mate-c500"
+    type: "product"
+    label: "Beste Wahl für Nassfutter"
+    recommendation: "Für mehrere vorbereitete Nassfutter-Mahlzeiten mit lokaler Zeitsteuerung."
+    values:
+      offlineKonzept: "Fachautomat"
+      futterart: "Nass- und Trockenfutter"
+      appErforderlich: false
+      batteriebetrieb: true
+  - slug: "surefeed-microchip-pet-feeder"
+    type: "product"
+    label: "Beste Wahl gegen Futterklau"
+    recommendation: "Für Haushalte, in denen nur ein bestimmtes Tier Zugang zur Portion erhalten soll."
+    values:
+      offlineKonzept: "Mikrochip-Napf"
+      futterart: "Nass- und Trockenfutter"
+      appErforderlich: false
+      batteriebetrieb: true
+  - slug: "imipaw-3l"
+    type: "product"
+    label: "Einfache Trockenfutter-Lösung"
+    recommendation: "Für zeitgesteuerte Trockenfutterportionen ohne WLAN und Cloudkonto."
+    values:
+      offlineKonzept: "Vorratsautomat"
+      futterart: "Trockenfutter"
+      appErforderlich: false
+      batteriebetrieb: true
+
+criteria:
+  - key: "offlineKonzept"
+    label: "Offline-Konzept"
+  - key: "futterart"
+    label: "Futterart"
+  - key: "appErforderlich"
+    label: "App erforderlich"
+  - key: "batteriebetrieb"
+    label: "Batteriebetrieb"
+
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "cat-mate-c500"
   alternativeSlug: "surefeed-microchip-pet-feeder"

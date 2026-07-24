@@ -113,6 +113,20 @@ export const createComparisonContentSchema = (image: ImageFunction) =>
       )
       .default([]),
 
+    automaticRecommendations: z
+      .object({
+        enabled: z.boolean().default(false),
+        scenarios: z
+          .array(
+            z.object({
+              key: z.string(),
+              label: z.string()
+            })
+          )
+          .optional()
+      })
+      .optional(),
+
     recommendation:
       comparisonResultSchema,
 
