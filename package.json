@@ -46,5 +46,8 @@
     "seo:cockpit": "npm --workspace apps/pfotentechnik run seo:cockpit",
     "seo:admin": "npm --workspace apps/pfotentechnik run seo:admin",
     "test:search": "npm --workspace apps/pfotentechnik run test:search"
+  },
+  "devDependencies": {
+    "electron": "^35.7.5"
   }
 }

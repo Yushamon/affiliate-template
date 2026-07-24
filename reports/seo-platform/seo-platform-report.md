@@ -1,7 +1,7 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 186
-- Fehler: 0
+- Dokumente: 185
+- Fehler: 1
 - Warnungen: 37
 
 ## Portfolio-Befunde
@@ -47,3 +47,4 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`: Mögliche Dosierungsangabe gefunden.
+- **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Testbehauptung widerspricht dem Teststatus.
