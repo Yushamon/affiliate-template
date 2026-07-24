@@ -1,0 +1,916 @@
+#!/usr/bin/env node
+
+import fs from "node:fs";
+import path from "node:path";
+import process from "node:process";
+import { fileURLToPath } from "node:url";
+
+const PATCH_ID = "pfotentechnik-nassfutter-comparison-route-8.2.0";
+const OLD_ROUTE = "/beste-futterautomaten-fuer-nassfutter/";
+const OLD_ROUTE_NO_SLASH = "/beste-futterautomaten-fuer-nassfutter";
+const NEW_ROUTE = "/vergleiche/beste-futterautomaten-fuer-nassfutter/";
+const SLUG = "beste-futterautomaten-fuer-nassfutter";
+const STALE_OLD_ROUTE_PATTERN =
+  /(?<!\/vergleiche)\/beste-futterautomaten-fuer-nassfutter\//g;
+
+function replaceStaleOldRoute(source) {
+  STALE_OLD_ROUTE_PATTERN.lastIndex = 0;
+  return source.replace(
+    STALE_OLD_ROUTE_PATTERN,
+    NEW_ROUTE
+  );
+}
+
+function hasStaleOldRoute(source) {
+  STALE_OLD_ROUTE_PATTERN.lastIndex = 0;
+  return STALE_OLD_ROUTE_PATTERN.test(source);
+}
+const COMPARISON_CONTENT = Buffer.from(
+  "LS0tCnRpdGxlOiAiQmVzdGUgRnV0dGVyYXV0b21hdGVuIGbDvHIgTmFzc2Z1dHRlciIKc2x1ZzogImJlc3RlLWZ1dHRlcmF1dG9tYXRlbi1mdWVyLW5hc3NmdXR0ZXIiCnR5cGU6ICJjb21wYXJpc29uIgpsYXlvdXQ6ICJjb21wYXJpc29uIgpkZXNjcmlwdGlvbjogIk5hc3NmdXR0ZXJhdXRvbWF0ZW4gbmFjaCBLw7xobHByaW56aXAsIE1haGx6ZWl0ZW56YWhsLCBIeWdpZW5lLCBTdHJvbWF1c2ZhbGxzaWNoZXJoZWl0LCBBcHAgdW5kIFp1Z2FuZ3Nrb250cm9sbGUgdmVyZ2xlaWNoZW4uIgpwdWJsaXNoZWRBdDogIjIwMjYtMDctMTAiCnVwZGF0ZWRBdDogIjIwMjYtMDctMjQiCmF1dGhvcjoKICBuYW1lOiAiUGZvdGVuVGVjaG5payBSZWRha3Rpb24iCiAgcm9sZTogIlJlZGFrdGlvbiIKdGFnczoKICAtICJGdXR0ZXJhdXRvbWF0IgogIC0gIk5hc3NmdXR0ZXIiCiAgLSAiS2F0emUiCiAgLSAiS2xlaW5lciBIdW5kIgogIC0gIlZlcmdsZWljaCIKICAtICJLw7xobHVuZyIKaHViOgogIHNlY3Rpb25zOgogICAgLSAidmVyZ2xlaWNoZSIKICB0aXRsZTogIkJlc3RlIEZ1dHRlcmF1dG9tYXRlbiBmw7xyIE5hc3NmdXR0ZXIiCiAgZGVzY3JpcHRpb246ICJBa3RpdiBnZWvDvGhsdGUgTW9kZWxsZSwgRmFjaGF1dG9tYXRlbiBtaXQgS8O8aGxha2t1cyB1bmQgTMO2c3VuZ2VuIGbDvHIgZ2V0cmVubnRlIE5hc3NmdXR0ZXJyYXRpb25lbi4iCiAgaWNvbjogIvCfpaMiCiAgb3JkZXI6IDMwCnNlbzoKICB0aXRsZTogIkJlc3RlIE5hc3NmdXR0ZXJhdXRvbWF0ZW4gaW0gVmVyZ2xlaWNoIDIwMjYiCiAgZGVzY3JpcHRpb246ICJQRVRMSUJSTyBQb2xhciwgUGV0U2FmZSBGcmVzaEZlZWQsIENhdGl0IFBJWEksIENhdCBNYXRlIEM1MDAgdW5kIFN1cmVGZWVkIG5hY2ggS8O8aGx1bmcsIE1haGx6ZWl0ZW4sIEh5Z2llbmUgdW5kIEF1c2ZhbGxzaWNoZXJoZWl0IHZlcmdsZWljaGVuLiIKICBjYW5vbmljYWw6ICIvdmVyZ2xlaWNoZS9iZXN0ZS1mdXR0ZXJhdXRvbWF0ZW4tZnVlci1uYXNzZnV0dGVyLyIKICBzaXRlbWFwOiB0cnVlCiAgcHJpb3JpdHk6IDAuOQogIGNoYW5nZWZyZXE6ICJtb250aGx5Igpjb21wYXJpc29uVHlwZTogInVzZS1jYXNlIgpncm91cDogIkZ1dHRlcmF1dG9tYXRlbiIKaWNvbjogIvCfpaMiCml0ZW1zOgogIC0gc2x1ZzogInBldGxpYnJvLXBvbGFyLXdldC1mb29kLWZlZWRlciIKICAgIGxhYmVsOiAiUEVUTElCUk8gUG9sYXIgV2V0IEZvb2QgRmVlZGVyIgogICAgdHlwZTogInByb2R1Y3QiCiAgICByZWNvbW1lbmRhdGlvbjogIkJlc3RlIGtvbXBha3RlIEzDtnN1bmcgbWl0IGFrdGl2ZXIgS8O8aGx1bmcsIHdlbm4gZHJlaSB2b3JiZXJlaXRldGUgTWFobHplaXRlbiwgQXBwLVN0ZXVlcnVuZyB1bmQgTmV0emJldHJpZWIgenVtIEFsbHRhZyBwYXNzZW4uIgogICAgdmFsdWVzOgogICAgICBwcm9maWw6ICJCZXN0ZSBrb21wYWt0ZSBha3RpdmUgS8O8aGx1bmciCiAgICAgIGt1ZWhscHJpbnppcDogIlRoZXJtb2VsZWt0cmlzY2hlIEFrdGl2a8O8aGx1bmciCiAgICAgIG1haGx6ZWl0ZW46ICIzIEbDpGNoZXIgbWl0IGplIDIwMCBtbCIKICAgICAgc3RldWVydW5nOiAiQXBwLVplaXRwbMOkbmUiCiAgICAgIHN0cm9tdmVyc29yZ3VuZzogIk5ldHpiZXRyaWViOyBrZWluIEJhdHRlcmllLUJhY2t1cCIKICAgICAgaHlnaWVuZTogIkVkZWxzdGFobC1GdXR0ZXJzY2hhbGU7IG5hY2ggamVkZXIgTnV0enVuZyByZWluaWdlbiIKICAgICAgdGllcnRyZW5udW5nOiAiTmVpbiIKICAgICAgZ2VlaWduZXRmdWVyOiAiS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUiCiAgICAgIHdpY2h0aWdzdGVncmVuemU6ICJOdXIgZHJlaSBNYWhsemVpdGVuIHVuZCB2b2xsc3TDpG5kaWdlIFN0cm9tYWJow6RuZ2lna2VpdCIKICAtIHNsdWc6ICJwZXRzYWZlLWZyZXNoZmVlZC1yZWZyaWdlcmF0ZWQtZmVlZGVyIgogICAgbGFiZWw6ICJQZXRTYWZlIEZyZXNoRmVlZCBSZWZyaWdlcmF0ZWQgUGV0IEZlZWRlciIKICAgIHR5cGU6ICJwcm9kdWN0IgogICAgcmVjb21tZW5kYXRpb246ICJUZWNobmlzY2ggc3TDpHJrc3RlcyBLb256ZXB0IGbDvHIgYmlzIHp1IHNlY2hzIGdla8O8aGx0ZSBNYWhsemVpdGVuOyB2b3IgZGVtIEthdWYgVmVyZsO8Z2JhcmtlaXQsIE5ldHpiZXRyaWViIHVuZCBmZWhsZW5kZXMgQmF0dGVyaWUtQmFja3VwIHByw7xmZW4uIgogICAgdmFsdWVzOgogICAgICBwcm9maWw6ICJNZWlzdGUgYWt0aXYgZ2Vrw7xobHRlIE1haGx6ZWl0ZW4iCiAgICAgIGt1ZWhscHJpbnppcDogIkFrdGl2ZSBIYWxibGVpdGVya8O8aGx1bmciCiAgICAgIG1haGx6ZWl0ZW46ICI2IEVkZWxzdGFobC1FaW5zw6R0emUiCiAgICAgIHN0ZXVlcnVuZzogIlBldFNhZmUtQXBwIgogICAgICBzdHJvbXZlcnNvcmd1bmc6ICJOZXR6YmV0cmllYjsga2VpbiBCYWNrdXAgZG9rdW1lbnRpZXJ0IgogICAgICBoeWdpZW5lOiAiRW50bmVobWJhcmUsIHNww7xsbWFzY2hpbmVuZ2VlaWduZXRlIEVpbnPDpHR6ZSIKICAgICAgdGllcnRyZW5udW5nOiAiTmVpbiIKICAgICAgZ2VlaWduZXRmdWVyOiAiS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUiCiAgICAgIHdpY2h0aWdzdGVncmVuemU6ICJEZXV0c2NobGFuZC1WZXJmw7xnYmFya2VpdCB1bmQgTGFuZ3plaXRlcmZhaHJ1bmcgcHLDvGZlbiIKICAtIHNsdWc6ICJjYXRpdC1waXhpLXNtYXJ0LTYtbWVhbC1mZWVkZXIiCiAgICBsYWJlbDogIkNhdGl0IFBJWEkgU21hcnQgNi1NZWFsIEZlZWRlciIKICAgIHR5cGU6ICJwcm9kdWN0IgogICAgcmVjb21tZW5kYXRpb246ICJWaWVsc2VpdGlnZXIgU2VjaHMtRsOkY2hlci1BdXRvbWF0IG1pdCBBcHAsIGxva2FsZXIgQmVkaWVudW5nIHVuZCBCYXR0ZXJpZS1CYWNrdXAsIHdlbm4gS8O8aGxha2t1cyBzdGF0dCBha3RpdmVyIEvDvGhsdW5nIGF1c3JlaWNoZW4uIgogICAgdmFsdWVzOgogICAgICBwcm9maWw6ICJCZXN0ZSBmbGV4aWJsZSBTZWNocy1Gw6RjaGVyLUzDtnN1bmciCiAgICAgIGt1ZWhscHJpbnppcDogIjIgS8O8aGxha2t1czsga2VpbmUgVGVtcGVyYXR1cnJlZ2VsdW5nIgogICAgICBtYWhsemVpdGVuOiAiNiBGw6RjaGVyIG1pdCBqZSAxNzAgbWw7IGVyc3RlcyBGYWNoIG9mZmVuIgogICAgICBzdGV1ZXJ1bmc6ICJBcHAgdW5kIFRvdWNocGFuZWwiCiAgICAgIHN0cm9tdmVyc29yZ3VuZzogIlVTQi1DOyA0IEMtQmF0dGVyaWVuIGFscyBCYWNrdXAiCiAgICAgIGh5Z2llbmU6ICJFbnRuZWhtYmFyZXIsIHNww7xsbWFzY2hpbmVuZ2VlaWduZXRlciBFaW5zYXR6IgogICAgICB0aWVydHJlbm51bmc6ICJOZWluIgogICAgICBnZWVpZ25ldGZ1ZXI6ICJLYXR6ZW4iCiAgICAgIHdpY2h0aWdzdGVncmVuemU6ICJLw7xobHdpcmt1bmcgaMOkbmd0IHN0YXJrIHZvbiBWb3JiZXJlaXR1bmcgdW5kIFJhdW10ZW1wZXJhdHVyIGFiIgogIC0gc2x1ZzogImNhdC1tYXRlLWM1MDAiCiAgICBsYWJlbDogIkNhdCBNYXRlIEM1MDAiCiAgICB0eXBlOiAicHJvZHVjdCIKICAgIHJlY29tbWVuZGF0aW9uOiAiQmVzdGUgZWluZmFjaGUgT2ZmbGluZS1Mw7ZzdW5nIGbDvHIgbWVocmVyZSB2b3JiZXJlaXRldGUgTmFzc2Z1dHRlcnBvcnRpb25lbiBvaG5lIEFwcC0gb2RlciBXTEFOLUFiaMOkbmdpZ2tlaXQuIgogICAgdmFsdWVzOgogICAgICBwcm9maWw6ICJCZXN0ZSBPZmZsaW5lLVplaXRzdGV1ZXJ1bmciCiAgICAgIGt1ZWhscHJpbnppcDogIjIgS8O8aGxha2t1czsga2VpbmUgYWt0aXZlIEvDvGhsdW5nIgogICAgICBtYWhsemVpdGVuOiAiNSBGw6RjaGVyIG1pdCBqZSAxNTUgZzsgNCBzcMOkdGVyZSDDlmZmbnVuZ2VuIgogICAgICBzdGV1ZXJ1bmc6ICJEaWdpdGFsZXIgVGltZXIgYW0gR2Vyw6R0IgogICAgICBzdHJvbXZlcnNvcmd1bmc6ICIzIEFBLUJhdHRlcmllbiIKICAgICAgaHlnaWVuZTogIkRlY2tlbCB1bmQgRWluc2F0eiBzcMO8bG1hc2NoaW5lbmdlZWlnbmV0IgogICAgICB0aWVydHJlbm51bmc6ICJOZWluIgogICAgICBnZWVpZ25ldGZ1ZXI6ICJCaXMgenUgendlaSBLYXR6ZW4gb2RlciBlaW4ga2xlaW5lciBIdW5kIgogICAgICB3aWNodGlnc3RlZ3JlbnplOiAiS2VpbmUgRmVybmtvbnRyb2xsZSB1bmQga2VpbmUgZ2VyZWdlbHRlIEvDvGhsdW5nIgogIC0gc2x1ZzogInN1cmVmZWVkLW1pY3JvY2hpcC1wZXQtZmVlZGVyIgogICAgbGFiZWw6ICJTdXJlRmVlZCBNaWNyb2NoaXAgUGV0IEZlZWRlciIKICAgIHR5cGU6ICJwcm9kdWN0IgogICAgcmVjb21tZW5kYXRpb246ICJCZXN0ZSBTcGV6aWFsbMO2c3VuZyBnZWdlbiBGdXR0ZXJrbGF1IHVuZCBmw7xyIGdldHJlbm50ZSBOYXNzZnV0dGVycmF0aW9uZW4sIGFiZXIga2VpbiB6ZWl0Z2VzdGV1ZXJ0ZXIgTWFobHplaXRlbmF1dG9tYXQuIgogICAgdmFsdWVzOgogICAgICBwcm9maWw6ICJCZXN0ZSBadWdhbmdza29udHJvbGxlIgogICAgICBrdWVobHByaW56aXA6ICJLZWluZSBha3RpdmUgS8O8aGx1bmciCiAgICAgIG1haGx6ZWl0ZW46ICJNYW51ZWxsIGJlZsO8bGx0ZXIgNDAwLW1sLU5hcGYiCiAgICAgIHN0ZXVlcnVuZzogIsOWZmZudW5nIHBlciBNaWtyb2NoaXAgb2RlciBSRklELUFuaMOkbmdlciIKICAgICAgc3Ryb212ZXJzb3JndW5nOiAiNCBDLUJhdHRlcmllbiIKICAgICAgaHlnaWVuZTogIk5hcGYgdW5kIE1hdHRlIGVudG5laG1iYXI7IE1lY2hhbmlrIHRyb2NrZW4gaGFsdGVuIgogICAgICB0aWVydHJlbm51bmc6ICJKYSwgw7xiZXIgTWlrcm9jaGlwIG9kZXIgUkZJRCIKICAgICAgZ2VlaWduZXRmdWVyOiAiS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUiCiAgICAgIHdpY2h0aWdzdGVncmVuemU6ICJLZWluZSBaZWl0cGzDpG5lIHVuZCBrZWluZSBhdXRvbWF0aXNjaGUgUG9ydGlvbmllcnVuZyIKY3JpdGVyaWE6CiAgLSBrZXk6ICJwcm9maWwiCiAgICBsYWJlbDogIlVuc2VyZSBFaW5vcmRudW5nIgogICAgZGVzY3JpcHRpb246ICJEZXIgc3TDpHJrc3RlIGtvbmtyZXRlIEFud2VuZHVuZ3NmYWxsIGRlcyBqZXdlaWxpZ2VuIE1vZGVsbHMuIgogICAgd2VpZ2h0OiAxLjUKICAtIGtleTogImt1ZWhscHJpbnppcCIKICAgIGxhYmVsOiAiS8O8aGxwcmluemlwIgogICAgZGVzY3JpcHRpb246ICJPYiBkYXMgRnV0dGVyIGFrdGl2IGdla8O8aGx0IG9kZXIgbGVkaWdsaWNoIGR1cmNoIEvDvGhsYWtrdXMgbGFuZ3NhbWVyIGVyd8Okcm10IHdpcmQuIgogICAgd2VpZ2h0OiAxLjYKICAtIGtleTogIm1haGx6ZWl0ZW4iCiAgICBsYWJlbDogIk1haGx6ZWl0ZW4gdW5kIEthcGF6aXTDpHQiCiAgICBkZXNjcmlwdGlvbjogIkFuemFobCwgR3LDtsOfZSB1bmQgdGF0c8OkY2hsaWNoZSBOdXR6YmFya2VpdCBkZXIgdm9yYmVyZWl0ZXRlbiBGw6RjaGVyLiIKICAgIHdlaWdodDogMS40CiAgLSBrZXk6ICJzdGV1ZXJ1bmciCiAgICBsYWJlbDogIlN0ZXVlcnVuZyIKICAgIGRlc2NyaXB0aW9uOiAiQXBwLCBsb2thbGVyIFRpbWVyIG9kZXIgdGllcmFiaMOkbmdpZ2Ugw5ZmZm51bmcuIgogICAgd2VpZ2h0OiAwLjkKICAtIGtleTogInN0cm9tdmVyc29yZ3VuZyIKICAgIGxhYmVsOiAiU3Ryb20gdW5kIEF1c2ZhbGxzaWNoZXJoZWl0IgogICAgZGVzY3JpcHRpb246ICJBYmjDpG5naWdrZWl0IHZvbSBOZXR6IHNvd2llIHZvcmhhbmRlbmUgQmF0dGVyaWUtIG9kZXIgT2ZmbGluZS1GdW5rdGlvbmVuLiIKICAgIHdlaWdodDogMS4zCiAgLSBrZXk6ICJoeWdpZW5lIgogICAgbGFiZWw6ICJSZWluaWd1bmciCiAgICBkZXNjcmlwdGlvbjogIk1hdGVyaWFsLCBlbnRuZWhtYmFyZSBUZWlsZSB1bmQgbGF1ZmVuZGVyIFBmbGVnZWF1ZndhbmQuIgogICAgd2VpZ2h0OiAxLjUKICAtIGtleTogInRpZXJ0cmVubnVuZyIKICAgIGxhYmVsOiAiSW5kaXZpZHVlbGxlIFRpZXJ0cmVubnVuZyIKICAgIGRlc2NyaXB0aW9uOiAiT2IgZGFzIEdlcsOkdCBGdXR0ZXIgdm9yIGFuZGVyZW4gVGllcmVuIHNjaMO8dHplbiBrYW5uLiIKICAgIHdlaWdodDogMC45CiAgLSBrZXk6ICJnZWVpZ25ldGZ1ZXIiCiAgICBsYWJlbDogIkdlZWlnbmV0IGbDvHIiCiAgICBkZXNjcmlwdGlvbjogIlRpZXJhcnRlbiB1bmQgR3LDtsOfZW4sIGbDvHIgZGllIGRhcyBNb2RlbGwgc2lubnZvbGwgYXVzZ2VsZWd0IGlzdC4iCiAgICB3ZWlnaHQ6IDAuNwogIC0ga2V5OiAid2ljaHRpZ3N0ZWdyZW56ZSIKICAgIGxhYmVsOiAiV2ljaHRpZ3N0ZSBHcmVuemUiCiAgICBkZXNjcmlwdGlvbjogIkRlciBQdW5rdCwgZGVyIHZvciBkZW0gS2F1ZiBhbSBlaGVzdGVuIHp1bSBBdXNzY2hsdXNzIGbDvGhyZW4ga2Fubi4iCiAgICB3ZWlnaHQ6IDEuMgphdXRvbWF0aWNSZWNvbW1lbmRhdGlvbnM6CiAgZW5hYmxlZDogdHJ1ZQpyZWNvbW1lbmRhdGlvbjoKICB3aW5uZXJTbHVnOiAicGV0bGlicm8tcG9sYXItd2V0LWZvb2QtZmVlZGVyIgogIGFsdGVybmF0aXZlU2x1ZzogImNhdC1tYXRlLWM1MDAiCiAgdGl0bGU6ICJQRVRMSUJSTyBmw7xyIGFrdGl2ZSBLw7xobHVuZywgQ2F0IE1hdGUgZsO8ciBlaW5mYWNoZSBPZmZsaW5lLVplaXRzdGV1ZXJ1bmciCiAgdGV4dDogIkRlciBQRVRMSUJSTyBQb2xhciBpc3QgZGllIGF1c2dld29nZW5zdGUga29tcGFrdGUgTMO2c3VuZywgd2VubiBkcmVpIGFrdGl2IGdla8O8aGx0ZSBNYWhsemVpdGVuIHVuZCBBcHAtU3RldWVydW5nIGdlbsO8Z2VuLiBEZXIgQ2F0IE1hdGUgQzUwMCBpc3QgZGllIHByYWdtYXRpc2NoZSBBbHRlcm5hdGl2ZSBvaG5lIFdMQU4sIGFyYmVpdGV0IGplZG9jaCBudXIgbWl0IEvDvGhsYWtrdXMuIERlciBQZXRTYWZlIEZyZXNoRmVlZCBiaWV0ZXQgdGVjaG5pc2NoIG1laHIgZ2Vrw7xobHRlIEbDpGNoZXIsIHNvbGx0ZSB3ZWdlbiBWZXJmw7xnYmFya2VpdCB1bmQgZ2VyaW5nZXIgTGFuZ3plaXRlcmZhaHJ1bmcgYWJlciBiZXNvbmRlcnMgc29yZ2bDpGx0aWcgZ2VwcsO8ZnQgd2VyZGVuLiIKdGFibGVUaXRsZTogIkbDvG5mIE5hc3NmdXR0ZXItTMO2c3VuZ2VuIG5hY2ggS8O8aGx1bmcgdW5kIEF1ZmdhYmUgdmVyZ2xpY2hlbiIKY2FyZHNUaXRsZTogIkRpZSBiZXN0ZW4gTW9kZWxsZSBuYWNoIE51dHp1bmdzc3plbmFyaW8iCmZhcToKICAtIHF1ZXN0aW9uOiAiV2VsY2hlciBGdXR0ZXJhdXRvbWF0IGlzdCBmw7xyIE5hc3NmdXR0ZXIgaW5zZ2VzYW10IGFtIGF1c2dld29nZW5zdGVuPyIKICAgIGFuc3dlcjogIkRlciBQRVRMSUJSTyBQb2xhciBpc3QgaW0gYWt0dWVsbGVuIFZlcmdsZWljaCBkaWUgYXVzZ2V3b2dlbnN0ZSBrb21wYWt0ZSBMw7ZzdW5nIG1pdCBha3RpdmVyIEvDvGhsdW5nLiBFciBiaWV0ZXQgZHJlaSBGw6RjaGVyIG1pdCBqZSAyMDAgbWwgdW5kIEFwcC1aZWl0cGzDpG5lLCBiZW7DtnRpZ3QgYWJlciBkYXVlcmhhZnQgTmV0enN0cm9tLiIKICAtIHF1ZXN0aW9uOiAiV2VsY2hlciBOYXNzZnV0dGVyYXV0b21hdCBiaWV0ZXQgZGllIG1laXN0ZW4gZ2Vrw7xobHRlbiBNYWhsemVpdGVuPyIKICAgIGFuc3dlcjogIkRlciBQZXRTYWZlIEZyZXNoRmVlZCBiZXNpdHp0IHNlY2hzIGFrdGl2IGdla8O8aGx0ZSBFaW5zw6R0emUuIFZvciBkZW0gS2F1ZiBzb2xsdGVuIGRpZSBWZXJmw7xnYmFya2VpdCBpbiBEZXV0c2NobGFuZCwgZGllIGtvbmtyZXRlIE1vZGVsbHZhcmlhbnRlIHVuZCBkaWUgZmVobGVuZGUgZG9rdW1lbnRpZXJ0ZSBOb3RzdHJvbWzDtnN1bmcgZ2VwcsO8ZnQgd2VyZGVuLiIKICAtIHF1ZXN0aW9uOiAiV2FzIGlzdCBkZXIgVW50ZXJzY2hpZWQgendpc2NoZW4gYWt0aXZlciBLw7xobHVuZyB1bmQgS8O8aGxha2t1cz8iCiAgICBhbnN3ZXI6ICJBa3RpdmUgS8O8aGx1bmcgZsO8aHJ0IGxhdWZlbmQgV8Okcm1lIGFiIHVuZCBrYW5uIGVpbmUgWmllbHRlbXBlcmF0dXIgYW5zdHJlYmVuLiBLw7xobGFra3VzIHNwZWljaGVybiBsZWRpZ2xpY2ggS8OkbHRlIHVuZCB3ZXJkZW4gbWl0IGRlciBaZWl0IHfDpHJtZXIuIElocmUgV2lya3VuZyBow6RuZ3Qgc3TDpHJrZXIgdm9uIFJhdW10ZW1wZXJhdHVyLCBBdXNnYW5nc3RlbXBlcmF0dXIgdW5kIFZvcmJlcmVpdHVuZyBhYi4iCiAgLSBxdWVzdGlvbjogIldlbGNoZXIgTmFzc2Z1dHRlcmF1dG9tYXQgZnVua3Rpb25pZXJ0IG9obmUgV0xBTj8iCiAgICBhbnN3ZXI6ICJEZXIgQ2F0IE1hdGUgQzUwMCB3aXJkIGRpcmVrdCBhbSBHZXLDpHQgcHJvZ3JhbW1pZXJ0IHVuZCBsw6R1ZnQgbWl0IEFBLUJhdHRlcmllbi4gQXVjaCBkZXIgU3VyZUZlZWQgYXJiZWl0ZXQgbG9rYWwsIGJpZXRldCBqZWRvY2gga2VpbmUgWmVpdHN0ZXVlcnVuZy4iCiAgLSBxdWVzdGlvbjogIldlbGNoZXMgTW9kZWxsIGZ1bmt0aW9uaWVydCBiZWkgZWluZW0gU3Ryb21hdXNmYWxsIHdlaXRlcj8iCiAgICBhbnN3ZXI6ICJDYXQgTWF0ZSBDNTAwIHVuZCBTdXJlRmVlZCBhcmJlaXRlbiB2b2xsc3TDpG5kaWcgbWl0IEJhdHRlcmllbi4gRGVyIENhdGl0IFBJWEkga2FubiBtaXQgZWluZ2VzZXR6dGVuIEMtQmF0dGVyaWVuIHdlaXRlcmxhdWZlbi4gQWt0aXYgZ2Vrw7xobHRlIE1vZGVsbGUgdmVybGllcmVuIG9obmUgTmV0enN0cm9tIGlocmUgS8O8aGxmdW5rdGlvbi4iCiAgLSBxdWVzdGlvbjogIlNpbmQgc2VjaHMgRsOkY2hlciBnbGVpY2hiZWRldXRlbmQgbWl0IHNlY2hzIHNww6R0ZXJlbiBNYWhsemVpdGVuPyIKICAgIGFuc3dlcjogIk5pY2h0IGltbWVyLiBCZWkgRHJlaHRlbGxlci1BdXRvbWF0ZW4gaXN0IGRhcyBlcnN0ZSBGYWNoIGjDpHVmaWcgc29mb3J0IHp1Z8OkbmdsaWNoLiBFbnRzY2hlaWRlbmQgaXN0IGRlc2hhbGIgZGllIFphaGwgZGVyIHNww6R0ZXIgcHJvZ3JhbW1pZXJiYXJlbiDDlmZmbnVuZ2VuLCBuaWNodCBudXIgZGllIFphaGwgZGVyIEbDpGNoZXIuIgogIC0gcXVlc3Rpb246ICJXZWxjaGVyIEF1dG9tYXQgdmVyaGluZGVydCBGdXR0ZXJrbGF1PyIKICAgIGFuc3dlcjogIkRlciBTdXJlRmVlZCBNaWNyb2NoaXAgUGV0IEZlZWRlciDDtmZmbmV0IG51ciBmw7xyIGdlc3BlaWNoZXJ0ZSBNaWtyb2NoaXBzIG9kZXIgUkZJRC1BbmjDpG5nZXIuIERpZSBhbmRlcmVuIE1vZGVsbGUgaW0gVmVyZ2xlaWNoIGtvbnRyb2xsaWVyZW4gbmljaHQsIHdlbGNoZXMgVGllciBhbiBkYXMgZ2XDtmZmbmV0ZSBGdXR0ZXIgZ2VsYW5ndC4iCiAgLSBxdWVzdGlvbjogIklzdCBkZXIgU3VyZUZlZWQgZWluIHJpY2h0aWdlciBGdXR0ZXJhdXRvbWF0PyIKICAgIGFuc3dlcjogIk51ciBlaW5nZXNjaHLDpG5rdC4gRXIgcG9ydGlvbmllcnQgbmljaHQgYXV0b21hdGlzY2ggdW5kIMO2ZmZuZXQgbmljaHQgbmFjaCBaZWl0cGxhbi4gU2VpbmUgQXVmZ2FiZSBpc3QgZGllIFp1Z2FuZ3Nrb250cm9sbGUgenUgZWluZXIgbWFudWVsbCBlaW5nZWbDvGxsdGVuIFBvcnRpb24uIgogIC0gcXVlc3Rpb246ICJXaWUgbGFuZ2UgZGFyZiBOYXNzZnV0dGVyIGltIEF1dG9tYXRlbiBzdGVoZW4/IgogICAgYW5zd2VyOiAiRWluZSBwYXVzY2hhbGUgc2ljaGVyZSBaZWl0IGzDpHNzdCBzaWNoIG5pY2h0IHNlcmnDtnMgbmVubmVuLiBGdXR0ZXJhcnQsIEF1c2dhbmdzdGVtcGVyYXR1ciwgUmF1bXRlbXBlcmF0dXIsIEvDvGhscHJpbnppcCwgRsO8bGxtZW5nZSB1bmQgSHlnaWVuZSB2ZXLDpG5kZXJuIGRhcyBSaXNpa28gZXJoZWJsaWNoLiBIZXJzdGVsbGVyaGlud2Vpc2UgdW5kIGdlZ2ViZW5lbmZhbGxzIHRpZXLDpHJ6dGxpY2hlIEVtcGZlaGx1bmdlbiBoYWJlbiBWb3JyYW5nLiIKICAtIHF1ZXN0aW9uOiAiUmVpY2hlbiBLw7xobGFra3VzIGltIFNvbW1lciBhdXM/IgogICAgYW5zd2VyOiAiRGFzIGzDpHNzdCBzaWNoIG5pY2h0IGFsbGdlbWVpbiB6dXNhZ2VuLiBJbiB3YXJtZW4gUsOkdW1lbiBlcnfDpHJtZW4gc2ljaCBBa2t1cyB1bmQgRnV0dGVyIHNjaG5lbGxlci4gVm9yIHVuYmVhdWZzaWNodGlndGVyIE51dHp1bmcgc29sbHRlIGRpZSBUZW1wZXJhdHVyZW50d2lja2x1bmcgbWl0IGRlbSBlaWdlbmVuIEF1ZmJhdSBrb25zZXJ2YXRpdiBnZXByw7xmdCB3ZXJkZW4uIgogIC0gcXVlc3Rpb246ICJLYW5uIGljaCBSb2hmdXR0ZXIgaW4gZWluZW0gTmFzc2Z1dHRlcmF1dG9tYXRlbiB2ZXJ3ZW5kZW4/IgogICAgYW5zd2VyOiAiTnVyIHdlbm4gZGVyIEhlcnN0ZWxsZXIgZGFzIHZlcndlbmRldGUgTW9kZWxsIHVuZCBkaWUga29ua3JldGUgRnV0dGVyYXJ0IGF1c2Ryw7xja2xpY2ggZGFmw7xyIGZyZWlnaWJ0LiBSb2hmdXR0ZXIgc3RlbGx0IGJlc29uZGVycyBob2hlIEFuZm9yZGVydW5nZW4gYW4gS8O8aGxrZXR0ZSB1bmQgSHlnaWVuZS4iCiAgLSBxdWVzdGlvbjogIldpZSBvZnQgbXVzcyBlaW4gTmFzc2Z1dHRlcmF1dG9tYXQgZ2VyZWluaWd0IHdlcmRlbj8iCiAgICBhbnN3ZXI6ICJGdXR0ZXJzY2hhbGVuIHVuZCBhbGxlIEtvbnRha3RmbMOkY2hlbiBzb2xsdGVuIG5hY2ggamVkZXIgTmFzc2Z1dHRlci1OdXR6dW5nIHZvbGxzdMOkbmRpZyBnZXJlaW5pZ3QgdW5kIGdldHJvY2tuZXQgd2VyZGVuLiBEZWNrZWwsIERpY2h0dW5nZW4sIEvDvGhsZmzDpGNoZW4gdW5kIE1lY2hhbmlrIG3DvHNzZW4gcmVnZWxtw6TDn2lnIGF1ZiBSw7xja3N0w6RuZGUga29udHJvbGxpZXJ0IHdlcmRlbi4iCiAgLSBxdWVzdGlvbjogIklzdCBBcHAtU3RldWVydW5nIGJlaSBOYXNzZnV0dGVyIHdpY2h0aWc/IgogICAgYW5zd2VyOiAiU2llIGVybGVpY2h0ZXJ0IFplaXRwbMOkbmUgdW5kIFN0YXR1c2tvbnRyb2xsZSwgbMO2c3QgYWJlciB3ZWRlciBLw7xobHVuZ3MtIG5vY2ggSHlnaWVuZXByb2JsZW1lLiBFaW5lIGxva2FsZSBCZWRpZW51bmcgdW5kIHp1dmVybMOkc3NpZ2UgU3Ryb212ZXJzb3JndW5nIGvDtm5uZW4gd2ljaHRpZ2VyIHNlaW4uIgogIC0gcXVlc3Rpb246ICJFaWduZW4gc2ljaCBOYXNzZnV0dGVyYXV0b21hdGVuIGbDvHIgZ3Jvw59lIEh1bmRlPyIKICAgIGFuc3dlcjogIkRpZSBoaWVyIHZlcmdsaWNoZW5lbiBNb2RlbGxlIHNpbmQgw7xiZXJ3aWVnZW5kIGbDvHIgS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUgYXVzZ2VsZWd0LiBGYWNoZ3LDtsOfZSwgU3RhbmRow7ZoZSwgWnVnYW5nIHVuZCBiZW7DtnRpZ3RlIE1haGx6ZWl0ZW5tZW5nZSBzaW5kIGbDvHIgZ3Jvw59lIEh1bmRlIGjDpHVmaWcgenUga25hcHAuIgogIC0gcXVlc3Rpb246ICJLYW5uIGVpbiBOYXNzZnV0dGVyYXV0b21hdCBlaW5lIHTDpGdsaWNoZSBCZXRyZXV1bmcgZXJzZXR6ZW4/IgogICAgYW5zd2VyOiAiTmVpbi4gU3Ryb21hdXNmYWxsLCBibG9ja2llcnRlIERlY2tlbCwgdmVyZG9yYmVuZXMgRnV0dGVyLCBFcmJyZWNoZW4gb2RlciBGdXR0ZXJ2ZXJ3ZWlnZXJ1bmcgYmxlaWJlbiBtw7ZnbGljaC4gVGllciB1bmQgR2Vyw6R0IHNvbGx0ZW4gYXVjaCBiZWkgYXV0b21hdGlzY2hlciBGw7x0dGVydW5nIHJlZ2VsbcOkw59pZyBrb250cm9sbGllcnQgd2VyZGVuLiIKLS0tCgpOYXNzZnV0dGVyYXV0b21hdGVuIGzDtnNlbiBuaWNodCBhbGxlIGRhc3NlbGJlIFByb2JsZW0uIEVpbmlnZSBHZXLDpHRlICoqa8O8aGxlbiBtZWhyZXJlIHZvcmJlcmVpdGV0ZSBQb3J0aW9uZW4gYWt0aXYqKiwgYW5kZXJlIMO2ZmZuZW4gRsOkY2hlciBtaXQgS8O8aGxha2t1cyB6dSBiZXN0aW1tdGVuIFplaXRlbi4gTWlrcm9jaGlwLU7DpHBmZSB3aWVkZXJ1bSBzY2jDvHR6ZW4gZWluZSBQb3J0aW9uIHZvciBhbmRlcmVuIFRpZXJlbiwgcGxhbmVuIGFiZXIga2VpbmUgTWFobHplaXRlbi4KCkRlc2hhbGIgZ2lidCBlcyBrZWluZW4gcGF1c2NoYWxlbiBUZXN0c2llZ2VyIGbDvHIgamVkZW4gSGF1c2hhbHQuIERpZSBlcnN0ZSBFbnRzY2hlaWR1bmcgbGF1dGV0IG5pY2h0IOKAnldlbGNoZSBBcHAgaXN0IGJlc3Nlcj/igJwsIHNvbmRlcm46CgoxLiBNdXNzIGRhcyBGdXR0ZXIgYWt0aXYgZ2Vrw7xobHQgd2VyZGVuPwoyLiBXaWUgdmllbGUgc3DDpHRlcmUgTWFobHplaXRlbiB3ZXJkZW4gdGF0c8OkY2hsaWNoIGJlbsO2dGlndD8KMy4gTXVzcyBkYXMgR2Vyw6R0IG9obmUgTmV0enN0cm9tIHdlaXRlcmFyYmVpdGVuPwo0LiBNdXNzIGVpbmUgYmVzdGltbXRlIEthdHplIGV4a2x1c2l2ZW4gWnVnYW5nIGVyaGFsdGVuPwoKIyMgU2NobmVsbGVudHNjaGVpZHVuZyBpbiAzMCBTZWt1bmRlbgoKKipQRVRMSUJSTyBQb2xhcjoqKiBmw7xyIGRyZWkgYWt0aXYgZ2Vrw7xobHRlIE5hc3NmdXR0ZXJtYWhsemVpdGVuIG1pdCBBcHAuCgoqKlBldFNhZmUgRnJlc2hGZWVkOioqIGbDvHIgYmlzIHp1IHNlY2hzIGFrdGl2IGdla8O8aGx0ZSBNYWhsemVpdGVuLCBzb2Zlcm4gZGFzIE1vZGVsbCBpbiBEZXV0c2NobGFuZCBzaW5udm9sbCB2ZXJmw7xnYmFyIGlzdC4KCioqQ2F0aXQgUElYSSBTbWFydCA2LU1lYWwgRmVlZGVyOioqIGbDvHIgbWVocmVyZSBrbGVpbmUgUG9ydGlvbmVuLCBBcHAgcGx1cyBsb2thbGUgQmVkaWVudW5nIHVuZCBCYXR0ZXJpZS1CYWNrdXAsIHdlbm4gS8O8aGxha2t1cyBnZW7DvGdlbi4KCioqQ2F0IE1hdGUgQzUwMDoqKiBmw7xyIGVpbmZhY2hlLCBiYXR0ZXJpZWJldHJpZWJlbmUgWmVpdHN0ZXVlcnVuZyBvaG5lIFdMQU4uCgoqKlN1cmVGZWVkIE1pY3JvY2hpcCBQZXQgRmVlZGVyOioqIGJlaSBGdXR0ZXJrbGF1LCBTcGV6aWFsZnV0dGVyIG9kZXIgdW50ZXJzY2hpZWRsaWNoZW4gUmF0aW9uZW4sIGFiZXIgb2huZSBaZWl0cGxhbi4KCiMjIFVuc2VyZSBFbXBmZWhsdW5nZW4gbmFjaCBBdWZnYWJlCgojIyMgQmVzdGUga29tcGFrdGUgYWt0aXZlIEvDvGhsdW5nOiBQRVRMSUJSTyBQb2xhcgoKRGVyIFBFVExJQlJPIFBvbGFyIGFyYmVpdGV0IG1pdCB0aGVybW9lbGVrdHJpc2NoZXIgS8O8aGx1bmcgc3RhdHQgbWl0IHZvcmdlZnJvcmVuZW4gQWtrdXMuIERyZWkgRWRlbHN0YWhsLUbDpGNoZXIgbWl0IGpld2VpbHMgMjAwIG1sIGxhc3NlbiBzaWNoIMO8YmVyIGRpZSBBcHAgemVpdGxpY2ggcGxhbmVuLgoKRGFzIEtvbnplcHQgaXN0IGbDvHIgS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUgc2NobMO8c3NpZywgd2VubiBkcmVpIHZvcmJlcmVpdGV0ZSBNYWhsemVpdGVuIHJlaWNoZW4uIERpZSBncsO2w590ZSBTY2h3w6RjaGUgaXN0IHp1Z2xlaWNoIGVpbmRldXRpZzogT2huZSBOZXR6c3Ryb20gZ2lidCBlcyB3ZWRlciBha3RpdmUgS8O8aGx1bmcgbm9jaCBlaW4gZG9rdW1lbnRpZXJ0ZXMgQmF0dGVyaWUtQmFja3VwLgoKIyMjIE1laXN0ZSBha3RpdiBnZWvDvGhsdGUgTWFobHplaXRlbjogUGV0U2FmZSBGcmVzaEZlZWQKCkRlciBQZXRTYWZlIEZyZXNoRmVlZCBrb21iaW5pZXJ0IHNlY2hzIEVpbnPDpHR6ZSBtaXQgYWt0aXZlciBIYWxibGVpdGVya8O8aGx1bmcgdW5kIEFwcC1TdGV1ZXJ1bmcuIERhbWl0IGlzdCBlciB0ZWNobmlzY2ggaW50ZXJlc3NhbnRlciBhbHMgRHJlaHRlbGxlciwgZGVyZW4gS8O8aGxha2t1cyBtaXQgamVkZXIgU3R1bmRlIHfDpHJtZXIgd2VyZGVuLgoKRGllIEVpbm9yZG51bmcgYmxlaWJ0IGRlbm5vY2ggdm9yc2ljaHRpZy4gRGFzIE1vZGVsbCBpc3QganVuZywgZGllIExhbmd6ZWl0ZXJmYWhydW5nIGJlZ3Jlbnp0IHVuZCBkaWUgVmVyZsO8Z2JhcmtlaXQgaW4gRGV1dHNjaGxhbmQgbXVzcyBiZWltIGtvbmtyZXRlbiBBbmdlYm90IGdlcHLDvGZ0IHdlcmRlbi4gRWluIGRva3VtZW50aWVydGVzIEJhdHRlcmllLUJhY2t1cCBmZWhsdCBlYmVuZmFsbHMuCgojIyMgQmVzdGUgZmxleGlibGUgU2VjaHMtRsOkY2hlci1Mw7ZzdW5nOiBDYXRpdCBQSVhJIFNtYXJ0IDYtTWVhbCBGZWVkZXIKCkRlciBDYXRpdCBQSVhJIGJlc2l0enQgc2VjaHMgRsOkY2hlciBtaXQgamV3ZWlscyAxNzAgbWwuIERhcyBlcnN0ZSBGYWNoIGlzdCBkaXJla3QgenVnw6RuZ2xpY2gsIGRpZSB3ZWl0ZXJlbiBQb3J0aW9uZW4gd2VyZGVuIG5hY2ggZWluZW0gdMOkZ2xpY2hlbiBaZWl0cGxhbiBnZcO2ZmZuZXQuIEJlZGllbnQgd2lyZCBkZXIgQXV0b21hdCBwZXIgQXBwIG9kZXIgZGlyZWt0IGFtIFRvdWNocGFuZWwuCgpad2VpIEvDvGhsYWtrdXMgdmVybGFuZ3NhbWVuIGRpZSBFcnfDpHJtdW5nLCByZWdlbG4gYWJlciBrZWluZSBUZW1wZXJhdHVyLiBWaWVyIEMtQmF0dGVyaWVuIGvDtm5uZW4gZGVuIEJldHJpZWIgYmVpIFN0cm9tYXVzZmFsbCB6ZWl0d2Vpc2UgZm9ydHNldHplbi4gRGFzIGlzdCBwcmFrdGlzY2gsIGVyaMOkbHQgamVkb2NoIGtlaW5lIGFrdGl2ZSBLw7xobGtldHRlLgoKIyMjIEJlc3RlIE9mZmxpbmUtWmVpdHN0ZXVlcnVuZzogQ2F0IE1hdGUgQzUwMAoKRGVyIENhdCBNYXRlIEM1MDAgaXN0IGVpbmZhY2hlciBhdWZnZWJhdXQuIEVpbiBGYWNoIGlzdCBzb2ZvcnQgb2ZmZW4sIHZpZXIgd2VpdGVyZSDDlmZmbnVuZ2VuIHdlcmRlbiBkaXJla3QgYW0gR2Vyw6R0IHByb2dyYW1taWVydC4gRGFzIE1vZGVsbCBsw6R1ZnQgbWl0IGRyZWkgQUEtQmF0dGVyaWVuIHVuZCBiZW7DtnRpZ3Qgd2VkZXIgQXBwIG5vY2ggV0xBTi4KCkbDvHIgbWVocmVyZSBQb3J0aW9uZW4gw7xiZXIgZWluZW4gw7xiZXJzY2hhdWJhcmVuIFplaXRyYXVtIGlzdCBkYXMgw7xiZXJ6ZXVnZW5kLiBEaWUgYmVpZGVuIEvDvGhsYWtrdXMgZMO8cmZlbiBhYmVyIG5pY2h0IG1pdCBlaW5lciBha3RpdmVuIEvDvGhsdW5nIHZlcndlY2hzZWx0IHdlcmRlbi4KCiMjIyBCZXN0ZSBadWdhbmdza29udHJvbGxlOiBTdXJlRmVlZCBNaWNyb2NoaXAgUGV0IEZlZWRlcgoKRGVyIFN1cmVGZWVkIMO2ZmZuZXQgZGVuIE5hcGYgbnVyIGbDvHIgZ2VzcGVpY2hlcnRlIE1pa3JvY2hpcHMgb2RlciBlaW5lbiBSRklELUhhbHNiYW5kYW5ow6RuZ2VyLiBCZWkgRnV0dGVybmVpZCwgTWVkaWthbWVudGVuIG9kZXIgdW50ZXJzY2hpZWRsaWNoZW4gRGnDpHRlbiBsw7ZzdCBlciBkYW1pdCBlaW4gUHJvYmxlbSwgZGFzIHplaXRnZXN0ZXVlcnRlIEF1dG9tYXRlbiBtZWlzdCBvZmZlbmxhc3Nlbi4KCkVyIGlzdCBqZWRvY2gga2VpbiBhdXRvbWF0aXNjaGVyIFBvcnRpb25pZXJlcjogRGVyIE5hcGYgd2lyZCBtYW51ZWxsIGJlZsO8bGx0IHVuZCDDtmZmbmV0IG5pY2h0IG5hY2ggVWhyemVpdC4KCiMjIFdlbGNoZSBCYXVhcnQgcGFzc3QgenUgd2VsY2hlbSBQcm9ibGVtPwoKfCBQcm9ibGVtIHwgR2VlaWduZXRlIEJhdWFydCB8IFBhc3NlbmRlIE1vZGVsbGUgfAp8LS0tfC0tLXwtLS18CnwgTmFzc2Z1dHRlciDDvGJlciB2aWVsZSBTdHVuZGVuIG3DtmdsaWNoc3Qga29uc3RhbnQga8O8aGxlbiB8IEFrdGl2IGdla8O8aGx0ZXIgRmFjaGF1dG9tYXQgfCBQRVRMSUJSTyBQb2xhciwgUGV0U2FmZSBGcmVzaEZlZWQgfAp8IE1laHJlcmUga2xlaW5lIE1haGx6ZWl0ZW4gYW4gZWluZW0gVGFnIGJlcmVpdHN0ZWxsZW4gfCBEcmVodGVsbGVyIG1pdCBLw7xobGFra3VzIHwgQ2F0aXQgUElYSSwgQ2F0IE1hdGUgQzUwMCB8CnwgT2huZSBXTEFOIHVuZCBTdGVja2Rvc2UgYXJiZWl0ZW4gfCBCYXR0ZXJpZWJldHJpZWJlbmVyIEZhY2hhdXRvbWF0IHwgQ2F0IE1hdGUgQzUwMCB8CnwgQmVpIFN0cm9tYXVzZmFsbCB3ZWl0ZXIgw7ZmZm5lbiB8IE1vZGVsbCBtaXQgQmF0dGVyaWUtQmFja3VwIHwgQ2F0aXQgUElYSSBvZGVyIENhdCBNYXRlIEM1MDAgfAp8IEZ1dHRlciB2b3IgZWluZXIgYW5kZXJlbiBLYXR6ZSBzY2jDvHR6ZW4gfCBNaWtyb2NoaXAtTmFwZiB8IFN1cmVGZWVkIHwKfCBTZWNocyB2b3JiZXJlaXRldGUgUG9ydGlvbmVuIG51dHplbiB8IFNlY2hzLUbDpGNoZXItU3lzdGVtIHwgUGV0U2FmZSBGcmVzaEZlZWQgb2RlciBDYXRpdCBQSVhJIHwKCiMjIEFrdGl2ZSBLw7xobHVuZyB1bmQgS8O8aGxha2t1IHNpbmQgbmljaHQgZGFzc2VsYmUKCkRlciB3aWNodGlnc3RlIFVudGVyc2NoaWVkIGluIGRpZXNlbSBWZXJnbGVpY2ggaXN0IGRhcyBLw7xobHByaW56aXAuCgpFaW5lIGFrdGl2ZSBLw7xobHVuZyBmw7xocnQgd8OkaHJlbmQgZGVzIEJldHJpZWJzIFfDpHJtZSBhYi4gU2llIGthbm4gZGFkdXJjaCBlaW5lIG5pZWRyaWdlcmUgdW5kIGdsZWljaG3DpMOfaWdlcmUgVGVtcGVyYXR1ciBlcnJlaWNoZW4sIGJsZWlidCBhYmVyIHZvbSBTdHJvbW5ldHosIGRlciBVbWdlYnVuZyB1bmQgZGVyIEdlcsOkdGVrb25zdHJ1a3Rpb24gYWJow6RuZ2lnLgoKRWluIEvDvGhsYWtrdSBuaW1tdCBiZWltIEVpbmZyaWVyZW4gS8OkbHRlIGF1ZiB1bmQgZ2lidCBzaWUgYW5zY2hsaWXDn2VuZCB3aWVkZXIgYWIuIFNlaW5lIFdpcmt1bmcgbMOkc3N0IHp3YW5nc2zDpHVmaWcgbmFjaC4gV2llIHNjaG5lbGwgZGFzIGdlc2NoaWVodCwgaMOkbmd0IHVudGVyIGFuZGVyZW0gdm9uIFJhdW10ZW1wZXJhdHVyLCBGdXR0ZXJtZW5nZSwgQXVzZ2FuZ3N0ZW1wZXJhdHVyIHVuZCBLb250YWt0ZmzDpGNoZSBhYi4KCkRpZSBCZXplaWNobnVuZyDigJ5nZWvDvGhsdOKAnCBhbGxlaW4gaXN0IGRlc2hhbGIgenUgdW5nZW5hdS4gVm9yIGRlbSBLYXVmIHNvbGx0ZSBrbGFyIHNlaW4sICoqb2IgZGFzIEdlcsOkdCB0YXRzw6RjaGxpY2ggYWt0aXYga8O8aGx0IG9kZXIgbnVyIEFra3VzIHVudGVyIGRlbSBGdXR0ZXJlaW5zYXR6IGxpZWdlbioqLgoKIyMgRGllIFphaGwgZGVyIEbDpGNoZXIgd2lyZCBow6R1ZmlnIGZhbHNjaCBnZWxlc2VuCgpGw7xuZiBvZGVyIHNlY2hzIEbDpGNoZXIgYmVkZXV0ZW4gbmljaHQgYXV0b21hdGlzY2ggZsO8bmYgb2RlciBzZWNocyB6dWvDvG5mdGlnZSBNYWhsemVpdGVuLiBCZWkgdmllbGVuIERyZWh0ZWxsZXJuIGlzdCBlaW4gRmFjaCBuYWNoIGRlbSBCZWbDvGxsZW4gc29mb3J0IG9mZmVuLgoKfCBNb2RlbGwgfCBGw6RjaGVyIHwgU3DDpHRlcmUgw5ZmZm51bmdlbiB8CnwtLS18LS0tOnwtLS06fAp8IFBFVExJQlJPIFBvbGFyIHwgMyB8IGJpcyB6dSAzIHBlciBBcHAgZ2VwbGFudGUgTWFobHplaXRlbiB8CnwgUGV0U2FmZSBGcmVzaEZlZWQgfCA2IHwgYmlzIHp1IDYgZ2VwbGFudGUgTWFobHplaXRlbiB8CnwgQ2F0aXQgUElYSSB8IDYgfCBlcnN0ZXMgRmFjaCBvZmZlbiwgd2VpdGVyZSBGw6RjaGVyIHplaXRnZXN0ZXVlcnQgfAp8IENhdCBNYXRlIEM1MDAgfCA1IHwgNCBzcMOkdGVyZSDDlmZmbnVuZ2VuIHwKfCBTdXJlRmVlZCB8IDEgTmFwZiB8IGtlaW5lIHplaXRnZXN0ZXVlcnRlIMOWZmZudW5nIHwKCkbDvHIgZGVuIEFsbHRhZyBpc3QgZGllIFphaGwgZGVyICoqc3DDpHRlciB2ZXJmw7xnYmFyZW4gUG9ydGlvbmVuKiogd2ljaHRpZ2VyIGFscyBkaWUgWmFobCwgZGllIGdyb8OfIGF1ZiBkZXIgVmVycGFja3VuZyBzdGVodC4KCiMjIFN0cm9tYXVzZmFsbDogw5ZmZm5lbiB1bmQgS8O8aGxlbiBnZXRyZW5udCBiZXdlcnRlbgoKQmVpIGVpbmVtIFN0cm9tYXVzZmFsbCBzdGVsbGVuIHNpY2ggendlaSB2ZXJzY2hpZWRlbmUgRnJhZ2VuOgoKMS4gw5ZmZm5ldCBkYXMgbsOkY2hzdGUgRmFjaCB3ZWl0ZXJoaW4/CjIuIEJsZWlidCBkYXMgRnV0dGVyIHdlaXRlcmhpbiBnZWvDvGhsdD8KCkVpbiBCYXR0ZXJpZS1CYWNrdXAga2FubiBNb3RvciwgVWhyIHVuZCBnZXNwZWljaGVydGVuIFBsYW4gd2VpdGVyYmV0cmVpYmVuLiBFcyBlcnNldHp0IGFiZXIgYmVpIGFrdGl2IGdla8O8aGx0ZW4gR2Vyw6R0ZW4gbmljaHQgYXV0b21hdGlzY2ggZGllIE5ldHpsZWlzdHVuZyBkZXIgS8O8aGx1bmcuCgpDYXQgTWF0ZSB1bmQgU3VyZUZlZWQgYXJiZWl0ZW4gdm9sbHN0w6RuZGlnIG1pdCBCYXR0ZXJpZW4uIERlciBDYXRpdCBQSVhJIGthbm4gbWl0IGVpbmdlc2V0enRlbiBCYWNrdXAtQmF0dGVyaWVuIHdlaXRlcmxhdWZlbi4gUEVUTElCUk8gUG9sYXIgdW5kIFBldFNhZmUgRnJlc2hGZWVkIHNpbmQgZsO8ciBpaHJlIGFrdGl2ZSBLw7xobHVuZyBhdWYgTmV0enN0cm9tIGFuZ2V3aWVzZW4uCgojIyBIeWdpZW5lIGlzdCBrZWluIE5lYmVua3JpdGVyaXVtCgpOYXNzZnV0dGVyIGhpbnRlcmzDpHNzdCBGZXVjaHRpZ2tlaXQsIEZldHQgdW5kIEVpd2Vpw59yw7xja3N0w6RuZGUuIERlc2hhbGIgaXN0IGRpZSBSZWluaWdiYXJrZWl0IHdpY2h0aWdlciBhbHMgYmVpIGVpbmVtIHJlaW5lbiBUcm9ja2VuZnV0dGVyc3BlbmRlci4KCkFjaHRlIGJlc29uZGVycyBhdWY6CgotIHZvbGxzdMOkbmRpZyBlbnRuZWhtYmFyZSBGdXR0ZXJzY2hhbGVuCi0gZ2xhdHRlIEtvbnRha3RmbMOkY2hlbiBvaG5lIHNjaHdlciBlcnJlaWNoYmFyZSBTcGFsdGVuCi0gc3DDvGxtYXNjaGluZW5nZWVpZ25ldGUgRWluc8OkdHplLCBzb2Zlcm4gdm9tIEhlcnN0ZWxsZXIgZnJlaWdlZ2ViZW4KLSBndXQgZXJyZWljaGJhcmUgRGVja2VscsOkbmRlciB1bmQgRGljaHR1bmdlbgotIGVpbmUgZWxla3RyaXNjaGUgQmFzaXMsIGRpZSBzaWNoIHJlaW5pZ2VuIGzDpHNzdCwgb2huZSBXYXNzZXIgaW4gZGllIE1lY2hhbmlrIHp1IGJyaW5nZW4KLSB2b2xsc3TDpG5kaWcgdHJvY2tlbmUgVGVpbGUgdm9yIGRlciBuw6RjaHN0ZW4gQmVmw7xsbHVuZwoKRWluIGd1dGVzIEdlcsOkdCBzcGFydCBuaWNodCBudXIgWmVpdCBiZWltIEbDvHR0ZXJuLiBFcyBtdXNzIHNpY2ggYXVjaCBzbyByZWluaWdlbiBsYXNzZW4sIGRhc3MgZXMgdGF0c8OkY2hsaWNoIHJlZ2VsbcOkw59pZyBnZXNjaGllaHQuCgojIyBNZWhya2F0emVuaGF1c2hhbHQ6IFplaXRzdGV1ZXJ1bmcgdmVyaGluZGVydCBrZWluZW4gRnV0dGVya2xhdQoKU29iYWxkIGVpbiBGYWNoIGdlw7ZmZm5ldCBpc3QsIGvDtm5uZW4gYmVpIFBFVExJQlJPLCBQZXRTYWZlLCBDYXRpdCB1bmQgQ2F0IE1hdGUgZ3J1bmRzw6R0emxpY2ggYWxsZSBUaWVyZSBkYXJhdWYgenVncmVpZmVuLiBFaW5lIEFwcCwgS2FtZXJhIG9kZXIgZWluIHp3ZWl0ZXIgTmFwZiDDpG5kZXJ0IGRhcmFuIG5pY2h0cy4KCkJlaSB1bnRlcnNjaGllZGxpY2hlbiBEacOkdGVuLCBNZWRpa2FtZW50ZW4gb2RlciBzdGFya2VtIEZ1dHRlcm5laWQgaXN0IFp1Z2FuZ3Nrb250cm9sbGUgb2Z0IHdpY2h0aWdlciBhbHMgZWluIGF1c2dlZmVpbHRlciBaZWl0cGxhbi4gRGFmw7xyIGlzdCBkZXIgU3VyZUZlZWQgZGllIHBhc3NlbmRlcmUgQmF1YXJ0LiBTb2xsIHp1c8OkdHpsaWNoIHplaXRnZXN0ZXVlcnQgZ2Vmw7x0dGVydCB3ZXJkZW4sIHNpbmQgdW50ZXIgVW1zdMOkbmRlbiBnZXRyZW5udGUgRnV0dGVycGzDpHR6ZSBvZGVyIG1laHJlcmUgR2Vyw6R0ZSBuw7Z0aWcuCgojIyBGw7xyIEthdHplbiB1bmQga2xlaW5lIEh1bmRlLCBuaWNodCBhdXRvbWF0aXNjaCBmw7xyIGdyb8OfZSBIdW5kZQoKRGllIHZlcmdsaWNoZW5lbiBNb2RlbGxlIHNpbmQgdm9yIGFsbGVtIGbDvHIgS2F0emVuIHVuZCBrbGVpbmUgSHVuZGUgYXVzZ2VsZWd0LiBCZWkgZ3LDtsOfZXJlbiBIdW5kZW4ga8O2bm5lbiBtZWhyZXJlIFB1bmt0ZSB1bmdlZWlnbmV0IHNlaW46CgotIHp1IGtsZWluZSBGw6RjaGVyCi0genUgbmllZHJpZ2UgRnJlc3Nwb3NpdGlvbgotIHp1IHNjaG1hbGUgw5ZmZm51bmcKLSB1bnp1cmVpY2hlbmRlciBNYW5pcHVsYXRpb25zc2NodXR6Ci0genUgZ2VyaW5nZSBtYXhpbWFsZSBNYWhsemVpdAoKRWluIGdyb8OfZXMgR2Vow6R1c2Ugb2RlciBzZWNocyBGw6RjaGVyIHNhZ2VuIHdlbmlnIGRhcsO8YmVyIGF1cywgb2IgZWluZSB2b2xsc3TDpG5kaWdlIEh1bmRlcmF0aW9uIGhpbmVpbnBhc3N0LgoKIyMgQXBwIG9kZXIgbG9rYWxlIEJlZGllbnVuZz8KCkVpbmUgQXBwIGlzdCBiZXF1ZW0sIHdlbm4gWmVpdGVuIGjDpHVmaWcgZ2XDpG5kZXJ0IHdlcmRlbiBvZGVyIFN0YXR1c21lbGR1bmdlbiB3aWNodGlnIHNpbmQuIFNpZSBzY2hhZmZ0IGFiZXIgbmV1ZSBBYmjDpG5naWdrZWl0ZW4gdm9uIFdMQU4sIEtvbnRvLCBDbG91ZC1EaWVuc3QgdW5kIFNvZnR3YXJlcGZsZWdlLgoKRGVyIENhdGl0IFBJWEkga29tYmluaWVydCBBcHAgdW5kIEJlZGllbmZlbGQuIERlciBDYXQgTWF0ZSBDNTAwIGFyYmVpdGV0IHZvbGxzdMOkbmRpZyBsb2thbC4gRGFzIGlzdCB3ZW5pZ2VyIGtvbWZvcnRhYmVsLCBhYmVyIG5hY2h2b2xsemllaGJhciB1bmQgdW5hYmjDpG5naWcuIEJlaSBBYndlc2VuaGVpdCBpc3QgZWluIHZvcmhlcmlnZXIgVGVzdGxhdWYgd2ljaHRpZ2VyIGFscyBkaWUgTMOkbmdlIGRlciBGdW5rdGlvbnNsaXN0ZS4KCiMjIFR5cGlzY2hlIEZlaGxrw6R1ZmUKCiMjIyDigJ5NaXQgS8O8aGxha2t14oCcIGJlZGV1dGV0IEvDvGhsc2NocmFua3RlbXBlcmF0dXIKCk5laW4uIEvDvGhsYWtrdXMgdmVybGFuZ3NhbWVuIGRhcyBFcnfDpHJtZW4uIFNpZSBoYWx0ZW4ga2VpbmUga29uc3RhbnRlIFppZWx0ZW1wZXJhdHVyLgoKIyMjIFNlY2hzIEbDpGNoZXIgYmVkZXV0ZW4gc2VjaHMgc3DDpHRlcmUgTWFobHplaXRlbgoKTmljaHQgendpbmdlbmQuIEJlaSB2aWVsZW4gRHJlaHRlbGxlcm4gaXN0IGRhcyBlcnN0ZSBGYWNoIHNvZm9ydCBvZmZlbi4KCiMjIyBBcHAtU3RldWVydW5nIHplaWd0LCBvYiBkaWUgS2F0emUgZ2VmcmVzc2VuIGhhdAoKRWluZSBnZcO2ZmZuZXRlIE1haGx6ZWl0IGlzdCBrZWluIEZyZXNzbmFjaHdlaXMuIE9obmUgV2FhZ2Ugb2RlciBzaWNoZXJlIFRpZXJlcmtlbm51bmcgYmxlaWJ0IHVua2xhciwgd2VsY2hlcyBUaWVyIHdpZSB2aWVsIGF1Zmdlbm9tbWVuIGhhdC4KCiMjIyBFaW4gTWlrcm9jaGlwLU5hcGYgw7xiZXJuaW1tdCBkZW4gZ2FuemVuIEbDvHR0ZXJ1bmdzcGxhbgoKRGVyIFN1cmVGZWVkIHNjaMO8dHp0IGRlbiBadWdhbmcsIGRvc2llcnQgYWJlciBuaWNodCBhdXRvbWF0aXNjaCB1bmQgw7ZmZm5ldCBuaWNodCBuYWNoIFVocnplaXQuCgojIyMgQWt0aXZlIEvDvGhsdW5nIG1hY2h0IE5hc3NmdXR0ZXIgdW5iZWdyZW56dCBoYWx0YmFyCgpBdWNoIGFrdGl2IGdla8O8aGx0ZSBHZXLDpHRlIGJlbsO2dGlnZW4gc2F1YmVyZSBTY2hhbGVuLCBmcmlzY2hlIEJlZsO8bGx1bmcsIGtvcnJla3RlbiBCZXRyaWViIHVuZCBrb25zZXJ2YXRpdmUgU3RhbmR6ZWl0ZW4uCgojIyBTbyBiZXdlcnRldCBQZm90ZW5UZWNobmlrCgpXaXIgZ2V3aWNodGVuIGJlaSBOYXNzZnV0dGVyYXV0b21hdGVuOgoKLSBLw7xobHByaW56aXAgdW5kIFRlbXBlcmF0dXJrb250cm9sbGU6IDI1ICUKLSBIeWdpZW5lIHVuZCBSZWluaWd1bmc6IDIwICUKLSB0YXRzw6RjaGxpY2ggbnV0emJhcmUgTWFobHplaXRlbjogMTUgJQotIEF1c2ZhbGxzaWNoZXJoZWl0OiAxNSAlCi0gWnV2ZXJsw6Rzc2lna2VpdCBkZXIgU3RldWVydW5nOiAxMCAlCi0gWnVnYW5nc2tvbnRyb2xsZSBpbSBNZWhydGllcmhhdXNoYWx0OiAxMCAlCi0gQXBwIHVuZCBadXNhdHpmdW5rdGlvbmVuOiA1ICUKCk5pY2h0IGdsZWljaGdlc2V0enQgd2VyZGVuIGFrdGl2ZSBLw7xobHVuZyB1bmQgS8O8aGxha2t1LCBGYWNoemFobCB1bmQgc3DDpHRlcmUgTWFobHplaXRlbiwgQXVzZ2FiZXByb3Rva29sbCB1bmQgRnJlc3NuYWNod2VpcyBzb3dpZSBaZWl0c3RldWVydW5nIHVuZCBUaWVyZXJrZW5udW5nLgoKIyMgV2VpdGVyZsO8aHJlbmRlIEthdWZiZXJhdHVuZwoKLSBbQmVzdGUgRnV0dGVyYXV0b21hdGVuIGbDvHIgS2F0emVuXSgvdmVyZ2xlaWNoZS9iZXN0ZS1mdXR0ZXJhdXRvbWF0ZW4tZnVlci1rYXR6ZW4vKQotIFtCZXN0ZSBGdXR0ZXJhdXRvbWF0ZW4gZsO8ciBIdW5kZV0oL3ZlcmdsZWljaGUvYmVzdGUtZnV0dGVyYXV0b21hdGVuLWZ1ZXItaHVuZGUvKQotIFtGdXR0ZXJhdXRvbWF0ZW4gb2huZSBXTEFOXSgvdmVyZ2xlaWNoZS9iZXN0ZS1mdXR0ZXJhdXRvbWF0ZW4tb2huZS13bGFuLykKLSBbV2VsY2hlciBGdXR0ZXJhdXRvbWF0IGlzdCBkZXIgcmljaHRpZ2U/XSgvd2VsY2hlci1mdXR0ZXJhdXRvbWF0LWlzdC1kZXItcmljaHRpZ2UvKQotIFtTbWFydGUgRnV0dGVyYXV0b21hdGVuXSgvc21hcnRlLWZ1dHRlcmF1dG9tYXRlbi8pCi0gW0Z1dHRlcmF1dG9tYXQgcmljaHRpZyByZWluaWdlbl0oL2Z1dHRlcmF1dG9tYXQtcmljaHRpZy1yZWluaWdlbi8pCgpIZXJzdGVsbGVyw7xiZXJzaWNodGVuOiBbUEVUTElCUk9dKC9oZXJzdGVsbGVyL3BldGxpYnJvLyksIFtQZXRTYWZlXSgvaGVyc3RlbGxlci9wZXRzYWZlLyksIFtDYXRpdF0oL2hlcnN0ZWxsZXIvY2F0aXQvKSwgW0NhdCBNYXRlXSgvaGVyc3RlbGxlci9jYXQtbWF0ZS8pIHVuZCBbU3VyZUZlZWRdKC9oZXJzdGVsbGVyL3N1cmVmZWVkLykuCgojIyBRdWVsbGVuIHVuZCBUcmFuc3BhcmVuegoKRGllIFZlcmdsZWljaHN3ZXJ0ZSBiYXNpZXJlbiBhdWYgZGVuIGFrdHVlbGxlbiBQZm90ZW5UZWNobmlrLVByb2R1a3RkYXRlaWVuIHVuZCBkZW4gZG9ydCBkb2t1bWVudGllcnRlbiBIZXJzdGVsbGVyYW5nYWJlbi4gRsO8ciBrZWluZXMgZGVyIGbDvG5mIE1vZGVsbGUgbGllZ3QgZWluIGVpZ2VuZXIgVGVtcGVyYXR1ci1MYW5nemVpdHRlc3QgdW50ZXIga29udHJvbGxpZXJ0ZW4gQmVkaW5ndW5nZW4gdm9yLgoKTW9kZWxsbnVtbWVyLCBMaWVmZXJ1bWZhbmcsIEFwcC1VbnRlcnN0w7x0enVuZywgWnViZWjDtnIgdW5kIFZlcmbDvGdiYXJrZWl0IGvDtm5uZW4gc2ljaCByZWdpb25hbCB1bnRlcnNjaGVpZGVuLiBWb3IgZGVtIEthdWYgc29sbHRlbiBkZXNoYWxiIGRpZSBBbmdhYmVuIGRlcyBrb25rcmV0IGFuZ2Vib3RlbmVuIE1vZGVsbHMgZ2VwcsO8ZnQgd2VyZGVuLgo=",
+  "base64"
+).toString("utf8");
+
+const args = process.argv.slice(2);
+const checkOnly = args.includes("--check");
+const showHelp = args.includes("--help") || args.includes("-h");
+
+function argumentValue(name) {
+  const exactIndex = args.indexOf(name);
+  if (exactIndex >= 0) return args[exactIndex + 1];
+  const prefix = `${name}=`;
+  const match = args.find((arg) => arg.startsWith(prefix));
+  return match ? match.slice(prefix.length) : undefined;
+}
+
+if (showHelp) {
+  console.log(`
+${PATCH_ID}
+
+Verwendung:
+  node apply-${PATCH_ID}.mjs --check
+  node apply-${PATCH_ID}.mjs
+  node apply-${PATCH_ID}.mjs --repo "C:\\Pfad\\zum\\affiliate-template"
+
+Der Prüfmodus verändert keine Dateien.
+`);
+  process.exit(0);
+}
+
+function isRepoRoot(candidate) {
+  return (
+    fs.existsSync(path.join(candidate, "package.json")) &&
+    fs.existsSync(path.join(candidate, "apps", "pfotentechnik", "src")) &&
+    fs.existsSync(path.join(candidate, "apps", "pfotentechnik", "astro.config.mjs"))
+  );
+}
+
+function ancestors(start) {
+  const result = [];
+  let current = path.resolve(start);
+  while (true) {
+    result.push(current);
+    const parent = path.dirname(current);
+    if (parent === current) break;
+    current = parent;
+  }
+  return result;
+}
+
+function resolveRepoRoot() {
+  const explicit = argumentValue("--repo");
+  if (explicit) {
+    const resolved = path.resolve(explicit);
+    if (!isRepoRoot(resolved)) {
+      throw new Error(`Kein passendes Repository unter --repo: ${resolved}`);
+    }
+    return resolved;
+  }
+
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    ...ancestors(process.cwd()),
+    ...ancestors(scriptDir)
+  ];
+
+  for (const candidate of [...new Set(candidates)]) {
+    if (isRepoRoot(candidate)) return candidate;
+  }
+
+  throw new Error(
+    "Repository nicht gefunden. Starte den Installer im Root von affiliate-template oder nutze --repo."
+  );
+}
+
+const repoRoot = resolveRepoRoot();
+const appRoot = path.join(repoRoot, "apps", "pfotentechnik");
+const plans = new Map();
+
+function relFromRepo(abs) {
+  return path.relative(repoRoot, abs).split(path.sep).join("/");
+}
+
+function currentOrEmpty(rel) {
+  if (plans.has(rel)) {
+    const plan = plans.get(rel);
+    return plan.after ?? "";
+  }
+  const abs = path.join(repoRoot, rel);
+  return fs.existsSync(abs) ? fs.readFileSync(abs, "utf8") : "";
+}
+
+function queueWrite(rel, after, reason) {
+  const abs = path.join(repoRoot, rel);
+  const before = plans.has(rel)
+    ? plans.get(rel).before
+    : fs.existsSync(abs)
+      ? fs.readFileSync(abs, "utf8")
+      : null;
+
+  if (before === after) return;
+  plans.set(rel, { rel, before, after, reason });
+}
+
+function queueDelete(rel, reason) {
+  const abs = path.join(repoRoot, rel);
+  const before = plans.has(rel)
+    ? plans.get(rel).before
+    : fs.existsSync(abs)
+      ? fs.readFileSync(abs, "utf8")
+      : null;
+
+  if (before === null) return;
+  plans.set(rel, { rel, before, after: null, reason });
+}
+
+function walkFiles(dir, predicate, result = []) {
+  if (!fs.existsSync(dir)) return result;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const abs = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (
+        entry.name === "node_modules" ||
+        entry.name === "dist" ||
+        entry.name === ".git" ||
+        entry.name.startsWith(".patch-backups")
+      ) {
+        continue;
+      }
+      walkFiles(abs, predicate, result);
+    } else if (predicate(abs)) {
+      result.push(abs);
+    }
+  }
+  return result;
+}
+
+function replaceExactOldRouteAcrossSource() {
+  const sourceRoot = path.join(appRoot, "src");
+  const allowed = new Set([
+    ".md", ".mdx", ".astro", ".ts", ".tsx", ".js", ".mjs", ".json"
+  ]);
+  const files = walkFiles(
+    sourceRoot,
+    (abs) => allowed.has(path.extname(abs))
+  );
+
+  for (const abs of files) {
+    const rel = relFromRepo(abs);
+    if (rel.includes("/src/data/seo/")) continue;
+
+    const before = currentOrEmpty(rel);
+    if (!hasStaleOldRoute(before)) continue;
+
+    const after = replaceStaleOldRoute(before);
+    queueWrite(
+      rel,
+      after,
+      "Interne Verweise von der alten auf die neue Comparison-URL umstellen"
+    );
+  }
+}
+
+function replaceHrefNear(source, marker, href, maxDistance = 700) {
+  const markerIndex = source.indexOf(marker);
+  if (markerIndex < 0) return { source, changed: false };
+
+  const segmentEnd = Math.min(source.length, markerIndex + maxDistance);
+  const segment = source.slice(markerIndex, segmentEnd);
+  const hrefMatch = segment.match(/href:\s*"[^"]+"/);
+  if (!hrefMatch || hrefMatch.index === undefined) {
+    return { source, changed: false };
+  }
+
+  const absoluteStart = markerIndex + hrefMatch.index;
+  const absoluteEnd = absoluteStart + hrefMatch[0].length;
+  const replacement = `href: "${href}"`;
+
+  return {
+    source:
+      source.slice(0, absoluteStart) +
+      replacement +
+      source.slice(absoluteEnd),
+    changed: source.slice(absoluteStart, absoluteEnd) !== replacement
+  };
+}
+
+function ensureComparisonDefinition(source) {
+  if (source.includes(`slug: "${SLUG}"`)) return source;
+
+  const block = `  {
+    slug: "${SLUG}",
+    label: "Nassfutter · Futterautomaten",
+    title: "Futterautomaten für Nassfutter",
+    fallbackText:
+      "Aktive Kühlung, Kühlakkus, Mahlzeitenzahl, Hygiene und Ausfallsicherheit vergleichen."
+  },
+`;
+
+  const preferredAnchor = `  {
+    slug: "beste-trinkbrunnen-fuer-katzen",`;
+  const preferredIndex = source.indexOf(preferredAnchor);
+
+  if (preferredIndex >= 0) {
+    return (
+      source.slice(0, preferredIndex) +
+      block +
+      source.slice(preferredIndex)
+    );
+  }
+
+  const endAnchor = "] as const;";
+  const endIndex = source.indexOf(endAnchor);
+  if (endIndex < 0) {
+    throw new Error(
+      "buildHomepageModel.ts: decisionComparisonDefinitions konnte nicht erweitert werden."
+    );
+  }
+
+  return source.slice(0, endIndex) + block + source.slice(endIndex);
+}
+
+function ensureFrontmatterListItem(source, key, item) {
+  const eol = source.includes("\r\n") ? "\r\n" : "\n";
+  const lines = source.split(/\r?\n/);
+
+  if (lines[0]?.trim() !== "---") {
+    throw new Error(`Kein YAML-Frontmatter beim Ergänzen von ${key}.`);
+  }
+
+  const end = lines.findIndex(
+    (line, index) => index > 0 && line.trim() === "---"
+  );
+  if (end < 0) throw new Error("Frontmatter-Ende nicht gefunden.");
+
+  let keyIndex = -1;
+  for (let i = 1; i < end; i += 1) {
+    if (new RegExp(`^${key}:\\s*`).test(lines[i])) {
+      keyIndex = i;
+      break;
+    }
+  }
+
+  if (keyIndex < 0) {
+    let insertAt = end;
+    for (const preferred of [
+      "comparisonFilters:",
+      "specs:",
+      "faq:"
+    ]) {
+      const found = lines.findIndex(
+        (line, index) =>
+          index > 0 &&
+          index < end &&
+          line.startsWith(preferred)
+      );
+      if (found >= 0) {
+        insertAt = found;
+        break;
+      }
+    }
+
+    lines.splice(
+      insertAt,
+      0,
+      `${key}:`,
+      `  - "${item}"`
+    );
+    return lines.join(eol);
+  }
+
+  const keyLine = lines[keyIndex];
+  const inline = keyLine.slice(keyLine.indexOf(":") + 1).trim();
+
+  if (inline) {
+    const existing = [
+      ...inline.matchAll(/["']([^"']+)["']/g)
+    ].map((match) => match[1]);
+
+    if (existing.includes(item)) return source;
+    existing.push(item);
+
+    lines.splice(
+      keyIndex,
+      1,
+      `${key}:`,
+      ...existing.map((value) => `  - "${value}"`)
+    );
+    return lines.join(eol);
+  }
+
+  let nextTopLevel = keyIndex + 1;
+  while (
+    nextTopLevel < end &&
+    (
+      lines[nextTopLevel].trim() === "" ||
+      /^\s+/.test(lines[nextTopLevel])
+    )
+  ) {
+    nextTopLevel += 1;
+  }
+
+  const existingBlock = lines.slice(keyIndex + 1, nextTopLevel);
+  const hasItem = existingBlock.some((line) => {
+    const trimmed = line.trim();
+    return (
+      trimmed === `- "${item}"` ||
+      trimmed === `- '${item}'` ||
+      trimmed === `- ${item}`
+    );
+  });
+
+  if (!hasItem) {
+    lines.splice(nextTopLevel, 0, `  - "${item}"`);
+  }
+
+  return lines.join(eol);
+}
+
+function updateRedirects() {
+  const rel = "apps/pfotentechnik/public/_redirects";
+  const before = currentOrEmpty(rel);
+  const filtered = before
+    .split(/\r?\n/)
+    .filter((line) => {
+      const trimmed = line.trim();
+
+      if (
+        trimmed ===
+        "# pfotentechnik: Nassfutter-Comparison"
+      ) {
+        return false;
+      }
+
+      return !(
+        trimmed.startsWith(`${OLD_ROUTE} `) ||
+        trimmed.startsWith(`${OLD_ROUTE_NO_SLASH} `)
+      );
+    });
+
+  while (
+    filtered.length &&
+    filtered[filtered.length - 1] === ""
+  ) {
+    filtered.pop();
+  }
+
+  if (filtered.length) filtered.push("");
+
+  filtered.push(
+    "# pfotentechnik: Nassfutter-Comparison",
+    `${OLD_ROUTE_NO_SLASH} ${NEW_ROUTE} 301`,
+    `${OLD_ROUTE} ${NEW_ROUTE} 301`,
+    ""
+  );
+
+  queueWrite(
+    rel,
+    filtered.join("\n"),
+    "Cloudflare-Pages-301 für beide URL-Varianten"
+  );
+}
+
+function validateNoDuplicatePageSlug() {
+  const pagesDir = path.join(
+    appRoot,
+    "src",
+    "content",
+    "pages"
+  );
+  const duplicates = [];
+
+  for (const abs of walkFiles(
+    pagesDir,
+    (file) => /\.mdx?$/.test(file)
+  )) {
+    const rel = relFromRepo(abs);
+    const planned = plans.get(rel);
+    if (planned?.after === null) continue;
+
+    const text =
+      planned?.after ??
+      fs.readFileSync(abs, "utf8");
+
+    if (
+      new RegExp(
+        `^slug:\\s*["']?${SLUG}["']?\\s*$`,
+        "m"
+      ).test(text)
+    ) {
+      duplicates.push(rel);
+    }
+  }
+
+  if (duplicates.length) {
+    throw new Error(
+      `Die alte Page-Route wäre weiterhin vorhanden: ${duplicates.join(", ")}`
+    );
+  }
+}
+
+function validate() {
+  const comparisonRel =
+    "apps/pfotentechnik/src/content/comparisons/" +
+    "beste-futterautomaten-fuer-nassfutter.md";
+  const comparison = currentOrEmpty(comparisonRel);
+
+  if (!/type:\s*["']comparison["']/.test(comparison)) {
+    throw new Error(
+      "Die neue Datei ist nicht als type: comparison markiert."
+    );
+  }
+  if (!/layout:\s*["']comparison["']/.test(comparison)) {
+    throw new Error(
+      "Die neue Datei ist nicht als layout: comparison markiert."
+    );
+  }
+  if (!comparison.includes(`canonical: "${NEW_ROUTE}"`)) {
+    throw new Error(
+      "Canonical der neuen Comparison ist nicht korrekt."
+    );
+  }
+
+  const redirects = currentOrEmpty(
+    "apps/pfotentechnik/public/_redirects"
+  );
+
+  for (const rule of [
+    `${OLD_ROUTE_NO_SLASH} ${NEW_ROUTE} 301`,
+    `${OLD_ROUTE} ${NEW_ROUTE} 301`
+  ]) {
+    if (!redirects.includes(rule)) {
+      throw new Error(`Redirect-Regel fehlt: ${rule}`);
+    }
+  }
+
+  const projectConfig = currentOrEmpty(
+    "apps/pfotentechnik/src/project.config.ts"
+  );
+  const navigation = projectConfig.match(
+    /\{\s*label:\s*"Nassfutter",\s*href:\s*"([^"]+)"/
+  );
+
+  if (!navigation || navigation[1] !== NEW_ROUTE) {
+    throw new Error(
+      "Startseiten-Navigation für Nassfutter zeigt nicht auf die Comparison."
+    );
+  }
+
+  const advisor = currentOrEmpty(
+    "apps/pfotentechnik/src/domain/advisor/guides.ts"
+  );
+  const advisorIndex = advisor.indexOf(
+    'title: "Futterautomaten für Nassfutter"'
+  );
+
+  if (
+    advisorIndex < 0 ||
+    !advisor
+      .slice(advisorIndex, advisorIndex + 350)
+      .includes(`href: "${NEW_ROUTE}"`)
+  ) {
+    throw new Error(
+      "Der Berater verweist noch nicht auf die neue Comparison."
+    );
+  }
+
+  const smart = currentOrEmpty(
+    "apps/pfotentechnik/src/content/pages/" +
+    "smarte-futterautomaten.md"
+  );
+  const wetIndex = smart.indexOf(
+    'label: "Feuchtfütterung"'
+  );
+
+  if (
+    wetIndex < 0 ||
+    !smart
+      .slice(wetIndex, wetIndex + 800)
+      .includes(`href: "${NEW_ROUTE}"`)
+  ) {
+    throw new Error(
+      "Nassfutter-Schnelleinstieg im Futterautomaten-Hub ist nicht aktualisiert."
+    );
+  }
+
+  const homepageModel = currentOrEmpty(
+    "apps/pfotentechnik/src/domain/home/" +
+    "buildHomepageModel.ts"
+  );
+
+  if (
+    !homepageModel.includes(`slug: "${SLUG}"`)
+  ) {
+    throw new Error(
+      "Comparison-Hub-Definition für Nassfutter fehlt."
+    );
+  }
+
+  const productFiles = [
+    "petlibro-polar-wet-food-feeder.md",
+    "petsafe-freshfeed-refrigerated-feeder.md",
+    "catit-pixi-smart-6-meal-feeder.md",
+    "cat-mate-c500.md",
+    "surefeed-microchip-pet-feeder.md"
+  ];
+
+  for (const file of productFiles) {
+    const rel =
+      `apps/pfotentechnik/src/content/products/${file}`;
+    const text = currentOrEmpty(rel);
+    const comparisonIndex = text.indexOf("comparisons:");
+
+    if (
+      comparisonIndex < 0 ||
+      !text
+        .slice(comparisonIndex, comparisonIndex + 700)
+        .includes(SLUG)
+    ) {
+      throw new Error(
+        `Produkt ist nicht mit der neuen Comparison verknüpft: ${file}`
+      );
+    }
+  }
+
+  const sourceRoot = path.join(appRoot, "src");
+  const allowed = new Set([
+    ".md", ".mdx", ".astro", ".ts", ".tsx", ".js", ".mjs", ".json"
+  ]);
+  const stale = [];
+
+  for (const abs of walkFiles(
+    sourceRoot,
+    (file) => allowed.has(path.extname(file))
+  )) {
+    const rel = relFromRepo(abs);
+
+    if (rel.includes("/src/data/seo/")) continue;
+
+    const planned = plans.get(rel);
+    if (planned?.after === null) continue;
+
+    const text =
+      planned?.after ??
+      fs.readFileSync(abs, "utf8");
+
+    if (hasStaleOldRoute(text)) {
+      stale.push(rel);
+    }
+  }
+
+  if (stale.length) {
+    throw new Error(
+      "Alte interne URL ist noch vorhanden in: " +
+      stale.join(", ")
+    );
+  }
+
+  validateNoDuplicatePageSlug();
+}
+
+function prepareChanges() {
+  const comparisonRel =
+    "apps/pfotentechnik/src/content/comparisons/" +
+    "beste-futterautomaten-fuer-nassfutter.md";
+  const oldPageRel =
+    "apps/pfotentechnik/src/content/pages/" +
+    "beste-futterautomaten-fuer-nassfutter.md";
+
+  queueWrite(
+    comparisonRel,
+    COMPARISON_CONTENT.endsWith("\n")
+      ? COMPARISON_CONTENT
+      : `${COMPARISON_CONTENT}\n`,
+    "Aktuelle Comparison-Datei installieren"
+  );
+
+  queueDelete(
+    oldPageRel,
+    "Alte Page entfernen, damit nur die Comparison indexierbar bleibt"
+  );
+
+  updateRedirects();
+  replaceExactOldRouteAcrossSource();
+
+  {
+    const rel =
+      "apps/pfotentechnik/src/project.config.ts";
+    const before = currentOrEmpty(rel);
+    const updated = before.replace(
+      /(\{\s*label:\s*"Nassfutter",\s*href:\s*")[^"]+("\s*\})/,
+      `$1${NEW_ROUTE}$2`
+    );
+
+    if (
+      updated === before &&
+      !before.includes(
+        `label: "Nassfutter", href: "${NEW_ROUTE}"`
+      )
+    ) {
+      throw new Error(
+        "project.config.ts: Navigationsanker für Nassfutter nicht gefunden."
+      );
+    }
+
+    queueWrite(
+      rel,
+      updated,
+      "Nassfutter-Navigation auf die neue Comparison stellen"
+    );
+  }
+
+  {
+    const rel =
+      "apps/pfotentechnik/src/domain/advisor/guides.ts";
+    const before = currentOrEmpty(rel);
+    const result = replaceHrefNear(
+      before,
+      'title: "Futterautomaten für Nassfutter"',
+      NEW_ROUTE,
+      450
+    );
+
+    if (
+      !result.changed &&
+      !before.includes(`href: "${NEW_ROUTE}"`)
+    ) {
+      throw new Error(
+        "guides.ts: Nassfutter-Beraterlink nicht gefunden."
+      );
+    }
+
+    queueWrite(
+      rel,
+      result.source,
+      "Berater auf die neue Nassfutter-Comparison stellen"
+    );
+  }
+
+  {
+    const rel =
+      "apps/pfotentechnik/src/content/pages/" +
+      "smarte-futterautomaten.md";
+    const before = currentOrEmpty(rel);
+    const result = replaceHrefNear(
+      before,
+      'label: "Feuchtfütterung"',
+      NEW_ROUTE,
+      800
+    );
+
+    const markerIndex = before.indexOf(
+      'label: "Feuchtfütterung"'
+    );
+    const alreadyCorrect =
+      markerIndex >= 0 &&
+      before
+        .slice(markerIndex, markerIndex + 800)
+        .includes(`href: "${NEW_ROUTE}"`);
+
+    if (!result.changed && !alreadyCorrect) {
+      throw new Error(
+        "smarte-futterautomaten.md: Feuchtfütterungs-Karte nicht gefunden."
+      );
+    }
+
+    queueWrite(
+      rel,
+      replaceStaleOldRoute(result.source),
+      "Hub-Schnelleinstieg und alte Comparison-Links aktualisieren"
+    );
+  }
+
+  {
+    const rel =
+      "apps/pfotentechnik/src/domain/home/" +
+      "buildHomepageModel.ts";
+    const before = currentOrEmpty(rel);
+
+    queueWrite(
+      rel,
+      ensureComparisonDefinition(before),
+      "Nassfutter als explizite Comparison im Entscheidungs-Hub ergänzen"
+    );
+  }
+
+  const productFiles = [
+    "petlibro-polar-wet-food-feeder.md",
+    "petsafe-freshfeed-refrigerated-feeder.md",
+    "catit-pixi-smart-6-meal-feeder.md",
+    "cat-mate-c500.md",
+    "surefeed-microchip-pet-feeder.md"
+  ];
+
+  for (const file of productFiles) {
+    const rel =
+      `apps/pfotentechnik/src/content/products/${file}`;
+
+    if (
+      !fs.existsSync(path.join(repoRoot, rel)) &&
+      !plans.has(rel)
+    ) {
+      throw new Error(
+        `Erwartete Produktdatei fehlt: ${rel}`
+      );
+    }
+
+    const before = currentOrEmpty(rel);
+    const after = ensureFrontmatterListItem(
+      before,
+      "comparisons",
+      SLUG
+    );
+
+    queueWrite(
+      rel,
+      after,
+      "Produkt mit der neuen Nassfutter-Comparison verknüpfen"
+    );
+  }
+
+  validate();
+}
+
+function printPlan() {
+  console.log(
+    `\n[${PATCH_ID}] Repository: ${repoRoot}`
+  );
+  console.log(
+    `[${PATCH_ID}] Modus: ${
+      checkOnly ? "nur prüfen" : "anwenden"
+    }\n`
+  );
+
+  if (!plans.size) {
+    console.log(
+      "Keine Änderungen erforderlich. Der Zielzustand ist bereits hergestellt."
+    );
+    return;
+  }
+
+  for (const plan of plans.values()) {
+    const status =
+      plan.before === null
+        ? "NEU"
+        : plan.after === null
+          ? "LOESCHEN"
+          : "AENDERN";
+
+    console.log(`[${status}] ${plan.rel}`);
+    console.log(`          ${plan.reason}`);
+  }
+}
+
+function timestamp() {
+  return new Date()
+    .toISOString()
+    .replace(/[:.]/g, "-");
+}
+
+function applyChanges() {
+  const backupRoot = path.join(
+    repoRoot,
+    ".patch-backups",
+    `${PATCH_ID}-${timestamp()}`
+  );
+
+  fs.mkdirSync(backupRoot, { recursive: true });
+
+  const manifest = {
+    patch: PATCH_ID,
+    createdAt: new Date().toISOString(),
+    files: []
+  };
+
+  try {
+    for (const plan of plans.values()) {
+      manifest.files.push({
+        path: plan.rel,
+        existed: plan.before !== null,
+        action:
+          plan.before === null
+            ? "create"
+            : plan.after === null
+              ? "delete"
+              : "update"
+      });
+
+      if (plan.before !== null) {
+        const backupPath = path.join(
+          backupRoot,
+          plan.rel
+        );
+        fs.mkdirSync(
+          path.dirname(backupPath),
+          { recursive: true }
+        );
+        fs.writeFileSync(
+          backupPath,
+          plan.before,
+          "utf8"
+        );
+      }
+    }
+
+    fs.writeFileSync(
+      path.join(backupRoot, "manifest.json"),
+      JSON.stringify(manifest, null, 2) + "\n",
+      "utf8"
+    );
+
+    for (const plan of plans.values()) {
+      const abs = path.join(repoRoot, plan.rel);
+
+      if (plan.after === null) {
+        if (fs.existsSync(abs)) {
+          fs.rmSync(abs);
+        }
+      } else {
+        fs.mkdirSync(
+          path.dirname(abs),
+          { recursive: true }
+        );
+        fs.writeFileSync(
+          abs,
+          plan.after,
+          "utf8"
+        );
+      }
+    }
+
+    console.log(`\nBackup: ${backupRoot}`);
+  } catch (error) {
+    console.error(
+      "\nSchreibfehler. Änderungen werden zurückgesetzt."
+    );
+
+    for (
+      const plan of [...plans.values()].reverse()
+    ) {
+      const abs = path.join(repoRoot, plan.rel);
+
+      if (plan.before === null) {
+        if (fs.existsSync(abs)) {
+          fs.rmSync(abs, { force: true });
+        }
+      } else {
+        fs.mkdirSync(
+          path.dirname(abs),
+          { recursive: true }
+        );
+        fs.writeFileSync(
+          abs,
+          plan.before,
+          "utf8"
+        );
+      }
+    }
+
+    throw error;
+  }
+}
+
+try {
+  prepareChanges();
+  printPlan();
+
+  if (checkOnly) {
+    console.log(
+      "\nPrüfung erfolgreich. Es wurde nichts verändert."
+    );
+    console.log(
+      `Anwenden: node apply-${PATCH_ID}.mjs`
+    );
+    process.exit(0);
+  }
+
+  applyChanges();
+  console.log("\nPatch erfolgreich angewendet.");
+  console.log(
+    "Nächster Schritt: npm run build:pfotentechnik"
+  );
+} catch (error) {
+  console.error(
+    `\n[${PATCH_ID}] FEHLER: ${error.message}`
+  );
+  process.exit(1);
+}

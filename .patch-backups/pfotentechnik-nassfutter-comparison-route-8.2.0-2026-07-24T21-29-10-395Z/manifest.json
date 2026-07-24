@@ -1,0 +1,61 @@
+{
+  "patch": "pfotentechnik-nassfutter-comparison-route-8.2.0",
+  "createdAt": "2026-07-24T21:29:10.396Z",
+  "files": [
+    {
+      "path": "apps/pfotentechnik/public/_redirects",
+      "existed": false,
+      "action": "create"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/generated/content-graph.json",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/project.config.ts",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/domain/advisor/guides.ts",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/domain/home/buildHomepageModel.ts",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/products/cat-mate-c500.md",
+      "existed": true,
+      "action": "update"
+    },
+    {
+      "path": "apps/pfotentechnik/src/content/products/surefeed-microchip-pet-feeder.md",
+      "existed": true,
+      "action": "update"
+    }
+  ]
+}

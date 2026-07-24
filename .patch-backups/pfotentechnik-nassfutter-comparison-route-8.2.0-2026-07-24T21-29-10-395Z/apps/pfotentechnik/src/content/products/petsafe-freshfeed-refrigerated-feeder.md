@@ -46,9 +46,7 @@ experience:
   criticism: ["Ohne Strom ist die Kühlkette unterbrochen", "Das Gerät beansprucht mehr Fläche als kompakte Trockenfutterautomaten", "Noch keine belastbare Mehrjahreserfahrung"]
   methodology: "Offizielle PetSafe-Daten, Händlerbewertungen und aktuelle Nutzerberichte aus 2026; kein eigener Temperatur-Langzeittest."
 alternatives: ["petlibro-polar-wet-food-feeder", "catit-pixi-smart-6-meal-feeder", "cat-mate-c500"]
-comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-nassfutter"
+comparisons: ["beste-futterautomaten-fuer-katzen"]
 comparisonFilters:
   animal: ["dog", "cat"]
   petSize: ["small"]

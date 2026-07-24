@@ -102,7 +102,6 @@ alternatives:
   - "petlibro-granary-dual-feeder"
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-nassfutter"
 comparisonFilters:
   animal: ["dog", "cat"]
   petSize: ["small"]

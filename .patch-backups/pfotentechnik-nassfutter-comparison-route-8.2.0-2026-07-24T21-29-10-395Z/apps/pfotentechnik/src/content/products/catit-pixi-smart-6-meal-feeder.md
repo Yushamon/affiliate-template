@@ -114,7 +114,6 @@ alternatives:
   - "cat-mate-c300"
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-nassfutter"
 comparisonFilters:
   animal: ["cat"]
   petSize: []

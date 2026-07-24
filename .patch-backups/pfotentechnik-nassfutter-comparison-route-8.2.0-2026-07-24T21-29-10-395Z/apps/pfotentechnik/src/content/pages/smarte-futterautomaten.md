@@ -98,7 +98,7 @@ premiumBlocks:
       - label: "Feuchtfütterung"
         title: "Futterautomat für Nassfutter"
         text: "Geschlossene Portionsfächer und ein passendes Kühlkonzept sind entscheidend. Vorratsautomaten eignen sich nicht."
-        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+        href: "/futterautomat-nassfutter/"
         cta: "Nassfutter-Systeme ansehen"
       - label: "Mehrere Tiere"
         title: "Doppelnapf oder Zugangskontrolle"
@@ -895,7 +895,7 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 - [Beste Futterautomaten mit Kamera](/beste-futterautomaten-mit-kamera/)
 - [Beste Futterautomaten ohne WLAN](/beste-futterautomaten-ohne-wlan/)
 - [Beste Futterautomaten für zwei Katzen](/beste-futterautomaten-fuer-zwei-katzen/)
-- [Beste Futterautomaten für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
+- [Beste Futterautomaten für Nassfutter](/beste-futterautomaten-fuer-nassfutter/)
 
 ## Glossar
 

@@ -123,13 +123,6 @@ const decisionComparisonDefinitions = [
     fallbackText:
       "Ortung, Robustheit, Akkulaufzeit, Größe und laufende Kosten vergleichen."
   }
-  {
-    slug: "beste-futterautomaten-fuer-nassfutter",
-    label: "Nassfutter · Futterautomaten",
-    title: "Futterautomaten für Nassfutter",
-    fallbackText:
-      "Aktive Kühlung, Kühlakkus, Mahlzeitenzahl, Hygiene und Ausfallsicherheit vergleichen."
-  },
 ] as const;
 
 const getComparisonItemCount = (

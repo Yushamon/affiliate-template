@@ -104,7 +104,6 @@ alternatives:
 comparisons:
   - "beste-futterautomaten-fuer-katzen"
   - "beste-futterautomaten-fuer-hunde"
-  - "beste-futterautomaten-fuer-nassfutter"
 comparisonFilters:
   animal: ["dog", "cat"]
   petSize: ["small"]
