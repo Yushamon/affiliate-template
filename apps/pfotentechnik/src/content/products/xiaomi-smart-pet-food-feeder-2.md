@@ -58,16 +58,16 @@ images:
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Food+Feeder+2"
-rating: 4
-score: 81
+  url: "https://amzn.to/4wofqBc"
+rating: 4.6
+score: 92
 ratings:
-  app: 4.05
-  portionierung: 4.05
-  reinigung: 4.05
-  zuverlaessigkeit: 4.05
-  sicherheit: 4.05
-  preisleistung: 4.05
+  app: 4.8
+  portionierung: 4.7
+  reinigung: 4.5
+  zuverlaessigkeit: 4.5
+  sicherheit: 4.6
+  preisleistung: 4.7
 decision:
   bestFor:
     - "Katzen"
@@ -81,7 +81,7 @@ decision:
     - "Wiegenapf ersetzt keine kontrollierte Rationsmessung"
 review:
   summary: "Die zweite Generation kombiniert fünf Liter Vorrat mit einem Wiegenapf, LED-Anzeige, automatischer Entblockung und App-Warnungen."
-  verdict: "Technisch stark, besonders im Xiaomi-Home-Ökosystem. Die Futterkompatibilität muss genauer beachtet werden als die Marketingtexte vermuten lassen."
+  verdict: "Der Xiaomi Smart Pet Food Feeder 2 zählt zu den stärksten smarten Futterautomaten seiner Preisklasse. Wiegenapf, Entblockung, zuverlässige App-Anbindung und Notstromversorgung ergeben ein sehr ausgewogenes Gesamtpaket. Einschränkungen bestehen hauptsächlich bei der Futterkompatibilität und der Bindung an das Xiaomi-Home-Ökosystem."
 strengths:
   - "5 Liter beziehungsweise etwa 2,5 kg Futter"
   - "Wiegenapf mit Herstellerabweichung bis 1 g"
@@ -192,3 +192,10 @@ Xiaomi beschreibt die Kompatibilität uneinheitlich. Die Supportseite erlaubt Tr
 Der Napf erkennt verbleibendes Futter mit einer Herstellerabweichung von höchstens 1 g. Daraus lässt sich ein Verbrauchstrend ableiten, keine sichere individuelle Futteraufnahme.
 
 **Quellen:** [Xiaomi Smart Pet Food Feeder 2](https://www.mi.com/de/product/xiaomi-smart-pet-food-feeder-2/), [Xiaomi Support](https://www.mi.com/global/support/faq/details/KA-237711/). Bild: redaktionelle Visualisierung.
+
+
+## Redaktionelles Premium-Update
+
+Der Smart Pet Food Feeder 2 stellt gegenüber dem Vorgänger und vielen Wettbewerbern einen deutlichen Entwicklungsschritt dar. Besonders der integrierte Wiegenapf, die automatische Entblockung, Füllstandswarnungen und die Xiaomi-Home-Integration sorgen für einen hohen Alltagsnutzen.
+
+Für Nutzer, die bereits Xiaomi Home verwenden, gehört dieses Modell zu den stärksten Empfehlungen im mittleren Preisbereich. Die Bewertung fällt deshalb höher aus als bei einfachen WLAN-Futterautomaten ohne Gewichtserfassung.

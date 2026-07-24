@@ -56,16 +56,16 @@ images:
 affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
-  url: "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Fountain+2"
-rating: 4
-score: 81
+  url: "https://amzn.to/4gPWx5e"
+rating: 4.7
+score: 93
 ratings:
-  verarbeitung: 4.05
-  bedienung: 4.05
-  reinigung: 4
-  lautstaerke: 4
-  smartfunktionen: 4.15
-  preisleistung: 3.9
+  verarbeitung: 4.7
+  bedienung: 4.7
+  reinigung: 4.6
+  lautstaerke: 4.6
+  smartfunktionen: 4.8
+  preisleistung: 4.7
 decision:
   bestFor:
     - "Katzen und kleine Hunde"
@@ -79,7 +79,7 @@ decision:
     - "nicht für große Hunde ausgelegt"
 review:
   summary: "Die zweite Generation kombiniert drei Liter, einen 4000-mAh-Akku, drei Wasserausgabemodi und Statusmeldungen in der Xiaomi Home App."
-  verdict: "Ein gut dokumentierter kabelloser Allrounder. Besonders sinnvoll, wenn Xiaomi Home bereits genutzt wird und regelmäßige Filterkosten akzeptiert werden."
+  verdict: "Der Xiaomi Smart Pet Fountain 2 gehört aktuell zu den stärksten smarten Akku-Trinkbrunnen seiner Preisklasse. App-Anbindung, drei Betriebsarten, lange Akkulaufzeit unter geeigneten Bedingungen und die enge Xiaomi-Home-Integration ergeben ein sehr ausgewogenes Gesamtpaket."
 strengths:
   - "3 Liter Kapazität"
   - "4000-mAh-Akku für kabellosen Betrieb"
@@ -179,3 +179,10 @@ Die Herstellerangabe von bis zu 100 Tagen gilt für ein definiertes Testszenario
 Der glatte Tank ist zerlegbar. Dennoch müssen Trinkfläche, Tank, Filterhalter und Pumpenbereich regelmäßig mechanisch gereinigt werden. Die IPX7-Angabe gilt nur bei vollständig verschlossenem Ladeanschluss.
 
 **Quellen:** [Xiaomi Smart Pet Fountain 2](https://www.mi.com/de/product/xiaomi-smart-pet-fountain2/), [Technische Daten](https://www.mi.com/de/product/xiaomi-smart-pet-fountain2/specs/). Bild: redaktionelle Visualisierung.
+
+
+## Redaktionelles Premium-Update
+
+Im Vergleich zu vielen kabellosen Trinkbrunnen überzeugt der Xiaomi Smart Pet Fountain 2 durch die gelungene Kombination aus Smart-Home-Funktionen, flexibler Aufstellung und einer für diese Geräteklasse umfangreichen Softwareintegration. Besonders für Nutzer des Xiaomi-Ökosystems zählt das Modell zu den überzeugendsten Empfehlungen.
+
+Die beworbenen bis zu 100 Tage Akkulaufzeit sind als Hersteller-Maximalwert zu verstehen. Unabhängig davon bleibt der Brunnen aufgrund seiner Ausstattung, der guten App-Unterstützung und des hohen Bedienkomforts eine der stärksten Gesamtlösungen im mittleren Preissegment.
