@@ -6,13 +6,10 @@ import ComparisonProsCons from "./ComparisonProsCons.astro";
 import ComparisonExplorer from "./ComparisonExplorer.astro";
 import ComparisonVerdict from "./ComparisonVerdict.astro";
 import ComparisonStickyBar from "./ComparisonStickyBar.astro";
-import ComparisonInsightSummary from "./ComparisonInsightSummary.astro";
-import ComparisonMethodology from "./ComparisonMethodology.astro";
 import { getPriceDisplay } from "../../comparison/price";
 import "./comparison.css";
 import "./comparison-hero-v2.css";
 import "./comparison-premium-ux.css";
-import "./comparison-premium-seo.css";
 
 type Props = {
   model: ComparisonViewModel;
@@ -38,8 +35,6 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
     <a href="#vergleich-fazit">Fazit</a>
   </nav>
 
-  <ComparisonInsightSummary products={model.products} rows={model.rows} />
-
   <div class="comparison-premium-layout">
     <div class="comparison-premium-main">
       <section id="empfehlungen" class="comparison-premium-section">
@@ -64,11 +59,6 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
         rows={model.rows}
         filters={model.filters}
         initialVisibleProducts={model.initialVisibleProducts}
-      />
-
-      <ComparisonMethodology
-        productCount={model.products.length}
-        criterionCount={model.rows.length}
       />
 
       <div id="vergleich-fazit">
