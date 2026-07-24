@@ -247,6 +247,12 @@ const updatedAt = asText(
   source.publishedAt
 );
 
+const testStatus = asText(
+  source.testStatus ??
+  trust.assessmentType ??
+  trust.testStatus,
+  "Redaktionelle Einordnung"
+);
 
 const alternatives = list<any>(alternativeRecommendations)
   .map((item: any) => {
@@ -278,18 +284,6 @@ const alternatives = list<any>(alternativeRecommendations)
   })
   .filter((item: any) => item.title)
   .slice(0, 3);
-
-const secondaryCtaHref =
-  alternatives.length > 0
-    ? "#alternativen"
-    : categoryHref || "/vergleiche/";
-
-const secondaryCtaLabel =
-  alternatives.length > 0
-    ? "Alternativen vergleichen"
-    : category
-      ? `${category} vergleichen`
-      : "Weitere Produkte vergleichen";
 
 const scoreLabel =
   editorialScore >= 90 ? "Hervorragend" :
@@ -472,8 +466,8 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
         <span class="native-buybox__primary native-buybox__primary--disabled">Preis derzeit nicht verlinkt</span>
       )}
 
-      <a class="native-buybox__secondary" href={secondaryCtaHref}>
-        {secondaryCtaLabel}
+      <a class="native-buybox__secondary" href="#alternativen">
+        Alternativen vergleichen
       </a>
 
       <p class="native-buybox__note">{priceNote}</p>
@@ -481,6 +475,7 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
       <dl class="native-buybox__meta">
         {manufacturer && <div><dt>Hersteller</dt><dd>{manufacturer}</dd></div>}
         {category && <div><dt>Kategorie</dt><dd>{category}</dd></div>}
+        {testStatus && <div><dt>Status</dt><dd>{testStatus}</dd></div>}
         {updatedAt && <div><dt>Aktualisiert</dt><dd>{updatedAt}</dd></div>}
       </dl>
     </aside>

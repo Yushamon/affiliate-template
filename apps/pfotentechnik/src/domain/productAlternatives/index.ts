@@ -1,3 +1,4 @@
+/* PfotenTechnik Product Alternatives 8.2.0 */
 import type { CollectionEntry } from "astro:content";
 import type { AlternativeRecommendation } from "@affiliate-core/components/product/alternativeRecommendation.types";
 import { getFutterautomatenAlternatives } from "./categories/futterautomaten";
@@ -12,11 +13,12 @@ const cleanVisibleLabel = (value: string) =>
     )
     .trim();
 
-const normalizeLabel = (value: string) =>
-  cleanVisibleLabel(value)
+const normalizeLabel = (value: unknown) =>
+  cleanVisibleLabel(String(value ?? ""))
     .replace(/[-_]+/g, " ")
     .replace(/\s+/g, " ")
-    .toLocaleLowerCase("de-DE");
+    .toLocaleLowerCase("de-DE")
+    .trim();
 
 const capitalizeFirst = (value: string) => {
   const cleaned = cleanVisibleLabel(value);
@@ -106,10 +108,210 @@ const formatAlternativeHeadline = (value: string) => {
     "preis leistung": "Als Preis-Leistungs-Alternative"
   };
 
-  return (
-    headlines[normalized] ??
-    `Für ${formatVisibleLabel(value)}`
+  return headlines[normalized] ?? `Für ${formatVisibleLabel(value)}`;
+};
+
+const asArray = (value: unknown): unknown[] =>
+  Array.isArray(value) ? value : [];
+
+const stringArray = (value: unknown): string[] =>
+  asArray(value)
+    .map((item) => String(item ?? "").trim())
+    .filter(Boolean);
+
+const categoryKey = (entry: ProductEntry) => {
+  const data = entry.data as any;
+  const category = data.category;
+
+  return normalizeLabel(
+    typeof category === "string"
+      ? category
+      : category?.key ?? category?.label
   );
+};
+
+const slugOf = (entry: ProductEntry) => {
+  const data = entry.data as any;
+  return String(data.slug ?? entry.id).replace(/\.mdx?$/i, "");
+};
+
+const normalizeAnimal = (value: string) => {
+  const normalized = normalizeLabel(value);
+
+  if (["dog", "hund", "hunde"].includes(normalized)) return "dog";
+  if (["cat", "katze", "katzen"].includes(normalized)) return "cat";
+
+  return normalized;
+};
+
+const normalizeSize = (value: string) => {
+  const normalized = normalizeLabel(value);
+
+  if (["small", "klein", "kleine", "kleiner"].includes(normalized)) {
+    return "small";
+  }
+
+  if (
+    ["medium", "mittel", "mittelgroß", "mittelgross"].includes(normalized)
+  ) {
+    return "medium";
+  }
+
+  if (
+    ["large", "groß", "gross", "große", "grosse"].includes(normalized)
+  ) {
+    return "large";
+  }
+
+  return normalized;
+};
+
+const collectAnimals = (entry: ProductEntry) => {
+  const data = entry.data as any;
+
+  return new Set(
+    [
+      ...stringArray(data.gps?.animal),
+      ...stringArray(data.comparisonFilters?.animal),
+      ...stringArray(data.comparisonData?.general?.animal),
+      ...stringArray(data.comparisonData?.gps?.animal)
+    ].map(normalizeAnimal)
+  );
+};
+
+const collectSizes = (entry: ProductEntry) => {
+  const data = entry.data as any;
+
+  return new Set(
+    [
+      ...stringArray(data.comparisonFilters?.petSize),
+      ...stringArray(data.comparisonData?.general?.petSize)
+    ].map(normalizeSize)
+  );
+};
+
+const intersects = (left: Set<string>, right: Set<string>) =>
+  [...left].some((value) => right.has(value));
+
+const isCompatible = (
+  current: ProductEntry,
+  candidate: ProductEntry
+) => {
+  const currentAnimals = collectAnimals(current);
+  const candidateAnimals = collectAnimals(candidate);
+  const currentSizes = collectSizes(current);
+  const candidateSizes = collectSizes(candidate);
+
+  if (
+    currentAnimals.size > 0 &&
+    candidateAnimals.size > 0 &&
+    !intersects(currentAnimals, candidateAnimals)
+  ) {
+    return false;
+  }
+
+  if (
+    currentSizes.size > 0 &&
+    candidateSizes.size > 0 &&
+    !intersects(currentSizes, candidateSizes)
+  ) {
+    return false;
+  }
+
+  return true;
+};
+
+const editorialScore = (entry: ProductEntry) => {
+  const data = entry.data as any;
+  const raw = Number(data.score ?? data.rating ?? 0);
+
+  if (!Number.isFinite(raw)) return 0;
+  return raw <= 5 ? raw * 20 : raw;
+};
+
+const fallbackRank = (
+  current: ProductEntry,
+  candidate: ProductEntry
+) => {
+  const currentAnimals = collectAnimals(current);
+  const candidateAnimals = collectAnimals(candidate);
+  const currentSizes = collectSizes(current);
+  const candidateSizes = collectSizes(candidate);
+
+  const animalFit =
+    currentAnimals.size > 0 &&
+    candidateAnimals.size > 0 &&
+    intersects(currentAnimals, candidateAnimals)
+      ? 1000
+      : 0;
+
+  const sizeFit =
+    currentSizes.size > 0 &&
+    candidateSizes.size > 0 &&
+    intersects(currentSizes, candidateSizes)
+      ? 250
+      : 0;
+
+  return animalFit + sizeFit + editorialScore(candidate);
+};
+
+const toRecommendation = (
+  candidate: ProductEntry
+): AlternativeRecommendation => {
+  const data = candidate.data as any;
+  const bestFor = stringArray(data.decision?.bestFor);
+  const primaryUseCase = bestFor[0];
+  const images = data.images ?? {};
+  const review = data.review ?? {};
+
+  return {
+    productKey: slugOf(candidate),
+    name: String(data.title ?? data.name ?? slugOf(candidate)),
+    url:
+      data.productUrl ??
+      `/produkt/${slugOf(candidate)}/`,
+    image:
+      images.comparison?.src ??
+      images.thumbnail?.src ??
+      images.hero?.src ??
+      images.hero,
+    score: Math.round(editorialScore(candidate)),
+    rating: Number(data.rating ?? 0),
+    icon: "",
+    headline: primaryUseCase
+      ? formatAlternativeHeadline(primaryUseCase)
+      : "Eine passende Alternative",
+    reason: String(
+      data.recommendation ??
+        data.description ??
+        "Passende Alternative im direkten Vergleich."
+    ),
+    difference: String(
+      review.verdict ??
+        review.summary ??
+        data.description ??
+        ""
+    ),
+    tags: bestFor.slice(0, 3).map(formatVisibleLabel)
+  };
+};
+
+const explicitEntries = (
+  currentProduct: ProductEntry,
+  products: ProductEntry[]
+) => {
+  const data = currentProduct.data as any;
+  const requested = stringArray(data.alternatives);
+  const bySlug = new Map(
+    products.map((product) => [slugOf(product), product])
+  );
+
+  return requested
+    .map((slug) => bySlug.get(slug))
+    .filter(
+      (candidate): candidate is ProductEntry =>
+        Boolean(candidate && candidate.id !== currentProduct.id)
+    );
 };
 
 export const getAlternativeRecommendations = (
@@ -117,82 +319,49 @@ export const getAlternativeRecommendations = (
   products: ProductEntry[],
   limit = 3
 ): AlternativeRecommendation[] => {
-  const category = currentProduct.data.category.key
-    .toLowerCase()
-    .trim();
+  const explicit = explicitEntries(currentProduct, products);
+  const explicitSlugs = new Set(explicit.map(slugOf));
+  const result: AlternativeRecommendation[] =
+    explicit.map(toRecommendation);
+
+  if (result.length >= limit) {
+    return result.slice(0, limit);
+  }
+
+  const category = categoryKey(currentProduct);
 
   if (
     category.includes("futterautomat") ||
     category.includes("fütter")
   ) {
-    return getFutterautomatenAlternatives(
+    const specialized = getFutterautomatenAlternatives(
       currentProduct,
       products,
-      limit
-    );
-  }
-
-  if (category.includes("trinkbrunnen")) {
-    const preferred = new Map(
-      currentProduct.data.alternatives.map(
-        (slug, index) => [slug, index]
-      )
+      Math.max(limit * 3, limit)
+    ).filter(
+      (recommendation) =>
+        !explicitSlugs.has(recommendation.productKey)
     );
 
-    return products
-      .filter(
-        (candidate) =>
-          candidate.id !== currentProduct.id &&
-          candidate.data.category.key
-            .toLowerCase()
-            .trim()
-            .includes("trinkbrunnen")
-      )
-      .sort((a, b) => {
-        const aPreferred =
-          preferred.get(a.data.slug) ??
-          Number.MAX_SAFE_INTEGER;
-        const bPreferred =
-          preferred.get(b.data.slug) ??
-          Number.MAX_SAFE_INTEGER;
-
-        return (
-          aPreferred -
-            bPreferred ||
-          (b.data.score ?? b.data.rating * 20) -
-            (a.data.score ?? a.data.rating * 20)
-        );
-      })
-      .slice(0, limit)
-      .map((candidate) => {
-        const primaryUseCase =
-          candidate.data.decision.bestFor[0];
-
-        return {
-          productKey: candidate.data.slug,
-          name: candidate.data.title,
-          url:
-            candidate.data.productUrl ??
-            `/produkt/${candidate.data.slug}/`,
-          image:
-            candidate.data.images.comparison?.src ??
-            candidate.data.images.hero.src,
-          score:
-            candidate.data.score ??
-            Math.round(candidate.data.rating * 20),
-          rating: candidate.data.rating,
-          icon: "",
-          headline: primaryUseCase
-            ? formatAlternativeHeadline(primaryUseCase)
-            : "Eine passende Alternative",
-          reason: candidate.data.recommendation,
-          difference: candidate.data.review.verdict,
-          tags: candidate.data.decision.bestFor
-            .slice(0, 3)
-            .map(formatVisibleLabel)
-        };
-      });
+    return [...result, ...specialized].slice(0, limit);
   }
 
-  return [];
+  const fallback = products
+    .filter(
+      (candidate) =>
+        candidate.id !== currentProduct.id &&
+        !explicitSlugs.has(slugOf(candidate)) &&
+        categoryKey(candidate) === category &&
+        isCompatible(currentProduct, candidate)
+    )
+    .sort(
+      (left, right) =>
+        fallbackRank(currentProduct, right) -
+          fallbackRank(currentProduct, left) ||
+        slugOf(left).localeCompare(slugOf(right), "de")
+    )
+    .slice(0, Math.max(0, limit - result.length))
+    .map(toRecommendation);
+
+  return [...result, ...fallback].slice(0, limit);
 };
