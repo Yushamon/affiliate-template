@@ -1,0 +1,379 @@
+# Comparison Platform Report
+
+Erstellt: 2026-07-24T07:54:21.981Z
+
+## Übersicht
+
+- Vergleiche: 12
+- Produkte: 65
+- Hersteller: 14
+- verwendete Produkte: 40
+- Produktabdeckung: 61.5 %
+- Qualitätsscore: 0/100
+- Fehler: 19
+- Warnungen: 299
+
+## Häufigste Befunde
+
+- **PRODUCT_MANUFACTURER_MISSING**: 8 (error, integrity)
+- **ALTERNATIVE_NOT_IN_ITEMS**: 3 (error, integrity)
+- **ITEM_SLUG_MISSING**: 3 (error, structure)
+- **WINNER_NOT_IN_ITEMS**: 3 (error, integrity)
+- **MANUFACTURER_REFERENCE_BROKEN**: 1 (error, integrity)
+- **PRODUCT_REFERENCE_BROKEN**: 1 (error, integrity)
+- **VALUE_MISSING**: 280 (warning, content)
+- **HERO_IMAGE_MISSING**: 8 (warning, content)
+- **PRODUCT_NOT_COVERED**: 5 (warning, coverage)
+- **FAQ_THIN**: 4 (warning, content)
+- **CRITERIA_THIN**: 2 (warning, content)
+
+## Dateien mit den meisten Problemen
+
+- `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: 3 Fehler, 0 Warnungen
+- `src/content/comparisons/gps-tracker-ohne-abo.md`: 3 Fehler, 0 Warnungen
+- `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: 3 Fehler, 0 Warnungen
+- `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: 1 Fehler, 2 Warnungen
+- `src/content/products/catit-pixi-smart-6-meal-feeder.md`: 1 Fehler, 1 Warnungen
+- `src/content/products/oneisall-3-5l-cordless-fountain.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/petkit-eversweet-solo-2-fountain.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/petlibro-granary-camera-feeder.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/tractive-cat-6-mini.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/tractive-dog-6-xl.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/tractive-dog-6.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/weenect-xs.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/weenect-xt.md`: 1 Fehler, 0 Warnungen
+- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: 0 Fehler, 141 Warnungen
+- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: 0 Fehler, 141 Warnungen
+- `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: 0 Fehler, 3 Warnungen
+- `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: 0 Fehler, 3 Warnungen
+- `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: 0 Fehler, 2 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: 0 Fehler, 1 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: 0 Fehler, 1 Warnungen
+- `src/content/products/garmin-alpha-tt-25.md`: 0 Fehler, 1 Warnungen
+- `src/content/products/imipaw-3l-automatic-cat-feeder.md`: 0 Fehler, 1 Warnungen
+- `src/content/products/oneisall-2-in-1-feeder-water.md`: 0 Fehler, 1 Warnungen
+- `src/content/products/petlibro-air-wifi-feeder.md`: 0 Fehler, 1 Warnungen
+
+## Fehler
+
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/petlibro-granary-camera-feeder.md`: manufacturer.slug fehlt.
+- **PRODUCT_REFERENCE_BROKEN** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Produkt imipaw-3l existiert nicht.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-dog-6.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/weenect-xs.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-dog-6-xl.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/weenect-xt.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-cat-6-mini.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/oneisall-3-5l-cordless-fountain.md`: manufacturer.slug fehlt.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/petkit-eversweet-solo-2-fountain.md`: manufacturer.slug fehlt.
+- **ITEM_SLUG_MISSING** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: Ein item besitzt keinen slug.
+- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: winnerSlug tractive-dog-6-xl ist nicht in items.
+- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: alternativeSlug weenect-xt ist nicht in items.
+- **ITEM_SLUG_MISSING** – `src/content/comparisons/gps-tracker-ohne-abo.md`: Ein item besitzt keinen slug.
+- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-ohne-abo.md`: winnerSlug garmin-alpha-t-20 ist nicht in items.
+- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-ohne-abo.md`: alternativeSlug garmin-alpha-tt-25 ist nicht in items.
+- **ITEM_SLUG_MISSING** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: Ein item besitzt keinen slug.
+- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: winnerSlug weenect-xs ist nicht in items.
+- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: alternativeSlug tractive-cat-6-mini ist nicht in items.
+- **MANUFACTURER_REFERENCE_BROKEN** – `src/content/products/catit-pixi-smart-6-meal-feeder.md`: Hersteller catit existiert nicht.
+
+## Warnungen
+
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: heroImage fehlt.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: heroImage fehlt.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: heroImage fehlt.
+- **FAQ_THIN** – `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: Weniger als drei FAQ-Einträge.
+- **CRITERIA_THIN** – `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: Weniger als drei Vergleichskriterien.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: heroImage fehlt.
+- **FAQ_THIN** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Weniger als drei FAQ-Einträge.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: heroImage fehlt.
+- **FAQ_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: Weniger als drei FAQ-Einträge.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: heroImage fehlt.
+- **FAQ_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: Weniger als drei FAQ-Einträge.
+- **CRITERIA_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: Weniger als drei Vergleichskriterien.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: heroImage fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-5l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-2-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-3-pro-uvc: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-3-2l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-7l-dog-water-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-ultra: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-2-uvc: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-max-cordless: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-2-smart: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-cordless: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-dockstream-rfid-smart: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: xiaomi-smart-pet-fountain-2: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-335-pet-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-capsule-dog-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-glacier-ultrafiltration: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: cat-mate-shell-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: oneisall-2-2l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-solo-se: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petlibro-stainless-steel-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: petkit-eversweet-5-mini: Wert für eignung fehlt.
+- **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: heroImage fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-5l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-2-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-3-pro-uvc: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-3-2l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-7l-dog-water-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-ultra: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-2-uvc: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-max-cordless: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-2-smart: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-cordless: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-dockstream-rfid-smart: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: xiaomi-smart-pet-fountain-2: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-335-pet-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-capsule-dog-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-glacier-ultrafiltration: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: cat-mate-shell-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: oneisall-2-2l-cordless-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-solo-se: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petlibro-stainless-steel-fountain: Wert für eignung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für kapazitaet fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für material fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für lautstaerke fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für filter fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für reinigung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für stromversorgung fehlt.
+- **VALUE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: petkit-eversweet-5-mini: Wert für eignung fehlt.
+- **PRODUCT_NOT_COVERED** – `src/content/products/catit-pixi-smart-6-meal-feeder.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
+- **PRODUCT_NOT_COVERED** – `src/content/products/garmin-alpha-tt-25.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
+- **PRODUCT_NOT_COVERED** – `src/content/products/imipaw-3l-automatic-cat-feeder.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
+- **PRODUCT_NOT_COVERED** – `src/content/products/oneisall-2-in-1-feeder-water.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
+- **PRODUCT_NOT_COVERED** – `src/content/products/petlibro-air-wifi-feeder.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.

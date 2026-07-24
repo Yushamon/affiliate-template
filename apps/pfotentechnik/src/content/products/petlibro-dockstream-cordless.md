@@ -154,6 +154,18 @@ faq:
     answer: "PETLIBRO nennt bis zu 30 Tage bei einem Tier und 48 Aktivierungen pro Tag."
   - question: "Kann der Brunnen in die Spülmaschine?"
     answer: "Nein. PETLIBRO rät wegen möglicher Verformung der ABS-Teile davon ab."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.

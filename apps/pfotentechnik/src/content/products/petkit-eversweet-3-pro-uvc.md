@@ -241,6 +241,20 @@ priceCategory: "premium"
 useCase: "Kompakte gefilterte Wasserversorgung für eine Katze oder einen kleinen Hund"
 capacity: "1,6 Liter nutzbar"
 expandable: "Filter Unit 3.0, Pumpenschwämme und UVC-Ersatzpumpe separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.2
+    score: 84
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Der PETKIT Eversweet 3 Pro UVC ist ein kompakter Trinkbrunnen für eine Katze oder einen kleinen Hund. Sein Hauptargument ist die Kombination aus Edelstahl-Wasserbehälter, entnehmbarer UVC-Pumpe und App-gestützter Bedienung.

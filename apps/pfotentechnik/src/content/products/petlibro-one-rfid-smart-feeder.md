@@ -132,6 +132,16 @@ features:
   - "RFID-Zugang über Halsbandanhänger"
   - "App-Steuerung mit Fütterungsprotokollen"
   - "Automatische Portionierung mit geschütztem Napf"
+comparisonData:
+  general:
+    animal:
+      - "cat"
+    petSize: []
+    foodType: []
+  editorial:
+    rating: 3.7
+    score: 74
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.

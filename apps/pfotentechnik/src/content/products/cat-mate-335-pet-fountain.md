@@ -197,6 +197,20 @@ priceCategory: "budget"
 useCase: "Kontinuierlich zirkulierendes Trinkwasser für Katzen und kleine Hunde"
 capacity: "Rund 2 Liter"
 expandable: "Ersatzpumpe, Netzteile sowie Polymer-Aktivkohle- und Dreistufenfilter separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "budget"
+  editorial:
+    rating: 3.9
+    score: 79
+    priceCategory: "budget"
+    productStatus: "active"
 ---
 
 Der Cat Mate Pet Fountain 335 ist ein klassischer Trinkbrunnen ohne App, Akku oder Sensorik. Wasser wird über drei Ebenen geführt, sodass Tiere zwischen einer oberen Trinkmulde, fließenden Bereichen und der unteren Schale wählen können.

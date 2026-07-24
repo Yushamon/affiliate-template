@@ -1,0 +1,149 @@
+---
+import type { ComparisonViewModel } from "../../comparison/model";
+import ComparisonHero from "./ComparisonHero.astro";
+import RecommendationGrid from "./RecommendationGrid.astro";
+import ComparisonProsCons from "./ComparisonProsCons.astro";
+import ComparisonExplorer from "./ComparisonExplorer.astro";
+import ComparisonVerdict from "./ComparisonVerdict.astro";
+import ComparisonStickyBar from "./ComparisonStickyBar.astro";
+import ComparisonInsightSummary from "./ComparisonInsightSummary.astro";
+import ComparisonMethodology from "./ComparisonMethodology.astro";
+import { getPriceDisplay } from "../../comparison/price";
+import "./comparison.css";
+import "./comparison-hero-v2.css";
+import "./comparison-premium-ux.css";
+import "./comparison-premium-seo.css";
+
+type Props = {
+  model: ComparisonViewModel;
+};
+
+const { model } = Astro.props as Props;
+const winner = model.verdict.winner;
+const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
+---
+
+<div class="comparison-shell comparison-shell--premium">
+  <ComparisonHero
+    eyebrow={model.eyebrow}
+    title={model.title}
+    description={model.description}
+    image={model.heroImage}
+    facts={model.facts}
+  />
+
+  <nav class="comparison-premium-nav" aria-label="Vergleichsbereiche">
+    <a href="#empfehlungen">Empfehlungen</a>
+    <a href="#direktvergleich">Direktvergleich</a>
+    <a href="#vergleich-fazit">Fazit</a>
+  </nav>
+
+  <ComparisonInsightSummary products={model.products} rows={model.rows} />
+
+  <div class="comparison-premium-layout">
+    <div class="comparison-premium-main">
+      <section id="empfehlungen" class="comparison-premium-section">
+        <div class="comparison-premium-section__heading">
+          <div>
+            <span class="comparison-eyebrow">Schnelle Orientierung</span>
+            <h2>Die stärksten Modelle auf einen Blick</h2>
+          </div>
+          <p>
+            Wähle nach Einsatzgebiet statt nur nach Ausstattung. Die vollständigen
+            Unterschiede findest du anschließend im Direktvergleich.
+          </p>
+        </div>
+
+        <RecommendationGrid products={model.recommendationProducts} />
+      </section>
+
+      <ComparisonProsCons products={model.products} />
+
+      <ComparisonExplorer
+        products={model.products}
+        rows={model.rows}
+        filters={model.filters}
+        initialVisibleProducts={model.initialVisibleProducts}
+      />
+
+      <ComparisonMethodology
+        productCount={model.products.length}
+        criterionCount={model.rows.length}
+      />
+
+      <div id="vergleich-fazit">
+        <ComparisonVerdict
+          title={model.verdict.title}
+          text={model.verdict.text}
+          winner={model.verdict.winner}
+          alternative={model.verdict.alternative}
+        />
+      </div>
+    </div>
+
+    {winner && (
+      <aside class="comparison-premium-aside" aria-label="Unsere Empfehlung">
+        <div class="comparison-winner-card">
+          <span class="comparison-winner-card__eyebrow">Unsere Empfehlung</span>
+          {winner.badge && (
+            <span class="comparison-winner-card__badge">{winner.badge}</span>
+          )}
+
+          {winner.image && (
+            <a href={winner.href} class="comparison-winner-card__image">
+              <img
+                src={typeof winner.image.src === "string" ? winner.image.src : winner.image.src.src}
+                alt={winner.image.alt ?? winner.title}
+                width="260"
+                height="210"
+                loading="lazy"
+              />
+            </a>
+          )}
+
+          <div class="comparison-winner-card__copy">
+            {winner.manufacturer && <span>{winner.manufacturer}</span>}
+            <h2><a href={winner.href}>{winner.title}</a></h2>
+
+            {typeof winner.rating === "number" && (
+              <div class="comparison-winner-card__score">
+                <strong>{Math.round(winner.rating)}</strong>
+                <span>von 100 Punkten</span>
+              </div>
+            )}
+
+            {winner.recommendation && <p>{winner.recommendation}</p>}
+
+            {winner.strengths.length > 0 && (
+              <ul>
+                {winner.strengths.slice(0, 4).map((strength) => (
+                  <li>{strength}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div class="comparison-winner-card__actions">
+            <a href={winner.href} class="comparison-button comparison-button--secondary">
+              Test lesen
+            </a>
+
+            {winnerPrice?.url && (
+              <a
+                href={winnerPrice.url}
+                class="comparison-button"
+                rel={winnerPrice.rel}
+                target={winnerPrice.target}
+                data-affiliate-link
+              >
+                {winnerPrice.label}
+              </a>
+            )}
+          </div>
+        </div>
+      </aside>
+    )}
+  </div>
+</div>
+
+<ComparisonStickyBar product={model.verdict.winner} />

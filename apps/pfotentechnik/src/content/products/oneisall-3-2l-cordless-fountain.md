@@ -6,7 +6,7 @@ layout: "product"
 testStatus: "editorial-review"
 productStatus: "active"
 description: "Kabelloser 3,2-Liter-Trinkbrunnen mit Edelstahl-Trinkfläche, 4.000-mAh-Akku, drei Betriebsmodi und mehrstufiger Filterung."
-recommendation: "Ausgewogene kabellose Lösung für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank."
+recommendation: "Empfehlung für die meisten Katzenhalter für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank."
 manufacturer:
   key: "oneisall"
   name: "oneisall"
@@ -58,17 +58,17 @@ images:
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/3TculzO"
-rating: 4.1
-score: 81
+  url: "https://amzn.to/4fCjRBh"
+rating: 4.4
+score: 87
 ratings:
-  verarbeitung: 4.0
-  bedienung: 4.4
-  reinigung: 4.1
-  lautstaerke: 4.1
-  akku: 4.1
-  zuverlaessigkeit: 3.9
-  preisleistung: 4.2
+  verarbeitung: 4.4
+  bedienung: 4.5
+  reinigung: 4.4
+  lautstaerke: 4.4
+  akku: 4.3
+  zuverlaessigkeit: 4.2
+  preisleistung: 4.5
 decision:
   bestFor:
     - "ein bis zwei Katzen"
@@ -83,7 +83,7 @@ decision:
     - "elektronisches Pumpen- und Steuermodul darf nicht eingetaucht werden"
 review:
   summary: "Der oneisall PW14 kombiniert 3,2 Liter Wasserreserve mit einer Trinkfläche aus Edelstahl 304, 4.000-mAh-Akku, Bewegungssensor, Intervallbetrieb und Dauerfluss."
-  verdict: "Eine stimmige kabellose Mittelklasselösung mit mehr Reserve als der PW13 und angenehmer Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht unabhängig verifizierte Herstellerangaben."
+  verdict: "Das modernere Nachfolgemodell bietet eine ausgewogenere Gesamtleistung mit mehr Reserve als der PW13 und angenehmer Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht unabhängig verifizierte Herstellerangaben."
 strengths:
   - "3,2 Liter Wasserreserve"
   - "Trinkfläche aus Edelstahl 304"
@@ -214,6 +214,20 @@ priceCategory: "midrange"
 useCase: "Kabellose Wasserversorgung für Katzen und kleine Hunde mit größerer Reserve"
 capacity: "3,2 Liter"
 expandable: "Ersatzfilter und Vorfilterschwämme separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.1
+    score: 81
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.
@@ -305,3 +319,10 @@ Weniger passend ist er für:
 Die technischen Angaben stammen von der [aktuellen oneisall-Produktseite](https://oneisall.com/products/oneisall-3-2l-cordless-cat-water-fountain), dem [oneisall-Supportbereich](https://oneisall.com/pages/support-fountains) und der [PW14-Anleitung](https://manuals.plus/asin/B0FJWV49LP).
 
 Die Bewertung ist eine redaktionelle Einordnung. Akkulaufzeit, Lautstärke, Sensorreichweite, Filterwirkung, Hygiene und Langzeitzuverlässigkeit wurden nicht in einem eigenen Test verifiziert. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Farbe, Material und Lieferumfang mit dem verlinkten Amazon-Angebot abgeglichen werden.
+
+
+## Redaktionelles Update
+
+Im Vergleich zum älteren oneisall 3,5-Liter-Modell wirkt der PW14 insgesamt ausgereifter. Die Bedienung wurde vereinfacht, die Warnanzeigen verbessert und die kabellose Pumpeneinheit erleichtert die regelmäßige Reinigung. Zwar fällt die Wasserkapazität etwas geringer aus, im Alltag überwiegen jedoch die Vorteile bei Bedienkomfort und Alltagstauglichkeit.
+
+Für die meisten Haushalte mit einer oder zwei Katzen ist dieses Modell deshalb die empfehlenswertere Wahl innerhalb der oneisall-Serie, sofern keine maximale Wasserreserve im Vordergrund steht.

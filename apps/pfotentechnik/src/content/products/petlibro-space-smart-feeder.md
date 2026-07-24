@@ -180,6 +180,19 @@ features:
   - "Futterstandserkennung"
   - "Notstrombetrieb mit vier D-Batterien"
   - "Manuelle Futterausgabe"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+  editorial:
+    rating: 4.2
+    score: 84
+    productStatus: "unknown"
 ---
 
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung

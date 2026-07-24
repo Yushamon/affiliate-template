@@ -132,6 +132,18 @@ faq:
     answer: "Für dieses Modell ist keine App-Steuerung dokumentiert."
   - question: "Ist das Modell noch aktuell erhältlich?"
     answer: "Die Verfügbarkeit kann je nach Markt schwanken. Ersatzfilter und Pumpe sollten vor dem Kauf geprüft werden."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.7
+    score: 74
+    productStatus: "unknown"
 ---
 
 Der PETKIT Eversweet 5 Mini ist vor allem wegen seiner kleinen Stellfläche interessant. Die geringe Kapazität ist zugleich seine größte Einschränkung.

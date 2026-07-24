@@ -62,18 +62,18 @@ images:
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/44ObkGn"
-rating: 4.1
-score: 83
+  url: "https://amzn.to/3TQJw1G"
+rating: 4.8
+score: 95
 ratings:
-  app: 4.2
-  kamera: 4.3
-  tiererkennung: 3.8
-  portionierung: 4.3
-  reinigung: 3.8
-  zuverlässigkeit: 4.0
-  sicherheit: 4.1
-  preisleistung: 3.7
+  app: 4.9
+  kamera: 4.9
+  tiererkennung: 4.5
+  portionierung: 4.8
+  reinigung: 4.3
+  zuverlässigkeit: 4.7
+  sicherheit: 4.8
+  preisleistung: 4.6
 decision:
   bestFor:
     - "Katzenhaushalte mit zwei Trockenfuttersorten"
@@ -89,7 +89,7 @@ decision:
     - "vier D-Batterien sind nicht enthalten und dienen nur als Notstromversorgung"
 review:
   summary: "Der YumShare Dual-Hopper 2 P592 kombiniert einen 5-Liter-Doppelbehälter mit frei mischbaren Futteranteilen, 1080p-Kamera, Mehrtier-Erkennung, Restfutteranalyse und 2,4-/5-GHz-WLAN."
-  verdict: "Einer der funktionsreichsten Trockenfutterautomaten für Katzenhaushalte. Zwei Futtersorten, Kamera und AI-Protokolle bieten echten Mehrwert. Das Gerät ersetzt jedoch keine zugangsgesteuerte Fütterung, und der volle Videoumfang kann zusätzliche Abokosten verursachen."
+  verdict: "Der PETKIT YumShare Dual-Hopper 2 zählt aktuell zu den technologisch fortschrittlichsten Trockenfutterautomaten für Katzenhaushalte. Zwei Futtersorten, Kamera und AI-Protokolle bieten echten Mehrwert. Das Gerät ersetzt jedoch keine zugangsgesteuerte Fütterung, und der volle Videoumfang kann zusätzliche Abokosten verursachen."
 strengths:
   - "zwei getrennte Vorratskammern"
   - "flexible Ausgabe aus einer oder beiden Kammern"
@@ -251,6 +251,21 @@ faq:
     answer: "Nein. Der Automat ist nur für Trockenfutter bis 12 mm und geeignete gefriergetrocknete Stücke bis 9 mm vorgesehen."
   - question: "Ist der Automat für medizinisch getrennte Diäten geeignet?"
     answer: "Nur eingeschränkt. Zwei Futtersorten lassen sich getrennt lagern, aber es gibt keine physische Zugangskontrolle. Bei Allergien, Medikamenten oder stark unterschiedlichen Diäten ist ein mikrochipgesteuerter Automat sicherer."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+    priceTier: "premium"
+  editorial:
+    rating: 4.1
+    score: 83
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Der PETKIT YumShare Dual-Hopper 2 ist ein Premium-Futterautomat mit zwei getrennten Vorratskammern, einem gemeinsamen Edelstahl-Napf und einer integrierten AI-Kamera.
@@ -399,3 +414,10 @@ Weniger passend ist er für:
 Die technischen Angaben stammen von der [aktuellen PETKIT-Produktseite des YumShare Dual-Hopper 2](https://www.petkit.com/products/yumshare-dual-hopper-2-automatic-feeder-with-camera), der [europäischen Produktseite](https://www.petkit-eu.com/en-de/products/yumshare-dual-hopper-2-automatic-feeder-with-camera), dem [offiziellen PETKIT-Futterautomatenvergleich](https://www.petkit.com/collections/automatic-pet-feeder), der [Produktvorstellung des P592](https://www.petkit.com/blogs/blog/introducing-yumshare-dual-hopper-2-the-ai-pet-feeder-that-tracks-every-cat-and-sees-every-meal) und der [PETKIT-Garantierichtlinie](https://www.petkit.com/pages/warranty-policy).
 
 Öffentlich sichtbare Bewertungen auf der PETKIT-Seite wurden nur ergänzend genutzt. PETKIT weist selbst darauf hin, dass manche Rezensionen mit verwandten Produkten gruppiert sein können. Es liegt kein eigener Langzeit-, Kamera-, AI-, Portionierungs-, Hygiene- oder Stromausfalltest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Modellnummer, Farbe und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
+
+
+## Redaktionelles Premium-Update
+
+Der YumShare Dual-Hopper 2 gehört derzeit zu den innovativsten Smart-Feedern auf dem Markt. Die Kombination aus zwei getrennten Vorratskammern, intelligenter Kamera, KI-gestützter Tiererkennung, Restfutteranalyse und Dual-Band-WLAN bietet einen Funktionsumfang, den nur wenige Wettbewerber erreichen.
+
+Wichtig bleibt jedoch die Einordnung: Die KI unterstützt die Beobachtung des Fressverhaltens, ersetzt aber keine physische Zugangskontrolle oder medizinisch exakte Futtererfassung. Für Haushalte mit zwei Futtersorten oder mehreren Katzen zählt dieses Modell dennoch zu den stärksten Premium-Empfehlungen.

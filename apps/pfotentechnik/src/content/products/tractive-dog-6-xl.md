@@ -77,6 +77,33 @@ faq:
   - { question: "Wie lange hält der DOG 6 XL?", answer: "Tractive nennt bis zu sechs Wochen mit Energiesparzonen. Häufiges Live-Tracking und schwacher Empfang verkürzen die Laufzeit." }
   - { question: "Ist er für kleine Hunde geeignet?", answer: "Nein. Der Hersteller empfiehlt das 70-g-Modell für Hunde ab 20 kg. Für leichtere Hunde ist der DOG 6 vorgesehen." }
   - { question: "Funktioniert der DOG 6 XL ohne Abo?", answer: "Nein. Für Mobilfunkübertragung und App-Ortung ist ein aktives Tractive-Abo erforderlich." }
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+    minimumPetWeightKg: 20
+    deviceWeightGrams: 90
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 42
+    waterproofRating: "IP68"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "large"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.6
+    score: 91
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der DOG 6 XL überträgt dieselben Kernfunktionen des DOG 6 in ein größeres Gehäuse mit erheblich mehr Akkureserve. Seine Stärke ist nicht Miniaturisierung, sondern planbare Laufzeit für große Hunde.

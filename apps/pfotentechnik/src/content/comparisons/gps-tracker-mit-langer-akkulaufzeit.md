@@ -29,6 +29,8 @@ criteria:
   - { key: "uebertragung", label: "Übertragung", description: "Mobilfunk oder VHF beeinflusst Verbrauch." }
   - { key: "abo", label: "Abo", description: "Folgekosten des Übertragungswegs." }
   - { key: "wasserschutz", label: "Wasserschutz", description: "Schutzklasse für Outdoor-Nutzung." }
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "tractive-dog-6-xl"
   alternativeSlug: "weenect-xt"

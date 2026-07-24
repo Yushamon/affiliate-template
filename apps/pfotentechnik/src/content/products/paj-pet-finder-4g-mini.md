@@ -243,6 +243,35 @@ faq:
     answer: "Ja. PAJ nennt Schritte, Kalorien, aktive Minuten, Routen und Lieblingsplätze. Welche Auswertungen verfügbar sind, hängt vom jeweils aktiven Tarif ab."
   - question: "Was ist der Unterschied zu einem AirTag?"
     answer: "Der PAJ-Tracker besitzt eine eigene Mobilfunkverbindung und kann den Standort in unterstützter Netzabdeckung direkt übertragen. Ein AirTag benötigt dagegen kompatible fremde Geräte in Bluetooth-Nähe, um seinen Standort weiterzumelden."
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+      - "cat"
+    minimumPetWeightKg: 3
+    deviceWeightGrams: 33.1
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 10
+    waterproofRating: "IP67"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+      - "large"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.1
+    score: 82
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der PAJ PET Finder 4G Mini ist ein kompakter Mobilfunktracker, der seine Position über eine integrierte SIM an die FINDER-Portal-App und das Webportal überträgt.

@@ -200,6 +200,21 @@ priceCategory: "budget"
 useCase: "Mehrere zeitgesteuerte Trockenfuttermahlzeiten für Katzen und kleine Hunde ohne App"
 capacity: "3 Liter"
 expandable: "Keine funktionale Erweiterung vorgesehen; Trockenmittelbeutel als Verbrauchsmaterial"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+    priceTier: "budget"
+  editorial:
+    rating: 3.9
+    score: 79
+    priceCategory: "budget"
+    productStatus: "active"
 ---
 
 Der IMIPAW 3L Automatic Cat Feeder ist ein einfacher Trockenfutterautomat für Haushalte, die keinen Fernzugriff benötigen. Der Fütterungsplan wird direkt am LCD-Bedienfeld gespeichert. Dadurch funktioniert das Gerät ohne WLAN, Benutzerkonto oder Herstellercloud.

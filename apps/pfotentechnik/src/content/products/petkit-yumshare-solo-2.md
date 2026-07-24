@@ -228,6 +228,18 @@ faq:
   - question: "Funktioniert die Kamera ohne WLAN?"
     answer: >
       Nein. Für Livebild und Fernzugriff wird WLAN benötigt.
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4.1
+    score: 82
+    productStatus: "unknown"
 ---
 
 Der PETKIT YumShare Solo 2 gehört aktuell zu den stärksten

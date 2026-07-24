@@ -76,6 +76,32 @@ faq:
   - { question: "Was unterscheidet den Weenect XT vom XS?", answer: "Der XT ist größer und schwerer, bietet aber laut Hersteller bis zu drei Wochen Akkulaufzeit, eine stärkere Leuchte und eine auf Outdoor-Nutzung ausgelegte Befestigung." }
   - { question: "Braucht der Weenect XT ein Abo?", answer: "Ja. Der Tracker überträgt Positionen über eine integrierte Multi-Netz-SIM; dafür ist ein Weenect-Abo erforderlich." }
   - { question: "Ist der XT für Katzen geeignet?", answer: "Weenect führt den XT als Hundetracker. Für Katzen ist der deutlich leichtere Weenect XS vorgesehen." }
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+    deviceWeightGrams: 54
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 21
+    waterproofRating: "IP68"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "large"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.5
+    score: 90
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Der Weenect XT tauscht Minimalgewicht gegen Akkureserve und Outdoor-Ausstattung. Dadurch gehört er in den Hundevergleich, nicht in eine Liste kleiner Katzentracker.

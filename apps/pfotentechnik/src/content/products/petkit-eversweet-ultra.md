@@ -246,6 +246,20 @@ faq:
     answer: "PETKIT nennt Katzen und kleine Hunde als Zielgruppe. Für größere Hunde sind breitere, niedrigere und weniger komplexe Trinkflächen meist ergonomisch sinnvoller."
   - question: "Reichen fünf Liter für einen Urlaub?"
     answer: "PETKIT nennt bis zu 14 beziehungsweise 15 Tage für ein einzelnes Tier und ungefähr sieben bis zehn Tage für zwei Katzen. Das sind rechnerische Herstellerwerte. Tier, Technik, Frischwasser, Abwassertank und Gesundheitszustand müssen weiterhin täglich kontrolliert werden."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.1
+    score: 83
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Der PETKIT Eversweet Ultra ist kein gewöhnlicher Umlauf-Trinkbrunnen. Frischwasser wird aus einem separaten 5-Liter-Tank in eine Edelstahlschale geleitet. Benutztes Wasser kann anschließend in einen 1,8-Liter-Abwassertank abgelassen werden und gelangt nicht zurück in den Frischwasservorrat.

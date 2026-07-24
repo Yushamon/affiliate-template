@@ -132,6 +132,18 @@ features:
   - "Bis zu zehn Mahlzeiten täglich"
   - "Langsam Fütterungsmodus in der WOPET Life App"
   - "Sprachaufnahme mit bis zu zehn Sekunden"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.

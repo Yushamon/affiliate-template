@@ -1,0 +1,771 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import { getImage } from "astro:assets";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+import FAQ from "@affiliate-core/components/FAQ.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
+import {
+  getManufacturerBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
+import { buildManufacturerNextSteps } from "../../domain/recommendationLinks";
+
+type Props = {
+  manufacturerId: string;
+};
+
+export async function getStaticPaths() {
+  const manufacturers = await getCollection("manufacturers");
+
+  return manufacturers.map((entry) => ({
+    params: {
+      manufacturer: entry.data.slug
+    },
+    props: {
+      manufacturerId: entry.id
+    } satisfies Props
+  }));
+}
+
+const { manufacturerId } = Astro.props as Props;
+const entry = await getEntry("manufacturers", manufacturerId);
+
+if (!entry) {
+  throw new Error(`Hersteller "${manufacturerId}" wurde nicht gefunden.`);
+}
+
+const manufacturer = entry.data;
+const optimizedOgImage = await getImage({
+  src: manufacturer.images.hero.src,
+  width: 1200,
+  quality: "high"
+});
+const [allProducts, allManufacturers, pages, comparisons] = await Promise.all([
+  getCollection("products"),
+  getCollection("manufacturers"),
+  getCollection("pages"),
+  getCollection("comparisons")
+]);
+
+const productOrder = new Map(
+  manufacturer.productSlugs.map((slug, index) => [slug, index])
+);
+
+const manufacturerProducts = allProducts
+  .filter((product) =>
+    manufacturer.productSlugs.includes(product.data.slug) ||
+    product.data.manufacturer.slug === manufacturer.slug ||
+    product.data.manufacturer.key === manufacturer.key
+  )
+  .sort((a, b) => {
+    const orderA = productOrder.get(a.data.slug);
+    const orderB = productOrder.get(b.data.slug);
+
+    if (orderA !== undefined || orderB !== undefined) {
+      return (orderA ?? Number.MAX_SAFE_INTEGER) -
+        (orderB ?? Number.MAX_SAFE_INTEGER);
+    }
+
+    return (b.data.score ?? 0) - (a.data.score ?? 0);
+  });
+
+const featuredProducts = manufacturer.featuredProductSlugs
+  .map((slug) =>
+    manufacturerProducts.find((product) => product.data.slug === slug)
+  )
+  .filter((product): product is (typeof manufacturerProducts)[number] => Boolean(product));
+
+const displayedFeaturedProducts = featuredProducts.length > 0
+  ? featuredProducts
+  : manufacturerProducts.slice(0, 3);
+
+const alternativeManufacturers = manufacturer.alternativeManufacturerSlugs
+  .map((slug) =>
+    allManufacturers.find((candidate) => candidate.data.slug === slug)
+  )
+  .filter((candidate): candidate is (typeof allManufacturers)[number] => Boolean(candidate));
+
+const breadcrumbs = getManufacturerBreadcrumbs(entry);
+const relatedEntries = await getRelatedContent({
+  currentSlug: manufacturer.slug,
+  tags: manufacturer.related?.tags.length
+    ? manufacturer.related.tags
+    : manufacturer.tags,
+  sections: manufacturer.hub?.sections ?? [],
+  type: "manufacturer",
+  exclude: manufacturer.related?.exclude ?? [],
+  limit: manufacturer.related?.limit ?? 4
+});
+
+const relatedItems = relatedEntries.map((related) => ({
+  href: related.href,
+  label: related.type === "product"
+    ? "Produkt"
+    : related.type === "manufacturer"
+      ? "Hersteller"
+      : related.type === "comparison"
+        ? "Vergleich"
+        : "Ratgeber",
+  title: related.hubTitle,
+  text: related.hubDescription
+}));
+
+const productHref = (slug: string, productUrl?: string) =>
+  productUrl ?? `/produkt/${slug}/`;
+
+const manufacturerNextSteps = buildManufacturerNextSteps({
+  manufacturer,
+  pages,
+  comparisons,
+  products: allProducts
+});
+---
+
+<ProjectLayout
+  title={`${manufacturer.name}: Produkte, Erfahrungen und Empfehlungen`}
+  seoTitle={manufacturer.seo?.title ?? `${manufacturer.name}: Erfahrungen und Produkte`}
+  description={manufacturer.description}
+  seoDescription={manufacturer.seo?.description ?? manufacturer.description}
+  canonical={manufacturer.seo?.canonical ?? `/hersteller/${manufacturer.slug}/`}
+  noindex={manufacturer.seo?.noindex ?? false}
+  ogImage={optimizedOgImage.src}
+  faq={manufacturer.faq}
+  author={manufacturer.author}
+  publishedAt={manufacturer.publishedAt}
+  updatedAt={manufacturer.updatedAt}
+  categoryLabel="Hersteller"
+  breadcrumbs={breadcrumbs}
+  schemaType="article"
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <main class="manufacturer-detail">
+    <header class="manufacturer-hero">
+      <div>
+        <span>Unsere Einschätzung</span>
+        <h1>{manufacturer.name}</h1>
+        <p class="recommendation">{manufacturer.recommendation}</p>
+        <p>{manufacturer.summary}</p>
+
+        {manufacturer.rating && (
+          <div class="rating">
+            <strong>{toEditorialScore(manufacturer.rating, 5)}</strong>
+            <span>Redaktionelle Herstellerbewertung</span>
+          </div>
+        )}
+
+        {manufacturer.website && (
+          <a class="website" href={manufacturer.website} rel="noopener noreferrer" target="_blank">
+            Herstellerwebsite <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </div>
+
+      <OptimizedImage
+        src={manufacturer.images.hero.src}
+        alt={manufacturer.images.hero.alt ?? manufacturer.name}
+        layout="full-width"
+        priority
+      />
+    </header>
+
+    <section class="manufacturer-stats" aria-label="Herstellerkennzahlen">
+      <div><strong>{manufacturerProducts.length}</strong><span>eingeordnete Produkte</span></div>
+      <div><strong>{manufacturer.series.length}</strong><span>Produktserien</span></div>
+      <div><strong>{manufacturer.productCategories.length}</strong><span>Produktbereiche</span></div>
+    </section>
+
+    {(manufacturer.suitableFor.length > 0 || manufacturer.attention.length > 0) && (
+      <section class="decision-grid">
+        <article>
+          <span>Besonders geeignet</span>
+          <h2>Für wen passt {manufacturer.name}?</h2>
+          <ul>{manufacturer.suitableFor.map((item) => <li>{item}</li>)}</ul>
+        </article>
+        <article class="attention">
+          <span>Darauf achten</span>
+          <h2>Was solltest du berücksichtigen?</h2>
+          <ul>{manufacturer.attention.map((item) => <li>{item}</li>)}</ul>
+        </article>
+      </section>
+    )}
+
+    {displayedFeaturedProducts.length > 0 && (
+      <section class="manufacturer-section">
+        <header><span>Redaktionelle Empfehlungen</span><h2>Welche Modelle sind besonders interessant?</h2></header>
+        <div class="product-grid featured">
+          {displayedFeaturedProducts.map((product, index) => (
+            <article class="product-card">
+              <div class="product-rank">{index + 1}</div>
+              <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.title} width={480} height={360} layout="constrained" />
+              <span>{product.data.manufacturer.name}</span>
+              <h3><a href={productHref(product.data.slug, product.data.productUrl)}>{product.data.title}</a></h3>
+              <p>{product.data.recommendation}</p>
+              <div class="product-score"><strong>{product.data.score ?? 0}</strong><span>Score</span></div>
+              <ul>{product.data.features.slice(0, 3).map((feature) => <li>{feature}</li>)}</ul>
+              <a class="product-link" href={productHref(product.data.slug, product.data.productUrl)}>Testbericht lesen →</a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {manufacturerProducts.length > 0 && (
+      <section class="manufacturer-section">
+        <header><span>Alle Produkte</span><h2>{manufacturer.name} Modelle im Überblick</h2></header>
+        <div class="product-list">
+          {manufacturerProducts.map((product) => (
+            <a href={productHref(product.data.slug, product.data.productUrl)}>
+              <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.title} width={240} height={180} layout="constrained" />
+              <div><strong>{product.data.title}</strong><span>{product.data.recommendation}</span></div>
+              <b>{toEditorialScore(product.data.rating, 5)}</b>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {manufacturer.series.length > 0 && (
+      <section class="manufacturer-section">
+        <header><span>Serien</span><h2>Produktlinien von {manufacturer.name}</h2></header>
+        <div class="series-grid">
+          {manufacturer.series.map((series) => (
+            <article><h3>{series.name}</h3>{series.description && <p>{series.description}</p>}<ul>{series.suitableFor.map((item) => <li>{item}</li>)}</ul></article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="manufacturer-section strengths-section">
+      <header><span>Einordnung</span><h2>Stärken und Schwächen</h2></header>
+      <div class="strength-grid">
+        <article><h3>Stärken</h3><ul>{manufacturer.strengths.map((item) => <li>{item}</li>)}</ul></article>
+        <article class="weakness"><h3>Schwächen</h3><ul>{manufacturer.weaknesses.map((item) => <li>{item}</li>)}</ul></article>
+      </div>
+    </section>
+
+    <section class="manufacturer-section profile-section">
+      <header><span>Markenprofil</span><h2>App, Ersatzteile und Service im Überblick</h2></header>
+      <div class="profile-grid">
+        <article><h3>Unternehmen</h3><p>{manufacturer.profile.company}</p></article>
+        <article><h3>App-Ökosystem</h3><p>{manufacturer.profile.appEcosystem}</p></article>
+        <article><h3>Ersatzteile</h3><p>{manufacturer.profile.replacementParts}</p></article>
+        <article><h3>Filterversorgung</h3><p>{manufacturer.profile.filterSupply}</p></article>
+        <article><h3>Garantie</h3><p>{manufacturer.profile.warranty}</p></article>
+        <article><h3>Vergleich zum Wettbewerb</h3><p>{manufacturer.profile.competitorComparison}</p></article>
+      </div>
+    </section>
+
+    {manufacturer.experience && (
+      <section class="manufacturer-section experience">
+        <header><span>Erfahrungen</span><h2>Wie wird {manufacturer.name} im Alltag eingeordnet?</h2></header>
+        {manufacturer.experience.summary && <p>{manufacturer.experience.summary}</p>}
+        <div class="strength-grid">
+          <article><h3>Positive Erfahrungen</h3><ul>{manufacturer.experience.positives.map((item) => <li>{item}</li>)}</ul></article>
+          <article class="weakness"><h3>Kritikpunkte</h3><ul>{manufacturer.experience.criticism.map((item) => <li>{item}</li>)}</ul></article>
+        </div>
+        {manufacturer.experience.support && <aside><strong>Support</strong><p>{manufacturer.experience.support}</p></aside>}
+      </section>
+    )}
+
+    {alternativeManufacturers.length > 0 && (
+      <section class="manufacturer-section">
+        <header><span>Alternativen</span><h2>Welche Hersteller solltest du vergleichen?</h2></header>
+        <div class="alternative-grid">
+          {alternativeManufacturers.map((alternative) => (
+            <a href={`/hersteller/${alternative.data.slug}/`}>
+              <OptimizedImage src={alternative.data.images.hero.src} alt={alternative.data.name} width={480} height={360} layout="constrained" />
+              <h3>{alternative.data.name}</h3>
+              <p>{alternative.data.recommendation}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <DecisionNextSteps
+      title="Marke sinnvoll einordnen"
+      intro="Vergleiche die Produktklasse oder öffne die passende Kaufberatung."
+      items={manufacturerNextSteps}
+    />
+
+    <RelatedArticles items={relatedItems} />
+
+    {manufacturer.sources.length > 0 && (
+      <details class="sources">
+        <summary>Quellen und Datengrundlage</summary>
+        <ul>{manufacturer.sources.map((source) => <li>{source.url ? <a href={source.url} rel="noopener noreferrer" target="_blank">{source.label}</a> : source.label}</li>)}</ul>
+      </details>
+    )}
+
+    <FAQ items={manufacturer.faq} />
+  </main>
+<style is:global>
+/* PT manufacturer hero media 4.2.0 */
+:is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ display:grid!important; place-items:center!important; width:100%; min-width:0; min-height:0!important; aspect-ratio:16/9; padding:clamp(.75rem,2.5vw,1.25rem); overflow:hidden; border-radius:inherit; background:#f7f8fa; }
+:is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture img,figure img,.hero-media img,.manufacturer-hero__media img,>img){ display:block!important; width:100%!important; height:100%!important; max-width:min(100%,1120px)!important; max-height:100%!important; margin:auto!important; object-fit:contain!important; object-position:center center!important; transform:none!important; }
+@media(max-width:720px){ :is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ aspect-ratio:4/3; max-height:56svh; padding:.65rem; } }
+:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],html[data-mode="dark"]) :is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ border:1px solid #314960; background:#f7f8fa; }
+/* End PT manufacturer hero media 4.2.0 */
+</style>
+
+<style is:global>
+/* PT manufacturer media and score 4.3.0 */
+
+:root {
+  --pt-manufacturer-hero-max: 340px;
+  --pt-manufacturer-hero-mobile-max: 230px;
+}
+
+:is(
+  .manufacturer-hero,
+  .manufacturer-header,
+  .brand-hero,
+  [data-manufacturer-hero],
+  [class*="manufacturer-hero"],
+  [class*="brand-hero"]
+) :is(
+  picture,
+  figure,
+  .hero-media,
+  .manufacturer-hero__media,
+  [class*="hero__media"],
+  [class*="hero-media"]
+) {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: var(--pt-manufacturer-hero-max) !important;
+  aspect-ratio: 16 / 9 !important;
+  padding: clamp(.55rem, 1.8vw, .9rem) !important;
+  overflow: hidden !important;
+  background: #f7f8fa !important;
+}
+
+:is(
+  .manufacturer-hero,
+  .manufacturer-header,
+  .brand-hero,
+  [data-manufacturer-hero],
+  [class*="manufacturer-hero"],
+  [class*="brand-hero"]
+) :is(
+  picture img,
+  figure img,
+  .hero-media img,
+  .manufacturer-hero__media img,
+  [class*="hero__media"] img,
+  [class*="hero-media"] img,
+  > img
+) {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: calc(var(--pt-manufacturer-hero-max) - 1.2rem) !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+:is(
+  .manufacturer-hero,
+  .manufacturer-header,
+  .brand-hero,
+  [data-manufacturer-hero],
+  [class*="manufacturer-hero"],
+  [class*="brand-hero"]
+) {
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  :is(
+    .manufacturer-hero,
+    .manufacturer-header,
+    .brand-hero,
+    [data-manufacturer-hero],
+    [class*="manufacturer-hero"],
+    [class*="brand-hero"]
+  ) :is(
+    picture,
+    figure,
+    .hero-media,
+    .manufacturer-hero__media,
+    [class*="hero__media"],
+    [class*="hero-media"]
+  ) {
+    max-height: var(--pt-manufacturer-hero-mobile-max) !important;
+    aspect-ratio: 16 / 10 !important;
+    padding: .45rem !important;
+  }
+
+  :is(
+    .manufacturer-hero,
+    .manufacturer-header,
+    .brand-hero,
+    [data-manufacturer-hero],
+    [class*="manufacturer-hero"],
+    [class*="brand-hero"]
+  ) :is(
+    picture img,
+    figure img,
+    .hero-media img,
+    .manufacturer-hero__media img,
+    [class*="hero__media"] img,
+    [class*="hero-media"] img,
+    > img
+  ) {
+    max-height: calc(var(--pt-manufacturer-hero-mobile-max) - .9rem) !important;
+  }
+}
+
+.pt-normalized-score {
+  display: inline-flex !important;
+  align-items: baseline;
+  gap: .18em;
+  font-weight: 800 !important;
+  color: #198a46 !important;
+  white-space: nowrap;
+}
+
+.pt-normalized-score__value {
+  font-size: 1.15em;
+  line-height: 1;
+}
+
+.pt-normalized-score__scale {
+  font-size: .68em;
+  line-height: 1;
+  opacity: .9;
+}
+
+:is(
+  .manufacturer-rating,
+  .brand-rating,
+  .manufacturer-card__rating,
+  [class*="manufacturer"][class*="rating"],
+  [class*="brand"][class*="rating"]
+) :is(
+  .stars,
+  .star,
+  [aria-label*="Stern"],
+  [aria-label*="star"]
+) {
+  display: none !important;
+}
+
+/* End PT manufacturer media and score 4.3.0 */
+</style>
+
+<script is:inline>
+(() => {
+  const normalize = (root = document) => {
+    const selectors = [
+      '.manufacturer-rating',
+      '.brand-rating',
+      '.manufacturer-card__rating',
+      '[class*="manufacturer"][class*="rating"]',
+      '[class*="brand"][class*="rating"]',
+      '[class*="score"]',
+      '[data-rating]',
+      '[data-score]'
+    ];
+
+    const candidates = new Set();
+    selectors.forEach((selector) => {
+      root.querySelectorAll(selector).forEach((node) => candidates.add(node));
+    });
+
+    for (const node of candidates) {
+      if (!(node instanceof HTMLElement)) continue;
+      if (node.dataset.ptScoreNormalized === 'true') continue;
+
+      const raw = (node.textContent || '').replace(/\s+/g, ' ').trim();
+      if (!raw) continue;
+
+      let score = null;
+      let match = raw.match(/(?:⭐|★|☆)?\s*(\d(?:[.,]\d+)?)\s*(?:\/|von)\s*5\b/i);
+      if (match) {
+        score = Math.round(parseFloat(match[1].replace(',', '.')) * 20);
+      }
+
+      if (score === null) {
+        match = raw.match(/\b(?:score\s*)?(\d{1,3})\s*(?:\/\s*100|score)\b/i)
+          || raw.match(/\bscore\s*(\d{1,3})\b/i);
+        if (match) score = Number(match[1]);
+      }
+
+      if (score === null && node.dataset.rating) {
+        const value = Number(String(node.dataset.rating).replace(',', '.'));
+        if (Number.isFinite(value)) score = value <= 5 ? Math.round(value * 20) : Math.round(value);
+      }
+
+      if (score === null && node.dataset.score) {
+        const value = Number(node.dataset.score);
+        if (Number.isFinite(value)) score = Math.round(value);
+      }
+
+      if (!Number.isFinite(score)) continue;
+      score = Math.max(0, Math.min(100, Math.round(score)));
+
+      node.textContent = '';
+      node.classList.add('pt-normalized-score');
+      node.dataset.ptScoreNormalized = 'true';
+
+      const value = document.createElement('span');
+      value.className = 'pt-normalized-score__value';
+      value.textContent = String(score);
+
+      const scale = document.createElement('span');
+      scale.className = 'pt-normalized-score__scale';
+      scale.textContent = '/100';
+
+      node.append(value, scale);
+      node.setAttribute('aria-label', `${score} von 100 Punkten`);
+    }
+  };
+
+  normalize();
+  document.addEventListener('astro:page-load', () => normalize());
+
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const added of mutation.addedNodes) {
+        if (added instanceof HTMLElement) normalize(added);
+      }
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+
+</ProjectLayout>
+
+<style>
+  .manufacturer-detail { --green: #18743b; --dark: #0d302b; --muted: #647579; --border: #dce5e3; display: grid; gap: 4rem; padding-bottom: 5rem; }
+  .manufacturer-detail * { box-sizing: border-box; }
+  .manufacturer-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); align-items: center; overflow: hidden; border: 1px solid var(--border); border-radius: 1.75rem; background: linear-gradient(145deg, #fff, #f5f9f6); }
+  .manufacturer-hero > div { padding: clamp(2rem, 5vw, 4.5rem); }
+  .manufacturer-hero > :global(img) { display: block; width: 100%; height: auto; min-height: 0; aspect-ratio: 4 / 5; object-fit: cover; }
+  .manufacturer-hero h1 { margin: .5rem 0 1rem; color: var(--dark); font-size: clamp(3rem, 7vw, 5.6rem); line-height: .95; letter-spacing: -.06em; }
+  .manufacturer-hero > div > span, .manufacturer-section > header span, .decision-grid article > span { color: var(--green); font-size: .75rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+  .manufacturer-hero p { color: var(--muted); line-height: 1.7; }
+  .manufacturer-hero .recommendation { color: var(--dark); font-size: 1.15rem; font-weight: 750; }
+  .rating { display: flex; margin: 1.5rem 0; align-items: baseline; gap: .75rem; }.rating strong { color: var(--green); font-size: 1.4rem; }.rating span { color: var(--muted); font-size: .85rem; }
+  .website, .product-link { color: var(--green); font-weight: 850; text-decoration: none; }
+  .manufacturer-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }.manufacturer-stats div { display: grid; padding: 1.5rem; border: 1px solid var(--border); border-radius: 1rem; text-align: center; }.manufacturer-stats strong { color: var(--green); font-size: 2rem; }.manufacturer-stats span { color: var(--muted); }
+  .decision-grid, .strength-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }.decision-grid article, .strength-grid article { padding: 1.6rem; border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; }.decision-grid .attention, .strength-grid .weakness { background: #fffaf4; }
+  .manufacturer-section { display: grid; gap: 1.5rem; }.manufacturer-section > header { max-width: 800px; }.manufacturer-section h2 { margin: .4rem 0 0; color: var(--dark); font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.04em; }
+  .profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }.profile-grid article { padding: 1.4rem; border: 1px solid var(--border); border-radius: 1rem; background: #fff; }.profile-grid h3 { margin: 0 0 .6rem; color: var(--dark); }.profile-grid p { margin: 0; color: var(--muted); line-height: 1.65; }
+  .product-grid, .series-grid, .alternative-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+  .product-card, .series-grid article, .alternative-grid a { position: relative; padding: 1.4rem; border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; color: inherit; text-decoration: none; }.product-card > :global(img) { display: block; width: 100%; height: 190px; object-fit: contain; }.product-card h3, .alternative-grid h3 { margin: .5rem 0; }.product-card h3 a { color: var(--dark); text-decoration: none; }.product-card p, .series-grid p, .alternative-grid p { color: var(--muted); line-height: 1.55; }.product-rank { position: absolute; top: 1rem; left: 1rem; display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 999px; background: var(--green); color: #fff; font-weight: 900; }.product-score { display: flex; align-items: baseline; gap: .4rem; }.product-score strong { color: var(--green); font-size: 1.5rem; }.product-score span { color: var(--muted); }
+  .product-list { display: grid; gap: .75rem; }.product-list > a { display: grid; padding: .9rem; grid-template-columns: 80px minmax(0, 1fr) auto; align-items: center; gap: 1rem; border: 1px solid var(--border); border-radius: 1rem; color: inherit; text-decoration: none; }.product-list :global(img) { display: block; width: 80px; height: 70px; object-fit: contain; }.product-list div { display: grid; gap: .3rem; }.product-list div span { color: var(--muted); }.product-list b { color: var(--green); }
+  .alternative-grid :global(img) { display: block; width: 100%; height: 180px; object-fit: cover; border-radius: .8rem; }
+  .experience > p { max-width: 75ch; color: var(--muted); line-height: 1.7; }.experience aside { padding: 1.4rem; border-left: 4px solid var(--green); background: #f5f9f6; }.experience aside p { margin-bottom: 0; }
+  .sources { padding: 1.25rem; border: 1px solid var(--border); border-radius: 1rem; }.sources summary { cursor: pointer; font-weight: 850; }
+  li { margin-bottom: .45rem; line-height: 1.5; }
+  @media(max-width: 900px) { .manufacturer-hero, .decision-grid, .strength-grid, .profile-grid { grid-template-columns: 1fr; }.manufacturer-hero > :global(img) { height: auto; min-height: 0; aspect-ratio: 16 / 9; }.product-grid, .series-grid, .alternative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media(max-width: 640px) { .manufacturer-stats, .product-grid, .series-grid, .alternative-grid { grid-template-columns: 1fr; }.product-list > a { grid-template-columns: 60px minmax(0, 1fr); }.product-list b { grid-column: 2; } }
+
+/* manufacturer-dark-mode-5.2.1 */
+  @media (prefers-color-scheme: dark) {
+    .manufacturer-detail {
+      --green: var(--pt-theme-accent, #58d391);
+      --dark: var(--pt-theme-text, #f7fafc);
+      --muted: var(--pt-theme-text-soft, #d7e0eb);
+      --border: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-hero {
+      border-color: var(--border);
+      background: linear-gradient(145deg, var(--pt-theme-surface, #111d2f), var(--pt-theme-canvas-elevated, #0c1728));
+      box-shadow: var(--pt-theme-shadow-sm, 0 14px 38px rgb(0 0 0 / 28%));
+    }
+
+    .manufacturer-hero h1,
+    .manufacturer-hero .recommendation,
+    .manufacturer-section h2,
+    .product-card h3,
+    .product-card h3 a,
+    .alternative-grid h3,
+    .series-grid h3,
+    .decision-grid h2,
+    .strength-grid h3,
+    .product-list strong,
+    .sources summary {
+      color: var(--pt-theme-text, #f7fafc);
+    }
+
+    .manufacturer-hero p,
+    .rating span,
+    .manufacturer-stats span,
+    .decision-grid li,
+    .strength-grid li,
+    .product-card p,
+    .product-card li,
+    .series-grid p,
+    .series-grid li,
+    .alternative-grid p,
+    .product-list div span,
+    .experience > p,
+    .experience aside p,
+    .sources li {
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-stats div,
+    .decision-grid article,
+    .strength-grid article,
+    .product-card,
+    .series-grid article,
+    .alternative-grid a,
+    .product-list > a,
+    .sources {
+      border-color: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      background: var(--pt-theme-surface, #111d2f);
+      color: var(--pt-theme-text-soft, #d7e0eb);
+      box-shadow: var(--pt-theme-shadow-sm, 0 14px 38px rgb(0 0 0 / 28%));
+    }
+
+    .decision-grid .attention,
+    .strength-grid .weakness {
+      border-color: color-mix(in srgb, var(--pt-theme-warning, #f9b75f) 24%, var(--pt-theme-border));
+      background: var(--pt-theme-warning-soft, rgba(245, 158, 11, 0.14));
+    }
+
+    .experience aside {
+      border-left-color: var(--pt-theme-accent, #58d391);
+      background: var(--pt-theme-success-soft, rgba(34, 197, 94, 0.14));
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .product-card > :global(img),
+    .product-list :global(img),
+    .alternative-grid :global(img) {
+      background: #f5f7f6;
+    }
+
+    .website,
+    .product-link,
+    .product-list b,
+    .product-score strong,
+    .rating strong,
+    .manufacturer-stats strong {
+      color: var(--pt-theme-accent, #58d391);
+    }
+
+    .manufacturer-detail :global(.faq-item),
+    .manufacturer-detail :global(details) {
+      border-color: var(--pt-theme-border, rgba(226, 232, 240, 0.13));
+      background: var(--pt-theme-surface, #111d2f);
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+
+    .manufacturer-detail :global(.faq-item summary),
+    .manufacturer-detail :global(details summary),
+    .manufacturer-detail :global(.faq-question) {
+      color: var(--pt-theme-text, #f7fafc);
+    }
+
+    .manufacturer-detail :global(.faq-answer),
+    .manufacturer-detail :global(details p) {
+      color: var(--pt-theme-text-soft, #d7e0eb);
+    }
+  }
+
+/* manufacturer-hero-redesign-5.3 */
+  .manufacturer-detail {
+    gap: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .manufacturer-hero {
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+    align-items: stretch;
+    min-height: 560px;
+  }
+
+  .manufacturer-hero > div {
+    display: grid;
+    align-content: center;
+    padding: clamp(2.5rem, 4.5vw, 4.25rem);
+  }
+
+  .manufacturer-hero > div > p {
+    max-width: 58ch;
+  }
+
+  .manufacturer-hero h1 {
+    font-size: clamp(2.9rem, 5.5vw, 5rem);
+  }
+
+  .manufacturer-hero .recommendation {
+    max-width: 40ch;
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+    line-height: 1.45;
+  }
+
+  .manufacturer-hero > :global(img) {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .manufacturer-stats {
+    margin-top: -1rem;
+  }
+
+  @media (max-width: 900px) {
+    .manufacturer-hero {
+      min-height: 0;
+    }
+
+    .manufacturer-hero > div {
+      padding: clamp(2rem, 7vw, 3rem);
+    }
+
+    .manufacturer-hero > :global(img) {
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 16 / 9;
+    }
+
+    .manufacturer-stats {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .manufacturer-detail {
+      gap: 2.25rem;
+    }
+
+    .manufacturer-hero {
+      border-radius: 1.35rem;
+    }
+
+    .manufacturer-hero h1 {
+      font-size: clamp(2.5rem, 13vw, 3.8rem);
+    }
+
+    .manufacturer-hero .recommendation {
+      font-size: 1.08rem;
+    }
+  }
+</style>

@@ -26,6 +26,8 @@ criteria:
   - { key: "akkulaufzeit", label: "Akkulaufzeit", description: "Modusabhängige Herstellerwerte." }
   - { key: "wasserschutz", label: "Wasserschutz", description: "IP-Klasse." }
   - { key: "abo", label: "Abo", description: "Laufende Dienstkosten." }
+automaticRecommendations:
+  enabled: true
 recommendation:
   winnerSlug: "weenect-xs"
   alternativeSlug: "tractive-cat-6-mini"

@@ -143,6 +143,18 @@ faq:
     answer: "PETLIBRO nennt den Tank als spülmaschinengeeignet. Elektronik, Sensorik und Filtermodul dürfen nicht pauschal in die Spülmaschine."
   - question: "Ersetzt die Ultrafiltration die Reinigung?"
     answer: "Nein. Auch feine Filterung verhindert Ablagerungen und Biofilm nicht vollständig."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.9
+    score: 78
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO Glacier unterscheidet sich von klassischen Pumpenbrunnen vor allem durch den Edelstahlaufbau und das Ultrafiltrationsmodul.

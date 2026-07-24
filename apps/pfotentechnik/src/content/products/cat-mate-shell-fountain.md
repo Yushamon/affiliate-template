@@ -145,6 +145,18 @@ faq:
     answer: "Ja. Closer Pets nennt Polypropylen und weist es als BPA-frei aus."
   - question: "Gibt es Ersatzteile?"
     answer: "Ja. Pumpe, Netzteil, Bürste und verschiedene Filtertypen sind offiziell erhältlich."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.8
+    score: 75
+    productStatus: "unknown"
 ---
 
 Der Cat Mate Shell Pet Fountain ist ein vergleichsweise klassischer Brunnen. Er arbeitet ohne App, Akku oder Sensorik und bietet stattdessen zwei Trinkhöhen sowie eine regelbare Pumpe.

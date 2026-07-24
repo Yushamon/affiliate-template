@@ -1,0 +1,120 @@
+---
+import type { ComparisonViewModel } from "@affiliate-core/comparison/model";
+
+type Props = {
+  scenarios: NonNullable<ComparisonViewModel["scenarioRecommendations"]>;
+};
+
+const { scenarios } = Astro.props;
+---
+
+{scenarios.length > 0 && (
+  <section class="scenario-recommendations" aria-labelledby="scenario-title" data-comparison-scenarios>
+    <div class="scenario-heading">
+      <span>Automatisch eingeordnet</span>
+      <h2 id="scenario-title">Empfehlungen nach Einsatzzweck</h2>
+      <p>Die Auswahl berücksichtigt die gepflegten Produktdaten und die Anforderungen des jeweiligen Szenarios.</p>
+    </div>
+
+    <div class="scenario-grid">
+      {scenarios.map((scenario) => (
+        <article class="scenario-card">
+          <p class="scenario-label">{scenario.label}</p>
+          <h3>
+            <a href={scenario.winner.href}>{scenario.winner.title}</a>
+          </h3>
+          <p>{scenario.reason}</p>
+          <div class="scenario-meta">
+            <span>Score {Math.round(scenario.score)}</span>
+            {scenario.alternative && (
+              <a href={scenario.alternative.href}>
+                Alternative: {scenario.alternative.title}
+              </a>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .scenario-recommendations {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+  .scenario-heading {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+  }
+  .scenario-heading > span,
+  .scenario-label {
+    color: var(--comparison-accent);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .scenario-heading h2 {
+    margin: .35rem 0 .6rem;
+    color: var(--comparison-text);
+  }
+  .scenario-heading p,
+  .scenario-card p {
+    color: var(--comparison-muted);
+  }
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 1rem;
+    min-width: 0;
+  }
+  .scenario-card {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--comparison-line);
+    border-radius: 1rem;
+    color: var(--comparison-text);
+    background: var(--comparison-surface);
+    box-shadow: var(--comparison-premium-shadow);
+  }
+  .scenario-card h3 {
+    margin: .3rem 0 .65rem;
+    font-size: 1.08rem;
+    overflow-wrap: anywhere;
+  }
+  .scenario-card h3 a,
+  .scenario-meta a {
+    color: inherit;
+  }
+  .scenario-card a:hover {
+    color: var(--comparison-accent);
+  }
+  .scenario-card a:focus-visible {
+    outline: 3px solid var(--comparison-focus);
+    outline-offset: 3px;
+    border-radius: .25rem;
+  }
+  .scenario-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem 1rem;
+    margin-top: 1rem;
+    min-width: 0;
+    font-size: .86rem;
+    font-weight: 700;
+  }
+  .scenario-meta > * {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 760px) {
+    .scenario-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .scenario-card {
+      padding: 1.05rem;
+    }
+  }
+</style>

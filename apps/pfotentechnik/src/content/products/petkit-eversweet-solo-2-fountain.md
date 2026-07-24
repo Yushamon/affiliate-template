@@ -58,6 +58,18 @@ specs:
 faq:
   - { question: "Ist der Solo 2 wirklich kabellos?", answer: "Die Pumpe arbeitet ohne Kabel im Tank; der Brunnen selbst benötigt weiterhin einen Netzanschluss." }
   - { question: "Wie oft muss der Filter gewechselt werden?", answer: "PETKIT nennt ungefähr vier Wochen, abhängig von Wasserqualität, Tierzahl und Verschmutzung." }
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4.4
+    score: 87
+    productStatus: "unknown"
 ---
 
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.

@@ -125,6 +125,20 @@ features:
   - "6-Liter-Vorratsbehälter"
   - "App-Steuerung"
   - "Batterie-Backup"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType:
+      - "dry"
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde.

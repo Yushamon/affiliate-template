@@ -138,6 +138,25 @@ features:
   - "Großer 7-Liter-Vorratsbehälter"
   - "Bis zu fünf Mahlzeiten täglich programmierbar"
   - "Persönliche Sprachaufnahme mit bis zu zehn Sekunden"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+    reservoirLiters: 7
+    portionGrams: 10
+    maxPortionsPerMeal: 40
+    maxMealGrams: 400
+    kibbleMaxMm: 12
+    largeDogFit: "technical-fit"
+  editorial:
+    rating: 3.5
+    score: 71
+    productStatus: "unknown"
 ---
 
 Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen.

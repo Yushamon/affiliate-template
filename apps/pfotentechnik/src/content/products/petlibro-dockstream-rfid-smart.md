@@ -155,6 +155,20 @@ faq:
     answer: "PETLIBRO weist darauf hin, dass der RFID-Anhänger die Funktion fremder Mikrochip-Futterautomaten beeinflussen kann."
   - question: "Ist der Brunnen für Hunde geeignet?"
     answer: "PETLIBRO ordnet ihn primär Katzen und kleinen Hunden zu. Für mittelgroße und große Hunde empfiehlt der Hersteller die Capsule Dog Fountain."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+      - "large"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 80
+    productStatus: "unknown"
 ---
 
 Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.

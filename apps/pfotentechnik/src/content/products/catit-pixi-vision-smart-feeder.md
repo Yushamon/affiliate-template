@@ -80,6 +80,18 @@ features: ["HD-Kamera und Nachtsicht", "Zwei-Wege-Audio", "Bis zu 12 Mahlzeiten 
 priceCategory: premium
 useCase: "Kamera-Futterautomat für Katzen"
 capacity: "2,9 Liter"
+comparisonData:
+  general:
+    animal:
+      - "cat"
+    petSize: []
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.5
+    score: 89
+    priceCategory: "premium"
+    productStatus: "unknown"
 ---
 
 Der Catit PIXI Vision Smart Feeder gehört zu den interessanteren neuen Kamera-Modellen für Katzen. Positiv sind Dualband-WLAN, lokale microSD-Aufzeichnung und ein echtes Batterie-Backup. Die Kamera dokumentiert allerdings nur den Futterplatz und verhindert keinen Futterdiebstahl.

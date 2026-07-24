@@ -76,6 +76,31 @@ faq:
   - { question: "Was ist der Unterschied zwischen T 20 und TT 25?", answer: "Beide dienen der Hundeortung im Alpha-System. Das TT 25 ergänzt kompatible Trainingsfunktionen. Für reine Ortung ist das T 20 die zurückhaltendere Wahl." }
   - { question: "Funktioniert das TT 25 ohne Abo?", answer: "Die direkte VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Alpha-Handgerät. Optionale inReach-Dienste am Handgerät sind davon getrennt." }
   - { question: "Ist das TT 25 für normale Spaziergänge sinnvoll?", answer: "Meist nicht. Größe, Preis und Systemaufwand richten sich an spezialisierte Jagd- und Arbeitshundeeinsätze." }
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+    deviceWeightGrams: 253
+    subscriptionRequired: false
+    transmission: "vhf"
+    batteryMaxDays: 3
+    waterproofRating: "1 ATM"
+    liveTracking: true
+    virtualFence: false
+    activityTracking: false
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 3.9
+    score: 78
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Das TT 25 ist kein „besseres“ T 20 für jeden Haushalt. Seine Zusatzfunktionen erhöhen Komplexität und Verantwortungsbedarf, ohne die reine Haustierortung grundsätzlich zu verbessern.

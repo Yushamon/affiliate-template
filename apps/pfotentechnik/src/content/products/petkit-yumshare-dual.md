@@ -79,6 +79,18 @@ useCase: "Für Haushalte mit zwei Trockenfuttersorten und Kameraauswertung"
 capacity: "5 Liter in zwei Kammern"
 expandable: "Nicht vorgesehen"
 features: ["Zwei Futterkammern", "KI-Kamera", "Separate Fütterungspläne"]
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4.7
+    score: 94
+    productStatus: "unknown"
 ---
 
 Der PETKIT YumShare Dual-Hopper 2 ist kein Doppelschalenmodell, sondern ein Doppelkammerautomat. Zwei Futtersorten lassen sich getrennt lagern und kombiniert ausgeben.

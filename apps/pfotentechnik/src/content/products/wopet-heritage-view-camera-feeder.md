@@ -131,6 +131,19 @@ features:
   - "Kamera am Futterplatz"
   - "App-Steuerung"
   - "Großer Vorrat"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+  editorial:
+    rating: 3.6
+    score: 72
+    productStatus: "unknown"
 ---
 
 6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.

@@ -238,6 +238,21 @@ priceCategory: "midrange"
 useCase: "App-gesteuerte Trockenfutterportionen für eine Katze oder einen kleinen Hund"
 capacity: "3 Liter"
 expandable: "Trockenmittelbeutel als Verbrauchsmaterial; keine Kamera- oder Tiererkennungs-Erweiterung"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+    priceTier: "midrange"
+  editorial:
+    rating: 4
+    score: 81
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der PETKIT Fresh Element Solo ist ein schlanker 3-Liter-Futterautomat für eine Katze oder einen kleinen Hund. Er konzentriert sich auf App-Zeitpläne, Statusmeldungen und eine kompakte Bauform, ohne Kamera oder Tiererkennung.

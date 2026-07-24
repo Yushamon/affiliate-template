@@ -133,6 +133,18 @@ features:
   - "Bis zu sechs Mahlzeiten täglich programmierbar"
   - "Kompakter 2-Liter-Vorratsbehälter"
   - "Netz- oder Batteriebetrieb möglich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.6
+    score: 72
+    productStatus: "unknown"
 ---
 
 Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.

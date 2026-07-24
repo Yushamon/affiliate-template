@@ -14,6 +14,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
+import {
+  buildWaterFountainRecommendations,
+  renderScenarioRecommendationMarkdown
+} from "../src/domain/comparison/waterFountainRecommendationEngine.mjs";
+
+
 const appRoot = path.resolve(process.cwd(), "apps/pfotentechnik");
 const productsDir = path.join(appRoot, "src/content/products");
 const comparisonsDir = path.join(appRoot, "src/content/comparisons");
@@ -95,8 +101,9 @@ function createComparison({ audience, products }) {
   const animalPlural = isCat ? "Katzen" : "Hunde";
   const icon = isCat ? "🐈" : "🐕";
   const slug = `beste-trinkbrunnen-fuer-${isCat ? "katzen" : "hunde"}`;
-  const winner = [...products].sort((a, b) => b.rating - a.rating)[0];
-  const alternative = [...products].sort((a, b) => b.rating - a.rating)[1];
+  const scenarioRecommendations = buildWaterFountainRecommendations(products, audience);
+  const winner = scenarioRecommendations.overall[0]?.product ?? products[0];
+  const alternative = scenarioRecommendations.overall[1]?.product ?? products[1];
   const currentDate = new Intl.DateTimeFormat("sv-SE", {
     timeZone: "Europe/Berlin",
     year: "numeric",
@@ -204,6 +211,8 @@ Trinkbrunnen unterscheiden sich nicht nur durch ihr Fassungsvermögen. Material,
 ## Worauf es bei Trinkbrunnen für ${animalPlural} ankommt
 
 ${isCat ? "Für Katzen sind eine gut zugängliche, möglichst breite Trinkfläche und ein ruhiger Wasserfluss häufig wichtiger als spektakuläre Zusatzfunktionen. In Mehrkatzenhaushalten zählen zusätzlich Kapazität, Standfestigkeit und einfache tägliche Kontrolle." : "Für Hunde zählen vor allem eine ausreichend große Trinkfläche, gute Standfestigkeit und eine zur Körpergröße passende Höhe. Bei großen oder mehreren Hunden ist die nutzbare Wassermenge wichtiger als eine möglichst kompakte Bauform."}
+
+${renderScenarioRecommendationMarkdown(scenarioRecommendations, audience)}
 
 ## Material und Hygiene
 

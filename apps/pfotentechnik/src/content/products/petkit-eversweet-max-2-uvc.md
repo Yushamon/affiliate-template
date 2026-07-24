@@ -151,6 +151,18 @@ faq:
     answer: "Nein. PETKIT nennt bis zu 83 Tage unter bestimmten Betriebsbedingungen. Nutzung, Modus und Trinkhäufigkeit verändern die Laufzeit."
   - question: "Kann der Brunnen in die Spülmaschine?"
     answer: "PETKIT bezeichnet den Eversweet Max 2 als vollständig spülmaschinengeeignet. Die Modellanleitung und zulässige Temperatur sollten dennoch beachtet werden."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 81
+    productStatus: "unknown"
 ---
 
 Der PETKIT Eversweet Max 2 UVC gehört zu den technisch umfangreicheren kabellosen Trinkbrunnen. Seine Stärke liegt weniger in einem einzelnen Merkmal als in der Kombination aus Akku, Edelstahl-Trinkfläche, UVC-Pumpe und gut zerlegbarer Bauform.

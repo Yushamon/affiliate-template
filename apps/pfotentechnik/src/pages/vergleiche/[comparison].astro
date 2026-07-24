@@ -8,6 +8,7 @@ import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
+import ScenarioRecommendations from "../../components/comparison/ScenarioRecommendations.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
 import {
@@ -105,6 +106,19 @@ const relatedItems = relatedEntries.map((related) => ({
   text: related.hubDescription
 }));
 
+const comparisonItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: comparison.title,
+  numberOfItems: model.products.length,
+  itemListElement: model.products.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: new URL(product.href, Astro.site ?? Astro.url).href,
+    name: product.title
+  }))
+};
+
 const comparisonNextSteps = buildComparisonNextSteps({
   comparison,
   pages,
@@ -131,10 +145,17 @@ const comparisonNextSteps = buildComparisonNextSteps({
   breadcrumbs={breadcrumbs}
   schemaType="webpage"
 >
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(comparisonItemListSchema)}
+  />
+
   <Breadcrumbs items={breadcrumbs} />
 
   <main class="comparison-detail">
-    <ComparisonShell model={model} />
+    <ComparisonShell model={model}>
+      <ScenarioRecommendations slot="scenario-recommendations" scenarios={model.scenarioRecommendations} />
+    </ComparisonShell>
 
     <article class="comparison-content">
       <AutoLinkContent
@@ -158,10 +179,12 @@ const comparisonNextSteps = buildComparisonNextSteps({
       items={comparisonNextSteps}
     />
 
-    <RelatedArticles items={relatedItems} />
-
     {comparison.faq.length > 0 && (
-      <FAQ items={comparison.faq} />
+      <section id="faq" aria-label="Häufige Fragen zum Vergleich">
+        <FAQ items={comparison.faq} />
+      </section>
     )}
+
+    <RelatedArticles items={relatedItems} />
   </main>
 </ProjectLayout>

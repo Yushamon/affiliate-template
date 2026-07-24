@@ -234,6 +234,25 @@ const productGpsSchema =
   })
   .optional();
 
+const comparisonPrimitiveSchema = z.union([
+  z.string(),
+  z.number(),
+  z.boolean(),
+  z.null()
+]);
+
+const comparisonValueSchema: z.ZodType<unknown> = z.lazy(() =>
+  z.union([
+    comparisonPrimitiveSchema,
+    z.array(comparisonPrimitiveSchema),
+    z.record(z.string(), comparisonValueSchema)
+  ])
+);
+
+const productComparisonDataSchema = z
+  .record(z.string(), comparisonValueSchema)
+  .optional();
+
 const productComparisonFiltersSchema =
   z.object({
     animal: z
@@ -434,6 +453,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
       .default([]),
 
     gps: productGpsSchema,
+
+    comparisonData:
+      productComparisonDataSchema,
 
     comparisonFilters:
       productComparisonFiltersSchema

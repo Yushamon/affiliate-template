@@ -218,6 +218,31 @@ faq:
     answer: "Garmin gibt 1 ATM an. Das Gerät widersteht damit einem Druck entsprechend etwa 10 m Wassertiefe. Diese Einstufung ist keine Einladung zu dauerhaftem Unterwassereinsatz; Dichtungen und Abdeckungen müssen intakt und korrekt geschlossen sein."
   - question: "Was ist der Unterschied zwischen Alpha T 20 und Alpha TT 25?"
     answer: "Das T 20 dient ausschließlich der Ortung. Das TT 25 ergänzt abhängig von regionaler Ausführung und kompatiblem Handgerät Trainingsfunktionen. Für reine Standortverfolgung ist das T 20 die passendere und meist günstigere Variante."
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+    deviceWeightGrams: 238
+    subscriptionRequired: false
+    transmission: "vhf"
+    batteryMaxDays: 3
+    waterproofRating: "1 ATM"
+    liveTracking: true
+    virtualFence: false
+    activityTracking: false
+  general:
+    animal:
+      - "dog"
+    petSize:
+      - "medium"
+      - "large"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4
+    score: 81
+    priceCategory: "premium"
+    productStatus: "active"
 ---
 
 Der Garmin Alpha T 20 ist kein gewöhnlicher GPS-Tracker für Spaziergänge. Er gehört zu einem professionellen VHF-Ortungssystem: Das Halsbandgerät bestimmt die Position des Hundes und sendet sie direkt an ein kompatibles Garmin-Alpha-Handgerät.

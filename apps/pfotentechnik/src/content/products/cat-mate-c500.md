@@ -165,7 +165,18 @@ features:
   - "Vier programmierbare Öffnungszeiten"
   - "Nass- und Trockenfutter"
   - "Zwei Kühlakkus"
-
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.6
+    score: 73
+    productStatus: "unknown"
 ---
 
 Der Cat Mate C500 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), verfolgt jedoch ein anderes Konzept als viele moderne WLAN-Modelle. Statt eines großen Vorratsbehälters arbeitet er mit einem zeitgesteuerten Drehteller. Diese Bauweise eignet sich besonders für mehrere Nassfutterportionen über den Tag und kommt vollständig ohne App oder Internetverbindung aus.

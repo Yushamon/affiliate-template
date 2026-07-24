@@ -74,6 +74,20 @@ features: ["Wiegeplattform", "Fressgeschwindigkeit und Mahlzeitenprotokoll", "Sl
 priceCategory: premium
 useCase: "Gewichtsbasierte Trockenfutterportionierung"
 capacity: "3,6 Liter"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+    priceTier: "premium"
+  editorial:
+    rating: 4.6
+    score: 91
+    priceCategory: "premium"
+    productStatus: "unknown"
 ---
 
 Der PawSync Smart Pet Feeder adressiert einen echten Schwachpunkt vieler Automaten: mechanische Portionen schwanken mit dem Futter. Die integrierte Waage macht die Kontrolle nachvollziehbarer, ersetzt aber keine fachlich bestimmte Tagesration.

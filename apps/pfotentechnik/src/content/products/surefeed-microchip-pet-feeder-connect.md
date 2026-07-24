@@ -129,6 +129,18 @@ features:
   - "Mikrochip-Zugang"
   - "Integrierte Portionswaage"
   - "Für Nass- und Trockenfutter"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.

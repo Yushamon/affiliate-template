@@ -150,6 +150,30 @@ faq:
     answer: "Der Tracker kann seine Position per Satellit bestimmen, benötigt für die Übertragung an die App jedoch eine unterstützte Mobilfunkverbindung. Ohne Netz können aktuelle Daten verzögert ankommen."
   - question: "Diagnostiziert der Tracker Krankheiten?"
     answer: "Nein. Aktivitäts-, Herz- und Atemfrequenzdaten können Veränderungen und Trends sichtbar machen, ersetzen aber keine tierärztliche Untersuchung oder Diagnose."
+comparisonData:
+  gps:
+    animal:
+      - "cat"
+    minimumPetWeightKg: 3
+    deviceWeightGrams: 32
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 7
+    waterproofRating: "IP68"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "cat"
+    petSize: []
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.5
+    score: 91
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Beim Tractive CAT 6 Mini bilden Tracker und Halsband eine konstruktive Einheit. Das vom Hersteller angegebene Gewicht von 32 g umfasst deshalb das vollständige System. Für die Auswahl sind neben dem Körpergewicht der Katze vor allem der zulässige Halsumfang von 19 bis 22,9 cm und der Sinn des Sicherheitsverschlusses entscheidend.

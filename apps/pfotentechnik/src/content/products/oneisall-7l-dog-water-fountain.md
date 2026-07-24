@@ -212,6 +212,20 @@ priceCategory: "midrange"
 useCase: "Großvolumige Wasserversorgung für mittelgroße und große Hunde sowie Mehrtierhaushalte"
 capacity: "7 Liter"
 expandable: "Ersatzfilter, Pumpenschwämme und Ersatzpumpe separat erhältlich"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+    petSize:
+      - "medium"
+      - "large"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.1
+    score: 82
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der oneisall 7L Dog Water Fountain ist auf hohe Wasserreserve und eine breite Trinkfläche ausgelegt. Im Unterschied zu kompakten Katzenbrunnen steht nicht eine kleine Stellfläche, sondern die Nutzung durch große Hunde und mehrere Tiere im Vordergrund.

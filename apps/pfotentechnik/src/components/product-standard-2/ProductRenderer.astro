@@ -60,6 +60,11 @@ const category = asText(
   source.category?.label ??
   source.category
 );
+
+const categoryHref = asText(
+  value.categoryHref ??
+  source.category?.path
+);
 const recommendation = asText(
   value.recommendation ??
   source.recommendation ??
@@ -337,7 +342,19 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
 <section class="native-product" data-product-engine="4.1-premium">
   <header class="native-product__intro">
     <div class="native-product__badges">
-      {category && <span class="native-product__badge">{category}</span>}
+      {category && (
+        categoryHref
+          ? (
+              <a
+                class="native-product__badge native-product__badge--category"
+                href={categoryHref}
+                aria-label={`Zum Vergleich und Ratgeberbereich ${category}`}
+              >
+                {category}
+              </a>
+            )
+          : <span class="native-product__badge">{category}</span>
+      )}
       {manufacturer && (
         manufacturerHref
           ? <a class="native-product__badge native-product__badge--soft native-product__badge--manufacturer" href={manufacturerHref} aria-label={`Alle Inhalte und Produkte von ${manufacturer}`}>{manufacturer}</a>
@@ -1600,4 +1617,52 @@ const secondaryQuickFacts = safeQuickFacts.filter((fact: any) =>
 .native-gallery__thumb img{ display:block!important; width:100%!important; height:100%!important; margin:0!important; object-fit:contain!important; object-position:center center!important; transform:none!important; }
 @media(max-width:720px){ .native-gallery__stage{ aspect-ratio:1/1; padding:.45rem!important; } .native-gallery__slide{ padding:.45rem!important; } }
 /* End PT product navigation and gallery 4.2.0 */
+
+/* product-lightmode-category-4.1.2 */
+  .native-product__badge--category {
+    text-decoration: none;
+    transition:
+      background-color .16s ease,
+      border-color .16s ease,
+      transform .16s ease;
+  }
+
+  .native-product__badge--category:hover {
+    background: var(--np-green-strong);
+    transform: translateY(-1px);
+  }
+
+  .native-product__badge--category:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--np-green) 28%, transparent);
+    outline-offset: 3px;
+  }
+
+  .native-product__score {
+    border: 1px solid color-mix(
+      in srgb,
+      var(--np-green) 34%,
+      var(--np-border)
+    );
+    color: var(--np-green-strong);
+    background: var(--np-green-soft);
+    box-shadow: none;
+  }
+
+  .native-product__score strong,
+  .native-product__score small {
+    color: inherit;
+  }
+
+  :global(html[data-theme="dark"]) .native-product__score,
+  :global(html.dark) .native-product__score,
+  :global([data-theme="dark"]) .native-product__score {
+    border-color: color-mix(
+      in srgb,
+      var(--np-green) 42%,
+      var(--np-border)
+    );
+    color: var(--np-green-strong);
+    background: var(--np-green-soft);
+  }
+/* end product-lightmode-category-4.1.2 */
 </style>

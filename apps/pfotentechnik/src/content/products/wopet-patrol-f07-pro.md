@@ -160,6 +160,19 @@ features:
   - "Bis zu 15 Mahlzeiten"
   - "App-Steuerung"
   - "Batterie-Backup"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+  editorial:
+    rating: 3.8
+    score: 75
+    productStatus: "unknown"
 ---
 
 Der WOPET Patrol F07 Pro ist auf hohe Planungsflexibilität ausgelegt. Bis zu 15 Mahlzeiten und 50 Portionen je Ausgabe sind deutlich mehr als bei vielen Konkurrenzmodellen.

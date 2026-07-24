@@ -129,6 +129,18 @@ features:
   - "App-Steuerung"
   - "Zeitpläne"
   - "Smart-Home-Fokus"
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 3.5
+    score: 71
+    productStatus: "unknown"
 ---
 
 Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.

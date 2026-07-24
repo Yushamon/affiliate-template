@@ -1,0 +1,41 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+type Props = {
+  product?: ComparisonProduct;
+};
+
+const { product } = Astro.props as Props;
+const price = product ? getPriceDisplay(product.price) : null;
+---
+
+{product && (
+  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung">
+    <div>
+      <span>Top-Empfehlung</span>
+      <strong>{product.title}</strong>
+    </div>
+
+    <div>
+      <a
+        href={product.href}
+        class="comparison-button comparison-button--secondary"
+      >
+        Test lesen
+      </a>
+
+      {price?.url && (
+        <a
+          href={price.url}
+          class="comparison-button"
+          rel={price.rel}
+          target={price.target}
+          data-affiliate-link
+        >
+          {price.label}
+        </a>
+      )}
+    </div>
+  </aside>
+)}

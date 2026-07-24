@@ -87,6 +87,33 @@ faq:
   - { question: "Braucht der Tractive DOG 6 ein Abo?", answer: "Ja. Die integrierte Mobilfunkverbindung und die App-Dienste werden über ein eigenes Abo pro Tracker bereitgestellt. Ohne aktives Abo ist der Tracker nicht für die laufende Ortung nutzbar." }
   - { question: "Für welche Hunde ist der DOG 6 gedacht?", answer: "Tractive empfiehlt den DOG 6 für Hunde über 4 kg. Zusätzlich muss das Halsband zur mitgelieferten Klammer und der Tracker zum individuellen Tragekomfort passen." }
   - { question: "Hält der Akku immer zwei Wochen?", answer: "Nein. Zwei Wochen sind eine Hersteller-Maximalangabe mit Energiesparzonen. Live-Tracking, Bewegung, Empfang und Temperatur können die tatsächliche Laufzeit verkürzen." }
+comparisonData:
+  gps:
+    animal:
+      - "dog"
+    minimumPetWeightKg: 4
+    deviceWeightGrams: 39
+    subscriptionRequired: true
+    transmission: "lte"
+    batteryMaxDays: 14
+    waterproofRating: "IP68"
+    liveTracking: true
+    virtualFence: true
+    activityTracking: true
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "medium"
+    foodType: []
+    priceTier: "midrange"
+  editorial:
+    rating: 4.6
+    score: 92
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der Tractive DOG 6 ist ein kompakter Mobilfunktracker. Satelliten bestimmen die Position; LTE überträgt sie an die Tractive-App. Das ist alltagstauglich, bleibt aber von Akku, Mobilfunk und einem aktiven Abo abhängig.

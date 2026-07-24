@@ -150,6 +150,18 @@ faq:
     answer: "Nein. Die Standardversion besitzt keine UVC-Funktion. Eine kompatible UVC-Pumpe ist separat erhältlich."
   - question: "Wie realistisch sind 83 Tage Akkulaufzeit?"
     answer: "Der Wert gilt für ein sparsames Herstellerszenario. Häufige Nutzung und andere Modi verkürzen die Laufzeit."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType: []
+  editorial:
+    rating: 4
+    score: 79
+    productStatus: "unknown"
 ---
 
 Der Eversweet Max Cordless ist auf flexible Platzierung ausgelegt. Der Akku trennt den Brunnen vom dauerhaften Steckdosenplatz, während die App Trinkhäufigkeit und -dauer protokolliert.

@@ -1,5 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 import petTechHeroImage from "../../assets/images/project/pfotentechnik/pet-tech-hero.webp";
+import { buildAutomaticRecommendations } from "./recommendationEngine";
 import type {
   ComparisonFilter,
   ComparisonProduct,
@@ -305,6 +306,20 @@ export function buildComparisonViewModel({
 
   const items = [...data.items, ...automaticItems];
 
+  const automaticRecommendation = buildAutomaticRecommendations({
+    comparison,
+    products,
+    itemSlugs: items
+      .filter((item) => item.type === "product")
+      .map((item) => item.slug)
+  });
+  const resolvedWinnerSlug =
+    automaticRecommendation.winnerSlug ??
+    data.recommendation.winnerSlug;
+  const resolvedAlternativeSlug =
+    automaticRecommendation.alternativeSlug ??
+    data.recommendation.alternativeSlug;
+
   const getCriterionValue = (
     item: (typeof items)[number],
     criterionKey: string,
@@ -578,7 +593,7 @@ export function buildComparisonViewModel({
             manufacturer.data.recommendation,
           rating: manufacturer.data.rating,
           badge:
-            item.slug === data.recommendation.winnerSlug
+            item.slug === resolvedWinnerSlug
               ? "Top-Empfehlung"
               : undefined,
           strengths: [],
@@ -618,9 +633,9 @@ export function buildComparisonViewModel({
           product.data.score ??
           Math.round(product.data.rating * 20),
         badge:
-          item.slug === data.recommendation.winnerSlug
+          item.slug === resolvedWinnerSlug
             ? "Top-Empfehlung"
-            : item.slug === data.recommendation.alternativeSlug
+            : item.slug === resolvedAlternativeSlug
               ? "Gute Alternative"
               : index === 1
                 ? "Preis-Leistung"
@@ -644,13 +659,35 @@ export function buildComparisonViewModel({
 
   const winner = views.find(
     (product) =>
-      product.slug === data.recommendation.winnerSlug
+      product.slug === resolvedWinnerSlug
   );
 
   const alternative = views.find(
     (product) =>
-      product.slug === data.recommendation.alternativeSlug
+      product.slug === resolvedAlternativeSlug
   );
+
+  const scenarioRecommendations = automaticRecommendation.scenarios
+    .map((scenario) => {
+      const scenarioWinner = views.find(
+        (product) => product.slug === scenario.winnerSlug
+      );
+      if (!scenarioWinner) return null;
+
+      return {
+        key: scenario.key,
+        label: scenario.label,
+        score: scenario.score,
+        reason: scenario.reason,
+        winner: scenarioWinner,
+        alternative: views.find(
+          (product) => product.slug === scenario.alternativeSlug
+        )
+      };
+    })
+    .filter((scenario): scenario is NonNullable<typeof scenario> =>
+      scenario !== null
+    );
 
   const recommendations = [
     winner,
@@ -685,9 +722,10 @@ export function buildComparisonViewModel({
     rows,
     filters,
     initialVisibleProducts: 5,
+    scenarioRecommendations,
     verdict: {
-      title: data.recommendation.title,
-      text: data.recommendation.text,
+      title: automaticRecommendation.title,
+      text: automaticRecommendation.text,
       winner,
       alternative
     }

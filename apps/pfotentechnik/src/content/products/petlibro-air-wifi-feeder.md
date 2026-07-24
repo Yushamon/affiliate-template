@@ -248,6 +248,21 @@ faq:
     answer: "Laut PETLIBRO ist nur der Edelstahl-Napf spülmaschinengeeignet. Behälter, Rotor, Halter und elektrische Basis sollten entsprechend der Anleitung von Hand gereinigt werden."
   - question: "Ist der Air WiFi Feeder für zwei Katzen geeignet?"
     answer: "Der Vorrat kann für zwei Katzen ausreichen, aber es gibt nur einen Napf und keine Tiererkennung. Eine dominante Katze kann die Portion der anderen fressen. Für getrennte Diäten ist ein RFID- oder Mikrochip-System besser geeignet."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+    foodType:
+      - "dry"
+    priceTier: "midrange"
+  editorial:
+    rating: 4.2
+    score: 84
+    priceCategory: "midrange"
+    productStatus: "active"
 ---
 
 Der PETLIBRO Air WiFi Feeder ist ein kompakter App-Futterautomat mit zwei Litern Vorrat und einem fest eingebauten 5.200-mAh-Akku.

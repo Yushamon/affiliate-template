@@ -148,6 +148,19 @@ faq:
     answer: "PETLIBRO empfiehlt sie für Hunde ab etwa 10,7 Zoll beziehungsweise 27 cm Schulterhöhe."
   - question: "Kann der Brunnen draußen stehen?"
     answer: "PETLIBRO empfiehlt keine dauerhafte Außenaufstellung, weil Staub, Fremdkörper und Sonne Wasserqualität und Material beeinträchtigen können."
+comparisonData:
+  general:
+    animal:
+      - "dog"
+      - "cat"
+    petSize:
+      - "small"
+      - "large"
+    foodType: []
+  editorial:
+    rating: 3.9
+    score: 78
+    productStatus: "unknown"
 ---
 
 Viele Katzenbrunnen sind für Hunde zu niedrig und zu klein. Die Capsule Dog Fountain setzt deshalb auf eine breite Trinkzone, hohe Reserve und Spritzschutz.
