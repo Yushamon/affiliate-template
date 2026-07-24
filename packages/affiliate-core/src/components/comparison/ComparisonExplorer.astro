@@ -25,62 +25,115 @@ const {
 
 <section
   id="direktvergleich"
-  class="comparison-explorer"
+  class="comparison-explorer comparison-explorer--premium"
   data-comparison-explorer
   data-initial-limit={initialVisibleProducts}
 >
-  <ComparisonFilterBar
-    filters={filters}
-    products={products}
-  />
-
-  <div class="comparison-explorer__toolbar">
-    <label class="comparison-toggle">
-      <input
-        type="checkbox"
-        data-differences-only
-      />
-      <span class="comparison-control-box" aria-hidden="true"></span>
-      <span class="comparison-toggle__copy">
-        <strong>Nur Unterschiede anzeigen</strong>
-        <small>Identische Merkmale vorübergehend ausblenden</small>
-      </span>
-    </label>
-
-    {products.length > initialVisibleProducts && (
-      <button
-        type="button"
-        class="comparison-show-all"
-        data-show-all-products
-        aria-pressed="false"
-      >
-        Alle {products.length} Modelle anzeigen
-      </button>
-    )}
-  </div>
-
-  <ComparisonTable
-    products={products}
-    rows={rows}
-    initialVisibleProducts={initialVisibleProducts}
-  />
-
-  <ComparisonMobileCards
-    products={products}
-    rows={rows}
-    initialVisibleProducts={initialVisibleProducts}
-  />
-
-  <div
-    class="comparison-empty-state"
-    hidden
-    data-comparison-empty
-  >
-    <h2>Keine passende Kombination gefunden</h2>
+  <div class="comparison-premium-section__heading">
+    <div>
+      <span class="comparison-eyebrow">Direktvergleich</span>
+      <h2>Finde das passende Modell</h2>
+    </div>
     <p>
-      Entferne einen Filter, damit wieder Modelle erscheinen.
+      Filtere nach deinem Einsatzgebiet oder blende identische Eigenschaften aus.
     </p>
   </div>
+
+  <div class="comparison-view-tabs" role="tablist" aria-label="Darstellung wählen">
+    <button
+      type="button"
+      class="comparison-view-tab is-active"
+      role="tab"
+      aria-selected="true"
+      data-comparison-view="table"
+    >
+      Tabelle
+    </button>
+    <button
+      type="button"
+      class="comparison-view-tab"
+      role="tab"
+      aria-selected="false"
+      data-comparison-view="cards"
+    >
+      Karten
+    </button>
+    <button
+      type="button"
+      class="comparison-filter-trigger"
+      data-comparison-filter-trigger
+      aria-expanded="false"
+    >
+      Filter
+    </button>
+  </div>
+
+  <div class="comparison-explorer__layout">
+    <aside class="comparison-explorer__filters" data-comparison-filter-drawer>
+      <div class="comparison-filter-drawer__mobile-head">
+        <strong>Modelle filtern</strong>
+        <button type="button" data-comparison-filter-close aria-label="Filter schließen">×</button>
+      </div>
+
+      <ComparisonFilterBar filters={filters} products={products} />
+
+      <label class="comparison-toggle comparison-toggle--premium">
+        <input type="checkbox" data-differences-only />
+        <span class="comparison-control-box" aria-hidden="true"></span>
+        <span class="comparison-toggle__copy">
+          <strong>Nur Unterschiede</strong>
+          <small>Gleiche Merkmale ausblenden</small>
+        </span>
+      </label>
+    </aside>
+
+    <div class="comparison-explorer__content">
+      <div class="comparison-explorer__toolbar">
+        <p class="comparison-result-summary">
+          <strong data-comparison-result-count>{products.length}</strong>
+          <span> passende Modelle</span>
+        </p>
+
+        {products.length > initialVisibleProducts && (
+          <button
+            type="button"
+            class="comparison-show-all"
+            data-show-all-products
+            aria-pressed="false"
+          >
+            Alle {products.length} Modelle anzeigen
+          </button>
+        )}
+      </div>
+
+      <div data-comparison-table-view>
+        <ComparisonTable
+          products={products}
+          rows={rows}
+          initialVisibleProducts={initialVisibleProducts}
+        />
+      </div>
+
+      <div data-comparison-card-view hidden>
+        <ComparisonMobileCards
+          products={products}
+          rows={rows}
+          initialVisibleProducts={initialVisibleProducts}
+        />
+      </div>
+
+      <div
+        class="comparison-empty-state"
+        hidden
+        data-comparison-empty
+      >
+        <h2>Keine passende Kombination gefunden</h2>
+        <p>Entferne einen Filter, damit wieder Modelle erscheinen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison-filter-backdrop" data-comparison-filter-backdrop hidden></div>
 </section>
 
 <script>
@@ -89,61 +142,64 @@ const {
     .forEach((explorer) => {
       if (!(explorer instanceof HTMLElement)) return;
 
-      const filterRoot = explorer.querySelector(
-        "[data-comparison-filters]"
-      );
-
-      const productData = filterRoot instanceof HTMLElement &&
-        filterRoot.dataset.products
-        ? JSON.parse(filterRoot.dataset.products)
-        : {};
+      const filterRoot = explorer.querySelector("[data-comparison-filters]");
+      const productData =
+        filterRoot instanceof HTMLElement && filterRoot.dataset.products
+          ? JSON.parse(filterRoot.dataset.products)
+          : {};
 
       const inputs = Array.from(
-        explorer.querySelectorAll(
-          "input[data-filter-key]"
-        )
+        explorer.querySelectorAll("input[data-filter-key]")
       );
 
-      const differencesToggle = explorer.querySelector(
-        "[data-differences-only]"
-      );
+      const differencesToggle = explorer.querySelector("[data-differences-only]");
+      const showAllButton = explorer.querySelector("[data-show-all-products]");
+      const count = explorer.querySelector("[data-comparison-result-count]");
+      const resetButton = explorer.querySelector("[data-comparison-filter-reset]");
+      const emptyState = explorer.querySelector("[data-comparison-empty]");
+      const drawer = explorer.querySelector("[data-comparison-filter-drawer]");
+      const backdrop = explorer.querySelector("[data-comparison-filter-backdrop]");
+      const filterTrigger = explorer.querySelector("[data-comparison-filter-trigger]");
+      const filterClose = explorer.querySelector("[data-comparison-filter-close]");
+      const tableView = explorer.querySelector("[data-comparison-table-view]");
+      const cardView = explorer.querySelector("[data-comparison-card-view]");
+      const viewTabs = Array.from(explorer.querySelectorAll("[data-comparison-view]"));
 
-      const showAllButton = explorer.querySelector(
-        "[data-show-all-products]"
-      );
-
-      const count = explorer.querySelector(
-        "[data-comparison-result-count]"
-      );
-
-      const resetButton = explorer.querySelector(
-        "[data-comparison-filter-reset]"
-      );
-
-      const emptyState = explorer.querySelector(
-        "[data-comparison-empty]"
-      );
-
-      const initialLimit = Number(
-        explorer.dataset.initialLimit ?? "5"
-      );
-
+      const initialLimit = Number(explorer.dataset.initialLimit ?? "5");
       let showAll = false;
+
+      const setDrawer = (open) => {
+        if (!(drawer instanceof HTMLElement)) return;
+        drawer.classList.toggle("is-open", open);
+        document.documentElement.classList.toggle("comparison-filter-open", open);
+
+        if (backdrop instanceof HTMLElement) backdrop.hidden = !open;
+        if (filterTrigger instanceof HTMLButtonElement) {
+          filterTrigger.setAttribute("aria-expanded", String(open));
+        }
+      };
+
+      const setView = (view) => {
+        const isCards = view === "cards";
+
+        if (tableView instanceof HTMLElement) tableView.hidden = isCards;
+        if (cardView instanceof HTMLElement) cardView.hidden = !isCards;
+
+        viewTabs.forEach((tab) => {
+          if (!(tab instanceof HTMLButtonElement)) return;
+          const active = tab.dataset.comparisonView === view;
+          tab.classList.toggle("is-active", active);
+          tab.setAttribute("aria-selected", String(active));
+        });
+      };
 
       const getSelected = () => {
         const selected = new Map();
 
         inputs.forEach((input) => {
-          if (
-            !(input instanceof HTMLInputElement) ||
-            !input.checked
-          ) {
-            return;
-          }
-
+          if (!(input instanceof HTMLInputElement) || !input.checked) return;
           const key = input.dataset.filterKey;
           if (!key) return;
-
           const current = selected.get(key) ?? [];
           selected.set(key, [...current, input.value]);
         });
@@ -176,15 +232,10 @@ const {
 
         const matchingSlugs = Object.entries(productData)
           .filter(([, values]) =>
-            Array.from(selected.entries()).every(
-              ([key, selectedValues]) => {
-                const productValues = values[key] ?? [];
-
-                return selectedValues.some((value) =>
-                  productValues.includes(value)
-                );
-              }
-            )
+            Array.from(selected.entries()).every(([key, selectedValues]) => {
+              const productValues = values[key] ?? [];
+              return selectedValues.some((value) => productValues.includes(value));
+            })
           )
           .map(([slug]) => slug);
 
@@ -192,51 +243,35 @@ const {
           ? matchingSlugs
           : matchingSlugs.slice(0, initialLimit);
 
-        explorer
-          .querySelectorAll("[data-product-column]")
-          .forEach((element) => {
-            if (!(element instanceof HTMLElement)) return;
+        explorer.querySelectorAll("[data-product-column]").forEach((element) => {
+          if (!(element instanceof HTMLElement)) return;
+          const slug = element.dataset.productColumn;
+          element.hidden = !slug || !visibleSlugs.includes(slug);
+        });
 
-            const slug = element.dataset.productColumn;
-            element.hidden = !slug || !visibleSlugs.includes(slug);
-          });
-
-        explorer
-          .querySelectorAll("[data-mobile-product]")
-          .forEach((element) => {
-            if (!(element instanceof HTMLElement)) return;
-
-            const slug = element.dataset.mobileProduct;
-            element.hidden = !slug || !visibleSlugs.includes(slug);
-          });
+        explorer.querySelectorAll("[data-mobile-product]").forEach((element) => {
+          if (!(element instanceof HTMLElement)) return;
+          const slug = element.dataset.mobileProduct;
+          element.hidden = !slug || !visibleSlugs.includes(slug);
+        });
 
         const differencesOnly =
           differencesToggle instanceof HTMLInputElement &&
           differencesToggle.checked;
 
-        explorer
-          .querySelectorAll("[data-comparison-row]")
-          .forEach((row) => {
-            if (!(row instanceof HTMLElement)) return;
+        explorer.querySelectorAll("[data-comparison-row]").forEach((row) => {
+          if (!(row instanceof HTMLElement)) return;
+          row.hidden =
+            differencesOnly && row.dataset.hasDifferences !== "true";
+        });
 
-            row.hidden =
-              differencesOnly &&
-              row.dataset.hasDifferences !== "true";
-          });
+        explorer.querySelectorAll("[data-mobile-criterion]").forEach((criterion) => {
+          if (!(criterion instanceof HTMLElement)) return;
+          criterion.hidden =
+            differencesOnly && criterion.dataset.hasDifferences !== "true";
+        });
 
-        explorer
-          .querySelectorAll("[data-mobile-criterion]")
-          .forEach((criterion) => {
-            if (!(criterion instanceof HTMLElement)) return;
-
-            criterion.hidden =
-              differencesOnly &&
-              criterion.dataset.hasDifferences !== "true";
-          });
-
-        if (count) {
-          count.textContent = String(matchingSlugs.length);
-        }
+        if (count) count.textContent = String(matchingSlugs.length);
 
         if (emptyState instanceof HTMLElement) {
           emptyState.hidden = matchingSlugs.length !== 0;
@@ -248,10 +283,7 @@ const {
           showAllButton.textContent = showAll
             ? `Nur Top ${initialLimit} anzeigen`
             : `Alle ${matchingSlugs.length} Modelle anzeigen`;
-          showAllButton.setAttribute(
-            "aria-pressed",
-            String(showAll)
-          );
+          showAllButton.setAttribute("aria-pressed", String(showAll));
         }
       };
 
@@ -262,10 +294,7 @@ const {
         });
       });
 
-      differencesToggle?.addEventListener(
-        "change",
-        applyState
-      );
+      differencesToggle?.addEventListener("change", applyState);
 
       showAllButton?.addEventListener("click", () => {
         showAll = !showAll;
@@ -274,16 +303,35 @@ const {
 
       resetButton?.addEventListener("click", () => {
         inputs.forEach((input) => {
-          if (input instanceof HTMLInputElement) {
-            input.checked = false;
-          }
+          if (input instanceof HTMLInputElement) input.checked = false;
         });
+
+        if (differencesToggle instanceof HTMLInputElement) {
+          differencesToggle.checked = false;
+        }
 
         showAll = false;
         applyState();
       });
 
+      filterTrigger?.addEventListener("click", () => setDrawer(true));
+      filterClose?.addEventListener("click", () => setDrawer(false));
+      backdrop?.addEventListener("click", () => setDrawer(false));
+
+      viewTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          if (!(tab instanceof HTMLButtonElement)) return;
+          setView(tab.dataset.comparisonView ?? "table");
+        });
+      });
+
+      window.matchMedia("(max-width: 760px)").addEventListener("change", (event) => {
+        if (event.matches) setView("cards");
+        else setView("table");
+      });
+
       applyUrlFilters();
+      setView(window.matchMedia("(max-width: 760px)").matches ? "cards" : "table");
       applyState();
     });
 </script>

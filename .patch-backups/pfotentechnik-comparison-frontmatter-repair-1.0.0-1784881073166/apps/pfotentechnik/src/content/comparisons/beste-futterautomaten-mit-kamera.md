@@ -83,6 +83,7 @@ faq:
 - {question: "Ist eine Kamera für zwei Katzen ausreichend?", answer: "Nein, nicht bei getrennten Rationen."}
 tableTitle: "Direkter Vergleich"
 cardsTitle: "Produkte im Überblick"
+faq: []
 ---
 
 # Beste Futterautomaten mit Kamera
