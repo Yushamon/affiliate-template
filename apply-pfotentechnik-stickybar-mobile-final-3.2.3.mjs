@@ -1,47 +1,91 @@
----
-import type { ComparisonProduct } from "../../comparison/model";
-import { getPriceDisplay } from "../../comparison/price";
+#!/usr/bin/env node
+/**
+ * PfotenTechnik Sticky Bar Mobile Final 3.2.3
+ *
+ * Usage:
+ *   node apply-pfotentechnik-stickybar-mobile-final-3.2.3.mjs --check
+ *   node apply-pfotentechnik-stickybar-mobile-final-3.2.3.mjs
+ */
 
-type Props = {
-  product?: ComparisonProduct;
-};
+import fs from "node:fs";
+import path from "node:path";
 
-const { product } = Astro.props as Props;
-const price = product ? getPriceDisplay(product.price) : null;
----
+const VERSION = "3.2.3";
+const CHECK = process.argv.includes("--check");
+const TARGET =
+  "packages/affiliate-core/src/components/comparison/ComparisonStickyBar.astro";
 
-{product && (
-  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung">
-    <div>
-      <span>Top-Empfehlung</span>
-      <strong>{product.title}</strong>
-    </div>
+const MARKERS = [
+  [
+    "/* comparison-stickybar-theme-3.2.1 */",
+    "/* end comparison-stickybar-theme-3.2.1 */"
+  ],
+  [
+    "/* comparison-stickybar-layout-hotfix-3.2.2 */",
+    "/* end comparison-stickybar-layout-hotfix-3.2.2 */"
+  ],
+  [
+    "/* comparison-stickybar-mobile-final-3.2.3 */",
+    "/* end comparison-stickybar-mobile-final-3.2.3 */"
+  ]
+];
 
-    <div>
-      <a
-        href={product.href}
-        class="comparison-button comparison-button--secondary"
-      >
-        Test lesen
-      </a>
+function findRoot(start = process.cwd()) {
+  let current = path.resolve(start);
 
-      {price?.url && (
-        <a
-          href={price.url}
-          class="comparison-button"
-          rel={price.rel}
-          target={price.target}
-          data-affiliate-link
-        >
-          {price.label}
-        </a>
-      )}
-    </div>
-  </aside>
-)}
+  while (true) {
+    if (fs.existsSync(path.join(current, TARGET))) {
+      return current;
+    }
 
-<style is:global>
+    const parent = path.dirname(current);
+    if (parent === current) {
+      throw new Error("Repository-Wurzel nicht gefunden.");
+    }
 
+    current = parent;
+  }
+}
+
+function removeBlock(source, startMarker, endMarker) {
+  const start = source.indexOf(startMarker);
+  if (start === -1) return source;
+
+  const end = source.indexOf(endMarker, start);
+  if (end === -1) {
+    throw new Error(`Unvollständiger Patchblock: ${startMarker}`);
+  }
+
+  return (
+    source.slice(0, start).trimEnd() +
+    "\n" +
+    source.slice(end + endMarker.length).trimStart()
+  );
+}
+
+const root = findRoot();
+const file = path.join(root, TARGET);
+const original = fs.readFileSync(file, "utf8");
+
+for (const required of [
+  'class="comparison-sticky-bar"',
+  "Top-Empfehlung",
+  "product.title",
+  "price?.url",
+  "<style is:global>"
+]) {
+  if (!original.includes(required)) {
+    throw new Error(`Unbekannter Repository-Stand. Fehlend: ${required}`);
+  }
+}
+
+let next = original;
+
+for (const [start, end] of MARKERS) {
+  next = removeBlock(next, start, end);
+}
+
+const css = `
 /* comparison-stickybar-mobile-final-3.2.3 */
 .comparison-sticky-bar {
   position: fixed !important;
@@ -197,4 +241,49 @@ html[data-mode="dark"] .comparison-sticky-bar {
   box-shadow: 0 14px 38px rgba(0, 0, 0, .32) !important;
 }
 /* end comparison-stickybar-mobile-final-3.2.3 */
-</style>
+`;
+
+const styleClose = next.lastIndexOf("</style>");
+if (styleClose === -1) {
+  throw new Error("Abschließender Style-Block nicht gefunden.");
+}
+
+next =
+  next.slice(0, styleClose).trimEnd() +
+  "\n\n" +
+  css.trim() +
+  "\n" +
+  next.slice(styleClose);
+
+if (next === original) {
+  console.log(`[stickybar-mobile-final-${VERSION}] Bereits installiert.`);
+  process.exit(0);
+}
+
+console.log(`[stickybar-mobile-final-${VERSION}] Ziel: ${TARGET}`);
+console.log(
+  `[stickybar-mobile-final-${VERSION}] Modus: ${
+    CHECK ? "--check" : "installieren"
+  }`
+);
+
+if (CHECK) {
+  console.log("Check erfolgreich. Eine Datei würde geändert.");
+  process.exit(0);
+}
+
+const backup = path.join(
+  root,
+  ".patch-backups",
+  `stickybar-mobile-final-${VERSION}-${Date.now()}`,
+  TARGET
+);
+
+fs.mkdirSync(path.dirname(backup), { recursive: true });
+fs.copyFileSync(file, backup);
+fs.writeFileSync(file, next, "utf8");
+
+console.log("Patch erfolgreich installiert.");
+console.log(`Backup: ${backup}`);
+console.log("Jetzt ausführen:");
+console.log("  npm run build:pfotentechnik");
