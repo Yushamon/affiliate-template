@@ -36,57 +36,35 @@ icon: "🐕"
 items:
   - slug: "oneisall-3-5l-cordless-fountain"
     overrides:
-      kapazitaet: "Nicht dokumentiert"
-      material: "Nicht dokumentiert"
-      lautstaerke: "Nicht dokumentiert"
       filter: "Nicht dokumentiert"
       reinigung: "Nicht dokumentiert"
-      stromversorgung: "Nicht dokumentiert"
     label: "oneisall 3,5L Cordless Fountain"
     type: "product"
     recommendation: "Preis-Leistungs-Tipp für Katzenhalter, die einen großen kabellosen Tank ohne App-Zwang suchen."
     values: { kapazitaet: "3,5 Liter", material: "Edelstahl", lautstaerke: "Herstellerangabe unter 30 dB", filter: "fünfstufig", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "5000 mAh; Herstellerangabe bis zu 60 Tage", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petkit-eversweet-solo-2-fountain"
-    overrides:
-      kapazitaet: "Nicht dokumentiert"
-      material: "Nicht dokumentiert"
-      lautstaerke: "Nicht dokumentiert"
-      filter: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
-      stromversorgung: "Nicht dokumentiert"
     label: "PETKIT Eversweet Solo 2"
     type: "product"
     recommendation: "Ausgewogene Mittelklasse für Katzenhalter, die eine leise Pumpe und einfache Statushinweise suchen."
     values: { kapazitaet: "2 Liter", material: "BPA-freies ABS und Silikon", lautstaerke: "Herstellerangabe bis 25 dB", filter: "mehrstufig mit Aktivkohle und Ionenaustauscher", reinigung: "vollständig zerlegbar; nicht spülmaschinengeeignet", stromversorgung: "Nein; dauerhafter Netzbetrieb erforderlich", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petkit-eversweet-3-pro-uvc"
-    overrides:
-      material: "Nicht dokumentiert"
-      filter: "Nicht dokumentiert"
     label: "PETKIT Eversweet 3 Pro UVC"
     type: "product"
     recommendation: "Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung."
     values: { kapazitaet: "1,6 Liter beziehungsweise 54 fl. oz.", material: "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304", lautstaerke: "Herstellerangabe unter beziehungsweise höchstens 25 dB", filter: "PETKIT Filter Unit 3.0, Modell P4161", reinigung: "vollständig zerlegbar; alle Komponenten von Hand reinigen", stromversorgung: "USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "oneisall-3-2l-cordless-fountain"
-    overrides:
-      filter: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
     label: "oneisall 3,2L Cordless Cat Fountain"
     type: "product"
     recommendation: "Ausgewogene kabellose Lösung für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank."
     values: { kapazitaet: "3,2 Liter beziehungsweise 108 fl. oz.", material: "ABS-Tank mit Trinkfläche aus Edelstahl 304", lautstaerke: "Herstellerangabe ungefähr 20 dB", filter: "fünfstufig", stromversorgung: "integrierter Lithium-Ionen-Akku mit 4.000 mAh", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "oneisall-7l-dog-water-fountain"
-    overrides:
-      filter: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
     label: "oneisall 7L Dog Water Fountain"
     type: "product"
     recommendation: "Sinnvolle Großtank-Lösung für mittelgroße und große Hunde oder Mehrtierhaushalte, wenn breite Trinkfläche, hohe Reserve und verfügbare Ersatzteile wichtiger sind als Akku, App oder besonders kompakte Abmessungen."
     values: { kapazitaet: "7 Liter beziehungsweise rund 230 fl. oz.", material: "Trinkschale aus SUS/304-Edelstahl; Tank und weitere Bauteile aus Kunststoff beziehungsweise PC", lautstaerke: "Herstellerangabe unter beziehungsweise ungefähr 35 dB", filter: "mehrstufig mit Filterpatrone und Pumpenschwamm", reinigung: "mindestens wöchentlich laut zugänglicher Anleitung; allgemeiner Support nennt 1 bis 2 Wochen", stromversorgung: "DC 5 V/1 A", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petkit-eversweet-ultra"
     overrides:
-      material: "Nicht dokumentiert"
       filter: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
     label: "PETKIT Eversweet Ultra"
     type: "product"
     recommendation: "Spezialisierte Premiumlösung für Mehrkatzenhaushalte, die Frisch- und gebrauchtes Wasser physisch trennen und Trinkereignisse einzelnen Tieren zuordnen möchten. Für einen einzelnen Haushalt ohne Kamera-Tracking ist das System meist zu groß und komplex."
@@ -114,8 +92,6 @@ items:
     recommendation: "Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden."
     values: { kapazitaet: "2,5 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "5000-mAh-Akku", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petlibro-dockstream-rfid-smart"
-    overrides:
-      reinigung: "Nicht dokumentiert"
     label: "PETLIBRO Dockstream RFID Smart"
     type: "product"
     recommendation: "Spezialisierte Wahl für Mehrkatzenhaushalte, wenn Trinkmenge, Häufigkeit und Dauer pro Tier getrennt protokolliert werden sollen."
@@ -130,14 +106,12 @@ items:
   - slug: "cat-mate-335-pet-fountain"
     overrides:
       lautstaerke: "Nicht dokumentiert"
-      filter: "Nicht dokumentiert"
     label: "Cat Mate Pet Fountain 335"
     type: "product"
     recommendation: "Solide Wahl für Katzen und kleine Hunde, wenn drei Trinkhöhen, einfache Technik und gute Ersatzteilversorgung wichtiger sind als Edelstahl, große Wasserreserve oder smarte Funktionen."
     values: { kapazitaet: "70 fl. oz., rund 2 Liter", material: "BPA- und BHT-freier Kunststoff; Schale und Basis aus Polypropylen", filter: "Polymer-Aktivkohlefilter", reinigung: "monatlich, bei hartem Wasser häufiger", stromversorgung: "Netzbetrieb mit Niedervolt-Netzteil und 3 m Kabel", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petlibro-capsule-dog-fountain"
     overrides:
-      material: "Nicht dokumentiert"
       reinigung: "Nicht dokumentiert"
     label: "PETLIBRO Capsule Dog Fountain"
     type: "product"
@@ -153,14 +127,11 @@ items:
   - slug: "cat-mate-shell-fountain"
     overrides:
       lautstaerke: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
     label: "Cat Mate Shell Pet Fountain"
     type: "product"
     recommendation: "Einfache Offline-Option für Katzen und kleine Hunde, wenn mehrere Trinkhöhen, drei Liter Reserve und gut verfügbare Ersatzteile wichtiger sind als App oder Akku."
     values: { kapazitaet: "3 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "oneisall-2-2l-cordless-fountain"
-    overrides:
-      reinigung: "Nicht dokumentiert"
     label: "oneisall 2,2L Cordless Cat Fountain"
     type: "product"
     recommendation: "Günstige kabellose Option für Katzen und kleine Hunde, wenn kompakte Abmessungen und sehr leiser Betrieb wichtiger sind als Edelstahl oder App-Funktionen."

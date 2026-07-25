@@ -228,6 +228,9 @@ comparisonData:
     score: 81
     priceCategory: "midrange"
     productStatus: "active"
+  custom:
+    filter: "Ionenaustauschfilter, Mehrstufiges Filtersystem"
+    reinigung: "Entnehmbare beziehungsweise zerlegbare Komponenten"
 ---
 
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.

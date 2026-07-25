@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-07-25T17:40:32.405Z",
+  "mode": "high-and-medium",
+  "summary": {
+    "products": 65,
+    "comparisons": 13,
+    "unresolvedBefore": 34,
+    "acceptedFields": 7,
+    "changedProducts": 5,
+    "changedComparisons": 2,
+    "uncertainSuggestions": 0
+  },
+  "accepted": [
+    {
+      "product": "oneisall-3-5l-cordless-fountain",
+      "criterion": "kapazitaet",
+      "value": "3,5L",
+      "confidence": "medium",
+      "source": "text:\\b(\\d+(?:[.,]\\d+)?\\s*(?:l|liter|ml|fl\\.?\\s*oz\\.?))\\b",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "oneisall-3-5l-cordless-fountain",
+      "criterion": "material",
+      "value": "Edelstahl",
+      "confidence": "medium",
+      "source": "text:material",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "petkit-eversweet-solo-2-fountain",
+      "criterion": "kapazitaet",
+      "value": "2 Liter",
+      "confidence": "medium",
+      "source": "text:\\b(\\d+(?:[.,]\\d+)?\\s*(?:l|liter|ml|fl\\.?\\s*oz\\.?))\\b",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "petkit-eversweet-solo-2-fountain",
+      "criterion": "material",
+      "value": "ABS-Kunststoff",
+      "confidence": "medium",
+      "source": "text:material",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "oneisall-3-2l-cordless-fountain",
+      "criterion": "reinigung",
+      "value": "Entnehmbare beziehungsweise zerlegbare Komponenten",
+      "confidence": "medium",
+      "source": "text:abnehmbar",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "petlibro-dockstream-rfid-smart",
+      "criterion": "reinigung",
+      "value": "Entnehmbare beziehungsweise zerlegbare Komponenten",
+      "confidence": "medium",
+      "source": "text:abnehmbar",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "product": "oneisall-2-2l-cordless-fountain",
+      "criterion": "reinigung",
+      "value": "Entnehmbare beziehungsweise zerlegbare Komponenten",
+      "confidence": "medium",
+      "source": "text:abnehmbar",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde",
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    }
+  ],
+  "uncertain": []
+}

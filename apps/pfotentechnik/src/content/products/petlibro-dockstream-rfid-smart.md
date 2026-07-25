@@ -169,6 +169,8 @@ comparisonData:
     rating: 4
     score: 80
     productStatus: "unknown"
+  custom:
+    reinigung: "Entnehmbare beziehungsweise zerlegbare Komponenten"
 ---
 
 Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.

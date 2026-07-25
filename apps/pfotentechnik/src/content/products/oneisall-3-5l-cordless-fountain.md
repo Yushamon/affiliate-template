@@ -71,6 +71,11 @@ comparisonData:
     rating: 4.5
     score: 89
     productStatus: "unknown"
+  custom:
+    lautstaerke: "30 dB"
+    stromversorgung: "akku, Netzbetrieb"
+    kapazitaet: "3,5L"
+    material: "Edelstahl"
 ---
 
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.

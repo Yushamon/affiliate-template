@@ -70,6 +70,13 @@ comparisonData:
     rating: 4.4
     score: 87
     productStatus: "unknown"
+  custom:
+    lautstaerke: "25 dB"
+    filter: "Ionenaustauschfilter"
+    reinigung: "Entnehmbare Teile spülmaschinengeeignet"
+    stromversorgung: "Akku, Netzbetrieb"
+    kapazitaet: "2 Liter"
+    material: "ABS-Kunststoff"
 ---
 
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.

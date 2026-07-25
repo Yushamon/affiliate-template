@@ -156,6 +156,8 @@ comparisonData:
     rating: 3.8
     score: 76
     productStatus: "unknown"
+  custom:
+    reinigung: "Entnehmbare beziehungsweise zerlegbare Komponenten"
 ---
 
 Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.
