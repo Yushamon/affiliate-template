@@ -69,8 +69,7 @@
     "comparison:data:migrate:check": "node scripts/comparison-platform/migrate-data.mjs",
     "comparison:data:test": "node --test test/comparison-data-platform.test.mjs",
     "audit:technical-seo": "node scripts/seo/audit-week4-technical-seo.mjs",
-    "audit:technical-seo:source": "node scripts/seo/audit-week4-technical-seo.mjs --source-only",
-    "audit:cat-fountain-serp": "node scripts/seo/audit-week5-katzenbrunnen-serp.mjs"
+    "audit:technical-seo:source": "node scripts/seo/audit-week4-technical-seo.mjs --source-only"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

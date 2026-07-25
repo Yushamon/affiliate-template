@@ -1,5 +1,5 @@
 ---
-title: "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?"
+title: "Edelstahl, Keramik oder Kunststoff: Welches Material beim Katzenbrunnen?"
 slug: "katzentrinkbrunnen-material-edelstahl-keramik-kunststoff"
 type: knowledge
 layout: knowledge
@@ -8,21 +8,14 @@ category: "trinkbrunnen"
 linking:
   keywords: ["Edelstahl, Keramik oder Kunststoff", "Material des Trinkbrunnens", "Edelstahlbrunnen", "Keramikbrunnen"]
   contexts: ["trinkbrunnen"]
-  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, edelstahl, keramik, kunststoff]
 hub: { sections: [wissen], title: "Welches Material beim Katzenbrunnen?", description: "Edelstahl, Keramik und Kunststoff fair vergleichen.", order: 50 }
-seo:
-  title: "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?"
-  description: "Edelstahl, Keramik und Kunststoff bei Katzenbrunnen vergleichen: Hygiene, Kratzer, Gewicht, Bruchrisiko, Geräusch und Reinigung."
-  canonical: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/"
-  sitemap: true
-  priority: 0.8
-  changefreq: "yearly"
+seo: { title: "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?", description: "Materialvergleich für Katzentrinkbrunnen mit Hygiene, Reinigung, Gewicht und Haltbarkeit.", canonical: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/", sitemap: true, priority: 0.75, changefreq: yearly }
 related: { tags: [trinkbrunnen, hygiene, kaufberatung], limit: 4 }
 premiumBlocks:
   - { type: products, eyebrow: "Material und Reinigung", title: "Aktuelle Trinkbrunnen vergleichen", text: "Die Produktdaten werden automatisch aus der Trinkbrunnen-Collection geladen.", productFilter: trinkbrunnen, productLimit: 3 }
@@ -66,9 +59,5 @@ Prüfe, welche Flächen tatsächlich das Wasser berühren, ob Pumpe und Leitunge
 ## Was Katzen bevorzugen
 
 International Cat Care nennt breite, flache Gefäße aus Glas oder Keramik als häufig gut akzeptiert, weist aber auf individuelle Vorlieben hin. Metall kann kalt, spiegelnd oder geräuschvoll wirken. Biete bei Unsicherheit parallel einen anderen Napf an und beobachte die tatsächliche Nutzung.
-
-## Material im konkreten Modell prüfen
-
-Die Produktbezeichnung sagt nicht immer, welche Flächen tatsächlich aus Edelstahl bestehen. Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) nennt deshalb Tank und Trinkfläche getrennt. Unabhängig vom Material bleiben [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) und zugängliche Pumpenteile entscheidend.
 
 **Quellen:** [International Cat Care – Encouraging your cat to drink](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [Cats Protection – Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [VCA – Wasseraufnahme fördern](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water).

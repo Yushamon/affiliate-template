@@ -17,11 +17,10 @@ linking:
     - "katzenhaltung"
     - "katzengesundheit"
     - "mehrkatzenhaushalt"
-  priority: "high"
 categoryLabel: "Wasser & Verhalten"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-24"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -40,12 +39,12 @@ hub:
   description: "Anzahl und Verteilung so planen, dass jede Katze ungestört trinken kann."
   order: 64
 seo:
-  title: "Wie viele Wassernäpfe braucht eine Katze? Klare Regel"
-  description: "Eine Katze: zwei Wasserstellen. Zwei Katzen: drei. So verteilst du Wassernäpfe und Katzenbrunnen sinnvoll über Räume und Etagen."
+  title: "Wie viele Wassernäpfe braucht eine Katze?"
+  description: "Wasserstellen für Katzen richtig planen: konkrete Anzahl, sinnvolle Verteilung, Mehrkatzenhaushalt, Etagen und Trinkbrunnen als Ergänzung."
   canonical: "/wie-viele-wasserstellen-katze/"
   sitemap: true
-  priority: 0.85
-  changefreq: "yearly"
+  priority: 0.8
+  changefreq: yearly
 heroImage:
   src: "../../assets/images/editorial/wie-viele-wasserstellen-katze.webp"
   alt: "Zwei Katzen mit räumlich getrennten Wasserstellen in einer Wohnung"
@@ -279,10 +278,6 @@ Lass deine Katze tierärztlich untersuchen, wenn sie plötzlich erheblich mehr o
 Für eine Katze sind **zwei getrennte Wasserstellen** meist ein guter Start. Im Mehrkatzenhaushalt bietet **eine Quelle pro Katze plus eine zusätzliche** eine belastbare Planungsregel. Wirklich entscheidend bleibt jedoch die Verteilung: Jede Katze sollte Wasser erreichen können, ohne eine Engstelle zu passieren oder von einem anderen Tier beobachtet und blockiert zu werden.
 
 Ein Mix aus breitem Napf und optionalem Trinkbrunnen schafft Auswahl und Ausfallsicherheit. Prüfe danach das Verhalten der Katzen. Die beste Zahl ist nicht die größte, sondern diejenige, bei der alle Tiere jederzeit ruhig und ohne Konkurrenz trinken können.
-
-## Trinkbrunnen als eine von mehreren Wasserstellen
-
-Ein Brunnen zählt als **eine** Wasserstelle, selbst wenn er mehrere Auslässe besitzt. Für zwei Katzen bleibt deshalb die Ausgangsregel drei räumlich getrennte Orte. Der Ratgeber [Trinkbrunnen für mehrere Katzen](/trinkbrunnen-fuer-mehrere-katzen/) erklärt soziale Zugänge; der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) hilft bei der Auswahl eines ergänzenden Geräts.
 
 ## Quellen und fachliche Grundlage
 

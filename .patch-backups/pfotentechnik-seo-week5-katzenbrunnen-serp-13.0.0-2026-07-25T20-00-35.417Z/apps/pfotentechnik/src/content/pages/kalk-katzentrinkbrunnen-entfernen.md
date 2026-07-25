@@ -1,5 +1,5 @@
 ---
-title: "Katzenbrunnen entkalken: Kalk sicher entfernen"
+title: "Kalk im Katzentrinkbrunnen entfernen"
 slug: "kalk-katzentrinkbrunnen-entfernen"
 type: knowledge
 layout: knowledge
@@ -8,21 +8,14 @@ category: "trinkbrunnen"
 linking:
   keywords: ["Kalk entfernen", "Kalkablagerungen", "verkalkt", "Entkalken"]
   contexts: ["trinkbrunnen"]
-  priority: "high"
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, kalk, pumpe, reinigung, hygiene]
 hub: { sections: [wissen], title: "Kalk im Katzentrinkbrunnen entfernen", description: "Materialschonend entkalken, spülen und die Pumpe schützen.", order: 58 }
-seo:
-  title: "Katzenbrunnen entkalken: Kalk sicher entfernen"
-  description: "Kalk im Katzenbrunnen materialschonend entfernen: Pumpe, Rotor, Tank und Edelstahl reinigen, gründlich spülen und Schäden vermeiden."
-  canonical: "/kalk-katzentrinkbrunnen-entfernen/"
-  sitemap: true
-  priority: 0.8
-  changefreq: "yearly"
+seo: { title: "Katzentrinkbrunnen entkalken: sicher reinigen", description: "Kalk im Katzenbrunnen entfernen: geeignete Schritte für Tank, Edelstahlfläche und Pumpe sowie wichtige Materialgrenzen.", canonical: "/kalk-katzentrinkbrunnen-entfernen/", sitemap: true, priority: 0.75, changefreq: yearly }
 heroImage:
   src: "../../assets/images/editorial/kalk-katzentrinkbrunnen-entfernen.webp"
   alt: "Zerlegter Katzenbrunnen bei einer materialschonenden Reinigung"
@@ -59,9 +52,5 @@ Ein schwacher Wasserlauf trotz sauberem Filter spricht für eine kontrollbedürf
 ## Wann ein neuer Brunnen sinnvoller ist
 
 Tiefe Kratzer, spröde Dichtungen, Korrosion, nicht erreichbare Kanäle oder eine dauerhaft verschmutzte Pumpe sprechen gegen weitere Nutzung. Ein leicht vollständig zerlegbares Modell ist langfristig oft wichtiger als zusätzliche App-Funktionen.
-
-## Wenn Kalk weitere Probleme verursacht
-
-Kalk am Rotor kann Durchfluss und Geräusch verändern. Prüfe deshalb zusätzlich die Anleitung [Katzenbrunnen laut: Pumpe kontrollieren](/katzentrinkbrunnen-laut-pumpe/). Glitschige Schichten werden separat als [Biofilm](/biofilm-im-katzentrinkbrunnen/) behandelt. Der vollständige Pflegeablauf steht unter [Katzentrinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/); gut zerlegbare Modelle zeigt der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/).
 
 **Quellen:** [PETLIBRO – schwacher Durchfluss und hartes Wasser](https://petlibro.com/pages/what-can-i-do-if-my-water-fountain-is-not-flowing-as-much-as-it-used-to-wf002-wf003-wf006-wf008-wf005-wf115-wf105), [International Cat Care – Trinkbrunnen regelmäßig zerlegen und reinigen](https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf).

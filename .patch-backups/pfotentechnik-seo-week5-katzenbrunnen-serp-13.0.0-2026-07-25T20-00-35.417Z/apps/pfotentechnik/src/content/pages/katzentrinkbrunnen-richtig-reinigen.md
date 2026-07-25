@@ -1,5 +1,5 @@
 ---
-title: "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter"
+title: "Katzentrinkbrunnen richtig reinigen: Schritt für Schritt"
 slug: "katzentrinkbrunnen-richtig-reinigen"
 type: knowledge
 layout: knowledge
@@ -12,17 +12,11 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-24"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, reinigung, hygiene, biofilm]
 hub: { sections: [wissen], title: "Katzentrinkbrunnen richtig reinigen", description: "Pumpe, Tank und Auslauf ohne blinde Stellen säubern.", order: 48 }
-seo:
-  title: "Katzentrinkbrunnen reinigen: 7 Schritte für Pumpe & Tank"
-  description: "Katzenbrunnen richtig reinigen: Wasser wechseln, Filter entnehmen, Tank, Dichtungen, Auslauf, Pumpe und Rotorraum gründlich säubern."
-  canonical: "/katzentrinkbrunnen-richtig-reinigen/"
-  sitemap: true
-  priority: 0.85
-  changefreq: "yearly"
+seo: { title: "Katzentrinkbrunnen reinigen: Pumpe, Filter & Tank", description: "Katzentrinkbrunnen gründlich reinigen: Anleitung für Tank, Pumpe, Filter, Dichtungen und schwer erreichbare Stellen.", canonical: "/katzentrinkbrunnen-richtig-reinigen/", sitemap: true, priority: 0.8, changefreq: yearly }
 related: { tags: [trinkbrunnen, hygiene, biofilm], limit: 4 }
 faq:
   - { question: "Wie oft sollte ein Katzenbrunnen gereinigt werden?", answer: "Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten, starkem Haar- oder Staubeintrag und sichtbarem Belag ist sie häufiger nötig." }
@@ -231,14 +225,6 @@ Vor dem erneuten Befüllen sollten diese Punkte erfüllt sein:
 - Der Filter ist korrekt vorbereitet und eingesetzt.
 - Der Wasserstand liegt über der Mindestmarkierung.
 - Pumpe, Durchfluss und Dichtigkeit wurden kurz geprüft.
-
-## Probleme gezielt vertiefen
-
-- Glitschiger Belag: [Biofilm im Katzenbrunnen entfernen](/biofilm-im-katzentrinkbrunnen/)
-- Weiße Ablagerungen: [Katzenbrunnen sicher entkalken](/kalk-katzentrinkbrunnen-entfernen/)
-- Schwacher Durchfluss: [Filterintervall und Warnzeichen](/filter-im-katzentrinkbrunnen-wechseln/)
-- Brummen oder Rattern: [Laute Pumpe systematisch prüfen](/katzentrinkbrunnen-laut-pumpe/)
-- Neuanschaffung: [Sechs Katzenbrunnen vergleichen](/vergleiche/beste-trinkbrunnen-fuer-katzen/)
 
 ## Quellen und fachliche Grundlage
 

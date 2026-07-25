@@ -1,5 +1,5 @@
 ---
-title: "Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen"
+title: "Wie oft den Filter im Katzentrinkbrunnen wechseln?"
 slug: "filter-im-katzentrinkbrunnen-wechseln"
 type: knowledge
 layout: knowledge
@@ -8,21 +8,14 @@ category: "trinkbrunnen"
 linking:
   keywords: ["Filter wechseln", "Filterwechsel", "Brunnenfilter", "Filter im Trinkbrunnen"]
   contexts: ["trinkbrunnen"]
-  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, filter, hygiene, folgekosten]
 hub: { sections: [wissen], title: "Filter im Katzenbrunnen wechseln", description: "Intervalle, Filterarten und Folgekosten richtig einordnen.", order: 51 }
-seo:
-  title: "Katzenbrunnen-Filter wechseln: alle 2–4 Wochen?"
-  description: "Katzenbrunnen-Filter meist alle zwei bis vier Wochen wechseln. Tierzahl, Haare, Geruch, Wasserhärte und Durchfluss können das Intervall verkürzen."
-  canonical: "/filter-im-katzentrinkbrunnen-wechseln/"
-  sitemap: true
-  priority: 0.8
-  changefreq: "yearly"
+seo: { title: "Katzenbrunnen-Filter wechseln: Wie oft?", description: "Filterintervalle bei Katzentrinkbrunnen und Warnzeichen für einen vorzeitigen Wechsel.", canonical: "/filter-im-katzentrinkbrunnen-wechseln/", sitemap: true, priority: 0.75, changefreq: yearly }
 related: { tags: [trinkbrunnen, filter, hygiene], limit: 4 }
 faq:
   - { question: "Reicht ein Filter vier Wochen?", answer: "Vier Wochen sind bei manchen Herstellern ein Richtwert. Mehrere Tiere, hartes Wasser, viele Haare oder sichtbare Verschmutzung können einen früheren Wechsel erfordern." }
@@ -50,9 +43,5 @@ Berechne nicht nur den Gerätepreis. Prüfe Preis, Lieferbarkeit und Verpackungs
 ## Eine praktikable Routine
 
 Kontrolliere Wasser und Vorfilter täglich, reinige den Brunnen wöchentlich und notiere den Filterwechsel. Spüle neue Filter nach Anleitung, damit lose Kohlepartikel nicht ins Wasser gelangen. Ein App-Hinweis ist eine Erinnerung, keine Messung des tatsächlichen Filterzustands.
-
-## Filterkosten vor dem Modellvergleich prüfen
-
-Im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) werden Filter und Folgekosten als eigenes Kriterium geführt. Ein neuer Filter ersetzt weder die [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) noch das mechanische Entfernen von [Biofilm](/biofilm-im-katzentrinkbrunnen/).
 
 **Quellen:** [VCA – Water fountain and filter care](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water), [PETKIT Solo 2 – Herstellerintervall](https://www.petkit.com/products/eversweet-solo-2), jeweilige Bedienungsanleitung des konkreten Modells.

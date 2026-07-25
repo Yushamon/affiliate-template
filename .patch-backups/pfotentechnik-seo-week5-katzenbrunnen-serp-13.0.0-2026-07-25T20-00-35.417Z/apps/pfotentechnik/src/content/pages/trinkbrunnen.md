@@ -1,11 +1,11 @@
 ---
 title: "Trinkbrunnen für Katzen und Hunde"
-seoTitle: "Trinkbrunnen für Katzen & Hunde: Auswahl und Vergleich"
+seoTitle: "Trinkbrunnen für Katzen & Hunde: Vergleich und Kaufberatung"
 slug: "trinkbrunnen"
 type: "page"
 layout: "page"
 description: "Trinkbrunnen für Katzen und Hunde nach Reinigung, Material, Lautstärke, Kapazität, Filter und Betriebsart vergleichen."
-seoDescription: "Trinkbrunnen auswählen und vergleichen: Katzenbrunnen, Hundebrunnen, Reinigung, Filter, Material, Lautstärke, Akku und Mehrtierhaushalt."
+seoDescription: "Trinkbrunnen für Katzen und Hunde vergleichen: Reinigung, Material, Lautstärke, Filter, Akku, Kapazität und passende Modelle verständlich erklärt."
 category: "trinkbrunnen"
 linking:
   keywords:
@@ -40,7 +40,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-17"
 navigation:
   show: true
   label: "Trinkbrunnen"
@@ -82,8 +82,6 @@ premiumBlocks:
       - label: "Hygiene"
         title: "Der gesamte Wasserweg zählt"
         text: "Behälter, Trinkfläche, Pumpe, Rotorraum, Auslauf, Schläuche und Dichtungen müssen erreichbar und reinigbar sein."
-        href: "/katzentrinkbrunnen-richtig-reinigen/"
-        cta: "Reinigung im Detail"
         href: "#reinigung"
         cta: "Reinigung prüfen"
       - label: "Betriebsart"
@@ -99,16 +97,12 @@ premiumBlocks:
       - label: "Geräuschempfindliches Tier"
         title: "Pumpe, Wasserstand und Untergrund prüfen"
         text: "Die wahrgenommene Lautstärke hängt nicht nur von der Pumpe ab. Auch Resonanz, Verschmutzung und ein zu niedriger Wasserstand spielen eine Rolle."
-        href: "/katzentrinkbrunnen-laut-pumpe/"
-        cta: "Geräusche beheben"
       - label: "Standort ohne Steckdose"
         title: "Akku mit realistischem Betriebsmodus"
         text: "Prüfe Laufzeit, Ladezeit, Warnmeldungen und ob der Brunnen im Sensor- oder Intervallbetrieb arbeitet."
       - label: "Mehrere Tiere"
         title: "Mehrere Wasserstellen beibehalten"
         text: "Ein großer Brunnen ersetzt nicht automatisch räumlich getrennte Wasserstellen. Technik darf nicht die einzige Trinkmöglichkeit sein."
-        href: "/trinkbrunnen-fuer-mehrere-katzen/"
-        cta: "Mehrkatzen-Haushalt planen"
       - label: "Wenig Zeit für Pflege"
         title: "Einfach zerlegbar statt funktionsreich"
         text: "Wenige gut erreichbare Bauteile sind im Alltag wertvoller als UVC, App oder Beleuchtung bei komplizierter Reinigung."
@@ -198,19 +192,6 @@ contentPlatform:
   intent: buying-guide
   cluster: trinkbrunnen
 ---
-
-## Katzenbrunnen gezielt auswählen und pflegen
-
-| Frage | Passender Einstieg |
-|---|---|
-| Welche Modelle passen zu Katzen? | [Sechs Katzenbrunnen im Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) |
-| Wie viele Trinkorte sind nötig? | [Wasserstellen für Katzen planen](/wie-viele-wasserstellen-katze/) |
-| Was gilt bei zwei oder mehr Katzen? | [Trinkbrunnen im Mehrkatzenhaushalt](/trinkbrunnen-fuer-mehrere-katzen/) |
-| Wie wird der Brunnen hygienisch sauber? | [Katzenbrunnen vollständig reinigen](/katzentrinkbrunnen-richtig-reinigen/) |
-| Was ist der glitschige Belag? | [Biofilm erkennen und entfernen](/biofilm-im-katzentrinkbrunnen/) |
-| Warum ist die Pumpe plötzlich laut? | [Geräuschursachen systematisch prüfen](/katzentrinkbrunnen-laut-pumpe/) |
-| Wie oft muss der Filter neu? | [Filterintervalle und Warnzeichen](/filter-im-katzentrinkbrunnen-wechseln/) |
-| Welches Material ist sinnvoll? | [Edelstahl, Keramik und Kunststoff](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/) |
 
 ## Auswahlhilfe: Tier, Reinigung und Standort zuerst
 

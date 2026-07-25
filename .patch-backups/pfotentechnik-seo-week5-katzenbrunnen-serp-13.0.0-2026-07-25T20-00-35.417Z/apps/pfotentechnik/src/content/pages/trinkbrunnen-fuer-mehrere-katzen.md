@@ -1,5 +1,5 @@
 ---
-title: "Trinkbrunnen für zwei oder mehr Katzen"
+title: "Trinkbrunnen für mehrere Katzen: Größe, Zugang und RFID"
 slug: "trinkbrunnen-fuer-mehrere-katzen"
 type: knowledge
 layout: knowledge
@@ -8,21 +8,14 @@ category: "trinkbrunnen"
 linking:
   keywords: ["Trinkbrunnen für mehrere Katzen", "mehrere Katzen", "Mehrkatzenhaushalt", "Brunnengröße"]
   contexts: ["trinkbrunnen"]
-  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, mehrkatzen, rfid, wasser]
 hub: { sections: [wissen], title: "Trinkbrunnen für mehrere Katzen", description: "Tankgröße, Ausweichstellen und RFID sinnvoll planen.", order: 54 }
-seo:
-  title: "Trinkbrunnen für 2 Katzen: Größe, Anzahl & RFID"
-  description: "Für zwei Katzen reichen nicht nur ein großer Tank: drei getrennte Wasserstellen, Hygiene, RFID-Grenzen und passende Katzenbrunnen."
-  canonical: "/trinkbrunnen-fuer-mehrere-katzen/"
-  sitemap: true
-  priority: 0.85
-  changefreq: "yearly"
+seo: { title: "Trinkbrunnen für mehrere Katzen auswählen", description: "Mehrkatzen-Trinkbrunnen nach Kapazität, Zugang, Hygiene, App und RFID auswählen.", canonical: "/trinkbrunnen-fuer-mehrere-katzen/", sitemap: true, priority: 0.8, changefreq: yearly }
 related: { tags: [trinkbrunnen, mehrkatzen, rfid], limit: 4 }
 premiumBlocks:
   - { type: products, eyebrow: "Passende Auswahl", title: "Trinkbrunnen für unterschiedliche Haushalte", text: "Die Karten werden automatisch aus der Produkt-Collection geladen.", productFilter: trinkbrunnen, productLimit: 3 }
@@ -66,9 +59,5 @@ Wähle einen Brunnen mit abnehmbarer Trinkfläche, zugänglichem Rotor und verf�
 ## Wann tierärztlicher Rat nötig ist
 
 Ein Smart-Brunnen kann Veränderungen sichtbar machen. Deutlich mehr Durst, häufiger Urinabsatz, Gewichtsverlust oder Schwäche müssen dennoch tierärztlich untersucht werden. Daten helfen beim Beschreiben des Verlaufs, stellen aber keine Diagnose.
-
-## Modelle nach Mehrkatzen-Szenario
-
-Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) trennt einfache Netzmodelle, Akku-Brunnen, Edelstahl und Mehrkatzen-Tracking. Ein Tracking-System kann Ereignisse zuordnen, ersetzt aber keine räumlich getrennten Trinkorte. Die konkrete Anzahl erklärt [Wie viele Wasserstellen braucht eine Katze?](/wie-viele-wasserstellen-katze/).
 
 **Quellen:** [Cornell – Zugang und Konflikte an Wasserstellen](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration), [International Cat Care – mehrere geeignete Trinkplätze](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [PETLIBRO RFID-Spezifikation](https://petlibro.com/products/dockstream-rfid-smart-fountain).

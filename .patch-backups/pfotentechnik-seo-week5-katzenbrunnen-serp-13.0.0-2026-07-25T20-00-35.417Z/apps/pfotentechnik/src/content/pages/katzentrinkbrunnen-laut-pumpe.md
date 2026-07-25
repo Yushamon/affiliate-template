@@ -1,5 +1,5 @@
 ---
-title: "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen"
+title: "Katzentrinkbrunnen ist laut: Ursachen und Lösungen"
 slug: "katzentrinkbrunnen-laut-pumpe"
 type: knowledge
 layout: knowledge
@@ -8,21 +8,14 @@ category: "trinkbrunnen"
 linking:
   keywords: ["Trinkbrunnen ist laut", "laute Pumpe", "Pumpengeräusch", "Brummgeräusch"]
   contexts: ["trinkbrunnen"]
-  priority: "high"
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, pumpe, lautstaerke, wartung]
 hub: { sections: [wissen], title: "Wenn der Katzenbrunnen laut wird", description: "Brummen, Rattern und Plätschern systematisch beheben.", order: 55 }
-seo:
-  title: "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen"
-  description: "Katzenbrunnen brummt oder rattert? Wasserstand, Luft, Filter, Haare, Kalk, Rotor und Untergrund in der richtigen Reihenfolge prüfen."
-  canonical: "/katzentrinkbrunnen-laut-pumpe/"
-  sitemap: true
-  priority: 0.8
-  changefreq: "yearly"
+seo: { title: "Katzentrinkbrunnen laut: Pumpe prüfen", description: "Ursachen für Brummen und Rattern: Wasserstand, Filter, Rotor, Luft, Kalk und Untergrund.", canonical: "/katzentrinkbrunnen-laut-pumpe/", sitemap: true, priority: 0.75, changefreq: yearly }
 related: { tags: [trinkbrunnen, pumpe, wartung], limit: 4 }
 premiumBlocks:
   - { type: products, eyebrow: "Leise Modelle", title: "Aktuelle Trinkbrunnen einordnen", text: "Hersteller-dB sind nur ein Hinweis; Wartung und Aufstellung bleiben entscheidend.", productFilter: trinkbrunnen, productLimit: 3 }
@@ -56,9 +49,5 @@ Ein freier Wasserfall klingt lauter als eine flache Strömung. Verstellbarer Dur
 ## Wann Ersatz nötig ist
 
 Bleibt Rattern nach Reinigung bestehen, läuft die Pumpe heiß, riecht ungewöhnlich oder ist das Kabel beschädigt, darf sie nicht weiterbetrieben werden. Nutze ein freigegebenes Ersatzteil und stelle bis dahin normale Wassernäpfe bereit.
-
-## Geräuschursache gezielt eingrenzen
-
-Ein zugesetzter Filter wird im [Filter-Ratgeber](/filter-im-katzentrinkbrunnen-wechseln/) eingeordnet, mineralische Ablagerungen unter [Katzenbrunnen entkalken](/kalk-katzentrinkbrunnen-entfernen/). Für den Rotorraum hilft die [vollständige Reinigungsanleitung](/katzentrinkbrunnen-richtig-reinigen/). Leise Herstellerangaben und Bauformen lassen sich im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) gegenüberstellen.
 
 **Quellen:** jeweilige Herstelleranleitung; beispielhaft [PETKIT Eversweet Solo 2](https://www.petkit.com/products/eversweet-solo-2), [PETLIBRO Dockstream 2](https://petlibro.com/products/dockstream-2-smart-fountain), ergänzend [VCA – Wasserbrunnen sicher einsetzen](https://vcahospitals.com/pediatric/kitten/health-wellness/how-to-keep-your-kitten-hydrated).

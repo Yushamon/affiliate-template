@@ -3,15 +3,16 @@ title: "Beste Trinkbrunnen für Katzen"
 slug: "beste-trinkbrunnen-fuer-katzen"
 type: "comparison"
 layout: "comparison"
-description: "Trinkbrunnen für Katzen nach Kapazität, Material, Lautstärke, Filter, Reinigung und Alltagseignung vergleichen."
+description: "Sechs Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung vergleichen."
 publishedAt: "2026-07-24"
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-25"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 tags:
   - "Trinkbrunnen"
   - "Katze"
+  - "Katzenbrunnen"
   - "Vergleich"
   - "Kaufberatung"
 hub:
@@ -19,216 +20,207 @@ hub:
     - "vergleiche"
     - "trinkbrunnen"
   title: "Beste Trinkbrunnen für Katzen"
-  description: "Material, Reinigung, Filter, Kapazität und Geräusch verständlich gegenübergestellt."
+  description: "Sechs klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet."
   icon: "🐈"
   featured: true
   order: 20
 seo:
-  title: "Beste Trinkbrunnen für Katzen im Vergleich"
-  description: "Trinkbrunnen für Katzen vergleichen: Kapazität, Material, Filter, Lautstärke, Reinigung und Eignung verständlich eingeordnet."
+  title: "Katzenbrunnen im Vergleich: 6 Modelle für Katzen"
+  description: "Sechs Katzenbrunnen vergleichen: leise Netzmodelle, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und Reinigungsaufwand."
   canonical: "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
   sitemap: true
-  priority: 0.8
+  priority: 0.9
   changefreq: "monthly"
 comparisonType: "use-case"
 group: "Trinkbrunnen"
 icon: "🐈"
 items:
-  - slug: "oneisall-3-5l-cordless-fountain"
-    overrides:
-      filter: "Nicht dokumentiert"
-      reinigung: "Nicht dokumentiert"
-    label: "oneisall 3,5L Cordless Fountain"
-    type: "product"
-    recommendation: "Preis-Leistungs-Tipp für Katzenhalter, die einen großen kabellosen Tank ohne App-Zwang suchen."
-    values: { kapazitaet: "3,5 Liter", material: "Edelstahl", lautstaerke: "Herstellerangabe unter 30 dB", filter: "fünfstufig", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "5000 mAh; Herstellerangabe bis zu 60 Tage", eignung: "Für Hunde und Katzen eingeordnet" }
   - slug: "petkit-eversweet-solo-2-fountain"
     label: "PETKIT Eversweet Solo 2"
     type: "product"
-    recommendation: "Ausgewogene Mittelklasse für Katzenhalter, die eine leise Pumpe und einfache Statushinweise suchen."
-    values: { kapazitaet: "2 Liter", material: "BPA-freies ABS und Silikon", lautstaerke: "Herstellerangabe bis 25 dB", filter: "mehrstufig mit Aktivkohle und Ionenaustauscher", reinigung: "vollständig zerlegbar; nicht spülmaschinengeeignet", stromversorgung: "Nein; dauerhafter Netzbetrieb erforderlich", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petkit-eversweet-3-pro-uvc"
-    label: "PETKIT Eversweet 3 Pro UVC"
-    type: "product"
-    recommendation: "Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung."
-    values: { kapazitaet: "1,6 Liter beziehungsweise 54 fl. oz.", material: "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304", lautstaerke: "Herstellerangabe unter beziehungsweise höchstens 25 dB", filter: "PETKIT Filter Unit 3.0, Modell P4161", reinigung: "vollständig zerlegbar; alle Komponenten von Hand reinigen", stromversorgung: "USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten", eignung: "Für Hunde und Katzen eingeordnet" }
+    recommendation: "Ausgewogene Gesamtwahl für eine oder zwei Katzen, wenn leiser Netzbetrieb, kompakte zwei Liter und ein vollständig zerlegbarer Aufbau wichtiger sind als Akku oder App-Tracking."
+    values:
+      kapazitaet: "2 Liter"
+      material: "BPA-freies ABS und Silikon"
+      lautstaerke: "Herstellerangabe bis 25 dB"
+      filter: "Mehrstufig mit Aktivkohle und Ionenaustauscher"
+      reinigung: "Vollständig zerlegbar; von Hand reinigen"
+      stromversorgung: "Dauerhafter Netzbetrieb"
+      eignung: "Eine bis zwei Katzen; kleiner Haushalt"
   - slug: "oneisall-3-2l-cordless-fountain"
     label: "oneisall 3,2L Cordless Cat Fountain"
     type: "product"
-    recommendation: "Ausgewogene kabellose Lösung für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank."
-    values: { kapazitaet: "3,2 Liter beziehungsweise 108 fl. oz.", material: "ABS-Tank mit Trinkfläche aus Edelstahl 304", lautstaerke: "Herstellerangabe ungefähr 20 dB", filter: "fünfstufig", stromversorgung: "integrierter Lithium-Ionen-Akku mit 4.000 mAh", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "oneisall-7l-dog-water-fountain"
-    label: "oneisall 7L Dog Water Fountain"
-    type: "product"
-    recommendation: "Sinnvolle Großtank-Lösung für mittelgroße und große Hunde oder Mehrtierhaushalte, wenn breite Trinkfläche, hohe Reserve und verfügbare Ersatzteile wichtiger sind als Akku, App oder besonders kompakte Abmessungen."
-    values: { kapazitaet: "7 Liter beziehungsweise rund 230 fl. oz.", material: "Trinkschale aus SUS/304-Edelstahl; Tank und weitere Bauteile aus Kunststoff beziehungsweise PC", lautstaerke: "Herstellerangabe unter beziehungsweise ungefähr 35 dB", filter: "mehrstufig mit Filterpatrone und Pumpenschwamm", reinigung: "mindestens wöchentlich laut zugänglicher Anleitung; allgemeiner Support nennt 1 bis 2 Wochen", stromversorgung: "DC 5 V/1 A", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petkit-eversweet-ultra"
-    overrides:
-      filter: "Nicht dokumentiert"
-    label: "PETKIT Eversweet Ultra"
-    type: "product"
-    recommendation: "Spezialisierte Premiumlösung für Mehrkatzenhaushalte, die Frisch- und gebrauchtes Wasser physisch trennen und Trinkereignisse einzelnen Tieren zuordnen möchten. Für einen einzelnen Haushalt ohne Kamera-Tracking ist das System meist zu groß und komplex."
-    values: { kapazitaet: "5 Liter Frischwasser plus 1,8 Liter Abwasser", material: "ABS, Polypropylen, PPO und Edelstahl 304", lautstaerke: "Herstellerangabe höchstens etwa 26 dB im Normalbetrieb; beim Spülen und Nachfüllen höher", filter: "Nein", reinigung: "Trinkschale, Auslauf und magnetisches Sieb laut PETKIT", stromversorgung: "Netzbetrieb mit 12 V/2 A", eignung: "Für Hunde und Katzen eingeordnet" }
+    recommendation: "Starke kabellose Preis-Leistungs-Option für ein bis zwei Katzen, wenn flexible Aufstellung, 3,2 Liter Reserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung."
+    values:
+      kapazitaet: "3,2 Liter"
+      material: "ABS-Tank mit Trinkfläche aus Edelstahl 304"
+      lautstaerke: "Herstellerangabe ungefähr 20 dB"
+      filter: "Fünfstufig"
+      reinigung: "Tank, Trinkfläche, Pumpe und Filterkammer getrennt reinigen"
+      stromversorgung: "4.000-mAh-Akku"
+      eignung: "Eine bis zwei Katzen; Standort ohne Steckdose"
   - slug: "petkit-eversweet-max-2-uvc"
     label: "PETKIT Eversweet Max 2 UVC"
     type: "product"
-    recommendation: "Premiumoption für Katzen und kleine Hunde, wenn kabellose Aufstellung, UVC-Pumpe, spülmaschinengeeignete Teile und App-Status wichtiger sind als ein niedriger Preis."
-    values: { kapazitaet: "3 Liter Kapazität für Katzen und kleine Hunde", material: "Edelstahl-Trinkfläche", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "laut Hersteller vollständig spülmaschinengeeignet", stromversorgung: "Akku- und Netzbetrieb möglich", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petkit-eversweet-max-cordless"
-    overrides:
-      reinigung: "Nicht dokumentiert"
-    label: "PETKIT Eversweet Max Cordless"
+    recommendation: "Premiumoption für Katzenhalter, die Akku- und Netzbetrieb, UVC-Pumpe, App-Status und spülmaschinengeeignete Wasserteile kombinieren möchten."
+    values:
+      kapazitaet: "3 Liter"
+      material: "Edelstahl-Trinkfläche"
+      lautstaerke: "Keine belastbare Herstellerangabe"
+      filter: "Modellgebundener PETKIT-Filter"
+      reinigung: "Wasserführende Teile laut Hersteller spülmaschinengeeignet"
+      stromversorgung: "Akku- und Netzbetrieb"
+      eignung: "Eine bis zwei Katzen; Premium- und App-Nutzung"
+  - slug: "petkit-eversweet-ultra"
+    label: "PETKIT Eversweet Ultra"
     type: "product"
-    recommendation: "Starke kabellose Option für Katzen und kleine Hunde, wenn flexible Platzierung und Trinkprotokolle wichtiger sind als UVC oder ein niedriger Preis."
-    values: { kapazitaet: "3 Liter Kapazität", material: "Edelstahl-Trinkfläche", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Akku- und Netzbetrieb", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petlibro-dockstream-2-smart"
-    label: "PETLIBRO Dockstream 2 Smart"
-    type: "product"
-    recommendation: "Starke Smart-Option für Katzen und kleine Hunde, wenn Trinkmengen in der App verfolgt werden sollen und die konkrete Netz- oder Akkuvariante vor dem Kauf geprüft wird."
-    values: { kapazitaet: "3 Liter Kapazität", material: "Edelstahl-Trinkfläche", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petlibro-dockstream-cordless"
-    label: "PETLIBRO Dockstream Cordless"
-    type: "product"
-    recommendation: "Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden."
-    values: { kapazitaet: "2,5 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "5000-mAh-Akku", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petlibro-dockstream-rfid-smart"
-    label: "PETLIBRO Dockstream RFID Smart"
-    type: "product"
-    recommendation: "Spezialisierte Wahl für Mehrkatzenhaushalte, wenn Trinkmenge, Häufigkeit und Dauer pro Tier getrennt protokolliert werden sollen."
-    values: { material: "Edelstahl-Trinkfläche", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "xiaomi-smart-pet-fountain-2"
-    overrides:
-      lautstaerke: "Nicht dokumentiert"
-    label: "Xiaomi Smart Pet Fountain 2"
-    type: "product"
-    recommendation: "Ausgewogene Smart-Option für Katzen und kleine Hunde, besonders für bestehende Xiaomi-Home-Nutzer, die kabellose Platzierung und App-Erinnerungen möchten."
-    values: { kapazitaet: "3 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "4000-mAh-Akku für kabellosen Betrieb", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "cat-mate-335-pet-fountain"
-    overrides:
-      lautstaerke: "Nicht dokumentiert"
-    label: "Cat Mate Pet Fountain 335"
-    type: "product"
-    recommendation: "Solide Wahl für Katzen und kleine Hunde, wenn drei Trinkhöhen, einfache Technik und gute Ersatzteilversorgung wichtiger sind als Edelstahl, große Wasserreserve oder smarte Funktionen."
-    values: { kapazitaet: "70 fl. oz., rund 2 Liter", material: "BPA- und BHT-freier Kunststoff; Schale und Basis aus Polypropylen", filter: "Polymer-Aktivkohlefilter", reinigung: "monatlich, bei hartem Wasser häufiger", stromversorgung: "Netzbetrieb mit Niedervolt-Netzteil und 3 m Kabel", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petlibro-capsule-dog-fountain"
-    overrides:
-      reinigung: "Nicht dokumentiert"
-    label: "PETLIBRO Capsule Dog Fountain"
-    type: "product"
-    recommendation: "Plausible Gesamtoption für mittelgroße und große Hunde, wenn breite Trinkfläche, hohe Reserve und Spritzschutz wichtiger sind als App oder kabellose Aufstellung."
-    values: { kapazitaet: "knapp 8 Liter Kapazität", material: "breite Trinkfläche mit 1,4 Zoll Tiefe", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petlibro-glacier-ultrafiltration"
-    overrides:
-      lautstaerke: "Nicht dokumentiert"
-    label: "PETLIBRO Glacier Ultrafiltration Fountain"
-    type: "product"
-    recommendation: "Spezialisierte Premiumoption für Katzenhalter, denen eine breite Edelstahl-Trinkfläche und besonders feine Filterung wichtiger sind als App oder kabelloser Betrieb."
-    values: { kapazitaet: "2,5 Liter Kapazität", material: "Tank und Trinkfläche aus Edelstahl 304", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "spülmaschinengeeigneter Tank laut Hersteller", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "cat-mate-shell-fountain"
-    overrides:
-      lautstaerke: "Nicht dokumentiert"
-    label: "Cat Mate Shell Pet Fountain"
-    type: "product"
-    recommendation: "Einfache Offline-Option für Katzen und kleine Hunde, wenn mehrere Trinkhöhen, drei Liter Reserve und gut verfügbare Ersatzteile wichtiger sind als App oder Akku."
-    values: { kapazitaet: "3 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "oneisall-2-2l-cordless-fountain"
-    label: "oneisall 2,2L Cordless Cat Fountain"
-    type: "product"
-    recommendation: "Günstige kabellose Option für Katzen und kleine Hunde, wenn kompakte Abmessungen und sehr leiser Betrieb wichtiger sind als Edelstahl oder App-Funktionen."
-    values: { lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Herstellerangabe bis 30 Tage Akkulaufzeit", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petkit-eversweet-solo-se"
-    label: "PETKIT Eversweet Solo SE"
-    type: "product"
-    recommendation: "Solider Einstieg für eine bis zwei Katzen oder einen kleinen Hund, wenn einfache Technik und leiser Betrieb wichtiger sind als App, Akku oder variable Modi."
-    values: { kapazitaet: "1,8 Liter Kapazität", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "kompakte und vollständig zerlegbare Bauform", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
+    recommendation: "Spezialisierte Mehrkatzen-Lösung, wenn getrenntes Frisch- und Abwasser sowie kameraunterstützte Trinkereignisse wichtiger sind als kompakte Bauform und niedriger Preis."
+    values:
+      kapazitaet: "5 Liter Frischwasser plus 1,8 Liter Abwasser"
+      material: "ABS, Polypropylen, PPO und Edelstahl 304"
+      lautstaerke: "Herstellerangabe bis etwa 26 dB im Normalbetrieb"
+      filter: "Kein klassischer Hauptfilter; Cube C bleibt erforderlich"
+      reinigung: "Trinkschale, Auslauf und magnetisches Sieb laut PETKIT spülmaschinengeeignet"
+      stromversorgung: "Netzbetrieb mit 12 V/2 A"
+      eignung: "Mehrkatzenhaushalt mit individuellem Trinktracking"
   - slug: "petlibro-stainless-steel-fountain"
     label: "PETLIBRO Stainless Steel Fountain 3L"
     type: "product"
-    recommendation: "Solide Offline-Wahl für Katzen sowie kleine bis mittelgroße Hunde, wenn Edelstahl, einstellbarer Wasserfluss und Spülmaschinenreinigung wichtiger sind als App oder Akku."
-    values: { material: "3-Liter-Tank aus Edelstahl 304", lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", reinigung: "Tank laut Hersteller spülmaschinengeeignet", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
-  - slug: "petkit-eversweet-5-mini"
-    overrides:
-      lautstaerke: "Nicht dokumentiert"
-    label: "PETKIT Eversweet 5 Mini"
+    recommendation: "Einfache Edelstahloption für Katzenhalter, denen ein robuster, spülmaschinengeeigneter Tank wichtiger ist als Akku, App oder Tiererkennung."
+    values:
+      kapazitaet: "3 Liter"
+      material: "Tank und Trinkfläche aus Edelstahl 304"
+      lautstaerke: "Keine belastbare Herstellerangabe"
+      filter: "Modellgebundener PETLIBRO-Filter"
+      reinigung: "Edelstahltank laut Hersteller spülmaschinengeeignet"
+      stromversorgung: "Netzbetrieb"
+      eignung: "Eine bis zwei Katzen; Fokus auf Edelstahl"
+  - slug: "cat-mate-335-pet-fountain"
+    label: "Cat Mate Pet Fountain 335"
     type: "product"
-    recommendation: "Kompakte Einstiegsoption für eine Katze, wenn wenig Stellfläche wichtiger ist als große Reserve, App-Funktionen oder kabelloser Betrieb."
-    values: { lautstaerke: "Nicht vom Hersteller ausgewiesen", filter: "Nicht vom Hersteller ausgewiesen", stromversorgung: "Nicht vom Hersteller ausgewiesen", eignung: "Für Hunde und Katzen eingeordnet" }
+    recommendation: "Einfache Offline-Alternative, wenn mehrere Trinkhöhen, lange Kabelreichweite und verfügbare Ersatzteile wichtiger sind als Edelstahl, Akku oder App."
+    values:
+      kapazitaet: "Rund 2 Liter"
+      material: "BPA- und BHT-freier Kunststoff"
+      lautstaerke: "Keine belastbare Herstellerangabe"
+      filter: "Polymer-Aktivkohlefilter"
+      reinigung: "Monatlich, bei hartem Wasser häufiger; Pumpe separat reinigen"
+      stromversorgung: "Niedervolt-Netzbetrieb mit 3-m-Kabel"
+      eignung: "Eine oder mehrere Katzen mit unterschiedlichen Trinkhöhen"
 criteria:
-  - key: "kapazitaet"
-    label: "Kapazität"
-    description: "Wasservolumen des Behälters."
-  - key: "material"
-    label: "Material"
-    description: "Material der Trinkfläche und wasserführenden Teile."
-  - key: "lautstaerke"
-    label: "Lautstärke"
-    description: "Herstellerangabe oder nachvollziehbare Einordnung des Betriebsgeräuschs."
-  - key: "filter"
-    label: "Filter"
-    description: "Filteraufbau und erforderliche Wechselteile."
   - key: "reinigung"
     label: "Reinigung"
-    description: "Zerlegbarkeit und Eignung einzelner Teile für die Spülmaschine."
+    description: "Zerlegbarkeit, Pumpenzugang und Spülmaschineneignung."
+    weight: 1.5
+  - key: "eignung"
+    label: "Einsatzgebiet"
+    description: "Passung zu Tierzahl, Standort und gewünschter Trinkfläche."
+    weight: 1.4
+  - key: "material"
+    label: "Material"
+    description: "Material der tatsächlich wasserberührenden Flächen."
+    weight: 1.2
   - key: "stromversorgung"
     label: "Stromversorgung"
-    description: "Netzbetrieb, USB oder Akku, soweit belegt."
-  - key: "eignung"
-    label: "Eignung für Katzen"
-    description: "Bauform, Trinkhöhe und Kapazität passend zum Einsatzzweck."
+    description: "Netz, Akku und daraus folgende Platzierungsfreiheit."
+    weight: 1.0
+  - key: "filter"
+    label: "Filter und Folgekosten"
+    description: "Filteraufbau, Wechselteile und laufende Kosten."
+    weight: 1.0
+  - key: "lautstaerke"
+    label: "Lautstärke"
+    description: "Dokumentierte Herstellerangabe und praktische Einflussfaktoren."
+    weight: 0.8
+  - key: "kapazitaet"
+    label: "Kapazität"
+    description: "Nutzbare Wasserreserve ohne Hygieneversprechen."
+    weight: 0.8
 automaticRecommendations:
-  enabled: true
+  enabled: false
 recommendation:
-  winnerSlug: "oneisall-3-5l-cordless-fountain"
-  alternativeSlug: "cat-mate-335-pet-fountain"
-  title: "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment"
-  text: "Die beste Wahl hängt trotzdem von Trinkverhalten, Schnurrhaarfreundlichkeit, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
-tableTitle: "20 Trinkbrunnen für Katzen verglichen"
-cardsTitle: "Empfehlungen nach Einsatzzweck"
+  winnerSlug: "petkit-eversweet-solo-2-fountain"
+  alternativeSlug: "oneisall-3-2l-cordless-fountain"
+  title: "PETKIT Solo 2 für den einfachen Alltag, oneisall 3,2L für kabellose Aufstellung"
+  text: "Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die ausgewogenste einfache Lösung. Der oneisall 3,2L ist flexibler ohne Steckdose. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert; Edelstahl-Fokus bietet PETLIBRO."
+tableTitle: "6 Katzenbrunnen direkt verglichen"
+cardsTitle: "Empfehlungen nach Haushalt und Standort"
 faq:
-  - question: "Wie groß sollte ein Trinkbrunnen für Katzen sein?"
-    answer: "Für eine Katze reicht häufig ein kompakter Behälter, sofern täglich kontrolliert und nachgefüllt wird. Bei mehreren Katzen sind größere Reserven sinnvoll, ersetzen aber keine regelmäßige Reinigung."
+  - question: "Welcher Katzenbrunnen ist für die meisten Haushalte geeignet?"
+    answer: "Ein leiser, vollständig zerlegbarer Brunnen mit gut zugänglicher Pumpe ist meist sinnvoller als ein besonders funktionsreiches Modell. Im aktuellen Vergleich ist der PETKIT Eversweet Solo 2 die ausgewogene Netzlösung."
+  - question: "Welcher Katzenbrunnen funktioniert ohne Steckdose?"
+    answer: "Ein Akkumodell wie der oneisall 3,2L lässt sich flexibler aufstellen. Akkulaufzeit hängt jedoch vom Betriebsmodus ab; ein zusätzlicher normaler Wassernapf bleibt nötig."
   - question: "Ist Edelstahl besser als Kunststoff?"
-    answer: "Edelstahl ist robust und meist leicht zu reinigen. Kunststoff kann leichter und günstiger sein. Entscheidend sind glatte Oberflächen, vollständige Zerlegbarkeit und verfügbare Ersatzteile."
-  - question: "Wie oft muss ein Trinkbrunnen gereinigt werden?"
-    answer: "Wasser sollte regelmäßig erneuert und der Brunnen abhängig von Nutzung, Material und Verschmutzung mehrmals pro Woche kontrolliert werden. Pumpe und schwer zugängliche Stellen brauchen besondere Aufmerksamkeit."
+    answer: "Edelstahl ist robust und häufig leicht zu reinigen. Entscheidend bleiben aber Pumpe, Filterkammer, Dichtungen und alle weiteren wasserberührenden Kunststoffteile."
+  - question: "Wie groß sollte ein Katzenbrunnen sein?"
+    answer: "Zwei bis drei Liter sind für viele Haushalte praktikabel. Ein größerer Tank reduziert das Nachfüllen, verlängert aber nicht automatisch die hygienische Standzeit."
+  - question: "Welcher Brunnen eignet sich für mehrere Katzen?"
+    answer: "Mehrkatzenhaushalte brauchen mehrere getrennte Wasserstellen. Ein großes Modell oder ein Tracking-System wie der PETKIT Eversweet Ultra kann ergänzen, ersetzt aber keine weiteren Näpfe."
+  - question: "Wie leise muss ein Katzenbrunnen sein?"
+    answer: "Dezibelwerte sind nur ein Hinweis. Wasserstand, Rotorverschmutzung, Untergrund und freier Wasserfall beeinflussen die wahrgenommene Lautstärke stark."
+  - question: "Wie oft muss ein Katzenbrunnen gereinigt werden?"
+    answer: "Als Ausgangspunkt sollte das Wasser täglich kontrolliert und der Brunnen mindestens wöchentlich vollständig zerlegt werden. Mehrere Tiere oder sichtbarer Belag erfordern kürzere Intervalle."
   - question: "Wie oft muss der Filter gewechselt werden?"
-    answer: "Das hängt von Filtertyp, Wasserqualität, Tierzahl und Herstellerangabe ab. Ein Filter ersetzt weder Wasserwechsel noch gründliche Reinigung."
-  - question: "Sind Trinkbrunnen wirklich leise?"
-    answer: "Das Betriebsgeräusch hängt von Pumpe, Wasserstand, Untergrund und Verschmutzung ab. Auch ein leiser Brunnen kann bei niedrigem Wasserstand oder verschmutzter Pumpe deutlich hörbar werden."
+    answer: "Viele Hersteller nennen zwei bis vier Wochen. Tierzahl, Haare, Wasserhärte, Geruch und Durchfluss können einen früheren Wechsel nötig machen."
+  - question: "Ist UVC wichtiger als Reinigung?"
+    answer: "Nein. UVC kann nur einen Teil des vorbeiströmenden Wassers beeinflussen. Biofilm und Ablagerungen müssen weiterhin mechanisch entfernt werden."
+  - question: "Ersetzt ein Katzenbrunnen mehrere Wassernäpfe?"
+    answer: "Nein. Ein Brunnen ist eine Wasserstelle. Stromausfall, Defekt, Reinigung oder soziale Blockade dürfen nicht den gesamten Zugang zu Wasser verhindern."
 ---
 
-Trinkbrunnen unterscheiden sich nicht nur durch ihr Fassungsvermögen. Material, Trinkfläche, Pumpenzugang, Filterkosten und Reinigungsaufwand entscheiden darüber, ob ein Modell im Alltag tatsächlich funktioniert.
+Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. Für eine Katze ist ein leises, gut zerlegbares Netzmodell oft sinnvoller als ein großes Tracking-System. Mehrere Katzen benötigen weiterhin räumlich getrennte Wasserstellen.
 
-## Worauf es bei Trinkbrunnen für Katzen ankommt
+## Schnellentscheidung
 
-Für Katzen sind eine gut zugängliche, möglichst breite Trinkfläche und ein ruhiger Wasserfluss häufig wichtiger als spektakuläre Zusatzfunktionen. In Mehrkatzenhaushalten zählen zusätzlich Kapazität, Standfestigkeit und einfache tägliche Kontrolle.
+- **PETKIT Eversweet Solo 2:** ausgewogene, kompakte Netzlösung.
+- **oneisall 3,2L Cordless:** flexible Akkuoption.
+- **PETKIT Eversweet Max 2 UVC:** Premiumlösung mit Akku, App und UVC-Pumpe.
+- **PETKIT Eversweet Ultra:** spezialisiertes Mehrkatzen-Tracking.
+- **PETLIBRO Edelstahl 3L:** einfacher Edelstahlfokus.
+- **Cat Mate 335:** unkomplizierte Offline-Lösung mit mehreren Trinkhöhen.
 
-## Empfehlungen nach Haushaltsgröße
+## Welches Modell passt zu welchem Haushalt?
 
-Die Empfehlungen werden aus dokumentierter Tier-Eignung, Kapazität, Bauform und Gesamtbewertung berechnet. Eine hohe allgemeine Bewertung reicht nicht aus, wenn der Brunnen für die jeweilige Tiergröße ungeeignet ist.
+| Situation | Passende Richtung |
+|---|---|
+| eine Katze, fester Standort | PETKIT Eversweet Solo 2 |
+| Standort ohne Steckdose | oneisall 3,2L Cordless |
+| App, Akku und UVC gewünscht | PETKIT Eversweet Max 2 UVC |
+| mehrere Katzen mit Trinktracking | PETKIT Eversweet Ultra |
+| möglichst viel Edelstahl | PETLIBRO Stainless Steel 3L |
+| einfache Technik und Ersatzteile | Cat Mate 335 |
 
-| Einsatz | Empfehlung | Begründung |
-|---|---|---|
-| Eine Katze | PETKIT Eversweet 3 Pro UVC | 1,6 Liter Kapazität; Scoring für Eine Katze |
-| Mehrkatzenhaushalte | oneisall 3,5L Cordless Fountain | 3,5 Liter Kapazität; Scoring für Mehrkatzenhaushalte |
-| Wenig Stellfläche | PETKIT Eversweet 3 Pro UVC | 1,6 Liter Kapazität; Scoring für Wenig Stellfläche |
+## Reinigung ist das wichtigste Vergleichskriterium
 
-> **Größenlogik:** Ein kompakter 3-Liter-Brunnen kann für kleine Hunde sehr gut abschneiden, wird bei großen Hunden oder Mehrhundehaushalten jedoch automatisch abgewertet.
+Ein Filter, UVC oder automatisches Spülen ersetzt die mechanische Reinigung nicht. Vor dem Kauf sollte geprüft werden, ob sich folgende Bereiche erreichen lassen:
 
-## Material und Hygiene
+- Pumpe und Rotorraum,
+- Unterseite der Trinkfläche,
+- Filterkammer und Auslauf,
+- Dichtungen und Kabeldurchführung,
+- stehendes Restwasser in Kanälen.
 
-Edelstahl kann die Reinigung erleichtern, ist aber kein Selbstläufer. Auch Pumpengehäuse, Kabeldurchführung, Dichtungen und Filterkammer müssen erreichbar sein. Kunststoffteile sollten glatt, geruchsneutral und ohne schwer zugängliche Spalten ausgeführt sein.
+Der Ratgeber [Katzentrinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/) zeigt den vollständigen Ablauf.
 
-## Filter und laufende Kosten
+## Mehrere Katzen brauchen mehrere Orte
 
-Filter binden je nach Aufbau Haare, Partikel oder Gerüche. Sie machen belastetes Wasser aber nicht automatisch hygienisch sicher. Prüfe vor dem Kauf, ob Ersatzfilter dauerhaft verfügbar sind und welche Wechselintervalle der Hersteller tatsächlich nennt.
+Auch ein großer Brunnen bleibt eine Wasserstelle. Für zwei Katzen sind drei räumlich getrennte Trinkorte ein sinnvoller Ausgangspunkt. Der Ratgeber [Wie viele Wasserstellen braucht eine Katze?](/wie-viele-wasserstellen-katze/) erklärt die Verteilung; [Trinkbrunnen für mehrere Katzen](/trinkbrunnen-fuer-mehrere-katzen/) ordnet Tankgröße und Tracking ein.
 
-## Lautstärke realistisch einordnen
+## Material, Filter und Geräusch
 
-Herstellerangaben zur Lautstärke sind nur bedingt vergleichbar. Wasserstand, Resonanz des Untergrunds und Verschmutzung der Pumpe verändern das Geräusch. Eine weiche, ebene Unterlage und regelmäßige Pumpenpflege sind oft wichtiger als ein einzelner Dezibelwert.
+[Edelstahl, Keramik und Kunststoff](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/) haben unterschiedliche Vor- und Nachteile. Ein glatter Tank ist hilfreich, doch Pumpe und Filter bleiben häufig aus Kunststoff.
 
-## Methodik und Transparenz
+Für laufende Pflege helfen:
 
-Die Einordnung basiert auf den im Repository vorhandenen Produktdaten, Herstellerangaben und redaktionell dokumentierten Eigenschaften. Fehlende technische Angaben werden als „Keine Angabe“ dargestellt und nicht aus Teilbewertungen abgeleitet. Es werden keine statischen Preise angezeigt.
+- [Filter im Katzenbrunnen wechseln](/filter-im-katzentrinkbrunnen-wechseln/)
+- [Biofilm im Katzenbrunnen entfernen](/biofilm-im-katzentrinkbrunnen/)
+- [Katzenbrunnen entkalken](/kalk-katzentrinkbrunnen-entfernen/)
+- [Laute Pumpe prüfen](/katzentrinkbrunnen-laut-pumpe/)
 
-Vertiefend: [Trinkbrunnen für Hunde und Katzen](/trinkbrunnen/), [Trinkbrunnen für Katzen sinnvoll?](/trinkbrunnen-fuer-katzen-sinnvoll/), [Wasserstelle für Katzen richtig platzieren](/wasserstelle-katze-richtiger-standort/) und [Trinkbrunnen richtig reinigen](/trinkbrunnen-richtig-reinigen/).
+## Methodik
+
+Die sechs Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
+
+## Fazit
+
+Der PETKIT Eversweet Solo 2 ist die ausgewogenste einfache Gesamtwahl im aktuellen Bestand. Wer kabellos aufstellen muss, schaut zuerst auf den oneisall 3,2L. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert. Unabhängig vom Modell bleiben mehrere Wasserstellen, regelmäßiger Wasserwechsel und vollständige Reinigung entscheidend.

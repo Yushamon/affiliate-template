@@ -1,5 +1,5 @@
 ---
-title: "Schleim im Katzentrinkbrunnen: Biofilm entfernen"
+title: "Biofilm im Katzentrinkbrunnen: Was ist der glitschige Belag?"
 slug: "biofilm-im-katzentrinkbrunnen"
 type: knowledge
 layout: knowledge
@@ -12,17 +12,11 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-23"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, biofilm, hygiene, reinigung]
 hub: { sections: [wissen], title: "Biofilm im Katzenbrunnen", description: "Glitschigen Belag erkennen, entfernen und vorbeugen.", order: 49 }
-seo:
-  title: "Schleim im Katzenbrunnen: Biofilm sicher entfernen"
-  description: "Glitschigen Biofilm im Katzenbrunnen erkennen und entfernen: Tank, Pumpe, Rotor, Leitungen und Filter mechanisch richtig reinigen."
-  canonical: "/biofilm-im-katzentrinkbrunnen/"
-  sitemap: true
-  priority: 0.85
-  changefreq: "yearly"
+seo: { title: "Biofilm im Katzentrinkbrunnen entfernen", description: "Was der glitschige Film im Katzenbrunnen ist und wie Tank, Pumpe und Leitungen sauber werden.", canonical: "/biofilm-im-katzentrinkbrunnen/", sitemap: true, priority: 0.8, changefreq: yearly }
 related: { tags: [trinkbrunnen, hygiene, reinigung], limit: 4 }
 faq:
   - { question: "Ist der Schleim im Katzenbrunnen Biofilm?", answer: "Ein glitschiger, haftender Film ist häufig Biofilm aus Mikroorganismen und organischem Material. Verfärbung oder Geruch können weitere Hinweise sein." }
@@ -54,9 +48,5 @@ Tiefe Kratzer, nicht zugängliche Hohlräume, poröse Dichtungen oder eine Pumpe
 ## Gesundheitlich richtig reagieren
 
 Hat eine gesunde Katze einmal aus einem verschmutzten Brunnen getrunken, ist Panik nicht automatisch nötig. Reinige das Gerät und beobachte sie. Bei Erbrechen, Durchfall, Mattigkeit, Fressunlust oder Vorerkrankungen sollte tierärztlicher Rat eingeholt werden.
-
-## Biofilm, Kalk und Filter nicht verwechseln
-
-Biofilm ist glitschig, Kalk eher hell und krustig. Die [Entkalkungs-Anleitung](/kalk-katzentrinkbrunnen-entfernen/) behandelt mineralische Ablagerungen; der [Filter-Ratgeber](/filter-im-katzentrinkbrunnen-wechseln/) erklärt laufende Wechselteile. Den vollständigen Reinigungsablauf zeigt [Katzentrinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/). Modelle mit gut zugänglichem Wasserweg stehen im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/).
 
 **Quellen:** [Zoetis – Bedeutung sauberer Wassernäpfe](https://www.zoetispetcare.com/blog/article/importance-clean-bowls-dog-cat), [VCA – frisches Wasser und Brunnenpflege](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water), [PETLIBRO Support – Biofilm/Schleim](https://designlibro.zendesk.com/hc/en-us/articles/12828556636441-How-do-I-prevent-slime-in-a-pet-water-fountain).
