@@ -84,6 +84,8 @@ premiumBlocks:
         text: "Behälter, Trinkfläche, Pumpe, Rotorraum, Auslauf, Schläuche und Dichtungen müssen erreichbar und reinigbar sein."
         href: "/katzentrinkbrunnen-richtig-reinigen/"
         cta: "Reinigung im Detail"
+        href: "#reinigung"
+        cta: "Reinigung prüfen"
       - label: "Betriebsart"
         title: "Netz, Akku oder Sensor"
         text: "Die Technik muss zum Standort und zum Trinkverhalten passen. Sensorbetrieb ist nicht automatisch besser als Dauerfluss."

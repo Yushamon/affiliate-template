@@ -50,12 +50,7 @@
     "comparison:data:audit:strict": "npm --workspace apps/pfotentechnik run comparison:data:audit:strict",
     "comparison:data:migrate": "npm --workspace apps/pfotentechnik run comparison:data:migrate",
     "comparison:data:migrate:check": "npm --workspace apps/pfotentechnik run comparison:data:migrate:check",
-    "comparison:data:test": "npm --workspace apps/pfotentechnik run comparison:data:test",
-    "seo:release:check": "npm --workspace apps/pfotentechnik run seo:release:check --",
-    "seo:release:check:no-build": "npm --workspace apps/pfotentechnik run seo:release:check:no-build --",
-    "seo:release:manifest": "npm --workspace apps/pfotentechnik run seo:release:manifest --",
-    "seo:release:indexnow": "npm --workspace apps/pfotentechnik run seo:release:indexnow --",
-    "seo:release:indexnow:dry-run": "npm --workspace apps/pfotentechnik run seo:release:indexnow:dry-run --"
+    "comparison:data:test": "npm --workspace apps/pfotentechnik run comparison:data:test"
   },
   "devDependencies": {
     "electron": "^35.7.5"

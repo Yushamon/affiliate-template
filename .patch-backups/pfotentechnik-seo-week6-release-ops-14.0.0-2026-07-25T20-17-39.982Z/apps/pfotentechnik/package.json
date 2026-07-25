@@ -70,13 +70,7 @@
     "comparison:data:test": "node --test test/comparison-data-platform.test.mjs",
     "audit:technical-seo": "node scripts/seo/audit-week4-technical-seo.mjs",
     "audit:technical-seo:source": "node scripts/seo/audit-week4-technical-seo.mjs --source-only",
-    "audit:cat-fountain-serp": "node scripts/seo/audit-week5-katzenbrunnen-serp.mjs",
-    "seo:release:check": "node scripts/seo/release-preflight.mjs",
-    "seo:release:check:no-build": "node scripts/seo/release-preflight.mjs --skip-build",
-    "seo:release:manifest": "node scripts/seo/release-manifest.mjs",
-    "seo:release:indexnow": "node scripts/submit-indexnow.mjs --changed",
-    "seo:release:indexnow:dry-run": "node scripts/submit-indexnow.mjs --changed --dry-run",
-    "audit:release-ops": "node scripts/seo/audit-week6-release-ops.mjs"
+    "audit:cat-fountain-serp": "node scripts/seo/audit-week5-katzenbrunnen-serp.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
