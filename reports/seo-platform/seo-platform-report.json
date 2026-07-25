@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-25T17:44:47.078Z",
-  "errors": 3,
-  "warnings": 36,
+  "generatedAt": "2026-07-25T20:35:33.778Z",
+  "errors": 4,
+  "warnings": 29,
   "portfolio": [],
   "documents": [
     {
@@ -574,9 +574,9 @@
         "slug": "beste-trinkbrunnen-fuer-hunde",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Trinkbrunnen für Hunde nach Kapazität, Material, Lautstärke, Filter, Reinigung und Alltagseignung vergleichen.",
+        "description": "Sechs Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Material, Reinigung, Filter und Stromversorgung vergleichen.",
         "publishedAt": "2026-07-24",
-        "updatedAt": "2026-07-24",
+        "updatedAt": "2026-07-25",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -585,7 +585,8 @@
           "Trinkbrunnen",
           "Hund",
           "Vergleich",
-          "Kaufberatung"
+          "Kaufberatung",
+          "Große Hunde"
         ],
         "hub": {
           "sections": [
@@ -593,70 +594,61 @@
             "trinkbrunnen"
           ],
           "title": "Beste Trinkbrunnen für Hunde",
-          "description": "Material, Reinigung, Filter, Kapazität und Geräusch verständlich gegenübergestellt.",
+          "description": "Sechs Modelle für kleine, mittelgroße und große Hunde nach Reserve, Trinkfläche und Reinigung.",
           "icon": "🐕",
           "featured": true,
           "order": 21
         },
         "seo": {
-          "title": "Beste Trinkbrunnen für Hunde im Vergleich",
-          "description": "Trinkbrunnen für Hunde vergleichen: Kapazität, Material, Filter, Lautstärke, Reinigung und Eignung verständlich eingeordnet.",
+          "title": "Trinkbrunnen für Hunde: 6 Modelle im Vergleich 2026",
+          "description": "Sechs Hundetrinkbrunnen vergleichen: große Tanks, kabellose Modelle, Edelstahl, Reinigung, Filter und passende Bauform für kleine bis große Hunde.",
           "canonical": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.9,
           "changefreq": "monthly"
         },
         "comparisonType": "use-case",
         "group": "Trinkbrunnen",
         "icon": "🐕",
         "items": [
-          "slug: \"oneisall-3-5l-cordless-fountain",
-          "slug: \"petkit-eversweet-solo-2-fountain",
-          "slug: \"petkit-eversweet-3-pro-uvc",
-          "slug: \"oneisall-3-2l-cordless-fountain",
           "slug: \"oneisall-7l-dog-water-fountain",
-          "slug: \"petkit-eversweet-ultra",
-          "slug: \"petkit-eversweet-max-2-uvc",
-          "slug: \"petkit-eversweet-max-cordless",
-          "slug: \"petlibro-dockstream-2-smart",
-          "slug: \"petlibro-dockstream-cordless",
-          "slug: \"petlibro-dockstream-rfid-smart",
-          "slug: \"xiaomi-smart-pet-fountain-2",
-          "slug: \"cat-mate-335-pet-fountain",
           "slug: \"petlibro-capsule-dog-fountain",
-          "slug: \"petlibro-glacier-ultrafiltration",
-          "slug: \"cat-mate-shell-fountain",
-          "slug: \"oneisall-2-2l-cordless-fountain",
-          "slug: \"petkit-eversweet-solo-se",
+          "slug: \"oneisall-3-5l-cordless-fountain",
+          "slug: \"petkit-eversweet-max-2-uvc",
           "slug: \"petlibro-stainless-steel-fountain",
-          "slug: \"petkit-eversweet-5-mini"
+          "slug: \"cat-mate-335-pet-fountain"
         ],
         "criteria": [
           "key: \"kapazitaet",
+          "key: \"eignung",
           "key: \"material",
-          "key: \"lautstaerke",
-          "key: \"filter",
           "key: \"reinigung",
+          "key: \"filter",
           "key: \"stromversorgung",
-          "key: \"eignung"
+          "key: \"lautstaerke"
         ],
         "automaticRecommendations": {
-          "enabled": true
+          "enabled": false
         },
         "recommendation": {
-          "winnerSlug": "oneisall-3-5l-cordless-fountain",
-          "alternativeSlug": "petkit-eversweet-ultra",
-          "title": "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment",
-          "text": "Die beste Wahl hängt trotzdem von Körpergröße, Trinkhöhe, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
+          "winnerSlug": "oneisall-7l-dog-water-fountain",
+          "alternativeSlug": "oneisall-3-5l-cordless-fountain",
+          "title": "oneisall 7L für große Hunde, 3,5L Cordless für flexible Aufstellung",
+          "text": "Für große Hunde und mehrere Tiere ist der oneisall 7L wegen Reserve und breiter Trinkfläche die ausgewogenste Wahl. Für kleine bis mittelgroße Hunde ist die kabellose 3,5-Liter-Version flexibler. PETLIBRO Capsule ist die Großtank-Alternative, PETKIT Max 2 UVC die smarte Premiumoption für kleine Hunde."
         },
-        "tableTitle": "20 Trinkbrunnen für Hunde verglichen",
-        "cardsTitle": "Empfehlungen nach Einsatzzweck",
+        "tableTitle": "6 Trinkbrunnen für Hunde direkt verglichen",
+        "cardsTitle": "Empfehlungen nach Hundegröße und Aufstellung",
         "faq": [
-          "question: \"Wie groß sollte ein Trinkbrunnen für Hunde sein?",
+          "question: \"Welcher Trinkbrunnen eignet sich am besten für große Hunde?",
+          "question: \"Wie groß sollte ein Trinkbrunnen für einen Hund sein?",
+          "question: \"Ist ein 2-Liter-Brunnen für einen großen Hund ausreichend?",
           "question: \"Ist Edelstahl besser als Kunststoff?",
-          "question: \"Wie oft muss ein Trinkbrunnen gereinigt werden?",
+          "question: \"Ist ein kabelloser Trinkbrunnen sinnvoll?",
+          "question: \"Wie oft muss ein Hundetrinkbrunnen gereinigt werden?",
           "question: \"Wie oft muss der Filter gewechselt werden?",
-          "question: \"Sind Trinkbrunnen wirklich leise?"
+          "question: \"Sind Trinkbrunnen für Hunde wirklich leise?",
+          "question: \"Braucht ein Hundetrinkbrunnen eine App?",
+          "question: \"Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?"
         ]
       },
       "issues": []
@@ -671,9 +663,9 @@
         "slug": "beste-trinkbrunnen-fuer-katzen",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Trinkbrunnen für Katzen nach Kapazität, Material, Lautstärke, Filter, Reinigung und Alltagseignung vergleichen.",
+        "description": "Sechs Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung vergleichen.",
         "publishedAt": "2026-07-24",
-        "updatedAt": "2026-07-24",
+        "updatedAt": "2026-07-25",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -681,6 +673,7 @@
         "tags": [
           "Trinkbrunnen",
           "Katze",
+          "Katzenbrunnen",
           "Vergleich",
           "Kaufberatung"
         ],
@@ -690,70 +683,61 @@
             "trinkbrunnen"
           ],
           "title": "Beste Trinkbrunnen für Katzen",
-          "description": "Material, Reinigung, Filter, Kapazität und Geräusch verständlich gegenübergestellt.",
+          "description": "Sechs klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.",
           "icon": "🐈",
           "featured": true,
           "order": 20
         },
         "seo": {
-          "title": "Beste Trinkbrunnen für Katzen im Vergleich",
-          "description": "Trinkbrunnen für Katzen vergleichen: Kapazität, Material, Filter, Lautstärke, Reinigung und Eignung verständlich eingeordnet.",
+          "title": "Katzenbrunnen im Vergleich: 6 Modelle für Katzen",
+          "description": "Sechs Katzenbrunnen vergleichen: leise Netzmodelle, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und Reinigungsaufwand.",
           "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.9,
           "changefreq": "monthly"
         },
         "comparisonType": "use-case",
         "group": "Trinkbrunnen",
         "icon": "🐈",
         "items": [
-          "slug: \"oneisall-3-5l-cordless-fountain",
           "slug: \"petkit-eversweet-solo-2-fountain",
-          "slug: \"petkit-eversweet-3-pro-uvc",
           "slug: \"oneisall-3-2l-cordless-fountain",
-          "slug: \"oneisall-7l-dog-water-fountain",
-          "slug: \"petkit-eversweet-ultra",
           "slug: \"petkit-eversweet-max-2-uvc",
-          "slug: \"petkit-eversweet-max-cordless",
-          "slug: \"petlibro-dockstream-2-smart",
-          "slug: \"petlibro-dockstream-cordless",
-          "slug: \"petlibro-dockstream-rfid-smart",
-          "slug: \"xiaomi-smart-pet-fountain-2",
-          "slug: \"cat-mate-335-pet-fountain",
-          "slug: \"petlibro-capsule-dog-fountain",
-          "slug: \"petlibro-glacier-ultrafiltration",
-          "slug: \"cat-mate-shell-fountain",
-          "slug: \"oneisall-2-2l-cordless-fountain",
-          "slug: \"petkit-eversweet-solo-se",
+          "slug: \"petkit-eversweet-ultra",
           "slug: \"petlibro-stainless-steel-fountain",
-          "slug: \"petkit-eversweet-5-mini"
+          "slug: \"cat-mate-335-pet-fountain"
         ],
         "criteria": [
-          "key: \"kapazitaet",
-          "key: \"material",
-          "key: \"lautstaerke",
-          "key: \"filter",
           "key: \"reinigung",
+          "key: \"eignung",
+          "key: \"material",
           "key: \"stromversorgung",
-          "key: \"eignung"
+          "key: \"filter",
+          "key: \"lautstaerke",
+          "key: \"kapazitaet"
         ],
         "automaticRecommendations": {
-          "enabled": true
+          "enabled": false
         },
         "recommendation": {
-          "winnerSlug": "oneisall-3-5l-cordless-fountain",
-          "alternativeSlug": "cat-mate-335-pet-fountain",
-          "title": "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment",
-          "text": "Die beste Wahl hängt trotzdem von Trinkverhalten, Schnurrhaarfreundlichkeit, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
+          "winnerSlug": "petkit-eversweet-solo-2-fountain",
+          "alternativeSlug": "oneisall-3-2l-cordless-fountain",
+          "title": "PETKIT Solo 2 für den einfachen Alltag, oneisall 3,2L für kabellose Aufstellung",
+          "text": "Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die ausgewogenste einfache Lösung. Der oneisall 3,2L ist flexibler ohne Steckdose. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert; Edelstahl-Fokus bietet PETLIBRO."
         },
-        "tableTitle": "20 Trinkbrunnen für Katzen verglichen",
-        "cardsTitle": "Empfehlungen nach Einsatzzweck",
+        "tableTitle": "6 Katzenbrunnen direkt verglichen",
+        "cardsTitle": "Empfehlungen nach Haushalt und Standort",
         "faq": [
-          "question: \"Wie groß sollte ein Trinkbrunnen für Katzen sein?",
+          "question: \"Welcher Katzenbrunnen ist für die meisten Haushalte geeignet?",
+          "question: \"Welcher Katzenbrunnen funktioniert ohne Steckdose?",
           "question: \"Ist Edelstahl besser als Kunststoff?",
-          "question: \"Wie oft muss ein Trinkbrunnen gereinigt werden?",
+          "question: \"Wie groß sollte ein Katzenbrunnen sein?",
+          "question: \"Welcher Brunnen eignet sich für mehrere Katzen?",
+          "question: \"Wie leise muss ein Katzenbrunnen sein?",
+          "question: \"Wie oft muss ein Katzenbrunnen gereinigt werden?",
           "question: \"Wie oft muss der Filter gewechselt werden?",
-          "question: \"Sind Trinkbrunnen wirklich leise?"
+          "question: \"Ist UVC wichtiger als Reinigung?",
+          "question: \"Ersetzt ein Katzenbrunnen mehrere Wassernäpfe?"
         ]
       },
       "issues": []
@@ -1918,7 +1902,7 @@
         "recommendation": "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung.",
         "summary": "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen.",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-19",
+        "updatedAt": "2026-07-25",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion für smarte Haustiertechnik"
@@ -2088,7 +2072,7 @@
         "recommendation": "PETLIBRO passt besonders zu Katzen- und Hundehaltern, die zwischen App-Feeder, Kamera, RFID, gekühltem Nassfutter und smarten Trinkbrunnen wählen möchten. Für reine Offline-Nutzung sind einfachere Hersteller oft übersichtlicher.",
         "summary": "PETLIBRO entwickelt seit 2019 smarte Futterautomaten und Trinkbrunnen. Die Stärke liegt in der ungewöhnlich breiten Auswahl: Trocken- oder Nassfutter, Kamera, RFID-Zugang sowie Brunnen mit App- oder Verbrauchserfassung. App-, Cloud- und Filterbedarf müssen jedoch für jedes Modell getrennt geprüft werden.",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-22",
+        "updatedAt": "2026-07-25",
         "navigation": {
           "show": true,
           "label": "Hersteller",
@@ -2120,8 +2104,8 @@
           "featured": true
         },
         "seo": {
-          "title": "PETLIBRO Erfahrungen: Produkte, Bewertung und Empfehlungen",
-          "description": "PETLIBRO im Überblick: Futterautomaten, Trinkbrunnen, App, optionale Abos, Erfahrungen, Garantie sowie Stärken und Schwächen der Modelle.",
+          "title": "PETLIBRO Erfahrungen 2026: Modelle, App und Unterschiede",
+          "description": "PETLIBRO Futterautomaten und Trinkbrunnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung, Zugang und Folgekosten.",
           "canonical": "/hersteller/petlibro/",
           "noindex": false,
           "sitemap": true,
@@ -3025,179 +3009,6 @@
       ]
     },
     {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-hunde.md",
-      "slug": "beste futterautomaten fuer hunde",
-      "title": "Beste Futterautomaten für Hunde",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten für Hunde",
-        "seoTitle": "Beste Futterautomaten für Hunde im Vergleich",
-        "slug": "beste-futterautomaten-fuer-hunde",
-        "description": "Futterautomaten für Hunde nach Ausgabemenge, Krokettengröße, Stabilität, App und Stromreserve vergleichen.",
-        "seoDescription": "Futterautomaten für Hunde im Vergleich: Xiaomi, Petlibro, WOPET und HoneyGuardian nach Größe, Portionen und Zuverlässigkeit.",
-        "category": "futterautomaten",
-        "categoryLabel": "Futterautomaten",
-        "categoryPath": "/smarte-futterautomaten/",
-        "tags": [
-          "Futterautomat",
-          "Hund",
-          "Vergleich",
-          "Trockenfutter"
-        ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten für Hunde",
-          "description": "Automaten mit passenden Portionsgrößen, stabiler Bauweise und ausreichender Kapazität.",
-          "icon": "🐕",
-          "order": 20
-        },
-        "hubPriority": 84,
-        "project": "pfotentechnik",
-        "heroImage": {
-          "src": "../../assets/images/editorial/dog-automatic-feeder.webp",
-          "alt": "Beste Futterautomaten für Hunde"
-        },
-        "premiumBlocks": [
-          "type: \"answer"
-        ],
-        "comparisonProducts": [
-          "xiaomi-smart-pet-food-feeder-2",
-          "petlibro-granary-wifi-feeder",
-          "wopet-patrol-f07-pro",
-          "honeyguardian-smart-pet-feeder-s305d"
-        ],
-        "comparisonRecommendation": {
-          "title": "Xiaomi für Übersicht, Petlibro für ausgewogene Bedienung",
-          "text": "Beide eignen sich vor allem für kleine bis mittelgroße Hunde. WOPET punktet beim Vorrat, HoneyGuardian beim Preis-Leistungs-Ansatz.",
-          "tableTitle": "Vier Hunde-Futterautomaten verglichen",
-          "cardsTitle": "Modelle für unterschiedliche Haushalte",
-          "criteria": [
-            "Ausgabemenge",
-            "Krokettengröße",
-            "Napf",
-            "Stabilität",
-            "App",
-            "Notstrom"
-          ]
-        },
-        "faq": [
-          "question: \"Eignen sich Katzen-Futterautomaten für Hunde?",
-          "question: \"Ist ein 6-Liter-Behälter automatisch besser für große Hunde?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste futterautomaten fuer katzen",
-      "title": "Beste Futterautomaten für Katzen",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten für Katzen",
-        "seoTitle": "Beste Futterautomaten für Katzen im Vergleich",
-        "slug": "beste-futterautomaten-fuer-katzen",
-        "description": "Futterautomaten für Katzen nach Futterart, Portionierung, App, Zugang und Mehrkatzen-Eignung vergleichen.",
-        "seoDescription": "Futterautomaten für Katzen im Vergleich: Petlibro, PETKIT, Xiaomi, SureFeed, Cat Mate und oneisall verständlich eingeordnet.",
-        "category": "futterautomaten",
-        "categoryLabel": "Futterautomaten",
-        "categoryPath": "/smarte-futterautomaten/",
-        "tags": [
-          "Futterautomat",
-          "Katze",
-          "Vergleich",
-          "Kaufberatung"
-        ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
-        "navigation": {
-          "show": true,
-          "label": "Vergleiche",
-          "section": "vergleiche",
-          "order": 40
-        },
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten für Katzen",
-          "description": "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten.",
-          "icon": "🐈",
-          "order": 10
-        },
-        "hubPriority": 89,
-        "project": "pfotentechnik",
-        "heroImageKey": "feederHero",
-        "premiumBlocks": [
-          "type: \"answer"
-        ],
-        "comparisonProducts": [
-          "petlibro-granary-wifi-feeder",
-          "petkit-fresh-element-solo",
-          "xiaomi-smart-pet-food-feeder-2",
-          "cat-mate-c500",
-          "surefeed-microchip-pet-feeder",
-          "oneisall-5l-automatic-cat-feeder"
-        ],
-        "comparisonRecommendation": {
-          "title": "Granary WiFi ist der ausgewogenste Trockenfutter-Allrounder",
-          "text": "Für Nassfutter und Mehrtierhaushalte sind andere Bauarten sinnvoller. Deshalb ist die Gesamtwahl kein Ersatz für die Auswahl nach Futterart und Zugang.",
-          "tableTitle": "Sechs Katzen-Futterautomaten verglichen",
-          "cardsTitle": "Empfehlungen nach Einsatzbereich",
-          "criteria": [
-            "Futterart",
-            "Portionierung",
-            "Zugang",
-            "App",
-            "Reinigung",
-            "Ausfallsicherheit"
-          ]
-        },
-        "faq": [
-          "question: \"Welcher Futterautomat eignet sich für Nassfutter?",
-          "question: \"Welcher Automat verhindert Futterklau?",
-          "question: \"Wie viele Mahlzeiten sollte der Automat ausgeben?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "animal": "cat",
-          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
       "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md",
       "slug": "beste futterautomaten fuer kleine hunde",
       "title": "Beste Futterautomaten für kleine Hunde",
@@ -3410,53 +3221,125 @@
       "type": "page",
       "data": {
         "title": "Beste Futterautomaten für Welpen",
-        "seoTitle": "Beste Futterautomaten für Welpen im Vergleich",
+        "seoTitle": "Beste Futterautomaten für Welpen 2026: Kaufberatung",
         "slug": "beste-futterautomaten-fuer-welpen",
-        "description": "Welche automatischen Futterautomaten eignen sich für Welpen? Unsere Empfehlungen für kleine Portionen, zuverlässige Fütterung und App-Steuerung.",
-        "seoDescription": "Die besten Futterautomaten für Welpen im Vergleich. Erfahre, welche Modelle sich für regelmäßige kleine Mahlzeiten besonders eignen.",
-        "category": "vergleich",
-        "categoryLabel": "Entscheidungshilfe",
+        "description": "Futterautomaten für Welpen richtig auswählen: kleine Portionen, passende Krokettengröße, lokale Zeitpläne, Stromreserve, Hygiene und sichere Eingewöhnung.",
+        "seoDescription": "Futterautomaten für Welpen vergleichen: Welche Modelle kleine Portionen zuverlässig ausgeben und wann ein Automat noch nicht sinnvoll ist.",
+        "category": "futterautomaten",
+        "categoryLabel": "Futterautomaten",
+        "categoryPath": "/smarte-futterautomaten/",
         "linking": {
           "keywords": [
-            "Welpe",
-            "Welpen"
+            "Futterautomat für Welpen",
+            "Futterautomaten für Welpen",
+            "bester Futterautomat Welpe",
+            "Welpen automatisch füttern",
+            "kleine Portionen Hund",
+            "Futterautomat kleiner Hund",
+            "Welpe mehrere Mahlzeiten"
           ],
           "contexts": [
-            "futterautomaten"
+            "futterautomaten",
+            "welpen",
+            "hunde",
+            "portionierung",
+            "wachstum",
+            "fütterungsplan"
           ],
-          "priority": "high"
+          "priority": "high",
+          "maxOccurrences": 1
         },
         "project": "pfotentechnik",
         "tags": [
-          "futterautomat",
-          "welpen",
-          "hund",
-          "vergleich",
-          "kaufberatung"
+          "Futterautomat",
+          "Welpen",
+          "Hund",
+          "Kaufberatung",
+          "Portionierung",
+          "Wachstum"
         ],
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
           ],
-          "title": "Beste Futterautomaten für Welpen",
-          "description": "Welche automatischen Futterautomaten eignen sich für Welpen? Unsere Empfehlungen für kleine Portionen, zuverlässige Fütterung und App-Steuerung.",
+          "title": "Futterautomaten für Welpen",
+          "description": "Automaten für kleine Mahlzeiten, passende Kroketten und eine sichere Fütterungsroutine auswählen.",
           "icon": "📖",
           "order": 170
         },
+        "hubPriority": 78,
         "decisionKey": "welpen",
         "heroImage": {
           "src": "../../assets/images/editorial/puppy-feeding.webp",
-          "alt": "Beste Futterautomaten für Welpen"
+          "alt": "Welpe an einem standsicheren Futterautomaten mit niedrigem Edelstahlnapf"
         },
         "premiumBlocks": [
-          "type: answer",
-          "type: decision"
+          "type: \"answer",
+          "type: \"quickFacts",
+          "type: \"decision",
+          "type: \"scenarios",
+          "type: \"mistakes",
+          "type: \"expert",
+          "type: \"checklist"
         ],
+        "comparisonProducts": [
+          "xiaomi-smart-pet-food-feeder-2",
+          "petlibro-granary-wifi-feeder",
+          "petkit-fresh-element-solo"
+        ],
+        "comparisonRecommendation": {
+          "title": "Xiaomi für kleine Mengen, PETLIBRO für flexible Zeitpläne",
+          "text": "Xiaomi ist technisch interessant, wenn ein kleiner bis mittelgroßer Welpe und die Napfübersicht im Vordergrund stehen. PETLIBRO bietet mehr Mahlzeiten und eine breitere Portionsspanne, arbeitet aber volumetrisch. PETKIT ist kompakt und gut zerlegbar. Bei allen drei Modellen müssen Mindestportion, Kroketten und spätere Körpergröße individuell geprüft werden.",
+          "tableTitle": "Drei Trockenfutterautomaten für Welpen eingeordnet",
+          "cardsTitle": "Modelle und Grenzen im Detail",
+          "criteria": [
+            "Reale Mindestportion",
+            "Krokettengröße",
+            "Mahlzeiten",
+            "Offline-Zeitplan",
+            "Stromreserve",
+            "Napf und Reinigung",
+            "Standfestigkeit",
+            "Geeignete Hundegröße"
+          ]
+        },
+        "healthBridge": {
+          "eyebrow": "Fressverhalten",
+          "title": "Plötzliche Futterverweigerung ist kein Technikproblem",
+          "text": "Frisst ein Welpe plötzlich deutlich schlechter, erbricht wiederholt, wirkt apathisch oder entwickelt Durchfall, darf nicht nur der Automat neu programmiert werden. Futteraufnahme und Allgemeinzustand müssen direkt kontrolliert und Auffälligkeiten tierärztlich eingeordnet werden.",
+          "href": "/hund-frisst-nicht/",
+          "cta": "Warnzeichen richtig einordnen"
+        },
+        "closingCta": {
+          "title": "Erst Ration und Bauart klären, dann Modelle vergleichen",
+          "text": "Vergleiche nur Geräte, deren reale Mindestportion, Krokettengröße, Napf und Ausfallsicherheit zum aktuellen Welpen und zur erwarteten Endgröße passen.",
+          "productKey": "xiaomi-smart-pet-food-feeder-2",
+          "primaryLabel": "Xiaomi-Modell ansehen",
+          "secondaryHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "secondaryLabel": "Futterautomaten für Hunde vergleichen"
+        },
         "faq": [
-          "question: \"Wie oft sollte ein Welpe gefüttert werden?",
-          "question: \"Kann ein Futterautomat die Betreuung ersetzen?"
+          "question: \"Welcher Futterautomat eignet sich am besten für Welpen?",
+          "question: \"Ab welchem Alter kann ein Welpe einen Futterautomaten nutzen?",
+          "question: \"Wie oft sollte ein Welpe am Tag gefüttert werden?",
+          "question: \"Kann ein Futterautomat die richtige Welpenration berechnen?",
+          "question: \"Wie messe ich die kleinste reale Portion?",
+          "question: \"Ist ein Wiegenapf für Welpen sinnvoll?",
+          "question: \"Ist ein großer Futterbehälter für Welpen besser?",
+          "question: \"Eignet sich ein Katzen-Futterautomat für einen Welpen?",
+          "question: \"Kann ich Nassfutter in einen normalen Futterautomaten geben?",
+          "question: \"Braucht ein Welpen-Futterautomat eine App?",
+          "question: \"Braucht der Automat ein Batterie-Backup?",
+          "question: \"Kann eine Kamera bestätigen, dass der Welpe gefressen hat?",
+          "question: \"Wie gewöhne ich einen Welpen an den Futterautomaten?",
+          "question: \"Was ist bei großen oder schnell wachsenden Welpen wichtig?",
+          "question: \"Wann sollte ich auf einen Futterautomaten verzichten?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -3465,101 +3348,11 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "dog",
-          "petSize": "large",
           "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Passende Hundemodelle vergleichen"
         }
       },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste futterautomaten fuer zwei katzen",
-      "title": "Beste Futterautomaten für zwei Katzen",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten für zwei Katzen",
-        "seoTitle": "Beste Futterautomaten für zwei Katzen im Vergleich",
-        "slug": "beste-futterautomaten-fuer-zwei-katzen",
-        "description": "Futterautomaten für zwei Katzen nach Zugangskontrolle, Doppelschale, getrennten Vorräten und App-Funktionen vergleichen.",
-        "seoDescription": "Futterautomaten für zwei Katzen: SureFeed, PETKIT, oneisall und Petlibro nach Zugang, Doppelschale und Portionierung verglichen.",
-        "category": "futterautomaten",
-        "categoryLabel": "Futterautomaten",
-        "categoryPath": "/smarte-futterautomaten/",
-        "tags": [
-          "Futterautomat",
-          "Zwei Katzen",
-          "Vergleich",
-          "Mehrtierhaushalt"
-        ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten für zwei Katzen",
-          "description": "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang.",
-          "icon": "🐾",
-          "order": 30
-        },
-        "hubPriority": 87,
-        "project": "pfotentechnik",
-        "heroImageKey": "feederHero",
-        "premiumBlocks": [
-          "type: \"answer"
-        ],
-        "comparisonProducts": [
-          "surefeed-microchip-pet-feeder",
-          "surefeed-microchip-pet-feeder-connect",
-          "petkit-yumshare-dual-hopper",
-          "oneisall-5l-automatic-cat-feeder",
-          "petlibro-granary-wifi-feeder"
-        ],
-        "comparisonRecommendation": {
-          "title": "Mikrochip-Zugang bei unterschiedlichen Rationen",
-          "text": "SureFeed ist die stärkste Lösung gegen Futterklau. Für ähnlich fressende Katzen können Dual-Hopper oder Doppelschale komfortabler und günstiger sein.",
-          "tableTitle": "Fünf Lösungen für zwei Katzen",
-          "cardsTitle": "Modelle für Mehrkatzenhaushalte",
-          "criteria": [
-            "Zugangskontrolle",
-            "Zahl der Futterplätze",
-            "Futterarten",
-            "Portionierung",
-            "App",
-            "Reinigung"
-          ]
-        },
-        "faq": [
-          "question: \"Reicht eine Doppelschale für zwei Katzen?",
-          "question: \"Braucht jede Katze einen eigenen Mikrochip-Napf?",
-          "question: \"Kann ein Dual-Hopper zwei Futtersorten trennen?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "animal": "cat",
-          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
+      "issues": []
     },
     {
       "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-akku.md",
@@ -3706,165 +3499,6 @@
       ]
     },
     {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-kamera.md",
-      "slug": "beste futterautomaten mit kamera",
-      "title": "Beste Futterautomaten mit Kamera",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten mit Kamera",
-        "seoTitle": "Beste Futterautomaten mit Kamera im Vergleich",
-        "slug": "beste-futterautomaten-mit-kamera",
-        "description": "Futterautomaten mit Kamera nach Bildkontrolle, App, Portionierung, Datenschutz und Alltagstauglichkeit vergleichen.",
-        "seoDescription": "Futterautomaten mit Kamera im Vergleich: Petlibro, PETKIT und WOPET nach Video, App, Fütterungsplan und Datenschutz eingeordnet.",
-        "category": "futterautomaten",
-        "categoryLabel": "Futterautomaten",
-        "categoryPath": "/smarte-futterautomaten/",
-        "tags": [
-          "Futterautomat",
-          "Kamera",
-          "Vergleich",
-          "App"
-        ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten mit Kamera",
-          "description": "Kamera-Modelle nach Bildkontrolle, App, Portionierung und Datenschutz.",
-          "icon": "📷",
-          "order": 50
-        },
-        "hubPriority": 88,
-        "project": "pfotentechnik",
-        "heroImageKey": "feederComparison",
-        "premiumBlocks": [
-          "type: \"answer"
-        ],
-        "comparisonProducts": [
-          "petlibro-granary-camera-feeder",
-          "petkit-yumshare-dual-hopper",
-          "wopet-heritage-view-camera-feeder"
-        ],
-        "comparisonRecommendation": {
-          "title": "Granary Camera ist die ausgewogenste Gesamtwahl",
-          "text": "Petlibro kombiniert nachvollziehbare Kameradaten mit einem etablierten Fütterungskonzept. PETKIT richtet sich stärker an Zwei-Futter-Szenarien, WOPET an große Vorräte.",
-          "tableTitle": "Drei Kamera-Futterautomaten verglichen",
-          "cardsTitle": "Kamera-Modelle im Detail",
-          "criteria": [
-            "Bild und Nachtsicht",
-            "App",
-            "Portionierung",
-            "Datenschutz",
-            "Offline-Plan",
-            "Reinigung"
-          ]
-        },
-        "faq": [
-          "question: \"Erkennt eine Kamera, welches Tier gefressen hat?",
-          "question: \"Braucht ein Kamera-Futterautomat ein Cloud-Abo?",
-          "question: \"Funktioniert der Zeitplan ohne Internet?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste futterautomaten ohne wlan",
-      "title": "Beste Futterautomaten ohne WLAN",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten ohne WLAN",
-        "seoTitle": "Beste Futterautomaten ohne WLAN im Vergleich",
-        "slug": "beste-futterautomaten-ohne-wlan",
-        "description": "Futterautomaten ohne WLAN nach lokaler Zeitsteuerung, Batterie, Futterart und kontrolliertem Zugang vergleichen.",
-        "seoDescription": "Futterautomaten ohne WLAN: Cat Mate, SureFeed und IMIPAW nach Timer, Batterie, Nassfutter und Mikrochip-Zugang verglichen.",
-        "category": "futterautomaten",
-        "categoryLabel": "Futterautomaten",
-        "categoryPath": "/smarte-futterautomaten/",
-        "tags": [
-          "Futterautomat",
-          "Ohne WLAN",
-          "Vergleich",
-          "Batterie"
-        ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten ohne WLAN",
-          "description": "Einfache und unabhängige Lösungen ohne App oder Cloud.",
-          "icon": "📴",
-          "order": 40
-        },
-        "hubPriority": 86,
-        "project": "pfotentechnik",
-        "heroImageKey": "inline",
-        "premiumBlocks": [
-          "type: \"answer"
-        ],
-        "comparisonProducts": [
-          "cat-mate-c500",
-          "surefeed-microchip-pet-feeder",
-          "imipaw-3l-automatic-cat-feeder"
-        ],
-        "comparisonRecommendation": {
-          "title": "Cat Mate ist die vielseitigste reine Timer-Lösung",
-          "text": "Für mehrere vorbereitete Mahlzeiten ist der C500 besonders klar. SureFeed kontrolliert statt Zeiten den Zugang; IMIPAW dosiert Trockenfutter aus einem Vorrat.",
-          "tableTitle": "Drei Offline-Konzepte verglichen",
-          "cardsTitle": "Futterautomaten ohne WLAN im Detail",
-          "criteria": [
-            "Steuerungsprinzip",
-            "Futterart",
-            "Batterie",
-            "Portionierung",
-            "Zugang",
-            "Reinigung"
-          ]
-        },
-        "faq": [
-          "question: \"Ist ein Automat ohne WLAN zuverlässiger?",
-          "question: \"Welches Modell eignet sich für Nassfutter?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
       "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-unter-100-euro.md",
       "slug": "beste futterautomaten unter 100 euro",
       "title": "Beste Futterautomaten unter 100 Euro",
@@ -3929,10 +3563,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/biofilm-im-katzentrinkbrunnen.md",
       "slug": "biofilm im katzentrinkbrunnen",
-      "title": "Biofilm im Katzentrinkbrunnen: Was ist der glitschige Belag?",
+      "title": "Schleim im Katzentrinkbrunnen: Biofilm entfernen",
       "type": "page",
       "data": {
-        "title": "Biofilm im Katzentrinkbrunnen: Was ist der glitschige Belag?",
+        "title": "Schleim im Katzentrinkbrunnen: Biofilm entfernen",
         "slug": "biofilm-im-katzentrinkbrunnen",
         "type": "knowledge",
         "layout": "knowledge",
@@ -3954,7 +3588,7 @@
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -3964,7 +3598,14 @@
           "reinigung"
         ],
         "hub": "{ sections: [wissen], title: \"Biofilm im Katzenbrunnen\", description: \"Glitschigen Belag erkennen, entfernen und vorbeugen.\", order: 49 }",
-        "seo": "{ title: \"Biofilm im Katzentrinkbrunnen entfernen\", description: \"Was der glitschige Film im Katzenbrunnen ist und wie Tank, Pumpe und Leitungen sauber werden.\", canonical: \"/biofilm-im-katzentrinkbrunnen/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "seo": {
+          "title": "Schleim im Katzenbrunnen: Biofilm sicher entfernen",
+          "description": "Glitschigen Biofilm im Katzenbrunnen erkennen und entfernen: Tank, Pumpe, Rotor, Leitungen und Filter mechanisch richtig reinigen.",
+          "canonical": "/biofilm-im-katzentrinkbrunnen/",
+          "sitemap": true,
+          "priority": 0.85,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, hygiene, reinigung], limit: 4 }",
         "faq": [
           "{ question: \"Ist der Schleim im Katzenbrunnen Biofilm?\", answer: \"Ein glitschiger, haftender Film ist häufig Biofilm aus Mikroorganismen und organischem Material. Verfärbung oder Geruch können weitere Hinweise sein.\" }",
@@ -4021,10 +3662,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
       "slug": "filter im katzentrinkbrunnen wechseln",
-      "title": "Wie oft den Filter im Katzentrinkbrunnen wechseln?",
+      "title": "Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen",
       "type": "page",
       "data": {
-        "title": "Wie oft den Filter im Katzentrinkbrunnen wechseln?",
+        "title": "Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen",
         "slug": "filter-im-katzentrinkbrunnen-wechseln",
         "type": "knowledge",
         "layout": "knowledge",
@@ -4039,12 +3680,13 @@
           ],
           "contexts": [
             "trinkbrunnen"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -4054,7 +3696,14 @@
           "folgekosten"
         ],
         "hub": "{ sections: [wissen], title: \"Filter im Katzenbrunnen wechseln\", description: \"Intervalle, Filterarten und Folgekosten richtig einordnen.\", order: 51 }",
-        "seo": "{ title: \"Katzenbrunnen-Filter wechseln: Wie oft?\", description: \"Filterintervalle bei Katzentrinkbrunnen und Warnzeichen für einen vorzeitigen Wechsel.\", canonical: \"/filter-im-katzentrinkbrunnen-wechseln/\", sitemap: true, priority: 0.75, changefreq: yearly }",
+        "seo": {
+          "title": "Katzenbrunnen-Filter wechseln: alle 2–4 Wochen?",
+          "description": "Katzenbrunnen-Filter meist alle zwei bis vier Wochen wechseln. Tierzahl, Haare, Geruch, Wasserhärte und Durchfluss können das Intervall verkürzen.",
+          "canonical": "/filter-im-katzentrinkbrunnen-wechseln/",
+          "sitemap": true,
+          "priority": 0.8,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, filter, hygiene], limit: 4 }",
         "faq": [
           "{ question: \"Reicht ein Filter vier Wochen?\", answer: \"Vier Wochen sind bei manchen Herstellern ein Richtwert. Mehrere Tiere, hartes Wasser, viele Haare oder sichtbare Verschmutzung können einen früheren Wechsel erfordern.\" }",
@@ -4269,25 +3918,29 @@
       "type": "page",
       "data": {
         "title": "Futterautomat bei Übergewicht",
-        "seoTitle": "Futterautomat bei Übergewicht: Portionen kontrolliert planen",
+        "seoTitle": "Futterautomat bei Übergewicht: Portionen sicher planen",
         "slug": "futterautomat-bei-uebergewicht",
-        "description": "Wie Futterautomaten einen fachlich begleiteten Gewichtsplan mit kleinen, nachvollziehbaren Portionen, Wiegekontrolle und getrenntem Futterzugang unterstützen.",
-        "seoDescription": "Futterautomat bei Übergewicht: Tagesration, Portionskontrolle, Wiegefunktion, Snacks und Mehrtierhaushalt sinnvoll in einen Gewichtsplan integrieren.",
+        "description": "Wie Futterautomaten einen tierärztlich begleiteten Gewichtsplan bei Hund oder Katze mit abgewogenen Portionen, kontrolliertem Zugang und Verlaufskontrolle unterstützen.",
+        "seoDescription": "Futterautomat bei Übergewicht: Tagesration abwiegen, Extras einrechnen, Futterzugang sichern und Gewichtsverlauf bei Hund oder Katze kontrollieren.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
             "Futterautomat bei Übergewicht",
             "Futterautomat zum Abnehmen",
+            "Futterautomat Diät Katze",
+            "Futterautomat Diät Hund",
             "Portionskontrolle Katze",
             "Portionskontrolle Hund",
-            "Futterautomat Diät",
-            "Futterautomat Gewichtsmanagement"
+            "Futterautomat Gewichtsmanagement",
+            "Mikrochip Futterautomat Übergewicht"
           ],
           "contexts": [
             "Futterautomaten",
             "Übergewicht",
             "Gewichtsmanagement",
-            "Portionierung"
+            "Portionierung",
+            "Mehrkatzenhaushalt",
+            "Futterzugang"
           ],
           "priority": "high",
           "maxOccurrences": 1
@@ -4300,28 +3953,32 @@
           "Gewichtsmanagement",
           "Portionierung",
           "Diät",
-          "Wiegefunktion"
+          "Wiegefunktion",
+          "Mikrochip"
         ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-19",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Futterautomat bei Übergewicht",
-          "description": "Tagesration, Portionen, Snacks und Verlauf mit Technik kontrolliert umsetzen.",
+          "description": "Abgewogene Tagesration, Snacks, Futterzugang und Gewichtsverlauf mit Technik kontrolliert umsetzen.",
           "icon": "📖",
           "order": 240
         },
-        "hubPriority": 69,
+        "hubPriority": 75,
         "project": "pfotentechnik",
         "heroImageKey": "feederComparison",
         "premiumBlocks": [
           "type: \"answer",
           "type: \"quickFacts",
+          "type: \"decision",
           "type: \"scenarios",
-          "type: \"products",
           "type: \"steps",
           "type: \"mistakes",
           "type: \"expert",
@@ -4334,43 +3991,52 @@
           "surefeed-microchip-pet-feeder"
         ],
         "comparisonRecommendation": {
-          "title": "Feine Dosierung und kontrollierter Zugang sind wichtiger als Behältergröße",
-          "text": "Wiegefunktion, kleine Förderschritte, Protokolle und Mikrochip-Zugang können die Umsetzung erleichtern. Sie ersetzen weder Zielration noch Verlaufskontrolle.",
-          "tableTitle": "Technische Hilfen für einen Gewichtsplan",
-          "cardsTitle": "Die Modelle im Detail",
+          "title": "Dosierung, Restmengenkontrolle und Tierzugang getrennt bewerten",
+          "text": "Xiaomi unterstützt die Restmengenkontrolle, PETLIBRO verteilt viele Mahlzeiten, PETKIT ist kompakt und SureFeed schützt eine individuelle Ration. Für einen belastbaren Gewichtsplan sind gemessene Grammwerte und kontrollierter Zugang wichtiger als Behältergröße oder Kamerafunktionen.",
+          "tableTitle": "Technische Hilfen für kontrollierte Fütterung",
+          "cardsTitle": "Vier Modelle mit unterschiedlichen Aufgaben",
           "criteria": [
-            "Dosierschritte",
-            "Wiegekontrolle",
-            "Protokoll",
-            "Mehrere Mahlzeiten",
+            "Reale Mindestportion",
+            "Ausgabestreuung",
+            "Restmengenkontrolle",
+            "Mahlzeitenzahl",
+            "Offline-Betrieb",
+            "Stromreserve",
             "Zugangskontrolle",
             "Reinigung"
           ]
         },
         "healthBridge": {
           "eyebrow": "Gesundheit",
-          "title": "Schnelle Gewichtsabnahme ist kein Erfolgssignal",
-          "text": "Frisst das Tier plötzlich weniger, wirkt matt oder verliert schneller Gewicht als geplant, sollte nicht nur die Automateneinstellung verändert werden. Solche Veränderungen gehören fachlich beurteilt.",
-          "href": "/uebergewicht-bei-katzen-vermeiden/",
-          "cta": "Gewicht und Körperzustand richtig kontrollieren"
+          "title": "Ungeplant schnelle Abnahme oder Futterverweigerung sofort einordnen",
+          "text": "Frisst das Tier deutlich schlechter, erbricht, wirkt matt oder verliert schneller Gewicht als vereinbart, darf nicht nur die Automateneinstellung geändert werden. Besonders bei Katzen kann längere Futterverweigerung gefährlich werden.",
+          "href": "/futterautomat-und-ernaehrung/",
+          "cta": "Ernährungsplan und Technik trennen"
         },
         "closingCta": {
-          "title": "Passende Modelle nach Portionskontrolle vergleichen",
-          "text": "Achte auf kleine Ausgabeschritte, kontrollierten Futterzugang und eine nachvollziehbare Dokumentation.",
+          "title": "Technik passend zur Tierart und Zugangssituation auswählen",
+          "text": "Vergleiche Dosierung, Stromreserve und Napf bei klassischen Automaten. Bei mehreren Tieren muss zusätzlich geklärt werden, ob eine individuelle Zugangskontrolle erforderlich ist.",
           "productKey": "xiaomi-smart-pet-food-feeder-2",
-          "primaryLabel": "Passende Modelle vergleichen",
-          "secondaryHref": "/futterautomat-und-ernaehrung/",
-          "secondaryLabel": "Tagesration richtig planen"
+          "primaryLabel": "Wiegenapf-Modell ansehen",
+          "secondaryHref": "/vergleiche/",
+          "secondaryLabel": "Vergleiche nach Tier öffnen"
         },
         "faq": [
           "question: \"Hilft ein Futterautomat automatisch beim Abnehmen?",
+          "question: \"Welcher Futterautomat eignet sich bei Übergewicht am besten?",
           "question: \"Sind mehrere kleine Mahlzeiten besser zum Abnehmen?",
-          "question: \"Kann ich die Portionsangabe des Automaten direkt übernehmen?",
-          "question: \"Wie rechne ich Leckerlis ein?",
-          "question: \"Ist eine Wiegefunktion sinnvoll?",
-          "question: \"Welcher Automat eignet sich bei mehreren Katzen?",
+          "question: \"Wie genau sind die Portionsangaben eines Futterautomaten?",
+          "question: \"Wie kalibriere ich eine Automatenportion?",
+          "question: \"Soll ich Futter mit einem Messbecher oder einer Waage portionieren?",
+          "question: \"Wie viele Kalorien dürfen Leckerlis ausmachen?",
+          "question: \"Muss ich Trainingsfutter und Kauartikel einrechnen?",
+          "question: \"Ist ein Wiegenapf bei Übergewicht sinnvoll?",
+          "question: \"Welcher Automat eignet sich, wenn nur eine Katze abnehmen soll?",
+          "question: \"Kann ein Mikrochip-Futterautomat die Portion automatisch berechnen?",
+          "question: \"Wie schnell sollte Hund oder Katze abnehmen?",
           "question: \"Wie oft sollte das Gewicht kontrolliert werden?",
-          "question: \"Was tun, wenn das Tier plötzlich nicht frisst?"
+          "question: \"Braucht ein Diät-Futterautomat eine App oder Kamera?",
+          "question: \"Was tun, wenn das Tier plötzlich nicht mehr frisst?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -4378,8 +4044,8 @@
         },
         "recommendationJourney": {
           "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonHref": "/vergleiche/",
+          "comparisonLabel": "Vergleiche für Hund oder Katze öffnen"
         }
       },
       "issues": []
@@ -4483,25 +4149,29 @@
       "type": "page",
       "data": {
         "title": "Futterautomat für zwei Katzen",
-        "seoTitle": "Futterautomat für zwei Katzen: getrennt und stressarm füttern",
+        "seoTitle": "Futterautomat für zwei Katzen: Doppelschale oder Mikrochip?",
         "slug": "futterautomat-fuer-zwei-katzen",
-        "description": "Futterautomaten für zwei Katzen richtig auswählen: Doppelschale, getrennte Automaten, Mikrochip-Zugang, Futterneid, unterschiedliche Rationen und geeignete Modelle.",
-        "seoDescription": "Futterautomat für zwei Katzen gesucht? Erfahre, wann Doppelschale, getrennte Automaten oder Mikrochip-Zugang sinnvoll sind und welche Modelle passen.",
+        "description": "Welcher Futterautomat passt zu zwei Katzen? Entscheidungshilfe für Doppelschale, zwei getrennte Automaten, Mikrochip-Zugang, Nassfutter und unterschiedliche Rationen.",
+        "seoDescription": "Futterautomat für zwei Katzen auswählen: Wann Doppelschale, zwei Geräte oder Mikrochip-Zugang sinnvoll sind – mit Lösungen bei Futterneid und Diätfutter.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
             "Futterautomat für zwei Katzen",
             "Futterautomat zwei Katzen",
+            "Futterautomat für mehrere Katzen",
             "zwei Katzen getrennt füttern",
             "Futterneid Katze",
             "Mikrochip Futterautomat Katze",
+            "Futterautomat Doppelschale",
             "Mehrkatzenhaushalt füttern"
           ],
           "contexts": [
             "Futterautomaten",
             "Mehrkatzenhaushalt",
             "Katzenernährung",
-            "Futterneid"
+            "Futterneid",
+            "Mikrochip",
+            "Doppelschale"
           ],
           "priority": "high",
           "maxOccurrences": 1
@@ -4514,76 +4184,67 @@
           "Mehrkatzenhaushalt",
           "Fütterung",
           "Futterneid",
-          "Mikrochip"
+          "Mikrochip",
+          "Doppelschale"
         ],
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-24",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Futterautomat für zwei Katzen",
-          "description": "Doppelschale, getrennte Automaten und Mikrochip-Zugang sinnvoll auswählen.",
+          "description": "Doppelschale, zwei getrennte Geräte und Mikrochip-Zugang nach Fressverhalten auswählen.",
           "icon": "📖",
           "order": 260
         },
-        "hubPriority": 70,
+        "hubPriority": 80,
         "project": "pfotentechnik",
         "heroImageKey": "feederHero",
         "premiumBlocks": [
           "type: \"answer",
           "type: \"quickFacts",
-          "type: \"scenarios",
           "type: \"decision",
+          "type: \"scenarios",
           "type: \"mistakes",
           "type: \"expert",
           "type: \"checklist"
         ],
-        "comparisonProducts": [
-          "surefeed-microchip-pet-feeder",
-          "petkit-yumshare-dual-hopper",
-          "petlibro-granary-camera-feeder",
-          "petlibro-granary-wifi-feeder"
-        ],
-        "comparisonRecommendation": {
-          "title": "Vier technische Ansätze, vier unterschiedliche Aufgaben",
-          "text": "Mikrochip-Zugang trennt Tiere, Dual-Hopper trennt Futtersorten, Kamera erleichtert Beobachtung und ein klassischer Vorratsautomat organisiert Zeit und Menge. Diese Funktionen sind nicht austauschbar.",
-          "tableTitle": "Lösungen für zwei Katzen im Vergleich",
-          "cardsTitle": "Die Modelle im Detail",
-          "criteria": [
-            "Zugangskontrolle",
-            "Futterarten",
-            "Portionierung",
-            "Beobachtung",
-            "Reinigung",
-            "Stresspotenzial"
-          ]
-        },
         "healthBridge": {
           "eyebrow": "Gesundheit",
-          "title": "Unterschiedliche Rationen brauchen klare Trennung",
-          "text": "Bei Übergewicht, Nierenerkrankung, Diabetes oder Medikamenten muss zuverlässig verhindert werden, dass die falsche Katze frisst. Die passende Ration sollte mit der Tierarztpraxis abgestimmt werden.",
-          "href": "/uebergewicht-bei-katzen-vermeiden/",
-          "cta": "Gewicht und Portionen richtig kontrollieren"
+          "title": "Medizinisch unterschiedliche Rationen müssen zuverlässig getrennt bleiben",
+          "text": "Bei Übergewicht, Nierenerkrankung, Diabetes, Allergien oder Medikamenten darf die falsche Katze nicht regelmäßig mitfressen. Der Automat setzt nur den Fütterungsplan um; Ration und Futterwahl sollten mit der Tierarztpraxis abgestimmt werden.",
+          "href": "/futterautomat-bei-uebergewicht/",
+          "cta": "Portionskontrolle bei Übergewicht"
         },
         "closingCta": {
-          "title": "Die klarste Lösung für individuelle Rationen",
-          "text": "Wenn jede Katze nur ihr eigenes Futter erreichen darf, ist ein Mikrochip-Zugang meist verlässlicher als Doppelschale, Kamera oder zwei Futterkammern.",
+          "title": "Jetzt die passende Bauart auswählen",
+          "text": "Vergleiche Mikrochip-Näpfe, Doppelschalen, getrennte Futterplätze und Dual-Hopper danach, welches Problem in deinem Haushalt tatsächlich gelöst werden muss.",
           "productKey": "surefeed-microchip-pet-feeder",
-          "primaryLabel": "Aktuellen Preis prüfen",
-          "secondaryHref": "/smarte-futterautomaten/",
-          "secondaryLabel": "Alle Futterautomaten vergleichen"
+          "primaryLabel": "Mikrochip-Lösung ansehen",
+          "secondaryHref": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "secondaryLabel": "Alle Lösungen vergleichen"
         },
         "faq": [
-          "question: \"Reicht ein Futterautomat mit Doppelschale für zwei Katzen?",
+          "question: \"Welcher Futterautomat ist für zwei Katzen am besten?",
+          "question: \"Kann ein Futterautomat zwei Katzen füttern?",
           "question: \"Brauche ich für zwei Katzen zwei Futterautomaten?",
+          "question: \"Reicht ein Futterautomat mit Doppelschale für zwei Katzen?",
+          "question: \"Was ist der Unterschied zwischen Doppelschale und Dual-Hopper?",
+          "question: \"Welcher Futterautomat eignet sich bei unterschiedlichem Katzenfutter?",
+          "question: \"Welcher Futterautomat verhindert Futterklau?",
+          "question: \"Kann ich Nassfutter für zwei Katzen automatisch bereitstellen?",
+          "question: \"Wie weit sollten zwei Futterautomaten auseinanderstehen?",
           "question: \"Kann eine Kamera erkennen, welche Katze gefressen hat?",
-          "question: \"Was ist der Unterschied zwischen Dual-Hopper und Mikrochip-Futterautomat?",
-          "question: \"Wie verhindere ich Futterneid bei zwei Katzen?",
-          "question: \"Können zwei Katzen aus einem Automaten mit zwei Schalen fressen?",
-          "question: \"Ist ein Mikrochip-Futterautomat stressig?",
-          "question: \"Welcher Futterautomat ist für zwei Katzen meist die beste Wahl?"
+          "question: \"Sind App-Protokolle bei zwei Katzen aussagekräftig?",
+          "question: \"Ist ein Mikrochip-Futterautomat für zwei Katzen stressig?",
+          "question: \"Kann eine dominante Katze einen Mikrochip-Napf blockieren?",
+          "question: \"Welcher Futterautomat eignet sich bei Diätfutter oder Medikamenten?",
+          "question: \"Welche günstige Lösung gibt es für zwei Katzen?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -4592,8 +4253,8 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "comparisonLabel": "Vergleich für zwei Katzen ansehen"
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "comparisonLabel": "Modelle für zwei Katzen vergleichen"
         }
       },
       "issues": [
@@ -4859,7 +4520,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
@@ -5006,13 +4667,7 @@
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
+      "issues": []
     },
     {
       "file": "apps/pfotentechnik/src/content/pages/futterautomat-mit-app.md",
@@ -5138,10 +4793,10 @@
       "type": "page",
       "data": {
         "title": "Futterautomaten mit Kamera",
-        "seoTitle": "Futterautomat mit Kamera: Vergleich und Kaufberatung",
+        "seoTitle": "Futterautomat mit Kamera: sinnvoll oder unnötig?",
         "slug": "futterautomat-mit-kamera",
         "description": "Futterautomaten mit Kamera vergleichen: Livebild, Nachtsicht, Audio, Speicher, Datenschutz, Tiererkennung und zuverlässige Futterausgabe.",
-        "seoDescription": "Futterautomat mit Kamera gesucht? Erfahre, wann Video sinnvoll ist, worauf du bei Nachtsicht, App, Datenschutz und Tiererkennung achten solltest.",
+        "seoDescription": "Futterautomat mit Kamera einordnen: Was Livebild wirklich zeigt, welche Grenzen Video hat und welche Modelle sich im direkten Vergleich unterscheiden.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
@@ -5171,7 +4826,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-08",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
@@ -5216,8 +4871,8 @@
           "text": "Wenn Livekontrolle deinen Alltag verbessert, ist ein Kameramodell sinnvoll. Für reine Zeitpläne reicht meist ein günstigeres App-System.",
           "productKey": "petlibro-granary-camera-feeder",
           "primaryLabel": "Aktuelles Angebot prüfen",
-          "secondaryHref": "/futterautomat-mit-app/",
-          "secondaryLabel": "App-Modelle ohne Kamera ansehen"
+          "secondaryHref": "/vergleiche/beste-futterautomaten-mit-kamera/",
+          "secondaryLabel": "Kamera-Modelle direkt vergleichen"
         },
         "faq": [
           "question: \"Zeigt die Kamera, ob meine Katze oder mein Hund gefressen hat?",
@@ -5233,7 +4888,7 @@
         },
         "recommendationJourney": {
           "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-mit-kamera/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -5287,7 +4942,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-08",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
@@ -5378,10 +5033,10 @@
       "type": "page",
       "data": {
         "title": "Futterautomat ohne WLAN",
-        "seoTitle": "Futterautomat ohne WLAN: zuverlässig und ohne App",
+        "seoTitle": "Futterautomat ohne WLAN: ohne App, Cloud und Konto",
         "slug": "futterautomat-ohne-wlan",
         "description": "Futterautomaten ohne WLAN nach Zeitsteuerung, Batterie, Bedienung und Ausfallsicherheit auswählen.",
-        "seoDescription": "Futterautomat ohne WLAN finden: Vorteile, Grenzen und Prüfkriterien für lokale Zeitpläne, Batteriebetrieb und einfache Bedienung.",
+        "seoDescription": "Futterautomat ohne WLAN auswählen: drei Offline-Konzepte, lokale Zeitpläne, Batteriebetrieb, Datenschutz und direkte Modelle im Vergleich.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
@@ -5405,7 +5060,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
@@ -5424,8 +5079,8 @@
         ],
         "comparisonProducts": [
           "cat-mate-c500",
-          "petlibro-granary-wifi-feeder",
-          "petkit-fresh-element-solo"
+          "surefeed-microchip-pet-feeder",
+          "imipaw-3l"
         ],
         "comparisonRecommendation": {
           "title": "Offline ist ein Bedienkonzept, kein Qualitätsurteil",
@@ -5443,7 +5098,11 @@
         },
         "faq": [
           "question: \"Ist ein Futterautomat ohne WLAN ausfallsicherer?",
-          "question: \"Kann ich einen App-Futterautomaten ohne WLAN verwenden?"
+          "question: \"Kann ich einen App-Futterautomaten ohne WLAN verwenden?",
+          "question: \"Welcher Futterautomat funktioniert vollständig ohne App?",
+          "question: \"Gibt es Futterautomaten ohne WLAN für Nassfutter?",
+          "question: \"Speichert ein Futterautomat ohne WLAN den Zeitplan bei Batteriewechsel?",
+          "question: \"Ist ein Offline-Futterautomat datenschutzfreundlicher?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -5451,7 +5110,7 @@
         },
         "recommendationJourney": {
           "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-ohne-wlan/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -6555,10 +6214,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/kalk-katzentrinkbrunnen-entfernen.md",
       "slug": "kalk katzentrinkbrunnen entfernen",
-      "title": "Kalk im Katzentrinkbrunnen entfernen",
+      "title": "Katzenbrunnen entkalken: Kalk sicher entfernen",
       "type": "page",
       "data": {
-        "title": "Kalk im Katzentrinkbrunnen entfernen",
+        "title": "Katzenbrunnen entkalken: Kalk sicher entfernen",
         "slug": "kalk-katzentrinkbrunnen-entfernen",
         "type": "knowledge",
         "layout": "knowledge",
@@ -6573,12 +6232,13 @@
           ],
           "contexts": [
             "trinkbrunnen"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Wasser & Hygiene",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -6589,7 +6249,14 @@
           "hygiene"
         ],
         "hub": "{ sections: [wissen], title: \"Kalk im Katzentrinkbrunnen entfernen\", description: \"Materialschonend entkalken, spülen und die Pumpe schützen.\", order: 58 }",
-        "seo": "{ title: \"Katzentrinkbrunnen entkalken: sicher reinigen\", description: \"Kalk im Katzenbrunnen entfernen: geeignete Schritte für Tank, Edelstahlfläche und Pumpe sowie wichtige Materialgrenzen.\", canonical: \"/kalk-katzentrinkbrunnen-entfernen/\", sitemap: true, priority: 0.75, changefreq: yearly }",
+        "seo": {
+          "title": "Katzenbrunnen entkalken: Kalk sicher entfernen",
+          "description": "Kalk im Katzenbrunnen materialschonend entfernen: Pumpe, Rotor, Tank und Edelstahl reinigen, gründlich spülen und Schäden vermeiden.",
+          "canonical": "/kalk-katzentrinkbrunnen-entfernen/",
+          "sitemap": true,
+          "priority": 0.8,
+          "changefreq": "yearly"
+        },
         "heroImage": {
           "src": "../../assets/images/editorial/kalk-katzentrinkbrunnen-entfernen.webp",
           "alt": "Zerlegter Katzenbrunnen bei einer materialschonenden Reinigung"
@@ -6930,10 +6597,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-laut-pumpe.md",
       "slug": "katzentrinkbrunnen laut pumpe",
-      "title": "Katzentrinkbrunnen ist laut: Ursachen und Lösungen",
+      "title": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
       "type": "page",
       "data": {
-        "title": "Katzentrinkbrunnen ist laut: Ursachen und Lösungen",
+        "title": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
         "slug": "katzentrinkbrunnen-laut-pumpe",
         "type": "knowledge",
         "layout": "knowledge",
@@ -6948,12 +6615,13 @@
           ],
           "contexts": [
             "trinkbrunnen"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -6963,7 +6631,14 @@
           "wartung"
         ],
         "hub": "{ sections: [wissen], title: \"Wenn der Katzenbrunnen laut wird\", description: \"Brummen, Rattern und Plätschern systematisch beheben.\", order: 55 }",
-        "seo": "{ title: \"Katzentrinkbrunnen laut: Pumpe prüfen\", description: \"Ursachen für Brummen und Rattern: Wasserstand, Filter, Rotor, Luft, Kalk und Untergrund.\", canonical: \"/katzentrinkbrunnen-laut-pumpe/\", sitemap: true, priority: 0.75, changefreq: yearly }",
+        "seo": {
+          "title": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
+          "description": "Katzenbrunnen brummt oder rattert? Wasserstand, Luft, Filter, Haare, Kalk, Rotor und Untergrund in der richtigen Reihenfolge prüfen.",
+          "canonical": "/katzentrinkbrunnen-laut-pumpe/",
+          "sitemap": true,
+          "priority": 0.8,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, pumpe, wartung], limit: 4 }",
         "premiumBlocks": [
           "{ type: products, eyebrow: \"Leise Modelle\", title: \"Aktuelle Trinkbrunnen einordnen\", text: \"Hersteller-dB sind nur ein Hinweis; Wartung und Aufstellung bleiben entscheidend.\", productFilter: trinkbrunnen, productLimit: 3 }"
@@ -6978,10 +6653,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
       "slug": "katzentrinkbrunnen material edelstahl keramik kunststoff",
-      "title": "Edelstahl, Keramik oder Kunststoff: Welches Material beim Katzenbrunnen?",
+      "title": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
       "type": "page",
       "data": {
-        "title": "Edelstahl, Keramik oder Kunststoff: Welches Material beim Katzenbrunnen?",
+        "title": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
         "slug": "katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
         "type": "knowledge",
         "layout": "knowledge",
@@ -6997,12 +6672,13 @@
           ],
           "contexts": [
             "trinkbrunnen"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -7012,7 +6688,14 @@
           "kunststoff"
         ],
         "hub": "{ sections: [wissen], title: \"Welches Material beim Katzenbrunnen?\", description: \"Edelstahl, Keramik und Kunststoff fair vergleichen.\", order: 50 }",
-        "seo": "{ title: \"Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?\", description: \"Materialvergleich für Katzentrinkbrunnen mit Hygiene, Reinigung, Gewicht und Haltbarkeit.\", canonical: \"/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/\", sitemap: true, priority: 0.75, changefreq: yearly }",
+        "seo": {
+          "title": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
+          "description": "Edelstahl, Keramik und Kunststoff bei Katzenbrunnen vergleichen: Hygiene, Kratzer, Gewicht, Bruchrisiko, Geräusch und Reinigung.",
+          "canonical": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+          "sitemap": true,
+          "priority": 0.8,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, hygiene, kaufberatung], limit: 4 }",
         "premiumBlocks": [
           "{ type: products, eyebrow: \"Material und Reinigung\", title: \"Aktuelle Trinkbrunnen vergleichen\", text: \"Die Produktdaten werden automatisch aus der Trinkbrunnen-Collection geladen.\", productFilter: trinkbrunnen, productLimit: 3 }"
@@ -7099,10 +6782,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
       "slug": "katzentrinkbrunnen richtig reinigen",
-      "title": "Katzentrinkbrunnen richtig reinigen: Schritt für Schritt",
+      "title": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
       "type": "page",
       "data": {
-        "title": "Katzentrinkbrunnen richtig reinigen: Schritt für Schritt",
+        "title": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
         "slug": "katzentrinkbrunnen-richtig-reinigen",
         "type": "knowledge",
         "layout": "knowledge",
@@ -7123,7 +6806,7 @@
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-24",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -7133,7 +6816,14 @@
           "biofilm"
         ],
         "hub": "{ sections: [wissen], title: \"Katzentrinkbrunnen richtig reinigen\", description: \"Pumpe, Tank und Auslauf ohne blinde Stellen säubern.\", order: 48 }",
-        "seo": "{ title: \"Katzentrinkbrunnen reinigen: Pumpe, Filter & Tank\", description: \"Katzentrinkbrunnen gründlich reinigen: Anleitung für Tank, Pumpe, Filter, Dichtungen und schwer erreichbare Stellen.\", canonical: \"/katzentrinkbrunnen-richtig-reinigen/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "seo": {
+          "title": "Katzentrinkbrunnen reinigen: 7 Schritte für Pumpe & Tank",
+          "description": "Katzenbrunnen richtig reinigen: Wasser wechseln, Filter entnehmen, Tank, Dichtungen, Auslauf, Pumpe und Rotorraum gründlich säubern.",
+          "canonical": "/katzentrinkbrunnen-richtig-reinigen/",
+          "sitemap": true,
+          "priority": 0.85,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, hygiene, biofilm], limit: 4 }",
         "faq": [
           "{ question: \"Wie oft sollte ein Katzenbrunnen gereinigt werden?\", answer: \"Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten, starkem Haar- oder Staubeintrag und sichtbarem Belag ist sie häufiger nötig.\" }",
@@ -7493,7 +7183,7 @@
           "role": "Redaktion"
         },
         "publishedAt": "2026-07-08",
-        "updatedAt": "2026-07-17",
+        "updatedAt": "2026-07-25",
         "navigation": {
           "show": true,
           "label": "Futterautomaten",
@@ -8008,10 +7698,10 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-mehrere-katzen.md",
       "slug": "trinkbrunnen fuer mehrere katzen",
-      "title": "Trinkbrunnen für mehrere Katzen: Größe, Zugang und RFID",
+      "title": "Trinkbrunnen für zwei oder mehr Katzen",
       "type": "page",
       "data": {
-        "title": "Trinkbrunnen für mehrere Katzen: Größe, Zugang und RFID",
+        "title": "Trinkbrunnen für zwei oder mehr Katzen",
         "slug": "trinkbrunnen-fuer-mehrere-katzen",
         "type": "knowledge",
         "layout": "knowledge",
@@ -8026,12 +7716,13 @@
           ],
           "contexts": [
             "trinkbrunnen"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -8041,7 +7732,14 @@
           "wasser"
         ],
         "hub": "{ sections: [wissen], title: \"Trinkbrunnen für mehrere Katzen\", description: \"Tankgröße, Ausweichstellen und RFID sinnvoll planen.\", order: 54 }",
-        "seo": "{ title: \"Trinkbrunnen für mehrere Katzen auswählen\", description: \"Mehrkatzen-Trinkbrunnen nach Kapazität, Zugang, Hygiene, App und RFID auswählen.\", canonical: \"/trinkbrunnen-fuer-mehrere-katzen/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "seo": {
+          "title": "Trinkbrunnen für 2 Katzen: Größe, Anzahl & RFID",
+          "description": "Für zwei Katzen reichen nicht nur ein großer Tank: drei getrennte Wasserstellen, Hygiene, RFID-Grenzen und passende Katzenbrunnen.",
+          "canonical": "/trinkbrunnen-fuer-mehrere-katzen/",
+          "sitemap": true,
+          "priority": 0.85,
+          "changefreq": "yearly"
+        },
         "related": "{ tags: [trinkbrunnen, mehrkatzen, rfid], limit: 4 }",
         "premiumBlocks": [
           "{ type: products, eyebrow: \"Passende Auswahl\", title: \"Trinkbrunnen für unterschiedliche Haushalte\", text: \"Die Karten werden automatisch aus der Produkt-Collection geladen.\", productFilter: trinkbrunnen, productLimit: 3 }"
@@ -8208,12 +7906,12 @@
       "type": "page",
       "data": {
         "title": "Trinkbrunnen für Katzen und Hunde",
-        "seoTitle": "Trinkbrunnen für Katzen & Hunde: Vergleich und Kaufberatung",
+        "seoTitle": "Trinkbrunnen für Katzen & Hunde: Auswahl und Vergleich",
         "slug": "trinkbrunnen",
         "type": "page",
         "layout": "page",
         "description": "Trinkbrunnen für Katzen und Hunde nach Reinigung, Material, Lautstärke, Kapazität, Filter und Betriebsart vergleichen.",
-        "seoDescription": "Trinkbrunnen für Katzen und Hunde vergleichen: Reinigung, Material, Lautstärke, Filter, Akku, Kapazität und passende Modelle verständlich erklärt.",
+        "seoDescription": "Trinkbrunnen auswählen und vergleichen: Katzenbrunnen, Hundebrunnen, Reinigung, Filter, Material, Lautstärke, Akku und Mehrtierhaushalt.",
         "category": "trinkbrunnen",
         "linking": {
           "keywords": [
@@ -8253,7 +7951,7 @@
           "role": "Redaktion"
         },
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-17",
+        "updatedAt": "2026-07-25",
         "navigation": {
           "show": true,
           "label": "Trinkbrunnen",
@@ -9047,7 +8745,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-25",
         "hub": {
           "sections": [
             "wissen"
@@ -9295,7 +8993,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-25",
         "navigation": {
           "show": true,
           "label": "Wissen",
@@ -10007,12 +9705,13 @@
             "katzenhaltung",
             "katzengesundheit",
             "mehrkatzenhaushalt"
-          ]
+          ],
+          "priority": "high"
         },
         "categoryLabel": "Wasser & Verhalten",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-24",
+        "updatedAt": "2026-07-25",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -10035,11 +9734,11 @@
           "order": 64
         },
         "seo": {
-          "title": "Wie viele Wassernäpfe braucht eine Katze?",
-          "description": "Wasserstellen für Katzen richtig planen: konkrete Anzahl, sinnvolle Verteilung, Mehrkatzenhaushalt, Etagen und Trinkbrunnen als Ergänzung.",
+          "title": "Wie viele Wassernäpfe braucht eine Katze? Klare Regel",
+          "description": "Eine Katze: zwei Wasserstellen. Zwei Katzen: drei. So verteilst du Wassernäpfe und Katzenbrunnen sinnvoll über Räume und Etagen.",
           "canonical": "/wie-viele-wasserstellen-katze/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.85,
           "changefreq": "yearly"
         },
         "heroImage": {
@@ -13759,7 +13458,7 @@
           "{ label: \"Geeignet für\", value: \"Katzen und kleine Hunde\" }",
           "{ label: Lautstärke, value: \"Herstellerangabe unter 30 dB\" }",
           "{ label: Akku, value: \"5000 mAh; Herstellerangabe bis zu 60 Tage\" }",
-          "{ label: Filter, value: \"fünfstufig\" }",
+          "{ label: Filter, value: \"5-stufige Wasserfilterung\" }",
           "{ label: Ersatzfilter, value: \"Herstellerempfehlung: alle 2 bis 3 Wochen wechseln\" }",
           "{ label: Maße, value: \"ca. 20 × 20 × 15,2 cm\" }",
           "{ label: Gewicht, value: \"ca. 0,91 kg\" }",
@@ -17157,9 +16856,9 @@
         "type": "product",
         "layout": "product",
         "testStatus": "editorial-review",
-        "productStatus": "unknown",
-        "description": "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde.",
-        "recommendation": "Premium-Futterautomat mit 1080p-Kamera, App-Steuerung und intelligenter Portionierung für Katzen und kleine Hunde. Besonders geeignet für Nutzer, die Fütterung und Tierbeobachtung aus der Ferne kombinieren möchten.",
+        "productStatus": "active",
+        "description": "Kamera-Futterautomat mit 3-Liter-Tank, 1080p-Video, Zwei-Wege-Audio, Dual-Band-WLAN und bis zu zehn geplanten Trockenfuttermahlzeiten.",
+        "recommendation": "Premium-Kameraautomat für Katzen und kleine Hunde, wenn Livebild, App-Zeitpläne und flexible Trockenfutterportionen gemeinsam benötigt werden. Wer keine Kamera nutzt, bekommt dieselbe Kernaufgabe mit einfacheren Modellen günstiger und datensparsamer.",
         "manufacturer": {
           "key": "petkit",
           "name": "PETKIT",
@@ -17170,17 +16869,20 @@
           "label": "Futterautomaten",
           "path": "/smarte-futterautomaten/"
         },
+        "productUrl": "/produkt/petkit-yumshare-solo-2/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-25",
         "author": {
-          "name": "PfotenTechnik Redaktion"
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
         },
         "seo": {
-          "title": "PETKIT YumShare Solo 2 Test",
-          "description": "PETKIT YumShare Solo 2 im Datencheck: Futterautomat mit Kamera, App, Portionierung und Eignung für Katzen und kleine Hunde.",
+          "title": "PETKIT YumShare Solo 2 im Check: Kamera und App",
+          "description": "PETKIT YumShare Solo 2 mit 1080p-Kamera, 3-Liter-Tank, 2,4-/5-GHz-WLAN, 1–10 Mahlzeiten und den Grenzen von AI-Erkennung und Batterie-Backup.",
           "canonical": "/produkt/petkit-yumshare-solo-2/",
           "sitemap": true,
-          "priority": 0.9
+          "priority": 0.9,
+          "changefreq": "monthly"
         },
         "hub": {
           "sections": [
@@ -17193,13 +16895,14 @@
           "app",
           "premium",
           "trockenfutter",
-          "katzen",
-          "kleine-hunde"
+          "katze",
+          "kleiner-hund",
+          "dual-band-wlan"
         ],
         "images": {
           "hero": {
             "src": "../../assets/images/products/petkit-yumshare-solo-2/hero.webp",
-            "alt": "PETKIT YumShare Solo 2 in redaktioneller Produktdarstellung"
+            "alt": "PETKIT YumShare Solo 2 mit Kamera und Edelstahl-Futternapf"
           },
           "thumbnail": {
             "src": "../../assets/images/products/petkit-yumshare-solo-2/thumbnail.webp",
@@ -17207,7 +16910,7 @@
           },
           "comparison": {
             "src": "../../assets/images/products/petkit-yumshare-solo-2/comparison.webp",
-            "alt": "PETKIT YumShare Solo 2 im Produktvergleich"
+            "alt": "PETKIT YumShare Solo 2 im Kamera-Futterautomaten-Vergleich"
           },
           "gallery": [
             "src: \"../../assets/images/products/petkit-yumshare-solo-2/gallery-1.webp",
@@ -17226,28 +16929,64 @@
           "verarbeitung": 4.15,
           "bedienung": 4.2,
           "app": 4.2,
-          "zuverlässigkeit": 4.15,
+          "zuverlässigkeit": 4,
           "preisleistung": 3.85,
           "reinigung": 4,
           "kamera": 4.2
         },
         "decision": {
-          "bestFor": {},
-          "attention": {}
+          "bestFor": [
+            "Katzen und kleine Hunde mit Trockenfutter",
+            "Haushalte mit echtem Bedarf an Livebild und Zwei-Wege-Audio",
+            "bis zu zehn geplante Mahlzeiten pro Tag",
+            "Nutzer mit 2,4- oder 5-GHz-WLAN"
+          ],
+          "attention": [
+            "nur für Trockenfutter und geeignete gefriergetrocknete Stücke",
+            "Kamera, Fernzugriff und AI-Funktionen benötigen Netzwerk und App",
+            "Video-Wiedergabe und erweiterte Cloudfunktionen können ein Abo erfordern",
+            "AI-Erkennung ist kein sicherer Nachweis der aufgenommenen Futtermenge",
+            "PETKIT macht auf der aktuellen Produktseite widersprüchliche Angaben zur Art der Backup-Batterien",
+            "Kamera ist im Batteriebetrieb laut Hersteller deaktiviert"
+          ]
         },
         "review": {
-          "summary": ">",
-          "verdict": ">"
+          "summary": "Der YumShare Solo 2 P572 kombiniert einen 3-Liter-Trockenfuttertank mit 1080p-Kamera, Zwei-Wege-Audio, App-Steuerung und bis zu zehn geplanten Mahlzeiten.",
+          "verdict": "Eine starke Kamera-Lösung für Haushalte, die das Livebild tatsächlich nutzen. Die Kernfunktion ist gut dokumentiert; Batterieart, kostenlose Video-Historie und AI-Zuordnung sollten wegen regionaler beziehungsweise widersprüchlicher Herstellerangaben vor dem Kauf nochmals geprüft werden."
         },
-        "strengths": {},
-        "weaknesses": {},
+        "strengths": [
+          "1080p-Kamera mit Livebild",
+          "Zwei-Wege-Audio und persönlicher Mahlzeitenruf",
+          "2,4- und 5-GHz-WLAN",
+          "bis zu zehn Mahlzeiten täglich",
+          "3 Liter beziehungsweise zwölf Cups Kapazität",
+          "Edelstahlnapf aus 304er Edelstahl",
+          "Zeitpläne laufen laut Hersteller bei WLAN-Ausfall weiter",
+          "Trockenfutter bis 12 mm und gefriergetrocknete Stücke bis 9 mm laut Hersteller"
+        ],
+        "weaknesses": [
+          "nicht für Nassfutter",
+          "Kamera und Fernfunktionen bleiben cloud- und appabhängig",
+          "AI-Zuordnung ersetzt keine physische Zugangskontrolle",
+          "Video-Wiedergabe kann ein Abonnement benötigen",
+          "widersprüchliche Herstellerangaben zur Backup-Batterie",
+          "Kamera im Batteriebetrieb deaktiviert"
+        ],
         "experience": {
-          "summary": ">",
-          "positives": {},
-          "criticism": {},
-          "support": ">"
+          "summary": "Die redaktionelle Einordnung trennt die mechanische Futterausgabe von Kamera- und Cloudfunktionen. Ein Livebild kann Aktivität am Napf zeigen, beweist aber nicht, wie viel welches Tier tatsächlich gefressen hat.",
+          "methodology": "Datencheck anhand der aktuellen offiziellen PETKIT-Produktseite, PETKIT-Feederübersicht und des offiziellen Manual-Downloadbereichs; kein eigener Langzeit-, Kamera-, AI- oder Portionierungstest.",
+          "maintenance": "Edelstahlnapf regelmäßig reinigen, Behälter trocken halten und Futterweg auf Krümel beziehungsweise Fettbelag prüfen. Nach jedem Futterwechsel mehrere Portionen nachwiegen."
         },
-        "alternatives": {},
+        "alternatives": [
+          "petlibro-granary-camera-feeder",
+          "petkit-yumshare-dual-hopper",
+          "catit-pixi-vision-smart-feeder"
+        ],
+        "comparisons": [
+          "beste-futterautomaten-mit-kamera",
+          "beste-futterautomaten-fuer-katzen",
+          "beste-futterautomaten-fuer-hunde"
+        ],
         "comparisonFilters": {
           "animal": [
             "dog",
@@ -17256,15 +16995,61 @@
           "petSize": [
             "small"
           ],
-          "foodType": []
+          "foodType": [
+            "dry"
+          ],
+          "app": true,
+          "camera": true,
+          "backupPower": true,
+          "access": "open",
+          "priceTier": "premium"
         },
-        "specs": {
-          "value": "Katzen und kleine Hunde"
-        },
-        "faq": {
-          "answer": ">"
-        },
+        "priceCategory": "premium",
+        "useCase": "Trockenfutter-Zeitpläne mit zusätzlicher Video- und Audiokontrolle",
+        "capacity": "3 Liter beziehungsweise 12 Cups",
+        "expandable": "Optionale PETKIT-Cloud- und Videoangebote abhängig von Region und Tarif",
+        "features": [
+          "1080p-HD-Kamera",
+          "Zwei-Wege-Audio",
+          "AI-gestützte Ereigniserfassung",
+          "2,4- und 5-GHz-WLAN",
+          "bis zu zehn Mahlzeiten pro Tag",
+          "Edelstahlnapf"
+        ],
+        "specs": [
+          "label: \"Modell",
+          "label: \"Futterart",
+          "label: \"Kapazität",
+          "label: \"Mahlzeiten",
+          "label: \"Portionen",
+          "label: \"Kamera",
+          "label: \"Audio",
+          "label: \"App",
+          "label: \"WLAN",
+          "label: \"Offline-Verhalten",
+          "label: \"Stromversorgung",
+          "label: \"Batterie-Backup",
+          "label: \"Batteriemodus",
+          "label: \"Napf",
+          "label: \"Material",
+          "label: \"Abmessungen",
+          "label: \"Gewicht",
+          "label: \"Geeignet für"
+        ],
+        "faq": [
+          "question: \"Ist der PETKIT YumShare Solo 2 ein eigener Produkttest?",
+          "question: \"Ist der YumShare Solo 2 für Nassfutter geeignet?",
+          "question: \"Welche Krokettengröße passt?",
+          "question: \"Wie viele Mahlzeiten lassen sich planen?",
+          "question: \"Unterstützt der YumShare Solo 2 5-GHz-WLAN?",
+          "question: \"Läuft der Zeitplan ohne WLAN weiter?",
+          "question: \"Funktioniert die Kamera im Batteriebetrieb?",
+          "question: \"Welche Batterien benötigt der YumShare Solo 2?",
+          "question: \"Erkennt die Kamera sicher, welches Tier gefressen hat?",
+          "question: \"Braucht man ein Video-Abo?"
+        ],
         "comparisonData": {
+          "version": 1,
           "general": {
             "animal": [
               "dog",
@@ -17273,16 +17058,34 @@
             "petSize": [
               "small"
             ],
-            "foodType": []
+            "foodType": [
+              "dry"
+            ]
           },
           "editorial": {
             "rating": 4.1,
             "score": 82,
-            "productStatus": "unknown"
+            "productStatus": "active"
+          },
+          "custom": {
+            "modell": "P572",
+            "kamera": "1080p-HD",
+            "kapazitaet": "3 Liter",
+            "mahlzeiten": "1 bis 10 täglich",
+            "wlan": "2,4 und 5 GHz",
+            "offline": "gespeicherte Pläne laufen laut Hersteller weiter",
+            "stromreserve": "vorhanden; Batterieart auf aktueller Herstellerseite widersprüchlich",
+            "wichtigstegrenze": "Kamera und AI liefern keinen sicheren Fressnachweis"
           }
         }
       },
-      "issues": []
+      "issues": [
+        {
+          "severity": "error",
+          "code": "TEST_CLAIM_CONFLICT",
+          "message": "Testbehauptung widerspricht dem Teststatus."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/products/petlibro-air-automatic-feeder.md",
@@ -19430,9 +19233,9 @@
         "type": "product",
         "layout": "product",
         "testStatus": "editorial-review",
-        "productStatus": "unknown",
-        "description": "Aktiv gekühlter Nassfutterautomat mit drei 200-ml-Fächern, App-Steuerung und thermoelektrischer Kühlung.",
-        "recommendation": "Eine der sinnvollsten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn echte Kühlung wichtiger ist als Batteriebetrieb oder viele Mahlzeiten.",
+        "productStatus": "active",
+        "description": "Aktiv gekühlter Nassfutterautomat mit drei 200-ml-Fächern, App-Steuerung, Edelstahl-Schale und zeitlich begrenztem Batterie-Backup.",
+        "recommendation": "Eine der interessantesten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn aktive Kühlung und drei vorbereitete Mahlzeiten wichtiger sind als vollständig netzunabhängiger Betrieb.",
         "manufacturer": {
           "key": "petlibro",
           "name": "PETLIBRO",
@@ -19445,13 +19248,14 @@
         },
         "productUrl": "/produkt/petlibro-polar-wet-food-feeder/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-17",
+        "updatedAt": "2026-07-25",
         "author": {
-          "name": "PfotenTechnik Redaktion"
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
         },
         "seo": {
-          "title": "PETLIBRO Polar Wet Food Feeder im Check",
-          "description": "PETLIBRO Polar mit aktiver Kühlung, drei 200-ml-Fächern, App-Steuerung und den wichtigsten Grenzen für Nassfutter.",
+          "title": "PETLIBRO Polar im Check: aktive Kühlung für Nassfutter",
+          "description": "PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern, 2,4-GHz-WLAN, Edelstahl-Schale und 12-Stunden-Ausfallschutz.",
           "canonical": "/produkt/petlibro-polar-wet-food-feeder/",
           "sitemap": true,
           "priority": 0.9
@@ -19468,12 +19272,13 @@
           "app",
           "nassfutter",
           "aktive-kuehlung",
+          "edelstahl",
           "premium"
         ],
         "images": {
           "hero": {
             "src": "../../assets/images/products/petlibro-polar-wet-food-feeder/hero.webp",
-            "alt": "PETLIBRO Polar Wet Food Feeder in redaktioneller Produktdarstellung"
+            "alt": "PETLIBRO Polar Wet Food Feeder mit drei gekühlten Nassfutterfächern"
           },
           "thumbnail": {
             "src": "../../assets/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp",
@@ -19481,7 +19286,7 @@
           },
           "comparison": {
             "src": "../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp",
-            "alt": "PETLIBRO Polar Wet Food Feeder im Vergleich"
+            "alt": "PETLIBRO Polar Wet Food Feeder im Nassfuttervergleich"
           },
           "gallery": [
             "src: \"../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp",
@@ -19497,48 +19302,54 @@
         "rating": 4,
         "score": 80,
         "ratings": {
-          "app": 3.95,
-          "portionierung": 4.3,
-          "reinigung": 3.95,
-          "zuverlaessigkeit": 3.95,
-          "sicherheit": 4.3,
-          "preisleistung": 3.6
+          "app": 3.9,
+          "portionierung": 4.4,
+          "reinigung": 4.3,
+          "zuverlaessigkeit": 4,
+          "sicherheit": 4.4,
+          "preisleistung": 3.7
         },
         "decision": {
           "bestFor": [
             "Katzen und kleine Hunde mit Nassfutter",
             "bis zu drei vorbereitete Mahlzeiten",
             "aktive Kühlung ohne Kühlakkus",
-            "App-gesteuerte Öffnungszeiten"
+            "Haushalte mit 2,4-GHz-WLAN und App-Steuerung"
           ],
           "attention": [
             "nur drei Mahlzeiten",
-            "kein Batteriebetrieb",
+            "aktive Kühlung benötigt Netzstrom",
+            "Batterie-Backup schützt laut Hersteller den Zeitplan bis zu 12 Stunden; fortgesetzte Kühlung ist dabei nicht belegt",
+            "keine physische Taste für eine spontane manuelle Fütterung",
             "nicht für Rohfleisch empfohlen",
-            "Kühlleistung ersetzt keine unbegrenzte Lagerung"
+            "72 Stunden sind eine Herstellerangabe unter definierten Bedingungen, keine pauschale Haltbarkeitsgarantie"
           ]
         },
         "review": {
-          "summary": "Der Polar nutzt thermoelektrische Kühlung statt einfacher Kühlakkus und hält drei vorbereitete Fächer gekühlt.",
-          "verdict": "Für automatische Nassfütterung technisch überzeugend, solange Netzbetrieb und drei Mahlzeiten ausreichen."
+          "summary": "Der Polar PLAF109 kombiniert thermoelektrische Kühlung mit drei einzeln planbaren 200-ml-Fächern und einer spülmaschinengeeigneten Edelstahl-Schale.",
+          "verdict": "Der PETLIBRO Polar ist technisch deutlich überzeugender als ein einfacher Fachautomat mit Kühlakkus. Seine Grenzen bleiben die vollständige Abhängigkeit der aktiven Kühlung vom Netzstrom, nur drei Mahlzeiten und die App-Abhängigkeit für spontane Öffnungen."
         },
         "strengths": [
-          "aktive thermoelektrische Kühlung",
-          "drei Fächer mit je 200 ml",
-          "App-Zeitpläne",
-          "kein tägliches Einfrieren von Kühlakkus",
-          "Edelstahl-Futterschale"
+          "aktive thermoelektrische Kühlung statt Kühlakkus",
+          "drei Fächer mit jeweils 200 ml",
+          "spülmaschinengeeignete Edelstahl-Futterschale",
+          "2,4-GHz-WLAN und App-Zeitpläne",
+          "Anti-Pinch-Sensor am Deckel",
+          "laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans über drei AA-Batterien",
+          "24 Monate Herstellergarantie laut aktueller deutscher Produktseite"
         ],
         "weaknesses": [
-          "kein Batterie-Backup",
+          "aktive Kühlung benötigt Netzstrom",
           "nur drei Mahlzeiten",
-          "höherer Preis",
-          "nicht für Rohfütterung vorgesehen"
+          "keine physische Fütterungstaste am Gerät",
+          "Rohfleisch wird vom Hersteller nicht empfohlen",
+          "vergleichsweise groß und mit 3,4 kg schwer",
+          "App und Benutzerkonto gehören zum Bedienkonzept"
         ],
         "experience": {
-          "summary": "Aktive Kühlung ist gegenüber Kühlakkus konstanter, bleibt aber von Umgebungstemperatur, Befüllung und sauberem Wärmeübergang abhängig.",
-          "methodology": "Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktinformationen; kein eigener Langzeittest.",
-          "maintenance": "Futterschale nach jeder Nassfütterung reinigen. Kühlfläche, Dichtungen und Deckel sauber und trocken halten."
+          "summary": "Aktive Kühlung ist kontrollierbarer als einfache Kühlakkus. Die reale Futtertemperatur hängt dennoch von Raumtemperatur, Befüllung, sauberem Wärmeübergang und Stromversorgung ab.",
+          "methodology": "Redaktionelle Einordnung anhand der aktuellen deutschen und internationalen PETLIBRO-Produktseiten sowie des offiziellen Hilfebereichs; kein eigener Langzeit-, Temperatur- oder Stromausfalltest.",
+          "maintenance": "Edelstahl-Schale nach jeder Nassfütterung reinigen. Kühlfläche, Dichtungen, Deckel und Drehmechanismus frei von Futterresten, Kondenswasser und Eis halten."
         },
         "alternatives": [
           "cat-mate-c500",
@@ -19558,38 +19369,52 @@
           "petSize": [
             "small"
           ],
-          "foodType": []
+          "foodType": [
+            "wet"
+          ],
+          "app": true,
+          "camera": false,
+          "backupPower": true,
+          "access": "open",
+          "priceTier": "premium"
         },
         "specs": [
+          "label: \"Modell",
           "label: \"Futterart",
           "label: \"Kapazität",
           "label: \"Kühlung",
-          "label: \"Kühldauer",
+          "label: \"Herstellerangabe zur Kühlung",
           "label: \"App",
+          "label: \"WLAN",
+          "label: \"Manuelle Öffnung",
           "label: \"Kamera",
+          "label: \"Napf",
+          "label: \"Reinigung",
           "label: \"Stromversorgung",
-          "label: \"Geeignet für",
-          "label: \"Portionierung",
-          "{ label: \"Napf\", value: \"Nicht vom Hersteller ausgewiesen\" }",
-          "{ label: \"Reinigung\", value: \"Nicht vom Hersteller ausgewiesen\" }",
-          "{ label: \"WLAN\", value: \"Nicht vom Hersteller ausgewiesen\" }",
-          "{ label: \"Batterie\", value: \"Nicht vom Hersteller ausgewiesen\" }",
-          "{ label: \"Maße\", value: \"Nicht vom Hersteller ausgewiesen\" }",
-          "{ label: \"Gewicht\", value: \"Nicht vom Hersteller ausgewiesen\" }"
+          "label: \"Batterie-Backup",
+          "label: \"Abmessungen",
+          "label: \"Gewicht",
+          "label: \"Geeignet für"
         ],
         "faq": [
+          "question: \"Wie lange kühlt der PETLIBRO Polar Nassfutter?",
+          "question: \"Welche Temperatur erreicht der PETLIBRO Polar?",
           "question: \"Braucht der PETLIBRO Polar Kühlakkus?",
           "question: \"Wie viele Mahlzeiten passen hinein?",
           "question: \"Funktioniert der Polar bei Stromausfall?",
-          "question: \"Ist Rohfleisch geeignet?"
+          "question: \"Kann ich den Polar ohne App öffnen?",
+          "question: \"Ist Rohfleisch geeignet?",
+          "question: \"Ist die Schale spülmaschinengeeignet?"
         ],
-        "useCase": "Für Katzen und kleine Hunde mit Nassfutter",
+        "useCase": "Für Katzen und kleine Hunde mit vorbereiteten Nassfutterportionen",
         "capacity": "Drei Mahlzeiten à 200 ml",
         "expandable": "Nicht vorgesehen",
         "features": [
-          "Aktive Kühlung",
-          "App-Steuerung",
-          "Drei Edelstahl-Fächer"
+          "aktive thermoelektrische Kühlung",
+          "App-Steuerung über 2,4-GHz-WLAN",
+          "drei Edelstahl-Fächer",
+          "Anti-Pinch-Sensor",
+          "zeitlich begrenzter Ausfallschutz über drei AA-Batterien"
         ],
         "comparisonData": {
           "version": 1,
@@ -19601,22 +19426,24 @@
             "petSize": [
               "small"
             ],
-            "foodType": []
+            "foodType": [
+              "wet"
+            ]
           },
           "editorial": {
             "rating": 4,
             "score": 80,
-            "productStatus": "unknown"
+            "productStatus": "active"
           },
           "custom": {
             "kuehlprinzip": "Thermoelektrische Aktivkühlung",
             "mahlzeiten": "3 Fächer mit je 200 ml",
-            "steuerung": "App-Zeitpläne",
-            "stromversorgung": "Netzbetrieb; kein Batterie-Backup",
-            "hygiene": "Edelstahl-Futterschale; nach jeder Nutzung reinigen",
+            "steuerung": "PETLIBRO-App; 2,4-GHz-WLAN",
+            "stromversorgung": "Netzbetrieb; drei AA-Batterien schützen laut Hersteller den Zeitplan bis zu 12 Stunden",
+            "hygiene": "Spülmaschinengeeignete Edelstahl-Futterschale",
             "tiertrennung": "Nein",
             "geeignetfuer": "Katzen und kleine Hunde",
-            "wichtigstegrenze": "Nur drei Mahlzeiten und vollständige Stromabhängigkeit"
+            "wichtigstegrenze": "Nur drei Mahlzeiten; aktive Kühlung bleibt vom Netzstrom abhängig"
           }
         }
       },

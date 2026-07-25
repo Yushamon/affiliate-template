@@ -1,8 +1,8 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 185
-- Fehler: 3
-- Warnungen: 36
+- Dokumente: 180
+- Fehler: 4
+- Warnungen: 29
 
 ## Portfolio-Befunde
 
@@ -11,21 +11,14 @@ Keine Portfolio-Konflikte erkannt.
 ## Datei-Befunde
 
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-berufstaetige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-welpen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-zwei-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-akku.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-edelstahl-napf.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-kamera.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-ohne-wlan.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-unter-100-euro.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-fuer-zwei-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-gegen-schlingen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-hund.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-katze.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-mit-app.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-mit-kamera.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-nassfutter.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
@@ -46,6 +39,7 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`: Mögliche Dosierungsangabe gefunden.
+- **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md`: Testbehauptung widerspricht dem Teststatus.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Testbehauptung widerspricht dem Teststatus.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Testbehauptung widerspricht dem Teststatus.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6.md`: Testbehauptung widerspricht dem Teststatus.

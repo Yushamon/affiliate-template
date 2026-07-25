@@ -76,8 +76,7 @@
     "seo:release:manifest": "node scripts/seo/release-manifest.mjs",
     "seo:release:indexnow": "node scripts/submit-indexnow.mjs --changed",
     "seo:release:indexnow:dry-run": "node scripts/submit-indexnow.mjs --changed --dry-run",
-    "audit:release-ops": "node scripts/seo/audit-week6-release-ops.mjs",
-    "audit:multicat-intent": "node scripts/seo/audit-week7-multicat-intent.mjs"
+    "audit:release-ops": "node scripts/seo/audit-week6-release-ops.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

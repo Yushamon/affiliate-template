@@ -1,9 +1,9 @@
 ---
 title: "Futterautomat für zwei Katzen"
-seoTitle: "Futterautomat für 2 Katzen: 1 Gerät, 2 Näpfe oder Chip?"
+seoTitle: "Futterautomat für zwei Katzen: Doppelschale oder Mikrochip?"
 slug: "futterautomat-fuer-zwei-katzen"
 description: "Welcher Futterautomat passt zu zwei Katzen? Entscheidungshilfe für Doppelschale, zwei getrennte Automaten, Mikrochip-Zugang, Nassfutter und unterschiedliche Rationen."
-seoDescription: "Futterautomat für zwei Katzen richtig wählen: Doppelschale, zwei Geräte oder Mikrochip – nach Futterklau, Diät, Fresstempo und Futterart."
+seoDescription: "Futterautomat für zwei Katzen auswählen: Wann Doppelschale, zwei Geräte oder Mikrochip-Zugang sinnvoll sind – mit Lösungen bei Futterneid und Diätfutter."
 category: "futterautomaten"
 linking:
   keywords:
@@ -217,7 +217,7 @@ Davon hängt ab, ob eine Doppelschale genügt, zwei getrennte Automaten sinnvoll
 
 Für konkrete Produktempfehlungen führt der direkte Weg zum Vergleich [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/). Dieser Ratgeber erklärt vorher, **welche Bauart zu welchem Mehrkatzen-Problem passt**.
 
-## Doppelschale, zwei Automaten oder Mikrochip?
+## Futterautomat für zwei Katzen: die schnelle Entscheidung
 
 | Situation im Haushalt | Meist passende Lösung | Wichtigste Grenze |
 |---|---|---|
@@ -436,12 +436,6 @@ Dieser Ratgeber hilft dir, das eigentliche Problem einzuordnen:
 Sobald die passende Bauart feststeht, kannst du im Vergleich [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) die konkreten Modelle nach Zugangskontrolle, Futterplätzen, Portionierung, Ausfallsicherheit und Konfliktrisiko gegenüberstellen.
 
 Der übergeordnete Überblick [Smarte Futterautomaten](/smarte-futterautomaten/) erklärt zusätzlich App, Kamera, Offline-Betrieb, Stromreserve und allgemeine Kaufkriterien.
-
-## Mehr als zwei Tiere oder Hund und Katze?
-
-Dieser Ratgeber ist bewusst auf **zwei Katzen** zugeschnitten. Für Haushalte mit mehreren Katzen, mehreren Hunden oder einer Mischung aus Hund und Katze gelten zusätzliche Anforderungen an Napfhöhe, Futterart, Standort und Zugang. Diese breitere Planung behandelt [Futterautomat im Mehrtierhaushalt](/beste-futterautomaten-fuer-mehrtierhaushalte/).
-
-Steht die passende Bauart bereits fest, zeigt der [Vergleich der fünf Systeme für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
 
 ## Fazit
 

@@ -102,9 +102,9 @@ premiumBlocks:
         cta: "Nassfutter-Systeme ansehen"
       - label: "Mehrere Tiere"
         title: "Doppelnapf oder Zugangskontrolle"
-        text: "Für zwei Katzen entscheidet nicht die Zahl der Näpfe, sondern ob Portionen nur verteilt oder zuverlässig vor Futterklau geschützt werden müssen."
+        text: "Ein geteilter Auslass verteilt Futter, verhindert aber keinen Futterdiebstahl. Dafür ist eine individuelle Zugangslösung nötig."
         href: "/futterautomat-fuer-zwei-katzen/"
-        cta: "Bauart für zwei Katzen wählen"
+        cta: "Mehrkatzen-Ratgeber lesen"
   - type: "scenarios"
     eyebrow: "Nach Alltag auswählen"
     title: "Welche Funktion löst dein eigentliches Problem?"
@@ -251,15 +251,6 @@ Ein Doppelnapf verhindert keinen Futterneid. Die tatsächliche Portionsmenge sol
 ![Entscheidungsbaum zur Auswahl eines passenden smarten Futterautomaten nach Futterart, Tier und Funktionsbedarf.](../../assets/images/guides/smarte-futterautomaten/decision-tree.webp)
 
 <a id="auswahlhilfe"></a>
-
-## Zwei Katzen: erst Bauart, dann konkrete Modelle
-
-Bei zwei Katzen führen zwei getrennte Schritte schneller zur passenden Lösung:
-
-1. [Doppelschale, zwei Automaten oder Mikrochip wählen](/futterautomat-fuer-zwei-katzen/)
-2. [Fünf konkrete Systeme für zwei Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
-
-Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futterautomat im Mehrtierhaushalt](/beste-futterautomaten-fuer-mehrtierhaushalte/) zusätzlich Tiergröße, Napfhöhe, Futterart und räumliche Organisation.
 
 ## Auswahlhilfe: Welcher Futterautomat passt zu dir?
 
