@@ -137,8 +137,6 @@ comparisonFilters:
   petSize: ["medium", "large"]
   foodType: []
 specs:
-  - label: "Übertragung"
-    value: "VHF-Direktübertragung an ein kompatibles Garmin-Alpha-Handgerät"
   - label: "Produkttyp"
     value: "GPS-Hundehalsbandgerät mit VHF-Direktübertragung"
   - label: "Deutsche Ausführung"

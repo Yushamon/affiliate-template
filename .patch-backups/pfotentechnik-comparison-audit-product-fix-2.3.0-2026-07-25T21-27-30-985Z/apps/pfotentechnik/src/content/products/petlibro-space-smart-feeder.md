@@ -103,10 +103,6 @@ comparisonFilters:
   petSize: ["small"]
   foodType: ["dry"]
 specs:
-  - label: "Portionierung"
-    value: "Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit"
-  - label: "Kapazität"
-    value: "8 Liter laut PLAF107-Handbuch"
   - label: "Modell"
     value: "PLAF107"
   - label: "Futterart"

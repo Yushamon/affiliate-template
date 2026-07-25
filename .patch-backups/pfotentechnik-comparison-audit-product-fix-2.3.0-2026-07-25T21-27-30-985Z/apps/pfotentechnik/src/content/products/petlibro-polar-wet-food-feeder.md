@@ -122,8 +122,6 @@ comparisonFilters:
   access: "open"
   priceTier: "premium"
 specs:
-  - label: "Portionierung"
-    value: "Drei zeitgesteuerte Fächer mit je 200 ml"
   - label: "Modell"
     value: "PLAF109"
   - label: "Futterart"

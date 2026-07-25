@@ -194,18 +194,7 @@ function auditComparison(c, context, issues) {
       }
     }
 
-    const overrides =
-      item?.overrides && typeof item.overrides === "object"
-        ? item.overrides
-        : {};
-    const explicitValues =
-      item?.values && typeof item.values === "object"
-        ? item.values
-        : {};
-    const values = {
-      ...overrides,
-      ...explicitValues
-    };
+    const values = item?.values && typeof item.values === "object" ? item.values : {};
 
     for (const key of Object.keys(values)) {
       if (criterionKeys.size && !criterionKeys.has(key)) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T21:12:52.417Z",
+  "generatedAt": "2026-07-25T21:32:03.462Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 13,
@@ -8,7 +8,7 @@
     "usedProducts": 32,
     "productCoveragePercent": 49.2,
     "errors": 20,
-    "warnings": 275,
+    "warnings": 204,
     "qualityScore": 0
   },
   "byCode": [
@@ -50,7 +50,7 @@
     },
     {
       "code": "VALUE_MISSING",
-      "count": 255,
+      "count": 184,
       "category": "content",
       "level": "warning"
     },
@@ -101,8 +101,8 @@
     {
       "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
       "errors": 1,
-      "warnings": 14,
-      "total": 15
+      "warnings": 9,
+      "total": 10
     },
     {
       "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
@@ -165,37 +165,31 @@
       "total": 1
     },
     {
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
+      "errors": 0,
+      "warnings": 41,
+      "total": 41
+    },
+    {
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "errors": 0,
-      "warnings": 61,
-      "total": 61
+      "warnings": 39,
+      "total": 39
     },
     {
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "errors": 0,
-      "warnings": 51,
-      "total": 51
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "errors": 0,
-      "warnings": 46,
-      "total": 46
+      "warnings": 39,
+      "total": 39
     },
     {
       "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
       "errors": 0,
-      "warnings": 40,
-      "total": 40
+      "warnings": 37,
+      "total": 37
     },
     {
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
-      "errors": 0,
-      "warnings": 26,
-      "total": 26
-    },
-    {
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
       "errors": 0,
       "warnings": 26,
       "total": 26
@@ -205,6 +199,12 @@
       "errors": 0,
       "warnings": 3,
       "total": 3
+    },
+    {
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "errors": 0,
+      "warnings": 2,
+      "total": 2
     },
     {
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
@@ -335,16 +335,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
       "slug": "beste-futterautomaten-fuer-hunde",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für portionierung fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "portionierung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
-      "slug": "beste-futterautomaten-fuer-hunde",
       "message": "xiaomi-smart-pet-food-feeder-2: Wert für krokettengroesse fehlt.",
       "itemSlug": "xiaomi-smart-pet-food-feeder-2",
       "criterionKey": "krokettengroesse",
@@ -368,16 +358,6 @@
       "message": "xiaomi-smart-pet-food-feeder-2: Wert für kapazitaet fehlt.",
       "itemSlug": "xiaomi-smart-pet-food-feeder-2",
       "criterionKey": "kapazitaet",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
-      "slug": "beste-futterautomaten-fuer-hunde",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für app fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "app",
       "category": "content"
     },
     {
@@ -468,16 +448,6 @@
       "message": "petlibro-granary-wifi-feeder: Wert für kapazitaet fehlt.",
       "itemSlug": "petlibro-granary-wifi-feeder",
       "criterionKey": "kapazitaet",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
-      "slug": "beste-futterautomaten-fuer-hunde",
-      "message": "petlibro-granary-wifi-feeder: Wert für app fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "app",
       "category": "content"
     },
     {
@@ -723,16 +693,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für profil fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "petlibro-granary-wifi-feeder: Wert für futterart fehlt.",
       "itemSlug": "petlibro-granary-wifi-feeder",
       "criterionKey": "futterart",
@@ -773,26 +733,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für app fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "app",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "ausfallsicherheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "petlibro-granary-wifi-feeder: Wert für reinigung fehlt.",
       "itemSlug": "petlibro-granary-wifi-feeder",
       "criterionKey": "reinigung",
@@ -806,26 +746,6 @@
       "message": "petlibro-granary-wifi-feeder: Wert für kamera fehlt.",
       "itemSlug": "petlibro-granary-wifi-feeder",
       "criterionKey": "kamera",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für besonderheit fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petkit-fresh-element-solo: Wert für profil fehlt.",
-      "itemSlug": "petkit-fresh-element-solo",
-      "criterionKey": "profil",
       "category": "content"
     },
     {
@@ -913,39 +833,9 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "petkit-fresh-element-solo: Wert für besonderheit fehlt.",
-      "itemSlug": "petkit-fresh-element-solo",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für profil fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "xiaomi-smart-pet-food-feeder-2: Wert für futterart fehlt.",
       "itemSlug": "xiaomi-smart-pet-food-feeder-2",
       "criterionKey": "futterart",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für portionierung fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "portionierung",
       "category": "content"
     },
     {
@@ -966,16 +856,6 @@
       "message": "xiaomi-smart-pet-food-feeder-2: Wert für mehrkatzen fehlt.",
       "itemSlug": "xiaomi-smart-pet-food-feeder-2",
       "criterionKey": "mehrkatzen",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für app fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "app",
       "category": "content"
     },
     {
@@ -1006,36 +886,6 @@
       "message": "xiaomi-smart-pet-food-feeder-2: Wert für kamera fehlt.",
       "itemSlug": "xiaomi-smart-pet-food-feeder-2",
       "criterionKey": "kamera",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "xiaomi-smart-pet-food-feeder-2: Wert für besonderheit fehlt.",
-      "itemSlug": "xiaomi-smart-pet-food-feeder-2",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "cat-mate-c500: Wert für profil fehlt.",
-      "itemSlug": "cat-mate-c500",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "cat-mate-c500: Wert für futterart fehlt.",
-      "itemSlug": "cat-mate-c500",
-      "criterionKey": "futterart",
       "category": "content"
     },
     {
@@ -1113,39 +963,9 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "cat-mate-c500: Wert für besonderheit fehlt.",
-      "itemSlug": "cat-mate-c500",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für profil fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "surefeed-microchip-pet-feeder: Wert für futterart fehlt.",
       "itemSlug": "surefeed-microchip-pet-feeder",
       "criterionKey": "futterart",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für portionierung fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "portionierung",
       "category": "content"
     },
     {
@@ -1173,26 +993,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für app fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "app",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "ausfallsicherheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "surefeed-microchip-pet-feeder: Wert für reinigung fehlt.",
       "itemSlug": "surefeed-microchip-pet-feeder",
       "criterionKey": "reinigung",
@@ -1213,39 +1013,9 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für besonderheit fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für profil fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "oneisall-5l-automatic-cat-feeder: Wert für futterart fehlt.",
       "itemSlug": "oneisall-5l-automatic-cat-feeder",
       "criterionKey": "futterart",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für portionierung fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "portionierung",
       "category": "content"
     },
     {
@@ -1283,16 +1053,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
       "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "ausfallsicherheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
       "message": "oneisall-5l-automatic-cat-feeder: Wert für reinigung fehlt.",
       "itemSlug": "oneisall-5l-automatic-cat-feeder",
       "criterionKey": "reinigung",
@@ -1310,30 +1070,10 @@
     },
     {
       "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
-      "slug": "beste-futterautomaten-fuer-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für besonderheit fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "besonderheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
       "slug": "beste-futterautomaten-fuer-nassfutter",
       "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
-      "message": "petlibro-polar-wet-food-feeder: Wert für profil fehlt.",
-      "itemSlug": "petlibro-polar-wet-food-feeder",
-      "criterionKey": "profil",
       "category": "content"
     },
     {
@@ -1429,16 +1169,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
       "slug": "beste-futterautomaten-fuer-nassfutter",
-      "message": "petsafe-freshfeed-refrigerated-feeder: Wert für profil fehlt.",
-      "itemSlug": "petsafe-freshfeed-refrigerated-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
       "message": "petsafe-freshfeed-refrigerated-feeder: Wert für kuehlprinzip fehlt.",
       "itemSlug": "petsafe-freshfeed-refrigerated-feeder",
       "criterionKey": "kuehlprinzip",
@@ -1528,16 +1258,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
       "slug": "beste-futterautomaten-fuer-nassfutter",
-      "message": "catit-pixi-smart-6-meal-feeder: Wert für profil fehlt.",
-      "itemSlug": "catit-pixi-smart-6-meal-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
       "message": "catit-pixi-smart-6-meal-feeder: Wert für kuehlprinzip fehlt.",
       "itemSlug": "catit-pixi-smart-6-meal-feeder",
       "criterionKey": "kuehlprinzip",
@@ -1618,16 +1338,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
       "slug": "beste-futterautomaten-fuer-nassfutter",
-      "message": "cat-mate-c500: Wert für profil fehlt.",
-      "itemSlug": "cat-mate-c500",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
       "message": "cat-mate-c500: Wert für kuehlprinzip fehlt.",
       "itemSlug": "cat-mate-c500",
       "criterionKey": "kuehlprinzip",
@@ -1701,16 +1411,6 @@
       "message": "cat-mate-c500: Wert für wichtigstegrenze fehlt.",
       "itemSlug": "cat-mate-c500",
       "criterionKey": "wichtigstegrenze",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
-      "message": "surefeed-microchip-pet-feeder: Wert für profil fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "profil",
       "category": "content"
     },
     {
@@ -1806,16 +1506,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für profil fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "surefeed-microchip-pet-feeder: Wert für zugangskontrolle fehlt.",
       "itemSlug": "surefeed-microchip-pet-feeder",
       "criterionKey": "zugangskontrolle",
@@ -1846,16 +1536,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für portionierung fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "portionierung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "surefeed-microchip-pet-feeder: Wert für mehrkatzen-eignung fehlt.",
       "itemSlug": "surefeed-microchip-pet-feeder",
       "criterionKey": "mehrkatzen-eignung",
@@ -1876,39 +1556,9 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für app fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "app",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "surefeed-microchip-pet-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder",
-      "criterionKey": "ausfallsicherheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "surefeed-microchip-pet-feeder: Wert für kostenlogik fehlt.",
       "itemSlug": "surefeed-microchip-pet-feeder",
       "criterionKey": "kostenlogik",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "surefeed-microchip-pet-feeder-connect: Wert für profil fehlt.",
-      "itemSlug": "surefeed-microchip-pet-feeder-connect",
-      "criterionKey": "profil",
       "category": "content"
     },
     {
@@ -2006,16 +1656,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "petkit-yumshare-dual-hopper: Wert für profil fehlt.",
-      "itemSlug": "petkit-yumshare-dual-hopper",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "petkit-yumshare-dual-hopper: Wert für zugangskontrolle fehlt.",
       "itemSlug": "petkit-yumshare-dual-hopper",
       "criterionKey": "zugangskontrolle",
@@ -2106,16 +1746,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für profil fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "oneisall-5l-automatic-cat-feeder: Wert für zugangskontrolle fehlt.",
       "itemSlug": "oneisall-5l-automatic-cat-feeder",
       "criterionKey": "zugangskontrolle",
@@ -2139,16 +1769,6 @@
       "message": "oneisall-5l-automatic-cat-feeder: Wert für futterarten fehlt.",
       "itemSlug": "oneisall-5l-automatic-cat-feeder",
       "criterionKey": "futterarten",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für portionierung fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "portionierung",
       "category": "content"
     },
     {
@@ -2186,29 +1806,9 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "oneisall-5l-automatic-cat-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "oneisall-5l-automatic-cat-feeder",
-      "criterionKey": "ausfallsicherheit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
       "message": "oneisall-5l-automatic-cat-feeder: Wert für kostenlogik fehlt.",
       "itemSlug": "oneisall-5l-automatic-cat-feeder",
       "criterionKey": "kostenlogik",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für profil fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "profil",
       "category": "content"
     },
     {
@@ -2269,26 +1869,6 @@
       "message": "petlibro-granary-wifi-feeder: Wert für konfliktpotenzial fehlt.",
       "itemSlug": "petlibro-granary-wifi-feeder",
       "criterionKey": "konfliktpotenzial",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für app fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "app",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
-      "slug": "beste-futterautomaten-fuer-zwei-katzen",
-      "message": "petlibro-granary-wifi-feeder: Wert für ausfallsicherheit fehlt.",
-      "itemSlug": "petlibro-granary-wifi-feeder",
-      "criterionKey": "ausfallsicherheit",
       "category": "content"
     },
     {
@@ -2365,16 +1945,6 @@
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
       "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "cat-mate-c500: Wert für futterart fehlt.",
-      "itemSlug": "cat-mate-c500",
-      "criterionKey": "futterart",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
       "message": "cat-mate-c500: Wert für appErforderlich fehlt.",
       "itemSlug": "cat-mate-c500",
       "criterionKey": "appErforderlich",
@@ -2438,46 +2008,6 @@
       "message": "Produkt imipaw-3l existiert nicht.",
       "itemSlug": "imipaw-3l",
       "category": "integrity"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "imipaw-3l: Wert für offlineKonzept fehlt.",
-      "itemSlug": "imipaw-3l",
-      "criterionKey": "offlineKonzept",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "imipaw-3l: Wert für futterart fehlt.",
-      "itemSlug": "imipaw-3l",
-      "criterionKey": "futterart",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "imipaw-3l: Wert für appErforderlich fehlt.",
-      "itemSlug": "imipaw-3l",
-      "criterionKey": "appErforderlich",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "imipaw-3l: Wert für batteriebetrieb fehlt.",
-      "itemSlug": "imipaw-3l",
-      "criterionKey": "batteriebetrieb",
-      "category": "content"
     },
     {
       "level": "warning",
@@ -2790,246 +2320,6 @@
       "slug": "tractive-cat-6-mini",
       "message": "manufacturer.slug fehlt.",
       "category": "integrity"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für profil fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für eignung fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "eignung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für gewicht fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "gewicht",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für befestigung fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "befestigung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für ortung fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "ortung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für akkulaufzeit fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "akkulaufzeit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für abo fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "abo",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "tractive-cat-6-mini: Wert für wasserschutz fehlt.",
-      "itemSlug": "tractive-cat-6-mini",
-      "criterionKey": "wasserschutz",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für profil fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für eignung fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "eignung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für gewicht fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "gewicht",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für befestigung fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "befestigung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für ortung fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "ortung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für akkulaufzeit fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "akkulaufzeit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für abo fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "abo",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "weenect-xs: Wert für wasserschutz fehlt.",
-      "itemSlug": "weenect-xs",
-      "criterionKey": "wasserschutz",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für profil fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "profil",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für eignung fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "eignung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für gewicht fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "gewicht",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für befestigung fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "befestigung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für ortung fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "ortung",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für akkulaufzeit fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "akkulaufzeit",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für abo fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "abo",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "VALUE_MISSING",
-      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
-      "slug": "beste-gps-tracker-fuer-katzen",
-      "message": "paj-pet-finder-4g-mini: Wert für wasserschutz fehlt.",
-      "itemSlug": "paj-pet-finder-4g-mini",
-      "criterionKey": "wasserschutz",
-      "category": "content"
     },
     {
       "level": "warning",

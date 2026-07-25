@@ -1,6 +1,6 @@
 # Comparison Platform Report
 
-Erstellt: 2026-07-25T21:12:52.417Z
+Erstellt: 2026-07-25T21:32:03.462Z
 
 ## Übersicht
 
@@ -11,7 +11,7 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - Produktabdeckung: 49.2 %
 - Qualitätsscore: 0/100
 - Fehler: 20
-- Warnungen: 275
+- Warnungen: 204
 
 ## Häufigste Befunde
 
@@ -21,7 +21,7 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **WINNER_NOT_IN_ITEMS**: 3 (error, integrity)
 - **MANUFACTURER_REFERENCE_BROKEN**: 1 (error, integrity)
 - **PRODUCT_REFERENCE_BROKEN**: 1 (error, integrity)
-- **VALUE_MISSING**: 255 (warning, content)
+- **VALUE_MISSING**: 184 (warning, content)
 - **HERO_IMAGE_MISSING**: 9 (warning, content)
 - **PRODUCT_NOT_COVERED**: 6 (warning, coverage)
 - **FAQ_THIN**: 4 (warning, content)
@@ -32,7 +32,7 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: 3 Fehler, 0 Warnungen
 - `src/content/comparisons/gps-tracker-ohne-abo.md`: 3 Fehler, 0 Warnungen
 - `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: 3 Fehler, 0 Warnungen
-- `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: 1 Fehler, 14 Warnungen
+- `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: 1 Fehler, 9 Warnungen
 - `src/content/products/catit-pixi-smart-6-meal-feeder.md`: 1 Fehler, 0 Warnungen
 - `src/content/products/oneisall-3-5l-cordless-fountain.md`: 1 Fehler, 0 Warnungen
 - `src/content/products/petkit-eversweet-solo-2-fountain.md`: 1 Fehler, 0 Warnungen
@@ -43,13 +43,13 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - `src/content/products/tractive-dog-6.md`: 1 Fehler, 0 Warnungen
 - `src/content/products/weenect-xs.md`: 1 Fehler, 0 Warnungen
 - `src/content/products/weenect-xt.md`: 1 Fehler, 0 Warnungen
-- `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: 0 Fehler, 61 Warnungen
-- `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: 0 Fehler, 51 Warnungen
-- `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: 0 Fehler, 46 Warnungen
-- `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: 0 Fehler, 40 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: 0 Fehler, 41 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: 0 Fehler, 39 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: 0 Fehler, 39 Warnungen
+- `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: 0 Fehler, 37 Warnungen
 - `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: 0 Fehler, 26 Warnungen
-- `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: 0 Fehler, 26 Warnungen
 - `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: 0 Fehler, 3 Warnungen
+- `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: 0 Fehler, 2 Warnungen
 - `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: 0 Fehler, 1 Warnungen
 - `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: 0 Fehler, 1 Warnungen
 - `src/content/products/garmin-alpha-tt-25.md`: 0 Fehler, 1 Warnungen
@@ -86,11 +86,9 @@ Erstellt: 2026-07-25T21:12:52.417Z
 
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für redaktionellesprofil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für hundegroesse fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für krokettengroesse fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für napf fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für kapazitaet fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für app fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für notstrom fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für kamera fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: xiaomi-smart-pet-food-feeder-2: Wert für tiertrennung fehlt.
@@ -100,7 +98,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für krokettengroesse fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für napf fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für kapazitaet fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für app fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für notstrom fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für kamera fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: petlibro-granary-wifi-feeder: Wert für tiertrennung fehlt.
@@ -125,17 +122,12 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: honeyguardian-smart-pet-feeder-s305d: Wert für kamera fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: honeyguardian-smart-pet-feeder-s305d: Wert für tiertrennung fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: heroImage fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für futterart fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für zugang fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für mehrkatzen fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petlibro-granary-wifi-feeder: Wert für besonderheit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für futterart fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für zugang fehlt.
@@ -144,19 +136,12 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: petkit-fresh-element-solo: Wert für besonderheit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für futterart fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für zugang fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für mehrkatzen fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für app fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: xiaomi-smart-pet-food-feeder-2: Wert für besonderheit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für profil fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für futterart fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für zugang fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für mehrkatzen fehlt.
@@ -164,29 +149,18 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: cat-mate-c500: Wert für besonderheit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für futterart fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für zugang fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für mehrkatzen fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: surefeed-microchip-pet-feeder: Wert für besonderheit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für futterart fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für zugang fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für mehrkatzen fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für reinigung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für kamera fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für besonderheit fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: heroImage fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für kuehlprinzip fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für mahlzeiten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für steuerung fehlt.
@@ -195,7 +169,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für tiertrennung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für geeignetfuer fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petlibro-polar-wet-food-feeder: Wert für wichtigstegrenze fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für kuehlprinzip fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für mahlzeiten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für steuerung fehlt.
@@ -204,7 +177,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für tiertrennung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für geeignetfuer fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: petsafe-freshfeed-refrigerated-feeder: Wert für wichtigstegrenze fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für kuehlprinzip fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für mahlzeiten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für steuerung fehlt.
@@ -213,7 +185,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für tiertrennung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für geeignetfuer fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: catit-pixi-smart-6-meal-feeder: Wert für wichtigstegrenze fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für kuehlprinzip fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für mahlzeiten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für steuerung fehlt.
@@ -222,7 +193,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für tiertrennung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für geeignetfuer fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: cat-mate-c500: Wert für wichtigstegrenze fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für kuehlprinzip fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für mahlzeiten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für steuerung fehlt.
@@ -232,17 +202,12 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für geeignetfuer fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: surefeed-microchip-pet-feeder: Wert für wichtigstegrenze fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: heroImage fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für zugangskontrolle fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für zahl-der-futterplatze fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für futterarten fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für mehrkatzen-eignung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für konfliktpotenzial fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder: Wert für kostenlogik fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für zugangskontrolle fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für zahl-der-futterplatze fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für futterarten fehlt.
@@ -252,7 +217,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für app fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: surefeed-microchip-pet-feeder-connect: Wert für kostenlogik fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für zugangskontrolle fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für zahl-der-futterplatze fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für futterarten fehlt.
@@ -262,25 +226,19 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für app fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petkit-yumshare-dual-hopper: Wert für kostenlogik fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für zugangskontrolle fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für zahl-der-futterplatze fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für futterarten fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für mehrkatzen-eignung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für konfliktpotenzial fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: oneisall-5l-automatic-cat-feeder: Wert für kostenlogik fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für profil fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für zugangskontrolle fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für zahl-der-futterplatze fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für futterarten fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für portionierung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für mehrkatzen-eignung fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für konfliktpotenzial fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für app fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für ausfallsicherheit fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: petlibro-granary-wifi-feeder: Wert für kostenlogik fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: heroImage fehlt.
 - **FAQ_THIN** – `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: Weniger als drei FAQ-Einträge.
@@ -288,17 +246,12 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: heroImage fehlt.
 - **FAQ_THIN** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Weniger als drei FAQ-Einträge.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: cat-mate-c500: Wert für offlineKonzept fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: cat-mate-c500: Wert für futterart fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: cat-mate-c500: Wert für appErforderlich fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: cat-mate-c500: Wert für batteriebetrieb fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: surefeed-microchip-pet-feeder: Wert für offlineKonzept fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: surefeed-microchip-pet-feeder: Wert für futterart fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: surefeed-microchip-pet-feeder: Wert für appErforderlich fehlt.
 - **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: surefeed-microchip-pet-feeder: Wert für batteriebetrieb fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: imipaw-3l: Wert für offlineKonzept fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: imipaw-3l: Wert für futterart fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: imipaw-3l: Wert für appErforderlich fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: imipaw-3l: Wert für batteriebetrieb fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: heroImage fehlt.
 - **FAQ_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: Weniger als drei FAQ-Einträge.
 - **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: tractive-dog-6: Wert für einsatzgebiet fehlt.
@@ -327,30 +280,6 @@ Erstellt: 2026-07-25T21:12:52.417Z
 - **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: garmin-alpha-t-20: Wert für abo fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: heroImage fehlt.
 - **FAQ_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: Weniger als drei FAQ-Einträge.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für profil fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für eignung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für gewicht fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für befestigung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für ortung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für akkulaufzeit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für abo fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: tractive-cat-6-mini: Wert für wasserschutz fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für profil fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für eignung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für gewicht fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für befestigung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für ortung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für akkulaufzeit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für abo fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: weenect-xs: Wert für wasserschutz fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für profil fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für eignung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für gewicht fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für befestigung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für ortung fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für akkulaufzeit fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für abo fehlt.
-- **VALUE_MISSING** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: paj-pet-finder-4g-mini: Wert für wasserschutz fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: heroImage fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: heroImage fehlt.
 - **PRODUCT_NOT_COVERED** – `src/content/products/garmin-alpha-tt-25.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.

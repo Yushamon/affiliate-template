@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-25T21:12:51.827Z
+Erstellt: 2026-07-25T21:31:47.337Z
 
 ## Zusammenfassung
 
 - Produkte: 65
-- Fehler: 7
-- Warnungen: 303
+- Fehler: 0
+- Warnungen: 301
 - Doppelte Slugs: 0
 
 ## Kategorien
@@ -16,23 +16,6 @@ Erstellt: 2026-07-25T21:12:51.827Z
 - gps-tracker: 8
 
 ## Produkte mit Handlungsbedarf
-
-### PETLIBRO Space Smart Feeder
-
-- Datei: `src\content\products\petlibro-space-smart-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 59%
-- Fehler:
-  - Vergleichsfeld fehlt: kapazität
-  - Vergleichsfeld fehlt: portionierung
-- Warnungen:
-  - Comparison-Bild fehlt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: maße
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
 
 ### PETLIBRO Capsule Dog Fountain
 
@@ -99,18 +82,6 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Empfohlenes Feld unbestätigt: wlan
   - Empfohlenes Feld unbestätigt: batterie
   - Empfohlenes Feld unbestätigt: gewicht
-
-### PAJ PET Finder 4G Mini
-
-- Datei: `src\content\products\paj-pet-finder-4g-mini.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 74%
-- Fehler:
-  - Vergleichsfeld fehlt: übertragung
-  - Vergleichsfeld fehlt: abo
-- Warnungen:
-  - Empfohlenes Feld fehlt: material
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
 
 ### Aqara Smart Pet Feeder C1
 
@@ -313,30 +284,6 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### Garmin Alpha T 20
-
-- Datei: `src\content\products\garmin-alpha-t-20.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 81%
-- Fehler:
-  - Vergleichsfeld fehlt: übertragung
-- Warnungen:
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: material
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
-
-### PETKIT Eversweet Ultra
-
-- Datei: `src\content\products\petkit-eversweet-ultra.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 81%
-- Fehler:
-  - Vergleichsfeld fehlt: kapazität
-- Warnungen:
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
-
 ### HoneyGuardian A305D
 
 - Datei: `src\content\products\honeyguardian-a305d.md`
@@ -440,6 +387,19 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Empfohlenes Feld unbestätigt: batterie
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
+
+### PETLIBRO Space Smart Feeder
+
+- Datei: `src\content\products\petlibro-space-smart-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 82%
+- Warnungen:
+  - Comparison-Bild fehlt
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld fehlt: napf
+  - Empfohlenes Feld fehlt: reinigung
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: maße
 
 ### PETLIBRO Stainless Steel Fountain 3L
 
@@ -563,16 +523,6 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Empfohlenes Feld unbestätigt: batterie
   - Empfohlenes Feld unbestätigt: gewicht
 
-### PETLIBRO Polar Wet Food Feeder
-
-- Datei: `src\content\products\petlibro-polar-wet-food-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 87%
-- Fehler:
-  - Vergleichsfeld fehlt: portionierung
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-
 ### Cat Mate Pet Fountain 335
 
 - Datei: `src\content\products\cat-mate-335-pet-fountain.md`
@@ -627,6 +577,16 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Empfohlenes Feld unbestätigt: kamera
   - Empfohlenes Feld unbestätigt: reinigung
   - Empfohlenes Feld unbestätigt: batterie
+
+### Garmin Alpha T 20
+
+- Datei: `src\content\products\garmin-alpha-t-20.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: material
+  - capacity ist vorhanden, aber nicht als Spec normalisiert
 
 ### HoneyGuardian A68 Smart Pet Feeder
 
@@ -687,6 +647,24 @@ Erstellt: 2026-07-25T21:12:51.827Z
   - Nur 1 Galerie-Bilder hinterlegt
   - Empfohlenes Feld fehlt: napf
 
+### PAJ PET Finder 4G Mini
+
+- Datei: `src\content\products\paj-pet-finder-4g-mini.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: material
+  - capacity ist vorhanden, aber nicht als Spec normalisiert
+
+### PETKIT Eversweet Ultra
+
+- Datei: `src\content\products\petkit-eversweet-ultra.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
 ### PETLIBRO Air WiFi Feeder
 
 - Datei: `src\content\products\petlibro-air-wifi-feeder.md`
@@ -711,6 +689,14 @@ Erstellt: 2026-07-25T21:12:51.827Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Empfohlenes Feld fehlt: reinigung
+
+### PETLIBRO Polar Wet Food Feeder
+
+- Datei: `src\content\products\petlibro-polar-wet-food-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
 
 ### SureFeed Microchip Pet Feeder
 

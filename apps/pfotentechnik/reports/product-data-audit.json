@@ -1,14 +1,14 @@
 {
   "summary": {
-    "generatedAt": "2026-07-25T21:12:51.827Z",
+    "generatedAt": "2026-07-25T21:31:47.337Z",
     "totalProducts": 65,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 20,
       "gps-tracker": 8
     },
-    "errors": 7,
-    "warnings": 303,
+    "errors": 0,
+    "warnings": 301,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -761,15 +761,17 @@
       "slug": "garmin-alpha-t-20",
       "title": "Garmin Alpha T 20",
       "category": "gps-tracker",
-      "errors": [
-        "Vergleichsfeld fehlt: übertragung"
-      ],
+      "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: bluetooth",
         "Empfohlenes Feld fehlt: material",
         "capacity ist vorhanden, aber nicht als Spec normalisiert"
       ],
       "specs": [
+        {
+          "label": "Übertragung",
+          "value": "VHF-Direktübertragung an ein kompatibles Garmin-Alpha-Handgerät"
+        },
         {
           "label": "Produkttyp",
           "value": "GPS-Hundehalsbandgerät mit VHF-Direktübertragung"
@@ -864,9 +866,9 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 80,
-      "confirmedCompleteness": 80,
-      "completeness": 81
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 91
     },
     {
       "file": "src\\content\\products\\garmin-alpha-tt-25.md",
@@ -1924,15 +1926,20 @@
       "slug": "paj-pet-finder-4g-mini",
       "title": "PAJ PET Finder 4G Mini",
       "category": "gps-tracker",
-      "errors": [
-        "Vergleichsfeld fehlt: übertragung",
-        "Vergleichsfeld fehlt: abo"
-      ],
+      "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: material",
         "capacity ist vorhanden, aber nicht als Spec normalisiert"
       ],
       "specs": [
+        {
+          "label": "Abo",
+          "value": "27 Monate Tracking enthalten; danach kostenpflichtiger PAJ-Tarif erforderlich"
+        },
+        {
+          "label": "Übertragung",
+          "value": "GPS-Position über 4G/LTE mit integriertem 2G-Fallback an App und Webportal"
+        },
         {
           "label": "Produkttyp",
           "value": "GPS-Haustiertracker mit integrierter Mobilfunk-SIM"
@@ -2067,9 +2074,9 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 80,
-      "confirmedCompleteness": 80,
-      "completeness": 74
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\pawbby-smart-pet-feeder.md",
@@ -2922,15 +2929,16 @@
       "slug": "petkit-eversweet-ultra",
       "title": "PETKIT Eversweet Ultra",
       "category": "trinkbrunnen",
-      "errors": [
-        "Vergleichsfeld fehlt: kapazität"
-      ],
+      "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "capacity ist vorhanden, aber nicht als Spec normalisiert"
+        "Empfohlenes Feld fehlt: ersatzfilter"
       ],
       "specs": [
+        {
+          "label": "Kapazität",
+          "value": "5 Liter Frischwasser plus 1,8 Liter Abwasser"
+        },
         {
           "label": "Modell",
           "value": "P4117"
@@ -3089,9 +3097,9 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 80,
-      "confirmedCompleteness": 80,
-      "completeness": 81
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-fresh-element-infinity.md",
@@ -4829,13 +4837,15 @@
       "slug": "petlibro-polar-wet-food-feeder",
       "title": "PETLIBRO Polar Wet Food Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "specs": [
+        {
+          "label": "Portionierung",
+          "value": "Drei zeitgesteuerte Fächer mit je 200 ml"
+        },
         {
           "label": "Modell",
           "value": "PLAF109"
@@ -4902,29 +4912,33 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 92,
-      "confirmedCompleteness": 92,
-      "completeness": 87
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petlibro-space-smart-feeder.md",
       "slug": "petlibro-space-smart-feeder",
       "title": "PETLIBRO Space Smart Feeder",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: kapazität",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Comparison-Bild fehlt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: reinigung",
         "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: maße",
-        "capacity ist vorhanden, aber nicht als Spec normalisiert"
+        "Empfohlenes Feld fehlt: maße"
       ],
       "specs": [
+        {
+          "label": "Portionierung",
+          "value": "Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit"
+        },
+        {
+          "label": "Kapazität",
+          "value": "8 Liter laut PLAF107-Handbuch"
+        },
         {
           "label": "Modell",
           "value": "PLAF107"
@@ -4995,9 +5009,9 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 54,
-      "confirmedCompleteness": 54,
-      "completeness": 59
+      "structuralCompleteness": 69,
+      "confirmedCompleteness": 69,
+      "completeness": 82
     },
     {
       "file": "src\\content\\products\\petlibro-stainless-steel-fountain.md",

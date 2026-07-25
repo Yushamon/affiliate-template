@@ -147,8 +147,6 @@ useCase: "Individuell auswertbare Wasserversorgung in Mehrkatzenhaushalten"
 capacity: "5 Liter Frischwasser plus 1,8 Liter Abwasser"
 expandable: "Cube C als austauschbares Hygieneelement; optionale PETKIT-Care+-Cloudfunktionen je nach Region und Tarif"
 specs:
-  - label: "Kapazität"
-    value: "5 Liter Frischwasser plus 1,8 Liter Abwasser"
   - label: "Modell"
     value: "P4117"
   - label: "Produkttyp"
