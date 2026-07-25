@@ -890,11 +890,11 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 
 ### Spezialisierte Vergleiche
 
-- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/)
+- [Beste Futterautomaten für Katzen](/beste-futterautomaten-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/beste-futterautomaten-fuer-hunde/)
 - [Beste Futterautomaten mit Kamera](/beste-futterautomaten-mit-kamera/)
 - [Beste Futterautomaten ohne WLAN](/beste-futterautomaten-ohne-wlan/)
-- [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- [Beste Futterautomaten für zwei Katzen](/beste-futterautomaten-fuer-zwei-katzen/)
 - [Beste Futterautomaten für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
 
 ## Glossar

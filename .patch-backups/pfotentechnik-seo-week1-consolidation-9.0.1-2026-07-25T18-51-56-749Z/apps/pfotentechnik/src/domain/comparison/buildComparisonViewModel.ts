@@ -287,36 +287,25 @@ export function buildComparisonViewModel({
     ])
   );
 
-  const explicitItems = data.items.filter(
-    (item, index, source) =>
-      source.findIndex(
-        (candidate) =>
-          candidate.type === item.type &&
-          candidate.slug === item.slug
-      ) === index
-  );
-
   const explicitSlugs = new Set(
     data.items.map((item) => item.slug)
   );
 
-  // Kuratierte Vergleichslisten sind autoritativ. Automatische
-  // Produktzuordnung dient nur als Fallback, wenn keine items gepflegt sind.
-  const automaticItems = explicitItems.length === 0
-    ? products
-      .filter((product) =>
-        product.data.comparisons.includes(data.slug)
-      )
-      .map((product) => ({
-        slug: product.data.slug,
-        label: product.data.title,
-        type: "product" as const,
-        recommendation: product.data.recommendation,
-        values: {}
-      }))
-    : [];
+  const automaticItems = products
+    .filter(
+      (product) =>
+        product.data.comparisons.includes(data.slug) &&
+        !explicitSlugs.has(product.data.slug)
+    )
+    .map((product) => ({
+      slug: product.data.slug,
+      label: product.data.title,
+      type: "product" as const,
+      recommendation: product.data.recommendation,
+      values: {}
+    }));
 
-  const items = [...explicitItems, ...automaticItems];
+  const items = [...data.items, ...automaticItems];
 
   const automaticRecommendation = buildAutomaticRecommendations({
     comparison,
