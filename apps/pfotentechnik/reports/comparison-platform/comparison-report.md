@@ -1,59 +1,42 @@
 # Comparison Platform Report
 
-Erstellt: 2026-07-25T21:32:03.462Z
+Erstellt: 2026-07-25T21:41:06.369Z
 
 ## Übersicht
 
 - Vergleiche: 13
 - Produkte: 65
-- Hersteller: 14
-- verwendete Produkte: 32
-- Produktabdeckung: 49.2 %
-- Qualitätsscore: 0/100
-- Fehler: 20
-- Warnungen: 204
+- Hersteller: 15
+- verwendete Produkte: 33
+- Produktabdeckung: 50.8 %
+- Qualitätsscore: 60/100
+- Fehler: 2
+- Warnungen: 202
 
 ## Häufigste Befunde
 
-- **PRODUCT_MANUFACTURER_MISSING**: 9 (error, integrity)
-- **ALTERNATIVE_NOT_IN_ITEMS**: 3 (error, integrity)
-- **ITEM_SLUG_MISSING**: 3 (error, structure)
-- **WINNER_NOT_IN_ITEMS**: 3 (error, integrity)
 - **MANUFACTURER_REFERENCE_BROKEN**: 1 (error, integrity)
-- **PRODUCT_REFERENCE_BROKEN**: 1 (error, integrity)
+- **PRODUCT_MANUFACTURER_MISSING**: 1 (error, integrity)
 - **VALUE_MISSING**: 184 (warning, content)
 - **HERO_IMAGE_MISSING**: 9 (warning, content)
-- **PRODUCT_NOT_COVERED**: 6 (warning, coverage)
 - **FAQ_THIN**: 4 (warning, content)
+- **PRODUCT_NOT_COVERED**: 4 (warning, coverage)
 - **CRITERIA_THIN**: 1 (warning, content)
 
 ## Dateien mit den meisten Problemen
 
-- `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: 3 Fehler, 0 Warnungen
-- `src/content/comparisons/gps-tracker-ohne-abo.md`: 3 Fehler, 0 Warnungen
-- `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: 3 Fehler, 0 Warnungen
-- `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: 1 Fehler, 9 Warnungen
-- `src/content/products/catit-pixi-smart-6-meal-feeder.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/oneisall-3-5l-cordless-fountain.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/petkit-eversweet-solo-2-fountain.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/petlibro-granary-camera-feeder.md`: 1 Fehler, 0 Warnungen
+- `src/content/products/garmin-alpha-tt-25.md`: 1 Fehler, 0 Warnungen
 - `src/content/products/petsafe-freshfeed-refrigerated-feeder.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/tractive-cat-6-mini.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/tractive-dog-6-xl.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/tractive-dog-6.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/weenect-xs.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/weenect-xt.md`: 1 Fehler, 0 Warnungen
 - `src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: 0 Fehler, 41 Warnungen
 - `src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: 0 Fehler, 39 Warnungen
 - `src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: 0 Fehler, 39 Warnungen
 - `src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: 0 Fehler, 37 Warnungen
 - `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`: 0 Fehler, 26 Warnungen
+- `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: 0 Fehler, 9 Warnungen
 - `src/content/comparisons/beste-futterautomaten-mit-kamera.md`: 0 Fehler, 3 Warnungen
 - `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: 0 Fehler, 2 Warnungen
 - `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: 0 Fehler, 1 Warnungen
 - `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: 0 Fehler, 1 Warnungen
-- `src/content/products/garmin-alpha-tt-25.md`: 0 Fehler, 1 Warnungen
-- `src/content/products/imipaw-3l-automatic-cat-feeder.md`: 0 Fehler, 1 Warnungen
 - `src/content/products/oneisall-2-in-1-feeder-water.md`: 0 Fehler, 1 Warnungen
 - `src/content/products/petkit-eversweet-3-pro-uvc.md`: 0 Fehler, 1 Warnungen
 - `src/content/products/petkit-yumshare-solo-2.md`: 0 Fehler, 1 Warnungen
@@ -61,26 +44,8 @@ Erstellt: 2026-07-25T21:32:03.462Z
 
 ## Fehler
 
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/petsafe-freshfeed-refrigerated-feeder.md`: manufacturer.slug fehlt.
-- **MANUFACTURER_REFERENCE_BROKEN** – `src/content/products/catit-pixi-smart-6-meal-feeder.md`: Hersteller catit existiert nicht.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/petlibro-granary-camera-feeder.md`: manufacturer.slug fehlt.
-- **PRODUCT_REFERENCE_BROKEN** – `src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Produkt imipaw-3l existiert nicht.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-dog-6.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/weenect-xs.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-dog-6-xl.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/weenect-xt.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/tractive-cat-6-mini.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/oneisall-3-5l-cordless-fountain.md`: manufacturer.slug fehlt.
-- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/petkit-eversweet-solo-2-fountain.md`: manufacturer.slug fehlt.
-- **ITEM_SLUG_MISSING** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: Ein item besitzt keinen slug.
-- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: winnerSlug tractive-dog-6-xl ist nicht in items.
-- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`: alternativeSlug weenect-xt ist nicht in items.
-- **ITEM_SLUG_MISSING** – `src/content/comparisons/gps-tracker-ohne-abo.md`: Ein item besitzt keinen slug.
-- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-ohne-abo.md`: winnerSlug garmin-alpha-t-20 ist nicht in items.
-- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/gps-tracker-ohne-abo.md`: alternativeSlug garmin-alpha-tt-25 ist nicht in items.
-- **ITEM_SLUG_MISSING** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: Ein item besitzt keinen slug.
-- **WINNER_NOT_IN_ITEMS** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: winnerSlug weenect-xs ist nicht in items.
-- **ALTERNATIVE_NOT_IN_ITEMS** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: alternativeSlug tractive-cat-6-mini ist nicht in items.
+- **MANUFACTURER_REFERENCE_BROKEN** – `src/content/products/petsafe-freshfeed-refrigerated-feeder.md`: Hersteller petsafe existiert nicht.
+- **PRODUCT_MANUFACTURER_MISSING** – `src/content/products/garmin-alpha-tt-25.md`: manufacturer.slug fehlt.
 
 ## Warnungen
 
@@ -282,8 +247,6 @@ Erstellt: 2026-07-25T21:32:03.462Z
 - **FAQ_THIN** – `src/content/comparisons/beste-gps-tracker-fuer-katzen.md`: Weniger als drei FAQ-Einträge.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`: heroImage fehlt.
 - **HERO_IMAGE_MISSING** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: heroImage fehlt.
-- **PRODUCT_NOT_COVERED** – `src/content/products/garmin-alpha-tt-25.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
-- **PRODUCT_NOT_COVERED** – `src/content/products/imipaw-3l-automatic-cat-feeder.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
 - **PRODUCT_NOT_COVERED** – `src/content/products/oneisall-2-in-1-feeder-water.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
 - **PRODUCT_NOT_COVERED** – `src/content/products/petkit-eversweet-3-pro-uvc.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
 - **PRODUCT_NOT_COVERED** – `src/content/products/petkit-yumshare-solo-2.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.

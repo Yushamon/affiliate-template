@@ -15,14 +15,8 @@ group: "GPS-Tracker"
 icon: "📻"
 heroImage: { src: "../../assets/images/guides/gps-tracker/battery-subscription.webp", alt: "Mobilfunktracker mit Dienst und VHF-System mit Handgerät gegenübergestellt" }
 items:
-  - slug: "garmin-alpha-t-20"
-    label: "Garmin Alpha T 20"
-    type: "product"
-    recommendation: "Beste reine Ortungslösung ohne Mobilfunkabo für kompatible Alpha-Systeme."
-  - slug: "garmin-alpha-tt-25"
-    label: "Garmin Alpha TT 25"
-    type: "product"
-    recommendation: "Nur bei zusätzlich bewusst benötigten Trainingsfunktionen."
+  - { slug: "garmin-alpha-t-20", label: "Garmin Alpha T 20", type: "product", recommendation: "Beste reine Ortungslösung ohne Mobilfunkabo für kompatible Alpha-Systeme." }
+  - { slug: "garmin-alpha-tt-25", label: "Garmin Alpha TT 25", type: "product", recommendation: "Nur bei zusätzlich bewusst benötigten Trainingsfunktionen." }
 criteria:
   - { key: "uebertragung", label: "Übertragung", description: "Direkter Funkweg statt Mobilfunkcloud." }
   - { key: "reichweite", label: "Reichweite", description: "Hersteller-Maximalwert und feste Systemgrenze." }

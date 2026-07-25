@@ -7,10 +7,7 @@ testStatus: "editorial-review"
 productStatus: "unknown"
 description: "PETKIT Eversweet Solo 2 im Datencheck: 2-Liter-Tank, kabellose Pumpe, Lautstärke, Filter, Reinigung und Bluetooth-App."
 recommendation: "Ausgewogene Mittelklasse für Katzenhalter, die eine leise Pumpe und einfache Statushinweise suchen."
-manufacturer:
-  key: "petkit"
-  name: "PETKIT"
-  slug: "petkit"
+manufacturer: { key: petkit, name: PETKIT, slug: petkit }
 category: { key: trinkbrunnen, label: Trinkbrunnen, path: /trinkbrunnen/ }
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"

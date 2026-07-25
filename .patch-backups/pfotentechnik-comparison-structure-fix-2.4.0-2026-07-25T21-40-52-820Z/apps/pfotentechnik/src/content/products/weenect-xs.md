@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "27 g leichter GPS-Tracker für Katzen und kleine Hunde ab 3 kg mit Multi-Netz-SIM, Sekundentracking, Ton, Vibration und Licht."
 recommendation: "Beste sehr leichte Universaloption für Katzen und kleine Hunde ab 3 kg, wenn flexible Befestigung und Rückrufsignale gewünscht sind."
-manufacturer:
-  key: "weenect"
-  name: "Weenect"
-  slug: "weenect"
+manufacturer: { key: "weenect", name: "Weenect", slug: "weenect" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-20"

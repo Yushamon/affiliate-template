@@ -23,7 +23,7 @@ items:
     type: "product"
     label: "Beste Wahl gegen Futterklau"
     recommendation: "Für Haushalte, in denen nur ein bestimmtes Tier Zugang zur Portion erhalten soll."
-  - slug: "imipaw-3l-automatic-cat-feeder"
+  - slug: "imipaw-3l"
     type: "product"
     label: "Einfache Trockenfutter-Lösung"
     recommendation: "Für zeitgesteuerte Trockenfutterportionen ohne WLAN und Cloudkonto."

@@ -7,10 +7,7 @@ testStatus: "editorial-review"
 productStatus: "unknown"
 description: "Aktiv gekühlter Sechs-Mahlzeiten-Automat für Nass- und Frischfutter mit App, Edelstahl-Einsätzen und doppelter Deckelverriegelung."
 recommendation: "Eine der spannendsten Nassfutter-Neuerscheinungen 2026 für Katzen und kleine Hunde, wenn echte Kühlung wichtiger ist als Batterie- oder Offline-Betrieb."
-manufacturer:
-  key: "petsafe"
-  name: "PetSafe"
-  slug: "petsafe"
+manufacturer: { key: "petsafe", name: "PetSafe", slug: "petsafe" }
 category: { key: "futterautomaten", label: "Futterautomaten", path: "/smarte-futterautomaten/" }
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"

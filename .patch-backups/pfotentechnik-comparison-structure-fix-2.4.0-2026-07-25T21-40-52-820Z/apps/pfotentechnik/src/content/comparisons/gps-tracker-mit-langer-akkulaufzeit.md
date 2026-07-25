@@ -15,34 +15,13 @@ group: "GPS-Tracker"
 icon: "🔋"
 heroImage: { src: "../../assets/images/guides/gps-tracker/battery-subscription.webp", alt: "GPS-Tracker mit unterschiedlichen Akkugrößen und Energiesparzonen" }
 items:
-  - slug: "tractive-dog-6-xl"
-    label: "Tractive DOG 6 XL"
-    type: "product"
-    recommendation: "Längste Mobilfunk-Maximalangabe mit bis zu sechs Wochen für Hunde ab 20 kg."
-  - slug: "weenect-xt"
-    label: "Weenect XT"
-    type: "product"
-    recommendation: "Robuste Hundeoption mit bis zu drei Wochen im Energiesparmodus."
-  - slug: "tractive-dog-6"
-    label: "Tractive DOG 6"
-    type: "product"
-    recommendation: "Gute Balance aus 39 g und bis zu zwei Wochen."
-  - slug: "paj-pet-finder-4g-mini"
-    label: "PAJ PET Finder 4G Mini"
-    type: "product"
-    recommendation: "Bis zu zehn Tage im Sparmodus, aber deutlich weniger bei aktivem Tracking."
-  - slug: "tractive-cat-6-mini"
-    label: "Tractive CAT 6 Mini"
-    type: "product"
-    recommendation: "Katzenspezifisch mit bis zu sieben Tagen."
-  - slug: "weenect-xs"
-    label: "Weenect XS"
-    type: "product"
-    recommendation: "27-g-Kleinformat mit bis zu sieben Tagen, rund zwei Tagen im Dauertracking."
-  - slug: "garmin-alpha-t-20"
-    label: "Garmin Alpha T 20"
-    type: "product"
-    recommendation: "Bis 68 Stunden, optional 136 Stunden, als VHF-System mit Handgerät."
+  - { slug: "tractive-dog-6-xl", label: "Tractive DOG 6 XL", type: "product", recommendation: "Längste Mobilfunk-Maximalangabe mit bis zu sechs Wochen für Hunde ab 20 kg." }
+  - { slug: "weenect-xt", label: "Weenect XT", type: "product", recommendation: "Robuste Hundeoption mit bis zu drei Wochen im Energiesparmodus." }
+  - { slug: "tractive-dog-6", label: "Tractive DOG 6", type: "product", recommendation: "Gute Balance aus 39 g und bis zu zwei Wochen." }
+  - { slug: "paj-pet-finder-4g-mini", label: "PAJ PET Finder 4G Mini", type: "product", recommendation: "Bis zu zehn Tage im Sparmodus, aber deutlich weniger bei aktivem Tracking." }
+  - { slug: "tractive-cat-6-mini", label: "Tractive CAT 6 Mini", type: "product", recommendation: "Katzenspezifisch mit bis zu sieben Tagen." }
+  - { slug: "weenect-xs", label: "Weenect XS", type: "product", recommendation: "27-g-Kleinformat mit bis zu sieben Tagen, rund zwei Tagen im Dauertracking." }
+  - { slug: "garmin-alpha-t-20", label: "Garmin Alpha T 20", type: "product", recommendation: "Bis 68 Stunden, optional 136 Stunden, als VHF-System mit Handgerät." }
 criteria:
   - { key: "akkulaufzeit", label: "Akkulaufzeit", description: "Herstellerwert samt Betriebsbedingung." }
   - { key: "gewicht", label: "Gewicht", description: "Laufzeit darf Tier-Fit nicht verdrängen." }

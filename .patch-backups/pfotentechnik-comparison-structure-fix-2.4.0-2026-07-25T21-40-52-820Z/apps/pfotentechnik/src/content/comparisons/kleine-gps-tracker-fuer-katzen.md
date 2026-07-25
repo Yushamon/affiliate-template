@@ -15,18 +15,9 @@ group: "GPS-Tracker"
 icon: "⚖️"
 heroImage: { src: "../../assets/images/guides/gps-tracker/attachment.webp", alt: "Kleine Tracker mit sicherer Katzenhalsband-Befestigung" }
 items:
-  - slug: "weenect-xs"
-    label: "Weenect XS"
-    type: "product"
-    recommendation: "Leichtester reiner Gerätewert mit 27 g für Katzen ab 3 kg."
-  - slug: "tractive-cat-6-mini"
-    label: "Tractive CAT 6 Mini"
-    type: "product"
-    recommendation: "31 g als Komplettsystem inklusive Sicherheitshalsband für Katzen von 3 bis 8 kg."
-  - slug: "paj-pet-finder-4g-mini"
-    label: "PAJ PET Finder 4G Mini"
-    type: "product"
-    recommendation: "33-g-Gerät; Katzen-Passform und sichere Halterung besonders kritisch prüfen."
+  - { slug: "weenect-xs", label: "Weenect XS", type: "product", recommendation: "Leichtester reine Gerätewert mit 27 g für Katzen ab 3 kg." }
+  - { slug: "tractive-cat-6-mini", label: "Tractive CAT 6 Mini", type: "product", recommendation: "31 g als Komplettsystem inklusive Sicherheitshalsband für Katzen von 3 bis 8 kg." }
+  - { slug: "paj-pet-finder-4g-mini", label: "PAJ PET Finder 4G Mini", type: "product", recommendation: "33-g-Gerät; Katzen-Passform und sichere Halterung besonders kritisch prüfen." }
 criteria:
   - { key: "gewicht", label: "Gewicht", description: "Geräte- oder Gesamtgewicht klar unterscheiden." }
   - { key: "abmessungen", label: "Abmessungen", description: "Form und Länge am Hals." }

@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Kompakter GPS- und Gesundheitstracker für Hunde ab 4 kg mit LTE, Live-Ortung, Sicherheitszonen, Vitalwert-Trends und bis zu zwei Wochen Herstellerlaufzeit."
 recommendation: "Starker GPS-Allrounder für kleine und mittelgroße Hunde, wenn eine ausgereifte App, schnelle Live-Ortung und Gesundheits-Trends wichtiger sind als ein Betrieb ohne Abo."
-manufacturer:
-  key: "tractive"
-  name: "Tractive"
-  slug: "tractive"
+manufacturer: { key: "tractive", name: "Tractive", slug: "tractive" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-25"

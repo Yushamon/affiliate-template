@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "GPS- und Gesundheitstracker für Hunde ab 20 kg mit LTE-Live-Ortung, IP68, Sicherheitszonen und bis zu sechs Wochen Herstellerlaufzeit."
 recommendation: "Die stärkste Tractive-Option für große Hunde, wenn eine sehr lange Akkureserve, schnelle Live-Ortung und eine ausgereifte App wichtiger sind als niedriges Gewicht und ein Betrieb ohne Abo."
-manufacturer:
-  key: "tractive"
-  name: "Tractive"
-  slug: "tractive"
+manufacturer: { key: "tractive", name: "Tractive", slug: "tractive" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-25"

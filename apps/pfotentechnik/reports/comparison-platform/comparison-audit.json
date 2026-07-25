@@ -1,41 +1,17 @@
 {
-  "generatedAt": "2026-07-25T21:32:03.462Z",
+  "generatedAt": "2026-07-25T21:41:06.369Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 13,
     "products": 65,
-    "manufacturers": 14,
-    "usedProducts": 32,
-    "productCoveragePercent": 49.2,
-    "errors": 20,
-    "warnings": 204,
-    "qualityScore": 0
+    "manufacturers": 15,
+    "usedProducts": 33,
+    "productCoveragePercent": 50.8,
+    "errors": 2,
+    "warnings": 202,
+    "qualityScore": 60
   },
   "byCode": [
-    {
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "count": 9,
-      "category": "integrity",
-      "level": "error"
-    },
-    {
-      "code": "ALTERNATIVE_NOT_IN_ITEMS",
-      "count": 3,
-      "category": "integrity",
-      "level": "error"
-    },
-    {
-      "code": "ITEM_SLUG_MISSING",
-      "count": 3,
-      "category": "structure",
-      "level": "error"
-    },
-    {
-      "code": "WINNER_NOT_IN_ITEMS",
-      "count": 3,
-      "category": "integrity",
-      "level": "error"
-    },
     {
       "code": "MANUFACTURER_REFERENCE_BROKEN",
       "count": 1,
@@ -43,7 +19,7 @@
       "level": "error"
     },
     {
-      "code": "PRODUCT_REFERENCE_BROKEN",
+      "code": "PRODUCT_MANUFACTURER_MISSING",
       "count": 1,
       "category": "integrity",
       "level": "error"
@@ -61,15 +37,15 @@
       "level": "warning"
     },
     {
-      "code": "PRODUCT_NOT_COVERED",
-      "count": 6,
-      "category": "coverage",
-      "level": "warning"
-    },
-    {
       "code": "FAQ_THIN",
       "count": 4,
       "category": "content",
+      "level": "warning"
+    },
+    {
+      "code": "PRODUCT_NOT_COVERED",
+      "count": 4,
+      "category": "coverage",
       "level": "warning"
     },
     {
@@ -81,85 +57,13 @@
   ],
   "byFile": [
     {
-      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
-      "errors": 3,
-      "warnings": 0,
-      "total": 3
-    },
-    {
-      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
-      "errors": 3,
-      "warnings": 0,
-      "total": 3
-    },
-    {
-      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
-      "errors": 3,
-      "warnings": 0,
-      "total": 3
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "errors": 1,
-      "warnings": 9,
-      "total": 10
-    },
-    {
-      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/petlibro-granary-camera-feeder.md",
+      "file": "src/content/products/garmin-alpha-tt-25.md",
       "errors": 1,
       "warnings": 0,
       "total": 1
     },
     {
       "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/tractive-cat-6-mini.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/tractive-dog-6-xl.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/tractive-dog-6.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/weenect-xs.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/weenect-xt.md",
       "errors": 1,
       "warnings": 0,
       "total": 1
@@ -195,6 +99,12 @@
       "total": 26
     },
     {
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "errors": 0,
+      "warnings": 9,
+      "total": 9
+    },
+    {
       "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md",
       "errors": 0,
       "warnings": 3,
@@ -214,18 +124,6 @@
     },
     {
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/garmin-alpha-tt-25.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
       "errors": 0,
       "warnings": 1,
       "total": 1
@@ -1158,10 +1056,11 @@
     },
     {
       "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
       "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
       "slug": "petsafe-freshfeed-refrigerated-feeder",
-      "message": "manufacturer.slug fehlt.",
+      "message": "Hersteller petsafe existiert nicht.",
+      "manufacturerSlug": "petsafe",
       "category": "integrity"
     },
     {
@@ -1243,15 +1142,6 @@
       "itemSlug": "petsafe-freshfeed-refrigerated-feeder",
       "criterionKey": "wichtigstegrenze",
       "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
-      "slug": "catit-pixi-smart-6-meal-feeder",
-      "message": "Hersteller catit existiert nicht.",
-      "manufacturerSlug": "catit",
-      "category": "integrity"
     },
     {
       "level": "warning",
@@ -1907,14 +1797,6 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/petlibro-granary-camera-feeder.md",
-      "slug": "petlibro-granary-camera-feeder",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
-    },
-    {
       "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
@@ -2001,15 +1883,6 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "PRODUCT_REFERENCE_BROKEN",
-      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-      "slug": "beste-futterautomaten-ohne-wlan",
-      "message": "Produkt imipaw-3l existiert nicht.",
-      "itemSlug": "imipaw-3l",
-      "category": "integrity"
-    },
-    {
       "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
@@ -2024,14 +1897,6 @@
       "slug": "beste-gps-tracker-fuer-hunde",
       "message": "Weniger als drei FAQ-Einträge.",
       "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/tractive-dog-6.md",
-      "slug": "tractive-dog-6",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
     },
     {
       "level": "warning",
@@ -2072,14 +1937,6 @@
       "itemSlug": "tractive-dog-6",
       "criterionKey": "abo",
       "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/weenect-xs.md",
-      "slug": "weenect-xs",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
     },
     {
       "level": "warning",
@@ -2162,14 +2019,6 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/tractive-dog-6-xl.md",
-      "slug": "tractive-dog-6-xl",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
-    },
-    {
       "level": "warning",
       "code": "VALUE_MISSING",
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
@@ -2208,14 +2057,6 @@
       "itemSlug": "tractive-dog-6-xl",
       "criterionKey": "abo",
       "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/weenect-xt.md",
-      "slug": "weenect-xt",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
     },
     {
       "level": "warning",
@@ -2314,28 +2155,12 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/tractive-cat-6-mini.md",
-      "slug": "tractive-cat-6-mini",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
-    },
-    {
       "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
       "slug": "beste-trinkbrunnen-fuer-hunde",
       "message": "heroImage fehlt.",
       "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
-      "slug": "oneisall-3-5l-cordless-fountain",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
     },
     {
       "level": "warning",
@@ -2348,98 +2173,10 @@
     {
       "level": "error",
       "code": "PRODUCT_MANUFACTURER_MISSING",
-      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
-      "slug": "petkit-eversweet-solo-2-fountain",
-      "message": "manufacturer.slug fehlt.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ITEM_SLUG_MISSING",
-      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
-      "slug": "gps-tracker-mit-langer-akkulaufzeit",
-      "message": "Ein item besitzt keinen slug.",
-      "category": "structure"
-    },
-    {
-      "level": "error",
-      "code": "WINNER_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
-      "slug": "gps-tracker-mit-langer-akkulaufzeit",
-      "message": "winnerSlug tractive-dog-6-xl ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ALTERNATIVE_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
-      "slug": "gps-tracker-mit-langer-akkulaufzeit",
-      "message": "alternativeSlug weenect-xt ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ITEM_SLUG_MISSING",
-      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
-      "slug": "gps-tracker-ohne-abo",
-      "message": "Ein item besitzt keinen slug.",
-      "category": "structure"
-    },
-    {
-      "level": "error",
-      "code": "WINNER_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
-      "slug": "gps-tracker-ohne-abo",
-      "message": "winnerSlug garmin-alpha-t-20 ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ALTERNATIVE_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/gps-tracker-ohne-abo.md",
-      "slug": "gps-tracker-ohne-abo",
-      "message": "alternativeSlug garmin-alpha-tt-25 ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ITEM_SLUG_MISSING",
-      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
-      "slug": "kleine-gps-tracker-fuer-katzen",
-      "message": "Ein item besitzt keinen slug.",
-      "category": "structure"
-    },
-    {
-      "level": "error",
-      "code": "WINNER_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
-      "slug": "kleine-gps-tracker-fuer-katzen",
-      "message": "winnerSlug weenect-xs ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "ALTERNATIVE_NOT_IN_ITEMS",
-      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
-      "slug": "kleine-gps-tracker-fuer-katzen",
-      "message": "alternativeSlug tractive-cat-6-mini ist nicht in items.",
-      "category": "integrity"
-    },
-    {
-      "level": "warning",
-      "code": "PRODUCT_NOT_COVERED",
       "file": "src/content/products/garmin-alpha-tt-25.md",
       "slug": "garmin-alpha-tt-25",
-      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
-      "category": "coverage"
-    },
-    {
-      "level": "warning",
-      "code": "PRODUCT_NOT_COVERED",
-      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
-      "slug": "imipaw-3l-automatic-cat-feeder",
-      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
-      "category": "coverage"
+      "message": "manufacturer.slug fehlt.",
+      "category": "integrity"
     },
     {
       "level": "warning",

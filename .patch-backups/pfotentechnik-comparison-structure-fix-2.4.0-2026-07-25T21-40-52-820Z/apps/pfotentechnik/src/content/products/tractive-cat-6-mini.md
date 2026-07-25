@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "In ein Sicherheitshalsband integrierter LTE-GPS-Tracker für Katzen von 3 bis 8 kg mit 32 g Gesamtgewicht, IP68 und bis zu sieben Tagen Akkulaufzeit mit Energiesparzone."
 recommendation: "Starke Gesamtlösung für Freigängerkatzen von 3 bis 8 kg, wenn eine integrierte, ergonomische Halsbandlösung mit Live-Ortung und Gesundheitsdaten wichtiger ist als Abo-Freiheit oder ein frei wählbares Halsband."
-manufacturer:
-  key: "tractive"
-  name: "Tractive"
-  slug: "tractive"
+manufacturer: { key: "tractive", name: "Tractive", slug: "tractive" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-22"

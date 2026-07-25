@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Robuster Hundetracker mit 54,2 g, IP68, großer Leuchte und einer Herstellerlaufzeit von bis zu drei Wochen im Energiesparmodus."
 recommendation: "Robuste Langzeitwahl für aktive mittelgroße und große Hunde, wenn Leuchte, starke Befestigung und längerer Akku wichtiger sind als ein besonders kleines Gehäuse."
-manufacturer:
-  key: "weenect"
-  name: "Weenect"
-  slug: "weenect"
+manufacturer: { key: "weenect", name: "Weenect", slug: "weenect" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-20"
