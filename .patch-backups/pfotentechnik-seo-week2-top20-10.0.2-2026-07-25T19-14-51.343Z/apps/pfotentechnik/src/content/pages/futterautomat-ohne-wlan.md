@@ -1,9 +1,9 @@
 ---
 title: "Futterautomat ohne WLAN"
-seoTitle: "Futterautomat ohne WLAN: ohne App, Cloud und Konto"
+seoTitle: "Futterautomat ohne WLAN: zuverlässig und ohne App"
 slug: "futterautomat-ohne-wlan"
 description: "Futterautomaten ohne WLAN nach Zeitsteuerung, Batterie, Bedienung und Ausfallsicherheit auswählen."
-seoDescription: "Futterautomat ohne WLAN auswählen: drei Offline-Konzepte, lokale Zeitpläne, Batteriebetrieb, Datenschutz und direkte Modelle im Vergleich."
+seoDescription: "Futterautomat ohne WLAN finden: Vorteile, Grenzen und Prüfkriterien für lokale Zeitpläne, Batteriebetrieb und einfache Bedienung."
 category: "futterautomaten"
 linking:
   keywords: ["Futterautomat ohne WLAN", "Futterautomaten ohne WLAN", "Offline-Futterautomat", "ohne WLAN"]
@@ -14,7 +14,7 @@ categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Ohne WLAN", "Datenschutz", "Offline"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-09"
 hub:
   sections:
     - "wissen"
@@ -30,8 +30,6 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "Lokale Zeitsteuerung reicht für viele Routinen"
     text: "Ein Futterautomat braucht kein WLAN, um Mahlzeiten zu einer festgelegten Uhrzeit bereitzustellen. Modelle mit Display und lokalen Tasten speichern den Plan direkt im Gerät. Sie verzichten auf Fernzugriff und Push-Meldungen, reduzieren dafür Abhängigkeiten von Router, Konto und Cloud. Entscheidend sind verständliche Bedienung, zuverlässige Uhr, sichere Stromversorgung und eine gut kontrollierbare Portionierung."
-    href: "/vergleiche/beste-futterautomaten-ohne-wlan/"
-    cta: "Offline-Modelle vergleichen"
   - type: "quickFacts"
     eyebrow: "Offline entscheiden"
     title: "Wann weniger Vernetzung sinnvoll ist"
@@ -45,7 +43,7 @@ premiumBlocks:
       - label: "Bewusst"
         title: "Weniger Meldungen"
         text: "Füllstand, Stau und Fressverhalten müssen direkt kontrolliert werden."
-comparisonProducts: ["cat-mate-c500", "surefeed-microchip-pet-feeder", "imipaw-3l"]
+comparisonProducts: ["cat-mate-c500", "petlibro-granary-wifi-feeder", "petkit-fresh-element-solo"]
 comparisonRecommendation:
   title: "Offline ist ein Bedienkonzept, kein Qualitätsurteil"
   text: "Der Cat Mate C500 arbeitet ohne App. Vernetzte Modelle können Zeitpläne lokal weiterführen, bieten aber zusätzliche Fernfunktionen. Entscheidend ist das dokumentierte Verhalten bei Verbindungsabbruch."
@@ -57,21 +55,14 @@ faq:
     answer: "Er hat weniger Netzwerkabhängigkeiten, kann aber weiterhin durch leere Batterien, falsche Uhrzeit oder mechanische Blockaden ausfallen. Ausfallsicherheit entsteht durch Tests, regelmäßige Kontrolle und eine passende Stromreserve."
   - question: "Kann ich einen App-Futterautomaten ohne WLAN verwenden?"
     answer: "Das hängt vom Modell ab. Manche Geräte benötigen WLAN nur für Einrichtung und Fernfunktionen, andere setzen ein Konto oder eine Verbindung voraus. Anleitung und Offline-Verhalten sollten vor dem Kauf geprüft werden."
-  - question: "Welcher Futterautomat funktioniert vollständig ohne App?"
-    answer: "Fachautomaten wie Cat Mate C500, Mikrochip-Näpfe wie SureFeed und lokal programmierbare Trockenfutterautomaten können ohne App arbeiten. Sie lösen jedoch unterschiedliche Aufgaben."
-  - question: "Gibt es Futterautomaten ohne WLAN für Nassfutter?"
-    answer: "Ja. Ein Fachautomat kann vorbereitete Nassfutterportionen zu festen Zeiten öffnen. Kühlung, Standzeit und Reinigung bleiben separat zu prüfen."
-  - question: "Speichert ein Futterautomat ohne WLAN den Zeitplan bei Batteriewechsel?"
-    answer: "Das ist modellabhängig. Nach jedem Batteriewechsel müssen Uhr, Datum und gespeicherte Mahlzeiten kontrolliert werden."
-  - question: "Ist ein Offline-Futterautomat datenschutzfreundlicher?"
-    answer: "Ein vollständig lokales Gerät überträgt keine App-, Kamera- oder Nutzungsdaten an eine Cloud. Kauf- und Garantiedaten können dennoch beim Händler oder Hersteller anfallen."
+
 contentPlatform:
   intent: buying-guide
   cluster: futterautomaten
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten-ohne-wlan/
+  comparisonHref: /vergleiche/beste-futterautomaten/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -121,17 +112,6 @@ In Mehrtierhaushalten löst fehlendes WLAN weder Futterdiebstahl noch Konkurrenz
 Nach dem Programmieren sollte ein kompletter Tagesablauf unter Beobachtung stattfinden. Kontrolliere Uhr, Display, jede Ausgabe und das Verhalten des Tieres. Trenne bei einem vernetzten Modell testweise das WLAN. Simuliere bei vorhandenem Backup kurz den Stromausfall. Nach Zeitumstellungen oder Batteriewechseln muss die Uhr erneut geprüft werden.
 
 Für Urlaub ist ein solcher Test besonders wichtig, ersetzt aber keine Betreuung. Der [Urlaubs-Ratgeber](/futterautomat-im-urlaub/) zeigt, welche Aufgaben einer Person vor Ort übergeben werden sollten.
-
-
-## Drei Offline-Bauarten direkt vergleichen
-
-Der spezialisierte [Vergleich der besten Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) trennt drei Konzepte:
-
-- **Cat Mate C500:** vorbereitete Nass- oder Trockenfutterfächer mit lokaler Zeitsteuerung,
-- **SureFeed Microchip Pet Feeder:** geschützter Zugang ohne automatische Vorratsdosierung,
-- **IMIPAW 3L:** klassischer Trockenfutterautomat mit lokalem Plan.
-
-Die Geräte sind keine direkten Funktionszwillinge. Entscheidend ist zuerst, ob du Zeitsteuerung, Zugangsschutz oder automatische Trockenfutterdosierung benötigst.
 
 ## Methodik unserer Einordnung
 

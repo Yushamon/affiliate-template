@@ -297,23 +297,6 @@ const updatedAt =
   publishedAt;
 
 
-const toReviewItemList = (items = []) => ({
-  "@type": "ItemList",
-  itemListElement: items
-    .filter(Boolean)
-    .slice(0, 5)
-    .map((name, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name
-    }))
-});
-
-const structuredReviewBody =
-  contentProduct.review?.verdict ??
-  contentProduct.review?.summary ??
-  contentProduct.recommendation;
-
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -332,28 +315,17 @@ const productSchema = {
   review: {
     "@type": "Review",
     name: `${contentProduct.title} – redaktionelle Einordnung`,
-    reviewBody: structuredReviewBody,
-    datePublished: publishedAt,
+    reviewBody: contentProduct.recommendation,
     author: {
       "@type": "Organization",
-      name: author.name
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "PfotenTechnik"
+      name: "PfotenTechnik Redaktion"
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: productScore100,
-      bestRating: 100,
-      worstRating: 0
-    },
-    ...(contentProduct.strengths?.length
-      ? { positiveNotes: toReviewItemList(contentProduct.strengths) }
-      : {}),
-    ...(contentProduct.weaknesses?.length
-      ? { negativeNotes: toReviewItemList(contentProduct.weaknesses) }
-      : {})
+      ratingValue: contentProduct.rating,
+      bestRating: 5,
+      worstRating: 1
+    }
   }
 };
 

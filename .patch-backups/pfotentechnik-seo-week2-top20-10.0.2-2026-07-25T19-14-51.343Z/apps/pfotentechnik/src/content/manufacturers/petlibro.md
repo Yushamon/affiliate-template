@@ -14,7 +14,7 @@ recommendation: "PETLIBRO passt besonders zu Katzen- und Hundehaltern, die zwisc
 summary: "PETLIBRO entwickelt seit 2019 smarte Futterautomaten und Trinkbrunnen. Die Stärke liegt in der ungewöhnlich breiten Auswahl: Trocken- oder Nassfutter, Kamera, RFID-Zugang sowie Brunnen mit App- oder Verbrauchserfassung. App-, Cloud- und Filterbedarf müssen jedoch für jedes Modell getrennt geprüft werden."
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-22"
 navigation:
   show: true
   label: "Hersteller"
@@ -45,8 +45,8 @@ hub:
   featured: true
 
 seo:
-  title: "PETLIBRO Erfahrungen 2026: Modelle, App und Unterschiede"
-  description: "PETLIBRO Futterautomaten und Trinkbrunnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung, Zugang und Folgekosten."
+  title: "PETLIBRO Erfahrungen: Produkte, Bewertung und Empfehlungen"
+  description: "PETLIBRO im Überblick: Futterautomaten, Trinkbrunnen, App, optionale Abos, Erfahrungen, Garantie sowie Stärken und Schwächen der Modelle."
   canonical: "/hersteller/petlibro/"
   noindex: false
   sitemap: true
@@ -284,52 +284,10 @@ faq:
     answer: "Die Herstellerbewertung ist kein pauschaler eigener Langzeittest aller PETLIBRO-Produkte. PfotenTechnik ordnet offizielle Produktdaten, Bedienkonzepte, Garantie, Ersatzteilversorgung und die gepflegten Einzelmodelle nach einheitlichen Kriterien ein. Wenn zu einem Gerät keine belastbare Herstellerangabe vorliegt, wird diese Lücke nicht durch eine Schätzung ersetzt."
 ---
 
-PETLIBRO gehört zu den breitesten Marken für smarte Fütterung und Trinktechnik. Genau diese Vielfalt ist Stärke und Risiko zugleich: Granary, Air, Polar, One RFID, Space und Dockstream lösen unterschiedliche Aufgaben und sollten nicht nur nach App oder Design verglichen werden.
+PETLIBRO gehört zu den bekanntesten Marken für smarte Futterautomaten. Der Hersteller deckt mit seinen Produkten unterschiedliche Anforderungen ab, von klassischer Trockenfutterportionierung über Kamerafunktionen bis zu gekühltem Nassfutter und RFID-Zugangskontrolle.
 
-## Welche PETLIBRO-Serie passt?
+## Unsere Einschätzung
 
-| Serie | Hauptaufgabe | Typische Grenze |
-|---|---|---|
-| Granary | Trockenfutter mit App oder Kamera | keine individuelle Tiertrennung |
-| Air | kompakte Trockenfutterautomaten | weniger Spezialfunktionen |
-| Polar | aktiv gekühltes Nassfutter | nur drei Mahlzeiten und Netzabhängigkeit der Kühlung |
-| One RFID | geschützter Futterzugang | Halsband-Tag statt implantiertem Mikrochip |
-| Space | großer, geschützter Trockenfuttervorrat | groß und stärker apporientiert |
-| Dockstream | Trinkbrunnen mit Kabel, Akku, App oder RFID | Varianten und Filter sind nicht beliebig kompatibel |
+Die größte Stärke von PETLIBRO ist die breite Produktauswahl. Dadurch finden sowohl Nutzer mit einfachen Anforderungen als auch Haushalte mit speziellen Fütterungssituationen passende Modelle.
 
-## Unsere wichtigsten PETLIBRO-Modelle
-
-- [PETLIBRO Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) für flexible Trockenfutter-Zeitpläne,
-- [PETLIBRO Granary Camera](/produkt/petlibro-granary-camera-feeder/) für zusätzliche Sichtkontrolle,
-- [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) für aktiv gekühltes Nassfutter,
-- [PETLIBRO One RFID](/produkt/petlibro-one-rfid-smart-feeder/) für getrennte Rationen,
-- [PETLIBRO Space](/produkt/petlibro-space-smart-feeder/) für großen Vorrat,
-- [PETLIBRO Dockstream 2 Smart](/produkt/petlibro-dockstream-2-smart/) für App-gestützte Wasserüberwachung.
-
-## App, Cloud und Abo trennen
-
-Nicht jedes PETLIBRO-Gerät benötigt dieselben Onlinedienste. Zeitpläne, Livebild, Cloud-Aufzeichnung, AI-Auswertung und Verbrauchsmaterial-Abos sind getrennte Funktionen. Vor dem Kauf sollte deshalb nicht nur „mit App“ geprüft werden, sondern:
-
-- welche Grundfunktion ohne Abo erhalten bleibt,
-- ob gespeicherte Pläne offline weiterlaufen,
-- welche Videoaufzeichnung lokal oder nur in der Cloud möglich ist,
-- welche Filter oder Trockenmittel regelmäßig nachgekauft werden müssen.
-
-## Stärken und Grenzen der Marke
-
-PETLIBRO ist besonders stark bei Speziallösungen, die viele Wettbewerber nicht abdecken: aktive Nassfutterkühlung, Kamera-Feeder, RFID-Zugang und smarte Trinkbrunnen.
-
-Die Grenzen liegen in der Modellvielfalt, teils ähnlichen Produktnamen und modellgebundenem Zubehör. Eine gute PETLIBRO-Kaufentscheidung beginnt deshalb bei der Aufgabe und nicht bei der Produktserie.
-
-## Passende Vergleiche
-
-- [Futterautomaten für Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Futterautomaten für Hunde vergleichen](/vergleiche/beste-futterautomaten-fuer-hunde/)
-- [Nassfutterautomaten vergleichen](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
-- [Futterautomaten mit Kamera vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
-- [Trinkbrunnen für Hunde vergleichen](/vergleiche/beste-trinkbrunnen-fuer-hunde/)
-- [Trinkbrunnen für Katzen vergleichen](/vergleiche/beste-trinkbrunnen-fuer-katzen/)
-
-## Methodik
-
-Die Herstellerseite fasst offizielle PETLIBRO-Unterlagen und die strukturierten PfotenTechnik-Produktdaten zusammen. Sie ist kein pauschaler Langzeittest der gesamten Marke. Unterschiede zwischen Modellgenerationen, regionalen Produktseiten und Zubehörvarianten werden nicht verallgemeinert.
+Besonders interessant ist die Marke für Tierhalter, die ihre Fütterung per App planen oder ihr Tier über eine Kamera beobachten möchten. Vor dem Kauf sollte jedoch geprüft werden, welche Funktionen das konkrete Modell tatsächlich unterstützt.
