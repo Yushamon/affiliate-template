@@ -19,7 +19,7 @@ items:
     type: "product"
     label: "Tractive CAT 6 Mini"
     recommendation: "Ausgewogenste katzenspezifische Komplettlösung mit integriertem Sicherheitshalsband."
-    overrides:
+    values:
       profil: "Beste katzenspezifische Komplettlösung"
       eignung: "Katzen von 3 bis 8 kg; Halsumfang 19 bis 22,9 cm"
       gewicht: "32 g inklusive Halsband"
@@ -28,11 +28,12 @@ items:
       akkulaufzeit: "Bis 7 Tage mit Energiesparzone; bis 4 Tage ohne"
       abo: "Ab dem ersten Nutzungstag erforderlich"
       wasserschutz: "IP68"
+
   - slug: "weenect-xs"
     type: "product"
     label: "Weenect XS"
     recommendation: "Leichteste reine Geräteoption für Katzen ab 3 kg mit flexibler Befestigung und Rückrufsignalen."
-    overrides:
+    values:
       profil: "Leichtestes Gerät im Vergleich"
       eignung: "Katzen ab 3 kg"
       gewicht: "27 g Gerätegewicht"
@@ -41,11 +42,12 @@ items:
       akkulaufzeit: "Bis 7 Tage mit WLAN-Zone; etwa 2 Tage bei kontinuierlichem Tracking"
       abo: "Eigenes Abo pro Tracker erforderlich"
       wasserschutz: "IP68"
+
   - slug: "paj-pet-finder-4g-mini"
     type: "product"
     label: "PAJ PET Finder 4G Mini"
     recommendation: "Kostenorientierte Alternative mit 27 enthaltenen Servicemonaten, aber weniger klarer Katzeneignung."
-    overrides:
+    values:
       profil: "Beste enthaltene Servicephase"
       eignung: "Für größere Katzen nur nach genauer Passformprüfung; Herstellerhinweis etwa ab 4 kg"
       gewicht: "33,1 g Gerätegewicht"
@@ -54,6 +56,7 @@ items:
       akkulaufzeit: "Bis 10 Tage im Energiesparmodus; etwa 1 bis 2 Tage bei kontinuierlichem Tracking"
       abo: "27 Monate enthalten; danach kostenpflichtiger Tarif"
       wasserschutz: "IP67"
+
 criteria:
   - key: "profil"
     label: "Unsere Einordnung"
