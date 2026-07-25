@@ -123,16 +123,6 @@ items:
       reinigung: Monatlich, bei hartem Wasser häufiger; Pumpe separat reinigen
       stromversorgung: Niedervolt-Netzbetrieb mit 3-m-Kabel
       eignung: Eine oder mehrere Katzen mit unterschiedlichen Trinkhöhen
-  - type: product
-    slug: petkit-eversweet-3-pro-uvc
-    values:
-      reinigung: vollständig zerlegbar; alle Komponenten von Hand reinigen
-      eignung: Nicht in den geprüften Produktdaten ausgewiesen
-      material: BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304
-      stromversorgung: USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten
-      filter: Ionenaustauschfilter
-      lautstaerke: Herstellerangabe unter beziehungsweise höchstens 25 dB
-      kapazitaet: 1,6 Liter nutzbar
 criteria:
   - key: reinigung
     label: Reinigung

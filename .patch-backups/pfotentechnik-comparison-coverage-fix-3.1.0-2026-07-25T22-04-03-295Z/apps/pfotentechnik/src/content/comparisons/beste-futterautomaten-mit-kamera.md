@@ -54,17 +54,6 @@ items:
       futter: Trockenfutter
       mehrtiere: Keine Tiertrennung
       kamera: Ja
-  - type: product
-    slug: petkit-yumshare-solo-2
-    values:
-      profil: Nicht in den geprüften Produktdaten ausgewiesen
-      bild: Nicht in den geprüften Produktdaten ausgewiesen
-      kontrollwert: Nicht in den geprüften Produktdaten ausgewiesen
-      offline: gespeicherte Pläne laufen laut Hersteller weiter
-      datenschutz: Nicht in den geprüften Produktdaten ausgewiesen
-      futter: Trockenfutter; Kroketten bis 12 mm und gefriergetrocknete Stücke bis 9 mm laut Hersteller
-      mehrtiere: Nicht in den geprüften Produktdaten ausgewiesen
-      kamera: 1080p-HD-Kamera mit Ereigniserfassung
 criteria:
   - key: profil
     label: Unsere Einordnung

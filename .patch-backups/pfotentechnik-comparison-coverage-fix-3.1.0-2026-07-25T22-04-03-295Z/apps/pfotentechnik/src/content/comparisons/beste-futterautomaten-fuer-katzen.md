@@ -135,32 +135,6 @@ items:
       app: je nach Variante
       reinigung: Nicht vom Hersteller ausgewiesen
       kamera: Nein
-  - type: product
-    slug: oneisall-2-in-1-feeder-water
-    values:
-      profil: Nicht in den geprüften Produktdaten ausgewiesen
-      futterart: Trockenfutter
-      portionierung: einstellbare Portionseinheiten; tatsächliches Gewicht hängt vom Futter ab
-      zugang: Nicht in den geprüften Produktdaten ausgewiesen
-      mehrkatzen: Nicht in den geprüften Produktdaten ausgewiesen
-      app: Nein
-      ausfallsicherheit: Nicht in den geprüften Produktdaten ausgewiesen
-      reinigung: entnehmbare Teile von Hand reinigen; elektrische Basis nicht abspülen oder eintauchen
-      kamera: Nein
-      besonderheit: Nicht in den geprüften Produktdaten ausgewiesen
-  - type: product
-    slug: petlibro-air-wifi-feeder
-    values:
-      profil: Nicht in den geprüften Produktdaten ausgewiesen
-      futterart: Trockenfutter
-      portionierung: Nicht in den geprüften Produktdaten ausgewiesen
-      zugang: Nicht in den geprüften Produktdaten ausgewiesen
-      mehrkatzen: Nicht in den geprüften Produktdaten ausgewiesen
-      app: PETLIBRO-App, nicht PETLIBRO Lite
-      ausfallsicherheit: Nicht in den geprüften Produktdaten ausgewiesen
-      reinigung: Nicht in den geprüften Produktdaten ausgewiesen
-      kamera: Nein
-      besonderheit: Nicht in den geprüften Produktdaten ausgewiesen
 criteria:
   - key: profil
     label: Unsere Einordnung
