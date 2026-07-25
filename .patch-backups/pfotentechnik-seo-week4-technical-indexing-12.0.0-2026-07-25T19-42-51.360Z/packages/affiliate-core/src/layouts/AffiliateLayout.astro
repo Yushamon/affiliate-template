@@ -71,26 +71,13 @@ const {
 const pageTitle = seoTitle ?? title;
 const pageDescription = seoDescription ?? description;
 
-const normalizeCanonicalPath = (value: string) => {
-  const raw = String(value ?? "/").trim();
-  let pathname = raw;
+const normalizedCanonical =
+  canonical === "/"
+    ? "/"
+    : canonical.startsWith("/")
+      ? canonical
+      : `/${canonical}`;
 
-  try {
-    pathname = new URL(raw, site.domain).pathname;
-  } catch {
-    pathname = raw.split(/[?#]/, 1)[0] || "/";
-  }
-
-  const withLeadingSlash = pathname.startsWith("/")
-    ? pathname
-    : `/${pathname}`;
-
-  return withLeadingSlash === "/" || withLeadingSlash.endsWith("/")
-    ? withLeadingSlash
-    : `${withLeadingSlash}/`;
-};
-
-const normalizedCanonical = normalizeCanonicalPath(canonical);
 const canonicalUrl = toAbsoluteUrl(site.domain, normalizedCanonical);
 
 const visibleAuthor = author ?? siteMeta.defaultAuthor;
@@ -102,12 +89,6 @@ const publisherLogoUrl = toAbsoluteUrl(site.domain, siteMeta.publisher.logo);
 const authorUrl = visibleAuthor.url
   ? toAbsoluteUrl(site.domain, visibleAuthor.url)
   : undefined;
-
-const articleAuthorType =
-  visibleAuthor.name.toLowerCase().includes("redaktion") ||
-  visibleAuthor.role?.toLowerCase().includes("redaktion")
-    ? "Organization"
-    : "Person";
 
 const isHome = normalizedCanonical === "/";
 const resolvedSchemaType = schemaType ?? (isHome ? "website" : "webpage");
@@ -163,7 +144,7 @@ const articleSchema = {
   image: [imageUrl],
   inLanguage: "de-DE",
   author: {
-    "@type": articleAuthorType,
+    "@type": "Person",
     name: visibleAuthor.name,
     ...(authorUrl ? { url: authorUrl } : {})
   },

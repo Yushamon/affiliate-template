@@ -106,31 +106,16 @@ const relatedItems = relatedEntries.map((related) => ({
   text: related.hubDescription
 }));
 
-const comparisonCanonicalPath =
-  comparison.seo?.canonical ??
-  `/vergleiche/${comparison.slug}/`;
-const comparisonCanonicalUrl = new URL(
-  comparisonCanonicalPath,
-  Astro.site ?? Astro.url
-).href;
-
 const comparisonItemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": `${comparisonCanonicalUrl}#item-list`,
   name: comparison.title,
-  description: comparison.seo?.description ?? comparison.description,
-  url: comparisonCanonicalUrl,
-  itemListOrder: "https://schema.org/ItemListOrderAscending",
   numberOfItems: model.products.length,
   itemListElement: model.products.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,
-    item: {
-      "@type": "Product",
-      name: product.title,
-      url: new URL(product.href, Astro.site ?? Astro.url).href
-    }
+    url: new URL(product.href, Astro.site ?? Astro.url).href,
+    name: product.title
   }))
 };
 
@@ -159,8 +144,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
   categoryLabel="Vergleiche"
   breadcrumbs={breadcrumbs}
   schemaType="webpage"
-  publishedAt={comparison.publishedAt}
-  updatedAt={comparison.updatedAt ?? comparison.publishedAt}
 >
   <script
     type="application/ld+json"

@@ -114,108 +114,22 @@ const flatten = (
   return result;
 };
 
-// PT_COMPARISON_VALUE_SEMANTICS_1_0_1
-const formatSemanticComparisonValue = (
-  value: string,
-  criterion: CriterionLike
-): string => {
-  const normalizedCriterion = normalizeKey(criterion.key);
-  const trimmed = value.trim();
-
-  if (!trimmed) return trimmed;
-
-  const plainNumber = trimmed.match(/^\d+(?:[.,]\d+)?$/);
-
-  if (plainNumber) {
-    const formattedNumber = new Intl.NumberFormat("de-DE", {
-      maximumFractionDigits: 2
-    }).format(Number(trimmed.replace(",", ".")));
-
-    if (normalizedCriterion === "akkulaufzeit") {
-      return `${formattedNumber} Tage`;
-    }
-
-    if (normalizedCriterion === "gewicht") {
-      return `${formattedNumber} g`;
-    }
-  }
-
-  if (
-    normalizedCriterion === "uebertragung" &&
-    /^(lte|4g|5g|vhf|gsm)$/i.test(trimmed)
-  ) {
-    return trimmed.toLocaleUpperCase("de-DE");
-  }
-
-  if (
-    normalizedCriterion === "filter" &&
-    /^f(?:ü|ue)nfstufig$/i.test(trimmed)
-  ) {
-    return "5-stufige Wasserfilterung";
-  }
-
-  return trimmed;
-};
-
 const formatValue = (
   value: unknown,
   criterion: CriterionLike
 ): string | undefined => {
-  if (
-    value === undefined ||
-    value === null ||
-    value === ""
-  ) {
-    return undefined;
-  }
-
-  if (criterion.format === "boolean") {
-    return value ? "Ja" : "Nein";
-  }
-
+  if (value === undefined || value === null || value === "") return undefined;
+  if (criterion.format === "boolean") return value ? "Ja" : "Nein";
   if (Array.isArray(value)) {
-    const list = value
-      .filter(
-        (item) =>
-          item !== undefined &&
-          item !== null &&
-          item !== ""
-      )
-      .map(String);
-
-    if (!list.length) return undefined;
-
-    return formatSemanticComparisonValue(
-      list.join(", "),
-      criterion
-    );
+    const list = value.filter((item) => item !== undefined && item !== null && item !== "").map(String);
+    return list.length ? list.join(", ") : undefined;
   }
-
-  if (typeof value === "boolean") {
-    return value ? "Ja" : "Nein";
-  }
-
+  if (typeof value === "boolean") return value ? "Ja" : "Nein";
   if (typeof value === "number") {
-    const formatted = new Intl.NumberFormat("de-DE", {
-      maximumFractionDigits: 2
-    }).format(value);
-
-    const withUnit = criterion.unit
-      ? `${formatted} ${criterion.unit}`
-      : formatted;
-
-    return formatSemanticComparisonValue(
-      withUnit,
-      criterion
-    );
+    const formatted = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 2 }).format(value);
+    return criterion.unit ? `${formatted} ${criterion.unit}` : formatted;
   }
-
-  const formatted = formatSemanticComparisonValue(
-    String(value),
-    criterion
-  );
-
-  return formatted || undefined;
+  return String(value).trim() || undefined;
 };
 
 const specValue = (product: ProductEntry, candidates: Set<string>) =>

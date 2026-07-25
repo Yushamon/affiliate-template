@@ -44,7 +44,7 @@ specs:
   - { label: "Geeignet für", value: "Katzen und kleine Hunde" }
   - { label: Lautstärke, value: "Herstellerangabe unter 30 dB" }
   - { label: Akku, value: "5000 mAh; Herstellerangabe bis zu 60 Tage" }
-  - { label: Filter, value: "5-stufige Wasserfilterung" }
+  - { label: Filter, value: "fünfstufig" }
   - { label: Ersatzfilter, value: "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln" }
   - { label: Maße, value: "ca. 20 × 20 × 15,2 cm" }
   - { label: Gewicht, value: "ca. 0,91 kg" }

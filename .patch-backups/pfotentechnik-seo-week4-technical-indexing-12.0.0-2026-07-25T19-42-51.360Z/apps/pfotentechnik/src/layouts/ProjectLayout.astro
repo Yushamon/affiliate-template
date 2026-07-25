@@ -9,26 +9,11 @@ import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
 const props = Astro.props;
 const headerLinks = await getNavigationItems();
 const webAnalyticsToken = import.meta.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
-const normalizeCanonicalPath = (value) => {
-  const raw = String(value ?? "/").trim();
-  let pathname = raw;
-
-  try {
-    pathname = new URL(raw, "https://pfotentechnik.de").pathname;
-  } catch {
-    pathname = raw.split(/[?#]/, 1)[0] || "/";
-  }
-
-  const withLeadingSlash = pathname.startsWith("/")
-    ? pathname
-    : `/${pathname}`;
-
-  return withLeadingSlash === "/" || withLeadingSlash.endsWith("/")
-    ? withLeadingSlash
-    : `${withLeadingSlash}/`;
-};
-
-const canonical = normalizeCanonicalPath(props.canonical ?? "/");
+const requestedCanonical = props.canonical ?? "/";
+const canonical =
+  requestedCanonical === "/" || requestedCanonical.endsWith("/")
+    ? requestedCanonical
+    : `${requestedCanonical}/`;
 import "../styles/pfotentechnik-theme-fixes.css";
 import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
 ---

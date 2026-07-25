@@ -20,36 +20,8 @@ const normalizePath = (value) => {
     : `${withLeadingSlash}/`;
 };
 
-
-const excludedSitemapPrefixes = [
-  "/admin/",
-  "/api/"
-];
-
-const excludedSitemapPaths = new Set([
-  "/404/",
-  "/500/"
-]);
-
-const shouldExcludeFromSitemap = (value) => {
-  const pathname = normalizePath(value);
-  return (
-    excludedSitemapPaths.has(pathname) ||
-    excludedSitemapPrefixes.some((prefix) => pathname.startsWith(prefix))
-  );
-};
-
-const toLastmodDate = (value) => {
-  if (!value) return undefined;
-  const normalized = /^\d{4}-\d{2}-\d{2}$/.test(String(value))
-    ? `${value}T00:00:00Z`
-    : String(value);
-  const date = new Date(normalized);
-  return Number.isNaN(date.getTime()) ? undefined : date;
-};
-
 const readFrontmatter = (file) => {
-  const source = readFileSync(file, "utf8").replace(/^\\uFEFF/, "");
+  const source = readFileSync(file, "utf8");
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   return match ? yaml.load(match[1]) : null;
 };
@@ -88,18 +60,16 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) => {
-        const normalized = normalizePath(page);
-        if (shouldExcludeFromSitemap(normalized)) return false;
-        return sitemapMetadata.get(normalized)?.include !== false;
-      },
+      filter: (page) =>
+        sitemapMetadata.get(normalizePath(page))?.include !== false,
       serialize: (item) => {
         const metadata = sitemapMetadata.get(normalizePath(item.url));
         if (!metadata) return item;
-        const lastmod = toLastmodDate(metadata.lastmod);
         return {
           ...item,
-          ...(lastmod ? { lastmod } : {}),
+          ...(metadata.lastmod
+            ? { lastmod: new Date(`${metadata.lastmod}T00:00:00Z`) }
+            : {}),
           ...(metadata.changefreq
             ? { changefreq: metadata.changefreq }
             : {}),
