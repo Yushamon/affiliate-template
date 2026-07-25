@@ -406,10 +406,6 @@ Eine Betreuungsperson muss regelmäßig vor Ort kontrollieren:
 
 Eine Kamera zeigt nur einen Ausschnitt. Mehr dazu steht im Ratgeber [Futterautomat im Urlaub](/futterautomat-im-urlaub/).
 
-## PETKIT YumShare Solo 2 einordnen
-
-Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) ist ein Ein-Kammer-Kameraautomat mit 3-Liter-Vorrat und Dual-Band-WLAN. Er eignet sich für Livebild und geplante Trockenfutterportionen, trennt aber keine Tiere am Napf. Der [direkte Kamera-Vergleich](/vergleiche/beste-futterautomaten-mit-kamera/) stellt ihn einfacheren und komplexeren Kamera-Konzepten gegenüber.
-
 ## Fazit
 
 Ein Futterautomat mit Kamera lohnt sich, wenn visuelle Kontrolle ein konkretes Problem löst.

@@ -13,7 +13,7 @@ categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Urlaub", "Betreuung", "Ausfallsicherheit"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-09"
 hub:
   sections:
     - "wissen"
@@ -101,10 +101,6 @@ Bei zwei Katzen muss klar sein, wer welche Portion erhält. Eine Kamera oder Dop
 ## Besonderheiten bei Nassfutter
 
 Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Kühlakkus sind keine unbegrenzte Kühlung. Die Betreuungsperson muss Reste entfernen, Fächer reinigen und neue Mahlzeiten hygienisch vorbereiten. Für längere Abstände sind viele einfache Fachautomaten ungeeignet. Mehr dazu steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
-
-## Technik passend zur Abwesenheit auswählen
-
-Für feste Abläufe ohne Cloud lohnt der [Vergleich der Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/). Wer den Futterplatz zusätzlich sehen muss, findet im [Vergleich der Kamera-Futterautomaten](/vergleiche/beste-futterautomaten-mit-kamera/) die passendere Produktauswahl. Bei vorbereitetem Nassfutter ist der aktiv gekühlte [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) ein technisches Gegenmodell zu einfachen Fächern mit Kühlakkus. Keine dieser Lösungen ersetzt die Betreuung vor Ort.
 
 ## Methodik unserer Einordnung
 

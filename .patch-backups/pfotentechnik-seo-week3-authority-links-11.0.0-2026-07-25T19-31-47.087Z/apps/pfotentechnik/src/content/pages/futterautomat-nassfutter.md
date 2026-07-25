@@ -31,7 +31,7 @@ tags:
   - "Fachautomat"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-14"
 hub:
   sections:
     - "wissen"
@@ -417,10 +417,6 @@ Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/futteraut
 | nur Schale reinigen | Reste an Deckel und Drehfläche | vollständig reinigen |
 | Nassfutter in Vorratsautomat | Hygiene- und Mechanikproblem | Fachautomat nutzen |
 | Urlaub ohne Betreuung | Reste und Akkus bleiben unkontrolliert | persönliche Besuche planen |
-
-## Aktive Kühlung als eigenes System
-
-Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
 
 ## Fazit
 

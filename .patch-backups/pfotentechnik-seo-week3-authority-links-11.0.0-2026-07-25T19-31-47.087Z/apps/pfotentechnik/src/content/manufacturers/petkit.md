@@ -10,7 +10,7 @@ name: "PETKIT"
 recommendation: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
 summary: "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -170,7 +170,3 @@ faq:
 ---
 
 PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung.
-
-## Wichtige PETKIT-Modelle im Detail
-
-Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) kombiniert Trockenfutter-Zeitpläne mit Kamera und Zwei-Wege-Audio. Der [YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) ergänzt zwei getrennte Vorräte, aber keine physische Tiertrennung. Bei Trinksystemen ist der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) die spezialisierte Lösung mit getrenntem Frisch- und Abwasser sowie Kamera-Auswertung.

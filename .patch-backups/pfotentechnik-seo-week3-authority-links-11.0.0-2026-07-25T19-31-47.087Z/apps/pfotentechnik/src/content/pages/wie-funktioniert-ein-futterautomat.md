@@ -10,7 +10,7 @@ categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Funktionsweise", "Portionierung", "Grundlagen"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-09"
 navigation:
   show: true
   label: "Wissen"
@@ -106,10 +106,6 @@ Weitere Grenzen bleiben unabhängig von der Technik bestehen. Der Automat erkenn
 Futterstaub und Fett lagern sich am Behälter, im Kanal und am Auslass ab. Das kann Geruch, Dosierung und Hygiene verändern. Napf und herausnehmbare Kontaktteile sollten nach Herstellerangabe gereinigt und vollständig getrocknet werden. Elektronik und Motor dürfen dabei nicht unkontrolliert nass werden. Bei Nassfutter sind kürzere Intervalle und eine sorgfältige Reinigung der Fächer besonders wichtig.
 
 Ein Automat ist daher kein Gerät, das nach der Einrichtung unbegrenzt allein arbeitet. Er organisiert Wiederholungen, während Menschen Füllstand, Sauberkeit, Fressverhalten und körperlichen Zustand kontrollieren.
-
-## Vom Funktionsprinzip zum passenden Vergleich
-
-Nach der technischen Einordnung sollte die Auswahl nach dem eigentlichen Problem erfolgen: [Offline-Modelle ohne WLAN vergleichen](/vergleiche/beste-futterautomaten-ohne-wlan/), [Kamera-Futterautomaten vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/) oder [Lösungen für zwei Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/). So werden Timer, Kamera und Zugangskontrolle nicht als austauschbare Funktionen behandelt.
 
 ## Methodik unserer Einordnung
 
