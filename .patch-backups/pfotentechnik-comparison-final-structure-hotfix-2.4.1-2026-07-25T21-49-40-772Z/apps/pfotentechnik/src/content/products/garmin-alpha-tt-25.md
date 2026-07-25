@@ -7,10 +7,7 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "VHF-GPS-Hundehalsband für Ortung und kompatible Trainingsfunktionen mit bis zu 68 Stunden Akku und 14,48 km Maximalreichweite."
 recommendation: "Nur für erfahrene Jagd- und Arbeitshundeführer, die neben VHF-Ortung die kompatiblen Trainingsfunktionen des Alpha-Systems bewusst benötigen."
-manufacturer:
-  key: "garmin"
-  name: "Garmin"
-  slug: "garmin"
+manufacturer: { key: "garmin", name: "Garmin", slug: "garmin" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-20"

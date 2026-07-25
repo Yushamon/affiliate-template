@@ -1,207 +1,133 @@
 ---
-title: Beste Futterautomaten für Hunde
-slug: beste-futterautomaten-fuer-hunde
-type: comparison
-layout: comparison
-description: >-
-  Futterautomaten für Hunde nach realer Portionsleistung, Krokettengröße, Napfergonomie, Stabilität, App und
-  Stromreserve vergleichen.
+title: "Beste Futterautomaten für Hunde"
+slug: "beste-futterautomaten-fuer-hunde"
+type: "comparison"
+layout: "comparison"
+description: "Futterautomaten für Hunde nach realer Portionsleistung, Krokettengröße, Napfergonomie, Stabilität, App und Stromreserve vergleichen."
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-24"
 author:
-  name: PfotenTechnik Redaktion
-  role: Redaktion
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 tags:
-  - Futterautomat
-  - Hund
-  - Vergleich
-  - Trockenfutter
+  - "Futterautomat"
+  - "Hund"
+  - "Vergleich"
+  - "Trockenfutter"
 hub:
   sections:
-    - vergleiche
-  title: Beste Futterautomaten für Hunde
-  description: Automaten mit passender Portionsleistung, geeigneter Napfhöhe und belastbarer Ausfallsicherheit.
-  icon: 🐕
+    - "vergleiche"
+  title: "Beste Futterautomaten für Hunde"
+  description: "Automaten mit passender Portionsleistung, geeigneter Napfhöhe und belastbarer Ausfallsicherheit."
+  icon: "🐕"
   order: 20
 seo:
-  title: Beste Futterautomaten für Hunde im Vergleich 2026
-  description: >-
-    Futterautomaten für Hunde vergleichen: Xiaomi, PETLIBRO, WOPET und HoneyGuardian nach Portion, Krokettengröße, Napf,
-    Notstrom und App.
-  canonical: /vergleiche/beste-futterautomaten-fuer-hunde/
+  title: "Beste Futterautomaten für Hunde im Vergleich 2026"
+  description: "Futterautomaten für Hunde vergleichen: Xiaomi, PETLIBRO, WOPET und HoneyGuardian nach Portion, Krokettengröße, Napf, Notstrom und App."
+  canonical: "/vergleiche/beste-futterautomaten-fuer-hunde/"
   sitemap: true
   priority: 0.9
-  changefreq: monthly
-comparisonType: use-case
-group: Futterautomaten
-icon: 🐕
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "🐕"
 heroImage:
-  src: ../../assets/images/editorial/dog-automatic-feeder.webp
-  alt: Hund neben mehreren automatischen Futterautomaten im redaktionellen Vergleich
+  src: "../../assets/images/editorial/dog-automatic-feeder.webp"
+  alt: "Hund neben mehreren automatischen Futterautomaten im redaktionellen Vergleich"
 items:
-  - slug: xiaomi-smart-pet-food-feeder-2
-    label: Xiaomi Smart Pet Food Feeder 2
-    type: product
-    recommendation: >-
-      Beste Wahl für Xiaomi-Home-Nutzer und Haushalte, die den verbleibenden Napfinhalt per Wiegenapf beobachten
-      möchten.
-    values:
-      portionierung: Wiegenapf; Ausgabe laut Produktdaten ab etwa 1 g steuerbar
-      app: Xiaomi Home, 2,4 GHz
-      redaktionellesprofil: Beste Datenübersicht am Napf
-      hundegroesse: klein bis mittelgroß, laut Hersteller bis 40 cm Schulterhöhe
-      krokettengroesse: bis 12 mm
-      napf: Edelstahl 304 mit Wiegefunktion
-      kapazitaet: 5 Liter, etwa 2,5 kg
-      notstrom: Herstellerangabe etwa 14 Tage
-      kamera: Nein
-      tiertrennung: Nein
-  - slug: petlibro-granary-wifi-feeder
-    label: PETLIBRO Granary WiFi Feeder
-    type: product
-    recommendation: Ausgewogenster Allrounder für flexible Zeitpläne, große Portionsspanne und Dual-Band-WLAN.
-    values:
-      app: PETLIBRO-App, 2,4 und 5 GHz
-      redaktionellesprofil: Bester Gesamtkompromiss
-      hundegroesse: klein bis mittelgroß
-      portionierung: 1 bis 50 Portionen pro Mahlzeit
-      krokettengroesse: 2–15 mm
-      napf: Edelstahl; Einzel- oder Doppelschale
-      kapazitaet: 5 Liter
-      notstrom: 3 D-Batterien; Zeitpläne laufen weiter
-      kamera: Nein
-      tiertrennung: Nein; Doppelschale verteilt nur
-  - slug: wopet-patrol-f07-pro
-    label: WOPET Patrol F07 Pro
-    type: product
-    recommendation: >-
-      Interessant bei hohem Vorratsbedarf und vielen planbaren Mahlzeiten; Napfpassform und reale Portionsgröße vorher
-      prüfen.
-    values:
-      redaktionellesprofil: Größter Vorrat im Kernvergleich
-      hundegroesse: klein bis mittelgroß; große Hunde nur nach Passformprüfung
-      portionierung: 1 bis 50 Portionen pro Mahlzeit
-      krokettengroesse: vor Kauf mit verwendetem Futter prüfen
-      napf: Nicht vom Hersteller ausgewiesen
-      kapazitaet: 6 Liter
-      app: WOpet Life
-      notstrom: Batterie-Backup laut Produktdaten
-      kamera: Nein
-      tiertrennung: Nein
-  - slug: honeyguardian-smart-pet-feeder-s305d
-    label: HoneyGuardian Smart Pet Feeder S305D
-    type: product
-    recommendation: >-
-      Preisorientierte App-Option mit Edelstahl-Napf, wenn belastbare Basisfunktionen wichtiger sind als besondere
-      Sensorik.
-    values:
-      redaktionellesprofil: Preisorientierte Alternative
-      hundegroesse: klein bis mittelgroß
-      portionierung: mehrere planbare Mahlzeiten; konkrete Portionsschritte unterscheiden sich je nach S305D-Version
-      krokettengroesse: vor Kauf mit verwendetem Futter prüfen
-      napf: Edelstahl
-      kapazitaet: 5 Liter
-      app: Ja, abhängig von der konkreten Version
-      notstrom: Backup-Funktion je Angebotsvariante prüfen
-      kamera: Nein
-      tiertrennung: Nein
+  - slug: "xiaomi-smart-pet-food-feeder-2"
+    label: "Xiaomi Smart Pet Food Feeder 2"
+    type: "product"
+    recommendation: "Beste Wahl für Xiaomi-Home-Nutzer und Haushalte, die den verbleibenden Napfinhalt per Wiegenapf beobachten möchten."
+    overrides:
+      portionierung: "Wiegenapf; Ausgabe laut Produktdaten ab etwa 1 g steuerbar"
+      app: "Xiaomi Home, 2,4 GHz"
+  - slug: "petlibro-granary-wifi-feeder"
+    label: "PETLIBRO Granary WiFi Feeder"
+    type: "product"
+    recommendation: "Ausgewogenster Allrounder für flexible Zeitpläne, große Portionsspanne und Dual-Band-WLAN."
+    overrides:
+      app: "PETLIBRO-App, 2,4 und 5 GHz"
+  - slug: "wopet-patrol-f07-pro"
+    label: "WOPET Patrol F07 Pro"
+    type: "product"
+    recommendation: "Interessant bei hohem Vorratsbedarf und vielen planbaren Mahlzeiten; Napfpassform und reale Portionsgröße vorher prüfen."
+  - slug: "honeyguardian-smart-pet-feeder-s305d"
+    label: "HoneyGuardian Smart Pet Feeder S305D"
+    type: "product"
+    recommendation: "Preisorientierte App-Option mit Edelstahl-Napf, wenn belastbare Basisfunktionen wichtiger sind als besondere Sensorik."
 criteria:
-  - key: redaktionellesprofil
-    label: Unsere Einordnung
-    description: Welchen konkreten Vorteil das Modell im Vergleich bietet.
+  - key: "redaktionellesprofil"
+    label: "Unsere Einordnung"
+    description: "Welchen konkreten Vorteil das Modell im Vergleich bietet."
     weight: 1.4
-  - key: hundegroesse
-    label: Geeignete Hundegröße
-    description: Herstellerfreigabe und redaktionelle Passformeinschätzung.
+  - key: "hundegroesse"
+    label: "Geeignete Hundegröße"
+    description: "Herstellerfreigabe und redaktionelle Passformeinschätzung."
     weight: 1.5
-  - key: portionierung
-    label: Portionierung
-    description: Ausgabespanne und Art der Mengensteuerung.
+  - key: "portionierung"
+    label: "Portionierung"
+    description: "Ausgabespanne und Art der Mengensteuerung."
     weight: 1.5
-  - key: krokettengroesse
-    label: Krokettengröße
-    description: Offiziell belegter oder vor Kauf zu prüfender Bereich.
+  - key: "krokettengroesse"
+    label: "Krokettengröße"
+    description: "Offiziell belegter oder vor Kauf zu prüfender Bereich."
     weight: 1.3
-  - key: napf
-    label: Napf und Ergonomie
-    description: Material, Form und besondere Funktionen.
+  - key: "napf"
+    label: "Napf und Ergonomie"
+    description: "Material, Form und besondere Funktionen."
     weight: 1.2
-  - key: kapazitaet
-    label: Kapazität
+  - key: "kapazitaet"
+    label: "Kapazität"
     weight: 0.8
-  - key: app
-    label: App und WLAN
+  - key: "app"
+    label: "App und WLAN"
     weight: 0.8
-  - key: notstrom
-    label: Stromreserve
+  - key: "notstrom"
+    label: "Stromreserve"
     weight: 1.3
-  - key: kamera
-    label: Kamera
+  - key: "kamera"
+    label: "Kamera"
     weight: 0.4
-  - key: tiertrennung
-    label: Individuelle Tiertrennung
+  - key: "tiertrennung"
+    label: "Individuelle Tiertrennung"
     weight: 1.1
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: petlibro-granary-wifi-feeder
-  alternativeSlug: xiaomi-smart-pet-food-feeder-2
-  title: PETLIBRO als Allrounder, Xiaomi für Napfübersicht
-  text: >-
-    Der PETLIBRO Granary WiFi bietet im Kernvergleich den ausgewogensten Mix aus Portionsspanne, 2,4-/5-GHz-WLAN,
-    Notstrom und Bedienung. Xiaomi ist stärker, wenn der verbleibende Napfinhalt und die Einbindung in Xiaomi Home
-    wichtiger sind. Für große Hunde bleibt bei allen vier Modellen eine individuelle Prüfung von Napf, Standhöhe,
-    Krokettengröße und maximaler Mahlzeit notwendig.
-tableTitle: Vier Futterautomaten für Hunde im Leistungscheck
-cardsTitle: Die besten Modelle nach Nutzungsszenario
+  winnerSlug: "petlibro-granary-wifi-feeder"
+  alternativeSlug: "xiaomi-smart-pet-food-feeder-2"
+  title: "PETLIBRO als Allrounder, Xiaomi für Napfübersicht"
+  text: "Der PETLIBRO Granary WiFi bietet im Kernvergleich den ausgewogensten Mix aus Portionsspanne, 2,4-/5-GHz-WLAN, Notstrom und Bedienung. Xiaomi ist stärker, wenn der verbleibende Napfinhalt und die Einbindung in Xiaomi Home wichtiger sind. Für große Hunde bleibt bei allen vier Modellen eine individuelle Prüfung von Napf, Standhöhe, Krokettengröße und maximaler Mahlzeit notwendig."
+tableTitle: "Vier Futterautomaten für Hunde im Leistungscheck"
+cardsTitle: "Die besten Modelle nach Nutzungsszenario"
 faq:
-  - question: Welcher Futterautomat ist für Hunde insgesamt am ausgewogensten?
-    answer: >-
-      Im aktuellen Kernvergleich ist der PETLIBRO Granary WiFi der ausgewogenste Allrounder. Er verbindet fünf Liter
-      Vorrat, bis zu zehn Mahlzeiten, eine breite Portionseinstellung, Dual-Band-WLAN und Batterie-Backup.
-  - question: Welcher Automat eignet sich am besten für Xiaomi-Home-Nutzer?
-    answer: >-
-      Der Xiaomi Smart Pet Food Feeder 2 integriert sich in Xiaomi Home und besitzt einen Wiegenapf. Dieser misst den
-      verbleibenden Napfinhalt, aber nicht sicher, welches Tier wie viel gefressen hat.
-  - question: Eignen sich Katzen-Futterautomaten für Hunde?
-    answer: >-
-      Teilweise. Entscheidend sind nicht das Marketinglabel, sondern Napfhöhe, Stabilität, maximale Mahlzeit,
-      Krokettengröße und die offizielle Größenfreigabe.
-  - question: Ist ein 6-Liter-Behälter automatisch besser für große Hunde?
-    answer: Nein. Vorratsvolumen sagt nichts über maximale Einzelmahlzeit, Napfgröße, Standhöhe oder Krokettendurchmesser aus.
-  - question: Wie prüfe ich die tatsächliche Portionsgröße?
-    answer: >-
-      Gib zehn Portionseinheiten aus, wiege die Gesamtmenge und teile das Ergebnis durch zehn. Wiederhole die Messung
-      nach jedem Futterwechsel.
-  - question: Kann ein App-Protokoll bestätigen, dass mein Hund gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt in der Regel nur eine geplante oder ausgelöste Ausgabe. Ohne Kamera, Waage oder
-      Tiererkennung ist das kein sicherer Fressnachweis.
-  - question: Braucht ein Futterautomat für Hunde eine Kamera?
-    answer: >-
-      Eine Kamera ist hilfreich zur Sichtkontrolle, ersetzt aber keine sichere Tiererkennung. Für viele Haushalte sind
-      zuverlässige Ausgabe, Notstrom und passende Portionen wichtiger.
-  - question: Was bringt ein Batterie-Backup?
-    answer: >-
-      Es kann gespeicherte Mahlzeiten bei Stromausfall weiter ausgeben. App, WLAN, Kamera oder Sprachfunktionen können
-      im Batteriebetrieb eingeschränkt sein.
-  - question: Ist eine Doppelschale für zwei Hunde ausreichend?
-    answer: >-
-      Nur wenn beide Hunde ruhig und gleichberechtigt fressen. Eine Doppelschale erkennt keine Tiere und verhindert
-      weder Futterklau noch falsche Diäten.
-  - question: Welche Krokettengröße ist wichtig?
-    answer: >-
-      Die Kroketten müssen vollständig innerhalb des freigegebenen Bereichs liegen. Unregelmäßige, fettige oder
-      gebrochene Stücke können trotz passendem Durchmesser blockieren.
-  - question: Wie oft muss ein Futterautomat gereinigt werden?
-    answer: >-
-      Napf und Ausgabebereich sollten häufig, Behälter und Rotor regelmäßig vollständig gereinigt werden. Alle Teile
-      müssen vor dem Neubefüllen vollständig trocknen.
-  - question: Kann ein Futterautomat eine passende Tagesration berechnen?
-    answer: >-
-      Nein. Der Automat setzt nur einen Plan um. Tagesration und Kalorienmenge müssen anhand von Futter, Gewicht,
-      Aktivität und tierärztlicher Empfehlung festgelegt werden.
+  - question: "Welcher Futterautomat ist für Hunde insgesamt am ausgewogensten?"
+    answer: "Im aktuellen Kernvergleich ist der PETLIBRO Granary WiFi der ausgewogenste Allrounder. Er verbindet fünf Liter Vorrat, bis zu zehn Mahlzeiten, eine breite Portionseinstellung, Dual-Band-WLAN und Batterie-Backup."
+  - question: "Welcher Automat eignet sich am besten für Xiaomi-Home-Nutzer?"
+    answer: "Der Xiaomi Smart Pet Food Feeder 2 integriert sich in Xiaomi Home und besitzt einen Wiegenapf. Dieser misst den verbleibenden Napfinhalt, aber nicht sicher, welches Tier wie viel gefressen hat."
+  - question: "Eignen sich Katzen-Futterautomaten für Hunde?"
+    answer: "Teilweise. Entscheidend sind nicht das Marketinglabel, sondern Napfhöhe, Stabilität, maximale Mahlzeit, Krokettengröße und die offizielle Größenfreigabe."
+  - question: "Ist ein 6-Liter-Behälter automatisch besser für große Hunde?"
+    answer: "Nein. Vorratsvolumen sagt nichts über maximale Einzelmahlzeit, Napfgröße, Standhöhe oder Krokettendurchmesser aus."
+  - question: "Wie prüfe ich die tatsächliche Portionsgröße?"
+    answer: "Gib zehn Portionseinheiten aus, wiege die Gesamtmenge und teile das Ergebnis durch zehn. Wiederhole die Messung nach jedem Futterwechsel."
+  - question: "Kann ein App-Protokoll bestätigen, dass mein Hund gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt in der Regel nur eine geplante oder ausgelöste Ausgabe. Ohne Kamera, Waage oder Tiererkennung ist das kein sicherer Fressnachweis."
+  - question: "Braucht ein Futterautomat für Hunde eine Kamera?"
+    answer: "Eine Kamera ist hilfreich zur Sichtkontrolle, ersetzt aber keine sichere Tiererkennung. Für viele Haushalte sind zuverlässige Ausgabe, Notstrom und passende Portionen wichtiger."
+  - question: "Was bringt ein Batterie-Backup?"
+    answer: "Es kann gespeicherte Mahlzeiten bei Stromausfall weiter ausgeben. App, WLAN, Kamera oder Sprachfunktionen können im Batteriebetrieb eingeschränkt sein."
+  - question: "Ist eine Doppelschale für zwei Hunde ausreichend?"
+    answer: "Nur wenn beide Hunde ruhig und gleichberechtigt fressen. Eine Doppelschale erkennt keine Tiere und verhindert weder Futterklau noch falsche Diäten."
+  - question: "Welche Krokettengröße ist wichtig?"
+    answer: "Die Kroketten müssen vollständig innerhalb des freigegebenen Bereichs liegen. Unregelmäßige, fettige oder gebrochene Stücke können trotz passendem Durchmesser blockieren."
+  - question: "Wie oft muss ein Futterautomat gereinigt werden?"
+    answer: "Napf und Ausgabebereich sollten häufig, Behälter und Rotor regelmäßig vollständig gereinigt werden. Alle Teile müssen vor dem Neubefüllen vollständig trocknen."
+  - question: "Kann ein Futterautomat eine passende Tagesration berechnen?"
+    answer: "Nein. Der Automat setzt nur einen Plan um. Tagesration und Kalorienmenge müssen anhand von Futter, Gewicht, Aktivität und tierärztlicher Empfehlung festgelegt werden."
 ---
+
 Ein guter Futterautomat für Hunde ist nicht automatisch das Modell mit der größten App oder dem größten Behälter. Entscheidend ist, ob der Automat **die benötigte Mahlzeit zuverlässig ausgeben kann und mechanisch zum Hund passt**.
 
 Für kleine und mittelgroße Hunde sind mehrere ursprünglich für Katzen entwickelte Vorratsautomaten brauchbar. Bei großen Rassen werden Napfhöhe, Stabilität, Krokettengröße und maximale Einzelmahlzeit schnell zum Ausschlusskriterium.

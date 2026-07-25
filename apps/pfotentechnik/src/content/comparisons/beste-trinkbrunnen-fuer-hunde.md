@@ -1,173 +1,210 @@
 ---
-title: "Beste Trinkbrunnen für Hunde"
-slug: "beste-trinkbrunnen-fuer-hunde"
-type: "comparison"
-layout: "comparison"
-description: "Sechs Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Material, Reinigung, Filter und Stromversorgung vergleichen."
+title: Beste Trinkbrunnen für Hunde
+slug: beste-trinkbrunnen-fuer-hunde
+type: comparison
+layout: comparison
+description: Sechs Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Material, Reinigung, Filter und Stromversorgung vergleichen.
 publishedAt: "2026-07-24"
 updatedAt: "2026-07-25"
 author:
-  name: "PfotenTechnik Redaktion"
-  role: "Redaktion"
+  name: PfotenTechnik Redaktion
+  role: Redaktion
 tags:
-  - "Trinkbrunnen"
-  - "Hund"
-  - "Vergleich"
-  - "Kaufberatung"
-  - "Große Hunde"
+  - Trinkbrunnen
+  - Hund
+  - Vergleich
+  - Kaufberatung
+  - Große Hunde
 hub:
   sections:
-    - "vergleiche"
-    - "trinkbrunnen"
-  title: "Beste Trinkbrunnen für Hunde"
-  description: "Sechs Modelle für kleine, mittelgroße und große Hunde nach Reserve, Trinkfläche und Reinigung."
-  icon: "🐕"
+    - vergleiche
+    - trinkbrunnen
+  title: Beste Trinkbrunnen für Hunde
+  description: Sechs Modelle für kleine, mittelgroße und große Hunde nach Reserve, Trinkfläche und Reinigung.
+  icon: 🐕
   featured: true
   order: 21
 seo:
   title: "Trinkbrunnen für Hunde: 6 Modelle im Vergleich 2026"
-  description: "Sechs Hundetrinkbrunnen vergleichen: große Tanks, kabellose Modelle, Edelstahl, Reinigung, Filter und passende Bauform für kleine bis große Hunde."
-  canonical: "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
+  description: >-
+    Sechs Hundetrinkbrunnen vergleichen: große Tanks, kabellose Modelle, Edelstahl, Reinigung, Filter und passende
+    Bauform für kleine bis große Hunde.
+  canonical: /vergleiche/beste-trinkbrunnen-fuer-hunde/
   sitemap: true
   priority: 0.9
-  changefreq: "monthly"
-comparisonType: "use-case"
-group: "Trinkbrunnen"
-icon: "🐕"
+  changefreq: monthly
+comparisonType: use-case
+group: Trinkbrunnen
+icon: 🐕
 items:
-  - slug: "oneisall-7l-dog-water-fountain"
-    label: "oneisall 7L Dog Water Fountain"
-    type: "product"
-    recommendation: "Beste Gesamtoption für große Hunde und Mehrhundehaushalte, wenn sieben Liter Reserve und eine breite Trinkfläche wichtiger sind als Akku oder App."
+  - slug: oneisall-7l-dog-water-fountain
+    label: oneisall 7L Dog Water Fountain
+    type: product
+    recommendation: >-
+      Beste Gesamtoption für große Hunde und Mehrhundehaushalte, wenn sieben Liter Reserve und eine breite Trinkfläche
+      wichtiger sind als Akku oder App.
     values:
-      kapazitaet: "7 Liter"
-      material: "Trinkschale aus Edelstahl 304; Tank teilweise Kunststoff"
-      lautstaerke: "Herstellerangabe ungefähr 35 dB"
-      filter: "Mehrstufige Filterpatrone plus Pumpenschwamm"
-      reinigung: "Mindestens wöchentlich; Pumpe und Filterkammer separat"
-      stromversorgung: "Netzbetrieb, DC 5 V/1 A"
-      eignung: "Mittelgroße und große Hunde; Mehrhundehaushalte"
-  - slug: "petlibro-capsule-dog-fountain"
-    label: "PETLIBRO Capsule Dog Fountain"
-    type: "product"
-    recommendation: "Starke Großtank-Alternative für mittelgroße und große Hunde, wenn knapp acht Liter Reserve, breite Trinkfläche und Spritzschutz im Mittelpunkt stehen."
+      kapazitaet: 7 Liter
+      material: Trinkschale aus Edelstahl 304; Tank teilweise Kunststoff
+      lautstaerke: Herstellerangabe ungefähr 35 dB
+      filter: Mehrstufige Filterpatrone plus Pumpenschwamm
+      reinigung: Mindestens wöchentlich; Pumpe und Filterkammer separat
+      stromversorgung: Netzbetrieb, DC 5 V/1 A
+      eignung: Mittelgroße und große Hunde; Mehrhundehaushalte
+  - slug: petlibro-capsule-dog-fountain
+    label: PETLIBRO Capsule Dog Fountain
+    type: product
+    recommendation: >-
+      Starke Großtank-Alternative für mittelgroße und große Hunde, wenn knapp acht Liter Reserve, breite Trinkfläche und
+      Spritzschutz im Mittelpunkt stehen.
     values:
-      kapazitaet: "Knapp 8 Liter"
-      material: "Breite Trinkfläche; Materialmix laut Produktdaten"
-      lautstaerke: "Keine belastbare Herstellerangabe"
-      filter: "Modellgebundener Filter"
-      reinigung: "Großer Tank; Pumpen- und Randbereiche separat reinigen"
-      stromversorgung: "Netzbetrieb"
-      eignung: "Mittelgroße und große Hunde"
-  - slug: "oneisall-3-5l-cordless-fountain"
-    label: "oneisall 3,5L Cordless Fountain"
-    type: "product"
-    recommendation: "Beste kabellose Option für kleine bis mittelgroße Hunde, wenn flexible Aufstellung, Edelstahl-Trinkfläche und große Akkureserve wichtig sind."
+      kapazitaet: Knapp 8 Liter
+      material: Breite Trinkfläche; Materialmix laut Produktdaten
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Modellgebundener Filter
+      reinigung: Großer Tank; Pumpen- und Randbereiche separat reinigen
+      stromversorgung: Netzbetrieb
+      eignung: Mittelgroße und große Hunde
+  - slug: oneisall-3-5l-cordless-fountain
+    label: oneisall 3,5L Cordless Fountain
+    type: product
+    recommendation: >-
+      Beste kabellose Option für kleine bis mittelgroße Hunde, wenn flexible Aufstellung, Edelstahl-Trinkfläche und
+      große Akkureserve wichtig sind.
     values:
-      kapazitaet: "3,5 Liter"
-      material: "Edelstahl-Trinkfläche"
-      lautstaerke: "Herstellerangabe unter 30 dB"
-      filter: "Fünfstufig"
-      reinigung: "Tank, Trinkfläche und Pumpe getrennt reinigen"
-      stromversorgung: "5.000-mAh-Akku; Herstellerangabe bis zu 60 Tage"
-      eignung: "Kleine bis mittelgroße Hunde"
-  - slug: "petkit-eversweet-max-2-uvc"
-    label: "PETKIT Eversweet Max 2 UVC"
-    type: "product"
-    recommendation: "Premiumoption für kleine Hunde, wenn kabellose Aufstellung, UVC-Pumpe, App-Status und spülmaschinengeeignete Teile wichtiger sind als ein großer Tank."
+      kapazitaet: 3,5 Liter
+      material: Edelstahl-Trinkfläche
+      lautstaerke: Herstellerangabe unter 30 dB
+      filter: Fünfstufig
+      reinigung: Tank, Trinkfläche und Pumpe getrennt reinigen
+      stromversorgung: 5.000-mAh-Akku; Herstellerangabe bis zu 60 Tage
+      eignung: Kleine bis mittelgroße Hunde
+  - slug: petkit-eversweet-max-2-uvc
+    label: PETKIT Eversweet Max 2 UVC
+    type: product
+    recommendation: >-
+      Premiumoption für kleine Hunde, wenn kabellose Aufstellung, UVC-Pumpe, App-Status und spülmaschinengeeignete Teile
+      wichtiger sind als ein großer Tank.
     values:
-      kapazitaet: "3 Liter"
-      material: "Edelstahl-Trinkfläche"
-      lautstaerke: "Keine belastbare Herstellerangabe"
-      filter: "Modellgebundener PETKIT-Filter"
-      reinigung: "Laut Hersteller vollständig spülmaschinengeeignete Wasserteile"
-      stromversorgung: "Akku- und Netzbetrieb"
-      eignung: "Kleine Hunde"
-  - slug: "petlibro-stainless-steel-fountain"
-    label: "PETLIBRO Stainless Steel Fountain 3L"
-    type: "product"
-    recommendation: "Beste einfache Edelstahloption für kleine bis mittelgroße Hunde, wenn ein spülmaschinengeeigneter Tank wichtiger ist als App oder Akku."
+      kapazitaet: 3 Liter
+      material: Edelstahl-Trinkfläche
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Modellgebundener PETKIT-Filter
+      reinigung: Laut Hersteller vollständig spülmaschinengeeignete Wasserteile
+      stromversorgung: Akku- und Netzbetrieb
+      eignung: Kleine Hunde
+  - slug: petlibro-stainless-steel-fountain
+    label: PETLIBRO Stainless Steel Fountain 3L
+    type: product
+    recommendation: >-
+      Beste einfache Edelstahloption für kleine bis mittelgroße Hunde, wenn ein spülmaschinengeeigneter Tank wichtiger
+      ist als App oder Akku.
     values:
-      kapazitaet: "3 Liter"
-      material: "Tank und Trinkfläche aus Edelstahl 304"
-      lautstaerke: "Keine belastbare Herstellerangabe"
-      filter: "Modellgebundener Filter"
-      reinigung: "Tank laut Hersteller spülmaschinengeeignet"
-      stromversorgung: "Netzbetrieb"
-      eignung: "Kleine bis mittelgroße Hunde"
-  - slug: "cat-mate-335-pet-fountain"
-    label: "Cat Mate Pet Fountain 335"
-    type: "product"
-    recommendation: "Einfache Offline-Alternative für kleine Hunde, wenn mehrere Trinkhöhen, lange Kabelreichweite und gut verfügbare Ersatzteile wichtiger sind als Edelstahl oder App."
+      kapazitaet: 3 Liter
+      material: Tank und Trinkfläche aus Edelstahl 304
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Modellgebundener Filter
+      reinigung: Tank laut Hersteller spülmaschinengeeignet
+      stromversorgung: Netzbetrieb
+      eignung: Kleine bis mittelgroße Hunde
+  - slug: cat-mate-335-pet-fountain
+    label: Cat Mate Pet Fountain 335
+    type: product
+    recommendation: >-
+      Einfache Offline-Alternative für kleine Hunde, wenn mehrere Trinkhöhen, lange Kabelreichweite und gut verfügbare
+      Ersatzteile wichtiger sind als Edelstahl oder App.
     values:
-      kapazitaet: "Rund 2 Liter"
-      material: "BPA- und BHT-freier Kunststoff"
-      lautstaerke: "Keine belastbare Herstellerangabe"
-      filter: "Polymer-Aktivkohlefilter"
-      reinigung: "Monatlich, bei hartem Wasser häufiger; Pumpe separat"
-      stromversorgung: "Niedervolt-Netzbetrieb mit 3-m-Kabel"
-      eignung: "Kleine Hunde"
+      kapazitaet: Rund 2 Liter
+      material: BPA- und BHT-freier Kunststoff
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Polymer-Aktivkohlefilter
+      reinigung: Monatlich, bei hartem Wasser häufiger; Pumpe separat
+      stromversorgung: Niedervolt-Netzbetrieb mit 3-m-Kabel
+      eignung: Kleine Hunde
 criteria:
-  - key: "kapazitaet"
-    label: "Kapazität"
-    description: "Nutzbare Wasserreserve des Behälters."
+  - key: kapazitaet
+    label: Kapazität
+    description: Nutzbare Wasserreserve des Behälters.
     weight: 1.5
-  - key: "eignung"
-    label: "Hundegröße"
-    description: "Bauform, Trinkhöhe, Trinkfläche und Reserve passend zum Einsatzzweck."
+  - key: eignung
+    label: Hundegröße
+    description: Bauform, Trinkhöhe, Trinkfläche und Reserve passend zum Einsatzzweck.
     weight: 1.5
-  - key: "material"
-    label: "Material"
-    description: "Material von Trinkfläche, Tank und wasserführenden Teilen."
+  - key: material
+    label: Material
+    description: Material von Trinkfläche, Tank und wasserführenden Teilen.
     weight: 1.2
-  - key: "reinigung"
-    label: "Reinigung"
-    description: "Zerlegbarkeit, Pumpenzugang und Spülmaschineneignung."
+  - key: reinigung
+    label: Reinigung
+    description: Zerlegbarkeit, Pumpenzugang und Spülmaschineneignung.
     weight: 1.4
-  - key: "filter"
-    label: "Filter und Folgekosten"
-    description: "Filteraufbau, modellgebundene Wechselteile und Verfügbarkeit."
-    weight: 1.0
-  - key: "stromversorgung"
-    label: "Stromversorgung"
-    description: "Netzbetrieb oder Akku und die daraus folgende Platzierungsfreiheit."
-    weight: 1.0
-  - key: "lautstaerke"
-    label: "Lautstärke"
-    description: "Dokumentierte Herstellerangabe oder transparente Datenlücke."
+  - key: filter
+    label: Filter und Folgekosten
+    description: Filteraufbau, modellgebundene Wechselteile und Verfügbarkeit.
+    weight: 1
+  - key: stromversorgung
+    label: Stromversorgung
+    description: Netzbetrieb oder Akku und die daraus folgende Platzierungsfreiheit.
+    weight: 1
+  - key: lautstaerke
+    label: Lautstärke
+    description: Dokumentierte Herstellerangabe oder transparente Datenlücke.
     weight: 0.6
 automaticRecommendations:
   enabled: false
 recommendation:
-  winnerSlug: "oneisall-7l-dog-water-fountain"
-  alternativeSlug: "oneisall-3-5l-cordless-fountain"
-  title: "oneisall 7L für große Hunde, 3,5L Cordless für flexible Aufstellung"
-  text: "Für große Hunde und mehrere Tiere ist der oneisall 7L wegen Reserve und breiter Trinkfläche die ausgewogenste Wahl. Für kleine bis mittelgroße Hunde ist die kabellose 3,5-Liter-Version flexibler. PETLIBRO Capsule ist die Großtank-Alternative, PETKIT Max 2 UVC die smarte Premiumoption für kleine Hunde."
-tableTitle: "6 Trinkbrunnen für Hunde direkt verglichen"
-cardsTitle: "Empfehlungen nach Hundegröße und Aufstellung"
+  winnerSlug: oneisall-7l-dog-water-fountain
+  alternativeSlug: oneisall-3-5l-cordless-fountain
+  title: oneisall 7L für große Hunde, 3,5L Cordless für flexible Aufstellung
+  text: >-
+    Für große Hunde und mehrere Tiere ist der oneisall 7L wegen Reserve und breiter Trinkfläche die ausgewogenste Wahl.
+    Für kleine bis mittelgroße Hunde ist die kabellose 3,5-Liter-Version flexibler. PETLIBRO Capsule ist die
+    Großtank-Alternative, PETKIT Max 2 UVC die smarte Premiumoption für kleine Hunde.
+tableTitle: 6 Trinkbrunnen für Hunde direkt verglichen
+cardsTitle: Empfehlungen nach Hundegröße und Aufstellung
 faq:
-  - question: "Welcher Trinkbrunnen eignet sich am besten für große Hunde?"
-    answer: "Für große Hunde sind eine breite Trinkfläche, guter Stand und eine hohe Reserve wichtiger als App-Funktionen. Im Vergleich sind oneisall 7L und PETLIBRO Capsule die plausibelsten Großtanklösungen."
-  - question: "Wie groß sollte ein Trinkbrunnen für einen Hund sein?"
-    answer: "Die passende Größe hängt von Körpergewicht, Tierzahl, Raumtemperatur und Trinkverhalten ab. Der Tank sollte Reserven bieten, darf aber nicht dazu führen, dass Wasser seltener gewechselt wird."
-  - question: "Ist ein 2-Liter-Brunnen für einen großen Hund ausreichend?"
-    answer: "Meist nur eingeschränkt. Neben der geringen Reserve können Trinkfläche, Höhe und Standfestigkeit unpassend sein."
-  - question: "Ist Edelstahl besser als Kunststoff?"
-    answer: "Edelstahl ist robust und häufig leicht zu reinigen. Entscheidend bleiben zugängliche Pumpe, glatte Kontaktflächen und vollständig trocknende Bauteile."
-  - question: "Ist ein kabelloser Trinkbrunnen sinnvoll?"
-    answer: "Er erleichtert die Platzierung ohne sichtbares Kabel. Akkulaufzeit hängt jedoch stark vom Betriebsmodus ab und ersetzt keine regelmäßige Kontrolle."
-  - question: "Wie oft muss ein Hundetrinkbrunnen gereinigt werden?"
-    answer: "Wasser und sichtbare Flächen sollten häufig kontrolliert werden. Tank, Pumpe, Filterkammer und schwer zugängliche Bereiche benötigen abhängig von Nutzung und Wasserqualität mindestens wöchentlich eine gründliche Prüfung."
-  - question: "Wie oft muss der Filter gewechselt werden?"
-    answer: "Das hängt von Filtertyp, Wasserqualität und Tierzahl ab. Herstellerintervalle sind Obergrenzen; Geruch, Belag oder sinkender Durchfluss erfordern eine frühere Reinigung oder einen Wechsel."
-  - question: "Sind Trinkbrunnen für Hunde wirklich leise?"
-    answer: "Geräusch hängt von Pumpe, Wasserstand, Untergrund und Verschmutzung ab. Einzelne Dezibelwerte sind nur eingeschränkt vergleichbar."
-  - question: "Braucht ein Hundetrinkbrunnen eine App?"
-    answer: "Nein. App-Erinnerungen können helfen, aber Tankgröße, Trinkfläche, Reinigung und Ersatzteilversorgung sind wichtiger."
-  - question: "Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?"
-    answer: "Nein. Eine zusätzliche unabhängige Wasserstelle ist besonders bei Stromausfall, Pumpenfehlern, Hitze oder mehreren Tieren sinnvoll."
+  - question: Welcher Trinkbrunnen eignet sich am besten für große Hunde?
+    answer: >-
+      Für große Hunde sind eine breite Trinkfläche, guter Stand und eine hohe Reserve wichtiger als App-Funktionen. Im
+      Vergleich sind oneisall 7L und PETLIBRO Capsule die plausibelsten Großtanklösungen.
+  - question: Wie groß sollte ein Trinkbrunnen für einen Hund sein?
+    answer: >-
+      Die passende Größe hängt von Körpergewicht, Tierzahl, Raumtemperatur und Trinkverhalten ab. Der Tank sollte
+      Reserven bieten, darf aber nicht dazu führen, dass Wasser seltener gewechselt wird.
+  - question: Ist ein 2-Liter-Brunnen für einen großen Hund ausreichend?
+    answer: Meist nur eingeschränkt. Neben der geringen Reserve können Trinkfläche, Höhe und Standfestigkeit unpassend sein.
+  - question: Ist Edelstahl besser als Kunststoff?
+    answer: >-
+      Edelstahl ist robust und häufig leicht zu reinigen. Entscheidend bleiben zugängliche Pumpe, glatte Kontaktflächen
+      und vollständig trocknende Bauteile.
+  - question: Ist ein kabelloser Trinkbrunnen sinnvoll?
+    answer: >-
+      Er erleichtert die Platzierung ohne sichtbares Kabel. Akkulaufzeit hängt jedoch stark vom Betriebsmodus ab und
+      ersetzt keine regelmäßige Kontrolle.
+  - question: Wie oft muss ein Hundetrinkbrunnen gereinigt werden?
+    answer: >-
+      Wasser und sichtbare Flächen sollten häufig kontrolliert werden. Tank, Pumpe, Filterkammer und schwer zugängliche
+      Bereiche benötigen abhängig von Nutzung und Wasserqualität mindestens wöchentlich eine gründliche Prüfung.
+  - question: Wie oft muss der Filter gewechselt werden?
+    answer: >-
+      Das hängt von Filtertyp, Wasserqualität und Tierzahl ab. Herstellerintervalle sind Obergrenzen; Geruch, Belag oder
+      sinkender Durchfluss erfordern eine frühere Reinigung oder einen Wechsel.
+  - question: Sind Trinkbrunnen für Hunde wirklich leise?
+    answer: >-
+      Geräusch hängt von Pumpe, Wasserstand, Untergrund und Verschmutzung ab. Einzelne Dezibelwerte sind nur
+      eingeschränkt vergleichbar.
+  - question: Braucht ein Hundetrinkbrunnen eine App?
+    answer: >-
+      Nein. App-Erinnerungen können helfen, aber Tankgröße, Trinkfläche, Reinigung und Ersatzteilversorgung sind
+      wichtiger.
+  - question: Ersetzt ein Trinkbrunnen mehrere Wassernäpfe?
+    answer: >-
+      Nein. Eine zusätzliche unabhängige Wasserstelle ist besonders bei Stromausfall, Pumpenfehlern, Hitze oder mehreren
+      Tieren sinnvoll.
+heroImage:
+  src: ../../assets/images/products/oneisall-7l-dog-water-fountain/comparison.webp
+  alt: Beste Trinkbrunnen für Hunde – redaktionelles Vergleichsbild
 ---
-
 Ein **Trinkbrunnen für Hunde** muss mechanisch zum Tier passen. Für einen großen Hund ist ein kompakter Katzenbrunnen mit App oft weniger geeignet als ein einfacher großer Tank mit breiter Trinkfläche.
 
 ## Schnellentscheidung

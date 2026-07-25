@@ -1,64 +1,109 @@
 ---
-title: "Beste GPS-Tracker für Hunde"
-slug: "beste-gps-tracker-fuer-hunde"
-type: "comparison"
-layout: "comparison"
-description: "GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen."
+title: Beste GPS-Tracker für Hunde
+slug: beste-gps-tracker-fuer-hunde
+type: comparison
+layout: comparison
+description: GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen.
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-24"
 author:
-  name: "PfotenTechnik Redaktion"
-  role: "Redaktion"
-comparisonType: "use-case"
-group: "GPS-Tracker"
-icon: "🐕"
+  name: PfotenTechnik Redaktion
+  role: Redaktion
+comparisonType: use-case
+group: GPS-Tracker
+icon: 🐕
 items:
-  - slug: "tractive-dog-6"
-    type: "product"
-    label: "Bester Allrounder"
-    recommendation: "Für die meisten Familienhunde mit Mobilfunkabdeckung."
-  - slug: "weenect-xs"
-    type: "product"
-    label: "Für kleine Hunde"
-    recommendation: "Leichte Lösung für kleine Hunde, sofern Größe und Befestigung zum Geschirr passen."
-  - slug: "paj-pet-finder-4g-mini"
-    type: "product"
-    label: "Alternative beim Kostenmodell"
-    recommendation: "Interessant für Halter, die verschiedene Laufzeiten und Gesamtkosten vergleichen."
-  - slug: "tractive-dog-6-xl"
-    type: "product"
-    label: "Für große Hunde"
-    recommendation: "Für große Hunde und längere Laufzeit zwischen den Ladevorgängen."
-  - slug: "weenect-xt"
-    type: "product"
-    label: "Für Outdoor-Einsätze"
-    recommendation: "Robustere Mobilfunklösung für längere Aktivitäten im Freien."
-  - slug: "garmin-alpha-t-20"
-    type: "product"
-    label: "Für Jagd- und Arbeitshunde"
-    recommendation: "Speziallösung mit VHF-Funk, wenn Mobilfunk keine verlässliche Grundlage ist."
+  - slug: tractive-dog-6
+    type: product
+    label: Bester Allrounder
+    recommendation: Für die meisten Familienhunde mit Mobilfunkabdeckung.
+    values:
+      einsatzgebiet: Alltag und Auslauf
+      hundegroesse: Kleine bis große Hunde
+      ortung: GPS, GLONASS und Galileo
+      abo: Erforderlich; ein eigenes Abo pro Tracker
+  - slug: weenect-xs
+    type: product
+    label: Für kleine Hunde
+    recommendation: Leichte Lösung für kleine Hunde, sofern Größe und Befestigung zum Geschirr passen.
+    values:
+      einsatzgebiet: Alltag
+      hundegroesse: Kleine Hunde
+      ortung: GPS, Galileo, BeiDou und GLONASS
+      abo: Erforderlich; eigenes Abo pro Tracker
+  - slug: paj-pet-finder-4g-mini
+    type: product
+    label: Alternative beim Kostenmodell
+    recommendation: Interessant für Halter, die verschiedene Laufzeiten und Gesamtkosten vergleichen.
+    values:
+      einsatzgebiet: Alltag
+      hundegroesse: Kleine bis mittelgroße Hunde
+      ortung: GPS im Freien; ergänzende Bluetooth- und WLAN-Funktionen zur Nähe- und Energiesparlogik
+      abo: 27 Monate Tracking enthalten; danach kostenpflichtiger PAJ-Tarif erforderlich
+  - slug: tractive-dog-6-xl
+    type: product
+    label: Für große Hunde
+    recommendation: Für große Hunde und längere Laufzeit zwischen den Ladevorgängen.
+    values:
+      einsatzgebiet: Alltag und längere Touren
+      hundegroesse: Große Hunde
+      ortung: GPS, GLONASS und Galileo
+      abo: Erforderlich; ein eigenes Abo pro Tracker
+  - slug: weenect-xt
+    type: product
+    label: Für Outdoor-Einsätze
+    recommendation: Robustere Mobilfunklösung für längere Aktivitäten im Freien.
+    values:
+      einsatzgebiet: Outdoor und Wandern
+      hundegroesse: Mittelgroße bis große Hunde
+      ortung: Satellitenortung über Weenect InfinityTrack
+      abo: Erforderlich
+  - slug: garmin-alpha-t-20
+    type: product
+    label: Für Jagd- und Arbeitshunde
+    recommendation: Speziallösung mit VHF-Funk, wenn Mobilfunk keine verlässliche Grundlage ist.
+    values:
+      einsatzgebiet: Jagd und Arbeit
+      hundegroesse: Mittelgroße bis große Hunde
+      ortung: Satellitenposition am Hund, Übertragung per VHF an kompatibles Handgerät
+      abo: für die VHF-Hundeortung nicht erforderlich
 criteria:
-  - key: "einsatzgebiet"
-    label: "Einsatzgebiet"
-  - key: "hundegroesse"
-    label: "Geeignete Hundegröße"
-  - key: "ortung"
-    label: "Ortungssystem"
-  - key: "abo"
-    label: "Abo erforderlich"
-
+  - key: einsatzgebiet
+    label: Einsatzgebiet
+  - key: hundegroesse
+    label: Geeignete Hundegröße
+  - key: ortung
+    label: Ortungssystem
+  - key: abo
+    label: Abo erforderlich
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: "tractive-dog-6"
-  alternativeSlug: "weenect-xs"
-  title: "Der beste Tracker hängt vom Einsatzzweck ab"
-  text: "Tractive DOG 6 eignet sich für die meisten Familienhunde. Kleine Hunde profitieren vom leichteren Weenect XS, große Hunde vom DOG 6 XL und Jagdhunde vom Garmin Alpha T20."
-tableTitle: "Direkter Vergleich"
-cardsTitle: "Produkte im Überblick"
-faq: []
+  winnerSlug: tractive-dog-6
+  alternativeSlug: weenect-xs
+  title: Der beste Tracker hängt vom Einsatzzweck ab
+  text: >-
+    Tractive DOG 6 eignet sich für die meisten Familienhunde. Kleine Hunde profitieren vom leichteren Weenect XS, große
+    Hunde vom DOG 6 XL und Jagdhunde vom Garmin Alpha T20.
+tableTitle: Direkter Vergleich
+cardsTitle: Produkte im Überblick
+faq:
+  - question: Wie wurden die Produkte in „Beste GPS-Tracker für Hunde“ verglichen?
+    answer: >-
+      Die Tabelle nutzt einheitliche Kriterien und übernimmt belegte Werte aus den vorhandenen Produktdaten. Nicht
+      ausgewiesene Angaben werden ausdrücklich als solche gekennzeichnet.
+  - question: Was bedeutet „nicht ausgewiesen“ in der Vergleichstabelle?
+    answer: >-
+      Für dieses Kriterium liegt in den geprüften Produkt- oder Herstellerdaten kein belastbarer Wert vor. Die Angabe
+      wird deshalb nicht geschätzt oder erfunden.
+  - question: Ist der Vergleich für alle GPS-Tracker vollständig?
+    answer: >-
+      Der Vergleich bildet die redaktionell ausgewählten und aktuell gepflegten Modelle ab. Produktstatus, Verfügbarkeit
+      und technische Angaben können sich ändern.
+heroImage:
+  src: ../../assets/images/guides/gps-tracker/battery-subscription.webp
+  alt: Beste GPS-Tracker für Hunde – redaktionelles Vergleichsbild
 ---
-
 # Beste GPS-Tracker für Hunde
 
 Ein GPS-Tracker verhindert **nicht**, dass ein Hund entläuft. Er hilft lediglich dabei, den Aufenthaltsort schneller zu bestimmen. Die wichtigste Entscheidung ist deshalb nicht die App, sondern das passende Ortungssystem.

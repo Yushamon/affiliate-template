@@ -1,69 +1,124 @@
 ---
-title: "Beste Futterautomaten mit Kamera"
-slug: "beste-futterautomaten-mit-kamera"
-type: "comparison"
-layout: "comparison"
-description: "Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert vergleichen."
+title: Beste Futterautomaten mit Kamera
+slug: beste-futterautomaten-mit-kamera
+type: comparison
+layout: comparison
+description: >-
+  Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert
+  vergleichen.
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-24"
 author:
-  name: "PfotenTechnik Redaktion"
-  role: "Redaktion"
-comparisonType: "use-case"
-group: "Futterautomaten"
-icon: "📷"
+  name: PfotenTechnik Redaktion
+  role: Redaktion
+comparisonType: use-case
+group: Futterautomaten
+icon: 📷
 items:
-  - slug: "petlibro-granary-camera-feeder"
-    label: "PETLIBRO Granary Camera Feeder"
-    type: "product"
-    recommendation: "Bester Kamera-Allrounder."
-    overrides:
-      profil: "Bester Gesamtkompromiss"
-  - slug: "petkit-yumshare-dual-hopper"
-    label: "PETKIT YumShare Dual-Hopper 2"
-    type: "product"
-    recommendation: "Beste Zwei-Sorten-Lösung mit Kamera."
-    overrides:
-      profil: "Beste Zwei-Kammer-Lösung"
-  - slug: "wopet-heritage-view-camera-feeder"
-    label: "WOPET Heritage View Camera Feeder"
-    type: "product"
-    recommendation: "Großer Vorrat mit Kamera."
-    overrides:
-      profil: "Größter Vorrat"
+  - slug: petlibro-granary-camera-feeder
+    label: PETLIBRO Granary Camera Feeder
+    type: product
+    recommendation: Bester Kamera-Allrounder.
+    values:
+      profil: Bester Gesamtkompromiss
+      bild: 1080p, Nachtsicht, Zwei-Wege-Audio
+      kontrollwert: Sichtkontrolle des Napfs
+      offline: Zeitpläne lokal, Kamera online
+      datenschutz: Cloudoptionen prüfen
+      futter: Trockenfutter
+      mehrtiere: Keine Tiertrennung
+      kamera: 1080p mit 145°-Weitwinkel und Nachtsicht
+  - slug: petkit-yumshare-dual-hopper
+    label: PETKIT YumShare Dual-Hopper 2
+    type: product
+    recommendation: Beste Zwei-Sorten-Lösung mit Kamera.
+    values:
+      profil: Beste Zwei-Kammer-Lösung
+      bild: Kamera mit Tiererkennung
+      kontrollwert: Sorten- und Aktivitätskontrolle
+      offline: Video online
+      datenschutz: Cloud prüfen
+      futter: Zwei Trockenfuttersorten
+      mehrtiere: Keine Zugangssperre
+      kamera: 1080p-HD-Kamera
+  - slug: wopet-heritage-view-camera-feeder
+    label: WOPET Heritage View Camera Feeder
+    type: product
+    recommendation: Großer Vorrat mit Kamera.
+    values:
+      profil: Größter Vorrat
+      bild: 1080p
+      kontrollwert: Sichtkontrolle
+      offline: Backup testen
+      datenschutz: Speicheroptionen prüfen
+      futter: Trockenfutter
+      mehrtiere: Keine Tiertrennung
+      kamera: Ja
 criteria:
-- {key: profil, label: "Unsere Einordnung", weight: 1.5}
-- {key: bild, label: "Bildqualität", weight: 1.2}
-- {key: kontrollwert, label: "Praktischer Nutzen", weight: 1.6}
-- {key: offline, label: "Offline-Verhalten", weight: 1.2}
-- {key: datenschutz, label: "Datenschutz", weight: 1.0}
-- {key: futter, label: "Futterart", weight: 1.0}
-- {key: mehrtiere, label: "Mehrtier-Eignung", weight: 1.4}
-- {key: kamera, label: "Kamera", weight: 0.2}
+  - key: profil
+    label: Unsere Einordnung
+    weight: 1.5
+  - key: bild
+    label: Bildqualität
+    weight: 1.2
+  - key: kontrollwert
+    label: Praktischer Nutzen
+    weight: 1.6
+  - key: offline
+    label: Offline-Verhalten
+    weight: 1.2
+  - key: datenschutz
+    label: Datenschutz
+    weight: 1
+  - key: futter
+    label: Futterart
+    weight: 1
+  - key: mehrtiere
+    label: Mehrtier-Eignung
+    weight: 1.4
+  - key: kamera
+    label: Kamera
+    weight: 0.2
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: "petlibro-granary-camera-feeder"
-  alternativeSlug: "petkit-yumshare-dual-hopper"
-  title: "Kamera ersetzt keine Tiererkennung"
-  text: "PETLIBRO ist der beste Allrounder. PETKIT eignet sich besser für zwei Trockenfuttersorten. Eine Kamera allein verhindert weder Futterklau noch beweist sie sicher, welches Tier gefressen hat."
+  winnerSlug: petlibro-granary-camera-feeder
+  alternativeSlug: petkit-yumshare-dual-hopper
+  title: Kamera ersetzt keine Tiererkennung
+  text: >-
+    PETLIBRO ist der beste Allrounder. PETKIT eignet sich besser für zwei Trockenfuttersorten. Eine Kamera allein
+    verhindert weder Futterklau noch beweist sie sicher, welches Tier gefressen hat.
 faq:
-- {question: "Brauche ich überhaupt eine Kamera?", answer: "Nur wenn eine Sichtkontrolle einen echten Mehrwert bietet. Für reine Zeitpläne reicht oft ein App-Automat."}
-- {question: "Beweist die Kamera, dass mein Tier gefressen hat?", answer: "Nein."}
-- {question: "Ersetzt die Kamera einen Mikrochip-Napf?", answer: "Nein."}
-- {question: "Funktioniert die Fütterung ohne Internet?", answer: "Viele Zeitpläne laufen lokal weiter."}
-- {question: "Brauche ich ein Cloud-Abo?", answer: "Je nach Modell nur für bestimmte Video- oder Speicherfunktionen."}
-- {question: "Kann eine Kamera Krankheiten erkennen?", answer: "Nein, sie liefert nur zusätzliche Beobachtungen."}
-- {question: "Sind 1080p ausreichend?", answer: "Für die Kontrolle am Napf in der Regel ja."}
-- {question: "Ist Nachtsicht wichtig?", answer: "Ja, wenn nachts gefüttert wird."}
-- {question: "Wie wichtig ist Datenschutz?", answer: "Sehr wichtig, da die Kamera im Wohnraum steht."}
-- {question: "Ist Zwei-Wege-Audio sinnvoll?", answer: "Kann hilfreich sein, ist aber kein Muss."}
-- {question: "Wie teste ich den Offline-Betrieb?", answer: "Internet und Strom getrennt testen."}
-- {question: "Ist eine Kamera für zwei Katzen ausreichend?", answer: "Nein, nicht bei getrennten Rationen."}
-tableTitle: "Direkter Vergleich"
-cardsTitle: "Produkte im Überblick"
+  - question: Brauche ich überhaupt eine Kamera?
+    answer: Nur wenn eine Sichtkontrolle einen echten Mehrwert bietet. Für reine Zeitpläne reicht oft ein App-Automat.
+  - question: Beweist die Kamera, dass mein Tier gefressen hat?
+    answer: Nein.
+  - question: Ersetzt die Kamera einen Mikrochip-Napf?
+    answer: Nein.
+  - question: Funktioniert die Fütterung ohne Internet?
+    answer: Viele Zeitpläne laufen lokal weiter.
+  - question: Brauche ich ein Cloud-Abo?
+    answer: Je nach Modell nur für bestimmte Video- oder Speicherfunktionen.
+  - question: Kann eine Kamera Krankheiten erkennen?
+    answer: Nein, sie liefert nur zusätzliche Beobachtungen.
+  - question: Sind 1080p ausreichend?
+    answer: Für die Kontrolle am Napf in der Regel ja.
+  - question: Ist Nachtsicht wichtig?
+    answer: Ja, wenn nachts gefüttert wird.
+  - question: Wie wichtig ist Datenschutz?
+    answer: Sehr wichtig, da die Kamera im Wohnraum steht.
+  - question: Ist Zwei-Wege-Audio sinnvoll?
+    answer: Kann hilfreich sein, ist aber kein Muss.
+  - question: Wie teste ich den Offline-Betrieb?
+    answer: Internet und Strom getrennt testen.
+  - question: Ist eine Kamera für zwei Katzen ausreichend?
+    answer: Nein, nicht bei getrennten Rationen.
+tableTitle: Direkter Vergleich
+cardsTitle: Produkte im Überblick
+heroImage:
+  src: ../../assets/images/products/petlibro-granary-camera/comparison.webp
+  alt: Beste Futterautomaten mit Kamera – redaktionelles Vergleichsbild
 ---
-
 # Beste Futterautomaten mit Kamera
 
 Eine Kamera beantwortet nur eine Frage: **Was passiert im sichtbaren Bereich des Napfes?** Sie beweist weder sicher, welches Tier gefressen hat, noch wie viel aufgenommen wurde.

@@ -1,238 +1,148 @@
 ---
-title: Beste Futterautomaten für Nassfutter
-slug: beste-futterautomaten-fuer-nassfutter
-type: comparison
-layout: comparison
-description: >-
-  Nassfutterautomaten nach Kühlprinzip, Mahlzeitenzahl, Hygiene, Stromausfallsicherheit, App und Zugangskontrolle
-  vergleichen.
+title: "Beste Futterautomaten für Nassfutter"
+slug: "beste-futterautomaten-fuer-nassfutter"
+type: "comparison"
+layout: "comparison"
+description: "Nassfutterautomaten nach Kühlprinzip, Mahlzeitenzahl, Hygiene, Stromausfallsicherheit, App und Zugangskontrolle vergleichen."
 publishedAt: "2026-07-10"
 updatedAt: "2026-07-24"
 author:
-  name: PfotenTechnik Redaktion
-  role: Redaktion
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 tags:
-  - Futterautomat
-  - Nassfutter
-  - Katze
-  - Kleiner Hund
-  - Vergleich
-  - Kühlung
+  - "Futterautomat"
+  - "Nassfutter"
+  - "Katze"
+  - "Kleiner Hund"
+  - "Vergleich"
+  - "Kühlung"
 hub:
   sections:
-    - vergleiche
-  title: Beste Futterautomaten für Nassfutter
-  description: Aktiv gekühlte Modelle, Fachautomaten mit Kühlakkus und Lösungen für getrennte Nassfutterrationen.
-  icon: 🥣
+    - "vergleiche"
+  title: "Beste Futterautomaten für Nassfutter"
+  description: "Aktiv gekühlte Modelle, Fachautomaten mit Kühlakkus und Lösungen für getrennte Nassfutterrationen."
+  icon: "🥣"
   order: 30
 seo:
-  title: Beste Nassfutterautomaten im Vergleich 2026
-  description: >-
-    PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und
-    Ausfallsicherheit vergleichen.
-  canonical: /vergleiche/beste-futterautomaten-fuer-nassfutter/
+  title: "Beste Nassfutterautomaten im Vergleich 2026"
+  description: "PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und Ausfallsicherheit vergleichen."
+  canonical: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
   sitemap: true
   priority: 0.9
-  changefreq: monthly
-comparisonType: use-case
-group: Futterautomaten
-icon: 🥣
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "🥣"
 items:
-  - slug: petlibro-polar-wet-food-feeder
-    label: PETLIBRO Polar Wet Food Feeder
-    type: product
-    recommendation: >-
-      Beste kompakte Lösung mit aktiver Kühlung, wenn drei vorbereitete Mahlzeiten, App-Steuerung und Netzbetrieb zum
-      Alltag passen.
-    values:
-      profil: Beste kompakte aktive Kühlung
-      kuehlprinzip: Thermoelektrische Aktivkühlung
-      mahlzeiten: 3 Fächer mit je 200 ml
-      steuerung: PETLIBRO-App; 2,4-GHz-WLAN
-      stromversorgung: Netzteil 12 V/5 A
-      hygiene: Spülmaschinengeeignete Edelstahl-Futterschale
-      tiertrennung: Nein
-      geeignetfuer: Katzen und kleine Hunde
-      wichtigstegrenze: Nur drei Mahlzeiten; aktive Kühlung bleibt vom Netzstrom abhängig
-  - slug: petsafe-freshfeed-refrigerated-feeder
-    label: PetSafe FreshFeed Refrigerated Pet Feeder
-    type: product
-    recommendation: >-
-      Technisch stärkstes Konzept für bis zu sechs gekühlte Mahlzeiten; vor dem Kauf Verfügbarkeit, Netzbetrieb und
-      fehlendes Batterie-Backup prüfen.
-    values:
-      profil: Meiste aktiv gekühlte Mahlzeiten
-      kuehlprinzip: Aktive Halbleiterkühlung
-      mahlzeiten: "6"
-      steuerung: PetSafe-App
-      stromversorgung: Netzteil
-      hygiene: Entnehmbare, spülmaschinengeeignete Einsätze
-      tiertrennung: Nein
-      geeignetfuer: Katzen und kleine Hunde
-      wichtigstegrenze: Deutschland-Verfügbarkeit und Langzeiterfahrung prüfen
-  - slug: catit-pixi-smart-6-meal-feeder
-    label: Catit PIXI Smart 6-Meal Feeder
-    type: product
-    recommendation: >-
-      Vielseitiger Sechs-Fächer-Automat mit App, lokaler Bedienung und Batterie-Backup, wenn Kühlakkus statt aktiver
-      Kühlung ausreichen.
-    values:
-      profil: Beste flexible Sechs-Fächer-Lösung
-      kuehlprinzip: 2 Kühlakkus; keine Temperaturregelung
-      mahlzeiten: bis zu 6 vorbereitete Fächer; Fach 1 ist direkt zugänglich
-      steuerung: App und Touchpanel
-      stromversorgung: USB-C-Netzbetrieb, DC 5 V/1 A mit Adapter
-      hygiene: Entnehmbarer, spülmaschinengeeigneter Einsatz
-      tiertrennung: Nein
-      geeignetfuer: Katzen
-      wichtigstegrenze: Kühlwirkung hängt stark von Vorbereitung und Raumtemperatur ab
-  - slug: cat-mate-c500
-    label: Cat Mate C500
-    type: product
-    recommendation: Beste einfache Offline-Lösung für mehrere vorbereitete Nassfutterportionen ohne App- oder WLAN-Abhängigkeit.
-    values:
-      profil: Beste Offline-Zeitsteuerung
-      kuehlprinzip: 2 Kühlakkus; keine aktive Kühlung
-      mahlzeiten: ein Fach sofort, vier Zeiten programmierbar
-      steuerung: Digitaler Timer am Gerät
-      stromversorgung: drei AA-Batterien
-      hygiene: Deckel und Einsatz spülmaschinengeeignet
-      tiertrennung: Nein
-      geeignetfuer: Bis zu zwei Katzen oder ein kleiner Hund
-      wichtigstegrenze: Keine Fernkontrolle und keine geregelte Kühlung
-  - slug: surefeed-microchip-pet-feeder
-    label: SureFeed Microchip Pet Feeder
-    type: product
-    recommendation: >-
-      Beste Speziallösung gegen Futterklau und für getrennte Nassfutterrationen, aber kein zeitgesteuerter
-      Mahlzeitenautomat.
-    values:
-      profil: Beste Zugangskontrolle
-      kuehlprinzip: Keine aktive Kühlung
-      mahlzeiten: Manuell befüllter 400-ml-Napf
-      steuerung: Öffnung per Mikrochip oder RFID-Anhänger
-      stromversorgung: vier C-Batterien
-      hygiene: Napf und Matte entnehmbar; Mechanik trocken halten
-      tiertrennung: Ja, über Mikrochip oder RFID
-      geeignetfuer: Katzen und kleine Hunde
-      wichtigstegrenze: Keine Zeitpläne und keine automatische Portionierung
+  - slug: "petlibro-polar-wet-food-feeder"
+    label: "PETLIBRO Polar Wet Food Feeder"
+    type: "product"
+    recommendation: "Beste kompakte Lösung mit aktiver Kühlung, wenn drei vorbereitete Mahlzeiten, App-Steuerung und Netzbetrieb zum Alltag passen."
+    overrides:
+      profil: "Beste kompakte aktive Kühlung"
+  - slug: "petsafe-freshfeed-refrigerated-feeder"
+    label: "PetSafe FreshFeed Refrigerated Pet Feeder"
+    type: "product"
+    recommendation: "Technisch stärkstes Konzept für bis zu sechs gekühlte Mahlzeiten; vor dem Kauf Verfügbarkeit, Netzbetrieb und fehlendes Batterie-Backup prüfen."
+    overrides:
+      profil: "Meiste aktiv gekühlte Mahlzeiten"
+  - slug: "catit-pixi-smart-6-meal-feeder"
+    label: "Catit PIXI Smart 6-Meal Feeder"
+    type: "product"
+    recommendation: "Vielseitiger Sechs-Fächer-Automat mit App, lokaler Bedienung und Batterie-Backup, wenn Kühlakkus statt aktiver Kühlung ausreichen."
+    overrides:
+      profil: "Beste flexible Sechs-Fächer-Lösung"
+  - slug: "cat-mate-c500"
+    label: "Cat Mate C500"
+    type: "product"
+    recommendation: "Beste einfache Offline-Lösung für mehrere vorbereitete Nassfutterportionen ohne App- oder WLAN-Abhängigkeit."
+    overrides:
+      profil: "Beste Offline-Zeitsteuerung"
+  - slug: "surefeed-microchip-pet-feeder"
+    label: "SureFeed Microchip Pet Feeder"
+    type: "product"
+    recommendation: "Beste Speziallösung gegen Futterklau und für getrennte Nassfutterrationen, aber kein zeitgesteuerter Mahlzeitenautomat."
+    overrides:
+      profil: "Beste Zugangskontrolle"
 criteria:
-  - key: profil
-    label: Unsere Einordnung
-    description: Der stärkste konkrete Anwendungsfall des jeweiligen Modells.
+  - key: "profil"
+    label: "Unsere Einordnung"
+    description: "Der stärkste konkrete Anwendungsfall des jeweiligen Modells."
     weight: 1.5
-  - key: kuehlprinzip
-    label: Kühlprinzip
-    description: Ob das Futter aktiv gekühlt oder lediglich durch Kühlakkus langsamer erwärmt wird.
+  - key: "kuehlprinzip"
+    label: "Kühlprinzip"
+    description: "Ob das Futter aktiv gekühlt oder lediglich durch Kühlakkus langsamer erwärmt wird."
     weight: 1.6
-  - key: mahlzeiten
-    label: Mahlzeiten und Kapazität
-    description: Anzahl, Größe und tatsächliche Nutzbarkeit der vorbereiteten Fächer.
+  - key: "mahlzeiten"
+    label: "Mahlzeiten und Kapazität"
+    description: "Anzahl, Größe und tatsächliche Nutzbarkeit der vorbereiteten Fächer."
     weight: 1.4
-  - key: steuerung
-    label: Steuerung
-    description: App, lokaler Timer oder tierabhängige Öffnung.
+  - key: "steuerung"
+    label: "Steuerung"
+    description: "App, lokaler Timer oder tierabhängige Öffnung."
     weight: 0.9
-  - key: stromversorgung
-    label: Strom und Ausfallsicherheit
-    description: Abhängigkeit vom Netz sowie vorhandene Batterie- oder Offline-Funktionen.
+  - key: "stromversorgung"
+    label: "Strom und Ausfallsicherheit"
+    description: "Abhängigkeit vom Netz sowie vorhandene Batterie- oder Offline-Funktionen."
     weight: 1.3
-  - key: hygiene
-    label: Reinigung
-    description: Material, entnehmbare Teile und laufender Pflegeaufwand.
+  - key: "hygiene"
+    label: "Reinigung"
+    description: "Material, entnehmbare Teile und laufender Pflegeaufwand."
     weight: 1.5
-  - key: tiertrennung
-    label: Individuelle Tiertrennung
-    description: Ob das Gerät Futter vor anderen Tieren schützen kann.
+  - key: "tiertrennung"
+    label: "Individuelle Tiertrennung"
+    description: "Ob das Gerät Futter vor anderen Tieren schützen kann."
     weight: 0.9
-  - key: geeignetfuer
-    label: Geeignet für
-    description: Tierarten und Größen, für die das Modell sinnvoll ausgelegt ist.
+  - key: "geeignetfuer"
+    label: "Geeignet für"
+    description: "Tierarten und Größen, für die das Modell sinnvoll ausgelegt ist."
     weight: 0.7
-  - key: wichtigstegrenze
-    label: Wichtigste Grenze
-    description: Der Punkt, der vor dem Kauf am ehesten zum Ausschluss führen kann.
+  - key: "wichtigstegrenze"
+    label: "Wichtigste Grenze"
+    description: "Der Punkt, der vor dem Kauf am ehesten zum Ausschluss führen kann."
     weight: 1.2
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: petlibro-polar-wet-food-feeder
-  alternativeSlug: cat-mate-c500
-  title: PETLIBRO für aktive Kühlung, Cat Mate für einfache Offline-Zeitsteuerung
-  text: >-
-    Der PETLIBRO Polar ist die ausgewogenste kompakte Lösung, wenn drei aktiv gekühlte Mahlzeiten und App-Steuerung
-    genügen. Der Cat Mate C500 ist die pragmatische Alternative ohne WLAN, arbeitet jedoch nur mit Kühlakkus. Der
-    PetSafe FreshFeed bietet technisch mehr gekühlte Fächer, sollte wegen Verfügbarkeit und geringer Langzeiterfahrung
-    aber besonders sorgfältig geprüft werden.
-tableTitle: Fünf Nassfutter-Lösungen nach Kühlung und Aufgabe verglichen
-cardsTitle: Die besten Modelle nach Nutzungsszenario
+  winnerSlug: "petlibro-polar-wet-food-feeder"
+  alternativeSlug: "cat-mate-c500"
+  title: "PETLIBRO für aktive Kühlung, Cat Mate für einfache Offline-Zeitsteuerung"
+  text: "Der PETLIBRO Polar ist die ausgewogenste kompakte Lösung, wenn drei aktiv gekühlte Mahlzeiten und App-Steuerung genügen. Der Cat Mate C500 ist die pragmatische Alternative ohne WLAN, arbeitet jedoch nur mit Kühlakkus. Der PetSafe FreshFeed bietet technisch mehr gekühlte Fächer, sollte wegen Verfügbarkeit und geringer Langzeiterfahrung aber besonders sorgfältig geprüft werden."
+tableTitle: "Fünf Nassfutter-Lösungen nach Kühlung und Aufgabe verglichen"
+cardsTitle: "Die besten Modelle nach Nutzungsszenario"
 faq:
-  - question: Welcher Futterautomat ist für Nassfutter insgesamt am ausgewogensten?
-    answer: >-
-      Der PETLIBRO Polar ist im aktuellen Vergleich die ausgewogenste kompakte Lösung mit aktiver Kühlung. Er bietet
-      drei Fächer mit je 200 ml und App-Zeitpläne, benötigt aber dauerhaft Netzstrom.
-  - question: Welcher Nassfutterautomat bietet die meisten gekühlten Mahlzeiten?
-    answer: >-
-      Der PetSafe FreshFeed besitzt sechs aktiv gekühlte Einsätze. Vor dem Kauf sollten die Verfügbarkeit in
-      Deutschland, die konkrete Modellvariante und die fehlende dokumentierte Notstromlösung geprüft werden.
-  - question: Was ist der Unterschied zwischen aktiver Kühlung und Kühlakkus?
-    answer: >-
-      Aktive Kühlung führt laufend Wärme ab und kann eine Zieltemperatur anstreben. Kühlakkus speichern lediglich Kälte
-      und werden mit der Zeit wärmer. Ihre Wirkung hängt stärker von Raumtemperatur, Ausgangstemperatur und Vorbereitung
-      ab.
-  - question: Welcher Nassfutterautomat funktioniert ohne WLAN?
-    answer: >-
-      Der Cat Mate C500 wird direkt am Gerät programmiert und läuft mit AA-Batterien. Auch der SureFeed arbeitet lokal,
-      bietet jedoch keine Zeitsteuerung.
-  - question: Welches Modell funktioniert bei einem Stromausfall weiter?
-    answer: >-
-      Cat Mate C500 und SureFeed arbeiten vollständig mit Batterien. Der Catit PIXI kann mit eingesetzten C-Batterien
-      weiterlaufen. Aktiv gekühlte Modelle verlieren ohne Netzstrom ihre Kühlfunktion.
-  - question: Sind sechs Fächer gleichbedeutend mit sechs späteren Mahlzeiten?
-    answer: >-
-      Nicht immer. Bei Drehteller-Automaten ist das erste Fach häufig sofort zugänglich. Entscheidend ist deshalb die
-      Zahl der später programmierbaren Öffnungen, nicht nur die Zahl der Fächer.
-  - question: Welcher Automat verhindert Futterklau?
-    answer: >-
-      Der SureFeed Microchip Pet Feeder öffnet nur für gespeicherte Mikrochips oder RFID-Anhänger. Die anderen Modelle
-      im Vergleich kontrollieren nicht, welches Tier an das geöffnete Futter gelangt.
-  - question: Ist der SureFeed ein richtiger Futterautomat?
-    answer: >-
-      Nur eingeschränkt. Er portioniert nicht automatisch und öffnet nicht nach Zeitplan. Seine Aufgabe ist die
-      Zugangskontrolle zu einer manuell eingefüllten Portion.
-  - question: Wie lange darf Nassfutter im Automaten stehen?
-    answer: >-
-      Eine pauschale sichere Zeit lässt sich nicht seriös nennen. Futterart, Ausgangstemperatur, Raumtemperatur,
-      Kühlprinzip, Füllmenge und Hygiene verändern das Risiko erheblich. Herstellerhinweise und gegebenenfalls
-      tierärztliche Empfehlungen haben Vorrang.
-  - question: Reichen Kühlakkus im Sommer aus?
-    answer: >-
-      Das lässt sich nicht allgemein zusagen. In warmen Räumen erwärmen sich Akkus und Futter schneller. Vor
-      unbeaufsichtigter Nutzung sollte die Temperaturentwicklung mit dem eigenen Aufbau konservativ geprüft werden.
-  - question: Kann ich Rohfutter in einem Nassfutterautomaten verwenden?
-    answer: >-
-      Nur wenn der Hersteller das verwendete Modell und die konkrete Futterart ausdrücklich dafür freigibt. Rohfutter
-      stellt besonders hohe Anforderungen an Kühlkette und Hygiene.
-  - question: Wie oft muss ein Nassfutterautomat gereinigt werden?
-    answer: >-
-      Futterschalen und alle Kontaktflächen sollten nach jeder Nassfutter-Nutzung vollständig gereinigt und getrocknet
-      werden. Deckel, Dichtungen, Kühlflächen und Mechanik müssen regelmäßig auf Rückstände kontrolliert werden.
-  - question: Ist App-Steuerung bei Nassfutter wichtig?
-    answer: >-
-      Sie erleichtert Zeitpläne und Statuskontrolle, löst aber weder Kühlungs- noch Hygieneprobleme. Eine lokale
-      Bedienung und zuverlässige Stromversorgung können wichtiger sein.
-  - question: Eignen sich Nassfutterautomaten für große Hunde?
-    answer: >-
-      Die hier verglichenen Modelle sind überwiegend für Katzen und kleine Hunde ausgelegt. Fachgröße, Standhöhe, Zugang
-      und benötigte Mahlzeitenmenge sind für große Hunde häufig zu knapp.
-  - question: Kann ein Nassfutterautomat eine tägliche Betreuung ersetzen?
-    answer: >-
-      Nein. Stromausfall, blockierte Deckel, verdorbenes Futter, Erbrechen oder Futterverweigerung bleiben möglich. Tier
-      und Gerät sollten auch bei automatischer Fütterung regelmäßig kontrolliert werden.
-heroImage:
-  src: ../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp
-  alt: Beste Futterautomaten für Nassfutter – redaktionelles Vergleichsbild
+  - question: "Welcher Futterautomat ist für Nassfutter insgesamt am ausgewogensten?"
+    answer: "Der PETLIBRO Polar ist im aktuellen Vergleich die ausgewogenste kompakte Lösung mit aktiver Kühlung. Er bietet drei Fächer mit je 200 ml und App-Zeitpläne, benötigt aber dauerhaft Netzstrom."
+  - question: "Welcher Nassfutterautomat bietet die meisten gekühlten Mahlzeiten?"
+    answer: "Der PetSafe FreshFeed besitzt sechs aktiv gekühlte Einsätze. Vor dem Kauf sollten die Verfügbarkeit in Deutschland, die konkrete Modellvariante und die fehlende dokumentierte Notstromlösung geprüft werden."
+  - question: "Was ist der Unterschied zwischen aktiver Kühlung und Kühlakkus?"
+    answer: "Aktive Kühlung führt laufend Wärme ab und kann eine Zieltemperatur anstreben. Kühlakkus speichern lediglich Kälte und werden mit der Zeit wärmer. Ihre Wirkung hängt stärker von Raumtemperatur, Ausgangstemperatur und Vorbereitung ab."
+  - question: "Welcher Nassfutterautomat funktioniert ohne WLAN?"
+    answer: "Der Cat Mate C500 wird direkt am Gerät programmiert und läuft mit AA-Batterien. Auch der SureFeed arbeitet lokal, bietet jedoch keine Zeitsteuerung."
+  - question: "Welches Modell funktioniert bei einem Stromausfall weiter?"
+    answer: "Cat Mate C500 und SureFeed arbeiten vollständig mit Batterien. Der Catit PIXI kann mit eingesetzten C-Batterien weiterlaufen. Aktiv gekühlte Modelle verlieren ohne Netzstrom ihre Kühlfunktion."
+  - question: "Sind sechs Fächer gleichbedeutend mit sechs späteren Mahlzeiten?"
+    answer: "Nicht immer. Bei Drehteller-Automaten ist das erste Fach häufig sofort zugänglich. Entscheidend ist deshalb die Zahl der später programmierbaren Öffnungen, nicht nur die Zahl der Fächer."
+  - question: "Welcher Automat verhindert Futterklau?"
+    answer: "Der SureFeed Microchip Pet Feeder öffnet nur für gespeicherte Mikrochips oder RFID-Anhänger. Die anderen Modelle im Vergleich kontrollieren nicht, welches Tier an das geöffnete Futter gelangt."
+  - question: "Ist der SureFeed ein richtiger Futterautomat?"
+    answer: "Nur eingeschränkt. Er portioniert nicht automatisch und öffnet nicht nach Zeitplan. Seine Aufgabe ist die Zugangskontrolle zu einer manuell eingefüllten Portion."
+  - question: "Wie lange darf Nassfutter im Automaten stehen?"
+    answer: "Eine pauschale sichere Zeit lässt sich nicht seriös nennen. Futterart, Ausgangstemperatur, Raumtemperatur, Kühlprinzip, Füllmenge und Hygiene verändern das Risiko erheblich. Herstellerhinweise und gegebenenfalls tierärztliche Empfehlungen haben Vorrang."
+  - question: "Reichen Kühlakkus im Sommer aus?"
+    answer: "Das lässt sich nicht allgemein zusagen. In warmen Räumen erwärmen sich Akkus und Futter schneller. Vor unbeaufsichtigter Nutzung sollte die Temperaturentwicklung mit dem eigenen Aufbau konservativ geprüft werden."
+  - question: "Kann ich Rohfutter in einem Nassfutterautomaten verwenden?"
+    answer: "Nur wenn der Hersteller das verwendete Modell und die konkrete Futterart ausdrücklich dafür freigibt. Rohfutter stellt besonders hohe Anforderungen an Kühlkette und Hygiene."
+  - question: "Wie oft muss ein Nassfutterautomat gereinigt werden?"
+    answer: "Futterschalen und alle Kontaktflächen sollten nach jeder Nassfutter-Nutzung vollständig gereinigt und getrocknet werden. Deckel, Dichtungen, Kühlflächen und Mechanik müssen regelmäßig auf Rückstände kontrolliert werden."
+  - question: "Ist App-Steuerung bei Nassfutter wichtig?"
+    answer: "Sie erleichtert Zeitpläne und Statuskontrolle, löst aber weder Kühlungs- noch Hygieneprobleme. Eine lokale Bedienung und zuverlässige Stromversorgung können wichtiger sein."
+  - question: "Eignen sich Nassfutterautomaten für große Hunde?"
+    answer: "Die hier verglichenen Modelle sind überwiegend für Katzen und kleine Hunde ausgelegt. Fachgröße, Standhöhe, Zugang und benötigte Mahlzeitenmenge sind für große Hunde häufig zu knapp."
+  - question: "Kann ein Nassfutterautomat eine tägliche Betreuung ersetzen?"
+    answer: "Nein. Stromausfall, blockierte Deckel, verdorbenes Futter, Erbrechen oder Futterverweigerung bleiben möglich. Tier und Gerät sollten auch bei automatischer Fütterung regelmäßig kontrolliert werden."
 ---
+
 Nassfutterautomaten lösen nicht alle dasselbe Problem. Einige Geräte **kühlen mehrere vorbereitete Portionen aktiv**, andere öffnen Fächer mit Kühlakkus zu bestimmten Zeiten. Mikrochip-Näpfe wiederum schützen eine Portion vor anderen Tieren, planen aber keine Mahlzeiten.
 
 Deshalb gibt es keinen pauschalen Testsieger für jeden Haushalt. Die erste Entscheidung lautet nicht „Welche App ist besser?“, sondern:

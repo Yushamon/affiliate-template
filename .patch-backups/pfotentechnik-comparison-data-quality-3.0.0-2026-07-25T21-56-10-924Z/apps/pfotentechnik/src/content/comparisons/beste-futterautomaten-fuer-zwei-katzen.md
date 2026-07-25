@@ -1,228 +1,153 @@
 ---
-title: Beste Futterautomaten für zwei Katzen
-slug: beste-futterautomaten-fuer-zwei-katzen
-type: comparison
-layout: comparison
-description: >-
-  Futterautomaten für zwei Katzen nach Zugangskontrolle, getrennten Futterplätzen, Futterarten, Portionierung, App und
-  Konfliktrisiko vergleichen.
+title: "Beste Futterautomaten für zwei Katzen"
+slug: "beste-futterautomaten-fuer-zwei-katzen"
+type: "comparison"
+layout: "comparison"
+description: "Futterautomaten für zwei Katzen nach Zugangskontrolle, getrennten Futterplätzen, Futterarten, Portionierung, App und Konfliktrisiko vergleichen."
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-25"
 author:
-  name: PfotenTechnik Redaktion
-  role: Redaktion
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 tags:
-  - Futterautomat
-  - Zwei Katzen
-  - Vergleich
-  - Mehrtierhaushalt
-  - Futterklau
+  - "Futterautomat"
+  - "Zwei Katzen"
+  - "Vergleich"
+  - "Mehrtierhaushalt"
+  - "Futterklau"
 hub:
   sections:
-    - vergleiche
-  title: Beste Futterautomaten für zwei Katzen
-  description: Lösungen für gleiche Rationen, getrennte Diäten, Futterklau und zwei Futterplätze.
-  icon: 🐾
+    - "vergleiche"
+  title: "Beste Futterautomaten für zwei Katzen"
+  description: "Lösungen für gleiche Rationen, getrennte Diäten, Futterklau und zwei Futterplätze."
+  icon: "🐾"
   order: 30
 seo:
   title: "Futterautomaten für 2 Katzen: 5 Systeme im Vergleich"
-  description: >-
-    Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung
-    und Schutz vor Futterklau.
-  canonical: /vergleiche/beste-futterautomaten-fuer-zwei-katzen/
+  description: "Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung und Schutz vor Futterklau."
+  canonical: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
   sitemap: true
   priority: 0.9
-  changefreq: monthly
-comparisonType: use-case
-group: Futterautomaten
-icon: 🐾
+  changefreq: "monthly"
+comparisonType: "use-case"
+group: "Futterautomaten"
+icon: "🐾"
 items:
-  - slug: surefeed-microchip-pet-feeder
-    label: SureFeed Microchip Pet Feeder
-    type: product
-    recommendation: Beste Wahl gegen Futterklau und für getrennte Rationen, wenn jede Katze einen kontrollierten Futterplatz benötigt.
-    values:
-      profil: Beste Zugangskontrolle ohne App
-      portionierung: Keine automatische Ausgabe; Napf wird manuell befüllt
-      app: Nein
-      ausfallsicherheit: Batteriebetrieb; keine WLAN-Abhängigkeit
-      zugangskontrolle: Mikrochip oder RFID-Halsbandanhänger
-      zahl-der-futterplatze: Ein kontrollierter Futterplatz pro Gerät
-      futterarten: Nass- und Trockenfutter
-      mehrkatzen-eignung: Sehr gut bei Diätfutter, Medikamenten und Futterklau
-      konfliktpotenzial: Niedrig bei sauberer Gewöhnung und getrennten Standorten
-      kostenlogik: Für zwei geschützte Plätze meist zwei Geräte nötig
-  - slug: surefeed-microchip-pet-feeder-connect
-    label: SureFeed Microchip Pet Feeder Connect
-    type: product
-    recommendation: >-
-      App-gestützte Mikrochip-Lösung für getrennte Rationen und Fressmuster, wenn zusätzliche Datenauswertung gewünscht
-      ist.
-    values:
-      profil: Beste Zugangskontrolle mit App
-      zugangskontrolle: Mikrochip oder RFID-Halsbandanhänger
-      zahl-der-futterplatze: Ein kontrollierter Futterplatz pro Gerät
-      futterarten: Nass- und Trockenfutter
-      portionierung: manuell eingefüllte Portion mit integrierter Waage; keine automatische Futterausgabe
-      mehrkatzen-eignung: Sehr gut für getrennte Rationen
-      konfliktpotenzial: Niedrig bei sauberer Gewöhnung
-      app: Ja; Connect-System und Hub erforderlich
-      ausfallsicherheit: Zugang bleibt batteriebetrieben; App-Daten benötigen Verbindung
-      kostenlogik: Höhere Systemkosten durch Connect-Komponenten und ggf. zwei Geräte
-  - slug: petkit-yumshare-dual-hopper
-    label: PETKIT YumShare Dual-Hopper 2
-    type: product
-    recommendation: Beste Wahl für zwei Trockenfuttersorten und Kameraüberblick, aber ohne echte Zugangssperre zwischen den Katzen.
-    values:
-      profil: Beste Zwei-Sorten-Lösung
-      zugangskontrolle: Tiererkennung und Kamera, aber keine physische Zugangssperre
-      zahl-der-futterplatze: Ein Auslass, zwei getrennte Futterkammern
-      futterarten: Zwei Trockenfuttersorten
-      portionierung: App-gesteuerte Mischung beziehungsweise Auswahl aus zwei Kammern
-      mehrkatzen-eignung: Gut für Sortenwechsel; ungeeignet für strikt getrennte Rationen
-      konfliktpotenzial: Mittel bis hoch bei Futterneid, da nur ein Futterplatz
-      app: PETKIT-App für iOS und Android
-      ausfallsicherheit: Netz- und App-Funktionen; Backup je Produktvariante prüfen
-      kostenlogik: Ein Gerät, aber keine sichere individuelle Trennung
-  - slug: oneisall-5l-automatic-cat-feeder
-    label: oneisall 5L Automatic Cat Feeder
-    type: product
-    recommendation: Preisorientierte Doppelschalen-Lösung für zwei ruhige Katzen mit gleichem Futter und ähnlicher Tagesration.
-    values:
-      profil: Beste einfache Doppelschale
-      portionierung: Bis zu mehrere zeitgesteuerte Mahlzeiten; reale Menge kalibrieren
-      ausfallsicherheit: Batterie-Backup laut Produktvariante
-      zugangskontrolle: Nein
-      zahl-der-futterplatze: Zwei Schalen aus einem gemeinsamen Vorrat
-      futterarten: Trockenfutter
-      mehrkatzen-eignung: Gut bei gleichem Futter und ähnlicher Ration
-      konfliktpotenzial: Mittel; eine schnelle Katze kann beide Schalen nutzen
-      app: je nach Variante
-      kostenlogik: Ein Gerät für zwei Futterplätze
-  - slug: petlibro-granary-wifi-feeder
-    label: PETLIBRO Granary WiFi Feeder
-    type: product
-    recommendation: Ausgewogener App-Automat mit optionaler Doppelschale, wenn beide Katzen dasselbe Trockenfutter erhalten.
-    values:
-      profil: Bester App-Allrounder mit Doppelschale
-      app: PETLIBRO-App; 2,4 und 5 GHz
-      ausfallsicherheit: Drei D-Batterien als Notstrom
-      zugangskontrolle: Keine individuelle Kontrolle
-      zahl-der-futterplatze: Einzel- oder Doppelschale je Variante
-      futterarten: Trockenfutter
-      portionierung: 1 bis 50 Portionen pro Mahlzeit
-      mehrkatzen-eignung: Gut bei gleichem Futter und ähnlicher Ration
-      konfliktpotenzial: Mittel; Doppelschale verhindert keinen Futterklau
-      kostenlogik: Ein Gerät, Doppelschalenvariante separat prüfen
+  - slug: "surefeed-microchip-pet-feeder"
+    label: "SureFeed Microchip Pet Feeder"
+    type: "product"
+    recommendation: "Beste Wahl gegen Futterklau und für getrennte Rationen, wenn jede Katze einen kontrollierten Futterplatz benötigt."
+    overrides:
+      profil: "Beste Zugangskontrolle ohne App"
+      portionierung: "Keine automatische Ausgabe; Napf wird manuell befüllt"
+      app: "Nein"
+      ausfallsicherheit: "Batteriebetrieb; keine WLAN-Abhängigkeit"
+  - slug: "surefeed-microchip-pet-feeder-connect"
+    label: "SureFeed Microchip Pet Feeder Connect"
+    type: "product"
+    recommendation: "App-gestützte Mikrochip-Lösung für getrennte Rationen und Fressmuster, wenn zusätzliche Datenauswertung gewünscht ist."
+    overrides:
+      profil: "Beste Zugangskontrolle mit App"
+  - slug: "petkit-yumshare-dual-hopper"
+    label: "PETKIT YumShare Dual-Hopper 2"
+    type: "product"
+    recommendation: "Beste Wahl für zwei Trockenfuttersorten und Kameraüberblick, aber ohne echte Zugangssperre zwischen den Katzen."
+    overrides:
+      profil: "Beste Zwei-Sorten-Lösung"
+  - slug: "oneisall-5l-automatic-cat-feeder"
+    label: "oneisall 5L Automatic Cat Feeder"
+    type: "product"
+    recommendation: "Preisorientierte Doppelschalen-Lösung für zwei ruhige Katzen mit gleichem Futter und ähnlicher Tagesration."
+    overrides:
+      profil: "Beste einfache Doppelschale"
+      portionierung: "Bis zu mehrere zeitgesteuerte Mahlzeiten; reale Menge kalibrieren"
+      ausfallsicherheit: "Batterie-Backup laut Produktvariante"
+  - slug: "petlibro-granary-wifi-feeder"
+    label: "PETLIBRO Granary WiFi Feeder"
+    type: "product"
+    recommendation: "Ausgewogener App-Automat mit optionaler Doppelschale, wenn beide Katzen dasselbe Trockenfutter erhalten."
+    overrides:
+      profil: "Bester App-Allrounder mit Doppelschale"
+      app: "PETLIBRO-App; 2,4 und 5 GHz"
+      ausfallsicherheit: "Drei D-Batterien als Notstrom"
 criteria:
-  - key: profil
-    label: Unsere Einordnung
-    description: Der wichtigste Mehrkatzen-Anwendungsfall des Modells.
+  - key: "profil"
+    label: "Unsere Einordnung"
+    description: "Der wichtigste Mehrkatzen-Anwendungsfall des Modells."
     weight: 1.5
-  - key: zugangskontrolle
-    label: Zugangskontrolle
-    description: Ob nur registrierte Tiere fressen dürfen oder der Zugang frei bleibt.
+  - key: "zugangskontrolle"
+    label: "Zugangskontrolle"
+    description: "Ob nur registrierte Tiere fressen dürfen oder der Zugang frei bleibt."
     weight: 1.7
-  - key: zahl-der-futterplatze
-    label: Futterplätze
-    description: Wie viele räumlich nutzbare oder kontrollierte Futterplätze tatsächlich vorhanden sind.
+  - key: "zahl-der-futterplatze"
+    label: "Futterplätze"
+    description: "Wie viele räumlich nutzbare oder kontrollierte Futterplätze tatsächlich vorhanden sind."
     weight: 1.4
-  - key: futterarten
-    label: Futterarten
+  - key: "futterarten"
+    label: "Futterarten"
     weight: 1.2
-  - key: portionierung
-    label: Portionierung
-    description: Automatische Ausgabe, manuelle Befüllung oder Sortenmischung.
+  - key: "portionierung"
+    label: "Portionierung"
+    description: "Automatische Ausgabe, manuelle Befüllung oder Sortenmischung."
     weight: 1.3
-  - key: mehrkatzen-eignung
-    label: Mehrkatzen-Eignung
-    description: Passung zu gleichen oder unterschiedlichen Rationen.
+  - key: "mehrkatzen-eignung"
+    label: "Mehrkatzen-Eignung"
+    description: "Passung zu gleichen oder unterschiedlichen Rationen."
     weight: 1.7
-  - key: konfliktpotenzial
-    label: Konfliktrisiko
-    description: Risiko für Futterklau, Drängeln oder Blockieren eines einzelnen Futterplatzes.
+  - key: "konfliktpotenzial"
+    label: "Konfliktrisiko"
+    description: "Risiko für Futterklau, Drängeln oder Blockieren eines einzelnen Futterplatzes."
     weight: 1.5
-  - key: app
-    label: App
+  - key: "app"
+    label: "App"
     weight: 0.7
-  - key: ausfallsicherheit
-    label: Ausfallsicherheit
+  - key: "ausfallsicherheit"
+    label: "Ausfallsicherheit"
     weight: 1.1
-  - key: kostenlogik
-    label: Systemaufwand
-    description: Ob ein Gerät genügt oder zwei geschützte Futterplätze nötig sind.
-    weight: 1
+  - key: "kostenlogik"
+    label: "Systemaufwand"
+    description: "Ob ein Gerät genügt oder zwei geschützte Futterplätze nötig sind."
+    weight: 1.0
 automaticRecommendations:
   enabled: false
 recommendation:
-  winnerSlug: surefeed-microchip-pet-feeder
-  alternativeSlug: petlibro-granary-wifi-feeder
-  title: SureFeed bei getrennten Rationen, PETLIBRO bei gleichem Futter
-  text: >-
-    SureFeed ist die stärkste Lösung, wenn Futterklau verhindert oder zwei Rationen sicher getrennt werden müssen. Für
-    zwei ruhige Katzen mit gleichem Trockenfutter ist ein Doppelschalen-Automat wie PETLIBRO oder oneisall komfortabler
-    und günstiger. PETKIT Dual-Hopper löst primär die Bevorratung zweier Futtersorten, nicht den geschützten Zugang.
-tableTitle: 5 Systeme für zwei Katzen direkt verglichen
-cardsTitle: Welches System passt zu Futterklau, Diät oder gleichem Futter?
+  winnerSlug: "surefeed-microchip-pet-feeder"
+  alternativeSlug: "petlibro-granary-wifi-feeder"
+  title: "SureFeed bei getrennten Rationen, PETLIBRO bei gleichem Futter"
+  text: "SureFeed ist die stärkste Lösung, wenn Futterklau verhindert oder zwei Rationen sicher getrennt werden müssen. Für zwei ruhige Katzen mit gleichem Trockenfutter ist ein Doppelschalen-Automat wie PETLIBRO oder oneisall komfortabler und günstiger. PETKIT Dual-Hopper löst primär die Bevorratung zweier Futtersorten, nicht den geschützten Zugang."
+tableTitle: "5 Systeme für zwei Katzen direkt verglichen"
+cardsTitle: "Welches System passt zu Futterklau, Diät oder gleichem Futter?"
 faq:
-  - question: Welcher Futterautomat ist für zwei Katzen insgesamt am besten?
-    answer: >-
-      Das hängt vom Problem ab. SureFeed ist am stärksten bei getrennten Rationen und Futterklau. PETLIBRO oder oneisall
-      passen besser, wenn beide Katzen dasselbe Trockenfutter ruhig nebeneinander fressen.
-  - question: Reicht eine Doppelschale für zwei Katzen?
-    answer: >-
-      Nur wenn beide dasselbe Futter, ähnliche Mengen und ein ruhiges Fressverhalten haben. Eine Doppelschale verhindert
-      nicht, dass eine Katze beide Näpfe leert.
-  - question: Braucht jede Katze einen eigenen Mikrochip-Napf?
-    answer: >-
-      Bei strikt getrennten Rationen sind häufig zwei kontrollierte Futterplätze sinnvoll. Ein einzelner geschützter
-      Napf kann genügen, wenn nur eine Ration vor der anderen Katze geschützt werden muss.
-  - question: Kann ein Dual-Hopper zwei Katzen getrennt füttern?
-    answer: >-
-      Er kann zwei Futtersorten getrennt bevorraten und mischen. Ohne physische Zugangssperre bleibt aber offen, welche
-      Katze die ausgegebene Portion frisst.
+  - question: "Welcher Futterautomat ist für zwei Katzen insgesamt am besten?"
+    answer: "Das hängt vom Problem ab. SureFeed ist am stärksten bei getrennten Rationen und Futterklau. PETLIBRO oder oneisall passen besser, wenn beide Katzen dasselbe Trockenfutter ruhig nebeneinander fressen."
+  - question: "Reicht eine Doppelschale für zwei Katzen?"
+    answer: "Nur wenn beide dasselbe Futter, ähnliche Mengen und ein ruhiges Fressverhalten haben. Eine Doppelschale verhindert nicht, dass eine Katze beide Näpfe leert."
+  - question: "Braucht jede Katze einen eigenen Mikrochip-Napf?"
+    answer: "Bei strikt getrennten Rationen sind häufig zwei kontrollierte Futterplätze sinnvoll. Ein einzelner geschützter Napf kann genügen, wenn nur eine Ration vor der anderen Katze geschützt werden muss."
+  - question: "Kann ein Dual-Hopper zwei Katzen getrennt füttern?"
+    answer: "Er kann zwei Futtersorten getrennt bevorraten und mischen. Ohne physische Zugangssperre bleibt aber offen, welche Katze die ausgegebene Portion frisst."
   - question: "Was ist wichtiger: zwei Schalen oder zwei getrennte Vorräte?"
-    answer: >-
-      Zwei Schalen schaffen räumlichen Abstand. Zwei Vorräte erlauben verschiedene Futtersorten. Beides ersetzt keine
-      individuelle Zugangskontrolle.
-  - question: Welches System eignet sich bei Diätfutter?
-    answer: >-
-      Ein Mikrochip-Napf ist am zuverlässigsten, weil nur das registrierte Tier Zugang erhält. Doppelschalen und Kameras
-      sichern die Ration nicht.
-  - question: Welches System eignet sich bei Medikamenten im Futter?
-    answer: >-
-      Auch hier ist ein geschützter Mikrochip-Futterplatz sinnvoll. Trotzdem muss kontrolliert werden, ob die
-      vollständige Dosis aufgenommen wurde.
-  - question: Kann eine Kamera Futterklau verhindern?
-    answer: Nein. Sie kann Situationen dokumentieren, aber eine andere Katze nicht physisch vom Napf fernhalten.
-  - question: Wie weit sollten zwei Futterplätze auseinanderstehen?
-    answer: >-
-      So weit, dass beide Katzen ohne Blickkontakt, Drängeln oder Blockieren fressen können. Bei Konflikten sind
-      getrennte Räume oft besser als zwei Näpfe nebeneinander.
-  - question: Kann eine Katze den Mikrochip-Napf der anderen blockieren?
-    answer: >-
-      Ja. Zugangskontrolle verhindert das Öffnen für das falsche Tier, aber nicht jedes soziale Blockieren. Standort und
-      Gewöhnung bleiben wichtig.
-  - question: Wie erkenne ich Futterstress?
-    answer: >-
-      Typische Hinweise sind hastiges Fressen, Warten in Distanz, Schalenwechsel, Verdrängen, Knurren, Rückzug oder
-      Gewichtsveränderungen.
-  - question: Sind App-Protokolle bei zwei Katzen zuverlässig?
-    answer: >-
-      Sie dokumentieren meist Ausgaben oder Geräteereignisse. Ohne sichere Tieridentifikation beweisen sie nicht, welche
-      Katze gefressen hat.
-  - question: Kann ich Nass- und Trockenfutter getrennt anbieten?
-    answer: >-
-      Mit zwei unabhängigen Mikrochip-Näpfen ist das möglich. Klassische Dual-Hopper sind in der Regel nur für zwei
-      Trockenfuttersorten gedacht.
-  - question: Wie gewöhne ich zwei Katzen an neue Futtertechnik?
-    answer: >-
-      Zuerst ausgeschaltet und offen, dann mit vertrautem Futter und kurzen Trainingseinheiten. Jede Katze sollte ohne
-      Konkurrenz positive Erfahrungen sammeln.
-heroImage:
-  src: ../../assets/images/products/surefeed-microchip-pet-feeder/comparison.webp
-  alt: Beste Futterautomaten für zwei Katzen – redaktionelles Vergleichsbild
+    answer: "Zwei Schalen schaffen räumlichen Abstand. Zwei Vorräte erlauben verschiedene Futtersorten. Beides ersetzt keine individuelle Zugangskontrolle."
+  - question: "Welches System eignet sich bei Diätfutter?"
+    answer: "Ein Mikrochip-Napf ist am zuverlässigsten, weil nur das registrierte Tier Zugang erhält. Doppelschalen und Kameras sichern die Ration nicht."
+  - question: "Welches System eignet sich bei Medikamenten im Futter?"
+    answer: "Auch hier ist ein geschützter Mikrochip-Futterplatz sinnvoll. Trotzdem muss kontrolliert werden, ob die vollständige Dosis aufgenommen wurde."
+  - question: "Kann eine Kamera Futterklau verhindern?"
+    answer: "Nein. Sie kann Situationen dokumentieren, aber eine andere Katze nicht physisch vom Napf fernhalten."
+  - question: "Wie weit sollten zwei Futterplätze auseinanderstehen?"
+    answer: "So weit, dass beide Katzen ohne Blickkontakt, Drängeln oder Blockieren fressen können. Bei Konflikten sind getrennte Räume oft besser als zwei Näpfe nebeneinander."
+  - question: "Kann eine Katze den Mikrochip-Napf der anderen blockieren?"
+    answer: "Ja. Zugangskontrolle verhindert das Öffnen für das falsche Tier, aber nicht jedes soziale Blockieren. Standort und Gewöhnung bleiben wichtig."
+  - question: "Wie erkenne ich Futterstress?"
+    answer: "Typische Hinweise sind hastiges Fressen, Warten in Distanz, Schalenwechsel, Verdrängen, Knurren, Rückzug oder Gewichtsveränderungen."
+  - question: "Sind App-Protokolle bei zwei Katzen zuverlässig?"
+    answer: "Sie dokumentieren meist Ausgaben oder Geräteereignisse. Ohne sichere Tieridentifikation beweisen sie nicht, welche Katze gefressen hat."
+  - question: "Kann ich Nass- und Trockenfutter getrennt anbieten?"
+    answer: "Mit zwei unabhängigen Mikrochip-Näpfen ist das möglich. Klassische Dual-Hopper sind in der Regel nur für zwei Trockenfuttersorten gedacht."
+  - question: "Wie gewöhne ich zwei Katzen an neue Futtertechnik?"
+    answer: "Zuerst ausgeschaltet und offen, dann mit vertrautem Futter und kurzen Trainingseinheiten. Jede Katze sollte ohne Konkurrenz positive Erfahrungen sammeln."
 ---
+
 Bei zwei Katzen ist nicht die Behältergröße die wichtigste Frage, sondern:
 
 > **Müssen beide Katzen nur gleichzeitig fressen können – oder müssen ihre Rationen wirklich getrennt bleiben?**
