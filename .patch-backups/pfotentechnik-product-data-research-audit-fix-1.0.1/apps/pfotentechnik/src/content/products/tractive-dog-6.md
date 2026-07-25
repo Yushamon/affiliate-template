@@ -10,7 +10,7 @@ recommendation: "Starker GPS-Allrounder für kleine und mittelgroße Hunde, wenn
 manufacturer: { key: "tractive", name: "Tractive", slug: "tractive" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-24"
 author: { name: "PfotenTechnik Redaktion" }
 seo:
   title: "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check"
@@ -96,10 +96,8 @@ specs:
   - { label: "WLAN", value: "2,4 GHz für Energiesparzonen" }
   - { label: "Bluetooth", value: "Bluetooth 5.0" }
   - { label: "Akkulaufzeit", value: "Bis zu 14 Tage mit Energiesparzonen" }
-  - { label: "Stromversorgung", value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel" }
   - { label: "Akku", value: "Integrierter Akku, laut Support 930 mAh" }
   - { label: "Laden", value: "Mitgeliefertes USB-C-Ladekabel" }
-  - { label: "Material", value: "Glasfaserverstärktes Gehäuse laut Hersteller" }
   - { label: "Wasserschutz", value: "IP68" }
   - { label: "Abmessungen", value: "71 × 29 × 17 mm" }
   - { label: "Gewicht", value: "Rund 39 g" }

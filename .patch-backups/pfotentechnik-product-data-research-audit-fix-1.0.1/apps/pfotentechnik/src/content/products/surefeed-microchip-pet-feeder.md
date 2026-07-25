@@ -17,7 +17,7 @@ category:
   path: "/smarte-futterautomaten/"
 productUrl: "/produkt/surefeed-microchip-pet-feeder/"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-17"
 author:
   name: "PfotenTechnik Redaktion"
 seo:
@@ -94,7 +94,7 @@ weaknesses:
   - "mehrere getrennt gefütterte Tiere benötigen meist mehrere Geräte"
 experience:
   summary: "Der größte Mehrwert ist nicht Automatisierung, sondern die zuverlässige Begrenzung des Futterzugangs."
-  methodology: "Redaktionelle Einordnung anhand der offiziellen Sure-Petcare-Produkt- und Supportinformationen, zuletzt geprüft am 25.07.2026; kein eigener Langzeittest."
+  methodology: "Redaktionelle Einordnung anhand der offiziellen Sure-Petcare-Produktinformationen; kein eigener Langzeittest."
   maintenance: "Napf, Matte und bewegliche Deckelbereiche regelmäßig reinigen. Sensorbogen und Mechanik trocken halten."
 alternatives:
   - "petlibro-polar-wet-food-feeder"
@@ -126,14 +126,12 @@ specs:
     value: "Katzen und kleine Hunde"
   - label: "Portionierung"
     value: "manuell eingefüllte Napfportion; keine automatische Dosierung"
-  - { label: "Napf", value: "Ein grauer Einzelnapf und ein grauer geteilter Napf enthalten; Edelstahl-Näpfe separat erhältlich" }
-  - { label: "Napfmaße", value: "Innenmaß etwa 105 × 160 × 30 mm (B × H × T)" }
-  - { label: "Reinigung", value: "Näpfe und Matte entnehmbar; bewegliche Mechanik gemäß Herstelleranleitung reinigen und trocken halten" }
-  - { label: "WLAN", value: "Nein; die Standardversion arbeitet lokal ohne App oder Hub" }
-  - { label: "Batterie", value: "4 C-Batterien; bis zu 6 Monate laut Hersteller; Batterien nicht enthalten" }
-  - { label: "Maße", value: "200 × 230 × 320 mm (H × B × T)" }
-  - { label: "Öffnung", value: "210 × 155 mm (B × H)" }
-  - { label: "Gewicht", value: "Vom Hersteller nicht veröffentlicht" }
+  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
+  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
 faq:
   - question: "Funktioniert der SureFeed mit dem implantierten Mikrochip?"
     answer: "Ja. Kompatible Mikrochipnummern können direkt gespeichert werden. Alternativ ist ein RFID-Halsbandanhänger nutzbar."

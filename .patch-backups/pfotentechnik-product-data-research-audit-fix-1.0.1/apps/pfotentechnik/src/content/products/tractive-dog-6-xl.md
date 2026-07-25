@@ -10,7 +10,7 @@ recommendation: "Die stärkste Tractive-Option für große Hunde, wenn eine sehr
 manufacturer: { key: "tractive", name: "Tractive", slug: "tractive" }
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-24"
 author: { name: "PfotenTechnik Redaktion" }
 seo:
   title: "Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check"
@@ -97,16 +97,14 @@ specs:
   - { label: "WLAN", value: "2,4 GHz für Energiesparzonen" }
   - { label: "Bluetooth", value: "Bluetooth 5.0" }
   - { label: "Akkulaufzeit", value: "Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne" }
-  - { label: "Stromversorgung", value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel" }
   - { label: "Laden", value: "Integrierter Akku, mitgeliefertes USB-C-Ladekabel" }
   - { label: "Wasserschutz", value: "IP68" }
-  - { label: "Abmessungen", value: "83 × 47 × 20 mm" }
+  - { label: "Abmessungen", value: "Etwa 84 × 48 × 20 mm" }
   - { label: "Gewicht", value: "Rund 70 g" }
   - { label: "Geeignet für", value: "Hunde ab 20 kg" }
   - { label: "Befestigung", value: "Clip für Halsbänder bis etwa 4 cm Breite" }
   - { label: "Gesundheitstrends", value: "Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten" }
   - { label: "Gehäuse", value: "Verstärktes, laut Hersteller glasfaserverstärktes Design" }
-  - { label: "Material", value: "Glasfaserverstärktes Gehäuse laut Hersteller" }
 gps:
   animal: ["dog"]
   minimumPetWeightKg: 20

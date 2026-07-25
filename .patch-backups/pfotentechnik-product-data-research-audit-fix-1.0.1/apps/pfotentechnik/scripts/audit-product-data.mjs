@@ -12,17 +12,6 @@ const productsDir = path.join(appRoot, "src/content/products");
 const reportsDir = path.join(appRoot, "reports");
 const strict = process.argv.includes("--strict");
 
-const UNKNOWN_VALUE_PATTERNS = [
-  /^nicht (?:vom hersteller )?(?:konkret )?ausgewiesen$/i,
-  /^vom hersteller nicht veröffentlicht$/i,
-  /^nicht dokumentiert$/i,
-  /^unbekannt$/i,
-  /^keine angabe$/i,
-  /^keine herstellerangabe$/i,
-  /^offen$/i,
-  /^n\/a$/i
-];
-
 const CATEGORY_RULES = {
   futterautomaten: {
     requiredSpecs: [
@@ -71,7 +60,7 @@ const CATEGORY_RULES = {
       ["reichweite", "funkreichweite"],
       ["abo", "abonnement"],
       ["akkulaufzeit", "akku"],
-      ["stromversorgung", "betrieb", "akku", "laden"],
+      ["stromversorgung", "betrieb"],
       ["geeignet für", "geeignet fuer", "zielgruppe"],
       ["befestigung", "halsband"]
     ],
@@ -82,7 +71,7 @@ const CATEGORY_RULES = {
       ["wasserschutz", "wasserdicht", "ip-schutz"],
       ["abmessungen", "maße", "masse"],
       ["gewicht"],
-      ["material", "gehäuse", "gehaeuse"]
+      ["material"]
     ]
   }
 };
@@ -202,20 +191,14 @@ function auditProduct(product) {
   const rules = CATEGORY_RULES[product.category];
   if (rules) {
     for (const aliases of rules.requiredSpecs) {
-      const status = getSpecStatus(product.specs, aliases);
-      if (status === "missing") {
+      if (!hasSpec(product.specs, aliases)) {
         errors.push(`Vergleichsfeld fehlt: ${aliases[0]}`);
-      } else if (status === "unknown") {
-        warnings.push(`Vergleichsfeld unbestätigt: ${aliases[0]}`);
       }
     }
 
     for (const aliases of rules.recommendedSpecs) {
-      const status = getSpecStatus(product.specs, aliases);
-      if (status === "missing") {
+      if (!hasSpec(product.specs, aliases)) {
         warnings.push(`Empfohlenes Feld fehlt: ${aliases[0]}`);
-      } else if (status === "unknown") {
-        warnings.push(`Empfohlenes Feld unbestätigt: ${aliases[0]}`);
       }
     }
   }
@@ -230,11 +213,6 @@ function auditProduct(product) {
     errors,
     warnings,
     specs: product.specs,
-    unknownSpecs: product.specs
-      .filter((spec) => isUnknownSpecValue(spec.value))
-      .map((spec) => spec.label),
-    structuralCompleteness: calculateStructuralCompleteness(product, rules),
-    confirmedCompleteness: calculateConfirmedCompleteness(product, rules),
     completeness: calculateCompleteness(errors, warnings)
   };
 }
@@ -301,51 +279,14 @@ function calculateCompleteness(errors, warnings) {
   return Math.max(0, 100 - errors.length * 10 - warnings.length * 3);
 }
 
-function matchingSpecs(specs, aliases) {
+function hasSpec(specs, aliases) {
   const normalizedAliases = aliases.map(normalize);
-  return specs.filter((spec) => {
+  return specs.some((spec) => {
     const label = normalize(spec.label);
     return normalizedAliases.some(
       (alias) => label === alias || label.includes(alias)
     );
   });
-}
-
-function isUnknownSpecValue(value) {
-  const normalized = String(value ?? "").trim();
-  return !normalized || UNKNOWN_VALUE_PATTERNS.some((pattern) => pattern.test(normalized));
-}
-
-function getSpecStatus(specs, aliases) {
-  const matches = matchingSpecs(specs, aliases);
-  if (matches.length === 0) return "missing";
-  return matches.some((spec) => !isUnknownSpecValue(spec.value))
-    ? "confirmed"
-    : "unknown";
-}
-
-function hasSpec(specs, aliases) {
-  return matchingSpecs(specs, aliases).length > 0;
-}
-
-function calculateStructuralCompleteness(product, rules) {
-  if (!rules) return 100;
-  const groups = [...rules.requiredSpecs, ...rules.recommendedSpecs];
-  if (groups.length === 0) return 100;
-  const present = groups.filter((aliases) =>
-    getSpecStatus(product.specs, aliases) !== "missing"
-  ).length;
-  return Math.round((present / groups.length) * 100);
-}
-
-function calculateConfirmedCompleteness(product, rules) {
-  if (!rules) return 100;
-  const groups = [...rules.requiredSpecs, ...rules.recommendedSpecs];
-  if (groups.length === 0) return 100;
-  const confirmed = groups.filter((aliases) =>
-    getSpecStatus(product.specs, aliases) === "confirmed"
-  ).length;
-  return Math.round((confirmed / groups.length) * 100);
 }
 
 function parseProduct(frontmatter, source, file) {
