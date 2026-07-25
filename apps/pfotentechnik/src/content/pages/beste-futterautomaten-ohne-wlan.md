@@ -62,3 +62,21 @@ Prüfe Display, Uhrzeit, Batteriestand und manuelle Bedienung. Bei Vorratsautoma
 ## Methodik und interne Links
 
 Die Einordnung basiert auf Funktionsprinzip, Herstellerangaben, Stromkonzept und Futterart. Keine Seite zeigt statische Preise oder verspricht medizinische Wirkungen. Vertiefend helfen [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/), [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/) und [Smarte Futterautomaten](/smarte-futterautomaten/). Hersteller-Hubs: [Cat Mate](/hersteller/cat-mate/), [SureFeed](/hersteller/surefeed/) und [IMIPAW](/hersteller/imipaw/).
+
+## Quellen und redaktionelle Grundlage
+
+Diese Kaufberatung wurde anhand von Herstellerdokumentationen, Bedienungsanleitungen und veterinärmedizinischen Empfehlungen zur sicheren Fütterung und Futterhygiene erstellt. Die Bewertung berücksichtigt insbesondere das Steuerungsprinzip, die Stromversorgung, die Eignung für verschiedene Futterarten sowie den praktischen Einsatz im Alltag.
+
+### Primärquellen
+
+- Cat Mate – Bedienungsanleitungen und Produktdokumentation (Cat Mate C500)
+- Sure Petcare – Bedienungsanleitungen und Produktdokumentation (SureFeed Microchip Pet Feeder)
+- IMIPAW – Produktdokumentation und technische Herstellerangaben
+
+### Fachliche Grundlagen
+
+- WSAVA (World Small Animal Veterinary Association): Empfehlungen zur Fütterung von Hund und Katze
+- FEDIAF – Nutritional Guidelines for Complete and Complementary Pet Food
+- AAHA (American Animal Hospital Association): Empfehlungen zur sicheren Fütterung und zum Fütterungsmanagement
+
+> **Redaktioneller Hinweis:** Ein automatischer Futterautomat ersetzt keine regelmäßige Gesundheitskontrolle des Tieres. Veränderungen von Appetit, Trinkverhalten oder Körpergewicht sollten tierärztlich abgeklärt werden.

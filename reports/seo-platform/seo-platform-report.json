@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-24T11:33:26.687Z",
-  "errors": 1,
-  "warnings": 37,
+  "generatedAt": "2026-07-25T17:44:47.078Z",
+  "errors": 3,
+  "warnings": 36,
   "portfolio": [],
   "documents": [
     {
@@ -14,9 +14,9 @@
         "slug": "beste-futterautomaten-fuer-hunde",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Futterautomaten für Hunde nach Ausgabemenge, Krokettengröße, Stabilität, App und Stromreserve vergleichen.",
+        "description": "Futterautomaten für Hunde nach realer Portionsleistung, Krokettengröße, Napfergonomie, Stabilität, App und Stromreserve vergleichen.",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -32,16 +32,16 @@
             "vergleiche"
           ],
           "title": "Beste Futterautomaten für Hunde",
-          "description": "Automaten mit passenden Portionsgrößen, stabiler Bauweise und ausreichender Kapazität.",
+          "description": "Automaten mit passender Portionsleistung, geeigneter Napfhöhe und belastbarer Ausfallsicherheit.",
           "icon": "🐕",
           "order": 20
         },
         "seo": {
-          "title": "Beste Futterautomaten für Hunde im Vergleich",
-          "description": "Futterautomaten für Hunde im Vergleich: Xiaomi, Petlibro, WOPET und HoneyGuardian nach Größe, Portionen und Zuverlässigkeit.",
+          "title": "Beste Futterautomaten für Hunde im Vergleich 2026",
+          "description": "Futterautomaten für Hunde vergleichen: Xiaomi, PETLIBRO, WOPET und HoneyGuardian nach Portion, Krokettengröße, Napf, Notstrom und App.",
           "canonical": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.9,
           "changefreq": "monthly"
         },
         "comparisonType": "use-case",
@@ -49,7 +49,7 @@
         "icon": "🐕",
         "heroImage": {
           "src": "../../assets/images/editorial/dog-automatic-feeder.webp",
-          "alt": "Hund neben einem automatischen Futterautomaten"
+          "alt": "Hund neben mehreren automatischen Futterautomaten im redaktionellen Vergleich"
         },
         "items": [
           "slug: \"xiaomi-smart-pet-food-feeder-2",
@@ -58,23 +58,41 @@
           "slug: \"honeyguardian-smart-pet-feeder-s305d"
         ],
         "criteria": [
+          "key: \"redaktionellesprofil",
+          "key: \"hundegroesse",
           "key: \"portionierung",
           "key: \"krokettengroesse",
           "key: \"napf",
           "key: \"kapazitaet",
           "key: \"app",
-          "key: \"notstrom"
+          "key: \"notstrom",
+          "key: \"kamera",
+          "key: \"tiertrennung"
         ],
-        "recommendation": {
-          "winnerSlug": "xiaomi-smart-pet-food-feeder-2",
-          "title": "Xiaomi für Übersicht, Petlibro für ausgewogene Bedienung",
-          "text": "Beide eignen sich vor allem für kleine bis mittelgroße Hunde. WOPET punktet beim Vorrat, HoneyGuardian beim Preis-Leistungs-Ansatz."
+        "automaticRecommendations": {
+          "enabled": true
         },
-        "tableTitle": "Vier Hunde-Futterautomaten verglichen",
-        "cardsTitle": "Modelle für unterschiedliche Haushalte",
+        "recommendation": {
+          "winnerSlug": "petlibro-granary-wifi-feeder",
+          "alternativeSlug": "xiaomi-smart-pet-food-feeder-2",
+          "title": "PETLIBRO als Allrounder, Xiaomi für Napfübersicht",
+          "text": "Der PETLIBRO Granary WiFi bietet im Kernvergleich den ausgewogensten Mix aus Portionsspanne, 2,4-/5-GHz-WLAN, Notstrom und Bedienung. Xiaomi ist stärker, wenn der verbleibende Napfinhalt und die Einbindung in Xiaomi Home wichtiger sind. Für große Hunde bleibt bei allen vier Modellen eine individuelle Prüfung von Napf, Standhöhe, Krokettengröße und maximaler Mahlzeit notwendig."
+        },
+        "tableTitle": "Vier Futterautomaten für Hunde im Leistungscheck",
+        "cardsTitle": "Die besten Modelle nach Nutzungsszenario",
         "faq": [
+          "question: \"Welcher Futterautomat ist für Hunde insgesamt am ausgewogensten?",
+          "question: \"Welcher Automat eignet sich am besten für Xiaomi-Home-Nutzer?",
           "question: \"Eignen sich Katzen-Futterautomaten für Hunde?",
-          "question: \"Ist ein 6-Liter-Behälter automatisch besser für große Hunde?"
+          "question: \"Ist ein 6-Liter-Behälter automatisch besser für große Hunde?",
+          "question: \"Wie prüfe ich die tatsächliche Portionsgröße?",
+          "question: \"Kann ein App-Protokoll bestätigen, dass mein Hund gefressen hat?",
+          "question: \"Braucht ein Futterautomat für Hunde eine Kamera?",
+          "question: \"Was bringt ein Batterie-Backup?",
+          "question: \"Ist eine Doppelschale für zwei Hunde ausreichend?",
+          "question: \"Welche Krokettengröße ist wichtig?",
+          "question: \"Wie oft muss ein Futterautomat gereinigt werden?",
+          "question: \"Kann ein Futterautomat eine passende Tagesration berechnen?"
         ]
       },
       "issues": []
@@ -89,9 +107,9 @@
         "slug": "beste-futterautomaten-fuer-katzen",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Futterautomaten für Katzen nach Futterart, Portionierung, App, Zugang und Mehrkatzen-Eignung vergleichen.",
+        "description": "Futterautomaten für Katzen nach Futterart, kleinster Portion, App, Stromreserve, Futterzugang und Mehrkatzen-Eignung vergleichen.",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-23",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -100,23 +118,24 @@
           "Futterautomat",
           "Katze",
           "Vergleich",
-          "Kaufberatung"
+          "Kaufberatung",
+          "Mehrkatzenhaushalt"
         ],
         "hub": {
           "sections": [
             "vergleiche"
           ],
           "title": "Beste Futterautomaten für Katzen",
-          "description": "Modelle für Portionierung, App-Steuerung, Kamera und unterschiedliche Futterarten.",
+          "description": "Die besten Lösungen für Trockenfutter, Nassfutter, App-Steuerung und getrennte Rationen.",
           "icon": "🐈",
           "order": 10
         },
         "seo": {
-          "title": "Beste Futterautomaten für Katzen im Vergleich",
-          "description": "Futterautomaten für Katzen im Vergleich: Petlibro, PETKIT, Xiaomi, SureFeed, Cat Mate und oneisall verständlich eingeordnet.",
+          "title": "Beste Futterautomaten für Katzen im Vergleich 2026",
+          "description": "PETLIBRO, PETKIT, Xiaomi, Cat Mate, SureFeed und oneisall nach Futterart, Portionierung, Zugang, App und Ausfallsicherheit vergleichen.",
           "canonical": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.9,
           "changefreq": "monthly"
         },
         "comparisonType": "use-case",
@@ -131,24 +150,137 @@
           "slug: \"oneisall-5l-automatic-cat-feeder"
         ],
         "criteria": [
+          "key: \"profil",
           "key: \"futterart",
           "key: \"portionierung",
           "key: \"zugang",
+          "key: \"mehrkatzen",
           "key: \"app",
+          "key: \"ausfallsicherheit",
           "key: \"reinigung",
-          "key: \"ausfallsicherheit"
+          "key: \"kamera",
+          "key: \"besonderheit"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "petlibro-granary-wifi-feeder",
-          "title": "Granary WiFi ist der ausgewogenste Trockenfutter-Allrounder",
-          "text": "Für Nassfutter und Mehrtierhaushalte sind andere Bauarten sinnvoller. Deshalb ist die Gesamtwahl kein Ersatz für die Auswahl nach Futterart und Zugang."
+          "alternativeSlug": "surefeed-microchip-pet-feeder",
+          "title": "PETLIBRO für Trockenfutter, SureFeed für getrennte Rationen",
+          "text": "Der PETLIBRO Granary WiFi ist der ausgewogenste klassische Trockenfutterautomat. Er ist jedoch nicht die beste Wahl für jeden Haushalt: SureFeed gewinnt bei Futterklau und Spezialdiäten, Cat Mate C500 bei zeitgesteuertem Nassfutter, Xiaomi bei Napfübersicht und oneisall bei einer einfachen Doppelschalen-Lösung."
         },
-        "tableTitle": "Sechs Katzen-Futterautomaten verglichen",
-        "cardsTitle": "Empfehlungen nach Einsatzbereich",
+        "tableTitle": "Sechs Katzen-Futterautomaten nach Aufgabe verglichen",
+        "cardsTitle": "Die besten Modelle für unterschiedliche Haushalte",
         "faq": [
+          "question: \"Welcher Futterautomat ist für Katzen insgesamt am ausgewogensten?",
           "question: \"Welcher Futterautomat eignet sich für Nassfutter?",
           "question: \"Welcher Automat verhindert Futterklau?",
-          "question: \"Wie viele Mahlzeiten sollte der Automat ausgeben?"
+          "question: \"Welcher Futterautomat ist für zwei Katzen geeignet?",
+          "question: \"Ist eine Doppelschale dasselbe wie individuelle Tiererkennung?",
+          "question: \"Was misst der Wiegenapf des Xiaomi-Automaten?",
+          "question: \"Wie genau sind Portionsangaben in Gramm?",
+          "question: \"Wie kalibriere ich einen Trockenfutterautomaten?",
+          "question: \"Funktionieren smarte Futterautomaten ohne Internet?",
+          "question: \"Braucht ein Katzen-Futterautomat eine Kamera?",
+          "question: \"Wie wichtig ist ein Batterie-Backup?",
+          "question: \"Wie oft muss ein Futterautomat gereinigt werden?",
+          "question: \"Kann ein Futterautomat die richtige Tagesration berechnen?",
+          "question: \"Kann ich mich während eines Urlaubs allein auf den Automaten verlassen?"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
+      "slug": "beste futterautomaten fuer nassfutter",
+      "title": "Beste Futterautomaten für Nassfutter",
+      "type": "comparison",
+      "data": {
+        "title": "Beste Futterautomaten für Nassfutter",
+        "slug": "beste-futterautomaten-fuer-nassfutter",
+        "type": "comparison",
+        "layout": "comparison",
+        "description": "Nassfutterautomaten nach Kühlprinzip, Mahlzeitenzahl, Hygiene, Stromausfallsicherheit, App und Zugangskontrolle vergleichen.",
+        "publishedAt": "2026-07-10",
+        "updatedAt": "2026-07-24",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
+        "tags": [
+          "Futterautomat",
+          "Nassfutter",
+          "Katze",
+          "Kleiner Hund",
+          "Vergleich",
+          "Kühlung"
+        ],
+        "hub": {
+          "sections": [
+            "vergleiche"
+          ],
+          "title": "Beste Futterautomaten für Nassfutter",
+          "description": "Aktiv gekühlte Modelle, Fachautomaten mit Kühlakkus und Lösungen für getrennte Nassfutterrationen.",
+          "icon": "🥣",
+          "order": 30
+        },
+        "seo": {
+          "title": "Beste Nassfutterautomaten im Vergleich 2026",
+          "description": "PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und Ausfallsicherheit vergleichen.",
+          "canonical": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "sitemap": true,
+          "priority": 0.9,
+          "changefreq": "monthly"
+        },
+        "comparisonType": "use-case",
+        "group": "Futterautomaten",
+        "icon": "🥣",
+        "items": [
+          "slug: \"petlibro-polar-wet-food-feeder",
+          "slug: \"petsafe-freshfeed-refrigerated-feeder",
+          "slug: \"catit-pixi-smart-6-meal-feeder",
+          "slug: \"cat-mate-c500",
+          "slug: \"surefeed-microchip-pet-feeder"
+        ],
+        "criteria": [
+          "key: \"profil",
+          "key: \"kuehlprinzip",
+          "key: \"mahlzeiten",
+          "key: \"steuerung",
+          "key: \"stromversorgung",
+          "key: \"hygiene",
+          "key: \"tiertrennung",
+          "key: \"geeignetfuer",
+          "key: \"wichtigstegrenze"
+        ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
+        "recommendation": {
+          "winnerSlug": "petlibro-polar-wet-food-feeder",
+          "alternativeSlug": "cat-mate-c500",
+          "title": "PETLIBRO für aktive Kühlung, Cat Mate für einfache Offline-Zeitsteuerung",
+          "text": "Der PETLIBRO Polar ist die ausgewogenste kompakte Lösung, wenn drei aktiv gekühlte Mahlzeiten und App-Steuerung genügen. Der Cat Mate C500 ist die pragmatische Alternative ohne WLAN, arbeitet jedoch nur mit Kühlakkus. Der PetSafe FreshFeed bietet technisch mehr gekühlte Fächer, sollte wegen Verfügbarkeit und geringer Langzeiterfahrung aber besonders sorgfältig geprüft werden."
+        },
+        "tableTitle": "Fünf Nassfutter-Lösungen nach Kühlung und Aufgabe verglichen",
+        "cardsTitle": "Die besten Modelle nach Nutzungsszenario",
+        "faq": [
+          "question: \"Welcher Futterautomat ist für Nassfutter insgesamt am ausgewogensten?",
+          "question: \"Welcher Nassfutterautomat bietet die meisten gekühlten Mahlzeiten?",
+          "question: \"Was ist der Unterschied zwischen aktiver Kühlung und Kühlakkus?",
+          "question: \"Welcher Nassfutterautomat funktioniert ohne WLAN?",
+          "question: \"Welches Modell funktioniert bei einem Stromausfall weiter?",
+          "question: \"Sind sechs Fächer gleichbedeutend mit sechs späteren Mahlzeiten?",
+          "question: \"Welcher Automat verhindert Futterklau?",
+          "question: \"Ist der SureFeed ein richtiger Futterautomat?",
+          "question: \"Wie lange darf Nassfutter im Automaten stehen?",
+          "question: \"Reichen Kühlakkus im Sommer aus?",
+          "question: \"Kann ich Rohfutter in einem Nassfutterautomaten verwenden?",
+          "question: \"Wie oft muss ein Nassfutterautomat gereinigt werden?",
+          "question: \"Ist App-Steuerung bei Nassfutter wichtig?",
+          "question: \"Eignen sich Nassfutterautomaten für große Hunde?",
+          "question: \"Kann ein Nassfutterautomat eine tägliche Betreuung ersetzen?"
         ]
       },
       "issues": []
@@ -163,9 +295,9 @@
         "slug": "beste-futterautomaten-fuer-zwei-katzen",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Futterautomaten für zwei Katzen nach Zugangskontrolle, Doppelschale, getrennten Vorräten und App-Funktionen vergleichen.",
+        "description": "Futterautomaten für zwei Katzen nach Zugangskontrolle, getrennten Futterplätzen, Futterarten, Portionierung, App und Konfliktrisiko vergleichen.",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -174,23 +306,24 @@
           "Futterautomat",
           "Zwei Katzen",
           "Vergleich",
-          "Mehrtierhaushalt"
+          "Mehrtierhaushalt",
+          "Futterklau"
         ],
         "hub": {
           "sections": [
             "vergleiche"
           ],
           "title": "Beste Futterautomaten für zwei Katzen",
-          "description": "Lösungen für Mehrkatzenhaushalte, getrennte Portionen und kontrollierten Futterzugang.",
+          "description": "Lösungen für gleiche Rationen, getrennte Diäten, Futterklau und zwei Futterplätze.",
           "icon": "🐾",
           "order": 30
         },
         "seo": {
-          "title": "Beste Futterautomaten für zwei Katzen im Vergleich",
-          "description": "Futterautomaten für zwei Katzen: SureFeed, PETKIT, oneisall und Petlibro nach Zugang, Doppelschale und Portionierung verglichen.",
+          "title": "Beste Futterautomaten für zwei Katzen im Vergleich 2026",
+          "description": "SureFeed, PETKIT, oneisall und PETLIBRO für zwei Katzen nach Zugang, Futterplätzen, Portionierung und Mehrkatzen-Eignung vergleichen.",
           "canonical": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.9,
           "changefreq": "monthly"
         },
         "comparisonType": "use-case",
@@ -204,24 +337,43 @@
           "slug: \"petlibro-granary-wifi-feeder"
         ],
         "criteria": [
+          "key: \"profil",
           "key: \"zugangskontrolle",
           "key: \"zahl-der-futterplatze",
           "key: \"futterarten",
           "key: \"portionierung",
+          "key: \"mehrkatzen-eignung",
+          "key: \"konfliktpotenzial",
           "key: \"app",
-          "key: \"reinigung"
+          "key: \"ausfallsicherheit",
+          "key: \"kostenlogik"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "surefeed-microchip-pet-feeder",
-          "title": "Mikrochip-Zugang bei unterschiedlichen Rationen",
-          "text": "SureFeed ist die stärkste Lösung gegen Futterklau. Für ähnlich fressende Katzen können Dual-Hopper oder Doppelschale komfortabler und günstiger sein."
+          "alternativeSlug": "petlibro-granary-wifi-feeder",
+          "title": "SureFeed bei getrennten Rationen, PETLIBRO bei gleichem Futter",
+          "text": "SureFeed ist die stärkste Lösung, wenn Futterklau verhindert oder zwei Rationen sicher getrennt werden müssen. Für zwei ruhige Katzen mit gleichem Trockenfutter ist ein Doppelschalen-Automat wie PETLIBRO oder oneisall komfortabler und günstiger. PETKIT Dual-Hopper löst primär die Bevorratung zweier Futtersorten, nicht den geschützten Zugang."
         },
-        "tableTitle": "Fünf Lösungen für zwei Katzen",
-        "cardsTitle": "Modelle für Mehrkatzenhaushalte",
+        "tableTitle": "Fünf Lösungen für zwei Katzen nach Konfliktlage",
+        "cardsTitle": "Die besten Modelle für unterschiedliche Mehrkatzen-Haushalte",
         "faq": [
+          "question: \"Welcher Futterautomat ist für zwei Katzen insgesamt am besten?",
           "question: \"Reicht eine Doppelschale für zwei Katzen?",
           "question: \"Braucht jede Katze einen eigenen Mikrochip-Napf?",
-          "question: \"Kann ein Dual-Hopper zwei Futtersorten trennen?"
+          "question: \"Kann ein Dual-Hopper zwei Katzen getrennt füttern?",
+          "question: \"Was ist wichtiger: zwei Schalen oder zwei getrennte Vorräte?",
+          "question: \"Welches System eignet sich bei Diätfutter?",
+          "question: \"Welches System eignet sich bei Medikamenten im Futter?",
+          "question: \"Kann eine Kamera Futterklau verhindern?",
+          "question: \"Wie weit sollten zwei Futterplätze auseinanderstehen?",
+          "question: \"Kann eine Katze den Mikrochip-Napf der anderen blockieren?",
+          "question: \"Wie erkenne ich Futterstress?",
+          "question: \"Sind App-Protokolle bei zwei Katzen zuverlässig?",
+          "question: \"Kann ich Nass- und Trockenfutter getrennt anbieten?",
+          "question: \"Wie gewöhne ich zwei Katzen an neue Futtertechnik?"
         ]
       },
       "issues": []
@@ -236,35 +388,12 @@
         "slug": "beste-futterautomaten-mit-kamera",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Futterautomaten mit Kamera nach Bildkontrolle, App, Portionierung, Datenschutz und Alltagstauglichkeit vergleichen.",
+        "description": "Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert vergleichen.",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
-        },
-        "tags": [
-          "Futterautomat",
-          "Kamera",
-          "Vergleich",
-          "App"
-        ],
-        "hub": {
-          "sections": [
-            "vergleiche"
-          ],
-          "title": "Beste Futterautomaten mit Kamera",
-          "description": "Kamera-Modelle nach Bildkontrolle, App, Portionierung und Datenschutz.",
-          "icon": "📷",
-          "order": 50
-        },
-        "seo": {
-          "title": "Beste Futterautomaten mit Kamera im Vergleich",
-          "description": "Futterautomaten mit Kamera im Vergleich: Petlibro, PETKIT und WOPET nach Video, App, Fütterungsplan und Datenschutz eingeordnet.",
-          "canonical": "/vergleiche/beste-futterautomaten-mit-kamera/",
-          "sitemap": true,
-          "priority": 0.8,
-          "changefreq": "monthly"
         },
         "comparisonType": "use-case",
         "group": "Futterautomaten",
@@ -274,26 +403,19 @@
           "slug: \"petkit-yumshare-dual-hopper",
           "slug: \"wopet-heritage-view-camera-feeder"
         ],
-        "criteria": [
-          "key: \"bild-und-nachtsicht",
-          "key: \"app",
-          "key: \"portionierung",
-          "key: \"datenschutz",
-          "key: \"offline-plan",
-          "key: \"reinigung"
-        ],
+        "criteria": [],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "petlibro-granary-camera-feeder",
-          "title": "Granary Camera ist die ausgewogenste Gesamtwahl",
-          "text": "Petlibro kombiniert nachvollziehbare Kameradaten mit einem etablierten Fütterungskonzept. PETKIT richtet sich stärker an Zwei-Futter-Szenarien, WOPET an große Vorräte."
+          "alternativeSlug": "petkit-yumshare-dual-hopper",
+          "title": "Kamera ersetzt keine Tiererkennung",
+          "text": "PETLIBRO ist der beste Allrounder. PETKIT eignet sich besser für zwei Trockenfuttersorten. Eine Kamera allein verhindert weder Futterklau noch beweist sie sicher, welches Tier gefressen hat."
         },
-        "tableTitle": "Drei Kamera-Futterautomaten verglichen",
-        "cardsTitle": "Kamera-Modelle im Detail",
-        "faq": [
-          "question: \"Erkennt eine Kamera, welches Tier gefressen hat?",
-          "question: \"Braucht ein Kamera-Futterautomat ein Cloud-Abo?",
-          "question: \"Funktioniert der Zeitplan ohne Internet?"
-        ]
+        "faq": [],
+        "tableTitle": "Direkter Vergleich",
+        "cardsTitle": "Produkte im Überblick"
       },
       "issues": []
     },
@@ -307,35 +429,12 @@
         "slug": "beste-futterautomaten-ohne-wlan",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Futterautomaten ohne WLAN nach lokaler Zeitsteuerung, Batterie, Futterart und kontrolliertem Zugang vergleichen.",
+        "description": "Futterautomaten ohne WLAN nach Offline-Zuverlässigkeit, Batteriebetrieb, Futterart, Zugangskontrolle und Alltagstauglichkeit vergleichen.",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-09",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
-        },
-        "tags": [
-          "Futterautomat",
-          "Ohne WLAN",
-          "Vergleich",
-          "Batterie"
-        ],
-        "hub": {
-          "sections": [
-            "vergleiche"
-          ],
-          "title": "Beste Futterautomaten ohne WLAN",
-          "description": "Einfache und unabhängige Lösungen ohne App oder Cloud.",
-          "icon": "📴",
-          "order": 40
-        },
-        "seo": {
-          "title": "Beste Futterautomaten ohne WLAN im Vergleich",
-          "description": "Futterautomaten ohne WLAN: Cat Mate, SureFeed und IMIPAW nach Timer, Batterie, Nassfutter und Mikrochip-Zugang verglichen.",
-          "canonical": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-          "sitemap": true,
-          "priority": 0.8,
-          "changefreq": "monthly"
         },
         "comparisonType": "use-case",
         "group": "Futterautomaten",
@@ -343,27 +442,26 @@
         "items": [
           "slug: \"cat-mate-c500",
           "slug: \"surefeed-microchip-pet-feeder",
-          "slug: \"imipaw-3l-automatic-cat-feeder"
+          "slug: \"imipaw-3l"
         ],
         "criteria": [
-          "key: \"steuerungsprinzip",
+          "key: \"offlineKonzept",
           "key: \"futterart",
-          "key: \"batterie",
-          "key: \"portionierung",
-          "key: \"zugang",
-          "key: \"reinigung"
+          "key: \"appErforderlich",
+          "key: \"batteriebetrieb"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "cat-mate-c500",
-          "title": "Cat Mate ist die vielseitigste reine Timer-Lösung",
-          "text": "Für mehrere vorbereitete Mahlzeiten ist der C500 besonders klar. SureFeed kontrolliert statt Zeiten den Zugang; IMIPAW dosiert Trockenfutter aus einem Vorrat."
+          "alternativeSlug": "surefeed-microchip-pet-feeder",
+          "title": "Offline bedeutet nicht automatisch einfacher",
+          "text": "Cat Mate ist die beste Timer-Lösung für mehrere vorbereitete Mahlzeiten. SureFeed gewinnt bei geschütztem Zugang. IMIPAW ist die klassische Offline-Lösung für Trockenfutter."
         },
-        "tableTitle": "Drei Offline-Konzepte verglichen",
-        "cardsTitle": "Futterautomaten ohne WLAN im Detail",
-        "faq": [
-          "question: \"Ist ein Automat ohne WLAN zuverlässiger?",
-          "question: \"Welches Modell eignet sich für Nassfutter?"
-        ]
+        "tableTitle": "Direkter Vergleich",
+        "cardsTitle": "Produkte im Überblick",
+        "faq": []
       },
       "issues": []
     },
@@ -377,54 +475,42 @@
         "slug": "beste-gps-tracker-fuer-hunde",
         "type": "comparison",
         "layout": "comparison",
-        "description": "GPS-Tracker für Hunde nach Gewicht, Tier-Fit, Akku, Ortung, Übertragung, Abo, Wasserschutz und Befestigung vergleichen.",
+        "description": "GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen.",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "tags": [
-          "GPS-Tracker",
-          "Hund",
-          "Vergleich",
-          "Kaufberatung"
-        ],
-        "hub": "{ sections: [\"vergleiche\", \"gps-tracker\"], title: \"Beste GPS-Tracker für Hunde\", description: \"Mobilfunk- und VHF-Systeme nach Tier-Fit, Akku und Kosten.\", icon: \"🐕\", featured: true, order: 40 }",
-        "seo": "{ title: \"Beste GPS-Tracker für Hunde im Vergleich\", description: \"Hunde-GPS vergleichen: Gewicht, Akku, Reichweite, Abo, Wasserschutz, Befestigung und Netzabhängigkeit.\", canonical: \"/vergleiche/beste-gps-tracker-fuer-hunde/\", sitemap: true, priority: 0.9, changefreq: \"monthly\" }",
+        "updatedAt": "2026-07-24",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "comparisonType": "use-case",
         "group": "GPS-Tracker",
         "icon": "🐕",
-        "heroImage": "{ src: \"../../assets/images/guides/gps-tracker/hero.webp\", alt: \"Hund mit generischem GPS-Tracker zwischen Satelliten, Mobilfunk und App\" }",
         "items": [
-          "{ slug: \"tractive-dog-6\", label: \"Tractive DOG 6\", type: \"product\", recommendation: \"Bester Allrounder für Hunde über 4 kg mit kompaktem Gehäuse und starker App.\" }",
-          "{ slug: \"weenect-xs\", label: \"Weenect XS\", type: \"product\", recommendation: \"Leichteste Wahl für kleine Hunde ab 3 kg und Rückrufsignale.\" }",
-          "{ slug: \"paj-pet-finder-4g-mini\", label: \"PAJ PET Finder 4G Mini\", type: \"product\", recommendation: \"Kostenmodell mit 27 Monaten enthaltener Nutzung für Hunde ab 3 kg.\" }",
-          "{ slug: \"tractive-dog-6-xl\", label: \"Tractive DOG 6 XL\", type: \"product\", recommendation: \"Beste Mobilfunk-Akkureserve für Hunde ab 20 kg.\" }",
-          "{ slug: \"weenect-xt\", label: \"Weenect XT\", type: \"product\", recommendation: \"Robuste Outdoor-Alternative mit bis zu drei Wochen Herstellerlaufzeit.\" }",
-          "{ slug: \"garmin-alpha-t-20\", label: \"Garmin Alpha T 20\", type: \"product\", recommendation: \"VHF-Spezialsystem ohne Mobilfunkabo für Jagd- und Arbeitshunde.\" }"
+          "slug: \"tractive-dog-6",
+          "slug: \"weenect-xs",
+          "slug: \"paj-pet-finder-4g-mini",
+          "slug: \"tractive-dog-6-xl",
+          "slug: \"weenect-xt",
+          "slug: \"garmin-alpha-t-20"
         ],
         "criteria": [
-          "{ key: \"eignung\", label: \"Geeignet für\", description: \"Herstellerempfehlung und Tiergröße.\" }",
-          "{ key: \"gewicht\", label: \"Gewicht\", description: \"Geräte- oder ausgewiesenes Gesamtgewicht.\" }",
-          "{ key: \"akkulaufzeit\", label: \"Akkulaufzeit\", description: \"Bedingte Hersteller-Maximalwerte.\" }",
-          "{ key: \"uebertragung\", label: \"Übertragung\", description: \"Mobilfunk zur App oder VHF zum Handgerät.\" }",
-          "{ key: \"reichweite\", label: \"Reichweite\", description: \"Systemgrenze, nicht Werbeversprechen.\" }",
-          "{ key: \"abo\", label: \"Abo\", description: \"Laufender Dienst oder Hardwarebetrieb.\" }",
-          "{ key: \"wasserschutz\", label: \"Wasserschutz\", description: \"Offizielle Schutzklasse.\" }",
-          "{ key: \"befestigung\", label: \"Befestigung\", description: \"Passform am Halsband oder Geschirr.\" }"
+          "key: \"einsatzgebiet",
+          "key: \"hundegroesse",
+          "key: \"ortung",
+          "key: \"abo"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "tractive-dog-6",
           "alternativeSlug": "weenect-xs",
-          "title": "Tractive DOG 6 ist der ausgewogenste Hunde-Allrounder",
-          "text": "Für Hunde über 4 kg kombiniert er 39 g, lange Energiesparlaufzeit und ein breites App-System. Kleinere Hunde profitieren eher vom 27-g-Weenect XS; große Hunde mit Laufzeitpriorität vom DOG 6 XL."
+          "title": "Der beste Tracker hängt vom Einsatzzweck ab",
+          "text": "Tractive DOG 6 eignet sich für die meisten Familienhunde. Kleine Hunde profitieren vom leichteren Weenect XS, große Hunde vom DOG 6 XL und Jagdhunde vom Garmin Alpha T20."
         },
-        "tableTitle": "Sechs belastbar dokumentierte Hunde-GPS-Systeme",
-        "cardsTitle": "Empfehlungen nach Hund und Einsatz",
-        "faq": [
-          "{ question: \"Welcher GPS-Tracker ist für kleine Hunde geeignet?\", answer: \"Weenect XS und PAJ PET Finder 4G Mini sind offiziell für Hunde ab 3 kg ausgewiesen; Tractive DOG 6 ab über 4 kg. Gewicht allein genügt nicht: Halterung und Verhalten müssen ebenfalls passen.\" }",
-          "{ question: \"Welcher Hunde-Tracker hat den längsten Akku?\", answer: \"Im Mobilfunkfeld nennt Tractive für den DOG 6 XL bis zu sechs Wochen mit Energiesparzonen. Das ist kein garantierter Alltagswert; Live-Tracking und schwacher Empfang verkürzen ihn.\" }",
-          "{ question: \"Sind GPS-Tracker ohne Abo besser?\", answer: \"Nicht automatisch. Garmin-VHF-Systeme vermeiden Mobilfunkgebühren, benötigen aber ein teures separates Handgerät und haben eine feste Funkreichweite.\" }",
-          "{ question: \"Kann ein Tracker verhindern, dass ein Hund entläuft?\", answer: \"Nein. Ein virtueller Zaun meldet das Verlassen einer Zone, ist aber keine physische Barriere. Rückruftraining, sichere Leine und Kennzeichnung bleiben nötig.\" }"
-        ]
+        "tableTitle": "Direkter Vergleich",
+        "cardsTitle": "Produkte im Überblick",
+        "faq": []
       },
       "issues": []
     },
@@ -438,50 +524,43 @@
         "slug": "beste-gps-tracker-fuer-katzen",
         "type": "comparison",
         "layout": "comparison",
-        "description": "GPS-Tracker für Katzen nach Gewicht, Sicherheitshalsband, Akku, Mobilfunk, Abo und offizieller Eignung vergleichen.",
+        "description": "GPS-Tracker für Katzen nach Passform, Sicherheitshalsband, Gewicht, Akku, Abo, Wasserschutz und Ortung vergleichen.",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "tags": [
-          "GPS-Tracker",
-          "Katze",
-          "Vergleich",
-          "Sicherheitshalsband"
-        ],
-        "hub": "{ sections: [\"vergleiche\", \"gps-tracker\"], title: \"Beste GPS-Tracker für Katzen\", description: \"Katzen-Fit, Gewicht und sichere Befestigung im Fokus.\", icon: \"🐈\", featured: true, order: 41 }",
-        "seo": "{ title: \"Beste GPS-Tracker für Katzen im Vergleich\", description: \"Katzen-GPS vergleichen: Gewicht, Halsbandsicherheit, Akku, Abo, Mobilfunk und Ortungsgrenzen.\", canonical: \"/vergleiche/beste-gps-tracker-fuer-katzen/\", sitemap: true, priority: 0.9, changefreq: \"monthly\" }",
+        "updatedAt": "2026-07-25",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "comparisonType": "use-case",
         "group": "GPS-Tracker",
         "icon": "🐈",
-        "heroImage": "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Sichere Befestigung kleiner GPS-Tracker an Katzen\" }",
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "items": [
-          "{ slug: \"tractive-cat-6-mini\", label: \"Tractive CAT 6 Mini\", type: \"product\", recommendation: \"Beste Gesamtlösung für Katzen von 3 bis 8 kg mit integriertem Sicherheitshalsband.\" }",
-          "{ slug: \"weenect-xs\", label: \"Weenect XS\", type: \"product\", recommendation: \"Leichteste Geräteoption mit 27 g und Anti-Strangulations-Elastikband.\" }",
-          "{ slug: \"paj-pet-finder-4g-mini\", label: \"PAJ PET Finder 4G Mini\", type: \"product\", recommendation: \"Nur nach genauer Passformprüfung; PAJ listet ihn für Katzen, spezifiziert aber Hunde detaillierter.\" }"
+          "slug: \"tractive-cat-6-mini",
+          "slug: \"weenect-xs",
+          "slug: \"paj-pet-finder-4g-mini"
         ],
         "criteria": [
-          "{ key: \"eignung\", label: \"Geeignet für\", description: \"Offiziell ausgewiesene Tier- und Gewichtsbereiche.\" }",
-          "{ key: \"gewicht\", label: \"Gewicht\", description: \"Gerätewert oder Gesamtwert inklusive Halsband beachten.\" }",
-          "{ key: \"abmessungen\", label: \"Abmessungen\", description: \"Baugröße am Katzenhals.\" }",
-          "{ key: \"befestigung\", label: \"Sicherheitsbefestigung\", description: \"Öffnungs- und Anti-Strangulationslösung.\" }",
-          "{ key: \"akkulaufzeit\", label: \"Akkulaufzeit\", description: \"Herstellerwerte je Modus.\" }",
-          "{ key: \"abo\", label: \"Abo\", description: \"Pflicht und enthaltene Dienstzeit.\" }",
-          "{ key: \"wasserschutz\", label: \"Wasserschutz\", description: \"Offizielle Schutzklasse.\" }"
+          "key: \"profil",
+          "key: \"eignung",
+          "key: \"gewicht",
+          "key: \"befestigung",
+          "key: \"ortung",
+          "key: \"akkulaufzeit",
+          "key: \"abo",
+          "key: \"wasserschutz"
         ],
         "recommendation": {
           "winnerSlug": "tractive-cat-6-mini",
           "alternativeSlug": "weenect-xs",
-          "title": "Tractive CAT 6 Mini gewinnt durch die integrierte Katzen-Passform",
-          "text": "Für Katzen von 3 bis 8 kg und 19 bis 22,9 cm Halsumfang ist die Systemlösung am klarsten spezifiziert. Weenect XS ist mit 27 g Gerätegewicht leichter und flexibler, verlangt aber ebenfalls eine sichere Halsbandlösung."
+          "title": "Passform und Sicherheit sind wichtiger als jedes Gramm",
+          "text": "Tractive CAT 6 Mini ist die ausgewogenste katzenspezifische Komplettlösung. Weenect XS ist leichter und flexibler befestigbar. Der PAJ PET Finder bietet die längste enthaltene Servicephase, ist für Katzen aber weniger eindeutig spezifiziert."
         },
-        "tableTitle": "Drei offiziell belegte Katzenoptionen",
-        "cardsTitle": "Empfehlungen nach Passform",
-        "faq": [
-          "{ question: \"Wie schwer darf ein Katzen-GPS sein?\", answer: \"Es gibt keinen universellen Grenzwert. Hersteller-Mindestgewicht, Gehäusegröße, Halsumfang, Bewegungsverhalten und sichere Öffnung müssen gemeinsam passen. Bei Irritation oder verändertem Gang wird der Tracker abgenommen.\" }",
-          "{ question: \"Warum muss ein Katzenhalsband aufgehen können?\", answer: \"Freigängerkatzen können an Ästen oder Zäunen hängen bleiben. Ein definierter Sicherheitsverschluss oder eine geeignete Anti-Strangulationslösung soll eine Selbstbefreiung ermöglichen, auch wenn der Tracker dadurch verloren geht.\" }",
-          "{ question: \"Ist ein AirTag ein GPS-Tracker für Katzen?\", answer: \"Nein. Ein AirTag bestimmt und übermittelt den Standort nicht wie ein eigener Mobilfunk-GPS-Tracker; er ist auf nahe Apple-Geräte im Find-My-Netz angewiesen.\" }",
-          "{ question: \"Brauchen Katzen-GPS-Tracker ein Abo?\", answer: \"Die hier gelisteten Mobilfunkmodelle benötigen dauerhaft oder nach einer Inklusivphase einen Diensttarif. Dieser finanziert SIM, Datenübertragung und Cloud-App.\" }"
-        ]
+        "tableTitle": "Drei GPS-Tracker für Katzen im Direktvergleich",
+        "cardsTitle": "Die stärksten Modelle nach Einsatzprofil",
+        "faq": []
       },
       "issues": []
     },
@@ -495,9 +574,9 @@
         "slug": "beste-trinkbrunnen-fuer-hunde",
         "type": "comparison",
         "layout": "comparison",
-        "description": "Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Standfestigkeit, Lautstärke, Filter und Reinigung vergleichen.",
-        "publishedAt": "2026-07-16",
-        "updatedAt": "2026-07-19",
+        "description": "Trinkbrunnen für Hunde nach Kapazität, Material, Lautstärke, Filter, Reinigung und Alltagseignung vergleichen.",
+        "publishedAt": "2026-07-24",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -514,14 +593,14 @@
             "trinkbrunnen"
           ],
           "title": "Beste Trinkbrunnen für Hunde",
-          "description": "Kapazität, Trinkfläche, Reinigung und Eignung für unterschiedliche Hundegrößen.",
+          "description": "Material, Reinigung, Filter, Kapazität und Geräusch verständlich gegenübergestellt.",
           "icon": "🐕",
           "featured": true,
           "order": 21
         },
         "seo": {
           "title": "Beste Trinkbrunnen für Hunde im Vergleich",
-          "description": "Hundetrinkbrunnen vergleichen: Kapazität, Trinkfläche, Material, Filter und Reinigung.",
+          "description": "Trinkbrunnen für Hunde vergleichen: Kapazität, Material, Filter, Lautstärke, Reinigung und Eignung verständlich eingeordnet.",
           "canonical": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "sitemap": true,
           "priority": 0.8,
@@ -531,11 +610,26 @@
         "group": "Trinkbrunnen",
         "icon": "🐕",
         "items": [
-          "slug: \"petlibro-capsule-dog-fountain",
+          "slug: \"oneisall-3-5l-cordless-fountain",
+          "slug: \"petkit-eversweet-solo-2-fountain",
+          "slug: \"petkit-eversweet-3-pro-uvc",
+          "slug: \"oneisall-3-2l-cordless-fountain",
           "slug: \"oneisall-7l-dog-water-fountain",
-          "slug: \"petlibro-stainless-steel-fountain",
+          "slug: \"petkit-eversweet-ultra",
+          "slug: \"petkit-eversweet-max-2-uvc",
+          "slug: \"petkit-eversweet-max-cordless",
+          "slug: \"petlibro-dockstream-2-smart",
+          "slug: \"petlibro-dockstream-cordless",
+          "slug: \"petlibro-dockstream-rfid-smart",
           "slug: \"xiaomi-smart-pet-fountain-2",
-          "slug: \"petlibro-dockstream-2-smart"
+          "slug: \"cat-mate-335-pet-fountain",
+          "slug: \"petlibro-capsule-dog-fountain",
+          "slug: \"petlibro-glacier-ultrafiltration",
+          "slug: \"cat-mate-shell-fountain",
+          "slug: \"oneisall-2-2l-cordless-fountain",
+          "slug: \"petkit-eversweet-solo-se",
+          "slug: \"petlibro-stainless-steel-fountain",
+          "slug: \"petkit-eversweet-5-mini"
         ],
         "criteria": [
           "key: \"kapazitaet",
@@ -546,17 +640,23 @@
           "key: \"stromversorgung",
           "key: \"eignung"
         ],
-        "recommendation": {
-          "winnerSlug": "petlibro-capsule-dog-fountain",
-          "alternativeSlug": "oneisall-7l-dog-water-fountain",
-          "title": "PETLIBRO Capsule Dog Fountain ist die plausibelste Gesamtoption für mittelgroße und große Hunde",
-          "text": "Für große Hunde zählen breite Trinkfläche, ausreichende Höhe und viel Reserve stärker als App-Funktionen."
+        "automaticRecommendations": {
+          "enabled": true
         },
-        "tableTitle": "5 Trinkbrunnen für Hunde verglichen",
-        "cardsTitle": "Empfehlungen nach Hundegröße und Einsatzzweck",
+        "recommendation": {
+          "winnerSlug": "oneisall-3-5l-cordless-fountain",
+          "alternativeSlug": "petkit-eversweet-ultra",
+          "title": "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment",
+          "text": "Die beste Wahl hängt trotzdem von Körpergröße, Trinkhöhe, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
+        },
+        "tableTitle": "20 Trinkbrunnen für Hunde verglichen",
+        "cardsTitle": "Empfehlungen nach Einsatzzweck",
         "faq": [
-          "question: \"Ist ein Katzenbrunnen auch für Hunde geeignet?",
-          "question: \"Sind große Tanks automatisch hygienischer?"
+          "question: \"Wie groß sollte ein Trinkbrunnen für Hunde sein?",
+          "question: \"Ist Edelstahl besser als Kunststoff?",
+          "question: \"Wie oft muss ein Trinkbrunnen gereinigt werden?",
+          "question: \"Wie oft muss der Filter gewechselt werden?",
+          "question: \"Sind Trinkbrunnen wirklich leise?"
         ]
       },
       "issues": []
@@ -572,8 +672,8 @@
         "type": "comparison",
         "layout": "comparison",
         "description": "Trinkbrunnen für Katzen nach Kapazität, Material, Lautstärke, Filter, Reinigung und Alltagseignung vergleichen.",
-        "publishedAt": "2026-07-16",
-        "updatedAt": "2026-07-19",
+        "publishedAt": "2026-07-24",
+        "updatedAt": "2026-07-24",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -597,7 +697,7 @@
         },
         "seo": {
           "title": "Beste Trinkbrunnen für Katzen im Vergleich",
-          "description": "Trinkbrunnen für Katzen vergleichen: Kapazität, Material, Filter, Lautstärke und Reinigung.",
+          "description": "Trinkbrunnen für Katzen vergleichen: Kapazität, Material, Filter, Lautstärke, Reinigung und Eignung verständlich eingeordnet.",
           "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "sitemap": true,
           "priority": 0.8,
@@ -607,24 +707,26 @@
         "group": "Trinkbrunnen",
         "icon": "🐈",
         "items": [
-          "slug: \"petkit-eversweet-max-2-uvc",
+          "slug: \"oneisall-3-5l-cordless-fountain",
+          "slug: \"petkit-eversweet-solo-2-fountain",
+          "slug: \"petkit-eversweet-3-pro-uvc",
+          "slug: \"oneisall-3-2l-cordless-fountain",
+          "slug: \"oneisall-7l-dog-water-fountain",
           "slug: \"petkit-eversweet-ultra",
+          "slug: \"petkit-eversweet-max-2-uvc",
+          "slug: \"petkit-eversweet-max-cordless",
           "slug: \"petlibro-dockstream-2-smart",
+          "slug: \"petlibro-dockstream-cordless",
           "slug: \"petlibro-dockstream-rfid-smart",
           "slug: \"xiaomi-smart-pet-fountain-2",
-          "slug: \"oneisall-3-5l-cordless-fountain",
-          "slug: \"petkit-eversweet-3-pro-uvc",
-          "slug: \"petkit-eversweet-max-cordless",
-          "slug: \"petlibro-dockstream-cordless",
-          "slug: \"oneisall-3-2l-cordless-fountain",
-          "slug: \"petkit-eversweet-solo-2-fountain",
+          "slug: \"cat-mate-335-pet-fountain",
+          "slug: \"petlibro-capsule-dog-fountain",
           "slug: \"petlibro-glacier-ultrafiltration",
-          "slug: \"petlibro-stainless-steel-fountain",
+          "slug: \"cat-mate-shell-fountain",
           "slug: \"oneisall-2-2l-cordless-fountain",
           "slug: \"petkit-eversweet-solo-se",
-          "slug: \"cat-mate-shell-fountain",
-          "slug: \"petkit-eversweet-5-mini",
-          "slug: \"cat-mate-335-pet-fountain"
+          "slug: \"petlibro-stainless-steel-fountain",
+          "slug: \"petkit-eversweet-5-mini"
         ],
         "criteria": [
           "key: \"kapazitaet",
@@ -635,17 +737,23 @@
           "key: \"stromversorgung",
           "key: \"eignung"
         ],
-        "recommendation": {
-          "winnerSlug": "petkit-eversweet-max-2-uvc",
-          "alternativeSlug": "petlibro-dockstream-2-smart",
-          "title": "PETKIT Eversweet Max 2 UVC ist die stärkste Gesamtoption für anspruchsvolle Katzenhaushalte",
-          "text": "Große Hundebrunnen wurden bewusst nicht in diesen Katzenvergleich aufgenommen."
+        "automaticRecommendations": {
+          "enabled": true
         },
-        "tableTitle": "18 Trinkbrunnen für Katzen verglichen",
+        "recommendation": {
+          "winnerSlug": "oneisall-3-5l-cordless-fountain",
+          "alternativeSlug": "cat-mate-335-pet-fountain",
+          "title": "oneisall 3,5L Cordless Fountain ist die stärkste Gesamtoption im vorhandenen Sortiment",
+          "text": "Die beste Wahl hängt trotzdem von Trinkverhalten, Schnurrhaarfreundlichkeit, Materialwunsch und Reinigungsaufwand ab. Der Vergleich bewertet nur belegte Produktdaten und die dokumentierte Alltagseignung."
+        },
+        "tableTitle": "20 Trinkbrunnen für Katzen verglichen",
         "cardsTitle": "Empfehlungen nach Einsatzzweck",
         "faq": [
           "question: \"Wie groß sollte ein Trinkbrunnen für Katzen sein?",
-          "question: \"Ist Edelstahl besser als Kunststoff?"
+          "question: \"Ist Edelstahl besser als Kunststoff?",
+          "question: \"Wie oft muss ein Trinkbrunnen gereinigt werden?",
+          "question: \"Wie oft muss der Filter gewechselt werden?",
+          "question: \"Sind Trinkbrunnen wirklich leise?"
         ]
       },
       "issues": []
@@ -694,6 +802,9 @@
           "{ key: \"abo\", label: \"Abo\", description: \"Folgekosten des Übertragungswegs.\" }",
           "{ key: \"wasserschutz\", label: \"Wasserschutz\", description: \"Schutzklasse für Outdoor-Nutzung.\" }"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "tractive-dog-6-xl",
           "alternativeSlug": "weenect-xt",
@@ -749,6 +860,9 @@
           "{ key: \"app\", label: \"Bedienung\", description: \"Handgerät und optionale App-Anbindung.\" }",
           "{ key: \"eignung\", label: \"Geeignet für\", description: \"Spezialisierte Tier- und Einsatzgruppe.\" }"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "garmin-alpha-t-20",
           "alternativeSlug": "garmin-alpha-tt-25",
@@ -806,6 +920,9 @@
           "{ key: \"wasserschutz\", label: \"Wasserschutz\", description: \"IP-Klasse.\" }",
           "{ key: \"abo\", label: \"Abo\", description: \"Laufende Dienstkosten.\" }"
         ],
+        "automaticRecommendations": {
+          "enabled": true
+        },
         "recommendation": {
           "winnerSlug": "weenect-xs",
           "alternativeSlug": "tractive-cat-6-mini",
@@ -3224,71 +3341,6 @@
       "issues": []
     },
     {
-      "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-nassfutter.md",
-      "slug": "beste futterautomaten fuer nassfutter",
-      "title": "Beste Futterautomaten für Nassfutter",
-      "type": "page",
-      "data": {
-        "title": "Beste Futterautomaten für Nassfutter",
-        "seoTitle": "Beste Futterautomaten für Nassfutter im Vergleich",
-        "slug": "beste-futterautomaten-fuer-nassfutter",
-        "description": "Welche Futterautomaten eignen sich für Nassfutter? Unsere Empfehlungen für Kühlung, Hygiene und zuverlässige Fütterung.",
-        "seoDescription": "Die besten Nassfutterautomaten im Vergleich. Erfahre, welche Modelle sich für gekühltes Nassfutter besonders eignen.",
-        "category": "vergleich",
-        "categoryLabel": "Entscheidungshilfe",
-        "project": "pfotentechnik",
-        "tags": [
-          "futterautomat",
-          "nassfutter",
-          "katze",
-          "hund",
-          "kaufberatung"
-        ],
-        "publishedAt": "2026-07-10",
-        "updatedAt": "2026-07-10",
-        "hub": {
-          "sections": [
-            "vergleiche",
-            "wissen"
-          ],
-          "title": "Beste Futterautomaten für Nassfutter",
-          "description": "Modelle mit Kühlung, zeitgesteuerten Fächern oder geschützter Aufbewahrung.",
-          "icon": "🥣",
-          "order": 60
-        },
-        "decisionKey": "nassfutter",
-        "linkContext": "futterautomaten",
-        "heroType": "nassfutter",
-        "themeColor": "blue",
-        "decisionIntro": "Nassfutter stellt deutlich höhere Anforderungen an Hygiene und Kühlung als Trockenfutter. Unsere Empfehlungen berücksichtigen genau diese Punkte.",
-        "premiumBlocks": [
-          "type: answer",
-          "type: decision"
-        ],
-        "faq": [
-          "question: \"Kann jeder Futterautomat Nassfutter ausgeben?",
-          "question: \"Braucht ein Nassfutterautomat eine Kühlung?",
-          "question: \"Wie oft sollte ein Nassfutterautomat gereinigt werden?"
-        ],
-        "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
-        },
-        "recommendationJourney": {
-          "mode": "filtered",
-          "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
-    },
-    {
       "file": "apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md",
       "slug": "beste futterautomaten fuer seniorenkatzen",
       "title": "Beste Futterautomaten für Seniorenkatzen",
@@ -4466,7 +4518,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-24",
         "hub": {
           "sections": [
             "wissen"
@@ -4530,7 +4582,8 @@
           "question: \"Was ist der Unterschied zwischen Dual-Hopper und Mikrochip-Futterautomat?",
           "question: \"Wie verhindere ich Futterneid bei zwei Katzen?",
           "question: \"Können zwei Katzen aus einem Automaten mit zwei Schalen fressen?",
-          "question: \"Ist ein Mikrochip-Futterautomat stressig?"
+          "question: \"Ist ein Mikrochip-Futterautomat stressig?",
+          "question: \"Welcher Futterautomat ist für zwei Katzen meist die beste Wahl?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -4540,7 +4593,7 @@
           "mode": "filtered",
           "animal": "cat",
           "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Vergleich für zwei Katzen ansehen"
         }
       },
       "issues": [
@@ -4635,10 +4688,10 @@
       "type": "page",
       "data": {
         "title": "Futterautomaten für Hunde",
-        "seoTitle": "Futterautomat für Hunde: Kaufberatung nach Größe und Portion",
+        "seoTitle": "Futterautomat für Hunde: Modelle nach Größe, Portion und Bedarf",
         "slug": "futterautomat-hund",
         "description": "Futterautomaten für Hunde richtig auswählen: Portionsgröße, Krokettengröße, Standfestigkeit, App, Batterie-Backup, Welpen, große Hunde und geeignete Modelle.",
-        "seoDescription": "Futterautomat für Hunde gesucht? Erfahre, welche Modelle zu kleinen, mittelgroßen und großen Hunden passen und worauf es bei Portionierung, Napf und Stabilität ankommt.",
+        "seoDescription": "Welcher Futterautomat passt zu deinem Hund? Kaufberatung nach Größe, Portion, Krokettengröße, App, Schlingverhalten und Alltag – mit Entscheidungsmatrix.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
@@ -4673,7 +4726,7 @@
           "role": "Redaktion"
         },
         "publishedAt": "2026-07-08",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-24",
         "navigation": {
           "show": false,
           "label": "Für Hunde",
@@ -4733,8 +4786,8 @@
           "cta": "Fütterungszeiten und Tagesration planen"
         },
         "closingCta": {
-          "title": "Für viele kleine und mittelgroße Hunde passend",
-          "text": "Ein App-Modell mit Batterie-Backup und ausreichend großem Napf kann planbare Trockenfuttermahlzeiten zuverlässig unterstützen.",
+          "title": "Passende Technik statt möglichst vieler Funktionen",
+          "text": "Ein stabiler Automat mit passender Portion, geeignetem Napf und Batterie-Backup kann planbare Trockenfuttermahlzeiten zuverlässig unterstützen.",
           "productKey": "petlibro-granary-wifi-feeder",
           "primaryLabel": "Aktuellen Preis prüfen",
           "secondaryHref": "/smarte-futterautomaten/",
@@ -4748,7 +4801,12 @@
           "question: \"Kann ein Futterautomat bei Schlingen helfen?",
           "question: \"Eignet sich ein Futterautomat für Welpen?",
           "question: \"Wie genau sind die Portionen?",
-          "question: \"Kann Nassfutter in einem normalen Hunde-Futterautomaten verwendet werden?"
+          "question: \"Kann Nassfutter in einem normalen Hunde-Futterautomaten verwendet werden?",
+          "question: \"Wie groß sollte der Futterautomat für einen mittelgroßen Hund sein?",
+          "question: \"Welcher Futterautomat eignet sich für Berufstätige mit Hund?",
+          "question: \"Kann ein Futterautomat bei Übergewicht helfen?",
+          "question: \"Wie viele Mahlzeiten kann ein Futterautomat ausgeben?",
+          "question: \"Sind Futterautomaten für Hunde sicher?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -4757,7 +4815,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "comparisonHref": "/vergleiche/beste-futterautomaten/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Futterautomaten für Hunde vergleichen"
         }
       },
       "issues": [
@@ -7048,7 +7106,7 @@
         "slug": "katzentrinkbrunnen-richtig-reinigen",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Wie du Tank, Trinkfläche, Filter und Pumpe hygienisch reinigst und welche Stellen besonders häufig übersehen werden.",
+        "description": "Wie du Tank, Trinkfläche, Filter und Pumpe eines Katzentrinkbrunnens hygienisch reinigst und hartnäckigen Biofilm vermeidest.",
         "category": "trinkbrunnen",
         "linking": {
           "keywords": [
@@ -7065,7 +7123,7 @@
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-13",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -7075,11 +7133,17 @@
           "biofilm"
         ],
         "hub": "{ sections: [wissen], title: \"Katzentrinkbrunnen richtig reinigen\", description: \"Pumpe, Tank und Auslauf ohne blinde Stellen säubern.\", order: 48 }",
-        "seo": "{ title: \"Katzentrinkbrunnen richtig reinigen\", description: \"Schritt-für-Schritt-Anleitung gegen Biofilm, Haare und Kalk in Katzenbrunnen.\", canonical: \"/katzentrinkbrunnen-richtig-reinigen/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "seo": "{ title: \"Katzentrinkbrunnen reinigen: Pumpe, Filter & Tank\", description: \"Katzentrinkbrunnen gründlich reinigen: Anleitung für Tank, Pumpe, Filter, Dichtungen und schwer erreichbare Stellen.\", canonical: \"/katzentrinkbrunnen-richtig-reinigen/\", sitemap: true, priority: 0.8, changefreq: yearly }",
         "related": "{ tags: [trinkbrunnen, hygiene, biofilm], limit: 4 }",
         "faq": [
-          "{ question: \"Wie oft sollte ein Katzenbrunnen gereinigt werden?\", answer: \"Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten oder sichtbarem Belag ist sie häufiger nötig.\" }",
-          "{ question: \"Darf die Pumpe in die Spülmaschine?\", answer: \"Nein. Elektrische Pumpenteile werden nach Anleitung von Hand gereinigt. Nur ausdrücklich spülmaschinengeeignete, nicht elektrische Teile dürfen in die Maschine.\" }"
+          "{ question: \"Wie oft sollte ein Katzenbrunnen gereinigt werden?\", answer: \"Als praxistauglicher Ausgangspunkt gilt eine gründliche wöchentliche Reinigung. Bei mehreren Tieren, Wärme, Futterresten, starkem Haar- oder Staubeintrag und sichtbarem Belag ist sie häufiger nötig.\" }",
+          "{ question: \"Muss das Wasser im Katzenbrunnen täglich gewechselt werden?\", answer: \"Ja. Kontrolliere das Wasser täglich und ersetze es regelmäßig vollständig, statt nur nachzufüllen. Ein Filter hält Partikel zurück, ersetzt aber keinen Wasserwechsel und keine Reinigung.\" }",
+          "{ question: \"Darf die Pumpe in die Spülmaschine?\", answer: \"Nein. Elektrische Pumpenteile werden nach Herstelleranleitung von Hand gereinigt. Nur ausdrücklich spülmaschinengeeignete, nicht elektrische Teile dürfen in die Maschine.\" }",
+          "{ question: \"Kann ich den Filter auswaschen und weiterverwenden?\", answer: \"Ein kurzes Abspülen kann lose Partikel entfernen, stellt einen verbrauchten Filter aber nicht wieder her. Wechselintervalle und Vorbereitung eines neuen Filters richten sich nach der Herstelleranleitung.\" }",
+          "{ question: \"Wie entferne ich Kalk aus einem Katzentrinkbrunnen?\", answer: \"Verwende nur ein für das jeweilige Material und Modell geeignetes Mittel. Säuren, Entkalker oder Hausmittel können Dichtungen, Beschichtungen und Pumpenteile angreifen. Danach müssen alle behandelten Teile sehr gründlich gespült werden.\" }",
+          "{ question: \"Warum ist der Brunnen trotz Filter schleimig?\", answer: \"Der glitschige Film entsteht meist an feuchten Oberflächen, in Fugen und im Pumpenraum. Der Filter reinigt nicht sämtliche Bauteile und verhindert keinen Biofilm auf Tank, Auslauf oder Dichtungen.\" }",
+          "{ question: \"Warum ist die Pumpe nach der Reinigung laut?\", answer: \"Häufige Ursachen sind zu wenig Wasser, Luft im Pumpengehäuse, ein falsch eingesetzter Rotor, verbliebene Haare oder ein nicht korrekt sitzender Deckel. Prüfe außerdem die Mindestfüllhöhe des Modells.\" }",
+          "{ question: \"Wann sollte ein Trinkbrunnen ersetzt werden?\", answer: \"Ein Austausch ist sinnvoll, wenn Risse, poröse Dichtungen, beschädigte Kabel, nicht mehr zugängliche Ablagerungen oder dauerhaft auffällige Pumpengeräusche auftreten und Ersatzteile oder eine sichere Reinigung nicht möglich sind.\" }"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -7325,45 +7389,55 @@
         "slug": "seniorenhunde-richtig-versorgen",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Was ältere Hunde bei Ernährung, Bewegung, Vorsorge, Zahngesundheit und einem seniorengerechten Zuhause brauchen.",
+        "description": "Wie Sie einen Seniorenhund bei Vorsorge, Ernährung, Bewegung, Schmerzen, Zahngesundheit und im Alltag sinnvoll unterstützen.",
         "category": "hundegesundheit",
         "categoryLabel": "Hundewissen",
         "categoryPath": "/wissen/",
         "heroImage": {
           "src": "../../assets/images/editorial/senior-dog-care.webp",
-          "alt": "Seniorenhunde richtig versorgen"
+          "alt": "Älterer Hund ruht entspannt in einem seniorengerecht eingerichteten Zuhause"
         },
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "hund",
-          "senior",
+          "seniorenhund",
           "gesundheit",
           "ernaehrung",
-          "mobilitaet"
+          "mobilitaet",
+          "vorsorge"
         ],
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Seniorenhunde richtig versorgen",
-          "description": "Vorsorge, Ernährung, Bewegung und Alltag an ältere Hunde anpassen.",
+          "description": "Vorsorge, Ernährung, Bewegung und Wohnumfeld an ältere Hunde anpassen.",
           "order": 55
         },
         "seo": {
-          "title": "Seniorenhunde richtig versorgen: Alltag und Pflege",
-          "description": "Ältere Hunde unterstützen: regelmäßige Vorsorge, Muskel- und Gewichtskontrolle, angepasste Bewegung, Zähne und Wohnumfeld.",
+          "title": "Seniorenhund richtig versorgen: Pflege, Futter und Alltag",
+          "description": "Seniorenhunde sinnvoll unterstützen: Vorsorge, Gewicht, Muskeln, Futter, Bewegung, Schmerzzeichen, Zähne und ein sicheres Zuhause.",
           "canonical": "/seniorenhunde-richtig-versorgen/",
           "sitemap": true,
-          "priority": 0.7,
+          "priority": 0.8,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"hund\", \"senior\", \"gesundheit\"], limit: 4 }",
+        "related": "{ tags: [\"hund\", \"seniorenhund\", \"gesundheit\", \"ernaehrung\", \"mobilitaet\"], limit: 4 }",
         "faq": [
-          "question: \"Ab wann ist ein Hund ein Senior?",
-          "question: \"Braucht jeder alte Hund Seniorfutter?",
-          "question: \"Ist weniger Bewegung im Alter besser?"
+          "question: \"Ab wann gilt ein Hund als Senior?",
+          "question: \"Wie oft sollte ein Seniorenhund tierärztlich untersucht werden?",
+          "question: \"Braucht jeder ältere Hund Seniorfutter?",
+          "question: \"Brauchen Seniorenhunde weniger Protein?",
+          "question: \"Wie erkenne ich Muskelabbau beim alten Hund?",
+          "question: \"Wie viel Bewegung braucht ein Seniorenhund?",
+          "question: \"Woran erkenne ich Schmerzen bei einem älteren Hund?",
+          "question: \"Sind nächtliche Unruhe und Desorientierung normale Alterserscheinungen?",
+          "question: \"Sind erhöhte Näpfe für jeden Seniorenhund besser?",
+          "question: \"Darf ein alter Hund Nahrungsergänzungsmittel für Gelenke bekommen?",
+          "question: \"Wann ist Gewichtsverlust beim Seniorenhund bedenklich?",
+          "question: \"Kann ein Futterautomat bei einem Seniorenhund sinnvoll sein?"
         ]
       },
       "issues": []
@@ -8483,12 +8557,12 @@
         "slug": "uebergewicht-bei-katzen-vermeiden",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Übergewicht bei Katzen vermeiden: Idealgewicht erkennen, Portionen richtig messen, Leckerlis einrechnen, Bewegung fördern und Futterneid verhindern.",
+        "description": "Übergewicht bei Katzen früh erkennen und vermeiden: Körperzustand beurteilen, Portionen berechnen, Leckerlis einplanen und Bewegung sinnvoll fördern.",
         "category": "katzenernaehrung",
         "categoryLabel": "Katzenwissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -8496,25 +8570,26 @@
           "ernaehrung",
           "portionen",
           "bewegung",
-          "body-condition-score"
+          "body-condition-score",
+          "gewichtsmanagement"
         ],
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Übergewicht bei Katzen vermeiden",
-          "description": "Portionen, Körperzustand, Bewegung und Fütterungsroutine alltagstauglich kontrollieren.",
+          "description": "Körperzustand, Portionen, Snacks, Bewegung und Fütterungsroutine alltagstauglich kontrollieren.",
           "order": 52
         },
         "seo": {
-          "title": "Übergewicht bei Katzen vermeiden: 9 wirksame Tipps",
-          "description": "So beugst du Übergewicht bei Katzen vor: Idealgewicht prüfen, Portionen wiegen, Leckerlis einrechnen, Bewegung fördern und Futterneid lösen.",
+          "title": "Übergewicht bei Katzen vermeiden: Futter und Gewicht",
+          "description": "So bleibt deine Katze im Idealgewicht: BCS prüfen, Portionen berechnen, Leckerlis einrechnen, Gewicht dokumentieren und Futterneid verhindern.",
           "canonical": "/uebergewicht-bei-katzen-vermeiden/",
           "sitemap": true,
-          "priority": 0.75,
+          "priority": 0.8,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"katze\", \"ernaehrung\", \"portionen\", \"futterautomat\"], limit: 4 }",
+        "related": "{ tags: [\"katze\", \"ernaehrung\", \"portionen\", \"futterautomat\", \"gewichtsmanagement\"], limit: 4 }",
         "linking": {
           "keywords": [
             "Übergewicht Katze",
@@ -8534,11 +8609,17 @@
         },
         "faq": [
           "question: \"Wie erkenne ich Übergewicht bei meiner Katze?",
+          "question: \"Welcher Body Condition Score ist bei Katzen ideal?",
           "question: \"Wie viel sollte eine Katze pro Tag fressen?",
+          "question: \"Wie berechne ich die Futtermenge aus der Kalorienangabe?",
           "question: \"Darf eine übergewichtige Katze einfach weniger Futter bekommen?",
+          "question: \"Wie schnell darf eine Katze abnehmen?",
+          "question: \"Warum ist schnelles Abnehmen bei Katzen gefährlich?",
           "question: \"Zählen Leckerlis zur Tagesration?",
+          "question: \"Ist Nassfutter grundsätzlich besser für übergewichtige Katzen?",
+          "question: \"Wie oft sollte ich meine Katze wiegen?",
           "question: \"Hilft ein Futterautomat gegen Übergewicht?",
-          "question: \"Wie oft sollte ich meine Katze wiegen?"
+          "question: \"Wie verhindere ich Futterdiebstahl im Mehrkatzenhaushalt?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -9063,7 +9144,7 @@
         "slug": "welpen-richtig-fuettern",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Welpen richtig füttern: geeignetes Wachstumsfutter, Mahlzeiten nach Alter, Futtermenge, Gewichtskontrolle, Futterwechsel und häufige Fehler.",
+        "description": "Welpen richtig füttern: geeignetes Wachstumsfutter auswählen, Tagesration bestimmen, Mahlzeiten verteilen und gesundes Wachstum kontrollieren.",
         "category": "hundeernaehrung",
         "linking": {
           "keywords": [
@@ -9072,12 +9153,14 @@
             "Welpenfütterung",
             "Fütterung eines Welpen",
             "wie oft Welpen füttern",
-            "Futtermenge Welpe"
+            "Futtermenge Welpe",
+            "Welpenfutter"
           ],
           "contexts": [
             "Hundeernährung",
             "Welpen",
-            "Fütterungszeiten"
+            "Fütterungszeiten",
+            "Gesundes Wachstum"
           ],
           "priority": "high",
           "maxOccurrences": 1
@@ -9086,10 +9169,10 @@
         "categoryPath": "/wissen/",
         "heroImage": {
           "src": "../../assets/images/editorial/puppy-feeding.webp",
-          "alt": "Welpe sitzt vor einem gefüllten Futternapf"
+          "alt": "Junger Welpe wartet vor einer abgewogenen Portion Welpenfutter"
         },
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-14",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "hund",
@@ -9097,41 +9180,47 @@
           "ernaehrung",
           "wachstum",
           "mahlzeiten",
-          "futtermenge"
+          "futtermenge",
+          "welpenfutter"
         ],
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Welpen richtig füttern",
-          "description": "Futterwahl, Mahlzeiten, Portionen und gesundes Wachstum verständlich erklärt.",
+          "description": "Futterwahl, Tagesration, Mahlzeiten und gesundes Wachstum verständlich erklärt.",
           "order": 54
         },
         "seo": {
-          "title": "Welpen richtig füttern: Menge, Zeiten und Futter",
-          "description": "Wie oft und wie viel sollte ein Welpe fressen? Ratgeber zu Wachstumsfutter, Futtermenge, Tagesplan, Gewicht und Futterwechsel.",
+          "title": "Welpen richtig füttern: Menge, Zeiten und Welpenfutter",
+          "description": "Wie oft und wie viel sollte ein Welpe fressen? Welpenfutter auswählen, Tagesration berechnen, Wachstum kontrollieren und Fehler vermeiden.",
           "canonical": "/welpen-richtig-fuettern/",
           "sitemap": true,
-          "priority": 0.75,
+          "priority": 0.8,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"hund\", \"welpe\", \"ernaehrung\", \"futterautomat\"], limit: 4 }",
+        "related": "{ tags: [\"hund\", \"welpe\", \"ernaehrung\", \"wachstum\", \"futtermenge\"], limit: 4 }",
         "faq": [
           "question: \"Wie oft sollte ein Welpe am Tag gefüttert werden?",
-          "question: \"Wie viel Futter braucht ein Welpe?",
+          "question: \"Wie viel Futter braucht ein Welpe pro Tag?",
+          "question: \"Soll die Futtermenge nach aktuellem Gewicht oder Endgewicht berechnet werden?",
           "question: \"Wann sollte ein Welpe morgens und abends gefüttert werden?",
           "question: \"Brauchen Welpen großer Rassen besonderes Futter?",
           "question: \"Darf ein Welpe Trocken- und Nassfutter bekommen?",
-          "question: \"Wie lange sollte eine Futterumstellung dauern?"
+          "question: \"Wie viele Leckerlis darf ein Welpe bekommen?",
+          "question: \"Sollte Welpenfutter rund um die Uhr bereitstehen?",
+          "question: \"Wie lange sollte eine Futterumstellung beim Welpen dauern?",
+          "question: \"Wann wechselt ein Welpe auf Erwachsenenfutter?",
+          "question: \"Was tun, wenn ein Welpe sein Futter nicht frisst?",
+          "question: \"Ist ein Futterautomat für einen Welpen sinnvoll?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "cluster": "hundeernaehrung"
         },
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "dog",
-          "petSize": "large",
           "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
@@ -9903,46 +9992,87 @@
         "slug": "wie-viele-wasserstellen-katze",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Wie viele Näpfe und Trinkbrunnen sinnvoll sind und wie Standorte in Ein- und Mehrkatzenhaushalten verteilt werden.",
+        "description": "Wie viele Wassernäpfe und Trinkbrunnen Katzen brauchen, wie sie verteilt werden und was in Ein- und Mehrkatzenhaushalten wirklich zählt.",
         "category": "trinkbrunnen",
         "linking": {
           "keywords": [
             "Wasserstellen",
             "mehrere Wasserstellen",
-            "Anzahl der Wasserstellen"
+            "Anzahl der Wasserstellen",
+            "Wassernäpfe für Katzen",
+            "Wasserstellen Mehrkatzenhaushalt"
           ],
           "contexts": [
             "trinkbrunnen",
             "katzenhaltung",
-            "katzengesundheit"
+            "katzengesundheit",
+            "mehrkatzenhaushalt"
           ]
         },
         "categoryLabel": "Wasser & Verhalten",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-13",
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "updatedAt": "2026-07-24",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
         "tags": [
           "katze",
           "wasserstellen",
+          "wassernapf",
           "trinkbrunnen",
           "mehrkatzen",
           "standort",
-          "verhalten"
+          "trinkverhalten"
         ],
-        "hub": "{ sections: [wissen], title: \"Wie viele Wasserstellen braucht eine Katze?\", description: \"Mehrere ruhige Standorte schaffen Wahl und Ausfallsicherheit.\", order: 64 }",
-        "seo": "{ title: \"Wie viele Wassernäpfe braucht eine Katze?\", description: \"Wasserstellen für Katzen richtig planen: Anzahl, Verteilung, Mehrkatzenhaushalt, Standort und Kombination aus Napf und Trinkbrunnen.\", canonical: \"/wie-viele-wasserstellen-katze/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "hub": {
+          "sections": [
+            "wissen"
+          ],
+          "title": "Wie viele Wasserstellen braucht eine Katze?",
+          "description": "Anzahl und Verteilung so planen, dass jede Katze ungestört trinken kann.",
+          "order": 64
+        },
+        "seo": {
+          "title": "Wie viele Wassernäpfe braucht eine Katze?",
+          "description": "Wasserstellen für Katzen richtig planen: konkrete Anzahl, sinnvolle Verteilung, Mehrkatzenhaushalt, Etagen und Trinkbrunnen als Ergänzung.",
+          "canonical": "/wie-viele-wasserstellen-katze/",
+          "sitemap": true,
+          "priority": 0.8,
+          "changefreq": "yearly"
+        },
         "heroImage": {
           "src": "../../assets/images/editorial/wie-viele-wasserstellen-katze.webp",
-          "alt": "Zwei Katzen mit räumlich getrennten Wasserstellen"
+          "alt": "Zwei Katzen mit räumlich getrennten Wasserstellen in einer Wohnung"
         },
-        "related": "{ tags: [wasserstellen, trinkbrunnen, mehrkatzen, standort], limit: 4 }",
+        "related": {
+          "tags": [
+            "wasserstellen",
+            "trinkbrunnen",
+            "mehrkatzen",
+            "standort"
+          ],
+          "limit": 4
+        },
         "premiumBlocks": [
-          "{ type: products, eyebrow: \"Eine Quelle von mehreren\", title: \"Trinkbrunnen als zusätzliche Wasserstelle\", text: \"Ein Brunnen ergänzt breite Näpfe, sollte aber nicht die einzige Trinkmöglichkeit sein.\", productFilter: trinkbrunnen, productLimit: 3 }"
+          "type: products"
         ],
         "faq": [
-          "{ question: \"Reicht ein Trinkbrunnen für zwei Katzen?\", answer: \"Er kann genutzt werden, sollte aber nicht die einzige Quelle sein. Mehrere räumlich getrennte Wasserstellen reduzieren Konkurrenz und sichern Ausfälle ab.\" }",
-          "{ question: \"Müssen Wasserstellen in jedem Zimmer stehen?\", answer: \"Nein. Wichtig sind ruhige, gut erreichbare und voneinander getrennte Standorte auf den tatsächlich genutzten Ebenen der Wohnung.\" }"
+          "question: \"Wie viele Wassernäpfe braucht eine einzelne Katze?",
+          "question: \"Wie viele Wasserstellen brauchen zwei Katzen?",
+          "question: \"Gilt immer die Regel eine Wasserstelle pro Katze plus eine?",
+          "question: \"Zählen zwei Näpfe nebeneinander als zwei Wasserstellen?",
+          "question: \"Reicht ein Trinkbrunnen für zwei Katzen?",
+          "question: \"Ist ein Trinkbrunnen eine oder mehrere Wasserstellen?",
+          "question: \"Braucht eine Katze auf jeder Etage Wasser?",
+          "question: \"Wie weit sollten Wasserstellen vom Futter entfernt sein?",
+          "question: \"Wie weit muss Wasser von der Katzentoilette entfernt stehen?",
+          "question: \"Welche Näpfe eignen sich als Wasserstellen?",
+          "question: \"Sollten alle Wasserstellen gleich aussehen?",
+          "question: \"Warum trinkt meine Katze nur aus einem Glas?",
+          "question: \"Wie erkenne ich, dass die Wasserstellen ungünstig verteilt sind?",
+          "question: \"Wann sollte verändertes Trinkverhalten tierärztlich abgeklärt werden?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -10202,7 +10332,31 @@
         ],
         "priceCategory": "midrange",
         "useCase": "Smart-Home-Futterautomat",
-        "capacity": "4 Liter"
+        "capacity": "4 Liter",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "reservoirLiters": 4,
+            "portionGrams": 10,
+            "kibbleMaxMm": 12,
+            "largeDogFit": "conditional",
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.4,
+            "score": 88,
+            "priceCategory": "midrange",
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -10410,7 +10564,29 @@
         "priceCategory": "budget",
         "useCase": "Kontinuierlich zirkulierendes Trinkwasser für Katzen und kleine Hunde",
         "capacity": "Rund 2 Liter",
-        "expandable": "Ersatzpumpe, Netzteile sowie Polymer-Aktivkohle- und Dreistufenfilter separat erhältlich"
+        "expandable": "Ersatzpumpe, Netzteile sowie Polymer-Aktivkohle- und Dreistufenfilter separat erhältlich",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "budget"
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 79,
+            "priceCategory": "budget",
+            "productStatus": "active"
+          },
+          "custom": {
+            "filter": "Aktivkohlefilter, Ionenaustauschfilter"
+          }
+        }
       },
       "issues": []
     },
@@ -10585,7 +10761,24 @@
           "Zwei 48-Stunden-Timer",
           "Nass- und Trockenfutter",
           "Kühlakku"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.5,
+            "score": 71,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -10762,7 +10955,24 @@
           "Digitaltimer",
           "Nass- und Trockenfutter",
           "Kühlakku"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 73,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -10895,7 +11105,8 @@
         ],
         "comparisons": [
           "beste-futterautomaten-fuer-katzen",
-          "beste-futterautomaten-fuer-hunde"
+          "beste-futterautomaten-fuer-hunde",
+          "beste-futterautomaten-fuer-nassfutter"
         ],
         "comparisonFilters": {
           "animal": [
@@ -10943,7 +11154,45 @@
           "Vier programmierbare Öffnungszeiten",
           "Nass- und Trockenfutter",
           "Zwei Kühlakkus"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 73,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "portionierung": "5 Fächer; davon eines sofort zugänglich",
+            "zugang": "Zeitgesteuerter Drehdeckel; keine Tiererkennung",
+            "mehrkatzen": "Keine sichere Trennung; offenes Fach kann geteilt oder gestohlen werden",
+            "app": "Nein",
+            "ausfallsicherheit": "Batteriebetrieb; kein WLAN erforderlich",
+            "reinigung": "Schaleneinsatz und Deckel regelmäßig reinigen; Kühlakkus erneut einfrieren",
+            "kamera": "Nein",
+            "kuehlprinzip": "2 Kühlakkus; keine aktive Kühlung",
+            "mahlzeiten": "5 Fächer mit je 155 g; 4 spätere Öffnungen",
+            "steuerung": "Digitaler Timer am Gerät",
+            "stromversorgung": "3 AA-Batterien",
+            "hygiene": "Deckel und Einsatz spülmaschinengeeignet",
+            "tiertrennung": "Nein",
+            "geeignetfuer": "Bis zu zwei Katzen oder ein kleiner Hund",
+            "wichtigstegrenze": "Keine Fernkontrolle und keine geregelte Kühlung",
+            "offlineKonzept": "Fachautomat",
+            "appErforderlich": false,
+            "batteriebetrieb": true
+          }
+        }
       },
       "issues": []
     },
@@ -11110,7 +11359,27 @@
           "question: \"Wie häufig muss die Pumpe gereinigt werden?",
           "question: \"Ist der Kunststoff BPA-frei?",
           "question: \"Gibt es Ersatzteile?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 75,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "reinigung": "monatlich, bei hartem Wasser häufiger"
+          }
+        }
       },
       "issues": []
     },
@@ -11257,7 +11526,8 @@
           "cat-mate-c300"
         ],
         "comparisons": [
-          "beste-futterautomaten-fuer-katzen"
+          "beste-futterautomaten-fuer-katzen",
+          "beste-futterautomaten-fuer-nassfutter"
         ],
         "comparisonFilters": {
           "animal": [
@@ -11311,7 +11581,34 @@
         "priceCategory": "midrange",
         "useCase": "Zeitgesteuerte kleine Nass- und Trockenfuttermahlzeiten für Katzen",
         "capacity": "6 × 170 ml",
-        "expandable": "Zusätzliche Kühlakkus und Ersatz-Futtereinsatz separat erhältlich"
+        "expandable": "Zusätzliche Kühlakkus und Ersatz-Futtereinsatz separat erhältlich",
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 80,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "kuehlprinzip": "2 Kühlakkus; keine Temperaturregelung",
+            "mahlzeiten": "6 Fächer mit je 170 ml; erstes Fach offen",
+            "steuerung": "App und Touchpanel",
+            "stromversorgung": "USB-C; 4 C-Batterien als Backup",
+            "hygiene": "Entnehmbarer, spülmaschinengeeigneter Einsatz",
+            "tiertrennung": "Nein",
+            "geeignetfuer": "Katzen",
+            "wichtigstegrenze": "Kühlwirkung hängt stark von Vorbereitung und Raumtemperatur ab"
+          }
+        }
       },
       "issues": []
     },
@@ -11466,7 +11763,23 @@
         ],
         "priceCategory": "premium",
         "useCase": "Kamera-Futterautomat für Katzen",
-        "capacity": "2,9 Liter"
+        "capacity": "2,9 Liter",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 89,
+            "priceCategory": "premium",
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -11696,7 +12009,46 @@
           "question: \"Ist der Garmin Alpha T 20 für Katzen geeignet?",
           "question: \"Ist der Alpha T 20 wasserdicht?",
           "question: \"Was ist der Unterschied zwischen Alpha T 20 und Alpha TT 25?"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog"
+            ],
+            "deviceWeightGrams": 238,
+            "subscriptionRequired": false,
+            "transmission": "vhf",
+            "batteryMaxDays": 3,
+            "waterproofRating": "1 ATM",
+            "liveTracking": true,
+            "virtualFence": false,
+            "activityTracking": false
+          },
+          "general": {
+            "animal": [
+              "dog"
+            ],
+            "petSize": [
+              "medium",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Jagd und Arbeit",
+            "hundegroesse": "Mittelgroße bis große Hunde",
+            "ortung": "GPS und VHF",
+            "abo": false
+          }
+        }
       },
       "issues": []
     },
@@ -11836,7 +12188,39 @@
           "{ question: \"Was ist der Unterschied zwischen T 20 und TT 25?\", answer: \"Beide dienen der Hundeortung im Alpha-System. Das TT 25 ergänzt kompatible Trainingsfunktionen. Für reine Ortung ist das T 20 die zurückhaltendere Wahl.\" }",
           "{ question: \"Funktioniert das TT 25 ohne Abo?\", answer: \"Die direkte VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Alpha-Handgerät. Optionale inReach-Dienste am Handgerät sind davon getrennt.\" }",
           "{ question: \"Ist das TT 25 für normale Spaziergänge sinnvoll?\", answer: \"Meist nicht. Größe, Preis und Systemaufwand richten sich an spezialisierte Jagd- und Arbeitshundeeinsätze.\" }"
-        ]
+        ],
+        "comparisonData": {
+          "gps": {
+            "animal": [
+              "dog"
+            ],
+            "deviceWeightGrams": 253,
+            "subscriptionRequired": false,
+            "transmission": "vhf",
+            "batteryMaxDays": 3,
+            "waterproofRating": "1 ATM",
+            "liveTracking": true,
+            "virtualFence": false,
+            "activityTracking": false
+          },
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 78,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          }
+        }
       },
       "issues": []
     },
@@ -11995,7 +12379,24 @@
           "Zwei gleichmäßig versorgte Futternäpfe",
           "Bis zu sechs Mahlzeiten täglich",
           "5-Liter-Vorratsbehälter"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 73,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -12151,7 +12552,27 @@
           "6-Liter-Vorratsbehälter",
           "App-Steuerung",
           "Batterie-Backup"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [
+              "dry"
+            ]
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -12321,7 +12742,39 @@
           "5-Liter-Vorrat",
           "App-Steuerung",
           "Edelstahl-Napf"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "reservoirLiters": 6,
+            "largeDogFit": "conditional"
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 75,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "portionierung": "App-Zeitpläne; reale Portionsmenge kalibrieren",
+            "krokettengroesse": "vor Kauf mit verwendetem Futter prüfen",
+            "napf": "Edelstahl",
+            "kapazitaet": "5 Liter",
+            "app": "HoneyGuardian-App",
+            "notstrom": "Backup-Funktion je Angebotsvariante prüfen",
+            "hundegroesse": "klein bis mittelgroß",
+            "kamera": "Nein",
+            "tiertrennung": "Nein",
+            "redaktionellesprofil": "Preisorientierte Alternative"
+          }
+        }
       },
       "issues": []
     },
@@ -12533,7 +12986,28 @@
         "priceCategory": "budget",
         "useCase": "Mehrere zeitgesteuerte Trockenfuttermahlzeiten für Katzen und kleine Hunde ohne App",
         "capacity": "3 Liter",
-        "expandable": "Keine funktionale Erweiterung vorgesehen; Trockenmittelbeutel als Verbrauchsmaterial"
+        "expandable": "Keine funktionale Erweiterung vorgesehen; Trockenmittelbeutel als Verbrauchsmaterial",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ],
+            "priceTier": "budget"
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 79,
+            "priceCategory": "budget",
+            "productStatus": "active"
+          }
+        }
       },
       "issues": []
     },
@@ -12700,7 +13174,27 @@
           "question: \"Ist der oneisall 2,2L aus Edelstahl?",
           "question: \"Wie lange hält der Akku?",
           "question: \"Wie oft muss der Filter gewechselt werden?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 76,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "reinigung": "Entnehmbare beziehungsweise zerlegbare Komponenten"
+          }
+        }
       },
       "issues": []
     },
@@ -12916,7 +13410,27 @@
         "priceCategory": "midrange",
         "useCase": "Kombinierter Futter- und Wasserplatz für eine Katze mit Trockenfutter",
         "capacity": "5 Liter Futter plus 3,5 Liter Wasser",
-        "expandable": "Trockenmittelbeutel als Verbrauchsmaterial; keine funktionale Erweiterung vorgesehen"
+        "expandable": "Trockenmittelbeutel als Verbrauchsmaterial; keine funktionale Erweiterung vorgesehen",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 79,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          }
+        }
       },
       "issues": []
     },
@@ -12933,7 +13447,7 @@
         "testStatus": "editorial-review",
         "productStatus": "active",
         "description": "Kabelloser 3,2-Liter-Trinkbrunnen mit Edelstahl-Trinkfläche, 4.000-mAh-Akku, drei Betriebsmodi und mehrstufiger Filterung.",
-        "recommendation": "Ausgewogene kabellose Lösung für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank.",
+        "recommendation": "Empfehlung für die meisten Katzenhalter für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank.",
         "manufacturer": {
           "key": "oneisall",
           "name": "oneisall",
@@ -12994,18 +13508,18 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://amzn.to/3TculzO"
+          "url": "https://amzn.to/4fCjRBh"
         },
-        "rating": 4.1,
-        "score": 81,
+        "rating": 4.4,
+        "score": 87,
         "ratings": {
-          "verarbeitung": 4,
-          "bedienung": 4.4,
-          "reinigung": 4.1,
-          "lautstaerke": 4.1,
-          "akku": 4.1,
-          "zuverlaessigkeit": 3.9,
-          "preisleistung": 4.2
+          "verarbeitung": 4.4,
+          "bedienung": 4.5,
+          "reinigung": 4.4,
+          "lautstaerke": 4.4,
+          "akku": 4.3,
+          "zuverlaessigkeit": 4.2,
+          "preisleistung": 4.5
         },
         "decision": {
           "bestFor": [
@@ -13024,7 +13538,7 @@
         },
         "review": {
           "summary": "Der oneisall PW14 kombiniert 3,2 Liter Wasserreserve mit einer Trinkfläche aus Edelstahl 304, 4.000-mAh-Akku, Bewegungssensor, Intervallbetrieb und Dauerfluss.",
-          "verdict": "Eine stimmige kabellose Mittelklasselösung mit mehr Reserve als der PW13 und angenehmer Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht unabhängig verifizierte Herstellerangaben."
+          "verdict": "Das modernere Nachfolgemodell bietet eine ausgewogenere Gesamtleistung mit mehr Reserve als der PW13 und angenehmer Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht unabhängig verifizierte Herstellerangaben."
         },
         "strengths": [
           "3,2 Liter Wasserreserve",
@@ -13135,7 +13649,30 @@
         "priceCategory": "midrange",
         "useCase": "Kabellose Wasserversorgung für Katzen und kleine Hunde mit größerer Reserve",
         "capacity": "3,2 Liter",
-        "expandable": "Ersatzfilter und Vorfilterschwämme separat erhältlich"
+        "expandable": "Ersatzfilter und Vorfilterschwämme separat erhältlich",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 81,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "filter": "Ionenaustauschfilter, Mehrstufiges Filtersystem",
+            "reinigung": "Entnehmbare beziehungsweise zerlegbare Komponenten"
+          }
+        }
       },
       "issues": []
     },
@@ -13178,7 +13715,7 @@
             "{ src: \"../../assets/images/products/oneisall-3-5l-cordless-fountain/gallery-3.webp\", alt: \"Kabelloser Trinkbrunnen mit Katze\" }"
           ]
         },
-        "affiliate": "{ provider: amazon, label: \"Aktuellen Preis prüfen\", url: \"https://www.amazon.de/s?k=oneisall+3.5L+kabelloser+Trinkbrunnen\" }",
+        "affiliate": "{ provider: amazon, label: \"Aktuellen Preis prüfen\", url: \"https://amzn.to/4yCwsgt\" }",
         "rating": 4.5,
         "score": 89,
         "ratings": "{ verarbeitung: 4.5, bedienung: 4.5, reinigung: 4.5, lautstaerke: 4.5, akkureserve: 4.6, preisleistung: 4.6 }",
@@ -13238,7 +13775,30 @@
         "faq": [
           "{ question: \"Läuft das Wasser dauerhaft?\", answer: \"Je nach gewähltem Modus wird der Fluss durch Bewegung oder in Intervallen aktiviert.\" }",
           "{ question: \"Sind 60 Tage Laufzeit realistisch?\", answer: \"Das ist ein Maximalwert des Herstellers; Häufigkeit der Aktivierung und Akkuzustand wirken sich stark aus.\" }"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 89,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "lautstaerke": "30 dB",
+            "stromversorgung": "akku, Netzbetrieb",
+            "kapazitaet": "3,5L",
+            "material": "Edelstahl"
+          }
+        }
       },
       "issues": []
     },
@@ -13414,7 +13974,42 @@
           "Zwei Futterplätze",
           "5-Liter-Vorrat",
           "App-Variante erhältlich"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "reservoirLiters": 5,
+            "portionGrams": 8,
+            "kibbleMaxMm": 15,
+            "largeDogFit": "conditional"
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 73,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "futterart": "Trockenfutter bis ungefähr 12,7 mm",
+            "zugang": "Freier Zugang; keine Tiererkennung",
+            "mehrkatzen": "Zwei Näpfe mit ungefähr 28 cm Abstand, aber kein Schutz vor Futterklau",
+            "app": "Je Angebotsvariante Timer oder App",
+            "reinigung": "Edelstahlnäpfe und Futterrutschen regelmäßig reinigen",
+            "kamera": "Nein",
+            "zugangskontrolle": "Keine individuelle Kontrolle",
+            "zahl-der-futterplatze": "Zwei Schalen aus einem gemeinsamen Vorrat",
+            "futterarten": "Trockenfutter",
+            "mehrkatzen-eignung": "Gut bei gleichem Futter und ähnlicher Ration",
+            "konfliktpotenzial": "Mittel; eine schnelle Katze kann beide Schalen nutzen",
+            "kostenlogik": "Ein Gerät für zwei Futterplätze"
+          }
+        }
       },
       "issues": []
     },
@@ -13632,7 +14227,30 @@
         "priceCategory": "midrange",
         "useCase": "Großvolumige Wasserversorgung für mittelgroße und große Hunde sowie Mehrtierhaushalte",
         "capacity": "7 Liter",
-        "expandable": "Ersatzfilter, Pumpenschwämme und Ersatzpumpe separat erhältlich"
+        "expandable": "Ersatzfilter, Pumpenschwämme und Ersatzpumpe separat erhältlich",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog"
+            ],
+            "petSize": [
+              "medium",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 82,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "filter": "Mehrstufiges Filtersystem",
+            "reinigung": "mindestens wöchentlich laut zugänglicher Anleitung; allgemeiner Support nennt 1 bis 2 Wochen"
+          }
+        }
       },
       "issues": []
     },
@@ -13880,7 +14498,50 @@
           "question: \"Ist der Tracker wasserdicht?",
           "question: \"Misst der Tracker auch Aktivität?",
           "question: \"Was ist der Unterschied zu einem AirTag?"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "minimumPetWeightKg": 3,
+            "deviceWeightGrams": 33.1,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 10,
+            "waterproofRating": "IP67",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 82,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Alltag",
+            "hundegroesse": "Kleine bis mittelgroße Hunde",
+            "ortung": "GPS und Mobilfunk",
+            "abo": true
+          }
+        }
       },
       "issues": []
     },
@@ -14036,7 +14697,24 @@
           "App-Steuerung",
           "Zeitpläne",
           "Smart-Home-Fokus"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.5,
+            "score": 71,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -14184,7 +14862,26 @@
         ],
         "priceCategory": "premium",
         "useCase": "Gewichtsbasierte Trockenfutterportionierung",
-        "capacity": "3,6 Liter"
+        "capacity": "3,6 Liter",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.6,
+            "score": 91,
+            "priceCategory": "premium",
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -14417,7 +15114,30 @@
         "priceCategory": "premium",
         "useCase": "Kompakte gefilterte Wasserversorgung für eine Katze oder einen kleinen Hund",
         "capacity": "1,6 Liter nutzbar",
-        "expandable": "Filter Unit 3.0, Pumpenschwämme und UVC-Ersatzpumpe separat erhältlich"
+        "expandable": "Filter Unit 3.0, Pumpenschwämme und UVC-Ersatzpumpe separat erhältlich",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.2,
+            "score": 84,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          },
+          "custom": {
+            "material": "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304",
+            "filter": "Ionenaustauschfilter"
+          }
+        }
       },
       "issues": []
     },
@@ -14575,7 +15295,24 @@
           "question: \"Reicht der PETKIT Eversweet 5 Mini für mehrere Katzen?",
           "question: \"Hat der Eversweet 5 Mini eine App?",
           "question: \"Ist das Modell noch aktuell erhältlich?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.7,
+            "score": 74,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -14746,7 +15483,24 @@
           "question: \"Macht die UVC-Pumpe die Reinigung überflüssig?",
           "question: \"Sind 83 Tage Akkulaufzeit garantiert?",
           "question: \"Kann der Brunnen in die Spülmaschine?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -14916,7 +15670,24 @@
           "question: \"Ist der PETKIT Eversweet Max Cordless wirklich kabellos?",
           "question: \"Hat das Modell UVC?",
           "question: \"Wie realistisch sind 83 Tage Akkulaufzeit?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -15015,7 +15786,32 @@
         "faq": [
           "{ question: \"Ist der Solo 2 wirklich kabellos?\", answer: \"Die Pumpe arbeitet ohne Kabel im Tank; der Brunnen selbst benötigt weiterhin einen Netzanschluss.\" }",
           "{ question: \"Wie oft muss der Filter gewechselt werden?\", answer: \"PETKIT nennt ungefähr vier Wochen, abhängig von Wasserqualität, Tierzahl und Verschmutzung.\" }"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4.4,
+            "score": 87,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "lautstaerke": "25 dB",
+            "filter": "Ionenaustauschfilter",
+            "reinigung": "Entnehmbare Teile spülmaschinengeeignet",
+            "stromversorgung": "Akku, Netzbetrieb",
+            "kapazitaet": "2 Liter",
+            "material": "ABS-Kunststoff"
+          }
+        }
       },
       "issues": []
     },
@@ -15183,7 +15979,24 @@
           "question: \"Kann der PETKIT Eversweet Solo SE kabellos betrieben werden?",
           "question: \"Hat das Modell eine App?",
           "question: \"Kann der Brunnen in die Spülmaschine?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 76,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -15421,7 +16234,30 @@
           "question: \"Funktioniert der Eversweet Ultra ohne App?",
           "question: \"Ist der PETKIT Eversweet Ultra für große Hunde geeignet?",
           "question: \"Reichen fünf Liter für einen Urlaub?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 83,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          },
+          "custom": {
+            "material": "ABS, Polypropylen, PPO und Edelstahl 304",
+            "reinigung": "Trinkschale, Auslauf und magnetisches Sieb laut PETKIT"
+          }
+        }
       },
       "issues": []
     },
@@ -15577,7 +16413,24 @@
           "5-Liter-Vorratsbehälter",
           "PETKIT-App mit Fütterungsplänen und Statusmeldungen",
           "Edelstahlnapf mit integrierter Gewichtserfassung"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -15811,7 +16664,39 @@
         "priceCategory": "midrange",
         "useCase": "App-gesteuerte Trockenfutterportionen für eine Katze oder einen kleinen Hund",
         "capacity": "3 Liter",
-        "expandable": "Trockenmittelbeutel als Verbrauchsmaterial; keine Kamera- oder Tiererkennungs-Erweiterung"
+        "expandable": "Trockenmittelbeutel als Verbrauchsmaterial; keine Kamera- oder Tiererkennungs-Erweiterung",
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "futterart": "Trockenfutter",
+            "portionierung": "App-Zeitpläne; reale Grammmenge futterabhängig",
+            "zugang": "Freier Zugang; keine Tiererkennung",
+            "mehrkatzen": "Nur bedingt; ein Napf und keine Trennung",
+            "app": "PETKIT-App",
+            "ausfallsicherheit": "Netzbetrieb; konkrete Backup-Funktion der Variante prüfen",
+            "reinigung": "Edelstahlnapf und entnehmbare Futterteile regelmäßig reinigen",
+            "kamera": "Nein"
+          }
+        }
       },
       "issues": []
     },
@@ -15892,19 +16777,19 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://amzn.to/44ObkGn"
+          "url": "https://amzn.to/3TQJw1G"
         },
-        "rating": 4.1,
-        "score": 83,
+        "rating": 4.8,
+        "score": 95,
         "ratings": {
-          "app": 4.2,
-          "kamera": 4.3,
-          "tiererkennung": 3.8,
-          "portionierung": 4.3,
-          "reinigung": 3.8,
-          "zuverlässigkeit": 4,
-          "sicherheit": 4.1,
-          "preisleistung": 3.7
+          "app": 4.9,
+          "kamera": 4.9,
+          "tiererkennung": 4.5,
+          "portionierung": 4.8,
+          "reinigung": 4.3,
+          "zuverlässigkeit": 4.7,
+          "sicherheit": 4.8,
+          "preisleistung": 4.6
         },
         "decision": {
           "bestFor": [
@@ -15924,7 +16809,7 @@
         },
         "review": {
           "summary": "Der YumShare Dual-Hopper 2 P592 kombiniert einen 5-Liter-Doppelbehälter mit frei mischbaren Futteranteilen, 1080p-Kamera, Mehrtier-Erkennung, Restfutteranalyse und 2,4-/5-GHz-WLAN.",
-          "verdict": "Einer der funktionsreichsten Trockenfutterautomaten für Katzenhaushalte. Zwei Futtersorten, Kamera und AI-Protokolle bieten echten Mehrwert. Das Gerät ersetzt jedoch keine zugangsgesteuerte Fütterung, und der volle Videoumfang kann zusätzliche Abokosten verursachen."
+          "verdict": "Der PETKIT YumShare Dual-Hopper 2 zählt aktuell zu den technologisch fortschrittlichsten Trockenfutterautomaten für Katzenhaushalte. Zwei Futtersorten, Kamera und AI-Protokolle bieten echten Mehrwert. Das Gerät ersetzt jedoch keine zugangsgesteuerte Fütterung, und der volle Videoumfang kann zusätzliche Abokosten verursachen."
         },
         "strengths": [
           "zwei getrennte Vorratskammern",
@@ -16055,7 +16940,47 @@
           "question: \"Funktioniert der Automat bei Strom- oder Internetausfall?",
           "question: \"Kann Nassfutter eingefüllt werden?",
           "question: \"Ist der Automat für medizinisch getrennte Diäten geeignet?"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 83,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          },
+          "custom": {
+            "zugangskontrolle": "Tiererkennung und Kamera, aber keine physische Zugangssperre",
+            "zahl-der-futterplatze": "Ein Auslass, zwei getrennte Futterkammern",
+            "futterarten": "Zwei Trockenfuttersorten",
+            "portionierung": "App-gesteuerte Mischung beziehungsweise Auswahl aus zwei Kammern",
+            "mehrkatzen-eignung": "Gut für Sortenwechsel; ungeeignet für strikt getrennte Rationen",
+            "app": "PETKIT-App",
+            "ausfallsicherheit": "Netz- und App-Funktionen; Backup je Produktvariante prüfen",
+            "konfliktpotenzial": "Mittel bis hoch bei Futterneid, da nur ein Futterplatz",
+            "kostenlogik": "Ein Gerät, aber keine sichere individuelle Trennung",
+            "bild": "Kamera mit Tiererkennung",
+            "kontrollwert": "Sorten- und Aktivitätskontrolle",
+            "offline": "Video online",
+            "datenschutz": "Cloud prüfen",
+            "kamera": "Ja",
+            "futter": "Zwei Trockenfuttersorten",
+            "mehrtiere": "Keine Zugangssperre"
+          }
+        }
       },
       "issues": []
     },
@@ -16200,7 +17125,24 @@
           "Zwei Futterkammern",
           "KI-Kamera",
           "Separate Fütterungspläne"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4.7,
+            "score": 94,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -16321,6 +17263,23 @@
         },
         "faq": {
           "answer": ">"
+        },
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 82,
+            "productStatus": "unknown"
+          }
         }
       },
       "issues": []
@@ -16480,7 +17439,24 @@
           "Bis zu sechs Mahlzeiten täglich programmierbar",
           "Kompakter 2-Liter-Vorratsbehälter",
           "Netz- oder Batteriebetrieb möglich"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 72,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -16721,7 +17697,28 @@
           "question: \"Kann eine Sprachansage aufgenommen werden?",
           "question: \"Dürfen die Teile in die Spülmaschine?",
           "question: \"Ist der Air WiFi Feeder für zwei Katzen geeignet?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.2,
+            "score": 84,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          }
+        }
       },
       "issues": []
     },
@@ -16893,7 +17890,28 @@
           "question: \"Ist die Capsule Dog Fountain kabellos?",
           "question: \"Für welche Hundegröße ist sie gedacht?",
           "question: \"Kann der Brunnen draußen stehen?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "large"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 78,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "material": "breite Hundetrinkzone mit etwa 3,6 cm Tiefe"
+          }
+        }
       },
       "issues": []
     },
@@ -17062,7 +18080,24 @@
           "question: \"Ist jeder Dockstream 2 Smart kabellos?",
           "question: \"Erkennt der Brunnen mehrere Katzen getrennt?",
           "question: \"Wie häufig muss der Filter gewechselt werden?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -17233,7 +18268,24 @@
           "question: \"Läuft das Wasser im Akkubetrieb dauerhaft?",
           "question: \"Wie lange hält der Akku?",
           "question: \"Kann der Brunnen in die Spülmaschine?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -17408,7 +18460,29 @@
           "question: \"Wie viele Katzen können getrennt verfolgt werden?",
           "question: \"Kann der Anhänger einen Mikrochip-Futterautomaten stören?",
           "question: \"Ist der Brunnen für Hunde geeignet?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 80,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "reinigung": "Entnehmbare beziehungsweise zerlegbare Komponenten"
+          }
+        }
       },
       "issues": []
     },
@@ -17574,7 +18648,24 @@
           "question: \"Hat der PETLIBRO Glacier 2,1 oder 2,5 Liter?",
           "question: \"Ist der Glacier komplett spülmaschinengeeignet?",
           "question: \"Ersetzt die Ultrafiltration die Reinigung?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.9,
+            "score": 78,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -17725,7 +18816,41 @@
           "1080p-Kamera",
           "Nachtsicht und Zwei-Wege-Audio",
           "App-Steuerung"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "reservoirLiters": 5,
+            "portionGrams": 10,
+            "maxPortionsPerMeal": 50,
+            "maxMealGrams": 500,
+            "kibbleMaxMm": 15,
+            "largeDogFit": "technical-fit"
+          },
+          "editorial": {
+            "rating": 4.6,
+            "score": 92,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "bild": "1080p, Nachtsicht, Zwei-Wege-Audio",
+            "kontrollwert": "Sichtkontrolle des Napfs",
+            "offline": "Zeitpläne lokal, Kamera online",
+            "datenschutz": "Cloudoptionen prüfen",
+            "kamera": "Ja",
+            "futter": "Trockenfutter",
+            "mehrtiere": "Keine Tiertrennung"
+          }
+        }
       },
       "issues": []
     },
@@ -17869,7 +18994,25 @@
           "Zwei Edelstahlnäpfe",
           "Verstellbarer Mahlzeitenteiler",
           "App-Steuerung"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 90,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -18057,7 +19200,53 @@
           "Bis zu zehn Mahlzeiten täglich",
           "App-Steuerung und Fütterungsprotokoll",
           "Batterie-Backup"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "reservoirLiters": 5,
+            "portionGrams": 10,
+            "maxPortionsPerMeal": 50,
+            "maxMealGrams": 500,
+            "kibbleMaxMm": 15,
+            "largeDogFit": "technical-fit"
+          },
+          "editorial": {
+            "rating": 4.1,
+            "score": 82,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "portionierung": "1–50 Einheiten je Mahlzeit; 20 ml je Einheit",
+            "krokettengroesse": "2–15 mm",
+            "napf": "Edelstahl; Einzel- oder Doppelschale",
+            "kapazitaet": "5 Liter",
+            "notstrom": "3 D-Batterien; Zeitpläne laufen weiter",
+            "hundegroesse": "klein bis mittelgroß",
+            "kamera": "Nein",
+            "tiertrennung": "Nein; Doppelschale verteilt nur",
+            "redaktionellesprofil": "Bester Gesamtkompromiss",
+            "futterart": "Trockenfutter",
+            "zugang": "Freier Zugang; keine Tiererkennung",
+            "mehrkatzen": "Doppelschale möglich, aber keine sichere Trennung",
+            "reinigung": "Behälter, Rotor, Auslass und Edelstahlnapf regelmäßig reinigen",
+            "zugangskontrolle": "Keine individuelle Kontrolle",
+            "zahl-der-futterplatze": "Einzel- oder Doppelschale je Variante",
+            "futterarten": "Trockenfutter",
+            "mehrkatzen-eignung": "Gut bei gleichem Futter und ähnlicher Ration",
+            "konfliktpotenzial": "Mittel; Doppelschale verhindert keinen Futterklau",
+            "kostenlogik": "Ein Gerät, Doppelschalenvariante separat prüfen"
+          }
+        }
       },
       "issues": []
     },
@@ -18212,7 +19401,21 @@
           "RFID-Zugang über Halsbandanhänger",
           "App-Steuerung mit Fütterungsprotokollen",
           "Automatische Portionierung mit geschütztem Napf"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.7,
+            "score": 74,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -18344,7 +19547,8 @@
         ],
         "comparisons": [
           "beste-futterautomaten-fuer-katzen",
-          "beste-futterautomaten-fuer-hunde"
+          "beste-futterautomaten-fuer-hunde",
+          "beste-futterautomaten-fuer-nassfutter"
         ],
         "comparisonFilters": {
           "animal": [
@@ -18386,7 +19590,35 @@
           "Aktive Kühlung",
           "App-Steuerung",
           "Drei Edelstahl-Fächer"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 80,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "kuehlprinzip": "Thermoelektrische Aktivkühlung",
+            "mahlzeiten": "3 Fächer mit je 200 ml",
+            "steuerung": "App-Zeitpläne",
+            "stromversorgung": "Netzbetrieb; kein Batterie-Backup",
+            "hygiene": "Edelstahl-Futterschale; nach jeder Nutzung reinigen",
+            "tiertrennung": "Nein",
+            "geeignetfuer": "Katzen und kleine Hunde",
+            "wichtigstegrenze": "Nur drei Mahlzeiten und vollständige Stromabhängigkeit"
+          }
+        }
       },
       "issues": []
     },
@@ -18572,7 +19804,26 @@
           "Futterstandserkennung",
           "Notstrombetrieb mit vier D-Batterien",
           "Manuelle Futterausgabe"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [
+              "dry"
+            ]
+          },
+          "editorial": {
+            "rating": 4.2,
+            "score": 84,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": [
         {
@@ -18748,7 +19999,25 @@
           "question: \"Kann der Tank in die Spülmaschine?",
           "question: \"Läuft das Wasser dauerhaft?",
           "question: \"Ist er auch für Hunde geeignet?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 75,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -18855,7 +20124,8 @@
           "cat-mate-c500"
         ],
         "comparisons": [
-          "beste-futterautomaten-fuer-katzen"
+          "beste-futterautomaten-fuer-katzen",
+          "beste-futterautomaten-fuer-nassfutter"
         ],
         "comparisonFilters": {
           "animal": [
@@ -18896,7 +20166,37 @@
         ],
         "priceCategory": "premium",
         "useCase": "Aktiv gekühlte Nassfuttermahlzeiten",
-        "capacity": "6 Fächer / 4,5 Cups"
+        "capacity": "6 Fächer / 4,5 Cups",
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 90,
+            "priceCategory": "premium",
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "kuehlprinzip": "Aktive Halbleiterkühlung",
+            "mahlzeiten": "6 Edelstahl-Einsätze",
+            "steuerung": "PetSafe-App",
+            "stromversorgung": "Netzbetrieb; kein Backup dokumentiert",
+            "hygiene": "Entnehmbare, spülmaschinengeeignete Einsätze",
+            "tiertrennung": "Nein",
+            "geeignetfuer": "Katzen und kleine Hunde",
+            "wichtigstegrenze": "Deutschland-Verfügbarkeit und Langzeiterfahrung prüfen"
+          }
+        }
       },
       "issues": []
     },
@@ -19052,7 +20352,28 @@
         ],
         "priceCategory": "midrange",
         "useCase": "Offline-Fütterung mit großen Portionen",
-        "capacity": "24 Cups / etwa 5,7 Liter"
+        "capacity": "24 Cups / etwa 5,7 Liter",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.3,
+            "score": 86,
+            "priceCategory": "midrange",
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -19207,7 +20528,28 @@
         ],
         "priceCategory": "premium",
         "useCase": "Große, app-gesteuerte Trockenfutterportionen",
-        "capacity": "24 Cups / etwa 5,7 Liter"
+        "capacity": "24 Cups / etwa 5,7 Liter",
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.4,
+            "score": 88,
+            "priceCategory": "premium",
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -19365,7 +20707,36 @@
           "Mikrochip-Zugang",
           "Integrierte Portionswaage",
           "Für Nass- und Trockenfutter"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "zugangskontrolle": "Mikrochip oder RFID-Halsbandanhänger",
+            "zahl-der-futterplatze": "Ein kontrollierter Futterplatz pro Gerät",
+            "futterarten": "Nass- und Trockenfutter",
+            "portionierung": "Keine automatische Ausgabe; Napf wird manuell befüllt",
+            "mehrkatzen-eignung": "Sehr gut für getrennte Rationen",
+            "app": "Ja; Connect-System und Hub erforderlich",
+            "ausfallsicherheit": "Zugang bleibt batteriebetrieben; App-Daten benötigen Verbindung",
+            "konfliktpotenzial": "Niedrig bei sauberer Gewöhnung",
+            "kostenlogik": "Höhere Systemkosten durch Connect-Komponenten und ggf. zwei Geräte"
+          }
+        }
       },
       "issues": []
     },
@@ -19442,17 +20813,17 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=SureFeed+Microchip+Pet+Feeder"
+          "url": "https://amzn.to/4yzAAOc"
         },
-        "rating": 3.6,
-        "score": 72,
+        "rating": 4.5,
+        "score": 90,
         "ratings": {
-          "app": 2.25,
-          "portionierung": 3.6,
-          "reinigung": 3.95,
-          "zuverlaessigkeit": 3.95,
-          "sicherheit": 4.3,
-          "preisleistung": 3.6
+          "app": 2.8,
+          "portionierung": 4.8,
+          "reinigung": 4.4,
+          "zuverlaessigkeit": 4.5,
+          "sicherheit": 5,
+          "preisleistung": 4.5
         },
         "decision": {
           "bestFor": [
@@ -19470,7 +20841,7 @@
         },
         "review": {
           "summary": "Der SureFeed öffnet seinen Deckel nur für gespeicherte Mikrochip- oder RFID-Nummern.",
-          "verdict": "Für kontrollierten Futterzugang deutlich geeigneter als klassische Vorratsautomaten, aber kein zeitgesteuerter Futterspender."
+          "verdict": "Für Mehrtierhaushalte mit Futterdiebstahl zählt der SureFeed zu den sinnvollsten Speziallösungen am Markt. Er ersetzt keinen klassischen Futterautomaten, löst aber ein Problem, das zeitgesteuerte Automaten oft nicht lösen können."
         },
         "strengths": [
           "Nass- und Trockenfutter geeignet",
@@ -19496,7 +20867,8 @@
           "petlibro-granary-dual-feeder"
         ],
         "comparisons": [
-          "beste-futterautomaten-fuer-katzen"
+          "beste-futterautomaten-fuer-katzen",
+          "beste-futterautomaten-fuer-nassfutter"
         ],
         "comparisonFilters": {
           "animal": [
@@ -19538,7 +20910,49 @@
           "Mikrochip-Zugang",
           "Nass- und Trockenfutter",
           "Ohne WLAN"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 72,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "futterart": "Nass- und Trockenfutter",
+            "zugang": "Mikrochip oder RFID-Halsbandanhänger",
+            "mehrkatzen": "Sehr gut für getrennte Rationen; eigenes Gerät je geschütztem Futterplatz",
+            "reinigung": "Napf und Matte entnehmbar; Deckelmechanik sauber halten",
+            "kamera": "Nein",
+            "kuehlprinzip": "Keine aktive Kühlung",
+            "mahlzeiten": "Manuell befüllter 400-ml-Napf",
+            "steuerung": "Öffnung per Mikrochip oder RFID-Anhänger",
+            "stromversorgung": "4 C-Batterien",
+            "hygiene": "Napf und Matte entnehmbar; Mechanik trocken halten",
+            "tiertrennung": "Ja, über Mikrochip oder RFID",
+            "geeignetfuer": "Katzen und kleine Hunde",
+            "wichtigstegrenze": "Keine Zeitpläne und keine automatische Portionierung",
+            "zugangskontrolle": "Mikrochip oder RFID-Halsbandanhänger",
+            "zahl-der-futterplatze": "Ein kontrollierter Futterplatz pro Gerät",
+            "futterarten": "Nass- und Trockenfutter",
+            "mehrkatzen-eignung": "Sehr gut bei Diätfutter, Medikamenten und Futterklau",
+            "konfliktpotenzial": "Niedrig bei sauberer Gewöhnung und getrennten Standorten",
+            "kostenlogik": "Für zwei geschützte Plätze meist zwei Geräte nötig",
+            "offlineKonzept": "Mikrochip-Napf",
+            "appErforderlich": false,
+            "batteriebetrieb": true
+          }
+        }
       },
       "issues": []
     },
@@ -19729,7 +21143,37 @@
           "question: \"Braucht der Tractive CAT 6 Mini ein Abo?",
           "question: \"Funktioniert der Tracker ohne Mobilfunkempfang?",
           "question: \"Diagnostiziert der Tracker Krankheiten?"
-        ]
+        ],
+        "comparisonData": {
+          "gps": {
+            "animal": [
+              "cat"
+            ],
+            "minimumPetWeightKg": 3,
+            "deviceWeightGrams": 32,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 7,
+            "waterproofRating": "IP68",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "cat"
+            ],
+            "petSize": [],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 91,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          }
+        }
       },
       "issues": []
     },
@@ -19745,63 +21189,86 @@
         "layout": "product",
         "testStatus": "manufacturer-data",
         "productStatus": "active",
-        "description": "Großer GPS-Tracker für Hunde ab 20 kg mit LTE, IP68 und einer Herstellerlaufzeit von bis zu sechs Wochen.",
-        "recommendation": "Die stärkste Mobilfunkoption für große Hunde, wenn maximale Akkureserve wichtiger ist als geringes Gewicht und ein Abo akzeptiert wird.",
+        "description": "GPS- und Gesundheitstracker für Hunde ab 20 kg mit LTE-Live-Ortung, IP68, Sicherheitszonen und bis zu sechs Wochen Herstellerlaufzeit.",
+        "recommendation": "Die stärkste Tractive-Option für große Hunde, wenn eine sehr lange Akkureserve, schnelle Live-Ortung und eine ausgereifte App wichtiger sind als niedriges Gewicht und ein Betrieb ohne Abo.",
         "manufacturer": "{ key: \"tractive\", name: \"Tractive\", slug: \"tractive\" }",
         "category": "{ key: \"gps-tracker\", label: \"GPS-Tracker\", path: \"/gps-tracker/\" }",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\" }",
-        "seo": "{ title: \"Tractive DOG 6 XL: Akku, Größe & Daten\", description: \"Tractive DOG 6 XL mit 70 g, IP68, LTE, Abo und bis zu sechs Wochen Akkulaufzeit für große Hunde.\", canonical: \"/produkt/tractive-dog-6-xl/\", sitemap: true, priority: 0.8 }",
+        "seo": {
+          "title": "Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check",
+          "description": "Tractive DOG 6 XL eingeordnet: rund 70 g, LTE-Live-Ortung, IP68, Gesundheits-Trends, Abo und bis zu 42 Tage Akkulaufzeit.",
+          "canonical": "/produkt/tractive-dog-6-xl/",
+          "sitemap": true,
+          "priority": 0.85
+        },
         "hub": "{ sections: [\"produkte\", \"gps-tracker\"] }",
         "tags": [
           "gps-tracker",
           "hunde",
           "grosse-hunde",
+          "live-ortung",
           "langer-akku",
+          "gesundheitstracking",
           "abo"
         ],
         "images": {
-          "hero": "{ src: \"../../assets/images/guides/gps-tracker/hero.webp\", alt: \"Generische GPS-Tracker-Darstellung für große Hunde; nicht das konkrete Produkt\" }",
-          "thumbnail": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"Redaktionelle Grafik zu Akkureserve und Mobilfunk\" }",
-          "comparison": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"GPS-Tracker mit langer Akkulaufzeit im Vergleich\" }",
+          "hero": "{ src: \"../../assets/images/guides/gps-tracker/hero.webp\", alt: \"Generische redaktionelle Darstellung eines GPS-Trackers an einem großen Hund; nicht das konkrete Produkt\" }",
+          "thumbnail": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"Redaktionelle Grafik zu Akkureserve und laufenden Mobilfunkkosten\" }",
+          "comparison": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"GPS-Tracker mit langer Akkulaufzeit und Abo im Vergleich\" }",
           "gallery": [
-            "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Tracker sicher am Hund befestigen\" }",
-            "{ src: \"../../assets/images/guides/gps-tracker/range-accuracy.webp\", alt: \"GPS- und Mobilfunkgrenzen\" }"
+            "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Sichere Befestigung eines großen GPS-Trackers am Hundehalsband\" }",
+            "{ src: \"../../assets/images/guides/gps-tracker/range-accuracy.webp\", alt: \"Einfluss von GPS-Sicht und Mobilfunkempfang auf die Hundeortung\" }"
           ]
         },
-        "affiliate": "{ provider: \"manufacturer\", label: \"Beim Hersteller ansehen\", url: \"https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE\" }",
+        "affiliate": "{ provider: \"amazon\", label: \"Bei Amazon ansehen\", url: \"https://amzn.to/4pKPmOg\" }",
         "rating": 4.6,
         "score": 91,
         "ratings": "{ ortung: 4.7, app: 4.8, akku: 4.9, tragekomfort: 4.0, kosten: 4.0 }",
         "decision": {
           "bestFor": [
             "Hunde ab 20 kg",
-            "lange Touren",
-            "große Akkureserve",
-            "Live-Ortung per App"
+            "Lange Touren und große Ladeabstände",
+            "Schnelle Live-Ortung über Mobilfunk",
+            "Breite Halsbänder bis etwa 4 cm",
+            "Aktivitäts-, Schlaf- und Gesundheits-Trends"
           ],
           "attention": [
-            "70 g sind für kleine Tiere ungeeignet",
-            "Abo pro Tracker erforderlich",
-            "sechs Wochen gelten mit Energiesparzonen",
-            "Mobilfunkabdeckung erforderlich"
+            "Rund 70 g und das größere Gehäuse sind für kleine Hunde ungeeignet",
+            "Für jeden Tracker ist ein eigenes Abo erforderlich",
+            "Bis zu sechs Wochen gelten nur mit Energiesparzonen und günstiger Nutzung",
+            "Ohne Mobilfunkabdeckung ist keine reguläre Fernortung möglich",
+            "Gesundheitstrends ersetzen keine tierärztliche Diagnose"
           ]
         },
-        "review": "{ summary: \"DOG-6-Funktionen im größeren Gehäuse mit deutlich mehr Akkureserve.\", verdict: \"Klare Langzeitwahl für große Hunde, aber keine kompakte Universallösung.\" }",
+        "review": {
+          "summary": "Der DOG 6 XL überträgt die Funktionen des kompakten DOG 6 in ein größeres IP68-Gehäuse und erhöht die Herstellerlaufzeit mit Energiesparzonen von bis zu zwei auf bis zu sechs Wochen.",
+          "verdict": "Die überzeugendste Tractive-Variante für große Hunde und lange Ladeabstände, sofern Gewicht, Abo und Mobilfunkabhängigkeit zum Einsatz passen."
+        },
         "strengths": [
-          "bis zu sechs Wochen Herstellerlaufzeit",
-          "IP68",
-          "Live-Ortung ohne feste Distanzgrenze",
-          "Gesundheits- und Aktivitätstrends",
-          "für breite Halsbänder"
+          "Bis zu 42 Tage Herstellerlaufzeit mit Energiesparzonen",
+          "Bis zu 20 Tage laut Hersteller auch ohne Energiesparzonen",
+          "Live-Updates etwa alle 2 bis 3 Sekunden",
+          "IP68 und verstärktes Gehäuse",
+          "GPS, GLONASS und Galileo",
+          "Virtuelle Zäune, Licht und Signalton",
+          "Aktivitäts-, Schlaf-, Vitalwert-, Bell- und Kratztrends",
+          "Clip für Halsbänder bis etwa 4 cm"
         ],
         "weaknesses": [
-          "70 g Gewicht",
-          "Abo zwingend",
-          "für Hunde unter 20 kg nicht empfohlen"
+          "Rund 70 g und deutlich größeres Gehäuse",
+          "Eigenes Abo pro Tracker zwingend",
+          "Für Hunde unter 20 kg nicht empfohlen",
+          "Familienfreigabe und weltweite Nutzung nur im Premium-Abo",
+          "Keine verlässliche Fernortung ohne Mobilfunknetz",
+          "Kein autarkes VHF-System für abgelegene Gebiete"
         ],
-        "experience": "{ summary: \"Redaktionelle Auswertung offizieller Herstellerdaten.\", methodology: \"Kein eigener Praxistest.\", maintenance: \"Clip, Ladekontakte und Gehäuse regelmäßig prüfen und vor längeren Touren laden.\" }",
+        "experience": {
+          "summary": "Redaktionelle Einordnung anhand aktueller Hersteller-, Support- und Produktdaten; kein eigener Praxistest.",
+          "methodology": "Bewertet wurden dokumentierte Ortungstechnik, Live-Intervall, Tier-Fit, Gehäusegröße, Befestigung, Akkubedingungen, App-Funktionen, Folgekosten und Systemabhängigkeiten.",
+          "maintenance": "Clip, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Touren vollständig laden und Ortung sowie Benachrichtigungen im Freien testen."
+        },
         "alternatives": [
           "tractive-dog-6",
           "weenect-xt",
@@ -19813,19 +21280,23 @@
         ],
         "features": [
           "Live-Ortung",
-          "Sicherheitszonen",
+          "virtuelle Zäune",
           "Positionsverlauf",
-          "Aktivitäts- und Schlaftracking"
+          "Radar-Modus",
+          "Licht und Signalton",
+          "Aktivitäts- und Schlaftracking",
+          "Ruhe-Herzfrequenz- und Atemfrequenz-Trends",
+          "Bell- und Kratzverhalten",
+          "Gesundheitswarnungen",
+          "Familienfreigabe im Premium-Abo"
         ],
         "priceCategory": "midrange",
-        "useCase": "Mobilfunktracker für große Hunde und lange Akkureserve",
+        "useCase": "Mobilfunktracker für große Hunde mit besonders langer Akkureserve",
         "comparisonFilters": {
           "animal": [
-            "dog",
-            "cat"
+            "dog"
           ],
           "petSize": [
-            "small",
             "large"
           ],
           "foodType": []
@@ -19833,26 +21304,29 @@
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, GLONASS und Galileo\" }",
           "{ label: \"Übertragung\", value: \"LTE/4G (Cat 1 bis)\" }",
+          "{ label: \"Live-Ortung\", value: \"Standortaktualisierung etwa alle 2 bis 3 Sekunden\" }",
           "{ label: \"Reichweite\", value: \"Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich\" }",
-          "{ label: \"Abo\", value: \"Erforderlich; ein Abo pro Tracker\" }",
-          "{ label: \"App\", value: \"Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer\" }",
+          "{ label: \"Abdeckung\", value: \"Premium laut Hersteller in mehr als 175 Ländern\" }",
+          "{ label: \"Abo\", value: \"Erforderlich; ein eigenes Abo pro Tracker\" }",
+          "{ label: \"App\", value: \"Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer\" }",
           "{ label: \"WLAN\", value: \"2,4 GHz für Energiesparzonen\" }",
           "{ label: \"Bluetooth\", value: \"Bluetooth 5.0\" }",
-          "{ label: \"Akkulaufzeit\", value: \"Bis zu 6 Wochen mit Energiesparzonen\" }",
-          "{ label: \"Stromversorgung\", value: \"Integrierter Akku, USB-C-Ladekabel\" }",
+          "{ label: \"Akkulaufzeit\", value: \"Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne\" }",
+          "{ label: \"Laden\", value: \"Integrierter Akku, mitgeliefertes USB-C-Ladekabel\" }",
           "{ label: \"Wasserschutz\", value: \"IP68\" }",
-          "{ label: \"Abmessungen\", value: \"83 × 47 × 20 mm\" }",
-          "{ label: \"Gewicht\", value: \"70 g\" }",
+          "{ label: \"Abmessungen\", value: \"Etwa 84 × 48 × 20 mm\" }",
+          "{ label: \"Gewicht\", value: \"Rund 70 g\" }",
           "{ label: \"Geeignet für\", value: \"Hunde ab 20 kg\" }",
-          "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis 4 cm Breite\" }",
-          "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
+          "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis etwa 4 cm Breite\" }",
+          "{ label: \"Gesundheitstrends\", value: \"Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten\" }",
+          "{ label: \"Gehäuse\", value: \"Verstärktes, laut Hersteller glasfaserverstärktes Design\" }"
         ],
         "gps": {
           "animal": [
             "dog"
           ],
           "minimumPetWeightKg": 20,
-          "deviceWeightGrams": 90,
+          "deviceWeightGrams": 70,
           "weightBasis": "device",
           "subscriptionRequired": true,
           "includedServiceMonths": 0,
@@ -19866,12 +21340,64 @@
           "attachmentType": "clip"
         },
         "faq": [
-          "{ question: \"Wie lange hält der DOG 6 XL?\", answer: \"Tractive nennt bis zu sechs Wochen mit Energiesparzonen. Häufiges Live-Tracking und schwacher Empfang verkürzen die Laufzeit.\" }",
-          "{ question: \"Ist er für kleine Hunde geeignet?\", answer: \"Nein. Der Hersteller empfiehlt das 70-g-Modell für Hunde ab 20 kg. Für leichtere Hunde ist der DOG 6 vorgesehen.\" }",
-          "{ question: \"Funktioniert der DOG 6 XL ohne Abo?\", answer: \"Nein. Für Mobilfunkübertragung und App-Ortung ist ein aktives Tractive-Abo erforderlich.\" }"
-        ]
+          "question: \"Wie lange hält der Akku des Tractive DOG 6 XL?",
+          "question: \"Für welche Hunde ist der DOG 6 XL geeignet?",
+          "question: \"Braucht der DOG 6 XL ein Abo?",
+          "question: \"Wie schnell aktualisiert der DOG 6 XL den Standort?",
+          "question: \"Funktioniert der DOG 6 XL ohne Mobilfunknetz?",
+          "question: \"Was ist der Unterschied zwischen DOG 6 und DOG 6 XL?",
+          "question: \"Passt der DOG 6 XL an jedes Halsband?",
+          "question: \"Ist der DOG 6 XL wasserdicht?",
+          "question: \"Welche Gesundheitsdaten zeigt der DOG 6 XL?",
+          "question: \"Ist der DOG 6 XL besser als ein AirTag?"
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog"
+            ],
+            "minimumPetWeightKg": 20,
+            "deviceWeightGrams": 70,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 42,
+            "waterproofRating": "IP68",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "dog"
+            ],
+            "petSize": [
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.6,
+            "score": 91,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Alltag und längere Touren",
+            "hundegroesse": "Große Hunde",
+            "ortung": "GPS und Mobilfunk",
+            "abo": true
+          }
+        }
       },
-      "issues": []
+      "issues": [
+        {
+          "severity": "error",
+          "code": "TEST_CLAIM_CONFLICT",
+          "message": "Testbehauptung widerspricht dem Teststatus."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/products/tractive-dog-6.md",
@@ -19885,76 +21411,84 @@
         "layout": "product",
         "testStatus": "manufacturer-data",
         "productStatus": "active",
-        "description": "Kompakter GPS- und Gesundheitstracker für Hunde über 4 kg mit LTE, Live-Ortung, Sicherheitszonen und Herstellerlaufzeit bis zwei Wochen.",
-        "recommendation": "Ausgewogene Mobilfunklösung für kleine bis mittelgroße Hunde, wenn weltweite Netzunterstützung, eine ausgereifte App und kompakte Abmessungen wichtiger sind als ein Betrieb ohne Abo.",
+        "description": "Kompakter GPS- und Gesundheitstracker für Hunde ab 4 kg mit LTE, Live-Ortung, Sicherheitszonen, Vitalwert-Trends und bis zu zwei Wochen Herstellerlaufzeit.",
+        "recommendation": "Starker GPS-Allrounder für kleine und mittelgroße Hunde, wenn eine ausgereifte App, schnelle Live-Ortung und Gesundheits-Trends wichtiger sind als ein Betrieb ohne Abo.",
         "manufacturer": "{ key: \"tractive\", name: \"Tractive\", slug: \"tractive\" }",
         "category": "{ key: \"gps-tracker\", label: \"GPS-Tracker\", path: \"/gps-tracker/\" }",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
+        "updatedAt": "2026-07-24",
         "author": "{ name: \"PfotenTechnik Redaktion\" }",
         "seo": {
-          "title": "Tractive DOG 6: Daten, Akku & Einordnung",
-          "description": "Tractive DOG 6 mit 39 g, LTE, IP68, Live-Ortung, Abo und bis zu zwei Wochen Akkulaufzeit eingeordnet.",
+          "title": "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check",
+          "description": "Tractive DOG 6 eingeordnet: 39 g, LTE-Live-Ortung, IP68, Vitalwert-Trends, Sicherheitszonen, Abo und bis zu 14 Tage Akkulaufzeit.",
           "canonical": "/produkt/tractive-dog-6/",
           "sitemap": true,
-          "priority": 0.8
+          "priority": 0.85
         },
         "hub": "{ sections: [\"produkte\", \"gps-tracker\"] }",
         "tags": [
           "gps-tracker",
           "hunde",
           "mobilfunk",
+          "live-ortung",
+          "gesundheitstracking",
           "app",
           "abo"
         ],
         "images": {
           "hero": "{ src: \"../../assets/images/guides/gps-tracker/hero.webp\", alt: \"Generische redaktionelle Darstellung eines GPS-Trackers am Hund; nicht das konkrete Produkt\" }",
-          "thumbnail": "{ src: \"../../assets/images/guides/gps-tracker/how-it-works.webp\", alt: \"Datenweg eines GPS-Trackers als redaktionelle Grafik\" }",
-          "comparison": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"Mobilfunktracker mit Akku und Abo im redaktionellen Vergleich\" }",
+          "thumbnail": "{ src: \"../../assets/images/guides/gps-tracker/how-it-works.webp\", alt: \"Datenweg eines GPS-Trackers über Satelliten, Mobilfunk und App\" }",
+          "comparison": "{ src: \"../../assets/images/guides/gps-tracker/battery-subscription.webp\", alt: \"Mobilfunktracker mit Akkulaufzeit und laufenden Abokosten im Vergleich\" }",
           "gallery": [
-            "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Sichere Befestigung eines GPS-Trackers\" }",
-            "{ src: \"../../assets/images/guides/gps-tracker/range-accuracy.webp\", alt: \"Einfluss von Umgebung und Mobilfunk auf GPS-Ortung\" }"
+            "{ src: \"../../assets/images/guides/gps-tracker/attachment.webp\", alt: \"Sichere Befestigung eines kompakten GPS-Trackers am Hundehalsband\" }",
+            "{ src: \"../../assets/images/guides/gps-tracker/range-accuracy.webp\", alt: \"Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung\" }"
           ]
         },
-        "affiliate": "{ provider: \"manufacturer\", label: \"Beim Hersteller ansehen\", url: \"https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE\" }",
+        "affiliate": "{ provider: \"amazon\", label: \"Bei Amazon ansehen\", url: \"https://amzn.to/44NGoGb\" }",
         "rating": 4.6,
         "score": 92,
         "ratings": "{ ortung: 4.7, app: 4.8, akku: 4.5, tragekomfort: 4.5, kosten: 4.0 }",
         "decision": {
           "bestFor": [
-            "Hunde über 4 kg",
-            "Live-Ortung über Mobilfunk",
-            "Familien mit App-Freigabe",
-            "Aktivitäts- und Gesundheits-Trends"
+            "Hunde ab 4 kg",
+            "Schnelle Live-Ortung über Mobilfunk",
+            "Kleine bis mittelgroße Hunde",
+            "Familien mit gemeinsamer Ortung im Premium-Abo",
+            "Aktivitäts-, Schlaf- und Gesundheits-Trends"
           ],
           "attention": [
-            "Für die Ortung ist ein eigenes Abo pro Tracker erforderlich",
-            "Die Maximallaufzeit setzt Energiesparzonen voraus",
-            "Mobilfunkabdeckung bleibt Voraussetzung",
-            "Tracker ersetzt weder Chip noch Marke"
+            "Für jeden Tracker ist ein eigenes Abo erforderlich",
+            "Die maximale Akkulaufzeit setzt Energiesparzonen und moderate Nutzung voraus",
+            "GPS- und Mobilfunkempfang bleiben Voraussetzung",
+            "Familienfreigabe und weltweite Abdeckung gehören zum Premium-Abo",
+            "Gesundheitsdaten zeigen Trends und ersetzen keine Diagnose"
           ]
         },
         "review": {
-          "summary": "Der DOG 6 kombiniert 39 g Gewicht, drei Satellitensysteme, LTE/4G, WLAN-Energiesparzonen und Gesundheits-Trends in einem kompakten Gehäuse.",
-          "verdict": "Der stärkste Allrounder im Hundevergleich, sofern Abo und Cloud-Betrieb akzeptiert werden."
+          "summary": "Der DOG 6 kombiniert rund 39 g Gewicht, LTE-Live-Ortung, virtuelle Zäune, WLAN-Energiesparzonen sowie Aktivitäts- und Gesundheits-Trends in einem kompakten IP68-Gehäuse.",
+          "verdict": "Einer der ausgewogensten Mobilfunktracker für kleine und mittelgroße Hunde, sofern Abo, Cloud-Betrieb und die empfangsabhängige Laufzeit akzeptiert werden."
         },
         "strengths": [
-          "39 g leicht",
-          "bis zu zwei Wochen Herstellerlaufzeit",
-          "IP68",
-          "GPS",
-          "GLONASS und Galileo",
-          "Live-Ortung und Sicherheitszonen"
+          "Rund 39 g leicht",
+          "Live-Updates im Abstand von etwa 2 bis 3 Sekunden",
+          "Bis zu zwei Wochen Herstellerlaufzeit mit Energiesparzonen",
+          "IP68 und kompakte Bauform",
+          "GPS, GLONASS und Galileo",
+          "Virtuelle Zäune, Licht und Signalton",
+          "Aktivitäts-, Schlaf-, Vitalwert-, Bell- und Kratztrends"
         ],
         "weaknesses": [
-          "Abo zwingend",
-          "Laufzeit nutzungs- und empfangsabhängig",
-          "kein Betrieb als autarkes VHF-System"
+          "Eigenes Abo pro Tracker zwingend",
+          "Laufzeit stark von Live-Nutzung, Bewegung, Empfang und Energiesparzonen abhängig",
+          "Familienfreigabe und weltweite Nutzung nur im Premium-Abo",
+          "Keine verlässliche Ortung ohne Mobilfunkabdeckung",
+          "Gesundheitswarnungen sind kein medizinisches Messgerät",
+          "Kein autarkes VHF-System für abgelegene Gebiete"
         ],
         "experience": {
-          "summary": "Einordnung ausschließlich anhand aktueller Tractive-Produkt- und Supportdaten.",
-          "methodology": "Kein eigener Praxistest; Bewertung nach dokumentierter Technik, Tier-Fit, Folgekosten und Systemabhängigkeiten.",
-          "maintenance": "Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen; vor Ausflügen vollständig laden."
+          "summary": "Redaktionelle Einordnung anhand aktueller Hersteller-, Support- und Produktdaten; kein eigener Praxistest.",
+          "methodology": "Bewertet wurden dokumentierte Ortungstechnik, Live-Intervall, Tier-Fit, Befestigung, Akkubedingungen, App-Funktionen, Folgekosten und Systemabhängigkeiten.",
+          "maintenance": "Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen vollständig laden und die Ortung im Freien testen."
         },
         "alternatives": [
           "weenect-xs",
@@ -19969,15 +21503,19 @@
           "Live-Ortung",
           "virtuelle Zäune",
           "Positionsverlauf",
+          "Radar-Modus",
+          "Licht und Signalton",
           "Aktivitäts- und Schlaftracking",
-          "Familienfreigabe je nach Abo"
+          "Ruhe-Herzfrequenz- und Atemfrequenz-Trends",
+          "Bell- und Kratzverhalten",
+          "Gesundheitswarnungen",
+          "Familienfreigabe im Premium-Abo"
         ],
         "priceCategory": "midrange",
-        "useCase": "Alltagstracker für Hunde über 4 kg",
+        "useCase": "Kompakter Alltagstracker für Hunde ab 4 kg",
         "comparisonFilters": {
           "animal": [
-            "dog",
-            "cat"
+            "dog"
           ],
           "petSize": [
             "small",
@@ -19988,19 +21526,22 @@
         "specs": [
           "{ label: \"Ortung\", value: \"GPS, GLONASS und Galileo\" }",
           "{ label: \"Übertragung\", value: \"LTE/4G (Cat 1 bis)\" }",
+          "{ label: \"Live-Ortung\", value: \"Standortaktualisierung etwa alle 2 bis 3 Sekunden\" }",
           "{ label: \"Reichweite\", value: \"Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich\" }",
-          "{ label: \"Abo\", value: \"Erforderlich; ein Abo pro Tracker\" }",
-          "{ label: \"App\", value: \"Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer\" }",
+          "{ label: \"Abdeckung\", value: \"Premium laut Hersteller in mehr als 175 Ländern\" }",
+          "{ label: \"Abo\", value: \"Erforderlich; ein eigenes Abo pro Tracker\" }",
+          "{ label: \"App\", value: \"Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer\" }",
           "{ label: \"WLAN\", value: \"2,4 GHz für Energiesparzonen\" }",
           "{ label: \"Bluetooth\", value: \"Bluetooth 5.0\" }",
-          "{ label: \"Akkulaufzeit\", value: \"Bis zu 2 Wochen mit Energiesparzonen\" }",
-          "{ label: \"Stromversorgung\", value: \"Integrierter Akku, USB-C-Ladekabel\" }",
+          "{ label: \"Akkulaufzeit\", value: \"Bis zu 14 Tage mit Energiesparzonen\" }",
+          "{ label: \"Akku\", value: \"Integrierter Akku, laut Support 930 mAh\" }",
+          "{ label: \"Laden\", value: \"Mitgeliefertes USB-C-Ladekabel\" }",
           "{ label: \"Wasserschutz\", value: \"IP68\" }",
           "{ label: \"Abmessungen\", value: \"71 × 29 × 17 mm\" }",
-          "{ label: \"Gewicht\", value: \"39 g\" }",
-          "{ label: \"Geeignet für\", value: \"Hunde über 4 kg\" }",
-          "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis 2,8 cm Breite\" }",
-          "{ label: \"Material\", value: \"Nicht vom Hersteller ausgewiesen\" }"
+          "{ label: \"Gewicht\", value: \"Rund 39 g\" }",
+          "{ label: \"Geeignet für\", value: \"Hunde ab 4 kg\" }",
+          "{ label: \"Befestigung\", value: \"Clip für Halsbänder bis etwa 2,8 cm Breite\" }",
+          "{ label: \"Gesundheitstrends\", value: \"Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten\" }"
         ],
         "gps": {
           "animal": [
@@ -20021,12 +21562,65 @@
           "attachmentType": "clip"
         },
         "faq": [
-          "{ question: \"Braucht der Tractive DOG 6 ein Abo?\", answer: \"Ja. Die integrierte Mobilfunkverbindung und die App-Dienste werden über ein eigenes Abo pro Tracker bereitgestellt. Ohne aktives Abo ist der Tracker nicht für die laufende Ortung nutzbar.\" }",
-          "{ question: \"Für welche Hunde ist der DOG 6 gedacht?\", answer: \"Tractive empfiehlt den DOG 6 für Hunde über 4 kg. Zusätzlich muss das Halsband zur mitgelieferten Klammer und der Tracker zum individuellen Tragekomfort passen.\" }",
-          "{ question: \"Hält der Akku immer zwei Wochen?\", answer: \"Nein. Zwei Wochen sind eine Hersteller-Maximalangabe mit Energiesparzonen. Live-Tracking, Bewegung, Empfang und Temperatur können die tatsächliche Laufzeit verkürzen.\" }"
-        ]
+          "question: \"Braucht der Tractive DOG 6 ein Abo?",
+          "question: \"Für welche Hunde ist der DOG 6 geeignet?",
+          "question: \"Wie schnell aktualisiert der DOG 6 den Standort?",
+          "question: \"Hält der Akku immer zwei Wochen?",
+          "question: \"Funktioniert der Tractive DOG 6 ohne Mobilfunknetz?",
+          "question: \"Was ist eine Energiesparzone?",
+          "question: \"Kann meine Familie den Hund ebenfalls orten?",
+          "question: \"Welche Gesundheitsdaten erfasst der DOG 6?",
+          "question: \"Ist der Tractive DOG 6 wasserdicht?",
+          "question: \"Ist der DOG 6 besser als ein AirTag?"
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog"
+            ],
+            "minimumPetWeightKg": 4,
+            "deviceWeightGrams": 39,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 14,
+            "waterproofRating": "IP68",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "dog"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.6,
+            "score": 92,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Alltag und Auslauf",
+            "hundegroesse": "Kleine bis große Hunde",
+            "ortung": "GPS und Mobilfunk",
+            "abo": true
+          }
+        }
       },
-      "issues": []
+      "issues": [
+        {
+          "severity": "error",
+          "code": "TEST_CLAIM_CONFLICT",
+          "message": "Testbehauptung widerspricht dem Teststatus."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/products/weenect-xs.md",
@@ -20169,7 +21763,48 @@
           "{ question: \"Ist der Weenect XS für Katzen geeignet?\", answer: \"Ja. Weenect bietet ihn für Katzen ab 3 kg mit einem Anti-Strangulations-Elastikband an. Sitz und sichere Öffnungsfunktion müssen individuell geprüft werden.\" }",
           "{ question: \"Wie lange hält sein Akku?\", answer: \"Weenect nennt bis zu sieben Tage mit WLAN-Zonen und rund zwei Tage bei kontinuierlichem Tracking. Die Nutzungsart verändert den Wert erheblich.\" }",
           "{ question: \"Kann ein Abo mehrere Tracker versorgen?\", answer: \"Mehrere Tiere lassen sich in einem Konto verwalten, aber jeder Tracker benötigt laut Weenect ein eigenes Abo.\" }"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "minimumPetWeightKg": 3,
+            "deviceWeightGrams": 27,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 10,
+            "waterproofRating": "IP68",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": [],
+            "priceTier": "midrange"
+          },
+          "editorial": {
+            "rating": 4.6,
+            "score": 92,
+            "priceCategory": "midrange",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Alltag",
+            "hundegroesse": "Kleine Hunde",
+            "ortung": "GPS und Mobilfunk",
+            "abo": true
+          }
+        }
       },
       "issues": []
     },
@@ -20311,7 +21946,47 @@
           "{ question: \"Was unterscheidet den Weenect XT vom XS?\", answer: \"Der XT ist größer und schwerer, bietet aber laut Hersteller bis zu drei Wochen Akkulaufzeit, eine stärkere Leuchte und eine auf Outdoor-Nutzung ausgelegte Befestigung.\" }",
           "{ question: \"Braucht der Weenect XT ein Abo?\", answer: \"Ja. Der Tracker überträgt Positionen über eine integrierte Multi-Netz-SIM; dafür ist ein Weenect-Abo erforderlich.\" }",
           "{ question: \"Ist der XT für Katzen geeignet?\", answer: \"Weenect führt den XT als Hundetracker. Für Katzen ist der deutlich leichtere Weenect XS vorgesehen.\" }"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "gps": {
+            "animal": [
+              "dog"
+            ],
+            "deviceWeightGrams": 54,
+            "subscriptionRequired": true,
+            "transmission": "lte",
+            "batteryMaxDays": 21,
+            "waterproofRating": "IP68",
+            "liveTracking": true,
+            "virtualFence": true,
+            "activityTracking": true
+          },
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "large"
+            ],
+            "foodType": [],
+            "priceTier": "premium"
+          },
+          "editorial": {
+            "rating": 4.5,
+            "score": 90,
+            "priceCategory": "premium",
+            "productStatus": "active"
+          },
+          "custom": {
+            "einsatzgebiet": "Outdoor und Wandern",
+            "hundegroesse": "Mittelgroße bis große Hunde",
+            "ortung": "GPS und Mobilfunk",
+            "abo": true
+          }
+        }
       },
       "issues": []
     },
@@ -20469,7 +22144,24 @@
           "Bis zu zehn Mahlzeiten täglich",
           "Langsam Fütterungsmodus in der WOPET Life App",
           "Sprachaufnahme mit bis zu zehn Sekunden"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 79,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -20627,7 +22319,35 @@
           "Kamera am Futterplatz",
           "App-Steuerung",
           "Großer Vorrat"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.6,
+            "score": 72,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "bild": "1080p",
+            "kontrollwert": "Sichtkontrolle",
+            "offline": "Backup testen",
+            "datenschutz": "Speicheroptionen prüfen",
+            "kamera": "Ja",
+            "futter": "Trockenfutter",
+            "mehrtiere": "Keine Tiertrennung"
+          }
+        }
       },
       "issues": []
     },
@@ -20808,7 +22528,38 @@
           "Bis zu 15 Mahlzeiten",
           "App-Steuerung",
           "Batterie-Backup"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 3.8,
+            "score": 75,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "portionierung": "bis zu 15 Mahlzeiten; tatsächliche Grammmenge futterabhängig",
+            "krokettengroesse": "vor Kauf mit verwendetem Futter prüfen",
+            "napf": "Edelstahlnapf",
+            "kapazitaet": "6 Liter",
+            "app": "WOPET-App und WLAN",
+            "notstrom": "Batterie-Backup laut Produktdaten",
+            "hundegroesse": "klein bis mittelgroß; große Hunde nur nach Passformprüfung",
+            "kamera": "Nein",
+            "tiertrennung": "Nein",
+            "redaktionellesprofil": "Größter Vorrat im Kernvergleich"
+          }
+        }
       },
       "issues": []
     },
@@ -20973,7 +22724,31 @@
           "Großer 7-Liter-Vorratsbehälter",
           "Bis zu fünf Mahlzeiten täglich programmierbar",
           "Persönliche Sprachaufnahme mit bis zu zehn Sekunden"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "reservoirLiters": 7,
+            "portionGrams": 10,
+            "maxPortionsPerMeal": 40,
+            "maxMealGrams": 400,
+            "kibbleMaxMm": 12,
+            "largeDogFit": "technical-fit"
+          },
+          "editorial": {
+            "rating": 3.5,
+            "score": 71,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     },
@@ -21051,17 +22826,17 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Food+Feeder+2"
+          "url": "https://amzn.to/4wofqBc"
         },
-        "rating": 4,
-        "score": 81,
+        "rating": 4.6,
+        "score": 92,
         "ratings": {
-          "app": 4.05,
-          "portionierung": 4.05,
-          "reinigung": 4.05,
-          "zuverlaessigkeit": 4.05,
-          "sicherheit": 4.05,
-          "preisleistung": 4.05
+          "app": 4.8,
+          "portionierung": 4.7,
+          "reinigung": 4.5,
+          "zuverlaessigkeit": 4.5,
+          "sicherheit": 4.6,
+          "preisleistung": 4.7
         },
         "decision": {
           "bestFor": [
@@ -21079,7 +22854,7 @@
         },
         "review": {
           "summary": "Die zweite Generation kombiniert fünf Liter Vorrat mit einem Wiegenapf, LED-Anzeige, automatischer Entblockung und App-Warnungen.",
-          "verdict": "Technisch stark, besonders im Xiaomi-Home-Ökosystem. Die Futterkompatibilität muss genauer beachtet werden als die Marketingtexte vermuten lassen."
+          "verdict": "Der Xiaomi Smart Pet Food Feeder 2 zählt zu den stärksten smarten Futterautomaten seiner Preisklasse. Wiegenapf, Entblockung, zuverlässige App-Anbindung und Notstromversorgung ergeben ein sehr ausgewogenes Gesamtpaket. Einschränkungen bestehen hauptsächlich bei der Futterkompatibilität und der Bindung an das Xiaomi-Home-Ökosystem."
         },
         "strengths": [
           "5 Liter beziehungsweise etwa 2,5 kg Futter",
@@ -21156,7 +22931,45 @@
           "Wiegenapf",
           "automatische Entblockung",
           "LED-Display und Xiaomi-Home-App"
-        ]
+        ],
+        "comparisonData": {
+          "version": 1,
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "medium"
+            ],
+            "foodType": [],
+            "reservoirLiters": 5,
+            "portionGrams": 10,
+            "kibbleMaxMm": 12,
+            "largeDogFit": "conditional"
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "productStatus": "unknown"
+          },
+          "custom": {
+            "krokettengroesse": "bis 12 mm",
+            "napf": "Edelstahl 304 mit Wiegefunktion",
+            "kapazitaet": "5 Liter, etwa 2,5 kg",
+            "notstrom": "4 AA-Batterien; Herstellerangabe etwa 14 Tage",
+            "hundegroesse": "klein bis mittelgroß, laut Hersteller bis 40 cm Schulterhöhe",
+            "kamera": "Nein",
+            "tiertrennung": "Nein",
+            "redaktionellesprofil": "Beste Datenübersicht am Napf",
+            "futterart": "Trockenfutter und geeignete Mischungen bis 12 mm",
+            "zugang": "Freier Zugang; keine Tiererkennung",
+            "mehrkatzen": "Verbrauchstrend nicht sicher einem Tier zuordenbar",
+            "ausfallsicherheit": "4 AA-Batterien; Herstellerangabe ungefähr 14 Tage",
+            "reinigung": "Edelstahl-Wiegenapf und zerlegbare Futtereinheit"
+          }
+        }
       },
       "issues": []
     },
@@ -21232,17 +23045,17 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=Xiaomi+Smart+Pet+Fountain+2"
+          "url": "https://amzn.to/4w6sFpn"
         },
-        "rating": 4,
-        "score": 81,
+        "rating": 4.7,
+        "score": 93,
         "ratings": {
-          "verarbeitung": 4.05,
-          "bedienung": 4.05,
-          "reinigung": 4,
-          "lautstaerke": 4,
-          "smartfunktionen": 4.15,
-          "preisleistung": 3.9
+          "verarbeitung": 4.7,
+          "bedienung": 4.7,
+          "reinigung": 4.6,
+          "lautstaerke": 4.6,
+          "smartfunktionen": 4.8,
+          "preisleistung": 4.7
         },
         "decision": {
           "bestFor": [
@@ -21260,7 +23073,7 @@
         },
         "review": {
           "summary": "Die zweite Generation kombiniert drei Liter, einen 4000-mAh-Akku, drei Wasserausgabemodi und Statusmeldungen in der Xiaomi Home App.",
-          "verdict": "Ein gut dokumentierter kabelloser Allrounder. Besonders sinnvoll, wenn Xiaomi Home bereits genutzt wird und regelmäßige Filterkosten akzeptiert werden."
+          "verdict": "Der Xiaomi Smart Pet Fountain 2 gehört aktuell zu den stärksten smarten Akku-Trinkbrunnen seiner Preisklasse. App-Anbindung, drei Betriebsarten, lange Akkulaufzeit unter geeigneten Bedingungen und die enge Xiaomi-Home-Integration ergeben ein sehr ausgewogenes Gesamtpaket."
         },
         "strengths": [
           "3 Liter Kapazität",
@@ -21329,7 +23142,25 @@
           "question: \"Funktioniert der Xiaomi Smart Pet Fountain 2 kabellos?",
           "question: \"Wie realistisch sind 100 Tage Akkulaufzeit?",
           "question: \"Wie oft muss der Filter gewechselt werden?"
-        ]
+        ],
+        "comparisonData": {
+          "general": {
+            "animal": [
+              "dog",
+              "cat"
+            ],
+            "petSize": [
+              "small",
+              "large"
+            ],
+            "foodType": []
+          },
+          "editorial": {
+            "rating": 4,
+            "score": 81,
+            "productStatus": "unknown"
+          }
+        }
       },
       "issues": []
     }

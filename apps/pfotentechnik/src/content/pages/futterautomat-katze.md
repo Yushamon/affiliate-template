@@ -112,3 +112,22 @@ Napf und Futterkontaktteile sollten leicht abnehmbar sein. Stelle das neue Gerä
 Wir gewichten kleine Portionen, Zuverlässigkeit, Reinigung, Geräuschentwicklung, Stromreserve und eine verständliche Bedienung. Kamera oder App sind Zusatznutzen, keine Voraussetzung für eine gute Fütterungsroutine. Einen breiteren Überblick bietet der [Vergleich smarter Futterautomaten](/smarte-futterautomaten/).
 
 Weitere passende Ratgeber sind [Futterautomaten mit Kamera](/futterautomat-mit-kamera/), [Modelle für Nassfutter](/futterautomat-nassfutter/) und die [Kaufberatung für Hunde](/futterautomat-hund/).
+
+## Quellen und redaktionelle Grundlage
+
+Diese Kaufberatung basiert auf Herstellerdokumentationen, Bedienungsanleitungen und veterinärmedizinischen Empfehlungen zur Fütterung von Katzen. Bewertet werden insbesondere Zuverlässigkeit der Portionierung, Eignung für verschiedene Futterarten, Reinigung, Stromversorgung sowie der praktische Einsatz im Katzenhaushalt.
+
+### Primärquellen
+
+- PETLIBRO – Bedienungsanleitungen und technische Produktdokumentation
+- PETKIT – Bedienungsanleitungen und technische Produktdokumentation
+- Xiaomi – Produkt- und Bedienungsdokumentation des Smart Pet Food Feeder
+- Cat Mate – Bedienungsanleitungen und technische Produktunterlagen zum C500
+
+### Fachliche Grundlagen
+
+- FEDIAF – Nutritional Guidelines for Complete and Complementary Pet Food for Cats and Dogs
+- WSAVA (World Small Animal Veterinary Association) – Global Nutrition Guidelines
+- AAFP (American Association of Feline Practitioners) – Leitlinien zur Ernährung und Gesundheitsvorsorge bei Katzen
+
+> **Medizinischer Hinweis:** Ein Futterautomat unterstützt eine regelmäßige Fütterungsroutine, ersetzt jedoch keine Beobachtung des Tieres. Frisst eine Katze deutlich weniger als gewöhnlich oder verweigert sie das Futter vollständig, sollte dies zeitnah tierärztlich abgeklärt werden. Ein Ausgabestatus des Automaten belegt nicht, dass die Katze die Mahlzeit tatsächlich aufgenommen hat.

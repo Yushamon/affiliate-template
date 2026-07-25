@@ -1,8 +1,8 @@
 # PfotenTechnik SEO Platform Report
 
 - Dokumente: 185
-- Fehler: 1
-- Warnungen: 37
+- Fehler: 3
+- Warnungen: 36
 
 ## Portfolio-Befunde
 
@@ -14,7 +14,6 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-nassfutter.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-welpen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-zwei-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
@@ -48,3 +47,5 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`: Mögliche Dosierungsangabe gefunden.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Testbehauptung widerspricht dem Teststatus.
+- **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Testbehauptung widerspricht dem Teststatus.
+- **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6.md`: Testbehauptung widerspricht dem Teststatus.

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-24T11:33:24.911Z",
+  "generatedAt": "2026-07-25T17:44:45.107Z",
   "nodes": [
     {
       "id": "manufacturer:cat-mate",
@@ -336,26 +336,6 @@
         "mehrere-katzen",
         "mehrere-hunde",
         "mehrtierhaushalt",
-        "vergleich"
-      ],
-      "entities": [],
-      "priority": 50,
-      "cornerstone": false
-    },
-    {
-      "id": "page:beste-futterautomaten-fuer-nassfutter",
-      "slug": "beste-futterautomaten-fuer-nassfutter",
-      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "title": "Beste Futterautomaten für Nassfutter",
-      "description": "Welche Futterautomaten eignen sich für Nassfutter? Unsere Empfehlungen für Kühlung, Hygiene und zuverlässige Fütterung.",
-      "type": "page",
-      "cluster": "vergleich",
-      "topics": [
-        "futterautomat",
-        "nassfutter",
-        "katze",
-        "hund",
-        "kaufberatung",
         "vergleich"
       ],
       "entities": [],
@@ -1299,7 +1279,7 @@
       "slug": "katzentrinkbrunnen-richtig-reinigen",
       "route": "/katzentrinkbrunnen-richtig-reinigen/",
       "title": "Katzentrinkbrunnen richtig reinigen: Schritt für Schritt",
-      "description": "Wie du Tank, Trinkfläche, Filter und Pumpe hygienisch reinigst und welche Stellen besonders häufig übersehen werden.",
+      "description": "Wie du Tank, Trinkfläche, Filter und Pumpe eines Katzentrinkbrunnens hygienisch reinigst und hartnäckigen Biofilm vermeidest.",
       "type": "page",
       "cluster": "trinkbrunnen",
       "topics": [
@@ -1398,15 +1378,16 @@
       "slug": "seniorenhunde-richtig-versorgen",
       "route": "/seniorenhunde-richtig-versorgen/",
       "title": "Seniorenhunde richtig versorgen",
-      "description": "Was ältere Hunde bei Ernährung, Bewegung, Vorsorge, Zahngesundheit und einem seniorengerechten Zuhause brauchen.",
+      "description": "Wie Sie einen Seniorenhund bei Vorsorge, Ernährung, Bewegung, Schmerzen, Zahngesundheit und im Alltag sinnvoll unterstützen.",
       "type": "page",
       "cluster": "hundegesundheit",
       "topics": [
         "hund",
-        "senior",
+        "seniorenhund",
         "gesundheit",
         "ernaehrung",
         "mobilitaet",
+        "vorsorge",
         "hundegesundheit"
       ],
       "entities": [],
@@ -1683,7 +1664,7 @@
       "slug": "uebergewicht-bei-katzen-vermeiden",
       "route": "/uebergewicht-bei-katzen-vermeiden/",
       "title": "Übergewicht bei Katzen vermeiden",
-      "description": "Übergewicht bei Katzen vermeiden: Idealgewicht erkennen, Portionen richtig messen, Leckerlis einrechnen, Bewegung fördern und Futterneid verhindern.",
+      "description": "Übergewicht bei Katzen früh erkennen und vermeiden: Körperzustand beurteilen, Portionen berechnen, Leckerlis einplanen und Bewegung sinnvoll fördern.",
       "type": "page",
       "cluster": "katzenernaehrung",
       "topics": [
@@ -1693,6 +1674,7 @@
         "portionen",
         "bewegung",
         "body-condition-score",
+        "gewichtsmanagement",
         "katzenernaehrung"
       ],
       "entities": [],
@@ -1845,7 +1827,7 @@
       "slug": "welpen-richtig-fuettern",
       "route": "/welpen-richtig-fuettern/",
       "title": "Welpen richtig füttern",
-      "description": "Welpen richtig füttern: geeignetes Wachstumsfutter, Mahlzeiten nach Alter, Futtermenge, Gewichtskontrolle, Futterwechsel und häufige Fehler.",
+      "description": "Welpen richtig füttern: geeignetes Wachstumsfutter auswählen, Tagesration bestimmen, Mahlzeiten verteilen und gesundes Wachstum kontrollieren.",
       "type": "page",
       "cluster": "hundeernaehrung",
       "topics": [
@@ -1855,6 +1837,7 @@
         "wachstum",
         "mahlzeiten",
         "futtermenge",
+        "welpenfutter",
         "hundeernaehrung"
       ],
       "entities": [],
@@ -2086,16 +2069,17 @@
       "slug": "wie-viele-wasserstellen-katze",
       "route": "/wie-viele-wasserstellen-katze/",
       "title": "Wie viele Wasserstellen braucht eine Katze?",
-      "description": "Wie viele Näpfe und Trinkbrunnen sinnvoll sind und wie Standorte in Ein- und Mehrkatzenhaushalten verteilt werden.",
+      "description": "Wie viele Wassernäpfe und Trinkbrunnen Katzen brauchen, wie sie verteilt werden und was in Ein- und Mehrkatzenhaushalten wirklich zählt.",
       "type": "page",
       "cluster": "trinkbrunnen",
       "topics": [
         "katze",
         "wasserstellen",
+        "wassernapf",
         "trinkbrunnen",
         "mehrkatzen",
         "standort",
-        "verhalten"
+        "trinkverhalten"
       ],
       "entities": [],
       "priority": 50,
@@ -3301,13 +3285,15 @@
       "slug": "tractive-dog-6",
       "route": "/produkte/tractive-dog-6/",
       "title": "Tractive DOG 6",
-      "description": "Kompakter GPS- und Gesundheitstracker für Hunde über 4 kg mit LTE, Live-Ortung, Sicherheitszonen und Herstellerlaufzeit bis zwei Wochen.",
+      "description": "Kompakter GPS- und Gesundheitstracker für Hunde ab 4 kg mit LTE, Live-Ortung, Sicherheitszonen, Vitalwert-Trends und bis zu zwei Wochen Herstellerlaufzeit.",
       "type": "product",
       "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
       "topics": [
         "gps-tracker",
         "hunde",
         "mobilfunk",
+        "live-ortung",
+        "gesundheitstracking",
         "app",
         "abo",
         "key-gps-tracker-label-gps-tracker-path-gps-tracker"
@@ -3323,14 +3309,16 @@
       "slug": "tractive-dog-6-xl",
       "route": "/produkte/tractive-dog-6-xl/",
       "title": "Tractive DOG 6 XL",
-      "description": "Großer GPS-Tracker für Hunde ab 20 kg mit LTE, IP68 und einer Herstellerlaufzeit von bis zu sechs Wochen.",
+      "description": "GPS- und Gesundheitstracker für Hunde ab 20 kg mit LTE-Live-Ortung, IP68, Sicherheitszonen und bis zu sechs Wochen Herstellerlaufzeit.",
       "type": "product",
       "cluster": "key-gps-tracker-label-gps-tracker-path-gps-tracker",
       "topics": [
         "gps-tracker",
         "hunde",
         "grosse-hunde",
+        "live-ortung",
         "langer-akku",
+        "gesundheitstracking",
         "abo",
         "key-gps-tracker-label-gps-tracker-path-gps-tracker"
       ],
@@ -4442,13 +4430,6 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-berufstaetige",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-berufstaetige",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "cluster",
       "score": 83,
@@ -4912,13 +4893,6 @@
     {
       "source": "page:beste-futterautomaten-fuer-hunde",
       "target": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-hunde",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -5233,13 +5207,6 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-katzen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 48,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-katzen",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 48,
@@ -5334,13 +5301,6 @@
       "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "type": "semantic",
       "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "cluster",
-      "score": 83,
       "explicit": false
     },
     {
@@ -5548,13 +5508,6 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "cluster",
       "score": 59,
@@ -5642,412 +5595,6 @@
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-gegen-schlingen",
-      "type": "cluster",
-      "score": 95,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-berufstaetige",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-welpen",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:smarte-futterautomaten",
-      "type": "semantic",
-      "score": 72,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-unter-100-euro",
-      "type": "cluster",
-      "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
-      "type": "semantic",
-      "score": 60,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-mit-akku",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-mit-edelstahl-napf",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-katzen",
-      "type": "semantic",
-      "score": 48,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:trinkbrunnen",
-      "type": "semantic",
-      "score": 48,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-hund",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-katze",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:gps-tracker",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:smarte-haustiertechnik",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-laut-sind-automatische-futterautomaten",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-zwei-katzen",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-mit-kamera",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:beste-futterautomaten-ohne-wlan",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:fuetterungszeiten-nach-alter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-fuer-grosse-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-richtig-reinigen",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futterautomat-und-ernaehrung",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:futtermenge-katze",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:gps-oder-bluetooth",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:katzentrinkbrunnen-ohne-filter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:trinkbrunnen-hund",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-viel-wasser-braucht-ein-hund",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-viel-wasser-braucht-eine-katze",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-viele-mahlzeiten-hund",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:wie-viele-mahlzeiten-katze",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:cat-mate-c200",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:cat-mate-c300",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:cat-mate-c500",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:catit-pixi-smart-6-meal-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:honeyguardian-a305d",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:honeyguardian-a68",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:paj-pet-finder-4g-mini",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:pawbby-smart-pet-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:petkit-fresh-element-infinity",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:petlibro-air-automatic-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:petlibro-polar-wet-food-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:surefeed-microchip-pet-feeder-connect",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:surefeed-microchip-pet-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:wopet-cube-air-ca10",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:wopet-heritage-view-camera-feeder",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-nassfutter",
-      "target": "product:wopet-pioneer-f01-plus",
-      "type": "product",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-seniorenkatzen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "cluster",
-      "score": 83,
       "explicit": false
     },
     {
@@ -6263,13 +5810,6 @@
     {
       "source": "page:beste-futterautomaten-fuer-welpen",
       "target": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-welpen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "cluster",
       "score": 83,
       "explicit": false
@@ -6661,13 +6201,6 @@
     },
     {
       "source": "page:beste-futterautomaten-fuer-zwei-katzen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-fuer-zwei-katzen",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 24,
@@ -6725,13 +6258,6 @@
     {
       "source": "page:beste-futterautomaten-mit-akku",
       "target": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-mit-akku",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -6851,13 +6377,6 @@
     {
       "source": "page:beste-futterautomaten-mit-edelstahl-napf",
       "target": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-mit-edelstahl-napf",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -7179,13 +6698,6 @@
     },
     {
       "source": "page:beste-futterautomaten-mit-kamera",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-mit-kamera",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 24,
@@ -7487,13 +6999,6 @@
     },
     {
       "source": "page:beste-futterautomaten-ohne-wlan",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-ohne-wlan",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 24,
@@ -7530,13 +7035,6 @@
     {
       "source": "page:beste-futterautomaten-unter-100-euro",
       "target": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "cluster",
-      "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:beste-futterautomaten-unter-100-euro",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -8117,13 +7615,6 @@
     },
     {
       "source": "page:fuetterungszeiten-nach-alter",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:fuetterungszeiten-nach-alter",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 24,
@@ -8489,13 +7980,6 @@
     {
       "source": "page:futterautomat-batterie-oder-netzteil",
       "target": "page:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -9104,13 +8588,6 @@
     },
     {
       "source": "page:futterautomat-fuer-grosse-hunde",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-fuer-grosse-hunde",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 24,
@@ -9317,13 +8794,6 @@
       "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "cluster",
       "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-gegen-schlingen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "cluster",
-      "score": 95,
       "explicit": false
     },
     {
@@ -9854,13 +9324,6 @@
     {
       "source": "page:futterautomat-hund",
       "target": "page:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-hund",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -10469,13 +9932,6 @@
     },
     {
       "source": "page:futterautomat-katze",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-katze",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 36,
@@ -11169,13 +10625,6 @@
     },
     {
       "source": "page:futterautomat-nassfutter",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-nassfutter",
       "target": "page:beste-futterautomaten-fuer-berufstaetige",
       "type": "semantic",
       "score": 24,
@@ -11708,13 +11157,6 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-richtig-reinigen",
       "target": "page:beste-futterautomaten-mit-edelstahl-napf",
       "type": "semantic",
       "score": 24,
@@ -12016,13 +11458,6 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-und-ernaehrung",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -12212,13 +11647,6 @@
     },
     {
       "source": "page:futtermenge-katze",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:futtermenge-katze",
       "target": "page:futterautomat-nassfutter",
       "type": "semantic",
       "score": 24,
@@ -12381,13 +11809,6 @@
     {
       "source": "page:gps-oder-bluetooth",
       "target": "page:beste-futterautomaten-fuer-berufstaetige",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:gps-oder-bluetooth",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -12593,13 +12014,6 @@
       "target": "page:wie-funktionieren-gps-tracker",
       "type": "cluster",
       "score": 47,
-      "explicit": false
-    },
-    {
-      "source": "page:gps-tracker",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
       "explicit": false
     },
     {
@@ -13570,13 +12984,6 @@
     },
     {
       "source": "page:katze-an-trinkbrunnen-gewoehnen",
-      "target": "page:wie-viele-wasserstellen-katze",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:katze-an-trinkbrunnen-gewoehnen",
       "target": "page:biofilm-im-katzentrinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -13669,6 +13076,13 @@
     {
       "source": "page:katze-an-trinkbrunnen-gewoehnen",
       "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katze-an-trinkbrunnen-gewoehnen",
+      "target": "page:wie-viele-wasserstellen-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14621,13 +14035,6 @@
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "page:beste-futterautomaten-fuer-katzen",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:katzentrinkbrunnen-ohne-filter",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15670,13 +15077,6 @@
     },
     {
       "source": "page:smarte-futterautomaten",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 72,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-futterautomaten",
       "target": "page:beste-futterautomaten-fuer-zwei-katzen",
       "type": "cluster",
       "score": 71,
@@ -16202,13 +15602,6 @@
     },
     {
       "source": "page:smarte-haustiertechnik",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-haustiertechnik",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 36,
@@ -16534,13 +15927,6 @@
       "target": "page:wie-viele-wasserstellen-katze",
       "type": "cluster",
       "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:trinkbrunnen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 48,
       "explicit": false
     },
     {
@@ -17029,13 +16415,6 @@
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:beste-futterautomaten-fuer-katzen",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17672,13 +17051,6 @@
     },
     {
       "source": "page:trinkbrunnen-hund",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:trinkbrunnen-hund",
       "target": "page:beste-futterautomaten-fuer-welpen",
       "type": "semantic",
       "score": 24,
@@ -18263,13 +17635,6 @@
       "target": "product:surefeed-microchip-pet-feeder",
       "type": "product",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:trockenfutter-oder-nassfutter-katze",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -19254,13 +18619,6 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 36,
@@ -19516,13 +18874,6 @@
       "target": "page:wie-viele-mahlzeiten-katze",
       "type": "cluster",
       "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 60,
       "explicit": false
     },
     {
@@ -20542,13 +19893,6 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 36,
@@ -20718,13 +20062,6 @@
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "page:beste-futterautomaten-fuer-berufstaetige",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21123,13 +20460,6 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:futterautomat-gegen-schlingen",
       "type": "semantic",
       "score": 36,
@@ -21376,13 +20706,6 @@
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viel-wasser-braucht-ein-hund",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21679,13 +21002,6 @@
       "target": "product:surefeed-microchip-pet-feeder",
       "type": "product",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viel-wasser-braucht-eine-katze",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -22138,13 +21454,6 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-hund",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-hund",
       "target": "page:beste-futterautomaten-fuer-welpen",
       "type": "semantic",
       "score": 24,
@@ -22376,13 +21685,6 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-katze",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-katze",
       "target": "page:beste-futterautomaten-fuer-seniorenkatzen",
       "type": "semantic",
       "score": 24,
@@ -22532,7 +21834,7 @@
       "source": "page:wie-viele-wasserstellen-katze",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
-      "score": 36,
+      "score": 24,
       "explicit": false
     },
     {
@@ -23321,13 +22623,6 @@
     },
     {
       "source": "product:cat-mate-c200",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:cat-mate-c200",
       "target": "page:futterautomat-nassfutter",
       "type": "semantic",
       "score": 24,
@@ -23618,13 +22913,6 @@
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "product:cat-mate-c300",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -23926,13 +23214,6 @@
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "product:cat-mate-c500",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -24395,13 +23676,6 @@
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "product:catit-pixi-smart-6-meal-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -25085,13 +24359,6 @@
     },
     {
       "source": "product:honeyguardian-a305d",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:honeyguardian-a305d",
       "target": "page:fuetterungszeiten-nach-alter",
       "type": "semantic",
       "score": 24,
@@ -25464,13 +24731,6 @@
     {
       "source": "product:honeyguardian-a68",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:honeyguardian-a68",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -27311,13 +26571,6 @@
     },
     {
       "source": "product:paj-pet-finder-4g-mini",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:paj-pet-finder-4g-mini",
       "target": "page:fuetterungszeiten-nach-alter",
       "type": "semantic",
       "score": 24,
@@ -27669,13 +26922,6 @@
     {
       "source": "product:pawbby-smart-pet-feeder",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:pawbby-smart-pet-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -29832,13 +29078,6 @@
     {
       "source": "product:petkit-fresh-element-infinity",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:petkit-fresh-element-infinity",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31421,13 +30660,6 @@
     {
       "source": "product:petlibro-air-automatic-feeder",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:petlibro-air-automatic-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -33975,13 +33207,6 @@
     },
     {
       "source": "product:petlibro-polar-wet-food-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:petlibro-polar-wet-food-feeder",
       "target": "page:futterautomat-nassfutter",
       "type": "semantic",
       "score": 24,
@@ -35074,13 +34299,6 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:surefeed-microchip-pet-feeder",
       "target": "page:futterautomat-nassfutter",
       "type": "semantic",
       "score": 24,
@@ -35483,13 +34701,6 @@
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 36,
-      "explicit": false
-    },
-    {
-      "source": "product:surefeed-microchip-pet-feeder-connect",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
       "explicit": false
     },
     {
@@ -36138,13 +35349,6 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:wopet-cube-air-ca10",
       "target": "page:fuetterungszeiten-nach-alter",
       "type": "semantic",
       "score": 24,
@@ -36517,13 +35721,6 @@
     {
       "source": "product:wopet-heritage-view-camera-feeder",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:wopet-heritage-view-camera-feeder",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -37140,13 +36337,6 @@
     {
       "source": "product:wopet-pioneer-f01-plus",
       "target": "page:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "product:wopet-pioneer-f01-plus",
-      "target": "page:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 24,
       "explicit": false
