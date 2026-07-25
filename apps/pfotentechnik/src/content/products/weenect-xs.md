@@ -78,6 +78,7 @@ faq:
   - { question: "Wie lange hält sein Akku?", answer: "Weenect nennt bis zu sieben Tage mit WLAN-Zonen und rund zwei Tage bei kontinuierlichem Tracking. Die Nutzungsart verändert den Wert erheblich." }
   - { question: "Kann ein Abo mehrere Tracker versorgen?", answer: "Mehrere Tiere lassen sich in einem Konto verwalten, aber jeder Tracker benötigt laut Weenect ein eigenes Abo." }
 comparisonData:
+  version: 1
   gps:
     animal:
       - "dog"
@@ -104,6 +105,11 @@ comparisonData:
     score: 92
     priceCategory: "midrange"
     productStatus: "active"
+  custom:
+    einsatzgebiet: "Alltag"
+    hundegroesse: "Kleine Hunde"
+    ortung: "GPS und Mobilfunk"
+    abo: true
 ---
 
 Der Weenect XS ist mit 27 g der leichteste reine Gerätewert im gepflegten Vergleich. Entscheidend ist die ehrliche Laufzeitangabe: Der Maximalwert gilt im Energiesparbetrieb, nicht im dauerhaften Sekundenmodus.

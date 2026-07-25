@@ -130,6 +130,7 @@ features:
   - "Integrierte Portionswaage"
   - "Für Nass- und Trockenfutter"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -141,6 +142,16 @@ comparisonData:
     rating: 4
     score: 79
     productStatus: "unknown"
+  custom:
+    zugangskontrolle: "Mikrochip oder RFID-Halsbandanhänger"
+    zahl-der-futterplatze: "Ein kontrollierter Futterplatz pro Gerät"
+    futterarten: "Nass- und Trockenfutter"
+    portionierung: "Keine automatische Ausgabe; Napf wird manuell befüllt"
+    mehrkatzen-eignung: "Sehr gut für getrennte Rationen"
+    app: "Ja; Connect-System und Hub erforderlich"
+    ausfallsicherheit: "Zugang bleibt batteriebetrieben; App-Daten benötigen Verbindung"
+    konfliktpotenzial: "Niedrig bei sauberer Gewöhnung"
+    kostenlogik: "Höhere Systemkosten durch Connect-Komponenten und ggf. zwei Geräte"
 ---
 
 App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.

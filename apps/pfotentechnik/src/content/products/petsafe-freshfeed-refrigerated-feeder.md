@@ -76,6 +76,7 @@ priceCategory: premium
 useCase: "Aktiv gekühlte Nassfuttermahlzeiten"
 capacity: "6 Fächer / 4,5 Cups"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -89,6 +90,15 @@ comparisonData:
     score: 90
     priceCategory: "premium"
     productStatus: "unknown"
+  custom:
+    kuehlprinzip: "Aktive Halbleiterkühlung"
+    mahlzeiten: "6 Edelstahl-Einsätze"
+    steuerung: "PetSafe-App"
+    stromversorgung: "Netzbetrieb; kein Backup dokumentiert"
+    hygiene: "Entnehmbare, spülmaschinengeeignete Einsätze"
+    tiertrennung: "Nein"
+    geeignetfuer: "Katzen und kleine Hunde"
+    wichtigstegrenze: "Deutschland-Verfügbarkeit und Langzeiterfahrung prüfen"
 ---
 
 Der PetSafe FreshFeed ist das interessanteste der drei Modelle, weil er eine echte Marktlücke schließt. Im Gegensatz zu Drehtellern mit Eisakku soll er Nass- und Frischfutter aktiv auf Kühlschranktemperatur halten. Das ist praktisch, macht den Automaten aber vollständig von einer stabilen Stromversorgung abhängig.

@@ -142,6 +142,7 @@ faq:
   - question: "Ist der DOG 6 XL besser als ein AirTag?"
     answer: "Für aktive Hundeortung bietet er Live-Tracking, virtuelle Zäune und Mobilfunkübertragung. Ein AirTag nutzt dagegen Geräte im Apple-Netzwerk und ist kein vollwertiger GPS-Live-Tracker für Haustiere."
 comparisonData:
+  version: 1
   gps:
     animal:
       - "dog"
@@ -166,6 +167,11 @@ comparisonData:
     score: 91
     priceCategory: "midrange"
     productStatus: "active"
+  custom:
+    einsatzgebiet: "Alltag und längere Touren"
+    hundegroesse: "Große Hunde"
+    ortung: "GPS und Mobilfunk"
+    abo: true
 ---
 
 Der Tractive DOG 6 XL ist die Langläufer-Variante innerhalb der aktuellen Tractive-Hundetracker. Er richtet sich an Hunde ab 20 kg und verbindet GPS-Ortung mit LTE-Übertragung, virtuellen Zäunen, Aktivitätsdaten und Gesundheits-Trends.

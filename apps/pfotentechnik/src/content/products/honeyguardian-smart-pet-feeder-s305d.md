@@ -142,6 +142,7 @@ features:
   - "App-Steuerung"
   - "Edelstahl-Napf"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -155,6 +156,17 @@ comparisonData:
     rating: 3.8
     score: 75
     productStatus: "unknown"
+  custom:
+    portionierung: "App-Zeitpläne; reale Portionsmenge kalibrieren"
+    krokettengroesse: "vor Kauf mit verwendetem Futter prüfen"
+    napf: "Edelstahl"
+    kapazitaet: "5 Liter"
+    app: "HoneyGuardian-App"
+    notstrom: "Backup-Funktion je Angebotsvariante prüfen"
+    hundegroesse: "klein bis mittelgroß"
+    kamera: "Nein"
+    tiertrennung: "Nein"
+    redaktionellesprofil: "Preisorientierte Alternative"
 ---
 
 Der HoneyGuardian S305D ist eine funktionale Alternative zu bekannteren Markenmodellen. Seine Stärke liegt im Verhältnis aus Kapazität, App-Steuerung und Preis.

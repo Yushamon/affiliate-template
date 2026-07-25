@@ -17,30 +17,21 @@ items:
     type: "product"
     label: "Beste Wahl für Nassfutter"
     recommendation: "Für mehrere vorbereitete Nassfutter-Mahlzeiten mit lokaler Zeitsteuerung."
-    values:
-      offlineKonzept: "Fachautomat"
+    overrides:
       futterart: "Nass- und Trockenfutter"
-      appErforderlich: false
-      batteriebetrieb: true
   - slug: "surefeed-microchip-pet-feeder"
     type: "product"
     label: "Beste Wahl gegen Futterklau"
     recommendation: "Für Haushalte, in denen nur ein bestimmtes Tier Zugang zur Portion erhalten soll."
-    values:
-      offlineKonzept: "Mikrochip-Napf"
-      futterart: "Nass- und Trockenfutter"
-      appErforderlich: false
-      batteriebetrieb: true
   - slug: "imipaw-3l"
     type: "product"
     label: "Einfache Trockenfutter-Lösung"
     recommendation: "Für zeitgesteuerte Trockenfutterportionen ohne WLAN und Cloudkonto."
-    values:
+    overrides:
       offlineKonzept: "Vorratsautomat"
       futterart: "Trockenfutter"
       appErforderlich: false
       batteriebetrieb: true
-
 criteria:
   - key: "offlineKonzept"
     label: "Offline-Konzept"

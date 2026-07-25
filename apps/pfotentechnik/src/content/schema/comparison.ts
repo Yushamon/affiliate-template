@@ -34,6 +34,17 @@ const comparisonItemSchema =
     recommendation:
       z.string().optional(),
 
+    overrides: z
+      .record(
+        z.string(),
+        z.union([
+          z.string(),
+          z.number(),
+          z.boolean()
+        ])
+      )
+      .default({}),
+
     values: z
       .record(
         z.string(),
@@ -43,6 +54,7 @@ const comparisonItemSchema =
           z.boolean()
         ])
       )
+      .optional()
       .default({})
   });
 
@@ -58,7 +70,25 @@ const comparisonCriterionSchema =
     weight: z
       .number()
       .min(0)
-      .optional()
+      .optional(),
+
+    source: z.string().optional(),
+
+    format: z
+      .enum([
+        "auto",
+        "text",
+        "boolean",
+        "number",
+        "list"
+      ])
+      .default("auto"),
+
+    unit: z.string().optional(),
+
+    fallback: z
+      .string()
+      .default("–")
   });
 
 const comparisonResultSchema =

@@ -167,6 +167,7 @@ features:
   - "Nass- und Trockenfutter"
   - "Zwei Kühlakkus"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -178,6 +179,25 @@ comparisonData:
     rating: 3.6
     score: 73
     productStatus: "unknown"
+  custom:
+    portionierung: "5 Fächer; davon eines sofort zugänglich"
+    zugang: "Zeitgesteuerter Drehdeckel; keine Tiererkennung"
+    mehrkatzen: "Keine sichere Trennung; offenes Fach kann geteilt oder gestohlen werden"
+    app: "Nein"
+    ausfallsicherheit: "Batteriebetrieb; kein WLAN erforderlich"
+    reinigung: "Schaleneinsatz und Deckel regelmäßig reinigen; Kühlakkus erneut einfrieren"
+    kamera: "Nein"
+    kuehlprinzip: "2 Kühlakkus; keine aktive Kühlung"
+    mahlzeiten: "5 Fächer mit je 155 g; 4 spätere Öffnungen"
+    steuerung: "Digitaler Timer am Gerät"
+    stromversorgung: "3 AA-Batterien"
+    hygiene: "Deckel und Einsatz spülmaschinengeeignet"
+    tiertrennung: "Nein"
+    geeignetfuer: "Bis zu zwei Katzen oder ein kleiner Hund"
+    wichtigstegrenze: "Keine Fernkontrolle und keine geregelte Kühlung"
+    offlineKonzept: "Fachautomat"
+    appErforderlich: false
+    batteriebetrieb: true
 ---
 
 Der Cat Mate C500 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), verfolgt jedoch ein anderes Konzept als viele moderne WLAN-Modelle. Statt eines großen Vorratsbehälters arbeitet er mit einem zeitgesteuerten Drehteller. Diese Bauweise eignet sich besonders für mehrere Nassfutterportionen über den Tag und kommt vollständig ohne App oder Internetverbindung aus.

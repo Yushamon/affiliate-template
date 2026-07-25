@@ -149,6 +149,7 @@ features:
   - "Nass- und Trockenfutter"
   - "Ohne WLAN"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -160,6 +161,29 @@ comparisonData:
     rating: 3.6
     score: 72
     productStatus: "unknown"
+  custom:
+    futterart: "Nass- und Trockenfutter"
+    zugang: "Mikrochip oder RFID-Halsbandanhänger"
+    mehrkatzen: "Sehr gut für getrennte Rationen; eigenes Gerät je geschütztem Futterplatz"
+    reinigung: "Napf und Matte entnehmbar; Deckelmechanik sauber halten"
+    kamera: "Nein"
+    kuehlprinzip: "Keine aktive Kühlung"
+    mahlzeiten: "Manuell befüllter 400-ml-Napf"
+    steuerung: "Öffnung per Mikrochip oder RFID-Anhänger"
+    stromversorgung: "4 C-Batterien"
+    hygiene: "Napf und Matte entnehmbar; Mechanik trocken halten"
+    tiertrennung: "Ja, über Mikrochip oder RFID"
+    geeignetfuer: "Katzen und kleine Hunde"
+    wichtigstegrenze: "Keine Zeitpläne und keine automatische Portionierung"
+    zugangskontrolle: "Mikrochip oder RFID-Halsbandanhänger"
+    zahl-der-futterplatze: "Ein kontrollierter Futterplatz pro Gerät"
+    futterarten: "Nass- und Trockenfutter"
+    mehrkatzen-eignung: "Sehr gut bei Diätfutter, Medikamenten und Futterklau"
+    konfliktpotenzial: "Niedrig bei sauberer Gewöhnung und getrennten Standorten"
+    kostenlogik: "Für zwei geschützte Plätze meist zwei Geräte nötig"
+    offlineKonzept: "Mikrochip-Napf"
+    appErforderlich: false
+    batteriebetrieb: true
 ---
 
 Der SureFeed Microchip Pet Feeder ist kein klassischer Futterautomat. Er dosiert keine Mahlzeiten, sondern kontrolliert, welches Tier Zugang zum Napf erhält.

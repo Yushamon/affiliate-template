@@ -141,6 +141,7 @@ faq:
   - question: "Ist der DOG 6 besser als ein AirTag?"
     answer: "Für die aktive Hundeortung bietet der DOG 6 Live-Tracking, virtuelle Zäune und Mobilfunkübertragung. Ein AirTag nutzt dagegen Geräte im Apple-Netzwerk und ist kein vollwertiger GPS-Live-Tracker für Haustiere."
 comparisonData:
+  version: 1
   gps:
     animal:
       - "dog"
@@ -166,6 +167,11 @@ comparisonData:
     score: 92
     priceCategory: "midrange"
     productStatus: "active"
+  custom:
+    einsatzgebiet: "Alltag und Auslauf"
+    hundegroesse: "Kleine bis große Hunde"
+    ortung: "GPS und Mobilfunk"
+    abo: true
 ---
 
 Der Tractive DOG 6 ist ein kompakter GPS-Tracker für Hunde ab 4 kg. Er kombiniert satellitengestützte Positionsbestimmung mit LTE-Übertragung an die Tractive-App. Im Live-Modus wird der Standort laut Hersteller etwa alle zwei bis drei Sekunden aktualisiert.

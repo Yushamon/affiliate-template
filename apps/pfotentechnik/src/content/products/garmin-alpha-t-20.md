@@ -219,6 +219,7 @@ faq:
   - question: "Was ist der Unterschied zwischen Alpha T 20 und Alpha TT 25?"
     answer: "Das T 20 dient ausschließlich der Ortung. Das TT 25 ergänzt abhängig von regionaler Ausführung und kompatiblem Handgerät Trainingsfunktionen. Für reine Standortverfolgung ist das T 20 die passendere und meist günstigere Variante."
 comparisonData:
+  version: 1
   gps:
     animal:
       - "dog"
@@ -243,6 +244,11 @@ comparisonData:
     score: 81
     priceCategory: "premium"
     productStatus: "active"
+  custom:
+    einsatzgebiet: "Jagd und Arbeit"
+    hundegroesse: "Mittelgroße bis große Hunde"
+    ortung: "GPS und VHF"
+    abo: false
 ---
 
 Der Garmin Alpha T 20 ist kein gewöhnlicher GPS-Tracker für Spaziergänge. Er gehört zu einem professionellen VHF-Ortungssystem: Das Halsbandgerät bestimmt die Position des Hundes und sendet sie direkt an ein kompatibles Garmin-Alpha-Handgerät.

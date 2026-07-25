@@ -161,6 +161,7 @@ features:
   - "App-Steuerung"
   - "Batterie-Backup"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -173,6 +174,17 @@ comparisonData:
     rating: 3.8
     score: 75
     productStatus: "unknown"
+  custom:
+    portionierung: "bis zu 15 Mahlzeiten; tatsächliche Grammmenge futterabhängig"
+    krokettengroesse: "vor Kauf mit verwendetem Futter prüfen"
+    napf: "Edelstahlnapf"
+    kapazitaet: "6 Liter"
+    app: "WOPET-App und WLAN"
+    notstrom: "Batterie-Backup laut Produktdaten"
+    hundegroesse: "klein bis mittelgroß; große Hunde nur nach Passformprüfung"
+    kamera: "Nein"
+    tiertrennung: "Nein"
+    redaktionellesprofil: "Größter Vorrat im Kernvergleich"
 ---
 
 Der WOPET Patrol F07 Pro ist auf hohe Planungsflexibilität ausgelegt. Bis zu 15 Mahlzeiten und 50 Portionen je Ausgabe sind deutlich mehr als bei vielen Konkurrenzmodellen.

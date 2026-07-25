@@ -1,0 +1,114 @@
+---
+import type {
+  ComparisonProduct,
+  ComparisonRow
+} from "../../comparison/model";
+
+type Props = {
+  products: ComparisonProduct[];
+  rows: ComparisonRow[];
+};
+
+const { products, rows } = Astro.props as Props;
+
+const normalize = (value: string | undefined) =>
+  (value ?? "").trim().toLocaleLowerCase("de-DE");
+
+const meaningfulRows = rows.filter((row) => {
+  const values = row.cells
+    .map((cell) => normalize(cell.value))
+    .filter((value) => value && value !== "–" && value !== "keine angabe");
+
+  return new Set(values).size > 1;
+});
+
+const completeRows = rows.filter((row) =>
+  row.cells.every((cell) => {
+    const value = normalize(cell.value);
+    return value && value !== "–" && value !== "keine angabe";
+  })
+);
+
+const strongestDifferences = meaningfulRows.slice(0, 4);
+const ratedProducts = products.filter(
+  (product) => typeof product.rating === "number"
+);
+const topRated = [...ratedProducts].sort(
+  (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
+)[0];
+
+const completeness = rows.length > 0
+  ? Math.round((completeRows.length / rows.length) * 100)
+  : 0;
+---
+
+<section
+  class="comparison-insight-summary"
+  aria-labelledby="comparison-insight-title"
+>
+  <div class="comparison-insight-summary__intro">
+    <span class="comparison-eyebrow">Redaktionelle Einordnung</span>
+    <h2 id="comparison-insight-title">
+      Was die Modelle wirklich unterscheidet
+    </h2>
+
+    <p>
+      {meaningfulRows.length > 0
+        ? `Bei ${meaningfulRows.length} von ${rows.length} Vergleichskriterien gibt es erkennbare Unterschiede. Entscheidend sind daher nicht möglichst viele Funktionen, sondern die Merkmale, die zu deinem Haushalt und Fütterungsalltag passen.`
+        : `Die erfassten Modelle liegen bei den wichtigsten Kriterien nah beieinander. Die Entscheidung sollte deshalb vor allem nach Bedienung, Tierzahl und Alltagssituation fallen.`}
+    </p>
+  </div>
+
+  <div class="comparison-insight-summary__grid">
+    <article>
+      <span class="comparison-insight-summary__icon" aria-hidden="true">≠</span>
+      <strong>{meaningfulRows.length}</strong>
+      <span>relevante Unterschiede</span>
+    </article>
+
+    <article>
+      <span class="comparison-insight-summary__icon" aria-hidden="true">✓</span>
+      <strong>{completeness}%</strong>
+      <span>vollständig belegte Kriterien</span>
+    </article>
+
+    <article>
+      <span class="comparison-insight-summary__icon" aria-hidden="true">#</span>
+      <strong>{products.length}</strong>
+      <span>Modelle im Vergleich</span>
+    </article>
+  </div>
+
+  {(strongestDifferences.length > 0 || topRated) && (
+    <div class="comparison-insight-summary__details">
+      {strongestDifferences.length > 0 && (
+        <div>
+          <h3>Darauf kommt es besonders an</h3>
+          <ul>
+            {strongestDifferences.map((row) => (
+              <li>
+                <a href="#direktvergleich">{row.criterion.label}</a>
+                {row.criterion.description && (
+                  <span>{row.criterion.description}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {topRated && (
+        <aside>
+          <span>Höchster redaktioneller Score</span>
+          <strong>{topRated.title}</strong>
+          <p>
+            {Math.round(topRated.rating ?? 0)} von 100 Punkten. Der Score ist eine
+            Orientierung und ersetzt nicht die Prüfung, ob das Modell zu deinem
+            konkreten Einsatz passt.
+          </p>
+          <a href={topRated.href}>Produktdetails ansehen</a>
+        </aside>
+      )}
+    </div>
+  )}
+</section>

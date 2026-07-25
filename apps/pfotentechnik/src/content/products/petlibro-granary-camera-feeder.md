@@ -85,6 +85,7 @@ capacity: "5 Liter"
 expandable: "Einzel- oder Doppelschale"
 features: ["1080p-Kamera", "Nachtsicht und Zwei-Wege-Audio", "App-Steuerung"]
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -103,6 +104,14 @@ comparisonData:
     rating: 4.6
     score: 92
     productStatus: "unknown"
+  custom:
+    bild: "1080p, Nachtsicht, Zwei-Wege-Audio"
+    kontrollwert: "Sichtkontrolle des Napfs"
+    offline: "Zeitpläne lokal, Kamera online"
+    datenschutz: "Cloudoptionen prüfen"
+    kamera: "Ja"
+    futter: "Trockenfutter"
+    mehrtiere: "Keine Tiertrennung"
 ---
 
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.

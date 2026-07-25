@@ -132,6 +132,7 @@ features:
   - "App-Steuerung"
   - "Großer Vorrat"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -144,6 +145,14 @@ comparisonData:
     rating: 3.6
     score: 72
     productStatus: "unknown"
+  custom:
+    bild: "1080p"
+    kontrollwert: "Sichtkontrolle"
+    offline: "Backup testen"
+    datenschutz: "Speicheroptionen prüfen"
+    kamera: "Ja"
+    futter: "Trockenfutter"
+    mehrtiere: "Keine Tiertrennung"
 ---
 
 6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.

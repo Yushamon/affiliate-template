@@ -150,6 +150,7 @@ features:
   - "App-Steuerung"
   - "Drei Edelstahl-Fächer"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -161,6 +162,15 @@ comparisonData:
     rating: 4
     score: 80
     productStatus: "unknown"
+  custom:
+    kuehlprinzip: "Thermoelektrische Aktivkühlung"
+    mahlzeiten: "3 Fächer mit je 200 ml"
+    steuerung: "App-Zeitpläne"
+    stromversorgung: "Netzbetrieb; kein Batterie-Backup"
+    hygiene: "Edelstahl-Futterschale; nach jeder Nutzung reinigen"
+    tiertrennung: "Nein"
+    geeignetfuer: "Katzen und kleine Hunde"
+    wichtigstegrenze: "Nur drei Mahlzeiten und vollständige Stromabhängigkeit"
 ---
 
 Der PETLIBRO Polar gehört zu den wenigen Futterautomaten mit aktiver Kühlung. Dadurch ist er für Nassfutter deutlich besser geeignet als Modelle, die nur mit Kühlakkus arbeiten.

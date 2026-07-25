@@ -77,6 +77,7 @@ faq:
   - { question: "Braucht der Weenect XT ein Abo?", answer: "Ja. Der Tracker überträgt Positionen über eine integrierte Multi-Netz-SIM; dafür ist ein Weenect-Abo erforderlich." }
   - { question: "Ist der XT für Katzen geeignet?", answer: "Weenect führt den XT als Hundetracker. Für Katzen ist der deutlich leichtere Weenect XS vorgesehen." }
 comparisonData:
+  version: 1
   gps:
     animal:
       - "dog"
@@ -102,6 +103,11 @@ comparisonData:
     score: 90
     priceCategory: "premium"
     productStatus: "active"
+  custom:
+    einsatzgebiet: "Outdoor und Wandern"
+    hundegroesse: "Mittelgroße bis große Hunde"
+    ortung: "GPS und Mobilfunk"
+    abo: true
 ---
 
 Der Weenect XT tauscht Minimalgewicht gegen Akkureserve und Outdoor-Ausstattung. Dadurch gehört er in den Hundevergleich, nicht in eine Liste kleiner Katzentracker.

@@ -62,7 +62,12 @@
     "comparison:metadata": "node scripts/comparison-platform/metadata.mjs",
     "comparison:metadata:check": "node scripts/comparison-platform/metadata.mjs --check",
     "comparison:fix": "node scripts/comparison-platform/autofix.mjs",
-    "comparison:fix:check": "node scripts/comparison-platform/autofix.mjs --check"
+    "comparison:fix:check": "node scripts/comparison-platform/autofix.mjs --check",
+    "comparison:data:audit": "node scripts/comparison-platform/data-audit.mjs",
+    "comparison:data:audit:strict": "node scripts/comparison-platform/data-audit.mjs --strict",
+    "comparison:data:migrate": "node scripts/comparison-platform/migrate-data.mjs --write",
+    "comparison:data:migrate:check": "node scripts/comparison-platform/migrate-data.mjs",
+    "comparison:data:test": "node --test test/comparison-data-platform.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

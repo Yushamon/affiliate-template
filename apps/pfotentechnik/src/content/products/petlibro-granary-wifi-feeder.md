@@ -168,6 +168,7 @@ features:
   - "App-Steuerung und Fütterungsprotokoll"
   - "Batterie-Backup"
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -186,6 +187,26 @@ comparisonData:
     rating: 4.1
     score: 82
     productStatus: "unknown"
+  custom:
+    portionierung: "1–50 Einheiten je Mahlzeit; 20 ml je Einheit"
+    krokettengroesse: "2–15 mm"
+    napf: "Edelstahl; Einzel- oder Doppelschale"
+    kapazitaet: "5 Liter"
+    notstrom: "3 D-Batterien; Zeitpläne laufen weiter"
+    hundegroesse: "klein bis mittelgroß"
+    kamera: "Nein"
+    tiertrennung: "Nein; Doppelschale verteilt nur"
+    redaktionellesprofil: "Bester Gesamtkompromiss"
+    futterart: "Trockenfutter"
+    zugang: "Freier Zugang; keine Tiererkennung"
+    mehrkatzen: "Doppelschale möglich, aber keine sichere Trennung"
+    reinigung: "Behälter, Rotor, Auslass und Edelstahlnapf regelmäßig reinigen"
+    zugangskontrolle: "Keine individuelle Kontrolle"
+    zahl-der-futterplatze: "Einzel- oder Doppelschale je Variante"
+    futterarten: "Trockenfutter"
+    mehrkatzen-eignung: "Gut bei gleichem Futter und ähnlicher Ration"
+    konfliktpotenzial: "Mittel; Doppelschale verhindert keinen Futterklau"
+    kostenlogik: "Ein Gerät, Doppelschalenvariante separat prüfen"
 ---
 
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.

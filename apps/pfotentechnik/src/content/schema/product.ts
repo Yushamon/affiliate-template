@@ -249,8 +249,23 @@ const comparisonValueSchema: z.ZodType<unknown> = z.lazy(() =>
   ])
 );
 
+const comparisonRecordSchema =
+  z.record(
+    z.string(),
+    comparisonValueSchema
+  );
+
 const productComparisonDataSchema = z
-  .record(z.string(), comparisonValueSchema)
+  .object({
+    version: z.literal(1).optional(),
+    general: comparisonRecordSchema.optional(),
+    feeder: comparisonRecordSchema.optional(),
+    fountain: comparisonRecordSchema.optional(),
+    gps: comparisonRecordSchema.optional(),
+    editorial: comparisonRecordSchema.optional(),
+    custom: comparisonRecordSchema.optional()
+  })
+  .catchall(comparisonValueSchema)
   .optional();
 
 const productComparisonFiltersSchema =

@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import petTechHeroImage from "../../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import { buildAutomaticRecommendations } from "./recommendationEngine";
+import { resolveComparisonValue } from "./comparisonDataPlatform";
 import type {
   ComparisonFilter,
   ComparisonProduct,
@@ -322,68 +323,13 @@ export function buildComparisonViewModel({
 
   const getCriterionValue = (
     item: (typeof items)[number],
-    criterionKey: string,
-    criterionLabel: string
-  ): string => {
-    const normalized = normalizeKey(criterionKey);
-
-    const override = Object.entries(item.values ?? {}).find(
-      ([key]) => normalizeKey(key) === normalized
-    )?.[1];
-
-    if (override !== undefined) {
-      return typeof override === "boolean"
-        ? override
-          ? "Ja"
-          : "Nein"
-        : String(override);
-    }
-
-    const product = productBySlug.get(item.slug);
-    if (!product) return "–";
-
-    const candidates = new Set([
-      normalized,
-      normalizeKey(criterionLabel),
-      ...(criterionAliases[normalized] ?? [])
-    ]);
-
-    if (normalized === "napf") {
-      const evidence = [
-        ...product.data.specs.map(
-          (spec) => `${spec.label}: ${String(spec.value)}`
-        ),
-        ...product.data.strengths
-      ].find((value) => /napf|schale/i.test(value));
-
-      return evidence?.replace(
-        /^(Besonderheit|Napf):\s*/i,
-        ""
-      ) ?? "–";
-    }
-
-    if (normalized === "portionierung") {
-      const evidence = product.data.features.find(
-        (value) => /mahlzeit|portion/i.test(value)
-      );
-
-      if (evidence) return evidence;
-    }
-
-    const spec = product.data.specs.find((candidate) =>
-      candidates.has(normalizeKey(candidate.label))
-    );
-
-    if (spec) {
-      return typeof spec.value === "boolean"
-        ? spec.value
-          ? "Ja"
-          : "Nein"
-        : String(spec.value);
-    }
-
-    return "–";
-  };
+    criterion: (typeof data.criteria)[number]
+  ): string =>
+    resolveComparisonValue({
+      product: productBySlug.get(item.slug),
+      item,
+      criterion
+    });
 
   const rawRows = data.criteria.map((criterion) => ({
     criterion: {
@@ -393,11 +339,7 @@ export function buildComparisonViewModel({
     },
     cells: items.map((item) => ({
       productSlug: item.slug,
-      value: getCriterionValue(
-        item,
-        criterion.key,
-        criterion.label
-      )
+      value: getCriterionValue(item, criterion)
     }))
   }));
 
@@ -714,7 +656,18 @@ export function buildComparisonViewModel({
     },
     facts: [
       { label: "Modelle", value: String(views.length) },
-      { label: "Kriterien", value: String(data.criteria.length) },
+      ...(rows.length > 0
+        ? [{ label: "Kriterien", value: String(rows.length) }]
+        : [{
+            label: "Datenstand",
+            value: new Intl.DateTimeFormat("de-DE", {
+              month: "2-digit",
+              year: "numeric",
+              timeZone: "UTC"
+            }).format(
+              new Date(`${data.updatedAt ?? data.publishedAt}T00:00:00Z`)
+            )
+          }]),
       { label: "Einordnung", value: "Unabhängig" }
     ],
     products: views,

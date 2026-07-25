@@ -36,8 +36,10 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
     <a href="#schnelle-empfehlung">30-Sekunden-Empfehlung</a>
     <a href="#vergleichssieger">Testsieger</a>
     <a href="#einsatzzwecke">Einsatzzwecke</a>
-    <a href="#redaktionelle-zusammenfassung">Zusammenfassung</a>
-    <a href="#direktvergleich">Vergleich</a>
+    <a href="#direktvergleich">Direktvergleich</a>
+    {model.rows.length > 0 && (
+      <a href="#redaktionelle-zusammenfassung">Zusammenfassung</a>
+    )}
     <a href="#methodik">Methodik</a>
   </nav>
 
@@ -116,16 +118,25 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
       <slot name="scenario-recommendations" />
     </section>
 
-    <section id="redaktionelle-zusammenfassung" class="comparison-premium-section" aria-label="Redaktionelle Zusammenfassung">
-      <ComparisonInsightSummary products={model.products} rows={model.rows} />
-    </section>
-
     <ComparisonExplorer
       products={model.products}
       rows={model.rows}
       filters={model.filters}
       initialVisibleProducts={model.initialVisibleProducts}
     />
+
+    {model.rows.length > 0 && (
+      <section
+        id="redaktionelle-zusammenfassung"
+        class="comparison-premium-section"
+        aria-label="Redaktionelle Zusammenfassung"
+      >
+        <ComparisonInsightSummary
+          products={model.products}
+          rows={model.rows}
+        />
+      </section>
+    )}
 
     <ComparisonProsCons products={model.products} />
 

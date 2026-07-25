@@ -17,41 +17,20 @@ items:
     label: "PETLIBRO Granary Camera Feeder"
     type: "product"
     recommendation: "Bester Kamera-Allrounder."
-    values:
+    overrides:
       profil: "Bester Gesamtkompromiss"
-      bild: "1080p, Nachtsicht, Zwei-Wege-Audio"
-      kontrollwert: "Sichtkontrolle des Napfs"
-      offline: "Zeitpläne lokal, Kamera online"
-      datenschutz: "Cloudoptionen prüfen"
-      kamera: "Ja"
-      futter: "Trockenfutter"
-      mehrtiere: "Keine Tiertrennung"
   - slug: "petkit-yumshare-dual-hopper"
     label: "PETKIT YumShare Dual-Hopper 2"
     type: "product"
     recommendation: "Beste Zwei-Sorten-Lösung mit Kamera."
-    values:
+    overrides:
       profil: "Beste Zwei-Kammer-Lösung"
-      bild: "Kamera mit Tiererkennung"
-      kontrollwert: "Sorten- und Aktivitätskontrolle"
-      offline: "Video online"
-      datenschutz: "Cloud prüfen"
-      kamera: "Ja"
-      futter: "Zwei Trockenfuttersorten"
-      mehrtiere: "Keine Zugangssperre"
   - slug: "wopet-heritage-view-camera-feeder"
     label: "WOPET Heritage View Camera Feeder"
     type: "product"
     recommendation: "Großer Vorrat mit Kamera."
-    values:
+    overrides:
       profil: "Größter Vorrat"
-      bild: "1080p"
-      kontrollwert: "Sichtkontrolle"
-      offline: "Backup testen"
-      datenschutz: "Speicheroptionen prüfen"
-      kamera: "Ja"
-      futter: "Trockenfutter"
-      mehrtiere: "Keine Tiertrennung"
 criteria:
 - {key: profil, label: "Unsere Einordnung", weight: 1.5}
 - {key: bild, label: "Bildqualität", weight: 1.2}

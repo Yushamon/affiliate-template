@@ -152,6 +152,7 @@ features:
   - "5-Liter-Vorrat"
   - "App-Variante erhältlich"
 comparisonData:
+  version: 1
   general:
     animal:
       - "cat"
@@ -166,6 +167,19 @@ comparisonData:
     rating: 3.6
     score: 73
     productStatus: "unknown"
+  custom:
+    futterart: "Trockenfutter bis ungefähr 12,7 mm"
+    zugang: "Freier Zugang; keine Tiererkennung"
+    mehrkatzen: "Zwei Näpfe mit ungefähr 28 cm Abstand, aber kein Schutz vor Futterklau"
+    app: "Je Angebotsvariante Timer oder App"
+    reinigung: "Edelstahlnäpfe und Futterrutschen regelmäßig reinigen"
+    kamera: "Nein"
+    zugangskontrolle: "Keine individuelle Kontrolle"
+    zahl-der-futterplatze: "Zwei Schalen aus einem gemeinsamen Vorrat"
+    futterarten: "Trockenfutter"
+    mehrkatzen-eignung: "Gut bei gleichem Futter und ähnlicher Ration"
+    konfliktpotenzial: "Mittel; eine schnelle Katze kann beide Schalen nutzen"
+    kostenlogik: "Ein Gerät für zwei Futterplätze"
 ---
 
 Der oneisall 5L Automatic Cat Feeder richtet sich vor allem an Haushalte mit zwei Katzen. Ein Y-Verteiler führt das Futter in zwei getrennte Näpfe.

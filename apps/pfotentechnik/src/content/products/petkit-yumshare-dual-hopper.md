@@ -252,6 +252,7 @@ faq:
   - question: "Ist der Automat für medizinisch getrennte Diäten geeignet?"
     answer: "Nur eingeschränkt. Zwei Futtersorten lassen sich getrennt lagern, aber es gibt keine physische Zugangskontrolle. Bei Allergien, Medikamenten oder stark unterschiedlichen Diäten ist ein mikrochipgesteuerter Automat sicherer."
 comparisonData:
+  version: 1
   general:
     animal:
       - "dog"
@@ -266,6 +267,23 @@ comparisonData:
     score: 83
     priceCategory: "premium"
     productStatus: "active"
+  custom:
+    zugangskontrolle: "Tiererkennung und Kamera, aber keine physische Zugangssperre"
+    zahl-der-futterplatze: "Ein Auslass, zwei getrennte Futterkammern"
+    futterarten: "Zwei Trockenfuttersorten"
+    portionierung: "App-gesteuerte Mischung beziehungsweise Auswahl aus zwei Kammern"
+    mehrkatzen-eignung: "Gut für Sortenwechsel; ungeeignet für strikt getrennte Rationen"
+    app: "PETKIT-App"
+    ausfallsicherheit: "Netz- und App-Funktionen; Backup je Produktvariante prüfen"
+    konfliktpotenzial: "Mittel bis hoch bei Futterneid, da nur ein Futterplatz"
+    kostenlogik: "Ein Gerät, aber keine sichere individuelle Trennung"
+    bild: "Kamera mit Tiererkennung"
+    kontrollwert: "Sorten- und Aktivitätskontrolle"
+    offline: "Video online"
+    datenschutz: "Cloud prüfen"
+    kamera: "Ja"
+    futter: "Zwei Trockenfuttersorten"
+    mehrtiere: "Keine Zugangssperre"
 ---
 
 Der PETKIT YumShare Dual-Hopper 2 ist ein Premium-Futterautomat mit zwei getrennten Vorratskammern, einem gemeinsamen Edelstahl-Napf und einer integrierten AI-Kamera.
