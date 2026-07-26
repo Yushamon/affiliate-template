@@ -86,18 +86,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:19.953Z"
-  affiliateUrl: "https://amzn.to/4x1VEey"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Weenect-Hund-GPS-Tracker-Wasserdicht-Erforderlich-Ohne-Halsband/dp/B0G7KPLBLB"
-
 affiliate:
   provider: "amazon"
   label: "Bei Amazon ansehen"
   url: "https://amzn.to/4x1VEey"
-
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 90
 

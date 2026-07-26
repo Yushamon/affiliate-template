@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const PATCH_PREFIX = "pfotentechnik-product-experience-hotfix-2.0.3-";
+const PATCH_PREFIX = "pfotentechnik-comparison-score-price-3.3.4-";
 
 function parseArgs(argv) {
   const out = { repo: process.cwd() };
@@ -24,7 +24,7 @@ async function main() {
     .sort()
     .reverse();
 
-  if (!matches.length) throw new Error("Kein Backup für diesen Hotfix gefunden.");
+  if (!matches.length) throw new Error("Kein Backup für diesen Patch gefunden.");
 
   const backupRoot = path.join(backupsRoot, matches[0]);
   const state = JSON.parse(await fs.readFile(path.join(backupRoot, "install-state.json"), "utf8"));

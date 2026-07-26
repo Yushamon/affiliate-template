@@ -62,17 +62,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:25.534Z"
-  affiliateUrl: "https://amzn.to/4hnjahC"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/oneisall-Futterautomat-Futterspender-Katzenbrunnen-Edelstahlschalen/dp/B0G4DX3QR8"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4hnjahC
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4hnjahC"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 79
 ratings:

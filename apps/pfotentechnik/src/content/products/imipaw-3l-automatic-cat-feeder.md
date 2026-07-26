@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:22.529Z"
-  affiliateUrl: "https://amzn.to/4pGKyti"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Futterautomat-Katzenfutter-Programmierbarem-Automatischer-Futterspender/dp/B0CY2942F7"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4pGKyti
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4pGKyti"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 79
 ratings:

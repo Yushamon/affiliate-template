@@ -63,17 +63,16 @@ price:
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
   checkedAt: "2026-07-26T18:01:14.480Z"
-  affiliateUrl: "https://amzn.to/3TmIOJs"
   source:
     id: "manual"
     label: "Amazon"
     type: "manual"
-    url: "https://amzn.to/3TmIOJs"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/3TmIOJs
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/3TmIOJs"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.4
 score: 88
 ratings:

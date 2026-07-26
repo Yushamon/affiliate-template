@@ -65,17 +65,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:14.918Z"
-  affiliateUrl: "https://amzn.to/3Tjaqz5"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Garmin-Alpha-20-GPS-Hundehalsband/dp/B0BYGVLRHV"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/3Tjaqz5
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/3Tjaqz5"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 81
 ratings:

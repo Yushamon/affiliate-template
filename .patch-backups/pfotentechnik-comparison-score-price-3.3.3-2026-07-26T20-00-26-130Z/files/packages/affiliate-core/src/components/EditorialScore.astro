@@ -1,0 +1,209 @@
+---
+interface Props {
+  value: number;
+  scale?: 5 | 10 | 100;
+  variant?: "inline" | "compact" | "standard" | "detailed";
+  methodologyHref?: string;
+  showMethodology?: boolean;
+  class?: string;
+}
+
+const {
+  value,
+  scale = 100,
+  variant = "compact",
+  methodologyHref = "/so-bewerten-wir/",
+  showMethodology = variant === "detailed",
+  class: className
+} = Astro.props;
+
+const normalized =
+  scale === 5 ? value * 20 : scale === 10 ? value * 10 : value;
+const score = Math.max(0, Math.min(100, Math.round(normalized)));
+
+const verdict =
+  score >= 90 ? "Hervorragend"
+  : score >= 80 ? "Sehr gut"
+  : score >= 70 ? "Gut"
+  : score >= 60 ? "Solide"
+  : score >= 50 ? "Mit Einschränkungen"
+  : "Nicht empfohlen";
+
+const tone =
+  score >= 80 ? "excellent"
+  : score >= 70 ? "good"
+  : score >= 60 ? "solid"
+  : score >= 50 ? "limited"
+  : "poor";
+---
+
+<div
+  class:list={[
+    "pt-score",
+    `pt-score--${variant}`,
+    `pt-score--${tone}`,
+    className
+  ]}
+  aria-label={`PfotenTechnik-Score ${score} von 100: ${verdict}`}
+>
+  <div class="pt-score__summary">
+    <strong class="pt-score__value">{score}</strong>
+    <div class="pt-score__copy">
+      <span class="pt-score__verdict">{verdict}</span>
+      <small class="pt-score__label">PfotenTechnik-Score</small>
+    </div>
+  </div>
+
+  <div
+    class="pt-score__track"
+    role="meter"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow={score}
+  >
+    <span style={`--pt-score-value:${score}%`}></span>
+  </div>
+
+  {
+    showMethodology && (
+      <div class="pt-score__method">
+        <span>Nach einheitlichen Kriterien eingeordnet</span>
+        <a href={methodologyHref}>So entsteht der Score</a>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .pt-score {
+    --score-accent: #22a95b;
+    --score-soft: rgba(34, 169, 91, 0.1);
+    display: grid;
+    min-width: 0;
+    gap: 0.55rem;
+  }
+
+  .pt-score--good { --score-accent: #75b817; }
+  .pt-score--solid { --score-accent: #e2a400; }
+  .pt-score--limited { --score-accent: #ea7d25; }
+  .pt-score--poor { --score-accent: #df4d4d; }
+
+  .pt-score__summary {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .pt-score__value {
+    flex: 0 0 auto;
+    color: var(--score-accent);
+    font-size: clamp(1.65rem, 4vw, 2.25rem);
+    font-weight: 950;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }
+
+  .pt-score__copy {
+    display: grid;
+    min-width: 0;
+    gap: 0.05rem;
+  }
+
+  .pt-score__verdict {
+    color: var(--text, #10231f);
+    font-size: 0.88rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .pt-score__label {
+    color: var(--muted, #687670);
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+
+  .pt-score__track {
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--muted, #687670) 16%, transparent);
+  }
+
+  .pt-score__track > span {
+    display: block;
+    width: var(--pt-score-value);
+    height: 100%;
+    border-radius: inherit;
+    background: var(--score-accent);
+  }
+
+  .pt-score__method {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.8rem;
+    color: var(--muted, #687670);
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+
+  .pt-score__method a {
+    color: var(--score-accent);
+    font-weight: 850;
+    text-underline-offset: 3px;
+  }
+
+  .pt-score--inline {
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .pt-score--inline .pt-score__summary { gap: 0.45rem; }
+  .pt-score--inline .pt-score__value { font-size: 1.3rem; }
+  .pt-score--inline .pt-score__verdict { font-size: 0.78rem; }
+
+  .pt-score--inline .pt-score__label,
+  .pt-score--inline .pt-score__track {
+    display: none;
+  }
+
+  .pt-score--compact {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 0.9rem;
+    border-top: 1px solid color-mix(in srgb, var(--muted, #687670) 17%, transparent);
+  }
+
+  .pt-score--standard,
+  .pt-score--detailed {
+    padding: 1rem;
+    border: 1px solid color-mix(in srgb, var(--score-accent) 20%, transparent);
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--score-soft) 52%, transparent);
+  }
+
+  .pt-score--detailed {
+    padding: clamp(1.1rem, 3vw, 1.45rem);
+  }
+
+  .pt-score--detailed .pt-score__value {
+    font-size: clamp(2.7rem, 8vw, 4.7rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .pt-score__verdict { color: #f7faf9; }
+
+    .pt-score__label,
+    .pt-score__method {
+      color: rgba(226, 232, 240, 0.7);
+    }
+
+    .pt-score--standard,
+    .pt-score--detailed {
+      background: rgba(255, 255, 255, 0.035);
+    }
+  }
+</style>

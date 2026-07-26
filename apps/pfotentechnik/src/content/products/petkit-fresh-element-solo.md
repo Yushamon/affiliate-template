@@ -68,17 +68,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:47.356Z"
-  affiliateUrl: "https://amzn.to/4gOwewg"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/PETKIT-Futterautomat-Futterautomaten-Edelstahlsch%C3%BCssel-Lock-Technologie/dp/B0CD7N5X3K"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4gOwewg
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4gOwewg"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 81
 ratings:

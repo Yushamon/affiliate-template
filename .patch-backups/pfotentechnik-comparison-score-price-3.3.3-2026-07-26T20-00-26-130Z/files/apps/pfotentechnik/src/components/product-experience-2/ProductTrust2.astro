@@ -1,0 +1,93 @@
+---
+interface Props {
+  cards: Array<{ title: string; text: string }>;
+  updatedAt?: string;
+}
+
+const { cards, updatedAt } = Astro.props;
+const formattedDate = updatedAt
+  ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt))
+  : null;
+---
+
+<section class="trust" aria-labelledby="trust-title">
+  <header>
+    <span>Transparenz</span>
+    <h2 id="trust-title">Wie belastbar ist diese Einordnung?</h2>
+    {formattedDate && <p>Zuletzt inhaltlich geprüft: {formattedDate}</p>}
+  </header>
+
+  <div class="trust__grid">
+    {cards.map((card, index) => (
+      <article>
+        <b aria-hidden="true">{String(index + 1).padStart(2, "0")}</b>
+        <div><h3>{card.title}</h3><p>{card.text}</p></div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .trust {
+    padding: clamp(30px, 5vw, 54px) 0;
+    border-top: 1px solid var(--px2-border);
+    background: var(--px2-surface);
+  }
+
+  header span {
+    color: var(--px2-green-strong);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 7px 0 5px;
+    font-size: clamp(1.55rem, 4vw, 2.25rem);
+    letter-spacing: -.025em;
+  }
+
+  header p {
+    margin: 0 0 22px;
+    color: var(--px2-muted);
+  }
+
+  .trust__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+
+  article {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  article b {
+    color: var(--px2-green-strong);
+    font-size: .75rem;
+  }
+
+  h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+  }
+
+  article p {
+    margin: 0;
+    color: var(--px2-muted);
+    line-height: 1.55;
+  }
+
+  @media (max-width: 700px) {
+    .trust__grid { grid-template-columns: 1fr; }
+  }
+</style>

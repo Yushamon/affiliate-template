@@ -64,17 +64,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:37.825Z"
-  affiliateUrl: "https://amzn.to/4x46uRz"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/PETKIT-Hundewasserspender-Wasserbrunnen-Intelligentes-App-Steuerung/dp/B0CXPG7K79"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4x46uRz
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4x46uRz"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.2
 score: 84
 ratings:

@@ -1,0 +1,384 @@
+---
+title: "PETLIBRO Granary 2 Vision"
+slug: "petlibro-granary-2-vision"
+type: "product"
+layout: "product"
+testStatus: "manufacturer-data"
+productStatus: "unknown"
+description: "5-Liter-Trockenfutterautomat für Katzen mit 1-Gramm-Waage, 1080p-Kamera, Nachtsicht, App-Protokollen, Smart-Refill und integriertem Akku-Backup."
+recommendation: "Eine der interessantesten neuen Premium-Lösungen für eine Katze, wenn nicht nur Ausgaben, sondern auch verbleibendes Futter und Fressverlauf erfasst werden sollen. Für Futterklau ist erst der Granary 2 X gedacht; für zwei Näpfe die Vision-Duo-Variante."
+manufacturer:
+  key: "petlibro"
+  name: "PETLIBRO"
+  slug: "petlibro"
+category:
+  key: "futterautomaten"
+  label: "Futterautomaten"
+  path: "/smarte-futterautomaten/"
+productUrl: "/produkt/petlibro-granary-2-vision/"
+publishedAt: "2026-07-26"
+updatedAt: "2026-07-26"
+author:
+  name: "PfotenTechnik Redaktion"
+seo:
+  title: "PETLIBRO Granary 2 Vision im Datencheck"
+  description: "Granary 2 Vision mit 5 Litern, 1-g-Waage, 1080p-Kamera, 48-h-Backup, App-Tracking und klarer Abgrenzung zum Granary 2 X."
+  canonical: "/produkt/petlibro-granary-2-vision/"
+  sitemap: true
+  priority: 0.9
+hub:
+  sections:
+    - "produkte"
+    - "futterautomaten"
+tags:
+  - "katze"
+  - "trockenfutter"
+  - "kamera"
+  - "app"
+  - "waage"
+  - "fressprotokoll"
+  - "dual-band-wlan"
+  - "premium"
+images:
+  hero:
+    src: "../../assets/images/products/petlibro-granary-2-vision/hero.webp"
+    alt: "PETLIBRO Granary 2 Vision als redaktionelle Produktdarstellung"
+  thumbnail:
+    src: "../../assets/images/products/petlibro-granary-2-vision/thumbnail.webp"
+    alt: "PETLIBRO Granary 2 Vision in kompakter redaktioneller Ansicht"
+  comparison:
+    src: "../../assets/images/products/petlibro-granary-2-vision/comparison.webp"
+    alt: "PETLIBRO Granary 2 Vision im redaktionellen Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petlibro-granary-2-vision/gallery-1.webp"
+      alt: "Katze frisst aus dem Edelstahlnapf des PETLIBRO Granary 2 Vision"
+    - src: "../../assets/images/products/petlibro-granary-2-vision/gallery-2.webp"
+      alt: "Kamera, Ausgabeschacht und Wiegebasis des Granary 2 Vision"
+    - src: "../../assets/images/products/petlibro-granary-2-vision/gallery-3.webp"
+      alt: "PETLIBRO-App mit Fressprotokoll des Granary 2 Vision"
+price:
+  current: 129.99
+  currency: "USD"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:59.827Z"
+  affiliateUrl: "https://petlibro.com/products/granary-2-series"
+  source:
+    id: "petlibro.com"
+    label: "petlibro.com"
+    type: "merchant"
+    url: "https://petlibro.com/products/granary-2-series"
+
+affiliate:
+  provider: "official"
+  label: "Verfügbarkeit prüfen"
+  url: "https://petlibro.com/products/granary-2-series"
+  rel: "nofollow noopener"
+  target: "_blank"
+conversion:
+  badge: "premium-tipp"
+  primaryCtaLabel: "Marktstart und Verfügbarkeit prüfen"
+  secondaryCtaLabel: "Kamera-Futterautomaten vergleichen"
+  showSecondaryCta: true
+editorial:
+  assessmentType: "data-review"
+  evidence:
+    - "manufacturer-documentation"
+    - "technical-specifications"
+    - "comparative-analysis"
+  testedHandsOn: false
+  lastVerifiedAt: "2026-07-26"
+  note: "Redaktionelle Datenprüfung anhand der offiziellen Granary-2-Serienseite und Herstellerunterlagen. Das Modell war zum Prüfzeitpunkt neu; deutsche Verfügbarkeit und Langzeiterfahrung waren nicht belastbar."
+rating: 4.3
+score: 86
+ratings:
+  verarbeitung: 4.4
+  bedienung: 4.2
+  kamera: 4.4
+  portionierung: 4.5
+  tracking: 4.5
+  preisleistung: 3.7
+decision:
+  bestFor:
+    - "eine Katze mit Trockenfutter und genauem Fressprotokoll"
+    - "Gewichtsmanagement mit dokumentierter Futteraufnahme als Alltagshilfe"
+    - "Nutzer, die Kamera, Napfwaage und App gemeinsam verwenden möchten"
+    - "Haushalte mit hartem, ebenem Stellplatz und stabiler WLAN-Verbindung"
+  attention:
+    - "offiziell für Katzen und Trockenfutter vorgesehen"
+    - "keine Futterklau-Sperre; diese Funktion gehört zum Granary 2 X"
+    - "Aufnahme, Wiedergabe und Teile der KI-Funktionen können ein kostenpflichtiges Abo erfordern"
+    - "nicht für Teppich geeignet, weil die Waage einen harten ebenen Boden benötigt"
+    - "deutsche Verfügbarkeit zum Prüfzeitpunkt nicht bestätigt"
+review:
+  summary: "Granary 2 Vision kombiniert einen 5-Liter-Behälter, eine integrierte Präzisionswaage, 1080p-Kamera mit Nachtsicht, Smart-Refill, geplante Mahlzeiten und bis zu 48 Stunden Akku-Backup."
+  verdict: "Der Ansatz ist stärker als bei älteren Kameraautomaten, weil nicht nur eine Ausgabe protokolliert, sondern ausgegebenes und verbleibendes Futter gewogen werden. Der praktische Wert hängt von Kalibrierung, Abo-Modell und realer Messstabilität ab."
+strengths:
+  - "integrierte Waage mit 1-Gramm-Herstellerangabe"
+  - "misst ausgegebenes und verbleibendes Futter"
+  - "1080p-Kamera mit Nachtsicht und Liveansicht"
+  - "Smart-Refill und geplante Mahlzeiten"
+  - "2,4- und 5-GHz-WLAN"
+  - "wiederaufladbarer Akku mit bis zu 48 Stunden Backup"
+  - "Edelstahlnapf und 5-Liter-Behälter"
+weaknesses:
+  - "mehrere Kernfunktionen sind an PETLIBRO Care oder Video Cloud AI gebunden"
+  - "keine Zugangssperre gegen Futterdiebstahl"
+  - "nur Trockenfutter mit 2 bis 18 mm geeigneter Krokettenform"
+  - "Waage verlangt harten, ebenen Boden und regelmäßige Kalibrierung"
+  - "sehr neue Produktgeneration ohne belastbare Langzeiterfahrung"
+experience:
+  summary: "Granary 2 Vision adressiert eine bekannte Schwäche klassischer Futterautomaten: Ein Ausgabeprotokoll beweist nicht, wie viel tatsächlich gefressen wurde. Die zusätzliche Napfwaage kann diese Lücke verkleinern, aber nicht jede Unsicherheit beseitigen."
+  positives:
+    - "Messung von Ausgabe und Restmenge statt reinem Motorprotokoll"
+    - "klare Trennung von Smart-Refill und festen Mahlzeitenplänen"
+    - "dokumentierte Maße, Krokettengröße, Backup und WLAN-Bänder"
+  criticism:
+    - "Kamera erkennt Aktivität, verhindert aber keinen Futterklau"
+    - "Hersteller nennt Abo-Abhängigkeiten für Insights, Aufzeichnung und Wiedergabe"
+    - "Deutschland- beziehungsweise EU-Start war zum Prüfdatum nicht belastbar"
+  support: "PETLIBRO nennt auf der US-Seite 24 Monate Herstellergarantie und 90 Tage Rückgaberecht für die Granary-2-Serie; Bedingungen können regional abweichen."
+  methodology: "Abgleich der offiziellen Produkt- und Serienseite mit den technischen Angaben zur Variante PLAF205. Kein eigener Ausgabe-, Waagen-, Kamera- oder Langzeittest."
+  maintenance: "Behälter trocken halten, Ausgabeschacht und Edelstahlnapf regelmäßig reinigen, Wiegebasis krümelfrei halten und die Waage nach Demontage und Zusammenbau neu kalibrieren."
+  reliability: "Die Fütterungsautomatik sollte vor einer Abwesenheit mit dem verwendeten Futter getestet werden. Besonders wichtig sind Krokettengröße, ebener Stellplatz, Akku-Backup, Blockadewarnungen und ein Vergleich der App-Werte mit einer Kontrollwägung."
+alternatives:
+  - "petlibro-granary-camera-feeder"
+  - "xiaomi-smart-pet-food-feeder-2"
+  - "petkit-yumshare-solo-2"
+comparisons:
+  - "beste-futterautomaten-mit-kamera"
+  - "beste-futterautomaten-fuer-katzen"
+specs:
+  - label: "Modell"
+    value: "PLAF205"
+  - label: "Produkttyp"
+    value: "Smarter Trockenfutterautomat mit Kamera und Waage"
+  - label: "Kapazität"
+    value: "5 Liter"
+  - label: "Futterart"
+    value: "Trockenfutter"
+  - label: "Geeignete Tiere"
+    value: "Katzen"
+  - label: "Krokettengröße"
+    value: "2 bis 18 mm; keine übergroßen oder unregelmäßigen Formen"
+  - label: "Waage"
+    value: "integriert; Herstellerangabe 1 g Genauigkeit"
+  - label: "Maximale Waagenlast"
+    value: "7,5 kg"
+  - label: "Kamera"
+    value: "1080p mit Nachtsicht"
+  - label: "Videofunktionen"
+    value: "Liveansicht; Aufzeichnung und Wiedergabe abhängig vom Video-Cloud-AI-Abo"
+  - label: "Fressprotokoll"
+    value: "Menge, Zeitpunkt, Dauer und Trends laut Hersteller"
+  - label: "Fütterungsmodi"
+    value: "Smart Refill und geplante Mahlzeiten"
+  - label: "WLAN"
+    value: "2,4 und 5 GHz"
+  - label: "Stromversorgung"
+    value: "Netzbetrieb und wiederaufladbarer Akku"
+  - label: "Backup"
+    value: "laut Variantenspezifikation bis zu 48 Stunden"
+  - label: "Material"
+    value: "Gehäuse aus BPA-freiem ABS und Silikon; Edelstahlnapf"
+  - label: "Abmessungen"
+    value: "357 × 180 × 356 mm"
+  - label: "Gewicht"
+    value: "3,45 kg"
+  - label: "Stellfläche"
+    value: "harter, ebener Boden; nicht für Teppich"
+  - label: "Betriebssysteme"
+    value: "iOS und Android"
+  - label: "Tiererkennung"
+    value: "KI-Zuordnung von Aufnahmen und Protokollen; keine Zugangssperre"
+faq:
+  - question: "Was unterscheidet Granary 2 Vision von einem normalen Kamera-Futterautomaten?"
+    answer: "Die integrierte Waage erfasst laut Hersteller sowohl ausgegebenes als auch verbleibendes Futter. Dadurch soll die App nicht nur Motorausgaben, sondern die tatsächliche Veränderung im Napf abbilden."
+  - question: "Ist der Granary 2 Vision für Hunde geeignet?"
+    answer: "Die offizielle Variantenspezifikation nennt Katzen. PfotenTechnik ordnet das Modell deshalb nicht als Hundeempfehlung ein."
+  - question: "Kann das Modell Nassfutter ausgeben?"
+    answer: "Nein. Die Granary-2-Serie ist für Trockenfutter vorgesehen und nicht zur Ausgabe von Nassfutter oder Medikamenten gedacht."
+  - question: "Verhindert die Kamera Futterklau?"
+    answer: "Nein. Granary 2 Vision kann Tiere in Aufnahmen und Protokollen zuordnen, sperrt den Napf aber nicht. Für kontrollierten Zugang ist der Granary 2 X konzipiert."
+  - question: "Wie genau ist die integrierte Waage?"
+    answer: "PETLIBRO bewirbt 1-Gramm-Genauigkeit. Diese Angabe wurde von PfotenTechnik nicht unabhängig geprüft."
+  - question: "Muss die Waage kalibriert werden?"
+    answer: "Ja. PETLIBRO empfiehlt eine Kalibrierung nach jedem Zerlegen und erneuten Zusammenbauen des Automaten."
+  - question: "Funktioniert der Automat auf Teppich?"
+    answer: "Nein. Die Herstellerangaben verlangen einen harten, ebenen Boden, damit die Waage korrekt arbeiten kann."
+  - question: "Welche Funktionen benötigen ein Abo?"
+    answer: "Die Produktseite kennzeichnet Fütterungs-Insights mit PETLIBRO Care. Aufnahme und Wiedergabe der Kamera sind an Video Cloud AI gebunden. Liveansicht und genaue Tarifgrenzen sollten vor dem Kauf geprüft werden."
+  - question: "Wie lange funktioniert das Akku-Backup?"
+    answer: "Für die Variante PLAF205 nennt PETLIBRO bis zu 48 Stunden. Reale Laufzeit hängt von Akku, Kamera, WLAN und Fütterungshäufigkeit ab."
+  - question: "Ist die deutsche Verfügbarkeit gesichert?"
+    answer: "Zum redaktionellen Prüfdatum war die Serie auf der internationalen PETLIBRO-Seite gelistet. Ein belastbarer deutscher Produktstart war nicht bestätigt."
+  - question: "Beweist ein App-Protokoll, dass die Katze gefressen hat?"
+    answer: "Die Waage verbessert die Aussage gegenüber einem reinen Ausgabeprotokoll. Eine sichere medizinische Futteraufnahme-Messung oder eindeutige Tierzuordnung in jeder Situation ist damit dennoch nicht garantiert."
+priceCategory: "premium"
+useCase: "Trockenfutterautomat für eine Katze mit Kamera, Napfwaage und detailliertem Fressverlauf"
+capacity: "5 Liter"
+expandable: "Granary-2-Serie mit Vision Duo und Granary 2 X als alternative Varianten"
+features:
+  - "1-Gramm-Präzisionswaage"
+  - "1080p-Kamera und Nachtsicht"
+  - "Smart-Refill und Zeitpläne"
+  - "Fressprotokolle und Trends"
+  - "48-Stunden-Akku-Backup"
+  - "Dual-Band-WLAN"
+comparisonFilters:
+  animal: ["cat"]
+  petSize: ["small"]
+  foodType: ["dry"]
+  app: true
+  camera: true
+  access: "open"
+  backupPower: true
+  reservoirLiters: 5
+  kibbleMaxMm: 18
+  manufacturerSizeClaim: "cats-small-pets"
+  largeDogFit: "unknown"
+  largeDogFitReason: "Der Hersteller nennt Katzen; eine belastbare Hunde-Eignung ist nicht dokumentiert."
+  priceTier: "premium"
+comparisonData:
+  version: 1
+  general:
+    animal: ["cat"]
+    petSize: ["small"]
+    foodType: ["dry"]
+    priceTier: "premium"
+  feeder:
+    capacityLiters: 5
+    camera: true
+    cameraResolution: "1080p"
+    nightVision: true
+    builtInScale: true
+    scaleAccuracyGramsClaim: 1
+    scaleMaxLoadKg: 7.5
+    smartRefill: true
+    scheduledFeeding: true
+    accessControl: false
+    wifiBands: ["2.4 GHz", "5 GHz"]
+    batteryBackupHoursClaim: 48
+    kibbleMinMm: 2
+    kibbleMaxMm: 18
+    floorRequirement: "hart und eben"
+    subscriptionNotes:
+      insights: "PETLIBRO Care"
+      recordingPlayback: "Video Cloud AI"
+  editorial:
+    rating: 4.3
+    score: 86
+    assessment: "manufacturer-data"
+    productStatus: "unknown"
+---
+
+Der **PETLIBRO Granary 2 Vision** versucht, eine Schwäche klassischer Futterautomaten zu lösen: Viele Geräte wissen nur, dass der Motor eine Portion ausgegeben hat. Sie wissen nicht, wie viel Futter im Napf blieb und wie lange die Katze tatsächlich fraß.
+
+Granary 2 Vision kombiniert dafür eine Waage unter dem Napf mit einer 1080p-Kamera, Nachtsicht und App-Protokollen. Das ist technisch plausibel, aber nur dann wertvoll, wenn Waage, Stellfläche, Kalibrierung und Abo-Modell im Alltag zusammenpassen.
+
+## Schnellentscheidung
+
+| Deine Situation | Einordnung |
+| --- | --- |
+| Eine Katze, Trockenfutter, genaue Verlaufskontrolle | sehr passend |
+| Futtermenge soll grammgenauer beobachtet werden | passend |
+| Zwei Tiere teilen einen Napf | nur eingeschränkt aussagekräftig |
+| Futterklau muss verhindert werden | ungeeignet, Granary 2 X prüfen |
+| Nassfutter oder Medikamente sollen ausgegeben werden | ungeeignet |
+| Kein kostenpflichtiges Zusatzabo gewünscht | Funktionen genau prüfen |
+| Aufstellung auf Teppich | ungeeignet |
+
+## Was die Waage besser macht
+
+Ein klassisches Ausgabeprotokoll lautet: „Der Motor lief um 8:00 Uhr.“ Das beweist weder, dass die Kroketten vollständig im Napf ankamen, noch dass sie gefressen wurden.
+
+Granary 2 Vision misst laut Hersteller:
+
+- ausgegebene Futtermenge
+- verbleibende Menge im Napf
+- Zeitpunkt der Mahlzeit
+- Dauer der Fresssitzung
+- längerfristige Veränderungen
+
+Das erhöht den Informationswert. Es bleibt trotzdem eine Haushaltsmessung. Krümel unter der Schale, schiefer Boden, Anstoßen am Gerät oder zwei Tiere am selben Napf können Werte beeinflussen.
+
+## Smart Refill oder fester Plan
+
+Der Automat bietet zwei grundsätzlich verschiedene Strategien:
+
+### Geplante Mahlzeiten
+
+Feste Zeiten und Portionen sind sinnvoll, wenn Tagesration und Fütterungsrhythmus klar vorgegeben werden sollen.
+
+### Smart Refill
+
+Die Waage überwacht den Napfinhalt und ergänzt Futter, wenn ein definierter Schwellenwert unterschritten wird. Eine Tagesgrenze soll verhindern, dass unbegrenzt nachgefüllt wird.
+
+Für Gewichtsmanagement ist ein fester Plan meist leichter zu kontrollieren. Smart Refill passt eher zu Katzen, die kleine Mengen über den Tag verteilt fressen, sofern die Tagesgrenze sauber gesetzt ist.
+
+## Kamera: mehr Kontext, aber keine Zugangskontrolle
+
+Die 1080p-Kamera mit Nachtsicht kann zeigen, was am Napf passiert. PETLIBRO ordnet Aufnahmen und Protokolle über KI Tieren zu.
+
+Das darf nicht mit einer Sperre verwechselt werden:
+
+- Die Vision-Variante öffnet oder schließt den Napf nicht tierindividuell.
+- Eine andere Katze kann weiterhin fressen.
+- Videozuordnung und tatsächliche Futteraufnahme sind nicht identisch.
+- Aufzeichnung und Wiedergabe können ein Video-Cloud-AI-Abo erfordern.
+
+Wer Futterdiebstahl verhindern muss, braucht den **Granary 2 X** oder ein anderes Zugangssystem.
+
+## Krokettengröße und Stellfläche
+
+Die offizielle Spezifikation nennt Trockenfutter zwischen 2 und 18 mm. Übergroße, würfelförmige, halbmondförmige oder stark unregelmäßige Stücke werden nicht empfohlen.
+
+Noch wichtiger ist der Boden. Die Waage benötigt einen harten, ebenen Untergrund. Teppich, weiche Matten oder ein wackelnder Boden können die Messung verfälschen.
+
+Nach dem Zerlegen und Zusammenbauen sollte die Waage neu kalibriert werden.
+
+## Akku-Backup richtig einordnen
+
+Für PLAF205 nennt PETLIBRO einen wiederaufladbaren Akku mit bis zu 48 Stunden Backup. Das ist ein Schutz gegen kurze Stromausfälle, keine Garantie für eine mehrtägige Abwesenheit.
+
+Vor einer Reise sollten geprüft werden:
+
+1. geladener Akku
+2. gespeicherter Fütterungsplan
+3. Verhalten ohne Internet
+4. Ausgabe mit dem konkreten Trockenfutter
+5. Blockadewarnung
+6. Kontrollperson für Tier und Gerät
+
+## Abo-Grenzen vor dem Kauf prüfen
+
+Die Produktseite kennzeichnet bestimmte Funktionen ausdrücklich:
+
+- Fütterungs-Insights: PETLIBRO Care
+- Aufnahme und Wiedergabe: Video Cloud AI
+
+Welche Funktionen ohne Abo dauerhaft erhalten bleiben, sollte unmittelbar vor dem Kauf geprüft werden. Ein guter Hardwarepreis kann durch laufende Dienste relativiert werden.
+
+## Gegenüber älteren Granary-Modellen
+
+Der vorhandene [PETLIBRO Granary Camera Feeder](/produkt/petlibro-granary-camera-feeder/) bietet Kamera und Fütterungspläne. Granary 2 Vision ergänzt vor allem die Waage, Smart Refill und stärkere Verlaufsauswertung.
+
+Weitere Einordnung:
+
+- [Futterautomaten mit Kamera vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
+- [Smarte Futterautomaten: Technik und Kaufberatung](/smarte-futterautomaten/)
+- [Futtermenge einer Katze bestimmen](/futtermenge-katze/)
+
+## Redaktionelle Einordnung
+
+Granary 2 Vision ist eine relevante neue Generation und kein kosmetischer Modellwechsel. Die Waage kann den Unterschied zwischen „ausgegeben“ und „gefressen“ besser abbilden als ältere Automaten.
+
+Abzüge entstehen wegen Abo-Abhängigkeit, fehlender Zugangssperre, unklarer deutscher Verfügbarkeit und noch fehlender Langzeiterfahrung. Deshalb ist die Bewertung bewusst vorsichtiger als die reine Funktionsliste vermuten lässt.
+
+## Quellen
+
+- [PETLIBRO: Granary 2 Series](https://petlibro.com/products/granary-2-series)
+- [PETLIBRO: Einführung der Granary-2-Serie](https://petlibro.com/blogs/all/introducing-petlibro-granary-2-our-most-advanced-feeder)
+- [PETLIBRO: Granary-2-Übersicht](https://petlibro.com/pages/granary-2-series)
+
+**Bildhinweis:** Die vorgesehenen Bilder sind redaktionelle Darstellungen und keine offiziellen Herstellerfotos.

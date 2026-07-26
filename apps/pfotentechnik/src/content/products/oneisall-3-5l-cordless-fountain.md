@@ -58,17 +58,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:28.811Z"
-  affiliateUrl: "https://amzn.to/4yCwsgt"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/oneisall-Edelstahl-Katzenbrunnen-Bewegungssensor-batteriebetrieben-Haustier-Trinkbrunnen/dp/B0DMF2LH3Y"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4yCwsgt
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4yCwsgt"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 89
 ratings:

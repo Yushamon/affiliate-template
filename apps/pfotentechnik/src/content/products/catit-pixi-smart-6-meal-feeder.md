@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:12.221Z"
-  affiliateUrl: "https://amzn.to/45hTNq9"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Catit-Futterautomat-Mahlzeiten-Nassfutter-K%C3%BChlakku/dp/B0B9462LW1"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/45hTNq9
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/45hTNq9"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 80
 ratings:

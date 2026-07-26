@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:18.497Z"
-  affiliateUrl: "https://amzn.to/4bRUR7N"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/PETLIBRO-Futterautomat-5G-WLAN-Haustierfutterspender-Automatische-Katzenfutterspender/dp/B0CKSDL2V6"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4bRUR7N
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4bRUR7N"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 79
 ratings:

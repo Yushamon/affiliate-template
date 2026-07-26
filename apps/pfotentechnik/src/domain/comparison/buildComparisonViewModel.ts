@@ -9,6 +9,9 @@ import type {
   ComparisonViewModel
 } from "@affiliate-core/comparison/model";
 
+import { buildPriceIndex } from "../price/engine";
+import type { ProductPriceInsight } from "../price/types";
+
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;
 type ManufacturerEntry = CollectionEntry<"manufacturers">;
@@ -269,6 +272,47 @@ const mergeFilterValues = (
   return result;
 };
 
+
+const toComparisonAffiliate = (
+  insight: ProductPriceInsight | undefined,
+  affiliate?: ComparisonProduct["affiliate"]
+): ComparisonProduct["affiliate"] => {
+  if (affiliate?.url) return affiliate;
+  if (!insight?.affiliateUrl) return undefined;
+  const source = insight.source?.label || "Händler";
+  return {
+    provider: insight.source?.id,
+    label: `Preis bei ${source} prüfen`,
+    url: insight.affiliateUrl,
+    rel: "sponsored nofollow noopener",
+    target: "_blank"
+  };
+};
+
+const toComparisonPrice = (
+  insight: ProductPriceInsight | undefined,
+  affiliate?: ComparisonProduct["affiliate"]
+): ComparisonProduct["price"] => {
+  const resolvedAffiliate = toComparisonAffiliate(insight, affiliate);
+  const snapshot = insight?.current != null
+    ? {
+        amount: insight.current,
+        currency: insight.currency,
+        fetchedAt: insight.checkedAt,
+        assessment: insight.assessment,
+        assessmentLabel: insight.assessmentLabel,
+        rangeLabel: insight.formattedRange ?? undefined,
+        comparisonText: insight.generatedComparisonText,
+        sourceLabel: insight.source?.label
+      }
+    : null;
+
+  if (snapshot && resolvedAffiliate) return { kind: "live", link: resolvedAffiliate, snapshot };
+  if (snapshot) return { kind: "value-only", snapshot };
+  if (resolvedAffiliate) return { kind: "link-only", link: resolvedAffiliate };
+  return { kind: "hidden" };
+};
+
 export function buildComparisonViewModel({
   comparison,
   products,
@@ -286,6 +330,8 @@ export function buildComparisonViewModel({
       manufacturer
     ])
   );
+
+  const priceIndex = buildPriceIndex(products);
 
   const explicitItems = data.items.filter(
     (item, index, source) =>
@@ -569,6 +615,7 @@ export function buildComparisonViewModel({
             target: product.data.affiliate.target
           }
         : undefined;
+      const priceInsight = priceIndex.bySlug.get(item.slug);
 
       return {
         slug: item.slug,
@@ -599,9 +646,7 @@ export function buildComparisonViewModel({
             ? product.data.decision.attention
             : product.data.weaknesses,
         affiliate,
-        price: affiliate
-          ? { kind: "link-only", link: affiliate }
-          : { kind: "hidden" },
+        price: toComparisonPrice(priceInsight, affiliate),
         filterValues:
           filterValuesBySlug.get(item.slug) ?? {}
       };

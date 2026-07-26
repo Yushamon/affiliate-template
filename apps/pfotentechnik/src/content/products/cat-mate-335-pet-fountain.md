@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:06.928Z"
-  affiliateUrl: "https://amzn.to/4wQ2q7g"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Cat-Mate-Mehrstufiger-Haustier-Wasserbrunnen-Fassungsverm%C3%B6gen/dp/B0CMV42FVF"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4wQ2q7g
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4wQ2q7g"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 79
 ratings:

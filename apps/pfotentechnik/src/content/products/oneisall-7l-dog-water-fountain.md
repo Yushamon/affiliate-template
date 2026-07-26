@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:31.906Z"
-  affiliateUrl: "https://amzn.to/4fQBE92"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/oneisall-Trinkbrunnen-Katzenbrunnen-Hundebrunnen-%C3%9Cberlastschutz/dp/B0D8VHHK8N"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4fQBE92
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4fQBE92"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.1
 score: 82
 ratings:

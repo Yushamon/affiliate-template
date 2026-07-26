@@ -1,0 +1,134 @@
+---
+import type { PriceState } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+interface Props {
+  price: PriceState;
+  variant?: "compact" | "standard";
+  showContext?: boolean;
+}
+
+const {
+  price,
+  variant = "compact",
+  showContext = variant === "standard"
+} = Astro.props;
+const display = getPriceDisplay(price);
+const hasSignal = Boolean(display.amountLabel || display.url);
+---
+
+{hasSignal && (
+  <div
+    class:list={[
+      "comparison-price-signal",
+      `comparison-price-signal--${variant}`
+    ]}
+    data-price-assessment={display.assessment ?? "unknown"}
+  >
+    <div class="comparison-price-signal__main">
+      <span>Preis</span>
+      <strong>{display.amountLabel ?? "beim Händler prüfen"}</strong>
+    </div>
+
+    {display.amountLabel && display.assessmentLabel && (
+      <span class="comparison-price-signal__status">{display.assessmentLabel}</span>
+    )}
+
+    {showContext && display.rangeLabel && (
+      <p class="comparison-price-signal__range">
+        Typischer Bereich: <strong>{display.rangeLabel}</strong>
+      </p>
+    )}
+
+    {showContext && display.comparisonText && (
+      <p class="comparison-price-signal__context">{display.comparisonText}</p>
+    )}
+
+    {showContext && display.meta && (
+      <small>{display.meta}</small>
+    )}
+  </div>
+)}
+
+<style>
+  .comparison-price-signal {
+    --price-tone: var(--comparison-accent);
+    --price-soft: color-mix(in srgb, var(--price-tone) 10%, var(--comparison-surface));
+    display: grid;
+    min-width: 0;
+    gap: .4rem;
+    padding: .75rem .8rem;
+    border-top: 1px solid var(--comparison-line);
+    border-bottom: 1px solid var(--comparison-line);
+    background: transparent;
+  }
+
+  .comparison-price-signal[data-price-assessment="fair"] {
+    --price-tone: #9a6700;
+  }
+
+  .comparison-price-signal[data-price-assessment="expensive"] {
+    --price-tone: #b52d25;
+  }
+
+  .comparison-price-signal[data-price-assessment="unknown"] {
+    --price-tone: var(--comparison-muted);
+  }
+
+  .comparison-price-signal__main {
+    display: flex;
+    min-width: 0;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .65rem;
+  }
+
+  .comparison-price-signal__main span {
+    color: var(--comparison-muted);
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .comparison-price-signal__main strong {
+    min-width: 0;
+    color: var(--comparison-text);
+    font-size: .98rem;
+    line-height: 1.2;
+    text-align: right;
+    overflow-wrap: anywhere;
+  }
+
+  .comparison-price-signal__status {
+    justify-self: end;
+    padding: .25rem .5rem;
+    border-radius: 999px;
+    color: var(--price-tone);
+    background: var(--price-soft);
+    font-size: .68rem;
+    font-weight: 850;
+  }
+
+  .comparison-price-signal__range,
+  .comparison-price-signal__context,
+  .comparison-price-signal small {
+    margin: 0;
+    color: var(--comparison-muted);
+    font-size: .75rem;
+    line-height: 1.45;
+  }
+
+  .comparison-price-signal__range strong {
+    color: var(--comparison-text);
+  }
+
+  .comparison-price-signal--standard {
+    gap: .55rem;
+    padding: 1rem 0;
+  }
+
+  .comparison-price-signal--standard .comparison-price-signal__main strong {
+    font-size: 1.2rem;
+  }
+</style>

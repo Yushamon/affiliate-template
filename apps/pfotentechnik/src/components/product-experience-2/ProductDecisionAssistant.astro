@@ -274,31 +274,30 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
   .decision__form {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 26px;
+    gap: 12px;
   }
 
   fieldset {
     min-width: 0;
     margin: 0;
-    padding: 17px 0 10px;
-    border: 0;
-    border-top: 1px solid var(--px2-border);
-    border-radius: 0;
-    background: transparent;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 18px;
+    background: var(--px2-surface-raised);
   }
 
   legend {
-    padding: 0 10px 0 0;
+    padding: 0 6px;
     color: var(--px2-text);
     font-weight: 850;
   }
 
   label {
     display: flex;
-    min-height: 40px;
+    min-height: 42px;
     align-items: center;
     gap: 9px;
-    padding: 4px 0;
+    padding: 5px 0;
     color: var(--px2-text);
     cursor: pointer;
   }

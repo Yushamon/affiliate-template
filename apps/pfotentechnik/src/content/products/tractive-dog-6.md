@@ -63,17 +63,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:16.322Z"
-  affiliateUrl: "https://amzn.to/44NGoGb"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Tractive-Weglaufalarm-Aktivit%C3%A4tstracking-Gesundheitswarnungen-Bellverhalten-Schwarz/dp/B0D6Z4L6BW"
-
 affiliate:
-  provider: amazon
-  label: Bei Amazon ansehen
-  url: https://amzn.to/44NGoGb
+  provider: "amazon"
+  label: "Bei Amazon ansehen"
+  url: "https://amzn.to/44NGoGb"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.6
 score: 92
 ratings:

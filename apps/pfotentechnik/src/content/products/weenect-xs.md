@@ -85,18 +85,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:18.087Z"
-  affiliateUrl: "https://amzn.to/4fCeKkD"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Weenect-f%C3%BCr-Katzen-GPS-Tracking-Distanzlimit-Schwarz/dp/B0CHMZCYZC"
-
 affiliate:
   provider: "amazon"
   label: "Bei Amazon ansehen"
   url: "https://amzn.to/4fCeKkD"
-
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.6
 score: 92
 

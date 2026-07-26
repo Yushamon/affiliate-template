@@ -62,17 +62,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:33.838Z"
-  affiliateUrl: "https://amzn.to/4vHdX7J"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/PAJ-GPS-Tracker-4G-Mini-Schwarz/dp/B0GQTVYXKX"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4vHdX7J
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4vHdX7J"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.1
 score: 82
 ratings:

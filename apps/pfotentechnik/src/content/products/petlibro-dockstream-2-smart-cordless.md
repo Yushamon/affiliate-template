@@ -61,13 +61,10 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:54.615Z"
-  affiliateUrl: "https://de.petlibro.com/products/dockstream-2-smart-fountain"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
     type: "merchant"
-    url: "https://de.petlibro.com/products/dockstream-2-smart-fountain"
-
 affiliate:
   provider: "official"
   label: "Preis und Verfügbarkeit prüfen"

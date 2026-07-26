@@ -64,17 +64,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:26.088Z"
-  affiliateUrl: "https://amzn.to/4wofqBc"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Xiaomi-Trockenfutter-Gewichtserfassung-Warnsensoren-AA-Batterien/dp/B0DN9Z6P31"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4wofqBc
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4wofqBc"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.6
 score: 92
 ratings:

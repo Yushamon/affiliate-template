@@ -61,13 +61,10 @@ price:
   currency: "USD"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:59.827Z"
-  affiliateUrl: "https://petlibro.com/products/granary-2-series"
   source:
     id: "petlibro.com"
     label: "petlibro.com"
     type: "merchant"
-    url: "https://petlibro.com/products/granary-2-series"
-
 affiliate:
   provider: "official"
   label: "Verfügbarkeit prüfen"

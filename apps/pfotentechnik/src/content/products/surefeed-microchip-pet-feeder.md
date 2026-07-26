@@ -63,17 +63,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:12.157Z"
-  affiliateUrl: "https://amzn.to/4yzAAOc"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/SureFeed-MPF001-Mikrochip-Futterautomat-wei%C3%9F/dp/B00O0UIPTY"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4yzAAOc
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4yzAAOc"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 90
 ratings:

@@ -26,8 +26,8 @@ const rows = products.map((entry) => {
         }).format(new Date(insight.checkedAt))
       : "Nie",
     stale: insight?.isStale ?? true,
-    hasUrl: Boolean(insight?.affiliateUrl ?? entry.data.affiliate?.url),
-    affiliateUrl: insight?.affiliateUrl ?? entry.data.affiliate?.url ?? "",
+    hasUrl: Boolean(entry.data.affiliate?.url ?? insight?.affiliateUrl),
+    targetUrl: entry.data.affiliate?.url ?? insight?.affiliateUrl ?? "",
     sourceLabel,
     comparisonText:
       entry.data.price?.comparisonText ??
@@ -135,9 +135,10 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
       </label>
 
       <label class="manual-price__wide">
-        <span>Affiliate- oder Händler-URL</span>
+        <span>Händler- oder Affiliate-Ziel</span>
+        <small>Eine URL für Preisprüfung sowie Produkt- und Vergleichs-CTA.</small>
         <input
-          name="affiliateUrl"
+          name="targetUrl"
           type="url"
           inputmode="url"
           placeholder="https://..."
@@ -217,7 +218,7 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
               data-current={String(row.currentValue)}
               data-currency={row.currency}
               data-source-label={row.sourceLabel === "Nicht angegeben" ? "" : row.sourceLabel}
-              data-affiliate-url={row.affiliateUrl}
+              data-target-url={row.targetUrl}
               data-comparison-text={row.comparisonText}
             >
               Manuell
@@ -287,7 +288,7 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
         const current = field<HTMLInputElement>("current");
         const currency = field<HTMLSelectElement>("currency");
         const sourceLabel = field<HTMLInputElement>("sourceLabel");
-        const affiliateUrl = field<HTMLInputElement>("affiliateUrl");
+        const targetUrl = field<HTMLInputElement>("targetUrl");
         const comparisonText =
           field<HTMLTextAreaElement>("comparisonText");
 
@@ -297,8 +298,8 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
         if (sourceLabel) {
           sourceLabel.value = button.dataset.sourceLabel || "";
         }
-        if (affiliateUrl) {
-          affiliateUrl.value = button.dataset.affiliateUrl || "";
+        if (targetUrl) {
+          targetUrl.value = button.dataset.targetUrl || "";
         }
         if (comparisonText) {
           comparisonText.value = button.dataset.comparisonText || "";
@@ -329,7 +330,7 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
         current: data.get("current"),
         currency: data.get("currency"),
         sourceLabel: data.get("sourceLabel"),
-        affiliateUrl: data.get("affiliateUrl"),
+        targetUrl: data.get("targetUrl"),
         comparisonText: data.get("comparisonText")
       });
 
@@ -339,7 +340,7 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
       }).format(result.current);
 
       setStatus(
-        `${result.title}: ${formatted} manuell hinterlegt. Seite wird neu geladen.`
+        `${result.title}: ${formatted} manuell hinterlegt.${result.ctaUpdated ? " CTA-Ziel aktualisiert." : ""} Seite wird neu geladen.`
       );
       setTimeout(() => location.reload(), 700);
     } catch (error) {

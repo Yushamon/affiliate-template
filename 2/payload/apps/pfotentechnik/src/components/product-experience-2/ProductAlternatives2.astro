@@ -1,5 +1,6 @@
 ---
 import { getImage } from "astro:assets";
+import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
 
 interface Alternative {
   type: string;
@@ -12,20 +13,15 @@ interface Alternative {
   reason: string;
 }
 
-interface Props {
-  alternatives: Alternative[];
-}
-
+interface Props { alternatives: Alternative[] }
 const { alternatives } = Astro.props;
-const items = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
+const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
   ...item,
-  optimized: item.image?.src
-    ? await getImage({ src: item.image.src, width: 360, height: 270, fit: "contain", quality: "high" })
-    : null
+  optimized: item.image?.src ? await getImage({ src:item.image.src, width:520, height:390, fit:"contain", quality:"high" }) : null
 })));
 ---
 
-{items.length > 0 && (
+{cards.length > 0 && (
   <section class="alternatives" id="alternativen" aria-labelledby="alternatives-title">
     <header>
       <span>Intelligente Alternativen</span>
@@ -34,16 +30,16 @@ const items = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
     </header>
 
     <div class="alternatives__grid">
-      {items.map((item) => (
+      {cards.map((item) => (
         <article>
           <div class="alternatives__image">
             {item.optimized ? (
               <img
                 src={item.optimized.src}
                 srcset={item.optimized.srcSet.attribute}
-                sizes="(max-width:720px) 110px, 150px"
-                width="360"
-                height="270"
+                sizes="(max-width:720px) 100vw, 25vw"
+                width="520"
+                height="390"
                 loading="lazy"
                 decoding="async"
                 alt={item.image?.alt || item.title}
@@ -55,11 +51,18 @@ const items = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
             <span>{item.label}</span>
             <h3>{item.title}</h3>
             <p>{item.reason}</p>
+            {Number(item.score) > 0 && (
+              <EditorialScore
+                value={Number(item.score)}
+                scale={100}
+                variant="ring-compact"
+                description="Redaktioneller Gesamtscore"
+              />
+            )}
             <div class="alternatives__meta">
               {item.priceLabel && <b>{item.priceLabel}</b>}
-              {Number(item.score) > 0 && <small>{Math.round(Number(item.score))}/100</small>}
             </div>
-            <a href={item.href}>Alternative ansehen <span aria-hidden="true">→</span></a>
+            <a href={item.href}>Alternative ansehen</a>
           </div>
         </article>
       ))}
@@ -68,148 +71,24 @@ const items = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
 )}
 
 <style>
-  .alternatives {
-    display: grid;
-    gap: 24px;
-    padding: clamp(30px, 5vw, 54px) 0;
-    border-top: 1px solid var(--px2-border);
-    background: var(--px2-surface);
-  }
-
-  .alternatives > header span {
-    color: var(--px2-green-strong);
-    font-size: .78rem;
-    font-weight: 850;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-  }
-
-  .alternatives > header h2 {
-    margin: 7px 0;
-    font-size: clamp(1.65rem, 4vw, 2.4rem);
-    letter-spacing: -.025em;
-  }
-
-  .alternatives > header p {
-    margin: 0;
-    color: var(--px2-muted);
-    line-height: 1.55;
-  }
-
-  .alternatives__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 30px;
-  }
-
-  article {
-    display: grid;
-    min-width: 0;
-    grid-template-columns: 138px minmax(0, 1fr);
-    gap: 18px;
-    align-items: start;
-    padding: 20px 0;
-    border: 0;
-    border-top: 1px solid var(--px2-border);
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .alternatives__image {
-    display: grid;
-    place-items: center;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    border-radius: 14px;
-    background: var(--px2-surface-raised);
-  }
-
-  .alternatives__image img {
-    width: 100%;
-    height: 100%;
-    padding: 8px;
-    object-fit: contain;
-  }
-
-  .alternatives__image > span {
-    display: grid;
-    place-items: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 15px;
-    background: var(--px2-green-soft);
-    color: var(--px2-green-strong);
-    font-weight: 900;
-  }
-
-  .alternatives__body {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-  }
-
-  .alternatives__body > span {
-    color: var(--px2-green-strong);
-    font-size: .72rem;
-    font-weight: 850;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    margin: 5px 0 7px;
-    font-size: 1.05rem;
-  }
-
-  .alternatives p {
-    margin: 0 0 10px;
-    color: var(--px2-muted);
-    font-size: .9rem;
-    line-height: 1.5;
-  }
-
-  .alternatives__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 14px;
-    margin-bottom: 10px;
-  }
-
-  .alternatives__meta small { color: var(--px2-muted); }
-
-  .alternatives a {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    align-self: flex-start;
-    padding: 2px 0;
-    border: 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    color: var(--px2-green-strong) !important;
-    font-weight: 850;
-    text-decoration: none;
-    box-shadow: none !important;
-  }
-
-  .alternatives a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-
-  @media (max-width: 900px) {
-    .alternatives__grid { grid-template-columns: 1fr; }
-  }
-
-  @media (max-width: 560px) {
-    article {
-      grid-template-columns: 104px minmax(0, 1fr);
-      gap: 14px;
-      padding: 18px 0;
-    }
-  }
-
-  @media (max-width: 380px) {
-    article { grid-template-columns: 88px minmax(0, 1fr); }
-  }
+  .alternatives{display:grid;gap:20px}
+  .alternatives>header span{color:var(--px2-green-strong);font-size:.78rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+  .alternatives>header h2{margin:7px 0 7px;font-size:clamp(1.65rem,4vw,2.4rem);letter-spacing:-.025em}
+  .alternatives>header p{margin:0;color:var(--px2-muted);line-height:1.55}
+  .alternatives__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  article{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--px2-border);border-radius:20px;background:var(--px2-surface);box-shadow:var(--px2-shadow)}
+  .alternatives__image{display:grid;place-items:center;aspect-ratio:4/3;background:var(--px2-surface-raised)}
+  .alternatives__image img{width:100%;height:100%;padding:12px;object-fit:contain}
+  .alternatives__image>span{display:grid;place-items:center;width:56px;height:56px;border-radius:18px;background:var(--px2-green-soft);color:var(--px2-green-strong);font-weight:900}
+  .alternatives__body{display:flex;flex:1;flex-direction:column;padding:16px}
+  .alternatives__body>span{color:var(--px2-green-strong);font-size:.74rem;font-weight:850;text-transform:uppercase}
+  .alternatives h3{margin:6px 0 8px;font-size:1.05rem}
+  .alternatives p{margin:0 0 14px;color:var(--px2-muted);font-size:.9rem;line-height:1.5}
+  .alternatives :global(.pt-score){--score-surface:var(--px2-surface);--score-text:var(--px2-text);--score-muted:var(--px2-muted);--score-accent:var(--px2-green);margin-top:auto;padding-top:12px;border-top:1px solid var(--px2-border)}
+  .alternatives__meta{display:flex;justify-content:space-between;gap:8px;margin-top:12px;margin-bottom:12px;min-height:1.1rem}
+  .alternatives__meta b{color:var(--px2-text)}
+  .alternatives a{display:block;padding:11px 12px;border-radius:12px;background:var(--px2-green-soft);color:var(--px2-green-strong);font-weight:850;text-align:center;text-decoration:none}
+  .alternatives a:hover{text-decoration:underline;text-underline-offset:3px}
+  @media(max-width:1050px){.alternatives__grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:620px){.alternatives__grid{grid-template-columns:1fr}}
 </style>

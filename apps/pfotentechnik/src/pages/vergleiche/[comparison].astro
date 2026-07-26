@@ -2,7 +2,6 @@
 import { getCollection, getEntry, render } from "astro:content";
 import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
@@ -70,6 +69,13 @@ const model = buildComparisonViewModel({
   products,
   manufacturers
 });
+
+const comparisonAdvisorDimensions = model.filters
+  .map((filter) => filter.label)
+  .slice(0, 4);
+const comparisonAdvisorText = comparisonAdvisorDimensions.length
+  ? `Grenze ${comparisonAdvisorDimensions.join(", ")} ein, bevor du einzelne Modelle gegenüberstellst.`
+  : "Grenze Tierart, Nutzung, Ausstattung und Budget ein, bevor du einzelne Modelle gegenüberstellst.";
 
 const optimizedOgImage = comparison.heroImage
   ? await getImage({
@@ -164,8 +170,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
     set:html={JSON.stringify(comparisonItemListSchema)}
   />
 
-  <Breadcrumbs items={breadcrumbs} />
-
   <main class="comparison-detail">
     <ComparisonShell model={model}>
       <ScenarioRecommendations slot="scenario-recommendations" scenarios={model.scenarioRecommendations} />
@@ -184,7 +188,7 @@ const comparisonNextSteps = buildComparisonNextSteps({
     </article>
 
     <div data-advisor-integration="comparison">
-      <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text="Beantworte fünf kurze Fragen und grenze Futterart, Steuerung, Tierzahl und Portionsbereich ein, bevor du einzelne Modelle vergleichst." />
+      <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text={comparisonAdvisorText} />
     </div>
 
     <DecisionNextSteps

@@ -1,4 +1,5 @@
 ---
+import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
 import type { ProductExperienceModel } from "../../domain/productExperience/model";
 import ProductGallery2 from "./ProductGallery2.astro";
 import PriceBox2 from "./PriceBox2.astro";
@@ -29,14 +30,12 @@ const { model } = Astro.props;
     <p class="px2-hero__lead">{model.recommendation}</p>
 
     <div class="px2-hero__scoreline">
-      <div class="px2-score" aria-label={`Eignungs-Score ${model.score} von 100`}>
-        <strong>{model.score}</strong>
-        <span>/100</span>
-      </div>
-      <div>
-        <strong>{model.scoreLabel}</strong>
-        <p>Redaktioneller Eignungswert. Der persönliche Fit wird darunter live berechnet.</p>
-      </div>
+      <EditorialScore
+        value={model.score}
+        scale={100}
+        variant="ring"
+        description="Redaktioneller Eignungswert. Der persönliche Fit wird darunter live berechnet."
+      />
     </div>
 
     <div class="px2-hero__fit-grid">
@@ -77,14 +76,9 @@ const { model } = Astro.props;
 <style>
   .px2-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
-    gap: clamp(22px, 3.5vw, 42px);
+    grid-template-columns: minmax(0, 1.12fr) minmax(360px, .88fr);
+    gap: clamp(22px, 4vw, 48px);
     align-items: start;
-    padding: clamp(14px, 2.6vw, 30px);
-    border: 1px solid var(--px2-border);
-    border-radius: 26px;
-    background: var(--px2-surface);
-    box-shadow: var(--px2-shadow);
   }
 
   .px2-hero__media,
@@ -95,7 +89,11 @@ const { model } = Astro.props;
   .px2-hero__content {
     display: grid;
     gap: 18px;
-    padding: 2px 0;
+    padding: clamp(18px, 2.5vw, 30px);
+    border: 1px solid var(--px2-border);
+    border-radius: 24px;
+    background: var(--px2-surface);
+    box-shadow: var(--px2-shadow);
   }
 
   .px2-hero__meta {
@@ -133,80 +131,40 @@ const { model } = Astro.props;
   }
 
   .px2-hero__scoreline {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 13px;
-    align-items: center;
-    padding-top: 16px;
-    border-top: 1px solid var(--px2-border);
+    padding-block: 2px;
   }
 
-  .px2-score {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    width: 72px;
-    height: 72px;
-    border: 5px solid var(--px2-green-soft);
-    border-radius: 50%;
-    background: var(--px2-surface-raised);
+  .px2-hero__scoreline :global(.pt-score) {
+    --score-surface: var(--px2-surface);
+    --score-text: var(--px2-text);
+    --score-muted: var(--px2-muted);
+    --score-accent: var(--px2-green);
   }
 
-  .px2-score strong {
-    color: var(--px2-green-strong);
-    font-size: 1.45rem;
-    line-height: 1;
-  }
-
-  .px2-score span {
-    color: var(--px2-muted);
-    font-size: .68rem;
-  }
-
-  .px2-hero__scoreline > div:last-child > strong {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 1.05rem;
-  }
-
-  .px2-hero__scoreline p {
-    margin: 0;
-    color: var(--px2-muted);
-    font-size: .82rem;
-    line-height: 1.45;
-  }
-
-  .px2-hero__fit-grid,
-  .px2-hero__decision {
+  .px2-hero__fit-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 22px;
-    padding-top: 16px;
-    border-top: 1px solid var(--px2-border);
+    gap: 10px;
   }
 
-  .px2-fit,
-  .px2-hero__decision > div {
+  .px2-fit {
     min-width: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
+    padding: 14px;
+    border-radius: 16px;
   }
 
-  .px2-fit.is-negative,
-  .px2-limit {
-    padding-left: 22px;
-    border-left: 1px solid var(--px2-border);
+  .px2-fit.is-positive {
+    background: var(--px2-green-soft);
+  }
+
+  .px2-fit.is-negative {
+    background: var(--px2-red-soft);
   }
 
   .px2-fit h2 {
     margin: 0 0 8px;
     font-size: .9rem;
   }
-
-  .px2-fit.is-positive h2 { color: var(--px2-green-strong); }
-  .px2-fit.is-negative h2 { color: var(--px2-red); }
 
   .px2-fit ul,
   .px2-hero__decision ul {
@@ -235,7 +193,22 @@ const { model } = Astro.props;
     font-weight: 900;
   }
 
-  .px2-fit.is-negative li::before { color: var(--px2-red); }
+  .px2-fit.is-negative li::before {
+    color: var(--px2-red);
+  }
+
+  .px2-hero__decision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .px2-hero__decision > div {
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 16px;
+    background: var(--px2-surface-raised);
+  }
 
   .px2-hero__decision span {
     display: block;
@@ -261,45 +234,50 @@ const { model } = Astro.props;
     gap: 8px;
     min-height: 46px;
     padding: 11px 15px;
-    border: 1px solid var(--px2-green);
+    border: 1px solid var(--px2-border);
     border-radius: 14px;
-    color: var(--px2-green-strong);
+    color: var(--px2-text);
     font-weight: 850;
     text-decoration: none;
   }
 
-  .px2-hero__compare:hover { background: var(--px2-green-soft); }
+  .px2-hero__compare:hover {
+    border-color: var(--px2-green);
+    color: var(--px2-green-strong);
+  }
 
   @media (max-width: 980px) {
-    .px2-hero { grid-template-columns: 1fr; }
+    .px2-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .px2-hero__media {
+      order: 1;
+    }
+
+    .px2-hero__content {
+      order: 2;
+    }
   }
 
   @media (max-width: 620px) {
     .px2-hero {
-      gap: 18px;
-      padding: 12px 12px 18px;
-      border-radius: 20px;
+      gap: 14px;
     }
 
     .px2-hero__content {
       gap: 15px;
-      padding: 0 3px;
+      padding: 18px 15px;
+      border-radius: 18px;
     }
 
-    .px2-hero h1 { font-size: clamp(2rem, 11vw, 3.25rem); }
+    .px2-hero h1 {
+      font-size: clamp(2rem, 11vw, 3.25rem);
+    }
 
     .px2-hero__fit-grid,
     .px2-hero__decision {
       grid-template-columns: 1fr;
-      gap: 16px;
-    }
-
-    .px2-fit.is-negative,
-    .px2-limit {
-      padding-top: 16px;
-      padding-left: 0;
-      border-top: 1px solid var(--px2-border);
-      border-left: 0;
     }
   }
 </style>

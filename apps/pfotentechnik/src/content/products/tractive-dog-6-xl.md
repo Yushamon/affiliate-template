@@ -63,17 +63,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:57:14.279Z"
-  affiliateUrl: "https://amzn.to/4pKPmOg"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/Tractive-Live-GPS-Ortung-Weglaufalarm-Gesundheitswarnungen-Akkulaufzeit-2026-Schwarz/dp/B0G52NY6HZ"
-
 affiliate:
-  provider: amazon
-  label: Bei Amazon ansehen
-  url: https://amzn.to/4pKPmOg
+  provider: "amazon"
+  label: "Bei Amazon ansehen"
+  url: "https://amzn.to/4pKPmOg"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.6
 score: 91
 ratings:

@@ -66,17 +66,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:44.288Z"
-  affiliateUrl: "https://amzn.to/4vNSo5F"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/PETKIT-Abwassertrennung-Automatischer-Wasserspender-App-Steuerung/dp/B0GX9Y5GYM"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4vNSo5F
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4vNSo5F"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.1
 score: 83
 ratings:

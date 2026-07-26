@@ -1,37 +1,44 @@
-# Änderungen 2.0.3
+# Änderungen 3.3.4
 
-## Interaktive Kaufentscheidung
+## Installer-Audit
 
-- Statusgründe werden nicht mehr als `li` mit CSS-Pseudoelementen gerendert.
-- Positive Gründe erhalten einen grünen Haken.
-- Neutrale Gründe erhalten einen amberfarbenen Gedankenstrich.
-- Negative Gründe erhalten ein rotes Kreuz.
-- Globale Listenregeln können die Symbole nicht mehr überschreiben.
-- Die Fragen bleiben offen im Kaufentscheidungs-Block und werden nur durch dünne Divider getrennt.
+- Produktdaten-Audit wird vor jeder Änderung als Baseline ausgeführt
+- nach dem Patch wird der vollständige Audit erneut ausgeführt
+- neue Produktfehler und neue doppelte Slugs lösen weiterhin einen Rollback aus
+- bereits vorhandene, unveränderte Auditfehler blockieren den Vergleichs- und Preispatch nicht mehr
+- nach einem Rollback wird der Auditbericht auf den wiederhergestellten Repository-Stand aktualisiert
 
-## Hybrides Editorial-Layout
+## Produktseiten
 
-Als Karten bleiben erhalten:
+- hybrides Editorial-Layout aus 2.0.3 zurückgenommen
+- frühere Kartenhierarchie wiederhergestellt
+- gemeinsames Score-Modul im Hero beibehalten
+- explizite Symbole für positive, neutrale und negative Kaufgründe beibehalten
+- Deduplizierung von Vorteilen, Warnungen und Nachteilen beibehalten
+- Alternativkarten verwenden bei vorhandenem Score die gemeinsame kompakte Score-Darstellung
 
-- der zusammengeführte Produkt-Hero
-- die interaktive Kaufbewertung
-- der Preis-Check
-- der farbige Warnhinweis „Nicht kaufen, wenn …“
-- der Gesundheits- und Sicherheitshinweis
+## Vergleichsseiten
 
-In den offenen Seitenfluss wechseln:
+- Score-Darstellung an das Produktseiten-Muster angeglichen
+- aktuelle Preise, Preisstatus und typische Preisbereiche ergänzt
+- Preiswerte erscheinen auch ohne Affiliate-Link
+- Preis und Score im Direktvergleich als eigene priorisierte Zeilen ergänzt
+- CTAs an die zentralen PfotenTechnik-Farbtokens gebunden
+- Beratertext aus tatsächlich vorhandenen Vergleichsfiltern abgeleitet
 
-- Alltagstimeline
-- Vorteile und weitere Nachteile
-- technische Daten
-- FAQ
-- intelligente Alternativen
-- Transparenz und Datengrundlage
+## Preisverwaltung
 
-Diese Abschnitte verwenden weißen beziehungsweise themeabhängigen Hintergrund, großzügige Abstände, typografische Hierarchie und dünne Trennlinien statt umlaufender Kartenrahmen.
+- ein einziges Feld `targetUrl` im SEO Cockpit
+- Speichern synchronisiert `affiliate.url` und damit alle Produkt- und Vergleichs-CTAs
+- Preisblock speichert keine zweite URL-Kopie mehr
+- bestehende doppelte URL-Felder werden migriert
+- Legacy-Felder bleiben nur als lesender Fallback erhalten
 
-## Weitere Bereinigungen
+## Installer 3.3.4
 
-- Galerie und Produktinformationen bilden auf Mobilgeräten einen gemeinsamen Hero statt zwei gestapelter Hauptkarten.
-- Warnpunkte werden nicht erneut unter „Weitere Nachteile“ ausgegeben.
-- Die zentrale Text-Deduplizierung und die einheitlichen CTA-Farben aus 2.0.2 sind im Installer kumulativ enthalten.
+- Windows-CRLF und Unix-LF werden beim Patchen gleichermaßen unterstützt
+- ursprüngliche Zeilenenden der bestehenden Dateien bleiben erhalten
+- Price-Engine-Import wird am Import-/Typbereich eingefügt und benötigt keinen einzelnen exakten Textanker mehr
+- Price Index und Preiszuordnung verwenden semantische Fallback-Anker
+- Vergleichsseiten-Patch toleriert unterschiedliche Formatierung des View-Model- und Advisor-Blocks
+- vollständige Mock-Installation mit bestehendem Baseline-Auditfehler, 18 Tests, Audit-Regressionsprüfung, Build und exaktem Rollback geprüft

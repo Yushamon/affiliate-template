@@ -64,17 +64,16 @@ price:
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-07-26T16:56:27.161Z"
-  affiliateUrl: "https://amzn.to/4fCjRBh"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
-    url: "https://www.amazon.de/oneisall-Wasserbrunnen-Kabellos%E3%80%91Edelstahl-Haustier-Wasserbrunnen-Batteriebetriebener/dp/B0FJX69D2R"
-
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4fCjRBh
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4fCjRBh"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.4
 score: 87
 ratings:
