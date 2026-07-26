@@ -1,184 +1,305 @@
 ---
-title: "Tractive DOG 6"
-slug: "tractive-dog-6"
-type: "product"
-layout: "product"
-testStatus: "manufacturer-data"
-productStatus: "active"
-description: "Kompakter GPS- und Gesundheitstracker für Hunde ab 4 kg mit LTE, Live-Ortung, Sicherheitszonen, Vitalwert-Trends und bis zu zwei Wochen Herstellerlaufzeit."
-recommendation: "Starker GPS-Allrounder für kleine und mittelgroße Hunde, wenn eine ausgereifte App, schnelle Live-Ortung und Gesundheits-Trends wichtiger sind als ein Betrieb ohne Abo."
+title: Tractive DOG 6
+slug: tractive-dog-6
+type: product
+layout: product
+testStatus: manufacturer-data
+productStatus: active
+description: >-
+  Kompakter GPS- und Gesundheitstracker für Hunde ab 4 kg mit LTE, Live-Ortung, Sicherheitszonen, Vitalwert-Trends und
+  bis zu zwei Wochen Herstellerlaufzeit.
+recommendation: >-
+  Starker GPS-Allrounder für kleine und mittelgroße Hunde, wenn eine ausgereifte App, schnelle Live-Ortung und
+  Gesundheits-Trends wichtiger sind als ein Betrieb ohne Abo.
 manufacturer:
-  key: "tractive"
-  name: "Tractive"
-  slug: "tractive"
-category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
+  key: tractive
+  name: Tractive
+  slug: tractive
+category:
+  key: gps-tracker
+  label: GPS-Tracker
+  path: /gps-tracker/
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-25"
-author: { name: "PfotenTechnik Redaktion" }
+author:
+  name: PfotenTechnik Redaktion
 seo:
   title: "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check"
-  description: "Tractive DOG 6 eingeordnet: 39 g, LTE-Live-Ortung, IP68, Vitalwert-Trends, Sicherheitszonen, Abo und bis zu 14 Tage Akkulaufzeit."
-  canonical: "/produkt/tractive-dog-6/"
+  description: >-
+    Tractive DOG 6 eingeordnet: 39 g, LTE-Live-Ortung, IP68, Vitalwert-Trends, Sicherheitszonen, Abo und bis zu 14 Tage
+    Akkulaufzeit.
+  canonical: /produkt/tractive-dog-6/
   sitemap: true
   priority: 0.85
-hub: { sections: ["produkte", "gps-tracker"] }
-tags: ["gps-tracker", "hunde", "mobilfunk", "live-ortung", "gesundheitstracking", "app", "abo"]
+hub:
+  sections:
+    - produkte
+    - gps-tracker
+tags:
+  - gps-tracker
+  - hunde
+  - mobilfunk
+  - live-ortung
+  - gesundheitstracking
+  - app
+  - abo
 images:
-  hero: { src: "../../assets/images/guides/gps-tracker/hero.webp", alt: "Generische redaktionelle Darstellung eines GPS-Trackers am Hund; nicht das konkrete Produkt" }
-  thumbnail: { src: "../../assets/images/guides/gps-tracker/how-it-works.webp", alt: "Datenweg eines GPS-Trackers über Satelliten, Mobilfunk und App" }
-  comparison: { src: "../../assets/images/guides/gps-tracker/battery-subscription.webp", alt: "Mobilfunktracker mit Akkulaufzeit und laufenden Abokosten im Vergleich" }
+  hero:
+    src: ../../assets/images/guides/gps-tracker/hero.webp
+    alt: Generische redaktionelle Darstellung eines GPS-Trackers am Hund; nicht das konkrete Produkt
+  thumbnail:
+    src: ../../assets/images/guides/gps-tracker/how-it-works.webp
+    alt: Datenweg eines GPS-Trackers über Satelliten, Mobilfunk und App
+  comparison:
+    src: ../../assets/images/guides/gps-tracker/battery-subscription.webp
+    alt: Mobilfunktracker mit Akkulaufzeit und laufenden Abokosten im Vergleich
   gallery:
-    - { src: "../../assets/images/guides/gps-tracker/attachment.webp", alt: "Sichere Befestigung eines kompakten GPS-Trackers am Hundehalsband" }
-    - { src: "../../assets/images/guides/gps-tracker/range-accuracy.webp", alt: "Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung" }
-affiliate: { provider: "amazon", label: "Bei Amazon ansehen", url: "https://amzn.to/44NGoGb" }
+    - src: ../../assets/images/guides/gps-tracker/attachment.webp
+      alt: Sichere Befestigung eines kompakten GPS-Trackers am Hundehalsband
+    - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
+      alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung
+affiliate:
+  provider: amazon
+  label: Bei Amazon ansehen
+  url: https://amzn.to/44NGoGb
 rating: 4.6
 score: 92
-ratings: { ortung: 4.7, app: 4.8, akku: 4.5, tragekomfort: 4.5, kosten: 4.0 }
+ratings:
+  ortung: 4.7
+  app: 4.8
+  akku: 4.5
+  tragekomfort: 4.5
+  kosten: 4
 decision:
   bestFor:
-    - "Hunde ab 4 kg"
-    - "Schnelle Live-Ortung über Mobilfunk"
-    - "Kleine bis mittelgroße Hunde"
-    - "Familien mit gemeinsamer Ortung im Premium-Abo"
-    - "Aktivitäts-, Schlaf- und Gesundheits-Trends"
+    - Hunde ab 4 kg
+    - Schnelle Live-Ortung über Mobilfunk
+    - Kleine bis mittelgroße Hunde
+    - Familien mit gemeinsamer Ortung im Premium-Abo
+    - Aktivitäts-, Schlaf- und Gesundheits-Trends
   attention:
-    - "Für jeden Tracker ist ein eigenes Abo erforderlich"
-    - "Die maximale Akkulaufzeit setzt Energiesparzonen und moderate Nutzung voraus"
-    - "GPS- und Mobilfunkempfang bleiben Voraussetzung"
-    - "Familienfreigabe und weltweite Abdeckung gehören zum Premium-Abo"
-    - "Gesundheitsdaten zeigen Trends und ersetzen keine Diagnose"
+    - Für jeden Tracker ist ein eigenes Abo erforderlich
+    - Die maximale Akkulaufzeit setzt Energiesparzonen und moderate Nutzung voraus
+    - GPS- und Mobilfunkempfang bleiben Voraussetzung
+    - Familienfreigabe und weltweite Abdeckung gehören zum Premium-Abo
+    - Gesundheitsdaten zeigen Trends und ersetzen keine Diagnose
 review:
-  summary: "Der DOG 6 kombiniert rund 39 g Gewicht, LTE-Live-Ortung, virtuelle Zäune, WLAN-Energiesparzonen sowie Aktivitäts- und Gesundheits-Trends in einem kompakten IP68-Gehäuse."
-  verdict: "Einer der ausgewogensten Mobilfunktracker für kleine und mittelgroße Hunde, sofern Abo, Cloud-Betrieb und die empfangsabhängige Laufzeit akzeptiert werden."
+  summary: >-
+    Der DOG 6 kombiniert rund 39 g Gewicht, LTE-Live-Ortung, virtuelle Zäune, WLAN-Energiesparzonen sowie Aktivitäts-
+    und Gesundheits-Trends in einem kompakten IP68-Gehäuse.
+  verdict: >-
+    Einer der ausgewogensten Mobilfunktracker für kleine und mittelgroße Hunde, sofern Abo, Cloud-Betrieb und die
+    empfangsabhängige Laufzeit akzeptiert werden.
 strengths:
-  - "Rund 39 g leicht"
-  - "Live-Updates im Abstand von etwa 2 bis 3 Sekunden"
-  - "Bis zu zwei Wochen Herstellerlaufzeit mit Energiesparzonen"
-  - "IP68 und kompakte Bauform"
-  - "GPS, GLONASS und Galileo"
-  - "Virtuelle Zäune, Licht und Signalton"
-  - "Aktivitäts-, Schlaf-, Vitalwert-, Bell- und Kratztrends"
+  - Rund 39 g leicht
+  - Live-Updates im Abstand von etwa 2 bis 3 Sekunden
+  - Bis zu zwei Wochen Herstellerlaufzeit mit Energiesparzonen
+  - IP68 und kompakte Bauform
+  - GPS, GLONASS und Galileo
+  - Virtuelle Zäune, Licht und Signalton
+  - Aktivitäts-, Schlaf-, Vitalwert-, Bell- und Kratztrends
 weaknesses:
-  - "Eigenes Abo pro Tracker zwingend"
-  - "Laufzeit stark von Live-Nutzung, Bewegung, Empfang und Energiesparzonen abhängig"
-  - "Familienfreigabe und weltweite Nutzung nur im Premium-Abo"
-  - "Keine verlässliche Ortung ohne Mobilfunkabdeckung"
-  - "Gesundheitswarnungen sind kein medizinisches Messgerät"
-  - "Kein autarkes VHF-System für abgelegene Gebiete"
+  - Eigenes Abo pro Tracker zwingend
+  - Laufzeit stark von Live-Nutzung, Bewegung, Empfang und Energiesparzonen abhängig
+  - Familienfreigabe und weltweite Nutzung nur im Premium-Abo
+  - Keine verlässliche Ortung ohne Mobilfunkabdeckung
+  - Gesundheitswarnungen sind kein medizinisches Messgerät
+  - Kein autarkes VHF-System für abgelegene Gebiete
 experience:
-  summary: "Redaktionelle Einordnung anhand aktueller Hersteller-, Support- und Produktdaten; kein eigener Praxistest."
-  methodology: "Bewertet wurden dokumentierte Ortungstechnik, Live-Intervall, Tier-Fit, Befestigung, Akkubedingungen, App-Funktionen, Folgekosten und Systemabhängigkeiten."
-  maintenance: "Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen vollständig laden und die Ortung im Freien testen."
-alternatives: ["weenect-xs", "paj-pet-finder-4g-mini", "tractive-dog-6-xl"]
-comparisons: ["beste-gps-tracker-fuer-hunde", "gps-tracker-mit-langer-akkulaufzeit"]
+  summary: Redaktionelle Einordnung anhand aktueller Hersteller-, Support- und Produktdaten; kein eigener Praxistest.
+  methodology: >-
+    Bewertet wurden dokumentierte Ortungstechnik, Live-Intervall, Tier-Fit, Befestigung, Akkubedingungen,
+    App-Funktionen, Folgekosten und Systemabhängigkeiten.
+  maintenance: >-
+    Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen vollständig
+    laden und die Ortung im Freien testen.
+alternatives:
+  - weenect-xs
+  - paj-pet-finder-4g-mini
+  - tractive-dog-6-xl
+comparisons:
+  - beste-gps-tracker-fuer-hunde
+  - gps-tracker-mit-langer-akkulaufzeit
 features:
-  - "Live-Ortung"
-  - "virtuelle Zäune"
-  - "Positionsverlauf"
-  - "Radar-Modus"
-  - "Licht und Signalton"
-  - "Aktivitäts- und Schlaftracking"
-  - "Ruhe-Herzfrequenz- und Atemfrequenz-Trends"
-  - "Bell- und Kratzverhalten"
-  - "Gesundheitswarnungen"
-  - "Familienfreigabe im Premium-Abo"
-priceCategory: "midrange"
-useCase: "Kompakter Alltagstracker für Hunde ab 4 kg"
+  - Live-Ortung
+  - virtuelle Zäune
+  - Positionsverlauf
+  - Radar-Modus
+  - Licht und Signalton
+  - Aktivitäts- und Schlaftracking
+  - Ruhe-Herzfrequenz- und Atemfrequenz-Trends
+  - Bell- und Kratzverhalten
+  - Gesundheitswarnungen
+  - Familienfreigabe im Premium-Abo
+priceCategory: midrange
+useCase: Kompakter Alltagstracker für Hunde ab 4 kg
 comparisonFilters:
-  animal: ["dog"]
-  petSize: ["small", "medium"]
+  animal:
+    - dog
+  petSize:
+    - small
+    - medium
   foodType: []
 specs:
-  - { label: "Ortung", value: "GPS, GLONASS und Galileo" }
-  - { label: "Übertragung", value: "LTE/4G (Cat 1 bis)" }
-  - { label: "Live-Ortung", value: "Standortaktualisierung etwa alle 2 bis 3 Sekunden" }
-  - { label: "Reichweite", value: "Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich" }
-  - { label: "Abdeckung", value: "Premium laut Hersteller in mehr als 175 Ländern" }
-  - { label: "Abo", value: "Erforderlich; ein eigenes Abo pro Tracker" }
-  - { label: "App", value: "Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer" }
-  - { label: "WLAN", value: "2,4 GHz für Energiesparzonen" }
-  - { label: "Bluetooth", value: "Bluetooth 5.0" }
-  - { label: "Akkulaufzeit", value: "Bis zu 14 Tage mit Energiesparzonen" }
-  - { label: "Stromversorgung", value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel" }
-  - { label: "Akku", value: "Integrierter Akku, laut Support 930 mAh" }
-  - { label: "Laden", value: "Mitgeliefertes USB-C-Ladekabel" }
-  - { label: "Material", value: "Glasfaserverstärktes Gehäuse laut Hersteller" }
-  - { label: "Wasserschutz", value: "IP68" }
-  - { label: "Abmessungen", value: "71 × 29 × 17 mm" }
-  - { label: "Gewicht", value: "Rund 39 g" }
-  - { label: "Geeignet für", value: "Hunde ab 4 kg" }
-  - { label: "Befestigung", value: "Clip für Halsbänder bis etwa 2,8 cm Breite" }
-  - { label: "Gesundheitstrends", value: "Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten" }
+  - label: Ortung
+    value: GPS, GLONASS und Galileo
+  - label: Übertragung
+    value: LTE/4G (Cat 1 bis)
+  - label: Live-Ortung
+    value: Standortaktualisierung etwa alle 2 bis 3 Sekunden
+  - label: Reichweite
+    value: Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich
+  - label: Abdeckung
+    value: Premium laut Hersteller in mehr als 175 Ländern
+  - label: Abo
+    value: Erforderlich; ein eigenes Abo pro Tracker
+  - label: App
+    value: Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer
+  - label: WLAN
+    value: 2,4 GHz für Energiesparzonen
+  - label: Bluetooth
+    value: Bluetooth 5.0
+  - label: Akkulaufzeit
+    value: Bis zu 14 Tage mit Energiesparzonen
+  - label: Stromversorgung
+    value: Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel
+  - label: Akku
+    value: Integrierter Akku, laut Support 930 mAh
+  - label: Laden
+    value: Mitgeliefertes USB-C-Ladekabel
+  - label: Material
+    value: Glasfaserverstärktes Gehäuse laut Hersteller
+  - label: Wasserschutz
+    value: IP68
+  - label: Abmessungen
+    value: 71 × 29 × 17 mm
+  - label: Gewicht
+    value: Rund 39 g
+  - label: Geeignet für
+    value: Hunde ab 4 kg
+  - label: Befestigung
+    value: Clip für Halsbänder bis etwa 2,8 cm Breite
+  - label: Gesundheitstrends
+    value: Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten
+  - label: Reinigung
+    value: >-
+      Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen
+      vollständig laden und die Ortung im Freien testen.
 gps:
-  animal: ["dog"]
+  animal:
+    - dog
   minimumPetWeightKg: 4
   deviceWeightGrams: 39
-  weightBasis: "device"
+  weightBasis: device
   subscriptionRequired: true
   includedServiceMonths: 0
-  transmission: "lte"
+  transmission: lte
   batteryMaxDays: 14
-  batteryCondition: "mit Energiesparzonen"
-  waterproofRating: "IP68"
+  batteryCondition: mit Energiesparzonen
+  waterproofRating: IP68
   liveTracking: true
   virtualFence: true
   activityTracking: true
-  attachmentType: "clip"
+  attachmentType: clip
 faq:
-  - question: "Braucht der Tractive DOG 6 ein Abo?"
-    answer: "Ja. Die Mobilfunkverbindung und die App-Dienste setzen ein aktives Abo voraus. Jeder Tractive-Tracker benötigt ein eigenes Abo."
-  - question: "Für welche Hunde ist der DOG 6 geeignet?"
-    answer: "Tractive empfiehlt den DOG 6 für Hunde ab 4 kg. Zusätzlich müssen Halsbandbreite, Sitz und individuelles Tragegefühl passen. Für Hunde ab etwa 20 kg bietet der DOG 6 XL mehr Akkureserve."
-  - question: "Wie schnell aktualisiert der DOG 6 den Standort?"
-    answer: "Im Live-Modus sendet der Tracker laut Tractive etwa alle zwei bis drei Sekunden eine neue Position. Im Standardmodus sind die Intervalle länger und abhängig von Bewegung und Nutzung."
-  - question: "Hält der Akku immer zwei Wochen?"
-    answer: "Nein. Zwei Wochen sind eine Maximalangabe mit Energiesparzonen. Häufiges Live-Tracking, Bewegung, schwacher Empfang, Temperatur und fehlende WLAN-Zonen können die Laufzeit deutlich verkürzen."
-  - question: "Funktioniert der Tractive DOG 6 ohne Mobilfunknetz?"
-    answer: "Nicht als Fernortung. Der Tracker benötigt GPS-Sicht für die Position und ein unterstütztes Mobilfunknetz für die Übertragung an die App. Für Gebiete ohne Netzabdeckung ist ein autarkes Funksystem geeigneter."
-  - question: "Was ist eine Energiesparzone?"
-    answer: "Eine Energiesparzone ist ein hinterlegtes WLAN-Gebiet, meist das Zuhause. Dort pausiert der Tracker die laufende GPS- und Mobilfunkortung, um Energie zu sparen. Nach Verlassen der Zone nimmt er die Ortung wieder auf."
-  - question: "Kann meine Familie den Hund ebenfalls orten?"
-    answer: "Ja, die Familienfreigabe ist laut Tractive im Premium-Abo enthalten. Familienmitglieder können den Standort sehen und viele Funktionen nutzen, während zentrale Einstellungen beim Besitzerkonto bleiben."
-  - question: "Welche Gesundheitsdaten erfasst der DOG 6?"
-    answer: "Der Tracker zeigt Trends zu Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz sowie Bell- und Kratzverhalten. Auffällige Trends können Hinweise liefern, sind aber keine tierärztliche Diagnose."
-  - question: "Ist der Tractive DOG 6 wasserdicht?"
-    answer: "Der Hersteller weist den Tracker mit IP68 aus. Gehäuse, Befestigung und Ladekontakte sollten trotzdem regelmäßig kontrolliert und nach Schmutz- oder Salzwasserkontakt gereinigt werden."
-  - question: "Ist der DOG 6 besser als ein AirTag?"
-    answer: "Für die aktive Hundeortung bietet der DOG 6 Live-Tracking, virtuelle Zäune und Mobilfunkübertragung. Ein AirTag nutzt dagegen Geräte im Apple-Netzwerk und ist kein vollwertiger GPS-Live-Tracker für Haustiere."
+  - question: Braucht der Tractive DOG 6 ein Abo?
+    answer: >-
+      Ja. Die Mobilfunkverbindung und die App-Dienste setzen ein aktives Abo voraus. Jeder Tractive-Tracker benötigt ein
+      eigenes Abo.
+  - question: Für welche Hunde ist der DOG 6 geeignet?
+    answer: >-
+      Tractive empfiehlt den DOG 6 für Hunde ab 4 kg. Zusätzlich müssen Halsbandbreite, Sitz und individuelles
+      Tragegefühl passen. Für Hunde ab etwa 20 kg bietet der DOG 6 XL mehr Akkureserve.
+  - question: Wie schnell aktualisiert der DOG 6 den Standort?
+    answer: >-
+      Im Live-Modus sendet der Tracker laut Tractive etwa alle zwei bis drei Sekunden eine neue Position. Im
+      Standardmodus sind die Intervalle länger und abhängig von Bewegung und Nutzung.
+  - question: Hält der Akku immer zwei Wochen?
+    answer: >-
+      Nein. Zwei Wochen sind eine Maximalangabe mit Energiesparzonen. Häufiges Live-Tracking, Bewegung, schwacher
+      Empfang, Temperatur und fehlende WLAN-Zonen können die Laufzeit deutlich verkürzen.
+  - question: Funktioniert der Tractive DOG 6 ohne Mobilfunknetz?
+    answer: >-
+      Nicht als Fernortung. Der Tracker benötigt GPS-Sicht für die Position und ein unterstütztes Mobilfunknetz für die
+      Übertragung an die App. Für Gebiete ohne Netzabdeckung ist ein autarkes Funksystem geeigneter.
+  - question: Was ist eine Energiesparzone?
+    answer: >-
+      Eine Energiesparzone ist ein hinterlegtes WLAN-Gebiet, meist das Zuhause. Dort pausiert der Tracker die laufende
+      GPS- und Mobilfunkortung, um Energie zu sparen. Nach Verlassen der Zone nimmt er die Ortung wieder auf.
+  - question: Kann meine Familie den Hund ebenfalls orten?
+    answer: >-
+      Ja, die Familienfreigabe ist laut Tractive im Premium-Abo enthalten. Familienmitglieder können den Standort sehen
+      und viele Funktionen nutzen, während zentrale Einstellungen beim Besitzerkonto bleiben.
+  - question: Welche Gesundheitsdaten erfasst der DOG 6?
+    answer: >-
+      Der Tracker zeigt Trends zu Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz sowie Bell- und Kratzverhalten.
+      Auffällige Trends können Hinweise liefern, sind aber keine tierärztliche Diagnose.
+  - question: Ist der Tractive DOG 6 wasserdicht?
+    answer: >-
+      Der Hersteller weist den Tracker mit IP68 aus. Gehäuse, Befestigung und Ladekontakte sollten trotzdem regelmäßig
+      kontrolliert und nach Schmutz- oder Salzwasserkontakt gereinigt werden.
+  - question: Ist der DOG 6 besser als ein AirTag?
+    answer: >-
+      Für die aktive Hundeortung bietet der DOG 6 Live-Tracking, virtuelle Zäune und Mobilfunkübertragung. Ein AirTag
+      nutzt dagegen Geräte im Apple-Netzwerk und ist kein vollwertiger GPS-Live-Tracker für Haustiere.
 comparisonData:
   version: 1
   gps:
     animal:
-      - "dog"
+      - dog
     minimumPetWeightKg: 4
     deviceWeightGrams: 39
     subscriptionRequired: true
-    transmission: "lte"
+    transmission: lte
     batteryMaxDays: 14
-    waterproofRating: "IP68"
+    waterproofRating: IP68
     liveTracking: true
     virtualFence: true
     activityTracking: true
   general:
     animal:
-      - "dog"
+      - dog
     petSize:
-      - "small"
-      - "medium"
+      - small
+      - medium
     foodType: []
-    priceTier: "midrange"
+    priceTier: midrange
   editorial:
     rating: 4.6
     score: 92
-    priceCategory: "midrange"
-    productStatus: "active"
+    priceCategory: midrange
+    productStatus: active
   custom:
-    einsatzgebiet: "Alltag und Auslauf"
-    hundegroesse: "Kleine bis große Hunde"
-    ortung: "GPS und Mobilfunk"
+    einsatzgebiet: Alltag und Auslauf
+    hundegroesse: Kleine bis große Hunde
+    ortung: GPS und Mobilfunk
     abo: true
+    ubertragung: LTE/4G (Cat 1 bis)
+    live_ortung: Standortaktualisierung etwa alle 2 bis 3 Sekunden
+    reichweite: Keine feste Distanzgrenze; Mobilfunkabdeckung erforderlich
+    abdeckung: Premium laut Hersteller in mehr als 175 Ländern
+    app: Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer
+    wlan: 2,4 GHz für Energiesparzonen
+    bluetooth: Bluetooth 5.0
+    akkulaufzeit: Bis zu 14 Tage mit Energiesparzonen
+    stromversorgung: Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel
+    akku: Integrierter Akku, laut Support 930 mAh
+    laden: Mitgeliefertes USB-C-Ladekabel
+    material: Glasfaserverstärktes Gehäuse laut Hersteller
+    wasserschutz: IP68
+    abmessungen: 71 × 29 × 17 mm
+    gewicht: Rund 39 g
+    geeignet_fur: Hunde ab 4 kg
+    befestigung: Clip für Halsbänder bis etwa 2,8 cm Breite
+    gesundheitstrends: Aktivität, Schlaf, Ruhe-Herzfrequenz, Atemfrequenz, Bell- und Kratzverhalten
+    reinigung: >-
+      Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen
+      vollständig laden und die Ortung im Freien testen.
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der Tractive DOG 6 ist ein kompakter GPS-Tracker für Hunde ab 4 kg. Er kombiniert satellitengestützte Positionsbestimmung mit LTE-Übertragung an die Tractive-App. Im Live-Modus wird der Standort laut Hersteller etwa alle zwei bis drei Sekunden aktualisiert.
 
 Das macht den DOG 6 zu einer alltagstauglichen Lösung für Spaziergänge, Freilauf und Ausbruchswarnungen. Die Technik hat aber klare Bedingungen: Ohne aktives Abo und unterstützte Mobilfunkabdeckung ist keine reguläre Fernortung möglich. Die maximale Akkulaufzeit von bis zu zwei Wochen setzt zudem Energiesparzonen und eine moderate Live-Nutzung voraus.

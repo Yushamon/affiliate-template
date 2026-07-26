@@ -1,63 +1,65 @@
 ---
-title: "Cat Mate C500"
-slug: "cat-mate-c500"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "unknown"
-description: "Batteriebetriebener Fünf-Fächer-Automat für Nass-, Trocken- und Mischfutter mit digitalem Timer und zwei Kühlakkus."
-recommendation: "Pragmatische Nassfutter-Lösung für eine oder zwei Katzen beziehungsweise einen kleinen Hund, wenn lokale Timersteuerung und Kühlakkus ausreichen."
+title: Cat Mate C500
+slug: cat-mate-c500
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: unknown
+description: Batteriebetriebener Fünf-Fächer-Automat für Nass-, Trocken- und Mischfutter mit digitalem Timer und zwei Kühlakkus.
+recommendation: >-
+  Pragmatische Nassfutter-Lösung für eine oder zwei Katzen beziehungsweise einen kleinen Hund, wenn lokale
+  Timersteuerung und Kühlakkus ausreichen.
 manufacturer:
-  key: "cat-mate"
-  name: "Cat Mate"
-  slug: "cat-mate"
+  key: cat-mate
+  name: Cat Mate
+  slug: cat-mate
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/cat-mate-c500/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/cat-mate-c500/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-16"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "Cat Mate C500 im Check"
-  description: "Cat Mate C500 mit fünf 155-g-Fächern, zwei Kühlakkus, drei AA-Batterien und spülmaschinengeeignetem Einsatz."
-  canonical: "/produkt/cat-mate-c500/"
+  title: Cat Mate C500 im Check
+  description: Cat Mate C500 mit fünf 155-g-Fächern, zwei Kühlakkus, drei AA-Batterien und spülmaschinengeeignetem Einsatz.
+  canonical: /produkt/cat-mate-c500/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "nassfutter"
-  - "trockenfutter"
-  - "offline"
-  - "batteriebetrieb"
+  - katze
+  - kleiner-hund
+  - nassfutter
+  - trockenfutter
+  - offline
+  - batteriebetrieb
 images:
   hero:
-    src: "../../assets/images/products/cat-mate-c500/hero.webp"
-    alt: "Cat Mate C500 in redaktioneller Produktdarstellung"
+    src: ../../assets/images/products/cat-mate-c500/hero.webp
+    alt: Cat Mate C500 in redaktioneller Produktdarstellung
   thumbnail:
-    src: "../../assets/images/products/cat-mate-c500/thumbnail.webp"
-    alt: "Cat Mate C500 als kompakte Produktansicht"
+    src: ../../assets/images/products/cat-mate-c500/thumbnail.webp
+    alt: Cat Mate C500 als kompakte Produktansicht
   comparison:
-    src: "../../assets/images/products/cat-mate-c500/comparison.webp"
-    alt: "Cat Mate C500 im Vergleich"
+    src: ../../assets/images/products/cat-mate-c500/comparison.webp
+    alt: Cat Mate C500 im Vergleich
   gallery:
-    - src: "../../assets/images/products/cat-mate-c500/gallery-1.webp"
-      alt: "Fünf Fächer des Cat Mate C500"
-    - src: "../../assets/images/products/cat-mate-c500/gallery-2.webp"
-      alt: "Kühlakkus des Cat Mate C500"
-    - src: "../../assets/images/products/cat-mate-c500/gallery-3.webp"
-      alt: "Cat Mate C500 beim Befüllen"
+    - src: ../../assets/images/products/cat-mate-c500/gallery-1.webp
+      alt: Fünf Fächer des Cat Mate C500
+    - src: ../../assets/images/products/cat-mate-c500/gallery-2.webp
+      alt: Kühlakkus des Cat Mate C500
+    - src: ../../assets/images/products/cat-mate-c500/gallery-3.webp
+      alt: Cat Mate C500 beim Befüllen
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=Cat+Mate+C500+Futterautomat"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://www.amazon.de/s?k=Cat+Mate+C500+Futterautomat
 rating: 3.6
 score: 73
 ratings:
@@ -69,137 +71,168 @@ ratings:
   preisleistung: 4
 decision:
   bestFor:
-    - "eine bis zwei Katzen"
-    - "kleine Hunde"
-    - "Nass-, Trocken- oder Mischfutter"
-    - "lokale Zeitsteuerung ohne App"
+    - eine bis zwei Katzen
+    - kleine Hunde
+    - Nass-, Trocken- oder Mischfutter
+    - lokale Zeitsteuerung ohne App
   attention:
-    - "nur vier spätere Öffnungszeiten programmierbar; ein Fach ist sofort verfügbar"
-    - "Kühlakkus sind keine aktive Kühlung"
-    - "Temperatur hängt von Raumklima und Vorbereitung ab"
-    - "keine individuelle Tiererkennung"
+    - nur vier spätere Öffnungszeiten programmierbar; ein Fach ist sofort verfügbar
+    - Kühlakkus sind keine aktive Kühlung
+    - Temperatur hängt von Raumklima und Vorbereitung ab
+    - keine individuelle Tiererkennung
 review:
-  summary: "Der C500 bietet fünf Fächer mit je 155 g, davon eines sofort und vier zeitgesteuert."
-  verdict: "Für zeitgesteuertes Nassfutter deutlich geeigneter als Vorratsautomaten, aber nicht für lange ungekühlte Standzeiten."
+  summary: Der C500 bietet fünf Fächer mit je 155 g, davon eines sofort und vier zeitgesteuert.
+  verdict: >-
+    Für zeitgesteuertes Nassfutter deutlich geeigneter als Vorratsautomaten, aber nicht für lange ungekühlte
+    Standzeiten.
 strengths:
-  - "für Nass-, Trocken- und Mischfutter"
-  - "fünf Fächer mit je 155 g"
-  - "zwei Kühlakkus inklusive"
-  - "bis zu zwölf Monate Batterielaufzeit"
-  - "spülmaschinengeeigneter Deckel und Einsatz"
-  - "keine App- oder WLAN-Abhängigkeit"
+  - für Nass-, Trocken- und Mischfutter
+  - fünf Fächer mit je 155 g
+  - zwei Kühlakkus inklusive
+  - bis zu zwölf Monate Batterielaufzeit
+  - spülmaschinengeeigneter Deckel und Einsatz
+  - keine App- oder WLAN-Abhängigkeit
 weaknesses:
-  - "keine aktive Kühlung"
-  - "nur vier zukünftige Timerzeiten"
-  - "keine Fernkontrolle"
-  - "keine Zugangskontrolle"
+  - keine aktive Kühlung
+  - nur vier zukünftige Timerzeiten
+  - keine Fernkontrolle
+  - keine Zugangskontrolle
 experience:
-  summary: "Der Cat Mate C500 setzt bewusst auf eine einfache, lokale Zeitsteuerung ohne App oder WLAN. Für mehrere Nassfutterportionen über den Tag ist dieses Konzept häufig praktischer als klassische Vorratsautomaten."
-  methodology: "Redaktionelle Einordnung anhand offizieller Herstellerinformationen und technischer Produktdaten; kein eigener Langzeittest."
-  maintenance: "Futtereinsatz und Deckel nach jeder Nassfütterung gründlich reinigen. Kühlakkus vollständig durchfrieren lassen und Dichtflächen sauber halten."
+  summary: >-
+    Der Cat Mate C500 setzt bewusst auf eine einfache, lokale Zeitsteuerung ohne App oder WLAN. Für mehrere
+    Nassfutterportionen über den Tag ist dieses Konzept häufig praktischer als klassische Vorratsautomaten.
+  methodology: >-
+    Redaktionelle Einordnung anhand offizieller Herstellerinformationen und technischer Produktdaten; kein eigener
+    Langzeittest.
+  maintenance: >-
+    Futtereinsatz und Deckel nach jeder Nassfütterung gründlich reinigen. Kühlakkus vollständig durchfrieren lassen und
+    Dichtflächen sauber halten.
 alternatives:
-  - "cat-mate-c300"
-  - "surefeed-microchip-pet-feeder"
-  - "petlibro-polar-wet-food-feeder"
+  - cat-mate-c300
+  - surefeed-microchip-pet-feeder
+  - petlibro-polar-wet-food-feeder
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-hunde"
-  - "beste-futterautomaten-fuer-nassfutter"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-hunde
+  - beste-futterautomaten-fuer-nassfutter
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
   foodType: []
 specs:
-  - label: "Futterart"
-    value: "Nass-, Trocken- und Mischfutter"
-  - label: "Kapazität"
-    value: "fünf Fächer mit je 155 g"
-  - label: "Mahlzeiten"
-    value: "ein Fach sofort, vier Zeiten programmierbar"
-  - label: "App"
-    value: "Nein"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Kühlung"
-    value: "zwei Kühlakkus, keine aktive Kühlung"
-  - label: "Stromversorgung"
-    value: "drei AA-Batterien"
-  - label: "Batterielaufzeit"
-    value: "Herstellerangabe bis etwa zwölf Monate"
-  - label: "Reinigung"
-    value: "Deckel und Futtereinsatz spülmaschinengeeignet"
-  - label: "Geeignet für"
-    value: "bis zu zwei Katzen oder einen kleinen Hund"
-  - { label: "Napf", value: "Nicht vom Hersteller ausgewiesen" }
-  - { label: "WLAN", value: "Nicht vom Hersteller ausgewiesen" }
-  - { label: "Maße", value: "Nicht vom Hersteller ausgewiesen" }
-  - { label: "Gewicht", value: "Nicht vom Hersteller ausgewiesen" }
+  - label: Futterart
+    value: Nass-, Trocken- und Mischfutter
+  - label: Kapazität
+    value: fünf Fächer mit je 155 g
+  - label: Mahlzeiten
+    value: ein Fach sofort, vier Zeiten programmierbar
+  - label: App
+    value: Nein
+  - label: Kamera
+    value: Nein
+  - label: Kühlung
+    value: zwei Kühlakkus, keine aktive Kühlung
+  - label: Stromversorgung
+    value: drei AA-Batterien
+  - label: Batterielaufzeit
+    value: Herstellerangabe bis etwa zwölf Monate
+  - label: Reinigung
+    value: Deckel und Futtereinsatz spülmaschinengeeignet
+  - label: Geeignet für
+    value: bis zu zwei Katzen oder einen kleinen Hund
+  - label: Napf
+    value: Nicht vom Hersteller ausgewiesen
+  - label: WLAN
+    value: Nicht vom Hersteller ausgewiesen
+  - label: Maße
+    value: Nicht vom Hersteller ausgewiesen
+  - label: Gewicht
+    value: Nicht vom Hersteller ausgewiesen
 faq:
-  - question: "Hat der Cat Mate C500 fünf programmierbare Zeiten?"
-    answer: "Nein. Ein Fach ist sofort verfügbar, vier weitere Mahlzeiten können zeitgesteuert geöffnet werden."
-  - question: "Hält der C500 Nassfutter aktiv kalt?"
-    answer: "Nein. Zwei Kühlakkus verlangsamen die Erwärmung, ersetzen aber keinen Kühlschrank."
-  - question: "Wie lange halten die Batterien?"
-    answer: "Closer Pets nennt mit drei AA-Batterien bis zu ungefähr zwölf Monate."
-  - question: "Kann der Einsatz in die Spülmaschine?"
-    answer: "Ja. Deckel und Futterschale sind laut Hersteller spülmaschinengeeignet."
-
-  - question: "Ist der Cat Mate C500 für Nassfutter geeignet?"
-    answer: "Ja. Der Automat wurde speziell für mehrere Portionen Nass-, Trocken- oder Mischfutter entwickelt. Die mitgelieferten Kühlakkus können das Erwärmen verlangsamen, ersetzen jedoch keine aktive Kühlung."
-  - question: "Benötigt der Cat Mate C500 WLAN oder eine App?"
-    answer: "Nein. Alle Mahlzeiten werden direkt am Gerät programmiert. Eine Internetverbindung oder Smartphone-App ist nicht erforderlich."
-  - question: "Kann der Cat Mate C500 für zwei Katzen genutzt werden?"
-    answer: "Das hängt vom Fressverhalten der Tiere ab. Teilen beide Katzen zuverlässig ihre Portionen, kann der Automat geeignet sein. Für kontrollierte Einzelportionen oder Futterdiebe ist er jedoch nicht ausgelegt."
-  - question: "Ist der Cat Mate C500 laut?"
-    answer: "Beim Wechsel zum nächsten Fach ist ein kurzes Motorgeräusch hörbar. Im normalen Betrieb arbeitet der Automat vergleichsweise leise."
-
-  - question: "Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?"
-    answer: "Ja. Die einzelnen Fächer können unterschiedlich befüllt werden, solange das Futter sicher gelagert werden kann."
-  - question: "Ist der Cat Mate C500 für Reisen geeignet?"
-    answer: "Für kurze Abwesenheiten kann er sinnvoll sein. Bei langen Zeiträumen oder hohen Temperaturen sollte insbesondere Nassfutter nicht über viele Stunden im Gerät verbleiben."
-  - question: "Muss der Automat mit dem Internet verbunden werden?"
-    answer: "Nein. Sämtliche Einstellungen erfolgen direkt am Gerät."
-useCase: "Für Katzen und kleine Hunde mit Nass- oder Mischfütterung"
-capacity: "Fünf Fächer mit je 155 g"
-expandable: "Nicht vorgesehen"
+  - question: Hat der Cat Mate C500 fünf programmierbare Zeiten?
+    answer: Nein. Ein Fach ist sofort verfügbar, vier weitere Mahlzeiten können zeitgesteuert geöffnet werden.
+  - question: Hält der C500 Nassfutter aktiv kalt?
+    answer: Nein. Zwei Kühlakkus verlangsamen die Erwärmung, ersetzen aber keinen Kühlschrank.
+  - question: Wie lange halten die Batterien?
+    answer: Closer Pets nennt mit drei AA-Batterien bis zu ungefähr zwölf Monate.
+  - question: Kann der Einsatz in die Spülmaschine?
+    answer: Ja. Deckel und Futterschale sind laut Hersteller spülmaschinengeeignet.
+  - question: Ist der Cat Mate C500 für Nassfutter geeignet?
+    answer: >-
+      Ja. Der Automat wurde speziell für mehrere Portionen Nass-, Trocken- oder Mischfutter entwickelt. Die
+      mitgelieferten Kühlakkus können das Erwärmen verlangsamen, ersetzen jedoch keine aktive Kühlung.
+  - question: Benötigt der Cat Mate C500 WLAN oder eine App?
+    answer: >-
+      Nein. Alle Mahlzeiten werden direkt am Gerät programmiert. Eine Internetverbindung oder Smartphone-App ist nicht
+      erforderlich.
+  - question: Kann der Cat Mate C500 für zwei Katzen genutzt werden?
+    answer: >-
+      Das hängt vom Fressverhalten der Tiere ab. Teilen beide Katzen zuverlässig ihre Portionen, kann der Automat
+      geeignet sein. Für kontrollierte Einzelportionen oder Futterdiebe ist er jedoch nicht ausgelegt.
+  - question: Ist der Cat Mate C500 laut?
+    answer: >-
+      Beim Wechsel zum nächsten Fach ist ein kurzes Motorgeräusch hörbar. Im normalen Betrieb arbeitet der Automat
+      vergleichsweise leise.
+  - question: Kann der Cat Mate C500 Trocken- und Nassfutter kombinieren?
+    answer: Ja. Die einzelnen Fächer können unterschiedlich befüllt werden, solange das Futter sicher gelagert werden kann.
+  - question: Ist der Cat Mate C500 für Reisen geeignet?
+    answer: >-
+      Für kurze Abwesenheiten kann er sinnvoll sein. Bei langen Zeiträumen oder hohen Temperaturen sollte insbesondere
+      Nassfutter nicht über viele Stunden im Gerät verbleiben.
+  - question: Muss der Automat mit dem Internet verbunden werden?
+    answer: Nein. Sämtliche Einstellungen erfolgen direkt am Gerät.
+useCase: Für Katzen und kleine Hunde mit Nass- oder Mischfütterung
+capacity: Fünf Fächer mit je 155 g
+expandable: Nicht vorgesehen
 features:
-  - "Vier programmierbare Öffnungszeiten"
-  - "Nass- und Trockenfutter"
-  - "Zwei Kühlakkus"
+  - Vier programmierbare Öffnungszeiten
+  - Nass- und Trockenfutter
+  - Zwei Kühlakkus
 comparisonData:
   version: 1
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType: []
   editorial:
     rating: 3.6
     score: 73
-    productStatus: "unknown"
+    productStatus: unknown
   custom:
-    portionierung: "5 Fächer; davon eines sofort zugänglich"
-    zugang: "Zeitgesteuerter Drehdeckel; keine Tiererkennung"
-    mehrkatzen: "Keine sichere Trennung; offenes Fach kann geteilt oder gestohlen werden"
-    app: "Nein"
-    ausfallsicherheit: "Batteriebetrieb; kein WLAN erforderlich"
-    reinigung: "Schaleneinsatz und Deckel regelmäßig reinigen; Kühlakkus erneut einfrieren"
-    kamera: "Nein"
-    kuehlprinzip: "2 Kühlakkus; keine aktive Kühlung"
-    mahlzeiten: "5 Fächer mit je 155 g; 4 spätere Öffnungen"
-    steuerung: "Digitaler Timer am Gerät"
-    stromversorgung: "3 AA-Batterien"
-    hygiene: "Deckel und Einsatz spülmaschinengeeignet"
-    tiertrennung: "Nein"
-    geeignetfuer: "Bis zu zwei Katzen oder ein kleiner Hund"
-    wichtigstegrenze: "Keine Fernkontrolle und keine geregelte Kühlung"
-    offlineKonzept: "Fachautomat"
+    portionierung: 5 Fächer; davon eines sofort zugänglich
+    zugang: Zeitgesteuerter Drehdeckel; keine Tiererkennung
+    mehrkatzen: Keine sichere Trennung; offenes Fach kann geteilt oder gestohlen werden
+    app: Nein
+    ausfallsicherheit: Batteriebetrieb; kein WLAN erforderlich
+    reinigung: Schaleneinsatz und Deckel regelmäßig reinigen; Kühlakkus erneut einfrieren
+    kamera: Nein
+    kuehlprinzip: 2 Kühlakkus; keine aktive Kühlung
+    mahlzeiten: 5 Fächer mit je 155 g; 4 spätere Öffnungen
+    steuerung: Digitaler Timer am Gerät
+    stromversorgung: 3 AA-Batterien
+    hygiene: Deckel und Einsatz spülmaschinengeeignet
+    tiertrennung: Nein
+    geeignetfuer: Bis zu zwei Katzen oder ein kleiner Hund
+    wichtigstegrenze: Keine Fernkontrolle und keine geregelte Kühlung
+    offlineKonzept: Fachautomat
     appErforderlich: false
     batteriebetrieb: true
+    futterart: Nass-, Trocken- und Mischfutter
+    kapazitat: fünf Fächer mit je 155 g
+    kuhlung: zwei Kühlakkus, keine aktive Kühlung
+    batterielaufzeit: Herstellerangabe bis etwa zwölf Monate
+    geeignet_fur: bis zu zwei Katzen oder einen kleinen Hund
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der Cat Mate C500 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), verfolgt jedoch ein anderes Konzept als viele moderne WLAN-Modelle. Statt eines großen Vorratsbehälters arbeitet er mit einem zeitgesteuerten Drehteller. Diese Bauweise eignet sich besonders für mehrere Nassfutterportionen über den Tag und kommt vollständig ohne App oder Internetverbindung aus.
 
 ## Fünf Fächer, vier Timer

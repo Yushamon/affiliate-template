@@ -1,64 +1,68 @@
 ---
-title: "oneisall 3,2L Cordless Cat Fountain"
-slug: "oneisall-3-2l-cordless-fountain"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "active"
-description: "Kabelloser 3,2-Liter-Trinkbrunnen mit Edelstahl-Trinkfläche, 4.000-mAh-Akku, drei Betriebsmodi und mehrstufiger Filterung."
-recommendation: "Empfehlung für die meisten Katzenhalter für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank."
+title: oneisall 3,2L Cordless Cat Fountain
+slug: oneisall-3-2l-cordless-fountain
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: active
+description: >-
+  Kabelloser 3,2-Liter-Trinkbrunnen mit Edelstahl-Trinkfläche, 4.000-mAh-Akku, drei Betriebsmodi und mehrstufiger
+  Filterung.
+recommendation: >-
+  Empfehlung für die meisten Katzenhalter für ein bis zwei Katzen oder einen kleinen Hund, wenn mehr Wasserreserve und
+  eine Edelstahl-Trinkfläche wichtiger sind als App-Auswertung oder ein vollständig aus Metall gefertigter Tank.
 manufacturer:
-  key: "oneisall"
-  name: "oneisall"
-  slug: "oneisall"
+  key: oneisall
+  name: oneisall
+  slug: oneisall
 category:
-  key: "trinkbrunnen"
-  label: "Trinkbrunnen"
-  path: "/trinkbrunnen/"
-productUrl: "/produkt/oneisall-3-2l-cordless-fountain/"
+  key: trinkbrunnen
+  label: Trinkbrunnen
+  path: /trinkbrunnen/
+productUrl: /produkt/oneisall-3-2l-cordless-fountain/
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-23"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "oneisall 3,2L PW14 im Check"
-  description: "oneisall PW14 mit 3,2 Litern, Edelstahl-Trinkfläche, 4.000-mAh-Akku, Bewegungssensor, Intervall- und Dauerbetrieb."
-  canonical: "/produkt/oneisall-3-2l-cordless-fountain/"
+  title: oneisall 3,2L PW14 im Check
+  description: oneisall PW14 mit 3,2 Litern, Edelstahl-Trinkfläche, 4.000-mAh-Akku, Bewegungssensor, Intervall- und Dauerbetrieb.
+  canonical: /produkt/oneisall-3-2l-cordless-fountain/
   sitemap: true
   priority: 0.8
 hub:
   sections:
-    - "produkte"
-    - "trinkbrunnen"
+    - produkte
+    - trinkbrunnen
 tags:
-  - "trinkbrunnen"
-  - "katze"
-  - "kleiner-hund"
-  - "kabellos"
-  - "edelstahl-trinkfläche"
-  - "bewegungssensor"
-  - "akku"
+  - trinkbrunnen
+  - katze
+  - kleiner-hund
+  - kabellos
+  - edelstahl-trinkfläche
+  - bewegungssensor
+  - akku
 images:
   hero:
-    src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/hero.webp"
-    alt: "oneisall PW14 mit schwarzem ABS-Tank und Edelstahl-Trinkfläche"
+    src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/hero.webp
+    alt: oneisall PW14 mit schwarzem ABS-Tank und Edelstahl-Trinkfläche
   thumbnail:
-    src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/thumbnail.webp"
-    alt: "oneisall 3,2L Cordless Cat Fountain in kompakter Produktansicht"
+    src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/thumbnail.webp
+    alt: oneisall 3,2L Cordless Cat Fountain in kompakter Produktansicht
   comparison:
-    src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/comparison.webp"
-    alt: "oneisall PW14 im Trinkbrunnenvergleich"
+    src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/comparison.webp
+    alt: oneisall PW14 im Trinkbrunnenvergleich
   gallery:
-    - src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-1.webp"
-      alt: "Wasserlauf des oneisall PW14"
-    - src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-2.webp"
-      alt: "Edelstahl-Trinkfläche, Filter und Pumpeneinheit des oneisall PW14"
-    - src: "../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-3.webp"
-      alt: "oneisall PW14 an einem frei gewählten Trinkplatz"
+    - src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-1.webp
+      alt: Wasserlauf des oneisall PW14
+    - src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-2.webp
+      alt: Edelstahl-Trinkfläche, Filter und Pumpeneinheit des oneisall PW14
+    - src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-3.webp
+      alt: oneisall PW14 an einem frei gewählten Trinkplatz
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/4fCjRBh"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://amzn.to/4fCjRBh
 rating: 4.4
 score: 87
 ratings:
@@ -71,168 +75,236 @@ ratings:
   preisleistung: 4.5
 decision:
   bestFor:
-    - "ein bis zwei Katzen"
-    - "kleine Hunde"
-    - "kabellose Platzierung ohne Steckdose am Trinkplatz"
-    - "Haushalte mit Wunsch nach Edelstahl-Trinkfläche und größerer Reserve"
+    - ein bis zwei Katzen
+    - kleine Hunde
+    - kabellose Platzierung ohne Steckdose am Trinkplatz
+    - Haushalte mit Wunsch nach Edelstahl-Trinkfläche und größerer Reserve
   attention:
-    - "nur die Trinkfläche besteht aus Edelstahl; der Tank besteht aus ABS"
-    - "bis zu 30 Tage Akkulaufzeit sind ein Hersteller-Maximalwert"
-    - "Dauerbetrieb verbraucht deutlich mehr Energie"
-    - "Filterangaben reichen je nach Herstellerbereich von zwei bis vier Wochen"
-    - "elektronisches Pumpen- und Steuermodul darf nicht eingetaucht werden"
+    - nur die Trinkfläche besteht aus Edelstahl; der Tank besteht aus ABS
+    - bis zu 30 Tage Akkulaufzeit sind ein Hersteller-Maximalwert
+    - Dauerbetrieb verbraucht deutlich mehr Energie
+    - Filterangaben reichen je nach Herstellerbereich von zwei bis vier Wochen
+    - elektronisches Pumpen- und Steuermodul darf nicht eingetaucht werden
 review:
-  summary: "Der oneisall PW14 kombiniert 3,2 Liter Wasserreserve mit einer Trinkfläche aus Edelstahl 304, 4.000-mAh-Akku, Bewegungssensor, Intervallbetrieb und Dauerfluss."
-  verdict: "Das modernere Nachfolgemodell bietet eine ausgewogenere Gesamtleistung mit mehr Reserve als der PW13 und angenehmer Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht unabhängig verifizierte Herstellerangaben."
+  summary: >-
+    Der oneisall PW14 kombiniert 3,2 Liter Wasserreserve mit einer Trinkfläche aus Edelstahl 304, 4.000-mAh-Akku,
+    Bewegungssensor, Intervallbetrieb und Dauerfluss.
+  verdict: >-
+    Das modernere Nachfolgemodell bietet eine ausgewogenere Gesamtleistung mit mehr Reserve als der PW13 und angenehmer
+    Edelstahl-Kontaktfläche. Der Tank bleibt jedoch aus Kunststoff, und Laufzeit sowie Geräuschwert sind nicht
+    unabhängig verifizierte Herstellerangaben.
 strengths:
-  - "3,2 Liter Wasserreserve"
-  - "Trinkfläche aus Edelstahl 304"
-  - "vollständig kabelloser Betrieb am Trinkplatz"
-  - "4.000-mAh-Akku"
-  - "Bewegungssensor, Intervall- und Dauerbetrieb"
-  - "Herstellerangabe bis zu 30 Tage Akkulaufzeit"
-  - "Herstellerangabe ungefähr 20 dB"
-  - "mehrstufige Filterung"
-  - "abnehmbare kabellose Pumpeneinheit"
-  - "Warnanzeigen für niedrigen Wasserstand und Akkustand"
-  - "zwei Jahre Herstellergarantie"
+  - 3,2 Liter Wasserreserve
+  - Trinkfläche aus Edelstahl 304
+  - vollständig kabelloser Betrieb am Trinkplatz
+  - 4.000-mAh-Akku
+  - Bewegungssensor, Intervall- und Dauerbetrieb
+  - Herstellerangabe bis zu 30 Tage Akkulaufzeit
+  - Herstellerangabe ungefähr 20 dB
+  - mehrstufige Filterung
+  - abnehmbare kabellose Pumpeneinheit
+  - Warnanzeigen für niedrigen Wasserstand und Akkustand
+  - zwei Jahre Herstellergarantie
 weaknesses:
-  - "Tank aus ABS statt Voll-Edelstahl"
-  - "keine App, Trinkmengenmessung oder Verbrauchsprotokolle"
-  - "Dauerfluss reduziert die Akkulaufzeit deutlich"
-  - "Filter und Vorfilterschwämme verursachen Folgekosten"
-  - "Herstellerinformationen zum Wechselintervall sind nicht vollständig einheitlich"
-  - "Elektronik muss bei der Reinigung trocken bleiben"
-  - "keine UV-Desinfektion"
+  - Tank aus ABS statt Voll-Edelstahl
+  - keine App, Trinkmengenmessung oder Verbrauchsprotokolle
+  - Dauerfluss reduziert die Akkulaufzeit deutlich
+  - Filter und Vorfilterschwämme verursachen Folgekosten
+  - Herstellerinformationen zum Wechselintervall sind nicht vollständig einheitlich
+  - Elektronik muss bei der Reinigung trocken bleiben
+  - keine UV-Desinfektion
 experience:
-  summary: "Der PW14 ist seit Ende 2025 am Markt. Das Konzept mit größerem Tank, Edelstahl-Trinkfläche und drei Betriebsmodi ist schlüssig, aber mehrjährige Langzeiterfahrungen sind noch begrenzt."
+  summary: >-
+    Der PW14 ist seit Ende 2025 am Markt. Das Konzept mit größerem Tank, Edelstahl-Trinkfläche und drei Betriebsmodi ist
+    schlüssig, aber mehrjährige Langzeiterfahrungen sind noch begrenzt.
   positives:
-    - "mehr Reserve als beim 2,2-Liter-PW13"
-    - "Edelstahl-Trinkfläche lässt sich glatter reinigen als eine reine Kunststoffschale"
-    - "Bewegungs- und Intervallmodus können Energie sparen"
-    - "freie Platzierung ohne dauerhaft angeschlossenes Kabel"
+    - mehr Reserve als beim 2,2-Liter-PW13
+    - Edelstahl-Trinkfläche lässt sich glatter reinigen als eine reine Kunststoffschale
+    - Bewegungs- und Intervallmodus können Energie sparen
+    - freie Platzierung ohne dauerhaft angeschlossenes Kabel
   criticism:
-    - "beworbene Monatslaufzeit gilt nicht gleichermaßen für alle Modi"
-    - "Herstellerwert von ungefähr 20 dB nennt keine standardisierte Messsituation"
-    - "ABS-Tank kann mit der Zeit Kratzer und schwer lösbare Beläge entwickeln"
-    - "Filterwechsel kann bei mehreren Tieren häufiger nötig sein als beworben"
-  methodology: "Redaktionelle Einordnung anhand der aktuellen oneisall-Produktseite, des offiziellen Supportbereichs und der PW14-Anleitung; kein eigener Langzeit-, Akku-, Lautstärke-, Sensor- oder Hygienetest."
-  maintenance: "Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens alle ein bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen."
+    - beworbene Monatslaufzeit gilt nicht gleichermaßen für alle Modi
+    - Herstellerwert von ungefähr 20 dB nennt keine standardisierte Messsituation
+    - ABS-Tank kann mit der Zeit Kratzer und schwer lösbare Beläge entwickeln
+    - Filterwechsel kann bei mehreren Tieren häufiger nötig sein als beworben
+  methodology: >-
+    Redaktionelle Einordnung anhand der aktuellen oneisall-Produktseite, des offiziellen Supportbereichs und der
+    PW14-Anleitung; kein eigener Langzeit-, Akku-, Lautstärke-, Sensor- oder Hygienetest.
+  maintenance: >-
+    Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens alle ein bis
+    zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei bis vier
+    Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
 alternatives:
-  - "oneisall-2-2l-cordless-fountain"
-  - "oneisall-3-5l-cordless-fountain"
-  - "petkit-eversweet-max-cordless"
+  - oneisall-2-2l-cordless-fountain
+  - oneisall-3-5l-cordless-fountain
+  - petkit-eversweet-max-cordless
 comparisons:
-  - "beste-trinkbrunnen-fuer-katzen"
+  - beste-trinkbrunnen-fuer-katzen
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
   foodType: []
 specs:
-  - label: "Modell"
-    value: "PW14"
-  - label: "SKU"
-    value: "PW14SAU"
-  - label: "Produkttyp"
-    value: "Kabelloser Akku-Trinkbrunnen"
-  - label: "Kapazität"
-    value: "3,2 Liter beziehungsweise 108 fl. oz."
-  - label: "Material"
-    value: "ABS-Tank mit Trinkfläche aus Edelstahl 304"
-  - label: "Akku"
-    value: "integrierter Lithium-Ionen-Akku mit 4.000 mAh"
-  - label: "Akkulaufzeit"
-    value: "Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und Nutzung"
-  - label: "Ladeanschluss"
-    value: "USB-C"
-  - label: "Ladespezifikation"
-    value: "DC 5 V/1 A"
-  - label: "Betriebsmodi"
-    value: "Bewegungssensor, Intervallbetrieb und Dauerfluss"
-  - label: "Sensorreichweite"
-    value: "laut Anleitung bis ungefähr 0,8 m"
-  - label: "Intervallbetrieb"
-    value: "zeitweise Wasserbewegung in regelmäßigen Abständen"
-  - label: "Lautstärke"
-    value: "Herstellerangabe ungefähr 20 dB"
-  - label: "Pumpe"
-    value: "abnehmbare kabellose SilentFlow-Pumpeneinheit"
-  - label: "Filterung"
-    value: "fünfstufig"
-  - label: "Filterbestandteile"
-    value: "Vlies, Aktivkohle, Ionenaustauschharz, Maifan-Stein und Schwamm laut Anleitung"
-  - label: "Filterwechsel"
-    value: "Produktbundle empfiehlt etwa alle 2 Wochen; allgemeiner Herstellerhinweis nennt 2 bis 4 Wochen"
-  - label: "Filtervorbereitung"
-    value: "vor dem ersten Einsatz 5 Minuten in sauberem Wasser einweichen"
-  - label: "Warnanzeigen"
-    value: "rote Anzeige bei niedrigem Wasserstand oder niedrigem Akkustand"
-  - label: "App"
-    value: "Nein"
-  - label: "UV-Desinfektion"
-    value: "Nein"
-  - label: "Maße"
-    value: "ca. 22,0 × 12,8 × 22,0 cm"
-  - label: "Gewicht"
-    value: "ca. 0,65 kg"
-  - label: "Lieferumfang"
-    value: "Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und Anleitung"
-  - label: "Garantie"
-    value: "2 Jahre laut oneisall"
-  - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
+  - label: Modell
+    value: PW14
+  - label: SKU
+    value: PW14SAU
+  - label: Produkttyp
+    value: Kabelloser Akku-Trinkbrunnen
+  - label: Kapazität
+    value: 3,2 Liter beziehungsweise 108 fl. oz.
+  - label: Material
+    value: ABS-Tank mit Trinkfläche aus Edelstahl 304
+  - label: Akku
+    value: integrierter Lithium-Ionen-Akku mit 4.000 mAh
+  - label: Akkulaufzeit
+    value: Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und Nutzung
+  - label: Ladeanschluss
+    value: USB-C
+  - label: Ladespezifikation
+    value: DC 5 V/1 A
+  - label: Betriebsmodi
+    value: Bewegungssensor, Intervallbetrieb und Dauerfluss
+  - label: Sensorreichweite
+    value: laut Anleitung bis ungefähr 0,8 m
+  - label: Intervallbetrieb
+    value: zeitweise Wasserbewegung in regelmäßigen Abständen
+  - label: Lautstärke
+    value: Herstellerangabe ungefähr 20 dB
+  - label: Pumpe
+    value: abnehmbare kabellose SilentFlow-Pumpeneinheit
+  - label: Filterung
+    value: fünfstufig
+  - label: Filterbestandteile
+    value: Vlies, Aktivkohle, Ionenaustauschharz, Maifan-Stein und Schwamm laut Anleitung
+  - label: Filterwechsel
+    value: Produktbundle empfiehlt etwa alle 2 Wochen; allgemeiner Herstellerhinweis nennt 2 bis 4 Wochen
+  - label: Filtervorbereitung
+    value: vor dem ersten Einsatz 5 Minuten in sauberem Wasser einweichen
+  - label: Warnanzeigen
+    value: rote Anzeige bei niedrigem Wasserstand oder niedrigem Akkustand
+  - label: App
+    value: Nein
+  - label: UV-Desinfektion
+    value: Nein
+  - label: Maße
+    value: ca. 22,0 × 12,8 × 22,0 cm
+  - label: Gewicht
+    value: ca. 0,65 kg
+  - label: Lieferumfang
+    value: Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und Anleitung
+  - label: Garantie
+    value: 2 Jahre laut oneisall
+  - label: Geeignet für
+    value: Katzen und kleine Hunde
+  - label: Reinigung
+    value: >-
+      Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens alle ein
+      bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei
+      bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
 faq:
-  - question: "Ist der oneisall PW14 vollständig aus Edelstahl?"
-    answer: "Nein. Die obere Trinkfläche besteht aus Edelstahl 304. Der eigentliche 3,2-Liter-Tank besteht aus ABS-Kunststoff."
-  - question: "Wie lange hält der Akku?"
-    answer: "oneisall nennt bis zu 30 Tage. Dieser Maximalwert ist vor allem für energiesparende Modi relevant. Dauerfluss, häufige Sensorauslösungen, Kälte und Akkualter können die Laufzeit deutlich verkürzen."
-  - question: "Welche Betriebsmodi gibt es?"
-    answer: "Der PW14 bietet einen Bewegungssensor, einen Intervallmodus und kontinuierlichen Wasserfluss. Der Dauerbetrieb eignet sich eher bei angeschlossener Stromversorgung oder häufigem Nachladen."
-  - question: "Wie weit reicht der Bewegungssensor?"
-    answer: "Die zugängliche PW14-Anleitung nennt ungefähr 0,8 Meter. Möbel, Ausrichtung und Bewegungsrichtung des Tieres können die Erkennung beeinflussen."
-  - question: "Ist der Brunnen wirklich nur 20 dB laut?"
-    answer: "20 dB ist eine Herstellerangabe. Ohne definierte Messdistanz und Raumakustik ist der Wert nur eingeschränkt vergleichbar. Wasserstand, Verschmutzung und Sitz der Pumpe beeinflussen das tatsächliche Geräusch."
-  - question: "Wie oft muss der Filter gewechselt werden?"
-    answer: "Die aktuelle Produktvariante empfiehlt etwa zwei Wochen, während der allgemeine Herstellerhinweis zwei bis vier Wochen nennt. Tierzahl, Wasserqualität, Haare, Geruch und sichtbare Verschmutzung sollten das tatsächliche Intervall bestimmen."
-  - question: "Wie oft sollte der PW14 gereinigt werden?"
-    answer: "oneisall empfiehlt eine vollständige Reinigung ungefähr alle ein bis zwei Wochen. Das Trinkwasser sollte deutlich häufiger erneuert und der Brunnen täglich auf Haare, Futterreste und Schleim kontrolliert werden."
-  - question: "Darf die Pumpeneinheit untergetaucht werden?"
-    answer: "Das elektronische Steuer- beziehungsweise Kontrollmodul darf laut oneisall nicht eingetaucht werden. Wasserführende Teile werden getrennt gereinigt; Ladeanschluss und Elektronik müssen trocken bleiben."
-  - question: "Ist der PW14 für mehrere Katzen geeignet?"
-    answer: "Die 3,2-Liter-Reserve ist für ein bis zwei Katzen praktikabler als 2,2 Liter. Bei mehreren Tieren müssen Wasser, Filter und Sauberkeit dennoch häufiger kontrolliert werden."
-  - question: "Ist der oneisall PW14 für längere Abwesenheiten geeignet?"
-    answer: "Er kann die Wasserversorgung unterstützen, ersetzt aber keine tägliche Betreuung. Akku, Wasserstand, Pumpenfunktion, Sauberkeit und Trinkverhalten müssen weiterhin kontrolliert werden."
+  - question: Ist der oneisall PW14 vollständig aus Edelstahl?
+    answer: Nein. Die obere Trinkfläche besteht aus Edelstahl 304. Der eigentliche 3,2-Liter-Tank besteht aus ABS-Kunststoff.
+  - question: Wie lange hält der Akku?
+    answer: >-
+      oneisall nennt bis zu 30 Tage. Dieser Maximalwert ist vor allem für energiesparende Modi relevant. Dauerfluss,
+      häufige Sensorauslösungen, Kälte und Akkualter können die Laufzeit deutlich verkürzen.
+  - question: Welche Betriebsmodi gibt es?
+    answer: >-
+      Der PW14 bietet einen Bewegungssensor, einen Intervallmodus und kontinuierlichen Wasserfluss. Der Dauerbetrieb
+      eignet sich eher bei angeschlossener Stromversorgung oder häufigem Nachladen.
+  - question: Wie weit reicht der Bewegungssensor?
+    answer: >-
+      Die zugängliche PW14-Anleitung nennt ungefähr 0,8 Meter. Möbel, Ausrichtung und Bewegungsrichtung des Tieres
+      können die Erkennung beeinflussen.
+  - question: Ist der Brunnen wirklich nur 20 dB laut?
+    answer: >-
+      20 dB ist eine Herstellerangabe. Ohne definierte Messdistanz und Raumakustik ist der Wert nur eingeschränkt
+      vergleichbar. Wasserstand, Verschmutzung und Sitz der Pumpe beeinflussen das tatsächliche Geräusch.
+  - question: Wie oft muss der Filter gewechselt werden?
+    answer: >-
+      Die aktuelle Produktvariante empfiehlt etwa zwei Wochen, während der allgemeine Herstellerhinweis zwei bis vier
+      Wochen nennt. Tierzahl, Wasserqualität, Haare, Geruch und sichtbare Verschmutzung sollten das tatsächliche
+      Intervall bestimmen.
+  - question: Wie oft sollte der PW14 gereinigt werden?
+    answer: >-
+      oneisall empfiehlt eine vollständige Reinigung ungefähr alle ein bis zwei Wochen. Das Trinkwasser sollte deutlich
+      häufiger erneuert und der Brunnen täglich auf Haare, Futterreste und Schleim kontrolliert werden.
+  - question: Darf die Pumpeneinheit untergetaucht werden?
+    answer: >-
+      Das elektronische Steuer- beziehungsweise Kontrollmodul darf laut oneisall nicht eingetaucht werden.
+      Wasserführende Teile werden getrennt gereinigt; Ladeanschluss und Elektronik müssen trocken bleiben.
+  - question: Ist der PW14 für mehrere Katzen geeignet?
+    answer: >-
+      Die 3,2-Liter-Reserve ist für ein bis zwei Katzen praktikabler als 2,2 Liter. Bei mehreren Tieren müssen Wasser,
+      Filter und Sauberkeit dennoch häufiger kontrolliert werden.
+  - question: Ist der oneisall PW14 für längere Abwesenheiten geeignet?
+    answer: >-
+      Er kann die Wasserversorgung unterstützen, ersetzt aber keine tägliche Betreuung. Akku, Wasserstand,
+      Pumpenfunktion, Sauberkeit und Trinkverhalten müssen weiterhin kontrolliert werden.
 features:
-  - "3,2-Liter-Tank"
-  - "Edelstahl-Trinkfläche"
-  - "4.000-mAh-Akku"
-  - "Drei Betriebsmodi"
-  - "Bewegungssensor"
-  - "USB-C-Ladung"
-  - "Fünfstufige Filterung"
-priceCategory: "midrange"
-useCase: "Kabellose Wasserversorgung für Katzen und kleine Hunde mit größerer Reserve"
-capacity: "3,2 Liter"
-expandable: "Ersatzfilter und Vorfilterschwämme separat erhältlich"
+  - 3,2-Liter-Tank
+  - Edelstahl-Trinkfläche
+  - 4.000-mAh-Akku
+  - Drei Betriebsmodi
+  - Bewegungssensor
+  - USB-C-Ladung
+  - Fünfstufige Filterung
+priceCategory: midrange
+useCase: Kabellose Wasserversorgung für Katzen und kleine Hunde mit größerer Reserve
+capacity: 3,2 Liter
+expandable: Ersatzfilter und Vorfilterschwämme separat erhältlich
 comparisonData:
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType: []
-    priceTier: "midrange"
+    priceTier: midrange
   editorial:
-    rating: 4.1
-    score: 81
-    priceCategory: "midrange"
-    productStatus: "active"
+    rating: 4.4
+    score: 87
+    priceCategory: midrange
+    productStatus: active
   custom:
-    filter: "Ionenaustauschfilter, Mehrstufiges Filtersystem"
-    reinigung: "Entnehmbare beziehungsweise zerlegbare Komponenten"
+    filter: Ionenaustauschfilter, Mehrstufiges Filtersystem
+    reinigung: Entnehmbare beziehungsweise zerlegbare Komponenten
+    modell: PW14
+    sku: PW14SAU
+    produkttyp: Kabelloser Akku-Trinkbrunnen
+    kapazitat: 3,2 Liter beziehungsweise 108 fl. oz.
+    material: ABS-Tank mit Trinkfläche aus Edelstahl 304
+    akku: integrierter Lithium-Ionen-Akku mit 4.000 mAh
+    akkulaufzeit: Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und Nutzung
+    ladeanschluss: USB-C
+    ladespezifikation: DC 5 V/1 A
+    betriebsmodi: Bewegungssensor, Intervallbetrieb und Dauerfluss
+    sensorreichweite: laut Anleitung bis ungefähr 0,8 m
+    intervallbetrieb: zeitweise Wasserbewegung in regelmäßigen Abständen
+    lautstarke: Herstellerangabe ungefähr 20 dB
+    pumpe: abnehmbare kabellose SilentFlow-Pumpeneinheit
+    filterung: fünfstufig
+    filterbestandteile: Vlies, Aktivkohle, Ionenaustauschharz, Maifan-Stein und Schwamm laut Anleitung
+    filterwechsel: Produktbundle empfiehlt etwa alle 2 Wochen; allgemeiner Herstellerhinweis nennt 2 bis 4 Wochen
+    filtervorbereitung: vor dem ersten Einsatz 5 Minuten in sauberem Wasser einweichen
+    warnanzeigen: rote Anzeige bei niedrigem Wasserstand oder niedrigem Akkustand
+    app: Nein
+    uv_desinfektion: Nein
+    masse: ca. 22,0 × 12,8 × 22,0 cm
+    gewicht: ca. 0,65 kg
+    lieferumfang: Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und Anleitung
+    garantie: 2 Jahre laut oneisall
+    geeignet_fur: Katzen und kleine Hunde
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.
 
 Der Tank selbst besteht weiterhin aus ABS-Kunststoff. Das Modell ist deshalb kein Voll-Edelstahlbrunnen und sollte in Vergleichstabellen als Materialmix geführt werden.

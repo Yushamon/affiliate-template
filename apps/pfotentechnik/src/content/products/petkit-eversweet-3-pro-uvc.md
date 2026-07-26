@@ -1,64 +1,68 @@
 ---
-title: "PETKIT Eversweet 3 Pro UVC"
-slug: "petkit-eversweet-3-pro-uvc"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "active"
-description: "Kompakter 1,6-Liter-Trinkbrunnen mit Wasserbehälter aus Edelstahl 304, UVC-Pumpe, Bluetooth-App und vierstufiger Filterung."
-recommendation: "Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung."
+title: PETKIT Eversweet 3 Pro UVC
+slug: petkit-eversweet-3-pro-uvc
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: active
+description: >-
+  Kompakter 1,6-Liter-Trinkbrunnen mit Wasserbehälter aus Edelstahl 304, UVC-Pumpe, Bluetooth-App und vierstufiger
+  Filterung.
+recommendation: >-
+  Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und
+  App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung.
 manufacturer:
-  key: "petkit"
-  name: "PETKIT"
-  slug: "petkit"
+  key: petkit
+  name: PETKIT
+  slug: petkit
 category:
-  key: "trinkbrunnen"
-  label: "Trinkbrunnen"
-  path: "/trinkbrunnen/"
-productUrl: "/produkt/petkit-eversweet-3-pro-uvc/"
+  key: trinkbrunnen
+  label: Trinkbrunnen
+  path: /trinkbrunnen/
+productUrl: /produkt/petkit-eversweet-3-pro-uvc/
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-23"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "PETKIT Eversweet 3 Pro UVC im Check"
-  description: "PETKIT Eversweet 3 Pro UVC mit 1,6 Litern, Edelstahlbehälter, UVC-Pumpe, Bluetooth-App, drei Modi und Filterkosten."
-  canonical: "/produkt/petkit-eversweet-3-pro-uvc/"
+  title: PETKIT Eversweet 3 Pro UVC im Check
+  description: PETKIT Eversweet 3 Pro UVC mit 1,6 Litern, Edelstahlbehälter, UVC-Pumpe, Bluetooth-App, drei Modi und Filterkosten.
+  canonical: /produkt/petkit-eversweet-3-pro-uvc/
   sitemap: true
   priority: 0.8
 hub:
   sections:
-    - "produkte"
-    - "trinkbrunnen"
+    - produkte
+    - trinkbrunnen
 tags:
-  - "trinkbrunnen"
-  - "katze"
-  - "kleiner-hund"
-  - "kompakt"
-  - "uvc"
-  - "bluetooth"
-  - "edelstahlbehaelter"
+  - trinkbrunnen
+  - katze
+  - kleiner-hund
+  - kompakt
+  - uvc
+  - bluetooth
+  - edelstahlbehaelter
 images:
   hero:
-    src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/hero.webp"
-    alt: "PETKIT Eversweet 3 Pro UVC mit weißem Gehäuse und Edelstahl-Wasserbehälter"
+    src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/hero.webp
+    alt: PETKIT Eversweet 3 Pro UVC mit weißem Gehäuse und Edelstahl-Wasserbehälter
   thumbnail:
-    src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/thumbnail.webp"
-    alt: "PETKIT Eversweet 3 Pro UVC in kompakter Produktansicht"
+    src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/thumbnail.webp
+    alt: PETKIT Eversweet 3 Pro UVC in kompakter Produktansicht
   comparison:
-    src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/comparison.webp"
-    alt: "PETKIT Eversweet 3 Pro UVC im Trinkbrunnenvergleich"
+    src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/comparison.webp
+    alt: PETKIT Eversweet 3 Pro UVC im Trinkbrunnenvergleich
   gallery:
-    - src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-1.webp"
-      alt: "Edelstahl-Wasserbehälter des PETKIT Eversweet 3 Pro UVC"
-    - src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-2.webp"
-      alt: "UVC-Pumpe, Filterhalter und Filteraufbau des PETKIT Eversweet 3 Pro UVC"
-    - src: "../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-3.webp"
-      alt: "PETKIT Eversweet 3 Pro UVC an einem Trinkplatz für eine Katze"
+    - src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-1.webp
+      alt: Edelstahl-Wasserbehälter des PETKIT Eversweet 3 Pro UVC
+    - src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-2.webp
+      alt: UVC-Pumpe, Filterhalter und Filteraufbau des PETKIT Eversweet 3 Pro UVC
+    - src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-3.webp
+      alt: PETKIT Eversweet 3 Pro UVC an einem Trinkplatz für eine Katze
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/4x46uRz"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://amzn.to/4x46uRz
 rating: 4.2
 score: 84
 ratings:
@@ -66,200 +70,280 @@ ratings:
   bedienung: 4.3
   reinigung: 4.2
   lautstaerke: 4.2
-  smartfunktionen: 4.0
+  smartfunktionen: 4
   hygiene: 4.3
   preisleistung: 3.8
 decision:
   bestFor:
-    - "eine Katze oder einen kleinen Hund"
-    - "kleine Stellflächen"
-    - "Haushalte mit Wunsch nach Edelstahl-Wasserbehälter"
-    - "Nutzer, die Betriebsmodi und Erinnerungen per App einstellen möchten"
+    - eine Katze oder einen kleinen Hund
+    - kleine Stellflächen
+    - Haushalte mit Wunsch nach Edelstahl-Wasserbehälter
+    - Nutzer, die Betriebsmodi und Erinnerungen per App einstellen möchten
   attention:
-    - "nur 1,6 Liter tatsächlich nutzbare Kapazität"
-    - "dauerhafter USB-Netzbetrieb ohne Akku"
-    - "direkte App-Verbindung nur über Bluetooth"
-    - "keine Trinkmengenmessung oder Tiererkennung"
-    - "UVC und Filter ersetzen keine regelmäßige mechanische Reinigung"
-    - "keine Teile sind laut aktueller PETKIT-FAQ spülmaschinengeeignet"
+    - nur 1,6 Liter tatsächlich nutzbare Kapazität
+    - dauerhafter USB-Netzbetrieb ohne Akku
+    - direkte App-Verbindung nur über Bluetooth
+    - keine Trinkmengenmessung oder Tiererkennung
+    - UVC und Filter ersetzen keine regelmäßige mechanische Reinigung
+    - keine Teile sind laut aktueller PETKIT-FAQ spülmaschinengeeignet
 review:
-  summary: "Der Eversweet 3 Pro UVC kombiniert einen kompakten Edelstahl-Wasserbehälter mit kabelloser UVC-Pumpe, Filter 3.0, drei Wasserflussmodi und Bluetooth-App."
-  verdict: "Eine technisch durchdachte Premiumlösung für kleine Haushalte. Edelstahlbehälter, zerlegbare Pumpe und App-Erinnerungen sind echte Vorteile. Die geringe Kapazität, Netzbindung und laufenden Filterkosten begrenzen den Nutzen für mehrere Tiere."
+  summary: >-
+    Der Eversweet 3 Pro UVC kombiniert einen kompakten Edelstahl-Wasserbehälter mit kabelloser UVC-Pumpe, Filter 3.0,
+    drei Wasserflussmodi und Bluetooth-App.
+  verdict: >-
+    Eine technisch durchdachte Premiumlösung für kleine Haushalte. Edelstahlbehälter, zerlegbare Pumpe und
+    App-Erinnerungen sind echte Vorteile. Die geringe Kapazität, Netzbindung und laufenden Filterkosten begrenzen den
+    Nutzen für mehrere Tiere.
 strengths:
-  - "Wasserbehälter aus Edelstahl 304"
-  - "kabellose, vollständig entnehmbare UVC-Pumpe"
-  - "Herstellerangabe bis zu 99,96 Prozent Reduktion bestimmter Bakterien"
-  - "vierstufige Hauptfilterung plus Pumpenvorfilter"
-  - "Normal-, Smart- und Nicht-stören-Modus"
-  - "Bluetooth-App mit Wasser- und Filtererinnerungen"
-  - "Trockenlaufschutz und Wassermangelanzeige"
-  - "60 ml Wasserreserve in der Trinkschale bei Stromausfall"
-  - "Herstellerangabe unter 25 dB"
-  - "Ersatzfilter und Ersatzpumpe verfügbar"
+  - Wasserbehälter aus Edelstahl 304
+  - kabellose, vollständig entnehmbare UVC-Pumpe
+  - Herstellerangabe bis zu 99,96 Prozent Reduktion bestimmter Bakterien
+  - vierstufige Hauptfilterung plus Pumpenvorfilter
+  - Normal-, Smart- und Nicht-stören-Modus
+  - Bluetooth-App mit Wasser- und Filtererinnerungen
+  - Trockenlaufschutz und Wassermangelanzeige
+  - 60 ml Wasserreserve in der Trinkschale bei Stromausfall
+  - Herstellerangabe unter 25 dB
+  - Ersatzfilter und Ersatzpumpe verfügbar
 weaknesses:
-  - "kleine nutzbare Kapazität von 1,6 Litern"
-  - "kein Akku- oder Batteriebetrieb"
-  - "keine eigenständige WLAN-Verbindung"
-  - "Fernzugriff nur über ein zusätzliches kompatibles PETKIT-Hauptgerät"
-  - "keine Trinkmengen- oder Tiererkennung"
-  - "Filter und Pumpenschwamm verursachen Folgekosten"
-  - "nicht spülmaschinengeeignet"
-  - "UVC-Wirkung ist kein Ersatz für Wasserwechsel und Reinigung"
+  - kleine nutzbare Kapazität von 1,6 Litern
+  - kein Akku- oder Batteriebetrieb
+  - keine eigenständige WLAN-Verbindung
+  - Fernzugriff nur über ein zusätzliches kompatibles PETKIT-Hauptgerät
+  - keine Trinkmengen- oder Tiererkennung
+  - Filter und Pumpenschwamm verursachen Folgekosten
+  - nicht spülmaschinengeeignet
+  - UVC-Wirkung ist kein Ersatz für Wasserwechsel und Reinigung
 experience:
-  summary: "Das Produktkonzept ist auf eine kleine Wasserreserve, hochwertige Kontaktflächen und komfortable Wartung ausgelegt. Die App verbessert vor allem Bedienung und Erinnerungen, misst jedoch nicht, wie viel ein einzelnes Tier tatsächlich trinkt."
+  summary: >-
+    Das Produktkonzept ist auf eine kleine Wasserreserve, hochwertige Kontaktflächen und komfortable Wartung ausgelegt.
+    Die App verbessert vor allem Bedienung und Erinnerungen, misst jedoch nicht, wie viel ein einzelnes Tier tatsächlich
+    trinkt.
   positives:
-    - "Edelstahlbehälter ist glatter und kratzfester als ein reiner Kunststofftank"
-    - "Pumpe lässt sich ohne fest verbundenes Kabel aus dem Tank entnehmen"
-    - "Wasserfluss und Ruhezeiten lassen sich per App anpassen"
-    - "Warnungen helfen bei niedrigem Wasserstand und fälligem Filterwechsel"
+    - Edelstahlbehälter ist glatter und kratzfester als ein reiner Kunststofftank
+    - Pumpe lässt sich ohne fest verbundenes Kabel aus dem Tank entnehmen
+    - Wasserfluss und Ruhezeiten lassen sich per App anpassen
+    - Warnungen helfen bei niedrigem Wasserstand und fälligem Filterwechsel
   criticism:
-    - "1,6 Liter werden in einem Mehrtierhaushalt schnell knapp"
-    - "Verpackung und ältere Anleitung nennen 1,8 Liter, während PETKIT 1,6 Liter als nutzbar ausweist"
-    - "die direkte App-Steuerung endet außerhalb der Bluetooth-Reichweite"
-    - "Herstellerangaben zum Filterwechsel variieren zwischen zwei bis vier Wochen und ungefähr vier Wochen"
-  methodology: "Redaktionelle Einordnung anhand der aktuellen PETKIT-Produktseite, der offiziellen Anleitung, der Filter- und UVC-Pumpenseiten sowie der aktuellen Produktvergleichsdaten; kein eigener Langzeit-, UVC-, Lautstärke-, App- oder Hygienetest."
-  maintenance: "Wasser täglich kontrollieren und regelmäßig vollständig wechseln. Behälter, Trinkfläche, Filterhalter, Pumpengitter, Schwamm und Rotor mindestens wöchentlich prüfen und je nach Nutzung gründlich reinigen. Elektrische Basis nicht eintauchen und alle Teile von Hand reinigen."
+    - 1,6 Liter werden in einem Mehrtierhaushalt schnell knapp
+    - Verpackung und ältere Anleitung nennen 1,8 Liter, während PETKIT 1,6 Liter als nutzbar ausweist
+    - die direkte App-Steuerung endet außerhalb der Bluetooth-Reichweite
+    - Herstellerangaben zum Filterwechsel variieren zwischen zwei bis vier Wochen und ungefähr vier Wochen
+  methodology: >-
+    Redaktionelle Einordnung anhand der aktuellen PETKIT-Produktseite, der offiziellen Anleitung, der Filter- und
+    UVC-Pumpenseiten sowie der aktuellen Produktvergleichsdaten; kein eigener Langzeit-, UVC-, Lautstärke-, App- oder
+    Hygienetest.
+  maintenance: >-
+    Wasser täglich kontrollieren und regelmäßig vollständig wechseln. Behälter, Trinkfläche, Filterhalter, Pumpengitter,
+    Schwamm und Rotor mindestens wöchentlich prüfen und je nach Nutzung gründlich reinigen. Elektrische Basis nicht
+    eintauchen und alle Teile von Hand reinigen.
 alternatives:
-  - "petkit-eversweet-solo-2-fountain"
-  - "petkit-eversweet-max-2-uvc"
-  - "petlibro-stainless-steel-fountain"
+  - petkit-eversweet-solo-2-fountain
+  - petkit-eversweet-max-2-uvc
+  - petlibro-stainless-steel-fountain
 comparisons:
-  - "beste-trinkbrunnen-fuer-katzen"
+  - beste-trinkbrunnen-fuer-katzen
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
   foodType: []
 specs:
-  - label: "Modell"
-    value: "P4108"
-  - label: "Produkttyp"
-    value: "Kabelgebundener Smart-Trinkbrunnen mit UVC-Pumpe"
-  - label: "Nutzbare Kapazität"
-    value: "1,6 Liter beziehungsweise 54 fl. oz."
-  - label: "Maximales Behältervolumen"
-    value: "1,8 Liter laut Verpackung und älterer Anleitung; PETKIT weist 1,6 Liter als tatsächlich nutzbar aus"
-  - label: "Materialien"
-    value: "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304"
-  - label: "Wasserbehälter"
-    value: "Edelstahl 304"
-  - label: "Trinkfläche"
-    value: "lebensmittelechter Kunststoff laut aktueller PETKIT-Vergleichstabelle"
-  - label: "Pumpe"
-    value: "kabellose und vollständig entnehmbare UVC-Pumpe"
-  - label: "Pumpenmodell"
-    value: "P4113 beziehungsweise aktuelle Ersatzversion FFT1-2 UVC"
-  - label: "UVC"
-    value: "Herstellerangabe bis zu 99,96 Prozent Reduktion bestimmter schädlicher Bakterien"
-  - label: "UVC im Normalmodus"
-    value: "zunächst 3 Stunden, danach 1 Stunde UVC in einem 3-Stunden-Zyklus"
-  - label: "UVC im Smart-Modus"
-    value: "läuft synchron mit den Ein- und Ausschaltzyklen der Pumpe"
-  - label: "UVC im Nicht-stören-Modus"
-    value: "UVC und Pumpe bleiben während des Ruhezeitraums aus"
-  - label: "Betriebsmodi"
-    value: "Normal, Smart und Nicht stören"
-  - label: "Normalmodus"
-    value: "kontinuierlicher Wasserfluss"
-  - label: "Smart-Modus"
-    value: "Intervallbetrieb; Werkseinstellung 3 Minuten an und 3 Minuten aus"
-  - label: "Nicht-stören-Modus"
-    value: "individuell definierbarer Ruhezeitraum ohne Pumpenbetrieb"
-  - label: "App"
-    value: "PETKIT-App für iOS und Android"
-  - label: "Direkte Verbindung"
-    value: "Bluetooth"
-  - label: "Fernzugriff"
-    value: "nur über die Geräteverknüpfung mit einem kompatiblen PETKIT-Hauptgerät in höchstens etwa 8 m Entfernung"
-  - label: "App-Funktionen"
-    value: "Wasserflussmodus, Ruhezeit, Wassermangel- und Filtererinnerungen"
-  - label: "Trinkmengenmessung"
-    value: "Nein"
-  - label: "Hauptfilter"
-    value: "PETKIT Filter Unit 3.0, Modell P4161"
-  - label: "Filteraufbau"
-    value: "hochdichtes Filtervlies, Kokos-Aktivkohle und Ionenaustauschharz"
-  - label: "Zusätzlicher Pumpenschutz"
-    value: "feines Einlassgitter und austauschbarer Schwamm"
-  - label: "Filterwechsel"
-    value: "PETKIT nennt je nach Seite ungefähr 2 bis 4 Wochen beziehungsweise rund 4 Wochen"
-  - label: "Trockenlaufschutz"
-    value: "Wasserstandssensor stoppt die Pumpe bei Wassermangel"
-  - label: "Wassermangelanzeige"
-    value: "blinkende Anzeige an der Basis"
-  - label: "Wasserreserve bei Stromausfall"
-    value: "etwa 60 ml in der Trinkschale"
-  - label: "Lautstärke"
-    value: "Herstellerangabe unter beziehungsweise höchstens 25 dB"
-  - label: "Stromversorgung"
-    value: "USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten"
-  - label: "Nennspannung"
-    value: "5 V DC, 1 A"
-  - label: "Nennleistung"
-    value: "2 W"
-  - label: "Akku"
-    value: "Nein"
-  - label: "Reinigung"
-    value: "vollständig zerlegbar; alle Komponenten von Hand reinigen"
-  - label: "Spülmaschine"
-    value: "Nein, laut aktueller PETKIT-FAQ sind keine Teile spülmaschinengeeignet"
-  - label: "Abmessungen"
-    value: "195 × 195 × 148 mm"
-  - label: "Gewicht"
-    value: "1,28 kg"
-  - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
+  - label: Modell
+    value: P4108
+  - label: Produkttyp
+    value: Kabelgebundener Smart-Trinkbrunnen mit UVC-Pumpe
+  - label: Nutzbare Kapazität
+    value: 1,6 Liter beziehungsweise 54 fl. oz.
+  - label: Maximales Behältervolumen
+    value: 1,8 Liter laut Verpackung und älterer Anleitung; PETKIT weist 1,6 Liter als tatsächlich nutzbar aus
+  - label: Materialien
+    value: BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304
+  - label: Wasserbehälter
+    value: Edelstahl 304
+  - label: Trinkfläche
+    value: lebensmittelechter Kunststoff laut aktueller PETKIT-Vergleichstabelle
+  - label: Pumpe
+    value: kabellose und vollständig entnehmbare UVC-Pumpe
+  - label: Pumpenmodell
+    value: P4113 beziehungsweise aktuelle Ersatzversion FFT1-2 UVC
+  - label: UVC
+    value: Herstellerangabe bis zu 99,96 Prozent Reduktion bestimmter schädlicher Bakterien
+  - label: UVC im Normalmodus
+    value: zunächst 3 Stunden, danach 1 Stunde UVC in einem 3-Stunden-Zyklus
+  - label: UVC im Smart-Modus
+    value: läuft synchron mit den Ein- und Ausschaltzyklen der Pumpe
+  - label: UVC im Nicht-stören-Modus
+    value: UVC und Pumpe bleiben während des Ruhezeitraums aus
+  - label: Betriebsmodi
+    value: Normal, Smart und Nicht stören
+  - label: Normalmodus
+    value: kontinuierlicher Wasserfluss
+  - label: Smart-Modus
+    value: Intervallbetrieb; Werkseinstellung 3 Minuten an und 3 Minuten aus
+  - label: Nicht-stören-Modus
+    value: individuell definierbarer Ruhezeitraum ohne Pumpenbetrieb
+  - label: App
+    value: PETKIT-App für iOS und Android
+  - label: Direkte Verbindung
+    value: Bluetooth
+  - label: Fernzugriff
+    value: nur über die Geräteverknüpfung mit einem kompatiblen PETKIT-Hauptgerät in höchstens etwa 8 m Entfernung
+  - label: App-Funktionen
+    value: Wasserflussmodus, Ruhezeit, Wassermangel- und Filtererinnerungen
+  - label: Trinkmengenmessung
+    value: Nein
+  - label: Hauptfilter
+    value: PETKIT Filter Unit 3.0, Modell P4161
+  - label: Filteraufbau
+    value: hochdichtes Filtervlies, Kokos-Aktivkohle und Ionenaustauschharz
+  - label: Zusätzlicher Pumpenschutz
+    value: feines Einlassgitter und austauschbarer Schwamm
+  - label: Filterwechsel
+    value: PETKIT nennt je nach Seite ungefähr 2 bis 4 Wochen beziehungsweise rund 4 Wochen
+  - label: Trockenlaufschutz
+    value: Wasserstandssensor stoppt die Pumpe bei Wassermangel
+  - label: Wassermangelanzeige
+    value: blinkende Anzeige an der Basis
+  - label: Wasserreserve bei Stromausfall
+    value: etwa 60 ml in der Trinkschale
+  - label: Lautstärke
+    value: Herstellerangabe unter beziehungsweise höchstens 25 dB
+  - label: Stromversorgung
+    value: USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten
+  - label: Nennspannung
+    value: 5 V DC, 1 A
+  - label: Nennleistung
+    value: 2 W
+  - label: Akku
+    value: Nein
+  - label: Reinigung
+    value: vollständig zerlegbar; alle Komponenten von Hand reinigen
+  - label: Spülmaschine
+    value: Nein, laut aktueller PETKIT-FAQ sind keine Teile spülmaschinengeeignet
+  - label: Abmessungen
+    value: 195 × 195 × 148 mm
+  - label: Gewicht
+    value: 1,28 kg
+  - label: Geeignet für
+    value: Katzen und kleine Hunde
 faq:
-  - question: "Fasst der PETKIT Eversweet 3 Pro UVC 1,6 oder 1,8 Liter?"
-    answer: "PETKIT erklärt, dass 1,8 Liter das maximale Behältervolumen sind, während 1,6 Liter die tatsächlich nutzbare Kapazität darstellen. Für Vergleiche sollte deshalb 1,6 Liter verwendet werden."
-  - question: "Macht die UVC-Pumpe das Wasser steril?"
-    answer: "Nein. PETKIT bewirbt eine Reduktion von bis zu 99,96 Prozent bestimmter schädlicher Bakterien unter den vorgesehenen Bedingungen. Das ist keine Garantie für steriles Wasser und ersetzt weder Filterwechsel noch Reinigung."
-  - question: "Läuft UVC dauerhaft?"
-    answer: "Nein. Im Normalmodus arbeitet UVC zunächst drei Stunden und danach intervallweise. Im Smart-Modus folgt die UVC-Funktion den Pumpenzyklen. Im Nicht-stören-Modus bleibt sie ausgeschaltet."
-  - question: "Wie oft muss der Filter gewechselt werden?"
-    answer: "Die offizielle Filterseite nennt zwei bis vier Wochen, während die Produkt-FAQ ungefähr vier Wochen empfiehlt. Tierzahl, Haare, Wasserqualität, Geruch und sichtbare Verschmutzung sollten das tatsächliche Intervall bestimmen."
-  - question: "Funktioniert der Trinkbrunnen ohne Steckdose?"
-    answer: "Nein. Er benötigt während des Betriebs dauerhaft eine USB-Stromversorgung. Ein Akku oder Batteriefach ist nicht vorhanden."
-  - question: "Bleibt bei einem Stromausfall Wasser erreichbar?"
-    answer: "Ja. PETKIT nennt ungefähr 60 ml Wasser, die in der Trinkschale verbleiben. Diese kleine Reserve ersetzt bei längeren Stromausfällen keinen zusätzlichen Wassernapf."
-  - question: "Kann der Eversweet 3 Pro UVC über WLAN gesteuert werden?"
-    answer: "Das Gerät verbindet sich direkt nur per Bluetooth. Ein Fernzugriff ist laut PETKIT über die Verknüpfung mit einem kompatiblen PETKIT-Hauptgerät möglich, wenn beide Geräte höchstens etwa acht Meter voneinander entfernt sind."
-  - question: "Misst die App, wie viel meine Katze trinkt?"
-    answer: "Nein. Die App dient bei diesem Modell vor allem zur Modussteuerung und für Wasser- beziehungsweise Filtererinnerungen. Eine individuelle Trinkmengenmessung bietet der Eversweet 3 Pro UVC nicht."
-  - question: "Dürfen Teile in die Spülmaschine?"
-    answer: "Nein. Die aktuelle PETKIT-FAQ bezeichnet alle Teile als nicht spülmaschinengeeignet. Sie sollten von Hand gereinigt werden; die elektrische Basis darf nicht eingetaucht werden."
-  - question: "Reicht der Brunnen für mehrere Katzen?"
-    answer: "Mehrere Katzen können daraus trinken, aber die nutzbare Kapazität von 1,6 Litern ist knapp. Wasserstand, Sauberkeit und Filter müssen dann häufiger kontrolliert werden."
+  - question: Fasst der PETKIT Eversweet 3 Pro UVC 1,6 oder 1,8 Liter?
+    answer: >-
+      PETKIT erklärt, dass 1,8 Liter das maximale Behältervolumen sind, während 1,6 Liter die tatsächlich nutzbare
+      Kapazität darstellen. Für Vergleiche sollte deshalb 1,6 Liter verwendet werden.
+  - question: Macht die UVC-Pumpe das Wasser steril?
+    answer: >-
+      Nein. PETKIT bewirbt eine Reduktion von bis zu 99,96 Prozent bestimmter schädlicher Bakterien unter den
+      vorgesehenen Bedingungen. Das ist keine Garantie für steriles Wasser und ersetzt weder Filterwechsel noch
+      Reinigung.
+  - question: Läuft UVC dauerhaft?
+    answer: >-
+      Nein. Im Normalmodus arbeitet UVC zunächst drei Stunden und danach intervallweise. Im Smart-Modus folgt die
+      UVC-Funktion den Pumpenzyklen. Im Nicht-stören-Modus bleibt sie ausgeschaltet.
+  - question: Wie oft muss der Filter gewechselt werden?
+    answer: >-
+      Die offizielle Filterseite nennt zwei bis vier Wochen, während die Produkt-FAQ ungefähr vier Wochen empfiehlt.
+      Tierzahl, Haare, Wasserqualität, Geruch und sichtbare Verschmutzung sollten das tatsächliche Intervall bestimmen.
+  - question: Funktioniert der Trinkbrunnen ohne Steckdose?
+    answer: >-
+      Nein. Er benötigt während des Betriebs dauerhaft eine USB-Stromversorgung. Ein Akku oder Batteriefach ist nicht
+      vorhanden.
+  - question: Bleibt bei einem Stromausfall Wasser erreichbar?
+    answer: >-
+      Ja. PETKIT nennt ungefähr 60 ml Wasser, die in der Trinkschale verbleiben. Diese kleine Reserve ersetzt bei
+      längeren Stromausfällen keinen zusätzlichen Wassernapf.
+  - question: Kann der Eversweet 3 Pro UVC über WLAN gesteuert werden?
+    answer: >-
+      Das Gerät verbindet sich direkt nur per Bluetooth. Ein Fernzugriff ist laut PETKIT über die Verknüpfung mit einem
+      kompatiblen PETKIT-Hauptgerät möglich, wenn beide Geräte höchstens etwa acht Meter voneinander entfernt sind.
+  - question: Misst die App, wie viel meine Katze trinkt?
+    answer: >-
+      Nein. Die App dient bei diesem Modell vor allem zur Modussteuerung und für Wasser- beziehungsweise
+      Filtererinnerungen. Eine individuelle Trinkmengenmessung bietet der Eversweet 3 Pro UVC nicht.
+  - question: Dürfen Teile in die Spülmaschine?
+    answer: >-
+      Nein. Die aktuelle PETKIT-FAQ bezeichnet alle Teile als nicht spülmaschinengeeignet. Sie sollten von Hand
+      gereinigt werden; die elektrische Basis darf nicht eingetaucht werden.
+  - question: Reicht der Brunnen für mehrere Katzen?
+    answer: >-
+      Mehrere Katzen können daraus trinken, aber die nutzbare Kapazität von 1,6 Litern ist knapp. Wasserstand,
+      Sauberkeit und Filter müssen dann häufiger kontrolliert werden.
 features:
-  - "1,6-Liter-Nutzvolumen"
-  - "Edelstahl-Wasserbehälter"
-  - "UVC-Pumpe"
-  - "Bluetooth-App"
-  - "Drei Betriebsmodi"
-  - "Vierstufige Filterung"
-  - "Trockenlaufschutz"
-priceCategory: "premium"
-useCase: "Kompakte gefilterte Wasserversorgung für eine Katze oder einen kleinen Hund"
-capacity: "1,6 Liter nutzbar"
-expandable: "Filter Unit 3.0, Pumpenschwämme und UVC-Ersatzpumpe separat erhältlich"
+  - 1,6-Liter-Nutzvolumen
+  - Edelstahl-Wasserbehälter
+  - UVC-Pumpe
+  - Bluetooth-App
+  - Drei Betriebsmodi
+  - Vierstufige Filterung
+  - Trockenlaufschutz
+priceCategory: premium
+useCase: Kompakte gefilterte Wasserversorgung für eine Katze oder einen kleinen Hund
+capacity: 1,6 Liter nutzbar
+expandable: Filter Unit 3.0, Pumpenschwämme und UVC-Ersatzpumpe separat erhältlich
 comparisonData:
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType: []
-    priceTier: "premium"
+    priceTier: premium
   editorial:
     rating: 4.2
     score: 84
-    priceCategory: "premium"
-    productStatus: "active"
+    priceCategory: premium
+    productStatus: active
   custom:
-    material: "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304"
-    filter: "Ionenaustauschfilter"
+    material: BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304
+    filter: Ionenaustauschfilter
+    modell: P4108
+    produkttyp: Kabelgebundener Smart-Trinkbrunnen mit UVC-Pumpe
+    nutzbare_kapazitat: 1,6 Liter beziehungsweise 54 fl. oz.
+    maximales_behaltervolumen: 1,8 Liter laut Verpackung und älterer Anleitung; PETKIT weist 1,6 Liter als tatsächlich nutzbar aus
+    materialien: BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304
+    wasserbehalter: Edelstahl 304
+    trinkflache: lebensmittelechter Kunststoff laut aktueller PETKIT-Vergleichstabelle
+    pumpe: kabellose und vollständig entnehmbare UVC-Pumpe
+    pumpenmodell: P4113 beziehungsweise aktuelle Ersatzversion FFT1-2 UVC
+    uvc: Herstellerangabe bis zu 99,96 Prozent Reduktion bestimmter schädlicher Bakterien
+    uvc_im_normalmodus: zunächst 3 Stunden, danach 1 Stunde UVC in einem 3-Stunden-Zyklus
+    uvc_im_smart_modus: läuft synchron mit den Ein- und Ausschaltzyklen der Pumpe
+    uvc_im_nicht_storen_modus: UVC und Pumpe bleiben während des Ruhezeitraums aus
+    betriebsmodi: Normal, Smart und Nicht stören
+    normalmodus: kontinuierlicher Wasserfluss
+    smart_modus: Intervallbetrieb; Werkseinstellung 3 Minuten an und 3 Minuten aus
+    nicht_storen_modus: individuell definierbarer Ruhezeitraum ohne Pumpenbetrieb
+    app: PETKIT-App für iOS und Android
+    direkte_verbindung: Bluetooth
+    fernzugriff: nur über die Geräteverknüpfung mit einem kompatiblen PETKIT-Hauptgerät in höchstens etwa 8 m Entfernung
+    app_funktionen: Wasserflussmodus, Ruhezeit, Wassermangel- und Filtererinnerungen
+    trinkmengenmessung: Nein
+    hauptfilter: PETKIT Filter Unit 3.0, Modell P4161
+    filteraufbau: hochdichtes Filtervlies, Kokos-Aktivkohle und Ionenaustauschharz
+    zusatzlicher_pumpenschutz: feines Einlassgitter und austauschbarer Schwamm
+    filterwechsel: PETKIT nennt je nach Seite ungefähr 2 bis 4 Wochen beziehungsweise rund 4 Wochen
+    trockenlaufschutz: Wasserstandssensor stoppt die Pumpe bei Wassermangel
+    wassermangelanzeige: blinkende Anzeige an der Basis
+    wasserreserve_bei_stromausfall: etwa 60 ml in der Trinkschale
+    lautstarke: Herstellerangabe unter beziehungsweise höchstens 25 dB
+    stromversorgung: USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten
+    nennspannung: 5 V DC, 1 A
+    nennleistung: 2 W
+    akku: Nein
+    reinigung: vollständig zerlegbar; alle Komponenten von Hand reinigen
+    spulmaschine: Nein, laut aktueller PETKIT-FAQ sind keine Teile spülmaschinengeeignet
+    abmessungen: 195 × 195 × 148 mm
+    gewicht: 1,28 kg
+    geeignet_fur: Katzen und kleine Hunde
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der PETKIT Eversweet 3 Pro UVC ist ein kompakter Trinkbrunnen für eine Katze oder einen kleinen Hund. Sein Hauptargument ist die Kombination aus Edelstahl-Wasserbehälter, entnehmbarer UVC-Pumpe und App-gestützter Bedienung.
 
 Er ist kein kabelloser Akkubrunnen und kein Trinkmengenmesser. Die Bezeichnung „wireless pump“ bezieht sich nur darauf, dass innerhalb des Behälters kein Kabel fest mit der Pumpe verbunden ist.

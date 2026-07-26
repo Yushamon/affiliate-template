@@ -1,212 +1,264 @@
 ---
-title: "PETLIBRO Polar Wet Food Feeder"
-slug: "petlibro-polar-wet-food-feeder"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "active"
-description: "Aktiv gekühlter Nassfutterautomat mit drei 200-ml-Fächern, App-Steuerung, Edelstahl-Schale und zeitlich begrenztem Batterie-Backup."
-recommendation: "Eine der interessantesten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn aktive Kühlung und drei vorbereitete Mahlzeiten wichtiger sind als vollständig netzunabhängiger Betrieb."
+title: PETLIBRO Polar Wet Food Feeder
+slug: petlibro-polar-wet-food-feeder
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: active
+description: >-
+  Aktiv gekühlter Nassfutterautomat mit drei 200-ml-Fächern, App-Steuerung, Edelstahl-Schale und zeitlich begrenztem
+  Batterie-Backup.
+recommendation: >-
+  Eine der interessantesten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn aktive Kühlung und drei
+  vorbereitete Mahlzeiten wichtiger sind als vollständig netzunabhängiger Betrieb.
 manufacturer:
-  key: "petlibro"
-  name: "PETLIBRO"
-  slug: "petlibro"
+  key: petlibro
+  name: PETLIBRO
+  slug: petlibro
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-polar-wet-food-feeder/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/petlibro-polar-wet-food-feeder/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-25"
 author:
-  name: "PfotenTechnik Redaktion"
-  role: "Redaktion"
+  name: PfotenTechnik Redaktion
+  role: Redaktion
 seo:
   title: "PETLIBRO Polar im Check: aktive Kühlung für Nassfutter"
-  description: "PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern, 2,4-GHz-WLAN, Edelstahl-Schale und 12-Stunden-Ausfallschutz."
-  canonical: "/produkt/petlibro-polar-wet-food-feeder/"
+  description: >-
+    PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern, 2,4-GHz-WLAN, Edelstahl-Schale und
+    12-Stunden-Ausfallschutz.
+  canonical: /produkt/petlibro-polar-wet-food-feeder/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "app"
-  - "nassfutter"
-  - "aktive-kuehlung"
-  - "edelstahl"
-  - "premium"
+  - katze
+  - kleiner-hund
+  - app
+  - nassfutter
+  - aktive-kuehlung
+  - edelstahl
+  - premium
 images:
   hero:
-    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/hero.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder mit drei gekühlten Nassfutterfächern"
+    src: ../../assets/images/products/petlibro-polar-wet-food-feeder/hero.webp
+    alt: PETLIBRO Polar Wet Food Feeder mit drei gekühlten Nassfutterfächern
   thumbnail:
-    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder als kompakte Produktansicht"
+    src: ../../assets/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp
+    alt: PETLIBRO Polar Wet Food Feeder als kompakte Produktansicht
   comparison:
-    src: "../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp"
-    alt: "PETLIBRO Polar Wet Food Feeder im Nassfuttervergleich"
+    src: ../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp
+    alt: PETLIBRO Polar Wet Food Feeder im Nassfuttervergleich
   gallery:
-    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp"
-      alt: "Drei Edelstahl-Futterfächer des PETLIBRO Polar"
-    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-2.webp"
-      alt: "Kühlbasis des PETLIBRO Polar"
-    - src: "../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp"
-      alt: "PETLIBRO Polar an einem Katzenfutterplatz"
+    - src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-1.webp
+      alt: Drei Edelstahl-Futterfächer des PETLIBRO Polar
+    - src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-2.webp
+      alt: Kühlbasis des PETLIBRO Polar
+    - src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp
+      alt: PETLIBRO Polar an einem Katzenfutterplatz
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder
 rating: 4
 score: 80
 ratings:
   app: 3.9
   portionierung: 4.4
   reinigung: 4.3
-  zuverlaessigkeit: 4.0
+  zuverlaessigkeit: 4
   sicherheit: 4.4
   preisleistung: 3.7
 decision:
   bestFor:
-    - "Katzen und kleine Hunde mit Nassfutter"
-    - "bis zu drei vorbereitete Mahlzeiten"
-    - "aktive Kühlung ohne Kühlakkus"
-    - "Haushalte mit 2,4-GHz-WLAN und App-Steuerung"
+    - Katzen und kleine Hunde mit Nassfutter
+    - bis zu drei vorbereitete Mahlzeiten
+    - aktive Kühlung ohne Kühlakkus
+    - Haushalte mit 2,4-GHz-WLAN und App-Steuerung
   attention:
-    - "nur drei Mahlzeiten"
-    - "aktive Kühlung benötigt Netzstrom"
-    - "Batterie-Backup schützt laut Hersteller den Zeitplan bis zu 12 Stunden; fortgesetzte Kühlung ist dabei nicht belegt"
-    - "keine physische Taste für eine spontane manuelle Fütterung"
-    - "nicht für Rohfleisch empfohlen"
-    - "72 Stunden sind eine Herstellerangabe unter definierten Bedingungen, keine pauschale Haltbarkeitsgarantie"
+    - nur drei Mahlzeiten
+    - aktive Kühlung benötigt Netzstrom
+    - >-
+      Batterie-Backup schützt laut Hersteller den Zeitplan bis zu 12 Stunden; fortgesetzte Kühlung ist dabei nicht
+      belegt
+    - keine physische Taste für eine spontane manuelle Fütterung
+    - nicht für Rohfleisch empfohlen
+    - 72 Stunden sind eine Herstellerangabe unter definierten Bedingungen, keine pauschale Haltbarkeitsgarantie
 review:
-  summary: "Der Polar PLAF109 kombiniert thermoelektrische Kühlung mit drei einzeln planbaren 200-ml-Fächern und einer spülmaschinengeeigneten Edelstahl-Schale."
-  verdict: "Der PETLIBRO Polar ist technisch deutlich überzeugender als ein einfacher Fachautomat mit Kühlakkus. Seine Grenzen bleiben die vollständige Abhängigkeit der aktiven Kühlung vom Netzstrom, nur drei Mahlzeiten und die App-Abhängigkeit für spontane Öffnungen."
+  summary: >-
+    Der Polar PLAF109 kombiniert thermoelektrische Kühlung mit drei einzeln planbaren 200-ml-Fächern und einer
+    spülmaschinengeeigneten Edelstahl-Schale.
+  verdict: >-
+    Der PETLIBRO Polar ist technisch deutlich überzeugender als ein einfacher Fachautomat mit Kühlakkus. Seine Grenzen
+    bleiben die vollständige Abhängigkeit der aktiven Kühlung vom Netzstrom, nur drei Mahlzeiten und die
+    App-Abhängigkeit für spontane Öffnungen.
 strengths:
-  - "aktive thermoelektrische Kühlung statt Kühlakkus"
-  - "drei Fächer mit jeweils 200 ml"
-  - "spülmaschinengeeignete Edelstahl-Futterschale"
-  - "2,4-GHz-WLAN und App-Zeitpläne"
-  - "Anti-Pinch-Sensor am Deckel"
-  - "laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans über drei AA-Batterien"
-  - "24 Monate Herstellergarantie laut aktueller deutscher Produktseite"
+  - aktive thermoelektrische Kühlung statt Kühlakkus
+  - drei Fächer mit jeweils 200 ml
+  - spülmaschinengeeignete Edelstahl-Futterschale
+  - 2,4-GHz-WLAN und App-Zeitpläne
+  - Anti-Pinch-Sensor am Deckel
+  - laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans über drei AA-Batterien
+  - 24 Monate Herstellergarantie laut aktueller deutscher Produktseite
 weaknesses:
-  - "aktive Kühlung benötigt Netzstrom"
-  - "nur drei Mahlzeiten"
-  - "keine physische Fütterungstaste am Gerät"
-  - "Rohfleisch wird vom Hersteller nicht empfohlen"
-  - "vergleichsweise groß und mit 3,4 kg schwer"
-  - "App und Benutzerkonto gehören zum Bedienkonzept"
+  - aktive Kühlung benötigt Netzstrom
+  - nur drei Mahlzeiten
+  - keine physische Fütterungstaste am Gerät
+  - Rohfleisch wird vom Hersteller nicht empfohlen
+  - vergleichsweise groß und mit 3,4 kg schwer
+  - App und Benutzerkonto gehören zum Bedienkonzept
 experience:
-  summary: "Aktive Kühlung ist kontrollierbarer als einfache Kühlakkus. Die reale Futtertemperatur hängt dennoch von Raumtemperatur, Befüllung, sauberem Wärmeübergang und Stromversorgung ab."
-  methodology: "Redaktionelle Einordnung anhand der aktuellen deutschen und internationalen PETLIBRO-Produktseiten sowie des offiziellen Hilfebereichs; kein eigener Langzeit-, Temperatur- oder Stromausfalltest."
-  maintenance: "Edelstahl-Schale nach jeder Nassfütterung reinigen. Kühlfläche, Dichtungen, Deckel und Drehmechanismus frei von Futterresten, Kondenswasser und Eis halten."
+  summary: >-
+    Aktive Kühlung ist kontrollierbarer als einfache Kühlakkus. Die reale Futtertemperatur hängt dennoch von
+    Raumtemperatur, Befüllung, sauberem Wärmeübergang und Stromversorgung ab.
+  methodology: >-
+    Redaktionelle Einordnung anhand der aktuellen deutschen und internationalen PETLIBRO-Produktseiten sowie des
+    offiziellen Hilfebereichs; kein eigener Langzeit-, Temperatur- oder Stromausfalltest.
+  maintenance: >-
+    Edelstahl-Schale nach jeder Nassfütterung reinigen. Kühlfläche, Dichtungen, Deckel und Drehmechanismus frei von
+    Futterresten, Kondenswasser und Eis halten.
 alternatives:
-  - "cat-mate-c500"
-  - "surefeed-microchip-pet-feeder"
-  - "cat-mate-c300"
+  - cat-mate-c500
+  - surefeed-microchip-pet-feeder
+  - cat-mate-c300
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-hunde"
-  - "beste-futterautomaten-fuer-nassfutter"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-hunde
+  - beste-futterautomaten-fuer-nassfutter
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
-  foodType: ["wet"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
+  foodType:
+    - wet
   app: true
   camera: false
   backupPower: true
-  access: "open"
-  priceTier: "premium"
+  access: open
+  priceTier: premium
 specs:
-  - label: "Portionierung"
-    value: "Drei zeitgesteuerte Fächer mit je 200 ml"
-  - label: "Modell"
-    value: "PLAF109"
-  - label: "Futterart"
-    value: "Dosen-Nassfutter, Portionsbeutel, halbfestes Feuchtfutter und verschreibungspflichtiges Dosenfutter"
-  - label: "Kapazität"
-    value: "drei Fächer mit je 200 ml"
-  - label: "Kühlung"
-    value: "thermoelektrische Aktivkühlung"
-  - label: "Herstellerangabe zur Kühlung"
-    value: "bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur; bis zu 72 Stunden Frische"
-  - label: "App"
-    value: "PETLIBRO-App für Android und iOS 13 oder neuer"
-  - label: "WLAN"
-    value: "2,4 GHz"
-  - label: "Manuelle Öffnung"
-    value: "nur über Feed Now beziehungsweise Open Now in der App; keine physische Fütterungstaste"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Napf"
-    value: "spülmaschinengeeignete Edelstahl-Futterschale"
-  - label: "Reinigung"
-    value: "Edelstahl-Futterteile spülmaschinengeeignet; Basis von Hand reinigen"
-  - label: "Stromversorgung"
-    value: "Netzteil 12 V/5 A"
-  - label: "Batterie-Backup"
-    value: "drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans"
-  - label: "Abmessungen"
-    value: "361 × 340 × 196 mm"
-  - label: "Gewicht"
-    value: "3,4 kg ohne Netzteil"
-  - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
+  - label: Portionierung
+    value: Drei zeitgesteuerte Fächer mit je 200 ml
+  - label: Modell
+    value: PLAF109
+  - label: Futterart
+    value: Dosen-Nassfutter, Portionsbeutel, halbfestes Feuchtfutter und verschreibungspflichtiges Dosenfutter
+  - label: Kapazität
+    value: drei Fächer mit je 200 ml
+  - label: Kühlung
+    value: thermoelektrische Aktivkühlung
+  - label: Herstellerangabe zur Kühlung
+    value: bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur; bis zu 72 Stunden Frische
+  - label: App
+    value: PETLIBRO-App für Android und iOS 13 oder neuer
+  - label: WLAN
+    value: 2,4 GHz
+  - label: Manuelle Öffnung
+    value: nur über Feed Now beziehungsweise Open Now in der App; keine physische Fütterungstaste
+  - label: Kamera
+    value: Nein
+  - label: Napf
+    value: spülmaschinengeeignete Edelstahl-Futterschale
+  - label: Reinigung
+    value: Edelstahl-Futterteile spülmaschinengeeignet; Basis von Hand reinigen
+  - label: Stromversorgung
+    value: Netzteil 12 V/5 A
+  - label: Batterie-Backup
+    value: drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans
+  - label: Abmessungen
+    value: 361 × 340 × 196 mm
+  - label: Gewicht
+    value: 3,4 kg ohne Netzteil
+  - label: Geeignet für
+    value: Katzen und kleine Hunde
 faq:
-  - question: "Wie lange kühlt der PETLIBRO Polar Nassfutter?"
-    answer: "PETLIBRO nennt bis zu 72 Stunden. Das ist eine Herstellerangabe unter definierten Bedingungen und keine pauschale Haltbarkeitsgarantie für jedes Futter und jede Raumtemperatur."
-  - question: "Welche Temperatur erreicht der PETLIBRO Polar?"
-    answer: "PETLIBRO nennt aus Labortests bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur. Vor der Ausgabe wird die Kühlung zeitweise pausiert."
-  - question: "Braucht der PETLIBRO Polar Kühlakkus?"
-    answer: "Nein. Das Gerät nutzt eine thermoelektrische Aktivkühlung."
-  - question: "Wie viele Mahlzeiten passen hinein?"
-    answer: "Drei Fächer mit jeweils bis zu 200 ml."
-  - question: "Funktioniert der Polar bei Stromausfall?"
-    answer: "Drei AA-Batterien sollen laut PETLIBRO den Fütterungsplan bis zu zwölf Stunden weiterführen. Dass die aktive Kühlung dabei weiterläuft, ist nicht belegt."
-  - question: "Kann ich den Polar ohne App öffnen?"
-    answer: "Eine physische Fütterungstaste besitzt das Gerät nicht. Spontane Öffnungen werden laut PETLIBRO über Feed Now oder Open Now in der App ausgelöst."
-  - question: "Ist Rohfleisch geeignet?"
-    answer: "Nein. PETLIBRO empfiehlt das Gerät wegen der unterschiedlichen Verderblichkeit nicht für Rohfleisch."
-  - question: "Ist die Schale spülmaschinengeeignet?"
-    answer: "Die aktuelle deutsche Produktseite nennt spülmaschinengeeignete Edelstahl-Futterteile. Die elektrische Basis darf nicht in die Spülmaschine."
-useCase: "Für Katzen und kleine Hunde mit vorbereiteten Nassfutterportionen"
-capacity: "Drei Mahlzeiten à 200 ml"
-expandable: "Nicht vorgesehen"
+  - question: Wie lange kühlt der PETLIBRO Polar Nassfutter?
+    answer: >-
+      PETLIBRO nennt bis zu 72 Stunden. Das ist eine Herstellerangabe unter definierten Bedingungen und keine pauschale
+      Haltbarkeitsgarantie für jedes Futter und jede Raumtemperatur.
+  - question: Welche Temperatur erreicht der PETLIBRO Polar?
+    answer: >-
+      PETLIBRO nennt aus Labortests bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur. Vor der Ausgabe wird die
+      Kühlung zeitweise pausiert.
+  - question: Braucht der PETLIBRO Polar Kühlakkus?
+    answer: Nein. Das Gerät nutzt eine thermoelektrische Aktivkühlung.
+  - question: Wie viele Mahlzeiten passen hinein?
+    answer: Drei Fächer mit jeweils bis zu 200 ml.
+  - question: Funktioniert der Polar bei Stromausfall?
+    answer: >-
+      Drei AA-Batterien sollen laut PETLIBRO den Fütterungsplan bis zu zwölf Stunden weiterführen. Dass die aktive
+      Kühlung dabei weiterläuft, ist nicht belegt.
+  - question: Kann ich den Polar ohne App öffnen?
+    answer: >-
+      Eine physische Fütterungstaste besitzt das Gerät nicht. Spontane Öffnungen werden laut PETLIBRO über Feed Now oder
+      Open Now in der App ausgelöst.
+  - question: Ist Rohfleisch geeignet?
+    answer: Nein. PETLIBRO empfiehlt das Gerät wegen der unterschiedlichen Verderblichkeit nicht für Rohfleisch.
+  - question: Ist die Schale spülmaschinengeeignet?
+    answer: >-
+      Die aktuelle deutsche Produktseite nennt spülmaschinengeeignete Edelstahl-Futterteile. Die elektrische Basis darf
+      nicht in die Spülmaschine.
+useCase: Für Katzen und kleine Hunde mit vorbereiteten Nassfutterportionen
+capacity: Drei Mahlzeiten à 200 ml
+expandable: Nicht vorgesehen
 features:
-  - "aktive thermoelektrische Kühlung"
-  - "App-Steuerung über 2,4-GHz-WLAN"
-  - "drei Edelstahl-Fächer"
-  - "Anti-Pinch-Sensor"
-  - "zeitlich begrenzter Ausfallschutz über drei AA-Batterien"
+  - aktive thermoelektrische Kühlung
+  - App-Steuerung über 2,4-GHz-WLAN
+  - drei Edelstahl-Fächer
+  - Anti-Pinch-Sensor
+  - zeitlich begrenzter Ausfallschutz über drei AA-Batterien
 comparisonData:
   version: 1
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType:
-      - "wet"
+      - wet
   editorial:
     rating: 4
     score: 80
-    productStatus: "active"
+    productStatus: active
   custom:
-    kuehlprinzip: "Thermoelektrische Aktivkühlung"
-    mahlzeiten: "3 Fächer mit je 200 ml"
-    steuerung: "PETLIBRO-App; 2,4-GHz-WLAN"
-    stromversorgung: "Netzbetrieb; drei AA-Batterien schützen laut Hersteller den Zeitplan bis zu 12 Stunden"
-    hygiene: "Spülmaschinengeeignete Edelstahl-Futterschale"
-    tiertrennung: "Nein"
-    geeignetfuer: "Katzen und kleine Hunde"
-    wichtigstegrenze: "Nur drei Mahlzeiten; aktive Kühlung bleibt vom Netzstrom abhängig"
+    kuehlprinzip: Thermoelektrische Aktivkühlung
+    mahlzeiten: 3 Fächer mit je 200 ml
+    steuerung: PETLIBRO-App; 2,4-GHz-WLAN
+    stromversorgung: Netzbetrieb; drei AA-Batterien schützen laut Hersteller den Zeitplan bis zu 12 Stunden
+    hygiene: Spülmaschinengeeignete Edelstahl-Futterschale
+    tiertrennung: Nein
+    geeignetfuer: Katzen und kleine Hunde
+    wichtigstegrenze: Nur drei Mahlzeiten; aktive Kühlung bleibt vom Netzstrom abhängig
+    portionierung: Drei zeitgesteuerte Fächer mit je 200 ml
+    modell: PLAF109
+    futterart: Dosen-Nassfutter, Portionsbeutel, halbfestes Feuchtfutter und verschreibungspflichtiges Dosenfutter
+    kapazitat: drei Fächer mit je 200 ml
+    kuhlung: thermoelektrische Aktivkühlung
+    herstellerangabe_zur_kuhlung: bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur; bis zu 72 Stunden Frische
+    app: PETLIBRO-App für Android und iOS 13 oder neuer
+    wlan: 2,4 GHz
+    manuelle_offnung: nur über Feed Now beziehungsweise Open Now in der App; keine physische Fütterungstaste
+    kamera: Nein
+    napf: spülmaschinengeeignete Edelstahl-Futterschale
+    reinigung: Edelstahl-Futterteile spülmaschinengeeignet; Basis von Hand reinigen
+    batterie_backup: drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans
+    abmessungen: 361 × 340 × 196 mm
+    gewicht: 3,4 kg ohne Netzteil
+    geeignet_fur: Katzen und kleine Hunde
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt.
 
 ## Kurzurteil

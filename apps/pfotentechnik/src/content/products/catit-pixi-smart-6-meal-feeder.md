@@ -1,221 +1,290 @@
 ---
-title: "Catit PIXI Smart 6-Meal Feeder"
-slug: "catit-pixi-smart-6-meal-feeder"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "active"
-description: "Flacher Sechs-Fächer-Automat für Katzen, der Nassfutter, Trockenfutter und Snacks per App oder Touchpanel zeitgesteuert bereitstellt."
-recommendation: "Sinnvolle Lösung für Katzen mit mehreren kleinen Mahlzeiten, wenn sechs vorbereitete Fächer, lokale Bedienung und App-Zugriff wichtiger sind als aktive Kühlung oder individuelle Tiererkennung."
+title: Catit PIXI Smart 6-Meal Feeder
+slug: catit-pixi-smart-6-meal-feeder
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: active
+description: >-
+  Flacher Sechs-Fächer-Automat für Katzen, der Nassfutter, Trockenfutter und Snacks per App oder Touchpanel
+  zeitgesteuert bereitstellt.
+recommendation: >-
+  Sinnvolle Lösung für Katzen mit mehreren kleinen Mahlzeiten, wenn sechs vorbereitete Fächer, lokale Bedienung und
+  App-Zugriff wichtiger sind als aktive Kühlung oder individuelle Tiererkennung.
 manufacturer:
-  key: "catit"
-  name: "Catit"
-  slug: "catit"
+  key: catit
+  name: Catit
+  slug: catit
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/catit-pixi-smart-6-meal-feeder/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/catit-pixi-smart-6-meal-feeder/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-23"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "Catit PIXI Smart 6-Meal Feeder im Check"
-  description: "Catit PIXI Smart 6-Meal Feeder mit sechs 170-ml-Fächern, App, Touchpanel, Kühlakkus und den wichtigsten Grenzen im Alltag."
-  canonical: "/produkt/catit-pixi-smart-6-meal-feeder/"
+  title: Catit PIXI Smart 6-Meal Feeder im Check
+  description: >-
+    Catit PIXI Smart 6-Meal Feeder mit sechs 170-ml-Fächern, App, Touchpanel, Kühlakkus und den wichtigsten Grenzen im
+    Alltag.
+  canonical: /produkt/catit-pixi-smart-6-meal-feeder/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "nassfutter"
-  - "trockenfutter"
-  - "app"
-  - "sechs-mahlzeiten"
-  - "kuehlakku"
-  - "batterie-backup"
+  - katze
+  - nassfutter
+  - trockenfutter
+  - app
+  - sechs-mahlzeiten
+  - kuehlakku
+  - batterie-backup
 images:
   hero:
-    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/hero.webp"
-    alt: "Catit PIXI Smart 6-Meal Feeder mit rundem Sechs-Fächer-Einsatz"
+    src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/hero.webp
+    alt: Catit PIXI Smart 6-Meal Feeder mit rundem Sechs-Fächer-Einsatz
   thumbnail:
-    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/thumbnail.webp"
-    alt: "Catit PIXI Smart 6-Meal Feeder in kompakter Produktansicht"
+    src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/thumbnail.webp
+    alt: Catit PIXI Smart 6-Meal Feeder in kompakter Produktansicht
   comparison:
-    src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/comparison.webp"
-    alt: "Catit PIXI Smart 6-Meal Feeder im Produktvergleich"
+    src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/comparison.webp
+    alt: Catit PIXI Smart 6-Meal Feeder im Produktvergleich
   gallery:
-    - src: "../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-1.webp"
-      alt: "Catit PIXI Smart 6-Meal Feeder mit geöffnetem Futterfach"
+    - src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-1.webp
+      alt: Catit PIXI Smart 6-Meal Feeder mit geöffnetem Futterfach
+    - src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-2.webp
+      alt: Catit PIXI Smart 6-Meal Feeder – weitere Produktansicht
+    - src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-3.webp
+      alt: Catit PIXI Smart 6-Meal Feeder – weitere Produktansicht
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/45hTNq9"
-rating: 4.0
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://amzn.to/45hTNq9
+rating: 4
 score: 80
 ratings:
   app: 3.3
   portionierung: 4.5
   reinigung: 4.4
-  zuverlaessigkeit: 4.0
+  zuverlaessigkeit: 4
   sicherheit: 3.5
   preisleistung: 3.8
 decision:
   bestFor:
-    - "Katzen mit mehreren kleinen Mahlzeiten"
-    - "Nassfutter, Trockenfutter und Snacks"
-    - "bis zu sechs vorbereitete Fächer"
-    - "App-Steuerung plus lokale Bedienung"
+    - Katzen mit mehreren kleinen Mahlzeiten
+    - Nassfutter, Trockenfutter und Snacks
+    - bis zu sechs vorbereitete Fächer
+    - App-Steuerung plus lokale Bedienung
   attention:
-    - "Kühlakkus bieten keine aktive Kühlung"
-    - "Fach 1 ist nach dem Befüllen sofort zugänglich"
-    - "kein Wochenplan und keine individuelle Tiererkennung"
-    - "Manipulationsschutz funktioniert nicht bei jeder Katze gleich gut"
-    - "App und Fernzugriff benötigen 2,4-GHz-WLAN"
+    - Kühlakkus bieten keine aktive Kühlung
+    - Fach 1 ist nach dem Befüllen sofort zugänglich
+    - kein Wochenplan und keine individuelle Tiererkennung
+    - Manipulationsschutz funktioniert nicht bei jeder Katze gleich gut
+    - App und Fernzugriff benötigen 2,4-GHz-WLAN
 review:
-  summary: "Der niedrige Drehteller kombiniert sechs vorportionierte Fächer mit App-Steuerung, LCD-Touchpanel, zwei Kühlakkus und einem Batterie-Backup."
-  verdict: "Ein vielseitiger Mahlzeitenautomat für Katzen, besonders bei kleinen Portionen und gemischten Futterarten. Gegen aktiv gekühlte Modelle verliert er bei längeren Nassfutter-Zeiträumen; App und Deckelsicherung sind die größten Unsicherheiten."
+  summary: >-
+    Der niedrige Drehteller kombiniert sechs vorportionierte Fächer mit App-Steuerung, LCD-Touchpanel, zwei Kühlakkus
+    und einem Batterie-Backup.
+  verdict: >-
+    Ein vielseitiger Mahlzeitenautomat für Katzen, besonders bei kleinen Portionen und gemischten Futterarten. Gegen
+    aktiv gekühlte Modelle verliert er bei längeren Nassfutter-Zeiträumen; App und Deckelsicherung sind die größten
+    Unsicherheiten.
 strengths:
-  - "sechs getrennte Fächer mit je 170 ml"
-  - "für Nassfutter, Trockenfutter und Snacks geeignet"
-  - "Bedienung per App und direkt am Gerät"
-  - "herausnehmbarer, spülmaschinengeeigneter Futtereinsatz"
-  - "zwei Kühlakkus im Lieferumfang"
-  - "Batterie-Backup bei Stromausfall"
-  - "Benachrichtigungen nach Mahlzeit und bei Blockierung"
+  - sechs getrennte Fächer mit je 170 ml
+  - für Nassfutter, Trockenfutter und Snacks geeignet
+  - Bedienung per App und direkt am Gerät
+  - herausnehmbarer, spülmaschinengeeigneter Futtereinsatz
+  - zwei Kühlakkus im Lieferumfang
+  - Batterie-Backup bei Stromausfall
+  - Benachrichtigungen nach Mahlzeit und bei Blockierung
 weaknesses:
-  - "keine aktive oder temperaturgeregelte Kühlung"
-  - "erstes Fach steht sofort offen"
-  - "nur täglicher 24-Stunden-Plan statt Wochenprogramm"
-  - "kein Mikrochip und keine Tiererkennung"
-  - "gemischte Nutzerberichte zu App und Manipulationsschutz"
-  - "vier große C/LR14-Batterien für das Backup erforderlich"
+  - keine aktive oder temperaturgeregelte Kühlung
+  - erstes Fach steht sofort offen
+  - nur täglicher 24-Stunden-Plan statt Wochenprogramm
+  - kein Mikrochip und keine Tiererkennung
+  - gemischte Nutzerberichte zu App und Manipulationsschutz
+  - vier große C/LR14-Batterien für das Backup erforderlich
 experience:
-  summary: "Die Rückmeldungen fallen gemischt aus. Positiv bewertet werden die flexible Futterwahl, die einfache Vorportionierung und die lokale Bedienung. Kritischer sind App-Komfort, aufquellende Kühlakkus und einzelne Katzen, die Deckel oder Einsatz manipulieren."
+  summary: >-
+    Die Rückmeldungen fallen gemischt aus. Positiv bewertet werden die flexible Futterwahl, die einfache
+    Vorportionierung und die lokale Bedienung. Kritischer sind App-Komfort, aufquellende Kühlakkus und einzelne Katzen,
+    die Deckel oder Einsatz manipulieren.
   positives:
-    - "mehrere Nutzer berichten von zuverlässigen täglichen Mahlzeiten"
-    - "Nassfutter und Trockenfutter lassen sich im selben Tagesplan kombinieren"
-    - "Futtertablett ist entnehmbar und unkompliziert zu reinigen"
-    - "Touchpanel bleibt als Alternative zur App verfügbar"
+    - mehrere Nutzer berichten von zuverlässigen täglichen Mahlzeiten
+    - Nassfutter und Trockenfutter lassen sich im selben Tagesplan kombinieren
+    - Futtertablett ist entnehmbar und unkompliziert zu reinigen
+    - Touchpanel bleibt als Alternative zur App verfügbar
   criticism:
-    - "App-Bewertungen nennen begrenzte Planungsoptionen und einzelne Verbindungsprobleme"
-    - "einige Nutzer sichern den Deckel zusätzlich gegen sehr geschickte Katzen"
-    - "Kühlwirkung hängt stark von Raumtemperatur, Futtermenge und vorgefrorenen Akkus ab"
-    - "ungleichmäßig gefrorene Kühlakkus können den korrekten Sitz des Einsatzes erschweren"
-  methodology: "Redaktionelle Einordnung anhand der offiziellen Catit-Produktseite, der Gebrauchsanleitung, der App-Dokumentation sowie öffentlich zugänglicher Händler- und App-Bewertungen; kein eigener hygienischer Langzeit- oder Temperaturtest."
-  maintenance: "Futtereinsatz nach Nassfutter vollständig reinigen und trocknen. Kühlakkus eben einfrieren, den korrekten Sitz des Drehtellers prüfen und vor längerer Abwesenheit mehrere Testläufe mit der eigenen Katze durchführen."
+    - App-Bewertungen nennen begrenzte Planungsoptionen und einzelne Verbindungsprobleme
+    - einige Nutzer sichern den Deckel zusätzlich gegen sehr geschickte Katzen
+    - Kühlwirkung hängt stark von Raumtemperatur, Futtermenge und vorgefrorenen Akkus ab
+    - ungleichmäßig gefrorene Kühlakkus können den korrekten Sitz des Einsatzes erschweren
+  methodology: >-
+    Redaktionelle Einordnung anhand der offiziellen Catit-Produktseite, der Gebrauchsanleitung, der App-Dokumentation
+    sowie öffentlich zugänglicher Händler- und App-Bewertungen; kein eigener hygienischer Langzeit- oder Temperaturtest.
+  maintenance: >-
+    Futtereinsatz nach Nassfutter vollständig reinigen und trocknen. Kühlakkus eben einfrieren, den korrekten Sitz des
+    Drehtellers prüfen und vor längerer Abwesenheit mehrere Testläufe mit der eigenen Katze durchführen.
 alternatives:
-  - "cat-mate-c500"
-  - "petlibro-polar-wet-food-feeder"
-  - "cat-mate-c300"
+  - cat-mate-c500
+  - petlibro-polar-wet-food-feeder
+  - cat-mate-c300
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-nassfutter"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-nassfutter
 comparisonFilters:
-  animal: ["cat"]
+  animal:
+    - cat
   petSize: []
   foodType: []
 specs:
-  - label: "Produkttyp"
-    value: "Drehteller-Futterautomat mit sechs vorbereiteten Fächern"
-  - label: "Modellnummer"
+  - label: Produkttyp
+    value: Drehteller-Futterautomat mit sechs vorbereiteten Fächern
+  - label: Modellnummer
     value: "43754"
-  - label: "Futterart"
-    value: "Nassfutter, Trockenfutter und Snacks"
-  - label: "Kapazität"
-    value: "6 Fächer mit je 170 ml"
-  - label: "Mahlzeiten"
-    value: "bis zu 6 vorbereitete Fächer; Fach 1 ist direkt zugänglich"
-  - label: "Zeitplanung"
-    value: "täglicher 24-Stunden-Plan, Mahlzeiten planbar oder manuell weiterschaltbar"
-  - label: "Kühlung"
-    value: "2 herausnehmbare Kühlakkus, keine aktive Kühlung"
-  - label: "App"
-    value: "Catit PIXI App, kostenlos und ohne Abonnement"
-  - label: "App-Funktionen"
-    value: "Echtzeitübersicht, Fütterungszeiten, nächste Mahlzeit sofort öffnen, Benachrichtigungen"
-  - label: "WLAN"
-    value: "2,4 GHz"
-  - label: "Bedienung"
-    value: "App und LCD-Touchpanel mit Tastensperre"
-  - label: "Benachrichtigungen"
-    value: "Mahlzeit serviert und Blockierung"
-  - label: "Stromversorgung"
-    value: "USB-C-Netzbetrieb, DC 5 V/1 A mit Adapter"
-  - label: "Batterie-Backup"
-    value: "4 C/LR14-Batterien, nicht enthalten; Herstellerangabe durchschnittlich etwa 4 Tage"
-  - label: "Reinigung"
-    value: "herausnehmbarer Futtereinsatz, laut Hersteller spülmaschinengeeignet"
-  - label: "Sicherheitsmechanismus"
-    value: "Drehteller stoppt bei Widerstand und dreht zurück"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Tiererkennung"
-    value: "Nein"
-  - label: "Maße"
-    value: "32 × 34,5 × 9,2 cm"
-  - label: "Gewicht"
-    value: "1,204 kg leer; 1,708 kg mit Kühlakkus"
-  - label: "Geeignet für"
-    value: "Katzen"
+  - label: Futterart
+    value: Nassfutter, Trockenfutter und Snacks
+  - label: Kapazität
+    value: 6 Fächer mit je 170 ml
+  - label: Mahlzeiten
+    value: bis zu 6 vorbereitete Fächer; Fach 1 ist direkt zugänglich
+  - label: Zeitplanung
+    value: täglicher 24-Stunden-Plan, Mahlzeiten planbar oder manuell weiterschaltbar
+  - label: Kühlung
+    value: 2 herausnehmbare Kühlakkus, keine aktive Kühlung
+  - label: App
+    value: Catit PIXI App, kostenlos und ohne Abonnement
+  - label: App-Funktionen
+    value: Echtzeitübersicht, Fütterungszeiten, nächste Mahlzeit sofort öffnen, Benachrichtigungen
+  - label: WLAN
+    value: 2,4 GHz
+  - label: Bedienung
+    value: App und LCD-Touchpanel mit Tastensperre
+  - label: Benachrichtigungen
+    value: Mahlzeit serviert und Blockierung
+  - label: Stromversorgung
+    value: USB-C-Netzbetrieb, DC 5 V/1 A mit Adapter
+  - label: Batterie-Backup
+    value: 4 C/LR14-Batterien, nicht enthalten; Herstellerangabe durchschnittlich etwa 4 Tage
+  - label: Reinigung
+    value: herausnehmbarer Futtereinsatz, laut Hersteller spülmaschinengeeignet
+  - label: Sicherheitsmechanismus
+    value: Drehteller stoppt bei Widerstand und dreht zurück
+  - label: Kamera
+    value: Nein
+  - label: Tiererkennung
+    value: Nein
+  - label: Maße
+    value: 32 × 34,5 × 9,2 cm
+  - label: Gewicht
+    value: 1,204 kg leer; 1,708 kg mit Kühlakkus
+  - label: Geeignet für
+    value: Katzen
+  - label: Akku
+    value: Nein
+  - label: Abo
+    value: Nein
 faq:
-  - question: "Hat der Catit PIXI Smart 6-Meal Feeder eine aktive Kühlung?"
-    answer: "Nein. Die zwei Kühlakkus verlangsamen nur die Erwärmung. Sie regeln keine Temperatur und ersetzen keinen Kühlschrank."
-  - question: "Wie lange bleibt Nassfutter in dem Automaten frisch?"
-    answer: "Eine pauschal sichere Zeit gibt es nicht. Catit zeigt ein Anwendungsbeispiel mit ungefähr sechs Stunden Kühlwirkung, weist aber auf den Einfluss der Raumtemperatur hin. Futterart, Ausgangstemperatur und Hygiene müssen zusätzlich berücksichtigt werden."
-  - question: "Sind wirklich sechs spätere Mahlzeiten programmierbar?"
-    answer: "Es gibt sechs Fächer. Das erste Fach ist nach dem Befüllen direkt zugänglich; die folgenden Fächer werden zeitgesteuert oder manuell geöffnet."
-  - question: "Funktioniert der Futterautomat auch ohne App?"
-    answer: "Ja. Uhrzeit und Fütterungsplan lassen sich am LCD-Touchpanel einstellen. Fernzugriff und Push-Benachrichtigungen stehen ohne App und WLAN nicht zur Verfügung."
-  - question: "Läuft der Catit PIXI Smart 6-Meal Feeder bei Stromausfall weiter?"
-    answer: "Mit vier eingesetzten C/LR14-Batterien kann das Gerät als Backup weiterlaufen. Catit nennt im Durchschnitt etwa vier Tage, abhängig von Batterien und Nutzung."
-  - question: "Kann der Futtereinsatz in die Spülmaschine?"
-    answer: "Ja. Catit bezeichnet den herausnehmbaren Futtereinsatz als spülmaschinengeeignet. Die elektrische Basis darf nicht in Wasser getaucht werden."
-  - question: "Ist der Deckel ausbruchssicher?"
-    answer: "Catit bewirbt Deckel und Bedienfeld als katzensicher. Nutzerberichte zeigen jedoch, dass einzelne besonders geschickte Katzen den Deckel oder den Einsatz manipulieren können. Vor unbeaufsichtigter Nutzung sind Testläufe sinnvoll."
-  - question: "Kann der Automat zwei Katzen getrennt füttern?"
-    answer: "Nein. Es gibt keine Mikrochip- oder Gesichtserkennung. In einem Mehrkatzenhaushalt kann nicht verhindert werden, dass eine Katze das Futter der anderen frisst."
-  - question: "Braucht die Catit PIXI App ein Abonnement?"
-    answer: "Nein. Catit bietet die App kostenlos und ohne Abonnement oder In-App-Käufe an."
+  - question: Hat der Catit PIXI Smart 6-Meal Feeder eine aktive Kühlung?
+    answer: >-
+      Nein. Die zwei Kühlakkus verlangsamen nur die Erwärmung. Sie regeln keine Temperatur und ersetzen keinen
+      Kühlschrank.
+  - question: Wie lange bleibt Nassfutter in dem Automaten frisch?
+    answer: >-
+      Eine pauschal sichere Zeit gibt es nicht. Catit zeigt ein Anwendungsbeispiel mit ungefähr sechs Stunden
+      Kühlwirkung, weist aber auf den Einfluss der Raumtemperatur hin. Futterart, Ausgangstemperatur und Hygiene müssen
+      zusätzlich berücksichtigt werden.
+  - question: Sind wirklich sechs spätere Mahlzeiten programmierbar?
+    answer: >-
+      Es gibt sechs Fächer. Das erste Fach ist nach dem Befüllen direkt zugänglich; die folgenden Fächer werden
+      zeitgesteuert oder manuell geöffnet.
+  - question: Funktioniert der Futterautomat auch ohne App?
+    answer: >-
+      Ja. Uhrzeit und Fütterungsplan lassen sich am LCD-Touchpanel einstellen. Fernzugriff und Push-Benachrichtigungen
+      stehen ohne App und WLAN nicht zur Verfügung.
+  - question: Läuft der Catit PIXI Smart 6-Meal Feeder bei Stromausfall weiter?
+    answer: >-
+      Mit vier eingesetzten C/LR14-Batterien kann das Gerät als Backup weiterlaufen. Catit nennt im Durchschnitt etwa
+      vier Tage, abhängig von Batterien und Nutzung.
+  - question: Kann der Futtereinsatz in die Spülmaschine?
+    answer: >-
+      Ja. Catit bezeichnet den herausnehmbaren Futtereinsatz als spülmaschinengeeignet. Die elektrische Basis darf nicht
+      in Wasser getaucht werden.
+  - question: Ist der Deckel ausbruchssicher?
+    answer: >-
+      Catit bewirbt Deckel und Bedienfeld als katzensicher. Nutzerberichte zeigen jedoch, dass einzelne besonders
+      geschickte Katzen den Deckel oder den Einsatz manipulieren können. Vor unbeaufsichtigter Nutzung sind Testläufe
+      sinnvoll.
+  - question: Kann der Automat zwei Katzen getrennt füttern?
+    answer: >-
+      Nein. Es gibt keine Mikrochip- oder Gesichtserkennung. In einem Mehrkatzenhaushalt kann nicht verhindert werden,
+      dass eine Katze das Futter der anderen frisst.
+  - question: Braucht die Catit PIXI App ein Abonnement?
+    answer: Nein. Catit bietet die App kostenlos und ohne Abonnement oder In-App-Käufe an.
 features:
-  - "Sechs Fächer à 170 ml"
-  - "App und Touchpanel"
-  - "Nass- und Trockenfutter"
-  - "Zwei Kühlakkus"
-  - "Batterie-Backup"
-  - "Blockierungsbenachrichtigung"
-priceCategory: "midrange"
-useCase: "Zeitgesteuerte kleine Nass- und Trockenfuttermahlzeiten für Katzen"
-capacity: "6 × 170 ml"
-expandable: "Zusätzliche Kühlakkus und Ersatz-Futtereinsatz separat erhältlich"
+  - Sechs Fächer à 170 ml
+  - App und Touchpanel
+  - Nass- und Trockenfutter
+  - Zwei Kühlakkus
+  - Batterie-Backup
+  - Blockierungsbenachrichtigung
+priceCategory: midrange
+useCase: Zeitgesteuerte kleine Nass- und Trockenfuttermahlzeiten für Katzen
+capacity: 6 × 170 ml
+expandable: Zusätzliche Kühlakkus und Ersatz-Futtereinsatz separat erhältlich
 comparisonData:
   version: 1
   general:
     animal:
-      - "cat"
+      - cat
     petSize: []
     foodType: []
-    priceTier: "midrange"
+    priceTier: midrange
   editorial:
     rating: 4
     score: 80
-    priceCategory: "midrange"
-    productStatus: "active"
+    priceCategory: midrange
+    productStatus: active
   custom:
-    kuehlprinzip: "2 Kühlakkus; keine Temperaturregelung"
-    mahlzeiten: "6 Fächer mit je 170 ml; erstes Fach offen"
-    steuerung: "App und Touchpanel"
-    stromversorgung: "USB-C; 4 C-Batterien als Backup"
-    hygiene: "Entnehmbarer, spülmaschinengeeigneter Einsatz"
-    tiertrennung: "Nein"
-    geeignetfuer: "Katzen"
-    wichtigstegrenze: "Kühlwirkung hängt stark von Vorbereitung und Raumtemperatur ab"
+    kuehlprinzip: 2 Kühlakkus; keine Temperaturregelung
+    mahlzeiten: 6 Fächer mit je 170 ml; erstes Fach offen
+    steuerung: App und Touchpanel
+    stromversorgung: USB-C; 4 C-Batterien als Backup
+    hygiene: Entnehmbarer, spülmaschinengeeigneter Einsatz
+    tiertrennung: Nein
+    geeignetfuer: Katzen
+    wichtigstegrenze: Kühlwirkung hängt stark von Vorbereitung und Raumtemperatur ab
+    produkttyp: Drehteller-Futterautomat mit sechs vorbereiteten Fächern
+    modellnummer: "43754"
+    futterart: Nassfutter, Trockenfutter und Snacks
+    kapazitat: 6 Fächer mit je 170 ml
+    zeitplanung: täglicher 24-Stunden-Plan, Mahlzeiten planbar oder manuell weiterschaltbar
+    kuhlung: 2 herausnehmbare Kühlakkus, keine aktive Kühlung
+    app: Catit PIXI App, kostenlos und ohne Abonnement
+    app_funktionen: Echtzeitübersicht, Fütterungszeiten, nächste Mahlzeit sofort öffnen, Benachrichtigungen
+    wlan: 2,4 GHz
+    bedienung: App und LCD-Touchpanel mit Tastensperre
+    benachrichtigungen: Mahlzeit serviert und Blockierung
+    batterie_backup: 4 C/LR14-Batterien, nicht enthalten; Herstellerangabe durchschnittlich etwa 4 Tage
+    reinigung: herausnehmbarer Futtereinsatz, laut Hersteller spülmaschinengeeignet
+    sicherheitsmechanismus: Drehteller stoppt bei Widerstand und dreht zurück
+    kamera: Nein
+    tiererkennung: Nein
+    masse: 32 × 34,5 × 9,2 cm
+    gewicht: 1,204 kg leer; 1,708 kg mit Kühlakkus
+    geeignet_fur: Katzen
+    akku: Nein
+    abo: Nein
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der Catit PIXI Smart 6-Meal Feeder ist kein Vorratsautomat, der Futter grammweise aus einem Behälter ausgibt. Stattdessen werden sechs Fächer vorab von Hand befüllt. Das ist bei Nassfutter, Medikamentengaben oder genau abgewogenen Portionen oft sinnvoller als ein klassischer Trockenfutterspender.
 
 ## Redaktionelle Einordnung

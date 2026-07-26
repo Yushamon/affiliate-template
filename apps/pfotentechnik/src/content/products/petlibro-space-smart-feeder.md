@@ -1,204 +1,286 @@
 ---
-title: "PETLIBRO Space Smart Feeder"
-slug: "petlibro-space-smart-feeder"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "unknown"
-description: "PETLIBRO Space Smart Feeder im redaktionellen Datencheck: Vakuum-Frischhaltung, App, Portionierung, Notstrom und Eignung für Katzen und kleine Hunde."
-recommendation: "Der PETLIBRO Space Smart Feeder ist vor allem für Haushalte interessant, die Trockenfutter automatisiert ausgeben und den Vorrat stärker gegen Luft und Feuchtigkeit abschirmen möchten. Seine Stärke ist das Vakuumsystem, nicht eine Kamera oder besonders feine Portionierung."
+title: PETLIBRO Space Smart Feeder
+slug: petlibro-space-smart-feeder
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: unknown
+description: >-
+  PETLIBRO Space Smart Feeder im redaktionellen Datencheck: Vakuum-Frischhaltung, App, Portionierung, Notstrom und
+  Eignung für Katzen und kleine Hunde.
+recommendation: >-
+  Der PETLIBRO Space Smart Feeder ist vor allem für Haushalte interessant, die Trockenfutter automatisiert ausgeben und
+  den Vorrat stärker gegen Luft und Feuchtigkeit abschirmen möchten. Seine Stärke ist das Vakuumsystem, nicht eine
+  Kamera oder besonders feine Portionierung.
 manufacturer:
-  key: "petlibro"
-  name: "Petlibro"
-  slug: "petlibro"
+  key: petlibro
+  name: Petlibro
+  slug: petlibro
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-space-smart-feeder/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/petlibro-space-smart-feeder/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-23"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "PETLIBRO Space Smart Feeder im Datencheck"
-  description: "PETLIBRO Space Smart Feeder: Vakuumbehälter, App, Portionen, Trockenfutter-Kompatibilität und Notstrom redaktionell eingeordnet."
-  canonical: "/produkt/petlibro-space-smart-feeder/"
+  title: PETLIBRO Space Smart Feeder im Datencheck
+  description: >-
+    PETLIBRO Space Smart Feeder: Vakuumbehälter, App, Portionen, Trockenfutter-Kompatibilität und Notstrom redaktionell
+    eingeordnet.
+  canonical: /produkt/petlibro-space-smart-feeder/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "app"
-  - "trockenfutter"
-  - "portionierung"
-  - "vakuum"
-  - "frischhaltung"
-  - "smarte-futterautomaten"
+  - katze
+  - kleiner-hund
+  - app
+  - trockenfutter
+  - portionierung
+  - vakuum
+  - frischhaltung
+  - smarte-futterautomaten
 images:
   hero:
-    src: "../../assets/images/products/petlibro-space-smart-feeder/hero.webp"
-    alt: "PETLIBRO Space Smart Feeder mit geschlossenem Vorratsbehälter und Futternapf"
+    src: ../../assets/images/products/petlibro-space-smart-feeder/hero.webp
+    alt: PETLIBRO Space Smart Feeder mit geschlossenem Vorratsbehälter und Futternapf
   thumbnail:
-    src: "../../assets/images/products/petlibro-space-smart-feeder/thumbnail.webp"
-    alt: "PETLIBRO Space Smart Feeder in kompakter Produktansicht"
+    src: ../../assets/images/products/petlibro-space-smart-feeder/thumbnail.webp
+    alt: PETLIBRO Space Smart Feeder in kompakter Produktansicht
   gallery:
-    - src: "../../assets/images/products/petlibro-space-smart-feeder/gallery-1.webp"
-      alt: "PETLIBRO Space Smart Feeder mit Blick auf Vorratsbehälter und Ausgabemechanismus"
-    - src: "../../assets/images/products/petlibro-space-smart-feeder/gallery-2.webp"
-      alt: "PETLIBRO Space Smart Feeder mit Napf und Bedienbereich"
+    - src: ../../assets/images/products/petlibro-space-smart-feeder/gallery-1.webp
+      alt: PETLIBRO Space Smart Feeder mit Blick auf Vorratsbehälter und Ausgabemechanismus
+    - src: ../../assets/images/products/petlibro-space-smart-feeder/gallery-2.webp
+      alt: PETLIBRO Space Smart Feeder mit Napf und Bedienbereich
 affiliate:
-  provider: "amazon"
-  label: "Verfügbarkeit und Preis prüfen"
-  url: "https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder"
+  provider: amazon
+  label: Verfügbarkeit und Preis prüfen
+  url: https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder
 rating: 4.2
 score: 84
 ratings:
-  "app": 4.2
-  "portionierung": 3.8
-  "reinigung": 4.0
-  "zuverlaessigkeit": 4.1
-  "sicherheit": 4.3
-  "preisleistung": 3.9
+  app: 4.2
+  portionierung: 3.8
+  reinigung: 4
+  zuverlaessigkeit: 4.1
+  sicherheit: 4.3
+  preisleistung: 3.9
 decision:
   bestFor:
-    - "Katzen mit mehreren kleinen Trockenfuttermahlzeiten"
-    - "Kleine Hunde mit kontrollierter Trockenfütterung"
-    - "Haushalte mit erhöhtem Anspruch an die Frischhaltung"
-    - "Nutzer, die Fütterungszeiten per App verwalten möchten"
+    - Katzen mit mehreren kleinen Trockenfuttermahlzeiten
+    - Kleine Hunde mit kontrollierter Trockenfütterung
+    - Haushalte mit erhöhtem Anspruch an die Frischhaltung
+    - Nutzer, die Fütterungszeiten per App verwalten möchten
   attention:
-    - "Nur für Trockenfutter mit 2 bis 18 Millimeter großen Kroketten"
-    - "Eine Portion entspricht ungefähr 20 Millilitern und ist nicht grammgenau"
-    - "Die Vakuumpumpe arbeitet im Batteriemodus nicht"
-    - "Keine Kamera und keine individuelle Tiererkennung"
-    - "Produktverfügbarkeit und Ersatzteilversorgung vor dem Kauf prüfen"
+    - Nur für Trockenfutter mit 2 bis 18 Millimeter großen Kroketten
+    - Eine Portion entspricht ungefähr 20 Millilitern und ist nicht grammgenau
+    - Die Vakuumpumpe arbeitet im Batteriemodus nicht
+    - Keine Kamera und keine individuelle Tiererkennung
+    - Produktverfügbarkeit und Ersatzteilversorgung vor dem Kauf prüfen
 review:
-  summary: "Der PETLIBRO Space Smart Feeder kombiniert zeitgesteuerte Trockenfutterausgabe mit einem automatisch vakuumierten Vorratsbehälter. Das unterscheidet ihn deutlich von vielen klassischen App-Futterautomaten. Die Lösung ist sinnvoll, wenn Futter über mehrere Tage möglichst gut gegen Luftfeuchtigkeit abgeschirmt werden soll. Weniger überzeugend ist der Space für Haushalte, die besonders kleine Portionen, eine Kamera, Mehrtiererkennung oder einen langen vollständigen Batteriebetrieb benötigen."
-  verdict: "Ein technisch eigenständiger Smart-Futterautomat mit überzeugender Frischhaltungs-Idee. Die Kaufentscheidung sollte aber vom passenden Krokettenformat, der relativ groben Portionseinheit und der aktuellen Verfügbarkeit abhängig gemacht werden."
+  summary: >-
+    Der PETLIBRO Space Smart Feeder kombiniert zeitgesteuerte Trockenfutterausgabe mit einem automatisch vakuumierten
+    Vorratsbehälter. Das unterscheidet ihn deutlich von vielen klassischen App-Futterautomaten. Die Lösung ist sinnvoll,
+    wenn Futter über mehrere Tage möglichst gut gegen Luftfeuchtigkeit abgeschirmt werden soll. Weniger überzeugend ist
+    der Space für Haushalte, die besonders kleine Portionen, eine Kamera, Mehrtiererkennung oder einen langen
+    vollständigen Batteriebetrieb benötigen.
+  verdict: >-
+    Ein technisch eigenständiger Smart-Futterautomat mit überzeugender Frischhaltungs-Idee. Die Kaufentscheidung sollte
+    aber vom passenden Krokettenformat, der relativ groben Portionseinheit und der aktuellen Verfügbarkeit abhängig
+    gemacht werden.
 strengths:
-  - "Automatische Vakuumversiegelung des Futterbehälters"
-  - "Trockenfutter bis 18 Millimeter Krokettengröße geeignet"
-  - "Unterschiedliche Portionsgrößen je Fütterung planbar"
-  - "App-Steuerung mit Zeitplänen und Benachrichtigungen"
-  - "Notstromversorgung mit vier D-Batterien möglich"
-  - "Futterstandserkennung vorhanden"
+  - Automatische Vakuumversiegelung des Futterbehälters
+  - Trockenfutter bis 18 Millimeter Krokettengröße geeignet
+  - Unterschiedliche Portionsgrößen je Fütterung planbar
+  - App-Steuerung mit Zeitplänen und Benachrichtigungen
+  - Notstromversorgung mit vier D-Batterien möglich
+  - Futterstandserkennung vorhanden
 weaknesses:
-  - "Nur für Trockenfutter geeignet"
-  - "Portionen werden volumetrisch und nicht nach Gewicht dosiert"
-  - "Vakuumfunktion ist bei Batteriebetrieb deaktiviert"
-  - "Keine Kamera integriert"
-  - "Keine RFID- oder Mikrochip-Erkennung"
-  - "Vorratsbehälter, Dichtung und Auslass benötigen regelmäßige Kontrolle"
+  - Nur für Trockenfutter geeignet
+  - Portionen werden volumetrisch und nicht nach Gewicht dosiert
+  - Vakuumfunktion ist bei Batteriebetrieb deaktiviert
+  - Keine Kamera integriert
+  - Keine RFID- oder Mikrochip-Erkennung
+  - Vorratsbehälter, Dichtung und Auslass benötigen regelmäßige Kontrolle
 alternatives:
-  - "petlibro-granary-smart-feeder"
-  - "petlibro-air-smart-feeder"
-  - "aqara-smart-pet-feeder-c1"
-  - "xiaomi-smart-pet-food-feeder-2"
+  - petlibro-granary-smart-feeder
+  - petlibro-air-smart-feeder
+  - aqara-smart-pet-feeder-c1
+  - xiaomi-smart-pet-food-feeder-2
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
-  foodType: ["dry"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
+  foodType:
+    - dry
 specs:
-  - label: "Portionierung"
-    value: "Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit"
-  - label: "Kapazität"
-    value: "8 Liter laut PLAF107-Handbuch"
-  - label: "Modell"
-    value: "PLAF107"
-  - label: "Futterart"
-    value: "Trockenfutter"
-  - label: "Krokettengröße"
-    value: "2 bis 18 mm"
-  - label: "Portionseinheit"
-    value: "ca. 20 ml je Portion"
-  - label: "Maximale Portionszahl"
-    value: "bis zu 50 Portionen je Mahlzeit"
-  - label: "Portionsgewicht"
-    value: "herstellerseitig ungefähr 10 g, abhängig von Form und Dichte des Futters"
-  - label: "App-Steuerung"
-    value: "Ja, über die PETLIBRO App"
-  - label: "Vakuumversiegelung"
-    value: "Ja, automatisch nach Fütterungen oder nach längerer Inaktivität"
-  - label: "Futterstandserkennung"
-    value: "Ja"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Tiererkennung"
-    value: "Nein"
-  - label: "Stromversorgung"
-    value: "Netzteil, vier D-Alkalibatterien als Backup möglich"
-  - label: "Batteriemodus"
-    value: "etwa drei Tage laut Hersteller; ohne Vakuumpumpe"
-  - label: "Netzteil"
-    value: "5 V / 2 A laut PETLIBRO Support"
-  - label: "Zeitsteuerung"
-    value: "Fütterungspläne und unterschiedliche Portionsgrößen per App"
-  - label: "Geeignet für"
-    value: "Katzen und kleine Hunde mit Trockenfutter"
-  - label: "Nicht geeignet für"
-    value: "Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten"
+  - label: Portionierung
+    value: Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit
+  - label: Kapazität
+    value: 8 Liter laut PLAF107-Handbuch
+  - label: Modell
+    value: PLAF107
+  - label: Futterart
+    value: Trockenfutter
+  - label: Krokettengröße
+    value: 2 bis 18 mm
+  - label: Portionseinheit
+    value: ca. 20 ml je Portion
+  - label: Maximale Portionszahl
+    value: bis zu 50 Portionen je Mahlzeit
+  - label: Portionsgewicht
+    value: herstellerseitig ungefähr 10 g, abhängig von Form und Dichte des Futters
+  - label: App-Steuerung
+    value: Ja, über die PETLIBRO App
+  - label: Vakuumversiegelung
+    value: Ja, automatisch nach Fütterungen oder nach längerer Inaktivität
+  - label: Futterstandserkennung
+    value: Ja
+  - label: Kamera
+    value: Nein
+  - label: Tiererkennung
+    value: Nein
+  - label: Stromversorgung
+    value: Netzteil, vier D-Alkalibatterien als Backup möglich
+  - label: Batteriemodus
+    value: etwa drei Tage laut Hersteller; ohne Vakuumpumpe
+  - label: Netzteil
+    value: 5 V / 2 A laut PETLIBRO Support
+  - label: Zeitsteuerung
+    value: Fütterungspläne und unterschiedliche Portionsgrößen per App
+  - label: Geeignet für
+    value: Katzen und kleine Hunde mit Trockenfutter
+  - label: Nicht geeignet für
+    value: Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten
 faq:
-  - question: "Was ist das Besondere am PETLIBRO Space Smart Feeder?"
-    answer: "Sein wesentliches Unterscheidungsmerkmal ist der vakuumierbare Vorratsbehälter. Der Automat entzieht dem Behälter nach einer Fütterung Luft und verschließt ihn wieder. Das soll Trockenfutter besser gegen Luft und Feuchtigkeit abschirmen als ein gewöhnlicher Deckel."
-  - question: "Ist der PETLIBRO Space für Nassfutter geeignet?"
-    answer: "Nein. PETLIBRO gibt das Modell ausschließlich für trockenes Futter frei. Nassfutter, halbfeuchtes Futter und Frischfutter können die Mechanik verschmutzen oder blockieren."
-  - question: "Welche Krokettengröße passt in den Automaten?"
-    answer: "Laut Hersteller sind Kroketten mit einem Durchmesser von etwa 2 bis 18 Millimetern vorgesehen. Entscheidend ist nicht nur der Durchmesser, sondern auch die Form. Sehr flache, klebrige oder stark unregelmäßige Stücke sollten vor längerer Abwesenheit getestet werden."
-  - question: "Wie groß ist eine Portion?"
-    answer: "Eine Portion entspricht laut PETLIBRO ungefähr 20 Millilitern beziehungsweise etwa einem Zwölftel Cup. Die häufig genannte Gewichtsangabe von ungefähr 10 Gramm ist nur ein Richtwert, weil unterschiedliche Futtersorten bei gleichem Volumen unterschiedlich schwer sind."
-  - question: "Dosiert der Space Smart Feeder grammgenau?"
-    answer: "Nein. Der Automat portioniert nach Volumen und Umdrehungen des Ausgabemechanismus, nicht mit einer Waage. Für eine kontrollierte Fütterung sollte die verwendete Futtersorte mehrfach ausgegeben und anschließend gewogen werden."
-  - question: "Wie viele Portionen sind pro Mahlzeit möglich?"
-    answer: "PETLIBRO nennt bis zu 50 Portionseinheiten pro Mahlzeit. Bei ungefähr 20 Millilitern je Einheit ist die theoretisch mögliche Menge hoch, für kleine Tiere sind aber meist deutlich kleinere Einstellungen sinnvoll."
-  - question: "Können Mahlzeiten unterschiedlich groß eingestellt werden?"
-    answer: "Ja. Die Portionszahl kann für einzelne Fütterungszeiten unterschiedlich festgelegt werden. Dadurch lassen sich beispielsweise morgens und abends größere sowie tagsüber kleinere Mahlzeiten planen."
-  - question: "Funktioniert der Automat bei Stromausfall?"
-    answer: "Mit vier eingesetzten D-Alkalibatterien kann der Automat geplante Ausgaben vorübergehend fortsetzen. PETLIBRO nennt für den Batteriemodus ungefähr drei Tage. Die Vakuumpumpe ist in diesem Modus jedoch deaktiviert."
-  - question: "Kann der PETLIBRO Space dauerhaft nur mit Batterien laufen?"
-    answer: "PETLIBRO beschreibt den Batteriebetrieb als Notfalllösung und empfiehlt den dauerhaften Netzbetrieb. Für einen kabellosen Dauerbetrieb ist das Modell deshalb nicht die passende Wahl."
-  - question: "Welche App wird benötigt?"
-    answer: "Der Automat wird mit der regulären PETLIBRO App verbunden. Die ältere PETLIBRO Lite App wird für dieses Modell laut Hersteller nicht unterstützt."
-  - question: "Was passiert bei einer instabilen WLAN-Verbindung?"
-    answer: "Die App-Verbindung und Benachrichtigungen können ausfallen. Bereits gespeicherte Fütterungspläne sollten lokal weiterlaufen, solange der Automat mit Strom versorgt ist. Vor einer Reise sollte dennoch geprüft werden, ob geplante Ausgaben auch bei getrenntem WLAN zuverlässig erfolgen."
-  - question: "Hat der Space Smart Feeder eine Kamera?"
-    answer: "Nein. Wer sehen möchte, ob das Tier tatsächlich gefressen hat, benötigt einen Automaten mit Kamera oder eine separate Innenraumkamera. Ein protokollierter Futterauswurf ist kein sicherer Fressnachweis."
-  - question: "Ist der Automat für mehrere Tiere geeignet?"
-    answer: "Er kann Futter für mehrere Tiere bereitstellen, unterscheidet aber nicht, welches Tier frisst. In Haushalten mit Futterneid, Diätfutter oder unterschiedlichen Rationen ist ein RFID- oder Mikrochip-System meist geeigneter."
-  - question: "Wie oft sollte der Automat gereinigt werden?"
-    answer: "Napf und erreichbare Futterreste sollten regelmäßig entfernt werden. Rotor, Auslass, Deckel und Dichtungsring benötigen ebenfalls Kontrollen, weil Krümel oder Fettablagerungen die Ausgabe und die Vakuumabdichtung beeinträchtigen können."
-  - question: "Für welche Tiere ist der PETLIBRO Space besonders geeignet?"
-    answer: "Am plausibelsten ist er für Katzen und kleine Hunde, die Trockenfutter in mehreren planbaren Mahlzeiten erhalten. Für große Hunde kann sowohl die Napfgröße als auch die volumetrische Portionierung weniger passend sein."
-  - question: "Worauf sollte man beim Gebrauchtkauf achten?"
-    answer: "Wichtig sind eine intakte Dichtung, eine funktionierende Vakuumpumpe, ein sauber schließender Auslass, die App-Kopplung sowie verfügbare Ersatzteile. Wegen der unklaren aktuellen Produktverfügbarkeit sollte die Ersatzteilversorgung vor dem Kauf geprüft werden."
-useCase: "Für Katzen und kleine Hunde, die Trockenfutter in planbaren Mahlzeiten erhalten und bei denen eine möglichst luftdichte Lagerung des Vorrats wichtiger ist als Kamera oder Tiererkennung."
-capacity: "Herstellerangabe in den geprüften offiziellen Supportquellen nicht eindeutig bestätigt"
-expandable: "Nicht vorgesehen"
+  - question: Was ist das Besondere am PETLIBRO Space Smart Feeder?
+    answer: >-
+      Sein wesentliches Unterscheidungsmerkmal ist der vakuumierbare Vorratsbehälter. Der Automat entzieht dem Behälter
+      nach einer Fütterung Luft und verschließt ihn wieder. Das soll Trockenfutter besser gegen Luft und Feuchtigkeit
+      abschirmen als ein gewöhnlicher Deckel.
+  - question: Ist der PETLIBRO Space für Nassfutter geeignet?
+    answer: >-
+      Nein. PETLIBRO gibt das Modell ausschließlich für trockenes Futter frei. Nassfutter, halbfeuchtes Futter und
+      Frischfutter können die Mechanik verschmutzen oder blockieren.
+  - question: Welche Krokettengröße passt in den Automaten?
+    answer: >-
+      Laut Hersteller sind Kroketten mit einem Durchmesser von etwa 2 bis 18 Millimetern vorgesehen. Entscheidend ist
+      nicht nur der Durchmesser, sondern auch die Form. Sehr flache, klebrige oder stark unregelmäßige Stücke sollten
+      vor längerer Abwesenheit getestet werden.
+  - question: Wie groß ist eine Portion?
+    answer: >-
+      Eine Portion entspricht laut PETLIBRO ungefähr 20 Millilitern beziehungsweise etwa einem Zwölftel Cup. Die häufig
+      genannte Gewichtsangabe von ungefähr 10 Gramm ist nur ein Richtwert, weil unterschiedliche Futtersorten bei
+      gleichem Volumen unterschiedlich schwer sind.
+  - question: Dosiert der Space Smart Feeder grammgenau?
+    answer: >-
+      Nein. Der Automat portioniert nach Volumen und Umdrehungen des Ausgabemechanismus, nicht mit einer Waage. Für eine
+      kontrollierte Fütterung sollte die verwendete Futtersorte mehrfach ausgegeben und anschließend gewogen werden.
+  - question: Wie viele Portionen sind pro Mahlzeit möglich?
+    answer: >-
+      PETLIBRO nennt bis zu 50 Portionseinheiten pro Mahlzeit. Bei ungefähr 20 Millilitern je Einheit ist die
+      theoretisch mögliche Menge hoch, für kleine Tiere sind aber meist deutlich kleinere Einstellungen sinnvoll.
+  - question: Können Mahlzeiten unterschiedlich groß eingestellt werden?
+    answer: >-
+      Ja. Die Portionszahl kann für einzelne Fütterungszeiten unterschiedlich festgelegt werden. Dadurch lassen sich
+      beispielsweise morgens und abends größere sowie tagsüber kleinere Mahlzeiten planen.
+  - question: Funktioniert der Automat bei Stromausfall?
+    answer: >-
+      Mit vier eingesetzten D-Alkalibatterien kann der Automat geplante Ausgaben vorübergehend fortsetzen. PETLIBRO
+      nennt für den Batteriemodus ungefähr drei Tage. Die Vakuumpumpe ist in diesem Modus jedoch deaktiviert.
+  - question: Kann der PETLIBRO Space dauerhaft nur mit Batterien laufen?
+    answer: >-
+      PETLIBRO beschreibt den Batteriebetrieb als Notfalllösung und empfiehlt den dauerhaften Netzbetrieb. Für einen
+      kabellosen Dauerbetrieb ist das Modell deshalb nicht die passende Wahl.
+  - question: Welche App wird benötigt?
+    answer: >-
+      Der Automat wird mit der regulären PETLIBRO App verbunden. Die ältere PETLIBRO Lite App wird für dieses Modell
+      laut Hersteller nicht unterstützt.
+  - question: Was passiert bei einer instabilen WLAN-Verbindung?
+    answer: >-
+      Die App-Verbindung und Benachrichtigungen können ausfallen. Bereits gespeicherte Fütterungspläne sollten lokal
+      weiterlaufen, solange der Automat mit Strom versorgt ist. Vor einer Reise sollte dennoch geprüft werden, ob
+      geplante Ausgaben auch bei getrenntem WLAN zuverlässig erfolgen.
+  - question: Hat der Space Smart Feeder eine Kamera?
+    answer: >-
+      Nein. Wer sehen möchte, ob das Tier tatsächlich gefressen hat, benötigt einen Automaten mit Kamera oder eine
+      separate Innenraumkamera. Ein protokollierter Futterauswurf ist kein sicherer Fressnachweis.
+  - question: Ist der Automat für mehrere Tiere geeignet?
+    answer: >-
+      Er kann Futter für mehrere Tiere bereitstellen, unterscheidet aber nicht, welches Tier frisst. In Haushalten mit
+      Futterneid, Diätfutter oder unterschiedlichen Rationen ist ein RFID- oder Mikrochip-System meist geeigneter.
+  - question: Wie oft sollte der Automat gereinigt werden?
+    answer: >-
+      Napf und erreichbare Futterreste sollten regelmäßig entfernt werden. Rotor, Auslass, Deckel und Dichtungsring
+      benötigen ebenfalls Kontrollen, weil Krümel oder Fettablagerungen die Ausgabe und die Vakuumabdichtung
+      beeinträchtigen können.
+  - question: Für welche Tiere ist der PETLIBRO Space besonders geeignet?
+    answer: >-
+      Am plausibelsten ist er für Katzen und kleine Hunde, die Trockenfutter in mehreren planbaren Mahlzeiten erhalten.
+      Für große Hunde kann sowohl die Napfgröße als auch die volumetrische Portionierung weniger passend sein.
+  - question: Worauf sollte man beim Gebrauchtkauf achten?
+    answer: >-
+      Wichtig sind eine intakte Dichtung, eine funktionierende Vakuumpumpe, ein sauber schließender Auslass, die
+      App-Kopplung sowie verfügbare Ersatzteile. Wegen der unklaren aktuellen Produktverfügbarkeit sollte die
+      Ersatzteilversorgung vor dem Kauf geprüft werden.
+useCase: >-
+  Für Katzen und kleine Hunde, die Trockenfutter in planbaren Mahlzeiten erhalten und bei denen eine möglichst
+  luftdichte Lagerung des Vorrats wichtiger ist als Kamera oder Tiererkennung.
+capacity: Herstellerangabe in den geprüften offiziellen Supportquellen nicht eindeutig bestätigt
+expandable: Nicht vorgesehen
 features:
-  - "Automatische Vakuumversiegelung"
-  - "Fütterungspläne über die PETLIBRO App"
-  - "Bis zu 50 Portionseinheiten je Mahlzeit"
-  - "Futterstandserkennung"
-  - "Notstrombetrieb mit vier D-Batterien"
-  - "Manuelle Futterausgabe"
+  - Automatische Vakuumversiegelung
+  - Fütterungspläne über die PETLIBRO App
+  - Bis zu 50 Portionseinheiten je Mahlzeit
+  - Futterstandserkennung
+  - Notstrombetrieb mit vier D-Batterien
+  - Manuelle Futterausgabe
 comparisonData:
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType:
-      - "dry"
+      - dry
   editorial:
     rating: 4.2
     score: 84
-    productStatus: "unknown"
+    productStatus: unknown
+  custom:
+    portionierung: Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit
+    kapazitat: 8 Liter laut PLAF107-Handbuch
+    modell: PLAF107
+    futterart: Trockenfutter
+    krokettengrosse: 2 bis 18 mm
+    portionseinheit: ca. 20 ml je Portion
+    maximale_portionszahl: bis zu 50 Portionen je Mahlzeit
+    portionsgewicht: herstellerseitig ungefähr 10 g, abhängig von Form und Dichte des Futters
+    app_steuerung: Ja, über die PETLIBRO App
+    vakuumversiegelung: Ja, automatisch nach Fütterungen oder nach längerer Inaktivität
+    futterstandserkennung: Ja
+    kamera: Nein
+    tiererkennung: Nein
+    stromversorgung: Netzteil, vier D-Alkalibatterien als Backup möglich
+    batteriemodus: etwa drei Tage laut Hersteller; ohne Vakuumpumpe
+    netzteil: 5 V / 2 A laut PETLIBRO Support
+    zeitsteuerung: Fütterungspläne und unterschiedliche Portionsgrößen per App
+    geeignet_fur: Katzen und kleine Hunde mit Trockenfutter
+    nicht_geeignet_fur: Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung
 
 Der PETLIBRO Space Smart Feeder verfolgt einen anderen Schwerpunkt als die meisten App-Futterautomaten. Er ergänzt die zeitgesteuerte Ausgabe von Trockenfutter um einen Vorratsbehälter, der nach dem Füttern automatisch wieder vakuumiert wird.

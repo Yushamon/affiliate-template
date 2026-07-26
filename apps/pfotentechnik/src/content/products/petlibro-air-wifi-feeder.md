@@ -1,67 +1,71 @@
 ---
-title: "PETLIBRO Air WiFi Feeder"
-slug: "petlibro-air-wifi-feeder"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "active"
-description: "Kompakter 2-Liter-Trockenfutterautomat mit PETLIBRO-App, 5.200-mAh-Akku, bis zu zehn Mahlzeiten und Edelstahl-Napf."
-recommendation: "Sehr gute kompakte App-Lösung für eine Katze oder einen kleinen Hund, wenn kabellose Aufstellung, ein integrierter Langzeitakku und zuverlässige Zeitpläne wichtiger sind als Kamera, Sprachausgabe oder großer Vorrat."
+title: PETLIBRO Air WiFi Feeder
+slug: petlibro-air-wifi-feeder
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: active
+description: Kompakter 2-Liter-Trockenfutterautomat mit PETLIBRO-App, 5.200-mAh-Akku, bis zu zehn Mahlzeiten und Edelstahl-Napf.
+recommendation: >-
+  Sehr gute kompakte App-Lösung für eine Katze oder einen kleinen Hund, wenn kabellose Aufstellung, ein integrierter
+  Langzeitakku und zuverlässige Zeitpläne wichtiger sind als Kamera, Sprachausgabe oder großer Vorrat.
 manufacturer:
-  key: "petlibro"
-  name: "PETLIBRO"
-  slug: "petlibro"
+  key: petlibro
+  name: PETLIBRO
+  slug: petlibro
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-air-wifi-feeder/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/petlibro-air-wifi-feeder/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-23"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "PETLIBRO Air WiFi Feeder im Check"
-  description: "PETLIBRO Air WiFi Feeder PLAF108 mit 2 Litern, App, 5.200-mAh-Akku, zehn Mahlzeiten, 16 Portionen und Edelstahl-Napf."
-  canonical: "/produkt/petlibro-air-wifi-feeder/"
+  title: PETLIBRO Air WiFi Feeder im Check
+  description: >-
+    PETLIBRO Air WiFi Feeder PLAF108 mit 2 Litern, App, 5.200-mAh-Akku, zehn Mahlzeiten, 16 Portionen und
+    Edelstahl-Napf.
+  canonical: /produkt/petlibro-air-wifi-feeder/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "app"
-  - "trockenfutter"
-  - "akku"
-  - "kabellos"
-  - "kompakt"
-  - "portionierung"
+  - katze
+  - kleiner-hund
+  - app
+  - trockenfutter
+  - akku
+  - kabellos
+  - kompakt
+  - portionierung
 images:
   hero:
-    src: "../../assets/images/products/petlibro-air-wifi-feeder/hero.webp"
-    alt: "PETLIBRO Air WiFi Feeder PLAF108 mit kompaktem 2-Liter-Behälter und Edelstahl-Napf"
+    src: ../../assets/images/products/petlibro-air-wifi-feeder/hero.webp
+    alt: PETLIBRO Air WiFi Feeder PLAF108 mit kompaktem 2-Liter-Behälter und Edelstahl-Napf
   thumbnail:
-    src: "../../assets/images/products/petlibro-air-wifi-feeder/thumbnail.webp"
-    alt: "PETLIBRO Air WiFi Feeder in kompakter Produktansicht"
+    src: ../../assets/images/products/petlibro-air-wifi-feeder/thumbnail.webp
+    alt: PETLIBRO Air WiFi Feeder in kompakter Produktansicht
   comparison:
-    src: "../../assets/images/products/petlibro-air-wifi-feeder/comparison.webp"
-    alt: "PETLIBRO Air WiFi Feeder im Vergleich kompakter Futterautomaten"
+    src: ../../assets/images/products/petlibro-air-wifi-feeder/comparison.webp
+    alt: PETLIBRO Air WiFi Feeder im Vergleich kompakter Futterautomaten
   gallery:
-    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-1.webp"
-      alt: "Futterbehälter und verriegelter Deckel des PETLIBRO Air WiFi Feeder"
-    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-2.webp"
-      alt: "Edelstahl-Napf und Ausgabeschacht des PETLIBRO Air WiFi Feeder"
-    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-3.webp"
-      alt: "Zerlegbare Komponenten des PETLIBRO Air WiFi Feeder"
-    - src: "../../assets/images/products/petlibro-air-wifi-feeder/gallery-4.webp"
-      alt: "PETLIBRO Air WiFi Feeder an einem Futterplatz für eine Katze"
+    - src: ../../assets/images/products/petlibro-air-wifi-feeder/gallery-1.webp
+      alt: Futterbehälter und verriegelter Deckel des PETLIBRO Air WiFi Feeder
+    - src: ../../assets/images/products/petlibro-air-wifi-feeder/gallery-2.webp
+      alt: Edelstahl-Napf und Ausgabeschacht des PETLIBRO Air WiFi Feeder
+    - src: ../../assets/images/products/petlibro-air-wifi-feeder/gallery-3.webp
+      alt: Zerlegbare Komponenten des PETLIBRO Air WiFi Feeder
+    - src: ../../assets/images/products/petlibro-air-wifi-feeder/gallery-4.webp
+      alt: PETLIBRO Air WiFi Feeder an einem Futterplatz für eine Katze
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/3TgbOma"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://amzn.to/3TgbOma
 rating: 4.2
 score: 84
 ratings:
@@ -74,197 +78,289 @@ ratings:
   preisleistung: 4.2
 decision:
   bestFor:
-    - "eine Katze"
-    - "kleine Hunde"
-    - "kabellose Aufstellung ohne dauerhafte Steckdose"
-    - "bis zu zehn kleine Trockenfuttermahlzeiten pro Tag"
+    - eine Katze
+    - kleine Hunde
+    - kabellose Aufstellung ohne dauerhafte Steckdose
+    - bis zu zehn kleine Trockenfuttermahlzeiten pro Tag
   attention:
-    - "nur zwei Liter Vorrat"
-    - "nur 2,4-GHz-WLAN"
-    - "keine Kamera, Sprachausgabe oder Tiererkennung"
-    - "fest verbauter und nicht austauschbarer Akku"
-    - "kein dedizierter Sensor direkt im Futterauslass"
-    - "Portionen sind Volumenwerte und keine gewogenen Grammangaben"
+    - nur zwei Liter Vorrat
+    - nur 2,4-GHz-WLAN
+    - keine Kamera, Sprachausgabe oder Tiererkennung
+    - fest verbauter und nicht austauschbarer Akku
+    - kein dedizierter Sensor direkt im Futterauslass
+    - Portionen sind Volumenwerte und keine gewogenen Grammangaben
 review:
-  summary: "Der Air WiFi Feeder PLAF108 kombiniert einen kompakten 2-Liter-Behälter mit PETLIBRO-App, integriertem 5.200-mAh-Akku, bis zu zehn Mahlzeiten und 16 Portionseinheiten pro Ausgabe."
-  verdict: "Einer der überzeugendsten kompakten App-Automaten für einzelne Katzen. Der eingebaute Akku und die schlanke Bauform heben ihn von klassischen Netzgeräten ab. Kleine Kapazität, 2,4-GHz-WLAN und fehlender Fressnachweis begrenzen den Einsatz."
+  summary: >-
+    Der Air WiFi Feeder PLAF108 kombiniert einen kompakten 2-Liter-Behälter mit PETLIBRO-App, integriertem
+    5.200-mAh-Akku, bis zu zehn Mahlzeiten und 16 Portionseinheiten pro Ausgabe.
+  verdict: >-
+    Einer der überzeugendsten kompakten App-Automaten für einzelne Katzen. Der eingebaute Akku und die schlanke Bauform
+    heben ihn von klassischen Netzgeräten ab. Kleine Kapazität, 2,4-GHz-WLAN und fehlender Fressnachweis begrenzen den
+    Einsatz.
 strengths:
-  - "integrierter 5.200-mAh-Akku"
-  - "bis zu 30 Tage Akkulaufzeit laut Hersteller"
-  - "kabelloser Betrieb mit weiterhin aktiver WLAN-Verbindung"
-  - "bis zu zehn Mahlzeiten täglich"
-  - "bis zu 16 Portionseinheiten pro Mahlzeit"
-  - "PETLIBRO-App mit Zeitplänen und Fütterungsprotokollen"
-  - "Warnungen bei niedrigem Futter- und Akkustand"
-  - "Zugriff für bis zu fünf App-Nutzer"
-  - "Edelstahl-Napf"
-  - "kompakte Stellfläche"
-  - "verschlossener Rotor gegen Auslaufen und Schädlinge"
-  - "gespeicherte Zeitpläne laufen bei Internetausfall weiter"
+  - integrierter 5.200-mAh-Akku
+  - bis zu 30 Tage Akkulaufzeit laut Hersteller
+  - kabelloser Betrieb mit weiterhin aktiver WLAN-Verbindung
+  - bis zu zehn Mahlzeiten täglich
+  - bis zu 16 Portionseinheiten pro Mahlzeit
+  - PETLIBRO-App mit Zeitplänen und Fütterungsprotokollen
+  - Warnungen bei niedrigem Futter- und Akkustand
+  - Zugriff für bis zu fünf App-Nutzer
+  - Edelstahl-Napf
+  - kompakte Stellfläche
+  - verschlossener Rotor gegen Auslaufen und Schädlinge
+  - gespeicherte Zeitpläne laufen bei Internetausfall weiter
 weaknesses:
-  - "nur zwei Liter Kapazität"
-  - "fest eingebauter Akku nicht vom Nutzer austauschbar"
-  - "ungefähr acht Stunden Ladezeit"
-  - "keine Kamera oder individuelle Tiererkennung"
-  - "kein Lautsprecher und keine Mahlzeitenansage"
-  - "keine grammgenaue Waage"
-  - "kein dedizierter Auslass-Blockiersensor"
-  - "nur der Edelstahl-Napf ist spülmaschinengeeignet"
-  - "Trockenmittel verursacht Verbrauchskosten"
+  - nur zwei Liter Kapazität
+  - fest eingebauter Akku nicht vom Nutzer austauschbar
+  - ungefähr acht Stunden Ladezeit
+  - keine Kamera oder individuelle Tiererkennung
+  - kein Lautsprecher und keine Mahlzeitenansage
+  - keine grammgenaue Waage
+  - kein dedizierter Auslass-Blockiersensor
+  - nur der Edelstahl-Napf ist spülmaschinengeeignet
+  - Trockenmittel verursacht Verbrauchskosten
 experience:
-  summary: "Unabhängige Produkttests loben besonders die Kombination aus kompaktem Design, App-Bedienung und langer Akkulaufzeit. Die wichtigsten Praxisgrenzen sind der kleine Vorrat und die Abhängigkeit von stabiler 2,4-GHz-WLAN-Abdeckung für App-Funktionen."
+  summary: >-
+    Unabhängige Produkttests loben besonders die Kombination aus kompaktem Design, App-Bedienung und langer
+    Akkulaufzeit. Die wichtigsten Praxisgrenzen sind der kleine Vorrat und die Abhängigkeit von stabiler
+    2,4-GHz-WLAN-Abdeckung für App-Funktionen.
   positives:
-    - "Zeitpläne und Portionen lassen sich übersichtlich in der App verwalten"
-    - "lange Akkulaufzeit ermöglicht eine freie Standortwahl"
-    - "mehrere Familienmitglieder können Zugriff auf denselben Automaten erhalten"
-    - "Edelstahl-Napf und zerlegbare Teile erleichtern die Reinigung"
+    - Zeitpläne und Portionen lassen sich übersichtlich in der App verwalten
+    - lange Akkulaufzeit ermöglicht eine freie Standortwahl
+    - mehrere Familienmitglieder können Zugriff auf denselben Automaten erhalten
+    - Edelstahl-Napf und zerlegbare Teile erleichtern die Reinigung
   criticism:
-    - "Herstellerwert von 30 Tagen hängt von WLAN-Signal, Zahl der Ausgaben und Akkuzustand ab"
-    - "zwei Liter reichen bei mehreren Tieren oder großem Tagesbedarf nur kurz"
-    - "eine protokollierte Ausgabe bestätigt nicht, dass das gewünschte Tier gefressen hat"
-    - "bei schwachem WLAN kann der Akku schneller entladen werden"
-  methodology: "Redaktionelle Einordnung anhand der aktuellen PETLIBRO-Produktseite, der offiziellen Support- und Modellinformationen sowie eines unabhängigen Vergleichstests mit realen Katzen; kein eigener Langzeit-, Akku-, App-, Portionierungs- oder Ausfallsicherheitstest."
-  maintenance: "Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig trocknen, bevor neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei Wochen wechseln und den Akku regelmäßig vollständig laden."
+    - Herstellerwert von 30 Tagen hängt von WLAN-Signal, Zahl der Ausgaben und Akkuzustand ab
+    - zwei Liter reichen bei mehreren Tieren oder großem Tagesbedarf nur kurz
+    - eine protokollierte Ausgabe bestätigt nicht, dass das gewünschte Tier gefressen hat
+    - bei schwachem WLAN kann der Akku schneller entladen werden
+  methodology: >-
+    Redaktionelle Einordnung anhand der aktuellen PETLIBRO-Produktseite, der offiziellen Support- und
+    Modellinformationen sowie eines unabhängigen Vergleichstests mit realen Katzen; kein eigener Langzeit-, Akku-, App-,
+    Portionierungs- oder Ausfallsicherheitstest.
+  maintenance: >-
+    Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig trocknen, bevor
+    neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei Wochen
+    wechseln und den Akku regelmäßig vollständig laden.
 alternatives:
-  - "petlibro-air-automatic-feeder"
-  - "petkit-fresh-element-solo"
-  - "petlibro-granary-wifi-feeder"
+  - petlibro-air-automatic-feeder
+  - petkit-fresh-element-solo
+  - petlibro-granary-wifi-feeder
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-hunde"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-hunde
 comparisonFilters:
-  animal: ["dog", "cat"]
-  petSize: ["small"]
-  foodType: ["dry"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
+  foodType:
+    - dry
 features:
-  - "2-Liter-Behälter"
-  - "5.200-mAh-Akku"
-  - "Bis zu zehn Mahlzeiten"
-  - "PETLIBRO-App"
-  - "Edelstahl-Napf"
-  - "Niedrigfutterwarnung"
-  - "Kabelloser Betrieb"
-priceCategory: "midrange"
-useCase: "App-gesteuerte Trockenfütterung für eine Katze oder einen kleinen Hund mit flexibel wählbarem Standort"
-capacity: "2 Liter"
-expandable: "Trockenmittelbeutel als Verbrauchsmaterial; kein Kamera- oder RFID-Modul nachrüstbar"
+  - 2-Liter-Behälter
+  - 5.200-mAh-Akku
+  - Bis zu zehn Mahlzeiten
+  - PETLIBRO-App
+  - Edelstahl-Napf
+  - Niedrigfutterwarnung
+  - Kabelloser Betrieb
+priceCategory: midrange
+useCase: App-gesteuerte Trockenfütterung für eine Katze oder einen kleinen Hund mit flexibel wählbarem Standort
+capacity: 2 Liter
+expandable: Trockenmittelbeutel als Verbrauchsmaterial; kein Kamera- oder RFID-Modul nachrüstbar
 specs:
-  - label: "Modell"
-    value: "PLAF108 / AF108"
-  - label: "Produkttyp"
-    value: "App-gesteuerter Trockenfutterautomat mit integriertem Akku"
-  - label: "Futterart"
-    value: "Trockenfutter"
-  - label: "Krokettengröße"
-    value: "2 bis 15 mm"
-  - label: "Kapazität"
-    value: "2 Liter"
-  - label: "Mahlzeiten pro Tag"
-    value: "1 bis 10"
-  - label: "Portionen je Mahlzeit"
-    value: "1 bis 16 Portionseinheiten"
-  - label: "Volumen je Portion"
-    value: "10,4 ml beziehungsweise 1/24 Cup"
-  - label: "Maximale nominelle Mahlzeit"
-    value: "etwa 166 ml beziehungsweise 2/3 Cup"
-  - label: "Portionsgewicht"
-    value: "nicht fest; abhängig von Form, Größe und Dichte des Futters"
-  - label: "App"
-    value: "PETLIBRO-App, nicht PETLIBRO Lite"
-  - label: "Zeitpläne"
-    value: "über die App planbar"
-  - label: "Fernfütterung"
-    value: "Ja"
-  - label: "Fütterungsprotokoll"
-    value: "Echtzeit-Ausgabeprotokolle; kein sicherer Fressnachweis"
-  - label: "App-Nutzer"
-    value: "Zugriff für bis zu fünf Nutzer laut Hersteller"
-  - label: "Warnungen"
-    value: "niedriger Futterstand, niedriger Akkustand und Gerätestatus"
-  - label: "WLAN"
-    value: "2,4 GHz"
-  - label: "5-GHz-WLAN"
-    value: "Nein"
-  - label: "Offline-Betrieb"
-    value: "gespeicherte Zeitpläne laufen ohne Internet weiter"
-  - label: "Offline-Protokolle"
-    value: "werden während der Unterbrechung nicht live übertragen und nach Wiederverbindung aktualisiert"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Mikrofon und Lautsprecher"
-    value: "Nein; keine Mahlzeitenansage"
-  - label: "Tiererkennung"
-    value: "Nein"
-  - label: "Auslasssensor"
-    value: "kein dedizierter Outlet-blocked-Sensor laut PETLIBRO"
-  - label: "Niedrigfuttersensor"
-    value: "optischer Sensor mit App-Warnung"
-  - label: "Akku"
-    value: "integrierter Lithium-Ionen-Akku mit 5.200 mAh"
-  - label: "Akkulaufzeit"
-    value: "Herstellerangabe bis zu 30 Tage"
-  - label: "Ladezeit"
-    value: "ungefähr 8 Stunden"
-  - label: "Akkutausch"
-    value: "nicht vom Nutzer austauschbar"
-  - label: "Netzbetrieb"
-    value: "5 V/1 A; dauerhafte Verbindung laut Hersteller möglich"
-  - label: "Napf"
-    value: "Edelstahl"
-  - label: "Spülmaschine"
-    value: "nur der Edelstahl-Napf ist laut PETLIBRO spülmaschinengeeignet"
-  - label: "Material"
-    value: "BPA-freier Kunststoff und Edelstahl-Napf"
-  - label: "Frischhaltesystem"
-    value: "Rotorverschluss, Deckeldichtung und Trockenmittelfach"
-  - label: "Trockenmittelwechsel"
-    value: "Herstellerempfehlung ungefähr alle zwei Wochen"
-  - label: "Abmessungen"
-    value: "310 × 265 × 180 mm"
-  - label: "Gewicht"
-    value: "1,3 kg"
-  - label: "Lieferumfang"
-    value: "Futterautomat, Edelstahl-Napf, Napfhalter, Kabel, Netzadapter, Kurz- und Bedienungsanleitung"
-  - label: "Geeignet für"
-    value: "Katzen und kleine Hunde"
+  - label: Modell
+    value: PLAF108 / AF108
+  - label: Produkttyp
+    value: App-gesteuerter Trockenfutterautomat mit integriertem Akku
+  - label: Futterart
+    value: Trockenfutter
+  - label: Krokettengröße
+    value: 2 bis 15 mm
+  - label: Kapazität
+    value: 2 Liter
+  - label: Mahlzeiten pro Tag
+    value: 1 bis 10
+  - label: Portionen je Mahlzeit
+    value: 1 bis 16 Portionseinheiten
+  - label: Volumen je Portion
+    value: 10,4 ml beziehungsweise 1/24 Cup
+  - label: Maximale nominelle Mahlzeit
+    value: etwa 166 ml beziehungsweise 2/3 Cup
+  - label: Portionsgewicht
+    value: nicht fest; abhängig von Form, Größe und Dichte des Futters
+  - label: App
+    value: PETLIBRO-App, nicht PETLIBRO Lite
+  - label: Zeitpläne
+    value: über die App planbar
+  - label: Fernfütterung
+    value: Ja
+  - label: Fütterungsprotokoll
+    value: Echtzeit-Ausgabeprotokolle; kein sicherer Fressnachweis
+  - label: App-Nutzer
+    value: Zugriff für bis zu fünf Nutzer laut Hersteller
+  - label: Warnungen
+    value: niedriger Futterstand, niedriger Akkustand und Gerätestatus
+  - label: WLAN
+    value: 2,4 GHz
+  - label: 5-GHz-WLAN
+    value: Nein
+  - label: Offline-Betrieb
+    value: gespeicherte Zeitpläne laufen ohne Internet weiter
+  - label: Offline-Protokolle
+    value: werden während der Unterbrechung nicht live übertragen und nach Wiederverbindung aktualisiert
+  - label: Kamera
+    value: Nein
+  - label: Mikrofon und Lautsprecher
+    value: Nein; keine Mahlzeitenansage
+  - label: Tiererkennung
+    value: Nein
+  - label: Auslasssensor
+    value: kein dedizierter Outlet-blocked-Sensor laut PETLIBRO
+  - label: Niedrigfuttersensor
+    value: optischer Sensor mit App-Warnung
+  - label: Akku
+    value: integrierter Lithium-Ionen-Akku mit 5.200 mAh
+  - label: Akkulaufzeit
+    value: Herstellerangabe bis zu 30 Tage
+  - label: Ladezeit
+    value: ungefähr 8 Stunden
+  - label: Akkutausch
+    value: nicht vom Nutzer austauschbar
+  - label: Netzbetrieb
+    value: 5 V/1 A; dauerhafte Verbindung laut Hersteller möglich
+  - label: Napf
+    value: Edelstahl
+  - label: Spülmaschine
+    value: nur der Edelstahl-Napf ist laut PETLIBRO spülmaschinengeeignet
+  - label: Material
+    value: BPA-freier Kunststoff und Edelstahl-Napf
+  - label: Frischhaltesystem
+    value: Rotorverschluss, Deckeldichtung und Trockenmittelfach
+  - label: Trockenmittelwechsel
+    value: Herstellerempfehlung ungefähr alle zwei Wochen
+  - label: Abmessungen
+    value: 310 × 265 × 180 mm
+  - label: Gewicht
+    value: 1,3 kg
+  - label: Lieferumfang
+    value: Futterautomat, Edelstahl-Napf, Napfhalter, Kabel, Netzadapter, Kurz- und Bedienungsanleitung
+  - label: Geeignet für
+    value: Katzen und kleine Hunde
+  - label: Reinigung
+    value: >-
+      Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig trocknen, bevor
+      neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei
+      Wochen wechseln und den Akku regelmäßig vollständig laden.
 faq:
-  - question: "Was ist der Unterschied zwischen PETLIBRO Air WiFi und Air Automatic?"
-    answer: "Der Air WiFi Feeder trägt die Modellnummer PLAF108 und wird über die PETLIBRO-App gesteuert. Der ähnlich aussehende Air Automatic PLAF008 arbeitet ohne WLAN und App. Beim Kauf sollte deshalb die Modellnummer geprüft werden."
-  - question: "Wie viele Mahlzeiten kann der Air WiFi Feeder ausgeben?"
-    answer: "Bis zu zehn Mahlzeiten oder Snacks pro Tag lassen sich planen. Pro Mahlzeit sind ein bis 16 Portionseinheiten möglich."
-  - question: "Wie groß ist eine Portion?"
-    answer: "Eine Portion entspricht ungefähr 10,4 ml beziehungsweise 1/24 Cup. Das tatsächliche Gewicht hängt vom verwendeten Trockenfutter ab und sollte durch Wiegen kalibriert werden."
-  - question: "Wie lange hält der Akku?"
-    answer: "PETLIBRO bewirbt bis zu 30 Tage mit dem integrierten 5.200-mAh-Akku. WLAN-Signal, Zahl der täglichen Ausgaben, Akkualter und Umgebungstemperatur beeinflussen die reale Laufzeit."
-  - question: "Wie lange dauert das Aufladen?"
-    answer: "PETLIBRO nennt ungefähr acht Stunden bis zur vollständigen Ladung. Der Akku kann laut Hersteller dauerhaft am Netz bleiben und dient dann als Backup."
-  - question: "Funktioniert der Automat ohne WLAN?"
-    answer: "Bereits gespeicherte Fütterungspläne laufen bei vorübergehendem Internetausfall weiter, sofern Netzstrom oder Akku vorhanden sind. App-Steuerung und Live-Protokolle stehen währenddessen nicht zur Verfügung."
-  - question: "Braucht man ein PETLIBRO-Abonnement?"
-    answer: "Nein. Die grundlegenden Fütterungsfunktionen benötigen kein kostenpflichtiges Abonnement. PETLIBRO PetCare ist optional und kann in der App übersprungen werden."
-  - question: "Kann eine Sprachansage aufgenommen werden?"
-    answer: "Nein. Der Air Smart Feeder besitzt weder Mikrofon noch Lautsprecher und unterstützt daher keine Mahlzeitenansage oder Zwei-Wege-Audio."
-  - question: "Dürfen die Teile in die Spülmaschine?"
-    answer: "Laut PETLIBRO ist nur der Edelstahl-Napf spülmaschinengeeignet. Behälter, Rotor, Halter und elektrische Basis sollten entsprechend der Anleitung von Hand gereinigt werden."
-  - question: "Ist der Air WiFi Feeder für zwei Katzen geeignet?"
-    answer: "Der Vorrat kann für zwei Katzen ausreichen, aber es gibt nur einen Napf und keine Tiererkennung. Eine dominante Katze kann die Portion der anderen fressen. Für getrennte Diäten ist ein RFID- oder Mikrochip-System besser geeignet."
+  - question: Was ist der Unterschied zwischen PETLIBRO Air WiFi und Air Automatic?
+    answer: >-
+      Der Air WiFi Feeder trägt die Modellnummer PLAF108 und wird über die PETLIBRO-App gesteuert. Der ähnlich
+      aussehende Air Automatic PLAF008 arbeitet ohne WLAN und App. Beim Kauf sollte deshalb die Modellnummer geprüft
+      werden.
+  - question: Wie viele Mahlzeiten kann der Air WiFi Feeder ausgeben?
+    answer: >-
+      Bis zu zehn Mahlzeiten oder Snacks pro Tag lassen sich planen. Pro Mahlzeit sind ein bis 16 Portionseinheiten
+      möglich.
+  - question: Wie groß ist eine Portion?
+    answer: >-
+      Eine Portion entspricht ungefähr 10,4 ml beziehungsweise 1/24 Cup. Das tatsächliche Gewicht hängt vom verwendeten
+      Trockenfutter ab und sollte durch Wiegen kalibriert werden.
+  - question: Wie lange hält der Akku?
+    answer: >-
+      PETLIBRO bewirbt bis zu 30 Tage mit dem integrierten 5.200-mAh-Akku. WLAN-Signal, Zahl der täglichen Ausgaben,
+      Akkualter und Umgebungstemperatur beeinflussen die reale Laufzeit.
+  - question: Wie lange dauert das Aufladen?
+    answer: >-
+      PETLIBRO nennt ungefähr acht Stunden bis zur vollständigen Ladung. Der Akku kann laut Hersteller dauerhaft am Netz
+      bleiben und dient dann als Backup.
+  - question: Funktioniert der Automat ohne WLAN?
+    answer: >-
+      Bereits gespeicherte Fütterungspläne laufen bei vorübergehendem Internetausfall weiter, sofern Netzstrom oder Akku
+      vorhanden sind. App-Steuerung und Live-Protokolle stehen währenddessen nicht zur Verfügung.
+  - question: Braucht man ein PETLIBRO-Abonnement?
+    answer: >-
+      Nein. Die grundlegenden Fütterungsfunktionen benötigen kein kostenpflichtiges Abonnement. PETLIBRO PetCare ist
+      optional und kann in der App übersprungen werden.
+  - question: Kann eine Sprachansage aufgenommen werden?
+    answer: >-
+      Nein. Der Air Smart Feeder besitzt weder Mikrofon noch Lautsprecher und unterstützt daher keine Mahlzeitenansage
+      oder Zwei-Wege-Audio.
+  - question: Dürfen die Teile in die Spülmaschine?
+    answer: >-
+      Laut PETLIBRO ist nur der Edelstahl-Napf spülmaschinengeeignet. Behälter, Rotor, Halter und elektrische Basis
+      sollten entsprechend der Anleitung von Hand gereinigt werden.
+  - question: Ist der Air WiFi Feeder für zwei Katzen geeignet?
+    answer: >-
+      Der Vorrat kann für zwei Katzen ausreichen, aber es gibt nur einen Napf und keine Tiererkennung. Eine dominante
+      Katze kann die Portion der anderen fressen. Für getrennte Diäten ist ein RFID- oder Mikrochip-System besser
+      geeignet.
 comparisonData:
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
+      - small
     foodType:
-      - "dry"
-    priceTier: "midrange"
+      - dry
+    priceTier: midrange
   editorial:
     rating: 4.2
     score: 84
-    priceCategory: "midrange"
-    productStatus: "active"
+    priceCategory: midrange
+    productStatus: active
+  custom:
+    modell: PLAF108 / AF108
+    produkttyp: App-gesteuerter Trockenfutterautomat mit integriertem Akku
+    futterart: Trockenfutter
+    krokettengrosse: 2 bis 15 mm
+    kapazitat: 2 Liter
+    mahlzeiten_pro_tag: 1 bis 10
+    portionen_je_mahlzeit: 1 bis 16 Portionseinheiten
+    volumen_je_portion: 10,4 ml beziehungsweise 1/24 Cup
+    maximale_nominelle_mahlzeit: etwa 166 ml beziehungsweise 2/3 Cup
+    portionsgewicht: nicht fest; abhängig von Form, Größe und Dichte des Futters
+    app: PETLIBRO-App, nicht PETLIBRO Lite
+    zeitplane: über die App planbar
+    fernfutterung: Ja
+    futterungsprotokoll: Echtzeit-Ausgabeprotokolle; kein sicherer Fressnachweis
+    app_nutzer: Zugriff für bis zu fünf Nutzer laut Hersteller
+    warnungen: niedriger Futterstand, niedriger Akkustand und Gerätestatus
+    wlan: 2,4 GHz
+    5_ghz_wlan: Nein
+    offline_betrieb: gespeicherte Zeitpläne laufen ohne Internet weiter
+    offline_protokolle: werden während der Unterbrechung nicht live übertragen und nach Wiederverbindung aktualisiert
+    kamera: Nein
+    mikrofon_und_lautsprecher: Nein; keine Mahlzeitenansage
+    tiererkennung: Nein
+    auslasssensor: kein dedizierter Outlet-blocked-Sensor laut PETLIBRO
+    niedrigfuttersensor: optischer Sensor mit App-Warnung
+    akku: integrierter Lithium-Ionen-Akku mit 5.200 mAh
+    akkulaufzeit: Herstellerangabe bis zu 30 Tage
+    ladezeit: ungefähr 8 Stunden
+    akkutausch: nicht vom Nutzer austauschbar
+    netzbetrieb: 5 V/1 A; dauerhafte Verbindung laut Hersteller möglich
+    napf: Edelstahl
+    spulmaschine: nur der Edelstahl-Napf ist laut PETLIBRO spülmaschinengeeignet
+    material: BPA-freier Kunststoff und Edelstahl-Napf
+    frischhaltesystem: Rotorverschluss, Deckeldichtung und Trockenmittelfach
+    trockenmittelwechsel: Herstellerempfehlung ungefähr alle zwei Wochen
+    abmessungen: 310 × 265 × 180 mm
+    gewicht: 1,3 kg
+    lieferumfang: Futterautomat, Edelstahl-Napf, Napfhalter, Kabel, Netzadapter, Kurz- und Bedienungsanleitung
+    geeignet_fur: Katzen und kleine Hunde
+    reinigung: >-
+      Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig trocknen, bevor
+      neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei
+      Wochen wechseln und den Akku regelmäßig vollständig laden.
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der PETLIBRO Air WiFi Feeder ist ein kompakter App-Futterautomat mit zwei Litern Vorrat und einem fest eingebauten 5.200-mAh-Akku.
 
 Sein größter Unterschied zu vielen konkurrierenden Modellen ist der kabellose Smart-Betrieb: WLAN, App und geplante Mahlzeiten funktionieren laut PETLIBRO auch dann weiter, wenn das Stromkabel entfernt wird.

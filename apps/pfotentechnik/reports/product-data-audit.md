@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-25T21:56:27.818Z
+Erstellt: 2026-07-26T04:37:22.051Z
 
 ## Zusammenfassung
 
 - Produkte: 65
 - Fehler: 0
-- Warnungen: 301
+- Warnungen: 249
 - Doppelte Slugs: 0
 
 ## Kategorien
@@ -16,24 +16,6 @@ Erstellt: 2026-07-25T21:56:27.818Z
 - gps-tracker: 8
 
 ## Produkte mit Handlungsbedarf
-
-### PETLIBRO Capsule Dog Fountain
-
-- Datei: `src\content\products\petlibro-capsule-dog-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 67%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: app
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-  - Empfohlenes Feld unbestätigt: maße
-  - Empfohlenes Feld unbestätigt: gewicht
 
 ### PawSync Smart Pet Feeder
 
@@ -67,82 +49,6 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### PetSafe Healthy Pet Simply Feed
-
-- Datei: `src\content\products\petsafe-healthy-pet-simply-feed.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 73%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: app-steuerung
-  - Empfohlenes Feld unbestätigt: kamera
-  - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### Aqara Smart Pet Feeder C1
-
-- Datei: `src\content\products\aqara-smart-pet-feeder-c1.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 76%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: app-steuerung
-  - Empfohlenes Feld unbestätigt: kamera
-  - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### oneisall 2,2L Cordless Cat Fountain
-
-- Datei: `src\content\products\oneisall-2-2l-cordless-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 76%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-  - Empfohlenes Feld unbestätigt: maße
-
-### PETKIT Eversweet 5 Mini
-
-- Datei: `src\content\products\petkit-eversweet-5-mini.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 76%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: app
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
-### PETLIBRO Dockstream RFID Smart
-
-- Datei: `src\content\products\petlibro-dockstream-rfid-smart.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 76%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
 ### SureFeed Microchip Pet Feeder Connect
 
 - Datei: `src\content\products\surefeed-microchip-pet-feeder-connect.md`
@@ -152,34 +58,6 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Nur 1 Galerie-Bilder hinterlegt
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
-  - Empfohlenes Feld unbestätigt: maße
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### Cat Mate Shell Pet Fountain
-
-- Datei: `src\content\products\cat-mate-shell-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 79%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-  - Empfohlenes Feld unbestätigt: maße
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### HoneyGuardian Smart Pet Feeder S305D
-
-- Datei: `src\content\products\honeyguardian-smart-pet-feeder-s305d.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 79%
-- Warnungen:
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld unbestätigt: reinigung
   - Empfohlenes Feld unbestätigt: wlan
   - Empfohlenes Feld unbestätigt: batterie
@@ -200,46 +78,32 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### PETKIT Eversweet Max Cordless
+### PETLIBRO Capsule Dog Fountain
 
-- Datei: `src\content\products\petkit-eversweet-max-cordless.md`
+- Datei: `src\content\products\petlibro-capsule-dog-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 79%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: reinigung
   - Empfohlenes Feld unbestätigt: uv
   - Empfohlenes Feld unbestätigt: trinkhöhe
   - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
-### PETLIBRO Air Automatic Feeder
-
-- Datei: `src\content\products\petlibro-air-automatic-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 79%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
+  - Empfohlenes Feld fehlt: ersatzfilter
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### PetSafe Smart Feed 2.0
+### PetSafe Healthy Pet Simply Feed
 
-- Datei: `src\content\products\petsafe-smart-feed-2.md`
+- Datei: `src\content\products\petsafe-healthy-pet-simply-feed.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 79%
 - Warnungen:
   - Nur 1 Galerie-Bilder hinterlegt
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: app-steuerung
   - Empfohlenes Feld unbestätigt: kamera
   - Empfohlenes Feld unbestätigt: napf
   - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: batterie
   - Empfohlenes Feld unbestätigt: gewicht
 
 ### WOPET Cube Air WiFi Pet Feeder CA10
@@ -270,58 +134,57 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### WOPET Pioneer F01 Plus
+### Aqara Smart Pet Feeder C1
 
-- Datei: `src\content\products\wopet-pioneer-f01-plus.md`
+- Datei: `src\content\products\aqara-smart-pet-feeder-c1.md`
 - Kategorie: futterautomaten
-- Vollständigkeit: 79%
+- Vollständigkeit: 82%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: app-steuerung
   - Empfohlenes Feld unbestätigt: napf
   - Empfohlenes Feld unbestätigt: reinigung
   - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
-  - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### HoneyGuardian A305D
+### Cat Mate Shell Pet Fountain
 
-- Datei: `src\content\products\honeyguardian-a305d.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 82%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
-  - Empfohlenes Feld unbestätigt: maße
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### oneisall 5L Automatic Cat Feeder
-
-- Datei: `src\content\products\oneisall-5l-automatic-cat-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 82%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: wlan
-  - Empfohlenes Feld unbestätigt: batterie
-  - Empfohlenes Feld unbestätigt: maße
-  - Empfohlenes Feld unbestätigt: gewicht
-
-### PETKIT Eversweet Solo SE
-
-- Datei: `src\content\products\petkit-eversweet-solo-se.md`
+- Datei: `src\content\products\cat-mate-shell-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 82%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: akku
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld fehlt: ersatzfilter
+  - Empfohlenes Feld unbestätigt: maße
+  - Empfohlenes Feld unbestätigt: gewicht
+
+### oneisall 2,2L Cordless Cat Fountain
+
+- Datei: `src\content\products\oneisall-2-2l-cordless-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 82%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld unbestätigt: uv
   - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: ersatzfilter
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+  - Empfohlenes Feld unbestätigt: maße
+
+### PETKIT Eversweet 5 Mini
+
+- Datei: `src\content\products\petkit-eversweet-5-mini.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 82%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: lautstärke
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
 
 ### PETKIT Fresh Element Infinity
 
@@ -336,44 +199,18 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### PETLIBRO Dockstream 2 Smart
+### PETLIBRO Air Automatic Feeder
 
-- Datei: `src\content\products\petlibro-dockstream-2-smart.md`
-- Kategorie: trinkbrunnen
+- Datei: `src\content\products\petlibro-air-automatic-feeder.md`
+- Kategorie: futterautomaten
 - Vollständigkeit: 82%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
-### PETLIBRO Dockstream Cordless
-
-- Datei: `src\content\products\petlibro-dockstream-cordless.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 82%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
-### PETLIBRO Glacier Ultrafiltration Fountain
-
-- Datei: `src\content\products\petlibro-glacier-ultrafiltration.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 82%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: ersatzfilter
+  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: batterie
+  - Empfohlenes Feld unbestätigt: maße
+  - Empfohlenes Feld unbestätigt: gewicht
 
 ### PETLIBRO One RFID Smart Feeder
 
@@ -401,18 +238,31 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: wlan
   - Empfohlenes Feld fehlt: maße
 
-### PETLIBRO Stainless Steel Fountain 3L
+### PetSafe Smart Feed 2.0
 
-- Datei: `src\content\products\petlibro-stainless-steel-fountain.md`
-- Kategorie: trinkbrunnen
+- Datei: `src\content\products\petsafe-smart-feed-2.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 82%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: app-steuerung
+  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: gewicht
+
+### WOPET Pioneer F01 Plus
+
+- Datei: `src\content\products\wopet-pioneer-f01-plus.md`
+- Kategorie: futterautomaten
 - Vollständigkeit: 82%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: akku
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: ersatzfilter
+  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: batterie
+  - Empfohlenes Feld unbestätigt: maße
+  - Empfohlenes Feld unbestätigt: gewicht
 
 ### Xiaomi Smart Pet Fountain 2
 
@@ -424,7 +274,7 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: uv
   - Empfohlenes Feld unbestätigt: trinkhöhe
   - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
+  - Empfohlenes Feld fehlt: ersatzfilter
   - Empfohlenes Feld unbestätigt: gewicht
 
 ### Cat Mate C200
@@ -434,7 +284,7 @@ Erstellt: 2026-07-25T21:56:27.818Z
 - Vollständigkeit: 85%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld unbestätigt: wlan
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
@@ -446,7 +296,7 @@ Erstellt: 2026-07-25T21:56:27.818Z
 - Vollständigkeit: 85%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld unbestätigt: wlan
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
@@ -463,45 +313,9 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### Catit PIXI Vision Smart Feeder
+### HoneyGuardian A305D
 
-- Datei: `src\content\products\catit-pixi-vision-smart-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 85%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: app-steuerung
-  - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
-
-### oneisall 3,5L Cordless Fountain
-
-- Datei: `src\content\products\oneisall-3-5l-cordless-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 85%
-- Warnungen:
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: app
-  - Empfohlenes Feld unbestätigt: uv
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-
-### PETKIT Eversweet Max 2 UVC
-
-- Datei: `src\content\products\petkit-eversweet-max-2-uvc.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 85%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: lautstärke
-  - Empfohlenes Feld unbestätigt: trinkhöhe
-  - Empfohlenes Feld unbestätigt: wasserfluss
-  - Empfohlenes Feld unbestätigt: ersatzfilter
-
-### PETLIBRO Granary Camera Feeder
-
-- Datei: `src\content\products\petlibro-granary-camera-feeder.md`
+- Datei: `src\content\products\honeyguardian-a305d.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 85%
 - Warnungen:
@@ -511,17 +325,65 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
 
-### WOPET Patrol F07 Pro
+### oneisall 5L Automatic Cat Feeder
 
-- Datei: `src\content\products\wopet-patrol-f07-pro.md`
+- Datei: `src\content\products\oneisall-5l-automatic-cat-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 85%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: napf
-  - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: wlan
   - Empfohlenes Feld unbestätigt: batterie
+  - Empfohlenes Feld unbestätigt: maße
   - Empfohlenes Feld unbestätigt: gewicht
+
+### PETLIBRO Dockstream 2 Smart
+
+- Datei: `src\content\products\petlibro-dockstream-2-smart.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 85%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETLIBRO Dockstream Cordless
+
+- Datei: `src\content\products\petlibro-dockstream-cordless.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 85%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETLIBRO Dockstream RFID Smart
+
+- Datei: `src\content\products\petlibro-dockstream-rfid-smart.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 85%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETLIBRO Glacier Ultrafiltration Fountain
+
+- Datei: `src\content\products\petlibro-glacier-ultrafiltration.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 85%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: lautstärke
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld fehlt: ersatzfilter
 
 ### Cat Mate Pet Fountain 335
 
@@ -534,16 +396,27 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: gewicht
 
-### oneisall 3,2L Cordless Cat Fountain
+### Catit PIXI Vision Smart Feeder
 
-- Datei: `src\content\products\oneisall-3-2l-cordless-fountain.md`
-- Kategorie: trinkbrunnen
+- Datei: `src\content\products\catit-pixi-vision-smart-feeder.md`
+- Kategorie: futterautomaten
 - Vollständigkeit: 88%
 - Warnungen:
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: app-steuerung
+  - Empfohlenes Feld unbestätigt: napf
+  - Empfohlenes Feld unbestätigt: reinigung
+
+### HoneyGuardian Smart Pet Feeder S305D
+
+- Datei: `src\content\products\honeyguardian-smart-pet-feeder-s305d.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: wlan
+  - Empfohlenes Feld unbestätigt: maße
+  - Empfohlenes Feld unbestätigt: gewicht
 
 ### oneisall 7L Dog Water Fountain
 
@@ -554,6 +427,28 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: uv
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETKIT Eversweet Max 2 UVC
+
+- Datei: `src\content\products\petkit-eversweet-max-2-uvc.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 88%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETKIT Eversweet Max Cordless
+
+- Datei: `src\content\products\petkit-eversweet-max-cordless.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 88%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
 ### PETKIT Eversweet Solo 2
@@ -567,26 +462,38 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld unbestätigt: trinkhöhe
   - Empfohlenes Feld unbestätigt: wasserfluss
 
-### PETLIBRO Granary WiFi Dual Food Tray Feeder
+### PETKIT Eversweet Solo SE
 
-- Datei: `src\content\products\petlibro-granary-dual-feeder.md`
+- Datei: `src\content\products\petkit-eversweet-solo-se.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 88%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETLIBRO Granary Camera Feeder
+
+- Datei: `src\content\products\petlibro-granary-camera-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 88%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: kamera
-  - Empfohlenes Feld unbestätigt: reinigung
   - Empfohlenes Feld unbestätigt: batterie
+  - Empfohlenes Feld unbestätigt: maße
+  - Empfohlenes Feld unbestätigt: gewicht
 
-### Garmin Alpha T 20
+### PETLIBRO Stainless Steel Fountain 3L
 
-- Datei: `src\content\products\garmin-alpha-t-20.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 91%
+- Datei: `src\content\products\petlibro-stainless-steel-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 88%
 - Warnungen:
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: material
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld fehlt: ersatzfilter
 
 ### HoneyGuardian A68 Smart Pet Feeder
 
@@ -608,6 +515,26 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld fehlt: gewicht
 
+### oneisall 3,2L Cordless Cat Fountain
+
+- Datei: `src\content\products\oneisall-3-2l-cordless-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
+  - Empfohlenes Feld fehlt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### oneisall 3,5L Cordless Fountain
+
+- Datei: `src\content\products\oneisall-3-5l-cordless-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld unbestätigt: uv
+  - Empfohlenes Feld unbestätigt: trinkhöhe
+  - Empfohlenes Feld unbestätigt: wasserfluss
+
 ### PETKIT Eversweet 3 Pro UVC
 
 - Datei: `src\content\products\petkit-eversweet-3-pro-uvc.md`
@@ -618,43 +545,34 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
-### PETKIT YumShare Dual-Hopper 2
+### PETLIBRO Granary WiFi Dual Food Tray Feeder
 
-- Datei: `src\content\products\petkit-yumshare-dual.md`
+- Datei: `src\content\products\petlibro-granary-dual-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 91%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: reinigung
+  - Empfohlenes Feld unbestätigt: kamera
   - Empfohlenes Feld unbestätigt: batterie
 
-### PETLIBRO Granary WiFi Feeder
+### WOPET Patrol F07 Pro
 
-- Datei: `src\content\products\petlibro-granary-wifi-feeder.md`
+- Datei: `src\content\products\wopet-patrol-f07-pro.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 91%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld unbestätigt: reinigung
-  - Empfohlenes Feld unbestätigt: batterie
-
-### Catit PIXI Smart 6-Meal Feeder
-
-- Datei: `src\content\products\catit-pixi-smart-6-meal-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
   - Empfohlenes Feld fehlt: napf
+  - Empfohlenes Feld unbestätigt: gewicht
 
-### PAJ PET Finder 4G Mini
+### Garmin Alpha T 20
 
-- Datei: `src\content\products\paj-pet-finder-4g-mini.md`
+- Datei: `src\content\products\garmin-alpha-t-20.md`
 - Kategorie: gps-tracker
 - Vollständigkeit: 94%
 - Warnungen:
+  - Empfohlenes Feld fehlt: bluetooth
   - Empfohlenes Feld fehlt: material
-  - capacity ist vorhanden, aber nicht als Spec normalisiert
 
 ### PETKIT Eversweet Ultra
 
@@ -665,14 +583,22 @@ Erstellt: 2026-07-25T21:56:27.818Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
-### PETLIBRO Air WiFi Feeder
+### PETKIT YumShare Dual-Hopper 2
 
-- Datei: `src\content\products\petlibro-air-wifi-feeder.md`
+- Datei: `src\content\products\petkit-yumshare-dual.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 94%
 - Warnungen:
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: batterie
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+  - Empfohlenes Feld unbestätigt: batterie
+
+### Catit PIXI Smart 6-Meal Feeder
+
+- Datei: `src\content\products\catit-pixi-smart-6-meal-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: napf
 
 ### IMIPAW 3L Automatic Cat Feeder
 
@@ -682,13 +608,29 @@ Erstellt: 2026-07-25T21:56:27.818Z
 - Warnungen:
   - Empfohlenes Feld fehlt: napf
 
-### PETKIT YumShare Solo 2
+### PAJ PET Finder 4G Mini
 
-- Datei: `src\content\products\petkit-yumshare-solo-2.md`
+- Datei: `src\content\products\paj-pet-finder-4g-mini.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: material
+
+### PETLIBRO Air WiFi Feeder
+
+- Datei: `src\content\products\petlibro-air-wifi-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
-  - Empfohlenes Feld fehlt: reinigung
+  - Empfohlenes Feld fehlt: batterie
+
+### PETLIBRO Granary WiFi Feeder
+
+- Datei: `src\content\products\petlibro-granary-wifi-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
 
 ### PETLIBRO Polar Wet Food Feeder
 
@@ -729,12 +671,4 @@ Erstellt: 2026-07-25T21:56:27.818Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Empfohlenes Feld unbestätigt: material
-
-### Xiaomi Smart Pet Food Feeder 2
-
-- Datei: `src\content\products\xiaomi-smart-pet-food-feeder-2.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 97%
-- Warnungen:
-  - Empfohlenes Feld unbestätigt: reinigung
 

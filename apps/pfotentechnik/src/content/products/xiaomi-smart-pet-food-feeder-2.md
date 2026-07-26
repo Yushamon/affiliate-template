@@ -1,64 +1,68 @@
 ---
-title: "Xiaomi Smart Pet Food Feeder 2"
-slug: "xiaomi-smart-pet-food-feeder-2"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "unknown"
-description: "5-Liter-Futterautomat mit Xiaomi-Home-App, Wiegenapf, automatischer Entblockung, Edelstahl-Napf und vier AA-Batterien als Notstrom."
-recommendation: "Starke Smart-Home-Option für Katzen und Hunde bis 40 cm Schulterhöhe, wenn Napfgewicht, Füllstandswarnung und automatische Entblockung wichtig sind."
+title: Xiaomi Smart Pet Food Feeder 2
+slug: xiaomi-smart-pet-food-feeder-2
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: unknown
+description: >-
+  5-Liter-Futterautomat mit Xiaomi-Home-App, Wiegenapf, automatischer Entblockung, Edelstahl-Napf und vier AA-Batterien
+  als Notstrom.
+recommendation: >-
+  Starke Smart-Home-Option für Katzen und Hunde bis 40 cm Schulterhöhe, wenn Napfgewicht, Füllstandswarnung und
+  automatische Entblockung wichtig sind.
 manufacturer:
-  key: "xiaomi"
-  name: "Xiaomi"
-  slug: "xiaomi"
+  key: xiaomi
+  name: Xiaomi
+  slug: xiaomi
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/xiaomi-smart-pet-food-feeder-2/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/xiaomi-smart-pet-food-feeder-2/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-16"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "Xiaomi Smart Pet Food Feeder 2 im Check"
-  description: "Xiaomi Smart Pet Food Feeder 2 mit 5 Litern, Wiegenapf, 1-g-Erfassung, App und zwei Wochen Notstrom."
-  canonical: "/produkt/xiaomi-smart-pet-food-feeder-2/"
+  title: Xiaomi Smart Pet Food Feeder 2 im Check
+  description: Xiaomi Smart Pet Food Feeder 2 mit 5 Litern, Wiegenapf, 1-g-Erfassung, App und zwei Wochen Notstrom.
+  canonical: /produkt/xiaomi-smart-pet-food-feeder-2/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "mittelgrosser-hund"
-  - "app"
-  - "trockenfutter"
-  - "wiegenapf"
-  - "xiaomi-home"
+  - katze
+  - kleiner-hund
+  - mittelgrosser-hund
+  - app
+  - trockenfutter
+  - wiegenapf
+  - xiaomi-home
 images:
   hero:
-    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/hero.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2 in redaktioneller Produktdarstellung"
+    src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/hero.webp
+    alt: Xiaomi Smart Pet Food Feeder 2 in redaktioneller Produktdarstellung
   thumbnail:
-    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/thumbnail.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2 als kompakte Produktansicht"
+    src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/thumbnail.webp
+    alt: Xiaomi Smart Pet Food Feeder 2 als kompakte Produktansicht
   comparison:
-    src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/comparison.webp"
-    alt: "Xiaomi Smart Pet Food Feeder 2 im Vergleich"
+    src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/comparison.webp
+    alt: Xiaomi Smart Pet Food Feeder 2 im Vergleich
   gallery:
-    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-1.webp"
-      alt: "Wiegenapf des Xiaomi Smart Pet Food Feeder 2"
-    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-2.webp"
-      alt: "Futterbehälter und Dichtung des Xiaomi Smart Pet Food Feeder 2"
-    - src: "../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-3.webp"
-      alt: "Xiaomi Smart Pet Food Feeder 2 mit LED-Anzeige"
+    - src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-1.webp
+      alt: Wiegenapf des Xiaomi Smart Pet Food Feeder 2
+    - src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-2.webp
+      alt: Futterbehälter und Dichtung des Xiaomi Smart Pet Food Feeder 2
+    - src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-3.webp
+      alt: Xiaomi Smart Pet Food Feeder 2 mit LED-Anzeige
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/4wofqBc"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://amzn.to/4wofqBc
 rating: 4.6
 score: 92
 ratings:
@@ -70,132 +74,172 @@ ratings:
   preisleistung: 4.7
 decision:
   bestFor:
-    - "Katzen"
-    - "kleine bis mittelgroße Hunde bis 40 cm Schulterhöhe"
-    - "Xiaomi-Home-Haushalte"
-    - "Nutzer, die verbleibendes Futter im Napf überwachen möchten"
+    - Katzen
+    - kleine bis mittelgroße Hunde bis 40 cm Schulterhöhe
+    - Xiaomi-Home-Haushalte
+    - Nutzer, die verbleibendes Futter im Napf überwachen möchten
   attention:
-    - "nur 2,4-GHz-WLAN"
-    - "nur Trockenfutter und gemischte Freeze-dried-Anteile"
-    - "reines gefriergetrocknetes Futter wird nicht empfohlen"
-    - "Wiegenapf ersetzt keine kontrollierte Rationsmessung"
+    - nur 2,4-GHz-WLAN
+    - nur Trockenfutter und gemischte Freeze-dried-Anteile
+    - reines gefriergetrocknetes Futter wird nicht empfohlen
+    - Wiegenapf ersetzt keine kontrollierte Rationsmessung
 review:
-  summary: "Die zweite Generation kombiniert fünf Liter Vorrat mit einem Wiegenapf, LED-Anzeige, automatischer Entblockung und App-Warnungen."
-  verdict: "Der Xiaomi Smart Pet Food Feeder 2 zählt zu den stärksten smarten Futterautomaten seiner Preisklasse. Wiegenapf, Entblockung, zuverlässige App-Anbindung und Notstromversorgung ergeben ein sehr ausgewogenes Gesamtpaket. Einschränkungen bestehen hauptsächlich bei der Futterkompatibilität und der Bindung an das Xiaomi-Home-Ökosystem."
+  summary: >-
+    Die zweite Generation kombiniert fünf Liter Vorrat mit einem Wiegenapf, LED-Anzeige, automatischer Entblockung und
+    App-Warnungen.
+  verdict: >-
+    Der Xiaomi Smart Pet Food Feeder 2 zählt zu den stärksten smarten Futterautomaten seiner Preisklasse. Wiegenapf,
+    Entblockung, zuverlässige App-Anbindung und Notstromversorgung ergeben ein sehr ausgewogenes Gesamtpaket.
+    Einschränkungen bestehen hauptsächlich bei der Futterkompatibilität und der Bindung an das Xiaomi-Home-Ökosystem.
 strengths:
-  - "5 Liter beziehungsweise etwa 2,5 kg Futter"
-  - "Wiegenapf mit Herstellerabweichung bis 1 g"
-  - "automatische Entblockung"
-  - "Füllstandssensor und App-Warnungen"
-  - "Edelstahl-Napf 304"
-  - "Notstrom für laut Xiaomi etwa 14 Tage"
+  - 5 Liter beziehungsweise etwa 2,5 kg Futter
+  - Wiegenapf mit Herstellerabweichung bis 1 g
+  - automatische Entblockung
+  - Füllstandssensor und App-Warnungen
+  - Edelstahl-Napf 304
+  - Notstrom für laut Xiaomi etwa 14 Tage
 weaknesses:
-  - "nur 2,4-GHz-WLAN"
-  - "keine Kamera oder Tiererkennung"
-  - "reines Freeze-dried-Futter ungeeignet"
-  - "Trockenmittelkartusche soll monatlich ersetzt werden"
+  - nur 2,4-GHz-WLAN
+  - keine Kamera oder Tiererkennung
+  - reines Freeze-dried-Futter ungeeignet
+  - Trockenmittelkartusche soll monatlich ersetzt werden
 experience:
-  summary: "Der Wiegenapf erfasst Futter im Napf, nicht direkt die tatsächlich vom Tier gefressene Menge."
-  methodology: "Redaktionelle Einordnung anhand der offiziellen deutschen Xiaomi-Produkt- und Supportseiten; kein eigener Langzeittest."
-  maintenance: "Behälter und Napf regelmäßig reinigen. Wiegenapf nach dem Einsetzen kalibrieren und Trockenmittelkartusche monatlich austauschen."
+  summary: Der Wiegenapf erfasst Futter im Napf, nicht direkt die tatsächlich vom Tier gefressene Menge.
+  methodology: >-
+    Redaktionelle Einordnung anhand der offiziellen deutschen Xiaomi-Produkt- und Supportseiten; kein eigener
+    Langzeittest.
+  maintenance: >-
+    Behälter und Napf regelmäßig reinigen. Wiegenapf nach dem Einsetzen kalibrieren und Trockenmittelkartusche monatlich
+    austauschen.
 alternatives:
-  - "petlibro-granary-wifi-feeder"
-  - "petkit-fresh-element-solo"
-  - "surefeed-microchip-pet-feeder"
+  - petlibro-granary-wifi-feeder
+  - petkit-fresh-element-solo
+  - surefeed-microchip-pet-feeder
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-hunde"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-hunde
 specs:
-  - label: "Modell"
-    value: "XMWSQ02"
-  - label: "Futterart"
-    value: "Trockenfutter und gemischte gefriergetrocknete Anteile"
-  - label: "Krokettengröße"
-    value: "bis 12 mm"
-  - label: "Kapazität"
-    value: "5 Liter, etwa 2,5 kg"
-  - label: "Portionierung"
-    value: "ab etwa 1 g über App steuerbar"
-  - label: "App"
-    value: "Xiaomi Home"
-  - label: "WLAN"
-    value: "2,4 GHz"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Napfmaterial"
-    value: "Edelstahl 304"
-  - label: "Wiegenapf"
-    value: "Echtzeiterfassung mit Herstellerabweichung bis 1 g"
-  - label: "Stromversorgung"
-    value: "Netzbetrieb und vier AA-Batterien als Backup"
-  - label: "Notstrom"
-    value: "Herstellerangabe etwa 14 Tage"
-  - label: "Abmessungen"
-    value: "370 × 220 × 324 mm"
-  - label: "Gewicht"
-    value: "4 kg"
-  - label: "Geeignet für"
-    value: "Katzen und Hunde bis 40 cm Schulterhöhe"
-  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
+  - label: Modell
+    value: XMWSQ02
+  - label: Futterart
+    value: Trockenfutter und gemischte gefriergetrocknete Anteile
+  - label: Krokettengröße
+    value: bis 12 mm
+  - label: Kapazität
+    value: 5 Liter, etwa 2,5 kg
+  - label: Portionierung
+    value: ab etwa 1 g über App steuerbar
+  - label: App
+    value: Xiaomi Home
+  - label: WLAN
+    value: 2,4 GHz
+  - label: Kamera
+    value: Nein
+  - label: Napfmaterial
+    value: Edelstahl 304
+  - label: Wiegenapf
+    value: Echtzeiterfassung mit Herstellerabweichung bis 1 g
+  - label: Stromversorgung
+    value: Netzbetrieb und vier AA-Batterien als Backup
+  - label: Notstrom
+    value: Herstellerangabe etwa 14 Tage
+  - label: Abmessungen
+    value: 370 × 220 × 324 mm
+  - label: Gewicht
+    value: 4 kg
+  - label: Geeignet für
+    value: Katzen und Hunde bis 40 cm Schulterhöhe
+  - label: Reinigung
+    value: >-
+      Behälter und Napf regelmäßig reinigen. Wiegenapf nach dem Einsetzen kalibrieren und Trockenmittelkartusche
+      monatlich austauschen.
+  - label: Akku
+    value: Nein
 comparisonFilters:
-  largeDogFitReason: "Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig belegt."
-  largeDogFit: "conditional"
-  manufacturerSizeClaim: "max-40cm"
+  largeDogFitReason: >-
+    Technisch grundsätzlich interessant: 5 L Vorrat, Kroketten bis 12 mm. Maximale Mahlzeit ist noch nicht vollständig
+    belegt.
+  largeDogFit: conditional
+  manufacturerSizeClaim: max-40cm
   kibbleMaxMm: 12
   portionGrams: 10
   reservoirLiters: 5
-  animal: ["dog", "cat"]
-  petSize: ["small", "medium"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
+    - medium
 faq:
-  - question: "Ist der Xiaomi Smart Pet Food Feeder 2 für gefriergetrocknetes Futter geeignet?"
-    answer: "Gemischte Freeze-dried-Anteile bis 12 mm sind möglich. Reines gefriergetrocknetes Futter wird von Xiaomi nicht empfohlen."
-  - question: "Misst der Napf, wie viel das Tier gefressen hat?"
-    answer: "Er misst das verbleibende Futter im Napf. Daraus kann die App einen Verbrauch ableiten, aber keine medizinisch genaue Aufnahme messen."
-  - question: "Wie lange funktioniert der Automat bei Stromausfall?"
-    answer: "Xiaomi nennt mit vier AA-Alkalibatterien ungefähr 14 Tage für gespeicherte Zeitpläne."
-  - question: "Unterstützt er 5-GHz-WLAN?"
-    answer: "Nein. Das Modell arbeitet nur mit 2,4-GHz-WLAN."
-useCase: "Für Xiaomi-Home-Nutzer mit Katze oder Hund bis 40 cm Schulterhöhe"
-capacity: "5 Liter"
-expandable: "Nicht vorgesehen"
+  - question: Ist der Xiaomi Smart Pet Food Feeder 2 für gefriergetrocknetes Futter geeignet?
+    answer: >-
+      Gemischte Freeze-dried-Anteile bis 12 mm sind möglich. Reines gefriergetrocknetes Futter wird von Xiaomi nicht
+      empfohlen.
+  - question: Misst der Napf, wie viel das Tier gefressen hat?
+    answer: >-
+      Er misst das verbleibende Futter im Napf. Daraus kann die App einen Verbrauch ableiten, aber keine medizinisch
+      genaue Aufnahme messen.
+  - question: Wie lange funktioniert der Automat bei Stromausfall?
+    answer: Xiaomi nennt mit vier AA-Alkalibatterien ungefähr 14 Tage für gespeicherte Zeitpläne.
+  - question: Unterstützt er 5-GHz-WLAN?
+    answer: Nein. Das Modell arbeitet nur mit 2,4-GHz-WLAN.
+useCase: Für Xiaomi-Home-Nutzer mit Katze oder Hund bis 40 cm Schulterhöhe
+capacity: 5 Liter
+expandable: Nicht vorgesehen
 features:
-  - "Wiegenapf"
-  - "automatische Entblockung"
-  - "LED-Display und Xiaomi-Home-App"
+  - Wiegenapf
+  - automatische Entblockung
+  - LED-Display und Xiaomi-Home-App
 comparisonData:
   version: 1
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
-      - "medium"
+      - small
+      - medium
     foodType: []
     reservoirLiters: 5
     portionGrams: 10
     kibbleMaxMm: 12
-    largeDogFit: "conditional"
+    largeDogFit: conditional
   editorial:
-    rating: 4
-    score: 81
-    productStatus: "unknown"
+    rating: 4.6
+    score: 92
+    productStatus: unknown
   custom:
-    krokettengroesse: "bis 12 mm"
-    napf: "Edelstahl 304 mit Wiegefunktion"
-    kapazitaet: "5 Liter, etwa 2,5 kg"
-    notstrom: "4 AA-Batterien; Herstellerangabe etwa 14 Tage"
-    hundegroesse: "klein bis mittelgroß, laut Hersteller bis 40 cm Schulterhöhe"
-    kamera: "Nein"
-    tiertrennung: "Nein"
-    redaktionellesprofil: "Beste Datenübersicht am Napf"
-    futterart: "Trockenfutter und geeignete Mischungen bis 12 mm"
-    zugang: "Freier Zugang; keine Tiererkennung"
-    mehrkatzen: "Verbrauchstrend nicht sicher einem Tier zuordenbar"
-    ausfallsicherheit: "4 AA-Batterien; Herstellerangabe ungefähr 14 Tage"
-    reinigung: "Edelstahl-Wiegenapf und zerlegbare Futtereinheit"
+    krokettengroesse: bis 12 mm
+    napf: Edelstahl 304 mit Wiegefunktion
+    kapazitaet: 5 Liter, etwa 2,5 kg
+    notstrom: 4 AA-Batterien; Herstellerangabe etwa 14 Tage
+    hundegroesse: klein bis mittelgroß, laut Hersteller bis 40 cm Schulterhöhe
+    kamera: Nein
+    tiertrennung: Nein
+    redaktionellesprofil: Beste Datenübersicht am Napf
+    futterart: Trockenfutter und geeignete Mischungen bis 12 mm
+    zugang: Freier Zugang; keine Tiererkennung
+    mehrkatzen: Verbrauchstrend nicht sicher einem Tier zuordenbar
+    ausfallsicherheit: 4 AA-Batterien; Herstellerangabe ungefähr 14 Tage
+    reinigung: Edelstahl-Wiegenapf und zerlegbare Futtereinheit
+    modell: XMWSQ02
+    krokettengrosse: bis 12 mm
+    kapazitat: 5 Liter, etwa 2,5 kg
+    portionierung: ab etwa 1 g über App steuerbar
+    app: Xiaomi Home
+    wlan: 2,4 GHz
+    napfmaterial: Edelstahl 304
+    wiegenapf: Echtzeiterfassung mit Herstellerabweichung bis 1 g
+    stromversorgung: Netzbetrieb und vier AA-Batterien als Backup
+    abmessungen: 370 × 220 × 324 mm
+    gewicht: 4 kg
+    geeignet_fur: Katzen und Hunde bis 40 cm Schulterhöhe
+    akku: Nein
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der Xiaomi Smart Pet Food Feeder 2 ist technisch umfangreicher als viele klassische Vorratsautomaten. Der Wiegenapf und die automatische Entblockung sind seine wichtigsten Unterschiede.
 
 ## Futterkompatibilität

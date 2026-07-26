@@ -1,64 +1,68 @@
 ---
-title: "PETLIBRO Granary WiFi Feeder"
-slug: "petlibro-granary-wifi-feeder"
-type: "product"
-layout: "product"
-testStatus: "editorial-review"
-productStatus: "unknown"
-description: "5-Liter-Trockenfutterautomat mit PETLIBRO-App, 2,4- und 5-GHz-WLAN, bis zu zehn Mahlzeiten täglich und Batterie-Backup."
-recommendation: "Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle."
+title: PETLIBRO Granary WiFi Feeder
+slug: petlibro-granary-wifi-feeder
+type: product
+layout: product
+testStatus: editorial-review
+productStatus: unknown
+description: >-
+  5-Liter-Trockenfutterautomat mit PETLIBRO-App, 2,4- und 5-GHz-WLAN, bis zu zehn Mahlzeiten täglich und
+  Batterie-Backup.
+recommendation: >-
+  Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne,
+  App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle.
 manufacturer:
-  key: "petlibro"
-  name: "PETLIBRO"
-  slug: "petlibro"
+  key: petlibro
+  name: PETLIBRO
+  slug: petlibro
 category:
-  key: "futterautomaten"
-  label: "Futterautomaten"
-  path: "/smarte-futterautomaten/"
-productUrl: "/produkt/petlibro-granary-wifi-feeder/"
+  key: futterautomaten
+  label: Futterautomaten
+  path: /smarte-futterautomaten/
+productUrl: /produkt/petlibro-granary-wifi-feeder/
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-16"
 author:
-  name: "PfotenTechnik Redaktion"
+  name: PfotenTechnik Redaktion
 seo:
-  title: "PETLIBRO Granary WiFi Feeder im Check"
-  description: "PETLIBRO Granary WiFi Feeder mit 5 Litern, zehn Mahlzeiten, 2,4/5-GHz-WLAN und Batterie-Backup eingeordnet."
-  canonical: "/produkt/petlibro-granary-wifi-feeder/"
+  title: PETLIBRO Granary WiFi Feeder im Check
+  description: PETLIBRO Granary WiFi Feeder mit 5 Litern, zehn Mahlzeiten, 2,4/5-GHz-WLAN und Batterie-Backup eingeordnet.
+  canonical: /produkt/petlibro-granary-wifi-feeder/
   sitemap: true
   priority: 0.9
 hub:
   sections:
-    - "produkte"
-    - "futterautomaten"
+    - produkte
+    - futterautomaten
 tags:
-  - "katze"
-  - "kleiner-hund"
-  - "mittelgrosser-hund"
-  - "app"
-  - "trockenfutter"
-  - "wifi"
-  - "batterie-backup"
+  - katze
+  - kleiner-hund
+  - mittelgrosser-hund
+  - app
+  - trockenfutter
+  - wifi
+  - batterie-backup
 images:
   hero:
-    src: "../../assets/images/products/petlibro-granary-wifi-feeder/hero.webp"
-    alt: "PETLIBRO Granary WiFi Feeder in redaktioneller Produktdarstellung"
+    src: ../../assets/images/products/petlibro-granary-wifi-feeder/hero.webp
+    alt: PETLIBRO Granary WiFi Feeder in redaktioneller Produktdarstellung
   thumbnail:
-    src: "../../assets/images/products/petlibro-granary-wifi-feeder/thumbnail.webp"
-    alt: "PETLIBRO Granary WiFi Feeder als kompakte Produktansicht"
+    src: ../../assets/images/products/petlibro-granary-wifi-feeder/thumbnail.webp
+    alt: PETLIBRO Granary WiFi Feeder als kompakte Produktansicht
   comparison:
-    src: "../../assets/images/products/petlibro-granary-wifi-feeder/comparison.webp"
-    alt: "PETLIBRO Granary WiFi Feeder im Vergleich"
+    src: ../../assets/images/products/petlibro-granary-wifi-feeder/comparison.webp
+    alt: PETLIBRO Granary WiFi Feeder im Vergleich
   gallery:
-    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-1.webp"
-      alt: "Futterbehälter und Dichtung des PETLIBRO Granary"
-    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-2.webp"
-      alt: "Edelstahlnapf des PETLIBRO Granary"
-    - src: "../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp"
-      alt: "PETLIBRO Granary im Katzenhaushalt"
+    - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-1.webp
+      alt: Futterbehälter und Dichtung des PETLIBRO Granary
+    - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-2.webp
+      alt: Edelstahlnapf des PETLIBRO Granary
+    - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp
+      alt: PETLIBRO Granary im Katzenhaushalt
 affiliate:
-  provider: "amazon"
-  label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L"
+  provider: amazon
+  label: Aktuellen Preis prüfen
+  url: https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L
 rating: 4.1
 score: 82
 ratings:
@@ -70,78 +74,84 @@ ratings:
   preisleistung: 4.05
 decision:
   bestFor:
-    - "Katzen"
-    - "kleine bis mittelgroße Hunde"
-    - "Trockenfütterung mit bis zu zehn Mahlzeiten täglich"
-    - "Haushalte mit 2,4- oder 5-GHz-WLAN"
+    - Katzen
+    - kleine bis mittelgroße Hunde
+    - Trockenfütterung mit bis zu zehn Mahlzeiten täglich
+    - Haushalte mit 2,4- oder 5-GHz-WLAN
   attention:
-    - "nur für Trockenfutter"
-    - "keine individuelle Tiererkennung"
-    - "20 ml beziehungsweise etwa 10 g pro Portion sind futterabhängige Richtwerte"
-    - "Doppelschale teilt eine Ausgabe und verhindert keinen Futterklau"
+    - nur für Trockenfutter
+    - keine individuelle Tiererkennung
+    - 20 ml beziehungsweise etwa 10 g pro Portion sind futterabhängige Richtwerte
+    - Doppelschale teilt eine Ausgabe und verhindert keinen Futterklau
 review:
-  summary: "Der Granary WiFi kombiniert fünf Liter Vorrat, bis zu zehn Mahlzeiten täglich und eine verständliche App mit Fütterungsprotokoll."
-  verdict: "Der ausgewogenste Trockenfutter-Allrounder im Bestand, solange weder Kamera noch Mikrochip-Zugang benötigt werden."
+  summary: >-
+    Der Granary WiFi kombiniert fünf Liter Vorrat, bis zu zehn Mahlzeiten täglich und eine verständliche App mit
+    Fütterungsprotokoll.
+  verdict: Der ausgewogenste Trockenfutter-Allrounder im Bestand, solange weder Kamera noch Mikrochip-Zugang benötigt werden.
 strengths:
-  - "5 Liter Kapazität"
-  - "bis zu zehn Mahlzeiten täglich"
-  - "2,4- und 5-GHz-WLAN"
-  - "1 bis 50 Portionen pro Mahlzeit"
-  - "Edelstahlnapf"
-  - "Batterie-Backup und gespeicherte Zeitpläne"
+  - 5 Liter Kapazität
+  - bis zu zehn Mahlzeiten täglich
+  - 2,4- und 5-GHz-WLAN
+  - 1 bis 50 Portionen pro Mahlzeit
+  - Edelstahlnapf
+  - Batterie-Backup und gespeicherte Zeitpläne
 weaknesses:
-  - "nur Trockenfutter"
-  - "keine Kamera"
-  - "keine individuelle Zugangskontrolle"
-  - "Trockenmittelbeutel soll etwa alle zwei Wochen ersetzt werden"
+  - nur Trockenfutter
+  - keine Kamera
+  - keine individuelle Zugangskontrolle
+  - Trockenmittelbeutel soll etwa alle zwei Wochen ersetzt werden
 experience:
-  summary: "Portionsvolumen und tatsächliches Gewicht unterscheiden sich je nach Krokettengröße, Dichte und Form."
-  methodology: "Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseite; kein eigener Langzeittest."
-  maintenance: "Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall ersetzen."
+  summary: Portionsvolumen und tatsächliches Gewicht unterscheiden sich je nach Krokettengröße, Dichte und Form.
+  methodology: Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseite; kein eigener Langzeittest.
+  maintenance: Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall ersetzen.
 alternatives:
-  - "petkit-fresh-element-solo"
-  - "xiaomi-smart-pet-food-feeder-2"
-  - "surefeed-microchip-pet-feeder"
+  - petkit-fresh-element-solo
+  - xiaomi-smart-pet-food-feeder-2
+  - surefeed-microchip-pet-feeder
 comparisons:
-  - "beste-futterautomaten-fuer-katzen"
-  - "beste-futterautomaten-fuer-hunde"
+  - beste-futterautomaten-fuer-katzen
+  - beste-futterautomaten-fuer-hunde
 specs:
-  - label: "Modell"
-    value: "PLAF103"
-  - label: "Futterart"
-    value: "Trockenfutter"
-  - label: "Krokettengröße"
-    value: "2 bis 15 mm"
-  - label: "Kapazität"
-    value: "5 Liter"
-  - label: "Mahlzeiten"
-    value: "1 bis 10 pro Tag"
-  - label: "Portionierung"
-    value: "1 bis 50 Portionen pro Mahlzeit"
-  - label: "Portionsgröße"
-    value: "20 ml, laut Hersteller ungefähr 10 g"
-  - label: "App"
-    value: "PETLIBRO-App"
-  - label: "WLAN"
-    value: "2,4 und 5 GHz"
-  - label: "Kamera"
-    value: "Nein"
-  - label: "Napfmaterial"
-    value: "Edelstahl"
-  - label: "Stromversorgung"
-    value: "Netzadapter und Batterie-Backup"
-  - label: "Abmessungen"
-    value: "340 × 190 × 190 mm"
-  - label: "Gewicht"
-    value: "1,66 kg"
-  - label: "Geeignet für"
-    value: "Katzen und kleine bis mittelgroße Hunde"
-  - { label: "Reinigung", value: "Nicht vom Hersteller ausgewiesen" }
-  - { label: "Batterie", value: "Nicht vom Hersteller ausgewiesen" }
+  - label: Modell
+    value: PLAF103
+  - label: Futterart
+    value: Trockenfutter
+  - label: Krokettengröße
+    value: 2 bis 15 mm
+  - label: Kapazität
+    value: 5 Liter
+  - label: Mahlzeiten
+    value: 1 bis 10 pro Tag
+  - label: Portionierung
+    value: 1 bis 50 Portionen pro Mahlzeit
+  - label: Portionsgröße
+    value: 20 ml, laut Hersteller ungefähr 10 g
+  - label: App
+    value: PETLIBRO-App
+  - label: WLAN
+    value: 2,4 und 5 GHz
+  - label: Kamera
+    value: Nein
+  - label: Napfmaterial
+    value: Edelstahl
+  - label: Stromversorgung
+    value: Netzadapter und Batterie-Backup
+  - label: Abmessungen
+    value: 340 × 190 × 190 mm
+  - label: Gewicht
+    value: 1,66 kg
+  - label: Geeignet für
+    value: Katzen und kleine bis mittelgroße Hunde
+  - label: Reinigung
+    value: Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall ersetzen.
+  - label: Batterie
+    value: 3 D-Batterien; Zeitpläne laufen weiter
 comparisonFilters:
-  largeDogFitReason: "Technisch stark für größere Rationen: 5 L Vorrat, bis ca. 500 g je Mahlzeit, Kroketten bis 15 mm. Napf und Standfestigkeit individuell prüfen."
-  largeDogFit: "technical-fit"
-  manufacturerSizeClaim: "small-medium"
+  largeDogFitReason: >-
+    Technisch stark für größere Rationen: 5 L Vorrat, bis ca. 500 g je Mahlzeit, Kroketten bis 15 mm. Napf und
+    Standfestigkeit individuell prüfen.
+  largeDogFit: technical-fit
+  manufacturerSizeClaim: small-medium
   kibbleMaxMm: 15
   maxMealMl: 1000
   maxMealGrams: 500
@@ -149,66 +159,86 @@ comparisonFilters:
   portionMl: 20
   portionGrams: 10
   reservoirLiters: 5
-  animal: ["dog", "cat"]
-  petSize: ["small", "medium"]
+  animal:
+    - dog
+    - cat
+  petSize:
+    - small
+    - medium
 faq:
-  - question: "Kann der PETLIBRO Granary Nassfutter ausgeben?"
-    answer: "Nein. PETLIBRO gibt das Modell ausschließlich für Trockenfutter frei."
-  - question: "Wie groß ist eine Portion?"
-    answer: "PETLIBRO nennt 20 ml beziehungsweise ungefähr 10 g. Das tatsächliche Gewicht hängt stark vom Futter ab."
-  - question: "Unterstützt der Granary 5-GHz-WLAN?"
-    answer: "Ja. Die aktuelle PLAF103-Version unterstützt 2,4- und 5-GHz-WLAN."
-  - question: "Verhindert die Doppelschale Futterklau?"
-    answer: "Nein. Sie verteilt die Ausgabe auf zwei Näpfe, kontrolliert aber nicht, welches Tier frisst."
-useCase: "Für Katzen und kleine bis mittelgroße Hunde mit Trockenfutter"
-capacity: "5 Liter"
-expandable: "Einzel- oder Doppelschale erhältlich"
+  - question: Kann der PETLIBRO Granary Nassfutter ausgeben?
+    answer: Nein. PETLIBRO gibt das Modell ausschließlich für Trockenfutter frei.
+  - question: Wie groß ist eine Portion?
+    answer: PETLIBRO nennt 20 ml beziehungsweise ungefähr 10 g. Das tatsächliche Gewicht hängt stark vom Futter ab.
+  - question: Unterstützt der Granary 5-GHz-WLAN?
+    answer: Ja. Die aktuelle PLAF103-Version unterstützt 2,4- und 5-GHz-WLAN.
+  - question: Verhindert die Doppelschale Futterklau?
+    answer: Nein. Sie verteilt die Ausgabe auf zwei Näpfe, kontrolliert aber nicht, welches Tier frisst.
+useCase: Für Katzen und kleine bis mittelgroße Hunde mit Trockenfutter
+capacity: 5 Liter
+expandable: Einzel- oder Doppelschale erhältlich
 features:
-  - "Bis zu zehn Mahlzeiten täglich"
-  - "App-Steuerung und Fütterungsprotokoll"
-  - "Batterie-Backup"
+  - Bis zu zehn Mahlzeiten täglich
+  - App-Steuerung und Fütterungsprotokoll
+  - Batterie-Backup
 comparisonData:
   version: 1
   general:
     animal:
-      - "dog"
-      - "cat"
+      - dog
+      - cat
     petSize:
-      - "small"
-      - "medium"
+      - small
+      - medium
     foodType: []
     reservoirLiters: 5
     portionGrams: 10
     maxPortionsPerMeal: 50
     maxMealGrams: 500
     kibbleMaxMm: 15
-    largeDogFit: "technical-fit"
+    largeDogFit: technical-fit
   editorial:
     rating: 4.1
     score: 82
-    productStatus: "unknown"
+    productStatus: unknown
   custom:
-    portionierung: "1–50 Einheiten je Mahlzeit; 20 ml je Einheit"
-    krokettengroesse: "2–15 mm"
-    napf: "Edelstahl; Einzel- oder Doppelschale"
-    kapazitaet: "5 Liter"
-    notstrom: "3 D-Batterien; Zeitpläne laufen weiter"
-    hundegroesse: "klein bis mittelgroß"
-    kamera: "Nein"
-    tiertrennung: "Nein; Doppelschale verteilt nur"
-    redaktionellesprofil: "Bester Gesamtkompromiss"
-    futterart: "Trockenfutter"
-    zugang: "Freier Zugang; keine Tiererkennung"
-    mehrkatzen: "Doppelschale möglich, aber keine sichere Trennung"
-    reinigung: "Behälter, Rotor, Auslass und Edelstahlnapf regelmäßig reinigen"
-    zugangskontrolle: "Keine individuelle Kontrolle"
-    zahl-der-futterplatze: "Einzel- oder Doppelschale je Variante"
-    futterarten: "Trockenfutter"
-    mehrkatzen-eignung: "Gut bei gleichem Futter und ähnlicher Ration"
-    konfliktpotenzial: "Mittel; Doppelschale verhindert keinen Futterklau"
-    kostenlogik: "Ein Gerät, Doppelschalenvariante separat prüfen"
+    portionierung: 1–50 Einheiten je Mahlzeit; 20 ml je Einheit
+    krokettengroesse: 2–15 mm
+    napf: Edelstahl; Einzel- oder Doppelschale
+    kapazitaet: 5 Liter
+    notstrom: 3 D-Batterien; Zeitpläne laufen weiter
+    hundegroesse: klein bis mittelgroß
+    kamera: Nein
+    tiertrennung: Nein; Doppelschale verteilt nur
+    redaktionellesprofil: Bester Gesamtkompromiss
+    futterart: Trockenfutter
+    zugang: Freier Zugang; keine Tiererkennung
+    mehrkatzen: Doppelschale möglich, aber keine sichere Trennung
+    reinigung: Behälter, Rotor, Auslass und Edelstahlnapf regelmäßig reinigen
+    zugangskontrolle: Keine individuelle Kontrolle
+    zahl-der-futterplatze: Einzel- oder Doppelschale je Variante
+    futterarten: Trockenfutter
+    mehrkatzen-eignung: Gut bei gleichem Futter und ähnlicher Ration
+    konfliktpotenzial: Mittel; Doppelschale verhindert keinen Futterklau
+    kostenlogik: Ein Gerät, Doppelschalenvariante separat prüfen
+    modell: PLAF103
+    krokettengrosse: 2 bis 15 mm
+    kapazitat: 5 Liter
+    mahlzeiten: 1 bis 10 pro Tag
+    portionsgrosse: 20 ml, laut Hersteller ungefähr 10 g
+    app: PETLIBRO-App
+    wlan: 2,4 und 5 GHz
+    napfmaterial: Edelstahl
+    stromversorgung: Netzadapter und Batterie-Backup
+    abmessungen: 340 × 190 × 190 mm
+    gewicht: 1,66 kg
+    geeignet_fur: Katzen und kleine bis mittelgroße Hunde
+    batterie: 3 D-Batterien; Zeitpläne laufen weiter
+metadata:
+  version: "4.0"
+  normalizedAt: "2026-07-26"
+  policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
-
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 
 ## Portionen richtig einordnen
