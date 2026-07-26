@@ -1,0 +1,109 @@
+{
+  "patch": "pfotentechnik-product-metadata-4.0.3",
+  "generatedAt": "2026-07-26T04:55:06.121Z",
+  "auditIssuesBefore": [
+    {
+      "level": "error",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
+      "slug": "aqara-smart-pet-feeder-c1",
+      "message": "Hersteller aqara existiert nicht.",
+      "category": "integrity"
+    },
+    {
+      "level": "error",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "file": "src/content/products/pawsync-smart-pet-feeder.md",
+      "slug": "pawsync-smart-pet-feeder",
+      "message": "Hersteller pawsync existiert nicht.",
+      "category": "integrity"
+    }
+  ],
+  "changes": [],
+  "unresolved": [
+    {
+      "file": "apps\\pfotentechnik\\src\\content\\products\\aqara-smart-pet-feeder-c1.md",
+      "slug": "aqara-smart-pet-feeder-c1",
+      "currentManufacturer": {
+        "key": "aqara",
+        "name": "Aqara",
+        "slug": "aqara"
+      },
+      "reason": "kein Kandidat mit ausreichender Evidenz",
+      "candidates": [
+        {
+          "slug": "cat-mate",
+          "name": "Cat Mate",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "catit",
+          "name": "Catit",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "garmin",
+          "name": "Garmin",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "honeyguardian",
+          "name": "HoneyGuardian",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "imipaw",
+          "name": "IMIPAW",
+          "score": 0,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "file": "apps\\pfotentechnik\\src\\content\\products\\pawsync-smart-pet-feeder.md",
+      "slug": "pawsync-smart-pet-feeder",
+      "currentManufacturer": {
+        "key": "pawsync",
+        "name": "PawSync",
+        "slug": "pawsync"
+      },
+      "reason": "kein Kandidat mit ausreichender Evidenz",
+      "candidates": [
+        {
+          "slug": "cat-mate",
+          "name": "Cat Mate",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "catit",
+          "name": "Catit",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "garmin",
+          "name": "Garmin",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "honeyguardian",
+          "name": "HoneyGuardian",
+          "score": 0,
+          "reasons": []
+        },
+        {
+          "slug": "imipaw",
+          "name": "IMIPAW",
+          "score": 0,
+          "reasons": []
+        }
+      ]
+    }
+  ]
+}
