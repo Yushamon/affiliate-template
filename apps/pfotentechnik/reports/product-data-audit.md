@@ -1,13 +1,13 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-26T05:18:15.526Z
+Erstellt: 2026-07-26T05:25:52.787Z
 
 ## Zusammenfassung
 
 - Produkte: 65
 - Fehler: 0
-- Warnungen: 92
-- Dokumentierte Hinweise: 157
+- Warnungen: 84
+- Dokumentierte Hinweise: 156
 - Doppelte Slugs: 0
 
 ## Kategorien
@@ -22,9 +22,8 @@ Erstellt: 2026-07-26T05:18:15.526Z
 
 - Datei: `src\content\products\petlibro-space-smart-feeder.md`
 - Kategorie: futterautomaten
-- Vollständigkeit: 82%
+- Vollständigkeit: 85%
 - Warnungen:
-  - Comparison-Bild fehlt
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld fehlt: reinigung
@@ -52,16 +51,6 @@ Erstellt: 2026-07-26T05:18:15.526Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
-
-### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
-
-- Datei: `src\content\products\oneisall-2-in-1-feeder-water.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 91%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: gewicht
 
 ### oneisall 3,2L Cordless Cat Fountain
 
@@ -132,6 +121,15 @@ Erstellt: 2026-07-26T05:18:15.526Z
   - Empfohlenes Feld fehlt: bluetooth
   - Empfohlenes Feld fehlt: material
 
+### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
+
+- Datei: `src\content\products\oneisall-2-in-1-feeder-water.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: napf
+  - Empfohlenes Feld fehlt: gewicht
+
 ### oneisall 2,2L Cordless Cat Fountain
 
 - Datei: `src\content\products\oneisall-2-2l-cordless-fountain.md`
@@ -145,23 +143,6 @@ Erstellt: 2026-07-26T05:18:15.526Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe
   - Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-
-### PawSync Smart Pet Feeder
-
-- Datei: `src\content\products\pawsync-smart-pet-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
 ### PETKIT Eversweet 5 Mini
 
@@ -301,83 +282,6 @@ Erstellt: 2026-07-26T05:18:15.526Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: uv
   - Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe
 
-### PetSafe FreshFeed Refrigerated Pet Feeder
-
-- Datei: `src\content\products\petsafe-freshfeed-refrigerated-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### PetSafe Healthy Pet Simply Feed
-
-- Datei: `src\content\products\petsafe-healthy-pet-simply-feed.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### PetSafe Smart Feed 2.0
-
-- Datei: `src\content\products\petsafe-smart-feed-2.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### SureFeed Microchip Pet Feeder Connect
-
-- Datei: `src\content\products\surefeed-microchip-pet-feeder-connect.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### WOPET Cube Air WiFi Pet Feeder CA10
-
-- Datei: `src\content\products\wopet-cube-air-ca10.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
 ### WOPET Patrol F07 Pro
 
 - Datei: `src\content\products\wopet-patrol-f07-pro.md`
@@ -505,6 +409,22 @@ Erstellt: 2026-07-26T05:18:15.526Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
+### PawSync Smart Pet Feeder
+
+- Datei: `src\content\products\pawsync-smart-pet-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
 ### PETKIT Eversweet Solo 2
 
 - Datei: `src\content\products\petkit-eversweet-solo-2-fountain.md`
@@ -615,6 +535,78 @@ Erstellt: 2026-07-26T05:18:15.526Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+
+### PetSafe FreshFeed Refrigerated Pet Feeder
+
+- Datei: `src\content\products\petsafe-freshfeed-refrigerated-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### PetSafe Healthy Pet Simply Feed
+
+- Datei: `src\content\products\petsafe-healthy-pet-simply-feed.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: kamera
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### PetSafe Smart Feed 2.0
+
+- Datei: `src\content\products\petsafe-smart-feed-2.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### SureFeed Microchip Pet Feeder Connect
+
+- Datei: `src\content\products\surefeed-microchip-pet-feeder-connect.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### WOPET Cube Air WiFi Pet Feeder CA10
+
+- Datei: `src\content\products\wopet-cube-air-ca10.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
 ### WOPET Heritage View Camera Feeder
 

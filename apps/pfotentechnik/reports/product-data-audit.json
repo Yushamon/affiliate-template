@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T05:18:15.526Z",
+    "generatedAt": "2026-07-26T05:25:52.787Z",
     "totalProducts": 65,
     "byCategory": {
       "futterautomaten": 37,
@@ -8,8 +8,8 @@
       "gps-tracker": 8
     },
     "errors": 0,
-    "warnings": 92,
-    "notes": 157,
+    "warnings": 84,
+    "notes": 156,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -1396,7 +1396,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: gewicht"
       ],
@@ -1510,7 +1509,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 85,
       "confirmedCompleteness": 85,
-      "completeness": 91
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\oneisall-3-2l-cordless-fountain.md",
@@ -2192,7 +2191,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -2277,7 +2275,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-3-pro-uvc.md",
@@ -4914,7 +4912,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Comparison-Bild fehlt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: reinigung",
@@ -5003,7 +5000,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 69,
       "confirmedCompleteness": 69,
-      "completeness": 82
+      "completeness": 85
     },
     {
       "file": "src\\content\\products\\petlibro-stainless-steel-fountain.md",
@@ -5100,7 +5097,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5181,7 +5177,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petsafe-healthy-pet-simply-feed.md",
@@ -5190,7 +5186,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5275,7 +5270,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petsafe-smart-feed-2.md",
@@ -5284,7 +5279,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5359,7 +5353,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder-connect.md",
@@ -5368,7 +5362,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5447,7 +5440,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder.md",
@@ -5828,13 +5821,11 @@
     {
       "file": "src\\content\\products\\weenect-xs.md",
       "slug": "weenect-xs",
-      "title": "Weenect XS",
+      "title": "Weenect XS GPS-Tracker",
       "category": "gps-tracker",
       "errors": [],
       "warnings": [],
-      "notes": [
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
-      ],
+      "notes": [],
       "specs": [
         {
           "label": "Ortung",
@@ -5842,39 +5833,59 @@
         },
         {
           "label": "Übertragung",
-          "value": "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM"
+          "value": "2G, NB-IoT/LTE-M und 4G über integrierte SIM"
+        },
+        {
+          "label": "Netze in Deutschland",
+          "value": "Vodafone, Deutsche Telekom und O2 laut Hersteller"
         },
         {
           "label": "Reichweite",
-          "value": "Keine feste Distanzgrenze; unterstützte Netzabdeckung erforderlich"
+          "value": "Keine feste Distanzgrenze; unterstützte Satelliten- und Mobilfunkabdeckung erforderlich"
+        },
+        {
+          "label": "Live-Tracking",
+          "value": "Superlive mit Sekundenupdates; Sitzungsdauer abhängig von Tarif und Zusatzoption"
         },
         {
           "label": "Abo",
-          "value": "Erforderlich; eigenes Abo pro Tracker"
+          "value": "Erforderlich; eigenes Abonnement pro Tracker"
+        },
+        {
+          "label": "Abo-Modelle",
+          "value": "Monatlich sowie Prepaid-Laufzeiten über ein, zwei oder fünf Jahre"
         },
         {
           "label": "App",
-          "value": "Weenect App und Web-App"
+          "value": "Weenect App für iOS und Android sowie Web-App"
+        },
+        {
+          "label": "App-Kompatibilität",
+          "value": "iOS 13.6 oder höher; Android-Mindestversion je nach aktueller Herstellerseite prüfen"
         },
         {
           "label": "WLAN",
-          "value": "WLAN-Energiesparzonen"
+          "value": "WLAN-Energiesparzonen; WLAN ist kein eigenständiger Ortungsweg"
         },
         {
           "label": "Bluetooth",
-          "value": "Nicht als Ortungsweg ausgewiesen"
+          "value": "Nicht als eigenständiger Such- oder Ortungsweg ausgewiesen"
+        },
+        {
+          "label": "Akkukapazität",
+          "value": "500 mAh"
         },
         {
           "label": "Akkulaufzeit",
-          "value": "Bis zu 7 Tage mit WLAN-Zonen; etwa 2 Tage bei kontinuierlichem Tracking"
+          "value": "Bis zu 7 Tage mit WLAN-Energiesparzonen; etwa 2 Tage bei durchgehender Ortung"
         },
         {
-          "label": "Stromversorgung",
-          "value": "500-mAh-Akku; magnetisches USB-A-Ladekabel"
+          "label": "Laden",
+          "value": "Magnetisches USB-A-Ladekabel"
         },
         {
           "label": "Wasserschutz",
-          "value": "IP68; bis 1,5 m für 60 Minuten"
+          "value": "IP68; laut Hersteller bis 1,5 m Wassertiefe für 60 Minuten"
         },
         {
           "label": "Abmessungen",
@@ -5882,30 +5893,40 @@
         },
         {
           "label": "Gewicht",
-          "value": "27 g"
+          "value": "27 g Gerätegewicht"
+        },
+        {
+          "label": "Mindestgewicht des Tieres",
+          "value": "3 kg laut Hersteller"
         },
         {
           "label": "Geeignet für",
-          "value": "Katzen und Hunde ab 3 kg"
+          "value": "Katzen und kleine Hunde ab 3 kg"
         },
         {
           "label": "Befestigung",
-          "value": "Silikonhüllen; Katzenversion mit Anti-Strangulations-Elastikband"
+          "value": "Silikonhalter; Katzenangebote je nach Paket mit Anti-Strangulations-Elastikband"
+        },
+        {
+          "label": "Signale",
+          "value": "Ton, Vibration und Licht"
+        },
+        {
+          "label": "Mehrnutzer",
+          "value": "Konto kann mit weiteren Personen geteilt werden"
         },
         {
           "label": "Material",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "Keine belastbare Herstellerangabe zum Gehäusematerial"
         },
         {
           "label": "Reinigung",
-          "value": "Silikonhalter oder Katzenband, Gehäuse und Ladekontakte regelmäßig prüfen."
+          "value": "Gehäuse, Silikonhalter und Ladekontakte regelmäßig reinigen und vollständig trocknen"
         }
       ],
-      "unknownSpecs": [
-        "Material"
-      ],
+      "unknownSpecs": [],
       "structuralCompleteness": 100,
-      "confirmedCompleteness": 93,
+      "confirmedCompleteness": 100,
       "completeness": 100
     },
     {
@@ -5998,7 +6019,6 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -6083,7 +6103,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\wopet-heritage-view-camera-feeder.md",
