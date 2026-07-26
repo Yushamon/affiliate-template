@@ -54,10 +54,22 @@ images:
       alt: Kabellose Pumpeneinheit in Nahaufnahme
     - src: ../../assets/images/products/petkit-eversweet-solo-2-fountain/gallery-3.webp
       alt: Eversweet Solo 2 im Wohnbereich
+price:
+  current: 40.84
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 8 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T21:17:00.802Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+2+Trinkbrunnen
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/PETKIT-Automatische-Intelligenter-Trinkbrunnen-Wasserpumpe/dp/B0B4W8FDBV/ref=sr_1_6?crid=13H18OTGNC1KA&dib=eyJ2IjoiMSJ9.3LSW91xIJf7OhUTWxU3BbKFFTo8zchYGdYA680UaJ2cDbbMcPSPWiy2tmnxelD4Wqzp8cxiShJzstYKWWVihwTeakbfGZkr3psLOI7QTipgoHc7h2eio6LzzaRkGvz64n6pufLMPAvQvuIbf0oF3bW9kfGlUDgqbABRdjEwVNP2J4NC4qKU9dy5W3F6K3sv_IxCufXdwRelrYtpGaU7ki7T9xsN2dQmtybjkXzOiRQhOsqCVyw_rtl5e3cLpy85vlFmNguyz2C6skSLXecQDQv79cC-Li7rwCNO9bKvinJo.t0Y2BSVl0tl4NrdQ5TgtqERYCBa9Ne1UdCirVP-lSGE&dib_tag=se&keywords=petkit+eversweet+solo+2&qid=1785100478&sprefix=petlot+eversweet+solo%2Caps%2C113&sr=8-6"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.4
 score: 87
 ratings:

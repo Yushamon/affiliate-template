@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.1";
+const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.2";
 const args = process.argv.slice(2);
 const index = args.indexOf("--repo");
 const repo = path.resolve(index >= 0 ? args[index + 1] : process.cwd());

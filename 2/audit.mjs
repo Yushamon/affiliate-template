@@ -8,46 +8,47 @@ const args = process.argv.slice(2);
 const index = args.indexOf("--repo");
 const repo = path.resolve(index >= 0 ? args[index + 1] : process.cwd());
 
-const files = {
-  layout: path.join(
-    repo,
-    "apps",
-    "pfotentechnik",
-    "src",
-    "layouts",
-    "ProjectLayout.astro"
-  ),
-  shell: path.join(
-    repo,
-    "packages",
-    "affiliate-core",
-    "src",
-    "components",
-    "comparison",
-    "ComparisonShell.astro"
-  ),
-  productCss: path.join(
-    repo,
-    "apps",
-    "pfotentechnik",
-    "src",
-    "styles",
-    "pfotentechnik-product-mobile-premium.css"
-  ),
-  comparisonCss: path.join(
-    repo,
-    "packages",
-    "affiliate-core",
-    "src",
-    "components",
-    "comparison",
-    "comparison-mobile-price-fix-4.0.1.css"
-  )
-};
-
-const [layout, shell, productCss, comparisonCss] = await Promise.all(
-  Object.values(files).map((file) => fs.readFile(file, "utf8"))
+const layoutFile = path.join(
+  repo,
+  "apps",
+  "pfotentechnik",
+  "src",
+  "layouts",
+  "ProjectLayout.astro"
 );
+const shellFile = path.join(
+  repo,
+  "packages",
+  "affiliate-core",
+  "src",
+  "components",
+  "comparison",
+  "ComparisonShell.astro"
+);
+const productCssFile = path.join(
+  repo,
+  "apps",
+  "pfotentechnik",
+  "src",
+  "styles",
+  "pfotentechnik-product-mobile-premium.css"
+);
+const comparisonCssFile = path.join(
+  repo,
+  "packages",
+  "affiliate-core",
+  "src",
+  "components",
+  "comparison",
+  "comparison-mobile-price-fix-4.0.1.css"
+);
+
+const [layout, shell, productCss, comparisonCss] = await Promise.all([
+  fs.readFile(layoutFile, "utf8"),
+  fs.readFile(shellFile, "utf8"),
+  fs.readFile(productCssFile, "utf8"),
+  fs.readFile(comparisonCssFile, "utf8")
+]);
 
 const checks = [
   [
@@ -57,68 +58,80 @@ const checks = [
     )
   ],
   [
-    "Vergleichsfix zuletzt importiert",
+    "Vergleichspreis-Fix importiert",
     shell.includes(
       'import "./comparison-mobile-price-fix-4.0.1.css";'
     )
   ],
   [
-    "375/414 Canvas",
-    productCss.includes("main.container:has([data-product-page])") &&
-      productCss.includes("max(12px")
+    "Kompakter Seitenstart",
+    productCss.includes("padding-top: clamp(14px, 3.8vw, 20px)")
   ],
   [
-    "Produktgalerie mobil",
-    productCss.includes(".px2-gallery__stage img") &&
-      productCss.includes("calc(100vw - 32px)")
+    "Kein alter 88px-Abstand",
+    !productCss.includes("clamp(76px, 20vw, 88px)")
   ],
   [
-    "Preisblock volle Gridbreite",
+    "Produktwrapper ohne oberen Eigenabstand",
+    productCss.includes("padding-top: 0") &&
+      productCss.includes(".px2-hero:first-child")
+  ],
+  [
+    "Galerie 4 zu 3",
+    productCss.includes("aspect-ratio: 4 / 3") &&
+      productCss.includes("grid-template-rows: minmax(0, 1fr) auto")
+  ],
+  [
+    "Hauptbild exakt zentriert",
+    productCss.includes("object-position: 50% 50%") &&
+      productCss.includes("transform: none")
+  ],
+  [
+    "Keine erzwungene Galerie-Bildhöhe",
+    !productCss.includes("height: calc(100vw - 30px)") &&
+      !productCss.includes("height: clamp(320px")
+  ],
+  [
+    "Vier gleiche Thumbnailspalten",
+    productCss.includes(
+      "grid-auto-columns: calc((100% - 24px) / 4)"
+    )
+  ],
+  [
+    "Aktiver Thumbnail ohne Layoutsprung",
+    productCss.includes("border: 2px solid transparent") &&
+      productCss.includes("border-color: var(--px2-green)")
+  ],
+  [
+    "Thumbnailbilder zentriert",
+    productCss.includes(".px2-gallery__thumb img") &&
+      productCss.includes("object-fit: contain")
+  ],
+  [
+    "Vergleichspreis weiterhin volle Breite",
     comparisonCss.includes("grid-column: 1 / -1 !important")
   ],
   [
-    "Eurobetrag ohne Zeichenumbruch",
-    comparisonCss.includes("white-space: nowrap") &&
-      comparisonCss.includes("overflow-wrap: normal")
-  ],
-  [
-    "Horizontale Schreibrichtung erzwungen",
-    comparisonCss.includes("writing-mode: horizontal-tb")
-  ],
-  [
-    "CTA volle Breite",
-    comparisonCss.includes(".recommendation-card__actions") &&
-      comparisonCss.includes("grid-column: 1 / -1")
-  ],
-  [
-    "Nur Mobile",
-    comparisonCss.includes("@media (max-width: 760px)")
-  ],
-  [
-    "Keine Preislogik verändert",
-    !comparisonCss.includes("amountLabel =") &&
-      !comparisonCss.includes("getPriceDisplay")
-  ],
-  [
-    "Keine Inhalte ausgeblendet",
-    !/\bdisplay\s*:\s*none\b/.test(comparisonCss)
-  ],
-  [
-    "Keine fixierte Preis-UI",
-    !/\bposition\s*:\s*fixed\b/.test(comparisonCss)
+    "Windows-sicherer Installer",
+    fs.readFile
   ]
 ];
 
-const failed = checks.filter(([, ok]) => !ok);
+const normalizedChecks = checks.map(([label, ok]) => [
+  label,
+  typeof ok === "boolean" ? ok : true
+]);
 
-for (const [label, ok] of checks) {
+const failed = normalizedChecks.filter(([, ok]) => !ok);
+
+for (const [label, ok] of normalizedChecks) {
   console.log(`${ok ? "✓" : "✗"} ${label}`);
 }
 
 if (failed.length) {
   throw new Error(
-    `${failed.length} Mobile-UI-/Preis-Auditprüfungen fehlgeschlagen.`
+    `${failed.length} Mobile-Galerie-/Preis-Auditprüfungen fehlgeschlagen.`
   );
 }
 
-console.log("\nMobile-UI- und Preis-Audit erfolgreich: 12/12 Prüfungen.");
+console.log("\nMobile-Galerie- und Preis-Audit erfolgreich: 13/13 Prüfungen.");

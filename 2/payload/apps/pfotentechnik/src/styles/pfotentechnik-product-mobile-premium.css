@@ -1,5 +1,5 @@
 /*
- * PfotenTechnik Mobile Product Layout 4.0.1
+ * PfotenTechnik Mobile Product Layout 4.0.2
  *
  * Reine Präsentationsschicht für Produktseiten.
  * Keine Änderungen an Daten, Logik, SEO, Texten oder Komponentenstruktur.
@@ -15,7 +15,7 @@
   main.container:has([data-product-page]) {
     width: 100%;
     max-width: none;
-    padding-top: clamp(76px, 20vw, 88px);
+    padding-top: clamp(14px, 3.8vw, 20px);
     padding-right: max(12px, env(safe-area-inset-right));
     padding-bottom: calc(64px + env(safe-area-inset-bottom));
     padding-left: max(12px, env(safe-area-inset-left));
@@ -24,7 +24,16 @@
   [data-product-page].pt-product-detail {
     width: 100%;
     max-width: none;
-    margin-inline: 0;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  main.container:has([data-product-page]) > [data-product-page],
+  [data-product-page] [data-product-experience="2.0"] > .px2-hero:first-child,
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__media,
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   [data-product-page] [data-product-experience="2.0"] {
@@ -159,13 +168,29 @@
     );
   }
 
-  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage img {
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage {
+    display: grid;
     width: 100%;
-    height: clamp(320px, calc(100vw - 32px), 390px);
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    grid-template-rows: minmax(0, 1fr) auto;
+    place-items: stretch;
+    margin: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
     max-height: none;
     aspect-ratio: auto;
-    padding: 6px 4px 8px;
+    margin: 0;
+    padding: 8px;
     object-fit: contain;
+    object-position: 50% 50%;
+    transform: none;
   }
 
   [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage figcaption {
@@ -175,28 +200,54 @@
   }
 
   [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumbs {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 24px) / 4);
+    align-items: stretch;
+    justify-content: start;
     gap: 8px;
-    margin-top: 8px;
-    margin-inline: 0;
-    padding: 0;
+    margin: 10px 0 0;
+    padding: 0 0 2px;
+    overflow-x: auto;
+    scroll-padding-inline: 0;
+    scrollbar-width: thin;
   }
 
   [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb {
-    flex: 0 0 76px;
-    min-height: 64px;
-    padding: 2px;
-    border-width: 1px;
+    display: grid;
+    width: 100%;
+    height: 72px;
+    min-width: 0;
+    min-height: 72px;
+    flex: none;
+    place-items: center;
+    margin: 0;
+    padding: 3px;
+    border: 2px solid transparent;
     border-radius: 12px;
-    background: transparent;
+    background: var(--px2-surface-raised);
+    box-sizing: border-box;
+    scroll-snap-align: start;
   }
 
   [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb.is-active {
-    border-width: 2px;
+    border-color: var(--px2-green);
+    box-shadow: inset 0 0 0 1px color-mix(
+      in srgb,
+      var(--px2-green) 22%,
+      transparent
+    );
   }
 
   [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb img {
-    height: 58px;
-    border-radius: 9px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 8px;
+    object-fit: contain;
+    object-position: 50% 50%;
   }
 
   /*
@@ -691,8 +742,8 @@
     padding-inline: 15px;
   }
 
-  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage img {
-    height: calc(100vw - 30px);
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage {
+    aspect-ratio: 4 / 3;
   }
 
   [data-product-page] [data-product-experience="2.0"] .alternatives article {

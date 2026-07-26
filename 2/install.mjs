@@ -6,7 +6,7 @@ import process from "node:process";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
-const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.1";
+const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.2";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const payloadRoot = path.join(here, "payload");
 const args = process.argv.slice(2);
@@ -84,7 +84,6 @@ function addAstroImport(source, {
 
   const frontmatter = normalized.slice(4, secondFence);
   const lines = frontmatter.split("\n");
-
   let insertAt = lines.findIndex((line) => line.includes(preferredAnchor));
 
   if (insertAt < 0) {
@@ -116,17 +115,14 @@ function run(command, commandArgs, { cwd = repo } = {}) {
   let executable = command;
   let finalArgs = commandArgs;
 
-  /*
-   * Node 24/26 kann unter Windows beim direkten spawnSync von npm.cmd mit
-   * shell:false EINVAL liefern. cmd.exe ist dort der stabile, dokumentierte
-   * Einstieg für .cmd-Dateien.
-   */
   if (process.platform === "win32" && /\.cmd$/i.test(command)) {
     executable = process.env.ComSpec || "C:\\Windows\\System32\\cmd.exe";
-    const commandLine = [command, ...commandArgs]
-      .map(quoteForCmd)
-      .join(" ");
-    finalArgs = ["/d", "/s", "/c", commandLine];
+    finalArgs = [
+      "/d",
+      "/s",
+      "/c",
+      [command, ...commandArgs].map(quoteForCmd).join(" ")
+    ];
   }
 
   const result = spawnSync(executable, finalArgs, {
@@ -137,7 +133,6 @@ function run(command, commandArgs, { cwd = repo } = {}) {
   });
 
   if (result.error) throw result.error;
-
   if (result.status !== 0) {
     throw new Error(
       `Befehl fehlgeschlagen (${result.status}): ${command} ${commandArgs.join(" ")}`
@@ -159,7 +154,7 @@ async function validateRepo() {
       "src",
       "components",
       "product-experience-2",
-      "ProductExperience2.astro"
+      "ProductGallery2.astro"
     ),
     path.join(
       repo,
@@ -276,7 +271,7 @@ async function main() {
       fs.writeFile(shellFile, nextShell, "utf8")
     ]);
 
-    console.log(`\n[${PATCH_ID}] Mobile-UI- und Preis-Audit ...`);
+    console.log(`\n[${PATCH_ID}] Mobile-Galerie- und Preis-Audit ...`);
     run(process.execPath, [
       path.join(here, "audit.mjs"),
       "--repo",
@@ -287,10 +282,10 @@ async function main() {
     run(npmCommand, ["run", "build:pfotentechnik"]);
 
     console.log(`\n[${PATCH_ID}] Installation abgeschlossen.`);
-    console.log("- Produktseiten: mobile Premium-Layoutschicht installiert");
-    console.log("- Vergleich: Preisblock belegt mobil immer die volle Kartenbreite");
-    console.log("- Preislabel und Eurobetrag bleiben horizontal lesbar");
-    console.log("- Windows: npm wird stabil über cmd.exe gestartet");
+    console.log("- Abstand zwischen Header und Galerie deutlich reduziert");
+    console.log("- Hauptbilder zentriert auf einer stabilen 4:3-Achse");
+    console.log("- Vier Thumbnails füllen die Galeriebreite gleichmäßig");
+    console.log("- Vergleichspreis-Fix aus 4.0.1 bleibt enthalten");
   } catch (error) {
     await restore(state);
     await fs.rm(statePointer, { force: true });
