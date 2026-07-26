@@ -1,45 +1,37 @@
-# Technische Änderungen
+# Änderungen 2.0.3
 
-## Breadcrumbs
+## Interaktive Kaufentscheidung
 
-`apps/pfotentechnik/src/pages/produkt/[product].astro` rendert die sichtbare `Breadcrumbs.astro`-Komponente nicht mehr. Das bestehende `breadcrumbs`-Property wird weiterhin an `ProjectLayout` übergeben. `AffiliateLayout` erzeugt daraus unverändert das strukturierte `BreadcrumbList`-Schema.
+- Statusgründe werden nicht mehr als `li` mit CSS-Pseudoelementen gerendert.
+- Positive Gründe erhalten einen grünen Haken.
+- Neutrale Gründe erhalten einen amberfarbenen Gedankenstrich.
+- Negative Gründe erhalten ein rotes Kreuz.
+- Globale Listenregeln können die Symbole nicht mehr überschreiben.
+- Die Fragen bleiben offen im Kaufentscheidungs-Block und werden nur durch dünne Divider getrennt.
 
-Damit bleibt die SEO-Hierarchie vollständig erhalten, ohne oberhalb der Galerie auf kleinen Displays mehrere Zeilen Navigation zu verbrauchen.
+## Hybrides Editorial-Layout
 
-## Deduplizierte Produktlisten
+Als Karten bleiben erhalten:
 
-Das neue Modul
+- der zusammengeführte Produkt-Hero
+- die interaktive Kaufbewertung
+- der Preis-Check
+- der farbige Warnhinweis „Nicht kaufen, wenn …“
+- der Gesundheits- und Sicherheitshinweis
 
-```text
-src/domain/productExperience/contentLists.ts
-```
+In den offenen Seitenfluss wechseln:
 
-normalisiert redaktionelle Listenwerte. Es entfernt führende Symbole, vereinheitlicht Leerzeichen und erkennt Duplikate unabhängig von Großschreibung, Bindestrichen, Satzzeichen und Umlauten.
+- Alltagstimeline
+- Vorteile und weitere Nachteile
+- technische Daten
+- FAQ
+- intelligente Alternativen
+- Transparenz und Datengrundlage
 
-Das Produkt-View-Model verwendet diese Logik für:
+Diese Abschnitte verwenden weißen beziehungsweise themeabhängigen Hintergrund, großzügige Abstände, typografische Hierarchie und dünne Trennlinien statt umlaufender Kartenrahmen.
 
-- Vorteile
-- Nachteile
-- Ideal-für-Angaben
-- Nicht-geeignet-für-Angaben
+## Weitere Bereinigungen
 
-Ein Eintrag, der bereits als Einschränkung geführt wird, wird nicht zusätzlich als Vorteil ausgegeben.
-
-## Semantische Symbole
-
-`ProductDetails2.astro` rendert Symbole als eigene, für Screenreader ausgeblendete Elemente. Dadurch kann keine globale Listenformatierung Nachteile versehentlich mit grünen Haken versehen.
-
-## CTA-System
-
-Die finale Theme-Schicht führt folgende semantische Variablen ein:
-
-```css
---pt-cta-primary-bg
---pt-cta-primary-bg-hover
---pt-cta-primary-text
---pt-cta-secondary-bg
---pt-cta-secondary-bg-hover
---pt-cta-secondary-text
-```
-
-Primäre CTAs, Kaufberatungs-CTAs und die Preis-CTA verwenden damit dieselbe Theme-Akzentfarbe. Sekundäre CTAs bleiben visuell nachgeordnet, nutzen aber denselben Akzent für Rahmen und Text.
+- Galerie und Produktinformationen bilden auf Mobilgeräten einen gemeinsamen Hero statt zwei gestapelter Hauptkarten.
+- Warnpunkte werden nicht erneut unter „Weitere Nachteile“ ausgegeben.
+- Die zentrale Text-Deduplizierung und die einheitlichen CTA-Farben aus 2.0.2 sind im Installer kumulativ enthalten.

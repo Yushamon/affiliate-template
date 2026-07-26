@@ -16,7 +16,10 @@ const { model } = Astro.props;
 
 <article class="px2" data-product-experience="2.0">
   <ProductHero2 model={model} />
-  <ProductDecisionAssistant profile={model.decisionProfile} alternatives={model.alternatives} />
+  <ProductDecisionAssistant
+    profile={model.decisionProfile}
+    alternatives={model.alternatives}
+  />
   <ProductEverydayTimeline items={model.timeline} />
   <ProductDetails2 model={model} />
   <ProductAlternatives2 alternatives={model.alternatives} />
@@ -42,7 +45,7 @@ const { model } = Astro.props;
     --px2-shadow: 0 18px 50px rgba(31, 64, 39, .09);
     --px2-on-accent: #fff;
     display: grid;
-    gap: clamp(24px, 4vw, 46px);
+    gap: clamp(22px, 4vw, 42px);
     width: 100%;
     min-width: 0;
     color: var(--px2-text);
@@ -70,7 +73,9 @@ const { model } = Astro.props;
     --px2-on-accent: #07120a;
   }
 
-  .px2 :global(*) { box-sizing: border-box; }
+  .px2 :global(*) {
+    box-sizing: border-box;
+  }
 
   .px2 :global(h2),
   .px2 :global(h3),
@@ -81,6 +86,8 @@ const { model } = Astro.props;
   }
 
   @media (max-width: 720px) {
-    .px2 { gap: 26px; }
+    .px2 {
+      gap: 20px;
+    }
   }
 </style>

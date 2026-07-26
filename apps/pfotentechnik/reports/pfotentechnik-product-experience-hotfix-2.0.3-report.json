@@ -1,0 +1,29 @@
+{
+  "patchId": "pfotentechnik-product-experience-hotfix-2.0.3",
+  "version": "2.0.3",
+  "expectedBaseCommit": "6f332e1f777ef5f3c842caddeb010ce49fc84dfb",
+  "cumulativeFrom": [
+    "2.0.1",
+    "2.0.2"
+  ],
+  "installedAt": "2026-07-26T18:36:26.400Z",
+  "repoRoot": "C:\\hp\\Projekt\\affiliate-template",
+  "backupRoot": "C:\\hp\\Projekt\\affiliate-template\\.patch-backups\\pfotentechnik-product-experience-hotfix-2.0.3-2026-07-26T18-36-26-346Z",
+  "restoredFiles": [
+    "apps\\pfotentechnik\\src\\domain\\productExperience\\contentLists.ts",
+    "apps\\pfotentechnik\\src\\styles\\pfotentechnik-theme-fixes.css",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductExperience2.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductHero2.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductGallery2.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductDecisionAssistant.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductEverydayTimeline.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductDetails2.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductAlternatives2.astro",
+    "apps\\pfotentechnik\\src\\components\\product-experience-2\\ProductTrust2.astro"
+  ],
+  "createdFiles": [
+    "apps\\pfotentechnik\\test\\product-experience-2-hybrid-layout.test.mjs"
+  ],
+  "validationSkipped": false,
+  "status": "success"
+}

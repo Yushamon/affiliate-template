@@ -1,0 +1,132 @@
+---
+import type { ProductExperienceModel } from "../../domain/productExperience/model";
+
+interface Props {
+  model: ProductExperienceModel;
+}
+
+const { model } = Astro.props;
+const pros = model.pros.slice(0, 8);
+const cons = model.cons.slice(0, 8);
+---
+
+<section class="details" aria-label="Produktdetails">
+  <article class="details__decision">
+    <header>
+      <span>Kaufentscheidung</span>
+      <h2>Nicht kaufen, wenn …</h2>
+    </header>
+    <ul class="details__list details__list--negative">
+      {model.notFor.map((item) => (
+        <li>
+          <span class="details__icon" aria-hidden="true">×</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+    <p><strong>Größte Einschränkung:</strong> {model.mainLimitation}</p>
+  </article>
+
+  {(pros.length > 0 || cons.length > 0) && (
+    <article class="details__proscons">
+      {pros.length > 0 && (
+        <div class="details__column details__column--positive">
+          <h2>Vorteile</h2>
+          <ul class="details__list details__list--positive">
+            {pros.map((item) => (
+              <li>
+                <span class="details__icon" aria-hidden="true">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {cons.length > 0 && (
+        <div class="details__column details__column--negative">
+          <h2>Nachteile</h2>
+          <ul class="details__list details__list--negative">
+            {cons.map((item) => (
+              <li>
+                <span class="details__icon" aria-hidden="true">×</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </article>
+  )}
+
+  <aside class="details__health">
+    <span>Gesundheit und Sicherheit</span>
+    <h2>Technik unterstützt, sie ersetzt keine Kontrolle</h2>
+    <p>{model.healthNote}</p>
+  </aside>
+
+  {model.specs.length > 0 && (
+    <details class="details__specs">
+      <summary>Technische Daten einordnen</summary>
+      <dl>
+        {model.specs.map((item) => (
+          <div><dt>{item.label}</dt><dd>{item.value}</dd></div>
+        ))}
+      </dl>
+    </details>
+  )}
+
+  {model.faq.length > 0 && (
+    <section class="details__faq" aria-labelledby="product-faq-title">
+      <h2 id="product-faq-title">Häufige Fragen</h2>
+      {model.faq.map((item) => (
+        <details><summary>{item.question}</summary><p>{item.answer}</p></details>
+      ))}
+    </section>
+  )}
+</section>
+
+<style>
+  .details { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .details > article, .details > aside, .details > details, .details > section { min-width:0; padding:clamp(18px,3vw,28px); border:1px solid var(--px2-border); border-radius:22px; background:var(--px2-surface); }
+  .details__decision { background:linear-gradient(145deg,var(--px2-red-soft),var(--px2-surface))!important; }
+  .details__decision header span { color:var(--px2-red); font-size:.78rem; font-weight:850; text-transform:uppercase; }
+  .details h2 { margin:6px 0 14px; font-size:clamp(1.35rem,3vw,1.9rem); }
+  .details__list { display:grid; gap:10px; margin:0; padding:0; list-style:none; }
+  .details__list li { display:grid; min-width:0; grid-template-columns:1.35rem minmax(0,1fr); gap:.65rem; align-items:start; padding:0; line-height:1.5; }
+  .details__list li::before { content:none!important; display:none!important; }
+  .details__list li::marker { content:""; }
+  .details__icon { display:inline-grid; width:1.35rem; height:1.35rem; place-items:center; margin-top:.08rem; font-size:1.22rem; font-weight:950; line-height:1; }
+  .details__list--positive .details__icon { color:var(--px2-green-strong)!important; }
+  .details__list--negative .details__icon { color:var(--px2-red)!important; }
+  .details__decision p { margin:17px 0 0; padding-top:14px; border-top:1px solid var(--px2-border); line-height:1.55; }
+  .details__proscons { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .details__column { min-width:0; }
+  .details__column--negative { padding-left:22px; border-left:1px solid var(--px2-border); }
+  .details__health, .details__specs, .details__faq { grid-column:1/-1; }
+  .details__health { background:var(--px2-green-soft)!important; }
+  .details__health span { color:var(--px2-green-strong); font-size:.75rem; font-weight:850; text-transform:uppercase; }
+  .details__health h2 { margin:6px 0 8px; }
+  .details__health p { margin:0; color:var(--px2-muted); line-height:1.6; }
+  .details__specs > summary, .details__faq details > summary { cursor:pointer; font-weight:850; }
+  .details__specs dl { display:grid; grid-template-columns:1fr 1fr; gap:0 24px; margin:18px 0 0; }
+  .details__specs dl > div { display:grid; grid-template-columns:minmax(100px,.8fr) minmax(0,1.2fr); gap:12px; padding:10px 0; border-top:1px solid var(--px2-border); }
+  dt { color:var(--px2-muted); }
+  dd { margin:0; font-weight:700; overflow-wrap:anywhere; }
+  .details__faq h2 { margin-top:0; }
+  .details__faq details { padding:13px 0; border-top:1px solid var(--px2-border); }
+  .details__faq p { margin:10px 0 0; color:var(--px2-muted); line-height:1.6; }
+
+  @media(max-width:800px) {
+    .details { grid-template-columns:1fr; }
+    .details__health, .details__specs, .details__faq { grid-column:auto; }
+    .details__proscons { grid-template-columns:1fr; }
+    .details__column--negative { padding-top:20px; padding-left:0; border-top:1px solid var(--px2-border); border-left:0; }
+    .details__specs dl { grid-template-columns:1fr; }
+  }
+
+  @media(max-width:520px) {
+    .details > article, .details > aside, .details > details, .details > section { padding:18px; border-radius:20px; }
+    .details__specs dl > div { grid-template-columns:1fr; gap:4px; }
+  }
+</style>

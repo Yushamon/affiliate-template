@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T17:57:44.948Z",
+    "generatedAt": "2026-07-26T18:36:27.454Z",
     "totalProducts": 68,
     "byCategory": {
       "futterautomaten": 38,
@@ -9,7 +9,7 @@
       "katzenklappen": 1
     },
     "errors": 2,
-    "warnings": 102,
+    "warnings": 101,
     "notes": 152,
     "duplicateSlugs": 0
   },
@@ -21,9 +21,7 @@
       "title": "Aqara Smart Pet Feeder C1",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
@@ -102,7 +100,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\cat-mate-335-pet-fountain.md",

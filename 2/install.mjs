@@ -5,7 +5,7 @@ import process from "node:process";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
-const VERSION = "2.0.2";
+const VERSION = "2.0.3";
 const PATCH_ID = `pfotentechnik-product-experience-hotfix-${VERSION}`;
 const packageRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -88,22 +88,13 @@ async function copyPayload(relative) {
   await writeFile(destination, await fs.readFile(source, "utf8"));
 }
 
-async function patchFile(relative, updater) {
+async function updateFile(relative, updater) {
   const file = path.join(repoRoot, relative);
   if (!(await exists(file))) throw new Error(`Datei fehlt: ${relative}`);
   const current = await fs.readFile(file, "utf8");
   const next = updater(current);
-  if (next === current) throw new Error(`Patch hat keine Änderung erzeugt: ${relative}`);
-  await writeFile(file, next);
-}
-
-function replaceOnce(source, before, after, label) {
-  const index = source.indexOf(before);
-  if (index < 0) throw new Error(`Anker nicht gefunden: ${label}`);
-  if (source.indexOf(before, index + before.length) >= 0) {
-    throw new Error(`Anker ist nicht eindeutig: ${label}`);
-  }
-  return source.slice(0, index) + after + source.slice(index + before.length);
+  if (next !== current) await writeFile(file, next);
+  return next;
 }
 
 function replaceBetween(source, startMarker, endMarker, replacement, label) {
@@ -166,7 +157,7 @@ const listModelBlock = `  const limitations = uniqueTextItems([
 
 const ctaThemeBlock = `
 
-/* Unified PfotenTechnik CTA colors ${VERSION}
+/* Unified PfotenTechnik CTA colors 2.0.2
    A single semantic green is used for every primary CTA. Secondary CTAs
    remain neutral and use the same accent only for border and text. */
 :root {
@@ -195,11 +186,7 @@ nav a[href="#kaufberatung"],
   background: var(--pt-cta-primary-bg) !important;
   color: var(--pt-cta-primary-text) !important;
   -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
-  box-shadow: 0 12px 26px color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 20%,
-    transparent
-  ) !important;
+  box-shadow: 0 12px 26px color-mix(in srgb, var(--pt-cta-primary-bg) 20%, transparent) !important;
 }
 
 .pt-button-primary:hover,
@@ -238,32 +225,65 @@ nav a[href="#kaufberatung"]:hover,
 }
 `;
 
-async function validateInstalledSource() {
-  const productPage = await fs.readFile(
-    path.join(appRoot, "src", "pages", "produkt", "[product].astro"),
-    "utf8"
-  );
-  if (productPage.includes("<Breadcrumbs")) {
-    throw new Error("Das sichtbare Produkt-Breadcrumb wurde nicht entfernt.");
-  }
-  if (!productPage.includes("breadcrumbs={breadcrumbs}")) {
-    throw new Error("BreadcrumbList-Daten für das SEO-Schema fehlen.");
-  }
+const marker = `\n\n/* Product Experience Hybrid Editorial Layout ${VERSION} */\n`;
 
-  const model = await fs.readFile(
-    path.join(appRoot, "src", "domain", "productExperience", "model.ts"),
-    "utf8"
-  );
+async function applyCumulative202() {
+  await copyPayload("apps/pfotentechnik/src/domain/productExperience/contentLists.ts");
+
+  await updateFile("apps/pfotentechnik/src/pages/produkt/[product].astro", (source) => {
+    let next = source;
+    next = next.replace('import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";\n\n', "");
+    next = next.replace(/\n\s*<Breadcrumbs\s+items=\{breadcrumbs\}\s*\/>\s*\n/, "\n  <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->\n");
+    return next;
+  });
+
+  await updateFile("apps/pfotentechnik/src/domain/productExperience/model.ts", (source) => {
+    let next = source;
+    if (!next.includes('from "./contentLists.ts"')) {
+      const anchor = 'import type { ProductDecisionProfile } from "./decisionEngine.ts";\n';
+      if (!next.includes(anchor)) throw new Error("Anker nicht gefunden: contentLists Import");
+      next = next.replace(anchor, `${anchor}import { uniqueTextItems } from "./contentLists.ts";\n`);
+    }
+    if (next.includes("  const limitations = [")) {
+      next = replaceBetween(next, "  const limitations = [", "  const alternatives =", listModelBlock, "deduplizierte Produktlisten");
+    }
+    return next;
+  });
+
+  await updateFile("apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css", (source) => {
+    let next = source.replace(/\s+$/, "");
+    if (!next.includes("Unified PfotenTechnik CTA colors 2.0.2")) next += ctaThemeBlock;
+    if (!next.includes(`Product Experience Hybrid Editorial Layout ${VERSION}`)) next += marker;
+    return `${next.replace(/\s+$/, "")}\n`;
+  });
+}
+
+async function validateInstalledSource() {
+  const productPage = await fs.readFile(path.join(appRoot, "src", "pages", "produkt", "[product].astro"), "utf8");
+  if (productPage.includes("<Breadcrumbs")) throw new Error("Das sichtbare Produkt-Breadcrumb wurde nicht entfernt.");
+  if (!productPage.includes("breadcrumbs={breadcrumbs}")) throw new Error("BreadcrumbList-Daten für das SEO-Schema fehlen.");
+
+  const model = await fs.readFile(path.join(appRoot, "src", "domain", "productExperience", "model.ts"), "utf8");
   if (!model.includes("uniqueTextItems") || model.includes("const limitations = [")) {
     throw new Error("Die zentrale Deduplizierung wurde nicht vollständig eingebaut.");
   }
 
-  const details = await fs.readFile(
-    path.join(appRoot, "src", "components", "product-experience-2", "ProductDetails2.astro"),
-    "utf8"
-  );
-  if (!details.includes('details__list--negative') || !details.includes('aria-hidden="true">×')) {
-    throw new Error("Negative Listen verwenden noch keine eindeutige rote Kennzeichnung.");
+  const decision = await fs.readFile(path.join(appRoot, "src", "components", "product-experience-2", "ProductDecisionAssistant.astro"), "utf8");
+  if (!decision.includes('neutral: "–"') || !decision.includes('negative: "×"')) {
+    throw new Error("Neutrale und negative Entscheidungspunkte haben keine eigenen Statuszeichen.");
+  }
+  if (decision.includes('li[data-kind="neutral"]::before')) {
+    throw new Error("Die Kaufentscheidung verwendet noch globale Listen-Pseudoelemente.");
+  }
+
+  const timeline = await fs.readFile(path.join(appRoot, "src", "components", "product-experience-2", "ProductEverydayTimeline.astro"), "utf8");
+  if (timeline.includes("border-radius:24px") || !timeline.includes("border-top: 1px solid")) {
+    throw new Error("Die Alltagstimeline wurde nicht in den offenen Editorial-Flow überführt.");
+  }
+
+  const details = await fs.readFile(path.join(appRoot, "src", "components", "product-experience-2", "ProductDetails2.astro"), "utf8");
+  if (!details.includes("Weitere Nachteile") || !details.includes("exclude: warnings")) {
+    throw new Error("Warnungen und Nachteile werden noch doppelt ausgegeben.");
   }
 }
 
@@ -277,59 +297,28 @@ async function main() {
   if (!currentTheme.includes("Product Experience 2.0 Theme Bridge 2.0.1")) {
     throw new Error("Basis-Hotfix 2.0.1 fehlt. Bitte zuerst Product Experience Hotfix 2.0.1 installieren.");
   }
-  if (currentTheme.includes(`Unified PfotenTechnik CTA colors ${VERSION}`)) {
+  if (currentTheme.includes(`Product Experience Hybrid Editorial Layout ${VERSION}`)) {
     throw new Error(`Hotfix ${VERSION} ist bereits installiert.`);
   }
 
   await fs.mkdir(backupRoot, { recursive: true });
 
   try {
-    await copyPayload(
-      "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro"
-    );
-    await copyPayload(
-      "apps/pfotentechnik/src/domain/productExperience/contentLists.ts"
-    );
-    await copyPayload(
-      "apps/pfotentechnik/test/product-experience-2-content-hotfix.test.mjs"
-    );
+    await applyCumulative202();
 
-    await patchFile("apps/pfotentechnik/src/pages/produkt/[product].astro", (source) => {
-      let next = replaceOnce(
-        source,
-        'import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";\n\n',
-        "",
-        "Breadcrumbs Import"
-      );
-      next = replaceOnce(
-        next,
-        "\n  <Breadcrumbs items={breadcrumbs} />\n",
-        "\n  <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->\n",
-        "sichtbares Breadcrumb"
-      );
-      return next;
-    });
+    const payloadFiles = [
+      "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductEverydayTimeline.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+      "apps/pfotentechnik/src/components/product-experience-2/ProductTrust2.astro",
+      "apps/pfotentechnik/test/product-experience-2-hybrid-layout.test.mjs"
+    ];
 
-    await patchFile("apps/pfotentechnik/src/domain/productExperience/model.ts", (source) => {
-      let next = replaceOnce(
-        source,
-        'import type { ProductDecisionProfile } from "./decisionEngine.ts";\n',
-        'import type { ProductDecisionProfile } from "./decisionEngine.ts";\nimport { uniqueTextItems } from "./contentLists.ts";\n',
-        "contentLists Import"
-      );
-      next = replaceBetween(
-        next,
-        "  const limitations = [",
-        "  const alternatives =",
-        listModelBlock,
-        "deduplizierte Produktlisten"
-      );
-      return next;
-    });
-
-    await patchFile("apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css", (source) =>
-      `${source.replace(/\s+$/, "")}${ctaThemeBlock}\n`
-    );
+    for (const relative of payloadFiles) await copyPayload(relative);
 
     await validateInstalledSource();
 
@@ -337,6 +326,7 @@ async function main() {
       patchId: PATCH_ID,
       version: VERSION,
       expectedBaseCommit: "6f332e1f777ef5f3c842caddeb010ce49fc84dfb",
+      cumulativeFrom: ["2.0.1", "2.0.2"],
       installedAt: new Date().toISOString(),
       repoRoot,
       backupRoot,
@@ -344,21 +334,10 @@ async function main() {
       createdFiles: [...created].map((file) => path.relative(repoRoot, file))
     };
 
-    await atomicWrite(
-      path.join(backupRoot, "install-state.json"),
-      JSON.stringify(state, null, 2)
-    );
+    await atomicWrite(path.join(backupRoot, "install-state.json"), JSON.stringify(state, null, 2));
 
     if (!args.skipValidation) {
-      run(
-        process.execPath,
-        [
-          "--experimental-strip-types",
-          "--test",
-          "test/product-experience-2-content-hotfix.test.mjs"
-        ],
-        appRoot
-      );
+      run(process.execPath, ["--test", "test/product-experience-2-hybrid-layout.test.mjs"], appRoot);
       run("npm", ["run", "audit:products"], appRoot);
       run("npm", ["run", "build"], appRoot);
     }

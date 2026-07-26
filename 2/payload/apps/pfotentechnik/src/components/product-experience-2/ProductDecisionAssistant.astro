@@ -92,7 +92,7 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     <div class="decision__score"><strong data-result-score>–</strong><span>von 100</span></div>
     <div>
       <p class="decision__verdict" data-result-verdict>Beantworte die Fragen für eine persönliche Einordnung.</p>
-      <ul data-result-reasons></ul>
+      <div class="decision__reasons" role="list" data-result-reasons></div>
       <a class="decision__alternative" href="#alternativen" data-result-alternative hidden></a>
     </div>
   </aside>
@@ -109,6 +109,12 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     text: string;
   };
 
+  const reasonMark: Record<ResultReason["kind"], string> = {
+    positive: "✓",
+    neutral: "–",
+    negative: "×"
+  };
+
   const roots = document.querySelectorAll<HTMLElement>("[data-decision-assistant]");
 
   roots.forEach((root) => {
@@ -123,7 +129,7 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     const alternatives = JSON.parse(alternativesNode.textContent || "[]");
     const scoreNode = result.querySelector<HTMLElement>("[data-result-score]");
     const verdictNode = result.querySelector<HTMLElement>("[data-result-verdict]");
-    const reasonsNode = result.querySelector<HTMLUListElement>("[data-result-reasons]");
+    const reasonsNode = result.querySelector<HTMLElement>("[data-result-reasons]");
     const alternativeNode = result.querySelector<HTMLAnchorElement>("[data-result-alternative]");
 
     const update = () => {
@@ -157,9 +163,21 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
         ].slice(0, 6);
 
         reasonsNode.replaceChildren(...reasons.map((reason) => {
-          const item = document.createElement("li");
+          const item = document.createElement("div");
+          item.className = "decision__reason";
           item.dataset.kind = reason.kind;
-          item.textContent = reason.text;
+          item.setAttribute("role", "listitem");
+
+          const mark = document.createElement("span");
+          mark.className = "decision__reason-mark";
+          mark.setAttribute("aria-hidden", "true");
+          mark.textContent = reasonMark[reason.kind];
+
+          const copy = document.createElement("span");
+          copy.className = "decision__reason-copy";
+          copy.textContent = reason.text;
+
+          item.append(mark, copy);
           return item;
         }));
       }
@@ -256,30 +274,31 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
   .decision__form {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    gap: 0 26px;
   }
 
   fieldset {
     min-width: 0;
     margin: 0;
-    padding: 16px;
-    border: 1px solid var(--px2-border);
-    border-radius: 18px;
-    background: var(--px2-surface-raised);
+    padding: 17px 0 10px;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
   }
 
   legend {
-    padding: 0 6px;
+    padding: 0 10px 0 0;
     color: var(--px2-text);
     font-weight: 850;
   }
 
   label {
     display: flex;
-    min-height: 42px;
+    min-height: 40px;
     align-items: center;
     gap: 9px;
-    padding: 5px 0;
+    padding: 4px 0;
     color: var(--px2-text);
     cursor: pointer;
   }
@@ -301,17 +320,9 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     background: var(--px2-surface-soft);
   }
 
-  .decision__result[data-verdict="strong"] {
-    background: var(--px2-green-soft);
-  }
-
-  .decision__result[data-verdict="conditional"] {
-    background: var(--px2-amber-soft);
-  }
-
-  .decision__result[data-verdict="weak"] {
-    background: var(--px2-red-soft);
-  }
+  .decision__result[data-verdict="strong"] { background: var(--px2-green-soft); }
+  .decision__result[data-verdict="conditional"] { background: var(--px2-amber-soft); }
+  .decision__result[data-verdict="weak"] { background: var(--px2-red-soft); }
 
   .decision__score {
     display: grid;
@@ -349,50 +360,44 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     line-height: 1.4;
   }
 
-  .decision__result ul {
+  .decision__reasons {
     display: grid;
-    gap: 8px;
+    gap: 9px;
     margin: 0 0 12px;
-    padding: 0;
-    list-style: none;
   }
 
-  .decision__result li {
-    position: relative;
-    min-height: 24px;
-    padding-left: 30px;
+  .decision__reason {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
     color: var(--px2-muted);
     line-height: 1.45;
   }
 
-  .decision__result li::before {
-    position: absolute;
-    top: .05em;
-    left: 0;
+  .decision__reason-mark {
     display: grid;
     width: 22px;
     height: 22px;
     place-items: center;
     border-radius: 50%;
-    font-size: .82rem;
-    font-weight: 900;
+    font-size: .86rem;
+    font-weight: 950;
     line-height: 1;
   }
 
-  .decision__result li[data-kind="positive"]::before {
-    content: "✓";
+  .decision__reason[data-kind="positive"] .decision__reason-mark {
     background: var(--px2-green-soft);
     color: var(--px2-green-strong);
   }
 
-  .decision__result li[data-kind="neutral"]::before {
-    content: "•";
+  .decision__reason[data-kind="neutral"] .decision__reason-mark {
     background: var(--px2-amber-soft);
     color: var(--px2-amber);
   }
 
-  .decision__result li[data-kind="negative"]::before {
-    content: "×";
+  .decision__reason[data-kind="negative"] .decision__reason-mark {
     background: var(--px2-red-soft);
     color: var(--px2-red);
   }

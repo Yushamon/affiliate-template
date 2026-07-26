@@ -1,37 +1,43 @@
-# PfotenTechnik Product Experience Hotfix 2.0.2
+# PfotenTechnik Product Experience Hotfix 2.0.3
 
-Dieser Folgepatch setzt Product Experience Hotfix 2.0.1 voraus.
+Der Hotfix korrigiert die Statusdarstellung der interaktiven Kaufentscheidung und überführt Product Experience 2.0 in ein hybrides Editorial-Layout.
 
-## Änderungen
+## Installation
 
-- Das sichtbare Breadcrumb wird auf Produktseiten entfernt.
-- Die vollständige Breadcrumb-Hierarchie bleibt als `BreadcrumbList`-JSON-LD im Layout erhalten.
-- Vorteile, Nachteile, Eignungspunkte und Einschränkungen werden zentral normalisiert und dedupliziert.
-- Führende Haken, Kreuze und Aufzählungszeichen aus Markdown-Daten werden entfernt, bevor die UI eigene Symbole ausgibt.
-- Vorteile erhalten einen grünen Haken.
-- Nachteile und „Nicht kaufen, wenn …“ erhalten ein rotes Kreuz.
-- Die Detailansicht zeigt maximal acht eindeutige Vorteile beziehungsweise Nachteile.
-- Primäre CTAs verwenden projektweit dasselbe semantische Grün.
-- Sekundäre CTAs werden neutral mit derselben grünen Akzentfarbe für Rahmen und Text dargestellt, statt eine weitere grüne Fläche einzuführen.
-
-## Installation unter Windows
+Windows PowerShell:
 
 ```powershell
-node .\pfotentechnik-product-experience-hotfix-2.0.2\install.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-product-experience-hotfix-2.0.3\install.mjs --repo C:\hp\Projekt\affiliate-template
 ```
 
-Der Installer führt anschließend aus:
+macOS/Linux:
 
-```text
-node --experimental-strip-types --test test/product-experience-2-content-hotfix.test.mjs
-npm run audit:products
-npm run build
+```bash
+node ./pfotentechnik-product-experience-hotfix-2.0.3/install.mjs --repo /pfad/zum/affiliate-template
 ```
 
-Schlägt ein Schritt fehl, werden alle Änderungen automatisch zurückgerollt.
+Der Installer ist kumulativ. Hotfix 2.0.1 muss vorhanden sein. Die Änderungen aus 2.0.2 werden bei Bedarf automatisch ergänzt und bei bereits erfolgter Installation nicht doppelt eingebaut.
 
-## Manueller Rollback
+## Validierung
+
+Der Installer führt automatisch aus:
+
+- vier Quellcode- und Layouttests
+- `npm run audit:products`
+- `npm run build`
+
+Bei einem Fehler werden alle Änderungen dieses Installationslaufs zurückgesetzt.
+
+## Rollback
 
 ```powershell
-node .\pfotentechnik-product-experience-hotfix-2.0.2\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-product-experience-hotfix-2.0.3\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+```
+
+## Optional
+
+Nur für eine bewusste lokale Diagnose ohne Build und Audit:
+
+```powershell
+node .\pfotentechnik-product-experience-hotfix-2.0.3\install.mjs --repo C:\hp\Projekt\affiliate-template --skip-validation
 ```

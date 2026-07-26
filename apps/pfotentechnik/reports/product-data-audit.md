@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-26T17:57:44.948Z
+Erstellt: 2026-07-26T18:36:27.454Z
 
 ## Zusammenfassung
 
 - Produkte: 68
 - Fehler: 2
-- Warnungen: 102
+- Warnungen: 101
 - Dokumentierte Hinweise: 152
 - Doppelte Slugs: 0
 
@@ -411,20 +411,6 @@ Erstellt: 2026-07-26T17:57:44.948Z
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
   - Empfohlenes Feld fehlt: napf
 - Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### Aqara Smart Pet Feeder C1
-
-- Datei: `src\content\products\aqara-smart-pet-feeder-c1.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 97%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
 ### Cat Mate C500

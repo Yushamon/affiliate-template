@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const PATCH_PREFIX = "pfotentechnik-product-experience-hotfix-2.0.2-";
+const PATCH_PREFIX = "pfotentechnik-product-experience-hotfix-2.0.3-";
 
 function parseArgs(argv) {
   const out = { repo: process.cwd() };
