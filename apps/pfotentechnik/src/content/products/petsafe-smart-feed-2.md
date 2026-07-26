@@ -204,7 +204,7 @@ comparisonData:
     masse: Etwa 51,6 × 23,9 × 32 cm
     kamera: Nein
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

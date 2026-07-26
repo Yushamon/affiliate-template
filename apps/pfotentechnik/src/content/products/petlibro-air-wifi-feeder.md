@@ -357,7 +357,7 @@ comparisonData:
       neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei
       Wochen wechseln und den Akku regelmäßig vollständig laden.
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

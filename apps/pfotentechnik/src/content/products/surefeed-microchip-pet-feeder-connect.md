@@ -9,7 +9,7 @@ description: App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvo
 recommendation: App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.
 manufacturer:
   key: surefeed
-  name: Sure Petcare
+  name: SureFeed
   slug: surefeed
 category:
   key: futterautomaten
@@ -171,7 +171,7 @@ comparisonData:
     geeignet_fur: Katzen, kleine Hunde
     besonderheit: Mikrochip-Zugang und Portionswaage
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

@@ -11,7 +11,7 @@ recommendation: >-
   App-Auswertung nicht benötigt werden.
 manufacturer:
   key: surefeed
-  name: Sure Petcare
+  name: SureFeed
   slug: surefeed
 category:
   key: futterautomaten
@@ -220,7 +220,7 @@ comparisonData:
     masse: 200 × 230 × 320 mm (H × B × T)
     offnung: 210 × 155 mm (B × H)
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

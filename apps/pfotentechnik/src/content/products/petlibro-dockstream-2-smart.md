@@ -196,7 +196,7 @@ comparisonData:
     gewicht: ca. 1,77 kg Netzversion oder 1,89 kg Akkuversion
     geeignet_fur: Katzen und kleine Hunde
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

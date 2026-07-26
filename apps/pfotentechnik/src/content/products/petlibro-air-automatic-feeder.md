@@ -13,7 +13,7 @@ recommendation: >-
   Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.
 manufacturer:
   key: petlibro
-  name: Petlibro
+  name: PETLIBRO
   slug: petlibro
 category:
   key: futterautomaten
@@ -175,7 +175,7 @@ comparisonData:
     geeignet_fur: Katzen und kleine Hunde
     wlan: Nein
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

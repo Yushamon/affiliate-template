@@ -207,7 +207,7 @@ comparisonData:
     geeignet_fur: ein bis zwei Katzen
     portionierung: programmierbare Trockenfutterportionen auf zwei Näpfe verteilt
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

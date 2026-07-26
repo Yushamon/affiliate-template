@@ -13,7 +13,7 @@ recommendation: >-
   ideal für Mehrkatzenhaushalte.
 manufacturer:
   key: petlibro
-  name: Petlibro
+  name: PETLIBRO
   slug: petlibro
 category:
   key: futterautomaten
@@ -167,7 +167,7 @@ comparisonData:
     stromversorgung: Netzteil mit Batterie-Backup
     geeignet_fur: Katzen in Mehrtierhaushalten
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

@@ -379,7 +379,7 @@ comparisonData:
       sowie Geozaun testen.
     kapazitat: 27 Monate Tracking enthalten
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

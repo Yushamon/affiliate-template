@@ -297,7 +297,7 @@ comparisonData:
     geeignet_fur: vor allem Katzen mit Trockenfutter
     akku: Nein
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

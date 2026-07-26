@@ -175,7 +175,7 @@ comparisonData:
     masse: 18,5 × 18,5 × 16,4 cm
     gewicht: 0,8 kg
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

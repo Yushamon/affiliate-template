@@ -229,7 +229,7 @@ comparisonData:
     befestigung: Silikonhüllen; Katzenversion mit Anti-Strangulations-Elastikband
     reinigung: Silikonhalter oder Katzenband, Gehäuse und Ladekontakte regelmäßig prüfen.
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

@@ -202,7 +202,7 @@ comparisonData:
     geeignet_fur: Katzen und kleine bis mittelgroße Hunde
     reinigung: Verteiler, Ausgabekanal und beide Näpfe regelmäßig reinigen. Trockenmittel ungefähr alle zwei Wochen ersetzen.
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

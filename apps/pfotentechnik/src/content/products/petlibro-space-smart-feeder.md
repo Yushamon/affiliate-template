@@ -14,7 +14,7 @@ recommendation: >-
   Kamera oder besonders feine Portionierung.
 manufacturer:
   key: petlibro
-  name: Petlibro
+  name: PETLIBRO
   slug: petlibro
 category:
   key: futterautomaten
@@ -277,7 +277,7 @@ comparisonData:
     geeignet_fur: Katzen und kleine Hunde mit Trockenfutter
     nicht_geeignet_fur: Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

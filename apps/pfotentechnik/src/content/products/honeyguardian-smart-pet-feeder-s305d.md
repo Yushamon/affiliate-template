@@ -197,7 +197,7 @@ comparisonData:
     reinigung: Behälter, Ausgabekanal und Edelstahl-Napf regelmäßig reinigen. Basis und Elektronik trocken halten.
     batterie: Backup-Funktion je Angebotsvariante prüfen
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---

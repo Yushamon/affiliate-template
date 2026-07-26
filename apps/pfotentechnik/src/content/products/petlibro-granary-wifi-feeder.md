@@ -235,7 +235,7 @@ comparisonData:
     geeignet_fur: Katzen und kleine bis mittelgroße Hunde
     batterie: 3 D-Batterien; Zeitpläne laufen weiter
 metadata:
-  version: "4.0"
+  version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
 ---
