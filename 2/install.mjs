@@ -5,7 +5,7 @@ import process from "node:process";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
-const VERSION = "2.0.1";
+const VERSION = "2.0.2";
 const PATCH_ID = `pfotentechnik-product-experience-hotfix-${VERSION}`;
 const packageRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -43,12 +43,7 @@ const backupRoot = path.join(
   ".patch-backups",
   `${PATCH_ID}-${new Date().toISOString().replace(/[:.]/g, "-")}`
 );
-const reportPath = path.join(
-  appRoot,
-  "reports",
-  `${PATCH_ID}-report.json`
-);
-
+const reportPath = path.join(appRoot, "reports", `${PATCH_ID}-report.json`);
 const touched = new Map();
 const created = new Set();
 
@@ -70,7 +65,6 @@ async function atomicWrite(file, content) {
 
 async function backup(file) {
   if (touched.has(file) || created.has(file)) return;
-
   if (await exists(file)) {
     const relative = path.relative(repoRoot, file);
     const destination = path.join(backupRoot, "files", relative);
@@ -90,32 +84,17 @@ async function writeFile(file, content) {
 async function copyPayload(relative) {
   const source = path.join(packageRoot, "payload", relative);
   const destination = path.join(repoRoot, relative);
-  if (!(await exists(source))) {
-    throw new Error(`Payload fehlt: ${relative}`);
-  }
+  if (!(await exists(source))) throw new Error(`Payload fehlt: ${relative}`);
   await writeFile(destination, await fs.readFile(source, "utf8"));
 }
 
 async function patchFile(relative, updater) {
   const file = path.join(repoRoot, relative);
-  if (!(await exists(file))) {
-    throw new Error(`Datei fehlt: ${relative}`);
-  }
+  if (!(await exists(file))) throw new Error(`Datei fehlt: ${relative}`);
   const current = await fs.readFile(file, "utf8");
   const next = updater(current);
-  if (next === current) {
-    throw new Error(`Patch hat keine Änderung erzeugt: ${relative}`);
-  }
+  if (next === current) throw new Error(`Patch hat keine Änderung erzeugt: ${relative}`);
   await writeFile(file, next);
-}
-
-function replaceBetween(source, startMarker, endMarker, replacement, label) {
-  const start = source.indexOf(startMarker);
-  const end = source.indexOf(endMarker, start + startMarker.length);
-  if (start < 0 || end < 0) {
-    throw new Error(`Anker nicht gefunden: ${label}`);
-  }
-  return source.slice(0, start) + replacement + source.slice(end);
 }
 
 function replaceOnce(source, before, after, label) {
@@ -127,16 +106,20 @@ function replaceOnce(source, before, after, label) {
   return source.slice(0, index) + after + source.slice(index + before.length);
 }
 
+function replaceBetween(source, startMarker, endMarker, replacement, label) {
+  const start = source.indexOf(startMarker);
+  const end = source.indexOf(endMarker, start + startMarker.length);
+  if (start < 0 || end < 0) throw new Error(`Anker nicht gefunden: ${label}`);
+  return source.slice(0, start) + replacement + source.slice(end);
+}
+
 async function rollback() {
   for (const [file, relative] of [...touched.entries()].reverse()) {
     const source = path.join(backupRoot, "files", relative);
     await fs.mkdir(path.dirname(file), { recursive: true });
     await fs.copyFile(source, file);
   }
-
-  for (const file of [...created].reverse()) {
-    await fs.rm(file, { force: true });
-  }
+  for (const file of [...created].reverse()) await fs.rm(file, { force: true });
 }
 
 function run(command, commandArgs, cwd) {
@@ -147,381 +130,220 @@ function run(command, commandArgs, cwd) {
   });
   if (result.error) throw result.error;
   if (result.status !== 0) {
-    throw new Error(
-      `Befehl fehlgeschlagen (${result.status}): ${command} ${commandArgs.join(" ")}`
-    );
+    throw new Error(`Befehl fehlgeschlagen (${result.status}): ${command} ${commandArgs.join(" ")}`);
   }
 }
 
-const decisionProfileBlock = `const decisionProfileFor = (data: any, price: ProductPriceInsight | undefined): ProductDecisionProfile => {
-  const haystack = collectProductText(data);
-  const normalizedCategory = normalize(data.category?.key ?? data.category?.label);
-  const usesFoodQuestions = [
-    "futterautomat",
-    "futterautomaten",
-    "futterspender",
-    "feeder"
-  ].some((term) => normalizedCategory.includes(term));
-  const animals = list<string>(data.comparisonFilters?.animal ?? data.comparisonData?.general?.animal)
-    .map((value) => normalize(value))
-    .map((value) => value === "hund" || value === "hunde" ? "dog" : value === "katze" || value === "katzen" ? "cat" : value)
-    .filter((value) => value === "dog" || value === "cat");
-  const foodTypes = usesFoodQuestions
-    ? list<string>(data.comparisonFilters?.foodType ?? data.comparisonData?.general?.foodType)
-        .map((value) => normalize(value))
-        .map((value) => value.includes("nass") ? "wet" : value.includes("trocken") ? "dry" : value)
-        .filter((value) => value === "dry" || value === "wet")
-    : [];
-
-  const hasWifi = typeof data.comparisonFilters?.app === "boolean"
-    ? data.comparisonFilters.app
-    : booleanFromText(haystack, ["wlan", "wifi", "wi fi", "app steuerung"], ["ohne wlan", "ohne app"]);
-  const hasCamera = typeof data.comparisonFilters?.camera === "boolean"
-    ? data.comparisonFilters.camera
-    : booleanFromText(haystack, ["kamera", "camera", "video"], ["ohne kamera"]);
-  const supportsMultiplePets = booleanFromText(
-    haystack,
-    ["mehrtier", "mehrere tiere", "zwei katzen", "mehrkatzen", "dual hopper", "zwei naepfe", "rfid", "mikrochip"],
-    ["nur ein tier", "einzeltier"]
+const listModelBlock = `  const limitations = uniqueTextItems([
+    ...list<string>(data.weaknesses),
+    ...list<string>(reviewProduct.weaknesses),
+    ...list<string>(reviewProduct.cons)
+  ]);
+  const idealCandidates = uniqueTextItems([
+    ...list<string>(data.decision?.bestFor),
+    ...list<string>(reviewProduct.bestFor)
+  ]);
+  const attentionCandidates = uniqueTextItems([
+    ...list<string>(data.decision?.attention),
+    ...list<string>(reviewProduct.attention)
+  ]);
+  const strengthCandidates = uniqueTextItems([
+    ...list<string>(data.strengths),
+    ...list<string>(reviewProduct.strengths),
+    ...list<string>(reviewProduct.pros),
+    ...list<string>(reviewProduct.highlights)
+  ], { exclude: limitations });
+  const idealFor = uniqueTextItems(
+    idealCandidates.length ? idealCandidates : list<string>(data.tags),
+    { limit: 4 }
   );
-  const worksOffline = booleanFromText(
-    haystack,
-    ["offline", "ohne wlan", "lokal gespeicherte zeitplaene", "batteriebetrieb"],
-    ["cloud pflicht", "nur mit wlan", "internet erforderlich"]
-  ) ?? (hasWifi === false ? true : null);
+  const notFor = uniqueTextItems(
+    attentionCandidates.length ? attentionCandidates : limitations,
+    { limit: 4 }
+  );
+  const benefits = strengthCandidates.slice(0, 4);
+`;
 
-  return {
-    productName: text(data.title, "Dieses Produkt"),
-    categoryKey: normalizedCategory,
-    usesFoodQuestions,
-    editorialScore: editorialScore(data),
-    animals: [...new Set(animals)],
-    petSizes: list<string>(data.comparisonFilters?.petSize ?? data.comparisonData?.general?.petSize).map(normalize),
-    foodTypes: [...new Set(foodTypes)],
-    supportsMultiplePets,
-    hasWifi,
-    worksOffline,
-    hasCamera,
-    priceTier: price?.tier ?? "unknown"
-  };
-};`;
+const ctaThemeBlock = `
 
-const alternativeBlock = `const toAlternative = (entry: any, type: string, label: string, reason: string, price?: ProductPriceInsight) => {
-  const data = dataOf(entry);
-  const slug = slugOf(entry);
-  const hero = data.images?.comparison ?? data.images?.thumbnail ?? data.images?.hero;
-  return {
-    type,
-    label,
-    title: text(data.title, slug),
-    href: text(data.productUrl, \`/produkt/\${slug}/\`),
-    image: hero ? { src: imageSource(hero), alt: imageAlt(hero, text(data.title, slug)) } : null,
-    score: editorialScore(data),
-    priceLabel: price?.formattedCurrent,
-    reason,
-    decisionProfile: decisionProfileFor(data, price),
-    matchKeys: type === "cheaper"
-      ? ["budget"]
-      : type === "large-dog"
-        ? ["animal", "multi-pet"]
-        : type === "two-cats"
-          ? ["multi-pet"]
-          : type === "wet-food"
-            ? ["wet-food"]
-            : type === "offline"
-              ? ["offline"]
-              : type === "camera"
-                ? ["camera"]
-                : ["budget", "camera", "wifi"]
-  };
-};`;
+/* Unified PfotenTechnik CTA colors ${VERSION}
+   A single semantic green is used for every primary CTA. Secondary CTAs
+   remain neutral and use the same accent only for border and text. */
+:root {
+  --pt-cta-primary-bg: var(--pt-theme-accent);
+  --pt-cta-primary-bg-hover: var(--pt-theme-accent-hover);
+  --pt-cta-primary-text: var(--pt-theme-text-inverse);
+  --pt-cta-secondary-bg: var(--pt-theme-surface);
+  --pt-cta-secondary-bg-hover: var(--pt-theme-accent-soft);
+  --pt-cta-secondary-text: var(--pt-theme-accent-text);
+}
 
-const themeBridge = `
-
-/* Product Experience 2.0 Theme Bridge ${VERSION}
-   Maps the new product system to the central semantic design tokens. */
-[data-product-page] [data-product-experience="2.0"] {
-  --px2-surface: var(--pt-theme-surface) !important;
-  --px2-surface-soft: var(--pt-theme-surface-2) !important;
-  --px2-surface-raised: var(--pt-theme-surface-2) !important;
-  --px2-text: var(--pt-theme-text) !important;
-  --px2-muted: var(--pt-theme-text-soft) !important;
-  --px2-border: var(--pt-theme-border) !important;
-  --px2-green: var(--pt-theme-accent) !important;
-  --px2-green-strong: var(--pt-theme-accent-text) !important;
-  --px2-green-soft: var(--pt-theme-accent-soft) !important;
-  --px2-amber: var(--pt-theme-warning) !important;
-  --px2-amber-soft: color-mix(
+.pt-button-primary,
+.button-primary,
+.cta-button,
+.affiliate-button,
+.primary-cta,
+.header-advisor-link[data-pt-purchase-advice="desktop"],
+.main-nav-v2 [data-pt-purchase-advice="nav"],
+.pt-nav-advisor-cta,
+header a[href="/#kaufberatung"],
+header a[href="#kaufberatung"],
+nav a[href="/#kaufberatung"],
+nav a[href="#kaufberatung"],
+[data-product-experience="2.0"] .px2-price__cta:not(.is-disabled) {
+  border-color: var(--pt-cta-primary-bg) !important;
+  background: var(--pt-cta-primary-bg) !important;
+  color: var(--pt-cta-primary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+  box-shadow: 0 12px 26px color-mix(
     in srgb,
-    var(--pt-theme-warning) 18%,
-    var(--pt-theme-surface)
+    var(--pt-cta-primary-bg) 20%,
+    transparent
   ) !important;
-  --px2-red: var(--pt-theme-danger) !important;
-  --px2-red-soft: var(--pt-theme-danger-soft) !important;
-  --px2-indigo: var(--pt-theme-focus, #4f46e5) !important;
-  --px2-shadow: var(--pt-theme-shadow-sm) !important;
-  --px2-on-accent: var(--pt-theme-text-inverse) !important;
-  color: var(--px2-text);
 }
 
-[data-product-page] [data-product-experience="2.0"] :is(
-  .px2-hero__content,
-  .decision,
-  .timeline,
-  .details,
-  .trust,
-  .alternatives article,
-  .price-box
-) {
-  border-color: var(--px2-border);
-  color: var(--px2-text);
+.pt-button-primary:hover,
+.button-primary:hover,
+.cta-button:hover,
+.affiliate-button:hover,
+.primary-cta:hover,
+.header-advisor-link[data-pt-purchase-advice="desktop"]:hover,
+.main-nav-v2 [data-pt-purchase-advice="nav"]:hover,
+.pt-nav-advisor-cta:hover,
+header a[href="/#kaufberatung"]:hover,
+header a[href="#kaufberatung"]:hover,
+nav a[href="/#kaufberatung"]:hover,
+nav a[href="#kaufberatung"]:hover,
+[data-product-experience="2.0"] .px2-price__cta:not(.is-disabled):hover {
+  border-color: var(--pt-cta-primary-bg-hover) !important;
+  background: var(--pt-cta-primary-bg-hover) !important;
+  color: var(--pt-cta-primary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
 }
 
-[data-product-page] [data-product-experience="2.0"] :is(
-  .px2-hero__content,
-  .decision,
-  .timeline,
-  .details,
-  .trust,
-  .alternatives article
-) {
-  background-color: var(--px2-surface);
+[data-product-experience="2.0"] .alternatives a,
+.premium-v3--pfotentechnik .premium-v3-product-cta {
+  border: 1px solid var(--pt-cta-primary-bg) !important;
+  background: var(--pt-cta-secondary-bg) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
+  box-shadow: none !important;
 }
 
-[data-product-page] [data-product-experience="2.0"] :is(
-  h1,
-  h2,
-  h3,
-  h4,
-  strong,
-  legend,
-  dt
-) {
-  color: var(--px2-text) !important;
-}
-
-[data-product-page] [data-product-experience="2.0"] :is(
-  p,
-  li,
-  dd,
-  small,
-  figcaption,
-  label
-) {
-  color: var(--px2-muted);
-}
-
-[data-product-page] [data-product-experience="2.0"] :is(
-  .decision__header > span,
-  .alternatives > header > span,
-  .trust > header > span,
-  .timeline > header > span,
-  .price-box__eyebrow
-) {
-  color: var(--px2-green-strong) !important;
+[data-product-experience="2.0"] .alternatives a:hover,
+.premium-v3--pfotentechnik .premium-v3-product-cta:hover {
+  background: var(--pt-cta-secondary-bg-hover) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
 }
 `;
 
-const manualService = `export async function setManualProductPrice(input = {}) {
-  const slug = String(input.slug || "").trim();
-  if (!slug) throw new Error("Produkt-Slug fehlt.");
-
-  const current = Number(String(input.current ?? "").trim().replace(",", "."));
-  if (!Number.isFinite(current) || current <= 0) {
-    throw new Error("Der manuelle Preis muss größer als 0 sein.");
+async function validateInstalledSource() {
+  const productPage = await fs.readFile(
+    path.join(appRoot, "src", "pages", "produkt", "[product].astro"),
+    "utf8"
+  );
+  if (productPage.includes("<Breadcrumbs")) {
+    throw new Error("Das sichtbare Produkt-Breadcrumb wurde nicht entfernt.");
+  }
+  if (!productPage.includes("breadcrumbs={breadcrumbs}")) {
+    throw new Error("BreadcrumbList-Daten für das SEO-Schema fehlen.");
   }
 
-  const currency = String(input.currency || "EUR").trim().toUpperCase();
-  if (!/^[A-Z]{3}$/.test(currency)) {
-    throw new Error("Die Währung muss als dreistelliger ISO-Code angegeben werden.");
+  const model = await fs.readFile(
+    path.join(appRoot, "src", "domain", "productExperience", "model.ts"),
+    "utf8"
+  );
+  if (!model.includes("uniqueTextItems") || model.includes("const limitations = [")) {
+    throw new Error("Die zentrale Deduplizierung wurde nicht vollständig eingebaut.");
   }
 
-  const documents = await listPriceDocuments();
-  const document = documents.find((item) => item.slug === slug);
-  if (!document) throw new Error(\`Produkt "\${slug}" wurde nicht gefunden.\`);
-
-  const data = document.data ?? {};
-  const enteredUrl = String(input.affiliateUrl || "").trim();
-  let affiliateUrl =
-    enteredUrl ||
-    data.price?.affiliateUrl ||
-    data.affiliate?.url ||
-    data.productUrl ||
-    undefined;
-
-  if (affiliateUrl) {
-    const parsed = new URL(affiliateUrl);
-    if (parsed.protocol !== "https:") {
-      throw new Error("Für manuelle Preise sind nur HTTPS-URLs erlaubt.");
-    }
-    affiliateUrl = parsed.href;
+  const details = await fs.readFile(
+    path.join(appRoot, "src", "components", "product-experience-2", "ProductDetails2.astro"),
+    "utf8"
+  );
+  if (!details.includes('details__list--negative') || !details.includes('aria-hidden="true">×')) {
+    throw new Error("Negative Listen verwenden noch keine eindeutige rote Kennzeichnung.");
   }
-
-  const sourceLabel =
-    String(input.sourceLabel || "").trim().slice(0, 120) ||
-    (data.price?.source?.type === "manual"
-      ? String(data.price.source.label || "").trim()
-      : "") ||
-    "Manuell im SEO Cockpit";
-  const comparisonText =
-    String(input.comparisonText || "").trim().slice(0, 360) ||
-    data.price?.comparisonText ||
-    undefined;
-  const checkedAt = new Date().toISOString();
-
-  await updateProductPrice(document.file, {
-    current,
-    currency,
-    status: "unknown",
-    comparisonText,
-    checkedAt,
-    affiliateUrl,
-    source: {
-      id: "manual",
-      label: sourceLabel,
-      type: "manual",
-      ...(affiliateUrl ? { url: affiliateUrl } : {})
-    }
-  });
-
-  return {
-    slug: document.slug,
-    title: data.title,
-    current,
-    currency,
-    checkedAt,
-    source: sourceLabel,
-    affiliateUrl: affiliateUrl ?? null,
-    method: "manual"
-  };
 }
-
-`;
-
-const operationsImportBefore =
-  'import { checkAllProductPrices, checkProductPrice, priceAudit } from "../price-intelligence/service.mjs";';
-const operationsImportAfter =
-  'import { checkAllProductPrices, checkProductPrice, priceAudit, setManualProductPrice } from "../price-intelligence/service.mjs";';
-const operationsRouteBefore =
-  '    if(request.method==="POST"&&pathname==="/api/admin/prices/check-all"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await checkAllProductPrices({limit:body.limit}),origin);return true}';
-const operationsRouteAfter =
-  '    if(request.method==="POST"&&pathname==="/api/admin/prices/check-all"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await checkAllProductPrices({limit:body.limit}),origin);return true}\n    if(request.method==="POST"&&pathname==="/api/admin/prices/manual"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await setManualProductPrice(body),origin);return true}';
 
 async function main() {
   if (!(await exists(path.join(appRoot, "package.json")))) {
     throw new Error(`PfotenTechnik-Projekt nicht gefunden: ${appRoot}`);
   }
 
+  const themeFile = path.join(appRoot, "src", "styles", "pfotentechnik-theme-fixes.css");
+  const currentTheme = await fs.readFile(themeFile, "utf8");
+  if (!currentTheme.includes("Product Experience 2.0 Theme Bridge 2.0.1")) {
+    throw new Error("Basis-Hotfix 2.0.1 fehlt. Bitte zuerst Product Experience Hotfix 2.0.1 installieren.");
+  }
+  if (currentTheme.includes(`Unified PfotenTechnik CTA colors ${VERSION}`)) {
+    throw new Error(`Hotfix ${VERSION} ist bereits installiert.`);
+  }
+
   await fs.mkdir(backupRoot, { recursive: true });
 
   try {
     await copyPayload(
-      "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro"
+      "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro"
     );
     await copyPayload(
-      "apps/pfotentechnik/src/domain/productExperience/decisionEngine.ts"
+      "apps/pfotentechnik/src/domain/productExperience/contentLists.ts"
     );
     await copyPayload(
-      "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-    );
-    await copyPayload(
-      "apps/pfotentechnik/test/product-experience-2-hotfix.test.mjs"
+      "apps/pfotentechnik/test/product-experience-2-content-hotfix.test.mjs"
     );
 
-    await patchFile(
-      "apps/pfotentechnik/src/domain/productExperience/model.ts",
-      (source) => {
-        let next = replaceBetween(
-          source,
-          "const decisionProfileFor =",
-          "\n\nconst candidateScore =",
-          decisionProfileBlock,
-          "decisionProfileFor"
-        );
-        next = replaceBetween(
-          next,
-          "const toAlternative =",
-          "\n\nconst intelligentAlternatives =",
-          alternativeBlock,
-          "toAlternative"
-        );
-        return next;
-      }
-    );
-
-    await patchFile(
-      "apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css",
-      (source) => {
-        if (source.includes("Product Experience 2.0 Theme Bridge 2.0.1")) {
-          throw new Error("Theme Bridge ist bereits installiert.");
-        }
-        return `${source.replace(/\s+$/, "")}${themeBridge}\n`;
-      }
-    );
-
-    await patchFile(
-      "apps/pfotentechnik/src/domain/price/types.ts",
-      (source) => replaceOnce(
+    await patchFile("apps/pfotentechnik/src/pages/produkt/[product].astro", (source) => {
+      let next = replaceOnce(
         source,
-        'type: "merchant" | "affiliate" | "editorial" | "unknown";',
-        'type: "merchant" | "affiliate" | "editorial" | "manual" | "unknown";',
-        "PriceSource manual"
-      )
-    );
+        'import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";\n\n',
+        "",
+        "Breadcrumbs Import"
+      );
+      next = replaceOnce(
+        next,
+        "\n  <Breadcrumbs items={breadcrumbs} />\n",
+        "\n  <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->\n",
+        "sichtbares Breadcrumb"
+      );
+      return next;
+    });
 
-    await patchFile(
-      "apps/pfotentechnik/src/content/schema/product.ts",
-      (source) => replaceOnce(
+    await patchFile("apps/pfotentechnik/src/domain/productExperience/model.ts", (source) => {
+      let next = replaceOnce(
         source,
-        '        "editorial",\n        "unknown"',
-        '        "editorial",\n        "manual",\n        "unknown"',
-        "productPriceSourceSchema manual"
-      )
+        'import type { ProductDecisionProfile } from "./decisionEngine.ts";\n',
+        'import type { ProductDecisionProfile } from "./decisionEngine.ts";\nimport { uniqueTextItems } from "./contentLists.ts";\n',
+        "contentLists Import"
+      );
+      next = replaceBetween(
+        next,
+        "  const limitations = [",
+        "  const alternatives =",
+        listModelBlock,
+        "deduplizierte Produktlisten"
+      );
+      return next;
+    });
+
+    await patchFile("apps/pfotentechnik/src/styles/pfotentechnik-theme-fixes.css", (source) =>
+      `${source.replace(/\s+$/, "")}${ctaThemeBlock}\n`
     );
 
-    await patchFile(
-      "apps/pfotentechnik/src/lib/price-intelligence/service.mjs",
-      (source) => {
-        if (source.includes("export async function setManualProductPrice")) {
-          throw new Error("Manuelle Preisfunktion ist bereits installiert.");
-        }
-        return replaceOnce(
-          source,
-          "export async function priceAudit() {",
-          `${manualService}export async function priceAudit() {`,
-          "setManualProductPrice"
-        );
-      }
-    );
-
-    await patchFile(
-      "apps/pfotentechnik/src/lib/admin/operations-router.mjs",
-      (source) => {
-        let next = replaceOnce(
-          source,
-          operationsImportBefore,
-          operationsImportAfter,
-          "Operations Router Import"
-        );
-        next = replaceOnce(
-          next,
-          operationsRouteBefore,
-          operationsRouteAfter,
-          "Operations Router Manual Route"
-        );
-        return next;
-      }
-    );
+    await validateInstalledSource();
 
     const state = {
       patchId: PATCH_ID,
       version: VERSION,
+      expectedBaseCommit: "6f332e1f777ef5f3c842caddeb010ce49fc84dfb",
       installedAt: new Date().toISOString(),
       repoRoot,
       backupRoot,
       restoredFiles: [...touched.values()],
       createdFiles: [...created].map((file) => path.relative(repoRoot, file))
     };
+
     await atomicWrite(
       path.join(backupRoot, "install-state.json"),
       JSON.stringify(state, null, 2)
@@ -533,7 +355,7 @@ async function main() {
         [
           "--experimental-strip-types",
           "--test",
-          "test/product-experience-2-hotfix.test.mjs"
+          "test/product-experience-2-content-hotfix.test.mjs"
         ],
         appRoot
       );
@@ -544,15 +366,7 @@ async function main() {
     await fs.mkdir(path.dirname(reportPath), { recursive: true });
     await atomicWrite(
       reportPath,
-      JSON.stringify(
-        {
-          ...state,
-          validationSkipped: args.skipValidation,
-          status: "success"
-        },
-        null,
-        2
-      )
+      JSON.stringify({ ...state, validationSkipped: args.skipValidation, status: "success" }, null, 2)
     );
 
     console.log(`\n[${PATCH_ID}] Installation abgeschlossen.`);

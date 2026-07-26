@@ -7,6 +7,8 @@ import { getImage } from "astro:assets";
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 
+import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
+
 import ProductRenderer from "../../components/product-standard-2/ProductRenderer.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
@@ -399,7 +401,7 @@ const productSchema = {
     set:html={JSON.stringify(productSchema)}
   />
 
-  <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->
+  <Breadcrumbs items={breadcrumbs} />
 
   <main class="product-detail pt-product-detail" data-product-page>
     <AutoLinkContent

@@ -2,7 +2,6 @@ import { buildPriceIndex, type PriceIndex } from "../price/engine.ts";
 import type { ProductPriceInsight } from "../price/types.ts";
 import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
 import type { ProductDecisionProfile } from "./decisionEngine.ts";
-import { uniqueTextItems } from "./contentLists.ts";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -353,33 +352,27 @@ export const buildProductExperienceModel = ({
   }));
   const scoreRaw = Number.isFinite(Number(reviewProduct.score)) ? Number(reviewProduct.score) : editorialScore(data);
   const score = scoreRaw > 0 && scoreRaw <= 10 ? Math.round(scoreRaw * 10) : Math.max(0, Math.min(100, Math.round(scoreRaw)));
-  const limitations = uniqueTextItems([
+  const limitations = [
     ...list<string>(data.weaknesses),
     ...list<string>(reviewProduct.weaknesses),
     ...list<string>(reviewProduct.cons)
-  ]);
-  const idealCandidates = uniqueTextItems([
+  ].filter(Boolean);
+  const idealCandidates = [
     ...list<string>(data.decision?.bestFor),
     ...list<string>(reviewProduct.bestFor)
-  ]);
-  const attentionCandidates = uniqueTextItems([
+  ].filter(Boolean);
+  const attentionCandidates = [
     ...list<string>(data.decision?.attention),
     ...list<string>(reviewProduct.attention)
-  ]);
-  const strengthCandidates = uniqueTextItems([
+  ].filter(Boolean);
+  const strengthCandidates = [
     ...list<string>(data.strengths),
     ...list<string>(reviewProduct.strengths),
     ...list<string>(reviewProduct.pros),
     ...list<string>(reviewProduct.highlights)
-  ], { exclude: limitations });
-  const idealFor = uniqueTextItems(
-    idealCandidates.length ? idealCandidates : list<string>(data.tags),
-    { limit: 4 }
-  );
-  const notFor = uniqueTextItems(
-    attentionCandidates.length ? attentionCandidates : limitations,
-    { limit: 4 }
-  );
+  ].filter(Boolean);
+  const idealFor = (idealCandidates.length ? idealCandidates : list<string>(data.tags)).slice(0, 4);
+  const notFor = (attentionCandidates.length ? attentionCandidates : limitations).slice(0, 4);
   const benefits = strengthCandidates.slice(0, 4);
   const alternatives = intelligentAlternatives(currentEntry, allProducts, priceIndex, alternativeRecommendations);
   const editorial = data.editorial ?? {};

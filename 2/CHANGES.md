@@ -1,38 +1,45 @@
 # Technische Änderungen
 
-## Dark Mode
+## Breadcrumbs
 
-Der neue Produktbereich hatte eigene Light-Mode-Variablen, während die ältere globale Theme-Korrektur im Dark Mode nur die Textfarben überschrieben hat. Dadurch entstanden helle Karten mit nahezu weißem Text.
+`apps/pfotentechnik/src/pages/produkt/[product].astro` rendert die sichtbare `Breadcrumbs.astro`-Komponente nicht mehr. Das bestehende `breadcrumbs`-Property wird weiterhin an `ProjectLayout` übergeben. `AffiliateLayout` erzeugt daraus unverändert das strukturierte `BreadcrumbList`-Schema.
 
-Der Hotfix bindet sämtliche `--px2-*`-Variablen an die zentralen `--pt-theme-*`-Tokens. Damit wechseln Oberflächen, Text, Rahmen, Akzent-, Warn- und Fehlerfarben gemeinsam.
+Damit bleibt die SEO-Hierarchie vollständig erhalten, ohne oberhalb der Galerie auf kleinen Displays mehrere Zeilen Navigation zu verbrauchen.
 
-## Kaufentscheidung
+## Deduplizierte Produktlisten
 
-Die Engine unterscheidet jetzt:
+Das neue Modul
 
-- `positive`: grüner Haken
-- `neutral`: amberfarbener Punkt
-- `negative`: rotes X
-
-GPS-Tracker, Trinkbrunnen und andere Nicht-Futterautomaten erhalten fünf Fragen. Trocken- und Nassfutter werden dort weder gerendert noch in Score oder Vollständigkeit einbezogen.
-
-Alternativen enthalten nun ein eigenes Decision Profile. Dieselben Nutzerantworten werden live gegen jede Alternative gerechnet. Angezeigt wird nur eine Alternative mit mindestens fünf Punkten höherem persönlichen Fit. Fehlt ein alternatives Decision Profile, dient ein mindestens fünf Punkte höherer redaktioneller Score als Fallback.
-
-## Manuelle Preise
-
-Der Price Source Type wurde um `manual` erweitert. Das SEO Cockpit schreibt über eine lokale Admin-Route atomar in das Produkt-Frontmatter:
-
-```yaml
-price:
-  current: 119
-  currency: "EUR"
-  status: "unknown"
-  checkedAt: "..."
-  affiliateUrl: "https://..."
-  source:
-    id: "manual"
-    label: "Hersteller-Shop"
-    type: "manual"
+```text
+src/domain/productExperience/contentLists.ts
 ```
 
-Die Kategorie-Range und die Preisbewertung bleiben abgeleitet und werden nicht manuell dupliziert.
+normalisiert redaktionelle Listenwerte. Es entfernt führende Symbole, vereinheitlicht Leerzeichen und erkennt Duplikate unabhängig von Großschreibung, Bindestrichen, Satzzeichen und Umlauten.
+
+Das Produkt-View-Model verwendet diese Logik für:
+
+- Vorteile
+- Nachteile
+- Ideal-für-Angaben
+- Nicht-geeignet-für-Angaben
+
+Ein Eintrag, der bereits als Einschränkung geführt wird, wird nicht zusätzlich als Vorteil ausgegeben.
+
+## Semantische Symbole
+
+`ProductDetails2.astro` rendert Symbole als eigene, für Screenreader ausgeblendete Elemente. Dadurch kann keine globale Listenformatierung Nachteile versehentlich mit grünen Haken versehen.
+
+## CTA-System
+
+Die finale Theme-Schicht führt folgende semantische Variablen ein:
+
+```css
+--pt-cta-primary-bg
+--pt-cta-primary-bg-hover
+--pt-cta-primary-text
+--pt-cta-secondary-bg
+--pt-cta-secondary-bg-hover
+--pt-cta-secondary-text
+```
+
+Primäre CTAs, Kaufberatungs-CTAs und die Preis-CTA verwenden damit dieselbe Theme-Akzentfarbe. Sekundäre CTAs bleiben visuell nachgeordnet, nutzen aber denselben Akzent für Rahmen und Text.
