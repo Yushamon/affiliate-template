@@ -161,40 +161,7 @@ const explicitQuickFacts = list<any>(
   source.highlights
 );
 
-const normalizeQuickFactLabel = (input: unknown) =>
-  asText(input)
-    .toLocaleLowerCase("de-DE")
-    .replaceAll("ä", "ae")
-    .replaceAll("ö", "oe")
-    .replaceAll("ü", "ue")
-    .replaceAll("ß", "ss")
-    .replace(/[-_]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-
-const quickFactSemanticKey = (label: unknown) => {
-  const normalized = normalizeQuickFactLabel(label);
-
-  if (/^(kapazitaet|volumen|fassungsvermoegen)$/.test(normalized)) {
-    return "capacity";
-  }
-
-  if (/^(einsatz|geeignet fuer|eignung|anwendungsfall|use case)$/.test(normalized)) {
-    return "use-case";
-  }
-
-  if (/^(app|app steuerung|appsteuerung)$/.test(normalized)) {
-    return "app";
-  }
-
-  if (/^(stromversorgung|energieversorgung)$/.test(normalized)) {
-    return "power";
-  }
-
-  return "label:" + normalized;
-};
-
-const rawQuickFacts = (
+const quickFacts = (
   explicitQuickFacts.length
     ? explicitQuickFacts.map((fact: any) => ({
         label: asText(fact?.label ?? fact?.title ?? fact?.name, "Merkmal"),
@@ -210,19 +177,7 @@ const rawQuickFacts = (
           : null,
         ...specEntries.slice(0, 6)
       ]
-);
-
-const quickFacts = rawQuickFacts
-  .filter(Boolean)
-  .filter((fact: any) => fact.label && fact.value)
-  .filter((fact: any, index: number, facts: any[]) => {
-    const semanticKey = quickFactSemanticKey(fact.label);
-
-    return facts.findIndex(
-      (candidate: any) => quickFactSemanticKey(candidate?.label) === semanticKey
-    ) === index;
-  })
-  .slice(0, 8);
+).filter(Boolean).filter((fact: any) => fact.label && fact.value).slice(0, 8);
 
 const review = value.review ?? source.review ?? {};
 const reviewText = asText(
