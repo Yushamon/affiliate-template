@@ -123,11 +123,14 @@ const comparisonItemListSchema = {
   url: comparisonCanonicalUrl,
   itemListOrder: "https://schema.org/ItemListOrderAscending",
   numberOfItems: model.products.length,
-  // Übersichtsseite: vollständige Product-Daten stehen auf den Produktseiten.
   itemListElement: model.products.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,
-    url: new URL(product.href, Astro.site ?? Astro.url).href
+    item: {
+      "@type": "Product",
+      name: product.title,
+      url: new URL(product.href, Astro.site ?? Astro.url).href
+    }
   }))
 };
 

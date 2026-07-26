@@ -1,15 +1,16 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T05:25:52.787Z",
-    "totalProducts": 65,
+    "generatedAt": "2026-07-26T13:03:16.181Z",
+    "totalProducts": 68,
     "byCategory": {
-      "futterautomaten": 37,
-      "trinkbrunnen": 20,
-      "gps-tracker": 8
+      "futterautomaten": 38,
+      "trinkbrunnen": 21,
+      "gps-tracker": 8,
+      "katzenklappen": 1
     },
-    "errors": 0,
-    "warnings": 84,
-    "notes": 156,
+    "errors": 2,
+    "warnings": 102,
+    "notes": 152,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -1396,6 +1397,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: gewicht"
       ],
@@ -1509,7 +1511,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 85,
       "confirmedCompleteness": 85,
-      "completeness": 94
+      "completeness": 91
     },
     {
       "file": "src\\content\\products\\oneisall-3-2l-cordless-fountain.md",
@@ -2191,6 +2193,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -2275,7 +2278,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-3-pro-uvc.md",
@@ -4075,64 +4078,34 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petlibro-dockstream-2-smart.md",
-      "slug": "petlibro-dockstream-2-smart",
-      "title": "PETLIBRO Dockstream 2 Smart",
+      "file": "src\\content\\products\\petlibro-dockstream-2-smart-cordless.md",
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "title": "PETLIBRO Dockstream 2 Smart Cordless",
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
+        "Empfohlenes Feld fehlt: lautstärke",
+        "Empfohlenes Feld fehlt: uv",
+        "Empfohlenes Feld fehlt: trinkhöhe",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
-      "notes": [
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
-      ],
+      "notes": [],
       "specs": [
+        {
+          "label": "Modell",
+          "value": "PLWF116"
+        },
+        {
+          "label": "Produkttyp",
+          "value": "Smarter kabelloser Trinkbrunnen"
+        },
         {
           "label": "Kapazität",
           "value": "3 Liter"
         },
         {
           "label": "Material",
-          "value": "ABS und Edelstahl"
-        },
-        {
-          "label": "Trinkfläche",
-          "value": "Edelstahl"
-        },
-        {
-          "label": "Stromversorgung",
-          "value": "je nach Variante Netzbetrieb oder Akku"
-        },
-        {
-          "label": "Akku",
-          "value": "Akkuvariante mit 5200 mAh"
-        },
-        {
-          "label": "App",
-          "value": "PETLIBRO App mit Trink- und Wasserstandsdaten"
-        },
-        {
-          "label": "Verbindung",
-          "value": "2,4- und 5-GHz-WLAN"
-        },
-        {
-          "label": "Lautstärke",
-          "value": "Herstellerangabe 23 dB"
-        },
-        {
-          "label": "Filter",
-          "value": "vierstufige Filterung"
-        },
-        {
-          "label": "Filterwechsel",
-          "value": "Herstellerempfehlung etwa alle zwei Wochen"
-        },
-        {
-          "label": "Reinigung",
-          "value": "abnehmbarer Tank; Edelstahl-Trinkfläche spülmaschinengeeignet"
+          "value": "ABS-Kunststoff und Edelstahl"
         },
         {
           "label": "Abmessungen",
@@ -4140,33 +4113,154 @@
         },
         {
           "label": "Gewicht",
-          "value": "ca. 1,77 kg Netzversion oder 1,89 kg Akkuversion"
+          "value": "1,89 kg"
+        },
+        {
+          "label": "Akkukapazität",
+          "value": "5200 mAh"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "laut Hersteller bis zu 30 Tage bei einer Katze, 30 Sitzungen täglich und je 45 Sekunden"
+        },
+        {
+          "label": "Ladezeit",
+          "value": "etwa 7 bis 8 Stunden ausgeschaltet; bis zu 10 Stunden während des Betriebs"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App für iOS und Android"
+        },
+        {
+          "label": "Trinktracking",
+          "value": "Wasseraufnahme, Anzahl der Sitzungen, durchschnittliche Trinkdauer und Tagesverlauf"
+        },
+        {
+          "label": "Antrieb",
+          "value": "magnetischer Rotor im Tank und magnetischer Antrieb in der Basis"
+        },
+        {
+          "label": "Filterung",
+          "value": "vierstufig"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "sensorgesteuert im Akkubetrieb; weitere Modi abhängig von Stromversorgung und Einstellung"
+        },
+        {
+          "label": "Tierzuordnung",
+          "value": "keine RFID-Erkennung; Daten nicht sicher pro Tier trennbar"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Handwäsche; nicht spülmaschinengeeignet"
         },
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
         },
         {
-          "label": "UV",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "label": "Betriebssysteme",
+          "value": "iOS 13 oder neuer; Android 7 oder neuer"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 73,
+      "confirmedCompleteness": 73,
+      "completeness": 88
+    },
+    {
+      "file": "src\\content\\products\\petlibro-dockstream-2-smart.md",
+      "slug": "petlibro-dockstream-2-smart",
+      "title": "PETLIBRO Dockstream 2 Smart",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: lautstärke",
+        "Empfohlenes Feld fehlt: reinigung",
+        "Empfohlenes Feld fehlt: uv",
+        "Empfohlenes Feld fehlt: trinkhöhe",
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "PLWF106"
         },
         {
-          "label": "Trinkhöhe",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "label": "Produkttyp",
+          "value": "Smarter kabelgebundener Trinkbrunnen"
+        },
+        {
+          "label": "Kapazität",
+          "value": "3 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "ABS-Kunststoff und Edelstahl"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "246 × 200 × 198 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "etwa 1,77 kg"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "ausschließlich Netzbetrieb"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein"
+        },
+        {
+          "label": "Annäherungssensor",
+          "value": "Nein"
         },
         {
           "label": "Wasserfluss",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "kontinuierlich oder zeitgesteuert"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "App",
+          "value": "PETLIBRO-App für iOS und Android"
+        },
+        {
+          "label": "Trinktracking",
+          "value": "Wasseraufnahme und Trinkereignisse laut Hersteller"
+        },
+        {
+          "label": "Tierzuordnung",
+          "value": "keine RFID-Erkennung"
+        },
+        {
+          "label": "Filterung",
+          "value": "vierstufig"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Stromausfall",
+          "value": "kein Batterie-Backup"
         }
       ],
-      "unknownSpecs": [
-        "UV",
-        "Trinkhöhe",
-        "Wasserfluss"
-      ],
-      "structuralCompleteness": 93,
-      "confirmedCompleteness": 73,
-      "completeness": 94
+      "unknownSpecs": [],
+      "structuralCompleteness": 67,
+      "confirmedCompleteness": 67,
+      "completeness": 85
     },
     {
       "file": "src\\content\\products\\petlibro-dockstream-cordless.md",
@@ -4473,6 +4567,112 @@
       "structuralCompleteness": 93,
       "confirmedCompleteness": 73,
       "completeness": 94
+    },
+    {
+      "file": "src\\content\\products\\petlibro-granary-2-vision.md",
+      "slug": "petlibro-granary-2-vision",
+      "title": "PETLIBRO Granary 2 Vision",
+      "category": "futterautomaten",
+      "errors": [
+        "Vergleichsfeld fehlt: geeignet für",
+        "Vergleichsfeld fehlt: portionierung"
+      ],
+      "warnings": [
+        "Empfohlenes Feld fehlt: app-steuerung",
+        "Empfohlenes Feld fehlt: napf",
+        "Empfohlenes Feld fehlt: reinigung"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "PLAF205"
+        },
+        {
+          "label": "Produkttyp",
+          "value": "Smarter Trockenfutterautomat mit Kamera und Waage"
+        },
+        {
+          "label": "Kapazität",
+          "value": "5 Liter"
+        },
+        {
+          "label": "Futterart",
+          "value": "Trockenfutter"
+        },
+        {
+          "label": "Geeignete Tiere",
+          "value": "Katzen"
+        },
+        {
+          "label": "Krokettengröße",
+          "value": "2 bis 18 mm; keine übergroßen oder unregelmäßigen Formen"
+        },
+        {
+          "label": "Waage",
+          "value": "integriert; Herstellerangabe 1 g Genauigkeit"
+        },
+        {
+          "label": "Maximale Waagenlast",
+          "value": "7,5 kg"
+        },
+        {
+          "label": "Kamera",
+          "value": "1080p mit Nachtsicht"
+        },
+        {
+          "label": "Videofunktionen",
+          "value": "Liveansicht; Aufzeichnung und Wiedergabe abhängig vom Video-Cloud-AI-Abo"
+        },
+        {
+          "label": "Fressprotokoll",
+          "value": "Menge, Zeitpunkt, Dauer und Trends laut Hersteller"
+        },
+        {
+          "label": "Fütterungsmodi",
+          "value": "Smart Refill und geplante Mahlzeiten"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb und wiederaufladbarer Akku"
+        },
+        {
+          "label": "Backup",
+          "value": "laut Variantenspezifikation bis zu 48 Stunden"
+        },
+        {
+          "label": "Material",
+          "value": "Gehäuse aus BPA-freiem ABS und Silikon; Edelstahlnapf"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "357 × 180 × 356 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "3,45 kg"
+        },
+        {
+          "label": "Stellfläche",
+          "value": "harter, ebener Boden; nicht für Teppich"
+        },
+        {
+          "label": "Betriebssysteme",
+          "value": "iOS und Android"
+        },
+        {
+          "label": "Tiererkennung",
+          "value": "KI-Zuordnung von Aufnahmen und Protokollen; keine Zugangssperre"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 62,
+      "confirmedCompleteness": 62,
+      "completeness": 71
     },
     {
       "file": "src\\content\\products\\petlibro-granary-camera-feeder.md",
@@ -4912,6 +5112,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Comparison-Bild fehlt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: reinigung",
@@ -5000,7 +5201,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 69,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 82
     },
     {
       "file": "src\\content\\products\\petlibro-stainless-steel-fountain.md",
@@ -5097,6 +5298,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5177,7 +5379,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petsafe-healthy-pet-simply-feed.md",
@@ -5186,6 +5388,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5270,7 +5473,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petsafe-smart-feed-2.md",
@@ -5279,6 +5482,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5353,7 +5557,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder-connect.md",
@@ -5362,6 +5566,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -5440,7 +5645,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder.md",
@@ -5932,53 +6137,95 @@
     {
       "file": "src\\content\\products\\weenect-xt.md",
       "slug": "weenect-xt",
-      "title": "Weenect XT",
+      "title": "Weenect XT GPS-Tracker",
       "category": "gps-tracker",
       "errors": [],
       "warnings": [],
-      "notes": [
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
-      ],
+      "notes": [],
       "specs": [
         {
           "label": "Ortung",
-          "value": "Satellitenortung über Weenect InfinityTrack"
+          "value": "GPS, Galileo, BeiDou und GLONASS mit Weenect InfinityTrack"
         },
         {
           "label": "Übertragung",
-          "value": "5G, 4G (NB-IoT/LTE-M) und 2G über integrierte SIM"
+          "value": "Multi-Netz-eSIM; Weenect nennt 2G, NB-IoT/LTE-M und 4G, auf der XT-Produktseite zusätzlich 5G"
+        },
+        {
+          "label": "Netze in Deutschland",
+          "value": "Vodafone, Deutsche Telekom und O2 laut Hersteller"
+        },
+        {
+          "label": "Internationale Abdeckung",
+          "value": "Laut Hersteller Multi-Netz-Nutzung in mehr als 170 Ländern"
         },
         {
           "label": "Reichweite",
-          "value": "Keine feste Distanzgrenze; unterstützte Netzabdeckung erforderlich"
+          "value": "Keine feste Distanzgrenze; Satelliten- und Mobilfunkempfang erforderlich"
+        },
+        {
+          "label": "Herstellerangabe zur Abdeckung",
+          "value": "XL-Antenne und 99 % Gebietsabdeckung; keine Garantie für jeden lokalen Standort"
+        },
+        {
+          "label": "Live-Tracking",
+          "value": "Superlive mit Positionsupdates bis zu einmal pro Sekunde"
+        },
+        {
+          "label": "Standard-Superlive",
+          "value": "Bis zu 2 Minuten je Sitzung laut aktueller Abonnementseite"
+        },
+        {
+          "label": "Premium-Superlive",
+          "value": "Optional bis zu 30 Minuten je Sitzung"
         },
         {
           "label": "Abo",
-          "value": "Erforderlich"
+          "value": "Erforderlich; eigenes Abonnement pro Tracker"
+        },
+        {
+          "label": "Abo-Modelle",
+          "value": "Monatlich sowie Prepaid-Laufzeiten über ein, zwei oder fünf Jahre"
         },
         {
           "label": "App",
-          "value": "Weenect App und Web-App"
+          "value": "Weenect App für iOS und Android sowie Web-App"
+        },
+        {
+          "label": "Kompatibilität",
+          "value": "iOS 15 oder höher; Android 6 oder höher; Web-App im Browser"
         },
         {
           "label": "WLAN",
-          "value": "WLAN-Energiesparzonen"
+          "value": "WLAN-Energiesparzonen; kein eigenständiger Ortungsweg"
         },
         {
           "label": "Bluetooth",
-          "value": "Nicht als Ortungsweg ausgewiesen"
+          "value": "Nicht als eigenständiger Such- oder Ortungsweg ausgewiesen"
+        },
+        {
+          "label": "Akkukapazität",
+          "value": "1.250 mAh bei 3,8 V; 4,75 Wh"
         },
         {
           "label": "Akkulaufzeit",
-          "value": "Bis zu 3 Wochen im Energiesparmodus"
+          "value": "Bis zu 3 Wochen mit Energiesparzone; ungefähr 1 Woche bei kontinuierlichem Tracking"
         },
         {
-          "label": "Stromversorgung",
-          "value": "3,8 V, 1.250 mAh, 4,75 Wh Akku"
+          "label": "Ladezeit",
+          "value": "Laut aktueller Produktseite etwa 2 Stunden"
+        },
+        {
+          "label": "Laden",
+          "value": "Magnetisches USB-A-Kabel mit 4-Pin-Anschluss; Netzteil nicht enthalten"
+        },
+        {
+          "label": "Erforderlicher Ladeeingang",
+          "value": "5 V / 1,5 A; Schnellladen wird nicht unterstützt"
         },
         {
           "label": "Wasserschutz",
-          "value": "IP68; bis 1,5 m für 60 Minuten"
+          "value": "IP68; laut Hersteller bis 1,5 m Wassertiefe für 60 Minuten"
         },
         {
           "label": "Abmessungen",
@@ -5986,30 +6233,40 @@
         },
         {
           "label": "Gewicht",
-          "value": "54,2 g"
+          "value": "54,2 g Gerätegewicht"
         },
         {
           "label": "Geeignet für",
-          "value": "Hunde; besonders Outdoor-Einsatz"
+          "value": "Hunde; redaktionell vor allem mittelgroße und große Hunde"
         },
         {
           "label": "Befestigung",
-          "value": "Julius-K9-Halsband oder Universalbefestigung je Variante"
+          "value": "Julius-K9-Halsband oder Universalbefestigung mit Silikonhülle und Klettverschluss"
+        },
+        {
+          "label": "Halsbandumfang",
+          "value": "Julius-K9-Variante laut Hersteller von 37,5 bis 56,5 cm verstellbar"
+        },
+        {
+          "label": "Signale",
+          "value": "Ton, Vibration und starke LED-Leuchte"
+        },
+        {
+          "label": "Mehrnutzer",
+          "value": "Gemeinsame Kontonutzung mit weiteren Personen"
         },
         {
           "label": "Material",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "Keine belastbare Herstellerangabe zum Tracker-Gehäusematerial"
         },
         {
           "label": "Reinigung",
-          "value": "Halsband, Universalhalter, Antenne und Ladekontakte vor Outdoor-Einsätzen prüfen."
+          "value": "Gehäuse, Befestigung und Ladekontakte nach Nässe und Schmutz reinigen und vollständig trocknen"
         }
       ],
-      "unknownSpecs": [
-        "Material"
-      ],
+      "unknownSpecs": [],
       "structuralCompleteness": 100,
-      "confirmedCompleteness": 93,
+      "confirmedCompleteness": 100,
       "completeness": 100
     },
     {
@@ -6019,6 +6276,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
+        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
       "notes": [
@@ -6103,7 +6361,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\wopet-heritage-view-camera-feeder.md",
@@ -6574,6 +6832,85 @@
       "structuralCompleteness": 93,
       "confirmedCompleteness": 60,
       "completeness": 97
+    },
+    {
+      "file": "src\\content\\products\\zeromouse-2-0.md",
+      "slug": "zeromouse-2-0",
+      "title": "ZeroMOUSE 2.0",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produkttyp",
+          "value": "KI-Nachrüstsensor für Mikrochip-Katzenklappen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "57,5 × 59,05 × 16,5 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "25 g"
+        },
+        {
+          "label": "Kamera",
+          "value": "integriert"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "ja, laut Hersteller"
+        },
+        {
+          "label": "Beuteerkennung",
+          "value": "Mäuse, Vögel, Ratten, Eidechsen und weitere typische Beutetiere laut Hersteller"
+        },
+        {
+          "label": "Kompatibilität",
+          "value": "Mikrochip-Katzenklappen mit geeignetem Tunnel; PetSafe PetPorte ausgeschlossen"
+        },
+        {
+          "label": "Direkte Montage",
+          "value": "laut Hersteller bei vielen Klappen von SURE Petcare und Closer Pets"
+        },
+        {
+          "label": "PetSafe-Montage",
+          "value": "Adapter erforderlich; laut Installationsanleitung im Lieferumfang"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-C-Netzteil mit mindestens 2 A und geeignetes USB-C-Kabel erforderlich"
+        },
+        {
+          "label": "WLAN",
+          "value": "stabile Verbindung am Installationsort erforderlich"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "für die Einrichtung per Smartphone erforderlich"
+        },
+        {
+          "label": "Außeneinsatz",
+          "value": "spritzwassergeschützt und wetterfest laut Hersteller"
+        },
+        {
+          "label": "Öffnungszeit",
+          "value": "laut Support derzeit ungefähr 3 Sekunden"
+        },
+        {
+          "label": "Lieferumfang",
+          "value": "ZeroMOUSE 2.0; Netzteil, Kabel und Katzenklappe nicht enthalten"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "gechipte Freigängerkatzen mit kompatibler Mikrochip-Katzenklappe"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
     }
   ]
 }

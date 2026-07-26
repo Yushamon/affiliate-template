@@ -77,8 +77,7 @@
     "seo:release:indexnow": "node scripts/submit-indexnow.mjs --changed",
     "seo:release:indexnow:dry-run": "node scripts/submit-indexnow.mjs --changed --dry-run",
     "audit:release-ops": "node scripts/seo/audit-week6-release-ops.mjs",
-    "audit:multicat-intent": "node scripts/seo/audit-week7-multicat-intent.mjs",
-    "audit:comparison-schema": "node scripts/seo/audit-comparison-product-schema.mjs"
+    "audit:multicat-intent": "node scripts/seo/audit-week7-multicat-intent.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
