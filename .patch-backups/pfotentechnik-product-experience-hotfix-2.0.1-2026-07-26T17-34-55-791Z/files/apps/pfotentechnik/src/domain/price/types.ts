@@ -4,7 +4,7 @@ export type PriceTier = "budget" | "midrange" | "premium" | "unknown";
 export type PriceSource = {
   id: string;
   label: string;
-  type: "merchant" | "affiliate" | "editorial" | "manual" | "unknown";
+  type: "merchant" | "affiliate" | "editorial" | "unknown";
   url?: string;
 };
 

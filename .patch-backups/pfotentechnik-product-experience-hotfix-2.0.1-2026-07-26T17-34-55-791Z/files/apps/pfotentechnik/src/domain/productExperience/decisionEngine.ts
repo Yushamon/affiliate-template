@@ -3,9 +3,6 @@ import { priceTierDistance } from "../price/tier.ts";
 
 export type ProductDecisionProfile = {
   productName: string;
-  categoryKey?: string;
-  usesFoodQuestions?: boolean;
-  editorialScore?: number;
   animals: string[];
   petSizes: string[];
   foodTypes: string[];
@@ -35,18 +32,8 @@ export type DecisionEvaluation = {
   headline: string;
   explanation: string;
   positives: string[];
-  neutrals: string[];
   risks: string[];
   mismatchKeys: string[];
-};
-
-type DecisionCheck = {
-  key: string;
-  weight: number;
-  factor: number;
-  positive?: string;
-  neutral?: string;
-  risk?: string;
 };
 
 const hasKnownValues = (values: string[]) => values.length > 0;
@@ -55,19 +42,25 @@ export const evaluateDecision = (
   profile: ProductDecisionProfile,
   answers: DecisionAnswers
 ): DecisionEvaluation => {
-  const checks: DecisionCheck[] = [];
-  const usesFoodQuestions = profile.usesFoodQuestions !== false;
+  const checks: Array<{
+    key: string;
+    answered: boolean;
+    weight: number;
+    factor: number;
+    positive?: string;
+    risk?: string;
+  }> = [];
 
   if (answers.animal) {
     const known = hasKnownValues(profile.animals);
-    const match = known && profile.animals.includes(answers.animal);
+    const match = !known || profile.animals.includes(answers.animal);
     checks.push({
       key: "animal",
+      answered: true,
       weight: 22,
-      factor: !known ? 0.75 : match ? 1 : 0,
-      positive: known && match ? "Die ausgewiesene Tierart passt." : undefined,
-      neutral: !known ? "Die Eignung für die gewählte Tierart ist nicht eindeutig dokumentiert." : undefined,
-      risk: known && !match ? "Das Produkt ist für die gewählte Tierart nicht ausgewiesen." : undefined
+      factor: match ? 1 : 0,
+      positive: match ? "Die ausgewiesene Tierart passt." : undefined,
+      risk: match ? undefined : "Das Produkt ist für die gewählte Tierart nicht ausgewiesen."
     });
   }
 
@@ -77,57 +70,39 @@ export const evaluateDecision = (
     const factor = !multiple ? 1 : unknown ? 0.65 : profile.supportsMultiplePets ? 1 : 0.35;
     checks.push({
       key: "multi-pet",
+      answered: true,
       weight: 10,
       factor,
-      positive: !multiple || profile.supportsMultiplePets === true
-        ? "Die Anzahl der Tiere passt zum vorgesehenen Einsatz."
-        : undefined,
-      neutral: multiple && unknown
-        ? "Die Eignung für mehrere Tiere ist nicht eindeutig belegt."
-        : undefined,
-      risk: multiple && profile.supportsMultiplePets === false
-        ? "Für mehrere Tiere fehlen klare Mehrtierfunktionen oder getrennte Zugänge."
-        : undefined
+      positive: factor >= 0.9 ? "Die Anzahl der Tiere passt zum vorgesehenen Einsatz." : undefined,
+      risk: factor < 0.7 ? "Für mehrere Tiere fehlen klare Mehrtierfunktionen oder getrennte Zugänge." : undefined
     });
   }
 
-  if (usesFoodQuestions && answers.dryFood != null) {
+  if (answers.dryFood != null) {
     const known = hasKnownValues(profile.foodTypes);
-    const supports = known && profile.foodTypes.includes("dry");
-    const factor = !answers.dryFood ? 1 : !known ? 0.7 : supports ? 1 : 0;
+    const supports = !known || profile.foodTypes.includes("dry");
+    const factor = !answers.dryFood ? 1 : supports ? 1 : 0;
     checks.push({
       key: "dry-food",
+      answered: true,
       weight: 12,
       factor,
       positive: answers.dryFood && supports ? "Trockenfutter wird unterstützt." : undefined,
-      neutral: !answers.dryFood
-        ? "Trockenfutter wird für diesen Einsatz nicht benötigt."
-        : !known
-          ? "Die Eignung für Trockenfutter ist nicht eindeutig dokumentiert."
-          : undefined,
-      risk: answers.dryFood && known && !supports
-        ? "Trockenfutter ist für dieses Modell nicht ausgewiesen."
-        : undefined
+      risk: answers.dryFood && !supports ? "Trockenfutter ist für dieses Modell nicht ausgewiesen." : undefined
     });
   }
 
-  if (usesFoodQuestions && answers.wetFood != null) {
+  if (answers.wetFood != null) {
     const known = hasKnownValues(profile.foodTypes);
-    const supports = known && profile.foodTypes.includes("wet");
-    const factor = !answers.wetFood ? 1 : !known ? 0.7 : supports ? 1 : 0;
+    const supports = !known || profile.foodTypes.includes("wet");
+    const factor = !answers.wetFood ? 1 : supports ? 1 : 0;
     checks.push({
       key: "wet-food",
+      answered: true,
       weight: 12,
       factor,
       positive: answers.wetFood && supports ? "Nassfutter wird unterstützt." : undefined,
-      neutral: !answers.wetFood
-        ? "Nassfutter wird für diesen Einsatz nicht benötigt."
-        : !known
-          ? "Die Eignung für Nassfutter ist nicht eindeutig dokumentiert."
-          : undefined,
-      risk: answers.wetFood && known && !supports
-        ? "Nassfutter ist mit diesem Produkttyp nicht sinnvoll vorgesehen."
-        : undefined
+      risk: answers.wetFood && !supports ? "Nassfutter ist mit diesem Produkttyp nicht sinnvoll vorgesehen." : undefined
     });
   }
 
@@ -138,19 +113,11 @@ export const evaluateDecision = (
     const factor = flexible ? 1 : unknown ? 0.7 : distance === 0 ? 1 : distance === 1 ? 0.65 : 0.25;
     checks.push({
       key: "budget",
+      answered: true,
       weight: 14,
       factor,
-      positive: !flexible && !unknown && factor >= 0.9
-        ? "Das Preisniveau passt zur Budgetwahl."
-        : undefined,
-      neutral: flexible
-        ? "Das Budget war für die Auswahl nicht entscheidend."
-        : unknown
-          ? "Für dieses Produkt liegt noch kein belastbarer Preis vor."
-          : undefined,
-      risk: !flexible && !unknown && factor < 0.7
-        ? "Das Preisniveau liegt außerhalb der gewählten Budgetklasse."
-        : undefined
+      positive: factor >= 0.9 ? "Das Preisniveau passt zur Budgetwahl." : undefined,
+      risk: factor < 0.7 ? "Das Preisniveau liegt außerhalb der gewählten Budgetklasse." : undefined
     });
   }
 
@@ -162,32 +129,17 @@ export const evaluateDecision = (
       ? 1
       : requiresWifi
         ? unknown ? 0.7 : profile.hasWifi ? 1 : 0.25
-        : profile.worksOffline === true
-          ? 1
-          : profile.hasWifi === false
-            ? 1
-            : unknown
-              ? 0.7
-              : 0.35;
-
+        : profile.worksOffline === true ? 1 : profile.hasWifi === false ? 1 : unknown ? 0.7 : 0.35;
     checks.push({
       key: requiresWifi ? "wifi" : answers.wifi === "offline" ? "offline" : "wifi-optional",
+      answered: true,
       weight: 15,
       factor,
       positive: factor >= 0.9 && !optional
-        ? requiresWifi
-          ? "WLAN-Funktionen sind vorhanden."
-          : "Der Betrieb ist ohne WLAN sinnvoll möglich."
+        ? requiresWifi ? "WLAN-Funktionen sind vorhanden." : "Der Betrieb ist ohne WLAN sinnvoll möglich."
         : undefined,
-      neutral: optional
-        ? "WLAN und App waren für die Auswahl nicht entscheidend."
-        : unknown
-          ? "Die WLAN- beziehungsweise Offline-Eignung ist nicht eindeutig dokumentiert."
-          : undefined,
       risk: factor < 0.7
-        ? requiresWifi
-          ? "WLAN-Funktionen fehlen oder sind nicht eindeutig belegt."
-          : "Der gewünschte Offline-Betrieb ist nicht klar abgesichert."
+        ? requiresWifi ? "WLAN-Funktionen fehlen oder sind nicht eindeutig belegt." : "Der gewünschte Offline-Betrieb ist nicht klar abgesichert."
         : undefined
     });
   }
@@ -202,36 +154,22 @@ export const evaluateDecision = (
       : required
         ? unknown ? 0.65 : profile.hasCamera ? 1 : 0.15
         : unknown ? 0.8 : profile.hasCamera ? 0.65 : 1;
-
     checks.push({
       key: required ? "camera" : unwanted ? "camera-unwanted" : "camera-optional",
+      answered: true,
       weight: 15,
       factor,
-      positive: required && profile.hasCamera
-        ? "Eine Kamera ist vorhanden."
-        : unwanted && profile.hasCamera === false
-          ? "Das Produkt verzichtet auf eine Kamera."
-          : undefined,
-      neutral: optional
-        ? "Eine Kamera war für die Auswahl nicht entscheidend."
-        : unknown
-          ? "Die Kameraausstattung ist nicht eindeutig dokumentiert."
-          : undefined,
-      risk: required && factor < 0.7
-        ? "Das Produkt besitzt keine ausgewiesene Kamera."
-        : unwanted && factor < 0.7
-          ? "Das Produkt besitzt eine Kamera, obwohl du darauf verzichten möchtest."
-          : undefined
+      positive: required && profile.hasCamera ? "Eine Kamera ist vorhanden." : unwanted && profile.hasCamera === false ? "Das Produkt verzichtet auf eine Kamera." : undefined,
+      risk: required && factor < 0.7 ? "Das Produkt besitzt keine ausgewiesene Kamera." : unwanted && factor < 0.7 ? "Das Produkt besitzt eine Kamera, obwohl du darauf verzichten möchtest." : undefined
     });
   }
 
-  const total = usesFoodQuestions ? 7 : 5;
+  const total = 7;
   const completed = checks.length;
   const answeredWeight = checks.reduce((sum, item) => sum + item.weight, 0);
   const achievedWeight = checks.reduce((sum, item) => sum + item.weight * item.factor, 0);
   const score = answeredWeight ? Math.round((achievedWeight / answeredWeight) * 100) : 0;
   const positives = checks.map((item) => item.positive).filter(Boolean) as string[];
-  const neutrals = checks.map((item) => item.neutral).filter(Boolean) as string[];
   const risks = checks.map((item) => item.risk).filter(Boolean) as string[];
   const mismatchKeys = checks.filter((item) => item.factor < 0.7).map((item) => item.key);
   const isComplete = completed === total;
@@ -269,7 +207,6 @@ export const evaluateDecision = (
     headline,
     explanation,
     positives,
-    neutrals,
     risks,
     mismatchKeys
   };

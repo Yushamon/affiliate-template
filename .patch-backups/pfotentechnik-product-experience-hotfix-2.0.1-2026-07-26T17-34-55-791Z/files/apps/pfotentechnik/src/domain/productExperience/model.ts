@@ -58,23 +58,14 @@ const booleanFromText = (haystack: string, positive: string[], negative: string[
 
 const decisionProfileFor = (data: any, price: ProductPriceInsight | undefined): ProductDecisionProfile => {
   const haystack = collectProductText(data);
-  const normalizedCategory = normalize(data.category?.key ?? data.category?.label);
-  const usesFoodQuestions = [
-    "futterautomat",
-    "futterautomaten",
-    "futterspender",
-    "feeder"
-  ].some((term) => normalizedCategory.includes(term));
   const animals = list<string>(data.comparisonFilters?.animal ?? data.comparisonData?.general?.animal)
     .map((value) => normalize(value))
     .map((value) => value === "hund" || value === "hunde" ? "dog" : value === "katze" || value === "katzen" ? "cat" : value)
     .filter((value) => value === "dog" || value === "cat");
-  const foodTypes = usesFoodQuestions
-    ? list<string>(data.comparisonFilters?.foodType ?? data.comparisonData?.general?.foodType)
-        .map((value) => normalize(value))
-        .map((value) => value.includes("nass") ? "wet" : value.includes("trocken") ? "dry" : value)
-        .filter((value) => value === "dry" || value === "wet")
-    : [];
+  const foodTypes = list<string>(data.comparisonFilters?.foodType ?? data.comparisonData?.general?.foodType)
+    .map((value) => normalize(value))
+    .map((value) => value.includes("nass") ? "wet" : value.includes("trocken") ? "dry" : value)
+    .filter((value) => value === "dry" || value === "wet");
 
   const hasWifi = typeof data.comparisonFilters?.app === "boolean"
     ? data.comparisonFilters.app
@@ -95,9 +86,6 @@ const decisionProfileFor = (data: any, price: ProductPriceInsight | undefined): 
 
   return {
     productName: text(data.title, "Dieses Produkt"),
-    categoryKey: normalizedCategory,
-    usesFoodQuestions,
-    editorialScore: editorialScore(data),
     animals: [...new Set(animals)],
     petSizes: list<string>(data.comparisonFilters?.petSize ?? data.comparisonData?.general?.petSize).map(normalize),
     foodTypes: [...new Set(foodTypes)],
@@ -140,7 +128,6 @@ const toAlternative = (entry: any, type: string, label: string, reason: string, 
     score: editorialScore(data),
     priceLabel: price?.formattedCurrent,
     reason,
-    decisionProfile: decisionProfileFor(data, price),
     matchKeys: type === "cheaper"
       ? ["budget"]
       : type === "large-dog"

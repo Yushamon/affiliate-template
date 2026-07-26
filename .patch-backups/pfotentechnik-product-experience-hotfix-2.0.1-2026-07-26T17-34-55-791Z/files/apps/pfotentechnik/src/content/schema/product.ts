@@ -118,7 +118,6 @@ const productPriceSourceSchema =
         "merchant",
         "affiliate",
         "editorial",
-        "manual",
         "unknown"
       ])
       .default("unknown"),

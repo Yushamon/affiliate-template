@@ -1,4 +1,4 @@
-import { checkAllProductPrices, checkProductPrice, priceAudit, setManualProductPrice } from "../price-intelligence/service.mjs";
+import { checkAllProductPrices, checkProductPrice, priceAudit } from "../price-intelligence/service.mjs";
 import { approveMediaJob, buildMediaJob, createMediaJob, getMediaJob, mediaAudit, readJobFile, uploadMediaVariant } from "../media-center/service.mjs";
 
 const errorStatus=(error)=>/nicht gefunden|fehlt/i.test(error?.message||"")?404:/nicht erlaubt|HTTPS|öffentlich|groesser|größer|unbekannt/i.test(error?.message||"")?400:422;
@@ -8,7 +8,6 @@ export async function handleOperationsRoute({request,response,requestUrl,origin,
     if(request.method==="GET"&&pathname==="/api/admin/prices"){json(response,200,await priceAudit(),origin);return true}
     if(request.method==="POST"&&pathname==="/api/admin/prices/check"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await checkProductPrice(String(body.slug||"")),origin);return true}
     if(request.method==="POST"&&pathname==="/api/admin/prices/check-all"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await checkAllProductPrices({limit:body.limit}),origin);return true}
-    if(request.method==="POST"&&pathname==="/api/admin/prices/manual"){assertJsonRequest(request);const body=await readJsonBody(request,32_768);json(response,200,await setManualProductPrice(body),origin);return true}
     if(request.method==="GET"&&pathname==="/api/admin/media/audit"){json(response,200,await mediaAudit(),origin);return true}
     if(request.method==="POST"&&pathname==="/api/admin/media/jobs"){assertJsonRequest(request);const body=await readJsonBody(request,65_536);json(response,201,await createMediaJob({url:body.url,slug:body.slug}),origin);return true}
     const match=pathname.match(/^\/api\/admin\/media\/jobs\/([0-9a-f-]+)(?:\/(upload|build|approve|file))?$/i);
