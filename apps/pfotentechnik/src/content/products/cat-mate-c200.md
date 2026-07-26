@@ -58,10 +58,22 @@ images:
       alt: Analoge Timer des Cat Mate C200
     - src: ../../assets/images/products/cat-mate-c200/gallery-3.webp
       alt: Kühlakku des Cat Mate C200
+price:
+  current: 28.88
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 10 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T20:49:05.366Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=Cat+Mate+C200+Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4yIM2qT"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.5
 score: 71
 ratings:

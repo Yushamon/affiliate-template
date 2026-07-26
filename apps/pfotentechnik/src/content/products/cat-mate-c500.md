@@ -56,10 +56,22 @@ images:
       alt: Kühlakkus des Cat Mate C500
     - src: ../../assets/images/products/cat-mate-c500/gallery-3.webp
       alt: Cat Mate C500 beim Befüllen
+price:
+  current: 32.6
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 12 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T20:51:37.435Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=Cat+Mate+C500+Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/45tAoCE"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 73
 ratings:

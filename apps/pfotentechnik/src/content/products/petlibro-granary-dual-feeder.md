@@ -60,10 +60,22 @@ images:
       alt: Verstellbarer Mahlzeitenteiler des PETLIBRO Granary
     - src: ../../assets/images/products/petlibro-granary-dual-feeder/gallery-3.webp
       alt: PETLIBRO Granary Dual Feeder mit zwei Katzen
+price:
+  current: 104.97
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 17 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T21:08:15.889Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Granary+Dual+Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4gYFKNA"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 90
 ratings:

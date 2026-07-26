@@ -63,10 +63,22 @@ images:
       alt: PETLIBRO One RFID Smart Feeder, weitere redaktionelle Ansicht 2
     - src: ../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp
       alt: Katze mit RFID-Halsbandanhänger vor dem geöffneten Zugang des PETLIBRO One
+price:
+  current: 159.99
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 18 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T21:10:55.621Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO%20One%20RFID%20Smart%20Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/44MCFsD"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.7
 score: 74
 ratings:

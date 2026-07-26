@@ -1,0 +1,726 @@
+/*
+ * PfotenTechnik Mobile Product Layout 4.0.1
+ *
+ * Reine Präsentationsschicht für Produktseiten.
+ * Keine Änderungen an Daten, Logik, SEO, Texten oder Komponentenstruktur.
+ */
+
+@media (max-width: 720px) {
+  /*
+   * Mobile canvas
+   *
+   * Der globale Container verwendet regulär 24 px pro Seite. Produktseiten
+   * erhalten 12 px, damit bei 375 px 351 px und bei 414 px 390 px nutzbar sind.
+   */
+  main.container:has([data-product-page]) {
+    width: 100%;
+    max-width: none;
+    padding-top: clamp(76px, 20vw, 88px);
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
+    padding-left: max(12px, env(safe-area-inset-left));
+  }
+
+  [data-product-page].pt-product-detail {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] {
+    width: 100%;
+    max-width: none;
+    gap: clamp(30px, 8vw, 38px);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] > * {
+    min-width: 0;
+  }
+
+  /*
+   * Typografisches System
+   */
+  [data-product-page] [data-product-experience="2.0"] .px2-hero h1 {
+    max-width: 14ch;
+    font-size: clamp(2.5rem, 11.7vw, 3.2rem);
+    line-height: 1.01;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .decision__header h2,
+    .timeline > header h2,
+    .alternatives > header h2,
+    .trust > header h2
+  ) {
+    margin-top: 6px;
+    font-size: clamp(1.72rem, 7.2vw, 2.05rem);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .details__decision h2,
+    .details__column h2,
+    .details__health h2,
+    .details__faq > h2
+  ) {
+    font-size: clamp(1.48rem, 6.2vw, 1.78rem);
+    line-height: 1.16;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .px2-hero__lead,
+    .decision__header p,
+    .timeline p,
+    .details__health p,
+    .details__faq p,
+    .alternatives > header p,
+    .trust > header p,
+    .trust article p
+  ) {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .px2-fit li,
+    .px2-hero__decision li,
+    .details__list li,
+    .decision label
+  ) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .decision__header > span,
+    .timeline > header > span,
+    .alternatives > header > span,
+    .trust > header > span,
+    .details__decision header > span,
+    .details__health > span,
+    .px2-price__header span,
+    .px2-hero__decision > div > span
+  ) {
+    font-size: 0.72rem;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+  }
+
+  /*
+   * Hero und Galerie
+   */
+  [data-product-page] [data-product-experience="2.0"] .px2-hero {
+    gap: 10px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__content {
+    gap: 18px;
+    padding: 18px 16px 16px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px color-mix(
+      in srgb,
+      var(--px2-text) 8%,
+      transparent
+    );
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__meta {
+    gap: 6px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .px2-hero__meta a,
+    .px2-hero__meta span
+  ) {
+    padding: 5px 8px;
+    font-size: 0.74rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__lead {
+    line-height: 1.62;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage,
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__empty {
+    min-height: 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 26px color-mix(
+      in srgb,
+      var(--px2-text) 7%,
+      transparent
+    );
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage img {
+    width: 100%;
+    height: clamp(320px, calc(100vw - 32px), 390px);
+    max-height: none;
+    aspect-ratio: auto;
+    padding: 6px 4px 8px;
+    object-fit: contain;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage figcaption {
+    padding: 0 12px 10px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumbs {
+    gap: 8px;
+    margin-top: 8px;
+    margin-inline: 0;
+    padding: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb {
+    flex: 0 0 76px;
+    min-height: 64px;
+    padding: 2px;
+    border-width: 1px;
+    border-radius: 12px;
+    background: transparent;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb.is-active {
+    border-width: 2px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__thumb img {
+    height: 58px;
+    border-radius: 9px;
+  }
+
+  /*
+   * Hero-intern: eine Premiumkarte statt weiterer verschachtelter Karten.
+   */
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__fit-grid {
+    gap: 8px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-fit {
+    padding: 12px 13px;
+    border-radius: 14px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-fit h2 {
+    margin-bottom: 7px;
+    font-size: 0.96rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__decision {
+    gap: 0;
+    padding-block: 2px;
+    border-block: 1px solid var(--px2-border);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__decision > div {
+    padding: 14px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__decision > div + div {
+    border-top: 1px solid var(--px2-border);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-limit p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__compare {
+    min-height: 50px;
+    padding: 12px 15px;
+    border-radius: 13px;
+    font-size: 1rem;
+  }
+
+  /*
+   * Preisbox: Premiumfläche bleibt, innere Mini-Karten werden zu Zeilen.
+   */
+  [data-product-page] [data-product-experience="2.0"] .px2-price {
+    gap: 15px;
+    padding: 16px 14px;
+    border-radius: 18px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: start;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__header h2 {
+    font-size: 1.24rem;
+    line-height: 1.2;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__status {
+    padding: 6px 9px;
+    font-size: 0.74rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values div {
+    padding: 10px 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values div + div {
+    padding-left: 12px;
+    border-left: 1px solid var(--px2-border);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values dt {
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values dd {
+    margin-top: 6px;
+    font-size: 1.08rem;
+    line-height: 1.25;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__values div:first-child dd {
+    font-size: 1.22rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__comparison {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__cta {
+    min-height: 52px;
+    padding: 13px 15px;
+    border-radius: 13px;
+    font-size: 1rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-price__note {
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  /*
+   * Interaktive Kaufentscheidung:
+   * eine äußere Premiumkarte, Fragen als ruhige Zeilen, Ergebnis hervorgehoben.
+   */
+  [data-product-page] [data-product-experience="2.0"] .decision {
+    gap: 22px;
+    padding: 20px 16px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px color-mix(
+      in srgb,
+      var(--px2-text) 8%,
+      transparent
+    );
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__form {
+    display: block;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision fieldset {
+    padding: 17px 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision fieldset:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision legend {
+    padding: 0;
+    font-size: 1.02rem;
+    line-height: 1.35;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision label {
+    min-height: 46px;
+    gap: 10px;
+    padding-block: 5px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision input {
+    width: 20px;
+    height: 20px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__result {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 14px;
+    padding: 16px 14px;
+    border-radius: 17px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__score {
+    width: 68px;
+    height: 68px;
+    place-self: start;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__score strong {
+    font-size: 1.62rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__score span {
+    font-size: 0.66rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__verdict {
+    margin-bottom: 11px;
+    font-size: 1rem;
+    line-height: 1.48;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__reason {
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 8px;
+    font-size: 0.96rem;
+    line-height: 1.48;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__reason-mark {
+    width: 21px;
+    height: 21px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .decision__alternative {
+    font-size: 0.96rem;
+    line-height: 1.45;
+  }
+
+  /*
+   * Alltag: eine ruhige Karte, Schritte über Divider statt Einzelkarten.
+   */
+  [data-product-page] [data-product-experience="2.0"] .timeline {
+    padding: 20px 16px;
+    border-radius: 18px;
+    box-shadow: none;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline > header h2 {
+    margin-bottom: 14px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline ol {
+    gap: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline li {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
+    padding: 17px 0;
+    border-top: 1px solid var(--px2-border);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline li:first-child {
+    padding-top: 4px;
+    border-top: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline li:last-child {
+    padding-bottom: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline li > b {
+    width: 34px;
+    height: 34px;
+    font-size: 0.76rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .timeline h3 {
+    margin-top: 1px;
+    margin-bottom: 6px;
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  /*
+   * Detailkarten: klare Hierarchie, weniger Schatten und weniger Einrückung.
+   */
+  [data-product-page] [data-product-experience="2.0"] .details {
+    gap: 16px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .details > article,
+    .details > aside,
+    .details > details,
+    .details > section
+  ) {
+    padding: 19px 16px;
+    border-radius: 18px;
+    box-shadow: none;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details h2 {
+    margin-top: 5px;
+    margin-bottom: 14px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__list {
+    gap: 11px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__list li {
+    grid-template-columns: 1.3rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__decision p {
+    margin-top: 16px;
+    padding-top: 14px;
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__proscons {
+    gap: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__column--negative {
+    margin-top: 19px;
+    padding-top: 19px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__health h2 {
+    margin-bottom: 9px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] :is(
+    .details__specs > summary,
+    .details__faq details > summary
+  ) {
+    min-height: 46px;
+    font-size: 1.02rem;
+    line-height: 1.4;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__specs dl {
+    margin-top: 14px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__specs dl > div {
+    padding: 13px 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__specs dt {
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__specs dd {
+    font-size: 1rem;
+    line-height: 1.48;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .details__faq details {
+    padding: 15px 0;
+  }
+
+  /*
+   * Alternativen: kompakte horizontale Produktkarten statt hoher Desktopkarten.
+   */
+  [data-product-page] [data-product-experience="2.0"] .alternatives {
+    gap: 18px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives > header h2 {
+    margin-bottom: 8px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives article {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    border-radius: 18px;
+    box-shadow: none;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__image {
+    min-height: 100%;
+    aspect-ratio: auto;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__image img {
+    padding: 7px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__body {
+    min-width: 0;
+    padding: 14px 14px 14px 12px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__body > span {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives h3 {
+    margin: 4px 0 7px;
+    font-size: 1.08rem;
+    line-height: 1.25;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives article p {
+    margin-bottom: 11px;
+    font-size: 0.94rem;
+    line-height: 1.48;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives :is(
+    .pt-score--ring,
+    .pt-score--ring-compact
+  ) {
+    padding-top: 10px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives .pt-score__summary {
+    gap: 0.55rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives .pt-score__ring {
+    width: 56px;
+    height: 56px;
+    flex-basis: 56px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives .pt-score__ring-inner {
+    width: 44px;
+    height: 44px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives .pt-score__ring .pt-score__value {
+    font-size: 1.04rem;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__meta {
+    margin-block: 10px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives a {
+    min-height: 44px;
+    padding: 10px 11px;
+    border-radius: 11px;
+    font-size: 0.92rem;
+  }
+
+  /*
+   * Transparenz: eine äußere Karte, innere Inhalte durch Divider gegliedert.
+   */
+  [data-product-page] [data-product-experience="2.0"] .trust {
+    padding: 20px 16px;
+    border-radius: 18px;
+    box-shadow: none;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .trust > header p {
+    margin-bottom: 13px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .trust > div {
+    gap: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .trust article {
+    grid-template-columns: 30px minmax(0, 1fr);
+    column-gap: 10px;
+    padding: 16px 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .trust article:first-child {
+    border-top: 0;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .trust article h3 {
+    margin-bottom: 5px;
+    font-size: 1.06rem;
+    line-height: 1.3;
+  }
+
+  /*
+   * Touch-Ziele und Fokusdarstellung.
+   */
+  [data-product-page] [data-product-experience="2.0"] :is(
+    a,
+    button,
+    input,
+    summary
+  ) {
+    scroll-margin-top: 88px;
+  }
+}
+
+@media (max-width: 430px) {
+  [data-product-page] [data-product-experience="2.0"] {
+    gap: 32px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-hero__content {
+    padding-inline: 15px;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .px2-gallery__stage img {
+    height: calc(100vw - 30px);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives article {
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives__body {
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  [data-product-page] [data-product-experience="2.0"] .decision__result {
+    grid-template-columns: 1fr;
+  }
+
+  [data-product-page] [data-product-experience="2.0"] .alternatives article {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+}
+
+/* Fallback für ältere Browser ohne :has(). */
+@supports not selector(main:has(*)) {
+  @media (max-width: 720px) {
+    main.container > [data-product-page] {
+      width: calc(100% + 24px);
+      max-width: none;
+      margin-inline: -12px;
+    }
+  }
+}

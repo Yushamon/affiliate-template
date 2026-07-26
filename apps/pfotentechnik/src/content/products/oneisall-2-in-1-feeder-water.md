@@ -61,7 +61,7 @@ price:
   current: 56.52
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-26T16:56:25.534Z"
+  checkedAt: "2026-07-26T20:58:55.886Z"
   source:
     id: "amazon.de"
     label: "amazon.de"

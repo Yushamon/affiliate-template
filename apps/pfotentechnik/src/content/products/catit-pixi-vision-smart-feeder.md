@@ -57,10 +57,22 @@ images:
       alt: Catit PIXI Vision Smart Feeder – weitere Produktansicht
     - src: ../../assets/images/products/catit-pixi-vision-smart-feeder/gallery-3.webp
       alt: Catit PIXI Vision Smart Feeder – weitere Produktansicht
+price:
+  current: 199
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 13 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T20:53:51.719Z"
+  source:
+    id: "manual"
+    label: "Amazon"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=Catit+PIXI+Vision+Smart+Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=Catit+PIXI+Vision+Smart+Feeder"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 89
 ratings:

@@ -60,10 +60,22 @@ images:
       alt: Y-Verteiler des oneisall Futterautomaten
     - src: ../../assets/images/products/oneisall-5l-automatic-cat-feeder/gallery-3.webp
       alt: Abgenommene Doppelnäpfe des oneisall Futterautomaten
+price:
+  current: 47.49
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 14 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T20:59:04.330Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=oneisall+5L+Futterautomat+zwei+Katzen
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4pLa14O"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 73
 ratings:

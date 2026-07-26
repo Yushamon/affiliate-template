@@ -1,49 +1,39 @@
 #!/usr/bin/env node
+
 import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const PATCH_PREFIX = "pfotentechnik-comparison-score-price-3.3.4-";
-
-function parseArgs(argv) {
-  const out = { repo: process.cwd() };
-  for (let index = 0; index < argv.length; index += 1) {
-    if (argv[index] === "--repo") out.repo = argv[++index];
-  }
-  return out;
-}
+const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.1";
+const args = process.argv.slice(2);
+const index = args.indexOf("--repo");
+const repo = path.resolve(index >= 0 ? args[index + 1] : process.cwd());
+const statePointer = path.join(
+  repo,
+  ".patch-backups",
+  `${PATCH_ID}-latest.json`
+);
 
 async function main() {
-  const { repo } = parseArgs(process.argv.slice(2));
-  const repoRoot = path.resolve(repo);
-  const backupsRoot = path.join(repoRoot, ".patch-backups");
-  const entries = await fs.readdir(backupsRoot, { withFileTypes: true });
-  const matches = entries
-    .filter((entry) => entry.isDirectory() && entry.name.startsWith(PATCH_PREFIX))
-    .map((entry) => entry.name)
-    .sort()
-    .reverse();
+  const state = JSON.parse(await fs.readFile(statePointer, "utf8"));
 
-  if (!matches.length) throw new Error("Kein Backup für diesen Patch gefunden.");
-
-  const backupRoot = path.join(backupsRoot, matches[0]);
-  const state = JSON.parse(await fs.readFile(path.join(backupRoot, "install-state.json"), "utf8"));
-
-  for (const relative of state.restoredFiles || []) {
-    const source = path.join(backupRoot, "files", relative);
-    const destination = path.join(repoRoot, relative);
-    await fs.mkdir(path.dirname(destination), { recursive: true });
-    await fs.copyFile(source, destination);
+  for (const entry of state.files) {
+    if (entry.existed) {
+      await fs.copyFile(entry.backup, entry.file);
+    } else {
+      await fs.rm(entry.file, { force: true });
+    }
   }
 
-  for (const relative of state.createdFiles || []) {
-    await fs.rm(path.join(repoRoot, relative), { force: true });
-  }
-
-  console.log(`Rollback abgeschlossen: ${backupRoot}`);
+  await fs.rm(statePointer, { force: true });
+  console.log(`[${PATCH_ID}] Rollback abgeschlossen.`);
 }
 
 main().catch((error) => {
-  console.error(error instanceof Error ? error.stack || error.message : error);
+  console.error(
+    error instanceof Error
+      ? error.stack || error.message
+      : String(error)
+  );
   process.exitCode = 1;
 });

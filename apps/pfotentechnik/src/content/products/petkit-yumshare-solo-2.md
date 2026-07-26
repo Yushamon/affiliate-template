@@ -64,10 +64,22 @@ images:
       alt: Drei-Liter-Futterbehälter des PETKIT YumShare Solo 2
     - src: ../../assets/images/products/petkit-yumshare-solo-2/gallery-3.webp
       alt: PETKIT YumShare Solo 2 an einem Katzenfutterplatz
+price:
+  current: 119
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 16 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T21:04:58.788Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://amzn.to/4fM0YNrc
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4hyQ5Qk"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.1
 score: 82
 ratings:

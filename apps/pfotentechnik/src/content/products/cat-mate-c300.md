@@ -62,10 +62,22 @@ images:
       alt: Kühlakku unter dem Cat Mate C300
     - src: ../../assets/images/products/cat-mate-c300/gallery-4.webp
       alt: Cat Mate C300 im Katzenhaushalt
+price:
+  current: 29.74
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 11 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T20:50:33.672Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=Cat+Mate+C300+Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/45lbMvY"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 73
 ratings:
