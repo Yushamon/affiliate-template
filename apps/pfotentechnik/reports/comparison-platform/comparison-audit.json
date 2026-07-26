@@ -1,38 +1,18 @@
 {
-  "generatedAt": "2026-07-26T04:55:06.046Z",
+  "generatedAt": "2026-07-26T05:01:12.862Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 13,
     "products": 65,
-    "manufacturers": 16,
+    "manufacturers": 18,
     "usedProducts": 37,
     "productCoveragePercent": 56.9,
-    "errors": 2,
+    "errors": 0,
     "warnings": 0,
-    "qualityScore": 89
+    "qualityScore": 97
   },
-  "byCode": [
-    {
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "count": 2,
-      "category": "integrity",
-      "level": "error"
-    }
-  ],
-  "byFile": [
-    {
-      "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/pawsync-smart-pet-feeder.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    }
-  ],
+  "byCode": [],
+  "byFile": [],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-hunde",
@@ -87,22 +67,5 @@
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": [
-    {
-      "level": "error",
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
-      "slug": "aqara-smart-pet-feeder-c1",
-      "message": "Hersteller aqara existiert nicht.",
-      "category": "integrity"
-    },
-    {
-      "level": "error",
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "file": "src/content/products/pawsync-smart-pet-feeder.md",
-      "slug": "pawsync-smart-pet-feeder",
-      "message": "Hersteller pawsync existiert nicht.",
-      "category": "integrity"
-    }
-  ]
+  "issues": []
 }

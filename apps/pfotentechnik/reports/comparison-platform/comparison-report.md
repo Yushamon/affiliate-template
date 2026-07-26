@@ -1,31 +1,29 @@
 # Comparison Platform Report
 
-Erstellt: 2026-07-26T04:55:06.046Z
+Erstellt: 2026-07-26T05:01:12.862Z
 
 ## Übersicht
 
 - Vergleiche: 13
 - Produkte: 65
-- Hersteller: 16
+- Hersteller: 18
 - verwendete Produkte: 37
 - Produktabdeckung: 56.9 %
-- Qualitätsscore: 89/100
-- Fehler: 2
+- Qualitätsscore: 97/100
+- Fehler: 0
 - Warnungen: 0
 
 ## Häufigste Befunde
 
-- **MANUFACTURER_REFERENCE_BROKEN**: 2 (error, integrity)
+Keine Befunde.
 
 ## Dateien mit den meisten Problemen
 
-- `src/content/products/aqara-smart-pet-feeder-c1.md`: 1 Fehler, 0 Warnungen
-- `src/content/products/pawsync-smart-pet-feeder.md`: 1 Fehler, 0 Warnungen
+Keine betroffenen Dateien.
 
 ## Fehler
 
-- **MANUFACTURER_REFERENCE_BROKEN** – `src/content/products/aqara-smart-pet-feeder-c1.md`: Hersteller aqara existiert nicht.
-- **MANUFACTURER_REFERENCE_BROKEN** – `src/content/products/pawsync-smart-pet-feeder.md`: Hersteller pawsync existiert nicht.
+Keine Fehler.
 
 ## Warnungen
 
