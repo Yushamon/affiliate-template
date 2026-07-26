@@ -53,6 +53,18 @@ images:
       alt: Bewegungssensor und Bedienelement
     - src: ../../assets/images/products/oneisall-3-5l-cordless-fountain/gallery-3.webp
       alt: Kabelloser Trinkbrunnen mit Katze
+price:
+  current: 60.79
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:28.811Z"
+  affiliateUrl: "https://amzn.to/4yCwsgt"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/oneisall-Edelstahl-Katzenbrunnen-Bewegungssensor-batteriebetrieben-Haustier-Trinkbrunnen/dp/B0DMF2LH3Y"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

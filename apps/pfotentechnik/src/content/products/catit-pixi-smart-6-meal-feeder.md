@@ -61,6 +61,18 @@ images:
       alt: Catit PIXI Smart 6-Meal Feeder – weitere Produktansicht
     - src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-3.webp
       alt: Catit PIXI Smart 6-Meal Feeder – weitere Produktansicht
+price:
+  current: 117.95
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:12.221Z"
+  affiliateUrl: "https://amzn.to/45hTNq9"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Catit-Futterautomat-Mahlzeiten-Nassfutter-K%C3%BChlakku/dp/B0B9462LW1"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

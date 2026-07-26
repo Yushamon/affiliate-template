@@ -1,0 +1,97 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { mediaAudit } from "../../../lib/media-center/service.mjs";
+const audit = await mediaAudit();
+const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
+const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c");
+---
+<SeoAdminLayout title="Media Center" description="Referenzbilder sammeln, Werbung filtern, Bildqualität prüfen, Prompts verwalten und freigegebene WebP-Pakete in Produkt-Markdown übernehmen." active="media">
+  <section class="media-intake seo-card">
+    <div><span class="seo-badge">Media Factory 2.0</span><h2>Produktquelle analysieren</h2><p>Amazon- und Herstellerseiten werden nur als Referenzquelle genutzt. Frische-, Video-, Audible-, Kindle-, Musik-, Logo-, Banner- und Werbemotive werden vor der Übernahme gefiltert.</p></div>
+    <form data-media-import>
+      <label>Amazon- oder Hersteller-Link<input type="url" name="url" required placeholder="https://…" /></label>
+      <label>Produkt-Slug, optional<input type="text" name="slug" pattern="[a-z0-9-]+" placeholder="petlibro-granary-2-vision" /></label>
+      <button type="submit">Quelle prüfen</button>
+    </form>
+  </section>
+
+  <p class="media-status" data-media-status aria-live="polite"></p>
+  <script type="application/json" data-media-config set:html={serializedConfig}></script>
+
+  <section class="media-workspace" data-media-workspace hidden>
+    <article class="seo-card media-summary">
+      <div><span class="seo-badge" data-job-state></span><h2 data-job-title></h2><p data-job-meta></p></div>
+      <dl><div><dt>Gefunden</dt><dd data-found>0</dd></div><div><dt>Übernommen</dt><dd data-accepted>0</dd></div><div><dt>Verworfen</dt><dd data-rejected>0</dd></div></dl>
+    </article>
+
+    <section class="seo-card media-candidates">
+      <header><h2>Bildbewertung</h2><p>Score, Bildtyp und Ablehnungsgrund bleiben im Audit nachvollziehbar.</p></header>
+      <div data-candidates></div>
+    </section>
+
+    <section class="seo-card media-prompts">
+      <header><h2>Prompt-Paket und Uploads</h2><p>Referenzbilder bleiben ausschließlich im Prüfjob. Lade mindestens ein eigenes oder generiertes Hero-Bild hoch. Thumbnail und Vergleichsbild können daraus abgeleitet werden; Galerievarianten benötigen eigene Uploads.</p></header>
+      <div data-variants></div>
+      <div class="media-actions"><button type="button" data-build disabled>WebP-Paket bauen</button><button type="button" data-approve disabled>Audit freigeben und Markdown aktualisieren</button></div>
+    </section>
+  </section>
+
+  <section class="seo-card media-history"><h2>Auditstatus</h2><p>{audit.summary.jobs} Jobs · {audit.summary.approved} freigegeben · {audit.summary.rejectedImages} Bilder mit dokumentiertem Ablehnungsgrund.</p></section>
+</SeoAdminLayout>
+
+<script>
+  const configNode=document.querySelector<HTMLScriptElement>("[data-media-config]");
+  const config=JSON.parse(configNode?.textContent||"{}");
+  const api=String(config.serviceUrl||"http://127.0.0.1:4178").replace(/\/$/,"");
+  const status=document.querySelector<HTMLElement>("[data-media-status]");
+  const workspace=document.querySelector<HTMLElement>("[data-media-workspace]");
+  let currentJob:any=null;
+  const variants=["hero","thumbnail","comparison","gallery-1","gallery-2","gallery-3"];
+  const request=async(path:string,method="GET",body?:unknown)=>{const response=await fetch(`${api}${path}`,{method,headers:body?{"content-type":"application/json"}:undefined,body:body?JSON.stringify(body):undefined});const payload=await response.json();if(!response.ok)throw new Error(payload?.error?.message||"Media-Center-Aktion fehlgeschlagen.");return payload};
+  const text=(selector:string,value:string)=>{const node=document.querySelector<HTMLElement>(selector);if(node)node.textContent=value};
+  const render=(job:any)=>{
+    currentJob=job;if(workspace)workspace.hidden=false;text("[data-job-state]",job.status);text("[data-job-title]",job.product.title);text("[data-job-meta]",`${job.product.manufacturer} · ${job.product.slug}`);text("[data-found]",String(job.summary.found));text("[data-accepted]",String(job.summary.accepted));text("[data-rejected]",String(job.summary.rejected));
+    const candidates=document.querySelector<HTMLElement>("[data-candidates]");
+    if(candidates){
+      candidates.replaceChildren(...job.candidates.map((item:any)=>{
+        const article=document.createElement("article");article.dataset.state=String(item.status||"");
+        const preview=document.createElement("div");preview.className="media-preview";
+        if(item.file){const image=document.createElement("img");image.src=`${api}/api/admin/media/jobs/${job.id}/file?name=${encodeURIComponent(item.file)}`;image.alt="Referenzbild";image.loading="lazy";preview.append(image)}
+        else{const placeholder=document.createElement("span");placeholder.className="media-placeholder";placeholder.textContent="Kein Download";preview.append(placeholder)}
+        const body=document.createElement("div");
+        const badge=document.createElement("span");badge.className="seo-badge";badge.dataset.level=item.status==="accepted"?"low":"high";badge.textContent=item.status==="accepted"?"übernommen":"verworfen";
+        const heading=document.createElement("h3");heading.textContent=String(item.kind||"Bild");
+        const score=document.createElement("strong");score.textContent=`${item.score??"–"}/100`;
+        const reasons=document.createElement("p");reasons.textContent=(item.reasons||[]).join(" · ")||"Keine Beanstandung";
+        body.append(badge,heading,score,reasons);article.append(preview,body);return article
+      }))
+    }
+    const container=document.querySelector<HTMLElement>("[data-variants]");
+    if(container){
+      container.replaceChildren(...variants.map((name)=>{
+        const card=document.createElement("article");const uploaded=job.uploads?.[name];
+        const header=document.createElement("header");const heading=document.createElement("h3");heading.textContent=name;
+        const copy=document.createElement("button");copy.type="button";copy.dataset.copyPrompt=name;copy.textContent="Prompt kopieren";header.append(heading,copy);
+        const prompt=document.createElement("textarea");prompt.readOnly=true;prompt.rows=6;prompt.value=String(job.prompts?.[name]||"");
+        const label=document.createElement("label");label.append("Eigenes oder generiertes Bild");
+        const input=document.createElement("input");input.type="file";input.accept="image/png,image/jpeg,image/webp,image/avif";input.dataset.upload=name;label.append(input);
+        const note=document.createElement("p");note.textContent=uploaded
+          ? `Hochgeladen: ${uploaded.fileName}`
+          : name === "hero"
+            ? "Pflicht: eigenes oder generiertes Hero-Bild hochladen."
+            : ["thumbnail", "comparison"].includes(name)
+              ? "Optional: wird ohne eigenen Upload aus dem Hero-Bild abgeleitet."
+              : "Optional: ohne Upload wird diese Galerievariante nicht erzeugt.";
+        card.append(header,prompt,label,note);return card
+      }))
+    }
+    document.querySelector<HTMLButtonElement>("[data-build]")!.disabled=!job.uploads?.hero;document.querySelector<HTMLButtonElement>("[data-approve]")!.disabled=job.status!=="built";
+  };
+  document.querySelector<HTMLFormElement>("[data-media-import]")?.addEventListener("submit",async(event)=>{event.preventDefault();const form=event.currentTarget;const data=new FormData(form);if(status)status.textContent="Quelle wird gelesen, gefiltert und bewertet …";try{render(await request("/api/admin/media/jobs","POST",{url:data.get("url"),slug:data.get("slug")||undefined}));if(status)status.textContent="Analyse abgeschlossen. Prüfe Ablehnungsgründe, Prompts und Uploads."}catch(error){if(status)status.textContent=error instanceof Error?error.message:String(error)}});
+  document.addEventListener("click",async(event)=>{const target=event.target as HTMLElement;const copy=target.closest<HTMLButtonElement>("[data-copy-prompt]");if(copy&&currentJob){await navigator.clipboard.writeText(currentJob.prompts[copy.dataset.copyPrompt!]);copy.textContent="Kopiert";setTimeout(()=>copy.textContent="Prompt kopieren",1200)}if(target.closest("[data-build]")&&currentJob){if(status)status.textContent="WebP-Varianten werden erzeugt …";try{render(await request(`/api/admin/media/jobs/${currentJob.id}/build`,"POST",{}));if(status)status.textContent="WebP-Paket gebaut. Jetzt kann der Audit freigegeben werden."}catch(error){if(status)status.textContent=error instanceof Error?error.message:String(error)}}if(target.closest("[data-approve]")&&currentJob){if(!window.confirm(`Medien für ${currentJob.product.title} freigeben und den images-Block ersetzen?`))return;if(status)status.textContent="Bilder und Markdown werden atomar aktualisiert …";try{render(await request(`/api/admin/media/jobs/${currentJob.id}/approve`,"POST",{}));if(status)status.textContent="Freigegeben. WebP-Dateien, Markdown und Audit wurden aktualisiert."}catch(error){if(status)status.textContent=error instanceof Error?error.message:String(error)}}});
+  document.addEventListener("change",async(event)=>{const input=(event.target as HTMLElement).closest<HTMLInputElement>("[data-upload]");if(!input?.files?.[0]||!currentJob)return;const file=input.files[0];if(status)status.textContent=`${input.dataset.upload} wird hochgeladen …`;const dataBase64=await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(",")[1]||"");reader.onerror=()=>reject(reader.error);reader.readAsDataURL(file)});try{render(await request(`/api/admin/media/jobs/${currentJob.id}/upload`,"POST",{variant:input.dataset.upload,fileName:file.name,mimeType:file.type,dataBase64}));if(status)status.textContent=`${input.dataset.upload} wurde hochgeladen.`}catch(error){if(status)status.textContent=error instanceof Error?error.message:String(error)}});
+</script>
+
+<style>
+  .media-intake{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;padding:24px}.media-intake h2{margin:9px 0 7px}.media-intake p{margin:0;color:var(--seo-muted);line-height:1.55}.media-intake form{display:grid;gap:12px}.media-intake label,.media-prompts label{display:grid;gap:6px;color:var(--seo-muted);font-size:.84rem;font-weight:750}.media-intake input,.media-prompts input,.media-prompts textarea{width:100%;border:1px solid var(--seo-border);border-radius:11px;padding:11px;background:var(--seo-surface);color:var(--seo-text)}button{min-height:40px;border:0;border-radius:11px;padding:9px 13px;background:var(--seo-accent);color:var(--seo-on-accent);font-weight:850;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.media-status{min-height:24px;color:var(--seo-muted)}.media-workspace{display:grid;gap:16px}.media-summary{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:22px}.media-summary h2{margin:8px 0 5px}.media-summary p{margin:0;color:var(--seo-muted)}.media-summary dl{display:grid;grid-template-columns:repeat(3,100px);gap:8px;margin:0}.media-summary dl div{padding:12px;border-radius:12px;background:var(--seo-surface-soft)}.media-summary dt{color:var(--seo-muted);font-size:.74rem}.media-summary dd{margin:4px 0 0;font-size:1.4rem;font-weight:900}.media-candidates,.media-prompts,.media-history{padding:22px}.media-candidates header p,.media-prompts header p,.media-history p{color:var(--seo-muted)}.media-candidates>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.media-candidates article{display:grid;grid-template-columns:120px 1fr;gap:12px;min-width:0;padding:12px;border:1px solid var(--seo-border);border-radius:15px;background:var(--seo-surface-soft)}.media-preview{display:grid;place-items:center;aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--seo-surface)}.media-preview img{width:100%;height:100%;object-fit:contain}.media-placeholder{color:var(--seo-muted);font-size:.74rem}.media-candidates h3{margin:7px 0 3px}.media-candidates p{margin:6px 0 0;color:var(--seo-muted);font-size:.8rem;line-height:1.4;overflow-wrap:anywhere}.media-prompts>div[data-variants]{display:grid;grid-template-columns:1fr 1fr;gap:12px}.media-prompts article{padding:15px;border:1px solid var(--seo-border);border-radius:15px;background:var(--seo-surface-soft)}.media-prompts article header{display:flex;justify-content:space-between;align-items:center;gap:10px}.media-prompts article h3{margin:0}.media-prompts article header button{min-height:34px;background:var(--seo-surface);color:var(--seo-accent-strong);border:1px solid var(--seo-border)}.media-prompts textarea{margin:10px 0;resize:vertical;font-size:.82rem;line-height:1.45}.media-prompts article p{margin:8px 0 0;color:var(--seo-muted);font-size:.8rem}.media-actions{display:flex;gap:10px;margin-top:16px}.media-history{margin-top:16px}@media(max-width:980px){.media-intake{grid-template-columns:1fr}.media-candidates>div{grid-template-columns:1fr 1fr}.media-summary{grid-template-columns:1fr}}@media(max-width:680px){.media-candidates>div,.media-prompts>div[data-variants]{grid-template-columns:1fr}.media-candidates article{grid-template-columns:92px 1fr}.media-summary dl{grid-template-columns:repeat(3,1fr)}.media-actions{flex-direction:column}}
+</style>

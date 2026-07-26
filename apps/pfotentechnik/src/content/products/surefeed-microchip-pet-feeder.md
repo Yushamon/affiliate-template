@@ -58,6 +58,18 @@ images:
       alt: Chip-Erkennungsbogen des SureFeed Microchip Pet Feeder
     - src: ../../assets/images/products/surefeed-microchip-pet-feeder/gallery-3.webp
       alt: SureFeed Microchip Pet Feeder im Mehrkatzenhaushalt
+price:
+  current: 144.94
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:12.157Z"
+  affiliateUrl: "https://amzn.to/4yzAAOc"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/SureFeed-MPF001-Mikrochip-Futterautomat-wei%C3%9F/dp/B00O0UIPTY"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

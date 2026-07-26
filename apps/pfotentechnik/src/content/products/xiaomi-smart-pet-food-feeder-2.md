@@ -59,6 +59,18 @@ images:
       alt: Futterbehälter und Dichtung des Xiaomi Smart Pet Food Feeder 2
     - src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-3.webp
       alt: Xiaomi Smart Pet Food Feeder 2 mit LED-Anzeige
+price:
+  current: 83.95
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:26.088Z"
+  affiliateUrl: "https://amzn.to/4wofqBc"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Xiaomi-Trockenfutter-Gewichtserfassung-Warnsensoren-AA-Batterien/dp/B0DN9Z6P31"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

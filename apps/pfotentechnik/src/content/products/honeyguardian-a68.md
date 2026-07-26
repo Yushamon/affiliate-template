@@ -61,6 +61,18 @@ images:
       alt: HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 2
     - src: ../../assets/images/products/honeyguardian-a68/gallery-3.webp
       alt: HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 3
+price:
+  current: 99.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:18.497Z"
+  affiliateUrl: "https://amzn.to/4bRUR7N"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PETLIBRO-Futterautomat-5G-WLAN-Haustierfutterspender-Automatische-Katzenfutterspender/dp/B0CKSDL2V6"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

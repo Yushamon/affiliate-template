@@ -80,6 +80,18 @@ images:
     - src: "../../assets/images/guides/gps-tracker/missing-pet.webp"
       alt: "Einsatz eines GPS-Trackers bei einem entlaufenen Haustier"
 
+price:
+  current: 44.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:18.087Z"
+  affiliateUrl: "https://amzn.to/4fCeKkD"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Weenect-f%C3%BCr-Katzen-GPS-Tracking-Distanzlimit-Schwarz/dp/B0CHMZCYZC"
+
 affiliate:
   provider: "amazon"
   label: "Bei Amazon ansehen"

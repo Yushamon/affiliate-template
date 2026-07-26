@@ -56,6 +56,18 @@ images:
       alt: "Tank, Edelstahl-Trinkfläche und Antrieb des Dockstream 2 Smart PLWF106"
     - src: "../../assets/images/products/petlibro-dockstream-2-smart/gallery-3.webp"
       alt: "PETLIBRO-App mit Trinkprotokoll des Dockstream 2 Smart"
+price:
+  current: 99.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:55.779Z"
+  affiliateUrl: "https://de.petlibro.com/products/dockstream-2-smart-fountain"
+  source:
+    id: "de.petlibro.com"
+    label: "de.petlibro.com"
+    type: "merchant"
+    url: "https://de.petlibro.com/products/dockstream-2-smart-fountain"
+
 affiliate:
   provider: "official"
   label: "Preis und Variante prüfen"

@@ -59,6 +59,18 @@ images:
       alt: UVC-Pumpe, Filterhalter und Filteraufbau des PETKIT Eversweet 3 Pro UVC
     - src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-3.webp
       alt: PETKIT Eversweet 3 Pro UVC an einem Trinkplatz für eine Katze
+price:
+  current: 89.98
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:37.825Z"
+  affiliateUrl: "https://amzn.to/4x46uRz"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PETKIT-Hundewasserspender-Wasserbrunnen-Intelligentes-App-Steuerung/dp/B0CXPG7K79"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

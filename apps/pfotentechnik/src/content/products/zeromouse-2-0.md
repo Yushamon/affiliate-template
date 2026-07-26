@@ -55,6 +55,18 @@ images:
       alt: "Kamera, Bewegungssensor und USB-C-Anschluss des ZeroMOUSE 2.0"
     - src: "../../assets/images/products/zeromouse-2-0/gallery-3.webp"
       alt: "Freigängerkatze vor einer mit ZeroMOUSE 2.0 nachgerüsteten Katzenklappe"
+price:
+  current: 199
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:28.264Z"
+  affiliateUrl: "https://zeromouse.com/de/products/zeromouse-2"
+  source:
+    id: "zeromouse.com"
+    label: "zeromouse.com"
+    type: "merchant"
+    url: "https://zeromouse.com/de/products/zeromouse-2"
+
 affiliate:
   provider: "official"
   label: "Verfügbarkeit prüfen"

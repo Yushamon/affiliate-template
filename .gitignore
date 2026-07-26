@@ -48,3 +48,8 @@ client_secret_*.json
 # Local SEO release manifests
 .seo-release/
 apps/pfotentechnik/.seo-release/
+
+# PfotenTechnik Platform 2.0 local installer state and backups
+.pfotentechnik-platform-2.0/
+.patch-backups/pfotentechnik-platform-2.0/
+apps/pfotentechnik/.media-center/

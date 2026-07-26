@@ -81,6 +81,18 @@ images:
     - src: "../../assets/images/guides/gps-tracker/range-accuracy.webp"
       alt: "GPS-Ortung in Stadt, Wald und offenem Gelände"
 
+price:
+  current: 49.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:19.953Z"
+  affiliateUrl: "https://amzn.to/4x1VEey"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Weenect-Hund-GPS-Tracker-Wasserdicht-Erforderlich-Ohne-Halsband/dp/B0G7KPLBLB"
+
 affiliate:
   provider: "amazon"
   label: "Bei Amazon ansehen"

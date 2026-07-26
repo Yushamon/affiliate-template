@@ -57,6 +57,18 @@ images:
       alt: Generische Darstellung einer Trackerbefestigung am Halsband
     - src: ../../assets/images/guides/gps-tracker/privacy.webp
       alt: Generische Darstellung zu Standortdaten und App-Datenschutz
+price:
+  current: 58.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:33.838Z"
+  affiliateUrl: "https://amzn.to/4vHdX7J"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PAJ-GPS-Tracker-4G-Mini-Schwarz/dp/B0GQTVYXKX"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

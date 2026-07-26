@@ -12,6 +12,7 @@ import { createAuthorizationSession, exchangeAuthorizationCode, validateOAuthCal
 import { chooseGoogleProperty } from "./providers/google/setup.mjs";
 import { readCopilotState } from "./copilot-actions.mjs";
 import { getCopilotWorkspaceStatus } from "../seo-copilot/workflow.mjs";
+import { handleOperationsRoute } from "../admin/operations-router.mjs";
 
 const host = process.env.SEARCH_ADMIN_HOST || "127.0.0.1";
 const port = Number(process.env.SEARCH_ADMIN_PORT || 4178);
@@ -60,6 +61,8 @@ const server = createServer(async (request, response) => {
     }
     origins.assert(origin);
     pruneSessions();
+
+    if (await handleOperationsRoute({ request, response, requestUrl, origin, json, assertJsonRequest, readJsonBody })) return;
 
     if (request.method === "GET" && requestUrl.pathname === "/api/admin/search/status") {
       json(response, 200, await publicServiceStatus(), origin); return;

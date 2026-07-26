@@ -61,6 +61,18 @@ images:
       alt: Pumpe und Filterbereich des Cat Mate Pet Fountain 335
     - src: ../../assets/images/products/cat-mate-335-pet-fountain/gallery-3.webp
       alt: Cat Mate Pet Fountain 335 an einem ruhigen Trinkplatz
+price:
+  current: 29
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:06.928Z"
+  affiliateUrl: "https://amzn.to/4wQ2q7g"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Cat-Mate-Mehrstufiger-Haustier-Wasserbrunnen-Fassungsverm%C3%B6gen/dp/B0CMV42FVF"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

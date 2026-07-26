@@ -63,6 +63,18 @@ images:
       alt: Zerlegbare Komponenten des PETKIT Fresh Element Solo
     - src: ../../assets/images/products/petkit-fresh-element-solo/gallery-4.webp
       alt: PETKIT Fresh Element Solo an einem Futterplatz für eine Katze
+price:
+  current: 75.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:47.356Z"
+  affiliateUrl: "https://amzn.to/4gOwewg"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PETKIT-Futterautomat-Futterautomaten-Edelstahlsch%C3%BCssel-Lock-Technologie/dp/B0CD7N5X3K"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

@@ -2,7 +2,7 @@
 interface Props {
   title: string;
   description: string;
-  active?: "overview" | "cockpit" | "advisor" | "tasks" | "history" | "prompts";
+  active?: "overview" | "cockpit" | "advisor" | "tasks" | "history" | "prompts" | "prices" | "media";
 }
 
 const { title, description, active = "overview" } = Astro.props;
@@ -13,6 +13,8 @@ const nav = [
   ["tasks", "/admin/seo/tasks/", "Aufgaben"],
   ["history", "/admin/seo/history/", "Historie"],
   ["prompts", "/admin/seo/prompts/", "Prompts"],
+  ["prices", "/admin/seo/prices/", "Preise"],
+  ["media", "/admin/seo/media/", "Media"],
 ] as const;
 ---
 <!doctype html>
@@ -35,6 +37,7 @@ const nav = [
         --seo-muted: #5d6d63;
         --seo-accent: #2e7d32;
         --seo-accent-strong: #1f6426;
+         --seo-on-accent: #fff;
         --seo-accent-soft: #e2f3e5;
         --seo-warning: #8a5a00;
         --seo-warning-soft: #fff4d8;
@@ -53,6 +56,7 @@ const nav = [
         --seo-muted: #afbeb4;
         --seo-accent: #72d889;
         --seo-accent-strong: #8ee6a1;
+         --seo-on-accent: #07120a;
         --seo-accent-soft: #183b23;
         --seo-warning: #ffd27a;
         --seo-warning-soft: #3b2d13;
@@ -102,6 +106,7 @@ const nav = [
           --seo-muted: #afbeb4;
           --seo-accent: #72d889;
           --seo-accent-strong: #8ee6a1;
+         --seo-on-accent: #07120a;
           --seo-accent-soft: #183b23;
           --seo-warning: #ffd27a;
           --seo-warning-soft: #3b2d13;

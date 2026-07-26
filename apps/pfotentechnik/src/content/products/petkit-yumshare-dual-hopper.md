@@ -66,6 +66,18 @@ images:
       alt: Zerlegbare Futterwege und Rotoren des PETKIT YumShare Dual-Hopper 2
     - src: ../../assets/images/products/petkit-yumshare-dual-hopper/gallery-4.webp
       alt: PETKIT YumShare Dual-Hopper 2 in einem Mehrkatzenhaushalt
+price:
+  current: 109.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:49.211Z"
+  affiliateUrl: "https://amzn.to/3TQJw1G"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PETKIT-Futterautomat-Futterautomaten-Automatischer-Futterspender/dp/B0DMNN4CSZ"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

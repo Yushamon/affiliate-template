@@ -58,6 +58,18 @@ images:
       alt: Sichere Befestigung eines kompakten GPS-Trackers am Hundehalsband
     - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
       alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung
+price:
+  current: 68.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:16.322Z"
+  affiliateUrl: "https://amzn.to/44NGoGb"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Tractive-Weglaufalarm-Aktivit%C3%A4tstracking-Gesundheitswarnungen-Bellverhalten-Schwarz/dp/B0D6Z4L6BW"
+
 affiliate:
   provider: amazon
   label: Bei Amazon ansehen

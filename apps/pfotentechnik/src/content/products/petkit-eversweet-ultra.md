@@ -61,6 +61,18 @@ images:
       alt: Getrennter Frischwasser- und Abwassertank des PETKIT Eversweet Ultra
     - src: ../../assets/images/products/petkit-eversweet-ultra/gallery-3.webp
       alt: PETKIT Eversweet Ultra in einem Mehrkatzenhaushalt
+price:
+  current: 269.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:44.288Z"
+  affiliateUrl: "https://amzn.to/4vNSo5F"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/PETKIT-Abwassertrennung-Automatischer-Wasserspender-App-Steuerung/dp/B0GX9Y5GYM"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

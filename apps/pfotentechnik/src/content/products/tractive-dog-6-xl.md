@@ -58,6 +58,18 @@ images:
       alt: Sichere Befestigung eines großen GPS-Trackers am Hundehalsband
     - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
       alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Hundeortung
+price:
+  current: 79
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:57:14.279Z"
+  affiliateUrl: "https://amzn.to/4pKPmOg"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Tractive-Live-GPS-Ortung-Weglaufalarm-Gesundheitswarnungen-Akkulaufzeit-2026-Schwarz/dp/B0G52NY6HZ"
+
 affiliate:
   provider: amazon
   label: Bei Amazon ansehen

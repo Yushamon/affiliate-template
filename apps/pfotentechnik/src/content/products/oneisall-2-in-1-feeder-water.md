@@ -57,6 +57,18 @@ images:
   gallery:
     - src: ../../assets/images/products/oneisall-2-in-1-feeder-water/gallery-1.webp
       alt: Getrennte Edelstahlbereiche für Trockenfutter und Wasser am Oneisall PF14
+price:
+  current: 56.52
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:25.534Z"
+  affiliateUrl: "https://amzn.to/4hnjahC"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/oneisall-Futterautomat-Futterspender-Katzenbrunnen-Edelstahlschalen/dp/B0G4DX3QR8"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

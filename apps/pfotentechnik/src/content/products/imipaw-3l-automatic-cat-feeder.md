@@ -61,6 +61,18 @@ images:
       alt: Ausgabeschacht und Bedienfeld des IMIPAW 3L
     - src: ../../assets/images/products/imipaw-3l-automatic-cat-feeder/gallery-3.webp
       alt: IMIPAW 3L mit Vorratsbehälter und Futterschale
+price:
+  current: 32.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:22.529Z"
+  affiliateUrl: "https://amzn.to/4pGKyti"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Futterautomat-Katzenfutter-Programmierbarem-Automatischer-Futterspender/dp/B0CY2942F7"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

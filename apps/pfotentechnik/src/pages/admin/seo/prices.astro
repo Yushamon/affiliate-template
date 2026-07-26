@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { buildPriceIndex } from "../../../domain/price/engine";
+
+const products = await getCollection("products");
+const index = buildPriceIndex(products);
+const rows = products.map((entry) => {
+  const insight = index.bySlug.get(entry.data.slug);
+  return {
+    slug: entry.data.slug,
+    title: entry.data.title,
+    category: entry.data.category.label,
+    current: insight?.formattedCurrent ?? "Noch nicht geprüft",
+    status: insight?.assessmentLabel ?? "offen",
+    range: insight?.formattedRange ?? "Zu wenig Vergleichsdaten",
+    checkedAt: insight?.checkedAt ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyle: "short" }).format(new Date(insight.checkedAt)) : "Nie",
+    stale: insight?.isStale ?? true,
+    hasUrl: Boolean(insight?.affiliateUrl ?? entry.data.affiliate?.url)
+  };
+}).sort((a,b) => a.category.localeCompare(b.category,"de") || a.title.localeCompare(b.title,"de"));
+const withPrice = index.products.filter((item) => item.current != null).length;
+const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
+const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c");
+---
+<SeoAdminLayout title="Preise" description="Aktuelle Händlerpreise prüfen und automatisch innerhalb der jeweiligen Produktkategorie einordnen." active="prices">
+  <section class="price-actions seo-card">
+    <div><span class="seo-badge">Price Intelligence 1.0</span><h2>{withPrice} von {rows.length} Preisen hinterlegt</h2><p>Preisbereiche entstehen automatisch aus vergleichbaren Produkten derselben Kategorie. Es gibt bewusst keine Historie und keine Prognosen.</p></div>
+    <button type="button" data-check-all>Alle Preise prüfen</button>
+  </section>
+  <p class="price-status" aria-live="polite" data-price-status></p>
+  <script type="application/json" data-price-config set:html={serializedConfig}></script>
+  <section class="price-table seo-card" aria-label="Produktpreise">
+    <div class="price-head"><b>Produkt</b><b>Preis</b><b>Einordnung</b><b>Prüfung</b><b></b></div>
+    {rows.map((row) => <article data-price-row={row.slug}>
+      <div><a href={`/produkt/${row.slug}/`} target="_blank">{row.title}</a><small>{row.category}</small></div>
+      <strong>{row.current}</strong>
+      <div><span class="seo-badge" data-level={row.status === "eher teuer" ? "high" : row.status === "fair" ? "medium" : "low"}>{row.status}</span><small>{row.range}</small></div>
+      <div><span>{row.checkedAt}</span>{row.stale && <small class="stale">Prüfung fällig</small>}</div>
+      <button type="button" data-check-price={row.slug} disabled={!row.hasUrl}>{row.hasUrl ? "Preis prüfen" : "URL fehlt"}</button>
+    </article>)}
+  </section>
+</SeoAdminLayout>
+<script>
+  const status = document.querySelector<HTMLElement>("[data-price-status]");
+  const configNode = document.querySelector<HTMLScriptElement>("[data-price-config]");
+  const config = JSON.parse(configNode?.textContent || "{}");
+  const serviceUrl = String(config.serviceUrl || "http://127.0.0.1:4178").replace(/\/$/, "");
+  const request = async (path:string, body:unknown) => {
+    const response = await fetch(`${serviceUrl}${path}`, { method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify(body) });
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload?.error?.message || payload?.error || "Preisprüfung fehlgeschlagen.");
+    return payload;
+  };
+  document.querySelectorAll<HTMLButtonElement>("[data-check-price]").forEach((button) => button.addEventListener("click", async () => {
+    button.disabled = true; if(status) status.textContent = `${button.dataset.checkPrice} wird geprüft …`;
+    try { const result = await request("/api/admin/prices/check", { slug:button.dataset.checkPrice }); if(status) status.textContent = `${result.title}: ${new Intl.NumberFormat("de-DE",{style:"currency",currency:result.currency}).format(result.current)} gefunden. Seite wird neu geladen.`; setTimeout(() => location.reload(), 600); }
+    catch(error){ if(status) status.textContent = error instanceof Error ? error.message : String(error); button.disabled=false; }
+  }));
+  document.querySelector<HTMLButtonElement>("[data-check-all]")?.addEventListener("click", async (event) => {
+    const button=event.currentTarget as HTMLButtonElement; button.disabled=true; if(status) status.textContent="Alle hinterlegten Händlerseiten werden nacheinander geprüft …";
+    try { const result=await request("/api/admin/prices/check-all",{}); if(status) status.textContent=`${result.succeeded} Preise aktualisiert, ${result.failed} Prüfungen ohne Ergebnis. Seite wird neu geladen.`; setTimeout(()=>location.reload(),900); }
+    catch(error){ if(status) status.textContent=error instanceof Error?error.message:String(error); button.disabled=false; }
+  });
+</script>
+<style>
+  .price-actions{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:24px}.price-actions h2{margin:9px 0 7px}.price-actions p{margin:0;max-width:760px;color:var(--seo-muted);line-height:1.55}.price-actions button,.price-table button{min-height:42px;border:0;border-radius:12px;padding:10px 14px;background:var(--seo-accent);color:var(--seo-on-accent);font-weight:850;cursor:pointer}.price-actions button:disabled,.price-table button:disabled{opacity:.55;cursor:not-allowed}.price-status{min-height:24px;color:var(--seo-muted)}.price-table{overflow:hidden}.price-head,.price-table article{display:grid;grid-template-columns:minmax(220px,1.5fr) minmax(105px,.65fr) minmax(190px,1fr) minmax(130px,.8fr) auto;gap:14px;align-items:center;padding:14px 18px}.price-head{background:var(--seo-surface-soft);color:var(--seo-muted);font-size:.78rem}.price-table article{border-top:1px solid var(--seo-border)}.price-table article>div{display:grid;gap:5px;min-width:0}.price-table a{color:var(--seo-text);font-weight:800}.price-table small{color:var(--seo-muted);line-height:1.35}.stale{color:var(--seo-warning)!important;font-weight:800}@media(max-width:900px){.price-actions{grid-template-columns:1fr}.price-head{display:none}.price-table article{grid-template-columns:1fr 1fr}.price-table article>div:first-child{grid-column:1/-1}.price-table button{justify-self:start}}@media(max-width:540px){.price-table article{grid-template-columns:1fr}.price-table article>div:first-child{grid-column:auto}}
+</style>

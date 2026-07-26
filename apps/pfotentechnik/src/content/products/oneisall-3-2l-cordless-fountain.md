@@ -59,6 +59,18 @@ images:
       alt: Edelstahl-Trinkfläche, Filter und Pumpeneinheit des oneisall PW14
     - src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-3.webp
       alt: oneisall PW14 an einem frei gewählten Trinkplatz
+price:
+  current: 45.71
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:27.161Z"
+  affiliateUrl: "https://amzn.to/4fCjRBh"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/oneisall-Wasserbrunnen-Kabellos%E3%80%91Edelstahl-Haustier-Wasserbrunnen-Batteriebetriebener/dp/B0FJX69D2R"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen

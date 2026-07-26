@@ -60,6 +60,18 @@ images:
       alt: Symbolische Darstellung zum korrekten Sitz eines Hundeortungshalsbands
     - src: ../../assets/images/guides/gps-tracker/missing-pet.webp
       alt: Symbolische Darstellung einer Hundeortung im Gelände
+price:
+  current: 316.86
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-26T16:56:14.918Z"
+  affiliateUrl: "https://amzn.to/3Tjaqz5"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+    url: "https://www.amazon.de/Garmin-Alpha-20-GPS-Hundehalsband/dp/B0BYGVLRHV"
+
 affiliate:
   provider: amazon
   label: Aktuellen Preis prüfen
