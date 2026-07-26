@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T05:01:12.279Z",
+    "generatedAt": "2026-07-26T05:18:15.526Z",
     "totalProducts": 65,
     "byCategory": {
       "futterautomaten": 37,
@@ -8,7 +8,8 @@
       "gps-tracker": 8
     },
     "errors": 0,
-    "warnings": 249,
+    "warnings": 92,
+    "notes": 157,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -20,12 +21,14 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: app-steuerung",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -98,7 +101,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 82
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\cat-mate-335-pet-fountain.md",
@@ -112,6 +115,7 @@
         "Empfohlenes Feld fehlt: trinkhöhe",
         "Empfohlenes Feld fehlt: gewicht"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -207,10 +211,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: napf"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -281,7 +287,7 @@
       ],
       "structuralCompleteness": 92,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\cat-mate-c300.md",
@@ -291,10 +297,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: napf"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -369,7 +377,7 @@
       ],
       "structuralCompleteness": 92,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\cat-mate-c500.md",
@@ -378,11 +386,13 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -450,7 +460,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\cat-mate-shell-fountain.md",
@@ -460,11 +470,13 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: lautstärke",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: lautstärke",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -544,7 +556,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 67,
-      "completeness": 82
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\catit-pixi-smart-6-meal-feeder.md",
@@ -555,6 +567,7 @@
       "warnings": [
         "Empfohlenes Feld fehlt: napf"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Produkttyp",
@@ -661,10 +674,12 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: app-steuerung",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung"
       ],
       "specs": [
         {
@@ -735,7 +750,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 77,
-      "completeness": 88
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\garmin-alpha-t-20.md",
@@ -747,6 +762,7 @@
         "Empfohlenes Feld fehlt: bluetooth",
         "Empfohlenes Feld fehlt: material"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Übertragung",
@@ -865,6 +881,7 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Ortung",
@@ -943,11 +960,13 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -1015,7 +1034,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\honeyguardian-a68.md",
@@ -1023,10 +1042,11 @@
       "title": "HoneyGuardian A68 Smart Pet Feeder",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -1089,7 +1109,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 77,
-      "completeness": 91
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\honeyguardian-smart-pet-feeder-s305d.md",
@@ -1098,10 +1118,12 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -1164,7 +1186,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 77,
-      "completeness": 88
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\imipaw-3l-automatic-cat-feeder.md",
@@ -1175,6 +1197,7 @@
       "warnings": [
         "Empfohlenes Feld fehlt: napf"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modellbasis",
@@ -1278,11 +1301,13 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld unbestätigt: maße"
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße"
       ],
       "specs": [
         {
@@ -1362,7 +1387,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 67,
-      "completeness": 82
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\oneisall-2-in-1-feeder-water.md",
@@ -1375,6 +1400,7 @@
         "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: gewicht"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -1497,6 +1523,7 @@
         "Empfohlenes Feld fehlt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -1618,10 +1645,11 @@
       "title": "oneisall 3,5L Cordless Fountain",
       "category": "trinkbrunnen",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -1700,7 +1728,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 80,
-      "completeness": 91
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\oneisall-5l-automatic-cat-feeder.md",
@@ -1709,11 +1737,13 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -1781,7 +1811,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 85
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\oneisall-7l-dog-water-fountain.md",
@@ -1795,6 +1825,7 @@
         "Empfohlenes Feld fehlt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Aktuelle Produktkennung",
@@ -1911,6 +1942,7 @@
       "warnings": [
         "Empfohlenes Feld fehlt: material"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Abo",
@@ -2073,13 +2105,15 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -2149,7 +2183,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 79
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\pawsync-smart-pet-feeder.md",
@@ -2159,14 +2193,16 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: kamera",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -2241,7 +2277,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 73
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-3-pro-uvc.md",
@@ -2254,6 +2290,7 @@
         "Empfohlenes Feld fehlt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -2425,11 +2462,13 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: lautstärke",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: lautstärke",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -2501,7 +2540,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 67,
-      "completeness": 82
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-max-2-uvc.md",
@@ -2511,9 +2550,11 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -2591,7 +2632,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-max-cordless.md",
@@ -2601,9 +2642,11 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -2689,7 +2732,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-solo-2-fountain.md",
@@ -2698,10 +2741,12 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: app",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: app",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -2776,7 +2821,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-solo-se.md",
@@ -2786,9 +2831,11 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe"
       ],
       "specs": [
         {
@@ -2874,7 +2921,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petkit-eversweet-ultra.md",
@@ -2886,6 +2933,7 @@
         "Empfohlenes Feld fehlt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Kapazität",
@@ -3060,12 +3108,14 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -3130,7 +3180,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 82
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petkit-fresh-element-solo.md",
@@ -3139,6 +3189,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -3301,6 +3352,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -3479,8 +3531,10 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: batterie"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie"
       ],
       "specs": [
         {
@@ -3561,7 +3615,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 92,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petkit-yumshare-solo-2.md",
@@ -3570,6 +3624,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -3660,12 +3715,14 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -3734,7 +3791,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 82
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petlibro-air-wifi-feeder.md",
@@ -3745,6 +3802,7 @@
       "warnings": [
         "Empfohlenes Feld fehlt: batterie"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -3920,12 +3978,14 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -4014,7 +4074,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 60,
-      "completeness": 79
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petlibro-dockstream-2-smart.md",
@@ -4024,10 +4084,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -4106,7 +4168,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 73,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petlibro-dockstream-cordless.md",
@@ -4116,10 +4178,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -4210,7 +4274,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 73,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petlibro-dockstream-rfid-smart.md",
@@ -4220,10 +4284,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss"
       ],
       "specs": [
         {
@@ -4318,7 +4384,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 73,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petlibro-glacier-ultrafiltration.md",
@@ -4328,10 +4394,12 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: lautstärke",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: lautstärke",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe"
       ],
       "specs": [
         {
@@ -4406,7 +4474,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 73,
-      "completeness": 85
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petlibro-granary-camera-feeder.md",
@@ -4415,10 +4483,12 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -4489,7 +4559,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 77,
-      "completeness": 88
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petlibro-granary-dual-feeder.md",
@@ -4498,9 +4568,11 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: kamera",
-        "Empfohlenes Feld unbestätigt: batterie"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie"
       ],
       "specs": [
         {
@@ -4578,7 +4650,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 85,
-      "completeness": 91
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petlibro-granary-wifi-feeder.md",
@@ -4589,6 +4661,7 @@
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -4671,12 +4744,14 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -4745,7 +4820,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 82
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\petlibro-polar-wet-food-feeder.md",
@@ -4756,6 +4831,7 @@
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Portionierung",
@@ -4845,6 +4921,7 @@
         "Empfohlenes Feld fehlt: wlan",
         "Empfohlenes Feld fehlt: maße"
       ],
+      "notes": [],
       "specs": [
         {
           "label": "Portionierung",
@@ -4936,9 +5013,11 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
         "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe"
       ],
       "specs": [
         {
@@ -5012,7 +5091,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petsafe-freshfeed-refrigerated-feeder.md",
@@ -5022,14 +5101,16 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: kamera",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5100,7 +5181,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 73
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petsafe-healthy-pet-simply-feed.md",
@@ -5110,12 +5191,14 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: kamera",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5192,7 +5275,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 79
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\petsafe-smart-feed-2.md",
@@ -5202,11 +5285,13 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: app-steuerung",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5274,7 +5359,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 82
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder-connect.md",
@@ -5284,13 +5369,15 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5360,7 +5447,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 76
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\surefeed-microchip-pet-feeder.md",
@@ -5368,8 +5455,9 @@
       "title": "SureFeed Microchip Pet Feeder",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: gewicht"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5446,7 +5534,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 92,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\tractive-cat-6-mini.md",
@@ -5454,8 +5542,9 @@
       "title": "Tractive CAT 6 Mini",
       "category": "gps-tracker",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: material"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
       ],
       "specs": [
         {
@@ -5536,7 +5625,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 93,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\tractive-dog-6-xl.md",
@@ -5545,6 +5634,7 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Ortung",
@@ -5643,6 +5733,7 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Ortung",
@@ -5740,8 +5831,9 @@
       "title": "Weenect XS",
       "category": "gps-tracker",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: material"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
       ],
       "specs": [
         {
@@ -5814,7 +5906,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 93,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\weenect-xt.md",
@@ -5822,8 +5914,9 @@
       "title": "Weenect XT",
       "category": "gps-tracker",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld unbestätigt: material"
+      "warnings": [],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
       ],
       "specs": [
         {
@@ -5896,7 +5989,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 93,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src\\content\\products\\wopet-cube-air-ca10.md",
@@ -5906,12 +5999,14 @@
       "errors": [],
       "warnings": [
         "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -5988,7 +6083,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 79
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\wopet-heritage-view-camera-feeder.md",
@@ -5997,13 +6092,15 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: wlan",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -6073,7 +6170,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 79
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\wopet-patrol-f07-pro.md",
@@ -6083,8 +6180,10 @@
       "errors": [],
       "warnings": [
         "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: napf"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -6169,7 +6268,7 @@
       ],
       "structuralCompleteness": 92,
       "confirmedCompleteness": 85,
-      "completeness": 91
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\wopet-pioneer-f01-plus.md",
@@ -6178,12 +6277,14 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
-        "Empfohlenes Feld unbestätigt: napf",
-        "Empfohlenes Feld unbestätigt: reinigung",
-        "Empfohlenes Feld unbestätigt: batterie",
-        "Empfohlenes Feld unbestätigt: maße",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: maße",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -6256,7 +6357,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 82
+      "completeness": 97
     },
     {
       "file": "src\\content\\products\\xiaomi-smart-pet-food-feeder-2.md",
@@ -6265,6 +6366,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [],
+      "notes": [],
       "specs": [
         {
           "label": "Modell",
@@ -6347,12 +6449,14 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld unbestätigt: lautstärke",
-        "Empfohlenes Feld unbestätigt: uv",
-        "Empfohlenes Feld unbestätigt: trinkhöhe",
-        "Empfohlenes Feld unbestätigt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
-        "Empfohlenes Feld unbestätigt: gewicht"
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: lautstärke",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: uv",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss",
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
         {
@@ -6449,7 +6553,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 60,
-      "completeness": 82
+      "completeness": 97
     }
   ]
 }

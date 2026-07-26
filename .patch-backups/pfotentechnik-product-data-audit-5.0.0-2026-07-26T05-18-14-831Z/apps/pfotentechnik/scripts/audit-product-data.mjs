@@ -114,7 +114,6 @@ const summary = {
   byCategory: countBy(results, (item) => item.category),
   errors: results.reduce((sum, item) => sum + item.errors.length, 0),
   warnings: results.reduce((sum, item) => sum + item.warnings.length, 0),
-  notes: results.reduce((sum, item) => sum + item.notes.length, 0),
   duplicateSlugs: duplicateSlugs.length
 };
 
@@ -139,7 +138,6 @@ if (strict && (summary.errors > 0 || duplicateSlugs.length > 0)) {
 function auditProduct(product) {
   const errors = [];
   const warnings = [];
-  const notes = [];
 
   for (const field of [
     "title",
@@ -217,9 +215,7 @@ function auditProduct(product) {
       if (status === "missing") {
         warnings.push(`Empfohlenes Feld fehlt: ${aliases[0]}`);
       } else if (status === "unknown") {
-        notes.push(
-          `Herstellerangabe dokumentiert, aber nicht bestätigt: ${aliases[0]}`
-        );
+        warnings.push(`Empfohlenes Feld unbestätigt: ${aliases[0]}`);
       }
     }
   }
@@ -233,7 +229,6 @@ function auditProduct(product) {
     category: product.category || "unbekannt",
     errors,
     warnings,
-    notes,
     specs: product.specs,
     unknownSpecs: product.specs
       .filter((spec) => isUnknownSpecValue(spec.value))
@@ -615,7 +610,6 @@ function renderMarkdown(summary, duplicateSlugs, results) {
     `- Produkte: ${summary.totalProducts}`,
     `- Fehler: ${summary.errors}`,
     `- Warnungen: ${summary.warnings}`,
-    `- Dokumentierte Hinweise: ${summary.notes}`,
     `- Doppelte Slugs: ${summary.duplicateSlugs}`,
     "",
     "## Kategorien",
@@ -659,11 +653,6 @@ function renderMarkdown(summary, duplicateSlugs, results) {
       for (const issue of product.warnings) lines.push(`  - ${issue}`);
     }
 
-    if (product.notes.length) {
-      lines.push("- Dokumentierte Hinweise:");
-      for (const issue of product.notes) lines.push(`  - ${issue}`);
-    }
-
     lines.push("");
   }
 
@@ -675,7 +664,6 @@ function printSummary(summary, duplicateSlugs, results) {
   console.log(`Produkte: ${summary.totalProducts}`);
   console.log(`Fehler: ${summary.errors}`);
   console.log(`Warnungen: ${summary.warnings}`);
-  console.log(`Dokumentierte Hinweise: ${summary.notes}`);
   console.log(`Doppelte Slugs: ${duplicateSlugs.length}`);
   console.log("");
   console.log("Größter Handlungsbedarf:");
