@@ -1,0 +1,46 @@
+---
+import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
+import "../styles/pfotentechnik.css";
+import "../styles/pfotentechnik-design-system.css";
+
+import { getNavigationItems } from "@app/domain/content";
+import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
+
+const props = Astro.props;
+const headerLinks = await getNavigationItems();
+const webAnalyticsToken = import.meta.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
+const normalizeCanonicalPath = (value) => {
+  const raw = String(value ?? "/").trim();
+  let pathname = raw;
+
+  try {
+    pathname = new URL(raw, "https://pfotentechnik.de").pathname;
+  } catch {
+    pathname = raw.split(/[?#]/, 1)[0] || "/";
+  }
+
+  const withLeadingSlash = pathname.startsWith("/")
+    ? pathname
+    : `/${pathname}`;
+
+  return withLeadingSlash === "/" || withLeadingSlash.endsWith("/")
+    ? withLeadingSlash
+    : `${withLeadingSlash}/`;
+};
+
+const canonical = normalizeCanonicalPath(props.canonical ?? "/");
+import "../styles/pfotentechnik-theme-fixes.css";
+import "../styles/pfotentechnik-product-mobile-premium.css";
+import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
+---
+
+<AffiliateLayout
+  {...props}
+  canonical={canonical}
+  webAnalyticsToken={webAnalyticsToken}
+  headerLinks={headerLinks}
+>
+  <slot />
+  <ImageLightbox />
+<SiteRuntimeFixes />
+</AffiliateLayout>

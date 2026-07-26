@@ -55,10 +55,22 @@ images:
       alt: Filter und Akkueinheit des Xiaomi Smart Pet Fountain 2
     - src: ../../assets/images/products/xiaomi-smart-pet-fountain-2/gallery-3.webp
       alt: Xiaomi Smart Pet Fountain 2 im Katzenhaushalt
+price:
+  current: 53
+  currency: "EUR"
+  status: "unknown"
+  comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
+  checkedAt: "2026-07-26T21:34:45.064Z"
+  source:
+    id: "manual"
+    label: "Amazon"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://amzn.to/4w6sFpn
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/4w6sFpn"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.7
 score: 93
 ratings:
