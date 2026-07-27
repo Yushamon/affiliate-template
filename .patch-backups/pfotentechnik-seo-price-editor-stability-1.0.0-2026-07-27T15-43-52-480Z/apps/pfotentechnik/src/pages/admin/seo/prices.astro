@@ -231,7 +231,6 @@ const metrics = [
 </SeoAdminLayout>
 
 <script>
-  // PT_SEO_PRICE_EDITOR_STABILITY_1_0_0: schützt aktive und ungespeicherte Preisentwürfe.
   type OperationsRecord = Record<string, any> & { slug: string; title: string };
   type Draft = {
     current: string;
@@ -251,41 +250,6 @@ const metrics = [
   const initialRecords = JSON.parse(recordsNode?.textContent || "[]") as OperationsRecord[];
   const records = new Map(initialRecords.map((record) => [record.slug, record]));
   const drafts = new Map<string, Draft>();
-  const PRICE_DRAFT_STORAGE_KEY = "pfotentechnik:seo-price-editor-drafts:v1";
-  const dirtyEditors = new Set<string>();
-
-  const loadPersistedDrafts = (): Record<string, Draft> => {
-    try {
-      const parsed = JSON.parse(sessionStorage.getItem(PRICE_DRAFT_STORAGE_KEY) || "{}");
-      return parsed && typeof parsed === "object" ? parsed : {};
-    } catch {
-      return {};
-    }
-  };
-
-  const persistedDrafts = loadPersistedDrafts();
-
-  const persistDraft = (slug: string, draft: Draft) => {
-    persistedDrafts[slug] = { ...draft };
-    try {
-      sessionStorage.setItem(PRICE_DRAFT_STORAGE_KEY, JSON.stringify(persistedDrafts));
-    } catch {
-      // Der Editor bleibt auch ohne Storage-Support innerhalb der aktuellen Seite geschützt.
-    }
-  };
-
-  const clearPersistedDraft = (slug: string) => {
-    delete persistedDrafts[slug];
-    try {
-      if (Object.keys(persistedDrafts).length) {
-        sessionStorage.setItem(PRICE_DRAFT_STORAGE_KEY, JSON.stringify(persistedDrafts));
-      } else {
-        sessionStorage.removeItem(PRICE_DRAFT_STORAGE_KEY);
-      }
-    } catch {
-      // Kein Abbruch, wenn Session Storage blockiert ist.
-    }
-  };
   const inFlight = new Map<string, Promise<any>>();
   const status = document.querySelector<HTMLElement>("[data-ops-status]");
   const list = document.querySelector<HTMLElement>("[data-ops-list]");
@@ -354,34 +318,19 @@ const metrics = [
     comparisonText: record.comparisonText || ""
   });
 
-  const writeDraftToEditor = (editor: HTMLFormElement, draft: Draft) => {
+  const syncEditor = (record: OperationsRecord) => {
+    const editor = document.querySelector<HTMLFormElement>(`[data-editor="${CSS.escape(record.slug)}"]`);
+    if (!editor) return;
+    const draft = draftFrom(record);
+    drafts.set(record.slug, draft);
     editor.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>("[data-draft]").forEach((input) => {
       const key = input.dataset.draft as keyof Draft;
       input.value = draft[key] ?? "";
     });
-  };
-
-  const syncEditor = (record: OperationsRecord, options: { force?: boolean } = {}) => {
-    const editor = document.querySelector<HTMLFormElement>(`[data-editor="${CSS.escape(record.slug)}"]`);
-    if (!editor) return false;
-
     const archiveButton = editor.querySelector<HTMLButtonElement>("[data-archive-product]");
-    if (archiveButton) {
-      archiveButton.textContent = record.maintenanceStatus === "archived"
-        ? "Aus Archiv lösen"
-        : "Bewusst archivieren";
-    }
-
-    const protectedInteraction =
-      dirtyEditors.has(record.slug) || editor.contains(document.activeElement);
-    if (!options.force && protectedInteraction) return false;
-
-    const draft = draftFrom(record);
-    drafts.set(record.slug, draft);
-    writeDraftToEditor(editor, draft);
-    editor.dataset.dirty = "false";
-    return true;
+    if (archiveButton) archiveButton.textContent = record.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren";
   };
+
   const updateRow = (record: OperationsRecord) => {
     records.set(record.slug, record);
     const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(record.slug)}"]`);
@@ -477,15 +426,12 @@ const metrics = [
     if (row) row.dataset.busy = busy ? "true" : "false";
   };
 
-  const hasProtectedEditorInteraction = () =>
-    dirtyEditors.size > 0 || Boolean(document.activeElement?.closest("[data-editor]"));
-
   const applyServerResult = (result: any) => {
     const record = result?.record ?? result;
     if (!record?.slug) throw new Error("Die Serverantwort enthält keinen persistierten Produktzustand.");
     updateRow(record);
     refreshMetrics();
-    if (!hasProtectedEditorInteraction()) applyView();
+    applyView();
     return record;
   };
 
@@ -518,35 +464,20 @@ const metrics = [
   document.querySelectorAll<HTMLFormElement>("[data-editor]").forEach((editor) => {
     const slug = editor.dataset.editor || "";
     const initial = records.get(slug);
-    const restored = persistedDrafts[slug];
-    const initialDraft = restored ?? draftFrom(initial || {});
-    drafts.set(slug, initialDraft);
-    writeDraftToEditor(editor, initialDraft);
-
-    if (restored) {
-      dirtyEditors.add(slug);
-      editor.dataset.dirty = "true";
-    } else {
-      editor.dataset.dirty = "false";
-    }
-
-    const captureDraft = (input: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement) => {
-      const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
-      draft[input.dataset.draft as keyof Draft] = input.value;
-      drafts.set(slug, draft);
-      const wasDirty = dirtyEditors.has(slug);
-      dirtyEditors.add(slug);
-      editor.dataset.dirty = "true";
-      persistDraft(slug, draft);
-      if (!wasDirty) {
-        setStatus(`${records.get(slug)?.title || slug}: ungespeicherte Eingaben werden vor automatischer Synchronisierung geschützt.`);
-      }
-    };
-
+    if (initial) drafts.set(slug, draftFrom(initial));
     editor.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>("[data-draft]").forEach((input) => {
-      input.addEventListener("input", () => captureDraft(input));
-      input.addEventListener("change", () => captureDraft(input));
+      input.addEventListener("input", () => {
+        const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
+        draft[input.dataset.draft as keyof Draft] = input.value;
+        drafts.set(slug, draft);
+      });
+      input.addEventListener("change", () => {
+        const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
+        draft[input.dataset.draft as keyof Draft] = input.value;
+        drafts.set(slug, draft);
+      });
     });
+
     editor.addEventListener("submit", (event) => {
       event.preventDefault();
       const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
@@ -568,11 +499,7 @@ const metrics = [
               availabilityReason: draft.availabilityReason
             })
           });
-          dirtyEditors.delete(slug);
-          clearPersistedDraft(slug);
-          editor.dataset.dirty = "false";
           const record = applyServerResult(result);
-          syncEditor(record, { force: true });
           setStatus(`${record.title}: persistierter Zustand wurde beim ersten Speichern übernommen.`);
         } catch (error) {
           setStatus(error instanceof Error ? error.message : String(error), "error");
@@ -654,13 +581,8 @@ const metrics = [
       const payload = await fetchJson("/api/admin/prices");
       for (const record of payload.products || []) updateRow(record);
       refreshMetrics();
-      const protectedCount = dirtyEditors.size;
-      if (!hasProtectedEditorInteraction()) applyView();
-      setStatus(
-        protectedCount
-          ? `${protectedCount} ungespeicherte Preisentwürfe wurden beibehalten; die übrigen Produktdaten sind synchronisiert.`
-          : "Persistierter Produktzustand ist synchronisiert."
-      );
+      applyView();
+      setStatus("Persistierter Produktzustand ist synchronisiert.");
     } catch (error) {
       setStatus(`Lokaler Admin-Dienst nicht erreichbar: ${error instanceof Error ? error.message : String(error)}`, "error");
       applyView();
@@ -799,11 +721,5 @@ const metrics = [
     .ops-toolbar label { grid-column: auto; }
     .ops-tabs { display: grid; }
     .ops-editor { grid-template-columns: 1fr 1fr; }
-  }
-
-  /* PT_SEO_PRICE_EDITOR_STABILITY_1_0_0 */
-  .ops-editor[data-dirty="true"] {
-    border-color: var(--seo-warning);
-    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--seo-warning) 45%, transparent);
   }
 </style>

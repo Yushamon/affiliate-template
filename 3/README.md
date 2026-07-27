@@ -1,31 +1,39 @@
-# PfotenTechnik Comparison Mobile Recovery 12.1.1
+# PfotenTechnik Header Navigation 13.1.0
 
-Robuster Recovery-Patch für den aktuellen Mobile-Stand.
+Behebt:
 
-## Wichtigste Änderung
+- doppeltes Burger-Icon
+- fehlenden Vergleichslink
+- ungeordnete dynamische Hauptnavigation
+- unstrukturierte mobile Menüansicht
+- mobile Dark-Mode- und Scroll-Probleme
 
-Der Kaufberatungs-CTA wird diesmal **direkt aus `Header.astro` entfernt**.
-Er wird nicht nur versteckt. Zusätzlich wird die dazugehörige Runtime-Logik
-entfernt, damit der CTA nicht nachträglich wieder erscheinen kann.
+## Installation
 
-## Weitere Fixes
+ZIP entpacken und die MJS-Datei in den Root des Repositories `affiliate-template` legen.
 
-- sauberes Burgermenü
-- Vergleichskarten ohne langes Bildfeld
-- Bild im stabilen 4:3-Format
-- Preis direkt vor den CTA-Buttons
-- Preis und Fair-Badge in einer Zeile
-- Produktname im Sticky-CTA vollständig sichtbar
-- Top-Empfehlung kompakter
-
-## Ausführen
+Vorprüfung:
 
 ```bash
-node 3/pfotentechnik-comparison-mobile-recovery-12.1.1.mjs
+node pfotentechnik-header-navigation-13.1.0.mjs --check
 ```
 
-Optional:
+Anwenden und Build ausführen:
 
 ```bash
-node 3/pfotentechnik-comparison-mobile-recovery-12.1.1.mjs --dry-run
+node pfotentechnik-header-navigation-13.1.0.mjs
 ```
+
+Ohne Build:
+
+```bash
+node pfotentechnik-header-navigation-13.1.0.mjs --no-build
+```
+
+Mit lokalem Commit:
+
+```bash
+node pfotentechnik-header-navigation-13.1.0.mjs --commit
+```
+
+Der Installer legt vor Änderungen Backups unter `.patch-backups/` ab.
