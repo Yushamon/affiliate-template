@@ -3,34 +3,6 @@
  * Zentrale semantische Werte für Light Mode, Dark Mode und Komponenten.
  */
 :root {
-  --pt-font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --pt-font-size-xs: 0.75rem;
-  --pt-font-size-sm: 0.875rem;
-  --pt-font-size-base: 1rem;
-  --pt-font-size-md: 1.0625rem;
-  --pt-font-size-lg: 1.1875rem;
-  --pt-font-size-xl: 1.375rem;
-  --pt-font-size-2xl: 1.75rem;
-  --pt-font-size-3xl: 2.25rem;
-  --pt-font-size-4xl: 3rem;
-  --pt-font-size-display: clamp(2.5rem, 7vw, 5rem);
-  --pt-line-height-tight: 1.08;
-  --pt-line-height-heading: 1.18;
-  --pt-line-height-body: 1.65;
-  --pt-line-height-relaxed: 1.75;
-  --pt-letter-spacing-tight: -0.035em;
-  --pt-letter-spacing-heading: -0.025em;
-  --pt-letter-spacing-label: 0.08em;
-  --pt-font-weight-medium: 500;
-  --pt-font-weight-semibold: 650;
-  --pt-font-weight-bold: 750;
-  --pt-font-weight-black: 850;
-  --pt-content-narrow: 46rem;
-  --pt-content-reading: 68rem;
-  --pt-content-wide: 82.5rem;
-  --pt-page-gutter: clamp(1rem, 3vw, 2rem);
-  --pt-section-space: clamp(3.5rem, 8vw, 6.5rem);
-  --pt-focus-ring: 0 0 0 3px color-mix(in srgb, var(--pt-color-brand-600) 26%, transparent);
   --pt-radius-3xl: 2rem;
   --pt-shadow-card: var(--pt-shadow-sm);
   --pt-shadow-overlay: var(--pt-shadow-lg);

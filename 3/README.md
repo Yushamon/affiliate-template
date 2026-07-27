@@ -1,15 +1,15 @@
-# PfotenTechnik Design Token Migration 11.3.0
+# PfotenTechnik Design Primitives 11.4.0
 
-Diese Stufe ersetzt sichere harte Standardwerte durch zentrale Design-Tokens und installiert ein permanentes Audit-Gate.
+Diese Stufe vereinheitlicht Typografie, Layoutbreiten, Abstände, Buttons, Chips, Formfelder und Fokuszustände.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-design-token-migration-11.3.0.mjs
+node 3/pfotentechnik-design-primitives-11.4.0.mjs
 ```
 
-Nur analysieren:
+Dry-Run:
 
 ```bash
-node 3/pfotentechnik-design-token-migration-11.3.0.mjs --dry-run
+node 3/pfotentechnik-design-primitives-11.4.0.mjs --dry-run
 ```
