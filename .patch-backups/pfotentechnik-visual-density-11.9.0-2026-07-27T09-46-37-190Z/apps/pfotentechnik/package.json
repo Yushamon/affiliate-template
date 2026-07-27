@@ -100,8 +100,7 @@
     "design-system:check": "node scripts/design-system/check.mjs",
     "design-system:visual-qa": "node scripts/design-system/visual-qa.mjs",
     "design-system:visual-qa:strict": "node scripts/design-system/visual-qa.mjs --strict",
-    "design-system:responsive:audit": "node scripts/design-system/responsive-audit.mjs",
-    "design-system:density:audit": "node scripts/design-system/density-audit.mjs"
+    "design-system:responsive:audit": "node scripts/design-system/responsive-audit.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

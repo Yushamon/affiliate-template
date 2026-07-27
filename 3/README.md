@@ -1,15 +1,11 @@
-# PfotenTechnik Responsive Resilience 11.8.0
+# PfotenTechnik Visual Density Recovery 11.9.5
 
-Sichere Schutzschicht gegen typische Mobile- und Overflow-Probleme.
+Behebt die überescaped Import-RegEx aus 11.9.4 durch eine robuste zeilenbasierte Prüfung.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-responsive-resilience-11.8.0.mjs
+node 3/pfotentechnik-visual-density-recovery-11.9.5.mjs
 ```
 
-Dry-Run:
-
-```bash
-node 3/pfotentechnik-responsive-resilience-11.8.0.mjs --dry-run
-```
+Den offenen Stand aus 11.9.0 bis 11.9.4 nicht zurücksetzen.
