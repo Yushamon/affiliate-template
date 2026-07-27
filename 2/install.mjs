@@ -6,7 +6,7 @@ import process from "node:process";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
-const PATCH_ID = "pfotentechnik-mobile-product-layout-4.0.2";
+const PATCH_ID = "pfotentechnik-mobile-decision-ux-4.1.0";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const payloadRoot = path.join(here, "payload");
 const args = process.argv.slice(2);
@@ -18,33 +18,29 @@ const valueAfter = (name) => {
 
 const hasFlag = (name) => args.includes(name);
 const repo = path.resolve(valueAfter("--repo") || process.cwd());
-const appRoot = path.join(repo, "apps", "pfotentechnik");
 
-const layoutFile = path.join(appRoot, "src", "layouts", "ProjectLayout.astro");
-const shellFile = path.join(
-  repo,
-  "packages",
-  "affiliate-core",
-  "src",
-  "components",
-  "comparison",
-  "ComparisonShell.astro"
-);
-
-const productCssRelative =
-  "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css";
-const comparisonCssRelative =
-  "packages/affiliate-core/src/components/comparison/comparison-mobile-price-fix-4.0.1.css";
-
-const productCssFile = path.join(repo, productCssRelative);
-const comparisonCssFile = path.join(repo, comparisonCssRelative);
-const payloadProductCss = path.join(payloadRoot, productCssRelative);
-const payloadComparisonCss = path.join(payloadRoot, comparisonCssRelative);
-
-const layoutImport =
-  'import "../styles/pfotentechnik-product-mobile-premium.css";';
-const comparisonImport =
-  'import "./comparison-mobile-price-fix-4.0.1.css";';
+const files = [
+  {
+    relative: "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro",
+    requiredMarkers: [
+      'data-decision-assistant',
+      'profile.usesFoodQuestions !== false',
+      'data-result-reasons'
+    ]
+  },
+  {
+    relative: "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
+    requiredMarkers: [
+      'data-product-experience="2.0"',
+      '.px2-gallery__stage',
+      '.px2-fit'
+    ]
+  }
+].map((entry) => ({
+  ...entry,
+  target: path.join(repo, entry.relative),
+  payload: path.join(payloadRoot, entry.relative)
+}));
 
 const statePointer = path.join(
   repo,
@@ -52,57 +48,13 @@ const statePointer = path.join(
   `${PATCH_ID}-latest.json`
 );
 
-const exists = async (file) => {
+async function exists(file) {
   try {
     await fs.access(file);
     return true;
   } catch {
     return false;
   }
-};
-
-const preserveEol = (source, normalizedNext) =>
-  source.includes("\r\n")
-    ? normalizedNext.replace(/\r?\n/g, "\r\n")
-    : normalizedNext.replace(/\r\n/g, "\n");
-
-function addAstroImport(source, {
-  importLine,
-  preferredAnchor,
-  fallbackPattern,
-  fileLabel
-}) {
-  if (source.includes(importLine)) return source;
-
-  const normalized = source.replace(/\r\n/g, "\n");
-  const firstFence = normalized.indexOf("---\n");
-  const secondFence = normalized.indexOf("\n---", firstFence + 4);
-
-  if (firstFence !== 0 || secondFence < 0) {
-    throw new Error(`${fileLabel}: gültiges Astro-Frontmatter fehlt.`);
-  }
-
-  const frontmatter = normalized.slice(4, secondFence);
-  const lines = frontmatter.split("\n");
-  let insertAt = lines.findIndex((line) => line.includes(preferredAnchor));
-
-  if (insertAt < 0) {
-    const matches = lines
-      .map((line, index) => ({ line, index }))
-      .filter(({ line }) => fallbackPattern.test(line));
-
-    if (!matches.length) {
-      throw new Error(
-        `${fileLabel}: kein semantischer Stylesheet-Importanker gefunden.`
-      );
-    }
-
-    insertAt = matches.at(-1).index;
-  }
-
-  lines.splice(insertAt + 1, 0, importLine);
-  const next = `---\n${lines.join("\n")}\n${normalized.slice(secondFence + 1)}`;
-  return preserveEol(source, next);
 }
 
 function quoteForCmd(value) {
@@ -143,42 +95,27 @@ function run(command, commandArgs, { cwd = repo } = {}) {
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 
 async function validateRepo() {
-  const required = [
-    path.join(repo, "package.json"),
-    layoutFile,
-    shellFile,
-    payloadProductCss,
-    payloadComparisonCss,
-    path.join(
-      appRoot,
-      "src",
-      "components",
-      "product-experience-2",
-      "ProductGallery2.astro"
-    ),
-    path.join(
-      repo,
-      "packages",
-      "affiliate-core",
-      "src",
-      "components",
-      "comparison",
-      "ComparisonPriceSignal.astro"
-    )
-  ];
+  if (!(await exists(path.join(repo, "package.json")))) {
+    throw new Error(`Kein Repository-Root gefunden: ${repo}`);
+  }
 
-  for (const file of required) {
-    if (!(await exists(file))) {
-      throw new Error(`Erforderliche Datei fehlt: ${file}`);
+  for (const entry of files) {
+    if (!(await exists(entry.target))) {
+      throw new Error(`Zieldatei fehlt: ${entry.target}`);
+    }
+    if (!(await exists(entry.payload))) {
+      throw new Error(`Payload fehlt: ${entry.payload}`);
+    }
+
+    const source = await fs.readFile(entry.target, "utf8");
+    for (const marker of entry.requiredMarkers) {
+      if (!source.includes(marker)) {
+        throw new Error(
+          `${entry.relative}: erwartete Architekturmarke fehlt: ${marker}`
+        );
+      }
     }
   }
-}
-
-async function backupFile(file, backupDir, label) {
-  const existed = await exists(file);
-  const backup = path.join(backupDir, label);
-  if (existed) await fs.copyFile(file, backup);
-  return { file, backup, existed };
 }
 
 async function createBackup() {
@@ -190,26 +127,21 @@ async function createBackup() {
   );
   await fs.mkdir(backupDir, { recursive: true });
 
-  const files = [
-    await backupFile(layoutFile, backupDir, "ProjectLayout.astro"),
-    await backupFile(shellFile, backupDir, "ComparisonShell.astro"),
-    await backupFile(
-      productCssFile,
+  const backups = [];
+  for (const entry of files) {
+    const backup = path.join(
       backupDir,
-      "pfotentechnik-product-mobile-premium.css"
-    ),
-    await backupFile(
-      comparisonCssFile,
-      backupDir,
-      "comparison-mobile-price-fix-4.0.1.css"
-    )
-  ];
+      entry.relative.replaceAll("/", "__")
+    );
+    await fs.copyFile(entry.target, backup);
+    backups.push({ target: entry.target, backup });
+  }
 
   const state = {
     patchId: PATCH_ID,
     installedAt: new Date().toISOString(),
     backupDir,
-    files
+    backups
   };
 
   await fs.mkdir(path.dirname(statePointer), { recursive: true });
@@ -218,12 +150,8 @@ async function createBackup() {
 }
 
 async function restore(state) {
-  for (const entry of state.files) {
-    if (entry.existed) {
-      await fs.copyFile(entry.backup, entry.file);
-    } else {
-      await fs.rm(entry.file, { force: true });
-    }
+  for (const entry of state.backups) {
+    await fs.copyFile(entry.backup, entry.target);
   }
 }
 
@@ -238,40 +166,11 @@ async function main() {
   const state = await createBackup();
 
   try {
-    const [layoutSource, shellSource] = await Promise.all([
-      fs.readFile(layoutFile, "utf8"),
-      fs.readFile(shellFile, "utf8")
-    ]);
+    for (const entry of files) {
+      await fs.copyFile(entry.payload, entry.target);
+    }
 
-    const nextLayout = addAstroImport(layoutSource, {
-      importLine: layoutImport,
-      preferredAnchor: "pfotentechnik-theme-fixes.css",
-      fallbackPattern:
-        /^\s*import\s+["'][^"']*styles\/[^"']+["'];?\s*$/,
-      fileLabel: "ProjectLayout.astro"
-    });
-
-    const nextShell = addAstroImport(shellSource, {
-      importLine: comparisonImport,
-      preferredAnchor: "comparison-ux-polish-3.2.css",
-      fallbackPattern:
-        /^\s*import\s+["']\.\/comparison[^"']+\.css["'];?\s*$/,
-      fileLabel: "ComparisonShell.astro"
-    });
-
-    await Promise.all([
-      fs.mkdir(path.dirname(productCssFile), { recursive: true }),
-      fs.mkdir(path.dirname(comparisonCssFile), { recursive: true })
-    ]);
-
-    await Promise.all([
-      fs.copyFile(payloadProductCss, productCssFile),
-      fs.copyFile(payloadComparisonCss, comparisonCssFile),
-      fs.writeFile(layoutFile, nextLayout, "utf8"),
-      fs.writeFile(shellFile, nextShell, "utf8")
-    ]);
-
-    console.log(`\n[${PATCH_ID}] Mobile-Galerie- und Preis-Audit ...`);
+    console.log(`\n[${PATCH_ID}] Mobile-Decision-UX-Audit ...`);
     run(process.execPath, [
       path.join(here, "audit.mjs"),
       "--repo",
@@ -282,10 +181,12 @@ async function main() {
     run(npmCommand, ["run", "build:pfotentechnik"]);
 
     console.log(`\n[${PATCH_ID}] Installation abgeschlossen.`);
-    console.log("- Abstand zwischen Header und Galerie deutlich reduziert");
-    console.log("- Hauptbilder zentriert auf einer stabilen 4:3-Achse");
-    console.log("- Vier Thumbnails füllen die Galeriebreite gleichmäßig");
-    console.log("- Vergleichspreis-Fix aus 4.0.1 bleibt enthalten");
+    console.log("- Frage-Icons für Tier, Anzahl, Futter, Budget, WLAN und Kamera");
+    console.log("- Katze und Hund mit eigenen Auswahl-Icons");
+    console.log("- Positive, neutrale und negative Gründe mit klarer Trennung");
+    console.log("- Kompaktere mobile Fragen bei mindestens 44px Touchhöhe");
+    console.log("- Kontraststärkerer Dark Mode");
+    console.log("- Lesetext in Ideal-für-, Vor-/Nachteil- und Preisnotiz-Blöcken vergrößert");
   } catch (error) {
     await restore(state);
     await fs.rm(statePointer, { force: true });

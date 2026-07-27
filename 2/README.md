@@ -1,38 +1,33 @@
-# PfotenTechnik Mobile Product Layout 4.0.2
+# PfotenTechnik Mobile Decision UX 4.1.0
 
-Kumulative Korrektur für Version 4.0.1.
+Kumulativer Folgepatch für das mobile Produktseitenlayout 4.0.2.
 
-## Korrigiert
+## Enthalten
 
-- übermäßiger Leerraum zwischen Mobile-Header und Produktgalerie
-- verschobene Hauptbilder bei wechselnden Bildformaten
-- links ausgerichtete Thumbnail-Gruppe mit ungenutztem Platz rechts
-- unterschiedlich wirkende aktive und inaktive Thumbnail-Flächen
-
-## Neue Galeriegeometrie
-
-- Seitenstart: 14 bis 20 Pixel statt 76 bis 88 Pixel Zusatzabstand
-- Galerie-Stage: stabile 4:3-Achse
-- Hauptbild: `object-fit: contain` und exakt zentrierte Position
-- keine erzwungene viewportabhängige Bildhöhe mehr
-- vier Thumbnails teilen sich die vollständige Galeriebreite
-- weitere Thumbnails bleiben horizontal scrollbar
-- aktiver Rahmen verändert die Elementgröße nicht
-
-Der Vergleichspreis-Fix und der Windows-Installer-Fix aus Version 4.0.1 sind
-weiterhin vollständig enthalten.
+- Frage-Icons für Tier, Tieranzahl, Trockenfutter, Nassfutter, Budget, WLAN und Kamera
+- eigene reduzierte Icons für Katze und Hund
+- keine Icons als Bilddateien, sondern zugängliche Inline-SVGs
+- neutraler Punkt als Strich, negativer Punkt als X, positiver Punkt als Haken
+- 12 Pixel fester Abstand zwischen Statuszeichen und Erklärung
+- kompaktere Fragen bei weiterhin mindestens 44 Pixel Touchhöhe
+- Divider oberhalb der Frage statt einer seitlich weiterlaufenden Legendelinie
+- kontraststärkere Dark-Mode-Flächen
+- größere Schrift in „Ideal für“, Vor-/Nachteilen und Preisnotizen
+- kleine Eyebrows und Metadaten bleiben bewusst kompakt
+- bestehende Entscheidungs- und Alternativenlogik bleibt unverändert
 
 ## Installation
 
 ```powershell
-node .\pfotentechnik-mobile-product-layout-4.0.2\install.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-mobile-decision-ux-4.1.0\install.mjs --repo C:\hp\Projekt\affiliate-template
 ```
 
-Version 4.0.2 kann direkt über eine installierte Version 4.0.1 installiert
-werden.
+Version 4.0.2 sollte bereits installiert sein. Der Installer prüft den
+vorhandenen Komponentenaufbau, erstellt Sicherungen, führt 18 Quellaudits und
+den vollständigen PfotenTechnik-Build aus.
 
 ## Rollback
 
 ```powershell
-node .\pfotentechnik-mobile-product-layout-4.0.2\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-mobile-decision-ux-4.1.0\rollback.mjs --repo C:\hp\Projekt\affiliate-template
 ```

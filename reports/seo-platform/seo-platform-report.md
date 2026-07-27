@@ -1,8 +1,8 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 180
+- Dokumente: 187
 - Fehler: 4
-- Warnungen: 29
+- Warnungen: 81
 
 ## Portfolio-Befunde
 
@@ -10,6 +10,14 @@ Keine Portfolio-Konflikte erkannt.
 
 ## Datei-Befunde
 
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-kamera.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/manufacturers/aqara.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-berufstaetige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
@@ -39,7 +47,51 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`: Mögliche Dosierungsangabe gefunden.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/cat-mate-335-pet-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/cat-mate-c200.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/cat-mate-c300.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/cat-mate-shell-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/catit-pixi-smart-6-meal-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/garmin-alpha-t-20.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/garmin-alpha-tt-25.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/honeyguardian-a305d.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/honeyguardian-a68.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/imipaw-3l-automatic-cat-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/oneisall-2-in-1-feeder-water.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/oneisall-3-2l-cordless-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/oneisall-5l-automatic-cat-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/oneisall-7l-dog-water-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/paj-pet-finder-4g-mini.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-eversweet-3-pro-uvc.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-eversweet-max-2-uvc.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-eversweet-ultra.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-fresh-element-infinity.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-fresh-element-solo.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md`: Testbehauptung widerspricht dem Teststatus.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-air-automatic-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-capsule-dog-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-dockstream-cordless.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-glacier-ultrafiltration.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-granary-dual-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-granary-wifi-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-one-rfid-smart-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Testbehauptung widerspricht dem Teststatus.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petsafe-freshfeed-refrigerated-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petsafe-smart-feed-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/tractive-cat-6-mini.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Testbehauptung widerspricht dem Teststatus.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/tractive-dog-6.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6.md`: Testbehauptung widerspricht dem Teststatus.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/weenect-xs.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/weenect-xt.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/wopet-cube-air-ca10.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/wopet-patrol-f07-pro.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/wopet-pioneer-f01-plus.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/xiaomi-smart-pet-food-feeder-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.

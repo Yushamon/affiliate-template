@@ -8,24 +8,16 @@ const args = process.argv.slice(2);
 const index = args.indexOf("--repo");
 const repo = path.resolve(index >= 0 ? args[index + 1] : process.cwd());
 
-const layoutFile = path.join(
+const componentFile = path.join(
   repo,
   "apps",
   "pfotentechnik",
   "src",
-  "layouts",
-  "ProjectLayout.astro"
-);
-const shellFile = path.join(
-  repo,
-  "packages",
-  "affiliate-core",
-  "src",
   "components",
-  "comparison",
-  "ComparisonShell.astro"
+  "product-experience-2",
+  "ProductDecisionAssistant.astro"
 );
-const productCssFile = path.join(
+const cssFile = path.join(
   repo,
   "apps",
   "pfotentechnik",
@@ -33,105 +25,118 @@ const productCssFile = path.join(
   "styles",
   "pfotentechnik-product-mobile-premium.css"
 );
-const comparisonCssFile = path.join(
-  repo,
-  "packages",
-  "affiliate-core",
-  "src",
-  "components",
-  "comparison",
-  "comparison-mobile-price-fix-4.0.1.css"
-);
 
-const [layout, shell, productCss, comparisonCss] = await Promise.all([
-  fs.readFile(layoutFile, "utf8"),
-  fs.readFile(shellFile, "utf8"),
-  fs.readFile(productCssFile, "utf8"),
-  fs.readFile(comparisonCssFile, "utf8")
+const [component, css] = await Promise.all([
+  fs.readFile(componentFile, "utf8"),
+  fs.readFile(cssFile, "utf8")
 ]);
 
 const checks = [
   [
-    "Produktlayout importiert",
-    layout.includes(
-      'import "../styles/pfotentechnik-product-mobile-premium.css";'
-    )
+    "Nicht-Futterkategorien bleiben bei fünf Fragen",
+    component.includes("profile.usesFoodQuestions !== false") &&
+      component.includes("usesFoodQuestions ? 7 : 5")
   ],
   [
-    "Vergleichspreis-Fix importiert",
-    shell.includes(
-      'import "./comparison-mobile-price-fix-4.0.1.css";'
-    )
+    "Futterfragen bleiben konditional",
+    component.includes("{usesFoodQuestions && (")
   ],
   [
-    "Kompakter Seitenstart",
-    productCss.includes("padding-top: clamp(14px, 3.8vw, 20px)")
+    "Sieben semantische Frage-Icons",
+    [
+      "questionIcons.animal",
+      "questionIcons.animalCount",
+      "questionIcons.dryFood",
+      "questionIcons.wetFood",
+      "questionIcons.budget",
+      "questionIcons.wifi",
+      "questionIcons.camera"
+    ].every((marker) => component.includes(marker))
   ],
   [
-    "Kein alter 88px-Abstand",
-    !productCss.includes("clamp(76px, 20vw, 88px)")
+    "Katze und Hund mit Auswahl-Icons",
+    component.includes("optionIcons.cat") &&
+      component.includes("optionIcons.dog")
   ],
   [
-    "Produktwrapper ohne oberen Eigenabstand",
-    productCss.includes("padding-top: 0") &&
-      productCss.includes(".px2-hero:first-child")
+    "Icons dekorativ und Screenreader-sicher",
+    component.includes('aria-hidden="true"') &&
+      component.includes("decision__question-icon")
   ],
   [
-    "Galerie 4 zu 3",
-    productCss.includes("aspect-ratio: 4 / 3") &&
-      productCss.includes("grid-template-rows: minmax(0, 1fr) auto")
+    "Statusmarken bleiben semantisch getrennt",
+    component.includes('positive: "✓"') &&
+      component.includes('neutral: "–"') &&
+      component.includes('negative: "×"')
   ],
   [
-    "Hauptbild exakt zentriert",
-    productCss.includes("object-position: 50% 50%") &&
-      productCss.includes("transform: none")
+    "Statuszeichen und Text in eigenen Elementen",
+    component.includes("decision__reason-mark") &&
+      component.includes("decision__reason-copy") &&
+      component.includes("item.append(mark, copy)")
   ],
   [
-    "Keine erzwungene Galerie-Bildhöhe",
-    !productCss.includes("height: calc(100vw - 30px)") &&
-      !productCss.includes("height: clamp(320px")
+    "Mindestens 12px Statusabstand",
+    component.includes("column-gap: 12px")
   ],
   [
-    "Vier gleiche Thumbnailspalten",
-    productCss.includes(
-      "grid-auto-columns: calc((100% - 24px) / 4)"
-    )
+    "Kompakte Fragen mit 44px Touchziel",
+    component.includes("min-height: 44px")
   ],
   [
-    "Aktiver Thumbnail ohne Layoutsprung",
-    productCss.includes("border: 2px solid transparent") &&
-      productCss.includes("border-color: var(--px2-green)")
+    "Divider oberhalb statt neben Legende",
+    component.includes("fieldset + fieldset::before") &&
+      component.includes("legend {") &&
+      component.includes("width: 100%")
   ],
   [
-    "Thumbnailbilder zentriert",
-    productCss.includes(".px2-gallery__thumb img") &&
-      productCss.includes("object-fit: contain")
+    "Dark Mode mit eigenen Ergebnisflächen",
+    component.includes('background: #102137') &&
+      component.includes('background: #312b20') &&
+      component.includes('background: #372329')
   ],
   [
-    "Vergleichspreis weiterhin volle Breite",
-    comparisonCss.includes("grid-column: 1 / -1 !important")
+    "Resultattext kontraststark",
+    component.includes("color: #e6edf5")
   ],
   [
-    "Windows-sicherer Installer",
-    fs.readFile
+    "Ideal-für-Listen vergrößert",
+    css.includes("font-size: 1.04rem")
+  ],
+  [
+    "Ideal-für-Überschrift vergrößert",
+    css.includes("font-size: 1.05rem")
+  ],
+  [
+    "Preisnotiz lesbarer",
+    css.includes("font-size: 0.875rem")
+  ],
+  [
+    "Eyebrows bleiben bewusst kompakt",
+    css.includes("font-size: 0.72rem")
+  ],
+  [
+    "Hero-Unterbereiche ohne innere Schatten",
+    css.includes("box-shadow: none !important")
+  ],
+  [
+    "Keine Entscheidungslogik entfernt",
+    component.includes("evaluateProductDecision") &&
+      component.includes("candidate.gain >= 5") &&
+      component.includes("evaluation.score < 82")
   ]
 ];
 
-const normalizedChecks = checks.map(([label, ok]) => [
-  label,
-  typeof ok === "boolean" ? ok : true
-]);
+const failed = checks.filter(([, ok]) => !ok);
 
-const failed = normalizedChecks.filter(([, ok]) => !ok);
-
-for (const [label, ok] of normalizedChecks) {
+for (const [label, ok] of checks) {
   console.log(`${ok ? "✓" : "✗"} ${label}`);
 }
 
 if (failed.length) {
   throw new Error(
-    `${failed.length} Mobile-Galerie-/Preis-Auditprüfungen fehlgeschlagen.`
+    `${failed.length} Mobile-Decision-UX-Auditprüfungen fehlgeschlagen.`
   );
 }
 
-console.log("\nMobile-Galerie- und Preis-Audit erfolgreich: 13/13 Prüfungen.");
+console.log("\nMobile-Decision-UX-Audit erfolgreich: 18/18 Prüfungen.");
