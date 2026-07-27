@@ -26,7 +26,7 @@ hub:
 seo:
   title: Beste Futterautomaten mit Edelstahlnapf im Vergleich
   description: Die besten Futterautomaten mit Edelstahlnapf. Empfehlungen für einfache Reinigung und hygienische Fütterung.
-  canonical: /vergleiche/-mit-edelstahl-napf/
+  canonical: /vergleiche/beste-futterautomaten-mit-edelstahl-napf/
   sitemap: true
   noindex: false
   priority: 0.8

@@ -151,7 +151,7 @@ seo:
   description: >-
     Futterautomaten ohne WLAN nach Offline-Zuverlässigkeit, Batteriebetrieb, Futterart, Zugangskontrolle und
     Alltagstauglichkeit vergleichen.
-  canonical: /vergleiche/-ohne-wlan/
+  canonical: /vergleiche/beste-futterautomaten-ohne-wlan/
   sitemap: true
   noindex: false
   priority: 0.8

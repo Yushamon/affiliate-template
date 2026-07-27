@@ -29,7 +29,7 @@ seo:
   description: >-
     Futterautomaten für mehrere Hunde oder Katzen: Futterplätze, Mikrochip-Zugang, Portionen, Futterneid und
     unterschiedliche Rationen richtig planen.
-  canonical: /vergleiche/-fuer-mehrtierhaushalte/
+  canonical: /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/
   sitemap: true
   noindex: false
   priority: 0.8

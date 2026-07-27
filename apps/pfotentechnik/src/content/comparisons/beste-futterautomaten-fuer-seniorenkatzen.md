@@ -32,7 +32,7 @@ seo:
   description: >-
     Die besten Futterautomaten für Seniorenkatzen im Vergleich. Empfehlungen für zuverlässige Fütterung und einfache
     Bedienung.
-  canonical: /vergleiche/-fuer-seniorenkatzen/
+  canonical: /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/
   sitemap: true
   noindex: false
   priority: 0.8

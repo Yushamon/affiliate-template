@@ -28,7 +28,7 @@ seo:
   description: >-
     Futterautomaten für Hunde vergleichen: Xiaomi, PETLIBRO, WOPET und HoneyGuardian nach Portion, Krokettengröße, Napf,
     Notstrom und App.
-  canonical: /vergleiche/-fuer-hunde/
+  canonical: /vergleiche/beste-futterautomaten-fuer-hunde/
   sitemap: true
   priority: 0.9
   changefreq: monthly

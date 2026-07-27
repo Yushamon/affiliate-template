@@ -30,7 +30,7 @@ seo:
   description: >-
     PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und
     Ausfallsicherheit vergleichen.
-  canonical: /vergleiche/-fuer-nassfutter/
+  canonical: /vergleiche/beste-futterautomaten-fuer-nassfutter/
   sitemap: true
   priority: 0.9
   changefreq: monthly

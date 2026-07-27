@@ -31,7 +31,7 @@ seo:
   description: >-
     Futterautomaten für Welpen vergleichen: Welche Modelle kleine Portionen zuverlässig ausgeben und wann ein Automat
     noch nicht sinnvoll ist.
-  canonical: /vergleiche/-fuer-welpen/
+  canonical: /vergleiche/beste-futterautomaten-fuer-welpen/
   sitemap: true
   noindex: false
   priority: 0.8

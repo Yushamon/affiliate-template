@@ -29,7 +29,7 @@ seo:
   description: >-
     Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung
     und Schutz vor Futterklau.
-  canonical: /vergleiche/-fuer-zwei-katzen/
+  canonical: /vergleiche/beste-futterautomaten-fuer-zwei-katzen/
   sitemap: true
   priority: 0.9
   changefreq: monthly

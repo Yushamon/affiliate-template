@@ -207,7 +207,7 @@ seo:
   description: >-
     Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert
     vergleichen.
-  canonical: /vergleiche/-mit-kamera/
+  canonical: /vergleiche/beste-futterautomaten-mit-kamera/
   sitemap: true
   noindex: false
   priority: 0.8

@@ -28,7 +28,7 @@ seo:
   description: >-
     Die besten Futterautomaten mit Akku oder Batterie-Backup im Vergleich. Ideal bei Stromausfällen und flexibler
     Aufstellung.
-  canonical: /vergleiche/-mit-akku/
+  canonical: /vergleiche/beste-futterautomaten-mit-akku/
   sitemap: true
   noindex: false
   priority: 0.8

@@ -29,7 +29,7 @@ seo:
   description: >-
     PETLIBRO, PETKIT, Xiaomi, Cat Mate, SureFeed und oneisall nach Futterart, Portionierung, Zugang, App und
     Ausfallsicherheit vergleichen.
-  canonical: /vergleiche/-fuer-katzen/
+  canonical: /vergleiche/beste-futterautomaten-fuer-katzen/
   sitemap: true
   priority: 0.9
   changefreq: monthly
