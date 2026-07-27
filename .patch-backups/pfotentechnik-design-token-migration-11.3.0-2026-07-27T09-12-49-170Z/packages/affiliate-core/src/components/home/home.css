@@ -87,13 +87,13 @@
   flex-direction: column;
   justify-content: center;
   padding: clamp(2rem, 6vw, 5rem);
-  color: var(--pt-color-surface);
+  color: #fff;
 }
 
 .home3-hero h1 {
   max-width: 13ch;
   margin: 0.8rem 0 1.2rem;
-  color: var(--pt-color-surface);
+  color: #fff;
   font-size: clamp(2.8rem, 6.5vw, 5.8rem);
   line-height: 0.96;
   letter-spacing: -0.06em;
@@ -128,12 +128,12 @@
 }
 
 .home3-button--primary {
-  color: var(--pt-color-surface);
+  color: #fff;
   background: var(--home3-accent);
 }
 
 .home3-button--ghost {
-  color: var(--pt-color-surface);
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.3);
   background: rgba(6, 29, 25, 0.38);
   backdrop-filter: blur(10px);
@@ -180,7 +180,7 @@
 .home3-stats div {
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: rgba(6, 29, 25, 0.58);
   backdrop-filter: blur(14px);
 }
@@ -416,7 +416,7 @@
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(2rem, 6vw, 6rem);
   padding: clamp(1.6rem, 5vw, 4rem);
-  border-radius: var(--pt-radius-2xl);
+  border-radius: 1.5rem;
   color: #fff;
   background: var(--home3-dark);
 }
@@ -500,7 +500,7 @@
   justify-items: start;
   padding: clamp(2rem, 6vw, 5rem);
   border-radius: 1.5rem;
-  color: var(--pt-color-surface);
+  color: #fff;
   background:
     radial-gradient(
       circle at top right,
@@ -513,7 +513,7 @@
 .home3-brand h2 {
   max-width: 20ch;
   margin: 0.65rem 0 1rem;
-  color: var(--pt-color-surface);
+  color: #fff;
   font-size: clamp(2rem, 4.5vw, 4.2rem);
   line-height: 1.02;
   letter-spacing: -0.05em;
@@ -769,7 +769,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
   gap: clamp(2rem, 6vw, 6rem);
   padding: clamp(2rem, 5vw, 4rem);
-  border-radius: var(--pt-radius-2xl);
+  border-radius: 1.5rem;
   color: #fff;
   background: var(--home3-dark);
 }
@@ -799,7 +799,7 @@
 .home4-stats dl div {
   padding: 1.2rem;
   border: 1px solid rgba(255,255,255,.14);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: rgba(255,255,255,.05);
 }
 

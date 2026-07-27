@@ -73,7 +73,7 @@ body.dark,
   overflow-x: auto;
   padding: .55rem;
   border: 1px solid var(--comparison-line);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: color-mix(in srgb, var(--comparison-surface) 92%, transparent);
   box-shadow: 0 8px 30px rgba(20, 32, 26, .06);
   backdrop-filter: blur(16px);
@@ -181,7 +181,7 @@ body.dark,
   min-height: 190px;
   place-items: center;
   margin: .75rem;
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: var(--comparison-surface-raised);
 }
 
@@ -300,7 +300,7 @@ body.dark,
 }
 
 .comparison-view-tab.is-active {
-  color: var(--pt-color-surface);
+  color: #fff;
   background: var(--comparison-accent);
 }
 
@@ -329,7 +329,7 @@ body.dark,
 .comparison-filter-panel {
   padding: 1rem !important;
   border: 1px solid var(--comparison-line) !important;
-  border-radius: var(--pt-radius-lg) !important;
+  border-radius: 1rem !important;
   color: var(--comparison-text);
   background: var(--comparison-surface) !important;
   box-shadow: none !important;
@@ -373,7 +373,7 @@ body.dark,
 .comparison-toggle--premium {
   padding: .9rem;
   border: 1px solid var(--comparison-line);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: var(--comparison-surface);
 }
 

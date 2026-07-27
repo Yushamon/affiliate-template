@@ -93,7 +93,7 @@
   justify-content: center;
   align-items: center;
   padding: 13px 20px;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 900;
 }
@@ -117,7 +117,7 @@
 .ui-badge {
   display: inline-flex;
   padding: 8px 13px;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   background: rgba(22, 163, 74, 0.10);
   color: var(--primary-dark);
   font-size: 12px;
@@ -226,7 +226,7 @@
 .ui-comparison-card > strong {
   display: inline-flex;
   margin-bottom: 10px;
-  color: var(--pt-color-warning-500);
+  color: #f59e0b;
 }
 
 .ui-comparison-card a {

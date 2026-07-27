@@ -126,7 +126,7 @@
 
   .comparison-shell .comparison-button:not(.comparison-button--secondary),
   .comparison-shell [class*="sticky"] .comparison-button:not(.comparison-button--secondary) {
-    color: var(--pt-color-surface);
+    color: #fff;
     background: var(--comparison-accent);
   }
 

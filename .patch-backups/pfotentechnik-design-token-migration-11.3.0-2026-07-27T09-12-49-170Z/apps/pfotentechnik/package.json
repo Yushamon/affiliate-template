@@ -92,8 +92,7 @@
     "audit:product-operations": "node scripts/product-operations/audit.mjs",
     "audit:product-operations:strict": "node scripts/product-operations/audit.mjs --strict",
     "comparison:refactor:audit": "node scripts/comparison-platform/refactor-audit.mjs",
-    "design-system:audit": "node scripts/design-system/audit.mjs",
-    "design-system:tokens:audit": "node scripts/design-system/token-audit.mjs"
+    "design-system:audit": "node scripts/design-system/audit.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

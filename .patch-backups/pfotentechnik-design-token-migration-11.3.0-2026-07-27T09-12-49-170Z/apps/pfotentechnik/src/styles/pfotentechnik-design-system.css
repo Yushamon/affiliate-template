@@ -251,7 +251,7 @@ body {
   left: 50%;
   width: 18px;
   height: 2px;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   background: currentColor;
   content: "";
   transform: translateX(-50%);
@@ -354,7 +354,7 @@ body {
 }
 
 :where(.badge, .tag, .chip, .category-pill, .fit-badge) {
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
 }
 
 /* Hero cleanup */
@@ -598,14 +598,14 @@ body {
   }
 
   .brand-mark__dot {
-    border-color: var(--pt-color-page);
+    border-color: #f8fafc;
     background: var(--pt-green-600);
   }
 
   .nav-toggle-button {
     border-color: rgba(255, 255, 255, 0.16);
     background: #162033;
-    color: var(--pt-color-page);
+    color: #f8fafc;
   }
 
   .nav-toggle-button:hover,
@@ -629,7 +629,7 @@ body {
   }
 
   .header-advisor-link {
-    color: var(--pt-color-surface);
+    color: #ffffff;
   }
 
   @media (max-width: 760px) {
@@ -2293,7 +2293,7 @@ body {
 }
 
 .footer-column-v2 a:hover {
-  color: var(--pt-color-surface) !important;
+  color: #ffffff !important;
 }
 
 .footer-copyright-v2 {
@@ -2982,14 +2982,14 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   }
   .footer-brand-lockup .brand-mark__cut { background: #071321; }
   .footer-brand-lockup .brand-mark__dot {
-    border-color: var(--pt-color-page);
+    border-color: #f8fafc;
     background: #1fa463;
   }
-  .footer-brand-name { color: var(--pt-color-surface); }
+  .footer-brand-name { color: #fff; }
   .footer-column-v2 a,
   .footer-brand-v2 p,
   .footer-values { color: rgba(255,255,255,.74); }
-  .footer-column-v2 a:hover { color: var(--pt-color-surface); }
+  .footer-column-v2 a:hover { color: #fff; }
 
   @media (max-width: 760px) {
     .main-nav-v2 {
@@ -3070,13 +3070,13 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
 
   .brand-lockup,
   .brand-name {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .nav-toggle-button {
     border-color: rgba(203, 213, 225, .24) !important;
     background: #16263c !important;
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .main-nav-v2 {
@@ -3123,7 +3123,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   .pt-product-card h3,
   .pt-category-card h3,
   .pt-value-card h3 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .home3-card-content p,
@@ -3178,7 +3178,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   .comparison-verdict h2,
   .comparison-verdict h3,
   .comparison-mobile-product h3 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .comparison-hub-hero p,
@@ -3210,7 +3210,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   .comparison-faq summary {
     border-color: rgba(203, 213, 225, .16) !important;
     background: #101f32 !important;
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .comparison-detail details p,
@@ -3220,7 +3220,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
 
   /* Conversion Journey */
   .pt-conversion-journey__header h2 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .pt-conversion-journey__header p {
@@ -3238,7 +3238,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   }
 
   .pt-conversion-journey__card h3 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .pt-conversion-journey__card p {
@@ -3289,7 +3289,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   .product-decision-v4 h3,
   .product-strengths-v4 h3,
   .pt-everyday-review-grid h3 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .product-hero-v4__summary,
@@ -3319,7 +3319,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
 
   .pt-trust-panel h2,
   .pt-trust-panel dd {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .pt-trust-panel p {
@@ -3348,7 +3348,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   .alternative-recommendation-headline,
   .alternative-recommendation-card h3,
   .alternative-recommendation-card h3 a {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .alternative-recommendation-reason,
@@ -3397,7 +3397,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
     .content-card,
     .ui-card
   ) :where(h2, h3, h4, strong) {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   :where(
@@ -3420,7 +3420,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   article summary {
     border-color: rgba(203, 213, 225, .16) !important;
     background: #101f32 !important;
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   article p,
@@ -3432,7 +3432,7 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   article h2,
   article h3,
   article h4 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   article table,
@@ -3465,12 +3465,12 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2{marg
   }
 
   .footer-brand-lockup .brand-mark__dot {
-    border-color: var(--pt-color-page) !important;
+    border-color: #f8fafc !important;
     background: #1fa463 !important;
   }
 
   .footer-brand-name {
-    color: var(--pt-color-surface) !important;
+    color: #fff !important;
   }
 }
 
@@ -3521,7 +3521,7 @@ html.dark {
 
 /* === PfotenTechnik UI Fix 3.6.2 === */
 @media (prefers-color-scheme: dark) {
-  .home41-decision__header h2 { color: var(--pt-color-page) !important; }
+  .home41-decision__header h2 { color:#f8fafc !important; }
   .home41-decision__header > p { color:#b8c4d3 !important; }
   .home41-decision__card {
     border-color:rgba(203,213,225,.16) !important;
@@ -3533,7 +3533,7 @@ html.dark {
     background:#101f32 !important;
     color:#dbe5ef !important;
   }
-  .home41-decision__content h3 { color: var(--pt-color-page) !important; }
+  .home41-decision__content h3 { color:#f8fafc !important; }
   .home41-decision__content > p,
   .home41-decision__meta small { color:#b8c4d3 !important; }
   .home41-decision__meta {
@@ -3556,7 +3556,7 @@ html.dark {
     border-bottom-color:rgba(203,213,225,.16) !important;
     background:#f4f7f6 !important;
   }
-  .home3-card-content h3 { color: var(--pt-color-page) !important; }
+  .home3-card-content h3 { color:#f8fafc !important; }
   .home3-card-content p,
   .home3-rating small { color:#b8c4d3 !important; }
   .home3-card-content > span,
@@ -3744,7 +3744,7 @@ body.dark-mode .home3-product-card .home3-card-content {
   }
 
   .pt-product-health h2 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .pt-product-health p {
@@ -3786,7 +3786,7 @@ body.dark-mode .pt-product-health {
 :root[data-theme="dark"] .pt-product-health h2,
 html.dark .pt-product-health h2,
 body.dark-mode .pt-product-health h2 {
-  color: var(--pt-color-page) !important;
+  color: #f8fafc !important;
 }
 
 :root[data-theme="dark"] .pt-product-health p,
@@ -3983,7 +3983,7 @@ body.dark-mode .recommendation-card__image-link {
   align-items: center !important;
   justify-content: center !important;
   border: 1px solid rgba(94, 225, 154, 0.34) !important;
-  border-radius: var(--pt-radius-pill) !important;
+  border-radius: 999px !important;
   background: rgba(94, 225, 154, 0.14) !important;
   color: #86efac !important;
   font-size: 0.8rem !important;
@@ -3996,7 +3996,7 @@ body.dark-mode .recommendation-card__image-link {
 /* Hersteller-Hub: vollständig an Dark Mode anpassen */
 @media (prefers-color-scheme: dark) {
   .manufacturer-hub-hero h1 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .manufacturer-hub-hero p {
@@ -4025,7 +4025,7 @@ body.dark-mode .recommendation-card__image-link {
   }
 
   .manufacturer-card-content h2 {
-    color: var(--pt-color-page) !important;
+    color: #f8fafc !important;
   }
 
   .manufacturer-card-content p {
@@ -4107,7 +4107,7 @@ body.dark-mode .manufacturer-card-content {
 :root[data-theme="dark"] .manufacturer-card-content h2,
 html.dark .manufacturer-card-content h2,
 body.dark-mode .manufacturer-card-content h2 {
-  color: var(--pt-color-page) !important;
+  color: #f8fafc !important;
 }
 
 :root[data-theme="dark"] .manufacturer-card-content p,
@@ -4401,7 +4401,7 @@ body.dark-mode .manufacturer-card-content p {
 ) {
   min-height: 34px !important;
   padding: 7px 12px !important;
-  border-radius: var(--pt-radius-pill) !important;
+  border-radius: 999px !important;
   font-size: 0.82rem !important;
   font-weight: 750 !important;
   line-height: 1.25 !important;
@@ -4907,7 +4907,7 @@ main.container.container--home .home3-hero__shade {
   place-items: center;
   border: 1px solid color-mix(in srgb, var(--decision-accent) 34%, transparent);
   border-radius: 999px;
-  color: var(--pt-color-surface);
+  color: #fff;
   background: color-mix(in srgb, var(--decision-accent) 84%, #092018);
   box-shadow: 0 8px 20px rgba(4, 17, 15, 0.22);
 }
@@ -4968,7 +4968,7 @@ main.container.container--home .home3-hero__shade {
   min-height: 27px;
   align-items: center;
   padding: 0.25rem 0.55rem;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   color: color-mix(in srgb, var(--decision-accent) 78%, white);
   background: color-mix(in srgb, var(--decision-accent) 17%, transparent);
   font-size: 0.68rem;
@@ -5007,7 +5007,7 @@ main.container.container--home .home3-hero__shade {
   width: 30px;
   height: 30px;
   place-items: center;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   color: var(--decision-accent);
   background: color-mix(in srgb, var(--decision-accent) 10%, transparent);
   font-size: 1rem;
@@ -5720,7 +5720,7 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
 [data-product-page] :is(.product-fit-bad,.product-suitability-bad,[class*="fit-bad"],[class*="suitability-bad"]) {
   padding:1.15rem;
   border:1px solid var(--pt-product-border);
-  border-radius: var(--pt-radius-lg);
+  border-radius:1rem;
 }
 [data-product-page] :is(.product-fit-good,.product-suitability-good,[class*="fit-good"],[class*="suitability-good"]) { border-left:4px solid var(--pt-product-good); background:var(--pt-product-good-soft); }
 [data-product-page] :is(.product-fit-bad,.product-suitability-bad,[class*="fit-bad"],[class*="suitability-bad"]) { border-left:4px solid var(--pt-product-bad); background:var(--pt-product-bad-soft); }
@@ -5731,7 +5731,7 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
 [data-product-page] :is(.product-cons,.cons-card,[class*="disadvantages"],[class*="cons-card"]) {
   padding:1.15rem;
   border:1px solid var(--pt-product-border);
-  border-radius: var(--pt-radius-lg);
+  border-radius:1rem;
   background:var(--pt-product-surface);
 }
 [data-product-page] :is(.product-pros,.pros-card,[class*="advantages"],[class*="pros-card"]) { border-top:3px solid var(--pt-product-good); }
@@ -5759,7 +5759,7 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
   align-items:center;
   padding:1rem;
   border:1px solid var(--pt-product-border);
-  border-radius: var(--pt-radius-lg);
+  border-radius:1rem;
   color:var(--pt-product-text);
   background:var(--pt-product-surface-soft);
 }
@@ -6466,7 +6466,7 @@ body:has(.premium-v3--pfotentechnik){padding-bottom:calc(88px + env(safe-area-in
 ) {
   overflow: hidden;
   border: 1px solid var(--pt-faq-line) !important;
-  border-radius: var(--pt-radius-lg) !important;
+  border-radius: 1rem !important;
   color: var(--pt-faq-heading) !important;
   background: var(--pt-faq-bg) !important;
   box-shadow: 0 8px 24px rgba(20, 33, 28, 0.045);
@@ -6530,7 +6530,7 @@ a[href="#kaufberatung"],
   .pt-nav-advisor-cta {
     padding: 0.68rem 0.95rem !important;
     border: 1px solid rgba(32, 139, 80, 0.35) !important;
-    border-radius: var(--pt-radius-pill) !important;
+    border-radius: 999px !important;
     color: #071811 !important;
     -webkit-text-fill-color: #071811 !important;
     background: #5cdf91 !important;
