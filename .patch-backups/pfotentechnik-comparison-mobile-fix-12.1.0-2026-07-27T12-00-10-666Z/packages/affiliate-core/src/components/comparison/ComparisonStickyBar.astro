@@ -1,0 +1,168 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+type Props = {
+  product?: ComparisonProduct;
+};
+
+const { product } = Astro.props as Props;
+const price = product ? getPriceDisplay(product.price) : null;
+---
+
+{product && (
+  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung">
+    <div>
+      <span>Top-Empfehlung</span>
+      <strong>{product.title}</strong>
+    </div>
+
+    <div>
+      <a
+        href={product.href}
+        class="pt-button-secondary pt-button comparison-button comparison-button--secondary"
+      >
+        Test lesen
+      </a>
+
+      {price?.url && (
+        <a
+          href={price.url}
+          class="pt-button comparison-button"
+          rel={price.rel}
+          target={price.target}
+          data-affiliate-link
+        >
+          {price.label}
+        </a>
+      )}
+    </div>
+  </aside>
+)}
+
+<style is:global>
+  .comparison-sticky-bar {
+    position: fixed;
+    z-index: 90;
+    right: max(.75rem, env(safe-area-inset-right));
+    bottom: max(.7rem, env(safe-area-inset-bottom));
+    left: max(.75rem, env(safe-area-inset-left));
+    display: flex;
+    width: auto;
+    max-width: 760px;
+    min-width: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: .7rem;
+    margin-inline: auto;
+    padding: .65rem .7rem;
+    border: 1px solid color-mix(in srgb, var(--comparison-line) 80%, transparent);
+    border-radius: 1rem;
+    color: var(--comparison-text);
+    background: color-mix(in srgb, var(--comparison-surface) 88%, transparent);
+    box-shadow: 0 12px 32px color-mix(in srgb, var(--comparison-text) 15%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(135%);
+    backdrop-filter: blur(18px) saturate(135%);
+  }
+
+  .comparison-sticky-bar > div {
+    min-width: 0;
+  }
+
+  .comparison-sticky-bar > div:first-child {
+    display: grid;
+    flex: 1 1 auto;
+    gap: .08rem;
+    padding-inline: .15rem;
+  }
+
+  .comparison-sticky-bar > div:first-child span {
+    color: var(--comparison-muted);
+    font-size: .68rem;
+    font-weight: 750;
+    line-height: 1.15;
+  }
+
+  .comparison-sticky-bar > div:first-child strong {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    color: var(--comparison-text);
+    font-size: .9rem;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .comparison-sticky-bar > div:last-child {
+    display: flex;
+    flex: 0 0 auto;
+    gap: .5rem;
+  }
+
+  .comparison-sticky-bar .comparison-button {
+    min-height: 42px;
+    padding: .62rem .86rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 760px) {
+    .comparison-sticky-bar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: .38rem;
+      padding: .5rem;
+      border-radius: .92rem;
+    }
+
+    .comparison-sticky-bar > div:first-child {
+      display: flex;
+      align-items: baseline;
+      gap: .35rem;
+      padding: 0 .2rem;
+    }
+
+    .comparison-sticky-bar > div:first-child span {
+      flex: 0 0 auto;
+      font-size: .62rem;
+    }
+
+    .comparison-sticky-bar > div:first-child strong {
+      display: -webkit-box;
+      flex: 1 1 auto;
+      overflow: hidden;
+      font-size: .76rem;
+      line-height: 1.18;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    .comparison-sticky-bar > div:last-child {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+      width: 100%;
+      gap: .4rem;
+    }
+
+    .comparison-sticky-bar .comparison-button {
+      width: 100%;
+      min-width: 0;
+      min-height: 42px;
+      padding: .56rem .4rem;
+      font-size: .76rem;
+      line-height: 1.15;
+      white-space: normal;
+    }
+  }
+
+  html[data-theme="dark"] .comparison-sticky-bar,
+  html.dark .comparison-sticky-bar,
+  body.dark .comparison-sticky-bar,
+  [data-theme="dark"] .comparison-sticky-bar {
+    border-color: color-mix(in srgb, var(--comparison-line) 84%, transparent);
+    background: color-mix(in srgb, var(--comparison-surface-raised) 90%, transparent);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .3);
+  }
+</style>

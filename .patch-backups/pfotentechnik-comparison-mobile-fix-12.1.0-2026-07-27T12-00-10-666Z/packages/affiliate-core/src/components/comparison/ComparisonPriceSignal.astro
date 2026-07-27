@@ -103,7 +103,7 @@ const hasSignal = Boolean(display.amountLabel || display.url);
   .comparison-price-signal__status {
     justify-self: end;
     padding: .25rem .5rem;
-    border-radius: var(--pt-radius-pill);
+    border-radius: 999px;
     color: var(--price-tone);
     background: var(--price-soft);
     font-size: .68rem;
@@ -132,43 +132,3 @@ const hasSignal = Boolean(display.amountLabel || display.url);
     font-size: 1.2rem;
   }
 </style>
-
-<!-- PT_PRICE_SIGNAL_12_1_0_START -->
-<style is:global>
-  .comparison-price-signal {
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    align-items: center !important;
-    column-gap: var(--pt-space-3) !important;
-    row-gap: var(--pt-space-2) !important;
-  }
-
-  .comparison-price-signal__main {
-    justify-content: flex-start !important;
-    gap: var(--pt-space-3) !important;
-  }
-
-  .comparison-price-signal__main strong {
-    font-size: var(--pt-font-size-lg) !important;
-    text-align: left !important;
-  }
-
-  .comparison-price-signal__status {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    align-self: center !important;
-    justify-self: end !important;
-    min-height: 2rem !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    padding: var(--pt-space-1) var(--pt-space-3) !important;
-    border-radius: var(--pt-radius-pill) !important;
-    line-height: 1 !important;
-  }
-
-  .comparison-price-signal__range,
-  .comparison-price-signal__context,
-  .comparison-price-signal small {
-    grid-column: 1 / -1 !important;
-  }
-</style>
-<!-- PT_PRICE_SIGNAL_12_1_0_END -->

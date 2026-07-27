@@ -31,17 +31,10 @@ const {
       aria-controls="main-navigation"
       data-nav-toggle
     >
-      <svg
-        class="nav-toggle__glyph"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <path d="M5 7h14M5 12h14M5 17h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </svg>
-      <span class="nav-toggle__sr">Menü</span>
+      <span class="nav-toggle__icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="nav-toggle__label">Menü</span>
     </button>
 
     <nav
@@ -55,7 +48,7 @@ const {
       ))}
     </nav>
 
-    <a class="header-advisor-link" href="/kaufberatung/" data-header-advisor data-desktop-only>
+    <a class="header-advisor-link" href="/kaufberatung/" data-header-advisor>
       Berater finden
     </a>
   </div>
@@ -102,43 +95,3 @@ const {
   initializeNavigation();
   document.addEventListener("astro:page-load", initializeNavigation);
 </script>
-
-<!-- PT_HEADER_MOBILE_12_1_0_START -->
-<style is:global>
-  @media (max-width: 63.99rem) {
-    .site-header-v2 .header-container-v2 {
-      grid-template-columns: minmax(0, 1fr) auto;
-    }
-
-    .site-header-v2 [data-desktop-only] {
-      display: none !important;
-    }
-
-    .site-header-v2 .nav-toggle-button {
-      display: inline-grid;
-      inline-size: 3rem;
-      block-size: 3rem;
-      min-inline-size: 3rem;
-      min-block-size: 3rem;
-      place-items: center;
-      padding: 0;
-      border-radius: var(--pt-radius-lg);
-    }
-
-    .site-header-v2 .nav-toggle__glyph {
-      display: block;
-      inline-size: 1.5rem;
-      block-size: 1.5rem;
-    }
-
-    .site-header-v2 .nav-toggle__sr {
-      position: absolute;
-      inline-size: 1px;
-      block-size: 1px;
-      overflow: hidden;
-      clip-path: inset(50%);
-      white-space: nowrap;
-    }
-  }
-</style>
-<!-- PT_HEADER_MOBILE_12_1_0_END -->

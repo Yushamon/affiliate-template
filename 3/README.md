@@ -1,31 +1,29 @@
-# PfotenTechnik Component Simplification Recovery 12.0.3
+# PfotenTechnik Comparison Mobile Fix 12.1.0
 
-Behebt den verbliebenen Component-Adoption-Audit-Fehler im offenen 12.0.x-Stand.
+Funktionaler Patch für die aktuellen Mobile-Screenshots.
 
-## Ursache
+## Behoben
 
-Der Audit interpretiert auch Unterelement-Klassen mit dem Wort `button` als
-Button-Komponenten. Daher wurden diese Klassen beanstandet:
-
-```text
-nav-toggle-button__icon
-nav-toggle-button__label
-```
+- Kaufberatung im mobilen Header entfernt
+- Burgermenü als sauberes Drei-Linien-Icon
+- Produktname wieder über den Sticky-CTA-Buttons
+- gequetschter Text im unteren CTA entfernt
+- Vergleichskarten neu aufgeteilt
+- Preis links, Fair-Badge rechts und vertikal zentriert
+- CTA-Bereich direkt und klar unter dem Preis
+- Dark Mode berücksichtigt
 
 ## Ausführen
 
 ```bash
-node 3/pfotentechnik-component-simplification-recovery-12.0.3.mjs
+node 3/pfotentechnik-comparison-mobile-fix-12.1.0.mjs
 ```
 
-Den offenen Stand aus 12.0.0–12.0.2 nicht zurücksetzen.
+Optional:
 
-Der echte Toggle bleibt:
-
-```html
-class="pt-button nav-toggle-button"
+```bash
+node 3/pfotentechnik-comparison-mobile-fix-12.1.0.mjs --dry-run
 ```
 
-Nur die Unterelemente werden zu `nav-toggle__icon` und `nav-toggle__label`
-umbenannt. Danach laufen alle Audits, Build, Visual-QA und der gemeinsame
-lokale Commit.
+Der Installer erstellt Backups, führt alle Design-System-Audits, den Build und
+die Visual-QA aus und committed bei Erfolg lokal.
