@@ -1,15 +1,16 @@
-# PfotenTechnik Design-System Governance 11.6.0
+# PfotenTechnik Visual QA Foundation 11.7.0
 
-Diese Abschlussstufe installiert einen zentralen Design-System-Check und ein CSS-Budget.
+Dependency-freie visuelle QA auf Basis des gebauten HTML.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-design-system-governance-11.6.0.mjs
+node 3/pfotentechnik-visual-qa-foundation-11.7.0.mjs
 ```
 
-Danach steht dauerhaft zur Verfügung:
+Danach:
 
 ```bash
-npm --workspace apps/pfotentechnik run design-system:check
+npm --workspace apps/pfotentechnik run design-system:visual-qa
+npm --workspace apps/pfotentechnik run design-system:visual-qa:strict
 ```
