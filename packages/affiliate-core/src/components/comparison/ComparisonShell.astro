@@ -37,6 +37,7 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
   />
 
   <nav class="comparison-premium-nav" aria-label="Sprungnavigation zum Vergleich">
+    <a href="#kurzantwort">Kurzantwort</a>
     <a href="#schnelle-empfehlung">30-Sekunden-Empfehlung</a>
     <a href="#vergleichssieger">Testsieger</a>
     <a href="#einsatzzwecke">Einsatzzwecke</a>
@@ -46,6 +47,20 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
     )}
     <a href="#methodik">Methodik</a>
   </nav>
+
+  <section id="kurzantwort" class="comparison-premium-section comparison-quick-answer" aria-labelledby="kurzantwort-title">
+    <div>
+      <span class="comparison-eyebrow">Kurzantwort</span>
+      <h2 id="kurzantwort-title">{model.verdict.title}</h2>
+      <p>{model.verdict.text}</p>
+    </div>
+    {winner && (
+      <a class="comparison-quick-answer__winner" href="#vergleichssieger">
+        <span>Unsere Empfehlung</span>
+        <strong>{winner.title}</strong>
+      </a>
+    )}
+  </section>
 
   <div class="comparison-decision-flow">
     <section id="schnelle-empfehlung" class="comparison-premium-section">

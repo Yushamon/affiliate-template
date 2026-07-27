@@ -1,92 +1,69 @@
-# PfotenTechnik CTA System 4.2.0
+# PfotenTechnik Content + UI Polish 4.3.0
 
-Projektweiter CTA-Polish für `apps/pfotentechnik`.
+Kumulativer Folgepatch für Vergleichsseiten, Startseite und FAQ.
 
-## Audit-Ergebnis
+## Änderungen
 
-Im aktuellen Projekt existieren mehrere unabhängig entstandene CTA-Systeme:
+### Doppelte Vergleichsempfehlungen
 
-- Homepage-Buttons mit vollständiger Pillenform
-- Advisor-CTA mit eigener Pillenform
-- Health-CTA mit eigener Farbe und Größe
-- gelber Primärbutton im Abschluss-CTA
-- eigener Ratgeber-Direkteinstieg
-- Produktpreis-CTA und Vergleichslink
-- Core-UI-Callouts
-- Vergleichskarten, Winner, Verdict und Sticky Bar
-- leichte Textaktionen innerhalb vollständig klickbarer Karten
+Vergleichsseiten besitzen bereits Gewinner-, Empfehlungs- und Szenariokarten.
+Der zusätzliche Markdown-Abschnitt `Unsere Empfehlungen nach Aufgabe` wiederholt
+diese Auswahl. Der Installer entfernt ausschließlich diesen Abschnitt bis zur
+nächsten H2. Die `Schnellentscheidung` bleibt erhalten.
 
-Der Patch zwingt nicht jede Navigation in denselben großen Button. Stattdessen
-unterscheidet er drei Ebenen:
+### Neue Note auf der Startseite
 
-1. **Primäraktion:** gefülltes einheitliches Grün
-2. **Sekundäraktion:** neutrale Oberfläche mit grünem Akzent
-3. **Inline-Aktion:** Text und Pfeil bei vollständig klickbaren Karten
+Die Empfehlungskarten wechseln von `variant="compact"` zu
+`variant="ring-compact"`. Produktseite, Vergleich und Startseite verwenden
+damit dieselbe visuelle Bewertungssprache.
 
-## Modernisierte Bereiche
+### Kompaktere FAQ
 
-- Navigation und Kaufberater
-- Homepage-Hero
-- UI-Callouts und IntentCTA
-- AdvisorCta
-- HealthBridge
-- Ratgeber-Direkteinstieg „Schon kaufbereit?“
-- Ratgeber-Abschluss-CTA
-- ConversionJourney
-- RelatedArticles/Card-Aktionen
-- Produkt-Preisbox
-- Produkt-Vergleichslink
-- Vergleichs-Empfehlungskarten
-- mobile Vergleichskarten
-- Winner- und Verdict-Aktionen
-- Vergleichs-Sticky-Bar
-- kompakte Vergleichspreise
+Geschlossene FAQ-Einträge erhalten:
 
-## Designregeln
+- 56 bis 58 Pixel Höhe
+- weniger Padding
+- 16 Pixel Radius
+- Chevron rechts
+- keine großen leeren Kartenflächen
+- vollständige Antwort erst im geöffneten Zustand
 
-- 52 px reguläre CTA-Höhe
-- 50 px auf Mobile
-- 14–15 px Radius statt Vollpille
-- gleiche Typografie und Fokusdarstellung
-- kein zweiter grüner Button neben der Primäraktion
-- keine unnötige Schattenwirkung bei Sekundäraktionen
-- klare Press-, Hover- und Fokuszustände
-- Dark Mode über vorhandene Theme-Tokens
-- einspaltiger Fallback auf sehr schmalen Geräten
+Das gilt für das allgemeine FAQ-System und das Produktseiten-FAQ.
+
+### Weitere Korrekturen
+
+- mobile Vergleichsseiten erhalten ausreichend Abstand zur Sticky Bar
+- Startseiten-Produktaktion wird als leichte Textaktion mit Pfeil dargestellt
+- Dark Mode und Reduced Motion sind berücksichtigt
 
 ## Geänderte Dateien
 
 ```text
 apps/pfotentechnik/src/layouts/ProjectLayout.astro
-packages/affiliate-core/src/components/comparison/ComparisonShell.astro
-apps/pfotentechnik/src/styles/pfotentechnik-cta-system.css
-packages/affiliate-core/src/components/comparison/comparison-cta-system.css
+packages/affiliate-core/src/components/home/HomeSection.astro
+apps/pfotentechnik/src/styles/pfotentechnik-content-ui-polish.css
+apps/pfotentechnik/src/content/comparisons/*.md
 ```
 
-Die beiden Astro-Dateien erhalten ausschließlich jeweils einen CSS-Import.
+Bei Vergleichsdateien werden nur Kapitel mit der exakten Überschrift
+`Unsere Empfehlungen nach Aufgabe` oder `Empfehlungen nach Aufgabe` entfernt.
 
 ## Installation
 
 ```powershell
-node .\pfotentechnik-cta-system-4.2.0\install.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-content-ui-polish-4.3.0\install.mjs --repo C:\hp\Projekt\affiliate-template
 ```
 
-Der Installer führt einen Baseline-Build, 16 CTA-Audits und einen vollständigen
-Abschluss-Build aus.
-
-## Optional ohne erneuten Baseline-Build
-
-Nur verwenden, wenn der unveränderte Stand direkt zuvor erfolgreich gebaut
-wurde:
+## Optional ohne Baseline-Build
 
 ```powershell
-node .\pfotentechnik-cta-system-4.2.0\install.mjs --repo C:\hp\Projekt\affiliate-template --skip-baseline
+node .\pfotentechnik-content-ui-polish-4.3.0\install.mjs --repo C:\hp\Projekt\affiliate-template --skip-baseline
 ```
 
-Der Abschluss-Build wird weiterhin ausgeführt.
+Der Abschluss-Build wird immer ausgeführt.
 
 ## Rollback
 
 ```powershell
-node .\pfotentechnik-cta-system-4.2.0\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-content-ui-polish-4.3.0\rollback.mjs --repo C:\hp\Projekt\affiliate-template
 ```

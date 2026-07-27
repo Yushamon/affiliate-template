@@ -348,10 +348,6 @@ Kein einzelnes Modell beherrscht alle drei Aufgaben gleich gut. Ein klassischer 
 
 **PETKIT Fresh Element Solo:** kompakte App-Lösung für eine Katze und kleinere Stellflächen.
 
-## Unsere Empfehlungen nach Aufgabe
-
-### Bester Trockenfutter-Allrounder: PETLIBRO Granary WiFi
-
 Der PETLIBRO Granary WiFi verbindet fünf Liter Vorrat mit bis zu zehn täglichen Mahlzeiten und einer großen Portionierspanne. Eine Portionseinheit entspricht 20 ml; das tatsächliche Gewicht muss mit dem verwendeten Futter kalibriert werden.
 
 Seine wichtigsten Vorteile sind Dual-Band-WLAN, flexible Zeitpläne, App-Protokolle und drei D-Batterien als Notstrom. Es fehlen Kamera, Waage und individuelle Tiererkennung.
