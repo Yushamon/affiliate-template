@@ -59,6 +59,8 @@ const {
           />
         )}
 
+        <ComparisonPriceSignal price={product.price} />
+
         <dl class="comparison-mobile-product__values">
           {rows.map((row) => {
             const cell = row.cells.find(
@@ -81,8 +83,6 @@ const {
             );
           })}
         </dl>
-
-        <ComparisonPriceSignal price={product.price} />
 
         <div class="comparison-mobile-product__actions">
           <a

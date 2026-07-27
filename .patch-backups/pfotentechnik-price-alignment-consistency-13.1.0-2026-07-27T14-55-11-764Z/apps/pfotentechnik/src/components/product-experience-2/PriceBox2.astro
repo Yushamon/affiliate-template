@@ -21,6 +21,9 @@ interface Props {
 }
 
 const { price, affiliate, operations } = Astro.props;
+const checkedLabel = price?.checkedAt
+  ? new Date(price.checkedAt).toLocaleDateString("de-DE")
+  : null;
 const currentPriceLabel = price?.formattedCurrent
   ? `ca. ${price.formattedCurrent}`
   : operations.purchasable
@@ -52,6 +55,7 @@ const unavailableCopy = operations.availability === "discontinued"
 
   <div class="px2-price__amount">
     <strong>{currentPriceLabel}</strong>
+    {checkedLabel && <small>Zuletzt geprüft: {checkedLabel}</small>}
   </div>
 
   {operations.purchasable && affiliate.url ? (
@@ -74,6 +78,7 @@ const unavailableCopy = operations.availability === "discontinued"
 
   <p class="px2-price__note">
     Preis und Verfügbarkeit können sich kurzfristig ändern.
+    {price?.isStale && checkedLabel && <> Die letzte Prüfung ist älter als 14 Tage.</>}
   </p>
 </section>
 
@@ -117,9 +122,7 @@ const unavailableCopy = operations.availability === "discontinued"
 
   .px2-price__header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: baseline;
-    gap: 8px 18px;
+    gap: 4px;
   }
 
   .px2-price__header span {
@@ -135,26 +138,30 @@ const unavailableCopy = operations.availability === "discontinued"
     color: var(--px2-text);
     font-size: clamp(1.2rem, 3vw, 1.45rem);
     line-height: 1.18;
-    text-align: right;
   }
 
   .px2-price__amount {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    gap: 6px;
     padding: 16px 0;
     border-top: 1px solid var(--px2-border);
     border-bottom: 1px solid var(--px2-border);
-    text-align: right;
   }
 
   .px2-price__amount strong {
-    max-width: 100%;
     color: var(--px2-text);
     font-size: clamp(1.8rem, 7vw, 2.4rem);
     font-weight: 950;
-    font-variant-numeric: tabular-nums;
     line-height: 1.05;
     letter-spacing: -.035em;
+    overflow-wrap: anywhere;
+  }
+
+  .px2-price__amount small,
+  .px2-price__note {
+    color: var(--px2-muted);
+    font-size: .76rem;
+    line-height: 1.45;
   }
 
   .px2-price__cta {
@@ -185,8 +192,5 @@ const unavailableCopy = operations.availability === "discontinued"
 
   .px2-price__note {
     margin: 0;
-    color: var(--px2-muted);
-    font-size: .76rem;
-    line-height: 1.45;
   }
 </style>

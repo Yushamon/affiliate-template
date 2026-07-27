@@ -77,8 +77,6 @@ test("public price UI omits ranges and fairness labels", async () => {
     );
   }
 
-  for (const source of files) {
-    assert.doesNotMatch(source, /Zuletzt geprüft|Preisstand|letzter Prüfstand/i);
-  }
+  assert.match(files[0], /Zuletzt geprüft/);
   assert.match(files[2], /Aktueller Preis/);
 });

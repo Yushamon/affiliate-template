@@ -10,15 +10,12 @@ import type {
 
 const DAY_MS = 86_400_000;
 
-// PT_PRICE_PRECISION_13_1_0: dieselbe Cent-Logik wie im Vergleich.
-const moneyFormatter = (currency: string) => ({
-  format: (amount: number) =>
-    new Intl.NumberFormat("de-DE", {
-      style: "currency",
-      currency,
-      maximumFractionDigits: Number.isInteger(amount) ? 0 : 2
-    }).format(amount)
-});
+const moneyFormatter = (currency: string) =>
+  new Intl.NumberFormat("de-DE", {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 0
+  });
 
 const quantile = (sorted: number[], percentile: number): number => {
   if (!sorted.length) return 0;

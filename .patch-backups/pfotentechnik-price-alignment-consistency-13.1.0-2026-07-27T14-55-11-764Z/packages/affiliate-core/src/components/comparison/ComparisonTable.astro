@@ -66,16 +66,19 @@ const {
           ))}
         </tr>
 
-        <tr class="comparison-table__signal-row" data-comparison-row data-has-differences="true">
+                <tr class="comparison-table__signal-row" data-comparison-row data-has-differences="true">
           <th scope="row">
             <strong>Aktueller Preis</strong>
+            <small>Preisangabe und letzter Prüfstand</small>
           </th>
           {products.map((product) => {
             const price = getPriceDisplay(product.price);
+            const checkedLabel = price.meta?.replace(/^Preisstand:/, "Zuletzt geprüft:");
             return (
               <td data-label={product.title} data-product-column={product.slug}>
                 <div class="comparison-table-price">
                   <strong>{price.amountLabel ?? (price.url ? "Beim Händler prüfen" : "Keine Angabe")}</strong>
+                  {checkedLabel && <small>{checkedLabel}</small>}
                 </div>
               </td>
             );

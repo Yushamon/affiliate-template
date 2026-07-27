@@ -970,17 +970,3 @@ body.dark,
   }
 }
 /* PT_PRICE_UI_SIMPLIFICATION_13_0_0_END */
-
-/* PT_PRICE_ALIGNMENT_13_1_0_START */
-.comparison-table-price {
-  display: grid;
-  justify-items: end;
-  gap: 0;
-  font-variant-numeric: tabular-nums;
-  text-align: right;
-}
-
-.comparison-table-price strong {
-  white-space: nowrap;
-}
-/* PT_PRICE_ALIGNMENT_13_1_0_END */
