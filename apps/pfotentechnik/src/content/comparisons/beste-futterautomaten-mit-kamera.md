@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-mit-kamera/
 title: Beste Futterautomaten mit Kamera
 slug: beste-futterautomaten-mit-kamera
 type: comparison

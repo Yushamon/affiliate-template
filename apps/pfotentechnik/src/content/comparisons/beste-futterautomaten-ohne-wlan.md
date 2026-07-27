@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-ohne-wlan/
 title: Beste Futterautomaten ohne WLAN
 slug: beste-futterautomaten-ohne-wlan
 type: comparison

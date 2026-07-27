@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-mit-akku/
 title: Beste Futterautomaten mit Akku
 slug: beste-futterautomaten-mit-akku
 type: comparison

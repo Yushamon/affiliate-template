@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-katzen/
 title: Beste Futterautomaten für Katzen
 slug: beste-futterautomaten-fuer-katzen
 type: comparison

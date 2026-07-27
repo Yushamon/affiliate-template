@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-berufstaetige/
 title: Beste Futterautomaten für Berufstätige
 slug: beste-futterautomaten-fuer-berufstaetige
 type: comparison

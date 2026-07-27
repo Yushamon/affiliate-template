@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/
 title: Futterautomat im Mehrtierhaushalt
 slug: beste-futterautomaten-fuer-mehrtierhaushalte
 type: comparison

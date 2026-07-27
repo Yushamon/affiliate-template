@@ -160,14 +160,13 @@ const forbidden = [
 ];
 
 const containsLegacyUrl = (source, oldUrl) => {
-  const candidates = [oldUrl, oldUrl.replace(/\/$/, "")];
+  const candidates = [oldUrl, oldUrl.replace(/\\\/$/, "")];
   for (const candidate of candidates) {
     let index = source.indexOf(candidate);
     while (index >= 0) {
-      const prefix = source.slice(Math.max(0, index - 10), index);
       const isCanonicalTarget =
         !candidate.startsWith("/vergleiche/") &&
-        prefix.endsWith("/vergleiche");
+        source.slice(0, index).endsWith("/vergleiche");
       const nextCharacter = source[index + candidate.length] || "";
       const hasBoundary =
         candidate.endsWith("/") ||

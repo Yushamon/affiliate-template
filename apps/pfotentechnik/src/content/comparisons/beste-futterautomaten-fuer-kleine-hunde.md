@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-kleine-hunde/
 title: Beste Futterautomaten für kleine Hunde
 slug: beste-futterautomaten-fuer-kleine-hunde
 type: comparison

@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-mit-edelstahl-napf/
 title: Beste Futterautomaten mit Edelstahlnapf
 slug: beste-futterautomaten-mit-edelstahl-napf
 type: comparison

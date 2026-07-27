@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-zwei-katzen/
 title: Beste Futterautomaten für zwei Katzen
 slug: beste-futterautomaten-fuer-zwei-katzen
 type: comparison

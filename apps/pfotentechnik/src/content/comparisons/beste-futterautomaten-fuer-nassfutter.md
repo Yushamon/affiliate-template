@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-nassfutter/
 title: Beste Futterautomaten für Nassfutter
 slug: beste-futterautomaten-fuer-nassfutter
 type: comparison

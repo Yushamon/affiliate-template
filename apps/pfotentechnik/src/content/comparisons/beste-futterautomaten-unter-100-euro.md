@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-unter-100-euro/
 title: Beste Futterautomaten unter 100 Euro
 slug: beste-futterautomaten-unter-100-euro
 type: comparison

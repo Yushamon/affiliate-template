@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/futterautomat-fuer-grosse-hunde/
 title: Futterautomat für große Hunde
 slug: futterautomat-fuer-grosse-hunde
 type: comparison

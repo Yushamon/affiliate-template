@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/futterautomat-gegen-schlingen/
 title: Futterautomat gegen Schlingen
 slug: futterautomat-gegen-schlingen
 type: comparison

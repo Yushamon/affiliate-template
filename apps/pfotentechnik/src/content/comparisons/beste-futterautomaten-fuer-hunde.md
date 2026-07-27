@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-hunde/
 title: Beste Futterautomaten für Hunde
 slug: beste-futterautomaten-fuer-hunde
 type: comparison

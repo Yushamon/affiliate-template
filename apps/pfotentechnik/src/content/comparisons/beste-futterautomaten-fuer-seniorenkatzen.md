@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/
 title: Beste Futterautomaten für Seniorenkatzen
 slug: beste-futterautomaten-fuer-seniorenkatzen
 type: comparison

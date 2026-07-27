@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-welpen/
 title: Beste Futterautomaten für Welpen
 slug: beste-futterautomaten-fuer-welpen
 type: comparison

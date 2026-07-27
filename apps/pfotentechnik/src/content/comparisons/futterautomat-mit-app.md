@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/futterautomat-mit-app/
 title: Futterautomaten mit App
 slug: futterautomat-mit-app
 type: comparison
