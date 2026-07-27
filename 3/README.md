@@ -1,16 +1,15 @@
-# PfotenTechnik Visual QA Foundation 11.7.0
+# PfotenTechnik Responsive Resilience 11.8.0
 
-Dependency-freie visuelle QA auf Basis des gebauten HTML.
+Sichere Schutzschicht gegen typische Mobile- und Overflow-Probleme.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-visual-qa-foundation-11.7.0.mjs
+node 3/pfotentechnik-responsive-resilience-11.8.0.mjs
 ```
 
-Danach:
+Dry-Run:
 
 ```bash
-npm --workspace apps/pfotentechnik run design-system:visual-qa
-npm --workspace apps/pfotentechnik run design-system:visual-qa:strict
+node 3/pfotentechnik-responsive-resilience-11.8.0.mjs --dry-run
 ```

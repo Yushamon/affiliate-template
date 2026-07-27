@@ -99,8 +99,7 @@
     "design-system:budget:audit": "node scripts/design-system/css-budget-audit.mjs",
     "design-system:check": "node scripts/design-system/check.mjs",
     "design-system:visual-qa": "node scripts/design-system/visual-qa.mjs",
-    "design-system:visual-qa:strict": "node scripts/design-system/visual-qa.mjs --strict",
-    "design-system:responsive:audit": "node scripts/design-system/responsive-audit.mjs"
+    "design-system:visual-qa:strict": "node scripts/design-system/visual-qa.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
