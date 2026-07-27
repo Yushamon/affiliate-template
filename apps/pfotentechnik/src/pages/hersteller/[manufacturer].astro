@@ -199,7 +199,7 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
         <header><span>Redaktionelle Empfehlungen</span><h2>Welche Modelle sind besonders interessant?</h2></header>
         <div class="product-grid featured">
           {displayedFeaturedProducts.map((product, index) => (
-            <article class="product-card">
+            <article class="pt-surface product-card">
               <div class="product-rank">{index + 1}</div>
               <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.title} width={480} height={360} layout="constrained" />
               <span>{product.data.manufacturer.name}</span>

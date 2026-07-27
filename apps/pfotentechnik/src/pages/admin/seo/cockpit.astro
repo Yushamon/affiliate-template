@@ -140,17 +140,17 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
     <section id="metrics" class="grid metrics"></section>
 
     <section class="grid columns">
-      <article class="card">
+      <article class="pt-surface card">
         <h2>🚀 Quick Wins</h2>
         <div id="quickWins" class="list"></div>
       </article>
 
-      <article class="card">
+      <article class="pt-surface card">
         <h2>📉 Schwache CTR</h2>
         <div id="weakCtr" class="list"></div>
       </article>
 
-      <article class="card">
+      <article class="pt-surface card">
         <h2>🔎 Suchbegriffe</h2>
         <div class="scroll">
           <table>
@@ -167,7 +167,7 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
         </div>
       </article>
 
-      <article class="card">
+      <article class="pt-surface card">
         <h2>🤖 Empfehlungen</h2>
         <div id="recommendations" class="list"></div>
       </article>
@@ -236,7 +236,7 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
       document.getElementById("metrics").innerHTML = metrics
         .map(
           ([label, value, delta, numericDelta]) =>
-            '<article class="card metric">' +
+            '<article class="pt-surface card metric">' +
             `<div class="muted">${label}</div>` +
             `<strong>${value}</strong>` +
             `<div class="${deltaClass(numericDelta)}">${delta}</div>` +

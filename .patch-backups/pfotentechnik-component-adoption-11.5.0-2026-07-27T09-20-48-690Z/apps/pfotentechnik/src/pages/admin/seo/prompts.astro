@@ -1,0 +1,16 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
+import { buildSeoAdvisor } from "../../../lib/seo/advisor";
+import { loadAdvisorContent } from "../../../lib/seo/advisor/loadContent";
+const payload = loadSeoDashboard();
+const range = payload.ranges[payload.defaultRange] ?? Object.values(payload.ranges)[0];
+const { documents, graph } = await loadAdvisorContent();
+const result = range ? buildSeoAdvisor({payload,range,documents,graph}) : undefined;
+---
+<SeoAdminLayout title="SEO-Prompts" description="Direkt nutzbare ChatGPT- und Codex-Arbeitsaufträge aus der aktuellen GSC- und Content-Datenbasis." active="prompts">
+  <section class="prompt-list">{result?.topTasks.map((task,index)=><article class="seo-card prompt-card"><div><span class="seo-badge">Rang {index+1}</span><span class="seo-badge">{task.score}/100</span></div><h2>{task.title}</h2><p>{task.url??task.query}</p><details><summary>ChatGPT-Prompt anzeigen</summary><pre>{task.prompt}</pre></details><div class="buttons"><button type="button" data-copy={task.prompt}>ChatGPT-Prompt kopieren</button>{task.codexPrompt&&<button type="button" data-copy={task.codexPrompt}>Codex-Prompt kopieren</button>}</div></article>)}</section>
+  {!result?.topTasks.length&&<div class="seo-card empty">Keine belastbare Aufgabe für den aktuellen Zeitraum.</div>}
+</SeoAdminLayout>
+<style>.prompt-list{display:grid;gap:14px}.prompt-card{padding:20px}.prompt-card>div{display:flex;gap:7px}.prompt-card h2{margin:12px 0 7px;font-size:1.2rem}.prompt-card p{color:var(--seo-accent-strong);overflow-wrap:anywhere}.prompt-card details{margin:14px 0}.prompt-card summary{cursor:pointer;font-weight:800}.prompt-card pre{max-height:360px;overflow:auto;white-space:pre-wrap;padding:14px;border-radius:12px;background:var(--seo-surface-soft);color:var(--seo-text);font-size:.82rem}.buttons{display:flex;flex-wrap:wrap;gap:8px}.buttons button{min-height:42px;border:1px solid var(--seo-border);border-radius:999px;padding:9px 14px;background:var(--seo-surface);color:var(--seo-text);font-weight:800;cursor:pointer}.empty{padding:20px}</style>
+<script>document.querySelectorAll("[data-copy]").forEach((button)=>button.addEventListener("click",async()=>{await navigator.clipboard.writeText(button.dataset.copy||"");const old=button.textContent;button.textContent="Kopiert";setTimeout(()=>button.textContent=old,1200)}));</script>

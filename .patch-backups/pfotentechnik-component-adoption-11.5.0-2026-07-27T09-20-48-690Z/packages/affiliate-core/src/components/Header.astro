@@ -1,0 +1,94 @@
+---
+interface Props {
+  projectName: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
+}
+
+const {
+  projectName,
+  links
+} = Astro.props as Props;
+---
+
+<header class="site-header-v2">
+  <div class="header-container-v2">
+    <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-mark__cut"></span>
+        <span class="brand-mark__dot"></span>
+      </span>
+      <span class="brand-name">{projectName}</span>
+    </a>
+
+    <button
+      class="nav-toggle-button"
+      type="button"
+      aria-label="Navigation öffnen"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      data-nav-toggle
+    >
+      Menü
+    </button>
+
+    <nav
+      id="main-navigation"
+      class="main-nav-v2"
+      aria-label="Hauptnavigation"
+      data-main-navigation
+    >
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+
+    <a class="header-advisor-link" href="/berater/futterautomat/">
+      Berater finden
+    </a>
+  </div>
+</header>
+
+<script>
+  const initializeNavigation = () => {
+    document.querySelectorAll<HTMLButtonElement>("[data-nav-toggle]").forEach((button) => {
+      if (button.dataset.initialized === "true") return;
+
+      const navigationId = button.getAttribute("aria-controls");
+      const navigation = navigationId ? document.getElementById(navigationId) : null;
+      if (!navigation) return;
+
+      const setOpen = (open: boolean) => {
+        button.setAttribute("aria-expanded", String(open));
+        button.setAttribute("aria-label", open ? "Navigation schließen" : "Navigation öffnen");
+        navigation.toggleAttribute("data-open", open);
+      };
+
+      button.dataset.initialized = "true";
+      button.addEventListener("click", () => {
+        setOpen(button.getAttribute("aria-expanded") !== "true");
+      });
+
+      navigation.addEventListener("click", (event) => {
+        if ((event.target as HTMLElement).closest("a")) setOpen(false);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+          setOpen(false);
+          button.focus();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        const target = event.target as Node;
+        if (!button.contains(target) && !navigation.contains(target)) setOpen(false);
+      });
+    });
+  };
+
+  initializeNavigation();
+  document.addEventListener("astro:page-load", initializeNavigation);
+</script>

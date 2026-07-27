@@ -199,7 +199,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
 
                 return (
                   <a
-                    class="premium-v3-card premium-v3-product-card premium-v3-card-link"
+                    class="pt-surface premium-v3-card premium-v3-product-card premium-v3-card-link"
                     href={product.productUrl}
                   >
                     {product.image && (
@@ -313,7 +313,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                     )}
 
                     {href && (
-                      <span class="premium-v3-card-cta">
+                      <span class="pt-surface premium-v3-card-cta">
                         {card.cta ?? "Mehr ansehen"}
                       </span>
                     )}
@@ -332,7 +332,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
           )}
 
           {block.href && (
-            <a class="premium-v3-button" href={block.href}>
+            <a class="pt-button premium-v3-button" href={block.href}>
               {block.cta ?? "Mehr erfahren"}
             </a>
           )}

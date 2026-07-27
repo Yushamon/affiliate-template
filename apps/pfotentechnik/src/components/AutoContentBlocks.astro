@@ -50,7 +50,7 @@ const hasBlock = (
     </header>
     <div class="cp-product-grid">
       {selectedProducts.slice(0, 3).map((product) => (
-        <a class="cp-product-card" href={`/produkt/${product.data.slug}/`}>
+        <a class="pt-surface cp-product-card" href={`/produkt/${product.data.slug}/`}>
           <OptimizedImage
             src={product.data.images.thumbnail?.src ?? product.data.images.hero.src}
             alt={product.data.images.thumbnail?.alt ?? product.data.images.hero.alt}

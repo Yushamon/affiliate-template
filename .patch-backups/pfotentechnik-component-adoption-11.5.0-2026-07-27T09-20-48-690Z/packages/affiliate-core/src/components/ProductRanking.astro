@@ -1,0 +1,91 @@
+---
+import { getScoredProducts } from "@app/data/productScoring";
+
+const products = getScoredProducts();
+---
+
+<section class="product-ranking">
+
+  <div class="ranking-header">
+
+    <span>
+      Unsere Bewertung
+    </span>
+
+    <h2>
+      Aktuelle Empfehlung
+    </h2>
+
+    <p>
+      Die Bewertung basiert auf Alltag, Erweiterbarkeit,
+      App, Installation, Preis-Leistung sowie Garantie.
+    </p>
+
+  </div>
+
+  <div class="ranking-grid">
+
+    {
+      products.map((entry, index) => (
+
+        <article class="ranking-card">
+
+          <div class="ranking-position">
+
+            #{index + 1}
+
+          </div>
+
+          <div class="ranking-score">
+
+            {entry.score}
+
+          </div>
+
+          <h3>
+
+            {entry.product.name}
+
+          </h3>
+
+          <p>
+
+            {entry.product.recommendation}
+
+          </p>
+
+          <ul>
+
+            {
+              entry.product.highlights
+                .slice(0, 4)
+                .map((item) => (
+
+                  <li>
+
+                    ✓ {item}
+
+                  </li>
+
+                ))
+            }
+
+          </ul>
+
+          <a
+            href={entry.product.productUrl}
+            class="ranking-button"
+          >
+
+            Zum Testbericht
+
+          </a>
+
+        </article>
+
+      ))
+    }
+
+  </div>
+
+</section>

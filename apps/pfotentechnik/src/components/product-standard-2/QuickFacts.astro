@@ -6,7 +6,7 @@ const { facts = [] } = Astro.props;
   <h2 id="quick-facts-title">Quick Facts</h2>
   <div class="facts-grid">
     {facts.map((fact) => (
-      <article class="fact-card">
+      <article class="pt-surface fact-card">
         {fact.icon && <span class="fact-icon" aria-hidden="true">{fact.icon}</span>}
         <span class="fact-label">{fact.label}</span>
         <strong>{fact.value}</strong>

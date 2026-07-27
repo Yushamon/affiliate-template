@@ -1,0 +1,110 @@
+---
+import OptimizedImage from "../OptimizedImage.astro";
+import EditorialScore from "../EditorialScore.astro";
+import type {
+  ComparisonProduct,
+  ComparisonRow
+} from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+import ComparisonPriceSignal from "./ComparisonPriceSignal.astro";
+
+type Props = {
+  products: ComparisonProduct[];
+  rows: ComparisonRow[];
+  initialVisibleProducts?: number;
+};
+
+const {
+  products,
+  rows
+} = Astro.props as Props;
+---
+
+<div class="comparison-mobile-list" aria-label="Produktvergleich">
+  {products.map((product) => {
+    const price = getPriceDisplay(product.price);
+
+    return (
+      <article
+        class="comparison-mobile-product"
+        data-mobile-product={product.slug}
+      >
+        <header class="comparison-mobile-product__head">
+          <div class="comparison-mobile-product__image">
+            {product.image && (
+              <OptimizedImage
+                src={product.image.src}
+                alt={product.image.alt ?? product.title}
+                width={240}
+                height={180}
+                layout="constrained"
+              />
+            )}
+          </div>
+
+          <div class="comparison-mobile-product__identity">
+            {product.manufacturer && (
+              <span>{product.manufacturer}</span>
+            )}
+            <h3><a href={product.href}>{product.title}</a></h3>
+          </div>
+        </header>
+
+        {typeof product.rating === "number" && (
+          <EditorialScore
+            value={product.rating}
+            scale={100}
+            variant="ring-compact"
+            description="Redaktioneller Gesamtscore"
+          />
+        )}
+
+        <ComparisonPriceSignal price={product.price} />
+
+        <dl class="comparison-mobile-product__values">
+          {rows.map((row) => {
+            const cell = row.cells.find(
+              (entry) => entry.productSlug === product.slug
+            );
+
+            const value =
+              cell?.value && cell.value !== "–"
+                ? cell.value
+                : "Keine Angabe";
+
+            return (
+              <div
+                data-mobile-criterion
+                data-has-differences={String(row.hasDifferences)}
+              >
+                <dt>{row.criterion.label}</dt>
+                <dd>{value}</dd>
+              </div>
+            );
+          })}
+        </dl>
+
+        <div class="comparison-mobile-product__actions">
+          <a
+            href={product.href}
+            class="comparison-button comparison-button--secondary"
+          >
+            Test lesen
+          </a>
+
+          {price.url && (
+            <a
+              href={price.url}
+              class="comparison-button"
+              rel={price.rel}
+              target={price.target}
+              data-affiliate-link
+            >
+              {price.label}
+            </a>
+          )}
+        </div>
+      </article>
+    );
+  })}
+</div>

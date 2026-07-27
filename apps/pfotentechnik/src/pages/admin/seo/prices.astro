@@ -43,7 +43,7 @@ const metrics = [
   description="Preis, Affiliate-Ziel, Verfügbarkeit, Empfehlbarkeit und Pflegepriorität verwalten. Der redaktionelle Produktscore bleibt davon vollständig getrennt."
   active="prices"
 >
-  <section class="ops-summary seo-card">
+  <section class="pt-surface ops-summary seo-card">
     <div>
       <span class="seo-badge">Product Operations 1.0</span>
       <h2>Handlungsbedarf statt Datenrauschen</h2>
@@ -58,7 +58,7 @@ const metrics = [
 
   <section class="ops-metrics" aria-label="Produktpflege-Kennzahlen">
     {metrics.map(([key, label]) => (
-      <article class="seo-card">
+      <article class="pt-surface seo-card">
         <span>{label}</span>
         <strong data-metric={key}>
           {key === "maintenanceRate" ? `${dashboard[key]} %` : dashboard[key]}
@@ -67,7 +67,7 @@ const metrics = [
     ))}
   </section>
 
-  <section class="ops-toolbar seo-card" aria-label="Produktliste filtern">
+  <section class="pt-surface ops-toolbar seo-card" aria-label="Produktliste filtern">
     <div class="ops-tabs" role="group" aria-label="Ansicht">
       <button type="button" class="is-active" data-view="tasks">Arbeitsliste</button>
       <button type="button" data-view="all">Alle Produkte</button>
@@ -100,7 +100,7 @@ const metrics = [
   <script type="application/json" data-ops-config set:html={serializedConfig}></script>
   <script type="application/json" data-ops-records set:html={serializedRows}></script>
 
-  <section class="ops-table seo-card" aria-label="Produktpflege">
+  <section class="pt-surface ops-table seo-card" aria-label="Produktpflege">
     <div class="ops-head" aria-hidden="true">
       <b>Produkt</b>
       <b>Preis</b>
@@ -135,31 +135,31 @@ const metrics = [
             </small>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="priceState" data-state={row.priceState}>{row.priceState}</span>
+            <span class="pt-chip ops-chip" data-field="priceState" data-state={row.priceState}>{row.priceState}</span>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="affiliateAvailable" data-state={row.affiliateAvailable ? "yes" : "no"}>
+            <span class="pt-chip ops-chip" data-field="affiliateAvailable" data-state={row.affiliateAvailable ? "yes" : "no"}>
               {row.affiliateAvailable ? "Vorhanden" : "Fehlt"}
             </span>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="availability" data-state={row.availability}>{row.availabilityLabel}</span>
+            <span class="pt-chip ops-chip" data-field="availability" data-state={row.availability}>{row.availabilityLabel}</span>
             <small data-field="availabilityReason">{row.availabilityReason ?? "Keine Bemerkung"}</small>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="recommendationStatus" data-state={row.recommendationStatus}>{row.recommendationLabel}</span>
+            <span class="pt-chip ops-chip" data-field="recommendationStatus" data-state={row.recommendationStatus}>{row.recommendationLabel}</span>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="editorialStatus" data-state={row.editorialStatus}>{row.editorialStatus}</span>
+            <span class="pt-chip ops-chip" data-field="editorialStatus" data-state={row.editorialStatus}>{row.editorialStatus}</span>
           </div>
           <div class="ops-cell">
-            <span class="ops-chip" data-field="maintenanceStatus" data-state={row.maintenanceStatus}>{row.maintenanceLabel}</span>
+            <span class="pt-chip ops-chip" data-field="maintenanceStatus" data-state={row.maintenanceStatus}>{row.maintenanceLabel}</span>
           </div>
           <div class="ops-cell ops-actions">
             <button type="button" data-check-price={row.slug} disabled={!row.targetUrl || row.consciouslyUnavailable}>
               {row.targetUrl ? "Preis prüfen" : "URL fehlt"}
             </button>
-            <button type="button" class="secondary" data-toggle-editor={row.slug}>Pflegen</button>
+            <button type="button" class="pt-button pt-button-secondary secondary" data-toggle-editor={row.slug}>Pflegen</button>
           </div>
 
           <form class="ops-editor" data-editor={row.slug} hidden>
@@ -217,10 +217,10 @@ const metrics = [
             </label>
             <div class="ops-editor__actions wide">
               <button type="submit" data-save-product={row.slug}>Preis und Verfügbarkeit speichern</button>
-              <button type="button" class="secondary" data-archive-product={row.slug}>
+              <button type="button" class="pt-button pt-button-secondary secondary" data-archive-product={row.slug}>
                 {row.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren"}
               </button>
-              <button type="button" class="secondary" data-close-editor={row.slug}>Schließen</button>
+              <button type="button" class="pt-button pt-button-secondary secondary" data-close-editor={row.slug}>Schließen</button>
             </div>
           </form>
         </article>

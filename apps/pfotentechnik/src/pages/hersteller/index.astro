@@ -54,14 +54,14 @@ const manufacturers =
       (manufacturer) => (
 
         <a
-          class="manufacturer-card"
+          class="pt-surface manufacturer-card"
           href={manufacturer.href}
         >
 
           {
             manufacturer.image && (
 
-              <div class="manufacturer-card-image">
+              <div class="pt-surface manufacturer-card-image">
 
                 <OptimizedImage
                   src={manufacturer.image}
@@ -76,9 +76,9 @@ const manufacturers =
             )
           }
 
-          <div class="manufacturer-card-content">
+          <div class="pt-surface manufacturer-card-content">
 
-            <span class="manufacturer-card-eyebrow">
+            <span class="pt-surface manufacturer-card-eyebrow">
 
               {manufacturer.icon ?? "🏭"}
 

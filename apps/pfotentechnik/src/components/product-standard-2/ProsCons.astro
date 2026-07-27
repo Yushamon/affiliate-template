@@ -10,13 +10,13 @@ const { pros = [], cons = [] } = Astro.props;
   <h2 id="pros-cons-title">Warum wir dieses Produkt empfehlen</h2>
   <div class="pros-cons-grid">
     {pros.length > 0 && (
-      <article class="panel panel--pros">
+      <article class="pt-surface panel panel--pros">
         <h3>Stärken</h3>
         <ul>{pros.map((item) => <li><span aria-hidden="true">✓</span>{item}</li>)}</ul>
       </article>
     )}
     {cons.length > 0 && (
-      <article class="panel panel--cons">
+      <article class="pt-surface panel panel--cons">
         <h3>Schwächen</h3>
         <ul>{cons.map((item) => <li><span aria-hidden="true">×</span>{item}</li>)}</ul>
       </article>

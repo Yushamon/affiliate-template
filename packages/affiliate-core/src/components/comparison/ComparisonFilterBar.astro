@@ -21,10 +21,10 @@ const productFilterData = Object.fromEntries(
 
 {filters.length > 0 && (
   <div
-    class="comparison-filter-panel"
+    class="pt-surface comparison-filter-panel"
     aria-labelledby="comparison-filter-title"
   >
-    <div class="comparison-filter-panel__head">
+    <div class="pt-surface comparison-filter-panel__head">
       <div>
         <span class="comparison-eyebrow">Tabelle filtern</span>
         <h2 id="comparison-filter-title">
@@ -61,7 +61,7 @@ const productFilterData = Object.fromEntries(
                   value={option.value}
                   data-filter-key={filter.key}
                 />
-                <span class="comparison-control-box" aria-hidden="true"></span>
+                <span class="pt-control comparison-control-box" aria-hidden="true"></span>
                 <span class="comparison-filter-option__text">
                   {option.label}
                 </span>

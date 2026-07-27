@@ -2,10 +2,10 @@
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 ---
 <SeoAdminLayout title="SEO-Aufgaben" description="Im Advisor gespeicherte Aufgaben bleiben lokal in diesem Browser. Export und Import machen die Liste portabel, ohne den statischen Astro-Build um Schreiblogik zu erweitern." active="tasks">
-  <section class="task-controls seo-card">
+  <section class="pt-surface task-controls seo-card">
     <label>Status <select id="task-filter"><option value="all">Alle</option><option value="offen">Offen</option><option value="geplant">Geplant</option><option value="in-arbeit">In Arbeit</option><option value="erledigt">Erledigt</option><option value="verworfen">Verworfen</option></select></label>
     <button type="button" id="task-export">JSON exportieren</button>
-    <label class="import-button">JSON importieren<input id="task-import" type="file" accept="application/json,.json" /></label>
+    <label class="pt-button import-button">JSON importieren<input id="task-import" type="file" accept="application/json,.json" /></label>
   </section>
   <p class="storage-note">Hinweis: LocalStorage ist browser- und gerätegebunden. Der Advisor verändert keine Content-Dateien.</p>
   <section id="task-list" class="task-list" aria-live="polite"></section>

@@ -84,11 +84,11 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
           <p>Entscheidend sind Gesamtleistung, Eignung und Preisniveau, nicht die längste Funktionsliste.</p>
         </div>
 
-        <div class="comparison-winner-card">
-          <span class="comparison-winner-card__eyebrow">Unsere Empfehlung</span>
-          {winner.badge && <span class="comparison-winner-card__badge">{winner.badge}</span>}
+        <div class="pt-surface comparison-winner-card">
+          <span class="pt-surface comparison-winner-card__eyebrow">Unsere Empfehlung</span>
+          {winner.badge && <span class="pt-surface comparison-winner-card__badge">{winner.badge}</span>}
           {winner.image && (
-            <a href={winner.href} class="comparison-winner-card__image">
+            <a href={winner.href} class="pt-surface comparison-winner-card__image">
               <img
                 src={typeof winner.image.src === "string" ? winner.image.src : winner.image.src.src}
                 alt={winner.image.alt ?? winner.title}
@@ -99,7 +99,7 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
               />
             </a>
           )}
-          <div class="comparison-winner-card__copy">
+          <div class="pt-surface comparison-winner-card__copy">
             {winner.manufacturer && <span>{winner.manufacturer}</span>}
             <h3><a href={winner.href}>{winner.title}</a></h3>
             {typeof winner.rating === "number" && (
@@ -118,12 +118,12 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
               </ul>
             )}
           </div>
-          <div class="comparison-winner-card__actions">
-            <a href={winner.href} class="comparison-button comparison-button--secondary">Test lesen</a>
+          <div class="pt-surface comparison-winner-card__actions">
+            <a href={winner.href} class="pt-button-secondary pt-button comparison-button comparison-button--secondary">Test lesen</a>
             {winnerPrice?.url && (
               <a
                 href={winnerPrice.url}
-                class="comparison-button"
+                class="pt-button comparison-button"
                 rel={winnerPrice.rel}
                 target={winnerPrice.target}
                 data-affiliate-link

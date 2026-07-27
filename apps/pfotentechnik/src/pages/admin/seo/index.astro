@@ -20,14 +20,14 @@ const sections = [
   <SearchIntegrations />
   {active ? (
     <>
-      <section class="overview-status seo-card">
+      <section class="pt-surface overview-status seo-card">
         <div><span class="seo-badge">{active.label}</span><h2>{active.startDate} bis {active.endDate}</h2><p>{payload.source === "ranges" ? "Multi-Zeitraum-Datei aktiv" : "Fallback auf Einzeldatei aktiv"}</p></div>
         <dl><div><dt>Klicks</dt><dd>{formatNumber(active.metrics.current.clicks)}</dd></div><div><dt>Impressionen</dt><dd>{formatNumber(active.metrics.current.impressions)}</dd></div><div><dt>CTR</dt><dd>{active.metrics.current.ctr.toFixed(2)} %</dd></div><div><dt>Position</dt><dd>{active.metrics.current.position.toFixed(1)}</dd></div></dl>
       </section>
-      <section class="overview-grid">{sections.map((section) => <a class="seo-card overview-link" href={section.href}><h2>{section.title}</h2><p>{section.text}</p><span>Öffnen →</span></a>)}</section>
-      <section class="seo-card data-summary"><h2>Datenstatus</h2><p>Generiert: {payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("de-DE") : "nicht verfügbar"}</p><p>{Object.keys(payload.ranges).length} Zeitraum/Zeiträume · {active.pages.length} Seiten · {active.queries.length} Queries · {active.trend.length} Trendpunkte · {active.recommendations.length} GSC-Empfehlungen</p>{payload.diagnostics.map((item) => <p class="diagnostic">{item.level}: {item.message}</p>)}</section>
+      <section class="overview-grid">{sections.map((section) => <a class="pt-surface seo-card overview-link" href={section.href}><h2>{section.title}</h2><p>{section.text}</p><span>Öffnen →</span></a>)}</section>
+      <section class="pt-surface seo-card data-summary"><h2>Datenstatus</h2><p>Generiert: {payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("de-DE") : "nicht verfügbar"}</p><p>{Object.keys(payload.ranges).length} Zeitraum/Zeiträume · {active.pages.length} Seiten · {active.queries.length} Queries · {active.trend.length} Trendpunkte · {active.recommendations.length} GSC-Empfehlungen</p>{payload.diagnostics.map((item) => <p class="diagnostic">{item.level}: {item.message}</p>)}</section>
     </>
-  ) : <section class="seo-card empty"><h2>Keine nutzbaren GSC-Daten</h2>{payload.diagnostics.map((item) => <p>{item.message}</p>)}</section>}
+  ) : <section class="pt-surface seo-card empty"><h2>Keine nutzbaren GSC-Daten</h2>{payload.diagnostics.map((item) => <p>{item.message}</p>)}</section>}
 </SeoAdminLayout>
 <style>
   .overview-status { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; align-items: center; padding: 24px; }

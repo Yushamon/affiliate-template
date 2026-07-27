@@ -1,0 +1,63 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+
+type Props = {
+  products: ComparisonProduct[];
+};
+
+const { products } = Astro.props as Props;
+---
+
+<section class="comparison-section" aria-labelledby="comparison-fit-title">
+  <div class="comparison-section__head">
+    <div>
+      <span class="comparison-eyebrow">Für wen passt welches Modell?</span>
+      <h2 id="comparison-fit-title">Stärken und Einschränkungen</h2>
+    </div>
+  </div>
+
+  <div class="comparison-fit-grid">
+    {products.map((product) => (
+      <article
+        class="comparison-fit-card"
+        data-product-slug={product.slug}
+      >
+        <div>
+          {product.badge && (
+            <span class="comparison-fit-card__badge">{product.badge}</span>
+          )}
+          <h3>{product.title}</h3>
+          {product.manufacturer && (
+            <p class="comparison-fit-card__manufacturer">
+              {product.manufacturer}
+            </p>
+          )}
+        </div>
+
+        <div class="comparison-fit-card__group">
+          <h4>Passt gut, wenn</h4>
+          <ul>
+            {(product.strengths.length
+              ? product.strengths.slice(0, 3)
+              : ["Keine zusätzlichen Angaben hinterlegt."]
+            ).map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+
+        <div class="comparison-fit-card__group comparison-fit-card__group--attention">
+          <h4>Eher nicht, wenn</h4>
+          <ul>
+            {(product.attention.length
+              ? product.attention.slice(0, 3)
+              : ["Keine besonderen Einschränkungen hinterlegt."]
+            ).map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+
+        <a href={product.href} class="comparison-text-link">
+          Produktdetails prüfen
+        </a>
+      </article>
+    ))}
+  </div>
+</section>

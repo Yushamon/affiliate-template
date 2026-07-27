@@ -32,14 +32,14 @@ const { hero } = Astro.props as Props;
 
     <div class="home3-hero__actions">
       <a
-        class="home3-button home3-button--primary"
+        class="pt-button-primary pt-button home3-button home3-button--primary"
         href={hero.primaryAction.href}
       >
         {hero.primaryAction.label}
       </a>
 
       <a
-        class="home3-button home3-button--ghost"
+        class="pt-button-secondary pt-button home3-button home3-button--ghost"
         href={hero.secondaryAction.href}
       >
         {hero.secondaryAction.label}

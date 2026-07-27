@@ -1,0 +1,74 @@
+---
+import { projectConfig } from "@app/project.config";
+
+const trust = projectConfig.trust ?? {
+  intro:
+    "Unser Ziel ist eine verständliche und unabhängige Kaufberatung. Empfehlungen sollen nachvollziehbare Entscheidungen ermöglichen.",
+  reviewBasis: [
+    "Herstellerinformationen",
+    "technische Daten",
+    "Funktionsumfang",
+    "Alltagstauglichkeit"
+  ],
+  exclusions: [
+    "Keine gekauften Testsiegel",
+    "Keine bezahlten Platzierungen in Bewertungen"
+  ]
+};
+---
+
+<section class="trust-box">
+
+  <div class="trust-box-header">
+
+    <span>
+      Transparenz
+    </span>
+
+    <h2>
+      Wie wir unsere Inhalte erstellen
+    </h2>
+
+    <p>{trust.intro}</p>
+
+  </div>
+
+  <div class="trust-box-grid">
+
+    <div class="trust-box-card">
+
+      <h3>
+        Unsere Bewertung berücksichtigt
+      </h3>
+
+      <ul>
+
+        {
+          trust.reviewBasis.map((item) => (
+            <li>{item}</li>
+          ))
+        }
+
+      </ul>
+
+    </div>
+
+    <div class="trust-box-card">
+
+      <h3>
+        Was wir bewusst nicht tun
+      </h3>
+
+      <ul>
+
+        {trust.exclusions.map((item) => (
+          <li>{item}</li>
+        ))}
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>

@@ -8,14 +8,14 @@ const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:
 const serialized = JSON.stringify({ initial, config, serviceUrl }).replace(/</g, "\\u003c");
 const date = (value: string | null) => value ? new Date(value).toLocaleString("de-DE") : "noch nie";
 ---
-<section class="search-integrations seo-card" aria-labelledby="search-integrations-title" data-search-integrations>
+<section class="pt-surface search-integrations seo-card" aria-labelledby="search-integrations-title" data-search-integrations>
   <div class="integration-heading">
     <div><span class="seo-badge">Search Platform</span><h2 id="search-integrations-title">Search Integrations</h2><p>Google-Daten, lokale Wartungsaktionen und Provider-Status an einem Ort.</p></div>
     <span class="service-state" data-service-state data-state="checking">Lokaler Admin-Service wird geprüft</span>
   </div>
 
   <div class="provider-grid">
-    <article class="provider-card" data-provider="google">
+    <article class="pt-surface provider-card" data-provider="google">
       <div class="provider-title"><div><span class="provider-mark" aria-hidden="true">G</span><h3>Google Search Console</h3></div><span class="seo-badge" data-google-health>{config.google.tokenPresent ? "lokal konfiguriert" : "nicht verbunden"}</span></div>
       <dl class="status-grid">
         <div><dt>Property</dt><dd data-google-property>{initial.google.property || config.google.property}</dd></div>
@@ -31,11 +31,11 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
         <button type="button" data-action="google.test" data-requires-service>Verbindung testen</button>
         <button type="button" data-action="google.sync" data-requires-service>Jetzt synchronisieren</button>
         <button type="button" data-action="google.report" data-requires-service>Bericht erzeugen</button>
-        <button class="secondary" type="button" data-setup data-reconnect data-requires-service>OAuth neu verbinden</button>
+        <button class="pt-button pt-button-secondary secondary" type="button" data-setup data-reconnect data-requires-service>OAuth neu verbinden</button>
       </div>
     </article>
 
-    <article class="provider-card maintenance-card">
+    <article class="pt-surface provider-card maintenance-card">
       <div class="provider-title"><div><span class="provider-mark maintenance" aria-hidden="true">W</span><h3>Lokale Wartung</h3></div><span class="seo-badge">Allowlist</span></div>
       <p>Diese Aktionen laufen ausschließlich im lokalen Admin-Service. Der Browser kann keine Befehle oder Dateipfade übergeben.</p>
       <div class="action-row">
@@ -44,7 +44,7 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
       </div>
     </article>
 
-    <article class="provider-card bing-card">
+    <article class="pt-surface provider-card bing-card">
       <div class="provider-title"><div><span class="provider-mark bing" aria-hidden="true">B</span><h3>Bing Webmaster Tools</h3></div><span class="seo-badge" data-bing-health>{config.bing.configured ? "konfiguriert" : "nicht konfiguriert"}</span></div>
       <dl class="status-grid">
         <div><dt>Website</dt><dd data-bing-site>{initial.bing.siteUrl || config.bing.siteUrl}</dd></div>
@@ -55,10 +55,10 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
         <div><dt>Crawl-Daten</dt><dd data-bing-crawl>{initial.bing.crawlRowsCount || 0} Zeilen</dd></div>
       </dl>
       <p class="provider-error" data-bing-error hidden></p>
-      <div class="action-row"><button type="button" data-action="bing.test" data-requires-service>Bing testen</button><button type="button" data-action="bing.sync" data-requires-service>Bing synchronisieren</button><button class="secondary" type="button" data-action="bing.report" data-requires-service>Bing-Bericht</button></div>
+      <div class="action-row"><button type="button" data-action="bing.test" data-requires-service>Bing testen</button><button type="button" data-action="bing.sync" data-requires-service>Bing synchronisieren</button><button class="pt-button pt-button-secondary secondary" type="button" data-action="bing.report" data-requires-service>Bing-Bericht</button></div>
     </article>
 
-    <article class="provider-card combined-card">
+    <article class="pt-surface provider-card combined-card">
       <div class="provider-title"><div><span class="provider-mark combined" aria-hidden="true">Σ</span><h3>Combined Search</h3></div><span class="seo-badge" data-combined-status>{initial.combined.status}</span></div>
       <dl class="status-grid">
         <div><dt>Gemeinsamer Sync</dt><dd data-combined-sync>{date(initial.combined.lastSuccessfulSyncAt)}</dd></div>
@@ -68,7 +68,7 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString("d
         <div><dt>CTR</dt><dd data-combined-ctr>{(initial.combined.metrics?.ctr || 0).toFixed(2)} %</dd></div>
         <div><dt>Datenumfang</dt><dd data-combined-counts>{initial.combined.pagesCount} Seiten · {initial.combined.queriesCount} Queries</dd></div>
       </dl>
-      <div class="action-row combined-actions"><button class="primary" type="button" data-action="search.sync" data-requires-service>Alle Suchdaten synchronisieren</button><button type="button" data-action="search.test" data-requires-service>Alle Verbindungen testen</button><button class="secondary" type="button" data-action="search.report" data-requires-service>Gemeinsamen Bericht erzeugen</button></div>
+      <div class="action-row combined-actions"><button class="pt-button pt-button-primary primary" type="button" data-action="search.sync" data-requires-service>Alle Suchdaten synchronisieren</button><button type="button" data-action="search.test" data-requires-service>Alle Verbindungen testen</button><button class="pt-button pt-button-secondary secondary" type="button" data-action="search.report" data-requires-service>Gemeinsamen Bericht erzeugen</button></div>
     </article>
   </div>
   <div class="action-message" data-action-message aria-live="polite">Die Ansicht zeigt den zuletzt lokal gespeicherten Status.</div>

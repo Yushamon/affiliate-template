@@ -1,0 +1,45 @@
+---
+interface Card {
+  label?: string;
+  title: string;
+  text: string;
+  href?: string;
+  cta?: string;
+}
+
+interface Props {
+  type:
+    | "answer"
+    | "decision"
+    | "products"
+    | "checks"
+    | "steps"
+    | "recommendation";
+  title?: string;
+  text?: string;
+  cards?: Card[];
+}
+
+const { type, title, text, cards = [] } = Astro.props;
+---
+
+<section class={`premium-block premium-block-${type}`}>
+  {title && <h2>{title}</h2>}
+  {text && <p class="premium-block-intro">{text}</p>}
+
+  <div class="premium-block-grid">
+    {cards.map((card) => (
+      <article class="premium-block-card">
+        {card.label && <span>{card.label}</span>}
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+
+        {card.href && (
+          <a href={card.href}>
+            {card.cta ?? "Mehr erfahren"}
+          </a>
+        )}
+      </article>
+    ))}
+  </div>
+</section>

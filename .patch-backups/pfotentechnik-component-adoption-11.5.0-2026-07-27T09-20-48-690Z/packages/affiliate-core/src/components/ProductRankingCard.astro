@@ -1,0 +1,119 @@
+---
+import { products, type ProductKey } from "@app/data/products";
+import { getScoreLabel } from "@app/data/productScoring";
+import { stripLeadingIcon } from "../utils/content";
+import { getPrimaryAffiliateLink } from "../affiliate/affiliateEngine";
+import { projectConfig } from "@app/project.config";
+import { DEFAULT_PROJECT, getProjectImage } from "@app/data/projectImages";
+import { getProductThumbnail } from "../utils/productImages";
+import ProductImage from "./ProductImage.astro";
+
+interface Props {
+  productKey: ProductKey;
+  rank: number;
+  score: number;
+  positionLabel?: string;
+}
+
+const { productKey, rank, score, positionLabel = "Platz" } = Astro.props;
+const product = products[productKey];
+const cardImage = getProductThumbnail(
+  product,
+  getProjectImage(DEFAULT_PROJECT, "product"),
+  productKey
+);
+
+const primaryLink = getPrimaryAffiliateLink(
+  product,
+  projectConfig.affiliate ?? {}
+);
+const buttonHref = primaryLink.url || product.productUrl;
+const buttonLabel = primaryLink.label;
+
+const highlights = product.highlights.slice(0, 3);
+const specs = product.specs.slice(0, 3);
+---
+
+<article class="product-ranking-card">
+  <div class="product-ranking-card-media">
+    <div class="product-ranking-position" aria-label={`${positionLabel} ${rank}`}>
+      <span>{positionLabel}</span>
+      <strong>{rank}</strong>
+    </div>
+
+    <span class="product-ranking-badge">{product.badge}</span>
+
+    <a
+      class="product-ranking-image-link"
+      href={product.productUrl}
+      aria-label={`${product.name} Testbericht öffnen`}
+    >
+      <ProductImage
+        image={cardImage}
+        alt={product.name}
+        loading={rank === 1 ? "eager" : "lazy"}
+        decoding="async"
+      />
+    </a>
+  </div>
+
+  <div class="product-ranking-card-content">
+    <div class="product-ranking-meta">
+      <span>{product.brand}</span>
+      <span class="product-ranking-rating">
+        <span aria-hidden="true">★</span> {product.rating} / 5
+      </span>
+    </div>
+
+    <div class="product-ranking-title-row">
+      <div>
+        <h2>
+          <a class="product-ranking-title-link" href={product.productUrl}>
+            {product.name}
+          </a>
+        </h2>
+        <p>{product.recommendation}</p>
+      </div>
+
+      <div class="product-ranking-score" aria-label={`Score ${score} von 100`}>
+        <strong>{score}</strong>
+        <span>{getScoreLabel(score)}</span>
+      </div>
+    </div>
+
+    <div class="product-ranking-details">
+      <div class="product-ranking-highlights">
+        {highlights.map((highlight) => (
+          <div>
+            <span aria-hidden="true">✓</span>
+            <span>{stripLeadingIcon(highlight)}</span>
+          </div>
+        ))}
+      </div>
+
+      <dl class="product-ranking-specs">
+        {specs.map((spec) => (
+          <div>
+            <dt>{spec.label}</dt>
+            <dd>{spec.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    <div class="product-ranking-actions">
+      <a
+        class="product-ranking-cta"
+        href={buttonHref}
+        rel={primaryLink.rel}
+        target={primaryLink.target}
+      >
+        {buttonLabel}
+      </a>
+
+      <a class="product-ranking-review-link" href={product.productUrl}>
+        Testbericht lesen
+      </a>
+    </div>
+  </div>
+</article>

@@ -35,7 +35,7 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
   {defaultResult ? (
     <>
       <section class="status-grid" aria-label="Datenstatus">
-        <article class="seo-card status-main">
+        <article class="pt-surface seo-card status-main">
           <div>
             <span class="seo-badge" data-level={defaultResult.dataConfidence === "gering" ? "medium" : "low"}>Datenvertrauen: {defaultResult.dataConfidence}</span>
             <h2 id="active-period">{defaultResult.range.label}</h2>
@@ -43,7 +43,7 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
           </div>
           <p id="data-notice">{defaultResult.dataNotice}</p>
         </article>
-        <article class="seo-card generated-card">
+        <article class="pt-surface seo-card generated-card">
           <span>Generiert am</span>
           <strong>{payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("de-DE") : "Nicht verfügbar"}</strong>
           <small>{payload.property || "Keine Property-Angabe"}</small>
@@ -68,13 +68,13 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
           ["Queries", formatNumber(defaultResult.range.queries.length)],
           ["Trendtage", formatNumber(defaultResult.range.trend.length)],
           ["Empfehlungen", formatNumber(defaultResult.range.recommendations.length)],
-        ].map(([label, value]) => <article class="seo-card metric"><span>{label}</span><strong>{value}</strong></article>)}
+        ].map(([label, value]) => <article class="pt-surface seo-card metric"><span>{label}</span><strong>{value}</strong></article>)}
       </section>
 
-      <section class="traffic-win seo-card" aria-labelledby="traffic-win-title">
+      <section class="pt-surface traffic-win seo-card" aria-labelledby="traffic-win-title">
         <div class="section-heading">
           <div><span class="seo-eyebrow">Fokus</span><h2 id="traffic-win-title">Größter Traffic-Gewinn heute</h2></div>
-          <span class="score-pill" id="traffic-win-score">{defaultResult.trafficWin?.score ?? 0}/100</span>
+          <span class="pt-chip score-pill" id="traffic-win-score">{defaultResult.trafficWin?.score ?? 0}/100</span>
         </div>
         <div id="traffic-win-content">
           {defaultResult.trafficWin ? (
@@ -93,7 +93,7 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         <div class="section-heading"><div><span class="seo-eyebrow">Priorisiert</span><h2 id="today-title">Heute erledigen – Top 5</h2></div></div>
         <div class="task-list" id="top-tasks">
           {defaultResult.topTasks.map((task, index) => (
-            <article class="seo-card task-card">
+            <article class="pt-surface seo-card task-card">
               <div class="task-rank">{index + 1}</div>
               <div><span class="seo-badge">{task.category}</span><h3>{task.title}</h3><p class="target">{task.url ?? task.query}</p><p>{task.rationale}</p></div>
             </article>
@@ -102,11 +102,11 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
       </section>
 
       <section class="analysis-grid intelligence-row" aria-label="Priorität und Forecast">
-        <article class="seo-card analysis-card">
+        <article class="pt-surface seo-card analysis-card">
           <div class="section-heading"><div><span class="seo-eyebrow">Niedriger Aufwand</span><h2>Quick Wins</h2></div></div>
           <div id="quick-win-list"></div>
         </article>
-        <article class="seo-card analysis-card">
+        <article class="pt-surface seo-card analysis-card">
           <div class="section-heading"><div><span class="seo-eyebrow">Konservatives Szenario</span><h2>Forecast</h2></div></div>
           <p class="disclaimer">Szenarien auf Basis vorhandener Impressionen – keine Traffic- oder Ranking-Versprechen.</p>
           <div id="forecast-list"></div>
@@ -125,12 +125,12 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
       </section>
 
       <section class="analysis-grid">
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Internes Signal</span><h2>EEAT-Analyse</h2></div></div><p class="disclaimer">Interne Qualitätsbewertung – kein offizieller Google-Score.</p><div id="eeat-list"></div></article>
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Suchintention</span><h2>Content Gaps</h2></div></div><div id="gap-list"></div></article>
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Risikoanalyse</span><h2>Kannibalisierung</h2></div></div><div id="cannibal-list"></div></article>
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Content Graph</span><h2>Cornerstone-Links</h2></div></div><div id="link-list"></div></article>
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Cluster-Abdeckung</span><h2>Graph Gaps</h2></div></div><div id="graph-gap-list"></div></article>
-        <article class="seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Funnel-Struktur</span><h2>Conversion Insights</h2></div></div><p class="disclaimer">Keine Interaktionsmessung: bewertet werden Search-Traffic und strukturelle CTA-/Linksignale.</p><div id="conversion-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Internes Signal</span><h2>EEAT-Analyse</h2></div></div><p class="disclaimer">Interne Qualitätsbewertung – kein offizieller Google-Score.</p><div id="eeat-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Suchintention</span><h2>Content Gaps</h2></div></div><div id="gap-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Risikoanalyse</span><h2>Kannibalisierung</h2></div></div><div id="cannibal-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Content Graph</span><h2>Cornerstone-Links</h2></div></div><div id="link-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Cluster-Abdeckung</span><h2>Graph Gaps</h2></div></div><div id="graph-gap-list"></div></article>
+        <article class="pt-surface seo-card analysis-card"><div class="section-heading"><div><span class="seo-eyebrow">Funnel-Struktur</span><h2>Conversion Insights</h2></div></div><p class="disclaimer">Keine Interaktionsmessung: bewertet werden Search-Traffic und strukturelle CTA-/Linksignale.</p><div id="conversion-list"></div></article>
       </section>
 
       <section class="advisor-section" aria-labelledby="calendar-title">
@@ -144,15 +144,15 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
           <span class="seo-badge">{productIntelligence.health.length} validierte Produkte</span>
         </div>
         <div class="product-summary product-summary--six">
-          <article class="seo-card summary-tile"><strong>{productIntelligence.health.filter((item) => item.status === "vollständig").length}</strong><span>Product Health vollständig</span></article>
-          <article class="seo-card summary-tile"><strong>{copilotWorkspace.productCandidates.length + productIntelligence.discoveries.length}</strong><span>Neue Produkte</span></article>
-          <article class="seo-card summary-tile"><strong>{copilotWorkspace.contentGaps.length + productIntelligence.coverageGaps.length}</strong><span>Content Gaps</span></article>
-          <article class="seo-card summary-tile"><strong>{copilotWorkspace.nicheOpportunities.length}</strong><span>Nischenchancen</span></article>
-          <article class="seo-card summary-tile"><strong>{copilotWorkspace.productDrafts.length}</strong><span>Produktentwürfe</span></article>
-          <article class="seo-card summary-tile"><strong>{copilotWorkspace.jobs.filter((job) => ["pending", "running", "awaiting-review"].includes(job.status)).length}</strong><span>Anlagewarteschlange</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{productIntelligence.health.filter((item) => item.status === "vollständig").length}</strong><span>Product Health vollständig</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{copilotWorkspace.productCandidates.length + productIntelligence.discoveries.length}</strong><span>Neue Produkte</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{copilotWorkspace.contentGaps.length + productIntelligence.coverageGaps.length}</strong><span>Content Gaps</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{copilotWorkspace.nicheOpportunities.length}</strong><span>Nischenchancen</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{copilotWorkspace.productDrafts.length}</strong><span>Produktentwürfe</span></article>
+          <article class="pt-surface seo-card summary-tile"><strong>{copilotWorkspace.jobs.filter((job) => ["pending", "running", "awaiting-review"].includes(job.status)).length}</strong><span>Anlagewarteschlange</span></article>
         </div>
 
-        <article class="seo-card discovery-panel">
+        <article class="pt-surface seo-card discovery-panel">
           <div class="section-heading">
             <div><span class="seo-eyebrow">Produktentdeckung</span><h2>Nach neuen Produkten suchen</h2></div>
             <span class="seo-badge" data-level={copilotWorkspace.provider.configured ? "low" : "medium"}>{copilotWorkspace.provider.configured ? `Provider: ${copilotWorkspace.provider.provider}` : "Provider nicht konfiguriert"}</span>
@@ -165,29 +165,29 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
             <label>Markt<select id="discovery-market"><option value="DE">Deutschland</option><option value="EU">EU</option></select></label>
           </div>
           <div class="task-actions">
-            <button type="button" class="button" id="run-product-discovery">Nach neuen Produkten suchen</button>
-            <button type="button" class="button secondary" data-copy-static-prompt="discovery-chatgpt">ChatGPT-Prompt kopieren</button>
-            <button type="button" class="button secondary" data-copy-static-prompt="discovery-codex">Codex-Prompt kopieren</button>
+            <button type="button" class="pt-button button" id="run-product-discovery">Nach neuen Produkten suchen</button>
+            <button type="button" class="pt-button-secondary pt-button button secondary" data-copy-static-prompt="discovery-chatgpt">ChatGPT-Prompt kopieren</button>
+            <button type="button" class="pt-button-secondary pt-button button secondary" data-copy-static-prompt="discovery-codex">Codex-Prompt kopieren</button>
           </div>
         </article>
 
         <div class="product-grid">
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Vorhandene Herstellerdaten</span><h2>Interne Produktkandidaten</h2></div></div>
             {productIntelligence.discoveries.length ? productIntelligence.discoveries.map((product) => (
               <div class="finding product-candidate">
                 <h3>{product.name}</h3><p>{product.manufacturerName} · <code>{product.slug}</code></p>
                 <p>{product.knownData.join(" · ")}</p>
                 <div class="task-actions">
-                  <button type="button" class="button secondary" data-product-action="product.draft.create" data-slug={product.slug} data-name={product.name}>Sicheren Entwurf erzeugen</button>
-                  <button type="button" class="button secondary" data-copy-product-prompt={product.slug}>Codex-Prompt kopieren</button>
-                  <button type="button" class="button secondary" data-product-action="product.images.prompts" data-slug={product.slug} data-name={product.name}>Bildprompts vorbereiten</button>
-                  <button type="button" class="button secondary" data-product-action="product.images.pack" data-slug={product.slug} data-name={product.name}>Bildpaket bauen</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-product-action="product.draft.create" data-slug={product.slug} data-name={product.name}>Sicheren Entwurf erzeugen</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-copy-product-prompt={product.slug}>Codex-Prompt kopieren</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-product-action="product.images.prompts" data-slug={product.slug} data-name={product.name}>Bildprompts vorbereiten</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-product-action="product.images.pack" data-slug={product.slug} data-name={product.name}>Bildpaket bauen</button>
                 </div>
               </div>
             )) : <div class="seo-empty">Keine neue Produktdatei ist durch die vorhandenen Hersteller-Produktlisten belegt. Es wird kein Dummy-Produkt vorgeschlagen.</div>}
           </article>
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Externe Entdeckung</span><h2>Validierte Produktkandidaten</h2></div></div>
             {copilotWorkspace.productCandidates.length ? copilotWorkspace.productCandidates.map((candidate) => (
               <details class="finding candidate-detail">
@@ -198,12 +198,12 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
                 <p><strong>Quellen:</strong> {candidate.sources.length} · <strong>Marktsignale:</strong> {candidate.marketSignals.length}</p>
                 {candidate.risks.length > 0 && <ul>{candidate.risks.map((risk) => <li>{risk}</li>)}</ul>}
                 <div class="task-actions">
-                  <button type="button" class="button secondary" data-candidate-action="product.discovery.validate" data-candidate-id={candidate.id}>Erneut validieren</button>
-                  <button type="button" class="button secondary" data-candidate-action="product.preflight.run" data-candidate-id={candidate.id}>Preflight</button>
-                  <button type="button" class="button secondary" data-candidate-action="product.draft.generate" data-candidate-id={candidate.id}>Entwurf und Vorschau</button>
-                  <button type="button" class="button secondary" data-candidate-prompt={candidate.id} data-prompt-kind="chatgpt">ChatGPT-Prompt</button>
-                  <button type="button" class="button secondary" data-candidate-prompt={candidate.id} data-prompt-kind="codex">Codex-Prompt</button>
-                  <button type="button" class="button secondary" data-candidate-action="product.discovery.ignore" data-candidate-id={candidate.id}>Ignorieren</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-action="product.discovery.validate" data-candidate-id={candidate.id}>Erneut validieren</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-action="product.preflight.run" data-candidate-id={candidate.id}>Preflight</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-action="product.draft.generate" data-candidate-id={candidate.id}>Entwurf und Vorschau</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-prompt={candidate.id} data-prompt-kind="chatgpt">ChatGPT-Prompt</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-prompt={candidate.id} data-prompt-kind="codex">Codex-Prompt</button>
+                  <button type="button" class="pt-button-secondary pt-button button secondary" data-candidate-action="product.discovery.ignore" data-candidate-id={candidate.id}>Ignorieren</button>
                 </div>
               </details>
             )) : <div class="seo-empty">Noch keine extern validierten Kandidaten. Ohne konfigurierten Provider erzeugt die Suchaktion sichere Rechercheprompts statt Produktbehauptungen.</div>}
@@ -211,28 +211,28 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         </div>
 
         <div class="product-grid workspace-row">
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Coverage</span><h2>Content Gaps</h2></div></div>
-            {productIntelligence.coverageGaps.slice(0, 16).map((gap) => <div class="finding"><span class="seo-badge">{gap.kind}</span><h3>{gap.title}</h3><p>{gap.evidence}</p><p>{gap.recommendation}</p><div class="task-actions"><button type="button" class="button secondary" data-gap-prompt={gap.id} data-prompt-kind="chatgpt">ChatGPT-Prompt</button><button type="button" class="button secondary" data-gap-prompt={gap.id} data-prompt-kind="codex">Codex-Prompt</button></div></div>)}
+            {productIntelligence.coverageGaps.slice(0, 16).map((gap) => <div class="finding"><span class="seo-badge">{gap.kind}</span><h3>{gap.title}</h3><p>{gap.evidence}</p><p>{gap.recommendation}</p><div class="task-actions"><button type="button" class="pt-button-secondary pt-button button secondary" data-gap-prompt={gap.id} data-prompt-kind="chatgpt">ChatGPT-Prompt</button><button type="button" class="pt-button-secondary pt-button button secondary" data-gap-prompt={gap.id} data-prompt-kind="codex">Codex-Prompt</button></div></div>)}
             {!productIntelligence.coverageGaps.length && <div class="seo-empty">Keine strukturelle Produktlücke erkannt.</div>}
           </article>
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Strategische Nähe</span><h2>Nischenchancen</h2></div></div>
             <p class="disclaimer">Empfohlen werden nur Einträge über dem konfigurierten Mindestscore. Search-Potenzial und kommerzielles Potenzial sind Schätzungen, keine Umsatzprognosen.</p>
             {copilotWorkspace.nicheOpportunities.length ? copilotWorkspace.nicheOpportunities.map((niche) => <div class="finding"><span class="seo-badge">{niche.score}/100</span><h3>{niche.title}</h3><p>{niche.rationale}</p><p>{niche.sources.length} Quelle(n) · {niche.confidence} Confidence</p></div>) : <div class="seo-empty">Keine belegte Nischenchance gespeichert.</div>}
-            <div class="task-actions"><button type="button" class="button secondary" data-copy-static-prompt="niche-chatgpt">ChatGPT-Prompt kopieren</button><button type="button" class="button secondary" data-copy-static-prompt="niche-codex">Codex-Prompt kopieren</button></div>
+            <div class="task-actions"><button type="button" class="pt-button-secondary pt-button button secondary" data-copy-static-prompt="niche-chatgpt">ChatGPT-Prompt kopieren</button><button type="button" class="pt-button-secondary pt-button button secondary" data-copy-static-prompt="niche-codex">Codex-Prompt kopieren</button></div>
           </article>
         </div>
 
-        <article class="seo-card health-card">
+        <article class="pt-surface seo-card health-card">
           <div class="section-heading"><div><span class="seo-eyebrow">Grunddaten · Technik · Redaktion · SEO · Visuals</span><h2>Product Health</h2></div></div>
           <div class="health-list">
             {productIntelligence.health.map((product) => (
               <details class="health-product">
                 <summary><span><a href={`/produkt/${product.slug}/`}>{product.title}</a><small>{product.manufacturer} · {product.category}</small></span><span class="seo-badge" data-level={product.status === "kritisch" ? "high" : product.status === "wichtig" ? "medium" : "low"}>{product.score}/100 · {product.status}</span></summary>
-                <div class="task-actions"><button type="button" class="button secondary" data-health-prompt={product.slug} data-prompt-kind="chatgpt">Alle Probleme · ChatGPT</button><button type="button" class="button secondary" data-health-prompt={product.slug} data-prompt-kind="codex">Alle Probleme · Codex</button></div>
+                <div class="task-actions"><button type="button" class="pt-button-secondary pt-button button secondary" data-health-prompt={product.slug} data-prompt-kind="chatgpt">Alle Probleme · ChatGPT</button><button type="button" class="pt-button-secondary pt-button button secondary" data-health-prompt={product.slug} data-prompt-kind="codex">Alle Probleme · Codex</button></div>
                 <div class="health-checks">
-                  {product.checks.filter((check) => !check.ok).map((check) => <article class="health-check"><div><span class="seo-badge" data-level={check.severity === "kritisch" ? "high" : check.severity === "wichtig" ? "medium" : "low"}>{check.severity}</span><strong>{check.group} · {check.label}</strong></div><p>{check.evidence}</p><div class="task-actions"><button type="button" class="button secondary" data-health-check={check.id} data-product-slug={product.slug} data-prompt-kind="chatgpt">ChatGPT-Prompt</button><button type="button" class="button secondary" data-health-check={check.id} data-product-slug={product.slug} data-prompt-kind="codex">Codex-Prompt</button></div></article>)}
+                  {product.checks.filter((check) => !check.ok).map((check) => <article class="health-check"><div><span class="seo-badge" data-level={check.severity === "kritisch" ? "high" : check.severity === "wichtig" ? "medium" : "low"}>{check.severity}</span><strong>{check.group} · {check.label}</strong></div><p>{check.evidence}</p><div class="task-actions"><button type="button" class="pt-button-secondary pt-button button secondary" data-health-check={check.id} data-product-slug={product.slug} data-prompt-kind="chatgpt">ChatGPT-Prompt</button><button type="button" class="pt-button-secondary pt-button button secondary" data-health-check={check.id} data-product-slug={product.slug} data-prompt-kind="codex">Codex-Prompt</button></div></article>)}
                   {!product.gaps.length && <div class="seo-empty">Alle lokal prüfbaren Product-Health-Signale sind vollständig.</div>}
                 </div>
               </details>
@@ -241,11 +241,11 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         </article>
 
         <div class="product-grid workspace-row">
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Vorschau vor Schreiben</span><h2>Produktentwürfe</h2></div></div>
             {copilotWorkspace.productDrafts.length ? copilotWorkspace.productDrafts.map((draft) => <div class="finding"><span class="seo-badge" data-level={draft.status === "blocked" ? "high" : "medium"}>{draft.status}</span><h3>{draft.slug}</h3><p>{draft.missingData.length} fehlende Daten · {draft.warnings.length} Warnungen</p><p>Schema {draft.preflight.schemaVersion}</p></div>) : <div class="seo-empty">Keine Produktentwürfe. Entwürfe werden ausschließlich außerhalb von <code>src/content/products</code> gespeichert.</div>}
           </article>
-          <article class="seo-card analysis-card">
+          <article class="pt-surface seo-card analysis-card">
             <div class="section-heading"><div><span class="seo-eyebrow">Jobs und Audit</span><h2>Anlagewarteschlange</h2></div></div>
             {copilotWorkspace.jobs.length ? copilotWorkspace.jobs.slice().reverse().slice(0, 20).map((job) => <div class="finding"><span class="seo-badge" data-level={["failed", "blocked"].includes(job.status) ? "high" : job.status === "awaiting-review" ? "medium" : "low"}>{job.status}</span><h3>{job.action}</h3><p>{job.currentStep} · {job.progress}%</p><p>{job.createdAt}</p></div>) : <div class="seo-empty">Noch keine persistierten Copilot-Jobs.</div>}
           </article>
@@ -254,15 +254,15 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
 
       <section class="advisor-section learning-section" aria-labelledby="learning-title">
         <div class="section-heading"><div><span class="seo-eyebrow">Wirkungsmessung</span><h2 id="learning-title">Learning</h2></div></div>
-        <article class="seo-card analysis-card">
+        <article class="pt-surface seo-card analysis-card">
           <p>Abgeschlossene Aufgaben erhalten einen lokalen Baseline-Snapshot und werden frühestens nach 14 Tagen mit neuen Search-Daten verglichen. Veränderungen gelten nur als zeitliche Assoziation; der Co-Pilot behauptet keine Kausalität.</p>
           <div id="learning-list" class="intelligence-cards"><div class="seo-empty">Verbinde den lokalen Admin-Service, um Abschluss-Snapshots zu laden.</div></div>
         </article>
       </section>
 
-      <div class="action-message seo-card" id="copilot-action-message" aria-live="polite">One-Click-Aktionen benötigen den lokalen Admin-Service auf Port 4178.</div>
+      <div class="pt-surface action-message seo-card" id="copilot-action-message" aria-live="polite">One-Click-Aktionen benötigen den lokalen Admin-Service auf Port 4178.</div>
 
-      <details class="seo-card raw-details">
+      <details class="pt-surface seo-card raw-details">
         <summary>Rohdaten und Diagnose</summary>
         <div id="diagnostics"></div>
         <h3>Seiten</h3><div class="table-scroll"><table><thead><tr><th>URL</th><th>Klicks</th><th>Impr.</th><th>CTR</th><th>Position</th></tr></thead><tbody id="raw-pages"></tbody></table></div>
@@ -271,10 +271,10 @@ const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(va
         <h3>Vorhandene GSC-Empfehlungen</h3><div id="raw-recommendations"></div>
       </details>
 
-      <div class="export-bar seo-card"><div><strong>Aufgaben lokal verwalten</strong><p>Status und Notizen werden nur in diesem Browser gespeichert.</p></div><button type="button" class="button secondary" id="export-tasks">Aufgaben als JSON exportieren</button></div>
+      <div class="pt-surface export-bar seo-card"><div><strong>Aufgaben lokal verwalten</strong><p>Status und Notizen werden nur in diesem Browser gespeichert.</p></div><button type="button" class="pt-button-secondary pt-button button secondary" id="export-tasks">Aufgaben als JSON exportieren</button></div>
     </>
   ) : (
-    <section class="seo-card fatal-state"><h2>Keine nutzbaren SEO-Daten</h2><p>Prüfe die Diagnose in den GSC-Datendateien. Es werden keine Ersatzwerte angezeigt.</p></section>
+    <section class="pt-surface seo-card fatal-state"><h2>Keine nutzbaren SEO-Daten</h2><p>Prüfe die Diagnose in den GSC-Datendateien. Es werden keine Ersatzwerte angezeigt.</p></section>
   )}
 
   <script type="application/json" id="advisor-data" set:html={clientPayload}></script>

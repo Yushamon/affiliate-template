@@ -1,0 +1,62 @@
+---
+import {
+  getScoreLabel,
+  getWeightedProductScore,
+  productScores,
+  scoreCategories,
+  type ScoreCategoryKey
+} from "@app/data/productScoring";
+
+import { products, type ProductKey } from "@app/data/products";
+
+interface Props {
+  productKey: ProductKey;
+}
+
+const { productKey } = Astro.props;
+
+const product = products[productKey];
+const totalScore = getWeightedProductScore(productKey);
+const scoreLabel = getScoreLabel(totalScore);
+const scores = productScores[productKey];
+
+const categories = Object.entries(scoreCategories) as [
+  ScoreCategoryKey,
+  typeof scoreCategories[ScoreCategoryKey]
+][];
+---
+
+<section class="product-score-card">
+  <div class="product-score-header">
+    <span>{product.brand}</span>
+
+    <h2>
+      Unsere Bewertung: {product.name}
+    </h2>
+
+    <p>
+      Unsere Einschätzung basiert auf Alltagstauglichkeit, Erweiterbarkeit,
+      App, Installation, Preis-Leistung sowie Garantie und Support.
+    </p>
+  </div>
+
+  <div class="product-score-summary">
+    <strong>{totalScore}</strong>
+    <span>{scoreLabel}</span>
+  </div>
+
+  <div class="product-score-grid">
+    {
+      categories.map(([key, category]) => (
+        <div class="product-score-row">
+          <div>
+            <strong>{category.label}</strong>
+            <p>{category.description}</p>
+          </div>
+
+          <span>{scores[key]} / 100</span>
+        </div>
+      ))
+    }
+  </div>
+</section>

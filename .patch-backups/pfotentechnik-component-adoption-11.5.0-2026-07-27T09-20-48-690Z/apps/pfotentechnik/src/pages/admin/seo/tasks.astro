@@ -1,0 +1,31 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+---
+<SeoAdminLayout title="SEO-Aufgaben" description="Im Advisor gespeicherte Aufgaben bleiben lokal in diesem Browser. Export und Import machen die Liste portabel, ohne den statischen Astro-Build um Schreiblogik zu erweitern." active="tasks">
+  <section class="task-controls seo-card">
+    <label>Status <select id="task-filter"><option value="all">Alle</option><option value="offen">Offen</option><option value="geplant">Geplant</option><option value="in-arbeit">In Arbeit</option><option value="erledigt">Erledigt</option><option value="verworfen">Verworfen</option></select></label>
+    <button type="button" id="task-export">JSON exportieren</button>
+    <label class="import-button">JSON importieren<input id="task-import" type="file" accept="application/json,.json" /></label>
+  </section>
+  <p class="storage-note">Hinweis: LocalStorage ist browser- und gerätegebunden. Der Advisor verändert keine Content-Dateien.</p>
+  <section id="task-list" class="task-list" aria-live="polite"></section>
+</SeoAdminLayout>
+<style>
+  .task-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; padding: 18px; }.task-controls label { display: grid; gap: 5px; color: var(--seo-muted); font-size: .8rem; font-weight: 800; }.task-controls select,.task-controls button,.import-button { min-height: 42px; border: 1px solid var(--seo-border); border-radius: 11px; padding: 9px 13px; background: var(--seo-surface); color: var(--seo-text); cursor: pointer; }.import-button input { position: absolute; width: 1px; height: 1px; opacity: 0; }.storage-note { color: var(--seo-muted); }.task-list { display: grid; gap: 12px; }.task { padding: 19px; }.task h2 { margin: 7px 0; font-size: 1.15rem; }.task p { color: var(--seo-muted); overflow-wrap: anywhere; }.task-meta,.task-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }.task select,.task textarea,.task button { border: 1px solid var(--seo-border); border-radius: 10px; padding: 9px; background: var(--seo-surface); color: var(--seo-text); }.task textarea { width: 100%; min-height: 72px; margin-top: 10px; resize: vertical; }.task button { cursor: pointer; }.empty { padding: 20px; }
+</style>
+<script>
+  const key = "pfotentechnik-seo-advisor-tasks-v1";
+  const labels = { offen: "Offen", geplant: "Geplant", "in-arbeit": "In Arbeit", erledigt: "Erledigt", verworfen: "Verworfen" };
+  const getTasks = () => { try { return JSON.parse(localStorage.getItem(key) || "{}"); } catch { return {}; } };
+  const save = (tasks) => { localStorage.setItem(key, JSON.stringify(tasks)); render(); };
+  const node = (tag, text, cls) => { const item = document.createElement(tag); if (text !== undefined) item.textContent = text; if (cls) item.className = cls; return item; };
+  const render = () => {
+    const list = document.getElementById("task-list"); const filter = document.getElementById("task-filter").value; const tasks = Object.values(getTasks()).filter((task) => filter === "all" || task.status === filter).sort((a,b) => b.score-a.score); list.replaceChildren();
+    tasks.forEach((task) => { const card=node("article",undefined,"seo-card task"); const meta=node("div",undefined,"task-meta"); meta.append(node("span",task.type,"seo-badge"),node("span",`${task.score}/100`,"seo-badge"),node("span",labels[task.status]||task.status,"seo-badge")); card.append(meta,node("h2",task.title),node("p",task.url||task.query||"Keine eindeutige Zielroute")); const actions=node("div",undefined,"task-actions"); const select=node("select"); Object.entries(labels).forEach(([value,label])=>{const option=node("option",label);option.value=value;select.append(option)}); select.value=task.status; select.setAttribute("aria-label",`Status für ${task.title}`); select.addEventListener("change",()=>{const all=getTasks();const now=new Date().toISOString();const previous=all[task.id].status;all[task.id].status=select.value;all[task.id].updatedAt=now;all[task.id].history=Array.isArray(all[task.id].history)?all[task.id].history:[];if(previous!==select.value)all[task.id].history.push({at:now,from:previous,to:select.value});save(all)}); actions.append(select); const prompt=node("button","Prompt kopieren");prompt.type="button";prompt.addEventListener("click",()=>navigator.clipboard.writeText(task.prompt||""));actions.append(prompt); if(task.codexPrompt){const codex=node("button","Codex-Prompt kopieren");codex.type="button";codex.addEventListener("click",()=>navigator.clipboard.writeText(task.codexPrompt));actions.append(codex)} card.append(actions); const note=node("textarea");note.placeholder="Notiz zur Aufgabe";note.value=task.note||"";note.setAttribute("aria-label",`Notiz für ${task.title}`);note.addEventListener("change",()=>{const all=getTasks();all[task.id].note=note.value;all[task.id].updatedAt=new Date().toISOString();save(all)});card.append(note);list.append(card)});
+    if(!tasks.length) list.append(node("div","Noch keine Aufgaben mit diesem Status. Speichere Aufgaben im SEO Co-Piloten.","seo-card empty"));
+  };
+  document.getElementById("task-filter")?.addEventListener("change",render);
+  document.getElementById("task-export")?.addEventListener("click",()=>{const blob=new Blob([JSON.stringify(Object.values(getTasks()),null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=node("a");a.href=url;a.download=`pfotentechnik-seo-aufgaben-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url)});
+  document.getElementById("task-import")?.addEventListener("change",async(event)=>{const file=event.target.files?.[0];if(!file)return;try{const imported=JSON.parse(await file.text());if(!Array.isArray(imported))throw new Error("Die Datei muss eine Aufgabenliste enthalten.");const tasks=getTasks();imported.forEach((task)=>{if(task?.id&&task?.title)tasks[task.id]=task});save(tasks)}catch(error){alert(error instanceof Error?error.message:"Import fehlgeschlagen")}});
+  render();
+</script>

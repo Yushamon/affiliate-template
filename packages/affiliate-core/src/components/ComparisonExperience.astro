@@ -54,7 +54,7 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
         <p>{recommendationText}</p>
       </div>
 
-      <div class="comparison-decision-panel">
+      <div class="pt-surface comparison-decision-panel">
         {leadProduct && (
           <div class="comparison-decision-lead">
             <span>Unsere Empfehlung</span>
@@ -78,7 +78,7 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
 
         <div class="comparison-decision-options">
           {selectedProducts.map(({ product }) => (
-            <a class="comparison-decision-option-card" href={product.productUrl}>
+            <a class="pt-surface comparison-decision-option-card" href={product.productUrl}>
               <span>{product.badge}</span>
               <h3>{product.name}</h3>
               <p>{product.useCase}</p>

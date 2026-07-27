@@ -29,7 +29,7 @@ const remainingPages = knowledgePages.filter(
         </p>
       </div>
 
-      <div class="pt-knowledge-hero-card">
+      <div class="pt-surface pt-knowledge-hero-card">
         <span>{knowledgePages.length}</span>
         <strong>veröffentlichte Inhalte</strong>
         <p>Regelmäßig neue Information zum Thema unserer besten Freunde.</p>
@@ -46,7 +46,7 @@ const remainingPages = knowledgePages.filter(
 
           <div class="pt-knowledge-grid">
             {featuredPages.map((page) => (
-              <a class="pt-knowledge-card featured" href={page.href}>
+              <a class="pt-surface pt-knowledge-card featured" href={page.href}>
                 <span>{page.icon ?? "📖"}</span>
                 <h3>{page.hubTitle}</h3>
                 <p>{page.hubDescription}</p>
@@ -68,7 +68,7 @@ const remainingPages = knowledgePages.filter(
         {
           (featuredPages.length > 0 ? remainingPages : knowledgePages).map(
             (page) => (
-              <a class="pt-knowledge-card" href={page.href}>
+              <a class="pt-surface pt-knowledge-card" href={page.href}>
                 <span>{page.icon ?? "📖"}</span>
                 <h3>{page.hubTitle}</h3>
                 <p>{page.hubDescription}</p>

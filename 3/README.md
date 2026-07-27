@@ -1,15 +1,11 @@
-# PfotenTechnik Design Primitives 11.4.0
+# PfotenTechnik Component Adoption Recovery 11.5.1
 
-Diese Stufe vereinheitlicht Typografie, Layoutbreiten, Abstände, Buttons, Chips, Formfelder und Fokuszustände.
+Dieser Recovery-Patch behebt die verbliebenen statischen Komponenten aus dem fehlgeschlagenen 11.5.0-Audit.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-design-primitives-11.4.0.mjs
+node 3/pfotentechnik-component-adoption-recovery-11.5.1.mjs
 ```
 
-Dry-Run:
-
-```bash
-node 3/pfotentechnik-design-primitives-11.4.0.mjs --dry-run
-```
+Der bestehende uncommittete Stand von 11.5.0 soll vorher nicht zurückgesetzt werden.

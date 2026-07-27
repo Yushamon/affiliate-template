@@ -355,10 +355,10 @@ const relatedItems = relatedEntries.map((entry) => ({
             <h2>Direkt vergleichen oder erst Kriterien prüfen?</h2>
           </div>
           <div class="money-page-intent-actions">
-            <a class="money-page-intent-primary" href={journeyComparisonHref}>
+            <a class="pt-button pt-button-primary money-page-intent-primary" href={journeyComparisonHref}>
               Zum Vergleich
             </a>
-            <a class="money-page-intent-secondary" href="#kaufberatung">
+            <a class="pt-button pt-button-secondary money-page-intent-secondary" href="#kaufberatung">
               Kriterien prüfen
             </a>
           </div>
@@ -380,7 +380,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           </div>
 
           <a
-            class="decision-product-card"
+            class="pt-surface decision-product-card"
             href={`/produkt/${topDecisionProduct.data.slug}/`}
           >
             <OptimizedImage
@@ -442,7 +442,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           <div class="decision-template-grid">
             {comparisonProductEntries.map((product) => (
               <a
-                class="decision-template-card"
+                class="pt-surface decision-template-card"
                 href={`/produkt/${product.data.slug}/`}
               >
                 <h3>{product.data.title}</h3>
@@ -477,7 +477,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           <div class="decision-template-grid">
             {decisionRule.suitableFor &&
               decisionRule.suitableFor.length > 0 && (
-                <div class="decision-template-card decision-template-card-positive">
+                <div class="pt-surface decision-template-card decision-template-card-positive">
                   <h3>Geeignet für</h3>
                   <ul>
                     {decisionRule.suitableFor.map((item) => (
@@ -489,7 +489,7 @@ const relatedItems = relatedEntries.map((entry) => ({
 
             {decisionRule.notSuitableFor &&
               decisionRule.notSuitableFor.length > 0 && (
-                <div class="decision-template-card decision-template-card-negative">
+                <div class="pt-surface decision-template-card decision-template-card-negative">
                   <h3>Eher nicht geeignet für</h3>
                   <ul>
                     {decisionRule.notSuitableFor.map((item) => (
@@ -536,7 +536,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           <h2>Alternativen</h2>
           <div class="decision-template-grid">
             {decisionRule.alternatives.map((item) => (
-              <article class="decision-template-card">
+              <article class="pt-surface decision-template-card">
                 <h3>{item.label}</h3>
                 <p>{item.text}</p>
               </article>
@@ -608,7 +608,7 @@ const relatedItems = relatedEntries.map((entry) => ({
           <div class="pt-money-cta-actions">
             {closingProduct.data.affiliate && (
               <a
-                class="pt-money-cta-primary"
+                class="pt-button pt-button-primary pt-money-cta-primary"
                 href={addAmazonTrackingId(
                   closingProduct.data.affiliate.url,
                   projectConfig.affiliate.amazon.trackingId,
@@ -620,7 +620,7 @@ const relatedItems = relatedEntries.map((entry) => ({
               </a>
             )}
             <a
-              class="pt-money-cta-secondary"
+              class="pt-button pt-button-secondary pt-money-cta-secondary"
               href={assembledPage.closingCta.secondaryHref}
             >
               {assembledPage.closingCta.secondaryLabel}

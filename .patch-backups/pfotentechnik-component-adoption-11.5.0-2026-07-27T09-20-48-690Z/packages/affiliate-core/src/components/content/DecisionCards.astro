@@ -1,0 +1,31 @@
+---
+interface Card {
+  title:string;
+  value:string;
+  text:string;
+}
+
+interface Props{
+  cards:Card[];
+}
+
+const {cards}=Astro.props;
+---
+
+<div class="decision-grid">
+
+{
+cards.map(card=>(
+<div class="decision-card">
+
+<strong>{card.title}</strong>
+
+<h3>{card.value}</h3>
+
+<p>{card.text}</p>
+
+</div>
+))
+}
+
+</div>

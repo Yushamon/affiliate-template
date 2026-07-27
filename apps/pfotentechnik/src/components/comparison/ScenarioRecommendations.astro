@@ -20,8 +20,8 @@ const { scenarios } = Astro.props;
 
     <div class="scenario-grid">
       {scenarios.map((scenario) => (
-        <article class="scenario-card">
-          <div class="scenario-card__topline">
+        <article class="pt-surface scenario-card">
+          <div class="pt-surface scenario-card__topline">
             <p class="scenario-label">{scenario.label}</p>
             <span class="scenario-match">{Math.round(scenario.score)}/100 Fit</span>
           </div>

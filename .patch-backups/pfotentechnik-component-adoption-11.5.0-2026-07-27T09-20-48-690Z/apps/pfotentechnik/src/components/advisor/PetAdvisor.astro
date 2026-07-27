@@ -1,0 +1,1508 @@
+---
+import type { AdvisorProduct } from "../../domain/advisor";
+import { advisorGuides } from "../../domain/advisor";
+
+const { products } = Astro.props as {
+  products: AdvisorProduct[];
+};
+
+const guideData = advisorGuides.map(
+  ({ title, href, description }) => ({
+    title,
+    href,
+    description
+  })
+);
+---
+
+<section
+  class="advisor"
+  data-advisor
+  data-products={JSON.stringify(products)}
+  data-guides={JSON.stringify(guideData)}
+>
+  <header class="advisor-hero">
+    <p class="eyebrow">PfotenTechnik Advisor 2.0</p>
+    <h1>Welcher Futterautomat passt wirklich zu deinem Alltag?</h1>
+    <p class="lead">
+      Sechs kurze Fragen führen zu einer nachvollziehbaren
+      Auswahl. Du siehst nicht nur Empfehlungen, sondern auch
+      Einschränkungen und echte Unterschiede.
+    </p>
+
+    <div class="trust-row" aria-label="Hinweise zum Advisor">
+      <span>Keine E-Mail nötig</span>
+      <span>Keine Preisversprechen</span>
+      <span>Keine versteckte Vorauswahl</span>
+    </div>
+  </header>
+
+  <div class="advisor-panel">
+    <div class="advisor-status" data-status>
+      <div class="status-copy">
+        <span data-progress-label>Frage 1 von 6</span>
+        <strong data-progress-title>Tierart</strong>
+      </div>
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-valuemin="1"
+        aria-valuemax="6"
+        aria-valuenow="1"
+        data-progress
+      >
+        <span data-progress-bar></span>
+      </div>
+      <p class="live-note" data-live-note aria-live="polite">
+        Wir starten mit den grundlegenden Anforderungen.
+      </p>
+    </div>
+
+    <form data-form novalidate>
+      <fieldset data-step="0">
+        <legend>Für welches Tier suchst du?</legend>
+        <p class="step-help">
+          Tierart und Körpergröße beeinflussen Bauform,
+          Napfhöhe und Portionsbedarf.
+        </p>
+
+        <div class="choice-grid choice-grid--two">
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="pet"
+              value="cat"
+              required
+            />
+            <span>
+              <strong>Katze</strong>
+              <small>Eine oder mehrere Katzen</small>
+              <em>
+                Kleine Portionen und Zugang besonders beachten
+              </em>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="pet"
+              value="dog"
+              required
+            />
+            <span>
+              <strong>Hund</strong>
+              <small>Kleine bis große Hunde</small>
+              <em>
+                Kapazität und Napfhöhe stärker gewichten
+              </em>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset data-step="1" hidden>
+        <legend>Wie viele Tiere sollen versorgt werden?</legend>
+        <p class="step-help">
+          Bei mehreren Tieren können Zugangskontrolle und
+          Futterneid entscheidend sein.
+        </p>
+
+        <div class="choice-grid choice-grid--two">
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="petCount"
+              value="one"
+              required
+            />
+            <span>
+              <strong>Ein Tier</strong>
+              <small>Kein getrennter Zugang nötig</small>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="petCount"
+              value="multiple"
+              required
+            />
+            <span>
+              <strong>Mehrere Tiere</strong>
+              <small>
+                Mikrochip oder getrennte Fütterung prüfen
+              </small>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset data-step="2" hidden>
+        <legend>Welches Futter soll ausgegeben werden?</legend>
+        <p class="step-help">
+          Die Futterart ist ein hartes Auswahlkriterium.
+        </p>
+
+        <div class="choice-grid choice-grid--three">
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="food"
+              value="dry"
+              required
+            />
+            <span>
+              <strong>Trockenfutter</strong>
+              <small>Vorrats- und Dosierautomaten</small>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="food"
+              value="wet"
+              required
+            />
+            <span>
+              <strong>Nassfutter</strong>
+              <small>Fächer, Kühlung oder Zeitdeckel</small>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="food"
+              value="mixed"
+              required
+            />
+            <span>
+              <strong>Beides</strong>
+              <small>Flexible Lösung gesucht</small>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset data-step="3" hidden>
+        <legend>Welche Funktionen sind dir wichtig?</legend>
+        <p class="step-help">
+          Mehrfachauswahl möglich. Wähle nur, was deinen
+          Alltag wirklich verbessert.
+        </p>
+
+        <div class="choice-grid choice-grid--three">
+          {
+            [
+              ["camera", "Kamera", "Tier und Ausgabe sehen"],
+              ["app", "App", "Zeiten mobil verwalten"],
+              ["offline", "Offline", "Plan läuft ohne Internet"],
+              ["backup", "Notstrom", "Bei Stromausfall abgesichert"],
+              ["microchip", "Mikrochip", "Zugang pro Tier steuern"],
+              ["simple", "Einfach", "Möglichst wenig Technik"]
+            ].map(([value, title, text]) => (
+              <label class="choice-card">
+                <input
+                  type="checkbox"
+                  name="priorities"
+                  value={value}
+                />
+                <span>
+                  <strong>{title}</strong>
+                  <small>{text}</small>
+                </span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset data-step="4" hidden>
+        <legend>Welche Preisklasse passt?</legend>
+        <p class="step-help">
+          Wir verwenden grobe Klassen statt statischer
+          Preisversprechen.
+        </p>
+
+        <div class="choice-grid choice-grid--two">
+          {
+            [
+              ["budget", "Preisbewusst", "Grundfunktionen zuerst"],
+              ["midrange", "Mittelklasse", "Gute Balance"],
+              ["premium", "Premium", "Mehr Komfort"],
+              ["open", "Offen", "Eignung vor Preis"]
+            ].map(([value, title, text]) => (
+              <label class="choice-card">
+                <input
+                  type="radio"
+                  name="budget"
+                  value={value}
+                  required
+                />
+                <span>
+                  <strong>{title}</strong>
+                  <small>{text}</small>
+                </span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset data-step="5" hidden>
+        <legend>Wie soll der Advisor entscheiden?</legend>
+        <p class="step-help">
+          Du kannst entweder die höchste Gesamtpassung oder
+          möglichst wenige Kompromisse priorisieren.
+        </p>
+
+        <div class="choice-grid choice-grid--two">
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="decisionStyle"
+              value="best-match"
+              required
+            />
+            <span>
+              <strong>Beste Gesamtpassung</strong>
+              <small>
+                Alle Antworten ausgewogen gewichten
+              </small>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input
+              type="radio"
+              name="decisionStyle"
+              value="safe-choice"
+              required
+            />
+            <span>
+              <strong>Möglichst sichere Wahl</strong>
+              <small>
+                Weniger Einschränkungen priorisieren
+              </small>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <p
+        class="form-error"
+        data-error
+        hidden
+        role="alert"
+      >
+        Bitte wähle eine Antwort aus.
+      </p>
+
+      <div class="advisor-actions">
+        <button
+          type="button"
+          class="button-secondary"
+          data-back
+          hidden
+        >
+          Zurück
+        </button>
+
+        <button
+          type="button"
+          class="button-primary"
+          data-next
+        >
+          Weiter
+        </button>
+      </div>
+    </form>
+
+    <section
+      class="advisor-results"
+      data-results
+      hidden
+      aria-live="polite"
+    >
+      <div class="results-heading">
+        <p class="eyebrow">Deine Auswahl</p>
+        <h2>Diese Modelle passen am besten</h2>
+        <p data-result-summary></p>
+      </div>
+
+      <p class="advisor-disclosure">
+        Die Auswahl basiert auf dokumentierten
+        Produktmerkmalen und redaktioneller Einordnung.
+        Preise und Verfügbarkeit können sich ändern.
+      </p>
+
+      <div class="result-grid" data-result-list></div>
+
+      <section
+        class="compare-section"
+        data-compare
+        hidden
+        aria-labelledby="compare-heading"
+      >
+        <div class="section-heading">
+          <p>Direktvergleich</p>
+          <h2 id="compare-heading">
+            Nur die Unterschiede
+          </h2>
+        </div>
+
+        <div
+          class="compare-scroll"
+          data-compare-table
+        ></div>
+      </section>
+
+      <section
+        class="guide-section"
+        aria-labelledby="guide-heading"
+      >
+        <div class="section-heading">
+          <p>Passendes Wissen</p>
+          <h2 id="guide-heading">
+            Diese Ratgeber helfen bei der Entscheidung
+          </h2>
+        </div>
+        <div class="guide-grid" data-guide-list></div>
+      </section>
+
+      <div class="result-actions">
+        <button
+          type="button"
+          class="button-secondary"
+          data-restart
+        >
+          Antworten ändern
+        </button>
+
+        <button
+          type="button"
+          class="button-secondary"
+          data-share
+        >
+          Ergebnislink kopieren
+        </button>
+      </div>
+
+      <p class="share-status" data-share-status aria-live="polite"></p>
+    </section>
+  </div>
+</section>
+
+<script>
+  import {
+    parseAdvisorAnswers,
+    recommendAdvisorProducts,
+    serializeAdvisorAnswers
+  } from "../../domain/advisor";
+
+  const fitLabels = {
+    excellent: "Sehr gute Passung",
+    good: "Gute Passung",
+    limited: "Mit Einschränkungen"
+  };
+
+  const priorityLabels = {
+    camera: "Kamera",
+    app: "App",
+    offline: "Offline",
+    backup: "Notstrom",
+    microchip: "Mikrochip",
+    simple: "Einfache Bedienung"
+  };
+
+  const root = document.querySelector("[data-advisor]");
+
+  if (root instanceof HTMLElement) {
+    const products = JSON.parse(
+      root.dataset.products ?? "[]"
+    );
+    const guides = JSON.parse(
+      root.dataset.guides ?? "[]"
+    );
+
+    const form = root.querySelector("[data-form]");
+    const steps = [
+      ...root.querySelectorAll("[data-step]")
+    ];
+    const next = root.querySelector("[data-next]");
+    const back = root.querySelector("[data-back]");
+    const restart = root.querySelector("[data-restart]");
+    const share = root.querySelector("[data-share]");
+    const error = root.querySelector("[data-error]");
+    const status = root.querySelector("[data-status]");
+    const results = root.querySelector("[data-results]");
+    const list = root.querySelector("[data-result-list]");
+    const summary = root.querySelector(
+      "[data-result-summary]"
+    );
+    const progress = root.querySelector("[data-progress]");
+    const progressBar = root.querySelector(
+      "[data-progress-bar]"
+    );
+    const progressLabel = root.querySelector(
+      "[data-progress-label]"
+    );
+    const progressTitle = root.querySelector(
+      "[data-progress-title]"
+    );
+    const liveNote = root.querySelector("[data-live-note]");
+    const compare = root.querySelector("[data-compare]");
+    const compareTable = root.querySelector(
+      "[data-compare-table]"
+    );
+    const guideList = root.querySelector("[data-guide-list]");
+    const shareStatus = root.querySelector(
+      "[data-share-status]"
+    );
+
+    const titles = [
+      "Tierart",
+      "Anzahl",
+      "Futterart",
+      "Funktionen",
+      "Preisklasse",
+      "Entscheidungsstil"
+    ];
+
+    let current = 0;
+    let latestAnswers = null;
+
+    const formAnswers = () => {
+      if (!(form instanceof HTMLFormElement)) {
+        return null;
+      }
+
+      const data = new FormData(form);
+      const pet = data.get("pet");
+      const petCount = data.get("petCount");
+      const food = data.get("food");
+      const budget = data.get("budget");
+      const decisionStyle = data.get("decisionStyle");
+
+      if (
+        !pet ||
+        !petCount ||
+        !food ||
+        !budget ||
+        !decisionStyle
+      ) {
+        return null;
+      }
+
+      return {
+        pet,
+        petCount,
+        food,
+        budget,
+        decisionStyle,
+        priorities: data.getAll("priorities")
+      };
+    };
+
+    const partialCount = () => {
+      if (!(form instanceof HTMLFormElement)) {
+        return products.length;
+      }
+
+      const data = new FormData(form);
+      const selectedFood = data.get("food");
+      const selectedPriorities = data.getAll("priorities");
+
+      return products.filter((product) => {
+        if (
+          selectedFood === "dry" &&
+          !product.foodType.includes("dry")
+        ) {
+          return false;
+        }
+
+        if (
+          selectedFood === "wet" &&
+          !product.foodType.includes("wet")
+        ) {
+          return false;
+        }
+
+        if (
+          selectedPriorities.includes("microchip") &&
+          product.access !== "microchip"
+        ) {
+          return false;
+        }
+
+        return true;
+      }).length;
+    };
+
+    const update = () => {
+      steps.forEach((step, index) => {
+        if (step instanceof HTMLElement) {
+          step.hidden = index !== current;
+        }
+      });
+
+      if (back instanceof HTMLButtonElement) {
+        back.hidden = current === 0;
+      }
+
+      if (next instanceof HTMLButtonElement) {
+        next.textContent =
+          current === steps.length - 1
+            ? "Empfehlung anzeigen"
+            : "Weiter";
+      }
+
+      const stepNumber = current + 1;
+
+      if (progressLabel) {
+        progressLabel.textContent =
+          `Frage ${stepNumber} von ${steps.length}`;
+      }
+
+      if (progressTitle) {
+        progressTitle.textContent = titles[current];
+      }
+
+      if (progress instanceof HTMLElement) {
+        progress.setAttribute(
+          "aria-valuenow",
+          String(stepNumber)
+        );
+      }
+
+      if (progressBar instanceof HTMLElement) {
+        progressBar.style.width =
+          `${(stepNumber / steps.length) * 100}%`;
+      }
+
+      if (liveNote) {
+        const remaining = partialCount();
+        liveNote.textContent =
+          current === 0
+            ? "Wir starten mit den grundlegenden Anforderungen."
+            : `${remaining} von ${products.length} Modellen bleiben nach den bisherigen Angaben grundsätzlich relevant.`;
+      }
+
+      if (error instanceof HTMLElement) {
+        error.hidden = true;
+      }
+    };
+
+    const stepIsValid = () => {
+      const step = steps[current];
+      const required = [
+        ...step.querySelectorAll("[required]")
+      ];
+
+      if (required.length === 0) {
+        return true;
+      }
+
+      const names = [
+        ...new Set(
+          required.map((input) =>
+            input instanceof HTMLInputElement
+              ? input.name
+              : ""
+          )
+        )
+      ];
+
+      return names.every((name) =>
+        step.querySelector(
+          `input[name="${name}"]:checked`
+        )
+      );
+    };
+
+    const restoreAnswers = (answers) => {
+      if (!(form instanceof HTMLFormElement)) {
+        return;
+      }
+
+      Object.entries(answers).forEach(([key, value]) => {
+        if (key === "priorities" && Array.isArray(value)) {
+          value.forEach((priority) => {
+            const input = form.querySelector(
+              `input[name="priorities"][value="${priority}"]`
+            );
+            if (input instanceof HTMLInputElement) {
+              input.checked = true;
+            }
+          });
+          return;
+        }
+
+        const input = form.querySelector(
+          `input[name="${key}"][value="${value}"]`
+        );
+
+        if (input instanceof HTMLInputElement) {
+          input.checked = true;
+        }
+      });
+    };
+
+    const compareRows = (matches) => {
+      const rows = [
+        [
+          "Futterart",
+          (match) =>
+            match.product.foodType
+              .map((type) =>
+                type === "dry"
+                  ? "Trockenfutter"
+                  : "Nassfutter"
+              )
+              .join(" & ") || "Nicht dokumentiert"
+        ],
+        [
+          "App",
+          (match) =>
+            match.product.app === true
+              ? "Ja"
+              : "Nicht ausgewiesen"
+        ],
+        [
+          "Kamera",
+          (match) =>
+            match.product.camera === true ? "Ja" : "Nein"
+        ],
+        [
+          "Zugang",
+          (match) =>
+            match.product.access === "microchip"
+              ? "Mikrochip"
+              : "Offen"
+        ],
+        [
+          "Notstrom",
+          (match) =>
+            match.product.backupPower === true
+              ? "Ja"
+              : "Nicht ausgewiesen"
+        ],
+        [
+          "Preisklasse",
+          (match) =>
+            ({
+              budget: "Preisbewusst",
+              midrange: "Mittelklasse",
+              premium: "Premium"
+            })[match.product.priceCategory] ??
+            "Nicht eingeordnet"
+        ]
+      ];
+
+      return rows.filter(([, value]) => {
+        const values = matches.map(value);
+        return new Set(values).size > 1;
+      });
+    };
+
+    const renderCompare = (matches) => {
+      if (
+        !(compare instanceof HTMLElement) ||
+        !(compareTable instanceof HTMLElement) ||
+        matches.length < 2
+      ) {
+        return;
+      }
+
+      const rows = compareRows(matches);
+
+      if (rows.length === 0) {
+        compare.hidden = true;
+        return;
+      }
+
+      compareTable.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Kriterium</th>
+              ${matches
+                .map(
+                  (match) =>
+                    `<th scope="col">${match.product.title}</th>`
+                )
+                .join("")}
+            </tr>
+          </thead>
+          <tbody>
+            ${rows
+              .map(
+                ([label, value]) => `
+                  <tr>
+                    <th scope="row">${label}</th>
+                    ${matches
+                      .map(
+                        (match) =>
+                          `<td>${value(match)}</td>`
+                      )
+                      .join("")}
+                  </tr>
+                `
+              )
+              .join("")}
+          </tbody>
+        </table>
+      `;
+
+      compare.hidden = false;
+    };
+
+    const renderGuides = (answers) => {
+      if (!(guideList instanceof HTMLElement)) {
+        return;
+      }
+
+      const selected = guides
+        .filter((guide) => {
+          if (guide.href.includes("zwei-katzen")) {
+            return answers.petCount === "multiple";
+          }
+
+          if (guide.href.includes("nassfutter")) {
+            return (
+              answers.food === "wet" ||
+              answers.food === "mixed"
+            );
+          }
+
+          if (guide.href.includes("ohne-wlan")) {
+            return answers.priorities.includes("offline");
+          }
+
+          if (guide.href.includes("mit-kamera")) {
+            return answers.priorities.includes("camera");
+          }
+
+          return true;
+        })
+        .slice(0, 4);
+
+      guideList.innerHTML = selected
+        .map(
+          (guide) => `
+            <a class="guide-card" href="${guide.href}">
+              <strong>${guide.title}</strong>
+              <span>${guide.description}</span>
+            </a>
+          `
+        )
+        .join("");
+    };
+
+    const renderResults = () => {
+      if (
+        !(form instanceof HTMLFormElement) ||
+        !(results instanceof HTMLElement) ||
+        !(list instanceof HTMLElement)
+      ) {
+        return;
+      }
+
+      const answers = formAnswers();
+      if (!answers) {
+        return;
+      }
+
+      latestAnswers = answers;
+
+      const params = serializeAdvisorAnswers(answers);
+      history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}?${params.toString()}`
+      );
+
+      localStorage.setItem(
+        "pfotentechnik-advisor",
+        JSON.stringify(answers)
+      );
+
+      const matches = recommendAdvisorProducts(
+        products,
+        answers
+      )
+        .filter((match) => match.fit !== "none")
+        .slice(0, 3);
+
+      list.innerHTML = "";
+
+      if (summary) {
+        summary.textContent =
+          matches.length > 0
+            ? `${matches.length} Modelle erfüllen deine wichtigsten Anforderungen am besten.`
+            : "Aktuell erfüllt kein Modell alle entscheidenden Anforderungen ohne deutliche Einschränkung.";
+      }
+
+      matches.forEach((match, index) => {
+        const card = document.createElement("article");
+        card.className = "result-card";
+        card.innerHTML = `
+          <div class="result-meta">
+            <span>
+              ${
+                index === 0
+                  ? "Beste Gesamtpassung"
+                  : `Alternative ${index}`
+              }
+            </span>
+            <strong>${fitLabels[match.fit]}</strong>
+          </div>
+
+          <h3>${match.product.title}</h3>
+          <p>
+            ${
+              match.product.recommendation ||
+              match.product.description
+            }
+          </p>
+
+          <div class="fit-badge fit-badge--${match.fit}">
+            ${fitLabels[match.fit]}
+          </div>
+
+          <h4>Warum es passt</h4>
+          <ul class="reason-list">
+            ${match.reasons
+              .map((reason) => `<li>${reason}</li>`)
+              .join("")}
+          </ul>
+
+          ${
+            match.cautions.length > 0
+              ? `
+                <details>
+                  <summary>
+                    Einschränkungen ansehen
+                  </summary>
+                  <ul>
+                    ${match.cautions
+                      .map(
+                        (caution) =>
+                          `<li>${caution}</li>`
+                      )
+                      .join("")}
+                  </ul>
+                </details>
+              `
+              : ""
+          }
+
+          <a
+            class="button-primary result-link"
+            href="${match.product.route}"
+          >
+            Testbericht ansehen
+          </a>
+        `;
+
+        list.appendChild(card);
+      });
+
+      renderCompare(matches);
+      renderGuides(answers);
+
+      form.hidden = true;
+      if (status instanceof HTMLElement) {
+        status.hidden = true;
+      }
+      results.hidden = false;
+      results.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    };
+
+    next?.addEventListener("click", () => {
+      if (!stepIsValid()) {
+        if (error instanceof HTMLElement) {
+          error.hidden = false;
+        }
+
+        const firstInput =
+          steps[current].querySelector("input");
+
+        if (firstInput instanceof HTMLInputElement) {
+          firstInput.focus();
+        }
+
+        return;
+      }
+
+      if (current === steps.length - 1) {
+        renderResults();
+        return;
+      }
+
+      current += 1;
+      update();
+    });
+
+    back?.addEventListener("click", () => {
+      current = Math.max(0, current - 1);
+      update();
+    });
+
+    restart?.addEventListener("click", () => {
+      if (results instanceof HTMLElement) {
+        results.hidden = true;
+      }
+
+      if (form instanceof HTMLFormElement) {
+        form.hidden = false;
+      }
+
+      if (status instanceof HTMLElement) {
+        status.hidden = false;
+      }
+
+      current = 0;
+      update();
+
+      form?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+
+    share?.addEventListener("click", async () => {
+      if (!latestAnswers) {
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(
+          window.location.href
+        );
+        if (shareStatus) {
+          shareStatus.textContent =
+            "Der Ergebnislink wurde kopiert.";
+        }
+      } catch {
+        if (shareStatus) {
+          shareStatus.textContent =
+            "Der Link konnte nicht automatisch kopiert werden.";
+        }
+      }
+    });
+
+    const fromUrl = parseAdvisorAnswers(
+      new URLSearchParams(window.location.search)
+    );
+
+    if (fromUrl) {
+      restoreAnswers(fromUrl);
+      renderResults();
+    } else {
+      const saved = localStorage.getItem(
+        "pfotentechnik-advisor"
+      );
+
+      if (saved) {
+        try {
+          restoreAnswers(JSON.parse(saved));
+        } catch {
+          localStorage.removeItem(
+            "pfotentechnik-advisor"
+          );
+        }
+      }
+
+      update();
+    }
+  }
+</script>
+
+<style>
+  .advisor {
+    width: min(1160px, calc(100% - 32px));
+    margin: 48px auto 96px;
+  }
+
+  .advisor-hero {
+    max-width: 860px;
+    margin-bottom: 34px;
+  }
+
+  .eyebrow,
+  .section-heading p {
+    margin: 0 0 8px;
+    color: #2e7d32;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .advisor-hero h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(2.35rem, 6vw, 4.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+  }
+
+  .lead {
+    max-width: 760px;
+    color: #475569;
+    font-size: 1.12rem;
+    line-height: 1.72;
+  }
+
+  .trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .trust-row span {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 0.82rem;
+    font-weight: 750;
+  }
+
+  .advisor-panel {
+    padding: clamp(20px, 4vw, 50px);
+    border: 1px solid #e2e8f0;
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow:
+      0 30px 90px rgba(15, 23, 42, 0.09);
+  }
+
+  .advisor-status {
+    margin-bottom: 38px;
+  }
+
+  .status-copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #64748b;
+  }
+
+  .status-copy strong {
+    color: #0f172a;
+  }
+
+  .progress-track {
+    overflow: hidden;
+    height: 8px;
+    margin-top: 12px;
+    border-radius: 999px;
+    background: #e2e8f0;
+  }
+
+  .progress-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: #2e7d32;
+    transition: width 180ms ease;
+  }
+
+  .live-note {
+    margin: 12px 0 0;
+    color: #64748b;
+    font-size: 0.88rem;
+  }
+
+  fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    max-width: 780px;
+    color: #0f172a;
+    font-size: clamp(1.65rem, 4vw, 2.65rem);
+    font-weight: 850;
+    line-height: 1.14;
+    letter-spacing: -0.025em;
+  }
+
+  .step-help {
+    max-width: 680px;
+    margin: 10px 0 0;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .choice-grid {
+    display: grid;
+    gap: 14px;
+    margin-top: 26px;
+  }
+
+  .choice-grid--two {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .choice-grid--three {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .choice-card {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .choice-card input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .choice-card > span {
+    display: flex;
+    min-height: 124px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px;
+    border: 2px solid #e2e8f0;
+    border-radius: 21px;
+    background: #ffffff;
+    transition:
+      border-color 150ms ease,
+      background 150ms ease,
+      transform 150ms ease,
+      box-shadow 150ms ease;
+  }
+
+  .choice-card strong {
+    color: #0f172a;
+    font-size: 1.04rem;
+  }
+
+  .choice-card small,
+  .choice-card em {
+    margin-top: 6px;
+    color: #64748b;
+    font-style: normal;
+    line-height: 1.45;
+  }
+
+  .choice-card input:checked + span {
+    border-color: #2e7d32;
+    background: #f0fdf4;
+    box-shadow:
+      0 10px 28px rgba(46, 125, 50, 0.1);
+  }
+
+  .choice-card input:focus-visible + span {
+    outline: 3px solid rgba(79, 70, 229, 0.32);
+    outline-offset: 4px;
+  }
+
+  .choice-card:hover > span {
+    transform: translateY(-1px);
+  }
+
+  .advisor-actions,
+  .result-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 34px;
+  }
+
+  .button-primary,
+  .button-secondary {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 13px;
+    font: inherit;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button-primary {
+    border: 1px solid #2e7d32;
+    background: #2e7d32;
+    color: #ffffff;
+  }
+
+  .button-primary:hover {
+    background: #256b2a;
+  }
+
+  .button-secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+  }
+
+  .form-error {
+    margin-top: 20px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: #fef2f2;
+    color: #991b1b;
+  }
+
+  .results-heading {
+    max-width: 760px;
+  }
+
+  .results-heading h2,
+  .section-heading h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    line-height: 1.12;
+  }
+
+  .advisor-disclosure {
+    margin: 22px 0 0;
+    padding: 15px 16px;
+    border-radius: 14px;
+    background: #f8fafc;
+    color: #475569;
+    line-height: 1.55;
+  }
+
+  .result-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .result-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    padding: 23px;
+    border: 1px solid #e2e8f0;
+    border-radius: 21px;
+    background: #ffffff;
+  }
+
+  .result-card:first-child {
+    border-color: #86efac;
+    box-shadow:
+      0 18px 44px rgba(46, 125, 50, 0.11);
+  }
+
+  .result-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #166534;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .result-card h3 {
+    margin: 16px 0 8px;
+    color: #0f172a;
+    font-size: 1.3rem;
+  }
+
+  .result-card > p {
+    color: #475569;
+    line-height: 1.58;
+  }
+
+  .fit-badge {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .fit-badge--excellent,
+  .fit-badge--good {
+    background: #f0fdf4;
+    color: #166534;
+  }
+
+  .fit-badge--limited {
+    background: #fffbeb;
+    color: #92400e;
+  }
+
+  .result-card h4 {
+    margin: 22px 0 8px;
+    color: #0f172a;
+    font-size: 0.92rem;
+  }
+
+  .reason-list,
+  .result-card details ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #334155;
+    line-height: 1.58;
+  }
+
+  .result-card details {
+    margin: 16px 0;
+    color: #92400e;
+  }
+
+  .result-link {
+    margin-top: auto;
+  }
+
+  .compare-section,
+  .guide-section {
+    margin-top: 48px;
+    padding-top: 38px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .compare-scroll {
+    overflow-x: auto;
+    margin-top: 22px;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+  }
+
+  .compare-scroll table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+  }
+
+  .compare-scroll th,
+  .compare-scroll td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .compare-scroll thead th {
+    background: #f8fafc;
+  }
+
+  .guide-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .guide-card {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 19px;
+    border: 1px solid #e2e8f0;
+    border-radius: 17px;
+    color: #0f172a;
+    text-decoration: none;
+  }
+
+  .guide-card span {
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  .guide-card:hover {
+    border-color: #86efac;
+    background: #f0fdf4;
+  }
+
+  .share-status {
+    min-height: 1.5em;
+    color: #166534;
+  }
+
+  @media (max-width: 840px) {
+    .choice-grid--three,
+    .result-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .advisor {
+      width: min(100% - 20px, 1160px);
+      margin-top: 22px;
+    }
+
+    .advisor-panel {
+      padding: 18px;
+      border-radius: 21px;
+    }
+
+    .choice-grid--two,
+    .guide-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .choice-card > span {
+      min-height: 94px;
+    }
+
+    .advisor-actions {
+      position: sticky;
+      z-index: 3;
+      bottom: 0;
+      padding-top: 22px;
+      background:
+        linear-gradient(
+          to bottom,
+          transparent,
+          #ffffff 28%
+        );
+    }
+
+    .advisor-actions,
+    .result-actions {
+      align-items: stretch;
+      flex-direction: column-reverse;
+    }
+
+    .advisor-actions > *,
+    .result-actions > * {
+      width: 100%;
+    }
+
+    .result-meta {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      transition: none !important;
+    }
+  }
+</style>

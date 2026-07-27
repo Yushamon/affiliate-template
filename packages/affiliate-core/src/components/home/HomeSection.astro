@@ -46,9 +46,9 @@ const {
     {kind === "categories" && (
       <div class="home3-category-grid">
         {(items as HomeCategoryCard[]).map((item) => (
-          <a class="home3-category-card" href={item.href}>
+          <a class="pt-surface home3-category-card" href={item.href}>
             {item.image && (
-              <div class="home3-category-card__media">
+              <div class="pt-surface home3-category-card__media">
                 <OptimizedImage
                   src={item.image.src}
                   alt={item.image.alt ?? ""}
@@ -58,7 +58,7 @@ const {
                 />
               </div>
             )}
-            <div class="home3-category-card__content">
+            <div class="pt-surface home3-category-card__content">
               <span>{item.code}</span>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
@@ -81,7 +81,7 @@ const {
             ]}
             href={item.href}
           >
-            <div class="home3-editorial-card__media">
+            <div class="pt-surface home3-editorial-card__media">
               {item.image && (
                 <OptimizedImage
                   src={item.image.src}
@@ -92,7 +92,7 @@ const {
                 />
               )}
             </div>
-            <div class="home3-card-content">
+            <div class="pt-surface home3-card-content">
               <span>{item.label}</span>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
@@ -107,8 +107,8 @@ const {
     {kind === "products" && (
       <div class="home3-product-grid">
         {(items as HomeProductCard[]).map((item) => (
-          <a class="home3-product-card" href={item.href}>
-            <div class="home3-product-card__media">
+          <a class="pt-surface home3-product-card" href={item.href}>
+            <div class="pt-surface home3-product-card__media">
               <OptimizedImage
                 src={item.image.src}
                 alt={item.image.alt ?? item.title}
@@ -117,7 +117,7 @@ const {
                 layout="constrained"
               />
             </div>
-            <div class="home3-card-content">
+            <div class="pt-surface home3-card-content">
               {item.badge && (
                 <em class="home4-product-badge">
                   {item.badge}

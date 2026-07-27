@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  rating?: string;
+  items?: string[];
+  href?: string;
+  cta?: string;
+}
+
+const {
+  title,
+  subtitle,
+  rating,
+  items = [],
+  href,
+  cta = "Mehr erfahren"
+} = Astro.props;
+---
+
+<article class="ui-comparison-card">
+  {subtitle && <span>{subtitle}</span>}
+
+  <h3>{title}</h3>
+
+  {rating && <strong>{rating}</strong>}
+
+  {items.length > 0 && (
+    <ul>
+      {items.map((item) => (
+        <li>✓ {item}</li>
+      ))}
+    </ul>
+  )}
+
+  {href && <a href={href}>{cta}</a>}
+</article>

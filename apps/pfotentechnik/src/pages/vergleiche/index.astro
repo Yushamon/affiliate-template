@@ -37,7 +37,7 @@ const comparisons = await getContentByHub("vergleiche");
       comparisons.length > 0 ? (
         <div class="comparison-grid">
           {comparisons.map((comparison) => (
-            <a class="comparison-card" href={comparison.href}>
+            <a class="pt-surface comparison-card" href={comparison.href}>
               <span class="comparison-icon" aria-hidden="true">
                 {comparison.icon ?? "↔"}
               </span>

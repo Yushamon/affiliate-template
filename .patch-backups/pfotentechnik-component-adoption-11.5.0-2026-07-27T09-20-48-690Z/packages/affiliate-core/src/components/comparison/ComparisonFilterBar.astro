@@ -1,0 +1,82 @@
+---
+import type {
+  ComparisonFilter,
+  ComparisonProduct
+} from "../../comparison/model";
+
+type Props = {
+  filters: ComparisonFilter[];
+  products: ComparisonProduct[];
+};
+
+const { filters, products } = Astro.props as Props;
+
+const productFilterData = Object.fromEntries(
+  products.map((product) => [
+    product.slug,
+    product.filterValues
+  ])
+);
+---
+
+{filters.length > 0 && (
+  <div
+    class="comparison-filter-panel"
+    aria-labelledby="comparison-filter-title"
+  >
+    <div class="comparison-filter-panel__head">
+      <div>
+        <span class="comparison-eyebrow">Tabelle filtern</span>
+        <h2 id="comparison-filter-title">
+          Passende Modelle eingrenzen
+        </h2>
+        <p>
+          Die Auswahl wirkt direkt auf Tabelle und mobile Produktkarten.
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="comparison-filter-reset"
+        data-comparison-filter-reset
+      >
+        Zurücksetzen
+      </button>
+    </div>
+
+    <div
+      class="comparison-filter-grid"
+      data-comparison-filters
+      data-products={JSON.stringify(productFilterData)}
+    >
+      {filters.map((filter) => (
+        <fieldset class="comparison-filter-group">
+          <legend>{filter.label}</legend>
+
+          <div class="comparison-filter-options">
+            {filter.options.map((option) => (
+              <label>
+                <input
+                  type="checkbox"
+                  value={option.value}
+                  data-filter-key={filter.key}
+                />
+                <span class="comparison-control-box" aria-hidden="true"></span>
+                <span class="comparison-filter-option__text">
+                  {option.label}
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+    </div>
+
+    <p class="comparison-filter-count" aria-live="polite">
+      <strong data-comparison-result-count>
+        {products.length}
+      </strong>
+      <span> passende Modelle</span>
+    </p>
+  </div>
+)}

@@ -75,20 +75,20 @@ const options = [
       <div class="pt-advice-grid">
         {
           options.map((option) => (
-            <article class="pt-advice-card">
+            <article class="pt-surface pt-advice-card">
               <span>{option.eyebrow}</span>
               <h3>{option.title}</h3>
               <p>{option.text}</p>
 
               <div class="pt-advice-actions">
                 <a
-                  class="pt-advice-primary"
+                  class="pt-button pt-button-primary pt-advice-primary"
                   href={option.primaryHref}
                 >
                   {option.primaryLabel}
                 </a>
                 <a
-                  class="pt-advice-secondary"
+                  class="pt-button pt-button-secondary pt-advice-secondary"
                   href={option.secondaryHref}
                 >
                   {option.secondaryLabel}

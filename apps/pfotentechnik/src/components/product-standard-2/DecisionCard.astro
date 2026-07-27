@@ -4,17 +4,17 @@ const goodFor = Array.isArray(decision?.goodFor) ? decision.goodFor : [];
 const notFor = Array.isArray(decision?.notFor) ? decision.notFor : [];
 ---
 
-<section class="decision-card" aria-labelledby="product-fit-title">
+<section class="pt-surface decision-card" aria-labelledby="product-fit-title">
   <h2 id="product-fit-title">{decision?.title ?? "Passt dieses Produkt zu dir?"}</h2>
   <div class="decision-grid">
     {goodFor.length > 0 && (
-      <div class="decision-panel decision-panel--positive">
+      <div class="pt-surface decision-panel decision-panel--positive">
         <h3>Passt zu dir, wenn …</h3>
         <ul>{goodFor.map((item) => <li><span aria-hidden="true">✓</span>{item}</li>)}</ul>
       </div>
     )}
     {notFor.length > 0 && (
-      <div class="decision-panel decision-panel--negative">
+      <div class="pt-surface decision-panel decision-panel--negative">
         <h3>Weniger geeignet, wenn …</h3>
         <ul>{notFor.map((item) => <li><span aria-hidden="true">×</span>{item}</li>)}</ul>
       </div>

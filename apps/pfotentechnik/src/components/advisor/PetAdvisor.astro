@@ -37,7 +37,7 @@ const guideData = advisorGuides.map(
     </div>
   </header>
 
-  <div class="advisor-panel">
+  <div class="pt-surface advisor-panel">
     <div class="advisor-status" data-status>
       <div class="status-copy">
         <span data-progress-label>Frage 1 von 6</span>
@@ -67,7 +67,7 @@ const guideData = advisorGuides.map(
         </p>
 
         <div class="choice-grid choice-grid--two">
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="pet"
@@ -83,7 +83,7 @@ const guideData = advisorGuides.map(
             </span>
           </label>
 
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="pet"
@@ -109,7 +109,7 @@ const guideData = advisorGuides.map(
         </p>
 
         <div class="choice-grid choice-grid--two">
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="petCount"
@@ -122,7 +122,7 @@ const guideData = advisorGuides.map(
             </span>
           </label>
 
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="petCount"
@@ -146,7 +146,7 @@ const guideData = advisorGuides.map(
         </p>
 
         <div class="choice-grid choice-grid--three">
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="food"
@@ -159,7 +159,7 @@ const guideData = advisorGuides.map(
             </span>
           </label>
 
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="food"
@@ -172,7 +172,7 @@ const guideData = advisorGuides.map(
             </span>
           </label>
 
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="food"
@@ -204,7 +204,7 @@ const guideData = advisorGuides.map(
               ["microchip", "Mikrochip", "Zugang pro Tier steuern"],
               ["simple", "Einfach", "Möglichst wenig Technik"]
             ].map(([value, title, text]) => (
-              <label class="choice-card">
+              <label class="pt-surface choice-card">
                 <input
                   type="checkbox"
                   name="priorities"
@@ -235,7 +235,7 @@ const guideData = advisorGuides.map(
               ["premium", "Premium", "Mehr Komfort"],
               ["open", "Offen", "Eignung vor Preis"]
             ].map(([value, title, text]) => (
-              <label class="choice-card">
+              <label class="pt-surface choice-card">
                 <input
                   type="radio"
                   name="budget"
@@ -260,7 +260,7 @@ const guideData = advisorGuides.map(
         </p>
 
         <div class="choice-grid choice-grid--two">
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="decisionStyle"
@@ -275,7 +275,7 @@ const guideData = advisorGuides.map(
             </span>
           </label>
 
-          <label class="choice-card">
+          <label class="pt-surface choice-card">
             <input
               type="radio"
               name="decisionStyle"
@@ -304,7 +304,7 @@ const guideData = advisorGuides.map(
       <div class="advisor-actions">
         <button
           type="button"
-          class="button-secondary"
+          class="pt-button-secondary pt-button button-secondary"
           data-back
           hidden
         >
@@ -313,7 +313,7 @@ const guideData = advisorGuides.map(
 
         <button
           type="button"
-          class="button-primary"
+          class="pt-button-primary pt-button button-primary"
           data-next
         >
           Weiter
@@ -376,7 +376,7 @@ const guideData = advisorGuides.map(
       <div class="result-actions">
         <button
           type="button"
-          class="button-secondary"
+          class="pt-button-secondary pt-button button-secondary"
           data-restart
         >
           Antworten ändern
@@ -384,7 +384,7 @@ const guideData = advisorGuides.map(
 
         <button
           type="button"
-          class="button-secondary"
+          class="pt-button-secondary pt-button button-secondary"
           data-share
         >
           Ergebnislink kopieren
@@ -793,7 +793,7 @@ const guideData = advisorGuides.map(
       guideList.innerHTML = selected
         .map(
           (guide) => `
-            <a class="guide-card" href="${guide.href}">
+            <a class="pt-surface guide-card" href="${guide.href}">
               <strong>${guide.title}</strong>
               <span>${guide.description}</span>
             </a>
@@ -901,7 +901,7 @@ const guideData = advisorGuides.map(
           }
 
           <a
-            class="button-primary result-link"
+            class="pt-button-primary pt-button button-primary result-link"
             href="${match.product.route}"
           >
             Testbericht ansehen

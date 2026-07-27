@@ -6,7 +6,7 @@ const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:
 const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c");
 ---
 <SeoAdminLayout title="Media Center" description="Referenzbilder sammeln, Werbung filtern, Bildqualität prüfen, Prompts verwalten und freigegebene WebP-Pakete in Produkt-Markdown übernehmen." active="media">
-  <section class="media-intake seo-card">
+  <section class="pt-surface media-intake seo-card">
     <div><span class="seo-badge">Media Factory 2.0</span><h2>Produktquelle analysieren</h2><p>Amazon- und Herstellerseiten werden nur als Referenzquelle genutzt. Frische-, Video-, Audible-, Kindle-, Musik-, Logo-, Banner- und Werbemotive werden vor der Übernahme gefiltert.</p></div>
     <form data-media-import>
       <label>Amazon- oder Hersteller-Link<input type="url" name="url" required placeholder="https://…" /></label>
@@ -19,24 +19,24 @@ const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c
   <script type="application/json" data-media-config set:html={serializedConfig}></script>
 
   <section class="media-workspace" data-media-workspace hidden>
-    <article class="seo-card media-summary">
+    <article class="pt-surface seo-card media-summary">
       <div><span class="seo-badge" data-job-state></span><h2 data-job-title></h2><p data-job-meta></p></div>
       <dl><div><dt>Gefunden</dt><dd data-found>0</dd></div><div><dt>Übernommen</dt><dd data-accepted>0</dd></div><div><dt>Verworfen</dt><dd data-rejected>0</dd></div></dl>
     </article>
 
-    <section class="seo-card media-candidates">
+    <section class="pt-surface seo-card media-candidates">
       <header><h2>Bildbewertung</h2><p>Score, Bildtyp und Ablehnungsgrund bleiben im Audit nachvollziehbar.</p></header>
       <div data-candidates></div>
     </section>
 
-    <section class="seo-card media-prompts">
+    <section class="pt-surface seo-card media-prompts">
       <header><h2>Prompt-Paket und Uploads</h2><p>Referenzbilder bleiben ausschließlich im Prüfjob. Lade mindestens ein eigenes oder generiertes Hero-Bild hoch. Thumbnail und Vergleichsbild können daraus abgeleitet werden; Galerievarianten benötigen eigene Uploads.</p></header>
       <div data-variants></div>
       <div class="media-actions"><button type="button" data-build disabled>WebP-Paket bauen</button><button type="button" data-approve disabled>Audit freigeben und Markdown aktualisieren</button></div>
     </section>
   </section>
 
-  <section class="seo-card media-history"><h2>Auditstatus</h2><p>{audit.summary.jobs} Jobs · {audit.summary.approved} freigegeben · {audit.summary.rejectedImages} Bilder mit dokumentiertem Ablehnungsgrund.</p></section>
+  <section class="pt-surface seo-card media-history"><h2>Auditstatus</h2><p>{audit.summary.jobs} Jobs · {audit.summary.approved} freigegeben · {audit.summary.rejectedImages} Bilder mit dokumentiertem Ablehnungsgrund.</p></section>
 </SeoAdminLayout>
 
 <script>

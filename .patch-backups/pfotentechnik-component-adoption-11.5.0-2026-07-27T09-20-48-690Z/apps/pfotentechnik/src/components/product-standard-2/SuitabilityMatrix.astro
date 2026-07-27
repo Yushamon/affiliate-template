@@ -1,0 +1,104 @@
+---
+interface SuitabilityEntry {
+  label: string;
+  score: number;
+  note?: string;
+}
+interface Props {
+  suitability: Record<string, number | SuitabilityEntry>;
+}
+const { suitability } = Astro.props;
+
+const labelMap: Record<string, string> = {
+  smallDogs: "Kleine Hunde",
+  mediumDogs: "Mittlere Hunde",
+  largeDogs: "Große Hunde",
+  cats: "Katzen",
+  seniors: "Senioren",
+  multiPet: "Mehrere Tiere",
+  outdoor: "Outdoor",
+  apartment: "Wohnung",
+  travel: "Reisen"
+};
+
+const entries = Object.entries(suitability)
+  .map(([key, value]) => {
+    if (typeof value === "number") {
+      return { key, label: labelMap[key] ?? key, score: value, note: undefined };
+    }
+    if (value && typeof value === "object") {
+      return {
+        key,
+        label: value.label ?? labelMap[key] ?? key,
+        score: Number(value.score ?? 0),
+        note: value.note
+      };
+    }
+    return null;
+  })
+  .filter(Boolean)
+  .filter((entry: any) => Number.isFinite(entry.score) && entry.score > 0);
+---
+
+{entries.length > 0 && (
+  <section class="suitability-card" aria-labelledby="suitability-title">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Eignung</p>
+        <h2 id="suitability-title">Für wen ist das Produkt geeignet?</h2>
+      </div>
+    </div>
+
+    <div class="suitability-list">
+      {entries.map((entry: any) => {
+        const normalized = Math.max(1, Math.min(5, Math.round(entry.score)));
+        return (
+          <article class="suitability-row">
+            <div>
+              <strong>{entry.label}</strong>
+              {entry.note && <small>{entry.note}</small>}
+            </div>
+            <div class="rating" aria-label={`${normalized} von 5 Punkten`}>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <span class:list={{ active: index < normalized }} aria-hidden="true">●</span>
+              ))}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+)}
+
+<style>
+  .suitability-card {
+    padding: clamp(18px, 3vw, 28px);
+    border: 1px solid var(--ps2-border, #dce5e0);
+    border-radius: 18px;
+    background: var(--ps2-surface, #fff);
+  }
+  .eyebrow {
+    margin: 0 0 4px;
+    color: var(--ps2-accent, #2e7d32);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  h2 { margin: 0 0 18px; font-size: clamp(1.2rem, 2vw, 1.5rem); }
+  .suitability-list { display: grid; gap: 1px; overflow: hidden; border: 1px solid var(--ps2-border, #dce5e0); border-radius: 14px; background: var(--ps2-border, #dce5e0); }
+  .suitability-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 14px 16px; background: var(--ps2-surface-soft, #f7faf8); }
+  .suitability-row small { display: block; margin-top: 3px; color: var(--ps2-muted, #637069); }
+  .rating { display: flex; gap: 4px; }
+  .rating span { color: color-mix(in srgb, var(--ps2-muted, #637069) 24%, transparent); }
+  .rating span.active { color: var(--ps2-accent, #2e7d32); }
+  :global([data-theme="dark"]) .suitability-card,
+  :global(.dark) .suitability-card {
+    --ps2-surface: #171f1b;
+    --ps2-surface-soft: #202a25;
+    --ps2-border: #2c3932;
+    --ps2-muted: #a0aea6;
+    --ps2-accent: #79d5aa;
+    color: #eff6f2;
+  }
+</style>

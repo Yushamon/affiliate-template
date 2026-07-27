@@ -29,7 +29,7 @@ const { type, title, text, cards = [] } = Astro.props;
 
   <div class="premium-block-grid">
     {cards.map((card) => (
-      <article class="premium-block-card">
+      <article class="pt-surface premium-block-card">
         {card.label && <span>{card.label}</span>}
         <h3>{card.title}</h3>
         <p>{card.text}</p>

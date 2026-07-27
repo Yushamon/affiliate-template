@@ -30,7 +30,7 @@ const hasContent =
 
     <div class="engine-insights__grid">
       {visibleGroups.length > 0 && (
-        <article class="engine-insights__card">
+        <article class="pt-surface engine-insights__card">
           <h3>Passende Zielgruppen</h3>
           <ul>
             {visibleGroups.map((item) => <li>{item}</li>)}
@@ -39,7 +39,7 @@ const hasContent =
       )}
 
       {visibleBenefits.length > 0 && (
-        <article class="engine-insights__card engine-insights__card--positive">
+        <article class="pt-surface engine-insights__card engine-insights__card--positive">
           <h3>Erkannte Stärken</h3>
           <ul>
             {visibleBenefits.map((item) => <li>{item}</li>)}
@@ -48,7 +48,7 @@ const hasContent =
       )}
 
       {visibleWarnings.length > 0 && (
-        <article class="engine-insights__card engine-insights__card--attention">
+        <article class="pt-surface engine-insights__card engine-insights__card--attention">
           <h3>Worauf du achten solltest</h3>
           <ul>
             {visibleWarnings.map((item) => <li>{item}</li>)}

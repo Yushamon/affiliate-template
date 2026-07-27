@@ -43,7 +43,7 @@ const {
             <div>
               <a
                 href={winner.href}
-                class="comparison-button comparison-button--secondary"
+                class="pt-button-secondary pt-button comparison-button comparison-button--secondary"
               >
                 Test lesen
               </a>
@@ -51,7 +51,7 @@ const {
               {price.url && (
                 <a
                   href={price.url}
-                  class="comparison-button"
+                  class="pt-button comparison-button"
                   rel={price.rel}
                   target={price.target}
                   data-affiliate-link
@@ -76,13 +76,13 @@ const {
             <ComparisonPriceSignal price={alternative.price} />
             {alternative.recommendation && <p>{alternative.recommendation}</p>}
             <div>
-              <a href={alternative.href} class="comparison-button comparison-button--secondary">
+              <a href={alternative.href} class="pt-button-secondary pt-button comparison-button comparison-button--secondary">
                 Alternative ansehen
               </a>
               {price.url && (
                 <a
                   href={price.url}
-                  class="comparison-button"
+                  class="pt-button comparison-button"
                   rel={price.rel}
                   target={price.target}
                   data-affiliate-link

@@ -1,0 +1,1501 @@
+---
+import AlternativeRecommendationCard from "./AlternativeRecommendationCard.astro";
+import OptimizedImage from "../OptimizedImage.astro";
+import { getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import EditorialScore from "../EditorialScore.astro";
+import type {
+  AlternativeRecommendation
+} from "./alternativeRecommendation.types";
+import {
+  stripLeadingIcon
+} from "../../utils/content";
+
+type ProductReviewData = {
+  name: string;
+  manufacturerLabel: string;
+  category: string;
+  recommendation: string;
+  rating: number;
+  score: number;
+  capacity?: string;
+  expandable?: string | boolean;
+  useCase?: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string[];
+  notFor: string[];
+  ratings: Record<string, number>;
+  specs: Array<{
+    label: string;
+    value: string | number | boolean;
+  }>;
+  review: {
+    summary: string;
+    verdict: string;
+  };
+  images: {
+    hero: {
+      src: ImageMetadata;
+      alt: string;
+    };
+    gallery: Array<{
+      src: ImageMetadata;
+      alt: string;
+    }>;
+  };
+  affiliate?: {
+    url: string;
+    label: string;
+    rel: string;
+    target: "_blank" | "_self";
+  };
+  conversion?: {
+    badge?:
+      | "testsieger"
+      | "top-empfehlung"
+      | "preis-leistungs-tipp"
+      | "premium-tipp"
+      | "spezialempfehlung"
+      | "none";
+    primaryCtaLabel?: string;
+    secondaryCtaLabel?: string;
+    showSecondaryCta?: boolean;
+  };
+};
+
+interface Props {
+  product: ProductReviewData;
+  alternativeRecommendations?: AlternativeRecommendation[];
+}
+
+const {
+  product,
+  alternativeRecommendations = []
+} = Astro.props as Props;
+
+const productHeroImage = product.images.hero;
+const galleryImages = [
+  productHeroImage,
+  ...(product.images.gallery ?? [])
+];
+
+const optimizedGallery = await Promise.all(
+  galleryImages.map(async (image) => {
+    const main = await getImage({
+      src: image.src,
+      widths: [480, 768, 1024, 1200],
+      sizes: "(max-width: 760px) 100vw, 46vw",
+      quality: "high"
+    });
+
+    return {
+      image,
+      main
+    };
+  })
+);
+
+const [optimizedHero, ...optimizedProductGallery] =
+  optimizedGallery;
+
+const ratingLabels: Record<string, string> = {
+  app: "App",
+  portionierung: "Portionierung",
+  reinigung: "Reinigung",
+  zuverlaessigkeit: "Zuverlässigkeit",
+  sicherheit: "Sicherheit",
+  preisleistung: "Preis-Leistung",
+  installation: "Installation",
+  flexibility: "Flexibilität",
+  pricePerformance: "Preis-Leistung",
+  expandability: "Erweiterbarkeit",
+  battery: "Akku",
+  cleaning: "Reinigung",
+  noise: "Lautstärke",
+  safety: "Sicherheit"
+};
+
+const getRatingLabel = (key: string) =>
+  ratingLabels[key] ??
+  key
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (character) =>
+      character.toUpperCase()
+    );
+
+const ratingEntries = Object
+  .entries(product.ratings ?? {})
+  .filter(([, value]) => Number.isFinite(value));
+
+const topMetrics = ratingEntries.slice(0, 3);
+
+const getRatingDescriptor = (rating: number) => {
+  const score = Math.round(rating * 20);
+  if (score >= 90) return "Hervorragend";
+  if (score >= 80) return "Sehr gut";
+  if (score >= 70) return "Gut";
+  if (score >= 60) return "Solide";
+  return "Mit Einschränkungen";
+};
+
+const getRatingWidth = (rating: number) =>
+  `${Math.max(0, Math.min(100, (rating / 5) * 100))}%`;
+
+const specValue = (label: string) =>
+  product.specs.find(
+    (item) =>
+      item.label.toLowerCase() === label.toLowerCase()
+  )?.value;
+
+const appControl =
+  specValue("App-Steuerung") ??
+  specValue("App");
+
+const wifi =
+  specValue("WLAN");
+
+const hasAppControl =
+  typeof appControl === "string" &&
+  ["ja", "app", "mit app", "wlan & app"].includes(
+    appControl.trim().toLowerCase()
+  );
+
+const quickFacts = [
+  {
+    label: "Kapazität",
+    value: product.capacity ?? specValue("Kapazität")
+  },
+  {
+    label: "Steuerung",
+    value: hasAppControl
+      ? wifi
+        ? "WLAN & App"
+        : "Mit App"
+      : appControl
+        ? String(appControl)
+        : "Ohne App"
+  },
+  {
+    label: "Portionen",
+    value:
+      specValue("Portionierung") ??
+      specValue("Mahlzeiten")
+  }
+].filter((item) => item.value);
+
+const badgeLabels: Record<string, string> = {
+  testsieger: "Testsieger",
+  "top-empfehlung": "Top-Empfehlung",
+  "preis-leistungs-tipp": "Preis-Leistungs-Tipp",
+  "premium-tipp": "Premium-Tipp",
+  spezialempfehlung: "Spezialempfehlung"
+};
+
+const badgeKey =
+  product.conversion?.badge ?? "none";
+
+const badgeLabel =
+  badgeKey === "none"
+    ? undefined
+    : badgeLabels[badgeKey];
+
+const primaryCtaLabel =
+  product.conversion?.primaryCtaLabel ??
+  product.affiliate?.label;
+
+const capitalizeFirst = (value: string) => {
+  const trimmed = value.trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  return (
+    trimmed.charAt(0).toLocaleUpperCase("de-DE") +
+    trimmed.slice(1)
+  );
+};
+
+const normalizeList = (items: string[] = []) =>
+  items
+    .map((item) =>
+      item
+        .replace(
+          /^\s*(?:[✓✔☑✅✕✖×❌✗✘•\-–—]+\s*)+/u,
+          ""
+        )
+        .trim()
+    )
+    .map(capitalizeFirst)
+    .filter(Boolean);
+
+const bestForItems = normalizeList(product.bestFor);
+
+const attentionItems = normalizeList(
+  product.notFor?.length
+    ? product.notFor
+    : product.cons
+);
+
+const displayHighlights = [
+  ...normalizeList(product.pros),
+  ...bestForItems
+]
+  .filter(
+    (item, index, items) =>
+      items.indexOf(item) === index
+  )
+  .slice(0, 5);
+---
+
+{
+  product && (
+    <article class="product-review-v4">
+      <section class="product-hero-v4">
+        <div class="product-hero-v4__media">
+          <div
+            class="product-hero-v4__desktop-gallery"
+            data-product-gallery
+          >
+            <div class="product-hero-v4__image">
+              <img
+                src={optimizedHero.main.src}
+                srcset={optimizedHero.main.srcSet.attribute}
+                sizes="(max-width: 760px) 100vw, 46vw"
+                width={productHeroImage.src.width}
+                height={productHeroImage.src.height}
+                alt={productHeroImage.alt || product.name}
+                loading="eager"
+                decoding="sync"
+                fetchpriority="high"
+              />
+
+              {badgeLabel && (
+                <span class="product-hero-v4__badge">
+                  {badgeLabel}
+                </span>
+              )}
+            </div>
+
+            {
+              optimizedProductGallery.length > 0 && (
+                <div
+                  class="product-hero-v4__thumbs"
+                  aria-label={`Weitere Bilder von ${product.name}`}
+                >
+                  <button
+                    type="button"
+                    class="product-hero-v4__thumb is-active"
+                    aria-label="Hauptbild anzeigen"
+                    aria-pressed="true"
+                    data-product-gallery-src={
+                      optimizedHero.main.src
+                    }
+                    data-product-gallery-srcset={
+                      optimizedHero.main.srcSet.attribute
+                    }
+                  >
+                    <span class="product-hero-v4__thumb-image">
+                      <OptimizedImage
+                        src={productHeroImage.src}
+                        alt={`${product.name} Hauptbild`}
+                        width={160}
+                        height={120}
+                        layout="fixed"
+                      />
+                    </span>
+                  </button>
+
+                  {
+                    optimizedProductGallery.map(
+                      ({ image, main }, index) => (
+                        <button
+                          type="button"
+                          class="product-hero-v4__thumb"
+                          aria-label={`Produktbild ${index + 2} anzeigen`}
+                          aria-pressed="false"
+                          data-product-gallery-src={main.src}
+                          data-product-gallery-srcset={
+                            main.srcSet.attribute
+                          }
+                        >
+                          <span class="product-hero-v4__thumb-image">
+                            <OptimizedImage
+                              src={image.src}
+                              alt={
+                                image.alt ||
+                                `${product.name} Produktbild ${index + 2}`
+                              }
+                              width={160}
+                              height={120}
+                              layout="fixed"
+                            />
+                          </span>
+                        </button>
+                      )
+                    )
+                  }
+                </div>
+              )
+            }
+          </div>
+
+          <div
+            class="product-hero-v4__mobile-carousel"
+            aria-label={`Produktbilder von ${product.name}`}
+            data-mobile-product-carousel
+          >
+            {
+              optimizedGallery.map(
+                ({ image, main }, index) => (
+                  <figure
+                    class="product-hero-v4__slide"
+                    data-mobile-slide
+                  >
+                    <img
+                      src={main.src}
+                      srcset={main.srcSet.attribute}
+                      sizes="100vw"
+                      width={image.src.width}
+                      height={image.src.height}
+                      alt={
+                        image.alt ||
+                        `${product.name} Produktbild ${index + 1}`
+                      }
+                      loading={index === 0 ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchpriority={index === 0 ? "high" : "auto"}
+                    />
+                  </figure>
+                )
+              )
+            }
+
+            {badgeLabel && (
+              <span class="product-hero-v4__badge">
+                {badgeLabel}
+              </span>
+            )}
+          </div>
+
+          {
+            optimizedGallery.length > 1 && (
+              <div
+                class="product-hero-v4__dots"
+                aria-hidden="true"
+                data-mobile-carousel-dots
+              >
+                {
+                  optimizedGallery.map((_, index) => (
+                    <span class={index === 0 ? "is-active" : ""}></span>
+                  ))
+                }
+              </div>
+            )
+          }
+        </div>
+
+        <aside class="product-summary-card-v4">
+          {
+            displayHighlights.length > 0 && (
+              <section class="product-highlights-v4">
+                <h2>Das Wichtigste in Kürze</h2>
+
+                <ul>
+                  {
+                    displayHighlights.map((item) => (
+                      <li>
+                        <span
+                          class="product-list-icon product-list-icon--positive"
+                          aria-hidden="true"
+                        >
+                          ✓
+                        </span>
+                        <p>{item}</p>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </section>
+            )
+          }
+
+          {
+            quickFacts.length > 0 && (
+              <dl class="product-facts-v4">
+                {
+                  quickFacts.map((item) => (
+                    <div>
+                      <dt>{item.label}</dt>
+                      <dd>{String(item.value)}</dd>
+                    </div>
+                  ))
+                }
+              </dl>
+            )
+          }
+        </aside>
+
+        <div class="product-hero-v4__content">
+          <h1>{product.name}</h1>
+
+          <p class="product-hero-v4__summary">
+            {product.review.summary}
+          </p>
+
+          <div class="product-hero-v4__tags">
+            {
+              [
+                product.capacity,
+                product.useCase,
+                product.category
+              ]
+                .filter(Boolean)
+                .slice(0, 3)
+                .map((item) => <span>{item}</span>)
+            }
+          </div>
+
+          <section class="product-verdict-v4" aria-label="Gesamtbewertung">
+            <EditorialScore
+              value={product.score}
+              variant="detailed"
+              showMethodology
+            />
+            <p>{product.review.verdict}</p>
+          </section>
+
+          {
+            topMetrics.length > 0 && (
+              <dl class="product-metrics-v4">
+                {
+                  topMetrics.map(([key, value]) => (
+                    <div>
+                      <dt>{getRatingLabel(key)}</dt>
+                      <dd>
+                        {Math.round(Number(value) * 20)}
+                      </dd>
+                    </div>
+                  ))
+                }
+              </dl>
+            )
+          }
+
+          {
+            product.affiliate?.url && (
+              <>
+                <a
+                  class="product-cta-v4"
+                  href={product.affiliate.url}
+                  rel={product.affiliate.rel}
+                  target={product.affiliate.target}
+                >
+                  <span>{primaryCtaLabel}</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <p class="product-cta-v4__note">
+                  Preise und Verfügbarkeit können sich ändern.
+                </p>
+              </>
+            )
+          }
+
+        </div>
+      </section>
+
+      <section class="product-decision-v4">
+        <header>
+          <span>Entscheidungshilfe</span>
+          <h2>Passt {product.name} zu mir?</h2>
+          <p>
+            Die wichtigsten Gründe für und gegen dieses
+            Modell, ohne die Bewertung erneut zu wiederholen.
+          </p>
+        </header>
+
+        <div class="product-decision-v4__grid">
+          <article class="product-decision-v4__positive">
+            <h3>Besonders geeignet</h3>
+            <ul class="product-icon-list">
+              {
+                bestForItems.map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--positive"
+                      aria-hidden="true"
+                    >
+                      ✓
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+
+          <article class="product-decision-v4__attention">
+            <h3>Darauf solltest du achten</h3>
+            <ul class="product-icon-list">
+              {
+                attentionItems.map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--negative"
+                      aria-hidden="true"
+                    >
+                      ×
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      {
+        ratingEntries.length > 0 && (
+          <section class="product-ratings-v4">
+            <header>
+              <span>Detailbewertung</span>
+              <h2>Wie gut ist {product.name}?</h2>
+            </header>
+
+            <div class="product-ratings-v4__grid">
+              {
+                ratingEntries.map(([key, value]) => {
+                  const numericValue = Number(value);
+
+                  return (
+                    <article class="product-rating-card-v4">
+                      <div class="product-rating-card-v4__top">
+                        <strong>{getRatingLabel(key)}</strong>
+
+                        <span>
+                          {Math.round(numericValue * 20)}
+                        </span>
+                      </div>
+
+                      <div
+                        class="product-rating-card-v4__bar"
+                        aria-hidden="true"
+                      >
+                        <span
+                          style={`--rating-progress:${getRatingWidth(numericValue)}`}
+                        ></span>
+                      </div>
+
+                      <small>{getRatingDescriptor(numericValue)}</small>
+                    </article>
+                  );
+                })
+              }
+            </div>
+          </section>
+        )
+      }
+
+      <section class="product-strengths-v4">
+        <header>
+          <span>Unsere Einordnung</span>
+          <h2>Stärken und Schwächen</h2>
+        </header>
+
+        <div class="product-strengths-v4__grid">
+          <article class="product-strengths-v4__positive">
+            <h3>Stärken</h3>
+            <ul class="product-icon-list">
+              {
+                normalizeList(product.pros).map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--positive"
+                      aria-hidden="true"
+                    >
+                      ✓
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+
+          <article class="product-strengths-v4__neutral">
+            <h3>Schwächen</h3>
+            <ul class="product-icon-list">
+              {
+                normalizeList(product.cons).map((item) => (
+                  <li>
+                    <span
+                      class="product-list-icon product-list-icon--negative"
+                      aria-hidden="true"
+                    >
+                      ×
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      {
+        alternativeRecommendations.length > 0 && (
+          <section class="product-alternatives-v4">
+            <header>
+              <span>Alternativen</span>
+              <h2>Welche Alternative passt besser?</h2>
+            </header>
+
+            <AlternativeRecommendationCard
+              alternatives={alternativeRecommendations}
+            />
+          </section>
+        )
+      }
+
+      <section class="product-specs-v4">
+        <header>
+          <span>Details</span>
+          <h2>Technische Daten</h2>
+        </header>
+
+        <dl>
+          {
+            product.specs.map((spec) => (
+              <div>
+                <dt>{spec.label}</dt>
+                <dd>{String(spec.value)}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </section>
+    </article>
+  )
+}
+
+<script>
+  document
+    .querySelectorAll("[data-product-gallery]")
+    .forEach((gallery) => {
+      const image = gallery.querySelector(
+        ".product-hero-v4__image img"
+      );
+
+      const buttons = gallery.querySelectorAll(
+        "[data-product-gallery-src]"
+      );
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (!(image instanceof HTMLImageElement)) {
+            return;
+          }
+
+          const src =
+            button.getAttribute(
+              "data-product-gallery-src"
+            );
+
+          const srcset =
+            button.getAttribute(
+              "data-product-gallery-srcset"
+            );
+
+          if (src) image.src = src;
+          if (srcset) image.srcset = srcset;
+
+          buttons.forEach((item) => {
+            item.classList.remove("is-active");
+            item.setAttribute(
+              "aria-pressed",
+              "false"
+            );
+          });
+
+          button.classList.add("is-active");
+          button.setAttribute(
+            "aria-pressed",
+            "true"
+          );
+        });
+      });
+    });
+
+  document
+    .querySelectorAll("[data-mobile-product-carousel]")
+    .forEach((carousel) => {
+      const slides = Array.from(
+        carousel.querySelectorAll("[data-mobile-slide]")
+      );
+
+      const dots = Array.from(
+        carousel.parentElement?.querySelectorAll(
+          "[data-mobile-carousel-dots] span"
+        ) ?? []
+      );
+
+      if (slides.length < 2 || dots.length < 2) {
+        return;
+      }
+
+      let frame = 0;
+
+      const updateDots = () => {
+        cancelAnimationFrame(frame);
+
+        frame = requestAnimationFrame(() => {
+          const carouselRect =
+            carousel.getBoundingClientRect();
+
+          let closestIndex = 0;
+          let closestDistance = Number.POSITIVE_INFINITY;
+
+          slides.forEach((slide, index) => {
+            const rect = slide.getBoundingClientRect();
+            const distance = Math.abs(
+              rect.left - carouselRect.left
+            );
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+
+          dots.forEach((dot, index) => {
+            dot.classList.toggle(
+              "is-active",
+              index === closestIndex
+            );
+          });
+        });
+      };
+
+      carousel.addEventListener(
+        "scroll",
+        updateDots,
+        { passive: true }
+      );
+    });
+</script>
+
+<style>
+  .product-review-v4 {
+    --v4-ink: #0d3b35;
+    --v4-text: #29403c;
+    --v4-muted: #6a7d79;
+    --v4-green: #0f765b;
+    --v4-green-dark: #075944;
+    --v4-red: #b5413c;
+    --v4-red-soft: #fff2f0;
+    --v4-border: #dce7e3;
+    --v4-surface: #ffffff;
+    --v4-soft: #f1f7f4;
+
+    display: grid;
+    gap: clamp(48px, 7vw, 88px);
+    color: var(--v4-text);
+  }
+
+  .product-hero-v4 {
+    overflow: hidden;
+    border: 1px solid var(--v4-border);
+    border-radius: 26px;
+    background: var(--v4-surface);
+    box-shadow: 0 16px 42px rgb(16 63 54 / 8%);
+  }
+
+  .product-hero-v4__media {
+    min-width: 0;
+    align-self: start;
+    overflow: hidden;
+    background: #edf2ef;
+  }
+
+  .product-hero-v4__desktop-gallery {
+    display: grid;
+    gap: 0;
+  }
+
+  .product-hero-v4__image {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #edf2ef;
+  }
+
+  .product-hero-v4__image > img,
+  .product-hero-v4__slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-hero-v4__badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    padding: 10px 14px;
+    border-radius: 12px;
+    color: #fff;
+    background: rgb(9 93 69 / 94%);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 22px rgb(0 0 0 / 16%);
+  }
+
+  .product-hero-v4__thumbs {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(78px, 1fr)
+    );
+    gap: 10px;
+    padding: 14px;
+    border-top: 1px solid var(--v4-border);
+    background: #f7faf8;
+  }
+
+  .product-hero-v4__thumb {
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .product-hero-v4__thumb.is-active {
+    border-color: var(--v4-green);
+  }
+
+  .product-hero-v4__thumb-image {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+
+  .product-hero-v4__thumb-image :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .product-hero-v4__mobile-carousel,
+  .product-hero-v4__dots {
+    display: none;
+  }
+
+  .product-hero-v4__content {
+    padding: clamp(22px, 5vw, 46px);
+  }
+
+  .product-hero-v4 h1 {
+    max-width: 17ch;
+    margin: 0;
+    color: var(--v4-ink);
+    font-size: clamp(2.05rem, 8vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.048em;
+    text-wrap: balance;
+  }
+
+  .product-hero-v4__summary {
+    max-width: 44rem;
+    margin: 18px 0 0;
+    font-size: clamp(1.04rem, 3.7vw, 1.28rem);
+    line-height: 1.6;
+  }
+
+  .product-hero-v4__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .product-hero-v4__tags span {
+    padding: 8px 12px;
+    border: 1px solid var(--v4-border);
+    border-radius: 999px;
+    color: var(--v4-text);
+    background: #fff;
+    font-size: 0.82rem;
+    font-weight: 650;
+  }
+
+  .product-verdict-v4 {
+    margin-top: 28px;
+    padding: clamp(20px, 5vw, 28px);
+    border-radius: 18px;
+    color: #fff;
+    background:
+      radial-gradient(circle at 100% 0, rgb(255 255 255 / 13%), transparent 42%),
+      linear-gradient(145deg, #147a5e, #075a46);
+    box-shadow: 0 14px 30px rgb(8 90 69 / 18%);
+  }
+
+  .product-verdict-v4__top {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .product-verdict-v4__top span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255 255 255 / 75%);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .product-verdict-v4 h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 6vw, 2.55rem);
+    line-height: 1;
+  }
+
+  .product-verdict-v4__stars {
+    margin-top: 13px;
+    color: #f5b720;
+    font-size: 1.35rem;
+    letter-spacing: 0.06em;
+  }
+
+  .product-verdict-v4 > p {
+    margin: 13px 0 0;
+    color: rgb(255 255 255 / 90%);
+    line-height: 1.55;
+  }
+
+  .product-metrics-v4,
+  .product-facts-v4 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 12px 0 0;
+    overflow: hidden;
+    border: 1px solid var(--v4-border);
+    border-radius: 14px;
+    background: #fff;
+  }
+
+  .product-metrics-v4 div,
+  .product-facts-v4 div {
+    min-width: 0;
+    padding: 14px 7px;
+    text-align: center;
+  }
+
+  .product-metrics-v4 div + div,
+  .product-facts-v4 div + div {
+    border-left: 1px solid var(--v4-border);
+  }
+
+  .product-metrics-v4 dt,
+  .product-facts-v4 dt {
+    color: var(--v4-muted);
+    font-size: 0.69rem;
+  }
+
+  .product-metrics-v4 dd,
+  .product-facts-v4 dd {
+    margin: 5px 0 0;
+    color: var(--v4-ink);
+    font-size: clamp(0.8rem, 3.3vw, 0.96rem);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+  }
+
+  .product-cta-v4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 54px;
+    margin-top: 20px;
+    padding: 14px 20px;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(
+      135deg,
+      var(--v4-green),
+      var(--v4-green-dark)
+    );
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgb(15 118 91 / 20%);
+  }
+
+  .product-cta-v4__note {
+    margin: 8px 0 0;
+    color: var(--v4-muted);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .product-summary-card-v4 {
+    display: none;
+  }
+
+  .product-highlights-v4 {
+    margin-top: 0;
+  }
+
+  .product-highlights-v4 h2 {
+    margin: 0 0 15px;
+    color: var(--v4-ink);
+    font-size: 1.35rem;
+  }
+
+  .product-highlights-v4 ul {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .product-highlights-v4 li,
+  .product-icon-list li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 11px;
+    align-items: start;
+    padding: 0 !important;
+    margin: 0;
+    list-style: none !important;
+  }
+
+  .product-highlights-v4 li::before,
+  .product-highlights-v4 li::after,
+  .product-icon-list li::before,
+  .product-icon-list li::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .product-highlights-v4 p {
+    margin: 0;
+    line-height: 1.48;
+  }
+
+  .product-list-icon {
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .product-list-icon--positive {
+    background: var(--v4-green);
+  }
+
+  .product-list-icon--negative {
+    background: var(--v4-red);
+  }
+
+  .product-facts-v4 {
+    margin-top: 24px;
+  }
+
+  .product-decision-v4,
+  .product-ratings-v4,
+  .product-strengths-v4,
+  .product-alternatives-v4,
+  .product-specs-v4 {
+    width: min(100%, 920px);
+    margin-inline: auto;
+  }
+
+  .product-decision-v4 header,
+  .product-ratings-v4 header,
+  .product-strengths-v4 header,
+  .product-alternatives-v4 header,
+  .product-specs-v4 header {
+    margin-bottom: 22px;
+  }
+
+  .product-decision-v4 header > span,
+  .product-ratings-v4 header > span,
+  .product-strengths-v4 header > span,
+  .product-alternatives-v4 header > span,
+  .product-specs-v4 header > span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--v4-green);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .product-decision-v4 h2,
+  .product-ratings-v4 h2,
+  .product-strengths-v4 h2,
+  .product-alternatives-v4 h2,
+  .product-specs-v4 h2 {
+    margin: 0;
+    color: var(--v4-ink);
+    font-size: clamp(1.75rem, 5vw, 2.55rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .product-decision-v4 header p {
+    max-width: 45rem;
+    margin: 12px 0 0;
+    line-height: 1.6;
+  }
+
+  .product-decision-v4__grid,
+  .product-strengths-v4__grid {
+    display: grid;
+    gap: 14px;
+  }
+
+  .product-decision-v4__grid article,
+  .product-strengths-v4__grid article {
+    padding: 22px;
+    border: 1px solid var(--v4-border);
+    border-radius: 18px;
+  }
+
+  .product-decision-v4__positive,
+  .product-strengths-v4__positive {
+    background: var(--v4-soft);
+  }
+
+  .product-decision-v4__attention,
+  .product-strengths-v4__neutral {
+    background: var(--v4-red-soft);
+    border-color: #efd0cc;
+  }
+
+  .product-decision-v4 h3,
+  .product-strengths-v4 h3 {
+    margin: 0 0 13px;
+    color: var(--v4-ink);
+  }
+
+  .product-icon-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .product-highlights-v4 ul {
+    padding-left: 0 !important;
+    list-style: none !important;
+  }
+
+  .product-icon-list li > span:last-child {
+    min-width: 0;
+    line-height: 1.45;
+  }
+
+  .product-ratings-v4__grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(190px, 1fr)
+    );
+    gap: 12px;
+  }
+
+  .product-rating-card-v4 {
+    padding: 18px;
+    border: 1px solid var(--v4-border);
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .product-rating-card-v4__top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .product-rating-card-v4__top strong {
+    color: var(--v4-ink);
+    font-size: 0.98rem;
+  }
+
+  .product-rating-card-v4__top > span {
+    flex: none;
+    color: var(--v4-green);
+    font-weight: 850;
+  }
+
+  .product-rating-card-v4__bar {
+    height: 7px;
+    margin-top: 13px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e7efec;
+  }
+
+  .product-rating-card-v4__bar > span {
+    display: block;
+    width: var(--rating-progress);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(
+      90deg,
+      var(--v4-green),
+      #36a27f
+    );
+  }
+
+  .product-rating-card-v4 small {
+    display: block;
+    margin-top: 9px;
+    color: var(--v4-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .product-specs-v4 dl {
+    margin: 0;
+    border-top: 1px solid var(--v4-border);
+  }
+
+  .product-specs-v4 dl div {
+    display: grid;
+    grid-template-columns: minmax(110px, 0.8fr) 1.2fr;
+    gap: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--v4-border);
+  }
+
+  .product-specs-v4 dt {
+    color: var(--v4-muted);
+  }
+
+  .product-specs-v4 dd {
+    margin: 0;
+    color: var(--v4-ink);
+    font-weight: 700;
+  }
+
+  @media (min-width: 760px) {
+    .product-hero-v4 {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+      grid-template-areas:
+        "media content"
+        "summary content";
+      align-items: start;
+      gap: 16px;
+      overflow: visible;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .product-hero-v4__media,
+    .product-hero-v4__content,
+    .product-summary-card-v4 {
+      align-self: start;
+      border: 1px solid var(--v4-border);
+      border-radius: 24px;
+      background: var(--v4-surface);
+      box-shadow: 0 16px 42px rgb(16 63 54 / 8%);
+    }
+
+    .product-hero-v4__media {
+      grid-area: media;
+      overflow: hidden;
+    }
+
+    .product-hero-v4__content {
+      grid-area: content;
+    }
+
+    .product-summary-card-v4 {
+      grid-area: summary;
+      display: block;
+      padding: 26px;
+    }
+
+    .product-summary-card-v4 .product-highlights-v4 h2 {
+      margin-top: 0;
+    }
+
+    .product-summary-card-v4 .product-facts-v4 {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(140px, 1fr)
+      );
+    }
+
+    .product-hero-v4__image {
+      aspect-ratio: 4 / 3;
+    }
+
+    .product-decision-v4__grid,
+    .product-strengths-v4__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 759px) {
+    .product-hero-v4 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-hero-v4__media {
+      order: 1;
+    }
+
+    .product-hero-v4__content {
+      order: 2;
+    }
+
+    .product-summary-card-v4 {
+      order: 3;
+      display: block;
+      margin: 0 20px 20px;
+      padding: 22px 0 0;
+      border-top: 1px solid var(--v4-border);
+    }
+
+    .product-summary-card-v4 .product-highlights-v4,
+    .product-summary-card-v4 .product-facts-v4 {
+      margin-inline: 0;
+    }
+
+    .product-hero-v4__desktop-gallery {
+      display: none;
+    }
+
+    .product-hero-v4__mobile-carousel {
+      position: relative;
+      display: flex;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      overscroll-behavior-x: contain;
+      touch-action: pan-x;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .product-hero-v4__mobile-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product-hero-v4__slide {
+      flex: 0 0 100%;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      background: #edf2ef;
+    }
+
+    .product-summary-card-v4 .product-facts-v4 {
+      border-radius: 14px;
+    }
+
+    .product-hero-v4__dots {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      padding: 11px 12px 13px;
+      background: #fff;
+      border-top: 1px solid var(--v4-border);
+    }
+
+    .product-hero-v4__dots span {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #c7d5d1;
+      transition:
+        width 160ms ease,
+        background 160ms ease;
+    }
+
+    .product-hero-v4__dots span.is-active {
+      width: 22px;
+      background: var(--v4-green);
+    }
+  }
+
+  @media (max-width: 520px) {
+    .product-review-v4 {
+      gap: 50px;
+    }
+
+    .product-hero-v4 {
+      margin-inline: -20px;
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .product-hero-v4__content {
+      padding-inline: 20px;
+    }
+
+    .product-hero-v4 h1 {
+      font-size: clamp(2.15rem, 11vw, 3.25rem);
+    }
+
+    .product-verdict-v4__top {
+      align-items: start;
+    }
+
+    .product-metrics-v4 dt {
+      min-height: 2.5em;
+    }
+
+    .product-specs-v4 dl div {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+  }
+</style>

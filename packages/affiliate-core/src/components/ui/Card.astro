@@ -11,7 +11,7 @@ const { href, label, title, text, cta } = Astro.props;
 const Tag = href ? "a" : "article";
 ---
 
-<Tag class="ui-card" href={href}>
+<Tag class="pt-surface ui-card" href={href}>
   {label && <span>{label}</span>}
 
   <h3>{title}</h3>
