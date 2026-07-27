@@ -1,0 +1,322 @@
+/*
+ * PfotenTechnik Comparison CTA System 4.2.0
+ *
+ * Einheitliche Buttons, Preiszeilen und Sticky-Aktionen für Vergleichsseiten.
+ * Keine Änderungen an Daten, Händlerlinks, Labeln oder Vergleichslogik.
+ */
+
+.comparison-shell,
+.comparison-sticky-bar {
+  --comparison-cta-bg: var(--comparison-accent);
+  --comparison-cta-hover: color-mix(
+    in srgb,
+    var(--comparison-accent) 86%,
+    #000000
+  );
+  --comparison-cta-on-bg: #ffffff;
+  --comparison-cta-radius: 15px;
+  --comparison-cta-height: 52px;
+}
+
+/* Einheitliche CTA-Basis. */
+.comparison-shell .comparison-button,
+.comparison-sticky-bar .comparison-button {
+  display: inline-flex !important;
+  width: auto;
+  min-width: 0 !important;
+  min-height: var(--comparison-cta-height) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.82rem 1rem !important;
+  border: 1px solid transparent !important;
+  border-radius: var(--comparison-cta-radius) !important;
+  color: var(--comparison-cta-on-bg) !important;
+  background: var(--comparison-cta-bg) !important;
+  font-size: 0.98rem !important;
+  font-weight: 820 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.015em;
+  text-align: center;
+  text-decoration: none !important;
+  text-wrap: balance;
+  white-space: normal !important;
+  box-shadow: none !important;
+  touch-action: manipulation;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    transform 150ms ease !important;
+}
+
+.comparison-shell .comparison-button:hover,
+.comparison-sticky-bar .comparison-button:hover {
+  border-color: var(--comparison-cta-hover) !important;
+  color: var(--comparison-cta-on-bg) !important;
+  background: var(--comparison-cta-hover) !important;
+  transform: none !important;
+}
+
+.comparison-shell .comparison-button:active,
+.comparison-sticky-bar .comparison-button:active {
+  transform: translateY(1px) !important;
+}
+
+/* Sekundäre Aktion: neutral, nicht als zweiter grüner Button. */
+.comparison-shell .comparison-button--secondary,
+.comparison-sticky-bar .comparison-button--secondary {
+  border-color: color-mix(
+    in srgb,
+    var(--comparison-accent) 28%,
+    var(--comparison-line)
+  ) !important;
+  color: var(--comparison-text) !important;
+  background: var(--comparison-surface) !important;
+}
+
+.comparison-shell .comparison-button--secondary:hover,
+.comparison-sticky-bar .comparison-button--secondary:hover {
+  border-color: color-mix(
+    in srgb,
+    var(--comparison-accent) 46%,
+    var(--comparison-line)
+  ) !important;
+  color: var(--comparison-text) !important;
+  background: var(--comparison-surface-soft) !important;
+}
+
+.comparison-shell .comparison-button:focus-visible,
+.comparison-sticky-bar .comparison-button:focus-visible {
+  outline: 3px solid color-mix(
+    in srgb,
+    var(--comparison-accent) 54%,
+    transparent
+  ) !important;
+  outline-offset: 3px !important;
+}
+
+/* Alle Zweier-CTA-Gruppen benutzen dasselbe Raster. */
+.comparison-shell :is(
+  .recommendation-card__actions,
+  .comparison-mobile-product__actions,
+  .comparison-winner-card__actions,
+  .comparison-verdict__actions,
+  .comparison-verdict__winner-actions,
+  .comparison-verdict__alternative-actions
+) {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 0.72rem !important;
+  align-items: stretch !important;
+}
+
+.comparison-shell :is(
+  .recommendation-card__actions,
+  .comparison-mobile-product__actions,
+  .comparison-winner-card__actions,
+  .comparison-verdict__actions,
+  .comparison-verdict__winner-actions,
+  .comparison-verdict__alternative-actions
+) .comparison-button {
+  width: 100% !important;
+}
+
+/*
+ * Preiszeile
+ *
+ * Kompakte Varianten werden zu einer einzigen lesbaren Zeile:
+ * PREIS | ca. 56,99 € | fair
+ */
+.comparison-shell .recommendation-card > .comparison-price-signal {
+  grid-column: 1 / -1 !important;
+  grid-row: auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0.88rem 1rem 0 !important;
+  padding: 0.9rem 0 0.12rem !important;
+  border-top: 1px solid var(--comparison-line) !important;
+  border-bottom: 0 !important;
+  background: transparent !important;
+}
+
+.comparison-shell .comparison-price-signal--compact,
+.comparison-shell .recommendation-card > .comparison-price-signal,
+.comparison-shell .comparison-mobile-product > .comparison-price-signal {
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr) auto !important;
+  gap: 0.45rem 0.75rem !important;
+  align-items: center !important;
+}
+
+.comparison-shell .comparison-price-signal--compact .comparison-price-signal__main,
+.comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main,
+.comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main {
+  display: contents !important;
+}
+
+.comparison-shell .comparison-price-signal--compact .comparison-price-signal__main > span,
+.comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main > span,
+.comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main > span {
+  grid-column: 1;
+  white-space: nowrap;
+  color: var(--comparison-muted);
+  font-size: 0.76rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.comparison-shell .comparison-price-signal--compact .comparison-price-signal__main > strong,
+.comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main > strong,
+.comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main > strong {
+  grid-column: 2;
+  min-width: 0;
+  justify-self: start;
+  white-space: nowrap;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  color: var(--comparison-text);
+  font-size: 1.16rem !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em;
+  text-align: left !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.comparison-shell .comparison-price-signal--compact .comparison-price-signal__status,
+.comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__status,
+.comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__status {
+  grid-column: 3;
+  justify-self: end !important;
+  margin: 0 !important;
+  padding: 0.28rem 0.54rem !important;
+  white-space: nowrap;
+  font-size: 0.72rem !important;
+  line-height: 1.2;
+}
+
+/* Kontextreiche Winner-Preise behalten ihre vertikale Erklärung. */
+.comparison-shell .comparison-price-signal--standard {
+  gap: 0.62rem;
+  padding: 1rem 0;
+}
+
+.comparison-shell .comparison-price-signal--standard .comparison-price-signal__main strong {
+  font-size: 1.28rem !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Mobile Sticky Bar
+ *
+ * Flacher, klarer und mit denselben Buttonformen wie die Karten.
+ */
+body .comparison-sticky-bar {
+  right: max(0.7rem, env(safe-area-inset-right)) !important;
+  bottom: max(0.7rem, env(safe-area-inset-bottom)) !important;
+  left: max(0.7rem, env(safe-area-inset-left)) !important;
+  gap: 0.55rem !important;
+  padding: 0.62rem !important;
+  border-radius: 18px !important;
+  background: color-mix(
+    in srgb,
+    var(--comparison-surface) 94%,
+    transparent
+  ) !important;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.16) !important;
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+body .comparison-sticky-bar > div:first-child {
+  gap: 0.12rem !important;
+  padding-inline: 0.28rem !important;
+}
+
+body .comparison-sticky-bar > div:first-child span {
+  font-size: 0.66rem !important;
+}
+
+body .comparison-sticky-bar > div:first-child strong {
+  font-size: 0.84rem !important;
+  line-height: 1.22 !important;
+}
+
+body .comparison-sticky-bar > div:last-child {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+  width: 100% !important;
+  gap: 0.5rem !important;
+}
+
+body .comparison-sticky-bar .comparison-button {
+  width: 100% !important;
+  min-height: 48px !important;
+  padding: 0.7rem 0.58rem !important;
+  border-radius: 14px !important;
+  font-size: 0.88rem !important;
+}
+
+/* Dark Mode übernimmt dieselbe Hierarchie mit dunklen Oberflächen. */
+html[data-theme="dark"] body .comparison-sticky-bar,
+html.dark body .comparison-sticky-bar,
+body.dark .comparison-sticky-bar,
+[data-theme="dark"] .comparison-sticky-bar {
+  border-color: var(--comparison-line) !important;
+  background: color-mix(
+    in srgb,
+    var(--comparison-surface-raised) 94%,
+    transparent
+  ) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3) !important;
+}
+
+@media (max-width: 760px) {
+  .comparison-shell :is(
+    .recommendation-card__actions,
+    .comparison-mobile-product__actions,
+    .comparison-winner-card__actions,
+    .comparison-verdict__actions,
+    .comparison-verdict__winner-actions,
+    .comparison-verdict__alternative-actions
+  ) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .comparison-shell .recommendation-card__actions {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .comparison-shell .comparison-price-signal--compact,
+  .comparison-shell .recommendation-card > .comparison-price-signal,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__status,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__status,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__status {
+    grid-column: 1 / -1;
+    justify-self: start !important;
+  }
+
+  .comparison-shell :is(
+    .recommendation-card__actions,
+    .comparison-mobile-product__actions,
+    .comparison-winner-card__actions,
+    .comparison-verdict__actions,
+    .comparison-verdict__winner-actions,
+    .comparison-verdict__alternative-actions
+  ),
+  body .comparison-sticky-bar > div:last-child {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comparison-shell .comparison-button,
+  .comparison-sticky-bar .comparison-button {
+    transition: none !important;
+  }
+}
