@@ -52,7 +52,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -126,7 +126,7 @@ Behälter, Förderweg und Napf sollten sich ohne komplizierte Demontage reinigen
 
 Bei mehreren Tieren reicht es nicht, die Kapazität einfach zu verdoppeln. Entscheidend ist, ob jedes Tier die vorgesehene Menge erhält. Eine Doppelschale kontrolliert keinen individuellen Zugang. Bei Futterneid oder unterschiedlichen Rationen kann ein Mikrochip- oder RFID-System wichtiger sein als ein großer Vorrat.
 
-Siehe auch: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) und [beste Futterautomaten für Mehrtierhaushalte](/beste-futterautomaten-fuer-mehrtierhaushalte/).
+Siehe auch: [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) und [beste Futterautomaten für Mehrtierhaushalte](/vergleiche/-fuer-mehrtierhaushalte/).
 
 ## Der Automat ersetzt keine Betreuung
 

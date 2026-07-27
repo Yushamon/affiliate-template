@@ -63,7 +63,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -104,7 +104,7 @@ Bei hastigem Fressen können kleinere Ausgaben das Tempo beeinflussen. Verhalten
 
 ## Grenzen von Futterautomaten bei Hunden
 
-Viele Vorratsautomaten sind für Katzen und kleine bis mittelgroße Hunde konzipiert. Für große Hunde können maximale Ausgabe, Krokettengröße, Napf und Gehäuse ungeeignet sein. [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/) bietet eine vollständige Prüfliste.
+Viele Vorratsautomaten sind für Katzen und kleine bis mittelgroße Hunde konzipiert. Für große Hunde können maximale Ausgabe, Krokettengröße, Napf und Gehäuse ungeeignet sein. [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/) bietet eine vollständige Prüfliste.
 
 Förderschritte werden mit dem verwendeten Futter gewogen. Eine App bestätigt häufig nur die Motorauslösung. Sie misst nicht sicher, ob alles im Napf landet oder gefressen wird. Beobachte die Einführung und teste Strom- sowie Internetausfall.
 

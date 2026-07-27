@@ -106,7 +106,7 @@ recommendationJourney:
   mode: filtered
   animal: dog
   petSize: large
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonHref: /vergleiche/-fuer-hunde/
   comparisonLabel: Passende Modelle vergleichen
 ---
 

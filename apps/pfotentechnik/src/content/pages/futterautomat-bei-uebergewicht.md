@@ -386,7 +386,7 @@ Geeignete Lösungen:
 
 AAHA nennt getrennte Fütterung sowie automatisierte oder per Mikrochip beziehungsweise Halsband identifizierende Feeder ausdrücklich als Möglichkeiten gegen das Mitfressen anderer Tiere.
 
-Für Katzenhaushalte vertieft [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) die Unterschiede zwischen Doppelschale, getrennten Geräten und Mikrochip-Zugang.
+Für Katzenhaushalte vertieft [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) die Unterschiede zwischen Doppelschale, getrennten Geräten und Mikrochip-Zugang.
 
 ## Welches technische Profil passt?
 
@@ -451,7 +451,7 @@ Vor dem Regelbetrieb testen:
 - Wird eine Blockade erkannt?
 - Gibt es vorbereitete manuelle Ersatzportionen?
 
-Mehr dazu steht im Ratgeber [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/).
+Mehr dazu steht im Ratgeber [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/).
 
 ## Gewicht, Körperzustand und Muskelmasse kontrollieren
 
@@ -546,10 +546,10 @@ Die Quellen wurden zuletzt am 25. Juli 2026 geprüft. Die Studie wurde in einem 
 - [Smarte Futterautomaten: Bauarten und Kaufkriterien](/smarte-futterautomaten/)
 - [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/)
 - [Welche Portionsgröße ist richtig?](/welche-portionsgroesse-ist-richtig/)
-- [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/)
-- [Futterautomaten für Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Futterautomaten für Hunde vergleichen](/vergleiche/beste-futterautomaten-fuer-hunde/)
-- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/)
+- [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- [Futterautomaten für Katzen vergleichen](/vergleiche/-fuer-katzen/)
+- [Futterautomaten für Hunde vergleichen](/vergleiche/-fuer-hunde/)
+- [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
 - [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/)
 - [Übergewicht bei Katzen vermeiden](/uebergewicht-bei-katzen-vermeiden/)
 

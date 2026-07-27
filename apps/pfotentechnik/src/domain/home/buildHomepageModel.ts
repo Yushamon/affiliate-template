@@ -455,14 +455,14 @@ export function buildHomepageModel({
         title: "Für mehrere Katzen",
         text:
           "Zugangskontrolle, Futterneid und getrennte Portionen sinnvoll berücksichtigen.",
-        href: "/futterautomat-fuer-zwei-katzen/",
+        href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         icon: "cats"
       },
       {
         title: "Für Nassfutter",
         text:
           "Kühlung, kurze Standzeiten und hygienische Reinigung sind wichtiger als App-Funktionen.",
-        href: "/futterautomat-nassfutter/",
+        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
         icon: "wet"
       },
       {
@@ -528,11 +528,11 @@ export function buildHomepageModel({
           },
           {
             label: "Für mehrere Katzen",
-            href: "/futterautomat-fuer-zwei-katzen/"
+            href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
           },
           {
             label: "Nassfutterautomaten",
-            href: "/futterautomat-nassfutter/"
+            href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
           }
         ]
       },

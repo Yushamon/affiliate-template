@@ -53,7 +53,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonHref: /vergleiche/-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -96,15 +96,15 @@ Benachrichtigungen sollten an mindestens eine erreichbare Person gehen. Gleichze
 
 Mehrere Wasserstellen bieten Reserve, müssen aber täglich kontrolliert und gereinigt werden. Ein Trinkbrunnen kann ebenfalls ausfallen. Katzentoiletten, Wohnraumtemperatur und sichere Umgebung gehören zur Versorgung, auch wenn der Futterautomat störungsfrei arbeitet.
 
-Bei zwei Katzen muss klar sein, wer welche Portion erhält. Eine Kamera oder Doppelschale löst Futterdiebstahl nicht automatisch. Getrennte Plätze und direkte Beobachtung sind im Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) beschrieben.
+Bei zwei Katzen muss klar sein, wer welche Portion erhält. Eine Kamera oder Doppelschale löst Futterdiebstahl nicht automatisch. Getrennte Plätze und direkte Beobachtung sind im Ratgeber [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) beschrieben.
 
 ## Besonderheiten bei Nassfutter
 
-Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Kühlakkus sind keine unbegrenzte Kühlung. Die Betreuungsperson muss Reste entfernen, Fächer reinigen und neue Mahlzeiten hygienisch vorbereiten. Für längere Abstände sind viele einfache Fachautomaten ungeeignet. Mehr dazu steht unter [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
+Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Kühlakkus sind keine unbegrenzte Kühlung. Die Betreuungsperson muss Reste entfernen, Fächer reinigen und neue Mahlzeiten hygienisch vorbereiten. Für längere Abstände sind viele einfache Fachautomaten ungeeignet. Mehr dazu steht unter [Futterautomat für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/).
 
 ## Technik passend zur Abwesenheit auswählen
 
-Für feste Abläufe ohne Cloud lohnt der [Vergleich der Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/). Wer den Futterplatz zusätzlich sehen muss, findet im [Vergleich der Kamera-Futterautomaten](/vergleiche/beste-futterautomaten-mit-kamera/) die passendere Produktauswahl. Bei vorbereitetem Nassfutter ist der aktiv gekühlte [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) ein technisches Gegenmodell zu einfachen Fächern mit Kühlakkus. Keine dieser Lösungen ersetzt die Betreuung vor Ort.
+Für feste Abläufe ohne Cloud lohnt der [Vergleich der Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/). Wer den Futterplatz zusätzlich sehen muss, findet im [Vergleich der Kamera-Futterautomaten](/vergleiche/-mit-kamera/) die passendere Produktauswahl. Bei vorbereitetem Nassfutter ist der aktiv gekühlte [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) ein technisches Gegenmodell zu einfachen Fächern mit Kühlakkus. Keine dieser Lösungen ersetzt die Betreuung vor Ort.
 
 ## Methodik unserer Einordnung
 
@@ -118,4 +118,4 @@ Wir behandeln Urlaub als Betreuungssituation, nicht als Reichweitentest eines Ge
 
 ## Interne Links und weiterführende Ratgeber
 
-Modelle und Grundlagen bündelt [Smarte Futterautomaten](/smarte-futterautomaten/). Vor der Reise helfen [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/), [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/). Als technische Beispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder/) eingeordnet.
+Modelle und Grundlagen bündelt [Smarte Futterautomaten](/smarte-futterautomaten/). Vor der Reise helfen [Wie funktioniert ein Futterautomat?](/wie-funktioniert-ein-futterautomat/), [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/). Als technische Beispiele sind [Petlibro Granary WiFi](/produkt/petlibro-granary-wifi-feeder/) und [Petlibro Granary Camera](/produkt/petlibro-granary-camera-feeder/) eingeordnet.

@@ -10,14 +10,14 @@ export const advisorGuides: AdvisorGuide[] = [
   },
   {
     title: "Futterautomaten für mehrere Katzen",
-    href: "/futterautomat-fuer-zwei-katzen/",
+    href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
     description:
       "Zugangskontrolle, Futterneid und getrennte Fütterung verständlich erklärt.",
     when: (answers) => answers.petCount === "multiple"
   },
   {
     title: "Futterautomaten für Nassfutter",
-    href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+    href: "/vergleiche/-fuer-nassfutter/",
     description:
       "Kühlung, Fächerlösungen und Hygiene bei Nassfutter.",
     when: (answers) =>
@@ -25,7 +25,7 @@ export const advisorGuides: AdvisorGuide[] = [
   },
   {
     title: "Futterautomaten ohne WLAN",
-    href: "/futterautomat-ohne-wlan/",
+    href: "/vergleiche/beste-futterautomaten-ohne-wlan/",
     description:
       "Welche Modelle auch ohne dauerhafte Cloud-Verbindung sinnvoll sind.",
     when: (answers) =>
@@ -33,7 +33,7 @@ export const advisorGuides: AdvisorGuide[] = [
   },
   {
     title: "Futterautomaten mit Kamera",
-    href: "/futterautomat-mit-kamera/",
+    href: "/vergleiche/beste-futterautomaten-mit-kamera/",
     description:
       "Kameraqualität, App-Funktionen und Datenschutz einordnen.",
     when: (answers) =>

@@ -43,7 +43,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonHref: /vergleiche/-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -92,7 +92,7 @@ Die folgenden Schritte verhindern pauschale oder doppelte Rationen:
 
 Das Körpergewicht allein kann täuschen. Verliert eine Katze Muskeln und gewinnt gleichzeitig Fett, bleibt die Waage ähnlich. Die WSAVA trennt deshalb Body Condition Score für Fettreserven und Muscle Condition Score für Muskelmasse. Besonders bei einer Senior-Katze ist diese zweite Kontrolle wichtig.
 
-Für Automaten erklärt [Welche Portionsgröße ist richtig?](/welche-portionsgroesse-ist-richtig/) die Kalibrierung. Geeignete Geräte stehen im Vergleich [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/); für getrennte Rationen im Mehrkatzenhaushalt gibt es [Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
+Für Automaten erklärt [Welche Portionsgröße ist richtig?](/welche-portionsgroesse-ist-richtig/) die Kalibrierung. Geeignete Geräte stehen im Vergleich [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/); für getrennte Rationen im Mehrkatzenhaushalt gibt es [Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/).
 
 ## Sicher anpassen
 

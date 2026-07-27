@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-katzen/
 title: Beste Futterautomaten für Katzen
 slug: beste-futterautomaten-fuer-katzen
 type: comparison
@@ -7,7 +8,7 @@ description: >-
   Futterautomaten für Katzen nach Futterart, kleinster Portion, App, Stromreserve, Futterzugang und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-27"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -33,6 +34,7 @@ seo:
   sitemap: true
   priority: 0.9
   changefreq: monthly
+  noindex: false
 comparisonType: use-case
 group: Futterautomaten
 icon: 🐈
@@ -54,6 +56,7 @@ items:
       mehrkatzen: Doppelschale möglich, aber keine sichere Trennung
       reinigung: Nicht vom Hersteller ausgewiesen
       kamera: Nein
+    overrides: {}
   - slug: petkit-fresh-element-solo
     label: PETKIT Fresh Element Solo
     type: product
@@ -71,6 +74,7 @@ items:
       ausfallsicherheit: Netzbetrieb; konkrete Backup-Funktion der Variante prüfen
       reinigung: Deckel, Futterbehälter, Ausgabemodul und Napf entnehmbar; Hauptgerät darf nicht nass werden
       kamera: Nein
+    overrides: {}
   - slug: xiaomi-smart-pet-food-feeder-2
     label: Xiaomi Smart Pet Food Feeder 2
     type: product
@@ -88,6 +92,7 @@ items:
       ausfallsicherheit: 4 AA-Batterien; Herstellerangabe ungefähr 14 Tage
       reinigung: Nicht vom Hersteller ausgewiesen
       kamera: Nein
+    overrides: {}
   - slug: cat-mate-c500
     label: Cat Mate C500
     type: product
@@ -103,7 +108,8 @@ items:
       ausfallsicherheit: Batteriebetrieb; kein WLAN erforderlich
       reinigung: Deckel und Futtereinsatz spülmaschinengeeignet
       kamera: Nein
-  - slug: surefeed-microchip-pet-feeder
+    overrides: {}
+  - slug: surefeed-microchip-pet-feeder-connect
     label: SureFeed Microchip Pet Feeder
     type: product
     recommendation: >-
@@ -120,6 +126,7 @@ items:
       mehrkatzen: Sehr gut für getrennte Rationen; eigenes Gerät je geschütztem Futterplatz
       reinigung: Näpfe und Matte entnehmbar; bewegliche Mechanik gemäß Herstelleranleitung reinigen und trocken halten
       kamera: Nein
+    overrides: {}
   - slug: oneisall-5l-automatic-cat-feeder
     label: oneisall 5L Automatic Cat Feeder
     type: product
@@ -135,6 +142,7 @@ items:
       app: je nach Variante
       reinigung: Nicht vom Hersteller ausgewiesen
       kamera: Nein
+    overrides: {}
   - type: product
     slug: oneisall-2-in-1-feeder-water
     values:
@@ -148,6 +156,7 @@ items:
       reinigung: entnehmbare Teile von Hand reinigen; elektrische Basis nicht abspülen oder eintauchen
       kamera: Nein
       besonderheit: Nicht in den geprüften Produktdaten ausgewiesen
+    overrides: {}
   - type: product
     slug: petlibro-air-wifi-feeder
     values:
@@ -161,54 +170,75 @@ items:
       reinigung: Nicht in den geprüften Produktdaten ausgewiesen
       kamera: Nein
       besonderheit: Nicht in den geprüften Produktdaten ausgewiesen
+    overrides: {}
 criteria:
   - key: profil
     label: Unsere Einordnung
     description: Der stärkste konkrete Anwendungsfall des jeweiligen Modells.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: futterart
     label: Futterart
     description: Welche Futterarten vom System sinnvoll verarbeitet oder geschützt werden.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: portionierung
     label: Portionierung
     description: Art, Umfang und Grenzen der Mengen- beziehungsweise Zeitsteuerung.
     weight: 1.4
+    format: auto
+    fallback: –
   - key: zugang
     label: Futterzugang
     description: Ob der Zugang frei, zeitgesteuert oder tierindividuell kontrolliert wird.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: mehrkatzen
     label: Mehrkatzen-Eignung
     description: Ob mehrere Katzen nur gleichzeitig fressen können oder wirklich getrennt werden.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: app
     label: App und Verbindung
     weight: 0.8
+    format: auto
+    fallback: –
   - key: ausfallsicherheit
     label: Stromreserve
     description: Verhalten bei Strom- oder Internetausfall.
     weight: 1.2
+    format: auto
+    fallback: –
   - key: reinigung
     label: Reinigung
     description: Hygienerelevante Bauteile und laufender Pflegeaufwand.
     weight: 1.1
+    format: auto
+    fallback: –
   - key: kamera
     label: Kamera
     weight: 0.3
+    format: auto
+    fallback: –
   - key: besonderheit
     label: Wichtigster Vorteil
     weight: 1
+    format: auto
+    fallback: –
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: petlibro-granary-wifi-feeder
-  alternativeSlug: surefeed-microchip-pet-feeder
   title: PETLIBRO für Trockenfutter, SureFeed für getrennte Rationen
   text: >-
     Der PETLIBRO Granary WiFi ist der ausgewogenste klassische Trockenfutterautomat. Er ist jedoch nicht die beste Wahl
     für jeden Haushalt: SureFeed gewinnt bei Futterklau und Spezialdiäten, Cat Mate C500 bei zeitgesteuertem Nassfutter,
     Xiaomi bei Napfübersicht und oneisall bei einer einfachen Doppelschalen-Lösung.
+  winnerSlug: petlibro-granary-wifi-feeder
+  alternativeSlug: surefeed-microchip-pet-feeder-connect
 tableTitle: Sechs Katzen-Futterautomaten nach Aufgabe verglichen
 cardsTitle: Die besten Modelle für unterschiedliche Haushalte
 faq:
@@ -268,10 +298,35 @@ faq:
     answer: >-
       Nein. Blockaden, Stromprobleme, App-Ausfälle, Erbrechen oder Futterverweigerung bleiben möglich. Eine zuverlässige
       Person sollte Katze und Gerät täglich kontrollieren.
+  - question: Wie vergleichen wir Futterautomaten?
+    answer: >-
+      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
+      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
+  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
+    answer: >-
+      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
+      Ausfallsicherheit aus.
+  - question: Wie prüfe ich die reale Portionsgröße?
+    answer: >-
+      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
+      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
+  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
+    answer: >-
+      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
+      Mengenmessung ist es kein Fressnachweis.
+  - question: Braucht ein Futterautomat eine Stromreserve?
+    answer: >-
+      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
+      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
+  - question: Wie oft werden die Vergleiche aktualisiert?
+    answer: >-
+      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
+      nennt ihren aktuellen Datenstand.
 heroImage:
   src: ../../assets/images/products/petlibro-granary-wifi-feeder/comparison.webp
   alt: Beste Futterautomaten für Katzen – redaktionelles Vergleichsbild
 ---
+
 Katzen-Futterautomaten lösen drei sehr unterschiedliche Aufgaben:
 
 1. Trockenfutter automatisch portionieren.
@@ -405,8 +460,8 @@ Nicht gleichgesetzt werden Ausgabeprotokoll und Fressnachweis, Doppelschale und 
 ## Weiterführende Kaufberatung
 
 - [Futterautomat für Katzen](/futterautomat-katze/)
-- [Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
-- [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/)
+- [Futterautomaten mit Kamera](/vergleiche/-mit-kamera/)
 - [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/)
 - [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/)
 - [Smarte Futterautomaten](/smarte-futterautomaten/)
@@ -419,3 +474,17 @@ Herstellerübersichten: [PETLIBRO](/hersteller/petlibro/), [PETKIT](/hersteller/
 Die Vergleichswerte basieren auf den jeweiligen PfotenTechnik-Produktdateien und aktuellen Herstellerinformationen. Es liegt nicht für jedes Modell ein eigener Langzeittest vor.
 
 Modellnummer, Lieferumfang, App-Unterstützung und Zubehör sollten vor dem Kauf im konkret verlinkten Angebot geprüft werden, da regional unterschiedliche Varianten existieren.
+
+## Für wen geeignet
+
+Der Vergleich richtet sich an Tierhalter, die nicht nur Funktionen zählen, sondern Bauart, reale Alltagseignung, Folgekosten und Ausfallsicherheit gegeneinander abwägen möchten.
+
+## Weiterführende Links
+
+- [Alle Vergleiche](/vergleiche/)
+- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)
+
+## Unsere Empfehlung
+
+Unsere stärkste Empfehlung in diesem Vergleich ist **PETLIBRO Granary WiFi Feeder**. Der PETLIBRO Granary WiFi ist der ausgewogenste klassische Trockenfutterautomat. Er ist jedoch nicht die beste Wahl für jeden Haushalt: SureFeed gewinnt bei Futterklau und Spezialdiäten, Cat Mate C500 bei zeitgesteuertem Nassfutter, Xiaomi bei Napfübersicht und oneisall bei einer einfachen Doppelschalen-Lösung.

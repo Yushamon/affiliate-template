@@ -45,7 +45,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: dog
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonHref: /vergleiche/-fuer-hunde/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -91,4 +91,4 @@ Lassen Sie den Hund untersuchen, wenn das Schlingen plötzlich beginnt, extremer
 
 ## Passender Technik-Hinweis
 
-Ein normaler Futterautomat portioniert Mahlzeiten, verlangsamt aber nicht automatisch das Fressen aus dem Napf. Deshalb empfehlen wir hier kein Gerät als alleinige Lösung. Entscheidend sind kleinere Portionen, eine ruhige Fütterung und ein geeigneter Slow Feeder. Mehr dazu: [Futterautomat gegen Schlingen](/futterautomat-gegen-schlingen/).
+Ein normaler Futterautomat portioniert Mahlzeiten, verlangsamt aber nicht automatisch das Fressen aus dem Napf. Deshalb empfehlen wir hier kein Gerät als alleinige Lösung. Entscheidend sind kleinere Portionen, eine ruhige Fütterung und ein geeigneter Slow Feeder. Mehr dazu: [Futterautomat gegen Schlingen](/vergleiche/futterautomat-gegen-schlingen/).

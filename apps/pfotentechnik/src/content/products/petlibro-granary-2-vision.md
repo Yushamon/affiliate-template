@@ -370,8 +370,8 @@ Der vorhandene [PETLIBRO Granary Camera Feeder](/produkt/petlibro-granary-camera
 
 Weitere Einordnung:
 
-- [Futterautomaten mit Kamera vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
-- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
+- [Futterautomaten mit Kamera vergleichen](/vergleiche/-mit-kamera/)
+- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
 - [Smarte Futterautomaten: Technik und Kaufberatung](/smarte-futterautomaten/)
 - [Futtermenge einer Katze bestimmen](/futtermenge-katze/)
 

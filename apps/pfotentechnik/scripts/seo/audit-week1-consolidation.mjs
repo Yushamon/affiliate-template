@@ -6,24 +6,24 @@ import { fileURLToPath } from "node:url";
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const routes = [
   {
-    "from": "/beste-futterautomaten-fuer-katzen",
-    "to": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-    "page": "src/content/pages/beste-futterautomaten-fuer-katzen.md"
+    "from": "/vergleiche/-fuer-katzen/",
+    "to": "/vergleiche/-fuer-katzen/",
+    "page": "src/content/pages/vergleiche/-fuer-katzen/.md"
   },
   {
-    "from": "/beste-futterautomaten-fuer-hunde",
-    "to": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-    "page": "src/content/pages/beste-futterautomaten-fuer-hunde.md"
+    "from": "/vergleiche/-fuer-hunde/",
+    "to": "/vergleiche/-fuer-hunde/",
+    "page": "src/content/pages/vergleiche/-fuer-hunde/.md"
   },
   {
-    "from": "/beste-futterautomaten-fuer-zwei-katzen",
-    "to": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-    "page": "src/content/pages/beste-futterautomaten-fuer-zwei-katzen.md"
+    "from": "/vergleiche/-fuer-zwei-katzen/",
+    "to": "/vergleiche/-fuer-zwei-katzen/",
+    "page": "src/content/pages/vergleiche/-fuer-zwei-katzen/.md"
   },
   {
-    "from": "/beste-futterautomaten-fuer-nassfutter",
-    "to": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-    "page": "src/content/pages/beste-futterautomaten-fuer-nassfutter.md"
+    "from": "/vergleiche/-fuer-nassfutter/",
+    "to": "/vergleiche/-fuer-nassfutter/",
+    "page": "src/content/pages/vergleiche/-fuer-nassfutter/.md"
   }
 ];
 const errors = [];

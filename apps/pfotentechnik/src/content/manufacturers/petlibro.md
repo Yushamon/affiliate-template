@@ -323,10 +323,10 @@ Die Grenzen liegen in der Modellvielfalt, teils ähnlichen Produktnamen und mode
 
 ## Passende Vergleiche
 
-- [Futterautomaten für Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Futterautomaten für Hunde vergleichen](/vergleiche/beste-futterautomaten-fuer-hunde/)
-- [Nassfutterautomaten vergleichen](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
-- [Futterautomaten mit Kamera vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Futterautomaten für Katzen vergleichen](/vergleiche/-fuer-katzen/)
+- [Futterautomaten für Hunde vergleichen](/vergleiche/-fuer-hunde/)
+- [Nassfutterautomaten vergleichen](/vergleiche/-fuer-nassfutter/)
+- [Futterautomaten mit Kamera vergleichen](/vergleiche/-mit-kamera/)
 - [Trinkbrunnen für Hunde vergleichen](/vergleiche/beste-trinkbrunnen-fuer-hunde/)
 - [Trinkbrunnen für Katzen vergleichen](/vergleiche/beste-trinkbrunnen-fuer-katzen/)
 

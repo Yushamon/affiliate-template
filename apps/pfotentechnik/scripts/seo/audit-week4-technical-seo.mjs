@@ -194,7 +194,7 @@ if (!sourceOnly) {
 
     const targetSchemas = [
       ["futterautomat-ohne-wlan/index.html", ["Article"], "Ratgeber"],
-      ["vergleiche/beste-futterautomaten-ohne-wlan/index.html", ["WebPage", "ItemList"], "Comparison"],
+      ["vergleiche/vergleiche/beste-futterautomaten-ohne-wlan/index.html", ["WebPage", "ItemList"], "Comparison"],
       ["produkt/petlibro-polar-wet-food-feeder/index.html", ["WebPage", "Product"], "Produkt"],
       ["hersteller/petlibro/index.html", ["Article"], "Hersteller"]
     ];

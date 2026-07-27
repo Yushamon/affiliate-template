@@ -188,7 +188,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
+  comparisonHref: /vergleiche/-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -340,7 +340,7 @@ Nassfutter benötigt:
 
 Kühlakkus verlangsamen die Erwärmung, halten aber keine konstante Temperatur.
 
-Mehr dazu: [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
+Mehr dazu: [Futterautomat für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/).
 
 ## Mahlzeiten für Katzen
 
@@ -357,7 +357,7 @@ Ein Automat kann helfen bei:
 
 Er kann nicht verhindern, dass in einem Mehrkatzenhaushalt die falsche Katze frisst.
 
-Mehr dazu: [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/) und [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
+Mehr dazu: [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/) und [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
 
 ## Mahlzeiten für Hunde
 

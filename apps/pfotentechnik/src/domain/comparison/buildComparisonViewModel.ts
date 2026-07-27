@@ -638,13 +638,13 @@ export function buildComparisonViewModel({
           product.data.score ??
           Math.round(product.data.rating * 20),
         badge:
-          item.slug === resolvedWinnerSlug
-            ? "Top-Empfehlung"
-            : item.slug === resolvedAlternativeSlug
-              ? "Gute Alternative"
-              : index === 1
+            item.slug === resolvedWinnerSlug
+              ? "Top-Empfehlung"
+              : item.slug === resolvedAlternativeSlug
                 ? "Preis-Leistung"
-                : undefined,
+                : index === 1
+                  ? "Gute Alternative"
+                  : undefined,
         strengths: product.data.strengths,
         attention:
           product.data.decision.attention.length

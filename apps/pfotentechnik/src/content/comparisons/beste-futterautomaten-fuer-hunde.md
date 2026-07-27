@@ -1,4 +1,5 @@
 ---
+canonical: /vergleiche/beste-futterautomaten-fuer-hunde/
 title: Beste Futterautomaten für Hunde
 slug: beste-futterautomaten-fuer-hunde
 type: comparison
@@ -7,7 +8,7 @@ description: >-
   Futterautomaten für Hunde nach realer Portionsleistung, Krokettengröße, Napfergonomie, Stabilität, App und
   Stromreserve vergleichen.
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-27"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -32,6 +33,7 @@ seo:
   sitemap: true
   priority: 0.9
   changefreq: monthly
+  noindex: false
 comparisonType: use-case
 group: Futterautomaten
 icon: 🐕
@@ -56,6 +58,7 @@ items:
       notstrom: Herstellerangabe etwa 14 Tage
       kamera: Nein
       tiertrennung: Nein
+    overrides: {}
   - slug: petlibro-granary-wifi-feeder
     label: PETLIBRO Granary WiFi Feeder
     type: product
@@ -71,6 +74,7 @@ items:
       notstrom: 3 D-Batterien; Zeitpläne laufen weiter
       kamera: Nein
       tiertrennung: Nein; Doppelschale verteilt nur
+    overrides: {}
   - slug: wopet-patrol-f07-pro
     label: WOPET Patrol F07 Pro
     type: product
@@ -88,6 +92,7 @@ items:
       notstrom: Batterie-Backup laut Produktdaten
       kamera: Nein
       tiertrennung: Nein
+    overrides: {}
   - slug: honeyguardian-smart-pet-feeder-s305d
     label: HoneyGuardian Smart Pet Feeder S305D
     type: product
@@ -105,53 +110,74 @@ items:
       notstrom: Backup-Funktion je Angebotsvariante prüfen
       kamera: Nein
       tiertrennung: Nein
+    overrides: {}
 criteria:
   - key: redaktionellesprofil
     label: Unsere Einordnung
     description: Welchen konkreten Vorteil das Modell im Vergleich bietet.
     weight: 1.4
+    format: auto
+    fallback: –
   - key: hundegroesse
     label: Geeignete Hundegröße
     description: Herstellerfreigabe und redaktionelle Passformeinschätzung.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: portionierung
     label: Portionierung
     description: Ausgabespanne und Art der Mengensteuerung.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: krokettengroesse
     label: Krokettengröße
     description: Offiziell belegter oder vor Kauf zu prüfender Bereich.
     weight: 1.3
+    format: auto
+    fallback: –
   - key: napf
     label: Napf und Ergonomie
     description: Material, Form und besondere Funktionen.
     weight: 1.2
+    format: auto
+    fallback: –
   - key: kapazitaet
     label: Kapazität
     weight: 0.8
+    format: auto
+    fallback: –
   - key: app
     label: App und WLAN
     weight: 0.8
+    format: auto
+    fallback: –
   - key: notstrom
     label: Stromreserve
     weight: 1.3
+    format: auto
+    fallback: –
   - key: kamera
     label: Kamera
     weight: 0.4
+    format: auto
+    fallback: –
   - key: tiertrennung
     label: Individuelle Tiertrennung
     weight: 1.1
+    format: auto
+    fallback: –
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: petlibro-granary-wifi-feeder
-  alternativeSlug: xiaomi-smart-pet-food-feeder-2
   title: PETLIBRO als Allrounder, Xiaomi für Napfübersicht
   text: >-
     Der PETLIBRO Granary WiFi bietet im Kernvergleich den ausgewogensten Mix aus Portionsspanne, 2,4-/5-GHz-WLAN,
     Notstrom und Bedienung. Xiaomi ist stärker, wenn der verbleibende Napfinhalt und die Einbindung in Xiaomi Home
     wichtiger sind. Für große Hunde bleibt bei allen vier Modellen eine individuelle Prüfung von Napf, Standhöhe,
     Krokettengröße und maximaler Mahlzeit notwendig.
+  winnerSlug: petlibro-granary-wifi-feeder
+  alternativeSlug: xiaomi-smart-pet-food-feeder-2
 tableTitle: Vier Futterautomaten für Hunde im Leistungscheck
 cardsTitle: Die besten Modelle nach Nutzungsszenario
 faq:
@@ -201,7 +227,32 @@ faq:
     answer: >-
       Nein. Der Automat setzt nur einen Plan um. Tagesration und Kalorienmenge müssen anhand von Futter, Gewicht,
       Aktivität und tierärztlicher Empfehlung festgelegt werden.
+  - question: Wie vergleichen wir Futterautomaten?
+    answer: >-
+      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
+      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
+  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
+    answer: >-
+      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
+      Ausfallsicherheit aus.
+  - question: Wie prüfe ich die reale Portionsgröße?
+    answer: >-
+      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
+      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
+  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
+    answer: >-
+      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
+      Mengenmessung ist es kein Fressnachweis.
+  - question: Braucht ein Futterautomat eine Stromreserve?
+    answer: >-
+      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
+      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
+  - question: Wie oft werden die Vergleiche aktualisiert?
+    answer: >-
+      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
+      nennt ihren aktuellen Datenstand.
 ---
+
 Ein guter Futterautomat für Hunde ist nicht automatisch das Modell mit der größten App oder dem größten Behälter. Entscheidend ist, ob der Automat **die benötigte Mahlzeit zuverlässig ausgeben kann und mechanisch zum Hund passt**.
 
 Für kleine und mittelgroße Hunde sind mehrere ursprünglich für Katzen entwickelte Vorratsautomaten brauchbar. Bei großen Rassen werden Napfhöhe, Stabilität, Krokettengröße und maximale Einzelmahlzeit schnell zum Ausschlusskriterium.
@@ -376,7 +427,7 @@ Produkte werden abgewertet, wenn zentrale Angaben zu maximaler Mahlzeit, Krokett
 Mehr Details findest du unter:
 
 - [Futterautomat für Hunde](/futterautomat-hund/)
-- [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/)
+- [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/)
 - [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
 - [Trockenfutter oder Nassfutter für Hunde?](/trockenfutter-oder-nassfutter-hund/)
 - [Smarte Futterautomaten](/smarte-futterautomaten/)
@@ -393,3 +444,19 @@ Herstellerinformationen:
 Diese Vergleichsseite basiert auf den aktuellen Produktdateien, offiziellen Herstellerangaben und der redaktionellen Einordnung von PfotenTechnik. Es liegt nicht für jedes Modell ein eigener Langzeittest vor.
 
 Vor dem Kauf sollten Modellnummer, Lieferumfang und technische Angaben im konkret verlinkten Händlerangebot kontrolliert werden. Produktserien können regional unterschiedliche Varianten enthalten.
+
+## Testmethodik
+
+Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare Herstellerangaben und die im Produktkatalog gepflegte redaktionelle Einordnung. Unterschiede werden nur dann als Vorteil gewertet, wenn sie für das jeweilige Nutzungsszenario relevant sind. Unbelegte Angaben und nicht direkt vergleichbare Marketingwerte werden nicht gleichgesetzt.
+
+## Quellen
+
+- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
+- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
+- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+
+## Weiterführende Links
+
+- [Alle Vergleiche](/vergleiche/)
+- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)
