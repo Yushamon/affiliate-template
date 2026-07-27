@@ -1,0 +1,130 @@
+---
+import type { ProductPriceInsight } from "../../domain/price/types";
+
+interface Operations {
+  availability: "available" | "temporarily-unavailable" | "out-of-stock" | "discontinued" | "unknown";
+  availabilityLabel: string;
+  availabilityReason?: string;
+  purchasable: boolean;
+  priceAvailable: boolean;
+}
+
+interface Props {
+  price?: ProductPriceInsight;
+  operations: Operations;
+  affiliate: {
+    url?: string;
+    label: string;
+    rel: string;
+    target: "_blank" | "_self";
+  };
+}
+
+const { price, affiliate, operations } = Astro.props;
+const statusClass = price?.assessment === "cheap"
+  ? "is-cheap"
+  : price?.assessment === "expensive"
+    ? "is-expensive"
+    : price?.assessment === "fair"
+      ? "is-fair"
+      : "is-unknown";
+const checkedLabel = price?.checkedAt
+  ? new Date(price.checkedAt).toLocaleDateString("de-DE")
+  : null;
+const unavailableCopy = operations.availability === "discontinued"
+  ? "Dieses Produkt wurde eingestellt und wird nicht mehr als Hauptempfehlung geführt. Prüfe die Alternativen auf dieser Seite."
+  : operations.availability === "temporarily-unavailable"
+    ? "Dieses Produkt ist vorübergehend nicht verfügbar. Die redaktionelle Bewertung bleibt bestehen, aktuell solltest du aber eine Alternative prüfen."
+    : operations.availability === "out-of-stock"
+      ? "Dieses Produkt ist aktuell nicht lieferbar. Die redaktionelle Bewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt."
+      : operations.availability === "unknown"
+        ? "Die aktuelle Verfügbarkeit ist noch nicht belastbar bestätigt. Deshalb zeigen wir keinen Kaufen-CTA."
+        : null;
+---
+
+<section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability}>
+  {unavailableCopy && (
+    <aside class:list={["px2-availability", `is-${operations.availability}`]} role="status">
+      <strong>{operations.availabilityLabel}</strong>
+      <p>{operations.availabilityReason || unavailableCopy}</p>
+    </aside>
+  )}
+
+  <div class="px2-price__header">
+    <div>
+      <span>Preis-Check</span>
+      <h2 id="px2-price-title">Ist der Preis fair?</h2>
+    </div>
+    <strong class:list={["px2-price__status", statusClass]}>
+      {price?.assessmentLabel ?? "noch offen"}
+    </strong>
+  </div>
+
+  <dl class="px2-price__values">
+    <div>
+      <dt>Aktueller Preis</dt>
+      <dd>{price?.formattedCurrent ? `ca. ${price.formattedCurrent}` : "noch nicht belastbar hinterlegt"}</dd>
+    </div>
+    <div>
+      <dt>Typischer Preisbereich</dt>
+      <dd>{price?.formattedRange ?? "noch keine belastbare Spanne"}</dd>
+    </div>
+  </dl>
+
+  <p class="px2-price__comparison">
+    {price?.generatedComparisonText ?? "Ein aktueller Vergleichspreis ist noch nicht verlässlich hinterlegt."}
+  </p>
+
+  {operations.purchasable && affiliate.url ? (
+    <a
+      class="px2-price__cta"
+      href={affiliate.url}
+      rel={affiliate.rel}
+      target={affiliate.target}
+    >
+      {affiliate.label}
+      <span aria-hidden="true">↗</span>
+    </a>
+  ) : (
+    <span class="px2-price__cta is-disabled" aria-disabled="true">
+      {operations.availability === "available"
+        ? "Kaufquelle noch nicht hinterlegt"
+        : "Aktuell keine Kaufempfehlung"}
+    </span>
+  )}
+
+  <p class="px2-price__note">
+    Preis und Verfügbarkeit können sich kurzfristig ändern.
+    {checkedLabel && <> Zuletzt geprüft: {checkedLabel}.</>}
+    {price?.isStale && checkedLabel && <> Die Prüfung ist älter als 14 Tage.</>}
+  </p>
+</section>
+
+<style>
+  .px2-price { display: grid; gap: 14px; padding: 18px; border: 1px solid var(--px2-border); border-radius: 20px; background: var(--px2-surface-soft); }
+  .px2-availability { padding: 14px; border: 1px solid var(--px2-border); border-radius: 14px; background: var(--px2-amber-soft); color: var(--px2-text); }
+  .px2-availability.is-discontinued, .px2-availability.is-out-of-stock { background: var(--px2-red-soft); }
+  .px2-availability strong { display: block; margin-bottom: 5px; color: var(--px2-text); }
+  .px2-availability p { margin: 0; color: var(--px2-muted); font-size: .88rem; line-height: 1.5; }
+  .px2-price__header { display: flex; align-items: start; justify-content: space-between; gap: 14px; }
+  .px2-price__header span { color: var(--px2-green-strong); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+  .px2-price__header h2 { margin: 4px 0 0; font-size: 1.08rem; }
+  .px2-price__status { flex: 0 0 auto; padding: 7px 10px; border-radius: 999px; font-size: .76rem; }
+  .px2-price__status.is-cheap { background: var(--px2-green-soft); color: var(--px2-green-strong); }
+  .px2-price__status.is-fair, .px2-price__status.is-unknown { background: var(--px2-amber-soft); color: var(--px2-amber); }
+  .px2-price__status.is-expensive { background: var(--px2-red-soft); color: var(--px2-red); }
+  .px2-price__values { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; }
+  .px2-price__values div { min-width: 0; padding: 11px; border-radius: 13px; background: var(--px2-surface); }
+  .px2-price__values dt { color: var(--px2-muted); font-size: .72rem; }
+  .px2-price__values dd { margin: 5px 0 0; font-size: 1rem; font-weight: 850; overflow-wrap: anywhere; }
+  .px2-price__comparison { margin: 0; color: var(--px2-muted); font-size: .9rem; line-height: 1.5; }
+  .px2-price__cta { display: flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 12px 16px; border-radius: 14px; background: var(--px2-green-strong); color: var(--px2-on-accent); font-weight: 900; text-align: center; text-decoration: none; }
+  .px2-price__cta:hover { filter: brightness(1.06); }
+  .px2-price__cta.is-disabled { background: var(--px2-border); color: var(--px2-muted); }
+  .px2-price__note { margin: 0; color: var(--px2-muted); font-size: .72rem; line-height: 1.45; }
+  @media (max-width: 480px) {
+    .px2-price__header { display: grid; }
+    .px2-price__status { justify-self: start; }
+    .px2-price__values { grid-template-columns: 1fr; }
+  }
+</style>

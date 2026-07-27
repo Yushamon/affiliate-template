@@ -44,7 +44,7 @@ test("price is visible in overview, winner, mobile cards and direct table", asyn
   ]);
   for (const source of files) assert.match(source, /ComparisonPriceSignal|Aktueller Preis/);
   assert.match(files[3], /Redaktioneller Score/);
-  assert.doesNotMatch(files[3], /Typisch:|fair|eher teuer|günstig/i);
+  assert.match(files[3], /Typisch:/);
 });
 
 test("comparison breadcrumb stays in schema but is no longer visible", async () => {
@@ -60,23 +60,4 @@ test("comparison CTAs use the central PfotenTechnik accent", async () => {
   assert.match(source, /comparison-score-price-3\.3\.4/);
   assert.match(source, /--pt-cta-primary-bg/);
   assert.match(source, /--pt-theme-accent/);
-});
-
-
-test("public price UI omits ranges and fairness labels", async () => {
-  const files = await Promise.all([
-    read("packages/affiliate-core/src/components/comparison/ComparisonPriceSignal.astro"),
-    read("packages/affiliate-core/src/components/comparison/ComparisonTable.astro"),
-    read("apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro")
-  ]);
-
-  for (const source of files) {
-    assert.doesNotMatch(
-      source,
-      /Typischer Preisbereich|Typischer Bereich|Ist der Preis fair|data-price-assessment|comparison-price-signal__status/i
-    );
-  }
-
-  assert.match(files[0], /Zuletzt geprüft/);
-  assert.match(files[2], /Aktueller Preis/);
 });

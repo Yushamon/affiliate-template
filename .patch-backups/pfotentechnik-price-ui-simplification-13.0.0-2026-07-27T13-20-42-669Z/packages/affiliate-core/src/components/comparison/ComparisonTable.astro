@@ -66,19 +66,19 @@ const {
           ))}
         </tr>
 
-                <tr class="comparison-table__signal-row" data-comparison-row data-has-differences="true">
+        <tr class="comparison-table__signal-row" data-comparison-row data-has-differences="true">
           <th scope="row">
             <strong>Aktueller Preis</strong>
-            <small>Preisangabe und letzter Prüfstand</small>
+            <small>Preisstand und Einordnung aus der zentralen Price Engine</small>
           </th>
           {products.map((product) => {
             const price = getPriceDisplay(product.price);
-            const checkedLabel = price.meta?.replace(/^Preisstand:/, "Zuletzt geprüft:");
             return (
               <td data-label={product.title} data-product-column={product.slug}>
-                <div class="comparison-table-price">
-                  <strong>{price.amountLabel ?? (price.url ? "Beim Händler prüfen" : "Keine Angabe")}</strong>
-                  {checkedLabel && <small>{checkedLabel}</small>}
+                <div class="comparison-table-price" data-price-assessment={price.assessment ?? "unknown"}>
+                  <strong>{price.amountLabel ?? (price.url ? "beim Händler prüfen" : "Keine Angabe")}</strong>
+                  {price.amountLabel && price.assessmentLabel && <small>{price.assessmentLabel}</small>}
+                  {price.rangeLabel && <span>Typisch: {price.rangeLabel}</span>}
                 </div>
               </td>
             );

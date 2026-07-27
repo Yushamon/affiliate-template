@@ -105,85 +105,65 @@ const { products } = Astro.props as Props;
   </div>
 </section>
 
-<!-- PT_RECOMMENDATION_PRICE_UI_13_0_0_START -->
+<!-- PT_RECOMMENDATION_RECOVERY_12_1_1_START -->
 <style is:global>
   .recommendation-grid .recommendation-card {
-    display: grid !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    padding: var(--pt-space-4) !important;
-    border-color: var(--comparison-line) !important;
-    color: var(--comparison-text) !important;
-    background: var(--comparison-surface) !important;
-  }
-
-  .recommendation-grid .recommendation-card__image-link {
-    display: grid !important;
-    width: 100% !important;
-    min-height: 0 !important;
-    aspect-ratio: 4 / 3 !important;
-    place-items: center !important;
-    margin: 0 0 var(--pt-space-4) !important;
-    padding: var(--pt-space-3) !important;
-    overflow: hidden !important;
-    border: 1px solid var(--comparison-line) !important;
-    border-radius: var(--pt-radius-lg) !important;
-    background: #f8faf8 !important;
-  }
-
-  .recommendation-grid .recommendation-card__image-link picture {
-    display: contents !important;
-  }
-
-  .recommendation-grid .recommendation-card__image-link img {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
-    object-position: center !important;
-  }
-
-  .recommendation-grid .recommendation-card__content {
-    min-width: 0 !important;
-    padding: 0 !important;
-    color: var(--comparison-text) !important;
-    background: transparent !important;
-  }
-
-  .recommendation-grid .recommendation-card__content h3,
-  .recommendation-grid .recommendation-card__content h3 a {
-    color: var(--comparison-text) !important;
-  }
-
-  .recommendation-grid .recommendation-card__content > p,
-  .recommendation-grid .recommendation-card__manufacturer {
-    color: var(--comparison-muted) !important;
-  }
-
-  .recommendation-grid .recommendation-card .pt-score {
-    --score-surface: var(--comparison-surface);
-    --score-text: var(--comparison-text);
-    --score-muted: var(--comparison-muted);
-    --score-accent: var(--comparison-accent);
-  }
-
-  .recommendation-grid .recommendation-card > .comparison-price-signal {
-    margin-top: var(--pt-space-4) !important;
-  }
-
-  .recommendation-grid .recommendation-card__actions {
-    display: grid !important;
-    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr) !important;
-    gap: var(--pt-space-2) !important;
-    margin: 0 !important;
-    padding: var(--pt-space-3) 0 0 !important;
+    overflow: hidden;
   }
 
   @media (max-width: 47.99rem) {
     .recommendation-grid .recommendation-card {
+      display: grid !important;
       grid-template-columns: minmax(0, 1fr) !important;
+      gap: 0 !important;
+      padding: var(--pt-space-4) !important;
+    }
+
+    .recommendation-grid .recommendation-card__badge {
+      grid-column: 1 !important;
+      margin: 0 0 var(--pt-space-3) !important;
+      justify-self: start !important;
+    }
+
+    .recommendation-grid .recommendation-card__image-link {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      display: grid !important;
+      place-items: center !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      aspect-ratio: 4 / 3 !important;
+      margin: 0 0 var(--pt-space-4) !important;
+      padding: var(--pt-space-3) !important;
+      overflow: hidden !important;
+      border-radius: var(--pt-radius-lg) !important;
+      background: color-mix(in srgb, var(--comparison-accent) 7%, var(--comparison-surface)) !important;
+    }
+
+    .recommendation-grid .recommendation-card__image-link picture {
+      display: contents !important;
+    }
+
+    .recommendation-grid .recommendation-card__image-link img {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+    }
+
+    .recommendation-grid .recommendation-card__content {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      padding: 0 !important;
+    }
+
+    .recommendation-grid .recommendation-card__manufacturer {
+      margin-bottom: var(--pt-space-1) !important;
     }
 
     .recommendation-grid .recommendation-card__content h3 {
@@ -192,15 +172,41 @@ const { products } = Astro.props as Props;
       line-height: var(--pt-line-height-heading) !important;
     }
 
+    .recommendation-grid .recommendation-card__content > p {
+      margin: 0 0 var(--pt-space-3) !important;
+      font-size: var(--pt-font-size-base) !important;
+      line-height: 1.55 !important;
+    }
+
+    .recommendation-grid .recommendation-card__content .pt-score {
+      margin: 0 !important;
+      padding: var(--pt-space-3) 0 0 !important;
+      border-top: 1px solid var(--comparison-line) !important;
+    }
+
+    .recommendation-grid .recommendation-card > .comparison-price-signal {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      margin: var(--pt-space-4) 0 0 !important;
+      padding: var(--pt-space-3) 0 !important;
+      border-top: 1px solid var(--comparison-line) !important;
+      border-bottom: 0 !important;
+    }
+
+    .recommendation-grid .recommendation-card__actions {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      display: grid !important;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr) !important;
+      gap: var(--pt-space-2) !important;
+      margin: 0 !important;
+      padding: var(--pt-space-3) 0 0 !important;
+      border-top: 1px solid var(--comparison-line) !important;
+    }
+
     .recommendation-grid .recommendation-card__actions .comparison-button {
       min-height: var(--pt-control-min-height) !important;
     }
   }
-
-  @media (max-width: 23rem) {
-    .recommendation-grid .recommendation-card__actions {
-      grid-template-columns: minmax(0, 1fr) !important;
-    }
-  }
 </style>
-<!-- PT_RECOMMENDATION_PRICE_UI_13_0_0_END -->
+<!-- PT_RECOMMENDATION_RECOVERY_12_1_1_END -->

@@ -85,21 +85,21 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
         </div>
 
         <div class="pt-surface comparison-winner-card">
-          <span class="comparison-winner-card__eyebrow">Unsere Empfehlung</span>
-          {winner.badge && <span class="comparison-winner-card__badge">{winner.badge}</span>}
+          <span class="pt-surface comparison-winner-card__eyebrow">Unsere Empfehlung</span>
+          {winner.badge && <span class="pt-surface comparison-winner-card__badge">{winner.badge}</span>}
           {winner.image && (
-            <a href={winner.href} class="comparison-winner-card__image">
+            <a href={winner.href} class="pt-surface comparison-winner-card__image">
               <img
                 src={typeof winner.image.src === "string" ? winner.image.src : winner.image.src.src}
                 alt={winner.image.alt ?? winner.title}
-                width="640"
-                height="480"
+                width="520"
+                height="420"
                 loading="eager"
                 decoding="async"
               />
             </a>
           )}
-          <div class="comparison-winner-card__copy">
+          <div class="pt-surface comparison-winner-card__copy">
             {winner.manufacturer && <span>{winner.manufacturer}</span>}
             <h3><a href={winner.href}>{winner.title}</a></h3>
             {typeof winner.rating === "number" && (
@@ -110,16 +110,15 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
                 description="Redaktioneller Gesamtscore im Vergleich"
               />
             )}
-{winner.recommendation && <p>{winner.recommendation}</p>}
+            <ComparisonPriceSignal price={winner.price} variant="standard" showContext />
+            {winner.recommendation && <p>{winner.recommendation}</p>}
             {winner.strengths.length > 0 && (
               <ul>
                 {winner.strengths.slice(0, 4).map((strength) => <li>{strength}</li>)}
               </ul>
             )}
           </div>
-          <div class="comparison-winner-card__purchase">
-            <ComparisonPriceSignal price={winner.price} variant="standard" />
-            <div class="comparison-winner-card__actions">
+          <div class="pt-surface comparison-winner-card__actions">
             <a href={winner.href} class="pt-button-secondary pt-button comparison-button comparison-button--secondary">Test lesen</a>
             {winnerPrice?.url && (
               <a
@@ -132,7 +131,6 @@ const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
                 {winnerPrice.label}
               </a>
             )}
-            </div>
           </div>
         </div>
       </section>
