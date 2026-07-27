@@ -24,17 +24,17 @@ const { products } = Astro.props as Props;
       >
         <div>
           {product.badge && (
-            <span class="comparison-fit-card__badge">{product.badge}</span>
+            <span class="pt-surface comparison-fit-card__badge">{product.badge}</span>
           )}
           <h3>{product.title}</h3>
           {product.manufacturer && (
-            <p class="comparison-fit-card__manufacturer">
+            <p class="pt-surface comparison-fit-card__manufacturer">
               {product.manufacturer}
             </p>
           )}
         </div>
 
-        <div class="comparison-fit-card__group">
+        <div class="pt-surface comparison-fit-card__group">
           <h4>Passt gut, wenn</h4>
           <ul>
             {(product.strengths.length
@@ -44,7 +44,7 @@ const { products } = Astro.props as Props;
           </ul>
         </div>
 
-        <div class="comparison-fit-card__group comparison-fit-card__group--attention">
+        <div class="pt-surface comparison-fit-card__group comparison-fit-card__group--attention">
           <h4>Eher nicht, wenn</h4>
           <ul>
             {(product.attention.length

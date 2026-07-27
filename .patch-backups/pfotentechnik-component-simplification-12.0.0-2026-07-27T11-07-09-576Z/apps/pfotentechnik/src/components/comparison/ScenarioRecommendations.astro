@@ -21,9 +21,9 @@ const { scenarios } = Astro.props;
     <div class="scenario-grid">
       {scenarios.map((scenario) => (
         <article class="pt-surface scenario-card">
-          <div class="scenario-card__topline">
+          <div class="pt-surface scenario-card__topline">
             <p class="scenario-label">{scenario.label}</p>
-            <span class="scenario-match">{Math.max(0, Math.min(100, Math.round(scenario.score)))}/100 Fit</span>
+            <span class="scenario-match">{Math.round(scenario.score)}/100 Fit</span>
           </div>
           <h3>
             <a href={scenario.winner.href}>{scenario.winner.title}</a>
@@ -86,13 +86,13 @@ const { scenarios } = Astro.props;
   .scenario-card {
     display: grid;
     min-width: 0;
-    gap: .72rem;
-    padding: 1.15rem;
+    gap: .85rem;
+    padding: 1.25rem;
     border: 1px solid var(--comparison-line);
     border-radius: 1rem;
     color: var(--comparison-text);
     background: var(--comparison-surface);
-    box-shadow: 0 8px 24px color-mix(in srgb, var(--comparison-text) 7%, transparent);
+    box-shadow: var(--comparison-premium-shadow);
   }
   .scenario-card__topline {
     display: flex;
@@ -105,11 +105,11 @@ const { scenarios } = Astro.props;
   }
   .scenario-match {
     flex: 0 0 auto;
-    padding: .24rem .55rem;
+    padding: .28rem .5rem;
     border-radius: 999px;
     color: var(--comparison-accent);
     background: color-mix(in srgb, var(--comparison-accent) 10%, var(--comparison-surface));
-    font-size: .72rem;
+    font-size: .68rem;
     font-weight: 850;
   }
   .scenario-card h3 {

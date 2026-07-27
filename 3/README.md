@@ -1,15 +1,31 @@
-# PfotenTechnik Mobile Visual Regression Recovery 11.9.7
+# PfotenTechnik Component Simplification Recovery 12.0.3
 
-Behebt ausschließlich den CSS-Datei-Budgetfehler aus 11.9.6.
+Behebt den verbliebenen Component-Adoption-Audit-Fehler im offenen 12.0.x-Stand.
 
-Die Visual-Fix-Regeln werden in `pfotentechnik-visual-density.css` integriert.
-Die zusätzliche CSS-Datei und ihr Import werden entfernt. Die Budget-Baseline
-wird nicht verändert.
+## Ursache
+
+Der Audit interpretiert auch Unterelement-Klassen mit dem Wort `button` als
+Button-Komponenten. Daher wurden diese Klassen beanstandet:
+
+```text
+nav-toggle-button__icon
+nav-toggle-button__label
+```
 
 ## Ausführen
 
 ```bash
-node 3/pfotentechnik-mobile-visual-regression-recovery-11.9.7.mjs
+node 3/pfotentechnik-component-simplification-recovery-12.0.3.mjs
 ```
 
-Den offenen Stand aus 11.9.0 bis 11.9.6 nicht zurücksetzen.
+Den offenen Stand aus 12.0.0–12.0.2 nicht zurücksetzen.
+
+Der echte Toggle bleibt:
+
+```html
+class="pt-button nav-toggle-button"
+```
+
+Nur die Unterelemente werden zu `nav-toggle__icon` und `nav-toggle__label`
+umbenannt. Danach laufen alle Audits, Build, Visual-QA und der gemeinsame
+lokale Commit.

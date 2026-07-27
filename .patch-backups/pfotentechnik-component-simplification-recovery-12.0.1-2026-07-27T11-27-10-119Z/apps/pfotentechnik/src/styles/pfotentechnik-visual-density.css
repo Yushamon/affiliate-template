@@ -412,7 +412,7 @@
     border-radius: .85rem;
   }
 
-  .site-header-v2 .nav-toggle__label {
+  .site-header-v2 .nav-toggle-button__label {
     position: absolute;
     inline-size: 1px;
     block-size: 1px;
@@ -421,23 +421,23 @@
     white-space: nowrap;
   }
 
-  .site-header-v2 .nav-toggle__icon {
+  .site-header-v2 .nav-toggle-button__icon {
     display: grid;
     gap: 4px;
     inline-size: 1.2rem;
   }
 
-  .site-header-v2 .nav-toggle__icon > span {
+  .site-header-v2 .nav-toggle-button__icon > span {
     display: block;
     block-size: 2px;
-    border-radius: var(--pt-radius-pill);
+    border-radius: 999px;
     background: currentColor;
   }
 }
 
 /* Desktop zeigt weiterhin den Text des Menüs nur, falls Toggle dort sichtbar ist. */
 @media (min-width: 64rem) {
-  .nav-toggle__icon {
+  .nav-toggle-button__icon {
     display: none;
   }
 }
@@ -453,7 +453,7 @@
   justify-self: start;
   margin: 1rem 1rem .7rem;
   padding: .42rem .72rem;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   color: var(--comparison-accent);
   background: color-mix(in srgb, var(--comparison-accent) 10%, transparent);
   font-size: .76rem;
@@ -543,7 +543,7 @@
   display: inline-flex;
   width: fit-content;
   padding: .38rem .68rem;
-  border-radius: var(--pt-radius-pill);
+  border-radius: 999px;
   color: var(--comparison-accent);
   background: color-mix(in srgb, var(--comparison-accent) 10%, transparent);
   font-size: .75rem;
@@ -614,7 +614,7 @@
   .comparison-fit-card,
   .scenario-card,
   .comparison-mobile-product {
-    border-radius: var(--pt-radius-lg);
+    border-radius: 1rem;
   }
 
   .recommendation-card__content {

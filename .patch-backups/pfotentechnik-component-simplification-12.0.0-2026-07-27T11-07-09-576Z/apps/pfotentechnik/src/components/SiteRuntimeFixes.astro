@@ -20,12 +20,22 @@
 
     const ensureDesktopPurchaseAdvice = () => {
       const desktopCta = document.querySelector(".header-advisor-link");
+
       if (desktopCta instanceof HTMLAnchorElement) {
         desktopCta.href = PURCHASE_ADVICE_HREF;
         desktopCta.textContent = PURCHASE_ADVICE_LABEL;
-        desktopCta.setAttribute("aria-label", "Allgemeine Kaufberatung öffnen");
+        desktopCta.setAttribute(
+          "aria-label",
+          "Allgemeine Kaufberatung öffnen"
+        );
         desktopCta.dataset.ptPurchaseAdvice = "desktop";
       }
+
+      document
+        .querySelectorAll(
+          '.main-nav-v2 [data-pt-purchase-advice="nav"]'
+        )
+        .forEach((element) => element.remove());
     };
 
     const removeGenericEditorialStatus = () => {
