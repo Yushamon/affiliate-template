@@ -1,3 +1,23 @@
+:root {
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --primary-soft: #ccfbf1;
+  --secondary: #14b8a6;
+  --accent: #f59e0b;
+  --accent-soft: #fef3c7;
+  --text: #102a2a;
+  --muted: #5f7175;
+  --bg: #f8fafc;
+  --bg-soft: #f0fdfa;
+  --surface: #ffffff;
+  --surface-soft: #f0fdfa;
+  --card: #ffffff;
+  --border: rgba(15, 118, 110, 0.12);
+  --border-strong: rgba(15, 118, 110, 0.2);
+  --shadow-soft: 0 18px 55px rgba(15, 55, 54, 0.08);
+  --shadow-strong: 0 32px 90px rgba(15, 55, 54, 0.14);
+}
+
 html {
   scroll-padding-top: 92px;
 }

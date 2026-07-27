@@ -1,7 +1,15 @@
-# PfotenTechnik Design System Recovery 11.0.2
+# PfotenTechnik Design System Consolidation 11.1.0
 
-Dieser Patch legt die fehlende zentrale Token-Datei an, ergänzt den Import im ProjectLayout, repariert das Audit und führt anschließend Audit, Build und lokalen Commit aus.
+Diese Stufe normalisiert das Astro-Frontmatter, führt allgemeine Theme-/CTA-/Content-Overrides zusammen und bindet bestehende Legacy-Variablen an die zentralen Design-Tokens.
+
+Ausführen:
 
 ```bash
-node 3/pfotentechnik-design-system-recovery-11.0.2.mjs
+node 3/pfotentechnik-design-system-consolidation-11.1.0.mjs
+```
+
+Optionaler Dry-Run:
+
+```bash
+node 3/pfotentechnik-design-system-consolidation-11.1.0.mjs --dry-run
 ```

@@ -1,13 +1,10 @@
 ---
 import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
-import { getNavigationItems } from "@app/domain/content";
-import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
-import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
-import "../styles/pfotentechnik-design-tokens.css";
 import "../styles/pfotentechnik.css";
 import "../styles/pfotentechnik-design-system.css";
-import "../styles/pfotentechnik-ui-system.css";
-import "../styles/pfotentechnik-product-mobile-premium.css";
+
+import { getNavigationItems } from "@app/domain/content";
+import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
 
 const props = Astro.props;
 const headerLinks = await getNavigationItems();
@@ -32,7 +29,13 @@ const normalizeCanonicalPath = (value) => {
 };
 
 const canonical = normalizeCanonicalPath(props.canonical ?? "/");
----
+import "../styles/pfotentechnik-theme-fixes.css";
+import "../styles/pfotentechnik-product-mobile-premium.css";
+import "../styles/pfotentechnik-cta-system.css";
+import "../styles/pfotentechnik-content-ui-polish.css";
+import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
+
+import "../styles/pfotentechnik-design-tokens.css";---
 
 <AffiliateLayout
   {...props}

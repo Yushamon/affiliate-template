@@ -1,0 +1,954 @@
+/**
+ * PfotenTechnik UI System
+ *
+ * Konsolidiert allgemeine Theme-, CTA- und Content-UI-Overrides.
+ * Spezifische Produkt-Mobile-Regeln bleiben bewusst separat.
+ * Keine neuen Seiten-Hotfix-Dateien mehr anlegen; stattdessen diese Datei
+ * oder die zuständige Komponenten-CSS-Datei pflegen.
+ */
+
+/* ============================================================
+ * Quelle: pfotentechnik-theme-fixes.css
+ * Reihenfolge beim früheren Import wurde beibehalten.
+ * ============================================================ */
+/*
+ * PfotenTechnik Theme + Kaufberatung Fix 8.0.2
+ * Final correction layer loaded after the consolidated design system.
+ */
+
+/* Product Renderer 4.1 uses local light-only variables. Map them to the
+   semantic site tokens so prefers-color-scheme works without a JS theme class. */
+[data-product-page] .native-product {
+  --np-page: var(--pt-theme-canvas) !important;
+  --np-surface: var(--pt-theme-surface) !important;
+  --np-surface-raised: var(--pt-theme-surface) !important;
+  --np-surface-soft: var(--pt-theme-surface-2) !important;
+  --np-surface-muted: var(--pt-theme-surface-3) !important;
+  --np-text: var(--pt-theme-text) !important;
+  --np-text-soft: var(--pt-theme-text-soft) !important;
+  --np-muted: var(--pt-theme-text-muted) !important;
+  --np-border: var(--pt-theme-border) !important;
+  --np-border-strong: var(--pt-theme-border-strong) !important;
+  --np-green: var(--pt-theme-accent) !important;
+  --np-green-strong: var(--pt-theme-accent-hover) !important;
+  --np-green-soft: var(--pt-theme-accent-soft) !important;
+  --np-red: var(--pt-theme-danger) !important;
+  --np-red-soft: var(--pt-theme-danger-soft) !important;
+  --np-amber: var(--pt-theme-warning) !important;
+  --np-shadow-sm: var(--pt-theme-shadow-xs) !important;
+  --np-shadow-md: var(--pt-theme-shadow-sm) !important;
+  --np-shadow-lg: var(--pt-theme-shadow-md) !important;
+
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  color: var(--pt-theme-text-soft);
+}
+
+[data-product-page].pt-product-detail {
+  width: min(100%, 1180px);
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+[data-product-page] :is(
+  .native-product__intro,
+  .native-gallery__stage,
+  .native-gallery__fallback,
+  .native-buybox,
+  .native-panel,
+  .pt-review-method,
+  .pt-product-links,
+  .pt-everyday-review-grid article
+) {
+  border-color: var(--pt-theme-border) !important;
+  color: var(--pt-theme-text-soft) !important;
+}
+
+[data-product-page] :is(
+  .native-buybox,
+  .native-panel,
+  .pt-review-method,
+  .pt-product-links,
+  .pt-everyday-review-grid article
+) {
+  background: var(--pt-theme-surface) !important;
+  box-shadow: var(--pt-theme-shadow-sm) !important;
+}
+
+[data-product-page] .native-product__intro {
+  background:
+    radial-gradient(
+      circle at 88% 10%,
+      color-mix(in srgb, var(--pt-theme-accent) 12%, transparent),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      var(--pt-theme-surface),
+      var(--pt-theme-surface-2)
+    ) !important;
+}
+
+[data-product-page] :is(
+  .native-gallery__stage,
+  .native-gallery__fallback
+) {
+  background: linear-gradient(
+    145deg,
+    var(--pt-theme-surface),
+    var(--pt-theme-surface-2)
+  ) !important;
+}
+
+[data-product-page] .pt-product-health {
+  border-color: color-mix(
+    in srgb,
+    var(--pt-theme-accent) 24%,
+    var(--pt-theme-border)
+  ) !important;
+  background: linear-gradient(
+    145deg,
+    var(--pt-theme-accent-soft),
+    var(--pt-theme-surface) 62%
+  ) !important;
+  color: var(--pt-theme-text-soft) !important;
+  box-shadow: var(--pt-theme-shadow-sm) !important;
+}
+
+[data-product-page] :is(h1, h2, h3, h4, strong, dt) {
+  color: var(--pt-theme-text) !important;
+}
+
+[data-product-page] :is(p, li, dd, small, figcaption) {
+  color: var(--pt-theme-text-soft);
+}
+
+[data-product-page] :is(
+  .native-gallery__thumb,
+  .native-buybox__secondary,
+  .native-quickfacts__card
+) {
+  border-color: var(--pt-theme-border-strong) !important;
+  background: var(--pt-theme-surface-2) !important;
+}
+
+[data-product-page] .native-quickfacts__card--primary {
+  background: linear-gradient(
+    145deg,
+    color-mix(
+      in srgb,
+      var(--pt-theme-accent) 8%,
+      var(--pt-theme-surface-2)
+    ),
+    var(--pt-theme-surface)
+  ) !important;
+}
+
+[data-product-page] .native-product__badge--soft {
+  border-color: color-mix(
+    in srgb,
+    var(--pt-theme-accent) 30%,
+    var(--pt-theme-border)
+  ) !important;
+  background: var(--pt-theme-accent-soft) !important;
+  color: var(--pt-theme-accent-text) !important;
+}
+
+/* Theme-safe header and navigation surfaces. */
+.site-header-v2 {
+  border-bottom-color: var(--pt-theme-divider) !important;
+  background: color-mix(
+    in srgb,
+    var(--pt-theme-overlay) 92%,
+    transparent
+  ) !important;
+}
+
+.main-nav-v2,
+.nav-toggle-button {
+  border-color: var(--pt-theme-border-strong) !important;
+  background: var(--pt-theme-surface) !important;
+  color: var(--pt-theme-text) !important;
+}
+
+/* The shared header still exposes a feeder-specific advisor anchor.
+   SiteRuntimeFixes turns it into the general PfotenTechnik purchase-advice CTA.
+   A separate navigation entry is added only inside the collapsible mobile menu. */
+.header-advisor-link {
+  display: none !important;
+}
+
+.header-advisor-link[data-pt-purchase-advice="desktop"],
+.main-nav-v2 [data-pt-purchase-advice="nav"] {
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(
+    in srgb,
+    var(--pt-theme-accent) 70%,
+    var(--pt-theme-border)
+  ) !important;
+  border-radius: 11px;
+  background: var(--pt-theme-accent) !important;
+  color: var(--pt-theme-text-inverse) !important;
+  box-shadow: 0 10px 24px color-mix(
+    in srgb,
+    var(--pt-theme-accent) 20%,
+    transparent
+  );
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.header-advisor-link[data-pt-purchase-advice="desktop"]:hover,
+.header-advisor-link[data-pt-purchase-advice="desktop"]:focus-visible,
+.main-nav-v2 [data-pt-purchase-advice="nav"]:hover,
+.main-nav-v2 [data-pt-purchase-advice="nav"]:focus-visible {
+  border-color: var(--pt-theme-accent-hover) !important;
+  background: var(--pt-theme-accent-hover) !important;
+  color: var(--pt-theme-text-inverse) !important;
+}
+
+.main-nav-v2 [data-pt-purchase-advice="nav"] {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .header-advisor-link[data-pt-purchase-advice="desktop"] {
+    display: inline-flex !important;
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  [data-product-page].pt-product-detail,
+  [data-product-page] .native-product {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-nav-v2 {
+    box-shadow: var(--pt-theme-shadow-menu) !important;
+  }
+
+  .main-nav-v2 [data-pt-purchase-advice="nav"] {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 4px;
+    padding-inline: 16px;
+  }
+}
+
+/* Product Experience 2.0 Theme Bridge 2.0.1
+   Maps the new product system to the central semantic design tokens. */
+[data-product-page] [data-product-experience="2.0"] {
+  --px2-surface: var(--pt-theme-surface) !important;
+  --px2-surface-soft: var(--pt-theme-surface-2) !important;
+  --px2-surface-raised: var(--pt-theme-surface-2) !important;
+  --px2-text: var(--pt-theme-text) !important;
+  --px2-muted: var(--pt-theme-text-soft) !important;
+  --px2-border: var(--pt-theme-border) !important;
+  --px2-green: var(--pt-theme-accent) !important;
+  --px2-green-strong: var(--pt-theme-accent-text) !important;
+  --px2-green-soft: var(--pt-theme-accent-soft) !important;
+  --px2-amber: var(--pt-theme-warning) !important;
+  --px2-amber-soft: color-mix(
+    in srgb,
+    var(--pt-theme-warning) 18%,
+    var(--pt-theme-surface)
+  ) !important;
+  --px2-red: var(--pt-theme-danger) !important;
+  --px2-red-soft: var(--pt-theme-danger-soft) !important;
+  --px2-indigo: var(--pt-theme-focus, #4f46e5) !important;
+  --px2-shadow: var(--pt-theme-shadow-sm) !important;
+  --px2-on-accent: var(--pt-theme-text-inverse) !important;
+  color: var(--px2-text);
+}
+
+[data-product-page] [data-product-experience="2.0"] :is(
+  .px2-hero__content,
+  .decision,
+  .timeline,
+  .details,
+  .trust,
+  .alternatives article,
+  .price-box
+) {
+  border-color: var(--px2-border);
+  color: var(--px2-text);
+}
+
+[data-product-page] [data-product-experience="2.0"] :is(
+  .px2-hero__content,
+  .decision,
+  .timeline,
+  .details,
+  .trust,
+  .alternatives article
+) {
+  background-color: var(--px2-surface);
+}
+
+[data-product-page] [data-product-experience="2.0"] :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  strong,
+  legend,
+  dt
+) {
+  color: var(--px2-text) !important;
+}
+
+[data-product-page] [data-product-experience="2.0"] :is(
+  p,
+  li,
+  dd,
+  small,
+  figcaption,
+  label
+) {
+  color: var(--px2-muted);
+}
+
+[data-product-page] [data-product-experience="2.0"] :is(
+  .decision__header > span,
+  .alternatives > header > span,
+  .trust > header > span,
+  .timeline > header > span,
+  .price-box__eyebrow
+) {
+  color: var(--px2-green-strong) !important;
+}
+
+/* Unified PfotenTechnik CTA colors 2.0.2
+   A single semantic green is used for every primary CTA. Secondary CTAs
+   remain neutral and use the same accent only for border and text. */
+:root {
+  --pt-cta-primary-bg: var(--pt-theme-accent);
+  --pt-cta-primary-bg-hover: var(--pt-theme-accent-hover);
+  --pt-cta-primary-text: var(--pt-theme-text-inverse);
+  --pt-cta-secondary-bg: var(--pt-theme-surface);
+  --pt-cta-secondary-bg-hover: var(--pt-theme-accent-soft);
+  --pt-cta-secondary-text: var(--pt-theme-accent-text);
+}
+
+.pt-button-primary,
+.button-primary,
+.cta-button,
+.affiliate-button,
+.primary-cta,
+.header-advisor-link[data-pt-purchase-advice="desktop"],
+.main-nav-v2 [data-pt-purchase-advice="nav"],
+.pt-nav-advisor-cta,
+header a[href="/#kaufberatung"],
+header a[href="#kaufberatung"],
+nav a[href="/#kaufberatung"],
+nav a[href="#kaufberatung"],
+[data-product-experience="2.0"] .px2-price__cta:not(.is-disabled) {
+  border-color: var(--pt-cta-primary-bg) !important;
+  background: var(--pt-cta-primary-bg) !important;
+  color: var(--pt-cta-primary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+  box-shadow: 0 12px 26px color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 20%,
+    transparent
+  ) !important;
+}
+
+.pt-button-primary:hover,
+.button-primary:hover,
+.cta-button:hover,
+.affiliate-button:hover,
+.primary-cta:hover,
+.header-advisor-link[data-pt-purchase-advice="desktop"]:hover,
+.main-nav-v2 [data-pt-purchase-advice="nav"]:hover,
+.pt-nav-advisor-cta:hover,
+header a[href="/#kaufberatung"]:hover,
+header a[href="#kaufberatung"]:hover,
+nav a[href="/#kaufberatung"]:hover,
+nav a[href="#kaufberatung"]:hover,
+[data-product-experience="2.0"] .px2-price__cta:not(.is-disabled):hover {
+  border-color: var(--pt-cta-primary-bg-hover) !important;
+  background: var(--pt-cta-primary-bg-hover) !important;
+  color: var(--pt-cta-primary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+}
+
+[data-product-experience="2.0"] .alternatives a,
+.premium-v3--pfotentechnik .premium-v3-product-cta {
+  border: 1px solid var(--pt-cta-primary-bg) !important;
+  background: var(--pt-cta-secondary-bg) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
+  box-shadow: none !important;
+}
+
+[data-product-experience="2.0"] .alternatives a:hover,
+.premium-v3--pfotentechnik .premium-v3-product-cta:hover {
+  background: var(--pt-cta-secondary-bg-hover) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
+}
+
+/* Product Experience Hybrid Editorial Layout 2.0.3 */
+
+/* ============================================================
+ * Quelle: pfotentechnik-cta-system.css
+ * Reihenfolge beim früheren Import wurde beibehalten.
+ * ============================================================ */
+/*
+ * PfotenTechnik CTA System 4.2.0
+ *
+ * Gemeinsame visuelle Sprache für Navigation, Homepage, Ratgeber,
+ * Kaufberatung, Produktseiten und wiederverwendbare UI-Callouts.
+ *
+ * Keine Änderungen an Links, Labels, Tracking, SEO oder Anwendungslogik.
+ */
+
+:root {
+  --pt-cta-primary-bg: var(--pt-theme-accent, #1f8f55);
+  --pt-cta-primary-hover: var(--pt-theme-accent-hover, #167548);
+  --pt-cta-primary-text: var(--pt-theme-text-inverse, #ffffff);
+  --pt-cta-secondary-bg: var(--pt-theme-surface, #ffffff);
+  --pt-cta-secondary-hover: var(--pt-theme-surface-2, #f1f6f3);
+  --pt-cta-secondary-text: var(--pt-theme-accent-text, #166534);
+  --pt-cta-text: var(--pt-theme-text, #0f172a);
+  --pt-cta-muted: var(--pt-theme-text-soft, #475569);
+  --pt-cta-border: color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 28%,
+    var(--pt-theme-border, rgba(15, 23, 42, 0.14))
+  );
+  --pt-cta-focus: color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 54%,
+    transparent
+  );
+  --pt-cta-shadow: 0 9px 22px color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 16%,
+    transparent
+  );
+  --pt-cta-radius: 15px;
+  --pt-cta-height: 52px;
+}
+
+/*
+ * Echte Aktionsbuttons.
+ *
+ * Keine Vollpillen mehr: Der Radius bleibt weich, aber die Form wirkt
+ * erwachsener und benötigt weniger optischen Raum.
+ */
+:is(
+  .pt-button,
+  .ui-button,
+  .ui-callout a,
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .pt-money-cta-actions a,
+  .money-page-intent-actions a,
+  [data-product-experience="2.0"] .px2-price__cta,
+  [data-product-experience="2.0"] .px2-hero__compare,
+  .header-advisor-link[data-pt-purchase-advice="desktop"],
+  .main-nav-v2 [data-pt-purchase-advice="nav"],
+  .pt-nav-advisor-cta
+) {
+  display: inline-flex !important;
+  min-width: 0;
+  min-height: var(--pt-cta-height) !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.82rem 1.15rem !important;
+  border: 1px solid transparent;
+  border-radius: var(--pt-cta-radius) !important;
+  font-size: 1rem;
+  font-weight: 820 !important;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  text-align: center;
+  text-decoration: none !important;
+  text-wrap: balance;
+  touch-action: manipulation;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+/* Primäre Kauf- oder Entscheidungsaktion. */
+:is(
+  .pt-button-primary,
+  .ui-button-primary,
+  .ui-callout a,
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .pt-money-cta-primary,
+  .money-page-intent-primary,
+  [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled),
+  .header-advisor-link[data-pt-purchase-advice="desktop"],
+  .main-nav-v2 [data-pt-purchase-advice="nav"],
+  .pt-nav-advisor-cta
+) {
+  border-color: var(--pt-cta-primary-bg) !important;
+  color: var(--pt-cta-primary-text) !important;
+  background: var(--pt-cta-primary-bg) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+  box-shadow: var(--pt-cta-shadow) !important;
+}
+
+/* Sekundäre Navigation oder vertiefende Aktion. */
+:is(
+  .pt-button-secondary,
+  .ui-button-secondary,
+  .pt-money-cta-secondary,
+  .money-page-intent-secondary,
+  [data-product-experience="2.0"] .px2-hero__compare
+) {
+  border-color: var(--pt-cta-border) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  background: var(--pt-cta-secondary-bg) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
+  box-shadow: none !important;
+}
+
+/* Deaktivierte Preisquelle bleibt erkennbar, aber nicht aktionsstark. */
+[data-product-experience="2.0"] .px2-price__cta.is-disabled {
+  border-color: var(--pt-theme-border, rgba(15, 23, 42, 0.14)) !important;
+  color: var(--pt-cta-muted) !important;
+  background: var(--pt-theme-surface-2, #f1f5f9) !important;
+  -webkit-text-fill-color: var(--pt-cta-muted) !important;
+  box-shadow: none !important;
+}
+
+/* Interaktionszustände ohne springende oder übertriebene Animation. */
+:is(
+  .pt-button-primary,
+  .ui-button-primary,
+  .ui-callout a,
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .pt-money-cta-primary,
+  .money-page-intent-primary,
+  [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled),
+  .header-advisor-link[data-pt-purchase-advice="desktop"],
+  .main-nav-v2 [data-pt-purchase-advice="nav"],
+  .pt-nav-advisor-cta
+):hover {
+  border-color: var(--pt-cta-primary-hover) !important;
+  color: var(--pt-cta-primary-text) !important;
+  background: var(--pt-cta-primary-hover) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+  box-shadow: 0 11px 26px color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 21%,
+    transparent
+  ) !important;
+}
+
+:is(
+  .pt-button-secondary,
+  .ui-button-secondary,
+  .pt-money-cta-secondary,
+  .money-page-intent-secondary,
+  [data-product-experience="2.0"] .px2-hero__compare
+):hover {
+  border-color: color-mix(
+    in srgb,
+    var(--pt-cta-primary-bg) 46%,
+    var(--pt-theme-border, rgba(15, 23, 42, 0.14))
+  ) !important;
+  color: var(--pt-cta-secondary-text) !important;
+  background: var(--pt-cta-secondary-hover) !important;
+  -webkit-text-fill-color: var(--pt-cta-secondary-text) !important;
+}
+
+:is(
+  .pt-button,
+  .ui-button,
+  .ui-callout a,
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .pt-money-cta-actions a,
+  .money-page-intent-actions a,
+  [data-product-experience="2.0"] .px2-price__cta,
+  [data-product-experience="2.0"] .px2-hero__compare,
+  .header-advisor-link[data-pt-purchase-advice="desktop"],
+  .main-nav-v2 [data-pt-purchase-advice="nav"],
+  .pt-nav-advisor-cta
+):active {
+  transform: translateY(1px);
+  box-shadow: none !important;
+}
+
+:is(
+  .pt-button,
+  .ui-button,
+  .ui-callout a,
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .pt-money-cta-actions a,
+  .money-page-intent-actions a,
+  [data-product-experience="2.0"] .px2-price__cta,
+  [data-product-experience="2.0"] .px2-hero__compare,
+  .header-advisor-link[data-pt-purchase-advice="desktop"],
+  .main-nav-v2 [data-pt-purchase-advice="nav"],
+  .pt-nav-advisor-cta
+):focus-visible {
+  outline: 3px solid var(--pt-cta-focus) !important;
+  outline-offset: 3px !important;
+}
+
+/*
+ * Ratgeber-Direkteinstieg
+ *
+ * Zwei gleichwertig große Flächen, aber nur eine visuell primäre Aktion.
+ */
+.money-page-intent-entry {
+  gap: clamp(1rem, 3vw, 1.5rem) !important;
+  padding: clamp(1.15rem, 3vw, 1.65rem) !important;
+  border-color: var(--pt-theme-border, rgba(15, 23, 42, 0.14)) !important;
+  border-radius: 22px !important;
+  background: var(--pt-theme-surface, #ffffff) !important;
+  box-shadow: var(--pt-theme-shadow-xs, 0 10px 28px rgba(15, 23, 42, 0.07)) !important;
+}
+
+.money-page-intent-entry > div:first-child {
+  min-width: 0;
+}
+
+.money-page-intent-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem !important;
+  margin-top: 1.1rem !important;
+}
+
+.money-page-intent-actions a {
+  width: 100%;
+}
+
+/* Abschluss-CTA: kein gelber Fremdkörper mehr. */
+.pt-money-cta-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem !important;
+}
+
+.pt-money-cta-primary {
+  color: var(--pt-cta-primary-text) !important;
+  background: var(--pt-cta-primary-bg) !important;
+  -webkit-text-fill-color: var(--pt-cta-primary-text) !important;
+}
+
+.pt-money-cta-secondary {
+  border-color: color-mix(in srgb, #ffffff 34%, transparent) !important;
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 8%, transparent) !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.pt-money-cta-secondary:hover {
+  border-color: color-mix(in srgb, #ffffff 54%, transparent) !important;
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 13%, transparent) !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Advisor, Health und UI-Callout bleiben kompakt auf Desktop. */
+.pt-advisor-cta a,
+.pt-health-bridge > a,
+.ui-callout a {
+  flex: 0 0 auto;
+  width: fit-content;
+}
+
+/*
+ * Produktseite:
+ * Primärer Händlerlink und neutraler Vergleichslink bilden ein klares Paar.
+ */
+[data-product-experience="2.0"] .px2-price__cta {
+  width: 100%;
+}
+
+[data-product-experience="2.0"] .px2-price__cta span,
+[data-product-experience="2.0"] .px2-hero__compare span {
+  flex: 0 0 auto;
+  transition: transform 150ms ease;
+}
+
+[data-product-experience="2.0"] .px2-price__cta:hover span,
+[data-product-experience="2.0"] .px2-hero__compare:hover span {
+  transform: translateX(2px);
+}
+
+/*
+ * Klickbare Karten behalten eine leichtere Inline-Aktion.
+ * Nicht jede Navigation wird künstlich zu einem großen Button.
+ */
+:is(
+  .pt-conversion-journey__card a,
+  .pt-product-content > a
+) {
+  display: inline-flex !important;
+  width: fit-content;
+  min-height: 40px;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.38rem 0;
+  color: var(--pt-cta-secondary-text) !important;
+  font-weight: 820 !important;
+  line-height: 1.3;
+  text-decoration: none !important;
+  text-underline-offset: 4px;
+}
+
+.pt-conversion-journey__card a::after {
+  content: "→";
+  transition: transform 150ms ease;
+}
+
+.pt-conversion-journey__card a:hover::after {
+  transform: translateX(3px);
+}
+
+:is(
+  .ui-card strong,
+  .decision-product-card strong,
+  .pt-next-steps__cta
+) {
+  display: inline-flex !important;
+  width: fit-content;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--pt-cta-secondary-text) !important;
+  font-weight: 820 !important;
+  line-height: 1.3;
+}
+
+/* Navigation-CTA kleiner als Inhalts-CTA, aber aus demselben System. */
+.header-advisor-link[data-pt-purchase-advice="desktop"],
+.main-nav-v2 [data-pt-purchase-advice="nav"],
+.pt-nav-advisor-cta {
+  min-height: 44px !important;
+  padding: 0.68rem 0.95rem !important;
+  border-radius: 13px !important;
+  font-size: 0.9rem;
+}
+
+/* Wiederverwendbare Core-Callouts. */
+.ui-callout {
+  border-color: var(--pt-theme-border, rgba(15, 23, 42, 0.14)) !important;
+  background: linear-gradient(
+    145deg,
+    var(--pt-theme-surface, #ffffff),
+    var(--pt-theme-surface-2, #f1f6f3)
+  ) !important;
+}
+
+/* Dark Mode benötigt keine eigenen Grüntöne: nur Oberflächen werden angepasst. */
+html[data-theme="dark"] .money-page-intent-entry,
+html.dark .money-page-intent-entry,
+body.dark .money-page-intent-entry,
+[data-theme="dark"] .money-page-intent-entry {
+  border-color: var(--pt-theme-border-strong) !important;
+  background: var(--pt-theme-surface) !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] .pt-money-cta-secondary,
+html.dark .pt-money-cta-secondary,
+body.dark .pt-money-cta-secondary,
+[data-theme="dark"] .pt-money-cta-secondary {
+  border-color: color-mix(in srgb, #ffffff 30%, transparent) !important;
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 7%, transparent) !important;
+}
+
+/* Mobile: Breite nutzen, aber nicht jeden Bereich unnötig hoch machen. */
+@media (max-width: 720px) {
+  :root {
+    --pt-cta-height: 50px;
+    --pt-cta-radius: 14px;
+  }
+
+  .money-page-intent-entry {
+    padding: 1rem !important;
+    border-radius: 19px !important;
+  }
+
+  .money-page-intent-actions {
+    margin-top: 0.9rem !important;
+  }
+
+  .pt-advisor-cta a,
+  .pt-health-bridge > a,
+  .ui-callout a {
+    width: 100%;
+  }
+
+  [data-product-experience="2.0"] .px2-price__cta,
+  [data-product-experience="2.0"] .px2-hero__compare {
+    min-height: 52px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .money-page-intent-actions,
+  .pt-money-cta-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(
+    .pt-button,
+    .ui-button,
+    .ui-callout a,
+    .pt-advisor-cta a,
+    .pt-health-bridge > a,
+    .pt-money-cta-actions a,
+    .money-page-intent-actions a,
+    [data-product-experience="2.0"] .px2-price__cta,
+    [data-product-experience="2.0"] .px2-hero__compare
+  ) {
+    transition: none !important;
+  }
+}
+
+/* ============================================================
+ * Quelle: pfotentechnik-content-ui-polish.css
+ * Reihenfolge beim früheren Import wurde beibehalten.
+ * ============================================================ */
+/* PfotenTechnik Content + UI Polish 4.3.0 */
+:root {
+  --pt-faq-radius: 16px;
+  --pt-faq-summary-height: 58px;
+}
+
+/* Startseite: dieselbe Ringnote wie Produkt- und Vergleichsseiten. */
+.home3-product-card .pt-score--ring-compact {
+  width: 100%;
+  margin-top: auto !important;
+  padding-top: 1rem !important;
+  border-top: 1px solid color-mix(in srgb, var(--pt-theme-text-soft, #64748b) 17%, transparent);
+}
+.home3-product-card .pt-score--ring-compact .pt-score__summary { gap: .8rem; }
+.home3-product-card .pt-score--ring-compact .pt-score__ring {
+  width: 72px; height: 72px; flex-basis: 72px;
+}
+.home3-product-card .pt-score--ring-compact .pt-score__ring-inner {
+  width: 57px; height: 57px;
+}
+.home3-product-card .pt-score--ring-compact .pt-score__ring .pt-score__value { font-size: 1.38rem; }
+.home3-product-card .pt-score--ring-compact .pt-score__ring small { font-size: .62rem; }
+.home3-product-card .pt-score--ring-compact .pt-score__verdict { font-size: .9rem; line-height: 1.2; }
+.home3-product-card .pt-score--ring-compact .pt-score__label { font-size: .72rem; line-height: 1.35; }
+.home3-product-card .home3-card-content > b {
+  display: inline-flex; width: fit-content; min-height: 40px; align-items: center;
+  gap: .45rem; margin-top: .85rem; color: var(--pt-theme-accent-text, var(--home3-accent)) !important;
+  font-size: .95rem; font-weight: 850; line-height: 1.25;
+}
+.home3-product-card .home3-card-content > b::after { content: "→"; transition: transform 150ms ease; }
+.home3-product-card:hover .home3-card-content > b::after { transform: translateX(3px); }
+
+/* Allgemeine FAQ-Blöcke: kompakt geschlossen, großzügig erst geöffnet. */
+.faq-section { margin-top: clamp(3.5rem, 7vw, 6rem); }
+.faq-section .ui-section-header { margin-bottom: 1rem !important; }
+.faq-section .ui-section-header > span { margin-bottom: .5rem !important; font-size: .72rem !important; }
+.faq-section .ui-section-header h2 {
+  margin: 0 !important; font-size: clamp(2rem, 5vw, 3.4rem) !important;
+  line-height: 1.04 !important;
+}
+.faq-section .ui-accordion { display: grid !important; gap: .55rem !important; }
+.faq-section .ui-accordion-item {
+  min-height: 0 !important; overflow: clip; padding: 0 !important;
+  border: 1px solid var(--pt-theme-border, var(--border)) !important;
+  border-radius: var(--pt-faq-radius) !important;
+  background: var(--pt-theme-surface, #fff) !important; box-shadow: none !important;
+}
+.faq-section .ui-accordion-item summary {
+  display: grid; min-height: var(--pt-faq-summary-height);
+  grid-template-columns: minmax(0, 1fr) 22px; gap: .8rem; align-items: center;
+  padding: .85rem 1rem !important; color: var(--pt-theme-text, var(--text)) !important;
+  font-size: 1.02rem !important; font-weight: 820 !important; line-height: 1.35 !important;
+  letter-spacing: -.015em; cursor: pointer; list-style: none;
+}
+.faq-section .ui-accordion-item summary::-webkit-details-marker { display: none; }
+.faq-section .ui-accordion-item summary::marker { content: ""; }
+.faq-section .ui-accordion-item summary::after {
+  display: grid; width: 22px; height: 22px; place-items: center;
+  color: var(--pt-theme-text-soft, var(--muted)); font-size: 1rem; font-weight: 800;
+  line-height: 1; content: "⌄"; transform: translateY(-2px); transition: transform 150ms ease;
+}
+.faq-section .ui-accordion-item[open] summary::after { transform: rotate(180deg) translateY(2px); }
+.faq-section .ui-accordion-item[open] summary {
+  border-bottom: 1px solid var(--pt-theme-divider, var(--border));
+}
+.faq-section .ui-accordion-item p {
+  max-width: 72ch; margin: 0 !important; padding: .9rem 1rem 1rem !important;
+  color: var(--pt-theme-text-soft, var(--muted)) !important;
+  font-size: 1rem !important; line-height: 1.65 !important;
+}
+
+/* Produktseiten-FAQ folgt demselben Rhythmus. */
+[data-product-page] .details__faq { gap: 0 !important; }
+[data-product-page] .details__faq > h2 { margin-bottom: .75rem !important; }
+[data-product-page] .details__faq details {
+  padding: 0 !important; border-top: 1px solid var(--px2-border) !important;
+}
+[data-product-page] .details__faq details:first-of-type { border-top: 0 !important; }
+[data-product-page] .details__faq details > summary {
+  min-height: 54px !important; padding: .78rem 0 !important;
+  font-size: 1rem !important; line-height: 1.4 !important;
+}
+[data-product-page] .details__faq details > p {
+  margin: 0 !important; padding: 0 0 .95rem !important;
+  font-size: 1rem !important; line-height: 1.62 !important;
+}
+
+/* Ruhiger Vergleichsabschluss; doppelte Prosa entfernt der Installer. */
+.comparison-detail .comparison-content { margin-top: clamp(2.5rem, 5vw, 4.5rem); }
+.comparison-detail .comparison-content > :first-child { margin-top: 0; }
+.comparison-detail .comparison-content h2 { margin-top: clamp(3.2rem, 7vw, 5rem); }
+.comparison-detail .comparison-content h3 { margin-top: clamp(1.8rem, 4vw, 2.7rem); }
+
+@media (max-width: 760px) {
+  .comparison-detail { padding-bottom: calc(9.5rem + env(safe-area-inset-bottom)); }
+  .faq-section { margin-top: 3.5rem; }
+  .faq-section .ui-section-header h2 { font-size: clamp(2rem, 9vw, 2.65rem) !important; }
+  .faq-section .ui-accordion-item summary {
+    min-height: 56px; padding: .78rem .9rem !important; font-size: 1rem !important;
+  }
+  .faq-section .ui-accordion-item p { padding: .8rem .9rem .95rem !important; }
+  .home3-product-card .pt-score--ring-compact .pt-score__ring {
+    width: 70px; height: 70px; flex-basis: 70px;
+  }
+  .home3-product-card .pt-score--ring-compact .pt-score__ring-inner {
+    width: 55px; height: 55px;
+  }
+}
+
+html[data-theme="dark"] .faq-section .ui-accordion-item,
+html.dark .faq-section .ui-accordion-item,
+body.dark .faq-section .ui-accordion-item,
+[data-theme="dark"] .faq-section .ui-accordion-item {
+  border-color: var(--pt-theme-border-strong) !important;
+  background: var(--pt-theme-surface) !important;
+}
+html[data-theme="dark"] .faq-section .ui-accordion-item[open],
+html.dark .faq-section .ui-accordion-item[open],
+body.dark .faq-section .ui-accordion-item[open],
+[data-theme="dark"] .faq-section .ui-accordion-item[open] {
+  background: var(--pt-theme-surface-2) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-section .ui-accordion-item summary::after,
+  .home3-product-card .home3-card-content > b::after { transition: none !important; }
+}

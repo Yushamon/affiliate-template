@@ -53,28 +53,6 @@
   --pt-transition-base: 220ms ease;
 }
 
-/* Kompatibilitäts-Aliasse für bestehende Komponenten.
- * Diese Aliasse verhindern parallele Farb- und Schattenquellen.
- */
-:root {
-  --primary: var(--pt-color-brand-600);
-  --primary-dark: var(--pt-color-brand-700);
-  --primary-soft: var(--pt-color-brand-100);
-  --secondary: var(--pt-color-brand-500);
-  --accent: var(--pt-color-warning-500);
-  --text: var(--pt-color-text);
-  --muted: var(--pt-color-text-muted);
-  --bg: var(--pt-color-page);
-  --bg-soft: var(--pt-color-surface-soft);
-  --surface: var(--pt-color-surface);
-  --surface-soft: var(--pt-color-surface-soft);
-  --card: var(--pt-color-surface-raised);
-  --border: var(--pt-color-border);
-  --border-strong: var(--pt-color-border-strong);
-  --shadow-soft: var(--pt-shadow-sm);
-  --shadow-strong: var(--pt-shadow-lg);
-}
-
 [data-theme="dark"],
 .dark {
   --pt-color-text: #edf5ef;
