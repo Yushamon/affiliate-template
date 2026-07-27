@@ -101,7 +101,10 @@
     "design-system:visual-qa": "node scripts/design-system/visual-qa.mjs",
     "design-system:visual-qa:strict": "node scripts/design-system/visual-qa.mjs --strict",
     "design-system:responsive:audit": "node scripts/design-system/responsive-audit.mjs",
-    "design-system:density:audit": "node scripts/design-system/density-audit.mjs"
+    "design-system:density:audit": "node scripts/design-system/density-audit.mjs",
+    "comparison:release:check": "node scripts/comparison-platform/release-closure.mjs --strict",
+    "comparison:release:final": "node scripts/comparison-platform/release-closure.mjs --strict --require-visual",
+    "comparison:release:signoff": "node scripts/comparison-platform/release-closure.mjs --confirm-visual --strict --require-visual"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

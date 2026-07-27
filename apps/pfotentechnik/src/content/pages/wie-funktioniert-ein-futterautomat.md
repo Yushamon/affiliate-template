@@ -109,7 +109,7 @@ Ein Automat ist daher kein Gerät, das nach der Einrichtung unbegrenzt allein ar
 
 ## Vom Funktionsprinzip zum passenden Vergleich
 
-Nach der technischen Einordnung sollte die Auswahl nach dem eigentlichen Problem erfolgen: [Offline-Modelle ohne WLAN vergleichen](/vergleiche/-ohne-wlan/), [Kamera-Futterautomaten vergleichen](/vergleiche/-mit-kamera/) oder [Lösungen für zwei Katzen vergleichen](/vergleiche/-fuer-zwei-katzen/). So werden Timer, Kamera und Zugangskontrolle nicht als austauschbare Funktionen behandelt.
+Nach der technischen Einordnung sollte die Auswahl nach dem eigentlichen Problem erfolgen: [Offline-Modelle ohne WLAN vergleichen](/vergleiche/beste-futterautomaten-ohne-wlan/), [Kamera-Futterautomaten vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/) oder [Lösungen für zwei Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/). So werden Timer, Kamera und Zugangskontrolle nicht als austauschbare Funktionen behandelt.
 
 ## Methodik unserer Einordnung
 

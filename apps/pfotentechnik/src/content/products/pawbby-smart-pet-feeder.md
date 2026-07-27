@@ -56,19 +56,33 @@ images:
       alt: Geöffneter Vorratsbehälter des PAWBBY Smart Pet Feeder beim Nachfüllen
     - src: ../../assets/images/products/pawbby-smart-pet-feeder/gallery-3.webp
       alt: Ausgabeschacht und Edelstahlnapf des PAWBBY beim Portionieren von Trockenfutter
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.5
 score: 71
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:30:31.398Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-27T20:30:31.398Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   app: 3.6

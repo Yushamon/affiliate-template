@@ -69,7 +69,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 16 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-07-27T13:29:25.857Z"
+  checkedAt: "2026-07-27T20:26:06.694Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -84,12 +84,12 @@ rating: 4.1
 score: 82
 
 priceState: "available"
-priceUpdated: "2026-07-27T13:29:25.857Z"
+priceUpdated: "2026-07-27T20:26:06.694Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T13:29:25.857Z"
+availabilityUpdated: "2026-07-27T20:26:06.694Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -329,7 +329,7 @@ Zur Backup-Stromversorgung macht die aktuelle Produktseite widersprüchliche Ang
 
 Der Solo 2 besitzt einen Futterbehälter. Der [PETKIT YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) trennt zwei Vorräte, schützt die ausgegebene Portion aber ebenfalls nicht vor einem anderen Tier.
 
-Der [Vergleich der Kamera-Futterautomaten](/vergleiche/-mit-kamera/) stellt den Solo 2 weiteren Kamera-Konzepten gegenüber.
+Der [Vergleich der Kamera-Futterautomaten](/vergleiche/beste-futterautomaten-mit-kamera/) stellt den Solo 2 weiteren Kamera-Konzepten gegenüber.
 
 ## Methodik und Quellen
 

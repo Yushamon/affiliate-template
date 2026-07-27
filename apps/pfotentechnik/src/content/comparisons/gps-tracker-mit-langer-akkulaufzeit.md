@@ -161,6 +161,7 @@ faq:
     answer: >-
       Produktdaten, Tarife und Verfügbarkeit werden regelmäßig geprüft. Bei wesentlichen Modell- oder Tarifänderungen
       wird die Einordnung angepasst.
+canonical: /vergleiche/gps-tracker-mit-langer-akkulaufzeit/
 ---
 
 ## Kurzantwort

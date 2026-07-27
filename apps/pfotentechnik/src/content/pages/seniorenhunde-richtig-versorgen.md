@@ -329,7 +329,7 @@ Für Senioren sind deshalb besonders wichtig:
 - gut sichtbare Restmengen,
 - eine Stromausfall- oder Batterielösung.
 
-Eine Übersicht geeigneter Geräte bietet der [Vergleich der besten Futterautomaten für Hunde](/vergleiche/-fuer-hunde/). Bei Nassfutter, Medikamenten, Appetitverlust oder stark schwankender Futteraufnahme ist eine pauschale Automatenlösung häufig ungeeignet.
+Eine Übersicht geeigneter Geräte bietet der [Vergleich der besten Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/). Bei Nassfutter, Medikamenten, Appetitverlust oder stark schwankender Futteraufnahme ist eine pauschale Automatenlösung häufig ungeeignet.
 
 ## Fazit
 

@@ -55,19 +55,34 @@ images:
       alt: Pumpe und Filter des oneisall 2,2L Cordless Cat Fountain
     - src: ../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-3.webp
       alt: oneisall 2,2L Cordless Cat Fountain im Katzenhaushalt
+price:
+  current: 33.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-27T20:29:57.117Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=oneisall+2%2C2L+Cordless+Cat+Fountain
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/4yYxRhE"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 76
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-27T20:29:57.117Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-27T20:29:57.117Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 3.85

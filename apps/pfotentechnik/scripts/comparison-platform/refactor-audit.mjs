@@ -182,6 +182,16 @@ const containsLegacyUrl = (source, oldUrl) => {
 for (const rootDir of scanRoots) {
   for (const file of await walk(rootDir)) {
     const source = await readFile(file, "utf8");
+
+    const malformedComparisonPath = source.match(/\/vergleiche\/-[a-z0-9-]+\/?/i);
+    if (malformedComparisonPath) {
+      errors.push(
+        "MALFORMED_COMPARISON_PATH " +
+        malformedComparisonPath[0] +
+        " in " +
+        path.relative(root, file)
+      );
+    }
     for (const oldUrl of forbidden) {
       if (containsLegacyUrl(source, oldUrl)) {
         errors.push(

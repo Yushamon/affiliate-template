@@ -65,7 +65,51 @@ const aliases: Record<string, string[]> = {
   tiergroesse: ["tiergroesse", "petsize"],
   preisklasse: ["preisklasse", "pricetier", "pricecategory"],
   score: ["score", "editorialscore"],
-  bewertung: ["bewertung", "rating"]
+  bewertung: ["bewertung", "rating"],
+
+  mindestportion: ["mindestportion","realemindestportion","portionsgroesse","portionsgrosse","portiongrams","portionml"],
+  krokettengroesse: ["krokettengroesse","krokettengrosse","kibblemaxmm"],
+  napfergonomie: ["napfergonomie","napf","napfmaterial","schale"],
+  standfestigkeit: ["standfestigkeit","stabilitaet","standsicherheit"],
+  offlinezeitplan: ["offlinezeitplan","notstrom","stromreserve","backuppower","batterie"],
+  stromreserve: ["stromreserve","notstrom","backuppower","batterie"],
+  kontrollierbarkeit: ["kontrollierbarkeit","app","kamera","zugang","statusmeldungen"],
+  tiertrennung: ["tiertrennung","zugangskontrolle","mikrochip","multipet"],
+  zugangskontrolle: ["zugangskontrolle","zugang","mikrochip","access"],
+  futterkammern: ["futterkammern","kammern","futterfaecher","mealcount"],
+  napfkonzept: ["napfkonzept","napf","schale","napfmaterial"],
+  napfundreinigung: ["napfundreinigung","napf","reinigung","cleaning"],
+  geraeusch: ["geraeusch","lautstaerke","noise"],
+  maximaleausgabe: ["maximaleausgabe","maxmealgrams","maxmealml"],
+  geeignetehundegroesse: ["geeignetehundegroesse","hundegroesse","petsize","tiergroesse"],
+  zeitplaene: ["zeitplaene","zeitplane","mahlzeiten","mealcount"],
+  stoerungsmeldungen: ["stoerungsmeldungen","statusmeldungen","app"],
+  vorrat: ["vorrat","kapazitaet","reservoirliters"],
+};
+
+const comparisonAliasCandidates = (
+  normalized: string,
+  label: string
+): Set<string> => {
+  const seeds = new Set([
+    normalized,
+    normalizeKey(label)
+  ]);
+  const result = new Set(seeds);
+
+  for (const [group, values] of Object.entries(aliases)) {
+    const normalizedGroup = normalizeKey(group);
+    const normalizedValues = values.map(normalizeKey);
+    if (
+      seeds.has(normalizedGroup) ||
+      normalizedValues.some((value) => seeds.has(value))
+    ) {
+      result.add(normalizedGroup);
+      normalizedValues.forEach((value) => result.add(value));
+    }
+  }
+
+  return result;
 };
 
 const asRecord = (value: unknown): Record<string, unknown> =>
@@ -261,6 +305,39 @@ const deriveKnownValue = (
     case "notstrom": return typeof filters?.backupPower === "boolean"
       ? filters.backupPower ? "Mit Batterie-Backup" : "Ohne Batterie-Backup"
       : undefined;
+    case "mindestportion":
+    case "realemindestportion":
+    case "portionsgroesse":
+      return filters?.portionGrams
+        ? `${filters.portionGrams} g je Einheit`
+        : filters?.portionMl
+          ? `${filters.portionMl} ml je Einheit`
+          : undefined;
+    case "krokettengroesse":
+      return filters?.kibbleMaxMm ? `Bis ${filters.kibbleMaxMm} mm` : undefined;
+    case "maximaleausgabe":
+      return filters?.maxMealGrams
+        ? `Bis ${filters.maxMealGrams} g je Mahlzeit`
+        : filters?.maxMealMl
+          ? `Bis ${filters.maxMealMl} ml je Mahlzeit`
+          : undefined;
+    case "geeignetehundegroesse":
+      return filters?.petSize?.length ? sizeLabels(filters.petSize) : undefined;
+    case "stromreserve":
+    case "offlinezeitplan":
+      return typeof filters?.backupPower === "boolean"
+        ? filters.backupPower
+          ? "Zeitplan mit Batterie-Backup"
+          : "Keine bestätigte Stromreserve"
+        : undefined;
+    case "kontrollierbarkeit": {
+      const controls = [
+        filters?.app ? "App" : undefined,
+        filters?.camera ? "Kamera" : undefined,
+        filters?.access === "microchip" ? "Mikrochip-Zugang" : undefined
+      ].filter(Boolean);
+      return controls.length ? controls.join(", ") : undefined;
+    }
     case "preisklasse": return filters?.priceTier ?? data.priceCategory;
     case "score": return data.score ?? Math.round(data.rating * 20);
     case "bewertung": return data.rating;
@@ -286,11 +363,7 @@ export function resolveComparisonValue({
   criterion
 }: ResolveInput): string {
   const normalized = normalizeKey(criterion.key);
-  const candidates = new Set([
-    normalized,
-    normalizeKey(criterion.label),
-    ...(aliases[normalized] ?? [])
-  ]);
+  const candidates = comparisonAliasCandidates(normalized, criterion.label);
 
   for (const record of [item.overrides, item.values]) {
     const value = formatValue(findRecordValue(record, candidates), criterion);

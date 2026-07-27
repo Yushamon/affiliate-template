@@ -64,19 +64,33 @@ images:
       alt: HoneyGuardian A305D, weitere redaktionelle Ansicht 2
     - src: ../../assets/images/products/honeyguardian-a305d/gallery-3.webp
       alt: HoneyGuardian A305D – weitere Produktansicht
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 73
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:28:19.712Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
+availability: "temporarily-unavailable"
+availabilityUpdated: "2026-07-27T20:28:19.712Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "required"
+maintenanceStatus: "complete"
 
 ratings:
   app: 2.25

@@ -189,8 +189,8 @@ Auch ein Edelstahlnapf sollte regelmäßig gereinigt werden. Entscheidend bleibt
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten unter 100 Euro](/vergleiche/-unter-100-euro/)
-* [Beste Futterautomaten für Berufstätige](/vergleiche/-fuer-berufstaetige/)
+* [Beste Futterautomaten unter 100 Euro](/vergleiche/beste-futterautomaten-unter-100-euro/)
+* [Beste Futterautomaten für Berufstätige](/vergleiche/beste-futterautomaten-fuer-berufstaetige/)
 
 ## Fazit
 

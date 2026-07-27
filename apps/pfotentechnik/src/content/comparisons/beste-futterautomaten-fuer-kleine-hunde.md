@@ -74,7 +74,7 @@ criteria:
     label: Mindestportion
     format: auto
     fallback: –
-  - key: krokettengro-e
+  - key: krokettengroesse
     label: Krokettengröße
     format: auto
     fallback: –
@@ -210,7 +210,7 @@ Auch bei überwiegender Nassfutter- oder BARF-Fütterung können spezielle Lösu
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat für Welpen](/vergleiche/-fuer-welpen/)
+* [Futterautomat für Welpen](/vergleiche/beste-futterautomaten-fuer-welpen/)
 * [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
 
 ## Fazit

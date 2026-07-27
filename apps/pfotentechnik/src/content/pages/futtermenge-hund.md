@@ -44,7 +44,7 @@ recommendationJourney:
   mode: filtered
   animal: dog
   petSize: small
-  comparisonHref: /vergleiche/-fuer-hunde/
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -94,7 +94,7 @@ Arbeite vom medizinischen Sonderfall zur alltäglichen Feinjustierung:
 
 „Eine Portion“ ist bei Futterautomaten keine universelle Einheit. Gib zehn bis zwanzig Portionen aus, wiege jede einzeln und berechne den Durchschnitt. Große Streuung oder Blockaden werden so sichtbar. Nach einem Futterwechsel erneut messen, denn Krokettendurchmesser und -form verändern die Ausgabe.
 
-Der Guide [Portionsgröße beim Futterautomaten](/welche-portionsgroesse-ist-richtig/) vertieft die Gerätekalibrierung. Passende Modelle vergleicht [Beste Futterautomaten für Hunde](/vergleiche/-fuer-hunde/).
+Der Guide [Portionsgröße beim Futterautomaten](/welche-portionsgroesse-ist-richtig/) vertieft die Gerätekalibrierung. Passende Modelle vergleicht [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/).
 
 ## Leckerli und Anpassung
 

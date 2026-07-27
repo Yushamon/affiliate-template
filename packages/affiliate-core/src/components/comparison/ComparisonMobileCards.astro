@@ -76,7 +76,7 @@ const {
                 data-has-differences={String(row.hasDifferences)}
               >
                 <dt>{row.criterion.label}</dt>
-                <dd>{value}</dd>
+                <dd>{value ?? <span class="comparison-value-missing" title="Nicht verlässlich dokumentiert">–</span>}</dd>
               </div>
             );
           })}

@@ -17,7 +17,7 @@ export const advisorGuides: AdvisorGuide[] = [
   },
   {
     title: "Futterautomaten für Nassfutter",
-    href: "/vergleiche/-fuer-nassfutter/",
+    href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
     description:
       "Kühlung, Fächerlösungen und Hygiene bei Nassfutter.",
     when: (answers) =>

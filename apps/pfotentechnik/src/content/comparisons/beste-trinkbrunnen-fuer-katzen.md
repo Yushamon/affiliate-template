@@ -263,6 +263,7 @@ faq:
 heroImage:
   src: ../../assets/images/products/petkit-eversweet-solo-2-fountain/comparison.webp
   alt: Beste Trinkbrunnen für Katzen – redaktionelles Vergleichsbild
+canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
 ---
 
 Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. Für eine Katze ist ein leises, gut zerlegbares Netzmodell oft sinnvoller als ein großes Tracking-System. Mehrere Katzen benötigen weiterhin räumlich getrennte Wasserstellen.

@@ -61,7 +61,7 @@ const {
             <td data-label={product.title} data-product-column={product.slug}>
               {typeof product.rating === "number" ? (
                 <EditorialScore value={product.rating} scale={100} variant="inline" />
-              ) : "Keine Angabe"}
+              ) : <span class="comparison-value-missing" title="Kein redaktioneller Score verfügbar">–</span>}
             </td>
           ))}
         </tr>
@@ -75,7 +75,7 @@ const {
             return (
               <td data-label={product.title} data-product-column={product.slug}>
                 <div class="comparison-table-price">
-                  <strong>{price.amountLabel ?? (price.url ? "Beim Händler prüfen" : "Keine Angabe")}</strong>
+                  <strong>{price.amountLabel ?? (price.url ? "Beim Händler prüfen" : "Preis nicht verfügbar")}</strong>
                 </div>
               </td>
             );

@@ -192,9 +192,9 @@ Gerade bei längerer Abwesenheit sollte geprüft werden, ob ausreichend Futter v
 ## Weitere passende Ratgeber
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Beste Futterautomaten für Berufstätige](/vergleiche/-fuer-berufstaetige/)
+* [Beste Futterautomaten für Berufstätige](/vergleiche/beste-futterautomaten-fuer-berufstaetige/)
 * [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten unter 100 Euro](/vergleiche/-unter-100-euro/)
+* [Beste Futterautomaten unter 100 Euro](/vergleiche/beste-futterautomaten-unter-100-euro/)
 
 ## Fazit
 

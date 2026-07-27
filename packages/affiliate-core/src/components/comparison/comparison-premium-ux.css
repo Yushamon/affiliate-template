@@ -984,3 +984,76 @@ body.dark,
   white-space: nowrap;
 }
 /* PT_PRICE_ALIGNMENT_13_1_0_END */
+
+/* PT_COMPARISON_RELEASE_CLOSURE_14_0_0_START */
+[data-dark-mode-ready="true"] {
+  color: var(--comparison-text);
+}
+
+[data-dark-mode-ready="true"] :is(
+  .recommendation-card,
+  .comparison-mobile-product,
+  .comparison-table-wrap,
+  .comparison-winner-card,
+  .comparison-quick-answer,
+  .comparison-insight-summary,
+  .comparison-methodology,
+  .comparison-verdict
+) {
+  border-color: var(--comparison-line) !important;
+  color: var(--comparison-text) !important;
+  background-color: var(--comparison-surface) !important;
+}
+
+[data-dark-mode-ready="true"] :is(
+  h2,
+  h3,
+  h4,
+  strong,
+  th,
+  td,
+  dt,
+  dd
+) {
+  color: var(--comparison-text);
+}
+
+[data-dark-mode-ready="true"] :is(
+  p,
+  small,
+  .comparison-section__note,
+  .recommendation-card__manufacturer
+) {
+  color: var(--comparison-muted);
+}
+
+[data-dark-mode-ready="true"] :is(
+  .recommendation-card__image-link,
+  .comparison-mobile-product__image,
+  .comparison-winner-card__image
+) {
+  background: #f5f7f5 !important;
+}
+
+.comparison-value-missing {
+  color: var(--comparison-muted);
+  font-weight: 700;
+}
+
+html[data-theme="dark"] [data-dark-mode-ready="true"] .comparison-table,
+html.dark [data-dark-mode-ready="true"] .comparison-table,
+body.dark [data-dark-mode-ready="true"] .comparison-table,
+[data-theme="dark"] [data-dark-mode-ready="true"] .comparison-table {
+  color: var(--comparison-text);
+  background: var(--comparison-surface);
+}
+
+html[data-theme="dark"] [data-dark-mode-ready="true"] .comparison-table :is(th, td),
+html.dark [data-dark-mode-ready="true"] .comparison-table :is(th, td),
+body.dark [data-dark-mode-ready="true"] .comparison-table :is(th, td),
+[data-theme="dark"] [data-dark-mode-ready="true"] .comparison-table :is(th, td) {
+  border-color: var(--comparison-line);
+  color: var(--comparison-text);
+  background: var(--comparison-surface);
+}
+/* PT_COMPARISON_RELEASE_CLOSURE_14_0_0_END */

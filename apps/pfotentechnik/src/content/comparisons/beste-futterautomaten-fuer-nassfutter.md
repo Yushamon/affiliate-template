@@ -479,9 +479,9 @@ Nicht gleichgesetzt werden aktive Kühlung und Kühlakku, Fachzahl und spätere 
 
 ## Weiterführende Kaufberatung
 
-- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
-- [Beste Futterautomaten für Hunde](/vergleiche/-fuer-hunde/)
-- [Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/)
+- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/)
+- [Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
 - [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/)
 - [Smarte Futterautomaten](/smarte-futterautomaten/)
 - [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/)
@@ -825,7 +825,7 @@ Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/vergleich
 
 ## Aktive Kühlung als eigenes System
 
-Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
+Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
 
 ## Fazit
 

@@ -166,7 +166,7 @@ Diese Seite behandelt den **breiten Mehrtierhaushalt**: mehrere Katzen, mehrere 
 Für genau zwei Katzen sind zwei spezialisierte Einstiege sinnvoll:
 
 - [Bauart und Fütterungsproblem bestimmen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
-- [Fünf konkrete Systeme vergleichen](/vergleiche/-fuer-zwei-katzen/)
+- [Fünf konkrete Systeme vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
 
 So konkurriert die allgemeine Mehrtierseite nicht mit der spezifischen Zwei-Katzen-Kaufberatung.
 

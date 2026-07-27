@@ -304,7 +304,7 @@ Video kann zeigen, dass ein Tier am Napf war. Es erklärt nicht, warum es wenige
 ## Video nur mit echtem Mehrwert
 Wenn Livekontrolle deinen Alltag verbessert, ist ein Kameramodell sinnvoll. Für reine Zeitpläne reicht meist ein günstigeres App-System.
 
-[Kamera-Modelle direkt vergleichen](/vergleiche/-mit-kamera/)
+[Kamera-Modelle direkt vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
 
 ## Die kurze Antwort
 
@@ -441,7 +441,7 @@ Vor dem Kauf prüfen:
 
 ## Ratgeber oder Produktvergleich?
 
-Diese Seite beantwortet, **ob** eine Kamera für deinen Alltag sinnvoll ist und welche Grenzen Livebild, Audio und Ereignisclips haben. Der separate [Vergleich der besten Futterautomaten mit Kamera](/vergleiche/-mit-kamera/) beantwortet, **welches konkrete Modell** zu deinen Anforderungen passt.
+Diese Seite beantwortet, **ob** eine Kamera für deinen Alltag sinnvoll ist und welche Grenzen Livebild, Audio und Ereignisclips haben. Der separate [Vergleich der besten Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) beantwortet, **welches konkrete Modell** zu deinen Anforderungen passt.
 
 So vermeiden beide Seiten dieselbe Suchintention: erst den Nutzen klären, danach Produkte vergleichen.
 
@@ -615,7 +615,7 @@ Eine Kamera zeigt nur einen Ausschnitt. Mehr dazu steht im Ratgeber [Futterautom
 
 ## PETKIT YumShare Solo 2 einordnen
 
-Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) ist ein Ein-Kammer-Kameraautomat mit 3-Liter-Vorrat und Dual-Band-WLAN. Er eignet sich für Livebild und geplante Trockenfutterportionen, trennt aber keine Tiere am Napf. Der [direkte Kamera-Vergleich](/vergleiche/-mit-kamera/) stellt ihn einfacheren und komplexeren Kamera-Konzepten gegenüber.
+Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) ist ein Ein-Kammer-Kameraautomat mit 3-Liter-Vorrat und Dual-Band-WLAN. Er eignet sich für Livebild und geplante Trockenfutterportionen, trennt aber keine Tiere am Napf. Der [direkte Kamera-Vergleich](/vergleiche/beste-futterautomaten-mit-kamera/) stellt ihn einfacheren und komplexeren Kamera-Konzepten gegenüber.
 
 ## Fazit
 

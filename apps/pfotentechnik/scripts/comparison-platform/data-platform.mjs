@@ -39,7 +39,45 @@ const aliases = {
   tiergroesse: ["tiergroesse", "petsize"],
   preisklasse: ["preisklasse", "pricetier", "pricecategory"],
   score: ["score", "editorialscore"],
-  bewertung: ["bewertung", "rating"]
+  bewertung: ["bewertung", "rating"],
+
+  mindestportion: ["mindestportion","realemindestportion","portionsgroesse","portionsgrosse","portiongrams","portionml"],
+  krokettengroesse: ["krokettengroesse","krokettengrosse","kibblemaxmm"],
+  napfergonomie: ["napfergonomie","napf","napfmaterial","schale"],
+  standfestigkeit: ["standfestigkeit","stabilitaet","standsicherheit"],
+  offlinezeitplan: ["offlinezeitplan","notstrom","stromreserve","backuppower","batterie"],
+  stromreserve: ["stromreserve","notstrom","backuppower","batterie"],
+  kontrollierbarkeit: ["kontrollierbarkeit","app","kamera","zugang","statusmeldungen"],
+  tiertrennung: ["tiertrennung","zugangskontrolle","mikrochip","multipet"],
+  zugangskontrolle: ["zugangskontrolle","zugang","mikrochip","access"],
+  futterkammern: ["futterkammern","kammern","futterfaecher","mealcount"],
+  napfkonzept: ["napfkonzept","napf","schale","napfmaterial"],
+  napfundreinigung: ["napfundreinigung","napf","reinigung","cleaning"],
+  geraeusch: ["geraeusch","lautstaerke","noise"],
+  maximaleausgabe: ["maximaleausgabe","maxmealgrams","maxmealml"],
+  geeignetehundegroesse: ["geeignetehundegroesse","hundegroesse","petsize","tiergroesse"],
+  zeitplaene: ["zeitplaene","zeitplane","mahlzeiten","mealcount"],
+  stoerungsmeldungen: ["stoerungsmeldungen","statusmeldungen","app"],
+  vorrat: ["vorrat","kapazitaet","reservoirliters"],
+};
+
+const comparisonAliasCandidates = (normalized, label) => {
+  const seeds = new Set([normalized, normalizeKey(label)]);
+  const result = new Set(seeds);
+
+  for (const [group, values] of Object.entries(aliases)) {
+    const normalizedGroup = normalizeKey(group);
+    const normalizedValues = values.map(normalizeKey);
+    if (
+      seeds.has(normalizedGroup) ||
+      normalizedValues.some((value) => seeds.has(value))
+    ) {
+      result.add(normalizedGroup);
+      normalizedValues.forEach((value) => result.add(value));
+    }
+  }
+
+  return result;
 };
 
 const asRecord = (value) =>
@@ -113,6 +151,39 @@ const knownValue = (product, item, normalized) => {
     case "zugang": return filters.access === "microchip" ? "Mikrochipgesteuert" : filters.access === "open" ? "Freier Zugang" : undefined;
     case "ausfallsicherheit":
     case "notstrom": return typeof filters.backupPower === "boolean" ? (filters.backupPower ? "Mit Batterie-Backup" : "Ohne Batterie-Backup") : undefined;
+    case "mindestportion":
+    case "realemindestportion":
+    case "portionsgroesse":
+      return filters.portionGrams
+        ? `${filters.portionGrams} g je Einheit`
+        : filters.portionMl
+          ? `${filters.portionMl} ml je Einheit`
+          : undefined;
+    case "krokettengroesse":
+      return filters.kibbleMaxMm ? `Bis ${filters.kibbleMaxMm} mm` : undefined;
+    case "maximaleausgabe":
+      return filters.maxMealGrams
+        ? `Bis ${filters.maxMealGrams} g je Mahlzeit`
+        : filters.maxMealMl
+          ? `Bis ${filters.maxMealMl} ml je Mahlzeit`
+          : undefined;
+    case "geeignetehundegroesse":
+      return filters.petSize?.length ? mapList(filters.petSize, "size") : undefined;
+    case "stromreserve":
+    case "offlinezeitplan":
+      return typeof filters.backupPower === "boolean"
+        ? filters.backupPower
+          ? "Zeitplan mit Batterie-Backup"
+          : "Keine bestätigte Stromreserve"
+        : undefined;
+    case "kontrollierbarkeit": {
+      const controls = [
+        filters.app ? "App" : undefined,
+        filters.camera ? "Kamera" : undefined,
+        filters.access === "microchip" ? "Mikrochip-Zugang" : undefined
+      ].filter(Boolean);
+      return controls.length ? controls.join(", ") : undefined;
+    }
     case "preisklasse": return filters.priceTier ?? product?.priceCategory;
     case "score": return product?.score ?? (typeof product?.rating === "number" ? Math.round(product.rating * 20) : undefined);
     case "bewertung": return product?.rating;
@@ -132,7 +203,7 @@ const knownValue = (product, item, normalized) => {
 
 export function resolveComparisonValue({ product, item = {}, criterion }) {
   const normalized = normalizeKey(criterion.key);
-  const candidates = new Set([normalized, normalizeKey(criterion.label), ...(aliases[normalized] ?? [])]);
+  const candidates = comparisonAliasCandidates(normalized, criterion.label);
 
   for (const record of [item.overrides, item.values]) {
     const value = formatValue(findRecordValue(record, candidates), criterion);

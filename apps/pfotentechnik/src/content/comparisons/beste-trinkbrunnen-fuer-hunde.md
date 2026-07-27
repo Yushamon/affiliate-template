@@ -248,6 +248,7 @@ faq:
 heroImage:
   src: ../../assets/images/products/oneisall-7l-dog-water-fountain/comparison.webp
   alt: Beste Trinkbrunnen für Hunde – redaktionelles Vergleichsbild
+canonical: /vergleiche/beste-trinkbrunnen-fuer-hunde/
 ---
 
 Ein **Trinkbrunnen für Hunde** muss mechanisch zum Tier passen. Für einen großen Hund ist ein kompakter Katzenbrunnen mit App oft weniger geeignet als ein einfacher großer Tank mit breiter Trinkfläche.

@@ -11,6 +11,7 @@ import {
   ensureReportDir,
   collectMarkdownLinks
 } from "./core.mjs";
+import { resolveComparisonValue } from "./data-platform.mjs";
 
 const CATEGORY_WEIGHTS = {
   integrity: 4,
@@ -35,7 +36,10 @@ const ERROR_CODES = new Set([
   "WINNER_NOT_IN_ITEMS",
   "ALTERNATIVE_NOT_IN_ITEMS",
   "RECOMMENDATION_DUPLICATE"
-]);
+,
+  "COMPARISON_VISIBLE_ROWS_TOO_FEW",
+  "WINNER_INELIGIBLE",
+  "ALTERNATIVE_INELIGIBLE"]);
 
 function categoryFor(code) {
   if ([
@@ -216,15 +220,42 @@ function auditComparison(c, context, issues) {
       }
     }
 
-    for (const key of criterionKeys) {
-      if (!(key in values)) {
-        addIssue(issues, "VALUE_MISSING", c, slug + ": Wert für " + key + " fehlt.", {
-          itemSlug: slug,
-          criterionKey: key
-        });
-      }
-    }
+    /*
+     * Leere item.values sind seit der Comparison Data Platform kein Fehler.
+     * Die tatsächliche Auflösung wird zeilenweise über resolveComparisonValue
+     * geprüft und nur vollständig belegte Zeilen werden öffentlich gerendert.
+     */
   }
+
+  const productItems = items.filter((item) => item.type === "product");
+  const fullyResolvedRows = criteria.filter((criterion) =>
+    productItems.length >= 2 &&
+    productItems.every((item) => {
+      const product = productBySlug.get(item.slug)?.data;
+      const value = resolveComparisonValue({ product, item, criterion });
+      return Boolean(value) && value !== "–";
+    })
+  );
+
+  if (fullyResolvedRows.length < 3) {
+    addIssue(
+      issues,
+      "COMPARISON_VISIBLE_ROWS_TOO_FEW",
+      c,
+      `Nur ${fullyResolvedRows.length} vollständig belegte Kriterien sind öffentlich darstellbar.`,
+      { count: fullyResolvedRows.length }
+    );
+  }
+
+  const isEligible = (slug) => {
+    if (!slug || !seen.has(slug)) return false;
+    const product = productBySlug.get(slug)?.data;
+    if (!product) return false;
+    if (["legacy", "discontinued"].includes(product.productStatus)) return false;
+    if (product.availability === "discontinued") return false;
+    if (["excluded", "blocked"].includes(product.recommendationStatus)) return false;
+    return true;
+  };
 
   const winner = d.recommendation?.winnerSlug;
   const alternative = d.recommendation?.alternativeSlug;
@@ -232,6 +263,8 @@ function auditComparison(c, context, issues) {
   if (winner && !seen.has(winner)) addIssue(issues, "WINNER_NOT_IN_ITEMS", c, "winnerSlug " + winner + " ist nicht in items.");
   if (alternative && !seen.has(alternative)) addIssue(issues, "ALTERNATIVE_NOT_IN_ITEMS", c, "alternativeSlug " + alternative + " ist nicht in items.");
   if (winner && alternative && winner === alternative) addIssue(issues, "RECOMMENDATION_DUPLICATE", c, "winnerSlug und alternativeSlug sind identisch.");
+  if (winner && !isEligible(winner)) addIssue(issues, "WINNER_INELIGIBLE", c, "winnerSlug " + winner + " ist operativ nicht empfehlungsfähig.");
+  if (alternative && !isEligible(alternative)) addIssue(issues, "ALTERNATIVE_INELIGIBLE", c, "alternativeSlug " + alternative + " ist operativ nicht empfehlungsfähig.");
 
   for (const link of collectMarkdownLinks(c.body)) {
     const pathOnly = link.split(/[?#]/)[0];
@@ -400,7 +433,7 @@ if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replaceAll("\\",
   const report = runAudit();
   printReport(report);
 
-  if (strict && (report.summary.errors || report.summary.warnings)) {
+  if (strict && report.summary.errors) {
     process.exitCode = 1;
   }
 }

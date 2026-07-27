@@ -98,7 +98,7 @@ premiumBlocks:
       - label: "Feuchtfütterung"
         title: "Futterautomat für Nassfutter"
         text: "Geschlossene Portionsfächer und ein passendes Kühlkonzept sind entscheidend. Vorratsautomaten eignen sich nicht."
-        href: "/vergleiche/-fuer-nassfutter/"
+        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
         cta: "Nassfutter-Systeme ansehen"
       - label: "Mehrere Tiere"
         title: "Doppelnapf oder Zugangskontrolle"
@@ -257,9 +257,9 @@ Ein Doppelnapf verhindert keinen Futterneid. Die tatsächliche Portionsmenge sol
 Bei zwei Katzen führen zwei getrennte Schritte schneller zur passenden Lösung:
 
 1. [Doppelschale, zwei Automaten oder Mikrochip wählen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
-2. [Fünf konkrete Systeme für zwei Katzen vergleichen](/vergleiche/-fuer-zwei-katzen/)
+2. [Fünf konkrete Systeme für zwei Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
 
-Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/-fuer-mehrtierhaushalte/) zusätzlich Tiergröße, Napfhöhe, Futterart und räumliche Organisation.
+Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/) zusätzlich Tiergröße, Napfhöhe, Futterart und räumliche Organisation.
 
 ## Auswahlhilfe: Welcher Futterautomat passt zu dir?
 
@@ -901,12 +901,12 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 
 ### Spezialisierte Vergleiche
 
-- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
-- [Beste Futterautomaten für Hunde](/vergleiche/-fuer-hunde/)
-- [Beste Futterautomaten mit Kamera](/vergleiche/-mit-kamera/)
-- [Beste Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/)
-- [Beste Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/)
-- [Beste Futterautomaten für Nassfutter](/vergleiche/-fuer-nassfutter/)
+- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/)
+- [Beste Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Beste Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
+- [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- [Beste Futterautomaten für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
 
 ## Glossar
 
@@ -950,9 +950,9 @@ So entsteht kein maximal ausgestatteter, sondern ein zuverlässig passender Futt
 
 Je nach Tier, Aufstellort und gewünschter Ausstattung helfen diese vertiefenden Seiten bei der weiteren Einordnung:
 
-- [Futterautomaten für Seniorenkatzen](/vergleiche/-fuer-seniorenkatzen/)
+- [Futterautomaten für Seniorenkatzen](/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/)
 - [Futterautomaten mit Akku](/vergleiche/beste-futterautomaten-mit-akku/)
-- [Futterautomaten mit Edelstahlnapf](/vergleiche/-mit-edelstahl-napf/)
+- [Futterautomaten mit Edelstahlnapf](/vergleiche/beste-futterautomaten-mit-edelstahl-napf/)
 - [Smarte Gadgets für Hunde und Katzen](/smarte-gadgets-fuer-hunde-und-katzen/)
 - [So bewerten wir Produkte und Empfehlungen](/so-bewerten-wir/)
 

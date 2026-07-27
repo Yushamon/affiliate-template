@@ -11,88 +11,138 @@ import {
 import { resolveComparisonValue } from "./data-platform.mjs";
 
 const STRICT = process.argv.includes("--strict");
+const EXPECTED_COMPARISONS = 24;
+const MIN_VISIBLE_ROWS = 3;
+const MIN_RENDERED_COVERAGE = 95;
+
+const isResolved = (value) => Boolean(value) && value !== "–";
 
 export function runDataAudit({ strict = STRICT } = {}) {
   const comparisons = loadEntries(COMPARISON_DIR);
   const products = loadEntries(PRODUCT_DIR);
   const productBySlug = new Map(products.map((entry) => [slugOf(entry), entry.data]));
-  const issues = [];
 
-  let itemCount = 0;
+  let allResolved = 0;
+  let allUnresolved = 0;
+  let renderedResolved = 0;
+  let renderedUnresolved = 0;
   let legacyValueCount = 0;
   let overrideCount = 0;
-  let resolvedCount = 0;
-  let unresolvedCount = 0;
 
-  for (const comparison of comparisons) {
+  const comparisonReports = comparisons.map((comparison) => {
     const criteria = Array.isArray(comparison.data.criteria)
       ? comparison.data.criteria
       : [];
-    const items = Array.isArray(comparison.data.items)
+    const items = (Array.isArray(comparison.data.items)
       ? comparison.data.items
-      : [];
+      : []).filter((item) => item.type === "product");
+
+    const rows = criteria.map((criterion) => {
+      const cells = items.map((item) => {
+        const value = resolveComparisonValue({
+          product: productBySlug.get(item.slug),
+          item,
+          criterion
+        });
+        const resolved = isResolved(value);
+        if (resolved) allResolved++;
+        else allUnresolved++;
+        return {
+          product: item.slug,
+          value,
+          resolved
+        };
+      });
+
+      const resolvedCount = cells.filter((cell) => cell.resolved).length;
+      const visible = cells.length >= 2 && resolvedCount === cells.length;
+
+      if (visible) {
+        renderedResolved += resolvedCount;
+        renderedUnresolved += cells.length - resolvedCount;
+      }
+
+      return {
+        key: criterion.key,
+        label: criterion.label,
+        resolved: resolvedCount,
+        total: cells.length,
+        coverage: cells.length
+          ? Math.round(resolvedCount / cells.length * 1000) / 10
+          : 0,
+        visible,
+        cells
+      };
+    });
 
     for (const item of items) {
-      itemCount++;
-      const legacy = item?.values && typeof item.values === "object"
-        ? item.values
-        : {};
-      const overrides = item?.overrides && typeof item.overrides === "object"
-        ? item.overrides
-        : {};
-
-      legacyValueCount += Object.keys(legacy).length;
-      overrideCount += Object.keys(overrides).length;
-
-      if (Object.keys(legacy).length) {
-        issues.push({
-          level: "warning",
-          code: "LEGACY_FIXED_VALUES",
-          file: comparison.rel,
-          itemSlug: item.slug,
-          message: `${Object.keys(legacy).length} feste values-Felder sollten migriert werden.`
-        });
-      }
-
-      const product = item.type === "product"
-        ? productBySlug.get(item.slug)
-        : undefined;
-
-      for (const criterion of criteria) {
-        const value = resolveComparisonValue({ product, item, criterion });
-        if (value && value !== "–") {
-          resolvedCount++;
-        } else {
-          unresolvedCount++;
-          issues.push({
-            level: "warning",
-            code: "COMPARISON_VALUE_UNRESOLVED",
-            file: comparison.rel,
-            itemSlug: item.slug,
-            criterionKey: criterion.key,
-            message: `Kein zentraler Wert für ${criterion.key}.`
-          });
-        }
-      }
+      legacyValueCount += Object.keys(item.values ?? {}).length;
+      overrideCount += Object.keys(item.overrides ?? {}).length;
     }
+
+    const visibleRows = rows.filter((row) => row.visible);
+    return {
+      slug: slugOf(comparison),
+      file: comparison.rel,
+      items: items.length,
+      criteria: criteria.length,
+      visibleRows: visibleRows.length,
+      hiddenRows: rows.length - visibleRows.length,
+      passed: items.length >= 2 && visibleRows.length >= MIN_VISIBLE_ROWS,
+      rows
+    };
+  });
+
+  const sourceCells = allResolved + allUnresolved;
+  const renderedCells = renderedResolved + renderedUnresolved;
+  const sourceCoverage = sourceCells
+    ? Math.round(allResolved / sourceCells * 1000) / 10
+    : 100;
+  const renderedCoverage = renderedCells
+    ? Math.round(renderedResolved / renderedCells * 1000) / 10
+    : 0;
+
+  const failures = [];
+  if (comparisons.length !== EXPECTED_COMPARISONS) {
+    failures.push(`Erwartet: ${EXPECTED_COMPARISONS} Vergleiche, gefunden: ${comparisons.length}.`);
+  }
+  for (const comparison of comparisonReports) {
+    if (!comparison.passed) {
+      failures.push(
+        `${comparison.slug}: nur ${comparison.visibleRows} vollständig belegte Kriterien.`
+      );
+    }
+  }
+  if (renderedCoverage < MIN_RENDERED_COVERAGE) {
+    failures.push(
+      `Gerenderte Datenabdeckung ${renderedCoverage} % liegt unter ${MIN_RENDERED_COVERAGE} %.`
+    );
   }
 
   const report = {
     generatedAt: new Date().toISOString(),
+    expectedComparisons: EXPECTED_COMPARISONS,
+    thresholds: {
+      minimumVisibleRows: MIN_VISIBLE_ROWS,
+      minimumRenderedCoverage: MIN_RENDERED_COVERAGE
+    },
+    passed: failures.length === 0,
     summary: {
       comparisons: comparisons.length,
       products: products.length,
-      items: itemCount,
+      sourceCells,
+      allResolved,
+      allUnresolved,
+      sourceCoverage,
+      renderedCells,
+      renderedResolved,
+      renderedUnresolved,
+      renderedCoverage,
       legacyValueCount,
-      overrideCount,
-      resolvedCount,
-      unresolvedCount,
-      centralResolutionPercent:
-        resolvedCount + unresolvedCount > 0
-          ? Math.round(resolvedCount / (resolvedCount + unresolvedCount) * 1000) / 10
-          : 100
+      overrideCount
     },
-    issues
+    failures,
+    comparisons: comparisonReports
   };
 
   ensureReportDir();
@@ -107,22 +157,29 @@ export function runDataAudit({ strict = STRICT } = {}) {
     "",
     `Erstellt: ${report.generatedAt}`,
     "",
-    `- Vergleiche: ${report.summary.comparisons}`,
-    `- Produkte: ${report.summary.products}`,
-    `- Items: ${report.summary.items}`,
-    `- alte feste values-Felder: ${report.summary.legacyValueCount}`,
+    `**Status: ${report.passed ? "BESTANDEN" : "NICHT BESTANDEN"}**`,
+    "",
+    `- Vergleiche: ${report.summary.comparisons} / ${EXPECTED_COMPARISONS}`,
+    `- Quellabdeckung: ${report.summary.sourceCoverage} %`,
+    `- öffentlich gerenderte Abdeckung: ${report.summary.renderedCoverage} %`,
+    `- alte values-Felder: ${report.summary.legacyValueCount}`,
     `- bewusste Overrides: ${report.summary.overrideCount}`,
-    `- zentral aufgelöste Zellen: ${report.summary.resolvedCount}`,
-    `- nicht aufgelöste Zellen: ${report.summary.unresolvedCount}`,
-    `- zentrale Datenabdeckung: ${report.summary.centralResolutionPercent} %`,
     "",
-    "## Befunde",
+    "## Vergleichsseiten",
     "",
-    ...(issues.length
-      ? issues.map((issue) =>
-          `- **${issue.code}** – \`${issue.file}\` · ${issue.itemSlug ?? ""}${issue.criterionKey ? ` · ${issue.criterionKey}` : ""}: ${issue.message}`
-        )
-      : ["Keine Befunde."]),
+    "| Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |",
+    "|---|---:|---:|---:|---|",
+    ...report.comparisons.map((item) =>
+      `| \`${item.slug}\` | ${item.items} | ${item.visibleRows} | ${item.hiddenRows} | ${item.passed ? "OK" : "BLOCKIERT"} |`
+    ),
+    "",
+    "## Blocker",
+    "",
+    ...(report.failures.length
+      ? report.failures.map((failure) => `- ${failure}`)
+      : ["- Keine."]),
+    "",
+    "Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.",
     ""
   ].join("\n");
 
@@ -133,12 +190,12 @@ export function runDataAudit({ strict = STRICT } = {}) {
   );
 
   console.log("Comparison Data Platform Audit");
-  console.log(`Zentrale Datenabdeckung: ${report.summary.centralResolutionPercent} %`);
-  console.log(`Legacy values: ${legacyValueCount}`);
-  console.log(`Overrides: ${overrideCount}`);
-  console.log(`Nicht aufgelöst: ${unresolvedCount}`);
+  console.log(`Vergleiche: ${comparisons.length}/${EXPECTED_COMPARISONS}`);
+  console.log(`Quellabdeckung: ${sourceCoverage} %`);
+  console.log(`Gerenderte Abdeckung: ${renderedCoverage} %`);
+  console.log(`Status: ${report.passed ? "BESTANDEN" : "NICHT BESTANDEN"}`);
 
-  if (strict && legacyValueCount > 0) process.exitCode = 1;
+  if (strict && !report.passed) process.exitCode = 1;
   return report;
 }
 

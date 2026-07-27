@@ -54,19 +54,33 @@ images:
       alt: Halsbandgerät korrekt am Hund anlegen
     - src: ../../assets/images/guides/gps-tracker/missing-pet.webp
       alt: Hundeortung im Vermisstenfall
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "garmin.com"
+    type: "manual"
+
 affiliate:
-  provider: manufacturer
-  label: Beim Hersteller ansehen
-  url: https://www.garmin.com/de-DE/p/714363
+  provider: "manufacturer"
+  label: "Beim Hersteller ansehen"
+  url: "https://www.garmin.com/de-DE/p/714363"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 78
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:28:05.204Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
+availability: "temporarily-unavailable"
+availabilityUpdated: "2026-07-27T20:28:05.204Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "required"
+maintenanceStatus: "complete"
 
 ratings:
   ortung: 4.6

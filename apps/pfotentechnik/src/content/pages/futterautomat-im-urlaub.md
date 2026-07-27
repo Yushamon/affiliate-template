@@ -53,7 +53,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/-fuer-katzen/
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -104,7 +104,7 @@ Nassfutter erfordert kurze, planbare Standzeiten und sorgfältige Kühlung. Küh
 
 ## Technik passend zur Abwesenheit auswählen
 
-Für feste Abläufe ohne Cloud lohnt der [Vergleich der Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/). Wer den Futterplatz zusätzlich sehen muss, findet im [Vergleich der Kamera-Futterautomaten](/vergleiche/-mit-kamera/) die passendere Produktauswahl. Bei vorbereitetem Nassfutter ist der aktiv gekühlte [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) ein technisches Gegenmodell zu einfachen Fächern mit Kühlakkus. Keine dieser Lösungen ersetzt die Betreuung vor Ort.
+Für feste Abläufe ohne Cloud lohnt der [Vergleich der Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/). Wer den Futterplatz zusätzlich sehen muss, findet im [Vergleich der Kamera-Futterautomaten](/vergleiche/beste-futterautomaten-mit-kamera/) die passendere Produktauswahl. Bei vorbereitetem Nassfutter ist der aktiv gekühlte [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) ein technisches Gegenmodell zu einfachen Fächern mit Kühlakkus. Keine dieser Lösungen ersetzt die Betreuung vor Ort.
 
 ## Methodik unserer Einordnung
 

@@ -85,7 +85,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/-fuer-katzen/
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 

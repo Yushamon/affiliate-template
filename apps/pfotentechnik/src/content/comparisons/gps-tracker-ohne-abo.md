@@ -130,6 +130,7 @@ faq:
     answer: >-
       Produktdaten, Tarife und Verfügbarkeit werden regelmäßig geprüft. Bei wesentlichen Modell- oder Tarifänderungen
       wird die Einordnung angepasst.
+canonical: /vergleiche/gps-tracker-ohne-abo/
 ---
 
 ## Kurzantwort

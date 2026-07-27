@@ -73,7 +73,7 @@ criteria:
     label: Maximale Ausgabe
     format: auto
     fallback: –
-  - key: krokettengro-e
+  - key: krokettengroesse
     label: Krokettengröße
     format: auto
     fallback: –

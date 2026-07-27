@@ -152,7 +152,7 @@ export const projectConfig = {
         { label: "Hunde · Trinkbrunnen", href: "/trinkbrunnen/#hunde" },
         { label: "Hunde · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-hunde/" },
         { label: "Katzen · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-katzen/" },
-        { label: "Nassfutter", href: "/vergleiche/-fuer-nassfutter/" },
+        { label: "Nassfutter", href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/" },
         { label: "Mehrere Katzen", href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/" },
         { label: "Ohne WLAN", href: "/vergleiche/beste-futterautomaten-ohne-wlan/" },
         { label: "Mit Kamera", href: "/vergleiche/beste-futterautomaten-mit-kamera/" }

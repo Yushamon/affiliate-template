@@ -211,12 +211,12 @@ Erst danach lohnt sich die Entscheidung über WLAN, Kamera, Audio oder zusätzli
 
 | Bedarf | Passender Vergleich |
 |---|---|
-| Katze und unterschiedliche Futterarten | [Futterautomaten für Katzen](/vergleiche/-fuer-katzen/) |
-| kleine bis mittelgroße Hunde | [Futterautomaten für Hunde](/vergleiche/-fuer-hunde/) |
-| zwei Katzen oder Futterneid | [Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/) |
-| vorbereitetes Nassfutter | [Nassfutterautomaten](/vergleiche/-fuer-nassfutter/) |
-| kein Konto, keine Cloud | [Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/) |
-| Livebild und Video | [Futterautomaten mit Kamera](/vergleiche/-mit-kamera/) |
+| Katze und unterschiedliche Futterarten | [Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/) |
+| kleine bis mittelgroße Hunde | [Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/) |
+| zwei Katzen oder Futterneid | [Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) |
+| vorbereitetes Nassfutter | [Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) |
+| kein Konto, keine Cloud | [Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) |
+| Livebild und Video | [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) |
 
 Der Vergleich folgt erst nach der Entscheidung über Futterart, Tiergröße und Zugang. Dadurch konkurriert keine Funktionsliste mit einer ungeeigneten Bauart.
 

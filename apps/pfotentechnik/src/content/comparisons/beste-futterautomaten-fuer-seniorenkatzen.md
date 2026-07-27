@@ -197,7 +197,7 @@ Wenn eine Katze tier채rztlich 체berwacht werden muss oder spezielle Di채ten erh�
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat f체r Katzen](/futterautomat-katze/)
 * [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/)
-* [Beste Futterautomaten f체r Welpen](/vergleiche/-fuer-welpen/)
+* [Beste Futterautomaten f체r Welpen](/vergleiche/beste-futterautomaten-fuer-welpen/)
 
 ## Fazit
 

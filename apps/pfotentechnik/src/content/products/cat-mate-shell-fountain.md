@@ -56,19 +56,33 @@ images:
       alt: Pumpe und Filter des Cat Mate Shell Pet Fountain
     - src: ../../assets/images/products/cat-mate-shell-fountain/gallery-3.webp
       alt: Cat Mate Shell Pet Fountain im Katzenhaushalt
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 75
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:27:50.080Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-27T20:27:50.080Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 3.75

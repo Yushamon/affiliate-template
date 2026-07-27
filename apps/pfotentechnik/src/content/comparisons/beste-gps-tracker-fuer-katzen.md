@@ -169,6 +169,7 @@ seo:
   noindex: false
   priority: 0.8
   changefreq: monthly
+canonical: /vergleiche/beste-gps-tracker-fuer-katzen/
 ---
 
 # Beste GPS-Tracker für Katzen

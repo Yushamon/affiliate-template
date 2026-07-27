@@ -27,7 +27,7 @@ const { model } = Astro.props as Props;
 const winner = model.verdict.winner;
 const winnerPrice = winner ? getPriceDisplay(winner.price) : undefined;
 ---
-<div class="comparison-shell comparison-shell--premium" data-comparison-polish="3.3">
+<div class="comparison-shell comparison-shell--premium" data-comparison-polish="3.3" data-dark-mode-ready="true">
   <ComparisonHero
     eyebrow={model.eyebrow}
     title={model.title}

@@ -57,25 +57,33 @@ images:
     - src: ../../assets/images/products/tractive-cat-6-mini/gallery-3.webp
       alt: Katze kehrt am Abend mit getragenem GPS-Tracker-Halsband nach Hause zurück
 price:
-  current: null
+  current: 69
   currency: "EUR"
   status: "unknown"
+  checkedAt: "2026-07-27T20:26:59.663Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: manufacturer
-  label: Beim Hersteller ansehen
-  url: https://tractive.com/de/pd/gps-tracker-cat
+  provider: "manufacturer"
+  label: "Beim Hersteller ansehen"
+  url: "https://amzn.to/3Ts7OyY"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 91
 
-priceState: "unknown"
-priceUpdated: "2026-07-27T16:17:59.534Z"
-priceAvailable: false
+priceState: "available"
+priceUpdated: "2026-07-27T20:26:59.663Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityUpdated: "2026-07-27T16:17:59.534Z"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-27T20:26:59.663Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   ortung: 4.7

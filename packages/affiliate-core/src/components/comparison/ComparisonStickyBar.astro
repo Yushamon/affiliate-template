@@ -11,7 +11,7 @@ const price = product ? getPriceDisplay(product.price) : null;
 ---
 
 {product && (
-  <aside class="comparison-sticky-bar comparison-sticky-bar--v121" aria-label="Top-Empfehlung">
+  <aside class="comparison-sticky-bar comparison-sticky-bar--v121" aria-label="Top-Empfehlung" data-comparison-sticky="true">
     <div class="comparison-sticky-bar__identity">
       <span>Top-Empfehlung</span>
       <strong title={product.title}>{product.title}</strong>
@@ -222,3 +222,33 @@ const price = product ? getPriceDisplay(product.price) : null;
   }
 </style>
 <!-- PT_STICKY_SPACING_13_2_0_END -->
+
+<!-- PT_COMPARISON_RELEASE_CLOSURE_14_0_0_START -->
+<style is:global>
+  @media (max-width: 47.99rem) {
+    .comparison-detail {
+      padding-bottom: calc(11rem + env(safe-area-inset-bottom)) !important;
+    }
+
+    .comparison-sticky-bar[data-comparison-sticky="true"] {
+      max-height: min(10.5rem, calc(100dvh - 1.25rem)) !important;
+      overflow: auto !important;
+      overscroll-behavior: contain;
+    }
+
+    .comparison-sticky-bar__actions:has(> :only-child) {
+      grid-template-columns: minmax(0, 1fr) !important;
+    }
+  }
+
+  @media print {
+    .comparison-sticky-bar[data-comparison-sticky="true"] {
+      display: none !important;
+    }
+
+    .comparison-detail {
+      padding-bottom: 0 !important;
+    }
+  }
+</style>
+<!-- PT_COMPARISON_RELEASE_CLOSURE_14_0_0_END -->

@@ -1,8 +1,8 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 187
+- Dokumente: 183
 - Fehler: 4
-- Warnungen: 81
+- Warnungen: 77
 
 ## Portfolio-Befunde
 
@@ -10,26 +10,22 @@ Keine Portfolio-Konflikte erkannt.
 
 ## Datei-Befunde
 
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-hunde.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-welpen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-kamera.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-ohne-wlan.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/manufacturers/aqara.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-berufstaetige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-kleine-hunde.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-fuer-seniorenkatzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-akku.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-mit-edelstahl-napf.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/beste-futterautomaten-unter-100-euro.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-fuer-zwei-katzen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-gegen-schlingen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-hund.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-mit-app.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-mit-kamera.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-nassfutter.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-richtig-reinigen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-und-ernaehrung.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-frisst-nicht.md`: 2 Checklisten erkannt.

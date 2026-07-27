@@ -71,7 +71,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: cat
-  comparisonHref: /vergleiche/-fuer-katzen/
+  comparisonHref: /vergleiche/beste-futterautomaten-fuer-katzen/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -352,7 +352,7 @@ Grenzen:
 
 Wiege die tatsächliche Ausgabe deshalb mehrfach nach. Eine App-Meldung bestätigt nur, dass der Automat ausgelöst hat. Sie beweist nicht, dass die richtige Katze die vollständige Portion gefressen hat.
 
-Einen Überblick über Bauarten, Portionierung und Auswahlkriterien bietet der Ratgeber [Smarte Futterautomaten](/smarte-futterautomaten/). Konkrete Modelle lassen sich im [Vergleich der besten Futterautomaten für Katzen](/vergleiche/-fuer-katzen/) gegenüberstellen.
+Einen Überblick über Bauarten, Portionierung und Auswahlkriterien bietet der Ratgeber [Smarte Futterautomaten](/smarte-futterautomaten/). Konkrete Modelle lassen sich im [Vergleich der besten Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/) gegenüberstellen.
 
 ## Ein alltagstauglicher Präventionsplan
 

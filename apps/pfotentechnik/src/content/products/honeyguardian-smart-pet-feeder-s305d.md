@@ -55,19 +55,33 @@ images:
       alt: HoneyGuardian Smart Pet Feeder S305D – weitere Produktansicht
     - src: ../../assets/images/products/honeyguardian-smart-pet-feeder-s305d/gallery-3.webp
       alt: HoneyGuardian Smart Pet Feeder S305D – weitere Produktansicht
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=HoneyGuardian+S305D+5L+Smart+Pet+Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=HoneyGuardian+S305D+5L+Smart+Pet+Feeder"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 75
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:28:34.688Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
+availability: "temporarily-unavailable"
+availabilityUpdated: "2026-07-27T20:28:34.688Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "required"
+maintenanceStatus: "complete"
 
 ratings:
   app: 3.65

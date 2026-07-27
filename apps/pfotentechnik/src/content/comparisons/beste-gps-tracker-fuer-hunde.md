@@ -154,6 +154,7 @@ seo:
   noindex: false
   priority: 0.8
   changefreq: monthly
+canonical: /vergleiche/beste-gps-tracker-fuer-hunde/
 ---
 
 # Beste GPS-Tracker für Hunde

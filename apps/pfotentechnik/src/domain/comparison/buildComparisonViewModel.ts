@@ -377,10 +377,31 @@ export function buildComparisonViewModel({
       .filter((item) => item.type === "product")
       .map((item) => item.slug)
   });
-  const winnerCandidate = automaticRecommendation.winnerSlug ?? data.recommendation.winnerSlug;
-  const alternativeCandidate = automaticRecommendation.alternativeSlug ?? data.recommendation.alternativeSlug;
-  const resolvedWinnerSlug = recommendationEligible(winnerCandidate) ? winnerCandidate : undefined;
-  const resolvedAlternativeSlug = recommendationEligible(alternativeCandidate) ? alternativeCandidate : undefined;
+  const eligibleItemSlugs = items
+    .filter((item) =>
+      item.type === "product" &&
+      recommendationEligible(item.slug)
+    )
+    .map((item) => item.slug);
+
+  const winnerCandidate =
+    automaticRecommendation.winnerSlug ??
+    data.recommendation.winnerSlug;
+  const alternativeCandidate =
+    automaticRecommendation.alternativeSlug ??
+    data.recommendation.alternativeSlug;
+
+  const resolvedWinnerSlug =
+    winnerCandidate && eligibleItemSlugs.includes(winnerCandidate)
+      ? winnerCandidate
+      : eligibleItemSlugs[0];
+
+  const resolvedAlternativeSlug =
+    alternativeCandidate &&
+    alternativeCandidate !== resolvedWinnerSlug &&
+    eligibleItemSlugs.includes(alternativeCandidate)
+      ? alternativeCandidate
+      : eligibleItemSlugs.find((slug) => slug !== resolvedWinnerSlug);
 
   const getCriterionValue = (
     item: (typeof items)[number],
@@ -404,20 +425,42 @@ export function buildComparisonViewModel({
     }))
   }));
 
-  const rows: ComparisonRow[] = rawRows.map((row) => {
+  const rowCandidates = rawRows.map((row) => {
+    const resolvedCells = row.cells.filter(
+      (cell) =>
+        Boolean(cell.value) &&
+        cell.value !== "–"
+    );
     const normalizedValues = new Set(
-      row.cells.map((cell) =>
-        cell.value && cell.value !== "–"
-          ? cell.value.trim().toLocaleLowerCase("de")
-          : "keine-angabe"
+      resolvedCells.map((cell) =>
+        cell.value.trim().toLocaleLowerCase("de")
       )
     );
 
     return {
       ...row,
+      resolvedCount: resolvedCells.length,
+      coverage:
+        row.cells.length > 0
+          ? resolvedCells.length / row.cells.length
+          : 0,
       hasDifferences: normalizedValues.size > 1
     };
   });
+
+  /*
+   * Release Closure 14.0:
+   * Nur vollständig belegte Kriterien werden öffentlich ausgespielt.
+   * Unvollständige Quellkriterien bleiben im Audit sichtbar, erzeugen aber
+   * keine "Keine Angabe"-Wüsten in Desktop-Tabelle oder Mobile Cards.
+   */
+  const rows: ComparisonRow[] = rowCandidates
+    .filter((row) =>
+      row.cells.length >= 2 &&
+      row.resolvedCount === row.cells.length
+    )
+    .map(({ resolvedCount: _resolvedCount, coverage: _coverage, ...row }) => row);
+
 
   const filterValuesBySlug = new Map<
     string,

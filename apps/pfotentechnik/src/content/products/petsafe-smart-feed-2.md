@@ -53,16 +53,30 @@ images:
   gallery:
     - src: ../../assets/images/products/petsafe-smart-feed-2/gallery-1.webp
       alt: PetSafe Smart Feed 2.0, weitere redaktionelle Ansicht 1
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amzn.to"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PetSafe+Smart+Feed+2.0
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4fIdCfh"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.4
 score: 88
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:36:34.073Z"
 priceAvailable: false
 affiliateAvailable: true
 availability: "unknown"
+availabilityUpdated: "2026-07-27T20:36:34.073Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"

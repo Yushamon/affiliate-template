@@ -204,8 +204,8 @@ Gerade junge Tiere, kranke Tiere oder Haustiere mit auffälligem Fressverhalten 
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/vergleiche/-fuer-kleine-hunde/)
-* [Beste Futterautomaten unter 100 Euro](/vergleiche/-unter-100-euro/)
+* [Beste Futterautomaten für kleine Hunde](/vergleiche/beste-futterautomaten-fuer-kleine-hunde/)
+* [Beste Futterautomaten unter 100 Euro](/vergleiche/beste-futterautomaten-unter-100-euro/)
 
 ## Fazit
 

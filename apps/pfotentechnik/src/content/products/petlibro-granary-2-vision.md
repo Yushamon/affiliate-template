@@ -60,7 +60,7 @@ price:
   current: 129.99
   currency: "USD"
   status: "unknown"
-  checkedAt: "2026-07-27T13:29:37.757Z"
+  checkedAt: "2026-07-27T20:26:25.830Z"
   source:
     id: "petlibro.com"
     label: "petlibro.com"
@@ -78,12 +78,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-07-27T13:29:37.757Z"
+priceUpdated: "2026-07-27T20:26:25.830Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T13:29:37.757Z"
+availabilityUpdated: "2026-07-27T20:26:25.830Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -373,8 +373,8 @@ Der vorhandene [PETLIBRO Granary Camera Feeder](/produkt/petlibro-granary-camera
 
 Weitere Einordnung:
 
-- [Futterautomaten mit Kamera vergleichen](/vergleiche/-mit-kamera/)
-- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
+- [Futterautomaten mit Kamera vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
 - [Smarte Futterautomaten: Technik und Kaufberatung](/smarte-futterautomaten/)
 - [Futtermenge einer Katze bestimmen](/futtermenge-katze/)
 

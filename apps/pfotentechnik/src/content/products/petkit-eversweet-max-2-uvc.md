@@ -59,19 +59,33 @@ images:
       alt: Edelstahl-Trinkfläche des PETKIT Eversweet Max 2
     - src: ../../assets/images/products/petkit-eversweet-max-2-uvc/gallery-3.webp
       alt: PETKIT Eversweet Max 2 im Katzenhaushalt
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 81
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:32:33.940Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-27T20:32:33.940Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 4.15

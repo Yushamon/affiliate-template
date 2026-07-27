@@ -199,7 +199,7 @@ Ein höherpreisiger Automat kann sinnvoll sein, wenn:
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat für Hunde](/futterautomat-hund/)
 * [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/vergleiche/-fuer-kleine-hunde/)
+* [Beste Futterautomaten für kleine Hunde](/vergleiche/beste-futterautomaten-fuer-kleine-hunde/)
 
 ## Fazit
 

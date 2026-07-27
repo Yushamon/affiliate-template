@@ -53,19 +53,33 @@ images:
       alt: Filter und Pumpe des PETKIT Eversweet 5 Mini
     - src: ../../assets/images/products/petkit-eversweet-5-mini/gallery-3.webp
       alt: PETKIT Eversweet 5 Mini im Katzenhaushalt
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.7
 score: 74
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T20:31:31.033Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-27T20:31:31.033Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 3.7

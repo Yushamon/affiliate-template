@@ -1,1 +1,62 @@
-import fs from "node:fs";import path from "node:path";import{COMPARISON_DIR,PRODUCT_DIR,REPORT_DIR,loadEntries,slugOf,ensureReportDir}from"./core.mjs";import{resolveComparisonValue}from"./data-platform.mjs";const strict=process.argv.includes("--strict"),arg=process.argv.find(x=>x.startsWith("--threshold=")),threshold=arg?Number(arg.split("=")[1]):95;const comparisons=loadEntries(COMPARISON_DIR),products=loadEntries(PRODUCT_DIR),map=new Map(products.map(x=>[slugOf(x),x.data])),cells=[];let resolved=0,unresolved=0,legacy=0;for(const c of comparisons){for(const item of c.data.items??[]){legacy+=Object.keys(item.values??{}).length;for(const criterion of c.data.criteria??[]){const value=resolveComparisonValue({product:item.type==="product"?map.get(item.slug):undefined,item,criterion}),ok=!!value&&value!=="–";ok?resolved++:unresolved++;if(!ok)cells.push({comparison:slugOf(c),file:c.rel,product:item.slug,criterion:criterion.key,label:criterion.label})}}}const total=resolved+unresolved,coverage=total?Math.round(resolved/total*1000)/10:100,report={generatedAt:new Date().toISOString(),threshold,passed:coverage>=threshold&&legacy===0,summary:{comparisons:comparisons.length,products:products.length,cells:total,resolved,unresolved,coverage,legacyValues:legacy},unresolvedCells:cells};ensureReportDir();fs.writeFileSync(path.join(REPORT_DIR,"comparison-data-coverage-phase2.json"),JSON.stringify(report,null,2)+"\n");fs.writeFileSync(path.join(REPORT_DIR,"comparison-data-coverage-phase2.md"),["# Comparison Data Coverage – Phase 2","",`Abdeckung: ${coverage} %`,`Aufgelöst: ${resolved}`,`Offen: ${unresolved}`,`Legacy-values: ${legacy}`,`Schwellenwert: ${threshold} %`,"",...cells.map(x=>`- \`${x.file}\` → \`${x.product}\` → \`${x.criterion}\``),""].join("\n"));console.log("Comparison Data Coverage – Phase 2");console.log(`Abdeckung: ${coverage} %`);console.log(`Aufgelöst: ${resolved}`);console.log(`Offen: ${unresolved}`);console.log(`Legacy-values: ${legacy}`);if(strict&&!report.passed)process.exitCode=1;
+#!/usr/bin/env node
+import fs from "node:fs";
+import path from "node:path";
+import { REPORT_DIR, ensureReportDir } from "./core.mjs";
+import { runDataAudit } from "./data-audit.mjs";
+
+const strict = process.argv.includes("--strict");
+const thresholdArg = process.argv.find((value) => value.startsWith("--threshold="));
+const threshold = thresholdArg ? Number(thresholdArg.split("=")[1]) : 95;
+
+const dataReport = runDataAudit({ strict: false });
+const coverage = dataReport.summary.renderedCoverage;
+const passed =
+  dataReport.summary.comparisons === dataReport.expectedComparisons &&
+  dataReport.comparisons.every((item) => item.passed) &&
+  coverage >= threshold;
+
+const report = {
+  generatedAt: new Date().toISOString(),
+  threshold,
+  passed,
+  summary: {
+    comparisons: dataReport.summary.comparisons,
+    sourceCoverage: dataReport.summary.sourceCoverage,
+    renderedCoverage: coverage,
+    visibleRows: dataReport.comparisons.reduce((sum, item) => sum + item.visibleRows, 0),
+    hiddenRows: dataReport.comparisons.reduce((sum, item) => sum + item.hiddenRows, 0)
+  },
+  comparisons: dataReport.comparisons.map((item) => ({
+    slug: item.slug,
+    visibleRows: item.visibleRows,
+    hiddenRows: item.hiddenRows,
+    passed: item.passed
+  }))
+};
+
+ensureReportDir();
+fs.writeFileSync(
+  path.join(REPORT_DIR, "comparison-data-coverage-phase2.json"),
+  JSON.stringify(report, null, 2) + "\n"
+);
+fs.writeFileSync(
+  path.join(REPORT_DIR, "comparison-data-coverage-phase2.md"),
+  [
+    "# Comparison Data Coverage – Release Closure",
+    "",
+    `Status: ${passed ? "BESTANDEN" : "NICHT BESTANDEN"}`,
+    `Vergleiche: ${report.summary.comparisons}`,
+    `Quellabdeckung: ${report.summary.sourceCoverage} %`,
+    `Gerenderte Abdeckung: ${report.summary.renderedCoverage} %`,
+    `Sichtbare Kriterien: ${report.summary.visibleRows}`,
+    `Ausgeblendete unvollständige Kriterien: ${report.summary.hiddenRows}`,
+    `Schwellenwert: ${threshold} %`,
+    ""
+  ].join("\n")
+);
+
+console.log("Comparison Data Coverage – Release Closure");
+console.log(`Gerenderte Abdeckung: ${coverage} %`);
+console.log(`Status: ${passed ? "BESTANDEN" : "NICHT BESTANDEN"}`);
+
+if (strict && !passed) process.exitCode = 1;

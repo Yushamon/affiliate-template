@@ -1,87 +1,66 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-26T21:36:29.232Z",
+  "generatedAt": "2026-07-27T20:49:05.815Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-07-19",
-  "endDate": "2026-07-25",
-  "comparisonStartDate": "2026-07-12",
-  "comparisonEndDate": "2026-07-18",
+  "startDate": "2026-07-20",
+  "endDate": "2026-07-26",
+  "comparisonStartDate": "2026-07-13",
+  "comparisonEndDate": "2026-07-19",
   "dataState": "all",
   "partial": false,
   "lowData": false,
   "metrics": {
     "current": {
       "clicks": 9,
-      "impressions": 326,
-      "ctr": 2.76,
-      "position": 20.7
+      "impressions": 280,
+      "ctr": 3.21,
+      "position": 20.5
     },
     "previous": {
       "clicks": 9,
-      "impressions": 314,
-      "ctr": 2.87,
-      "position": 22.9
+      "impressions": 339,
+      "ctr": 2.65,
+      "position": 22.2
     },
     "change": {
       "clicks": 0,
-      "impressions": 3.8,
-      "ctr": -0.11,
-      "position": 2.2
+      "impressions": -17.4,
+      "ctr": 0.56,
+      "position": 1.7
     }
   },
   "pages": [
     {
       "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "clicks": 1,
-      "impressions": 26,
-      "ctr": 3.85,
-      "position": 13.8
+      "impressions": 25,
+      "ctr": 4,
+      "position": 15.7
     },
     {
       "page": "/smarte-futterautomaten/",
       "clicks": 0,
-      "impressions": 19,
+      "impressions": 17,
       "ctr": 0,
-      "position": 44.6
+      "position": 49.4
     },
     {
-      "page": "/trinkbrunnen/",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 46
-    },
-    {
-      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 65.1
-    },
-    {
-      "page": "/vergleiche/-fuer-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
       "clicks": 1,
       "impressions": 15,
       "ctr": 6.67,
-      "position": 47.9
+      "position": 49.4
     },
     {
       "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
       "clicks": 0,
-      "impressions": 15,
-      "ctr": 0,
-      "position": 16
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "clicks": 0,
       "impressions": 14,
       "ctr": 0,
-      "position": 7.6
+      "position": 18.6
     },
     {
       "page": "/produkt/petkit-yumshare-solo-2/",
@@ -91,32 +70,32 @@
       "position": 6
     },
     {
-      "page": "/futterautomat-richtig-reinigen/",
-      "clicks": 1,
-      "impressions": 11,
-      "ctr": 9.09,
-      "position": 6.7
+      "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 32.3
     },
     {
-      "page": "/produkt/petlibro-polar-wet-food-feeder/",
+      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0,
-      "position": 8.9
+      "position": 7.3
     },
     {
       "page": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
       "position": 18.7
     },
     {
-      "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 28.6
+      "page": "/futterautomat-richtig-reinigen/",
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 11.11,
+      "position": 6.1
     },
     {
       "page": "/futtermenge-katze/",
@@ -126,11 +105,18 @@
       "position": 33.6
     },
     {
-      "page": "/produkt/petkit-eversweet-ultra/",
-      "clicks": 1,
-      "impressions": 7,
-      "ctr": 14.29,
-      "position": 8.9
+      "page": "/produkt/petlibro-polar-wet-food-feeder/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.8
+    },
+    {
+      "page": "/trinkbrunnen/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 22.4
     },
     {
       "page": "/filter-im-katzentrinkbrunnen-wechseln/",
@@ -140,32 +126,11 @@
       "position": 11.9
     },
     {
-      "page": "/hersteller/petlibro/",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 11.3
-    },
-    {
-      "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 9.9
-    },
-    {
       "page": "/katzenwasser-taeglich-wechseln/",
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
       "position": 12.6
-    },
-    {
-      "page": "/trinkbrunnen-fuer-mehrere-katzen/",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 6.9
     },
     {
       "page": "/wie-viele-wasserstellen-katze/",
@@ -175,11 +140,32 @@
       "position": 5.9
     },
     {
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 16.67,
+      "position": 11.7
+    },
+    {
       "page": "/kalk-katzentrinkbrunnen-entfernen/",
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
       "position": 9.5
+    },
+    {
+      "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 9.7
+    },
+    {
+      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 36.2
     },
     {
       "page": "/vergleiche/futterautomat-fuer-grosse-hunde/",
@@ -189,6 +175,34 @@
       "position": 8.6
     },
     {
+      "page": "/futterautomat-katze/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "page": "/hersteller/petlibro/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 13.2
+    },
+    {
+      "page": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 55.2
+    },
+    {
       "page": "/katzentrinkbrunnen-ohne-filter/",
       "clicks": 1,
       "impressions": 4,
@@ -196,32 +210,18 @@
       "position": 5.3
     },
     {
-      "page": "/",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 47.8
-    },
-    {
-      "page": "/vergleiche/-fuer-zwei-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
       "position": 12
     },
     {
-      "page": "/futterautomat-katze/",
+      "page": "/futterautomat-hund/",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 76
-    },
-    {
-      "page": "/hersteller/petkit/",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 24.5
+      "position": 32.3
     },
     {
       "page": "/hund-hat-durchfall/",
@@ -245,25 +245,25 @@
       "position": 9.2
     },
     {
-      "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 59.5
+      "position": 58.3
     },
     {
-      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "page": "/",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 10
+      "position": 34
     },
     {
-      "page": "/futterautomat-hund/",
+      "page": "/futterautomat-im-urlaub/",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 38.3
+      "position": 10.3
     },
     {
       "page": "/futtermenge-hund/",
@@ -273,13 +273,6 @@
       "position": 93.3
     },
     {
-      "page": "/hersteller/oneisall/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 9.3
-    },
-    {
       "page": "/katzentrinkbrunnen-laut-pumpe/",
       "clicks": 0,
       "impressions": 3,
@@ -287,46 +280,32 @@
       "position": 6.7
     },
     {
-      "page": "/produkt/petlibro-stainless-steel-fountain/",
+      "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 10.7
+      "position": 20.3
     },
     {
-      "page": "/vergleiche/-fuer-hunde/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 68
-    },
-    {
-      "page": "/vergleiche/-fuer-hunde/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "clicks": 1,
       "impressions": 2,
       "ctr": 50,
       "position": 5.5
     },
     {
-      "page": "/vergleiche/-fuer-seniorenkatzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 6
     },
     {
-      "page": "/vergleiche/-fuer-welpen/",
+      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 5
-    },
-    {
-      "page": "/futterautomat-im-urlaub/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 7
+      "position": 10
     },
     {
       "page": "/gps-tracker/",
@@ -336,6 +315,20 @@
       "position": 84.5
     },
     {
+      "page": "/hersteller/cat-mate/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "page": "/hersteller/oneisall/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
       "page": "/produkt/pawsync-smart-pet-feeder/",
       "clicks": 0,
       "impressions": 2,
@@ -343,11 +336,11 @@
       "position": 6.5
     },
     {
-      "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "page": "/produkt/petlibro-stainless-steel-fountain/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 10.5
+      "position": 25.5
     },
     {
       "page": "/produkt/weenect-xs/",
@@ -364,14 +357,14 @@
       "position": 11
     },
     {
-      "page": "/vergleiche/-fuer-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 8
     },
     {
-      "page": "/vergleiche/-fuer-zwei-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
@@ -385,18 +378,11 @@
       "position": 5
     },
     {
-      "page": "/welcher-futterautomat-ist-der-richtige/",
+      "page": "/hund-ist-muede/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 8
-    },
-    {
-      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 26
+      "position": 63
     },
     {
       "page": "/produkt/honeyguardian-a68/",
@@ -404,6 +390,34 @@
       "impressions": 1,
       "ctr": 100,
       "position": 2
+    },
+    {
+      "page": "/affiliate-hinweis/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "page": "/datenschutz/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
     },
     {
       "page": "/fuetterungszeiten-nach-alter/",
@@ -427,11 +441,18 @@
       "position": 85
     },
     {
-      "page": "/hersteller/cat-mate/",
+      "page": "/hersteller/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 7
+    },
+    {
+      "page": "/hersteller/honeyguardian/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
     },
     {
       "page": "/hersteller/pawbby/",
@@ -448,11 +469,32 @@
       "position": 4
     },
     {
-      "page": "/hersteller/xiaomi/",
+      "page": "/hund-frisst-nicht/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 10
+      "position": 20
+    },
+    {
+      "page": "/hund-trinkt-zu-wenig/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "page": "/impressum/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
     },
     {
       "page": "/katzentrinkbrunnen-richtig-reinigen/",
@@ -460,6 +502,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 10
+    },
+    {
+      "page": "/kontakt/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "page": "/produkt/catit-pixi-smart-6-meal-feeder/",
@@ -476,6 +525,41 @@
       "position": 14
     },
     {
+      "page": "/produkt/petlibro-air-automatic-feeder/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "page": "/produkt/petlibro-glacier-ultrafiltration/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "/produkt/petlibro-granary-camera-feeder/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "page": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "page": "/produkt/petlibro-space-smart-feeder/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
       "page": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
       "clicks": 0,
       "impressions": 1,
@@ -488,6 +572,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 6
+    },
+    {
+      "page": "/so-bewerten-wir/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
     },
     {
       "page": "/trinkbrunnen-hund/",
@@ -504,11 +595,25 @@
       "position": 2
     },
     {
-      "page": "/vergleiche/-ohne-wlan/",
+      "page": "/vergleiche/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 12
+    },
+    {
+      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
     },
     {
       "page": "/warum-brauchen-gps-tracker-ein-abo/",
@@ -539,6 +644,13 @@
       "position": 60
     },
     {
+      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
       "page": "/wie-viele-mahlzeiten-hund/",
       "clicks": 0,
       "impressions": 1,
@@ -546,35 +658,35 @@
       "position": 2
     },
     {
-      "page": "/vergleiche/-fuer-nassfutter/",
+      "page": "/wissen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 10
     },
     {
-      "page": "/biofilm-im-katzentrinkbrunnen/",
+      "page": "/katze-frisst-nicht/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2
+      "position": 25
+    },
+    {
+      "page": "/produkt/petkit-yumshare-solo/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 33
     }
   ],
   "queries": [
-    {
-      "query": "katzenbrunnen test",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 77.5
-    },
-    {
-      "query": "katzenbrunnen vergleich",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 74.5
-    },
     {
       "query": "petkit yumshare solo2",
       "clicks": 0,
@@ -583,18 +695,11 @@
       "position": 5.8
     },
     {
-      "query": "beste katzenbrunnen",
+      "query": "futterautomat für 2 katzen",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 70.3
-    },
-    {
-      "query": "pet feeder",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 49.3
+      "position": 34
     },
     {
       "query": "futterautomat gekühlt",
@@ -625,6 +730,13 @@
       "position": 39.5
     },
     {
+      "query": "pet feeder",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 50
+    },
+    {
       "query": "petkit eversweet ultra",
       "clicks": 0,
       "impressions": 2,
@@ -637,20 +749,6 @@
       "impressions": 2,
       "ctr": 0,
       "position": 6
-    },
-    {
-      "query": "petlibro edelstahl trinkbrunnen",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 8
-    },
-    {
-      "query": "wie viele trinkbrunnen für 2 katzen",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 3.5
     },
     {
       "query": "bester katzenbrunnen",
@@ -667,13 +765,6 @@
       "position": 92
     },
     {
-      "query": "futterautomat für 2 katzen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 21
-    },
-    {
       "query": "futterautomat hund test",
       "clicks": 0,
       "impressions": 1,
@@ -688,6 +779,13 @@
       "position": 65
     },
     {
+      "query": "futterautomat katze nassfutter kühlung",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
       "query": "futterautomat katze test",
       "clicks": 0,
       "impressions": 1,
@@ -700,6 +798,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 61
+    },
+    {
+      "query": "futterautomat mit elektrischer kühlung",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
     },
     {
       "query": "futterautomat mit kamera und app",
@@ -800,6 +905,13 @@
       "position": 79
     },
     {
+      "query": "hund ist apathisch frisst aber",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    },
+    {
       "query": "hund trinkt auf einmal viel",
       "clicks": 0,
       "impressions": 1,
@@ -835,6 +947,13 @@
       "position": 46
     },
     {
+      "query": "katzenbrunnen test",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
       "query": "katzenfutter kalorien",
       "clicks": 0,
       "impressions": 1,
@@ -863,13 +982,6 @@
       "position": 48
     },
     {
-      "query": "petkit",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 59
-    },
-    {
       "query": "petkit eversweet max",
       "clicks": 0,
       "impressions": 1,
@@ -877,25 +989,11 @@
       "position": 46
     },
     {
-      "query": "petkit futterautomat",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 28
-    },
-    {
       "query": "sicherheit beim freigang katze gps-tracker",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 85
-    },
-    {
-      "query": "test katzenbrunnen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 76
     },
     {
       "query": "trinkbrunnen für große hunde",
@@ -913,13 +1011,6 @@
     },
     {
       "query": "trinkbrunnen mit hygienespülung",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 41
-    },
-    {
-      "query": "trockenfutter abgelaufen",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -947,18 +1038,18 @@
       "position": 93
     },
     {
+      "query": "wie viele trinkbrunnen für 2 katzen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
       "query": "wieviel trockenfutter und nassfutter katze tabelle",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 86
-    },
-    {
-      "query": "xiaomi futterautomat",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
     },
     {
       "query": "yumshare solo 2",
@@ -969,13 +1060,6 @@
     }
   ],
   "trend": [
-    {
-      "date": "2026-07-19",
-      "clicks": 0,
-      "impressions": 51,
-      "ctr": 0,
-      "position": 24.8
-    },
     {
       "date": "2026-07-20",
       "clicks": 1,
@@ -1017,6 +1101,13 @@
       "impressions": 2,
       "ctr": 0,
       "position": 30
+    },
+    {
+      "date": "2026-07-26",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 49.2
     }
   ],
   "recommendations": [
@@ -1025,7 +1116,7 @@
       "type": "quick-win",
       "title": "Top-10-Chance",
       "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "reason": "26 Impressionen bei Position 13.8",
+      "reason": "25 Impressionen bei Position 15.7",
       "action": "Suchintention vertiefen und passende interne Links aus Hubs oder Cornerstones setzen."
     }
   ]
