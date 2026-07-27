@@ -254,6 +254,10 @@ Deshalb gibt es keinen pauschalen Testsieger für jeden Haushalt. Die erste Ents
 
 **SureFeed Microchip Pet Feeder:** bei Futterklau, Spezialfutter oder unterschiedlichen Rationen, aber ohne Zeitplan.
 
+## Unsere Empfehlungen nach Aufgabe
+
+### Beste kompakte aktive Kühlung: PETLIBRO Polar
+
 Der PETLIBRO Polar arbeitet mit thermoelektrischer Kühlung statt mit vorgefrorenen Akkus. Drei Edelstahl-Fächer mit jeweils 200 ml lassen sich über die App zeitlich planen.
 
 Das Konzept ist für Katzen und kleine Hunde schlüssig, wenn drei vorbereitete Mahlzeiten reichen. Die größte Schwäche ist zugleich eindeutig: Ohne Netzstrom gibt es weder aktive Kühlung noch ein dokumentiertes Batterie-Backup.
