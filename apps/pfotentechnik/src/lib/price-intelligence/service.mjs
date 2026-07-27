@@ -4,15 +4,62 @@ import { extractOfferFromHtml } from "./extract-offer.mjs";
 import {
   readProductDocument,
   readProductFiles,
+  updateProductOperations,
   updateProductPrice
 } from "./frontmatter-price.mjs";
 import { safeFetchText } from "./safe-fetch.mjs";
+import {
+  AVAILABILITY_VALUES,
+  PRICE_STATE_VALUES,
+  availabilityFromOffer,
+  buildOperationsDashboard,
+  compareMaintenanceRows,
+  createInFlightDeduper,
+  deriveProductOperations,
+  parseLocalizedPrice,
+  toOperationsRecord
+} from "../product-operations/policy.mjs";
 
 const appRoot = path.resolve(fileURLToPath(new URL("../../..", import.meta.url)));
 const productsDir = path.join(appRoot, "src", "content", "products");
+const dedupePriceCheck = createInFlightDeduper();
 
 const hostnameLabel = (url) => {
   try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return "Händler"; }
+};
+
+const validateSlug = (value) => {
+  const slug = String(value || "").trim();
+  if (!slug) throw new Error("Produkt-Slug fehlt.");
+  if (!/^[a-z0-9][a-z0-9-]*$/i.test(slug)) throw new Error("Der Produkt-Slug ist ungültig.");
+  return slug;
+};
+
+const validateCurrency = (value) => {
+  const currency = String(value || "EUR").trim().toUpperCase();
+  if (!/^[A-Z]{3}$/.test(currency)) {
+    throw new Error("Die Währung muss als dreistelliger ISO-Code angegeben werden.");
+  }
+  return currency;
+};
+
+const validateTargetUrl = (value) => {
+  const raw = String(value || "").trim();
+  if (!raw) return undefined;
+  const parsed = new URL(raw);
+  if (parsed.protocol !== "https:") {
+    throw new Error("Für Preise und Affiliate-Ziele sind nur HTTPS-URLs erlaubt.");
+  }
+  return parsed.href;
+};
+
+const resultFromDocument = (document, extra = {}) => {
+  const record = toOperationsRecord(document.data);
+  return {
+    ...record,
+    ...extra,
+    record
+  };
 };
 
 export async function listPriceDocuments() {
@@ -20,23 +67,32 @@ export async function listPriceDocuments() {
   return Promise.all(files.map(readProductDocument));
 }
 
+async function findDocument(slug) {
+  const documents = await listPriceDocuments();
+  const document = documents.find((item) => item.slug === slug);
+  if (!document) throw new Error(`Produkt "${slug}" wurde nicht gefunden.`);
+  return document;
+}
+
 async function checkDocumentPrice(document) {
   const data = document.data ?? {};
   const targetUrl = data.affiliate?.url || data.price?.affiliateUrl || data.productUrl;
   if (!targetUrl) throw new Error("Für dieses Produkt ist keine Händler-URL hinterlegt.");
+
   const fetched = await safeFetchText(targetUrl);
   const offer = extractOfferFromHtml(fetched.html, fetched.resolvedUrl);
   if (!offer) throw new Error("Auf der Händlerseite wurde kein belastbarer strukturierter Preis gefunden.");
+
   const checkedAt = new Date().toISOString();
   const sourceLabel = hostnameLabel(fetched.resolvedUrl);
+  const availability = availabilityFromOffer(offer.availability) ?? "available";
 
-  await updateProductPrice(
+  const persisted = await updateProductPrice(
     document.file,
     {
       current: offer.current,
       currency: offer.currency || "EUR",
       status: "unknown",
-      comparisonText: data.price?.comparisonText,
       checkedAt,
       source: {
         id: sourceLabel,
@@ -46,102 +102,112 @@ async function checkDocumentPrice(document) {
     },
     {
       affiliateUrl: targetUrl,
-      syncAffiliateUrl: true
+      syncAffiliateUrl: true,
+      now: checkedAt,
+      operations: {
+        availability,
+        availabilityReason: availability === "available"
+          ? "Bei der automatischen Preisprüfung als verfügbar erkannt."
+          : `Bei der automatischen Preisprüfung als ${availability} erkannt.`,
+        availabilityUpdated: checkedAt
+      }
     }
   );
 
-  return {
-    slug: document.slug,
-    title: data.title,
-    current: offer.current,
-    currency: offer.currency || "EUR",
+  return resultFromDocument(persisted, {
     checkedAt,
     method: offer.method,
     source: sourceLabel,
-    targetUrl
-  };
+    targetUrl,
+    availabilityDetected: availability
+  });
 }
 
-export async function checkProductPrice(slug) {
-  const documents = await listPriceDocuments();
-  const document = documents.find((item) => item.slug === slug);
-  if (!document) throw new Error(`Produkt "${slug}" wurde nicht gefunden.`);
-  return checkDocumentPrice(document);
+export async function checkProductPrice(slugInput) {
+  const slug = validateSlug(slugInput);
+  return dedupePriceCheck(slug, async () => checkDocumentPrice(await findDocument(slug)));
 }
 
-export async function checkAllProductPrices({ limit = 100 } = {}) {
+export async function checkAllProductPrices({ limit = 100, includeInactive = false } = {}) {
   const documents = await listPriceDocuments();
-  const safeLimit = Math.min(documents.length, Math.max(1, Number(limit) || 100));
+  const candidates = documents.filter((document) => {
+    if (includeInactive) return true;
+    const operations = deriveProductOperations(document.data);
+    return !operations.consciouslyUnavailable && !operations.archived;
+  });
+  const safeLimit = Math.min(candidates.length, Math.max(1, Number(limit) || 100));
   const results = [];
-  for (const document of documents.slice(0, safeLimit)) {
-    try { results.push({ ok: true, ...(await checkDocumentPrice(document)) }); }
-    catch (error) { results.push({ ok: false, slug: document.slug, title: document.data?.title, error: error instanceof Error ? error.message : String(error) }); }
+
+  for (const document of candidates.slice(0, safeLimit)) {
+    try {
+      results.push({ ok: true, ...(await checkProductPrice(document.slug)) });
+    } catch (error) {
+      results.push({
+        ok: false,
+        slug: document.slug,
+        title: document.data?.title,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
   }
+
   return {
     checkedAt: new Date().toISOString(),
     total: results.length,
     succeeded: results.filter((item) => item.ok).length,
     failed: results.filter((item) => !item.ok).length,
+    skipped: documents.length - candidates.length,
     results
   };
 }
 
 export async function setManualProductPrice(input = {}) {
-  const slug = String(input.slug || "").trim();
-  if (!slug) throw new Error("Produkt-Slug fehlt.");
+  const slug = validateSlug(input.slug);
+  const priceState = PRICE_STATE_VALUES.includes(input.priceState) ? input.priceState : "available";
+  const availability = AVAILABILITY_VALUES.includes(input.availability) ? input.availability : undefined;
+  const availabilityReason = String(input.availabilityReason || "").trim().slice(0, 500);
+  const document = await findDocument(slug);
+  const now = new Date().toISOString();
 
-  const current = Number(String(input.current ?? "").trim().replace(",", "."));
-  if (!Number.isFinite(current) || current <= 0) {
-    throw new Error("Der manuelle Preis muss größer als 0 sein.");
+  if (priceState !== "available" && priceState !== "stale") {
+    const persisted = await updateProductOperations(document.file, {
+      priceState,
+      availability,
+      availabilityReason,
+      availabilityUpdated: availability ? now : undefined,
+      now
+    });
+    return resultFromDocument(persisted, { method: "manual-status", ctaUpdated: false });
   }
 
-  const currency = String(input.currency || "EUR").trim().toUpperCase();
-  if (!/^[A-Z]{3}$/.test(currency)) {
-    throw new Error("Die Währung muss als dreistelliger ISO-Code angegeben werden.");
+  const current = parseLocalizedPrice(input.current);
+  if (current == null) {
+    throw new Error("Der manuelle Preis fehlt oder ist ungültig. Leere Eingaben werden nicht als 0 € gespeichert.");
   }
 
-  const documents = await listPriceDocuments();
-  const document = documents.find((item) => item.slug === slug);
-  if (!document) throw new Error(`Produkt "${slug}" wurde nicht gefunden.`);
-
+  const currency = validateCurrency(input.currency);
   const data = document.data ?? {};
-  const enteredUrl = String(input.targetUrl ?? input.affiliateUrl ?? "").trim();
-  let targetUrl =
-    enteredUrl ||
-    data.affiliate?.url ||
-    data.price?.affiliateUrl ||
-    data.price?.source?.url ||
-    data.productUrl ||
-    undefined;
-
-  if (targetUrl) {
-    const parsed = new URL(targetUrl);
-    if (parsed.protocol !== "https:") {
-      throw new Error("Für manuelle Preise sind nur HTTPS-URLs erlaubt.");
-    }
-    targetUrl = parsed.href;
-  }
+  const targetUrlProvided = Object.prototype.hasOwnProperty.call(input, "targetUrl") ||
+    Object.prototype.hasOwnProperty.call(input, "affiliateUrl");
+  const enteredUrl = validateTargetUrl(input.targetUrl ?? input.affiliateUrl);
+  const targetUrl = targetUrlProvided
+    ? enteredUrl
+    : validateTargetUrl(data.affiliate?.url || data.price?.affiliateUrl || data.price?.source?.url || data.productUrl);
 
   const sourceLabel =
     String(input.sourceLabel || "").trim().slice(0, 120) ||
-    (data.price?.source?.type === "manual"
-      ? String(data.price.source.label || "").trim()
-      : "") ||
+    (data.price?.source?.type === "manual" ? String(data.price.source.label || "").trim() : "") ||
     "Manuell im SEO Cockpit";
-  const comparisonText =
-    String(input.comparisonText || "").trim().slice(0, 360) ||
-    data.price?.comparisonText ||
-    undefined;
-  const checkedAt = new Date().toISOString();
+  const comparisonText = String(input.comparisonText || "").trim().slice(0, 360) || undefined;
 
-  await updateProductPrice(
+  const persisted = await updateProductPrice(
     document.file,
     {
       current,
       currency,
       status: "unknown",
       comparisonText,
-      checkedAt,
+      checkedAt: now,
       source: {
         id: "manual",
         label: sourceLabel,
@@ -150,63 +216,62 @@ export async function setManualProductPrice(input = {}) {
     },
     {
       affiliateUrl: targetUrl,
-      syncAffiliateUrl: Boolean(targetUrl)
+      syncAffiliateUrl: targetUrlProvided || Boolean(targetUrl),
+      removeAffiliate: targetUrlProvided && !targetUrl,
+      now,
+      operations: {
+        priceState,
+        availability,
+        availabilityReason,
+        availabilityUpdated: availability ? now : undefined
+      }
     }
   );
 
-  return {
-    slug: document.slug,
-    title: data.title,
-    current,
-    currency,
-    checkedAt,
+  return resultFromDocument(persisted, {
+    checkedAt: now,
     source: sourceLabel,
     targetUrl: targetUrl ?? null,
     affiliateUrl: targetUrl ?? null,
     ctaUpdated: Boolean(targetUrl),
     method: "manual"
-  };
+  });
+}
+
+export async function updateProductOperationsState(input = {}) {
+  const slug = validateSlug(input.slug);
+  const document = await findDocument(slug);
+  const patch = { now: new Date().toISOString() };
+
+  if (input.availability !== undefined) {
+    if (!AVAILABILITY_VALUES.includes(input.availability)) throw new Error("Unbekannter Verfügbarkeitsstatus.");
+    patch.availability = input.availability;
+    patch.availabilityReason = String(input.availabilityReason || "").trim().slice(0, 500);
+  }
+  if (input.priceState !== undefined) {
+    if (!PRICE_STATE_VALUES.includes(input.priceState)) throw new Error("Unbekannter Preisstatus.");
+    patch.priceState = input.priceState;
+  }
+  if (input.archive !== undefined) patch.archive = Boolean(input.archive);
+
+  const persisted = await updateProductOperations(document.file, patch);
+  return resultFromDocument(persisted, { method: "operations-update" });
 }
 
 export async function priceAudit() {
   const documents = await listPriceDocuments();
-  const now = Date.now();
-  const rows = documents.map(({ slug, data }) => {
-    const current = Number(data.price?.current);
-    const checkedAt = data.price?.checkedAt ? Date.parse(String(data.price.checkedAt)) : NaN;
-    const ageDays = Number.isFinite(checkedAt) ? Math.max(0, Math.floor((now - checkedAt) / 86_400_000)) : null;
-    const canonicalUrl = data.affiliate?.url ?? data.price?.affiliateUrl ?? data.price?.source?.url ?? null;
-    const duplicateUrlFields = [
-      data.affiliate?.url,
-      data.price?.affiliateUrl,
-      data.price?.source?.url
-    ].filter(Boolean).length > 1;
+  const products = documents
+    .map(({ data }) => toOperationsRecord(data))
+    .map((record) => ({ ...record, operations: record }))
+    .sort(compareMaintenanceRows)
+    .map(({ operations: _operations, ...record }) => record);
 
-    return {
-      slug,
-      title: data.title,
-      category: data.category?.key ?? data.category?.label ?? "unbekannt",
-      current: Number.isFinite(current) && current > 0 ? current : null,
-      currency: data.price?.currency ?? "EUR",
-      checkedAt: data.price?.checkedAt ?? null,
-      ageDays,
-      stale: ageDays == null || ageDays > 14,
-      affiliateUrl: canonicalUrl,
-      targetUrl: canonicalUrl,
-      duplicateUrlFields
-    };
-  });
+  const rowsForDashboard = products.map((record) => ({ operations: record }));
+  const dashboard = buildOperationsDashboard(rowsForDashboard);
 
   return {
     generatedAt: new Date().toISOString(),
-    summary: {
-      products: rows.length,
-      withPrice: rows.filter((row) => row.current != null).length,
-      missingPrice: rows.filter((row) => row.current == null).length,
-      stale: rows.filter((row) => row.stale).length,
-      withoutUrl: rows.filter((row) => !row.targetUrl).length,
-      duplicateUrlFields: rows.filter((row) => row.duplicateUrlFields).length
-    },
-    products: rows
+    summary: dashboard,
+    products
   };
 }

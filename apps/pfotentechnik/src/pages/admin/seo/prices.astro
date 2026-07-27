@@ -1,637 +1,725 @@
 ---
 import { getCollection } from "astro:content";
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
-import { buildPriceIndex } from "../../../domain/price/engine";
+import {
+  AVAILABILITY_LABELS,
+  buildOperationsDashboard,
+  compareMaintenanceRows,
+  toOperationsRecord
+} from "../../../lib/product-operations/policy.mjs";
 
 const products = await getCollection("products");
-const index = buildPriceIndex(products);
-
-const rows = products.map((entry) => {
-  const insight = index.bySlug.get(entry.data.slug);
-  const sourceLabel = insight?.source?.label ?? "Nicht angegeben";
-
-  return {
-    slug: entry.data.slug,
-    title: entry.data.title,
-    category: entry.data.category.label,
-    current: insight?.formattedCurrent ?? "Noch nicht geprüft",
-    currentValue: insight?.current ?? "",
-    currency: insight?.currency ?? entry.data.price?.currency ?? "EUR",
-    status: insight?.assessmentLabel ?? "offen",
-    range: insight?.formattedRange ?? "Zu wenig Vergleichsdaten",
-    checkedAt: insight?.checkedAt
-      ? new Intl.DateTimeFormat("de-DE", {
-          dateStyle: "medium",
-          timeStyle: "short"
-        }).format(new Date(insight.checkedAt))
-      : "Nie",
-    stale: insight?.isStale ?? true,
-    hasUrl: Boolean(entry.data.affiliate?.url ?? insight?.affiliateUrl),
-    targetUrl: entry.data.affiliate?.url ?? insight?.affiliateUrl ?? "",
-    sourceLabel,
-    comparisonText:
-      entry.data.price?.comparisonText ??
-      insight?.generatedComparisonText ??
-      ""
-  };
-}).sort(
-  (left, right) =>
-    left.category.localeCompare(right.category, "de") ||
-    left.title.localeCompare(right.title, "de")
-);
-
-const withPrice = index.products.filter((item) => item.current != null).length;
-const serviceUrl =
-  import.meta.env.PUBLIC_SEARCH_ADMIN_URL ||
-  "http://127.0.0.1:4178";
+const rows = products
+  .map((entry) => {
+    const record = toOperationsRecord(entry.data);
+    return { ...record, operations: record };
+  })
+  .sort(compareMaintenanceRows)
+  .map(({ operations: _operations, ...record }) => record);
+const dashboard = buildOperationsDashboard(rows.map((record) => ({ operations: record })));
+const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
 const serializedConfig = JSON.stringify({ serviceUrl }).replaceAll("<", "\\u003c");
+const serializedRows = JSON.stringify(rows).replaceAll("<", "\\u003c");
+const formatDate = (value?: string | null) => value
+  ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(value))
+  : "Nie";
+const metrics = [
+  ["missingPrice", "Ohne Preis"],
+  ["missingAffiliate", "Ohne Affiliate"],
+  ["unknownAvailability", "Verfügbarkeit unbekannt"],
+  ["discontinued", "Eingestellt"],
+  ["unavailable", "Nicht verfügbar"],
+  ["stale30", "Preis älter als 30 Tage"],
+  ["stale90", "Preis älter als 90 Tage"],
+  ["maintenanceRequired", "Pflege erforderlich"],
+  ["maintenanceRecommended", "Pflege empfohlen"],
+  ["archived", "Archiviert"],
+  ["maintenanceRate", "Pflegequote"]
+] as const;
 ---
 
 <SeoAdminLayout
-  title="Preise"
-  description="Aktuelle Händlerpreise prüfen oder redaktionell manuell hinterlegen und innerhalb der jeweiligen Produktkategorie einordnen."
+  title="Produktpflege"
+  description="Preis, Affiliate-Ziel, Verfügbarkeit, Empfehlbarkeit und Pflegepriorität verwalten. Der redaktionelle Produktscore bleibt davon vollständig getrennt."
   active="prices"
 >
-  <section class="price-actions seo-card">
+  <section class="ops-summary seo-card">
     <div>
-      <span class="seo-badge">Price Intelligence 1.1</span>
-      <h2>{withPrice} von {rows.length} Preisen hinterlegt</h2>
+      <span class="seo-badge">Product Operations 1.0</span>
+      <h2>Handlungsbedarf statt Datenrauschen</h2>
       <p>
-        Preisbereiche entstehen automatisch aus vergleichbaren Produkten derselben
-        Kategorie. Einzelpreise können geprüft oder bei fehlender strukturierter
-        Händlerangabe manuell gepflegt werden.
+        Die Standardansicht enthält nur echte Pflegeaufgaben. Bewusst als eingestellt,
+        vorübergehend nicht verfügbar oder nicht lieferbar gepflegte Produkte werden
+        nicht als offene Aufgabe gewertet.
       </p>
     </div>
-    <div class="price-actions__buttons">
-      <a href="#manual-price-entry">Preis manuell hinterlegen</a>
-      <button type="button" data-check-all>Alle Preise prüfen</button>
-    </div>
+    <button type="button" data-check-all>Aktive Preise prüfen</button>
   </section>
 
-  <p class="price-status" aria-live="polite" data-price-status></p>
-  <script
-    type="application/json"
-    data-price-config
-    set:html={serializedConfig}
-  ></script>
+  <section class="ops-metrics" aria-label="Produktpflege-Kennzahlen">
+    {metrics.map(([key, label]) => (
+      <article class="seo-card">
+        <span>{label}</span>
+        <strong data-metric={key}>
+          {key === "maintenanceRate" ? `${dashboard[key]} %` : dashboard[key]}
+        </strong>
+      </article>
+    ))}
+  </section>
 
-  <details class="manual-price seo-card" id="manual-price-entry">
-    <summary>
-      <span>
-        <strong>Preis manuell hinterlegen</strong>
-        <small>
-          Für Händlerseiten ohne auslesbare strukturierte Preisdaten.
-        </small>
-      </span>
-      <span aria-hidden="true">+</span>
-    </summary>
+  <section class="ops-toolbar seo-card" aria-label="Produktliste filtern">
+    <div class="ops-tabs" role="group" aria-label="Ansicht">
+      <button type="button" class="is-active" data-view="tasks">Arbeitsliste</button>
+      <button type="button" data-view="all">Alle Produkte</button>
+      <button type="button" data-view="archive">Archiv & Nichtverfügbarkeit</button>
+    </div>
+    <label>
+      <span>Filter</span>
+      <select data-filter>
+        <option value="all">Alle</option>
+        <option value="missing-price">Preis fehlt</option>
+        <option value="missing-affiliate">Affiliate fehlt</option>
+        <option value="stale-30">Preis älter als 30 Tage</option>
+        <option value="stale-90">Preis älter als 90 Tage</option>
+        <option value="unknown-availability">Verfügbarkeit unbekannt</option>
+        <option value="temporarily-unavailable">Vorübergehend nicht verfügbar</option>
+        <option value="out-of-stock">Nicht lieferbar</option>
+        <option value="discontinued">Eingestellt</option>
+        <option value="maintenance-required">Pflege erforderlich</option>
+        <option value="maintenance-recommended">Pflege empfohlen</option>
+        <option value="archived">Archiviert</option>
+      </select>
+    </label>
+    <label class="ops-search">
+      <span>Suche</span>
+      <input type="search" data-search placeholder="Produkt oder Kategorie" />
+    </label>
+  </section>
 
-    <form data-manual-price-form>
-      <label>
-        <span>Produkt</span>
-        <select name="slug" required>
-          <option value="">Produkt auswählen</option>
-          {
-            rows.map((row) => (
-              <option value={row.slug}>
-                {row.title} · {row.category}
-              </option>
-            ))
-          }
-        </select>
-      </label>
+  <p class="ops-status" aria-live="polite" data-ops-status></p>
+  <script type="application/json" data-ops-config set:html={serializedConfig}></script>
+  <script type="application/json" data-ops-records set:html={serializedRows}></script>
 
-      <label>
-        <span>Aktueller Preis</span>
-        <input
-          name="current"
-          type="number"
-          inputmode="decimal"
-          min="0.01"
-          step="0.01"
-          placeholder="119,00"
-          required
-        />
-      </label>
-
-      <label>
-        <span>Währung</span>
-        <select name="currency" required>
-          <option value="EUR">EUR</option>
-          <option value="CHF">CHF</option>
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-        </select>
-      </label>
-
-      <label>
-        <span>Quelle oder Händler</span>
-        <input
-          name="sourceLabel"
-          type="text"
-          maxlength="120"
-          placeholder="z. B. Amazon, Hersteller-Shop"
-        />
-      </label>
-
-      <label class="manual-price__wide">
-        <span>Händler- oder Affiliate-Ziel</span>
-        <small>Eine URL für Preisprüfung sowie Produkt- und Vergleichs-CTA.</small>
-        <input
-          name="targetUrl"
-          type="url"
-          inputmode="url"
-          placeholder="https://..."
-        />
-      </label>
-
-      <label class="manual-price__wide">
-        <span>Kurze Preiseinordnung</span>
-        <textarea
-          name="comparisonText"
-          rows="3"
-          maxlength="360"
-          placeholder="Optional. Zum Beispiel: Etwas teurer als einfache Modelle, aber günstiger als Premium-Geräte mit Kamera."
-        ></textarea>
-      </label>
-
-      <div class="manual-price__actions">
-        <button type="submit">Manuellen Preis speichern</button>
-        <button type="reset" class="secondary">Eingaben leeren</button>
-      </div>
-    </form>
-  </details>
-
-  <section class="price-table seo-card" aria-label="Produktpreise">
-    <div class="price-head">
+  <section class="ops-table seo-card" aria-label="Produktpflege">
+    <div class="ops-head" aria-hidden="true">
       <b>Produkt</b>
       <b>Preis</b>
-      <b>Einordnung</b>
-      <b>Prüfung</b>
+      <b>Preisdatum</b>
+      <b>Preisstatus</b>
+      <b>Affiliate</b>
+      <b>Verfügbarkeit</b>
+      <b>Empfehlung</b>
+      <b>Redaktion</b>
+      <b>Pflege</b>
       <b>Aktionen</b>
     </div>
 
-    {
-      rows.map((row) => (
-        <article data-price-row={row.slug}>
-          <div>
-            <a href={`/produkt/${row.slug}/`} target="_blank">
-              {row.title}
-            </a>
+    <div data-ops-list>
+      {rows.map((row) => (
+        <article data-product-row={row.slug}>
+          <div class="ops-cell ops-product">
+            <a href={`/produkt/${row.slug}/`} target="_blank">{row.title}</a>
             <small>{row.category}</small>
+            <small class="ops-warning" data-field="warnings">
+              {row.warnings.length ? row.warnings.join(" · ") : "Keine offene Warnung"}
+            </small>
           </div>
-
-          <div>
-            <strong>{row.current}</strong>
-            <small>{row.sourceLabel}</small>
+          <div class="ops-cell">
+            <strong data-field="formattedCurrent">{row.formattedCurrent ?? "Fehlt"}</strong>
+            <small data-field="sourceLabel">{row.sourceLabel}</small>
           </div>
-
-          <div>
-            <span
-              class="seo-badge"
-              data-level={
-                row.status === "eher teuer"
-                  ? "high"
-                  : row.status === "fair"
-                    ? "medium"
-                    : row.status === "günstig"
-                      ? "low"
-                      : undefined
-              }
-            >
-              {row.status}
+          <div class="ops-cell">
+            <span data-field="priceUpdated">{formatDate(row.priceUpdated)}</span>
+            <small data-field="priceAgeDays">
+              {row.priceAgeDays == null ? "Kein Datenstand" : `${row.priceAgeDays} Tage alt`}
+            </small>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="priceState" data-state={row.priceState}>{row.priceState}</span>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="affiliateAvailable" data-state={row.affiliateAvailable ? "yes" : "no"}>
+              {row.affiliateAvailable ? "Vorhanden" : "Fehlt"}
             </span>
-            <small>{row.range}</small>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="availability" data-state={row.availability}>{row.availabilityLabel}</span>
+            <small data-field="availabilityReason">{row.availabilityReason ?? "Keine Bemerkung"}</small>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="recommendationStatus" data-state={row.recommendationStatus}>{row.recommendationLabel}</span>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="editorialStatus" data-state={row.editorialStatus}>{row.editorialStatus}</span>
+          </div>
+          <div class="ops-cell">
+            <span class="ops-chip" data-field="maintenanceStatus" data-state={row.maintenanceStatus}>{row.maintenanceLabel}</span>
+          </div>
+          <div class="ops-cell ops-actions">
+            <button type="button" data-check-price={row.slug} disabled={!row.targetUrl || row.consciouslyUnavailable}>
+              {row.targetUrl ? "Preis prüfen" : "URL fehlt"}
+            </button>
+            <button type="button" class="secondary" data-toggle-editor={row.slug}>Pflegen</button>
           </div>
 
-          <div>
-            <span>{row.checkedAt}</span>
-            {row.stale && <small class="stale">Prüfung fällig</small>}
-          </div>
-
-          <div class="price-row-actions">
-            <button
-              type="button"
-              class="secondary"
-              data-edit-manual-price
-              data-slug={row.slug}
-              data-current={String(row.currentValue)}
-              data-currency={row.currency}
-              data-source-label={row.sourceLabel === "Nicht angegeben" ? "" : row.sourceLabel}
-              data-target-url={row.targetUrl}
-              data-comparison-text={row.comparisonText}
-            >
-              Manuell
-            </button>
-            <button
-              type="button"
-              data-check-price={row.slug}
-              disabled={!row.hasUrl}
-            >
-              {row.hasUrl ? "Preis prüfen" : "URL fehlt"}
-            </button>
-          </div>
+          <form class="ops-editor" data-editor={row.slug} hidden>
+            <label>
+              <span>Preis</span>
+              <input
+                type="text"
+                inputmode="decimal"
+                autocomplete="off"
+                data-draft="current"
+                value={row.current ?? ""}
+                placeholder="29,99"
+              />
+            </label>
+            <label>
+              <span>Währung</span>
+              <select data-draft="currency">
+                {["EUR", "CHF", "USD", "GBP"].map((currency) => (
+                  <option value={currency} selected={currency === row.currency}>{currency}</option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>Preisstatus</span>
+              <select data-draft="priceState">
+                <option value="available" selected={row.priceState === "available"}>Preis vorhanden</option>
+                <option value="unknown" selected={row.priceState === "unknown"}>Preis unbekannt</option>
+                <option value="removed" selected={row.priceState === "removed"}>Bewusst entfernt</option>
+                <option value="stale" selected={row.priceState === "stale"}>Veraltet</option>
+              </select>
+            </label>
+            <label>
+              <span>Quelle oder Händler</span>
+              <input type="text" maxlength="120" data-draft="sourceLabel" value={row.sourceLabel === "Nicht angegeben" ? "" : row.sourceLabel} />
+            </label>
+            <label class="wide">
+              <span>Affiliate- oder Händler-Ziel</span>
+              <input type="url" inputmode="url" data-draft="targetUrl" value={row.targetUrl ?? ""} placeholder="https://…" />
+            </label>
+            <label>
+              <span>Verfügbarkeit</span>
+              <select data-draft="availability">
+                {Object.entries(AVAILABILITY_LABELS).map(([value, label]) => (
+                  <option value={value} selected={value === row.availability}>{label}</option>
+                ))}
+              </select>
+            </label>
+            <label class="wide">
+              <span>Bemerkung zur Verfügbarkeit</span>
+              <textarea rows="2" maxlength="500" data-draft="availabilityReason">{row.availabilityReason ?? ""}</textarea>
+            </label>
+            <label class="wide">
+              <span>Kurze Preiseinordnung</span>
+              <textarea rows="2" maxlength="360" data-draft="comparisonText">{row.comparisonText ?? ""}</textarea>
+            </label>
+            <div class="ops-editor__actions wide">
+              <button type="submit" data-save-product={row.slug}>Preis und Verfügbarkeit speichern</button>
+              <button type="button" class="secondary" data-archive-product={row.slug}>
+                {row.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren"}
+              </button>
+              <button type="button" class="secondary" data-close-editor={row.slug}>Schließen</button>
+            </div>
+          </form>
         </article>
-      ))
-    }
+      ))}
+    </div>
+    <p class="seo-empty" data-empty hidden>Für diese Ansicht gibt es keine Produkte.</p>
   </section>
 </SeoAdminLayout>
 
 <script>
-  const status = document.querySelector<HTMLElement>("[data-price-status]");
-  const configNode =
-    document.querySelector<HTMLScriptElement>("[data-price-config]");
+  type OperationsRecord = Record<string, any> & { slug: string; title: string };
+  type Draft = {
+    current: string;
+    currency: string;
+    priceState: string;
+    sourceLabel: string;
+    targetUrl: string;
+    availability: string;
+    availabilityReason: string;
+    comparisonText: string;
+  };
+
+  const configNode = document.querySelector<HTMLScriptElement>("[data-ops-config]");
+  const recordsNode = document.querySelector<HTMLScriptElement>("[data-ops-records]");
   const config = JSON.parse(configNode?.textContent || "{}");
-  const serviceUrl = String(
-    config.serviceUrl || "http://127.0.0.1:4178"
-  ).replace(/\/$/, "");
-  const manualDetails =
-    document.querySelector<HTMLDetailsElement>("#manual-price-entry");
-  const manualForm =
-    document.querySelector<HTMLFormElement>("[data-manual-price-form]");
+  const serviceUrl = String(config.serviceUrl || "http://127.0.0.1:4178").replace(/\/$/, "");
+  const initialRecords = JSON.parse(recordsNode?.textContent || "[]") as OperationsRecord[];
+  const records = new Map(initialRecords.map((record) => [record.slug, record]));
+  const drafts = new Map<string, Draft>();
+  const inFlight = new Map<string, Promise<any>>();
+  const status = document.querySelector<HTMLElement>("[data-ops-status]");
+  const list = document.querySelector<HTMLElement>("[data-ops-list]");
+  const empty = document.querySelector<HTMLElement>("[data-empty]");
+  const filter = document.querySelector<HTMLSelectElement>("[data-filter]");
+  const search = document.querySelector<HTMLInputElement>("[data-search]");
+  let currentView = "tasks";
 
-  const request = async (path: string, body: unknown) => {
+  const setStatus = (message: string, level: "normal" | "error" = "normal") => {
+    if (!status) return;
+    status.textContent = message;
+    status.dataset.level = level;
+  };
+
+  const fetchJson = async (path: string, options: RequestInit = {}) => {
     const response = await fetch(`${serviceUrl}${path}`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(body)
+      cache: "no-store",
+      ...options,
+      headers: {
+        ...(options.body ? { "content-type": "application/json" } : {}),
+        ...(options.headers || {})
+      }
     });
-    const payload = await response.json();
-
+    const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
-      throw new Error(
-        payload?.error?.message ||
-        payload?.error ||
-        "Preisaktion fehlgeschlagen."
-      );
+      throw new Error(payload?.error?.message || payload?.error || "Produktaktion fehlgeschlagen.");
     }
-
     return payload;
   };
 
-  const setStatus = (message: string) => {
-    if (status) status.textContent = message;
+  const runOnce = <T>(key: string, task: () => Promise<T>): Promise<T> => {
+    const existing = inFlight.get(key);
+    if (existing) return existing;
+    const promise = task().finally(() => {
+      if (inFlight.get(key) === promise) inFlight.delete(key);
+    });
+    inFlight.set(key, promise);
+    return promise;
   };
 
-  const field = <T extends HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(
-    name: string
-  ) => manualForm?.elements.namedItem(name) as T | null;
+  const formatDate = (value: string | null | undefined) => value
+    ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(value))
+    : "Nie";
 
-  document
-    .querySelectorAll<HTMLButtonElement>("[data-edit-manual-price]")
-    .forEach((button) => {
-      button.addEventListener("click", () => {
-        if (!manualForm || !manualDetails) return;
+  const textFor = (record: OperationsRecord, field: string) => {
+    if (field === "formattedCurrent") return record.formattedCurrent || "Fehlt";
+    if (field === "priceUpdated") return formatDate(record.priceUpdated);
+    if (field === "priceAgeDays") return record.priceAgeDays == null ? "Kein Datenstand" : `${record.priceAgeDays} Tage alt`;
+    if (field === "affiliateAvailable") return record.affiliateAvailable ? "Vorhanden" : "Fehlt";
+    if (field === "availability") return record.availabilityLabel;
+    if (field === "availabilityReason") return record.availabilityReason || "Keine Bemerkung";
+    if (field === "recommendationStatus") return record.recommendationLabel;
+    if (field === "maintenanceStatus") return record.maintenanceLabel;
+    if (field === "warnings") return record.warnings?.length ? record.warnings.join(" · ") : "Keine offene Warnung";
+    return String(record[field] ?? "");
+  };
 
-        manualDetails.open = true;
-        const slug = field<HTMLSelectElement>("slug");
-        const current = field<HTMLInputElement>("current");
-        const currency = field<HTMLSelectElement>("currency");
-        const sourceLabel = field<HTMLInputElement>("sourceLabel");
-        const targetUrl = field<HTMLInputElement>("targetUrl");
-        const comparisonText =
-          field<HTMLTextAreaElement>("comparisonText");
+  const draftFrom = (record: OperationsRecord): Draft => ({
+    current: record.current == null ? "" : String(record.current).replace(".", ","),
+    currency: record.currency || "EUR",
+    priceState: record.priceState || "unknown",
+    sourceLabel: record.sourceLabel === "Nicht angegeben" ? "" : record.sourceLabel || "",
+    targetUrl: record.targetUrl || "",
+    availability: record.availability || "unknown",
+    availabilityReason: record.availabilityReason || "",
+    comparisonText: record.comparisonText || ""
+  });
 
-        if (slug) slug.value = button.dataset.slug || "";
-        if (current) current.value = button.dataset.current || "";
-        if (currency) currency.value = button.dataset.currency || "EUR";
-        if (sourceLabel) {
-          sourceLabel.value = button.dataset.sourceLabel || "";
-        }
-        if (targetUrl) {
-          targetUrl.value = button.dataset.targetUrl || "";
-        }
-        if (comparisonText) {
-          comparisonText.value = button.dataset.comparisonText || "";
-        }
+  const syncEditor = (record: OperationsRecord) => {
+    const editor = document.querySelector<HTMLFormElement>(`[data-editor="${CSS.escape(record.slug)}"]`);
+    if (!editor) return;
+    const draft = draftFrom(record);
+    drafts.set(record.slug, draft);
+    editor.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>("[data-draft]").forEach((input) => {
+      const key = input.dataset.draft as keyof Draft;
+      input.value = draft[key] ?? "";
+    });
+    const archiveButton = editor.querySelector<HTMLButtonElement>("[data-archive-product]");
+    if (archiveButton) archiveButton.textContent = record.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren";
+  };
 
-        manualDetails.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-        current?.focus({ preventScroll: true });
+  const updateRow = (record: OperationsRecord) => {
+    records.set(record.slug, record);
+    const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(record.slug)}"]`);
+    if (!row) return;
+    row.querySelectorAll<HTMLElement>("[data-field]").forEach((node) => {
+      const field = node.dataset.field || "";
+      node.textContent = textFor(record, field);
+      if (["priceState", "affiliateAvailable", "availability", "recommendationStatus", "editorialStatus", "maintenanceStatus"].includes(field)) {
+        node.dataset.state = field === "affiliateAvailable" ? (record.affiliateAvailable ? "yes" : "no") : String(record[field] ?? "");
+      }
+    });
+    const check = row.querySelector<HTMLButtonElement>("[data-check-price]");
+    if (check) {
+      check.disabled = !record.targetUrl || record.consciouslyUnavailable;
+      check.textContent = record.targetUrl ? "Preis prüfen" : "URL fehlt";
+    }
+    syncEditor(record);
+  };
+
+  const metricValue = (key: string, values: OperationsRecord[]) => {
+    const count = (predicate: (record: OperationsRecord) => boolean) => values.filter(predicate).length;
+    if (key === "missingPrice") return count((record) => !record.priceAvailable && !record.consciouslyUnavailable && !record.archived);
+    if (key === "missingAffiliate") return count((record) => !record.affiliateAvailable && !record.consciouslyUnavailable && !record.archived);
+    if (key === "unknownAvailability") return count((record) => record.availability === "unknown");
+    if (key === "discontinued") return count((record) => record.availability === "discontinued");
+    if (key === "unavailable") return count((record) => ["temporarily-unavailable", "out-of-stock"].includes(record.availability));
+    if (key === "stale30") return count((record) => record.priceAgeDays != null && record.priceAgeDays > 30);
+    if (key === "stale90") return count((record) => record.priceAgeDays != null && record.priceAgeDays > 90);
+    if (key === "maintenanceRequired") return count((record) => record.maintenanceStatus === "required");
+    if (key === "maintenanceRecommended") return count((record) => record.maintenanceStatus === "recommended");
+    if (key === "archived") return count((record) => record.maintenanceStatus === "archived");
+    if (key === "maintenanceRate") {
+      const complete = count((record) => ["complete", "archived"].includes(record.maintenanceStatus));
+      return values.length ? `${Math.round((complete / values.length) * 1000) / 10} %` : "100 %";
+    }
+    return 0;
+  };
+
+  const refreshMetrics = () => {
+    const values = [...records.values()];
+    document.querySelectorAll<HTMLElement>("[data-metric]").forEach((node) => {
+      node.textContent = String(metricValue(node.dataset.metric || "", values));
+    });
+  };
+
+  const matchesFilter = (record: OperationsRecord, value: string) => {
+    if (value === "all") return true;
+    if (value === "missing-price") return !record.priceAvailable;
+    if (value === "missing-affiliate") return !record.affiliateAvailable;
+    if (value === "stale-30") return record.priceAgeDays != null && record.priceAgeDays > 30;
+    if (value === "stale-90") return record.priceAgeDays != null && record.priceAgeDays > 90;
+    if (value === "unknown-availability") return record.availability === "unknown";
+    if (value === "temporarily-unavailable") return record.availability === "temporarily-unavailable";
+    if (value === "out-of-stock") return record.availability === "out-of-stock";
+    if (value === "discontinued") return record.availability === "discontinued";
+    if (value === "maintenance-required") return record.maintenanceStatus === "required";
+    if (value === "maintenance-recommended") return record.maintenanceStatus === "recommended";
+    if (value === "archived") return record.maintenanceStatus === "archived";
+    return true;
+  };
+
+  const applyView = () => {
+    if (!list) return;
+    const query = (search?.value || "").trim().toLocaleLowerCase("de-DE");
+    const selectedFilter = filter?.value || "all";
+    const ordered = [...records.values()].sort((left, right) =>
+      Number(left.priorityRank ?? 1000) - Number(right.priorityRank ?? 1000) ||
+      Number(right.priceAgeDays ?? -1) - Number(left.priceAgeDays ?? -1) ||
+      String(left.title).localeCompare(String(right.title), "de")
+    );
+    let visible = 0;
+
+    for (const record of ordered) {
+      const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(record.slug)}"]`);
+      if (!row) continue;
+      const viewMatch = currentView === "tasks" ? record.isTask : currentView === "archive" ? record.isArchive : true;
+      const queryMatch = !query || `${record.title} ${record.category} ${record.slug}`.toLocaleLowerCase("de-DE").includes(query);
+      const show = viewMatch && queryMatch && matchesFilter(record, selectedFilter);
+      row.hidden = !show;
+      if (show) {
+        list.append(row);
+        visible += 1;
+      }
+    }
+    if (empty) empty.hidden = visible > 0;
+  };
+
+  const setRowBusy = (slug: string, busy: boolean) => {
+    const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(slug)}"]`);
+    row?.querySelectorAll<HTMLButtonElement>("button").forEach((button) => {
+      button.disabled = busy || (button.hasAttribute("data-check-price") && (!records.get(slug)?.targetUrl || records.get(slug)?.consciouslyUnavailable));
+    });
+    if (row) row.dataset.busy = busy ? "true" : "false";
+  };
+
+  const applyServerResult = (result: any) => {
+    const record = result?.record ?? result;
+    if (!record?.slug) throw new Error("Die Serverantwort enthält keinen persistierten Produktzustand.");
+    updateRow(record);
+    refreshMetrics();
+    applyView();
+    return record;
+  };
+
+  document.querySelectorAll<HTMLButtonElement>("[data-view]").forEach((button) => {
+    button.addEventListener("click", () => {
+      currentView = button.dataset.view || "tasks";
+      document.querySelectorAll<HTMLButtonElement>("[data-view]").forEach((candidate) => candidate.classList.toggle("is-active", candidate === button));
+      applyView();
+    });
+  });
+  filter?.addEventListener("change", applyView);
+  search?.addEventListener("input", applyView);
+
+  document.querySelectorAll<HTMLButtonElement>("[data-toggle-editor]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const slug = button.dataset.toggleEditor || "";
+      const editor = document.querySelector<HTMLFormElement>(`[data-editor="${CSS.escape(slug)}"]`);
+      if (!editor) return;
+      editor.hidden = !editor.hidden;
+      if (!editor.hidden) editor.querySelector<HTMLInputElement>("[data-draft='current']")?.focus();
+    });
+  });
+  document.querySelectorAll<HTMLButtonElement>("[data-close-editor]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const editor = document.querySelector<HTMLFormElement>(`[data-editor="${CSS.escape(button.dataset.closeEditor || "")}"]`);
+      if (editor) editor.hidden = true;
+    });
+  });
+
+  document.querySelectorAll<HTMLFormElement>("[data-editor]").forEach((editor) => {
+    const slug = editor.dataset.editor || "";
+    const initial = records.get(slug);
+    if (initial) drafts.set(slug, draftFrom(initial));
+    editor.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>("[data-draft]").forEach((input) => {
+      input.addEventListener("input", () => {
+        const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
+        draft[input.dataset.draft as keyof Draft] = input.value;
+        drafts.set(slug, draft);
+      });
+      input.addEventListener("change", () => {
+        const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
+        draft[input.dataset.draft as keyof Draft] = input.value;
+        drafts.set(slug, draft);
       });
     });
 
-  manualForm?.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const submitButton = manualForm.querySelector<HTMLButtonElement>(
-      'button[type="submit"]'
-    );
-    const data = new FormData(manualForm);
-    const slug = String(data.get("slug") || "");
-
-    if (submitButton) submitButton.disabled = true;
-    setStatus(`${slug} wird manuell gespeichert …`);
-
-    try {
-      const result = await request("/api/admin/prices/manual", {
-        slug,
-        current: data.get("current"),
-        currency: data.get("currency"),
-        sourceLabel: data.get("sourceLabel"),
-        targetUrl: data.get("targetUrl"),
-        comparisonText: data.get("comparisonText")
+    editor.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const draft = drafts.get(slug) ?? draftFrom(records.get(slug) || {});
+      runOnce(`save:${slug}`, async () => {
+        setRowBusy(slug, true);
+        setStatus(`${records.get(slug)?.title || slug} wird atomar gespeichert …`);
+        try {
+          const result = await fetchJson("/api/admin/prices/manual", {
+            method: "POST",
+            body: JSON.stringify({
+              slug,
+              current: draft.current,
+              currency: draft.currency,
+              priceState: draft.priceState,
+              sourceLabel: draft.sourceLabel,
+              targetUrl: draft.targetUrl,
+              comparisonText: draft.comparisonText,
+              availability: draft.availability,
+              availabilityReason: draft.availabilityReason
+            })
+          });
+          const record = applyServerResult(result);
+          setStatus(`${record.title}: persistierter Zustand wurde beim ersten Speichern übernommen.`);
+        } catch (error) {
+          setStatus(error instanceof Error ? error.message : String(error), "error");
+        } finally {
+          setRowBusy(slug, false);
+        }
       });
-
-      const formatted = new Intl.NumberFormat("de-DE", {
-        style: "currency",
-        currency: result.currency
-      }).format(result.current);
-
-      setStatus(
-        `${result.title}: ${formatted} manuell hinterlegt.${result.ctaUpdated ? " CTA-Ziel aktualisiert." : ""} Seite wird neu geladen.`
-      );
-      setTimeout(() => location.reload(), 700);
-    } catch (error) {
-      setStatus(error instanceof Error ? error.message : String(error));
-      if (submitButton) submitButton.disabled = false;
-    }
+    });
   });
 
-  document
-    .querySelectorAll<HTMLButtonElement>("[data-check-price]")
-    .forEach((button) =>
-      button.addEventListener("click", async () => {
-        button.disabled = true;
-        setStatus(`${button.dataset.checkPrice} wird geprüft …`);
-
+  document.querySelectorAll<HTMLButtonElement>("[data-check-price]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const slug = button.dataset.checkPrice || "";
+      runOnce(`check:${slug}`, async () => {
+        setRowBusy(slug, true);
+        setStatus(`${records.get(slug)?.title || slug} wird geprüft …`);
         try {
-          const result = await request("/api/admin/prices/check", {
-            slug: button.dataset.checkPrice
+          const result = await fetchJson("/api/admin/prices/check", {
+            method: "POST",
+            body: JSON.stringify({ slug })
           });
-          setStatus(
-            `${result.title}: ${new Intl.NumberFormat("de-DE", {
-              style: "currency",
-              currency: result.currency
-            }).format(result.current)} gefunden. Seite wird neu geladen.`
-          );
-          setTimeout(() => location.reload(), 600);
+          const record = applyServerResult(result);
+          setStatus(`${record.title}: Preis, Preisdatum, Affiliate, Verfügbarkeit und Priorisierung wurden aktualisiert.`);
         } catch (error) {
-          setStatus(error instanceof Error ? error.message : String(error));
-          button.disabled = false;
+          setStatus(error instanceof Error ? error.message : String(error), "error");
+        } finally {
+          setRowBusy(slug, false);
         }
-      })
-    );
+      });
+    });
+  });
 
-  document
-    .querySelector<HTMLButtonElement>("[data-check-all]")
-    ?.addEventListener("click", async (event) => {
-      const button = event.currentTarget as HTMLButtonElement;
+  document.querySelectorAll<HTMLButtonElement>("[data-archive-product]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const slug = button.dataset.archiveProduct || "";
+      const archive = records.get(slug)?.maintenanceStatus !== "archived";
+      runOnce(`archive:${slug}`, async () => {
+        setRowBusy(slug, true);
+        try {
+          const result = await fetchJson("/api/admin/products/operations", {
+            method: "POST",
+            body: JSON.stringify({ slug, archive })
+          });
+          const record = applyServerResult(result);
+          setStatus(`${record.title}: ${archive ? "archiviert" : "aus dem Archiv gelöst"}.`);
+        } catch (error) {
+          setStatus(error instanceof Error ? error.message : String(error), "error");
+        } finally {
+          setRowBusy(slug, false);
+        }
+      });
+    });
+  });
+
+  document.querySelector<HTMLButtonElement>("[data-check-all]")?.addEventListener("click", (event) => {
+    const button = event.currentTarget as HTMLButtonElement;
+    runOnce("check-all", async () => {
       button.disabled = true;
-      setStatus(
-        "Alle hinterlegten Händlerseiten werden nacheinander geprüft …"
-      );
-
+      setStatus("Aktive Produkte werden nacheinander geprüft …");
       try {
-        const result = await request(
-          "/api/admin/prices/check-all",
-          {}
-        );
-        setStatus(
-          `${result.succeeded} Preise aktualisiert, ${result.failed} Prüfungen ohne Ergebnis. Seite wird neu geladen.`
-        );
-        setTimeout(() => location.reload(), 900);
+        const result = await fetchJson("/api/admin/prices/check-all", {
+          method: "POST",
+          body: JSON.stringify({ includeInactive: false })
+        });
+        for (const item of result.results || []) {
+          if (item.ok && item.record) applyServerResult(item);
+        }
+        setStatus(`${result.succeeded} Preise aktualisiert, ${result.failed} ohne Ergebnis, ${result.skipped} bewusst inaktive Produkte übersprungen.`);
       } catch (error) {
-        setStatus(error instanceof Error ? error.message : String(error));
+        setStatus(error instanceof Error ? error.message : String(error), "error");
+      } finally {
         button.disabled = false;
       }
     });
+  });
+
+  const refreshFromServer = async () => {
+    try {
+      const payload = await fetchJson("/api/admin/prices");
+      for (const record of payload.products || []) updateRow(record);
+      refreshMetrics();
+      applyView();
+      setStatus("Persistierter Produktzustand ist synchronisiert.");
+    } catch (error) {
+      setStatus(`Lokaler Admin-Dienst nicht erreichbar: ${error instanceof Error ? error.message : String(error)}`, "error");
+      applyView();
+    }
+  };
+
+  refreshMetrics();
+  applyView();
+  void refreshFromServer();
 </script>
 
 <style>
-  .price-actions {
+  .ops-summary {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    gap: 22px;
+    gap: 24px;
     padding: 24px;
   }
-
-  .price-actions h2 {
-    margin: 9px 0 7px;
-  }
-
-  .price-actions p {
-    max-width: 760px;
-    margin: 0;
-    color: var(--seo-muted);
-    line-height: 1.55;
-  }
-
-  .price-actions__buttons,
-  .price-row-actions,
-  .manual-price__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-  }
-
-  .price-actions a,
-  .price-actions button,
-  .price-table button,
-  .manual-price button {
-    display: inline-flex;
+  .ops-summary h2 { margin: 10px 0 7px; }
+  .ops-summary p { max-width: 800px; margin: 0; color: var(--seo-muted); line-height: 1.55; }
+  .ops-summary button,
+  .ops-toolbar button,
+  .ops-actions button,
+  .ops-editor button {
     min-height: 42px;
-    align-items: center;
-    justify-content: center;
     border: 0;
-    border-radius: 12px;
-    padding: 10px 14px;
+    border-radius: 11px;
+    padding: 9px 13px;
     background: var(--seo-accent);
     color: var(--seo-on-accent);
     font-weight: 850;
-    text-decoration: none;
     cursor: pointer;
   }
-
-  .price-actions a,
-  .price-table button.secondary,
-  .manual-price button.secondary {
+  button.secondary,
+  .ops-toolbar button {
     border: 1px solid var(--seo-border);
     background: var(--seo-surface);
     color: var(--seo-text);
   }
-
-  .price-actions button:disabled,
-  .price-table button:disabled,
-  .manual-price button:disabled {
-    opacity: .55;
-    cursor: not-allowed;
-  }
-
-  .price-status {
-    min-height: 24px;
-    color: var(--seo-muted);
-  }
-
-  .manual-price {
-    margin-bottom: 18px;
-    overflow: hidden;
-  }
-
-  .manual-price summary {
-    display: flex;
-    min-height: 76px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 18px 22px;
-    cursor: pointer;
-    list-style: none;
-  }
-
-  .manual-price summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .manual-price summary > span:first-child {
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  .ops-metrics {
     display: grid;
-    gap: 4px;
+    grid-template-columns: repeat(6, minmax(130px, 1fr));
+    gap: 10px;
+    margin: 14px 0;
   }
-
-  .manual-price summary small {
-    color: var(--seo-muted);
-    font-weight: 500;
-  }
-
-  .manual-price summary > span:last-child {
-    font-size: 1.4rem;
-    font-weight: 850;
-    transition: transform .18s ease;
-  }
-
-  .manual-price[open] summary > span:last-child {
-    transform: rotate(45deg);
-  }
-
-  .manual-price form {
+  .ops-metrics article { display: grid; gap: 8px; min-height: 100px; padding: 15px; }
+  .ops-metrics span { color: var(--seo-muted); font-size: .75rem; line-height: 1.35; }
+  .ops-metrics strong { font-size: 1.4rem; }
+  .ops-toolbar {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    padding: 0 22px 22px;
-  }
-
-  .manual-price label {
-    display: grid;
-    gap: 7px;
-    color: var(--seo-text);
-    font-weight: 750;
-  }
-
-  .manual-price input,
-  .manual-price select,
-  .manual-price textarea {
-    width: 100%;
-    min-height: 44px;
-    border: 1px solid var(--seo-border);
-    border-radius: 11px;
-    padding: 10px 12px;
-    background: var(--seo-surface-soft);
-    color: var(--seo-text);
-  }
-
-  .manual-price textarea {
-    resize: vertical;
-    line-height: 1.5;
-  }
-
-  .manual-price__wide,
-  .manual-price__actions {
-    grid-column: 1 / -1;
-  }
-
-  .price-table {
-    overflow: hidden;
-  }
-
-  .price-head,
-  .price-table article {
-    display: grid;
-    grid-template-columns:
-      minmax(220px, 1.4fr)
-      minmax(120px, .7fr)
-      minmax(190px, 1fr)
-      minmax(140px, .8fr)
-      minmax(180px, auto);
-    align-items: center;
+    grid-template-columns: 1fr minmax(210px, .35fr) minmax(220px, .4fr);
     gap: 14px;
-    padding: 14px 18px;
+    align-items: end;
+    padding: 15px;
   }
-
-  .price-head {
+  .ops-tabs { display: flex; flex-wrap: wrap; gap: 7px; }
+  .ops-tabs button.is-active { background: var(--seo-accent-soft); color: var(--seo-accent-strong); border-color: var(--seo-accent); }
+  .ops-toolbar label,
+  .ops-editor label { display: grid; gap: 6px; color: var(--seo-muted); font-size: .78rem; font-weight: 750; }
+  .ops-toolbar input,
+  .ops-toolbar select,
+  .ops-editor input,
+  .ops-editor select,
+  .ops-editor textarea {
+    width: 100%;
+    min-height: 42px;
+    border: 1px solid var(--seo-border);
+    border-radius: 10px;
+    padding: 9px 11px;
     background: var(--seo-surface-soft);
-    color: var(--seo-muted);
-    font-size: .78rem;
-  }
-
-  .price-table article {
-    border-top: 1px solid var(--seo-border);
-  }
-
-  .price-table article > div {
-    display: grid;
-    min-width: 0;
-    gap: 5px;
-  }
-
-  .price-table a {
     color: var(--seo-text);
-    font-weight: 800;
   }
-
-  .price-table small {
-    color: var(--seo-muted);
-    line-height: 1.35;
+  .ops-status { min-height: 25px; margin: 13px 2px; color: var(--seo-muted); }
+  .ops-status[data-level="error"] { color: var(--seo-danger); font-weight: 750; }
+  .ops-table { overflow-x: auto; }
+  .ops-head,
+  .ops-table article {
+    display: grid;
+    grid-template-columns: minmax(210px, 1.5fr) minmax(115px, .75fr) minmax(120px, .8fr) minmax(110px, .7fr) minmax(100px, .65fr) minmax(160px, 1fr) minmax(140px, .9fr) minmax(120px, .75fr) minmax(140px, .9fr) minmax(150px, .9fr);
+    gap: 12px;
+    align-items: center;
+    min-width: 1500px;
+    padding: 13px 16px;
   }
-
-  .stale {
-    color: var(--seo-warning) !important;
-    font-weight: 800;
+  .ops-head { background: var(--seo-surface-soft); color: var(--seo-muted); font-size: .72rem; }
+  .ops-table article { border-top: 1px solid var(--seo-border); }
+  .ops-table article[data-busy="true"] { opacity: .72; }
+  .ops-cell { display: grid; min-width: 0; gap: 5px; }
+  .ops-product a { color: var(--seo-text); font-weight: 850; }
+  .ops-cell small { color: var(--seo-muted); font-size: .72rem; line-height: 1.35; overflow-wrap: anywhere; }
+  .ops-warning { color: var(--seo-warning) !important; }
+  .ops-chip { display: inline-flex; width: fit-content; max-width: 100%; padding: 5px 8px; border-radius: 999px; background: var(--seo-surface-soft); color: var(--seo-muted); font-size: .72rem; font-weight: 800; line-height: 1.25; }
+  .ops-chip[data-state="available"],
+  .ops-chip[data-state="yes"],
+  .ops-chip[data-state="complete"],
+  .ops-chip[data-state="recommended"] { background: var(--seo-accent-soft); color: var(--seo-accent-strong); }
+  .ops-chip[data-state="required"],
+  .ops-chip[data-state="no"],
+  .ops-chip[data-state="unknown"] { background: var(--seo-danger-soft); color: var(--seo-danger); }
+  .ops-chip[data-state="stale"],
+  .ops-chip[data-state="limited"],
+  .ops-chip[data-state="temporarily-unavailable"] { background: var(--seo-warning-soft); color: var(--seo-warning); }
+  .ops-chip[data-state="archived"],
+  .ops-chip[data-state="out-of-stock"],
+  .ops-chip[data-state="discontinued"],
+  .ops-chip[data-state="removed"] { background: var(--seo-surface-soft); color: var(--seo-muted); }
+  .ops-actions { align-items: stretch; }
+  .ops-editor {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+    margin-top: 2px;
+    padding: 16px;
+    border: 1px solid var(--seo-border);
+    border-radius: 14px;
+    background: var(--seo-surface-soft);
   }
-
-  @media (max-width: 1050px) {
-    .price-actions {
-      grid-template-columns: 1fr;
-    }
-
-    .price-head {
-      display: none;
-    }
-
-    .price-table article {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .price-table article > div:first-child {
-      grid-column: 1 / -1;
-    }
+  .ops-editor[hidden] { display: none; }
+  .ops-editor .wide { grid-column: span 2; }
+  .ops-editor__actions { display: flex; flex-wrap: wrap; align-items: end; gap: 8px; }
+  .seo-empty { margin: 14px; }
+  @media (max-width: 1100px) {
+    .ops-metrics { grid-template-columns: repeat(3, 1fr); }
+    .ops-toolbar { grid-template-columns: 1fr 1fr; }
+    .ops-tabs { grid-column: 1 / -1; }
   }
-
-  @media (max-width: 620px) {
-    .manual-price form,
-    .price-table article {
-      grid-template-columns: 1fr;
-    }
-
-    .manual-price__wide,
-    .manual-price__actions,
-    .price-table article > div:first-child {
-      grid-column: auto;
-    }
-
-    .price-actions__buttons,
-    .price-row-actions,
-    .manual-price__actions {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    .price-actions a,
-    .price-actions button,
-    .price-table button,
-    .manual-price button {
-      width: 100%;
-    }
+  @media (max-width: 700px) {
+    .ops-summary { grid-template-columns: 1fr; }
+    .ops-summary button { width: 100%; }
+    .ops-metrics { grid-template-columns: repeat(2, 1fr); }
+    .ops-toolbar { grid-template-columns: 1fr; }
+    .ops-tabs,
+    .ops-toolbar label { grid-column: auto; }
+    .ops-tabs { display: grid; }
+    .ops-editor { grid-template-columns: 1fr 1fr; }
   }
 </style>
