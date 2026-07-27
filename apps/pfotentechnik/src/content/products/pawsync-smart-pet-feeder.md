@@ -69,6 +69,15 @@ affiliate:
   target: "_blank"
 rating: 4.6
 score: 91
+priceState: "available"
+priceUpdated: "2026-07-26T21:02:05.248Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.5
   bedienung: 4.6

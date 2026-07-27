@@ -61,6 +61,14 @@ affiliate:
   url: https://www.amazon.de/s?k=HoneyGuardian+S305D+5L+Smart+Pet+Feeder
 rating: 3.8
 score: 75
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.65
   portionierung: 3.65

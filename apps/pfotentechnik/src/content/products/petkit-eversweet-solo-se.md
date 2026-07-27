@@ -60,6 +60,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+SE
 rating: 3.8
 score: 76
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 3.85
   bedienung: 3.85

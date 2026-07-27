@@ -76,6 +76,16 @@ conversion:
   primaryCtaLabel: "Netzvariante beim Hersteller prüfen"
   secondaryCtaLabel: "Mit der Akkuvariante vergleichen"
   showSecondaryCta: true
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:55.779Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:56:55.779Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 editorial:
   assessmentType: "data-review"
   evidence:

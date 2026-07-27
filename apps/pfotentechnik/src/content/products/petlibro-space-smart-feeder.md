@@ -64,6 +64,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder
 rating: 4.2
 score: 84
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4.2
   portionierung: 3.8

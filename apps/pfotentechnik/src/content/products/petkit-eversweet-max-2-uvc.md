@@ -65,6 +65,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC
 rating: 4
 score: 81
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.15
   bedienung: 4.15

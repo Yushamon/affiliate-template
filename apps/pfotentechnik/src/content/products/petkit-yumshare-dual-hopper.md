@@ -83,6 +83,16 @@ affiliate:
   target: "_blank"
 rating: 4.8
 score: 95
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:49.211Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:56:49.211Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   app: 4.9
   kamera: 4.9

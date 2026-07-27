@@ -68,6 +68,14 @@ affiliate:
   url: https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat
 rating: 3.5
 score: 71
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 2.25
   portionierung: 3.95

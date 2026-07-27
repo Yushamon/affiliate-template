@@ -75,6 +75,15 @@ conversion:
   primaryCtaLabel: "Kompatibilität und Bestand prüfen"
   secondaryCtaLabel: "Smarte Haustiertechnik ansehen"
   showSecondaryCta: true
+priceState: "available"
+priceUpdated: "2026-07-26T16:57:28.264Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 editorial:
   assessmentType: "data-review"
   evidence:

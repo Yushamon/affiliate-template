@@ -158,6 +158,41 @@ const productPriceSchema =
     status: "unknown"
   });
 
+const productPriceStateSchema = z.enum([
+  "available",
+  "unknown",
+  "removed",
+  "stale"
+]);
+
+const productAvailabilitySchema = z.enum([
+  "available",
+  "temporarily-unavailable",
+  "out-of-stock",
+  "discontinued",
+  "unknown"
+]);
+
+const productRecommendationStatusSchema = z.enum([
+  "recommended",
+  "limited",
+  "archived"
+]);
+
+const productEditorialStatusSchema = z.enum([
+  "complete",
+  "recommended",
+  "required",
+  "archived"
+]);
+
+const productMaintenanceStatusSchema = z.enum([
+  "complete",
+  "recommended",
+  "required",
+  "archived"
+]);
+
 const productEditorialSchema =
   z.object({
     assessmentType: z
@@ -433,6 +468,17 @@ export const createProductContentSchema = (image: ImageFunction) =>
     price:
       productPriceSchema,
 
+
+    priceState: productPriceStateSchema.default("unknown"),
+    priceUpdated: z.coerce.date().optional(),
+    priceAvailable: z.boolean().default(false),
+    affiliateAvailable: z.boolean().default(false),
+    availability: productAvailabilitySchema.default("unknown"),
+    availabilityReason: z.string().max(500).optional(),
+    availabilityUpdated: z.coerce.date().optional(),
+    editorialStatus: productEditorialStatusSchema.default("complete"),
+    recommendationStatus: productRecommendationStatusSchema.default("limited"),
+    maintenanceStatus: productMaintenanceStatusSchema.default("required"),
 
     editorial:
       productEditorialSchema,

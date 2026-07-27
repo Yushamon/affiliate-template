@@ -65,6 +65,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain
 rating: 3.9
 score: 78
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 3.95
   bedienung: 3.85

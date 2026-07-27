@@ -77,6 +77,16 @@ affiliate:
   target: "_blank"
 rating: 4
 score: 81
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:14.918Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:56:14.918Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   ortung: 4.7
   reichweite: 4.5

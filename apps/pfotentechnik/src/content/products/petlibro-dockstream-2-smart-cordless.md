@@ -76,6 +76,16 @@ conversion:
   primaryCtaLabel: "Beim Hersteller prüfen"
   secondaryCtaLabel: "Mit anderen Trinkbrunnen vergleichen"
   showSecondaryCta: true
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:54.615Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:56:54.615Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 editorial:
   assessmentType: "data-review"
   evidence:

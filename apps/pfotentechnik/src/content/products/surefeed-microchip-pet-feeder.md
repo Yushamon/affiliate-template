@@ -75,6 +75,15 @@ affiliate:
   target: "_blank"
 rating: 4.5
 score: 90
+priceState: "available"
+priceUpdated: "2026-07-26T16:57:12.157Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 2.8
   portionierung: 4.8

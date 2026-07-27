@@ -65,6 +65,14 @@ affiliate:
   url: https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat
 rating: 3.8
 score: 75
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.65
   portionierung: 4

@@ -68,6 +68,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder
 rating: 4
 score: 80
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.9
   portionierung: 4.4

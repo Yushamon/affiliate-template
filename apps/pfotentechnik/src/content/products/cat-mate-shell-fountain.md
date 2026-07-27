@@ -62,6 +62,14 @@ affiliate:
   url: https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain
 rating: 3.8
 score: 75
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 3.75
   bedienung: 3.75

@@ -64,6 +64,14 @@ affiliate:
   url: https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L
 rating: 3.6
 score: 72
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.6
   portionierung: 3.6

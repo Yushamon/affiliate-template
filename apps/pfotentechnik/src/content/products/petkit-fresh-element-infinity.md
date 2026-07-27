@@ -70,6 +70,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat
 rating: 4
 score: 79
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4
   portionierung: 4

@@ -67,6 +67,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT+YumShare+Dual+Hopper+2
 rating: 4.7
 score: 94
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4.7
   portionierung: 4.8

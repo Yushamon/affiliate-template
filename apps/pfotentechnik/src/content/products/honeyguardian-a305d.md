@@ -70,6 +70,14 @@ affiliate:
   url: https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat
 rating: 3.6
 score: 73
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 2.25
   portionierung: 4

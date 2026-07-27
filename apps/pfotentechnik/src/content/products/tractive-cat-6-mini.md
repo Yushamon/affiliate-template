@@ -62,6 +62,14 @@ affiliate:
   url: https://tractive.com/de/pd/gps-tracker-cat
 rating: 4.5
 score: 91
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   ortung: 4.7
   app: 4.8

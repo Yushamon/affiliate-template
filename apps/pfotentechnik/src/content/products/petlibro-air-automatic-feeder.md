@@ -71,6 +71,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO%20Air%20Automatic%20Feeder%202L
 rating: 3.6
 score: 72
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 2.25
   portionierung: 3.8

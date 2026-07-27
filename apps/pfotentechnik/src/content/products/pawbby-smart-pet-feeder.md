@@ -62,6 +62,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder
 rating: 3.5
 score: 71
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.6
   portionierung: 3.6

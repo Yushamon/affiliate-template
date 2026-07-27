@@ -82,6 +82,16 @@ affiliate:
   target: "_blank"
 rating: 4.1
 score: 82
+priceState: "available"
+priceUpdated: "2026-07-26T21:04:58.788Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T21:04:58.788Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   verarbeitung: 4.15
   bedienung: 4.2

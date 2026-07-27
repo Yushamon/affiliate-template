@@ -59,6 +59,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PetSafe+Smart+Feed+2.0
 rating: 4.4
 score: 88
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.5
   bedienung: 4.3

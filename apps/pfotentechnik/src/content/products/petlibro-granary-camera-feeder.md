@@ -63,6 +63,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO+Granary+Camera+Feeder
 rating: 4.6
 score: 92
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4.5
   portionierung: 4.5

@@ -59,6 +59,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PetSafe+Healthy+Pet+Simply+Feed
 rating: 4.3
 score: 86
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.4
   bedienung: 3.9

@@ -61,6 +61,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT+Eversweet+Max+Cordless
 rating: 4
 score: 79
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4
   bedienung: 4

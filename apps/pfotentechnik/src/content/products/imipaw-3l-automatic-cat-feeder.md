@@ -78,6 +78,16 @@ affiliate:
   target: "_blank"
 rating: 3.9
 score: 79
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:22.529Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:56:22.529Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   bedienung: 4.2
   portionierung: 3.8

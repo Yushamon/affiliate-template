@@ -65,6 +65,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L
 rating: 4.1
 score: 82
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4.4
   portionierung: 4.4

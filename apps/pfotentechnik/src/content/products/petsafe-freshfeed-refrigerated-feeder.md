@@ -61,6 +61,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PetSafe+FreshFeed+Refrigerated+Pet+Feeder
 rating: 4.5
 score: 90
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.6
   bedienung: 4.5

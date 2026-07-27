@@ -60,6 +60,14 @@ affiliate:
   url: https://www.garmin.com/de-DE/p/714363
 rating: 3.9
 score: 78
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   ortung: 4.6
   app: 3.5

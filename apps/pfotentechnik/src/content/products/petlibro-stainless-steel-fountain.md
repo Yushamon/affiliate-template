@@ -61,6 +61,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETLIBRO+Edelstahl+Trinkbrunnen+3L
 rating: 3.8
 score: 75
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 4.05
   bedienung: 3.9

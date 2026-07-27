@@ -76,6 +76,15 @@ conversion:
   primaryCtaLabel: "Marktstart und Verfügbarkeit prüfen"
   secondaryCtaLabel: "Kamera-Futterautomaten vergleichen"
   showSecondaryCta: true
+priceState: "available"
+priceUpdated: "2026-07-26T16:56:59.827Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 editorial:
   assessmentType: "data-review"
   evidence:

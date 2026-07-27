@@ -59,6 +59,14 @@ affiliate:
   url: https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini
 rating: 3.7
 score: 74
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   verarbeitung: 3.7
   bedienung: 3.7

@@ -75,6 +75,16 @@ affiliate:
   target: "_blank"
 rating: 4.6
 score: 92
+priceState: "available"
+priceUpdated: "2026-07-26T16:57:16.322Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-07-26T16:57:16.322Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   ortung: 4.7
   app: 4.8

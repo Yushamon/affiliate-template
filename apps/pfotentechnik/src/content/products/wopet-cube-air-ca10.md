@@ -64,6 +64,14 @@ affiliate:
   url: https://www.amazon.de/s?k=WOPET%20Cube%20Air%20CA10%20Futterautomat
 rating: 4
 score: 79
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 4
   portionierung: 4

@@ -60,6 +60,14 @@ affiliate:
   url: https://www.amazon.de/s?k=SureFeed%20Microchip%20Pet%20Feeder%20Connect
 rating: 4
 score: 79
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   app: 3.95
   portionierung: 4.3
