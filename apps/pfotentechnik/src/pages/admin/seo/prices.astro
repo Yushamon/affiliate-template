@@ -280,7 +280,7 @@ const metrics = [
     return payload;
   };
 
-  const runOnce = <T>(key: string, task: () => Promise<T>): Promise<T> => {
+  function runOnce<T>(key: string, task: () => Promise<T>): Promise<T> {
     const existing = inFlight.get(key);
     if (existing) return existing;
     const promise = task().finally(() => {
@@ -288,7 +288,7 @@ const metrics = [
     });
     inFlight.set(key, promise);
     return promise;
-  };
+  }
 
   const formatDate = (value: string | null | undefined) => value
     ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(value))
