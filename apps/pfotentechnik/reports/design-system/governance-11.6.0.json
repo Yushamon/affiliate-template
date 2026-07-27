@@ -1,0 +1,295 @@
+{
+  "name": "pfotentechnik-design-system-governance-11.6.0",
+  "generatedAt": "2026-07-27T09:32:07.215Z",
+  "dryRun": false,
+  "inventory": {
+    "generatedAt": "2026-07-27T09:32:07.204Z",
+    "cssFiles": 28,
+    "cssBytes": 476715,
+    "importantRules": 1310,
+    "mediaQueries": 169,
+    "rootBlocks": 23,
+    "customPropertyDeclarations": 637,
+    "rawHexColors": 679,
+    "selectorsApprox": 3021,
+    "files": {
+      "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css": {
+        "bytes": 178487,
+        "importantRules": 939,
+        "mediaQueries": 64,
+        "rootBlocks": 12,
+        "customPropertyDeclarations": 350,
+        "rawHexColors": 340,
+        "selectorsApprox": 961
+      },
+      "apps/pfotentechnik/src/styles/pfotentechnik-design-tokens.css": {
+        "bytes": 4111,
+        "importantRules": 0,
+        "mediaQueries": 0,
+        "rootBlocks": 2,
+        "customPropertyDeclarations": 106,
+        "rawHexColors": 30,
+        "selectorsApprox": 3
+      },
+      "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css": {
+        "bytes": 5966,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 51
+      },
+      "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css": {
+        "bytes": 17481,
+        "importantRules": 5,
+        "mediaQueries": 4,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 106
+      },
+      "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css": {
+        "bytes": 30224,
+        "importantRules": 211,
+        "mediaQueries": 7,
+        "rootBlocks": 4,
+        "customPropertyDeclarations": 58,
+        "rawHexColors": 26,
+        "selectorsApprox": 121
+      },
+      "apps/pfotentechnik/src/styles/pfotentechnik.css": {
+        "bytes": 18472,
+        "importantRules": 2,
+        "mediaQueries": 6,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 30,
+        "selectorsApprox": 159
+      },
+      "packages/affiliate-core/src/styles/article.css": {
+        "bytes": 14434,
+        "importantRules": 0,
+        "mediaQueries": 10,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 5,
+        "selectorsApprox": 132
+      },
+      "packages/affiliate-core/src/styles/base.css": {
+        "bytes": 729,
+        "importantRules": 0,
+        "mediaQueries": 0,
+        "rootBlocks": 1,
+        "customPropertyDeclarations": 10,
+        "rawHexColors": 11,
+        "selectorsApprox": 6
+      },
+      "packages/affiliate-core/src/styles/calculator.css": {
+        "bytes": 4007,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 34
+      },
+      "packages/affiliate-core/src/styles/global.css": {
+        "bytes": 301,
+        "importantRules": 0,
+        "mediaQueries": 0,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 0
+      },
+      "packages/affiliate-core/src/styles/header-footer.css": {
+        "bytes": 4186,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 3,
+        "selectorsApprox": 37
+      },
+      "packages/affiliate-core/src/styles/home.css": {
+        "bytes": 6844,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 54
+      },
+      "packages/affiliate-core/src/styles/layout.css": {
+        "bytes": 1928,
+        "importantRules": 0,
+        "mediaQueries": 3,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 18
+      },
+      "packages/affiliate-core/src/styles/manufacturer.css": {
+        "bytes": 3467,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 29
+      },
+      "packages/affiliate-core/src/styles/misc.css": {
+        "bytes": 9749,
+        "importantRules": 0,
+        "mediaQueries": 3,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 3,
+        "selectorsApprox": 92
+      },
+      "packages/affiliate-core/src/styles/premium-page.css": {
+        "bytes": 34192,
+        "importantRules": 0,
+        "mediaQueries": 7,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 72,
+        "selectorsApprox": 218
+      },
+      "packages/affiliate-core/src/styles/product.css": {
+        "bytes": 35078,
+        "importantRules": 0,
+        "mediaQueries": 10,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 9,
+        "selectorsApprox": 262
+      },
+      "packages/affiliate-core/src/styles/theme.css": {
+        "bytes": 410,
+        "importantRules": 0,
+        "mediaQueries": 0,
+        "rootBlocks": 1,
+        "customPropertyDeclarations": 13,
+        "rawHexColors": 9,
+        "selectorsApprox": 1
+      },
+      "packages/affiliate-core/src/styles/ui.css": {
+        "bytes": 4127,
+        "importantRules": 0,
+        "mediaQueries": 1,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 36
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-cta-system.css": {
+        "bytes": 10318,
+        "importantRules": 92,
+        "mediaQueries": 3,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 7,
+        "rawHexColors": 2,
+        "selectorsApprox": 33
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-hero-v2.css": {
+        "bytes": 3834,
+        "importantRules": 0,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 31
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-mobile-hotfix.css": {
+        "bytes": 1071,
+        "importantRules": 0,
+        "mediaQueries": 1,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 7
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-mobile-price-fix-4.0.1.css": {
+        "bytes": 6643,
+        "importantRules": 11,
+        "mediaQueries": 2,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 19
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-premium-seo.css": {
+        "bytes": 5626,
+        "importantRules": 0,
+        "mediaQueries": 1,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 0,
+        "rawHexColors": 0,
+        "selectorsApprox": 37
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-premium-ux.css": {
+        "bytes": 16028,
+        "importantRules": 26,
+        "mediaQueries": 5,
+        "rootBlocks": 1,
+        "customPropertyDeclarations": 42,
+        "rawHexColors": 38,
+        "selectorsApprox": 109
+      },
+      "packages/affiliate-core/src/components/comparison/comparison-ux-polish-3.2.css": {
+        "bytes": 9351,
+        "importantRules": 14,
+        "mediaQueries": 5,
+        "rootBlocks": 0,
+        "customPropertyDeclarations": 6,
+        "rawHexColors": 12,
+        "selectorsApprox": 66
+      },
+      "packages/affiliate-core/src/components/comparison/comparison.css": {
+        "bytes": 27170,
+        "importantRules": 9,
+        "mediaQueries": 12,
+        "rootBlocks": 1,
+        "customPropertyDeclarations": 32,
+        "rawHexColors": 66,
+        "selectorsApprox": 203
+      },
+      "packages/affiliate-core/src/components/home/home.css": {
+        "bytes": 22481,
+        "importantRules": 1,
+        "mediaQueries": 13,
+        "rootBlocks": 1,
+        "customPropertyDeclarations": 13,
+        "rawHexColors": 23,
+        "selectorsApprox": 196
+      }
+    }
+  },
+  "baseline": {
+    "version": 1,
+    "createdAt": "2026-07-27T09:32:07.213Z",
+    "limits": {
+      "cssFiles": 30,
+      "cssBytes": 495784,
+      "importantRules": 1310,
+      "rootBlocks": 23,
+      "rawHexColors": 679
+    },
+    "current": {
+      "cssFiles": 28,
+      "cssBytes": 476715,
+      "importantRules": 1310,
+      "rootBlocks": 23,
+      "rawHexColors": 679
+    },
+    "notes": {
+      "cssFiles": "Maximal zwei zusätzliche CSS-Dateien ohne bewusste Baseline-Anpassung.",
+      "cssBytes": "Vier Prozent Wachstumsreserve für reguläre Weiterentwicklung.",
+      "importantRules": "Keine neuen !important-Regeln.",
+      "rootBlocks": "Keine zusätzlichen :root-Blöcke.",
+      "rawHexColors": "Keine neuen harten Hex-Farben."
+    }
+  }
+}

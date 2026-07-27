@@ -1,11 +1,15 @@
-# PfotenTechnik Component Adoption Recovery 11.5.1
+# PfotenTechnik Design-System Governance 11.6.0
 
-Dieser Recovery-Patch behebt die verbliebenen statischen Komponenten aus dem fehlgeschlagenen 11.5.0-Audit.
+Diese Abschlussstufe installiert einen zentralen Design-System-Check und ein CSS-Budget.
 
 Ausführen:
 
 ```bash
-node 3/pfotentechnik-component-adoption-recovery-11.5.1.mjs
+node 3/pfotentechnik-design-system-governance-11.6.0.mjs
 ```
 
-Der bestehende uncommittete Stand von 11.5.0 soll vorher nicht zurückgesetzt werden.
+Danach steht dauerhaft zur Verfügung:
+
+```bash
+npm --workspace apps/pfotentechnik run design-system:check
+```

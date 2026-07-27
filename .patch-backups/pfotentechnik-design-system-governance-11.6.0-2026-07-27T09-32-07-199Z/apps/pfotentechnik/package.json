@@ -95,9 +95,7 @@
     "design-system:audit": "node scripts/design-system/audit.mjs",
     "design-system:tokens:audit": "node scripts/design-system/token-audit.mjs",
     "design-system:primitives:audit": "node scripts/design-system/primitives-audit.mjs",
-    "design-system:components:audit": "node scripts/design-system/component-adoption-audit.mjs",
-    "design-system:budget:audit": "node scripts/design-system/css-budget-audit.mjs",
-    "design-system:check": "node scripts/design-system/check.mjs"
+    "design-system:components:audit": "node scripts/design-system/component-adoption-audit.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
