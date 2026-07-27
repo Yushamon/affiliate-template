@@ -1,18 +1,50 @@
 {
-  "generatedAt": "2026-07-26T05:25:53.416Z",
+  "generatedAt": "2026-07-27T06:35:31.761Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 13,
-    "products": 65,
+    "products": 68,
     "manufacturers": 18,
     "usedProducts": 37,
-    "productCoveragePercent": 56.9,
-    "errors": 0,
-    "warnings": 0,
-    "qualityScore": 97
+    "productCoveragePercent": 54.4,
+    "errors": 1,
+    "warnings": 2,
+    "qualityScore": 93
   },
-  "byCode": [],
-  "byFile": [],
+  "byCode": [
+    {
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "count": 1,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "PRODUCT_NOT_COVERED",
+      "count": 2,
+      "category": "coverage",
+      "level": "warning"
+    }
+  ],
+  "byFile": [
+    {
+      "file": "src/content/products/zeromouse-2-0.md",
+      "errors": 1,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/petlibro-dockstream-2-smart.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    }
+  ],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-hunde",
@@ -67,5 +99,30 @@
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/petlibro-dockstream-2-smart.md",
+      "slug": "petlibro-dockstream-2-smart",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "error",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "file": "src/content/products/zeromouse-2-0.md",
+      "slug": "zeromouse-2-0",
+      "message": "Hersteller zeromouse existiert nicht.",
+      "category": "integrity"
+    }
+  ]
 }

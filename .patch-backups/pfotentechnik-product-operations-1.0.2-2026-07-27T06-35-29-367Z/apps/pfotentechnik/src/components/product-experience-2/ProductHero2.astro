@@ -1,0 +1,283 @@
+---
+import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+import type { ProductExperienceModel } from "../../domain/productExperience/model";
+import ProductGallery2 from "./ProductGallery2.astro";
+import PriceBox2 from "./PriceBox2.astro";
+
+interface Props {
+  model: ProductExperienceModel;
+}
+
+const { model } = Astro.props;
+---
+
+<section class="px2-hero" aria-labelledby="px2-product-title">
+  <div class="px2-hero__media">
+    <ProductGallery2 name={model.name} items={model.gallery} />
+  </div>
+
+  <div class="px2-hero__content">
+    <div class="px2-hero__meta">
+      {model.categoryHref ? <a href={model.categoryHref}>{model.category}</a> : <span>{model.category}</span>}
+      {model.manufacturer && (
+        model.manufacturerHref
+          ? <a href={model.manufacturerHref}>{model.manufacturer}</a>
+          : <span>{model.manufacturer}</span>
+      )}
+    </div>
+
+    <h1 id="px2-product-title">{model.name}</h1>
+    <p class="px2-hero__lead">{model.recommendation}</p>
+
+    <div class="px2-hero__scoreline">
+      <EditorialScore
+        value={model.score}
+        scale={100}
+        variant="ring"
+        description="Redaktioneller Eignungswert. Der persönliche Fit wird darunter live berechnet."
+      />
+    </div>
+
+    <div class="px2-hero__fit-grid">
+      <section class="px2-fit is-positive">
+        <h2>Ideal für</h2>
+        <ul>
+          {model.idealFor.slice(0, 3).map((item) => <li>{item}</li>)}
+        </ul>
+      </section>
+      <section class="px2-fit is-negative">
+        <h2>Nicht ideal für</h2>
+        <ul>
+          {model.notFor.slice(0, 3).map((item) => <li>{item}</li>)}
+        </ul>
+      </section>
+    </div>
+
+    <section class="px2-hero__decision">
+      <div>
+        <span>Wichtigste Vorteile</span>
+        <ul>{model.benefits.slice(0, 3).map((item) => <li>{item}</li>)}</ul>
+      </div>
+      <div class="px2-limit">
+        <span>Größte Einschränkung</span>
+        <p>{model.mainLimitation}</p>
+      </div>
+    </section>
+
+    <PriceBox2 price={model.price} affiliate={model.affiliate} operations={model.operations} />
+
+    <a class="px2-hero__compare" href={model.comparisonHref}>
+      {model.comparisonLabel}
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .px2-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(360px, .88fr);
+    gap: clamp(22px, 4vw, 48px);
+    align-items: start;
+  }
+
+  .px2-hero__media,
+  .px2-hero__content {
+    min-width: 0;
+  }
+
+  .px2-hero__content {
+    display: grid;
+    gap: 18px;
+    padding: clamp(18px, 2.5vw, 30px);
+    border: 1px solid var(--px2-border);
+    border-radius: 24px;
+    background: var(--px2-surface);
+    box-shadow: var(--px2-shadow);
+  }
+
+  .px2-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .px2-hero__meta a,
+  .px2-hero__meta span {
+    display: inline-flex;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--px2-surface-soft);
+    color: var(--px2-muted);
+    font-size: .78rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .px2-hero h1 {
+    margin: 0;
+    color: var(--px2-text);
+    font-size: clamp(2.1rem, 4vw, 4.2rem);
+    line-height: .98;
+    letter-spacing: -.045em;
+    overflow-wrap: normal;
+  }
+
+  .px2-hero__lead {
+    margin: 0;
+    color: var(--px2-muted);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    line-height: 1.6;
+  }
+
+  .px2-hero__scoreline {
+    padding-block: 2px;
+  }
+
+  .px2-hero__scoreline :global(.pt-score) {
+    --score-surface: var(--px2-surface);
+    --score-text: var(--px2-text);
+    --score-muted: var(--px2-muted);
+    --score-accent: var(--px2-green);
+  }
+
+  .px2-hero__fit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .px2-fit {
+    min-width: 0;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .px2-fit.is-positive {
+    background: var(--px2-green-soft);
+  }
+
+  .px2-fit.is-negative {
+    background: var(--px2-red-soft);
+  }
+
+  .px2-fit h2 {
+    margin: 0 0 8px;
+    font-size: .9rem;
+  }
+
+  .px2-fit ul,
+  .px2-hero__decision ul {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .px2-fit li,
+  .px2-hero__decision li {
+    position: relative;
+    padding-left: 17px;
+    color: var(--px2-text);
+    font-size: .84rem;
+    line-height: 1.4;
+  }
+
+  .px2-fit li::before,
+  .px2-hero__decision li::before {
+    position: absolute;
+    left: 0;
+    content: "•";
+    color: var(--px2-green-strong);
+    font-weight: 900;
+  }
+
+  .px2-fit.is-negative li::before {
+    color: var(--px2-red);
+  }
+
+  .px2-hero__decision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .px2-hero__decision > div {
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 16px;
+    background: var(--px2-surface-raised);
+  }
+
+  .px2-hero__decision span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--px2-muted);
+    font-size: .72rem;
+    font-weight: 900;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .px2-limit p {
+    margin: 0;
+    color: var(--px2-text);
+    font-size: .88rem;
+    line-height: 1.5;
+  }
+
+  .px2-hero__compare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 11px 15px;
+    border: 1px solid var(--px2-border);
+    border-radius: 14px;
+    color: var(--px2-text);
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .px2-hero__compare:hover {
+    border-color: var(--px2-green);
+    color: var(--px2-green-strong);
+  }
+
+  @media (max-width: 980px) {
+    .px2-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .px2-hero__media {
+      order: 1;
+    }
+
+    .px2-hero__content {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .px2-hero {
+      gap: 14px;
+    }
+
+    .px2-hero__content {
+      gap: 15px;
+      padding: 18px 15px;
+      border-radius: 18px;
+    }
+
+    .px2-hero h1 {
+      font-size: clamp(2rem, 11vw, 3.25rem);
+    }
+
+    .px2-hero__fit-grid,
+    .px2-hero__decision {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
