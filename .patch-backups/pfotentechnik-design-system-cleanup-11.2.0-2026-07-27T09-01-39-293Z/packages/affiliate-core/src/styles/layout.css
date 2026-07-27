@@ -104,7 +104,9 @@
 }
 
 @media (max-width: 768px) {
-
+  .container--home {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 720px) {

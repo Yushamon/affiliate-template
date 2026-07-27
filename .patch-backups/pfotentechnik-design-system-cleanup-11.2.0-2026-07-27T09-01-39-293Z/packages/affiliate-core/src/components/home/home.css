@@ -1084,7 +1084,9 @@
 }
 
 @media (max-width: 520px) {
-
+  .home41-decision__card {
+    grid-template-columns: 1fr;
+  }
 
   .home41-decision__media {
     min-height: 190px;

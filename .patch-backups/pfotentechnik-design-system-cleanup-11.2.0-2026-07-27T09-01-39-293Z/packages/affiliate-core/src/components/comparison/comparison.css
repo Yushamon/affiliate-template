@@ -992,7 +992,7 @@
 }
 
 @media (max-width:420px) {
-
+  .comparison-filter-options { grid-template-columns: 1fr; }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1117,6 +1117,9 @@
     flex-direction: column;
   }
 
+  .comparison-filter-grid {
+    grid-template-columns: 1fr;
+  }
 
   .comparison-filter-options {
     grid-template-columns: repeat(2, minmax(0, 1fr));
