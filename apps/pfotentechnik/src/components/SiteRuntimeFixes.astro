@@ -18,7 +18,7 @@
         .replace(/[_-]+/g, " ")
         .replace(/\s+/g, " ");
 
-    const ensurePurchaseAdviceCta = () => {
+    const ensureDesktopPurchaseAdvice = () => {
       const desktopCta = document.querySelector(".header-advisor-link");
 
       if (desktopCta instanceof HTMLAnchorElement) {
@@ -31,25 +31,11 @@
         desktopCta.dataset.ptPurchaseAdvice = "desktop";
       }
 
-      const navigation = document.querySelector(".main-nav-v2");
-      if (!(navigation instanceof HTMLElement)) return;
-
-      let navCta = navigation.querySelector(
-        '[data-pt-purchase-advice="nav"]'
-      );
-
-      if (!(navCta instanceof HTMLAnchorElement)) {
-        navCta = document.createElement("a");
-        navCta.dataset.ptPurchaseAdvice = "nav";
-        navigation.append(navCta);
-      }
-
-      navCta.href = PURCHASE_ADVICE_HREF;
-      navCta.textContent = PURCHASE_ADVICE_LABEL;
-      navCta.setAttribute(
-        "aria-label",
-        "Allgemeine Kaufberatung öffnen"
-      );
+      document
+        .querySelectorAll(
+          '.main-nav-v2 [data-pt-purchase-advice="nav"]'
+        )
+        .forEach((element) => element.remove());
     };
 
     const removeGenericEditorialStatus = () => {
@@ -67,9 +53,115 @@
         });
     };
 
+    const closestBlock = (element) =>
+      element?.closest(
+        "section, article, li, .pt-surface, .premium-block, .content-section"
+      );
+
+    const markQuickFacts = () => {
+      const heading = [...document.querySelectorAll("h2, h3")].find(
+        (element) =>
+          normalize(element.textContent) ===
+          "die wichtigsten kriterien auf einen blick"
+      );
+      closestBlock(heading)?.setAttribute("data-pt-quick-facts", "");
+    };
+
+    const markSelectedProducts = () => {
+      const heading = [...document.querySelectorAll("h2, h3")].find(
+        (element) =>
+          normalize(element.textContent) === "ausgewählte trinkbrunnen"
+      );
+      const section = closestBlock(heading);
+      if (!(section instanceof HTMLElement)) return;
+
+      section.dataset.ptSelectedProducts = "";
+
+      const candidates = [
+        ...section.querySelectorAll(
+          "article, li, .product-card, .recommendation-card"
+        )
+      ].filter((element) =>
+        element.querySelector("img") &&
+        /\/100/.test(element.textContent ?? "")
+      );
+
+      for (const card of candidates) {
+        card.setAttribute("data-pt-product-card", "");
+        card.setAttribute("data-pt-product-result", "");
+
+        const scoreCandidates = [
+          ...card.querySelectorAll("div, span, output")
+        ].filter((element) => {
+          const text = normalize(element.textContent);
+          return /^\d{1,3}\s*\/\s*100$/.test(text) ||
+            /^\d{1,3}\s*100$/.test(text);
+        });
+
+        const score = scoreCandidates.sort(
+          (a, b) => a.children.length - b.children.length
+        )[0];
+
+        if (score instanceof HTMLElement) {
+          score.dataset.ptScore = "";
+          const numeric = Number(
+            score.textContent?.match(/\d{1,3}/)?.[0] ?? 0
+          );
+          score.style.setProperty(
+            "--pt-score-angle",
+            `${Math.max(0, Math.min(100, numeric)) * 3.6}deg`
+          );
+        }
+      }
+    };
+
+    const markProductResults = () => {
+      document
+        .querySelectorAll(
+          ".product-card, .recommendation-card, [data-product-card], [class*='product-result']"
+        )
+        .forEach((card) => {
+          if (!(card instanceof HTMLElement)) return;
+          card.dataset.ptProductResult = "";
+
+          card
+            .querySelectorAll(
+              ":scope > div > div, :scope > div > section, :scope > section > div"
+            )
+            .forEach((inner) => {
+              if (!(inner instanceof HTMLElement)) return;
+              const style = getComputedStyle(inner);
+              if (
+                style.borderTopWidth !== "0px" ||
+                style.borderRadius !== "0px"
+              ) {
+                inner.dataset.ptInnerBox = "";
+              }
+            });
+        });
+    };
+
+    const markNextSteps = () => {
+      const heading = [...document.querySelectorAll("h2, h3")].find(
+        (element) =>
+          normalize(element.textContent) === "deine nächsten schritte"
+      );
+      const section = closestBlock(heading);
+      if (!(section instanceof HTMLElement)) return;
+      section.dataset.ptNextSteps = "";
+
+      section
+        .querySelectorAll("article, a, .pt-surface")
+        .forEach((card) => card.setAttribute("data-pt-step-card", ""));
+    };
+
     const applyFixes = () => {
-      ensurePurchaseAdviceCta();
+      ensureDesktopPurchaseAdvice();
       removeGenericEditorialStatus();
+      markQuickFacts();
+      markSelectedProducts();
+      markProductResults();
+      markNextSteps();
     };
 
     applyFixes();

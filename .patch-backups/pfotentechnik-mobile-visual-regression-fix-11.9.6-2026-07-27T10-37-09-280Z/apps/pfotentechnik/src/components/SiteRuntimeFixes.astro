@@ -1,0 +1,82 @@
+<script is:inline>
+  (() => {
+    const PURCHASE_ADVICE_HREF = "/kaufberatung/";
+    const PURCHASE_ADVICE_LABEL = "Kaufberatung";
+
+    const editorialStatuses = new Set([
+      "editorial review",
+      "editorial-review",
+      "redaktionelle einordnung",
+      "redaktionelle bewertung",
+      "redaktionell bewertet"
+    ]);
+
+    const normalize = (value) =>
+      String(value ?? "")
+        .trim()
+        .toLocaleLowerCase("de-DE")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ");
+
+    const ensurePurchaseAdviceCta = () => {
+      const desktopCta = document.querySelector(".header-advisor-link");
+
+      if (desktopCta instanceof HTMLAnchorElement) {
+        desktopCta.href = PURCHASE_ADVICE_HREF;
+        desktopCta.textContent = PURCHASE_ADVICE_LABEL;
+        desktopCta.setAttribute(
+          "aria-label",
+          "Allgemeine Kaufberatung öffnen"
+        );
+        desktopCta.dataset.ptPurchaseAdvice = "desktop";
+      }
+
+      const navigation = document.querySelector(".main-nav-v2");
+      if (!(navigation instanceof HTMLElement)) return;
+
+      let navCta = navigation.querySelector(
+        '[data-pt-purchase-advice="nav"]'
+      );
+
+      if (!(navCta instanceof HTMLAnchorElement)) {
+        navCta = document.createElement("a");
+        navCta.dataset.ptPurchaseAdvice = "nav";
+        navigation.append(navCta);
+      }
+
+      navCta.href = PURCHASE_ADVICE_HREF;
+      navCta.textContent = PURCHASE_ADVICE_LABEL;
+      navCta.setAttribute(
+        "aria-label",
+        "Allgemeine Kaufberatung öffnen"
+      );
+    };
+
+    const removeGenericEditorialStatus = () => {
+      document
+        .querySelectorAll(
+          "[data-product-page] .native-buybox__meta > div"
+        )
+        .forEach((row) => {
+          const label = normalize(row.querySelector("dt")?.textContent);
+          const value = normalize(row.querySelector("dd")?.textContent);
+
+          if (label === "status" && editorialStatuses.has(value)) {
+            row.remove();
+          }
+        });
+    };
+
+    const applyFixes = () => {
+      ensurePurchaseAdviceCta();
+      removeGenericEditorialStatus();
+    };
+
+    applyFixes();
+
+    if (!window.__ptSiteRuntimeFixesInstalled) {
+      window.__ptSiteRuntimeFixesInstalled = true;
+      document.addEventListener("astro:page-load", applyFixes);
+    }
+  })();
+</script>

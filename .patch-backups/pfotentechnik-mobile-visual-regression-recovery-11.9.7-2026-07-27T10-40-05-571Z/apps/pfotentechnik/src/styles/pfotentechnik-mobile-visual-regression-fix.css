@@ -1,0 +1,200 @@
+/**
+ * PfotenTechnik Mobile Visual Regression Fix 11.9.6
+ *
+ * Behebt gezielt die durch die Density-Stufe sichtbar gewordenen
+ * Header-, Karten-, Bewertungs- und Box-in-Box-Probleme.
+ */
+
+/* Mobile Header: Logo + echtes Burgermenü. Kein separater Kaufberatungs-CTA. */
+@media (max-width: 63.99rem) {
+  :where(.header-advisor-link) {
+    display: none;
+  }
+
+  :where(.site-header, .header-v2, header[role="banner"]) :where(
+    .header-inner,
+    .header-container,
+    .header-v2__inner
+  ) {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  :where(.main-nav-v2) > [data-pt-purchase-advice="nav"] {
+    display: none;
+  }
+
+  :where(
+    .menu-toggle,
+    .nav-toggle,
+    .mobile-menu-toggle,
+    [aria-controls*="nav"]
+  ) {
+    min-width: 3rem;
+    min-height: 3rem;
+    padding-inline: var(--pt-space-3);
+    display: inline-grid;
+    place-items: center;
+    white-space: nowrap;
+  }
+}
+
+/* Quick-Fact-CTA: echte Innenabstände, kein Text am Kartenrand. */
+:where([data-pt-quick-facts]) :where(
+  a[href="#fuer-katzen"],
+  a[href="#fuer-hunde"],
+  a[href="#bauarten"],
+  a[href*="reinigen"]
+) {
+  box-sizing: border-box;
+  min-height: 3rem;
+  padding: var(--pt-space-3) var(--pt-space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-space-3);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+/* Einheitliche Kartenränder in kuratierten Produktbereichen. */
+:where([data-pt-selected-products]) :where([data-pt-product-card]),
+:where([data-pt-next-steps]) > :where(article, a, div)[data-pt-step-card] {
+  border: 1px solid var(--pt-color-border);
+  border-radius: var(--pt-radius-xl);
+  box-shadow: none;
+  overflow: clip;
+}
+
+:where([data-pt-selected-products]) :where([data-pt-product-card]) > * {
+  border-radius: 0;
+}
+
+/* Ausgewählte Trinkbrunnen: konsistenter Score-Ring statt fremder Score-Kachel. */
+:where([data-pt-selected-products]) [data-pt-score] {
+  inline-size: 4.25rem;
+  block-size: 4.25rem;
+  min-inline-size: 4.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  display: inline-grid;
+  place-content: center;
+  gap: 0;
+  text-align: center;
+  line-height: 1;
+  background:
+    radial-gradient(
+      circle at center,
+      var(--pt-color-surface) 57%,
+      transparent 58%
+    ),
+    conic-gradient(
+      var(--pt-color-primary) var(--pt-score-angle, 280deg),
+      var(--pt-color-border) 0
+    );
+  box-shadow: none;
+}
+
+:where([data-pt-selected-products]) [data-pt-score] strong {
+  font-size: var(--pt-font-size-xl);
+  line-height: 1;
+}
+
+:where([data-pt-selected-products]) [data-pt-score] small,
+:where([data-pt-selected-products]) [data-pt-score] span:last-child {
+  margin-top: 0.15rem;
+  font-size: var(--pt-font-size-xs);
+  line-height: 1;
+}
+
+/* Produkt-/Empfehlungskarten: nur eine äußere Ergebnisfläche. */
+:where([data-pt-product-result]) :where(
+  [data-pt-inner-box],
+  .product-card__content,
+  .recommendation-card__content,
+  .product-summary,
+  .product-meta,
+  .product-rating,
+  .product-actions,
+  .price-row
+) {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+:where([data-pt-product-result]) :where(
+  [data-pt-inner-box],
+  .product-card__content,
+  .recommendation-card__content,
+  .product-summary,
+  .product-meta
+) {
+  padding-inline: 0;
+}
+
+:where([data-pt-product-result]) :where(
+  .product-actions,
+  [data-pt-product-actions]
+) {
+  padding-top: var(--pt-space-4);
+  border-top: 1px solid var(--pt-color-border);
+}
+
+/* Keine pillenförmige Outline um Herstellername oder Textbereich. */
+:where([data-pt-product-result]) :where(
+  .manufacturer,
+  .product-card__manufacturer,
+  [data-manufacturer]
+) {
+  width: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+
+/* Mobile Cards dürfen nicht rechts aus dem Viewport laufen. */
+@media (max-width: 47.99rem) {
+  :where([data-pt-selected-products]) {
+    overflow: clip;
+  }
+
+  :where([data-pt-selected-products]) :where(
+    [data-pt-product-track],
+    .product-grid,
+    .products-grid
+  ) {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  :where([data-pt-selected-products]) :where([data-pt-product-card]) {
+    width: 100%;
+    min-width: 0;
+  }
+
+  :where([data-pt-product-result]) {
+    padding: var(--pt-space-5);
+  }
+
+  :where([data-pt-product-result]) :where(h2, h3, p) {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :where([data-pt-selected-products]) [data-pt-score] {
+    background:
+      radial-gradient(
+        circle at center,
+        var(--pt-color-surface) 57%,
+        transparent 58%
+      ),
+      conic-gradient(
+        var(--pt-color-primary) var(--pt-score-angle, 280deg),
+        var(--pt-color-border) 0
+      );
+  }
+}
