@@ -134,8 +134,19 @@ const walk = async (dir) => {
   const result = [];
   if (!(await exists(dir))) return result;
   for (const entry of await readdir(dir, { withFileTypes: true })) {
-    if (["node_modules", "dist", ".patch-backups", "reports"].includes(entry.name)) continue;
     const full = path.join(dir, entry.name);
+    if ([
+      "node_modules",
+      "dist",
+      ".patch-backups",
+      "reports",
+      "generated"
+    ].includes(entry.name)) continue;
+    if (
+      entry.isDirectory() &&
+      entry.name === "seo" &&
+      full.includes(path.join("src", "data", "seo"))
+    ) continue;
     if (entry.isDirectory()) result.push(...await walk(full));
     else if (extensions.has(path.extname(entry.name))) result.push(full);
   }
