@@ -1,4 +1,4 @@
-# Vergleichsplattform Refactor 10.0.0
+# Vergleichsplattform Refactor 10.0.2
 
 Stand: 2026-07-27  
 Status: **vor Validierung**
