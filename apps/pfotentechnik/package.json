@@ -85,7 +85,8 @@
     "price:audit": "node scripts/price-intelligence/audit.mjs",
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",
     "test:media-center": "node --test test/media-center.test.mjs",
-    "media:audit": "node scripts/media-center/audit.mjs"
+    "media:audit": "node scripts/media-center/audit.mjs",
+    "comparison:refactor:audit": "node scripts/comparison-platform/refactor-audit.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
