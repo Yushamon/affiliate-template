@@ -197,7 +197,7 @@ Eine bestätigte Ausgabe bedeutet meist nur, dass der Motor ausgelöst wurde. Si
 ## App nach Alltag wählen
 Wähle ein Modell, dessen Zeitpläne verständlich sind, dessen Portionen du nachwiegen kannst und das bei Verbindungsproblemen weiterarbeitet.
 
-[Kamera-Modelle vergleichen](/futterautomat-mit-kamera/)
+[Kamera-Modelle vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
 
 ## Die kurze Antwort
 
@@ -484,7 +484,7 @@ Vor dem Kauf prüfen:
 | Futtermenge am Napf beobachten | Modell mit Wiegefunktion |
 | möglichst wenig Cloudabhängigkeit | lokaler Automat ohne App |
 
-Mehr dazu findest du im Ratgeber [Futterautomat mit Kamera](/futterautomat-mit-kamera/).
+Mehr dazu findest du im Ratgeber [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/).
 
 ## Urlaub und längere Abwesenheit
 
@@ -520,7 +520,7 @@ Für reine Trockenfutterroutinen ist ein solides App-Modell meist ausreichend. K
 ## Weiterführende Seiten
 
 - [Smarte Futterautomaten vergleichen](/smarte-futterautomaten/)
-- [Futterautomat mit Kamera](/futterautomat-mit-kamera/)
+- [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
 - [Futterautomat für Katzen](/futterautomat-katze/)
 - [Futterautomat für Hunde](/futterautomat-hund/)
 - [Futterautomat im Urlaub](/futterautomat-im-urlaub/)

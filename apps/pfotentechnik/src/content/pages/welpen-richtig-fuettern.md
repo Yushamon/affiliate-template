@@ -76,7 +76,7 @@ contentPlatform:
 recommendationJourney:
   mode: filtered
   animal: dog
-  comparisonHref: /vergleiche/beste-futterautomaten-fuer-hunde/
+  comparisonHref: /vergleiche/-fuer-hunde/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -447,7 +447,7 @@ Später kann ein Futterautomat einzelne Trockenfutterportionen unterstützen, we
 - die Reinigung zuverlässig möglich ist,
 - weiterhin mindestens eine Mahlzeit persönlich beobachtet wird.
 
-Eine neutrale Übersicht bietet der [Vergleich der besten Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/). Für Nassfutter, Medikamente oder einen Welpen mit schwankendem Appetit ist ein Automat häufig keine passende Standardlösung.
+Eine neutrale Übersicht bietet der [Vergleich der besten Futterautomaten für Hunde](/vergleiche/-fuer-hunde/). Für Nassfutter, Medikamente oder einen Welpen mit schwankendem Appetit ist ein Automat häufig keine passende Standardlösung.
 
 ## Häufige Fehler bei der Welpenfütterung
 

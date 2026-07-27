@@ -108,7 +108,7 @@ export const projectConfig = {
           title: "Futterautomaten mit Kamera",
           text: "Livebild, Zwei-Wege-Audio und App-Steuerung im Vergleich.",
           anchor: "futterautomaten-mit-kamera",
-          href: "/futterautomat-mit-kamera/",
+          href: "/vergleiche/beste-futterautomaten-mit-kamera/",
           productUseCase: "kamera"
         }
       ]
@@ -122,10 +122,10 @@ export const projectConfig = {
         { label: "Hunde · Trinkbrunnen", href: "/trinkbrunnen/#hunde" },
         { label: "Hunde · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-hunde/" },
         { label: "Katzen · GPS-Tracker", href: "/vergleiche/beste-gps-tracker-fuer-katzen/" },
-        { label: "Nassfutter", href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/" },
-        { label: "Mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" },
-        { label: "Ohne WLAN", href: "/futterautomat-ohne-wlan/" },
-        { label: "Mit Kamera", href: "/futterautomat-mit-kamera/" }
+        { label: "Nassfutter", href: "/vergleiche/-fuer-nassfutter/" },
+        { label: "Mehrere Katzen", href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/" },
+        { label: "Ohne WLAN", href: "/vergleiche/beste-futterautomaten-ohne-wlan/" },
+        { label: "Mit Kamera", href: "/vergleiche/beste-futterautomaten-mit-kamera/" }
       ]
     },
     values: {
@@ -191,8 +191,8 @@ export const projectConfig = {
           { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
           { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
           { label: "GPS-Tracker", href: "/gps-tracker/" },
-          { label: "Futterautomaten mit App", href: "/futterautomat-mit-app/" },
-          { label: "Futterautomaten mit Kamera", href: "/futterautomat-mit-kamera/" }
+          { label: "Futterautomaten mit App", href: "/vergleiche/futterautomat-mit-app/" },
+          { label: "Futterautomaten mit Kamera", href: "/vergleiche/beste-futterautomaten-mit-kamera/" }
         ]
       },
       {
@@ -202,7 +202,7 @@ export const projectConfig = {
           { label: "Futterautomaten für Hunde", href: "/futterautomat-hund/" },
           { label: "Trinkbrunnen für Katzen", href: "/trinkbrunnen/#katzen" },
           { label: "Trinkbrunnen für Hunde", href: "/trinkbrunnen/#hunde" },
-          { label: "Für mehrere Katzen", href: "/futterautomat-fuer-zwei-katzen/" }
+          { label: "Für mehrere Katzen", href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/" }
         ]
       },
       {

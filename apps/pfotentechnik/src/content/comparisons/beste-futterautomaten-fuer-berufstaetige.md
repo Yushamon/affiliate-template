@@ -33,7 +33,7 @@ seo:
   description: >-
     Die besten Futterautomaten für Berufstätige im Vergleich. Finde Modelle mit App, Zeitplänen und zuverlässiger
     Portionierung.
-  canonical: /vergleiche/beste-futterautomaten-fuer-berufstaetige/
+  canonical: /vergleiche/-fuer-berufstaetige/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -202,9 +202,9 @@ Gerade junge Tiere, kranke Tiere oder Haustiere mit auffälligem Fressverhalten 
 ## Weitere passende Ratgeber
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat mit App](/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/beste-futterautomaten-fuer-kleine-hunde/)
-* [Beste Futterautomaten unter 100 Euro](/beste-futterautomaten-unter-100-euro/)
+* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
+* [Beste Futterautomaten für kleine Hunde](/vergleiche/-fuer-kleine-hunde/)
+* [Beste Futterautomaten unter 100 Euro](/vergleiche/-unter-100-euro/)
 
 ## Fazit
 

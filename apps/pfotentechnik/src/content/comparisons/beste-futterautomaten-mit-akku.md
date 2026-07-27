@@ -28,7 +28,7 @@ seo:
   description: >-
     Die besten Futterautomaten mit Akku oder Batterie-Backup im Vergleich. Ideal bei Stromausfällen und flexibler
     Aufstellung.
-  canonical: /vergleiche/beste-futterautomaten-mit-akku/
+  canonical: /vergleiche/-mit-akku/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -191,9 +191,9 @@ Gerade bei längerer Abwesenheit sollte geprüft werden, ob ausreichend Futter v
 ## Weitere passende Ratgeber
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Beste Futterautomaten für Berufstätige](/beste-futterautomaten-fuer-berufstaetige/)
-* [Futterautomat mit App](/futterautomat-mit-app/)
-* [Beste Futterautomaten unter 100 Euro](/beste-futterautomaten-unter-100-euro/)
+* [Beste Futterautomaten für Berufstätige](/vergleiche/-fuer-berufstaetige/)
+* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
+* [Beste Futterautomaten unter 100 Euro](/vergleiche/-unter-100-euro/)
 
 ## Fazit
 

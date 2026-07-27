@@ -88,22 +88,22 @@ premiumBlocks:
       - label: "Für die meisten Haushalte"
         title: "Trockenfutterautomat mit App"
         text: "Mehrere Mahlzeiten, Fernsteuerung und Ausgabeprotokoll. Lokale Zeitpläne und Notstrom sind wichtiger als Zusatzfunktionen."
-        href: "/futterautomat-mit-app/"
+        href: "/vergleiche/futterautomat-mit-app/"
         cta: "App-Modelle ansehen"
       - label: "Kontrolle von unterwegs"
         title: "Futterautomat mit Kamera"
         text: "Sinnvoll, wenn du sehen möchtest, ob ein Tier zum Napf kommt. Die Kamera ersetzt keine Gesundheitskontrolle."
-        href: "/futterautomat-mit-kamera/"
+        href: "/vergleiche/beste-futterautomaten-mit-kamera/"
         cta: "Kamera-Ratgeber lesen"
       - label: "Feuchtfütterung"
         title: "Futterautomat für Nassfutter"
         text: "Geschlossene Portionsfächer und ein passendes Kühlkonzept sind entscheidend. Vorratsautomaten eignen sich nicht."
-        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+        href: "/vergleiche/-fuer-nassfutter/"
         cta: "Nassfutter-Systeme ansehen"
       - label: "Mehrere Tiere"
         title: "Doppelnapf oder Zugangskontrolle"
         text: "Für zwei Katzen entscheidet nicht die Zahl der Näpfe, sondern ob Portionen nur verteilt oder zuverlässig vor Futterklau geschützt werden müssen."
-        href: "/futterautomat-fuer-zwei-katzen/"
+        href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
         cta: "Bauart für zwei Katzen wählen"
   - type: "scenarios"
     eyebrow: "Nach Alltag auswählen"
@@ -112,7 +112,7 @@ premiumBlocks:
       - label: "Feste Fütterungszeiten"
         title: "Zeitplan statt Fernfütterung"
         text: "Achte auf lokal gespeicherte Pläne, mehrere Mahlzeiten und eine manuelle Ausgabetaste."
-        href: "/futterautomat-ohne-wlan/"
+        href: "/vergleiche/beste-futterautomaten-ohne-wlan/"
         cta: "Offline-Lösungen einordnen"
       - label: "Gewichtsmanagement"
         title: "Kleine Portionen kontrollieren"
@@ -234,7 +234,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -256,10 +256,10 @@ Ein Doppelnapf verhindert keinen Futterneid. Die tatsächliche Portionsmenge sol
 
 Bei zwei Katzen führen zwei getrennte Schritte schneller zur passenden Lösung:
 
-1. [Doppelschale, zwei Automaten oder Mikrochip wählen](/futterautomat-fuer-zwei-katzen/)
-2. [Fünf konkrete Systeme für zwei Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+1. [Doppelschale, zwei Automaten oder Mikrochip wählen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+2. [Fünf konkrete Systeme für zwei Katzen vergleichen](/vergleiche/-fuer-zwei-katzen/)
 
-Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futterautomat im Mehrtierhaushalt](/beste-futterautomaten-fuer-mehrtierhaushalte/) zusätzlich Tiergröße, Napfhöhe, Futterart und räumliche Organisation.
+Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/-fuer-mehrtierhaushalte/) zusätzlich Tiergröße, Napfhöhe, Futterart und räumliche Organisation.
 
 ## Auswahlhilfe: Welcher Futterautomat passt zu dir?
 
@@ -269,19 +269,19 @@ Ein Vorratsautomat dosiert Kroketten aus einem Behälter über ein Dosierrad, ei
 
 Achte vor allem auf zulässige Krokettengröße, kleinste einstellbare Ausgabe, reproduzierbare Portionen, lokal gespeicherte Zeitpläne, Batterie-Backup, einen zugänglichen Futterkanal und abnehmbare Kontaktteile.
 
-Für die meisten Nutzer ist diese Bauart der beste Ausgangspunkt. Unser Ratgeber [Futterautomat mit App](/futterautomat-mit-app/) zeigt, wann WLAN einen echten Mehrwert bietet.
+Für die meisten Nutzer ist diese Bauart der beste Ausgangspunkt. Unser Ratgeber [Futterautomat mit App](/vergleiche/futterautomat-mit-app/) zeigt, wann WLAN einen echten Mehrwert bietet.
 
 ### Du fütterst Nassfutter
 
 Nassfutter gehört nicht in den Vorratsbehälter eines Trockenfutterautomaten. Dafür eignen sich Drehteller- oder Fachsysteme, die einzelne Mahlzeiten bis zur programmierten Zeit geschlossen halten.
 
-Entscheidend sind Anzahl und Volumen der Fächer, Kühlakkus oder aktive Kühlung, hygienische Standzeit, entnehmbare Einsätze, sichere Verriegelung sowie Strom- und App-Verhalten. Mehr dazu findest du in der [Kaufberatung für Nassfutter-Automaten](/futterautomat-nassfutter/).
+Entscheidend sind Anzahl und Volumen der Fächer, Kühlakkus oder aktive Kühlung, hygienische Standzeit, entnehmbare Einsätze, sichere Verriegelung sowie Strom- und App-Verhalten. Mehr dazu findest du in der [Kaufberatung für Nassfutter-Automaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/).
 
 ### Du möchtest von unterwegs kontrollieren
 
 Eine Kamera kann sinnvoll sein, wenn du sehen möchtest, ob ein Tier zum Futterplatz kommt, ob der Napf blockiert wurde oder ob mehrere Tiere gleichzeitig auftauchen. Sie kann nicht sicher feststellen, wie viele Gramm ein bestimmtes Tier gefressen hat.
 
-Prüfe Blickwinkel, Nachtsicht, lokale Speicherung oder Cloud, Abokosten, Mikrofon, Zwei-Wege-Audio und Datenschutz. Zum spezialisierten Vergleich: [Futterautomaten mit Kamera](/futterautomat-mit-kamera/).
+Prüfe Blickwinkel, Nachtsicht, lokale Speicherung oder Cloud, Abokosten, Mikrofon, Zwei-Wege-Audio und Datenschutz. Zum spezialisierten Vergleich: [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/).
 
 ![Lösungsübersicht für Mehrtierhaushalte mit Doppelnapf, getrennten Automaten und individueller Zugangskontrolle.](../../assets/images/guides/smarte-futterautomaten/multi-pet-solutions.webp)
 
@@ -296,13 +296,13 @@ Zwei Näpfe lösen nur das Verteilungsproblem. Sie verhindern nicht, dass ein Ti
 | individuelle Diät oder Medikamentenfutter | Zugangskontrolle per Chip beziehungsweise Halsband |
 | Futterneid oder Konflikte | räumlich getrennte Fütterung |
 
-Lies dazu [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
+Lies dazu [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
 
 ### Du suchst einen Automaten für einen Hund
 
 Viele smarte Futterautomaten werden gleichzeitig für Katzen und Hunde angeboten, sind konstruktiv aber eher auf Katzen und kleine Hunde ausgelegt. Für Hunde sind Portionsspanne, Stabilität, Napfhöhe, Futterkanal, Verriegelung und realistische Kapazität besonders wichtig.
 
-Für große Tiere ist ein größerer Behälter allein nicht ausreichend. Prüfe, ob Napf, Auslass und maximale Portion zur Futtermenge passen. Zur Vertiefung: [Futterautomat für Hunde](/futterautomat-hund/) und [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/).
+Für große Tiere ist ein größerer Behälter allein nicht ausreichend. Prüfe, ob Napf, Auslass und maximale Portion zur Futtermenge passen. Zur Vertiefung: [Futterautomat für Hunde](/futterautomat-hund/) und [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/).
 
 ## Entscheidungsmatrix: Welche Bauart passt zu welchem Einsatz?
 
@@ -880,15 +880,15 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 
 - [Futterautomat für Katzen](/futterautomat-katze/)
 - [Futterautomat für Hunde](/futterautomat-hund/)
-- [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/)
-- [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/)
+- [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/)
+- [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
 
 ### Nach Funktion
 
-- [Futterautomat mit App](/futterautomat-mit-app/)
-- [Futterautomat mit Kamera](/futterautomat-mit-kamera/)
-- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/)
-- [Futterautomat für Nassfutter](/futterautomat-nassfutter/)
+- [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
+- [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
+- [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
+- [Futterautomat für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
 
 ### Nach Einsatzgebiet
 
@@ -901,12 +901,12 @@ Komfortfunktionen wie Kamera, Sprachaufnahme oder Animationen werden erst danach
 
 ### Spezialisierte Vergleiche
 
-- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/)
-- [Beste Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
-- [Beste Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
-- [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
-- [Beste Futterautomaten für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/)
+- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/vergleiche/-fuer-hunde/)
+- [Beste Futterautomaten mit Kamera](/vergleiche/-mit-kamera/)
+- [Beste Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/)
+- [Beste Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/)
+- [Beste Futterautomaten für Nassfutter](/vergleiche/-fuer-nassfutter/)
 
 ## Glossar
 
@@ -950,9 +950,9 @@ So entsteht kein maximal ausgestatteter, sondern ein zuverlässig passender Futt
 
 Je nach Tier, Aufstellort und gewünschter Ausstattung helfen diese vertiefenden Seiten bei der weiteren Einordnung:
 
-- [Futterautomaten für Seniorenkatzen](/beste-futterautomaten-fuer-seniorenkatzen/)
-- [Futterautomaten mit Akku](/beste-futterautomaten-mit-akku/)
-- [Futterautomaten mit Edelstahlnapf](/beste-futterautomaten-mit-edelstahl-napf/)
+- [Futterautomaten für Seniorenkatzen](/vergleiche/-fuer-seniorenkatzen/)
+- [Futterautomaten mit Akku](/vergleiche/beste-futterautomaten-mit-akku/)
+- [Futterautomaten mit Edelstahlnapf](/vergleiche/-mit-edelstahl-napf/)
 - [Smarte Gadgets für Hunde und Katzen](/smarte-gadgets-fuer-hunde-und-katzen/)
 - [So bewerten wir Produkte und Empfehlungen](/so-bewerten-wir/)
 

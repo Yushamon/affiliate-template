@@ -29,7 +29,7 @@ seo:
   description: >-
     Futterautomaten für mehrere Hunde oder Katzen: Futterplätze, Mikrochip-Zugang, Portionen, Futterneid und
     unterschiedliche Rationen richtig planen.
-  canonical: /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/
+  canonical: /vergleiche/-fuer-mehrtierhaushalte/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -164,8 +164,8 @@ Diese Seite behandelt den **breiten Mehrtierhaushalt**: mehrere Katzen, mehrere 
 
 Für genau zwei Katzen sind zwei spezialisierte Einstiege sinnvoll:
 
-- [Bauart und Fütterungsproblem bestimmen](/futterautomat-fuer-zwei-katzen/)
-- [Fünf konkrete Systeme vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- [Bauart und Fütterungsproblem bestimmen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- [Fünf konkrete Systeme vergleichen](/vergleiche/-fuer-zwei-katzen/)
 
 So konkurriert die allgemeine Mehrtierseite nicht mit der spezifischen Zwei-Katzen-Kaufberatung.
 

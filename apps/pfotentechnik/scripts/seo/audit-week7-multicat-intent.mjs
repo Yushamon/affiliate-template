@@ -141,8 +141,8 @@ if (guide) {
   check("Guide-Title 40–65 Zeichen", title.length >= 40 && title.length <= 65, String(title.length));
   check("Guide-Description 120–170 Zeichen", description.length >= 120 && description.length <= 170, String(description.length));
   check("Guide beantwortet Bauart-Intent", guide.body.includes("## Doppelschale, zwei Automaten oder Mikrochip?"));
-  check("Guide verlinkt Comparison", guide.body.includes("/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"));
-  check("Guide verlinkt breite Mehrtierseite", guide.body.includes("/beste-futterautomaten-fuer-mehrtierhaushalte/"));
+  check("Guide verlinkt Comparison", guide.body.includes("/vergleiche/-fuer-zwei-katzen/"));
+  check("Guide verlinkt breite Mehrtierseite", guide.body.includes("/vergleiche/-fuer-mehrtierhaushalte/"));
 }
 
 if (comparison) {
@@ -152,7 +152,7 @@ if (comparison) {
   check("Comparison-Description 120–170 Zeichen", description.length >= 120 && description.length <= 170, String(description.length));
   check("Comparison genau 5 Systeme", itemCount(comparison.frontmatter) === 5, String(itemCount(comparison.frontmatter)));
   check("Comparison automatische Erweiterung aus", /automaticRecommendations:\n\s+enabled:\s+false/.test(comparison.frontmatter));
-  check("Comparison verlinkt Guide", comparison.body.includes("/futterautomat-fuer-zwei-katzen/"));
+  check("Comparison verlinkt Guide", comparison.body.includes("/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"));
   check("Comparison kein pauschaler Gesamtsieger", comparison.body.includes("keinen sinnvollen Gesamtsieger"));
 }
 
@@ -162,15 +162,15 @@ if (multi) {
   check("Mehrtierseite ohne Beste-Title", !/^Beste\b/i.test(title));
   check("Mehrtier-SEO-Title 40–65 Zeichen", seoTitle.length >= 40 && seoTitle.length <= 65, String(seoTitle.length));
   check("Mehrtierseite klar breit positioniert", multi.body.includes("breiten Mehrtierhaushalt"));
-  check("Mehrtierseite verlinkt Zwei-Katzen-Guide", multi.body.includes("/futterautomat-fuer-zwei-katzen/"));
-  check("Mehrtierseite verlinkt Zwei-Katzen-Comparison", multi.body.includes("/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"));
+  check("Mehrtierseite verlinkt Zwei-Katzen-Guide", multi.body.includes("/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"));
+  check("Mehrtierseite verlinkt Zwei-Katzen-Comparison", multi.body.includes("/vergleiche/-fuer-zwei-katzen/"));
   check("Mehrtierseite enthält Hund-und-Katze-FAQ", multi.frontmatter.includes("Welcher Futterautomat eignet sich für Hund und Katze?"));
 }
 
 if (hub) {
-  check("Hub verlinkt Guide", hub.frontmatter.includes('href: "/futterautomat-fuer-zwei-katzen/"'));
-  check("Hub verlinkt Comparison", hub.body.includes("/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"));
-  check("Hub verlinkt breite Mehrtierseite", hub.body.includes("/beste-futterautomaten-fuer-mehrtierhaushalte/"));
+  check("Hub verlinkt Guide", hub.frontmatter.includes('href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"'));
+  check("Hub verlinkt Comparison", hub.body.includes("/vergleiche/-fuer-zwei-katzen/"));
+  check("Hub verlinkt breite Mehrtierseite", hub.body.includes("/vergleiche/-fuer-mehrtierhaushalte/"));
   const duplicates = duplicateCardNavigation(hub.frontmatter);
   check("Hub ohne doppelte Karten-Navigation", duplicates.length === 0, duplicates.join(", "));
 }

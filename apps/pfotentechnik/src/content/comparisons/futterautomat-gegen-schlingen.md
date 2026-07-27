@@ -198,8 +198,8 @@ Bei gesundheitlichen Problemen solltest du das Fressverhalten tierärztlich abkl
 ## Weitere passende Ratgeber
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Beste Futterautomaten für kleine Hunde](/beste-futterautomaten-fuer-kleine-hunde/)
-* [Beste Futterautomaten für Berufstätige](/beste-futterautomaten-fuer-berufstaetige/)
+* [Beste Futterautomaten für kleine Hunde](/vergleiche/-fuer-kleine-hunde/)
+* [Beste Futterautomaten für Berufstätige](/vergleiche/-fuer-berufstaetige/)
 * [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
 
 ## Fazit

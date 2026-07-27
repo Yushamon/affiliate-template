@@ -317,7 +317,7 @@ Zur Backup-Stromversorgung macht die aktuelle Produktseite widersprüchliche Ang
 
 Der Solo 2 besitzt einen Futterbehälter. Der [PETKIT YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) trennt zwei Vorräte, schützt die ausgegebene Portion aber ebenfalls nicht vor einem anderen Tier.
 
-Der [Vergleich der Kamera-Futterautomaten](/vergleiche/beste-futterautomaten-mit-kamera/) stellt den Solo 2 weiteren Kamera-Konzepten gegenüber.
+Der [Vergleich der Kamera-Futterautomaten](/vergleiche/-mit-kamera/) stellt den Solo 2 weiteren Kamera-Konzepten gegenüber.
 
 ## Methodik und Quellen
 

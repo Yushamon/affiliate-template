@@ -87,7 +87,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 ## Die kurze Antwort

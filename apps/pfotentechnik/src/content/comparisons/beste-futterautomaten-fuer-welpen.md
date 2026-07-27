@@ -31,7 +31,7 @@ seo:
   description: >-
     Futterautomaten für Welpen vergleichen: Welche Modelle kleine Portionen zuverlässig ausgeben und wann ein Automat
     noch nicht sinnvoll ist.
-  canonical: /vergleiche/beste-futterautomaten-fuer-welpen/
+  canonical: /vergleiche/-fuer-welpen/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -315,7 +315,7 @@ Frisst ein Welpe plötzlich deutlich schlechter, erbricht wiederholt, wirkt apat
 ## Erst Ration und Bauart klären, dann Modelle vergleichen
 Vergleiche nur Geräte, deren reale Mindestportion, Krokettengröße, Napf und Ausfallsicherheit zum aktuellen Welpen und zur erwarteten Endgröße passen.
 
-[Futterautomaten für Hunde vergleichen](/vergleiche/beste-futterautomaten-fuer-hunde/)
+[Futterautomaten für Hunde vergleichen](/vergleiche/-fuer-hunde/)
 
 Ein **Futterautomat für Welpen** kann regelmäßige Mahlzeiten erleichtern. Er ist aber nur dann hilfreich, wenn er einen bereits passenden Fütterungsplan zuverlässig umsetzt. Das Gerät entscheidet weder, wie viele Kalorien ein wachsender Hund benötigt, noch ob das gewählte Futter zur Rasse und Entwicklungsphase passt.
 
@@ -335,7 +335,7 @@ Der **PETLIBRO Granary WiFi** eignet sich besser, wenn viele Fütterungszeitpunk
 
 Der **PETKIT Fresh Element Solo** ist eine kompakte Alternative für kleine Welpen. Seine begrenzte Maximalmenge kann später zum Ausschlusskriterium werden, wenn Tagesration und Körpergröße deutlich steigen.
 
-Die vollständige technische Gegenüberstellung findest du im [Vergleich der besten Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/).
+Die vollständige technische Gegenüberstellung findest du im [Vergleich der besten Futterautomaten für Hunde](/vergleiche/-fuer-hunde/).
 
 ## Warum Welpen andere Anforderungen haben
 
@@ -414,7 +414,7 @@ Prüfe vor dem regulären Einsatz:
 
 Führe diese Tests durch, während du anwesend bist. Ein ungetestetes Backup ist keine belastbare Absicherung.
 
-Mehr dazu steht im Ratgeber [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/).
+Mehr dazu steht im Ratgeber [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/).
 
 ## Sicherheit: Welpen untersuchen Geräte mit Maul und Pfoten
 
@@ -455,7 +455,7 @@ Klassische Vorratsautomaten sind in der Regel nur für trockenes Futter freigege
 
 Für Nassfutter braucht es ein Fachsystem mit geeignetem Kühlkonzept. Die Kühlung beantwortet aber noch nicht, ob der Welpe die Mahlzeit vollständig frisst.
 
-Geeignete Bauarten werden unter [Futterautomaten für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/) eingeordnet.
+Geeignete Bauarten werden unter [Futterautomaten für Nassfutter](/vergleiche/-fuer-nassfutter/) eingeordnet.
 
 ## Eingewöhnung in kleinen Schritten
 
@@ -565,11 +565,11 @@ Die Quellen wurden zuletzt am 25. Juli 2026 geprüft. Sie dienen der allgemeinen
 
 - [Smarte Futterautomaten: Bauarten und Kaufkriterien](/smarte-futterautomaten/)
 - [Futterautomat für Hunde](/futterautomat-hund/)
-- [Beste Futterautomaten für Hunde im Vergleich](/vergleiche/beste-futterautomaten-fuer-hunde/)
+- [Beste Futterautomaten für Hunde im Vergleich](/vergleiche/-fuer-hunde/)
 - [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/)
 - [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/)
 - [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
-- [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/)
+- [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
 - [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/)
 
 ## Fazit

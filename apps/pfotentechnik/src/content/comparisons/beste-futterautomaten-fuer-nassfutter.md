@@ -30,7 +30,7 @@ seo:
   description: >-
     PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und
     Ausfallsicherheit vergleichen.
-  canonical: /vergleiche/beste-futterautomaten-fuer-nassfutter/
+  canonical: /vergleiche/-fuer-nassfutter/
   sitemap: true
   priority: 0.9
   changefreq: monthly
@@ -478,9 +478,9 @@ Nicht gleichgesetzt werden aktive Kühlung und Kühlakku, Fachzahl und spätere 
 
 ## Weiterführende Kaufberatung
 
-- [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
-- [Beste Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/)
-- [Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/)
+- [Beste Futterautomaten für Katzen](/vergleiche/-fuer-katzen/)
+- [Beste Futterautomaten für Hunde](/vergleiche/-fuer-hunde/)
+- [Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/)
 - [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/)
 - [Smarte Futterautomaten](/smarte-futterautomaten/)
 - [Futterautomat richtig reinigen](/futterautomat-richtig-reinigen/)
@@ -782,7 +782,7 @@ Bei mehreren Katzen bleibt offen:
 
 Bei unterschiedlichem Bedarf sind getrennte Räume oder ein Mikrochip-System meist geeigneter.
 
-Mehr dazu: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
+Mehr dazu: [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
 
 ## Nassfutter im Urlaub
 
@@ -809,7 +809,7 @@ Vorratsautomaten sind meist praktischer, wenn:
 - längere Zeitpläne gewünscht sind
 - tägliches Neubefüllen vermieden werden soll
 
-Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/futterautomat-mit-app/) zeigen passende Alternativen.
+Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/vergleiche/futterautomat-mit-app/) zeigen passende Alternativen.
 
 ## Häufige Fehler
 
@@ -824,7 +824,7 @@ Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/futteraut
 
 ## Aktive Kühlung als eigenes System
 
-Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
+Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
 
 ## Fazit
 

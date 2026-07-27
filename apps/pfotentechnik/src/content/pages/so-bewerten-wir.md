@@ -41,7 +41,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -109,4 +109,4 @@ Wir aktualisieren Seiten, wenn sich Modelle, Apps, Firmware, Verfügbarkeit oder
 
 ## Weiter zur passenden Entscheidung
 
-Der Einstieg in aktuelle Modelle führt über [smarte Futterautomaten](/smarte-futterautomaten/). Wer bereits weiß, für welches Tier oder Szenario gesucht wird, kann direkt zu [Futterautomaten für Katzen](/futterautomat-katze/), [Futterautomaten für Hunde](/futterautomat-hund/) oder [Modellen ohne WLAN](/futterautomat-ohne-wlan/) wechseln.
+Der Einstieg in aktuelle Modelle führt über [smarte Futterautomaten](/smarte-futterautomaten/). Wer bereits weiß, für welches Tier oder Szenario gesucht wird, kann direkt zu [Futterautomaten für Katzen](/futterautomat-katze/), [Futterautomaten für Hunde](/futterautomat-hund/) oder [Modellen ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) wechseln.

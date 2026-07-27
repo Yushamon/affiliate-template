@@ -26,7 +26,7 @@ hub:
 seo:
   title: Beste Futterautomaten unter 100 Euro im Vergleich
   description: Die besten Futterautomaten unter 100 Euro im Vergleich. Erfahre, welche Modelle trotz kleinerem Budget überzeugen.
-  canonical: /vergleiche/beste-futterautomaten-unter-100-euro/
+  canonical: /vergleiche/-unter-100-euro/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -197,8 +197,8 @@ Ein höherpreisiger Automat kann sinnvoll sein, wenn:
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat mit App](/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/beste-futterautomaten-fuer-kleine-hunde/)
+* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
+* [Beste Futterautomaten für kleine Hunde](/vergleiche/-fuer-kleine-hunde/)
 
 ## Fazit
 

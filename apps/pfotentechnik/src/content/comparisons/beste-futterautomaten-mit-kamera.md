@@ -207,7 +207,7 @@ seo:
   description: >-
     Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert
     vergleichen.
-  canonical: /vergleiche/beste-futterautomaten-mit-kamera/
+  canonical: /vergleiche/-mit-kamera/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -303,7 +303,7 @@ Video kann zeigen, dass ein Tier am Napf war. Es erklärt nicht, warum es wenige
 ## Video nur mit echtem Mehrwert
 Wenn Livekontrolle deinen Alltag verbessert, ist ein Kameramodell sinnvoll. Für reine Zeitpläne reicht meist ein günstigeres App-System.
 
-[Kamera-Modelle direkt vergleichen](/vergleiche/beste-futterautomaten-mit-kamera/)
+[Kamera-Modelle direkt vergleichen](/vergleiche/-mit-kamera/)
 
 ## Die kurze Antwort
 
@@ -440,7 +440,7 @@ Vor dem Kauf prüfen:
 
 ## Ratgeber oder Produktvergleich?
 
-Diese Seite beantwortet, **ob** eine Kamera für deinen Alltag sinnvoll ist und welche Grenzen Livebild, Audio und Ereignisclips haben. Der separate [Vergleich der besten Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) beantwortet, **welches konkrete Modell** zu deinen Anforderungen passt.
+Diese Seite beantwortet, **ob** eine Kamera für deinen Alltag sinnvoll ist und welche Grenzen Livebild, Audio und Ereignisclips haben. Der separate [Vergleich der besten Futterautomaten mit Kamera](/vergleiche/-mit-kamera/) beantwortet, **welches konkrete Modell** zu deinen Anforderungen passt.
 
 So vermeiden beide Seiten dieselbe Suchintention: erst den Nutzen klären, danach Produkte vergleichen.
 
@@ -589,7 +589,7 @@ Ein Kamera-Modell ist sinnvoll, wenn du:
 - den Futterplatz aus der Ferne sehen willst
 - bereit bist, Datenschutz und Speicher zu verwalten
 
-Ein normaler [Futterautomat mit App](/futterautomat-mit-app/) ist besser, wenn:
+Ein normaler [Futterautomat mit App](/vergleiche/futterautomat-mit-app/) ist besser, wenn:
 
 - nur Zeitpläne und Meldungen benötigt werden
 - geringere Kosten wichtig sind
@@ -614,7 +614,7 @@ Eine Kamera zeigt nur einen Ausschnitt. Mehr dazu steht im Ratgeber [Futterautom
 
 ## PETKIT YumShare Solo 2 einordnen
 
-Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) ist ein Ein-Kammer-Kameraautomat mit 3-Liter-Vorrat und Dual-Band-WLAN. Er eignet sich für Livebild und geplante Trockenfutterportionen, trennt aber keine Tiere am Napf. Der [direkte Kamera-Vergleich](/vergleiche/beste-futterautomaten-mit-kamera/) stellt ihn einfacheren und komplexeren Kamera-Konzepten gegenüber.
+Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) ist ein Ein-Kammer-Kameraautomat mit 3-Liter-Vorrat und Dual-Band-WLAN. Er eignet sich für Livebild und geplante Trockenfutterportionen, trennt aber keine Tiere am Napf. Der [direkte Kamera-Vergleich](/vergleiche/-mit-kamera/) stellt ihn einfacheren und komplexeren Kamera-Konzepten gegenüber.
 
 ## Fazit
 
@@ -633,7 +633,7 @@ Für reine Fütterungspläne reicht meist ein günstigeres App-Modell. Video ist
 
 ## Weiterführende Seiten
 
-- [Futterautomat mit App](/futterautomat-mit-app/)
+- [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
 - [Smarte Futterautomaten vergleichen](/smarte-futterautomaten/)
 - [Futterautomat für Katzen](/futterautomat-katze/)
 - [Futterautomat für Hunde](/futterautomat-hund/)

@@ -176,7 +176,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
 
@@ -211,12 +211,12 @@ Erst danach lohnt sich die Entscheidung über WLAN, Kamera, Audio oder zusätzli
 
 | Bedarf | Passender Vergleich |
 |---|---|
-| Katze und unterschiedliche Futterarten | [Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/) |
-| kleine bis mittelgroße Hunde | [Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/) |
-| zwei Katzen oder Futterneid | [Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) |
-| vorbereitetes Nassfutter | [Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) |
-| kein Konto, keine Cloud | [Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) |
-| Livebild und Video | [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) |
+| Katze und unterschiedliche Futterarten | [Futterautomaten für Katzen](/vergleiche/-fuer-katzen/) |
+| kleine bis mittelgroße Hunde | [Futterautomaten für Hunde](/vergleiche/-fuer-hunde/) |
+| zwei Katzen oder Futterneid | [Futterautomaten für zwei Katzen](/vergleiche/-fuer-zwei-katzen/) |
+| vorbereitetes Nassfutter | [Nassfutterautomaten](/vergleiche/-fuer-nassfutter/) |
+| kein Konto, keine Cloud | [Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/) |
+| Livebild und Video | [Futterautomaten mit Kamera](/vergleiche/-mit-kamera/) |
 
 Der Vergleich folgt erst nach der Entscheidung über Futterart, Tiergröße und Zugang. Dadurch konkurriert keine Funktionsliste mit einer ungeeigneten Bauart.
 
@@ -236,7 +236,7 @@ Nassfutter gehört nicht in den Vorratsbehälter eines Trockenfutterautomaten.
 
 Dafür sind Fachautomaten gedacht. Die Mahlzeiten werden vorab in einzelne Fächer gefüllt. Zur programmierten Zeit dreht oder öffnet sich das nächste Fach.
 
-Dabei bleiben Standzeit, Raumtemperatur, Reinigung und Kühlkonzept kritisch. Mehr dazu erklärt der Ratgeber [Futterautomat für Nassfutter](/futterautomat-nassfutter/).
+Dabei bleiben Standzeit, Raumtemperatur, Reinigung und Kühlkonzept kritisch. Mehr dazu erklärt der Ratgeber [Futterautomat für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/).
 
 ## Schritt 2: Passt die Ausgabe zum Tier?
 
@@ -263,7 +263,7 @@ Der Napf sollte bequem erreichbar sein. Bei Hunden sind Breite, Tiefe und Stabil
 
 Ein sehr futtermotiviertes Tier kann Deckel anheben, Gehäuse umwerfen oder den Auslass manipulieren. Schreckhafte Katzen können auf Motorgeräusche und fallende Kroketten reagieren.
 
-Für größere Tiere hilft der Ratgeber [Futterautomat für große Hunde](/futterautomat-fuer-grosse-hunde/).
+Für größere Tiere hilft der Ratgeber [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/).
 
 ## Schritt 3: Mehrere Tiere richtig versorgen
 
@@ -273,7 +273,7 @@ Typische Probleme sind Futterdiebstahl, unterschiedliche Rationen, Spezialfutter
 
 Bei unterschiedlichen Rationen ist ein Zugangssystem häufig geeigneter. Der [SureFeed Microchip Pet Feeder](/produkt/surefeed-microchip-pet-feeder/) öffnet sich nur für ein registriertes Tier. Er kontrolliert den Zugang, ersetzt aber keinen Vorratsautomaten.
 
-Mehr dazu: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
+Mehr dazu: [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
 
 ## Schritt 4: Wie viel Technik ist sinnvoll?
 
@@ -289,13 +289,13 @@ Der [Petlibro Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/) ist e
 
 Für einen stabilen Tagesplan kann lokale Bedienung ausreichen. Vorteile sind weniger Cloud-Abhängigkeit und einfacherer Datenschutz. Nachteile sind fehlende Push-Meldungen und keine Fernänderung.
 
-Mehr dazu: [Futterautomat ohne WLAN](/futterautomat-ohne-wlan/).
+Mehr dazu: [Futterautomat ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/).
 
 ### Kamera
 
 Eine Kamera kann zeigen, ob ein Tier am Napf erscheint und ob Futter sichtbar ausgegeben wurde. Sie zeigt nicht sicher, wie viel gefressen wurde oder ob das Tier gesund ist.
 
-Mehr dazu: [Futterautomat mit Kamera](/futterautomat-mit-kamera/).
+Mehr dazu: [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/).
 
 ## Stromversorgung und Ausfallsicherheit
 

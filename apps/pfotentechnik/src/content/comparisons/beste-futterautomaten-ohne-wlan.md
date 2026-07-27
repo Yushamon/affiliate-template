@@ -151,7 +151,7 @@ seo:
   description: >-
     Futterautomaten ohne WLAN nach Offline-Zuverlässigkeit, Batteriebetrieb, Futterart, Zugangskontrolle und
     Alltagstauglichkeit vergleichen.
-  canonical: /vergleiche/beste-futterautomaten-ohne-wlan/
+  canonical: /vergleiche/-ohne-wlan/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -290,13 +290,13 @@ Netzbetrieb mit Batterie-Backup kombiniert den normalen Anschluss mit einer Rese
 
 Ohne WLAN gibt es keine spontane Portion aus der Ferne, kein cloudbasiertes Protokoll und keine Push-Meldung bei niedrigem Füllstand. Diese Funktionen können nützlich sein, sind aber kein Ersatz für Beobachtung. Eine App bestätigt häufig nur den Motorvorgang, nicht die vollständige Futteraufnahme.
 
-Wer wechselnde Arbeitszeiten hat und Pläne häufig anpasst, profitiert eventuell von einem [Futterautomaten mit App](/futterautomat-mit-app/). Wer nur morgens und abends kleinere Portionen bereitstellen möchte, kann mit lokaler Steuerung besser bedient sein. Die systematische Auswahl erklärt [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/).
+Wer wechselnde Arbeitszeiten hat und Pläne häufig anpasst, profitiert eventuell von einem [Futterautomaten mit App](/vergleiche/futterautomat-mit-app/). Wer nur morgens und abends kleinere Portionen bereitstellen möchte, kann mit lokaler Steuerung besser bedient sein. Die systematische Auswahl erklärt [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/).
 
 ## Portionierung bleibt eine mechanische Frage
 
 Auch ein Offline-Modell muss zur Futterart passen. Bei Vorratsautomaten werden Förderschritte mit dem verwendeten Trockenfutter gewogen. Bei Fachautomaten wird jede Mahlzeit direkt eingefüllt, wodurch die Menge gut kontrollierbar ist. Für Nassfutter kommen zusätzliche Anforderungen an Kühlung und Standzeit hinzu.
 
-In Mehrtierhaushalten löst fehlendes WLAN weder Futterdiebstahl noch Konkurrenz. Fressen zwei Katzen am selben zugänglichen Napf, ist die Zuordnung weiterhin unklar. Der Ratgeber [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/) beschreibt räumliche Trennung und Zugangskontrolle.
+In Mehrtierhaushalten löst fehlendes WLAN weder Futterdiebstahl noch Konkurrenz. Fressen zwei Katzen am selben zugänglichen Napf, ist die Zuordnung weiterhin unklar. Der Ratgeber [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) beschreibt räumliche Trennung und Zugangskontrolle.
 
 ## Sicher einrichten und testen
 
@@ -306,7 +306,7 @@ Für Urlaub ist ein solcher Test besonders wichtig, ersetzt aber keine Betreuung
 
 ## Drei Offline-Bauarten direkt vergleichen
 
-Der spezialisierte [Vergleich der besten Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) trennt drei Konzepte:
+Der spezialisierte [Vergleich der besten Futterautomaten ohne WLAN](/vergleiche/-ohne-wlan/) trennt drei Konzepte:
 
 - **Cat Mate C500:** vorbereitete Nass- oder Trockenfutterfächer mit lokaler Zeitsteuerung,
 - **SureFeed Microchip Pet Feeder:** geschützter Zugang ohne automatische Vorratsdosierung,

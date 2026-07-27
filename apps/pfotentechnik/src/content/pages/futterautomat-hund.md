@@ -207,7 +207,7 @@ contentPlatform:
 
 recommendationJourney:
   mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
+  comparisonHref: /vergleiche/
   comparisonLabel: Futterautomaten für Hunde vergleichen
 ---
 
@@ -548,7 +548,7 @@ Kann nicht sicher zeigen:
 
 Selten kaufentscheidend. Manche Hunde reagieren darauf, andere ignorieren sie.
 
-Mehr dazu: [Futterautomat mit App](/futterautomat-mit-app/), [Futterautomat mit Kamera](/futterautomat-mit-kamera/) und [Futterautomat für Berufstätige](/futterautomat-fuer-berufstaetige/).
+Mehr dazu: [Futterautomat mit App](/vergleiche/futterautomat-mit-app/), [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) und [Futterautomat für Berufstätige](/futterautomat-fuer-berufstaetige/).
 
 ## Batterie-Backup und Offline-Betrieb
 

@@ -32,7 +32,7 @@ seo:
   description: >-
     Die besten Futterautomaten für Seniorenkatzen im Vergleich. Empfehlungen für zuverlässige Fütterung und einfache
     Bedienung.
-  canonical: /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/
+  canonical: /vergleiche/-fuer-seniorenkatzen/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -196,7 +196,7 @@ Wenn eine Katze tierärztlich überwacht werden muss oder spezielle Diäten erh�
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat für Katzen](/futterautomat-katze/)
 * [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/)
-* [Beste Futterautomaten für Welpen](/beste-futterautomaten-fuer-welpen/)
+* [Beste Futterautomaten für Welpen](/vergleiche/-fuer-welpen/)
 
 ## Fazit
 

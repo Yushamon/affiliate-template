@@ -32,7 +32,7 @@ seo:
   description: >-
     Die besten Futterautomaten für kleine Hunde im Vergleich. Erfahre, welche Modelle sich für kleine Portionen und
     feste Fütterungszeiten besonders eignen.
-  canonical: /vergleiche/beste-futterautomaten-fuer-kleine-hunde/
+  canonical: /vergleiche/-fuer-kleine-hunde/
   sitemap: true
   noindex: false
   priority: 0.8
@@ -209,8 +209,8 @@ Auch bei überwiegender Nassfutter- oder BARF-Fütterung können spezielle Lösu
 
 * [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
 * [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat für Welpen](/beste-futterautomaten-fuer-welpen/)
-* [Futterautomat mit App](/futterautomat-mit-app/)
+* [Futterautomat für Welpen](/vergleiche/-fuer-welpen/)
+* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
 
 ## Fazit
 
