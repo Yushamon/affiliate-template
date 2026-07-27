@@ -14,7 +14,7 @@ const price = product ? getPriceDisplay(product.price) : null;
   <aside class="comparison-sticky-bar comparison-sticky-bar--v121" aria-label="Top-Empfehlung">
     <div class="comparison-sticky-bar__identity">
       <span>Top-Empfehlung</span>
-      <strong title={product.title}>{product.title}</strong>
+      <strong>{product.title}</strong>
     </div>
 
     <div class="comparison-sticky-bar__actions">
@@ -118,38 +118,3 @@ const price = product ? getPriceDisplay(product.price) : null;
     }
   }
 </style>
-
-<!-- PT_STICKY_RECOVERY_12_1_1_START -->
-<style is:global>
-  .comparison-sticky-bar .comparison-sticky-bar__identity strong,
-  .comparison-sticky-bar > div:first-child strong {
-    display: block !important;
-    max-width: none !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    white-space: normal !important;
-    overflow-wrap: anywhere !important;
-    -webkit-line-clamp: unset !important;
-  }
-
-  @media (max-width: 47.99rem) {
-    .comparison-sticky-bar {
-      gap: var(--pt-space-2) !important;
-    }
-
-    .comparison-sticky-bar .comparison-sticky-bar__identity,
-    .comparison-sticky-bar > div:first-child {
-      display: grid !important;
-      grid-template-columns: minmax(0, 1fr) !important;
-      align-items: start !important;
-      gap: var(--pt-space-1) !important;
-    }
-
-    .comparison-sticky-bar .comparison-sticky-bar__identity strong,
-    .comparison-sticky-bar > div:first-child strong {
-      font-size: var(--pt-font-size-sm) !important;
-      line-height: 1.2 !important;
-    }
-  }
-</style>
-<!-- PT_STICKY_RECOVERY_12_1_1_END -->

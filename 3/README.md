@@ -1,29 +1,31 @@
-# PfotenTechnik Comparison Mobile Fix 12.1.0
+# PfotenTechnik Comparison Mobile Recovery 12.1.1
 
-Funktionaler Patch für die aktuellen Mobile-Screenshots.
+Robuster Recovery-Patch für den aktuellen Mobile-Stand.
 
-## Behoben
+## Wichtigste Änderung
 
-- Kaufberatung im mobilen Header entfernt
-- Burgermenü als sauberes Drei-Linien-Icon
-- Produktname wieder über den Sticky-CTA-Buttons
-- gequetschter Text im unteren CTA entfernt
-- Vergleichskarten neu aufgeteilt
-- Preis links, Fair-Badge rechts und vertikal zentriert
-- CTA-Bereich direkt und klar unter dem Preis
-- Dark Mode berücksichtigt
+Der Kaufberatungs-CTA wird diesmal **direkt aus `Header.astro` entfernt**.
+Er wird nicht nur versteckt. Zusätzlich wird die dazugehörige Runtime-Logik
+entfernt, damit der CTA nicht nachträglich wieder erscheinen kann.
+
+## Weitere Fixes
+
+- sauberes Burgermenü
+- Vergleichskarten ohne langes Bildfeld
+- Bild im stabilen 4:3-Format
+- Preis direkt vor den CTA-Buttons
+- Preis und Fair-Badge in einer Zeile
+- Produktname im Sticky-CTA vollständig sichtbar
+- Top-Empfehlung kompakter
 
 ## Ausführen
 
 ```bash
-node 3/pfotentechnik-comparison-mobile-fix-12.1.0.mjs
+node 3/pfotentechnik-comparison-mobile-recovery-12.1.1.mjs
 ```
 
 Optional:
 
 ```bash
-node 3/pfotentechnik-comparison-mobile-fix-12.1.0.mjs --dry-run
+node 3/pfotentechnik-comparison-mobile-recovery-12.1.1.mjs --dry-run
 ```
-
-Der Installer erstellt Backups, führt alle Design-System-Audits, den Build und
-die Visual-QA aus und committed bei Erfolg lokal.
