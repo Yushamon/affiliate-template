@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T20:18:16.729Z",
+    "generatedAt": "2026-07-27T06:30:40.692Z",
     "totalProducts": 68,
     "byCategory": {
       "futterautomaten": 38,
@@ -9,14 +9,14 @@
       "katzenklappen": 1
     },
     "errors": 2,
-    "warnings": 101,
+    "warnings": 93,
     "notes": 152,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
   "products": [
     {
-      "file": "src\\content\\products\\aqara-smart-pet-feeder-c1.md",
+      "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
       "slug": "aqara-smart-pet-feeder-c1",
       "title": "Aqara Smart Pet Feeder C1",
       "category": "futterautomaten",
@@ -103,7 +103,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\cat-mate-335-pet-fountain.md",
+      "file": "src/content/products/cat-mate-335-pet-fountain.md",
       "slug": "cat-mate-335-pet-fountain",
       "title": "Cat Mate Pet Fountain 335",
       "category": "trinkbrunnen",
@@ -203,13 +203,12 @@
       "completeness": 88
     },
     {
-      "file": "src\\content\\products\\cat-mate-c200.md",
+      "file": "src/content/products/cat-mate-c200.md",
       "slug": "cat-mate-c200",
       "title": "Cat Mate C200",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: napf"
       ],
       "notes": [
@@ -286,16 +285,15 @@
       ],
       "structuralCompleteness": 92,
       "confirmedCompleteness": 69,
-      "completeness": 94
+      "completeness": 97
     },
     {
-      "file": "src\\content\\products\\cat-mate-c300.md",
+      "file": "src/content/products/cat-mate-c300.md",
       "slug": "cat-mate-c300",
       "title": "Cat Mate C300",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: napf"
       ],
       "notes": [
@@ -376,17 +374,15 @@
       ],
       "structuralCompleteness": 92,
       "confirmedCompleteness": 69,
-      "completeness": 94
+      "completeness": 97
     },
     {
-      "file": "src\\content\\products\\cat-mate-c500.md",
+      "file": "src/content/products/cat-mate-c500.md",
       "slug": "cat-mate-c500",
       "title": "Cat Mate C500",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
@@ -459,10 +455,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 97
+      "completeness": 100
     },
     {
-      "file": "src\\content\\products\\cat-mate-shell-fountain.md",
+      "file": "src/content/products/cat-mate-shell-fountain.md",
       "slug": "cat-mate-shell-fountain",
       "title": "Cat Mate Shell Pet Fountain",
       "category": "trinkbrunnen",
@@ -558,7 +554,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\catit-pixi-smart-6-meal-feeder.md",
+      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
       "slug": "catit-pixi-smart-6-meal-feeder",
       "title": "Catit PIXI Smart 6-Meal Feeder",
       "category": "futterautomaten",
@@ -667,7 +663,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\catit-pixi-vision-smart-feeder.md",
+      "file": "src/content/products/catit-pixi-vision-smart-feeder.md",
       "slug": "catit-pixi-vision-smart-feeder",
       "title": "Catit PIXI Vision Smart Feeder",
       "category": "futterautomaten",
@@ -752,7 +748,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\garmin-alpha-t-20.md",
+      "file": "src/content/products/garmin-alpha-t-20.md",
       "slug": "garmin-alpha-t-20",
       "title": "Garmin Alpha T 20",
       "category": "gps-tracker",
@@ -874,7 +870,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\garmin-alpha-tt-25.md",
+      "file": "src/content/products/garmin-alpha-tt-25.md",
       "slug": "garmin-alpha-tt-25",
       "title": "Garmin Alpha TT 25",
       "category": "gps-tracker",
@@ -953,7 +949,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\honeyguardian-a305d.md",
+      "file": "src/content/products/honeyguardian-a305d.md",
       "slug": "honeyguardian-a305d",
       "title": "HoneyGuardian A305D",
       "category": "futterautomaten",
@@ -1036,7 +1032,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\honeyguardian-a68.md",
+      "file": "src/content/products/honeyguardian-a68.md",
       "slug": "honeyguardian-a68",
       "title": "HoneyGuardian A68 Smart Pet Feeder",
       "category": "futterautomaten",
@@ -1111,7 +1107,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\honeyguardian-smart-pet-feeder-s305d.md",
+      "file": "src/content/products/honeyguardian-smart-pet-feeder-s305d.md",
       "slug": "honeyguardian-smart-pet-feeder-s305d",
       "title": "HoneyGuardian Smart Pet Feeder S305D",
       "category": "futterautomaten",
@@ -1188,7 +1184,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\imipaw-3l-automatic-cat-feeder.md",
+      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
       "slug": "imipaw-3l-automatic-cat-feeder",
       "title": "IMIPAW 3L Automatic Cat Feeder",
       "category": "futterautomaten",
@@ -1293,7 +1289,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\oneisall-2-2l-cordless-fountain.md",
+      "file": "src/content/products/oneisall-2-2l-cordless-fountain.md",
       "slug": "oneisall-2-2l-cordless-fountain",
       "title": "oneisall 2,2L Cordless Cat Fountain",
       "category": "trinkbrunnen",
@@ -1389,7 +1385,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\oneisall-2-in-1-feeder-water.md",
+      "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
       "slug": "oneisall-2-in-1-feeder-water",
       "title": "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser",
       "category": "futterautomaten",
@@ -1512,7 +1508,7 @@
       "completeness": 91
     },
     {
-      "file": "src\\content\\products\\oneisall-3-2l-cordless-fountain.md",
+      "file": "src/content/products/oneisall-3-2l-cordless-fountain.md",
       "slug": "oneisall-3-2l-cordless-fountain",
       "title": "oneisall 3,2L Cordless Cat Fountain",
       "category": "trinkbrunnen",
@@ -1639,7 +1635,7 @@
       "completeness": 91
     },
     {
-      "file": "src\\content\\products\\oneisall-3-5l-cordless-fountain.md",
+      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md",
       "slug": "oneisall-3-5l-cordless-fountain",
       "title": "oneisall 3,5L Cordless Fountain",
       "category": "trinkbrunnen",
@@ -1730,14 +1726,12 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\oneisall-5l-automatic-cat-feeder.md",
+      "file": "src/content/products/oneisall-5l-automatic-cat-feeder.md",
       "slug": "oneisall-5l-automatic-cat-feeder",
       "title": "oneisall 5L Automatic Cat Feeder",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: wlan",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie",
@@ -1810,10 +1804,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 97
+      "completeness": 100
     },
     {
-      "file": "src\\content\\products\\oneisall-7l-dog-water-fountain.md",
+      "file": "src/content/products/oneisall-7l-dog-water-fountain.md",
       "slug": "oneisall-7l-dog-water-fountain",
       "title": "oneisall 7L Dog Water Fountain",
       "category": "trinkbrunnen",
@@ -1933,7 +1927,7 @@
       "completeness": 88
     },
     {
-      "file": "src\\content\\products\\paj-pet-finder-4g-mini.md",
+      "file": "src/content/products/paj-pet-finder-4g-mini.md",
       "slug": "paj-pet-finder-4g-mini",
       "title": "PAJ PET Finder 4G Mini",
       "category": "gps-tracker",
@@ -2098,7 +2092,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\pawbby-smart-pet-feeder.md",
+      "file": "src/content/products/pawbby-smart-pet-feeder.md",
       "slug": "pawbby-smart-pet-feeder",
       "title": "PAWBBY Smart Pet Feeder",
       "category": "futterautomaten",
@@ -2185,14 +2179,13 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\pawsync-smart-pet-feeder.md",
+      "file": "src/content/products/pawsync-smart-pet-feeder.md",
       "slug": "pawsync-smart-pet-feeder",
       "title": "PawSync Smart Pet Feeder",
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+        "Nur 1 Galerie-Bilder hinterlegt"
       ],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
@@ -2276,10 +2269,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 46,
-      "completeness": 94
+      "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-3-pro-uvc.md",
+      "file": "src/content/products/petkit-eversweet-3-pro-uvc.md",
       "slug": "petkit-eversweet-3-pro-uvc",
       "title": "PETKIT Eversweet 3 Pro UVC",
       "category": "trinkbrunnen",
@@ -2454,7 +2447,7 @@
       "completeness": 91
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-5-mini.md",
+      "file": "src/content/products/petkit-eversweet-5-mini.md",
       "slug": "petkit-eversweet-5-mini",
       "title": "PETKIT Eversweet 5 Mini",
       "category": "trinkbrunnen",
@@ -2542,7 +2535,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-max-2-uvc.md",
+      "file": "src/content/products/petkit-eversweet-max-2-uvc.md",
       "slug": "petkit-eversweet-max-2-uvc",
       "title": "PETKIT Eversweet Max 2 UVC",
       "category": "trinkbrunnen",
@@ -2634,7 +2627,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-max-cordless.md",
+      "file": "src/content/products/petkit-eversweet-max-cordless.md",
       "slug": "petkit-eversweet-max-cordless",
       "title": "PETKIT Eversweet Max Cordless",
       "category": "trinkbrunnen",
@@ -2734,14 +2727,12 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-solo-2-fountain.md",
+      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
       "slug": "petkit-eversweet-solo-2-fountain",
       "title": "PETKIT Eversweet Solo 2",
       "category": "trinkbrunnen",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: app",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe",
@@ -2820,10 +2811,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 80,
-      "completeness": 97
+      "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-solo-se.md",
+      "file": "src/content/products/petkit-eversweet-solo-se.md",
       "slug": "petkit-eversweet-solo-se",
       "title": "PETKIT Eversweet Solo SE",
       "category": "trinkbrunnen",
@@ -2923,7 +2914,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petkit-eversweet-ultra.md",
+      "file": "src/content/products/petkit-eversweet-ultra.md",
       "slug": "petkit-eversweet-ultra",
       "title": "PETKIT Eversweet Ultra",
       "category": "trinkbrunnen",
@@ -3101,7 +3092,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petkit-fresh-element-infinity.md",
+      "file": "src/content/products/petkit-fresh-element-infinity.md",
       "slug": "petkit-fresh-element-infinity",
       "title": "PETKIT Fresh Element Infinity",
       "category": "futterautomaten",
@@ -3182,7 +3173,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petkit-fresh-element-solo.md",
+      "file": "src/content/products/petkit-fresh-element-solo.md",
       "slug": "petkit-fresh-element-solo",
       "title": "PETKIT Fresh Element Solo",
       "category": "futterautomaten",
@@ -3345,7 +3336,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petkit-yumshare-dual-hopper.md",
+      "file": "src/content/products/petkit-yumshare-dual-hopper.md",
       "slug": "petkit-yumshare-dual-hopper",
       "title": "PETKIT YumShare Dual-Hopper 2",
       "category": "futterautomaten",
@@ -3524,7 +3515,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petkit-yumshare-dual.md",
+      "file": "src/content/products/petkit-yumshare-dual.md",
       "slug": "petkit-yumshare-dual",
       "title": "PETKIT YumShare Dual-Hopper 2",
       "category": "futterautomaten",
@@ -3617,7 +3608,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petkit-yumshare-solo-2.md",
+      "file": "src/content/products/petkit-yumshare-solo-2.md",
       "slug": "petkit-yumshare-solo-2",
       "title": "PETKIT YumShare Solo 2",
       "category": "futterautomaten",
@@ -3708,7 +3699,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petlibro-air-automatic-feeder.md",
+      "file": "src/content/products/petlibro-air-automatic-feeder.md",
       "slug": "petlibro-air-automatic-feeder",
       "title": "PETLIBRO Air Automatic Feeder",
       "category": "futterautomaten",
@@ -3793,7 +3784,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petlibro-air-wifi-feeder.md",
+      "file": "src/content/products/petlibro-air-wifi-feeder.md",
       "slug": "petlibro-air-wifi-feeder",
       "title": "PETLIBRO Air WiFi Feeder",
       "category": "futterautomaten",
@@ -3970,7 +3961,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petlibro-capsule-dog-fountain.md",
+      "file": "src/content/products/petlibro-capsule-dog-fountain.md",
       "slug": "petlibro-capsule-dog-fountain",
       "title": "PETLIBRO Capsule Dog Fountain",
       "category": "trinkbrunnen",
@@ -4076,7 +4067,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petlibro-dockstream-2-smart-cordless.md",
+      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
       "slug": "petlibro-dockstream-2-smart-cordless",
       "title": "PETLIBRO Dockstream 2 Smart Cordless",
       "category": "trinkbrunnen",
@@ -4172,7 +4163,7 @@
       "completeness": 88
     },
     {
-      "file": "src\\content\\products\\petlibro-dockstream-2-smart.md",
+      "file": "src/content/products/petlibro-dockstream-2-smart.md",
       "slug": "petlibro-dockstream-2-smart",
       "title": "PETLIBRO Dockstream 2 Smart",
       "category": "trinkbrunnen",
@@ -4261,7 +4252,7 @@
       "completeness": 85
     },
     {
-      "file": "src\\content\\products\\petlibro-dockstream-cordless.md",
+      "file": "src/content/products/petlibro-dockstream-cordless.md",
       "slug": "petlibro-dockstream-cordless",
       "title": "PETLIBRO Dockstream Cordless",
       "category": "trinkbrunnen",
@@ -4367,7 +4358,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petlibro-dockstream-rfid-smart.md",
+      "file": "src/content/products/petlibro-dockstream-rfid-smart.md",
       "slug": "petlibro-dockstream-rfid-smart",
       "title": "PETLIBRO Dockstream RFID Smart",
       "category": "trinkbrunnen",
@@ -4477,7 +4468,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petlibro-glacier-ultrafiltration.md",
+      "file": "src/content/products/petlibro-glacier-ultrafiltration.md",
       "slug": "petlibro-glacier-ultrafiltration",
       "title": "PETLIBRO Glacier Ultrafiltration Fountain",
       "category": "trinkbrunnen",
@@ -4567,7 +4558,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petlibro-granary-2-vision.md",
+      "file": "src/content/products/petlibro-granary-2-vision.md",
       "slug": "petlibro-granary-2-vision",
       "title": "PETLIBRO Granary 2 Vision",
       "category": "futterautomaten",
@@ -4673,7 +4664,7 @@
       "completeness": 71
     },
     {
-      "file": "src\\content\\products\\petlibro-granary-camera-feeder.md",
+      "file": "src/content/products/petlibro-granary-camera-feeder.md",
       "slug": "petlibro-granary-camera-feeder",
       "title": "PETLIBRO Granary Camera Feeder",
       "category": "futterautomaten",
@@ -4758,14 +4749,12 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petlibro-granary-dual-feeder.md",
+      "file": "src/content/products/petlibro-granary-dual-feeder.md",
       "slug": "petlibro-granary-dual-feeder",
       "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: kamera",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: batterie"
@@ -4846,10 +4835,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 85,
-      "completeness": 97
+      "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petlibro-granary-wifi-feeder.md",
+      "file": "src/content/products/petlibro-granary-wifi-feeder.md",
       "slug": "petlibro-granary-wifi-feeder",
       "title": "PETLIBRO Granary WiFi Feeder",
       "category": "futterautomaten",
@@ -4934,14 +4923,12 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petlibro-one-rfid-smart-feeder.md",
+      "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
       "slug": "petlibro-one-rfid-smart-feeder",
       "title": "PETLIBRO One RFID Smart Feeder",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
-      ],
+      "warnings": [],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
@@ -5016,10 +5003,10 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
-      "completeness": 97
+      "completeness": 100
     },
     {
-      "file": "src\\content\\products\\petlibro-polar-wet-food-feeder.md",
+      "file": "src/content/products/petlibro-polar-wet-food-feeder.md",
       "slug": "petlibro-polar-wet-food-feeder",
       "title": "PETLIBRO Polar Wet Food Feeder",
       "category": "futterautomaten",
@@ -5104,7 +5091,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\petlibro-space-smart-feeder.md",
+      "file": "src/content/products/petlibro-space-smart-feeder.md",
       "slug": "petlibro-space-smart-feeder",
       "title": "PETLIBRO Space Smart Feeder",
       "category": "futterautomaten",
@@ -5202,7 +5189,7 @@
       "completeness": 82
     },
     {
-      "file": "src\\content\\products\\petlibro-stainless-steel-fountain.md",
+      "file": "src/content/products/petlibro-stainless-steel-fountain.md",
       "slug": "petlibro-stainless-steel-fountain",
       "title": "PETLIBRO Stainless Steel Fountain 3L",
       "category": "trinkbrunnen",
@@ -5290,7 +5277,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petsafe-freshfeed-refrigerated-feeder.md",
+      "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
       "slug": "petsafe-freshfeed-refrigerated-feeder",
       "title": "PetSafe FreshFeed Refrigerated Pet Feeder",
       "category": "futterautomaten",
@@ -5380,7 +5367,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petsafe-healthy-pet-simply-feed.md",
+      "file": "src/content/products/petsafe-healthy-pet-simply-feed.md",
       "slug": "petsafe-healthy-pet-simply-feed",
       "title": "PetSafe Healthy Pet Simply Feed",
       "category": "futterautomaten",
@@ -5474,7 +5461,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\petsafe-smart-feed-2.md",
+      "file": "src/content/products/petsafe-smart-feed-2.md",
       "slug": "petsafe-smart-feed-2",
       "title": "PetSafe Smart Feed 2.0",
       "category": "futterautomaten",
@@ -5558,7 +5545,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\surefeed-microchip-pet-feeder-connect.md",
+      "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md",
       "slug": "surefeed-microchip-pet-feeder-connect",
       "title": "SureFeed Microchip Pet Feeder Connect",
       "category": "futterautomaten",
@@ -5646,7 +5633,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\surefeed-microchip-pet-feeder.md",
+      "file": "src/content/products/surefeed-microchip-pet-feeder.md",
       "slug": "surefeed-microchip-pet-feeder",
       "title": "SureFeed Microchip Pet Feeder",
       "category": "futterautomaten",
@@ -5733,7 +5720,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\tractive-cat-6-mini.md",
+      "file": "src/content/products/tractive-cat-6-mini.md",
       "slug": "tractive-cat-6-mini",
       "title": "Tractive CAT 6 Mini",
       "category": "gps-tracker",
@@ -5824,7 +5811,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\tractive-dog-6-xl.md",
+      "file": "src/content/products/tractive-dog-6-xl.md",
       "slug": "tractive-dog-6-xl",
       "title": "Tractive DOG 6 XL",
       "category": "gps-tracker",
@@ -5923,7 +5910,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\tractive-dog-6.md",
+      "file": "src/content/products/tractive-dog-6.md",
       "slug": "tractive-dog-6",
       "title": "Tractive DOG 6",
       "category": "gps-tracker",
@@ -6022,7 +6009,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\weenect-xs.md",
+      "file": "src/content/products/weenect-xs.md",
       "slug": "weenect-xs",
       "title": "Weenect XS GPS-Tracker",
       "category": "gps-tracker",
@@ -6133,7 +6120,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\weenect-xt.md",
+      "file": "src/content/products/weenect-xt.md",
       "slug": "weenect-xt",
       "title": "Weenect XT GPS-Tracker",
       "category": "gps-tracker",
@@ -6268,7 +6255,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\wopet-cube-air-ca10.md",
+      "file": "src/content/products/wopet-cube-air-ca10.md",
       "slug": "wopet-cube-air-ca10",
       "title": "WOPET Cube Air WiFi Pet Feeder CA10",
       "category": "futterautomaten",
@@ -6362,7 +6349,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\wopet-heritage-view-camera-feeder.md",
+      "file": "src/content/products/wopet-heritage-view-camera-feeder.md",
       "slug": "wopet-heritage-view-camera-feeder",
       "title": "WOPET Heritage View Camera Feeder",
       "category": "futterautomaten",
@@ -6449,7 +6436,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\wopet-patrol-f07-pro.md",
+      "file": "src/content/products/wopet-patrol-f07-pro.md",
       "slug": "wopet-patrol-f07-pro",
       "title": "WOPET Patrol F07 Pro",
       "category": "futterautomaten",
@@ -6547,7 +6534,7 @@
       "completeness": 94
     },
     {
-      "file": "src\\content\\products\\wopet-pioneer-f01-plus.md",
+      "file": "src/content/products/wopet-pioneer-f01-plus.md",
       "slug": "wopet-pioneer-f01-plus",
       "title": "WOPET Pioneer F01 Plus",
       "category": "futterautomaten",
@@ -6636,7 +6623,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\xiaomi-smart-pet-food-feeder-2.md",
+      "file": "src/content/products/xiaomi-smart-pet-food-feeder-2.md",
       "slug": "xiaomi-smart-pet-food-feeder-2",
       "title": "Xiaomi Smart Pet Food Feeder 2",
       "category": "futterautomaten",
@@ -6719,7 +6706,7 @@
       "completeness": 100
     },
     {
-      "file": "src\\content\\products\\xiaomi-smart-pet-fountain-2.md",
+      "file": "src/content/products/xiaomi-smart-pet-fountain-2.md",
       "slug": "xiaomi-smart-pet-fountain-2",
       "title": "Xiaomi Smart Pet Fountain 2",
       "category": "trinkbrunnen",
@@ -6832,7 +6819,7 @@
       "completeness": 97
     },
     {
-      "file": "src\\content\\products\\zeromouse-2-0.md",
+      "file": "src/content/products/zeromouse-2-0.md",
       "slug": "zeromouse-2-0",
       "title": "ZeroMOUSE 2.0",
       "category": "katzenklappen",

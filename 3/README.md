@@ -1,4 +1,4 @@
-# PfotenTechnik Product Operations Platform 1.0.1
+# PfotenTechnik Product Operations Platform 1.0.2
 
 Dieser Installer erweitert `Yushamon/affiliate-template` um die Preis-, Affiliate-, Verfügbarkeits-, Empfehlungs- und Pflegeverwaltung.
 
@@ -9,13 +9,13 @@ Repository vorher aktualisieren und einen sauberen Arbeitsbaum sicherstellen.
 ### Windows PowerShell
 
 ```powershell
-node .\apply-pfotentechnik-product-operations-platform-1.0.1.mjs --publish
+node .\apply-pfotentechnik-product-operations-platform-1.0.2.mjs --publish
 ```
 
 ### macOS / Linux
 
 ```bash
-node ./apply-pfotentechnik-product-operations-platform-1.0.1.mjs --publish
+node ./apply-pfotentechnik-product-operations-platform-1.0.2.mjs --publish
 ```
 
 Der Installer:
@@ -39,8 +39,15 @@ Ohne `--publish` bleiben die geprüften Commits lokal. `--skip-build` ist nur f�
 Backups der ersetzten Dateien landen unter `.patch-backups/` und werden nicht committed.
 
 
-## Hotfix 1.0.1
+## Hotfix 1.0.2
 
 - erkennt das Produkt-Schema strukturell statt über einen fragilen Whitespace-Anker
 - setzt eine durch 1.0.0 begonnene, aber vor dem ersten Commit abgebrochene Phase 1 sicher fort
 - akzeptiert dabei ausschließlich unveränderte Dateien, die exakt dem mitgelieferten Phase-1-Payload entsprechen
+
+## Hotfix 1.0.2
+
+- setzt nach bereits committeden Phasen 1–3 direkt bei Phase 4 fort
+- erkennt die von einem abgebrochenen Phase-4-Lauf erzeugten Test-, Dokumentations- und Auditdateien sicher
+- behandelt bestehende globale Produkt- und Vergleichsaudits als informative Bestandsprüfung statt als Product-Operations-Blocker
+- Product-Operations-Tests, Price-Intelligence-Tests, strikter Product-Operations-Audit und der Build bleiben verpflichtend

@@ -1,0 +1,39 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import SearchIntegrations from "../../../components/admin/SearchIntegrations.astro";
+import { loadSearchDashboard } from "../../../lib/search/dashboard-loader";
+
+const payload = loadSearchDashboard();
+const active = payload.ranges[payload.defaultRange] ?? Object.values(payload.ranges)[0];
+const formatNumber = (value: number) => new Intl.NumberFormat("de-DE").format(value);
+const sections = [
+  { href: "/admin/seo/cockpit/", title: "GSC Cockpit", text: "Kennzahlen, Seiten, Queries und vorhandene GSC-Regeln nach Zeitraum." },
+  { href: "/admin/seo/advisor/", title: "SEO Co-Pilot", text: "Priorisierte Top-5, Traffic-Fokus, EEAT, Gaps, Überschneidungen und Linkchancen." },
+  { href: "/admin/seo/tasks/", title: "Aufgaben", text: "Lokal gespeicherte Advisor-Aufgaben planen, kommentieren und exportieren." },
+  { href: "/admin/seo/history/", title: "Historie", text: "Vorhandene Snapshots und Grenzen der historischen Vergleichsbasis nachvollziehen." },
+  { href: "/admin/seo/prompts/", title: "Prompt-Bibliothek", text: "Fertige ChatGPT- und Codex-Arbeitsaufträge aus der aktuellen Datenbasis kopieren." },
+  { href: "/admin/seo/prices/", title: "Preise", text: "Aktuelle Händlerpreise prüfen und automatisch innerhalb vergleichbarer Produktkategorien einordnen." },
+  { href: "/admin/seo/media/", title: "Media Center", text: "Referenzbilder sammeln, Werbung filtern, Prompts verwalten, WebP bauen und Produktmedien freigeben." },
+];
+---
+<SeoAdminLayout title="SEO Workspace" description="Zentrale Übersicht über die vorhandenen Google-Search-Console-Daten und redaktionellen SEO-Werkzeuge." active="overview">
+  <SearchIntegrations />
+  {active ? (
+    <>
+      <section class="overview-status seo-card">
+        <div><span class="seo-badge">{active.label}</span><h2>{active.startDate} bis {active.endDate}</h2><p>{payload.source === "ranges" ? "Multi-Zeitraum-Datei aktiv" : "Fallback auf Einzeldatei aktiv"}</p></div>
+        <dl><div><dt>Klicks</dt><dd>{formatNumber(active.metrics.current.clicks)}</dd></div><div><dt>Impressionen</dt><dd>{formatNumber(active.metrics.current.impressions)}</dd></div><div><dt>CTR</dt><dd>{active.metrics.current.ctr.toFixed(2)} %</dd></div><div><dt>Position</dt><dd>{active.metrics.current.position.toFixed(1)}</dd></div></dl>
+      </section>
+      <section class="overview-grid">{sections.map((section) => <a class="seo-card overview-link" href={section.href}><h2>{section.title}</h2><p>{section.text}</p><span>Öffnen →</span></a>)}</section>
+      <section class="seo-card data-summary"><h2>Datenstatus</h2><p>Generiert: {payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("de-DE") : "nicht verfügbar"}</p><p>{Object.keys(payload.ranges).length} Zeitraum/Zeiträume · {active.pages.length} Seiten · {active.queries.length} Queries · {active.trend.length} Trendpunkte · {active.recommendations.length} GSC-Empfehlungen</p>{payload.diagnostics.map((item) => <p class="diagnostic">{item.level}: {item.message}</p>)}</section>
+    </>
+  ) : <section class="seo-card empty"><h2>Keine nutzbaren GSC-Daten</h2>{payload.diagnostics.map((item) => <p>{item.message}</p>)}</section>}
+</SeoAdminLayout>
+<style>
+  .overview-status { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; align-items: center; padding: 24px; }
+  .overview-status h2 { margin: 10px 0 5px; }.overview-status p { margin: 0; color: var(--seo-muted); }
+  dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; } dl div { padding: 13px; border-radius: 13px; background: var(--seo-surface-soft); } dt { color: var(--seo-muted); font-size: .78rem; } dd { margin: 5px 0 0; font-size: 1.35rem; font-weight: 850; }
+  .overview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }.overview-link { display: block; min-height: 180px; padding: 21px; color: var(--seo-text); text-decoration: none; }.overview-link h2 { margin: 0 0 9px; }.overview-link p { color: var(--seo-muted); line-height: 1.55; }.overview-link span { color: var(--seo-accent-strong); font-weight: 850; }
+  .data-summary { margin-top: 18px; padding: 21px; }.data-summary p { color: var(--seo-muted); }.diagnostic { padding: 9px; border-radius: 9px; background: var(--seo-warning-soft); }.empty { padding: 24px; }
+  @media(max-width:850px){.overview-status{grid-template-columns:1fr}.overview-grid{grid-template-columns:1fr 1fr}} @media(max-width:560px){dl{grid-template-columns:1fr 1fr}.overview-grid{grid-template-columns:1fr}}
+</style>
