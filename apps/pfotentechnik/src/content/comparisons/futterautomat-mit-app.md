@@ -1,107 +1,203 @@
 ---
-title: "Futterautomaten mit App"
-seoTitle: "Futterautomat mit App: Funktionen und Modelle"
-slug: "futterautomat-mit-app"
-description: "Futterautomaten mit App vergleichen: Zeitpläne, Portionen, Protokolle, Offline-Betrieb, WLAN, Datenschutz und sinnvolle Modelle."
-seoDescription: "Futterautomat mit App gesucht? Erfahre, welche Funktionen wirklich wichtig sind, wie Offline-Betrieb funktioniert und welche Modelle sinnvoll sind."
-category: "futterautomaten"
-linking:
-  keywords:
-    - "Futterautomat mit App"
-    - "Futterautomaten mit App"
-    - "App-Steuerung"
-    - "Futterautomat per App steuern"
-    - "smarter Futterautomat"
-  contexts:
-    - "Futterautomaten"
-    - "App"
-    - "WLAN"
-    - "Portionskontrolle"
-  priority: "high"
-  maxOccurrences: 1
-categoryLabel: "Futterautomaten"
-categoryPath: "/smarte-futterautomaten/"
-tags: ["Futterautomat", "App", "Smart Home", "WLAN", "Portionskontrolle"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
+title: Futterautomaten mit App
+slug: futterautomat-mit-app
+type: comparison
+layout: comparison
+description: >-
+  Futterautomaten mit App vergleichen: Zeitpläne, Portionen, Protokolle, Offline-Betrieb, WLAN, Datenschutz und
+  sinnvolle Modelle.
 publishedAt: "2026-07-08"
-updatedAt: "2026-07-14"
+updatedAt: "2026-07-27"
+author:
+  name: PfotenTechnik Redaktion
+  role: Redaktion
+tags:
+  - Futterautomat
+  - App
+  - Smart Home
+  - WLAN
+  - Portionskontrolle
+  - Vergleich
 hub:
   sections:
-    - "wissen"
-  title: "Futterautomaten mit App"
-  description: "Zeitpläne, Protokolle, Offline-Betrieb und Portionierung sinnvoll vergleichen."
-  icon: "📖"
+    - vergleiche
+  title: Futterautomaten mit App
+  description: Zeitpläne, Protokolle, Offline-Betrieb und Portionierung sinnvoll vergleichen.
+  icon: 📖
   order: 310
-hubPriority: 84
-project: "pfotentechnik"
-heroImageKey: "feederComparison"
-premiumBlocks:
-  - type: "answer"
-    eyebrow: "Kurzantwort"
-    title: "Eine gute App ist nur so nützlich wie die Mechanik dahinter"
-    text: "Eine gute App sollte Zeitpläne übersichtlich verwalten, Ausgaben protokollieren und verständlich auf Störungen hinweisen. Entscheidend ist aber, dass gespeicherte Pläne lokal weiterlaufen, Portionen reproduzierbar ausgegeben werden und das Gerät auch bei kurzen Strom- oder Internetausfällen zuverlässig bleibt."
-  - type: "quickFacts"
-    eyebrow: "Schnell entscheiden"
-    title: "Drei unterschiedliche App-Konzepte"
-    cards:
-      - label: "Gesamtwahl"
-        title: "Petlibro Granary WiFi"
-        productKey: "petlibro-granary-wifi-feeder"
-        text: "Klare Zeitpläne, großer Vorrat und Batterie-Backup."
-      - label: "Kompakt"
-        title: "PETKIT Fresh Element Solo"
-        productKey: "petkit-fresh-element-solo"
-        text: "Platzsparendes System mit App und lokaler Stromreserve."
-      - label: "Mit Wiegenapf"
-        title: "Xiaomi Smart Pet Food Feeder 2"
-        productKey: "xiaomi-smart-pet-food-feeder-2"
-        text: "App-Steuerung plus Gewichtsübersicht am Napf."
-comparisonProducts:
-  - "petlibro-granary-wifi-feeder"
-  - "petkit-fresh-element-solo"
-  - "xiaomi-smart-pet-food-feeder-2"
-  - "petlibro-granary-camera-feeder"
-  - "petkit-yumshare-dual-hopper"
-comparisonRecommendation:
-  title: "Zuverlässigkeit ist wichtiger als Funktionsfülle"
-  text: "Für die meisten Haushalte sind stabile Zeitpläne, kleine Portionen, verständliche Protokolle und ein Batterie-Backup wichtiger als Kamera, Sprachaufnahme oder Smart-Home-Spielereien."
-  tableTitle: "App-Futterautomaten im Vergleich"
-  cardsTitle: "Die App-Modelle im Detail"
-  criteria: ["Zeitpläne", "Protokolle", "Benachrichtigungen", "Offline-Verhalten", "WLAN", "Preis-Leistung"]
-healthBridge:
-  eyebrow: "Gesundheit"
-  title: "Ein App-Protokoll ist keine Fresskontrolle"
-  text: "Eine bestätigte Ausgabe bedeutet meist nur, dass der Motor ausgelöst wurde. Sie beweist nicht, dass die Portion vollständig im Napf gelandet oder vom richtigen Tier gefressen worden ist."
-closingCta:
-  title: "App nach Alltag wählen"
-  text: "Wähle ein Modell, dessen Zeitpläne verständlich sind, dessen Portionen du nachwiegen kannst und das bei Verbindungsproblemen weiterarbeitet."
-  productKey: "petlibro-granary-wifi-feeder"
-  primaryLabel: "Aktuelles Angebot prüfen"
-  secondaryHref: "/futterautomat-mit-kamera/"
-  secondaryLabel: "Kamera-Modelle vergleichen"
+seo:
+  title: "Futterautomat mit App: Funktionen und Modelle"
+  description: >-
+    Futterautomat mit App gesucht? Erfahre, welche Funktionen wirklich wichtig sind, wie Offline-Betrieb funktioniert
+    und welche Modelle sinnvoll sind.
+  canonical: /vergleiche/futterautomat-mit-app/
+  sitemap: true
+  noindex: false
+  priority: 0.8
+  changefreq: monthly
+comparisonType: feature
+group: Futterautomaten
+icon: 📖
+items:
+  - slug: petlibro-granary-wifi-feeder
+    label: PETLIBRO Granary WiFi Feeder
+    type: product
+    recommendation: >-
+      Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne,
+      App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle.
+    values: {}
+    overrides: {}
+  - slug: petkit-fresh-element-solo
+    label: PETKIT Fresh Element Solo
+    type: product
+    recommendation: >-
+      Gute kompakte App-Lösung für eine Katze oder einen kleinen Hund, wenn drei Liter Vorrat, Statusmeldungen und ein
+      leicht zerlegbarer Futterweg wichtiger sind als Kamera, Tiererkennung oder große Portionen.
+    values: {}
+    overrides: {}
+  - slug: xiaomi-smart-pet-food-feeder-2
+    label: Xiaomi Smart Pet Food Feeder 2
+    type: product
+    recommendation: >-
+      Starke Smart-Home-Option für Katzen und Hunde bis 40 cm Schulterhöhe, wenn Napfgewicht, Füllstandswarnung und
+      automatische Entblockung wichtig sind.
+    values: {}
+    overrides: {}
+  - slug: petlibro-granary-camera-feeder
+    label: PETLIBRO Granary Camera Feeder
+    type: product
+    recommendation: >-
+      Premiumoption für Katzen und kleine bis mittelgroße Hunde, wenn Fütterung, Livebild und Zwei-Wege-Audio in einem
+      Gerät wichtiger sind als ein niedriger Preis.
+    values: {}
+    overrides: {}
+  - slug: petkit-yumshare-dual-hopper
+    label: PETKIT YumShare Dual-Hopper 2
+    type: product
+    recommendation: >-
+      Funktionsreiche Premiumlösung für Katzenhaushalte, die zwei Trockenfuttersorten flexibel mischen und
+      Fressereignisse per Kamera einzelnen Tieren zuordnen möchten. Nicht geeignet, wenn Tiere zuverlässig voneinander
+      getrennt gefüttert werden müssen.
+    values: {}
+    overrides: {}
+criteria:
+  - key: zeitplane
+    label: Zeitpläne
+    format: auto
+    fallback: –
+  - key: protokolle
+    label: Protokolle
+    format: auto
+    fallback: –
+  - key: benachrichtigungen
+    label: Benachrichtigungen
+    format: auto
+    fallback: –
+  - key: offline-verhalten
+    label: Offline-Verhalten
+    format: auto
+    fallback: –
+  - key: wlan
+    label: WLAN
+    format: auto
+    fallback: –
+  - key: preis-leistung
+    label: Preis-Leistung
+    format: auto
+    fallback: –
+automaticRecommendations:
+  enabled: true
+recommendation:
+  title: Zuverlässigkeit ist wichtiger als Funktionsfülle
+  text: >-
+    Für die meisten Haushalte sind stabile Zeitpläne, kleine Portionen, verständliche Protokolle und ein Batterie-Backup
+    wichtiger als Kamera, Sprachaufnahme oder Smart-Home-Spielereien.
+  winnerSlug: petlibro-granary-wifi-feeder
+  alternativeSlug: petkit-fresh-element-solo
+tableTitle: App-Futterautomaten im Vergleich
+cardsTitle: Die App-Modelle im Detail
 faq:
-  - question: "Funktioniert ein App-Futterautomat ohne WLAN?"
-    answer: "Die Einrichtung und Fernsteuerung benötigen meist WLAN. Bereits gespeicherte Pläne können je nach Modell lokal weiterlaufen. Das sollte vor dem ersten unbeaufsichtigten Einsatz praktisch getestet werden."
-  - question: "Braucht ein Futterautomat 2,4-GHz-WLAN?"
-    answer: "Viele Modelle unterstützen nur 2,4 GHz. Einige neuere Geräte können zusätzlich 5 GHz nutzen. Entscheidend ist eine stabile Verbindung am späteren Aufstellort."
-  - question: "Kann ich den Futterautomaten von unterwegs auslösen?"
-    answer: "Bei vernetzten Modellen ist eine spontane Ausgabe oft möglich. Sie sollte trotzdem nicht unkontrolliert erfolgen, weil mehrere Personen sonst Doppelportionen auslösen können."
-  - question: "Können mehrere Personen dieselbe App nutzen?"
-    answer: "Viele Hersteller bieten Gerätefreigaben oder gemeinsame Konten. Rechte, Protokolle und Einladungsverfahren unterscheiden sich. Freigaben sollten sparsam vergeben werden."
-  - question: "Wie genau sind die Portionsangaben in der App?"
-    answer: "Portionsschritte sind meist keine exakten Grammwerte. Die tatsächliche Menge hängt von Form, Größe und Dichte der Kroketten ab und sollte mit einer Küchenwaage geprüft werden."
-  - question: "Ist ein App-Futterautomat sicher im Urlaub?"
-    answer: "Nur als Unterstützung einer Betreuungsperson. App, Kamera und Vorrat ersetzen keine regelmäßige persönliche Kontrolle von Tier, Wasser, Futter und Technik."
-
-contentPlatform:
-  intent: buying-guide
-  cluster: futterautomaten
-
-recommendationJourney:
-  mode: filtered
-  comparisonHref: /vergleiche/beste-futterautomaten/
-  comparisonLabel: Passende Modelle vergleichen
+  - question: Funktioniert ein App-Futterautomat ohne WLAN?
+    answer: >-
+      Die Einrichtung und Fernsteuerung benötigen meist WLAN. Bereits gespeicherte Pläne können je nach Modell lokal
+      weiterlaufen. Das sollte vor dem ersten unbeaufsichtigten Einsatz praktisch getestet werden.
+  - question: Braucht ein Futterautomat 2,4-GHz-WLAN?
+    answer: >-
+      Viele Modelle unterstützen nur 2,4 GHz. Einige neuere Geräte können zusätzlich 5 GHz nutzen. Entscheidend ist eine
+      stabile Verbindung am späteren Aufstellort.
+  - question: Kann ich den Futterautomaten von unterwegs auslösen?
+    answer: >-
+      Bei vernetzten Modellen ist eine spontane Ausgabe oft möglich. Sie sollte trotzdem nicht unkontrolliert erfolgen,
+      weil mehrere Personen sonst Doppelportionen auslösen können.
+  - question: Können mehrere Personen dieselbe App nutzen?
+    answer: >-
+      Viele Hersteller bieten Gerätefreigaben oder gemeinsame Konten. Rechte, Protokolle und Einladungsverfahren
+      unterscheiden sich. Freigaben sollten sparsam vergeben werden.
+  - question: Wie genau sind die Portionsangaben in der App?
+    answer: >-
+      Portionsschritte sind meist keine exakten Grammwerte. Die tatsächliche Menge hängt von Form, Größe und Dichte der
+      Kroketten ab und sollte mit einer Küchenwaage geprüft werden.
+  - question: Ist ein App-Futterautomat sicher im Urlaub?
+    answer: >-
+      Nur als Unterstützung einer Betreuungsperson. App, Kamera und Vorrat ersetzen keine regelmäßige persönliche
+      Kontrolle von Tier, Wasser, Futter und Technik.
+  - question: Wie vergleichen wir Futterautomaten?
+    answer: >-
+      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
+      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
+  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
+    answer: >-
+      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
+      Ausfallsicherheit aus.
+  - question: Wie prüfe ich die reale Portionsgröße?
+    answer: >-
+      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
+      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
+  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
+    answer: >-
+      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
+      Mengenmessung ist es kein Fressnachweis.
+  - question: Braucht ein Futterautomat eine Stromreserve?
+    answer: >-
+      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
+      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
+  - question: Wie oft werden die Vergleiche aktualisiert?
+    answer: >-
+      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
+      nennt ihren aktuellen Datenstand.
 ---
+
+## Eine gute App ist nur so nützlich wie die Mechanik dahinter
+
+Eine gute App sollte Zeitpläne übersichtlich verwalten, Ausgaben protokollieren und verständlich auf Störungen hinweisen. Entscheidend ist aber, dass gespeicherte Pläne lokal weiterlaufen, Portionen reproduzierbar ausgegeben werden und das Gerät auch bei kurzen Strom- oder Internetausfällen zuverlässig bleibt.
+
+## Drei unterschiedliche App-Konzepte
+
+### Petlibro Granary WiFi
+
+Klare Zeitpläne, großer Vorrat und Batterie-Backup.
+
+[Produktdetails ansehen](/produkt/petlibro-granary-wifi-feeder/)
+
+### PETKIT Fresh Element Solo
+
+Platzsparendes System mit App und lokaler Stromreserve.
+
+[Produktdetails ansehen](/produkt/petkit-fresh-element-solo/)
+
+### Xiaomi Smart Pet Food Feeder 2
+
+App-Steuerung plus Gewichtsübersicht am Napf.
+
+[Produktdetails ansehen](/produkt/xiaomi-smart-pet-food-feeder-2/)
+
+## Ein App-Protokoll ist keine Fresskontrolle
+Eine bestätigte Ausgabe bedeutet meist nur, dass der Motor ausgelöst wurde. Sie beweist nicht, dass die Portion vollständig im Napf gelandet oder vom richtigen Tier gefressen worden ist.
+
+## App nach Alltag wählen
+Wähle ein Modell, dessen Zeitpläne verständlich sind, dessen Portionen du nachwiegen kannst und das bei Verbindungsproblemen weiterarbeitet.
+
+[Kamera-Modelle vergleichen](/futterautomat-mit-kamera/)
 
 ## Die kurze Antwort
 
@@ -428,3 +524,23 @@ Für reine Trockenfutterroutinen ist ein solides App-Modell meist ausreichend. K
 - [Futterautomat für Katzen](/futterautomat-katze/)
 - [Futterautomat für Hunde](/futterautomat-hund/)
 - [Futterautomat im Urlaub](/futterautomat-im-urlaub/)
+
+## Unsere Empfehlung
+
+Unsere stärkste Empfehlung in diesem Vergleich ist **PETLIBRO Granary WiFi Feeder**. Für die meisten Haushalte sind stabile Zeitpläne, kleine Portionen, verständliche Protokolle und ein Batterie-Backup wichtiger als Kamera, Sprachaufnahme oder Smart-Home-Spielereien.
+
+## Testmethodik
+
+Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare Herstellerangaben und die im Produktkatalog gepflegte redaktionelle Einordnung. Unterschiede werden nur dann als Vorteil gewertet, wenn sie für das jeweilige Nutzungsszenario relevant sind. Unbelegte Angaben und nicht direkt vergleichbare Marketingwerte werden nicht gleichgesetzt.
+
+## Quellen
+
+- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
+- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
+- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+
+## Weiterführende Links
+
+- [Alle Vergleiche](/vergleiche/)
+- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)

@@ -7,7 +7,7 @@ description: >-
   Sechs Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-27"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -20,7 +20,6 @@ tags:
 hub:
   sections:
     - vergleiche
-    - trinkbrunnen
   title: Beste Trinkbrunnen für Katzen
   description: Sechs klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
   icon: 🐈
@@ -35,6 +34,7 @@ seo:
   sitemap: true
   priority: 0.9
   changefreq: monthly
+  noindex: false
 comparisonType: use-case
 group: Trinkbrunnen
 icon: 🐈
@@ -53,6 +53,7 @@ items:
       reinigung: Vollständig zerlegbar; von Hand reinigen
       stromversorgung: Dauerhafter Netzbetrieb
       eignung: Eine bis zwei Katzen; kleiner Haushalt
+    overrides: {}
   - slug: oneisall-3-2l-cordless-fountain
     label: oneisall 3,2L Cordless Cat Fountain
     type: product
@@ -67,6 +68,7 @@ items:
       reinigung: Tank, Trinkfläche, Pumpe und Filterkammer getrennt reinigen
       stromversorgung: 4.000-mAh-Akku
       eignung: Eine bis zwei Katzen; Standort ohne Steckdose
+    overrides: {}
   - slug: petkit-eversweet-max-2-uvc
     label: PETKIT Eversweet Max 2 UVC
     type: product
@@ -81,6 +83,7 @@ items:
       reinigung: Wasserführende Teile laut Hersteller spülmaschinengeeignet
       stromversorgung: Akku- und Netzbetrieb
       eignung: Eine bis zwei Katzen; Premium- und App-Nutzung
+    overrides: {}
   - slug: petkit-eversweet-ultra
     label: PETKIT Eversweet Ultra
     type: product
@@ -95,6 +98,7 @@ items:
       reinigung: Trinkschale, Auslauf und magnetisches Sieb laut PETKIT spülmaschinengeeignet
       stromversorgung: Netzbetrieb mit 12 V/2 A
       eignung: Mehrkatzenhaushalt mit individuellem Trinktracking
+    overrides: {}
   - slug: petlibro-stainless-steel-fountain
     label: PETLIBRO Stainless Steel Fountain 3L
     type: product
@@ -109,6 +113,7 @@ items:
       reinigung: Edelstahltank laut Hersteller spülmaschinengeeignet
       stromversorgung: Netzbetrieb
       eignung: Eine bis zwei Katzen; Fokus auf Edelstahl
+    overrides: {}
   - slug: cat-mate-335-pet-fountain
     label: Cat Mate Pet Fountain 335
     type: product
@@ -123,6 +128,7 @@ items:
       reinigung: Monatlich, bei hartem Wasser häufiger; Pumpe separat reinigen
       stromversorgung: Niedervolt-Netzbetrieb mit 3-m-Kabel
       eignung: Eine oder mehrere Katzen mit unterschiedlichen Trinkhöhen
+    overrides: {}
   - type: product
     slug: petkit-eversweet-3-pro-uvc
     values:
@@ -133,45 +139,60 @@ items:
       filter: Ionenaustauschfilter
       lautstaerke: Herstellerangabe unter beziehungsweise höchstens 25 dB
       kapazitaet: 1,6 Liter nutzbar
+    overrides: {}
 criteria:
   - key: reinigung
     label: Reinigung
     description: Zerlegbarkeit, Pumpenzugang und Spülmaschineneignung.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: eignung
     label: Einsatzgebiet
     description: Passung zu Tierzahl, Standort und gewünschter Trinkfläche.
     weight: 1.4
+    format: auto
+    fallback: –
   - key: material
     label: Material
     description: Material der tatsächlich wasserberührenden Flächen.
     weight: 1.2
+    format: auto
+    fallback: –
   - key: stromversorgung
     label: Stromversorgung
     description: Netz, Akku und daraus folgende Platzierungsfreiheit.
     weight: 1
+    format: auto
+    fallback: –
   - key: filter
     label: Filter und Folgekosten
     description: Filteraufbau, Wechselteile und laufende Kosten.
     weight: 1
+    format: auto
+    fallback: –
   - key: lautstaerke
     label: Lautstärke
     description: Dokumentierte Herstellerangabe und praktische Einflussfaktoren.
     weight: 0.8
+    format: auto
+    fallback: –
   - key: kapazitaet
     label: Kapazität
     description: Nutzbare Wasserreserve ohne Hygieneversprechen.
     weight: 0.8
+    format: auto
+    fallback: –
 automaticRecommendations:
-  enabled: false
+  enabled: true
 recommendation:
-  winnerSlug: petkit-eversweet-solo-2-fountain
-  alternativeSlug: oneisall-3-2l-cordless-fountain
   title: PETKIT Solo 2 für den einfachen Alltag, oneisall 3,2L für kabellose Aufstellung
   text: >-
     Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die ausgewogenste einfache Lösung. Der oneisall 3,2L ist
     flexibler ohne Steckdose. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert; Edelstahl-Fokus bietet
     PETLIBRO.
+  winnerSlug: petkit-eversweet-solo-2-fountain
+  alternativeSlug: oneisall-3-2l-cordless-fountain
 tableTitle: 6 Katzenbrunnen direkt verglichen
 cardsTitle: Empfehlungen nach Haushalt und Standort
 faq:
@@ -215,10 +236,35 @@ faq:
     answer: >-
       Nein. Ein Brunnen ist eine Wasserstelle. Stromausfall, Defekt, Reinigung oder soziale Blockade dürfen nicht den
       gesamten Zugang zu Wasser verhindern.
+  - question: Wie vergleichen wir Trinkbrunnen?
+    answer: >-
+      Wir betrachten Material, Wasserkontaktflächen, Reinigung, Pumpenzugang, Filterkonzept, Geräusch, Volumen und die
+      Eignung für das jeweilige Tier.
+  - question: Ist ein größerer Tank automatisch besser?
+    answer: >-
+      Nein. Ein großer Tank reduziert Nachfüllvorgänge, kann aber Reinigung und Wasserwechsel erschweren. Tierzahl,
+      Trinkmenge und Hygiene sind wichtiger.
+  - question: Wie wichtig ist die Lautstärke?
+    answer: >-
+      Eine leise Pumpe kann die Akzeptanz verbessern. Geräusch hängt jedoch auch von Wasserstand, Verschmutzung und
+      Aufstellung ab.
+  - question: Sind Filterkosten im Vergleich berücksichtigt?
+    answer: >-
+      Filterkonzept und laufender Wechselbedarf fließen in die Einordnung ein. Preise können sich ändern und werden
+      deshalb nicht als dauerhaft fixer Wert behandelt.
+  - question: Wie oft muss ein Trinkbrunnen gereinigt werden?
+    answer: >-
+      Der Rhythmus hängt von Tierzahl, Material, Umgebung und Modell ab. Pumpe, Schläuche, Ecken und Dichtungen müssen
+      erreichbar sein und regelmäßig kontrolliert werden.
+  - question: Ersetzt ein Trinkbrunnen mehrere Wasserstellen?
+    answer: >-
+      Nicht grundsätzlich. Viele Tiere profitieren weiterhin von mehreren gut erreichbaren Wasserstellen, besonders in
+      Mehrtierhaushalten.
 heroImage:
   src: ../../assets/images/products/petkit-eversweet-solo-2-fountain/comparison.webp
   alt: Beste Trinkbrunnen für Katzen – redaktionelles Vergleichsbild
 ---
+
 Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. Für eine Katze ist ein leises, gut zerlegbares Netzmodell oft sinnvoller als ein großes Tracking-System. Mehrere Katzen benötigen weiterhin räumlich getrennte Wasserstellen.
 
 ## Schnellentscheidung
@@ -275,3 +321,22 @@ Die sechs Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kura
 ## Fazit
 
 Der PETKIT Eversweet Solo 2 ist die ausgewogenste einfache Gesamtwahl im aktuellen Bestand. Wer kabellos aufstellen muss, schaut zuerst auf den oneisall 3,2L. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert. Unabhängig vom Modell bleiben mehrere Wasserstellen, regelmäßiger Wasserwechsel und vollständige Reinigung entscheidend.
+
+## Unsere Empfehlung
+
+Unsere stärkste Empfehlung in diesem Vergleich ist **PETKIT Eversweet Solo 2**. Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die ausgewogenste einfache Lösung. Der oneisall 3,2L ist flexibler ohne Steckdose. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert; Edelstahl-Fokus bietet PETLIBRO.
+
+## Für wen geeignet
+
+Der Vergleich richtet sich an Tierhalter, die nicht nur Funktionen zählen, sondern Bauart, reale Alltagseignung, Folgekosten und Ausfallsicherheit gegeneinander abwägen möchten.
+
+## Quellen
+
+- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
+- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+
+## Weiterführende Links
+
+- [Alle Vergleiche](/vergleiche/)
+- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)

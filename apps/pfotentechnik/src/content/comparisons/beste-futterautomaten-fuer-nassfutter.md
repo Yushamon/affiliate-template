@@ -7,7 +7,7 @@ description: >-
   Nassfutterautomaten nach Kühlprinzip, Mahlzeitenzahl, Hygiene, Stromausfallsicherheit, App und Zugangskontrolle
   vergleichen.
 publishedAt: "2026-07-10"
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-27"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -34,6 +34,7 @@ seo:
   sitemap: true
   priority: 0.9
   changefreq: monthly
+  noindex: false
 comparisonType: use-case
 group: Futterautomaten
 icon: 🥣
@@ -54,6 +55,7 @@ items:
       tiertrennung: Nein
       geeignetfuer: Katzen und kleine Hunde
       wichtigstegrenze: Nur drei Mahlzeiten; aktive Kühlung bleibt vom Netzstrom abhängig
+    overrides: {}
   - slug: petsafe-freshfeed-refrigerated-feeder
     label: PetSafe FreshFeed Refrigerated Pet Feeder
     type: product
@@ -70,6 +72,7 @@ items:
       tiertrennung: Nein
       geeignetfuer: Katzen und kleine Hunde
       wichtigstegrenze: Deutschland-Verfügbarkeit und Langzeiterfahrung prüfen
+    overrides: {}
   - slug: catit-pixi-smart-6-meal-feeder
     label: Catit PIXI Smart 6-Meal Feeder
     type: product
@@ -86,6 +89,7 @@ items:
       tiertrennung: Nein
       geeignetfuer: Katzen
       wichtigstegrenze: Kühlwirkung hängt stark von Vorbereitung und Raumtemperatur ab
+    overrides: {}
   - slug: cat-mate-c500
     label: Cat Mate C500
     type: product
@@ -100,7 +104,8 @@ items:
       tiertrennung: Nein
       geeignetfuer: Bis zu zwei Katzen oder ein kleiner Hund
       wichtigstegrenze: Keine Fernkontrolle und keine geregelte Kühlung
-  - slug: surefeed-microchip-pet-feeder
+    overrides: {}
+  - slug: surefeed-microchip-pet-feeder-connect
     label: SureFeed Microchip Pet Feeder
     type: product
     recommendation: >-
@@ -116,54 +121,73 @@ items:
       tiertrennung: Ja, über Mikrochip oder RFID
       geeignetfuer: Katzen und kleine Hunde
       wichtigstegrenze: Keine Zeitpläne und keine automatische Portionierung
+    overrides: {}
 criteria:
   - key: profil
     label: Unsere Einordnung
     description: Der stärkste konkrete Anwendungsfall des jeweiligen Modells.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: kuehlprinzip
     label: Kühlprinzip
     description: Ob das Futter aktiv gekühlt oder lediglich durch Kühlakkus langsamer erwärmt wird.
     weight: 1.6
+    format: auto
+    fallback: –
   - key: mahlzeiten
     label: Mahlzeiten und Kapazität
     description: Anzahl, Größe und tatsächliche Nutzbarkeit der vorbereiteten Fächer.
     weight: 1.4
+    format: auto
+    fallback: –
   - key: steuerung
     label: Steuerung
     description: App, lokaler Timer oder tierabhängige Öffnung.
     weight: 0.9
+    format: auto
+    fallback: –
   - key: stromversorgung
     label: Strom und Ausfallsicherheit
     description: Abhängigkeit vom Netz sowie vorhandene Batterie- oder Offline-Funktionen.
     weight: 1.3
+    format: auto
+    fallback: –
   - key: hygiene
     label: Reinigung
     description: Material, entnehmbare Teile und laufender Pflegeaufwand.
     weight: 1.5
+    format: auto
+    fallback: –
   - key: tiertrennung
     label: Individuelle Tiertrennung
     description: Ob das Gerät Futter vor anderen Tieren schützen kann.
     weight: 0.9
+    format: auto
+    fallback: –
   - key: geeignetfuer
     label: Geeignet für
     description: Tierarten und Größen, für die das Modell sinnvoll ausgelegt ist.
     weight: 0.7
+    format: auto
+    fallback: –
   - key: wichtigstegrenze
     label: Wichtigste Grenze
     description: Der Punkt, der vor dem Kauf am ehesten zum Ausschluss führen kann.
     weight: 1.2
+    format: auto
+    fallback: –
 automaticRecommendations:
   enabled: true
 recommendation:
-  winnerSlug: petlibro-polar-wet-food-feeder
-  alternativeSlug: cat-mate-c500
   title: PETLIBRO für aktive Kühlung, Cat Mate für einfache Offline-Zeitsteuerung
   text: >-
     Der PETLIBRO Polar ist die ausgewogenste kompakte Lösung, wenn drei aktiv gekühlte Mahlzeiten und App-Steuerung
     genügen. Der Cat Mate C500 ist die pragmatische Alternative ohne WLAN, arbeitet jedoch nur mit Kühlakkus. Der
     PetSafe FreshFeed bietet technisch mehr gekühlte Fächer, sollte wegen Verfügbarkeit und geringer Langzeiterfahrung
     aber besonders sorgfältig geprüft werden.
+  winnerSlug: petlibro-polar-wet-food-feeder
+  alternativeSlug: cat-mate-c500
 tableTitle: Fünf Nassfutter-Lösungen nach Kühlung und Aufgabe verglichen
 cardsTitle: Die besten Modelle nach Nutzungsszenario
 faq:
@@ -229,10 +253,59 @@ faq:
     answer: >-
       Nein. Stromausfall, blockierte Deckel, verdorbenes Futter, Erbrechen oder Futterverweigerung bleiben möglich. Tier
       und Gerät sollten auch bei automatischer Fütterung regelmäßig kontrolliert werden.
+  - question: Wie vergleichen wir Futterautomaten?
+    answer: >-
+      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
+      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
+  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
+    answer: >-
+      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
+      Ausfallsicherheit aus.
+  - question: Wie prüfe ich die reale Portionsgröße?
+    answer: >-
+      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
+      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
+  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
+    answer: >-
+      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
+      Mengenmessung ist es kein Fressnachweis.
+  - question: Braucht ein Futterautomat eine Stromreserve?
+    answer: >-
+      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
+      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
+  - question: Wie oft werden die Vergleiche aktualisiert?
+    answer: >-
+      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
+      nennt ihren aktuellen Datenstand.
+  - question: Kann ich einen normalen Trockenfutterautomaten für Nassfutter verwenden?
+    answer: >-
+      Nein. Vorratsbehälter, Rotoren und Förderschnecken sind weder für die Konsistenz noch für die hygienischen
+      Anforderungen von Nassfutter konstruiert.
+  - question: Sind Kühlakkus eine echte Kühlung?
+    answer: >-
+      Nein. Sie verlangsamen die Erwärmung, halten aber keine konstante Temperatur. Ihre Wirkung hängt stark von
+      Raumtemperatur, Ausgangstemperatur und Aufstellort ab.
+  - question: Müssen Kühlakkus vollständig gefroren sein?
+    answer: >-
+      Ja. Sie sollten nach Herstellerangabe vollständig vorbereitet und korrekt eingesetzt werden. Teilweise gefrorene
+      Akkus bieten weniger Reserve.
+  - question: Kann ein Nassfutterautomat im Sommer genutzt werden?
+    answer: >-
+      Nur mit besonderer Vorsicht. Hohe Raumtemperaturen und direkte Sonne verkürzen die sinnvolle Standzeit deutlich.
+      Ein kühler, schattiger Standort ist Pflicht.
+  - question: Eignet sich ein Nassfutterautomat für den Urlaub?
+    answer: >-
+      Nur als Unterstützung einer Betreuungsperson. Fächer müssen gereinigt, Kühlakkus gewechselt und neue Portionen
+      hygienisch vorbereitet werden.
+  - question: Kann ich Nass- und Trockenfutter im selben Fachautomaten verwenden?
+    answer: >-
+      Ja, sofern der Hersteller beide Futterarten erlaubt. Die hygienischen Anforderungen richten sich dann nach dem
+      empfindlicheren Nassfutter.
 heroImage:
   src: ../../assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp
   alt: Beste Futterautomaten für Nassfutter – redaktionelles Vergleichsbild
 ---
+
 Nassfutterautomaten lösen nicht alle dasselbe Problem. Einige Geräte **kühlen mehrere vorbereitete Portionen aktiv**, andere öffnen Fächer mit Kühlakkus zu bestimmten Zeiten. Mikrochip-Näpfe wiederum schützen eine Portion vor anderen Tieren, planen aber keine Mahlzeiten.
 
 Deshalb gibt es keinen pauschalen Testsieger für jeden Haushalt. Die erste Entscheidung lautet nicht „Welche App ist besser?“, sondern:
@@ -423,3 +496,353 @@ Herstellerübersichten: [PETLIBRO](/hersteller/petlibro/), [PetSafe](/hersteller
 Die Vergleichswerte basieren auf den aktuellen PfotenTechnik-Produktdateien und den dort dokumentierten Herstellerangaben. Für keines der fünf Modelle liegt ein eigener Temperatur-Langzeittest unter kontrollierten Bedingungen vor.
 
 Modellnummer, Lieferumfang, App-Unterstützung, Zubehör und Verfügbarkeit können sich regional unterscheiden. Vor dem Kauf sollten deshalb die Angaben des konkret angebotenen Modells geprüft werden.
+
+## Für wen geeignet
+
+Der Vergleich richtet sich an Tierhalter, die nicht nur Funktionen zählen, sondern Bauart, reale Alltagseignung, Folgekosten und Ausfallsicherheit gegeneinander abwägen möchten.
+
+## Testmethodik
+
+Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare Herstellerangaben und die im Produktkatalog gepflegte redaktionelle Einordnung. Unterschiede werden nur dann als Vorteil gewertet, wenn sie für das jeweilige Nutzungsszenario relevant sind. Unbelegte Angaben und nicht direkt vergleichbare Marketingwerte werden nicht gleichgesetzt.
+
+## Weiterführende Links
+
+- [Alle Vergleiche](/vergleiche/)
+- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)
+
+## Für Nassfutter brauchst du ein Fachsystem, keinen Vorratsautomaten
+
+Geeignete Nassfutterautomaten halten vorbereitete Portionen in einzelnen abgedeckten Fächern bereit. Kühlakkus können die Erwärmung verlangsamen, ersetzen aber keine aktive Kühlung. Raumtemperatur, Standzeit und tägliche Reinigung bleiben entscheidend.
+
+## Die drei wichtigsten Kriterien
+
+### Einzelfächer statt Vorrat
+
+Nassfutter wird vorbereitet und nacheinander freigegeben, nicht durch einen Futterkanal transportiert.
+
+### Kühlung realistisch bewerten
+
+Kühlakkus halten kühler, regeln aber keine konstante Temperatur.
+
+### Täglich vollständig reinigen
+
+Schale, Deckelrand und alle Kontaktflächen müssen erreichbar und gut zu trocknen sein.
+
+## Ein passendes Fachsystem
+
+Produktname, Bewertung, interne URL und Stärken werden automatisch aus dem Produktkatalog geladen.
+
+### Cat Mate C500
+
+Für Nass- und Trockenfutter mit einzelnen Fächern, Timer und Kühlakkus.
+
+[Produktdetails ansehen](/produkt/cat-mate-c500/)
+
+## Für Nassfutter geeignete Modelle
+
+Dieser Block zeigt automatisch Produkte, die im Katalog mit dem Tag nassfutter gepflegt sind.
+
+## Passt ein Nassfutterautomat zu deinem Alltag?
+
+### Standzeit festlegen
+
+Wie lange liegt die Portion tatsächlich bis zur Öffnung im Gerät?
+
+### Raumtemperatur berücksichtigen
+
+Sommer, Sonne und warme Räume verkürzen die sinnvolle Einsatzdauer.
+
+### Reinigung einplanen
+
+Nur wählen, wenn Schale und Kontaktflächen täglich einfach gereinigt werden können.
+
+## Was bei Nassfutter-Automaten oft falsch eingeschätzt wird
+
+- Kühlakkus mit einer aktiv geregelten Kühlung verwechseln.
+- Nassfutter über viele Stunden in einem warmen Raum stehen lassen.
+- Einen Trockenfutter-Vorratsautomaten für Nassfutter zweckentfremden.
+- Nur die Schale reinigen und Deckelränder oder Drehfläche vergessen.
+- Futter direkt aus dem warmen Raum statt gekühlt einfüllen.
+- Geruch und Konsistenz nicht vor der Fütterung kontrollieren.
+- Den Automaten im Urlaub ohne persönliche Betreuung einplanen.
+
+## Kühlung ist eine Zeitreserve, keine Haltbarkeitsgarantie
+
+Ein Kühlakku kann die Erwärmung verlangsamen. Er zeigt aber weder die tatsächliche Futtertemperatur noch garantiert er eine sichere Standzeit. Deshalb müssen Herstellerangaben, Raumtemperatur und Beobachtung zusammen betrachtet werden.
+
+## Nassfutter-Checkliste
+
+- Sind die Fächer einzeln abgedeckt?
+- Wie viele Mahlzeiten lassen sich vorbereiten?
+- Sind Kühlakkus enthalten und nachkaufbar?
+- Lässt sich die Schale vollständig entnehmen?
+- Sind Deckelränder und Drehfläche erreichbar?
+- Ist das Gerät für die gewünschte Standzeit realistisch geeignet?
+- Funktioniert der Timer auch ohne Netzstrom?
+- Kann das Tier Deckel oder Drehteller öffnen?
+- Passt die Fachgröße zur tatsächlichen Portion?
+
+## Auffälliges Futter gehört nicht in den Napf
+Verdorbenes, ungewöhnlich riechendes oder auffällig verändertes Nassfutter darf nicht verfüttert werden. Frisst ein Tier plötzlich wenig oder zeigt Beschwerden, sollte die Ursache nicht nur beim Automaten gesucht werden.
+
+[Weiterlesen](/futterautomat-und-ernaehrung/)
+
+## Nassfutter nur mit passender Bauart automatisieren
+Ein Fachautomat mit vorbereiteten Portionen und Kühlakkus ist die passendere Lösung als ein Trockenfutter-Vorratsautomat.
+
+[Katzen-Ratgeber lesen](/futterautomat-katze/)
+
+## Die kurze Antwort
+
+Ein Futterautomat für Nassfutter muss einzelne Portionen abdecken und zu festen Zeiten freigeben.
+
+Ein klassischer Vorratsautomat ist dafür ungeeignet. Seine Mechanik ist auf trockene, rieselfähige Kroketten ausgelegt.
+
+Geeignete Nassfutterautomaten arbeiten meist mit:
+
+- mehreren Fächern
+- einem drehenden oder öffnenden Deckel
+- Timer
+- Kühlakkus
+- Batteriebetrieb
+
+Der kritische Punkt bleibt die Temperatur. Kühlakkus schaffen nur begrenzte Reserve.
+
+## Wie funktioniert ein Nassfutterautomat?
+
+Die Mahlzeiten werden vorher in einzelne Fächer gefüllt.
+
+Zur programmierten Zeit:
+
+1. dreht sich der Teller
+2. oder ein Deckel öffnet das nächste Fach
+3. die vorbereitete Portion wird zugänglich
+
+Das Gerät dosiert nicht automatisch aus einem großen Vorrat. Die Portion wird von dir vorher festgelegt.
+
+Das ist ein Vorteil, weil:
+
+- die Grammmenge direkt kontrollierbar ist
+- keine Förderschnecke verstopfen kann
+- Nassfutter nicht durch einen langen Kanal transportiert wird
+
+## Welche Bauarten gibt es?
+
+### Fachautomat mit Kühlakkus
+
+Das häufigste Konzept.
+
+Vorteile:
+
+- mehrere vorbereitete Mahlzeiten
+- Nass- und Trockenfutter möglich
+- einfache Portionierung
+- meist batteriebetrieben
+
+Nachteile:
+
+- nur begrenzte Mahlzeitenzahl
+- keine aktive Temperaturregelung
+- tägliche Reinigung
+- Kühlakkus müssen vorbereitet werden
+
+### Fachautomat ohne Kühlung
+
+Nur für kurze Zeiträume und kühle Bedingungen sinnvoll.
+
+Die tatsächliche Eignung hängt stark vom Futter und Raum ab.
+
+### Aktiv gekühlter Automat
+
+Technisch interessanter, aber seltener und meist teurer.
+
+Wichtig ist, ob die Temperatur tatsächlich geregelt und dokumentiert wird. Ein Lüfter allein ist noch keine verlässliche Kühlung.
+
+## Kühlakkus richtig einordnen
+
+Kühlakkus:
+
+- starten kalt
+- nehmen Wärme auf
+- werden mit der Zeit wärmer
+- regeln keine Zieltemperatur
+- geben keine Warnung bei zu hoher Futtertemperatur
+
+Ihre Wirkung hängt ab von:
+
+- Größe des Akkus
+- Ausgangstemperatur
+- Raumtemperatur
+- Sonnenlicht
+- Futtermenge
+- Material der Schale
+- Abstand zum Futter
+
+Ein großer Akku in einem kühlen Raum hält länger vor als ein kleiner Akku bei 28 Grad.
+
+## Aufstellort
+
+Geeignet:
+
+- schattiger Platz
+- kühler Raum
+- Abstand zu Heizung
+- keine direkte Sonne
+- ebener Boden
+- gute Erreichbarkeit zur Reinigung
+
+Ungeeignet:
+
+- Fensterbank
+- Wintergarten
+- direkt neben Heizkörper
+- warme Küche
+- sonniger Balkon
+- feuchter Keller
+
+## Futter richtig vorbereiten
+
+Praktischer Ablauf:
+
+1. Schale vollständig reinigen.
+2. alle Teile vollständig trocknen.
+3. Kühlakkus vollständig gefroren einsetzen.
+4. gekühltes Nassfutter einfüllen.
+5. Deckel sofort schließen.
+6. Timer prüfen.
+7. Gerät am kühlen Standort aufstellen.
+
+Fülle keine warmen Futterreste aus dem Raum ein.
+
+## Wie lange darf Nassfutter stehen?
+
+Eine feste Stundenangabe ist problematisch.
+
+Entscheidend sind:
+
+- Herstellerhinweise
+- Raumtemperatur
+- Futtertemperatur beim Einfüllen
+- Kühlleistung
+- Futterart
+- Portion
+- Aufstellort
+
+Je wärmer der Raum, desto kürzer die sinnvolle Standzeit.
+
+Im Zweifel gilt: lieber kürzer planen und persönlich kontrollieren.
+
+## Cat Mate C500
+
+Der [Cat Mate C500](/produkt/cat-mate-c500/) kombiniert:
+
+- fünf Fächer
+- Timer
+- Kühlakkus
+- Batteriebetrieb
+- vorbereitete Portionen
+
+Das passt konstruktiv gut zu Nassfutter.
+
+Seine Grenzen:
+
+- keine aktive Kühlung
+- begrenzte Mahlzeitenzahl
+- tägliche Reinigung
+- Akkus müssen erneut eingefroren werden
+- keine Fernsteuerung
+
+## Reinigung
+
+Bei Nassfutter ist Reinigung Teil der Funktion.
+
+Reinige:
+
+- Schalen
+- Deckelunterseite
+- Deckelrand
+- Drehfläche
+- Dichtbereiche
+- Stellen mit verschmiertem Futter
+
+Wichtig:
+
+- keine Futterreste zurücklassen
+- Teile vollständig trocknen
+- Geräteunterteil nur nach Anleitung behandeln
+- keine Feuchtigkeit an Elektronik oder Motor
+
+## Mehrere Katzen
+
+Ein Fachautomat trennt Mahlzeiten nach Zeit, nicht nach Tier.
+
+Bei mehreren Katzen bleibt offen:
+
+- welche Katze zuerst frisst
+- ob Futter getauscht wird
+- ob eine Katze beide Portionen übernimmt
+- ob ein Tier den Zugang blockiert
+
+Bei unterschiedlichem Bedarf sind getrennte Räume oder ein Mikrochip-System meist geeigneter.
+
+Mehr dazu: [Futterautomat für zwei Katzen](/futterautomat-fuer-zwei-katzen/).
+
+## Nassfutter im Urlaub
+
+Ein Nassfutterautomat ersetzt keine Betreuung.
+
+Eine Person muss:
+
+- Reste entfernen
+- Schale reinigen
+- Akkus wechseln
+- neue Portionen einfüllen
+- Geruch und Konsistenz prüfen
+- Tier und Fressverhalten beobachten
+
+Mehr dazu steht im Ratgeber [Futterautomat im Urlaub](/futterautomat-im-urlaub/).
+
+## Wann Trockenfutter-Systeme sinnvoller sind
+
+Vorratsautomaten sind meist praktischer, wenn:
+
+- Trockenfutter vertragen wird
+- viele kleine Mahlzeiten nötig sind
+- App-Steuerung wichtig ist
+- längere Zeitpläne gewünscht sind
+- tägliches Neubefüllen vermieden werden soll
+
+Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/futterautomat-mit-app/) zeigen passende Alternativen.
+
+## Häufige Fehler
+
+| Fehler | Folge | Bessere Lösung |
+|---|---|---|
+| Kühlakku als Kühlschrank ansehen | Standzeit wird überschätzt | kurze Zeitfenster planen |
+| warmes Futter einfüllen | Reserve wird schneller verbraucht | gekühlt einfüllen |
+| Sonne oder warmer Raum | schnelle Erwärmung | kühlen Standort wählen |
+| nur Schale reinigen | Reste an Deckel und Drehfläche | vollständig reinigen |
+| Nassfutter in Vorratsautomat | Hygiene- und Mechanikproblem | Fachautomat nutzen |
+| Urlaub ohne Betreuung | Reste und Akkus bleiben unkontrolliert | persönliche Besuche planen |
+
+## Aktive Kühlung als eigenes System
+
+Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
+
+## Fazit
+
+Für Nassfutter ist ein Fachautomat die richtige Bauart.
+
+Wichtig sind:
+
+- einzeln abgedeckte Portionen
+- vollständig vorbereitete Kühlakkus
+- kurze, realistische Standzeiten
+- kühler Standort
+- tägliche Reinigung
+- persönliche Kontrolle
+
+Der Cat Mate C500 ist ein plausibles Beispiel für dieses Konzept. Er löst die zeitgesteuerte Freigabe, aber nicht die Temperaturkontrolle.
+
+Genau deshalb sollte ein Nassfutterautomat nicht wie ein kleiner Kühlschrank behandelt werden.
