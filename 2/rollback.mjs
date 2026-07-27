@@ -1,35 +1,21 @@
 #!/usr/bin/env node
-
 import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const PATCH_ID = "pfotentechnik-mobile-decision-ux-4.1.0";
+const PATCH_ID = "pfotentechnik-comparison-cta-price-3.3.5";
 const args = process.argv.slice(2);
-const index = args.indexOf("--repo");
+const index = args.indexOf('--repo');
 const repo = path.resolve(index >= 0 ? args[index + 1] : process.cwd());
-const statePointer = path.join(
-  repo,
-  ".patch-backups",
-  `${PATCH_ID}-latest.json`
-);
+const statePointer = path.join(repo, '.patch-backups', `${PATCH_ID}-latest.json`);
 
 async function main() {
-  const state = JSON.parse(await fs.readFile(statePointer, "utf8"));
-
-  for (const entry of state.backups) {
-    await fs.copyFile(entry.backup, entry.target);
-  }
-
+  const state = JSON.parse(await fs.readFile(statePointer, 'utf8'));
+  for (const entry of state.files) await fs.copyFile(entry.backup, entry.file);
   await fs.rm(statePointer, { force: true });
   console.log(`[${PATCH_ID}] Rollback abgeschlossen.`);
 }
-
 main().catch((error) => {
-  console.error(
-    error instanceof Error
-      ? error.stack || error.message
-      : String(error)
-  );
+  console.error(error instanceof Error ? error.stack || error.message : String(error));
   process.exitCode = 1;
 });

@@ -1,33 +1,33 @@
-# PfotenTechnik Mobile Decision UX 4.1.0
+# PfotenTechnik Comparison CTA + Price Polish 3.3.5
 
-Kumulativer Folgepatch für das mobile Produktseitenlayout 4.0.2.
+Kumulativer Folgepatch für die mobile Vergleichsdarstellung.
 
-## Enthalten
+## Ziel
 
-- Frage-Icons für Tier, Tieranzahl, Trockenfutter, Nassfutter, Budget, WLAN und Kamera
-- eigene reduzierte Icons für Katze und Hund
-- keine Icons als Bilddateien, sondern zugängliche Inline-SVGs
-- neutraler Punkt als Strich, negativer Punkt als X, positiver Punkt als Haken
-- 12 Pixel fester Abstand zwischen Statuszeichen und Erklärung
-- kompaktere Fragen bei weiterhin mindestens 44 Pixel Touchhöhe
-- Divider oberhalb der Frage statt einer seitlich weiterlaufenden Legendelinie
-- kontraststärkere Dark-Mode-Flächen
-- größere Schrift in „Ideal für“, Vor-/Nachteilen und Preisnotizen
-- kleine Eyebrows und Metadaten bleiben bewusst kompakt
-- bestehende Entscheidungs- und Alternativenlogik bleibt unverändert
+- Preisblock im Vergleich ruhiger darstellen
+- Preislabel und Betrag sauber ausrichten
+- Statusbadge sinnvoll anbinden
+- CTA-Reihe hochwertiger und konsistenter wirken lassen
+- Primär- und Sekundär-CTA klarer hierarchisieren
+- unter 380 px sauber umbrechen
+
+## Geänderte Datei
+
+```text
+packages/affiliate-core/src/components/comparison/comparison-mobile-price-fix-4.0.1.css
+```
 
 ## Installation
 
-```powershell
-node .\pfotentechnik-mobile-decision-ux-4.1.0\install.mjs --repo C:\hp\Projekt\affiliate-template
-```
+Voraussetzung: `pfotentechnik-mobile-product-layout-4.0.2` ist bereits installiert,
+weil dieser Patch die dort eingeführte CSS-Datei gezielt weiter verfeinert.
 
-Version 4.0.2 sollte bereits installiert sein. Der Installer prüft den
-vorhandenen Komponentenaufbau, erstellt Sicherungen, führt 18 Quellaudits und
-den vollständigen PfotenTechnik-Build aus.
+```powershell
+node .\pfotentechnik-comparison-cta-price-3.3.5\install.mjs --repo C:\hp\Projekt\affiliate-template
+```
 
 ## Rollback
 
 ```powershell
-node .\pfotentechnik-mobile-decision-ux-4.1.0\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+node .\pfotentechnik-comparison-cta-price-3.3.5\rollback.mjs --repo C:\hp\Projekt\affiliate-template
 ```
