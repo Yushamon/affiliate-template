@@ -56,16 +56,23 @@ images:
       alt: Nahaufnahme des integrierten GPS-Trackers und seiner Befestigung am Katzenhalsband
     - src: ../../assets/images/products/tractive-cat-6-mini/gallery-3.webp
       alt: Katze kehrt am Abend mit getragenem GPS-Tracker-Halsband nach Hause zurück
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
 affiliate:
   provider: manufacturer
   label: Beim Hersteller ansehen
   url: https://tractive.com/de/pd/gps-tracker-cat
 rating: 4.5
 score: 91
+
 priceState: "unknown"
+priceUpdated: "2026-07-27T16:17:59.534Z"
 priceAvailable: false
 affiliateAvailable: true
 availability: "unknown"
+availabilityUpdated: "2026-07-27T16:17:59.534Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"

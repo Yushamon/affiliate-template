@@ -60,7 +60,7 @@ price:
   current: 99.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-26T16:56:55.779Z"
+  checkedAt: "2026-07-27T13:29:32.672Z"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
@@ -76,12 +76,14 @@ conversion:
   primaryCtaLabel: "Netzvariante beim Hersteller prüfen"
   secondaryCtaLabel: "Mit der Akkuvariante vergleichen"
   showSecondaryCta: true
+
 priceState: "available"
-priceUpdated: "2026-07-26T16:56:55.779Z"
+priceUpdated: "2026-07-27T13:29:32.672Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityUpdated: "2026-07-26T16:56:55.779Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-27T13:29:32.672Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

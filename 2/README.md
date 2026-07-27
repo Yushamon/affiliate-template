@@ -1,69 +1,43 @@
-# PfotenTechnik Content + UI Polish 4.3.0
+# PfotenTechnik SEO-Preisbereich Workflow 2.0.0
 
-Kumulativer Folgepatch für Vergleichsseiten, Startseite und FAQ.
+Behebt den aktuellen SEO-Preisbereich:
 
-## Änderungen
-
-### Doppelte Vergleichsempfehlungen
-
-Vergleichsseiten besitzen bereits Gewinner-, Empfehlungs- und Szenariokarten.
-Der zusätzliche Markdown-Abschnitt `Unsere Empfehlungen nach Aufgabe` wiederholt
-diese Auswahl. Der Installer entfernt ausschließlich diesen Abschnitt bis zur
-nächsten H2. Die `Schnellentscheidung` bleibt erhalten.
-
-### Neue Note auf der Startseite
-
-Die Empfehlungskarten wechseln von `variant="compact"` zu
-`variant="ring-compact"`. Produktseite, Vergleich und Startseite verwenden
-damit dieselbe visuelle Bewertungssprache.
-
-### Kompaktere FAQ
-
-Geschlossene FAQ-Einträge erhalten:
-
-- 56 bis 58 Pixel Höhe
-- weniger Padding
-- 16 Pixel Radius
-- Chevron rechts
-- keine großen leeren Kartenflächen
-- vollständige Antwort erst im geöffneten Zustand
-
-Das gilt für das allgemeine FAQ-System und das Produktseiten-FAQ.
-
-### Weitere Korrekturen
-
-- mobile Vergleichsseiten erhalten ausreichend Abstand zur Sticky Bar
-- Startseiten-Produktaktion wird als leichte Textaktion mit Pfeil dargestellt
-- Dark Mode und Reduced Motion sind berücksichtigt
-
-## Geänderte Dateien
-
-```text
-apps/pfotentechnik/src/layouts/ProjectLayout.astro
-packages/affiliate-core/src/components/home/HomeSection.astro
-apps/pfotentechnik/src/styles/pfotentechnik-content-ui-polish.css
-apps/pfotentechnik/src/content/comparisons/*.md
-```
-
-Bei Vergleichsdateien werden nur Kapitel mit der exakten Überschrift
-`Unsere Empfehlungen nach Aufgabe` oder `Empfehlungen nach Aufgabe` entfernt.
+- Filter funktionieren wieder sichtbar. Ursache war eine CSS-Regel, die das HTML-Attribut `hidden` überschrieben hat.
+- Preise werden beim ersten Speichern übernommen. Eine Preiseingabe setzt den Preisstatus automatisch auf „vorhanden“.
+- Affiliate- und Händlerlinks können auch ohne Preis gespeichert oder entfernt werden.
+- Links ohne Protokoll werden auf HTTPS normalisiert.
+- Händlername wird aus der URL vorgeschlagen, wenn das Feld leer ist.
+- Produktaktionen bleiben ohne horizontales Scrollen sichtbar.
+- Die Filterleiste bleibt beim Scrollen erreichbar.
+- `Strg + Enter` beziehungsweise `Cmd + Enter` speichert den geöffneten Datensatz.
+- Zusätzliche Tests schützen Filter, Preisstatus und Link-Persistenz.
 
 ## Installation
 
-```powershell
-node .\pfotentechnik-content-ui-polish-4.3.0\install.mjs --repo C:\hp\Projekt\affiliate-template
+Im Root von `affiliate-template` ausführen:
+
+### macOS / Linux
+
+```bash
+node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs
 ```
 
-## Optional ohne Baseline-Build
+### Windows PowerShell
 
 ```powershell
-node .\pfotentechnik-content-ui-polish-4.3.0\install.mjs --repo C:\hp\Projekt\affiliate-template --skip-baseline
+node .\apply-pfotentechnik-seo-price-workflow-2.0.0.mjs
 ```
 
-Der Abschluss-Build wird immer ausgeführt.
+Nur Vorprüfung:
 
-## Rollback
-
-```powershell
-node .\pfotentechnik-content-ui-polish-4.3.0\rollback.mjs --repo C:\hp\Projekt\affiliate-template
+```bash
+node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs --check
 ```
+
+Ohne automatische Tests und Build:
+
+```bash
+node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs --skip-verify
+```
+
+Der Installer legt vor jeder Änderung ein Backup unter `.patch-backups/` an und ist erneut ausführbar.

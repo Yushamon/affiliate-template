@@ -46,9 +46,7 @@ const validateCurrency = (value) => {
 const validateTargetUrl = (value) => {
   const raw = String(value || "").trim();
   if (!raw) return undefined;
-  const normalized = /^[a-z][a-z0-9+.-]*:\/\//i.test(raw) ? raw : "https://" + raw;
-  const parsed = new URL(normalized);
-  if (parsed.protocol === "http:") parsed.protocol = "https:";
+  const parsed = new URL(raw);
   if (parsed.protocol !== "https:") {
     throw new Error("Für Preise und Affiliate-Ziele sind nur HTTPS-URLs erlaubt.");
   }
@@ -164,25 +162,31 @@ export async function checkAllProductPrices({ limit = 100, includeInactive = fal
 }
 
 export async function setManualProductPrice(input = {}) {
-  // PT_MANUAL_PRICE_STATE_NORMALIZATION_2_0_1
   const slug = validateSlug(input.slug);
-  const document = await findDocument(slug);
-  const data = document.data ?? {};
-  const now = new Date().toISOString();
+  const priceState = PRICE_STATE_VALUES.includes(input.priceState) ? input.priceState : "available";
   const availability = AVAILABILITY_VALUES.includes(input.availability) ? input.availability : undefined;
   const availabilityReason = String(input.availabilityReason || "").trim().slice(0, 500);
+  const document = await findDocument(slug);
+  const now = new Date().toISOString();
 
-  const rawCurrent = String(input.current ?? "").trim();
-  const current = rawCurrent ? parseLocalizedPrice(rawCurrent) : null;
-  if (rawCurrent && current == null) {
-    throw new Error("Der manuelle Preis ist ungültig. Erlaubt sind zum Beispiel 29,99 oder 29.99.");
+  if (priceState !== "available" && priceState !== "stale") {
+    const persisted = await updateProductOperations(document.file, {
+      priceState,
+      availability,
+      availabilityReason,
+      availabilityUpdated: availability ? now : undefined,
+      now
+    });
+    return resultFromDocument(persisted, { method: "manual-status", ctaUpdated: false });
   }
-  const hasCurrent = current != null;
-  const requestedPriceState = PRICE_STATE_VALUES.includes(input.priceState) ? input.priceState : undefined;
-  const priceState = hasCurrent
-    ? requestedPriceState === "stale" ? "stale" : "available"
-    : requestedPriceState || data.priceState || (data.price?.current == null ? "unknown" : "available");
 
+  const current = parseLocalizedPrice(input.current);
+  if (current == null) {
+    throw new Error("Der manuelle Preis fehlt oder ist ungültig. Leere Eingaben werden nicht als 0 € gespeichert.");
+  }
+
+  const currency = validateCurrency(input.currency);
+  const data = document.data ?? {};
   const targetUrlProvided = Object.prototype.hasOwnProperty.call(input, "targetUrl") ||
     Object.prototype.hasOwnProperty.call(input, "affiliateUrl");
   const enteredUrl = validateTargetUrl(input.targetUrl ?? input.affiliateUrl);
@@ -192,42 +196,17 @@ export async function setManualProductPrice(input = {}) {
 
   const sourceLabel =
     String(input.sourceLabel || "").trim().slice(0, 120) ||
-    (targetUrl ? hostnameLabel(targetUrl) : "") ||
     (data.price?.source?.type === "manual" ? String(data.price.source.label || "").trim() : "") ||
     "Manuell im SEO Cockpit";
-  const comparisonText = String(input.comparisonText || "").trim().slice(0, 360);
+  const comparisonText = String(input.comparisonText || "").trim().slice(0, 360) || undefined;
 
-  if (!hasCurrent) {
-    if (["available", "stale"].includes(priceState) && data.price?.current == null) {
-      throw new Error("Für den Status Preis vorhanden oder veraltet muss ein Preis eingegeben werden.");
-    }
-    const patch = {
-      priceState,
-      availability,
-      availabilityReason,
-      availabilityUpdated: availability ? now : undefined,
-      sourceLabel,
-      comparisonText,
-      now
-    };
-    if (targetUrlProvided) patch.affiliateUrl = targetUrl;
-    const persisted = await updateProductOperations(document.file, patch);
-    return resultFromDocument(persisted, {
-      method: "manual-status",
-      targetUrl: targetUrl ?? null,
-      affiliateUrl: targetUrl ?? null,
-      ctaUpdated: targetUrlProvided
-    });
-  }
-
-  const currency = validateCurrency(input.currency);
   const persisted = await updateProductPrice(
     document.file,
     {
       current,
       currency,
       status: "unknown",
-      comparisonText: comparisonText || undefined,
+      comparisonText,
       checkedAt: now,
       source: {
         id: "manual",
@@ -254,7 +233,7 @@ export async function setManualProductPrice(input = {}) {
     source: sourceLabel,
     targetUrl: targetUrl ?? null,
     affiliateUrl: targetUrl ?? null,
-    ctaUpdated: targetUrlProvided,
+    ctaUpdated: Boolean(targetUrl),
     method: "manual"
   });
 }

@@ -296,45 +296,6 @@ export async function updateProductOperations(file, patch = {}) {
     const nextData = { ...data };
     let price = cleanPrice(data.price ?? { current: null, currency: "EUR", status: "unknown" });
 
-    // PT_AFFILIATE_ONLY_UPDATE_2_0_1: CTA-Ziel unabhängig vom Preis pflegen.
-    const hasAffiliatePatch = Object.prototype.hasOwnProperty.call(patch, "affiliateUrl");
-    const patchedAffiliateUrl = hasAffiliatePatch ? normalizeHttpsUrl(patch.affiliateUrl) : undefined;
-    let affiliate = data.affiliate;
-    let removeAffiliate = false;
-
-    if (hasAffiliatePatch) {
-      if (patchedAffiliateUrl) {
-        affiliate = canonicalAffiliateFrom(data, patchedAffiliateUrl, patch.sourceLabel || data.price?.source?.label);
-        nextData.affiliate = affiliate;
-      } else {
-        affiliate = undefined;
-        removeAffiliate = true;
-        delete nextData.affiliate;
-      }
-    }
-
-    if (patch.sourceLabel !== undefined) {
-      const sourceLabel = String(patch.sourceLabel || "").trim().slice(0, 120);
-      if (sourceLabel) {
-        price = {
-          ...price,
-          source: {
-            ...(price.source ?? {}),
-            id: price.source?.id || "manual",
-            label: sourceLabel,
-            type: price.source?.type || "manual"
-          }
-        };
-      }
-    }
-
-    if (patch.comparisonText !== undefined) {
-      const comparisonText = String(patch.comparisonText || "").trim().slice(0, 360);
-      price = { ...price };
-      if (comparisonText) price.comparisonText = comparisonText;
-      else delete price.comparisonText;
-    }
-
     if (patch.priceState !== undefined) {
       if (!PRICE_STATE_VALUES.includes(patch.priceState)) throw new Error("Unbekannter Preisstatus.");
       nextData.priceState = patch.priceState;
@@ -367,18 +328,8 @@ export async function updateProductOperations(file, patch = {}) {
       delete nextData.editorialStatus;
     }
 
-    const operationData = { ...nextData, price };
-    if (affiliate) operationData.affiliate = affiliate;
-    else delete operationData.affiliate;
-    const operationFields = operationFieldsFrom(operationData, { now });
-
-    return {
-      frontmatter,
-      price,
-      ...(hasAffiliatePatch ? { affiliate, removeAffiliate } : {}),
-      operationFields,
-      now
-    };
+    const operationFields = operationFieldsFrom({ ...nextData, price }, { now });
+    return { frontmatter, price, operationFields, now };
   });
 }
 

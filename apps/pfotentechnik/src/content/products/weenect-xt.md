@@ -82,10 +82,10 @@ images:
       alt: "GPS-Ortung in Stadt, Wald und offenem Gelände"
 
 price:
-  current: 49.99
+  current: 64.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-26T16:57:19.953Z"
+  checkedAt: "2026-07-27T13:30:01.383Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -100,11 +100,12 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-07-26T16:57:19.953Z"
+priceUpdated: "2026-07-27T13:30:01.383Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityUpdated: "2026-07-26T16:57:19.953Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-27T13:30:01.383Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

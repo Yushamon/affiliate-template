@@ -172,25 +172,3 @@ test("SEO-Cockpit übernimmt die Serverantwort ohne Reload und speichert in eine
   assert.equal((saveBlock.match(/\/api\/admin\/products\/operations/g) || []).length, 0);
   assert.match(saveBlock, /applyServerResult\(result\)/);
 });
-
-
-// PT_SEO_PRICE_WORKFLOW_TEST_2_0_1
- test("Affiliate-Ziel lässt sich ohne vorhandenen Preis speichern", async (t) => {
-  const { dir, file } = await tempProduct();
-  t.after(() => fs.rm(dir, { recursive: true, force: true }));
-  const persisted = await updateProductOperations(file, {
-    priceState: "unknown",
-    affiliateUrl: "https://example.com/deal",
-    sourceLabel: "example.com"
-  });
-  assert.equal(persisted.data.price.current, null);
-  assert.equal(persisted.data.affiliate.url, "https://example.com/deal");
-  assert.equal(persisted.data.affiliateAvailable, true);
-});
-
-test("SEO-Preisfilter und sichtbare Aktionen sind gegen CSS-Regression geschützt", async () => {
-  const source = await fs.readFile(new URL("../src/pages/admin/seo/prices.astro", import.meta.url), "utf8");
-  assert.match(source, /PT_SEO_PRICE_WORKFLOW_2_0_1/);
-  assert.match(source, /\.ops-table article\[hidden\][\s\S]*?display:\s*none\s*!important/);
-  assert.match(source, /grid-template-areas:\s*"product price affiliate availability actions"/);
-});
