@@ -86,15 +86,12 @@
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",
     "test:media-center": "node --test test/media-center.test.mjs",
     "media:audit": "node scripts/media-center/audit.mjs",
-<<<<<<< HEAD
     "product-operations:migrate": "node scripts/product-operations/migrate.mjs --write",
     "product-operations:migrate:check": "node scripts/product-operations/migrate.mjs",
     "test:product-operations": "node --test test/product-operations.test.mjs",
     "audit:product-operations": "node scripts/product-operations/audit.mjs",
-    "audit:product-operations:strict": "node scripts/product-operations/audit.mjs --strict"
-=======
+    "audit:product-operations:strict": "node scripts/product-operations/audit.mjs --strict",
     "comparison:refactor:audit": "node scripts/comparison-platform/refactor-audit.mjs"
->>>>>>> refactor/comparison-platform-premium
   },
   "dependencies": {
     "@affiliate-core/core": "*",
