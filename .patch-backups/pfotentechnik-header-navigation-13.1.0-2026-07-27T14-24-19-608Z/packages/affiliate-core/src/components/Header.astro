@@ -1,0 +1,147 @@
+---
+interface Props {
+  projectName: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
+}
+
+const {
+  projectName,
+  links
+} = Astro.props as Props;
+---
+
+<header class="site-header-v2">
+  <div class="header-container-v2">
+    <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-mark__cut"></span>
+        <span class="brand-mark__dot"></span>
+      </span>
+      <span class="brand-name">{projectName}</span>
+    </a>
+
+    <button
+      class="pt-button nav-toggle-button"
+      type="button"
+      aria-label="Navigation öffnen"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      data-nav-toggle
+    >
+      <svg
+        class="nav-toggle__glyph"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M5 7h14M5 12h14M5 17h14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      <span class="nav-toggle__sr">Menü</span>
+    </button>
+
+    <nav
+      id="main-navigation"
+      class="main-nav-v2"
+      aria-label="Hauptnavigation"
+      data-main-navigation
+    >
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+
+  </div>
+</header>
+
+<script>
+  const initializeNavigation = () => {
+    document.querySelectorAll<HTMLButtonElement>("[data-nav-toggle]").forEach((button) => {
+      if (button.dataset.initialized === "true") return;
+
+      const navigationId = button.getAttribute("aria-controls");
+      const navigation = navigationId ? document.getElementById(navigationId) : null;
+      if (!navigation) return;
+
+      const setOpen = (open: boolean) => {
+        button.setAttribute("aria-expanded", String(open));
+        button.setAttribute("aria-label", open ? "Navigation schließen" : "Navigation öffnen");
+        navigation.toggleAttribute("data-open", open);
+      };
+
+      button.dataset.initialized = "true";
+      button.addEventListener("click", () => {
+        setOpen(button.getAttribute("aria-expanded") !== "true");
+      });
+
+      navigation.addEventListener("click", (event) => {
+        if ((event.target as HTMLElement).closest("a")) setOpen(false);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+          setOpen(false);
+          button.focus();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        const target = event.target as Node;
+        if (!button.contains(target) && !navigation.contains(target)) setOpen(false);
+      });
+    });
+  };
+
+  initializeNavigation();
+  document.addEventListener("astro:page-load", initializeNavigation);
+</script>
+
+<!-- PT_HEADER_RECOVERY_12_1_1_START -->
+<style is:global>
+  .site-header-v2 .header-container-v2 {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .site-header-v2 .nav-toggle-button {
+    display: inline-grid;
+    inline-size: 3rem;
+    block-size: 3rem;
+    min-inline-size: 3rem;
+    min-block-size: 3rem;
+    place-items: center;
+    padding: 0;
+    border-radius: var(--pt-radius-lg);
+  }
+
+  .site-header-v2 .nav-toggle__glyph {
+    display: block;
+    inline-size: 1.45rem;
+    block-size: 1.45rem;
+  }
+
+  .site-header-v2 .nav-toggle__sr {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 64rem) {
+    .site-header-v2 .header-container-v2 {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+  }
+</style>
+<!-- PT_HEADER_RECOVERY_12_1_1_END -->

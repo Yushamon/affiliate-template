@@ -36,42 +36,12 @@ export const projectConfig = {
   defaultOgImage: "/images/project/pfotentechnik/feeder-hero.webp",
   categoryPath: "/smarte-gadgets-fuer-hunde-und-katzen/",
   headerLinks: [
-    {
-      label: "Vergleiche",
-      href: "/vergleiche/",
-      mobileGroup: "Orientierung"
-    },
-    {
-      label: "Futterautomaten",
-      href: "/smarte-futterautomaten/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "Trinkbrunnen",
-      href: "/trinkbrunnen/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "GPS-Tracker",
-      href: "/gps-tracker/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "Wissen & Ratgeber",
-      href: "/wissen/",
-      mobileGroup: "Mehr entdecken"
-    },
-    {
-      label: "Hersteller",
-      href: "/hersteller/",
-      mobileGroup: "Mehr entdecken"
-    },
-    {
-      label: "Kaufberatung",
-      href: "/kaufberatung/",
-      mobileGroup: "Orientierung",
-      mobileEmphasis: true
-    }
+    { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
+    { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
+    { label: "GPS-Tracker", href: "/gps-tracker/" },
+    { label: "Vergleiche", href: "/vergleiche/" },
+    { label: "Hersteller", href: "/hersteller/" },
+    { label: "Wissen", href: "/wissen/" },
   ],
   home: {
     seo: {

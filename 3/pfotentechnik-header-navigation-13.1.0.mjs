@@ -1,4 +1,190 @@
----
+#!/usr/bin/env node
+import fs from "node:fs";
+import path from "node:path";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+
+const NAME = "pfotentechnik-header-navigation-13.1.0";
+const args = new Set(process.argv.slice(2));
+const CHECK_ONLY = args.has("--check") || args.has("--dry-run");
+const NO_BUILD = args.has("--no-build");
+const COMMIT = args.has("--commit");
+
+const log = (message) => console.log(`[${NAME}] ${message}`);
+const fail = (message) => {
+  console.error(`[${NAME}] FEHLER: ${message}`);
+  process.exit(1);
+};
+
+function findRoot(start) {
+  let current = path.resolve(start);
+
+  while (true) {
+    if (
+      fs.existsSync(path.join(current, "package.json")) &&
+      fs.existsSync(path.join(current, "apps", "pfotentechnik", "package.json")) &&
+      fs.existsSync(path.join(current, "packages", "affiliate-core"))
+    ) {
+      return current;
+    }
+
+    const parent = path.dirname(current);
+    if (parent === current) return null;
+    current = parent;
+  }
+}
+
+const root =
+  findRoot(process.cwd()) ||
+  findRoot(path.dirname(fileURLToPath(import.meta.url)));
+
+if (!root) {
+  fail("Repository-Root nicht gefunden. Starte den Installer im affiliate-template-Repository.");
+}
+
+const files = {
+  header: path.join(root, "packages/affiliate-core/src/components/Header.astro"),
+  affiliateLayout: path.join(root, "packages/affiliate-core/src/layouts/AffiliateLayout.astro"),
+  projectLayout: path.join(root, "apps/pfotentechnik/src/layouts/ProjectLayout.astro"),
+  projectConfig: path.join(root, "apps/pfotentechnik/src/project.config.ts"),
+  test: path.join(root, "apps/pfotentechnik/test/header-navigation-13.1.0.test.mjs"),
+  report: path.join(
+    root,
+    "apps/pfotentechnik/reports/design-system/header-navigation-13.1.0.md"
+  )
+};
+
+for (const [key, file] of Object.entries(files)) {
+  if (key === "test" || key === "report") continue;
+  if (!fs.existsSync(file)) {
+    fail(`Pflichtdatei fehlt: ${path.relative(root, file)}`);
+  }
+}
+
+const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+const backupRoot = path.join(root, ".patch-backups", `${NAME}-${timestamp}`);
+const relative = (file) => path.relative(root, file).split(path.sep).join("/");
+const read = (file) => fs.readFileSync(file, "utf8");
+const ensureDir = (dir) => fs.mkdirSync(dir, { recursive: true });
+
+function backup(file) {
+  if (CHECK_ONLY || !fs.existsSync(file)) return;
+  const target = path.join(backupRoot, relative(file));
+  ensureDir(path.dirname(target));
+  fs.copyFileSync(file, target);
+}
+
+function write(file, content) {
+  const before = fs.existsSync(file) ? read(file) : "";
+  if (before === content) return false;
+
+  if (!CHECK_ONLY) {
+    backup(file);
+    ensureDir(path.dirname(file));
+    fs.writeFileSync(file, content);
+  }
+
+  return true;
+}
+
+function replaceArrayProperty(content, propertyName, replacement) {
+  const marker = `${propertyName}:`;
+  const propertyIndex = content.indexOf(marker);
+
+  if (propertyIndex === -1) {
+    fail(`Eigenschaft nicht gefunden: ${propertyName}`);
+  }
+
+  const lineStart = content.lastIndexOf("\n", propertyIndex) + 1;
+  const arrayStart = content.indexOf("[", propertyIndex);
+
+  if (arrayStart === -1) {
+    fail(`Array-Start nicht gefunden: ${propertyName}`);
+  }
+
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+  let lineComment = false;
+  let blockComment = false;
+  let arrayEnd = -1;
+
+  for (let index = arrayStart; index < content.length; index += 1) {
+    const char = content[index];
+    const next = content[index + 1];
+
+    if (lineComment) {
+      if (char === "\n") lineComment = false;
+      continue;
+    }
+
+    if (blockComment) {
+      if (char === "*" && next === "/") {
+        blockComment = false;
+        index += 1;
+      }
+      continue;
+    }
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+
+      if (char === "\\") {
+        escaped = true;
+        continue;
+      }
+
+      if (char === quote) quote = null;
+      continue;
+    }
+
+    if (char === "/" && next === "/") {
+      lineComment = true;
+      index += 1;
+      continue;
+    }
+
+    if (char === "/" && next === "*") {
+      blockComment = true;
+      index += 1;
+      continue;
+    }
+
+    if (char === '"' || char === "'" || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "[") depth += 1;
+    if (char === "]") {
+      depth -= 1;
+      if (depth === 0) {
+        arrayEnd = index;
+        break;
+      }
+    }
+  }
+
+  if (arrayEnd === -1) {
+    fail(`Array-Ende nicht gefunden: ${propertyName}`);
+  }
+
+  return content.slice(0, lineStart) + replacement + content.slice(arrayEnd + 1);
+}
+
+function run(command, commandArgs) {
+  const result = spawnSync(command, commandArgs, {
+    cwd: root,
+    stdio: "inherit",
+    shell: false
+  });
+  return result.status === 0;
+}
+
+const canonicalHeader = `---
 interface HeaderLink {
   label: string;
   href: string;
@@ -18,10 +204,10 @@ const {
 
 const normalizePath = (value: string) => {
   const pathname = String(value || "/").split(/[?#]/, 1)[0] || "/";
-  const withLeadingSlash = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  const withLeadingSlash = pathname.startsWith("/") ? pathname : \`/\${pathname}\`;
   return withLeadingSlash === "/" || withLeadingSlash.endsWith("/")
     ? withLeadingSlash
-    : `${withLeadingSlash}/`;
+    : \`\${withLeadingSlash}/\`;
 };
 
 const currentPath = normalizePath(Astro.url.pathname);
@@ -51,7 +237,7 @@ const mobileGroups = hasExplicitMobileGroups
 
 <header class="site-header-v2" data-site-header>
   <div class="header-container-v2">
-    <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
+    <a href="/" class="brand-lockup" aria-label={\`\${projectName} – Startseite\`}>
       <span class="brand-mark" aria-hidden="true">
         <span class="brand-mark__cut"></span>
         <span class="brand-mark__dot"></span>
@@ -434,3 +620,222 @@ const mobileGroups = hasExplicitMobileGroups
     box-shadow: 0 24px 64px rgba(0, 0, 0, .38) !important;
   }
 </style>
+`;
+
+let affiliateLayout = read(files.affiliateLayout);
+affiliateLayout = affiliateLayout.replace(
+  /headerLinks\?: Array<\{\s*label: string;\s*href: string;\s*\}>;/m,
+  `headerLinks?: Array<{
+    label: string;
+    href: string;
+    mobileGroup?: "Orientierung" | "Produktwelten" | "Mehr entdecken";
+    mobileEmphasis?: boolean;
+  }>;`
+);
+
+let projectLayout = read(files.projectLayout);
+projectLayout = projectLayout
+  .replace(
+    /import\s+\{\s*getNavigationItems\s*\}\s+from\s+["']@app\/domain\/content["'];?\s*\n/,
+    ""
+  )
+  .replace(/\nconst headerLinks = await getNavigationItems\(\);\s*/, "\n")
+  .replace(/\n\s*headerLinks=\{headerLinks\}\s*/, "\n");
+
+if (/getNavigationItems|headerLinks=\{headerLinks\}/.test(projectLayout)) {
+  fail("ProjectLayout überschreibt die konfigurierte Hauptnavigation weiterhin.");
+}
+
+const canonicalHeaderLinks = `  headerLinks: [
+    {
+      label: "Vergleiche",
+      href: "/vergleiche/",
+      mobileGroup: "Orientierung"
+    },
+    {
+      label: "Futterautomaten",
+      href: "/smarte-futterautomaten/",
+      mobileGroup: "Produktwelten"
+    },
+    {
+      label: "Trinkbrunnen",
+      href: "/trinkbrunnen/",
+      mobileGroup: "Produktwelten"
+    },
+    {
+      label: "GPS-Tracker",
+      href: "/gps-tracker/",
+      mobileGroup: "Produktwelten"
+    },
+    {
+      label: "Wissen & Ratgeber",
+      href: "/wissen/",
+      mobileGroup: "Mehr entdecken"
+    },
+    {
+      label: "Hersteller",
+      href: "/hersteller/",
+      mobileGroup: "Mehr entdecken"
+    },
+    {
+      label: "Kaufberatung",
+      href: "/kaufberatung/",
+      mobileGroup: "Orientierung",
+      mobileEmphasis: true
+    }
+  ]`;
+
+let projectConfig = read(files.projectConfig);
+projectConfig = replaceArrayProperty(
+  projectConfig,
+  "headerLinks",
+  canonicalHeaderLinks
+);
+
+const testSource = `import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const repoRoot = path.resolve(appRoot, "..", "..");
+const read = (relative) => fs.readFile(path.join(repoRoot, relative), "utf8");
+
+test("PfotenTechnik uses the curated project navigation", async () => {
+  const projectLayout = await read("apps/pfotentechnik/src/layouts/ProjectLayout.astro");
+  const projectConfig = await read("apps/pfotentechnik/src/project.config.ts");
+
+  assert.doesNotMatch(projectLayout, /getNavigationItems|headerLinks=\\{headerLinks\\}/);
+  assert.match(projectConfig, /label: "Vergleiche"[\\s\\S]*href: "\\/vergleiche\\/"/);
+  assert.match(projectConfig, /label: "Kaufberatung"[\\s\\S]*href: "\\/kaufberatung\\/"/);
+  assert.match(projectConfig, /mobileGroup: "Orientierung"/);
+  assert.match(projectConfig, /mobileGroup: "Produktwelten"/);
+  assert.match(projectConfig, /mobileGroup: "Mehr entdecken"/);
+});
+
+test("burger button renders exactly one icon system", async () => {
+  const header = await read("packages/affiliate-core/src/components/Header.astro");
+
+  assert.doesNotMatch(header, /class="pt-button nav-toggle-button"/);
+  assert.match(header, /nav-toggle__icon--menu/);
+  assert.match(header, /nav-toggle__icon--close/);
+  assert.match(header, /\\.nav-toggle-button::before,[\\s\\S]*content: none !important/);
+});
+
+test("mobile menu is grouped and accessible", async () => {
+  const header = await read("packages/affiliate-core/src/components/Header.astro");
+
+  assert.match(header, /main-nav-v2__group-title/);
+  assert.match(header, /aria-current=/);
+  assert.match(header, /Navigation schließen/);
+  assert.match(header, /event\\.key === "Escape"/);
+  assert.match(header, /max-height: calc\\(100dvh/);
+});
+`;
+
+const changed = {
+  header: write(files.header, canonicalHeader),
+  affiliateLayout: write(files.affiliateLayout, affiliateLayout),
+  projectLayout: write(files.projectLayout, projectLayout),
+  projectConfig: write(files.projectConfig, projectConfig),
+  test: write(files.test, testSource)
+};
+
+const changedFiles = Object.entries(changed)
+  .filter(([, didChange]) => didChange)
+  .map(([key]) => relative(files[key]));
+
+const publicChecks = [
+  ["Vergleiche-Link", /href:\s*"\/vergleiche\/"/, projectConfig],
+  ["Kaufberatung-Link", /href:\s*"\/kaufberatung\/"/, projectConfig],
+  ["Gruppiertes Mobilmenü", /main-nav-v2__group-title/, canonicalHeader],
+  ["Pseudo-Icon deaktiviert", /content: none !important/, canonicalHeader],
+  ["Einzelnes SVG-System", /nav-toggle__icon--menu[\s\S]*nav-toggle__icon--close/, canonicalHeader]
+];
+
+for (const [label, pattern, content] of publicChecks) {
+  if (!pattern.test(content)) fail(`Validierung fehlgeschlagen: ${label}`);
+}
+
+const report = `# Header Navigation 13.1.0
+
+## Behoben
+
+- doppeltes Burger-Icon entfernt
+- SVG-Menü- und Schließen-Zustand sauber getrennt
+- dynamische Navigation aus Content-Frontmatter im ProjectLayout beendet
+- projectConfig ist wieder die verlässliche Quelle der Hauptnavigation
+- Vergleiche und Kaufberatung ergänzt
+- mobile Navigation in Orientierung, Produktwelten und Mehr entdecken gegliedert
+- aktiver Menüpunkt, Escape, Outside-Click und Viewport-Wechsel berücksichtigt
+- mobile Menüfläche scrollbar und Dark-Mode-fähig
+- Kaufberatung im Mobilmenü dezent hervorgehoben, ohne Header-CTA
+
+## Desktop-Reihenfolge
+
+1. Vergleiche
+2. Futterautomaten
+3. Trinkbrunnen
+4. GPS-Tracker
+5. Wissen & Ratgeber
+6. Hersteller
+7. Kaufberatung
+
+## Geänderte Dateien
+
+${changedFiles.length > 0 ? changedFiles.map((file) => `- ${file}`).join("\n") : "- keine, Stand bereits aktuell"}
+`;
+
+if (CHECK_ONLY) {
+  log("Check erfolgreich. Es wurde nichts verändert.");
+  if (changedFiles.length > 0) {
+    log("Würde ändern:");
+    for (const file of changedFiles) log(`- ${file}`);
+  } else {
+    log("Der Stand ist bereits aktuell.");
+  }
+  process.exit(0);
+}
+
+ensureDir(path.dirname(files.report));
+fs.writeFileSync(files.report, report);
+
+log(`Backups: ${relative(backupRoot)}`);
+log(`Report: ${relative(files.report)}`);
+
+if (!run("node", ["--test", relative(files.test)])) {
+  fail("Header-Navigationstest fehlgeschlagen.");
+}
+
+if (!NO_BUILD && !run("npm", ["run", "build:pfotentechnik"])) {
+  fail("PfotenTechnik-Build fehlgeschlagen. Änderungen und Backups bleiben zur Prüfung erhalten.");
+}
+
+if (COMMIT) {
+  const status = spawnSync("git", ["status", "--porcelain"], {
+    cwd: root,
+    encoding: "utf8"
+  });
+
+  if (status.status !== 0) fail("git status fehlgeschlagen.");
+
+  if (status.stdout.trim()) {
+    const filesToAdd = [...changedFiles, relative(files.report)];
+    if (!run("git", ["add", ...filesToAdd])) fail("git add fehlgeschlagen.");
+    if (
+      !run("git", [
+        "commit",
+        "-m",
+        "fix(pfotentechnik): clarify mobile navigation"
+      ])
+    ) {
+      fail("Commit fehlgeschlagen.");
+    }
+    log("Lokal committed.");
+  } else {
+    log("Keine offenen Änderungen.");
+  }
+}
+
+log("Header Navigation 13.1.0 erfolgreich abgeschlossen.");
