@@ -21,6 +21,75 @@ const questionCount = usesFoodQuestions ? 7 : 5;
 const questionCountLabel = questionCount === 7 ? "Sieben" : "Fünf";
 const serializedProfile = JSON.stringify(profile).replaceAll("<", "\\u003c");
 const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u003c");
+
+const questionIcons = {
+  animal: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7.2 11.1c1.3-1.1 2.9-1.7 4.8-1.7s3.5.6 4.8 1.7c1.2 1 1.9 2.3 1.9 3.7 0 2.4-2.2 4.2-5 4.2-.7 0-1.2-.2-1.7-.5-.5.3-1 .5-1.7.5-2.8 0-5-1.8-5-4.2 0-1.4.7-2.7 1.9-3.7Z"/>
+      <circle cx="6.2" cy="7.1" r="2.1"/>
+      <circle cx="10.1" cy="5.3" r="2.1"/>
+      <circle cx="13.9" cy="5.3" r="2.1"/>
+      <circle cx="17.8" cy="7.1" r="2.1"/>
+    </svg>`,
+  animalCount: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="8" cy="8" r="3"/>
+      <circle cx="16.5" cy="9" r="2.5"/>
+      <path d="M3.5 19c.3-3.5 2-5.5 4.5-5.5s4.2 2 4.5 5.5"/>
+      <path d="M13 18.5c.3-2.8 1.5-4.4 3.5-4.4s3.2 1.6 3.5 4.4"/>
+    </svg>`,
+  dryFood: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 11h16l-1.5 7H5.5L4 11Z"/>
+      <path d="M7 11c.5-2.2 2.1-3.5 5-3.5s4.5 1.3 5 3.5"/>
+      <circle cx="9" cy="9" r="1"/>
+      <circle cx="12" cy="8" r="1"/>
+      <circle cx="15" cy="9" r="1"/>
+    </svg>`,
+  wetFood: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 12h14l-1.3 6H6.3L5 12Z"/>
+      <path d="M8 12c.5-1.8 1.8-2.8 4-2.8s3.5 1 4 2.8"/>
+      <path d="M12 3.8c1.5 2 2.3 3.3 2.3 4.2A2.3 2.3 0 0 1 12 10.3 2.3 2.3 0 0 1 9.7 8c0-.9.8-2.2 2.3-4.2Z"/>
+    </svg>`,
+  budget: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="8.5"/>
+      <path d="M15.5 8.2a4.2 4.2 0 0 0-2.7-.9c-2.2 0-3.8 1.7-3.8 4.7s1.6 4.7 3.8 4.7c1 0 1.9-.3 2.7-.9"/>
+      <path d="M7.8 10.5h6.1M7.8 13.5h5.6"/>
+    </svg>`,
+  wifi: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3.5 9a13.4 13.4 0 0 1 17 0"/>
+      <path d="M6.7 12.3a8.6 8.6 0 0 1 10.6 0"/>
+      <path d="M9.8 15.6a3.8 3.8 0 0 1 4.4 0"/>
+      <circle cx="12" cy="19" r="1"/>
+    </svg>`,
+  camera: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 8.5h3l1.4-2h7.2l1.4 2h3v10H4v-10Z"/>
+      <circle cx="12" cy="13.5" r="3.2"/>
+    </svg>`
+} as const;
+
+const optionIcons = {
+  cat: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.5 8 5 4.5l4 2A8 8 0 0 1 12 6c1 0 2 .2 3 .6l4-2L17.5 8c1 1.2 1.5 2.8 1.5 4.5 0 4-3.1 6.5-7 6.5s-7-2.5-7-6.5C5 10.8 5.5 9.2 6.5 8Z"/>
+      <circle cx="9.3" cy="12" r=".8"/>
+      <circle cx="14.7" cy="12" r=".8"/>
+      <path d="M10 15c1.2.8 2.8.8 4 0"/>
+    </svg>`,
+  dog: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 7 3.5 5.5 4.5 11 7 12"/>
+      <path d="m17 7 3.5-1.5-1 5.5-2.5 1"/>
+      <path d="M7 7c1.4-1 3-1.5 5-1.5S15.6 6 17 7v6c0 3.5-2 6-5 6s-5-2.5-5-6V7Z"/>
+      <circle cx="9.5" cy="11.5" r=".8"/>
+      <circle cx="14.5" cy="11.5" r=".8"/>
+      <path d="M10.5 15h3L12 16.5 10.5 15Z"/>
+    </svg>`
+} as const;
 ---
 
 <section class="decision" aria-labelledby="decision-title" data-decision-assistant>
@@ -32,53 +101,96 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
 
   <form class="decision__form" data-decision-form>
     <fieldset data-question="animal">
-      <legend>Für welches Tier?</legend>
-      <label><input type="radio" name="animal" value="cat" /> Katze</label>
-      <label><input type="radio" name="animal" value="dog" /> Hund</label>
+      <legend>
+        <span class="decision__legend">
+          <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.animal}></span>
+          <span>Für welches Tier?</span>
+        </span>
+      </legend>
+      <label>
+        <input type="radio" name="animal" value="cat" />
+        <span class="decision__option-icon" aria-hidden="true" set:html={optionIcons.cat}></span>
+        <span>Katze</span>
+      </label>
+      <label>
+        <input type="radio" name="animal" value="dog" />
+        <span class="decision__option-icon" aria-hidden="true" set:html={optionIcons.dog}></span>
+        <span>Hund</span>
+      </label>
     </fieldset>
 
     <fieldset data-question="animalCount">
-      <legend>Wie viele Tiere nutzen das Produkt?</legend>
-      <label><input type="radio" name="animalCount" value="1" /> Ein Tier</label>
-      <label><input type="radio" name="animalCount" value="2" /> Zwei Tiere</label>
-      <label><input type="radio" name="animalCount" value="3" /> Drei oder mehr</label>
+      <legend>
+        <span class="decision__legend">
+          <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.animalCount}></span>
+          <span>Wie viele Tiere nutzen das Produkt?</span>
+        </span>
+      </legend>
+      <label><input type="radio" name="animalCount" value="1" /><span>Ein Tier</span></label>
+      <label><input type="radio" name="animalCount" value="2" /><span>Zwei Tiere</span></label>
+      <label><input type="radio" name="animalCount" value="3" /><span>Drei oder mehr</span></label>
     </fieldset>
 
     {usesFoodQuestions && (
       <>
         <fieldset data-question="dryFood">
-          <legend>Trockenfutter?</legend>
-          <label><input type="radio" name="dryFood" value="yes" /> Ja</label>
-          <label><input type="radio" name="dryFood" value="no" /> Nein</label>
+          <legend>
+            <span class="decision__legend">
+              <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.dryFood}></span>
+              <span>Trockenfutter?</span>
+            </span>
+          </legend>
+          <label><input type="radio" name="dryFood" value="yes" /><span>Ja</span></label>
+          <label><input type="radio" name="dryFood" value="no" /><span>Nein</span></label>
         </fieldset>
 
         <fieldset data-question="wetFood">
-          <legend>Nassfutter?</legend>
-          <label><input type="radio" name="wetFood" value="yes" /> Ja</label>
-          <label><input type="radio" name="wetFood" value="no" /> Nein</label>
+          <legend>
+            <span class="decision__legend">
+              <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.wetFood}></span>
+              <span>Nassfutter?</span>
+            </span>
+          </legend>
+          <label><input type="radio" name="wetFood" value="yes" /><span>Ja</span></label>
+          <label><input type="radio" name="wetFood" value="no" /><span>Nein</span></label>
         </fieldset>
       </>
     )}
 
     <fieldset data-question="budget">
-      <legend>Welches Budget passt?</legend>
-      <label><input type="radio" name="budget" value="budget" /> Preisbewusst</label>
-      <label><input type="radio" name="budget" value="midrange" /> Mittelklasse</label>
-      <label><input type="radio" name="budget" value="premium" /> Premium</label>
+      <legend>
+        <span class="decision__legend">
+          <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.budget}></span>
+          <span>Welches Budget passt?</span>
+        </span>
+      </legend>
+      <label><input type="radio" name="budget" value="budget" /><span>Preisbewusst</span></label>
+      <label><input type="radio" name="budget" value="midrange" /><span>Mittelklasse</span></label>
+      <label><input type="radio" name="budget" value="premium" /><span>Premium</span></label>
     </fieldset>
 
     <fieldset data-question="wifi">
-      <legend>WLAN und App?</legend>
-      <label><input type="radio" name="wifi" value="required" /> Gewünscht</label>
-      <label><input type="radio" name="wifi" value="optional" /> Egal</label>
-      <label><input type="radio" name="wifi" value="offline" /> Möglichst offline</label>
+      <legend>
+        <span class="decision__legend">
+          <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.wifi}></span>
+          <span>WLAN und App?</span>
+        </span>
+      </legend>
+      <label><input type="radio" name="wifi" value="required" /><span>Gewünscht</span></label>
+      <label><input type="radio" name="wifi" value="optional" /><span>Egal</span></label>
+      <label><input type="radio" name="wifi" value="offline" /><span>Möglichst offline</span></label>
     </fieldset>
 
     <fieldset data-question="camera">
-      <legend>Kamera?</legend>
-      <label><input type="radio" name="camera" value="required" /> Wichtig</label>
-      <label><input type="radio" name="camera" value="optional" /> Nicht entscheidend</label>
-      <label><input type="radio" name="camera" value="unwanted" /> Lieber ohne</label>
+      <legend>
+        <span class="decision__legend">
+          <span class="decision__question-icon" aria-hidden="true" set:html={questionIcons.camera}></span>
+          <span>Kamera?</span>
+        </span>
+      </legend>
+      <label><input type="radio" name="camera" value="required" /><span>Wichtig</span></label>
+      <label><input type="radio" name="camera" value="optional" /><span>Nicht entscheidend</span></label>
+      <label><input type="radio" name="camera" value="unwanted" /><span>Lieber ohne</span></label>
     </fieldset>
   </form>
 
@@ -90,7 +202,7 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     data-verdict="open"
   >
     <div class="decision__score"><strong data-result-score>–</strong><span>von 100</span></div>
-    <div>
+    <div class="decision__result-copy">
       <p class="decision__verdict" data-result-verdict>Beantworte die Fragen für eine persönliche Einordnung.</p>
       <div class="decision__reasons" role="list" data-result-reasons></div>
       <a class="decision__alternative" href="#alternativen" data-result-alternative hidden></a>
@@ -287,31 +399,87 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
   }
 
   legend {
-    padding: 0 6px;
+    width: 100%;
+    padding: 0;
     color: var(--px2-text);
     font-weight: 850;
+  }
+
+  .decision__legend {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.3;
+  }
+
+  .decision__question-icon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    place-items: center;
+    border: 1px solid color-mix(in srgb, var(--px2-green) 20%, var(--px2-border));
+    border-radius: 9px;
+    color: var(--px2-green-strong);
+    background: color-mix(in srgb, var(--px2-green) 10%, var(--px2-surface));
+  }
+
+  .decision__question-icon :global(svg) {
+    width: 18px;
+    height: 18px;
+    overflow: visible;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   label {
     display: flex;
     min-height: 42px;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     padding: 5px 0;
     color: var(--px2-text);
     cursor: pointer;
   }
 
+  label > span:last-child {
+    min-width: 0;
+  }
+
+  .decision__option-icon {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    place-items: center;
+    color: var(--px2-muted);
+  }
+
+  .decision__option-icon :global(svg) {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.55;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
   input {
     width: 19px;
     height: 19px;
+    flex: 0 0 auto;
     accent-color: var(--px2-green);
   }
 
   .decision__result {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    align-items: center;
+    align-items: start;
     gap: 18px;
     padding: 18px;
     border: 1px solid var(--px2-border);
@@ -319,26 +487,37 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     background: var(--px2-surface-soft);
   }
 
-  .decision__result[data-verdict="strong"] { background: var(--px2-green-soft); }
-  .decision__result[data-verdict="conditional"] { background: var(--px2-amber-soft); }
-  .decision__result[data-verdict="weak"] { background: var(--px2-red-soft); }
+  .decision__result[data-verdict="strong"] {
+    border-color: color-mix(in srgb, var(--px2-green) 32%, var(--px2-border));
+    background: color-mix(in srgb, var(--px2-green) 11%, var(--px2-surface-raised));
+  }
+
+  .decision__result[data-verdict="conditional"] {
+    border-color: color-mix(in srgb, var(--px2-amber) 36%, var(--px2-border));
+    background: color-mix(in srgb, var(--px2-amber) 10%, var(--px2-surface-raised));
+  }
+
+  .decision__result[data-verdict="weak"] {
+    border-color: color-mix(in srgb, var(--px2-red) 34%, var(--px2-border));
+    background: color-mix(in srgb, var(--px2-red) 10%, var(--px2-surface-raised));
+  }
 
   .decision__score {
     display: grid;
     width: 92px;
     height: 92px;
     place-items: center;
-    border: 1px solid color-mix(in srgb, var(--px2-green) 35%, transparent);
+    border: 1px solid color-mix(in srgb, var(--px2-green) 40%, var(--px2-border));
     border-radius: 50%;
     background: var(--px2-surface);
   }
 
   .decision__result[data-verdict="conditional"] .decision__score {
-    border-color: color-mix(in srgb, var(--px2-amber) 55%, var(--px2-border));
+    border-color: color-mix(in srgb, var(--px2-amber) 62%, var(--px2-border));
   }
 
   .decision__result[data-verdict="weak"] .decision__score {
-    border-color: color-mix(in srgb, var(--px2-red) 55%, var(--px2-border));
+    border-color: color-mix(in srgb, var(--px2-red) 62%, var(--px2-border));
   }
 
   .decision__score strong {
@@ -352,16 +531,20 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     font-size: .72rem;
   }
 
+  .decision__result-copy {
+    min-width: 0;
+  }
+
   .decision__verdict {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     color: var(--px2-text);
     font-weight: 850;
-    line-height: 1.4;
+    line-height: 1.42;
   }
 
   .decision__reasons {
     display: grid;
-    gap: 9px;
+    gap: 10px;
     margin: 0 0 12px;
   }
 
@@ -369,10 +552,10 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     display: grid;
     min-width: 0;
     grid-template-columns: 24px minmax(0, 1fr);
-    gap: 8px;
+    column-gap: 12px;
     align-items: start;
-    color: var(--px2-muted);
-    line-height: 1.45;
+    color: var(--px2-text);
+    line-height: 1.5;
   }
 
   .decision__reason-mark {
@@ -380,24 +563,36 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     width: 22px;
     height: 22px;
     place-items: center;
+    margin-top: .08em;
+    border: 1px solid transparent;
     border-radius: 50%;
     font-size: .86rem;
     font-weight: 950;
     line-height: 1;
   }
 
+  .decision__reason-copy {
+    display: block;
+    min-width: 0;
+    color: var(--px2-text);
+    opacity: .92;
+  }
+
   .decision__reason[data-kind="positive"] .decision__reason-mark {
-    background: var(--px2-green-soft);
+    border-color: color-mix(in srgb, var(--px2-green) 28%, transparent);
+    background: color-mix(in srgb, var(--px2-green) 15%, var(--px2-surface));
     color: var(--px2-green-strong);
   }
 
   .decision__reason[data-kind="neutral"] .decision__reason-mark {
-    background: var(--px2-amber-soft);
+    border-color: color-mix(in srgb, var(--px2-amber) 30%, transparent);
+    background: color-mix(in srgb, var(--px2-amber) 14%, var(--px2-surface));
     color: var(--px2-amber);
   }
 
   .decision__reason[data-kind="negative"] .decision__reason-mark {
-    background: var(--px2-red-soft);
+    border-color: color-mix(in srgb, var(--px2-red) 30%, transparent);
+    background: color-mix(in srgb, var(--px2-red) 14%, var(--px2-surface));
     color: var(--px2-red);
   }
 
@@ -405,25 +600,250 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     display: inline-block;
     color: var(--px2-green-strong);
     font-weight: 850;
-    line-height: 1.35;
+    line-height: 1.4;
     text-underline-offset: 3px;
+  }
+
+  :global(html[data-theme="dark"]) .decision,
+  :global(html.dark) .decision,
+  :global(body[data-theme="dark"]) .decision {
+    border-color: #2b4057;
+    background: #102137;
+    box-shadow: none;
+  }
+
+  :global(html[data-theme="dark"]) .decision fieldset,
+  :global(html.dark) .decision fieldset,
+  :global(body[data-theme="dark"]) .decision fieldset {
+    border-color: #2b4057;
+    background: #13263d;
+  }
+
+  :global(html[data-theme="dark"]) .decision__question-icon,
+  :global(html.dark) .decision__question-icon,
+  :global(body[data-theme="dark"]) .decision__question-icon {
+    border-color: #31516a;
+    color: #8be6a5;
+    background: #183149;
+  }
+
+  :global(html[data-theme="dark"]) .decision__result,
+  :global(html.dark) .decision__result,
+  :global(body[data-theme="dark"]) .decision__result {
+    border-color: #314861;
+    background: #14283f;
+  }
+
+  :global(html[data-theme="dark"]) .decision__result[data-verdict="strong"],
+  :global(html.dark) .decision__result[data-verdict="strong"],
+  :global(body[data-theme="dark"]) .decision__result[data-verdict="strong"] {
+    border-color: #356848;
+    background: #173426;
+  }
+
+  :global(html[data-theme="dark"]) .decision__result[data-verdict="conditional"],
+  :global(html.dark) .decision__result[data-verdict="conditional"],
+  :global(body[data-theme="dark"]) .decision__result[data-verdict="conditional"] {
+    border-color: #685630;
+    background: #312b20;
+  }
+
+  :global(html[data-theme="dark"]) .decision__result[data-verdict="weak"],
+  :global(html.dark) .decision__result[data-verdict="weak"],
+  :global(body[data-theme="dark"]) .decision__result[data-verdict="weak"] {
+    border-color: #704047;
+    background: #372329;
+  }
+
+  :global(html[data-theme="dark"]) .decision__score,
+  :global(html.dark) .decision__score,
+  :global(body[data-theme="dark"]) .decision__score {
+    background: #0d1c2f;
+  }
+
+  :global(html[data-theme="dark"]) .decision__reason-copy,
+  :global(html.dark) .decision__reason-copy,
+  :global(body[data-theme="dark"]) .decision__reason-copy {
+    color: #e6edf5;
+    opacity: 1;
+  }
+
+  :global(html[data-theme="dark"]) .decision label,
+  :global(html.dark) .decision label,
+  :global(body[data-theme="dark"]) .decision label {
+    color: #e6edf5;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(html:not([data-theme="light"]):not(.light)) .decision {
+      border-color: #2b4057;
+      background: #102137;
+      box-shadow: none;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision fieldset {
+      border-color: #2b4057;
+      background: #13263d;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__question-icon {
+      border-color: #31516a;
+      color: #8be6a5;
+      background: #183149;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__result {
+      border-color: #314861;
+      background: #14283f;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__result[data-verdict="strong"] {
+      border-color: #356848;
+      background: #173426;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__result[data-verdict="conditional"] {
+      border-color: #685630;
+      background: #312b20;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__result[data-verdict="weak"] {
+      border-color: #704047;
+      background: #372329;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__score {
+      background: #0d1c2f;
+    }
+
+    :global(html:not([data-theme="light"]):not(.light)) .decision__reason-copy,
+    :global(html:not([data-theme="light"]):not(.light)) .decision label {
+      color: #e6edf5;
+      opacity: 1;
+    }
   }
 
   @media (max-width: 760px) {
     .decision {
-      padding: 18px;
+      gap: 20px;
+      padding: 18px 16px;
       border-radius: 20px;
     }
 
-    .decision__form,
+    .decision__form {
+      display: block;
+    }
+
+    fieldset {
+      position: relative;
+      padding: 18px 0 14px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    fieldset + fieldset::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: var(--px2-border);
+      content: "";
+    }
+
+    fieldset:first-child {
+      padding-top: 0;
+    }
+
+    legend {
+      margin: 0 0 8px;
+    }
+
+    .decision__legend {
+      gap: 11px;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    .decision__question-icon {
+      width: 31px;
+      height: 31px;
+      flex-basis: 31px;
+    }
+
+    label {
+      min-height: 44px;
+      gap: 11px;
+      padding: 3px 2px;
+      font-size: 1.02rem;
+      line-height: 1.42;
+    }
+
+    label + label {
+      margin-top: 2px;
+    }
+
+    input {
+      width: 21px;
+      height: 21px;
+    }
+
     .decision__result {
-      grid-template-columns: 1fr;
+      grid-template-columns: 70px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px;
+      border-radius: 18px;
     }
 
     .decision__score {
-      width: 78px;
-      height: 78px;
+      width: 70px;
+      height: 70px;
       place-self: start;
+    }
+
+    .decision__score strong {
+      font-size: 1.72rem;
+    }
+
+    .decision__verdict {
+      margin-bottom: 13px;
+      font-size: 1.04rem;
+      line-height: 1.48;
+    }
+
+    .decision__reasons {
+      gap: 11px;
+    }
+
+    .decision__reason {
+      grid-template-columns: 24px minmax(0, 1fr);
+      column-gap: 12px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .decision__reason-mark {
+      width: 23px;
+      height: 23px;
+    }
+
+    :global(html[data-theme="dark"]) .decision fieldset,
+    :global(html.dark) .decision fieldset,
+    :global(body[data-theme="dark"]) .decision fieldset {
+      background: transparent;
+    }
+
+    :global(html[data-theme="dark"]) .decision fieldset + fieldset::before,
+    :global(html.dark) .decision fieldset + fieldset::before,
+    :global(body[data-theme="dark"]) .decision fieldset + fieldset::before {
+      background: #2b4057;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .decision__result {
+      grid-template-columns: 1fr;
     }
   }
 </style>
