@@ -64,7 +64,7 @@ const { model } = Astro.props;
       </div>
     </section>
 
-    <PriceBox2 price={model.price} affiliate={model.affiliate} />
+    <PriceBox2 price={model.price} affiliate={model.affiliate} operations={model.operations} />
 
     <a class="px2-hero__compare" href={model.comparisonHref}>
       {model.comparisonLabel}

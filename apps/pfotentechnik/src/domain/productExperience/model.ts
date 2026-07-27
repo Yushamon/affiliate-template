@@ -3,6 +3,7 @@ import type { ProductPriceInsight } from "../price/types.ts";
 import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
 import type { ProductDecisionProfile } from "./decisionEngine.ts";
 import { uniqueTextItems } from "./contentLists.ts";
+import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -169,7 +170,7 @@ const intelligentAlternatives = (
   const currentPrice = priceIndex.bySlug.get(currentSlug);
   const currentAnimals = new Set(list<string>(currentData.comparisonFilters?.animal));
   const candidates = allProducts
-    .filter((entry) => slugOf(entry) !== currentSlug && categoryKey(entry) === categoryKey(current))
+    .filter((entry) => slugOf(entry) !== currentSlug && categoryKey(entry) === categoryKey(current) && isAutoRecommendationEligible(deriveProductOperations(dataOf(entry))))
     .sort((left, right) => candidateScore(current, right) - candidateScore(current, left));
   const used = new Set<string>();
   const output: any[] = [];
@@ -253,7 +254,7 @@ const intelligentAlternatives = (
     const slug = text(recommendation.productKey ?? recommendation.slug);
     if (!slug || used.has(slug)) continue;
     const entry = allProducts.find((candidate) => slugOf(candidate) === slug);
-    if (!entry) continue;
+    if (!entry || !isAutoRecommendationEligible(deriveProductOperations(dataOf(entry)))) continue;
     used.add(slug);
     output.push(toAlternative(
       entry,
@@ -339,6 +340,7 @@ export const buildProductExperienceModel = ({
   const slug = slugOf(currentEntry);
   const priceIndex = buildPriceIndex(allProducts.length ? allProducts : [currentEntry]);
   const price = priceIndex.bySlug.get(slug);
+  const operations = deriveProductOperations(data);
   const galleryEntries = [
     data.images?.hero,
     ...list<any>(data.images?.gallery)
@@ -398,7 +400,13 @@ export const buildProductExperienceModel = ({
     manufacturerHref: data.manufacturer?.slug ? `/hersteller/${data.manufacturer.slug}/` : null,
     category: text(data.category?.label ?? data.category),
     categoryHref: text(data.category?.path, "/vergleiche/"),
-    recommendation: text(data.recommendation ?? data.description),
+    recommendation: operations.availability === "discontinued"
+      ? "Dieses Produkt ist eingestellt. Die redaktionelle Einordnung bleibt dokumentiert; für einen Kauf sind die verfügbaren Alternativen relevanter."
+      : operations.availability === "temporarily-unavailable"
+        ? "Dieses Produkt ist vorübergehend nicht verfügbar. Die Qualitätsbewertung bleibt bestehen, aktuell sollte jedoch eine Alternative geprüft werden."
+        : operations.availability === "out-of-stock"
+          ? "Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt."
+          : text(data.recommendation ?? data.description),
     reviewSummary: text(data.review?.summary ?? data.description),
     reviewVerdict: text(data.review?.verdict ?? data.recommendation),
     score,
@@ -408,6 +416,7 @@ export const buildProductExperienceModel = ({
     notFor,
     benefits,
     mainLimitation: limitations[0] ?? notFor[0] ?? "Keine zentrale Einschränkung redaktionell hinterlegt.",
+    operations,
     price,
     affiliate: {
       url: text(reviewProduct.affiliate?.url ?? price?.affiliateUrl ?? data.affiliate?.url),

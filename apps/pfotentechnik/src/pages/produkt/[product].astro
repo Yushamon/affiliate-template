@@ -26,6 +26,7 @@ import {
   getSourceContexts
 } from "../../domain/content/internalLinks";
 import { buildProductNextSteps } from "../../domain/recommendationLinks";
+import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 
 type PageProps = {
   contentProductId: string;
@@ -66,6 +67,7 @@ if (!contentEntry) {
 
 const contentProduct =
   contentEntry.data;
+const productOperations = deriveProductOperations(contentProduct);
 
 const breadcrumbs =
   getProductBreadcrumbs(contentEntry);
@@ -321,7 +323,8 @@ const schemaPriceIsFresh =
   Number.isFinite(schemaPriceCurrent) &&
   schemaPriceCurrent > 0 &&
   Number.isFinite(schemaPriceCheckedAt) &&
-  Date.now() - schemaPriceCheckedAt <= 14 * 86_400_000;
+  Date.now() - schemaPriceCheckedAt <= 14 * 86_400_000 &&
+  productOperations.purchasable;
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -344,7 +347,8 @@ const productSchema = {
           "@type": "Offer",
           price: schemaPriceCurrent,
           priceCurrency: contentProduct.price.currency,
-          url: new URL(canonical, site.domain).toString()
+          availability: "https://schema.org/InStock",
+          url: contentProduct.affiliate?.url ?? new URL(canonical, site.domain).toString()
         }
       }
     : {}),

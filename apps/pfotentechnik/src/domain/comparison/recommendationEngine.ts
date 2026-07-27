@@ -1,4 +1,5 @@
 import type { CollectionEntry } from "astro:content";
+import { deriveProductOperations, recommendationTieBreaker } from "../../lib/product-operations/policy.mjs";
 
 type ProductEntry = CollectionEntry<"products">;
 
@@ -56,16 +57,17 @@ export function buildAutomaticRecommendations({
   }
 
   const candidates = products.filter((product) =>
-    itemSlugs.includes(product.data.slug)
+    itemSlugs.includes(product.data.slug) &&
+    deriveProductOperations(product.data).autoRecommendationEligible
   );
 
   if (candidates.length === 0) {
     return {
       enabled: true,
-      winnerSlug: data.recommendation.winnerSlug,
-      alternativeSlug: data.recommendation.alternativeSlug,
-      title: data.recommendation.title,
-      text: data.recommendation.text,
+      winnerSlug: undefined,
+      alternativeSlug: undefined,
+      title: "Aktuell keine automatisch empfehlbare Hauptoption",
+      text: "Keines der Vergleichsprodukte ist derzeit als verfügbar und automatisch empfehlbar bestätigt.",
       scenarios: []
     };
   }
@@ -191,6 +193,7 @@ function rankProducts(
     .sort((a, b) =>
       b.score - a.score ||
       b.baseScore - a.baseScore ||
+      b.tieBreaker - a.tieBreaker ||
       a.product.data.title.localeCompare(b.product.data.title, "de")
     );
 }
@@ -204,6 +207,7 @@ function scoreProduct(
   const data = product.data;
   const baseScore = Number(data.score ?? Math.round(data.rating * 20));
   const evidence = collectEvidence(product);
+  const tieBreaker = recommendationTieBreaker(data);
   let score = baseScore;
 
   const animals = data.comparisonFilters?.animal ?? [];
@@ -270,6 +274,7 @@ function scoreProduct(
   return {
     product,
     baseScore,
+    tieBreaker,
     score: Math.round(score * 10) / 10,
     reason
   };

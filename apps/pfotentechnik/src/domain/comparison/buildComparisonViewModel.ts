@@ -11,6 +11,7 @@ import type {
 
 import { buildPriceIndex } from "../price/engine";
 import type { ProductPriceInsight } from "../price/types";
+import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;
@@ -332,6 +333,11 @@ export function buildComparisonViewModel({
   );
 
   const priceIndex = buildPriceIndex(products);
+  const recommendationEligible = (slug?: string) => {
+    if (!slug) return false;
+    const product = productBySlug.get(slug);
+    return Boolean(product && deriveProductOperations(product.data).autoRecommendationEligible);
+  };
 
   const explicitItems = data.items.filter(
     (item, index, source) =>
@@ -371,12 +377,10 @@ export function buildComparisonViewModel({
       .filter((item) => item.type === "product")
       .map((item) => item.slug)
   });
-  const resolvedWinnerSlug =
-    automaticRecommendation.winnerSlug ??
-    data.recommendation.winnerSlug;
-  const resolvedAlternativeSlug =
-    automaticRecommendation.alternativeSlug ??
-    data.recommendation.alternativeSlug;
+  const winnerCandidate = automaticRecommendation.winnerSlug ?? data.recommendation.winnerSlug;
+  const alternativeCandidate = automaticRecommendation.alternativeSlug ?? data.recommendation.alternativeSlug;
+  const resolvedWinnerSlug = recommendationEligible(winnerCandidate) ? winnerCandidate : undefined;
+  const resolvedAlternativeSlug = recommendationEligible(alternativeCandidate) ? alternativeCandidate : undefined;
 
   const getCriterionValue = (
     item: (typeof items)[number],
@@ -606,7 +610,8 @@ export function buildComparisonViewModel({
       const product = productBySlug.get(item.slug);
       if (!product) return null;
 
-      const affiliate = product.data.affiliate
+      const productOperations = deriveProductOperations(product.data);
+      const affiliate = productOperations.purchasable && product.data.affiliate
         ? {
             provider: product.data.affiliate.provider,
             label: product.data.affiliate.label,
