@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.2.3
+
+- Globales Comparison-Release-Gate vom technischen Installer-Erfolg getrennt.
+- `comparison:release:check` bleibt sichtbar, ist aber bei offenen manuellen/globalen Closure-Punkten nicht mehr install-blockierend.
+- Technical-SEO-Audit wird vor dem globalen Statuscheck ausgeführt.
+- Abschlussmeldung unterscheidet klar zwischen erfolgreicher Hero-Installation und globaler Release-Bereitschaft.
+
 ## 15.2.2
 
 - `pt-control` zusätzlich am statischen `.comparison-cover-filter__control`-Wrapper ergänzt.

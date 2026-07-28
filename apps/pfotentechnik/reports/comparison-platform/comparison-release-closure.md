@@ -1,6 +1,6 @@
 # Comparison Release Closure 14.0.1
 
-Erstellt: 2026-07-28T11:44:22.142Z
+Erstellt: 2026-07-28T11:52:59.368Z
 
 ## Technischer Status: NICHT BESTANDEN
 ## Visuelle Abnahme: AUSSTEHEND

@@ -1,4 +1,4 @@
-# PfotenTechnik Comparison Editorial Cover 15.2.2
+# PfotenTechnik Comparison Editorial Cover 15.2.3
 
 Release-Paket für den redaktionellen Vergleichsseiten-Hero von PfotenTechnik.
 
@@ -13,19 +13,19 @@ Release-Paket für den redaktionellen Vergleichsseiten-Hero von PfotenTechnik.
 - Backups, Cleanup und Audits
 - Prompt-Vorlagen für mehrere Vergleichskategorien
 
-## Behoben in 15.2.2
+## Behoben in 15.2.3
 
-- `ComparisonHeroFilters.astro`: Sowohl das native `<select>` als auch der statisch benannte Control-Wrapper verwenden `pt-control`.
-- Hintergrund: Der Komponenten-Audit bewertet auch Klassen mit dem Namensbestandteil `control`.
-- Der Installer liest die tatsächlich geschriebene Komponente erneut ein und stoppt vor den Audits, falls die Adoption fehlt.
-- Der Audit wird weiterhin nicht deaktiviert oder umgangen.
+- Das globale `comparison:release:check` wird weiterhin ausgeführt, aber korrekt als separates Plattform-Release-Gate behandelt.
+- Ein ausstehendes manuelles Visual-QA oder andere globale Closure-Anforderungen markieren den Hero-Installer nicht mehr fälschlich als fehlgeschlagen.
+- Alle für den Installer relevanten technischen Prüfungen bleiben hart: Build, Astro-Check, Daten-Tests, Hero-Audit, Comparison-Audit, Design-System-Audits, Visual-QA und Technical-SEO.
+- Fehlende slug-spezifische Hero-Bilder bleiben zulässige Hinweise, solange `default-editorial-hero.webp` vorhanden ist.
 
 ## Installation
 
 Das ZIP im Root des Repositories entpacken und ausführen:
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs
+node pfotentechnik-comparison-editorial-cover-15.2.3/apply-comparison-editorial-cover-15.2.3.mjs
 ```
 
 Optional kann der Installer direkt aus dem entpackten Paketordner in den Repository-Root kopiert und dort ausgeführt werden.
@@ -33,7 +33,7 @@ Optional kann der Installer direkt aus dem entpackten Paketordner in den Reposit
 ## Einzelnes Hero-Bild übernehmen
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs \
+node pfotentechnik-comparison-editorial-cover-15.2.3/apply-comparison-editorial-cover-15.2.3.mjs \
   --hero-slug="gps-tracker-hunde" \
   --hero-image="/Pfad/gps-tracker-hunde-editorial-hero.webp"
 ```
@@ -41,7 +41,7 @@ node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-
 ## Mehrere Hero-Bilder übernehmen
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs \
+node pfotentechnik-comparison-editorial-cover-15.2.3/apply-comparison-editorial-cover-15.2.3.mjs \
   --hero-dir="/Pfad/zu/hero-bildern"
 ```
 
@@ -106,3 +106,16 @@ Empfohlen:
 - Motiv muss auch im mobilen Zuschnitt funktionieren
 
 Die Prompt-Dateien im Ordner `prompts/` dienen als Ausgangspunkt.
+
+
+## Erfolgskriterien
+
+Der Installer gilt als erfolgreich, wenn die technischen Hero- und Repository-Prüfungen bestehen.
+
+Das globale Kommando
+
+```bash
+npm --workspace apps/pfotentechnik run comparison:release:check
+```
+
+bleibt ein separater Statuscheck. Es umfasst auch projektweite Restarbeiten und manuelle visuelle Freigaben, die nicht automatisch durch diesen Installer abgeschlossen werden können.

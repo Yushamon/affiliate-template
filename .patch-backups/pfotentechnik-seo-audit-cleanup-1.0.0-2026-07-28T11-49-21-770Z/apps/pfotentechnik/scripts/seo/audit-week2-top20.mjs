@@ -9,12 +9,12 @@ const checks = [];
 const read = (p) => fs.readFileSync(path.join(app, p), "utf8");
 const check = (name, ok, detail = "") => checks.push({ name, ok, detail });
 
-const offline = read("src/content/comparisons/beste-futterautomaten-ohne-wlan.md");
-check("Offline-Comparison", offline.includes("/vergleiche/beste-futterautomaten-ohne-wlan/"));
+const offline = read("src/content/pages/vergleiche/beste-futterautomaten-ohne-wlan/.md");
+check("Offline-Comparison", offline.includes("/vergleiche/-ohne-wlan/"));
 check("Offline-Snippet", offline.includes("ohne App, Cloud und Konto"));
 
-const camera = read("src/content/comparisons/beste-futterautomaten-mit-kamera.md");
-check("Kamera-Comparison", camera.includes("/vergleiche/beste-futterautomaten-mit-kamera/"));
+const camera = read("src/content/pages/vergleiche/beste-futterautomaten-mit-kamera/.md");
+check("Kamera-Comparison", camera.includes("/vergleiche/-mit-kamera/"));
 check("Kamera-Intent", camera.includes("sinnvoll oder unnötig"));
 
 const polar = read("src/content/products/petlibro-polar-wet-food-feeder.md");
@@ -24,7 +24,7 @@ check("Polar Ausfallschutz", polar.includes("12 Stunden"));
 check("Polar Maße", polar.includes("361 × 340 × 196 mm"));
 check("Polar Gewicht", polar.includes("3,4 kg"));
 
-const fountain = read("src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md");
+const fountain = read("src/content/comparisons/vergleiche/beste-trinkbrunnen-fuer-hunde/.md");
 const itemCount = (fountain.match(/^  - slug:/gm) ?? []).length;
 const slugs = [...fountain.matchAll(/^  - slug: "([^"]+)"/gm)].map((m) => m[1]);
 check("Hunde-Brunnen 6 Modelle", itemCount === 6, String(itemCount));
@@ -33,7 +33,7 @@ check("Hunde-Brunnen Snippet", fountain.includes("6 Modelle im Vergleich 2026"))
 
 const manufacturer = read("src/content/manufacturers/petlibro.md");
 check("PETLIBRO Hub", manufacturer.includes("Welche PETLIBRO-Serie passt?"));
-check("PETLIBRO Comparisons", manufacturer.includes("/vergleiche/beste-futterautomaten-fuer-nassfutter/"));
+check("PETLIBRO Comparisons", manufacturer.includes("/vergleiche/-fuer-nassfutter/"));
 
 const renderer = read("src/pages/produkt/[product].astro");
 check("Product positiveNotes", renderer.includes("positiveNotes"));

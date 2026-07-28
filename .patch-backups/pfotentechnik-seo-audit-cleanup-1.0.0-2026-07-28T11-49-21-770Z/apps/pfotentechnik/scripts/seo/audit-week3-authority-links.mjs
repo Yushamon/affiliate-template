@@ -36,12 +36,7 @@ function inbound(target, ownSuffix = "") {
 
 const redirectsFile = path.join(app, "public", "_redirects");
 const redirects = read(redirectsFile);
-const expectedRedirects = [
-  ["/beste-futterautomaten-ohne-wlan/", "/vergleiche/beste-futterautomaten-ohne-wlan/"],
-  ["/beste-futterautomaten-mit-kamera/", "/vergleiche/beste-futterautomaten-mit-kamera/"]
-];
-
-for (const [source, target] of expectedRedirects) {
+for (const [source, target] of [["/vergleiche/beste-futterautomaten-ohne-wlan/","/vergleiche/-ohne-wlan/"],["/vergleiche/beste-futterautomaten-ohne-wlan/","/vergleiche/-ohne-wlan/"],["/vergleiche/-mit-kamera/","/vergleiche/-mit-kamera/"],["/vergleiche/-mit-kamera/","/vergleiche/-mit-kamera/"]]) {
   check(`Redirect ${source}`, redirects.includes(`${source} ${target} 301`));
 }
 
@@ -55,18 +50,18 @@ check(
 );
 
 const oldOffline = corpus.filter(({ text }) =>
-  /(^|[^/])\/beste-futterautomaten-ohne-wlan\/?(?=[\s"'#?)]|$)/m.test(text)
+  /(?<!\/vergleiche)\/vergleiche/beste-futterautomaten-ohne-wlan/\/?/.test(text)
 );
 const oldCamera = corpus.filter(({ text }) =>
-  /(^|[^/])\/beste-futterautomaten-mit-kamera\/?(?=[\s"'#?)]|$)/m.test(text)
+  /(?<!\/vergleiche)\/vergleiche/-mit-kamera/\/?/.test(text)
 );
 check("Keine produktiven Offline-Altlinks", oldOffline.length === 0, String(oldOffline.length));
 check("Keine produktiven Kamera-Altlinks", oldCamera.length === 0, String(oldCamera.length));
 
 const targets = [
-  ["/vergleiche/beste-futterautomaten-ohne-wlan/", 3, "Offline-Comparison"],
-  ["/vergleiche/beste-futterautomaten-mit-kamera/", 3, "Kamera-Comparison"],
-  ["/vergleiche/beste-futterautomaten-fuer-zwei-katzen/", 2, "Zwei-Katzen-Comparison"],
+  ["/vergleiche/-ohne-wlan/", 3, "Offline-Comparison"],
+  ["/vergleiche/-mit-kamera/", 3, "Kamera-Comparison"],
+  ["/vergleiche/-fuer-zwei-katzen/", 2, "Zwei-Katzen-Comparison"],
   ["/produkt/petlibro-polar-wet-food-feeder/", 2, "PETLIBRO Polar"],
   ["/produkt/petkit-yumshare-solo-2/", 2, "YumShare Solo 2"],
   ["/vergleiche/beste-trinkbrunnen-fuer-hunde/", 4, "Hunde-Trinkbrunnen"]

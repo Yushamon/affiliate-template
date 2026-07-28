@@ -108,10 +108,10 @@ const expectedSlugs = [
   "cat-mate-335-pet-fountain"
 ];
 
-check("Comparison hat mindestens 6 Kernmodelle", slugs.length >= 6, String(slugs.length));
+check("Comparison hat genau 6 Modelle", slugs.length === 6, String(slugs.length));
 check("Comparison-Slugs eindeutig", new Set(slugs).size === slugs.length);
 check(
-  "Comparison enthält erwartete Kernmodelle",
+  "Comparison enthält erwartete Modelle",
   expectedSlugs.every((slug) => slugs.includes(slug))
 );
 check("Comparison ohne Großhund-Modell", !comparison.includes("oneisall-7l-dog-water-fountain"));
@@ -121,12 +121,12 @@ check(
     !/^\s+overrides:\s*$/m.test(comparison)
 );
 check(
-  "Comparison automatische Erweiterung konfiguriert",
-  /automaticRecommendations:\n\s+enabled:\s+(?:true|false)/.test(comparison)
+  "Comparison automatische Erweiterung deaktiviert",
+  /automaticRecommendations:\n\s+enabled:\s+false/.test(comparison)
 );
 check(
-  "Comparison-Snippet nennt Kernvergleich",
-  /Katzenbrunnen im Vergleich:\s*\d+ Modelle für Katzen/.test(comparison)
+  "Comparison-Snippet nennt 6 Modelle",
+  comparison.includes("Katzenbrunnen im Vergleich: 6 Modelle für Katzen")
 );
 
 const hub = read(path.join(content, "pages", "trinkbrunnen.md"));
