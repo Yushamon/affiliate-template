@@ -1,0 +1,26 @@
+# Changelog
+
+## 15.2.0
+
+- Release-Paket mit README, Changelog und Prompt-Sammlung ergänzt.
+- Installer auf Versionskennung 15.2.0 angehoben.
+- Automatische Hero-Zuordnung nach `<slug>-editorial-hero.webp` beibehalten.
+- Unterstützung für Einzelimport über `--hero-slug` und `--hero-image` dokumentiert.
+- Unterstützung für Stapelimport über `--hero-dir` dokumentiert.
+- Standard-Fallback und striktes Hero-Audit dokumentiert.
+- Prompt-Vorlagen für GPS-Tracker, Futterautomaten, Trinkbrunnen und Mikrochip-Futterautomaten ergänzt.
+
+## 15.1.0
+
+- Automatische Hero-Erkennung pro Vergleichsslug eingeführt.
+- Fallback auf `default-editorial-hero.webp` ergänzt.
+- Hero-Audit und strikte Hero-Prüfung ergänzt.
+- Stapelübernahme vorhandener Editorial-Heros ergänzt.
+
+## 15.0.0
+
+- Neuer Editorial-Cover-Hero.
+- Mobile 2×2-Filterstruktur.
+- Redaktionelle Top-Empfehlung.
+- Light- und Dark-Mode-Grundlage.
+- Cleanup alter Hero-Stile und Backups.
