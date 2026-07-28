@@ -1,36 +1,46 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-26T16:53:59.553Z
+Erstellt: 2026-07-28T05:56:46.756Z
 
 ## Zusammenfassung
 
-- Routen: 206
+- Routen: 203
 - Fehler: 0
-- Warnungen: 60
+- Warnungen: 71
 - Hinweise: 11
 
 ## Content-Bestand
 
-- pages: 88
+- pages: 73
 - products: 68
-- manufacturers: 18
-- comparisons: 13
+- manufacturers: 19
+- comparisons: 24
 
 ## Befunde
 
 - **WARNING · css**: CSS-Datei sollte modularisiert werden (`src/styles/pfotentechnik-design-system.css`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/ (`src/content/comparisons/beste-futterautomaten-fuer-hunde.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-hunde.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-katzen.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-mit-kamera.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-ohne-wlan.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-gps-tracker-fuer-hunde.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-gps-tracker-fuer-katzen.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trinkbrunnen-richtig-reinigen/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /wasserbedarf-hund/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/futterautomat-mit-app.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/gps-tracker-ohne-abo.md`)
+- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/ (`src/content/manufacturers/aqara.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/ (`src/content/manufacturers/pawsync.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/ (`src/content/manufacturers/zeromouse.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /hund-frisst-zu-schnell/ (`src/content/pages/futterautomat-hund.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /futterautomat-fuer-berufstaetige/ (`src/content/pages/futterautomat-hund.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/ (`src/content/pages/hund-frisst-nicht.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/ (`src/content/pages/hund-hat-durchfall.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/ (`src/content/pages/hund-trinkt-zu-wenig.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /hund-trinkt-ploetzlich-viel/ (`src/content/pages/trinkbrunnen.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/ (`src/content/pages/welpen-richtig-fuettern.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/aqara-smart-pet-feeder-c1/ (`src/content/products/aqara-smart-pet-feeder-c1.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-335-pet-fountain/ (`src/content/products/cat-mate-335-pet-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c200/ (`src/content/products/cat-mate-c200.md`)
@@ -57,6 +67,7 @@ Erstellt: 2026-07-26T16:53:59.553Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-se/ (`src/content/products/petkit-eversweet-solo-se.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/ (`src/content/products/petkit-fresh-element-infinity.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-yumshare-dual/ (`src/content/products/petkit-yumshare-dual.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-automatic-feeder/ (`src/content/products/petlibro-air-automatic-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-wifi-feeder/ (`src/content/products/petlibro-air-wifi-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-capsule-dog-fountain/ (`src/content/products/petlibro-capsule-dog-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-glacier-ultrafiltration/ (`src/content/products/petlibro-glacier-ultrafiltration.md`)
@@ -64,19 +75,19 @@ Erstellt: 2026-07-26T16:53:59.553Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-stainless-steel-fountain/ (`src/content/products/petlibro-stainless-steel-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-freshfeed-refrigerated-feeder/ (`src/content/products/petsafe-freshfeed-refrigerated-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-healthy-pet-simply-feed/ (`src/content/products/petsafe-healthy-pet-simply-feed.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-smart-feed-2/ (`src/content/products/petsafe-smart-feed-2.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/surefeed-microchip-pet-feeder-connect/ (`src/content/products/surefeed-microchip-pet-feeder-connect.md`)
 - **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /gps-tracker-oder-bluetooth-tag/ (`src/content/products/weenect-xs.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-cube-air-ca10/ (`src/content/products/wopet-cube-air-ca10.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-heritage-view-camera-feeder/ (`src/content/products/wopet-heritage-view-camera-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-patrol-f07-pro/ (`src/content/products/wopet-patrol-f07-pro.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-pioneer-f01-plus/ (`src/content/products/wopet-pioneer-f01-plus.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/xiaomi-smart-pet-fountain-2/ (`src/content/products/xiaomi-smart-pet-fountain-2.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/zeromouse-2-0/ (`src/content/products/zeromouse-2-0.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
+- **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
 - **INFO · css**: Selektor 8× definiert: :root (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)

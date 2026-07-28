@@ -1,39 +1,39 @@
-# PfotenTechnik Header Navigation 13.1.0
+# PfotenTechnik: Stromausfall-Content-Konsolidierung 1.0.0
 
-Behebt:
+Der Patch:
 
-- doppeltes Burger-Icon
-- fehlenden Vergleichslink
-- ungeordnete dynamische Hauptnavigation
-- unstrukturierte mobile Menüansicht
-- mobile Dark-Mode- und Scroll-Probleme
+- ersetzt `futterautomat-bei-stromausfall.md` durch die ausführliche SEO-Fassung,
+- entfernt `futterautomat-batterie-oder-netzteil.md`,
+- ersetzt interne Links auf die alte URL,
+- entfernt das alte Hero-Bild nur dann, wenn es nach der Konsolidierung nirgends mehr referenziert wird,
+- ergänzt permanente 301-Redirects mit und ohne abschließenden Slash,
+- prüft nach dem Build Route, Sitemap und die kopierte `_redirects`-Datei,
+- führt den Repository-Audit aus,
+- legt vor Änderungen ein Backup unter `.patch-backups/` an,
+- rollt Änderungen bei fehlgeschlagener Verifikation zurück.
 
-## Installation
+## Windows PowerShell
 
-ZIP entpacken und die MJS-Datei in den Root des Repositories `affiliate-template` legen.
-
-Vorprüfung:
-
-```bash
-node pfotentechnik-header-navigation-13.1.0.mjs --check
+```powershell
+node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs
 ```
 
-Anwenden und Build ausführen:
+## macOS / Linux
 
 ```bash
-node pfotentechnik-header-navigation-13.1.0.mjs
+node ./2/apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs
 ```
 
-Ohne Build:
+## Nur prüfen
 
-```bash
-node pfotentechnik-header-navigation-13.1.0.mjs --no-build
+```powershell
+node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs --check
 ```
 
-Mit lokalem Commit:
+## Ohne Build installieren
 
-```bash
-node pfotentechnik-header-navigation-13.1.0.mjs --commit
+```powershell
+node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs --skip-build
 ```
 
-Der Installer legt vor Änderungen Backups unter `.patch-backups/` ab.
+Entpacke den gesamten ZIP-Inhalt gemeinsam in denselben Ordner, damit der Installer den `payload`-Ordner findet.

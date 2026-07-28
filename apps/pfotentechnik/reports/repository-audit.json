@@ -1,18 +1,17 @@
 {
   "summary": {
-    "generatedAt": "2026-07-26T16:53:59.553Z",
+    "generatedAt": "2026-07-28T05:56:46.756Z",
     "countsByCollection": {
-      "pages": 88,
+      "pages": 73,
       "products": 68,
-      "manufacturers": 18,
-      "comparisons": 13
+      "manufacturers": 19,
+      "comparisons": 24
     },
     "categoryCounts": {
-      "vergleich": 8,
-      "futterautomaten": 23,
       "trinkbrunnen": 17,
       "gps-tracker": 10,
       "tierernaehrung": 2,
+      "futterautomaten": 15,
       "fuetterung": 2,
       "hundegesundheit": 8,
       "katzenverhalten": 1,
@@ -21,17 +20,17 @@
       "ratgeber": 1,
       "haustiertechnik": 1,
       "redaktion": 1,
+      "hundeernaehrung": 3,
       "katzenfutter": 1,
       "katzenernaehrung": 1,
-      "hundeernaehrung": 2,
       "hundeverhalten": 1,
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 206,
+    "routes": 203,
     "findings": {
       "error": 0,
-      "warning": 60,
+      "warning": 71,
       "info": 11
     }
   },
@@ -45,8 +44,50 @@
     {
       "severity": "warning",
       "area": "internal-linking",
-      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
     },
     {
       "severity": "warning",
@@ -63,6 +104,42 @@
     {
       "severity": "warning",
       "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/futterautomat-mit-app.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Möglicherweise gebrochener interner Link: /redaktion/",
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
       "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/",
       "file": "src/content/manufacturers/aqara.md"
     },
@@ -71,6 +148,12 @@
       "area": "internal-linking",
       "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/",
       "file": "src/content/manufacturers/pawsync.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/",
+      "file": "src/content/manufacturers/zeromouse.md"
     },
     {
       "severity": "warning",
@@ -87,32 +170,8 @@
     {
       "severity": "warning",
       "area": "internal-linking",
-      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
-      "file": "src/content/pages/hund-frisst-nicht.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
-      "file": "src/content/pages/hund-hat-durchfall.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
-      "file": "src/content/pages/hund-trinkt-zu-wenig.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
       "message": "Möglicherweise gebrochener interner Link: /hund-trinkt-ploetzlich-viel/",
       "file": "src/content/pages/trinkbrunnen.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Möglicherweise gebrochener interner Link: /trockenfutter-oder-nassfutter-hund/",
-      "file": "src/content/pages/welpen-richtig-fuettern.md"
     },
     {
       "severity": "warning",
@@ -273,6 +332,12 @@
     {
       "severity": "warning",
       "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-automatic-feeder/",
+      "file": "src/content/products/petlibro-air-automatic-feeder.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
       "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-wifi-feeder/",
       "file": "src/content/products/petlibro-air-wifi-feeder.md"
     },
@@ -315,18 +380,6 @@
     {
       "severity": "warning",
       "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-smart-feed-2/",
-      "file": "src/content/products/petsafe-smart-feed-2.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/surefeed-microchip-pet-feeder-connect/",
-      "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
       "message": "Möglicherweise gebrochener interner Link: /gps-tracker-oder-bluetooth-tag/",
       "file": "src/content/products/weenect-xs.md"
     },
@@ -362,6 +415,12 @@
     },
     {
       "severity": "warning",
+      "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/zeromouse-2-0/",
+      "file": "src/content/products/zeromouse-2-0.md"
+    },
+    {
+      "severity": "warning",
       "area": "maintainability",
       "message": "Sehr große Datei mit 1509 Zeilen",
       "file": "src/components/advisor/PetAdvisor.astro"
@@ -389,6 +448,12 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1016 Zeilen",
       "file": "src/content/pages/trockenfutter-oder-nassfutter-katze.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1037 Zeilen",
+      "file": "src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md"
     },
     {
       "severity": "warning",
