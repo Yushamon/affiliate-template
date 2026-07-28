@@ -1,8 +1,8 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 183
+- Dokumente: 184
 - Fehler: 4
-- Warnungen: 77
+- Warnungen: 79
 
 ## Portfolio-Befunde
 
@@ -25,9 +25,11 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/manufacturers/aqara.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/manufacturers/zeromouse.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-hund.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-richtig-reinigen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/futterautomat-und-ernaehrung.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/pages/futtermenge-katze.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-frisst-nicht.md`: 2 Checklisten erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-hat-durchfall.md`: 2 Checklisten erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-ist-muede.md`: 2 Checklisten erkannt.
@@ -41,7 +43,6 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/trinkbrunnen.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICAL_RISK_GROUPS** — `apps/pfotentechnik/src/content/pages/trinkmenge-katze-messen.md`: Welpen und Senioren möglicherweise nicht berücksichtigt.
 - **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
-- **WARNING · SOURCES_MISSING** — `apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`: Keine Quellenmetadaten oder Quellenüberschrift erkannt.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`: Mögliche Dosierungsangabe gefunden.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/cat-mate-335-pet-fountain.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
@@ -91,3 +92,4 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/wopet-patrol-f07-pro.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/wopet-pioneer-f01-plus.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/xiaomi-smart-pet-food-feeder-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
+- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/zeromouse-2-0.md`: Description sollte ungefähr 90–180 Zeichen lang sein.

@@ -72,6 +72,10 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
 
+editorial:
+  assessmentType: editorial-review
+  testedHandsOn: false
+  note: Redaktionelle Einordnung auf Basis der bereits dokumentierten Produktdaten; kein eigener Langzeittest.
 ratings:
   app: 4
   portionierung: 4
@@ -110,6 +114,8 @@ weaknesses:
   - Batterien dienen nur als Notstromversorgung
   - Keine Kamera integriert
 alternatives: []
+comparisons:
+  - futterautomat-mit-app
 comparisonFilters:
   animal:
     - dog
@@ -190,3 +196,5 @@ metadata:
 Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.
 
 Eine attraktive WOPET Alternative für preisbewusste Nutzer, die App Steuerung, kleine Portionen und einen kompakten 4 Liter Vorrat miteinander kombinieren möchten.
+
+Für die Einordnung der App-Funktionen und weiterer Modelle hilft der Vergleich [Futterautomaten mit App](/vergleiche/futterautomat-mit-app/).

@@ -103,7 +103,8 @@ weaknesses:
   - Nur Trockenfutter
   - Datenschutz und App-Abhängigkeit beachten
   - Regionale Verfügbarkeit schwankt
-alternatives: []
+alternatives:
+  - petlibro-granary-camera-feeder
 comparisonFilters:
   animal:
     - dog

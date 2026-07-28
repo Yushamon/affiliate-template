@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-07-28T11:05:36.220Z",
+  "generatedAt": "2026-07-28T20:08:32.531Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -267600,6 +267600,14 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "type": "semantic",
       "score": 100,
@@ -269061,6 +269069,14 @@
       "score": 44,
       "explicit": false,
       "automatic": true
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",

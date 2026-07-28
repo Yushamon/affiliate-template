@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-27T20:49:30.850Z",
+  "generatedAt": "2026-07-28T20:00:18.370Z",
   "errors": 4,
-  "warnings": 77,
+  "warnings": 79,
   "portfolio": [],
   "documents": [
     {
@@ -380,7 +380,9 @@
           "key: napfergonomie",
           "key: standfestigkeit",
           "key: offline-zeitplan",
-          "key: stromreserve"
+          "key: stromreserve",
+          "key: profil",
+          "key: hersteller"
         ],
         "automaticRecommendations": {
           "enabled": true
@@ -471,7 +473,8 @@
           "key: futterkammern",
           "key: portionierung",
           "key: napfkonzept",
-          "key: reinigung"
+          "key: reinigung",
+          "key: profil"
         ],
         "automaticRecommendations": {
           "enabled": true
@@ -1373,7 +1376,9 @@
           "key: zuverlassigkeit",
           "key: reinigung",
           "key: stromreserve",
-          "key: preis-leistung"
+          "key: preis-leistung",
+          "key: profil",
+          "key: hersteller"
         ],
         "automaticRecommendations": {
           "enabled": true
@@ -2011,7 +2016,9 @@
           "key: benachrichtigungen",
           "key: offline-verhalten",
           "key: wlan",
-          "key: preis-leistung"
+          "key: preis-leistung",
+          "key: profil",
+          "key: hersteller"
         ],
         "automaticRecommendations": {
           "enabled": true
@@ -4750,6 +4757,158 @@
       "issues": []
     },
     {
+      "file": "apps/pfotentechnik/src/content/manufacturers/zeromouse.md",
+      "slug": "zeromouse",
+      "title": "ZeroMOUSE",
+      "type": "manufacturer",
+      "data": {
+        "title": "ZeroMOUSE",
+        "slug": "zeromouse",
+        "type": "manufacturer",
+        "layout": "manufacturer",
+        "description": ">-",
+        "ZeroMOUSE im Überblick": "KI-Nachrüstsensor für kompatible Mikrochip-Katzenklappen, App, Beuteerkennung, Installation",
+        "key": "zeromouse",
+        "name": "ZeroMOUSE",
+        "recommendation": ">-",
+        "summary": ">-",
+        "publishedAt": "2026-07-27",
+        "updatedAt": "2026-07-27",
+        "navigation": {
+          "show": false,
+          "label": "ZeroMOUSE",
+          "section": "hersteller",
+          "order": 90
+        },
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion für smarte Haustiertechnik"
+        },
+        "tags": [
+          "hersteller",
+          "zeromouse",
+          "katzenklappen",
+          "beuteerkennung",
+          "ki",
+          "kamera"
+        ],
+        "hub": {
+          "sections": [
+            "hersteller",
+            "katzenklappen"
+          ],
+          "title": "ZeroMOUSE",
+          "description": "KI-Nachrüstung für kompatible Mikrochip-Katzenklappen.",
+          "icon": "🐭",
+          "order": 90,
+          "featured": false
+        },
+        "seo": {
+          "title": "ZeroMOUSE: KI-Beuteerkennung für Katzenklappen",
+          "description": ">-",
+          "ZeroMOUSE im Überblick": "KI-Sensor für Mikrochip-Katzenklappen, Kompatibilität, App, Strombedarf und Grenzen der",
+          "canonical": "/hersteller/zeromouse/",
+          "noindex": false,
+          "sitemap": true,
+          "priority": 0.6,
+          "changefreq": "monthly"
+        },
+        "website": "https://zeromouse.com/de",
+        "images": {
+          "hero": {
+            "src": "../../assets/images/products/zeromouse-2-0/hero.webp",
+            "alt": "ZeroMOUSE 2.0 an einer kompatiblen Mikrochip-Katzenklappe"
+          },
+          "gallery": []
+        },
+        "productCategories": [
+          "Katzenklappen-Zubehör"
+        ],
+        "productAreas": [
+          "KI-Beuteerkennung",
+          "Nachrüstung von Mikrochip-Katzenklappen"
+        ],
+        "focus": [
+          "Kamera- und KI-gestützte Beuteerkennung",
+          "Nachrüstung statt vollständigem Austausch",
+          "App-Ereignisse und Rückmeldung"
+        ],
+        "suitableFor": [
+          "Freigängerkatzen mit regelmäßigem Beuteeintrag",
+          "kompatible Mikrochip-Katzenklappen",
+          "Einbauorte mit WLAN und Stromversorgung"
+        ],
+        "attention": [
+          "keine vollständige Katzenklappe",
+          "nicht mit jeder Klappenform kompatibel",
+          "Beuteerkennung benötigt Strom und WLAN",
+          "beworbene Erkennungswerte sind Herstellerangaben"
+        ],
+        "strengths": [
+          "klar spezialisierter Zusatznutzen",
+          "Nachrüstung einer vorhandenen Katzenklappe",
+          "App-Ereignisse und Feedbackmöglichkeit"
+        ],
+        "weaknesses": [
+          "hohe Abhängigkeit von Einbausituation und Kompatibilität",
+          "keine Beuteblockierung bei Strom- oder WLAN-Ausfall",
+          "vergleichsweise hoher Preis für ein Spezial-Add-on"
+        ],
+        "profile": {
+          "company": ">-",
+          "appEcosystem": ">-",
+          "replacementParts": "Zubehör, Adapter und Support müssen modell- und klappenspezifisch über den Hersteller geprüft werden.",
+          "filterSupply": "Für ZeroMOUSE sind keine Wasser- oder Luftfilter erforderlich.",
+          "warranty": "Garantie-, Rückgabe- und Supportbedingungen richten sich nach den jeweils aktuellen offiziellen Verkaufsbedingungen.",
+          "competitorComparison": ">-"
+        },
+        "productSlugs": [
+          "zeromouse-2-0"
+        ],
+        "featuredProductSlugs": [
+          "zeromouse-2-0"
+        ],
+        "series": [
+          "key: zeromouse"
+        ],
+        "experience": {
+          "summary": ">-",
+          "positives": [
+            "spezialisierte Lösung für ein reales Alltagsproblem",
+            "vorhandene Katzenklappe kann weiterverwendet werden"
+          ],
+          "criticism": [
+            "Kompatibilität muss vor dem Kauf individuell geprüft werden",
+            "reale Erkennungsqualität hängt von Aufnahme und Einbausituation ab"
+          ],
+          "support": "Der Hersteller bietet Support, Kompatibilitätsinformationen und Installationshinweise über die offizielle Website.",
+          "methodology": ">-"
+        },
+        "alternativeManufacturerSlugs": [
+          "surefeed",
+          "petsafe"
+        ],
+        "sources": [
+          "label: ZeroMOUSE Herstellerseite",
+          "label: ZeroMOUSE Über uns",
+          "label: ZeroMOUSE Impressum",
+          "label: ZeroMOUSE Support"
+        ],
+        "faq": [
+          "question: Ist ZeroMOUSE eine vollständige Katzenklappe?",
+          "question: Wer bietet ZeroMOUSE an?",
+          "question: Funktioniert ZeroMOUSE ohne WLAN oder Strom?"
+        ]
+      },
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "META_DESCRIPTION_LENGTH",
+          "message": "Description sollte ungefähr 90–180 Zeichen lang sein."
+        }
+      ]
+    },
+    {
       "file": "apps/pfotentechnik/src/content/pages/biofilm-im-katzentrinkbrunnen.md",
       "slug": "biofilm im katzentrinkbrunnen",
       "title": "Schleim im Katzentrinkbrunnen: Biofilm entfernen",
@@ -4904,125 +5063,97 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/fuetterungszeiten-nach-alter.md",
       "slug": "fuetterungszeiten nach alter",
-      "title": "Fütterungszeiten nach Alter: Katze und Hund",
+      "title": "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
       "type": "page",
       "data": {
-        "title": "Fütterungszeiten nach Alter: Katze und Hund",
+        "title": "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
         "slug": "fuetterungszeiten-nach-alter",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Wie sich Mahlzeitenrhythmus und Fütterungsplan bei jungen, erwachsenen und alten Katzen und Hunden verändern.",
+        "description": "Wie oft Kitten, Welpen, erwachsene Katzen und Hunde sowie Senioren gefüttert werden sollten – mit praxistauglichen Orientierungswerten, Ausnahmen und Tagesplänen.",
         "category": "tierernaehrung",
+        "linking": {
+          "keywords": [
+            "Fütterungszeiten nach Alter",
+            "wie oft Katze füttern",
+            "wie oft Hund füttern",
+            "Kitten Mahlzeiten",
+            "Welpen Fütterungszeiten",
+            "Senioren füttern"
+          ],
+          "contexts": [
+            "Tierernährung",
+            "Futterautomaten",
+            "Katzenfütterung",
+            "Hundefütterung",
+            "Lebensphasen"
+          ],
+          "priority": "high",
+          "maxOccurrences": 1
+        },
         "categoryLabel": "Ernährungswissen",
         "categoryPath": "/wissen/",
         "heroImage": {
           "src": "../../assets/images/editorial/dog-and-cat-feeder.webp",
-          "alt": "Fütterungszeiten nach Alter: Katze und Hund"
+          "alt": "Junger und älterer Hund sowie Katze an getrennten Futterplätzen als Symbol für altersgerechte Fütterungszeiten"
         },
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-07-28",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
           "hund",
           "fuetterungszeiten",
           "alter",
-          "mahlzeiten"
+          "mahlzeiten",
+          "kitten",
+          "welpen",
+          "senioren"
         ],
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Fütterungszeiten nach Alter",
-          "description": "Mahlzeiten für Jungtiere, erwachsene Tiere und Senioren sinnvoll planen.",
+          "description": "Mahlzeitenrhythmus für Kitten, Welpen, erwachsene Tiere und Senioren sinnvoll planen.",
           "order": 53
         },
         "seo": {
-          "title": "Fütterungszeiten nach Alter bei Katze und Hund",
-          "description": "Wie oft sollten Welpen, Kitten, erwachsene Tiere und Senioren fressen? Orientierung und wichtige Ausnahmen.",
+          "title": "Fütterungszeiten nach Alter: Katze und Hund",
+          "description": "Wie oft sollten Kitten, Welpen, erwachsene Tiere und Senioren fressen? Mit Tagesplänen, Altersstufen und wichtigen Ausnahmen.",
           "canonical": "/fuetterungszeiten-nach-alter/",
           "sitemap": true,
-          "priority": 0.7,
+          "priority": 0.8,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"katze\", \"hund\", \"fuetterungszeiten\"], limit: 4 }",
-        "faq": [
-          "question: \"Brauchen junge Tiere mehr Mahlzeiten?",
-          "question: \"Müssen Senioren häufiger gefüttert werden?",
-          "question: \"Sind feste Uhrzeiten zwingend?"
-        ]
-      },
-      "issues": []
-    },
-    {
-      "file": "apps/pfotentechnik/src/content/pages/futterautomat-batterie-oder-netzteil.md",
-      "slug": "futterautomat batterie oder netzteil",
-      "title": "Futterautomat mit Batterie oder Netzteil?",
-      "type": "page",
-      "data": {
-        "title": "Futterautomat mit Batterie oder Netzteil?",
-        "slug": "futterautomat-batterie-oder-netzteil",
-        "type": "knowledge",
-        "layout": "knowledge",
-        "description": "Batteriebetrieb, Netzteil und kombinierte Stromversorgung bei Futterautomaten nach Zuverlässigkeit und Einsatzort vergleichen.",
-        "category": "futterautomaten",
-        "linking": {
-          "keywords": [
-            "Batterie-Backup",
-            "Batteriebetrieb",
-            "Batterie oder Netzteil",
-            "Netzbetrieb"
-          ],
-          "contexts": [
-            "futterautomaten"
-          ]
-        },
-        "categoryLabel": "Futterautomaten-Wissen",
-        "categoryPath": "/wissen/",
-        "heroImage": {
-          "src": "../../assets/images/editorial/feeder-battery-or-mains.webp",
-          "alt": "Futterautomat mit Batterie oder Netzteil?"
-        },
-        "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "tags": [
-          "futterautomat",
-          "batterie",
-          "netzteil",
-          "notstrom",
-          "vergleich"
+        "related": "{ tags: [\"katze\", \"hund\", \"fuetterungszeiten\", \"tierernaehrung\"], limit: 4 }",
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
         ],
-        "hub": {
-          "sections": [
-            "wissen"
-          ],
-          "title": "Batterie oder Netzteil?",
-          "description": "Stromversorgung nach Standort, Funktionen und Ausfallsicherheit wählen.",
-          "order": 66
-        },
-        "seo": {
-          "title": "Futterautomat: Batterie oder Netzteil?",
-          "description": "Batteriebetrieb, Netzteil und Batterie-Backup bei Futterautomaten: Vor- und Nachteile, App-Funktionen und Sicherheit.",
-          "canonical": "/futterautomat-batterie-oder-netzteil/",
-          "sitemap": true,
-          "priority": 0.7,
-          "changefreq": "yearly"
-        },
-        "related": "{ tags: [\"futterautomat\", \"batterie\", \"netzteil\"], limit: 4 }",
         "faq": [
-          "question: \"Welche Stromversorgung ist am zuverlässigsten?",
-          "question: \"Funktionieren Kamera und WLAN im Batteriebetrieb?",
-          "question: \"Sind wiederaufladbare Batterien erlaubt?"
+          "question: \"Wie oft sollte ein Kitten am Tag gefüttert werden?",
+          "question: \"Wie oft sollte ein Welpe am Tag gefüttert werden?",
+          "question: \"Wie oft sollte eine erwachsene Katze fressen?",
+          "question: \"Wie oft sollte ein erwachsener Hund fressen?",
+          "question: \"Brauchen Senioren häufiger Futter?",
+          "question: \"Sind feste Uhrzeiten zwingend?",
+          "question: \"Kann ein Futterautomat mehrere kleine Mahlzeiten übernehmen?",
+          "question: \"Ist freie Fütterung für Katzen sinnvoll?",
+          "question: \"Wann sollte eine Mahlzeit gestrichen werden?",
+          "question: \"Sollte die Tagesration nach Alter automatisch kleiner werden?",
+          "question: \"Was ist im Mehrtierhaushalt wichtig?",
+          "question: \"Wann gehört der Fütterungsplan in tierärztliche Hände?"
         ],
         "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "intent": "informational",
+          "cluster": "tierernaehrung"
         },
         "recommendationJourney": {
           "mode": "filtered",
           "comparisonHref": "/vergleiche/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Passende Futterautomaten vergleichen"
         }
       },
       "issues": []
@@ -5030,39 +5161,53 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/futterautomat-bei-stromausfall.md",
       "slug": "futterautomat bei stromausfall",
-      "title": "Was passiert mit dem Futterautomaten bei Stromausfall?",
+      "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
       "type": "page",
       "data": {
-        "title": "Was passiert mit dem Futterautomaten bei Stromausfall?",
+        "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
         "slug": "futterautomat-bei-stromausfall",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Ob Zeitpläne bei Stromausfall weiterlaufen, wie Batterie-Backup funktioniert und welche Tests vor Abwesenheit wichtig sind.",
+        "description": "Funktioniert ein Futterautomat bei Strom-, WLAN- oder Internetausfall weiter? Batterie-Backup, lokale Zeitpläne, App-Ausfall und einen sicheren Praxistest verständlich erklärt.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
-            "Stromausfall",
-            "bei Stromausfall",
-            "Notstromversorgung"
+            "Futterautomat bei Stromausfall",
+            "Futterautomat ohne Strom",
+            "Futterautomat Batterie Backup",
+            "Futterautomat Batterie oder Netzteil",
+            "Futterautomat ohne WLAN",
+            "Futterautomat offline",
+            "Futterautomat bei Internetausfall",
+            "Futterautomat Notstrom"
           ],
           "contexts": [
-            "futterautomaten"
+            "Futterautomaten",
+            "Ausfallsicherheit",
+            "Batterie-Backup",
+            "Offline-Betrieb",
+            "Urlaub",
+            "App und WLAN"
           ],
-          "priority": "high"
+          "priority": "high",
+          "maxOccurrences": 1
         },
         "categoryLabel": "Futterautomaten-Wissen",
         "categoryPath": "/wissen/",
         "heroImage": {
           "src": "../../assets/images/editorial/feeder-power-outage.webp",
-          "alt": "Was passiert mit dem Futterautomaten bei Stromausfall?"
+          "alt": "Automatischer Futterautomat mit Netzteil, eingelegten Backup-Batterien und ausgefallenem WLAN"
         },
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-07-28",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "futterautomat",
           "stromausfall",
           "batterie",
+          "netzteil",
+          "wlan",
+          "offline",
           "notstrom",
           "sicherheit"
         ],
@@ -5071,31 +5216,90 @@
             "wissen"
           ],
           "title": "Futterautomat bei Stromausfall",
-          "description": "Zeitpläne, Batterie-Backup und Ausfallsicherheit richtig prüfen.",
+          "description": "Stromversorgung, lokale Zeitpläne, Offline-Funktionen und Batterie-Backup systematisch prüfen.",
           "order": 65
         },
         "seo": {
-          "title": "Futterautomat bei Stromausfall: Was funktioniert?",
-          "description": "Füttert ein Automat bei Stromausfall weiter? Batterie-Backup, gespeicherte Zeitpläne, WLAN-Ausfall und sichere Tests erklärt.",
+          "title": "Futterautomat bei Stromausfall: Läuft er weiter?",
+          "description": "Was bleibt bei Strom-, WLAN- oder Internetausfall aktiv? Batterie-Backup, lokale Fütterungspläne und sicheren Ausfalltest erklärt.",
           "canonical": "/futterautomat-bei-stromausfall/",
           "sitemap": true,
-          "priority": 0.7,
+          "priority": 0.85,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"futterautomat\", \"stromausfall\", \"batterie\"], limit: 4 }",
+        "related": "{ tags: [\"futterautomat\", \"stromausfall\", \"batterie\", \"wlan\", \"sicherheit\"], limit: 4 }",
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
         "faq": [
-          "question: \"Funktioniert ein WLAN-Futterautomat ohne Internet?",
-          "question: \"Sind eingelegte Batterien automatisch ein Backup?",
-          "question: \"Wie teste ich den Notbetrieb?"
+          "question: \"Funktioniert ein Futterautomat bei Stromausfall weiter?",
+          "question: \"Läuft ein WLAN-Futterautomat ohne Internet?",
+          "question: \"Was ist der Unterschied zwischen WLAN- und Internetausfall?",
+          "question: \"Sind eingelegte Batterien automatisch ein Notstrom-Backup?",
+          "question: \"Bleibt der Fütterungsplan nach einem Stromausfall gespeichert?",
+          "question: \"Funktionieren Kamera und App im Batteriebetrieb?",
+          "question: \"Wie lange hält ein Batterie-Backup?",
+          "question: \"Kann ich wiederaufladbare Batterien verwenden?",
+          "question: \"Ist ein integrierter Akku besser als Einwegbatterien?",
+          "question: \"Hilft eine USV bei einem Futterautomaten?",
+          "question: \"Wie teste ich einen Futterautomaten bei Stromausfall?",
+          "question: \"Reicht ein erfolgreicher App-Eintrag als Nachweis?",
+          "question: \"Was passiert bei einem Futterstau während des Stromausfalls?",
+          "question: \"Kann ich mich im Urlaub allein auf den Automaten verlassen?",
+          "question: \"Welcher Futterautomat ist bei Stromausfall am sichersten?",
+          "question: \"Was muss bei medizinisch wichtigen Fütterungszeiten beachtet werden?"
         ],
         "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "version": 2,
+          "cluster": "futterautomaten",
+          "intent": "troubleshooting",
+          "animal": "both",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Strom, WLAN, Internet, Cloud und Mechanik sind getrennte Ausfallpunkte.",
+            "Ein Batterie-Backup ist nur sinnvoll, wenn ein lokaler Zeitplan weiterläuft.",
+            "App, Kamera und Benachrichtigungen können ausfallen, obwohl die Futterausgabe funktioniert."
+          ],
+          "suitableFor": [
+            "Halter, die den Notbetrieb ihres Futterautomaten prüfen möchten",
+            "Kaufinteressierte mit Fokus auf Ausfallsicherheit",
+            "Haushalte mit WLAN-, App- oder Batterie-Futterautomaten"
+          ],
+          "notSuitableFor": [
+            "Alleinige Absicherung medizinisch unverzichtbarer Fütterungen",
+            "Ersatz einer Betreuungsperson während längerer Abwesenheit",
+            "Pauschale Laufzeitgarantie für eine bestimmte Modellrevision"
+          ],
+          "checklist": [
+            "Lokale Speicherung des Zeitplans bestätigen",
+            "Automatische Umschaltung praktisch testen",
+            "Freigegebenen Batterietyp verwenden",
+            "WLAN- und Stromausfall getrennt simulieren",
+            "Manuelle Ersatzfütterung vorbereiten"
+          ],
+          "mistakes": [
+            "Batteriefach mit echtem Backup gleichsetzen",
+            "Nur die App statt der realen Ausgabe kontrollieren",
+            "Hersteller-Laborlaufzeit als Garantie betrachten",
+            "Futterstau und leeren Behälter nicht mitprüfen",
+            "Automaten ohne Betreuung im Urlaub einsetzen"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
         },
         "recommendationJourney": {
           "mode": "filtered",
-          "comparisonHref": "/vergleiche/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonHref": "/vergleiche/beste-futterautomaten-mit-akku/",
+          "comparisonLabel": "Modelle mit Ersatzstrom vergleichen"
         }
       },
       "issues": []
@@ -5387,24 +5591,29 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/futterautomat-im-urlaub.md",
       "slug": "futterautomat im urlaub",
-      "title": "Futterautomat im Urlaub",
+      "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
       "type": "page",
       "data": {
-        "title": "Futterautomat im Urlaub",
-        "seoTitle": "Futterautomat im Urlaub: Betreuung sicher planen",
+        "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
+        "seoTitle": "Futterautomat im Urlaub: Sicher mit Betreuung planen",
         "slug": "futterautomat-im-urlaub",
-        "description": "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests, Notfallplan und Futterreserve einsetzen.",
-        "seoDescription": "Futterautomat im Urlaub nutzen: Warum Betreuung nötig bleibt und wie Zeitplan, Wasser, Stromreserve und Notfallübergabe vorbereitet werden.",
+        "description": "Futterautomaten im Urlaub sicher einsetzen: mit Betreuung, Probelauf, Stromreserve, Notfallplan und klarer Übergabe.",
+        "seoDescription": "Futterautomat im Urlaub nutzen: So planst du Betreuung, Probelauf, Wasser, Stromreserve, Nassfutter und Notfälle sicher und realistisch.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
             "Futterautomat im Urlaub",
-            "Urlaubsbetrieb",
-            "während des Urlaubs",
-            "längere Abwesenheit"
+            "Futterautomat während des Urlaubs",
+            "Katze mit Futterautomat allein lassen",
+            "Futterautomat Urlaubsbetrieb",
+            "Futterautomat Betreuung",
+            "Futterautomat Stromausfall"
           ],
           "contexts": [
-            "futterautomaten"
+            "futterautomaten",
+            "katzenbetreuung",
+            "urlaub",
+            "ausfallsicherheit"
           ]
         },
         "categoryLabel": "Futterautomaten",
@@ -5413,17 +5622,19 @@
           "Futterautomat",
           "Urlaub",
           "Betreuung",
-          "Ausfallsicherheit"
+          "Ausfallsicherheit",
+          "Katze",
+          "Notfallplan"
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-09",
-        "updatedAt": "2026-07-25",
+        "updatedAt": "2026-07-28",
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Futterautomat im Urlaub",
-          "description": "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests, Notfallplan und Futterreserve einsetzen.",
+          "description": "Betreuung, Probelauf, Offline-Betrieb und Notfallplan für eine sichere Urlaubsversorgung.",
           "icon": "📖",
           "order": 290
         },
@@ -5432,6 +5643,7 @@
         "heroImageKey": "feederHero",
         "premiumBlocks": [
           "type: \"answer",
+          "type: \"quickFacts",
           "type: \"checklist"
         ],
         "comparisonProducts": [
@@ -5440,22 +5652,32 @@
           "xiaomi-smart-pet-food-feeder-2"
         ],
         "comparisonRecommendation": {
-          "title": "Fernfunktionen sind Ergänzung, keine Betreuung",
-          "text": "App, Kamera und Füllstandsanzeige können Hinweise liefern. Für eine Urlaubsplanung zählen aber vor allem lokale Zeitpläne, Stromreserve, einfache manuelle Bedienung und eine Person vor Ort.",
-          "tableTitle": "Funktionen für die Urlaubsorganisation",
+          "title": "Urlaubstauglich ist nicht gleich besonders smart",
+          "text": "Für den Urlaubsbetrieb sind ein lokal gespeicherter Zeitplan, Stromreserve, gut zugängliche manuelle Bedienung und leichte Reinigung wichtiger als viele App-Funktionen. Kamera, Füllstand und Benachrichtigungen liefern zusätzliche Hinweise, ersetzen aber keine Kontrolle vor Ort.",
+          "tableTitle": "Funktionen für einen robusten Urlaubsbetrieb",
           "cardsTitle": "Drei vernetzte Beispiele",
           "criteria": [
             "Lokaler Zeitplan",
             "Batterie-Backup",
+            "Stauhinweis",
             "Füllstand",
-            "Kamera",
-            "Manuelle Bedienung",
+            "Manuelle Ausgabe",
             "Reinigung"
           ]
         },
         "faq": [
           "question: \"Wie lange kann eine Katze mit Futterautomat allein bleiben?",
-          "question: \"Reicht eine Kamera als Kontrolle im Urlaub?"
+          "question: \"Reicht ein täglicher Kontrollblick per Kamera?",
+          "question: \"Kann ein Hund im Urlaub mit einem Futterautomaten allein versorgt werden?",
+          "question: \"Was passiert mit dem Fütterungsplan, wenn das WLAN ausfällt?",
+          "question: \"Schützt ein Batterie-Backup vor jedem Ausfall?",
+          "question: \"Kann Nassfutter während des Urlaubs im Automaten bleiben?",
+          "question: \"Wie viel Reservefutter sollte bereitstehen?",
+          "question: \"Soll die Betreuungsperson Zugang zur App bekommen?",
+          "question: \"Ist ein großer Futterbehälter automatisch besser für den Urlaub?",
+          "question: \"Was ist bei mehreren Katzen zu beachten?",
+          "question: \"Welche Warnzeichen gehören in den Notfallplan?",
+          "question: \"Was sollte nach der Rückkehr geprüft werden?"
         ],
         "contentPlatform": {
           "intent": "buying-guide",
@@ -5464,7 +5686,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -5560,7 +5782,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -5776,7 +5998,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -5855,7 +6077,7 @@
           "mode": "filtered",
           "animal": "dog",
           "petSize": "small",
-          "comparisonHref": "/vergleiche/-fuer-hunde/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -5864,19 +6086,19 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/futtermenge-katze.md",
       "slug": "futtermenge katze",
-      "title": "Futtermenge bei Katzen richtig berechnen",
+      "title": "Futtermenge bei Katzen berechnen: Tabelle, Formel und Beispiele",
       "type": "page",
       "data": {
-        "title": "Futtermenge bei Katzen richtig berechnen",
+        "title": "Futtermenge bei Katzen berechnen: Tabelle, Formel und Beispiele",
         "slug": "futtermenge-katze",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Tägliche Futtermenge bei Katzen aus Kalorien und Energiedichte berechnen, Mischfütterung einplanen und Gewicht sicher kontrollieren.",
+        "description": "Futtermenge für Katzen aus Energiebedarf und Kaloriendichte berechnen – mit Tabelle nach Gewicht, Beispielen für Nass-, Trocken- und Mischfütterung sowie sicherer Verlaufskontrolle.",
         "category": "fuetterung",
         "categoryLabel": "Fütterung",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-19",
-        "updatedAt": "2026-07-19",
+        "updatedAt": "2026-07-28",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -5884,55 +6106,134 @@
           "fuetterung",
           "kalorien",
           "gewicht",
-          "nassfutter"
+          "nassfutter",
+          "trockenfutter",
+          "mischfuetterung"
         ],
-        "hub": "{ sections: [wissen], title: \"Futtermenge Katze\", description: \"Nass- und Trockenfutter in einem Kalorienbudget planen.\", order: 53 }",
-        "seo": "{ title: \"Futtermenge Katze berechnen: Nass- & Trockenfutter\", description: \"Futtermenge bei Katzen bestimmen: Kalorien in Gramm umrechnen, Mischfütterung und Leckerli einplanen, Gewicht und Muskeln kontrollieren.\", canonical: \"/futtermenge-katze/\", sitemap: true, priority: 0.8, changefreq: yearly }",
+        "hub": {
+          "sections": [
+            "wissen"
+          ],
+          "title": "Futtermenge Katze berechnen",
+          "description": "Kalorienbedarf in Gramm umrechnen und die Tagesration sicher anpassen.",
+          "order": 53
+        },
+        "seo": {
+          "title": "Futtermenge Katze berechnen: Tabelle & Formel",
+          "description": "Wie viel Futter braucht eine Katze? Mit Gewichtstabelle, Kalorienformel, Beispielen für Nass- und Trockenfutter sowie Mischfütterung.",
+          "canonical": "/futtermenge-katze/",
+          "sitemap": true,
+          "priority": 0.9,
+          "changefreq": "yearly"
+        },
         "heroImage": {
           "src": "../../assets/images/editorial/feeder-portion-size.webp",
-          "alt": "Abgewogene Futterportion für eine Katze"
+          "alt": "Abgewogene Tagesration aus Nass- und Trockenfutter für eine Katze"
         },
-        "related": "{ tags: [katze, futtermenge, fuetterung, gewicht], limit: 4 }",
+        "related": "{ tags: [\"katze\", \"futtermenge\", \"fuetterung\", \"gewicht\", \"nassfutter\"], limit: 4 }",
         "linking": {
           "keywords": [
             "Futtermenge Katze",
             "wie viel Futter Katze",
-            "Katzenfutter Gramm pro Tag"
+            "Katzenfutter Gramm pro Tag",
+            "Futtermenge Katze Tabelle",
+            "Futtermenge Katze berechnen",
+            "Katzenfutter Kalorien",
+            "Nassfutter und Trockenfutter Katze Tabelle"
           ],
           "contexts": [
             "Katzenfütterung",
             "Futterautomat",
-            "Gewicht"
+            "Gewicht",
+            "Mischfütterung",
+            "Katzenfutter"
           ],
           "priority": "high",
           "maxOccurrences": 1
         },
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
         "faq": [
-          "{ question: \"Wie viel Futter braucht eine Katze am Tag?\", answer: \"Eine pauschale Grammzahl ist unzuverlässig, weil Nass- und Trockenfutter sehr unterschiedliche Energiedichten haben. Alter, Körper- und Muskelkondition, Aktivität, Kastrationsstatus und Gesundheit verändern den Bedarf. Nutze die Fütterungstabelle als Startpunkt und kontrolliere den Verlauf.\" }",
-          "{ question: \"Wie rechne ich Katzenfutter in Gramm um?\", answer: \"Teile den individuellen Tagesbedarf in Kilokalorien durch die Energiedichte pro Gramm. Bei einer Angabe je 100 Gramm wird der Bedarf durch die Etikettangabe geteilt und mit 100 multipliziert. Von diesem Budget werden Leckerli und der jeweils andere Futteranteil abgezogen.\" }",
-          "{ question: \"Wie kombiniere ich Nass- und Trockenfutter?\", answer: \"Lege ein gemeinsames Tagesbudget in Kalorien fest. Ziehe zuerst die Kalorien der geplanten Nassfuttermenge ab und rechne den Rest über die Energiedichte des Trockenfutters in Gramm um. Zwei vollständige Tagesrationen nebeneinander zu geben führt leicht zur Überfütterung.\" }",
-          "{ question: \"Ist eine Dose pro Tag die richtige Menge?\", answer: \"Nicht automatisch. Dosen und Schalen unterscheiden sich in Größe und Kaloriengehalt. Entscheidend ist die Energieangabe des konkreten Futters im Verhältnis zum individuellen Bedarf. Prüfe außerdem, ob es sich um ein Alleinfuttermittel oder nur um ein Ergänzungsfuttermittel handelt.\" }",
-          "{ question: \"Sollte Katzenfutter gewogen werden?\", answer: \"Ja, besonders Trockenfutter lässt sich mit einer Grammwaage genauer portionieren als mit Bechern oder Augenmaß. Schon kleine Grammabweichungen können bei energiedichtem Futter relevant sein. Wiege auch Automatenportionen und wiederhole die Kalibrierung bei einer neuen Krokette.\" }",
-          "{ question: \"Wie viele Mahlzeiten braucht eine Katze?\", answer: \"Viele Katzen akzeptieren mehrere kleine Mahlzeiten gut, doch die passende Verteilung hängt von Tier, Alltag und Gesundheit ab. Die Summe aller Portionen darf das Tagesbudget nicht überschreiten. Bei medizinischen Diäten oder Diabetes folgt der Zeitplan der behandelnden Tierarztpraxis.\" }",
-          "{ question: \"Wie viele Leckerli sind erlaubt?\", answer: \"Als Orientierung empfiehlt AAHA, Leckerli auf höchstens etwa zehn Prozent der täglichen Kalorien zu begrenzen. Dazu zählen Snacks, Pasten, Tischreste und Futter zur Medikamentengabe. Ein Teil der abgewogenen normalen Ration kann stattdessen als Belohnung dienen.\" }",
-          "{ question: \"Wie füttert man eine übergewichtige Katze?\", answer: \"Eine Katze sollte nicht abrupt fasten oder radikal weniger normales Futter erhalten. Schneller Gewichtsverlust kann gefährlich sein, und eine zu kleine Erhaltungsration kann Nährstoffe verknappen. Zielgewicht, Diät und Tempo sollten tierärztlich geplant und regelmäßig kontrolliert werden.\" }",
-          "{ question: \"Was gilt für ein Kitten?\", answer: \"Ein Kitten braucht ein vollständiges Wachstumsfutter und altersgerechte Mengen, die häufiger angepasst werden. Tabellen für erwachsene Katzen sind ungeeignet. Gewichtsentwicklung und Körperkondition sollten regelmäßig kontrolliert werden; bei schlechter Zunahme, Durchfall oder Futterverweigerung ist tierärztlicher Rat wichtig.\" }",
-          "{ question: \"Was gilt für eine Senior-Katze?\", answer: \"Bei einer Senior-Katze können sich Energiebedarf, Verdauung und Muskelmasse verändern. Gewichtsverlust ist nicht automatisch normal. Kontrolliere Body und Muscle Condition Score getrennt und lass unbeabsichtigte Abnahme, mehr Durst, Erbrechen oder Appetitveränderungen tierärztlich abklären.\" }",
-          "{ question: \"Wie verhindert man Futterdiebstahl bei mehreren Katzen?\", answer: \"Füttere räumlich getrennt oder nutze bei Bedarf einen zuverlässig zugeordneten Mikrochip-Futterautomaten. Wiege die Tagesration jeder Katze separat und kontrolliere, ob sie tatsächlich frisst. Ein gemeinsamer Napf erlaubt keine sichere individuelle Mengenkontrolle.\" }",
-          "{ question: \"Wann ist die Futtermenge ein Fall für den Tierarzt?\", answer: \"Bei Kitten, Trächtigkeit, deutlichem Über- oder Untergewicht, chronischer Erkrankung, Allergie, Verdauungsproblemen oder unerklärlicher Gewichtsänderung ist ein individueller Plan sinnvoll. Frisst eine Katze gar nicht, wirkt schwach oder erbricht wiederholt, sollte die Untersuchung nicht durch Rechenversuche verzögert werden.\" }"
+          "question: \"Wie viel Futter braucht eine Katze am Tag?",
+          "question: \"Wie berechnet man die Futtermenge einer Katze?",
+          "question: \"Wie viel Nassfutter braucht eine 4-kg-Katze?",
+          "question: \"Wie viel Trockenfutter braucht eine 4-kg-Katze?",
+          "question: \"Ist eine Dose Nassfutter pro Tag ausreichend?",
+          "question: \"Wie kombiniere ich Nass- und Trockenfutter?",
+          "question: \"Kann ich einfach die halbe Nassfutter- und halbe Trockenfuttermenge geben?",
+          "question: \"Wo finde ich die Kalorien auf Katzenfutter?",
+          "question: \"Wie rechne ich Megajoule in Kilokalorien um?",
+          "question: \"Sollte Katzenfutter gewogen werden?",
+          "question: \"Wie viel dürfen Leckerli ausmachen?",
+          "question: \"Wie oft sollte die Futtermenge kontrolliert werden?",
+          "question: \"Soll ich bei einer übergewichtigen Katze mit dem Zielgewicht rechnen?",
+          "question: \"Was gilt für Kitten?",
+          "question: \"Was gilt für Senior-Katzen?",
+          "question: \"Wie füttert man mehrere Katzen richtig?",
+          "question: \"Wann gehört die Futtermenge in tierärztliche Hände?"
         ],
         "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "version": 2,
+          "cluster": "katzenernaehrung",
+          "intent": "informational",
+          "animal": "cat",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Futtermenge wird über Energiebedarf und Kaloriendichte berechnet, nicht über pauschale Grammzahlen.",
+            "Nassfutter, Trockenfutter und Leckerli teilen sich ein gemeinsames Tagesbudget.",
+            "Der berechnete Wert ist ein Startpunkt und muss anhand von Gewicht, Fett- und Muskelzustand angepasst werden."
+          ],
+          "suitableFor": [
+            "Gesunde erwachsene Katzen mit bekanntem Körpergewicht",
+            "Halter, die Nass-, Trocken- oder Mischfütterung korrekt portionieren möchten",
+            "Futterautomaten, deren reale Ausgabe in Gramm kalibriert wird"
+          ],
+          "notSuitableFor": [
+            "Eigenständige Gewichtsreduktion bei übergewichtigen Katzen",
+            "Kitten ohne altersgerechten Wachstumsplan",
+            "Therapeutische Diäten oder chronische Erkrankungen ohne tierärztliche Begleitung"
+          ],
+          "checklist": [
+            "Alleinfuttermittel und Lebensphase prüfen",
+            "Kalorienwert des Futters finden",
+            "Tagesbudget berechnen",
+            "Leckerli und Mischfütterung einrechnen",
+            "Gewicht, BCS und Muskelzustand kontrollieren"
+          ],
+          "mistakes": [
+            "Nass- und Trockenfutter jeweils als vollständige Tagesration addieren",
+            "Trockenfutter mit Messbecher oder Augenmaß portionieren",
+            "Bei Übergewicht ohne Plan radikal reduzieren",
+            "Nur das Körpergewicht und nicht die Muskulatur beobachten",
+            "Ergänzungsfutter dauerhaft als alleinige Ration verwenden"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
         },
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "comparisonLabel": "Futterautomaten für Katzen vergleichen"
         }
       },
-      "issues": []
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "META_DESCRIPTION_LENGTH",
+          "message": "Description sollte ungefähr 90–180 Zeichen lang sein."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/pages/gps-oder-bluetooth.md",
@@ -6302,7 +6603,7 @@
           "mode": "filtered",
           "animal": "dog",
           "petSize": "large",
-          "comparisonHref": "/vergleiche/-fuer-hunde/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -6890,7 +7191,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -8610,6 +8911,146 @@
       ]
     },
     {
+      "file": "apps/pfotentechnik/src/content/pages/trockenfutter-oder-nassfutter-hund.md",
+      "slug": "trockenfutter oder nassfutter hund",
+      "title": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+      "type": "page",
+      "data": {
+        "title": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "slug": "trockenfutter-oder-nassfutter-hund",
+        "type": "knowledge",
+        "layout": "knowledge",
+        "description": "Trockenfutter und Nassfutter für Hunde fundiert vergleichen: Nährstoffversorgung, Wasseranteil, Energiedichte, Verträglichkeit, Zahngesundheit, Kosten und Mischfütterung.",
+        "category": "hundeernaehrung",
+        "linking": {
+          "keywords": [
+            "Trockenfutter oder Nassfutter Hund",
+            "Nassfutter oder Trockenfutter Hund",
+            "Trockenfutter vs Nassfutter Hund",
+            "welches Hundefutter ist besser",
+            "Mischfütterung Hund",
+            "Trocken- und Nassfutter kombinieren"
+          ],
+          "contexts": [
+            "Hundeernährung",
+            "Futterwahl",
+            "Trockenfutter",
+            "Nassfutter",
+            "Mischfütterung",
+            "Futterautomaten"
+          ],
+          "priority": "high",
+          "maxOccurrences": 1
+        },
+        "categoryLabel": "Hundewissen",
+        "categoryPath": "/wissen/",
+        "heroImageKey": "feederWetFood",
+        "publishedAt": "2026-07-28",
+        "updatedAt": "2026-07-28",
+        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "tags": [
+          "hund",
+          "ernaehrung",
+          "trockenfutter",
+          "nassfutter",
+          "mischfuetterung",
+          "hundefutter"
+        ],
+        "hub": {
+          "sections": [
+            "wissen"
+          ],
+          "title": "Trockenfutter oder Nassfutter für Hunde",
+          "description": "Beide Futterarten nach Nährstoffversorgung, Wasser, Energie, Alltag und Verträglichkeit vergleichen.",
+          "order": 55
+        },
+        "seo": {
+          "title": "Trockenfutter oder Nassfutter für Hunde?",
+          "description": "Was ist besser für Hunde: Trocken- oder Nassfutter? Vergleich zu Nährstoffen, Wasser, Kalorien, Zähnen, Kosten und Mischfütterung.",
+          "canonical": "/trockenfutter-oder-nassfutter-hund/",
+          "sitemap": true,
+          "priority": 0.9,
+          "changefreq": "yearly"
+        },
+        "related": "{ tags: [\"hund\", \"ernaehrung\", \"trockenfutter\", \"nassfutter\"], limit: 4 }",
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
+        "faq": [
+          "question: \"Was ist für Hunde besser: Trockenfutter oder Nassfutter?",
+          "question: \"Ist Nassfutter gesünder als Trockenfutter?",
+          "question: \"Ist Trockenfutter schlecht für Hunde?",
+          "question: \"Kann ein Hund nur mit Nassfutter ernährt werden?",
+          "question: \"Kann ein Hund nur mit Trockenfutter ernährt werden?",
+          "question: \"Darf man Trockenfutter und Nassfutter mischen?",
+          "question: \"Wie berechnet man Mischfütterung beim Hund?",
+          "question: \"Ist Trockenfutter besser für die Zähne?",
+          "question: \"Macht Nassfutter weicheren Kot?",
+          "question: \"Welches Futter sättigt besser?",
+          "question: \"Ist Nassfutter bei Übergewicht besser?",
+          "question: \"Welches Futter ist bei einem schlechten Trinker sinnvoll?",
+          "question: \"Was ist bei Welpen wichtiger als die Futterform?",
+          "question: \"Wie lange darf geöffnetes Nassfutter stehen?",
+          "question: \"Wie lange bleibt geöffnetes Trockenfutter frisch?",
+          "question: \"Wann sollte die Tierarztpraxis die Futterwahl begleiten?"
+        ],
+        "contentPlatform": {
+          "version": 2,
+          "cluster": "hundeernaehrung",
+          "intent": "informational",
+          "animal": "dog",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Trocken- und Nassfutter können als passende Alleinfuttermittel bedarfsdeckend sein.",
+            "Verglichen werden müssen Kalorien und Tagesration, nicht nur Gramm oder Schalenvolumen.",
+            "Mischfütterung ist möglich, wenn beide Anteile gemeinsam die Tagesmenge bilden."
+          ],
+          "suitableFor": [
+            "Hundehalter, die zwischen Trocken-, Nass- oder Mischfütterung entscheiden",
+            "Gesunde Hunde ohne vorgeschriebene therapeutische Diät",
+            "Haushalte, die Wasseraufnahme, Portionierung und Alltag gemeinsam abwägen"
+          ],
+          "notSuitableFor": [
+            "Eigenständige Behandlung bestehender Erkrankungen",
+            "Berechnung therapeutischer Diäten",
+            "Ersatz einer tierärztlichen Ernährungsberatung bei auffälligen Symptomen"
+          ],
+          "checklist": [
+            "Alleinfuttermittel und richtige Lebensphase prüfen",
+            "Energiegehalt und vollständige Tagesration vergleichen",
+            "Leckerlis in die Tagesenergie einrechnen",
+            "Gewicht und Körperzustand regelmäßig kontrollieren",
+            "Lagerung und Napfhygiene einhalten"
+          ],
+          "mistakes": [
+            "Volle Trockenfutter- und volle Nassfutterration kombinieren",
+            "Qualität nur anhand einzelner Zutaten bewerten",
+            "Normale Kroketten mit Zahnpflege gleichsetzen",
+            "Futter ohne langsame Umstellung abrupt wechseln",
+            "Erkrankungssymptome nur durch eine andere Futterform behandeln"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "dog",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "comparisonLabel": "Futterautomaten für Hunde vergleichen"
+        }
+      },
+      "issues": []
+    },
+    {
       "file": "apps/pfotentechnik/src/content/pages/trockenfutter-oder-nassfutter-katze.md",
       "slug": "trockenfutter oder nassfutter katze",
       "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
@@ -8689,7 +9130,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -8776,7 +9217,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -9040,7 +9481,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "dog",
-          "comparisonHref": "/vergleiche/-fuer-hunde/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -9083,73 +9524,145 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/welche-portionsgroesse-ist-richtig.md",
       "slug": "welche portionsgroesse ist richtig",
-      "title": "Welche Portionsgröße ist beim Futterautomaten richtig?",
+      "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
       "type": "page",
       "data": {
-        "title": "Welche Portionsgröße ist beim Futterautomaten richtig?",
+        "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
         "slug": "welche-portionsgroesse-ist-richtig",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "So wird aus Hersteller-Portionen eine passende Futtermenge: Tagesration festlegen, Ausgaben wiegen und regelmäßig kontrollieren.",
+        "description": "Portionsgröße eines Futterautomaten zuverlässig in Gramm bestimmen: Tagesration umrechnen, Ausgabeschwankungen messen, Mahlzeiten planen und Fehler erkennen.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
-            "Portionsgröße",
-            "Portionsgrößen",
-            "richtige Portion",
-            "Portion einstellen"
+            "Futterautomat Portionsgröße",
+            "Futterautomat Portion einstellen",
+            "Futterautomat Portion Gramm",
+            "Futterautomat richtig einstellen",
+            "Katzenfutterautomat Tagesmenge",
+            "Futterautomat gibt zu viel Futter aus",
+            "Automatenportion messen"
           ],
           "contexts": [
-            "futterautomaten"
+            "Futterautomaten",
+            "Portionierung",
+            "Katzenfütterung",
+            "Hundefütterung",
+            "Futtermenge",
+            "Kalibrierung"
           ],
-          "priority": "high"
+          "priority": "high",
+          "maxOccurrences": 1
         },
         "categoryLabel": "Futterautomaten-Wissen",
         "categoryPath": "/wissen/",
         "heroImage": {
           "src": "../../assets/images/editorial/feeder-portion-size.webp",
-          "alt": "Welche Portionsgröße ist beim Futterautomaten richtig?"
+          "alt": "Trockenfutterportion aus einem Futterautomaten wird auf einer Küchenwaage kontrolliert"
         },
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-07-28",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "futterautomat",
           "portionen",
+          "kalibrierung",
           "ernaehrung",
           "katze",
-          "hund"
+          "hund",
+          "trockenfutter"
         ],
         "hub": {
           "sections": [
             "wissen"
           ],
-          "title": "Welche Portionsgröße ist richtig?",
-          "description": "Automatenportionen wiegen und aus der passenden Tagesration ableiten.",
+          "title": "Futterautomat richtig einstellen",
+          "description": "Geräteportionen wiegen, Schwankungen prüfen und aus der Tagesration ableiten.",
           "order": 61
         },
         "seo": {
-          "title": "Futterautomat: Welche Portionsgröße ist richtig?",
-          "description": "Portionsgröße am Futterautomaten richtig einstellen: Tagesration bestimmen, Ausgaben wiegen und Schwankungen kontrollieren.",
+          "title": "Futterautomat einstellen: Portionen in Gramm",
+          "description": "Portionsgröße am Futterautomaten messen und berechnen – mit Kalibrierung, Rechenbeispielen, Messprotokoll und Fehlerdiagnose.",
           "canonical": "/welche-portionsgroesse-ist-richtig/",
           "sitemap": true,
-          "priority": 0.7,
+          "priority": 0.85,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"futterautomat\", \"portionen\", \"ernaehrung\"], limit: 4 }",
+        "related": "{ tags: [\"futterautomat\", \"portionen\", \"ernaehrung\", \"kalibrierung\"], limit: 4 }",
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
         "faq": [
-          "question: \"Ist eine Portion bei jedem Futterautomaten gleich groß?",
-          "question: \"Wie messe ich eine Automatenportion?",
-          "question: \"Bestimmt der Automat den Futterbedarf?"
+          "question: \"Wie viel Gramm ist eine Portion beim Futterautomaten?",
+          "question: \"Wie messe ich eine Automatenportion richtig?",
+          "question: \"Wie berechne ich die Zahl der Geräteportionen?",
+          "question: \"Was mache ich, wenn die Zielmenge nicht genau einstellbar ist?",
+          "question: \"Reicht eine einzelne Testausgabe?",
+          "question: \"Warum ändert sich die Portion nach einem Futterwechsel?",
+          "question: \"Beeinflusst der Füllstand die Ausgabe?",
+          "question: \"Wie oft sollte ein Futterautomat neu kalibriert werden?",
+          "question: \"Bestimmt der Futterautomat den Futterbedarf?",
+          "question: \"Zählt die App-Anzeige als Nachweis der Fütterung?",
+          "question: \"Wie verteile ich die Tagesration auf mehrere Mahlzeiten?",
+          "question: \"Kann ein Automat zu viel Futter ausgeben?",
+          "question: \"Was bedeutet es, wenn der Motor läuft, aber kein Futter ankommt?",
+          "question: \"Wie stelle ich einen Kammerautomaten ein?",
+          "question: \"Wie stelle ich einen Nassfutterautomaten ein?",
+          "question: \"Hilft ein Mikrochip-Futterautomat bei der Portionierung?",
+          "question: \"Was ist im Mehrtierhaushalt wichtig?",
+          "question: \"Wann gehört die Portionierung in tierärztliche Hände?"
         ],
         "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "version": 2,
+          "cluster": "futterautomaten",
+          "intent": "informational",
+          "animal": "both",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Eine Geräteportion muss mit dem tatsächlich verwendeten Futter in Gramm gemessen werden.",
+            "Tagesration geteilt durch Gramm je Geräteportion ergibt die benötigte Zahl der Ausgaben.",
+            "Einzelwerte, Füllstand und Napfkontrolle sind wichtiger als die App-Anzeige allein."
+          ],
+          "suitableFor": [
+            "Vorratsautomaten für Trockenfutter",
+            "Halter, die eine vorhandene Tagesration technisch korrekt programmieren möchten",
+            "Kontrolle nach Futterwechsel, Reinigung oder auffälliger Ausgabe"
+          ],
+          "notSuitableFor": [
+            "Eigenständige Berechnung einer therapeutischen Ration",
+            "Unbeaufsichtigte Versorgung ohne Funktionskontrolle",
+            "Annahme, dass eine App-Ausgabe das tatsächliche Fressen beweist"
+          ],
+          "checklist": [
+            "Tagesration festlegen",
+            "Zehn Einzelausgaben wiegen",
+            "Durchschnitt und Spannweite berechnen",
+            "Mehrere Füllstände testen",
+            "Tagesplan und Napf regelmäßig kontrollieren"
+          ],
+          "mistakes": [
+            "Herstellerportion ungeprüft als Grammwert übernehmen",
+            "Nur eine einzelne Ausgabe messen",
+            "Nach Futterwechsel nicht neu kalibrieren",
+            "App-Protokoll mit Fressnachweis verwechseln",
+            "Weitere Näpfe und Leckerli nicht zur Tagesration rechnen"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
         },
         "recommendationJourney": {
           "mode": "filtered",
           "comparisonHref": "/vergleiche/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Passende Futterautomaten vergleichen"
         }
       },
       "issues": []
@@ -9369,7 +9882,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "dog",
-          "comparisonHref": "/vergleiche/-fuer-hunde/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-hunde/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -9549,19 +10062,19 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md",
       "slug": "wie gross sollte ein futterautomat sein",
-      "title": "Wie groß sollte ein Futterautomat sein?",
+      "title": "Wie groß sollte ein Futterautomat sein? Kapazität richtig berechnen",
       "type": "page",
       "data": {
-        "title": "Wie groß sollte ein Futterautomat sein?",
+        "title": "Wie groß sollte ein Futterautomat sein? Kapazität richtig berechnen",
         "slug": "wie-gross-sollte-ein-futterautomat-sein",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Die passende Größe eines Futterautomaten aus Tagesration, Futterart, Tierzahl und gewünschter Reichweite bestimmen.",
+        "description": "Die passende Größe eines Futterautomaten aus Tagesration, Tierzahl, Reichweite und Schüttdichte berechnen – mit Tabellen, Beispielen und Kaufcheckliste.",
         "category": "futterautomaten",
         "categoryLabel": "Futterautomaten",
         "categoryPath": "/smarte-futterautomaten/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-07-28",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -9571,22 +10084,46 @@
           "kapazitaet",
           "portionierung",
           "katze",
-          "hund"
+          "hund",
+          "trockenfutter",
+          "mehrtierhaushalt"
         ],
+        "linking": {
+          "keywords": [
+            "Futterautomat Größe",
+            "Futterautomat Kapazität",
+            "wie viel Liter Futterautomat",
+            "Futterautomat Liter in Gramm",
+            "Futterautomat für große Hunde",
+            "Futterautomat für zwei Katzen",
+            "Futterautomat Reichweite berechnen"
+          ],
+          "contexts": [
+            "Futterautomaten",
+            "Kapazität",
+            "Portionierung",
+            "Trockenfutter",
+            "Katzenfütterung",
+            "Hundefütterung",
+            "Mehrtierhaushalt"
+          ],
+          "priority": "high",
+          "maxOccurrences": 1
+        },
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Wie groß sollte ein Futterautomat sein?",
-          "description": "Kapazität nicht nach Litern, sondern nach Tagesration und sinnvoller Reichweite auswählen.",
+          "description": "Kapazität aus Tagesration, Schüttdichte und sinnvoller Reichweite bestimmen.",
           "order": 48
         },
         "seo": {
-          "title": "Wie groß sollte ein Futterautomat sein? Kapazität berechnen",
-          "description": "Futterautomat-Größe bestimmen: Tagesration, Liter und Gramm, Tierzahl, Frische, Napf und Portionsbereich richtig einordnen.",
+          "title": "Futterautomat-Größe berechnen: Liter & Gramm",
+          "description": "Wie groß muss ein Futterautomat sein? Kapazität aus Tagesration, Tierzahl, Reichweite und Gramm pro Liter berechnen – mit Tabelle.",
           "canonical": "/wie-gross-sollte-ein-futterautomat-sein/",
           "sitemap": true,
-          "priority": 0.8,
+          "priority": 0.85,
           "changefreq": "yearly"
         },
         "related": {
@@ -9594,32 +10131,88 @@
             "futterautomat",
             "portionierung",
             "katze",
-            "hund"
+            "hund",
+            "trockenfutter"
           ],
           "limit": 4
         },
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
         "faq": [
           "question: \"Wie viele Liter braucht ein Futterautomat für eine Katze?",
+          "question: \"Wie viele Liter braucht ein Futterautomat für einen Hund?",
           "question: \"Kann man Liter direkt in Kilogramm Trockenfutter umrechnen?",
-          "question: \"Ist ein größerer Futterautomat immer besser?"
+          "question: \"Wie messe ich Gramm pro Liter Trockenfutter?",
+          "question: \"Welche Reserve sollte eingeplant werden?",
+          "question: \"Ist ein größerer Futterautomat immer besser?",
+          "question: \"Wie viele Tage Reichweite sind sinnvoll?",
+          "question: \"Kann ich den Behälter bis zum Rand füllen?",
+          "question: \"Warum bleibt Futter im Automaten zurück?",
+          "question: \"Welche Behältergröße ist für zwei Katzen sinnvoll?",
+          "question: \"Reicht eine Doppelschale für zwei Tiere?",
+          "question: \"Wie groß muss der Napf sein?",
+          "question: \"Ist ein Katzenautomat für einen großen Hund geeignet, wenn genug Futter hineinpasst?",
+          "question: \"Welche Krokettengröße passt in einen Futterautomaten?",
+          "question: \"Wie oft sollte der Vorratsbehälter gereinigt werden?",
+          "question: \"Soll Trockenfutter im Originalbeutel bleiben?",
+          "question: \"Wie groß sollte ein Nassfutterautomat sein?",
+          "question: \"Wann ist ein großer Futterautomat ungeeignet?"
         ],
         "contentPlatform": {
-          "intent": "buying-guide",
-          "cluster": "futterautomaten"
+          "version": 2,
+          "cluster": "futterautomaten",
+          "intent": "informational",
+          "animal": "both",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Kapazität wird aus Tagesration, Tierzahl, Reichweite und gemessener Schüttdichte berechnet.",
+            "Das Nennvolumen ist nicht vollständig als zuverlässig ausgebbare Menge nutzbar.",
+            "Portionsbereich, Napf, Fresshöhe, Stabilität und Reinigung sind ebenso wichtig wie Liter."
+          ],
+          "suitableFor": [
+            "Trockenfutterautomaten mit Vorratsbehälter",
+            "Ein- und Mehrtierhaushalte mit bekannter Tagesration",
+            "Kaufentscheidung zwischen kompakten und großen Automaten"
+          ],
+          "notSuitableFor": [
+            "Ermittlung der medizinisch richtigen Tagesration",
+            "Nassfutterautomaten ausschließlich nach Literangabe",
+            "Planung unbeaufsichtigter mehrtägiger Versorgung ohne Betreuung"
+          ],
+          "checklist": [
+            "Futterbedarf in Gramm berechnen",
+            "Gramm pro Liter messen",
+            "Reserve und Restmenge einplanen",
+            "Portionsbereich und Napf prüfen",
+            "Außenmaße, Stabilität und Reinigung bewerten"
+          ],
+          "mistakes": [
+            "Liter pauschal in Kilogramm umrechnen",
+            "Maximale Herstellerkapazität mit nutzbarer Kapazität gleichsetzen",
+            "Automat für möglichst viele Wochen füllen",
+            "Napfgröße und Fresshöhe ignorieren",
+            "Mehrtierzugang nur über eine Doppelschale lösen"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
         },
         "recommendationJourney": {
           "mode": "filtered",
           "comparisonHref": "/vergleiche/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Passende Futterautomaten vergleichen"
         }
       },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "SOURCES_MISSING",
-          "message": "Keine Quellenmetadaten oder Quellenüberschrift erkannt."
-        }
-      ]
+      "issues": []
     },
     {
       "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md",
@@ -9677,69 +10270,155 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/wie-lange-bleibt-trockenfutter-frisch.md",
       "slug": "wie lange bleibt trockenfutter frisch",
-      "title": "Wie lange bleibt Trockenfutter frisch?",
+      "title": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
       "type": "page",
       "data": {
-        "title": "Wie lange bleibt Trockenfutter frisch?",
+        "title": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
         "slug": "wie-lange-bleibt-trockenfutter-frisch",
         "type": "knowledge",
         "layout": "knowledge",
-        "description": "Wie lange geöffnetes Trockenfutter frisch bleibt, wie du es richtig lagerst und woran du verdorbenes Futter erkennst.",
+        "description": "Wie lange geöffnetes Trockenfutter frisch bleibt, welche Sackgröße zur Tagesration passt und wie Originalbeutel, Vorratsbox und Futterautomat richtig genutzt werden.",
         "category": "tierernaehrung",
+        "categoryLabel": "Futterwissen",
+        "categoryPath": "/wissen/",
+        "publishedAt": "2026-07-12",
+        "updatedAt": "2026-07-28",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
+        "tags": [
+          "trockenfutter",
+          "lagerung",
+          "frische",
+          "haltbarkeit",
+          "futterautomat",
+          "hygiene",
+          "vorratsbehaelter"
+        ],
         "linking": {
           "keywords": [
             "Trockenfutter frisch",
             "Haltbarkeit von Trockenfutter",
             "Trockenfutter lagern",
             "geöffnetes Trockenfutter haltbar",
-            "Trockenfutter im Futterautomaten"
+            "wie lange hält Trockenfutter",
+            "Trockenfutter im Futterautomaten",
+            "Trockenfutter Originalbeutel oder Box",
+            "Trockenfutter nach dem Öffnen"
           ],
           "contexts": [
             "Futterautomaten",
             "Tierernährung",
             "Hundeernährung",
             "Katzenernährung",
-            "Hygiene"
+            "Hygiene",
+            "Vorrat",
+            "Futterlagerung"
           ],
           "priority": "high",
           "maxOccurrences": 1
         },
-        "categoryLabel": "Futterwissen",
-        "categoryPath": "/wissen/",
-        "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-14",
-        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
-        "tags": [
-          "trockenfutter",
-          "lagerung",
-          "frische",
-          "futterautomat",
-          "hygiene"
-        ],
         "hub": {
           "sections": [
             "wissen"
           ],
           "title": "Wie lange bleibt Trockenfutter frisch?",
-          "description": "Geöffnete Säcke, Vorratsbehälter und Futterautomaten richtig lagern.",
+          "description": "Frist nach dem Öffnen, passende Packungsgröße und Lagerung im Automaten berechnen.",
           "order": 47
         },
         "seo": {
-          "title": "Wie lange bleibt geöffnetes Trockenfutter frisch?",
-          "description": "Trockenfutter richtig lagern: Haltbarkeit nach dem Öffnen, Originalbeutel, Vorratsbox, Futterautomat und Warnzeichen für Verderb.",
+          "title": "Trockenfutter haltbar nach Öffnen: Tabelle & Rechner",
+          "description": "Wie lange bleibt Trockenfutter frisch? Herstellerfristen einordnen, Verbrauchsdauer berechnen und Futter in Originalbeutel, Box oder Automat lagern.",
           "canonical": "/wie-lange-bleibt-trockenfutter-frisch/",
           "sitemap": true,
-          "priority": 0.75,
+          "priority": 0.85,
           "changefreq": "yearly"
         },
-        "related": "{ tags: [\"trockenfutter\", \"futterautomat\", \"hygiene\"], limit: 4 }",
+        "related": {
+          "tags": [
+            "trockenfutter",
+            "futterautomat",
+            "hygiene",
+            "lagerung"
+          ],
+          "limit": 4
+        },
+        "premiumBlocks": [
+          "type: answer",
+          "type: quickFacts",
+          "type: checklist"
+        ],
         "faq": [
-          "question: \"Wie viele Wochen ist geöffnetes Trockenfutter haltbar?",
+          "question: \"Wie lange ist geöffnetes Trockenfutter haltbar?",
+          "question: \"Gilt das Mindesthaltbarkeitsdatum auch nach dem Öffnen?",
           "question: \"Soll Trockenfutter im Originalbeutel bleiben?",
-          "question: \"Kann Trockenfutter direkt in eine Kunststoffbox umgefüllt werden?",
+          "question: \"Kann ich Trockenfutter direkt in eine Futtertonne umfüllen?",
+          "question: \"Warum soll neues Futter nicht auf alte Reste gefüllt werden?",
           "question: \"Wie lange bleibt Trockenfutter im Futterautomaten frisch?",
-          "question: \"Woran erkenne ich verdorbenes Trockenfutter?"
-        ]
+          "question: \"Wie viel Trockenfutter sollte in den Automaten gefüllt werden?",
+          "question: \"Wie berechne ich, wie lange ein Futtersack reicht?",
+          "question: \"Welche Packungsgröße ist für eine Katze sinnvoll?",
+          "question: \"Welche Packungsgröße ist für zwei Tiere sinnvoll?",
+          "question: \"Ist Trockenfutter nach acht Wochen automatisch verdorben?",
+          "question: \"Woran erkenne ich ranziges Trockenfutter?",
+          "question: \"Woran erkenne ich Schimmel oder Feuchtigkeit?",
+          "question: \"Was tun bei Insekten oder Larven im Futter?",
+          "question: \"Darf Trockenfutter im Kühlschrank gelagert werden?",
+          "question: \"Kann Trockenfutter eingefroren werden?",
+          "question: \"Was muss ich bei einem Futterrückruf tun?",
+          "question: \"Wann sollte ich wegen möglichem verdorbenem Futter zum Tierarzt?"
+        ],
+        "contentPlatform": {
+          "version": 2,
+          "cluster": "futterautomaten",
+          "intent": "informational",
+          "animal": "both",
+          "decision": "auto",
+          "blocks": [
+            "summary",
+            "comparison",
+            "fit",
+            "checklist",
+            "mistakes"
+          ],
+          "summary": [
+            "Herstellerfrist nach dem Öffnen und Lagerbedingungen sind wichtiger als eine pauschale Wochenzahl.",
+            "Originalbeutel möglichst behalten und vollständig in einen sauberen, dicht schließenden Behälter stellen.",
+            "Packungsgröße über Sackgewicht geteilt durch Tagesration auf die Verbrauchsfrist abstimmen."
+          ],
+          "suitableFor": [
+            "Geöffnetes Trockenfutter für Hunde und Katzen",
+            "Vorratslagerung in Originalbeutel und Futtertonne",
+            "Trockenfutter in automatischen Vorratsfutterautomaten"
+          ],
+          "notSuitableFor": [
+            "Nass-, Frisch-, Roh- oder aufgetautes Futter",
+            "Freigabe auffälliger oder zurückgerufener Chargen",
+            "Ersatz produktspezifischer Herstellerhinweise"
+          ],
+          "checklist": [
+            "Frist nach Öffnung notieren",
+            "Verbrauchsdauer der Packung berechnen",
+            "Originalbeutel sicher verschließen",
+            "Behälter sauber, trocken und dicht halten",
+            "Futter und Tier auf Auffälligkeiten kontrollieren"
+          ],
+          "mistakes": [
+            "Nur auf das Mindesthaltbarkeitsdatum schauen",
+            "Großpackung kaufen, die monatelang geöffnet bleibt",
+            "Futter direkt in einen ungewaschenen Behälter nachfüllen",
+            "Automatenvorrat mit verlängerter Haltbarkeit verwechseln",
+            "Auffällige Kroketten nur teilweise aussortieren"
+          ],
+          "faqMode": "manual",
+          "theme": "amber"
+        },
+        "recommendationJourney": {
+          "mode": "filtered",
+          "comparisonHref": "/vergleiche/",
+          "comparisonLabel": "Passende Futterautomaten vergleichen"
+        }
       },
       "issues": []
     },
@@ -10124,7 +10803,7 @@
         "recommendationJourney": {
           "mode": "filtered",
           "animal": "cat",
-          "comparisonHref": "/vergleiche/-fuer-katzen/",
+          "comparisonHref": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "comparisonLabel": "Passende Modelle vergleichen"
         }
       },
@@ -21753,6 +22432,8 @@
           "label: \"Produkttyp",
           "label: \"Kapazität",
           "label: \"Futterart",
+          "label: \"Geeignet für",
+          "label: \"Portionierung",
           "label: \"Geeignete Tiere",
           "label: \"Krokettengröße",
           "label: \"Waage",
@@ -24106,9 +24787,10 @@
           ]
         },
         "price": {
-          "current": "null",
+          "current": 211.49,
           "currency": "EUR",
           "status": "unknown",
+          "checkedAt": "2026-07-27T21:12:57.566Z",
           "source": {
             "id": "manual",
             "label": "amzn.to",
@@ -24118,18 +24800,18 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://amzn.to/4fIdCfh",
+          "url": "https://amzn.to/4vShKiM",
           "rel": "sponsored nofollow noopener",
           "target": "_blank"
         },
         "rating": 4.4,
         "score": 88,
-        "priceState": "unknown",
-        "priceUpdated": "2026-07-27T20:36:34.073Z",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-27T21:12:57.566Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "unknown",
-        "availabilityUpdated": "2026-07-27T20:36:34.073Z",
+        "availabilityUpdated": "2026-07-27T21:12:57.566Z",
         "editorialStatus": "complete",
         "recommendationStatus": "limited",
         "maintenanceStatus": "required",
@@ -27761,8 +28443,8 @@
         "layout": "product",
         "testStatus": "manufacturer-data",
         "productStatus": "unknown",
-        "description": "25-Gramm-KI-Sensor zur Nachrüstung kompatibler Mikrochip-Katzenklappen, der Beute per Kamera erkennen und den Eintritt vorübergehend blockieren soll.",
-        "recommendation": "Eine seltene, aber sehr konkrete Speziallösung für Freigängerkatzen, die regelmäßig Mäuse oder Vögel ins Haus bringen. Vor dem Kauf müssen Klappenform, Steckdose und WLAN am Einbauort geprüft werden; eine garantierte Beuteerkennung gibt es nicht.",
+        "description": ">-",
+        "recommendation": ">-",
         "manufacturer": {
           "key": "zeromouse",
           "name": "ZeroMOUSE",
@@ -27781,7 +28463,8 @@
         },
         "seo": {
           "title": "ZeroMOUSE 2.0 im Check: KI gegen Beute",
-          "description": "ZeroMOUSE 2.0 im Datencheck: kompatible Katzenklappen, KI-Beuteerkennung, WLAN, Strombedarf, Abmessungen und wichtige Grenzen.",
+          "description": ">-",
+          "ZeroMOUSE 2.0 im Datencheck": "kompatible Katzenklappen, KI-Beuteerkennung, WLAN, Strombedarf, Abmessungen und",
           "canonical": "/produkt/zeromouse-2-0/",
           "sitemap": true,
           "priority": 0.8
@@ -27815,9 +28498,9 @@
             "alt": "ZeroMOUSE 2.0 im redaktionellen Produktvergleich"
           },
           "gallery": [
-            "src: \"../../assets/images/products/zeromouse-2-0/gallery-1.webp",
-            "src: \"../../assets/images/products/zeromouse-2-0/gallery-2.webp",
-            "src: \"../../assets/images/products/zeromouse-2-0/gallery-3.webp"
+            "src: ../../assets/images/products/zeromouse-2-0/gallery-1.webp",
+            "src: ../../assets/images/products/zeromouse-2-0/gallery-2.webp",
+            "src: ../../assets/images/products/zeromouse-2-0/gallery-3.webp"
           ]
         },
         "price": {
@@ -27863,7 +28546,7 @@
           ],
           "testedHandsOn": false,
           "lastVerifiedAt": "2026-07-26",
-          "note": "Redaktionelle Datenprüfung anhand Produktseite, Support-FAQ und Installationsanleitung. Die beworbene Erkennungsrate ist eine Herstellerangabe und wurde nicht unabhängig verifiziert."
+          "note": ">-"
         },
         "rating": 4.15,
         "score": 83,
@@ -27891,8 +28574,8 @@
           ]
         },
         "review": {
-          "summary": "ZeroMOUSE 2.0 ist ein 25 Gramm leichter KI-Sensor, der in den Tunnel einer kompatiblen Mikrochip-Katzenklappe eingesetzt wird, bei Annäherung Bilder aufnimmt und die Klappe bei erkannter Beute blockiert.",
-          "verdict": "Das Produkt adressiert ein echtes Problem, das normale Mikrochip-Klappen nicht lösen. Seine Stärke ist die klare Spezialisierung. Die Kaufentscheidung hängt jedoch vollständig von Kompatibilität, WLAN, Stromversorgung und realer Erkennungsqualität ab."
+          "summary": ">-",
+          "verdict": ">-"
         },
         "strengths": [
           "echter Zusatznutzen gegenüber einer gewöhnlichen Mikrochip-Katzenklappe",
@@ -27910,7 +28593,7 @@
           "ungewöhnlich hoher Preis für ein spezialisiertes Add-on"
         ],
         "experience": {
-          "summary": "ZeroMOUSE 2.0 ist nur dann ein sinnvoller Kauf, wenn Beuteeintrag tatsächlich regelmäßig vorkommt. Für Haushalte ohne dieses Problem ist eine normale Mikrochip-Katzenklappe die rationalere Lösung.",
+          "summary": ">-",
           "positives": [
             "klar beschriebener Ablauf von Annäherung, Bildaufnahme, KI-Prüfung und Blockierung",
             "Hersteller bietet Kompatibilitätscheck und dokumentierte Installationsbeispiele",
@@ -27921,42 +28604,42 @@
             "wenn das Gesicht nicht vollständig erfasst wird, kann keine sichere Entscheidung möglich sein",
             "Herstellerkommunikation nennt teils 95, teils 99 Prozent kompatible Mikrochip-Klappen"
           ],
-          "support": "Der Hersteller bietet einen Kompatibilitätscheck, Support und ein Rückgabefenster. Bestand und konkrete Bedingungen können sich ändern.",
-          "methodology": "Auswertung der offiziellen Produktseite, Support-FAQ und Installationsanleitung. Keine eigene Installation und kein eigener Test mit lebender oder präparierter Beute.",
-          "maintenance": "Kamerafenster und Bewegungssensor sauber halten, WLAN-Stabilität regelmäßig kontrollieren, Kabel gegen Zug und Feuchtigkeit sichern und App-Ereignisse auf Fehlentscheidungen prüfen.",
-          "reliability": "Bei Stromausfall funktioniert die vorhandene Klappe ohne ZeroMOUSE weiter. Bei WLAN-Verlust meldet das Gerät laut Support einen Fehler, die Beuteerkennung steht dann nicht zuverlässig zur Verfügung."
+          "support": ">-",
+          "methodology": ">-",
+          "maintenance": ">-",
+          "reliability": ">-"
         },
         "alternatives": [],
         "comparisons": [],
         "specs": [
-          "label: \"Produkttyp",
-          "label: \"Abmessungen",
-          "label: \"Gewicht",
-          "label: \"Kamera",
-          "label: \"Nachtsicht",
-          "label: \"Beuteerkennung",
-          "label: \"Kompatibilität",
-          "label: \"Direkte Montage",
-          "label: \"PetSafe-Montage",
-          "label: \"Stromversorgung",
-          "label: \"WLAN",
-          "label: \"Bluetooth",
-          "label: \"Außeneinsatz",
-          "label: \"Öffnungszeit",
-          "label: \"Lieferumfang",
-          "label: \"Geeignet für"
+          "label: Produkttyp",
+          "label: Abmessungen",
+          "label: Gewicht",
+          "label: Kamera",
+          "label: Nachtsicht",
+          "label: Beuteerkennung",
+          "label: Kompatibilität",
+          "label: Direkte Montage",
+          "label: PetSafe-Montage",
+          "label: Stromversorgung",
+          "label: WLAN",
+          "label: Bluetooth",
+          "label: Außeneinsatz",
+          "label: Öffnungszeit",
+          "label: Lieferumfang",
+          "label: Geeignet für"
         ],
         "faq": [
-          "question: \"Ist ZeroMOUSE 2.0 eine vollständige Katzenklappe?",
-          "question: \"Passt ZeroMOUSE an jede Mikrochip-Katzenklappe?",
-          "question: \"Braucht die Katze einen Mikrochip?",
-          "question: \"Funktioniert ZeroMOUSE ohne WLAN?",
-          "question: \"Was passiert bei einem Stromausfall?",
-          "question: \"Ist die beworbene Erkennungsrate von über 99 Prozent garantiert?",
-          "question: \"Was passiert bei einem unklaren Bild?",
-          "question: \"Kann ZeroMOUSE mehrere Katzen verwenden?",
-          "question: \"Ist das Produkt für draußen geeignet?",
-          "question: \"Lohnt sich ZeroMOUSE bei gelegentlicher Beute?"
+          "question: Ist ZeroMOUSE 2.0 eine vollständige Katzenklappe?",
+          "question: Passt ZeroMOUSE an jede Mikrochip-Katzenklappe?",
+          "question: Braucht die Katze einen Mikrochip?",
+          "question: Funktioniert ZeroMOUSE ohne WLAN?",
+          "question: Was passiert bei einem Stromausfall?",
+          "question: Ist die beworbene Erkennungsrate von über 99 Prozent garantiert?",
+          "question: Was passiert bei einem unklaren Bild?",
+          "question: Kann ZeroMOUSE mehrere Katzen verwenden?",
+          "question: Ist das Produkt für draußen geeignet?",
+          "question: Lohnt sich ZeroMOUSE bei gelegentlicher Beute?"
         ],
         "priceCategory": "premium",
         "useCase": "Nachrüstung einer kompatiblen Mikrochip-Katzenklappe zur Verringerung von Beuteeintrag durch Freigängerkatzen",
@@ -28012,7 +28695,13 @@
           }
         }
       },
-      "issues": []
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "META_DESCRIPTION_LENGTH",
+          "message": "Description sollte ungefähr 90–180 Zeichen lang sein."
+        }
+      ]
     }
   ]
 }
