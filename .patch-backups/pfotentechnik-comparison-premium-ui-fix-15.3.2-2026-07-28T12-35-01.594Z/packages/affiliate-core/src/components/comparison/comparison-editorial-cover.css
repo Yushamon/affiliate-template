@@ -76,7 +76,7 @@
 }
 .comparison-cover__media picture,
 .comparison-cover__image { display: block; width: 100%; height: 100%; }
-.comparison-cover__media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.comparison-cover__media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 66% center; }
 
 .comparison-cover-filters {
   grid-area: filters;
@@ -93,9 +93,9 @@
   display: grid;
   min-width: 0;
   gap: .15rem;
-  min-height: 3.9rem;
+  min-height: 4.25rem;
   align-content: center;
-  padding: .55rem .7rem;
+  padding: .65rem .75rem;
   border: 1px solid var(--pt-color-border);
   border-radius: var(--pt-radius-md);
   background: var(--pt-color-surface);
@@ -194,7 +194,7 @@
   .comparison-cover h1 { font-size: clamp(1.9rem, 9vw, 2.55rem); }
   .comparison-cover__fact { padding: .65rem; }
   .comparison-cover__fact-icon { width: 1.75rem; height: 1.75rem; flex-basis: 1.75rem; }
-  .comparison-cover-filter { min-height: 3.75rem; padding-inline: .6rem; }
+  .comparison-cover-filter { min-height: 4rem; padding-inline: .65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

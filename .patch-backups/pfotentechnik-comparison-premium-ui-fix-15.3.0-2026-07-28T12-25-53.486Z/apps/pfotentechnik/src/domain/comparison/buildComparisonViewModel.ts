@@ -768,10 +768,9 @@ export function buildComparisonViewModel({
     title: data.title,
     description: data.description,
     eyebrow: `${data.icon ?? "↔"} Vergleich`,
-    heroImage: {
+    heroImage: data.heroImage ?? {
       src: resolveComparisonHeroImage(data.slug),
-      alt: data.heroImage?.alt ?? "Katze und Hund mit moderner Technik für den Haustieralltag."
-    
+      alt: "Katze und Hund mit moderner Technik für den Haustieralltag."
     },
     facts: [
       { label: "Modelle", value: String(views.length) },

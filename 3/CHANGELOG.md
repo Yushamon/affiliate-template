@@ -1,46 +1,33 @@
 # Changelog
 
-## 15.2.3
+## 15.3.3
 
-- Globales Comparison-Release-Gate vom technischen Installer-Erfolg getrennt.
-- `comparison:release:check` bleibt sichtbar, ist aber bei offenen manuellen/globalen Closure-Punkten nicht mehr install-blockierend.
-- Technical-SEO-Audit wird vor dem globalen Statuscheck ausgeführt.
-- Abschlussmeldung unterscheidet klar zwischen erfolgreicher Hero-Installation und globaler Release-Bereitschaft.
+- Zusätzlichen 15.3.2-CSS-Block vollständig entfernt.
+- Comparison-CSS ausschließlich über kleine Änderungen bestehender Regeln angepasst.
+- CSS-Budget vor und nach Installation messen.
+- Abbruch nur bei einer durch den Patch verursachten Budgetverschlechterung.
+- Bestehende globale Budgetüberschreitung bleibt sichtbar, aber nicht Comparison-blockierend.
+- Keine Baseline-Erhöhung.
 
-## 15.2.2
+## 15.3.2
 
-- `pt-control` zusätzlich am statischen `.comparison-cover-filter__control`-Wrapper ergänzt.
-- Post-Write-Verifikation für Select und Wrapper ergänzt.
-- Verhindert erneute Auditfehler durch nicht adoptierte statische Control-Klassen.
+- CSS-Budget-Recovery ohne Baseline-Erhöhung.
+- Veraltete 15.3.0/15.3.1-CSS-Dateien und Imports werden entfernt.
+- UI-Regeln kompakt in `comparison-editorial-cover.css` konsolidiert.
+- Keine zusätzlichen Root-Blöcke, Hex-Farben oder `!important`-Regeln.
 
-## 15.2.1
+## 15.3.1
 
-- Design-System-Adoption für Hero-Filter korrigiert (`pt-control`, `pt-button`).
-- Bestehenden Header-Auditfund durch gezielte `pt-button`-Adoption behoben.
-- Header wird vor Änderungen gesichert.
-- Komponenten-Audit bleibt verpflichtend.
+- Ungültigen Aufruf des nicht vorhandenen Workspace-Scripts `check` entfernt.
+- Verwendet stattdessen das vorhandene `design-system:check` und den Astro-Build als harte Prüfpfade.
+- Workspace-Scripts werden vor der Ausführung aus `apps/pfotentechnik/package.json` erkannt.
+- Wiederholte Ausführung über einen teilweise angewendeten 15.3.0-Stand unterstützt.
 
-## 15.2.0
+## 15.3.0
 
-- Release-Paket mit README, Changelog und Prompt-Sammlung ergänzt.
-- Installer auf Versionskennung 15.2.0 angehoben.
-- Automatische Hero-Zuordnung nach `<slug>-editorial-hero.webp` beibehalten.
-- Unterstützung für Einzelimport über `--hero-slug` und `--hero-image` dokumentiert.
-- Unterstützung für Stapelimport über `--hero-dir` dokumentiert.
-- Standard-Fallback und striktes Hero-Audit dokumentiert.
-- Prompt-Vorlagen für GPS-Tracker, Futterautomaten, Trinkbrunnen und Mikrochip-Futterautomaten ergänzt.
-
-## 15.1.0
-
-- Automatische Hero-Erkennung pro Vergleichsslug eingeführt.
-- Fallback auf `default-editorial-hero.webp` ergänzt.
-- Hero-Audit und strikte Hero-Prüfung ergänzt.
-- Stapelübernahme vorhandener Editorial-Heros ergänzt.
-
-## 15.0.0
-
-- Neuer Editorial-Cover-Hero.
-- Mobile 2×2-Filterstruktur.
-- Redaktionelle Top-Empfehlung.
-- Light- und Dark-Mode-Grundlage.
-- Cleanup alter Hero-Stile und Backups.
+- Comparison-Hero-Asset-Priorität korrigiert.
+- Kontextbasierte Filter-Vorauswahl und URL-Synchronisierung ergänzt.
+- Filter-UI mobile-first verdichtet.
+- Dark-Mode-Oberflächen und Kontraste konsolidiert.
+- Burger-/Close-Control und mobiles Navigationspanel korrigiert.
+- Sticky CTA, Safe Area und Top-Empfehlung visuell stabilisiert.

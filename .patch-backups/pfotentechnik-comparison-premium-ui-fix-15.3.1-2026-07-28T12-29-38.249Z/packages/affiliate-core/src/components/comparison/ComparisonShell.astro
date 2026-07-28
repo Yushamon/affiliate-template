@@ -16,13 +16,14 @@ import "./comparison-premium-seo.css";
 import "./comparison-ux-polish-3.2.css";
 import "./comparison-mobile-price-fix-4.0.1.css";
 import "./comparison-cta-system.css";
+import "./comparison-premium-fix-15.3.0.css";
 
 type Props = { model: ComparisonViewModel };
 const { model } = Astro.props as Props;
 const winner = model.verdict.winner;
 ---
 
-<div class="comparison-shell comparison-shell--premium" data-comparison-cover-version="15.3.3" data-dark-mode-ready="true">
+<div class="comparison-shell comparison-shell--premium" data-comparison-cover-version="15.3.0" data-dark-mode-ready="true">
   <ComparisonHero
     eyebrow={model.eyebrow}
     title={model.title}
