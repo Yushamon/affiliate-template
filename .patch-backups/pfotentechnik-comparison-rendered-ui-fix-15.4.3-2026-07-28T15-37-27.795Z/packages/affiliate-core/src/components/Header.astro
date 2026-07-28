@@ -41,7 +41,7 @@ const mobileGroups = hasExplicitMobileGroups
   : [{ label: "", links }];
 ---
 
-<header class="site-header-v2" data-site-header data-header-version="15.4.3">
+<header class="site-header-v2" data-site-header data-header-version="15.4.1">
   <div class="header-container-v2">
     <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
       <span class="brand-mark" aria-hidden="true">
@@ -72,6 +72,7 @@ const mobileGroups = hasExplicitMobileGroups
       class="main-nav-v2"
       aria-label="Hauptnavigation"
       data-main-navigation
+      hidden
     >
       <div class="main-nav-v2__desktop">
         {links.map((link) => (
@@ -126,14 +127,14 @@ const mobileGroups = hasExplicitMobileGroups
       const setOpen = (open: boolean) => {
         button.setAttribute("aria-expanded", String(open));
         button.setAttribute("aria-label", open ? "Navigation schließen" : "Navigation öffnen");
+        navigation.hidden = !open && !desktop.matches;
         navigation.toggleAttribute("data-open", open);
-        navigation.setAttribute("aria-hidden", String(!open && !desktop.matches));
         header.toggleAttribute("data-navigation-open", open);
         document.documentElement.classList.toggle("pt-navigation-open", open);
       };
 
       header.dataset.navigationReady = "true";
-      navigation.setAttribute("aria-hidden", String(!desktop.matches));
+      navigation.hidden = !desktop.matches;
       setOpen(false);
 
       button.addEventListener("click", (event) => {
@@ -157,7 +158,7 @@ const mobileGroups = hasExplicitMobileGroups
       });
 
       desktop.addEventListener("change", (event) => {
-        navigation.setAttribute("aria-hidden", String(!event.matches));
+        navigation.hidden = !event.matches;
         setOpen(false);
       });
     });
@@ -181,15 +182,6 @@ const mobileGroups = hasExplicitMobileGroups
   .site-header-v2 .main-nav-v2 {
     min-width: 0;
     margin-left: auto;
-  }
-
-  @media (min-width: 64rem) {
-    .site-header-v2 .main-nav-v2 {
-      visibility: visible;
-      opacity: 1;
-      pointer-events: auto;
-      transform: none;
-    }
   }
 
   .site-header-v2 .main-nav-v2__desktop {
@@ -230,10 +222,8 @@ const mobileGroups = hasExplicitMobileGroups
     .site-header-v2 .nav-toggle-button {
       position: relative;
       display: grid;
-      inline-size: 3.5rem;
-      block-size: 3.5rem;
-      min-inline-size: 3.5rem;
-      min-block-size: 3.5rem;
+      inline-size: 3.25rem;
+      block-size: 3.25rem;
       place-items: center;
       padding: 0;
       border: 1px solid var(--pt-color-border);
@@ -242,12 +232,7 @@ const mobileGroups = hasExplicitMobileGroups
       background: var(--pt-color-surface);
       box-shadow: var(--pt-shadow-xs);
       cursor: pointer;
-      overflow: visible;
-      touch-action: manipulation;
       appearance: none;
-      transition:
-        border-color var(--pt-transition-fast),
-        background-color var(--pt-transition-fast);
     }
 
     .site-header-v2 .nav-toggle-button::before,
@@ -264,16 +249,14 @@ const mobileGroups = hasExplicitMobileGroups
     .site-header-v2 .nav-toggle__bars {
       position: relative;
       display: grid;
-      width: 1.6rem;
-      min-width: 1.6rem;
-      gap: .34rem;
-      overflow: visible;
+      width: 1.45rem;
+      gap: .3rem;
     }
 
     .site-header-v2 .nav-toggle__bars > span {
       display: block;
       width: 100%;
-      height: 3px;
+      height: 2px;
       border-radius: var(--pt-radius-pill);
       background: currentColor;
       transform-origin: center;
@@ -283,7 +266,7 @@ const mobileGroups = hasExplicitMobileGroups
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:first-child {
-      transform: translateY(.43rem) rotate(45deg) scaleX(1.08);
+      transform: translateY(.4rem) rotate(45deg);
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:nth-child(2) {
@@ -291,7 +274,7 @@ const mobileGroups = hasExplicitMobileGroups
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:last-child {
-      transform: translateY(-.43rem) rotate(-45deg) scaleX(1.08);
+      transform: translateY(-.4rem) rotate(-45deg);
     }
 
     .site-header-v2 .main-nav-v2 {
@@ -309,26 +292,15 @@ const mobileGroups = hasExplicitMobileGroups
       color: var(--pt-color-text);
       background: var(--pt-color-surface);
       box-shadow: var(--pt-shadow-lg);
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(-.35rem);
-      transform-origin: top center;
-      contain: layout paint;
-      will-change: transform, opacity;
       overscroll-behavior: contain;
-      transition:
-        opacity 120ms ease-out,
-        transform 120ms ease-out,
-        visibility 0s linear 120ms;
+    }
+
+    .site-header-v2 .main-nav-v2[hidden] {
+      display: none;
     }
 
     .site-header-v2 .main-nav-v2[data-open] {
-      visibility: visible;
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0);
-      transition-delay: 0s;
+      display: block;
     }
 
     .site-header-v2 .main-nav-v2__desktop {
@@ -392,51 +364,6 @@ const mobileGroups = hasExplicitMobileGroups
       color: var(--pt-color-text-muted);
       font-size: 1.3rem;
       line-height: 1;
-    }
-  }
-
-
-  @media (min-width: 64rem) {
-    .site-header-v2,
-    .site-header-v2 .header-container-v2,
-    .site-header-v2 .main-nav-v2,
-    .site-header-v2 .main-nav-v2__desktop,
-    .site-header-v2 .main-nav-v2__desktop a {
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
-
-    .site-header-v2 .main-nav-v2 {
-      contain: layout style;
-      will-change: auto;
-    }
-
-    html[data-theme="dark"] .site-header-v2,
-    html.dark .site-header-v2,
-    body[data-theme="dark"] .site-header-v2,
-    body.dark .site-header-v2 {
-      background: var(--pt-color-surface);
-    }
-
-    html[data-theme="dark"] .site-header-v2 .main-nav-v2,
-    html.dark .site-header-v2 .main-nav-v2,
-    body[data-theme="dark"] .site-header-v2 .main-nav-v2,
-    body.dark .site-header-v2 .main-nav-v2 {
-      background: var(--pt-color-surface);
-      box-shadow: none;
-    }
-
-    .site-header-v2 .main-nav-v2__desktop a {
-      transition:
-        color var(--pt-transition-fast),
-        background-color var(--pt-transition-fast);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .site-header-v2 .main-nav-v2,
-    .site-header-v2 .nav-toggle__bars > span {
-      transition-duration: .01ms;
     }
   }
 </style>

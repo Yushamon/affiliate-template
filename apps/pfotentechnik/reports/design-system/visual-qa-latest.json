@@ -1,147 +1,37 @@
 {
-  "generatedAt": "2026-07-28T13:08:58.725Z",
+  "generatedAt": "2026-07-28T15:37:29.856Z",
   "totals": {
-    "pages": 168,
+    "pages": 203,
     "types": {
       "Admin": 8,
-      "Ratgeber": 46,
+      "Ratgeber": 80,
       "Hersteller": 20,
+      "Startseite": 1,
       "Kaufberatung": 1,
       "Produkt": 68,
       "Vergleich": 25
     },
-    "warnings": 378,
+    "warnings": 320,
     "severe": 0
   },
   "pages": [
     {
-      "route": "/futterautomat-hund/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 18,
-        "nestedSurfaceRisk": 6,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 69,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 6
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/futterautomat-katze/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 12,
-        "nestedSurfaceRisk": 5,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 28,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 5
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/futterautomat-und-ernaehrung/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 19,
-        "nestedSurfaceRisk": 8,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 52,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 8
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/gps-tracker/",
-      "type": "Ratgeber",
+      "route": "/produkt/cat-mate-335-pet-fountain/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 2,
         "primitiveButtons": 1,
-        "chips": 0,
+        "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 18,
-        "nestedSurfaceRisk": 8,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 42,
+        "headings": 37,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
@@ -149,154 +39,6 @@
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
           "value": "1/2"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 8
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 69,
-        "nestedSurfaceRisk": 34,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 34
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hund-ist-muede/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 12,
-        "nestedSurfaceRisk": 6,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 62,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 6
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/aqara-smart-pet-feeder-c1/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/cat-mate-335-pet-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 2,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
         },
         {
           "level": "warning",
@@ -315,7 +57,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -333,7 +75,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -352,7 +94,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -370,7 +112,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -389,7 +131,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -407,44 +149,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/cat-mate-shell-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -463,7 +168,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -481,44 +186,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/catit-pixi-vision-smart-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -537,7 +205,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -555,81 +223,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/garmin-alpha-tt-25/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/honeyguardian-a305d/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -648,7 +242,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -666,44 +260,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -722,7 +279,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -740,7 +297,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -759,7 +316,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -777,7 +334,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -796,7 +353,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -814,7 +371,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -833,7 +390,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -851,7 +408,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -870,7 +427,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -888,7 +445,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -907,7 +464,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -925,7 +482,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -944,7 +501,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -962,7 +519,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -981,7 +538,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -999,81 +556,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/pawbby-smart-pet-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/pawsync-smart-pet-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1092,7 +575,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1110,118 +593,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-eversweet-5-mini/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-eversweet-max-2-uvc/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-eversweet-max-cordless/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1240,7 +612,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1258,44 +630,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-eversweet-solo-se/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1314,7 +649,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1332,44 +667,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-fresh-element-infinity/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1388,7 +686,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1406,7 +704,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1425,7 +723,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1443,44 +741,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-yumshare-dual/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1499,7 +760,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1517,44 +778,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-air-automatic-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1573,7 +797,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1591,44 +815,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-capsule-dog-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1647,7 +834,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1665,7 +852,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1684,7 +871,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1702,118 +889,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-dockstream-cordless/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-dockstream-rfid-smart/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-glacier-ultrafiltration/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1832,7 +908,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1850,44 +926,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-granary-camera-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1906,7 +945,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1924,44 +963,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-granary-wifi-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -1980,7 +982,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -1998,266 +1000,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-polar-wet-food-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-space-smart-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-stainless-steel-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petsafe-healthy-pet-simply-feed/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petsafe-smart-feed-2/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2276,7 +1019,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2294,7 +1037,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2313,7 +1056,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2331,7 +1074,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2350,7 +1093,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2368,7 +1111,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2387,7 +1130,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2405,7 +1148,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2424,7 +1167,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2442,7 +1185,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2461,7 +1204,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2479,155 +1222,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/wopet-cube-air-ca10/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/wopet-heritage-view-camera-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/wopet-patrol-f07-pro/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/wopet-pioneer-f01-plus/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2646,7 +1241,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2664,44 +1259,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
-        },
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/xiaomi-smart-pet-fountain-2/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2720,7 +1278,7 @@
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
-        "primitiveButtons": 0,
+        "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
@@ -2738,7 +1296,7 @@
         {
           "level": "warning",
           "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/2"
+          "value": "1/2"
         },
         {
           "level": "warning",
@@ -2753,327 +1311,29 @@
       ]
     },
     {
-      "route": "/vergleiche/",
-      "type": "Vergleich",
+      "route": "/",
+      "type": "Startseite",
       "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
+        "buttons": 3,
+        "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 25,
-        "nestedSurfaceRisk": 12,
+        "surfaces": 38,
+        "nestedSurfaceRisk": 14,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 31,
+        "headings": 46,
         "h1": 1,
-        "main": 2,
+        "main": 1,
         "darkMarkers": 0
       },
       "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
         {
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
-          "value": 12
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wissen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 75,
-        "nestedSurfaceRisk": 37,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 80,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 37
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/affiliate-hinweis/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 0,
-        "nestedSurfaceRisk": 0,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 0,
-        "headings": 9,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/berater/futterautomat/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 1,
-        "nestedSurfaceRisk": 0,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 7,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/biofilm-im-katzentrinkbrunnen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/datenschutz-bei-gps-trackern/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 23,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/datenschutz/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 0,
-        "nestedSurfaceRisk": 0,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 0,
-        "headings": 14,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 21,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/fuetterungszeiten-nach-alter/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 52,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/futterautomat-bei-stromausfall/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 79,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "value": 14
         },
         {
           "level": "warning",
@@ -3087,7 +1347,7 @@
       "type": "Ratgeber",
       "metrics": {
         "buttons": 4,
-        "primitiveButtons": 3,
+        "primitiveButtons": 4,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 27,
@@ -3119,7 +1379,7 @@
       "type": "Ratgeber",
       "metrics": {
         "buttons": 5,
-        "primitiveButtons": 4,
+        "primitiveButtons": 5,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 21,
@@ -3147,20 +1407,20 @@
       ]
     },
     {
-      "route": "/futterautomat-im-urlaub/",
+      "route": "/futterautomat-hund/",
       "type": "Ratgeber",
       "metrics": {
         "buttons": 3,
-        "primitiveButtons": 2,
+        "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 4,
+        "surfaces": 18,
+        "nestedSurfaceRisk": 6,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 41,
+        "headings": 69,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3168,8 +1428,8 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "code": "NESTED_SURFACE_RISK",
+          "value": 6
         },
         {
           "level": "warning",
@@ -3179,20 +1439,20 @@
       ]
     },
     {
-      "route": "/futterautomat-richtig-reinigen/",
+      "route": "/futterautomat-katze/",
       "type": "Ratgeber",
       "metrics": {
         "buttons": 3,
-        "primitiveButtons": 2,
+        "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
+        "surfaces": 12,
+        "nestedSurfaceRisk": 5,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 175,
+        "headings": 28,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3200,8 +1460,8 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "code": "NESTED_SURFACE_RISK",
+          "value": 5
         },
         {
           "level": "warning",
@@ -3211,15 +1471,79 @@
       ]
     },
     {
-      "route": "/futtermenge-hund/",
+      "route": "/futterautomat-und-ernaehrung/",
       "type": "Ratgeber",
       "metrics": {
         "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 19,
+        "nestedSurfaceRisk": 8,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 52,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 8
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/gps-tracker/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 2,
         "primitiveButtons": 2,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 18,
+        "nestedSurfaceRisk": 8,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 42,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 8
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 69,
+        "nestedSurfaceRisk": 34,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
@@ -3232,8 +1556,8 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "code": "NESTED_SURFACE_RISK",
+          "value": 34
         },
         {
           "level": "warning",
@@ -3243,20 +1567,20 @@
       ]
     },
     {
-      "route": "/futtermenge-katze/",
+      "route": "/hund-ist-muede/",
       "type": "Ratgeber",
       "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
+        "buttons": 1,
+        "primitiveButtons": 1,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
+        "surfaces": 12,
+        "nestedSurfaceRisk": 6,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 85,
+        "headings": 62,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3264,8 +1588,8 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "code": "NESTED_SURFACE_RISK",
+          "value": 6
         },
         {
           "level": "warning",
@@ -3275,654 +1599,14 @@
       ]
     },
     {
-      "route": "/gps-oder-bluetooth/",
-      "type": "Ratgeber",
+      "route": "/produkt/aqara-smart-pet-feeder-c1/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 19,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/gps-tracker-richtig-befestigen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 26,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/aqara/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 31,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/cat-mate/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 42,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/catit/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 32,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/garmin/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 39,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/honeyguardian/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 41,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/imipaw/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 38,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/oneisall/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 40,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/paj-gps/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 38,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/pawbby/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 38,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/pawsync/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 31,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/petkit/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 43,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/petlibro/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 46,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/petsafe/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 32,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/surefeed/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 40,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/tractive/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 41,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/weenect/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 40,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/wopet/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 43,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/xiaomi/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 39,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hersteller/zeromouse/",
-      "type": "Hersteller",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
         "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
@@ -3936,7 +1620,7 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -3947,12 +1631,12 @@
       ]
     },
     {
-      "route": "/hund-entlaufen-gps-sinnvoll/",
-      "type": "Ratgeber",
+      "route": "/produkt/cat-mate-shell-fountain/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
         "nestedSurfaceRisk": 3,
@@ -3960,15 +1644,15 @@
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 22,
+        "headings": 37,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -3979,236 +1663,12 @@
       ]
     },
     {
-      "route": "/hund-frisst-nicht/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 97,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hund-hat-durchfall/",
-      "type": "Ratgeber",
+      "route": "/produkt/catit-pixi-vision-smart-feeder/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 43,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hund-trinkt-viel/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 23,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hund-trinkt-zu-wenig/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 79,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/impressum/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 0,
-        "nestedSurfaceRisk": 0,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 0,
-        "headings": 11,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/kalk-katzentrinkbrunnen-entfernen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 21,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katze-an-trinkbrunnen-gewoehnen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 21,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katze-entlaufen-gps-sinnvoll/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
         "nestedSurfaceRisk": 3,
@@ -4216,15 +1676,15 @@
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 22,
+        "headings": 37,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -4235,252 +1695,28 @@
       ]
     },
     {
-      "route": "/katze-frisst-nicht/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 136,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katze-trinkt-viel/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 110,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 24,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzentrinkbrunnen-laut-pumpe/",
-      "type": "Ratgeber",
+      "route": "/produkt/garmin-alpha-tt-25/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 26,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 26,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzentrinkbrunnen-ohne-filter/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 24,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzentrinkbrunnen-richtig-reinigen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 39,
+        "headings": 37,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/katzenwasser-taeglich-wechseln/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 20,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -4491,92 +1727,28 @@
       ]
     },
     {
-      "route": "/kontakt/",
-      "type": "Ratgeber",
+      "route": "/produkt/honeyguardian-a305d/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 0,
-        "nestedSurfaceRisk": 0,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 0,
-        "headings": 8,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/nierenkranke-katze-trinken/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
         "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 20,
+        "headings": 35,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 20,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -4587,29 +1759,29 @@
       ]
     },
     {
-      "route": "/reichweite-von-gps-trackern/",
-      "type": "Ratgeber",
+      "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "type": "Produkt",
       "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 2,
-        "chips": 0,
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 20,
+        "headings": 37,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "2/3"
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
         },
         {
           "level": "warning",
@@ -4619,28 +1791,860 @@
       ]
     },
     {
-      "route": "/seniorenhunde-richtig-versorgen/",
-      "type": "Ratgeber",
+      "route": "/produkt/pawbby-smart-pet-feeder/",
+      "type": "Produkt",
       "metrics": {
         "buttons": 1,
-        "primitiveButtons": 0,
-        "chips": 0,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 39,
+        "headings": 35,
         "h1": 1,
-        "main": 1,
+        "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/pawsync-smart-pet-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-eversweet-5-mini/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-2-uvc/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-cordless/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-se/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-fresh-element-infinity/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-yumshare-dual/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-air-automatic-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-capsule-dog-fountain/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-cordless/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-rfid-smart/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-glacier-ultrafiltration/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-granary-camera-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-granary-wifi-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-polar-wet-food-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-space-smart-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-stainless-steel-fountain/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petsafe-smart-feed-2/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/wopet-cube-air-ca10/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/wopet-heritage-view-camera-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/wopet-patrol-f07-pro/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/wopet-pioneer-f01-plus/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
           "value": "0/1"
         },
         {
@@ -4655,7 +2659,7 @@
       "type": "Ratgeber",
       "metrics": {
         "buttons": 4,
-        "primitiveButtons": 3,
+        "primitiveButtons": 4,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 23,
@@ -4683,20 +2687,20 @@
       ]
     },
     {
-      "route": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "route": "/smarte-haustiertechnik/",
       "type": "Ratgeber",
       "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 0,
+        "buttons": 4,
+        "primitiveButtons": 4,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
+        "surfaces": 22,
+        "nestedSurfaceRisk": 10,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 16,
+        "headings": 59,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -4704,8 +2708,72 @@
       "findings": [
         {
           "level": "warning",
-          "code": "BUTTON_ADOPTION_LOW",
-          "value": "0/1"
+          "code": "NESTED_SURFACE_RISK",
+          "value": 10
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 2,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 30,
+        "nestedSurfaceRisk": 11,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 53,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 11
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 25,
+        "nestedSurfaceRisk": 12,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 31,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 12
         },
         {
           "level": "warning",
@@ -4719,7 +2787,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 26,
-        "primitiveButtons": 25,
+        "primitiveButtons": 26,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 59,
@@ -4751,7 +2819,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 51,
@@ -4783,7 +2851,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 30,
-        "primitiveButtons": 29,
+        "primitiveButtons": 30,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 67,
@@ -4815,7 +2883,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -4839,6 +2907,70 @@
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
           "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 21,
+        "nestedSurfaceRisk": 8,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 61,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 8
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wissen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 75,
+        "nestedSurfaceRisk": 37,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 80,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 37
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
         }
       ]
     },
@@ -4924,11 +3056,1361 @@
       ]
     },
     {
+      "route": "/affiliate-hinweis/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 0,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 0,
+        "headings": 9,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/berater/futterautomat/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 1,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 7,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/biofilm-im-katzentrinkbrunnen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/datenschutz-bei-gps-trackern/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 23,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/datenschutz/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 0,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 0,
+        "headings": 14,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 21,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/fuetterungszeiten-nach-alter/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 52,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/futterautomat-bei-stromausfall/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 79,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/futterautomat-im-urlaub/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 41,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/futterautomat-richtig-reinigen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 175,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/futtermenge-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/futtermenge-katze/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 85,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/gps-oder-bluetooth/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 6,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 19,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/gps-tracker-richtig-befestigen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 26,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/aqara/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 31,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/cat-mate/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 42,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/catit/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 32,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/garmin/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 39,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/honeyguardian/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 41,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/imipaw/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 38,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/oneisall/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 40,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/paj-gps/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 38,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/pawbby/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 38,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/pawsync/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 31,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/petkit/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 43,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 46,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/petsafe/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 32,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/surefeed/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 40,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/tractive/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 41,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/weenect/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 40,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/wopet/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 43,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/xiaomi/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 39,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/zeromouse/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-entlaufen-gps-sinnvoll/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-frisst-nicht/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 97,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-hat-durchfall/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 43,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-trinkt-viel/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 23,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-trinkt-zu-wenig/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 79,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/impressum/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 0,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 0,
+        "headings": 11,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/kalk-katzentrinkbrunnen-entfernen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 21,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katze-an-trinkbrunnen-gewoehnen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 21,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katze-entlaufen-gps-sinnvoll/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katze-frisst-nicht/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 136,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katze-trinkt-viel/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 110,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 24,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzentrinkbrunnen-laut-pumpe/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 26,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 26,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzentrinkbrunnen-ohne-filter/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 24,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzentrinkbrunnen-richtig-reinigen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 39,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/katzenwasser-taeglich-wechseln/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/kaufberatung/",
       "type": "Kaufberatung",
       "metrics": {
         "buttons": 7,
-        "primitiveButtons": 6,
+        "primitiveButtons": 7,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 4,
@@ -4951,11 +4433,470 @@
       ]
     },
     {
+      "route": "/kontakt/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 0,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 0,
+        "headings": 8,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/nierenkranke-katze-trinken/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/reichweite-von-gps-trackern/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 6,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/seniorenhunde-richtig-versorgen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 39,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 16,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/so-bewerten-wir/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 6,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 26,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 63,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen-fuer-kitten-sicher/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 24,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 26,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkbrunnen-seniorenkatzen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 24,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkmenge-hund-messen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 23,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trinkmenge-katze-messen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 90,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-katze/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 137,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/uebergewicht-bei-katzen-vermeiden/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 50,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 47,
@@ -4982,7 +4923,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 24,
-        "primitiveButtons": 23,
+        "primitiveButtons": 24,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 59,
@@ -5009,7 +4950,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 34,
-        "primitiveButtons": 33,
+        "primitiveButtons": 34,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 77,
@@ -5036,7 +4977,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5063,7 +5004,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5090,7 +5031,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 28,
-        "primitiveButtons": 27,
+        "primitiveButtons": 28,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 65,
@@ -5117,7 +5058,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 47,
@@ -5144,7 +5085,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 51,
@@ -5171,7 +5112,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 26,
-        "primitiveButtons": 25,
+        "primitiveButtons": 26,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 59,
@@ -5198,7 +5139,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5225,7 +5166,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 47,
@@ -5252,7 +5193,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 51,
@@ -5279,7 +5220,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 30,
-        "primitiveButtons": 29,
+        "primitiveButtons": 30,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 71,
@@ -5306,7 +5247,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 32,
-        "primitiveButtons": 31,
+        "primitiveButtons": 32,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 73,
@@ -5333,7 +5274,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5360,7 +5301,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 20,
-        "primitiveButtons": 19,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5387,7 +5328,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 28,
-        "primitiveButtons": 27,
+        "primitiveButtons": 28,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 65,
@@ -5414,7 +5355,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 32,
-        "primitiveButtons": 31,
+        "primitiveButtons": 32,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 73,
@@ -5441,7 +5382,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 16,
-        "primitiveButtons": 15,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 39,
@@ -5468,7 +5409,7 @@
       "type": "Vergleich",
       "metrics": {
         "buttons": 22,
-        "primitiveButtons": 21,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 49,
@@ -5487,6 +5428,546 @@
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
           "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 20,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 34,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/warum-katzen-fliessendes-wasser-trinken/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/warum-schlingt-mein-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wasserstelle-katze-richtiger-standort/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 21,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 87,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/welpen-richtig-fuettern/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 46,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-funktionieren-gps-tracker/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 25,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 28,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-genau-sind-gps-tracker/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 100,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 22,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 100,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 21,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-viel-wasser-braucht-ein-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 23,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-viel-wasser-braucht-eine-katze/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 49,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-viele-mahlzeiten-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 28,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-viele-mahlzeiten-katze/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 27,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/wie-viele-wasserstellen-katze/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 2,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 49,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 133,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
         }
       ]
     },

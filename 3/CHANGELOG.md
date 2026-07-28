@@ -1,5 +1,24 @@
 # Changelog
 
+## 15.4.3
+
+- Menü-Performance-Fix 15.4.2 übernommen.
+- Burger-Button auf 56 × 56 px vergrößert.
+- Hamburger-Linien verbreitert und auf 3 px verstärkt.
+- Close-X verlängert, zentriert und gegen Clipping abgesichert.
+- Desktop-Dark-Mode von Backdrop-Blur und transparenten Flächen befreit.
+- Dark-Mode-Schatten und großflächige Verläufe reduziert.
+- Keine neue CSS-Datei.
+
+## 15.4.2
+
+- Langsames `hidden`/`display`-Toggling der mobilen Navigation entfernt.
+- Menü wird vorgerendert und compositor-basiert eingeblendet.
+- Öffnungsanimation auf 120 ms begrenzt.
+- `touch-action: manipulation` ergänzt.
+- Globale Button-Transition am Toggle auf Border und Hintergrund begrenzt.
+- Layout/Paint über `contain` isoliert.
+
 ## 15.4.1
 
 - `pt-button` am Header-Toggle wiederhergestellt.
