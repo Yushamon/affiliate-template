@@ -53,10 +53,7 @@ const comparisonRoute = read(sourceFiles.comparisonRoute);
 check("Comparison übergibt publishedAt", comparisonRoute.includes("publishedAt={comparison.publishedAt}"));
 check("Comparison übergibt updatedAt", comparisonRoute.includes("updatedAt={comparison.updatedAt ?? comparison.publishedAt}"));
 check("ItemList hat stabile ID", comparisonRoute.includes('#item-list'));
-check(
-  "ItemList enthält Product-Items",
-  /itemListElement:[\\s\\S]*?item:[\\s\\S]*?["@']@type["@']:\\s*["@']Product["@']/m.test(comparisonRoute)
-);
+check("ItemList enthält Product-Items", comparisonRoute.includes('"@type": "Product"'));
 check("ItemList-Reihenfolge dokumentiert", comparisonRoute.includes("ItemListOrderAscending"));
 
 const adminLayout = read(sourceFiles.adminLayout);
@@ -82,7 +79,7 @@ function walk(directory, matcher = () => true) {
 
 function parseJsonLd(html) {
   const values = [];
-  const regex = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\\s\\S]*?)<\/script>/gi;
+  const regex = /<script[^>]+type=["']application\/ld\\+json["'][^>]*>([\\s\\S]*?)<\/script>/gi;
   for (const match of html.matchAll(regex)) {
     try {
       const parsed = JSON.parse(match[1].trim());
@@ -98,40 +95,13 @@ function parseJsonLd(html) {
   return values;
 }
 
-function collectSchemaTypes(value, result = new Set(), seen = new Set()) {
-  if (!value || typeof value !== "object" || seen.has(value)) return result;
-  seen.add(value);
-
-  if (Array.isArray(value)) {
-    for (const entry of value) collectSchemaTypes(entry, result, seen);
-    return result;
-  }
-
-  const type = value["@type"];
-  if (Array.isArray(type)) {
-    for (const entry of type) result.add(entry);
-  } else if (type) {
-    result.add(type);
-  }
-
-  for (const [key, child] of Object.entries(value)) {
-    if (key === "@context") continue;
-    if (child && typeof child === "object") {
-      collectSchemaTypes(child, result, seen);
-    }
-  }
-
-  return result;
-}
-
 function schemaTypes(html) {
-  return [
-    ...parseJsonLd(html).reduce(
-      (result, entry) => collectSchemaTypes(entry, result),
-      new Set()
-    )
-  ];
+  return parseJsonLd(html).flatMap((entry) => {
+    const type = entry?.["@type"];
+    return Array.isArray(type) ? type : type ? [type] : [];
+  });
 }
+
 function canonicalValues(html) {
   return [...html.matchAll(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*>/gi)]
     .map((match) => match[1]);
@@ -153,7 +123,7 @@ if (!sourceOnly) {
   if (fs.existsSync(dist)) {
     const sitemapFiles = walk(
       dist,
-      (file) => /sitemap.*\.xml$/i.test(path.basename(file))
+      (file) => /sitemap.*\\.xml$/i.test(path.basename(file))
     );
     check("Sitemap-Dateien vorhanden", sitemapFiles.length > 0, String(sitemapFiles.length));
 
@@ -223,8 +193,8 @@ if (!sourceOnly) {
     check("Alle Admin-Seiten sind noindex", adminWithoutNoindex.length === 0, adminWithoutNoindex.join(", "));
 
     const targetSchemas = [
-      ["smarte-futterautomaten/index.html", ["Article"], "Ratgeber"],
-      ["vergleiche/beste-futterautomaten-ohne-wlan/index.html", ["WebPage", "ItemList"], "Comparison"],
+      ["futterautomat-ohne-wlan/index.html", ["Article"], "Ratgeber"],
+      ["vergleiche/vergleiche/beste-futterautomaten-ohne-wlan/index.html", ["WebPage", "ItemList"], "Comparison"],
       ["produkt/petlibro-polar-wet-food-feeder/index.html", ["WebPage", "Product"], "Produkt"],
       ["hersteller/petlibro/index.html", ["Article"], "Hersteller"]
     ];

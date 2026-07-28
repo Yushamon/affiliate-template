@@ -130,24 +130,11 @@ const comparisonItemListSchema = {
   itemListOrder: "https://schema.org/ItemListOrderAscending",
   numberOfItems: model.products.length,
   // Übersichtsseite: vollständige Product-Daten stehen auf den Produktseiten.
-  itemListElement: model.products.map((product, index) => {
-    const productUrl = new URL(
-      product.href,
-      Astro.site ?? Astro.url
-    ).href;
-
-    return {
-      "@type": "ListItem",
-      position: index + 1,
-      url: productUrl,
-      item: {
-        "@type": "Product",
-        "@id": `${productUrl}#product`,
-        name: product.title,
-        url: productUrl
-      }
-    };
-  })
+  itemListElement: model.products.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: new URL(product.href, Astro.site ?? Astro.url).href
+  }))
 };
 
 const comparisonNextSteps = buildComparisonNextSteps({
