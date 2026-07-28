@@ -306,7 +306,7 @@ Unabhängig von der Bauart sollte eine zweite Wasserstelle vorhanden sein. Ein l
 
 Der Vergleich priorisiert Hundegröße, nutzbare Trinkfläche, Kapazität und Reinigung vor App oder Sonderfunktionen. Die sechs Modelle wurden bewusst kuratiert. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
-Vertiefend helfen [Trinkbrunnen für Hunde und Katzen](/trinkbrunnen/), [Trinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/) und [Wie viel Wasser braucht ein Hund?](/wie-viel-wasser-braucht-ein-hund/).
+Vertiefend helfen [Trinkbrunnen für Hunde und Katzen](/trinkbrunnen/), [Trinkbrunnen richtig reinigen](/trinkbrunnen-richtig-reinigen/) und [Wie viel Wasser braucht ein Hund?](/wasserbedarf-hund/).
 
 ## Fazit
 
@@ -329,4 +329,4 @@ Der Vergleich richtet sich an Tierhalter, die nicht nur Funktionen zählen, sond
 
 - [Alle Vergleiche](/vergleiche/)
 - [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
-- [Redaktion und Bewertungsgrundsätze](/so-bewerten-wir/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)

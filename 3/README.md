@@ -1,39 +1,23 @@
-# PfotenTechnik: Stromausfall-Content-Konsolidierung 1.0.0
+# PfotenTechnik Comparison Release Closure 14.0.11
 
-Der Patch:
+Behebt den durch 14.0.10 ausgelösten YAML-Fehler und stellt den inzwischen
+vorhandenen Ratgeber zu Trockenfutter/Nassfutter für Hunde wieder her.
 
-- ersetzt `futterautomat-bei-stromausfall.md` durch die ausführliche SEO-Fassung,
-- entfernt `futterautomat-batterie-oder-netzteil.md`,
-- ersetzt interne Links auf die alte URL,
-- entfernt das alte Hero-Bild nur dann, wenn es nach der Konsolidierung nirgends mehr referenziert wird,
-- ergänzt permanente 301-Redirects mit und ohne abschließenden Slash,
-- prüft nach dem Build Route, Sitemap und die kopierte `_redirects`-Datei,
-- führt den Repository-Audit aus,
-- legt vor Änderungen ein Backup unter `.patch-backups/` an,
-- rollt Änderungen bei fehlgeschlagener Verifikation zurück.
+## Enthalten
 
-## Windows PowerShell
+- Repariert fehlende Leerzeichen nach YAML-Schlüsseln, insbesondere `src:../../...`
+- Erkennt die neue Hundefutter-Seite automatisch
+- Verlinkt den tatsächlichen Canonical beziehungsweise Slug
+- Stellt Trinkbrunnen-Vertiefungen nur wieder her, wenn die Zielseite real existiert
+- Parst alle Vergleichs-Frontmatter vor dem Build
+- Führt Build und Release-Audit aus
+- Erstellt Backups und einen Report
 
-```powershell
-node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs
-```
-
-## macOS / Linux
+## Ausführen
 
 ```bash
-node ./2/apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs
+node 3/pfotentechnik-comparison-release-closure-14.0.11.mjs --check
+node 3/pfotentechnik-comparison-release-closure-14.0.11.mjs
 ```
 
-## Nur prüfen
-
-```powershell
-node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs --check
-```
-
-## Ohne Build installieren
-
-```powershell
-node .\2\apply-pfotentechnik-power-outage-consolidation-1.0.0.mjs --skip-build
-```
-
-Entpacke den gesamten ZIP-Inhalt gemeinsam in denselben Ordner, damit der Installer den `payload`-Ordner findet.
+Ein Revert von 14.0.10 ist nicht nötig.

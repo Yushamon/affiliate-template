@@ -246,7 +246,7 @@ faq:
       Nicht grundsätzlich. Viele Tiere profitieren weiterhin von mehreren gut erreichbaren Wasserstellen, besonders in
       Mehrtierhaushalten.
 heroImage:
-  src: ../../assets/images/products/oneisall-7l-dog-water-fountain/comparison.webp
+  src:../../assets/images/products/oneisall-7l-dog-water-fountain/comparison.webp
   alt: Beste Trinkbrunnen für Hunde – redaktionelles Vergleichsbild
 canonical: /vergleiche/beste-trinkbrunnen-fuer-hunde/
 ---

@@ -483,7 +483,7 @@ Der Vergleich richtet sich an Tierhalter, die nicht nur Funktionen zählen, sond
 
 - [Alle Vergleiche](/vergleiche/)
 - [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
-- [Redaktion und Bewertungsgrundsätze](/so-bewerten-wir/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)
 
 ## Unsere Empfehlung
 

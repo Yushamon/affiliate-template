@@ -263,4 +263,4 @@ Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare He
 
 - [Alle Vergleiche](/vergleiche/)
 - [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
-- [Redaktion und Bewertungsgrundsätze](/so-bewerten-wir/)
+- [Redaktion und Bewertungsgrundsätze](/redaktion/)
