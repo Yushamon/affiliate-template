@@ -87,10 +87,6 @@ criteria:
     label: Reinigung
     format: auto
     fallback: –
-  - key: profil
-    label: Redaktionelle Einordnung
-    format: text
-    fallback: –
 automaticRecommendations:
   enabled: true
 recommendation:

@@ -1,80 +1,9 @@
-# Comparison Data Coverage – Phase 2
+# Comparison Data Coverage – Release Closure
 
-Erstellt: 2026-07-25T05:40:36.729Z
-
-- Schwellenwert: 95 %
-- Abdeckung: 87.7 %
-- aufgelöst: 469
-- offen: 66
-- Legacy-values: 24
-- Objektstruktur-Kompatibilität: 0 Vergleiche
-- Status: NICHT BESTANDEN
-
-## Offene Zellen
-
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `kapazitaet`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-5l-cordless-fountain` → `stromversorgung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `kapazitaet`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-solo-2-fountain` → `stromversorgung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-3-pro-uvc` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-3-pro-uvc` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-2l-cordless-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-3-2l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-7l-dog-water-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-7l-dog-water-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-ultra` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-ultra` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-ultra` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-max-cordless` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petlibro-dockstream-rfid-smart` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `xiaomi-smart-pet-fountain-2` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `cat-mate-335-pet-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `cat-mate-335-pet-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petlibro-capsule-dog-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petlibro-capsule-dog-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petlibro-glacier-ultrafiltration` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `cat-mate-shell-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `cat-mate-shell-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `oneisall-2-2l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` → `petkit-eversweet-5-mini` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `kapazitaet`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-5l-cordless-fountain` → `stromversorgung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `kapazitaet`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-solo-2-fountain` → `stromversorgung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-3-pro-uvc` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-3-pro-uvc` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-2l-cordless-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-3-2l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-7l-dog-water-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-7l-dog-water-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-ultra` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-ultra` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-ultra` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-max-cordless` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petlibro-dockstream-rfid-smart` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `xiaomi-smart-pet-fountain-2` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `cat-mate-335-pet-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `cat-mate-335-pet-fountain` → `filter`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petlibro-capsule-dog-fountain` → `material`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petlibro-capsule-dog-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petlibro-glacier-ultrafiltration` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `cat-mate-shell-fountain` → `lautstaerke`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `cat-mate-shell-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `oneisall-2-2l-cordless-fountain` → `reinigung`
-- `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` → `petkit-eversweet-5-mini` → `lautstaerke`
+Status: BESTANDEN
+Vergleiche: 24
+Quellabdeckung: 86.8 %
+Gerenderte Abdeckung: 100 %
+Sichtbare Kriterien: 131
+Ausgeblendete unvollständige Kriterien: 40
+Schwellenwert: 95 %

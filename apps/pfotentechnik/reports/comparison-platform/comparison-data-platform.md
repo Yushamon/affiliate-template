@@ -1,156 +1,46 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-07-25T05:14:38.602Z
+Erstellt: 2026-07-28T03:59:13.032Z
 
-- Vergleiche: 13
-- Produkte: 65
-- Items: 87
-- alte feste values-Felder: 0
-- bewusste Overrides: 50
-- zentral aufgelöste Zellen: 445
-- nicht aufgelöste Zellen: 141
-- zentrale Datenabdeckung: 75.9 %
+**Status: BESTANDEN**
 
-## Befunde
+- Vergleiche: 24 / 24
+- Quellabdeckung: 86.8 %
+- öffentlich gerenderte Abdeckung: 100 %
+- alte values-Felder: 462
+- bewusste Overrides: 214
 
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · kapazitaet: Kein zentraler Wert für kapazitaet.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-5l-cordless-fountain · stromversorgung: Kein zentraler Wert für stromversorgung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · kapazitaet: Kein zentraler Wert für kapazitaet.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-solo-2-fountain · stromversorgung: Kein zentraler Wert für stromversorgung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-3-pro-uvc · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-3-pro-uvc · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-2l-cordless-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-3-2l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-7l-dog-water-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-7l-dog-water-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-ultra · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-ultra · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-ultra · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-max-cordless · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petlibro-dockstream-rfid-smart · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · xiaomi-smart-pet-fountain-2 · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · cat-mate-335-pet-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · cat-mate-335-pet-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petlibro-capsule-dog-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petlibro-capsule-dog-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petlibro-glacier-ultrafiltration · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · cat-mate-shell-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · cat-mate-shell-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · oneisall-2-2l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md` · petkit-eversweet-5-mini · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · kapazitaet: Kein zentraler Wert für kapazitaet.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-5l-cordless-fountain · stromversorgung: Kein zentraler Wert für stromversorgung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · kapazitaet: Kein zentraler Wert für kapazitaet.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-solo-2-fountain · stromversorgung: Kein zentraler Wert für stromversorgung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-3-pro-uvc · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-3-pro-uvc · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-2l-cordless-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-3-2l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-7l-dog-water-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-7l-dog-water-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-ultra · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-ultra · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-ultra · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-max-cordless · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petlibro-dockstream-rfid-smart · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · xiaomi-smart-pet-fountain-2 · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · cat-mate-335-pet-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · cat-mate-335-pet-fountain · filter: Kein zentraler Wert für filter.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petlibro-capsule-dog-fountain · material: Kein zentraler Wert für material.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petlibro-capsule-dog-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petlibro-glacier-ultrafiltration · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · cat-mate-shell-fountain · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · cat-mate-shell-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · oneisall-2-2l-cordless-fountain · reinigung: Kein zentraler Wert für reinigung.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md` · petkit-eversweet-5-mini · lautstaerke: Kein zentraler Wert für lautstaerke.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/gps-tracker-ohne-abo.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
-- **COMPARISON_VALUE_UNRESOLVED** – `src/content/comparisons/kleine-gps-tracker-fuer-katzen.md` · : Kein zentraler Wert für undefined.
+## Vergleichsseiten
+
+| Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
+|---|---:|---:|---:|---|
+| `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
+| `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
+| `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
+| `beste-futterautomaten-fuer-kleine-hunde` | 3 | 3 | 5 | OK |
+| `beste-futterautomaten-fuer-mehrtierhaushalte` | 3 | 3 | 4 | OK |
+| `beste-futterautomaten-fuer-nassfutter` | 5 | 9 | 0 | OK |
+| `beste-futterautomaten-fuer-seniorenkatzen` | 3 | 3 | 3 | OK |
+| `beste-futterautomaten-fuer-welpen` | 3 | 3 | 5 | OK |
+| `beste-futterautomaten-fuer-zwei-katzen` | 4 | 10 | 0 | OK |
+| `beste-futterautomaten-mit-akku` | 3 | 4 | 2 | OK |
+| `beste-futterautomaten-mit-edelstahl-napf` | 3 | 4 | 2 | OK |
+| `beste-futterautomaten-mit-kamera` | 4 | 8 | 0 | OK |
+| `beste-futterautomaten-ohne-wlan` | 3 | 4 | 0 | OK |
+| `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
+| `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
+| `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
+| `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
+| `beste-trinkbrunnen-fuer-katzen` | 7 | 7 | 0 | OK |
+| `futterautomat-fuer-grosse-hunde` | 3 | 4 | 2 | OK |
+| `futterautomat-gegen-schlingen` | 3 | 3 | 3 | OK |
+| `futterautomat-mit-app` | 5 | 3 | 5 | OK |
+| `gps-tracker-mit-langer-akkulaufzeit` | 7 | 6 | 0 | OK |
+| `gps-tracker-ohne-abo` | 2 | 6 | 0 | OK |
+| `kleine-gps-tracker-fuer-katzen` | 3 | 6 | 1 | OK |
+
+## Blocker
+
+- Keine.
+
+Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.

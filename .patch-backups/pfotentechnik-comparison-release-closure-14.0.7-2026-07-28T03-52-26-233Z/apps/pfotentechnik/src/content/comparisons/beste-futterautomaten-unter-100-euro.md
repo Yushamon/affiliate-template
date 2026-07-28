@@ -85,15 +85,6 @@ criteria:
     label: Preis-Leistung
     format: auto
     fallback: –
-  - key: profil
-    label: Redaktionelle Einordnung
-    format: text
-    fallback: –
-  - key: hersteller
-    label: Hersteller
-    source: manufacturer.name
-    format: text
-    fallback: –
 automaticRecommendations:
   enabled: true
 recommendation:

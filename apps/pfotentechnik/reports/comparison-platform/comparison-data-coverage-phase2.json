@@ -1,611 +1,158 @@
 {
-  "generatedAt": "2026-07-25T05:40:36.729Z",
+  "generatedAt": "2026-07-28T03:59:13.041Z",
   "threshold": 95,
-  "passed": false,
+  "passed": true,
   "summary": {
-    "comparisons": 13,
-    "products": 65,
-    "cells": 535,
-    "resolved": 469,
-    "unresolved": 66,
-    "coverage": 87.7,
-    "legacyValues": 24,
-    "objectStructuredComparisons": 0
+    "comparisons": 24,
+    "sourceCoverage": 86.8,
+    "renderedCoverage": 100,
+    "visibleRows": 131,
+    "hiddenRows": 40
   },
-  "unresolvedCells": [
+  "comparisons": [
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "kapazitaet",
-      "criterionLabel": "Kapazität",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-berufstaetige",
+      "visibleRows": 3,
+      "hiddenRows": 3,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-hunde",
+      "visibleRows": 10,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-katzen",
+      "visibleRows": 10,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-kleine-hunde",
+      "visibleRows": 3,
+      "hiddenRows": 5,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
+      "visibleRows": 3,
+      "hiddenRows": 4,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "stromversorgung",
-      "criterionLabel": "Stromversorgung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-nassfutter",
+      "visibleRows": 9,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "kapazitaet",
-      "criterionLabel": "Kapazität",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-seniorenkatzen",
+      "visibleRows": 3,
+      "hiddenRows": 3,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-welpen",
+      "visibleRows": 3,
+      "hiddenRows": 5,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-fuer-zwei-katzen",
+      "visibleRows": 10,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-mit-akku",
+      "visibleRows": 4,
+      "hiddenRows": 2,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-mit-edelstahl-napf",
+      "visibleRows": 4,
+      "hiddenRows": 2,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "stromversorgung",
-      "criterionLabel": "Stromversorgung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-mit-kamera",
+      "visibleRows": 8,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-3-pro-uvc",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-ohne-wlan",
+      "visibleRows": 4,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-3-pro-uvc",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "beste-futterautomaten-unter-100-euro",
+      "visibleRows": 3,
+      "hiddenRows": 5,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-2l-cordless-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "beste-gps-tracker-fuer-hunde",
+      "visibleRows": 4,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-3-2l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-gps-tracker-fuer-katzen",
+      "visibleRows": 8,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-7l-dog-water-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "beste-trinkbrunnen-fuer-hunde",
+      "visibleRows": 7,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-7l-dog-water-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "beste-trinkbrunnen-fuer-katzen",
+      "visibleRows": 7,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
+      "slug": "futterautomat-fuer-grosse-hunde",
+      "visibleRows": 4,
+      "hiddenRows": 2,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
+      "slug": "futterautomat-gegen-schlingen",
+      "visibleRows": 3,
+      "hiddenRows": 3,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "futterautomat-mit-app",
+      "visibleRows": 3,
+      "hiddenRows": 5,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-max-cordless",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "gps-tracker-mit-langer-akkulaufzeit",
+      "visibleRows": 6,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petlibro-dockstream-rfid-smart",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
+      "slug": "gps-tracker-ohne-abo",
+      "visibleRows": 6,
+      "hiddenRows": 0,
+      "passed": true
     },
     {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "xiaomi-smart-pet-fountain-2",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "cat-mate-335-pet-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "cat-mate-335-pet-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petlibro-capsule-dog-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petlibro-capsule-dog-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petlibro-glacier-ultrafiltration",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "cat-mate-shell-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "cat-mate-shell-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "oneisall-2-2l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-hunde",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
-      "product": "petkit-eversweet-5-mini",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "kapazitaet",
-      "criterionLabel": "Kapazität",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-5l-cordless-fountain",
-      "criterion": "stromversorgung",
-      "criterionLabel": "Stromversorgung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "kapazitaet",
-      "criterionLabel": "Kapazität",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-solo-2-fountain",
-      "criterion": "stromversorgung",
-      "criterionLabel": "Stromversorgung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-3-pro-uvc",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-3-pro-uvc",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-2l-cordless-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-3-2l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-7l-dog-water-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-7l-dog-water-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-ultra",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-max-cordless",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petlibro-dockstream-rfid-smart",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "xiaomi-smart-pet-fountain-2",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "cat-mate-335-pet-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "cat-mate-335-pet-fountain",
-      "criterion": "filter",
-      "criterionLabel": "Filter",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petlibro-capsule-dog-fountain",
-      "criterion": "material",
-      "criterionLabel": "Material",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petlibro-capsule-dog-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petlibro-glacier-ultrafiltration",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "cat-mate-shell-fountain",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "cat-mate-shell-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "oneisall-2-2l-cordless-fountain",
-      "criterion": "reinigung",
-      "criterionLabel": "Reinigung",
-      "resolved": false,
-      "value": null
-    },
-    {
-      "comparison": "beste-trinkbrunnen-fuer-katzen",
-      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "product": "petkit-eversweet-5-mini",
-      "criterion": "lautstaerke",
-      "criterionLabel": "Lautstärke",
-      "resolved": false,
-      "value": null
+      "slug": "kleine-gps-tracker-fuer-katzen",
+      "visibleRows": 6,
+      "hiddenRows": 1,
+      "passed": true
     }
   ]
 }

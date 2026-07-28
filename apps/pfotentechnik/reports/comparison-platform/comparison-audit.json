@@ -1,29 +1,17 @@
 {
-  "generatedAt": "2026-07-27T21:07:08.812Z",
+  "generatedAt": "2026-07-28T03:59:12.039Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 24,
     "products": 68,
-    "manufacturers": 18,
+    "manufacturers": 19,
     "usedProducts": 39,
     "productCoveragePercent": 57.4,
-    "errors": 5,
+    "errors": 0,
     "warnings": 9,
-    "qualityScore": 91
+    "qualityScore": 96
   },
   "byCode": [
-    {
-      "code": "COMPARISON_VISIBLE_ROWS_TOO_FEW",
-      "count": 4,
-      "category": "content",
-      "level": "error"
-    },
-    {
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "count": 1,
-      "category": "integrity",
-      "level": "error"
-    },
     {
       "code": "HERO_IMAGE_MISSING",
       "count": 7,
@@ -39,37 +27,13 @@
   ],
   "byFile": [
     {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
-      "errors": 1,
-      "warnings": 1,
-      "total": 2
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
-      "errors": 1,
-      "warnings": 1,
-      "total": 2
-    },
-    {
-      "file": "src/content/comparisons/futterautomat-mit-app.md",
-      "errors": 1,
-      "warnings": 1,
-      "total": 2
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/zeromouse-2-0.md",
-      "errors": 1,
-      "warnings": 0,
-      "total": 1
-    },
-    {
       "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
       "errors": 0,
       "warnings": 1,
       "total": 1
@@ -88,6 +52,18 @@
     },
     {
       "file": "src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/comparisons/futterautomat-mit-app.md",
       "errors": 0,
       "warnings": 1,
       "total": 1
@@ -213,29 +189,11 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "COMPARISON_VISIBLE_ROWS_TOO_FEW",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md",
-      "slug": "beste-futterautomaten-fuer-kleine-hunde",
-      "message": "Nur 1 vollständig belegte Kriterien sind öffentlich darstellbar.",
-      "count": 1,
-      "category": "content"
-    },
-    {
       "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
       "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
       "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "COMPARISON_VISIBLE_ROWS_TOO_FEW",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
-      "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
-      "message": "Nur 2 vollständig belegte Kriterien sind öffentlich darstellbar.",
-      "count": 2,
       "category": "content"
     },
     {
@@ -271,29 +229,11 @@
       "category": "content"
     },
     {
-      "level": "error",
-      "code": "COMPARISON_VISIBLE_ROWS_TOO_FEW",
-      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
-      "slug": "beste-futterautomaten-unter-100-euro",
-      "message": "Nur 1 vollständig belegte Kriterien sind öffentlich darstellbar.",
-      "count": 1,
-      "category": "content"
-    },
-    {
       "level": "warning",
       "code": "HERO_IMAGE_MISSING",
       "file": "src/content/comparisons/futterautomat-mit-app.md",
       "slug": "futterautomat-mit-app",
       "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "error",
-      "code": "COMPARISON_VISIBLE_ROWS_TOO_FEW",
-      "file": "src/content/comparisons/futterautomat-mit-app.md",
-      "slug": "futterautomat-mit-app",
-      "message": "Nur 1 vollständig belegte Kriterien sind öffentlich darstellbar.",
-      "count": 1,
       "category": "content"
     },
     {
@@ -311,14 +251,6 @@
       "slug": "petlibro-dockstream-2-smart",
       "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
       "category": "coverage"
-    },
-    {
-      "level": "error",
-      "code": "MANUFACTURER_REFERENCE_BROKEN",
-      "file": "src/content/products/zeromouse-2-0.md",
-      "slug": "zeromouse-2-0",
-      "message": "Hersteller zeromouse existiert nicht.",
-      "category": "integrity"
     }
   ]
 }
