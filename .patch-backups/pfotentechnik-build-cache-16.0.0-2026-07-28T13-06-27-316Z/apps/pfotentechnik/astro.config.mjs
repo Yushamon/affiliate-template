@@ -7,7 +7,6 @@ import yaml from "js-yaml";
 
 const appRoot = fileURLToPath(new URL(".", import.meta.url));
 const siteUrl = "https://pfotentechnik.de";
-const fastBuild = process.env.PFOTENTECHNIK_FAST_BUILD === "1";
 
 const normalizePath = (value) => {
   const pathname = value.startsWith("http")
@@ -81,16 +80,13 @@ export default defineConfig({
   site: siteUrl,
   output: "static",
   outDir: "./dist",
-  // Persistenter astro:assets-Cache außerhalb von node_modules.
-  cacheDir: "./.astro-cache",
 
   image: {
 
     layout: "constrained"
 
   },
-  // Schneller lokaler Produktions-Build ohne Sitemap-Serialisierung.
-  integrations: fastBuild ? [] : [
+  integrations: [
     sitemap({
       filter: (page) => {
         const normalized = normalizePath(page);

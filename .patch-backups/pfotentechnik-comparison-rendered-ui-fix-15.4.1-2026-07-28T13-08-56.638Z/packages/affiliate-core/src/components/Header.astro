@@ -41,7 +41,7 @@ const mobileGroups = hasExplicitMobileGroups
   : [{ label: "", links }];
 ---
 
-<header class="site-header-v2" data-site-header data-header-version="15.4.1">
+<header class="site-header-v2" data-site-header data-header-version="15.4.0">
   <div class="header-container-v2">
     <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
       <span class="brand-mark" aria-hidden="true">
@@ -52,7 +52,7 @@ const mobileGroups = hasExplicitMobileGroups
     </a>
 
     <button
-      class="pt-button nav-toggle-button"
+      class="nav-toggle-button"
       type="button"
       aria-label="Navigation öffnen"
       aria-expanded="false"
@@ -233,12 +233,6 @@ const mobileGroups = hasExplicitMobileGroups
       box-shadow: var(--pt-shadow-xs);
       cursor: pointer;
       appearance: none;
-    }
-
-    .site-header-v2 .nav-toggle-button::before,
-    .site-header-v2 .nav-toggle-button::after {
-      display: none;
-      content: none;
     }
 
     .site-header-v2 .nav-toggle-button:focus-visible {

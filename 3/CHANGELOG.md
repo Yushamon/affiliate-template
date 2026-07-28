@@ -1,33 +1,20 @@
 # Changelog
 
-## 15.3.3
+## 15.4.1
 
-- Zusätzlichen 15.3.2-CSS-Block vollständig entfernt.
-- Comparison-CSS ausschließlich über kleine Änderungen bestehender Regeln angepasst.
-- CSS-Budget vor und nach Installation messen.
-- Abbruch nur bei einer durch den Patch verursachten Budgetverschlechterung.
-- Bestehende globale Budgetüberschreitung bleibt sichtbar, aber nicht Comparison-blockierend.
-- Keine Baseline-Erhöhung.
+- `pt-button` am Header-Toggle wiederhergestellt.
+- Design-System-Komponenten-Audit wird wieder erfüllt.
+- Primitive-Pseudoelemente nur am Navigationstoggle neutralisiert.
+- Stabiler Hamburger-/X-State bleibt erhalten.
+- Direkt über einem teilweise angewendeten 15.4.0-Stand ausführbar.
 
-## 15.3.2
+## 15.4.0
 
-- CSS-Budget-Recovery ohne Baseline-Erhöhung.
-- Veraltete 15.3.0/15.3.1-CSS-Dateien und Imports werden entfernt.
-- UI-Regeln kompakt in `comparison-editorial-cover.css` konsolidiert.
-- Keine zusätzlichen Root-Blöcke, Hex-Farben oder `!important`-Regeln.
-
-## 15.3.1
-
-- Ungültigen Aufruf des nicht vorhandenen Workspace-Scripts `check` entfernt.
-- Verwendet stattdessen das vorhandene `design-system:check` und den Astro-Build als harte Prüfpfade.
-- Workspace-Scripts werden vor der Ausführung aus `apps/pfotentechnik/package.json` erkannt.
-- Wiederholte Ausführung über einen teilweise angewendeten 15.3.0-Stand unterstützt.
-
-## 15.3.0
-
-- Comparison-Hero-Asset-Priorität korrigiert.
-- Kontextbasierte Filter-Vorauswahl und URL-Synchronisierung ergänzt.
-- Filter-UI mobile-first verdichtet.
-- Dark-Mode-Oberflächen und Kontraste konsolidiert.
-- Burger-/Close-Control und mobiles Navigationspanel korrigiert.
-- Sticky CTA, Safe Area und Top-Empfehlung visuell stabilisiert.
+- Repository-basierter Fix statt angenommener Komponentenstruktur.
+- Hamburger-State vollständig neu implementiert.
+- `pt-button`-Konflikt am Navigationstoggle entfernt.
+- Mobile Navigation konsolidiert.
+- Sticky-Bar von 211 CSS-Zeilen mit mehreren Recovery-Layern auf einen klaren Style-Block reduziert.
+- Sticky CTA erst nach der Top-Empfehlung sichtbar.
+- Dark-Mode-Tokens direkt auf Hero, Filter und Recommendation angewendet.
+- Keine neue CSS-Datei.

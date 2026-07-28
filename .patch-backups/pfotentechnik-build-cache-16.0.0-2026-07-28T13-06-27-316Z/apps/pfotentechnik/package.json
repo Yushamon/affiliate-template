@@ -109,9 +109,7 @@
     "audit:internal-links": "node ../../scripts/audit-internal-links.mjs",
     "audit:internal-links:strict": "node ../../scripts/audit-internal-links.mjs --strict",
     "comparison:hero:audit": "node scripts/comparison-platform/audit-editorial-heroes.mjs",
-    "comparison:hero:audit:strict": "node scripts/comparison-platform/audit-editorial-heroes.mjs --strict",
-    "build:fast": "node scripts/build-fast.mjs",
-    "build:cache:reset": "node scripts/build-fast.mjs --clear-cache"
+    "comparison:hero:audit:strict": "node scripts/comparison-platform/audit-editorial-heroes.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
