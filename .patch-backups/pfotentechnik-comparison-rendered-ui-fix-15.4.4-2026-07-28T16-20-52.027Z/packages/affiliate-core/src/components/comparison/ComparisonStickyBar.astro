@@ -1,0 +1,153 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+type Props = {
+  product?: ComparisonProduct;
+};
+
+const { product } = Astro.props as Props;
+const price = product ? getPriceDisplay(product.price) : null;
+---
+
+{product && (
+  <aside
+    class="comparison-sticky-bar"
+    aria-label="Top-Empfehlung"
+    data-comparison-sticky
+    hidden
+  >
+    <div class="comparison-sticky-bar__identity">
+      <span>Top-Empfehlung</span>
+      <strong title={product.title}>{product.title}</strong>
+    </div>
+
+    <div class="comparison-sticky-bar__actions">
+      <a
+        href={product.href}
+        class="pt-button comparison-button comparison-button--secondary"
+      >
+        Test lesen
+      </a>
+
+      {price?.url && (
+        <a
+          href={price.url}
+          class="pt-button comparison-button"
+          rel={price.rel}
+          target={price.target}
+          data-affiliate-link
+        >
+          Preis prüfen
+        </a>
+      )}
+    </div>
+  </aside>
+)}
+
+<script>
+  const setupComparisonSticky = () => {
+    document.querySelectorAll<HTMLElement>("[data-comparison-sticky]").forEach((sticky) => {
+      if (sticky.dataset.ready === "true") return;
+      sticky.dataset.ready = "true";
+
+      const recommendation = document.getElementById("vergleichssieger");
+      if (!recommendation) return;
+
+      const update = () => {
+        const rect = recommendation.getBoundingClientRect();
+        const shouldShow = rect.bottom < window.innerHeight * .18;
+        sticky.hidden = !shouldShow;
+        sticky.toggleAttribute("data-visible", shouldShow);
+      };
+
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update, { passive: true });
+    });
+  };
+
+  setupComparisonSticky();
+  document.addEventListener("astro:page-load", setupComparisonSticky);
+</script>
+
+<style is:global>
+  .comparison-sticky-bar {
+    position: fixed;
+    z-index: 90;
+    right: max(var(--pt-space-3), env(safe-area-inset-right));
+    bottom: max(var(--pt-space-3), env(safe-area-inset-bottom));
+    left: max(var(--pt-space-3), env(safe-area-inset-left));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--pt-space-2);
+    width: auto;
+    max-width: 47.5rem;
+    margin-inline: auto;
+    padding: var(--pt-space-3);
+    border: 1px solid var(--comparison-line);
+    border-radius: var(--pt-radius-xl);
+    color: var(--comparison-text);
+    background: color-mix(in srgb, var(--comparison-surface-raised) 96%, transparent);
+    box-shadow: var(--pt-shadow-lg);
+    backdrop-filter: blur(18px) saturate(135%);
+  }
+
+  .comparison-sticky-bar[hidden] {
+    display: none;
+  }
+
+  .comparison-sticky-bar__identity {
+    display: grid;
+    min-width: 0;
+    gap: var(--pt-space-1);
+  }
+
+  .comparison-sticky-bar__identity span {
+    color: var(--comparison-accent);
+    font-size: var(--pt-font-size-xs);
+    font-weight: var(--pt-font-weight-bold);
+  }
+
+  .comparison-sticky-bar__identity strong {
+    overflow: hidden;
+    display: -webkit-box;
+    color: var(--comparison-text);
+    font-size: var(--pt-font-size-sm);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .comparison-sticky-bar__actions {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: var(--pt-space-2);
+  }
+
+  .comparison-sticky-bar .comparison-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 3rem;
+    padding: var(--pt-space-2) var(--pt-space-3);
+    font-size: var(--pt-font-size-sm);
+  }
+
+  @media (min-width: 48rem) {
+    .comparison-sticky-bar {
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+    }
+
+    .comparison-sticky-bar__actions {
+      grid-template-columns: repeat(2, minmax(10rem, auto));
+    }
+  }
+
+  @media print {
+    .comparison-sticky-bar {
+      display: none;
+    }
+  }
+</style>
