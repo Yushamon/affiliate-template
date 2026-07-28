@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-07-27T06:30:40.692Z
+Erstellt: 2026-07-28T07:30:09.519Z
 
 ## Zusammenfassung
 
 - Produkte: 68
-- Fehler: 2
-- Warnungen: 93
+- Fehler: 0
+- Warnungen: 90
 - Dokumentierte Hinweise: 152
 - Doppelte Slugs: 0
 
@@ -18,19 +18,6 @@ Erstellt: 2026-07-27T06:30:40.692Z
 - katzenklappen: 1
 
 ## Produkte mit Handlungsbedarf
-
-### PETLIBRO Granary 2 Vision
-
-- Datei: `src/content/products/petlibro-granary-2-vision.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 71%
-- Fehler:
-  - Vergleichsfeld fehlt: geeignet für
-  - Vergleichsfeld fehlt: portionierung
-- Warnungen:
-  - Empfohlenes Feld fehlt: app-steuerung
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: reinigung
 
 ### PETLIBRO Space Smart Feeder
 
@@ -120,6 +107,16 @@ Erstellt: 2026-07-27T06:30:40.692Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
+### PETLIBRO Granary 2 Vision
+
+- Datei: `src/content/products/petlibro-granary-2-vision.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: app-steuerung
+  - Empfohlenes Feld fehlt: napf
+  - Empfohlenes Feld fehlt: reinigung
+
 ### Cat Mate Shell Pet Fountain
 
 - Datei: `src/content/products/cat-mate-shell-fountain.md`
@@ -142,20 +139,6 @@ Erstellt: 2026-07-27T06:30:40.692Z
 - Warnungen:
   - Empfohlenes Feld fehlt: bluetooth
   - Empfohlenes Feld fehlt: material
-
-### oneisall 2,2L Cordless Cat Fountain
-
-- Datei: `src/content/products/oneisall-2-2l-cordless-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 94%
-- Warnungen:
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-  - Empfohlenes Feld fehlt: ersatzfilter
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: uv
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
 
 ### PETKIT Eversweet 5 Mini
 
@@ -314,36 +297,6 @@ Erstellt: 2026-07-27T06:30:40.692Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
-### PetSafe Smart Feed 2.0
-
-- Datei: `src/content/products/petsafe-smart-feed-2.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### SureFeed Microchip Pet Feeder Connect
-
-- Datei: `src/content/products/surefeed-microchip-pet-feeder-connect.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 94%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
 ### WOPET Cube Air WiFi Pet Feeder CA10
 
 - Datei: `src/content/products/wopet-cube-air-ca10.md`
@@ -446,6 +399,19 @@ Erstellt: 2026-07-27T06:30:40.692Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Empfohlenes Feld fehlt: napf
+
+### oneisall 2,2L Cordless Cat Fountain
+
+- Datei: `src/content/products/oneisall-2-2l-cordless-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: ersatzfilter
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: uv
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
 
 ### PAJ PET Finder 4G Mini
 
@@ -559,6 +525,34 @@ Erstellt: 2026-07-27T06:30:40.692Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink
+
+### PetSafe Smart Feed 2.0
+
+- Datei: `src/content/products/petsafe-smart-feed-2.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### SureFeed Microchip Pet Feeder Connect
+
+- Datei: `src/content/products/surefeed-microchip-pet-feeder-connect.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 97%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: wlan
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
 ### WOPET Heritage View Camera Feeder
 

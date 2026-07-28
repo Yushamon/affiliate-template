@@ -12,7 +12,6 @@ import { createAuthorizationSession, exchangeAuthorizationCode, validateOAuthCal
 import { chooseGoogleProperty } from "./providers/google/setup.mjs";
 import { readCopilotState } from "./copilot-actions.mjs";
 import { getCopilotWorkspaceStatus } from "../seo-copilot/workflow.mjs";
-import { getSeoWorkPackageStatus } from "../seo-copilot/package-workflow.mjs";
 import { handleOperationsRoute } from "../admin/operations-router.mjs";
 
 const host = process.env.SEARCH_ADMIN_HOST || "127.0.0.1";
@@ -35,18 +34,13 @@ function json(response, status, value, origin) {
   response.end(JSON.stringify(value));
 }
 
-async function publicServiceStatus() {
-  const [google, bing, workPackages] = await Promise.all([
-    getSearchProvider("google").getStatus(),
-    getSearchProvider("bing").getStatus(),
-    getSeoWorkPackageStatus(),
-  ]);
-  return {
+function publicServiceStatus() {
+  return Promise.all([getSearchProvider("google").getStatus(), getSearchProvider("bing").getStatus()]).then(([google, bing]) => ({
     service: { connected: true, localOnly: host === "127.0.0.1" || host === "localhost", host, port, allowedActions: ALLOWED_SEARCH_ACTIONS, runningActions: getRunningActions() },
     providers: { google, bing },
     combined: readSearchStatus().combined,
-    copilot: { ...readCopilotState(), ...getCopilotWorkspaceStatus(), workPackages },
-  };
+    copilot: { ...readCopilotState(), ...getCopilotWorkspaceStatus() },
+  }));
 }
 
 function pruneSessions() {

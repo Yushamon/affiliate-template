@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-27T06:30:40.692Z",
+    "generatedAt": "2026-07-28T07:30:09.519Z",
     "totalProducts": 68,
     "byCategory": {
       "futterautomaten": 38,
@@ -8,8 +8,8 @@
       "gps-tracker": 8,
       "katzenklappen": 1
     },
-    "errors": 2,
-    "warnings": 93,
+    "errors": 0,
+    "warnings": 90,
     "notes": 152,
     "duplicateSlugs": 0
   },
@@ -1295,7 +1295,6 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink",
         "Empfohlenes Feld fehlt: ersatzfilter"
       ],
       "notes": [
@@ -1382,7 +1381,7 @@
       ],
       "structuralCompleteness": 93,
       "confirmedCompleteness": 67,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
@@ -4562,10 +4561,7 @@
       "slug": "petlibro-granary-2-vision",
       "title": "PETLIBRO Granary 2 Vision",
       "category": "futterautomaten",
-      "errors": [
-        "Vergleichsfeld fehlt: geeignet für",
-        "Vergleichsfeld fehlt: portionierung"
-      ],
+      "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: app-steuerung",
         "Empfohlenes Feld fehlt: napf",
@@ -4588,6 +4584,14 @@
         {
           "label": "Futterart",
           "value": "Trockenfutter"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen mit Trockenfutter"
+        },
+        {
+          "label": "Portionierung",
+          "value": "Geplante Mahlzeiten und Smart Refill; ausgegebene und verbleibende Futtermenge werden laut Hersteller über die integrierte Waage erfasst"
         },
         {
           "label": "Geeignete Tiere",
@@ -4659,9 +4663,9 @@
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 62,
-      "confirmedCompleteness": 62,
-      "completeness": 71
+      "structuralCompleteness": 77,
+      "confirmedCompleteness": 77,
+      "completeness": 91
     },
     {
       "file": "src/content/products/petlibro-granary-camera-feeder.md",
@@ -5467,8 +5471,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+        "Nur 1 Galerie-Bilder hinterlegt"
       ],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
@@ -5542,7 +5545,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md",
@@ -5551,8 +5554,7 @@
       "category": "futterautomaten",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
-        "Affiliate-Link ist nur eine Amazon-Suche, kein direkter Produktlink"
+        "Nur 1 Galerie-Bilder hinterlegt"
       ],
       "notes": [
         "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
@@ -5630,7 +5632,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
-      "completeness": 94
+      "completeness": 97
     },
     {
       "file": "src/content/products/surefeed-microchip-pet-feeder.md",

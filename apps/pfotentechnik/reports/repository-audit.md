@@ -1,12 +1,12 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-28T05:56:46.756Z
+Erstellt: 2026-07-28T07:30:09.198Z
 
 ## Zusammenfassung
 
 - Routen: 203
 - Fehler: 0
-- Warnungen: 71
+- Warnungen: 55
 - Hinweise: 11
 
 ## Content-Bestand
@@ -19,22 +19,6 @@ Erstellt: 2026-07-28T05:56:46.756Z
 ## Befunde
 
 - **WARNING · css**: CSS-Datei sollte modularisiert werden (`src/styles/pfotentechnik-design-system.css`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-hunde.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-katzen.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-mit-kamera.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-futterautomaten-ohne-wlan.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-gps-tracker-fuer-hunde.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-gps-tracker-fuer-katzen.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /trinkbrunnen-richtig-reinigen/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /wasserbedarf-hund/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/futterautomat-mit-app.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/gps-tracker-ohne-abo.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /redaktion/ (`src/content/comparisons/kleine-gps-tracker-fuer-katzen.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/ (`src/content/manufacturers/aqara.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/ (`src/content/manufacturers/pawsync.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/ (`src/content/manufacturers/zeromouse.md`)

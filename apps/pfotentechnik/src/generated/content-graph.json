@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-27T20:49:29.156Z",
+  "generatedAt": "2026-07-28T07:30:08.357Z",
   "nodes": [
     {
       "id": "manufacturer:aqara",
@@ -322,6 +322,26 @@
       "cornerstone": false
     },
     {
+      "id": "manufacturer:zeromouse",
+      "slug": "zeromouse",
+      "route": "/hersteller/zeromouse/",
+      "title": "ZeroMOUSE",
+      "description": ">-",
+      "type": "manufacturer",
+      "cluster": "",
+      "topics": [
+        "hersteller",
+        "zeromouse",
+        "katzenklappen",
+        "beuteerkennung",
+        "ki",
+        "kamera"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:biofilm-im-katzentrinkbrunnen",
       "slug": "biofilm-im-katzentrinkbrunnen",
       "route": "/biofilm-im-katzentrinkbrunnen/",
@@ -383,8 +403,8 @@
       "id": "page:fuetterungszeiten-nach-alter",
       "slug": "fuetterungszeiten-nach-alter",
       "route": "/fuetterungszeiten-nach-alter/",
-      "title": "Fütterungszeiten nach Alter: Katze und Hund",
-      "description": "Wie sich Mahlzeitenrhythmus und Fütterungsplan bei jungen, erwachsenen und alten Katzen und Hunden verändern.",
+      "title": "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
+      "description": "Wie oft Kitten, Welpen, erwachsene Katzen und Hunde sowie Senioren gefüttert werden sollten – mit praxistauglichen Orientierungswerten, Ausnahmen und Tagesplänen.",
       "type": "page",
       "cluster": "tierernaehrung",
       "topics": [
@@ -393,27 +413,10 @@
         "fuetterungszeiten",
         "alter",
         "mahlzeiten",
+        "kitten",
+        "welpen",
+        "senioren",
         "tierernaehrung"
-      ],
-      "entities": [],
-      "priority": 50,
-      "cornerstone": false
-    },
-    {
-      "id": "page:futterautomat-batterie-oder-netzteil",
-      "slug": "futterautomat-batterie-oder-netzteil",
-      "route": "/futterautomat-batterie-oder-netzteil/",
-      "title": "Futterautomat mit Batterie oder Netzteil?",
-      "description": "Batteriebetrieb, Netzteil und kombinierte Stromversorgung bei Futterautomaten nach Zuverlässigkeit und Einsatzort vergleichen.",
-      "type": "page",
-      "cluster": "futterautomaten",
-      "topics": [
-        "futterautomat",
-        "batterie",
-        "netzteil",
-        "notstrom",
-        "vergleich",
-        "futterautomaten"
       ],
       "entities": [],
       "priority": 50,
@@ -423,14 +426,17 @@
       "id": "page:futterautomat-bei-stromausfall",
       "slug": "futterautomat-bei-stromausfall",
       "route": "/futterautomat-bei-stromausfall/",
-      "title": "Was passiert mit dem Futterautomaten bei Stromausfall?",
-      "description": "Ob Zeitpläne bei Stromausfall weiterlaufen, wie Batterie-Backup funktioniert und welche Tests vor Abwesenheit wichtig sind.",
+      "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
+      "description": "Funktioniert ein Futterautomat bei Strom-, WLAN- oder Internetausfall weiter? Batterie-Backup, lokale Zeitpläne, App-Ausfall und einen sicheren Praxistest verständlich erklärt.",
       "type": "page",
       "cluster": "futterautomaten",
       "topics": [
         "futterautomat",
         "stromausfall",
         "batterie",
+        "netzteil",
+        "wlan",
+        "offline",
         "notstrom",
         "sicherheit",
         "futterautomaten"
@@ -486,8 +492,8 @@
       "id": "page:futterautomat-im-urlaub",
       "slug": "futterautomat-im-urlaub",
       "route": "/futterautomat-im-urlaub/",
-      "title": "Futterautomat im Urlaub",
-      "description": "Futterautomaten im Urlaub verantwortungsvoll mit Betreuung, Tests, Notfallplan und Futterreserve einsetzen.",
+      "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
+      "description": "Futterautomaten im Urlaub sicher einsetzen: mit Betreuung, Probelauf, Stromreserve, Notfallplan und klarer Übergabe.",
       "type": "page",
       "cluster": "futterautomaten",
       "topics": [
@@ -495,6 +501,8 @@
         "urlaub",
         "betreuung",
         "ausfallsicherheit",
+        "katze",
+        "notfallplan",
         "futterautomaten"
       ],
       "entities": [],
@@ -585,8 +593,8 @@
       "id": "page:futtermenge-katze",
       "slug": "futtermenge-katze",
       "route": "/futtermenge-katze/",
-      "title": "Futtermenge bei Katzen richtig berechnen",
-      "description": "Tägliche Futtermenge bei Katzen aus Kalorien und Energiedichte berechnen, Mischfütterung einplanen und Gewicht sicher kontrollieren.",
+      "title": "Futtermenge bei Katzen berechnen: Tabelle, Formel und Beispiele",
+      "description": "Futtermenge für Katzen aus Energiebedarf und Kaloriendichte berechnen – mit Tabelle nach Gewicht, Beispielen für Nass-, Trocken- und Mischfütterung sowie sicherer Verlaufskontrolle.",
       "type": "page",
       "cluster": "fuetterung",
       "topics": [
@@ -595,7 +603,9 @@
         "fuetterung",
         "kalorien",
         "gewicht",
-        "nassfutter"
+        "nassfutter",
+        "trockenfutter",
+        "mischfuetterung"
       ],
       "entities": [],
       "priority": 50,
@@ -1327,6 +1337,27 @@
       "cornerstone": false
     },
     {
+      "id": "page:trockenfutter-oder-nassfutter-hund",
+      "slug": "trockenfutter-oder-nassfutter-hund",
+      "route": "/trockenfutter-oder-nassfutter-hund/",
+      "title": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+      "description": "Trockenfutter und Nassfutter für Hunde fundiert vergleichen: Nährstoffversorgung, Wasseranteil, Energiedichte, Verträglichkeit, Zahngesundheit, Kosten und Mischfütterung.",
+      "type": "page",
+      "cluster": "hundeernaehrung",
+      "topics": [
+        "hund",
+        "ernaehrung",
+        "trockenfutter",
+        "nassfutter",
+        "mischfuetterung",
+        "hundefutter",
+        "hundeernaehrung"
+      ],
+      "entities": [],
+      "priority": 50,
+      "cornerstone": false
+    },
+    {
       "id": "page:trockenfutter-oder-nassfutter-katze",
       "slug": "trockenfutter-oder-nassfutter-katze",
       "route": "/trockenfutter-oder-nassfutter-katze/",
@@ -1472,16 +1503,18 @@
       "id": "page:welche-portionsgroesse-ist-richtig",
       "slug": "welche-portionsgroesse-ist-richtig",
       "route": "/welche-portionsgroesse-ist-richtig/",
-      "title": "Welche Portionsgröße ist beim Futterautomaten richtig?",
-      "description": "So wird aus Hersteller-Portionen eine passende Futtermenge: Tagesration festlegen, Ausgaben wiegen und regelmäßig kontrollieren.",
+      "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
+      "description": "Portionsgröße eines Futterautomaten zuverlässig in Gramm bestimmen: Tagesration umrechnen, Ausgabeschwankungen messen, Mahlzeiten planen und Fehler erkennen.",
       "type": "page",
       "cluster": "futterautomaten",
       "topics": [
         "futterautomat",
         "portionen",
+        "kalibrierung",
         "ernaehrung",
         "katze",
         "hund",
+        "trockenfutter",
         "futterautomaten"
       ],
       "entities": [],
@@ -1594,8 +1627,8 @@
       "id": "page:wie-gross-sollte-ein-futterautomat-sein",
       "slug": "wie-gross-sollte-ein-futterautomat-sein",
       "route": "/wie-gross-sollte-ein-futterautomat-sein/",
-      "title": "Wie groß sollte ein Futterautomat sein?",
-      "description": "Die passende Größe eines Futterautomaten aus Tagesration, Futterart, Tierzahl und gewünschter Reichweite bestimmen.",
+      "title": "Wie groß sollte ein Futterautomat sein? Kapazität richtig berechnen",
+      "description": "Die passende Größe eines Futterautomaten aus Tagesration, Tierzahl, Reichweite und Schüttdichte berechnen – mit Tabellen, Beispielen und Kaufcheckliste.",
       "type": "page",
       "cluster": "futterautomaten",
       "topics": [
@@ -1604,6 +1637,8 @@
         "portionierung",
         "katze",
         "hund",
+        "trockenfutter",
+        "mehrtierhaushalt",
         "futterautomaten"
       ],
       "entities": [],
@@ -1634,16 +1669,18 @@
       "id": "page:wie-lange-bleibt-trockenfutter-frisch",
       "slug": "wie-lange-bleibt-trockenfutter-frisch",
       "route": "/wie-lange-bleibt-trockenfutter-frisch/",
-      "title": "Wie lange bleibt Trockenfutter frisch?",
-      "description": "Wie lange geöffnetes Trockenfutter frisch bleibt, wie du es richtig lagerst und woran du verdorbenes Futter erkennst.",
+      "title": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
+      "description": "Wie lange geöffnetes Trockenfutter frisch bleibt, welche Sackgröße zur Tagesration passt und wie Originalbeutel, Vorratsbox und Futterautomat richtig genutzt werden.",
       "type": "page",
       "cluster": "tierernaehrung",
       "topics": [
         "trockenfutter",
         "lagerung",
         "frische",
+        "haltbarkeit",
         "futterautomat",
         "hygiene",
+        "vorratsbehaelter",
         "tierernaehrung"
       ],
       "entities": [],
@@ -3198,7 +3235,7 @@
       "slug": "zeromouse-2-0",
       "route": "/produkte/zeromouse-2-0/",
       "title": "ZeroMOUSE 2.0",
-      "description": "25-Gramm-KI-Sensor zur Nachrüstung kompatibler Mikrochip-Katzenklappen, der Beute per Kamera erkennen und den Eintritt vorübergehend blockieren soll.",
+      "description": ">-",
       "type": "product",
       "cluster": "",
       "topics": [
@@ -4464,6 +4501,13 @@
       "explicit": false
     },
     {
+      "source": "manufacturer:petlibro",
+      "target": "manufacturer:zeromouse",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "manufacturer:petsafe",
       "target": "manufacturer:catit",
       "type": "manufacturer",
@@ -4879,6 +4923,20 @@
     {
       "source": "manufacturer:xiaomi",
       "target": "manufacturer:wopet",
+      "type": "manufacturer",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:zeromouse",
+      "target": "product:zeromouse-2-0",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "manufacturer:zeromouse",
+      "target": "manufacturer:petlibro",
       "type": "manufacturer",
       "score": 24,
       "explicit": false
@@ -5354,6 +5412,13 @@
     },
     {
       "source": "page:fuetterungszeiten-nach-alter",
+      "target": "page:trinkbrunnen-fuer-kitten-sicher",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -5479,118 +5544,6 @@
       "explicit": false
     },
     {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-bei-stromausfall",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:smarte-futterautomaten",
-      "type": "cluster",
-      "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-bei-uebergewicht",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-hund",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-im-urlaub",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-katze",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-richtig-reinigen",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:futterautomat-und-ernaehrung",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:wie-funktioniert-ein-futterautomat",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:wie-laut-sind-automatische-futterautomaten",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:wie-viele-mahlzeiten-hund",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-batterie-oder-netzteil",
-      "target": "page:wie-viele-mahlzeiten-katze",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-bei-stromausfall",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
       "source": "page:futterautomat-bei-stromausfall",
       "target": "page:futterautomat-bei-uebergewicht",
       "type": "cluster",
@@ -5696,6 +5649,13 @@
       "explicit": false
     },
     {
+      "source": "page:futterautomat-bei-stromausfall",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
       "source": "page:futterautomat-bei-uebergewicht",
       "target": "page:futterautomat-hund",
       "type": "cluster",
@@ -5721,13 +5681,6 @@
       "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "cluster",
       "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-bei-uebergewicht",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
       "explicit": false
     },
     {
@@ -5816,6 +5769,13 @@
     },
     {
       "source": "page:futterautomat-hund",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
       "target": "page:futterautomat-und-ernaehrung",
       "type": "cluster",
       "score": 83,
@@ -5823,7 +5783,7 @@
     },
     {
       "source": "page:futterautomat-hund",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "cluster",
       "score": 83,
       "explicit": false
@@ -5851,13 +5811,6 @@
     },
     {
       "source": "page:futterautomat-hund",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-hund",
       "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "cluster",
       "score": 71,
@@ -5875,13 +5828,6 @@
       "target": "page:wie-viele-mahlzeiten-hund",
       "type": "cluster",
       "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-hund",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
       "explicit": false
     },
     {
@@ -6026,6 +5972,13 @@
     },
     {
       "source": "page:futterautomat-hund",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-hund",
       "target": "page:wie-lange-bleibt-trockenfutter-frisch",
       "type": "semantic",
       "score": 24,
@@ -6152,9 +6105,51 @@
     },
     {
       "source": "page:futterautomat-im-urlaub",
-      "target": "page:futterautomat-batterie-oder-netzteil",
+      "target": "page:futterautomat-katze",
       "type": "cluster",
-      "score": 59,
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:smarte-futterautomaten",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "cluster",
+      "score": 71,
       "explicit": false
     },
     {
@@ -6174,13 +6169,6 @@
     {
       "source": "page:futterautomat-im-urlaub",
       "target": "page:futterautomat-hund",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
-      "target": "page:futterautomat-katze",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -6201,42 +6189,7 @@
     },
     {
       "source": "page:futterautomat-im-urlaub",
-      "target": "page:smarte-futterautomaten",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
       "target": "page:wie-funktioniert-ein-futterautomat",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
-      "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -6250,9 +6203,65 @@
     },
     {
       "source": "page:futterautomat-im-urlaub",
-      "target": "page:wie-viele-mahlzeiten-katze",
-      "type": "cluster",
-      "score": 59,
+      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
       "explicit": false
     },
     {
@@ -6278,6 +6287,13 @@
     },
     {
       "source": "page:futterautomat-katze",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-katze",
       "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "cluster",
       "score": 71,
@@ -6306,13 +6322,6 @@
     },
     {
       "source": "page:futterautomat-katze",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-katze",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -6321,13 +6330,6 @@
     {
       "source": "page:futterautomat-katze",
       "target": "page:futterautomat-bei-uebergewicht",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-katze",
-      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -6425,9 +6427,16 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
-      "target": "page:futterautomat-batterie-oder-netzteil",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "cluster",
-      "score": 59,
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 71,
       "explicit": false
     },
     {
@@ -6460,21 +6469,7 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-richtig-reinigen",
       "target": "page:wie-funktioniert-ein-futterautomat",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-richtig-reinigen",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -6516,6 +6511,13 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 24,
@@ -6538,6 +6540,13 @@
     {
       "source": "page:futterautomat-richtig-reinigen",
       "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -6642,6 +6651,13 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
       "target": "page:futterautomat-bei-uebergewicht",
       "type": "cluster",
       "score": 71,
@@ -6649,14 +6665,14 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
-      "target": "page:wie-funktioniert-ein-futterautomat",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "cluster",
       "score": 71,
       "explicit": false
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -6673,13 +6689,6 @@
       "target": "page:wie-viele-mahlzeiten-katze",
       "type": "cluster",
       "score": 71,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-und-ernaehrung",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
       "explicit": false
     },
     {
@@ -6705,13 +6714,6 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:futterautomat-und-ernaehrung",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "cluster",
       "score": 59,
@@ -6722,6 +6724,20 @@
       "target": "product:surefeed-microchip-pet-feeder-connect",
       "type": "product",
       "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
       "explicit": false
     },
     {
@@ -6917,54 +6933,243 @@
       "source": "page:futtermenge-katze",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
-      "score": 24,
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "page:wie-viel-wasser-braucht-eine-katze",
       "type": "semantic",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "product:cat-mate-c200",
       "type": "product",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "product:cat-mate-c300",
       "type": "product",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "product:cat-mate-c500",
       "type": "product",
-      "score": 24,
+      "score": 36,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
       "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petkit-fresh-element-solo",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petkit-yumshare-dual-hopper",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petkit-yumshare-dual",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-air-wifi-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:petlibro-one-rfid-smart-feeder",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -6978,14 +7183,42 @@
     },
     {
       "source": "page:futtermenge-katze",
-      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "product:petlibro-space-smart-feeder",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:futtermenge-katze",
-      "target": "product:surefeed-microchip-pet-feeder",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:futtermenge-katze",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -8659,6 +8892,13 @@
     {
       "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "target": "page:futterautomat-im-urlaub",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -10254,6 +10494,13 @@
     },
     {
       "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
       "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "type": "semantic",
       "score": 24,
@@ -10289,6 +10536,20 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "page:futterautomat-katze",
       "type": "cluster",
       "score": 83,
@@ -10310,20 +10571,6 @@
     },
     {
       "source": "page:smarte-futterautomaten",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-futterautomaten",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-futterautomaten",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "cluster",
       "score": 83,
@@ -10331,7 +10578,7 @@
     },
     {
       "source": "page:smarte-futterautomaten",
-      "target": "page:futterautomat-batterie-oder-netzteil",
+      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -10367,13 +10614,6 @@
     {
       "source": "page:smarte-futterautomaten",
       "target": "page:futterautomat-bei-uebergewicht",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-futterautomaten",
-      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -10478,6 +10718,13 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "page:gps-tracker",
       "type": "semantic",
       "score": 36,
@@ -10486,6 +10733,13 @@
     {
       "source": "page:smarte-futterautomaten",
       "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:smarte-futterautomaten",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -10661,13 +10915,6 @@
     {
       "source": "page:smarte-futterautomaten",
       "target": "page:fuetterungszeiten-nach-alter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:smarte-futterautomaten",
-      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -11745,6 +11992,13 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-kitten-sicher",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-kitten-sicher",
       "target": "page:nierenkranke-katze-trinken",
       "type": "semantic",
       "score": 24,
@@ -12661,6 +12915,209 @@
       "explicit": false
     },
     {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:welpen-richtig-fuettern",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:cat-mate-c200",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:cat-mate-c300",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:cat-mate-c500",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
       "source": "page:trockenfutter-oder-nassfutter-katze",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
@@ -12739,7 +13196,21 @@
     },
     {
       "source": "page:trockenfutter-oder-nassfutter-katze",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -13047,6 +13518,13 @@
     },
     {
       "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "target": "page:fuetterungszeiten-nach-alter",
       "type": "semantic",
       "score": 36,
@@ -13546,19 +14024,26 @@
       "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:smarte-futterautomaten",
       "type": "cluster",
-      "score": 83,
+      "score": 95,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "cluster",
-      "score": 83,
+      "score": 95,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:futterautomat-hund",
       "type": "cluster",
       "score": 83,
       "explicit": false
@@ -13572,7 +14057,7 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:futterautomat-hund",
+      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -13580,6 +14065,20 @@
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:futterautomat-katze",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:futterautomat-und-ernaehrung",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -13600,13 +14099,6 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -13621,30 +14113,16 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:futterautomat-im-urlaub",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:futterautomat-richtig-reinigen",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "page:futterautomat-und-ernaehrung",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "cluster",
       "score": 59,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 36,
       "explicit": false
     },
     {
@@ -13656,7 +14134,70 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:honeyguardian-a305d",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:honeyguardian-a68",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -13698,6 +14239,13 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "type": "semantic",
       "score": 24,
@@ -13719,14 +14267,77 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:honeyguardian-a305d",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:cat-mate-c200",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:honeyguardian-a68",
+      "target": "product:cat-mate-c300",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:cat-mate-c500",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -13740,42 +14351,105 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:pawbby-smart-pet-feeder",
+      "target": "product:petkit-fresh-element-solo",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:petkit-fresh-element-infinity",
+      "target": "product:petkit-yumshare-dual-hopper",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:petlibro-air-automatic-feeder",
+      "target": "product:petkit-yumshare-dual",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:wopet-cube-air-ca10",
+      "target": "product:petkit-yumshare-solo-2",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:wopet-heritage-view-camera-feeder",
+      "target": "product:petlibro-air-wifi-feeder",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
-      "target": "product:wopet-pioneer-f01-plus",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-one-rfid-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -13790,6 +14464,20 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:futterautomat-hund",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "cluster",
       "score": 95,
       "explicit": false
@@ -13817,23 +14505,16 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "cluster",
-      "score": 83,
-      "explicit": false
-    },
-    {
-      "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "cluster",
       "score": 83,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "cluster",
+      "score": 71,
       "explicit": false
     },
     {
@@ -13852,13 +14533,6 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -13873,16 +14547,16 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:futterautomat-im-urlaub",
+      "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "cluster",
       "score": 59,
       "explicit": false
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:wie-funktioniert-ein-futterautomat",
-      "type": "cluster",
-      "score": 59,
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
       "explicit": false
     },
     {
@@ -13902,6 +14576,13 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -14028,13 +14709,6 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:fuetterungszeiten-nach-alter",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:welcher-futterautomat-ist-der-richtige",
-      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14230,6 +14904,13 @@
     },
     {
       "source": "page:welpen-richtig-fuettern",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:welpen-richtig-fuettern",
       "target": "page:fuetterungszeiten-nach-alter",
       "type": "semantic",
       "score": 24,
@@ -14391,13 +15072,6 @@
     },
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -14533,26 +15207,33 @@
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:futterautomat-hund",
       "type": "cluster",
-      "score": 83,
+      "score": 95,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:smarte-futterautomaten",
       "type": "cluster",
-      "score": 83,
+      "score": 95,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "cluster",
-      "score": 83,
+      "score": 95,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "cluster",
+      "score": 95,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:futterautomat-und-ernaehrung",
       "type": "cluster",
       "score": 83,
       "explicit": false
@@ -14573,6 +15254,13 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:futterautomat-katze",
       "type": "cluster",
       "score": 71,
@@ -14580,7 +15268,7 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "page:futterautomat-und-ernaehrung",
+      "target": "page:futterautomat-richtig-reinigen",
       "type": "cluster",
       "score": 71,
       "explicit": false
@@ -14608,28 +15296,7 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:futterautomat-bei-stromausfall",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "page:futterautomat-im-urlaub",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "page:futterautomat-richtig-reinigen",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -14638,54 +15305,89 @@
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:honeyguardian-a305d",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:honeyguardian-a68",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:pawbby-smart-pet-feeder",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:petkit-fresh-element-infinity",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:petlibro-air-automatic-feeder",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:wopet-cube-air-ca10",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:wopet-heritage-view-camera-feeder",
       "type": "product",
-      "score": 36,
+      "score": 48,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "product:wopet-pioneer-f01-plus",
+      "type": "product",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-air-wifi-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-one-rfid-smart-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "product",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
       "type": "product",
       "score": 36,
       "explicit": false
@@ -14693,6 +15395,13 @@
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14727,6 +15436,20 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:wie-kann-technik-gegen-langeweile-helfen",
       "type": "semantic",
       "score": 24,
@@ -14734,7 +15457,77 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:cat-mate-c200",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:cat-mate-c300",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:cat-mate-c500",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:oneisall-7l-dog-water-fountain",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -14748,28 +15541,84 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "product:petlibro-air-wifi-feeder",
+      "target": "product:pawsync-smart-pet-feeder",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "product:petlibro-one-rfid-smart-feeder",
+      "target": "product:petkit-fresh-element-solo",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "product:petlibro-space-smart-feeder",
+      "target": "product:petkit-yumshare-dual-hopper",
       "type": "product",
       "score": 24,
       "explicit": false
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "product:petkit-yumshare-dual",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "product",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "product",
       "score": 24,
       "explicit": false
@@ -14944,7 +15793,21 @@
     },
     {
       "source": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -14986,6 +15849,13 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:futterautomat-katze",
       "type": "cluster",
       "score": 71,
@@ -15007,13 +15877,6 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -15022,13 +15885,6 @@
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:futterautomat-bei-uebergewicht",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-laut-sind-automatische-futterautomaten",
-      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -15252,6 +16108,13 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "page:warum-katzen-fliessendes-wasser-trinken",
       "type": "semantic",
       "score": 36,
@@ -15294,6 +16157,13 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "page:katze-trinkt-viel",
       "type": "semantic",
       "score": 24,
@@ -15330,6 +16200,20 @@
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15476,6 +16360,13 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:hund-trinkt-viel",
       "type": "semantic",
       "score": 36,
@@ -15581,13 +16472,6 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
-      "target": "page:futtermenge-katze",
-      "type": "semantic",
-      "score": 24,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 24,
@@ -15637,7 +16521,28 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -15882,13 +16787,6 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-hund",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-hund",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -15966,6 +16864,13 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-katze",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "cluster",
+      "score": 71,
+      "explicit": false
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-katze",
       "target": "page:futterautomat-katze",
       "type": "cluster",
       "score": 71,
@@ -16015,13 +16920,6 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-katze",
-      "target": "page:futterautomat-batterie-oder-netzteil",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-katze",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "cluster",
       "score": 59,
@@ -16037,13 +16935,6 @@
     {
       "source": "page:wie-viele-mahlzeiten-katze",
       "target": "page:futterautomat-hund",
-      "type": "cluster",
-      "score": 59,
-      "explicit": false
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-katze",
-      "target": "page:futterautomat-im-urlaub",
       "type": "cluster",
       "score": 59,
       "explicit": false
@@ -16806,6 +17697,13 @@
     },
     {
       "source": "product:cat-mate-c200",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c200",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 36,
@@ -16995,7 +17893,21 @@
     },
     {
       "source": "product:cat-mate-c200",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17121,6 +18033,13 @@
     },
     {
       "source": "product:cat-mate-c300",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c300",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 36,
@@ -17310,7 +18229,21 @@
     },
     {
       "source": "product:cat-mate-c300",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c300",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c300",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17436,6 +18369,13 @@
     },
     {
       "source": "product:cat-mate-c500",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c500",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 36,
@@ -17632,7 +18572,21 @@
     },
     {
       "source": "product:cat-mate-c500",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -17905,6 +18859,13 @@
     },
     {
       "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 36,
@@ -18122,7 +19083,21 @@
     },
     {
       "source": "product:catit-pixi-smart-6-meal-feeder",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -18640,6 +19615,13 @@
     },
     {
       "source": "product:honeyguardian-a305d",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
       "target": "product:imipaw-3l-automatic-cat-feeder",
       "type": "semantic",
       "score": 48,
@@ -18682,14 +19664,14 @@
     },
     {
       "source": "product:honeyguardian-a305d",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:honeyguardian-a305d",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -18752,7 +19734,21 @@
     },
     {
       "source": "product:honeyguardian-a305d",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a305d",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -18794,14 +19790,14 @@
     },
     {
       "source": "product:honeyguardian-a305d",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:honeyguardian-a305d",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19004,6 +20000,13 @@
     },
     {
       "source": "product:honeyguardian-a68",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
       "target": "product:petlibro-air-wifi-feeder",
       "type": "semantic",
       "score": 48,
@@ -19011,14 +20014,14 @@
     },
     {
       "source": "product:honeyguardian-a68",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:honeyguardian-a68",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -19137,7 +20140,21 @@
     },
     {
       "source": "product:honeyguardian-a68",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-a68",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19179,14 +20196,14 @@
     },
     {
       "source": "product:honeyguardian-a68",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:honeyguardian-a68",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19536,6 +20553,13 @@
     },
     {
       "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -19543,7 +20567,21 @@
     },
     {
       "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -19676,6 +20714,13 @@
     },
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
       "target": "product:cat-mate-c200",
       "type": "semantic",
       "score": 36,
@@ -19830,6 +20875,13 @@
     },
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 24,
@@ -19844,14 +20896,14 @@
     },
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20110,6 +21162,13 @@
     },
     {
       "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 24,
@@ -20124,7 +21183,21 @@
     },
     {
       "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -20950,6 +22023,13 @@
     },
     {
       "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -20957,7 +22037,21 @@
     },
     {
       "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21070,6 +22164,13 @@
     {
       "source": "product:oneisall-7l-dog-water-fountain",
       "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21321,6 +22422,13 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
       "target": "product:honeyguardian-smart-pet-feeder-s305d",
       "type": "semantic",
       "score": 48,
@@ -21342,14 +22450,14 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -21454,7 +22562,21 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21496,14 +22618,14 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -21749,6 +22871,13 @@
     {
       "source": "product:pawsync-smart-pet-feeder",
       "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:pawsync-smart-pet-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -23512,6 +24641,13 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
       "target": "product:petkit-yumshare-dual-hopper",
       "type": "semantic",
       "score": 48,
@@ -23554,14 +24690,14 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:petkit-fresh-element-infinity",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -23659,7 +24795,21 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -23701,14 +24851,14 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:petkit-fresh-element-infinity",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24058,6 +25208,13 @@
     },
     {
       "source": "product:petkit-fresh-element-solo",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -24065,7 +25222,21 @@
     },
     {
       "source": "product:petkit-fresh-element-solo",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24373,6 +25544,13 @@
     },
     {
       "source": "product:petkit-yumshare-dual",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -24380,7 +25558,21 @@
     },
     {
       "source": "product:petkit-yumshare-dual",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -24716,6 +25908,13 @@
     },
     {
       "source": "product:petkit-yumshare-dual-hopper",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -24723,7 +25922,21 @@
     },
     {
       "source": "product:petkit-yumshare-dual-hopper",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -25031,6 +26244,13 @@
     },
     {
       "source": "product:petkit-yumshare-solo-2",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -25038,7 +26258,21 @@
     },
     {
       "source": "product:petkit-yumshare-solo-2",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -25192,6 +26426,13 @@
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
       "target": "product:imipaw-3l-automatic-cat-feeder",
       "type": "semantic",
       "score": 48,
@@ -25220,14 +26461,14 @@
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -25290,7 +26531,21 @@
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -25332,14 +26587,14 @@
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:petlibro-air-automatic-feeder",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -25633,6 +26888,13 @@
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-wifi-feeder",
       "target": "product:cat-mate-c200",
       "type": "semantic",
       "score": 36,
@@ -25738,6 +27000,13 @@
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-air-wifi-feeder",
       "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 24,
@@ -25752,14 +27021,14 @@
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -27425,6 +28694,13 @@
     },
     {
       "source": "product:petlibro-granary-2-vision",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-2-vision",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -27432,7 +28708,21 @@
     },
     {
       "source": "product:petlibro-granary-2-vision",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-2-vision",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-2-vision",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -27754,6 +29044,13 @@
     },
     {
       "source": "product:petlibro-granary-camera-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -27761,7 +29058,21 @@
     },
     {
       "source": "product:petlibro-granary-camera-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -28083,6 +29394,13 @@
     },
     {
       "source": "product:petlibro-granary-dual-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -28090,7 +29408,21 @@
     },
     {
       "source": "product:petlibro-granary-dual-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -28398,6 +29730,13 @@
     },
     {
       "source": "product:petlibro-granary-wifi-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -28405,7 +29744,21 @@
     },
     {
       "source": "product:petlibro-granary-wifi-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -28636,6 +29989,13 @@
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-one-rfid-smart-feeder",
       "target": "product:cat-mate-c200",
       "type": "semantic",
       "score": 36,
@@ -28734,6 +30094,13 @@
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-one-rfid-smart-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -28741,14 +30108,14 @@
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -29294,6 +30661,13 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
       "target": "product:cat-mate-c200",
       "type": "semantic",
       "score": 36,
@@ -29378,6 +30752,13 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -29385,14 +30766,14 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:petlibro-space-smart-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -29763,6 +31144,13 @@
     },
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "product:cat-mate-shell-fountain",
       "type": "semantic",
       "score": 24,
@@ -29910,6 +31298,13 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 36,
@@ -30022,7 +31417,21 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30351,6 +31760,13 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 36,
@@ -30359,6 +31775,13 @@
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -30435,14 +31858,14 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
-      "target": "page:futtermenge-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -30932,6 +32355,13 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "product:honeyguardian-smart-pet-feeder-s305d",
       "type": "semantic",
       "score": 48,
@@ -30953,14 +32383,14 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:wopet-cube-air-ca10",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -31086,7 +32516,21 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31128,14 +32572,14 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:wopet-cube-air-ca10",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31317,6 +32761,13 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
       "target": "product:petkit-yumshare-dual-hopper",
       "type": "semantic",
       "score": 48,
@@ -31359,14 +32810,14 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -31471,7 +32922,21 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31513,14 +32978,14 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -31856,6 +33321,13 @@
     },
     {
       "source": "product:wopet-patrol-f07-pro",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-patrol-f07-pro",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -31863,7 +33335,21 @@
     },
     {
       "source": "product:wopet-patrol-f07-pro",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-patrol-f07-pro",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-patrol-f07-pro",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -32010,6 +33496,13 @@
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 48,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
       "target": "product:imipaw-3l-automatic-cat-feeder",
       "type": "semantic",
       "score": 48,
@@ -32038,14 +33531,14 @@
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:welche-portionsgroesse-ist-richtig",
       "type": "semantic",
       "score": 36,
       "explicit": false
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
       "type": "semantic",
       "score": 36,
       "explicit": false
@@ -32094,7 +33587,21 @@
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -32136,14 +33643,14 @@
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
       "type": "semantic",
       "score": 24,
       "explicit": false
     },
     {
       "source": "product:wopet-pioneer-f01-plus",
-      "target": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -32507,6 +34014,13 @@
     },
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "page:trockenfutter-oder-nassfutter-katze",
       "type": "semantic",
       "score": 24,
@@ -32514,7 +34028,21 @@
     },
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 24,
+      "explicit": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
       "type": "semantic",
       "score": 24,
       "explicit": false
@@ -32845,6 +34373,13 @@
       "source": "product:zeromouse-2-0",
       "target": "product:wopet-heritage-view-camera-feeder",
       "type": "semantic",
+      "score": 36,
+      "explicit": false
+    },
+    {
+      "source": "product:zeromouse-2-0",
+      "target": "manufacturer:zeromouse",
+      "type": "manufacturer",
       "score": 36,
       "explicit": false
     },

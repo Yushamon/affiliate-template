@@ -9,10 +9,9 @@ export const COPILOT_DIR = path.join(SEARCH_DIR, "seo-copilot");
 export const WORKSPACE_FILE = path.join(COPILOT_DIR, "workspace.json");
 export const AUDIT_FILE = path.join(COPILOT_DIR, "audit-log.jsonl");
 export const DRAFT_DIR = path.join(COPILOT_DIR, "product-drafts");
-export const COPILOT_WORKSPACE_SCHEMA_VERSION = 2;
 
 const emptyWorkspace = () => ({
-  schemaVersion: COPILOT_WORKSPACE_SCHEMA_VERSION,
+  schemaVersion: 1,
   updatedAt: null,
   productCandidates: [],
   contentGaps: [],
@@ -20,54 +19,16 @@ const emptyWorkspace = () => ({
   productDrafts: [],
   jobs: [],
   ignoredCandidateIds: [],
-  workPackages: [],
 });
 
-const array = (value) => Array.isArray(value) ? value : [];
-
-export function migrateCopilotWorkspace(stored) {
-  const base = emptyWorkspace();
-  if (!stored || typeof stored !== "object") return base;
-  return {
-    ...base,
-    ...stored,
-    schemaVersion: COPILOT_WORKSPACE_SCHEMA_VERSION,
-    productCandidates: array(stored.productCandidates),
-    contentGaps: array(stored.contentGaps),
-    nicheOpportunities: array(stored.nicheOpportunities),
-    productDrafts: array(stored.productDrafts),
-    jobs: array(stored.jobs),
-    ignoredCandidateIds: array(stored.ignoredCandidateIds),
-    workPackages: array(stored.workPackages).map((pkg) => ({
-      id: String(pkg?.id || ""),
-      status: pkg?.status || "open",
-      createdAt: pkg?.createdAt || stored.updatedAt || null,
-      updatedAt: pkg?.updatedAt || stored.updatedAt || null,
-      sentAt: pkg?.sentAt ?? null,
-      verifyAfter: pkg?.verifyAfter ?? null,
-      snoozedUntil: pkg?.snoozedUntil ?? null,
-      snoozeReason: pkg?.snoozeReason ?? null,
-      verificationMode: pkg?.verificationMode || pkg?.packageSnapshot?.verificationMode || "manual",
-      lastVerification: pkg?.lastVerification ?? null,
-      unresolvedTaskIds: array(pkg?.unresolvedTaskIds),
-      passedChecks: array(pkg?.passedChecks),
-      failedChecks: array(pkg?.failedChecks),
-      packageSnapshot: pkg?.packageSnapshot && typeof pkg.packageSnapshot === "object" ? pkg.packageSnapshot : undefined,
-    })).filter((pkg) => pkg.id),
-  };
-}
-
 export function readCopilotWorkspace() {
-  return migrateCopilotWorkspace(readJson(WORKSPACE_FILE, false));
+  const stored = readJson(WORKSPACE_FILE, false);
+  return stored?.schemaVersion === 1 ? { ...emptyWorkspace(), ...stored } : emptyWorkspace();
 }
 
 export function writeCopilotWorkspace(workspace) {
   fs.mkdirSync(COPILOT_DIR, { recursive: true });
-  const normalized = {
-    ...migrateCopilotWorkspace(workspace),
-    schemaVersion: COPILOT_WORKSPACE_SCHEMA_VERSION,
-    updatedAt: new Date().toISOString(),
-  };
+  const normalized = { ...emptyWorkspace(), ...workspace, schemaVersion: 1, updatedAt: new Date().toISOString() };
   atomicWriteJson(WORKSPACE_FILE, normalized);
   return normalized;
 }

@@ -27,7 +27,6 @@ import {
   runStoredCandidatePreflight,
   validateStoredCandidate,
 } from "../seo-copilot/workflow.mjs";
-const packageWorkflow = () => import("../seo-copilot/package-workflow.mjs");
 
 const MAX_OUTPUT = 80_000;
 const ACTION_TIMEOUT = 12 * 60_000;
@@ -57,42 +56,6 @@ function runFixedNpm(args, cwd) {
   });
 }
 
-const PACKAGE_COMMANDS = Object.freeze({
-  "npm --workspace apps/pfotentechnik run lint:content": () => runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "lint:content"], REPO_ROOT),
-  "npm --workspace apps/pfotentechnik run build:content-graph": () => runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "build:content-graph"], REPO_ROOT),
-  "npm --workspace apps/pfotentechnik run audit:products:strict": () => runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "audit:products:strict"], REPO_ROOT),
-  "npm --workspace apps/pfotentechnik run seo:release:check:no-build": () => runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "seo:release:check:no-build"], REPO_ROOT),
-  "npm run build:pfotentechnik": () => runFixedNpm(["run", "build:pfotentechnik"], REPO_ROOT),
-});
-
-async function verifySeoPackage(payload, progress) {
-  const { resolveSeoPackageForAction, allowedPackageVerificationCommands, setSeoPackageVerificationPending } = await packageWorkflow();
-  const pkg = resolveSeoPackageForAction(payload);
-  const commands = allowedPackageVerificationCommands(pkg);
-  const checks = [];
-  for (let index = 0; index < commands.length; index += 1) {
-    const command = commands[index];
-    const runner = PACKAGE_COMMANDS[command];
-    if (!runner) throw new SearchError("SEARCH_ACTION_NOT_ALLOWED", { message: `Nicht erlaubte Paketprüfung: ${command}` });
-    progress({ step: "package-verification", message: command, percent: Math.round(index / Math.max(1, commands.length + 1) * 90) });
-    try {
-      const result = await runner();
-      checks.push({ command, status: "passed", output: result.output, checkedAt: new Date().toISOString() });
-    } catch (error) {
-      checks.push({ command, status: "failed", output: redactSecrets(error?.message || String(error)).slice(-8_000), checkedAt: new Date().toISOString() });
-    }
-  }
-  progress({ step: "advisor-rebuild", message: "Advisor-Datenquelle wird nach den Prüfungen neu aufgebaut.", percent: 94 });
-  try {
-    const result = await rebuildAdvisorSource();
-    checks.push({ command: "internal:advisor-rebuild", status: "passed", output: redactSecrets(JSON.stringify(result ?? {})).slice(-8_000), checkedAt: new Date().toISOString() });
-  } catch (error) {
-    checks.push({ command: "internal:advisor-rebuild", status: "failed", output: redactSecrets(error?.message || String(error)).slice(-8_000), checkedAt: new Date().toISOString() });
-  }
-  progress({ step: "package-verification", message: "Paket wartet auf Advisor-Abgleich.", percent: 100 });
-  return setSeoPackageVerificationPending(payload, checks);
-}
-
 const DEFAULT_HANDLERS = {
   "google.test": ({ progress }) => { progress({ step: "connection", message: "OAuth, Token, API und Property werden geprüft." }); return getSearchProvider("google").test(); },
   "google.sync": ({ progress }) => getSearchProvider("google").sync({ onProgress: progress }),
@@ -108,11 +71,6 @@ const DEFAULT_HANDLERS = {
   "contentGraph.build": ({ progress }) => { progress({ step: "graph", message: "Content Graph wird aktualisiert." }); return runFixedScript(path.join(APP_ROOT, "scripts", "build-content-graph.mjs"), APP_ROOT); },
   "copilot.prompt": ({ payload, progress }) => { progress({ step: "prompt", message: "Prompt wird aus der vorhandenen Empfehlung erzeugt." }); return generateCopilotPrompt(payload); },
   "copilot.task.complete": ({ payload, progress }) => { progress({ step: "learning", message: "Abschluss-Snapshot wird lokal gespeichert." }); return completeCopilotTask(payload); },
-  "copilot.package.sent": async ({ payload, progress }) => { progress({ step: "package", message: "Paket wird als an Codex übergeben gespeichert." }); const { markSeoPackageSent } = await packageWorkflow(); return markSeoPackageSent(payload); },
-  "copilot.package.snooze": async ({ payload, progress }) => { progress({ step: "package", message: "Paket wird nachvollziehbar zurückgestellt." }); const { snoozeSeoPackage } = await packageWorkflow(); return snoozeSeoPackage(payload); },
-  "copilot.package.verify": ({ payload, progress }) => verifySeoPackage(payload, progress),
-  "copilot.package.reconcile": async ({ payload, progress }) => { progress({ step: "package", message: "Aktuelle Advisor-Befunde werden serverseitig abgeglichen." }); const { reconcileSeoPackage } = await packageWorkflow(); return reconcileSeoPackage(payload); },
-  "copilot.package.reopen": async ({ payload, progress }) => { progress({ step: "package", message: "Paket wird wieder geöffnet." }); const { reopenSeoPackage } = await packageWorkflow(); return reopenSeoPackage(payload); },
   "product.draft.create": ({ payload, progress }) => { progress({ step: "product-draft", message: "Sicherer Produktentwurf wird außerhalb der Content-Collection angelegt." }); return createProductDraft(payload); },
   "product.images.prompts": ({ payload, progress }) => { progress({ step: "image-prompts", message: "Sechs Bildprompts werden erzeugt." }); return createImagePromptPack(payload); },
   "product.images.pack": ({ payload, progress }) => { progress({ step: "image-pack", message: "Importbilder werden validiert, zugeschnitten und als WebP/ZIP paketiert." }); return buildImagePack(payload); },

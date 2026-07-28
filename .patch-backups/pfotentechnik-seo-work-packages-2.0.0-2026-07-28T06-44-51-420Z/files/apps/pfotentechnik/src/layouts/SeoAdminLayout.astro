@@ -1,5 +1,4 @@
 ---
-import SeoWorkPackages from "../components/admin/SeoWorkPackages.astro";
 interface Props {
   title: string;
   description: string;
@@ -38,7 +37,7 @@ const nav = [
         --seo-muted: #5d6d63;
         --seo-accent: #2e7d32;
         --seo-accent-strong: #1f6426;
-        --seo-on-accent: #fff;
+         --seo-on-accent: #fff;
         --seo-accent-soft: #e2f3e5;
         --seo-warning: #8a5a00;
         --seo-warning-soft: #fff4d8;
@@ -57,7 +56,7 @@ const nav = [
         --seo-muted: #afbeb4;
         --seo-accent: #72d889;
         --seo-accent-strong: #8ee6a1;
-        --seo-on-accent: #07120a;
+         --seo-on-accent: #07120a;
         --seo-accent-soft: #183b23;
         --seo-warning: #ffd27a;
         --seo-warning-soft: #3b2d13;
@@ -107,7 +106,7 @@ const nav = [
           --seo-muted: #afbeb4;
           --seo-accent: #72d889;
           --seo-accent-strong: #8ee6a1;
-          --seo-on-accent: #07120a;
+         --seo-on-accent: #07120a;
           --seo-accent-soft: #183b23;
           --seo-warning: #ffd27a;
           --seo-warning-soft: #3b2d13;
@@ -142,7 +141,6 @@ const nav = [
         </div>
       </header>
       <slot />
-      {active === "advisor" && <SeoWorkPackages mode="advisor" />}
     </div>
     <script is:inline>
       document.querySelector("[data-theme-toggle]")?.addEventListener("click", () => {
@@ -152,5 +150,5 @@ const nav = [
         localStorage.setItem("pfotentechnik-seo-theme", next);
       });
     </script>
-  </body>
+</body>
 </html>

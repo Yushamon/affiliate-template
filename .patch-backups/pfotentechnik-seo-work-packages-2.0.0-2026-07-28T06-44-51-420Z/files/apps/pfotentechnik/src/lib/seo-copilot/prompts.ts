@@ -1,7 +1,6 @@
 import { PRODUCT_IMAGE_ROLES, PRODUCT_SCHEMA_PATH, SEO_COPILOT_PROJECT_PATH } from "./config.ts";
 import { PROMPT_LIBRARY, templateForContext, type PromptTemplateId } from "./templates.ts";
 import type { PromptContext, PromptResult, SourceEvidence } from "./types";
-export { buildWorkPackagePrompt as buildCodexWorkPackagePrompt, redactWorkPackageSecrets } from "../seo/advisor/work-packages.ts";
 
 const clean = (value: unknown, max = 2_000) =>
   String(value ?? "")

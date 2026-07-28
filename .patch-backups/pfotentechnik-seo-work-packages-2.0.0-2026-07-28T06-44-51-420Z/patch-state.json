@@ -1,0 +1,58 @@
+{
+  "patch": "pfotentechnik-seo-work-packages-2.0.0",
+  "createdAt": "2026-07-28T06:44:51.423Z",
+  "files": [
+    {
+      "path": "apps/pfotentechnik/package.json",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/reports/seo-copilot/work-packages-2.0.0.md",
+      "existed": false
+    },
+    {
+      "path": "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
+      "existed": false
+    },
+    {
+      "path": "apps/pfotentechnik/src/layouts/SeoAdminLayout.astro",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/search/action-service.mjs",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/search/admin-server.mjs",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/seo-copilot/package-workflow.mjs",
+      "existed": false
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/seo-copilot/prompts.ts",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/seo-copilot/store.mjs",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/lib/seo/advisor/work-packages.ts",
+      "existed": false
+    },
+    {
+      "path": "apps/pfotentechnik/src/pages/admin/seo/prompts.astro",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/src/pages/admin/seo/tasks.astro",
+      "existed": true
+    },
+    {
+      "path": "apps/pfotentechnik/test/seo-work-packages.test.mjs",
+      "existed": false
+    }
+  ]
+}

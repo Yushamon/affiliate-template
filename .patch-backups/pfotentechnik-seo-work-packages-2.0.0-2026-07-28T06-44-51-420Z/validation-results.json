@@ -1,0 +1,36 @@
+{
+  "patch": "pfotentechnik-seo-work-packages-2.0.0",
+  "finishedAt": "2026-07-28T06:44:54.227Z",
+  "results": [
+    {
+      "command": "npm --workspace apps/pfotentechnik run test:seo-copilot",
+      "status": "passed",
+      "exitCode": 0,
+      "error": null
+    },
+    {
+      "command": "npm --workspace apps/pfotentechnik run build:content-graph",
+      "status": "passed",
+      "exitCode": 0,
+      "error": null
+    },
+    {
+      "command": "npm --workspace apps/pfotentechnik run lint:content",
+      "status": "passed",
+      "exitCode": 0,
+      "error": null
+    },
+    {
+      "command": "npm --workspace apps/pfotentechnik run audit:repository",
+      "status": "passed",
+      "exitCode": 0,
+      "error": null
+    },
+    {
+      "command": "npm --workspace apps/pfotentechnik run audit:products:strict",
+      "status": "failed",
+      "exitCode": 1,
+      "error": null
+    }
+  ]
+}
