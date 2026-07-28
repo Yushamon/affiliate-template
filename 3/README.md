@@ -1,4 +1,4 @@
-# PfotenTechnik Comparison Editorial Cover 15.2.0
+# PfotenTechnik Comparison Editorial Cover 15.2.2
 
 Release-Paket für den redaktionellen Vergleichsseiten-Hero von PfotenTechnik.
 
@@ -13,12 +13,19 @@ Release-Paket für den redaktionellen Vergleichsseiten-Hero von PfotenTechnik.
 - Backups, Cleanup und Audits
 - Prompt-Vorlagen für mehrere Vergleichskategorien
 
+## Behoben in 15.2.2
+
+- `ComparisonHeroFilters.astro`: Sowohl das native `<select>` als auch der statisch benannte Control-Wrapper verwenden `pt-control`.
+- Hintergrund: Der Komponenten-Audit bewertet auch Klassen mit dem Namensbestandteil `control`.
+- Der Installer liest die tatsächlich geschriebene Komponente erneut ein und stoppt vor den Audits, falls die Adoption fehlt.
+- Der Audit wird weiterhin nicht deaktiviert oder umgangen.
+
 ## Installation
 
 Das ZIP im Root des Repositories entpacken und ausführen:
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.0/apply-comparison-editorial-cover-15.2.0.mjs
+node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs
 ```
 
 Optional kann der Installer direkt aus dem entpackten Paketordner in den Repository-Root kopiert und dort ausgeführt werden.
@@ -26,7 +33,7 @@ Optional kann der Installer direkt aus dem entpackten Paketordner in den Reposit
 ## Einzelnes Hero-Bild übernehmen
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.0/apply-comparison-editorial-cover-15.2.0.mjs \
+node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs \
   --hero-slug="gps-tracker-hunde" \
   --hero-image="/Pfad/gps-tracker-hunde-editorial-hero.webp"
 ```
@@ -34,7 +41,7 @@ node pfotentechnik-comparison-editorial-cover-15.2.0/apply-comparison-editorial-
 ## Mehrere Hero-Bilder übernehmen
 
 ```bash
-node pfotentechnik-comparison-editorial-cover-15.2.0/apply-comparison-editorial-cover-15.2.0.mjs \
+node pfotentechnik-comparison-editorial-cover-15.2.2/apply-comparison-editorial-cover-15.2.2.mjs \
   --hero-dir="/Pfad/zu/hero-bildern"
 ```
 

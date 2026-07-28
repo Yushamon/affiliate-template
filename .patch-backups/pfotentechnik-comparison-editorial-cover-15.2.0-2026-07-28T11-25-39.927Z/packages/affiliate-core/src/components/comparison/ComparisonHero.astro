@@ -1,0 +1,58 @@
+---
+import OptimizedImage from "../OptimizedImage.astro";
+import type { CoreImage } from "../../comparison/model";
+
+type Props = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  image: CoreImage;
+  facts?: Array<{
+    label: string;
+    value: string;
+  }>;
+};
+
+const {
+  eyebrow,
+  title,
+  description,
+  image,
+  facts = []
+} = Astro.props as Props;
+---
+
+<header class="comparison-hero comparison-hero--editorial">
+  <div class="comparison-hero__media" aria-hidden="true">
+    <OptimizedImage
+      src={image.src}
+      alt=""
+      class="comparison-hero__image"
+      layout="full-width"
+      priority
+    />
+  </div>
+
+  <div class="comparison-hero__shade" aria-hidden="true"></div>
+
+  <div class="comparison-hero__copy">
+    <span class="comparison-eyebrow comparison-eyebrow--hero">
+      {eyebrow}
+    </span>
+
+    <h1>{title}</h1>
+
+    <p>{description}</p>
+
+    {facts.length > 0 && (
+      <dl class="comparison-hero__facts" aria-label="Vergleich auf einen Blick">
+        {facts.map((fact) => (
+          <div>
+            <dd>{fact.value}</dd>
+            <dt>{fact.label}</dt>
+          </div>
+        ))}
+      </dl>
+    )}
+  </div>
+</header>

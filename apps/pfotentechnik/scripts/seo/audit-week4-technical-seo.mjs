@@ -55,7 +55,7 @@ check("Comparison übergibt updatedAt", comparisonRoute.includes("updatedAt={com
 check("ItemList hat stabile ID", comparisonRoute.includes('#item-list'));
 check(
   "ItemList enthält Product-Items",
-  /itemListElement:[\\s\\S]*?item:[\\s\\S]*?["@']@type["@']:\\s*["@']Product["@']/m.test(comparisonRoute)
+  /itemListElement:[\s\S]*?item:[\s\S]*?["@']@type["@']:\s*["@']Product["@']/m.test(comparisonRoute)
 );
 check("ItemList-Reihenfolge dokumentiert", comparisonRoute.includes("ItemListOrderAscending"));
 
@@ -82,7 +82,7 @@ function walk(directory, matcher = () => true) {
 
 function parseJsonLd(html) {
   const values = [];
-  const regex = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\\s\\S]*?)<\/script>/gi;
+  const regex = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
   for (const match of html.matchAll(regex)) {
     try {
       const parsed = JSON.parse(match[1].trim());

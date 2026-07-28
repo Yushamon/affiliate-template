@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.2.2
+
+- `pt-control` zusätzlich am statischen `.comparison-cover-filter__control`-Wrapper ergänzt.
+- Post-Write-Verifikation für Select und Wrapper ergänzt.
+- Verhindert erneute Auditfehler durch nicht adoptierte statische Control-Klassen.
+
+## 15.2.1
+
+- Design-System-Adoption für Hero-Filter korrigiert (`pt-control`, `pt-button`).
+- Bestehenden Header-Auditfund durch gezielte `pt-button`-Adoption behoben.
+- Header wird vor Änderungen gesichert.
+- Komponenten-Audit bleibt verpflichtend.
+
 ## 15.2.0
 
 - Release-Paket mit README, Changelog und Prompt-Sammlung ergänzt.

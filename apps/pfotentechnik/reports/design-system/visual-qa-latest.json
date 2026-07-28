@@ -1,22 +1,133 @@
 {
-  "generatedAt": "2026-07-27T12:46:29.853Z",
+  "generatedAt": "2026-07-28T11:44:21.755Z",
   "totals": {
-    "pages": 202,
+    "pages": 203,
     "types": {
       "Admin": 8,
       "Ratgeber": 80,
-      "Hersteller": 19,
+      "Hersteller": 20,
       "Startseite": 1,
       "Kaufberatung": 1,
       "Produkt": 68,
       "Vergleich": 25
     },
-    "warnings": 328,
+    "warnings": 320,
     "severe": 0
   },
   "pages": [
     {
       "route": "/produkt/cat-mate-335-pet-fountain/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/cat-mate-c200/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/cat-mate-c300/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/cat-mate-c500/",
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
@@ -127,7 +238,81 @@
       ]
     },
     {
+      "route": "/produkt/honeyguardian-a68/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/oneisall-2-2l-cordless-fountain/",
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
@@ -238,6 +423,80 @@
       ]
     },
     {
+      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/produkt/oneisall-7l-dog-water-fountain/",
       "type": "Produkt",
       "metrics": {
@@ -288,7 +547,7 @@
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 36,
+        "headings": 37,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -313,6 +572,43 @@
     },
     {
       "route": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
       "type": "Produkt",
       "metrics": {
         "buttons": 2,
@@ -393,13 +689,13 @@
         "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 6,
+        "surfaces": 7,
         "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 36,
+        "headings": 37,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -608,6 +904,191 @@
       ]
     },
     {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-granary-dual-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/produkt/tractive-cat-6-mini/",
+      "type": "Produkt",
+      "metrics": {
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 36,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
+        },
+        {
+          "level": "warning",
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
+        },
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/produkt/tractive-dog-6-xl/",
       "type": "Produkt",
       "metrics": {
@@ -695,7 +1176,7 @@
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 36,
+        "headings": 37,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -756,34 +1237,34 @@
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "type": "Vergleich",
+      "route": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "type": "Produkt",
       "metrics": {
-        "buttons": 25,
-        "primitiveButtons": 25,
-        "chips": 0,
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 65,
-        "nestedSurfaceRisk": 31,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 97,
-        "h1": 2,
+        "headings": 37,
+        "h1": 1,
         "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
         },
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 31
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
         },
         {
           "level": "warning",
@@ -793,108 +1274,34 @@
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "type": "Vergleich",
+      "route": "/produkt/zeromouse-2-0/",
+      "type": "Produkt",
       "metrics": {
-        "buttons": 19,
-        "primitiveButtons": 19,
-        "chips": 0,
+        "buttons": 2,
+        "primitiveButtons": 1,
+        "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 55,
-        "nestedSurfaceRisk": 26,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 77,
-        "h1": 2,
+        "headings": 32,
+        "h1": 1,
         "main": 2,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
+          "code": "BUTTON_ADOPTION_LOW",
+          "value": "1/2"
         },
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 29,
-        "primitiveButtons": 29,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 73,
-        "nestedSurfaceRisk": 35,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 77,
-        "h1": 2,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 35
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 21,
-        "primitiveButtons": 21,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 55,
-        "nestedSurfaceRisk": 26,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 62,
-        "h1": 2,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        },
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
+          "code": "CHIP_ADOPTION_LOW",
+          "value": "0/1"
         },
         {
           "level": "warning",
@@ -1135,13 +1542,13 @@
         "primitiveButtons": 1,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 65,
-        "nestedSurfaceRisk": 32,
+        "surfaces": 69,
+        "nestedSurfaceRisk": 34,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 21,
+        "headings": 22,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -1150,7 +1557,7 @@
         {
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
-          "value": 32
+          "value": 34
         },
         {
           "level": "warning",
@@ -1206,102 +1613,6 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/cat-mate-c200/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 36,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/cat-mate-c300/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 36,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/cat-mate-c500/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 36,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -1448,135 +1759,7 @@
       ]
     },
     {
-      "route": "/produkt/honeyguardian-a68/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/oneisall-2-2l-cordless-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/oneisall-5l-automatic-cat-feeder/",
       "type": "Produkt",
       "metrics": {
         "buttons": 1,
@@ -1737,38 +1920,6 @@
     },
     {
       "route": "/produkt/petkit-eversweet-max-cordless/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
       "type": "Produkt",
       "metrics": {
         "buttons": 1,
@@ -2056,71 +2207,7 @@
       ]
     },
     {
-      "route": "/produkt/petlibro-granary-2-vision/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/produkt/petlibro-granary-camera-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-granary-dual-feeder/",
       "type": "Produkt",
       "metrics": {
         "buttons": 1,
@@ -2166,38 +2253,6 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petlibro-one-rfid-smart-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -2440,70 +2495,6 @@
       ]
     },
     {
-      "route": "/produkt/surefeed-microchip-pet-feeder/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/tractive-cat-6-mini/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 36,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/produkt/wopet-cube-air-ca10/",
       "type": "Produkt",
       "metrics": {
@@ -2575,13 +2566,13 @@
         "primitiveButtons": 1,
         "chips": 1,
         "primitiveChips": 0,
-        "surfaces": 6,
+        "surfaces": 7,
         "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 36,
+        "headings": 37,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -2632,38 +2623,6 @@
       ]
     },
     {
-      "route": "/produkt/xiaomi-smart-pet-food-feeder-2/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/produkt/xiaomi-smart-pet-fountain-2/",
       "type": "Produkt",
       "metrics": {
@@ -2678,38 +2637,6 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 37,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/zeromouse-2-0/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 31,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -2856,642 +2783,130 @@
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 26,
+        "primitiveButtons": 26,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 53,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 17,
-        "primitiveButtons": 17,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 51,
-        "nestedSurfaceRisk": 23,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 71,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 23
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 33,
-        "primitiveButtons": 33,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 81,
-        "nestedSurfaceRisk": 39,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 95,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 39
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 21,
-        "primitiveButtons": 21,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 57,
-        "nestedSurfaceRisk": 26,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 62,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 23,
-        "primitiveButtons": 23,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 60,
+        "surfaces": 59,
         "nestedSurfaceRisk": 28,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 64,
-        "h1": 1,
+        "headings": 96,
+        "h1": 2,
         "main": 2,
-        "darkMarkers": 0
+        "darkMarkers": 1
       },
       "findings": [
+        {
+          "level": "warning",
+          "code": "H1_COUNT",
+          "value": 2
+        },
         {
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
           "value": 28
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
         }
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 25,
-        "primitiveButtons": 25,
+        "buttons": 22,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 69,
-        "nestedSurfaceRisk": 33,
+        "surfaces": 51,
+        "nestedSurfaceRisk": 24,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 119,
-        "h1": 1,
+        "headings": 77,
+        "h1": 2,
         "main": 2,
-        "darkMarkers": 0
+        "darkMarkers": 1
       },
       "findings": [
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 33
+          "code": "H1_COUNT",
+          "value": 2
         },
         {
           "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
+          "code": "NESTED_SURFACE_RISK",
+          "value": 24
         }
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 30,
+        "primitiveButtons": 30,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
+        "surfaces": 67,
+        "nestedSurfaceRisk": 32,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 54,
-        "h1": 1,
+        "headings": 76,
+        "h1": 2,
         "main": 2,
-        "darkMarkers": 0
+        "darkMarkers": 1
       },
       "findings": [
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
+          "code": "H1_COUNT",
+          "value": 2
         },
         {
           "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
+          "code": "NESTED_SURFACE_RISK",
+          "value": 32
         }
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 19,
-        "primitiveButtons": 19,
+        "buttons": 22,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 55,
-        "nestedSurfaceRisk": 26,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 93,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 23,
-        "primitiveButtons": 23,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 63,
-        "nestedSurfaceRisk": 30,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 123,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 30
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 55,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 55,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 19,
-        "primitiveButtons": 19,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 55,
-        "nestedSurfaceRisk": 26,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 61,
-        "h1": 1,
+        "h1": 2,
         "main": 2,
-        "darkMarkers": 0
+        "darkMarkers": 1
       },
       "findings": [
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
+          "code": "H1_COUNT",
+          "value": 2
         },
         {
           "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 29,
-        "primitiveButtons": 29,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 77,
-        "nestedSurfaceRisk": 36,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 75,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
           "code": "NESTED_SURFACE_RISK",
-          "value": 36
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 31,
-        "primitiveButtons": 31,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 79,
-        "nestedSurfaceRisk": 37,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 78,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 37
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 56,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/futterautomat-gegen-schlingen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 41,
-        "nestedSurfaceRisk": 18,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 54,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 18
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/futterautomat-mit-app/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 27,
-        "primitiveButtons": 27,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 69,
-        "nestedSurfaceRisk": 33,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 96,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 33
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 31,
-        "primitiveButtons": 31,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 79,
-        "nestedSurfaceRisk": 37,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 74,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 37
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/gps-tracker-ohne-abo/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 45,
-        "nestedSurfaceRisk": 21,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 50,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 21
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 21,
-        "primitiveButtons": 21,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 57,
-        "nestedSurfaceRisk": 26,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 57,
-        "h1": 1,
-        "main": 2,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 26
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
+          "value": 23
         }
       ]
     },
@@ -3576,7 +2991,7 @@
         "headings": 15,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": [
         {
@@ -3590,8 +3005,8 @@
       "route": "/admin/seo/advisor/",
       "type": "Admin",
       "metrics": {
-        "buttons": 1867,
-        "primitiveButtons": 1862,
+        "buttons": 1863,
+        "primitiveButtons": 1858,
         "chips": 1,
         "primitiveChips": 1,
         "surfaces": 44,
@@ -3600,10 +3015,10 @@
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 0,
-        "headings": 51,
+        "headings": 52,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": [
         {
@@ -3630,7 +3045,7 @@
         "headings": 2,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": [
         {
@@ -3806,44 +3221,17 @@
       "route": "/fuetterungszeiten-nach-alter/",
       "type": "Ratgeber",
       "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
+        "buttons": 3,
+        "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 8,
+        "surfaces": 11,
         "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 23,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/futterautomat-batterie-oder-netzteil/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
+        "headings": 52,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3864,13 +3252,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 20,
+        "headings": 79,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3891,13 +3279,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 6,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 10,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 26,
+        "headings": 41,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -3972,13 +3360,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 22,
+        "headings": 85,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -4519,6 +3907,33 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 39,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hersteller/zeromouse/",
+      "type": "Hersteller",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 8,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 37,
         "h1": 1,
         "main": 2,
         "darkMarkers": 0
@@ -5396,6 +4811,33 @@
       ]
     },
     {
+      "route": "/trockenfutter-oder-nassfutter-hund/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 3,
+        "primitiveButtons": 3,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 90,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/trockenfutter-oder-nassfutter-katze/",
       "type": "Ratgeber",
       "metrics": {
@@ -5446,6 +4888,546 @@
           "level": "warning",
           "code": "DARK_MODE_MARKER_MISSING",
           "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 47,
+        "nestedSurfaceRisk": 22,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 60,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 24,
+        "primitiveButtons": 24,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 59,
+        "nestedSurfaceRisk": 28,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 77,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 34,
+        "primitiveButtons": 34,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 77,
+        "nestedSurfaceRisk": 36,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 94,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 36
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 22,
+        "primitiveButtons": 22,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 61,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 22,
+        "primitiveButtons": 22,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 62,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 28,
+        "primitiveButtons": 28,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 65,
+        "nestedSurfaceRisk": 30,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 119,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 47,
+        "nestedSurfaceRisk": 22,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 60,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 22,
+        "primitiveButtons": 22,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 51,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 93,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 26,
+        "primitiveButtons": 26,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 59,
+        "nestedSurfaceRisk": 28,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 123,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 61,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 47,
+        "nestedSurfaceRisk": 22,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 61,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 22,
+        "primitiveButtons": 22,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 51,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 61,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 30,
+        "primitiveButtons": 30,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 71,
+        "nestedSurfaceRisk": 33,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 74,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 33
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 32,
+        "primitiveButtons": 32,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 73,
+        "nestedSurfaceRisk": 34,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 77,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 62,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/futterautomat-gegen-schlingen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 20,
+        "primitiveButtons": 20,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 60,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/futterautomat-mit-app/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 28,
+        "primitiveButtons": 28,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 65,
+        "nestedSurfaceRisk": 30,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 95,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 32,
+        "primitiveButtons": 32,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 73,
+        "nestedSurfaceRisk": 34,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 73,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 16,
+        "primitiveButtons": 16,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 39,
+        "nestedSurfaceRisk": 19,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 49,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 19
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 22,
+        "primitiveButtons": 22,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 49,
+        "nestedSurfaceRisk": 23,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 56,
+        "h1": 1,
+        "main": 2,
+        "darkMarkers": 1
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "NESTED_SURFACE_RISK",
+          "value": 23
         }
       ]
     },
@@ -5592,13 +5574,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 22,
+        "headings": 87,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -5619,13 +5601,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 6,
+        "surfaces": 7,
         "nestedSurfaceRisk": 2,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 45,
+        "headings": 46,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -5727,13 +5709,13 @@
         "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 11,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 28,
+        "headings": 100,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -5777,17 +5759,17 @@
       "route": "/wie-lange-bleibt-trockenfutter-frisch/",
       "type": "Ratgeber",
       "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
+        "buttons": 3,
+        "primitiveButtons": 3,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 8,
+        "surfaces": 11,
         "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
-        "headings": 39,
+        "headings": 100,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -6027,7 +6009,7 @@
         "headings": 8,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": []
     },
@@ -6039,8 +6021,8 @@
         "primitiveButtons": 0,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 5,
-        "nestedSurfaceRisk": 2,
+        "surfaces": 6,
+        "nestedSurfaceRisk": 3,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
@@ -6048,7 +6030,7 @@
         "headings": 6,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": []
     },
@@ -6060,16 +6042,16 @@
         "primitiveButtons": 0,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 5,
+        "surfaces": 0,
         "nestedSurfaceRisk": 0,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 0,
-        "headings": 6,
+        "headings": 2,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": []
     },
@@ -6081,16 +6063,16 @@
         "primitiveButtons": 0,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 1,
+        "surfaces": 0,
         "nestedSurfaceRisk": 0,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 0,
-        "headings": 1,
+        "headings": 2,
         "h1": 1,
         "main": 0,
-        "darkMarkers": 5
+        "darkMarkers": 2
       },
       "findings": []
     }

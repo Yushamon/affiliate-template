@@ -1,58 +1,66 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
-import type { CoreImage } from "../../comparison/model";
+import type { ComparisonFilter, CoreImage } from "../../comparison/model";
+import ComparisonHeroFilters from "./ComparisonHeroFilters.astro";
 
 type Props = {
   eyebrow: string;
   title: string;
-  description: string;
   image: CoreImage;
-  facts?: Array<{
-    label: string;
-    value: string;
-  }>;
+  facts?: Array<{ label: string; value: string }>;
+  filters?: ComparisonFilter[];
+  productCount?: number;
 };
 
 const {
   eyebrow,
   title,
-  description,
   image,
-  facts = []
+  facts = [],
+  filters = [],
+  productCount = 0
 } = Astro.props as Props;
+
+const productFact = facts.find((fact) => /model|produkt/i.test(fact.label));
+const dateFact = facts.find((fact) => /datenstand|stand|aktuell/i.test(fact.label));
+const visibleFacts = [
+  productFact
+    ? { label: `${productFact.value} Modelle`, value: "verglichen", icon: "box" }
+    : { label: `${productCount} Modelle`, value: "verglichen", icon: "box" },
+  dateFact
+    ? { label: `Stand ${dateFact.value}`, value: "aktuell geprüft", icon: "check" }
+    : { label: "Redaktionell", value: "bewertet", icon: "check" }
+].slice(0, 2);
 ---
 
-<header class="comparison-hero comparison-hero--editorial">
-  <div class="comparison-hero__media" aria-hidden="true">
+<header class="comparison-cover" data-comparison-cover="15.2.2">
+  <div class="comparison-cover__copy">
+    <span class="comparison-cover__eyebrow">{eyebrow}</span>
+    <h1>{title}</h1>
+    <p>Klare Empfehlungen statt endloser Produktlisten.</p>
+  </div>
+
+  <dl class="comparison-cover__facts" aria-label="Vergleich auf einen Blick">
+    {visibleFacts.map((fact) => (
+      <div class="comparison-cover__fact">
+        <span class={`comparison-cover__fact-icon comparison-cover__fact-icon--${fact.icon}`} aria-hidden="true"></span>
+        <span>
+          <dt>{fact.label}</dt>
+          <dd>{fact.value}</dd>
+        </span>
+      </div>
+    ))}
+  </dl>
+
+  <div class="comparison-cover__media">
     <OptimizedImage
       src={image.src}
-      alt=""
-      class="comparison-hero__image"
+      alt={image.alt ?? ""}
+      class="comparison-cover__image"
       layout="full-width"
       priority
     />
   </div>
 
-  <div class="comparison-hero__shade" aria-hidden="true"></div>
-
-  <div class="comparison-hero__copy">
-    <span class="comparison-eyebrow comparison-eyebrow--hero">
-      {eyebrow}
-    </span>
-
-    <h1>{title}</h1>
-
-    <p>{description}</p>
-
-    {facts.length > 0 && (
-      <dl class="comparison-hero__facts" aria-label="Vergleich auf einen Blick">
-        {facts.map((fact) => (
-          <div>
-            <dd>{fact.value}</dd>
-            <dt>{fact.label}</dt>
-          </div>
-        ))}
-      </dl>
-    )}
-  </div>
+  <ComparisonHeroFilters filters={filters} productCount={productCount} />
 </header>

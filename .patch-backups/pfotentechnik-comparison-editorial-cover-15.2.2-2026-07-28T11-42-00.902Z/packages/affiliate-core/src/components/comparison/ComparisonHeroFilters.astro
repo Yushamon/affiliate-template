@@ -1,0 +1,56 @@
+---
+import type { ComparisonFilter } from "../../comparison/model";
+
+type Props = {
+  filters: ComparisonFilter[];
+  productCount: number;
+};
+
+const { filters, productCount } = Astro.props as Props;
+const preferredKeys = ["tier", "futterart", "app", "kamera", "reichweite", "akkulaufzeit", "akku", "preisklasse", "preis"];
+const orderedFilters = [...filters].sort((a, b) => {
+  const aIndex = preferredKeys.indexOf(a.key);
+  const bIndex = preferredKeys.indexOf(b.key);
+  return (aIndex < 0 ? 999 : aIndex) - (bIndex < 0 ? 999 : bIndex);
+});
+const quickFilters = orderedFilters.filter((filter) => filter.options.length > 0).slice(0, 4);
+---
+
+{quickFilters.length > 0 && (
+  <section class="comparison-cover-filters" aria-labelledby="comparison-cover-filter-title">
+    <div class="comparison-cover-filters__head">
+      <span class="comparison-cover-filters__icon" aria-hidden="true"></span>
+      <h2 id="comparison-cover-filter-title">Produkte filtern</h2>
+    </div>
+
+    <div class="comparison-cover-filters__grid">
+      {quickFilters.map((filter) => (
+        <label class="comparison-cover-filter">
+          <span class="comparison-cover-filter__label">{filter.label}</span>
+          <span class="comparison-cover-filter__control">
+            <select class="pt-control" data-comparison-hero-select data-filter-key={filter.key} aria-label={filter.label}>
+              <option value="">Alle</option>
+              {filter.options.map((option) => <option value={option.value}>{option.label}</option>)}
+            </select>
+            <span class="comparison-cover-filter__chevron" aria-hidden="true"></span>
+          </span>
+        </label>
+      ))}
+    </div>
+
+    <div class="comparison-cover-filters__actions">
+      <button type="button" class="pt-button comparison-cover-filters__apply" data-comparison-hero-apply>
+        Vergleich anpassen
+        <span aria-hidden="true">→</span>
+      </button>
+      <button type="button" class="pt-button comparison-cover-filters__reset" data-comparison-hero-filter-reset>
+        Filter zurücksetzen
+      </button>
+    </div>
+
+    <p class="comparison-cover-filters__result" aria-live="polite">
+      <strong data-comparison-hero-result-count>{productCount}</strong>
+      <span> passende Modelle</span>
+    </p>
+  </section>
+)}
