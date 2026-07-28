@@ -1,7 +1,4 @@
-import type {
-  InternalLinkDefinition,
-  InternalLinkDictionary
-} from "./types";
+import type { InternalLinkDefinition, InternalLinkDictionary } from "./types.ts";
 
 export interface LinkableProduct {
   name: string;
@@ -27,139 +24,96 @@ export interface LinkGeneratorInput {
   manufacturers?: Record<string, LinkableManufacturer>;
   decisionRules?: Record<string, LinkableDecisionRule>;
   manualLinks?: InternalLinkDictionary;
+  blockedAnchors?: Iterable<string>;
 }
 
 const normalizePath = (href: string) => {
-  if (!href) {
-    return "/";
-  }
-
-  if (
-    href.startsWith("http://") ||
-    href.startsWith("https://") ||
-    href.startsWith("mailto:")
-  ) {
-    return href;
-  }
-
-  const normalizedHref = href.startsWith("/")
-    ? href
-    : `/${href}`;
-
-  return normalizedHref.endsWith("/")
-    ? normalizedHref
-    : `${normalizedHref}/`;
+  if (!href) return "/";
+  if (/^(?:https?:|mailto:)/.test(href)) return href;
+  const path = href.startsWith("/") ? href : `/${href}`;
+  return path.endsWith("/") ? path : `${path}/`;
 };
 
-const uniqueKeywords = (keywords: Array<string | undefined>) =>
-  Array.from(
-    new Set(
-      keywords
-        .filter((keyword): keyword is string => Boolean(keyword?.trim()))
-        .map((keyword) => keyword.trim())
-    )
-  );
+const normalizeTerm = (value: string) =>
+  value.toLocaleLowerCase("de-DE").normalize("NFKD").replace(/\p{Diacritic}/gu, "")
+    .replace(/ß/g, "ss").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
-const createDefinition = (
-  definition: InternalLinkDefinition
-): InternalLinkDefinition => ({
+const uniqueAliases = (values: Array<string | undefined>, blocked = new Set<string>()) =>
+  [...new Set(values.filter((value): value is string => Boolean(value?.trim())).map((value) => value.trim()))]
+    .filter((value) => !blocked.has(normalizeTerm(value)));
+
+const createDefinition = (definition: InternalLinkDefinition): InternalLinkDefinition => ({
   maxOccurrences: 1,
   preventNestedLinks: true,
   ...definition,
-  keywords: uniqueKeywords(definition.keywords),
+  anchorAliases: uniqueAliases([
+    ...(definition.anchorAliases ?? []),
+    ...(definition.keywords ?? [])
+  ]),
+  keywords: undefined,
   href: normalizePath(definition.href)
 });
-
-const createProductLinks = (
-  products: Record<string, LinkableProduct>
-): InternalLinkDictionary =>
-  Object.fromEntries(
-    Object.entries(products).map(([productKey, product]) => [
-      `product:${productKey}`,
-      createDefinition({
-        id: `product:${productKey}`,
-        keywords: uniqueKeywords([
-          product.name,
-          ...(product.aliases ?? [])
-        ]),
-        href: product.productUrl ?? `/produkt/${productKey}/`,
-        priority: "high",
-        title: product.name,
-        group: "product"
-      })
-    ])
-  );
-
-const createManufacturerLinks = (
-  manufacturers: Record<string, LinkableManufacturer>
-): InternalLinkDictionary =>
-  Object.fromEntries(
-    Object.entries(manufacturers).map(
-      ([manufacturerKey, manufacturer]) => {
-        const manufacturerName =
-          manufacturer.name ??
-          manufacturer.title ??
-          manufacturerKey;
-
-        return [
-          `manufacturer:${manufacturerKey}`,
-          createDefinition({
-            id: `manufacturer:${manufacturerKey}`,
-            keywords: uniqueKeywords([
-              manufacturerName,
-              ...(manufacturer.aliases ?? [])
-            ]),
-            href: `/hersteller/${
-              manufacturer.slug ?? manufacturerKey
-            }/`,
-            priority: "high",
-            title: manufacturerName,
-            group: "manufacturer"
-          })
-        ];
-      }
-    )
-  );
-
-const createDecisionLinks = (
-  decisionRules: Record<string, LinkableDecisionRule>
-): InternalLinkDictionary =>
-  Object.fromEntries(
-    Object.entries(decisionRules).map(([decisionKey, rule]) => {
-      const fallbackSlug = decisionKey
-        .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
-        .toLowerCase();
-
-      return [
-        `decision:${decisionKey}`,
-        createDefinition({
-          id: `decision:${decisionKey}`,
-          keywords: uniqueKeywords([
-            rule.title,
-            ...(rule.keywords ?? [])
-          ]),
-          href: `/${rule.slug ?? fallbackSlug}/`,
-          priority: "normal",
-          title: rule.title,
-          group: "decision"
-        })
-      ];
-    })
-  );
 
 export const generateInternalLinkDictionary = ({
   products = {},
   manufacturers = {},
   decisionRules = {},
-  manualLinks = {}
-}: LinkGeneratorInput): InternalLinkDictionary => ({
-  ...manualLinks,
-  ...createManufacturerLinks(manufacturers),
-  ...createProductLinks(products),
-  ...createDecisionLinks(decisionRules)
-});
+  manualLinks = {},
+  blockedAnchors = []
+}: LinkGeneratorInput): InternalLinkDictionary => {
+  const blocked = new Set([...blockedAnchors].map(normalizeTerm));
+  const result: InternalLinkDictionary = {};
 
-export const generateInternalLinkDefinitions = (
-  input: LinkGeneratorInput
-): InternalLinkDefinition[] =>
+  for (const [key, definition] of Object.entries(manualLinks)) {
+    result[key] = createDefinition({
+      ...definition,
+      anchorAliases: uniqueAliases([
+        ...(definition.anchorAliases ?? []),
+        ...(definition.keywords ?? [])
+      ], blocked)
+    });
+  }
+
+  for (const [key, manufacturer] of Object.entries(manufacturers)) {
+    const name = manufacturer.name ?? manufacturer.title ?? key;
+    result[`manufacturer:${key}`] = createDefinition({
+      id: `manufacturer:${key}`,
+      anchorAliases: uniqueAliases([name, ...(manufacturer.aliases ?? [])], blocked),
+      href: `/hersteller/${manufacturer.slug ?? key}/`,
+      priority: "normal",
+      title: name,
+      group: "manufacturer",
+      intentTerms: ["Hersteller", "Marke"]
+    });
+  }
+
+  for (const [key, product] of Object.entries(products)) {
+    result[`product:${key}`] = createDefinition({
+      id: `product:${key}`,
+      anchorAliases: uniqueAliases([product.name, ...(product.aliases ?? [])], blocked),
+      href: product.productUrl ?? `/produkt/${key}/`,
+      priority: "high",
+      title: product.name,
+      group: "product",
+      intentTerms: ["Modell", "Produkt", "Testbericht"]
+    });
+  }
+
+  for (const [key, rule] of Object.entries(decisionRules)) {
+    const slug = rule.slug ?? key.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+    result[`comparison:${key}`] = createDefinition({
+      id: `comparison:${key}`,
+      anchorAliases: uniqueAliases([rule.title, ...(rule.keywords ?? [])], blocked),
+      href: `/vergleiche/${slug}/`,
+      priority: "high",
+      title: rule.title,
+      group: "comparison",
+      intentTerms: ["Vergleich", "beste Modelle", "Kaufentscheidung"]
+    });
+  }
+
+  return result;
+};
+
+export const generateInternalLinkDefinitions = (input: LinkGeneratorInput) =>
   Object.values(generateInternalLinkDictionary(input));

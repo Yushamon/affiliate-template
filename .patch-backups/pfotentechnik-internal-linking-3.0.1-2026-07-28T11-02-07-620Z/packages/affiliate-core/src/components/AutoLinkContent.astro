@@ -1,0 +1,73 @@
+---
+
+import { createInternalLinkedHtml } from "../linking/htmlLinker";
+
+import type { InternalLinkDefinition } from "../linking/types";
+
+import type { InternalLinkGroup } from "../linking/rules";
+
+interface Props {
+
+  definitions: InternalLinkDefinition[];
+
+  sourcePath?: string;
+
+  sourceGroup?: InternalLinkGroup;
+
+  sourceContext?: string;
+
+  sourceContexts?: string[];
+
+  maxLinksPerPage?: number;
+
+  ignoredTags?: string[];
+
+}
+
+const {
+
+  definitions,
+
+  sourcePath,
+
+  sourceGroup,
+
+  sourceContext,
+
+  sourceContexts = [],
+
+  maxLinksPerPage = 12,
+
+  ignoredTags = []
+
+} = Astro.props;
+
+const originalHtml = await Astro.slots.render("default");
+
+const linkedHtml = createInternalLinkedHtml(
+
+  originalHtml,
+
+  definitions,
+
+  {
+
+    sourcePath,
+
+    sourceGroup,
+
+    sourceContext,
+
+    sourceContexts,
+
+    maxLinksPerPage,
+
+    ignoredTags
+
+  }
+
+);
+
+---
+
+<Fragment set:html={linkedHtml} />

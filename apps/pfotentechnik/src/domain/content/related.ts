@@ -1,5 +1,9 @@
+import { getInternalLinkRuleWeight } from "@affiliate-core/linking/rules";
+import type { InternalLinkGroup } from "@affiliate-core/linking/types";
 import type { HubContentEntry } from "./registry";
 import { getAllContent } from "./registry";
+import { detectLinkTopics, normalizeTaxonomyTerm } from "./linkTaxonomy";
+import { hasThematicProximity } from "./linkingSemantics";
 
 type RelatedContentOptions = {
   currentSlug: string;
@@ -9,122 +13,128 @@ type RelatedContentOptions = {
   title?: string;
   description?: string;
   exclude?: string[];
+  explicitRelations?: string[];
   limit?: number;
 };
 
-type ScoredEntry = {
-  entry: HubContentEntry;
-  score: number;
-};
+type ScoredEntry = { entry: HubContentEntry; score: number; evidence: string[] };
 
-const normalizeValue = (value: string) =>
-  value
-    .trim()
-    .toLowerCase()
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-
+const normalizeValue = normalizeTaxonomyTerm;
 const stopWords = new Set([
   "aber", "alle", "auch", "beim", "eine", "einem", "einen", "einer", "eines",
   "fuer", "haben", "ihre", "oder", "sind", "ueber", "unter", "vergleich",
   "ratgeber", "test", "tests", "welche", "welcher", "welches"
 ]);
 
-const stemToken = (token: string) =>
-  token.replace(/(ern|em|en|er|es|e|n|s)$/i, "").trim();
+const stemToken = (token: string) => token.replace(/(ern|em|en|er|es|e|n|s)$/i, "").trim();
+const tokenize = (values: Array<string | undefined>) => new Set(
+  values.flatMap((value) => normalizeValue(value ?? "").split(" "))
+    .map(stemToken)
+    .filter((token) => token.length >= 4 && !stopWords.has(token))
+);
+const exactMatches = (left: string[], right: string[]) => {
+  const targets = new Set(right.map(normalizeValue));
+  return left.filter((value) => targets.has(normalizeValue(value))).length;
+};
+const semanticSimilarity = (left: Set<string>, right: Set<string>) => {
+  if (!left.size || !right.size) return 0;
+  const intersection = [...left].filter((token) => right.has(token)).length;
+  return intersection / new Set([...left, ...right]).size;
+};
+const toGroup = (type?: HubContentEntry["type"]): InternalLinkGroup =>
+  type === "comparison" || type === "product" || type === "manufacturer"
+    ? type
+    : "knowledge";
 
-const tokenize = (values: Array<string | undefined>) =>
-  new Set(
-    values
-      .flatMap((value) => normalizeValue(value ?? "").split(" "))
-      .map(stemToken)
-      .filter((token) => token.length >= 3 && !stopWords.has(token))
-  );
-
-const exactMatchCount = (sourceValues: string[], targetValues: string[]) => {
-  const normalizedTargets = new Set(targetValues.map(normalizeValue));
-  return sourceValues.reduce(
-    (score, value) => normalizedTargets.has(normalizeValue(value)) ? score + 1 : score,
-    0
-  );
+const getEntryData = (entry: HubContentEntry) => entry.entry.data as Record<string, any>;
+const getExplicitTargetSlugs = (entry: HubContentEntry) => {
+  const data = getEntryData(entry);
+  return [
+    ...(Array.isArray(data.related?.include) ? data.related.include : []),
+    ...(Array.isArray(data.relatedSlugs) ? data.relatedSlugs : []),
+    ...(Array.isArray(data.comparisons) ? data.comparisons : []),
+    ...(Array.isArray(data.productSlugs) ? data.productSlugs : []),
+    ...(Array.isArray(data.alternatives) ? data.alternatives : [])
+  ].map(String);
 };
 
-const tokenOverlapScore = (sourceTokens: Set<string>, targetTokens: Set<string>) => {
-  if (sourceTokens.size === 0 || targetTokens.size === 0) return 0;
-  const matches = [...sourceTokens].filter((token) => targetTokens.has(token)).length;
-  const union = new Set([...sourceTokens, ...targetTokens]).size;
-  return union > 0 ? matches / union : 0;
-};
-
-const getTypeBonus = (
-  sourceType: HubContentEntry["type"] | undefined,
-  targetType: HubContentEntry["type"]
-) => {
-  const matrix: Partial<Record<HubContentEntry["type"], Partial<Record<HubContentEntry["type"], number>>>> = {
-    knowledge: { comparison: 4, knowledge: 3, product: 2, manufacturer: 1 },
-    page: { comparison: 4, knowledge: 3, product: 2, manufacturer: 1 },
-    comparison: { product: 4, knowledge: 3, manufacturer: 2, comparison: 1 },
-    product: { comparison: 4, knowledge: 3, manufacturer: 2, product: 1 },
-    manufacturer: { product: 4, comparison: 3, knowledge: 2, manufacturer: 1 }
-  };
-  return sourceType ? matrix[sourceType]?.[targetType] ?? 0 : 0;
-};
-
-const scoreEntry = (
+export const scoreRelatedEntry = (
   entry: HubContentEntry,
-  options: RelatedContentOptions,
-  sourceTokens: Set<string>
-): ScoredEntry => {
-  const tagMatches = exactMatchCount(entry.tags, options.tags);
-  const sectionMatches = exactMatchCount(entry.sections, options.sections ?? []);
-  const targetTokens = tokenize([
+  options: RelatedContentOptions
+): ScoredEntry | null => {
+  const sourceValues = [
+    options.title,
+    options.description,
+    ...options.tags,
+    ...(options.sections ?? [])
+  ];
+  const targetValues = [
     entry.title,
     entry.description,
     entry.hubTitle,
     entry.hubDescription,
     ...entry.tags,
     ...entry.sections
-  ]);
-  const semanticScore = tokenOverlapScore(sourceTokens, targetTokens) * 20;
-  const clusterBonus = sectionMatches > 0 ? 8 : 0;
-  const cornerstoneBonus =
-    (entry.featured ? 5 : 0) +
-    Math.max(0, Math.min(3, (100 - entry.order) / 25));
+  ];
+  const sourceTopics = new Set(detectLinkTopics(sourceValues));
+  const targetTopics = new Set(detectLinkTopics(targetValues));
+  const sharedTopics = [...sourceTopics].filter((topic) => targetTopics.has(topic));
+  const tagMatches = exactMatches(options.tags, entry.tags);
+  const sectionMatches = exactMatches(options.sections ?? [], entry.sections);
+  const semantic = semanticSimilarity(tokenize(sourceValues), tokenize(targetValues));
+  const explicit = new Set([
+    ...(options.explicitRelations ?? []),
+    ...getExplicitTargetSlugs(entry)
+  ].map(normalizeValue)).has(normalizeValue(entry.slug)) ||
+    getExplicitTargetSlugs(entry).map(normalizeValue).includes(normalizeValue(options.currentSlug));
+
+  const hasThematicEvidence = hasThematicProximity({
+    explicit,
+    sharedTopics,
+    exactTagMatches: tagMatches,
+    sharedHubs: sectionMatches,
+    semanticSimilarity: semantic
+  });
+  if (!hasThematicEvidence) return null;
+
+  const evidence = [
+    ...(explicit ? ["explizite Relation"] : []),
+    ...(sharedTopics.length ? [`Themen: ${sharedTopics.join(", ")}`] : []),
+    ...(tagMatches ? [`${tagMatches} exakter Tag`] : []),
+    ...(sectionMatches ? [`${sectionMatches} gemeinsamer Hub`] : []),
+    ...(semantic >= 0.18 ? [`semantische Nähe ${semantic.toFixed(2)}`] : [])
+  ];
+  const funnel = getInternalLinkRuleWeight({
+    sourceGroup: toGroup(options.type),
+    targetGroup: toGroup(entry.type),
+    targetPath: entry.href
+  });
   const score =
-    tagMatches * 5 +
-    sectionMatches * 7 +
-    semanticScore +
-    clusterBonus +
-    getTypeBonus(options.type, entry.type) +
-    cornerstoneBonus;
-  return { entry, score };
+    (explicit ? 100 : 0) +
+    sharedTopics.length * 24 +
+    tagMatches * 16 +
+    sectionMatches * 18 +
+    semantic * 40 +
+    funnel / 8 +
+    (entry.featured ? 2 : 0);
+  return { entry, score, evidence };
 };
 
 const selectDiverseEntries = (entries: ScoredEntry[], limit: number) => {
   const selected: HubContentEntry[] = [];
   const typeCounts = new Map<HubContentEntry["type"], number>();
   const maxPerType = limit <= 3 ? 1 : 2;
-
   for (const candidate of entries) {
     if (selected.length >= limit) break;
-    const currentTypeCount = typeCounts.get(candidate.entry.type) ?? 0;
-    if (currentTypeCount >= maxPerType) continue;
+    const count = typeCounts.get(candidate.entry.type) ?? 0;
+    if (count >= maxPerType) continue;
     selected.push(candidate.entry);
-    typeCounts.set(candidate.entry.type, currentTypeCount + 1);
+    typeCounts.set(candidate.entry.type, count + 1);
   }
-
-  if (selected.length < limit) {
-    for (const candidate of entries) {
-      if (selected.length >= limit) break;
-      if (!selected.includes(candidate.entry)) selected.push(candidate.entry);
-    }
+  for (const candidate of entries) {
+    if (selected.length >= limit) break;
+    if (!selected.includes(candidate.entry)) selected.push(candidate.entry);
   }
-
   return selected;
 };
 
@@ -136,31 +146,21 @@ export const getRelatedContent = async ({
   title,
   description,
   exclude = [],
+  explicitRelations = [],
   limit = 4
 }: RelatedContentOptions): Promise<HubContentEntry[]> => {
   const content = await getAllContent();
-  const excludedSlugs = new Set([currentSlug, ...exclude].map(normalizeValue));
-  const sourceTokens = tokenize([title, description, ...tags, ...sections]);
-
-  const scoredEntries = content
-    .filter((entry) => !excludedSlugs.has(normalizeValue(entry.slug)))
-    .map((entry) => scoreEntry(entry, {
-      currentSlug,
-      tags,
-      sections,
-      type,
-      title,
-      description,
-      exclude,
-      limit
-    }, sourceTokens))
-    .filter(({ score }) => score >= 3)
+  const excluded = new Set([currentSlug, ...exclude].map(normalizeValue));
+  const options = { currentSlug, tags, sections, type, title, description, exclude, explicitRelations, limit };
+  const scored = content
+    .filter((entry) => !excluded.has(normalizeValue(entry.slug)))
+    .map((entry) => scoreRelatedEntry(entry, options))
+    .filter((value): value is ScoredEntry => Boolean(value))
     .sort((a, b) =>
       b.score - a.score ||
       Number(b.entry.featured) - Number(a.entry.featured) ||
       a.entry.order - b.entry.order ||
-      a.entry.hubTitle.localeCompare(b.entry.hubTitle, "de")
+      a.entry.href.localeCompare(b.entry.href, "de")
     );
-
-  return selectDiverseEntries(scoredEntries, limit);
+  return selectDiverseEntries(scored, limit);
 };

@@ -1,0 +1,514 @@
+# Audit interne Verlinkung 3.0
+
+Erstellt: 2026-07-28T11:05:38.323Z
+
+## Ergebnis
+
+- Dokumente: 184
+- Linkdefinitionen: 408
+- Simulierte automatische Links: 402
+- Fehler: 43
+- Warnungen: 51
+- Strict-kritisch: 43
+
+## Befunde
+
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /futterautomat-hund/ verlinkt auf die nicht vorhandene Route /futterautomat-fuer-berufstaetige/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /futterautomat-hund/ verlinkt auf die nicht vorhandene Route /hund-frisst-zu-schnell/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /produkt/weenect-xs/ verlinkt auf die nicht vorhandene Route /gps-tracker-oder-bluetooth-tag/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /trinkbrunnen/ verlinkt auf die nicht vorhandene Route /hund-trinkt-ploetzlich-viel/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR LINK_TARGET_ROUTE_MISSING:** /wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.
+- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ enthält einen Selbstlink.
+- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ enthält einen Selbstlink.
+- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-mit-kamera/ enthält einen Selbstlink.
+- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-ohne-wlan/ enthält einen Selbstlink.
+- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /futterautomat-mit-kamera/ existiert nicht im Content-Bestand.
+- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /futterautomat-nassfutter/ existiert nicht im Content-Bestand.
+- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /gps-tracker-ohne-abo/ existiert nicht im Content-Bestand.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- **WARNING LINKING_METADATA_MISSING:** /futterautomat-katze/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /so-bewerten-wir/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/aqara-smart-pet-feeder-c1/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/cat-mate-335-pet-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/cat-mate-c200/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/cat-mate-shell-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/catit-pixi-vision-smart-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/garmin-alpha-tt-25/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-a305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-a68/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-smart-pet-feeder-s305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/imipaw-3l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-2-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-2-in-1-feeder-water/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-3-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-3-5l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-5l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/pawbby-smart-pet-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-5-mini/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+
+## Tatsächlich simulierte Anchor-Texte
+
+- /biofilm-im-katzentrinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
+- /filter-im-katzentrinkbrunnen-wechseln/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /filter-im-katzentrinkbrunnen-wechseln/ → /hersteller/petkit/: „PETKIT“
+- /fuetterungszeiten-nach-alter/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /fuetterungszeiten-nach-alter/ → /trinkbrunnen-seniorenkatzen/: „ältere Katze“
+- /fuetterungszeiten-nach-alter/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /fuetterungszeiten-nach-alter/ → /welpen-richtig-fuettern/: „Welpenfutter“
+- /futterautomat-bei-stromausfall/ → /smarte-futterautomaten/: „Futterautomaten“
+- /futterautomat-bei-stromausfall/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-bei-stromausfall/ → /hersteller/petkit/: „PETKIT“
+- /futterautomat-bei-stromausfall/ → /hersteller/xiaomi/: „Xiaomi“
+- /futterautomat-bei-stromausfall/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /futterautomat-bei-stromausfall/ → /hersteller/petsafe/: „PetSafe“
+- /futterautomat-bei-uebergewicht/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /futterautomat-bei-uebergewicht/ → /futterautomat-hund/: „Futterautomaten für Hunde“
+- /futterautomat-bei-uebergewicht/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /futterautomat-bei-uebergewicht/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /futterautomat-bei-uebergewicht/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-bei-uebergewicht/ → /hersteller/surefeed/: „SureFeed“
+- /futterautomat-bei-uebergewicht/ → /hersteller/petkit/: „PETKIT“
+- /futterautomat-hund/ → /smarte-futterautomaten/: „Futterautomat“
+- /futterautomat-hund/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /futterautomat-hund/ → /warum-schlingt-mein-hund/: „frisst zu schnell“
+- /futterautomat-hund/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /futterautomat-hund/ → /hersteller/petlibro/: „Petlibro“
+- /futterautomat-im-urlaub/ → /trinkbrunnen/: „Trinkbrunnen“
+- /futterautomat-im-urlaub/ → /wie-viele-wasserstellen-katze/: „Mehrere Wasserstellen“
+- /futterautomat-im-urlaub/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-im-urlaub/ → /hersteller/xiaomi/: „Xiaomi“
+- /futterautomat-katze/ → /hersteller/cat-mate/: „Cat Mate“
+- /futterautomat-katze/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-katze/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
+- /futterautomat-katze/ → /hersteller/petkit/: „PETKIT“
+- /futterautomat-katze/ → /hersteller/xiaomi/: „Xiaomi“
+- /futterautomat-richtig-reinigen/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-richtig-reinigen/ → /hersteller/petsafe/: „PetSafe“
+- /futterautomat-richtig-reinigen/ → /hersteller/petkit/: „PETKIT“
+- /futterautomat-und-ernaehrung/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /futterautomat-und-ernaehrung/ → /fuetterungszeiten-nach-alter/: „wie oft Hund füttern“
+- /futterautomat-und-ernaehrung/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /futtermenge-hund/ → /smarte-futterautomaten/: „Futterautomaten“
+- /futtermenge-hund/ → /futterautomat-hund/: „Futterautomaten für Hunde“
+- /futtermenge-katze/ → /smarte-futterautomaten/: „Futterautomaten“
+- /futtermenge-katze/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /gps-oder-bluetooth/ → /hersteller/weenect/: „Weenect“
+- /gps-tracker-richtig-befestigen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
+- /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
+- /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
+- /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hund-ist-muede/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /hund-trinkt-viel/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /hund-trinkt-zu-wenig/ → /trinkbrunnen/: „Trinkbrunnen“
+- /hund-trinkt-zu-wenig/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /hund-trinkt-zu-wenig/ → /wie-viele-wasserstellen-katze/: „Mehrere Wasserstellen“
+- /hund-trinkt-zu-wenig/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
+- /hund-trinkt-zu-wenig/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /hund-trinkt-zu-wenig/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /hund-trinkt-zu-wenig/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „Flüssigkeitsmangel“
+- /kalk-katzentrinkbrunnen-entfernen/ → /hersteller/petlibro/: „PETLIBRO“
+- /katze-an-trinkbrunnen-gewoehnen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /katze-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
+- /katze-frisst-nicht/ → /nierenkranke-katze-trinken/: „chronische Nierenerkrankung“
+- /katze-frisst-nicht/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /katze-trinkt-viel/ → /trinkbrunnen/: „Trinkbrunnen“
+- /katze-trinkt-viel/ → /wie-viel-wasser-braucht-eine-katze/: „Katze trinkt viel“
+- /katze-trinkt-viel/ → /nierenkranke-katze-trinken/: „chronische Nierenerkrankung“
+- /katze-trinkt-viel/ → /trinkmenge-katze-messen/: „Trinkmenge messen“
+- /katze-trinkt-viel/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
+- /katze-trinkt-viel/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /katze-trinkt-viel/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /trinkbrunnen/: „Trinkbrunnen“
+- /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
+- /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /hersteller/petkit/: „PETKIT“
+- /katzentrinkbrunnen-laut-pumpe/ → /produkt/petkit-eversweet-solo-2-fountain/: „PETKIT Eversweet Solo 2“
+- /katzentrinkbrunnen-laut-pumpe/ → /hersteller/petlibro/: „PETLIBRO“
+- /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /katzentrinkbrunnen-ohne-filter/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filter wechseln“
+- /katzentrinkbrunnen-ohne-filter/ → /hersteller/petkit/: „PETKIT“
+- /katzentrinkbrunnen-richtig-reinigen/ → /warum-katzen-fliessendes-wasser-trinken/: „Fließendes Wasser“
+- /katzenwasser-taeglich-wechseln/ → /wie-viele-wasserstellen-katze/: „Mehrere Wasserstellen“
+- /nierenkranke-katze-trinken/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /pumpe-katzentrinkbrunnen-reinigen/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /pumpe-katzentrinkbrunnen-reinigen/ → /hersteller/petlibro/: „PETLIBRO“
+- /pumpe-katzentrinkbrunnen-reinigen/ → /hersteller/petkit/: „PETKIT“
+- /reichweite-von-gps-trackern/ → /hersteller/tractive/: „Tractive“
+- /reichweite-von-gps-trackern/ → /hersteller/garmin/: „Garmin“
+- /seniorenhunde-richtig-versorgen/ → /smarte-futterautomaten/: „Futterautomaten“
+- /seniorenhunde-richtig-versorgen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /smarte-futterautomaten/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /smarte-futterautomaten/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /smarte-futterautomaten/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /smarte-futterautomaten/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /smarte-gadgets-fuer-hunde-und-katzen/ → /trinkbrunnen/: „Trinkbrunnen“
+- /smarte-gadgets-fuer-hunde-und-katzen/ → /smarte-futterautomaten/: „Automatische Futterspender“
+- /smarte-haustiertechnik/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
+- /smarte-haustiertechnik/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /smarte-haustiertechnik/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filter wechseln“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /wie-viele-wasserstellen-katze/: „Mehrere Wasserstellen“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /hersteller/petlibro/: „PETLIBRO“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /trinkbrunnen-fuer-mehrere-katzen/ → /hersteller/petlibro/: „PETLIBRO“
+- /trinkbrunnen-hund/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /trinkbrunnen-hund/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /trinkbrunnen-hund/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /trinkbrunnen-hund/ → /hersteller/oneisall/: „oneisall“
+- /trinkbrunnen-seniorenkatzen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /trinkbrunnen-seniorenkatzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
+- /trinkbrunnen-seniorenkatzen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /trinkbrunnen/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Katze trinkt zu wenig“
+- /trinkbrunnen/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /trinkbrunnen/ → /wie-viel-wasser-braucht-eine-katze/: „Katze trinkt viel“
+- /trinkbrunnen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /trinkmenge-hund-messen/ → /trinkbrunnen/: „Trinkbrunnen“
+- /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /trinkmenge-katze-messen/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /trinkmenge-katze-messen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /trockenfutter-oder-nassfutter-hund/ → /smarte-futterautomaten/: „Futterautomaten“
+- /trockenfutter-oder-nassfutter-hund/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /trockenfutter-oder-nassfutter-hund/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „zu wenig trinkt“
+- /trockenfutter-oder-nassfutter-hund/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /trockenfutter-oder-nassfutter-katze/ → /smarte-futterautomaten/: „Futterautomaten“
+- /trockenfutter-oder-nassfutter-katze/ → /trinkbrunnen/: „Trinkbrunnen“
+- /trockenfutter-oder-nassfutter-katze/ → /wie-viele-wasserstellen-katze/: „mehrere Wasserstellen“
+- /trockenfutter-oder-nassfutter-katze/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /trockenfutter-oder-nassfutter-katze/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
+- /uebergewicht-bei-katzen-vermeiden/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /uebergewicht-bei-katzen-vermeiden/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrere Katzen“
+- /warum-hunde-feste-fuetterungszeiten-brauchen/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /warum-hunde-feste-fuetterungszeiten-brauchen/ → /hersteller/petlibro/: „PETLIBRO“
+- /warum-katzen-fliessendes-wasser-trinken/ → /trinkbrunnen/: „Trinkbrunnen“
+- /warum-katzen-fliessendes-wasser-trinken/ → /wie-viele-wasserstellen-katze/: „mehrere Wasserstellen“
+- /warum-schlingt-mein-hund/ → /smarte-futterautomaten/: „Futterautomat“
+- /welche-portionsgroesse-ist-richtig/ → /smarte-futterautomaten/: „Futterautomaten“
+- /welcher-futterautomat-ist-der-richtige/ → /smarte-futterautomaten/: „Futterautomaten“
+- /welcher-futterautomat-ist-der-richtige/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
+- /welcher-futterautomat-ist-der-richtige/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /welcher-futterautomat-ist-der-richtige/ → /hersteller/petlibro/: „Petlibro“
+- /welcher-futterautomat-ist-der-richtige/ → /hersteller/surefeed/: „SureFeed“
+- /welpen-richtig-fuettern/ → /smarte-futterautomaten/: „Futterautomaten“
+- /welpen-richtig-fuettern/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /welpen-richtig-fuettern/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /welpen-richtig-fuettern/ → /wie-viele-wasserstellen-katze/: „mehrere Wasserstellen“
+- /wie-funktionieren-gps-tracker/ → /hersteller/tractive/: „Tractive“
+- /wie-funktionieren-gps-tracker/ → /hersteller/weenect/: „Weenect“
+- /wie-funktionieren-gps-tracker/ → /hersteller/garmin/: „Garmin“
+- /wie-funktioniert-ein-futterautomat/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /wie-funktioniert-ein-futterautomat/ → /hersteller/cat-mate/: „Cat Mate“
+- /wie-funktioniert-ein-futterautomat/ → /hersteller/petlibro/: „Petlibro“
+- /wie-gross-sollte-ein-futterautomat-sein/ → /smarte-futterautomaten/: „Futterautomaten“
+- /wie-gross-sollte-ein-futterautomat-sein/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /wie-kann-technik-gegen-langeweile-helfen/ → /smarte-futterautomaten/: „Futterautomaten“
+- /wie-kann-technik-gegen-langeweile-helfen/ → /hersteller/petlibro/: „PETLIBRO“
+- /wie-lange-bleibt-trockenfutter-frisch/ → /smarte-futterautomaten/: „Futterautomat“
+- /wie-laut-sind-automatische-futterautomaten/ → /smarte-futterautomaten/: „Futterautomaten“
+- /wie-laut-sind-automatische-futterautomaten/ → /hersteller/petsafe/: „PetSafe“
+- /wie-laut-sind-automatische-futterautomaten/ → /hersteller/petkit/: „PETKIT“
+- /wie-viel-wasser-braucht-ein-hund/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /wie-viel-wasser-braucht-eine-katze/ → /trinkbrunnen/: „Trinkbrunnen“
+- /wie-viel-wasser-braucht-eine-katze/ → /wie-viele-wasserstellen-katze/: „mehrere Wasserstellen“
+- /wie-viel-wasser-braucht-eine-katze/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /wie-viel-wasser-braucht-eine-katze/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /wie-viel-wasser-braucht-eine-katze/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /wie-viel-wasser-braucht-eine-katze/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /wie-viel-wasser-braucht-eine-katze/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „Flüssigkeitsmangel“
+- /wie-viele-mahlzeiten-hund/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
+- /wie-viele-mahlzeiten-hund/ → /hersteller/petlibro/: „Petlibro“
+- /wie-viele-mahlzeiten-hund/ → /hersteller/xiaomi/: „Xiaomi“
+- /wie-viele-mahlzeiten-katze/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
+- /wie-viele-mahlzeiten-katze/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /wie-viele-mahlzeiten-katze/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /wie-viele-mahlzeiten-katze/ → /hersteller/petlibro/: „Petlibro“
+- /wie-viele-mahlzeiten-katze/ → /hersteller/petkit/: „PETKIT“
+- /wie-viele-wasserstellen-katze/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
+- /wie-viele-wasserstellen-katze/ → /warum-katzen-fliessendes-wasser-trinken/: „Bewegtes Wasser“
+- /wie-viele-wasserstellen-katze/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /trinkbrunnen/: „Trinkbrunnen“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /katze-trinkt-viel/: „Katze trinkt plötzlich viel“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /nierenkranke-katze-trinken/: „chronische Nierenerkrankung“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /wie-viele-wasserstellen-katze/: „mehrere Wasserstellen“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrere Katzen“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/aqara-smart-pet-feeder-c1/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /produkt/aqara-smart-pet-feeder-c1/ → /produkt/pawsync-smart-pet-feeder/: „PawSync Smart Pet Feeder“
+- /produkt/aqara-smart-pet-feeder-c1/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /produkt/aqara-smart-pet-feeder-c1/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/aqara-smart-pet-feeder-c1/ → /hersteller/aqara/: „Aqara“
+- /produkt/cat-mate-335-pet-fountain/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/cat-mate-335-pet-fountain/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /produkt/cat-mate-335-pet-fountain/ → /hersteller/cat-mate/: „Cat Mate“
+- /produkt/cat-mate-335-pet-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /produkt/cat-mate-335-pet-fountain/ → /kalk-katzentrinkbrunnen-entfernen/: „Kalkablagerungen“
+- /produkt/cat-mate-c200/ → /hersteller/cat-mate/: „Cat Mate“
+- /produkt/cat-mate-c300/ → /hersteller/cat-mate/: „Cat Mate“
+- /produkt/cat-mate-c500/ → /produkt/cat-mate-c300/: „Cat Mate C300“
+- /produkt/cat-mate-c500/ → /hersteller/cat-mate/: „Cat Mate“
+- /produkt/cat-mate-c500/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/cat-mate-c500/ → /hersteller/surefeed/: „SureFeed“
+- /produkt/cat-mate-shell-fountain/ → /hersteller/cat-mate/: „Cat Mate“
+- /produkt/catit-pixi-smart-6-meal-feeder/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /produkt/catit-pixi-smart-6-meal-feeder/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /produkt/catit-pixi-smart-6-meal-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/catit-pixi-smart-6-meal-feeder/ → /hersteller/catit/: „Catit“
+- /produkt/catit-pixi-vision-smart-feeder/ → /hersteller/catit/: „Catit“
+- /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
+- /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
+- /produkt/garmin-alpha-t-20/ → /hersteller/garmin/: „Garmin“
+- /produkt/garmin-alpha-tt-25/ → /hersteller/garmin/: „Garmin“
+- /produkt/honeyguardian-a305d/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/honeyguardian-a305d/ → /hersteller/honeyguardian/: „HoneyGuardian“
+- /produkt/honeyguardian-a68/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/honeyguardian-a68/ → /hersteller/honeyguardian/: „HoneyGuardian“
+- /produkt/honeyguardian-smart-pet-feeder-s305d/ → /hersteller/honeyguardian/: „HoneyGuardian“
+- /produkt/imipaw-3l-automatic-cat-feeder/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/imipaw-3l-automatic-cat-feeder/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /produkt/imipaw-3l-automatic-cat-feeder/ → /hersteller/imipaw/: „IMIPAW“
+- /produkt/oneisall-2-2l-cordless-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /produkt/oneisall-2-2l-cordless-fountain/ → /hersteller/oneisall/: „oneisall“
+- /produkt/oneisall-2-in-1-feeder-water/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/oneisall-2-in-1-feeder-water/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/oneisall-2-in-1-feeder-water/ → /pumpe-katzentrinkbrunnen-reinigen/: „Trinkbrunnenpumpe“
+- /produkt/oneisall-2-in-1-feeder-water/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/oneisall-2-in-1-feeder-water/ → /hersteller/oneisall/: „Oneisall“
+- /produkt/oneisall-3-2l-cordless-fountain/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/oneisall-3-2l-cordless-fountain/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /produkt/oneisall-3-2l-cordless-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /produkt/oneisall-3-2l-cordless-fountain/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /produkt/oneisall-3-2l-cordless-fountain/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/oneisall-3-5l-cordless-fountain/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/oneisall-3-5l-cordless-fountain/ → /hersteller/oneisall/: „oneisall“
+- /produkt/oneisall-5l-automatic-cat-feeder/ → /hersteller/oneisall/: „oneisall“
+- /produkt/oneisall-7l-dog-water-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /produkt/oneisall-7l-dog-water-fountain/ → /hersteller/oneisall/: „oneisall“
+- /produkt/oneisall-7l-dog-water-fountain/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/pawbby-smart-pet-feeder/ → /hersteller/pawbby/: „PAWBBY“
+- /produkt/pawbby-smart-pet-feeder/ → /hersteller/xiaomi/: „Xiaomi“
+- /produkt/pawsync-smart-pet-feeder/ → /hersteller/pawsync/: „PawSync“
+- /produkt/petkit-eversweet-3-pro-uvc/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/petkit-eversweet-3-pro-uvc/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/petkit-eversweet-3-pro-uvc/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-5-mini/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/petkit-eversweet-5-mini/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-max-2-uvc/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/petkit-eversweet-max-2-uvc/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-max-cordless/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-solo-2-fountain/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-solo-se/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-ultra/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/petkit-eversweet-ultra/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /produkt/petkit-eversweet-ultra/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/petkit-eversweet-ultra/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-fresh-element-infinity/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-fresh-element-solo/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /produkt/petkit-fresh-element-solo/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-yumshare-dual-hopper/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/petkit-yumshare-dual-hopper/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
+- /produkt/petkit-yumshare-dual-hopper/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /produkt/petkit-yumshare-dual/ → /produkt/petkit-yumshare-dual-hopper/: „PETKIT YumShare Dual-Hopper 2“
+- /produkt/petkit-yumshare-solo-2/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/petkit-yumshare-solo-2/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petlibro-air-automatic-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-air-wifi-feeder/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/petlibro-air-wifi-feeder/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /produkt/petlibro-air-wifi-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-capsule-dog-fountain/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/petlibro-dockstream-2-smart/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-dockstream-cordless/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-dockstream-rfid-smart/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-glacier-ultrafiltration/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-granary-2-vision/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-granary-camera-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-granary-dual-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-granary-wifi-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-one-rfid-smart-feeder/ → /smarte-futterautomaten/: „automatische Fütterung“
+- /produkt/petlibro-one-rfid-smart-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-polar-wet-food-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-space-smart-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/petlibro-space-smart-feeder/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
+- /produkt/petlibro-space-smart-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-space-smart-feeder/ → /hersteller/xiaomi/: „Xiaomi“
+- /produkt/petlibro-space-smart-feeder/ → /hersteller/aqara/: „Aqara“
+- /produkt/petlibro-stainless-steel-fountain/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petsafe-freshfeed-refrigerated-feeder/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petsafe-healthy-pet-simply-feed/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petsafe-smart-feed-2/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/surefeed-microchip-pet-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/surefeed-microchip-pet-feeder/ → /hersteller/surefeed/: „SureFeed“
+- /produkt/tractive-cat-6-mini/ → /gps-tracker/: „GPS Tracker“
+- /produkt/tractive-cat-6-mini/ → /hersteller/tractive/: „Tractive“
+- /produkt/tractive-dog-6-xl/ → /hersteller/tractive/: „Tractive“
+- /produkt/tractive-dog-6-xl/ → /hersteller/weenect/: „Weenect“
+- /produkt/tractive-dog-6-xl/ → /hersteller/garmin/: „Garmin“
+- /produkt/tractive-dog-6/ → /hersteller/tractive/: „Tractive“
+- /produkt/tractive-dog-6/ → /hersteller/weenect/: „Weenect“
+- /produkt/tractive-dog-6/ → /hersteller/garmin/: „Garmin“
+- /produkt/weenect-xs/ → /hersteller/tractive/: „Tractive“
+- /produkt/weenect-xs/ → /hersteller/weenect/: „Weenect“
+- /produkt/weenect-xt/ → /hersteller/tractive/: „Tractive“
+- /produkt/weenect-xt/ → /hersteller/weenect/: „Weenect“
+- /produkt/weenect-xt/ → /hersteller/garmin/: „Garmin“
+- /produkt/wopet-cube-air-ca10/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/wopet-cube-air-ca10/ → /hersteller/wopet/: „WOPET“
+- /produkt/wopet-heritage-view-camera-feeder/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/wopet-patrol-f07-pro/ → /hersteller/wopet/: „WOPET“
+- /produkt/wopet-pioneer-f01-plus/ → /hersteller/wopet/: „WOPET“
+- /produkt/xiaomi-smart-pet-food-feeder-2/ → /smarte-futterautomaten/: „Futterautomaten“
+- /produkt/xiaomi-smart-pet-food-feeder-2/ → /hersteller/xiaomi/: „Xiaomi“
+- /produkt/xiaomi-smart-pet-fountain-2/ → /trinkbrunnen/: „Trinkbrunnen“
+- /produkt/xiaomi-smart-pet-fountain-2/ → /hersteller/xiaomi/: „Xiaomi“
+- /produkt/zeromouse-2-0/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/zeromouse-2-0/ → /hersteller/zeromouse/: „ZeroMOUSE“
+- /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-fuer-hunde/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
+- /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/wopet-patrol-f07-pro/: „WOPET Patrol F07 Pro“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/petlibro-granary-wifi-feeder/: „PETLIBRO Granary WiFi Feeder“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/petkit-fresh-element-solo/: „PETKIT Fresh Element Solo“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/cat-mate-c500/: „Cat Mate C500“
+- /vergleiche/beste-futterautomaten-fuer-katzen/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /vergleiche/beste-futterautomaten-fuer-kleine-hunde/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/catit-pixi-smart-6-meal-feeder/: „Catit PIXI Smart 6-Meal Feeder“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /futterautomat-hund/: „Futterautomaten für Hunde“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /welpen-richtig-fuettern/: „Welpenfutter“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petkit/: „PETKIT“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/xiaomi/: „Xiaomi“
+- /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
+- /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/surefeed/: „SureFeed“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/cat-mate/: „Cat Mate“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/petlibro/: „Petlibro“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/imipaw/: „IMIPAW“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/paj-pet-finder-4g-mini/: „PAJ PET Finder 4G Mini“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6/: „Tractive DOG 6“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/weenect/: „Weenect“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/garmin/: „Garmin“
+- /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/paj-pet-finder-4g-mini/: „PAJ PET Finder 4G Mini“
+- /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
+- /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/oneisall-7l-dog-water-fountain/: „oneisall 7L Dog Water Fountain“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petlibro-capsule-dog-fountain/: „PETLIBRO Capsule Dog Fountain“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /hersteller/cat-mate/: „Cat Mate“
+- /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /trinkbrunnen/: „Trinkbrunnen“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-solo-2-fountain/: „PETKIT Eversweet Solo 2“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-ultra/: „PETKIT Eversweet Ultra“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /hersteller/cat-mate/: „Cat Mate“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /vergleiche/futterautomat-fuer-grosse-hunde/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
+- /vergleiche/futterautomat-fuer-grosse-hunde/ → /hersteller/petlibro/: „Petlibro“
+- /vergleiche/futterautomat-fuer-grosse-hunde/ → /hersteller/xiaomi/: „Xiaomi“
+- /vergleiche/futterautomat-gegen-schlingen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/futterautomat-mit-app/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/futterautomat-mit-app/ → /hersteller/petkit/: „PETKIT“
+- /vergleiche/futterautomat-mit-app/ → /hersteller/xiaomi/: „Xiaomi“
+- /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“
+- /vergleiche/gps-tracker-ohne-abo/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
+- /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/tractive/: „Tractive“
+- /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
+- /hersteller/cat-mate/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/honeyguardian/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/imipaw/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/oneisall/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/pawbby/ → /hersteller/xiaomi/: „Xiaomi“
+- /hersteller/petkit/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/petkit/ → /trinkbrunnen/: „Trinkbrunnen“
+- /hersteller/petlibro/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/petlibro/ → /trinkbrunnen/: „Trinkbrunnen“
+- /hersteller/petlibro/ → /futterautomat-hund/: „Futterautomaten für Hunde“
+- /hersteller/petlibro/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
+- /hersteller/petlibro/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /hersteller/wopet/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/xiaomi/ → /smarte-futterautomaten/: „Futterautomaten“

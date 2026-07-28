@@ -1,0 +1,3334 @@
+{
+  "version": "3.0.0",
+  "generatedAt": "2026-07-28T11:05:38.323Z",
+  "strict": false,
+  "summary": {
+    "documents": 184,
+    "definitions": 408,
+    "renderedAutomaticLinks": 402,
+    "errors": 43,
+    "warnings": 51,
+    "critical": 43
+  },
+  "blockedAnchors": [
+    "akku",
+    "app",
+    "filter",
+    "futter",
+    "hersteller",
+    "hund",
+    "hunde",
+    "kamera",
+    "katze",
+    "katzen",
+    "kaufberatung",
+    "nassfutter",
+    "produkt",
+    "ratgeber",
+    "reinigung",
+    "test",
+    "tier",
+    "tiere",
+    "trockenfutter",
+    "vergleich",
+    "wasser"
+  ],
+  "findings": [
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/futterautomat-hund/ verlinkt auf die nicht vorhandene Route /futterautomat-fuer-berufstaetige/.",
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/futterautomat-fuer-berufstaetige/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/futterautomat-hund/ verlinkt auf die nicht vorhandene Route /hund-frisst-zu-schnell/.",
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/hund-frisst-zu-schnell/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/produkt/weenect-xs/ verlinkt auf die nicht vorhandene Route /gps-tracker-oder-bluetooth-tag/.",
+      "sourceRoute": "/produkt/weenect-xs/",
+      "targetRoute": "/gps-tracker-oder-bluetooth-tag/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/hersteller/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/wissen/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.",
+      "sourceRoute": "/so-bewerten-wir/",
+      "targetRoute": "/kontakt/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/trinkbrunnen/ verlinkt auf die nicht vorhandene Route /hund-trinkt-ploetzlich-viel/.",
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/hund-trinkt-ploetzlich-viel/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/welche-portionsgroesse-ist-richtig/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "SELF_LINK",
+      "message": "/vergleiche/beste-futterautomaten-fuer-nassfutter/ enthält einen Selbstlink.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+    },
+    {
+      "severity": "error",
+      "code": "SELF_LINK",
+      "message": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ enthält einen Selbstlink.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
+    },
+    {
+      "severity": "error",
+      "code": "SELF_LINK",
+      "message": "/vergleiche/beste-futterautomaten-mit-kamera/ enthält einen Selbstlink.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/"
+    },
+    {
+      "severity": "error",
+      "code": "SELF_LINK",
+      "message": "/vergleiche/beste-futterautomaten-ohne-wlan/ enthält einen Selbstlink.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/"
+    },
+    {
+      "severity": "error",
+      "code": "TARGET_ROUTE_MISSING",
+      "message": "Taxonomie-Ziel /futterautomat-mit-kamera/ existiert nicht im Content-Bestand.",
+      "targetRoute": "/futterautomat-mit-kamera/",
+      "taxonomyId": "knowledge:futterautomat-kamera"
+    },
+    {
+      "severity": "error",
+      "code": "TARGET_ROUTE_MISSING",
+      "message": "Taxonomie-Ziel /futterautomat-nassfutter/ existiert nicht im Content-Bestand.",
+      "targetRoute": "/futterautomat-nassfutter/",
+      "taxonomyId": "knowledge:futterautomat-nassfutter"
+    },
+    {
+      "severity": "error",
+      "code": "TARGET_ROUTE_MISSING",
+      "message": "Taxonomie-Ziel /gps-tracker-ohne-abo/ existiert nicht im Content-Bestand.",
+      "targetRoute": "/gps-tracker-ohne-abo/",
+      "taxonomyId": "knowledge:gps-ohne-abo"
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "automatischer futterspender",
+      "targets": [
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
+        "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "futterautomat fur grosse hunde",
+      "targets": [
+        "/wie-gross-sollte-ein-futterautomat-sein/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md",
+        "apps/pfotentechnik/src/content/comparisons/futterautomat-fuer-grosse-hunde.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "futtermenge katze",
+      "targets": [
+        "/futtermenge-katze/",
+        "/uebergewicht-bei-katzen-vermeiden/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/futtermenge-katze.md",
+        "apps/pfotentechnik/src/content/pages/uebergewicht-bei-katzen-vermeiden.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "hundetrinkbrunnen",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "katze trinkt viel",
+      "targets": [
+        "/katze-trinkt-viel/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/katze-trinkt-viel.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "katze trinkt zu wenig",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "petkit yumshare dual hopper 2",
+      "targets": [
+        "/produkt/petkit-yumshare-dual-hopper/",
+        "/produkt/petkit-yumshare-dual/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
+        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen fur hunde",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen fur katzen",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen reinigen",
+      "targets": [
+        "/katzentrinkbrunnen-richtig-reinigen/",
+        "/trinkbrunnen-fuer-katzen-sinnvoll/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "wasserbedarf hund",
+      "targets": [
+        "/hund-trinkt-zu-wenig/",
+        "/wie-viel-wasser-braucht-ein-hund/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/hund-trinkt-zu-wenig.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-ein-hund.md"
+      ]
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "wie oft hund futtern",
+      "targets": [
+        "/fuetterungszeiten-nach-alter/",
+        "/warum-hunde-feste-fuetterungszeiten-brauchen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/fuetterungszeiten-nach-alter.md",
+        "apps/pfotentechnik/src/content/pages/warum-hunde-feste-fuetterungszeiten-brauchen.md"
+      ]
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/futterautomat-katze/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/futterautomat-katze/",
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-katze.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
+      "file": "apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/seniorenhunde-richtig-versorgen/",
+      "file": "apps/pfotentechnik/src/content/pages/seniorenhunde-richtig-versorgen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "file": "apps/pfotentechnik/src/content/pages/smarte-gadgets-fuer-hunde-und-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/so-bewerten-wir/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/so-bewerten-wir/",
+      "file": "apps/pfotentechnik/src/content/pages/so-bewerten-wir.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wasserstelle-katze-richtiger-standort/",
+      "file": "apps/pfotentechnik/src/content/pages/wasserstelle-katze-richtiger-standort.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
+      "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/futtermenge-hund/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-hat-durchfall/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-ist-muede/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katzentrinkbrunnen-ohne-filter/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/aqara-smart-pet-feeder-c1/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/aqara-smart-pet-feeder-c1/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-335-pet-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-335-pet-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-c200/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-c200/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-shell-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-shell-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/catit-pixi-vision-smart-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/catit-pixi-vision-smart-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/garmin-alpha-tt-25/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/garmin-alpha-tt-25/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-a305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-a305d/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-a68/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-a68/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-smart-pet-feeder-s305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-smart-pet-feeder-s305d/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/imipaw-3l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/imipaw-3l-automatic-cat-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-2-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-2-2l-cordless-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-2-in-1-feeder-water/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-2-in-1-feeder-water/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-3-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-3-2l-cordless-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-3-5l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-3-5l-cordless-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-5l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-5l-automatic-cat-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/pawbby-smart-pet-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/pawbby-smart-pet-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-5-mini/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-5-mini/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-max-cordless/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-solo-se/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-fresh-element-infinity/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-air-automatic-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-air-wifi-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-glacier-ultrafiltration/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-granary-2-vision/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-granary-dual-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-stainless-steel-fountain/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petsafe-healthy-pet-simply-feed/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-cube-air-ca10/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-heritage-view-camera-feeder/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-pioneer-f01-plus/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/xiaomi-smart-pet-fountain-2/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/zeromouse-2-0/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/seniorenhunde-richtig-versorgen/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/trinkbrunnen-fuer-kitten-sicher/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/wie-kann-technik-gegen-langeweile-helfen/"
+    }
+  ],
+  "renderedAnchors": [
+    {
+      "sourceRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2914
+    },
+    {
+      "sourceRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/fuetterungszeiten-nach-alter/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/fuetterungszeiten-nach-alter/",
+      "targetRoute": "/trinkbrunnen-seniorenkatzen/",
+      "anchor": "ältere Katze",
+      "score": 2812
+    },
+    {
+      "sourceRoute": "/fuetterungszeiten-nach-alter/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1818
+    },
+    {
+      "sourceRoute": "/fuetterungszeiten-nach-alter/",
+      "targetRoute": "/welpen-richtig-fuettern/",
+      "anchor": "Welpenfutter",
+      "score": 1612
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6315
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
+      "score": 1213
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1207
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/futterautomat-hund/",
+      "anchor": "Futterautomaten für Hunde",
+      "score": 3925
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3223
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-uebergewicht/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7113
+    },
+    {
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3618
+    },
+    {
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/warum-schlingt-mein-hund/",
+      "anchor": "frisst zu schnell",
+      "score": 3517
+    },
+    {
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/futterautomat-hund/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/futterautomat-im-urlaub/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
+    },
+    {
+      "sourceRoute": "/futterautomat-im-urlaub/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/futterautomat-im-urlaub/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/futterautomat-im-urlaub/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "anchor": "Geräuschentwicklung",
+      "score": 1819
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/futterautomat-richtig-reinigen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/futterautomat-richtig-reinigen/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1407
+    },
+    {
+      "sourceRoute": "/futterautomat-richtig-reinigen/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/futterautomat-und-ernaehrung/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4629
+    },
+    {
+      "sourceRoute": "/futterautomat-und-ernaehrung/",
+      "targetRoute": "/fuetterungszeiten-nach-alter/",
+      "anchor": "wie oft Hund füttern",
+      "score": 4620
+    },
+    {
+      "sourceRoute": "/futterautomat-und-ernaehrung/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1618
+    },
+    {
+      "sourceRoute": "/futtermenge-hund/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6615
+    },
+    {
+      "sourceRoute": "/futtermenge-hund/",
+      "targetRoute": "/futterautomat-hund/",
+      "anchor": "Futterautomaten für Hunde",
+      "score": 3625
+    },
+    {
+      "sourceRoute": "/futtermenge-katze/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/futtermenge-katze/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2717
+    },
+    {
+      "sourceRoute": "/gps-oder-bluetooth/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/gps-tracker-richtig-befestigen/",
+      "targetRoute": "/produkt/tractive-cat-6-mini/",
+      "anchor": "Tractive CAT 6 Mini",
+      "score": 4419
+    },
+    {
+      "sourceRoute": "/gps-tracker-richtig-befestigen/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1307
+    },
+    {
+      "sourceRoute": "/gps-tracker-richtig-befestigen/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1206
+    },
+    {
+      "sourceRoute": "/hund-frisst-nicht/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6815
+    },
+    {
+      "sourceRoute": "/hund-ist-muede/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "trinkt zu wenig",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/hund-trinkt-viel/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "trinkt zu wenig",
+      "score": 3615
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6812
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "bewegtes Wasser",
+      "score": 2615
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Mehrere Wasserstellen",
+      "score": 2521
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "Nierenerkrankung",
+      "score": 1816
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/katzenwasser-taeglich-wechseln/",
+      "anchor": "Wasserwechsel",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/hund-trinkt-zu-wenig/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "Flüssigkeitsmangel",
+      "score": 1618
+    },
+    {
+      "sourceRoute": "/kalk-katzentrinkbrunnen-entfernen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/katze-frisst-nicht/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/katze-frisst-nicht/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "chronische Nierenerkrankung",
+      "score": 3027
+    },
+    {
+      "sourceRoute": "/katze-frisst-nicht/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1918
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "anchor": "Katze trinkt viel",
+      "score": 3717
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "chronische Nierenerkrankung",
+      "score": 2827
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/trinkmenge-katze-messen/",
+      "anchor": "Trinkmenge messen",
+      "score": 2717
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "anchor": "Pumpe reinigen",
+      "score": 2714
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1718
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "targetRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "anchor": "Pumpe reinigen",
+      "score": 2714
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-laut-pumpe/",
+      "targetRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "anchor": "PETKIT Eversweet Solo 2",
+      "score": 4523
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-laut-pumpe/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1907
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-ohne-filter/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filter wechseln",
+      "score": 2915
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-ohne-filter/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "Fließendes Wasser",
+      "score": 2717
+    },
+    {
+      "sourceRoute": "/katzenwasser-taeglich-wechseln/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/nierenkranke-katze-trinken/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "bewegtes Wasser",
+      "score": 2715
+    },
+    {
+      "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1907
+    },
+    {
+      "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/reichweite-von-gps-trackern/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/reichweite-von-gps-trackern/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/seniorenhunde-richtig-versorgen/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6615
+    },
+    {
+      "sourceRoute": "/seniorenhunde-richtig-versorgen/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "trinkt zu wenig",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/smarte-futterautomaten/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/smarte-futterautomaten/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3323
+    },
+    {
+      "sourceRoute": "/smarte-futterautomaten/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 3014
+    },
+    {
+      "sourceRoute": "/smarte-futterautomaten/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 7112
+    },
+    {
+      "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Automatische Futterspender",
+      "score": 3126
+    },
+    {
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "anchor": "Trinkbrunnen für Katzen",
+      "score": 4123
+    },
+    {
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/katzenwasser-taeglich-wechseln/",
+      "anchor": "Wasserwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 3014
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filter wechseln",
+      "score": 2915
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 2016
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1907
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-hund/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-hund/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1907
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-hund/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-hund/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "oneisall",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-seniorenkatzen/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "bewegtes Wasser",
+      "score": 2715
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-seniorenkatzen/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "Nierenerkrankung",
+      "score": 1916
+    },
+    {
+      "sourceRoute": "/trinkbrunnen-seniorenkatzen/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "anchor": "Katze trinkt zu wenig",
+      "score": 5121
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/trinkbrunnen-hund/",
+      "anchor": "Trinkbrunnen für Hunde",
+      "score": 4122
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "anchor": "Katze trinkt viel",
+      "score": 3917
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "bewegtes Wasser",
+      "score": 2815
+    },
+    {
+      "sourceRoute": "/trinkmenge-hund-messen/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6612
+    },
+    {
+      "sourceRoute": "/trinkmenge-hund-messen/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "trinkt zu wenig",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/trinkmenge-katze-messen/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/trinkmenge-katze-messen/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-hund/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6815
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-hund/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3618
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-hund/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "zu wenig trinkt",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-hund/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2617
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-katze/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-katze/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-katze/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-katze/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2717
+    },
+    {
+      "sourceRoute": "/trockenfutter-oder-nassfutter-katze/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "Nierenerkrankung",
+      "score": 1916
+    },
+    {
+      "sourceRoute": "/uebergewicht-bei-katzen-vermeiden/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/uebergewicht-bei-katzen-vermeiden/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrere Katzen",
+      "score": 2714
+    },
+    {
+      "sourceRoute": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3518
+    },
+    {
+      "sourceRoute": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6812
+    },
+    {
+      "sourceRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/warum-schlingt-mein-hund/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 6513
+    },
+    {
+      "sourceRoute": "/welche-portionsgroesse-ist-richtig/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7115
+    },
+    {
+      "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für große Hunde",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3323
+    },
+    {
+      "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
+    },
+    {
+      "sourceRoute": "/welpen-richtig-fuettern/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6615
+    },
+    {
+      "sourceRoute": "/welpen-richtig-fuettern/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3518
+    },
+    {
+      "sourceRoute": "/welpen-richtig-fuettern/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2517
+    },
+    {
+      "sourceRoute": "/welpen-richtig-fuettern/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "mehrere Wasserstellen",
+      "score": 2421
+    },
+    {
+      "sourceRoute": "/wie-funktionieren-gps-tracker/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/wie-funktionieren-gps-tracker/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/wie-funktionieren-gps-tracker/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4529
+    },
+    {
+      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3618
+    },
+    {
+      "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6815
+    },
+    {
+      "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 6613
+    },
+    {
+      "sourceRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6815
+    },
+    {
+      "sourceRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1607
+    },
+    {
+      "sourceRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-ein-hund/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "trinkt zu wenig",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "bewegtes Wasser",
+      "score": 2715
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1918
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1907
+    },
+    {
+      "sourceRoute": "/wie-viel-wasser-braucht-eine-katze/",
+      "targetRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "anchor": "Flüssigkeitsmangel",
+      "score": 1718
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-hund/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für große Hunde",
+      "score": 4629
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-hund/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-hund/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
+      "targetRoute": "/produkt/petkit-yumshare-dual/",
+      "anchor": "PETKIT YumShare Dual-Hopper 2",
+      "score": 5829
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4829
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3223
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/wie-viele-wasserstellen-katze/",
+      "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "anchor": "Trinkbrunnen für Katzen",
+      "score": 3723
+    },
+    {
+      "sourceRoute": "/wie-viele-wasserstellen-katze/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "Bewegtes Wasser",
+      "score": 2715
+    },
+    {
+      "sourceRoute": "/wie-viele-wasserstellen-katze/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/katze-trinkt-viel/",
+      "anchor": "Katze trinkt plötzlich viel",
+      "score": 4827
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "chronische Nierenerkrankung",
+      "score": 2827
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "mehrere Wasserstellen",
+      "score": 2721
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrere Katzen",
+      "score": 2714
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 6630
+    },
+    {
+      "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "targetRoute": "/produkt/pawsync-smart-pet-feeder/",
+      "anchor": "PawSync Smart Pet Feeder",
+      "score": 4624
+    },
+    {
+      "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2514
+    },
+    {
+      "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "targetRoute": "/hersteller/aqara/",
+      "anchor": "Aqara",
+      "score": 1305
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6812
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2408
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 1816
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "targetRoute": "/kalk-katzentrinkbrunnen-entfernen/",
+      "anchor": "Kalkablagerungen",
+      "score": 1716
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c200/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c300/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c500/",
+      "targetRoute": "/produkt/cat-mate-c300/",
+      "anchor": "Cat Mate C300",
+      "score": 4013
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c500/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c500/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-c500/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
+    },
+    {
+      "sourceRoute": "/produkt/cat-mate-shell-fountain/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2308
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2717
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 2018
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "targetRoute": "/hersteller/catit/",
+      "anchor": "Catit",
+      "score": 1805
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-vision-smart-feeder/",
+      "targetRoute": "/hersteller/catit/",
+      "anchor": "Catit",
+      "score": 1505
+    },
+    {
+      "sourceRoute": "/produkt/garmin-alpha-t-20/",
+      "targetRoute": "/vergleiche/gps-tracker-ohne-abo/",
+      "anchor": "GPS-Tracker ohne Abo",
+      "score": 4620
+    },
+    {
+      "sourceRoute": "/produkt/garmin-alpha-t-20/",
+      "targetRoute": "/gps-tracker/",
+      "anchor": "Haustiertracker",
+      "score": 1615
+    },
+    {
+      "sourceRoute": "/produkt/garmin-alpha-t-20/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/garmin-alpha-tt-25/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/honeyguardian-a305d/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 6913
+    },
+    {
+      "sourceRoute": "/produkt/honeyguardian-a305d/",
+      "targetRoute": "/hersteller/honeyguardian/",
+      "anchor": "HoneyGuardian",
+      "score": 1413
+    },
+    {
+      "sourceRoute": "/produkt/honeyguardian-a68/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7015
+    },
+    {
+      "sourceRoute": "/produkt/honeyguardian-a68/",
+      "targetRoute": "/hersteller/honeyguardian/",
+      "anchor": "HoneyGuardian",
+      "score": 1513
+    },
+    {
+      "sourceRoute": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "targetRoute": "/hersteller/honeyguardian/",
+      "anchor": "HoneyGuardian",
+      "score": 1513
+    },
+    {
+      "sourceRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 6913
+    },
+    {
+      "sourceRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1818
+    },
+    {
+      "sourceRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "targetRoute": "/hersteller/imipaw/",
+      "anchor": "IMIPAW",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 1516
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "oneisall",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 6913
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "targetRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "anchor": "Trinkbrunnenpumpe",
+      "score": 1817
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1807
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "Oneisall",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6812
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 1816
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "anchor": "Filterwechsel",
+      "score": 1713
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6312
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "oneisall",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "oneisall",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-7l-dog-water-fountain/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 1516
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-7l-dog-water-fountain/",
+      "targetRoute": "/hersteller/oneisall/",
+      "anchor": "oneisall",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/oneisall-7l-dog-water-fountain/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1407
+    },
+    {
+      "sourceRoute": "/produkt/pawbby-smart-pet-feeder/",
+      "targetRoute": "/hersteller/pawbby/",
+      "anchor": "PAWBBY",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/pawbby-smart-pet-feeder/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/pawsync-smart-pet-feeder/",
+      "targetRoute": "/hersteller/pawsync/",
+      "anchor": "PawSync",
+      "score": 1307
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6812
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-5-mini/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6512
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-5-mini/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-max-2-uvc/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6612
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-max-2-uvc/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-max-cordless/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-solo-se/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petkit-fresh-element-infinity/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petkit-fresh-element-solo/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7015
+    },
+    {
+      "sourceRoute": "/produkt/petkit-fresh-element-solo/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/petkit-fresh-element-solo/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7013
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
+      "targetRoute": "/produkt/petkit-yumshare-dual/",
+      "anchor": "PETKIT YumShare Dual-Hopper 2",
+      "score": 6029
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1918
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-dual/",
+      "targetRoute": "/produkt/petkit-yumshare-dual-hopper/",
+      "anchor": "PETKIT YumShare Dual-Hopper 2",
+      "score": 6029
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-solo-2/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7015
+    },
+    {
+      "sourceRoute": "/produkt/petkit-yumshare-solo-2/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-air-automatic-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-air-wifi-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7013
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-air-wifi-feeder/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3618
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-air-wifi-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-capsule-dog-fountain/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1408
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2814
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
+      "anchor": "Biofilm",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-cordless/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-rfid-smart/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-glacier-ultrafiltration/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-granary-2-vision/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-granary-camera-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-granary-dual-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-granary-wifi-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "automatische Fütterung",
+      "score": 2922
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-polar-wet-food-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7015
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
+      "targetRoute": "/hersteller/aqara/",
+      "anchor": "Aqara",
+      "score": 1405
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-stainless-steel-fountain/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/petsafe-smart-feed-2/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/surefeed-microchip-pet-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/produkt/surefeed-microchip-pet-feeder/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
+    },
+    {
+      "sourceRoute": "/produkt/tractive-cat-6-mini/",
+      "targetRoute": "/gps-tracker/",
+      "anchor": "GPS Tracker",
+      "score": 7511
+    },
+    {
+      "sourceRoute": "/produkt/tractive-cat-6-mini/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6-xl/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6-xl/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6-xl/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1607
+    },
+    {
+      "sourceRoute": "/produkt/tractive-dog-6/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/weenect-xs/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/weenect-xs/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/weenect-xt/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/produkt/weenect-xt/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/weenect-xt/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/produkt/wopet-cube-air-ca10/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7013
+    },
+    {
+      "sourceRoute": "/produkt/wopet-cube-air-ca10/",
+      "targetRoute": "/hersteller/wopet/",
+      "anchor": "WOPET",
+      "score": 1705
+    },
+    {
+      "sourceRoute": "/produkt/wopet-heritage-view-camera-feeder/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7013
+    },
+    {
+      "sourceRoute": "/produkt/wopet-patrol-f07-pro/",
+      "targetRoute": "/hersteller/wopet/",
+      "anchor": "WOPET",
+      "score": 1705
+    },
+    {
+      "sourceRoute": "/produkt/wopet-pioneer-f01-plus/",
+      "targetRoute": "/hersteller/wopet/",
+      "anchor": "WOPET",
+      "score": 1605
+    },
+    {
+      "sourceRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 7015
+    },
+    {
+      "sourceRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
+    },
+    {
+      "sourceRoute": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/produkt/zeromouse-2-0/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/zeromouse-2-0/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1309
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 6630
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für große Hunde",
+      "score": 4629
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/produkt/wopet-patrol-f07-pro/",
+      "anchor": "WOPET Patrol F07 Pro",
+      "score": 4620
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 7030
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/produkt/petlibro-granary-wifi-feeder/",
+      "anchor": "PETLIBRO Granary WiFi Feeder",
+      "score": 5028
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/produkt/petkit-fresh-element-solo/",
+      "anchor": "PETKIT Fresh Element Solo",
+      "score": 5025
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder/",
+      "anchor": "SureFeed Microchip Pet Feeder",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/produkt/cat-mate-c500/",
+      "anchor": "Cat Mate C500",
+      "score": 4013
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 2018
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2414
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "anchor": "Catit PIXI Smart 6-Meal Feeder",
+      "score": 6930
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder/",
+      "anchor": "SureFeed Microchip Pet Feeder",
+      "score": 4929
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/futterautomat-hund/",
+      "anchor": "Futterautomaten für Hunde",
+      "score": 4025
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3323
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/welpen-richtig-fuettern/",
+      "anchor": "Welpenfutter",
+      "score": 1612
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/produkt/petkit-yumshare-dual/",
+      "anchor": "PETKIT YumShare Dual-Hopper 2",
+      "score": 5429
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4429
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/nierenkranke-katze-trinken/",
+      "anchor": "Nierenerkrankung",
+      "score": 1416
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/produkt/petkit-yumshare-dual/",
+      "anchor": "PETKIT YumShare Dual-Hopper 2",
+      "score": 5329
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2217
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/hersteller/wopet/",
+      "anchor": "WOPET",
+      "score": 1305
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1208
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für zwei Katzen",
+      "score": 4229
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder/",
+      "anchor": "SureFeed Microchip Pet Feeder",
+      "score": 4229
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/futterautomat-bei-stromausfall/",
+      "anchor": "Futterautomat ohne WLAN",
+      "score": 3223
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2208
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1208
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/hersteller/imipaw/",
+      "anchor": "IMIPAW",
+      "score": 1206
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
+      "anchor": "PAJ PET Finder 4G Mini",
+      "score": 5622
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/produkt/tractive-dog-6-xl/",
+      "anchor": "Tractive DOG 6 XL",
+      "score": 4617
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/produkt/tractive-dog-6/",
+      "anchor": "Tractive DOG 6",
+      "score": 3614
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/hersteller/garmin/",
+      "anchor": "Garmin",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
+      "anchor": "PAJ PET Finder 4G Mini",
+      "score": 5622
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/produkt/tractive-cat-6-mini/",
+      "anchor": "Tractive CAT 6 Mini",
+      "score": 4519
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/produkt/petkit-eversweet-max-2-uvc/",
+      "anchor": "PETKIT Eversweet Max 2 UVC",
+      "score": 5626
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/produkt/oneisall-7l-dog-water-fountain/",
+      "anchor": "oneisall 7L Dog Water Fountain",
+      "score": 5530
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/produkt/petlibro-capsule-dog-fountain/",
+      "anchor": "PETLIBRO Capsule Dog Fountain",
+      "score": 4429
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/trinkbrunnen-hund/",
+      "anchor": "Trinkbrunnen für Hunde",
+      "score": 4122
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/katzenwasser-taeglich-wechseln/",
+      "anchor": "Wasserwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 7112
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/produkt/petkit-eversweet-max-2-uvc/",
+      "anchor": "PETKIT Eversweet Max 2 UVC",
+      "score": 5626
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "anchor": "PETKIT Eversweet Solo 2",
+      "score": 4823
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/produkt/petkit-eversweet-ultra/",
+      "anchor": "PETKIT Eversweet Ultra",
+      "score": 3922
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2508
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/katzenwasser-taeglich-wechseln/",
+      "anchor": "Wasserwechsel",
+      "score": 1913
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "anchor": "Futterautomat für große Hunde",
+      "score": 4829
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "Petlibro",
+      "score": 1808
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
+      "targetRoute": "/wie-viele-mahlzeiten-katze/",
+      "anchor": "kleine Mahlzeiten",
+      "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1306
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/produkt/tractive-dog-6-xl/",
+      "anchor": "Tractive DOG 6 XL",
+      "score": 4517
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
+      "targetRoute": "/produkt/garmin-alpha-t-20/",
+      "anchor": "Garmin Alpha T 20",
+      "score": 4617
+    },
+    {
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/hersteller/tractive/",
+      "anchor": "Tractive",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1407
+    },
+    {
+      "sourceRoute": "/hersteller/cat-mate/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6515
+    },
+    {
+      "sourceRoute": "/hersteller/honeyguardian/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6515
+    },
+    {
+      "sourceRoute": "/hersteller/imipaw/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6515
+    },
+    {
+      "sourceRoute": "/hersteller/oneisall/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6615
+    },
+    {
+      "sourceRoute": "/hersteller/pawbby/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
+    },
+    {
+      "sourceRoute": "/hersteller/petkit/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6515
+    },
+    {
+      "sourceRoute": "/hersteller/petkit/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6512
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6915
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6912
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/futterautomat-hund/",
+      "anchor": "Futterautomaten für Hunde",
+      "score": 3925
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "anchor": "Trinkbrunnen für Katzen",
+      "score": 3923
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/trinkbrunnen-hund/",
+      "anchor": "Trinkbrunnen für Hunde",
+      "score": 3922
+    },
+    {
+      "sourceRoute": "/hersteller/wopet/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6815
+    },
+    {
+      "sourceRoute": "/hersteller/xiaomi/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6515
+    }
+  ],
+  "incomingLinks": {
+    "/biofilm-im-katzentrinkbrunnen/": 19,
+    "/datenschutz-bei-gps-trackern/": 1,
+    "/filter-im-katzentrinkbrunnen-wechseln/": 14,
+    "/fuetterungszeiten-nach-alter/": 2,
+    "/futterautomat-bei-stromausfall/": 9,
+    "/futterautomat-bei-uebergewicht/": 6,
+    "/futterautomat-hund/": 18,
+    "/futterautomat-im-urlaub/": 14,
+    "/futterautomat-katze/": 9,
+    "/futterautomat-richtig-reinigen/": 9,
+    "/futterautomat-und-ernaehrung/": 14,
+    "/futtermenge-hund/": 0,
+    "/futtermenge-katze/": 4,
+    "/gps-oder-bluetooth/": 1,
+    "/gps-tracker-richtig-befestigen/": 3,
+    "/gps-tracker/": 7,
+    "/hersteller/aqara/": 2,
+    "/hersteller/cat-mate/": 13,
+    "/hersteller/catit/": 3,
+    "/hersteller/garmin/": 12,
+    "/hersteller/honeyguardian/": 5,
+    "/hersteller/imipaw/": 3,
+    "/hersteller/oneisall/": 9,
+    "/hersteller/paj-gps/": 3,
+    "/hersteller/pawbby/": 2,
+    "/hersteller/pawsync/": 1,
+    "/hersteller/petkit/": 25,
+    "/hersteller/petlibro/": 47,
+    "/hersteller/petsafe/": 8,
+    "/hersteller/surefeed/": 9,
+    "/hersteller/tractive/": 11,
+    "/hersteller/weenect/": 13,
+    "/hersteller/wopet/": 6,
+    "/hersteller/xiaomi/": 15,
+    "/hersteller/zeromouse/": 1,
+    "/hund-entlaufen-gps-sinnvoll/": 3,
+    "/hund-frisst-nicht/": 5,
+    "/hund-hat-durchfall/": 0,
+    "/hund-ist-muede/": 0,
+    "/hund-trinkt-viel/": 2,
+    "/hund-trinkt-zu-wenig/": 6,
+    "/kalk-katzentrinkbrunnen-entfernen/": 5,
+    "/katze-an-trinkbrunnen-gewoehnen/": 0,
+    "/katze-entlaufen-gps-sinnvoll/": 3,
+    "/katze-frisst-nicht/": 3,
+    "/katze-trinkt-viel/": 2,
+    "/katzentrinkbrunnen-dauerbetrieb-urlaub/": 0,
+    "/katzentrinkbrunnen-laut-pumpe/": 4,
+    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 7,
+    "/katzentrinkbrunnen-ohne-filter/": 0,
+    "/katzentrinkbrunnen-richtig-reinigen/": 10,
+    "/katzenwasser-taeglich-wechseln/": 5,
+    "/nierenkranke-katze-trinken/": 7,
+    "/produkt/aqara-smart-pet-feeder-c1/": 0,
+    "/produkt/cat-mate-335-pet-fountain/": 0,
+    "/produkt/cat-mate-c200/": 0,
+    "/produkt/cat-mate-c300/": 1,
+    "/produkt/cat-mate-c500/": 4,
+    "/produkt/cat-mate-shell-fountain/": 0,
+    "/produkt/catit-pixi-smart-6-meal-feeder/": 1,
+    "/produkt/catit-pixi-vision-smart-feeder/": 0,
+    "/produkt/garmin-alpha-t-20/": 4,
+    "/produkt/garmin-alpha-tt-25/": 0,
+    "/produkt/honeyguardian-a305d/": 0,
+    "/produkt/honeyguardian-a68/": 0,
+    "/produkt/honeyguardian-smart-pet-feeder-s305d/": 0,
+    "/produkt/imipaw-3l-automatic-cat-feeder/": 0,
+    "/produkt/oneisall-2-2l-cordless-fountain/": 0,
+    "/produkt/oneisall-2-in-1-feeder-water/": 0,
+    "/produkt/oneisall-3-2l-cordless-fountain/": 0,
+    "/produkt/oneisall-3-5l-cordless-fountain/": 0,
+    "/produkt/oneisall-5l-automatic-cat-feeder/": 0,
+    "/produkt/oneisall-7l-dog-water-fountain/": 2,
+    "/produkt/paj-pet-finder-4g-mini/": 5,
+    "/produkt/pawbby-smart-pet-feeder/": 0,
+    "/produkt/pawsync-smart-pet-feeder/": 1,
+    "/produkt/petkit-eversweet-3-pro-uvc/": 1,
+    "/produkt/petkit-eversweet-5-mini/": 0,
+    "/produkt/petkit-eversweet-max-2-uvc/": 2,
+    "/produkt/petkit-eversweet-max-cordless/": 0,
+    "/produkt/petkit-eversweet-solo-2-fountain/": 2,
+    "/produkt/petkit-eversweet-solo-se/": 0,
+    "/produkt/petkit-eversweet-ultra/": 2,
+    "/produkt/petkit-fresh-element-infinity/": 0,
+    "/produkt/petkit-fresh-element-solo/": 8,
+    "/produkt/petkit-yumshare-dual-hopper/": 7,
+    "/produkt/petkit-yumshare-dual/": 4,
+    "/produkt/petkit-yumshare-solo-2/": 2,
+    "/produkt/petlibro-air-automatic-feeder/": 0,
+    "/produkt/petlibro-air-wifi-feeder/": 0,
+    "/produkt/petlibro-capsule-dog-fountain/": 1,
+    "/produkt/petlibro-dockstream-2-smart-cordless/": 1,
+    "/produkt/petlibro-dockstream-2-smart/": 2,
+    "/produkt/petlibro-dockstream-cordless/": 1,
+    "/produkt/petlibro-dockstream-rfid-smart/": 2,
+    "/produkt/petlibro-glacier-ultrafiltration/": 0,
+    "/produkt/petlibro-granary-2-vision/": 0,
+    "/produkt/petlibro-granary-camera-feeder/": 7,
+    "/produkt/petlibro-granary-dual-feeder/": 0,
+    "/produkt/petlibro-granary-wifi-feeder/": 17,
+    "/produkt/petlibro-one-rfid-smart-feeder/": 1,
+    "/produkt/petlibro-polar-wet-food-feeder/": 3,
+    "/produkt/petlibro-space-smart-feeder/": 1,
+    "/produkt/petlibro-stainless-steel-fountain/": 0,
+    "/produkt/petsafe-freshfeed-refrigerated-feeder/": 0,
+    "/produkt/petsafe-healthy-pet-simply-feed/": 0,
+    "/produkt/petsafe-smart-feed-2/": 1,
+    "/produkt/surefeed-microchip-pet-feeder-connect/": 1,
+    "/produkt/surefeed-microchip-pet-feeder/": 7,
+    "/produkt/tractive-cat-6-mini/": 3,
+    "/produkt/tractive-dog-6-xl/": 4,
+    "/produkt/tractive-dog-6/": 4,
+    "/produkt/weenect-xs/": 3,
+    "/produkt/weenect-xt/": 2,
+    "/produkt/wopet-cube-air-ca10/": 0,
+    "/produkt/wopet-heritage-view-camera-feeder/": 0,
+    "/produkt/wopet-patrol-f07-pro/": 1,
+    "/produkt/wopet-pioneer-f01-plus/": 0,
+    "/produkt/xiaomi-smart-pet-food-feeder-2/": 10,
+    "/produkt/xiaomi-smart-pet-fountain-2/": 0,
+    "/produkt/zeromouse-2-0/": 0,
+    "/pumpe-katzentrinkbrunnen-reinigen/": 3,
+    "/reichweite-von-gps-trackern/": 4,
+    "/seniorenhunde-richtig-versorgen/": 0,
+    "/smarte-futterautomaten/": 73,
+    "/smarte-gadgets-fuer-hunde-und-katzen/": 1,
+    "/smarte-haustiertechnik/": 15,
+    "/so-bewerten-wir/": 15,
+    "/trinkbrunnen-fuer-katzen-sinnvoll/": 4,
+    "/trinkbrunnen-fuer-kitten-sicher/": 0,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 20,
+    "/trinkbrunnen-hund/": 3,
+    "/trinkbrunnen-seniorenkatzen/": 1,
+    "/trinkbrunnen/": 40,
+    "/trinkmenge-hund-messen/": 2,
+    "/trinkmenge-katze-messen/": 1,
+    "/trockenfutter-oder-nassfutter-hund/": 5,
+    "/trockenfutter-oder-nassfutter-katze/": 2,
+    "/uebergewicht-bei-katzen-vermeiden/": 2,
+    "/vergleiche/beste-futterautomaten-fuer-berufstaetige/": 3,
+    "/vergleiche/beste-futterautomaten-fuer-hunde/": 10,
+    "/vergleiche/beste-futterautomaten-fuer-katzen/": 9,
+    "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/": 3,
+    "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/": 4,
+    "/vergleiche/beste-futterautomaten-fuer-nassfutter/": 14,
+    "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/": 1,
+    "/vergleiche/beste-futterautomaten-fuer-welpen/": 2,
+    "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/": 15,
+    "/vergleiche/beste-futterautomaten-mit-akku/": 2,
+    "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/": 1,
+    "/vergleiche/beste-futterautomaten-mit-kamera/": 13,
+    "/vergleiche/beste-futterautomaten-ohne-wlan/": 11,
+    "/vergleiche/beste-futterautomaten-unter-100-euro/": 3,
+    "/vergleiche/beste-gps-tracker-fuer-hunde/": 10,
+    "/vergleiche/beste-gps-tracker-fuer-katzen/": 8,
+    "/vergleiche/beste-trinkbrunnen-fuer-hunde/": 3,
+    "/vergleiche/beste-trinkbrunnen-fuer-katzen/": 10,
+    "/vergleiche/futterautomat-fuer-grosse-hunde/": 5,
+    "/vergleiche/futterautomat-gegen-schlingen/": 1,
+    "/vergleiche/futterautomat-mit-app/": 13,
+    "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/": 3,
+    "/vergleiche/gps-tracker-ohne-abo/": 6,
+    "/vergleiche/kleine-gps-tracker-fuer-katzen/": 3,
+    "/warum-brauchen-gps-tracker-ein-abo/": 3,
+    "/warum-hunde-feste-fuetterungszeiten-brauchen/": 2,
+    "/warum-katzen-fliessendes-wasser-trinken/": 15,
+    "/warum-schlingt-mein-hund/": 1,
+    "/wasserstelle-katze-richtiger-standort/": 2,
+    "/welche-portionsgroesse-ist-richtig/": 7,
+    "/welcher-futterautomat-ist-der-richtige/": 13,
+    "/welpen-richtig-fuettern/": 6,
+    "/wie-funktionieren-gps-tracker/": 1,
+    "/wie-funktioniert-ein-futterautomat/": 5,
+    "/wie-genau-sind-gps-tracker/": 5,
+    "/wie-gross-sollte-ein-futterautomat-sein/": 14,
+    "/wie-kann-technik-gegen-langeweile-helfen/": 0,
+    "/wie-lange-bleibt-trockenfutter-frisch/": 4,
+    "/wie-laut-sind-automatische-futterautomaten/": 1,
+    "/wie-viel-wasser-braucht-ein-hund/": 4,
+    "/wie-viel-wasser-braucht-eine-katze/": 3,
+    "/wie-viele-mahlzeiten-hund/": 11,
+    "/wie-viele-mahlzeiten-katze/": 20,
+    "/wie-viele-wasserstellen-katze/": 17,
+    "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/": 12
+  }
+}

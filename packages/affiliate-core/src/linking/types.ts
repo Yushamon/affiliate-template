@@ -1,96 +1,69 @@
-export type LinkPriority =
-  | "low"
-  | "normal"
-  | "high";
+export type LinkPriority = "low" | "normal" | "high";
 
 export type InternalLinkGroup =
+  | "hub"
   | "knowledge"
   | "comparison"
   | "product"
   | "manufacturer";
 
-export interface InternalLinkDefinition {
+export type InternalLinkIntent =
+  | "informational"
+  | "comparison"
+  | "buying-guide"
+  | "how-to"
+  | "troubleshooting"
+  | "product"
+  | "manufacturer";
 
-  /**
-   * Eindeutiger Schlüssel.
-   */
+export interface InternalLinkDefinition {
+  /** Stabiler, eindeutiger Schlüssel. */
   id: string;
 
   /**
-   * Wörter oder Wortgruppen,
-   * die automatisch erkannt werden.
+   * Erlaubte, tatsächlich anklickbare Ankertexte.
+   * Neue Aufrufer sollen dieses Feld verwenden.
    */
-  keywords: string[];
+  anchorAliases?: string[];
 
   /**
-   * Zielseite.
+   * Legacy-Alias für anchorAliases. Wird nur aus Gründen der
+   * Rückwärtskompatibilität gelesen und nicht semantisch erweitert.
    */
+  keywords?: string[];
+
+  /** Begriffe, die nur Kontextsignale sind und nie selbst verlinkt werden. */
+  contextTerms?: string[];
+
+  /** Begriffe, die die lokale Nutzerintention beschreiben. */
+  intentTerms?: string[];
+
+  /** Themen, denen das Linkziel zugeordnet ist. */
+  topics?: string[];
+
+  /** Anker, für die dieses Ziel der exklusive Eigentümer ist. */
+  exclusiveAnchors?: string[];
+
+  /** Zielseite. */
   href: string;
 
-  /**
-   * Priorität,
-   * falls mehrere Links passen.
-   */
+  /** Priorität nach Ownership, Spezifität, Intent und Kontext. */
   priority?: LinkPriority;
 
-  /**
-   * Maximale Anzahl automatischer Links
-   * pro Seite.
-   *
-   * Standard:
-   * 1
-   */
+  /** Maximale Vorkommen dieser Definition im gemeinsamen Seitenbudget. */
   maxOccurrences?: number;
 
-  /**
-   * Optionaler Titel
-   * für spätere Tooltips.
-   */
+  /** Optionaler Linktitel. */
   title?: string;
 
-  /**
-   * Linkgruppe.
-   *
-   * Beispiele:
-   *
-   * product
-   *
-   * manufacturer
-   *
-   * decision
-   *
-   * knowledge
-   */
+  /** Funnel-Gruppe. */
   group?: InternalLinkGroup;
-/**
 
-   * Themenbereiche, in denen dieser Link verwendet werden darf.
-
-   *
-
-   * Beispiele:
-
-   * futterautomaten
-
-   * gps-tracker
-
-   * trinkbrunnen
-
-   *
-
-   * Ohne contexts darf der Link projektweit verwendet werden.
-
-   */
-
+  /** Legacy-Kontextfeld. Neue Aufrufer sollen contextTerms verwenden. */
   contexts?: string[];
-  /**
-   * Verhindert,
-   * dass innerhalb
-   * bereits verlinkter Bereiche
-   * erneut ersetzt wird.
-   */
+
+  /** Verhindert Links innerhalb bereits verlinkter Bereiche. */
   preventNestedLinks?: boolean;
 }
 
-export type InternalLinkDictionary =
-  Record<string, InternalLinkDefinition>;
+export type InternalLinkDictionary = Record<string, InternalLinkDefinition>;

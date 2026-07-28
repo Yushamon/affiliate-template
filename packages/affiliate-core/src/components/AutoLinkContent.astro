@@ -1,73 +1,77 @@
 ---
-
-import { createInternalLinkedHtml } from "../linking/htmlLinker";
-
-import type { InternalLinkDefinition } from "../linking/types";
-
-import type { InternalLinkGroup } from "../linking/rules";
+import { createInternalLinkedHtml } from "../linking/htmlLinker.ts";
+import {
+  createLinkBudgetState,
+  type LinkBudgetState
+} from "../linking/linkEngine.ts";
+import { getDefaultPageLinkBudget } from "../linking/rules.ts";
+import type {
+  InternalLinkDefinition,
+  InternalLinkGroup,
+  InternalLinkIntent
+} from "../linking/types.ts";
 
 interface Props {
-
   definitions: InternalLinkDefinition[];
-
   sourcePath?: string;
-
   sourceGroup?: InternalLinkGroup;
-
   sourceContext?: string;
-
   sourceContexts?: string[];
-
+  sourceIntent?: InternalLinkIntent | InternalLinkIntent[];
   maxLinksPerPage?: number;
-
   ignoredTags?: string[];
-
+  blockedAnchors?: string[];
+  linkBudget?: LinkBudgetState;
 }
 
 const {
-
   definitions,
-
   sourcePath,
-
   sourceGroup,
-
   sourceContext,
-
   sourceContexts = [],
-
-  maxLinksPerPage = 12,
-
-  ignoredTags = []
-
+  sourceIntent,
+  maxLinksPerPage,
+  ignoredTags = [],
+  blockedAnchors = [],
+  linkBudget: explicitBudget
 } = Astro.props;
 
-const originalHtml = await Astro.slots.render("default");
+const normalizePath = (value?: string) => {
+  if (!value) return "";
+  const base = value.split("#")[0].split("?")[0];
+  const leading = base.startsWith("/") ? base : `/${base}`;
+  return leading.endsWith("/") ? leading : `${leading}/`;
+};
+const effectiveSourceGroup = definitions.find(
+  (definition) => normalizePath(definition.href) === normalizePath(sourcePath ?? Astro.url.pathname)
+)?.group ?? sourceGroup;
 
-const linkedHtml = createInternalLinkedHtml(
-
-  originalHtml,
-
-  definitions,
-
-  {
-
-    sourcePath,
-
-    sourceGroup,
-
-    sourceContext,
-
-    sourceContexts,
-
-    maxLinksPerPage,
-
-    ignoredTags
-
-  }
-
+const budgetSymbol = Symbol.for("affiliate-core:auto-link-budgets");
+type LocalsWithBudgets = typeof Astro.locals & {
+  [budgetSymbol]?: Map<string, LinkBudgetState>;
+};
+const locals = Astro.locals as LocalsWithBudgets;
+const budgetStore = locals[budgetSymbol] ?? new Map<string, LinkBudgetState>();
+locals[budgetSymbol] = budgetStore;
+const budgetKey = `${effectiveSourceGroup ?? "knowledge"}|${sourcePath ?? Astro.url.pathname}`;
+const sharedBudget = explicitBudget ?? budgetStore.get(budgetKey) ?? createLinkBudgetState(
+  getDefaultPageLinkBudget(effectiveSourceGroup)
 );
+budgetStore.set(budgetKey, sharedBudget);
 
+const originalHtml = await Astro.slots.render("default");
+const linkedHtml = createInternalLinkedHtml(originalHtml, definitions, {
+  sourcePath,
+  sourceGroup: effectiveSourceGroup,
+  sourceContext,
+  sourceContexts,
+  sourceIntent,
+  maxLinksPerPage,
+  ignoredTags,
+  blockedAnchors,
+  linkBudget: sharedBudget
+});
 ---
 
 <Fragment set:html={linkedHtml} />

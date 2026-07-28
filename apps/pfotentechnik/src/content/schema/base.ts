@@ -31,6 +31,11 @@ export const baseContentSchema = z.object({
 
   description: z.string(),
 
+  /** Explizite, eindeutige Namensvarianten. Keine semantischen Gruppen. */
+  aliases: z
+    .array(z.string())
+    .default([]),
+
   author: authorSchema.optional(),
 
   publishedAt: z.string().optional(),
