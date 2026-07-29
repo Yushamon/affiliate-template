@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry, render } from "astro:content";
+import { render } from "astro:content";
 import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
@@ -18,41 +18,45 @@ import {
   getSourceContexts
 } from "../../domain/content/internalLinks";
 import { buildComparisonNextSteps } from "../../domain/recommendationLinks";
+import {
+  getComparisons,
+  getManufacturers,
+  getPages,
+  getProducts,
+  type ComparisonEntry
+} from "../../domain/content/registry";
 
 type Props = {
-  comparisonId: string;
+  entry: ComparisonEntry;
 };
 
 export async function getStaticPaths() {
-  const comparisons = await getCollection("comparisons");
+  const comparisons = await getComparisons();
 
   return comparisons.map((entry) => ({
     params: {
       comparison: entry.data.slug
     },
     props: {
-      comparisonId: entry.id
+      entry
     } satisfies Props
   }));
 }
 
-const { comparisonId } = Astro.props as Props;
-const entry = await getEntry("comparisons", comparisonId);
+const { entry } = Astro.props as Props;
 
 if (!entry) {
-  throw new Error(
-    `Vergleich "${comparisonId}" wurde nicht gefunden.`
-  );
+  throw new Error("Der Vergleich wurde nicht an die Route übergeben.");
 }
 
 const comparison = entry.data;
 const { Content } = await render(entry);
 
 const [products, manufacturers, pages, comparisons] = await Promise.all([
-  getCollection("products"),
-  getCollection("manufacturers"),
-  getCollection("pages"),
-  getCollection("comparisons")
+  getProducts(),
+  getManufacturers(),
+  getPages(),
+  getComparisons()
 ]);
 
 const internalLinkDefinitions = getInternalLinkDefinitions({

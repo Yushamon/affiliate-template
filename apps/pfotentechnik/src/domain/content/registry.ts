@@ -265,38 +265,33 @@ const mapComparisonEntry = (
   entry
 });
 
-export const getPages =
-  async (): Promise<
-    PageEntry[]
-  > =>
-    getCollection("pages");
+let pagesPromise: Promise<PageEntry[]> | undefined;
+let productsPromise: Promise<ProductEntry[]> | undefined;
+let manufacturersPromise: Promise<ManufacturerEntry[]> | undefined;
+let comparisonsPromise: Promise<ComparisonEntry[]> | undefined;
+let allContentPromise: Promise<HubContentEntry[]> | undefined;
 
-export const getProducts =
-  async (): Promise<
-    ProductEntry[]
-  > =>
-    getCollection("products");
+export const getPages = (): Promise<PageEntry[]> =>
+  import.meta.env.PROD
+    ? (pagesPromise ??= getCollection("pages"))
+    : getCollection("pages");
 
-export const getManufacturers =
-  async (): Promise<
-    ManufacturerEntry[]
-  > =>
-    getCollection(
-      "manufacturers"
-    );
+export const getProducts = (): Promise<ProductEntry[]> =>
+  import.meta.env.PROD
+    ? (productsPromise ??= getCollection("products"))
+    : getCollection("products");
 
-export const getComparisons =
-  async (): Promise<
-    ComparisonEntry[]
-  > =>
-    getCollection(
-      "comparisons"
-    );
+export const getManufacturers = (): Promise<ManufacturerEntry[]> =>
+  import.meta.env.PROD
+    ? (manufacturersPromise ??= getCollection("manufacturers"))
+    : getCollection("manufacturers");
 
-export const getAllContent =
-  async (): Promise<
-    HubContentEntry[]
-  > => {
+export const getComparisons = (): Promise<ComparisonEntry[]> =>
+  import.meta.env.PROD
+    ? (comparisonsPromise ??= getCollection("comparisons"))
+    : getCollection("comparisons");
+
+const loadAllContent = async (): Promise<HubContentEntry[]> => {
     const [
       pages,
       products,
@@ -323,7 +318,12 @@ export const getAllContent =
         mapComparisonEntry
       )
     ];
-  };
+};
+
+export const getAllContent = (): Promise<HubContentEntry[]> =>
+  import.meta.env.PROD
+    ? (allContentPromise ??= loadAllContent())
+    : loadAllContent();
 
 export const sortHubEntries = (
   entries: HubContentEntry[]

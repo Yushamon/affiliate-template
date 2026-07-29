@@ -18,6 +18,17 @@ type RelatedContentOptions = {
 };
 
 type ScoredEntry = { entry: HubContentEntry; score: number; evidence: string[] };
+type RelatedScoringContext = {
+  sourceTopics: Set<string>;
+  sourceTokens: Set<string>;
+  explicitRelations: Set<string>;
+  currentSlug: string;
+};
+type RelatedTargetContext = {
+  topics: Set<string>;
+  tokens: Set<string>;
+  explicitTargetSlugs: string[];
+};
 
 const normalizeValue = normalizeTaxonomyTerm;
 const stopWords = new Set([
@@ -57,17 +68,30 @@ const getExplicitTargetSlugs = (entry: HubContentEntry) => {
     ...(Array.isArray(data.alternatives) ? data.alternatives : [])
   ].map(String);
 };
+const targetContextCache = new WeakMap<object, RelatedTargetContext>();
 
-export const scoreRelatedEntry = (
-  entry: HubContentEntry,
+const prepareScoringContext = (
   options: RelatedContentOptions
-): ScoredEntry | null => {
+): RelatedScoringContext => {
   const sourceValues = [
     options.title,
     options.description,
     ...options.tags,
     ...(options.sections ?? [])
   ];
+  return {
+    sourceTopics: new Set(detectLinkTopics(sourceValues)),
+    sourceTokens: tokenize(sourceValues),
+    explicitRelations: new Set((options.explicitRelations ?? []).map(normalizeValue)),
+    currentSlug: normalizeValue(options.currentSlug)
+  };
+};
+
+const getTargetContext = (entry: HubContentEntry): RelatedTargetContext => {
+  if (import.meta.env.PROD) {
+    const cached = targetContextCache.get(entry);
+    if (cached) return cached;
+  }
   const targetValues = [
     entry.title,
     entry.description,
@@ -76,17 +100,28 @@ export const scoreRelatedEntry = (
     ...entry.tags,
     ...entry.sections
   ];
-  const sourceTopics = new Set(detectLinkTopics(sourceValues));
-  const targetTopics = new Set(detectLinkTopics(targetValues));
-  const sharedTopics = [...sourceTopics].filter((topic) => targetTopics.has(topic));
+  const context = {
+    topics: new Set(detectLinkTopics(targetValues)),
+    tokens: tokenize(targetValues),
+    explicitTargetSlugs: getExplicitTargetSlugs(entry).map(normalizeValue)
+  };
+  if (import.meta.env.PROD) targetContextCache.set(entry, context);
+  return context;
+};
+
+export const scoreRelatedEntry = (
+  entry: HubContentEntry,
+  options: RelatedContentOptions,
+  prepared = prepareScoringContext(options)
+): ScoredEntry | null => {
+  const target = getTargetContext(entry);
+  const sharedTopics = [...prepared.sourceTopics].filter((topic) => target.topics.has(topic));
   const tagMatches = exactMatches(options.tags, entry.tags);
   const sectionMatches = exactMatches(options.sections ?? [], entry.sections);
-  const semantic = semanticSimilarity(tokenize(sourceValues), tokenize(targetValues));
-  const explicit = new Set([
-    ...(options.explicitRelations ?? []),
-    ...getExplicitTargetSlugs(entry)
-  ].map(normalizeValue)).has(normalizeValue(entry.slug)) ||
-    getExplicitTargetSlugs(entry).map(normalizeValue).includes(normalizeValue(options.currentSlug));
+  const semantic = semanticSimilarity(prepared.sourceTokens, target.tokens);
+  const explicit = prepared.explicitRelations.has(normalizeValue(entry.slug)) ||
+    target.explicitTargetSlugs.includes(normalizeValue(entry.slug)) ||
+    target.explicitTargetSlugs.includes(prepared.currentSlug);
 
   const hasThematicEvidence = hasThematicProximity({
     explicit,
@@ -152,9 +187,10 @@ export const getRelatedContent = async ({
   const content = await getAllContent();
   const excluded = new Set([currentSlug, ...exclude].map(normalizeValue));
   const options = { currentSlug, tags, sections, type, title, description, exclude, explicitRelations, limit };
+  const scoringContext = prepareScoringContext(options);
   const scored = content
     .filter((entry) => !excluded.has(normalizeValue(entry.slug)))
-    .map((entry) => scoreRelatedEntry(entry, options))
+    .map((entry) => scoreRelatedEntry(entry, options, scoringContext))
     .filter((value): value is ScoredEntry => Boolean(value))
     .sort((a, b) =>
       b.score - a.score ||

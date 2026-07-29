@@ -120,6 +120,11 @@
     "audit:anchor-governance:strict": "node scripts/audit-anchor-governance.mjs --strict",
     "audit:release-build-output": "node scripts/seo/audit-release-build-output.mjs",
     "audit:release-build-output:strict": "node scripts/seo/audit-release-build-output.mjs --strict",
+    "audit:performance": "node scripts/performance/audit.mjs",
+    "audit:performance:strict": "node scripts/performance/audit.mjs --strict && node scripts/performance/viewport-contract.mjs",
+    "audit:performance:viewports": "node scripts/performance/viewport-contract.mjs",
+    "audit:performance:viewports:browser": "electron --no-sandbox --headless --ozone-platform=headless scripts/performance/viewport-smoke.cjs",
+    "test:performance": "node --test test/performance-audit.test.mjs",
     "test:anchor-release-gate": "node --test test/anchor-release-gate.test.mjs"
   },
   "dependencies": {

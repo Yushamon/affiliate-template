@@ -1,5 +1,6 @@
 ---
 import type { ComparisonProduct } from "../../comparison/model";
+import OptimizedImage from "../OptimizedImage.astro";
 import EditorialScore from "../EditorialScore.astro";
 import ComparisonPriceSignal from "./ComparisonPriceSignal.astro";
 import { getPriceDisplay } from "../../comparison/price";
@@ -15,7 +16,19 @@ const price = getPriceDisplay(product.price);
     <div><span class="comparison-eyebrow">Unsere Empfehlung</span><strong>Das beste Gesamtpaket</strong></div>
   </div>
   <div class="comparison-editorial-recommendation__body">
-    {product.image && <a href={product.href} class="comparison-editorial-recommendation__media"><img src={typeof product.image.src === "string" ? product.image.src : product.image.src.src} alt={product.image.alt ?? product.title} width="720" height="540" loading="eager" decoding="async" /></a>}
+    {product.image && (
+      <a href={product.href} class="comparison-editorial-recommendation__media">
+        <OptimizedImage
+          src={product.image.src}
+          alt={product.image.alt ?? product.title}
+          width={720}
+          height={540}
+          layout="constrained"
+          fit="contain"
+          sizes="(max-width: 760px) 100vw, 33vw"
+        />
+      </a>
+    )}
     <div class="comparison-editorial-recommendation__copy">
       {product.manufacturer && <span class="comparison-editorial-recommendation__manufacturer">{product.manufacturer}</span>}
       <h2 id="comparison-editorial-recommendation-title"><a href={product.href}>{product.title}</a></h2>

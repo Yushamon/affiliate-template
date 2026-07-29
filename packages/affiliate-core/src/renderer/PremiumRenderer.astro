@@ -151,7 +151,11 @@ const getBlockIcon = (type: PremiumBlockType) => {
       const shouldRenderBlockImage = Boolean(blockImage) && isExplicitBlockImage;
 
       return (
-        <section class={`premium-v3-block premium-v3-${block.type}`}>
+        <section
+          class={`premium-v3-block premium-v3-${block.type}`}
+          data-pt-quick-facts={block.type === "quickFacts" ? "" : undefined}
+          data-pt-selected-products={block.type === "products" ? "" : undefined}
+        >
           {(block.eyebrow || block.title || block.text) && (
             <div class="premium-v3-header">
               <div class="premium-v3-header-icon">
@@ -183,7 +187,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
           )}
 
           {hasProducts && (
-            <div class="premium-v3-grid premium-v3-grid-products">
+            <div class="premium-v3-grid premium-v3-grid-products" data-pt-product-track>
               {filteredProducts.map((product) => {
                 const score = Math.max(
                   0,
@@ -201,6 +205,8 @@ const getBlockIcon = (type: PremiumBlockType) => {
                   <a
                     class="pt-surface premium-v3-card premium-v3-product-card premium-v3-card-link"
                     href={product.productUrl}
+                    data-pt-product-card
+                    data-pt-product-result
                   >
                     {product.image && (
                       <figure class="premium-v3-product-media">
@@ -217,7 +223,7 @@ const getBlockIcon = (type: PremiumBlockType) => {
                       </figure>
                     )}
 
-                    <div class="premium-v3-product-content">
+                    <div class="premium-v3-product-content" data-pt-inner-box>
                       <div class="premium-v3-product-meta">
                         <span class="premium-v3-label">
                           {product.badge}
@@ -226,6 +232,8 @@ const getBlockIcon = (type: PremiumBlockType) => {
                         <div
                           class="premium-v3-score"
                           aria-label={`Bewertung: ${score} von 100 Punkten`}
+                          data-pt-score
+                          style={`--pt-score-angle: ${score * 3.6}deg`}
                         >
                           <strong>{score}</strong>
                           <span>/100</span>

@@ -33,11 +33,19 @@ const run = (name, command, commandArgs, critical = true, env = {}) => {
   console.log("\n[" + index + "] " + name);
   console.log("> " + command + " " + commandArgs.join(" "));
   const started = Date.now();
-  const result = spawnSync(command, commandArgs, { cwd: APP_ROOT, stdio: "inherit", env: { ...process.env, ...env } });
+  const result = spawnSync(command, commandArgs, {
+    cwd: APP_ROOT,
+    stdio: "inherit",
+    shell: process.platform === "win32",
+    env: { ...process.env, ...env }
+  });
   const phase = { name, command: [command, ...commandArgs].join(" "), critical, status: result.status, durationMs: Date.now() - started, ok: result.status === 0 };
   phases.push(phase);
   console.log("Status: " + (phase.ok ? "OK" : "FEHLER"));
-  if (!phase.ok && critical) throw new Error(name + " fehlgeschlagen (Exit " + result.status + ").");
+  if (!phase.ok && critical) {
+    const detail = result.error ? ": " + result.error.message : "";
+    throw new Error(name + " fehlgeschlagen (Exit " + result.status + ")" + detail + ".");
+  }
   if (!phase.ok) warnings.push(name + " fehlgeschlagen (optional).");
 };
 
@@ -83,8 +91,9 @@ try {
   npmScript("Gerenderte interne Linkziele", "audit:internal-link-targets:strict");
   npmScript("Gerenderter SEO-Build-Output", "audit:release-build-output:strict");
   npmScript("Technischer SEO-Build-Audit", "audit:technical-seo");
+  npmScript("Performance-Budget", "audit:performance:strict");
 
-  console.log("\n[13] Release-Manifest");
+  console.log("\n[" + (phases.length + 1) + "] Release-Manifest");
   const manifest = collectReleaseManifest({ baseRef: "", headRef: "HEAD" });
   if (manifest.errors.length) throw new Error(manifest.errors.join("\n"));
   const written = writeReleaseManifest(manifest, outputDirectory);

@@ -143,7 +143,12 @@ const recommendations = products.map((product) => {
       const price = getPriceDisplay(product.price);
 
       return (
-        <article class="comparison-alternative" data-product-slug={product.slug}>
+        <article
+          class="comparison-alternative"
+          data-product-slug={product.slug}
+          data-pt-product-card
+          data-pt-product-result
+        >
           <div class={`comparison-alternative__use-case comparison-alternative__use-case--${useCase.tone}`}>
             <span aria-hidden="true">{useCase.icon}</span>
             <strong>{useCase.label}</strong>

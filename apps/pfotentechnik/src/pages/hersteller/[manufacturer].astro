@@ -1,5 +1,4 @@
 ---
-import { getCollection, getEntry } from "astro:content";
 import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import Breadcrumbs from "@affiliate-core/components/Breadcrumbs.astro";
@@ -13,29 +12,35 @@ import {
   getRelatedContent
 } from "@app/domain/content";
 import { buildManufacturerNextSteps } from "../../domain/recommendationLinks";
+import {
+  getComparisons,
+  getManufacturers,
+  getPages,
+  getProducts,
+  type ManufacturerEntry
+} from "../../domain/content/registry";
 
 type Props = {
-  manufacturerId: string;
+  entry: ManufacturerEntry;
 };
 
 export async function getStaticPaths() {
-  const manufacturers = await getCollection("manufacturers");
+  const manufacturers = await getManufacturers();
 
   return manufacturers.map((entry) => ({
     params: {
       manufacturer: entry.data.slug
     },
     props: {
-      manufacturerId: entry.id
+      entry
     } satisfies Props
   }));
 }
 
-const { manufacturerId } = Astro.props as Props;
-const entry = await getEntry("manufacturers", manufacturerId);
+const { entry } = Astro.props as Props;
 
 if (!entry) {
-  throw new Error(`Hersteller "${manufacturerId}" wurde nicht gefunden.`);
+  throw new Error("Der Hersteller wurde nicht an die Route übergeben.");
 }
 
 const manufacturer = entry.data;
@@ -45,10 +50,10 @@ const optimizedOgImage = await getImage({
   quality: "high"
 });
 const [allProducts, allManufacturers, pages, comparisons] = await Promise.all([
-  getCollection("products"),
-  getCollection("manufacturers"),
-  getCollection("pages"),
-  getCollection("comparisons")
+  getProducts(),
+  getManufacturers(),
+  getPages(),
+  getComparisons()
 ]);
 
 const productOrder = new Map(
@@ -199,7 +204,7 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
         <header><span>Redaktionelle Empfehlungen</span><h2>Welche Modelle sind besonders interessant?</h2></header>
         <div class="product-grid featured">
           {displayedFeaturedProducts.map((product, index) => (
-            <article class="pt-surface product-card">
+            <article class="pt-surface product-card" data-pt-product-card data-pt-product-result>
               <div class="product-rank">{index + 1}</div>
               <OptimizedImage src={product.data.images.thumbnail?.src ?? product.data.images.hero.src} alt={product.data.images.thumbnail?.alt ?? product.data.title} width={480} height={360} layout="constrained" />
               <span>{product.data.manufacturer.name}</span>

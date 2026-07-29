@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "defaults": {
+    "htmlWarning": 130000,
+    "htmlHard": 150000,
+    "cssWarning": 410000,
+    "cssHard": 440000,
+    "jsWarning": 15000,
+    "jsHard": 25000,
+    "domWarning": 1300,
+    "domHard": 1600,
+    "imageWarning": 5000000,
+    "imageHard": 6500000,
+    "stylesheetHard": 5,
+    "importantWarning": 1100,
+    "importantHard": 1400
+  },
+  "categories": {
+    "home": { "cssWarning": 310000, "cssHard": 330000, "domWarning": 700, "domHard": 850, "imageWarning": 3000000, "imageHard": 4000000 },
+    "listing": { "htmlWarning": 85000, "htmlHard": 105000, "cssWarning": 330000, "cssHard": 360000, "domWarning": 750, "domHard": 950, "imageWarning": 2200000, "imageHard": 3200000 },
+    "comparison": { "cssWarning": 415000, "cssHard": 435000, "jsWarning": 10000, "jsHard": 16000, "domWarning": 1350, "domHard": 1550, "imageWarning": 2500000, "imageHard": 4000000 },
+    "product": { "htmlWarning": 90000, "htmlHard": 110000, "cssWarning": 345000, "cssHard": 370000, "jsWarning": 12000, "jsHard": 18000, "domWarning": 850, "domHard": 1050, "imageWarning": 1800000, "imageHard": 3000000 },
+    "article": { "htmlWarning": 105000, "htmlHard": 135000, "cssWarning": 360000, "cssHard": 390000, "domWarning": 950, "domHard": 1400, "imageWarning": 3200000, "imageHard": 5500000 },
+    "utility": { "htmlWarning": 35000, "htmlHard": 50000, "cssWarning": 120000, "cssHard": 150000, "domWarning": 300, "domHard": 450, "imageWarning": 500000, "imageHard": 1000000 }
+  }
+}

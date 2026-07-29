@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T14:28:06.331Z",
+  "mode": "strict",
+  "status": "ok",
+  "environment": {
+    "build": "Astro production output",
+    "viewportLab": "Static output audit; browser lab documented separately",
+    "distRoot": "apps\\pfotentechnik\\dist"
+  },
+  "budgets": {
+    "schemaVersion": 1,
+    "defaults": {
+      "htmlWarning": 130000,
+      "htmlHard": 150000,
+      "cssWarning": 410000,
+      "cssHard": 440000,
+      "jsWarning": 15000,
+      "jsHard": 25000,
+      "domWarning": 1300,
+      "domHard": 1600,
+      "imageWarning": 5000000,
+      "imageHard": 6500000,
+      "stylesheetHard": 5,
+      "importantWarning": 1100,
+      "importantHard": 1400
+    },
+    "categories": {
+      "home": {
+        "cssWarning": 310000,
+        "cssHard": 330000,
+        "domWarning": 700,
+        "domHard": 850,
+        "imageWarning": 3000000,
+        "imageHard": 4000000
+      },
+      "listing": {
+        "htmlWarning": 85000,
+        "htmlHard": 105000,
+        "cssWarning": 330000,
+        "cssHard": 360000,
+        "domWarning": 750,
+        "domHard": 950,
+        "imageWarning": 2200000,
+        "imageHard": 3200000
+      },
+      "comparison": {
+        "cssWarning": 415000,
+        "cssHard": 435000,
+        "jsWarning": 10000,
+        "jsHard": 16000,
+        "domWarning": 1350,
+        "domHard": 1550,
+        "imageWarning": 2500000,
+        "imageHard": 4000000
+      },
+      "product": {
+        "htmlWarning": 90000,
+        "htmlHard": 110000,
+        "cssWarning": 345000,
+        "cssHard": 370000,
+        "jsWarning": 12000,
+        "jsHard": 18000,
+        "domWarning": 850,
+        "domHard": 1050,
+        "imageWarning": 1800000,
+        "imageHard": 3000000
+      },
+      "article": {
+        "htmlWarning": 105000,
+        "htmlHard": 135000,
+        "cssWarning": 360000,
+        "cssHard": 390000,
+        "domWarning": 950,
+        "domHard": 1400,
+        "imageWarning": 3200000,
+        "imageHard": 5500000
+      },
+      "utility": {
+        "htmlWarning": 35000,
+        "htmlHard": 50000,
+        "cssWarning": 120000,
+        "cssHard": 150000,
+        "domWarning": 300,
+        "domHard": 450,
+        "imageWarning": 500000,
+        "imageHard": 1000000
+      }
+    }
+  },
+  "source": {
+    "cssFiles": 23,
+    "cssBytes": 502229,
+    "importantDeclarations": 1264,
+    "hydrationDirectives": 0,
+    "runtimeDomCorrectionPresent": false,
+    "legacyComparisonFiles": []
+  },
+  "routes": [
+    {
+      "route": "/",
+      "category": "home",
+      "label": "Startseite",
+      "metrics": {
+        "htmlBytes": 54157,
+        "htmlBrotliBytes": 10396,
+        "domNodes": 611,
+        "domDepth": 13,
+        "stylesheets": 4,
+        "cssBytes": 303014,
+        "cssFiles": 4,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 2,
+        "images": 19,
+        "imageAssetFiles": 47,
+        "imageBytes": 809298,
+        "eagerImages": 1,
+        "lazyImages": 17,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 979
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/",
+      "category": "listing",
+      "label": "Vergleichsindex",
+      "metrics": {
+        "htmlBytes": 36031,
+        "htmlBrotliBytes": 6184,
+        "domNodes": 352,
+        "domDepth": 10,
+        "stylesheets": 3,
+        "cssBytes": 283855,
+        "cssFiles": 3,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 2,
+        "images": 1,
+        "imageAssetFiles": 0,
+        "imageBytes": 0,
+        "eagerImages": 0,
+        "lazyImages": 0,
+        "highPriorityImages": 0,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 964
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "category": "comparison",
+      "label": "Vergleich Futterautomaten",
+      "metrics": {
+        "htmlBytes": 120846,
+        "htmlBrotliBytes": 18597,
+        "domNodes": 1294,
+        "domDepth": 20,
+        "stylesheets": 5,
+        "cssBytes": 410644,
+        "cssFiles": 5,
+        "scripts": 1,
+        "jsBytes": 4974,
+        "jsFiles": 1,
+        "inlineScripts": 4,
+        "images": 14,
+        "imageAssetFiles": 29,
+        "imageBytes": 287840,
+        "eagerImages": 1,
+        "lazyImages": 12,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 1244
+      },
+      "findings": [
+        {
+          "code": "PERF_CSS_SPECIFICITY_HIGH",
+          "severity": "warning",
+          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "message": "!important-Budget überschritten: 1244 > 1100.",
+          "actual": 1244,
+          "limit": 1100
+        }
+      ]
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "category": "comparison",
+      "label": "Vergleich GPS-Tracker",
+      "metrics": {
+        "htmlBytes": 59835,
+        "htmlBrotliBytes": 12318,
+        "domNodes": 621,
+        "domDepth": 20,
+        "stylesheets": 5,
+        "cssBytes": 410644,
+        "cssFiles": 5,
+        "scripts": 1,
+        "jsBytes": 4974,
+        "jsFiles": 1,
+        "inlineScripts": 4,
+        "images": 6,
+        "imageAssetFiles": 13,
+        "imageBytes": 273604,
+        "eagerImages": 1,
+        "lazyImages": 4,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 1244
+      },
+      "findings": [
+        {
+          "code": "PERF_CSS_SPECIFICITY_HIGH",
+          "severity": "warning",
+          "route": "/vergleiche/gps-tracker-ohne-abo/",
+          "message": "!important-Budget überschritten: 1244 > 1100.",
+          "actual": 1244,
+          "limit": 1100
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "category": "product",
+      "label": "Produktdetail",
+      "metrics": {
+        "htmlBytes": 71964,
+        "htmlBrotliBytes": 13602,
+        "domNodes": 723,
+        "domDepth": 14,
+        "stylesheets": 5,
+        "cssBytes": 340439,
+        "cssFiles": 5,
+        "scripts": 1,
+        "jsBytes": 7356,
+        "jsFiles": 1,
+        "inlineScripts": 5,
+        "images": 9,
+        "imageAssetFiles": 27,
+        "imageBytes": 469704,
+        "eagerImages": 1,
+        "lazyImages": 7,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 983
+      },
+      "findings": []
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "category": "listing",
+      "label": "Herstellerdetail",
+      "metrics": {
+        "htmlBytes": 72150,
+        "htmlBrotliBytes": 13695,
+        "domNodes": 587,
+        "domDepth": 11,
+        "stylesheets": 4,
+        "cssBytes": 308952,
+        "cssFiles": 4,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 3,
+        "images": 24,
+        "imageAssetFiles": 51,
+        "imageBytes": 1020102,
+        "eagerImages": 1,
+        "lazyImages": 22,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 1029
+      },
+      "findings": []
+    },
+    {
+      "route": "/wissen/",
+      "category": "listing",
+      "label": "Wissenshub",
+      "metrics": {
+        "htmlBytes": 54934,
+        "htmlBrotliBytes": 9129,
+        "domNodes": 590,
+        "domDepth": 10,
+        "stylesheets": 2,
+        "cssBytes": 279415,
+        "cssFiles": 2,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 2,
+        "images": 1,
+        "imageAssetFiles": 0,
+        "imageBytes": 0,
+        "eagerImages": 0,
+        "lazyImages": 0,
+        "highPriorityImages": 0,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 964
+      },
+      "findings": []
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "category": "article",
+      "label": "Cornerstone",
+      "metrics": {
+        "htmlBytes": 122074,
+        "htmlBrotliBytes": 26786,
+        "domNodes": 1288,
+        "domDepth": 11,
+        "stylesheets": 4,
+        "cssBytes": 341678,
+        "cssFiles": 4,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 2,
+        "images": 15,
+        "imageAssetFiles": 87,
+        "imageBytes": 5295142,
+        "eagerImages": 1,
+        "lazyImages": 13,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 1225
+      },
+      "findings": [
+        {
+          "code": "PERF_HTML_TOO_LARGE",
+          "severity": "warning",
+          "route": "/smarte-futterautomaten/",
+          "message": "HTML-Budget überschritten: 122074 > 105000.",
+          "actual": 122074,
+          "limit": 105000
+        },
+        {
+          "code": "PERF_DOM_TOO_COMPLEX",
+          "severity": "warning",
+          "route": "/smarte-futterautomaten/",
+          "message": "DOM-Budget überschritten: 1288 > 950.",
+          "actual": 1288,
+          "limit": 950
+        },
+        {
+          "code": "PERF_IMAGE_BYTES_EXCEEDED",
+          "severity": "warning",
+          "route": "/smarte-futterautomaten/",
+          "message": "Bildbudget überschritten: 5295142 > 3200000.",
+          "actual": 5295142,
+          "limit": 3200000
+        },
+        {
+          "code": "PERF_CSS_SPECIFICITY_HIGH",
+          "severity": "warning",
+          "route": "/smarte-futterautomaten/",
+          "message": "!important-Budget überschritten: 1225 > 1100.",
+          "actual": 1225,
+          "limit": 1100
+        }
+      ]
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "category": "article",
+      "label": "Ratgeber",
+      "metrics": {
+        "htmlBytes": 35149,
+        "htmlBrotliBytes": 8235,
+        "domNodes": 416,
+        "domDepth": 10,
+        "stylesheets": 4,
+        "cssBytes": 341678,
+        "cssFiles": 4,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 2,
+        "images": 2,
+        "imageAssetFiles": 5,
+        "imageBytes": 297458,
+        "eagerImages": 1,
+        "lazyImages": 0,
+        "highPriorityImages": 1,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 1225
+      },
+      "findings": [
+        {
+          "code": "PERF_CSS_SPECIFICITY_HIGH",
+          "severity": "warning",
+          "route": "/hund-trinkt-ploetzlich-viel/",
+          "message": "!important-Budget überschritten: 1225 > 1100.",
+          "actual": 1225,
+          "limit": 1100
+        }
+      ]
+    },
+    {
+      "route": "/kontakt/",
+      "category": "utility",
+      "label": "Kontakt",
+      "metrics": {
+        "htmlBytes": 9855,
+        "htmlBrotliBytes": 2470,
+        "domNodes": 145,
+        "domDepth": 10,
+        "stylesheets": 1,
+        "cssBytes": 99636,
+        "cssFiles": 1,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 1,
+        "images": 0,
+        "imageAssetFiles": 0,
+        "imageBytes": 0,
+        "eagerImages": 0,
+        "lazyImages": 0,
+        "highPriorityImages": 0,
+        "missingDimensions": 0,
+        "probableLcpLazy": false,
+        "importantDeclarations": 0
+      },
+      "findings": []
+    }
+  ],
+  "findings": [
+    {
+      "code": "PERF_CSS_SPECIFICITY_HIGH",
+      "severity": "warning",
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "message": "!important-Budget überschritten: 1244 > 1100.",
+      "actual": 1244,
+      "limit": 1100
+    },
+    {
+      "code": "PERF_CSS_SPECIFICITY_HIGH",
+      "severity": "warning",
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "message": "!important-Budget überschritten: 1244 > 1100.",
+      "actual": 1244,
+      "limit": 1100
+    },
+    {
+      "code": "PERF_HTML_TOO_LARGE",
+      "severity": "warning",
+      "route": "/smarte-futterautomaten/",
+      "message": "HTML-Budget überschritten: 122074 > 105000.",
+      "actual": 122074,
+      "limit": 105000
+    },
+    {
+      "code": "PERF_DOM_TOO_COMPLEX",
+      "severity": "warning",
+      "route": "/smarte-futterautomaten/",
+      "message": "DOM-Budget überschritten: 1288 > 950.",
+      "actual": 1288,
+      "limit": 950
+    },
+    {
+      "code": "PERF_IMAGE_BYTES_EXCEEDED",
+      "severity": "warning",
+      "route": "/smarte-futterautomaten/",
+      "message": "Bildbudget überschritten: 5295142 > 3200000.",
+      "actual": 5295142,
+      "limit": 3200000
+    },
+    {
+      "code": "PERF_CSS_SPECIFICITY_HIGH",
+      "severity": "warning",
+      "route": "/smarte-futterautomaten/",
+      "message": "!important-Budget überschritten: 1225 > 1100.",
+      "actual": 1225,
+      "limit": 1100
+    },
+    {
+      "code": "PERF_CSS_SPECIFICITY_HIGH",
+      "severity": "warning",
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "message": "!important-Budget überschritten: 1225 > 1100.",
+      "actual": 1225,
+      "limit": 1100
+    }
+  ],
+  "summary": {
+    "routes": 10,
+    "measuredRoutes": 10,
+    "errors": 0,
+    "warnings": 7
+  }
+}

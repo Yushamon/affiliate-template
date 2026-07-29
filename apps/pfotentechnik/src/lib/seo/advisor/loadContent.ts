@@ -30,7 +30,9 @@ const pageTypeFor = (collection: CollectionName, route: string): string => {
 const filePathFor = (collection: CollectionName, id: string): string =>
   `apps/pfotentechnik/src/content/${collection}/${id.replace(/\\/g, "/")}${/\.(md|mdx)$/i.test(id) ? "" : ".md"}`;
 
-export const loadAdvisorContent = async (): Promise<{ documents: ContentDocument[]; graph: ContentGraphData }> => {
+type AdvisorContent = { documents: ContentDocument[]; graph: ContentGraphData };
+
+const loadAdvisorContentUncached = async (): Promise<AdvisorContent> => {
   const graph = contentGraphJson as ContentGraphData;
   const graphByRoute = new Map(graph.nodes.map((node) => [normalizeSeoPath(node.route.replace(/^\/produkte\//, "/produkt/")), node]));
   const documents: ContentDocument[] = [];
@@ -87,4 +89,11 @@ export const loadAdvisorContent = async (): Promise<{ documents: ContentDocument
     }
   }
   return { documents, graph };
+};
+
+let advisorContentPromise: Promise<AdvisorContent> | undefined;
+
+export const loadAdvisorContent = (): Promise<AdvisorContent> => {
+  advisorContentPromise ??= loadAdvisorContentUncached();
+  return advisorContentPromise;
 };

@@ -1,0 +1,90 @@
+{
+  "label": "pfotentechnik-performance-hardening-18.1.1",
+  "createdAt": "2026-07-29T14:38:52.758Z",
+  "files": [
+    {
+      "file": "apps/pfotentechnik/reports/performance/after-latest.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "8d7617325fe3a8189d87b9108a975054b928d3643604827903634685d930d67d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/after-latest.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "579781015eb82edc9c758d53053faf1061c263fe48df2da7e64bcc010b8dffec"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/summary.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "a136153e8f89522da9fbff6ecba2fcf38657a9b29444ac7ae0fd5f865f700443"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/viewport-contract-latest.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "8fb50f573b5b8a01c1f0774505bd8e66b00e1439c8ac81e1e2cc7a231a9d7761"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/seo/release-preflight.mjs",
+      "action": "replace",
+      "beforeHash": "7a0b1327580ba391b3e5c6d4c640209453e914979c86c9fe03faa9b24ae0f437",
+      "afterHash": "03f540910180e331e029a1f926719e87de903e5a24f027b640eb38c9ec102041"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/internalLinks.ts",
+      "action": "replace",
+      "beforeHash": "a29784515963b29d01b82a98a6107de70488871e7a38f2cc4bec70b577127d46",
+      "afterHash": "30216671f92e29fe963d0bc76a6fff44e018de565d7216b22db0f8d787fba3c7"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/registry.ts",
+      "action": "replace",
+      "beforeHash": "43846d73a50039d4ad90784e424a5d9221794848de848a5ace53a4345324367f",
+      "afterHash": "081f6c7934b9fcf29d67331636e697708b0697acfaaf0b7bef7da1e4efe3d8cd"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/related.ts",
+      "action": "replace",
+      "beforeHash": "4c6e490b11396f58c5c83972515e3a1b0003cd7f9c87223038547e2f2b66611b",
+      "afterHash": "069e9fdbed065d145d255b9a8dab733b7c08f3e05f649286b1918a37cc66cb0a"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productExperience/model.ts",
+      "action": "replace",
+      "beforeHash": "039a4267bd980c79743b956985fa09db7610dad3d8ab66a0c97a8b199295b258",
+      "afterHash": "b02dbe8231a9fe6b4ec9d1d50e0ac1f4560e2fb6333b0f505fd9f536d14a3681"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/[slug].astro",
+      "action": "replace",
+      "beforeHash": "00e3f8af158a77da60622716afbafc0e152eaddeca23ef1acd7a6ff272ea0182",
+      "afterHash": "b4989f9bf9cc26ffa7cce0e3a1484c975bc4cd9c34db210567a588fc3a232e5c"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
+      "action": "replace",
+      "beforeHash": "fd6b9d694c2994e26327acf54a0d678d4cbfc925549b9779b7639b5d755f87ec",
+      "afterHash": "f54e4154bc0bd519fa92ced477bafe3e155502aea7fbfdb673c4fb9d3c93bae3"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
+      "action": "replace",
+      "beforeHash": "5c043506b3d603f5ee56b25d70dca3996672b6e9c60a17fd4a184706ebfbfe18",
+      "afterHash": "86b197fd10106228349d49607fd5a869e6180c937f86bc64a600d66ee1373c03"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/vergleiche/[comparison].astro",
+      "action": "replace",
+      "beforeHash": "b64e52609e716ea25cdef606b89e26928f8914af048ba84e55710f8ad0ce1fb7",
+      "afterHash": "21d326bae4497efd06e430a5e0d25a05467942182baf971f26179de7e697aba4"
+    },
+    {
+      "file": "apps/pfotentechnik/test/performance-audit.test.mjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "69a449c7f2ff5b82d3ea9a1d2b2ad26def20b6a7f72ae878c844894abf1ed5f3"
+    }
+  ]
+}

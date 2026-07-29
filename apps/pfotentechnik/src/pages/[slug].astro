@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
@@ -40,24 +40,36 @@ import guideImage from "../assets/images/project/pfotentechnik/guide.webp";
 import inlineImage from "../assets/images/project/pfotentechnik/inline.webp";
 import productImage from "../assets/images/project/pfotentechnik/product.webp";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
+import {
+  getComparisons,
+  getManufacturers,
+  getPages,
+  getProducts,
+  type PageEntry
+} from "../domain/content/registry";
+
+type Props = {
+  page: PageEntry;
+};
+
 export async function getStaticPaths() {
-  const pages = await getCollection("pages");
+  const pages = await getPages();
 
   return pages.map((page) => ({
     params: { slug: page.data.slug },
-    props: { page },
+    props: { page } satisfies Props,
   }));
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as Props;
 const { Content, headings } = await render(page);
-const [pages, comparisons, manufacturers] = await Promise.all([
-  getCollection("pages"),
-  getCollection("comparisons"),
-  getCollection("manufacturers")
+const [pages, products, comparisons, manufacturers] = await Promise.all([
+  getPages(),
+  getProducts(),
+  getComparisons(),
+  getManufacturers()
 ]);
 const breadcrumbs = getPageBreadcrumbs(page);
-const products = await getCollection("products");
 const internalLinkDefinitions = getInternalLinkDefinitions({
   pages,
   products,
@@ -913,4 +925,3 @@ const relatedItems = relatedEntries.map((entry) => ({
     }
   }
 </style>
-

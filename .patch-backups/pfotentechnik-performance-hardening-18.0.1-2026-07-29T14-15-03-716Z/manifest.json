@@ -1,0 +1,234 @@
+{
+  "label": "pfotentechnik-performance-hardening-18.0.1",
+  "createdAt": "2026-07-29T14:15:03.718Z",
+  "files": [
+    {
+      "file": "apps/pfotentechnik/package.json",
+      "action": "replace",
+      "beforeHash": "5d24b1a339147481ddd0890560445df581f2931df6a3683685f811d4026a2739",
+      "afterHash": "7f00ff00aeed9115f911f5cbaab150a94729b3a8ba4558095805dbc7df43187c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/after-latest.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "2648d35b13c555544bc403064edb7cbad52d10482d0dfbc0b203576d9c21ae86"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/after-latest.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "9b51b1c1ca3af5b7a8db7c8094cdb7e7ad6e7d37248215d82eda653637c80dae"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/baseline.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "2890c243e782ca5791cd090b16f85e0b81099dbc21a5f84044709dc96ff74832"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/baseline.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "908d93548715f5c6c973335f6fa45ddafc24ae9905520f0750687a20135fd1a6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/summary.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "52877fb453e21a7855c9fe2210a4e6dfc043a8c50efe258a87d8b02309bbcff3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/viewport-contract-latest.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "5e91c0c32fdb430b6ee640b54a009260b84fbbedd0cb25ac14eea9d0aaddba96"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/performance/viewport-contract-latest.md",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "a1f8b688243c53c5ea8a54bb0752566bb756ff2c4f9bc1f6a8e3d2b893d07d67"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/performance/audit.mjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "9fe46c033a60b2c3382cc5ae4090870482ba9188d3698ba930a217ed0399f525"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/performance/budgets.json",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "0e00bd2bf6e20057fc575bd51c489a6a480265525739de1e9a00afcb82c8163c"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/performance/core.mjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "94e4ee24c7a7decf413be28aec7ccbff95518ff628eed79e508ae1c9f683da10"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/performance/viewport-contract.mjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "dc3bb6deb591609bd37a0ff6251eaaf65026ad90b67a7ea9208a931a0587391e"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/performance/viewport-smoke.cjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "72c18cb1f269e9ce90bd57bee34a70936b39b89934e57931a2e76a117287c487"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/seo/release-preflight.mjs",
+      "action": "replace",
+      "beforeHash": "7a0b1327580ba391b3e5c6d4c640209453e914979c86c9fe03faa9b24ae0f437",
+      "afterHash": "83e311c7b909454480ada6f983f962957dad00b7cec91762783b1fd29ffc5d90"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
+      "action": "replace",
+      "beforeHash": "2251066943d080137c03b1378ef67ce5bc6b272ecc33d16fe0f10b2937709370",
+      "afterHash": "22e4909baeb81e99cdb7bff8941604f4eb9c71a635fd8ba265fad3e7e8dcbd8c"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
+      "action": "replace",
+      "beforeHash": "57fb1e95295577eb8a226f45baf1d06943f4ac946f29fa8c3db7b3db80a06ad5",
+      "afterHash": "4cf778aff5d34538003a3e11c2e4d4f0356ea7f075067388730800f6570b8d2e"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
+      "action": "replace",
+      "beforeHash": "62856c2aff44e821d2e8caff37debd8f5038b332b9bd2ad496ff99da9fca187a",
+      "afterHash": "a0f2b09273f1f378058c0677856b56bc01349c0748690c260911d17dbab78632"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/SiteRuntimeFixes.astro",
+      "action": "delete",
+      "beforeHash": "4bf608856f520904bec343f269017e4e0708341fe29f30bd7db8e967dcc10337",
+      "afterHash": null
+    },
+    {
+      "file": "apps/pfotentechnik/src/layouts/ProjectLayout.astro",
+      "action": "replace",
+      "beforeHash": "8a2be9894948b546f75cfb1cdc38d1e98c17d80db19a30aff87bc1ef9f9d566a",
+      "afterHash": "f2cdd4d815af521da27387b2d758d648bedd20a610ffaf1a4cbe3556af3155be"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/loadContent.ts",
+      "action": "replace",
+      "beforeHash": "28ffd0a3dbb0503c7cb71b00b608819219b17418e338d09eb94065bf22885e6a",
+      "afterHash": "6c2bc644c84cc725a0e21bbab4aecbf1c0b38900ca7c6d08af901b4a548b67ce"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/loadWorkPackages.ts",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "76dbab1971d798e993ab0642f1686e0761cbbb0abc400e39c8b9f8888b6c3be7"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/productIntelligence.ts",
+      "action": "replace",
+      "beforeHash": "169542ee78b23a11a6bb763ab6194d566bd64cadbc7f20a390a583bfb70f5788",
+      "afterHash": "33744ca347c3d69ed9666a4442c36dd50880c7cb065d3e407ec767388f6b3fed"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
+      "action": "replace",
+      "beforeHash": "fd6b9d694c2994e26327acf54a0d678d4cbfc925549b9779b7639b5d755f87ec",
+      "afterHash": "11171c0ad8de6f3a8836780b8108766fb9048a12ddc1014e871be3e64c650534"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
+      "action": "replace",
+      "beforeHash": "5c043506b3d603f5ee56b25d70dca3996672b6e9c60a17fd4a184706ebfbfe18",
+      "afterHash": "be55224515bc262d5ace41b3198533493a5cfe8697e86184fa4d162943577ae2"
+    },
+    {
+      "file": "apps/pfotentechnik/test/performance-audit.test.mjs",
+      "action": "create",
+      "beforeHash": null,
+      "afterHash": "ec8887f4e6eeefe5292b6b9493eabf695f8d2e8c2430bbb83668dbc3f630a8a0"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-cta-system.css",
+      "action": "delete",
+      "beforeHash": "ed8682c19c09294049cbb0263b0cb38de7c28377257e39b21176d71c9360d734",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-editorial-cover.css",
+      "action": "delete",
+      "beforeHash": "671450d3dce510671508eaf00faccbb8f38677172af80228c9e608462bd06649",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-mobile-hotfix.css",
+      "action": "delete",
+      "beforeHash": "cb80165b2c5ae5189078df9b8009bb7ab543a7dde094b17bbf852e55608c23ef",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-mobile-price-fix-4.0.1.css",
+      "action": "delete",
+      "beforeHash": "1581d1c6445d253e0ce90c5415cb9bedd9da9c4d6eecae116ef92f6d32b462c4",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-premium-seo.css",
+      "action": "delete",
+      "beforeHash": "596d2eac17440b0ff272477cf8e0887c21effcc0863ceb914428b5c284fd3f01",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-premium-ux.css",
+      "action": "delete",
+      "beforeHash": "3280febabf552ba4445c293d4fd1745ca9d6ae43b37ff387f6a791564093ae1d",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
+      "action": "replace",
+      "beforeHash": "41e0bb6387811347ccf5bc1fe44f41dc40cb6cc9731bdaaf18e84a63c06fff55",
+      "afterHash": "21834bafaed8db1cb93fe552780ba8d6373c86f8763e04e84560c977329478a3"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-ux-polish-3.2.css",
+      "action": "delete",
+      "beforeHash": "418e35d9a17e431f3699a768b818154742f432b7c55ce4bcd4a4a05bc529ac25",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison.css",
+      "action": "delete",
+      "beforeHash": "8e63619bb6518fb497cff17dd14713890cbd34185c8f4a7d2f2fd71c90c81992",
+      "afterHash": null
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonEditorialRecommendation.astro",
+      "action": "replace",
+      "beforeHash": "bc9ad199ae8c29374f76f99e49a64b618b0e060c0c409f03f3cedce8d553ad65",
+      "afterHash": "96e5d4fea848fbb2219e0c611a94f95c0093961c31a5945a900e09ae4a9ed5e3"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/RecommendationGrid.astro",
+      "action": "replace",
+      "beforeHash": "80582c8bbd16eb942ae29099e34fc5340b824d0e2a4e4b412b67fd327dbd73c7",
+      "afterHash": "60ec112eb87bc8fe3b7a0d9735c59e8e4f3bac535a5cec283452200855678e5c"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/OptimizedImage.astro",
+      "action": "replace",
+      "beforeHash": "89f991440f660903252c3fb1c51cf5682292435b47c77b0d6f32142e09d75ded",
+      "afterHash": "dbaf32667fa92742d88e6eb38a29898b20374ff3d30b2945c8ed95b762157eb2"
+    },
+    {
+      "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
+      "action": "replace",
+      "beforeHash": "b599d87b0d2c5076d28b32fab7976c40fd8e655b027751f70d706fff6f09a62b",
+      "afterHash": "830579eaed99b561714c594b039bfc5d774e2618f206353052ea5e1d01ef8ce0"
+    }
+  ]
+}

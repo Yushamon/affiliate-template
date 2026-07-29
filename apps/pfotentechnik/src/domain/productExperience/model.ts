@@ -37,20 +37,42 @@ const editorialScore = (data: any): number => {
 
 const imageSource = (entry: any) => entry?.src ?? entry;
 const imageAlt = (entry: any, fallback: string) => text(entry?.alt, fallback);
+const productTextCache = new WeakMap<object, string>();
+const priceIndexCache = new WeakMap<object, PriceIndex>();
 
-const collectProductText = (data: any): string => normalize([
-  data.title,
-  data.description,
-  data.recommendation,
-  data.useCase,
-  ...list<string>(data.features),
-  ...list<string>(data.tags),
-  ...list<string>(data.decision?.bestFor),
-  ...list<string>(data.decision?.attention),
-  ...list<string>(data.strengths),
-  ...list<string>(data.weaknesses),
-  ...list<any>(data.specs).map((item) => `${text(item?.label)} ${text(item?.value)}`)
-].filter(Boolean).join(" "));
+const collectProductText = (data: any): string => {
+  if (import.meta.env.PROD && data && typeof data === "object") {
+    const cached = productTextCache.get(data);
+    if (cached !== undefined) return cached;
+  }
+  const value = normalize([
+    data.title,
+    data.description,
+    data.recommendation,
+    data.useCase,
+    ...list<string>(data.features),
+    ...list<string>(data.tags),
+    ...list<string>(data.decision?.bestFor),
+    ...list<string>(data.decision?.attention),
+    ...list<string>(data.strengths),
+    ...list<string>(data.weaknesses),
+    ...list<any>(data.specs).map((item) => `${text(item?.label)} ${text(item?.value)}`)
+  ].filter(Boolean).join(" "));
+  if (import.meta.env.PROD && data && typeof data === "object") {
+    productTextCache.set(data, value);
+  }
+  return value;
+};
+
+const getPriceIndex = (products: any[], currentEntry: any): PriceIndex => {
+  if (!products.length) return buildPriceIndex([currentEntry]);
+  if (!import.meta.env.PROD) return buildPriceIndex(products);
+  const cached = priceIndexCache.get(products);
+  if (cached) return cached;
+  const created = buildPriceIndex(products);
+  priceIndexCache.set(products, created);
+  return created;
+};
 
 const booleanFromText = (haystack: string, positive: string[], negative: string[] = []): boolean | null => {
   if (negative.some((term) => haystack.includes(normalize(term)))) return false;
@@ -338,7 +360,7 @@ export const buildProductExperienceModel = ({
 }) => {
   const data = dataOf(currentEntry);
   const slug = slugOf(currentEntry);
-  const priceIndex = buildPriceIndex(allProducts.length ? allProducts : [currentEntry]);
+  const priceIndex = getPriceIndex(allProducts, currentEntry);
   const price = priceIndex.bySlug.get(slug);
   const operations = deriveProductOperations(data);
   const galleryEntries = [

@@ -1,7 +1,6 @@
 ---
 import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
 import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
-import SiteRuntimeFixes from "../components/SiteRuntimeFixes.astro";
 import "../styles/pfotentechnik-design-tokens.css";
 import "../styles/pfotentechnik-primitives.css";
 import "../styles/pfotentechnik-responsive-resilience.css";
@@ -9,7 +8,6 @@ import "../styles/pfotentechnik-visual-density.css";
 import "../styles/pfotentechnik.css";
 import "../styles/pfotentechnik-design-system.css";
 import "../styles/pfotentechnik-ui-system.css";
-import "../styles/pfotentechnik-product-mobile-premium.css";
 
 const props = Astro.props;
 const webAnalyticsToken = import.meta.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
@@ -42,5 +40,4 @@ const canonical = normalizeCanonicalPath(props.canonical ?? "/");
 >
   <slot />
   <ImageLightbox />
-<SiteRuntimeFixes />
 </AffiliateLayout>

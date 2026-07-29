@@ -89,7 +89,7 @@ const withPoints = (checks: RawHealthCheck[]) => {
   }));
 };
 
-export const loadProductIntelligence = async (): Promise<ProductIntelligence> => {
+const loadProductIntelligenceUncached = async (): Promise<ProductIntelligence> => {
   const [products, manufacturers, comparisons] = await Promise.all([
     getCollection("products"),
     getCollection("manufacturers"),
@@ -241,6 +241,13 @@ export const loadProductIntelligence = async (): Promise<ProductIntelligence> =>
       fallback: "Promptpaket erzeugen, Dateien in den sicheren Importordner legen, anschließend lokal in WebP konvertieren und paketieren.",
     },
   };
+};
+
+let productIntelligencePromise: Promise<ProductIntelligence> | undefined;
+
+export const loadProductIntelligence = (): Promise<ProductIntelligence> => {
+  productIntelligencePromise ??= loadProductIntelligenceUncached();
+  return productIntelligencePromise;
 };
 
 export const buildProductMarkdownPrompt = (product: ProductDiscovery): string => [

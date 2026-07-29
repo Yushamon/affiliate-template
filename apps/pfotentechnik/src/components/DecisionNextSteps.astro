@@ -34,7 +34,7 @@ const visibleItems = filterSelfLinkItems(
 ---
 
 {visibleItems.length > 0 && (
-  <section class="pt-next-steps" aria-labelledby="pt-next-steps-title" data-feature="recommendation-cards-2.0">
+  <section class="pt-next-steps" aria-labelledby="pt-next-steps-title" data-feature="recommendation-cards-2.0" data-pt-next-steps>
     <header class="pt-next-steps__header">
       <p class="pt-next-steps__eyebrow">Nächster Schritt</p>
       <h2 id="pt-next-steps-title">{title}</h2>
@@ -47,7 +47,7 @@ const visibleItems = filterSelfLinkItems(
         const highlights = (item.highlights ?? []).filter(Boolean).slice(0, 3);
 
         return (
-          <a class:list={["pt-next-steps__card", `pt-next-steps__card--${kind}`]} href={item.href}>
+          <a class:list={["pt-next-steps__card", `pt-next-steps__card--${kind}`]} href={item.href} data-pt-step-card>
             {item.image && (
               <div class="pt-next-steps__media">
                 <OptimizedImage
@@ -400,4 +400,3 @@ const visibleItems = filterSelfLinkItems(
   }
 /* end decision-next-steps-theme-4.1.2 */
 </style>
-

@@ -239,13 +239,27 @@ const mergeDefinitions = (definitions: InternalLinkDefinition[]) => {
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id, "de"));
 };
 
+let cachedCollections: InternalLinkCollections | undefined;
+let cachedDefinitions: InternalLinkDefinition[] | undefined;
+
 export const getInternalLinkDefinitions = ({
   pages,
   products = [],
   comparisons = [],
   manufacturers = []
-}: InternalLinkCollections): InternalLinkDefinition[] =>
-  applyAnchorGovernance(
+}: InternalLinkCollections): InternalLinkDefinition[] => {
+  if (
+    import.meta.env.PROD &&
+    cachedDefinitions &&
+    cachedCollections?.pages === pages &&
+    cachedCollections.products === products &&
+    cachedCollections.comparisons === comparisons &&
+    cachedCollections.manufacturers === manufacturers
+  ) {
+    return cachedDefinitions;
+  }
+
+  const definitions = applyAnchorGovernance(
     mergeDefinitions([
       ...linkTaxonomy.map(taxonomyDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
       ...pages.map(pageDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
@@ -254,6 +268,14 @@ export const getInternalLinkDefinitions = ({
       ...products.map(productDefinition)
     ]).filter((definition) => (definition.anchorAliases?.length ?? 0) > 0)
   );
+
+  if (import.meta.env.PROD) {
+    cachedCollections = { pages, products, comparisons, manufacturers };
+    cachedDefinitions = definitions;
+  }
+
+  return definitions;
+};
 
 export const getPageInternalLinkDefinitions = (pages: PageEntry[]) =>
   getInternalLinkDefinitions({ pages });

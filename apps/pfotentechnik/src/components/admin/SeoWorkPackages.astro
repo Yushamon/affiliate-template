@@ -1,42 +1,12 @@
 ---
-import { loadSeoDashboard } from "../../lib/seo/loadDashboard";
-import { buildSeoAdvisor } from "../../lib/seo/advisor";
-import { loadAdvisorContent } from "../../lib/seo/advisor/loadContent";
-import { loadProductIntelligence } from "../../lib/seo/advisor/productIntelligence";
-import { buildSeoWorkPackages, tasksFromProductHealth } from "../../lib/seo/advisor/work-packages";
-import { mergeGeneratedPackagesIntoWorkspace } from "../../lib/seo-copilot/package-workflow.mjs";
-import { readCopilotWorkspace } from "../../lib/seo-copilot/store.mjs";
+import { loadSeoWorkPackageData } from "../../lib/seo/advisor/loadWorkPackages";
 
 interface Props {
   mode?: "advisor" | "prompts" | "tasks";
 }
 const { mode = "advisor" } = Astro.props;
-const payload = loadSeoDashboard();
-const [{ documents, graph }, productIntelligence] = await Promise.all([
-  loadAdvisorContent(),
-  loadProductIntelligence(),
-]);
-const workspace = readCopilotWorkspace();
-const productTaskIds = tasksFromProductHealth(productIntelligence.health).map((task) => task.id);
-const rangeEntries = Object.entries(payload.ranges).map(([key, range]) => {
-  const result = buildSeoAdvisor({ payload, range, documents, graph });
-  const packages = buildSeoWorkPackages({
-    opportunities: result.opportunities,
-    rangeKey: key,
-    productHealth: productIntelligence.health,
-    storedPackages: workspace.workPackages,
-  });
-  const suppressed = new Set(packages.filter((pkg) => ["sent-to-codex", "verification-pending", "waiting-window", "review-due", "snoozed", "verified", "needs-work"].includes(pkg.status)).flatMap((pkg) => pkg.taskIds));
-  return [key, {
-    label: range.label,
-    packages,
-    activeTaskIds: [...new Set([...result.opportunities.map((task) => task.id), ...productTaskIds])],
-    individualTasks: result.opportunities.filter((task) => !suppressed.has(task.id)),
-  }] as const;
-});
-const ranges = Object.fromEntries(rangeEntries);
-mergeGeneratedPackagesIntoWorkspace(rangeEntries.flatMap(([, value]) => value.packages));
-const clientData = JSON.stringify({ mode, defaultRange: payload.defaultRange, generatedAt: payload.generatedAt, ranges })
+const workPackageData = await loadSeoWorkPackageData();
+const clientData = JSON.stringify({ mode, ...workPackageData })
   .replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
 ---
 <section class="work-packages-shell" id={`seo-work-packages-${mode}`} data-work-package-mode={mode}>
