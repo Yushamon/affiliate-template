@@ -1,12 +1,12 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-29T08:47:23.199Z
+Erstellt: 2026-07-29T11:43:04.433Z
 
 ## Zusammenfassung
 
 - Routen: 206
 - Fehler: 0
-- Warnungen: 53
+- Warnungen: 50
 - Hinweise: 64
 
 ## Content-Bestand
@@ -68,9 +68,6 @@ Erstellt: 2026-07-29T08:47:23.199Z
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
-- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/gps-tracker-oder-bluetooth-tag.md`)
-- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/hund-frisst-zu-schnell.md`)
-- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/hund-trinkt-ploetzlich-viel.md`)
 - **INFO · css**: Selektor 4× definiert: html (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 4× definiert: body (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 7× definiert: .site-header-v2 (`src/styles/pfotentechnik-design-system.css`)

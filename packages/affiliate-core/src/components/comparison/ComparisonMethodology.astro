@@ -7,38 +7,28 @@ type Props = {
 const { productCount, criterionCount } = Astro.props as Props;
 ---
 
-<section
-  class="comparison-methodology"
-  aria-labelledby="comparison-methodology-title"
->
-  <div>
-    <span class="comparison-eyebrow">So vergleichen wir</span>
-    <h2 id="comparison-methodology-title">
-      Transparente Kriterien statt pauschaler Bestenliste
-    </h2>
-  </div>
+<details class="comparison-methodology comparison-methodology--compact" id="methodik">
+  <summary>
+    <span>
+      <span class="comparison-eyebrow">Transparenz</span>
+      <strong>So entsteht dieser Vergleich</strong>
+    </span>
+    <span aria-hidden="true">+</span>
+  </summary>
 
   <div class="comparison-methodology__content">
     <p>
-      Dieser Vergleich ordnet {productCount}{" "}Modelle anhand von{" "}
-      {criterionCount}{" "}nachvollziehbaren Merkmalen ein. Produktdaten,
-      redaktionelle Bewertung und bekannte Einschränkungen werden getrennt
-      betrachtet. Fehlende Herstellerangaben werden nicht als Vorteil gewertet.
+      Wir ordnen {productCount} Modelle anhand von {criterionCount}
+      nachvollziehbaren Merkmalen ein. Produktdaten, redaktionelle Bewertung
+      und bekannte Einschränkungen werden getrennt betrachtet.
     </p>
 
     <ul>
-      <li>
-        <strong>Eignung vor Funktionsmenge:</strong>{" "}
-        Ein Modell gewinnt nicht automatisch, weil es die längste Ausstattungsliste besitzt.
-      </li>
-      <li>
-        <strong>Nachteile bleiben sichtbar:</strong>{" "}
-        Einschränkungen und fehlende Angaben werden nicht hinter einem Gesamtscore versteckt.
-      </li>
-      <li>
-        <strong>Entscheidung bleibt nachvollziehbar:</strong>{" "}
-        Tabelle, Szenarien und Fazit zeigen, warum ein Produkt empfohlen wird.
-      </li>
+      <li><strong>Eignung vor Funktionsmenge:</strong> Mehr Funktionen bedeuten nicht automatisch eine bessere Empfehlung.</li>
+      <li><strong>Fehlende Angaben bleiben sichtbar:</strong> Nicht belegte Herstellerinformationen werden nicht positiv gewertet.</li>
+      <li><strong>Empfehlungen folgen dem Einsatzzweck:</strong> Gesamtsieger und Alternativen erfüllen unterschiedliche Bedürfnisse.</li>
     </ul>
+
+    <a href="/so-bewerten-wir/">Bewertungsmethodik vollständig ansehen</a>
   </div>
-</section>
+</details>

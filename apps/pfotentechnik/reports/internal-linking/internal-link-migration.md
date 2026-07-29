@@ -14,18 +14,18 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 
 ## Konfliktauflösungen
 
-- „automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
+- „automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).
+- „futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).
+- „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
+- „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
 
 ## Verbleibende manuelle Entscheidungen
 

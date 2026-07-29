@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-29T08:47:23.199Z",
+    "generatedAt": "2026-07-29T11:43:04.433Z",
     "countsByCollection": {
       "pages": 76,
       "products": 68,
@@ -31,7 +31,7 @@
     "routes": 206,
     "findings": {
       "error": 0,
-      "warning": 53,
+      "warning": 50,
       "info": 64
     }
   },
@@ -335,24 +335,6 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1198 Zeilen",
       "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
-    },
-    {
-      "severity": "warning",
-      "area": "structured-data",
-      "message": "Ratgeber ohne publishedAt",
-      "file": "src/content/pages/gps-tracker-oder-bluetooth-tag.md"
-    },
-    {
-      "severity": "warning",
-      "area": "structured-data",
-      "message": "Ratgeber ohne publishedAt",
-      "file": "src/content/pages/hund-frisst-zu-schnell.md"
-    },
-    {
-      "severity": "warning",
-      "area": "structured-data",
-      "message": "Ratgeber ohne publishedAt",
-      "file": "src/content/pages/hund-trinkt-ploetzlich-viel.md"
     },
     {
       "severity": "info",

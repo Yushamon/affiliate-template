@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-29T11:14:27.475Z",
+  "summary": {
+    "errors": 0,
+    "warnings": 6
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "trinkbrunnen für katzen",
+      "candidates": [
+        "/trinkbrunnen-fuer-katzen/",
+        "/vergleiche/beste-katzentrinkbrunnen/"
+      ],
+      "intent": "comparison",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    },
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "katzentrinkbrunnen",
+      "candidates": [
+        "/vergleiche/beste-katzentrinkbrunnen/",
+        "/katzentrinkbrunnen/"
+      ],
+      "intent": "comparison",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    },
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "katze trinkt zu wenig",
+      "candidates": [
+        "/katze-trinkt-zu-wenig/",
+        "/wissen/katze-trinkt-zu-wenig/"
+      ],
+      "intent": "medical-guide",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    },
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "gps-tracker für hunde",
+      "candidates": [
+        "/vergleiche/gps-tracker-fuer-hunde/",
+        "/gps-tracker-fuer-hunde/"
+      ],
+      "intent": "comparison",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    },
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "gps-tracker für katzen",
+      "candidates": [
+        "/vergleiche/gps-tracker-fuer-katzen/",
+        "/gps-tracker-fuer-katzen/"
+      ],
+      "intent": "comparison",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    },
+    {
+      "severity": "warning",
+      "code": "ANCHOR_TARGET_UNRESOLVED",
+      "anchor": "futterautomat für berufstätige",
+      "candidates": [
+        "/futterautomat-fuer-berufstaetige/",
+        "/wissen/futterautomat-fuer-berufstaetige/"
+      ],
+      "intent": "knowledge",
+      "reason": "Keine vorhandene Zielroute; Regel bleibt deaktiviert."
+    }
+  ]
+}

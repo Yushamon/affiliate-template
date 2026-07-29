@@ -1,17 +1,16 @@
 {
-  "generatedAt": "2026-07-29T10:57:48.176Z",
+  "generatedAt": "2026-07-29T11:28:21.210Z",
   "totals": {
-    "pages": 206,
+    "pages": 187,
     "types": {
       "Admin": 8,
-      "Ratgeber": 83,
+      "Ratgeber": 65,
       "Hersteller": 20,
-      "Startseite": 1,
       "Kaufberatung": 1,
       "Produkt": 68,
       "Vergleich": 25
     },
-    "warnings": 326,
+    "warnings": 307,
     "severe": 0
   },
   "pages": [
@@ -1311,29 +1310,34 @@
       ]
     },
     {
-      "route": "/",
-      "type": "Startseite",
+      "route": "/warum-katzen-fliessendes-wasser-trinken/",
+      "type": "Ratgeber",
       "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
+        "buttons": 0,
+        "primitiveButtons": 0,
         "chips": 0,
         "primitiveChips": 0,
-        "surfaces": 38,
-        "nestedSurfaceRisk": 14,
+        "surfaces": 0,
+        "nestedSurfaceRisk": 0,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 46,
-        "h1": 1,
-        "main": 1,
+        "largeImagesWithoutSizes": 0,
+        "headings": 0,
+        "h1": 0,
+        "main": 0,
         "darkMarkers": 0
       },
       "findings": [
         {
           "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 14
+          "code": "H1_COUNT",
+          "value": 0
+        },
+        {
+          "level": "warning",
+          "code": "MAIN_MISSING",
+          "value": 0
         },
         {
           "level": "warning",
@@ -2882,8 +2886,8 @@
       "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 17,
-        "primitiveButtons": 17,
+        "buttons": 18,
+        "primitiveButtons": 18,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 33,
@@ -2914,8 +2918,8 @@
       "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 30,
@@ -2946,8 +2950,8 @@
       "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 21,
-        "primitiveButtons": 21,
+        "buttons": 22,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 41,
@@ -2978,8 +2982,8 @@
       "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -3003,38 +3007,6 @@
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
           "value": 14
-        }
-      ]
-    },
-    {
-      "route": "/welcher-futterautomat-ist-der-richtige/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 21,
-        "nestedSurfaceRisk": 8,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 61,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 8
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
         }
       ]
     },
@@ -4991,8 +4963,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 28,
@@ -5018,8 +4990,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 33,
@@ -5045,8 +5017,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 25,
-        "primitiveButtons": 25,
+        "buttons": 26,
+        "primitiveButtons": 26,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 50,
@@ -5072,8 +5044,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5099,8 +5071,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5126,8 +5098,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 19,
-        "primitiveButtons": 19,
+        "buttons": 20,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 38,
@@ -5153,8 +5125,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 28,
@@ -5180,8 +5152,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 30,
@@ -5207,8 +5179,8 @@
       "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 17,
-        "primitiveButtons": 17,
+        "buttons": 18,
+        "primitiveButtons": 18,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 33,
@@ -5234,8 +5206,8 @@
       "route": "/vergleiche/beste-futterautomaten-mit-akku/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5261,8 +5233,8 @@
       "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 28,
@@ -5288,8 +5260,8 @@
       "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 30,
@@ -5315,8 +5287,8 @@
       "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 21,
-        "primitiveButtons": 21,
+        "buttons": 22,
+        "primitiveButtons": 22,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 44,
@@ -5342,8 +5314,8 @@
       "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 23,
-        "primitiveButtons": 23,
+        "buttons": 24,
+        "primitiveButtons": 24,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 46,
@@ -5369,8 +5341,8 @@
       "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5396,8 +5368,8 @@
       "route": "/vergleiche/futterautomat-gegen-schlingen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 13,
-        "primitiveButtons": 13,
+        "buttons": 14,
+        "primitiveButtons": 14,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5423,8 +5395,8 @@
       "route": "/vergleiche/futterautomat-mit-app/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 19,
-        "primitiveButtons": 19,
+        "buttons": 20,
+        "primitiveButtons": 20,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 38,
@@ -5450,8 +5422,8 @@
       "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 23,
-        "primitiveButtons": 23,
+        "buttons": 24,
+        "primitiveButtons": 24,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 46,
@@ -5477,8 +5449,8 @@
       "route": "/vergleiche/gps-tracker-ohne-abo/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 11,
-        "primitiveButtons": 11,
+        "buttons": 12,
+        "primitiveButtons": 12,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 25,
@@ -5504,8 +5476,8 @@
       "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
       "type": "Vergleich",
       "metrics": {
-        "buttons": 15,
-        "primitiveButtons": 15,
+        "buttons": 16,
+        "primitiveButtons": 16,
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 29,
@@ -5569,492 +5541,6 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 34,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/warum-katzen-fliessendes-wasser-trinken/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/warum-schlingt-mein-hund/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wasserstelle-katze-richtiger-standort/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 21,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/welche-portionsgroesse-ist-richtig/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 87,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/welpen-richtig-fuettern/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 46,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-funktionieren-gps-tracker/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 25,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-funktioniert-ein-futterautomat/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 28,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-genau-sind-gps-tracker/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 100,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-kann-technik-gegen-langeweile-helfen/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 8,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 22,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 100,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-laut-sind-automatische-futterautomaten/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 21,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-viel-wasser-braucht-ein-hund/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 23,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-viel-wasser-braucht-eine-katze/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 49,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-viele-mahlzeiten-hund/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 28,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-viele-mahlzeiten-katze/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 27,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/wie-viele-wasserstellen-katze/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 10,
-        "nestedSurfaceRisk": 2,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 49,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 3,
-        "primitiveButtons": 3,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 11,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 133,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0

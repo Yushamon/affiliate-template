@@ -3,9 +3,7 @@ import type { ComparisonViewModel } from "../../comparison/model";
 import ComparisonHero from "./ComparisonHero.astro";
 import ComparisonEditorialRecommendation from "./ComparisonEditorialRecommendation.astro";
 import RecommendationGrid from "./RecommendationGrid.astro";
-import ComparisonProsCons from "./ComparisonProsCons.astro";
 import ComparisonExplorer from "./ComparisonExplorer.astro";
-import ComparisonVerdict from "./ComparisonVerdict.astro";
 import ComparisonStickyBar from "./ComparisonStickyBar.astro";
 import ComparisonInsightSummary from "./ComparisonInsightSummary.astro";
 import ComparisonMethodology from "./ComparisonMethodology.astro";
@@ -57,21 +55,10 @@ const comparisonProducts = model.products.filter((product) => product.slug !== w
         <ComparisonInsightSummary products={model.products} rows={model.rows} />
       </section>
     )}
-
-    <ComparisonProsCons products={model.products} />
-
-    <section id="methodik" class="comparison-premium-section">
+<section id="methodik" class="comparison-premium-section">
       <ComparisonMethodology productCount={model.products.length} criterionCount={model.rows.length} />
     </section>
 
-    <div id="vergleich-fazit">
-      <ComparisonVerdict
-        title={model.verdict.title}
-        text={model.verdict.text}
-        winner={model.verdict.winner}
-        alternative={model.verdict.alternative}
-      />
-    </div>
   </div>
 </div>
 

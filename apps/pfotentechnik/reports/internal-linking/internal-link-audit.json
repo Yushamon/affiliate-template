@@ -1,14 +1,17 @@
 {
-  "version": "3.0.0",
-  "generatedAt": "2026-07-29T09:13:37.742Z",
-  "strict": false,
+  "version": "3.0.2",
+  "generatedAt": "2026-07-29T11:48:04.524Z",
+  "strict": true,
   "summary": {
     "documents": 187,
+    "contentRoutes": 187,
+    "buildRoutes": 206,
+    "validRoutes": 206,
     "definitions": 408,
     "renderedAutomaticLinks": 406,
-    "errors": 32,
+    "errors": 8,
     "warnings": 54,
-    "critical": 32
+    "critical": 8
   },
   "blockedAnchors": [
     "akku",
@@ -34,174 +37,6 @@
     "wasser"
   ],
   "findings": [
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.",
-      "sourceRoute": "/smarte-haustiertechnik/",
-      "targetRoute": "/hersteller/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/smarte-haustiertechnik/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.",
-      "sourceRoute": "/smarte-haustiertechnik/",
-      "targetRoute": "/wissen/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.",
-      "sourceRoute": "/so-bewerten-wir/",
-      "targetRoute": "/kontakt/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/welche-portionsgroesse-ist-richtig/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "LINK_TARGET_ROUTE_MISSING",
-      "message": "/wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
-      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
-      "targetRoute": "/vergleiche/"
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "automatischer futterspender",
-      "targets": [
-        "/smarte-futterautomaten/",
-        "/welcher-futterautomat-ist-der-richtige/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
-        "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "futterautomat fur grosse hunde",
-      "targets": [
-        "/wie-gross-sollte-ein-futterautomat-sein/",
-        "/vergleiche/futterautomat-fuer-grosse-hunde/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md",
-        "apps/pfotentechnik/src/content/comparisons/futterautomat-fuer-grosse-hunde.md"
-      ]
-    },
     {
       "severity": "error",
       "code": "UNRESOLVED_ANCHOR_CONFLICT",
@@ -270,34 +105,6 @@
       "files": [
         "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
         "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "trinkbrunnen fur hunde",
-      "targets": [
-        "/trinkbrunnen-hund/",
-        "/trinkbrunnen/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "trinkbrunnen fur katzen",
-      "targets": [
-        "/trinkbrunnen-fuer-katzen-sinnvoll/",
-        "/trinkbrunnen/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
       ]
     },
     {
@@ -677,6 +484,54 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/wie-kann-technik-gegen-langeweile-helfen/"
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).",
+      "anchor": "automatischer futterspender",
+      "owner": "/smarte-futterautomaten/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).",
+      "anchor": "futterautomat fur grosse hunde",
+      "owner": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "resolution": "exact-title-owner",
+      "targets": [
+        "/wie-gross-sollte-ein-futterautomat-sein/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).",
+      "anchor": "trinkbrunnen fur hunde",
+      "owner": "/trinkbrunnen-hund/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).",
+      "anchor": "trinkbrunnen fur katzen",
+      "owner": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/trinkbrunnen/"
+      ]
     }
   ],
   "renderedAnchors": [

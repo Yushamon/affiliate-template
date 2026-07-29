@@ -2,8 +2,8 @@
 
 ## Zusammenfassung
 
-- Seiten: **206**
-- Warnungen: **326**
+- Seiten: **187**
+- Warnungen: **307**
 - Schwere Risiken: **0**
 
 ## Seitentypen
@@ -12,8 +12,7 @@
 - Hersteller: **20**
 - Kaufberatung: **1**
 - Produkt: **68**
-- Ratgeber: **83**
-- Startseite: **1**
+- Ratgeber: **65**
 - Vergleich: **25**
 
 ## Priorisierte Prüfliste
@@ -53,7 +52,7 @@
 - `/produkt/weenect-xt/` — Produkt: Button-Primitives zu gering (1/2); Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/xiaomi-smart-pet-food-feeder-2/` — Produkt: Button-Primitives zu gering (1/2); Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/zeromouse-2-0/` — Produkt: Button-Primitives zu gering (1/2); Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
-- `/` — Startseite: Box-in-Box-Risiko (14); Dark-Mode-Marker nicht erkannt (0)
+- `/warum-katzen-fliessendes-wasser-trinken/` — Ratgeber: H1-Anzahl (0); Main-Landmark fehlt (0); Dark-Mode-Marker nicht erkannt (0)
 - `/futterautomat-bei-uebergewicht/` — Ratgeber: Box-in-Box-Risiko (12); Dark-Mode-Marker nicht erkannt (0)
 - `/futterautomat-berater/` — Ratgeber: Box-in-Box-Risiko (10); Dark-Mode-Marker nicht erkannt (0)
 - `/futterautomat-hund/` — Ratgeber: Box-in-Box-Risiko (6); Dark-Mode-Marker nicht erkannt (0)

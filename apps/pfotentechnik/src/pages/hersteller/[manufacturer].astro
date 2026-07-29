@@ -143,7 +143,7 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
 >
   <Breadcrumbs items={breadcrumbs} />
 
-  <main class="manufacturer-detail">
+  <div class="manufacturer-detail">
     <header class="manufacturer-hero">
       <div>
         <span>Unsere Einschätzung</span>
@@ -303,7 +303,7 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
     )}
 
     <FAQ items={manufacturer.faq} />
-  </main>
+  </div>
 <style is:global>
 /* PT manufacturer hero media 4.2.0 */
 :is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ display:grid!important; place-items:center!important; width:100%; min-width:0; min-height:0!important; aspect-ratio:16/9; padding:clamp(.75rem,2.5vw,1.25rem); overflow:hidden; border-radius:inherit; background:#f7f8fa; }

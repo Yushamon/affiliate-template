@@ -32,40 +32,55 @@ const {
   <div class="comparison-premium-section__heading">
     <div>
       <span class="comparison-eyebrow">Direktvergleich</span>
-      <h2>Finde das passende Modell</h2>
+      <h2>Alle Modelle direkt vergleichen</h2>
     </div>
     <p>
-      Filtere nach deinem Einsatzgebiet oder blende identische Eigenschaften aus.
+      Vergleiche Funktionen, Preise und wichtige Unterschiede. Identische Merkmale kannst du ausblenden.
     </p>
   </div>
 
-  <div class="comparison-view-tabs" role="tablist" aria-label="Darstellung wählen">
+  <div class="comparison-explorer__mobile-summary">
+      <p><strong data-comparison-result-count-mobile>{products.length}</strong><span> passende Modelle</span></p>
+      <span>Unsere Top-Empfehlung findest du weiter oben.</span>
+    </div>
+
+    <div class="comparison-explorer__mobile-controls">
+      <button
+        type="button"
+        class="pt-button comparison-filter-trigger comparison-filter-trigger--primary"
+        data-comparison-filter-trigger
+        aria-expanded="false"
+      >
+        Filter
+      </button>
+
+      <label class="comparison-toggle comparison-toggle--mobile">
+        <input type="checkbox" data-differences-only-mobile />
+        <span class="pt-control comparison-control-box" aria-hidden="true"></span>
+        <span>Nur Unterschiede</span>
+      </label>
+    </div>
+
+    <div class="comparison-view-tabs" role="tablist" aria-label="Darstellung wählen">
     <button
       type="button"
       class="comparison-view-tab is-active"
       role="tab"
       aria-selected="true"
-      data-comparison-view="table"
-    >
-      Tabelle
-    </button>
-    <button
-      type="button"
-      class="comparison-view-tab"
-      role="tab"
-      aria-selected="false"
       data-comparison-view="cards"
     >
       Karten
     </button>
     <button
       type="button"
-      class="comparison-filter-trigger"
-      data-comparison-filter-trigger
-      aria-expanded="false"
+      class="comparison-view-tab"
+      role="tab"
+      aria-selected="false"
+      data-comparison-view="table"
     >
-      Filter
+      Tabelle
     </button>
+    
   </div>
 
   <div class="comparison-explorer__layout">
@@ -153,6 +168,8 @@ const {
       );
 
       const differencesToggle = explorer.querySelector("[data-differences-only]");
+      const mobileDifferencesToggle = explorer.querySelector("[data-differences-only-mobile]");
+      const mobileCount = explorer.querySelector("[data-comparison-result-count-mobile]");
       const showAllButton = explorer.querySelector("[data-show-all-products]");
       const count = explorer.querySelector("[data-comparison-result-count]");
       const resetButton = explorer.querySelector("[data-comparison-filter-reset]");
@@ -276,6 +293,7 @@ const {
         });
 
         if (count) count.textContent = String(matchingSlugs.length);
+        if (mobileCount) mobileCount.textContent = String(matchingSlugs.length);
         if (heroCount) heroCount.textContent = String(matchingSlugs.length);
 
         if (emptyState instanceof HTMLElement) {
@@ -324,7 +342,25 @@ const {
         explorer.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
       });
 
-      differencesToggle?.addEventListener("change", applyState);
+      differencesToggle?.addEventListener("change", () => {
+        if (
+          differencesToggle instanceof HTMLInputElement &&
+          mobileDifferencesToggle instanceof HTMLInputElement
+        ) {
+          mobileDifferencesToggle.checked = differencesToggle.checked;
+        }
+        applyState();
+      });
+
+      mobileDifferencesToggle?.addEventListener("change", () => {
+        if (
+          differencesToggle instanceof HTMLInputElement &&
+          mobileDifferencesToggle instanceof HTMLInputElement
+        ) {
+          differencesToggle.checked = mobileDifferencesToggle.checked;
+        }
+        applyState();
+      });
 
       showAllButton?.addEventListener("click", () => {
         showAll = !showAll;

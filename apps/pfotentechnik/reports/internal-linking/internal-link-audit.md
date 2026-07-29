@@ -1,47 +1,23 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-29T09:13:37.742Z
+Erstellt: 2026-07-29T11:48:04.524Z
 
 ## Ergebnis
 
 - Dokumente: 187
 - Linkdefinitionen: 408
 - Simulierte automatische Links: 406
-- Fehler: 32
+- Fehler: 8
 - Warnungen: 54
-- Strict-kritisch: 32
+- Strict-kritisch: 8
 
 ## Befunde
 
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
@@ -99,6 +75,10 @@ Erstellt: 2026-07-29T09:13:37.742Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
 
 ## Tatsächlich simulierte Anchor-Texte
 

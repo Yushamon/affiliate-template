@@ -1,8 +1,5 @@
 ---
-import type {
-  ComparisonProduct,
-  ComparisonRow
-} from "../../comparison/model";
+import type { ComparisonProduct, ComparisonRow } from "../../comparison/model";
 
 type Props = {
   products: ComparisonProduct[];
@@ -17,145 +14,55 @@ const normalize = (value: string | undefined) =>
 const meaningfulRows = rows.filter((row) => {
   const values = row.cells
     .map((cell) => normalize(cell.value))
-    .filter(
-      (value) =>
-        value &&
-        value !== "–" &&
-        value !== "keine angabe"
-    );
+    .filter((value) => value && value !== "–" && value !== "keine angabe");
 
   return new Set(values).size > 1;
 });
 
-const completeRows = rows.filter((row) =>
-  row.cells.every((cell) => {
+const strongestDifferences = meaningfulRows.slice(0, 5);
+const documentedRows = rows.filter((row) =>
+  row.cells.some((cell) => {
     const value = normalize(cell.value);
-
-    return (
-      value &&
-      value !== "–" &&
-      value !== "keine angabe"
-    );
+    return value && value !== "–" && value !== "keine angabe";
   })
 );
 
-const strongestDifferences = meaningfulRows.slice(0, 4);
-const ratedProducts = products.filter(
-  (product) => typeof product.rating === "number"
-);
-const topRated = [...ratedProducts].sort(
-  (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
-)[0];
-
-const completeness = rows.length > 0
-  ? Math.round((completeRows.length / rows.length) * 100)
-  : 0;
-
-const hasCriteria = rows.length > 0;
+const decisionHint =
+  meaningfulRows.length > 0
+    ? `${meaningfulRows.length} Kriterien unterscheiden die Modelle tatsächlich. Konzentriere dich vor allem auf die Punkte unten.`
+    : "Die Modelle unterscheiden sich in den dokumentierten Kerndaten nur wenig. Entscheidend sind deshalb Alltagstauglichkeit, Größe und Bedienung.";
 ---
 
-{hasCriteria && (
-  <section
-    class="comparison-insight-summary"
-    aria-labelledby="comparison-insight-title"
-  >
-    <div class="comparison-insight-summary__intro">
-      <span class="comparison-eyebrow">
-        Redaktionelle Einordnung
-      </span>
+<section class="comparison-buying-guidance" aria-labelledby="comparison-buying-guidance-title">
+  <div class="comparison-buying-guidance__intro">
+    <span class="comparison-eyebrow">Kaufberatung</span>
+    <h2 id="comparison-buying-guidance-title">Darauf solltest du bei der Auswahl achten</h2>
+    <p>{decisionHint}</p>
+  </div>
 
-      <h2 id="comparison-insight-title">
-        Was die Modelle wirklich unterscheidet
-      </h2>
-
-      <p>
-        {meaningfulRows.length > 0
-          ? `Bei ${meaningfulRows.length} von ${rows.length} Vergleichskriterien gibt es erkennbare Unterschiede. Entscheidend sind daher nicht möglichst viele Funktionen, sondern die Merkmale, die zu deinem Haushalt und Alltag passen.`
-          : `Die erfassten Kriterien zeigen derzeit nur geringe Unterschiede. Nutze den Direktvergleich deshalb vor allem, um Passform, Bedienung und die konkreten Einsatzgrenzen der Modelle zu prüfen.`}
-      </p>
-    </div>
-
-    <div class="comparison-insight-summary__grid">
-      {meaningfulRows.length > 0 && (
+  {strongestDifferences.length > 0 && (
+    <div class="comparison-buying-guidance__criteria">
+      {strongestDifferences.map((row, index) => (
         <article>
-          <span
-            class="comparison-insight-summary__icon"
-            aria-hidden="true"
-          >
-            ≠
-          </span>
-          <strong>{meaningfulRows.length}</strong>
-          <span>entscheidungsrelevante Unterschiede</span>
-        </article>
-      )}
-
-      {completeRows.length > 0 && (
-        <article>
-          <span
-            class="comparison-insight-summary__icon"
-            aria-hidden="true"
-          >
-            ✓
-          </span>
-          <strong>{completeness}%</strong>
-          <span>vollständig belegte Kriterien</span>
-        </article>
-      )}
-
-      <article>
-        <span
-          class="comparison-insight-summary__icon"
-          aria-hidden="true"
-        >
-          #
-        </span>
-        <strong>{products.length}</strong>
-        <span>Modelle im Vergleich</span>
-      </article>
-    </div>
-
-    {(strongestDifferences.length > 0 || topRated) && (
-      <div class="comparison-insight-summary__details">
-        {strongestDifferences.length > 0 && (
+          <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
           <div>
-            <h3>Darauf kommt es besonders an</h3>
-
-            <ul>
-              {strongestDifferences.map((row) => (
-                <li>
-                  <a href="#direktvergleich">
-                    {row.criterion.label}
-                  </a>
-
-                  {row.criterion.description && (
-                    <span>
-                      {row.criterion.description}
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {topRated && (
-          <aside>
-            <span>Höchster redaktioneller Score</span>
-            <strong>{topRated.title}</strong>
-
+            <h3>{row.criterion.label}</h3>
             <p>
-              {Math.round(topRated.rating ?? 0)} von 100
-              Punkten. Der Score ist eine Orientierung und
-              ersetzt nicht die Prüfung, ob das Modell zu
-              deinem konkreten Einsatz passt.
+              {row.criterion.description ??
+                "Prüfe im Direktvergleich, welche Ausprägung zu deinem Alltag und deinen Anforderungen passt."}
             </p>
+          </div>
+          <a href="#direktvergleich">Vergleichen</a>
+        </article>
+      ))}
+    </div>
+  )}
 
-            <a href={topRated.href}>
-              Produktdetails ansehen
-            </a>
-          </aside>
-        )}
-      </div>
-    )}
-  </section>
-)}
+  <div class="comparison-buying-guidance__note">
+    <strong>{products.length} Modelle betrachtet</strong>
+    <span>
+      Für {documentedRows.length} von {rows.length} Kriterien liegen verwertbare Angaben vor.
+      Fehlende Angaben werden nicht als Vorteil gewertet.
+    </span>
+  </div>
+</section>

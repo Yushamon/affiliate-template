@@ -82,13 +82,55 @@ for (const source of sources) {
   }
 }
 
-const routeSet = new Set(docs.map((doc) => doc.route));
-const definitions = docs.flatMap((doc) => doc.aliases.map((anchor) => ({
-  id: `${doc.collection}:${doc.slug}`,
-  anchor, normalizedAnchor: normalizeTaxonomyTerm(anchor), href: doc.route,
-  group: doc.group, topics: doc.topics, exclusive: doc.exclusiveAnchors.some((item) => normalizeTaxonomyTerm(item) === normalizeTaxonomyTerm(anchor)),
-  filePath: doc.filePath
-})));
+const contentRouteSet = new Set(docs.map((doc) => doc.route));
+
+const routeForBuildFile = (file) => {
+  const relative = path.relative(path.join(appRoot, "dist"), file).replace(/\\/g, "/");
+  if (relative === "index.html") return "/";
+  if (relative.endsWith("/index.html")) {
+    return normalizeTaxonomyPath(`/${relative.slice(0, -11)}/`);
+  }
+  if (relative.endsWith(".html")) {
+    return normalizeTaxonomyPath(`/${relative.slice(0, -5)}/`);
+  }
+  return "";
+};
+
+const buildRouteSet = new Set(
+  walkFiles(path.join(appRoot, "dist"))
+    .filter((file) => file.endsWith(".html"))
+    .map(routeForBuildFile)
+    .filter(Boolean)
+);
+
+const routeSet = new Set([...contentRouteSet, ...buildRouteSet]);
+const definitions = docs.flatMap((doc) => {
+  const taxonomyAliasSet = new Set(
+    LINK_TAXONOMY
+      .filter((entry) => entry.href && normalizeTaxonomyPath(entry.href) === doc.route)
+      .flatMap((entry) => entry.anchorAliases ?? [])
+      .map(normalizeTaxonomyTerm)
+  );
+  const normalizedTitle = normalizeTaxonomyTerm(doc.title);
+
+  return doc.aliases.map((anchor) => {
+    const normalizedAnchor = normalizeTaxonomyTerm(anchor);
+    return {
+      id: `${doc.collection}:${doc.slug}`,
+      anchor,
+      normalizedAnchor,
+      href: doc.route,
+      group: doc.group,
+      topics: doc.topics,
+      exclusive: doc.exclusiveAnchors.some(
+        (item) => normalizeTaxonomyTerm(item) === normalizedAnchor
+      ),
+      taxonomyOwned: taxonomyAliasSet.has(normalizedAnchor),
+      exactTitle: normalizedTitle === normalizedAnchor,
+      filePath: doc.filePath
+    };
+  });
+});
 for (const entry of LINK_TAXONOMY.filter((item) => item.href)) {
   const href = normalizeTaxonomyPath(entry.href);
   if (!routeSet.has(href)) addFinding("error", "TARGET_ROUTE_MISSING", `Taxonomie-Ziel ${href} existiert nicht im Content-Bestand.`, { targetRoute: href, taxonomyId: entry.id });
@@ -104,10 +146,52 @@ for (const [anchor, owners] of ownersByAnchor) {
   const distinctTargets = [...new Set(owners.map((owner) => owner.href))];
   if (distinctTargets.length <= 1) continue;
   const exclusiveOwners = owners.filter((owner) => owner.exclusive);
-  if (exclusiveOwners.length === 1) {
-    addFinding("info", "ANCHOR_CONFLICT_RESOLVED_BY_OWNER", `„${anchor}“ besitzt den eindeutigen Eigentümer ${exclusiveOwners[0].href}.`, { anchor, targets: distinctTargets });
+  const taxonomyOwners = owners.filter((owner) => owner.taxonomyOwned);
+  const exactTitleOwners = owners.filter((owner) => owner.exactTitle);
+
+  const uniqueOwnerTarget = (candidates) => {
+    const targets = [...new Set(candidates.map((item) => item.href))];
+    return targets.length === 1 ? targets[0] : "";
+  };
+
+  const resolvedByExclusive = uniqueOwnerTarget(exclusiveOwners);
+  const resolvedByTaxonomy = uniqueOwnerTarget(taxonomyOwners);
+  const resolvedByExactTitle = uniqueOwnerTarget(exactTitleOwners);
+  const resolvedTarget =
+    resolvedByExclusive ||
+    resolvedByTaxonomy ||
+    resolvedByExactTitle;
+
+  if (resolvedTarget) {
+    const resolution =
+      resolvedByExclusive
+        ? "exclusive-anchor"
+        : resolvedByTaxonomy
+          ? "taxonomy-owner"
+          : "exact-title-owner";
+
+    addFinding(
+      "info",
+      "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      `„${anchor}“ besitzt den eindeutigen Eigentümer ${resolvedTarget} (${resolution}).`,
+      {
+        anchor,
+        owner: resolvedTarget,
+        resolution,
+        targets: distinctTargets
+      }
+    );
   } else {
-    addFinding("error", "UNRESOLVED_ANCHOR_CONFLICT", `„${anchor}“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.`, { anchor, targets: distinctTargets, files: owners.map((owner) => owner.filePath) });
+    addFinding(
+      "error",
+      "UNRESOLVED_ANCHOR_CONFLICT",
+      `„${anchor}“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.`,
+      {
+        anchor,
+        targets: distinctTargets,
+        files: owners.map((owner) => owner.filePath)
+      }
+    );
   }
 }
 
@@ -190,11 +274,14 @@ const warnings = findings.filter((item) => item.severity === "warning");
 const criticalCodes = new Set(["TARGET_ROUTE_MISSING", "LINK_TARGET_ROUTE_MISSING", "UNRESOLVED_ANCHOR_CONFLICT", "BLOCKED_GENERIC_ANCHOR", "BLOCKED_ANCHOR_EFFECTIVE", "SELF_LINK", "WRONG_CLUSTER_TARGET_HIGH_CONFIDENCE", "SEMANTIC_ANCHOR_EXPANSION_PRESENT"]);
 const critical = errors.filter((item) => criticalCodes.has(item.code));
 const report = {
-  version: "3.0.0",
+  version: "3.0.2",
   generatedAt: new Date().toISOString(),
   strict,
   summary: {
     documents: docs.length,
+    contentRoutes: contentRouteSet.size,
+    buildRoutes: buildRouteSet.size,
+    validRoutes: routeSet.size,
     definitions: definitions.length,
     renderedAutomaticLinks: renderedAnchors.length,
     errors: errors.length,

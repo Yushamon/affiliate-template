@@ -115,7 +115,12 @@
     "audit:internal-link-targets": "node scripts/audit-internal-link-targets.mjs",
     "audit:internal-link-targets:strict": "node scripts/audit-internal-link-targets.mjs --strict",
     "audit:internal-link-health": "node scripts/audit-internal-link-health.mjs",
-    "audit:internal-link-health:strict": "node scripts/audit-internal-link-health.mjs --strict"
+    "audit:internal-link-health:strict": "node scripts/audit-internal-link-health.mjs --strict",
+    "audit:anchor-governance": "node scripts/audit-anchor-governance.mjs",
+    "audit:anchor-governance:strict": "node scripts/audit-anchor-governance.mjs --strict",
+    "audit:release-build-output": "node scripts/seo/audit-release-build-output.mjs",
+    "audit:release-build-output:strict": "node scripts/seo/audit-release-build-output.mjs --strict",
+    "test:anchor-release-gate": "node --test test/anchor-release-gate.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

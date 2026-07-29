@@ -4,6 +4,7 @@ import type {
   InternalLinkGroup,
   LinkPriority
 } from "@affiliate-core/linking/types";
+import { applyAnchorGovernance } from "./anchorGovernance";
 import {
   blockedAnchors,
   detectLinkIntents,
@@ -244,13 +245,15 @@ export const getInternalLinkDefinitions = ({
   comparisons = [],
   manufacturers = []
 }: InternalLinkCollections): InternalLinkDefinition[] =>
-  mergeDefinitions([
-    ...linkTaxonomy.map(taxonomyDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
-    ...pages.map(pageDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
-    ...comparisons.map(comparisonDefinition),
-    ...manufacturers.map(manufacturerDefinition),
-    ...products.map(productDefinition)
-  ]).filter((definition) => (definition.anchorAliases?.length ?? 0) > 0);
+  applyAnchorGovernance(
+    mergeDefinitions([
+      ...linkTaxonomy.map(taxonomyDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
+      ...pages.map(pageDefinition).filter((value): value is InternalLinkDefinition => Boolean(value)),
+      ...comparisons.map(comparisonDefinition),
+      ...manufacturers.map(manufacturerDefinition),
+      ...products.map(productDefinition)
+    ]).filter((definition) => (definition.anchorAliases?.length ?? 0) > 0)
+  );
 
 export const getPageInternalLinkDefinitions = (pages: PageEntry[]) =>
   getInternalLinkDefinitions({ pages });
