@@ -28,7 +28,6 @@ import {
   validateStoredCandidate,
 } from "../seo-copilot/workflow.mjs";
 const packageWorkflow = () => import("../seo-copilot/package-workflow.mjs");
-const qualityActions = () => import("../seo-copilot/quality-actions.mjs");
 
 const MAX_OUTPUT = 80_000;
 const ACTION_TIMEOUT = 12 * 60_000;
@@ -94,21 +93,6 @@ async function verifySeoPackage(payload, progress) {
   return setSeoPackageVerificationPending(payload, checks);
 }
 
-async function runSafeQualityAutoFix(payload, progress) {
-  const { resolveQualityFindingForAutoFix, markQualityFindingAutoFixed } = await qualityActions();
-  const finding = resolveQualityFindingForAutoFix(payload);
-  progress({ step: "preflight", message: "Freigegebener Auto-Fix wird zunächst ohne Schreibzugriff geprüft.", percent: 10 });
-  await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix:check"], REPO_ROOT);
-  progress({ step: "auto-fix", message: "Der eng begrenzte Comparison-Auto-Fix wird ausgeführt.", percent: 35 });
-  const fixed = await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix"], REPO_ROOT);
-  progress({ step: "verification", message: "Comparison-Audit und Quality Operations prüfen das Ergebnis.", percent: 65 });
-  await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:audit:strict"], REPO_ROOT);
-  await runFixedScript(path.join(APP_ROOT, "scripts", "quality-ops", "sync.mjs"), APP_ROOT);
-  const updated = markQualityFindingAutoFixed(finding.id, { note: "Comparison-Auto-Fix, Strict-Audit und zentraler Abgleich erfolgreich." });
-  progress({ step: "completed", message: "Auto-Fix wurde geprüft und protokolliert.", percent: 100 });
-  return { ok: true, finding: updated, output: fixed.output, reloadRequired: true };
-}
-
 const DEFAULT_HANDLERS = {
   "google.test": ({ progress }) => { progress({ step: "connection", message: "OAuth, Token, API und Property werden geprüft." }); return getSearchProvider("google").test(); },
   "google.sync": ({ progress }) => getSearchProvider("google").sync({ onProgress: progress }),
@@ -129,8 +113,6 @@ const DEFAULT_HANDLERS = {
   "copilot.package.verify": ({ payload, progress }) => verifySeoPackage(payload, progress),
   "copilot.package.reconcile": async ({ payload, progress }) => { progress({ step: "package", message: "Aktuelle Advisor-Befunde werden serverseitig abgeglichen." }); const { reconcileSeoPackage } = await packageWorkflow(); return reconcileSeoPackage(payload); },
   "copilot.package.reopen": async ({ payload, progress }) => { progress({ step: "package", message: "Paket wird wieder geöffnet." }); const { reopenSeoPackage } = await packageWorkflow(); return reopenSeoPackage(payload); },
-  "quality.finding.status": async ({ payload, progress }) => { progress({ step: "quality-status", message: "Finding-Status wird im zentralen Workspace protokolliert." }); const { updateQualityFindingStatus } = await qualityActions(); return updateQualityFindingStatus(payload); },
-  "quality.finding.auto-fix": ({ payload, progress }) => runSafeQualityAutoFix(payload, progress),
   "product.draft.create": ({ payload, progress }) => { progress({ step: "product-draft", message: "Sicherer Produktentwurf wird außerhalb der Content-Collection angelegt." }); return createProductDraft(payload); },
   "product.images.prompts": ({ payload, progress }) => { progress({ step: "image-prompts", message: "Sechs Bildprompts werden erzeugt." }); return createImagePromptPack(payload); },
   "product.images.pack": ({ payload, progress }) => { progress({ step: "image-pack", message: "Importbilder werden validiert, zugeschnitten und als WebP/ZIP paketiert." }); return buildImagePack(payload); },

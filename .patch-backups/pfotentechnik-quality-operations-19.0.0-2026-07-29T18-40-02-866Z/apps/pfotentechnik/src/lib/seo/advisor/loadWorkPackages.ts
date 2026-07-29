@@ -176,61 +176,6 @@ const opportunityFromDiagnostic = (
   codexPrompt: "",
 });
 
-const opportunityFromQualityFinding = (
-  item: any,
-  range: SeoRange,
-): AdvisorOpportunity => {
-  const area = String(item.area || "");
-  const category: AdvisorCategory = /cannibal/.test(area)
-    ? "cannibalization"
-    : /link|anchor/.test(area)
-      ? "internal-link"
-      : /eeat|trust|author/.test(area)
-        ? "eeat"
-        : /content|coverage|recommendation/.test(area)
-          ? "content-gap"
-          : "technical";
-  return {
-    id: item.id,
-    title: item.description,
-    description: item.description,
-    category,
-    priority: item.priority?.level ?? "medium",
-    impact: Math.max(1, Math.min(5, (item.priority?.score ?? 50) / 20)),
-    effortValue: Math.max(1, Math.min(5, (item.priority?.factors?.effort ?? 50) / 20)),
-    effort: (item.priority?.factors?.effort ?? 50) >= 70 ? "hoch" : (item.priority?.factors?.effort ?? 50) >= 40 ? "mittel" : "niedrig",
-    confidence: Math.max(0, Math.min(1, (item.confidence ?? 70) / 100)),
-    score: item.priority?.score ?? 50,
-    estimatedMinutes: Math.round(15 + (item.priority?.factors?.effort ?? 50) * 0.9),
-    forecast: {
-      ctrPotential: 0,
-      positionPotential: 0,
-      clickPotential: 0,
-      trafficPotential: 0,
-      confidence: 0,
-      assumptions: [],
-      dataBasis: "Zentral normalisierter Audit-Befund; keine erfundene Search-Prognose.",
-    },
-    url: item.urls?.[0],
-    rationale: item.impact,
-    nextAction: item.recommendedAction,
-    source: item.source,
-    rangeKey: range.key,
-    lowData: item.confidence < 60,
-    expectedBenefit: item.priority?.level === "high" ? "hoch" : item.priority?.level === "medium" ? "mittel" : "niedrig",
-    steps: [
-      "Den normalisierten Befund im angegebenen Audit-Report gegenprüfen.",
-      "Nur den konkreten Scope ändern; bestehende URLs und belegte Inhalte erhalten.",
-      "Quell-Audit und zentrales Release-Gate erneut ausführen.",
-    ],
-    pageType: /product|produkt/.test(area) ? "Produkt" : /comparison|vergleich/.test(area) ? "Vergleich" : "Quality Operations",
-    affectedFile: item.files?.[0],
-    dataBasis: { note: `${item.source}; ${item.type}; Status ${item.status}.` },
-    prompt: "",
-    codexPrompt: "",
-  };
-};
-
 const selectEssentialPackages = (packages: SeoWorkPackage[]): SeoWorkPackage[] =>
   [...packages]
     .filter((pkg) =>
@@ -258,22 +203,16 @@ const loadSeoWorkPackageDataUncached = async () => {
   }
 
   const workspace = readCopilotWorkspace();
-  const activeQualityFindings = workspace.qualityFindings
-    .filter((item: any) => ["open", "in-progress", "waiting", "manual-review", "regression"].includes(item.status))
-    .filter((item: any) => item.priority?.level === "high" || item.priority?.level === "medium")
-    .sort((left: any, right: any) => (right.priority?.score ?? 0) - (left.priority?.score ?? 0))
-    .slice(0, 24);
-  const searchRecommendations = (activeQualityFindings.length ? [] : range.recommendations)
+  const searchRecommendations = range.recommendations
     .filter((item) => item.priority === "high" || item.priority === "medium")
     .sort((left, right) => priorityWeight[right.priority] - priorityWeight[left.priority])
     .slice(0, MAX_SEARCH_RECOMMENDATIONS);
-  const contentQualityItems = activeQualityFindings.length ? [] : readContentQualityItems();
+  const contentQualityItems = readContentQualityItems();
   const opportunities = [
     ...payload.diagnostics
       .filter((item) => item.level === "error")
       .slice(0, 2)
       .map((item) => opportunityFromDiagnostic(item, range)),
-    ...activeQualityFindings.map((item: any) => opportunityFromQualityFinding(item, range)),
     ...searchRecommendations.map((item) => opportunityFromRecommendation(item, range)),
   ];
   const allPackages = buildSeoWorkPackages({
@@ -306,7 +245,6 @@ const loadSeoWorkPackageDataUncached = async () => {
       hidden: Math.max(0, allPackages.length - packages.length),
       searchRecommendations: searchRecommendations.length,
       contentFindings: contentQualityItems.length,
-      qualityFindings: activeQualityFindings.length,
     },
   };
 };

@@ -1,7 +1,6 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import SeoWorkPackages from "../../../components/admin/SeoWorkPackages.astro";
-import QualityOperations from "../../../components/admin/QualityOperations.astro";
 ---
 <SeoAdminLayout
   title="SEO Co-Pilot"
@@ -12,11 +11,11 @@ import QualityOperations from "../../../components/admin/QualityOperations.astro
     <span class="seo-eyebrow">Entscheidungsmodus</span>
     <h2 id="copilot-focus-title">Nur das, was jetzt bearbeitet werden sollte</h2>
     <p>
-      Der Co-Pilot zeigt höchstens zwölf priorisierte Pakete aus dem zentralen Quality-Operations-Snapshot.
-      Vollständige Rohberichte werden außerhalb des Seiten-Builds eingesammelt und hier nur verdichtet gelesen.
+      Der Co-Pilot zeigt höchstens zwölf priorisierte Pakete aus aktuellen Search-Empfehlungen,
+      harten Content-Quality-Befunden und laufenden Prüfungen. Rohdaten, Forecasts,
+      vollständige Product-Health-Listen und abgeschlossene Meldungen werden hier nicht mehr aufgebaut.
     </p>
   </section>
-  <QualityOperations />
   <SeoWorkPackages mode="advisor" />
 </SeoAdminLayout>
 

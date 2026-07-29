@@ -1,15 +1,43 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
-import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
-const payload = loadSeoDashboard();
+import { readCopilotWorkspace } from "../../../lib/seo-copilot/store.mjs";
+const workspace = readCopilotWorkspace();
+const snapshots = [...workspace.qualitySnapshots].reverse().slice(0, 30);
+const events = [...workspace.qualityHistory].reverse().slice(0, 100);
 ---
-<SeoAdminLayout title="SEO-Historie" description="Nachvollziehbare Snapshot-Basis ohne erfundene Entwicklungen. Mehrere Zeitfenster desselben Exports werden nicht als zeitliche Historie ausgegeben." active="history">
-  <section class="pt-surface seo-card history-notice"><span class="seo-badge" data-level="medium">Noch keine historische Vergleichsbasis</span><h2>Ein Snapshot, mehrere Zeitfenster</h2><p>Die vorhandenen 7d-, 28d-, 3m-, 6m- und 12m-Daten wurden gemeinsam am selben Zeitpunkt erzeugt. Daraus lassen sich Zeiträume vergleichen, aber keine neuen, verschwundenen oder im Score veränderten Advisor-Chancen zwischen zwei Snapshots belegen.</p></section>
-  <section class="history-grid">{Object.values(payload.ranges).map((range)=><article class="pt-surface seo-card snapshot"><span class="seo-badge">{range.label}</span><h2>{range.startDate} bis {range.endDate}</h2><dl><div><dt>Klicks</dt><dd>{range.metrics.current.clicks}</dd></div><div><dt>Impressionen</dt><dd>{range.metrics.current.impressions}</dd></div><div><dt>CTR</dt><dd>{range.metrics.current.ctr.toFixed(2)} %</dd></div><div><dt>Position</dt><dd>{range.metrics.current.position.toFixed(1)}</dd></div></dl></article>)}</section>
-  <section class="pt-surface seo-card task-history"><h2>Lokale Statusänderungen</h2><p>Diese Historie stammt ausschließlich aus den in diesem Browser gespeicherten Aufgaben.</p><div id="task-history-list"></div></section>
+<SeoAdminLayout title="Quality-Operations-Historie" description="Persistente Snapshots, Statusänderungen, behobene Findings und Regressionen aus dem zentralen Copilot-Workspace." active="history">
+  <section class="pt-surface seo-card history-notice">
+    <span class="seo-badge">Auditierbare Entwicklung</span>
+    <h2>Quality-Verlauf statt Browser-Zustand</h2>
+    <p>Jeder zentrale Sync erzeugt einen Snapshot. Neue, behobene und wiederkehrende Findings werden anhand stabiler IDs protokolliert; manuelle Statusänderungen und sichere Auto-Fixes landen in derselben Historie.</p>
+  </section>
+  <section class="snapshot-grid">
+    {snapshots.map((snapshot) => (
+      <article class="pt-surface seo-card snapshot">
+        <span class="seo-badge">{new Date(snapshot.generatedAt).toLocaleString("de-DE")}</span>
+        <dl>
+          <div><dt>Aktiv</dt><dd>{snapshot.summary?.active ?? 0}</dd></div>
+          <div><dt>Blocker</dt><dd>{snapshot.summary?.releaseBlockers ?? 0}</dd></div>
+          <div><dt>Regressionen</dt><dd>{snapshot.summary?.regressions ?? 0}</dd></div>
+          <div><dt>Quellen</dt><dd>{snapshot.summary?.sourcesAvailable ?? 0}</dd></div>
+        </dl>
+      </article>
+    ))}
+    {!snapshots.length && <div class="pt-surface seo-card empty">Noch kein Snapshot. <code>quality-ops:sync</code> erzeugt die erste Vergleichsbasis.</div>}
+  </section>
+  <section class="pt-surface seo-card event-history">
+    <h2>Letzte Änderungen</h2>
+    {events.map((event) => (
+      <article class="history-event">
+        <h3>{event.description}</h3>
+        <p>{new Date(event.occurredAt).toLocaleString("de-DE")} · {event.from || "Neu"} → {event.to} · {event.source}</p>
+        {event.note && <p>{event.note}</p>}
+        <code>{event.findingId}</code>
+      </article>
+    ))}
+    {!events.length && <div class="empty">Noch keine Finding-Änderungen protokolliert.</div>}
+  </section>
 </SeoAdminLayout>
-<style>.history-notice{padding:24px}.history-notice h2{margin:12px 0 8px}.history-notice p{max-width:900px;color:var(--seo-muted);line-height:1.6}.history-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.snapshot{padding:20px}.snapshot h2{font-size:1.05rem}.snapshot dl{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0 0}.snapshot dl div{padding:10px;border-radius:10px;background:var(--seo-surface-soft)}.snapshot dt{color:var(--seo-muted);font-size:.72rem}.snapshot dd{margin:4px 0 0;font-weight:850}.task-history{margin-top:16px;padding:20px}.task-history>p,.history-event p{color:var(--seo-muted)}.history-event{padding:12px 0;border-top:1px solid var(--seo-border)}.history-event h3{margin:0;font-size:1rem}.history-event p{margin:5px 0}@media(max-width:750px){.history-grid{grid-template-columns:1fr}}@media(max-width:450px){.snapshot dl{grid-template-columns:1fr 1fr}}</style>
-<script>
-  const storeKey="pfotentechnik-seo-advisor-tasks-v1";const labels={offen:"Offen",geplant:"Geplant","in-arbeit":"In Arbeit",erledigt:"Erledigt",verworfen:"Verworfen"};const container=document.getElementById("task-history-list");
-  try{const tasks=Object.values(JSON.parse(localStorage.getItem(storeKey)||"{}"));const events=tasks.flatMap(task=>(Array.isArray(task.history)?task.history:[]).map(event=>({...event,title:task.title,url:task.url||task.query||""}))).sort((a,b)=>String(b.at).localeCompare(String(a.at)));events.forEach(event=>{const item=document.createElement("div");item.className="history-event";const title=document.createElement("h3");title.textContent=event.title;const meta=document.createElement("p");meta.textContent=`${new Date(event.at).toLocaleString("de-DE")} · ${event.from?labels[event.from]||event.from:"Neu"} → ${labels[event.to]||event.to}`;const route=document.createElement("p");route.textContent=event.url;item.append(title,meta,route);container?.append(item)});if(!events.length){const empty=document.createElement("div");empty.className="seo-empty";empty.textContent="Noch keine lokalen Statusänderungen gespeichert.";container?.append(empty)}}catch{const error=document.createElement("div");error.className="seo-empty";error.textContent="Lokale Aufgabenhistorie konnte nicht gelesen werden.";container?.append(error)}
-</script>
+<style>
+  .history-notice,.event-history{padding:24px}.history-notice h2{margin:12px 0 8px}.history-notice p,.history-event p{max-width:900px;color:var(--seo-muted);line-height:1.6}.snapshot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.snapshot{padding:20px}.snapshot dl{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 0}.snapshot dl div{padding:10px;border-radius:10px;background:var(--seo-surface-soft)}.snapshot dt{color:var(--seo-muted);font-size:.72rem}.snapshot dd{margin:4px 0 0;font-weight:850}.event-history{margin-top:16px}.history-event{padding:14px 0;border-top:1px solid var(--seo-border)}.history-event h3{margin:0;font-size:1rem}.history-event code{color:var(--seo-muted);font-size:.72rem}.empty{padding:18px;color:var(--seo-muted)}@media(max-width:750px){.snapshot-grid{grid-template-columns:1fr}}@media(max-width:450px){.snapshot dl{grid-template-columns:1fr 1fr}}
+</style>

@@ -102,7 +102,6 @@ try {
     summary: contentQuality.summary ?? {}
   };
   npmScript("Performance-Budget", "audit:performance:strict");
-  npmScript("Zentrale Quality Operations", "quality-ops:check");
 
   console.log("\n[" + (phases.length + 1) + "] Release-Manifest");
   const manifest = collectReleaseManifest({ baseRef: "", headRef: "HEAD" });

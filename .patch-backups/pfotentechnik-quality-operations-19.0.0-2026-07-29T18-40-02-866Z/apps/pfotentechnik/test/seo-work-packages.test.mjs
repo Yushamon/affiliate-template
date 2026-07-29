@@ -104,7 +104,7 @@ test("Secret-Redaktion bleibt im Paket-Prompt aktiv", () => {
 
 test("Workspace-Migration verliert keine bestehenden Daten", () => {
   const migrated = migrateCopilotWorkspace({ schemaVersion: 1, productCandidates: [{ id: "candidate" }], productDrafts: [{ id: "draft" }], jobs: [{ id: "job" }] });
-  assert.equal(migrated.schemaVersion, 3);
+  assert.equal(migrated.schemaVersion, 2);
   assert.equal(migrated.productCandidates[0].id, "candidate");
   assert.equal(migrated.productDrafts[0].id, "draft");
   assert.equal(migrated.jobs[0].id, "job");

@@ -9,7 +9,7 @@ export const COPILOT_DIR = path.join(SEARCH_DIR, "seo-copilot");
 export const WORKSPACE_FILE = path.join(COPILOT_DIR, "workspace.json");
 export const AUDIT_FILE = path.join(COPILOT_DIR, "audit-log.jsonl");
 export const DRAFT_DIR = path.join(COPILOT_DIR, "product-drafts");
-export const COPILOT_WORKSPACE_SCHEMA_VERSION = 3;
+export const COPILOT_WORKSPACE_SCHEMA_VERSION = 2;
 
 const emptyWorkspace = () => ({
   schemaVersion: COPILOT_WORKSPACE_SCHEMA_VERSION,
@@ -21,11 +21,6 @@ const emptyWorkspace = () => ({
   jobs: [],
   ignoredCandidateIds: [],
   workPackages: [],
-  qualityFindings: [],
-  qualityGroups: [],
-  qualitySources: [],
-  qualityHistory: [],
-  qualitySnapshots: [],
 });
 
 const array = (value) => Array.isArray(value) ? value : [];
@@ -43,11 +38,6 @@ export function migrateCopilotWorkspace(stored) {
     productDrafts: array(stored.productDrafts),
     jobs: array(stored.jobs),
     ignoredCandidateIds: array(stored.ignoredCandidateIds),
-    qualityFindings: array(stored.qualityFindings),
-    qualityGroups: array(stored.qualityGroups),
-    qualitySources: array(stored.qualitySources),
-    qualityHistory: array(stored.qualityHistory).slice(-5000),
-    qualitySnapshots: array(stored.qualitySnapshots).slice(-90),
     workPackages: array(stored.workPackages).map((pkg) => ({
       id: String(pkg?.id || ""),
       status: pkg?.status || "open",
@@ -90,7 +80,7 @@ export function updateCopilotWorkspace(mutator) {
 
 export function appendCopilotAudit(entry) {
   fs.mkdirSync(COPILOT_DIR, { recursive: true });
-  const safe = JSON.parse(JSON.stringify({
+  const safe = JSON.parse(redactSecrets(JSON.stringify({
     id: entry.id || randomUUID(),
     occurredAt: entry.occurredAt || new Date().toISOString(),
     buildResult: "not-run",
@@ -100,7 +90,7 @@ export function appendCopilotAudit(entry) {
     sources: [],
     userApproval: false,
     ...entry,
-  }, (_key, value) => typeof value === "string" ? redactSecrets(value) : value));
+  })));
   fs.appendFileSync(AUDIT_FILE, `${JSON.stringify(safe)}\n`, { encoding: "utf8", mode: 0o600 });
   return safe;
 }
