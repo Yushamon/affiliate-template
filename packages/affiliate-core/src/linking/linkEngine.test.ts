@@ -123,7 +123,7 @@ test("Vergleichsintent bevorzugt die vollständige Vergleichsphrase", () => {
     definitions,
     options
   );
-  assert.match(html, /href="\/vergleiche\/beste-futterautomaten-fuer-hunde\/">beste Futterautomaten für Hunde<\/a>/);
+  assert.match(html, /href="\/vergleiche\/vergleiche/beste-futterautomaten-fuer-hunde/\/">beste Futterautomaten für Hunde<\/a>/);
 });
 
 test("exakter Produktname führt zur Produktseite", () => {

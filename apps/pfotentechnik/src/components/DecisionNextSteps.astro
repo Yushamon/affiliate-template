@@ -1,5 +1,6 @@
 ---
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import { filterSelfLinkItems } from "../domain/content/internalUrlPolicy";
 
 type Item = {
   kind?: "product" | "comparison" | "guide" | "manufacturer";
@@ -26,9 +27,10 @@ const {
   items
 } = Astro.props;
 
-const visibleItems = items
-  .filter((item) => item?.href && item?.title && item?.label)
-  .slice(0, 2);
+const visibleItems = filterSelfLinkItems(
+  items.filter((item) => item?.href && item?.title && item?.label),
+  Astro.url.href
+).slice(0, 2);
 ---
 
 {visibleItems.length > 0 && (

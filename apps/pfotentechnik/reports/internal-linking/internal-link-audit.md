@@ -1,26 +1,22 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-28T11:05:38.323Z
+Erstellt: 2026-07-29T08:47:22.789Z
 
 ## Ergebnis
 
-- Dokumente: 184
+- Dokumente: 187
 - Linkdefinitionen: 408
-- Simulierte automatische Links: 402
-- Fehler: 43
-- Warnungen: 51
-- Strict-kritisch: 43
+- Simulierte automatische Links: 406
+- Fehler: 32
+- Warnungen: 54
+- Strict-kritisch: 32
 
 ## Befunde
 
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /futterautomat-hund/ verlinkt auf die nicht vorhandene Route /futterautomat-fuer-berufstaetige/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /futterautomat-hund/ verlinkt auf die nicht vorhandene Route /hund-frisst-zu-schnell/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /produkt/weenect-xs/ verlinkt auf die nicht vorhandene Route /gps-tracker-oder-bluetooth-tag/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /trinkbrunnen/ verlinkt auf die nicht vorhandene Route /hund-trinkt-ploetzlich-viel/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.
@@ -37,13 +33,6 @@ Erstellt: 2026-07-28T11:05:38.323Z
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **ERROR LINK_TARGET_ROUTE_MISSING:** /wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ enthält einen Selbstlink.
-- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ enthält einen Selbstlink.
-- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-mit-kamera/ enthält einen Selbstlink.
-- **ERROR SELF_LINK:** /vergleiche/beste-futterautomaten-ohne-wlan/ enthält einen Selbstlink.
-- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /futterautomat-mit-kamera/ existiert nicht im Content-Bestand.
-- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /futterautomat-nassfutter/ existiert nicht im Content-Bestand.
-- **ERROR TARGET_ROUTE_MISSING:** Taxonomie-Ziel /gps-tracker-ohne-abo/ existiert nicht im Content-Bestand.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
@@ -57,6 +46,9 @@ Erstellt: 2026-07-28T11:05:38.323Z
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **WARNING LINKING_METADATA_MISSING:** /futterautomat-katze/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.
@@ -159,7 +151,11 @@ Erstellt: 2026-07-28T11:05:38.323Z
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
 - /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hund-frisst-zu-schnell/ → /smarte-futterautomaten/: „Futterautomat“
+- /hund-frisst-zu-schnell/ → /warum-schlingt-mein-hund/: „Zu schnelles Fressen“
+- /hund-frisst-zu-schnell/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /hund-ist-muede/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
+- /hund-trinkt-ploetzlich-viel/ → /nierenkranke-katze-trinken/: „Chronische Nierenerkrankung“
 - /hund-trinkt-viel/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
 - /hund-trinkt-zu-wenig/ → /trinkbrunnen/: „Trinkbrunnen“
 - /hund-trinkt-zu-wenig/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
@@ -420,7 +416,7 @@ Erstellt: 2026-07-28T11:05:38.323Z
 - /produkt/weenect-xt/ → /hersteller/tractive/: „Tractive“
 - /produkt/weenect-xt/ → /hersteller/weenect/: „Weenect“
 - /produkt/weenect-xt/ → /hersteller/garmin/: „Garmin“
-- /produkt/wopet-cube-air-ca10/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/wopet-cube-air-ca10/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/wopet-cube-air-ca10/ → /hersteller/wopet/: „WOPET“
 - /produkt/wopet-heritage-view-camera-feeder/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/wopet-patrol-f07-pro/ → /hersteller/wopet/: „WOPET“

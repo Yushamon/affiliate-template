@@ -161,8 +161,24 @@ const recommendations = products.map((product) => {
             )}
 
             <div class="comparison-alternative__decision">
-              {price?.formatted && <strong>{price.formatted}</strong>}
-              <a href={product.href} aria-label={`${product.title} ansehen`}>›</a>
+              {price.amountLabel ? (
+                <span class="comparison-alternative__price">
+                  <small>ab</small>
+                  <strong>{price.amountLabel.replace(/^ca\\.\\s*/, "")}</strong>
+                  {price.meta && <em>{price.meta}</em>}
+                </span>
+              ) : (
+                <span class="comparison-alternative__price comparison-alternative__price--missing">
+                  <strong>Preis prüfen</strong>
+                </span>
+              )}
+              <a
+                href={product.href}
+                class="comparison-alternative__chevron"
+                aria-label={`${product.title} ansehen`}
+              >
+                ›
+              </a>
             </div>
           </div>
         </article>

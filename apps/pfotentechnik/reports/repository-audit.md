@@ -1,30 +1,26 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-28T11:05:37.089Z
+Erstellt: 2026-07-29T08:47:23.199Z
 
 ## Zusammenfassung
 
-- Routen: 203
+- Routen: 206
 - Fehler: 0
-- Warnungen: 55
-- Hinweise: 11
+- Warnungen: 53
+- Hinweise: 64
 
 ## Content-Bestand
 
-- pages: 73
+- pages: 76
 - products: 68
 - manufacturers: 19
 - comparisons: 24
 
 ## Befunde
 
-- **WARNING · css**: CSS-Datei sollte modularisiert werden (`src/styles/pfotentechnik-design-system.css`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/ (`src/content/manufacturers/aqara.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/ (`src/content/manufacturers/pawsync.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/ (`src/content/manufacturers/zeromouse.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /hund-frisst-zu-schnell/ (`src/content/pages/futterautomat-hund.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /futterautomat-fuer-berufstaetige/ (`src/content/pages/futterautomat-hund.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /hund-trinkt-ploetzlich-viel/ (`src/content/pages/trinkbrunnen.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/aqara-smart-pet-feeder-c1/ (`src/content/products/aqara-smart-pet-feeder-c1.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-335-pet-fountain/ (`src/content/products/cat-mate-335-pet-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c200/ (`src/content/products/cat-mate-c200.md`)
@@ -59,7 +55,6 @@ Erstellt: 2026-07-28T11:05:37.089Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-stainless-steel-fountain/ (`src/content/products/petlibro-stainless-steel-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-freshfeed-refrigerated-feeder/ (`src/content/products/petsafe-freshfeed-refrigerated-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-healthy-pet-simply-feed/ (`src/content/products/petsafe-healthy-pet-simply-feed.md`)
-- **WARNING · internal-linking**: Möglicherweise gebrochener interner Link: /gps-tracker-oder-bluetooth-tag/ (`src/content/products/weenect-xs.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-cube-air-ca10/ (`src/content/products/wopet-cube-air-ca10.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-heritage-view-camera-feeder/ (`src/content/products/wopet-heritage-view-camera-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-patrol-f07-pro/ (`src/content/products/wopet-patrol-f07-pro.md`)
@@ -73,12 +68,68 @@ Erstellt: 2026-07-28T11:05:37.089Z
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
-- **INFO · css**: Selektor 8× definiert: :root (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/gps-tracker-oder-bluetooth-tag.md`)
+- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/hund-frisst-zu-schnell.md`)
+- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/hund-trinkt-ploetzlich-viel.md`)
+- **INFO · css**: Selektor 4× definiert: html (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: body (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 7× definiert: .site-header-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 5× definiert: .brand-mark (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .brand-mark__cut (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .brand-mark__dot (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .brand-name (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 10× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 7× definiert: .main-nav-v2 a (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 6× definiert: .nav-toggle-button (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .footer-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark__cut (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark__dot (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .footer-brand-name (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 10× definiert: @media (max-width: 760px) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 9× definiert: } @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 10× definiert: :root (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .brand-lockup, .brand-name (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .nav-toggle-button:hover, .nav-toggle-button[aria-expanded="true"] (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .main-nav-v2 a:hover (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 7× definiert: @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: } @media (max-width: 760px) (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .article (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .home41-decision__card (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: main.container.container--home .home3-hero (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: [data-product-page] (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .comparison-sticky-bar (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .recommendation-card (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .recommendation-card__image-link (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__header h2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__header > p (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 5× definiert: .home41-decision__card (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__content (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__content h3 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__meta (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__meta strong (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 5× definiert: main.container.container--home .home3-hero (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: main.container.container--home .home3-hero__content (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: main.container.container--home .home3-hero__text (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: main.container.container--home .home3-hero__actions (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: main.container.container--home .home3-hero__media img (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: main.container.container--home .home3-hero h1 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: } @media (max-width: 720px) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .home41-decision__grid (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .home41-decision__quick-icon (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: @media (max-width: 679px) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .premium-v3--pfotentechnik .premium-v3-product-media (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .premium-v3--pfotentechnik .premium-v3-product-media img (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: [data-product-page] (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: [data-product-page] [data-product-experience="2.0"] .alternatives article (`src/styles/pfotentechnik-product-mobile-premium.css`)
+- **INFO · css**: Selektor 3× definiert: :root (`src/styles/pfotentechnik-ui-system.css`)
+- **INFO · css**: Selektor 3× definiert: :where(.pt-surface) (`src/styles/pfotentechnik-visual-density.css`)
+- **INFO · css**: Selektor 3× definiert: @media (max-width: 47.99rem) (`src/styles/pfotentechnik-visual-density.css`)
+- **INFO · css**: Selektor 3× definiert: .container (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .header-container-v2 (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .main-nav-v2 (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .pt-hero (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .pt-section (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 4× definiert: .pt-category-card (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .pt-values (`src/styles/pfotentechnik.css`)
+- **INFO · css**: Selektor 3× definiert: .pt-value-grid (`src/styles/pfotentechnik.css`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: AdvisorCompare (`src/components/advisor/AdvisorCompare.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ContentGraphSections (`src/components/ContentGraphSections.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductEngineInsights (`src/components/product-standard-2/ProductEngineInsights.astro`)

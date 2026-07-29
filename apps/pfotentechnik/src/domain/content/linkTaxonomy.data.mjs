@@ -46,7 +46,7 @@ export const LINK_TAXONOMY = [
   },
   {
     id: "knowledge:futterautomat-nassfutter",
-    href: "/futterautomat-nassfutter/",
+    href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
     title: "Futterautomat für Nassfutter",
     targetGroup: "knowledge",
     topics: ["futterautomaten", "ernaehrung", "nassfutter"],
@@ -57,7 +57,7 @@ export const LINK_TAXONOMY = [
   },
   {
     id: "knowledge:futterautomat-kamera",
-    href: "/futterautomat-mit-kamera/",
+    href: "/vergleiche/beste-futterautomaten-mit-kamera/",
     title: "Futterautomat mit Kamera",
     targetGroup: "knowledge",
     topics: ["futterautomaten", "haustierkameras"],
@@ -162,7 +162,7 @@ export const LINK_TAXONOMY = [
   },
   {
     id: "knowledge:gps-ohne-abo",
-    href: "/gps-tracker-ohne-abo/",
+    href: "/vergleiche/gps-tracker-ohne-abo/",
     title: "GPS-Tracker ohne Abo",
     targetGroup: "knowledge",
     topics: ["gps-tracker", "abo"],

@@ -30,6 +30,9 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 ## Verbleibende manuelle Entscheidungen
 
 - /futterautomat-katze/ besitzt keine Linking-Metadaten.
+- /gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.
+- /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
+- /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
 - /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.
 - /seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.

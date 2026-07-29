@@ -330,7 +330,7 @@ Ein Doppelschalen-Automat schafft zwei Plätze, kontrolliert aber keine Identit�
 
 ## Erst das Problem bestimmen, dann das Modell wählen
 
-Diese Seite beantwortet die **Produktfrage**: Welches konkrete System passt am besten zu gleichem Futter, zwei Futtersorten oder geschützten Rationen? Die vorgelagerte Bauartentscheidung erklärt der Ratgeber [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/).
+Diese Seite beantwortet die **Produktfrage**: Welches konkrete System passt am besten zu gleichem Futter, zwei Futtersorten oder geschützten Rationen? Die vorgelagerte Bauartentscheidung erklärt der Ratgeber Futterautomat für zwei Katzen.
 
 Ein Mikrochip-Napf, eine Doppelschale und ein Dual-Hopper lösen drei verschiedene Aufgaben. Deshalb gibt es keinen sinnvollen Gesamtsieger für jeden Zwei-Katzen-Haushalt.
 
@@ -616,7 +616,7 @@ Empfehlenswert ist daher:
 
 ## Weiterführende Kaufberatung
 
-- [Futterautomat für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+- Futterautomat für zwei Katzen
 - [Futterautomat bei Übergewicht](/futterautomat-bei-uebergewicht/)
 - [Beste Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/)
 - [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/)
@@ -748,7 +748,7 @@ Bei Übergewicht, Nierenerkrankung, Diabetes, Allergien oder Medikamenten darf d
 ## Jetzt die passende Bauart auswählen
 Vergleiche Mikrochip-Näpfe, Doppelschalen, getrennte Futterplätze und Dual-Hopper danach, welches Problem in deinem Haushalt tatsächlich gelöst werden muss.
 
-[Alle Lösungen vergleichen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/)
+Alle Lösungen vergleichen
 
 Ein Futterautomat für zwei Katzen muss nicht nur zwei Portionen bereitstellen. Er muss zur **Futterart, zum Fresstempo und zur sozialen Situation** beider Tiere passen.
 
@@ -758,7 +758,7 @@ Die Kernfrage lautet:
 
 Davon hängt ab, ob eine Doppelschale genügt, zwei getrennte Automaten sinnvoll sind oder ein Mikrochip-System benötigt wird.
 
-Für konkrete Produktempfehlungen führt der direkte Weg zum Vergleich [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/). Dieser Ratgeber erklärt vorher, **welche Bauart zu welchem Mehrkatzen-Problem passt**.
+Für konkrete Produktempfehlungen führt der direkte Weg zum Vergleich Beste Futterautomaten für zwei Katzen. Dieser Ratgeber erklärt vorher, **welche Bauart zu welchem Mehrkatzen-Problem passt**.
 
 ## Doppelschale, zwei Automaten oder Mikrochip?
 
@@ -965,7 +965,7 @@ Dieser Ratgeber hilft dir, das eigentliche Problem einzuordnen:
 - ein oder zwei Standorte
 - Doppelschale, Dual-Hopper oder Mikrochip-System
 
-Sobald die passende Bauart feststeht, kannst du im Vergleich [Beste Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) die konkreten Modelle nach Zugangskontrolle, Futterplätzen, Portionierung, Ausfallsicherheit und Konfliktrisiko gegenüberstellen.
+Sobald die passende Bauart feststeht, kannst du im Vergleich Beste Futterautomaten für zwei Katzen die konkreten Modelle nach Zugangskontrolle, Futterplätzen, Portionierung, Ausfallsicherheit und Konfliktrisiko gegenüberstellen.
 
 Der übergeordnete Überblick [Smarte Futterautomaten](/smarte-futterautomaten/) erklärt zusätzlich App, Kamera, Offline-Betrieb, Stromreserve und allgemeine Kaufkriterien.
 
@@ -973,7 +973,7 @@ Der übergeordnete Überblick [Smarte Futterautomaten](/smarte-futterautomaten/)
 
 Dieser Ratgeber ist bewusst auf **zwei Katzen** zugeschnitten. Für Haushalte mit mehreren Katzen, mehreren Hunden oder einer Mischung aus Hund und Katze gelten zusätzliche Anforderungen an Napfhöhe, Futterart, Standort und Zugang. Diese breitere Planung behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/).
 
-Steht die passende Bauart bereits fest, zeigt der [Vergleich der fünf Systeme für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
+Steht die passende Bauart bereits fest, zeigt der Vergleich der fünf Systeme für zwei Katzen konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
 
 ## Fazit
 

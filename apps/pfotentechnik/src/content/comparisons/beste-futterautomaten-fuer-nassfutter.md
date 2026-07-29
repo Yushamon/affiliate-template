@@ -825,7 +825,7 @@ Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/vergleich
 
 ## Aktive Kühlung als eigenes System
 
-Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im [Nassfutterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-nassfutter/) werden beide Prinzipien getrennt bewertet.
+Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im Nassfutterautomaten-Vergleich werden beide Prinzipien getrennt bewertet.
 
 ## Fazit
 

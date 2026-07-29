@@ -307,7 +307,7 @@ Für Urlaub ist ein solcher Test besonders wichtig, ersetzt aber keine Betreuung
 
 ## Drei Offline-Bauarten direkt vergleichen
 
-Der spezialisierte [Vergleich der besten Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) trennt drei Konzepte:
+Der spezialisierte Vergleich der besten Futterautomaten ohne WLAN trennt drei Konzepte:
 
 - **Cat Mate C500:** vorbereitete Nass- oder Trockenfutterfächer mit lokaler Zeitsteuerung,
 - **SureFeed Microchip Pet Feeder:** geschützter Zugang ohne automatische Vorratsdosierung,

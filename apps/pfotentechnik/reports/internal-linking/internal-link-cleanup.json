@@ -1,0 +1,2015 @@
+{
+  "version": "1.0.5",
+  "generatedAt": "2026-07-29T08:44:50.051Z",
+  "dryRun": false,
+  "redirectAliases": {
+    "/beste-futterautomaten-fuer-berufstaetige/": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+    "/beste-futterautomaten-fuer-hunde/": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+    "/beste-futterautomaten-fuer-katzen/": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+    "/beste-futterautomaten-fuer-kleine-hunde/": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+    "/beste-futterautomaten-fuer-mehrtierhaushalte/": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+    "/beste-futterautomaten-fuer-nassfutter/": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+    "/beste-futterautomaten-fuer-seniorenkatzen/": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+    "/beste-futterautomaten-fuer-welpen/": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+    "/beste-futterautomaten-fuer-zwei-katzen/": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+    "/beste-futterautomaten-mit-akku/": "/vergleiche/beste-futterautomaten-mit-akku/",
+    "/beste-futterautomaten-mit-edelstahl-napf/": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+    "/beste-futterautomaten-mit-kamera/": "/vergleiche/beste-futterautomaten-mit-kamera/",
+    "/beste-futterautomaten-ohne-wlan/": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+    "/beste-futterautomaten-unter-100-euro/": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+    "/beste-gps-tracker-fuer-hunde/": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+    "/beste-gps-tracker-fuer-katzen/": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+    "/beste-trinkbrunnen-fuer-hunde/": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+    "/beste-trinkbrunnen-fuer-katzen/": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+    "/futterautomat-fuer-berufstaetige/": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+    "/futterautomat-fuer-grosse-hunde/": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+    "/futterautomat-fuer-zwei-katzen/": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+    "/futterautomat-gegen-schlingen/": "/vergleiche/futterautomat-gegen-schlingen/",
+    "/futterautomat-mit-app/": "/vergleiche/futterautomat-mit-app/",
+    "/futterautomat-mit-kamera/": "/vergleiche/beste-futterautomaten-mit-kamera/",
+    "/futterautomat-nassfutter/": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+    "/futterautomat-ohne-wlan/": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+    "/gps-tracker-mit-langer-akkulaufzeit/": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+    "/gps-tracker-ohne-abo/": "/vergleiche/gps-tracker-ohne-abo/",
+    "/kleine-gps-tracker-fuer-katzen/": "/vergleiche/kleine-gps-tracker-fuer-katzen/"
+  },
+  "summary": {
+    "changedFiles": 2,
+    "skippedFiles": 487,
+    "cleanupFindings": 1,
+    "ambiguities": 0
+  },
+  "changes": [
+    {
+      "file": "apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "reason": "zentrale URL-Normalisierung und Redirect-Alias-Auflösung",
+      "beforeSha": "3e9901cf9cb9dd6b81e91c77018f138162103d46c37670c9cbc733957deadc28",
+      "afterSha": "76b52833441905e457bc2ec35e786063876714e3f7d0e2d55fe7d50a786fee11"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
+      "reason": "aktuellen Berater-Breadcrumb ohne Selflink ausgegeben",
+      "beforeSha": "afc49f63ae192dd5c74243a6e0c6ba47a86983e18a6477c687d3342757d46e45",
+      "afterSha": "9a249c0da957efad1d4903f5d29bfccbe14d1fdc6707ccfae1264da28bfcb3f4"
+    }
+  ],
+  "skipped": [
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/cat-mate-c500/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/honeyguardian-smart-pet-feeder-s305d/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/oneisall-5l-automatic-cat-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/petlibro-granary-camera/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/petlibro-granary-wifi-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder-connect/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/wopet-patrol-f07-pro/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/assets/images/products/xiaomi-smart-pet-food-feeder-2/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/AdvisorCta.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/AutoContentBlocks.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/ContentGraphSections.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/ConversionJourney.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/HealthBridge.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/ProductTrustPanel.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/SiteRuntimeFixes.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/advisor/AdvisorCompare.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/comparison/ScenarioRecommendations.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductEverydayTimeline.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductTrust2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/AlternativesGrid.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/ContextSpecs.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/DecisionCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/ProductEngineInsights.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/ProductRenderer.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/ProductStandard2.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/ProsCons.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/QuickFacts.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/SuitabilityMatrix.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-standard-2/TrustBar.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-hunde.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-welpen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-akku.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/futterautomat-fuer-grosse-hunde.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/futterautomat-gegen-schlingen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/gps-tracker-ohne-abo.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/kleine-gps-tracker-fuer-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/aqara.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/cat-mate.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/catit.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/garmin.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/honeyguardian.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/imipaw.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/oneisall.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/paj-gps.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/pawbby.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/pawsync.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/petkit.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/petlibro.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/petsafe.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/surefeed.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/tractive.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/weenect.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/wopet.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/xiaomi.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/zeromouse.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/biofilm-im-katzentrinkbrunnen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/datenschutz-bei-gps-trackern.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/fuetterungszeiten-nach-alter.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-bei-stromausfall.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-bei-uebergewicht.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-im-urlaub.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-richtig-reinigen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-und-ernaehrung.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futtermenge-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/futtermenge-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/gps-oder-bluetooth.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/gps-tracker-oder-bluetooth-tag.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/gps-tracker-richtig-befestigen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/gps-tracker.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-entlaufen-gps-sinnvoll.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-nicht.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-hat-durchfall.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-ist-muede.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-viel.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-zu-wenig.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/kalk-katzentrinkbrunnen-entfernen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katze-entlaufen-gps-sinnvoll.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katze-frisst-nicht.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katze-trinkt-viel.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-laut-pumpe.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-ohne-filter.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzenwasser-taeglich-wechseln.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/nierenkranke-katze-trinken.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/pumpe-katzentrinkbrunnen-reinigen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/reichweite-von-gps-trackern.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/seniorenhunde-richtig-versorgen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/smarte-gadgets-fuer-hunde-und-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/smarte-haustiertechnik.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/so-bewerten-wir.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-kitten-sicher.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-mehrere-katzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-seniorenkatzen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkmenge-hund-messen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkmenge-katze-messen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trockenfutter-oder-nassfutter-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trockenfutter-oder-nassfutter-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/uebergewicht-bei-katzen-vermeiden.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/warum-brauchen-gps-tracker-ein-abo.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/warum-hunde-feste-fuetterungszeiten-brauchen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/warum-katzen-fliessendes-wasser-trinken.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/warum-schlingt-mein-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wasserstelle-katze-richtiger-standort.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/welche-portionsgroesse-ist-richtig.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/welpen-richtig-fuettern.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-funktionieren-gps-tracker.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-genau-sind-gps-tracker.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-lange-bleibt-trockenfutter-frisch.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-laut-sind-automatische-futterautomaten.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-ein-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-viele-mahlzeiten-hund.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-viele-mahlzeiten-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-viele-wasserstellen-katze.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-335-pet-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-c200.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-c300.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-c500.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-shell-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/catit-pixi-smart-6-meal-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/catit-pixi-vision-smart-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/garmin-alpha-t-20.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/garmin-alpha-tt-25.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/honeyguardian-a305d.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/honeyguardian-a68.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/honeyguardian-smart-pet-feeder-s305d.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/imipaw-3l-automatic-cat-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-2-2l-cordless-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-2-in-1-feeder-water.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-3-2l-cordless-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-3-5l-cordless-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-5l-automatic-cat-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/oneisall-7l-dog-water-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/paj-pet-finder-4g-mini.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/pawbby-smart-pet-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/pawsync-smart-pet-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-3-pro-uvc.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-5-mini.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-max-2-uvc.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-max-cordless.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-solo-2-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-solo-se.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-ultra.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-fresh-element-infinity.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-fresh-element-solo.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-air-automatic-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-air-wifi-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-capsule-dog-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-dockstream-2-smart-cordless.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-dockstream-2-smart.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-dockstream-cordless.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-dockstream-rfid-smart.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-glacier-ultrafiltration.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-2-vision.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-camera-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-dual-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-wifi-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-one-rfid-smart-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-stainless-steel-fountain.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petsafe-healthy-pet-simply-feed.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petsafe-smart-feed-2.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/surefeed-microchip-pet-feeder-connect.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/surefeed-microchip-pet-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/tractive-cat-6-mini.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/tractive-dog-6.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/weenect-xs.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/weenect-xt.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/wopet-cube-air-ca10.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/wopet-heritage-view-camera-feeder.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/wopet-patrol-f07-pro.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/wopet-pioneer-f01-plus.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/xiaomi-smart-pet-food-feeder-2.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/xiaomi-smart-pet-fountain-2.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/zeromouse-2-0.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/base.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/comparison.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/manufacturer.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/page.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/product.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/schema/shared.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content.config.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/bing-dashboard-ranges.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/bing-dashboard.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/search-dashboard-ranges.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/search-dashboard.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/guides.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/mapProduct.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/recommendProducts.test.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/recommendProducts.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/advisor/urlState.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/comparison/buildComparisonViewModel.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/comparison/comparisonDataPlatform.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/comparison/recommendationEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/comparison/waterFountainRecommendationEngine.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/breadcrumbs.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/internalLinks.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/linkTaxonomy.data.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/linkTaxonomy.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/linkingSemantics.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/registry.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/related.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/contentGraph/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/contentGraph/queryContentGraph.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/contentGraph/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/contentPlatform/assembleContentPage.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/contentPlatform/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/home/buildHomepageModel.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/price/adapters/contentPriceAdapter.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/price/engine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/price/tier.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/price/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productAlternatives/categories/futterautomaten.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productAlternatives/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productDecision/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productDecision/rules.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productExperience/contentLists.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productExperience/decisionEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/productExperience/model.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/recommendationLinks.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/generated/content-graph.json",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/layouts/ProjectLayout.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/layouts/SeoAdminLayout.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/admin/atomic-file.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/admin/operations-router.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/admin/public-fetch.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/filter.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/image-evaluator.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/markdown-images.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/network.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/product-identity.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/media-center/service.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/price-intelligence/extract-offer.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/price-intelligence/frontmatter-price.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/price-intelligence/safe-fetch.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/price-intelligence/service.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-engine/buildProductBlocks.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-engine/inferProductIntelligence.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-engine/normalizeProduct.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-engine/productQuality.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-engine/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-operations/policy.d.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/product-operations/policy.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/action-service.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/admin-server.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/combined.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/config.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/copilot-actions.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/dashboard-file-loader.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/dashboard-loader.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/errors.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/locks.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/logging.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/normalizer.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/platform.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/provider-registry.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/README.md",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/client.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/config.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/config.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/mapper.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/provider.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/report.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/sync.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/bing/test.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/auth.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/client.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/provider.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/report.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/setup.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/sync.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/providers/google/test.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/search-report.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/security.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/status-store.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/search/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/engine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/engineV3.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/intelligence.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/loadContent.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/productIntelligence.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/score.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/work-packages.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/loadDashboard.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/config.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/discovery-provider.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/identity.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/package-workflow.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/preflight.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/prompts.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/scoring.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/store.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/templates.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo-copilot/workflow.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/[slug].astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/advisor.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/history.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/index.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/media.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/prompts.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/tasks.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/affiliate-hinweis.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/api/advisor-products.json.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/datenschutz.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/futterautomat-berater.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/hersteller/index.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/impressum.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/index.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/kaufberatung.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/kontakt.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/vergleiche/[comparison].astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/vergleiche/index.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/wissen.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/project.config.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/utils/uiLabels.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/affiliateEngine.test.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/affiliateEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/amazon.test.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/amazon.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/affiliate/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/comparison/model.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/comparison/price.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ArticleMeta.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/AutoLinkContent.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/Breadcrumbs.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ComparisonExperience.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/DecisionBox.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/EditorialScore.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/FAQ.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/Footer.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/Header.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/IntentCTA.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/InternalLinks.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/NextStepCTA.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/OptimizedImage.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductBox.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductComparisonTable.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductImage.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductRanking.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductRankingCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ProductScoreCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/RelatedArticles.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/TableOfContents.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/TrustBox.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonEditorialRecommendation.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonExplorer.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonFilterBar.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonHero.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonHeroFilters.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonInsightSummary.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonMethodology.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonMobileCards.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonPriceSignal.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonProsCons.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonShell.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonStickyBar.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonTable.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/ComparisonVerdict.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/RecommendationGrid.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/comparison/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/content/DecisionCards.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/content/InfoBox.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/content/PremiumBlocks.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/content/StepTimeline.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeBrandStatement.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeFaq.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeHero.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeNavigation.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomePage.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeSection.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeSections.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeStats.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/home/HomeUseCases.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/product/ProductReview.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/product/alternativeRecommendation.types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Accordion.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Badge.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Button.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Callout.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Card.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/ComparisonCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Grid.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/MetricCard.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/Section.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/components/ui/TimeLine.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/home/model.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/index.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/layouts/AffiliateLayout.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/layouts/LegalLayout.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/generator.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/htmlLinker.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/linkEngine.test.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/linkEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/rules.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/types.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/models/product.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/models/project.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/seo/schema.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/utils/content.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/utils/decisionEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/utils/editorialScore.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/utils/images.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/utils/productImages.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/test/internal-url-policy.test.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "packages/affiliate-core/src/linking/linkEngine.ts",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "scripts/audit-internal-links.mjs",
+      "reason": "bereits aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/package.json",
+      "reason": "bereits aktuell"
+    }
+  ],
+  "findings": [
+    {
+      "type": "self-link-breadcrumb-neutralized",
+      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
+      "target": "/berater/futterautomat/",
+      "occurrences": 1
+    }
+  ],
+  "ambiguities": []
+}

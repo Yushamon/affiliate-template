@@ -79,10 +79,17 @@ export const normalizeLinkTerm = (value?: string) =>
     .trim();
 
 const normalizePath = (value?: string) => {
-  if (!value) return "";
-  const path = value.split("#")[0].split("?")[0];
-  const leading = path.startsWith("/") ? path : `/${path}`;
-  return leading.endsWith("/") ? leading : `${leading}/`;
+  const input = String(value ?? "").trim();
+  if (!input || input.startsWith("#")) return input;
+  if (/^(?:mailto:|tel:|sms:|javascript:|data:)/i.test(input)) return "";
+  try {
+    const url = new URL(input, "https://pfotentechnik.de/");
+    if (!["pfotentechnik.de", "www.pfotentechnik.de"].includes(url.hostname.toLowerCase())) return "";
+    const pathname = url.pathname.replace(/\/{2,}/g, "/");
+    return pathname === "/" ? "/" : pathname.replace(/\/+$/, "") + "/";
+  } catch {
+    return "";
+  }
 };
 
 const unique = (values: Array<string | undefined>) =>

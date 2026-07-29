@@ -1,0 +1,176 @@
+---
+import OptimizedImage from "../OptimizedImage.astro";
+import EditorialScore from "../EditorialScore.astro";
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+
+type Props = {
+  products: ComparisonProduct[];
+};
+
+const { products } = Astro.props as Props;
+
+type UseCase = {
+  icon: string;
+  label: string;
+  tone: string;
+  test: (text: string) => boolean;
+};
+
+const useCases: UseCase[] = [
+  {
+    icon: "€",
+    label: "Preis-Leistungs-Tipp",
+    tone: "value",
+    test: (text) => /preis|günstig|budget|preis.?leistung/.test(text)
+  },
+  {
+    icon: "♧",
+    label: "Für Mehrtierhaushalte",
+    tone: "multi",
+    test: (text) => /mehrkatzen|mehrere katzen|mehrtier|futterneid|chip/.test(text)
+  },
+  {
+    icon: "▣",
+    label: "Beste Kamera",
+    tone: "camera",
+    test: (text) => /kamera|video|sicht|überwachung/.test(text)
+  },
+  {
+    icon: "×",
+    label: "Ohne Abo",
+    tone: "simple",
+    test: (text) => /ohne abo|kein abo|keine laufenden/.test(text)
+  },
+  {
+    icon: "▥",
+    label: "Lange Akkulaufzeit",
+    tone: "battery",
+    test: (text) => /akku|batterie|laufzeit/.test(text)
+  },
+  {
+    icon: "◫",
+    label: "Für Nassfutter",
+    tone: "wet",
+    test: (text) => /nassfutter|gekühlt|kühlung/.test(text)
+  },
+  {
+    icon: "◇",
+    label: "Für große Hunde",
+    tone: "large",
+    test: (text) => /große hund|large dog|großes tier/.test(text)
+  },
+  {
+    icon: "⌂",
+    label: "Für Einsteiger",
+    tone: "starter",
+    test: (text) => /einsteiger|einfach|unkompliziert|leicht zu bedienen/.test(text)
+  }
+];
+
+const usedLabels = new Set<string>();
+
+const recommendations = products.map((product) => {
+  const text = [
+    product.badge,
+    product.recommendation,
+    ...(product.strengths ?? [])
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  const matched = useCases.find(
+    (useCase) => !usedLabels.has(useCase.label) && useCase.test(text)
+  );
+
+  if (matched) {
+    usedLabels.add(matched.label);
+    return { product, useCase: matched };
+  }
+
+  const fallbackLabel = product.badge && !usedLabels.has(product.badge)
+    ? product.badge
+    : "Starke Alternative";
+
+  usedLabels.add(fallbackLabel);
+
+  return {
+    product,
+    useCase: {
+      icon: "→",
+      label: fallbackLabel,
+      tone: "default",
+      test: () => true
+    }
+  };
+});
+---
+
+<section class="comparison-alternatives" aria-labelledby="comparison-alternatives-title">
+  <div class="comparison-alternatives__heading">
+    <span class="comparison-eyebrow">Alternativen nach Bedarf</span>
+    <h2 id="comparison-alternatives-title">Welche Empfehlung passt zu dir?</h2>
+    <p>Jedes Modell steht für einen konkreten Vorteil – nicht für eine zweite Rangliste.</p>
+  </div>
+
+  <div class="comparison-alternatives__list">
+    {recommendations.map(({ product, useCase }) => {
+      const price = getPriceDisplay(product.price);
+
+      return (
+        <article class="comparison-alternative" data-product-slug={product.slug}>
+          <div class={`comparison-alternative__use-case comparison-alternative__use-case--${useCase.tone}`}>
+            <span aria-hidden="true">{useCase.icon}</span>
+            <strong>{useCase.label}</strong>
+          </div>
+
+          <a
+            href={product.href}
+            class="comparison-alternative__media"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            {product.image ? (
+              <OptimizedImage
+                src={product.image.src}
+                alt={product.image.alt ?? product.title}
+                width={320}
+                height={240}
+                layout="constrained"
+              />
+            ) : (
+              <span class="comparison-alternative__placeholder" aria-hidden="true">□</span>
+            )}
+          </a>
+
+          <div class="comparison-alternative__content">
+            {product.manufacturer && <span>{product.manufacturer}</span>}
+            <h3><a href={product.href}>{product.title}</a></h3>
+            {product.recommendation && <p>{product.recommendation}</p>}
+          </div>
+
+          <div class="comparison-alternative__meta">
+            {typeof product.rating === "number" && (
+              <EditorialScore
+                value={product.rating}
+                scale={100}
+                variant="ring-compact"
+                description="Redaktioneller Gesamtscore"
+              />
+            )}
+
+            <div class="comparison-alternative__decision">
+              {price?.formatted && <strong>{price.formatted}</strong>}
+              <a href={product.href} aria-label={`${product.title} ansehen`}>›</a>
+            </div>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  <a href="#direktvergleich" class="pt-button comparison-alternatives__all">
+    Alle Modelle direkt vergleichen
+  </a>
+</section>

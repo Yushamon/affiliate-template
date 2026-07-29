@@ -105,13 +105,15 @@
     "comparison:release:check": "node scripts/comparison-platform/release-closure.mjs --strict",
     "comparison:release:final": "node scripts/comparison-platform/release-closure.mjs --strict --require-visual",
     "comparison:release:signoff": "node scripts/comparison-platform/release-closure.mjs --confirm-visual --strict --require-visual",
-    "test:internal-linking": "node --experimental-strip-types --test test/internal-linking-3.test.mjs",
+    "test:internal-linking": "node --experimental-strip-types --test test/internal-linking-3.test.mjs test/internal-url-policy.test.mjs",
     "audit:internal-links": "node ../../scripts/audit-internal-links.mjs",
     "audit:internal-links:strict": "node ../../scripts/audit-internal-links.mjs --strict",
     "comparison:hero:audit": "node scripts/comparison-platform/audit-editorial-heroes.mjs",
     "comparison:hero:audit:strict": "node scripts/comparison-platform/audit-editorial-heroes.mjs --strict",
     "build:fast": "node scripts/build-fast.mjs",
-    "build:cache:reset": "node scripts/build-fast.mjs --clear-cache"
+    "build:cache:reset": "node scripts/build-fast.mjs --clear-cache",
+    "audit:internal-link-targets": "node scripts/audit-internal-link-targets.mjs",
+    "audit:internal-link-targets:strict": "node scripts/audit-internal-link-targets.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

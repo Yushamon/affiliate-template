@@ -548,7 +548,7 @@ Kann nicht sicher zeigen:
 
 Selten kaufentscheidend. Manche Hunde reagieren darauf, andere ignorieren sie.
 
-Mehr dazu: [Futterautomat mit App](/vergleiche/futterautomat-mit-app/), [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) und [Futterautomat für Berufstätige](/futterautomat-fuer-berufstaetige/).
+Mehr dazu: [Futterautomat mit App](/vergleiche/futterautomat-mit-app/), [Futterautomat mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/) und [Futterautomat für Berufstätige](/vergleiche/beste-futterautomaten-fuer-berufstaetige/).
 
 ## Batterie-Backup und Offline-Betrieb
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   BLOCKED_ANCHOR_SET,
   LINK_TAXONOMY,
@@ -19,8 +20,8 @@ import {
   walkFiles
 } from "../apps/pfotentechnik/scripts/internal-linking-utils.mjs";
 
-const cwd = process.cwd();
-const root = fs.existsSync(path.join(cwd, "apps/pfotentechnik")) ? cwd : path.resolve(cwd, "../..");
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(scriptDir, "..");
 const appRoot = path.join(root, "apps/pfotentechnik");
 const strict = process.argv.includes("--strict");
 const reportDir = path.join(appRoot, "reports/internal-linking");
