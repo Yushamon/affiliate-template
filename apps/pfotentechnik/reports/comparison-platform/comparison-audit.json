@@ -1,86 +1,18 @@
 {
-  "generatedAt": "2026-07-29T20:20:05.145Z",
+  "generatedAt": "2026-07-29T21:26:31.710Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 24,
     "products": 67,
     "manufacturers": 19,
-    "usedProducts": 39,
-    "productCoveragePercent": 58.2,
+    "usedProducts": 41,
+    "productCoveragePercent": 61.2,
     "errors": 0,
-    "warnings": 9,
-    "qualityScore": 96
+    "warnings": 0,
+    "qualityScore": 98
   },
-  "byCode": [
-    {
-      "code": "HERO_IMAGE_MISSING",
-      "count": 7,
-      "category": "content",
-      "level": "warning"
-    },
-    {
-      "code": "PRODUCT_NOT_COVERED",
-      "count": 2,
-      "category": "coverage",
-      "level": "warning"
-    }
-  ],
-  "byFile": [
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-mit-akku.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/comparisons/futterautomat-mit-app.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/petlibro-dockstream-2-smart.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    }
-  ],
+  "byCode": [],
+  "byFile": [],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -179,78 +111,5 @@
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": [
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md",
-      "slug": "beste-futterautomaten-fuer-berufstaetige",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
-      "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
-      "slug": "beste-futterautomaten-fuer-seniorenkatzen",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-mit-akku.md",
-      "slug": "beste-futterautomaten-mit-akku",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md",
-      "slug": "beste-futterautomaten-mit-edelstahl-napf",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md",
-      "slug": "beste-futterautomaten-unter-100-euro",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "HERO_IMAGE_MISSING",
-      "file": "src/content/comparisons/futterautomat-mit-app.md",
-      "slug": "futterautomat-mit-app",
-      "message": "heroImage fehlt.",
-      "category": "content"
-    },
-    {
-      "level": "warning",
-      "code": "PRODUCT_NOT_COVERED",
-      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
-      "slug": "petlibro-dockstream-2-smart-cordless",
-      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
-      "category": "coverage"
-    },
-    {
-      "level": "warning",
-      "code": "PRODUCT_NOT_COVERED",
-      "file": "src/content/products/petlibro-dockstream-2-smart.md",
-      "slug": "petlibro-dockstream-2-smart",
-      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
-      "category": "coverage"
-    }
-  ]
+  "issues": []
 }

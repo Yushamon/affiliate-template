@@ -133,6 +133,9 @@ const authorFromRaw = (raw = "") => raw.match(/\bauthor:\s*\{[^}]*\bname:\s*["']
   ?? raw.match(/^\s*name:\s*["']?([^"'\r\n]+)["']?\s*$/mi)?.[1]
   ?? "";
 
+const authorFromHtml = (html = "") => html.match(/"author"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"/i)?.[1]
+  ?? "";
+
 const inlineValue = (raw = "", key = "") => raw.match(new RegExp(`\\b${key}:\\s*["']?([^,"'}\\]\\r\\n]+)`, "i"))?.[1]?.trim() ?? "";
 
 const sourceDocuments = (appRoot, repoRoot) => {
@@ -732,7 +735,7 @@ export const collectContentQuality = ({ appRoot, repoRoot, config }) => {
       inSitemap: sitemap.has(route),
       publishedAt: String(source?.data?.publishedAt ?? ""),
       updatedAt: String(source?.data?.updatedAt ?? ""),
-      author: source?.author ?? "",
+      author: source?.author || authorFromHtml(html),
       cluster,
       searchIntent,
       secondaryIntents: [],

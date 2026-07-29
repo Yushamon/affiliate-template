@@ -42,6 +42,9 @@ seo:
 comparisonType: use-case
 group: Futterautomaten
 icon: 📖
+heroImage:
+  src: ../../assets/images/editorial/dog-and-cat-feeder.webp
+  alt: Hund und Katze neben einem automatischen Futterspender als redaktionelle Darstellung
 items:
   - slug: petlibro-granary-wifi-feeder
     label: PETLIBRO Granary WiFi Feeder

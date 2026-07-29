@@ -1,14 +1,14 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-07-29T18:11:33.863Z
+Erstellt: 2026-07-29T21:26:30.995Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 24 / 24
-- Quellabdeckung: 86.8 %
+- Quellabdeckung: 87 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 462
-- bewusste Overrides: 214
+- alte values-Felder: 476
+- bewusste Overrides: 218
 
 ## Vergleichsseiten
 
@@ -31,7 +31,7 @@ Erstellt: 2026-07-29T18:11:33.863Z
 | `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
-| `beste-trinkbrunnen-fuer-katzen` | 7 | 7 | 0 | OK |
+| `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |
 | `futterautomat-fuer-grosse-hunde` | 3 | 4 | 2 | OK |
 | `futterautomat-gegen-schlingen` | 3 | 3 | 3 | OK |
 | `futterautomat-mit-app` | 5 | 3 | 5 | OK |

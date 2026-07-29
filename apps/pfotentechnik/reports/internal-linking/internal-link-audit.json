@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-07-29T18:11:35.843Z",
+  "generatedAt": "2026-07-29T21:26:33.844Z",
   "strict": true,
   "summary": {
     "documents": 185,
     "contentRoutes": 185,
     "buildRoutes": 204,
     "validRoutes": 204,
-    "definitions": 407,
+    "definitions": 440,
     "renderedAutomaticLinks": 403,
     "errors": 0,
-    "warnings": 53,
+    "warnings": 42,
     "critical": 0
   },
   "blockedAnchors": [
@@ -37,83 +37,6 @@
     "wasser"
   ],
   "findings": [
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/futterautomat-katze/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/futterautomat-katze/",
-      "file": "apps/pfotentechnik/src/content/pages/futterautomat-katze.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/hund-frisst-zu-schnell/",
-      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/hund-trinkt-ploetzlich-viel/",
-      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
-      "file": "apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
-      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/seniorenhunde-richtig-versorgen/",
-      "file": "apps/pfotentechnik/src/content/pages/seniorenhunde-richtig-versorgen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
-      "file": "apps/pfotentechnik/src/content/pages/smarte-gadgets-fuer-hunde-und-katzen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/so-bewerten-wir/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/so-bewerten-wir/",
-      "file": "apps/pfotentechnik/src/content/pages/so-bewerten-wir.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/wasserstelle-katze-richtiger-standort/",
-      "file": "apps/pfotentechnik/src/content/pages/wasserstelle-katze-richtiger-standort.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
-      "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
-      "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md"
-    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",

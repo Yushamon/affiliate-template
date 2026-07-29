@@ -35,6 +35,9 @@ seo:
 comparisonType: use-case
 group: Futterautomaten
 icon: 📖
+heroImage:
+  src: ../../assets/images/editorial/dog-and-cat-feeder.webp
+  alt: Hund und Katze neben einem Futterautomaten als redaktionelle Darstellung
 items:
   - slug: imipaw-3l-automatic-cat-feeder
     label: IMIPAW 3L Automatic Cat Feeder

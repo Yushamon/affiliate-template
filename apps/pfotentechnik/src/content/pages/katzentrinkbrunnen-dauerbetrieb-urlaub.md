@@ -5,6 +5,11 @@ type: knowledge
 layout: knowledge
 description: "Ob ein Katzenbrunnen durchlaufen sollte und welche Absicherung bei Stromausfall, Pumpe, leerem Tank und Urlaub nötig ist."
 category: "trinkbrunnen"
+linking:
+  keywords: ["Katzentrinkbrunnen im Dauerbetrieb", "Trinkbrunnen im Urlaub", "Katzenbrunnen durchlaufen lassen"]
+  contexts: ["trinkbrunnen", "urlaub", "stromausfall", "katze"]
+  priority: "high"
+  maxOccurrences: 1
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

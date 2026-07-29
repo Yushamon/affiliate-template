@@ -41,6 +41,9 @@ seo:
 comparisonType: use-case
 group: Futterautomaten
 icon: 📖
+heroImage:
+  src: ../../assets/images/editorial/dog-and-cat-feeder.webp
+  alt: Katze neben einem automatischen Futterspender als redaktionelle Darstellung
 items:
   - slug: surefeed-microchip-pet-feeder-connect
     label: SureFeed Microchip Pet Feeder Connect

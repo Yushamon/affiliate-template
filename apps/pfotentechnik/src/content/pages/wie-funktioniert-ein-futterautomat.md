@@ -7,6 +7,11 @@ seoDescription: "So funktionieren Futterautomaten: Vorrat, Dosierung, Zeitplan, 
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
+linking:
+  keywords: ["wie funktioniert ein Futterautomat", "Funktionsweise von Futterautomaten", "automatische Futterausgabe"]
+  contexts: ["futterautomat", "funktionsweise", "portionierung"]
+  priority: "high"
+  maxOccurrences: 1
 tags: ["Futterautomat", "Funktionsweise", "Portionierung", "Grundlagen"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"

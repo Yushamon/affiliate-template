@@ -5,6 +5,11 @@ type: knowledge
 layout: knowledge
 description: "Wie Futterpuzzles, Kameras und automatische Beschäftigung sinnvoll eingesetzt werden – und wo Technik an ihre Grenzen stößt."
 category: "tierbeschaeftigung"
+linking:
+  keywords: ["Technik gegen Langeweile bei Haustieren", "smarte Tierbeschäftigung", "technische Beschäftigung für Haustiere"]
+  contexts: ["tierbeschaeftigung", "pet-tech", "hund", "katze"]
+  priority: "normal"
+  maxOccurrences: 1
 categoryLabel: "Alltagswissen"
 categoryPath: "/wissen/"
 heroImage:

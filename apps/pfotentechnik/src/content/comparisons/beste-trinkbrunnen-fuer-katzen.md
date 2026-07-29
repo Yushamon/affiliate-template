@@ -4,10 +4,10 @@ slug: beste-trinkbrunnen-fuer-katzen
 type: comparison
 layout: comparison
 description: >-
-  Sechs Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
+  Neun Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-07-27"
+updatedAt: "2026-07-29"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -21,14 +21,14 @@ hub:
   sections:
     - vergleiche
   title: Beste Trinkbrunnen für Katzen
-  description: Sechs klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
+  description: Neun klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
   icon: 🐈
   featured: true
   order: 20
 seo:
-  title: "Katzenbrunnen im Vergleich: 6 Modelle für Katzen"
+  title: "Katzenbrunnen im Vergleich: 9 Modelle für Katzen"
   description: >-
-    Sechs Katzenbrunnen vergleichen: leise Netzmodelle, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und
+    Neun Katzenbrunnen vergleichen: leise Netzmodelle, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und
     Reinigungsaufwand.
   canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   sitemap: true
@@ -68,6 +68,36 @@ items:
       reinigung: Tank, Trinkfläche, Pumpe und Filterkammer getrennt reinigen
       stromversorgung: 4.000-mAh-Akku
       eignung: Eine bis zwei Katzen; Standort ohne Steckdose
+    overrides: {}
+  - slug: petlibro-dockstream-2-smart
+    label: PETLIBRO Dockstream 2 Smart
+    type: product
+    recommendation: >-
+      Sinnvolle Netzvariante für einen festen Stellplatz, wenn kontinuierlicher Wasserfluss, Dual-Band-WLAN und
+      Trinkprotokolle wichtiger sind als kabellose Aufstellung.
+    values:
+      kapazitaet: 3 Liter
+      material: ABS-Kunststoff und Edelstahl-Trinkfläche
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Vierstufiger, modellgebundener PETLIBRO-Filter
+      reinigung: Wasserführende Teile von Hand reinigen; elektrische Basis nicht eintauchen
+      stromversorgung: Ausschließlich Netzbetrieb
+      eignung: Eine Katze; fester Stellplatz mit Steckdose und App-Tracking
+    overrides: {}
+  - slug: petlibro-dockstream-2-smart-cordless
+    label: PETLIBRO Dockstream 2 Smart Cordless
+    type: product
+    recommendation: >-
+      Premiumoption für eine Katze, wenn ein kabelloser Stellplatz, App-Trinkprotokolle und ein großer Akku den
+      höheren Preis und die notwendige Ladeplanung rechtfertigen.
+    values:
+      kapazitaet: 3 Liter
+      material: ABS-Kunststoff und Edelstahl-Trinkfläche
+      lautstaerke: Keine belastbare Herstellerangabe
+      filter: Vierstufiger, modellgebundener PETLIBRO-Filter
+      reinigung: Wasserführende Teile von Hand reinigen; Basis nicht abspülen oder eintauchen
+      stromversorgung: 5.200-mAh-Akku mit etwa 7 bis 8 Stunden Ladezeit
+      eignung: Eine Katze; Standort ohne dauerhaftes Stromkabel und App-Tracking
     overrides: {}
   - slug: petkit-eversweet-max-2-uvc
     label: PETKIT Eversweet Max 2 UVC
@@ -193,7 +223,7 @@ recommendation:
     PETLIBRO.
   winnerSlug: petkit-eversweet-solo-2-fountain
   alternativeSlug: oneisall-3-2l-cordless-fountain
-tableTitle: 6 Katzenbrunnen direkt verglichen
+tableTitle: 9 Katzenbrunnen direkt verglichen
 cardsTitle: Empfehlungen nach Haushalt und Standort
 faq:
   - question: Welcher Katzenbrunnen ist für die meisten Haushalte geeignet?

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T18:11:33.863Z",
+  "generatedAt": "2026-07-29T21:26:30.995Z",
   "expectedComparisons": 24,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -9,16 +9,16 @@
   "summary": {
     "comparisons": 24,
     "products": 67,
-    "sourceCells": 704,
-    "allResolved": 611,
+    "sourceCells": 718,
+    "allResolved": 625,
     "allUnresolved": 93,
-    "sourceCoverage": 86.8,
-    "renderedCells": 574,
-    "renderedResolved": 574,
+    "sourceCoverage": 87,
+    "renderedCells": 588,
+    "renderedResolved": 588,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 462,
-    "overrideCount": 214
+    "legacyValueCount": 476,
+    "overrideCount": 218
   },
   "failures": [],
   "comparisons": [
@@ -3982,7 +3982,7 @@
     {
       "slug": "beste-trinkbrunnen-fuer-katzen",
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "items": 7,
+      "items": 9,
       "criteria": 7,
       "visibleRows": 7,
       "hiddenRows": 0,
@@ -3991,8 +3991,8 @@
         {
           "key": "reinigung",
           "label": "Reinigung",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4004,6 +4004,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "Tank, Trinkfläche, Pumpe und Filterkammer getrennt reinigen",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "Wasserführende Teile von Hand reinigen; elektrische Basis nicht eintauchen",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "Wasserführende Teile von Hand reinigen; Basis nicht abspülen oder eintauchen",
               "resolved": true
             },
             {
@@ -4036,8 +4046,8 @@
         {
           "key": "eignung",
           "label": "Einsatzgebiet",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4049,6 +4059,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "Eine bis zwei Katzen; Standort ohne Steckdose",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "Eine Katze; fester Stellplatz mit Steckdose und App-Tracking",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "Eine Katze; Standort ohne dauerhaftes Stromkabel und App-Tracking",
               "resolved": true
             },
             {
@@ -4081,8 +4101,8 @@
         {
           "key": "material",
           "label": "Material",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4094,6 +4114,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "ABS-Tank mit Trinkfläche aus Edelstahl 304",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "ABS-Kunststoff und Edelstahl-Trinkfläche",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "ABS-Kunststoff und Edelstahl-Trinkfläche",
               "resolved": true
             },
             {
@@ -4126,8 +4156,8 @@
         {
           "key": "stromversorgung",
           "label": "Stromversorgung",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4139,6 +4169,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "4.000-mAh-Akku",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "Ausschließlich Netzbetrieb",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "5.200-mAh-Akku mit etwa 7 bis 8 Stunden Ladezeit",
               "resolved": true
             },
             {
@@ -4171,8 +4211,8 @@
         {
           "key": "filter",
           "label": "Filter und Folgekosten",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4184,6 +4224,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "Fünfstufig",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "Vierstufiger, modellgebundener PETLIBRO-Filter",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "Vierstufiger, modellgebundener PETLIBRO-Filter",
               "resolved": true
             },
             {
@@ -4216,8 +4266,8 @@
         {
           "key": "lautstaerke",
           "label": "Lautstärke",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4229,6 +4279,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "Herstellerangabe ungefähr 20 dB",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "Keine belastbare Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "Keine belastbare Herstellerangabe",
               "resolved": true
             },
             {
@@ -4261,8 +4321,8 @@
         {
           "key": "kapazitaet",
           "label": "Kapazität",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4274,6 +4334,16 @@
             {
               "product": "oneisall-3-2l-cordless-fountain",
               "value": "3,2 Liter",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart",
+              "value": "3 Liter",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-dockstream-2-smart-cordless",
+              "value": "3 Liter",
               "resolved": true
             },
             {

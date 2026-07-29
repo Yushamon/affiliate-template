@@ -7,6 +7,11 @@ heroImage:
 description: "Welche vernetzten Helfer im Haustieralltag sinnvoll sein können und worauf Halter vor dem Kauf achten sollten."
 category: "ratgeber"
 categoryLabel: "Ratgeber"
+linking:
+  keywords: ["smarte Gadgets für Hunde und Katzen", "Pet-Tech-Gadgets", "smarte Haustier-Gadgets"]
+  contexts: ["pet-tech", "smarte-haustiertechnik", "kaufberatung"]
+  priority: "normal"
+  maxOccurrences: 1
 tags:
   - "Pet-Tech"
   - "Kaufberatung"

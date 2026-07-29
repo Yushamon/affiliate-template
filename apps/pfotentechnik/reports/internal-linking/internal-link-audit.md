@@ -1,29 +1,18 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-29T18:11:35.843Z
+Erstellt: 2026-07-29T21:26:33.844Z
 
 ## Ergebnis
 
 - Dokumente: 185
-- Linkdefinitionen: 407
+- Linkdefinitionen: 440
 - Simulierte automatische Links: 403
 - Fehler: 0
-- Warnungen: 53
+- Warnungen: 42
 - Strict-kritisch: 0
 
 ## Befunde
 
-- **WARNING LINKING_METADATA_MISSING:** /futterautomat-katze/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /so-bewerten-wir/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.

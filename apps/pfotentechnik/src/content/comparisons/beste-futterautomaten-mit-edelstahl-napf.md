@@ -35,6 +35,9 @@ seo:
 comparisonType: feature
 group: Futterautomaten
 icon: 📖
+heroImage:
+  src: ../../assets/images/editorial/dog-automatic-feeder.webp
+  alt: Automatischer Futterspender für Hunde als redaktionelle Darstellung
 items:
   - slug: petlibro-granary-wifi-feeder
     label: PETLIBRO Granary WiFi Feeder
