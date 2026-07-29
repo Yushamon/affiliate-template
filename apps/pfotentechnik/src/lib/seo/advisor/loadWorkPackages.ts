@@ -1,68 +1,251 @@
-import { buildSeoWorkPackages, tasksFromProductHealth } from "./work-packages";
+import fs from "node:fs";
+import {
+  loadSeoDashboard,
+  type SeoDiagnostic,
+  type SeoRange,
+  type SeoRecommendation,
+} from "../loadDashboard";
+import type { AdvisorCategory, AdvisorOpportunity } from "./types";
+import {
+  buildSeoWorkPackages,
+  type ContentQualityInput,
+  type SeoWorkPackage,
+} from "./work-packages";
 import { mergeGeneratedPackagesIntoWorkspace } from "../../seo-copilot/package-workflow.mjs";
 import { readCopilotWorkspace } from "../../seo-copilot/store.mjs";
-import { loadSeoAdvisorData } from "./loadAdvisorData";
-import fs from "node:fs";
 
-const readContentQualityItems = () => {
+const MAX_SEARCH_RECOMMENDATIONS = 8;
+const MAX_CONTENT_FINDINGS = 8;
+const MAX_VISIBLE_PACKAGES = 12;
+
+const priorityWeight = { high: 3, medium: 2, low: 1 } as const;
+const attentionStatusWeight: Record<string, number> = {
+  "needs-work": 8,
+  "review-due": 7,
+  "verification-pending": 6,
+  "sent-to-codex": 5,
+  open: 4,
+  "waiting-window": 3,
+  snoozed: 2,
+  verified: 1,
+};
+
+const readContentQualityItems = (): ContentQualityInput[] => {
   const file = new URL("../../../generated/content-quality-advisor.json", import.meta.url);
   if (!fs.existsSync(file)) return [];
   try {
     const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    return Array.isArray(parsed.items) ? parsed.items : [];
+    if (!Array.isArray(parsed.items)) return [];
+    return parsed.items
+      .filter((item: ContentQualityInput) =>
+        item?.priority === "high"
+        || (item?.priority === "medium" && item?.confidence !== "low"))
+      .sort((left: ContentQualityInput, right: ContentQualityInput) =>
+        priorityWeight[right.priority] - priorityWeight[left.priority]
+        || right.confidence.localeCompare(left.confidence)
+        || left.id.localeCompare(right.id, "de"))
+      .slice(0, MAX_CONTENT_FINDINGS);
   } catch {
     return [];
   }
 };
 
-const loadSeoWorkPackageDataUncached = async () => {
-  const { payload, results, productIntelligence } = await loadSeoAdvisorData();
-  const workspace = readCopilotWorkspace();
-  const productTaskIds = tasksFromProductHealth(productIntelligence.health).map((task) => task.id);
-  const contentQualityItems = readContentQualityItems();
-  const rangeEntries = Object.entries(payload.ranges).map(([key, range]) => {
-    const result = results[key];
-    if (!result) {
-      throw new Error(`SEO-Advisor-Ergebnis für Zeitraum "${key}" fehlt.`);
-    }
-    const packages = buildSeoWorkPackages({
-      opportunities: result.opportunities,
-      rangeKey: key,
-      productHealth: productIntelligence.health,
-      contentQuality: contentQualityItems,
-      storedPackages: workspace.workPackages,
-    });
-    const suppressed = new Set(
-      packages
-        .filter((pkg) => [
-          "sent-to-codex",
-          "verification-pending",
-          "waiting-window",
-          "review-due",
-          "snoozed",
-          "verified",
-          "needs-work",
-        ].includes(pkg.status))
-        .flatMap((pkg) => pkg.taskIds),
-    );
-    return [key, {
-      label: range.label,
-      packages,
-      activeTaskIds: [...new Set([
-        ...result.opportunities.map((task) => task.id),
-        ...productTaskIds,
-        ...contentQualityItems.map((item) => item.id),
-      ])],
-      individualTasks: result.opportunities.filter((task) => !suppressed.has(task.id)),
-    }] as const;
-  });
+const categoryFor = (item: Pick<SeoRecommendation, "type" | "source">): AdvisorCategory => {
+  const value = `${item.type} ${item.source ?? ""}`.toLocaleLowerCase("de-DE");
+  if (/cannibal|duplicate/.test(value)) return "cannibalization";
+  if (/internal.?link|anchor|link/.test(value)) return "internal-link";
+  if (/eeat|trust|author|quelle/.test(value)) return "eeat";
+  if (/content.?gap|intent|missing.?content/.test(value)) return "content-gap";
+  if (/ctr|snippet|title|meta/.test(value)) return "ctr";
+  if (/technical|index|canonical|redirect|schema/.test(value)) return "technical";
+  return "ranking";
+};
 
-  mergeGeneratedPackagesIntoWorkspace(rangeEntries.flatMap(([, value]) => value.packages));
+const stableId = (value: string): string => {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return `essential-search|${(hash >>> 0).toString(36)}`;
+};
+
+const opportunityFromRecommendation = (
+  item: SeoRecommendation,
+  range: SeoRange,
+): AdvisorOpportunity => {
+  const category = categoryFor(item);
+  const page = range.pages.find((candidate) => candidate.normalizedPath === item.page);
+  const query = item.query
+    ? range.queries.find((candidate) => candidate.query.toLocaleLowerCase("de-DE") === item.query?.toLocaleLowerCase("de-DE"))
+    : undefined;
+  const metrics = page ?? query;
+  const high = item.priority === "high";
+  return {
+    id: stableId([item.type, item.page, item.query, item.title].filter(Boolean).join("|")),
+    title: item.title,
+    description: item.reason,
+    category,
+    priority: high ? "high" : "medium",
+    impact: high ? 4.5 : 3.4,
+    effortValue: category === "technical" ? 2.5 : 2,
+    effort: "niedrig",
+    confidence: metrics && metrics.impressions >= 30 ? 0.86 : metrics ? 0.68 : 0.6,
+    score: high ? 86 : 66,
+    estimatedMinutes: category === "technical" ? 45 : 30,
+    forecast: {
+      ctrPotential: 0,
+      positionPotential: 0,
+      clickPotential: 0,
+      trafficPotential: 0,
+      confidence: metrics ? 0.68 : 0.5,
+      assumptions: [],
+      dataBasis: "Vorhandene Search-Empfehlung; keine zusätzliche Forecast-Berechnung im kompakten Copilot.",
+    },
+    url: item.page || undefined,
+    query: item.query,
+    rationale: item.reason,
+    nextAction: item.action,
+    source: item.source ?? "search-dashboard",
+    rangeKey: range.key,
+    lowData: !metrics || metrics.impressions < 10,
+    expectedBenefit: high ? "hoch" : "mittel",
+    steps: [
+      "Den Befund gegen die aktuelle Zielseite und Search-Daten prüfen.",
+      "Nur die konkrete, belegte Änderung im bestehenden Scope umsetzen.",
+      "Passenden Audit und Release-Gate ausführen.",
+    ],
+    pageType: item.page?.startsWith("/produkt/")
+      ? "Produkt"
+      : item.page?.startsWith("/vergleiche/")
+        ? "Vergleich"
+        : item.page?.startsWith("/hersteller/")
+          ? "Hersteller"
+          : "Seite",
+    dataBasis: {
+      impressions: metrics?.impressions ?? 0,
+      clicks: metrics?.clicks ?? 0,
+      ctr: metrics?.ctr ?? 0,
+      position: metrics?.position ?? 0,
+      note: "Kompakter Copilot aus dem bereits synchronisierten Search-Dashboard.",
+    },
+    prompt: "",
+    codexPrompt: "",
+  };
+};
+
+const opportunityFromDiagnostic = (
+  item: SeoDiagnostic,
+  range: SeoRange,
+): AdvisorOpportunity => ({
+  id: stableId(`diagnostic|${item.code}|${item.source ?? ""}`),
+  title: `SEO-Datenfehler: ${item.code}`,
+  description: item.message,
+  category: "technical",
+  priority: "high",
+  impact: 4.8,
+  effortValue: 2,
+  effort: "niedrig",
+  confidence: 0.98,
+  score: 94,
+  estimatedMinutes: 30,
+  forecast: {
+    ctrPotential: 0,
+    positionPotential: 0,
+    clickPotential: 0,
+    trafficPotential: 0,
+    confidence: 0,
+    assumptions: [],
+    dataBasis: "Loader-Diagnose",
+  },
+  rationale: item.message,
+  nextAction: "Die Datenquelle oder den Sync gezielt reparieren und danach den kompakten Copilot neu bauen.",
+  source: item.source ?? "seo-dashboard",
+  rangeKey: range.key,
+  lowData: false,
+  expectedBenefit: "hoch",
+  steps: [
+    "Die genannte Datenquelle prüfen.",
+    "Nur den konkreten Loader- oder Sync-Fehler korrigieren.",
+    "Search-Sync und Release-Gate erneut ausführen.",
+  ],
+  pageType: "Technik",
+  affectedFile: item.source,
+  dataBasis: { note: item.message },
+  prompt: "",
+  codexPrompt: "",
+});
+
+const selectEssentialPackages = (packages: SeoWorkPackage[]): SeoWorkPackage[] =>
+  [...packages]
+    .filter((pkg) =>
+      pkg.status !== "verified"
+      && (pkg.status !== "open" || pkg.priority !== "low")
+      && (pkg.status !== "snoozed" || Boolean(pkg.snoozedUntil)))
+    .sort((left, right) =>
+      (attentionStatusWeight[right.status] ?? 0) - (attentionStatusWeight[left.status] ?? 0)
+      || right.impact - left.impact
+      || right.confidence - left.confidence
+      || left.effortValue - right.effortValue
+      || left.id.localeCompare(right.id, "de"))
+    .slice(0, MAX_VISIBLE_PACKAGES);
+
+const loadSeoWorkPackageDataUncached = async () => {
+  const payload = loadSeoDashboard();
+  const range = payload.ranges[payload.defaultRange] ?? Object.values(payload.ranges)[0];
+  if (!range) {
+    return {
+      defaultRange: "",
+      generatedAt: payload.generatedAt,
+      ranges: {},
+      summary: { visible: 0, hidden: 0, searchRecommendations: 0, contentFindings: 0 },
+    };
+  }
+
+  const workspace = readCopilotWorkspace();
+  const searchRecommendations = range.recommendations
+    .filter((item) => item.priority === "high" || item.priority === "medium")
+    .sort((left, right) => priorityWeight[right.priority] - priorityWeight[left.priority])
+    .slice(0, MAX_SEARCH_RECOMMENDATIONS);
+  const contentQualityItems = readContentQualityItems();
+  const opportunities = [
+    ...payload.diagnostics
+      .filter((item) => item.level === "error")
+      .slice(0, 2)
+      .map((item) => opportunityFromDiagnostic(item, range)),
+    ...searchRecommendations.map((item) => opportunityFromRecommendation(item, range)),
+  ];
+  const allPackages = buildSeoWorkPackages({
+    opportunities,
+    rangeKey: range.key,
+    contentQuality: contentQualityItems,
+    storedPackages: workspace.workPackages,
+  });
+  const packages = selectEssentialPackages(allPackages);
+  const activeTaskIds = [...new Set([
+    ...opportunities.map((item) => item.id),
+    ...contentQualityItems.map((item) => item.id),
+  ])];
+
+  mergeGeneratedPackagesIntoWorkspace(allPackages);
 
   return {
-    defaultRange: payload.defaultRange,
+    defaultRange: range.key,
     generatedAt: payload.generatedAt,
-    ranges: Object.fromEntries(rangeEntries),
+    ranges: {
+      [range.key]: {
+        label: range.label,
+        packages,
+        activeTaskIds,
+        individualTasks: [],
+      },
+    },
+    summary: {
+      visible: packages.length,
+      hidden: Math.max(0, allPackages.length - packages.length),
+      searchRecommendations: searchRecommendations.length,
+      contentFindings: contentQualityItems.length,
+    },
   };
 };
 
