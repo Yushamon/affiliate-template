@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "thresholds": {
+    "editorialNearDuplicate": 0.72,
+    "productNearDuplicate": 0.9,
+    "titleSimilarity": 0.86,
+    "minimumEditorialWords": 140,
+    "minimumProductWords": 90
+  },
+  "allowedSeparations": [
+    {
+      "routes": [
+        "/hund-frisst-zu-schnell/",
+        "/warum-schlingt-mein-hund/"
+      ],
+      "reason": "Gesundheitliche Handlungshilfe und Ursachen-Erklärung besitzen unterschiedliche primäre Nutzerbedürfnisse."
+    },
+    {
+      "routes": [
+        "/katze-trinkt-viel/",
+        "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/"
+      ],
+      "reason": "Gegensätzliche gesundheitliche Problemlagen müssen getrennt bleiben."
+    },
+    {
+      "routes": [
+        "/hund-trinkt-ploetzlich-viel/",
+        "/hund-trinkt-zu-wenig/"
+      ],
+      "reason": "Gegensätzliche gesundheitliche Problemlagen müssen getrennt bleiben."
+    },
+    {
+      "routes": [
+        "/gps-tracker/",
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "reason": "Kategorie-Hub und konkreter Produktvergleich erfüllen unterschiedliche Intentionen."
+    },
+    {
+      "routes": [
+        "/trinkbrunnen/",
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+      ],
+      "reason": "Kategorie-Hub und konkreter Produktvergleich erfüllen unterschiedliche Intentionen."
+    },
+    {
+      "routes": [
+        "/smarte-futterautomaten/",
+        "/vergleiche/beste-futterautomaten-fuer-katzen/"
+      ],
+      "reason": "Cornerstone und konkreter Produktvergleich erfüllen unterschiedliche Intentionen."
+    },
+    {
+      "routes": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "reason": "Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität."
+    },
+    {
+      "routes": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "reason": "Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile."
+    }
+  ],
+  "topicOwners": [
+    {
+      "id": "smart-pet-tech-category",
+      "cluster": "smarte-haustiertechnik",
+      "intent": "category-discovery",
+      "route": "/smarte-haustiertechnik/",
+      "terms": [
+        "smarte haustiertechnik",
+        "haustiertechnik"
+      ]
+    },
+    {
+      "id": "feeder-category",
+      "cluster": "futterautomaten",
+      "intent": "category-discovery",
+      "route": "/smarte-futterautomaten/",
+      "terms": [
+        "smarte futterautomaten",
+        "futterautomaten"
+      ]
+    },
+    {
+      "id": "fountain-category",
+      "cluster": "trinkbrunnen",
+      "intent": "category-discovery",
+      "route": "/trinkbrunnen/",
+      "terms": [
+        "trinkbrunnen",
+        "katzentrinkbrunnen",
+        "hundetrinkbrunnen"
+      ]
+    },
+    {
+      "id": "gps-category",
+      "cluster": "gps-tracker",
+      "intent": "category-discovery",
+      "route": "/gps-tracker/",
+      "terms": [
+        "gps tracker",
+        "haustier tracker"
+      ]
+    },
+    {
+      "id": "gps-vs-bluetooth",
+      "cluster": "gps-tracker",
+      "intent": "commercial-investigation",
+      "route": "/gps-oder-bluetooth/",
+      "terms": [
+        "gps oder bluetooth",
+        "gps tracker oder bluetooth tag",
+        "bluetooth tag"
+      ]
+    },
+    {
+      "id": "dog-drinks-suddenly",
+      "cluster": "gesundheit-hund",
+      "intent": "medical-information",
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "terms": [
+        "hund trinkt plötzlich viel",
+        "hund trinkt viel"
+      ]
+    },
+    {
+      "id": "cat-drinks-much",
+      "cluster": "gesundheit-katze",
+      "intent": "medical-information",
+      "route": "/katze-trinkt-viel/",
+      "terms": [
+        "katze trinkt viel",
+        "katze trinkt zu viel"
+      ]
+    },
+    {
+      "id": "dog-eats-fast",
+      "cluster": "ernaehrung-hund",
+      "intent": "medical-information",
+      "route": "/hund-frisst-zu-schnell/",
+      "terms": [
+        "hund frisst zu schnell",
+        "hund schlingt"
+      ]
+    },
+    {
+      "id": "dog-gps-comparison",
+      "cluster": "gps-tracker",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "terms": [
+        "gps tracker für hunde"
+      ]
+    },
+    {
+      "id": "cat-gps-comparison",
+      "cluster": "gps-tracker",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "terms": [
+        "gps tracker für katzen"
+      ]
+    },
+    {
+      "id": "cat-feeder-comparison",
+      "cluster": "futterautomaten",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "terms": [
+        "futterautomaten für katzen"
+      ]
+    },
+    {
+      "id": "dog-feeder-comparison",
+      "cluster": "futterautomaten",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "terms": [
+        "futterautomaten für hunde"
+      ]
+    },
+    {
+      "id": "cat-fountain-comparison",
+      "cluster": "trinkbrunnen",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "terms": [
+        "trinkbrunnen für katzen",
+        "katzentrinkbrunnen vergleich"
+      ]
+    },
+    {
+      "id": "dog-fountain-comparison",
+      "cluster": "trinkbrunnen",
+      "intent": "comparison",
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "terms": [
+        "trinkbrunnen für hunde",
+        "hundetrinkbrunnen vergleich"
+      ]
+    }
+  ],
+  "searchData": {
+    "available": true,
+    "generatedAt": "2026-07-28T19:59:58.782Z",
+    "range": "7d",
+    "matchedPages": 83
+  },
+  "summary": {
+    "indexablePages": 196,
+    "totalHtmlPages": 204,
+    "pageTypes": {
+      "category-hub": 5,
+      "comparison": 24,
+      "comparison-index": 1,
+      "decision-guide": 7,
+      "editorial-page": 14,
+      "guide": 27,
+      "homepage": 1,
+      "knowledge-hub": 1,
+      "legal": 4,
+      "manufacturer": 19,
+      "manufacturer-index": 1,
+      "medical-guide": 12,
+      "problem-solving-guide": 13,
+      "product": 67
+    },
+    "clusters": {
+      "futterautomaten": 81,
+      "gps-tracker": 26,
+      "hersteller": 15,
+      "hundeernaehrung": 3,
+      "hundegesundheit": 4,
+      "katzen-und-hundespezifische-hardware": 1,
+      "katzenernaehrung": 1,
+      "katzengesundheit": 1,
+      "katzenhaltung": 1,
+      "katzenklappen": 1,
+      "katzenverhalten": 1,
+      "smarte-haustiertechnik": 10,
+      "tierbeschaeftigung": 1,
+      "tierernaehrung": 1,
+      "trinkbrunnen": 49
+    },
+    "intents": {
+      "brand-navigation": 19,
+      "category-discovery": 9,
+      "commercial-investigation": 31,
+      "comparison": 24,
+      "informational": 21,
+      "medical-information": 14,
+      "problem-solving": 11,
+      "product-research": 67
+    },
+    "decisions": {
+      "CONSOLIDATE": 2,
+      "KEEP": 196,
+      "NOINDEX": 8
+    },
+    "errors": 0,
+    "warnings": 0,
+    "exactDuplicates": 0,
+    "nearDuplicates": 0,
+    "intentConflicts": 0,
+    "topicOwnerConflicts": 0,
+    "weakPages": 0,
+    "manualReview": 0,
+    "consolidatedPages": 2,
+    "differentiatedPages": 0,
+    "resolvedConflicts": 2
+  },
+  "findings": [],
+  "conflicts": [
+    {
+      "id": "gps-bluetooth-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/gps-tracker-oder-bluetooth-tag/",
+        "/gps-oder-bluetooth/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "decision-guide"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "commercial-investigation"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "GPS oder Bluetooth?"
+      ],
+      "titles": [
+        "",
+        "GPS oder Bluetooth für Hund und Katze?"
+      ],
+      "h1": [
+        "",
+        "GPS oder Bluetooth?"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/gps-oder-bluetooth/"
+      ],
+      "reason": "Beide Ratgeber beantworten dieselbe Systementscheidung. Die Zielseite ist technisch präziser, besser intern eingebunden und besitzt das belastbarere Quellenfundament.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/gps-oder-bluetooth/",
+        "actual": "/gps-oder-bluetooth/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "petkit-yumshare-dual-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-yumshare-dual/",
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "product"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "product-research"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "titles": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2 im Check"
+      ],
+      "h1": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "reason": "Beide Seiten beschreiben den PETKIT YumShare Dual-Hopper 2. Die P592-Zielseite enthält die vollständigere Modellabgrenzung, aktuelle Verfügbarkeit und die gepflegten Vergleichsbezüge.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/produkt/petkit-yumshare-dual-hopper/",
+        "actual": "/produkt/petkit-yumshare-dual-hopper/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "separated|/produkt/petkit-eversweet-solo-2-fountain/|/produkt/petkit-eversweet-solo-se/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "titles": [
+        "PETKIT Eversweet Solo 2 im Check",
+        "PETKIT Eversweet Solo SE im Check"
+      ],
+      "h1": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.7368,
+        "body": 0.4241,
+        "entities": 1,
+        "combined": 0.7076
+      },
+      "topicOwners": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "reason": "Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    },
+    {
+      "id": "separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/tractive-dog-6-xl/",
+        "/produkt/tractive-dog-6/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "titles": [
+        "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check",
+        "Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check"
+      ],
+      "h1": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.8182,
+        "body": 0.4347,
+        "entities": 1,
+        "combined": 0.726
+      },
+      "topicOwners": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "reason": "Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    }
+  ]
+}

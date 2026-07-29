@@ -1,18 +1,10 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
-import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
-import { buildSeoAdvisor } from "../../../lib/seo/advisor";
-import { loadAdvisorContent } from "../../../lib/seo/advisor/loadContent";
-import { loadProductIntelligence } from "../../../lib/seo/advisor/productIntelligence";
+import { loadSeoAdvisorData } from "../../../lib/seo/advisor/loadAdvisorData";
 import { getCopilotWorkspaceStatus } from "../../../lib/seo-copilot/workflow.mjs";
 
-const payload = loadSeoDashboard();
-const { documents, graph } = await loadAdvisorContent();
-const results = Object.fromEntries(
-  Object.entries(payload.ranges).map(([key, range]) => [key, buildSeoAdvisor({ payload, range, documents, graph })]),
-);
+const { payload, results, productIntelligence } = await loadSeoAdvisorData();
 const defaultResult = results[payload.defaultRange] ?? Object.values(results)[0];
-const productIntelligence = await loadProductIntelligence();
 const copilotWorkspace = getCopilotWorkspaceStatus();
 const clientPayload = JSON.stringify({
   defaultRange: payload.defaultRange,

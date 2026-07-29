@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-07-29T12:01:35.952Z",
+  "generatedAt": "2026-07-29T15:55:14.107Z",
   "strict": true,
   "summary": {
-    "documents": 187,
-    "contentRoutes": 187,
-    "buildRoutes": 206,
-    "validRoutes": 206,
-    "definitions": 408,
-    "renderedAutomaticLinks": 406,
+    "documents": 185,
+    "contentRoutes": 185,
+    "buildRoutes": 204,
+    "validRoutes": 204,
+    "definitions": 407,
+    "renderedAutomaticLinks": 403,
     "errors": 0,
-    "warnings": 54,
+    "warnings": 53,
     "critical": 0
   },
   "blockedAnchors": [
@@ -42,84 +42,77 @@
       "code": "LINKING_METADATA_MISSING",
       "message": "/futterautomat-katze/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/futterautomat-katze/",
-      "file": "apps/pfotentechnik/src/content/pages/futterautomat-katze.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/gps-tracker-oder-bluetooth-tag/",
-      "file": "apps/pfotentechnik/src/content/pages/gps-tracker-oder-bluetooth-tag.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\futterautomat-katze.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/hund-frisst-zu-schnell/",
-      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\hund-frisst-zu-schnell.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/hund-trinkt-ploetzlich-viel/",
-      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\hund-trinkt-ploetzlich-viel.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
-      "file": "apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\katze-an-trinkbrunnen-gewoehnen.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
-      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\katzentrinkbrunnen-dauerbetrieb-urlaub.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/seniorenhunde-richtig-versorgen/",
-      "file": "apps/pfotentechnik/src/content/pages/seniorenhunde-richtig-versorgen.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\seniorenhunde-richtig-versorgen.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
-      "file": "apps/pfotentechnik/src/content/pages/smarte-gadgets-fuer-hunde-und-katzen.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\smarte-gadgets-fuer-hunde-und-katzen.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/so-bewerten-wir/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/so-bewerten-wir/",
-      "file": "apps/pfotentechnik/src/content/pages/so-bewerten-wir.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\so-bewerten-wir.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/wasserstelle-katze-richtiger-standort/",
-      "file": "apps/pfotentechnik/src/content/pages/wasserstelle-katze-richtiger-standort.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\wasserstelle-katze-richtiger-standort.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
-      "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\wie-funktioniert-ein-futterautomat.md"
     },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
       "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.",
       "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
-      "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md"
+      "file": "apps\\pfotentechnik\\src\\content\\pages\\wie-kann-technik-gegen-langeweile-helfen.md"
     },
     {
       "severity": "warning",
@@ -443,18 +436,6 @@
       "targets": [
         "/trinkbrunnen-fuer-katzen-sinnvoll/",
         "/wie-viel-wasser-braucht-eine-katze/"
-      ]
-    },
-    {
-      "severity": "info",
-      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
-      "message": "„petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).",
-      "anchor": "petkit yumshare dual hopper 2",
-      "owner": "/produkt/petkit-yumshare-dual-hopper/",
-      "resolution": "configured-owner",
-      "targets": [
-        "/produkt/petkit-yumshare-dual-hopper/",
-        "/produkt/petkit-yumshare-dual/"
       ]
     },
     {
@@ -1571,12 +1552,6 @@
     },
     {
       "sourceRoute": "/wie-viele-mahlzeiten-katze/",
-      "targetRoute": "/produkt/petkit-yumshare-dual/",
-      "anchor": "PETKIT YumShare Dual-Hopper 2",
-      "score": 5829
-    },
-    {
-      "sourceRoute": "/wie-viele-mahlzeiten-katze/",
       "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
       "anchor": "Futterautomat für zwei Katzen",
       "score": 4829
@@ -2105,21 +2080,15 @@
     },
     {
       "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
-      "targetRoute": "/produkt/petkit-yumshare-dual/",
-      "anchor": "PETKIT YumShare Dual-Hopper 2",
-      "score": 6029
-    },
-    {
-      "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
       "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "anchor": "Mehrkatzenhaushalt",
       "score": 1918
     },
     {
-      "sourceRoute": "/produkt/petkit-yumshare-dual/",
-      "targetRoute": "/produkt/petkit-yumshare-dual-hopper/",
-      "anchor": "PETKIT YumShare Dual-Hopper 2",
-      "score": 6029
+      "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
     },
     {
       "sourceRoute": "/produkt/petkit-yumshare-solo-2/",
@@ -2603,12 +2572,6 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "targetRoute": "/produkt/petkit-yumshare-dual/",
-      "anchor": "PETKIT YumShare Dual-Hopper 2",
-      "score": 5429
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "targetRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
       "anchor": "Futterautomat für zwei Katzen",
       "score": 4429
@@ -2621,12 +2584,6 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "targetRoute": "/produkt/petkit-yumshare-dual/",
-      "anchor": "PETKIT YumShare Dual-Hopper 2",
-      "score": 5329
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "targetRoute": "/wie-viele-mahlzeiten-katze/",
       "anchor": "kleine Mahlzeiten",
       "score": 2217
@@ -2636,6 +2593,12 @@
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
       "score": 1308
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
@@ -2970,8 +2933,7 @@
     "/futterautomat-und-ernaehrung/": 14,
     "/futtermenge-hund/": 0,
     "/futtermenge-katze/": 4,
-    "/gps-oder-bluetooth/": 1,
-    "/gps-tracker-oder-bluetooth-tag/": 1,
+    "/gps-oder-bluetooth/": 2,
     "/gps-tracker-richtig-befestigen/": 3,
     "/gps-tracker/": 7,
     "/hersteller/aqara/": 2,
@@ -2984,7 +2946,7 @@
     "/hersteller/paj-gps/": 3,
     "/hersteller/pawbby/": 2,
     "/hersteller/pawsync/": 1,
-    "/hersteller/petkit/": 25,
+    "/hersteller/petkit/": 27,
     "/hersteller/petlibro/": 47,
     "/hersteller/petsafe/": 8,
     "/hersteller/surefeed/": 9,
@@ -3045,8 +3007,7 @@
     "/produkt/petkit-eversweet-ultra/": 2,
     "/produkt/petkit-fresh-element-infinity/": 0,
     "/produkt/petkit-fresh-element-solo/": 8,
-    "/produkt/petkit-yumshare-dual-hopper/": 7,
-    "/produkt/petkit-yumshare-dual/": 4,
+    "/produkt/petkit-yumshare-dual-hopper/": 6,
     "/produkt/petkit-yumshare-solo-2/": 2,
     "/produkt/petlibro-air-automatic-feeder/": 0,
     "/produkt/petlibro-air-wifi-feeder/": 0,

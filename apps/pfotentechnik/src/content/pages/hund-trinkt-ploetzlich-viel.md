@@ -16,8 +16,6 @@ seo:
   description: "Erfahren Sie, wann vermehrtes Trinken normal ist, welche Krankheiten dahinterstecken können und wann Sie zum Tierarzt sollten."
 ---
 
-# Hund trinkt plötzlich viel
-
 Trinkt Ihr Hund plötzlich deutlich mehr Wasser als sonst, ist das zunächst ein Symptom und keine eigenständige Krankheit. Hinter dem erhöhten Durst können harmlose Auslöser wie Hitze oder Bewegung stecken. Hält das Verhalten jedoch an oder treten weitere Beschwerden auf, sollte die Ursache tierärztlich abgeklärt werden.
 
 ## Das Wichtigste auf einen Blick

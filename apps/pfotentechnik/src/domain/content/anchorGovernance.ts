@@ -52,13 +52,13 @@ export const anchorGovernanceOwners: Readonly<Record<string, AnchorGovernanceOwn
     "exact": true
   },
   "bluetooth-tag": {
-    "target": "/gps-tracker-oder-bluetooth-tag/",
+    "target": "/gps-oder-bluetooth/",
     "priority": 100,
     "intent": "knowledge",
     "exact": true
   },
   "gps-tracker oder bluetooth-tag": {
-    "target": "/gps-tracker-oder-bluetooth-tag/",
+    "target": "/gps-oder-bluetooth/",
     "priority": 100,
     "intent": "knowledge",
     "exact": true

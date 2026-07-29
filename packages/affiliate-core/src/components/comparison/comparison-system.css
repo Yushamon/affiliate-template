@@ -4771,3 +4771,45 @@ body.dark .comparison-sticky-bar,
     background: var(--comparison-surface);
   }
 }
+
+/* PT_COMPARISON_MOBILE_WIDTH_ALIGNMENT_18_1_0_START */
+@media (max-width: 47.99rem) {
+  .comparison-shell[data-comparison-cover-version] {
+    --comparison-content-width: 100%;
+  }
+
+  .comparison-shell[data-comparison-cover-version] > .comparison-cover,
+  .comparison-shell[data-comparison-cover-version] > .comparison-editorial-recommendation,
+  .comparison-shell[data-comparison-cover-version] .comparison-decision-flow > .comparison-premium-section,
+  .comparison-shell[data-comparison-cover-version] .comparison-decision-flow > .comparison-explorer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .comparison-shell[data-comparison-cover-version] :is(
+    .comparison-alternatives,
+    .recommendation-grid,
+    .comparison-explorer,
+    .comparison-explorer__results,
+    .comparison-mobile-products,
+    .comparison-mobile-product,
+    .recommendation-card,
+    .comparison-winner-card,
+    .comparison-verdict
+  ) {
+    max-width: none;
+  }
+
+  .comparison-shell[data-comparison-cover-version] :is(
+    .comparison-alternatives,
+    .recommendation-grid,
+    .comparison-explorer__results,
+    .comparison-mobile-products
+  ) {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+/* PT_COMPARISON_MOBILE_WIDTH_ALIGNMENT_18_1_0_END */

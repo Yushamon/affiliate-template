@@ -215,8 +215,6 @@ seo:
   changefreq: monthly
 ---
 
-# Beste Futterautomaten mit Kamera
-
 Eine Kamera beantwortet nur eine Frage: **Was passiert im sichtbaren Bereich des Napfes?** Sie beweist weder sicher, welches Tier gefressen hat, noch wie viel aufgenommen wurde.
 
 ## Schnellentscheidung in 30 Sekunden

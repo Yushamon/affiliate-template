@@ -1,5 +1,5 @@
 ---
-import { getImage } from "astro:assets";
+import { getCachedImage } from "../../lib/imageOptimization";
 import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
 
 interface Alternative {
@@ -17,7 +17,7 @@ interface Props { alternatives: Alternative[] }
 const { alternatives } = Astro.props;
 const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
   ...item,
-  optimized: item.image?.src ? await getImage({ src:item.image.src, width:520, height:390, fit:"contain", quality:"high" }) : null
+  optimized: item.image?.src ? await getCachedImage({ src:item.image.src, width:520, height:390, fit:"contain", quality:"high" }) : null
 })));
 ---
 

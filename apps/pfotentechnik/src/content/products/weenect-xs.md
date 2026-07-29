@@ -467,7 +467,7 @@ Das bedeutet:
 - Abhängigkeit von Mobilfunk- und Satellitenempfang,
 - Abo-Pflicht zur Finanzierung der Datenübertragung.
 
-Ein Bluetooth-Tag arbeitet anders: Er ist auf Geräte in der Nähe oder ein fremdes Suchnetzwerk angewiesen. Die Unterschiede erklärt unser Ratgeber [GPS-Tracker oder Bluetooth-Tag?](/gps-tracker-oder-bluetooth-tag/).
+Ein Bluetooth-Tag arbeitet anders: Er ist auf Geräte in der Nähe oder ein fremdes Suchnetzwerk angewiesen. Die Unterschiede erklärt unser Ratgeber [GPS oder Bluetooth?](/gps-oder-bluetooth/).
 
 ## Akkulaufzeit realistisch einordnen
 

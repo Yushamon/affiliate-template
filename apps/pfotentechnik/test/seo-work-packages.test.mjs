@@ -171,6 +171,30 @@ test("Auditierbare Product-Health-Befunde werden als eigenes Paket aufgenommen",
   assert.match(packages[0].validationCommands.join("\n"), /audit:products:strict/);
 });
 
+test("Content-Quality-Befunde nutzen bestehende Pakete und Snooze-Logik", () => {
+  const packages = buildSeoWorkPackages({
+    opportunities: [],
+    rangeKey: "28d",
+    now,
+    contentQuality: [{
+      id: "content-quality|ratgeber-a",
+      route: "/ratgeber-a/",
+      affectedFile: "apps/pfotentechnik/src/content/pages/ratgeber-a.md",
+      title: "MANUAL_REVIEW: Ratgeber A",
+      decision: "MANUAL_REVIEW",
+      confidence: "medium",
+      priority: "medium",
+      problem: "Teilweise Intent-Überschneidung.",
+      nextAction: "Redaktionell prüfen.",
+      codes: ["CONTENT_NEAR_DUPLICATE"],
+    }],
+  });
+  assert.equal(packages[0].family, "eeat-content-quality");
+  assert.equal(packages[0].verificationMode, "immediate");
+  assert.equal(packages[0].tasks[0].sourceKind, "content-quality");
+  assert.match(packages[0].validationCommands.join("\n"), /audit:content-quality:strict/);
+});
+
 test("Ein laufendes Paket bleibt sichtbar, wenn sein Befund bereits verschwunden ist", () => {
   const original = build([opportunity()])[0];
   const stored = {

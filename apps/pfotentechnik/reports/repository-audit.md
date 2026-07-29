@@ -1,18 +1,18 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-29T12:01:33.069Z
+Erstellt: 2026-07-29T15:55:07.680Z
 
 ## Zusammenfassung
 
-- Routen: 206
+- Routen: 204
 - Fehler: 0
-- Warnungen: 50
-- Hinweise: 64
+- Warnungen: 49
+- Hinweise: 65
 
 ## Content-Bestand
 
-- pages: 76
-- products: 68
+- pages: 75
+- products: 67
 - manufacturers: 19
 - comparisons: 24
 
@@ -46,7 +46,6 @@ Erstellt: 2026-07-29T12:01:33.069Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-2-fountain/ (`src/content/products/petkit-eversweet-solo-2-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-se/ (`src/content/products/petkit-eversweet-solo-se.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/ (`src/content/products/petkit-fresh-element-infinity.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-yumshare-dual/ (`src/content/products/petkit-yumshare-dual.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-automatic-feeder/ (`src/content/products/petlibro-air-automatic-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-wifi-feeder/ (`src/content/products/petlibro-air-wifi-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-capsule-dog-fountain/ (`src/content/products/petlibro-capsule-dog-fountain.md`)
@@ -128,6 +127,7 @@ Erstellt: 2026-07-29T12:01:33.069Z
 - **INFO · css**: Selektor 3× definiert: .pt-values (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 3× definiert: .pt-value-grid (`src/styles/pfotentechnik.css`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: AdvisorCompare (`src/components/advisor/AdvisorCompare.astro`)
+- **INFO · unused-components**: Komponente ohne erkannten Import: ScenarioRecommendations (`src/components/comparison/ScenarioRecommendations.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ContentGraphSections (`src/components/ContentGraphSections.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductEngineInsights (`src/components/product-standard-2/ProductEngineInsights.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductStandard2 (`src/components/product-standard-2/ProductStandard2.astro`)

@@ -36,13 +36,13 @@ const {
 
 const isLocalAsset = typeof src !== "string";
 const constrainedWidths = width
-  ? [...new Set([Math.min(width, 240), Math.ceil(width * 0.67), width])]
+  ? [...new Set([Math.min(width, 320), width])]
       .filter((value) => value > 0)
       .sort((left, right) => left - right)
-  : [320, 640, 960];
+  : [480, 960];
 const resolvedWidths = widths ?? (
   layout === "full-width"
-    ? [480, 768, 1200, 1600]
+    ? [480, 960, 1440]
     : layout === "constrained"
       ? constrainedWidths
       : undefined

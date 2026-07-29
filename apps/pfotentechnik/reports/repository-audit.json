@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-07-29T12:01:33.069Z",
+    "generatedAt": "2026-07-29T15:55:07.680Z",
     "countsByCollection": {
-      "pages": 76,
-      "products": 68,
+      "pages": 75,
+      "products": 67,
       "manufacturers": 19,
       "comparisons": 24
     },
@@ -13,8 +13,8 @@
       "tierernaehrung": 2,
       "futterautomaten": 15,
       "fuetterung": 2,
-      "wissen": 3,
       "hundegesundheit": 8,
+      "wissen": 2,
       "katzenverhalten": 1,
       "katzengesundheit": 5,
       "gesundheit": 2,
@@ -28,11 +28,11 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 206,
+    "routes": 204,
     "findings": {
       "error": 0,
-      "warning": 50,
-      "info": 64
+      "warning": 49,
+      "info": 65
     }
   },
   "findings": [
@@ -203,12 +203,6 @@
       "area": "internal-linking",
       "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/",
       "file": "src/content/products/petkit-fresh-element-infinity.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-yumshare-dual/",
-      "file": "src/content/products/petkit-yumshare-dual.md"
     },
     {
       "severity": "warning",
@@ -695,6 +689,12 @@
       "area": "unused-components",
       "message": "Komponente ohne erkannten Import: AdvisorCompare",
       "file": "src/components/advisor/AdvisorCompare.astro"
+    },
+    {
+      "severity": "info",
+      "area": "unused-components",
+      "message": "Komponente ohne erkannten Import: ScenarioRecommendations",
+      "file": "src/components/comparison/ScenarioRecommendations.astro"
     },
     {
       "severity": "info",

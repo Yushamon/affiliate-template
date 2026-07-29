@@ -80,7 +80,7 @@ weaknesses:
 productSlugs:
   - "petkit-yumshare-solo-2"
   - "petkit-yumshare-dual-hopper"
-  - "petkit-yumshare-dual"
+  - "petkit-yumshare-dual-hopper"
   - "petkit-yumshare-solo"
   - "petkit-fresh-element-solo"
   - "petkit-fresh-element-infinity"

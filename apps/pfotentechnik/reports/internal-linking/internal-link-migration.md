@@ -20,7 +20,6 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 - „hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).
 - „katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).
 - „katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).
-- „petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).
 - „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
 - „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
 - „trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).
@@ -30,7 +29,6 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 ## Verbleibende manuelle Entscheidungen
 
 - /futterautomat-katze/ besitzt keine Linking-Metadaten.
-- /gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.
 - /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
 - /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
 - /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.

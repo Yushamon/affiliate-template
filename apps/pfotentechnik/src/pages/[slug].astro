@@ -1,6 +1,5 @@
 ---
 import { render } from "astro:content";
-import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
 import ArticleMeta from "@affiliate-core/components/ArticleMeta.astro";
@@ -40,6 +39,7 @@ import guideImage from "../assets/images/project/pfotentechnik/guide.webp";
 import inlineImage from "../assets/images/project/pfotentechnik/inline.webp";
 import productImage from "../assets/images/project/pfotentechnik/product.webp";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
+import { getCachedImage } from "../lib/imageOptimization";
 import {
   getComparisons,
   getManufacturers,
@@ -128,7 +128,7 @@ const heroImage = page.data.heroImage ?? {
   alt: page.data.title,
 };
 const ogImage = page.data.ogImage ?? heroImage;
-const optimizedOgImage = await getImage({
+const optimizedOgImage = await getCachedImage({
   src: ogImage.src,
   width: 1200,
   quality: "high",

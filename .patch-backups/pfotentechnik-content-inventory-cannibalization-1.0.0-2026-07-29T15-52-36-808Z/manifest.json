@@ -1,0 +1,184 @@
+{
+  "label": "pfotentechnik-content-inventory-cannibalization-1.0.0",
+  "createdAt": "2026-07-29T15:52:36.809Z",
+  "base": "pfotentechnik-performance-hardening-18.2.0",
+  "files": [
+    {
+      "file": "apps/pfotentechnik/package.json",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "7f00ff00aeed9115f911f5cbaab150a94729b3a8ba4558095805dbc7df43187c",
+      "afterHash": "5ea6aa13d54505dead4bca388f3f4c956e7ad957dc4a99d6307a666c687366ef"
+    },
+    {
+      "file": "apps/pfotentechnik/public/_redirects",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "5263e3d8ba7d3a1ad3f6f569f00e1a52bbb5160d7a197334cc8744952e75f419",
+      "afterHash": "d8b2524a8379579cba40598a13227fb50e310660b2b111b38831907f746a5998"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/content-quality/audit.mjs",
+      "action": "create",
+      "method": "create",
+      "beforeHash": null,
+      "afterHash": "c74b91330e091fe02317975b4a57575cb102a4d5efb5ffa5df140a2dc47a4e23"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/content-quality/config.json",
+      "action": "create",
+      "method": "create",
+      "beforeHash": null,
+      "afterHash": "d470d71a4e73bb658fc1199f09cad256ccfb2157abd9d2adb71a24de0e78be38"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/content-quality/core.mjs",
+      "action": "create",
+      "method": "create",
+      "beforeHash": null,
+      "afterHash": "7bb7bda29227e55820c9be158dcdd9ea7fe3dd2754e6d94d22b79b65596ff7cb"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/seo/release-preflight.mjs",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "03f540910180e331e029a1f926719e87de903e5a24f027b640eb38c9ec102041",
+      "afterHash": "041c1c8e6e171f776aedd0f3d9c7f49770684e52a9f4ae2f88dd38a3b00bfb57"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-kamera.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "c87b25053eb6d7eb1170dc8a67ac195ecb590b8b133336bc59fbe05b7eef342e",
+      "afterHash": "6af2292529c3ef6e8a37804c7369f5832fd7efe836198bf8acbf7bec801862bf"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "0f6380129ec5723875b7597f27ae640a02f45deaff727628880a83711e893417",
+      "afterHash": "4925f3191e12061822c8cb01e584dc75111169430638d085b7748e75f2fbc056"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "31f474ba4cbd6d4c372494f4ac054c1a308cec9acb572a86479de8e9f94d5a8e",
+      "afterHash": "1585abc578cc83c8dfbe7d78f2147fca2baa604147f9da7ba0a386b7837428e4"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/comparisons/beste-gps-tracker-fuer-katzen.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "70c62e9435dec8006028849fd7ef353942e9f42b49e797f8a6ee588cdbeb6be0",
+      "afterHash": "b299272b57dfd3b20f3d8f16f3f9567783aaed4126b201e18bae35e88cee53b1"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/manufacturers/petkit.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "74c7919abc57ea2378db8ccee959a2a536e0c884463d08cd5ac4a4af9f391f3f",
+      "afterHash": "b7c7821700df02df23c70abb836cdded60270d9c798e97706e12827bde4a2707"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/gps-tracker-oder-bluetooth-tag.md",
+      "action": "delete",
+      "method": "delete",
+      "beforeHash": "fc622c2a1e1456225b2c7e6fc6c15141041e6907e0015d88dde2e0eafcfc351e",
+      "afterHash": null
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "c4127baedff8d91854658bcc92c00d6386ff05f460ebd94a28813c465c64892a",
+      "afterHash": "9efcbd4542cd5ec3d0541f5ba4a1ac3a84038de50b734539e51b1f4c38b6b1b9"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "d87ed9e56ef380bce91857e7c40e4f0e2fee73183e4723dd29f3d8f5d7f40dc8",
+      "afterHash": "305100fc35f2d5574b9db5b2676c1148e24595998408bba550b4e5dc94397e66"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md",
+      "action": "delete",
+      "method": "delete",
+      "beforeHash": "8db5aa08782229e756e48f0709b94a31b89d791607f8675c4f1ec2e4706da198",
+      "afterHash": null
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-camera-feeder.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "52fb16f7063d3b58b12a922a9f6e36b8aec1c02ab46430f2146e8ddc057c7658",
+      "afterHash": "deac300d2f69aa31c4b80720599ca58f7e8fa2bd49751a6582b2d7c32c27f8b9"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/weenect-xs.md",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "1f1ff032ad3985dc506ab4cecd530f991adc57029f045eef9cfe85cef3a5449f",
+      "afterHash": "7ae0836e2aad63c4c10c8780b59fdc261e8a82b7946f16ea2f41132dd35028d3"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/anchor-governance.generated.json",
+      "action": "replace",
+      "method": "replace-generated",
+      "beforeHash": "3ecac4f43c5d43b566d86b22b3eecaa0b0fa186335c2e49b2e72411d66ddf2c5",
+      "afterHash": "958e8fe5ddc196a176b46a61159750476546ecb55341dd905863842515fb018b"
+    },
+    {
+      "file": "apps/pfotentechnik/src/domain/content/anchorGovernance.ts",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "52a182268169aab6b25ded907626640a50f765dcc7456f1a42c575fe541153fc",
+      "afterHash": "616de631ce92d8af54153140d331aa62336d33b14669b4f254eed2e096bc841c"
+    },
+    {
+      "file": "apps/pfotentechnik/src/generated/content-quality-advisor.json",
+      "action": "create",
+      "method": "create-generated",
+      "beforeHash": null,
+      "afterHash": "00e9230b850df03967eca937cbb371fa0662776596c89f268c6a34ec6a2650fc"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/loadWorkPackages.ts",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "a319fbe9f98e95f8e0b417c3f98cd90c4868b9d57f232aca5cf9aaed208064aa",
+      "afterHash": "874481ff986b1995d30415d94b4d6d08df1cba15ae864000e70cc3396294e633"
+    },
+    {
+      "file": "apps/pfotentechnik/src/lib/seo/advisor/work-packages.ts",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "2c2acecb2453b9a153cdecf9ade07c75a364eb9ffa52e7d59edb360fecf9f142",
+      "afterHash": "2c7afd2734bd04ded34d73cdb7cd10f7d25bfabd36553a1fabf56c5603f22e33"
+    },
+    {
+      "file": "apps/pfotentechnik/test/content-quality.test.mjs",
+      "action": "create",
+      "method": "create",
+      "beforeHash": null,
+      "afterHash": "0c0703c2235a92dd51f939b0f364635ab2ac0d67cad539fe683cb9e9a57cfa5c"
+    },
+    {
+      "file": "apps/pfotentechnik/test/seo-work-packages.test.mjs",
+      "action": "replace",
+      "method": "replace",
+      "beforeHash": "1cb880cee5a1d147518d60a0702b4c6ab7b66f9f22e459beb180ffae6d6aafab",
+      "afterHash": "ef7c91b07ab39ec6a7a57373461c364915bf9fe03b0fb197bfa6ff4ddbd8fc6a"
+    }
+  ],
+  "regeneratedOutputs": [
+    "apps/pfotentechnik/src/generated/content-graph.json",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.json",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.csv",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.md",
+    "apps/pfotentechnik/reports/content-quality/cannibalization-report.json",
+    "apps/pfotentechnik/reports/content-quality/cannibalization-report.md",
+    "apps/pfotentechnik/reports/content-quality/indexation-decisions.csv"
+  ]
+}

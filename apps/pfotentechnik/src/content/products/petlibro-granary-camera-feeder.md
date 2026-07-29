@@ -113,7 +113,7 @@ experience:
 alternatives:
   - petlibro-granary-dual-feeder
   - petkit-yumshare-solo
-  - petkit-yumshare-dual
+  - petkit-yumshare-dual-hopper
 comparisons:
   - beste-futterautomaten-fuer-katzen
   - beste-futterautomaten-fuer-hunde

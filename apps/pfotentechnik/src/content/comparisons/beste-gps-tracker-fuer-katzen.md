@@ -172,8 +172,6 @@ seo:
 canonical: /vergleiche/beste-gps-tracker-fuer-katzen/
 ---
 
-# Beste GPS-Tracker für Katzen
-
 Bei Katzen ist **nicht der Funktionsumfang**, sondern die **sichere Passform** entscheidend. Ein Tracker darf die natürliche Bewegung nicht beeinträchtigen und sollte nur mit einem geeigneten Sicherheitshalsband oder einer nachweislich sicheren Anti-Strangulationslösung verwendet werden.
 
 ## Schnellentscheidung in 30 Sekunden

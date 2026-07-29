@@ -6,16 +6,16 @@ Vergleich der vollständigen Astro-Produktions-Builds vor und nach der Bereinigu
 
 | Kennzahl | Vorher | Nachher | Veränderung |
 | --- | ---: | ---: | ---: |
-| Build-Dauer | 5:57 min | 1:21 min | −77,3 % |
-| Routengenerierung | 4:40 min | 1:13 min | −73,9 % |
-| Bildtransformationen | 3.704 | 3.453 | −251 / −6,8 % |
+| Build-Dauer | 5:57 min | 1:12 min | −79,8 % |
+| Routengenerierung | 4:40 min | 1:07 min | −76,1 % |
+| Bildtransformationen | 3.704 | 3.023 | −681 / −18,4 % |
 | CSS-Quelldateien | 31 | 23 | −8 / −25,8 % |
 | CSS-Source | 634.491 B | 494.185 B | −22,1 % |
 | `!important` in CSS-Source | 1.542 | 1.264 | −18,0 % |
 | Hydration-Direktiven | 0 | 0 | unverändert |
 | Globale DOM-Korrektur | vorhanden | entfernt | vollständig entfernt |
 
-Die absolute Build-Dauer profitiert auch vom warmen Bildcache; die separat beobachtete Routengenerierung zeigt den belastbareren Architekturgewinn. Besonders deutlich ist die vermiedene Doppelarbeit im SEO-Admin: `/admin/seo/prompts/` sank von 10,85 s auf 57 ms und `/admin/seo/tasks/` von 22,22 s auf 59 ms. Produktseiten liegen im verifizierten Lauf nach dem Build-Cache-Fix meist bei 0,14 bis 0,20 s statt zuvor ungefähr 0,7 bis 0,9 s in derselben Umgebung.
+Die absolute Build-Dauer profitiert auch vom warmen Bildcache; die separat beobachtete Routengenerierung zeigt den belastbareren Architekturgewinn. Besonders deutlich ist die vermiedene Doppelarbeit im SEO-Admin: `/admin/seo/prompts/` sank von 10,85 s auf 50 ms und `/admin/seo/tasks/` von 22,22 s auf 61 ms. Der Advisor benötigt nach der gemeinsamen Analyse noch 11,48 s statt 17,66 s im vorherigen Lauf. Produktseiten liegen im verifizierten Lauf meist bei 0,14 bis 0,20 s statt zuvor ungefähr 0,7 bis 0,9 s in derselben Umgebung.
 
 ## Repräsentative Routen
 
@@ -41,6 +41,8 @@ Die absolute Build-Dauer profitiert auch vom warmen Bildcache; die separat beoba
 - SEO-Advisor-Content, Product Intelligence und Work Packages werden in einem Build nur einmal berechnet.
 - Content Collections, der zusammengeführte Content-Graph, Related-Content-Tokens, interne Linkdefinitionen und der Produkt-Preisindex werden im Produktions-Build wiederverwendet.
 - Dynamische Routen erhalten ihren Content-Eintrag direkt aus `getStaticPaths`; der zusätzliche Einzelabruf pro Seite entfällt.
+- Advisor-Seite und eingebettete Arbeitspakete teilen dieselbe SEO-Analyse; die doppelte Berechnung aller Zeiträume entfällt.
+- Identische `getImage`-Transformationen werden buildweit geteilt, responsive Breiten auf zwei bis drei sinnvolle Varianten begrenzt.
 - Es gibt weiterhin keine Framework-Hydration und keine ausgelieferten Webfonts. Funktionales JavaScript für Vergleichsexplorer, Produktberater, Galerie, Sticky-Bar und Lightbox bleibt bewusst erhalten.
 
 ## Release-Gate

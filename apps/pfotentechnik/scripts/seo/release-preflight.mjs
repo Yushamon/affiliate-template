@@ -64,6 +64,7 @@ const report = {
   skipped,
   build: { requested: !skipBuild, fastBuild: process.env.PFOTENTECHNIK_FAST_BUILD === "1" },
   sitemap: {},
+  contentQuality: null,
   manifest: null,
   summary: {}
 };
@@ -91,6 +92,15 @@ try {
   npmScript("Gerenderte interne Linkziele", "audit:internal-link-targets:strict");
   npmScript("Gerenderter SEO-Build-Output", "audit:release-build-output:strict");
   npmScript("Technischer SEO-Build-Audit", "audit:technical-seo");
+  npmScript("Content-Quality und Kannibalisierung", "audit:content-quality:strict");
+  const contentQualityPath = path.join(APP_ROOT, "reports/content-quality/cannibalization-report.json");
+  if (!fs.existsSync(contentQualityPath)) throw new Error("Content-Quality-Report wurde nicht erzeugt.");
+  const contentQuality = JSON.parse(fs.readFileSync(contentQualityPath, "utf8"));
+  report.contentQuality = {
+    jsonPath: contentQualityPath,
+    markdownPath: path.join(APP_ROOT, "reports/content-quality/cannibalization-report.md"),
+    summary: contentQuality.summary ?? {}
+  };
   npmScript("Performance-Budget", "audit:performance:strict");
 
   console.log("\n[" + (phases.length + 1) + "] Release-Manifest");
@@ -145,6 +155,17 @@ try {
     "## Warnungen",
     "",
     ...(warnings.length ? warnings.map((item) => "- " + item) : ["Keine."]),
+    "",
+    "## Content Quality",
+    "",
+    ...(report.contentQuality
+      ? [
+          "- Report: " + report.contentQuality.markdownPath,
+          "- Indexierbare Seiten: " + (report.contentQuality.summary.indexablePages ?? 0),
+          "- Harte Fehler: " + (report.contentQuality.summary.errors ?? 0),
+          "- Warnungen: " + (report.contentQuality.summary.warnings ?? 0)
+        ]
+      : ["Kein Content-Quality-Report verfügbar."]),
     ""
   ].join("\n");
   fs.writeFileSync(path.join(markdownDirectory, "preflight-latest.md"), markdown, "utf8");

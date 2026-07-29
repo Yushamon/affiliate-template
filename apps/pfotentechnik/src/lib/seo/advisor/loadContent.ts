@@ -1,4 +1,3 @@
-import { getCollection } from "astro:content";
 import contentGraphJson from "../../../generated/content-graph.json";
 import {
   getCornerstoneEntries,
@@ -7,6 +6,12 @@ import {
 } from "../../../domain/content/linkTaxonomy";
 import { normalizeSeoPath } from "../loadDashboard";
 import type { ContentDocument, ContentGraphData } from "./types";
+import {
+  getComparisons,
+  getManufacturers,
+  getPages,
+  getProducts,
+} from "../../../domain/content/registry";
 
 type CollectionName = ContentDocument["collection"];
 type UnknownRecord = Record<string, unknown>;
@@ -36,10 +41,20 @@ const loadAdvisorContentUncached = async (): Promise<AdvisorContent> => {
   const graph = contentGraphJson as ContentGraphData;
   const graphByRoute = new Map(graph.nodes.map((node) => [normalizeSeoPath(node.route.replace(/^\/produkte\//, "/produkt/")), node]));
   const documents: ContentDocument[] = [];
-  const collectionNames: CollectionName[] = ["pages", "products", "manufacturers", "comparisons"];
+  const collections = await Promise.all([
+    getPages(),
+    getProducts(),
+    getManufacturers(),
+    getComparisons(),
+  ]);
+  const collectionEntries = [
+    ["pages", collections[0]],
+    ["products", collections[1]],
+    ["manufacturers", collections[2]],
+    ["comparisons", collections[3]],
+  ] as const;
 
-  for (const collection of collectionNames) {
-    const entries = await getCollection(collection);
+  for (const [collection, entries] of collectionEntries) {
     for (const entry of entries) {
       const data = entry.data as UnknownRecord;
       const slug = stringValue(data.slug) || entry.id.replace(/\.(md|mdx)$/i, "");

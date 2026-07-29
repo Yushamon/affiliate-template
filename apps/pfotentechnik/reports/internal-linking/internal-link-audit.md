@@ -1,20 +1,19 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-29T12:01:35.952Z
+Erstellt: 2026-07-29T15:55:14.107Z
 
 ## Ergebnis
 
-- Dokumente: 187
-- Linkdefinitionen: 408
-- Simulierte automatische Links: 406
+- Dokumente: 185
+- Linkdefinitionen: 407
+- Simulierte automatische Links: 403
 - Fehler: 0
-- Warnungen: 54
+- Warnungen: 53
 - Strict-kritisch: 0
 
 ## Befunde
 
 - **WARNING LINKING_METADATA_MISSING:** /futterautomat-katze/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
@@ -73,7 +72,6 @@ Erstellt: 2026-07-29T12:01:35.952Z
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).
-- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).
@@ -257,7 +255,6 @@ Erstellt: 2026-07-29T12:01:35.952Z
 - /wie-viele-mahlzeiten-hund/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
 - /wie-viele-mahlzeiten-hund/ → /hersteller/petlibro/: „Petlibro“
 - /wie-viele-mahlzeiten-hund/ → /hersteller/xiaomi/: „Xiaomi“
-- /wie-viele-mahlzeiten-katze/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
 - /wie-viele-mahlzeiten-katze/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /wie-viele-mahlzeiten-katze/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /wie-viele-mahlzeiten-katze/ → /hersteller/petlibro/: „Petlibro“
@@ -346,9 +343,8 @@ Erstellt: 2026-07-29T12:01:35.952Z
 - /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /produkt/petkit-fresh-element-solo/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-yumshare-dual-hopper/ → /smarte-futterautomaten/: „Futterautomat“
-- /produkt/petkit-yumshare-dual-hopper/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
 - /produkt/petkit-yumshare-dual-hopper/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
-- /produkt/petkit-yumshare-dual/ → /produkt/petkit-yumshare-dual-hopper/: „PETKIT YumShare Dual-Hopper 2“
+- /produkt/petkit-yumshare-dual-hopper/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-yumshare-solo-2/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/petkit-yumshare-solo-2/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petlibro-air-automatic-feeder/ → /hersteller/petlibro/: „PETLIBRO“
@@ -429,12 +425,11 @@ Erstellt: 2026-07-29T12:01:35.952Z
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /welpen-richtig-fuettern/: „Welpenfutter“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/xiaomi/: „Xiaomi“
-- /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
-- /vergleiche/beste-futterautomaten-mit-kamera/ → /produkt/petkit-yumshare-dual/: „PETKIT YumShare Dual-Hopper 2“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/surefeed/: „SureFeed“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“

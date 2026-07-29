@@ -133,3 +133,18 @@ test("dynamic routes reuse build-scoped content and derived indexes", () => {
     assert.doesNotMatch(route, /\bgetEntry\(/);
   }
 });
+
+test("SEO advisor and work packages share one build-scoped analysis", () => {
+  const appRoot = path.resolve(import.meta.dirname, "..");
+  const advisorPage = fs.readFileSync(path.join(appRoot, "src/pages/admin/seo/advisor.astro"), "utf8");
+  const advisorLoader = fs.readFileSync(path.join(appRoot, "src/lib/seo/advisor/loadAdvisorData.ts"), "utf8");
+  const workPackageLoader = fs.readFileSync(path.join(appRoot, "src/lib/seo/advisor/loadWorkPackages.ts"), "utf8");
+  const contentLoader = fs.readFileSync(path.join(appRoot, "src/lib/seo/advisor/loadContent.ts"), "utf8");
+
+  assert.match(advisorPage, /await loadSeoAdvisorData\(\)/);
+  assert.match(workPackageLoader, /await loadSeoAdvisorData\(\)/);
+  assert.doesNotMatch(workPackageLoader, /buildSeoAdvisor/);
+  assert.match(advisorLoader, /seoAdvisorDataPromise \?\?= loadSeoAdvisorDataUncached\(\)/);
+  assert.match(contentLoader, /getPages\(\)/);
+  assert.doesNotMatch(contentLoader, /\bgetCollection\(/);
+});

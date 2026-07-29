@@ -1,8 +1,8 @@
 # SEO Release Build Output Audit
 
-- Seiten: 206
+- Seiten: 204
 - Sitemap-Dateien: 1
-- Sitemap-URLs: 198
+- Sitemap-URLs: 196
 - Fehler: 0
 - Warnungen: 0
 

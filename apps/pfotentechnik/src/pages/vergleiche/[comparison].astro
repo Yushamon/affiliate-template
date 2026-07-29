@@ -1,6 +1,5 @@
 ---
 import { render } from "astro:content";
-import { getImage } from "astro:assets";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
@@ -18,6 +17,7 @@ import {
   getSourceContexts
 } from "../../domain/content/internalLinks";
 import { buildComparisonNextSteps } from "../../domain/recommendationLinks";
+import { getCachedImage } from "../../lib/imageOptimization";
 import {
   getComparisons,
   getManufacturers,
@@ -81,7 +81,7 @@ const comparisonAdvisorText = comparisonAdvisorDimensions.length
   : "Grenze Tierart, Nutzung, Ausstattung und Budget ein, bevor du einzelne Modelle gegenüberstellst.";
 
 const optimizedOgImage = comparison.heroImage
-  ? await getImage({
+  ? await getCachedImage({
       src: comparison.heroImage.src,
       width: 1200,
       quality: "high"

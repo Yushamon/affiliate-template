@@ -39,7 +39,7 @@ export type SeoWorkPackageTask = {
   acceptanceCriteria: string[];
   pageType: string;
   lowConfidence: boolean;
-  sourceKind: "advisor" | "product-health";
+  sourceKind: "advisor" | "product-health" | "content-quality";
 };
 
 export type SeoPackageCheck = {
@@ -116,10 +116,25 @@ export type ProductHealthInput = {
   }>;
 };
 
+export type ContentQualityInput = {
+  id: string;
+  route: string;
+  affectedFile?: string;
+  title: string;
+  decision: "IMPROVE" | "DIFFERENTIATE" | "MANUAL_REVIEW";
+  confidence: "high" | "medium" | "low";
+  priority: AdvisorPriority;
+  problem: string;
+  nextAction: string;
+  codes: string[];
+  validationCommands?: string[];
+};
+
 export type WorkPackageBuildInput = {
   opportunities: AdvisorOpportunity[];
   rangeKey: string;
   productHealth?: ProductHealthInput[];
+  contentQuality?: ContentQualityInput[];
   storedPackages?: StoredSeoWorkPackage[];
   now?: Date | string;
 };
@@ -271,6 +286,37 @@ export const tasksFromProductHealth = (products: ProductHealthInput[] = []): Seo
     }));
 });
 
+export const tasksFromContentQuality = (items: ContentQualityInput[] = []): SeoWorkPackageTask[] => items.map((item) => ({
+  id: item.id,
+  title: item.title,
+  priority: item.priority,
+  score: item.priority === "high" ? 88 : item.priority === "medium" ? 68 : 48,
+  explicitImpact: item.priority === "high" ? 90 : 70,
+  confidence: item.confidence === "high" ? 0.95 : item.confidence === "medium" ? 0.72 : 0.48,
+  effortValue: item.decision === "MANUAL_REVIEW" ? 3.5 : 2.5,
+  effort: item.decision === "MANUAL_REVIEW" ? "mittel" : "niedrig",
+  family: "eeat-content-quality",
+  verificationMode: "immediate",
+  url: item.route,
+  affectedFile: item.affectedFile,
+  problem: item.problem,
+  dataBasis: `Content-Quality-Strict-Audit: ${item.codes.join(", ") || item.decision}.`,
+  nextAction: item.nextAction,
+  steps: [
+    "Den gerenderten Befund und die Quelldatei gemeinsam prüfen.",
+    "Nur bei bestätigter Intent-Gleichheit konsolidieren; sonst die Seitenrollen differenzieren.",
+    "Content-Quality-Strict-Audit und zentrales Release-Gate ausführen."
+  ],
+  acceptanceCriteria: [
+    "Der konkrete Content-Quality-Befund ist nicht mehr aktiv oder fachlich als bewusste Abgrenzung dokumentiert.",
+    "Keine URL wird allein wegen Textlänge, geringer Search-Daten oder bloßer Themenähnlichkeit entfernt.",
+    "Sitemap, Redirects, Canonicals und interne Links bleiben konsistent."
+  ],
+  pageType: "Content Quality",
+  lowConfidence: item.confidence === "low",
+  sourceKind: "content-quality"
+}));
+
 const semanticTaskKey = (task: SeoWorkPackageTask) => [
   task.family,
   task.affectedFile ?? task.url ?? task.query ?? "unknown",
@@ -392,6 +438,9 @@ const validationsFor = (family: SeoWorkPackageFamily, tasks: SeoWorkPackageTask[
     commands.splice(1, 0, "npm --workspace apps/pfotentechnik run build:content-graph");
   }
   if (family === "product-health") commands.splice(1, 0, "npm --workspace apps/pfotentechnik run audit:products:strict");
+  if (tasks.some((task) => task.sourceKind === "content-quality")) {
+    commands.splice(1, 0, "npm --workspace apps/pfotentechnik run audit:content-quality:strict");
+  }
   return unique(commands);
 };
 
@@ -593,6 +642,7 @@ export const buildSeoWorkPackages = (input: WorkPackageBuildInput): SeoWorkPacka
   const tasks = dedupePackageTasks([
     ...input.opportunities.map(taskFromOpportunity),
     ...tasksFromProductHealth(input.productHealth),
+    ...tasksFromContentQuality(input.contentQuality),
   ]).filter((task) => !claimedTaskIds.has(task.id));
   const generated = groupTasks(tasks).map((group) => {
     const base = basePackageFromTasks(group, input.rangeKey, now);

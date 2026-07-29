@@ -16,8 +16,6 @@ seo:
   description: "Erfahren Sie, warum Hunde ihr Futter herunterschlingen, welche Risiken bestehen und welche Maßnahmen wirklich helfen."
 ---
 
-# Hund frisst zu schnell
-
 Viele Hunde verschlingen ihr Futter innerhalb weniger Sekunden. Gelegentlich ist das unproblematisch. Frisst Ihr Hund jedoch regelmäßig sehr hastig, kann dies zu Verdauungsproblemen, Erbrechen oder Verschlucken führen. Bei großen Hunderassen wird außerdem diskutiert, ob hastiges Fressen das Risiko einer Magendrehung erhöhen kann.
 
 ## Das Wichtigste auf einen Blick

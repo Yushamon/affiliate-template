@@ -1,5 +1,5 @@
 ---
-import { getImage } from "astro:assets";
+import { getCachedImage } from "../../lib/imageOptimization";
 
 interface GalleryItem {
   src: any;
@@ -17,13 +17,13 @@ const { name, items } = Astro.props;
 const optimized = await Promise.all(items.map(async (item, index) => {
   try {
     const [image, thumbnail] = await Promise.all([
-      getImage({
+      getCachedImage({
         src: item.src,
-        widths: [480, 768, 1024],
+        widths: [480, 960],
         sizes: "(max-width: 760px) 100vw, 48vw",
         quality: "high"
       }),
-      getImage({
+      getCachedImage({
         src: item.src,
         width: 180,
         height: 135,

@@ -1,4 +1,8 @@
-import { getCollection } from "astro:content";
+import {
+  getComparisons,
+  getManufacturers,
+  getProducts,
+} from "../../../domain/content/registry";
 
 export type ProductDiscovery = {
   slug: string;
@@ -91,9 +95,9 @@ const withPoints = (checks: RawHealthCheck[]) => {
 
 const loadProductIntelligenceUncached = async (): Promise<ProductIntelligence> => {
   const [products, manufacturers, comparisons] = await Promise.all([
-    getCollection("products"),
-    getCollection("manufacturers"),
-    getCollection("comparisons"),
+    getProducts(),
+    getManufacturers(),
+    getComparisons(),
   ]);
   const productBySlug = new Map(products.map((entry) => [entry.data.slug, entry]));
   const manufacturerBySlug = new Map(manufacturers.map((entry) => [entry.data.slug, entry]));

@@ -157,8 +157,6 @@ seo:
 canonical: /vergleiche/beste-gps-tracker-fuer-hunde/
 ---
 
-# Beste GPS-Tracker für Hunde
-
 Ein GPS-Tracker verhindert **nicht**, dass ein Hund entläuft. Er hilft lediglich dabei, den Aufenthaltsort schneller zu bestimmen. Die wichtigste Entscheidung ist deshalb nicht die App, sondern das passende Ortungssystem.
 
 ## Schnellentscheidung in 30 Sekunden

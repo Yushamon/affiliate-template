@@ -1,5 +1,4 @@
 ---
-import { getImage } from "astro:assets";
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import "../../styles/pfotentechnik-product-mobile-premium.css";
@@ -24,6 +23,7 @@ import {
 } from "../../domain/content/internalLinks";
 import { buildProductNextSteps } from "../../domain/recommendationLinks";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
+import { getCachedImage } from "../../lib/imageOptimization";
 import {
   getComparisons,
   getManufacturers,
@@ -263,7 +263,7 @@ const reviewProduct = {
             : undefined
       };
 
-const optimizedOgImage = await getImage({
+const optimizedOgImage = await getCachedImage({
   src: heroImage,
   width: 1200,
   quality: "high"

@@ -159,8 +159,6 @@ seo:
   changefreq: monthly
 ---
 
-# Beste Futterautomaten ohne WLAN
-
 Ein Futterautomat ohne WLAN ist nicht automatisch zuverlässiger – er ist lediglich **nicht von Router, Cloud oder Benutzerkonto abhängig**. Motor, Batterien, Uhrzeit und Mechanik bleiben weiterhin mögliche Fehlerquellen.
 
 ## Schnellentscheidung in 30 Sekunden

@@ -1,25 +1,35 @@
-import { loadSeoDashboard } from "../loadDashboard";
-import { buildSeoAdvisor } from "./index";
-import { loadAdvisorContent } from "./loadContent";
-import { loadProductIntelligence } from "./productIntelligence";
 import { buildSeoWorkPackages, tasksFromProductHealth } from "./work-packages";
 import { mergeGeneratedPackagesIntoWorkspace } from "../../seo-copilot/package-workflow.mjs";
 import { readCopilotWorkspace } from "../../seo-copilot/store.mjs";
+import { loadSeoAdvisorData } from "./loadAdvisorData";
+import fs from "node:fs";
+
+const readContentQualityItems = () => {
+  const file = new URL("../../../generated/content-quality-advisor.json", import.meta.url);
+  if (!fs.existsSync(file)) return [];
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+    return Array.isArray(parsed.items) ? parsed.items : [];
+  } catch {
+    return [];
+  }
+};
 
 const loadSeoWorkPackageDataUncached = async () => {
-  const payload = loadSeoDashboard();
-  const [{ documents, graph }, productIntelligence] = await Promise.all([
-    loadAdvisorContent(),
-    loadProductIntelligence(),
-  ]);
+  const { payload, results, productIntelligence } = await loadSeoAdvisorData();
   const workspace = readCopilotWorkspace();
   const productTaskIds = tasksFromProductHealth(productIntelligence.health).map((task) => task.id);
+  const contentQualityItems = readContentQualityItems();
   const rangeEntries = Object.entries(payload.ranges).map(([key, range]) => {
-    const result = buildSeoAdvisor({ payload, range, documents, graph });
+    const result = results[key];
+    if (!result) {
+      throw new Error(`SEO-Advisor-Ergebnis für Zeitraum "${key}" fehlt.`);
+    }
     const packages = buildSeoWorkPackages({
       opportunities: result.opportunities,
       rangeKey: key,
       productHealth: productIntelligence.health,
+      contentQuality: contentQualityItems,
       storedPackages: workspace.workPackages,
     });
     const suppressed = new Set(
@@ -41,6 +51,7 @@ const loadSeoWorkPackageDataUncached = async () => {
       activeTaskIds: [...new Set([
         ...result.opportunities.map((task) => task.id),
         ...productTaskIds,
+        ...contentQualityItems.map((item) => item.id),
       ])],
       individualTasks: result.opportunities.filter((task) => !suppressed.has(task.id)),
     }] as const;
