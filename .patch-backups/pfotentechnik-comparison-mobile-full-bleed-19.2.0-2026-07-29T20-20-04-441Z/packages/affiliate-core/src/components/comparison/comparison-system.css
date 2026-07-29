@@ -20,14 +20,7 @@
 }
 
 .comparison-detail {
-  --comparison-readable-width: 76rem;
-  --comparison-page-gutter: var(--pt-page-gutter, 1rem);
-}
 
-.comparison-detail > .comparison-content,
-.comparison-detail > #faq {
-  width: min(calc(100% - (2 * var(--comparison-page-gutter))), var(--comparison-readable-width));
-  margin-inline: auto;
 }
 
 .comparison-detail > *,
@@ -4228,45 +4221,6 @@ html.dark .comparison-table-price[data-price-assessment="expensive"] > small {
 }
 
 @media (max-width: 760px) {
-  .comparison-detail {
-    width: 100vw;
-    max-width: none;
-    margin-inline: calc(50% - 50vw);
-  }
-
-  .comparison-detail > :not(.comparison-content):not(#faq) {
-    width: 100%;
-    max-width: none;
-    margin-inline: 0;
-  }
-
-  .comparison-detail > .comparison-content,
-  .comparison-detail > #faq {
-    width: calc(100% - (2 * var(--comparison-page-gutter)));
-    max-width: var(--comparison-readable-width);
-    margin-inline: auto;
-  }
-
-  .comparison-shell,
-  .comparison-shell > *,
-  .comparison-shell .comparison-decision-flow,
-  .comparison-shell .comparison-decision-flow > *,
-  .comparison-shell .comparison-cover,
-  .comparison-shell .comparison-editorial-recommendation,
-  .comparison-shell .comparison-premium-section,
-  .comparison-shell .comparison-lab {
-    width: 100%;
-    max-width: none;
-    margin-inline: 0;
-  }
-
-  .comparison-shell,
-  .comparison-shell .comparison-cover,
-  .comparison-shell .comparison-editorial-recommendation,
-  .comparison-shell .comparison-premium-section,
-  .comparison-shell .comparison-lab {
-    padding-inline: 0;
-  }
 
   .comparison-shell .recommendation-card > .comparison-price-signal {
     grid-column: 1 / -1 !important;
