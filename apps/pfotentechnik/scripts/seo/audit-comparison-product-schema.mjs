@@ -14,18 +14,14 @@ const schema = source.match(/const comparisonItemListSchema = \{[\s\S]*?\n\};/)?
 const errors = [];
 const warnings = [];
 
-if (!schema) {
-  errors.push("comparisonItemListSchema fehlt.");
-}
+if (!schema) errors.push("comparisonItemListSchema fehlt.");
 
 if (
   schema.includes('"@type": "Product"') ||
   schema.includes("item: {") ||
   schema.includes("#product")
 ) {
-  errors.push(
-    "Vergleichs-ItemList enthält Product-Markup. Auf Übersichtsseiten dürfen ListItems nur auf die Produktseiten verweisen."
-  );
+  errors.push("Vergleichs-ItemList enthält unvollständiges Product-Markup.");
 }
 
 for (const required of [
@@ -45,12 +41,21 @@ function htmlFiles(dir) {
 
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const target = path.join(dir, entry.name);
+
     if (entry.isDirectory()) return htmlFiles(target);
-    return entry.isFile() && entry.name.endsWith(".html") ? [target] : [];
+
+    if (!entry.isFile() || entry.name !== "index.html") return [];
+
+    const relativePath = path.relative(path.join(app, "dist", "vergleiche"), target);
+
+    // Die Hub-Seite /vergleiche/ ist keine einzelne Vergleichsdetailseite.
+    if (relativePath === "index.html") return [];
+
+    return [target];
   });
 }
 
-function schemaTypes(node) {
+function typesOf(node) {
   const type = node?.["@type"];
   return Array.isArray(type) ? type : type ? [type] : [];
 }
@@ -71,50 +76,45 @@ let checkedPages = 0;
 let checkedItemLists = 0;
 
 for (const file of htmlFiles(path.join(app, "dist", "vergleiche"))) {
+  const relativeComparisonFile = path
+    .relative(path.join(app, "dist", "vergleiche"), file)
+    .replace(/\\/g, "/");
+
+  // Die Hub-/Indexseite ist keine einzelne Vergleichsdetailseite und
+  // benötigt daher kein Produkt-ItemList nach dem Detailseitenvertrag.
+  if (relativeComparisonFile === "index.html") continue;
+
   const html = fs.readFileSync(file, "utf8");
-  const scripts = [
-    ...html.matchAll(
-      /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
-    )
-  ];
+  const parsedSchemas = [];
 
-  const pageSchemas = [];
-
-  for (const match of scripts) {
+  for (const match of html.matchAll(
+    /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
+  )) {
     try {
-      pageSchemas.push(JSON.parse(match[1]));
+      parsedSchemas.push(JSON.parse(match[1]));
     } catch {
       errors.push(`${path.relative(app, file)} enthält ungültiges JSON-LD.`);
     }
   }
 
   checkedPages += 1;
-  let pageItemListCount = 0;
+  let itemListCount = 0;
+  let faqCount = 0;
 
-  for (const data of pageSchemas) {
+  for (const data of parsedSchemas) {
     walk(data, (node) => {
-      const types = schemaTypes(node);
+      const types = typesOf(node);
 
       if (types.includes("Product")) {
-        const hasEligibility =
-          node.offers ||
-          node.review ||
-          node.aggregateRating;
-
-        if (!hasEligibility) {
-          errors.push(
-            `${path.relative(app, file)} enthält Product ohne offers, review oder aggregateRating.`
-          );
-        }
-
         errors.push(
-          `${path.relative(app, file)} enthält Product-Markup auf einer Vergleichs-Übersichtsseite.`
+          `${path.relative(app, file)} enthält Product-Markup auf einer Vergleichsseite.`
         );
       }
 
+      if (types.includes("FAQPage")) faqCount += 1;
       if (!types.includes("ItemList")) return;
 
-      pageItemListCount += 1;
+      itemListCount += 1;
       checkedItemLists += 1;
 
       const items = Array.isArray(node.itemListElement)
@@ -123,78 +123,54 @@ for (const file of htmlFiles(path.join(app, "dist", "vergleiche"))) {
 
       if (node.numberOfItems !== items.length) {
         errors.push(
-          `${path.relative(app, file)}: numberOfItems stimmt nicht mit itemListElement überein.`
+          `${path.relative(app, file)}: numberOfItems stimmt nicht mit den ListItems überein.`
         );
       }
 
       const positions = new Set();
 
       for (const item of items) {
-        if (!schemaTypes(item).includes("ListItem")) {
-          errors.push(
-            `${path.relative(app, file)} enthält ein ItemList-Element ohne ListItem-Typ.`
-          );
+        if (!typesOf(item).includes("ListItem")) {
+          errors.push(`${path.relative(app, file)} enthält ein Element ohne ListItem-Typ.`);
           continue;
         }
 
         if (!Number.isInteger(item.position) || item.position < 1) {
-          errors.push(
-            `${path.relative(app, file)} enthält eine ungültige ListItem-Position.`
-          );
+          errors.push(`${path.relative(app, file)} enthält eine ungültige Position.`);
         } else if (positions.has(item.position)) {
-          errors.push(
-            `${path.relative(app, file)} enthält eine doppelte ListItem-Position.`
-          );
+          errors.push(`${path.relative(app, file)} enthält eine doppelte Position.`);
         } else {
           positions.add(item.position);
         }
 
         if (typeof item.url !== "string" || !/^https?:\/\//.test(item.url)) {
-          errors.push(
-            `${path.relative(app, file)} enthält eine ungültige direkte Produkt-URL.`
-          );
+          errors.push(`${path.relative(app, file)} enthält eine ungültige Produkt-URL.`);
         }
 
         if (typeof item.name !== "string" || !item.name.trim()) {
-          errors.push(
-            `${path.relative(app, file)} enthält ein ListItem ohne Produktnamen.`
-          );
+          errors.push(`${path.relative(app, file)} enthält ein ListItem ohne Namen.`);
         }
 
         if ("item" in item) {
-          errors.push(
-            `${path.relative(app, file)} verschachtelt erneut ein item-Objekt im ListItem.`
-          );
+          errors.push(`${path.relative(app, file)} enthält ein verschachteltes item-Objekt.`);
         }
       }
     });
   }
 
-  if (pageItemListCount !== 1) {
+  if (itemListCount !== 1) {
     errors.push(
-      `${path.relative(app, file)} enthält ${pageItemListCount} ItemList-Schemata statt genau einem.`
+      `${path.relative(app, file)} enthält ${itemListCount} ItemList-Schemata statt genau einem.`
     );
   }
 
-  const faqCount = pageSchemas.reduce((count, data) => {
-    let found = 0;
-    walk(data, (node) => {
-      if (schemaTypes(node).includes("FAQPage")) found += 1;
-    });
-    return count + found;
-  }, 0);
-
   if (faqCount > 1) {
-    errors.push(
-      `${path.relative(app, file)} enthält mehrfaches FAQPage-Markup.`
-    );
+    errors.push(`${path.relative(app, file)} enthält mehrfaches FAQPage-Markup.`);
   }
 }
 
 if (!checkedPages) {
-  warnings.push(
-    "Kein dist/vergleiche gefunden; nur Quellcodeprüfung ausgeführt."
-  );
+  warnings.push("Keine gebauten Vergleichsdetailseiten gefunden; nur Quellcodeprüfung ausgeführt.");
 }
 
 warnings.forEach((warning) => console.warn(`INFO  ${warning}`));
@@ -206,7 +182,7 @@ if (errors.length) {
 
 console.log("OK  Vergleichsseiten enthalten keine unvollständigen Product-Snippets.");
 console.log("OK  ItemList nutzt direkte ListItem-URLs mit stabilen Positionen.");
-console.log("OK  Doppelte ItemList- und FAQPage-Schemata werden erkannt.");
+console.log("OK  Vergleichs-Hub /vergleiche/ wird nicht als Detailseite geprüft.");
 console.log(
   checkedPages
     ? `INFO  ${checkedPages} gebaute Vergleichsseiten und ${checkedItemLists} ItemLists geprüft.`

@@ -1,6 +1,6 @@
 {
-  "version": "3.0.2",
-  "generatedAt": "2026-07-29T11:48:04.524Z",
+  "version": "3.0.3",
+  "generatedAt": "2026-07-29T11:55:53.740Z",
   "strict": true,
   "summary": {
     "documents": 187,
@@ -9,9 +9,9 @@
     "validRoutes": 206,
     "definitions": 408,
     "renderedAutomaticLinks": 406,
-    "errors": 8,
+    "errors": 0,
     "warnings": 54,
-    "critical": 8
+    "critical": 0
   },
   "blockedAnchors": [
     "akku",
@@ -37,118 +37,6 @@
     "wasser"
   ],
   "findings": [
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "futtermenge katze",
-      "targets": [
-        "/futtermenge-katze/",
-        "/uebergewicht-bei-katzen-vermeiden/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/futtermenge-katze.md",
-        "apps/pfotentechnik/src/content/pages/uebergewicht-bei-katzen-vermeiden.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "hundetrinkbrunnen",
-      "targets": [
-        "/trinkbrunnen-hund/",
-        "/trinkbrunnen/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "katze trinkt viel",
-      "targets": [
-        "/katze-trinkt-viel/",
-        "/wie-viel-wasser-braucht-eine-katze/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/katze-trinkt-viel.md",
-        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "katze trinkt zu wenig",
-      "targets": [
-        "/trinkbrunnen-fuer-katzen-sinnvoll/",
-        "/wie-viel-wasser-braucht-eine-katze/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
-        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "petkit yumshare dual hopper 2",
-      "targets": [
-        "/produkt/petkit-yumshare-dual-hopper/",
-        "/produkt/petkit-yumshare-dual/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
-        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "trinkbrunnen reinigen",
-      "targets": [
-        "/katzentrinkbrunnen-richtig-reinigen/",
-        "/trinkbrunnen-fuer-katzen-sinnvoll/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
-        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "wasserbedarf hund",
-      "targets": [
-        "/hund-trinkt-zu-wenig/",
-        "/wie-viel-wasser-braucht-ein-hund/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/hund-trinkt-zu-wenig.md",
-        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-ein-hund.md"
-      ]
-    },
-    {
-      "severity": "error",
-      "code": "UNRESOLVED_ANCHOR_CONFLICT",
-      "message": "„wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
-      "anchor": "wie oft hund futtern",
-      "targets": [
-        "/fuetterungszeiten-nach-alter/",
-        "/warum-hunde-feste-fuetterungszeiten-brauchen/"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/content/pages/fuetterungszeiten-nach-alter.md",
-        "apps/pfotentechnik/src/content/pages/warum-hunde-feste-fuetterungszeiten-brauchen.md"
-      ]
-    },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",
@@ -512,6 +400,66 @@
     {
       "severity": "info",
       "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„futtermenge katze“ besitzt den eindeutigen Eigentümer /futtermenge-katze/ (configured-owner).",
+      "anchor": "futtermenge katze",
+      "owner": "/futtermenge-katze/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/futtermenge-katze/",
+        "/uebergewicht-bei-katzen-vermeiden/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).",
+      "anchor": "hundetrinkbrunnen",
+      "owner": "/trinkbrunnen-hund/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).",
+      "anchor": "katze trinkt viel",
+      "owner": "/katze-trinkt-viel/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/katze-trinkt-viel/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).",
+      "anchor": "katze trinkt zu wenig",
+      "owner": "/wie-viel-wasser-braucht-eine-katze/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).",
+      "anchor": "petkit yumshare dual hopper 2",
+      "owner": "/produkt/petkit-yumshare-dual-hopper/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/produkt/petkit-yumshare-dual-hopper/",
+        "/produkt/petkit-yumshare-dual/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
       "message": "„trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).",
       "anchor": "trinkbrunnen fur hunde",
       "owner": "/trinkbrunnen-hund/",
@@ -531,6 +479,42 @@
       "targets": [
         "/trinkbrunnen-fuer-katzen-sinnvoll/",
         "/trinkbrunnen/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).",
+      "anchor": "trinkbrunnen reinigen",
+      "owner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/katzentrinkbrunnen-richtig-reinigen/",
+        "/trinkbrunnen-fuer-katzen-sinnvoll/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„wasserbedarf hund“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-ein-hund/ (configured-owner).",
+      "anchor": "wasserbedarf hund",
+      "owner": "/wie-viel-wasser-braucht-ein-hund/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/hund-trinkt-zu-wenig/",
+        "/wie-viel-wasser-braucht-ein-hund/"
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).",
+      "anchor": "wie oft hund futtern",
+      "owner": "/fuetterungszeiten-nach-alter/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/fuetterungszeiten-nach-alter/",
+        "/warum-hunde-feste-fuetterungszeiten-brauchen/"
       ]
     }
   ],

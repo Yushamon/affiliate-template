@@ -1,26 +1,18 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-29T11:48:04.524Z
+Erstellt: 2026-07-29T11:55:53.740Z
 
 ## Ergebnis
 
 - Dokumente: 187
 - Linkdefinitionen: 408
 - Simulierte automatische Links: 406
-- Fehler: 8
+- Fehler: 0
 - Warnungen: 54
-- Strict-kritisch: 8
+- Strict-kritisch: 0
 
 ## Befunde
 
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- **ERROR UNRESOLVED_ANCHOR_CONFLICT:** „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - **WARNING LINKING_METADATA_MISSING:** /futterautomat-katze/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.
 - **WARNING LINKING_METADATA_MISSING:** /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
@@ -77,8 +69,16 @@ Erstellt: 2026-07-29T11:48:04.524Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „futtermenge katze“ besitzt den eindeutigen Eigentümer /futtermenge-katze/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
 - **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „wasserbedarf hund“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-ein-hund/ (configured-owner).
+- **INFO ANCHOR_CONFLICT_RESOLVED_BY_OWNER:** „wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).
 
 ## Tatsächlich simulierte Anchor-Texte
 

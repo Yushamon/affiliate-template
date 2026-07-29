@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  ANCHOR_OWNER_OVERRIDES,
   BLOCKED_ANCHOR_SET,
   LINK_TAXONOMY,
   detectTaxonomyIntents,
@@ -154,21 +155,33 @@ for (const [anchor, owners] of ownersByAnchor) {
     return targets.length === 1 ? targets[0] : "";
   };
 
+  const configuredOwner =
+    ANCHOR_OWNER_OVERRIDES[anchor]
+      ? normalizeTaxonomyPath(ANCHOR_OWNER_OVERRIDES[anchor])
+      : "";
+
+  const configuredOwnerIsCandidate =
+    configuredOwner &&
+    distinctTargets.includes(configuredOwner);
+
   const resolvedByExclusive = uniqueOwnerTarget(exclusiveOwners);
   const resolvedByTaxonomy = uniqueOwnerTarget(taxonomyOwners);
   const resolvedByExactTitle = uniqueOwnerTarget(exactTitleOwners);
   const resolvedTarget =
+    (configuredOwnerIsCandidate ? configuredOwner : "") ||
     resolvedByExclusive ||
     resolvedByTaxonomy ||
     resolvedByExactTitle;
 
   if (resolvedTarget) {
     const resolution =
-      resolvedByExclusive
-        ? "exclusive-anchor"
-        : resolvedByTaxonomy
-          ? "taxonomy-owner"
-          : "exact-title-owner";
+      configuredOwnerIsCandidate
+        ? "configured-owner"
+        : resolvedByExclusive
+          ? "exclusive-anchor"
+          : resolvedByTaxonomy
+            ? "taxonomy-owner"
+            : "exact-title-owner";
 
     addFinding(
       "info",
@@ -182,6 +195,20 @@ for (const [anchor, owners] of ownersByAnchor) {
       }
     );
   } else {
+    if (configuredOwner && !configuredOwnerIsCandidate) {
+      addFinding(
+        "error",
+        "CONFIGURED_ANCHOR_OWNER_INVALID",
+        `„${anchor}“ ist auf ${configuredOwner} konfiguriert, dieses Ziel gehört aber nicht zu den Konfliktkandidaten.`,
+        {
+          anchor,
+          owner: configuredOwner,
+          targets: distinctTargets
+        }
+      );
+      continue;
+    }
+
     addFinding(
       "error",
       "UNRESOLVED_ANCHOR_CONFLICT",
@@ -274,7 +301,7 @@ const warnings = findings.filter((item) => item.severity === "warning");
 const criticalCodes = new Set(["TARGET_ROUTE_MISSING", "LINK_TARGET_ROUTE_MISSING", "UNRESOLVED_ANCHOR_CONFLICT", "BLOCKED_GENERIC_ANCHOR", "BLOCKED_ANCHOR_EFFECTIVE", "SELF_LINK", "WRONG_CLUSTER_TARGET_HIGH_CONFIDENCE", "SEMANTIC_ANCHOR_EXPANSION_PRESENT"]);
 const critical = errors.filter((item) => criticalCodes.has(item.code));
 const report = {
-  version: "3.0.2",
+  version: "3.0.3",
   generatedAt: new Date().toISOString(),
   strict,
   summary: {

@@ -9,6 +9,17 @@ export const BLOCKED_ANCHORS = [
   "Hersteller"
 ];
 
+export const ANCHOR_OWNER_OVERRIDES = Object.freeze({
+  "futtermenge katze": "/futtermenge-katze/",
+  "hundetrinkbrunnen": "/trinkbrunnen-hund/",
+  "katze trinkt viel": "/katze-trinkt-viel/",
+  "katze trinkt zu wenig": "/wie-viel-wasser-braucht-eine-katze/",
+  "petkit yumshare dual hopper 2": "/produkt/petkit-yumshare-dual-hopper/",
+  "trinkbrunnen reinigen": "/katzentrinkbrunnen-richtig-reinigen/",
+  "wasserbedarf hund": "/wie-viel-wasser-braucht-ein-hund/",
+  "wie oft hund futtern": "/fuetterungszeiten-nach-alter/"
+});
+
 export const LINK_TAXONOMY = [
   {
     id: "hub:futterautomaten",

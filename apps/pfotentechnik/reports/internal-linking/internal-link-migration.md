@@ -14,18 +14,18 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 
 ## Konfliktauflösungen
 
-- „futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
-- „wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.
 - „automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).
 - „futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).
+- „futtermenge katze“ besitzt den eindeutigen Eigentümer /futtermenge-katze/ (configured-owner).
+- „hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).
+- „katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).
+- „katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).
+- „petkit yumshare dual hopper 2“ besitzt den eindeutigen Eigentümer /produkt/petkit-yumshare-dual-hopper/ (configured-owner).
 - „trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).
 - „trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).
+- „trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).
+- „wasserbedarf hund“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-ein-hund/ (configured-owner).
+- „wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).
 
 ## Verbleibende manuelle Entscheidungen
 

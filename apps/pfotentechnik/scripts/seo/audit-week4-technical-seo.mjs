@@ -54,8 +54,10 @@ check("Comparison übergibt publishedAt", comparisonRoute.includes("publishedAt=
 check("Comparison übergibt updatedAt", comparisonRoute.includes("updatedAt={comparison.updatedAt ?? comparison.publishedAt}"));
 check("ItemList hat stabile ID", comparisonRoute.includes('#item-list'));
 check(
-  "ItemList enthält Product-Items",
-  /itemListElement:[\s\S]*?item:[\s\S]*?["@']@type["@']:\s*["@']Product["@']/m.test(comparisonRoute)
+  "ItemList enthält direkte Produktverweise",
+  /itemListElement:[\s\S]*?["@']@type["@']:\s*["@']ListItem["@'][\s\S]*?name:\s*product\.title[\s\S]*?url:\s*new URL\(product\.href,/m.test(comparisonRoute) &&
+    !/itemListElement:[\s\S]*?item:\s*\{/m.test(comparisonRoute) &&
+    !/itemListElement:[\s\S]*?["@']@type["@']:\s*["@']Product["@']/m.test(comparisonRoute)
 );
 check("ItemList-Reihenfolge dokumentiert", comparisonRoute.includes("ItemListOrderAscending"));
 
