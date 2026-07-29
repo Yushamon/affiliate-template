@@ -6,10 +6,9 @@ import { getPriceDisplay } from "../../comparison/price";
 
 type Props = {
   products: ComparisonProduct[];
-  scenarios?: NonNullable<ComparisonViewModel["scenarioRecommendations"]>;
 };
 
-const { products, scenarios = [] } = Astro.props as Props;
+const { products } = Astro.props as Props;
 
 type UseCase = {
   icon: string;
@@ -69,32 +68,9 @@ const useCases: UseCase[] = [
   }
 ];
 
-const scenarioBySlug = new Map<string, { icon: string; label: string; tone: string }>();
-
-for (const scenario of scenarios) {
-  const matchingProduct = products.find(
-    (product) => product.slug === scenario.winner.slug
-  );
-
-  if (!matchingProduct || scenarioBySlug.has(matchingProduct.slug)) continue;
-
-  scenarioBySlug.set(matchingProduct.slug, {
-    icon: "✓",
-    label: scenario.label,
-    tone: "scenario"
-  });
-}
-
 const usedLabels = new Set<string>();
 
 const recommendations = products.map((product) => {
-  const scenarioUseCase = scenarioBySlug.get(product.slug);
-
-  if (scenarioUseCase && !usedLabels.has(scenarioUseCase.label)) {
-    usedLabels.add(scenarioUseCase.label);
-    return { product, useCase: scenarioUseCase };
-  }
-
   const text = [
     product.badge,
     product.recommendation,
@@ -135,7 +111,7 @@ const recommendations = products.map((product) => {
   <div class="comparison-alternatives__heading">
     <span class="comparison-eyebrow">Alternativen nach Bedarf</span>
     <h2 id="comparison-alternatives-title">Welche Empfehlung passt zu dir?</h2>
-    <p>Einsatzzwecke und Alternativen sind in einer gemeinsamen Auswahl zusammengeführt.</p>
+    <p>Jedes Modell steht für einen konkreten Vorteil – nicht für eine zweite Rangliste.</p>
   </div>
 
   <div class="comparison-alternatives__list">

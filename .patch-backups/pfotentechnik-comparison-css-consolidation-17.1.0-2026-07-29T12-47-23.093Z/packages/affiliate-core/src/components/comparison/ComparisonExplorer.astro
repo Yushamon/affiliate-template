@@ -121,7 +121,7 @@ const {
         )}
       </div>
 
-      <div data-comparison-table-view hidden>
+      <div data-comparison-table-view>
         <ComparisonTable
           products={products}
           rows={rows}
@@ -129,7 +129,7 @@ const {
         />
       </div>
 
-      <div data-comparison-card-view>
+      <div data-comparison-card-view hidden>
         <ComparisonMobileCards
           products={products}
           rows={rows}
@@ -205,7 +205,6 @@ const {
 
         if (tableView instanceof HTMLElement) tableView.hidden = isCards;
         if (cardView instanceof HTMLElement) cardView.hidden = !isCards;
-        explorer.dataset.activeView = view;
 
         viewTabs.forEach((tab) => {
           if (!(tab instanceof HTMLButtonElement)) return;

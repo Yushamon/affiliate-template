@@ -1,0 +1,175 @@
+/*
+ * PfotenTechnik Comparison CTA + Price Polish 3.3.5
+ *
+ * Baut auf dem mobilen Preis-Fix 4.0.1 auf.
+ * Keine Änderungen an Preisen, Links, Texten oder Logik.
+ * Nur mobile Komposition, CTA-Hierarchie und Preisrhythmus.
+ */
+
+@media (max-width: 760px) {
+  /*
+   * RecommendationGrid nutzt mobil zwei Spalten:
+   * Produktbild links, Produktinhalt rechts. Der Preisblock muss die gesamte
+   * Kartenbreite belegen und ruhig unter Score und Empfehlung sitzen.
+   */
+  .comparison-shell .recommendation-card > .comparison-price-signal {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0.9rem 1rem 0 !important;
+    padding: 0.9rem 0 0.1rem !important;
+    border-top: 1px solid var(--comparison-line) !important;
+    border-bottom: 0 !important;
+    background: transparent !important;
+  }
+
+  .comparison-shell .comparison-price-signal--compact,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal,
+  .comparison-shell .comparison-winner-card .comparison-price-signal {
+    gap: 0.45rem;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__main,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: end;
+    gap: 0.35rem 0.8rem;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__main > span,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main > span,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main > span {
+    align-self: start;
+    white-space: nowrap;
+    color: var(--comparison-muted);
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.05em;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__main > strong,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main > strong,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main > strong {
+    min-width: 0;
+    justify-self: end;
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+    text-align: right;
+    font-size: 1.22rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__status,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__status,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__status {
+    justify-self: start;
+    align-self: start;
+    margin-top: 0.1rem;
+    padding: 0.28rem 0.56rem;
+    white-space: nowrap;
+    font-size: 0.73rem;
+    font-weight: 850;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__range,
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__context,
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal small {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /*
+   * CTA-Zeilen: gleiche Höhe, klare Hierarchie, ruhiger als die aktuelle Form.
+   */
+  .comparison-shell .recommendation-card__actions,
+  .comparison-shell .comparison-mobile-product__actions,
+  .comparison-shell .comparison-winner-card__actions,
+  .comparison-shell .comparison-verdict__actions,
+  .comparison-shell .comparison-verdict__winner-actions,
+  .comparison-shell .comparison-verdict__alternative-actions,
+  .comparison-shell [class*="sticky"] [class*="actions"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .comparison-shell .recommendation-card__actions {
+    grid-column: 1 / -1 !important;
+    margin-top: 0.95rem;
+  }
+
+  .comparison-shell .comparison-button,
+  .comparison-shell [class*="sticky"] .comparison-button {
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1rem;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    font-size: 1.03rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    text-align: center;
+    text-wrap: balance;
+    box-shadow: none;
+  }
+
+  .comparison-shell .comparison-button:not(.comparison-button--secondary),
+  .comparison-shell [class*="sticky"] .comparison-button:not(.comparison-button--secondary) {
+    color: var(--pt-color-surface);
+    background: var(--comparison-accent);
+  }
+
+  .comparison-shell .comparison-button--secondary,
+  .comparison-shell [class*="sticky"] .comparison-button--secondary {
+    color: var(--comparison-text);
+    border-color: color-mix(in srgb, var(--comparison-accent) 28%, var(--comparison-line));
+    background: var(--comparison-surface);
+  }
+
+  .comparison-shell .comparison-button:hover,
+  .comparison-shell .comparison-button:focus-visible {
+    transform: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .comparison-shell .recommendation-card > .comparison-price-signal,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__main,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.18rem;
+  }
+
+  .comparison-shell .comparison-price-signal--compact .comparison-price-signal__main > strong,
+  .comparison-shell .recommendation-card > .comparison-price-signal .comparison-price-signal__main > strong,
+  .comparison-shell .comparison-mobile-product > .comparison-price-signal .comparison-price-signal__main > strong {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .comparison-shell .recommendation-card__actions,
+  .comparison-shell .comparison-mobile-product__actions,
+  .comparison-shell .comparison-winner-card__actions,
+  .comparison-shell .comparison-verdict__actions,
+  .comparison-shell .comparison-verdict__winner-actions,
+  .comparison-shell .comparison-verdict__alternative-actions,
+  .comparison-shell [class*="sticky"] [class*="actions"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

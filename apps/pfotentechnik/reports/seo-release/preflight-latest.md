@@ -1,10 +1,10 @@
 # SEO Release Preflight
 
-- Status: ERROR
+- Status: OK
 - Modus: production
-- Dauer: 4144 ms
-- Phasen: 9
-- Fehler: 1
+- Dauer: 1202662 ms
+- Phasen: 14
+- Fehler: 0
 - Warnungen: 0
 
 ## Phasen
@@ -17,11 +17,16 @@
 - OK **Interner Source-Link-Audit** – npm run audit:internal-links:strict
 - OK **Anchor-Governance-Audit** – npm run audit:anchor-governance:strict
 - OK **Technischer SEO-Source-Audit** – npm run audit:technical-seo:source
-- FEHLER **Comparison-Snippet- und Schema-Audit** – npm run audit:comparison-schema
+- OK **Comparison-Snippet- und Schema-Audit** – npm run audit:comparison-schema
+- OK **Produktionsnaher Astro-Build** – npm run build
+- OK **Gerenderte interne Linkziele** – npm run audit:internal-link-targets:strict
+- OK **Gerenderter SEO-Build-Output** – npm run audit:release-build-output:strict
+- OK **Technischer SEO-Build-Audit** – npm run audit:technical-seo
+- OK **Release-Manifest** – internal
 
 ## Fehler
 
-- Comparison-Snippet- und Schema-Audit fehlgeschlagen (Exit 1).
+Keine.
 
 ## Warnungen
 

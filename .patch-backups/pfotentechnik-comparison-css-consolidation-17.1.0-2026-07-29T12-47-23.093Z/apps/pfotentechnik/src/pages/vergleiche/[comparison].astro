@@ -7,6 +7,7 @@ import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
+import ScenarioRecommendations from "../../components/comparison/ScenarioRecommendations.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
 import {
@@ -170,7 +171,9 @@ const comparisonNextSteps = buildComparisonNextSteps({
   />
 
   <div class="comparison-detail">
-    <ComparisonShell model={model} />
+    <ComparisonShell model={model}>
+      <ScenarioRecommendations slot="scenario-recommendations" scenarios={model.scenarioRecommendations} />
+    </ComparisonShell>
 
     <article class="comparison-content">
       <AutoLinkContent
