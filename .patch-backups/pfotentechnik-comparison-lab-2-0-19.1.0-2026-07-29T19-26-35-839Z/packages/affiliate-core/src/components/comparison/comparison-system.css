@@ -4295,6 +4295,7 @@ html.dark .comparison-table-price[data-price-assessment="expensive"] > small {
     line-height: 1.5;
   }
 
+
   .comparison-shell .recommendation-card__actions,
   .comparison-shell .comparison-mobile-product__actions,
   .comparison-shell .comparison-winner-card__actions,
@@ -4771,3 +4772,208 @@ body.dark .comparison-sticky-bar,
   }
 }
 
+/* PT_COMPARISON_MOBILE_WIDTH_ALIGNMENT_18_1_0_START */
+@media (max-width: 47.99rem) {
+  .comparison-shell[data-comparison-cover-version] {
+    --comparison-content-width: 100%;
+  }
+
+  .comparison-shell[data-comparison-cover-version] > .comparison-cover,
+  .comparison-shell[data-comparison-cover-version] > .comparison-editorial-recommendation,
+  .comparison-shell[data-comparison-cover-version] .comparison-decision-flow > .comparison-premium-section,
+  .comparison-shell[data-comparison-cover-version] .comparison-decision-flow > .comparison-explorer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .comparison-shell[data-comparison-cover-version] :is(
+    .comparison-alternatives,
+    .recommendation-grid,
+    .comparison-explorer,
+    .comparison-explorer__results,
+    .comparison-mobile-products,
+    .comparison-mobile-product,
+    .recommendation-card,
+    .comparison-winner-card,
+    .comparison-verdict
+  ) {
+    max-width: none;
+  }
+
+  .comparison-shell[data-comparison-cover-version] :is(
+    .comparison-alternatives,
+    .recommendation-grid,
+    .comparison-explorer__results,
+    .comparison-mobile-products
+  ) {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+/* PT_COMPARISON_MOBILE_WIDTH_ALIGNMENT_18_1_0_END */
+
+/* PT_COMPARISON_MOBILE_DENSITY_TABLE_FIX_18_2_0_START */
+/*
+ * Mobile Density + View Contract
+ * - nutzt nur den globalen Seiten-Gutter
+ * - reduziert übergroße vertikale Abschnittsabstände
+ * - macht die Tabellenansicht auf Mobile wirklich sichtbar
+ * - verhindert leere View-Flächen und schmale Karteninseln
+ */
+@media (max-width: 47.99rem) {
+  .comparison-detail {
+    gap: clamp(1.75rem, 6vw, 2.5rem);
+
+  }
+
+  .comparison-shell {
+    gap: clamp(1.5rem, 5vw, 2.25rem);
+  }
+
+  .comparison-shell .comparison-decision-flow {
+    gap: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .comparison-shell .comparison-premium-section,
+  .comparison-shell .comparison-explorer {
+    margin-block: 0;
+
+  }
+
+  .comparison-shell .comparison-premium-section__heading {
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+  }
+
+  .comparison-shell .comparison-premium-section__heading h2 {
+    margin-top: 0.3rem;
+  }
+
+  .comparison-shell .comparison-explorer {
+    scroll-margin-top: 6.5rem;
+  }
+
+  .comparison-shell .comparison-explorer__mobile-summary {
+    margin-block: 0 0.9rem;
+    padding: 1rem;
+  }
+
+  .comparison-shell .comparison-explorer__mobile-controls {
+    margin-block: 0 0.85rem;
+  }
+
+  .comparison-shell .comparison-view-tabs {
+    margin-block: 0 1rem;
+  }
+
+  .comparison-shell .comparison-explorer__layout,
+  .comparison-shell .comparison-explorer__content,
+  .comparison-shell [data-comparison-table-view],
+  .comparison-shell [data-comparison-card-view] {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .comparison-shell [data-comparison-table-view][hidden],
+  .comparison-shell [data-comparison-card-view][hidden] {
+    display: none !important;
+  }
+
+  .comparison-shell[data-active-view="cards"]
+    [data-comparison-card-view]:not([hidden]) {
+    display: block !important;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    [data-comparison-table-view]:not([hidden]) {
+    display: block !important;
+    min-height: 0 !important;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    [data-comparison-table-view]:not([hidden])
+    .comparison-desktop-table {
+    display: block !important;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    [data-comparison-table-view]:not([hidden])
+    .comparison-section__head {
+    display: none;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    .comparison-table-wrap {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    .comparison-table {
+    display: table !important;
+    width: max-content;
+    min-width: max(100%, 46rem);
+    table-layout: auto;
+  }
+
+  .comparison-shell[data-active-view="table"]
+    .comparison-table th:first-child {
+    position: sticky;
+    z-index: 2;
+    left: 0;
+    min-width: 9.5rem;
+    background: var(--comparison-surface);
+  }
+
+  .comparison-shell[data-active-view="table"]
+    .comparison-table thead th:first-child {
+    z-index: 3;
+  }
+
+  .comparison-shell[data-active-view="cards"]
+    .comparison-mobile-products,
+  .comparison-shell[data-active-view="cards"]
+    .comparison-mobile-product {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .comparison-shell .comparison-mobile-product {
+    box-sizing: border-box;
+  }
+
+  .comparison-detail > .comparison-content {
+    margin-block: 0;
+  }
+
+  .comparison-detail > #faq {
+    margin-block: 0;
+    scroll-margin-top: 6.5rem;
+  }
+
+  .comparison-detail > #faq > :first-child {
+    margin-top: 0;
+  }
+
+  .comparison-detail > #faq .faq,
+  .comparison-detail > #faq [class*="faq"] {
+    margin-top: 0;
+  }
+}
+/* PT_COMPARISON_MOBILE_DENSITY_TABLE_FIX_18_2_0_END */

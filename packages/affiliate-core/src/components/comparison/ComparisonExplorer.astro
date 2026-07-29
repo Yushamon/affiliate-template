@@ -1,12 +1,13 @@
 ---
+import OptimizedImage from "../OptimizedImage.astro";
+import EditorialScore from "../EditorialScore.astro";
 import type {
   ComparisonFilter,
   ComparisonProduct,
   ComparisonRow
 } from "../../comparison/model";
-import ComparisonFilterBar from "./ComparisonFilterBar.astro";
-import ComparisonTable from "./ComparisonTable.astro";
-import ComparisonMobileCards from "./ComparisonMobileCards.astro";
+import { getPriceDisplay } from "../../comparison/price";
+import "./comparison-explorer-v2.css";
 
 type Props = {
   products: ComparisonProduct[];
@@ -15,403 +16,432 @@ type Props = {
   initialVisibleProducts?: number;
 };
 
-const {
-  products,
-  rows,
-  filters,
-  initialVisibleProducts = 5
-} = Astro.props as Props;
+const { products, rows, filters } = Astro.props as Props;
+
+const defaultSelection = products.slice(0, Math.min(3, products.length)).map((product) => product.slug);
+const productFilterData = Object.fromEntries(
+  products.map((product) => [product.slug, product.filterValues])
+);
+
+const groupedRows = rows.reduce((groups, row) => {
+  const raw = `${row.criterion.label} ${row.criterion.description ?? ""}`.toLowerCase();
+  let group = "Weitere Merkmale";
+
+  if (/app|wlan|wifi|kamera|video|mikrofon|benachrichtigung|smart|cloud/.test(raw)) {
+    group = "App & smarte Funktionen";
+  } else if (/reinig|spül|material|edelstahl|schale|pflege|hygiene/.test(raw)) {
+    group = "Reinigung & Alltag";
+  } else if (/kapazität|volumen|portion|mahlzeit|futter|tank|napf/.test(raw)) {
+    group = "Fütterung & Kapazität";
+  } else if (/akku|batterie|strom|lautstärke|sensor|technik|maße|gewicht/.test(raw)) {
+    group = "Technik & Betrieb";
+  }
+
+  groups.set(group, [...(groups.get(group) ?? []), row]);
+  return groups;
+}, new Map<string, ComparisonRow[]>());
+
+const rowGroups = Array.from(groupedRows.entries());
 ---
 
 <section
   id="direktvergleich"
-  class="comparison-explorer comparison-explorer--premium"
-  data-comparison-explorer
-  data-initial-limit={initialVisibleProducts}
+  class="comparison-lab"
+  data-comparison-lab
+  data-default-selection={JSON.stringify(defaultSelection)}
 >
-  <div class="comparison-premium-section__heading">
+  <header class="comparison-lab__intro">
     <div>
       <span class="comparison-eyebrow">Direktvergleich</span>
-      <h2>Alle Modelle direkt vergleichen</h2>
+      <h2>Wähle bis zu vier Modelle</h2>
+      <p>
+        Stelle nur die Produkte gegenüber, die wirklich infrage kommen.
+        Unterschiede werden automatisch hervorgehoben.
+      </p>
     </div>
-    <p>
-      Vergleiche Funktionen, Preise und wichtige Unterschiede. Identische Merkmale kannst du ausblenden.
-    </p>
+
+    <div class="comparison-lab__selection-count" aria-live="polite">
+      <strong data-selection-count>{defaultSelection.length}</strong>
+      <span>von 4 gewählt</span>
+    </div>
+  </header>
+
+  <div
+    class="comparison-lab__product-data"
+    data-products={JSON.stringify(productFilterData)}
+    hidden
+  ></div>
+
+  <div class="comparison-lab__picker" aria-label="Produkte für den Vergleich auswählen">
+    {products.map((product, index) => {
+      const price = getPriceDisplay(product.price);
+      const selected = index < defaultSelection.length;
+
+      return (
+        <label
+          class:list={[
+            "comparison-pick-card",
+            selected && "is-selected"
+          ]}
+          data-picker-card={product.slug}
+        >
+          <input
+            type="checkbox"
+            value={product.slug}
+            data-product-picker
+            checked={selected}
+          />
+
+          <span class="comparison-pick-card__check" aria-hidden="true">✓</span>
+
+          <span class="comparison-pick-card__media">
+            {product.image && (
+              <OptimizedImage
+                src={product.image.src}
+                alt={product.image.alt ?? product.title}
+                width={180}
+                height={135}
+                layout="constrained"
+              />
+            )}
+          </span>
+
+          <span class="comparison-pick-card__body">
+            {product.manufacturer && (
+              <small>{product.manufacturer}</small>
+            )}
+            <strong>{product.title}</strong>
+            <span>
+              {typeof product.rating === "number"
+                ? `${product.rating}/100`
+                : "ohne Score"}
+              {" · "}
+              {price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis offen"}
+            </span>
+          </span>
+        </label>
+      );
+    })}
   </div>
 
-  <div class="comparison-explorer__mobile-summary">
-      <p><strong data-comparison-result-count-mobile>{products.length}</strong><span> passende Modelle</span></p>
-      <span>Unsere Top-Empfehlung findest du weiter oben.</span>
-    </div>
-
-    <div class="comparison-explorer__mobile-controls">
-      <button
-        type="button"
-        class="pt-button comparison-filter-trigger comparison-filter-trigger--primary"
-        data-comparison-filter-trigger
-        aria-expanded="false"
-      >
-        Filter
-      </button>
-
-      <label class="comparison-toggle comparison-toggle--mobile">
-        <input type="checkbox" data-differences-only-mobile />
-        <span class="pt-control comparison-control-box" aria-hidden="true"></span>
-        <span>Nur Unterschiede</span>
-      </label>
-    </div>
-
-    <div class="comparison-view-tabs" role="tablist" aria-label="Darstellung wählen">
+  <div class="comparison-lab__toolbar">
     <button
       type="button"
-      class="comparison-view-tab is-active"
-      role="tab"
-      aria-selected="true"
-      data-comparison-view="cards"
+      class="pt-button comparison-lab__filter-button"
+      data-filter-open
+      aria-expanded="false"
     >
-      Karten
+      Modelle filtern
     </button>
-    <button
-      type="button"
-      class="comparison-view-tab"
-      role="tab"
-      aria-selected="false"
-      data-comparison-view="table"
-    >
-      Tabelle
+
+    <label class="comparison-lab__differences">
+      <input type="checkbox" data-differences-only />
+      <span class="pt-control comparison-control-box" aria-hidden="true"></span>
+      <span>Nur Unterschiede</span>
+    </label>
+
+    <button type="button" class="comparison-lab__reset" data-selection-reset>
+      Auswahl zurücksetzen
     </button>
-    
   </div>
 
-  <div class="comparison-explorer__layout">
-    <aside class="comparison-explorer__filters" data-comparison-filter-drawer>
-      <div class="comparison-filter-drawer__mobile-head">
-        <strong>Modelle filtern</strong>
-        <button type="button" data-comparison-filter-close aria-label="Filter schließen">×</button>
+  <aside class="comparison-lab__filters" data-filter-drawer aria-label="Vergleichsfilter">
+    <div class="comparison-lab__filter-header">
+      <div>
+        <strong>Modelle eingrenzen</strong>
+        <small>Filter verändern nur die Produktauswahl.</small>
+      </div>
+      <button type="button" data-filter-close aria-label="Filter schließen">×</button>
+    </div>
+
+    <button type="button" class="comparison-lab__clear-filters" data-filter-reset>
+      Filter zurücksetzen
+    </button>
+
+    <div class="comparison-lab__filter-groups">
+      {filters.map((filter) => (
+        <fieldset>
+          <legend>{filter.label}</legend>
+          {filter.options.map((option) => (
+            <label>
+              <input
+                type="checkbox"
+                value={option.value}
+                data-filter-key={filter.key}
+              />
+              <span class="pt-control comparison-control-box" aria-hidden="true"></span>
+              <span>{option.label}</span>
+            </label>
+          ))}
+        </fieldset>
+      ))}
+    </div>
+  </aside>
+
+  <div class="comparison-lab__backdrop" data-filter-backdrop hidden></div>
+
+  <div class="comparison-lab__stage" data-comparison-stage>
+    <div class="comparison-lab__empty" data-selection-empty hidden>
+      <h3>Wähle mindestens zwei Modelle</h3>
+      <p>Erst dann entsteht ein aussagekräftiger Direktvergleich.</p>
+    </div>
+
+    <div class="comparison-lab__compare" data-comparison-content>
+      <div class="comparison-lab__sticky-products">
+        <div class="comparison-lab__criterion-head">
+          <span>Vergleich</span>
+        </div>
+
+        {products.map((product) => {
+          const price = getPriceDisplay(product.price);
+
+          return (
+            <article data-product-panel={product.slug}>
+              <a href={product.href}>
+                {product.image && (
+                  <OptimizedImage
+                    src={product.image.src}
+                    alt=""
+                    width={120}
+                    height={90}
+                    layout="constrained"
+                  />
+                )}
+                <span>
+                  <strong>{product.title}</strong>
+                  <small>{price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis offen"}</small>
+                </span>
+              </a>
+            </article>
+          );
+        })}
       </div>
 
-      <ComparisonFilterBar filters={filters} products={products} />
+      <section class="comparison-lab__signals" aria-label="Schnelle Einordnung">
+        <div class="comparison-lab__row" data-comparison-row data-difference="true">
+          <div class="comparison-lab__criterion">
+            <strong>Redaktioneller Score</strong>
+            <small>Gesamteinordnung</small>
+          </div>
 
-      <label class="comparison-toggle comparison-toggle--premium">
-        <input type="checkbox" data-differences-only />
-        <span class="pt-control comparison-control-box" aria-hidden="true"></span>
-        <span class="comparison-toggle__copy">
-          <strong>Nur Unterschiede</strong>
-          <small>Gleiche Merkmale ausblenden</small>
-        </span>
-      </label>
-    </aside>
+          {products.map((product) => (
+            <div class="comparison-lab__value" data-product-panel={product.slug}>
+              {typeof product.rating === "number" ? (
+                <EditorialScore
+                  value={product.rating}
+                  scale={100}
+                  variant="inline"
+                  label=""
+                />
+              ) : (
+                <span class="comparison-lab__missing">Keine Angabe</span>
+              )}
+            </div>
+          ))}
+        </div>
 
-    <div class="comparison-explorer__content">
-      <div class="comparison-explorer__toolbar">
-        <p class="comparison-result-summary">
-          <strong data-comparison-result-count>{products.length}</strong>
-          <span> passende Modelle</span>
-        </p>
+        <div class="comparison-lab__row" data-comparison-row data-difference="true">
+          <div class="comparison-lab__criterion">
+            <strong>Preis</strong>
+            <small>Aktueller Richtwert</small>
+          </div>
 
-        {products.length > initialVisibleProducts && (
-          <button
-            type="button"
-            class="comparison-show-all"
-            data-show-all-products
-            aria-pressed="false"
-          >
-            Alle {products.length} Modelle anzeigen
-          </button>
-        )}
-      </div>
+          {products.map((product) => {
+            const price = getPriceDisplay(product.price);
+            return (
+              <div class="comparison-lab__value" data-product-panel={product.slug}>
+                <strong>{price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Nicht verfügbar"}</strong>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
-      <div data-comparison-table-view hidden>
-        <ComparisonTable
-          products={products}
-          rows={rows}
-          initialVisibleProducts={initialVisibleProducts}
-        />
-      </div>
+      {rowGroups.map(([group, groupRows], groupIndex) => (
+        <details class="comparison-lab__group" open={groupIndex < 2}>
+          <summary>
+            <span>{group}</span>
+            <small>{groupRows.length} Kriterien</small>
+          </summary>
 
-      <div data-comparison-card-view>
-        <ComparisonMobileCards
-          products={products}
-          rows={rows}
-          initialVisibleProducts={initialVisibleProducts}
-        />
-      </div>
+          <div class="comparison-lab__group-rows">
+            {groupRows.map((row) => (
+              <div
+                class="comparison-lab__row"
+                data-comparison-row
+                data-difference={String(row.hasDifferences)}
+              >
+                <div class="comparison-lab__criterion">
+                  <strong>{row.criterion.label}</strong>
+                  {row.criterion.description && (
+                    <small>{row.criterion.description}</small>
+                  )}
+                </div>
 
-      <div
-        class="comparison-empty-state"
-        hidden
-        data-comparison-empty
-      >
-        <h2>Keine passende Kombination gefunden</h2>
-        <p>Entferne einen Filter, damit wieder Modelle erscheinen.</p>
-      </div>
+                {products.map((product) => {
+                  const cell = row.cells.find(
+                    (entry) => entry.productSlug === product.slug
+                  );
+                  const value =
+                    cell?.value && cell.value !== "–"
+                      ? cell.value
+                      : "Keine Angabe";
+
+                  return (
+                    <div
+                      class:list={[
+                        "comparison-lab__value",
+                        row.hasDifferences && "is-different"
+                      ]}
+                      data-product-panel={product.slug}
+                    >
+                      {value}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        </details>
+      ))}
     </div>
   </div>
-
-  <div class="comparison-filter-backdrop" data-comparison-filter-backdrop hidden></div>
 </section>
 
 <script>
-  document
-    .querySelectorAll("[data-comparison-explorer]")
-    .forEach((explorer) => {
-      if (!(explorer instanceof HTMLElement)) return;
+  document.querySelectorAll("[data-comparison-lab]").forEach((root) => {
+    if (!(root instanceof HTMLElement)) return;
 
-      const filterRoot = explorer.querySelector("[data-comparison-filters]");
-      const productData =
-        filterRoot instanceof HTMLElement && filterRoot.dataset.products
-          ? JSON.parse(filterRoot.dataset.products)
-          : {};
+    const MAX_SELECTION = 4;
+    const defaultSelection = JSON.parse(root.dataset.defaultSelection ?? "[]");
+    const productDataNode = root.querySelector("[data-products]");
+    const productData =
+      productDataNode instanceof HTMLElement && productDataNode.dataset.products
+        ? JSON.parse(productDataNode.dataset.products)
+        : {};
 
-      const inputs = Array.from(
-        explorer.querySelectorAll("input[data-filter-key]")
+    const pickers = Array.from(
+      root.querySelectorAll("[data-product-picker]")
+    ).filter((item) => item instanceof HTMLInputElement);
+
+    const filters = Array.from(
+      root.querySelectorAll("input[data-filter-key]")
+    ).filter((item) => item instanceof HTMLInputElement);
+
+    const count = root.querySelector("[data-selection-count]");
+    const empty = root.querySelector("[data-selection-empty]");
+    const content = root.querySelector("[data-comparison-content]");
+    const differences = root.querySelector("[data-differences-only]");
+    const drawer = root.querySelector("[data-filter-drawer]");
+    const backdrop = root.querySelector("[data-filter-backdrop]");
+    const openButton = root.querySelector("[data-filter-open]");
+    const closeButton = root.querySelector("[data-filter-close]");
+
+    const selectedSlugs = () =>
+      pickers.filter((input) => input.checked).map((input) => input.value);
+
+    const selectedFilters = () => {
+      const selected = new Map();
+
+      filters.forEach((input) => {
+        if (!input.checked) return;
+        const key = input.dataset.filterKey;
+        if (!key) return;
+        selected.set(key, [...(selected.get(key) ?? []), input.value]);
+      });
+
+      return selected;
+    };
+
+    const matchesFilters = (slug) => {
+      const selected = selectedFilters();
+      const values = productData[slug] ?? {};
+
+      return Array.from(selected.entries()).every(([key, expected]) => {
+        const available = values[key] ?? [];
+        return expected.some((value) => available.includes(value));
+      });
+    };
+
+    const setDrawer = (open) => {
+      if (!(drawer instanceof HTMLElement)) return;
+      drawer.classList.toggle("is-open", open);
+      if (backdrop instanceof HTMLElement) backdrop.hidden = !open;
+      if (openButton instanceof HTMLButtonElement) {
+        openButton.setAttribute("aria-expanded", String(open));
+      }
+      document.documentElement.classList.toggle("comparison-filter-open", open);
+    };
+
+    const render = () => {
+      const selected = selectedSlugs();
+      const onlyDifferences =
+        differences instanceof HTMLInputElement && differences.checked;
+
+      pickers.forEach((input) => {
+        const card = input.closest("[data-picker-card]");
+        if (card instanceof HTMLElement) {
+          card.classList.toggle("is-selected", input.checked);
+          card.hidden = !matchesFilters(input.value);
+        }
+        input.disabled = !input.checked && selected.length >= MAX_SELECTION;
+      });
+
+      root.querySelectorAll("[data-product-panel]").forEach((panel) => {
+        if (!(panel instanceof HTMLElement)) return;
+        panel.hidden = !selected.includes(panel.dataset.productPanel ?? "");
+      });
+
+      root.querySelectorAll("[data-comparison-row]").forEach((row) => {
+        if (!(row instanceof HTMLElement)) return;
+        row.hidden =
+          onlyDifferences && row.dataset.difference !== "true";
+      });
+
+      if (count) count.textContent = String(selected.length);
+
+      const hasEnough = selected.length >= 2;
+      if (empty instanceof HTMLElement) empty.hidden = hasEnough;
+      if (content instanceof HTMLElement) content.hidden = !hasEnough;
+
+      root.style.setProperty(
+        "--comparison-selected-count",
+        String(Math.max(1, selected.length))
       );
+    };
 
-      const differencesToggle = explorer.querySelector("[data-differences-only]");
-      const mobileDifferencesToggle = explorer.querySelector("[data-differences-only-mobile]");
-      const mobileCount = explorer.querySelector("[data-comparison-result-count-mobile]");
-      const showAllButton = explorer.querySelector("[data-show-all-products]");
-      const count = explorer.querySelector("[data-comparison-result-count]");
-      const resetButton = explorer.querySelector("[data-comparison-filter-reset]");
-      const emptyState = explorer.querySelector("[data-comparison-empty]");
-      const drawer = explorer.querySelector("[data-comparison-filter-drawer]");
-      const backdrop = explorer.querySelector("[data-comparison-filter-backdrop]");
-      const filterTrigger = explorer.querySelector("[data-comparison-filter-trigger]");
-      const filterClose = explorer.querySelector("[data-comparison-filter-close]");
-      const tableView = explorer.querySelector("[data-comparison-table-view]");
-      const cardView = explorer.querySelector("[data-comparison-card-view]");
-      const viewTabs = Array.from(explorer.querySelectorAll("[data-comparison-view]"));
-      const heroSelects = Array.from(document.querySelectorAll("select[data-comparison-hero-select]"));
-      const heroReset = document.querySelector("[data-comparison-hero-filter-reset]");
-      const heroApply = document.querySelector("[data-comparison-hero-apply]");
-      const heroCount = document.querySelector("[data-comparison-hero-result-count]");
-
-      const initialLimit = Number(explorer.dataset.initialLimit ?? "5");
-      let showAll = false;
-
-      const setDrawer = (open) => {
-        if (!(drawer instanceof HTMLElement)) return;
-        drawer.classList.toggle("is-open", open);
-        document.documentElement.classList.toggle("comparison-filter-open", open);
-
-        if (backdrop instanceof HTMLElement) backdrop.hidden = !open;
-        if (filterTrigger instanceof HTMLButtonElement) {
-          filterTrigger.setAttribute("aria-expanded", String(open));
-        }
-      };
-
-      const setView = (view) => {
-        const normalizedView = view === "table" ? "table" : "cards";
-        const isCards = normalizedView === "cards";
-
-        if (tableView instanceof HTMLElement) {
-          tableView.hidden = isCards;
-          tableView.setAttribute("aria-hidden", String(isCards));
-          tableView.inert = isCards;
-        }
-
-        if (cardView instanceof HTMLElement) {
-          cardView.hidden = !isCards;
-          cardView.setAttribute("aria-hidden", String(!isCards));
-          cardView.inert = !isCards;
-        }
-
-        explorer.dataset.activeView = normalizedView;
-
-        viewTabs.forEach((tab) => {
-          if (!(tab instanceof HTMLButtonElement)) return;
-          const active =
-            tab.dataset.comparisonView === normalizedView;
-          tab.classList.toggle("is-active", active);
-          tab.setAttribute("aria-selected", String(active));
-          tab.tabIndex = active ? 0 : -1;
-        });
-      };
-
-      const getSelected = () => {
-        const selected = new Map();
-
-        inputs.forEach((input) => {
-          if (!(input instanceof HTMLInputElement) || !input.checked) return;
-          const key = input.dataset.filterKey;
-          if (!key) return;
-          const current = selected.get(key) ?? [];
-          selected.set(key, [...current, input.value]);
-        });
-
-        return selected;
-      };
-
-      const applyUrlFilters = () => {
-        const params = new URLSearchParams(window.location.search);
-
-        inputs.forEach((input) => {
-          if (!(input instanceof HTMLInputElement)) return;
-          const key = input.dataset.filterKey;
-          if (!key) return;
-
-          const values = [
-            ...params.getAll(`filter-${key}`),
-            ...params.getAll(key)
-          ]
-            .flatMap((value) => value.split(","))
-            .map((value) => value.trim())
-            .filter(Boolean);
-
-          if (values.includes(input.value)) input.checked = true;
-        });
-      };
-
-      const applyState = () => {
-        const selected = getSelected();
-
-        const matchingSlugs = Object.entries(productData)
-          .filter(([, values]) =>
-            Array.from(selected.entries()).every(([key, selectedValues]) => {
-              const productValues = values[key] ?? [];
-              return selectedValues.some((value) => productValues.includes(value));
-            })
-          )
-          .map(([slug]) => slug);
-
-        const visibleSlugs = showAll
-          ? matchingSlugs
-          : matchingSlugs.slice(0, initialLimit);
-
-        explorer.querySelectorAll("[data-product-column]").forEach((element) => {
-          if (!(element instanceof HTMLElement)) return;
-          const slug = element.dataset.productColumn;
-          element.hidden = !slug || !visibleSlugs.includes(slug);
-        });
-
-        explorer.querySelectorAll("[data-mobile-product]").forEach((element) => {
-          if (!(element instanceof HTMLElement)) return;
-          const slug = element.dataset.mobileProduct;
-          element.hidden = !slug || !visibleSlugs.includes(slug);
-        });
-
-        const differencesOnly =
-          differencesToggle instanceof HTMLInputElement &&
-          differencesToggle.checked;
-
-        explorer.querySelectorAll("[data-comparison-row]").forEach((row) => {
-          if (!(row instanceof HTMLElement)) return;
-          row.hidden =
-            differencesOnly && row.dataset.hasDifferences !== "true";
-        });
-
-        explorer.querySelectorAll("[data-mobile-criterion]").forEach((criterion) => {
-          if (!(criterion instanceof HTMLElement)) return;
-          criterion.hidden =
-            differencesOnly && criterion.dataset.hasDifferences !== "true";
-        });
-
-        if (count) count.textContent = String(matchingSlugs.length);
-        if (mobileCount) mobileCount.textContent = String(matchingSlugs.length);
-        if (heroCount) heroCount.textContent = String(matchingSlugs.length);
-
-        if (emptyState instanceof HTMLElement) {
-          emptyState.hidden = matchingSlugs.length !== 0;
-        }
-
-        if (showAllButton instanceof HTMLButtonElement) {
-          const hasMore = matchingSlugs.length > initialLimit;
-          showAllButton.hidden = !hasMore;
-          showAllButton.textContent = showAll
-            ? `Nur Top ${initialLimit} anzeigen`
-            : `Alle ${matchingSlugs.length} Modelle anzeigen`;
-          showAllButton.setAttribute("aria-pressed", String(showAll));
-        }
-      };
-
-      inputs.forEach((input) => {
-        input.addEventListener("change", () => {
-          showAll = false;
-          applyState();
-        });
+    pickers.forEach((input) => {
+      input.addEventListener("change", () => {
+        if (selectedSlugs().length > MAX_SELECTION) input.checked = false;
+        render();
       });
-
-      heroSelects.forEach((select) => {
-        select.addEventListener("change", () => {
-          if (!(select instanceof HTMLSelectElement)) return;
-          const key = select.dataset.filterKey;
-          if (!key) return;
-          inputs.forEach((input) => {
-            if (!(input instanceof HTMLInputElement) || input.dataset.filterKey !== key) return;
-            input.checked = Boolean(select.value) && input.value === select.value;
-          });
-          showAll = false;
-          applyState();
-        });
-      });
-
-      heroReset?.addEventListener("click", () => {
-        heroSelects.forEach((select) => { if (select instanceof HTMLSelectElement) select.value = ""; });
-        inputs.forEach((input) => { if (input instanceof HTMLInputElement) input.checked = false; });
-        showAll = false;
-        applyState();
-      });
-
-      heroApply?.addEventListener("click", () => {
-        explorer.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
-      });
-
-      differencesToggle?.addEventListener("change", () => {
-        if (
-          differencesToggle instanceof HTMLInputElement &&
-          mobileDifferencesToggle instanceof HTMLInputElement
-        ) {
-          mobileDifferencesToggle.checked = differencesToggle.checked;
-        }
-        applyState();
-      });
-
-      mobileDifferencesToggle?.addEventListener("change", () => {
-        if (
-          differencesToggle instanceof HTMLInputElement &&
-          mobileDifferencesToggle instanceof HTMLInputElement
-        ) {
-          differencesToggle.checked = mobileDifferencesToggle.checked;
-        }
-        applyState();
-      });
-
-      showAllButton?.addEventListener("click", () => {
-        showAll = !showAll;
-        applyState();
-      });
-
-      resetButton?.addEventListener("click", () => {
-        inputs.forEach((input) => {
-          if (input instanceof HTMLInputElement) input.checked = false;
-        });
-
-        if (differencesToggle instanceof HTMLInputElement) {
-          differencesToggle.checked = false;
-        }
-
-        showAll = false;
-        applyState();
-      });
-
-      filterTrigger?.addEventListener("click", () => setDrawer(true));
-      filterClose?.addEventListener("click", () => setDrawer(false));
-      backdrop?.addEventListener("click", () => setDrawer(false));
-
-      viewTabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          if (!(tab instanceof HTMLButtonElement)) return;
-          setView(tab.dataset.comparisonView ?? "table");
-        });
-      });
-
-      window.matchMedia("(max-width: 760px)").addEventListener("change", (event) => {
-        if (event.matches) setView("cards");
-        else setView("table");
-      });
-
-      applyUrlFilters();
-      setView(window.matchMedia("(max-width: 760px)").matches ? "cards" : "table");
-      applyState();
     });
+
+    filters.forEach((input) => input.addEventListener("change", render));
+    differences?.addEventListener("change", render);
+
+    root.querySelector("[data-selection-reset]")?.addEventListener("click", () => {
+      pickers.forEach((input) => {
+        input.checked = defaultSelection.includes(input.value);
+      });
+      render();
+    });
+
+    root.querySelector("[data-filter-reset]")?.addEventListener("click", () => {
+      filters.forEach((input) => {
+        input.checked = false;
+      });
+      render();
+    });
+
+    openButton?.addEventListener("click", () => setDrawer(true));
+    closeButton?.addEventListener("click", () => setDrawer(false));
+    backdrop?.addEventListener("click", () => setDrawer(false));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setDrawer(false);
+    });
+
+    render();
+  });
 </script>
