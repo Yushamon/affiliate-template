@@ -3,6 +3,9 @@ title: "GPS-Tracker oder Bluetooth-Tag? Der richtige Ortungshelfer für Hund und
 slug: "gps-tracker-oder-bluetooth-tag"
 description: "GPS-Tracker und Bluetooth-Tags unterscheiden sich deutlich bei Reichweite, Ortung und Sicherheit. Dieser Ratgeber zeigt, welche Lösung für Haustiere sinnvoll ist."
 category: "wissen"
+publishedAt: "2026-07-29"
+updatedAt: "2026-07-29"
+author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags:
   - gps-tracker
   - bluetooth-tag

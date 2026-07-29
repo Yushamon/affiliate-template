@@ -3,6 +3,9 @@ title: "Hund frisst zu schnell – Ursachen, Risiken und wirksame Lösungen"
 slug: "hund-frisst-zu-schnell"
 description: "Warum Hunde schlingen, welche Gesundheitsrisiken entstehen und wie Sie das Fressverhalten nachhaltig verlangsamen."
 category: "wissen"
+publishedAt: "2026-07-29"
+updatedAt: "2026-07-29"
+author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags:
   - hund
   - gesundheit
