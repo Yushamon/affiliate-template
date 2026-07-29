@@ -20,11 +20,9 @@ import "./comparison-cta-system.css";
 type Props = { model: ComparisonViewModel };
 const { model } = Astro.props as Props;
 const winner = model.verdict.winner;
-const alternativeProducts = model.recommendationProducts.filter((product) => product.slug !== winner?.slug);
-const comparisonProducts = model.products.filter((product) => product.slug !== winner?.slug);
 ---
 
-<div class="comparison-shell comparison-shell--premium" data-comparison-cover-version="16.1.0" data-dark-mode-ready="true">
+<div class="comparison-shell comparison-shell--premium" data-comparison-cover-version="15.4.4" data-dark-mode-ready="true">
   <ComparisonHero
     eyebrow={model.eyebrow}
     title={model.title}
@@ -36,9 +34,25 @@ const comparisonProducts = model.products.filter((product) => product.slug !== w
 
   {winner && <ComparisonEditorialRecommendation product={winner} />}
 
+  <nav class="comparison-premium-nav" aria-label="Sprungnavigation zum Vergleich">
+    {winner && <a href="#vergleichssieger">Top-Empfehlung</a>}
+    <a href="#schnelle-empfehlung">Schnelle Auswahl</a>
+    <a href="#einsatzzwecke">Einsatzzwecke</a>
+    <a href="#direktvergleich">Direktvergleich</a>
+    {model.rows.length > 0 && <a href="#redaktionelle-zusammenfassung">Zusammenfassung</a>}
+    <a href="#methodik">Methodik</a>
+  </nav>
+
   <div class="comparison-decision-flow">
-    <section id="alternativen" class="comparison-premium-section">
-      <RecommendationGrid products={alternativeProducts} />
+    <section id="schnelle-empfehlung" class="comparison-premium-section">
+      <div class="comparison-premium-section__heading">
+        <div>
+          <span class="comparison-eyebrow">Schnelle Auswahl</span>
+          <h2>Die stärksten Modelle auf einen Blick</h2>
+        </div>
+        <p>Starte mit dem Einsatzgebiet. Score, Preis und die vollständigen Unterschiede folgen im Direktvergleich.</p>
+      </div>
+      <RecommendationGrid products={model.recommendationProducts} />
     </section>
 
     <section id="einsatzzwecke" class="comparison-premium-section comparison-slot-section">
@@ -46,7 +60,7 @@ const comparisonProducts = model.products.filter((product) => product.slug !== w
     </section>
 
     <ComparisonExplorer
-      products={comparisonProducts}
+      products={model.products}
       rows={model.rows}
       filters={model.filters}
       initialVisibleProducts={model.initialVisibleProducts}

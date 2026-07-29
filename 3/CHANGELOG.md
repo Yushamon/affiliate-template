@@ -1,5 +1,14 @@
 # Changelog
 
+## 15.4.4
+
+- Comparison-Hero-Asset-Verzeichnisse prüfen.
+- Falsch abgelegte Editorial-Hero-Dateien automatisch übernehmen.
+- Hero-Asset-Bericht erzeugen.
+- Hero-Bild inklusive Unterkante vollständig runden.
+- Mobile Filterkarten und Selects verdichten.
+- Keine bestehende Hero-Datei überschreiben.
+
 ## 15.4.3
 
 - Menü-Performance-Fix 15.4.2 übernommen.

@@ -1,4 +1,4 @@
-# PfotenTechnik Comparison Rendered UI Fix 15.4.3
+# PfotenTechnik Comparison Rendered UI Fix 15.4.4
 
 Dieser Patch basiert auf den tatsächlich im Repository gerenderten Komponenten und ersetzt keine Oberfläche über eine zusätzliche Hotfix-Datei.
 
@@ -26,22 +26,22 @@ Dieser Patch basiert auf den tatsächlich im Repository gerenderten Komponenten 
 ## Ausführung
 
 ```bash
-node 3/apply-pfotentechnik-comparison-rendered-ui-fix-15.4.3.mjs
+node 3/apply-pfotentechnik-comparison-rendered-ui-fix-15.4.4.mjs
 ```
 
 Optional ohne Prüfungen:
 
 ```bash
-node 3/apply-pfotentechnik-comparison-rendered-ui-fix-15.4.3.mjs --skip-checks
+node 3/apply-pfotentechnik-comparison-rendered-ui-fix-15.4.4.mjs --skip-checks
 ```
 
 
 ## Korrektur gegenüber 15.4.0
 
-Der Komponenten-Audit verlangt bei statischen Buttons die Klasse `pt-button`. 15.4.3 erfüllt diese Regel wieder. Die fehlerhaften visuellen Nebeneffekte werden nicht durch Entfernen der Primitive gelöst, sondern durch eine eng begrenzte Neutralisierung der `::before`- und `::after`-Dekorationen am Navigationstoggle.
+Der Komponenten-Audit verlangt bei statischen Buttons die Klasse `pt-button`. 15.4.4 erfüllt diese Regel wieder. Die fehlerhaften visuellen Nebeneffekte werden nicht durch Entfernen der Primitive gelöst, sondern durch eine eng begrenzte Neutralisierung der `::before`- und `::after`-Dekorationen am Navigationstoggle.
 
 
-## Menü-Performance 15.4.3
+## Menü-Performance 15.4.4
 
 Das mobile Menü wird nicht mehr bei jedem Öffnen über `hidden` beziehungsweise `display: none` neu in den Layoutbaum eingefügt. Es bleibt vorbereitet und wird ausschließlich über `visibility`, `opacity` und `transform` aktiviert.
 
@@ -54,7 +54,7 @@ Zusätzlich:
 - Reduced-Motion-Unterstützung
 
 
-## Icon- und Desktop-Dark-Mode-Fix 15.4.3
+## Icon- und Desktop-Dark-Mode-Fix 15.4.4
 
 ### Burger und Close-State
 
@@ -75,3 +75,16 @@ Zusätzlich:
 - reduzierte Dark-Mode-Verläufe
 - `contain` für bild- und layoutintensive Flächen
 - Transitionen nur für Farbe und Hintergrund
+
+
+## Hero-Asset-Recovery und Filterdichte 15.4.4
+
+Der tatsächliche Zielordner ist:
+
+```text
+apps/pfotentechnik/src/assets/images/project/pfotentechnik/comparison
+```
+
+Der Installer durchsucht zusätzlich bekannte Fehlablagen unter `src/assets/` und `files/...`. Fehlende Dateien werden ohne Überschreiben bestehender Assets übernommen. Ein Bericht wird unter `apps/pfotentechnik/reports/comparison-platform/hero-assets-15.4.4.json` erzeugt.
+
+Das Hero-Bild füllt den Mediencontainer nun absolut aus und wird an allen vier Kanten geclippt. Mobile Filterkarten und Selects werden deutlich flacher; die Zwei-Spalten-Struktur bleibt erhalten.

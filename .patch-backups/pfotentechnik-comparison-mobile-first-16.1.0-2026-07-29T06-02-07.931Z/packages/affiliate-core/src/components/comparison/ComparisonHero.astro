@@ -12,35 +12,55 @@ type Props = {
   productCount?: number;
 };
 
-const { eyebrow, title, image, facts = [], filters = [], productCount = 0 } = Astro.props as Props;
+const {
+  eyebrow,
+  title,
+  image,
+  facts = [],
+  filters = [],
+  productCount = 0
+} = Astro.props as Props;
+
 const productFact = facts.find((fact) => /model|produkt/i.test(fact.label));
 const dateFact = facts.find((fact) => /datenstand|stand|aktuell/i.test(fact.label));
 const visibleFacts = [
-  productFact ? { label: `${productFact.value} Modelle`, value: "im Vergleich", icon: "box" } : { label: `${productCount} Modelle`, value: "im Vergleich", icon: "box" },
-  { label: "Redaktionell", value: "bewertet", icon: "check" },
-  dateFact ? { label: "Datenstand", value: dateFact.value, icon: "calendar" } : null
-].filter(Boolean);
+  productFact
+    ? { label: `${productFact.value} Modelle`, value: "verglichen", icon: "box" }
+    : { label: `${productCount} Modelle`, value: "verglichen", icon: "box" },
+  dateFact
+    ? { label: `Stand ${dateFact.value}`, value: "aktuell geprüft", icon: "check" }
+    : { label: "Redaktionell", value: "bewertet", icon: "check" }
+].slice(0, 2);
 ---
 
-<header class="comparison-cover" data-comparison-cover="16.1.0">
+<header class="comparison-cover" data-comparison-cover="15.2.3">
   <div class="comparison-cover__copy">
     <span class="comparison-cover__eyebrow">{eyebrow}</span>
     <h1>{title}</h1>
-    <p>Unabhängig verglichen, verständlich eingeordnet und auf die wichtigsten Kaufentscheidungen reduziert.</p>
-  </div>
-
-  <div class="comparison-cover__media">
-    <OptimizedImage src={image.src} alt={image.alt ?? ""} class="comparison-cover__image" layout="full-width" priority />
+    <p>Klare Empfehlungen statt endloser Produktlisten.</p>
   </div>
 
   <dl class="comparison-cover__facts" aria-label="Vergleich auf einen Blick">
-    {visibleFacts.map((fact) => fact && (
+    {visibleFacts.map((fact) => (
       <div class="comparison-cover__fact">
         <span class={`comparison-cover__fact-icon comparison-cover__fact-icon--${fact.icon}`} aria-hidden="true"></span>
-        <span><dt>{fact.label}</dt><dd>{fact.value}</dd></span>
+        <span>
+          <dt>{fact.label}</dt>
+          <dd>{fact.value}</dd>
+        </span>
       </div>
     ))}
   </dl>
+
+  <div class="comparison-cover__media">
+    <OptimizedImage
+      src={image.src}
+      alt={image.alt ?? ""}
+      class="comparison-cover__image"
+      layout="full-width"
+      priority
+    />
+  </div>
 
   <ComparisonHeroFilters filters={filters} productCount={productCount} />
 </header>
