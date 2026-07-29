@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-29T17:45:29.663Z",
+  "generatedAt": "2026-07-29T18:41:50.709Z",
   "totals": {
-    "pages": 206,
+    "pages": 204,
     "types": {
       "Admin": 8,
-      "Ratgeber": 83,
+      "Ratgeber": 82,
       "Hersteller": 20,
       "Startseite": 1,
       "Kaufberatung": 1,
-      "Produkt": 68,
+      "Produkt": 67,
       "Vergleich": 25
     },
-    "warnings": 302,
+    "warnings": 291,
     "severe": 0
   },
   "pages": [
@@ -1503,38 +1503,6 @@
       ]
     },
     {
-      "route": "/gps-tracker-oder-bluetooth-tag/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 35,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/gps-tracker/",
       "type": "Ratgeber",
       "metrics": {
@@ -1599,38 +1567,6 @@
       ]
     },
     {
-      "route": "/hund-frisst-zu-schnell/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 42,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
       "route": "/hund-ist-muede/",
       "type": "Ratgeber",
       "metrics": {
@@ -1654,38 +1590,6 @@
           "level": "warning",
           "code": "NESTED_SURFACE_RISK",
           "value": 6
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/hund-trinkt-ploetzlich-viel/",
-      "type": "Ratgeber",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 36,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
         },
         {
           "level": "warning",
@@ -2093,38 +1997,6 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 35,
-        "h1": 1,
-        "main": 1,
-        "darkMarkers": 0
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "CHIP_ADOPTION_LOW",
-          "value": "0/1"
-        },
-        {
-          "level": "warning",
-          "code": "DARK_MODE_MARKER_MISSING",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "route": "/produkt/petkit-yumshare-dual/",
-      "type": "Produkt",
-      "metrics": {
-        "buttons": 1,
-        "primitiveButtons": 1,
-        "chips": 1,
-        "primitiveChips": 0,
-        "surfaces": 7,
-        "nestedSurfaceRisk": 3,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 37,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -2970,40 +2842,13 @@
       ]
     },
     {
-      "route": "/admin/seo/advisor/",
-      "type": "Admin",
-      "metrics": {
-        "buttons": 1855,
-        "primitiveButtons": 1850,
-        "chips": 1,
-        "primitiveChips": 1,
-        "surfaces": 44,
-        "nestedSurfaceRisk": 20,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 0,
-        "headings": 52,
-        "h1": 1,
-        "main": 0,
-        "darkMarkers": 2
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "NESTED_SURFACE_RISK",
-          "value": 20
-        }
-      ]
-    },
-    {
       "route": "/admin/seo/prices/",
       "type": "Admin",
       "metrics": {
-        "buttons": 204,
-        "primitiveButtons": 204,
-        "chips": 408,
-        "primitiveChips": 408,
+        "buttons": 201,
+        "primitiveButtons": 201,
+        "chips": 402,
+        "primitiveChips": 402,
         "surfaces": 14,
         "nestedSurfaceRisk": 6,
         "inlineWidths": 0,
@@ -3437,7 +3282,7 @@
         "chips": 0,
         "primitiveChips": 0,
         "surfaces": 10,
-        "nestedSurfaceRisk": 3,
+        "nestedSurfaceRisk": 4,
         "inlineWidths": 0,
         "fixedWidths": 0,
         "overflowHidden": 0,
@@ -3969,6 +3814,33 @@
       ]
     },
     {
+      "route": "/hund-frisst-zu-schnell/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 41,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
       "route": "/hund-hat-durchfall/",
       "type": "Ratgeber",
       "metrics": {
@@ -3983,6 +3855,33 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 43,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 0
+      },
+      "findings": [
+        {
+          "level": "warning",
+          "code": "DARK_MODE_MARKER_MISSING",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "type": "Ratgeber",
+      "metrics": {
+        "buttons": 1,
+        "primitiveButtons": 1,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 7,
+        "nestedSurfaceRisk": 3,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 35,
         "h1": 1,
         "main": 1,
         "darkMarkers": 0
@@ -4860,114 +4759,6 @@
       ]
     },
     {
-      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 14,
-        "primitiveButtons": 14,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 76,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 1
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 12,
-        "primitiveButtons": 12,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 57,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 1
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 18,
-        "primitiveButtons": 18,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 49,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 1
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
-      "type": "Vergleich",
-      "metrics": {
-        "buttons": 12,
-        "primitiveButtons": 12,
-        "chips": 0,
-        "primitiveChips": 0,
-        "surfaces": 9,
-        "nestedSurfaceRisk": 4,
-        "inlineWidths": 0,
-        "fixedWidths": 0,
-        "overflowHidden": 0,
-        "largeImagesWithoutSizes": 1,
-        "headings": 44,
-        "h1": 2,
-        "main": 1,
-        "darkMarkers": 1
-      },
-      "findings": [
-        {
-          "level": "warning",
-          "code": "H1_COUNT",
-          "value": 2
-        }
-      ]
-    },
-    {
       "route": "/warum-brauchen-gps-tracker-ein-abo/",
       "type": "Ratgeber",
       "metrics": {
@@ -5508,6 +5299,27 @@
       ]
     },
     {
+      "route": "/admin/seo/advisor/",
+      "type": "Admin",
+      "metrics": {
+        "buttons": 0,
+        "primitiveButtons": 0,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 1,
+        "nestedSurfaceRisk": 0,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 0,
+        "headings": 4,
+        "h1": 1,
+        "main": 0,
+        "darkMarkers": 2
+      },
+      "findings": []
+    },
+    {
       "route": "/admin/seo/cockpit/",
       "type": "Admin",
       "metrics": {
@@ -5844,6 +5656,48 @@
       "findings": []
     },
     {
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 14,
+        "primitiveButtons": 14,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 75,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 1
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 12,
+        "primitiveButtons": 12,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 56,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 1
+      },
+      "findings": []
+    },
+    {
       "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
       "type": "Vergleich",
       "metrics": {
@@ -5858,6 +5712,48 @@
         "overflowHidden": 0,
         "largeImagesWithoutSizes": 1,
         "headings": 42,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 1
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 18,
+        "primitiveButtons": 18,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 48,
+        "h1": 1,
+        "main": 1,
+        "darkMarkers": 1
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "type": "Vergleich",
+      "metrics": {
+        "buttons": 12,
+        "primitiveButtons": 12,
+        "chips": 0,
+        "primitiveChips": 0,
+        "surfaces": 9,
+        "nestedSurfaceRisk": 4,
+        "inlineWidths": 0,
+        "fixedWidths": 0,
+        "overflowHidden": 0,
+        "largeImagesWithoutSizes": 1,
+        "headings": 43,
         "h1": 1,
         "main": 1,
         "darkMarkers": 1

@@ -2,8 +2,8 @@
 
 ## Zusammenfassung
 
-- Seiten: **206**
-- Warnungen: **302**
+- Seiten: **204**
+- Warnungen: **291**
 - Schwere Risiken: **0**
 
 ## Seitentypen
@@ -11,8 +11,8 @@
 - Admin: **8**
 - Hersteller: **20**
 - Kaufberatung: **1**
-- Produkt: **68**
-- Ratgeber: **83**
+- Produkt: **67**
+- Ratgeber: **82**
 - Startseite: **1**
 - Vergleich: **25**
 
@@ -59,12 +59,9 @@
 - `/futterautomat-hund/` — Ratgeber: Box-in-Box-Risiko (6); Dark-Mode-Marker nicht erkannt (0)
 - `/futterautomat-katze/` — Ratgeber: Box-in-Box-Risiko (5); Dark-Mode-Marker nicht erkannt (0)
 - `/futterautomat-und-ernaehrung/` — Ratgeber: Box-in-Box-Risiko (8); Dark-Mode-Marker nicht erkannt (0)
-- `/gps-tracker-oder-bluetooth-tag/` — Ratgeber: H1-Anzahl (2); Dark-Mode-Marker nicht erkannt (0)
 - `/gps-tracker/` — Ratgeber: Box-in-Box-Risiko (8); Dark-Mode-Marker nicht erkannt (0)
 - `/hersteller/` — Hersteller: Box-in-Box-Risiko (34); Dark-Mode-Marker nicht erkannt (0)
-- `/hund-frisst-zu-schnell/` — Ratgeber: H1-Anzahl (2); Dark-Mode-Marker nicht erkannt (0)
 - `/hund-ist-muede/` — Ratgeber: Box-in-Box-Risiko (6); Dark-Mode-Marker nicht erkannt (0)
-- `/hund-trinkt-ploetzlich-viel/` — Ratgeber: H1-Anzahl (2); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/aqara-smart-pet-feeder-c1/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/cat-mate-shell-fountain/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/catit-pixi-vision-smart-feeder/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
@@ -78,6 +75,9 @@
 - `/produkt/petkit-eversweet-max-cordless/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/petkit-eversweet-solo-se/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 - `/produkt/petkit-fresh-element-infinity/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
+- `/produkt/petlibro-air-automatic-feeder/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
+- `/produkt/petlibro-capsule-dog-fountain/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
+- `/produkt/petlibro-dockstream-cordless/` — Produkt: Chip-Primitives zu gering (0/1); Dark-Mode-Marker nicht erkannt (0)
 
 ## Manuelle Viewport-Matrix
 

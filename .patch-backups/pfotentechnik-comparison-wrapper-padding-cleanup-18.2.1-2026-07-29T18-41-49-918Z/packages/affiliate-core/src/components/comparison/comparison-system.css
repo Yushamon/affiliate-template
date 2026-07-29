@@ -20,7 +20,7 @@
 }
 
 .comparison-detail {
-
+  padding-bottom: 7rem;
 }
 
 .comparison-detail > *,
@@ -587,7 +587,7 @@
   }
 
   .comparison-detail {
-
+    padding-bottom: 8rem;
   }
 
   .comparison-hero {
@@ -1981,7 +1981,7 @@
 .comparison-shell[data-comparison-cover-version="16.1.0"] .comparison-explorer,
 .comparison-shell[data-comparison-cover-version="16.2.0"] .comparison-explorer {
   margin-inline: 0;
-
+  padding-inline: var(--comparison-mobile-gutter);
 }
 
 .comparison-shell[data-comparison-cover-version="16.1.0"] .comparison-alternatives__list,
@@ -2121,7 +2121,7 @@
 .comparison-shell[data-comparison-cover-version="16.2.0"] .comparison-decision-flow > .comparison-premium-section,
 .comparison-shell[data-comparison-cover-version="16.1.0"] .comparison-decision-flow > .comparison-explorer,
 .comparison-shell[data-comparison-cover-version="16.2.0"] .comparison-decision-flow > .comparison-explorer {
-
+  padding-inline: 0;
 }
 
 .comparison-shell[data-comparison-cover-version="16.1.0"] .comparison-alternatives,
@@ -4712,7 +4712,7 @@ body.dark .comparison-sticky-bar,
 
   .comparison-shell--premium .comparison-premium-section,
   .comparison-shell--premium .comparison-explorer {
-
+    padding-inline: 0;
   }
 
   .comparison-explorer__mobile-controls {
@@ -4825,7 +4825,7 @@ body.dark .comparison-sticky-bar,
 @media (max-width: 47.99rem) {
   .comparison-detail {
     gap: clamp(1.75rem, 6vw, 2.5rem);
-
+    padding-bottom: calc(5.75rem + env(safe-area-inset-bottom));
   }
 
   .comparison-shell {
@@ -4839,7 +4839,7 @@ body.dark .comparison-sticky-bar,
   .comparison-shell .comparison-premium-section,
   .comparison-shell .comparison-explorer {
     margin-block: 0;
-
+    padding-block: 0;
   }
 
   .comparison-shell .comparison-premium-section__heading {
