@@ -121,7 +121,7 @@ const mobileGroups = hasExplicitMobileGroups
       const navigation = header.querySelector<HTMLElement>("[data-main-navigation]");
       if (!button || !navigation) return;
 
-      const desktop = window.matchMedia("(min-width: 48rem)");
+      const desktop = window.matchMedia("(min-width: 64rem)");
 
       const setOpen = (open: boolean) => {
         button.setAttribute("aria-expanded", String(open));
@@ -183,7 +183,7 @@ const mobileGroups = hasExplicitMobileGroups
     margin-left: auto;
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 64rem) {
     .site-header-v2 .main-nav-v2 {
       visibility: visible;
       opacity: 1;
@@ -217,7 +217,7 @@ const mobileGroups = hasExplicitMobileGroups
     white-space: nowrap;
   }
 
-  @media (max-width: 47.99rem) {
+  @media (max-width: 63.99rem) {
     html.pt-navigation-open {
       overflow: hidden;
     }
@@ -396,7 +396,7 @@ const mobileGroups = hasExplicitMobileGroups
   }
 
 
-  @media (min-width: 48rem) {
+  @media (min-width: 64rem) {
     .site-header-v2,
     .site-header-v2 .header-container-v2,
     .site-header-v2 .main-nav-v2,

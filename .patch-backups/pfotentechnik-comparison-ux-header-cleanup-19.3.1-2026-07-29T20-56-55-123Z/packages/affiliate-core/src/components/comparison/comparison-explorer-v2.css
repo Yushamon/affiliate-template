@@ -444,72 +444,19 @@
   z-index: 3;
   left: 0;
   display: flex;
-  min-height: 3.75rem;
   align-items: center;
   justify-content: space-between;
   gap: .75rem;
-  padding: .8rem 1rem;
+  padding: .85rem 1rem;
   color: var(--comparison-text);
   background: var(--comparison-surface-soft);
-  cursor: pointer;
-  list-style: none;
-}
-
-.comparison-lab__group > summary::-webkit-details-marker {
-  display: none;
-}
-
-.comparison-lab__group-title {
-  display: grid;
-  gap: .15rem;
-}
-
-.comparison-lab__group-title strong {
   font-weight: 850;
+  cursor: pointer;
 }
 
-.comparison-lab__group-title small {
+.comparison-lab__group > summary small {
   color: var(--comparison-muted);
   font-weight: 650;
-}
-
-.comparison-lab__group-toggle {
-  display: inline-flex;
-  min-width: 6.5rem;
-  align-items: center;
-  justify-content: flex-end;
-  gap: .45rem;
-  color: var(--comparison-accent);
-  font-size: .78rem;
-  font-weight: 850;
-}
-
-.comparison-lab__group-chevron {
-  display: grid;
-  width: 2rem;
-  height: 2rem;
-  place-items: center;
-  border: 1px solid var(--comparison-line);
-  border-radius: 999px;
-  background: var(--comparison-surface);
-  font-size: 1.2rem;
-  transition: transform .18s ease;
-}
-
-.comparison-lab__group-state--open {
-  display: none;
-}
-
-.comparison-lab__group[open] .comparison-lab__group-state--closed {
-  display: none;
-}
-
-.comparison-lab__group[open] .comparison-lab__group-state--open {
-  display: inline;
-}
-
-.comparison-lab__group[open] .comparison-lab__group-chevron {
-  transform: rotate(180deg);
 }
 
 @media (max-width: 47.99rem) {
@@ -578,25 +525,6 @@
 
   .comparison-lab__sticky-products {
     top: 3.75rem;
-  }
-
-  .comparison-lab__group > summary {
-    min-height: 4.25rem;
-    padding: .75rem;
-  }
-
-  .comparison-lab__group-toggle {
-    min-width: auto;
-  }
-
-  .comparison-lab__group-state {
-    display: none !important;
-  }
-
-  .comparison-lab__group-chevron {
-    width: 2.35rem;
-    height: 2.35rem;
-    font-size: 1.35rem;
   }
 
   .comparison-lab__criterion-head,
