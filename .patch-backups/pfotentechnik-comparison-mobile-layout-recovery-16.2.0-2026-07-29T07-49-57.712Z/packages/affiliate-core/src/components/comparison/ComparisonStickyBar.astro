@@ -1,0 +1,31 @@
+---
+import type { ComparisonProduct } from "../../comparison/model";
+import { getPriceDisplay } from "../../comparison/price";
+type Props = { product?: ComparisonProduct };
+const { product } = Astro.props as Props;
+const price = product ? getPriceDisplay(product.price) : null;
+---
+{product && price?.url && (
+  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung" data-comparison-sticky hidden>
+    <div class="comparison-sticky-bar__identity"><span>Unsere Empfehlung</span><strong title={product.title}>{product.title}</strong></div>
+    <a href={price.url} class="pt-button comparison-button comparison-sticky-bar__primary" rel={price.rel} target={price.target} data-affiliate-link>Preis prüfen</a>
+  </aside>
+)}
+<script>
+  const setupComparisonSticky = () => {
+    document.querySelectorAll<HTMLElement>("[data-comparison-sticky]").forEach((sticky) => {
+      if (sticky.dataset.ready === "true") return;
+      sticky.dataset.ready = "true";
+      const recommendation = document.getElementById("vergleichssieger");
+      if (!recommendation) return;
+      let scheduled = false;
+      const update = () => { scheduled = false; const rect = recommendation.getBoundingClientRect(); const visible = rect.bottom < window.innerHeight * .15; sticky.hidden = !visible; sticky.toggleAttribute("data-visible", visible); };
+      const requestUpdate = () => { if (scheduled) return; scheduled = true; requestAnimationFrame(update); };
+      update();
+      window.addEventListener("scroll", requestUpdate, { passive: true });
+      window.addEventListener("resize", requestUpdate, { passive: true });
+    });
+  };
+  setupComparisonSticky();
+  document.addEventListener("astro:page-load", setupComparisonSticky);
+</script>
