@@ -201,30 +201,17 @@ const {
       };
 
       const setView = (view) => {
-        const normalizedView = view === "table" ? "table" : "cards";
-        const isCards = normalizedView === "cards";
+        const isCards = view === "cards";
 
-        if (tableView instanceof HTMLElement) {
-          tableView.hidden = isCards;
-          tableView.setAttribute("aria-hidden", String(isCards));
-          tableView.inert = isCards;
-        }
-
-        if (cardView instanceof HTMLElement) {
-          cardView.hidden = !isCards;
-          cardView.setAttribute("aria-hidden", String(!isCards));
-          cardView.inert = !isCards;
-        }
-
-        explorer.dataset.activeView = normalizedView;
+        if (tableView instanceof HTMLElement) tableView.hidden = isCards;
+        if (cardView instanceof HTMLElement) cardView.hidden = !isCards;
+        explorer.dataset.activeView = view;
 
         viewTabs.forEach((tab) => {
           if (!(tab instanceof HTMLButtonElement)) return;
-          const active =
-            tab.dataset.comparisonView === normalizedView;
+          const active = tab.dataset.comparisonView === view;
           tab.classList.toggle("is-active", active);
           tab.setAttribute("aria-selected", String(active));
-          tab.tabIndex = active ? 0 : -1;
         });
       };
 
