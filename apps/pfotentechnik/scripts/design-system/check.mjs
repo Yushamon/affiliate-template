@@ -6,6 +6,8 @@ import { fileURLToPath } from "node:url";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(scriptDir, "..", "..");
 const repoRoot = path.resolve(appRoot, "..", "..");
+const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
+const npmCli = process.env.npm_execpath;
 
 const checks = [
   "design-system:audit",
@@ -18,8 +20,14 @@ const checks = [
 for (const check of checks) {
   console.log("\n=== " + check + " ===");
   const result = spawnSync(
-    "npm",
-    ["--workspace", "apps/pfotentechnik", "run", check],
+    npmCli ? process.execPath : npmCommand,
+    [
+      ...(npmCli ? [npmCli] : []),
+      "--workspace",
+      "apps/pfotentechnik",
+      "run",
+      check,
+    ],
     { cwd: repoRoot, stdio: "inherit", shell: false }
   );
 
