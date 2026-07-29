@@ -1,6 +1,6 @@
 # Audit interne Vergleichslinks und Selbstlinks
 
-Erstellt: 2026-07-29T08:47:21.374Z
+Erstellt: 2026-07-29T09:13:38.039Z
 
 - Gebaute Seiten: 206
 - Vergleichs-Aliasse: 28

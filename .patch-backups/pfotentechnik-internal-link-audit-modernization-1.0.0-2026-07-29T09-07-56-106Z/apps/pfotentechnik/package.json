@@ -113,9 +113,7 @@
     "build:fast": "node scripts/build-fast.mjs",
     "build:cache:reset": "node scripts/build-fast.mjs --clear-cache",
     "audit:internal-link-targets": "node scripts/audit-internal-link-targets.mjs",
-    "audit:internal-link-targets:strict": "node scripts/audit-internal-link-targets.mjs --strict",
-    "audit:internal-link-health": "node scripts/audit-internal-link-health.mjs",
-    "audit:internal-link-health:strict": "node scripts/audit-internal-link-health.mjs --strict"
+    "audit:internal-link-targets:strict": "node scripts/audit-internal-link-targets.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

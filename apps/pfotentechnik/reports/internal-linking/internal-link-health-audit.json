@@ -1,0 +1,1018 @@
+{
+  "version": "4.0.1",
+  "generatedAt": "2026-07-29T09:13:38.067Z",
+  "strict": true,
+  "inputs": {
+    "legacyVersion": "3.0.0",
+    "targetAuditVersion": "1.0.0",
+    "builtRoutes": 206
+  },
+  "summary": {
+    "documents": 187,
+    "legacyErrors": 32,
+    "legacyWarnings": 54,
+    "runtimeErrors": 0,
+    "effectiveErrors": 0,
+    "effectiveWarnings": 66,
+    "falsePositives": 20
+  },
+  "classifications": {
+    "advisory": 54,
+    "anchor-governance-review": 12,
+    "source-model-false-positive": 20
+  },
+  "effectiveSeverities": {
+    "info": 20,
+    "warning": 66
+  },
+  "findings": [
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /hersteller/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/hersteller/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /hersteller/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/wissen/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /wissen/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /kontakt/.",
+      "sourceRoute": "/so-bewerten-wir/",
+      "targetRoute": "/kontakt/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /kontakt/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/welche-portionsgroesse-ist-richtig/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "targetRoute": "/vergleiche/",
+      "originalSeverity": "error",
+      "effectiveSeverity": "info",
+      "classification": "source-model-false-positive",
+      "rationale": "Ziel /vergleiche/ ist im Build vorhanden; der Legacy-Audit kann Astro-/Hub-Routen nicht vollständig modellieren."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„automatischer futterspender“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "automatischer futterspender",
+      "targets": [
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
+        "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„futterautomat fur grosse hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "futterautomat fur grosse hunde",
+      "targets": [
+        "/wie-gross-sollte-ein-futterautomat-sein/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md",
+        "apps/pfotentechnik/src/content/comparisons/futterautomat-fuer-grosse-hunde.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„futtermenge katze“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "futtermenge katze",
+      "targets": [
+        "/futtermenge-katze/",
+        "/uebergewicht-bei-katzen-vermeiden/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/futtermenge-katze.md",
+        "apps/pfotentechnik/src/content/pages/uebergewicht-bei-katzen-vermeiden.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„hundetrinkbrunnen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "hundetrinkbrunnen",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„katze trinkt viel“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "katze trinkt viel",
+      "targets": [
+        "/katze-trinkt-viel/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/katze-trinkt-viel.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„katze trinkt zu wenig“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "katze trinkt zu wenig",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„petkit yumshare dual hopper 2“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "petkit yumshare dual hopper 2",
+      "targets": [
+        "/produkt/petkit-yumshare-dual-hopper/",
+        "/produkt/petkit-yumshare-dual/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
+        "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen fur hunde“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen fur hunde",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-hund.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen fur katzen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen fur katzen",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/trinkbrunnen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„trinkbrunnen reinigen“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "trinkbrunnen reinigen",
+      "targets": [
+        "/katzentrinkbrunnen-richtig-reinigen/",
+        "/trinkbrunnen-fuer-katzen-sinnvoll/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+        "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„wasserbedarf hund“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "wasserbedarf hund",
+      "targets": [
+        "/hund-trinkt-zu-wenig/",
+        "/wie-viel-wasser-braucht-ein-hund/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/hund-trinkt-zu-wenig.md",
+        "apps/pfotentechnik/src/content/pages/wie-viel-wasser-braucht-ein-hund.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "error",
+      "code": "UNRESOLVED_ANCHOR_CONFLICT",
+      "message": "„wie oft hund futtern“ wird von mehreren Zielen ohne eindeutigen Eigentümer beansprucht.",
+      "anchor": "wie oft hund futtern",
+      "targets": [
+        "/fuetterungszeiten-nach-alter/",
+        "/warum-hunde-feste-fuetterungszeiten-brauchen/"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/content/pages/fuetterungszeiten-nach-alter.md",
+        "apps/pfotentechnik/src/content/pages/warum-hunde-feste-fuetterungszeiten-brauchen.md"
+      ],
+      "originalSeverity": "error",
+      "effectiveSeverity": "warning",
+      "classification": "anchor-governance-review",
+      "rationale": "Mehrere Ziele beanspruchen denselben Alias. Das ist eine Ownership-Entscheidung, aber kein automatisch nachgewiesener kaputter Link."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/futterautomat-katze/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/futterautomat-katze/",
+      "file": "apps/pfotentechnik/src/content/pages/futterautomat-katze.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/gps-tracker-oder-bluetooth-tag/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/gps-tracker-oder-bluetooth-tag/",
+      "file": "apps/pfotentechnik/src/content/pages/gps-tracker-oder-bluetooth-tag.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/hund-frisst-zu-schnell/",
+      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/hund-trinkt-ploetzlich-viel/",
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
+      "file": "apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/seniorenhunde-richtig-versorgen/",
+      "file": "apps/pfotentechnik/src/content/pages/seniorenhunde-richtig-versorgen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "file": "apps/pfotentechnik/src/content/pages/smarte-gadgets-fuer-hunde-und-katzen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/so-bewerten-wir/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/so-bewerten-wir/",
+      "file": "apps/pfotentechnik/src/content/pages/so-bewerten-wir.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wasserstelle-katze-richtiger-standort/",
+      "file": "apps/pfotentechnik/src/content/pages/wasserstelle-katze-richtiger-standort.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wie-funktioniert-ein-futterautomat/",
+      "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "file": "apps/pfotentechnik/src/content/pages/wie-kann-technik-gegen-langeweile-helfen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/futtermenge-hund/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-hat-durchfall/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-ist-muede/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katzentrinkbrunnen-ohne-filter/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/aqara-smart-pet-feeder-c1/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/aqara-smart-pet-feeder-c1/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-335-pet-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-335-pet-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-c200/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-c200/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/cat-mate-shell-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/cat-mate-shell-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/catit-pixi-vision-smart-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/catit-pixi-vision-smart-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/garmin-alpha-tt-25/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/garmin-alpha-tt-25/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-a305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-a305d/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-a68/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-a68/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/honeyguardian-smart-pet-feeder-s305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/imipaw-3l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-2-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-2-in-1-feeder-water/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-2-in-1-feeder-water/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-3-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-3-5l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/oneisall-5l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/pawbby-smart-pet-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/pawbby-smart-pet-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-5-mini/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-5-mini/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-max-cordless/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-eversweet-solo-se/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-fresh-element-infinity/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-air-automatic-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-air-wifi-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-glacier-ultrafiltration/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-granary-2-vision/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-granary-dual-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-stainless-steel-fountain/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-cube-air-ca10/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-heritage-view-camera-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/wopet-pioneer-f01-plus/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/zeromouse-2-0/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/seniorenhunde-richtig-versorgen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/trinkbrunnen-fuer-kitten-sicher/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    }
+  ]
+}
