@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/products/xiaomi-smart-pet-food-feeder-2/gallery-3.webp
       alt: Xiaomi Smart Pet Food Feeder 2 mit LED-Anzeige
 price:
-  current: 83.95
+  current: 89.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-27T20:27:23.445Z"
+  checkedAt: "2026-07-29T20:38:50.300Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-07-27T20:27:23.445Z"
+priceUpdated: "2026-07-29T20:38:50.300Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T20:27:23.445Z"
+availabilityUpdated: "2026-07-29T20:38:50.300Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T20:00:18.370Z",
+  "generatedAt": "2026-07-29T20:27:35.419Z",
   "errors": 4,
   "warnings": 79,
   "portfolio": [],
@@ -3681,7 +3681,7 @@
         "productSlugs": [
           "petkit-yumshare-solo-2",
           "petkit-yumshare-dual-hopper",
-          "petkit-yumshare-dual",
+          "petkit-yumshare-dual-hopper",
           "petkit-yumshare-solo",
           "petkit-fresh-element-solo",
           "petkit-fresh-element-infinity",
@@ -6616,6 +6616,32 @@
       ]
     },
     {
+      "file": "apps/pfotentechnik/src/content/pages/hund-frisst-zu-schnell.md",
+      "slug": "hund frisst zu schnell",
+      "title": "Hund frisst zu schnell – Ursachen, Risiken und wirksame Lösungen",
+      "type": "page",
+      "data": {
+        "title": "Hund frisst zu schnell – Ursachen, Risiken und wirksame Lösungen",
+        "slug": "hund-frisst-zu-schnell",
+        "description": "Warum Hunde schlingen, welche Gesundheitsrisiken entstehen und wie Sie das Fressverhalten nachhaltig verlangsamen.",
+        "category": "wissen",
+        "publishedAt": "2026-07-29",
+        "updatedAt": "2026-07-29",
+        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "tags": [
+          "hund",
+          "gesundheit",
+          "futter",
+          "fressverhalten"
+        ],
+        "seo": {
+          "title": "Hund frisst zu schnell: Ursachen & Tipps gegen Schlingen",
+          "description": "Erfahren Sie, warum Hunde ihr Futter herunterschlingen, welche Risiken bestehen und welche Maßnahmen wirklich helfen."
+        }
+      },
+      "issues": []
+    },
+    {
       "file": "apps/pfotentechnik/src/content/pages/hund-hat-durchfall.md",
       "slug": "hund hat durchfall",
       "title": "Hund hat Durchfall: Ursachen, Warnzeichen und richtiges Vorgehen",
@@ -6794,6 +6820,38 @@
           "severity": "warning",
           "code": "CHECKLIST_OVERUSE",
           "message": "2 Checklisten erkannt."
+        }
+      ]
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md",
+      "slug": "hund trinkt ploetzlich viel",
+      "title": "Hund trinkt plötzlich viel – Ursachen, Warnzeichen und was jetzt zu tun ist",
+      "type": "page",
+      "data": {
+        "title": "Hund trinkt plötzlich viel – Ursachen, Warnzeichen und was jetzt zu tun ist",
+        "slug": "hund-trinkt-ploetzlich-viel",
+        "description": "Warum Hunde plötzlich deutlich mehr trinken, welche Ursachen harmlos oder ernst sein können und wann ein Tierarztbesuch notwendig ist.",
+        "category": "wissen",
+        "publishedAt": "2026-07-29",
+        "updatedAt": "2026-07-29",
+        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
+        "tags": [
+          "hund",
+          "gesundheit",
+          "wasser",
+          "polydipsie"
+        ],
+        "seo": {
+          "title": "Hund trinkt plötzlich viel: Ursachen und Hilfe",
+          "description": "Erfahren Sie, wann vermehrtes Trinken normal ist, welche Krankheiten dahinterstecken können und wann Sie zum Tierarzt sollten."
+        }
+      },
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "MEDICATION_DOSAGE",
+          "message": "Mögliche Dosierungsangabe gefunden."
         }
       ]
     },
@@ -19708,239 +19766,6 @@
       ]
     },
     {
-      "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md",
-      "slug": "petkit yumshare dual",
-      "title": "PETKIT YumShare Dual-Hopper 2",
-      "type": "product",
-      "data": {
-        "title": "PETKIT YumShare Dual-Hopper 2",
-        "slug": "petkit-yumshare-dual",
-        "type": "product",
-        "layout": "product",
-        "testStatus": "editorial-review",
-        "productStatus": "unknown",
-        "description": ">-",
-        "recommendation": ">-",
-        "manufacturer": {
-          "key": "petkit",
-          "name": "PETKIT",
-          "slug": "petkit"
-        },
-        "category": {
-          "key": "futterautomaten",
-          "label": "Futterautomaten",
-          "path": "/smarte-futterautomaten/"
-        },
-        "productUrl": "/produkt/petkit-yumshare-dual/",
-        "publishedAt": "2026-07-17",
-        "updatedAt": "2026-07-17",
-        "author": {
-          "name": "PfotenTechnik Redaktion"
-        },
-        "seo": {
-          "title": "PETKIT YumShare Dual-Hopper 2 im Check",
-          "description": ">-",
-          "canonical": "/produkt/petkit-yumshare-dual/",
-          "sitemap": true,
-          "priority": 0.9
-        },
-        "hub": {
-          "sections": [
-            "produkte",
-            "futterautomaten"
-          ]
-        },
-        "tags": [
-          "katze",
-          "kleiner-hund",
-          "kamera",
-          "dual-hopper",
-          "app",
-          "trockenfutter",
-          "premium"
-        ],
-        "images": {
-          "hero": {
-            "src": "../../assets/images/products/petkit-yumshare-dual/hero.webp",
-            "alt": "PETKIT YumShare Dual-Hopper 2 in redaktioneller Produktdarstellung"
-          },
-          "thumbnail": {
-            "src": "../../assets/images/products/petkit-yumshare-dual/thumbnail.webp",
-            "alt": "PETKIT YumShare Dual-Hopper 2 als kompakte Produktansicht"
-          },
-          "comparison": {
-            "src": "../../assets/images/products/petkit-yumshare-dual/comparison.webp",
-            "alt": "PETKIT YumShare Dual-Hopper 2 im Vergleich"
-          },
-          "gallery": [
-            "src: ../../assets/images/products/petkit-yumshare-dual/gallery-1.webp",
-            "src: ../../assets/images/products/petkit-yumshare-dual/gallery-2.webp",
-            "src: ../../assets/images/products/petkit-yumshare-dual/gallery-3.webp"
-          ]
-        },
-        "affiliate": {
-          "provider": "amazon",
-          "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETKIT+YumShare+Dual+Hopper+2"
-        },
-        "rating": 4.7,
-        "score": 94,
-        "priceState": "unknown",
-        "priceAvailable": false,
-        "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
-        "ratings": {
-          "app": 4.7,
-          "portionierung": 4.8,
-          "reinigung": 4.3,
-          "zuverlaessigkeit": 4.5,
-          "sicherheit": 4.5,
-          "preisleistung": 4
-        },
-        "decision": {
-          "bestFor": [
-            "Zwei Trockenfuttersorten oder Futtermischungen",
-            "Katzen und kleine Hunde",
-            "Mehrtierhaushalte mit Wunsch nach Kameraauswertung",
-            "Individuell kombinierte Fütterungspläne"
-          ],
-          "attention": [
-            "Gesichtserkennung verhindert keinen Futterklau",
-            "Nur 2,4-GHz-WLAN bei P591; neuere P592-Version unterstützt auch 5 GHz",
-            "Cloud- und KI-Zusatzfunktionen können ein Abo erfordern",
-            "Größer und komplexer zu reinigen als Einzelkammermodelle"
-          ]
-        },
-        "review": {
-          "summary": "Der YumShare Dual-Hopper 2 kombiniert zwei Futterkammern, zwei getrennte Ausgabesysteme und eine KI-Kamera.",
-          "verdict": ">-"
-        },
-        "strengths": [
-          "5 Liter Gesamtkapazität",
-          "Zwei getrennte Futterkammern",
-          "Separate oder gemischte Ausgabe",
-          "KI-Kamera mit Gesichtserkennung",
-          "Bis zu zehn Portionen pro Kammer und Mahlzeit",
-          "Batterie-Backup"
-        ],
-        "weaknesses": [
-          "Hoher Preis",
-          "Aufwendigere Reinigung",
-          "Keine physische Zugangskontrolle",
-          "Je nach Generation unterschiedliche WLAN-Unterstützung"
-        ],
-        "experience": {
-          "summary": "Zwei Kammern ermöglichen unterschiedliche Sorten, lösen aber keine getrennte Fütterung zweier Tiere am selben Napf.",
-          "methodology": "Redaktionelle Einordnung anhand der offiziellen PETKIT-Produktseiten; kein eigener Langzeittest.",
-          "maintenance": ">-"
-        },
-        "alternatives": [
-          "petkit-yumshare-solo",
-          "petlibro-granary-camera-feeder",
-          "petlibro-granary-dual-feeder"
-        ],
-        "comparisons": [
-          "beste-futterautomaten-fuer-katzen",
-          "beste-futterautomaten-fuer-hunde"
-        ],
-        "comparisonFilters": {
-          "animal": [
-            "dog",
-            "cat"
-          ],
-          "petSize": [
-            "small"
-          ],
-          "foodType": []
-        },
-        "specs": [
-          "label: Modell",
-          "label: Futterart",
-          "label: Krokettengröße",
-          "label: Kapazität",
-          "label: Kammern",
-          "label: Mahlzeiten",
-          "label: Portionierung",
-          "label: Kamera",
-          "label: Tiererkennung",
-          "label: App",
-          "label: WLAN",
-          "label: Napfmaterial",
-          "label: Stromversorgung",
-          "label: Abmessungen",
-          "label: Gewicht",
-          "label: Geeignet für",
-          "label: Reinigung",
-          "label: Batterie"
-        ],
-        "faq": [
-          "question: Kann der YumShare Dual zwei Tiere getrennt füttern?",
-          "question: Kann ich zwei Futtersorten mischen?",
-          "question: Unterstützt das Modell 5-GHz-WLAN?",
-          "question: Verhindert die KI-Kamera Futterklau?"
-        ],
-        "useCase": "Für Haushalte mit zwei Trockenfuttersorten und Kameraauswertung",
-        "capacity": "5 Liter in zwei Kammern",
-        "expandable": "Nicht vorgesehen",
-        "features": [
-          "Zwei Futterkammern",
-          "KI-Kamera",
-          "Separate Fütterungspläne"
-        ],
-        "comparisonData": {
-          "general": {
-            "animal": [
-              "dog",
-              "cat"
-            ],
-            "petSize": [
-              "small"
-            ],
-            "foodType": []
-          },
-          "editorial": {
-            "rating": 4.7,
-            "score": 94,
-            "productStatus": "unknown"
-          },
-          "custom": {
-            "modell": "P591 beziehungsweise P592 je nach Generation",
-            "futterart": "Trockenfutter und passende gefriergetrocknete Stücke",
-            "krokettengrosse": "Trockenfutter bis 12 mm, Freeze-dried bis 9 mm",
-            "kapazitat": "5 Liter",
-            "kammern": "Zwei getrennte Futterkammern",
-            "mahlzeiten": "1 bis 10 pro Tag",
-            "portionierung": "1 bis 10 Portionen pro Kammer und Mahlzeit",
-            "kamera": "1080p-KI-Kamera mit Nachtsicht",
-            "tiererkennung": "Gesichtserkennung",
-            "app": "PETKIT-App",
-            "wlan": "P591: 2,4 GHz; P592: 2,4 und 5 GHz",
-            "napfmaterial": "Edelstahl 304",
-            "stromversorgung": "6-V-Netzadapter und vier D-Batterien",
-            "abmessungen": "247,5 × 293 × 362 mm",
-            "gewicht": "ca. 2,5 kg",
-            "geeignet_fur": "Katzen und kleine Hunde",
-            "reinigung": ">-"
-          }
-        },
-        "metadata": {
-          "version": "4.0.1",
-          "normalizedAt": "2026-07-26",
-          "policy": "Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte"
-        }
-      },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "META_DESCRIPTION_LENGTH",
-          "message": "Description sollte ungefähr 90–180 Zeichen lang sein."
-        }
-      ]
-    },
-    {
       "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md",
       "slug": "petkit yumshare solo 2",
       "title": "PETKIT YumShare Solo 2",
@@ -22679,7 +22504,7 @@
         "alternatives": [
           "petlibro-granary-dual-feeder",
           "petkit-yumshare-solo",
-          "petkit-yumshare-dual"
+          "petkit-yumshare-dual-hopper"
         ],
         "comparisons": [
           "beste-futterautomaten-fuer-katzen",
@@ -27131,6 +26956,11 @@
         "editorialStatus": "complete",
         "recommendationStatus": "limited",
         "maintenanceStatus": "required",
+        "editorial": {
+          "assessmentType": "editorial-review",
+          "testedHandsOn": false,
+          "note": "Redaktionelle Einordnung auf Basis der bereits dokumentierten Produktdaten; kein eigener Langzeittest."
+        },
         "ratings": {
           "app": 4,
           "portionierung": 4,
@@ -27172,6 +27002,9 @@
           "Keine Kamera integriert"
         ],
         "alternatives": [],
+        "comparisons": [
+          "futterautomat-mit-app"
+        ],
         "comparisonFilters": {
           "animal": [
             "dog",
@@ -27378,7 +27211,9 @@
           "Datenschutz und App-Abhängigkeit beachten",
           "Regionale Verfügbarkeit schwankt"
         ],
-        "alternatives": [],
+        "alternatives": [
+          "petlibro-granary-camera-feeder"
+        ],
         "comparisonFilters": {
           "animal": [
             "dog",
