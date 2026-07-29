@@ -1,10 +1,12 @@
-# Audit interne Vergleichslinks und Selbstlinks
+# Audit interne Linkziele und Selbstlinks
 
-Erstellt: 2026-07-29T09:13:38.039Z
+Erstellt: 2026-07-29T11:02:17.206Z
 
 - Gebaute Seiten: 206
-- Vergleichs-Aliasse: 28
+- Routen im Inventar: 206
+- Redirect-Aliasse: 29
 - Fehler: 0
+- Warnungen: 0
 
 ## Befunde
 

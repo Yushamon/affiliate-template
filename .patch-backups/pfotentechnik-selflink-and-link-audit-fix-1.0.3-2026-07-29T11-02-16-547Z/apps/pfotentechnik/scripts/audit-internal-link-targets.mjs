@@ -171,34 +171,20 @@ for (const file of htmlFiles) {
   const canonical = canonicalResolved.final;
   const sourceFile = path.relative(root, file).replace(/\\/g, "/");
 
-  const robotsContent = [
-    ...html.matchAll(/<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']*)["']/gi),
-    ...html.matchAll(/<meta\b[^>]*content=["']([^"']*)["'][^>]*name=["']robots["']/gi)
-  ].map((match) => match[1].toLowerCase()).join(",");
-
-  const isAdminRoute = sourceRoute === "/admin/" || sourceRoute.startsWith("/admin/");
-  const isNoindex = /(?:^|[,\s])noindex(?:[,\s]|$)/i.test(robotsContent);
-  const canonicalRequired = !isAdminRoute && !isNoindex;
-
-  if (!canonical && canonicalRequired) {
+  if (!canonical) {
     add("error", "CANONICAL_MISSING", {
       sourceFile,
       sourceRoute,
       originalTarget: canonicalRaw,
       normalizedTarget: "",
       finalTarget: "",
-      reason: "Indexierbare Seite besitzt keine auswertbare interne Canonical-URL.",
+      reason: "Keine auswertbare interne Canonical-URL vorhanden.",
       recommendation: "Canonical-Ausgabe der Seite prüfen."
     });
     continue;
   }
 
-  if (!canonical && !canonicalRequired) {
-    // Nicht indexierbare Admin- und Noindex-Seiten bleiben Teil des
-    // Routen- und Linkzielinventars, benötigen aber keine Canonical-URL.
-  }
-
-  if (canonical && !existingRoutes.has(canonical)) {
+  if (!existingRoutes.has(canonical)) {
     add("error", "CANONICAL_TARGET_MISSING", {
       sourceFile,
       sourceRoute,
@@ -403,7 +389,7 @@ const warnings = findings.filter((finding) => finding.severity === "warning");
 
 fs.mkdirSync(reportDir, { recursive: true });
 const report = {
-  version: "2.0.2",
+  version: "2.0.1",
   generatedAt: new Date().toISOString(),
   strict,
   summary: {

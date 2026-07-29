@@ -1,6 +1,6 @@
 {
-  "version": "1.0.5",
-  "generatedAt": "2026-07-29T08:44:50.051Z",
+  "version": "1.0.2",
+  "generatedAt": "2026-07-29T09:39:35.753Z",
   "dryRun": false,
   "redirectAliases": {
     "/beste-futterautomaten-fuer-berufstaetige/": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
@@ -21,7 +21,6 @@
     "/beste-gps-tracker-fuer-katzen/": "/vergleiche/beste-gps-tracker-fuer-katzen/",
     "/beste-trinkbrunnen-fuer-hunde/": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
     "/beste-trinkbrunnen-fuer-katzen/": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-    "/futterautomat-fuer-berufstaetige/": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
     "/futterautomat-fuer-grosse-hunde/": "/vergleiche/futterautomat-fuer-grosse-hunde/",
     "/futterautomat-fuer-zwei-katzen/": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
     "/futterautomat-gegen-schlingen/": "/vergleiche/futterautomat-gegen-schlingen/",
@@ -34,25 +33,12 @@
     "/kleine-gps-tracker-fuer-katzen/": "/vergleiche/kleine-gps-tracker-fuer-katzen/"
   },
   "summary": {
-    "changedFiles": 2,
-    "skippedFiles": 487,
-    "cleanupFindings": 1,
+    "changedFiles": 0,
+    "skippedFiles": 488,
+    "cleanupFindings": 0,
     "ambiguities": 0
   },
-  "changes": [
-    {
-      "file": "apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
-      "reason": "zentrale URL-Normalisierung und Redirect-Alias-Auflösung",
-      "beforeSha": "3e9901cf9cb9dd6b81e91c77018f138162103d46c37670c9cbc733957deadc28",
-      "afterSha": "76b52833441905e457bc2ec35e786063876714e3f7d0e2d55fe7d50a786fee11"
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
-      "reason": "aktuellen Berater-Breadcrumb ohne Selflink ausgegeben",
-      "beforeSha": "afc49f63ae192dd5c74243a6e0c6ba47a86983e18a6477c687d3342757d46e45",
-      "afterSha": "9a249c0da957efad1d4903f5d29bfccbe14d1fdc6707ccfae1264da28bfcb3f4"
-    }
-  ],
+  "changes": [],
   "skipped": [
     {
       "file": "apps/pfotentechnik/src/assets/images/products/cat-mate-c500/README.md",
@@ -1979,6 +1965,10 @@
       "reason": "bereits aktuell"
     },
     {
+      "file": "apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "reason": "bereits aktuell"
+    },
+    {
       "file": "apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
       "reason": "bereits aktuell"
     },
@@ -2003,13 +1993,6 @@
       "reason": "bereits aktuell"
     }
   ],
-  "findings": [
-    {
-      "type": "self-link-breadcrumb-neutralized",
-      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
-      "target": "/berater/futterautomat/",
-      "occurrences": 1
-    }
-  ],
+  "findings": [],
   "ambiguities": []
 }
