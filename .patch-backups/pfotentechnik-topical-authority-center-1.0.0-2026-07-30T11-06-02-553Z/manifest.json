@@ -1,0 +1,12 @@
+{
+  "patch": "pfotentechnik-topical-authority-center-1.0.0",
+  "installedAt": "2026-07-30T11:06:02.569Z",
+  "files": [
+    "apps\\pfotentechnik\\src\\layouts\\SeoAdminLayout.astro",
+    "apps\\pfotentechnik\\package.json",
+    "apps\\pfotentechnik\\src\\lib\\seo\\topical-authority\\loadTopicalAuthority.ts",
+    "apps\\pfotentechnik\\src\\pages\\admin\\seo\\topical-authority.astro",
+    "apps\\pfotentechnik\\scripts\\seo\\audit-topical-authority.mjs",
+    "apps\\pfotentechnik\\test\\topical-authority-center.test.mjs"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "patch": "${ID}",
+  "generatedAt": "2026-07-30T11:07:28.737Z",
+  "status": "passed",
+  "checks": [
+    {
+      "id": "FILE",
+      "ok": true,
+      "message": "src/pages/admin/seo/topical-authority.astro"
+    },
+    {
+      "id": "FILE",
+      "ok": true,
+      "message": "src/lib/seo/topical-authority/loadTopicalAuthority.ts"
+    },
+    {
+      "id": "FILE",
+      "ok": true,
+      "message": "src/layouts/SeoAdminLayout.astro"
+    },
+    {
+      "id": "FILE",
+      "ok": true,
+      "message": "test/topical-authority-center.test.mjs"
+    },
+    {
+      "id": "NAV",
+      "ok": true,
+      "message": "Navigation enthält Topical Authority"
+    },
+    {
+      "id": "LAYOUT",
+      "ok": true,
+      "message": "Seite nutzt SEO Admin Layout"
+    },
+    {
+      "id": "RESPONSIVE",
+      "ok": true,
+      "message": "Responsive Regeln vorhanden"
+    },
+    {
+      "id": "TOKENS",
+      "ok": true,
+      "message": "Dark-Mode-fähige SEO Tokens"
+    }
+  ]
+}

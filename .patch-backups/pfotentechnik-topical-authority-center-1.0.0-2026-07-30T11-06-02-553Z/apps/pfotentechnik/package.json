@@ -131,10 +131,7 @@
     "audit:content-quality": "node scripts/content-quality/audit.mjs",
     "audit:content-quality:strict": "node scripts/content-quality/audit.mjs --strict",
     "test:content-quality": "node --test test/content-quality.test.mjs",
-    "audit:editorial-transparency": "node scripts/audit-editorial-transparency.mjs",
-    "audit:topical-authority": "node scripts/seo/audit-topical-authority.mjs",
-    "audit:topical-authority:strict": "node scripts/seo/audit-topical-authority.mjs --strict",
-    "test:topical-authority": "node --test test/topical-authority-center.test.mjs"
+    "audit:editorial-transparency": "node scripts/audit-editorial-transparency.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

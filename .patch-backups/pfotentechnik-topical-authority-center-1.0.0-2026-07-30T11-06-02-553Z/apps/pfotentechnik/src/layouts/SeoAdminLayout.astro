@@ -3,7 +3,7 @@ import SeoWorkPackages from "../components/admin/SeoWorkPackages.astro";
 interface Props {
   title: string;
   description: string;
-  active?: "overview" | "cockpit" | "advisor" | "tasks" | "history" | "prompts" | "prices" | "media" | "topical-authority";
+  active?: "overview" | "cockpit" | "advisor" | "tasks" | "history" | "prompts" | "prices" | "media";
 }
 
 const { title, description, active = "overview" } = Astro.props;
@@ -11,7 +11,6 @@ const nav = [
   ["overview", "/admin/seo/", "Übersicht"],
   ["cockpit", "/admin/seo/cockpit/", "Cockpit"],
   ["advisor", "/admin/seo/advisor/", "Co-Pilot"],
-  ["topical-authority", "/admin/seo/topical-authority/", "Topical Authority"],
   ["tasks", "/admin/seo/tasks/", "Aufgaben"],
   ["history", "/admin/seo/history/", "Historie"],
   ["prompts", "/admin/seo/prompts/", "Prompts"],
