@@ -395,20 +395,6 @@ function parseFrontmatter(raw: string): Record<string, string> {
   return output;
 }
 
-),
-    );
-    if (valueMatch) {
-      return valueMatch[1].trim().replace(/^['"]|['"]$/g, "");
-    }
-
-    if (line.trim() && line.length - line.trimStart().length <= sectionIndent) {
-      inSection = false;
-    }
-  }
-
-  return "";
-}
-
 function parseNestedFrontmatterValue(
   raw: string,
   section: string,
@@ -423,7 +409,6 @@ function parseNestedFrontmatterValue(
 
   for (const line of lines) {
     const sectionMatch = line.match(/^(\s*)([A-Za-z][\w-]*):\s*$/);
-
     if (sectionMatch) {
       const indent = sectionMatch[1].length;
       const name = sectionMatch[2];
@@ -441,20 +426,411 @@ function parseNestedFrontmatterValue(
 
     if (!inSection) continue;
 
-    const valuePattern =
-      "^\\s{" +
-      String(sectionIndent + 2) +
-      ",}" +
-      key +
-      ":\\s*(.+)$";
-    const valueMatch = line.match(new RegExp(valuePattern));
+    const valueMatch = line.match(
+      new RegExp(`^\\s{${sectionIndent + 2},}${key}:\\s*(.+)import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+export type DocumentType = "page" | "comparison" | "product" | "manufacturer";
+export type ClusterStatus = "strong" | "developing" | "gap";
+export type Priority = "high" | "medium" | "low";
+
+type DocumentRecord = {
+  type: DocumentType;
+  slug: string;
+  title: string;
+  description: string;
+  manufacturer: string;
+  categoryKey: string;
+  body: string;
+  route: string;
+  filePath: string;
+  links: string[];
+};
+
+type ClusterDefinition = {
+  id: string;
+  label: string;
+  description: string;
+  slugPatterns: RegExp[];
+  titlePatterns: RegExp[];
+  descriptionPatterns: RegExp[];
+  bodyPatterns: RegExp[];
+  excludePatterns: RegExp[];
+  hubPatterns: RegExp[];
+  manufacturerPatterns?: RegExp[];
+  targets: {
+    pages: number;
+    comparisons: number;
+    products: number;
+    manufacturers: number;
+  };
+  strategy: string;
+  expansion?: boolean;
+};
+
+export type Cluster = {
+  id: string;
+  label: string;
+  description: string;
+  score: number;
+  status: ClusterStatus;
+  priority: Priority;
+  counts: {
+    pages: number;
+    comparisons: number;
+    products: number;
+    manufacturers: number;
+    total: number;
+  };
+  coverage: {
+    hub: boolean;
+    guides: boolean;
+    comparisons: boolean;
+    products: boolean;
+    manufacturers: boolean;
+    journey: boolean;
+  };
+  linkCoverage: number;
+  gaps: string[];
+  nextAction: string;
+  documents: Array<{
+    type: DocumentType;
+    title: string;
+    route: string;
+    filePath: string;
+  }>;
+};
+
+export type Opportunity = {
+  id: string;
+  title: string;
+  cluster: string;
+  priority: Priority;
+  impact: number;
+  effort: "niedrig" | "mittel" | "hoch";
+  reason: string;
+  action: string;
+};
+
+export type TopicalAuthorityData = {
+  generatedAt: string;
+  authorityScore: number;
+  summary: {
+    documents: number;
+    clusters: number;
+    strong: number;
+    developing: number;
+    gaps: number;
+    opportunities: number;
+    orphanCandidates: number;
+  };
+  inventory: {
+    page: number;
+    comparison: number;
+    product: number;
+    manufacturer: number;
+    pages: number;
+    comparisons: number;
+    products: number;
+    manufacturers: number;
+  };
+  clusters: Cluster[];
+  opportunities: Opportunity[];
+  orphanCandidates: TopicalAuthorityData["orphans"];
+  orphans: Array<{
+    type: DocumentType;
+    title: string;
+    route: string;
+    filePath: string;
+  }>;
+};
+
+const appRoot = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../../../..",
+);
+const contentRoot = path.join(appRoot, "src", "content");
+
+export const CLUSTER_DEFINITIONS: ClusterDefinition[] = [
+  {
+    id: "futterautomaten",
+    label: "Futterautomaten",
+    description:
+      "Automatische Fütterung, Portionierung, Nassfutter, App und Nutzungssituationen.",
+    slugPatterns: [
+      /(?:^|-)futterautomat(?:en)?(?:-|$)/i,
+      /(?:^|-)futterspender(?:-|$)/i,
+      /(?:^|-)futterstation(?:-|$)/i,
+      /hund-frisst-zu-schnell/i,
+      /futterautomat-fuer-/i,
+    ],
+    titlePatterns: [
+      /\bfutterautomat(?:en)?\b/i,
+      /\bautomatische(?:r|s)? futter/i,
+      /\bfutterspender\b/i,
+    ],
+    descriptionPatterns: [
+      /\bfutterautomat(?:en)?\b/i,
+      /\bportion(?:en|ierung)?\b.*\bfütter/i,
+    ],
+    bodyPatterns: [
+      /\bfutterautomat(?:en)?\b/i,
+      /\bportionierung\b/i,
+      /\bnassfutterautomat\b/i,
+    ],
+    excludePatterns: [
+      /\btrinkbrunnen\b/i,
+      /\bkatzentoilette\b/i,
+      /\bkatzenklappe\b/i,
+      /\bgps[- ]tracker\b/i,
+    ],
+    hubPatterns: [/^futterautomat(?:en)?$/i, /^smarte-futterautomaten$/i],
+    manufacturerPatterns: [
+      /petlibro/i,
+      /wopet/i,
+      /oneisall/i,
+      /voluas/i,
+      /imipaw/i,
+      /petkit/i,
+      /xiaomi/i,
+      /aqara/i,
+      /cat mate/i,
+      /surefeed/i,
+      /balimo/i,
+      /arf pets/i,
+      /dogness/i,
+      /casfuy/i,
+    ],
+    targets: { pages: 6, comparisons: 4, products: 8, manufacturers: 3 },
+    strategy:
+      "Intents schärfen und die Journey Ratgeber → Vergleich → Produkt → Hersteller schließen.",
+  },
+  {
+    id: "trinkbrunnen",
+    label: "Trinkbrunnen",
+    description:
+      "Trinkverhalten, Hygiene, Filter, Materialien und Brunnen für Hunde und Katzen.",
+    slugPatterns: [
+      /(?:^|-)trinkbrunnen(?:-|$)/i,
+      /(?:^|-)katzentrinkbrunnen(?:-|$)/i,
+      /hund-trinkt-/i,
+      /katze-trinkt-/i,
+    ],
+    titlePatterns: [
+      /\btrinkbrunnen\b/i,
+      /\bkatzenbrunnen\b/i,
+      /\b(?:hund|katze) trinkt\b/i,
+    ],
+    descriptionPatterns: [
+      /\btrinkbrunnen\b/i,
+      /\btrinkmenge\b/i,
+      /\bwasseraufnahme\b/i,
+    ],
+    bodyPatterns: [
+      /\btrinkbrunnen\b/i,
+      /\bbiofilm\b/i,
+      /\bfilterwechsel\b/i,
+    ],
+    excludePatterns: [
+      /\bfutterautomat\b/i,
+      /\bkatzentoilette\b/i,
+      /\bkatzenklappe\b/i,
+      /\bgps[- ]tracker\b/i,
+    ],
+    hubPatterns: [/^trinkbrunnen$/i],
+    manufacturerPatterns: [
+      /petlibro/i,
+      /petkit/i,
+      /catit/i,
+      /pioneer pet/i,
+      /drinkwell/i,
+      /uahpet/i,
+      /miaustore/i,
+    ],
+    targets: { pages: 6, comparisons: 2, products: 6, manufacturers: 2 },
+    strategy:
+      "Kaufnahe Intentionen mit Hygiene-, Filter- und Materialratgebern verbinden.",
+  },
+  {
+    id: "gps-tracker",
+    label: "GPS-Tracker",
+    description:
+      "Ortung, Reichweite, Akkulaufzeit, Abo, Datenschutz und Nutzung.",
+    slugPatterns: [
+      /(?:^|-)gps(?:-|$)/i,
+      /(?:^|-)tracker(?:-|$)/i,
+      /bluetooth-tag/i,
+      /hund-entlaufen/i,
+      /katze-entlaufen/i,
+    ],
+    titlePatterns: [
+      /\bgps[- ]tracker\b/i,
+      /\bbluetooth[- ]tag\b/i,
+      /\bortung\b/i,
+    ],
+    descriptionPatterns: [
+      /\bgps\b/i,
+      /\bgeofence\b/i,
+      /\bortung\b/i,
+    ],
+    bodyPatterns: [
+      /\bgps[- ]tracker\b/i,
+      /\bgeofencing\b/i,
+      /\bmobilfunknetz\b/i,
+    ],
+    excludePatterns: [
+      /\bfutterautomat\b/i,
+      /\btrinkbrunnen\b/i,
+      /\bkatzentoilette\b/i,
+      /\bkatzenklappe\b/i,
+    ],
+    hubPatterns: [/^gps-tracker$/i],
+    manufacturerPatterns: [/tractive/i, /pawfit/i, /weenect/i, /tractive/i],
+    targets: { pages: 6, comparisons: 3, products: 6, manufacturers: 2 },
+    strategy:
+      "Restlücken wie Ausland, Roaming und Funkgrenzen nur mit klarem Information Gain ergänzen.",
+  },
+  {
+    id: "katzenklappen",
+    label: "Katzenklappen",
+    description:
+      "Mikrochip-, App- und selektive Katzenklappen inklusive Einbau und Mehrkatzenhaushalt.",
+    slugPatterns: [
+      /(?:^|-)katzenklappe(?:n)?(?:-|$)/i,
+      /microchip.*flap/i,
+      /mikrochip.*klappe/i,
+      /zeromouse/i,
+    ],
+    titlePatterns: [
+      /\bkatzenklappe(?:n)?\b/i,
+      /\bmikrochip[- ]klappe\b/i,
+      /\bzero\s?mouse\b/i,
+    ],
+    descriptionPatterns: [
+      /\bkatzenklappe\b/i,
+      /\bmikrochip\b.*\bklappe\b/i,
+    ],
+    bodyPatterns: [
+      /\bkatzenklappe\b/i,
+      /\bselektiver zugang\b/i,
+      /\beinbauadapter\b/i,
+    ],
+    excludePatterns: [
+      /\bfutterautomat\b/i,
+      /\btrinkbrunnen\b/i,
+      /\bkatzentoilette\b/i,
+      /\bgps[- ]tracker\b/i,
+    ],
+    hubPatterns: [/^katzenklappen?$/i, /^smarte-katzenklappen$/i],
+    manufacturerPatterns: [/sureflap/i, /cat mate/i, /zeromouse/i],
+    targets: { pages: 4, comparisons: 2, products: 4, manufacturers: 2 },
+    strategy:
+      "Hub, Mikrochip-/App-Vergleiche und differenzierte Praxisratgeber ausbauen.",
+  },
+  {
+    id: "haustierkameras",
+    label: "Haustierkameras",
+    description:
+      "Beobachtung, Kommunikation und Aktivitätskontrolle.",
+    slugPatterns: [
+      /haustierkamera/i,
+      /tierkamera/i,
+      /pet-camera/i,
+      /kamera-fuer-hund/i,
+      /kamera-fuer-katze/i,
+    ],
+    titlePatterns: [
+      /\bhaustierkamera\b/i,
+      /\btierkamera\b/i,
+      /\bkamera für (?:hund|katze)\b/i,
+    ],
+    descriptionPatterns: [/\bhaustierkamera\b/i, /\btierbeobachtung\b/i],
+    bodyPatterns: [/\bhaustierkamera\b/i, /\b2-wege-audio\b/i],
+    excludePatterns: [
+      /\bfutterautomat\b/i,
+      /\btrinkbrunnen\b/i,
+      /\bkatzentoilette\b/i,
+      /\bkatzenklappe\b/i,
+      /\bgps[- ]tracker\b/i,
+    ],
+    hubPatterns: [/^haustierkameras?$/i],
+    manufacturerPatterns: [],
+    targets: { pages: 3, comparisons: 1, products: 5, manufacturers: 2 },
+    strategy:
+      "Vor dem Ausbau Nachfrage, Produktbreite, Primärquellen und Affiliate-Abdeckung validieren.",
+    expansion: true,
+  },
+  {
+    id: "katzentoiletten",
+    label: "Automatische Katzentoiletten",
+    description:
+      "Selbstreinigung, Hygiene, Sicherheit und laufende Kosten.",
+    slugPatterns: [
+      /(?:^|-)katzentoilette(?:n)?(?:-|$)/i,
+      /(?:^|-)katzenklo(?:s)?(?:-|$)/i,
+      /litter-robot/i,
+      /selbstreinigende-katzentoilette/i,
+    ],
+    titlePatterns: [
+      /\bautomatische katzentoilette(?:n)?\b/i,
+      /\bselbstreinigende(?:s|r)? katzenklo\b/i,
+      /\blitter[- ]robot\b/i,
+    ],
+    descriptionPatterns: [
+      /\bautomatische katzentoilette\b/i,
+      /\bselbstreinigendes katzenklo\b/i,
+    ],
+    bodyPatterns: [
+      /\bautomatische katzentoilette\b/i,
+      /\blitter[- ]robot\b/i,
+      /\bselbstreinigendes katzenklo\b/i,
+    ],
+    excludePatterns: [
+      /\bfutterautomat\b/i,
+      /\btrinkbrunnen\b/i,
+      /\bkatzenklappe\b/i,
+      /\bgps[- ]tracker\b/i,
+    ],
+    hubPatterns: [/^automatische-katzentoiletten$/i],
+    manufacturerPatterns: [/litter-robot/i],
+    targets: { pages: 3, comparisons: 1, products: 5, manufacturers: 2 },
+    strategy:
+      "Nur nach Sicherheits-, Produkt- und Quellenprüfung als Expansion freigeben.",
+    expansion: true,
+  },
+];
+
+function walk(directory: string): string[] {
+  if (!fs.existsSync(directory)) return [];
+
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const absolutePath = path.join(directory, entry.name);
+    if (entry.isDirectory()) return walk(absolutePath);
+    return /\.mdx?$/i.test(entry.name) ? [absolutePath] : [];
+  });
+}
+
+function parseFrontmatter(raw: string): Record<string, string> {
+  const match = raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return {};
+
+  const output: Record<string, string> = {};
+  for (const line of match[1].split(/\r?\n/)) {
+    const item = line.match(/^([A-Za-z][\w-]*):\s*(.+)$/);
+    if (!item) continue;
+    output[item[1]] = item[2].trim().replace(/^['"]|['"]$/g, "");
+  }
+  return output;
+}
+
+),
+    );
     if (valueMatch) {
       return valueMatch[1].trim().replace(/^['"]|['"]$/g, "");
     }
 
-    const indent = line.length - line.trimStart().length;
-    if (line.trim() && indent <= sectionIndent) {
+    if (line.trim() && line.length - line.trimStart().length <= sectionIndent) {
       inSection = false;
     }
   }
