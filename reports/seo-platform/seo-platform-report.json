@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T08:26:47.035Z",
+  "generatedAt": "2026-07-30T08:50:34.887Z",
   "errors": 4,
   "warnings": 79,
   "portfolio": [],
@@ -11327,7 +11327,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-07-26T18:01:14.480Z",
+          "checkedAt": "2026-07-30T08:47:16.999Z",
           "source": {
             "id": "manual",
             "label": "Amazon",
@@ -11337,20 +11337,21 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://amzn.to/3TmIOJs",
+          "url": "https://amzn.to/45gK5oh",
           "rel": "sponsored nofollow noopener",
           "target": "_blank"
         },
         "rating": 4.4,
         "score": 88,
         "priceState": "available",
-        "priceUpdated": "2026-07-26T18:01:14.480Z",
+        "priceUpdated": "2026-07-30T08:47:16.999Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityUpdated": "2026-07-30T08:47:16.999Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4.4,
           "bedienung": 4.2,
@@ -13131,7 +13132,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 13 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-07-26T20:53:51.719Z",
+          "checkedAt": "2026-07-30T08:48:54.741Z",
           "source": {
             "id": "manual",
             "label": "Amazon",
@@ -13141,17 +13142,18 @@
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=Catit+PIXI+Vision+Smart+Feeder",
+          "url": "https://www.meintierdiscount.de/Katzen-Catit-Pixi-Smart-Feeder-Vision,102018,393p.ht",
           "rel": "sponsored nofollow noopener",
           "target": "_blank"
         },
         "rating": 4.5,
         "score": 89,
         "priceState": "available",
-        "priceUpdated": "2026-07-26T20:53:51.719Z",
+        "priceUpdated": "2026-07-30T08:48:54.741Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "unknown",
+        "availabilityUpdated": "2026-07-30T08:48:54.741Z",
         "editorialStatus": "complete",
         "recommendationStatus": "limited",
         "maintenanceStatus": "required",
@@ -19151,20 +19153,34 @@
             "src: ../../assets/images/products/petkit-fresh-element-infinity/gallery-4.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amazon.de",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat"
+          "url": "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4,
         "score": 79,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:30:22.286Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "discontinued",
+        "availabilityUpdated": "2026-07-30T08:30:22.286Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "app": 4,
           "portionierung": 4,
@@ -20340,20 +20356,36 @@
             "src: ../../assets/images/products/petlibro-air-automatic-feeder/gallery-4.webp"
           ]
         },
+        "price": {
+          "current": 62.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:28:54.073Z",
+          "source": {
+            "id": "mediamarkt.de",
+            "label": "mediamarkt.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO%20Air%20Automatic%20Feeder%202L"
+          "url": "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.6,
         "score": 72,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:28:54.073Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:28:54.073Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "app": 2.25,
           "portionierung": 3.8,
@@ -20873,20 +20905,34 @@
             "src: ../../assets/images/products/petlibro-capsule-dog-fountain/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amazon.de",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain"
+          "url": "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.9,
         "score": 78,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:32:36.046Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:32:36.046Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "verarbeitung": 3.95,
           "bedienung": 3.85,
@@ -21678,20 +21724,36 @@
             "src: ../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 59.98,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:31:08.339Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Dockstream+Cordless"
+          "url": "https://amzn.to/3RLepUy",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4,
         "score": 79,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:31:08.339Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:31:08.339Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4,
           "bedienung": 4,
@@ -21901,20 +21963,35 @@
             "src: ../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 119,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:49:32.961Z",
+          "source": {
+            "id": "manual",
+            "label": "amzn.to",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart"
+          "url": "https://amzn.to/4fGer87",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4,
         "score": 80,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:49:32.961Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityUpdated": "2026-07-30T08:49:32.961Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4,
           "bedienung": 4,
@@ -22126,20 +22203,34 @@
             "src: ../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amzn.to",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Glacier+Ultrafiltration+Fountain"
+          "url": "https://amzn.to/4x5q0wQ",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.9,
         "score": 78,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:36:04.423Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:36:04.423Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "verarbeitung": 3.9,
           "bedienung": 3.9,
@@ -22649,20 +22740,36 @@
             "src: ../../assets/images/products/petlibro-granary-camera/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 127.49,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:37:04.052Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Granary+Camera+Feeder"
+          "url": "https://amzn.to/3Twv3YG",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4.6,
         "score": 92,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:37:04.052Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:37:04.052Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "app": 4.5,
           "portionierung": 4.5,
@@ -23140,20 +23247,36 @@
             "src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 104.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:37:58.923Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L"
+          "url": "https://amzn.to/4x2aba4",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4.1,
         "score": 82,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:37:58.923Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:37:58.923Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "app": 4.4,
           "portionierung": 4.4,
@@ -23622,20 +23745,36 @@
             "src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 123.47,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:39:28.170Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder"
+          "url": "https://www.amazon.de/dp/B0DY18Z91T/?th=1",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4,
         "score": 80,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:39:28.170Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:39:28.170Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "app": 3.9,
           "portionierung": 4.4,
@@ -23881,20 +24020,36 @@
             "src: ../../assets/images/products/petlibro-space-smart-feeder/gallery-2.webp"
           ]
         },
+        "price": {
+          "current": 65.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:40:30.048Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit und Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO%20Space%20Smart%20Feeder"
+          "url": "https://amzn.to/3TntAUF",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4.2,
         "score": 84,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:40:30.048Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:40:30.048Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "app": 4.2,
           "portionierung": 3.8,
@@ -24134,20 +24289,36 @@
             "src: ../../assets/images/products/petlibro-stainless-steel-fountain/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": 49.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:41:24.076Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PETLIBRO+Edelstahl+Trinkbrunnen+3L"
+          "url": "https://www.amazon.de/-/en/PETLIBRO-Fountain-Drinking-Dockstream-Stainless/dp/B0F8NFVVZD?th=1",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.8,
         "score": 75,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:41:24.076Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:41:24.076Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4.05,
           "bedienung": 3.9,
@@ -24347,17 +24518,32 @@
             "src: ../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/gallery-1.webp"
           ]
         },
+        "price": {
+          "current": 219,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:42:55.737Z",
+          "source": {
+            "id": "manual",
+            "label": "amazon.com",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Verfügbarkeit prüfen",
-          "url": "https://www.amazon.de/s?k=PetSafe+FreshFeed+Refrigerated+Pet+Feeder"
+          "url": "https://www.amazon.com/PetSafe-FreshFeed-Refrigerated-Automatic-Feeder/dp/B0GLYYKQQD?th=1",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4.5,
         "score": 90,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:42:55.737Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "unknown",
+        "availabilityUpdated": "2026-07-30T08:42:55.737Z",
         "editorialStatus": "complete",
         "recommendationStatus": "limited",
         "maintenanceStatus": "required",
@@ -24583,20 +24769,36 @@
             "src: ../../assets/images/products/petsafe-healthy-pet-simply-feed/gallery-1.webp"
           ]
         },
+        "price": {
+          "current": 219.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-07-30T08:43:58.484Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=PetSafe+Healthy+Pet+Simply+Feed"
+          "url": "https://amzn.to/4w2rVl1",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4.3,
         "score": 86,
-        "priceState": "unknown",
-        "priceAvailable": false,
+        "priceState": "available",
+        "priceUpdated": "2026-07-30T08:43:58.484Z",
+        "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
+        "availability": "available",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-07-30T08:43:58.484Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4.4,
           "bedienung": 3.9,
@@ -27151,20 +27353,34 @@
           },
           "gallery": []
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amzn.to",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=WOPET%20Cube%20Air%20CA10%20Futterautomat"
+          "url": "https://amzn.to/44XxPbX",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 4,
         "score": 79,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:44:50.878Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:44:50.878Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "editorial": {
           "assessmentType": "editorial-review",
           "testedHandsOn": false,
@@ -27368,20 +27584,34 @@
             "src: ../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-4.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amazon.de",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L"
+          "url": "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.6,
         "score": 72,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:46:00.241Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:46:00.241Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "app": 3.6,
           "portionierung": 3.6,
@@ -27573,20 +27803,34 @@
             "src: ../../assets/images/products/wopet-patrol-f07-pro/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amazon.de",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat"
+          "url": "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.8,
         "score": 75,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:46:15.238Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:46:15.238Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "app": 3.65,
           "portionierung": 4,
@@ -27821,20 +28065,34 @@
             "src: ../../assets/images/products/wopet-pioneer-f01-plus/gallery-3.webp"
           ]
         },
+        "price": {
+          "current": "null",
+          "currency": "EUR",
+          "status": "unknown",
+          "source": {
+            "id": "manual",
+            "label": "amazon.de",
+            "type": "manual"
+          }
+        },
         "affiliate": {
           "provider": "amazon",
           "label": "Aktuellen Preis prüfen",
-          "url": "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat"
+          "url": "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat",
+          "rel": "sponsored nofollow noopener",
+          "target": "_blank"
         },
         "rating": 3.5,
         "score": 71,
         "priceState": "unknown",
+        "priceUpdated": "2026-07-30T08:46:34.228Z",
         "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "availability": "out-of-stock",
+        "availabilityUpdated": "2026-07-30T08:46:34.228Z",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "ratings": {
           "app": 2.25,
           "portionierung": 3.95,
@@ -28313,7 +28571,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-07-27T20:35:26.686Z",
+          "checkedAt": "2026-07-30T08:49:44.497Z",
           "source": {
             "id": "manual",
             "label": "Amazon",
@@ -28330,14 +28588,14 @@
         "rating": 4.7,
         "score": 93,
         "priceState": "available",
-        "priceUpdated": "2026-07-27T20:35:26.686Z",
+        "priceUpdated": "2026-07-30T08:49:44.497Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
-        "availability": "unknown",
-        "availabilityUpdated": "2026-07-27T20:35:26.686Z",
+        "availability": "available",
+        "availabilityUpdated": "2026-07-30T08:49:44.497Z",
         "editorialStatus": "complete",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "recommendationStatus": "recommended",
+        "maintenanceStatus": "complete",
         "ratings": {
           "verarbeitung": 4.7,
           "bedienung": 4.7,
