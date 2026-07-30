@@ -1,8 +1,4 @@
 import type { PageContentData } from "../../content/schema/page";
-import {
-  informationGainProfiles,
-  type InformationGainProfile
-} from "./informationGainProfiles";
 
 export type AutoContentBlock =
   | "summary"
@@ -42,7 +38,6 @@ export type AssembledContentPage = {
   mistakes: string[];
   faq: NonNullable<PageContentData["faq"]>;
   closingCta?: AssembledClosingCta;
-  informationGain?: InformationGainProfile;
 };
 
 const clusterDefaults: Record<
@@ -122,7 +117,6 @@ export const assembleContentPage = (
   page: PageContentData
 ): AssembledContentPage => {
   const platform = page.contentPlatform;
-  const informationGain = informationGainProfiles[page.slug];
   const cluster = platform?.cluster ?? page.category ?? "wissen";
   const intent = platform?.intent ?? "informational";
   const clusterDefault = clusterDefaults[cluster];
@@ -151,8 +145,6 @@ export const assembleContentPage = (
 
   const blocks = platform?.blocks?.length
     ? platform.blocks
-    : informationGain?.blocks?.length
-      ? informationGain.blocks
     : intentBlocks[intent] ?? ["summary"];
 
   const faq =
@@ -194,19 +186,12 @@ export const assembleContentPage = (
     decisionKey,
     comparisonProducts,
     blocks,
-    summary: platform?.summary?.length
-      ? platform.summary
-      : informationGain?.summary ?? [],
+    summary: platform?.summary ?? [],
     suitableFor: platform?.suitableFor ?? [],
     notSuitableFor: platform?.notSuitableFor ?? [],
-    checklist: platform?.checklist?.length
-      ? platform.checklist
-      : informationGain?.checklist ?? [],
-    mistakes: platform?.mistakes?.length
-      ? platform.mistakes
-      : informationGain?.mistakes ?? [],
+    checklist: platform?.checklist ?? [],
+    mistakes: platform?.mistakes ?? [],
     faq,
-    closingCta,
-    informationGain
+    closingCta
   };
 };

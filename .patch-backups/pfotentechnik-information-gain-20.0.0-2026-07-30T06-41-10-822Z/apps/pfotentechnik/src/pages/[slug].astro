@@ -15,7 +15,6 @@ import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import HealthBridge from "../components/HealthBridge.astro";
 import AutoContentBlocks from "../components/AutoContentBlocks.astro";
-import EditorialEvidence from "../components/EditorialEvidence.astro";
 import { projectConfig, siteMeta } from "../project.config";
 import { assembleContentPage } from "../domain/contentPlatform";
 import {
@@ -355,7 +354,6 @@ const relatedItems = relatedEntries.map((entry) => ({
       products={products}
       hideRecommendationBlocks={isRecommendationPage}
     />
-    <EditorialEvidence profile={assembledPage.informationGain} />
 
     {
       isMoneyPage && journeyComparisonHref && (
