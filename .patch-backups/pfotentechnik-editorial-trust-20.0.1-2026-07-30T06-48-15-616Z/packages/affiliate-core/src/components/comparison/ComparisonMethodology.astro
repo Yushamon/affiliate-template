@@ -1,0 +1,34 @@
+---
+type Props = {
+  productCount: number;
+  criterionCount: number;
+};
+
+const { productCount, criterionCount } = Astro.props as Props;
+---
+
+<details class="comparison-methodology comparison-methodology--compact" id="methodik">
+  <summary>
+    <span>
+      <span class="comparison-eyebrow">Transparenz</span>
+      <strong>So entsteht dieser Vergleich</strong>
+    </span>
+    <span aria-hidden="true">+</span>
+  </summary>
+
+  <div class="comparison-methodology__content">
+    <p>
+      Wir ordnen {productCount} Modelle anhand von {criterionCount}
+      nachvollziehbaren Merkmalen ein. Produktdaten, redaktionelle Bewertung
+      und bekannte Einschränkungen werden getrennt betrachtet.
+    </p>
+
+    <ul>
+      <li><strong>Eignung vor Funktionsmenge:</strong> Mehr Funktionen bedeuten nicht automatisch eine bessere Empfehlung.</li>
+      <li><strong>Fehlende Angaben bleiben sichtbar:</strong> Nicht belegte Herstellerinformationen werden nicht positiv gewertet.</li>
+      <li><strong>Empfehlungen folgen dem Einsatzzweck:</strong> Gesamtsieger und Alternativen erfüllen unterschiedliche Bedürfnisse.</li>
+    </ul>
+
+    <a href="/so-bewerten-wir/">Bewertungsmethodik vollständig ansehen</a>
+  </div>
+</details>

@@ -7,7 +7,6 @@ import ProductRenderer from "../../components/product-standard-2/ProductRenderer
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
-import EditorialTransparency from "../../components/EditorialTransparency.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
 
@@ -419,16 +418,6 @@ const productSchema = {
         alternativeRecommendations={alternativeRecommendations}
       />
     </AutoLinkContent>
-
-    <EditorialTransparency
-      kind="produkt"
-      author={author}
-      publishedAt={publishedAt}
-      updatedAt={updatedAt}
-      testStatus={contentProduct.testStatus}
-      evidence={contentProduct.editorial?.evidence ?? []}
-      recommendationReason={contentProduct.recommendation}
-    />
 
     <DecisionNextSteps
       title="Passend weiterentscheiden"

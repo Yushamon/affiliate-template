@@ -5,8 +5,6 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
-import EditorialTransparency from "../../components/EditorialTransparency.astro";
-import { siteMeta } from "../../project.config";
 import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
@@ -169,7 +167,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
   schemaType="webpage"
   publishedAt={comparison.publishedAt}
   updatedAt={comparison.updatedAt ?? comparison.publishedAt}
-  author={comparison.author ?? siteMeta.defaultAuthor}
 >
   <script
     type="application/ld+json"
@@ -190,14 +187,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
         <Content />
       </AutoLinkContent>
     </article>
-
-    <EditorialTransparency
-      kind="vergleich"
-      author={comparison.author ?? siteMeta.defaultAuthor}
-      publishedAt={comparison.publishedAt}
-      updatedAt={comparison.updatedAt ?? comparison.publishedAt}
-      recommendationReason={comparison.recommendation?.text ?? comparison.description}
-    />
 
     <div data-advisor-integration="comparison">
       <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text={comparisonAdvisorText} />

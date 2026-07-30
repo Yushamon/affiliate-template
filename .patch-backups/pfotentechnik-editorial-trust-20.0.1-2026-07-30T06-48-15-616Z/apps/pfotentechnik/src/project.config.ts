@@ -9,7 +9,7 @@ export const siteMeta = {
   defaultAuthor: {
     name: "PfotenTechnik Redaktion",
     role: "Redaktion",
-    url: "https://pfotentechnik.de/redaktion/"
+    url: "https://pfotentechnik.de/"
   },
   publisher: {
     name: "PfotenTechnik",
@@ -241,8 +241,7 @@ export const projectConfig = {
           { label: "Vergleiche", href: "/vergleiche/" },
           { label: "Hersteller", href: "/hersteller/" },
           { label: "Wissen", href: "/wissen/" },
-          { label: "So bewerten wir", href: "/so-bewerten-wir/" },
-          { label: "Redaktion & Unabhängigkeit", href: "/redaktion/" }
+          { label: "So bewerten wir", href: "/so-bewerten-wir/" }
         ]
       },
       {
