@@ -156,22 +156,7 @@ export const CLUSTER_DEFINITIONS: ClusterDefinition[] = [
       /\bgps[- ]tracker\b/i,
     ],
     hubPatterns: [/^futterautomat(?:en)?$/i, /^smarte-futterautomaten$/i],
-    manufacturerPatterns: [
-      /petlibro/i,
-      /wopet/i,
-      /oneisall/i,
-      /voluas/i,
-      /imipaw/i,
-      /petkit/i,
-      /xiaomi/i,
-      /aqara/i,
-      /cat mate/i,
-      /surefeed/i,
-      /balimo/i,
-      /arf pets/i,
-      /dogness/i,
-      /casfuy/i,
-    ],
+    manufacturerPatterns: [],
     targets: { pages: 6, comparisons: 4, products: 8, manufacturers: 3 },
     strategy:
       "Intents schärfen und die Journey Ratgeber → Vergleich → Produkt → Hersteller schließen.",
@@ -209,15 +194,7 @@ export const CLUSTER_DEFINITIONS: ClusterDefinition[] = [
       /\bgps[- ]tracker\b/i,
     ],
     hubPatterns: [/^trinkbrunnen$/i],
-    manufacturerPatterns: [
-      /petlibro/i,
-      /petkit/i,
-      /catit/i,
-      /pioneer pet/i,
-      /drinkwell/i,
-      /uahpet/i,
-      /miaustore/i,
-    ],
+    manufacturerPatterns: [],
     targets: { pages: 6, comparisons: 2, products: 6, manufacturers: 2 },
     strategy:
       "Kaufnahe Intentionen mit Hygiene-, Filter- und Materialratgebern verbinden.",
@@ -480,10 +457,6 @@ export function belongsToCluster(
   );
   const bodyEvidence = matches(definition.bodyPatterns, body);
   const primaryEvidence = slugEvidence || titleEvidence || descriptionEvidence;
-  const manufacturerEvidence =
-    matches(definition.manufacturerPatterns ?? [], slug) ||
-    matches(definition.manufacturerPatterns ?? [], title) ||
-    matches(definition.manufacturerPatterns ?? [], manufacturer);
 
   const exclusionText = `${slug} ${title} ${description}`;
   const excluded =
@@ -492,15 +465,19 @@ export function belongsToCluster(
   if (excluded) return false;
 
   if (document.type === "manufacturer") {
+    const manufacturerEvidence =
+      matches(definition.manufacturerPatterns ?? [], slug) ||
+      matches(definition.manufacturerPatterns ?? [], title);
+
     // Herstellerseiten sind meist kategorienübergreifend. Eine beiläufige
     // Produktnennung im Body reicht daher ausdrücklich nicht aus.
     return manufacturerEvidence;
   }
 
   if (document.type === "product") {
-    // Modellnamen enthalten die Kategorie oft nicht. Eindeutige Marken- oder
-    // Taxonomiesignale zählen deshalb zusätzlich, Body-Treffer jedoch nicht.
-    return primaryEvidence || manufacturerEvidence;
+    // Produktseiten brauchen ein primäres Signal. Body-Treffer allein führen
+    // besonders bei Cross-Selling und Alternativen zu Fehlzuordnungen.
+    return primaryEvidence;
   }
 
   if (primaryEvidence) return true;
@@ -510,10 +487,6 @@ export function belongsToCluster(
   const bodySignalCount = definition.bodyPatterns.filter((pattern) =>
     pattern.test(body),
   ).length;
-
-  if (document.type === "page") {
-    return bodyEvidence && bodySignalCount >= 1;
-  }
 
   return bodyEvidence && bodySignalCount >= 2;
 }

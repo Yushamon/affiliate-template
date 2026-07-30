@@ -1,4 +1,4 @@
----
+﻿---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadTopicalAuthority } from "../../../lib/seo/topical-authority/loadTopicalAuthority";
 
@@ -51,7 +51,7 @@ const priorityLabels = {
 
 <SeoAdminLayout
   title="Topical Authority"
-  description="Themencluster, Abdeckung, interne Journeys und strategische Content-Lücken."
+  description="Themencluster, Abdeckung, interne Journeys und strategische Content-LÃ¼cken."
   active="topical-authority"
 >
   <main class="ta-page">
@@ -75,14 +75,14 @@ const priorityLabels = {
       <article><strong>{data.summary.clusters}</strong><span>Cluster</span></article>
       <article><strong>{data.summary.strong}</strong><span>Stark</span></article>
       <article><strong>{data.summary.developing}</strong><span>Im Aufbau</span></article>
-      <article><strong>{data.summary.gaps}</strong><span>Lücken</span></article>
+      <article><strong>{data.summary.gaps}</strong><span>LÃ¼cken</span></article>
       <article><strong>{data.summary.opportunities}</strong><span>Chancen</span></article>
     </section>
 
     <section class="ta-section">
       <div class="ta-section-head">
         <div>
-          <p class="ta-eyebrow">Clusterübersicht</p>
+          <p class="ta-eyebrow">ClusterÃ¼bersicht</p>
           <h2>Erkannte Themencluster</h2>
         </div>
         <small>Stand: {new Date(data.generatedAt).toLocaleString("de-DE")}</small>
@@ -108,7 +108,7 @@ const priorityLabels = {
               <summary>
                 <div>
                   <span class={`ta-status ta-status--${cluster?.status ?? "gap"}`}>
-                    {cluster?.status === "strong" ? "Stark" : cluster?.status === "developing" ? "Im Aufbau" : "Lücke"}
+                    {cluster?.status === "strong" ? "Stark" : cluster?.status === "developing" ? "Im Aufbau" : "LÃ¼cke"}
                   </span>
                   <h3>{cluster?.label ?? "Unbenannter Cluster"}</h3>
                   <p>{cluster?.description ?? ""}</p>
@@ -130,23 +130,23 @@ const priorityLabels = {
                 <div class="ta-coverage">
                   {Object.entries(coverage).map(([key, value]) => (
                     <span class:list={["ta-chip", { "ta-chip--ok": Boolean(value) }]}>
-                      {value ? "✓" : "–"} {coverageLabels[key] ?? key}
+                      {value ? "âœ“" : "â€“"} {coverageLabels[key] ?? key}
                     </span>
                   ))}
                 </div>
 
                 <div class="ta-grid">
                   <section>
-                    <h4>Offene Lücken</h4>
+                    <h4>Offene LÃ¼cken</h4>
                     {gaps.length ? (
                       <ul>{gaps.map((gap) => <li>{gap}</li>)}</ul>
                     ) : (
-                      <p class="ta-muted">Keine priorisierten Lücken erkannt.</p>
+                      <p class="ta-muted">Keine priorisierten LÃ¼cken erkannt.</p>
                     )}
                   </section>
                   <section>
-                    <h4>Nächster Schritt</h4>
-                    <p>{cluster?.nextAction ?? "Cluster prüfen und nächste Maßnahme festlegen."}</p>
+                    <h4>NÃ¤chster Schritt</h4>
+                    <p>{cluster?.nextAction ?? "Cluster prÃ¼fen und nÃ¤chste MaÃŸnahme festlegen."}</p>
                   </section>
                 </div>
 
@@ -161,16 +161,16 @@ const priorityLabels = {
                         <tbody>
                           {documents.map((document) => (
                             <tr>
-                              <td>{typeLabels[document?.type] ?? document?.type ?? "–"}</td>
-                              <td>{document?.title ?? document?.slug ?? "–"}</td>
-                              <td><code>{document?.route ?? "–"}</code></td>
+                              <td>{typeLabels[document?.type] ?? document?.type ?? "â€“"}</td>
+                              <td>{document?.title ?? document?.slug ?? "â€“"}</td>
+                              <td><code>{document?.route ?? "â€“"}</code></td>
                             </tr>
                           ))}
                         </tbody>
                       </table>
                     </div>
                   ) : (
-                    <p class="ta-empty">Keine echten Inhalte für diesen Cluster erkannt.</p>
+                    <p class="ta-empty">Keine echten Inhalte fÃ¼r diesen Cluster erkannt.</p>
                   )}
                 </section>
               </div>
@@ -198,7 +198,7 @@ const priorityLabels = {
                 {priorityLabels[opportunity?.priority] ?? opportunity?.priority ?? "Niedrig"}
               </span>
               <span>Impact {opportunity?.impact ?? 0}</span>
-              <span>Aufwand {opportunity?.effort ?? "–"}</span>
+              <span>Aufwand {opportunity?.effort ?? "â€“"}</span>
             </div>
             <h3>{opportunity?.title ?? "Unbenannte Chance"}</h3>
             <p>{opportunity?.reason ?? ""}</p>
@@ -216,15 +216,15 @@ const priorityLabels = {
         </div>
       </div>
       <div class="ta-journey" aria-label="Empfohlene interne User Journey">
-        <span>Ratgeber</span><b>→</b><span>Vergleich</span><b>→</b><span>Produkt</span><b>→</b><span>Hersteller</span><b>→</b><span>passender Ratgeber</span>
+        <span>Ratgeber</span><b>â†’</b><span>Vergleich</span><b>â†’</b><span>Produkt</span><b>â†’</b><span>Hersteller</span><b>â†’</b><span>passender Ratgeber</span>
       </div>
     </section>
 
     <section class="ta-section">
       <div class="ta-section-head">
         <div>
-          <p class="ta-eyebrow">Linkprüfung</p>
-          <h2>Mögliche verwaiste Inhalte</h2>
+          <p class="ta-eyebrow">LinkprÃ¼fung</p>
+          <h2>MÃ¶gliche verwaiste Inhalte</h2>
         </div>
         <span>{data.orphanCandidates.length} Kandidaten</span>
       </div>
@@ -236,9 +236,9 @@ const priorityLabels = {
             <tbody>
               {data.orphanCandidates.map((document) => (
                 <tr>
-                  <td>{typeLabels[document?.type] ?? document?.type ?? "–"}</td>
-                  <td>{document?.title ?? document?.slug ?? "–"}</td>
-                  <td><code>{document?.route ?? "–"}</code></td>
+                  <td>{typeLabels[document?.type] ?? document?.type ?? "â€“"}</td>
+                  <td>{document?.title ?? document?.slug ?? "â€“"}</td>
+                  <td><code>{document?.route ?? "â€“"}</code></td>
                 </tr>
               ))}
             </tbody>
@@ -279,55 +279,6 @@ const priorityLabels = {
   .ta-empty,.ta-muted{color:var(--seo-text-muted,#5f6875)}
   @media(max-width: 900px){.ta-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.ta-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-opportunities,.ta-grid{grid-template-columns:1fr}}
   @media(max-width: 600px){.ta-page{padding:.75rem}.ta-hero{align-items:flex-start}.ta-score strong{font-size:2rem}.ta-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-section,.ta-hero{padding:1rem}.ta-cluster summary{align-items:flex-start}.ta-section-head{align-items:flex-start;flex-direction:column}}
-
-  /* 1.2.1: expliziter Kontrast für Kennzahlen und Coverage-Chips */
-  .ta-metrics div {
-    color: var(--seo-text, #172033);
-    background: var(--seo-surface-subtle, #f3f5f8);
-  }
-  .ta-metrics strong {
-    color: var(--seo-text, #172033);
-    font-size: 1.35rem;
-    line-height: 1.1;
-  }
-  .ta-metrics span {
-    color: var(--seo-text-muted, #4f5b6d);
-  }
-  .ta-chip {
-    color: var(--seo-text, #172033);
-    border: 1px solid var(--seo-border, #d9dee7);
-  }
-  .ta-chip--ok {
-    color: var(--seo-success-text, #0f6b32);
-    background: var(--seo-success-surface, #e7f6ec);
-    border-color: var(--seo-success-border, #9dd6ad);
-  }
-  :global([data-theme="dark"]) .ta-metrics div,
-  :global(.dark) .ta-metrics div {
-    color: #f4f7fb;
-    background: #202832;
-  }
-  :global([data-theme="dark"]) .ta-metrics strong,
-  :global(.dark) .ta-metrics strong {
-    color: #ffffff;
-  }
-  :global([data-theme="dark"]) .ta-metrics span,
-  :global(.dark) .ta-metrics span {
-    color: #c7d0dc;
-  }
-  :global([data-theme="dark"]) .ta-chip,
-  :global(.dark) .ta-chip {
-    color: #eef3f8;
-    background: #202832;
-    border-color: #465364;
-  }
-  :global([data-theme="dark"]) .ta-chip--ok,
-  :global(.dark) .ta-chip--ok {
-    color: #a9efbd;
-    background: #123d23;
-    border-color: #267544;
-  }
-
 </style>
 
 

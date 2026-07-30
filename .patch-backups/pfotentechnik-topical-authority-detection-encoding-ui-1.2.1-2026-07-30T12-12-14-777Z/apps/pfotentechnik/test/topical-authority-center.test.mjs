@@ -85,25 +85,3 @@ test("Audit akzeptiert gültige CSS-Formatierungen", () => {
   );
   assert.doesNotMatch(audit, /includes\(["']@media\(max-width:/);
 });
-
-
-test("Modellprodukte werden über eindeutige Marken erkannt", () => {
-  const loader = read(
-    "src/lib/seo/topical-authority/loadTopicalAuthority.ts",
-  );
-
-  assert.match(loader, /return primaryEvidence \|\| manufacturerEvidence;/);
-  assert.match(loader, /petlibro/i);
-  assert.match(loader, /tractive/i);
-  assert.match(loader, /sureflap/i);
-});
-
-test("Topical-Authority-Seite enthält keine bekannten UTF-8-Fehlkodierungen", () => {
-  const page = read("src/pages/admin/seo/topical-authority.astro");
-
-  for (const broken of ["Ã¼", "Ã¤", "Ã¶", "âœ", "â€“", "â†"]) {
-    assert.equal(page.includes(broken), false, `Fehlkodierung gefunden: ${broken}`);
-  }
-  assert.match(page, /\.ta-metrics strong[\s\S]*color:/);
-  assert.match(page, /\.ta-chip--ok[\s\S]*background:/);
-});
