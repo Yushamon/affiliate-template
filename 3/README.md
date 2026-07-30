@@ -1,42 +1,33 @@
-# PfotenTechnik Comparison Information Gain 20.1.0
-
-Der Patch erweitert alle 24 Vergleichsseiten um konkrete, seitenspezifische Kaufberatung. Er enthält keine Änderungen an Layout, Komponenten, Produktdaten oder automatisch erzeugten Reports.
-
-## Enthalten
-
-- Entscheidungshilfen zwischen den tatsächlich verglichenen Modellen
-- klare Ausschlusskriterien und nicht passende Einsatzfälle
-- typische Fehlkäufe und praktische Vorabtests
-- Alltagstipps zu Portionierung, Kühlung, Akkureserve, Reinigung und Ortung
-- korrigierte Einordnung problematischer Empfehlungen
-- aktualisierter redaktioneller Datenstand vom 30. Juli 2026
+# PfotenTechnik Topical-Authority-Plan
 
 ## Installation
 
-ZIP in die Wurzel von `affiliate-template` entpacken. Danach zuerst die Vorprüfung ausführen:
+1. ZIP in das Root-Verzeichnis von `affiliate-template` entpacken.
+2. Aus dem Repository-Root ausführen:
 
 ```bash
-node ./pfotentechnik-comparison-information-gain-20.1.0/apply-pfotentechnik-comparison-information-gain-20.1.0.mjs --check
+node 3/pfotentechnik-topical-authority/install-topical-authority-plan.mjs
 ```
 
-Wenn `Konflikte: 0` erscheint:
+3. Danach bauen:
 
 ```bash
-node ./pfotentechnik-comparison-information-gain-20.1.0/apply-pfotentechnik-comparison-information-gain-20.1.0.mjs
+npm --workspace apps/pfotentechnik run build
 ```
 
-Der normale Lauf führt die vorhandenen Vergleichs-, Metadaten-, Schema-, Content-Quality- und Linkziel-Audits sowie den PfotenTechnik-Produktions-Build aus.
+Die Aufgaben erscheinen anschließend im SEO-Copilot als priorisierte Work Packages.
 
-## Optionen
+## Inhalt
 
-```text
---check             Nur Vorprüfung
---force             Abweichende Vergleichsdateien nach Backup überschreiben
---skip-validation   Audits und Build auslassen
---commit            Nur die 24 Vergleichsdateien lokal committen
---help              Hilfe anzeigen
-```
+Der Plan berücksichtigt den aktuellen Repository-Stand:
 
-`--force` ist nur sinnvoll, wenn parallele Änderungen an den Vergleichsdateien geprüft wurden. Der Installer legt vorher vollständige Backups unter `.patch-backups/` an und erzeugt dort ein Rollback-Skript.
+- starke bestehende Cluster: Futterautomaten, GPS-Tracker, Trinkbrunnen
+- größte echte Lücke: Katzenklappen
+- fehlende kaufnahe Ergänzungen bei Trinkbrunnen
+- Restlücken im GPS-Cluster
+- notwendige Konsolidierung im Futterautomaten-Cluster
+- begrenztes Glossar-System
+- Hersteller nur gekoppelt an reale Produktabdeckung
+- Haustierkameras und automatische Katzentoiletten als spätere Expansion
 
-Ohne `--commit` bleibt der Git-Stand uncommitted. Ein Push oder Pull Request wird nie automatisch erstellt.
+Der Installer erstellt vor Änderungen ein Backup unter `.patch-backups/`.

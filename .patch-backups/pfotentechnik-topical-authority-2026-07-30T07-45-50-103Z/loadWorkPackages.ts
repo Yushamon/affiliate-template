@@ -13,7 +13,6 @@ import {
 } from "./work-packages";
 import { mergeGeneratedPackagesIntoWorkspace } from "../../seo-copilot/package-workflow.mjs";
 import { readCopilotWorkspace } from "../../seo-copilot/store.mjs";
-import { topicalAuthorityOpportunities } from "./topical-authority-plan";
 
 const MAX_SEARCH_RECOMMENDATIONS = 8;
 const MAX_CONTENT_FINDINGS = 8;
@@ -270,7 +269,6 @@ const loadSeoWorkPackageDataUncached = async () => {
     .slice(0, MAX_SEARCH_RECOMMENDATIONS);
   const contentQualityItems = activeQualityFindings.length ? [] : readContentQualityItems();
   const opportunities = [
-    ...topicalAuthorityOpportunities,
     ...payload.diagnostics
       .filter((item) => item.level === "error")
       .slice(0, 2)
