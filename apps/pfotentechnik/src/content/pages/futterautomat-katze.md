@@ -7,6 +7,11 @@ seoDescription: "Welcher Futterautomat passt zu Katzen? Vergleich von App-Modell
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
+linking:
+  keywords: ["Futterautomat für Katzen", "Katzenfutterautomat", "automatischer Futterspender für Katzen"]
+  contexts: ["futterautomat", "katze", "kaufberatung"]
+  priority: "high"
+  maxOccurrences: 1
 tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"

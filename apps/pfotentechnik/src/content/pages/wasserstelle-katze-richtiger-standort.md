@@ -5,6 +5,11 @@ type: knowledge
 layout: knowledge
 description: "Warum Abstand zu Futter und Toilette, mehrere Wasserstellen und sichere Laufwege die Nutzung beeinflussen."
 category: "katzenhaltung"
+linking:
+  keywords: ["richtiger Standort für Katzenwasser", "Wasserstelle für Katzen", "Wassernapf richtig aufstellen"]
+  contexts: ["katze", "wasser", "standort", "trinkbrunnen"]
+  priority: "high"
+  maxOccurrences: 1
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

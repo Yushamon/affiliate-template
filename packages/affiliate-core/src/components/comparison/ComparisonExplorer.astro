@@ -258,10 +258,22 @@ const rowGroups = Array.from(groupedRows.entries());
       </section>
 
       {rowGroups.map(([group, groupRows], groupIndex) => (
-        <details class="comparison-lab__group" open={groupIndex < 2}>
+        <details
+          class="comparison-lab__group"
+          open
+          data-comparison-group
+          data-group-index={groupIndex}
+        >
           <summary>
-            <span>{group}</span>
-            <small>{groupRows.length} Kriterien</small>
+            <span class="comparison-lab__group-title">
+              <strong>{group}</strong>
+              <small>{groupRows.length} Kriterien</small>
+            </span>
+            <span class="comparison-lab__group-toggle" aria-hidden="true">
+              <span class="comparison-lab__group-state comparison-lab__group-state--closed">Öffnen</span>
+              <span class="comparison-lab__group-state comparison-lab__group-state--open">Schließen</span>
+              <span class="comparison-lab__group-chevron">⌄</span>
+            </span>
           </summary>
 
           <div class="comparison-lab__group-rows">
@@ -441,7 +453,20 @@ const rowGroups = Array.from(groupedRows.entries());
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") setDrawer(false);
     });
+    const groups = Array.from(
+      root.querySelectorAll("[data-comparison-group]")
+    ).filter((item) => item instanceof HTMLDetailsElement);
 
+    const syncGroupDefaults = () => {
+      const mobile = window.matchMedia("(max-width: 47.99rem)").matches;
+      groups.forEach((group, index) => {
+        group.open = mobile ? index === 0 : true;
+      });
+    };
+
+    const groupMedia = window.matchMedia("(max-width: 47.99rem)");
+    groupMedia.addEventListener("change", syncGroupDefaults);
+    syncGroupDefaults();
     render();
   });
 </script>

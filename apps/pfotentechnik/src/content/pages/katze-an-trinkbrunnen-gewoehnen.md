@@ -5,6 +5,11 @@ type: knowledge
 layout: knowledge
 description: "Ein sanfter Gewöhnungsplan für Katzen, die Pumpengeräusch, Bewegung oder den neuen Standort zunächst meiden."
 category: "katzenverhalten"
+linking:
+  keywords: ["Katze an Trinkbrunnen gewöhnen", "Trinkbrunnen-Gewöhnung", "Katze an Katzenbrunnen gewöhnen"]
+  contexts: ["trinkbrunnen", "katze", "gewoehnung"]
+  priority: "high"
+  maxOccurrences: 1
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"

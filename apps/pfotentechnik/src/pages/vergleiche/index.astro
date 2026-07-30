@@ -1,6 +1,7 @@
 ---
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import { getContentByHub } from "@app/domain/content";
+import { siteMeta } from "../../project.config";
 
 const comparisons = await getContentByHub("vergleiche");
 ---
@@ -10,6 +11,7 @@ const comparisons = await getContentByHub("vergleiche");
   seoTitle="Futterautomaten und Pet-Tech-Produkte im Vergleich"
   description="Vergleiche Futterautomaten, Hersteller und Funktionen. Finde schneller heraus, welches Produkt zu deinem Tier und deinem Alltag passt."
   canonical="/vergleiche/"
+  author={siteMeta.defaultAuthor}
 >
   <section class="comparison-hub-hero">
     <span>Vergleiche</span>

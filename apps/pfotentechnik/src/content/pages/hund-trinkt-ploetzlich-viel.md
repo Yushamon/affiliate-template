@@ -3,6 +3,11 @@ title: "Hund trinkt plötzlich viel – Ursachen, Warnzeichen und was jetzt zu t
 slug: "hund-trinkt-ploetzlich-viel"
 description: "Warum Hunde plötzlich deutlich mehr trinken, welche Ursachen harmlos oder ernst sein können und wann ein Tierarztbesuch notwendig ist."
 category: "wissen"
+linking:
+  keywords: ["Hund trinkt plötzlich viel", "plötzlich starker Durst beim Hund", "vermehrtes Trinken beim Hund"]
+  contexts: ["hund", "trinkmenge", "gesundheit", "polydipsie"]
+  priority: "high"
+  maxOccurrences: 1
 publishedAt: "2026-07-29"
 updatedAt: "2026-07-29"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

@@ -1,6 +1,6 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 184
+- Dokumente: 185
 - Fehler: 4
 - Warnungen: 79
 
@@ -33,6 +33,7 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-frisst-nicht.md`: 2 Checklisten erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-hat-durchfall.md`: 2 Checklisten erkannt.
 - **WARNING · CHECKLIST_OVERUSE** — `apps/pfotentechnik/src/content/pages/hund-ist-muede.md`: 2 Checklisten erkannt.
+- **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/hund-trinkt-ploetzlich-viel.md`: Mögliche Dosierungsangabe gefunden.
 - **WARNING · MEDICATION_DOSAGE** — `apps/pfotentechnik/src/content/pages/hund-trinkt-zu-wenig.md`: Mögliche Dosierungsangabe gefunden.
 - **WARNING · MEDICAL_RISK_GROUPS** — `apps/pfotentechnik/src/content/pages/katze-an-trinkbrunnen-gewoehnen.md`: Welpen und Senioren möglicherweise nicht berücksichtigt.
 - **WARNING · MEDICAL_RISK_GROUPS** — `apps/pfotentechnik/src/content/pages/katze-entlaufen-gps-sinnvoll.md`: Welpen und Senioren möglicherweise nicht berücksichtigt.
@@ -66,7 +67,6 @@ Keine Portfolio-Konflikte erkannt.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-fresh-element-infinity.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-fresh-element-solo.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
-- **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-dual.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md`: Testbehauptung widerspricht dem Teststatus.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petlibro-air-automatic-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.

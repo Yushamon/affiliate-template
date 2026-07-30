@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T18:39:12.236Z",
+  "generatedAt": "2026-07-29T21:29:08.741Z",
   "mode": "strict",
   "status": "ok",
   "environment": {
     "build": "Astro production output",
     "viewportLab": "Static output audit; browser lab documented separately",
-    "distRoot": "apps/pfotentechnik/dist"
+    "distRoot": "apps\\pfotentechnik\\dist"
   },
   "budgets": {
     "schemaVersion": 1,
@@ -89,9 +89,9 @@
     }
   },
   "source": {
-    "cssFiles": 23,
-    "cssBytes": 499402,
-    "importantDeclarations": 1271,
+    "cssFiles": 24,
+    "cssBytes": 521253,
+    "importantDeclarations": 1265,
     "hydrationDirectives": 0,
     "runtimeDomCorrectionPresent": false,
     "legacyComparisonFiles": []
@@ -102,8 +102,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 53334,
-        "htmlBrotliBytes": 10298,
+        "htmlBytes": 53356,
+        "htmlBrotliBytes": 10309,
         "domNodes": 611,
         "domDepth": 13,
         "stylesheets": 4,
@@ -114,8 +114,8 @@
         "jsFiles": 0,
         "inlineScripts": 2,
         "images": 19,
-        "imageAssetFiles": 33,
-        "imageBytes": 671908,
+        "imageAssetFiles": 34,
+        "imageBytes": 698452,
         "eagerImages": 1,
         "lazyImages": 17,
         "highPriorityImages": 1,
@@ -130,8 +130,8 @@
       "category": "listing",
       "label": "Vergleichsindex",
       "metrics": {
-        "htmlBytes": 36046,
-        "htmlBrotliBytes": 6185,
+        "htmlBytes": 36131,
+        "htmlBrotliBytes": 6204,
         "domNodes": 352,
         "domDepth": 10,
         "stylesheets": 3,
@@ -158,34 +158,42 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 120272,
-        "htmlBrotliBytes": 18460,
-        "domNodes": 1294,
-        "domDepth": 20,
+        "htmlBytes": 113803,
+        "htmlBrotliBytes": 18711,
+        "domNodes": 1136,
+        "domDepth": 16,
         "stylesheets": 5,
-        "cssBytes": 414449,
+        "cssBytes": 421189,
         "cssFiles": 5,
-        "scripts": 1,
-        "jsBytes": 5116,
-        "jsFiles": 1,
-        "inlineScripts": 4,
-        "images": 14,
-        "imageAssetFiles": 18,
-        "imageBytes": 283954,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 5,
+        "images": 21,
+        "imageAssetFiles": 25,
+        "imageBytes": 286740,
         "eagerImages": 1,
-        "lazyImages": 12,
+        "lazyImages": 19,
         "highPriorityImages": 1,
         "missingDimensions": 0,
         "probableLcpLazy": false,
-        "importantDeclarations": 1251
+        "importantDeclarations": 1245
       },
       "findings": [
+        {
+          "code": "PERF_BUDGET_CSS_EXCEEDED",
+          "severity": "warning",
+          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "message": "CSS-Budget überschritten: 421189 > 415000.",
+          "actual": 421189,
+          "limit": 415000
+        },
         {
           "code": "PERF_CSS_SPECIFICITY_HIGH",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "!important-Budget überschritten: 1251 > 1100.",
-          "actual": 1251,
+          "message": "!important-Budget überschritten: 1245 > 1100.",
+          "actual": 1245,
           "limit": 1100
         }
       ]
@@ -195,34 +203,42 @@
       "category": "comparison",
       "label": "Vergleich GPS-Tracker",
       "metrics": {
-        "htmlBytes": 59558,
-        "htmlBrotliBytes": 12295,
-        "domNodes": 621,
-        "domDepth": 20,
+        "htmlBytes": 61527,
+        "htmlBrotliBytes": 12617,
+        "domNodes": 591,
+        "domDepth": 16,
         "stylesheets": 5,
-        "cssBytes": 414449,
+        "cssBytes": 421189,
         "cssFiles": 5,
-        "scripts": 1,
-        "jsBytes": 5116,
-        "jsFiles": 1,
-        "inlineScripts": 4,
-        "images": 6,
-        "imageAssetFiles": 9,
-        "imageBytes": 271304,
+        "scripts": 0,
+        "jsBytes": 0,
+        "jsFiles": 0,
+        "inlineScripts": 5,
+        "images": 7,
+        "imageAssetFiles": 10,
+        "imageBytes": 271618,
         "eagerImages": 1,
-        "lazyImages": 4,
+        "lazyImages": 5,
         "highPriorityImages": 1,
         "missingDimensions": 0,
         "probableLcpLazy": false,
-        "importantDeclarations": 1251
+        "importantDeclarations": 1245
       },
       "findings": [
+        {
+          "code": "PERF_BUDGET_CSS_EXCEEDED",
+          "severity": "warning",
+          "route": "/vergleiche/gps-tracker-ohne-abo/",
+          "message": "CSS-Budget überschritten: 421189 > 415000.",
+          "actual": 421189,
+          "limit": 415000
+        },
         {
           "code": "PERF_CSS_SPECIFICITY_HIGH",
           "severity": "warning",
           "route": "/vergleiche/gps-tracker-ohne-abo/",
-          "message": "!important-Budget überschritten: 1251 > 1100.",
-          "actual": 1251,
+          "message": "!important-Budget überschritten: 1245 > 1100.",
+          "actual": 1245,
           "limit": 1100
         }
       ]
@@ -232,9 +248,9 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 71781,
-        "htmlBrotliBytes": 13559,
-        "domNodes": 721,
+        "htmlBytes": 71826,
+        "htmlBrotliBytes": 13561,
+        "domNodes": 723,
         "domDepth": 14,
         "stylesheets": 5,
         "cssBytes": 340439,
@@ -245,7 +261,7 @@
         "inlineScripts": 5,
         "images": 9,
         "imageAssetFiles": 26,
-        "imageBytes": 444656,
+        "imageBytes": 400392,
         "eagerImages": 1,
         "lazyImages": 7,
         "highPriorityImages": 1,
@@ -260,8 +276,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 71215,
-        "htmlBrotliBytes": 13494,
+        "htmlBytes": 71147,
+        "htmlBrotliBytes": 13467,
         "domNodes": 587,
         "domDepth": 11,
         "stylesheets": 4,
@@ -273,7 +289,7 @@
         "inlineScripts": 3,
         "images": 24,
         "imageAssetFiles": 32,
-        "imageBytes": 1108574,
+        "imageBytes": 1108528,
         "eagerImages": 1,
         "lazyImages": 22,
         "highPriorityImages": 1,
@@ -288,8 +304,8 @@
       "category": "listing",
       "label": "Wissenshub",
       "metrics": {
-        "htmlBytes": 54945,
-        "htmlBrotliBytes": 9113,
+        "htmlBytes": 54934,
+        "htmlBrotliBytes": 9139,
         "domNodes": 590,
         "domDepth": 10,
         "stylesheets": 2,
@@ -316,8 +332,8 @@
       "category": "article",
       "label": "Cornerstone",
       "metrics": {
-        "htmlBytes": 122333,
-        "htmlBrotliBytes": 26835,
+        "htmlBytes": 121991,
+        "htmlBrotliBytes": 26744,
         "domNodes": 1288,
         "domDepth": 11,
         "stylesheets": 4,
@@ -342,8 +358,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/smarte-futterautomaten/",
-          "message": "HTML-Budget überschritten: 122333 > 105000.",
-          "actual": 122333,
+          "message": "HTML-Budget überschritten: 121991 > 105000.",
+          "actual": 121991,
           "limit": 105000
         },
         {
@@ -377,8 +393,8 @@
       "category": "article",
       "label": "Ratgeber",
       "metrics": {
-        "htmlBytes": 35106,
-        "htmlBrotliBytes": 8224,
+        "htmlBytes": 35037,
+        "htmlBrotliBytes": 8183,
         "domNodes": 415,
         "domDepth": 10,
         "stylesheets": 4,
@@ -390,7 +406,7 @@
         "inlineScripts": 2,
         "images": 2,
         "imageAssetFiles": 4,
-        "imageBytes": 240320,
+        "imageBytes": 240370,
         "eagerImages": 1,
         "lazyImages": 0,
         "highPriorityImages": 1,
@@ -414,8 +430,8 @@
       "category": "utility",
       "label": "Kontakt",
       "metrics": {
-        "htmlBytes": 9887,
-        "htmlBrotliBytes": 2491,
+        "htmlBytes": 9855,
+        "htmlBrotliBytes": 2466,
         "domNodes": 145,
         "domDepth": 10,
         "stylesheets": 1,
@@ -440,27 +456,43 @@
   ],
   "findings": [
     {
+      "code": "PERF_BUDGET_CSS_EXCEEDED",
+      "severity": "warning",
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "message": "CSS-Budget überschritten: 421189 > 415000.",
+      "actual": 421189,
+      "limit": 415000
+    },
+    {
       "code": "PERF_CSS_SPECIFICITY_HIGH",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "!important-Budget überschritten: 1251 > 1100.",
-      "actual": 1251,
+      "message": "!important-Budget überschritten: 1245 > 1100.",
+      "actual": 1245,
       "limit": 1100
+    },
+    {
+      "code": "PERF_BUDGET_CSS_EXCEEDED",
+      "severity": "warning",
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "message": "CSS-Budget überschritten: 421189 > 415000.",
+      "actual": 421189,
+      "limit": 415000
     },
     {
       "code": "PERF_CSS_SPECIFICITY_HIGH",
       "severity": "warning",
       "route": "/vergleiche/gps-tracker-ohne-abo/",
-      "message": "!important-Budget überschritten: 1251 > 1100.",
-      "actual": 1251,
+      "message": "!important-Budget überschritten: 1245 > 1100.",
+      "actual": 1245,
       "limit": 1100
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/smarte-futterautomaten/",
-      "message": "HTML-Budget überschritten: 122333 > 105000.",
-      "actual": 122333,
+      "message": "HTML-Budget überschritten: 121991 > 105000.",
+      "actual": 121991,
       "limit": 105000
     },
     {
@@ -500,6 +532,6 @@
     "routes": 10,
     "measuredRoutes": 10,
     "errors": 0,
-    "warnings": 7
+    "warnings": 9
   }
 }

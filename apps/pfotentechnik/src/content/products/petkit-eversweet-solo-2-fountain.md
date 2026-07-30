@@ -55,11 +55,11 @@ images:
     - src: ../../assets/images/products/petkit-eversweet-solo-2-fountain/gallery-3.webp
       alt: Eversweet Solo 2 im Wohnbereich
 price:
-  current: 40.84
+  current: 55.99
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 8 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-07-27T20:25:43.468Z"
+  checkedAt: "2026-07-29T20:37:31.629Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -74,12 +74,12 @@ rating: 4.4
 score: 87
 
 priceState: "available"
-priceUpdated: "2026-07-27T20:25:43.468Z"
+priceUpdated: "2026-07-29T20:37:31.629Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T20:25:43.468Z"
+availabilityUpdated: "2026-07-29T20:37:31.629Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

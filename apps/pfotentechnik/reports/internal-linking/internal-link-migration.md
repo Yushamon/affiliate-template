@@ -27,15 +27,3 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 - „wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).
 
 ## Verbleibende manuelle Entscheidungen
-
-- /futterautomat-katze/ besitzt keine Linking-Metadaten.
-- /hund-frisst-zu-schnell/ besitzt keine Linking-Metadaten.
-- /hund-trinkt-ploetzlich-viel/ besitzt keine Linking-Metadaten.
-- /katze-an-trinkbrunnen-gewoehnen/ besitzt keine Linking-Metadaten.
-- /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt keine Linking-Metadaten.
-- /seniorenhunde-richtig-versorgen/ besitzt keine Linking-Metadaten.
-- /smarte-gadgets-fuer-hunde-und-katzen/ besitzt keine Linking-Metadaten.
-- /so-bewerten-wir/ besitzt keine Linking-Metadaten.
-- /wasserstelle-katze-richtiger-standort/ besitzt keine Linking-Metadaten.
-- /wie-funktioniert-ein-futterautomat/ besitzt keine Linking-Metadaten.
-- /wie-kann-technik-gegen-langeweile-helfen/ besitzt keine Linking-Metadaten.

@@ -37,6 +37,9 @@ seo:
 comparisonType: feature
 group: Futterautomaten
 icon: 📖
+heroImage:
+  src: ../../assets/images/editorial/dog-automatic-feeder.webp
+  alt: Automatischer Futterspender mit Notstromoption als redaktionelle Darstellung
 items:
   - slug: xiaomi-smart-pet-food-feeder-2
     label: Xiaomi Smart Pet Food Feeder 2

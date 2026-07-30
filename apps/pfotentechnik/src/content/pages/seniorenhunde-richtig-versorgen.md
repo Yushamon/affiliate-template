@@ -5,6 +5,11 @@ type: knowledge
 layout: knowledge
 description: "Wie Sie einen Seniorenhund bei Vorsorge, Ernährung, Bewegung, Schmerzen, Zahngesundheit und im Alltag sinnvoll unterstützen."
 category: "hundegesundheit"
+linking:
+  keywords: ["Seniorenhund richtig versorgen", "Versorgung älterer Hunde", "Alltag mit Seniorenhund"]
+  contexts: ["hund", "seniorenhund", "gesundheit", "vorsorge"]
+  priority: "high"
+  maxOccurrences: 1
 categoryLabel: "Hundewissen"
 categoryPath: "/wissen/"
 heroImage:

@@ -9,6 +9,11 @@ seoDescription: "Quellen, Bewertungskriterien, Gewichtung und Aktualisierung: So
 category: "redaktion"
 categoryLabel: "Über PfotenTechnik"
 categoryPath: "/wissen/"
+linking:
+  keywords: ["so bewertet PfotenTechnik", "Bewertungsmethodik", "unsere Bewertungskriterien"]
+  contexts: ["methodik", "transparenz", "produktbewertung"]
+  priority: "normal"
+  maxOccurrences: 1
 tags: ["Methodik", "Transparenz", "Bewertung", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-13"

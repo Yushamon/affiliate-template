@@ -152,7 +152,14 @@ const webPageSchema = {
     "@type": "WebSite",
     name: site.siteName,
     url: site.domain
-  }
+  },
+  ...(author ? {
+    author: {
+      "@type": articleAuthorType,
+      name: visibleAuthor.name,
+      ...(authorUrl ? { url: authorUrl } : {})
+    }
+  } : {})
 };
 
 const articleSchema = {

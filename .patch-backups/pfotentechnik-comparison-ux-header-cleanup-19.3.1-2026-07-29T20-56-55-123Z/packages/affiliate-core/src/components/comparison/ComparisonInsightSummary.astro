@@ -1,0 +1,68 @@
+---
+import type { ComparisonProduct, ComparisonRow } from "../../comparison/model";
+
+type Props = {
+  products: ComparisonProduct[];
+  rows: ComparisonRow[];
+};
+
+const { products, rows } = Astro.props as Props;
+
+const normalize = (value: string | undefined) =>
+  (value ?? "").trim().toLocaleLowerCase("de-DE");
+
+const meaningfulRows = rows.filter((row) => {
+  const values = row.cells
+    .map((cell) => normalize(cell.value))
+    .filter((value) => value && value !== "–" && value !== "keine angabe");
+
+  return new Set(values).size > 1;
+});
+
+const strongestDifferences = meaningfulRows.slice(0, 5);
+const documentedRows = rows.filter((row) =>
+  row.cells.some((cell) => {
+    const value = normalize(cell.value);
+    return value && value !== "–" && value !== "keine angabe";
+  })
+);
+
+const decisionHint =
+  meaningfulRows.length > 0
+    ? `${meaningfulRows.length} Kriterien unterscheiden die Modelle tatsächlich. Konzentriere dich vor allem auf die Punkte unten.`
+    : "Die Modelle unterscheiden sich in den dokumentierten Kerndaten nur wenig. Entscheidend sind deshalb Alltagstauglichkeit, Größe und Bedienung.";
+---
+
+<section class="comparison-buying-guidance" aria-labelledby="comparison-buying-guidance-title">
+  <div class="comparison-buying-guidance__intro">
+    <span class="comparison-eyebrow">Kaufberatung</span>
+    <h2 id="comparison-buying-guidance-title">Darauf solltest du bei der Auswahl achten</h2>
+    <p>{decisionHint}</p>
+  </div>
+
+  {strongestDifferences.length > 0 && (
+    <div class="comparison-buying-guidance__criteria">
+      {strongestDifferences.map((row, index) => (
+        <article>
+          <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <h3>{row.criterion.label}</h3>
+            <p>
+              {row.criterion.description ??
+                "Prüfe im Direktvergleich, welche Ausprägung zu deinem Alltag und deinen Anforderungen passt."}
+            </p>
+          </div>
+          <a href="#direktvergleich">Vergleichen</a>
+        </article>
+      ))}
+    </div>
+  )}
+
+  <div class="comparison-buying-guidance__note">
+    <strong>{products.length} Modelle betrachtet</strong>
+    <span>
+      Für {documentedRows.length} von {rows.length} Kriterien liegen verwertbare Angaben vor.
+      Fehlende Angaben werden nicht als Vorteil gewertet.
+    </span>
+  </div>
+</section>

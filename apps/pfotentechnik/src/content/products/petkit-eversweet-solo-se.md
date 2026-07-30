@@ -54,19 +54,34 @@ images:
       alt: Kabellose Pumpe des PETKIT Eversweet Solo SE
     - src: ../../assets/images/products/petkit-eversweet-solo-se/gallery-3.webp
       alt: PETKIT Eversweet Solo SE im Katzenhaushalt
+price:
+  current: 79
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-29T20:37:35.152Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETKIT+Eversweet+Solo+SE
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/4bUvu5p"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 76
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-29T20:37:35.152Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-29T20:37:35.152Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 3.85
