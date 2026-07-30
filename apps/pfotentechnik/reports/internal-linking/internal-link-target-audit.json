@@ -1,13 +1,26 @@
 {
   "version": "2.0.2",
-  "generatedAt": "2026-07-29T21:29:00.145Z",
+  "generatedAt": "2026-07-30T07:05:27.626Z",
   "strict": true,
   "summary": {
-    "pages": 204,
-    "routes": 204,
+    "pages": 205,
+    "routes": 205,
     "redirectAliases": 31,
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
-  "findings": []
+  "findings": [
+    {
+      "severity": "error",
+      "code": "SELF_LINK",
+      "sourceFile": "apps/pfotentechnik/dist/so-bewerten-wir/index.html",
+      "sourceRoute": "/so-bewerten-wir/",
+      "originalTarget": "/so-bewerten-wir/",
+      "normalizedTarget": "/so-bewerten-wir/",
+      "finalTarget": "/so-bewerten-wir/",
+      "reason": "Link im Hauptinhalt zeigt auf die eigene Canonical-Route.",
+      "recommendation": "Linktext entlinken oder den Empfehlungs-/CTA-Eintrag entfernen.",
+      "className": ""
+    }
+  ]
 }
