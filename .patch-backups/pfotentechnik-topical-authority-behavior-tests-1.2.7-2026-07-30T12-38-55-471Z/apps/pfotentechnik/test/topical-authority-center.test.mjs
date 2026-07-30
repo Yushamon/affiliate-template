@@ -118,20 +118,9 @@ test("Produktkategorie nutzt category.key als Source of Truth", () => {
     /parseNestedFrontmatterValue\(raw, "category", "key"\)/,
   );
   assert.match(loader, /const PRODUCT_CATEGORY_CLUSTER_MAP/);
-  assert.match(loader, /function productClusterFromCategory\(/);
-
-  const productBranch = loader.match(
-    /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
-  );
-
-  assert.ok(productBranch, "Product-Branch fehlt");
   assert.match(
-    productBranch[1],
-    /const categoryCluster = productClusterFromCategory\(document\);/,
-  );
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
+    loader,
+    /if \(categoryCluster\)[\s\S]*return categoryCluster === definition\.id;/,
   );
 });
 
@@ -145,13 +134,9 @@ test("Hersteller und Body bestimmen keine Produktkategorie", () => {
   );
 
   assert.ok(productBranch, "Product-Branch fehlt");
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
-  );
-  assert.doesNotMatch(productBranch[1], /primaryEvidence/);
   assert.doesNotMatch(productBranch[1], /manufacturerEvidence/);
   assert.doesNotMatch(productBranch[1], /bodyEvidence/);
+  assert.match(productBranch[1], /return primaryEvidence;/);
 });
 
 test("Produktkategorien werden eindeutig auf Cluster gemappt", () => {

@@ -968,9 +968,15 @@ export function belongsToCluster(
   if (document.type === "product") {
     const categoryCluster = productClusterFromCategory(document);
 
-    // Produkt-MDs werden ausschließlich über die strukturierte category.key
-    // zugeordnet. Fehlende oder unbekannte Kategorien werden nicht geraten.
-    return categoryCluster === definition.id;
+    // category.key ist für Produkte die verbindliche Source of Truth.
+    if (categoryCluster) {
+      return categoryCluster === definition.id;
+    }
+
+    // Kontrollierter Legacy-Fallback für ältere Produkt-MDs ohne category.key:
+    // Nur eindeutige Slug-, Titel- oder Description-Signale zählen.
+    // Hersteller und Body dürfen keine Produktkategorie bestimmen.
+    return primaryEvidence;
   }
 
   if (primaryEvidence) return true;

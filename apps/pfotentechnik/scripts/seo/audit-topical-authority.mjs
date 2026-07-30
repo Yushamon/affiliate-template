@@ -72,17 +72,57 @@ checks.push(
     message: "Nicht vorhandene Cluster erhalten Score 0",
   },
   {
+    id: "PRODUCT_CATEGORY_SOURCE",
+    ok:
+      loader.includes("categoryKey: string;") &&
+      loader.includes('parseNestedFrontmatterValue(raw, "category", "key")') &&
+      loader.includes("const PRODUCT_CATEGORY_CLUSTER_MAP") &&
+      loader.includes("function productClusterFromCategory(") &&
+      loader.includes("return categoryCluster === definition.id;"),
+    message: "Produkte nutzen category.key als verbindliche Clusterquelle",
+  },
+  {
+    id: "PRODUCT_HEURISTIC_GUARD",
+    ok: (() => {
+      const branch = loader.match(
+        /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
+      );
+      if (!branch) return false;
+
+      return (
+        branch[1].includes(
+          "return categoryCluster === definition.id;",
+        ) &&
+        !branch[1].includes("primaryEvidence") &&
+        !branch[1].includes("manufacturerEvidence") &&
+        !branch[1].includes("bodyEvidence")
+      );
+    })(),
+    message: "Produktcluster werden nicht über Text oder Hersteller geraten",
+  },
+  {
     id: "REGRESSION_TESTS",
     ok:
-      tests.includes("Body-Treffer allein") &&
+      tests.includes(
+        "Produktkategorie nutzt category.key als Source of Truth",
+      ) &&
+      tests.includes(
+        "Hersteller und Body bestimmen keine Produktkategorie",
+      ) &&
+      tests.includes(
+        "Fehlende Produktkategorien werden nicht heuristisch geraten",
+      ) &&
+      tests.includes(
+        "Gemeinsame Marken können Produktcluster nicht überschreiben",
+      ) &&
       tests.includes("Automatische Katzentoiletten"),
-    message: "Regressionstests für Fehlzuordnungen vorhanden",
+    message: "Regressionstests für strukturierte Produktzuordnung vorhanden",
   },
 );
 
 const failed = checks.filter((check) => !check.ok);
 const report = {
-  patch: "pfotentechnik-topical-authority-quality-1.2.0",
+  patch: "pfotentechnik-topical-authority-behavior-tests-1.2.7",
   generatedAt: new Date().toISOString(),
   status: failed.length ? "failed" : "passed",
   checks,

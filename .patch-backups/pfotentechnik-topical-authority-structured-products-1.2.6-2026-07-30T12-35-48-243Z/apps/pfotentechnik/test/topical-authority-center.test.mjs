@@ -44,7 +44,7 @@ test("Loader nutzt gewichtete primäre Signale", () => {
   }
 });
 
-test("Produkte nutzen ausschließlich category.key, Hersteller nicht den Body", () => {
+test("Body-Treffer allein ordnen Produkte und Hersteller nicht zu", () => {
   const loader = read(
     "src/lib/seo/topical-authority/loadTopicalAuthority.ts",
   );
@@ -53,19 +53,6 @@ test("Produkte nutzen ausschließlich category.key, Hersteller nicht den Body", 
     loader,
     /document\.type === "manufacturer"[\s\S]*return manufacturerEvidence;/,
   );
-
-  const productBranch = loader.match(
-    /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
-  );
-
-  assert.ok(productBranch, "Product-Branch fehlt");
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
-  );
-  assert.doesNotMatch(productBranch[1], /primaryEvidence/);
-  assert.doesNotMatch(productBranch[1], /manufacturerEvidence/);
-  assert.doesNotMatch(productBranch[1], /bodyEvidence/);
   assert.match(loader, /bodySignalCount >= 2/);
 });
 
@@ -96,6 +83,17 @@ test("Audit akzeptiert gültige CSS-Formatierungen", () => {
 });
 
 
+test("Modellprodukte werden über eindeutige Marken erkannt", () => {
+  const loader = read(
+    "src/lib/seo/topical-authority/loadTopicalAuthority.ts",
+  );
+
+  assert.match(loader, /return primaryEvidence \|\| manufacturerEvidence;/);
+  assert.match(loader, /petlibro/i);
+  assert.match(loader, /tractive/i);
+  assert.match(loader, /sureflap/i);
+});
+
 test("Topical-Authority-Seite enthält keine bekannten UTF-8-Fehlkodierungen", () => {
   const page = read("src/pages/admin/seo/topical-authority.astro");
 
@@ -118,20 +116,9 @@ test("Produktkategorie nutzt category.key als Source of Truth", () => {
     /parseNestedFrontmatterValue\(raw, "category", "key"\)/,
   );
   assert.match(loader, /const PRODUCT_CATEGORY_CLUSTER_MAP/);
-  assert.match(loader, /function productClusterFromCategory\(/);
-
-  const productBranch = loader.match(
-    /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
-  );
-
-  assert.ok(productBranch, "Product-Branch fehlt");
   assert.match(
-    productBranch[1],
-    /const categoryCluster = productClusterFromCategory\(document\);/,
-  );
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
+    loader,
+    /if \(categoryCluster\)[\s\S]*return categoryCluster === definition\.id;/,
   );
 });
 
@@ -145,13 +132,9 @@ test("Hersteller und Body bestimmen keine Produktkategorie", () => {
   );
 
   assert.ok(productBranch, "Product-Branch fehlt");
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
-  );
-  assert.doesNotMatch(productBranch[1], /primaryEvidence/);
   assert.doesNotMatch(productBranch[1], /manufacturerEvidence/);
   assert.doesNotMatch(productBranch[1], /bodyEvidence/);
+  assert.match(productBranch[1], /return primaryEvidence;/);
 });
 
 test("Produktkategorien werden eindeutig auf Cluster gemappt", () => {
@@ -163,47 +146,4 @@ test("Produktkategorien werden eindeutig auf Cluster gemappt", () => {
   assert.match(loader, /trinkbrunnen: "trinkbrunnen"/);
   assert.match(loader, /"gps-tracker": "gps-tracker"/);
   assert.match(loader, /katzenklappen: "katzenklappen"/);
-});
-
-
-test("Fehlende Produktkategorien werden nicht heuristisch geraten", () => {
-  const loader = read(
-    "src/lib/seo/topical-authority/loadTopicalAuthority.ts",
-  );
-
-  const productBranch = loader.match(
-    /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
-  );
-
-  assert.ok(productBranch, "Product-Branch fehlt");
-  assert.match(
-    productBranch[1],
-    /const categoryCluster = productClusterFromCategory\(document\);/,
-  );
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
-  );
-  assert.doesNotMatch(productBranch[1], /return primaryEvidence/);
-  assert.doesNotMatch(productBranch[1], /manufacturerEvidence/);
-});
-
-test("Gemeinsame Marken können Produktcluster nicht überschreiben", () => {
-  const loader = read(
-    "src/lib/seo/topical-authority/loadTopicalAuthority.ts",
-  );
-
-  assert.match(loader, /petlibro/i);
-  assert.match(loader, /petkit/i);
-
-  const productBranch = loader.match(
-    /if \(document\.type === "product"\) \{([\s\S]*?)\n  \}/,
-  );
-
-  assert.ok(productBranch, "Product-Branch fehlt");
-  assert.doesNotMatch(productBranch[1], /manufacturerEvidence/);
-  assert.match(
-    productBranch[1],
-    /return categoryCluster === definition\.id;/,
-  );
 });

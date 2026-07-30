@@ -1,6 +1,6 @@
 {
-  "patch": "pfotentechnik-topical-authority-quality-1.2.0",
-  "generatedAt": "2026-07-30T12:20:17.803Z",
+  "patch": "pfotentechnik-topical-authority-behavior-tests-1.2.7",
+  "generatedAt": "2026-07-30T12:39:14.917Z",
   "status": "passed",
   "checks": [
     {
@@ -64,9 +64,19 @@
       "message": "Nicht vorhandene Cluster erhalten Score 0"
     },
     {
+      "id": "PRODUCT_CATEGORY_SOURCE",
+      "ok": true,
+      "message": "Produkte nutzen category.key als verbindliche Clusterquelle"
+    },
+    {
+      "id": "PRODUCT_HEURISTIC_GUARD",
+      "ok": true,
+      "message": "Produktcluster werden nicht über Text oder Hersteller geraten"
+    },
+    {
       "id": "REGRESSION_TESTS",
       "ok": true,
-      "message": "Regressionstests für Fehlzuordnungen vorhanden"
+      "message": "Regressionstests für strukturierte Produktzuordnung vorhanden"
     }
   ]
 }
