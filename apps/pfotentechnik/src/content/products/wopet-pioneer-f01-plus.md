@@ -62,19 +62,33 @@ images:
       alt: WOPET Pioneer F01 Plus, weitere redaktionelle Ansicht 2
     - src: ../../assets/images/products/wopet-pioneer-f01-plus/gallery-3.webp
       alt: WOPET Pioneer F01 Plus, weitere redaktionelle Ansicht 3
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.5
 score: 71
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:46:34.228Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:46:34.228Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   app: 2.25

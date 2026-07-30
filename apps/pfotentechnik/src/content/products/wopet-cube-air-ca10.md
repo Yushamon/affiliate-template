@@ -58,19 +58,32 @@ images:
     src: ../../assets/images/products/wopet-cube-air-ca10/comparison.webp
     alt: WOPET Cube Air WiFi Pet Feeder CA10 im Produktvergleich
   gallery: []
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amzn.to"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=WOPET%20Cube%20Air%20CA10%20Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/44XxPbX"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 79
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:44:50.878Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:44:50.878Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 editorial:
   assessmentType: editorial-review

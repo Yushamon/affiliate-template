@@ -53,19 +53,34 @@ images:
   gallery:
     - src: ../../assets/images/products/petsafe-healthy-pet-simply-feed/gallery-1.webp
       alt: PetSafe Healthy Pet Simply Feed, weitere redaktionelle Ansicht 1
+price:
+  current: 219.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:43:58.484Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PetSafe+Healthy+Pet+Simply+Feed
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4w2rVl1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.3
 score: 86
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:43:58.484Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:43:58.484Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4.4

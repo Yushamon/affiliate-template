@@ -62,7 +62,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-07-26T18:01:14.480Z"
+  checkedAt: "2026-07-30T08:47:16.999Z"
   source:
     id: "manual"
     label: "Amazon"
@@ -70,19 +70,21 @@ price:
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://amzn.to/3TmIOJs"
+  url: "https://amzn.to/45gK5oh"
   rel: "sponsored nofollow noopener"
   target: "_blank"
 rating: 4.4
 score: 88
+
 priceState: "available"
-priceUpdated: "2026-07-26T18:01:14.480Z"
+priceUpdated: "2026-07-30T08:47:16.999Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityUpdated: "2026-07-30T08:47:16.999Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4.4

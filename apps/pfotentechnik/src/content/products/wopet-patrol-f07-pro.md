@@ -59,19 +59,33 @@ images:
       alt: Geöffneter Vorratsbehälter des WOPET Patrol F07 Pro
     - src: ../../assets/images/products/wopet-patrol-f07-pro/gallery-3.webp
       alt: Netzanschluss und Batteriefach des WOPET Patrol F07 Pro
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 75
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:46:15.238Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:46:15.238Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   app: 3.65

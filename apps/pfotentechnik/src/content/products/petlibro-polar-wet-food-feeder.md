@@ -62,19 +62,34 @@ images:
       alt: Kühlbasis des PETLIBRO Polar
     - src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp
       alt: PETLIBRO Polar an einem Katzenfutterplatz
+price:
+  current: 123.47
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:39:28.170Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Polar+Wet+Food+Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/dp/B0DY18Z91T/?th=1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 80
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:39:28.170Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:39:28.170Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   app: 3.9

@@ -59,19 +59,34 @@ images:
       alt: Edelstahlnapf des PETLIBRO Granary
     - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp
       alt: PETLIBRO Granary im Katzenhaushalt
+price:
+  current: 104.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:37:58.923Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Granary+WiFi+Futterautomat+5L
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/4x2aba4"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.1
 score: 82
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:37:58.923Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:37:58.923Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   app: 4.4

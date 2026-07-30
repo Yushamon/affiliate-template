@@ -62,7 +62,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 13 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-07-26T20:53:51.719Z"
+  checkedAt: "2026-07-30T08:48:54.741Z"
   source:
     id: "manual"
     label: "Amazon"
@@ -70,16 +70,18 @@ price:
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.amazon.de/s?k=Catit+PIXI+Vision+Smart+Feeder"
+  url: "https://www.meintierdiscount.de/Katzen-Catit-Pixi-Smart-Feeder-Vision,102018,393p.ht"
   rel: "sponsored nofollow noopener"
   target: "_blank"
 rating: 4.5
 score: 89
+
 priceState: "available"
-priceUpdated: "2026-07-26T20:53:51.719Z"
+priceUpdated: "2026-07-30T08:48:54.741Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
+availabilityUpdated: "2026-07-30T08:48:54.741Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"

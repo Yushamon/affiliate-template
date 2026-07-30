@@ -57,19 +57,34 @@ images:
       alt: Futterbehälter und Ausgabekanal des PETLIBRO Granary
     - src: ../../assets/images/products/petlibro-granary-camera/gallery-3.webp
       alt: PETLIBRO Granary Camera Feeder im Katzenhaushalt
+price:
+  current: 127.49
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:37:04.052Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Granary+Camera+Feeder
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://amzn.to/3Twv3YG"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.6
 score: 92
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:37:04.052Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:37:04.052Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   app: 4.5

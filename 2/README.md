@@ -1,43 +1,33 @@
-# PfotenTechnik SEO-Preisbereich Workflow 2.0.0
-
-Behebt den aktuellen SEO-Preisbereich:
-
-- Filter funktionieren wieder sichtbar. Ursache war eine CSS-Regel, die das HTML-Attribut `hidden` überschrieben hat.
-- Preise werden beim ersten Speichern übernommen. Eine Preiseingabe setzt den Preisstatus automatisch auf „vorhanden“.
-- Affiliate- und Händlerlinks können auch ohne Preis gespeichert oder entfernt werden.
-- Links ohne Protokoll werden auf HTTPS normalisiert.
-- Händlername wird aus der URL vorgeschlagen, wenn das Feld leer ist.
-- Produktaktionen bleiben ohne horizontales Scrollen sichtbar.
-- Die Filterleiste bleibt beim Scrollen erreichbar.
-- `Strg + Enter` beziehungsweise `Cmd + Enter` speichert den geöffneten Datensatz.
-- Zusätzliche Tests schützen Filter, Preisstatus und Link-Persistenz.
+# PfotenTechnik Topical-Authority-Plan
 
 ## Installation
 
-Im Root von `affiliate-template` ausführen:
-
-### macOS / Linux
-
-```bash
-node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs
-```
-
-### Windows PowerShell
-
-```powershell
-node .\apply-pfotentechnik-seo-price-workflow-2.0.0.mjs
-```
-
-Nur Vorprüfung:
+1. ZIP in das Root-Verzeichnis von `affiliate-template` entpacken.
+2. Aus dem Repository-Root ausführen:
 
 ```bash
-node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs --check
+node 3/pfotentechnik-topical-authority/install-topical-authority-plan.mjs
 ```
 
-Ohne automatische Tests und Build:
+3. Danach bauen:
 
 ```bash
-node apply-pfotentechnik-seo-price-workflow-2.0.0.mjs --skip-verify
+npm --workspace apps/pfotentechnik run build
 ```
 
-Der Installer legt vor jeder Änderung ein Backup unter `.patch-backups/` an und ist erneut ausführbar.
+Die Aufgaben erscheinen anschließend im SEO-Copilot als priorisierte Work Packages.
+
+## Inhalt
+
+Der Plan berücksichtigt den aktuellen Repository-Stand:
+
+- starke bestehende Cluster: Futterautomaten, GPS-Tracker, Trinkbrunnen
+- größte echte Lücke: Katzenklappen
+- fehlende kaufnahe Ergänzungen bei Trinkbrunnen
+- Restlücken im GPS-Cluster
+- notwendige Konsolidierung im Futterautomaten-Cluster
+- begrenztes Glossar-System
+- Hersteller nur gekoppelt an reale Produktabdeckung
+- Haustierkameras und automatische Katzentoiletten als spätere Expansion
+
+Der Installer erstellt vor Änderungen ein Backup unter `.patch-backups/`.

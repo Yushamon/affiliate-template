@@ -55,19 +55,34 @@ images:
       alt: Filter und Pumpe des PETLIBRO Edelstahl-Trinkbrunnens
     - src: ../../assets/images/products/petlibro-stainless-steel-fountain/gallery-3.webp
       alt: PETLIBRO Edelstahl-Trinkbrunnen im Alltag
+price:
+  current: 49.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:41:24.076Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Edelstahl+Trinkbrunnen+3L
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/-/en/PETLIBRO-Fountain-Drinking-Dockstream-Stainless/dp/B0F8NFVVZD?th=1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.8
 score: 75
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:41:24.076Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:41:24.076Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4.05

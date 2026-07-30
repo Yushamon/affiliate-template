@@ -59,19 +59,33 @@ images:
       alt: Filteraufbau der PETLIBRO Capsule Dog Fountain
     - src: ../../assets/images/products/petlibro-capsule-dog-fountain/gallery-3.webp
       alt: PETLIBRO Capsule Dog Fountain mit großem Hund
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 78
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:32:36.046Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:32:36.046Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 3.95

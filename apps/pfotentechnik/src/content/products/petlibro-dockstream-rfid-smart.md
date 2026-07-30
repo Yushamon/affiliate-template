@@ -55,19 +55,33 @@ images:
       alt: Edelstahl-Trinkfläche des PETLIBRO Dockstream RFID Smart
     - src: ../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-3.webp
       alt: PETLIBRO Dockstream RFID Smart mit mehreren Katzen
+price:
+  current: 119
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:49:32.961Z"
+  source:
+    id: "manual"
+    label: "amzn.to"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Dockstream+RFID+Smart
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/4fGer87"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 80
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:49:32.961Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityUpdated: "2026-07-30T08:49:32.961Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4

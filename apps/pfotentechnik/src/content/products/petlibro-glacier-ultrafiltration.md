@@ -58,19 +58,32 @@ images:
       alt: Ultrafiltrationsmodul des PETLIBRO Glacier
     - src: ../../assets/images/products/petlibro-glacier-ultrafiltration/gallery-3.webp
       alt: PETLIBRO Glacier im Katzenhaushalt
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amzn.to"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Glacier+Ultrafiltration+Fountain
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/4x5q0wQ"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
 score: 78
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:36:04.423Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:36:04.423Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 3.9

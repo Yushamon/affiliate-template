@@ -64,19 +64,33 @@ images:
       alt: PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 3
     - src: ../../assets/images/products/petkit-fresh-element-infinity/gallery-4.webp
       alt: PETKIT Fresh Element Infinity, weitere redaktionelle Ansicht 4
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 79
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:30:22.286Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "discontinued"
+availabilityUpdated: "2026-07-30T08:30:22.286Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   app: 4

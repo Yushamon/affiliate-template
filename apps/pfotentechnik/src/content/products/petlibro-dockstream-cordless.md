@@ -57,19 +57,34 @@ images:
       alt: Tank und Pumpe des PETLIBRO Dockstream Cordless
     - src: ../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp
       alt: PETLIBRO Dockstream Cordless im Katzenhaushalt
+price:
+  current: 59.98
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:31:08.339Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit und Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO+Dockstream+Cordless
+  provider: "amazon"
+  label: "Verfügbarkeit und Preis prüfen"
+  url: "https://amzn.to/3RLepUy"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4
 score: 79
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:31:08.339Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:31:08.339Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4

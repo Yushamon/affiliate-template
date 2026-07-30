@@ -58,19 +58,33 @@ images:
       alt: WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 3
     - src: ../../assets/images/products/wopet-heritage-view-camera-feeder/gallery-4.webp
       alt: WOPET Heritage View Camera Feeder, weitere redaktionelle Ansicht 4
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
+
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 72
+
 priceState: "unknown"
+priceUpdated: "2026-07-30T08:46:00.241Z"
 priceAvailable: false
 affiliateAvailable: true
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-07-30T08:46:00.241Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   app: 3.6

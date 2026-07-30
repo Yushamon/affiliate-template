@@ -65,19 +65,34 @@ images:
       alt: PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 3
     - src: ../../assets/images/products/petlibro-air-automatic-feeder/gallery-4.webp
       alt: PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 4
+price:
+  current: 62.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:28:54.073Z"
+  source:
+    id: "mediamarkt.de"
+    label: "mediamarkt.de"
+    type: "merchant"
 affiliate:
-  provider: amazon
-  label: Aktuellen Preis prüfen
-  url: https://www.amazon.de/s?k=PETLIBRO%20Air%20Automatic%20Feeder%202L
+  provider: "amazon"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.6
 score: 72
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:28:54.073Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-07-30T08:28:54.073Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   app: 2.25

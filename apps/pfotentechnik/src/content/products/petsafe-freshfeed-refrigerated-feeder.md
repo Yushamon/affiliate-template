@@ -55,16 +55,30 @@ images:
   gallery:
     - src: ../../assets/images/products/petsafe-freshfeed-refrigerated-feeder/gallery-1.webp
       alt: PetSafe FreshFeed Refrigerated Pet Feeder, weitere redaktionelle Ansicht 1
+price:
+  current: 219
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-07-30T08:42:55.737Z"
+  source:
+    id: "manual"
+    label: "amazon.com"
+    type: "manual"
 affiliate:
-  provider: amazon
-  label: Verfügbarkeit prüfen
-  url: https://www.amazon.de/s?k=PetSafe+FreshFeed+Refrigerated+Pet+Feeder
+  provider: "amazon"
+  label: "Verfügbarkeit prüfen"
+  url: "https://www.amazon.com/PetSafe-FreshFeed-Refrigerated-Automatic-Feeder/dp/B0GLYYKQQD?th=1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.5
 score: 90
-priceState: "unknown"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-07-30T08:42:55.737Z"
+priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
+availabilityUpdated: "2026-07-30T08:42:55.737Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
