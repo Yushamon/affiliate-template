@@ -1,0 +1,1129 @@
+{
+  "version": "1.1.0",
+  "generatedAt": "2026-07-30T13:16:25.066Z",
+  "summary": {
+    "documents": 39,
+    "intents": 14,
+    "findings": 17,
+    "errors": 6,
+    "warnings": 11
+  },
+  "matrix": [
+    {
+      "route": "/futterautomat-bei-stromausfall/",
+      "type": "page",
+      "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-bei-stromausfall.md"
+    },
+    {
+      "route": "/futterautomat-bei-uebergewicht/",
+      "type": "page",
+      "title": "Futterautomat bei Übergewicht",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-bei-uebergewicht.md"
+    },
+    {
+      "route": "/futterautomat-hund/",
+      "type": "page",
+      "title": "Futterautomaten für Hunde",
+      "intent": "hund",
+      "stage": "evaluation",
+      "primaryQuestion": "Welcher Automat passt zu Größe, Portion und Fressverhalten des Hundes?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "label": "Modelle für Hunde vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/hund-frisst-zu-schnell/",
+          "label": "Schlingen und Fütterungsroutine prüfen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-hund.md"
+    },
+    {
+      "route": "/futterautomat-im-urlaub/",
+      "type": "page",
+      "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
+      "intent": "urlaub",
+      "stage": "problem",
+      "primaryQuestion": "Was kann ein Automat während Abwesenheit leisten – und wo braucht es Betreuung?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "label": "Modelle für lange Arbeitstage vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-im-urlaub.md"
+    },
+    {
+      "route": "/futterautomat-katze/",
+      "type": "page",
+      "title": "Futterautomaten für Katzen",
+      "intent": "katze",
+      "stage": "evaluation",
+      "primaryQuestion": "Welcher Automat passt zu Futterart, Portion und Katzenhaushalt?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "label": "Modelle für Katzen vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-katze.md"
+    },
+    {
+      "route": "/futterautomat-richtig-reinigen/",
+      "type": "page",
+      "title": "Futterautomat richtig reinigen: Anleitung, Intervalle und Fehlerdiagnose",
+      "intent": "pflege",
+      "stage": "support",
+      "primaryQuestion": "Wie bleibt der Automat hygienisch, leise und zuverlässig?",
+      "nextSteps": [
+        {
+          "href": "/wie-laut-sind-automatische-futterautomaten/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-richtig-reinigen.md"
+    },
+    {
+      "route": "/futterautomat-und-ernaehrung/",
+      "type": "page",
+      "title": "Futterautomat und Ernährung",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-und-ernaehrung.md"
+    },
+    {
+      "route": "/hund-frisst-zu-schnell/",
+      "type": "page",
+      "title": "Hund frisst zu schnell – Ursachen, Risiken und wirksame Lösungen",
+      "intent": "fressverhalten",
+      "stage": "problem",
+      "primaryQuestion": "Hilft hier ein Automat, eine andere Fütterungsroutine oder ein Slow Feeder?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "label": "Modelle für Hunde vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/hund-frisst-zu-schnell.md"
+    },
+    {
+      "route": "/nierenkranke-katze-trinken/",
+      "type": "page",
+      "title": "Nierenkranke Katze zum Trinken animieren",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/nierenkranke-katze-trinken.md"
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "type": "page",
+      "title": "Smarte Futterautomaten für Hunde und Katzen",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/smarte-futterautomaten.md"
+    },
+    {
+      "route": "/so-bewerten-wir/",
+      "type": "page",
+      "title": "So bewertet PfotenTechnik Produkte",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/so-bewerten-wir.md"
+    },
+    {
+      "route": "/trinkmenge-katze-messen/",
+      "type": "page",
+      "title": "Trinkmenge bei Katzen richtig messen",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/trinkmenge-katze-messen.md"
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-hund/",
+      "type": "page",
+      "title": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+      "intent": "nassfutter",
+      "stage": "evaluation",
+      "primaryQuestion": "Welche Technik hält Nassfutter bis zur Fütterung ausreichend frisch?",
+      "nextSteps": [
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/trockenfutter-oder-nassfutter-hund.md"
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-katze/",
+      "type": "page",
+      "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
+      "intent": "nassfutter",
+      "stage": "evaluation",
+      "primaryQuestion": "Welche Technik hält Nassfutter bis zur Fütterung ausreichend frisch?",
+      "nextSteps": [
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/trockenfutter-oder-nassfutter-katze.md"
+    },
+    {
+      "route": "/warum-schlingt-mein-hund/",
+      "type": "page",
+      "title": "Warum schlingt mein Hund?",
+      "intent": "fressverhalten",
+      "stage": "problem",
+      "primaryQuestion": "Hilft hier ein Automat, eine andere Fütterungsroutine oder ein Slow Feeder?",
+      "nextSteps": [
+        {
+          "href": "/hund-frisst-zu-schnell/",
+          "label": "Schlingen und Fütterungsroutine prüfen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "label": "Modelle für Hunde vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/warum-schlingt-mein-hund.md"
+    },
+    {
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "type": "page",
+      "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/welche-portionsgroesse-ist-richtig.md"
+    },
+    {
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "type": "page",
+      "title": "Welcher Futterautomat ist der richtige?",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/welcher-futterautomat-ist-der-richtige.md"
+    },
+    {
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "type": "page",
+      "title": "Wie funktioniert ein Futterautomat?",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/wie-funktioniert-ein-futterautomat.md"
+    },
+    {
+      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "type": "page",
+      "title": "Wie groß sollte ein Futterautomat sein? Kapazität richtig berechnen",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md"
+    },
+    {
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "type": "page",
+      "title": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/wie-lange-bleibt-trockenfutter-frisch.md"
+    },
+    {
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "type": "page",
+      "title": "Wie laut sind automatische Futterautomaten?",
+      "intent": "pflege",
+      "stage": "support",
+      "primaryQuestion": "Wie bleibt der Automat hygienisch, leise und zuverlässig?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-richtig-reinigen/",
+          "label": "Reinigung und Hygiene vertiefen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/pages/wie-laut-sind-automatische-futterautomaten.md"
+    },
+    {
+      "route": "/wie-viel-wasser-braucht-eine-katze/",
+      "type": "page",
+      "title": "Wie viel Wasser braucht eine Katze am Tag?",
+      "intent": "unclassified",
+      "stage": "unknown",
+      "primaryQuestion": "",
+      "nextSteps": [],
+      "file": "src/content/pages/wie-viel-wasser-braucht-eine-katze.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Berufstätige",
+      "intent": "berufstaetige",
+      "stage": "problem",
+      "primaryQuestion": "Welche Lösung überbrückt Arbeitstage zuverlässig, ohne Betreuung vorzutäuschen?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "label": "Modelle für lange Arbeitstage vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/futterautomat-im-urlaub/",
+          "label": "Grenzen bei Abwesenheit prüfen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Hunde",
+      "intent": "hund",
+      "stage": "evaluation",
+      "primaryQuestion": "Welcher Automat passt zu Größe, Portion und Fressverhalten des Hundes?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "label": "Modelle für Hunde vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/hund-frisst-zu-schnell/",
+          "label": "Schlingen und Fütterungsroutine prüfen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Katzen",
+      "intent": "katze",
+      "stage": "evaluation",
+      "primaryQuestion": "Welcher Automat passt zu Futterart, Portion und Katzenhaushalt?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "label": "Modelle für Katzen vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für kleine Hunde",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "type": "comparison",
+      "title": "Futterautomat im Mehrtierhaushalt",
+      "intent": "mehrtierhaushalt",
+      "stage": "problem",
+      "primaryQuestion": "Wie werden Futterzugriff und Portionen bei mehreren Tieren sinnvoll getrennt?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "label": "Lösungen für mehrere Tiere vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Nassfutter",
+      "intent": "nassfutter",
+      "stage": "evaluation",
+      "primaryQuestion": "Welche Technik hält Nassfutter bis zur Fütterung ausreichend frisch?",
+      "nextSteps": [
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Seniorenkatzen",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für Welpen",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-welpen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten für zwei Katzen",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten mit Akku",
+      "intent": "akku",
+      "stage": "evaluation",
+      "primaryQuestion": "Welches Modell bleibt bei Stromausfall oder ohne Steckdose nutzbar?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-mit-akku/",
+          "label": "Akku-Modelle vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-akku.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten mit Edelstahlnapf",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten mit Kamera",
+      "intent": "kamera",
+      "stage": "evaluation",
+      "primaryQuestion": "Wann bringt eine Kamera bei der Fütterung tatsächlich Mehrwert?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-mit-kamera/",
+          "label": "Kamera-Modelle vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten ohne WLAN",
+      "intent": "ohne-wlan",
+      "stage": "evaluation",
+      "primaryQuestion": "Welcher Automat funktioniert zuverlässig ohne Cloud, App oder WLAN?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+          "label": "Offline-Modelle vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "type": "comparison",
+      "title": "Beste Futterautomaten unter 100 Euro",
+      "intent": "budget",
+      "stage": "decision",
+      "primaryQuestion": "Welche Modelle liefern innerhalb des Budgets die sinnvollste Ausstattung?",
+      "nextSteps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+          "label": "Modelle unter 100 Euro vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "type": "comparison",
+      "title": "Futterautomat für große Hunde",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-fuer-grosse-hunde.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-gegen-schlingen/",
+      "type": "comparison",
+      "title": "Futterautomat gegen Schlingen",
+      "intent": "fressverhalten",
+      "stage": "problem",
+      "primaryQuestion": "Hilft hier ein Automat, eine andere Fütterungsroutine oder ein Slow Feeder?",
+      "nextSteps": [
+        {
+          "href": "/hund-frisst-zu-schnell/",
+          "label": "Schlingen und Fütterungsroutine prüfen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "label": "Modelle für Hunde vergleichen",
+          "kind": "Vergleich"
+        },
+        {
+          "href": "/smarte-futterautomaten/",
+          "label": "Auswahlkriterien neu einordnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-gegen-schlingen.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-mit-app/",
+      "type": "comparison",
+      "title": "Futterautomaten mit App",
+      "intent": "hub",
+      "stage": "orientation",
+      "primaryQuestion": "Welche Art Futterautomat passt grundsätzlich zu deinem Bedarf?",
+      "nextSteps": [
+        {
+          "href": "/futterautomat-katze/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        },
+        {
+          "href": "/futterautomat-hund/",
+          "label": "Passenden nächsten Schritt öffnen",
+          "kind": "Ratgeber"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-mit-app.md"
+    }
+  ],
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/nierenkranke-katze-trinken/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/nierenkranke-katze-trinken/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/so-bewerten-wir/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/so-bewerten-wir/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/trinkmenge-katze-messen/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/trinkmenge-katze-messen/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "INTENT_UNCLASSIFIED",
+      "route": "/wie-viel-wasser-braucht-eine-katze/",
+      "message": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent."
+    },
+    {
+      "severity": "error",
+      "code": "DECISION_DEAD_END",
+      "route": "/wie-viel-wasser-braucht-eine-katze/",
+      "message": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt."
+    },
+    {
+      "severity": "warning",
+      "code": "MULTIPLE_INFORMATION_OWNERS",
+      "intent": "hub",
+      "routes": [
+        "/futterautomat-bei-stromausfall/",
+        "/futterautomat-bei-uebergewicht/",
+        "/futterautomat-und-ernaehrung/",
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/",
+        "/wie-funktioniert-ein-futterautomat/",
+        "/wie-gross-sollte-ein-futterautomat-sein/"
+      ],
+      "message": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen."
+    },
+    {
+      "severity": "warning",
+      "code": "MULTIPLE_COMPARISON_OWNERS",
+      "intent": "hub",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+        "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+        "/vergleiche/beste-futterautomaten-fuer-welpen/",
+        "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+        "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/",
+        "/vergleiche/futterautomat-mit-app/"
+      ],
+      "message": "Mehrere Vergleiche beanspruchen denselben Entscheidungs-Intent.",
+      "recommendation": "Einen primären Vergleich festlegen und Varianten klar abgrenzen."
+    },
+    {
+      "severity": "warning",
+      "code": "MULTIPLE_INFORMATION_OWNERS",
+      "intent": "nassfutter",
+      "routes": [
+        "/trockenfutter-oder-nassfutter-hund/",
+        "/trockenfutter-oder-nassfutter-katze/"
+      ],
+      "message": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen."
+    },
+    {
+      "severity": "warning",
+      "code": "MULTIPLE_INFORMATION_OWNERS",
+      "intent": "fressverhalten",
+      "routes": [
+        "/hund-frisst-zu-schnell/",
+        "/warum-schlingt-mein-hund/"
+      ],
+      "message": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen."
+    },
+    {
+      "severity": "warning",
+      "code": "MULTIPLE_INFORMATION_OWNERS",
+      "intent": "pflege",
+      "routes": [
+        "/futterautomat-richtig-reinigen/",
+        "/wie-laut-sind-automatische-futterautomaten/"
+      ],
+      "message": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "feeder-decision-001",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/nierenkranke-katze-trinken/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-002",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/nierenkranke-katze-trinken/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-003",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/so-bewerten-wir/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-004",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/so-bewerten-wir/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-005",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/trinkmenge-katze-messen/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-006",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/trinkmenge-katze-messen/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-007",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/welche-portionsgroesse-ist-richtig/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-008",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/welche-portionsgroesse-ist-richtig/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-009",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/wie-lange-bleibt-trockenfutter-frisch/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-010",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/wie-lange-bleibt-trockenfutter-frisch/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-011",
+      "cluster": "futterautomaten",
+      "priority": "P2",
+      "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+      "routes": [
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-012",
+      "cluster": "futterautomaten",
+      "priority": "P0",
+      "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+      "routes": [
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-013",
+      "cluster": "futterautomaten",
+      "priority": "P1",
+      "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "routes": [
+        "/futterautomat-bei-stromausfall/",
+        "/futterautomat-bei-uebergewicht/",
+        "/futterautomat-und-ernaehrung/",
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/",
+        "/wie-funktioniert-ein-futterautomat/",
+        "/wie-gross-sollte-ein-futterautomat-sein/"
+      ],
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-014",
+      "cluster": "futterautomaten",
+      "priority": "P1",
+      "title": "Mehrere Vergleiche beanspruchen denselben Entscheidungs-Intent.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+        "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+        "/vergleiche/beste-futterautomaten-fuer-welpen/",
+        "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+        "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/",
+        "/vergleiche/futterautomat-mit-app/"
+      ],
+      "recommendation": "Einen primären Vergleich festlegen und Varianten klar abgrenzen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-015",
+      "cluster": "futterautomaten",
+      "priority": "P1",
+      "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "routes": [
+        "/trockenfutter-oder-nassfutter-hund/",
+        "/trockenfutter-oder-nassfutter-katze/"
+      ],
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-016",
+      "cluster": "futterautomaten",
+      "priority": "P1",
+      "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "routes": [
+        "/hund-frisst-zu-schnell/",
+        "/warum-schlingt-mein-hund/"
+      ],
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+      "source": "audit:feeder-decision-journey"
+    },
+    {
+      "id": "feeder-decision-017",
+      "cluster": "futterautomaten",
+      "priority": "P1",
+      "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+      "routes": [
+        "/futterautomat-richtig-reinigen/",
+        "/wie-laut-sind-automatische-futterautomaten/"
+      ],
+      "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+      "source": "audit:feeder-decision-journey"
+    }
+  ]
+}

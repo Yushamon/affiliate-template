@@ -1,0 +1,204 @@
+[
+  {
+    "id": "feeder-decision-001",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/nierenkranke-katze-trinken/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-002",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/nierenkranke-katze-trinken/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-003",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/so-bewerten-wir/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-004",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/so-bewerten-wir/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-005",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/trinkmenge-katze-messen/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-006",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/trinkmenge-katze-messen/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-007",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/welche-portionsgroesse-ist-richtig/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-008",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/welche-portionsgroesse-ist-richtig/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-009",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/wie-lange-bleibt-trockenfutter-frisch/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-010",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/wie-lange-bleibt-trockenfutter-frisch/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-011",
+    "cluster": "futterautomaten",
+    "priority": "P2",
+    "title": "Die Seite besitzt keinen eindeutigen Entscheidungs-Intent.",
+    "routes": [
+      "/wie-viel-wasser-braucht-eine-katze/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-012",
+    "cluster": "futterautomaten",
+    "priority": "P0",
+    "title": "Die Seite endet ohne gültigen nächsten Entscheidungsschritt.",
+    "routes": [
+      "/wie-viel-wasser-braucht-eine-katze/"
+    ],
+    "recommendation": "Intent, Zielseite und nächsten Entscheidungsschritt redaktionell prüfen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-013",
+    "cluster": "futterautomaten",
+    "priority": "P1",
+    "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+    "routes": [
+      "/futterautomat-bei-stromausfall/",
+      "/futterautomat-bei-uebergewicht/",
+      "/futterautomat-und-ernaehrung/",
+      "/smarte-futterautomaten/",
+      "/welcher-futterautomat-ist-der-richtige/",
+      "/wie-funktioniert-ein-futterautomat/",
+      "/wie-gross-sollte-ein-futterautomat-sein/"
+    ],
+    "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-014",
+    "cluster": "futterautomaten",
+    "priority": "P1",
+    "title": "Mehrere Vergleiche beanspruchen denselben Entscheidungs-Intent.",
+    "routes": [
+      "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "/vergleiche/futterautomat-mit-app/"
+    ],
+    "recommendation": "Einen primären Vergleich festlegen und Varianten klar abgrenzen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-015",
+    "cluster": "futterautomaten",
+    "priority": "P1",
+    "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+    "routes": [
+      "/trockenfutter-oder-nassfutter-hund/",
+      "/trockenfutter-oder-nassfutter-katze/"
+    ],
+    "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-016",
+    "cluster": "futterautomaten",
+    "priority": "P1",
+    "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+    "routes": [
+      "/hund-frisst-zu-schnell/",
+      "/warum-schlingt-mein-hund/"
+    ],
+    "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+    "source": "audit:feeder-decision-journey"
+  },
+  {
+    "id": "feeder-decision-017",
+    "cluster": "futterautomaten",
+    "priority": "P1",
+    "title": "Mehrere Ratgeber beanspruchen dieselbe Hauptfrage.",
+    "routes": [
+      "/futterautomat-richtig-reinigen/",
+      "/wie-laut-sind-automatische-futterautomaten/"
+    ],
+    "recommendation": "Zusammenführen oder Hauptfrage und Zielgruppe klar trennen.",
+    "source": "audit:feeder-decision-journey"
+  }
+]

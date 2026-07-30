@@ -4,7 +4,6 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
-import DecisionJourney from "../../components/DecisionJourney.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
 import EditorialTransparency from "../../components/EditorialTransparency.astro";
 import { siteMeta } from "../../project.config";
@@ -20,7 +19,6 @@ import {
   getSourceContexts
 } from "../../domain/content/internalLinks";
 import { buildComparisonNextSteps } from "../../domain/recommendationLinks";
-import { findJourneyEntry, toJourneyEntries } from "../../domain/decisionJourney/adapters";
 import { getCachedImage } from "../../lib/imageOptimization";
 import {
   getComparisons,
@@ -62,8 +60,6 @@ const [products, manufacturers, pages, comparisons] = await Promise.all([
   getPages(),
   getComparisons()
 ]);
-const journeyEntries = toJourneyEntries({ pages, comparisons, products });
-const currentJourneyEntry = findJourneyEntry(journeyEntries, "comparison", comparison.data.slug);
 
 const internalLinkDefinitions = getInternalLinkDefinitions({
   pages,
@@ -206,9 +202,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
     <div data-advisor-integration="comparison">
       <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text={comparisonAdvisorText} />
     </div>
-    <DecisionJourney current={currentJourneyEntry} entries={journeyEntries} />
-
-
 
     <DecisionNextSteps
       title="Vom Vergleich zur Entscheidung"

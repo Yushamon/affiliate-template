@@ -1,0 +1,103 @@
+---
+import {
+  buildDecisionJourney,
+  getStageLabel,
+  type JourneyEntry,
+} from "../domain/decisionJourney/registry";
+
+type Props = {
+  current: JourneyEntry;
+  entries: JourneyEntry[];
+};
+
+const { current, entries } = Astro.props;
+const journey = buildDecisionJourney(current, entries);
+---
+
+{
+  journey && (
+    <nav
+      class="decision-journey"
+      aria-label="Nächste Entscheidungsschritte"
+      data-feature="global-decision-journey-2.0"
+      data-cluster={journey.cluster}
+      data-stage={journey.stage}
+      data-source={journey.source}
+    >
+      <div class="decision-journey-copy">
+        <p class="decision-journey-eyebrow">{getStageLabel(journey.stage)}</p>
+        <h2>Was ist jetzt sinnvoll?</h2>
+        <p>{journey.question}</p>
+      </div>
+
+      <div class="decision-journey-grid">
+        {journey.steps.map((step) => (
+          <a class="decision-journey-card pt-surface" href={step.href}>
+            <span>{step.kind}</span>
+            <strong>{step.label}</strong>
+          </a>
+        ))}
+      </div>
+    </nav>
+  )
+}
+
+<style>
+  .decision-journey {
+    margin-block: clamp(2rem, 5vw, 3.5rem);
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--pt-border-subtle, rgba(127, 127, 127, 0.24));
+    border-radius: var(--pt-radius-lg, 1rem);
+    background: var(--pt-surface-muted, rgba(127, 127, 127, 0.06));
+  }
+
+  .decision-journey-copy {
+    max-width: 48rem;
+  }
+
+  .decision-journey-eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .decision-journey-copy h2 {
+    margin: 0;
+  }
+
+  .decision-journey-copy > p:last-child {
+    margin-block: 0.6rem 0;
+  }
+
+  .decision-journey-grid {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .decision-journey-card {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+    padding: 0.9rem 1rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .decision-journey-card span {
+    font-size: 0.78rem;
+    opacity: 0.72;
+  }
+
+  .decision-journey-card strong {
+    line-height: 1.35;
+  }
+
+  @media (min-width: 48rem) {
+    .decision-journey-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

@@ -135,9 +135,9 @@
     "audit:topical-authority": "node scripts/seo/audit-topical-authority.mjs",
     "audit:topical-authority:strict": "node scripts/seo/audit-topical-authority.mjs --strict",
     "test:topical-authority": "node --test test/topical-authority-center.test.mjs",
-    "audit:decision-journeys": "node --experimental-strip-types scripts/seo/audit-decision-journeys.mjs",
-    "audit:decision-journeys:strict": "node --experimental-strip-types scripts/seo/audit-decision-journeys.mjs --strict",
-    "test:decision-journeys": "node --test test/decision-journey.test.mjs"
+    "audit:feeder-intent": "node --experimental-strip-types scripts/seo/audit-feeder-intent.mjs",
+    "audit:feeder-intent:strict": "node --experimental-strip-types scripts/seo/audit-feeder-intent.mjs --strict",
+    "test:feeder-intent": "node --test test/feeder-intent.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

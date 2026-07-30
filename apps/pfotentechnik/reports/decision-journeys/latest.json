@@ -1,0 +1,5485 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-07-30T13:27:21.073Z",
+  "summary": {
+    "documents": 133,
+    "technicalErrors": 0,
+    "editorialWarnings": 135
+  },
+  "technical": [],
+  "editorial": [
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/biofilm-im-katzentrinkbrunnen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/datenschutz-bei-gps-trackern/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-bei-stromausfall/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-bei-uebergewicht/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-hund/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-im-urlaub/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-katze/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-richtig-reinigen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/futterautomat-und-ernaehrung/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/gps-oder-bluetooth/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/gps-tracker-richtig-befestigen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/gps-tracker/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/kalk-katzentrinkbrunnen-entfernen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katze-an-trinkbrunnen-gewoehnen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzentrinkbrunnen-laut-pumpe/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzentrinkbrunnen-ohne-filter/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzentrinkbrunnen-richtig-reinigen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/katzenwasser-taeglich-wechseln/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/reichweite-von-gps-trackern/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/smarte-futterautomaten/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/so-bewerten-wir/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen-fuer-kitten-sicher/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen-hund/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen-seniorenkatzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkbrunnen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/trinkmenge-katze-messen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-funktionieren-gps-tracker/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-genau-sind-gps-tracker/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/wie-viele-wasserstellen-katze/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/futterautomat-gegen-schlingen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/futterautomat-mit-app/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/aqara-smart-pet-feeder-c1/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/cat-mate-335-pet-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/cat-mate-c200/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/cat-mate-c300/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/cat-mate-c500/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/cat-mate-shell-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/catit-pixi-vision-smart-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/garmin-alpha-t-20/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/garmin-alpha-tt-25/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/honeyguardian-a305d/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/honeyguardian-a68/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-2-in-1-feeder-water/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/oneisall-7l-dog-water-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/paj-pet-finder-4g-mini/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/pawbby-smart-pet-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/pawsync-smart-pet-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-5-mini/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-max-2-uvc/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-max-cordless/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-solo-se/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-eversweet-ultra/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-fresh-element-infinity/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-fresh-element-solo/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-yumshare-dual-hopper/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petkit-yumshare-solo-2/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-air-automatic-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-air-wifi-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-capsule-dog-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-dockstream-2-smart/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-dockstream-cordless/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-dockstream-rfid-smart/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-glacier-ultrafiltration/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-granary-camera-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-granary-dual-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-granary-wifi-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-polar-wet-food-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-space-smart-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petlibro-stainless-steel-fountain/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/petsafe-smart-feed-2/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/surefeed-microchip-pet-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/tractive-cat-6-mini/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/tractive-dog-6-xl/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/tractive-dog-6/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/weenect-xs/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/weenect-xt/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/wopet-cube-air-ca10/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/wopet-heritage-view-camera-feeder/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/wopet-patrol-f07-pro/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/wopet-pioneer-f01-plus/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "DERIVED_ONLY",
+      "route": "/produkt/zeromouse-2-0/",
+      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
+    },
+    {
+      "severity": "warning",
+      "code": "EDITORIAL_DEAD_END",
+      "route": "/produkt/zeromouse-2-0/",
+      "message": "Noch kein sinnvoller nächster Entscheidungsschritt vorhanden."
+    },
+    {
+      "severity": "warning",
+      "code": "PRODUCT_WITHOUT_COMPARISON_RETURN",
+      "route": "/produkt/zeromouse-2-0/",
+      "message": "Produkt besitzt keinen Rückweg zu einem passenden Vergleich."
+    }
+  ],
+  "matrix": [
+    {
+      "route": "/biofilm-im-katzentrinkbrunnen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/biofilm-im-katzentrinkbrunnen.md"
+    },
+    {
+      "route": "/datenschutz-bei-gps-trackern/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/datenschutz-bei-gps-trackern.md"
+    },
+    {
+      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md"
+    },
+    {
+      "route": "/futterautomat-bei-stromausfall/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-bei-stromausfall.md"
+    },
+    {
+      "route": "/futterautomat-bei-uebergewicht/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-bei-uebergewicht.md"
+    },
+    {
+      "route": "/futterautomat-hund/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-hund.md"
+    },
+    {
+      "route": "/futterautomat-im-urlaub/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-im-urlaub.md"
+    },
+    {
+      "route": "/futterautomat-katze/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-katze.md"
+    },
+    {
+      "route": "/futterautomat-richtig-reinigen/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-richtig-reinigen.md"
+    },
+    {
+      "route": "/futterautomat-und-ernaehrung/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/futterautomat-und-ernaehrung.md"
+    },
+    {
+      "route": "/gps-oder-bluetooth/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/gps-oder-bluetooth.md"
+    },
+    {
+      "route": "/gps-tracker-richtig-befestigen/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/gps-tracker-richtig-befestigen.md"
+    },
+    {
+      "route": "/gps-tracker/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/gps-tracker.md"
+    },
+    {
+      "route": "/kalk-katzentrinkbrunnen-entfernen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/kalk-katzentrinkbrunnen-entfernen.md"
+    },
+    {
+      "route": "/katze-an-trinkbrunnen-gewoehnen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katze-an-trinkbrunnen-gewoehnen.md"
+    },
+    {
+      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzentrinkbrunnen-dauerbetrieb-urlaub.md"
+    },
+    {
+      "route": "/katzentrinkbrunnen-laut-pumpe/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzentrinkbrunnen-laut-pumpe.md"
+    },
+    {
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md"
+    },
+    {
+      "route": "/katzentrinkbrunnen-ohne-filter/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzentrinkbrunnen-ohne-filter.md"
+    },
+    {
+      "route": "/katzentrinkbrunnen-richtig-reinigen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzentrinkbrunnen-richtig-reinigen.md"
+    },
+    {
+      "route": "/katzenwasser-taeglich-wechseln/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/katzenwasser-taeglich-wechseln.md"
+    },
+    {
+      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/pumpe-katzentrinkbrunnen-reinigen.md"
+    },
+    {
+      "route": "/reichweite-von-gps-trackern/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/reichweite-von-gps-trackern.md"
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/smarte-futterautomaten.md"
+    },
+    {
+      "route": "/so-bewerten-wir/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/so-bewerten-wir.md"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen-fuer-katzen-sinnvoll.md"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-kitten-sicher/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen-fuer-kitten-sicher.md"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "problem",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen-fuer-mehrere-katzen.md"
+    },
+    {
+      "route": "/trinkbrunnen-hund/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen-hund.md"
+    },
+    {
+      "route": "/trinkbrunnen-seniorenkatzen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen-seniorenkatzen.md"
+    },
+    {
+      "route": "/trinkbrunnen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkbrunnen.md"
+    },
+    {
+      "route": "/trinkmenge-katze-messen/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/trinkmenge-katze-messen.md"
+    },
+    {
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/warum-brauchen-gps-tracker-ein-abo.md"
+    },
+    {
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/welche-portionsgroesse-ist-richtig.md"
+    },
+    {
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/welcher-futterautomat-ist-der-richtige.md"
+    },
+    {
+      "route": "/wie-funktionieren-gps-tracker/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-funktionieren-gps-tracker.md"
+    },
+    {
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-funktioniert-ein-futterautomat.md"
+    },
+    {
+      "route": "/wie-genau-sind-gps-tracker/",
+      "type": "page",
+      "cluster": "gps-tracker",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-genau-sind-gps-tracker.md"
+    },
+    {
+      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md"
+    },
+    {
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-lange-bleibt-trockenfutter-frisch.md"
+    },
+    {
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "type": "page",
+      "cluster": "futterautomaten",
+      "stage": "support",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/pages/wie-laut-sind-automatische-futterautomaten.md"
+    },
+    {
+      "route": "/wie-viele-wasserstellen-katze/",
+      "type": "page",
+      "cluster": "trinkbrunnen",
+      "stage": "orientation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/wie-viele-wasserstellen-katze.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-kleine-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-welpen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-akku.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-mit-kamera.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-ohne-wlan.md"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-futterautomaten-unter-100-euro.md"
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "type": "comparison",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/garmin-alpha-t-20/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha T 20 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/garmin-alpha-tt-25/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha TT 25 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "kind": "Produkt",
+          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "type": "comparison",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/garmin-alpha-t-20/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha T 20 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/garmin-alpha-tt-25/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha TT 25 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "kind": "Produkt",
+          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "type": "comparison",
+      "cluster": "trinkbrunnen",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-shell-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Shell Pet Fountain im Detail prüfen"
+        },
+        {
+          "href": "/produkt/oneisall-2-2l-cordless-fountain/",
+          "kind": "Produkt",
+          "label": "oneisall 2,2L Cordless Cat Fountain im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md"
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "type": "comparison",
+      "cluster": "trinkbrunnen",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-shell-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Shell Pet Fountain im Detail prüfen"
+        },
+        {
+          "href": "/produkt/oneisall-2-2l-cordless-fountain/",
+          "kind": "Produkt",
+          "label": "oneisall 2,2L Cordless Cat Fountain im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-fuer-grosse-hunde.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-gegen-schlingen/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-gegen-schlingen.md"
+    },
+    {
+      "route": "/vergleiche/futterautomat-mit-app/",
+      "type": "comparison",
+      "cluster": "futterautomaten",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/aqara-smart-pet-feeder-c1/",
+          "kind": "Produkt",
+          "label": "Aqara Smart Pet Feeder C1 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c200/",
+          "kind": "Produkt",
+          "label": "Cat Mate C200 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/cat-mate-c300/",
+          "kind": "Produkt",
+          "label": "Cat Mate C300 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/futterautomat-mit-app.md"
+    },
+    {
+      "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "type": "comparison",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/garmin-alpha-t-20/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha T 20 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/garmin-alpha-tt-25/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha TT 25 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "kind": "Produkt",
+          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md"
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "type": "comparison",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/garmin-alpha-t-20/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha T 20 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/garmin-alpha-tt-25/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha TT 25 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "kind": "Produkt",
+          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/gps-tracker-ohne-abo.md"
+    },
+    {
+      "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "type": "comparison",
+      "cluster": "gps-tracker",
+      "stage": "evaluation",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/produkt/garmin-alpha-t-20/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha T 20 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/garmin-alpha-tt-25/",
+          "kind": "Produkt",
+          "label": "Garmin Alpha TT 25 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "kind": "Produkt",
+          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
+    },
+    {
+      "route": "/produkt/aqara-smart-pet-feeder-c1/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/aqara-smart-pet-feeder-c1.md"
+    },
+    {
+      "route": "/produkt/cat-mate-335-pet-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-shell-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Shell Pet Fountain im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-335-pet-fountain.md"
+    },
+    {
+      "route": "/produkt/cat-mate-c200/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-c200.md"
+    },
+    {
+      "route": "/produkt/cat-mate-c300/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-c300.md"
+    },
+    {
+      "route": "/produkt/cat-mate-c500/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-c500.md"
+    },
+    {
+      "route": "/produkt/cat-mate-shell-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-shell-fountain.md"
+    },
+    {
+      "route": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md"
+    },
+    {
+      "route": "/produkt/catit-pixi-vision-smart-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/catit-pixi-vision-smart-feeder.md"
+    },
+    {
+      "route": "/produkt/garmin-alpha-t-20/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/garmin-alpha-t-20.md"
+    },
+    {
+      "route": "/produkt/garmin-alpha-tt-25/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/garmin-alpha-tt-25.md"
+    },
+    {
+      "route": "/produkt/honeyguardian-a305d/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/honeyguardian-a305d.md"
+    },
+    {
+      "route": "/produkt/honeyguardian-a68/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/honeyguardian-a68.md"
+    },
+    {
+      "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/honeyguardian-smart-pet-feeder-s305d.md"
+    },
+    {
+      "route": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md"
+    },
+    {
+      "route": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/oneisall-2-2l-cordless-fountain.md"
+    },
+    {
+      "route": "/produkt/oneisall-2-in-1-feeder-water/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/oneisall-2-in-1-feeder-water.md"
+    },
+    {
+      "route": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/oneisall-3-2l-cordless-fountain.md"
+    },
+    {
+      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md"
+    },
+    {
+      "route": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/oneisall-5l-automatic-cat-feeder.md"
+    },
+    {
+      "route": "/produkt/oneisall-7l-dog-water-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/oneisall-7l-dog-water-fountain.md"
+    },
+    {
+      "route": "/produkt/paj-pet-finder-4g-mini/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/paj-pet-finder-4g-mini.md"
+    },
+    {
+      "route": "/produkt/pawbby-smart-pet-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/pawbby-smart-pet-feeder.md"
+    },
+    {
+      "route": "/produkt/pawsync-smart-pet-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/pawsync-smart-pet-feeder.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-3-pro-uvc.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-5-mini/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-5-mini.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-2-uvc/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-max-2-uvc.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-cordless/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-max-cordless.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-se/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-solo-se.md"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-ultra/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-eversweet-ultra.md"
+    },
+    {
+      "route": "/produkt/petkit-fresh-element-infinity/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petkit-fresh-element-infinity.md"
+    },
+    {
+      "route": "/produkt/petkit-fresh-element-solo/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petkit-fresh-element-solo.md"
+    },
+    {
+      "route": "/produkt/petkit-yumshare-dual-hopper/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petkit-yumshare-dual-hopper.md"
+    },
+    {
+      "route": "/produkt/petkit-yumshare-solo-2/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petkit-yumshare-solo-2.md"
+    },
+    {
+      "route": "/produkt/petlibro-air-automatic-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-air-automatic-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-air-wifi-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-air-wifi-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-capsule-dog-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-capsule-dog-fountain.md"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-2-smart/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-dockstream-2-smart.md"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-cordless/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-dockstream-cordless.md"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-rfid-smart/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-dockstream-rfid-smart.md"
+    },
+    {
+      "route": "/produkt/petlibro-glacier-ultrafiltration/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-glacier-ultrafiltration.md"
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-granary-2-vision.md"
+    },
+    {
+      "route": "/produkt/petlibro-granary-camera-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-granary-camera-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-granary-dual-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-granary-dual-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-granary-wifi-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-granary-wifi-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-one-rfid-smart-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-polar-wet-food-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-polar-wet-food-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-space-smart-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petlibro-space-smart-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-stainless-steel-fountain/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-stainless-steel-fountain.md"
+    },
+    {
+      "route": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md"
+    },
+    {
+      "route": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petsafe-healthy-pet-simply-feed.md"
+    },
+    {
+      "route": "/produkt/petsafe-smart-feed-2/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/petsafe-smart-feed-2.md"
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md"
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/surefeed-microchip-pet-feeder.md"
+    },
+    {
+      "route": "/produkt/tractive-cat-6-mini/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/tractive-cat-6-mini.md"
+    },
+    {
+      "route": "/produkt/tractive-dog-6-xl/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/tractive-dog-6-xl.md"
+    },
+    {
+      "route": "/produkt/tractive-dog-6/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/tractive-dog-6.md"
+    },
+    {
+      "route": "/produkt/weenect-xs/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/weenect-xs.md"
+    },
+    {
+      "route": "/produkt/weenect-xt/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        },
+        {
+          "href": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+          "kind": "Vergleich",
+          "label": "GPS-Tracker mit langer Akkulaufzeit vergleichen"
+        }
+      ],
+      "file": "src/content/products/weenect-xt.md"
+    },
+    {
+      "route": "/produkt/wopet-cube-air-ca10/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/wopet-cube-air-ca10.md"
+    },
+    {
+      "route": "/produkt/wopet-heritage-view-camera-feeder/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/wopet-heritage-view-camera-feeder.md"
+    },
+    {
+      "route": "/produkt/wopet-patrol-f07-pro/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/wopet-patrol-f07-pro.md"
+    },
+    {
+      "route": "/produkt/wopet-pioneer-f01-plus/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/wopet-pioneer-f01-plus.md"
+    },
+    {
+      "route": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "type": "product",
+      "cluster": "futterautomaten",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Berufstätige vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Futterautomaten für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/xiaomi-smart-pet-food-feeder-2.md"
+    },
+    {
+      "route": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "kind": "Produkt",
+          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/xiaomi-smart-pet-fountain-2.md"
+    },
+    {
+      "route": "/produkt/zeromouse-2-0/",
+      "type": "product",
+      "cluster": "katzenklappen",
+      "stage": "decision",
+      "source": "derived",
+      "steps": [],
+      "file": "src/content/products/zeromouse-2-0.md"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "decision-journey-0001",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/biofilm-im-katzentrinkbrunnen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0002",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/datenschutz-bei-gps-trackern/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0003",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/filter-im-katzentrinkbrunnen-wechseln/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0004",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-bei-stromausfall/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0005",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-bei-uebergewicht/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0006",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-hund/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0007",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-im-urlaub/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0008",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-katze/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0009",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-richtig-reinigen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0010",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/futterautomat-und-ernaehrung/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0011",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/gps-oder-bluetooth/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0012",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/gps-tracker-richtig-befestigen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0013",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/gps-tracker/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0014",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/kalk-katzentrinkbrunnen-entfernen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0015",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katze-an-trinkbrunnen-gewoehnen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0016",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzentrinkbrunnen-dauerbetrieb-urlaub/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0017",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzentrinkbrunnen-laut-pumpe/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0018",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0019",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzentrinkbrunnen-ohne-filter/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0020",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzentrinkbrunnen-richtig-reinigen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0021",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/katzenwasser-taeglich-wechseln/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0022",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/pumpe-katzentrinkbrunnen-reinigen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0023",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/reichweite-von-gps-trackern/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0024",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/smarte-futterautomaten/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0025",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/so-bewerten-wir/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0026",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0027",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen-fuer-kitten-sicher/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0028",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen-fuer-mehrere-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0029",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen-hund/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0030",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen-seniorenkatzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0031",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkbrunnen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0032",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/trinkmenge-katze-messen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0033",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/warum-brauchen-gps-tracker-ein-abo/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0034",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/welche-portionsgroesse-ist-richtig/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0035",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/welcher-futterautomat-ist-der-richtige/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0036",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-funktionieren-gps-tracker/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0037",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-funktioniert-ein-futterautomat/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0038",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-genau-sind-gps-tracker/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0039",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-gross-sollte-ein-futterautomat-sein/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0040",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-lange-bleibt-trockenfutter-frisch/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0041",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-laut-sind-automatische-futterautomaten/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0042",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/wie-viele-wasserstellen-katze/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0043",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-berufstaetige/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0044",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-hunde/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0045",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0046",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0047",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0048",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0049",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0050",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-welpen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0051",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0052",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-mit-akku/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0053",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0054",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-mit-kamera/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0055",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-ohne-wlan/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0056",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-futterautomaten-unter-100-euro/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0057",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0058",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-gps-tracker-fuer-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0059",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0060",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0061",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0062",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/futterautomat-gegen-schlingen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0063",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/futterautomat-mit-app/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0064",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0065",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/gps-tracker-ohne-abo/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0066",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/vergleiche/kleine-gps-tracker-fuer-katzen/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0067",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/aqara-smart-pet-feeder-c1/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0068",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/cat-mate-335-pet-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0069",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/cat-mate-c200/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0070",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/cat-mate-c300/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0071",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/cat-mate-c500/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0072",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/cat-mate-shell-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0073",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/catit-pixi-smart-6-meal-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0074",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/catit-pixi-vision-smart-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0075",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/garmin-alpha-t-20/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0076",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/garmin-alpha-tt-25/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0077",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/honeyguardian-a305d/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0078",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/honeyguardian-a68/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0079",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/honeyguardian-smart-pet-feeder-s305d/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0080",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/imipaw-3l-automatic-cat-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0081",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-2-2l-cordless-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0082",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-2-in-1-feeder-water/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0083",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-3-2l-cordless-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0084",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-3-5l-cordless-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0085",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-5l-automatic-cat-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0086",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/oneisall-7l-dog-water-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0087",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/paj-pet-finder-4g-mini/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0088",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/pawbby-smart-pet-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0089",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/pawsync-smart-pet-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0090",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-3-pro-uvc/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0091",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-5-mini/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0092",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-max-2-uvc/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0093",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-max-cordless/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0094",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-solo-2-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0095",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0096",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-eversweet-ultra/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0097",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-fresh-element-infinity/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0098",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-fresh-element-solo/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0099",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0100",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petkit-yumshare-solo-2/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0101",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-air-automatic-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0102",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-air-wifi-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0103",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-capsule-dog-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0104",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-dockstream-2-smart-cordless/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0105",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-dockstream-2-smart/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0106",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-dockstream-cordless/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0107",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-dockstream-rfid-smart/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0108",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-glacier-ultrafiltration/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0109",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-granary-2-vision/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0110",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-granary-camera-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0111",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-granary-dual-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0112",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-granary-wifi-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0113",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-one-rfid-smart-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0114",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-polar-wet-food-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0115",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-space-smart-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0116",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petlibro-stainless-steel-fountain/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0117",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petsafe-freshfeed-refrigerated-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0118",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petsafe-healthy-pet-simply-feed/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0119",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/petsafe-smart-feed-2/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0120",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/surefeed-microchip-pet-feeder-connect/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0121",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/surefeed-microchip-pet-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0122",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/tractive-cat-6-mini/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0123",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0124",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/tractive-dog-6/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0125",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/weenect-xs/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0126",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/weenect-xt/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0127",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/wopet-cube-air-ca10/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0128",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/wopet-heritage-view-camera-feeder/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0129",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/wopet-patrol-f07-pro/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0130",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/wopet-pioneer-f01-plus/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0131",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/xiaomi-smart-pet-food-feeder-2/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0132",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/xiaomi-smart-pet-fountain-2/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0133",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+      "routes": [
+        "/produkt/zeromouse-2-0/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0134",
+      "priority": "P1",
+      "cluster": "decision-journey",
+      "title": "Noch kein sinnvoller nächster Entscheidungsschritt vorhanden.",
+      "routes": [
+        "/produkt/zeromouse-2-0/"
+      ],
+      "source": "audit:decision-journeys"
+    },
+    {
+      "id": "decision-journey-0135",
+      "priority": "P2",
+      "cluster": "decision-journey",
+      "title": "Produkt besitzt keinen Rückweg zu einem passenden Vergleich.",
+      "routes": [
+        "/produkt/zeromouse-2-0/"
+      ],
+      "source": "audit:decision-journeys"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import FAQ from "@affiliate-core/components/FAQ.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import ConversionJourney from "../components/ConversionJourney.astro";
 import DecisionNextSteps from "../components/DecisionNextSteps.astro";
-import DecisionJourney from "../components/DecisionJourney.astro";
+import FeederIntentJourney from "../components/FeederIntentJourney.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
@@ -30,7 +30,6 @@ import {
   getSourceContexts
 } from "../domain/content/internalLinks";
 import { buildMoneyPageNextSteps } from "../domain/recommendationLinks";
-import { findJourneyEntry, toJourneyEntries } from "../domain/decisionJourney/adapters";
 import defaultHero from "../assets/images/project/pfotentechnik/hero.webp";
 import categoryImage from "../assets/images/project/pfotentechnik/category.webp";
 import comparisonImage from "../assets/images/project/pfotentechnik/comparison.webp";
@@ -73,8 +72,6 @@ const [pages, products, comparisons, manufacturers] = await Promise.all([
   getComparisons(),
   getManufacturers()
 ]);
-const journeyEntries = toJourneyEntries({ pages, comparisons, products });
-const currentJourneyEntry = findJourneyEntry(journeyEntries, "page", page.data.slug);
 const breadcrumbs = getPageBreadcrumbs(page);
 const internalLinkDefinitions = getInternalLinkDefinitions({
   pages,
@@ -595,10 +592,16 @@ const relatedItems = relatedEntries.map((entry) => ({
     >
       <Content />
     </AutoLinkContent>
-    <DecisionJourney current={currentJourneyEntry} entries={journeyEntries} />
+    <FeederIntentJourney
+      slug={page.data.slug}
+      pages={pages}
+      products={products}
+      comparisons={comparisons}
+    />
 
 
-{
+
+    {
       isRecommendationPage && moneyPageNextSteps.length > 0 && (
         <DecisionNextSteps
           title="Deine nächsten Schritte"

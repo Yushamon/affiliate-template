@@ -395,6 +395,20 @@ function parseFrontmatter(raw: string): Record<string, string> {
   return output;
 }
 
+),
+    );
+    if (valueMatch) {
+      return valueMatch[1].trim().replace(/^['"]|['"]$/g, "");
+    }
+
+    if (line.trim() && line.length - line.trimStart().length <= sectionIndent) {
+      inSection = false;
+    }
+  }
+
+  return "";
+}
+
 function parseNestedFrontmatterValue(
   raw: string,
   section: string,

@@ -1,0 +1,144 @@
+---
+import {
+  buildFeederJourney,
+  getFeederIntent,
+} from "../domain/seo/feederIntentMatrix";
+
+type Props = {
+  slug: string;
+  pages: any[];
+  products: any[];
+  comparisons: any[];
+  manufacturers: any[];
+};
+
+const { slug, pages, products, comparisons, manufacturers } = Astro.props;
+const intent = getFeederIntent(slug);
+
+const routes = [
+  ...pages.map((entry) => `/${entry.data.slug}/`),
+  ...comparisons.map((entry) => `/vergleiche/${entry.data.slug}/`),
+  ...products.map((entry) => `/produkt/${entry.data.slug}/`),
+  ...manufacturers.map((entry) => `/hersteller/${entry.data.slug}/`),
+];
+
+const editorialLinks = buildFeederJourney(slug, routes);
+const feederProducts = products
+  .filter((entry) => entry.data.category?.key === "futterautomaten")
+  .slice()
+  .sort(
+    (a, b) =>
+      (b.data.score ?? b.data.rating ?? 0) -
+      (a.data.score ?? a.data.rating ?? 0),
+  );
+
+const product = feederProducts[0];
+const manufacturerSlug =
+  product?.data.manufacturer?.slug ??
+  String(product?.data.manufacturer?.name ?? "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+const routeSet = new Set(routes);
+const items = [
+  ...editorialLinks,
+  ...(product
+    ? [{
+        href: `/produkt/${product.data.slug}/`,
+        label: `${product.data.title} im Detail prüfen`,
+        kind: "Produkt",
+      }]
+    : []),
+  ...(manufacturerSlug && routeSet.has(`/hersteller/${manufacturerSlug}/`)
+    ? [{
+        href: `/hersteller/${manufacturerSlug}/`,
+        label: `${product.data.manufacturer.name} als Hersteller einordnen`,
+        kind: "Hersteller",
+      }]
+    : []),
+].filter(
+  (item, index, all) =>
+    all.findIndex((candidate) => candidate.href === item.href) === index,
+).slice(0, 4);
+---
+
+{
+  intent && items.length > 0 && (
+    <nav class="feeder-intent-journey" aria-label="Passende nächste Schritte">
+      <div class="feeder-intent-copy">
+        <p class="feeder-intent-eyebrow">{intent.label}</p>
+        <h2>Was ist dein nächster sinnvoller Schritt?</h2>
+        <p>{intent.question}</p>
+      </div>
+
+      <div class="feeder-intent-links">
+        {items.map((item) => (
+          <a class="feeder-intent-link pt-surface" href={item.href}>
+            <span>{item.kind}</span>
+            <strong>{item.label}</strong>
+          </a>
+        ))}
+      </div>
+    </nav>
+  )
+}
+
+<style>
+  .feeder-intent-journey {
+    margin-block: clamp(2rem, 5vw, 3.5rem);
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--pt-border-subtle, rgba(127, 127, 127, 0.24));
+    border-radius: var(--pt-radius-lg, 1rem);
+    background: var(--pt-surface-muted, rgba(127, 127, 127, 0.06));
+  }
+
+  .feeder-intent-copy {
+    max-width: 48rem;
+  }
+
+  .feeder-intent-eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .feeder-intent-copy h2 {
+    margin: 0;
+  }
+
+  .feeder-intent-copy > p:last-child {
+    margin-block: 0.6rem 0;
+  }
+
+  .feeder-intent-links {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .feeder-intent-link {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+  }
+
+  .feeder-intent-link span {
+    font-size: 0.78rem;
+    opacity: 0.72;
+  }
+
+  .feeder-intent-link strong {
+    line-height: 1.35;
+  }
+
+  @media (min-width: 48rem) {
+    .feeder-intent-links {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

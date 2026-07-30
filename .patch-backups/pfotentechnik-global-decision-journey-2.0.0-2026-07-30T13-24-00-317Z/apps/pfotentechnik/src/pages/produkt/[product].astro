@@ -7,7 +7,6 @@ import ProductRenderer from "../../components/product-standard-2/ProductRenderer
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
-import DecisionJourney from "../../components/DecisionJourney.astro";
 import EditorialTransparency from "../../components/EditorialTransparency.astro";
 import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
@@ -24,7 +23,6 @@ import {
   getSourceContexts
 } from "../../domain/content/internalLinks";
 import { buildProductNextSteps } from "../../domain/recommendationLinks";
-import { findJourneyEntry, toJourneyEntries } from "../../domain/decisionJourney/adapters";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 import { getCachedImage } from "../../lib/imageOptimization";
 import {
@@ -76,8 +74,6 @@ const [allProducts, pages, comparisons, manufacturers] =
     getComparisons(),
     getManufacturers()
   ]);
-const journeyEntries = toJourneyEntries({ pages, comparisons, products: allProducts });
-const currentJourneyEntry = findJourneyEntry(journeyEntries, "product", contentProduct.slug);
 
 const internalLinkDefinitions = getInternalLinkDefinitions({
   pages,
@@ -439,10 +435,8 @@ const productSchema = {
       intro="Öffne den passenden Vergleich oder die Kaufberatung für diesen Anwendungsfall."
       items={productNextSteps}
     />
-    <DecisionJourney current={currentJourneyEntry} entries={journeyEntries} />
 
-
-<RelatedArticles items={relatedItems} />
+    <RelatedArticles items={relatedItems} />
   </div>
 
 
