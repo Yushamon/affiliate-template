@@ -55,7 +55,7 @@ test("Body-Treffer allein ordnen Produkte und Hersteller nicht zu", () => {
   );
   assert.match(
     loader,
-    /document\.type === "product"[\s\S]*return primaryEvidence\s*\|\|\s*manufacturerEvidence;/,
+    /document\.type === "product"[\s\S]*return primaryEvidence;/,
   );
   assert.match(loader, /bodySignalCount >= 2/);
 });
