@@ -1,6 +1,6 @@
 {
-  "patch": "${ID}",
-  "generatedAt": "2026-07-30T11:56:09.087Z",
+  "patch": "pfotentechnik-topical-authority-quality-1.2.0",
+  "generatedAt": "2026-07-30T12:04:06.832Z",
   "status": "passed",
   "checks": [
     {
@@ -42,6 +42,31 @@
       "id": "TOKENS",
       "ok": true,
       "message": "Dark-Mode-fähige SEO Tokens"
+    },
+    {
+      "id": "CLUSTER_SIGNALS",
+      "ok": true,
+      "message": "Cluster verwenden gewichtete und ausschließende Signale"
+    },
+    {
+      "id": "BODY_GUARD",
+      "ok": true,
+      "message": "Body-Treffer allein erzeugen keine Clusterzuordnung"
+    },
+    {
+      "id": "MANUFACTURER_GUARD",
+      "ok": true,
+      "message": "Hersteller werden nicht über generischen Body-Text zugeordnet"
+    },
+    {
+      "id": "ZERO_CLUSTER",
+      "ok": true,
+      "message": "Nicht vorhandene Cluster erhalten Score 0"
+    },
+    {
+      "id": "REGRESSION_TESTS",
+      "ok": true,
+      "message": "Regressionstests für Fehlzuordnungen vorhanden"
     }
   ]
 }
