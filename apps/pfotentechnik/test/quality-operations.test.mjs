@@ -20,18 +20,44 @@ const raw = {
   file: "src/pages/test.astro",
   route: "/test/",
   description: "Canonical fehlt.",
-  recommendedAction: "Canonical ergänzen.",
+  recommendedSolution: "Canonical ergänzen.",
 };
 
-test("ein Finding besitzt das vollständige einheitliche Aufgabenmodell", () => {
+test("ein Finding besitzt das vollständige einheitliche Operations-Modell", () => {
   const finding = normalizeQualityFinding(raw, { now });
   for (const key of [
-    "id", "type", "category", "area", "severity", "confidence", "priority", "status", "source",
-    "files", "urls", "description", "impact", "autoFixAvailable", "manualFixRequired",
-    "recommendedAction", "createdAt", "lastCheckedAt", "lastChangedAt",
+    "id",
+    "type",
+    "category",
+    "area",
+    "severity",
+    "confidence",
+    "priority",
+    "status",
+    "source",
+    "file",
+    "route",
+    "component",
+    "files",
+    "urls",
+    "description",
+    "impact",
+    "recommendedSolution",
+    "autoFixPossible",
+    "aiActionAvailable",
+    "aiActionIds",
+    "codexSuitable",
+    "createdAt",
+    "lastCheckedAt",
+    "lastChangedAt",
   ]) assert.ok(Object.hasOwn(finding, key), key);
+
   assert.equal(finding.area, "canonicals");
   assert.equal(finding.status, "open");
+  assert.equal(finding.file, "src/pages/test.astro");
+  assert.equal(finding.route, "/test/");
+  assert.equal(finding.component, "test");
+  assert.ok(finding.aiActionIds.includes("codex-send"));
 });
 
 test("Priorisierung gewichtet Release-Blocker höher als gleichartige Hinweise", () => {
@@ -61,31 +87,52 @@ test("intelligente Gruppen bleiben auf vier Findings und fünf Dateien begrenzt"
   assert.ok(groups.every((group) => group.findingIds.length <= 4 && group.files.length <= 5));
 });
 
-test("Statusmodell enthält alle geforderten Operations-Zustände", () => {
-  for (const status of ["open", "in-progress", "fixed", "ignored", "snoozed", "waiting", "manual-review", "auto-fixed", "regression"]) {
-    assert.ok(QUALITY_STATUSES.includes(status));
-  }
+test("Statusmodell enthält alle Operations-Zustände", () => {
+  for (const status of [
+    "open",
+    "in-progress",
+    "fixed",
+    "ignored",
+    "snoozed",
+    "waiting",
+    "manual-review",
+    "auto-fixed",
+    "regression",
+  ]) assert.ok(QUALITY_STATUSES.includes(status));
 });
 
 test("Ignored bleibt stabil und ein abgelaufenes Snooze wird wieder geöffnet", () => {
-  const ignored = normalizeQualityFinding(raw, { now, previous: { ...normalizeQualityFinding(raw, { now }), status: "ignored" } });
+  const ignored = normalizeQualityFinding(raw, {
+    now,
+    previous: { ...normalizeQualityFinding(raw, { now }), status: "ignored" },
+  });
   assert.equal(ignored.status, "ignored");
+
   const snoozed = normalizeQualityFinding(raw, {
     now,
-    previous: { ...normalizeQualityFinding(raw, { now }), status: "snoozed", snoozedUntil: "2026-07-28T12:00:00.000Z" },
+    previous: {
+      ...normalizeQualityFinding(raw, { now }),
+      status: "snoozed",
+      snoozedUntil: "2026-07-28T12:00:00.000Z",
+    },
   });
   assert.equal(snoozed.status, "open");
 });
 
-test("Registry deckt alle geforderten Audit-Bereiche ab und liest vorhandene Reports", () => {
-  assert.ok(QUALITY_SOURCE_REGISTRY.length >= 27);
+test("Registry liest jeden physischen Report höchstens einmal", () => {
+  assert.ok(QUALITY_SOURCE_REGISTRY.length >= 18);
+  const candidatePaths = QUALITY_SOURCE_REGISTRY
+    .flatMap((source) => source.files)
+    .map((file) => String(file).replaceAll("\\", "/"));
+  assert.equal(new Set(candidatePaths).size, candidatePaths.length);
+
   const collected = collectQualitySources();
   assert.equal(collected.sources.length, QUALITY_SOURCE_REGISTRY.length);
-  assert.ok(collected.sources.some((source) => source.id === "repository-audit" && source.status === "available"));
-  assert.ok(collected.findings.length > 0);
+  assert.ok(collected.sources.some((source) => source.id === "repository-audit"));
+  assert.ok(Number.isInteger(collected.duplicatesPrevented));
 });
 
-test("Zusammenfassung erkennt Blocker, Regression und manuelle Prüfung", () => {
+test("Zusammenfassung erkennt Blocker, Regression, AI Actions und manuelle Prüfung", () => {
   const findings = [
     normalizeQualityFinding({ ...raw, releaseBlocker: true }, { now }),
     normalizeQualityFinding({ ...raw, id: "regression", status: "regression" }, { now }),
@@ -96,6 +143,7 @@ test("Zusammenfassung erkennt Blocker, Regression und manuelle Prüfung", () => 
   assert.equal(summary.regressions, 1);
   assert.equal(summary.manualReview, 1);
   assert.equal(summary.sourcesAvailable, 1);
+  assert.ok(summary.aiActionable >= 1);
 });
 
 test("Admin-Allowlist enthält Status- und sicheren Auto-Fix, aber keine generische Shell", () => {

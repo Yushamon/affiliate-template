@@ -78,6 +78,7 @@ const evidenceText = evidence
   .filter(Boolean)
   .join(", ");
 const authorHref = author.url || "/redaktion/";
+const isMethodologyPage = Astro.url.pathname === "/so-bewerten-wir/" || Astro.url.pathname === "/so-bewerten-wir";
 const contentLabel = kind === "produkt"
   ? "Produktbewertung"
   : kind === "vergleich"
@@ -106,7 +107,11 @@ const containerClass = isCompactGuide
           <strong>Finanzierung:</strong> Affiliate-finanziert, redaktionell getrennt. Provisionen verändern weder Aussagen noch Empfehlungen; der Kaufpreis bleibt gleich.
         </p>
         <nav aria-label="Redaktionelle Informationen">
-          <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+          {isMethodologyPage ? (
+            <span aria-current="page">Methodik und Bewertungssystem</span>
+          ) : (
+            <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+          )}
           <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
           <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
           <a href="/kontakt/">Fehler melden</a>
@@ -164,7 +169,11 @@ const containerClass = isCompactGuide
       )}
 
       <nav aria-label="Redaktionelle Informationen">
-        <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+        {isMethodologyPage ? (
+            <span aria-current="page">Methodik und Bewertungssystem</span>
+          ) : (
+            <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+          )}
         <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
         <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
         <a href="/kontakt/">Fehler melden</a>

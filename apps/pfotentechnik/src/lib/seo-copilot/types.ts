@@ -145,20 +145,38 @@ export interface ProductDraft {
   approvedAt?: string;
 }
 
+export type PromptKind =
+  | "product-health"
+  | "content-gap"
+  | "product-discovery"
+  | "niche-opportunity"
+  | "product-research"
+  | "product-creation"
+  | "manufacturer"
+  | "comparison"
+  | "internal-link"
+  | "content-health"
+  | "media-hero"
+  | "media-thumbnail"
+  | "media-gallery"
+  | "faq"
+  | "information-gain"
+  | "expert-box"
+  | "decision-tree"
+  | "decision-journey"
+  | "ux"
+  | "css"
+  | "performance"
+  | "dark-mode"
+  | "accessibility"
+  | "codex-remediation";
+
 export interface PromptContext {
-  kind:
-    | "product-health"
-    | "content-gap"
-    | "product-discovery"
-    | "niche-opportunity"
-    | "product-research"
-    | "product-creation"
-    | "manufacturer"
-    | "comparison"
-    | "internal-link"
-    | "content-health";
+  kind: PromptKind;
   projectPath: "apps/pfotentechnik";
   affectedFile?: string;
+  route?: string;
+  component?: string;
   slug?: string;
   title: string;
   manufacturer?: string;
@@ -177,10 +195,64 @@ export interface PromptContext {
 
 export interface PromptResult {
   type: "chatgpt" | "codex";
+  templateId: string;
   title: string;
   prompt: string;
   context: PromptContext;
   generatedAt: string;
+}
+
+export type QualityStatus =
+  | "open"
+  | "in-progress"
+  | "fixed"
+  | "ignored"
+  | "snoozed"
+  | "waiting"
+  | "manual-review"
+  | "auto-fixed"
+  | "regression";
+
+export type QualitySeverity = "critical" | "error" | "warning" | "info";
+
+export interface QualityFinding {
+  id: string;
+  type: string;
+  category: string;
+  area: string;
+  severity: QualitySeverity;
+  confidence: number;
+  priority: {
+    score: number;
+    level: "high" | "medium" | "low";
+    factors: Record<string, number | boolean>;
+  };
+  status: QualityStatus;
+  source: string;
+  sourceFile: string;
+  file: string;
+  route: string;
+  component: string;
+  files: string[];
+  urls: string[];
+  description: string;
+  impact: string;
+  recommendedSolution: string;
+  recommendedAction: string;
+  autoFixPossible: boolean;
+  autoFixAvailable: boolean;
+  autoFixId: string;
+  manualFixRequired: boolean;
+  aiActionAvailable: boolean;
+  aiActionIds: string[];
+  codexSuitable: boolean;
+  releaseBlocker: boolean;
+  createdAt: string;
+  lastCheckedAt: string;
+  lastChangedAt: string;
+  snoozedUntil: string | null;
+  note: string;
+  fingerprint: string;
 }
 
 export interface ContentGap {

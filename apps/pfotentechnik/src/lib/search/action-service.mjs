@@ -94,19 +94,57 @@ async function verifySeoPackage(payload, progress) {
   return setSeoPackageVerificationPending(payload, checks);
 }
 
+const QUALITY_AUTO_FIX_RUNNERS = Object.freeze({
+  "comparison-fix-check": () =>
+    runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix:check"], REPO_ROOT),
+  "comparison-fix": () =>
+    runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix"], REPO_ROOT),
+  "comparison-audit-strict": () =>
+    runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:audit:strict"], REPO_ROOT),
+  "quality-ops-sync": () =>
+    runFixedScript(path.join(APP_ROOT, "scripts", "quality-ops", "sync.mjs"), APP_ROOT),
+});
+
 async function runSafeQualityAutoFix(payload, progress) {
   const { resolveQualityFindingForAutoFix, markQualityFindingAutoFixed } = await qualityActions();
-  const finding = resolveQualityFindingForAutoFix(payload);
-  progress({ step: "preflight", message: "Freigegebener Auto-Fix wird zunächst ohne Schreibzugriff geprüft.", percent: 10 });
-  await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix:check"], REPO_ROOT);
-  progress({ step: "auto-fix", message: "Der eng begrenzte Comparison-Auto-Fix wird ausgeführt.", percent: 35 });
-  const fixed = await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:fix"], REPO_ROOT);
-  progress({ step: "verification", message: "Comparison-Audit und Quality Operations prüfen das Ergebnis.", percent: 65 });
-  await runFixedNpm(["--workspace", "apps/pfotentechnik", "run", "comparison:audit:strict"], REPO_ROOT);
-  await runFixedScript(path.join(APP_ROOT, "scripts", "quality-ops", "sync.mjs"), APP_ROOT);
-  const updated = markQualityFindingAutoFixed(finding.id, { note: "Comparison-Auto-Fix, Strict-Audit und zentraler Abgleich erfolgreich." });
-  progress({ step: "completed", message: "Auto-Fix wurde geprüft und protokolliert.", percent: 100 });
-  return { ok: true, finding: updated, output: fixed.output, reloadRequired: true };
+  const { finding, definition } = resolveQualityFindingForAutoFix(payload);
+  const outputs = [];
+
+  for (const step of definition.steps) {
+    const runner = QUALITY_AUTO_FIX_RUNNERS[step.id];
+    if (!runner) {
+      throw new SearchError("SEARCH_ACTION_NOT_ALLOWED", {
+        message: `Nicht erlaubter Auto-Fix-Schritt: ${step.id}`,
+      });
+    }
+
+    progress({
+      step: step.phase,
+      message: step.label,
+      percent: step.percent,
+    });
+
+    const result = await runner();
+    if (result?.output) outputs.push(result.output);
+  }
+
+  const updated = markQualityFindingAutoFixed(finding.id, {
+    note: definition.successNote,
+  });
+
+  progress({
+    step: "completed",
+    message: "Auto-Fix wurde geprüft und protokolliert.",
+    percent: 100,
+  });
+
+  return {
+    ok: true,
+    finding: updated,
+    autoFixId: definition.id,
+    output: outputs.join("\n\n"),
+    reloadRequired: true,
+  };
 }
 
 const DEFAULT_HANDLERS = {

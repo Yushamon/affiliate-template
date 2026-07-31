@@ -1,7 +1,15 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import PromptRegistry from "../../../components/admin/PromptRegistry.astro";
 import SeoWorkPackages from "../../../components/admin/SeoWorkPackages.astro";
 ---
-<SeoAdminLayout title="SEO-Prompts" description="Priorisierte Codex-Arbeitspakete mit gemeinsamem Scope, Prüfpfad und zeitabhängiger Wiedervorlage." active="prompts">
-  <SeoWorkPackages mode="prompts" />
+<SeoAdminLayout
+  title="Prompt Registry"
+  description="Eine Registry für Media, Content, Journey, UX, Technik und Codex. Generierte Arbeitspakete greifen auf denselben Vertrag zu."
+  active="prompts"
+>
+  <div class="seo-stack-lg">
+    <PromptRegistry />
+    <SeoWorkPackages mode="prompts" />
+  </div>
 </SeoAdminLayout>

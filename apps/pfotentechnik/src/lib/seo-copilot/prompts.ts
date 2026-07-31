@@ -1,22 +1,33 @@
 import { PRODUCT_IMAGE_ROLES, PRODUCT_SCHEMA_PATH, SEO_COPILOT_PROJECT_PATH } from "./config.ts";
-import { PROMPT_LIBRARY, templateForContext, type PromptTemplateId } from "./templates.ts";
+import {
+  PROMPT_REGISTRY,
+  templateForContext,
+  type PromptTemplateId,
+} from "./prompt-registry.ts";
 import type { PromptContext, PromptResult, SourceEvidence } from "./types";
 export { buildWorkPackagePrompt as buildCodexWorkPackagePrompt, redactWorkPackageSecrets } from "../seo/advisor/work-packages.ts";
 
 const clean = (value: unknown, max = 2_000) =>
   String(value ?? "")
     .replace(/[\u0000-\u001f]/g, " ")
-    .replace(/(?:client_secret|refresh_token|access_token|api[_-]?key|authorization)\s*[:=]\s*\S+/gi, "$1=[REDACTED]")
+    .replace(
+      /((?:client_secret|refresh_token|access_token|api[_-]?key|authorization))\s*[:=]\s*\S+/gi,
+      "$1=[REDACTED]",
+    )
     .trim()
     .slice(0, max);
 
 const unique = (values: unknown[], max = 30) =>
   [...new Set(values.map((value) => clean(value)).filter(Boolean))].slice(0, max);
 
-export const normalizePromptContext = (input: Partial<PromptContext> & Pick<PromptContext, "kind" | "title">): PromptContext => ({
+export const normalizePromptContext = (
+  input: Partial<PromptContext> & Pick<PromptContext, "kind" | "title">,
+): PromptContext => ({
   kind: input.kind,
   projectPath: SEO_COPILOT_PROJECT_PATH,
   affectedFile: input.affectedFile ? clean(input.affectedFile, 500) : undefined,
+  route: input.route ? clean(input.route, 500) : undefined,
+  component: input.component ? clean(input.component, 240) : undefined,
   slug: input.slug ? clean(input.slug, 160) : undefined,
   title: clean(input.title, 240),
   manufacturer: input.manufacturer ? clean(input.manufacturer, 200) : undefined,
@@ -26,7 +37,9 @@ export const normalizePromptContext = (input: Partial<PromptContext> & Pick<Prom
   missingData: unique(input.missingData ?? []),
   comparisons: unique(input.comparisons ?? []),
   guides: unique(input.guides ?? []),
-  imageRequirements: unique(input.imageRequirements ?? PRODUCT_IMAGE_ROLES.map((role) => `${role}.webp`)),
+  imageRequirements: unique(
+    input.imageRequirements ?? PRODUCT_IMAGE_ROLES.map((role) => `${role}.webp`),
+  ),
   schemaPath: clean(input.schemaPath || PRODUCT_SCHEMA_PATH, 500),
   sources: (input.sources ?? []).slice(0, 30).map((source) => ({
     ...source,
@@ -59,14 +72,25 @@ const sourceList = (sources: SourceEvidence[]) =>
   );
 
 const sharedContext = (context: PromptContext, templateId: PromptTemplateId) => {
-  const template = PROMPT_LIBRARY[templateId];
+  const template = PROMPT_REGISTRY[templateId];
+  const validations = unique([...context.validationCommands, ...template.validationCommands], 40);
+  const acceptanceCriteria = unique(
+    [...template.acceptanceCriteria, ...context.acceptanceCriteria],
+    40,
+  );
+
   return [
-    `Projekt: Yushamon/affiliate-template`,
+    "Projekt: Yushamon/affiliate-template",
     `Projektpfad: ${context.projectPath}`,
-    context.affectedFile ? `Betroffene Datei: ${context.affectedFile}` : "Betroffene Datei: vor der Arbeit aus dem Repository ermitteln",
-    context.slug ? `Slug/Product Key: ${context.slug}` : "Slug/Product Key: noch nicht freigegeben",
-    context.manufacturer ? `Hersteller: ${context.manufacturer}` : "Hersteller: noch zu validieren",
+    context.affectedFile
+      ? `Betroffene Datei: ${context.affectedFile}`
+      : "Betroffene Datei: vor der Arbeit aus dem Repository ermitteln",
+    context.route ? `Betroffene Route: ${context.route}` : "Betroffene Route: aus dem Finding auflösen",
+    context.component ? `Betroffene Komponente: ${context.component}` : "Betroffene Komponente: aus Datei und Renderingpfad ermitteln",
+    context.slug ? `Slug/Product Key: ${context.slug}` : "Slug/Product Key: nicht erforderlich oder noch nicht freigegeben",
+    context.manufacturer ? `Hersteller: ${context.manufacturer}` : "Hersteller: nur falls fachlich relevant",
     context.category ? `Kategorie: ${context.category}` : "Kategorie: gegen vorhandene Terminologie prüfen",
+    `Registry-ID: ${template.id}`,
     `Aufgabe: ${template.title}`,
     `Ziel: ${template.objective}`,
     list("Konkrete Probleme", context.problems),
@@ -82,9 +106,14 @@ const sharedContext = (context: PromptContext, templateId: PromptTemplateId) => 
       "Keine Dummy-Daten, erfundenen Produkte, Verkaufszahlen oder Testerfahrungen.",
       "Vor Webrecherche und vor Dateianlage den aktuellen Repository-Stand erneut prüfen.",
       "Unsichere Werte nicht als bestätigte Frontmatter-Daten übernehmen.",
+      "Bestehende Komponenten, Stores, APIs und Registries erweitern statt eine Parallelwelt anzulegen.",
     ]),
-    list("Validierung", context.validationCommands),
-    list("Akzeptanzkriterien", context.acceptanceCriteria, "Alle konkret genannten Probleme nachvollziehbar gelöst; keine Regression."),
+    list("Validierung", validations),
+    list(
+      "Akzeptanzkriterien",
+      acceptanceCriteria,
+      "Das konkrete Finding ist nachvollziehbar gelöst und alle genannten Prüfungen bestehen.",
+    ),
   ].join("\n\n");
 };
 
@@ -96,15 +125,16 @@ export const buildCodexPrompt = (
   const templateId = options.templateId ?? templateForContext(context);
   return {
     type: "codex",
-    title: PROMPT_LIBRARY[templateId].title,
+    templateId,
+    title: PROMPT_REGISTRY[templateId].title,
     prompt: [
       sharedContext(context, templateId),
       "Arbeitsweise für Codex:",
-      "1. Lies zuerst Schema, Zieldatei, Hersteller-, Vergleichs- und Bildbeziehungen.",
-      "2. Ändere nur Dateien innerhalb des genannten Scopes.",
-      "3. Zeige bei Produktanlagen zuerst Preflight und Entwurf; schreibe erst nach expliziter Freigabe.",
+      "1. Lies zuerst Architektur, Schema, Zieldatei und alle unmittelbar beteiligten Komponenten.",
+      "2. Suche vor jeder Ergänzung nach vorhandener Funktionalität und entferne die Ursache statt weitere Sonderregeln aufzubauen.",
+      "3. Ändere nur Dateien innerhalb des fachlich notwendigen Scopes. Schreibende Produkt-, Hersteller- und Veröffentlichungsaktionen erfolgen erst nach expliziter Freigabe.",
       "4. Führe die genannten Validierungen aus und behebe eigene Fehler.",
-      "5. Fasse Datenbezug, geänderte Dateien, Tests und verbleibende Unsicherheiten zusammen.",
+      "5. Fasse geänderte Dateien, entfernte Doppelungen, Tests und belastbare verbleibende Grenzen zusammen.",
     ].join("\n\n"),
     context,
     generatedAt: options.generatedAt ?? new Date().toISOString(),
@@ -119,7 +149,8 @@ export const buildChatGptPrompt = (
   const templateId = options.templateId ?? templateForContext(context);
   return {
     type: "chatgpt",
-    title: PROMPT_LIBRARY[templateId].title,
+    templateId,
+    title: PROMPT_REGISTRY[templateId].title,
     prompt: [
       sharedContext(context, templateId),
       "Rechercheausgabe:",

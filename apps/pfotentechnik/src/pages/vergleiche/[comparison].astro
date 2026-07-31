@@ -63,7 +63,7 @@ const [products, manufacturers, pages, comparisons] = await Promise.all([
   getComparisons()
 ]);
 const journeyEntries = toJourneyEntries({ pages, comparisons, products });
-const currentJourneyEntry = findJourneyEntry(journeyEntries, "comparison", comparison.data.slug);
+const currentJourneyEntry = findJourneyEntry(journeyEntries, "comparison", comparison.slug);
 
 const internalLinkDefinitions = getInternalLinkDefinitions({
   pages,

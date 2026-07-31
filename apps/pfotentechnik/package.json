@@ -40,7 +40,7 @@
     "seo:admin": "node scripts/search/admin.mjs",
     "dev:seo": "node scripts/search/dev.mjs",
     "test:search": "node --test test/search-platform.test.mjs",
-    "test:seo-copilot": "node --experimental-strip-types --test test/seo-copilot.test.mjs test/seo-work-packages.test.mjs test/seo-copilot-compact-report.test.mjs test/quality-operations.test.mjs",
+    "test:seo-copilot": "node --experimental-strip-types --test test/seo-copilot.test.mjs test/seo-work-packages.test.mjs test/seo-copilot-compact-report.test.mjs test/quality-operations.test.mjs test/seo-copilot-architecture-cleanup.test.mjs",
     "quality-ops:sync": "node scripts/quality-ops/sync.mjs",
     "quality-ops:check": "node scripts/quality-ops/sync.mjs --strict",
     "seo-copilot:health": "node scripts/seo-copilot-cli.mjs health",
