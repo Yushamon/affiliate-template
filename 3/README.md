@@ -1,10 +1,29 @@
-# CSS Architecture Audit Accuracy 21.1.4
+# PfotenTechnik CSS Base Layer + Cleanup 22.2.0
 
-Korrigiert den Escape-Fehler aus 21.1.3. Der vorherige Patch erzeugte versehentlich
-`/!important\\b/g` und fand dadurch keine Deklarationen.
+Der Patch migriert den sicheren globalen Präfix aus
+`pfotentechnik-design-system.css` nach `foundation/base.css`.
 
-Ausführen:
+Er verschiebt nur unmittelbar nach dem Foundation-Import stehende Regeln aus
+der Allowlist:
+
+- `html`
+- `body`
+- `::selection`
+
+Dadurch bleibt die Kaskadenposition erhalten. Spätere globale Regeln,
+Media Queries und komponentenspezifische Selektoren werden nicht angefasst.
+
+Zusätzlich entfernt der Patch doppelte Deklarationen innerhalb der migrierten
+Blöcke nach CSS-Kaskadenlogik: Die letzte Deklaration gewinnt.
+
+## Ausführen
 
 ```bash
-node 3/apply-pfotentechnik-css-architecture-audit-accuracy-21.1.4.mjs
+node 3/apply-pfotentechnik-css-base-layer-cleanup-22.2.0.mjs
+```
+
+Der vollständige Build wird automatisch ausgeführt. Nur in Ausnahmefällen:
+
+```bash
+node 3/apply-pfotentechnik-css-base-layer-cleanup-22.2.0.mjs --skip-build
 ```

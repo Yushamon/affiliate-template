@@ -1,0 +1,26 @@
+/* PfotenTechnik global base layer.
+ * Enthält ausschließlich früh geladene, globale Dokument-Basisregeln.
+ */
+
+html {
+  color-scheme: light;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background: var(--pt-canvas);
+  color: var(--pt-ink-950);
+  font-family: Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(31, 164, 99, 0.2);
+  color: var(--pt-ink-950);
+}
