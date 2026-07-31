@@ -1,16 +1,10 @@
-# CSS Architecture Audit Accuracy 21.1.3
+# CSS Architecture Audit Accuracy 21.1.4
 
-Korrigiert die überhöhte `!important`-Zählung bei gruppierten Selektoren.
+Korrigiert den Escape-Fehler aus 21.1.3. Der vorherige Patch erzeugte versehentlich
+`/!important\\b/g` und fand dadurch keine Deklarationen.
 
-Bisher wurde ein Block wie:
-
-```css
-.a, .b, .c { color: red !important; }
-```
-
-fälschlich als drei `!important`-Deklarationen gezählt. Nach dem Patch wird korrekt eine Deklaration gezählt.
+Ausführen:
 
 ```bash
-node 3/apply-pfotentechnik-css-architecture-audit-accuracy-21.1.3.mjs
-cat apps/pfotentechnik/reports/design-system/css-architecture-latest.md
+node 3/apply-pfotentechnik-css-architecture-audit-accuracy-21.1.4.mjs
 ```

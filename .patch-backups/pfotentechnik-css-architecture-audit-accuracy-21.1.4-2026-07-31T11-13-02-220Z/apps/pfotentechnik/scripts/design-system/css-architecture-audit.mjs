@@ -123,7 +123,7 @@ for (const file of cssFiles) {
     bytes: Buffer.byteLength(content), meaningfulBytes: Buffer.byteLength(normalized(content)),
     contentHash: sha(content), normalizedHash: sha(normalized(content)),
     importedBy: importedBy.get(rel(file)) || [], imports: extractImports(content, file),
-    rules: rules.length, important: (content.match(/!important\b/g) || []).length,
+    rules: rules.length, important: rules.reduce((s, r) => s + r.important, 0),
     maxSelectorDepth: rules.reduce((m, r) => Math.max(m, r.depth), 0)
   };
   records.push(record);
@@ -139,7 +139,7 @@ for (const file of sourceFiles.filter((file) => file.endsWith(".astro"))) {
     file: rel(file), kind: "astro-style", category: category(file), owner: owner(file),
     bytes: Buffer.byteLength(css), meaningfulBytes: Buffer.byteLength(normalized(css)),
     importedBy: [], imports: [], rules: rules.length,
-    important: (css.match(/!important\b/g) || []).length,
+    important: rules.reduce((s, r) => s + r.important, 0),
     maxSelectorDepth: rules.reduce((m, r) => Math.max(m, r.depth), 0)
   };
   records.push(record);
@@ -202,7 +202,6 @@ const report = {
     bytes: records.reduce((s, r) => s + r.bytes, 0),
     rules: allRules.length,
     important: records.reduce((s, r) => s + r.important, 0),
-    actualImportantDeclarations: records.reduce((s, r) => s + r.important, 0),
     duplicateSelectors: duplicateSelectors.length,
     duplicateDeclarationBlocks: duplicateBlocks.length,
     importEdges: edges.length,
@@ -237,7 +236,7 @@ const markdown = [
   "- Astro-Dateien mit Style-Block: " + report.totals.astroStyleFiles,
   "- Quell-CSS: " + report.totals.bytes + " Bytes",
   "- Regeln: " + report.totals.rules,
-  "- !important-Deklarationen: " + report.totals.important,
+  "- !important: " + report.totals.important,
   "- mehrfach definierte Selektoren: " + report.totals.duplicateSelectors,
   "- identische Deklarationsblöcke: " + report.totals.duplicateDeclarationBlocks,
   "- Importkanten: " + report.totals.importEdges,

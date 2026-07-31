@@ -142,8 +142,7 @@
     "css:architecture:check": "node scripts/design-system/css-architecture-audit.mjs --strict",
     "css:cleanup:safe": "node scripts/design-system/css-safe-cleanup.mjs",
     "css:cleanup:safe:write": "node scripts/design-system/css-safe-cleanup.mjs --write",
-    "test:css-architecture": "node --test test/css-architecture.test.mjs",
-    "test:css-architecture:accuracy": "node --test test/css-architecture-accuracy.test.mjs"
+    "test:css-architecture": "node --test test/css-architecture.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
