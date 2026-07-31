@@ -148,8 +148,7 @@
     "test:css-base-layer": "node --test test/css-base-layer.test.mjs",
     "test:css-layout-foundation": "node --test test/css-layout-foundation.test.mjs",
     "test:css-button-system": "node --test test/css-button-system.test.mjs",
-    "test:css-card-system": "node --test test/css-card-system.test.mjs",
-    "test:css-panel-system": "node --test test/css-panel-system.test.mjs"
+    "test:css-card-system": "node --test test/css-card-system.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

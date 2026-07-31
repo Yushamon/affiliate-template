@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-31T12:04:20.035Z",
+  "generatedAt": "2026-07-31T12:27:46.765Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 86,
-    "cssFiles": 33,
+    "records": 87,
+    "cssFiles": 34,
     "astroStyleFiles": 53,
-    "bytes": 746433,
+    "bytes": 746579,
     "rules": 8039,
     "important": 1649,
     "actualImportantDeclarations": 1649,
-    "duplicateSelectors": 1536,
+    "duplicateSelectors": 1537,
     "duplicateDeclarationBlocks": 1033,
-    "importEdges": 53,
+    "importEdges": 55,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
     "emptyCssFiles": 0,
@@ -28,10 +28,10 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 128147,
-      "meaningfulBytes": 127005,
-      "contentHash": "95a9b67588ce570bbb45a8fb107ea71aa0a97a3783671cd6b647312c7d671ffb",
-      "normalizedHash": "9ac1c7327c1fb4e4adb89dc615ce8465c6d8eec398818cfdd4d174831f42ca90",
+      "bytes": 127043,
+      "meaningfulBytes": 125899,
+      "contentHash": "0f30d25833e0f049f5d5c2d1d711a1441ae3b360c4ed2906bf24480003def9a5",
+      "normalizedHash": "e84d7a80455ca6949b07288a17a84244eaed00243cdecc82559f421f107207d6",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
       ],
@@ -47,7 +47,7 @@
           "exists": true
         }
       ],
-      "rules": 2253,
+      "rules": 2221,
       "important": 753,
       "maxSelectorDepth": 8
     },
@@ -996,6 +996,24 @@
       "maxSelectorDepth": 2
     },
     {
+      "file": "apps/pfotentechnik/src/styles/components/panels.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 1226,
+      "meaningfulBytes": 1101,
+      "contentHash": "028352a630604da84e0fb3211131fe10082ddb7acd33b9a4b1ca32af51dd5ab1",
+      "normalizedHash": "01fcb107f391d976e2f8eb0472596715ad92b5673aa77343580a48aeb070bb31",
+      "importedBy": [
+        "apps/pfotentechnik/src/styles/components/index.css",
+        "apps/pfotentechnik/src/styles/components/index.css"
+      ],
+      "imports": [],
+      "rules": 32,
+      "important": 0,
+      "maxSelectorDepth": 2
+    },
+    {
       "file": "packages/affiliate-core/src/components/comparison/ComparisonPriceSignal.astro",
       "kind": "astro-style",
       "category": "comparison",
@@ -1409,10 +1427,10 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 97,
-      "meaningfulBytes": 47,
-      "contentHash": "3dfe1fa78b88d9c0257d646accc4a66449365832c9ec8aa0e1fbf8de7081d81d",
-      "normalizedHash": "b882054d25da4cfc482cb4405455cf9e39c438481d7165341a2c4bb252919689",
+      "bytes": 121,
+      "meaningfulBytes": 71,
+      "contentHash": "530777b2fe7354182f06c05d36bea134c54199444ee10cd04f329e3e3504042b",
+      "normalizedHash": "4ada346eca700a41d11c9e575318ebfd750f3d09d1c803be0c071af27f33863d",
       "importedBy": [
         "apps/pfotentechnik/src/styles/foundation/index.css",
         "apps/pfotentechnik/src/styles/foundation/index.css"
@@ -1429,6 +1447,11 @@
           "exists": true
         },
         {
+          "raw": "./panels.css",
+          "target": "apps/pfotentechnik/src/styles/components/panels.css",
+          "exists": true
+        },
+        {
           "raw": "./buttons.css",
           "target": "apps/pfotentechnik/src/styles/components/buttons.css",
           "exists": true
@@ -1436,6 +1459,11 @@
         {
           "raw": "./cards.css",
           "target": "apps/pfotentechnik/src/styles/components/cards.css",
+          "exists": true
+        },
+        {
+          "raw": "./panels.css",
+          "target": "apps/pfotentechnik/src/styles/components/panels.css",
           "exists": true
         }
       ],
@@ -1568,6 +1596,12 @@
     },
     {
       "importer": "apps/pfotentechnik/src/styles/components/index.css",
+      "raw": "./panels.css",
+      "target": "apps/pfotentechnik/src/styles/components/panels.css",
+      "exists": true
+    },
+    {
+      "importer": "apps/pfotentechnik/src/styles/components/index.css",
       "raw": "./buttons.css",
       "target": "apps/pfotentechnik/src/styles/components/buttons.css",
       "exists": true
@@ -1576,6 +1610,12 @@
       "importer": "apps/pfotentechnik/src/styles/components/index.css",
       "raw": "./cards.css",
       "target": "apps/pfotentechnik/src/styles/components/cards.css",
+      "exists": true
+    },
+    {
+      "importer": "apps/pfotentechnik/src/styles/components/index.css",
+      "raw": "./panels.css",
+      "target": "apps/pfotentechnik/src/styles/components/panels.css",
       "exists": true
     },
     {
@@ -1825,6 +1865,7 @@
       "selector": "h3",
       "occurrences": 27,
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
@@ -1884,6 +1925,7 @@
       "selector": "h4",
       "occurrences": 19,
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
@@ -1993,17 +2035,6 @@
       "important": 29
     },
     {
-      "selector": ":where( .premium-block",
-      "occurrences": 17,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 28
-    },
-    {
       "selector": ".main-nav-v2",
       "occurrences": 17,
       "files": [
@@ -2045,6 +2076,17 @@
         "component-owner-unresolved"
       ],
       "important": 11
+    },
+    {
+      "selector": ":where( .premium-block",
+      "occurrences": 15,
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 28
     },
     {
       "selector": "strong",
@@ -2189,6 +2231,7 @@
       "selector": "strong)",
       "occurrences": 12,
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
       ],
       "owners": [
@@ -3628,6 +3671,7 @@
       "selector": "li)",
       "occurrences": 6,
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
       ],
       "owners": [
@@ -4305,6 +4349,78 @@
       "important": 2
     },
     {
+      "selector": ".quick-answer",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
+      "selector": ".short-answer",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
+      "selector": ".key-takeaway",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
+      "selector": ".summary-box",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
+      "selector": ".info-box",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
+      "selector": ".callout",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
       "selector": ".brand-lockup",
       "occurrences": 5,
       "files": [
@@ -4326,72 +4442,6 @@
       "owners": [
         "design-system",
         "navigation"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".quick-answer",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".short-answer",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".key-takeaway",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".summary-box",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".info-box",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 1
-    },
-    {
-      "selector": ".callout",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ],
-      "owners": [
-        "design-system"
       ],
       "important": 1
     },
@@ -8210,6 +8260,15 @@
       "fingerprint": "color: var(--pt-theme-text-soft)",
       "occurrences": 52,
       "selectors": [
+        ":where(.premium-block",
+        ".quick-answer",
+        ".short-answer",
+        ".key-takeaway",
+        ".summary-box",
+        ".info-box",
+        ".callout",
+        ".highlight-box) :where(p",
+        "li)",
         ".main-nav-v2 a",
         ":where( article",
         ".article-content",
@@ -8217,15 +8276,6 @@
         ".comparison-content",
         ".product-content",
         ".manufacturer-content )",
-        ":where( .premium-block",
-        ".quick-answer",
-        ".short-answer",
-        ".key-takeaway",
-        ".summary-box",
-        ".info-box",
-        ".callout",
-        ".highlight-box ) :where(p",
-        "li)",
         ":where( .table-of-contents",
         ".toc",
         ".article-toc",
@@ -8237,6 +8287,7 @@
         ":where(label",
         "legend)",
         ":where( .article-content",
+        ":where( .premium-block",
         ".highlight-box",
         ".table-of-contents",
         ".toc-container ) :where(p",
@@ -8247,6 +8298,7 @@
         "figcaption)"
       ],
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css"
       ]
@@ -8908,30 +8960,31 @@
       "fingerprint": "color: var(--pt-theme-text)",
       "occurrences": 24,
       "selectors": [
-        ":where(h1",
-        "h2",
-        "h3",
-        "h4",
-        "h5",
-        "h6",
-        "strong",
-        "b)",
-        ".brand-lockup",
-        ".brand-name",
-        ":where( .premium-block",
+        ":where(.premium-block",
         ".quick-answer",
         ".short-answer",
         ".key-takeaway",
         ".summary-box",
         ".info-box",
         ".callout",
-        ".highlight-box ) :where(h2",
+        ".highlight-box) :where(h2",
+        "h3",
+        "h4",
         "strong)",
+        ":where(h1",
+        "h2",
+        "h5",
+        "h6",
+        "strong",
+        "b)",
+        ".brand-lockup",
+        ".brand-name",
         ":where(summary",
         ".faq-question)",
         ".pt-advice-note strong"
       ],
       "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/pages/kaufberatung.astro"
       ]
@@ -15360,6 +15413,54 @@
       ]
     },
     {
+      "fingerprint": "background: var(--pt-theme-info-soft);border-color: color-mix(in srgb, var(--pt-theme-info) 28%, var(--pt-theme-border))",
+      "occurrences": 3,
+      "selectors": [
+        ":where(.info",
+        ".callout-info",
+        ".premium-block--info)"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css"
+      ]
+    },
+    {
+      "fingerprint": "background: var(--pt-theme-warning-soft);border-color: color-mix(in srgb, var(--pt-theme-warning) 32%, var(--pt-theme-border))",
+      "occurrences": 3,
+      "selectors": [
+        ":where(.warning",
+        ".callout-warning",
+        ".premium-block--warning)"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css"
+      ]
+    },
+    {
+      "fingerprint": "background: var(--pt-theme-danger-soft);border-color: color-mix(in srgb, var(--pt-theme-danger) 28%, var(--pt-theme-border))",
+      "occurrences": 3,
+      "selectors": [
+        ":where(.danger",
+        ".callout-danger",
+        ".premium-block--danger)"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css"
+      ]
+    },
+    {
+      "fingerprint": "background: var(--pt-theme-success-soft);border-color: color-mix(in srgb, var(--pt-theme-success) 28%, var(--pt-theme-border))",
+      "occurrences": 3,
+      "selectors": [
+        ":where(.success",
+        ".callout-success",
+        ".premium-block--success)"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css"
+      ]
+    },
+    {
       "fingerprint": "margin-inline: auto;max-width: var(--pt-content);width: min(100% - 40px, var(--pt-content))",
       "occurrences": 3,
       "selectors": [
@@ -15453,54 +15554,6 @@
         ":where(.check-icon",
         ".success-icon",
         ".positive-icon)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--pt-theme-info-soft);border-color: color-mix(in srgb, var(--pt-theme-info) 28%, var(--pt-theme-border))",
-      "occurrences": 3,
-      "selectors": [
-        ":where(.info",
-        ".callout-info",
-        ".premium-block--info)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--pt-theme-warning-soft);border-color: color-mix(in srgb, var(--pt-theme-warning) 32%, var(--pt-theme-border))",
-      "occurrences": 3,
-      "selectors": [
-        ":where(.warning",
-        ".callout-warning",
-        ".premium-block--warning)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--pt-theme-danger-soft);border-color: color-mix(in srgb, var(--pt-theme-danger) 28%, var(--pt-theme-border))",
-      "occurrences": 3,
-      "selectors": [
-        ":where(.danger",
-        ".callout-danger",
-        ".premium-block--danger)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--pt-theme-success-soft);border-color: color-mix(in srgb, var(--pt-theme-success) 28%, var(--pt-theme-border))",
-      "occurrences": 3,
-      "selectors": [
-        ":where(.success",
-        ".callout-success",
-        ".premium-block--success)"
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"

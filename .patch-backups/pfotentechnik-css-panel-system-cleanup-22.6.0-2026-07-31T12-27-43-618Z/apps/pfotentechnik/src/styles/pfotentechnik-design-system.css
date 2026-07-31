@@ -103,7 +103,8 @@ body { transition: background-color 160ms ease, color 160ms ease; }
 .main-nav-v2 a:hover, .main-nav-v2 a:focus-visible { background: var(--pt-theme-surface-3); color: var(--pt-theme-text); }
 :where( article, .article-content, .guide-content, .comparison-content, .product-content, .manufacturer-content ) { color: var(--pt-theme-text-soft); }
 :where( .premium-block, .quick-answer, .short-answer, .key-takeaway, .summary-box, .info-box, .callout, .highlight-box, .content-card, .article-card, .guide-card, .comparison-card, .product-card, .manufacturer-card, .result-card, .recommendation-card, .top-recommendation, .editorial-card, .pt-category-card, .pt-value-card, .pt-product-card, .faq-item ) { border-color: var(--pt-theme-border); background: var(--pt-theme-surface); color: var(--pt-theme-text-soft); box-shadow: var(--pt-theme-shadow-sm); }
-
+:where( .premium-block, .quick-answer, .short-answer, .key-takeaway, .summary-box, .info-box, .callout, .highlight-box ) :where(h2, h3, h4, strong) { color: var(--pt-theme-text); }
+:where( .premium-block, .quick-answer, .short-answer, .key-takeaway, .summary-box, .info-box, .callout, .highlight-box ) :where(p, li) { color: var(--pt-theme-text-soft); }
 :where( .table-of-contents, .toc, .article-toc, .content-toc, .toc-wrapper, .toc-container, details.toc, details.table-of-contents ) { border-color: var(--pt-theme-border); background: var(--pt-theme-surface); color: var(--pt-theme-text); box-shadow: var(--pt-theme-shadow-sm); }
 :where( .table-of-contents, .toc, .article-toc, .content-toc, .toc-wrapper, .toc-container, details.toc, details.table-of-contents ) :where(summary, button, select) { border-color: var(--pt-theme-border); background: var(--pt-theme-surface-2); color: var(--pt-theme-text); }
 :where( .table-of-contents, .toc, .article-toc, .content-toc, .toc-wrapper, .toc-container ) :where(a, li, span) { color: var(--pt-theme-text-soft); }
@@ -125,7 +126,10 @@ body { transition: background-color 160ms ease, color 160ms ease; }
 :where(.check-icon, .success-icon, .positive-icon) { background: var(--pt-theme-success-soft); color: var(--pt-theme-success); }
 :where(.warning-icon) { background: var(--pt-theme-warning-soft); color: var(--pt-theme-warning); }
 :where(.danger-icon, .negative-icon) { background: var(--pt-theme-danger-soft); color: var(--pt-theme-danger); }
-
+:where(.info, .callout-info, .premium-block--info) { border-color: color-mix(in srgb, var(--pt-theme-info) 28%, var(--pt-theme-border)); background: var(--pt-theme-info-soft); }
+:where(.warning, .callout-warning, .premium-block--warning) { border-color: color-mix(in srgb, var(--pt-theme-warning) 32%, var(--pt-theme-border)); background: var(--pt-theme-warning-soft); }
+:where(.danger, .callout-danger, .premium-block--danger) { border-color: color-mix(in srgb, var(--pt-theme-danger) 28%, var(--pt-theme-border)); background: var(--pt-theme-danger-soft); }
+:where(.success, .callout-success, .premium-block--success) { border-color: color-mix(in srgb, var(--pt-theme-success) 28%, var(--pt-theme-border)); background: var(--pt-theme-success-soft); }
 :where(.article-content, .guide-content, .comparison-content) img { background: var(--pt-theme-surface-2); }
 :where(figcaption, .image-caption) { color: var(--pt-theme-text-muted); }
 :where(code) { background: var(--pt-theme-surface-3); color: var(--pt-theme-text); }

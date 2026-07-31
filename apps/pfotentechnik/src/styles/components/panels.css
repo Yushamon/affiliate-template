@@ -1,0 +1,31 @@
+/* PfotenTechnik editorial panel primitives.
+ * Typografie und semantische Zustandsvarianten.
+ */
+
+:where(.premium-block, .quick-answer, .short-answer, .key-takeaway, .summary-box, .info-box, .callout, .highlight-box) :where(h2, h3, h4, strong) {
+  color: var(--pt-theme-text);
+}
+
+:where(.premium-block, .quick-answer, .short-answer, .key-takeaway, .summary-box, .info-box, .callout, .highlight-box) :where(p, li) {
+  color: var(--pt-theme-text-soft);
+}
+
+:where(.info, .callout-info, .premium-block--info) {
+  border-color: color-mix(in srgb, var(--pt-theme-info) 28%, var(--pt-theme-border));
+  background: var(--pt-theme-info-soft);
+}
+
+:where(.warning, .callout-warning, .premium-block--warning) {
+  border-color: color-mix(in srgb, var(--pt-theme-warning) 32%, var(--pt-theme-border));
+  background: var(--pt-theme-warning-soft);
+}
+
+:where(.danger, .callout-danger, .premium-block--danger) {
+  border-color: color-mix(in srgb, var(--pt-theme-danger) 28%, var(--pt-theme-border));
+  background: var(--pt-theme-danger-soft);
+}
+
+:where(.success, .callout-success, .premium-block--success) {
+  border-color: color-mix(in srgb, var(--pt-theme-success) 28%, var(--pt-theme-border));
+  background: var(--pt-theme-success-soft);
+}
