@@ -154,11 +154,7 @@
     "test:css-product-system": "node --test test/css-product-system.test.mjs",
     "test:css-admin-foundation": "node --test test/css-admin-foundation.test.mjs",
     "test:css-admin-panels": "node --test test/css-admin-panels.test.mjs",
-    "test:css-admin-controls": "node --test test/css-admin-controls.test.mjs",
-    "test:css-admin-content": "node --test test/css-admin-content.test.mjs",
-    "test:css-admin-architecture": "node --test test/css-admin-architecture.test.mjs",
-    "test:css-admin-operations": "node --test test/css-admin-operations.test.mjs",
-    "test:css-admin-responsive": "node --test test/css-admin-responsive.test.mjs"
+    "test:css-admin-controls": "node --test test/css-admin-controls.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

@@ -1,0 +1,69 @@
+{
+  "version": "22.10.2",
+  "entrypoint": "seo-admin.css",
+  "importOrder": [
+    "seo-admin-foundation.css",
+    "seo-admin-panels.css",
+    "seo-admin-controls.css",
+    "seo-admin-content.css",
+    "seo-admin-operations.css",
+    "seo-admin-responsive.css"
+  ],
+  "layers": {
+    "foundation": {
+      "file": "seo-admin-foundation.css",
+      "owns": [
+        ".seo-shell",
+        ".seo-page-header",
+        ".seo-eyebrow"
+      ]
+    },
+    "panels": {
+      "file": "seo-admin-panels.css",
+      "owns": [
+        ".seo-panel",
+        ".seo-card",
+        ".seo-grid",
+        ".seo-metric"
+      ]
+    },
+    "controls": {
+      "file": "seo-admin-controls.css",
+      "owns": [
+        ".seo-badge",
+        ".seo-actions",
+        ".seo-tabs",
+        ".seo-filter-grid",
+        ".seo-toolbar"
+      ]
+    },
+    "content": {
+      "file": "seo-admin-content.css",
+      "owns": [
+        ".seo-table",
+        ".seo-list",
+        ".seo-empty",
+        ".seo-status",
+        ".seo-anchor-card"
+      ]
+    },
+    "operations": {
+      "file": "seo-admin-operations.css",
+      "owns": [
+        ".seo-finding",
+        ".seo-finding-list",
+        ".seo-workspace-summary",
+        ".seo-workspace-facts"
+      ]
+    },
+    "responsive": {
+      "file": "seo-admin-responsive.css",
+      "owns": [
+        "@media (max-width: 900px)",
+        "@media (max-width: 680px)",
+        "@media (max-width: 430px)",
+        "@media (prefers-color-scheme: dark)"
+      ]
+    }
+  }
+}

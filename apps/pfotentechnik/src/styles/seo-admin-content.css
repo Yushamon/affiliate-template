@@ -1,0 +1,60 @@
+/* SEO Admin content: tables, lists, empty states, status and anchor cards.
+ * Aus seo-admin.css extrahiert, ohne Selektoren oder Deklarationen zu verändern.
+ */
+
+.seo-table-wrap { overflow-x: auto; }
+.seo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+
+.seo-table th,
+.seo-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--seo-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.seo-table th {
+  color: var(--seo-muted);
+  font-size: .75rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.seo-list { display: grid; gap: 10px; }
+.seo-list-item {
+  padding: 14px;
+  border: 1px solid var(--seo-border);
+  border-radius: 14px;
+  background: var(--seo-surface);
+}
+.seo-list-item h3 { margin: 0; font-size: 1rem; }
+.seo-list-item p { margin: 8px 0 0; color: var(--seo-muted); line-height: 1.5; }
+
+.seo-empty {
+  padding: 18px;
+  border: 1px dashed var(--seo-border);
+  border-radius: 14px;
+  color: var(--seo-muted);
+}
+
+.seo-status {
+  min-height: 22px;
+  margin: 10px 0;
+  color: var(--seo-muted);
+}
+.seo-status[data-state="error"] { color: var(--seo-danger); }
+.seo-status[data-state="success"] { color: var(--seo-accent-strong); }
+
+.seo-anchor-card {
+  display: block;
+  color: var(--seo-text);
+  text-decoration: none;
+}
+.seo-anchor-card h2,
+.seo-anchor-card h3 { margin-top: 0; }
+.seo-anchor-card p { color: var(--seo-muted); line-height: 1.55; }
+.seo-anchor-card span { color: var(--seo-accent-strong); font-weight: 850; }

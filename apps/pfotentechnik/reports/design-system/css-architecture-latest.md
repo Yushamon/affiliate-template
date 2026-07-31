@@ -1,17 +1,17 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-07-31T13:42:43.548Z
+Erzeugt: 2026-07-31T18:51:23.957Z
 
 ## Zusammenfassung
 
-- CSS-Dateien: 39
+- CSS-Dateien: 42
 - Astro-Dateien mit Style-Block: 53
-- Quell-CSS: 747361 Bytes
-- Regeln: 8035
+- Quell-CSS: 747946 Bytes
+- Regeln: 8036
 - !important-Deklarationen: 1649
 - mehrfach definierte Selektoren: 1536
-- identische Deklarationsblöcke: 1031
-- Importkanten: 65
+- identische Deklarationsblöcke: 1032
+- Importkanten: 71
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
 - sichere Löschkandidaten: 0
@@ -20,7 +20,7 @@ Erzeugt: 2026-07-31T13:42:43.548Z
 
 | Owner | Dateien | Bytes | Regeln | !important |
 |---|---:|---:|---:|---:|
-| design-system | 31 | 304842 | 4087 | 971 |
+| design-system | 34 | 305427 | 4088 | 971 |
 | comparison-platform | 5 | 151747 | 1247 | 279 |
 | editorial-content | 1 | 28892 | 172 | 258 |
 | manufacturer-pages | 3 | 25513 | 379 | 84 |

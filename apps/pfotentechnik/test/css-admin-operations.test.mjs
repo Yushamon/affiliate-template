@@ -6,18 +6,18 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 const styles = path.join(ROOT, "apps", "pfotentechnik", "src", "styles");
-const file = path.join(styles, "seo-admin-foundation.css");
+const file = path.join(styles, "seo-admin-operations.css");
 
-test("foundation layer besitzt seine Kernmarker", () => {
+test("operations layer besitzt seine Kernmarker", () => {
   const css = fs.readFileSync(file, "utf8");
-  for (const marker of [".seo-shell",".seo-page-header",".seo-eyebrow"]) {
+  for (const marker of [".seo-finding-list",".seo-finding",".seo-workspace-summary",".seo-workspace-facts"]) {
     assert.ok(css.includes(marker), "Fehlt: " + marker);
   }
 });
 
-test("foundation layer enthält keine fremden Kernsysteme", () => {
+test("operations layer enthält keine fremden Kernsysteme", () => {
   const css = fs.readFileSync(file, "utf8");
-  for (const marker of [".seo-panel",".seo-table",".seo-finding","@media"]) {
+  for (const marker of [".seo-table",".seo-filter-grid","@media"]) {
     assert.ok(!css.includes(marker), "Unerwartet enthalten: " + marker);
   }
 });

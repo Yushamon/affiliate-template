@@ -1,0 +1,67 @@
+{
+  "patch": "pfotentechnik-css-admin-architecture-finalizer-22.10.2",
+  "replaces": "22.10.0",
+  "fixedIssue": "Ungültige Foundation-Ownership-Marker wurden durch den im aktuellen Bestand vorhandenen Marker .seo-eyebrow ersetzt.",
+  "status": "finalized",
+  "entrypointBytesBefore": 2640,
+  "entrypointBytesAfter": 219,
+  "importOrder": [
+    "seo-admin-foundation.css",
+    "seo-admin-panels.css",
+    "seo-admin-controls.css",
+    "seo-admin-content.css",
+    "seo-admin-operations.css",
+    "seo-admin-responsive.css"
+  ],
+  "metrics": {
+    "foundation": {
+      "file": "seo-admin-foundation.css",
+      "bytes": 4195,
+      "ruleBlocks": 28,
+      "mediaQueries": 0,
+      "importantDeclarations": 0,
+      "sha256": "41bc2fd6f8dd6cab6b885d0d123feba625b24b5d5fd4c44aaa8129f2db7718b8"
+    },
+    "panels": {
+      "file": "seo-admin-panels.css",
+      "bytes": 1329,
+      "ruleBlocks": 16,
+      "mediaQueries": 0,
+      "importantDeclarations": 0,
+      "sha256": "81f45bf1aff38cde26164e8c97cf527134c3ec51b041e04447677a96e7d5f35b"
+    },
+    "controls": {
+      "file": "seo-admin-controls.css",
+      "bytes": 1714,
+      "ruleBlocks": 10,
+      "mediaQueries": 0,
+      "importantDeclarations": 0,
+      "sha256": "d0a7407b2e0fc82cd7ff29f56e1668a08963009e78fe224543c118c67700d042"
+    },
+    "content": {
+      "file": "seo-admin-content.css",
+      "bytes": 1479,
+      "ruleBlocks": 16,
+      "mediaQueries": 0,
+      "importantDeclarations": 0,
+      "sha256": "3c19a54a7f2c64885c49420981e8dc12b7b26f5f3aeaf8ff92bc2b6451f13b1f"
+    },
+    "operations": {
+      "file": "seo-admin-operations.css",
+      "bytes": 1400,
+      "ruleBlocks": 13,
+      "mediaQueries": 0,
+      "importantDeclarations": 0,
+      "sha256": "38eb6ad6a7ecda00d62e5e63e6f37d07bff2d74d93c46b7d077ecfe1e08dae3d"
+    },
+    "responsive": {
+      "file": "seo-admin-responsive.css",
+      "bytes": 1408,
+      "ruleBlocks": 13,
+      "mediaQueries": 4,
+      "importantDeclarations": 0,
+      "sha256": "e814bee9b1fec11c7671005f69531fada4df5156d97b78ee08e354bf5e5de489"
+    }
+  },
+  "generatedAt": "2026-07-31T18:51:17.447Z"
+}

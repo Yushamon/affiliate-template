@@ -1,0 +1,48 @@
+/* SEO Admin operations: findings and workspace summaries.
+ * Aus seo-admin.css extrahiert, ohne Selektoren oder Deklarationen zu verändern.
+ */
+
+.seo-finding-list { display: grid; gap: 10px; }
+.seo-finding {
+  padding: 16px;
+  border: 1px solid var(--seo-border);
+  border-radius: 15px;
+  background: var(--seo-surface);
+}
+.seo-finding[data-blocker="true"],
+.seo-finding[data-status="regression"] { border-color: var(--seo-danger); }
+.seo-finding h3 { margin: 0; font-size: 1rem; }
+.seo-finding p { color: var(--seo-muted); line-height: 1.5; overflow-wrap: anywhere; }
+.seo-finding details { margin-top: 10px; }
+.seo-finding pre {
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--seo-surface-soft);
+  color: var(--seo-text);
+  font-size: .8rem;
+}
+
+.seo-workspace-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.seo-workspace-summary h2 { margin: 8px 0; }
+.seo-workspace-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+.seo-workspace-facts div {
+  padding: 11px;
+  border-radius: 12px;
+  background: var(--seo-surface-soft);
+}
+.seo-workspace-facts dt { color: var(--seo-muted); font-size: .75rem; }
+.seo-workspace-facts dd { margin: 4px 0 0; font-weight: 800; overflow-wrap: anywhere; }
