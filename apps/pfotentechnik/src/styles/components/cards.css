@@ -1,0 +1,22 @@
+/* PfotenTechnik shared card primitives.
+ * Nur gemeinsame Oberflächen-, Bewegungs- und Hover-Regeln.
+ */
+
+:where(.pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card, .result-card, .premium-block, .faq-item) {
+  border-color: var(--pt-line);
+  border-radius: var(--pt-radius-lg);
+  background: var(--pt-surface);
+  box-shadow: var(--pt-shadow-sm);
+}
+
+:where(.pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card) {
+  transition: border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+:where(.pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card):hover {
+  border-color: rgba(31, 164, 99, 0.28);
+  box-shadow: var(--pt-shadow-md);
+  transform: translateY(-2px);
+}
