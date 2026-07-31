@@ -263,9 +263,11 @@ const mobileGroups = hasExplicitMobileGroups
 
     .site-header-v2 .nav-toggle__bars {
       position: relative;
+      display: grid;
       width: 1.6rem;
       min-width: 1.6rem;
       gap: .34rem;
+      overflow: visible;
     }
 
     .site-header-v2 .nav-toggle__bars > span {
@@ -302,7 +304,10 @@ const mobileGroups = hasExplicitMobileGroups
       overflow-y: auto;
       margin: 0;
       padding: var(--pt-space-2);
+      border: 1px solid var(--pt-color-border);
       border-radius: var(--pt-radius-xl);
+      color: var(--pt-color-text);
+      background: var(--pt-color-surface);
       box-shadow: var(--pt-shadow-lg);
       visibility: hidden;
       opacity: 0;
@@ -338,6 +343,8 @@ const mobileGroups = hasExplicitMobileGroups
     .site-header-v2 .main-nav-v2__group {
       display: grid;
       gap: var(--pt-space-1);
+      padding: var(--pt-space-2);
+      border-radius: var(--pt-radius-lg);
       background: var(--pt-color-surface-subtle);
     }
 
@@ -352,6 +359,7 @@ const mobileGroups = hasExplicitMobileGroups
 
     .site-header-v2 .main-nav-v2__group-links {
       display: grid;
+      gap: var(--pt-space-1);
     }
 
     .site-header-v2 .main-nav-v2__mobile-link {
@@ -359,9 +367,11 @@ const mobileGroups = hasExplicitMobileGroups
       grid-template-columns: minmax(0, 1fr) auto;
       min-height: 3rem;
       align-items: center;
+      gap: var(--pt-space-3);
       padding: var(--pt-space-3);
       border: 1px solid transparent;
       border-radius: var(--pt-radius-md);
+      color: var(--pt-color-text);
       background: transparent;
       font-weight: var(--pt-font-weight-bold);
       text-decoration: none;
@@ -370,6 +380,7 @@ const mobileGroups = hasExplicitMobileGroups
     .site-header-v2 .main-nav-v2__mobile-link:hover,
     .site-header-v2 .main-nav-v2__mobile-link:focus-visible {
       border-color: var(--pt-color-border);
+      background: var(--pt-color-surface);
     }
 
     .site-header-v2 .main-nav-v2__mobile-link.is-current {

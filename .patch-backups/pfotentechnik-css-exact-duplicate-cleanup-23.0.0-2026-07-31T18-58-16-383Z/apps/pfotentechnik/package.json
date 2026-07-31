@@ -158,10 +158,7 @@
     "test:css-admin-content": "node --test test/css-admin-content.test.mjs",
     "test:css-admin-architecture": "node --test test/css-admin-architecture.test.mjs",
     "test:css-admin-operations": "node --test test/css-admin-operations.test.mjs",
-    "test:css-admin-responsive": "node --test test/css-admin-responsive.test.mjs",
-    "css:cleanup:exact-duplicates": "node scripts/design-system/css-exact-duplicate-cleanup.mjs",
-    "css:cleanup:exact-duplicates:write": "node scripts/design-system/css-exact-duplicate-cleanup.mjs --write",
-    "test:css-exact-duplicate-cleanup": "node --test test/css-exact-duplicate-cleanup.test.mjs"
+    "test:css-admin-responsive": "node --test test/css-admin-responsive.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

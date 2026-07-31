@@ -30,7 +30,7 @@
   :where(body) { min-width: 0; }
   :where(.pt-page-shell) { width: 100%; max-width: none; }
   :where(.pt-button) { justify-content: center; }
-  :where( .product-gallery, .product-media, .article-hero-media, .comparison-hero-media, .manufacturer-hero-media ).pt-media-bleed-mobile { margin-inline: calc(-1 * var(--pt-page-gutter)); width: calc(100% + (2 * var(--pt-page-gutter))); }
+  :where( .product-gallery, .product-media, .article-hero-media, .comparison-hero-media, .manufacturer-hero-media ).pt-media-bleed-mobile { margin-inline: calc(-1 * var(--pt-page-gutter)); width: calc(100% + (2 * var(--pt-page-gutter))); max-width: none; }
   .pt-sticky-safe { position: static; max-height: none; overflow: visible; }
 }
 @media (max-width: 25.875rem) {
