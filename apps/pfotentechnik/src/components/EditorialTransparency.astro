@@ -83,63 +83,94 @@ const contentLabel = kind === "produkt"
   : kind === "vergleich"
     ? "Vergleich"
     : "Ratgeber";
+const isCompactGuide = kind === "ratgeber";
+const containerClass = isCompactGuide
+  ? "editorial-transparency editorial-transparency--compact"
+  : "editorial-transparency";
 ---
 
-<aside class="editorial-transparency" aria-labelledby="editorial-transparency-title">
-  <div class="editorial-transparency__heading">
-    <span>Redaktionelle Transparenz</span>
-    <h2 id="editorial-transparency-title">So ist diese Seite einzuordnen</h2>
-  </div>
+<aside class={containerClass} aria-labelledby="editorial-transparency-title">
+  {isCompactGuide ? (
+    <details class="editorial-transparency__compact-details">
+      <summary>
+        <span class="editorial-transparency__compact-kicker">Redaktionelle Transparenz</span>
+        <strong id="editorial-transparency-title">Quellenbasiert eingeordnet</strong>
+        <small>Methodik und Finanzierung</small>
+      </summary>
 
-  <dl class="editorial-transparency__facts">
-    <div>
-      <dt>Verantwortlich</dt>
-      <dd>
-        <a href={authorHref}>{author.name}</a>
-        {author.role && <small>{author.role}</small>}
-      </dd>
-    </div>
-    <div>
-      <dt>Stand</dt>
-      <dd>
-        {formatDate(updatedAt) ?? formatDate(publishedAt) ?? "nicht dokumentiert"}
-        {publishedAt && updatedAt && publishedAt !== updatedAt && (
-          <small>Erstveröffentlichung: {formatDate(publishedAt)}</small>
-        )}
-      </dd>
-    </div>
-    <div>
-      <dt>Prüfart</dt>
-      <dd>
-        {currentStatus?.label ?? (kind === "ratgeber" ? "Quellenbasierte Redaktion" : "Redaktionelle Einordnung")}
-        <small>
-          {currentStatus?.text ??
-            `${contentLabel} auf Basis der auf der Seite genannten Daten und Quellen.`}
-        </small>
-      </dd>
-    </div>
-    <div>
-      <dt>Finanzierung</dt>
-      <dd>
-        Affiliate-finanziert, redaktionell getrennt
-        <small>Provisionen verändern weder Score noch Rangfolge. Der Kaufpreis bleibt gleich.</small>
-      </dd>
-    </div>
-  </dl>
+      <div class="editorial-transparency__compact-body">
+        <p>
+          <strong>Prüfart:</strong> Dieser Ratgeber basiert auf den im Beitrag genannten Daten und Quellen.
+        </p>
+        <p>
+          <strong>Finanzierung:</strong> Affiliate-finanziert, redaktionell getrennt. Provisionen verändern weder Aussagen noch Empfehlungen; der Kaufpreis bleibt gleich.
+        </p>
+        <nav aria-label="Redaktionelle Informationen">
+          <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+          <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
+          <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
+          <a href="/kontakt/">Fehler melden</a>
+        </nav>
+      </div>
+    </details>
+  ) : (
+    <>
+      <div class="editorial-transparency__heading">
+        <span>Redaktionelle Transparenz</span>
+        <h2 id="editorial-transparency-title">So ist diese Seite einzuordnen</h2>
+      </div>
 
-  {(evidenceText || recommendationReason) && (
-    <div class="editorial-transparency__evidence">
-      {evidenceText && <p><strong>Berücksichtigte Nachweise:</strong> {evidenceText}.</p>}
-      {recommendationReason && <p><strong>Warum diese Empfehlung:</strong> {recommendationReason}</p>}
-    </div>
+      <dl class="editorial-transparency__facts">
+        <div>
+          <dt>Verantwortlich</dt>
+          <dd>
+            <a href={authorHref}>{author.name}</a>
+            {author.role && <small>{author.role}</small>}
+          </dd>
+        </div>
+        <div>
+          <dt>Stand</dt>
+          <dd>
+            {formatDate(updatedAt) ?? formatDate(publishedAt) ?? "nicht dokumentiert"}
+            {publishedAt && updatedAt && publishedAt !== updatedAt && (
+              <small>Erstveröffentlichung: {formatDate(publishedAt)}</small>
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>Prüfart</dt>
+          <dd>
+            {currentStatus?.label ?? "Redaktionelle Einordnung"}
+            <small>
+              {currentStatus?.text ??
+                `${contentLabel} auf Basis der auf der Seite genannten Daten und Quellen.`}
+            </small>
+          </dd>
+        </div>
+        <div>
+          <dt>Finanzierung</dt>
+          <dd>
+            Affiliate-finanziert, redaktionell getrennt
+            <small>Provisionen verändern weder Score noch Rangfolge. Der Kaufpreis bleibt gleich.</small>
+          </dd>
+        </div>
+      </dl>
+
+      {(evidenceText || recommendationReason) && (
+        <div class="editorial-transparency__evidence">
+          {evidenceText && <p><strong>Berücksichtigte Nachweise:</strong> {evidenceText}.</p>}
+          {recommendationReason && <p><strong>Warum diese Empfehlung:</strong> {recommendationReason}</p>}
+        </div>
+      )}
+
+      <nav aria-label="Redaktionelle Informationen">
+        <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+        <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
+        <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
+        <a href="/kontakt/">Fehler melden</a>
+      </nav>
+    </>
   )}
-
-  <nav aria-label="Redaktionelle Informationen">
-    <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
-    <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
-    <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
-    <a href="/kontakt/">Fehler melden</a>
-  </nav>
 </aside>
 
 <style>
@@ -151,7 +182,8 @@ const contentLabel = kind === "produkt"
     background: var(--color-surface-subtle, #f5f8f5);
     color: var(--color-text, #17211b);
   }
-  .editorial-transparency__heading span {
+  .editorial-transparency__heading span,
+  .editorial-transparency__compact-kicker {
     color: var(--color-primary, #2e7d32);
     font-size: .75rem;
     font-weight: 800;
@@ -208,6 +240,66 @@ const contentLabel = kind === "produkt"
     font-size: .9rem;
     font-weight: 700;
   }
+
+  .editorial-transparency--compact {
+    margin: 22px 0;
+    padding: 0;
+    border-radius: 14px;
+    background: var(--color-surface, #fff);
+  }
+  .editorial-transparency__compact-details summary {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    padding: 11px 14px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .editorial-transparency__compact-details summary::-webkit-details-marker {
+    display: none;
+  }
+  .editorial-transparency__compact-details summary::after {
+    content: "+";
+    margin-left: auto;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .editorial-transparency__compact-details[open] summary {
+    border-bottom: 1px solid var(--color-border, #d7e2da);
+  }
+  .editorial-transparency__compact-details[open] summary::after {
+    content: "−";
+  }
+  .editorial-transparency__compact-details summary strong {
+    font-size: .95rem;
+    line-height: 1.35;
+  }
+  .editorial-transparency__compact-details summary small {
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+  .editorial-transparency__compact-body {
+    display: grid;
+    gap: 8px;
+    padding: 13px 14px 15px;
+  }
+  .editorial-transparency__compact-body p {
+    margin: 0;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .88rem;
+    line-height: 1.5;
+  }
+  .editorial-transparency__compact-body p strong {
+    color: var(--color-text, #17211b);
+  }
+  .editorial-transparency__compact-body nav {
+    margin-top: 4px;
+    font-size: .84rem;
+  }
+
   :global(html[data-theme="dark"]) .editorial-transparency,
   :global(html.dark) .editorial-transparency,
   :global(body[data-theme="dark"]) .editorial-transparency {
@@ -222,5 +314,21 @@ const contentLabel = kind === "produkt"
     .editorial-transparency { border-radius: 18px; }
     .editorial-transparency__facts { grid-template-columns: 1fr; }
     .editorial-transparency nav { display: grid; }
+    .editorial-transparency--compact { border-radius: 12px; }
+    .editorial-transparency__compact-details summary {
+      align-items: center;
+      gap: 4px 8px;
+      padding: 10px 12px;
+    }
+    .editorial-transparency__compact-kicker {
+      flex-basis: 100%;
+      font-size: .68rem;
+    }
+    .editorial-transparency__compact-details summary small {
+      display: none;
+    }
+    .editorial-transparency__compact-body {
+      padding: 12px;
+    }
   }
 </style>

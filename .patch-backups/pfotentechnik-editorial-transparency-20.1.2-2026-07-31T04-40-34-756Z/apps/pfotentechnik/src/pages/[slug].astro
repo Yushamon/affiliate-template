@@ -342,6 +342,12 @@ const relatedItems = relatedEntries.map((entry) => ({
     />
   </header>
 
+  <EditorialTransparency
+    kind="ratgeber"
+    author={author}
+    publishedAt={publishedAt}
+    updatedAt={updatedAt}
+  />
 
   <figure class="article-hero">
     <OptimizedImage
@@ -651,7 +657,6 @@ const relatedItems = relatedEntries.map((entry) => ({
         </section>
       )
     }
-    <EditorialTransparency kind="ratgeber" />
     <FAQ items={assembledPage.faq} />
   </article>
 
