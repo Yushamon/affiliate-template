@@ -411,6 +411,7 @@
 
 .comparison-table-wrap {
   width: 100%;
+  overflow-x: auto;
   border: 1px solid var(--comparison-line);
   border-radius: 1rem;
   background: #fff;
@@ -418,6 +419,7 @@
 }
 
 .comparison-table {
+  width: 100%;
   min-width: 820px;
   border-collapse: collapse;
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T07:58:16.152Z",
+  "generatedAt": "2026-07-31T09:35:06.412Z",
   "mode": "strict",
   "status": "ok",
   "environment": {
@@ -90,7 +90,7 @@
   },
   "source": {
     "cssFiles": 25,
-    "cssBytes": 518414,
+    "cssBytes": 518379,
     "importantDeclarations": 1265,
     "hydrationDirectives": 0,
     "runtimeDomCorrectionPresent": false,
@@ -102,8 +102,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 58622,
-        "htmlBrotliBytes": 11049,
+        "htmlBytes": 58597,
+        "htmlBrotliBytes": 11067,
         "domNodes": 612,
         "domDepth": 13,
         "stylesheets": 3,
@@ -158,12 +158,12 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 131486,
-        "htmlBrotliBytes": 21805,
+        "htmlBytes": 131473,
+        "htmlBrotliBytes": 21836,
         "domNodes": 1200,
         "domDepth": 16,
         "stylesheets": 4,
-        "cssBytes": 416183,
+        "cssBytes": 416156,
         "cssFiles": 4,
         "scripts": 0,
         "jsBytes": 0,
@@ -184,16 +184,16 @@
           "code": "PERF_BUDGET_CSS_EXCEEDED",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "CSS-Budget überschritten: 416183 > 415000.",
-          "actual": 416183,
+          "message": "CSS-Budget überschritten: 416156 > 415000.",
+          "actual": 416156,
           "limit": 415000
         },
         {
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 131486 > 130000.",
-          "actual": 131486,
+          "message": "HTML-Budget überschritten: 131473 > 130000.",
+          "actual": 131473,
           "limit": 130000
         },
         {
@@ -212,11 +212,11 @@
       "label": "Vergleich GPS-Tracker",
       "metrics": {
         "htmlBytes": 79156,
-        "htmlBrotliBytes": 15904,
+        "htmlBrotliBytes": 15940,
         "domNodes": 657,
         "domDepth": 16,
         "stylesheets": 4,
-        "cssBytes": 416183,
+        "cssBytes": 416156,
         "cssFiles": 4,
         "scripts": 0,
         "jsBytes": 0,
@@ -237,8 +237,8 @@
           "code": "PERF_BUDGET_CSS_EXCEEDED",
           "severity": "warning",
           "route": "/vergleiche/gps-tracker-ohne-abo/",
-          "message": "CSS-Budget überschritten: 416183 > 415000.",
-          "actual": 416183,
+          "message": "CSS-Budget überschritten: 416156 > 415000.",
+          "actual": 416156,
           "limit": 415000
         },
         {
@@ -256,8 +256,8 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 86981,
-        "htmlBrotliBytes": 16024,
+        "htmlBytes": 86982,
+        "htmlBrotliBytes": 16001,
         "domNodes": 768,
         "domDepth": 14,
         "stylesheets": 4,
@@ -284,8 +284,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 71287,
-        "htmlBrotliBytes": 13502,
+        "htmlBytes": 71300,
+        "htmlBrotliBytes": 13513,
         "domNodes": 588,
         "domDepth": 11,
         "stylesheets": 4,
@@ -340,8 +340,8 @@
       "category": "article",
       "label": "Cornerstone",
       "metrics": {
-        "htmlBytes": 123895,
-        "htmlBrotliBytes": 27213,
+        "htmlBytes": 123894,
+        "htmlBrotliBytes": 27165,
         "domNodes": 1305,
         "domDepth": 11,
         "stylesheets": 4,
@@ -366,8 +366,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/smarte-futterautomaten/",
-          "message": "HTML-Budget überschritten: 123895 > 105000.",
-          "actual": 123895,
+          "message": "HTML-Budget überschritten: 123894 > 105000.",
+          "actual": 123894,
           "limit": 105000
         },
         {
@@ -467,16 +467,16 @@
       "code": "PERF_BUDGET_CSS_EXCEEDED",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "CSS-Budget überschritten: 416183 > 415000.",
-      "actual": 416183,
+      "message": "CSS-Budget überschritten: 416156 > 415000.",
+      "actual": 416156,
       "limit": 415000
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 131486 > 130000.",
-      "actual": 131486,
+      "message": "HTML-Budget überschritten: 131473 > 130000.",
+      "actual": 131473,
       "limit": 130000
     },
     {
@@ -491,8 +491,8 @@
       "code": "PERF_BUDGET_CSS_EXCEEDED",
       "severity": "warning",
       "route": "/vergleiche/gps-tracker-ohne-abo/",
-      "message": "CSS-Budget überschritten: 416183 > 415000.",
-      "actual": 416183,
+      "message": "CSS-Budget überschritten: 416156 > 415000.",
+      "actual": 416156,
       "limit": 415000
     },
     {
@@ -507,8 +507,8 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/smarte-futterautomaten/",
-      "message": "HTML-Budget überschritten: 123895 > 105000.",
-      "actual": 123895,
+      "message": "HTML-Budget überschritten: 123894 > 105000.",
+      "actual": 123894,
       "limit": 105000
     },
     {

@@ -1,0 +1,33 @@
+{
+  "patch": "pfotentechnik-css-component-family-consolidation-1.1.0",
+  "generatedAt": "2026-07-31T08:07:03.119Z",
+  "target": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+  "selectors": [
+    ".feature-card",
+    ".info-card",
+    ".warning-card",
+    ".health-bridge",
+    ".article-callout"
+  ],
+  "selectorStats": {},
+  "mergedRulePairs": 0,
+  "removedDeclarations": 0,
+  "before": {
+    "bytes": 134170,
+    "important": 753
+  },
+  "after": {
+    "bytes": 134170,
+    "important": 753
+  },
+  "delta": {
+    "bytes": 0,
+    "important": 0
+  },
+  "validation": {
+    "build": "passed",
+    "componentAdoption": "passed",
+    "designSystemAudit": "passed",
+    "performanceStrict": "passed"
+  }
+}

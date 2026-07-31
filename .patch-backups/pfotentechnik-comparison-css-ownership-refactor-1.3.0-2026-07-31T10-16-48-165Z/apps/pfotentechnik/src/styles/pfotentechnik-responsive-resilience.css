@@ -1,0 +1,42 @@
+/* pfotentechnik responsive resilience: active PfotenTechnik design-system layer. */
+:where(*, *::before, *::after) { box-sizing: border-box; }
+:where(html) { max-width: 100%; overflow-x: clip; }
+:where(body) { min-width: 20rem; max-width: 100%; }
+:where(main, section, article, aside, header, footer, nav) { min-width: 0; }
+:where( [class*="grid"], [class*="layout"], [class*="columns"], [class*="split"], [class*="row"], [class*="cluster"] ) > * { min-width: 0; }
+:where(img, picture, video, canvas, svg, iframe) { height: auto; max-width: 100%; }
+:where(img, video) { display: block; }
+:where(pre, code, kbd, samp) { overflow-wrap: anywhere; }
+:where(p, li, dd, dt, figcaption, blockquote, a, button, summary) { overflow-wrap: break-word; }
+:where(.pt-button, .pt-chip) { max-width: 100%; white-space: normal; text-align: center; }
+:where(.pt-button > span, .pt-chip > span) { min-width: 0; overflow-wrap: anywhere; }
+:where(input, select, textarea, button) { max-width: 100%; }
+:where(textarea) { resize: vertical; }
+:where(table) { border-collapse: collapse; }
+.pt-table-scroll, .table-scroll, .table-wrapper, .comparison-table-wrapper { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-gutter: stable; -webkit-overflow-scrolling: touch; }
+.pt-table-scroll > table, .table-scroll > table, .table-wrapper > table, .comparison-table-wrapper > table { min-width: 42rem; }
+.pt-media-bleed-mobile { width: auto; }
+.pt-safe-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: var(--pt-space-5); }
+.pt-safe-split { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--pt-space-6); }
+.pt-sticky-safe { position: sticky; inset-block-start: var(--pt-space-4); max-height: calc(100dvh - (2 * var(--pt-space-4))); overflow-y: auto; }
+.pt-scroll-shadow { background: linear-gradient(to right, var(--pt-color-surface) 30%, transparent),
+    linear-gradient(to left, var(--pt-color-surface) 30%, transparent) 100% 0,
+    linear-gradient(to right, color-mix(in srgb, var(--pt-color-text) 12%, transparent), transparent),
+    linear-gradient(to left, color-mix(in srgb, var(--pt-color-text) 12%, transparent), transparent) 100% 0; background-attachment: local, local, scroll, scroll; background-repeat: no-repeat; background-size: 2.5rem 100%, 2.5rem 100%, 0.75rem 100%, 0.75rem 100%; }
+@media (min-width: 48rem) {
+  .pt-safe-split { grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr); align-items: start; }
+}
+@media (max-width: 47.99rem) {
+  :where(body) { min-width: 0; }
+  :where(.pt-page-shell) { width: 100%; max-width: none; }
+  :where(.pt-button) { justify-content: center; }
+  :where( .product-gallery, .product-media, .article-hero-media, .comparison-hero-media, .manufacturer-hero-media ).pt-media-bleed-mobile { margin-inline: calc(-1 * var(--pt-page-gutter)); width: calc(100% + (2 * var(--pt-page-gutter))); max-width: none; }
+  .pt-sticky-safe { position: static; max-height: none; overflow: visible; }
+}
+@media (max-width: 25.875rem) {
+  :where(.pt-cluster) { align-items: stretch; }
+  :where(.pt-cluster > .pt-button) { flex: 1 1 100%; }
+}
+@supports not (overflow: clip) {
+  :where(html) { overflow-x: hidden; }
+}

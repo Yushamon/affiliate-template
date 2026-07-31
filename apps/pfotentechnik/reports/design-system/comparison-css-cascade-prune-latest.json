@@ -1,0 +1,94 @@
+{
+  "patch": "pfotentechnik-comparison-css-cascade-prune-1.2.0",
+  "generatedAt": "2026-07-31T09:35:07.167Z",
+  "strategy": "Remove earlier declarations when the same exact selector, at-rule context, property and importance occur later.",
+  "selectors": [
+    ".recommendation-card",
+    ".recommendation-card__image-link",
+    ".recommendation-card__content",
+    ".comparison-mobile-product",
+    ".comparison-table",
+    ".comparison-table-wrap",
+    ".comparison-table tbody",
+    ".comparison-table tr",
+    ".comparison-table th",
+    ".comparison-table td"
+  ],
+  "files": [
+    {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
+      "removedDeclarations": 2,
+      "perSelector": {
+        ".comparison-table-wrap": 1,
+        ".comparison-table": 1
+      },
+      "before": {
+        "bytes": 135674,
+        "important": 278
+      },
+      "after": {
+        "bytes": 135639,
+        "important": 278
+      },
+      "delta": {
+        "bytes": -35,
+        "important": 0
+      }
+    },
+    {
+      "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+      "removedDeclarations": 0,
+      "perSelector": {},
+      "before": {
+        "bytes": 134170,
+        "important": 753
+      },
+      "after": {
+        "bytes": 134170,
+        "important": 753
+      },
+      "delta": {
+        "bytes": 0,
+        "important": 0
+      }
+    },
+    {
+      "file": "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
+      "removedDeclarations": 0,
+      "perSelector": {},
+      "before": {
+        "bytes": 11775,
+        "important": 0
+      },
+      "after": {
+        "bytes": 11775,
+        "important": 0
+      },
+      "delta": {
+        "bytes": 0,
+        "important": 0
+      }
+    }
+  ],
+  "totals": {
+    "removedDeclarations": 2,
+    "before": {
+      "bytes": 281619,
+      "important": 1031
+    },
+    "after": {
+      "bytes": 281584,
+      "important": 1031
+    },
+    "delta": {
+      "bytes": -35,
+      "important": 0
+    }
+  },
+  "validation": {
+    "build": "passed",
+    "componentAdoption": "passed",
+    "designSystemAudit": "passed",
+    "performanceStrict": "passed"
+  }
+}

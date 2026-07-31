@@ -1,41 +1,16 @@
-# PfotenTechnik CSS Lossless Dedup 1.0.1
+# CSS Architecture Audit Accuracy 21.1.3
 
-Der Installer bereinigt ausschließlich:
+Korrigiert die überhöhte `!important`-Zählung bei gruppierten Selektoren.
 
-1. exakt identische Deklarationen innerhalb derselben CSS-Regel,
-2. vollständig identische Regeln im selben CSS-Kontext.
+Bisher wurde ein Block wie:
 
-Nicht verändert werden:
-
-- Regeln mit abweichenden Werten,
-- die Reihenfolge unterschiedlicher Overrides,
-- Media-Query-Kontexte,
-- Selektoren mit nur ähnlichen Deklarationen,
-- Comparison CSS,
-- PremiumRenderer,
-- Herstellerseiten.
-
-## Ausführen
-
-```bash
-node 3/apply-pfotentechnik-css-lossless-dedup-1.0.1.mjs
+```css
+.a, .b, .c { color: red !important; }
 ```
 
-## Validierung
-
-Der Installer führt aus:
+fälschlich als drei `!important`-Deklarationen gezählt. Nach dem Patch wird korrekt eine Deklaration gezählt.
 
 ```bash
-npm run build:pfotentechnik
-npm --workspace apps/pfotentechnik run design-system:components:audit
-npm --workspace apps/pfotentechnik run design-system:audit
-npm --workspace apps/pfotentechnik run audit:performance:strict
-```
-
-Bei einem Fehler wird die geänderte CSS-Datei automatisch wiederhergestellt.
-
-Report:
-
-```text
-apps/pfotentechnik/reports/design-system/css-lossless-dedup-validation-latest.json
+node 3/apply-pfotentechnik-css-architecture-audit-accuracy-21.1.3.mjs
+cat apps/pfotentechnik/reports/design-system/css-architecture-latest.md
 ```
