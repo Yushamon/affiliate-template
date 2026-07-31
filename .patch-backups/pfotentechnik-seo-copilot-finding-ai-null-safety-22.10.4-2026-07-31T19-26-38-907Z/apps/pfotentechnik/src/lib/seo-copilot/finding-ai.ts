@@ -8,15 +8,9 @@ const slugFromRoute = (route: string) => {
   return match?.[1];
 };
 
-export const buildFindingAiActions = (finding: QualityFinding) => {
-  const actionIds = Array.isArray(finding?.aiActionIds)
-    ? finding.aiActionIds.filter(
-        (actionId): actionId is string =>
-          typeof actionId === "string" && actionId.trim().length > 0,
-      )
-    : [];
-
-  return actionIds.map((actionId) => {
+export const buildFindingAiActions = (finding: QualityFinding) =>
+  finding.aiActionIds
+    .map((actionId) => {
       const action = getAiActionDefinition(actionId);
       if (!action) return null;
       const result = buildCodexPrompt(
@@ -52,4 +46,3 @@ export const buildFindingAiActions = (finding: QualityFinding) => {
       };
     })
     .filter(Boolean);
-};
