@@ -18,8 +18,18 @@ const requirePattern = (relativePath, pattern, label) => {
 
 requirePattern(
   "src/pages/[slug].astro",
-  /^(?![\s\S]*<EditorialTransparency\b(?=[^>]*\bkind="ratgeber"))[\s\S]*$/,
-  "Ratgeber enthalten keine sichtbare redaktionelle Transparenzbox"
+  /<Content \/>[\s\S]*?<DecisionJourney\b[^>]*\/>[\s\S]*?<EditorialTransparency kind="ratgeber" \/>[\s\S]*?<FAQ items=\{assembledPage\.faq\} \/>/,
+  "Ratgeber behalten die Decision Journey vor der kompakten Transparenz"
+);
+requirePattern(
+  "src/pages/[slug].astro",
+  /<\/header>(?:(?!<EditorialTransparency)[\s\S])*?<figure class="article-hero">/,
+  "Ratgeber zeigen vor dem Hero keine doppelte Transparenz"
+);
+requirePattern(
+  "src/components/EditorialTransparency.astro",
+  /isCompactGuide[\s\S]*?editorial-transparency--compact[\s\S]*?<details/,
+  "Ratgeber nutzen die kompakte, einklappbare Transparenzdarstellung"
 );
 requirePattern(
   "src/pages/produkt/[product].astro",
