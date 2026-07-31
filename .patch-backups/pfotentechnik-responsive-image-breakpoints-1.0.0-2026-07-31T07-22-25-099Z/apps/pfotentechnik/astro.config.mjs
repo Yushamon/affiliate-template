@@ -92,11 +92,9 @@ export default defineConfig({
   cacheDir: "./.astro-cache",
 
   image: {
-    // Reduzierte responsive Stufen für automatisch verarbeitete
-    // Markdown- und Standardbilder. Explizite widths an Image-Komponenten
-    // bleiben davon unberührt.
-    layout: "constrained",
-    breakpoints: [480, 768, 960, 1200]
+
+    layout: "constrained"
+
   },
   // Schneller lokaler Produktions-Build ohne Sitemap-Serialisierung.
   integrations: fastBuild ? [] : [

@@ -1,0 +1,53 @@
+{
+  "patch": "pfotentechnik-responsive-image-breakpoints-1.0.0",
+  "generatedAt": "2026-07-31T07:23:28.202Z",
+  "configuration": {
+    "layout": "constrained",
+    "breakpoints": [
+      480,
+      768,
+      960,
+      1200
+    ]
+  },
+  "cornerstone": {
+    "route": "/smarte-futterautomaten/",
+    "imageAssetFiles": 64,
+    "imageBytes": 3499826,
+    "findings": [
+      {
+        "code": "PERF_HTML_TOO_LARGE",
+        "severity": "warning",
+        "route": "/smarte-futterautomaten/",
+        "message": "HTML-Budget überschritten: 123902 > 105000.",
+        "actual": 123902,
+        "limit": 105000
+      },
+      {
+        "code": "PERF_DOM_TOO_COMPLEX",
+        "severity": "warning",
+        "route": "/smarte-futterautomaten/",
+        "message": "DOM-Budget überschritten: 1305 > 950.",
+        "actual": 1305,
+        "limit": 950
+      },
+      {
+        "code": "PERF_IMAGE_BYTES_EXCEEDED",
+        "severity": "warning",
+        "route": "/smarte-futterautomaten/",
+        "message": "Bildbudget überschritten: 3499826 > 3200000.",
+        "actual": 3499826,
+        "limit": 3200000
+      },
+      {
+        "code": "PERF_CSS_SPECIFICITY_HIGH",
+        "severity": "warning",
+        "route": "/smarte-futterautomaten/",
+        "message": "!important-Budget überschritten: 1225 > 1100.",
+        "actual": 1225,
+        "limit": 1100
+      }
+    ]
+  },
+  "performanceStatus": "ok"
+}

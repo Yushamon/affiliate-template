@@ -1,22 +1,31 @@
-# PfotenTechnik Performance Stylesheet Inline 1.0.0
+# PfotenTechnik Responsive Image Breakpoints 1.0.0
+
+Dieser Installer reduziert die automatisch generierten Responsive-Image-Stufen auf:
+
+- 480 px
+- 768 px
+- 960 px
+- 1200 px
 
 Ziel:
-- reduziert die betroffenen Vergleichs- und Produktseiten von 6 auf maximal 5 externe Stylesheets
-- setzt ausschließlich kleine CSS-Chunks bis 5,5 KB inline
-- EditorialScore (~4,98 KB) wird integriert
-- adapters (~6,47 KB) und imageOptimization (~10 KB) bleiben externe Shared-Chunks
-- erhöht keine Performance-Budgets
+- weniger WebP-Derivate bei Markdown-Visuals
+- kleinerer Build-Output
+- schnellerer Astro-Bildprozess
+- weiterhin scharfe mobile, Tablet- und Desktopdarstellung
+- keine Änderung an Komponenten mit expliziten `widths`
 
 Ausführen im Repository-Root:
 
 ```bash
-node 3/apply-pfotentechnik-performance-stylesheet-inline-1.0.0.mjs
+node 3/apply-pfotentechnik-responsive-image-breakpoints-1.0.0.mjs
 ```
 
-Validierung:
-- Syntaxprüfung der Astro-Konfiguration
-- vollständiger Astro-Build
-- striktes Performance-Audit
-- explizite Prüfung auf verbleibende PERF_RENDER_BLOCKING_STYLESHEET-Befunde
+Der Installer führt anschließend aus:
 
-Bei einem Fehler wird astro.config.mjs automatisch wiederhergestellt.
+```bash
+node --check apps/pfotentechnik/astro.config.mjs
+npm run build:pfotentechnik
+npm --workspace apps/pfotentechnik run audit:performance:strict
+```
+
+Bei einem Fehler wird `astro.config.mjs` automatisch wiederhergestellt.
