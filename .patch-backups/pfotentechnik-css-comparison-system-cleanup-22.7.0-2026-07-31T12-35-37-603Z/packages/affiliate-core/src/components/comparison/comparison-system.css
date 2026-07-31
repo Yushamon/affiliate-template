@@ -1,4 +1,15 @@
-@import "./comparison-tokens.css";
+
+
+:root {
+  --comparison-text: #0d302b;
+  --comparison-muted: #647579;
+  --comparison-accent: #18743b;
+  --comparison-accent-dark: #0f5d2d;
+  --comparison-line: #dce5e3;
+  --comparison-soft: #f2f8f4;
+  --comparison-surface: #ffffff;
+  --comparison-shadow: 0 14px 38px rgba(20, 32, 26, 0.07);
+}
 
 .comparison-detail,
 .comparison-shell {
@@ -2555,8 +2566,13 @@
 
 :root {
   --comparison-page-bg: #f6f8f7;
+  --comparison-surface: #ffffff;
   --comparison-surface-raised: #ffffff;
   --comparison-surface-soft: #f1f7f3;
+  --comparison-text: #13231e;
+  --comparison-muted: #66766f;
+  --comparison-line: #dce6e0;
+  --comparison-accent: #238341;
   --comparison-accent-strong: #176a31;
   --comparison-positive: #238341;
   --comparison-warning: #a96712;

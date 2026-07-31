@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-31T12:27:46.765Z",
+  "generatedAt": "2026-07-31T13:12:56.685Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 87,
-    "cssFiles": 34,
+    "records": 88,
+    "cssFiles": 35,
     "astroStyleFiles": 53,
-    "bytes": 746579,
-    "rules": 8039,
+    "bytes": 746631,
+    "rules": 8037,
     "important": 1649,
     "actualImportantDeclarations": 1649,
     "duplicateSelectors": 1537,
-    "duplicateDeclarationBlocks": 1033,
-    "importEdges": 55,
+    "duplicateDeclarationBlocks": 1032,
+    "importEdges": 57,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
     "emptyCssFiles": 0,
@@ -56,15 +56,26 @@
       "kind": "css",
       "category": "comparison",
       "owner": "comparison-platform",
-      "bytes": 135639,
-      "meaningfulBytes": 127465,
-      "contentHash": "50f12b4d18b2e246a6e79551e6047a755a42533c3c4a593082dfacf340546aaa",
-      "normalizedHash": "a1994ba1de017293ee6f503baafffdae890d536a346a687b28e14af76e2101cb",
+      "bytes": 135224,
+      "meaningfulBytes": 127078,
+      "contentHash": "afb5b4efa8a86329a3fce58d071b740ded8c95ae7b4fd0d73f43d8294926235a",
+      "normalizedHash": "8b7228fc53fa666715542397050ad4c05187a97cc2ba85f5931b7f55fbbdbe12",
       "importedBy": [
         "packages/affiliate-core/src/components/comparison/ComparisonShell.astro"
       ],
-      "imports": [],
-      "rules": 1119,
+      "imports": [
+        {
+          "raw": "./comparison-tokens.css",
+          "target": "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
+          "exists": true
+        },
+        {
+          "raw": "./comparison-tokens.css",
+          "target": "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
+          "exists": true
+        }
+      ],
+      "rules": 1116,
       "important": 278,
       "maxSelectorDepth": 9
     },
@@ -1177,6 +1188,24 @@
       "maxSelectorDepth": 1
     },
     {
+      "file": "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
+      "kind": "css",
+      "category": "comparison",
+      "owner": "comparison-platform",
+      "bytes": 467,
+      "meaningfulBytes": 275,
+      "contentHash": "f9f64c69a5621d2b78cbf5ab0ed943f2e73b9c1aec587a633751a50cc084a3b9",
+      "normalizedHash": "cd9a93494d43f79fa884f0f8369e35621c9b9c0bd69fc9409dc2f85c8955ab1f",
+      "importedBy": [
+        "packages/affiliate-core/src/components/comparison/comparison-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-system.css"
+      ],
+      "imports": [],
+      "rules": 1,
+      "important": 0,
+      "maxSelectorDepth": 1
+    },
+    {
       "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
       "kind": "astro-style",
       "category": "component-inline",
@@ -1703,6 +1732,18 @@
       "exists": true
     },
     {
+      "importer": "packages/affiliate-core/src/components/comparison/comparison-system.css",
+      "raw": "./comparison-tokens.css",
+      "target": "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
+      "exists": true
+    },
+    {
+      "importer": "packages/affiliate-core/src/components/comparison/comparison-system.css",
+      "raw": "./comparison-tokens.css",
+      "target": "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
+      "exists": true
+    },
+    {
       "importer": "packages/affiliate-core/src/components/home/HomePage.astro",
       "raw": "./home.css",
       "target": "packages/affiliate-core/src/components/home/home.css",
@@ -1893,6 +1934,7 @@
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
         "apps/pfotentechnik/src/styles/seo-admin.css",
         "packages/affiliate-core/src/components/comparison/comparison-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-tokens.css",
         "packages/affiliate-core/src/components/home/home.css",
         "packages/affiliate-core/src/styles/base.css",
         "packages/affiliate-core/src/styles/theme.css",
@@ -2253,20 +2295,6 @@
       "important": 7
     },
     {
-      "selector": ".comparison-detail",
-      "occurrences": 12,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-system.css"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform"
-      ],
-      "important": 1
-    },
-    {
       "selector": ".product-card",
       "occurrences": 12,
       "files": [
@@ -2378,6 +2406,20 @@
         "design-system"
       ],
       "important": 3
+    },
+    {
+      "selector": ".comparison-detail",
+      "occurrences": 11,
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-system.css"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform"
+      ],
+      "important": 1
     },
     {
       "selector": ":is( .manufacturer-hero",
@@ -2602,19 +2644,6 @@
       "important": 0
     },
     {
-      "selector": ".comparison-shell",
-      "occurrences": 10,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-system.css"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
       "selector": ".header-advisor-link[data-pt-purchase-advice=\"desktop\"]",
       "occurrences": 9,
       "files": [
@@ -2798,6 +2827,19 @@
       ],
       "owners": [
         "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".comparison-shell",
+      "occurrences": 9,
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-system.css"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform"
       ],
       "important": 0
     },

@@ -1,0 +1,15 @@
+/* Shared comparison design tokens.
+ * Werte entsprechen der zuvor wirksamen CSS-Kaskade:
+ * Bei mehrfachen Deklarationen gewinnt die letzte top-level :root-Deklaration.
+ */
+
+:root {
+  --comparison-text: #13231e;
+  --comparison-muted: #66766f;
+  --comparison-accent: #238341;
+  --comparison-accent-dark: #0f5d2d;
+  --comparison-line: #dce6e0;
+  --comparison-soft: #f2f8f4;
+  --comparison-surface: #ffffff;
+  --comparison-shadow: 0 14px 38px rgba(20, 32, 26, 0.07);
+}

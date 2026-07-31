@@ -1,29 +1,14 @@
-# PfotenTechnik CSS Base Layer + Cleanup 22.2.0
+# PfotenTechnik CSS Comparison System + Cleanup 22.7.3
 
-Der Patch migriert den sicheren globalen Präfix aus
-`pfotentechnik-design-system.css` nach `foundation/base.css`.
+22.7.2 hat korrekt erkannt, dass einzelne Core-Tokens mehrfach mit
+unterschiedlichen Werten definiert sind.
 
-Er verschiebt nur unmittelbar nach dem Foundation-Import stehende Regeln aus
-der Allowlist:
-
-- `html`
-- `body`
-- `::selection`
-
-Dadurch bleibt die Kaskadenposition erhalten. Spätere globale Regeln,
-Media Queries und komponentenspezifische Selektoren werden nicht angefasst.
-
-Zusätzlich entfernt der Patch doppelte Deklarationen innerhalb der migrierten
-Blöcke nach CSS-Kaskadenlogik: Die letzte Deklaration gewinnt.
-
-## Ausführen
+22.7.3 erhält die bestehende CSS-Kaskade: Bei mehrfachen top-level
+`:root`-Deklarationen wird der letzte und damit bisher wirksame Wert übernommen.
 
 ```bash
-node 3/apply-pfotentechnik-css-base-layer-cleanup-22.2.0.mjs
+node 3/apply-pfotentechnik-css-comparison-system-cleanup-22.7.3.mjs
 ```
 
-Der vollständige Build wird automatisch ausgeführt. Nur in Ausnahmefällen:
-
-```bash
-node 3/apply-pfotentechnik-css-base-layer-cleanup-22.2.0.mjs --skip-build
-```
+Verschachtelte Root-Regeln innerhalb von Media Queries oder anderen At-Rules
+werden nicht migriert.
