@@ -1,0 +1,12 @@
+{
+  "name": "pfotentechnik-performance-stylesheet-inline",
+  "version": "1.0.0",
+  "targets": [
+    "apps/pfotentechnik/astro.config.mjs"
+  ],
+  "validation": [
+    "node --check apps/pfotentechnik/astro.config.mjs",
+    "npm run build:pfotentechnik",
+    "npm --workspace apps/pfotentechnik run audit:performance:strict"
+  ]
+}

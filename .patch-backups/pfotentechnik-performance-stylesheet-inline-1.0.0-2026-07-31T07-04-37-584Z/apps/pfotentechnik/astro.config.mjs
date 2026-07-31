@@ -81,13 +81,6 @@ export default defineConfig({
   site: siteUrl,
   output: "static",
   outDir: "./dist",
-
-  // Kleine CSS-Chunks bis 5,5 KB werden gezielt inline ausgegeben.
-  // Dadurch wird EditorialScore in die Seite integriert, während
-  // adapters.css und imageOptimization.css externe Shared-Chunks bleiben.
-  build: {
-    inlineStylesheets: "auto"
-  },
   // Persistenter astro:assets-Cache außerhalb von node_modules.
   cacheDir: "./.astro-cache",
 
@@ -122,11 +115,6 @@ export default defineConfig({
     })
   ],
   vite: {
-    build: {
-      // Astro verwendet diesen Grenzwert auch für inlineStylesheets: "auto".
-      // 5,5 KB erfasst EditorialScore (~4,98 KB), aber nicht adapters (~6,47 KB).
-      assetsInlineLimit: 5500
-    },
     resolve: {
       alias: {
         "@affiliate-core": fileURLToPath(
