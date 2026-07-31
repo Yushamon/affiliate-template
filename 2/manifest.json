@@ -1,0 +1,12 @@
+{
+  "name": "pfotentechnik-seo-copilot-prompt-engine",
+  "version": "2.0.3",
+  "fixes": [
+    "Use codex-send as canonical AI action ID",
+    "Resolve stored template IDs as backwards-compatible aliases",
+    "Fallback to resolveFindingAiActionIds when no actions are stored",
+    "Retain Windows cmd.exe command runner"
+  ],
+  "project": "apps/pfotentechnik",
+  "rollback": true
+}

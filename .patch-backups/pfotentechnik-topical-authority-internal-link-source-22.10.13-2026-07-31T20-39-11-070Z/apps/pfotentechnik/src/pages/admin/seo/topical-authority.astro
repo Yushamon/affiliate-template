@@ -1,7 +1,6 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadTopicalAuthority } from "../../../lib/seo/topical-authority/loadTopicalAuthority";
-import { loadInternalLinkAdvisories } from "../../../lib/seo/topical-authority/loadInternalLinkAdvisories";
 import {
   DECISION_STAGE_ORDER,
   getStageLabel,
@@ -30,16 +29,6 @@ const data = {
   opportunities: Array.isArray(loaded?.opportunities) ? loaded.opportunities : [],
   orphanCandidates: Array.isArray(loaded?.orphanCandidates) ? loaded.orphanCandidates : [],
 };
-
-const internalLinkReport = loadInternalLinkAdvisories();
-const documentByRoute = new Map(
-  data.clusters.flatMap((cluster) =>
-    (Array.isArray(cluster?.documents) ? cluster.documents : []).map((document) => [
-      document?.route,
-      document,
-    ]),
-  ),
-);
 
 const typeLabels = {
   page: "Ratgeber/Hub",
@@ -248,116 +237,33 @@ const priorityLabels = {
     <section class="ta-section">
       <div class="ta-section-head">
         <div>
-          <p class="ta-eyebrow">Internal-Link-Health-Audit</p>
-          <h2>Hinweise ohne eingehenden Hauptinhaltslink</h2>
+          <p class="ta-eyebrow">Linkprüfung</p>
+          <h2>Mögliche verwaiste Inhalte</h2>
         </div>
-        <span>{internalLinkReport.total} aktive Hinweise</span>
+        <span>{data.orphanCandidates.length} Kandidaten</span>
       </div>
 
-      <div class:list={["ta-audit-source", { "ta-audit-source--stale": internalLinkReport.stale }]}>
-        <strong>
-          {internalLinkReport.available
-            ? internalLinkReport.stale
-              ? "Audit veraltet"
-              : "Audit aktuell"
-            : "Audit nicht verfügbar"}
-        </strong>
-        <span>
-          Quelle: <code>{internalLinkReport.source}</code>
-          {internalLinkReport.generatedAt
-            ? ` · Stand: ${new Date(internalLinkReport.generatedAt).toLocaleString("de-DE")}`
-            : ""}
-        </span>
-        {internalLinkReport.stale && (
-          <p>
-            Vor Entscheidungen zuerst den Internal-Link-Health-Audit erneut ausführen.
-            Die Liste kann durch zwischenzeitliche Content- und Journey-Änderungen überholt sein.
-          </p>
-        )}
-      </div>
-
-      <p class="ta-muted">
-        Diese Einträge sind redaktionelle Hinweise, keine automatisch bestätigten
-        technischen Fehler. Links werden nur ergänzt, wenn sie zur Suchintention und
-        zum nächsten Entscheidungsschritt passen.
-      </p>
-
-      {internalLinkReport.advisories.length ? (
+      {data.orphanCandidates.length ? (
         <div class="ta-table-wrap">
           <table>
-            <thead>
-              <tr>
-                <th>Typ</th>
-                <th>Inhalt</th>
-                <th>Route</th>
-                <th>Bewertung</th>
-                <th>Aktion</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Typ</th><th>Inhalt</th><th>Route</th></tr></thead>
             <tbody>
-              {internalLinkReport.advisories.map((advisory) => {
-                const document = documentByRoute.get(advisory.route);
-                return (
-                  <tr>
-                    <td>{typeLabels[document?.type] ?? document?.type ?? "Route"}</td>
-                    <td>{document?.title ?? advisory.message}</td>
-                    <td><code>{advisory.route}</code></td>
-                    <td>
-                      <span class="ta-priority ta-priority--medium">
-                        {advisory.classification}
-                      </span>
-                      <small class="ta-advisory-rationale">{advisory.rationale}</small>
-                    </td>
-                    <td>
-                      <details class="ta-remediation">
-                        <summary>Aktion öffnen</summary>
-                        <p>{advisory.action}</p>
-                        <button
-                          type="button"
-                          class="ta-copy-prompt"
-                          data-copy-prompt={advisory.codexPrompt}
-                        >
-                          Codex-Prompt kopieren
-                        </button>
-                      </details>
-                    </td>
-                  </tr>
-                );
-              })}
+              {data.orphanCandidates.map((document) => (
+                <tr>
+                  <td>{typeLabels[document?.type] ?? document?.type ?? "–"}</td>
+                  <td>{document?.title ?? document?.slug ?? "–"}</td>
+                  <td><code>{document?.route ?? "–"}</code></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       ) : (
-        <p class="ta-empty">
-          {internalLinkReport.available
-            ? "Keine aktiven NO_INCOMING_INTERNAL_LINK-Hinweise vorhanden."
-            : "Der Internal-Link-Health-Report konnte nicht gelesen werden."}
-        </p>
+        <p class="ta-empty">Keine verwaisten Kandidaten erkannt.</p>
       )}
     </section>
   </main>
 </SeoAdminLayout>
-
-<script is:inline>
-  document.addEventListener("click", async (event) => {
-    const button = event.target instanceof Element
-      ? event.target.closest("[data-copy-prompt]")
-      : null;
-    if (!(button instanceof HTMLButtonElement)) return;
-
-    const prompt = button.dataset.copyPrompt || "";
-    if (!prompt) return;
-
-    try {
-      await navigator.clipboard.writeText(prompt);
-      const previous = button.textContent;
-      button.textContent = "Kopiert";
-      window.setTimeout(() => { button.textContent = previous; }, 1600);
-    } catch {
-      window.prompt("Codex-Prompt kopieren:", prompt);
-    }
-  });
-</script>
 
 <style>
   .ta-page{display:grid;gap:1.25rem;max-width:1440px;margin:0 auto;padding:1rem}
@@ -386,13 +292,6 @@ const priorityLabels = {
   .ta-journey{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem}.ta-journey span{padding:.65rem .8rem;border-radius:.75rem;background:var(--seo-surface-subtle,#f3f5f8);font-weight:700}
   .ta-journey-note{max-width:72ch;margin:.85rem 0 0;color:var(--seo-text-muted,#5f6875);line-height:1.55}
   .ta-empty,.ta-muted{color:var(--seo-text-muted,#5f6875)}
-  .ta-audit-source{display:grid;gap:.35rem;margin-bottom:1rem;padding:.85rem 1rem;border:1px solid var(--seo-border,#d9dee7);border-radius:.8rem;background:var(--seo-surface-subtle,#f3f5f8)}
-  .ta-audit-source--stale{border-color:color-mix(in srgb,#b7791f 50%,var(--seo-border,#d9dee7));background:color-mix(in srgb,#b7791f 9%,var(--seo-surface,Canvas))}
-  .ta-audit-source p{margin:.2rem 0 0}
-  .ta-advisory-rationale{display:block;max-width:32rem;margin-top:.4rem;color:var(--seo-text-muted,#5f6875);line-height:1.45}
-  .ta-remediation summary{cursor:pointer;font-weight:700}
-  .ta-remediation p{max-width:34rem;line-height:1.5}
-  .ta-copy-prompt{min-height:2.5rem;padding:.55rem .75rem;border:1px solid var(--seo-border,#d9dee7);border-radius:.65rem;background:var(--seo-surface,Canvas);color:inherit;font-weight:700;cursor:pointer}
   @media(max-width: 900px){.ta-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.ta-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-opportunities,.ta-grid{grid-template-columns:1fr}}
   @media(max-width: 600px){.ta-page{padding:.75rem}.ta-hero{align-items:flex-start}.ta-score strong{font-size:2rem}.ta-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-section,.ta-hero{padding:1rem}.ta-cluster summary{align-items:flex-start}.ta-section-head{align-items:flex-start;flex-direction:column}}
 

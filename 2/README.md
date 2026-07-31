@@ -1,21 +1,27 @@
-# PfotenTechnik Finding AI Null Safety 22.10.3
+# PfotenTechnik SEO-Copilot Prompt Engine 2.0.3
 
-Behebt den Runtime-Absturz:
+Korrektur des AI-Action-Mappings.
 
-```text
-Cannot read properties of undefined (reading 'map')
-at buildFindingAiActions
+## Ursache
+
+Die zentrale Registry unterscheidet zwischen:
+
+- AI-Action-ID: `codex-send`
+- Prompt-Template-ID: `codex-remediation`
+
+Der Test der Version 2.0.2 verwendete die Template-ID als Action-ID. Die Registry
+verwarf sie deshalb und `buildFindingAiActions()` lieferte keine Action.
+
+## Korrektur
+
+- Der Haupttest verwendet die kanonische Action-ID `codex-send`.
+- Bereits gespeicherte Template-IDs werden als kompatible Aliasse aufgelöst.
+- Fehlen `aiActionIds`, nutzt die Engine `resolveFindingAiActionIds()`.
+- Die zentrale AI-Action-Registry bleibt die einzige Quelle.
+- Der Windows-Runner über `cmd.exe /d /s /c` bleibt erhalten.
+
+## Ausführen
+
+```powershell
+node ./2/apply-pfotentechnik-seo-copilot-prompt-engine-2.0.3.mjs
 ```
-
-Ausführen:
-
-```bash
-node 3/apply-pfotentechnik-seo-copilot-finding-ai-null-safety-22.10.3.mjs
-```
-
-Der Patch behandelt fehlende oder ungültige `aiActionIds` als leere Liste,
-filtert ungültige Einträge und lässt die bestehende Registry- und Prompt-Logik
-ansonsten unverändert.
-
-Enthalten sind Regressionstests, vorhandene SEO-Copilot-Tests, vollständiger
-Build und automatischer Rollback.

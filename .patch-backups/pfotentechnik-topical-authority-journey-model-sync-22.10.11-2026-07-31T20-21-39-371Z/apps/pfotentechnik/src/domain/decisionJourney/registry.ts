@@ -5,14 +5,6 @@ export type DecisionStage =
   | "decision"
   | "support";
 
-export const DECISION_STAGE_ORDER = Object.freeze([
-  "orientation",
-  "problem",
-  "evaluation",
-  "decision",
-  "support",
-] satisfies readonly DecisionStage[]);
-
 export type JourneyDocumentType = "page" | "comparison" | "product";
 
 export type JourneyEntry = {
