@@ -1,31 +1,25 @@
-# PfotenTechnik Responsive Image Breakpoints 1.0.0
+# PfotenTechnik CSS Consolidation Audit 1.0.0
 
-Dieser Installer reduziert die automatisch generierten Responsive-Image-Stufen auf:
+Der Installer verändert keine produktiven CSS-Dateien. Er erstellt eine belastbare
+Quellanalyse für den nächsten CSS-Cleanup:
 
-- 480 px
-- 768 px
-- 960 px
-- 1200 px
-
-Ziel:
-- weniger WebP-Derivate bei Markdown-Visuals
-- kleinerer Build-Output
-- schnellerer Astro-Bildprozess
-- weiterhin scharfe mobile, Tablet- und Desktopdarstellung
-- keine Änderung an Komponenten mit expliziten `widths`
+- Bytes und Regeln pro CSS-/Astro-Datei
+- `!important` pro Datei
+- mehrfach definierte Selektoren
+- identische Deklarationsblöcke
+- Ranking der sinnvollsten Cleanup-Ziele
 
 Ausführen im Repository-Root:
 
 ```bash
-node 3/apply-pfotentechnik-responsive-image-breakpoints-1.0.0.mjs
+node 3/apply-pfotentechnik-css-consolidation-audit-1.0.0.mjs
 ```
 
-Der Installer führt anschließend aus:
+Reports:
 
-```bash
-node --check apps/pfotentechnik/astro.config.mjs
-npm run build:pfotentechnik
-npm --workspace apps/pfotentechnik run audit:performance:strict
+```text
+apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.md
+apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.json
 ```
 
-Bei einem Fehler wird `astro.config.mjs` automatisch wiederhergestellt.
+Danach werden bestehender Komponenten- und Performance-Audit ausgeführt.
