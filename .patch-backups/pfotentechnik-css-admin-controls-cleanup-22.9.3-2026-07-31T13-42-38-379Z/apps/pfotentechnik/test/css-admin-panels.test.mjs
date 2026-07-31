@@ -46,11 +46,8 @@ test("Panel-Layer enthält Oberflächen, Grids und Metriken", () => {
   }
 });
 
-test("Nachfolgende Feature-Systeme bleiben außerhalb des Panel-Layers", () => {
+test("Nachfolgende Feature-Systeme bleiben in seo-admin.css", () => {
   const source = fs.readFileSync(sourceFile, "utf8");
-  const controlsFile = path.join(styles, "seo-admin-controls.css");
-  const controls = fs.existsSync(controlsFile) ? fs.readFileSync(controlsFile, "utf8") : "";
-  const combined = source + "\n" + controls;
   for (const required of [
     ".seo-badge",
     ".seo-filter-grid",
@@ -58,7 +55,7 @@ test("Nachfolgende Feature-Systeme bleiben außerhalb des Panel-Layers", () => {
     ".seo-finding",
     ".seo-workspace-summary"
   ]) {
-    assert.ok(combined.includes(required), "Fehlt außerhalb Panels: " + required);
+    assert.ok(source.includes(required), "Fehlt im Hauptlayer: " + required);
   }
 });
 
@@ -75,11 +72,13 @@ test("Nachfolgende Features wurden nicht in Panels verschoben", () => {
   }
 });
 
-test("Control-Layer folgt auf Foundation und Panels", () => {
+test("seo-admin.css beginnt nach Imports mit Badge-System", () => {
   const source = fs.readFileSync(sourceFile, "utf8");
-  const controlsImport = '@import "./seo-admin-controls.css";';
-  assert.ok(source.includes(controlsImport));
-  assert.ok(source.indexOf(controlsImport) > source.indexOf(panelsImport));
+  const remainder = source
+    .replace(/^@import "\.\/seo-admin-foundation\.css";\s*/, "")
+    .replace(/^@import "\.\/seo-admin-panels\.css";\s*/, "")
+    .trimStart();
+  assert.ok(remainder.startsWith(".seo-badges,"));
 });
 
 test("Dark-Mode-System-Fallback bleibt im Hauptlayer", () => {

@@ -1,0 +1,34 @@
+{
+  "patch": "pfotentechnik-css-admin-controls-cleanup-22.9.3",
+  "sourceBytesBefore": 5439,
+  "sourceBytesAfter": 3921,
+  "controlsBytes": 1714,
+  "migratedBlockHash": "3eac9a6312d08a6d01f16c08180a042da63fddb13d8ecf5a70fc5470e57efafc",
+  "migratedSystems": [
+    "badge groups",
+    "actions",
+    "source state",
+    "tabs",
+    "severity badges",
+    "filter grid",
+    "toolbar",
+    "labels",
+    "select, input and textarea controls"
+  ],
+  "retainedSystems": [
+    "tables",
+    "lists",
+    "empty states",
+    "status",
+    "anchor cards",
+    "findings",
+    "workspace summary",
+    "responsive rules",
+    "system dark-mode fallback"
+  ],
+  "updatedRegressionTests": [
+    "css-admin-foundation.test.mjs",
+    "css-admin-panels.test.mjs"
+  ],
+  "generatedAt": "2026-07-31T13:42:38.380Z"
+}

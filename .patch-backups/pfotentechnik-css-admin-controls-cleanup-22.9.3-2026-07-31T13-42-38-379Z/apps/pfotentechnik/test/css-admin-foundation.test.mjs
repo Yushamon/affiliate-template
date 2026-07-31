@@ -65,11 +65,8 @@ test("Admin-Importkette beginnt mit Foundation und Panels", () => {
   assert.ok(afterFoundation.startsWith(panelsImport));
 });
 
-test("Weitere Feature-Systeme bleiben außerhalb der Foundation", () => {
+test("Weitere Feature-Systeme bleiben im Hauptlayer", () => {
   const source = fs.readFileSync(sourceFile, "utf8");
-  const controlsFile = path.join(styles, "seo-admin-controls.css");
-  const controls = fs.existsSync(controlsFile) ? fs.readFileSync(controlsFile, "utf8") : "";
-  const combined = source + "\n" + controls;
   for (const required of [
     ".seo-badge",
     ".seo-filter-grid",
@@ -77,7 +74,7 @@ test("Weitere Feature-Systeme bleiben außerhalb der Foundation", () => {
     ".seo-finding",
     ".seo-workspace-summary"
   ]) {
-    assert.ok(combined.includes(required), "Fehlt außerhalb Foundation: " + required);
+    assert.ok(source.includes(required), "Fehlt im Hauptlayer: " + required);
   }
 });
 

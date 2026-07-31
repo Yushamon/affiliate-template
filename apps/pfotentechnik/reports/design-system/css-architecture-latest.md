@@ -1,17 +1,17 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-07-31T13:39:46.128Z
+Erzeugt: 2026-07-31T13:42:43.548Z
 
 ## Zusammenfassung
 
-- CSS-Dateien: 38
+- CSS-Dateien: 39
 - Astro-Dateien mit Style-Block: 53
-- Quell-CSS: 747165 Bytes
-- Regeln: 8032
+- Quell-CSS: 747361 Bytes
+- Regeln: 8035
 - !important-Deklarationen: 1649
 - mehrfach definierte Selektoren: 1536
 - identische Deklarationsblöcke: 1031
-- Importkanten: 63
+- Importkanten: 65
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
 - sichere Löschkandidaten: 0
@@ -20,7 +20,7 @@ Erzeugt: 2026-07-31T13:39:46.128Z
 
 | Owner | Dateien | Bytes | Regeln | !important |
 |---|---:|---:|---:|---:|
-| design-system | 30 | 304646 | 4084 | 971 |
+| design-system | 31 | 304842 | 4087 | 971 |
 | comparison-platform | 5 | 151747 | 1247 | 279 |
 | editorial-content | 1 | 28892 | 172 | 258 |
 | manufacturer-pages | 3 | 25513 | 379 | 84 |
@@ -61,7 +61,6 @@ Erzeugt: 2026-07-31T13:39:46.128Z
 | `packages/affiliate-core/src/components/Header.astro` | component-inline | navigation | 7141 | 48 | 0 | 0 |
 | `packages/affiliate-core/src/styles/home.css` | global | design-system | 6844 | 69 | 0 | 2 |
 | `apps/pfotentechnik/src/styles/pfotentechnik-primitives.css` | global | design-system | 5473 | 75 | 0 | 1 |
-| `apps/pfotentechnik/src/styles/seo-admin.css` | global | design-system | 5439 | 65 | 0 | 1 |
 | `apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro` | admin | admin-seo-copilot | 5012 | 86 | 0 | 0 |
 | `packages/affiliate-core/src/components/ImageLightbox.astro` | component-inline | component-owner-unresolved | 4861 | 40 | 0 | 0 |
 | `apps/pfotentechnik/src/pages/kaufberatung.astro` | component-inline | component-owner-unresolved | 4654 | 35 | 0 | 0 |
@@ -73,6 +72,7 @@ Erzeugt: 2026-07-31T13:39:46.128Z
 | `packages/affiliate-core/src/styles/header-footer.css` | global | navigation | 4186 | 35 | 0 | 2 |
 | `packages/affiliate-core/src/styles/ui.css` | global | design-system | 4127 | 49 | 0 | 2 |
 | `apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro` | admin | admin-seo-copilot | 4111 | 51 | 0 | 0 |
+| `apps/pfotentechnik/src/pages/vergleiche/index.astro` | component-inline | component-owner-unresolved | 4108 | 32 | 0 | 0 |
 
 ## Sichere Löschkandidaten
 

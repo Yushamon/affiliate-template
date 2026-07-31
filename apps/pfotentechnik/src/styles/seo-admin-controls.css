@@ -1,0 +1,77 @@
+/* SEO Admin controls: badges, actions, tabs, filters and form controls.
+ * Aus seo-admin.css extrahiert, ohne Selektoren oder Deklarationen zu verändern.
+ */
+
+.seo-badges,
+.seo-actions,
+.seo-source-state,
+.seo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.seo-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 4px 9px;
+  border-radius: var(--seo-radius-pill);
+  background: var(--seo-surface-soft);
+  color: var(--seo-muted);
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.seo-badge[data-level="high"],
+.seo-badge[data-level="critical"],
+.seo-badge[data-level="error"] {
+  background: var(--seo-danger-soft);
+  color: var(--seo-danger);
+}
+
+.seo-badge[data-level="medium"],
+.seo-badge[data-level="warning"] {
+  background: var(--seo-warning-soft);
+  color: var(--seo-warning);
+}
+
+.seo-badge[data-level="low"],
+.seo-badge[data-level="ok"],
+.seo-badge[data-level="fixed"],
+.seo-badge[data-level="auto-fixed"] {
+  background: var(--seo-accent-soft);
+  color: var(--seo-accent-strong);
+}
+
+.seo-filter-grid,
+.seo-toolbar {
+  display: grid;
+  gap: 10px;
+}
+
+.seo-filter-grid { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.seo-toolbar { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+
+.seo-filter-grid label,
+.seo-toolbar label {
+  display: grid;
+  gap: 5px;
+  color: var(--seo-muted);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.seo-filter-grid select,
+.seo-toolbar select,
+.seo-toolbar input,
+.seo-toolbar textarea {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--seo-border);
+  border-radius: var(--seo-radius-sm);
+  padding: 8px 10px;
+  background: var(--seo-surface);
+  color: var(--seo-text);
+}
