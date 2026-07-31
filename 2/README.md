@@ -1,34 +1,29 @@
-# PfotenTechnik SEO-Copilot Prompt Engine 2.0.11
+# PfotenTechnik Comparison Token + CSS Baseline 1.0.1
 
-Reparatur der Marktsignal-Testmigration.
+Korrektur der Validierungsreihenfolge aus Version 1.0.0.
 
 ## Ursache
 
-Der Installer verwendete:
-
-```js
-semanticMarketSignalLines.join("\\n")
-```
-
-Dadurch wurden sichtbare `\n`-Zeichen statt echter Zeilenumbrüche in
-`test/seo-copilot.test.mjs` geschrieben.
+Der Performance-Audit prüft gerenderte Dateien unter `apps/pfotentechnik/dist`.
+Version 1.0.0 führte den Audit vor dem Astro-Build aus. Bei einem unvollständigen
+oder alten `dist` wurden deshalb vorhandene Routen fälschlich als fehlend gemeldet.
 
 ## Korrektur
 
-Der Installer erkennt nun drei mögliche Repository-Zustände:
+Die Reihenfolge lautet nun:
 
-1. alter wortlautabhängiger Test
-2. beschädigter Test mit sichtbaren `\n`
-3. bereits korrekt migrierter semantischer Test
+1. Design Token Audit
+2. Design System Check
+3. Astro Build
+4. Performance Audit
 
-Er überführt jeden unterstützten Zustand in denselben gültigen Zielzustand.
-Die Datei ist bereits Teil von Backup und Rollback. Anschließend läuft
-`node --check`, bevor die vollständige Testsuite startet.
-
-Prompt-Engine, Auditlogik, Registry und Prompt-Ausgabe bleiben unverändert.
+Tokenisierung und CSS-Baseline bleiben gegenüber 1.0.0 unverändert.
 
 ## Ausführen
 
 ```powershell
-node ./2/apply-pfotentechnik-seo-copilot-prompt-engine-2.0.11.mjs
+node ./2/apply-pfotentechnik-comparison-token-and-css-baseline-1.0.1.mjs
 ```
+
+Bei einem Fehler werden CSS-Datei und Baseline weiterhin vollständig
+zurückgerollt.

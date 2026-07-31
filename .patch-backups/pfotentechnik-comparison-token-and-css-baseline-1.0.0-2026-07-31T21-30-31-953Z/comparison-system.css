@@ -170,7 +170,7 @@
 
 .comparison-placeholder--product {
   min-height: 190px;
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
 }
 
 .comparison-section__head {
@@ -401,7 +401,7 @@
 .comparison-table-wrap {
   width: 100%;
   border: 1px solid var(--comparison-line);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: #fff;
   box-shadow: var(--comparison-shadow);
 }
@@ -518,7 +518,7 @@
   margin-inline: auto;
   padding: .75rem;
   border: 1px solid rgba(24,116,59,.22);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: rgba(255,255,255,.96);
   box-shadow: 0 18px 55px rgba(20,32,26,.18);
   backdrop-filter: blur(14px);
@@ -671,7 +671,7 @@
   .comparison-table tr {
     margin-bottom: .9rem;
     border: 1px solid var(--comparison-line);
-    border-radius: var(--pt-radius-lg);
+    border-radius: 1rem;
     background: #fff;
   }
 
@@ -3600,7 +3600,7 @@ body.dark [data-dark-mode-ready="true"] .comparison-table :is(th, td),
   gap: .2rem;
   padding: 1rem;
   border: 1px solid var(--comparison-line);
-  border-radius: var(--pt-radius-lg);
+  border-radius: 1rem;
   background: var(--comparison-surface-soft);
 }
 
@@ -3785,7 +3785,7 @@ body.dark [data-dark-mode-ready="true"] .comparison-table :is(th, td),
   .comparison-insight-summary,
   .comparison-methodology {
     padding: 1rem;
-    border-radius: var(--pt-radius-lg);
+    border-radius: 1rem;
   }
 
   .comparison-insight-summary__grid {
