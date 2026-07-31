@@ -1,17 +1,17 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-07-31T13:26:44.547Z
+Erzeugt: 2026-07-31T13:33:30.792Z
 
 ## Zusammenfassung
 
-- CSS-Dateien: 36
+- CSS-Dateien: 37
 - Astro-Dateien mit Style-Block: 53
-- Quell-CSS: 746784 Bytes
-- Regeln: 8036
+- Quell-CSS: 746986 Bytes
+- Regeln: 8034
 - !important-Deklarationen: 1649
-- mehrfach definierte Selektoren: 1536
-- identische Deklarationsblöcke: 1032
-- Importkanten: 59
+- mehrfach definierte Selektoren: 1534
+- identische Deklarationsblöcke: 1031
+- Importkanten: 61
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
 - sichere Löschkandidaten: 0
@@ -20,7 +20,7 @@ Erzeugt: 2026-07-31T13:26:44.547Z
 
 | Owner | Dateien | Bytes | Regeln | !important |
 |---|---:|---:|---:|---:|
-| design-system | 28 | 304265 | 4088 | 971 |
+| design-system | 29 | 304467 | 4086 | 971 |
 | comparison-platform | 5 | 151747 | 1247 | 279 |
 | editorial-content | 1 | 28892 | 172 | 258 |
 | manufacturer-pages | 3 | 25513 | 379 | 84 |
@@ -57,10 +57,10 @@ Erzeugt: 2026-07-31T13:26:44.547Z
 | `packages/affiliate-core/src/styles/article.css` | global | design-system | 14434 | 143 | 0 | 2 |
 | `apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro` | product | product-experience | 11823 | 99 | 0 | 0 |
 | `apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css` | global | design-system | 11775 | 149 | 0 | 1 |
-| `apps/pfotentechnik/src/styles/seo-admin.css` | global | design-system | 10582 | 134 | 0 | 1 |
 | `packages/affiliate-core/src/styles/misc.css` | global | design-system | 9749 | 108 | 0 | 2 |
 | `packages/affiliate-core/src/components/Header.astro` | component-inline | navigation | 7141 | 48 | 0 | 0 |
 | `packages/affiliate-core/src/styles/home.css` | global | design-system | 6844 | 69 | 0 | 2 |
+| `apps/pfotentechnik/src/styles/seo-admin.css` | global | design-system | 6589 | 85 | 0 | 1 |
 | `apps/pfotentechnik/src/styles/pfotentechnik-primitives.css` | global | design-system | 5473 | 75 | 0 | 1 |
 | `apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro` | admin | admin-seo-copilot | 5012 | 86 | 0 | 0 |
 | `packages/affiliate-core/src/components/ImageLightbox.astro` | component-inline | component-owner-unresolved | 4861 | 40 | 0 | 0 |
@@ -69,10 +69,10 @@ Erzeugt: 2026-07-31T13:26:44.547Z
 | `apps/pfotentechnik/src/components/EditorialTransparency.astro` | component-inline | component-owner-unresolved | 4566 | 37 | 0 | 0 |
 | `packages/affiliate-core/src/components/EditorialScore.astro` | component-inline | component-owner-unresolved | 4553 | 39 | 0 | 0 |
 | `apps/pfotentechnik/src/components/AutoContentBlocks.astro` | component-inline | component-owner-unresolved | 4400 | 61 | 0 | 0 |
+| `apps/pfotentechnik/src/styles/seo-admin-foundation.css` | global | design-system | 4195 | 47 | 0 | 2 |
 | `packages/affiliate-core/src/styles/header-footer.css` | global | navigation | 4186 | 35 | 0 | 2 |
 | `packages/affiliate-core/src/styles/ui.css` | global | design-system | 4127 | 49 | 0 | 2 |
 | `apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro` | admin | admin-seo-copilot | 4111 | 51 | 0 | 0 |
-| `apps/pfotentechnik/src/pages/vergleiche/index.astro` | component-inline | component-owner-unresolved | 4108 | 32 | 0 | 0 |
 
 ## Sichere Löschkandidaten
 

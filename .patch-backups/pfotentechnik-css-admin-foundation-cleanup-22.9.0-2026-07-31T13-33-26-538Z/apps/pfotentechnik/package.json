@@ -151,8 +151,7 @@
     "test:css-card-system": "node --test test/css-card-system.test.mjs",
     "test:css-panel-system": "node --test test/css-panel-system.test.mjs",
     "test:css-comparison-system": "node --test test/css-comparison-system.test.mjs",
-    "test:css-product-system": "node --test test/css-product-system.test.mjs",
-    "test:css-admin-foundation": "node --test test/css-admin-foundation.test.mjs"
+    "test:css-product-system": "node --test test/css-product-system.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
