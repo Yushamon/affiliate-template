@@ -143,8 +143,7 @@
     "css:cleanup:safe": "node scripts/design-system/css-safe-cleanup.mjs",
     "css:cleanup:safe:write": "node scripts/design-system/css-safe-cleanup.mjs --write",
     "test:css-architecture": "node --test test/css-architecture.test.mjs",
-    "test:css-architecture:accuracy": "node --test test/css-architecture-accuracy.test.mjs",
-    "test:css-foundation": "node --test test/css-foundation-tokens.test.mjs"
+    "test:css-architecture:accuracy": "node --test test/css-architecture-accuracy.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
