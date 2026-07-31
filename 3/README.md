@@ -1,14 +1,16 @@
-# PfotenTechnik CSS Comparison System + Cleanup 22.7.3
+# PfotenTechnik CSS Product System + Cleanup 22.8.0
 
-22.7.2 hat korrekt erkannt, dass einzelne Core-Tokens mehrfach mit
-unterschiedlichen Werten definiert sind.
+Voraussetzung: 22.7.3 wurde erfolgreich installiert.
 
-22.7.3 erhält die bestehende CSS-Kaskade: Bei mehrfachen top-level
-`:root`-Deklarationen wird der letzte und damit bisher wirksame Wert übernommen.
+Ausführen:
 
 ```bash
-node 3/apply-pfotentechnik-css-comparison-system-cleanup-22.7.3.mjs
+node 3/apply-pfotentechnik-css-product-system-cleanup-22.8.0.mjs
 ```
 
-Verschachtelte Root-Regeln innerhalb von Media Queries oder anderen At-Rules
-werden nicht migriert.
+Der Installer verschiebt den zusammenhängenden Product-Box-Bereich aus
+`packages/affiliate-core/src/styles/product.css` nach `product-box.css`.
+
+Ranking-, Produktlisten- und weitere produktbezogene Regeln bleiben in
+`product.css`. Tests, CSS-Audit, vollständiger Build und Rollback sind
+integriert.

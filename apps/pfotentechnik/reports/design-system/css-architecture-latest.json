@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-31T13:12:56.685Z",
+  "generatedAt": "2026-07-31T13:26:44.547Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 88,
-    "cssFiles": 35,
+    "records": 89,
+    "cssFiles": 36,
     "astroStyleFiles": 53,
-    "bytes": 746631,
-    "rules": 8037,
+    "bytes": 746784,
+    "rules": 8036,
     "important": 1649,
     "actualImportantDeclarations": 1649,
-    "duplicateSelectors": 1537,
+    "duplicateSelectors": 1536,
     "duplicateDeclarationBlocks": 1032,
-    "importEdges": 57,
+    "importEdges": 59,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
     "emptyCssFiles": 0,
@@ -321,24 +321,6 @@
       "maxSelectorDepth": 5
     },
     {
-      "file": "packages/affiliate-core/src/styles/product.css",
-      "kind": "css",
-      "category": "product",
-      "owner": "product-experience",
-      "bytes": 35078,
-      "meaningfulBytes": 32259,
-      "contentHash": "14d4211110557f972c0d1c5ba211e205761bd5a2a01d5656334ff94821fda5b8",
-      "normalizedHash": "6921154b2c5d4114f4424e31fa57327d2d2ff3d81aa93ee80b34f7e3ca483e71",
-      "importedBy": [
-        "packages/affiliate-core/src/styles/global.css",
-        "packages/affiliate-core/src/styles/global.css"
-      ],
-      "imports": [],
-      "rules": 283,
-      "important": 0,
-      "maxSelectorDepth": 7
-    },
-    {
       "file": "packages/affiliate-core/src/styles/premium-page.css",
       "kind": "css",
       "category": "global",
@@ -355,6 +337,35 @@
       "rules": 305,
       "important": 0,
       "maxSelectorDepth": 5
+    },
+    {
+      "file": "packages/affiliate-core/src/styles/product.css",
+      "kind": "css",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 33013,
+      "meaningfulBytes": 30354,
+      "contentHash": "920397a61fa174d014ad1a2f0730bb69436e5f604737d38e31db1af70540b498",
+      "normalizedHash": "153c0004be6c81f3ee21e647afe7440720a490daa8c2038ec64ae9e5d16a5101",
+      "importedBy": [
+        "packages/affiliate-core/src/styles/global.css",
+        "packages/affiliate-core/src/styles/global.css"
+      ],
+      "imports": [
+        {
+          "raw": "./product-box.css",
+          "target": "packages/affiliate-core/src/styles/product-box.css",
+          "exists": true
+        },
+        {
+          "raw": "./product-box.css",
+          "target": "packages/affiliate-core/src/styles/product-box.css",
+          "exists": true
+        }
+      ],
+      "rules": 265,
+      "important": 0,
+      "maxSelectorDepth": 7
     },
     {
       "file": "packages/affiliate-core/src/styles/article.css",
@@ -827,6 +838,24 @@
       "bytes": 2250,
       "meaningfulBytes": 1872,
       "importedBy": [],
+      "imports": [],
+      "rules": 17,
+      "important": 0,
+      "maxSelectorDepth": 2
+    },
+    {
+      "file": "packages/affiliate-core/src/styles/product-box.css",
+      "kind": "css",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 2218,
+      "meaningfulBytes": 1933,
+      "contentHash": "3bd4c266271c2e99c548ab41a24b5d2a1bb7408eeb190de960778c448c2d2a4a",
+      "normalizedHash": "3cf681993ab03b201258c56e47b9f706424284f796ddef2a604458c0e53a6260",
+      "importedBy": [
+        "packages/affiliate-core/src/styles/product.css",
+        "packages/affiliate-core/src/styles/product.css"
+      ],
       "imports": [],
       "rules": 17,
       "important": 0,
@@ -1897,6 +1926,18 @@
       "importer": "packages/affiliate-core/src/styles/global.css",
       "raw": "./premium-page.css",
       "target": "packages/affiliate-core/src/styles/premium-page.css",
+      "exists": true
+    },
+    {
+      "importer": "packages/affiliate-core/src/styles/product.css",
+      "raw": "./product-box.css",
+      "target": "packages/affiliate-core/src/styles/product-box.css",
+      "exists": true
+    },
+    {
+      "importer": "packages/affiliate-core/src/styles/product.css",
+      "raw": "./product-box.css",
+      "target": "packages/affiliate-core/src/styles/product-box.css",
       "exists": true
     }
   ],
@@ -8190,6 +8231,7 @@
         "packages/affiliate-core/src/styles/manufacturer.css",
         "packages/affiliate-core/src/styles/misc.css",
         "packages/affiliate-core/src/styles/premium-page.css",
+        "packages/affiliate-core/src/styles/product-box.css",
         "packages/affiliate-core/src/styles/product.css",
         "packages/affiliate-core/src/styles/ui.css",
         "apps/pfotentechnik/src/components/ConversionJourney.astro",
@@ -12046,7 +12088,7 @@
       "files": [
         "packages/affiliate-core/src/styles/misc.css",
         "packages/affiliate-core/src/styles/premium-page.css",
-        "packages/affiliate-core/src/styles/product.css",
+        "packages/affiliate-core/src/styles/product-box.css",
         "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
         "apps/pfotentechnik/src/pages/wissen.astro"
       ]

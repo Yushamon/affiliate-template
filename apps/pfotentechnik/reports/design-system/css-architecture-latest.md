@@ -1,17 +1,17 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-07-31T13:12:56.685Z
+Erzeugt: 2026-07-31T13:26:44.547Z
 
 ## Zusammenfassung
 
-- CSS-Dateien: 35
+- CSS-Dateien: 36
 - Astro-Dateien mit Style-Block: 53
-- Quell-CSS: 746631 Bytes
-- Regeln: 8037
+- Quell-CSS: 746784 Bytes
+- Regeln: 8036
 - !important-Deklarationen: 1649
-- mehrfach definierte Selektoren: 1537
+- mehrfach definierte Selektoren: 1536
 - identische Deklarationsblöcke: 1032
-- Importkanten: 57
+- Importkanten: 59
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
 - sichere Löschkandidaten: 0
@@ -25,7 +25,7 @@ Erzeugt: 2026-07-31T13:12:56.685Z
 | editorial-content | 1 | 28892 | 172 | 258 |
 | manufacturer-pages | 3 | 25513 | 379 | 84 |
 | component-owner-unresolved | 23 | 100880 | 894 | 32 |
-| product-experience | 21 | 96644 | 821 | 20 |
+| product-experience | 22 | 96797 | 820 | 20 |
 | admin-seo-copilot | 5 | 27363 | 353 | 5 |
 | navigation | 2 | 11327 | 83 | 0 |
 
@@ -52,8 +52,8 @@ Erzeugt: 2026-07-31T13:12:56.685Z
 | `apps/pfotentechnik/src/components/admin/SearchIntegrations.astro` | admin | admin-seo-copilot | 3222 | 39 | 2 | 0 |
 | `packages/affiliate-core/src/components/comparison/comparison-explorer-v2.css` | comparison | comparison-platform | 12463 | 101 | 1 | 1 |
 | `apps/pfotentechnik/src/pages/admin/seo/media.astro` | admin | admin-seo-copilot | 7477 | 86 | 1 | 0 |
-| `packages/affiliate-core/src/styles/product.css` | product | product-experience | 35078 | 283 | 0 | 2 |
 | `packages/affiliate-core/src/styles/premium-page.css` | global | design-system | 34192 | 305 | 0 | 2 |
+| `packages/affiliate-core/src/styles/product.css` | product | product-experience | 33013 | 265 | 0 | 2 |
 | `packages/affiliate-core/src/styles/article.css` | global | design-system | 14434 | 143 | 0 | 2 |
 | `apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro` | product | product-experience | 11823 | 99 | 0 | 0 |
 | `apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css` | global | design-system | 11775 | 149 | 0 | 1 |
