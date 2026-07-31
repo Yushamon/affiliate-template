@@ -1,0 +1,227 @@
+---
+import { render } from "astro:content";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import FAQ from "@affiliate-core/components/FAQ.astro";
+import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
+import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
+import DecisionJourney from "../../components/DecisionJourney.astro";
+import AdvisorCta from "../../components/AdvisorCta.astro";
+import EditorialTransparency from "../../components/EditorialTransparency.astro";
+import { siteMeta } from "../../project.config";
+import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
+import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
+import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
+import {
+  getComparisonBreadcrumbs,
+  getRelatedContent
+} from "@app/domain/content";
+import {
+  getInternalLinkDefinitions,
+  getSourceContexts
+} from "../../domain/content/internalLinks";
+import { buildComparisonNextSteps } from "../../domain/recommendationLinks";
+import { findJourneyEntry, toJourneyEntries } from "../../domain/decisionJourney/adapters";
+import { getCachedImage } from "../../lib/imageOptimization";
+import {
+  getComparisons,
+  getManufacturers,
+  getPages,
+  getProducts,
+  type ComparisonEntry
+} from "../../domain/content/registry";
+
+type Props = {
+  entry: ComparisonEntry;
+};
+
+export async function getStaticPaths() {
+  const comparisons = await getComparisons();
+
+  return comparisons.map((entry) => ({
+    params: {
+      comparison: entry.data.slug
+    },
+    props: {
+      entry
+    } satisfies Props
+  }));
+}
+
+const { entry } = Astro.props as Props;
+
+if (!entry) {
+  throw new Error("Der Vergleich wurde nicht an die Route übergeben.");
+}
+
+const comparison = entry.data;
+const { Content } = await render(entry);
+
+const [products, manufacturers, pages, comparisons] = await Promise.all([
+  getProducts(),
+  getManufacturers(),
+  getPages(),
+  getComparisons()
+]);
+const journeyEntries = toJourneyEntries({ pages, comparisons, products });
+const currentJourneyEntry = findJourneyEntry(journeyEntries, "comparison", comparison.data.slug);
+
+const internalLinkDefinitions = getInternalLinkDefinitions({
+  pages,
+  products,
+  comparisons,
+  manufacturers
+});
+const sourceContexts = getSourceContexts(comparison);
+
+const model = buildComparisonViewModel({
+  comparison: entry,
+  products,
+  manufacturers
+});
+
+const comparisonAdvisorDimensions = model.filters
+  .map((filter) => filter.label)
+  .slice(0, 4);
+const comparisonAdvisorText = comparisonAdvisorDimensions.length
+  ? `Grenze ${comparisonAdvisorDimensions.join(", ")} ein, bevor du einzelne Modelle gegenüberstellst.`
+  : "Grenze Tierart, Nutzung, Ausstattung und Budget ein, bevor du einzelne Modelle gegenüberstellst.";
+
+const optimizedOgImage = comparison.heroImage
+  ? await getCachedImage({
+      src: comparison.heroImage.src,
+      width: 1200,
+      quality: "high"
+    })
+  : undefined;
+
+const breadcrumbs = getComparisonBreadcrumbs(entry);
+
+const relatedEntries = await getRelatedContent({
+  currentSlug: comparison.slug,
+  tags: comparison.related?.tags.length
+    ? comparison.related.tags
+    : comparison.tags,
+  sections: comparison.hub?.sections ?? [],
+  type: "comparison",
+  exclude: comparison.related?.exclude ?? [],
+  limit: comparison.related?.limit ?? 4
+});
+
+const relatedItems = relatedEntries.map((related) => ({
+  href: related.href,
+  label:
+    related.type === "product"
+      ? "Produkt"
+      : related.type === "manufacturer"
+        ? "Hersteller"
+        : related.type === "comparison"
+          ? "Vergleich"
+          : "Ratgeber",
+  title: related.hubTitle,
+  text: related.hubDescription
+}));
+
+const comparisonCanonicalPath =
+  comparison.seo?.canonical ??
+  `/vergleiche/${comparison.slug}/`;
+const comparisonCanonicalUrl = new URL(
+  comparisonCanonicalPath,
+  Astro.site ?? Astro.url
+).href;
+
+const comparisonItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": `${comparisonCanonicalUrl}#item-list`,
+  name: comparison.title,
+  description: comparison.seo?.description ?? comparison.description,
+  url: comparisonCanonicalUrl,
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
+  numberOfItems: model.products.length,
+  itemListElement: model.products.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: product.title,
+    url: new URL(product.href, Astro.site ?? Astro.url).href
+  }))
+};
+
+const comparisonNextSteps = buildComparisonNextSteps({
+  comparison,
+  pages,
+  products
+});
+---
+
+<ProjectLayout
+  title={comparison.title}
+  seoTitle={comparison.seo?.title ?? comparison.title}
+  description={comparison.description}
+  seoDescription={
+    comparison.seo?.description ??
+    comparison.description
+  }
+  canonical={
+    comparison.seo?.canonical ??
+    `/vergleiche/${comparison.slug}/`
+  }
+  noindex={comparison.seo?.noindex ?? false}
+  ogImage={optimizedOgImage?.src}
+  faq={comparison.faq}
+  categoryLabel="Vergleiche"
+  breadcrumbs={breadcrumbs}
+  schemaType="webpage"
+  publishedAt={comparison.publishedAt}
+  updatedAt={comparison.updatedAt ?? comparison.publishedAt}
+  author={comparison.author ?? siteMeta.defaultAuthor}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(comparisonItemListSchema)}
+  />
+
+  <div class="comparison-detail">
+    <ComparisonShell model={model} />
+
+    <article class="comparison-content">
+      <AutoLinkContent
+        definitions={internalLinkDefinitions}
+        sourcePath={`/vergleiche/${comparison.slug}/`}
+        sourceGroup="comparison"
+        sourceContexts={sourceContexts}
+        maxLinksPerPage={6}
+      >
+        <Content />
+      </AutoLinkContent>
+    </article>
+
+    <EditorialTransparency
+      kind="vergleich"
+      author={comparison.author ?? siteMeta.defaultAuthor}
+      publishedAt={comparison.publishedAt}
+      updatedAt={comparison.updatedAt ?? comparison.publishedAt}
+      recommendationReason={comparison.recommendation?.text ?? comparison.description}
+    />
+
+    <div data-advisor-integration="comparison">
+      <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text={comparisonAdvisorText} />
+    </div>
+    <DecisionJourney current={currentJourneyEntry} entries={journeyEntries} />
+
+
+
+    <DecisionNextSteps
+      title="Vom Vergleich zur Entscheidung"
+      intro="Vertiefe die passende Kaufberatung oder öffne die stärkste passende Produktempfehlung."
+      items={comparisonNextSteps}
+    />
+
+    {comparison.faq.length > 0 && (
+      <section id="faq" aria-label="Häufige Fragen zum Vergleich">
+        <FAQ items={comparison.faq} />
+      </section>
+    )}
+
+    <RelatedArticles items={relatedItems} />
+  </div>
+</ProjectLayout>

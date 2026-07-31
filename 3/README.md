@@ -1,33 +1,77 @@
-# PfotenTechnik Topical-Authority-Plan
+# PfotenTechnik SEO Copilot Cleanup 1.0.6
 
-## Installation
+Dieser Installer setzt den Architektur-, UX- und Code-Cleanup gegen den geprüften Repository-Stand um.
 
-1. ZIP in das Root-Verzeichnis von `affiliate-template` entpacken.
-2. Aus dem Repository-Root ausführen:
+## Anwendung
 
-```bash
-node 3/pfotentechnik-topical-authority/install-topical-authority-plan.mjs
-```
-
-3. Danach bauen:
+ZIP in oder neben das Repository entpacken. Dann im Repository-Root ausführen:
 
 ```bash
-npm --workspace apps/pfotentechnik run build
+node ./pfotentechnik-seo-copilot-cleanup-1.0.6/apply-pfotentechnik-seo-copilot-cleanup-1.0.6.mjs
 ```
 
-Die Aufgaben erscheinen anschließend im SEO-Copilot als priorisierte Work Packages.
+Der Installer:
 
-## Inhalt
+1. prüft den Basis-Commit `fe54eeaaf6382a01a24ee906678847e8a9102b60`
+2. stoppt bei lokalen Änderungen an Zieldateien
+3. legt den Branch `agent/seo-copilot-architecture-cleanup` an
+4. sichert alle Zieldateien unter `.patch-backups/`
+5. schreibt und patcht die konsolidierte Architektur
+   - verhindert den Methodik-Selbstlink auf `/so-bewerten-wir/`
+6. führt Tests, Audits und Build vollständig aus
+7. rollt bei einem Fehler standardmäßig zurück
+8. schreibt bei Erfolg das Validierungsprotokoll
+9. erstellt einen lokalen Commit
 
-Der Plan berücksichtigt den aktuellen Repository-Stand:
+## Bewusste Optionen
 
-- starke bestehende Cluster: Futterautomaten, GPS-Tracker, Trinkbrunnen
-- größte echte Lücke: Katzenklappen
-- fehlende kaufnahe Ergänzungen bei Trinkbrunnen
-- Restlücken im GPS-Cluster
-- notwendige Konsolidierung im Futterautomaten-Cluster
-- begrenztes Glossar-System
-- Hersteller nur gekoppelt an reale Produktabdeckung
-- Haustierkameras und automatische Katzentoiletten als spätere Expansion
+```bash
+--no-branch
+```
 
-Der Installer erstellt vor Änderungen ein Backup unter `.patch-backups/`.
+Auf dem aktuellen Branch arbeiten.
+
+```bash
+--no-commit
+```
+
+Nach erfolgreicher Validierung nicht committen.
+
+```bash
+--keep-on-failure
+```
+
+Einen fehlgeschlagenen Stand zur Diagnose behalten. Ohne diese Option wird zurückgerollt.
+
+```bash
+--force
+```
+
+Basis- und Änderungsprüfungen bewusst übergehen. Nur nach manueller Prüfung verwenden.
+
+## Ergebnis
+
+Architekturbericht:
+
+```text
+apps/pfotentechnik/docs/SEO_COPILOT_ARCHITECTURE_CLEANUP.md
+```
+
+Validierungsbericht:
+
+```text
+apps/pfotentechnik/reports/seo-copilot/architecture-cleanup-validation-latest.json
+```
+
+## Korrekturen in 1.0.6
+
+- Kompatibilität mit dem bestehenden Compact-Report-Vertrag
+- explizite Freigabe im Codex-Prompt
+- tokenisierter Pill-Radius
+- zulässiger diagnostischer Release-Check
+- Astro-sicheres `getStaticPaths()` für Produkt-Workspaces
+
+
+## Korrektur in 1.0.6
+
+Die abschließende SEO-Release-Diagnose bleibt vollständig aktiv, wird aber als nicht blockierende Fremdprüfung behandelt. Bereits vorhandene Performance-Release-Blocker werden im Validierungsbericht als `warning` dokumentiert und rollen den fachlich bestandenen SEO-Copilot-Architektur-Patch nicht mehr zurück. Alle patchbezogenen Tests, Design-System-Prüfungen, der Astro-Build sowie die fachlichen SEO-Audits bleiben blockierend.

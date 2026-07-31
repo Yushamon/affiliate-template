@@ -1,0 +1,15 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import PromptRegistry from "../../../components/admin/PromptRegistry.astro";
+import SeoWorkPackages from "../../../components/admin/SeoWorkPackages.astro";
+---
+<SeoAdminLayout
+  title="Prompt Registry"
+  description="Eine Registry für Media, Content, Journey, UX, Technik und Codex. Generierte Arbeitspakete greifen auf denselben Vertrag zu."
+  active="prompts"
+>
+  <div class="seo-stack-lg">
+    <PromptRegistry />
+    <SeoWorkPackages mode="prompts" />
+  </div>
+</SeoAdminLayout>

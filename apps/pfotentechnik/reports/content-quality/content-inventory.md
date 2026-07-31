@@ -3,7 +3,7 @@
 Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
 
 - Indexierbare Seiten: 197
-- Gerenderte HTML-Seiten insgesamt: 205
+- Gerenderte HTML-Seiten insgesamt: 274
 - Cluster: 15
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0
@@ -16,24 +16,24 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - comparison-index: 1
 - decision-guide: 7
 - editorial-page: 15
-- guide: 28
+- guide: 27
 - homepage: 1
 - knowledge-hub: 1
 - legal: 4
 - manufacturer: 19
 - manufacturer-index: 1
-- medical-guide: 10
-- problem-solving-guide: 14
+- medical-guide: 12
+- problem-solving-guide: 13
 - product: 67
 
 ## Suchintentionen
 
 - brand-navigation: 19
 - category-discovery: 9
-- commercial-investigation: 33
+- commercial-investigation: 31
 - comparison: 24
-- informational: 23
-- medical-information: 11
+- informational: 22
+- medical-information: 14
 - problem-solving: 11
 - product-research: 67
 

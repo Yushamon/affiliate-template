@@ -1,14 +1,14 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-29T21:26:33.844Z
+Erstellt: 2026-07-31T06:49:31.233Z
 
 ## Ergebnis
 
 - Dokumente: 185
 - Linkdefinitionen: 440
-- Simulierte automatische Links: 403
+- Simulierte automatische Links: 438
 - Fehler: 0
-- Warnungen: 42
+- Warnungen: 41
 - Strict-kritisch: 0
 
 ## Befunde
@@ -46,7 +46,6 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -170,6 +169,7 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - /smarte-haustiertechnik/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /smarte-haustiertechnik/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
 - /smarte-haustiertechnik/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /so-bewerten-wir/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filter wechseln“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
@@ -392,6 +392,9 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - /produkt/xiaomi-smart-pet-fountain-2/ → /hersteller/xiaomi/: „Xiaomi“
 - /produkt/zeromouse-2-0/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/zeromouse-2-0/ → /hersteller/zeromouse/: „ZeroMOUSE“
+- /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petsafe/: „PetSafe“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/wopet-patrol-f07-pro/: „WOPET Patrol F07 Pro“
@@ -401,13 +404,24 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
 - /vergleiche/beste-futterautomaten-fuer-katzen/ → /produkt/cat-mate-c500/: „Cat Mate C500“
 - /vergleiche/beste-futterautomaten-fuer-katzen/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /vergleiche/beste-futterautomaten-fuer-kleine-hunde/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-fuer-kleine-hunde/ → /produkt/petkit-fresh-element-solo/: „PETKIT Fresh Element Solo“
 - /vergleiche/beste-futterautomaten-fuer-kleine-hunde/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-fuer-kleine-hunde/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/catit-pixi-smart-6-meal-feeder/: „Catit PIXI Smart 6-Meal Feeder“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /futterautomat-hund/: „Futterautomaten für Hunde“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
+- /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
+- /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /produkt/cat-mate-c500/: „Cat Mate C500“
+- /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /trinkbrunnen-seniorenkatzen/: „ältere Katze“
+- /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petlibro/: „PETLIBRO“
@@ -416,18 +430,28 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
+- /vergleiche/beste-futterautomaten-mit-akku/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-mit-akku/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-mit-akku/ → /hersteller/petsafe/: „PetSafe“
+- /vergleiche/beste-futterautomaten-mit-edelstahl-napf/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/beste-futterautomaten-mit-edelstahl-napf/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-mit-edelstahl-napf/ → /hersteller/honeyguardian/: „HoneyGuardian“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/surefeed/: „SureFeed“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/cat-mate/: „Cat Mate“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/petlibro/: „Petlibro“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/imipaw/: „IMIPAW“
+- /vergleiche/beste-futterautomaten-unter-100-euro/ → /produkt/cat-mate-c500/: „Cat Mate C500“
+- /vergleiche/beste-futterautomaten-unter-100-euro/ → /hersteller/honeyguardian/: „HoneyGuardian“
+- /vergleiche/beste-futterautomaten-unter-100-euro/ → /hersteller/imipaw/: „IMIPAW“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/paj-pet-finder-4g-mini/: „PAJ PET Finder 4G Mini“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6/: „Tractive DOG 6“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/weenect/: „Weenect“
@@ -443,19 +467,29 @@ Erstellt: 2026-07-29T21:26:33.844Z
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
 - /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petlibro-dockstream-2-smart/: „PETLIBRO Dockstream 2 Smart“
 - /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-solo-2-fountain/: „PETKIT Eversweet Solo 2“
 - /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /produkt/petkit-eversweet-ultra/: „PETKIT Eversweet Ultra“
-- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /hersteller/cat-mate/: „Cat Mate“
-- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /vergleiche/beste-trinkbrunnen-fuer-katzen/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
 - /vergleiche/futterautomat-fuer-grosse-hunde/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
 - /vergleiche/futterautomat-fuer-grosse-hunde/ → /hersteller/petlibro/: „Petlibro“
 - /vergleiche/futterautomat-fuer-grosse-hunde/ → /hersteller/xiaomi/: „Xiaomi“
+- /vergleiche/futterautomat-gegen-schlingen/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
+- /vergleiche/futterautomat-gegen-schlingen/ → /produkt/petsafe-healthy-pet-simply-feed/: „PetSafe Healthy Pet Simply Feed“
 - /vergleiche/futterautomat-gegen-schlingen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /vergleiche/futterautomat-gegen-schlingen/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/futterautomat-gegen-schlingen/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/futterautomat-mit-app/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/futterautomat-mit-app/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/futterautomat-mit-app/ → /hersteller/xiaomi/: „Xiaomi“
+- /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/paj-pet-finder-4g-mini/: „PAJ Pet Finder 4G Mini“
+- /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“
+- /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
+- /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/gps-tracker-ohne-abo/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
+- /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/paj-pet-finder-4g-mini/: „PAJ Pet Finder 4G Mini“
+- /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/tractive/: „Tractive“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
 - /hersteller/cat-mate/ → /smarte-futterautomaten/: „Futterautomaten“

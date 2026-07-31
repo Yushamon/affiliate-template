@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-29T21:26:27.777Z",
+    "generatedAt": "2026-07-31T06:49:28.130Z",
     "countsByCollection": {
       "pages": 75,
       "products": 67,
@@ -28,10 +28,10 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 204,
+    "routes": 207,
     "findings": {
       "error": 0,
-      "warning": 49,
+      "warning": 50,
       "info": 65
     }
   },
@@ -293,6 +293,12 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1509 Zeilen",
       "file": "src/components/advisor/PetAdvisor.astro"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1003 Zeilen",
+      "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
     },
     {
       "severity": "warning",

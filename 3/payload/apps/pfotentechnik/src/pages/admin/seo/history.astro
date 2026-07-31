@@ -1,0 +1,67 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { readCopilotWorkspace } from "../../../lib/seo-copilot/store.mjs";
+
+const workspace = readCopilotWorkspace();
+const snapshots = [...workspace.qualitySnapshots].reverse().slice(0, 30);
+const events = [...workspace.qualityHistory].reverse().slice(0, 100);
+---
+<SeoAdminLayout
+  title="Systemhistorie"
+  description="Snapshots, Statusänderungen, behobene Findings, Auto-Fixes und Regressionen aus demselben Copilot-Workspace."
+  active="history"
+>
+  <div class="seo-stack-lg">
+    <section class="seo-panel">
+      <div class="seo-section-header">
+        <div>
+          <span class="seo-eyebrow">Auditierbare Entwicklung</span>
+          <h2>Quality-Verlauf statt Browser-Zustand</h2>
+          <p>
+            Der zentrale Sync erzeugt Snapshots. Neue, behobene und wiederkehrende Findings
+            werden anhand stabiler IDs protokolliert.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-grid" data-columns="2" aria-label="Quality-Snapshots">
+      {snapshots.map((snapshot) => (
+        <article class="seo-card seo-stack">
+          <span class="seo-badge">{new Date(snapshot.generatedAt).toLocaleString("de-DE")}</span>
+          <div class="seo-metrics">
+            <div class="seo-metric"><span>Aktiv</span><strong>{snapshot.summary?.active ?? 0}</strong></div>
+            <div class="seo-metric"><span>Blocker</span><strong>{snapshot.summary?.releaseBlockers ?? 0}</strong></div>
+            <div class="seo-metric"><span>Regressionen</span><strong>{snapshot.summary?.regressions ?? 0}</strong></div>
+            <div class="seo-metric"><span>Quellen</span><strong>{snapshot.summary?.sourcesAvailable ?? 0}</strong></div>
+          </div>
+        </article>
+      ))}
+      {!snapshots.length && (
+        <div class="seo-card seo-empty">
+          Noch kein Snapshot. <code>quality-ops:sync</code> erzeugt die erste Vergleichsbasis.
+        </div>
+      )}
+    </section>
+
+    <section class="seo-panel seo-stack">
+      <div class="seo-section-header">
+        <div><h2>Letzte Änderungen</h2></div>
+      </div>
+      <div class="seo-list">
+        {events.map((event) => (
+          <article class="seo-list-item">
+            <h3>{event.description}</h3>
+            <p>
+              {new Date(event.occurredAt).toLocaleString("de-DE")} ·
+              {event.from || "Neu"} → {event.to} · {event.source}
+            </p>
+            {event.note && <p>{event.note}</p>}
+            <code>{event.findingId}</code>
+          </article>
+        ))}
+        {!events.length && <div class="seo-empty">Noch keine Finding-Änderungen protokolliert.</div>}
+      </div>
+    </section>
+  </div>
+</SeoAdminLayout>

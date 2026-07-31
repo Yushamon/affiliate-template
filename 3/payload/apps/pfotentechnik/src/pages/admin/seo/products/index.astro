@@ -1,0 +1,165 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import { getCollection } from "astro:content";
+import SeoAdminLayout from "../../../../layouts/SeoAdminLayout.astro";
+import { readCopilotWorkspace } from "../../../../lib/seo-copilot/store.mjs";
+import { APP_ROOT } from "../../../../lib/search/config.mjs";
+
+const activeStatuses = new Set(["open", "in-progress", "snoozed", "waiting", "manual-review", "regression"]);
+const workspace = readCopilotWorkspace();
+const activeFindings = workspace.qualityFindings.filter((item) => activeStatuses.has(item.status));
+const products = await getCollection("products");
+
+const slugOf = (entry: any) =>
+  String(entry.data?.slug || entry.id || "")
+    .replace(/\.(?:md|mdx)$/i, "")
+    .replace(/^.*\//, "");
+
+const categoryOf = (data: any) =>
+  typeof data.category === "string"
+    ? data.category
+    : data.category?.label || data.category?.key || "Ohne Kategorie";
+
+const imageFiles = (slug: string) => {
+  const directories = [
+    path.join(APP_ROOT, "src", "assets", "images", "products", slug),
+    path.join(APP_ROOT, "src", "assets", "images", "project", "pfotentechnik", "products", slug),
+  ];
+  return [...new Set(directories.flatMap((directory) =>
+    fs.existsSync(directory)
+      ? fs.readdirSync(directory).filter((name) => /\.(?:webp|avif|png|jpe?g)$/i.test(name))
+      : []
+  ))];
+};
+
+const rows = products.map((entry) => {
+  const slug = slugOf(entry);
+  const route = `/produkt/${slug}/`;
+  const findings = activeFindings.filter((finding) =>
+    finding.route === route
+    || finding.urls?.includes(route)
+    || finding.file?.includes(slug)
+    || finding.files?.some((file) => file.includes(slug))
+  );
+  const media = imageFiles(slug);
+  return {
+    slug,
+    title: entry.data.title || entry.data.name || slug,
+    category: categoryOf(entry.data),
+    findings: findings.length,
+    blockers: findings.filter((item) => item.releaseBlocker).length,
+    highPriority: findings.filter((item) => item.priority?.level === "high").length,
+    media: media.length,
+  };
+}).sort((left, right) =>
+  right.blockers - left.blockers
+  || right.highPriority - left.highPriority
+  || right.findings - left.findings
+  || left.title.localeCompare(right.title, "de")
+);
+
+const serialized = JSON.stringify(rows).replace(/</g, "\\u003c");
+---
+<SeoAdminLayout
+  title="Seiten-Workspaces"
+  description="Ein Workspace pro Produktseite. Media, Content, SEO, Journey, EEAT, Technik, Findings und AI Actions laufen dort zusammen, ohne den Build mit einer zweiten Anwendung zu belasten."
+  active="products"
+>
+  <div class="seo-stack-lg">
+    <section class="seo-panel seo-stack">
+      <div class="seo-section-header">
+        <div>
+          <span class="seo-eyebrow">Produktseiten</span>
+          <h2>{rows.length} Workspaces</h2>
+          <p>Sortiert nach Blockern und aktiver Priorität.</p>
+        </div>
+      </div>
+
+      <div class="seo-metrics">
+        <article class="seo-metric"><span>Produkte</span><strong>{rows.length}</strong></article>
+        <article class="seo-metric" data-level={rows.some((row) => row.blockers) ? "danger" : "ok"}>
+          <span>Blocker</span><strong>{rows.reduce((sum, row) => sum + row.blockers, 0)}</strong>
+        </article>
+        <article class="seo-metric"><span>Aktive Findings</span><strong>{rows.reduce((sum, row) => sum + row.findings, 0)}</strong></article>
+        <article class="seo-metric"><span>Media-Dateien</span><strong>{rows.reduce((sum, row) => sum + row.media, 0)}</strong></article>
+      </div>
+
+      <div class="seo-toolbar">
+        <label>
+          Workspace suchen
+          <input type="search" data-product-workspace-search placeholder="Produkt oder Kategorie" />
+        </label>
+      </div>
+    </section>
+
+    <section class="seo-panel seo-table-wrap">
+      <table class="seo-table">
+        <thead>
+          <tr>
+            <th>Produkt</th>
+            <th>Kategorie</th>
+            <th>Findings</th>
+            <th>Blocker</th>
+            <th>Media</th>
+            <th>Workspace</th>
+          </tr>
+        </thead>
+        <tbody data-product-workspace-list></tbody>
+      </table>
+      <script type="application/json" data-product-workspace-json set:html={serialized}></script>
+    </section>
+  </div>
+</SeoAdminLayout>
+
+<script>
+  const dataNode = document.querySelector<HTMLScriptElement>("[data-product-workspace-json]");
+  const list = document.querySelector<HTMLTableSectionElement>("[data-product-workspace-list]");
+  const search = document.querySelector<HTMLInputElement>("[data-product-workspace-search]");
+  const rows = JSON.parse(dataNode?.textContent || "[]");
+
+  const node = <K extends keyof HTMLElementTagNameMap>(
+    tag: K,
+    text?: string,
+  ): HTMLElementTagNameMap[K] => {
+    const element = document.createElement(tag);
+    if (text !== undefined) element.textContent = text;
+    return element;
+  };
+
+  const render = () => {
+    if (!list) return;
+    const query = (search?.value || "").trim().toLocaleLowerCase("de");
+    const visible = rows.filter((row: any) =>
+      !query || `${row.title} ${row.category} ${row.slug}`.toLocaleLowerCase("de").includes(query)
+    );
+
+    list.replaceChildren(...visible.map((row: any) => {
+      const tr = document.createElement("tr");
+      const title = node("td");
+      const publicLink = node("a", row.title);
+      publicLink.href = `/produkt/${row.slug}/`;
+      publicLink.target = "_blank";
+      title.append(publicLink);
+
+      tr.append(
+        title,
+        node("td", row.category),
+        node("td", String(row.findings)),
+        node("td", String(row.blockers)),
+        node("td", String(row.media)),
+      );
+
+      const action = node("td");
+      const link = node("a", "Öffnen");
+      link.className = "seo-button";
+      link.href = `/admin/seo/products/${row.slug}/`;
+      action.append(link);
+      tr.append(action);
+      return tr;
+    }));
+  };
+
+  search?.addEventListener("input", render);
+  render();
+</script>

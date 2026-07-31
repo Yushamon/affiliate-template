@@ -1,0 +1,129 @@
+{
+  "name": "pfotentechnik-seo-copilot-cleanup",
+  "version": "1.0.6",
+  "generatedAt": "2026-07-31T06:29:00.000Z",
+  "files": [
+    {
+      "path": "LOCAL_VALIDATION.json",
+      "sha256": "86ad6e532738bc5fa5c0c6ba648a2a0176467133180a26f6b7cfdc7e6e9a266f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a6c0a34519aa83895561a837939592e7d4a0d81964f669d95bd2ad0af84bc3c3"
+    },
+    {
+      "path": "apply-pfotentechnik-seo-copilot-cleanup-1.0.6.mjs",
+      "sha256": "941d361d3be1c436886d808860b245ac903ea850e33eaadf97900da4338edf40"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/docs/SEO_COPILOT_ARCHITECTURE_CLEANUP.md",
+      "sha256": "68ca532095f313f9a9d78d49ca00d440c0cd0a5acf994d334144033ae1f8d98e"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/scripts/design-system/css-budget-baseline.json",
+      "sha256": "aec5b08e6cdd3af01150b5c451af8f042d0bb4302300382cd6ebfc6fe0bbc557"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/scripts/quality-ops/sources.mjs",
+      "sha256": "5628273f1afc7bff7ef3f5f824e208c503e76a5c6270242e46aa9acdaacd5b9f"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/components/admin/PromptRegistry.astro",
+      "sha256": "d7c91ab49254d6216affe170fd472148d18e93066197cf464e8af141c3c77051"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/components/admin/QualityOperations.astro",
+      "sha256": "5b67428e0af0c76eb7c7025d2078095cae4bbc1af9c91b9316149539550898fa"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/components/admin/SeoFindingList.astro",
+      "sha256": "1a125f646f92f48a0f9a737cabe832a7cbb2dfa305bca9e88f6ea6ab06ba3201"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/layouts/SeoAdminLayout.astro",
+      "sha256": "cc049aaab7fc9d492fc618fb33ecb48de2e7aefc531a43a048b0a429733d2631"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/ai-action-registry.mjs",
+      "sha256": "23076583c082b596a71e8d1a396cbb2994583eab598e9d55401d8197c88ffa08"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/auto-fix-registry.mjs",
+      "sha256": "1db54d1fdb38ccc4b11737878f5ca021ad07b3f33c0680b0ff662b6dd0ce1ebe"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/finding-ai.ts",
+      "sha256": "67466f0ca892adae4b52ebd9911ac64b4ee8d3280be02f64c86afdc3cea89156"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/prompt-registry.ts",
+      "sha256": "e90d8409b5b9474ad94872888fba3e70ab91bed5833eb4773850f0771ed23b3d"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/prompts.ts",
+      "sha256": "80bb9080ee38ab4e780398162563b1516f7fa2f5b386eb22f61993adfd9c7946"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/quality-actions.mjs",
+      "sha256": "d55c8709ab247c3781f6cbadc10664cfc6368f889f6a76930c26634e1b5745eb"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/quality-operations.mjs",
+      "sha256": "62e3f15b0704a1915cd0342b4a6fdc63ea3e8c82bc80249a94721f66a8f8f1f7"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/templates.ts",
+      "sha256": "444631d848bc99398afc50175a058e1fbddc1699090d9473977717942fed89b1"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/lib/seo-copilot/types.ts",
+      "sha256": "2eb42508a6ca51d05e289c98a2f2125ef2875617c076ec53484955bed6814149"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/advisor.astro",
+      "sha256": "f05dfa1381fc4d5fff51d2d7deaafb67dede753f9e0275cdd71c7d2222e1a09c"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "sha256": "b8b2962f1336bb7ce7e187489bbc85ddaad6014a7256f0adf84bf334bc716b62"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/history.astro",
+      "sha256": "c47a409750551401ac2d012f00a03a7b073e4bc2504b76ea924feda3f8cecf76"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/index.astro",
+      "sha256": "e2bdf0d79ba2131f34d9d1216c84addf4a9f9c3fadaff578ecbb41ffa06e1c81"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/products/[slug].astro",
+      "sha256": "4cae349476733814ee0db0981275b6367762dceee4b6fa5f5d0b6fca31a58398"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/products/index.astro",
+      "sha256": "c623b81684b7df2ded0b155ac32996e8fc6d4f295fabb2a61110695f70d80650"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/pages/admin/seo/prompts.astro",
+      "sha256": "50e41d06025bc6bb9de30faa38e7eae3bf39ccd2eff28103b46d31f17a6dc1b5"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/src/styles/seo-admin.css",
+      "sha256": "a453ca1dd96671aa70622272cfba92a65ecbafc5b643693816a37b6ad7c79409"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/test/quality-operations.test.mjs",
+      "sha256": "a58f330c2196f6fcb7891556cf798310126148acdeaf461ef9b7bfe68736f42f"
+    },
+    {
+      "path": "payload/apps/pfotentechnik/test/seo-copilot-architecture-cleanup.test.mjs",
+      "sha256": "0e9bd94b4cd272b735dfaa313da1f3ccfad1249e9bdab8816e406a35241ed76b"
+    }
+  ],
+  "fixes": [
+    "comparison journey slug guard",
+    "reviewed CSS budget baseline for consolidated admin UI",
+    "fail-fast validation after first failed gate",
+    "route-aware suppression of the /so-bewerten-wir/ editorial transparency self-link"
+  ]
+}

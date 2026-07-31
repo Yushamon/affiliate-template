@@ -1,13 +1,13 @@
 # Audit interne Linkziele und Selbstlinks
 
-Erstellt: 2026-07-30T07:05:27.626Z
+Erstellt: 2026-07-31T06:49:32.435Z
 
-- Gebaute Seiten: 205
-- Routen im Inventar: 205
+- Gebaute Seiten: 274
+- Routen im Inventar: 274
 - Redirect-Aliasse: 31
-- Fehler: 1
+- Fehler: 0
 - Warnungen: 0
 
 ## Befunde
 
-- **ERROR SELF_LINK:** apps/pfotentechnik/dist/so-bewerten-wir/index.html /so-bewerten-wir/ — Link im Hauptinhalt zeigt auf die eigene Canonical-Route.
+Keine Befunde.

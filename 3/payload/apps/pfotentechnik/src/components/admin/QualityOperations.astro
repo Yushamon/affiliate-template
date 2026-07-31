@@ -1,0 +1,74 @@
+---
+import { readCopilotWorkspace } from "../../lib/seo-copilot/store.mjs";
+import { summarizeQualityOperations } from "../../lib/seo-copilot/quality-operations.mjs";
+import SeoFindingList from "./SeoFindingList.astro";
+
+interface Props {
+  mode?: "summary" | "full";
+}
+
+const { mode = "full" } = Astro.props;
+const workspace = readCopilotWorkspace();
+const summary = summarizeQualityOperations(workspace.qualityFindings, workspace.qualitySources);
+const activeStatuses = new Set(["open", "in-progress", "snoozed", "waiting", "manual-review", "regression"]);
+const findings = workspace.qualityFindings
+  .filter((item) => activeStatuses.has(item.status))
+  .slice(0, mode === "summary" ? 0 : 60);
+---
+<section class="seo-panel seo-stack" data-quality-operations>
+  <div class="seo-section-header">
+    <div>
+      <span class="seo-eyebrow">Quality Operations</span>
+      <h2>Zentrale Qualitätslage</h2>
+      <p>Ein kanonisches Finding-Modell aus den vorhandenen Auditquellen.</p>
+    </div>
+    <span class="seo-muted">
+      {workspace.updatedAt
+        ? `Geprüft ${new Date(workspace.updatedAt).toLocaleString("de-DE")}`
+        : "Noch nicht synchronisiert"}
+    </span>
+  </div>
+
+  <div class="seo-metrics">
+    <article class="seo-metric" data-level={summary.releaseBlockers ? "danger" : "ok"}>
+      <span>Release-Blocker</span><strong>{summary.releaseBlockers}</strong>
+    </article>
+    <article class="seo-metric">
+      <span>Aktiv</span><strong>{summary.active}</strong>
+    </article>
+    <article class="seo-metric" data-level={summary.regressions ? "danger" : "ok"}>
+      <span>Regressionen</span><strong>{summary.regressions}</strong>
+    </article>
+    <article class="seo-metric">
+      <span>Manuelle Prüfung</span><strong>{summary.manualReview}</strong>
+    </article>
+    <article class="seo-metric">
+      <span>AI Actions</span><strong>{summary.aiActionable}</strong>
+    </article>
+    <article class="seo-metric">
+      <span>Sichere Auto-Fixes</span><strong>{summary.autoFixable}</strong>
+    </article>
+    <article class="seo-metric">
+      <span>Auditquellen</span><strong>{summary.sourcesAvailable}/{workspace.qualitySources.length}</strong>
+    </article>
+  </div>
+
+  {workspace.qualitySources.length === 0 ? (
+    <div class="seo-empty">
+      Noch kein zentraler Snapshot. Einmal <code>npm --workspace apps/pfotentechnik run quality-ops:sync</code> ausführen.
+    </div>
+  ) : (
+    <div class="seo-source-state">
+      <span class="seo-badge" data-level="ok">{summary.sourcesAvailable} Quellen verfügbar</span>
+      {summary.sourcesMissing > 0 && (
+        <span class="seo-badge" data-level="warning">{summary.sourcesMissing} Quellen fehlen</span>
+      )}
+      <span class="seo-badge">{workspace.qualityGroups.length} Arbeitsgruppen</span>
+      <span class="seo-badge">{summary.codexSuitable} Codex-geeignet</span>
+    </div>
+  )}
+
+  {mode === "full" && (
+    <SeoFindingList findings={findings} emptyText="Keine aktiven Findings." />
+  )}
+</section>

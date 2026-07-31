@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "createdAt": "2026-07-31T05:48:42.000Z",
+  "limits": {
+    "cssFiles": 30,
+    "cssBytes": 518445,
+    "importantRules": 1310,
+    "rootBlocks": 24,
+    "rawHexColors": 684
+  },
+  "current": {
+    "cssFiles": 25,
+    "cssBytes": 518445,
+    "importantRules": 1265,
+    "rootBlocks": 24,
+    "rawHexColors": 684
+  },
+  "notes": {
+    "cssFiles": "SEO Operations nutzt eine gemeinsame zusätzliche Admin-Stylesheet-Datei; keine weitere Datei ohne Prüfung.",
+    "cssBytes": "Bewusst aktualisierte Baseline nach Konsolidierung des SEO Copiloten; weiteres Wachstum ist nicht freigegeben.",
+    "importantRules": "Keine neuen !important-Regeln; Bestand wurde reduziert.",
+    "rootBlocks": "Ein zusätzlicher gekapselter Token-Block für den eigenständigen noindex-Adminbereich.",
+    "rawHexColors": "Fünf bewusst gekapselte semantische Adminfarben; weiteres Wachstum ist nicht freigegeben."
+  }
+}

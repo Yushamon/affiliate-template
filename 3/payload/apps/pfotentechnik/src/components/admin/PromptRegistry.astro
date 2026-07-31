@@ -1,0 +1,44 @@
+---
+import { listPromptTemplates } from "../../lib/seo-copilot/prompt-registry.ts";
+
+const templates = listPromptTemplates();
+const surfaces = {
+  product: "Produkt",
+  content: "Content",
+  media: "Media",
+  journey: "Journey",
+  experience: "UX & Technik",
+  system: "System",
+};
+---
+<section class="seo-panel seo-stack">
+  <div class="seo-section-header">
+    <div>
+      <span class="seo-eyebrow">Zentrale Prompt Registry</span>
+      <h2>{templates.length} gepflegte Prompt-Typen</h2>
+      <p>
+        Titel, Ziel, Schutzregeln, Validierungen und Akzeptanzkriterien werden nur in
+        <code>prompt-registry.ts</code> gepflegt.
+      </p>
+    </div>
+  </div>
+
+  <div class="seo-grid" data-columns="3">
+    {templates.map((template) => (
+      <article class="seo-card">
+        <div class="seo-badges">
+          <span class="seo-badge">{surfaces[template.surface]}</span>
+          <span class="seo-badge">{template.id}</span>
+        </div>
+        <h3>{template.title}</h3>
+        <p class="seo-copy">{template.objective}</p>
+        <details>
+          <summary>Vertrag anzeigen</summary>
+          <p><strong>Kontext:</strong> {template.contextKind}</p>
+          <p><strong>Schutzregeln:</strong> {template.safeguards.join(" · ")}</p>
+          <p><strong>Validierung:</strong> {template.validationCommands.join(" · ") || "Kontextabhängig"}</p>
+        </details>
+      </article>
+    ))}
+  </div>
+</section>

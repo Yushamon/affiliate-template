@@ -27,3 +27,4 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 - „wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).
 
 ## Verbleibende manuelle Entscheidungen
+

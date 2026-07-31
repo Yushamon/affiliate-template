@@ -1,0 +1,80 @@
+---
+import { readCopilotWorkspace } from "../../lib/seo-copilot/store.mjs";
+import { summarizeQualityOperations } from "../../lib/seo-copilot/quality-operations.mjs";
+
+const workspace = readCopilotWorkspace();
+const summary = summarizeQualityOperations(workspace.qualityFindings, workspace.qualitySources);
+const activeStatuses = new Set(["open", "in-progress", "snoozed", "waiting", "manual-review", "regression"]);
+const findings = workspace.qualityFindings.filter((item) => activeStatuses.has(item.status)).slice(0, 40);
+const data = JSON.stringify({ findings }).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+const labels = {
+  open: "Open",
+  "in-progress": "In Progress",
+  fixed: "Fixed",
+  ignored: "Ignored",
+  snoozed: "Snoozed",
+  waiting: "Waiting",
+  "manual-review": "Manual Review",
+  "auto-fixed": "Auto Fixed",
+  regression: "Regression",
+};
+---
+<section class="quality-operations" data-quality-operations>
+  <div class="quality-heading">
+    <div><span class="seo-eyebrow">Quality Operations</span><h2>Zentrale Qualitätslage</h2></div>
+    <span class="quality-updated">{workspace.updatedAt ? `Geprüft ${new Date(workspace.updatedAt).toLocaleString("de-DE")}` : "Noch nicht synchronisiert"}</span>
+  </div>
+  <div class="quality-metrics">
+    <article data-level={summary.releaseBlockers ? "danger" : "ok"}><strong>{summary.releaseBlockers}</strong><span>Release-Blocker</span></article>
+    <article><strong>{summary.active}</strong><span>Aktiv</span></article>
+    <article data-level={summary.regressions ? "danger" : "ok"}><strong>{summary.regressions}</strong><span>Regressionen</span></article>
+    <article><strong>{summary.manualReview}</strong><span>Manual Review</span></article>
+    <article><strong>{summary.autoFixable}</strong><span>Sicher auto-fixbar</span></article>
+    <article><strong>{summary.sourcesAvailable}/{workspace.qualitySources.length}</strong><span>Audit-Quellen</span></article>
+  </div>
+  {workspace.qualitySources.length === 0 ? (
+    <div class="quality-empty">
+      Noch kein zentraler Snapshot. Einmal <code>npm --workspace apps/pfotentechnik run quality-ops:sync</code> ausführen.
+    </div>
+  ) : (
+    <>
+      <div class="quality-source-state">
+        <span>{summary.sourcesAvailable} Quellen verfügbar</span>
+        {summary.sourcesMissing > 0 && <span data-warning>{summary.sourcesMissing} Quellen ohne aktuellen Report</span>}
+        <span>{workspace.qualityGroups.length} intelligente Gruppen</span>
+      </div>
+      <div class="quality-filters">
+        <label>Status <select data-quality-filter="status"><option value="all">Alle</option>{Object.entries(labels).map(([key, label]) => <option value={key}>{label}</option>)}</select></label>
+        <label>Bereich <select data-quality-filter="area"><option value="all">Alle</option>{[...new Set(findings.map((item) => item.area))].sort().map((area) => <option value={area}>{area}</option>)}</select></label>
+        <label>Priorität <select data-quality-filter="priority"><option value="all">Alle</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>
+      </div>
+      <p class="quality-message" data-quality-message aria-live="polite"></p>
+      <div class="quality-list" data-quality-list></div>
+    </>
+  )}
+  <script type="application/json" data-quality-json set:html={data}></script>
+</section>
+
+<style>
+  .quality-operations{margin-top:20px;padding:clamp(18px,3vw,28px);border:1px solid var(--seo-border);border-radius:20px;background:var(--seo-surface);box-shadow:var(--seo-shadow)}
+  .quality-heading{display:flex;justify-content:space-between;gap:18px;align-items:end}.quality-heading h2{margin:5px 0 0;font-size:clamp(1.45rem,3vw,2rem)}.quality-updated{color:var(--seo-muted);font-size:.8rem}
+  .quality-metrics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:18px 0}.quality-metrics article{padding:13px;border:1px solid var(--seo-border);border-radius:14px;background:var(--seo-surface-soft)}.quality-metrics article[data-level="danger"]{border-color:var(--seo-danger)}.quality-metrics strong{display:block;font-size:1.45rem}.quality-metrics span{color:var(--seo-muted);font-size:.75rem}
+  .quality-source-state{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.quality-source-state span{padding:6px 10px;border-radius:999px;background:var(--seo-surface-soft);color:var(--seo-muted);font-size:.76rem;font-weight:800}.quality-source-state [data-warning]{color:var(--seo-warning)}
+  .quality-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.quality-filters label{display:grid;gap:5px;color:var(--seo-muted);font-size:.78rem;font-weight:800}.quality-filters select{min-height:42px;border:1px solid var(--seo-border);border-radius:11px;padding:8px 10px;background:var(--seo-surface);color:var(--seo-text)}
+  .quality-list{display:grid;gap:10px}.quality-finding{padding:16px;border:1px solid var(--seo-border);border-radius:15px}.quality-finding[data-blocker="true"],.quality-finding[data-status="regression"]{border-color:var(--seo-danger)}.quality-finding h3{margin:0;font-size:1rem}.quality-badges,.quality-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.quality-badge{padding:4px 8px;border-radius:999px;background:var(--seo-surface-soft);color:var(--seo-muted);font-size:.72rem;font-weight:800}.quality-badge[data-priority="high"]{background:var(--seo-danger-soft);color:var(--seo-danger)}.quality-finding p{color:var(--seo-muted);line-height:1.5}.quality-actions button,.quality-actions select{min-height:38px;border:1px solid var(--seo-border);border-radius:999px;padding:7px 11px;background:var(--seo-surface);color:var(--seo-text);font-weight:800;cursor:pointer}.quality-actions button[data-primary]{background:var(--seo-accent);border-color:var(--seo-accent);color:var(--seo-on-accent)}.quality-message,.quality-empty{color:var(--seo-muted)}.quality-empty{padding:16px;border:1px dashed var(--seo-border);border-radius:14px}
+  @media(max-width:900px){.quality-metrics{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.quality-heading{display:grid}.quality-metrics{grid-template-columns:repeat(2,1fr)}.quality-filters{grid-template-columns:1fr}}
+</style>
+
+<script>
+  document.querySelectorAll("[data-quality-operations]").forEach((root) => {
+    const payload=JSON.parse(root.querySelector("[data-quality-json]")?.textContent||'{"findings":[]}');
+    const filters={status:"all",area:"all",priority:"all"};const list=root.querySelector("[data-quality-list]");if(!list)return;
+    const node=(tag,text,className)=>{const element=document.createElement(tag);if(text!==undefined)element.textContent=text;if(className)element.className=className;return element};
+    const API="http://127.0.0.1:4178/api/admin/search";
+    const statusLabels={open:"Open","in-progress":"In Progress",fixed:"Fixed",ignored:"Ignored",snoozed:"Snoozed",waiting:"Waiting","manual-review":"Manual Review","auto-fixed":"Auto Fixed",regression:"Regression"};
+    const poll=async(id)=>{for(let attempt=0;attempt<1440;attempt+=1){await new Promise(resolve=>setTimeout(resolve,500));const response=await fetch(`${API}/actions/${id}`);const action=await response.json();if(["succeeded","failed","cancelled"].includes(action.status))return action}throw new Error("Zeitlimit überschritten.")};
+    const action=async(name,body)=>{const message=root.querySelector("[data-quality-message]");message.textContent="Aktion läuft …";const response=await fetch(`${API}/actions`,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({action:name,payload:body})});const started=await response.json();if(!response.ok)throw new Error(started?.error?.message||"Aktion abgelehnt.");const result=await poll(started.id);if(result.status!=="succeeded")throw new Error(result?.error?.message||"Aktion fehlgeschlagen.");message.textContent="Aktion erfolgreich. Ansicht wird aktualisiert.";if(result.result?.reloadRequired)location.reload()};
+    const render=()=>{list.replaceChildren();const findings=payload.findings.filter(item=>Object.entries(filters).every(([key,selected])=>selected==="all"||(key==="priority"?item.priority.level:item[key])===selected));findings.forEach(item=>{const card=node("article",undefined,"quality-finding");card.dataset.blocker=String(item.releaseBlocker);card.dataset.status=item.status;card.append(node("h3",item.description));const badges=node("div",undefined,"quality-badges");[[item.priority.level,`Priorität ${item.priority.score}`],[item.severity,item.severity],[item.status,statusLabels[item.status]||item.status],[item.area,item.area],[item.source,item.source]].forEach(([key,label])=>{const badge=node("span",label,"quality-badge");if(key===item.priority.level)badge.dataset.priority=key;badges.append(badge)});card.append(badges);card.append(node("p",item.impact));card.append(node("p",`Aktion: ${item.recommendedAction}`));if(item.files?.length)card.append(node("p",`Dateien: ${item.files.join(", ")}`));if(item.urls?.length)card.append(node("p",`URLs: ${item.urls.join(", ")}`));const actions=node("div",undefined,"quality-actions");const select=document.createElement("select");select.setAttribute("aria-label","Status ändern");select.append(new Option("Status ändern …",""),...Object.entries(statusLabels).filter(([key])=>key!=="auto-fixed").map(([key,label])=>new Option(label,key)));select.addEventListener("change",async()=>{if(!select.value)return;try{await action("quality.finding.status",{findingId:item.id,status:select.value,days:14,note:"Im Quality-Operations-Dashboard geändert."})}catch(error){root.querySelector("[data-quality-message]").textContent=error instanceof Error?error.message:String(error)}});actions.append(select);if(item.autoFixAvailable){const button=node("button","Sicheren Auto-Fix ausführen");button.dataset.primary="";button.type="button";button.addEventListener("click",async()=>{if(!confirm("Auto-Fix mit Vorprüfung, Strict-Audit und Protokoll ausführen?"))return;try{await action("quality.finding.auto-fix",{findingId:item.id,confirm:true})}catch(error){root.querySelector("[data-quality-message]").textContent=error instanceof Error?error.message:String(error)}});actions.append(button)}card.append(actions);list.append(card)});if(!findings.length)list.append(node("div","Keine Findings für diese Filter.","quality-empty"))};
+    root.querySelectorAll("[data-quality-filter]").forEach(select=>select.addEventListener("change",()=>{filters[select.dataset.qualityFilter]=select.value;render()}));render();
+  });
+</script>

@@ -1,0 +1,40 @@
+---
+import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import SeoWorkPackages from "../../../components/admin/SeoWorkPackages.astro";
+import QualityOperations from "../../../components/admin/QualityOperations.astro";
+---
+<SeoAdminLayout
+  title="SEO Co-Pilot"
+  description="Die wichtigsten offenen SEO-Arbeitspakete. Vollständige Fachberichte und harte Prüfungen bleiben im Release-Gate."
+  active="advisor"
+>
+  <section class="pt-surface copilot-focus" aria-labelledby="copilot-focus-title">
+    <span class="seo-eyebrow">Entscheidungsmodus</span>
+    <h2 id="copilot-focus-title">Nur das, was jetzt bearbeitet werden sollte</h2>
+    <p>
+      Der Co-Pilot zeigt höchstens zwölf priorisierte Pakete aus dem zentralen Quality-Operations-Snapshot.
+      Vollständige Rohberichte werden außerhalb des Seiten-Builds eingesammelt und hier nur verdichtet gelesen.
+    </p>
+  </section>
+  <QualityOperations />
+  <SeoWorkPackages mode="advisor" />
+</SeoAdminLayout>
+
+<style>
+  .copilot-focus {
+    padding: clamp(20px, 4vw, 32px);
+    border: 1px solid var(--seo-border);
+    border-radius: 20px;
+    background: var(--seo-surface);
+  }
+  .copilot-focus h2 {
+    margin: 6px 0 10px;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+  }
+  .copilot-focus p {
+    max-width: 78ch;
+    margin: 0;
+    color: var(--seo-muted);
+    line-height: 1.65;
+  }
+</style>

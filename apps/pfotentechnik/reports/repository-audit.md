@@ -1,12 +1,12 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-29T21:26:27.777Z
+Erstellt: 2026-07-31T06:49:28.130Z
 
 ## Zusammenfassung
 
-- Routen: 204
+- Routen: 207
 - Fehler: 0
-- Warnungen: 49
+- Warnungen: 50
 - Hinweise: 65
 
 ## Content-Bestand
@@ -61,6 +61,7 @@ Erstellt: 2026-07-29T21:26:27.777Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/xiaomi-smart-pet-fountain-2/ (`src/content/products/xiaomi-smart-pet-fountain-2.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/zeromouse-2-0/ (`src/content/products/zeromouse-2-0.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
+- **WARNING · maintainability**: Sehr große Datei mit 1003 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)

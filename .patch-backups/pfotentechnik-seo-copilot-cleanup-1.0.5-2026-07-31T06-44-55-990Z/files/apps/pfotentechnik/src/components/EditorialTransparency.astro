@@ -1,0 +1,334 @@
+---
+type ContentKind = "ratgeber" | "produkt" | "vergleich";
+type TestStatus =
+  | "hands-on"
+  | "editorial-review"
+  | "manufacturer-data"
+  | "long-term-test"
+  | "not-tested";
+
+interface Props {
+  kind: ContentKind;
+  author?: { name: string; role?: string; url?: string };
+  publishedAt?: string;
+  updatedAt?: string;
+  testStatus?: TestStatus;
+  evidence?: string[];
+  recommendationReason?: string;
+}
+
+const {
+  kind,
+  author = {
+    name: "PfotenTechnik Redaktion",
+    role: "Redaktion",
+    url: "/redaktion/"
+  },
+  publishedAt,
+  updatedAt,
+  testStatus,
+  evidence = [],
+  recommendationReason
+} = Astro.props as Props;
+
+const statusCopy: Record<TestStatus, { label: string; text: string }> = {
+  "hands-on": {
+    label: "Praktisch geprüft",
+    text: "Für diese Einordnung lagen eigene praktische Beobachtungen am Produkt vor."
+  },
+  "long-term-test": {
+    label: "Im Langzeittest",
+    text: "Das Produkt wurde über einen längeren Zeitraum im Alltag beobachtet."
+  },
+  "editorial-review": {
+    label: "Redaktionell geprüft",
+    text: "Die Einordnung beruht auf dokumentierten Produktdaten, Quellenabgleich und Vergleich mit relevanten Alternativen."
+  },
+  "manufacturer-data": {
+    label: "Datencheck",
+    text: "Die Einordnung stützt sich auf Herstellerunterlagen und technische Daten. Ein eigener Praxistest liegt nicht vor."
+  },
+  "not-tested": {
+    label: "Nicht praktisch getestet",
+    text: "Es liegt kein eigener Produkttest vor. Aussagen beschränken sich auf belegbare Daten und klar gekennzeichnete Einordnung."
+  }
+};
+
+const evidenceLabels: Record<string, string> = {
+  "manufacturer-documentation": "Herstellerunterlagen",
+  "technical-specifications": "technische Daten",
+  "comparative-analysis": "vergleichende Analyse",
+  "user-experience": "dokumentierte Nutzererfahrungen",
+  "hands-on-testing": "eigene praktische Prüfung",
+  "long-term-testing": "eigener Langzeittest",
+  "expert-guidance": "Fachquellen und Leitlinien"
+};
+
+const formatDate = (value?: string) => value
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }).format(new Date(value))
+  : null;
+
+const currentStatus = testStatus ? statusCopy[testStatus] : null;
+const evidenceText = evidence
+  .map((item) => evidenceLabels[item] ?? item)
+  .filter(Boolean)
+  .join(", ");
+const authorHref = author.url || "/redaktion/";
+const contentLabel = kind === "produkt"
+  ? "Produktbewertung"
+  : kind === "vergleich"
+    ? "Vergleich"
+    : "Ratgeber";
+const isCompactGuide = kind === "ratgeber";
+const containerClass = isCompactGuide
+  ? "editorial-transparency editorial-transparency--compact"
+  : "editorial-transparency";
+---
+
+<aside class={containerClass} aria-labelledby="editorial-transparency-title">
+  {isCompactGuide ? (
+    <details class="editorial-transparency__compact-details">
+      <summary>
+        <span class="editorial-transparency__compact-kicker">Redaktionelle Transparenz</span>
+        <strong id="editorial-transparency-title">Quellenbasiert eingeordnet</strong>
+        <small>Methodik und Finanzierung</small>
+      </summary>
+
+      <div class="editorial-transparency__compact-body">
+        <p>
+          <strong>Prüfart:</strong> Dieser Ratgeber basiert auf den im Beitrag genannten Daten und Quellen.
+        </p>
+        <p>
+          <strong>Finanzierung:</strong> Affiliate-finanziert, redaktionell getrennt. Provisionen verändern weder Aussagen noch Empfehlungen; der Kaufpreis bleibt gleich.
+        </p>
+        <nav aria-label="Redaktionelle Informationen">
+          <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+          <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
+          <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
+          <a href="/kontakt/">Fehler melden</a>
+        </nav>
+      </div>
+    </details>
+  ) : (
+    <>
+      <div class="editorial-transparency__heading">
+        <span>Redaktionelle Transparenz</span>
+        <h2 id="editorial-transparency-title">So ist diese Seite einzuordnen</h2>
+      </div>
+
+      <dl class="editorial-transparency__facts">
+        <div>
+          <dt>Verantwortlich</dt>
+          <dd>
+            <a href={authorHref}>{author.name}</a>
+            {author.role && <small>{author.role}</small>}
+          </dd>
+        </div>
+        <div>
+          <dt>Stand</dt>
+          <dd>
+            {formatDate(updatedAt) ?? formatDate(publishedAt) ?? "nicht dokumentiert"}
+            {publishedAt && updatedAt && publishedAt !== updatedAt && (
+              <small>Erstveröffentlichung: {formatDate(publishedAt)}</small>
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>Prüfart</dt>
+          <dd>
+            {currentStatus?.label ?? "Redaktionelle Einordnung"}
+            <small>
+              {currentStatus?.text ??
+                `${contentLabel} auf Basis der auf der Seite genannten Daten und Quellen.`}
+            </small>
+          </dd>
+        </div>
+        <div>
+          <dt>Finanzierung</dt>
+          <dd>
+            Affiliate-finanziert, redaktionell getrennt
+            <small>Provisionen verändern weder Score noch Rangfolge. Der Kaufpreis bleibt gleich.</small>
+          </dd>
+        </div>
+      </dl>
+
+      {(evidenceText || recommendationReason) && (
+        <div class="editorial-transparency__evidence">
+          {evidenceText && <p><strong>Berücksichtigte Nachweise:</strong> {evidenceText}.</p>}
+          {recommendationReason && <p><strong>Warum diese Empfehlung:</strong> {recommendationReason}</p>}
+        </div>
+      )}
+
+      <nav aria-label="Redaktionelle Informationen">
+        <a href="/so-bewerten-wir/">Methodik und Bewertungssystem</a>
+        <a href="/redaktion/">Redaktion und Unabhängigkeit</a>
+        <a href="/affiliate-hinweis/">Affiliate-Offenlegung</a>
+        <a href="/kontakt/">Fehler melden</a>
+      </nav>
+    </>
+  )}
+</aside>
+
+<style>
+  .editorial-transparency {
+    margin: clamp(24px, 5vw, 48px) 0;
+    padding: clamp(18px, 4vw, 30px);
+    border: 1px solid var(--color-border, #d7e2da);
+    border-radius: 22px;
+    background: var(--color-surface-subtle, #f5f8f5);
+    color: var(--color-text, #17211b);
+  }
+  .editorial-transparency__heading span,
+  .editorial-transparency__compact-kicker {
+    color: var(--color-primary, #2e7d32);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .editorial-transparency h2 {
+    margin: 6px 0 18px;
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
+  }
+  .editorial-transparency__facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0;
+  }
+  .editorial-transparency__facts > div {
+    padding: 14px;
+    border: 1px solid var(--color-border, #d7e2da);
+    border-radius: 14px;
+    background: var(--color-surface, #fff);
+  }
+  .editorial-transparency dt {
+    margin-bottom: 5px;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .editorial-transparency dd { margin: 0; font-weight: 750; }
+  .editorial-transparency dd small {
+    display: block;
+    margin-top: 5px;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .86rem;
+    font-weight: 450;
+    line-height: 1.45;
+  }
+  .editorial-transparency a { color: inherit; text-underline-offset: 3px; }
+  .editorial-transparency__evidence {
+    margin-top: 14px;
+    padding: 14px 16px;
+    border-left: 4px solid var(--color-primary, #2e7d32);
+    background: var(--color-surface, #fff);
+  }
+  .editorial-transparency__evidence p { margin: 0; line-height: 1.55; }
+  .editorial-transparency__evidence p + p { margin-top: 8px; }
+  .editorial-transparency nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 16px;
+    font-size: .9rem;
+    font-weight: 700;
+  }
+
+  .editorial-transparency--compact {
+    margin: 22px 0;
+    padding: 0;
+    border-radius: 14px;
+    background: var(--color-surface, #fff);
+  }
+  .editorial-transparency__compact-details summary {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    padding: 11px 14px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .editorial-transparency__compact-details summary::-webkit-details-marker {
+    display: none;
+  }
+  .editorial-transparency__compact-details summary::after {
+    content: "+";
+    margin-left: auto;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .editorial-transparency__compact-details[open] summary {
+    border-bottom: 1px solid var(--color-border, #d7e2da);
+  }
+  .editorial-transparency__compact-details[open] summary::after {
+    content: "−";
+  }
+  .editorial-transparency__compact-details summary strong {
+    font-size: .95rem;
+    line-height: 1.35;
+  }
+  .editorial-transparency__compact-details summary small {
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+  .editorial-transparency__compact-body {
+    display: grid;
+    gap: 8px;
+    padding: 13px 14px 15px;
+  }
+  .editorial-transparency__compact-body p {
+    margin: 0;
+    color: var(--color-text-muted, #5d6d63);
+    font-size: .88rem;
+    line-height: 1.5;
+  }
+  .editorial-transparency__compact-body p strong {
+    color: var(--color-text, #17211b);
+  }
+  .editorial-transparency__compact-body nav {
+    margin-top: 4px;
+    font-size: .84rem;
+  }
+
+  :global(html[data-theme="dark"]) .editorial-transparency,
+  :global(html.dark) .editorial-transparency,
+  :global(body[data-theme="dark"]) .editorial-transparency {
+    --color-surface-subtle: #142119;
+    --color-surface: #101b16;
+    --color-border: #304137;
+    --color-text: #eef7f0;
+    --color-text-muted: #b5c4ba;
+    --color-primary: #72d889;
+  }
+  @media (max-width: 640px) {
+    .editorial-transparency { border-radius: 18px; }
+    .editorial-transparency__facts { grid-template-columns: 1fr; }
+    .editorial-transparency nav { display: grid; }
+    .editorial-transparency--compact { border-radius: 12px; }
+    .editorial-transparency__compact-details summary {
+      align-items: center;
+      gap: 4px 8px;
+      padding: 10px 12px;
+    }
+    .editorial-transparency__compact-kicker {
+      flex-basis: 100%;
+      font-size: .68rem;
+    }
+    .editorial-transparency__compact-details summary small {
+      display: none;
+    }
+    .editorial-transparency__compact-body {
+      padding: 12px;
+    }
+  }
+</style>

@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-07-29T21:26:33.844Z",
+  "generatedAt": "2026-07-31T06:49:31.233Z",
   "strict": true,
   "summary": {
     "documents": 185,
     "contentRoutes": 185,
-    "buildRoutes": 204,
-    "validRoutes": 204,
+    "buildRoutes": 274,
+    "validRoutes": 274,
     "definitions": 440,
-    "renderedAutomaticLinks": 403,
+    "renderedAutomaticLinks": 438,
     "errors": 0,
-    "warnings": 42,
+    "warnings": 41,
     "critical": 0
   },
   "blockedAnchors": [
@@ -234,12 +234,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petsafe-healthy-pet-simply-feed/"
     },
     {
       "severity": "warning",
@@ -1028,6 +1022,12 @@
       "targetRoute": "/katzenwasser-taeglich-wechseln/",
       "anchor": "Wasserwechsel",
       "score": 1913
+    },
+    {
+      "sourceRoute": "/so-bewerten-wir/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 7012
     },
     {
       "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
@@ -2362,6 +2362,24 @@
       "score": 1309
     },
     {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 6830
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1607
+    },
+    {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
       "anchor": "Xiaomi Smart Pet Food Feeder 2",
@@ -2417,15 +2435,51 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 7030
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "targetRoute": "/produkt/petkit-fresh-element-solo/",
+      "anchor": "PETKIT Fresh Element Solo",
+      "score": 5025
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
       "targetRoute": "/wie-viele-mahlzeiten-katze/",
       "anchor": "kleine Mahlzeiten",
       "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "anchor": "SureFeed Microchip Pet Feeder Connect",
+      "score": 5437
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "anchor": "mehrere Katzen",
       "score": 2414
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1306
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -2456,6 +2510,36 @@
       "targetRoute": "/wie-viele-mahlzeiten-katze/",
       "anchor": "kleine Mahlzeiten",
       "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrkatzenhaushalt",
+      "score": 1918
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "anchor": "SureFeed Microchip Pet Feeder Connect",
+      "score": 6037
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "targetRoute": "/produkt/cat-mate-c500/",
+      "anchor": "Cat Mate C500",
+      "score": 4013
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "targetRoute": "/trinkbrunnen-seniorenkatzen/",
+      "anchor": "ältere Katze",
+      "score": 2912
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
@@ -2506,6 +2590,42 @@
       "score": 1416
     },
     {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 6330
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1307
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 6630
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1608
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "targetRoute": "/hersteller/honeyguardian/",
+      "anchor": "HoneyGuardian",
+      "score": 1313
+    },
+    {
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "targetRoute": "/wie-viele-mahlzeiten-katze/",
       "anchor": "kleine Mahlzeiten",
@@ -2534,6 +2654,12 @@
       "targetRoute": "/hersteller/surefeed/",
       "anchor": "SureFeed",
       "score": 1208
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "anchor": "SureFeed Microchip Pet Feeder Connect",
+      "score": 5237
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
@@ -2566,16 +2692,34 @@
       "score": 1208
     },
     {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "targetRoute": "/produkt/cat-mate-c500/",
+      "anchor": "Cat Mate C500",
+      "score": 3913
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "targetRoute": "/hersteller/honeyguardian/",
+      "anchor": "HoneyGuardian",
+      "score": 1413
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-unter-100-euro/",
       "targetRoute": "/hersteller/imipaw/",
       "anchor": "IMIPAW",
-      "score": 1206
+      "score": 1406
     },
     {
       "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
       "anchor": "PAJ PET Finder 4G Mini",
       "score": 5622
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/produkt/garmin-alpha-t-20/",
+      "anchor": "Garmin Alpha T 20",
+      "score": 4617
     },
     {
       "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
@@ -2669,6 +2813,12 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/produkt/petlibro-dockstream-2-smart/",
+      "anchor": "PETLIBRO Dockstream 2 Smart",
+      "score": 4927
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "targetRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
       "anchor": "PETKIT Eversweet Solo 2",
       "score": 4823
@@ -2681,15 +2831,9 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "targetRoute": "/hersteller/cat-mate/",
-      "anchor": "Cat Mate",
-      "score": 2508
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "targetRoute": "/katzenwasser-taeglich-wechseln/",
-      "anchor": "Wasserwechsel",
-      "score": 1913
+      "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
+      "anchor": "fließendes Wasser",
+      "score": 2817
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
@@ -2711,9 +2855,33 @@
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
+      "targetRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "anchor": "Xiaomi Smart Pet Food Feeder 2",
+      "score": 7030
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
+      "targetRoute": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "anchor": "PetSafe Healthy Pet Simply Feed",
+      "score": 5531
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
       "targetRoute": "/wie-viele-mahlzeiten-katze/",
       "anchor": "kleine Mahlzeiten",
       "score": 2817
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
+      "score": 1506
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-mit-app/",
@@ -2735,15 +2903,51 @@
     },
     {
       "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
+      "anchor": "PAJ Pet Finder 4G Mini",
+      "score": 5822
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/produkt/garmin-alpha-t-20/",
+      "anchor": "Garmin Alpha T 20",
+      "score": 4517
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
       "targetRoute": "/produkt/tractive-dog-6-xl/",
       "anchor": "Tractive DOG 6 XL",
       "score": 4517
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/produkt/tractive-cat-6-mini/",
+      "anchor": "Tractive CAT 6 Mini",
+      "score": 4419
+    },
+    {
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/hersteller/weenect/",
+      "anchor": "Weenect",
+      "score": 1407
     },
     {
       "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
       "targetRoute": "/produkt/garmin-alpha-t-20/",
       "anchor": "Garmin Alpha T 20",
       "score": 4617
+    },
+    {
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
+      "anchor": "PAJ Pet Finder 4G Mini",
+      "score": 5722
+    },
+    {
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/produkt/tractive-cat-6-mini/",
+      "anchor": "Tractive CAT 6 Mini",
+      "score": 4419
     },
     {
       "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
@@ -2860,23 +3064,23 @@
     "/gps-tracker-richtig-befestigen/": 3,
     "/gps-tracker/": 7,
     "/hersteller/aqara/": 2,
-    "/hersteller/cat-mate/": 13,
+    "/hersteller/cat-mate/": 12,
     "/hersteller/catit/": 3,
     "/hersteller/garmin/": 12,
-    "/hersteller/honeyguardian/": 5,
+    "/hersteller/honeyguardian/": 7,
     "/hersteller/imipaw/": 3,
     "/hersteller/oneisall/": 9,
     "/hersteller/paj-gps/": 3,
     "/hersteller/pawbby/": 2,
     "/hersteller/pawsync/": 1,
-    "/hersteller/petkit/": 27,
-    "/hersteller/petlibro/": 47,
-    "/hersteller/petsafe/": 8,
+    "/hersteller/petkit/": 28,
+    "/hersteller/petlibro/": 54,
+    "/hersteller/petsafe/": 10,
     "/hersteller/surefeed/": 9,
     "/hersteller/tractive/": 11,
-    "/hersteller/weenect/": 13,
+    "/hersteller/weenect/": 14,
     "/hersteller/wopet/": 6,
-    "/hersteller/xiaomi/": 15,
+    "/hersteller/xiaomi/": 16,
     "/hersteller/zeromouse/": 1,
     "/hund-entlaufen-gps-sinnvoll/": 3,
     "/hund-frisst-nicht/": 5,
@@ -2896,17 +3100,17 @@
     "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 7,
     "/katzentrinkbrunnen-ohne-filter/": 0,
     "/katzentrinkbrunnen-richtig-reinigen/": 10,
-    "/katzenwasser-taeglich-wechseln/": 5,
+    "/katzenwasser-taeglich-wechseln/": 4,
     "/nierenkranke-katze-trinken/": 8,
     "/produkt/aqara-smart-pet-feeder-c1/": 0,
     "/produkt/cat-mate-335-pet-fountain/": 0,
     "/produkt/cat-mate-c200/": 0,
     "/produkt/cat-mate-c300/": 1,
-    "/produkt/cat-mate-c500/": 4,
+    "/produkt/cat-mate-c500/": 6,
     "/produkt/cat-mate-shell-fountain/": 0,
     "/produkt/catit-pixi-smart-6-meal-feeder/": 1,
     "/produkt/catit-pixi-vision-smart-feeder/": 0,
-    "/produkt/garmin-alpha-t-20/": 4,
+    "/produkt/garmin-alpha-t-20/": 6,
     "/produkt/garmin-alpha-tt-25/": 0,
     "/produkt/honeyguardian-a305d/": 0,
     "/produkt/honeyguardian-a68/": 0,
@@ -2918,7 +3122,7 @@
     "/produkt/oneisall-3-5l-cordless-fountain/": 0,
     "/produkt/oneisall-5l-automatic-cat-feeder/": 0,
     "/produkt/oneisall-7l-dog-water-fountain/": 2,
-    "/produkt/paj-pet-finder-4g-mini/": 5,
+    "/produkt/paj-pet-finder-4g-mini/": 7,
     "/produkt/pawbby-smart-pet-feeder/": 0,
     "/produkt/pawsync-smart-pet-feeder/": 1,
     "/produkt/petkit-eversweet-3-pro-uvc/": 1,
@@ -2929,14 +3133,14 @@
     "/produkt/petkit-eversweet-solo-se/": 0,
     "/produkt/petkit-eversweet-ultra/": 2,
     "/produkt/petkit-fresh-element-infinity/": 0,
-    "/produkt/petkit-fresh-element-solo/": 8,
+    "/produkt/petkit-fresh-element-solo/": 9,
     "/produkt/petkit-yumshare-dual-hopper/": 6,
     "/produkt/petkit-yumshare-solo-2/": 2,
     "/produkt/petlibro-air-automatic-feeder/": 0,
     "/produkt/petlibro-air-wifi-feeder/": 0,
     "/produkt/petlibro-capsule-dog-fountain/": 1,
     "/produkt/petlibro-dockstream-2-smart-cordless/": 1,
-    "/produkt/petlibro-dockstream-2-smart/": 2,
+    "/produkt/petlibro-dockstream-2-smart/": 3,
     "/produkt/petlibro-dockstream-cordless/": 1,
     "/produkt/petlibro-dockstream-rfid-smart/": 2,
     "/produkt/petlibro-glacier-ultrafiltration/": 0,
@@ -2949,11 +3153,11 @@
     "/produkt/petlibro-space-smart-feeder/": 1,
     "/produkt/petlibro-stainless-steel-fountain/": 0,
     "/produkt/petsafe-freshfeed-refrigerated-feeder/": 0,
-    "/produkt/petsafe-healthy-pet-simply-feed/": 0,
+    "/produkt/petsafe-healthy-pet-simply-feed/": 1,
     "/produkt/petsafe-smart-feed-2/": 1,
-    "/produkt/surefeed-microchip-pet-feeder-connect/": 1,
+    "/produkt/surefeed-microchip-pet-feeder-connect/": 4,
     "/produkt/surefeed-microchip-pet-feeder/": 7,
-    "/produkt/tractive-cat-6-mini/": 3,
+    "/produkt/tractive-cat-6-mini/": 5,
     "/produkt/tractive-dog-6-xl/": 4,
     "/produkt/tractive-dog-6/": 4,
     "/produkt/weenect-xs/": 3,
@@ -2962,7 +3166,7 @@
     "/produkt/wopet-heritage-view-camera-feeder/": 0,
     "/produkt/wopet-patrol-f07-pro/": 1,
     "/produkt/wopet-pioneer-f01-plus/": 0,
-    "/produkt/xiaomi-smart-pet-food-feeder-2/": 10,
+    "/produkt/xiaomi-smart-pet-food-feeder-2/": 15,
     "/produkt/xiaomi-smart-pet-fountain-2/": 0,
     "/produkt/zeromouse-2-0/": 0,
     "/pumpe-katzentrinkbrunnen-reinigen/": 3,
@@ -2974,10 +3178,10 @@
     "/so-bewerten-wir/": 15,
     "/trinkbrunnen-fuer-katzen-sinnvoll/": 4,
     "/trinkbrunnen-fuer-kitten-sicher/": 0,
-    "/trinkbrunnen-fuer-mehrere-katzen/": 20,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 21,
     "/trinkbrunnen-hund/": 3,
-    "/trinkbrunnen-seniorenkatzen/": 1,
-    "/trinkbrunnen/": 40,
+    "/trinkbrunnen-seniorenkatzen/": 2,
+    "/trinkbrunnen/": 41,
     "/trinkmenge-hund-messen/": 2,
     "/trinkmenge-katze-messen/": 1,
     "/trockenfutter-oder-nassfutter-hund/": 5,
@@ -3009,7 +3213,7 @@
     "/vergleiche/kleine-gps-tracker-fuer-katzen/": 3,
     "/warum-brauchen-gps-tracker-ein-abo/": 3,
     "/warum-hunde-feste-fuetterungszeiten-brauchen/": 2,
-    "/warum-katzen-fliessendes-wasser-trinken/": 15,
+    "/warum-katzen-fliessendes-wasser-trinken/": 16,
     "/warum-schlingt-mein-hund/": 2,
     "/wasserstelle-katze-richtiger-standort/": 2,
     "/welche-portionsgroesse-ist-richtig/": 7,

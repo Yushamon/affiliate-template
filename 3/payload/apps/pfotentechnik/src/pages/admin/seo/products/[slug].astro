@@ -1,0 +1,193 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import { getCollection } from "astro:content";
+import SeoAdminLayout from "../../../../layouts/SeoAdminLayout.astro";
+import SeoFindingList from "../../../../components/admin/SeoFindingList.astro";
+import { readCopilotWorkspace } from "../../../../lib/seo-copilot/store.mjs";
+import { APP_ROOT } from "../../../../lib/search/config.mjs";
+import type { QualityFinding } from "../../../../lib/seo-copilot/types.ts";
+
+
+export async function getStaticPaths() {
+  const slugOf = (entry: any) =>
+    String(entry.data?.slug || entry.id || "")
+      .replace(/\.(?:md|mdx)$/i, "")
+      .replace(/^.*\//, "");
+
+  const categoryOf = (data: any) =>
+    typeof data.category === "string"
+      ? data.category
+      : data.category?.label || data.category?.key || "Ohne Kategorie";
+
+  const imageFiles = (slug: string) => {
+    const directories = [
+      path.join(APP_ROOT, "src", "assets", "images", "products", slug),
+      path.join(APP_ROOT, "src", "assets", "images", "project", "pfotentechnik", "products", slug),
+    ];
+    return [...new Set(directories.flatMap((directory) =>
+      fs.existsSync(directory)
+        ? fs.readdirSync(directory).filter((name) => /\.(?:webp|avif|png|jpe?g)$/i.test(name))
+        : []
+    ))].sort();
+  };
+  const activeStatuses = new Set(["open", "in-progress", "snoozed", "waiting", "manual-review", "regression"]);
+  const [products, workspace] = await Promise.all([
+    getCollection("products"),
+    Promise.resolve(readCopilotWorkspace()),
+  ]);
+  const activeFindings = workspace.qualityFindings.filter((item) => activeStatuses.has(item.status));
+
+  return products.map((entry) => {
+    const slug = slugOf(entry);
+    const route = `/produkt/${slug}/`;
+    const findings = activeFindings.filter((finding) =>
+      finding.route === route
+      || finding.urls?.includes(route)
+      || finding.file?.includes(slug)
+      || finding.files?.some((file) => file.includes(slug))
+    );
+
+    return {
+      params: { slug },
+      props: {
+        product: {
+          slug,
+          route,
+          title: entry.data.title || entry.data.name || slug,
+          description: entry.data.description || "",
+          category: categoryOf(entry.data),
+          manufacturer: entry.data.manufacturer || entry.data.brand || "Nicht angegeben",
+          updatedAt: entry.data.updatedAt ? String(entry.data.updatedAt) : "",
+          testStatus: entry.data.testStatus || "Nicht angegeben",
+          editorialStatus: entry.data.editorialStatus || "Nicht angegeben",
+          recommendationStatus: entry.data.recommendationStatus || "Nicht angegeben",
+          sourceFile: `src/content/products/${entry.id}`,
+        },
+        mediaFiles: imageFiles(slug),
+        findings,
+      },
+    };
+  });
+}
+
+interface Props {
+  product: {
+    slug: string;
+    route: string;
+    title: string;
+    description: string;
+    category: string;
+    manufacturer: string;
+    updatedAt: string;
+    testStatus: string;
+    editorialStatus: string;
+    recommendationStatus: string;
+    sourceFile: string;
+  };
+  mediaFiles: string[];
+  findings: QualityFinding[];
+}
+
+const { product, mediaFiles, findings } = Astro.props;
+const count = (predicate: (finding: QualityFinding) => boolean) => findings.filter(predicate).length;
+const seoCount = count((item) => ["technical-seo", "structured-data", "content"].includes(item.category));
+const journeyCount = count((item) => ["decision-journey", "internal-linking"].includes(item.area));
+const eeatCount = count((item) => ["eeat", "author-coverage"].includes(item.area) || item.category === "trust");
+const technicalCount = count((item) => ["experience", "release", "engineering"].includes(item.category));
+const mediaCount = count((item) => item.category === "media");
+const blockers = count((item) => item.releaseBlocker);
+---
+<SeoAdminLayout
+  title={product.title}
+  description="Seiten-Workspace für Content, SEO, Journey, EEAT, Technik, Media, Findings und AI Actions."
+  active="product-workspace"
+>
+  <div class="seo-stack-lg">
+    <section class="seo-panel seo-workspace-summary">
+      <div>
+        <div class="seo-badges">
+          <span class="seo-badge">{product.category}</span>
+          <span class="seo-badge" data-level={blockers ? "high" : "ok"}>
+            {blockers ? `${blockers} Blocker` : "Kein Blocker"}
+          </span>
+          <span class="seo-badge">{findings.length} aktive Findings</span>
+        </div>
+        <h2>{product.title}</h2>
+        <p class="seo-copy">{product.description || "Keine Kurzbeschreibung hinterlegt."}</p>
+        <div class="seo-actions">
+          <a class="pt-button seo-button" href={product.route} target="_blank">Produktseite öffnen</a>
+          <a class="pt-button seo-button" href="/admin/seo/prices/">Produktpflege</a>
+          <a class="pt-button seo-button" href="/admin/seo/media/">Media Center</a>
+        </div>
+      </div>
+
+      <dl class="seo-workspace-facts">
+        <div><dt>Slug</dt><dd>{product.slug}</dd></div>
+        <div><dt>Hersteller</dt><dd>{product.manufacturer}</dd></div>
+        <div><dt>Prüfart</dt><dd>{product.testStatus}</dd></div>
+        <div><dt>Redaktion</dt><dd>{product.editorialStatus}</dd></div>
+        <div><dt>Empfehlung</dt><dd>{product.recommendationStatus}</dd></div>
+        <div><dt>Stand</dt><dd>{product.updatedAt || "Nicht angegeben"}</dd></div>
+      </dl>
+    </section>
+
+    <section class="seo-grid" data-columns="3" aria-label="Arbeitsbereiche">
+      <article class="seo-card">
+        <span class="seo-eyebrow">Content</span>
+        <h3>Seiteninhalt</h3>
+        <p class="seo-copy">{product.sourceFile}</p>
+        <span class="seo-badge">{count((item) => item.category === "content")} Findings</span>
+      </article>
+
+      <article class="seo-card">
+        <span class="seo-eyebrow">SEO</span>
+        <h3>Indexierung und Struktur</h3>
+        <p class="seo-copy">Canonical, Schema, Metadaten und Content-Qualität.</p>
+        <span class="seo-badge">{seoCount} Findings</span>
+      </article>
+
+      <article class="seo-card">
+        <span class="seo-eyebrow">Journey</span>
+        <h3>Entscheidungsweg</h3>
+        <p class="seo-copy">Rückwege, nächste Schritte, Intent und interne Links.</p>
+        <span class="seo-badge">{journeyCount} Findings</span>
+      </article>
+
+      <article class="seo-card">
+        <span class="seo-eyebrow">EEAT</span>
+        <h3>Vertrauen und Nachweise</h3>
+        <p class="seo-copy">Autor, Quellen, Prüfart und redaktionelle Transparenz.</p>
+        <span class="seo-badge">{eeatCount} Findings</span>
+      </article>
+
+      <article class="seo-card">
+        <span class="seo-eyebrow">Technik</span>
+        <h3>UX, CSS und Performance</h3>
+        <p class="seo-copy">Mobile Bedienung, Accessibility, Dark Mode und Build.</p>
+        <span class="seo-badge">{technicalCount} Findings</span>
+      </article>
+
+      <article class="seo-card">
+        <span class="seo-eyebrow">Media</span>
+        <h3>{mediaFiles.length} vorhandene Dateien</h3>
+        <p class="seo-copy">{mediaFiles.join(" · ") || "Noch keine Produktmedien erkannt."}</p>
+        <span class="seo-badge">{mediaCount} Findings</span>
+      </article>
+    </section>
+
+    <section class="seo-panel seo-stack">
+      <div class="seo-section-header">
+        <div>
+          <span class="seo-eyebrow">Einmalige Aufgabenansicht</span>
+          <h2>Findings und AI Actions</h2>
+          <p>Details werden nur hier vollständig angezeigt. Die Karten darüber zeigen lediglich den Bereichsstatus.</p>
+        </div>
+      </div>
+      <SeoFindingList
+        findings={findings}
+        emptyText="Für diese Produktseite gibt es keine aktiven Findings."
+      />
+    </section>
+  </div>
+</SeoAdminLayout>
