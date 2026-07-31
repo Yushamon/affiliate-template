@@ -161,10 +161,7 @@
     "test:css-admin-responsive": "node --test test/css-admin-responsive.test.mjs",
     "css:cleanup:exact-duplicates": "node scripts/design-system/css-exact-duplicate-cleanup.mjs",
     "css:cleanup:exact-duplicates:write": "node scripts/design-system/css-exact-duplicate-cleanup.mjs --write",
-    "test:css-exact-duplicate-cleanup": "node --test test/css-exact-duplicate-cleanup.test.mjs",
-    "css:cards:adopt": "node scripts/design-system/css-card-primitive-adoption.mjs",
-    "css:cards:adopt:write": "node scripts/design-system/css-card-primitive-adoption.mjs --write",
-    "test:css-card-primitive-adoption": "node --test test/css-card-primitive-adoption.test.mjs"
+    "test:css-exact-duplicate-cleanup": "node --test test/css-exact-duplicate-cleanup.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
