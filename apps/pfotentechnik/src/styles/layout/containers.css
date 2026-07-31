@@ -1,0 +1,15 @@
+/* PfotenTechnik container primitives.
+ * Layout-only: keine Typografie, Farben oder Komponentenstile.
+ */
+
+:where(.container, .header-container-v2, .footer-inner-v2) {
+  width: min(100% - 40px, var(--pt-content));
+  max-width: var(--pt-content);
+  margin-inline: auto;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: min(100% - 24px, var(--pt-content));
+  }
+}
