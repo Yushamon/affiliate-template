@@ -1,0 +1,14 @@
+{
+  "patch": "pfotentechnik-css-admin-panels-cleanup-22.9.2",
+  "fixes": [
+    "22.9.1 panel migration",
+    "foundation regression updated for the new panel layer",
+    "obsolete assertion that panels must remain in seo-admin.css removed",
+    "obsolete assertion that seo-admin.css must begin with .seo-panel removed"
+  ],
+  "sourceBytesBefore": 6589,
+  "sourceBytesAfter": 5439,
+  "panelsBytes": 1329,
+  "migratedBlockHash": "c6f4071342476ae7fdac7ddde7af8358fd7746ef46f5d151201776eb29380330",
+  "generatedAt": "2026-07-31T13:39:36.429Z"
+}

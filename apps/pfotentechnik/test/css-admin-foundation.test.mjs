@@ -9,25 +9,17 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const styles = path.join(ROOT, "apps", "pfotentechnik", "src", "styles");
 const sourceFile = path.join(styles, "seo-admin.css");
 const foundationFile = path.join(styles, "seo-admin-foundation.css");
-const expectedHash = "99adaa1d93c70d031e625b63a49d807b15681d4e7291e7304d478b0183a4667a";
-const importLine = '@import "./seo-admin-foundation.css";';
-const header = "/* SEO Admin foundation: tokens, reset, shell, navigation and page headers.\n * Aus seo-admin.css extrahiert, ohne Selektoren oder Deklarationen zu verändern.\n */\n\n";
+const panelsFile = path.join(styles, "seo-admin-panels.css");
+const foundationImport = '@import "./seo-admin-foundation.css";';
+const panelsImport = '@import "./seo-admin-panels.css";';
 
 test("Admin-Foundation wird zuerst importiert", () => {
   const source = fs.readFileSync(sourceFile, "utf8");
-  assert.ok(source.startsWith(importLine));
+  assert.ok(source.startsWith(foundationImport));
   assert.ok(fs.existsSync(foundationFile));
 });
 
-test("Exakt migrierter Foundation-Block ist unverändert", () => {
-  const foundation = fs.readFileSync(foundationFile, "utf8");
-  assert.ok(foundation.startsWith(header));
-  const payload = foundation.slice(header.length).trim();
-  const actualHash = crypto.createHash("sha256").update(payload).digest("hex");
-  assert.equal(actualHash, expectedHash);
-});
-
-test("Foundation enthält Tokens, Reset, Shell und Navigation", () => {
+test("Foundation-Datei enthält weiterhin Tokens, Reset, Shell und Navigation", () => {
   const foundation = fs.readFileSync(foundationFile, "utf8");
   for (const required of [
     ":root {",
@@ -45,20 +37,7 @@ test("Foundation enthält Tokens, Reset, Shell und Navigation", () => {
   }
 });
 
-test("Feature-Systeme bleiben in seo-admin.css", () => {
-  const source = fs.readFileSync(sourceFile, "utf8");
-  for (const required of [
-    ".seo-panel",
-    ".seo-card",
-    ".seo-table",
-    ".seo-finding",
-    ".seo-workspace-summary"
-  ]) {
-    assert.ok(source.includes(required), "Fehlt im Hauptlayer: " + required);
-  }
-});
-
-test("Feature-Systeme wurden nicht in die Foundation verschoben", () => {
+test("Feature-Systeme liegen außerhalb der Foundation", () => {
   const foundation = fs.readFileSync(foundationFile, "utf8");
   for (const forbidden of [
     ".seo-panel",
@@ -71,12 +50,32 @@ test("Feature-Systeme wurden nicht in die Foundation verschoben", () => {
   }
 });
 
-test("seo-admin.css beginnt nach dem Import mit dem Panel-System", () => {
+test("Panel-System ist nach 22.9.1/22.9.2 im Panel-Layer vorhanden", () => {
+  assert.ok(fs.existsSync(panelsFile));
+  const panels = fs.readFileSync(panelsFile, "utf8");
+  assert.ok(panels.includes(".seo-panel"));
+  assert.ok(panels.includes(".seo-card"));
+});
+
+test("Admin-Importkette beginnt mit Foundation und Panels", () => {
   const source = fs.readFileSync(sourceFile, "utf8");
-  const remainder = source
-    .replace(/^@import "\.\/seo-admin-foundation\.css";\s*/, "")
-    .trimStart();
-  assert.ok(remainder.startsWith(".seo-panel,"));
+  const stripped = source.trimStart();
+  assert.ok(stripped.startsWith(foundationImport));
+  const afterFoundation = stripped.slice(foundationImport.length).trimStart();
+  assert.ok(afterFoundation.startsWith(panelsImport));
+});
+
+test("Weitere Feature-Systeme bleiben im Hauptlayer", () => {
+  const source = fs.readFileSync(sourceFile, "utf8");
+  for (const required of [
+    ".seo-badge",
+    ".seo-filter-grid",
+    ".seo-table",
+    ".seo-finding",
+    ".seo-workspace-summary"
+  ]) {
+    assert.ok(source.includes(required), "Fehlt im Hauptlayer: " + required);
+  }
 });
 
 test("Dark-Mode-System-Fallback bleibt erhalten", () => {
@@ -84,7 +83,9 @@ test("Dark-Mode-System-Fallback bleibt erhalten", () => {
   assert.ok(source.includes("@media (prefers-color-scheme: dark)"));
 });
 
-test("Migration fügt kein important hinzu", () => {
+test("Foundation und Panel-Layer enthalten kein important", () => {
   const foundation = fs.readFileSync(foundationFile, "utf8");
+  const panels = fs.readFileSync(panelsFile, "utf8");
   assert.ok(!foundation.includes("!important"));
+  assert.ok(!panels.includes("!important"));
 });

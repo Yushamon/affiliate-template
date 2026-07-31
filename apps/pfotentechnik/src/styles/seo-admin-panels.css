@@ -1,0 +1,41 @@
+/* SEO Admin panels: surfaces, stacks, grids and metrics.
+ * Aus seo-admin.css extrahiert, ohne Selektoren oder Deklarationen zu verändern.
+ */
+
+.seo-panel,
+.seo-card {
+  border: 1px solid var(--seo-border);
+  border-radius: var(--seo-radius-lg);
+  background: var(--seo-surface);
+  box-shadow: var(--seo-shadow);
+}
+
+.seo-panel { padding: clamp(18px, 3vw, 28px); }
+.seo-card { padding: 18px; }
+
+.seo-stack { display: grid; gap: 16px; }
+.seo-stack-lg { display: grid; gap: 24px; }
+.seo-grid { display: grid; gap: 14px; }
+.seo-grid[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.seo-grid[data-columns="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.seo-grid[data-columns="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.seo-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+  gap: 9px;
+}
+
+.seo-metric {
+  padding: 13px;
+  border: 1px solid var(--seo-border);
+  border-radius: 14px;
+  background: var(--seo-surface-soft);
+}
+
+.seo-metric[data-level="danger"] { border-color: var(--seo-danger); }
+.seo-metric[data-level="warning"] { border-color: var(--seo-warning); }
+.seo-metric strong { display: block; margin-top: 4px; font-size: 1.45rem; }
+.seo-metric span,
+.seo-muted { color: var(--seo-muted); }
+.seo-metric span { font-size: .76rem; }
