@@ -28,7 +28,10 @@
 .nav-toggle-button::after { top: 24px; }
 .nav-toggle-button[aria-expanded="true"]::before { top: 21px; transform: translateX(-50%) rotate(45deg); }
 .nav-toggle-button[aria-expanded="true"]::after { top: 21px; transform: translateX(-50%) rotate(-45deg); }
-
+:where(.pt-button, .button-primary, .button-secondary, .cta-button, .affiliate-button) { min-height: 48px; border-radius: 12px; font-weight: 800; }
+:where(.pt-button-primary, .button-primary, .cta-button, .affiliate-button) { border-color: var(--pt-green-600); background: var(--pt-green-600); box-shadow: 0 12px 26px rgba(31, 164, 99, 0.16); color: white; }
+:where(.pt-button-primary, .button-primary, .cta-button, .affiliate-button):hover { background: var(--pt-green-700); box-shadow: 0 16px 34px rgba(31, 164, 99, 0.22); }
+:where(.pt-button-secondary, .button-secondary) { border: 1px solid var(--pt-line-strong); background: white; color: var(--pt-ink-950); box-shadow: var(--pt-shadow-xs); }
 :where( .pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card, .result-card, .premium-block, .faq-item ) { border-color: var(--pt-line); border-radius: var(--pt-radius-lg); background: var(--pt-surface); box-shadow: var(--pt-shadow-sm); }
 :where( .pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card ) { transition: border-color 160ms ease,
     box-shadow 160ms ease,

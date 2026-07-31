@@ -146,8 +146,7 @@
     "test:css-architecture:accuracy": "node --test test/css-architecture-accuracy.test.mjs",
     "test:css-foundation": "node --test test/css-foundation-tokens.test.mjs",
     "test:css-base-layer": "node --test test/css-base-layer.test.mjs",
-    "test:css-layout-foundation": "node --test test/css-layout-foundation.test.mjs",
-    "test:css-button-system": "node --test test/css-button-system.test.mjs"
+    "test:css-layout-foundation": "node --test test/css-layout-foundation.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

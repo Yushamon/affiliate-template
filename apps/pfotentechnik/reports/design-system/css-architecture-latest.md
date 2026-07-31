@@ -1,17 +1,17 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-07-31T11:44:22.058Z
+Erzeugt: 2026-07-31T11:57:37.433Z
 
 ## Zusammenfassung
 
-- CSS-Dateien: 30
+- CSS-Dateien: 32
 - Astro-Dateien mit Style-Block: 53
-- Quell-CSS: 746036 Bytes
+- Quell-CSS: 746290 Bytes
 - Regeln: 8039
 - !important-Deklarationen: 1649
 - mehrfach definierte Selektoren: 1536
 - identische Deklarationsblöcke: 1033
-- Importkanten: 47
+- Importkanten: 51
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
 - sichere Löschkandidaten: 0
@@ -20,7 +20,7 @@ Erzeugt: 2026-07-31T11:44:22.058Z
 
 | Owner | Dateien | Bytes | Regeln | !important |
 |---|---:|---:|---:|---:|
-| design-system | 24 | 303722 | 4088 | 971 |
+| design-system | 26 | 303976 | 4088 | 971 |
 | comparison-platform | 4 | 151695 | 1249 | 279 |
 | editorial-content | 1 | 28892 | 172 | 258 |
 | manufacturer-pages | 3 | 25513 | 379 | 84 |
@@ -33,7 +33,7 @@ Erzeugt: 2026-07-31T11:44:22.058Z
 
 | Datei | Kategorie | Owner | Bytes | Regeln | !important | importiert von |
 |---|---|---|---:|---:|---:|---:|
-| `apps/pfotentechnik/src/styles/pfotentechnik-design-system.css` | global | design-system | 129548 | 2289 | 753 | 1 |
+| `apps/pfotentechnik/src/styles/pfotentechnik-design-system.css` | global | design-system | 128851 | 2274 | 753 | 1 |
 | `packages/affiliate-core/src/components/comparison/comparison-system.css` | comparison | comparison-platform | 135639 | 1119 | 278 | 1 |
 | `packages/affiliate-core/src/renderer/PremiumRenderer.astro` | component-inline | editorial-content | 28892 | 172 | 258 | 0 |
 | `apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css` | global | design-system | 25628 | 290 | 211 | 1 |
