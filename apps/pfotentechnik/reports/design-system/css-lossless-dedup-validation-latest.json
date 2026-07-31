@@ -1,0 +1,27 @@
+{
+  "patch": "pfotentechnik-css-lossless-dedup-1.0.1",
+  "generatedAt": "2026-07-31T07:58:16.917Z",
+  "target": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+  "removed": {
+    "duplicateDeclarations": 0,
+    "duplicateRules": 1
+  },
+  "before": {
+    "bytes": 134201,
+    "important": 753
+  },
+  "after": {
+    "bytes": 134170,
+    "important": 753
+  },
+  "delta": {
+    "bytes": -31,
+    "important": 0
+  },
+  "validation": {
+    "build": "passed",
+    "componentAdoption": "passed",
+    "designSystemAudit": "passed",
+    "performanceStrict": "passed"
+  }
+}

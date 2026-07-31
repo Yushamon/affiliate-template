@@ -1,9 +1,11 @@
 {
-  "name": "pfotentechnik-css-consolidation-audit",
-  "version": "1.0.0",
-  "writes": [
-    "apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.md",
-    "apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.json"
+  "name": "pfotentechnik-css-lossless-dedup",
+  "version": "1.0.1",
+  "target": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+  "operations": [
+    "remove identical duplicate declarations within the same rule",
+    "remove fully identical rules in the same CSS context"
   ],
-  "changesProductionCss": false
+  "rollback": true,
+  "fix": "uses existing design-system:audit package script"
 }

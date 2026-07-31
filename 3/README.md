@@ -1,25 +1,41 @@
-# PfotenTechnik CSS Consolidation Audit 1.0.0
+# PfotenTechnik CSS Lossless Dedup 1.0.1
 
-Der Installer verändert keine produktiven CSS-Dateien. Er erstellt eine belastbare
-Quellanalyse für den nächsten CSS-Cleanup:
+Der Installer bereinigt ausschließlich:
 
-- Bytes und Regeln pro CSS-/Astro-Datei
-- `!important` pro Datei
-- mehrfach definierte Selektoren
-- identische Deklarationsblöcke
-- Ranking der sinnvollsten Cleanup-Ziele
+1. exakt identische Deklarationen innerhalb derselben CSS-Regel,
+2. vollständig identische Regeln im selben CSS-Kontext.
 
-Ausführen im Repository-Root:
+Nicht verändert werden:
+
+- Regeln mit abweichenden Werten,
+- die Reihenfolge unterschiedlicher Overrides,
+- Media-Query-Kontexte,
+- Selektoren mit nur ähnlichen Deklarationen,
+- Comparison CSS,
+- PremiumRenderer,
+- Herstellerseiten.
+
+## Ausführen
 
 ```bash
-node 3/apply-pfotentechnik-css-consolidation-audit-1.0.0.mjs
+node 3/apply-pfotentechnik-css-lossless-dedup-1.0.1.mjs
 ```
 
-Reports:
+## Validierung
+
+Der Installer führt aus:
+
+```bash
+npm run build:pfotentechnik
+npm --workspace apps/pfotentechnik run design-system:components:audit
+npm --workspace apps/pfotentechnik run design-system:audit
+npm --workspace apps/pfotentechnik run audit:performance:strict
+```
+
+Bei einem Fehler wird die geänderte CSS-Datei automatisch wiederhergestellt.
+
+Report:
 
 ```text
-apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.md
-apps/pfotentechnik/reports/design-system/css-consolidation-audit-latest.json
+apps/pfotentechnik/reports/design-system/css-lossless-dedup-validation-latest.json
 ```
-
-Danach werden bestehender Komponenten- und Performance-Audit ausgeführt.
