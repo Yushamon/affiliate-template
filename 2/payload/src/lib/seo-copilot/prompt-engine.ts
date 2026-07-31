@@ -137,8 +137,18 @@ export const normalizePromptContextV2 = (input: PromptBuildInput): RuntimePrompt
   };
 };
 
+const normalizeListEntry = (entry: string) =>
+  entry.replace(/^\s*[-*+]\s+/, "").trim();
+
 const section = (title: string, body: string | string[]) => {
-  const value = Array.isArray(body) ? body.filter(Boolean).map((entry) => `- ${entry}`).join("\n") : body.trim();
+  const value = Array.isArray(body)
+    ? body
+        .map((entry) => normalizeListEntry(String(entry)))
+        .filter(Boolean)
+        .map((entry) => `- ${entry}`)
+        .join("\n")
+    : body.trim();
+
   return value ? `## ${title}\n\n${value}` : "";
 };
 
@@ -196,7 +206,11 @@ export const renderPromptContextV2 = (context: RuntimePromptContext, template: P
   return blocks.filter(Boolean).join("\n\n");
 };
 
-export const auditGeneratedPrompt = (prompt: string, context: RuntimePromptContext) => {
+export const auditGeneratedPrompt = (
+  prompt: string,
+  context: RuntimePromptContext,
+  target: "codex" | "chatgpt" = "codex",
+) => {
   const errors: string[] = [];
   const warnings: string[] = [];
   if (!prompt.trim()) errors.push("PROMPT_EMPTY");
@@ -209,6 +223,22 @@ export const auditGeneratedPrompt = (prompt: string, context: RuntimePromptConte
   if (context.profile === "accessibility") {
     if (!/design-system:components:audit/.test(prompt)) errors.push("ACCESSIBILITY_COMPONENT_AUDIT_MISSING");
     if (/hero\.webp|thumbnail\.webp|gallery-\d\.webp/.test(prompt)) errors.push("ACCESSIBILITY_MEDIA_LEAK");
+  }
+
+  if (
+    target === "codex" &&
+    !/Repository-Stand erneut prüfen/i.test(prompt)
+  ) {
+    errors.push("REPOSITORY_RECHECK_MISSING");
+  }
+
+  if (context.requiresResearch) {
+    if (!/Trenne bestätigte Herstellerangaben/i.test(prompt)) {
+      errors.push("RESEARCH_SOURCE_SEPARATION_MISSING");
+    }
+    if (!/Marktsignale/i.test(prompt)) {
+      errors.push("MARKET_SIGNAL_LABEL_MISSING");
+    }
   }
   if (!context.problems.length) warnings.push("NO_CONCRETE_PROBLEM");
   if (!context.affectedFile) warnings.push("AFFECTED_FILE_TO_RESOLVE");

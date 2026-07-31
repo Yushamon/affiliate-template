@@ -1,54 +1,34 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-07-29T21:26:10.442Z",
+  "generatedAt": "2026-07-31T21:12:02.349Z",
   "strict": false,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 204
+    "builtRoutes": 274
   },
   "summary": {
     "documents": 185,
     "legacyErrors": 0,
-    "legacyWarnings": 42,
+    "legacyWarnings": 39,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 42,
+    "effectiveWarnings": 39,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 53
+    "advisory": 50
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 42
+    "warning": 39
   },
   "findings": [
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/futtermenge-hund/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hund-hat-durchfall/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/hund-ist-muede/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",
@@ -349,16 +329,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petsafe-healthy-pet-simply-feed/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petsafe-healthy-pet-simply-feed/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

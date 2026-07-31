@@ -1,6 +1,6 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-31T06:49:31.233Z
+Erstellt: 2026-07-31T21:12:01.921Z
 
 ## Ergebnis
 
@@ -8,14 +8,12 @@ Erstellt: 2026-07-31T06:49:31.233Z
 - Linkdefinitionen: 440
 - Simulierte automatische Links: 438
 - Fehler: 0
-- Warnungen: 41
+- Warnungen: 39
 - Strict-kritisch: 0
 
 ## Befunde
 
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.

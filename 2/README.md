@@ -1,27 +1,34 @@
-# PfotenTechnik SEO-Copilot Prompt Engine 2.0.3
+# PfotenTechnik SEO-Copilot Prompt Engine 2.0.11
 
-Korrektur des AI-Action-Mappings.
+Reparatur der Marktsignal-Testmigration.
 
 ## Ursache
 
-Die zentrale Registry unterscheidet zwischen:
+Der Installer verwendete:
 
-- AI-Action-ID: `codex-send`
-- Prompt-Template-ID: `codex-remediation`
+```js
+semanticMarketSignalLines.join("\\n")
+```
 
-Der Test der Version 2.0.2 verwendete die Template-ID als Action-ID. Die Registry
-verwarf sie deshalb und `buildFindingAiActions()` lieferte keine Action.
+Dadurch wurden sichtbare `\n`-Zeichen statt echter Zeilenumbrüche in
+`test/seo-copilot.test.mjs` geschrieben.
 
 ## Korrektur
 
-- Der Haupttest verwendet die kanonische Action-ID `codex-send`.
-- Bereits gespeicherte Template-IDs werden als kompatible Aliasse aufgelöst.
-- Fehlen `aiActionIds`, nutzt die Engine `resolveFindingAiActionIds()`.
-- Die zentrale AI-Action-Registry bleibt die einzige Quelle.
-- Der Windows-Runner über `cmd.exe /d /s /c` bleibt erhalten.
+Der Installer erkennt nun drei mögliche Repository-Zustände:
+
+1. alter wortlautabhängiger Test
+2. beschädigter Test mit sichtbaren `\n`
+3. bereits korrekt migrierter semantischer Test
+
+Er überführt jeden unterstützten Zustand in denselben gültigen Zielzustand.
+Die Datei ist bereits Teil von Backup und Rollback. Anschließend läuft
+`node --check`, bevor die vollständige Testsuite startet.
+
+Prompt-Engine, Auditlogik, Registry und Prompt-Ausgabe bleiben unverändert.
 
 ## Ausführen
 
 ```powershell
-node ./2/apply-pfotentechnik-seo-copilot-prompt-engine-2.0.3.mjs
+node ./2/apply-pfotentechnik-seo-copilot-prompt-engine-2.0.11.mjs
 ```

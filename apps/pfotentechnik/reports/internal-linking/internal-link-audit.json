@@ -1,7 +1,7 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-07-31T06:49:31.233Z",
-  "strict": true,
+  "generatedAt": "2026-07-31T21:12:01.921Z",
+  "strict": false,
   "summary": {
     "documents": 185,
     "contentRoutes": 185,
@@ -10,7 +10,7 @@
     "definitions": 440,
     "renderedAutomaticLinks": 438,
     "errors": 0,
-    "warnings": 41,
+    "warnings": 39,
     "critical": 0
   },
   "blockedAnchors": [
@@ -40,20 +40,8 @@
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/futtermenge-hund/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/futtermenge-hund/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hund-hat-durchfall/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/hund-ist-muede/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/hund-ist-muede/"
     },
     {
       "severity": "warning",
@@ -3058,7 +3046,7 @@
     "/futterautomat-katze/": 9,
     "/futterautomat-richtig-reinigen/": 9,
     "/futterautomat-und-ernaehrung/": 14,
-    "/futtermenge-hund/": 0,
+    "/futtermenge-hund/": 1,
     "/futtermenge-katze/": 4,
     "/gps-oder-bluetooth/": 2,
     "/gps-tracker-richtig-befestigen/": 3,
@@ -3086,7 +3074,7 @@
     "/hund-frisst-nicht/": 5,
     "/hund-frisst-zu-schnell/": 1,
     "/hund-hat-durchfall/": 0,
-    "/hund-ist-muede/": 0,
+    "/hund-ist-muede/": 1,
     "/hund-trinkt-ploetzlich-viel/": 1,
     "/hund-trinkt-viel/": 2,
     "/hund-trinkt-zu-wenig/": 6,

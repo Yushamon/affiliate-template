@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { auditGeneratedPrompt, buildCodexPrompt, cleanPromptValue, normalizePromptContextV2 } from "../src/lib/seo-copilot/prompts.ts";
+import { auditGeneratedPrompt, buildCodexPrompt, cleanPromptValue, normalizePromptContextV2,
+  buildChatGptPrompt,
+} from "../src/lib/seo-copilot/prompts.ts";
 import { buildFindingAiActions } from "../src/lib/seo-copilot/finding-ai.ts";
 
 test("Rohobjekte werden semantisch formatiert", () => {
@@ -101,4 +103,117 @@ test("Finding-Actions akzeptieren gespeicherte Template-IDs als Alias", () => {
   assert.equal(actions.length, 1);
   assert.equal(actions[0].id, "codex-send");
   assert.equal(actions[0].templateId, "codex-remediation");
+});
+
+
+test("Codex-Prompt bewahrt Repository-Prüfung und Freigabegrenze", () => {
+  const { prompt } = buildCodexPrompt(
+    {
+      kind: "product",
+      title: "Model X",
+      problems: [],
+      existingData: [],
+      missingData: [],
+      validations: [],
+      acceptanceCriteria: [],
+    },
+    { templateId: "generate-product-draft" },
+  );
+
+  assert.match(prompt, /Repository-Stand erneut prüfen/i);
+  assert.match(prompt, /explizite Freigabe/i);
+});
+
+test("Rechercheprompt trennt Herstellerangaben und Marktsignale", () => {
+  const { prompt } = buildCodexPrompt(
+    {
+      kind: "product",
+      title: "Model X",
+      problems: [],
+      existingData: [],
+      missingData: [],
+      validations: [],
+      acceptanceCriteria: [],
+    },
+    { templateId: "research-missing-product-data" },
+  );
+
+  assert.match(prompt, /Trenne bestätigte Herstellerangaben/i);
+  assert.match(prompt, /Marktsignale/i);
+});
+
+
+test("Promptabschnitte erzeugen keine doppelten Listenmarkierungen", () => {
+  const { prompt } = buildCodexPrompt(
+    {
+      kind: "product",
+      title: "Model X",
+      problems: ["Problem A"],
+      existingData: ["Daten A"],
+      missingData: ["Daten B"],
+      acceptanceCriteria: ["Kriterium A"],
+    },
+    { templateId: "generate-product-draft" },
+  );
+
+  assert.doesNotMatch(prompt, /^-\s+-\s+/m);
+  assert.match(prompt, /^- Finding: Model X$/m);
+  assert.match(prompt, /^- Datei: aus Auditquelle/m);
+});
+
+test("Codex-Recherchetemplate enthält Recherche- und Arbeitsblöcke", () => {
+  const { prompt } = buildCodexPrompt(
+    {
+      kind: "product",
+      title: "Model X",
+      problems: [],
+      existingData: [],
+      missingData: [],
+      acceptanceCriteria: [],
+    },
+    { templateId: "research-missing-product-data" },
+  );
+
+  assert.match(prompt, /## Rechercheausgabe/);
+  assert.match(prompt, /Trenne bestätigte Herstellerangaben/);
+  assert.match(prompt, /Repository-Stand erneut prüfen/);
+  assert.match(prompt, /expliziter Freigabe/i);
+});
+
+
+test("ChatGPT-Prompt benötigt keinen Codex-Repository-Recheck", () => {
+  const { prompt, context } = buildChatGptPrompt(
+    {
+      kind: "product",
+      title: "Model X",
+      problems: [],
+      existingData: [],
+      missingData: [],
+      acceptanceCriteria: [],
+    },
+    { templateId: "research-missing-product-data" },
+  );
+
+  assert.doesNotMatch(prompt, /Arbeitsweise für Codex/);
+  assert.equal(auditGeneratedPrompt(prompt, context, "chatgpt").passed, true);
+});
+
+test("Codex-Prompt bleibt an Repository-Recheck gebunden", () => {
+  const context = normalizePromptContextV2({
+    kind: "product",
+    title: "Model X",
+    problems: [],
+    existingData: [],
+    missingData: [],
+    acceptanceCriteria: [],
+  });
+
+  const audit = auditGeneratedPrompt(
+    "## Rechercheausgabe\n\n- Trenne bestätigte Herstellerangaben und Marktsignale.",
+    context,
+    "codex",
+  );
+
+  assert.equal(audit.passed, false);
+  assert.ok(audit.errors.includes("REPOSITORY_RECHECK_MISSING"));
 });

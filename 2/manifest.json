@@ -1,11 +1,12 @@
 {
   "name": "pfotentechnik-seo-copilot-prompt-engine",
-  "version": "2.0.3",
+  "version": "2.0.11",
   "fixes": [
-    "Use codex-send as canonical AI action ID",
-    "Resolve stored template IDs as backwards-compatible aliases",
-    "Fallback to resolveFindingAiActionIds when no actions are stored",
-    "Retain Windows cmd.exe command runner"
+    "Use real line breaks for semantic market-signal assertions",
+    "Repair persisted literal-newline corruption",
+    "Accept legacy, corrupted, and already-correct test states",
+    "Record test repair mode in validation report",
+    "Keep prompt engine runtime behavior unchanged"
   ],
   "project": "apps/pfotentechnik",
   "rollback": true
