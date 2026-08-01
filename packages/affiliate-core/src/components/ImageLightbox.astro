@@ -74,7 +74,7 @@ const excludeValue = excludeSelectors.join(",");
       <img
         class="image-lightbox-v2__image"
         data-lightbox-image
-        alt=""
+        alt="Vergrößerte Bildansicht"
         decoding="async"
         draggable="false"
       />
@@ -217,7 +217,7 @@ const excludeValue = excludeSelectors.join(",");
 
       resetTransform();
       preview.src = source;
-      preview.alt = sourceImage.alt || "";
+      preview.alt = sourceImage.alt?.trim() || "Vergrößerte Bildansicht";
       caption.textContent = captionText;
       caption.hidden = captionText.length === 0;
       counter.textContent =
@@ -398,7 +398,7 @@ const excludeValue = excludeSelectors.join(",");
     dialog.addEventListener("close", () => {
       document.documentElement.classList.remove("has-image-lightbox-v2");
       preview.removeAttribute("src");
-      preview.alt = "";
+      preview.alt = "Vergrößerte Bildansicht";
       caption.textContent = "";
       caption.hidden = true;
       counter.textContent = "";

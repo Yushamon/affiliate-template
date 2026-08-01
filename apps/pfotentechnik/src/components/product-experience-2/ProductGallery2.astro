@@ -101,7 +101,7 @@ const hero = optimized[0];
             src={item.thumbSrc}
             width="180"
             height="135"
-            alt=""
+            alt={`${item.alt || name} – Ansicht ${index + 1}`}
             loading="lazy"
             decoding="async"
           />

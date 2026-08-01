@@ -116,7 +116,7 @@ const productFallback = getProjectImage(DEFAULT_PROJECT, "product");
                   <a class="ranking-table-product" href={product.productUrl}>
                     <ProductImage
                       image={getProductComparisonImage(product, productFallback, key)}
-                      alt=""
+                      alt={`${product.name} im Direktvergleich`}
                       loading="lazy"
                       decoding="async"
                     />

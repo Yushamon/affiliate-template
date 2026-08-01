@@ -13,7 +13,7 @@ const { hero } = Astro.props as Props;
   <div class="home3-hero__media" aria-hidden="true">
     <OptimizedImage
       src={hero.image.src}
-      alt=""
+      alt={hero.title}
       layout="full-width"
       priority
     />
