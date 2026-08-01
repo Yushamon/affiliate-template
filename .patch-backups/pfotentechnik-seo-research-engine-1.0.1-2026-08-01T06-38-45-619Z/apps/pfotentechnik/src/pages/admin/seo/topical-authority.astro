@@ -1,6 +1,5 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
-import ResearchWorkbench from "../../../components/admin/ResearchWorkbench.astro";
 import { loadTopicalAuthority } from "../../../lib/seo/topical-authority/loadTopicalAuthority";
 
 const loaded = loadTopicalAuthority();
@@ -180,8 +179,6 @@ const priorityLabels = {
         })}
       </div>
     </section>
-
-    <ResearchWorkbench generatedAt={data.generatedAt} clusters={data.clusters} inventory={data.inventory} />
 
     <section class="ta-section">
       <div class="ta-section-head">

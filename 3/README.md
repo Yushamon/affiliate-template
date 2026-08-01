@@ -1,18 +1,35 @@
-# PfotenTechnik CSS Admin Operations + Cleanup 22.9.6
+# PfotenTechnik SEO Research Engine 1.0.2
 
-22.9.6 ersetzt 22.9.5.
+Schlanke Erweiterung des bestehenden Topical-Authority-Bereichs.
 
-Der 22.9.5-Rollback war korrekt. Der Fehler lag ausschließlich im Test:
-Die responsive Regel `.seo-workspace-summary { grid-template-columns: 1fr; }`
-muss in `seo-admin.css` erhalten bleiben.
-
-22.9.6 unterscheidet nun zwischen:
-
-- ausgelagerter statischer Basisregel mit `display: grid`
-- beibehaltener responsiver Override-Regel
+- eine Datei: `apps/pfotentechnik/research/research.json`
+- Git ist die Historie
+- keine Datei pro Produkt
+- Research für Themen, Produkte, Hersteller und Content-Refresh
 
 Ausführen:
 
-```bash
-node 3/apply-pfotentechnik-css-admin-operations-cleanup-22.9.6.mjs
+```powershell
+node ./2/apply-pfotentechnik-seo-research-engine-1.0.2.mjs
 ```
+
+Danach in `/admin/seo/topical-authority/` den Research-Auftrag kopieren. ChatGPT-Antwort als `research-import.json` speichern und importieren:
+
+```powershell
+npm --workspace apps/pfotentechnik run research:import -- ./research-import.json
+```
+
+
+## Korrektur in 1.0.2
+
+Der plattformabhängige Command-Wrapper wurde vollständig neu geschrieben.
+
+- kein komprimierter Einzeiler
+- kein ungültiges Quote-Escaping
+- `spawnSync()` bleibt bei `shell: false`
+- stabile Argumentübergabe unter macOS, Linux und Windows
+
+
+## Korrektur in 1.0.2
+
+Alle verbliebenen Aufrufe des alten `invoke`-Helpers wurden auf `commandForPlatform` migriert. Der Installer wird vor Auslieferung mit `node --check` geprüft.
