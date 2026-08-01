@@ -49,7 +49,7 @@ test("Neue Komponenten sind mobile-first, dark-mode-tokenbasiert und ohne import
 
 test("Decision Facts erklären Konsequenzen statt nur Daten zu wiederholen", () => {
   const source = readComponent("ProductDecisionFacts2.astro");
-  assert.match(source, /Was die technischen Daten im Alltag bedeuten/);
+  assert.match(source, /Was die Daten wirklich bedeuten/);
   assert.match(source, /\{fact\.consequence\}/);
 });
 

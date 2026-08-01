@@ -72,6 +72,10 @@ const buildContext = (data: Record<string, any>): Context => {
     tokens: new Set(text.split(/\s+/).filter((token) => token.length >= 4))
   };
 };
+const hasCompatibleRecommendationTopic = (source: Context, candidate: Context) => {
+  if (source.topics.size === 0 || candidate.topics.size === 0) return true;
+  return overlapCount(source.topics, candidate.topics) > 0;
+};
 const overlapCount = <T>(left: Set<T>, right: Set<T>) => [...left].filter((value) => right.has(value)).length;
 const scoreContext = (source: Context, candidate: Context) => {
   let score = scoreMultiTopicContext({
@@ -103,12 +107,18 @@ const rank = <T extends RecommendationEntry>(
   const sourceContext = buildContext(source);
   const sourceGroup = groupFor(source);
   return candidates
-    .map((entry) => ({
-      entry,
-      score: scoreContext(sourceContext, buildContext(entry.data)) + extra(entry) +
-        getInternalLinkRuleWeight({ sourceGroup, targetGroup: groupFor(entry.data), targetPath: String(entry.data.slug ?? "") }) / 8
-    }))
-    .filter(({ score }) => score > 0)
+    .map((entry) => {
+      const candidateContext = buildContext(entry.data);
+      if (!hasCompatibleRecommendationTopic(sourceContext, candidateContext)) {
+        return { entry, score: Number.NEGATIVE_INFINITY };
+      }
+      return {
+        entry,
+        score: scoreContext(sourceContext, candidateContext) + extra(entry) +
+          getInternalLinkRuleWeight({ sourceGroup, targetGroup: groupFor(entry.data), targetPath: String(entry.data.slug ?? "") }) / 8
+      };
+    })
+    .filter(({ score }) => Number.isFinite(score) && score > 0)
     .sort((a, b) => b.score - a.score || normalize(a.entry.data.slug).localeCompare(normalize(b.entry.data.slug), "de"));
 };
 

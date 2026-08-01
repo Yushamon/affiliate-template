@@ -183,7 +183,8 @@
     "test:product-standard-3:enricher": "node --test test/product-standard-3-enricher-25.4.0.test.mjs",
     "product-standard-3:release": "node scripts/product-standard-3/release-gate.mjs",
     "product-standard-3:release:no-build": "node scripts/product-standard-3/release-gate.mjs --skip-build",
-    "test:product-standard-3:release": "node --test test/product-standard-3-release-gate-25.5.0.test.mjs"
+    "test:product-standard-3:release": "node --test test/product-standard-3-release-gate-25.5.0.test.mjs",
+    "test:product-ux-cleanup": "node --test test/product-ux-cleanup-25.7.0.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

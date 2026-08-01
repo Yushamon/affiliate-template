@@ -16,18 +16,20 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
     <section class="details__proscons" aria-label="Belegte Stärken und Schwächen">
       {pros.length > 0 && (
         <div class="details__column details__column--positive">
+          <span class="details__eyebrow">Dafür spricht es</span>
           <h2>Stärken</h2>
           <ul>
-            {pros.map((item) => <li><span aria-hidden="true">✓</span><span>{item}</span></li>)}
+            {pros.map((item) => <li>{item}</li>)}
           </ul>
         </div>
       )}
 
       {cons.length > 0 && (
         <div class="details__column details__column--negative">
-          <h2>Weitere Schwächen</h2>
+          <span class="details__eyebrow">Darauf achten</span>
+          <h2>Schwächen</h2>
           <ul>
-            {cons.map((item) => <li><span aria-hidden="true">×</span><span>{item}</span></li>)}
+            {cons.map((item) => <li>{item}</li>)}
           </ul>
         </div>
       )}
@@ -36,7 +38,7 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
 
   <aside class="details__health">
     <span>Gesundheit und Sicherheit</span>
-    <h2>Technik unterstützt, sie ersetzt keine Kontrolle</h2>
+    <h2>Technik ersetzt keine Kontrolle</h2>
     <p>{model.healthNote}</p>
   </aside>
 
@@ -60,7 +62,7 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
 <style>
   .details {
     display: grid;
-    gap: 12px;
+    gap: 18px;
   }
 
   .details > aside,
@@ -71,56 +73,67 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
     border: 1px solid var(--px2-border);
     border-radius: 20px;
     background: var(--px2-surface);
-    box-shadow: var(--px2-shadow);
   }
 
   .details__proscons {
     display: grid;
-    gap: 18px;
+    gap: 24px;
   }
 
   .details__column {
     min-width: 0;
   }
 
+  .details__eyebrow,
+  .details__health > span {
+    color: var(--px2-green-strong);
+    font-size: .7rem;
+    font-weight: 850;
+    letter-spacing: .065em;
+    text-transform: uppercase;
+  }
+
+  .details__column--negative .details__eyebrow {
+    color: var(--px2-red);
+  }
+
   .details h2 {
-    margin: 0 0 12px;
-    font-size: clamp(1.25rem, 5vw, 1.65rem);
+    margin: 4px 0 12px;
+    font-size: clamp(1.2rem, 4.8vw, 1.55rem);
   }
 
   .details ul {
     display: grid;
-    gap: 8px;
+    gap: 10px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   .details li {
-    display: grid;
-    grid-template-columns: 1.3rem minmax(0, 1fr);
-    gap: 8px;
+    position: relative;
+    padding-left: 1rem;
+    color: var(--px2-muted);
     line-height: 1.48;
   }
 
-  .details__column--positive li > span:first-child {
-    color: var(--px2-green-strong);
+  .details li::before {
+    position: absolute;
+    top: .64em;
+    left: 0;
+    width: .35rem;
+    height: .35rem;
+    border-radius: 50%;
+    background: var(--px2-green);
+    content: "";
   }
 
-  .details__column--negative li > span:first-child {
-    color: var(--px2-red);
+  .details__column--negative li::before {
+    background: var(--px2-red);
   }
 
   .details__health {
     background: var(--px2-green-soft);
-  }
-
-  .details__health > span {
-    color: var(--px2-green-strong);
-    font-size: .72rem;
-    font-weight: 850;
-    letter-spacing: .06em;
-    text-transform: uppercase;
   }
 
   .details__health h2 {
@@ -188,7 +201,7 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
     }
 
     .details__column--negative {
-      padding-left: 18px;
+      padding-left: 22px;
       border-left: 1px solid var(--px2-border);
     }
 

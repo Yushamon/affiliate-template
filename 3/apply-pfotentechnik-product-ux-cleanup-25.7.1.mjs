@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
-const NAME = "pfotentechnik-product-faq-cleanup-25.6.1";
+const NAME = "pfotentechnik-product-ux-cleanup-25.7.1";
 
 function findRoot(start) {
   let dir = path.resolve(start);
@@ -18,7 +18,7 @@ function findRoot(start) {
 
 const ROOT = findRoot(process.cwd());
 const APP = path.join(ROOT, "apps", "pfotentechnik");
-const testPath = path.join(APP, "test", "product-faq-cleanup-25.6.0.test.mjs");
+const testPath = path.join(APP, "test", "product-ux-cleanup-25.7.0.test.mjs");
 
 if (!fs.existsSync(testPath)) {
   throw new Error("Testdatei nicht gefunden: " + path.relative(ROOT, testPath));
@@ -27,27 +27,16 @@ if (!fs.existsSync(testPath)) {
 let source = fs.readFileSync(testPath, "utf8");
 
 source = source.replace(
-  /function faqCount\(source\) \{[\s\S]*?\n\}/,
-  `function faqCount(source) {
-  const lines = source.split("\\n");
-  const start = lines.findIndex((line) => line === "faq:");
-  if (start < 0) return 0;
-
-  let count = 0;
-
-  for (let index = start + 1; index < lines.length; index += 1) {
-    const line = lines[index];
-
-    if (/^[^\\s][A-Za-z0-9_-]*:/.test(line)) break;
-    if (/^\\s{2}-\\s+question:/.test(line)) count += 1;
-  }
-
-  return count;
-}`
+  `  assert.match(source, /sourceContext\\.topics/);
+  assert.match(source, /candidateContext\\.topics/);`,
+  `  assert.match(source, /source\\.topics\\.size/);
+  assert.match(source, /candidate\\.topics\\.size/);
+  assert.match(source, /hasCompatibleRecommendationTopic\\(sourceContext, candidateContext\\)/);
+  assert.match(source, /Number\\.NEGATIVE_INFINITY/);`
 );
 
-if (!source.includes('const start = lines.findIndex((line) => line === "faq:");')) {
-  throw new Error("faqCount konnte nicht robust ersetzt werden.");
+if (!source.includes("hasCompatibleRecommendationTopic\\(sourceContext, candidateContext\\)")) {
+  throw new Error("Test konnte nicht auf die tatsächliche Themenkompatibilitätslogik umgestellt werden.");
 }
 
 fs.writeFileSync(testPath, source);
@@ -56,30 +45,19 @@ console.log("[" + NAME + "] Geändert: " + path.relative(ROOT, testPath));
 const oldInstaller = path.join(
   ROOT,
   "3",
-  "apply-pfotentechnik-product-faq-cleanup-25.6.0.mjs"
+  "apply-pfotentechnik-product-ux-cleanup-25.7.0.mjs"
 );
 
 if (fs.existsSync(oldInstaller)) {
   let installerSource = fs.readFileSync(oldInstaller, "utf8");
 
   installerSource = installerSource.replace(
-    /function faqCount\(source\) \{[\s\S]*?\n\}/,
-    `function faqCount(source) {
-  const lines = source.split("\\\\n");
-  const start = lines.findIndex((line) => line === "faq:");
-  if (start < 0) return 0;
-
-  let count = 0;
-
-  for (let index = start + 1; index < lines.length; index += 1) {
-    const line = lines[index];
-
-    if (/^[^\\\\s][A-Za-z0-9_-]*:/.test(line)) break;
-    if (/^\\\\s{2}-\\\\s+question:/.test(line)) count += 1;
-  }
-
-  return count;
-}`
+    `  assert.match(source, /sourceContext\\\\.topics/);
+  assert.match(source, /candidateContext\\\\.topics/);`,
+    `  assert.match(source, /source\\\\.topics\\\\.size/);
+  assert.match(source, /candidate\\\\.topics\\\\.size/);
+  assert.match(source, /hasCompatibleRecommendationTopic\\\\(sourceContext, candidateContext\\\\)/);
+  assert.match(source, /Number\\\\.NEGATIVE_INFINITY/);`
   );
 
   fs.writeFileSync(oldInstaller, installerSource);
@@ -93,7 +71,16 @@ execFileSync(process.execPath, ["--test", testPath], {
 
 execFileSync(
   "npm",
-  ["--workspace", "apps/pfotentechnik", "run", "audit:product-standard-3"],
+  ["--workspace", "apps/pfotentechnik", "run", "test:product-experience-2"],
+  {
+    cwd: ROOT,
+    stdio: "inherit"
+  }
+);
+
+execFileSync(
+  "npm",
+  ["--workspace", "apps/pfotentechnik", "run", "test:decision-journeys"],
   {
     cwd: ROOT,
     stdio: "inherit"
@@ -110,3 +97,5 @@ execFileSync(
 );
 
 console.log("[" + NAME + "] Fertig.");
+console.log("[" + NAME + "] Danach:");
+console.log("npm --workspace apps/pfotentechnik run build");

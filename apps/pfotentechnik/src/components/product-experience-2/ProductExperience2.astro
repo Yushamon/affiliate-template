@@ -57,7 +57,7 @@ const { model } = Astro.props;
     --px2-shadow: 0 14px 42px rgba(31, 64, 39, .08);
     --px2-on-accent: #fff;
     display: grid;
-    gap: clamp(20px, 3vw, 36px);
+    gap: clamp(24px, 4vw, 46px);
     width: 100%;
     min-width: 0;
     color: var(--px2-text);
@@ -89,9 +89,4 @@ const { model } = Astro.props;
     box-sizing: border-box;
   }
 
-  @media (max-width: 720px) {
-    .px2 {
-      gap: 18px;
-    }
-  }
 </style>

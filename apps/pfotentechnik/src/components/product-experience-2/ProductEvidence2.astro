@@ -24,20 +24,27 @@ const formattedDate = updatedAt
   ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt))
   : null;
 const show = items.length > 0 || evidence?.handsOn;
+const iconFor = (label: string) => {
+  const value = label.toLocaleLowerCase("de-DE");
+  if (value.includes("hersteller")) return "D";
+  if (value.includes("spezifikation") || value.includes("technisch")) return "T";
+  if (value.includes("vergleich")) return "V";
+  return "Q";
+};
 ---
 
 {show && (
   <section class="evidence" aria-labelledby="evidence-title">
     <header>
-      <span>Grundlage der Bewertung</span>
-      <h2 id="evidence-title">Darauf stützt sich unsere Einordnung</h2>
-      {formattedDate && <p>Inhaltlich geprüft am {formattedDate}</p>}
+      <span>Unsere Quellen</span>
+      <h2 id="evidence-title">So ist die Einordnung belegt</h2>
+      {formattedDate && <p>Zuletzt inhaltlich geprüft: {formattedDate}</p>}
     </header>
 
     <ul class="evidence__items">
       {items.map((item) => (
         <li>
-          <span aria-hidden="true">✓</span>
+          <span class="evidence__icon" aria-hidden="true">{iconFor(item.label)}</span>
           <div>
             <strong>{item.label}</strong>
             {item.detail && <small>{item.detail}</small>}
@@ -62,31 +69,33 @@ const show = items.length > 0 || evidence?.handsOn;
     gap: 14px;
     padding: 16px;
     border: 1px solid var(--px2-border);
-    border-radius: 20px;
+    border-radius: 18px;
     background: var(--px2-surface-soft);
   }
 
-  .evidence header span {
+  .evidence header > span {
     color: var(--px2-green-strong);
-    font-size: .74rem;
+    font-size: .72rem;
     font-weight: 850;
     letter-spacing: .07em;
     text-transform: uppercase;
   }
 
   .evidence h2 {
-    margin: 5px 0 3px;
-    font-size: clamp(1.35rem, 6vw, 1.95rem);
+    margin: 4px 0 3px;
+    font-size: clamp(1.25rem, 5vw, 1.7rem);
+    letter-spacing: -.02em;
   }
 
   .evidence header p {
     margin: 0;
     color: var(--px2-muted);
-    font-size: .84rem;
+    font-size: .82rem;
   }
 
   .evidence__items {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin: 0;
     padding: 0;
@@ -95,57 +104,61 @@ const show = items.length > 0 || evidence?.handsOn;
 
   .evidence__items li {
     display: grid;
-    grid-template-columns: 1.4rem minmax(0, 1fr);
+    grid-template-columns: 1.8rem minmax(0, 1fr);
     gap: 8px;
-    align-items: start;
-    padding: 11px 12px;
+    align-items: center;
+    min-width: min(100%, 13rem);
+    padding: 9px 11px;
     border: 1px solid var(--px2-border);
-    border-radius: 13px;
+    border-radius: 12px;
     background: var(--px2-surface);
   }
 
-  .evidence__items li > span {
+  .evidence__icon {
+    display: grid;
+    width: 1.75rem;
+    height: 1.75rem;
+    place-items: center;
+    border-radius: 9px;
+    background: var(--px2-green-soft);
     color: var(--px2-green-strong);
-    font-weight: 950;
+    font-size: .72rem;
+    font-weight: 900;
   }
 
   .evidence__items div {
     display: grid;
-    gap: 2px;
+    gap: 1px;
     min-width: 0;
   }
 
   .evidence__items strong {
-    font-size: .9rem;
+    font-size: .86rem;
   }
 
   .evidence__items small {
     color: var(--px2-muted);
-    line-height: 1.4;
+    line-height: 1.35;
   }
 
   .evidence__hands-on {
     display: grid;
     gap: 3px;
-    padding: 12px;
-    border-radius: 13px;
+    padding: 11px 12px;
+    border-radius: 12px;
     background: var(--px2-green-soft);
   }
 
   .evidence__hands-on span {
     color: var(--px2-muted);
-    font-size: .84rem;
+    font-size: .82rem;
   }
 
   @media (min-width: 720px) {
     .evidence {
-      grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr);
-      padding: 22px;
-      align-items: start;
-    }
-
-    .evidence__items {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(210px, .65fr) minmax(0, 1.35fr);
+      padding: 20px;
+      align-items: center;
     }
 
     .evidence__hands-on {
