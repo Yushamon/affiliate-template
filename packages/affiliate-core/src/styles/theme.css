@@ -1,15 +1,11 @@
 /*
- * Affiliate Core compatibility aliases.
- *
- * Projects own the concrete palette. The core consumes semantic project tokens
- * and does not define a second light or dark theme.
+ * Affiliate Core aliases only. Projects own concrete colors.
  */
 :root {
   --primary: var(--pt-color-action-bg);
   --primary-dark: var(--pt-color-accent-text);
   --primary-text: var(--pt-color-accent-text);
   --primary-soft: var(--pt-color-brand-100);
-
   --accent: var(--pt-color-warning-500);
   --accent-soft: var(--pt-color-warning-soft);
 
@@ -20,7 +16,6 @@
 
   --border: var(--pt-color-border);
   --border-strong: var(--pt-color-border-strong);
-
   --page: var(--pt-color-page);
   --surface: var(--pt-color-surface);
   --surface-soft: var(--pt-color-surface-soft);

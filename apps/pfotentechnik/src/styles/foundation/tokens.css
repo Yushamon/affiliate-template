@@ -1,13 +1,7 @@
 /*
- * PfotenTechnik compatibility aliases.
- *
- * Authoritative colors, spacing, radii and shadows live exclusively in:
- * ../pfotentechnik-design-tokens.css
- *
- * This file exists only for legacy components that still consume the older
- * --pt-theme-*, --pt-ink-*, --pt-green-* or generic aliases.
+ * Legacy compatibility aliases only.
+ * Concrete colors live in ../pfotentechnik-design-tokens.css.
  */
-
 :root {
   color-scheme: light dark;
 
@@ -16,11 +10,7 @@
   --pt-theme-surface: var(--pt-color-surface);
   --pt-theme-surface-2: var(--pt-color-surface-soft);
   --pt-theme-surface-3: var(--pt-color-surface-raised);
-  --pt-theme-overlay: color-mix(
-    in srgb,
-    var(--pt-color-surface) 94%,
-    transparent
-  );
+  --pt-theme-overlay: color-mix(in srgb, var(--pt-color-surface) 94%, transparent);
 
   --pt-theme-text: var(--pt-color-text);
   --pt-theme-text-soft: var(--pt-color-text-muted);
@@ -29,11 +19,7 @@
 
   --pt-theme-border: var(--pt-color-border);
   --pt-theme-border-strong: var(--pt-color-border-strong);
-  --pt-theme-divider: color-mix(
-    in srgb,
-    var(--pt-color-border) 78%,
-    transparent
-  );
+  --pt-theme-divider: color-mix(in srgb, var(--pt-color-border) 78%, transparent);
 
   --pt-theme-accent: var(--pt-color-action-bg);
   --pt-theme-accent-hover: var(--pt-color-action-bg-hover);
@@ -41,11 +27,7 @@
   --pt-theme-accent-text: var(--pt-color-accent-text);
 
   --pt-theme-info: var(--pt-color-accent-600);
-  --pt-theme-info-soft: color-mix(
-    in srgb,
-    var(--pt-color-accent-600) 12%,
-    var(--pt-color-surface)
-  );
+  --pt-theme-info-soft: color-mix(in srgb, var(--pt-color-accent-600) 12%, var(--pt-color-surface));
   --pt-theme-warning: var(--pt-color-warning-500);
   --pt-theme-warning-soft: var(--pt-color-warning-soft);
   --pt-theme-danger: var(--pt-color-danger-600);
@@ -72,12 +54,6 @@
   --pt-green-600: var(--pt-theme-accent);
   --pt-green-100: var(--pt-theme-accent-soft);
 
-  --pt-warning: var(--pt-theme-warning);
-  --pt-danger: var(--pt-theme-danger);
-
-  --pt-content: var(--pt-content-wide);
-  --pt-reading: var(--pt-content-narrow);
-
   --primary: var(--pt-theme-accent);
   --primary-dark: var(--pt-theme-accent-text);
   --primary-soft: var(--pt-theme-accent-soft);
@@ -90,25 +66,14 @@
   --surface: var(--pt-theme-surface);
   --surface-soft: var(--pt-theme-surface-2);
   --card: var(--pt-theme-surface);
-
   --border: var(--pt-theme-border);
   --border-strong: var(--pt-theme-border-strong);
   --shadow-soft: var(--pt-theme-shadow-sm);
   --shadow-strong: var(--pt-theme-shadow-md);
-}
 
-/*
- * Editorial and FAQ aliases remain semantic as well. No mode-specific values
- * are declared here.
- */
-:root {
   --pt-editorial-dark-bg: var(--pt-color-brand-surface);
   --pt-editorial-dark-bg-deep: var(--pt-color-brand-surface-strong);
-  --pt-editorial-dark-border: color-mix(
-    in srgb,
-    var(--pt-color-on-brand-surface-accent) 24%,
-    transparent
-  );
+  --pt-editorial-dark-border: color-mix(in srgb, var(--pt-color-on-brand-surface-accent) 24%, transparent);
   --pt-editorial-dark-heading: var(--pt-color-on-brand-surface);
   --pt-editorial-dark-copy: var(--pt-color-on-brand-surface-muted);
   --pt-editorial-dark-muted: var(--pt-color-on-brand-surface-muted);
@@ -119,12 +84,4 @@
   --pt-faq-line: var(--pt-color-border);
   --pt-faq-heading: var(--pt-color-text);
   --pt-faq-copy: var(--pt-color-text-muted);
-
-  --pt-polish-radius-card: var(--pt-radius-xl);
-  --pt-polish-radius-soft: var(--pt-radius-lg);
-  --pt-polish-space-section: var(--pt-section-space);
-  --pt-polish-space-card: clamp(var(--pt-space-5), 4vw, var(--pt-space-8));
-  --pt-polish-icon-size: 2.625rem;
-  --pt-polish-line: var(--pt-color-border);
-  --pt-polish-shadow: var(--pt-shadow-md);
 }

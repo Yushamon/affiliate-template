@@ -51,7 +51,7 @@
   --pt-color-on-brand-surface-accent: #86efac;
 }
 
-/* pfotentechnik-theme-state-machine-25.9.0:start */
+/* pfotentechnik-theme-state-machine-26.0.0:start */
 :root {
   color-scheme: light;
 
@@ -150,10 +150,5 @@
   --pt-color-action-bg-hover: #26784c;
   --pt-color-action-text: #ffffff;
   --pt-color-link: var(--pt-color-accent-text);
-
-  --pt-shadow-xs: 0 1px 2px rgb(17 35 24 / 0.06);
-  --pt-shadow-sm: 0 4px 14px rgb(17 35 24 / 0.08);
-  --pt-shadow-md: 0 10px 30px rgb(17 35 24 / 0.11);
-  --pt-shadow-lg: 0 20px 50px rgb(17 35 24 / 0.14);
 }
-/* pfotentechnik-theme-state-machine-25.9.0:end */
+/* pfotentechnik-theme-state-machine-26.0.0:end */
