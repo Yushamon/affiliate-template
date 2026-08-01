@@ -258,6 +258,7 @@ const toAlternative = (entry: any, type: string, label: string, reason: string, 
   const data = dataOf(entry);
   const slug = slugOf(entry);
   const hero = data.images?.comparison ?? data.images?.thumbnail ?? data.images?.hero;
+  const decisionProfile = decisionProfileFor(data, price);
   return {
     type,
     label,
