@@ -4,8 +4,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  border-bottom: 1px solid var(--pt-color-border);
+  background: color-mix(in srgb, var(--pt-color-surface) 90%, transparent);
   backdrop-filter: blur(18px);
 }
 
@@ -20,7 +20,7 @@
 }
 
 .logo-v2 {
-  color: var(--text);
+  color: var(--pt-color-text);
   text-decoration: none;
   font-size: 23px;
   font-weight: 950;
@@ -28,7 +28,7 @@
 }
 
 .logo-v2 span {
-  color: var(--primary-dark);
+  color: var(--pt-color-accent-text);
 }
 
 .main-nav-v2 {
@@ -38,14 +38,14 @@
 }
 
 .main-nav-v2 a {
-  color: var(--muted);
+  color: var(--pt-color-text-muted);
   text-decoration: none;
   font-size: 15px;
   font-weight: 850;
 }
 
 .main-nav-v2 a:hover {
-  color: var(--primary-dark);
+  color: var(--pt-color-accent-text);
 }
 
 .nav-toggle-button {
@@ -165,10 +165,10 @@
   .nav-toggle-button {
     display: inline-flex;
     padding: 9px 14px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--pt-color-border);
     border-radius: 999px;
-    background: var(--surface);
-    color: var(--text);
+    background: var(--pt-color-surface);
+    color: var(--pt-color-text);
     font-size: 14px;
     font-weight: 900;
     cursor: pointer;
@@ -237,7 +237,7 @@
 /* header-footer-semantic-foregrounds-25.8.3:start */
 .site-header-v2 .brand-lockup,
 .site-header-v2 .brand-name {
-  color: var(--text);
+  color: var(--pt-color-text);
 }
 
 .footer-v2,
