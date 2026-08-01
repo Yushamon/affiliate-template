@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
   "provider": "combined",
-  "generatedAt": "2026-07-30T08:26:40.762Z",
+  "generatedAt": "2026-07-31T19:18:55.453Z",
   "property": "sc-domain:pfotentechnik.de",
   "defaultRange": "7d",
   "dataUpdatedAt": {
-    "google": "2026-07-30T08:26:40.747Z",
-    "bing": "2026-07-29T07:00:00.000Z"
+    "google": "2026-07-31T19:18:55.425Z",
+    "bing": "2026-07-30T07:00:00.000Z"
   },
   "providerStatus": {
     "google": "current",
@@ -16,85 +16,49 @@
     "7d": {
       "key": "7d",
       "label": "Letzte 7 Tage",
-      "startDate": "2026-07-23",
-      "endDate": "2026-07-29",
-      "comparisonStartDate": "2026-07-16",
-      "comparisonEndDate": "2026-07-22",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-30",
+      "comparisonStartDate": "2026-07-17",
+      "comparisonEndDate": "2026-07-23",
       "dataState": "combined",
       "partial": false,
-      "lowData": false,
+      "lowData": true,
       "metrics": {
         "current": {
           "clicks": 3,
-          "impressions": 158,
-          "ctr": 1.9,
-          "position": 26.7
+          "impressions": 99,
+          "ctr": 3.03,
+          "position": 28.7
         },
         "previous": {
-          "clicks": 12,
-          "impressions": 307,
-          "ctr": 3.91,
-          "position": 18.9
+          "clicks": 11,
+          "impressions": 325,
+          "ctr": 3.38,
+          "position": 19.3
         },
         "change": {
-          "clicks": -75,
-          "impressions": -48.5,
-          "ctr": -2.01,
-          "position": -7.8
+          "clicks": -72.7,
+          "impressions": -69.5,
+          "ctr": -0.35,
+          "position": -9.4
         }
       },
       "pages": [
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 0,
-          "impressions": 15,
+          "impressions": 14,
           "ctr": 0,
-          "position": 39.2,
+          "position": 46.9,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 15,
+              "impressions": 14,
               "ctr": 0,
-              "position": 39.2
-            }
-          }
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "clicks": 0,
-          "impressions": 13,
-          "ctr": 0,
-          "position": 58.4,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 13,
-              "ctr": 0,
-              "position": 58.4
-            }
-          }
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-katzen/",
-          "clicks": 1,
-          "impressions": 11,
-          "ctr": 9.09,
-          "position": 57.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 11,
-              "ctr": 9.09,
-              "position": 57.2
+              "position": 46.9
             }
           }
         },
@@ -117,56 +81,38 @@
           }
         },
         {
-          "page": "/futtermenge-katze/",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 33.6,
+          "page": "/beste-futterautomaten-fuer-katzen/",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 14.29,
+          "position": 53.4,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
-              "clicks": 0,
-              "impressions": 9,
-              "ctr": 0,
-              "position": 33.6
+              "clicks": 1,
+              "impressions": 7,
+              "ctr": 14.29,
+              "position": 53.4
             }
           }
         },
         {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 7,
           "ctr": 0,
-          "position": 12.2,
+          "position": 57,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 9,
+              "impressions": 7,
               "ctr": 0,
-              "position": 12.2
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-mit-kamera/",
-          "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 22.4,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 8,
-              "ctr": 0,
-              "position": 22.4
+              "position": 57
             }
           }
         },
@@ -189,65 +135,11 @@
           }
         },
         {
-          "page": "/produkt/petlibro-polar-wet-food-feeder/",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 6,
-              "ctr": 0,
-              "position": 9
-            }
-          }
-        },
-        {
-          "page": "/wie-viele-wasserstellen-katze/",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 6.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 6,
-              "ctr": 0,
-              "position": 6.2
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-richtig-reinigen/",
-          "clicks": 1,
-          "impressions": 5,
-          "ctr": 20,
-          "position": 6.4,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 5,
-              "ctr": 20,
-              "position": 6.4
-            }
-          }
-        },
-        {
-          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+          "page": "/futterautomat-mit-kamera/",
           "clicks": 0,
           "impressions": 5,
           "ctr": 0,
-          "position": 9.4,
+          "position": 28.8,
           "sources": [
             "google"
           ],
@@ -256,7 +148,7 @@
               "clicks": 0,
               "impressions": 5,
               "ctr": 0,
-              "position": 9.4
+              "position": 28.8
             }
           }
         },
@@ -297,38 +189,20 @@
           }
         },
         {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 55.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 55.2
-            }
-          }
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-zwei-katzen/",
-          "clicks": 0,
+          "page": "/futterautomat-richtig-reinigen/",
+          "clicks": 1,
           "impressions": 4,
-          "ctr": 0,
-          "position": 12,
+          "ctr": 25,
+          "position": 7,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
-              "clicks": 0,
+              "clicks": 1,
               "impressions": 4,
-              "ctr": 0,
-              "position": 12
+              "ctr": 25,
+              "position": 7
             }
           }
         },
@@ -369,119 +243,65 @@
           }
         },
         {
-          "page": "/futterautomat-ohne-wlan/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 7.3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 7.3
-            }
-          }
-        },
-        {
-          "page": "/katzenwasser-taeglich-wechseln/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 18,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 18
-            }
-          }
-        },
-        {
-          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 3,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
           "page": "/futterautomat-im-urlaub/",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "ctr": 0,
-          "position": 22.3,
+          "position": 28.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 3,
+              "impressions": 4,
               "ctr": 0,
-              "position": 22.3
+              "position": 28.3
             }
           }
         },
         {
-          "page": "/hund-trinkt-viel/",
+          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "ctr": 0,
-          "position": 72,
+          "position": 9.5,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 3,
+              "impressions": 4,
               "ctr": 0,
-              "position": 72
+              "position": 9.5
             }
           }
         },
         {
-          "page": "/katzentrinkbrunnen-laut-pumpe/",
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "ctr": 0,
-          "position": 6.7,
+          "position": 15.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 3,
+              "impressions": 4,
               "ctr": 0,
-              "position": 6.7
+              "position": 15.3
             }
           }
         },
         {
-          "page": "/produkt/petkit-yumshare-solo-2/",
+          "page": "/futtermenge-katze/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 5,
+          "position": 34,
           "sources": [
             "google"
           ],
@@ -490,16 +310,16 @@
               "clicks": 0,
               "impressions": 3,
               "ctr": 0,
-              "position": 5
+              "position": 34
             }
           }
         },
         {
-          "page": "/trinkbrunnen/",
+          "page": "/produkt/petlibro-polar-wet-food-feeder/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 22,
+          "position": 8.3,
           "sources": [
             "google"
           ],
@@ -508,7 +328,7 @@
               "clicks": 0,
               "impressions": 3,
               "ctr": 0,
-              "position": 22
+              "position": 8.3
             }
           }
         },
@@ -585,6 +405,24 @@
           }
         },
         {
+          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
           "page": "/hersteller/cat-mate/",
           "clicks": 0,
           "impressions": 2,
@@ -599,6 +437,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 11.5
+            }
+          }
+        },
+        {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 61
             }
           }
         },
@@ -621,6 +477,24 @@
           }
         },
         {
+          "page": "/katzentrinkbrunnen-laut-pumpe/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 8.5
+            }
+          }
+        },
+        {
           "page": "/produkt/petlibro-stainless-steel-fountain/",
           "clicks": 0,
           "impressions": 2,
@@ -639,29 +513,11 @@
           }
         },
         {
-          "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 25,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 25
-            }
-          }
-        },
-        {
           "page": "/produkt/weenect-xs/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 10.5,
+          "position": 21.5,
           "sources": [
             "google"
           ],
@@ -670,16 +526,16 @@
               "clicks": 0,
               "impressions": 2,
               "ctr": 0,
-              "position": 10.5
+              "position": 21.5
             }
           }
         },
         {
-          "page": "/reichweite-von-gps-trackern/",
+          "page": "/trinkbrunnen/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 11,
+          "position": 9,
           "sources": [
             "google"
           ],
@@ -688,7 +544,25 @@
               "clicks": 0,
               "impressions": 2,
               "ctr": 0,
-              "position": 11
+              "position": 9
+            }
+          }
+        },
+        {
+          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 59,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 59
             }
           }
         },
@@ -747,11 +621,11 @@
           }
         },
         {
-          "page": "/beste-futterautomaten-fuer-welpen/",
+          "page": "/beste-futterautomaten-fuer-zwei-katzen/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 6,
+          "position": 9,
           "sources": [
             "google"
           ],
@@ -760,7 +634,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 6
+              "position": 9
             }
           }
         },
@@ -801,11 +675,11 @@
           }
         },
         {
-          "page": "/fuetterungszeiten-nach-alter/",
+          "page": "/futterautomat-ohne-wlan/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 6,
           "sources": [
             "google"
           ],
@@ -814,61 +688,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "page": "/futtermenge-hund/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 94,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 94
-            }
-          }
-        },
-        {
-          "page": "/gps-tracker-richtig-befestigen/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 85
-            }
-          }
-        },
-        {
-          "page": "/gps-tracker/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 84
+              "position": 6
             }
           }
         },
@@ -945,24 +765,6 @@
           }
         },
         {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 23
-            }
-          }
-        },
-        {
           "page": "/kalk-katzentrinkbrunnen-entfernen/",
           "clicks": 0,
           "impressions": 1,
@@ -999,11 +801,11 @@
           }
         },
         {
-          "page": "/katzentrinkbrunnen-richtig-reinigen/",
+          "page": "/katzenwasser-taeglich-wechseln/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 11,
           "sources": [
             "google"
           ],
@@ -1012,7 +814,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 11
             }
           }
         },
@@ -1053,11 +855,11 @@
           }
         },
         {
-          "page": "/produkt/pawsync-smart-pet-feeder/",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 5,
+          "position": 10,
           "sources": [
             "google"
           ],
@@ -1066,7 +868,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 5
+              "position": 10
             }
           }
         },
@@ -1085,6 +887,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 27
+            }
+          }
+        },
+        {
+          "page": "/produkt/petkit-yumshare-solo-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
             }
           }
         },
@@ -1211,6 +1031,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 6
+            }
+          }
+        },
+        {
+          "page": "/reichweite-von-gps-trackern/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
             }
           }
         },
@@ -1323,11 +1161,11 @@
           }
         },
         {
-          "page": "/wie-funktionieren-gps-tracker/",
+          "page": "/wie-viele-wasserstellen-katze/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 60,
+          "position": 4,
           "sources": [
             "google"
           ],
@@ -1336,25 +1174,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 60
-            }
-          }
-        },
-        {
-          "page": "/wie-lange-bleibt-trockenfutter-frisch/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 11,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 11
+              "position": 4
             }
           }
         },
@@ -1411,6 +1231,24 @@
               "position": 33
             }
           }
+        },
+        {
+          "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 40,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 40
+            }
+          }
         }
       ],
       "queries": [
@@ -1433,6 +1271,24 @@
           }
         },
         {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
           "query": "futterautomat gekühlt",
           "clicks": 0,
           "impressions": 2,
@@ -1447,6 +1303,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 39
+            }
+          }
+        },
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 45.5
             }
           }
         },
@@ -1469,65 +1343,11 @@
           }
         },
         {
-          "query": "futterautomat test",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 76.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 76.5
-            }
-          }
-        },
-        {
-          "query": "katzen gps testsieger",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 79.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 79.5
-            }
-          }
-        },
-        {
-          "query": "kleinster gps tracker für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 39.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 39.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
+          "query": "futterautomat 2 katzen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 47,
+          "position": 51,
           "sources": [
             "google"
           ],
@@ -1536,7 +1356,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 47
+              "position": 51
             }
           }
         },
@@ -1595,24 +1415,6 @@
           }
         },
         {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 45,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 45
-            }
-          }
-        },
-        {
           "query": "futterautomat katze vergleich",
           "clicks": 0,
           "impressions": 1,
@@ -1667,60 +1469,6 @@
           }
         },
         {
-          "query": "futterautomaten vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 12
-            }
-          }
-        },
-        {
-          "query": "futtermenge katze rechner",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 73,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 73
-            }
-          }
-        },
-        {
-          "query": "futtermenge katze tabelle",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 87,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 87
-            }
-          }
-        },
-        {
           "query": "gekühlter futterautomat",
           "clicks": 0,
           "impressions": 1,
@@ -1757,42 +1505,6 @@
           }
         },
         {
-          "query": "gps tracker hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 84
-            }
-          }
-        },
-        {
-          "query": "gps tracker reichweite",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 15,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 15
-            }
-          }
-        },
-        {
           "query": "hund ist apathisch frisst aber",
           "clicks": 0,
           "impressions": 1,
@@ -1811,11 +1523,11 @@
           }
         },
         {
-          "query": "hund trinkt auf einmal viel",
+          "query": "hund trinkt zu wenig symptome",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 75,
+          "position": 99,
           "sources": [
             "google"
           ],
@@ -1824,61 +1536,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 75
-            }
-          }
-        },
-        {
-          "query": "hund trinkt viel",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 92
-            }
-          }
-        },
-        {
-          "query": "hund viel trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 49,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 49
-            }
-          }
-        },
-        {
-          "query": "hundeernährung menge",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 94,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 94
+              "position": 99
             }
           }
         },
@@ -1919,6 +1577,24 @@
           }
         },
         {
+          "query": "katzen gps testsieger",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 80,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 80
+            }
+          }
+        },
+        {
           "query": "katzenbrunnen test",
           "clicks": 0,
           "impressions": 1,
@@ -1933,24 +1609,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 78
-            }
-          }
-        },
-        {
-          "query": "katzenfutter kalorien",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 20,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 20
             }
           }
         },
@@ -1991,11 +1649,11 @@
           }
         },
         {
-          "query": "pet fountain",
+          "query": "weenect abo",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 48,
+          "position": 31,
           "sources": [
             "google"
           ],
@@ -2004,79 +1662,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 48
-            }
-          }
-        },
-        {
-          "query": "petkit yumshare solo2",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "sicherheit beim freigang katze gps-tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 85
-            }
-          }
-        },
-        {
-          "query": "was ist ein gps tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 60
-            }
-          }
-        },
-        {
-          "query": "wie oft muss man das wasser vom katzenbrunnen wechseln?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 42,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 42
+              "position": 31
             }
           }
         },
@@ -2100,24 +1686,6 @@
         }
       ],
       "trend": [
-        {
-          "date": "2026-07-23",
-          "clicks": 0,
-          "impressions": 65,
-          "ctr": 0,
-          "position": 25.7,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 65,
-              "ctr": 0,
-              "position": 25.7
-            }
-          }
-        },
         {
           "date": "2026-07-24",
           "clicks": 2,
@@ -2211,40 +1779,41 @@
         {
           "date": "2026-07-29",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90,
+          "position": 80,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 3,
               "ctr": 0,
-              "position": 90
+              "position": 80
+            }
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 33.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 33.5
             }
           }
         }
       ],
       "crawl": [
-        {
-          "date": "2026-07-23T07:00:00.000Z",
-          "allOtherCodes": 0,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 0,
-          "code301": 0,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 11,
-          "dnsFailures": 0,
-          "inIndex": 0,
-          "inLinks": 0
-        },
         {
           "date": "2026-07-24T07:00:00.000Z",
           "allOtherCodes": 0,
@@ -2346,6 +1915,23 @@
           "dnsFailures": 0,
           "inIndex": 0,
           "inLinks": 0
+        },
+        {
+          "date": "2026-07-30T07:00:00.000Z",
+          "allOtherCodes": 0,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 0,
+          "code301": 0,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 6,
+          "dnsFailures": 0,
+          "inIndex": 0,
+          "inLinks": 0
         }
       ],
       "recommendations": [
@@ -2361,8 +1947,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/smarte-futterautomaten/",
-          "reason": "Für „/smarte-futterautomaten/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/futterautomat-nassfutter/",
+          "reason": "Für „/futterautomat-nassfutter/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2377,32 +1963,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-nassfutter/",
-          "reason": "Für „/futterautomat-nassfutter/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futtermenge-katze/",
-          "reason": "Für „/futtermenge-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
-          "reason": "Für „/vergleiche/beste-trinkbrunnen-fuer-hunde/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-mit-kamera/",
-          "reason": "Für „/futterautomat-mit-kamera/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/smarte-futterautomaten/",
+          "reason": "Für „/smarte-futterautomaten/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2417,32 +1979,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/petlibro-polar-wet-food-feeder/",
-          "reason": "Für „/produkt/petlibro-polar-wet-food-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/wie-viele-wasserstellen-katze/",
-          "reason": "Für „/wie-viele-wasserstellen-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-richtig-reinigen/",
-          "reason": "Für „/futterautomat-richtig-reinigen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-          "reason": "Für „/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/futterautomat-mit-kamera/",
+          "reason": "Für „/futterautomat-mit-kamera/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2465,16 +2003,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "reason": "Für „/vergleiche/kleine-gps-tracker-fuer-katzen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/beste-futterautomaten-fuer-zwei-katzen/",
-          "reason": "Für „/beste-futterautomaten-fuer-zwei-katzen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/futterautomat-richtig-reinigen/",
+          "reason": "Für „/futterautomat-richtig-reinigen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2497,30 +2027,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-ohne-wlan/",
-          "reason": "Für „/futterautomat-ohne-wlan/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/katzenwasser-taeglich-wechseln/",
-          "reason": "Für „/katzenwasser-taeglich-wechseln/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
-          "reason": "Für „/filter-im-katzentrinkbrunnen-wechseln/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/futterautomat-im-urlaub/",
           "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -2529,32 +2035,32 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-viel/",
-          "reason": "Für „/hund-trinkt-viel/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+          "reason": "Für „/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/katzentrinkbrunnen-laut-pumpe/",
-          "reason": "Für „/katzentrinkbrunnen-laut-pumpe/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "reason": "Für „/vergleiche/beste-trinkbrunnen-fuer-hunde/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/petkit-yumshare-solo-2/",
-          "reason": "Für „/produkt/petkit-yumshare-solo-2/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/futtermenge-katze/",
+          "reason": "Für „/futtermenge-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/trinkbrunnen/",
-          "reason": "Für „/trinkbrunnen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/produkt/petlibro-polar-wet-food-feeder/",
+          "reason": "Für „/produkt/petlibro-polar-wet-food-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2593,8 +2099,24 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
+          "reason": "Für „/filter-im-katzentrinkbrunnen-wechseln/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/hersteller/cat-mate/",
           "reason": "Für „/hersteller/cat-mate/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/hund-trinkt-zu-wenig/",
+          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2609,16 +2131,16 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/petlibro-stainless-steel-fountain/",
-          "reason": "Für „/produkt/petlibro-stainless-steel-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/katzentrinkbrunnen-laut-pumpe/",
+          "reason": "Für „/katzentrinkbrunnen-laut-pumpe/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
-          "reason": "Für „/produkt/surefeed-microchip-pet-feeder-connect/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/produkt/petlibro-stainless-steel-fountain/",
+          "reason": "Für „/produkt/petlibro-stainless-steel-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2633,8 +2155,16 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/reichweite-von-gps-trackern/",
-          "reason": "Für „/reichweite-von-gps-trackern/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/trinkbrunnen/",
+          "reason": "Für „/trinkbrunnen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+          "reason": "Für „/vergleiche/kleine-gps-tracker-fuer-katzen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2665,8 +2195,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/beste-futterautomaten-fuer-welpen/",
-          "reason": "Für „/beste-futterautomaten-fuer-welpen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/beste-futterautomaten-fuer-zwei-katzen/",
+          "reason": "Für „/beste-futterautomaten-fuer-zwei-katzen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2689,32 +2219,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/fuetterungszeiten-nach-alter/",
-          "reason": "Für „/fuetterungszeiten-nach-alter/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futtermenge-hund/",
-          "reason": "Für „/futtermenge-hund/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/gps-tracker-richtig-befestigen/",
-          "reason": "Für „/gps-tracker-richtig-befestigen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/gps-tracker/",
-          "reason": "Für „/gps-tracker/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/futterautomat-ohne-wlan/",
+          "reason": "Für „/futterautomat-ohne-wlan/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2753,14 +2259,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-zu-wenig/",
-          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/kalk-katzentrinkbrunnen-entfernen/",
           "reason": "Für „/kalk-katzentrinkbrunnen-entfernen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -2777,8 +2275,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/katzentrinkbrunnen-richtig-reinigen/",
-          "reason": "Für „/katzentrinkbrunnen-richtig-reinigen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/katzenwasser-taeglich-wechseln/",
+          "reason": "Für „/katzenwasser-taeglich-wechseln/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2801,8 +2299,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/pawsync-smart-pet-feeder/",
-          "reason": "Für „/produkt/pawsync-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "reason": "Für „/produkt/pawbby-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2811,6 +2309,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petkit-eversweet-ultra/",
           "reason": "Für „/produkt/petkit-eversweet-ultra/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/petkit-yumshare-solo-2/",
+          "reason": "Für „/produkt/petkit-yumshare-solo-2/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2873,6 +2379,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/reichweite-von-gps-trackern/",
+          "reason": "Für „/reichweite-von-gps-trackern/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/trinkbrunnen-fuer-mehrere-katzen/",
           "reason": "Für „/trinkbrunnen-fuer-mehrere-katzen/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -2921,16 +2435,8 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/wie-funktionieren-gps-tracker/",
-          "reason": "Für „/wie-funktionieren-gps-tracker/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/wie-lange-bleibt-trockenfutter-frisch/",
-          "reason": "Für „/wie-lange-bleibt-trockenfutter-frisch/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "page": "/wie-viele-wasserstellen-katze/",
+          "reason": "Für „/wie-viele-wasserstellen-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2961,9 +2467,26 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
+          "reason": "Für „/produkt/surefeed-microchip-pet-feeder-connect/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
           "query": "mehrkatzenhaushalt fütterung",
           "reason": "Für „mehrkatzenhaushalt fütterung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
+          "query": "futterautomat für 2 katzen",
+          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -2980,6 +2503,15 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
+          "query": "futterautomat katze urlaub",
+          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
           "query": "futterautomat mit elektrischer kühlung",
           "reason": "Für „futterautomat mit elektrischer kühlung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -2989,35 +2521,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat test",
-          "reason": "Für „futterautomat test“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "katzen gps testsieger",
-          "reason": "Für „katzen gps testsieger“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "kleinster gps tracker für katzen",
-          "reason": "Für „kleinster gps tracker für katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "futterautomat für 2 katzen",
-          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "futterautomat 2 katzen",
+          "reason": "Für „futterautomat 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -3052,15 +2557,6 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat katze urlaub",
-          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
           "query": "futterautomat katze vergleich",
           "reason": "Für „futterautomat katze vergleich“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -3088,33 +2584,6 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomaten vergleich",
-          "reason": "Für „futterautomaten vergleich“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "futtermenge katze rechner",
-          "reason": "Für „futtermenge katze rechner“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "futtermenge katze tabelle",
-          "reason": "Für „futtermenge katze tabelle“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
           "query": "gekühlter futterautomat",
           "reason": "Für „gekühlter futterautomat“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -3133,24 +2602,6 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "gps tracker hund test",
-          "reason": "Für „gps tracker hund test“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "gps tracker reichweite",
-          "reason": "Für „gps tracker reichweite“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
           "query": "hund ist apathisch frisst aber",
           "reason": "Für „hund ist apathisch frisst aber“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -3160,35 +2611,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "hund trinkt auf einmal viel",
-          "reason": "Für „hund trinkt auf einmal viel“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "hund trinkt viel",
-          "reason": "Für „hund trinkt viel“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "hund viel trinken",
-          "reason": "Für „hund viel trinken“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "hundeernährung menge",
-          "reason": "Für „hundeernährung menge“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "hund trinkt zu wenig symptome",
+          "reason": "Für „hund trinkt zu wenig symptome“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -3214,8 +2638,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "katzenbrunnen test",
-          "reason": "Für „katzenbrunnen test“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "katzen gps testsieger",
+          "reason": "Für „katzen gps testsieger“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -3223,8 +2647,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "katzenfutter kalorien",
-          "reason": "Für „katzenfutter kalorien“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "katzenbrunnen test",
+          "reason": "Für „katzenbrunnen test“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -3250,44 +2674,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "pet fountain",
-          "reason": "Für „pet fountain“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "petkit yumshare solo2",
-          "reason": "Für „petkit yumshare solo2“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "sicherheit beim freigang katze gps-tracker",
-          "reason": "Für „sicherheit beim freigang katze gps-tracker“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "was ist ein gps tracker",
-          "reason": "Für „was ist ein gps tracker“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "wie oft muss man das wasser vom katzenbrunnen wechseln?",
-          "reason": "Für „wie oft muss man das wasser vom katzenbrunnen wechseln?“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "weenect abo",
+          "reason": "Für „weenect abo“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -3309,19 +2697,19 @@
     "28d": {
       "key": "28d",
       "label": "Letzte 28 Tage",
-      "startDate": "2026-07-02",
-      "endDate": "2026-07-29",
-      "comparisonStartDate": "2026-06-04",
-      "comparisonEndDate": "2026-07-01",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-30",
+      "comparisonStartDate": "2026-06-05",
+      "comparisonEndDate": "2026-07-02",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 669,
-          "ctr": 2.99,
-          "position": 22.7
+          "impressions": 675,
+          "ctr": 2.96,
+          "position": 22.9
         },
         "previous": {
           "clicks": 0,
@@ -3332,7 +2720,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.99,
+          "ctr": 2.96,
           "position": null
         }
       },
@@ -3376,18 +2764,18 @@
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 2.86,
-          "position": 21.8,
+          "impressions": 37,
+          "ctr": 2.7,
+          "position": 23.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 1,
-              "impressions": 35,
-              "ctr": 2.86,
-              "position": 21.8
+              "impressions": 37,
+              "ctr": 2.7,
+              "position": 23.3
             }
           }
         },
@@ -3932,6 +3320,24 @@
           }
         },
         {
+          "page": "/futterautomat-im-urlaub/",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 22,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 22
+            }
+          }
+        },
+        {
           "page": "/futterautomat-katze/",
           "clicks": 0,
           "impressions": 6,
@@ -4036,24 +3442,6 @@
               "impressions": 5,
               "ctr": 20,
               "position": 2.6
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 17.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 17.2
             }
           }
         },
@@ -4490,6 +3878,24 @@
           }
         },
         {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 17.3
+            }
+          }
+        },
+        {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "clicks": 0,
           "impressions": 3,
@@ -4688,6 +4094,24 @@
           }
         },
         {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 61
+            }
+          }
+        },
+        {
           "page": "/impressum/",
           "clicks": 0,
           "impressions": 2,
@@ -4756,24 +4180,6 @@
               "impressions": 2,
               "ctr": 0,
               "position": 9
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 10.5
             }
           }
         },
@@ -5030,24 +4436,6 @@
           }
         },
         {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 23
-            }
-          }
-        },
-        {
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "clicks": 0,
           "impressions": 1,
@@ -5152,6 +4540,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 14
+            }
+          }
+        },
+        {
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
             }
           }
         },
@@ -5464,6 +4870,24 @@
           }
         },
         {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 43.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 43.3
+            }
+          }
+        },
+        {
           "query": "pet feeder",
           "clicks": 0,
           "impressions": 6,
@@ -5478,24 +4902,6 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 42.6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 42.6
             }
           }
         },
@@ -5838,6 +5244,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 70.5
+            }
+          }
+        },
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 45.5
             }
           }
         },
@@ -6220,6 +5644,24 @@
           }
         },
         {
+          "query": "futterautomat 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 51,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 51
+            }
+          }
+        },
+        {
           "query": "futterautomat katze 2 näpfe",
           "clicks": 0,
           "impressions": 1,
@@ -6270,24 +5712,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 52
-            }
-          }
-        },
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 45,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 45
             }
           }
         },
@@ -6612,6 +6036,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 92
+            }
+          }
+        },
+        {
+          "query": "hund trinkt zu wenig symptome",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 99,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 99
             }
           }
         },
@@ -7210,6 +6652,24 @@
           }
         },
         {
+          "query": "weenect abo",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 31
+            }
+          }
+        },
+        {
           "query": "welcher katzenbrunnen ist der beste",
           "clicks": 0,
           "impressions": 1,
@@ -7682,18 +7142,36 @@
         {
           "date": "2026-07-29",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90,
+          "position": 80,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 3,
               "ctr": 0,
-              "position": 90
+              "position": 80
+            }
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 33.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 33.5
             }
           }
         }
@@ -7967,6 +7445,23 @@
           "containsMalware": 0,
           "crawlErrors": 0,
           "crawledPages": 0,
+          "dnsFailures": 0,
+          "inIndex": 0,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-07-30T07:00:00.000Z",
+          "allOtherCodes": 0,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 0,
+          "code301": 0,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 6,
           "dnsFailures": 0,
           "inIndex": 0,
           "inLinks": 0
@@ -8277,6 +7772,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/futterautomat-im-urlaub/",
+          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/futterautomat-katze/",
           "reason": "Für „/futterautomat-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -8319,14 +7822,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/kontakt/",
           "reason": "Für „/kontakt/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-im-urlaub/",
-          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -8525,6 +8020,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/weenect-xs/",
+          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "reason": "Für „/trinkbrunnen-fuer-kitten-sicher/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -8613,6 +8116,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/hund-trinkt-zu-wenig/",
+          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/impressum/",
           "reason": "Für „/impressum/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -8639,14 +8150,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-dockstream-rfid-smart/",
           "reason": "Für „/produkt/petlibro-dockstream-rfid-smart/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/weenect-xs/",
-          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -8765,14 +8268,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-zu-wenig/",
-          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "reason": "Für „/katzentrinkbrunnen-dauerbetrieb-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -8815,6 +8310,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/oneisall-7l-dog-water-fountain/",
           "reason": "Für „/produkt/oneisall-7l-dog-water-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "reason": "Für „/produkt/pawbby-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -8959,8 +8462,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "pet feeder",
-          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "futterautomat für 2 katzen",
+          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -8968,8 +8471,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat für 2 katzen",
-          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "pet feeder",
+          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -9148,6 +8651,15 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
+          "query": "futterautomat katze urlaub",
+          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
           "query": "futterautomat mit elektrischer kühlung",
           "reason": "Für „futterautomat mit elektrischer kühlung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -9222,24 +8734,6 @@
           "page": "",
           "query": "petlibro polar wet food feeder",
           "reason": "Für „petlibro polar wet food feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "trinkbrunnen kitten",
-          "reason": "Für „trinkbrunnen kitten“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "wie viele trinkbrunnen für 2 katzen",
-          "reason": "Für „wie viele trinkbrunnen für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         }
       ],
@@ -9252,19 +8746,19 @@
     "3m": {
       "key": "3m",
       "label": "Letzte 3 Monate",
-      "startDate": "2026-05-01",
-      "endDate": "2026-07-29",
-      "comparisonStartDate": "2026-01-31",
-      "comparisonEndDate": "2026-04-30",
+      "startDate": "2026-05-02",
+      "endDate": "2026-07-30",
+      "comparisonStartDate": "2026-02-01",
+      "comparisonEndDate": "2026-05-01",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 669,
-          "ctr": 2.99,
-          "position": 22.7
+          "impressions": 675,
+          "ctr": 2.96,
+          "position": 22.9
         },
         "previous": {
           "clicks": 0,
@@ -9275,7 +8769,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.99,
+          "ctr": 2.96,
           "position": null
         }
       },
@@ -9319,18 +8813,18 @@
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 2.86,
-          "position": 21.8,
+          "impressions": 37,
+          "ctr": 2.7,
+          "position": 23.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 1,
-              "impressions": 35,
-              "ctr": 2.86,
-              "position": 21.8
+              "impressions": 37,
+              "ctr": 2.7,
+              "position": 23.3
             }
           }
         },
@@ -9875,6 +9369,24 @@
           }
         },
         {
+          "page": "/futterautomat-im-urlaub/",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 22,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 22
+            }
+          }
+        },
+        {
           "page": "/futterautomat-katze/",
           "clicks": 0,
           "impressions": 6,
@@ -9979,24 +9491,6 @@
               "impressions": 5,
               "ctr": 20,
               "position": 2.6
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 17.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 17.2
             }
           }
         },
@@ -10433,6 +9927,24 @@
           }
         },
         {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 17.3
+            }
+          }
+        },
+        {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "clicks": 0,
           "impressions": 3,
@@ -10631,6 +10143,24 @@
           }
         },
         {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 61
+            }
+          }
+        },
+        {
           "page": "/impressum/",
           "clicks": 0,
           "impressions": 2,
@@ -10699,24 +10229,6 @@
               "impressions": 2,
               "ctr": 0,
               "position": 9
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 10.5
             }
           }
         },
@@ -10973,24 +10485,6 @@
           }
         },
         {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 23
-            }
-          }
-        },
-        {
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "clicks": 0,
           "impressions": 1,
@@ -11095,6 +10589,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 14
+            }
+          }
+        },
+        {
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
             }
           }
         },
@@ -11407,6 +10919,24 @@
           }
         },
         {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 43.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 43.3
+            }
+          }
+        },
+        {
           "query": "pet feeder",
           "clicks": 0,
           "impressions": 6,
@@ -11421,24 +10951,6 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 42.6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 42.6
             }
           }
         },
@@ -11781,6 +11293,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 70.5
+            }
+          }
+        },
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 45.5
             }
           }
         },
@@ -12163,6 +11693,24 @@
           }
         },
         {
+          "query": "futterautomat 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 51,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 51
+            }
+          }
+        },
+        {
           "query": "futterautomat katze 2 näpfe",
           "clicks": 0,
           "impressions": 1,
@@ -12213,24 +11761,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 52
-            }
-          }
-        },
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 45,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 45
             }
           }
         },
@@ -12555,6 +12085,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 92
+            }
+          }
+        },
+        {
+          "query": "hund trinkt zu wenig symptome",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 99,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 99
             }
           }
         },
@@ -13153,6 +12701,24 @@
           }
         },
         {
+          "query": "weenect abo",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 31
+            }
+          }
+        },
+        {
           "query": "welcher katzenbrunnen ist der beste",
           "clicks": 0,
           "impressions": 1,
@@ -13625,18 +13191,36 @@
         {
           "date": "2026-07-29",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90,
+          "position": 80,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 3,
               "ctr": 0,
-              "position": 90
+              "position": 80
+            }
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 33.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 33.5
             }
           }
         }
@@ -13910,6 +13494,23 @@
           "containsMalware": 0,
           "crawlErrors": 0,
           "crawledPages": 0,
+          "dnsFailures": 0,
+          "inIndex": 0,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-07-30T07:00:00.000Z",
+          "allOtherCodes": 0,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 0,
+          "code301": 0,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 6,
           "dnsFailures": 0,
           "inIndex": 0,
           "inLinks": 0
@@ -14220,6 +13821,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/futterautomat-im-urlaub/",
+          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/futterautomat-katze/",
           "reason": "Für „/futterautomat-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -14262,14 +13871,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/kontakt/",
           "reason": "Für „/kontakt/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-im-urlaub/",
-          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -14468,6 +14069,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/weenect-xs/",
+          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "reason": "Für „/trinkbrunnen-fuer-kitten-sicher/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -14556,6 +14165,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/hund-trinkt-zu-wenig/",
+          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/impressum/",
           "reason": "Für „/impressum/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -14582,14 +14199,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-dockstream-rfid-smart/",
           "reason": "Für „/produkt/petlibro-dockstream-rfid-smart/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/weenect-xs/",
-          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -14708,14 +14317,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-zu-wenig/",
-          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "reason": "Für „/katzentrinkbrunnen-dauerbetrieb-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -14758,6 +14359,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/oneisall-7l-dog-water-fountain/",
           "reason": "Für „/produkt/oneisall-7l-dog-water-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "reason": "Für „/produkt/pawbby-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -14902,8 +14511,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "pet feeder",
-          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "futterautomat für 2 katzen",
+          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -14911,8 +14520,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat für 2 katzen",
-          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "pet feeder",
+          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -15091,6 +14700,15 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
+          "query": "futterautomat katze urlaub",
+          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
           "query": "futterautomat mit elektrischer kühlung",
           "reason": "Für „futterautomat mit elektrischer kühlung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -15165,24 +14783,6 @@
           "page": "",
           "query": "petlibro polar wet food feeder",
           "reason": "Für „petlibro polar wet food feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "trinkbrunnen kitten",
-          "reason": "Für „trinkbrunnen kitten“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "wie viele trinkbrunnen für 2 katzen",
-          "reason": "Für „wie viele trinkbrunnen für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         }
       ],
@@ -15195,19 +14795,19 @@
     "6m": {
       "key": "6m",
       "label": "Letzte 6 Monate",
-      "startDate": "2026-01-31",
-      "endDate": "2026-07-29",
-      "comparisonStartDate": "2025-08-04",
-      "comparisonEndDate": "2026-01-30",
+      "startDate": "2026-02-01",
+      "endDate": "2026-07-30",
+      "comparisonStartDate": "2025-08-05",
+      "comparisonEndDate": "2026-01-31",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 669,
-          "ctr": 2.99,
-          "position": 22.7
+          "impressions": 675,
+          "ctr": 2.96,
+          "position": 22.9
         },
         "previous": {
           "clicks": 0,
@@ -15218,7 +14818,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.99,
+          "ctr": 2.96,
           "position": null
         }
       },
@@ -15262,18 +14862,18 @@
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 2.86,
-          "position": 21.8,
+          "impressions": 37,
+          "ctr": 2.7,
+          "position": 23.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 1,
-              "impressions": 35,
-              "ctr": 2.86,
-              "position": 21.8
+              "impressions": 37,
+              "ctr": 2.7,
+              "position": 23.3
             }
           }
         },
@@ -15818,6 +15418,24 @@
           }
         },
         {
+          "page": "/futterautomat-im-urlaub/",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 22,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 22
+            }
+          }
+        },
+        {
           "page": "/futterautomat-katze/",
           "clicks": 0,
           "impressions": 6,
@@ -15922,24 +15540,6 @@
               "impressions": 5,
               "ctr": 20,
               "position": 2.6
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 17.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 17.2
             }
           }
         },
@@ -16376,6 +15976,24 @@
           }
         },
         {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 17.3
+            }
+          }
+        },
+        {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "clicks": 0,
           "impressions": 3,
@@ -16574,6 +16192,24 @@
           }
         },
         {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 61
+            }
+          }
+        },
+        {
           "page": "/impressum/",
           "clicks": 0,
           "impressions": 2,
@@ -16642,24 +16278,6 @@
               "impressions": 2,
               "ctr": 0,
               "position": 9
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 10.5
             }
           }
         },
@@ -16916,24 +16534,6 @@
           }
         },
         {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 23
-            }
-          }
-        },
-        {
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "clicks": 0,
           "impressions": 1,
@@ -17038,6 +16638,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 14
+            }
+          }
+        },
+        {
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
             }
           }
         },
@@ -17350,6 +16968,24 @@
           }
         },
         {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 43.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 43.3
+            }
+          }
+        },
+        {
           "query": "pet feeder",
           "clicks": 0,
           "impressions": 6,
@@ -17364,24 +17000,6 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 42.6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 42.6
             }
           }
         },
@@ -17724,6 +17342,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 70.5
+            }
+          }
+        },
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 45.5
             }
           }
         },
@@ -18106,6 +17742,24 @@
           }
         },
         {
+          "query": "futterautomat 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 51,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 51
+            }
+          }
+        },
+        {
           "query": "futterautomat katze 2 näpfe",
           "clicks": 0,
           "impressions": 1,
@@ -18156,24 +17810,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 52
-            }
-          }
-        },
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 45,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 45
             }
           }
         },
@@ -18498,6 +18134,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 92
+            }
+          }
+        },
+        {
+          "query": "hund trinkt zu wenig symptome",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 99,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 99
             }
           }
         },
@@ -19096,6 +18750,24 @@
           }
         },
         {
+          "query": "weenect abo",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 31
+            }
+          }
+        },
+        {
           "query": "welcher katzenbrunnen ist der beste",
           "clicks": 0,
           "impressions": 1,
@@ -19568,18 +19240,36 @@
         {
           "date": "2026-07-29",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90,
+          "position": 80,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 3,
               "ctr": 0,
-              "position": 90
+              "position": 80
+            }
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 33.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 33.5
             }
           }
         }
@@ -19853,6 +19543,23 @@
           "containsMalware": 0,
           "crawlErrors": 0,
           "crawledPages": 0,
+          "dnsFailures": 0,
+          "inIndex": 0,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-07-30T07:00:00.000Z",
+          "allOtherCodes": 0,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 0,
+          "code301": 0,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 6,
           "dnsFailures": 0,
           "inIndex": 0,
           "inLinks": 0
@@ -20163,6 +19870,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/futterautomat-im-urlaub/",
+          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/futterautomat-katze/",
           "reason": "Für „/futterautomat-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -20205,14 +19920,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/kontakt/",
           "reason": "Für „/kontakt/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-im-urlaub/",
-          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -20411,6 +20118,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/weenect-xs/",
+          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "reason": "Für „/trinkbrunnen-fuer-kitten-sicher/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -20499,6 +20214,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/hund-trinkt-zu-wenig/",
+          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/impressum/",
           "reason": "Für „/impressum/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -20525,14 +20248,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-dockstream-rfid-smart/",
           "reason": "Für „/produkt/petlibro-dockstream-rfid-smart/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/weenect-xs/",
-          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -20651,14 +20366,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-zu-wenig/",
-          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "reason": "Für „/katzentrinkbrunnen-dauerbetrieb-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -20701,6 +20408,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/oneisall-7l-dog-water-fountain/",
           "reason": "Für „/produkt/oneisall-7l-dog-water-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "reason": "Für „/produkt/pawbby-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -20845,8 +20560,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "pet feeder",
-          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "futterautomat für 2 katzen",
+          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -20854,8 +20569,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat für 2 katzen",
-          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "pet feeder",
+          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -21034,6 +20749,15 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
+          "query": "futterautomat katze urlaub",
+          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
           "query": "futterautomat mit elektrischer kühlung",
           "reason": "Für „futterautomat mit elektrischer kühlung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -21108,24 +20832,6 @@
           "page": "",
           "query": "petlibro polar wet food feeder",
           "reason": "Für „petlibro polar wet food feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "trinkbrunnen kitten",
-          "reason": "Für „trinkbrunnen kitten“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "wie viele trinkbrunnen für 2 katzen",
-          "reason": "Für „wie viele trinkbrunnen für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         }
       ],
@@ -21138,19 +20844,19 @@
     "12m": {
       "key": "12m",
       "label": "Letzte 12 Monate",
-      "startDate": "2025-07-30",
-      "endDate": "2026-07-29",
-      "comparisonStartDate": "2024-07-30",
-      "comparisonEndDate": "2025-07-29",
+      "startDate": "2025-07-31",
+      "endDate": "2026-07-30",
+      "comparisonStartDate": "2024-07-31",
+      "comparisonEndDate": "2025-07-30",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 669,
-          "ctr": 2.99,
-          "position": 22.7
+          "impressions": 675,
+          "ctr": 2.96,
+          "position": 22.9
         },
         "previous": {
           "clicks": 0,
@@ -21161,7 +20867,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.99,
+          "ctr": 2.96,
           "position": null
         }
       },
@@ -21205,18 +20911,18 @@
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 2.86,
-          "position": 21.8,
+          "impressions": 37,
+          "ctr": 2.7,
+          "position": 23.3,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 1,
-              "impressions": 35,
-              "ctr": 2.86,
-              "position": 21.8
+              "impressions": 37,
+              "ctr": 2.7,
+              "position": 23.3
             }
           }
         },
@@ -21761,6 +21467,24 @@
           }
         },
         {
+          "page": "/futterautomat-im-urlaub/",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 22,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 22
+            }
+          }
+        },
+        {
           "page": "/futterautomat-katze/",
           "clicks": 0,
           "impressions": 6,
@@ -21865,24 +21589,6 @@
               "impressions": 5,
               "ctr": 20,
               "position": 2.6
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 17.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 17.2
             }
           }
         },
@@ -22319,6 +22025,24 @@
           }
         },
         {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 17.3
+            }
+          }
+        },
+        {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "clicks": 0,
           "impressions": 3,
@@ -22517,6 +22241,24 @@
           }
         },
         {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 61
+            }
+          }
+        },
+        {
           "page": "/impressum/",
           "clicks": 0,
           "impressions": 2,
@@ -22585,24 +22327,6 @@
               "impressions": 2,
               "ctr": 0,
               "position": 9
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 10.5
             }
           }
         },
@@ -22859,24 +22583,6 @@
           }
         },
         {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 23
-            }
-          }
-        },
-        {
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "clicks": 0,
           "impressions": 1,
@@ -22981,6 +22687,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 14
+            }
+          }
+        },
+        {
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
             }
           }
         },
@@ -23293,6 +23017,24 @@
           }
         },
         {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 43.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 43.3
+            }
+          }
+        },
+        {
           "query": "pet feeder",
           "clicks": 0,
           "impressions": 6,
@@ -23307,24 +23049,6 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 42.6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 42.6
             }
           }
         },
@@ -23667,6 +23391,24 @@
               "impressions": 2,
               "ctr": 0,
               "position": 70.5
+            }
+          }
+        },
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 45.5
             }
           }
         },
@@ -24049,6 +23791,24 @@
           }
         },
         {
+          "query": "futterautomat 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 51,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 51
+            }
+          }
+        },
+        {
           "query": "futterautomat katze 2 näpfe",
           "clicks": 0,
           "impressions": 1,
@@ -24099,24 +23859,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 52
-            }
-          }
-        },
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 45,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 45
             }
           }
         },
@@ -24441,6 +24183,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 92
+            }
+          }
+        },
+        {
+          "query": "hund trinkt zu wenig symptome",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 99,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 99
             }
           }
         },
@@ -25039,6 +24799,24 @@
           }
         },
         {
+          "query": "weenect abo",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 31
+            }
+          }
+        },
+        {
           "query": "welcher katzenbrunnen ist der beste",
           "clicks": 0,
           "impressions": 1,
@@ -25511,18 +25289,36 @@
         {
           "date": "2026-07-29",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90,
+          "position": 80,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 3,
               "ctr": 0,
-              "position": 90
+              "position": 80
+            }
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 33.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 33.5
             }
           }
         }
@@ -25796,6 +25592,23 @@
           "containsMalware": 0,
           "crawlErrors": 0,
           "crawledPages": 0,
+          "dnsFailures": 0,
+          "inIndex": 0,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-07-30T07:00:00.000Z",
+          "allOtherCodes": 0,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 0,
+          "code301": 0,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 6,
           "dnsFailures": 0,
           "inIndex": 0,
           "inLinks": 0
@@ -26106,6 +25919,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/futterautomat-im-urlaub/",
+          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/futterautomat-katze/",
           "reason": "Für „/futterautomat-katze/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -26148,14 +25969,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/kontakt/",
           "reason": "Für „/kontakt/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/futterautomat-im-urlaub/",
-          "reason": "Für „/futterautomat-im-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -26354,6 +26167,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/weenect-xs/",
+          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
           "reason": "Für „/trinkbrunnen-fuer-kitten-sicher/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -26442,6 +26263,14 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/hund-trinkt-zu-wenig/",
+          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/impressum/",
           "reason": "Für „/impressum/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -26468,14 +26297,6 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-dockstream-rfid-smart/",
           "reason": "Für „/produkt/petlibro-dockstream-rfid-smart/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/produkt/weenect-xs/",
-          "reason": "Für „/produkt/weenect-xs/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -26594,14 +26415,6 @@
           "priority": "low",
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "/hund-trinkt-zu-wenig/",
-          "reason": "Für „/hund-trinkt-zu-wenig/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
           "reason": "Für „/katzentrinkbrunnen-dauerbetrieb-urlaub/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -26644,6 +26457,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/oneisall-7l-dog-water-fountain/",
           "reason": "Für „/produkt/oneisall-7l-dog-water-fountain/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/produkt/pawbby-smart-pet-feeder/",
+          "reason": "Für „/produkt/pawbby-smart-pet-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -26788,8 +26609,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "pet feeder",
-          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "futterautomat für 2 katzen",
+          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -26797,8 +26618,8 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
-          "query": "futterautomat für 2 katzen",
-          "reason": "Für „futterautomat für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "query": "pet feeder",
+          "reason": "Für „pet feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -26977,6 +26798,15 @@
           "type": "google-only-visibility",
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "",
+          "query": "futterautomat katze urlaub",
+          "reason": "Für „futterautomat katze urlaub“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "",
           "query": "futterautomat mit elektrischer kühlung",
           "reason": "Für „futterautomat mit elektrischer kühlung“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
@@ -27051,24 +26881,6 @@
           "page": "",
           "query": "petlibro polar wet food feeder",
           "reason": "Für „petlibro polar wet food feeder“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "trinkbrunnen kitten",
-          "reason": "Für „trinkbrunnen kitten“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
-          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
-        },
-        {
-          "priority": "low",
-          "type": "google-only-visibility",
-          "title": "Keine Bing-Impressionen im Zeitraum",
-          "page": "",
-          "query": "wie viele trinkbrunnen für 2 katzen",
-          "reason": "Für „wie viele trinkbrunnen für 2 katzen“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         }
       ],

@@ -40,7 +40,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-07-31"
 navigation:
   show: true
   label: "Trinkbrunnen"
@@ -211,6 +211,8 @@ contentPlatform:
 | Welches Material ist sinnvoll? | [Edelstahl, Keramik und Kunststoff](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/) |
 
 ## Auswahlhilfe: Tier, Reinigung und Standort zuerst
+
+Die technische Auswahl ist nur der erste Schritt. Nimmt eine Katze den neuen Brunnen nicht sofort an, sollten Standort, Geräusch, Wasserfluss und die bisherige Wasserschale schrittweise statt unter Druck verändert werden. Der Ratgeber [Katze an einen Trinkbrunnen gewöhnen](/katze-an-trinkbrunnen-gewoehnen/) zeigt eine sichere Einführung, bei der jederzeit eine vertraute Wasserstelle verfügbar bleibt.
 
 Der beste Trinkbrunnen ist nicht der mit den meisten Funktionen. Er ist der, den dein Tier gern nutzt und den du ohne Umwege vollständig reinigen kannst.
 

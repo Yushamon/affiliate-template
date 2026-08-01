@@ -1,15 +1,34 @@
-import { getAiActionDefinition } from "./ai-action-registry.mjs";
+import { getAiActionDefinition, resolveFindingAiActionIds } from "./ai-action-registry.mjs";
 import { buildCodexPrompt } from "./prompts.ts";
 import type { QualityFinding } from "./types";
 import type { PromptTemplateId } from "./prompt-registry.ts";
 
-const slugFromRoute = (route: string) => {
+const slugFromRoute = (route?: string) => {
+  if (typeof route !== "string" || !route.trim()) return undefined;
   const match = route.match(/^\/(?:produkt|vergleiche)\/([^/]+)\/?$/);
   return match?.[1];
 };
 
-export const buildFindingAiActions = (finding: QualityFinding) =>
-  finding.aiActionIds
+export const buildFindingAiActions = (finding: QualityFinding) => {
+  const configuredIds = Array.isArray(finding?.aiActionIds)
+    ? finding.aiActionIds.filter(
+        (actionId): actionId is string =>
+          typeof actionId === "string" && actionId.trim().length > 0,
+      )
+    : [];
+
+  const resolvedIds = configuredIds.length
+    ? configuredIds
+    : resolveFindingAiActionIds(finding);
+
+  const actionIds = [...new Set(
+    (resolvedIds.length ? resolvedIds : ["codex-send"])
+      .filter((actionId) => typeof actionId === "string" && actionId.trim().length > 0),
+  )];
+
+  if (!actionIds.length) actionIds.push("codex-send");
+
+  return actionIds
     .map((actionId) => {
       const action = getAiActionDefinition(actionId);
       if (!action) return null;
@@ -46,3 +65,4 @@ export const buildFindingAiActions = (finding: QualityFinding) =>
       };
     })
     .filter(Boolean);
+};

@@ -15,10 +15,39 @@ const {
 } = Astro.props;
 
 const serviceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
-const prepared = findings.map((finding) => ({
-  ...finding,
-  aiActions: buildFindingAiActions(finding),
-}));
+const fallbackSolution = (finding: QualityFinding) => {
+  const explicit = String(
+    finding.recommendedSolution || finding.recommendedAction || "",
+  ).trim();
+  if (explicit) return explicit;
+
+  const text = `${finding.type} ${finding.area} ${finding.category}`.toLowerCase();
+  if (/no_incoming_internal_link|internal.?link|orphan|eingehenden link/.test(text)) {
+    return "Eine passende indexierbare Quellseite auswählen, dort einen natürlichen redaktionellen Link zum Ziel ergänzen und den internen Link-Audit erneut ausführen.";
+  }
+  if (/broken.?link|link.?target/.test(text)) {
+    return "Das fehlerhafte Linkziel auf eine gültige kanonische Route korrigieren und den Link-Audit erneut ausführen.";
+  }
+  if (/self.?link/.test(text)) {
+    return "Den Selbstlink entfernen oder auf eine fachlich passende nächste Seite der Nutzerreise umleiten.";
+  }
+  return "Befund anhand der genannten Quelle prüfen, gezielt beheben und anschließend mit dem zuständigen Audit verifizieren.";
+};
+
+const prepared = findings.map((finding) => {
+  const normalizedFinding = {
+    ...finding,
+    recommendedSolution: fallbackSolution(finding),
+    recommendedAction: String(
+      finding.recommendedAction || finding.recommendedSolution || fallbackSolution(finding),
+    ).trim(),
+  };
+
+  return {
+    ...normalizedFinding,
+    aiActions: buildFindingAiActions(normalizedFinding),
+  };
+});
 const serialized = JSON.stringify({ findings: prepared, compact, emptyText, serviceUrl })
   .replace(/</g, "\\u003c")
   .replace(/\u2028/g, "\\u2028")
@@ -172,7 +201,7 @@ const serialized = JSON.stringify({ findings: prepared, compact, emptyText, serv
       card.append(badges);
 
       card.append(node("p", finding.impact));
-      card.append(node("p", `Lösung: ${finding.recommendedSolution}`));
+      card.append(node("p", `Lösung: ${finding.recommendedSolution || finding.recommendedAction || "Konkrete Aktion im Finding öffnen."}`));
 
       const target = [finding.file, finding.route, finding.component].filter(Boolean).join(" · ");
       if (target) card.append(node("p", `Ziel: ${target}`));

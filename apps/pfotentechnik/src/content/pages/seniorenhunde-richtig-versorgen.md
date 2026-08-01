@@ -16,7 +16,7 @@ heroImage:
   src: "../../assets/images/editorial/senior-dog-care.webp"
   alt: "Älterer Hund ruht entspannt in einem seniorengerecht eingerichteten Zuhause"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-31"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["hund", "seniorenhund", "gesundheit", "ernaehrung", "mobilitaet", "vorsorge"]
 hub:
@@ -92,7 +92,7 @@ Diese Werte sind keine Diagnosegrenzen. Ein achtjähriger großer Hund kann kör
 
 ## Alter ist keine Diagnose
 
-Viele Beschwerden entwickeln sich langsam. Dadurch entsteht leicht der Eindruck, ein Hund werde einfach „gemütlicher“. Tatsächlich können hinter einem Rückgang der Aktivität unter anderem Gelenkschmerzen, Zahnerkrankungen, Herzprobleme, hormonelle Veränderungen oder eine nachlassende Organfunktion stehen.
+Viele Beschwerden entwickeln sich langsam. Dadurch entsteht leicht der Eindruck, ein Hund werde einfach „gemütlicher“. Tatsächlich können hinter einem Rückgang der Aktivität unter anderem Gelenkschmerzen, Zahnerkrankungen, Herzprobleme, hormonelle Veränderungen oder eine nachlassende Organfunktion stehen. Der Ratgeber [Hund ist müde: normale Ruhe oder Warnzeichen?](/hund-ist-muede/) hilft dabei, Müdigkeit, verminderte Belastbarkeit und echte Warnzeichen systematisch voneinander zu unterscheiden.
 
 Achten Sie besonders auf Veränderungen in diesen Bereichen:
 

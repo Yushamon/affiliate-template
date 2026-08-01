@@ -1,28 +1,29 @@
-# Global Decision Journey – Repair 2.0.1
+# PfotenTechnik Comparison Token + CSS Baseline 1.0.1
 
-Dieser Patch repariert die fehlgeschlagene Teilinstallation von 2.0.0.
+Korrektur der Validierungsreihenfolge aus Version 1.0.0.
 
-Behoben:
+## Ursache
 
-- Unterstützung für den tatsächlichen Vergleichs-Datenblock:
-  `const [products, manufacturers, pages, comparisons] = await Promise.all(...)`
-- Entfernung der versehentlich im 2.0.0-Payload enthaltenen Feeder-Altdateien
-- idempotente Normalisierung bereits geänderter Ratgeber- und Produkt-Templates
-- exakt ein Import, ein Datensatz und eine Journey-Komponente pro Template
-- Umstellung der Package-Scripts auf die globalen Audit-Namen
-- Backup vor allen Änderungen
+Der Performance-Audit prüft gerenderte Dateien unter `apps/pfotentechnik/dist`.
+Version 1.0.0 führte den Audit vor dem Astro-Build aus. Bei einem unvollständigen
+oder alten `dist` wurden deshalb vorhandene Routen fälschlich als fehlend gemeldet.
 
-Installation:
+## Korrektur
 
-```bash
-node 2/install-pfotentechnik-global-decision-journey-repair-2.0.1.mjs
+Die Reihenfolge lautet nun:
+
+1. Design Token Audit
+2. Design System Check
+3. Astro Build
+4. Performance Audit
+
+Tokenisierung und CSS-Baseline bleiben gegenüber 1.0.0 unverändert.
+
+## Ausführen
+
+```powershell
+node ./2/apply-pfotentechnik-comparison-token-and-css-baseline-1.0.1.mjs
 ```
 
-Validierung:
-
-```bash
-npm --workspace apps/pfotentechnik run test:decision-journeys
-npm --workspace apps/pfotentechnik run audit:decision-journeys
-npm --workspace apps/pfotentechnik run audit:decision-journeys:strict
-npm --workspace apps/pfotentechnik run build
-```
+Bei einem Fehler werden CSS-Datei und Baseline weiterhin vollständig
+zurückgerollt.

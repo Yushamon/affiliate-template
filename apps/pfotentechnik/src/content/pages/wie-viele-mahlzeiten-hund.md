@@ -13,7 +13,7 @@ categoryPath: "/smarte-futterautomaten/"
 tags: ["Hund", "Mahlzeiten", "Fütterung", "Futterautomat"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-09"
+updatedAt: "2026-07-31"
 hub:
   sections:
     - "wissen"
@@ -71,7 +71,7 @@ Eine feste Zahl wirkt praktisch, wird der Vielfalt von Hunden aber nicht gerecht
 
 ## Tagesration und Mahlzeitenzahl trennen
 
-Die Tagesration beschreibt die gesamte Futtermenge beziehungsweise Energie. Die Mahlzeitenzahl beschreibt nur ihre Verteilung. Zwei Mahlzeiten dürfen zusammen nicht mehr enthalten als die passende Tagesmenge. Leckerlis, Training und Kauartikel werden mitgerechnet.
+Die Tagesration beschreibt die gesamte Futtermenge beziehungsweise Energie. Die Mahlzeitenzahl beschreibt nur ihre Verteilung. Zwei Mahlzeiten dürfen zusammen nicht mehr enthalten als die passende Tagesmenge. Leckerlis, Training und Kauartikel werden mitgerechnet. Wie du diese Ausgangsmenge sinnvoll bestimmst und anschließend kontrollierst, erklärt [Futtermenge beim Hund richtig berechnen](/futtermenge-hund/).
 
 Packungsangaben sind Startpunkte. AAHA und WSAVA empfehlen, Futtermenge und Plan regelmäßig anhand von Gewicht, Körper- und Muskelzustand zu beurteilen. Bei deutlichen Veränderungen, Erkrankungen oder einem Gewichtsplan ist tierärztliche Begleitung erforderlich.
 

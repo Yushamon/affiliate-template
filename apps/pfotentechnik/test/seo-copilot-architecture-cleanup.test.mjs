@@ -86,12 +86,24 @@ test("Produktseiten besitzen einen gemeinsamen Workspace ohne parallelen Store",
   assert.doesNotMatch(workspace, /new Map\(/);
 });
 
-test("gemeinsames Admin-CSS verwendet keine important-Kaskade", () => {
-  const css = read("src/styles/seo-admin.css");
-  assert.doesNotMatch(css, /!important/);
-  assert.match(css, /\.seo-card/);
-  assert.match(css, /\.seo-table/);
-  assert.match(css, /\.seo-finding/);
+test("gemeinsames Admin-CSS verwendet die modulare Layer-Architektur ohne important-Kaskade", () => {
+  const entry = read("src/styles/seo-admin.css");
+  const panels = read("src/styles/seo-admin-panels.css");
+  const content = read("src/styles/seo-admin-content.css");
+  const operations = read("src/styles/seo-admin-operations.css");
+
+  assert.doesNotMatch(entry, /!important/);
+  assert.doesNotMatch(panels, /!important/);
+  assert.doesNotMatch(content, /!important/);
+  assert.doesNotMatch(operations, /!important/);
+
+  assert.match(entry, /@import "\.\/seo-admin-panels\.css";/);
+  assert.match(entry, /@import "\.\/seo-admin-content\.css";/);
+  assert.match(entry, /@import "\.\/seo-admin-operations\.css";/);
+
+  assert.match(panels, /\.seo-card/);
+  assert.match(content, /\.seo-table/);
+  assert.match(operations, /\.seo-finding/);
 });
 
 

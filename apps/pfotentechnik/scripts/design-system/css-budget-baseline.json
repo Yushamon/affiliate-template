@@ -1,25 +1,43 @@
 {
-  "version": 1,
-  "createdAt": "2026-07-31T05:48:42.000Z",
+  "version": 2,
+  "createdAt": "2026-07-31T21:32:02.330Z",
   "limits": {
-    "cssFiles": 30,
-    "cssBytes": 518445,
-    "importantRules": 1310,
+    "cssFiles": 42,
+    "cssBytes": 531991,
+    "importantRules": 1243,
     "rootBlocks": 24,
-    "rawHexColors": 684
+    "rawHexColors": 665
   },
   "current": {
-    "cssFiles": 25,
-    "cssBytes": 518445,
-    "importantRules": 1265,
+    "cssFiles": 42,
+    "cssBytes": 531991,
+    "importantRules": 1243,
     "rootBlocks": 24,
-    "rawHexColors": 684
+    "rawHexColors": 665
+  },
+  "previousBaseline": {
+    "version": 1,
+    "createdAt": "2026-07-31T05:48:42.000Z",
+    "limits": {
+      "cssFiles": 30,
+      "cssBytes": 518445,
+      "importantRules": 1310,
+      "rootBlocks": 24,
+      "rawHexColors": 684
+    },
+    "current": {
+      "cssFiles": 25,
+      "cssBytes": 518445,
+      "importantRules": 1265,
+      "rootBlocks": 24,
+      "rawHexColors": 684
+    }
   },
   "notes": {
-    "cssFiles": "SEO Operations nutzt eine gemeinsame zusätzliche Admin-Stylesheet-Datei; keine weitere Datei ohne Prüfung.",
-    "cssBytes": "Bewusst aktualisierte Baseline nach Konsolidierung des SEO Copiloten; weiteres Wachstum ist nicht freigegeben.",
-    "importantRules": "Keine neuen !important-Regeln; Bestand wurde reduziert.",
-    "rootBlocks": "Ein zusätzlicher gekapselter Token-Block für den eigenständigen noindex-Adminbereich.",
-    "rawHexColors": "Fünf bewusst gekapselte semantische Adminfarben; weiteres Wachstum ist nicht freigegeben."
+    "cssFiles": "Baseline an die abgeschlossene modulare CSS-Layer-Architektur angepasst. Kein weiterer Dateizuwachs ohne Prüfung.",
+    "cssBytes": "Exakter geprüfter Ist-Stand nach modularer CSS-Aufteilung und Comparison-Tokenisierung. Kein Wachstumspuffer.",
+    "importantRules": "Neue Baseline liegt unter dem vorherigen Bestand. Weitere !important-Zunahme ist nicht freigegeben.",
+    "rootBlocks": "Unveränderter geprüfter Bestand. Weitere Root-Blöcke sind nicht freigegeben.",
+    "rawHexColors": "Neue Baseline liegt unter dem vorherigen Bestand. Weitere Rohfarben sind nicht freigegeben."
   }
 }

@@ -165,6 +165,10 @@
     "css:cards:adopt": "node scripts/design-system/css-card-primitive-adoption.mjs",
     "css:cards:adopt:write": "node scripts/design-system/css-card-primitive-adoption.mjs --write",
     "test:css-card-primitive-adoption": "node --test test/css-card-primitive-adoption.test.mjs",
+    "test:seo-copilot:finding-ai-null-safety": "node --test test/seo-copilot-finding-ai-null-safety.test.mjs",
+    "test:seo-copilot:action-guarantee": "node --test test/seo-copilot-action-guarantee.test.mjs",
+    "test:topical-authority:journey-model": "node --test test/topical-authority-journey-model.test.mjs",
+    "test:topical-authority:internal-link-source": "node --test test/topical-authority-internal-link-source.test.mjs",
     "research:import": "node --experimental-strip-types scripts/seo/import-research.mjs",
     "research:check": "node --experimental-strip-types scripts/seo/import-research.mjs --check",
     "test:research": "node --experimental-strip-types --test test/seo-research-engine.test.mjs"
@@ -174,5 +178,6 @@
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.0.0",
     "googleapis": "^173.0.0"
-  }
+  },
+  "devDependencies": {}
 }
