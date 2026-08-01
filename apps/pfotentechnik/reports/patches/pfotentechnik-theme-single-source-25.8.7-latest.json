@@ -1,0 +1,34 @@
+{
+  "patch": "pfotentechnik-theme-single-source-25.8.7",
+  "status": "passed",
+  "generatedAt": "2026-08-01T21:31:24.187Z",
+  "changed": [
+    "apps/pfotentechnik/src/styles/pfotentechnik-design-tokens.css",
+    "apps/pfotentechnik/src/styles/foundation/tokens.css",
+    "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionAssistant.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionFacts2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductEverydayTimeline.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductPurchaseMistakes2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductTrust2.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro",
+    "apps/pfotentechnik/test/theme-single-source-25.8.7.test.mjs"
+  ],
+  "backup": ".patch-backups/pfotentechnik-theme-single-source-25.8.7-2026-08-01T21-30-43-170Z",
+  "validation": [
+    "theme-single-source-25.8.7.test.mjs",
+    "design-system:tokens:audit",
+    "design-system:components:audit",
+    "test:product-experience-2",
+    "build"
+  ]
+}
