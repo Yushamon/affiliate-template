@@ -1,0 +1,22 @@
+/*
+ * PfotenTechnik dark-mode surface contract.
+ *
+ * Page surfaces react to the active theme. Brand surfaces and media overlays
+ * use stable inverse foregrounds instead of borrowing a surface color.
+ */
+
+.site-header-v2 .brand-name {
+  color: var(--pt-color-text);
+}
+
+.footer-v2 .footer-brand-lockup,
+.footer-v2 .footer-brand-name {
+  color: var(--pt-color-text-inverse);
+}
+
+.footer-v2 .footer-brand-v2 p,
+.footer-v2 .footer-values,
+.footer-v2 .footer-column-v2 a,
+.footer-v2 .footer-bottom-v2 {
+  color: var(--pt-color-text-inverse-muted);
+}

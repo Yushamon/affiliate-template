@@ -68,3 +68,14 @@
     --pt-shadow-lg: 0 24px 58px rgb(0 0 0 / 0.36);
   }
 }
+
+/*
+ * Stable foreground and media tokens.
+ * These values describe luminance contracts and therefore do not flip with
+ * the page theme.
+ */
+:root {
+  --pt-color-text-inverse: #ffffff;
+  --pt-color-text-inverse-muted: rgb(255 255 255 / 0.74);
+  --pt-color-media-stage: #eef1ed;
+}
