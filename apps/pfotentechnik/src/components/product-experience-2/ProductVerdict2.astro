@@ -97,7 +97,29 @@ const alternative = model.alternatives[0];
     display: grid;
     gap: 7px;
     margin: 0;
-    padding-left: 1.15rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .verdict__card li {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+
+  .verdict__card li::before {
+    position: absolute;
+    left: 0;
+    font-weight: 950;
+  }
+
+  .verdict__card.is-positive li::before {
+    color: var(--px2-green-strong);
+    content: "✓";
+  }
+
+  .verdict__card.is-negative li::before {
+    color: var(--px2-red);
+    content: "×";
   }
 
   .verdict__card li,

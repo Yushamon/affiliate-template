@@ -81,6 +81,107 @@ const booleanFromText = (haystack: string, positive: string[], negative: string[
   return null;
 };
 
+const specValueFor = (data: any, ...labels: string[]): string => {
+  const normalizedLabels = labels.map(normalize);
+  const match = list<any>(data?.specs).find((item) => {
+    const label = normalize(item?.label);
+    return normalizedLabels.some((candidate) => label === candidate || label.includes(candidate));
+  });
+  return text(match?.value);
+};
+
+const booleanFromSpecs = (data: any, labels: string[]): boolean | null => {
+  const value = specValueFor(data, ...labels);
+  if (!value) return null;
+  const normalizedValue = normalize(value);
+  if (["nein", "kein", "ohne", "nicht vorhanden", "nicht vorgesehen"].some((term) => normalizedValue.includes(term))) {
+    return false;
+  }
+  return true;
+};
+
+const batteryCapabilityFromSpecs = (data: any): boolean | null => {
+  const explicitBattery = specValueFor(data, "Akku", "Akkubetrieb");
+  if (explicitBattery) {
+    const normalizedBattery = normalize(explicitBattery);
+    if (["nein", "kein", "ohne", "nicht vorhanden", "nicht vorgesehen"].some((term) => normalizedBattery.includes(term))) {
+      return false;
+    }
+    return true;
+  }
+
+  const power = normalize(specValueFor(data, "Stromversorgung", "Netzbetrieb", "Power"));
+  if (!power) return null;
+  if (["backup", "notstrom", "ausfallsicherung"].some((term) => power.includes(term))) return false;
+  if (["akkubetrieb", "wiederaufladbar", "kabellos", "cordless", "batteriebetrieb"].some((term) => power.includes(term))) {
+    return true;
+  }
+  if (["netzteil", "netzbetrieb", "netzanschluss"].some((term) => power.includes(term))) return false;
+  return null;
+};
+
+const foodTypesFromData = (data: any): string[] => {
+  const structured = [
+    ...list<string>(data.comparisonFilters?.foodType),
+    ...list<string>(data.comparisonData?.general?.foodType)
+  ]
+    .flatMap((value) => {
+      const normalized = normalize(value);
+      return [
+        normalized === "dry" || normalized.includes("trocken") ? "dry" : "",
+        normalized === "wet" || normalized.includes("nass") || normalized.includes("feucht") ? "wet" : ""
+      ];
+    })
+    .filter(Boolean);
+
+  if (structured.length > 0) return [...new Set(structured)];
+
+  const specification = normalize(specValueFor(data, "Futterart", "Futtertyp", "Futter"));
+  return [
+    specification.includes("trocken") ? "dry" : "",
+    specification.includes("nass") || specification.includes("feucht") ? "wet" : ""
+  ].filter(Boolean);
+};
+
+const joinGerman = (values: string[]): string => {
+  if (values.length <= 1) return values[0] ?? "";
+  if (values.length === 2) return `${values[0]} und ${values[1]}`;
+  return `${values.slice(0, -1).join(", ")} und ${values.at(-1)}`;
+};
+
+const dogSuitabilityLabel = (petSizes: string[]): string => {
+  const sizes = new Set(petSizes.map(normalize));
+  const small = sizes.has("small") || sizes.has("klein");
+  const medium = sizes.has("medium") || sizes.has("mittel") || sizes.has("mittelgross");
+  const large = sizes.has("large") || sizes.has("gross");
+
+  if (small && medium && !large) return "kleine bis mittelgroße Hunde";
+  if (!small && medium && large) return "mittelgroße bis große Hunde";
+  if (small && !medium && large) return "kleine und große Hunde";
+  if (small && !medium && !large) return "kleine Hunde";
+  if (!small && medium && !large) return "mittelgroße Hunde";
+  if (!small && !medium && large) return "große Hunde";
+  return "Hunde";
+};
+
+const buildSuitabilitySummary = (
+  profile: Pick<ProductDecisionProfile, "animals" | "petSizes">,
+  idealFor: string[],
+  fallback: string
+): string => {
+  const animals = new Set(profile.animals.map(normalize));
+  const labels: string[] = [];
+  if (animals.has("cat")) labels.push("Katzen");
+  if (animals.has("dog")) labels.push(dogSuitabilityLabel(profile.petSizes));
+  if (labels.length > 0) return joinGerman(labels);
+
+  const explicit = idealFor.find((item) => {
+    const normalized = normalize(item);
+    return normalized.includes("katze") || normalized.includes("hund") || normalized.includes("tier");
+  });
+  return explicit ?? idealFor[0] ?? fallback;
+};
+
 const decisionProfileFor = (data: any, price: ProductPriceInsight | undefined): ProductDecisionProfile => {
   const haystack = collectProductText(data);
   const normalizedCategory = normalize(data.category?.key ?? data.category?.label);
@@ -95,18 +196,19 @@ const decisionProfileFor = (data: any, price: ProductPriceInsight | undefined): 
     .map((value) => value === "hund" || value === "hunde" ? "dog" : value === "katze" || value === "katzen" ? "cat" : value)
     .filter((value) => value === "dog" || value === "cat");
   const foodTypes = usesFoodQuestions
-    ? list<string>(data.comparisonFilters?.foodType ?? data.comparisonData?.general?.foodType)
-        .map((value) => normalize(value))
-        .map((value) => value.includes("nass") ? "wet" : value.includes("trocken") ? "dry" : value)
-        .filter((value) => value === "dry" || value === "wet")
+    ? foodTypesFromData(data)
     : [];
 
   const hasWifi = typeof data.comparisonFilters?.app === "boolean"
     ? data.comparisonFilters.app
-    : booleanFromText(haystack, ["wlan", "wifi", "wi fi", "app steuerung"], ["ohne wlan", "ohne app"]);
+    : booleanFromSpecs(data, ["WLAN", "WiFi", "App"])
+      ?? booleanFromText(haystack, ["wlan", "wifi", "wi fi", "app steuerung"], ["ohne wlan", "ohne app"]);
+
   const hasCamera = typeof data.comparisonFilters?.camera === "boolean"
     ? data.comparisonFilters.camera
-    : booleanFromText(haystack, ["kamera", "camera", "video"], ["ohne kamera"]);
+    : booleanFromSpecs(data, ["Kamera", "Camera"])
+      ?? booleanFromText(haystack, ["kamera", "camera", "video"], ["ohne kamera", "keine kamera"]);
+
   const supportsMultiplePets = booleanFromText(
     haystack,
     ["mehrtier", "mehrere tiere", "zwei katzen", "mehrkatzen", "dual hopper", "zwei naepfe", "rfid", "mikrochip"],
@@ -165,7 +267,7 @@ const toAlternative = (entry: any, type: string, label: string, reason: string, 
     score: editorialScore(data),
     priceLabel: price?.formattedCurrent,
     reason,
-    decisionProfile: decisionProfileFor(data, price),
+    decisionProfile,
     matchKeys: type === "cheaper"
       ? ["budget"]
       : type === "large-dog"
@@ -406,6 +508,12 @@ export const buildProductExperienceModel = ({
     { limit: 4 }
   );
   const benefits = strengthCandidates.slice(0, 4);
+  const decisionProfile = decisionProfileFor(data, price);
+  const suitabilitySummary = buildSuitabilitySummary(
+    decisionProfile,
+    idealFor,
+    text(data.category?.label ?? data.category, "Geeignete Haustiere")
+  );
   const alternatives = intelligentAlternatives(currentEntry, allProducts, priceIndex, alternativeRecommendations);
   const editorial = data.editorial ?? {};
   const evidence = list<string>(editorial.evidence).map((item) => evidenceLabels[item] ?? item);
@@ -426,14 +534,14 @@ export const buildProductExperienceModel = ({
   const categoryFitProfile = {
     productName: text(data.title, "Dieses Produkt"),
     category: categoryKind,
-    animals: decisionProfileFor(data, price).animals,
-    petSizes: decisionProfileFor(data, price).petSizes,
-    foodTypes: decisionProfileFor(data, price).foodTypes,
-    supportsMultiplePets: decisionProfileFor(data, price).supportsMultiplePets,
-    hasWifi: decisionProfileFor(data, price).hasWifi,
-    worksOffline: decisionProfileFor(data, price).worksOffline,
-    hasCamera: decisionProfileFor(data, price).hasCamera,
-    hasBattery: booleanFromText(specsText, ["akku", "batterie", "kabellos"], ["nur netzbetrieb", "kein akku"]),
+    animals: decisionProfile.animals,
+    petSizes: decisionProfile.petSizes,
+    foodTypes: decisionProfile.foodTypes,
+    supportsMultiplePets: decisionProfile.supportsMultiplePets,
+    hasWifi: decisionProfile.hasWifi,
+    worksOffline: decisionProfile.worksOffline,
+    hasCamera: decisionProfile.hasCamera,
+    hasBattery: batteryCapabilityFromSpecs(data),
     material: specsText,
     subscriptionRequired: booleanFromText(specsText, ["abo erforderlich", "abonnement", "monatliche kosten"], ["ohne abo", "kein abo"]),
     suitableForOutdoor: booleanFromText(specsText, ["wasserdicht", "wasserfest", "ip67", "ip68", "outdoor"], ["nur innen"]),
@@ -534,6 +642,7 @@ export const buildProductExperienceModel = ({
     scoreLabel: score >= 90 ? "Hervorragend" : score >= 80 ? "Sehr gut" : score >= 70 ? "Gut" : score > 0 ? "Mit Einschränkungen" : "Noch offen",
     gallery,
     idealFor,
+    suitabilitySummary,
     notFor,
     benefits,
     mainLimitation: limitations[0] ?? notFor[0] ?? "Keine zentrale Einschränkung redaktionell hinterlegt.",

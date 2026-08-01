@@ -58,8 +58,19 @@ const implicationFor = (
     }
   }
 
-  if (key.includes("akku") || key.includes("batterie") || key.includes("stromversorgung")) {
-    return "Die Stromversorgung entscheidet, wie zuverlässig das Gerät bei Stromausfall oder unterwegs weiterarbeitet.";
+  if (key.includes("akku")) {
+    if (["nein", "kein", "ohne", "nicht vorhanden", "nicht vorgesehen"].some((term) => normalizedValue.includes(term))) {
+      return "Kein integrierter Akku: Ohne Netzstrom läuft das Gerät nur weiter, wenn eine separate Batterie- oder Notstromlösung ausdrücklich vorgesehen ist.";
+    }
+    return "Ein integrierter Akku erlaubt einen flexibleren Standort. Laufzeit, Ladezeit und Verhalten während des Ladens bleiben dabei kaufentscheidend.";
+  }
+
+  if (key.includes("batterie") || key.includes("notstrom")) {
+    return "Batterien oder Notstrom überbrücken einen Stromausfall. Das ist nicht automatisch mit dauerhaftem kabellosem Betrieb gleichzusetzen.";
+  }
+
+  if (key.includes("stromversorgung") || key.includes("netzteil") || key.includes("netzbetrieb")) {
+    return "Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.";
   }
 
   if (key.includes("material")) {
@@ -108,24 +119,37 @@ const implicationFor = (
   return null;
 };
 
+const GENERIC_POWER_CONSEQUENCE =
+  "Die Stromversorgung entscheidet, wie zuverlässig das Gerät bei Stromausfall oder unterwegs weiterarbeitet.";
+
 export const buildDecisionFacts = (
   data: any,
   specs: Array<{ label: string; value: string }>
 ): DecisionFact[] => {
+  const category = text(data?.category?.label ?? data?.category?.key ?? data?.category);
   const explicit = Array.isArray(data?.decisionFacts)
     ? data.decisionFacts
-        .map((item: any) => ({
-          label: text(item?.label),
-          value: text(item?.value),
-          consequence: text(item?.consequence),
-          source: "editorial" as const
-        }))
+        .map((item: any) => {
+          const label = text(item?.label);
+          const value = text(item?.value);
+          const supplied = text(item?.consequence);
+          const derived = implicationFor(label, value, category);
+          const consequence =
+            !supplied || supplied === GENERIC_POWER_CONSEQUENCE
+              ? derived ?? supplied
+              : supplied;
+          return {
+            label,
+            value,
+            consequence,
+            source: "editorial" as const
+          };
+        })
         .filter((item: DecisionFact) => item.label && item.value && item.consequence)
     : [];
 
   if (explicit.length > 0) return explicit.slice(0, 6);
 
-  const category = text(data?.category?.label ?? data?.category?.key ?? data?.category);
   const output: DecisionFact[] = [];
   const seen = new Set<string>();
 

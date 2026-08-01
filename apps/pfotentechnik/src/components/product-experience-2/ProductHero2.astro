@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { model } = Astro.props;
-const suitableFor = model.idealFor[0] ?? model.category;
+const suitableFor = model.suitabilitySummary;
 const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 ---
 
