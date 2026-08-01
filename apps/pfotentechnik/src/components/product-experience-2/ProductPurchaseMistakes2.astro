@@ -1,0 +1,109 @@
+---
+interface PurchaseMistake {
+  title: string;
+  reason: string;
+  betterChoice?: {
+    label: string;
+    href: string;
+  } | null;
+}
+
+interface Props {
+  items?: PurchaseMistake[];
+}
+
+const { items = [] } = Astro.props;
+---
+
+{items.length > 0 && (
+  <section class="purchase-mistakes" aria-labelledby="purchase-mistakes-title">
+    <header>
+      <span>Typische Fehlkäufe vermeiden</span>
+      <h2 id="purchase-mistakes-title">Wann dieses Produkt die falsche Wahl ist</h2>
+    </header>
+
+    <div class="purchase-mistakes__grid">
+      {items.slice(0, 3).map((item) => (
+        <article>
+          <h3>{item.title}</h3>
+          <p>{item.reason}</p>
+          {item.betterChoice && (
+            <a href={item.betterChoice.href}>
+              {item.betterChoice.label}
+              <span aria-hidden="true">→</span>
+            </a>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .purchase-mistakes {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 20px;
+    background: var(--px2-red-soft);
+  }
+
+  .purchase-mistakes header span {
+    color: var(--px2-red);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+
+  .purchase-mistakes h2 {
+    margin: 5px 0 0;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    letter-spacing: -.025em;
+  }
+
+  .purchase-mistakes__grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .purchase-mistakes article {
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 15px;
+    background: var(--px2-surface);
+  }
+
+  .purchase-mistakes h3 {
+    margin: 0 0 7px;
+    font-size: 1rem;
+  }
+
+  .purchase-mistakes p {
+    margin: 0;
+    color: var(--px2-muted);
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  .purchase-mistakes a {
+    display: inline-flex;
+    gap: 7px;
+    margin-top: 10px;
+    color: var(--px2-green-strong);
+    font-weight: 850;
+    text-underline-offset: 3px;
+  }
+
+  @media (min-width: 720px) {
+    .purchase-mistakes {
+      padding: 22px;
+    }
+
+    .purchase-mistakes__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

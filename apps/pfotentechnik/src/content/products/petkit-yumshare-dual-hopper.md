@@ -399,6 +399,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Gesamtkapazität"
+    value: "5 Liter beziehungsweise 21 Cups"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Krokettengröße Trockenfutter"
+    value: "höchstens 12 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Krokettengröße gefriergetrocknet"
+    value: "höchstens 9 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Portionen je Mahlzeit"
+    value: "1 bis 10 Portionseinheiten pro Kammer"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Nominelle Portionsspanne"
+    value: "PETKIT nennt 10 bis 100 g pro Kammer und Mahlzeit; tatsächliches Gewicht hängt vom Futter und der Kammer ab"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsmessung"
+    value: "volumetrisch; keine integrierte Waage"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
 ---
 Der PETKIT YumShare Dual-Hopper 2 ist ein Premium-Futterautomat mit zwei getrennten Vorratskammern, einem gemeinsamen Edelstahl-Napf und einer integrierten AI-Kamera.
 

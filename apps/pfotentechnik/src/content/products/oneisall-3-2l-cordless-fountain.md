@@ -327,6 +327,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3,2 Liter beziehungsweise 108 fl. oz."
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "ABS-Tank mit Trinkfläche aus Edelstahl 304"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Akku"
+    value: "integrierter Lithium-Ionen-Akku mit 4.000 mAh"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und Nutzung"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Lautstärke"
+    value: "Herstellerangabe ungefähr 20 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Filterung"
+    value: "fünfstufig"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.
 

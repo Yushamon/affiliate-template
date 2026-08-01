@@ -376,6 +376,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "5 Liter Frischwasser plus 1,8 Liter Abwasser"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Klassischer Hauptfilter"
+    value: "Nein"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "App"
+    value: "PETKIT-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Lautstärke"
+    value: "Herstellerangabe höchstens etwa 26 dB im Normalbetrieb; beim Spülen und Nachfüllen höher"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Stromversorgung"
+    value: "Netzbetrieb mit 12 V/2 A"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "Nein"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der PETKIT Eversweet Ultra ist kein gewöhnlicher Umlauf-Trinkbrunnen. Frischwasser wird aus einem separaten 5-Liter-Tank in eine Edelstahlschale geleitet. Benutztes Wasser kann anschließend in einen 1,8-Liter-Abwassertank abgelassen werden und gelangt nicht zurück in den Frischwasservorrat.
 

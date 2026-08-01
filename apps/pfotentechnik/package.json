@@ -174,7 +174,16 @@
     "test:research": "node --experimental-strip-types --test test/seo-research-engine.test.mjs",
     "audit:image-alt": "node scripts/seo/audit-image-alt-text.mjs",
     "audit:image-alt:strict": "node scripts/seo/audit-image-alt-text.mjs --strict",
-    "test:image-alt": "node --test test/image-alt-text-24.0.0.test.mjs"
+    "test:image-alt": "node --test test/image-alt-text-24.0.0.test.mjs",
+    "audit:product-standard-3": "node scripts/product-standard-3/audit.mjs",
+    "audit:product-standard-3:strict": "node scripts/product-standard-3/audit.mjs --strict",
+    "test:product-standard-3": "node --test test/product-standard-3-audit-25.3.0.test.mjs test/product-standard-3-core-25.1.0.test.mjs test/category-fit-assistant-25.2.0.test.mjs",
+    "product-standard-3:enrich": "node scripts/product-standard-3/enrich.mjs",
+    "product-standard-3:enrich:write": "node scripts/product-standard-3/enrich.mjs --write",
+    "test:product-standard-3:enricher": "node --test test/product-standard-3-enricher-25.4.0.test.mjs",
+    "product-standard-3:release": "node scripts/product-standard-3/release-gate.mjs",
+    "product-standard-3:release:no-build": "node scripts/product-standard-3/release-gate.mjs --skip-build",
+    "test:product-standard-3:release": "node --test test/product-standard-3-release-gate-25.5.0.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

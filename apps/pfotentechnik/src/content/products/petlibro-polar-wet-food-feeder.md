@@ -281,6 +281,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Portionierung"
+    value: "Drei zeitgesteuerte Fächer mit je 200 ml"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Kapazität"
+    value: "drei Fächer mit je 200 ml"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "App"
+    value: "PETLIBRO-App für Android und iOS 13 oder neuer"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Stromversorgung"
+    value: "Netzteil 12 V/5 A"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie-Backup"
+    value: "drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt.
 

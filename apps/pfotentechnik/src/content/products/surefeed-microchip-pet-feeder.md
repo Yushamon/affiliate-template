@@ -246,6 +246,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "400 ml"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "App"
+    value: "Nein, Standardversion"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Stromversorgung"
+    value: "vier C-Batterien"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Portionierung"
+    value: "manuell eingefüllte Napfportion; keine automatische Dosierung"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "WLAN"
+    value: "Nein; die Standardversion arbeitet lokal ohne App oder Hub"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
 ---
 Der SureFeed Microchip Pet Feeder ist kein klassischer Futterautomat. Er dosiert keine Mahlzeiten, sondern kontrolliert, welches Tier Zugang zum Napf erhält.
 

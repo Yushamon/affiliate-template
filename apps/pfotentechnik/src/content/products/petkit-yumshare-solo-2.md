@@ -297,6 +297,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter beziehungsweise 12 Cups"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionen"
+    value: "1 bis 5 Portionen pro Mahlzeit; Herstellerdarstellung ungefähr 10 bis 50 g"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "App"
+    value: "PETKIT-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Stromversorgung"
+    value: "6-V-Netzteil; Backup-Stromversorgung vorhanden"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie-Backup"
+    value: "Hersteller wirbt mit bis zu 14 Tagen; Batterieart ist auf der aktuellen Produktseite widersprüchlich dokumentiert"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batteriemodus"
+    value: "Kamera laut Hersteller deaktiviert"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der **PETKIT YumShare Solo 2** ist ein Trockenfutterautomat mit Kamera. Er kombiniert einen 3-Liter-Vorrat, bis zu zehn geplante Mahlzeiten und Livebild in der PETKIT-App.
 

@@ -366,6 +366,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Nutzbare Kapazität"
+    value: "1,6 Liter beziehungsweise 54 fl. oz."
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Maximales Behältervolumen"
+    value: "1,8 Liter laut Verpackung und älterer Anleitung; PETKIT weist 1,6 Liter als tatsächlich nutzbar aus"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Materialien"
+    value: "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "App"
+    value: "PETKIT-App für iOS und Android"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Hauptfilter"
+    value: "PETKIT Filter Unit 3.0, Modell P4161"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Filteraufbau"
+    value: "hochdichtes Filtervlies, Kokos-Aktivkohle und Ionenaustauschharz"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der PETKIT Eversweet 3 Pro UVC ist ein kompakter Trinkbrunnen für eine Katze oder einen kleinen Hund. Sein Hauptargument ist die Kombination aus Edelstahl-Wasserbehälter, entnehmbarer UVC-Pumpe und App-gestützter Bedienung.
 

@@ -242,6 +242,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "Für die VHF-Hundeortung nicht erforderlich"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 68 Stunden; optional bis zu 136 Stunden"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Stromversorgung"
+    value: "Austauschbarer Lithium-Ionen-Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Wasserschutz"
+    value: "1 ATM"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+  - label: "Abmessungen"
+    value: "Nicht im offiziellen Handbuch ausgewiesen"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Gewicht"
+    value: "Nicht im offiziellen Handbuch ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Das TT 25 ist kein „besseres“ T 20 für jeden Haushalt. Seine Zusatzfunktionen erhöhen Komplexität und Verantwortungsbedarf, ohne die reine Haustierortung grundsätzlich zu verbessern.
 

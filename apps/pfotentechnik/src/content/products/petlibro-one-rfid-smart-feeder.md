@@ -194,6 +194,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "App-Steuerung"
+    value: "Ja"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "Bis zu 10 Mahlzeiten täglich"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Stromversorgung"
+    value: "Netzteil mit Batterie-Backup"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 

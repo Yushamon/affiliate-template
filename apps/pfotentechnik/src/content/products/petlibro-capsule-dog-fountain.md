@@ -231,6 +231,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "2,1 Gallonen, etwa 7,95 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "USB 5 V/1 A, Kabel etwa 2 m"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Lautstärke"
+    value: "Herstellerangabe 28 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Filter"
+    value: "fünfstufig"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung etwa alle zwei Wochen"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Trockenlaufschutz"
+    value: "automatische Abschaltung bei zu niedrigem Wasserstand"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
 ---
 Viele Katzenbrunnen sind für Hunde zu niedrig und zu klein. Die Capsule Dog Fountain setzt deshalb auf eine breite Trinkzone, hohe Reserve und Spritzschutz.
 

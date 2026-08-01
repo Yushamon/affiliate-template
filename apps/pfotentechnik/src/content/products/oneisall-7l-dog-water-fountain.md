@@ -332,6 +332,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "7 Liter beziehungsweise rund 230 fl. oz."
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "Trinkschale aus SUS/304-Edelstahl; Tank und weitere Bauteile aus Kunststoff beziehungsweise PC"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Stromversorgung"
+    value: "DC 5 V/1 A"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "Nein"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Lautstärke"
+    value: "Herstellerangabe unter beziehungsweise ungefähr 35 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
 ---
 Der oneisall 7L Dog Water Fountain ist auf hohe Wasserreserve und eine breite Trinkfläche ausgelegt. Im Unterschied zu kompakten Katzenbrunnen steht nicht eine kleine Stellfläche, sondern die Nutzung durch große Hunde und mehrere Tiere im Vordergrund.
 

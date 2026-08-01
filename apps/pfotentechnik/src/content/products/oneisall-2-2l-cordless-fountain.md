@@ -209,6 +209,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "2,2 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "Akku, Laden über USB-C mit 5 V/1 A"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 30 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Lautstärke"
+    value: "Herstellerangabe unter 20 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Filter"
+    value: "fünfstufig"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.
 

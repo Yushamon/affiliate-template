@@ -218,6 +218,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "1,8 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "USB-Kabel, 5 V/1 A; Netzteil nicht enthalten"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Lautstärke"
+    value: "Herstellerangabe bis 25 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Filter"
+    value: "mehrstufig"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung etwa alle vier Wochen"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der Eversweet Solo SE ist die einfachste aktuelle PETKIT-Variante. Er verzichtet auf App, Akku und variable Modi und konzentriert sich auf kontinuierlichen Wasserfluss.
 

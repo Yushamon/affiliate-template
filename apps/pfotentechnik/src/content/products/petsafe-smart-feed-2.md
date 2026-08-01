@@ -229,6 +229,22 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "24 Cups / etwa 5,7 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "1/8 bis 4 Cups je Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Stromversorgung"
+    value: "Netzadapter; Backup mit 4 D-Batterien"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Gewicht"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der PetSafe Smart Feed 2.0 ist nicht neu, schließt im PfotenTechnik-Katalog aber eine wichtige Lücke: Er kann deutlich größere Mahlzeiten ausgeben als typische kompakte Katzenautomaten. Für sehr große oder kräftige Hunde bleibt er dennoch keine pauschale Empfehlung.
 

@@ -423,6 +423,25 @@ metadata:
   version: "4.1.0"
   normalizedAt: "2026-07-26"
   policy: "Nur aktuelle Hersteller-, Hilfe-Center- und redaktionell eingeordnete Daten; keine geschätzten technischen Werte"
+decisionFacts:
+  - label: "Abo"
+    value: "Erforderlich; eigenes Abonnement pro Tracker"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "Abo-Modelle"
+    value: "Monatlich sowie Prepaid-Laufzeiten über ein, zwei oder fünf Jahre"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "App"
+    value: "Weenect App für iOS und Android sowie Web-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "WLAN"
+    value: "WLAN-Energiesparzonen; WLAN ist kein eigenständiger Ortungsweg"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkukapazität"
+    value: "500 mAh"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 7 Tage mit WLAN-Energiesparzonen; etwa 2 Tage bei durchgehender Ortung"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 
 Der **Weenect XS** ist ein 27 g leichter GPS-Tracker für Katzen und kleine Hunde ab 3 kg. Anders als ein Bluetooth-Tag überträgt er seine Position über eine integrierte SIM-Karte und ein unterstütztes Mobilfunknetz. Dadurch gibt es keine feste Distanzgrenze zum Smartphone – wohl aber eine Abhängigkeit von Satelliten- und Mobilfunkempfang.

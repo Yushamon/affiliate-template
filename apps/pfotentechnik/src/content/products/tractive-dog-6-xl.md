@@ -323,6 +323,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "Erforderlich; ein eigenes Abo pro Tracker"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "App"
+    value: "Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Stromversorgung"
+    value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Wasserschutz"
+    value: "IP68"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+  - label: "Abmessungen"
+    value: "83 × 47 × 20 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
 ---
 Der Tractive DOG 6 XL ist die Langläufer-Variante innerhalb der aktuellen Tractive-Hundetracker. Er richtet sich an Hunde ab 20 kg und verbindet GPS-Ortung mit LTE-Übertragung, virtuellen Zäunen, Aktivitätsdaten und Gesundheits-Trends.
 

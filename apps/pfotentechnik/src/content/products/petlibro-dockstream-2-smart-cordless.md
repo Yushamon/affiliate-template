@@ -260,6 +260,25 @@ comparisonData:
     score: 87
     assessment: "manufacturer-data"
     productStatus: "active"
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "ABS-Kunststoff und Edelstahl"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Abmessungen"
+    value: "246 × 200 × 198 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Gewicht"
+    value: "1,89 kg"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "Akkukapazität"
+    value: "5200 mAh"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Akkulaufzeit"
+    value: "laut Hersteller bis zu 30 Tage bei einer Katze, 30 Sitzungen täglich und je 45 Sekunden"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 
 Der **PETLIBRO Dockstream 2 Smart Cordless** ist kein bloßer Nachfolger mit größerem Akku. Er verbindet drei Funktionen, die bei Trinkbrunnen sonst oft getrennt auftreten: kabellose Aufstellung, App-Protokoll und ein abnehmbares Wassersystem ohne klassische Tauchpumpe im Tank.

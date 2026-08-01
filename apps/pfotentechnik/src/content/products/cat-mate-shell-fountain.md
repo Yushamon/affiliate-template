@@ -220,6 +220,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "Niedervolt-Netzbetrieb mit etwa 3 m Kabel"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Filter"
+    value: "Polymer-Aktivkohle oder dreistufig mit Ionenaustauschharz"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung monatlich"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Lautstärke"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
 ---
 Der Cat Mate Shell Pet Fountain ist ein vergleichsweise klassischer Brunnen. Er arbeitet ohne App, Akku oder Sensorik und bietet stattdessen zwei Trinkhöhen sowie eine regelbare Pumpe.
 

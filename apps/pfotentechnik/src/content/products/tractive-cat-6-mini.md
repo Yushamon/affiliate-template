@@ -291,6 +291,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "Erforderlich; ein Abo pro Tracker"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "App"
+    value: "Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkukapazität"
+    value: "450 mAh"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Stromversorgung"
+    value: "Integrierter Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Wasserschutz"
+    value: "IP68"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
 ---
 Beim Tractive CAT 6 Mini bilden Tracker und Halsband eine konstruktive Einheit. Das vom Hersteller angegebene Gewicht von 32 g umfasst deshalb das vollständige System. Für die Auswahl sind neben dem Körpergewicht der Katze vor allem der zulässige Halsumfang von 19 bis 22,9 cm und der Sinn des Sicherheitsverschlusses entscheidend.
 

@@ -363,6 +363,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "für die VHF-Hundeortung nicht erforderlich"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "Smartphone-App"
+    value: "kein eigenständiger Smartphone-Tracker; optionale App-Funktionen hängen vom verwendeten Handgerät ab"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkutyp"
+    value: "wiederaufladbarer, austauschbarer Lithium-Ionen-Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "bis zu 68 Stunden mit Standardakku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Optionale Akkulaufzeit"
+    value: "bis zu 136 Stunden mit erweitertem Akkuteil"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Wasserschutz"
+    value: "1 ATM; widersteht laut Garmin einem Druck entsprechend 10 m Wassertiefe"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
 ---
 Der Garmin Alpha T 20 ist kein gewöhnlicher GPS-Tracker für Spaziergänge. Er gehört zu einem professionellen VHF-Ortungssystem: Das Halsbandgerät bestimmt die Position des Hundes und sendet sie direkt an ein kompatibles Garmin-Alpha-Handgerät.
 

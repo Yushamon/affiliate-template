@@ -322,6 +322,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "Erforderlich; ein eigenes Abo pro Tracker"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "App"
+    value: "Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 14 Tage mit Energiesparzonen"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Stromversorgung"
+    value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "Integrierter Akku, laut Support 930 mAh"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Wasserschutz"
+    value: "IP68"
+    consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
 ---
 Der Tractive DOG 6 ist ein kompakter GPS-Tracker für Hunde ab 4 kg. Er kombiniert satellitengestützte Positionsbestimmung mit LTE-Übertragung an die Tractive-App. Im Live-Modus wird der Standort laut Hersteller etwa alle zwei bis drei Sekunden aktualisiert.
 

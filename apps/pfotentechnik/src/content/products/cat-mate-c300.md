@@ -223,6 +223,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "drei Fächer; aktuelle Produktseite nennt 170 g je Fach, Supportseite 330 g"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Stromversorgung"
+    value: "drei AA-Batterien"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterielaufzeit"
+    value: "Herstellerangabe etwa zwölf Monate"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Gewicht"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der Cat Mate C300 kombiniert die einfache Drehtellerbauweise mit einem Digitaltimer. Er ist präziser als der analoge C200, bleibt aber vollständig offline.
 

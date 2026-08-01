@@ -250,6 +250,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Krokettengröße"
+    value: "offiziell uneinheitlich mit 2 bis 15 oder 5 bis 15 mm angegeben"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Kapazität"
+    value: "6 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "1 bis 50 Portionen pro Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgröße"
+    value: "Herstellerangabe etwa 5 g"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Stromversorgung"
+    value: "5 V/1 A über USB-C und drei D-Batterien als Backup"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der WOPET Patrol F07 Pro ist auf hohe Planungsflexibilität ausgelegt. Bis zu 15 Mahlzeiten und 50 Portionen je Ausgabe sind deutlich mehr als bei vielen Konkurrenzmodellen.
 

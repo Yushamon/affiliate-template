@@ -194,6 +194,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "1 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "Keramik, PP und Silikon"
+    consequence: "Keramik ist schwer und standfest, kann bei Stößen aber beschädigt werden."
+  - label: "Stromversorgung"
+    value: "Netzbetrieb"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Filter"
+    value: "mehrstufig"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Gewicht"
+    value: "1,4 kg"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "Lautstärke"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
 ---
 Der PETKIT Eversweet 5 Mini ist vor allem wegen seiner kleinen Stellfläche interessant. Die geringe Kapazität ist zugleich seine größte Einschränkung.
 

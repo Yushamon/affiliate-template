@@ -304,6 +304,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "70 fl. oz., rund 2 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "BPA- und BHT-freier Kunststoff; Schale und Basis aus Polypropylen"
+    consequence: "Kunststoff ist leicht, sollte wegen Kratzern und möglicher Geruchsaufnahme regelmäßig kontrolliert werden."
+  - label: "Stromversorgung"
+    value: "Netzbetrieb mit Niedervolt-Netzteil und 3 m Kabel"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "Nein"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Filter im Lieferumfang"
+    value: "Polymer-Aktivkohlefilter"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der Cat Mate Pet Fountain 335 ist ein klassischer Trinkbrunnen ohne App, Akku oder Sensorik. Wasser wird über drei Ebenen geführt, sodass Tiere zwischen einer oberen Trinkmulde, fließenden Bereichen und der unteren Schale wählen können.
 

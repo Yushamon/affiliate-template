@@ -323,6 +323,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Futterkapazität"
+    value: "5 Liter beziehungsweise 169 fl. oz."
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Wasserkapazität"
+    value: "3,5 Liter beziehungsweise 118 fl. oz."
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Krokettengröße"
+    value: "bis 13 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Portionierung"
+    value: "einstellbare Portionseinheiten; tatsächliches Gewicht hängt vom Futter ab"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "App"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "WLAN"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
 ---
 Der Oneisall PF14 ist keine Kombination aus Futterautomat und Trinkbrunnen. Er verbindet einen programmierbaren Trockenfutterspender mit einem separaten Schwerkraft-Wassertank.
 

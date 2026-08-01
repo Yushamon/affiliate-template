@@ -1,0 +1,129 @@
+---
+import type { ProductExperienceModel } from "../../domain/productExperience/model";
+
+interface Props {
+  model: ProductExperienceModel;
+}
+
+const { model } = Astro.props;
+const buyIf = model.idealFor.slice(0, 3);
+const avoidIf = model.notFor.slice(0, 3);
+const alternative = model.alternatives[0];
+---
+
+<section class="verdict" aria-labelledby="verdict-title">
+  <header class="verdict__header">
+    <span>Schnellentscheidung</span>
+    <h2 id="verdict-title">Lohnt sich {model.name}?</h2>
+  </header>
+
+  <div class="verdict__grid">
+    {buyIf.length > 0 && (
+      <article class="verdict__card is-positive">
+        <h3>Ja, wenn …</h3>
+        <ul>{buyIf.map((item) => <li>{item}</li>)}</ul>
+      </article>
+    )}
+
+    {avoidIf.length > 0 && (
+      <article class="verdict__card is-negative">
+        <h3>Nein, wenn …</h3>
+        <ul>{avoidIf.map((item) => <li>{item}</li>)}</ul>
+      </article>
+    )}
+
+    {alternative && (
+      <article class="verdict__card is-alternative">
+        <h3>Dann lieber …</h3>
+        <p>{alternative.reason}</p>
+        <a href={alternative.href}>{alternative.title} ansehen</a>
+      </article>
+    )}
+  </div>
+</section>
+
+<style>
+  .verdict {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 20px;
+    background: var(--px2-surface);
+    box-shadow: var(--px2-shadow);
+  }
+
+  .verdict__header span {
+    color: var(--px2-green-strong);
+    font-size: .75rem;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+
+  .verdict__header h2 {
+    margin: 5px 0 0;
+    font-size: clamp(1.45rem, 7vw, 2.15rem);
+    letter-spacing: -.025em;
+  }
+
+  .verdict__grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .verdict__card {
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 15px;
+    background: var(--px2-surface-raised);
+  }
+
+  .verdict__card.is-positive {
+    background: var(--px2-green-soft);
+  }
+
+  .verdict__card.is-negative {
+    background: var(--px2-red-soft);
+  }
+
+  .verdict__card h3 {
+    margin: 0 0 9px;
+    font-size: 1rem;
+  }
+
+  .verdict__card ul {
+    display: grid;
+    gap: 7px;
+    margin: 0;
+    padding-left: 1.15rem;
+  }
+
+  .verdict__card li,
+  .verdict__card p {
+    color: var(--px2-text);
+    font-size: .9rem;
+    line-height: 1.48;
+  }
+
+  .verdict__card p {
+    margin: 0 0 10px;
+  }
+
+  .verdict__card a {
+    color: var(--px2-green-strong);
+    font-weight: 850;
+    text-underline-offset: 3px;
+  }
+
+  @media (min-width: 760px) {
+    .verdict {
+      padding: 22px;
+    }
+
+    .verdict__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

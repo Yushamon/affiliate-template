@@ -205,6 +205,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "App-Steuerung"
+    value: "Ja, WOPET Life"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Kapazität"
+    value: "4 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "1 bis 8 Portionen pro Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgröße"
+    value: "Etwa 10 g pro Portion"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Stromversorgung"
+    value: "USB C Netzteil mit Batterie Backup"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.
 

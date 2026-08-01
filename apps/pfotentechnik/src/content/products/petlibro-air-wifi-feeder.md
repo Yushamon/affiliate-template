@@ -383,6 +383,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Krokettengröße"
+    value: "2 bis 15 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Kapazität"
+    value: "2 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionen je Mahlzeit"
+    value: "1 bis 16 Portionseinheiten"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Volumen je Portion"
+    value: "10,4 ml beziehungsweise 1/24 Cup"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionsgewicht"
+    value: "nicht fest; abhängig von Form, Größe und Dichte des Futters"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "App"
+    value: "PETLIBRO-App, nicht PETLIBRO Lite"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
 ---
 Der PETLIBRO Air WiFi Feeder ist ein kompakter App-Futterautomat mit zwei Litern Vorrat und einem fest eingebauten 5.200-mAh-Akku.
 

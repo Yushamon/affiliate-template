@@ -202,6 +202,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "2 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Lautstärke"
+    value: "Herstellerangabe bis 25 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Filter"
+    value: "mehrstufig mit Aktivkohle und Ionenaustauscher"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Ersatzfilter"
+    value: "Filter Unit 3.0; Herstellerempfehlung alle 4 Wochen"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Akku"
+    value: "Nein; dauerhafter Netzbetrieb erforderlich"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Gewicht"
+    value: "0,8 kg"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.
 

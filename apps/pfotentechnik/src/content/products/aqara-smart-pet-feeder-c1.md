@@ -248,6 +248,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "4 Liter / etwa 1,7 kg"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Krokettengröße"
+    value: "2 bis 12 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Portionierung"
+    value: "Etwa 6 bis 10 g je Ausgabeeinheit, futterabhängig"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Stromversorgung"
+    value: "USB-A, 5 V/1 A; optional 3 LR20/D-Batterien als Backup"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Gewicht"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der Aqara Smart Pet Feeder C1 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), richtet sich jedoch vor allem an Nutzer des Aqara-Ökosystems. Statt möglichst vieler Komfortfunktionen stehen lokale Zeitpläne, Zigbee-Automationen und ein Batterie-Backup im Mittelpunkt. Wer bereits Aqara-Komponenten nutzt, erhält dadurch einen besonders zuverlässigen Futterautomaten auch dann, wenn die Internetverbindung ausfällt.
 

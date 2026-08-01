@@ -1,11 +1,15 @@
 ---
 import type { ProductExperienceModel } from "../../domain/productExperience/model";
 import ProductHero2 from "./ProductHero2.astro";
-import ProductDecisionAssistant from "./ProductDecisionAssistant.astro";
+import ProductVerdict2 from "./ProductVerdict2.astro";
+import ProductEvidence2 from "./ProductEvidence2.astro";
+import ProductCommunityInsights2 from "./ProductCommunityInsights2.astro";
+import ProductDecisionFacts2 from "./ProductDecisionFacts2.astro";
+import ProductPurchaseMistakes2 from "./ProductPurchaseMistakes2.astro";
 import ProductEverydayTimeline from "./ProductEverydayTimeline.astro";
-import ProductAlternatives2 from "./ProductAlternatives2.astro";
-import ProductTrust2 from "./ProductTrust2.astro";
+import ProductCategoryFitAssistant from "./ProductCategoryFitAssistant.astro";
 import ProductDetails2 from "./ProductDetails2.astro";
+import ProductAlternatives2 from "./ProductAlternatives2.astro";
 
 interface Props {
   model: ProductExperienceModel;
@@ -14,16 +18,24 @@ interface Props {
 const { model } = Astro.props;
 ---
 
-<article class="px2" data-product-experience="2.0" data-product-layout="cards-restored">
+<article class="px2" data-product-experience="2.1" data-product-layout="decision-first">
   <ProductHero2 model={model} />
-  <ProductDecisionAssistant
-    profile={model.decisionProfile}
+  <ProductVerdict2 model={model} />
+  <ProductEvidence2 evidence={model.evidenceSummary} updatedAt={model.updatedAt} />
+  <ProductCommunityInsights2 insights={model.communityInsights} />
+  <ProductDecisionFacts2 facts={model.decisionFacts} />
+  <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
+  <ProductEverydayTimeline
+    items={model.timeline}
+    heading={model.usageHeading}
+    eyebrow={model.usageEyebrow}
+  />
+  <ProductCategoryFitAssistant
+    profile={model.categoryFitProfile}
     alternatives={model.alternatives}
   />
-  <ProductEverydayTimeline items={model.timeline} />
   <ProductDetails2 model={model} />
-  <ProductAlternatives2 alternatives={model.alternatives} />
-  <ProductTrust2 cards={model.trustCards} updatedAt={model.updatedAt} />
+  <ProductAlternatives2 alternatives={model.alternatives.slice(0, 3)} />
 </article>
 
 <style>
@@ -37,15 +49,15 @@ const { model } = Astro.props;
     --px2-green: #2e7d32;
     --px2-green-strong: #1f6426;
     --px2-green-soft: #e2f3e5;
-    --px2-amber: #9a6700;
+    --px2-amber: #8a5b00;
     --px2-amber-soft: #fff4d8;
-    --px2-red: #b52d25;
+    --px2-red: #a92822;
     --px2-red-soft: #fee9e7;
     --px2-indigo: #4f46e5;
-    --px2-shadow: 0 18px 50px rgba(31, 64, 39, .09);
+    --px2-shadow: 0 14px 42px rgba(31, 64, 39, .08);
     --px2-on-accent: #fff;
     display: grid;
-    gap: clamp(22px, 4vw, 42px);
+    gap: clamp(20px, 3vw, 36px);
     width: 100%;
     min-width: 0;
     color: var(--px2-text);
@@ -73,17 +85,13 @@ const { model } = Astro.props;
     --px2-on-accent: #07120a;
   }
 
-  .px2 :global(*) { box-sizing: border-box; }
-
-  .px2 :global(h2),
-  .px2 :global(h3),
-  .px2 :global(p),
-  .px2 :global(ul),
-  .px2 :global(dl) {
-    margin-top: 0;
+  .px2 :global(*) {
+    box-sizing: border-box;
   }
 
   @media (max-width: 720px) {
-    .px2 { gap: 20px; }
+    .px2 {
+      gap: 18px;
+    }
   }
 </style>

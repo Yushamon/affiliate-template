@@ -245,6 +245,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "5 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "App"
+    value: "PETLIBRO-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "WLAN"
+    value: "WLAN-Verbindung erforderlich"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Stromversorgung"
+    value: "Netzbetrieb mit Batterie-Backup"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Gewicht"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.
 

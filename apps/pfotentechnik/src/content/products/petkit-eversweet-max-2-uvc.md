@@ -226,6 +226,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "BPA-freies ABS und Edelstahl 304"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Stromversorgung"
+    value: "USB 5 V/1 A und integrierter Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 83 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "PETKIT App über Bluetooth"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Lautstärke"
+    value: "Herstellerangabe bis 26 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
 ---
 Der PETKIT Eversweet Max 2 UVC gehört zu den technisch umfangreicheren kabellosen Trinkbrunnen. Seine Stärke liegt weniger in einem einzelnen Merkmal als in der Kombination aus Akku, Edelstahl-Trinkfläche, UVC-Pumpe und gut zerlegbarer Bauform.
 

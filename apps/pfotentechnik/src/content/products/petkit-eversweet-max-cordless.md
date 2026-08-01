@@ -221,6 +221,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "BPA-freies ABS und Edelstahl 304"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Stromversorgung"
+    value: "USB-Kabel und integrierter Lithium-Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 83 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App"
+    value: "PETKIT-App über Bluetooth"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Lautstärke"
+    value: "Herstellerangabe etwa 26 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
 ---
 Der Eversweet Max Cordless ist auf flexible Platzierung ausgelegt. Der Akku trennt den Brunnen vom dauerhaften Steckdosenplatz, während die App Trinkhäufigkeit und -dauer protokolliert.
 

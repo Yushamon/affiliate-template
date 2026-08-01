@@ -1,0 +1,155 @@
+---
+interface EvidenceItem {
+  label: string;
+  detail?: string;
+}
+
+interface EvidenceSummary {
+  items: EvidenceItem[];
+  handsOn?: {
+    date?: string;
+    duration?: string;
+    scope?: string[];
+  } | null;
+}
+
+interface Props {
+  evidence?: EvidenceSummary;
+  updatedAt?: string;
+}
+
+const { evidence, updatedAt } = Astro.props;
+const items = evidence?.items ?? [];
+const formattedDate = updatedAt
+  ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt))
+  : null;
+const show = items.length > 0 || evidence?.handsOn;
+---
+
+{show && (
+  <section class="evidence" aria-labelledby="evidence-title">
+    <header>
+      <span>Grundlage der Bewertung</span>
+      <h2 id="evidence-title">Darauf stützt sich unsere Einordnung</h2>
+      {formattedDate && <p>Inhaltlich geprüft am {formattedDate}</p>}
+    </header>
+
+    <ul class="evidence__items">
+      {items.map((item) => (
+        <li>
+          <span aria-hidden="true">✓</span>
+          <div>
+            <strong>{item.label}</strong>
+            {item.detail && <small>{item.detail}</small>}
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    {evidence?.handsOn && (
+      <aside class="evidence__hands-on">
+        <strong>Eigener Praxistest durchgeführt</strong>
+        {evidence.handsOn.duration && <span>Testdauer: {evidence.handsOn.duration}</span>}
+        {evidence.handsOn.scope?.length > 0 && <span>{evidence.handsOn.scope.join(" · ")}</span>}
+      </aside>
+    )}
+  </section>
+)}
+
+<style>
+  .evidence {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 20px;
+    background: var(--px2-surface-soft);
+  }
+
+  .evidence header span {
+    color: var(--px2-green-strong);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+
+  .evidence h2 {
+    margin: 5px 0 3px;
+    font-size: clamp(1.35rem, 6vw, 1.95rem);
+  }
+
+  .evidence header p {
+    margin: 0;
+    color: var(--px2-muted);
+    font-size: .84rem;
+  }
+
+  .evidence__items {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .evidence__items li {
+    display: grid;
+    grid-template-columns: 1.4rem minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+    padding: 11px 12px;
+    border: 1px solid var(--px2-border);
+    border-radius: 13px;
+    background: var(--px2-surface);
+  }
+
+  .evidence__items li > span {
+    color: var(--px2-green-strong);
+    font-weight: 950;
+  }
+
+  .evidence__items div {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .evidence__items strong {
+    font-size: .9rem;
+  }
+
+  .evidence__items small {
+    color: var(--px2-muted);
+    line-height: 1.4;
+  }
+
+  .evidence__hands-on {
+    display: grid;
+    gap: 3px;
+    padding: 12px;
+    border-radius: 13px;
+    background: var(--px2-green-soft);
+  }
+
+  .evidence__hands-on span {
+    color: var(--px2-muted);
+    font-size: .84rem;
+  }
+
+  @media (min-width: 720px) {
+    .evidence {
+      grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr);
+      padding: 22px;
+      align-items: start;
+    }
+
+    .evidence__items {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .evidence__hands-on {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

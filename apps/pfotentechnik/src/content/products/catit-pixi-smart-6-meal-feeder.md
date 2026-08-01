@@ -307,6 +307,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "6 Fächer mit je 170 ml"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "App"
+    value: "Catit PIXI App, kostenlos und ohne Abonnement"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Stromversorgung"
+    value: "USB-C-Netzbetrieb, DC 5 V/1 A mit Adapter"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie-Backup"
+    value: "4 C/LR14-Batterien, nicht enthalten; Herstellerangabe durchschnittlich etwa 4 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+  - label: "Gewicht"
+    value: "1,204 kg leer; 1,708 kg mit Kühlakkus"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der Catit PIXI Smart 6-Meal Feeder ist kein Vorratsautomat, der Futter grammweise aus einem Behälter ausgibt. Stattdessen werden sechs Fächer vorab von Hand befüllt. Das ist bei Nassfutter, Medikamentengaben oder genau abgewogenen Portionen oft sinnvoller als ein klassischer Trockenfutterspender.
 

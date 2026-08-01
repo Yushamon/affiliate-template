@@ -405,6 +405,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Abo"
+    value: "27 Monate Tracking enthalten; danach kostenpflichtiger PAJ-Tarif erforderlich"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "WLAN"
+    value: "2,4-GHz-WLAN kann als Energiesparzone eingerichtet werden"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akku"
+    value: "integrierter 700-mAh-Lithium-Polymer-Akku mit 3,7 V und 2,59 Wh"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit Energiesparmodus"
+    value: "bis zu 10 Tage laut Hersteller"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit gemischte Nutzung"
+    value: "aktuelle Detailangabe 4 bis 6 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit kontinuierliches Tracking"
+    value: "aktuelle Detailangabe etwa 1 bis 2 Tage; FAQ nennt teils 1 bis 3 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 Der PAJ PET Finder 4G Mini ist ein kompakter Mobilfunktracker, der seine Position über eine integrierte SIM an die FINDER-Portal-App und das Webportal überträgt.
 

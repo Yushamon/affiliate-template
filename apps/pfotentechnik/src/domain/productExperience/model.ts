@@ -3,6 +3,7 @@ import type { ProductPriceInsight } from "../price/types.ts";
 import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
 import type { ProductDecisionProfile } from "./decisionEngine.ts";
 import { uniqueTextItems } from "./contentLists.ts";
+import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
@@ -409,6 +410,104 @@ export const buildProductExperienceModel = ({
   const editorial = data.editorial ?? {};
   const evidence = list<string>(editorial.evidence).map((item) => evidenceLabels[item] ?? item);
   const normalizedCategory = categoryKey(currentEntry);
+
+
+
+  const categoryKind = normalizedCategory.includes("futter")
+    ? "feeder"
+    : normalizedCategory.includes("trink") || normalizedCategory.includes("brunnen")
+      ? "fountain"
+      : normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")
+        ? "tracker"
+        : normalizedCategory.includes("katzenklappe") || normalizedCategory.includes("cat flap")
+          ? "cat-flap"
+          : "generic";
+  const specsText = normalize(list<any>(data.specs).map((item) => `${text(item?.label)} ${text(item?.value)}`).join(" "));
+  const categoryFitProfile = {
+    productName: text(data.title, "Dieses Produkt"),
+    category: categoryKind,
+    animals: decisionProfileFor(data, price).animals,
+    petSizes: decisionProfileFor(data, price).petSizes,
+    foodTypes: decisionProfileFor(data, price).foodTypes,
+    supportsMultiplePets: decisionProfileFor(data, price).supportsMultiplePets,
+    hasWifi: decisionProfileFor(data, price).hasWifi,
+    worksOffline: decisionProfileFor(data, price).worksOffline,
+    hasCamera: decisionProfileFor(data, price).hasCamera,
+    hasBattery: booleanFromText(specsText, ["akku", "batterie", "kabellos"], ["nur netzbetrieb", "kein akku"]),
+    material: specsText,
+    subscriptionRequired: booleanFromText(specsText, ["abo erforderlich", "abonnement", "monatliche kosten"], ["ohne abo", "kein abo"]),
+    suitableForOutdoor: booleanFromText(specsText, ["wasserdicht", "wasserfest", "ip67", "ip68", "outdoor"], ["nur innen"]),
+    supportsChip: booleanFromText(specsText, ["mikrochip", "chip erkennung", "rfid"], ["ohne chip"]),
+    hasTimer: booleanFromText(specsText, ["timer", "zeitsteuerung", "sperrzeiten"], ["ohne timer"]),
+    installTypes: [
+      specsText.includes("tuer") || specsText.includes("tur") ? "door" : "",
+      specsText.includes("wand") ? "wall" : "",
+      specsText.includes("glas") ? "glass" : ""
+    ].filter(Boolean)
+  };
+
+  const decisionFacts = buildDecisionFacts(data, list<any>(data.specs)
+    .map((item) => ({ label: text(item?.label), value: text(item?.value) }))
+    .filter((item) => item.label && item.value));
+
+  const purchaseMistakes = list<any>(data.purchaseMistakes)
+    .map((item) => {
+      const title = text(item?.title);
+      const reason = text(item?.reason);
+      const betterChoiceLabel = text(item?.betterChoice?.label);
+      const betterChoiceHref = text(item?.betterChoice?.href);
+      if (!title || !reason) return null;
+      return {
+        title,
+        reason,
+        betterChoice: betterChoiceLabel && betterChoiceHref
+          ? { label: betterChoiceLabel, href: betterChoiceHref }
+          : null
+      };
+    })
+    .filter(Boolean);
+
+  const rawCommunity = data.communityInsights ?? {};
+  const normalizeCommunityInsight = (item: any) => {
+    if (typeof item === "string") return { text: item, confidence: "medium" as const };
+    const insightText = text(item?.text ?? item?.label ?? item?.title);
+    if (!insightText) return null;
+    const confidence = ["high", "medium", "low"].includes(item?.confidence)
+      ? item.confidence
+      : "medium";
+    const sourceCount = Number(item?.sourceCount);
+    return {
+      text: insightText,
+      confidence,
+      sourceCount: Number.isFinite(sourceCount) && sourceCount > 0 ? sourceCount : undefined,
+      assessment: text(item?.assessment)
+    };
+  };
+  const communityInsights = {
+    positives: list<any>(rawCommunity.positives).map(normalizeCommunityInsight).filter(Boolean),
+    negatives: list<any>(rawCommunity.negatives).map(normalizeCommunityInsight).filter(Boolean),
+    editorialAssessment: text(rawCommunity.editorialAssessment)
+  };
+  const evidenceItems = list<string>(editorial.evidence)
+    .map((item) => ({ label: evidenceLabels[item] ?? item }))
+    .filter((item) => item.label);
+  const evidenceSummary = {
+    items: evidenceItems,
+    handsOn: editorial.testedHandsOn
+      ? {
+          date: text(editorial.testedAt),
+          duration: text(editorial.testDuration),
+          scope: list<string>(editorial.testScope)
+        }
+      : null
+  };
+  const usageHeading = editorial.testedHandsOn
+    ? "So hat sich das Produkt in der Nutzung gezeigt"
+    : "So funktioniert die Nutzung laut Dokumentation und Quellen";
+  const usageEyebrow = editorial.testedHandsOn
+    ? "Eigener Praxistest"
+    : "Nutzung verständlich eingeordnet";
+
   const healthNote = normalizedCategory.includes("trinkbrunnen")
     ? "Ein Trinkbrunnen kann die Wasseraufnahme erleichtern, ersetzt aber keine Beobachtung. Deutlich verändertes Trinkverhalten sollte unabhängig vom Gerät eingeordnet werden."
     : normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")
@@ -455,6 +554,13 @@ export const buildProductExperienceModel = ({
     decisionProfile: decisionProfileFor(data, price),
     alternatives,
     timeline: timelineFor(data),
+    categoryFitProfile,
+    decisionFacts,
+    purchaseMistakes,
+    evidenceSummary,
+    communityInsights,
+    usageHeading,
+    usageEyebrow,
     trustCards: [
       {
         title: "Warum empfehlen wir dieses Produkt?",

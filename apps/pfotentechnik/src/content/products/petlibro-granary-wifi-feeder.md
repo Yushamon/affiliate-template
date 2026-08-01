@@ -261,6 +261,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Krokettengröße"
+    value: "2 bis 15 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Kapazität"
+    value: "5 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "1 bis 50 Portionen pro Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgröße"
+    value: "20 ml, laut Hersteller ungefähr 10 g"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "App"
+    value: "PETLIBRO-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 

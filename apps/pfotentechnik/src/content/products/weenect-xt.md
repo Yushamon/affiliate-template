@@ -440,6 +440,25 @@ metadata:
   version: "4.1.0"
   normalizedAt: "2026-07-26"
   policy: "Nur aktuelle Hersteller-, Hilfe-Center- und redaktionell eingeordnete Daten; keine geschätzten technischen Werte"
+decisionFacts:
+  - label: "Abo"
+    value: "Erforderlich; eigenes Abonnement pro Tracker"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "Abo-Modelle"
+    value: "Monatlich sowie Prepaid-Laufzeiten über ein, zwei oder fünf Jahre"
+    consequence: "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre."
+  - label: "App"
+    value: "Weenect App für iOS und Android sowie Web-App"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "WLAN"
+    value: "WLAN-Energiesparzonen; kein eigenständiger Ortungsweg"
+    consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+  - label: "Akkukapazität"
+    value: "1.250 mAh bei 3,8 V; 4,75 Wh"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Akkulaufzeit"
+    value: "Bis zu 3 Wochen mit Energiesparzone; ungefähr 1 Woche bei kontinuierlichem Tracking"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 
 Der **Weenect XT** ist ein großer, robuster GPS-Tracker für Hunde. Seine Schwerpunkte sind nicht Miniaturisierung, sondern Akkureserve, Empfang, Sichtbarkeit und Befestigung bei längeren Outdoor-Einsätzen.

@@ -202,6 +202,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3,5 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "Edelstahl"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Lautstärke"
+    value: "Herstellerangabe unter 30 dB"
+    consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+  - label: "Akku"
+    value: "5000 mAh; Herstellerangabe bis zu 60 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Filter"
+    value: "5-stufige Wasserfilterung"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Ersatzfilter"
+    value: "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.
 

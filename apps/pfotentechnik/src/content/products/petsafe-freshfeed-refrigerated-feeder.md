@@ -229,6 +229,19 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "4,5 Cups gesamt; bis 5 fl oz je Fach"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "Netzteil"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Batterie"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Gewicht"
+    value: "Nicht vom Hersteller ausgewiesen"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 Der PetSafe FreshFeed ist das interessanteste der drei Modelle, weil er eine echte Marktlücke schließt. Im Gegensatz zu Drehtellern mit Eisakku soll er Nass- und Frischfutter aktiv auf Kühlschranktemperatur halten. Das ist praktisch, macht den Automaten aber vollständig von einer stabilen Stromversorgung abhängig.
 

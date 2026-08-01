@@ -282,6 +282,25 @@ comparisonData:
     score: 86
     assessment: "manufacturer-data"
     productStatus: "unknown"
+decisionFacts:
+  - label: "Kapazität"
+    value: "5 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionierung"
+    value: "Geplante Mahlzeiten und Smart Refill; ausgegebene und verbleibende Futtermenge werden laut Hersteller über die integrierte Waage erfasst"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Krokettengröße"
+    value: "2 bis 18 mm; keine übergroßen oder unregelmäßigen Formen"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Stromversorgung"
+    value: "Netzbetrieb und wiederaufladbarer Akku"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Material"
+    value: "Gehäuse aus BPA-freiem ABS und Silikon; Edelstahlnapf"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Abmessungen"
+    value: "357 × 180 × 356 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
 ---
 
 Der **PETLIBRO Granary 2 Vision** versucht, eine Schwäche klassischer Futterautomaten zu lösen: Viele Geräte wissen nur, dass der Motor eine Portion ausgegeben hat. Sie wissen nicht, wie viel Futter im Napf blieb und wie lange die Katze tatsächlich fraß.

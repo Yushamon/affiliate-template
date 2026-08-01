@@ -257,6 +257,25 @@ comparisonData:
     score: 85
     assessment: "manufacturer-data"
     productStatus: "active"
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Material"
+    value: "ABS-Kunststoff und Edelstahl"
+    consequence: "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen."
+  - label: "Abmessungen"
+    value: "246 × 200 × 198 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Gewicht"
+    value: "etwa 1,77 kg"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "Stromversorgung"
+    value: "ausschließlich Netzbetrieb"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "Nein"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 
 Der vorhandene Produkttitel **PETLIBRO Dockstream 2 Smart** bezeichnet künftig eindeutig die kabelgebundene Variante **PLWF106**. Die bisherige Fassung vermischte Netz- und Akkuversion. Das führte dazu, dass Werte wie Akku, Gewicht und Wasserfluss gleichzeitig unterschiedlich beschrieben wurden.

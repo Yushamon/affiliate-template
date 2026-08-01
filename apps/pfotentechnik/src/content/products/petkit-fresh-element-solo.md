@@ -374,6 +374,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Krokettengröße Trockenfutter"
+    value: "höchstens 12 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Krokettengröße gefriergetrocknet"
+    value: "aktuelle Produktseite nennt höchstens 9 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Kapazität"
+    value: "3 Liter beziehungsweise 12 Cups"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Gewicht des Vorrats"
+    value: "Herstellerschätzung etwa 1,33 kg; abhängig von der Schüttdichte"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "Portionen je Mahlzeit"
+    value: "1 bis 5 Portionseinheiten"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgröße"
+    value: "Herstellerangabe ungefähr 10 g beziehungsweise 1/12 Cup je Einheit"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
 ---
 Der PETKIT Fresh Element Solo ist ein schlanker 3-Liter-Futterautomat für eine Katze oder einen kleinen Hund. Er konzentriert sich auf App-Zeitpläne, Statusmeldungen und eine kompakte Bauform, ohne Kamera oder Tiererkennung.
 

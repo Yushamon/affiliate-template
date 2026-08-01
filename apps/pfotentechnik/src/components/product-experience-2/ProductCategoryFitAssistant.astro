@@ -1,0 +1,285 @@
+---
+import type { FitProfile } from "../../domain/productExperience/categoryFitEngine";
+import { questionsForCategory } from "../../domain/productExperience/categoryFitEngine";
+
+interface Alternative {
+  title: string;
+  href: string;
+  reason?: string;
+  matchKeys?: string[];
+}
+
+interface Props {
+  profile: FitProfile;
+  alternatives?: Alternative[];
+}
+
+const { profile, alternatives = [] } = Astro.props;
+const questions = questionsForCategory(profile.category);
+const serializedProfile = JSON.stringify(profile).replaceAll("<", "\\u003c");
+const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u003c");
+---
+
+<section class="category-fit" aria-labelledby="category-fit-title" data-category-fit>
+  <header>
+    <span>Persönlicher Produkt-Fit</span>
+    <h2 id="category-fit-title">Passt dieses Produkt zu deinem Alltag?</h2>
+    <p>{questions.length} kurze Angaben. Das Ergebnis wird direkt auf der Seite berechnet.</p>
+  </header>
+
+  <form data-category-fit-form>
+    {questions.map((question) => (
+      <fieldset>
+        <legend>{question.label}</legend>
+        <div>
+          {question.options.map((option) => (
+            <label>
+              <input type="radio" name={question.key} value={option.value} />
+              <span>{option.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    ))}
+  </form>
+
+  <aside data-category-fit-result data-verdict="open" aria-live="polite">
+    <div><strong data-fit-score>–</strong><span>von 100</span></div>
+    <section>
+      <h3 data-fit-headline>Beantworte die Fragen für eine persönliche Einordnung.</h3>
+      <ul data-fit-reasons></ul>
+      <a data-fit-alternative hidden></a>
+    </section>
+  </aside>
+
+  <script type="application/json" data-fit-profile set:html={serializedProfile}></script>
+  <script type="application/json" data-fit-alternatives set:html={serializedAlternatives}></script>
+</section>
+
+<script>
+  import { evaluateCategoryFit } from "../../domain/productExperience/categoryFitEngine";
+
+  document.querySelectorAll<HTMLElement>("[data-category-fit]").forEach((root) => {
+    const form = root.querySelector<HTMLFormElement>("[data-category-fit-form]");
+    const result = root.querySelector<HTMLElement>("[data-category-fit-result]");
+    const profileNode = root.querySelector<HTMLScriptElement>("[data-fit-profile]");
+    const alternativesNode = root.querySelector<HTMLScriptElement>("[data-fit-alternatives]");
+    if (!form || !result || !profileNode || !alternativesNode) return;
+
+    const profile = JSON.parse(profileNode.textContent || "{}");
+    const alternatives = JSON.parse(alternativesNode.textContent || "[]");
+    const score = root.querySelector<HTMLElement>("[data-fit-score]");
+    const headline = root.querySelector<HTMLElement>("[data-fit-headline]");
+    const reasons = root.querySelector<HTMLUListElement>("[data-fit-reasons]");
+    const alternative = root.querySelector<HTMLAnchorElement>("[data-fit-alternative]");
+
+    const render = () => {
+      const data = new FormData(form);
+      const answers = Object.fromEntries([...data.entries()].map(([key, value]) => [key, String(value)]));
+      const evaluation = evaluateCategoryFit(profile, answers);
+
+      result.dataset.verdict = evaluation.verdict;
+      if (score) score.textContent = evaluation.score ? String(evaluation.score) : "–";
+      if (headline) headline.textContent = evaluation.headline;
+
+      if (reasons) {
+        reasons.innerHTML = "";
+        for (const item of evaluation.reasons.slice(0, 4)) {
+          const li = document.createElement("li");
+          li.dataset.kind = item.kind;
+          li.textContent = `${item.kind === "positive" ? "✓" : item.kind === "negative" ? "×" : "–"} ${item.text}`;
+          reasons.append(li);
+        }
+      }
+
+      if (alternative) {
+        const match = alternatives.find((item: any) =>
+          Array.isArray(item.matchKeys) &&
+          item.matchKeys.some((key: string) => evaluation.mismatchKeys.includes(key))
+        ) ?? alternatives[0];
+
+        if (evaluation.verdict === "weak" && match) {
+          alternative.hidden = false;
+          alternative.href = match.href;
+          alternative.textContent = `${match.title} als Alternative prüfen`;
+        } else {
+          alternative.hidden = true;
+          alternative.removeAttribute("href");
+          alternative.textContent = "";
+        }
+      }
+    };
+
+    form.addEventListener("change", render);
+  });
+</script>
+
+<style>
+  .category-fit {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 20px;
+    background: var(--px2-surface);
+    box-shadow: var(--px2-shadow);
+  }
+
+  .category-fit header > span {
+    color: var(--px2-green-strong);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+
+  .category-fit h2 {
+    margin: 5px 0 5px;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+
+  .category-fit header p {
+    margin: 0;
+    color: var(--px2-muted);
+    font-size: .88rem;
+  }
+
+  .category-fit form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .category-fit fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 13px;
+    border: 1px solid var(--px2-border);
+    border-radius: 14px;
+    background: var(--px2-surface-raised);
+  }
+
+  .category-fit legend {
+    padding: 0 4px;
+    font-size: .88rem;
+    font-weight: 850;
+  }
+
+  .category-fit fieldset > div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    margin-top: 8px;
+  }
+
+  .category-fit label {
+    display: grid;
+    min-width: 0;
+  }
+
+  .category-fit label span {
+    display: grid;
+    min-height: 44px;
+    place-items: center;
+    padding: 8px;
+    border: 1px solid var(--px2-border);
+    border-radius: 11px;
+    background: var(--px2-surface);
+    color: var(--px2-text);
+    font-size: .82rem;
+    font-weight: 750;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .category-fit input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .category-fit input:checked + span {
+    border-color: var(--px2-green);
+    background: var(--px2-green-soft);
+    color: var(--px2-green-strong);
+  }
+
+  .category-fit input:focus-visible + span {
+    outline: 3px solid var(--px2-indigo);
+    outline-offset: 2px;
+  }
+
+  .category-fit aside {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 13px;
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 15px;
+    background: var(--px2-surface-soft);
+  }
+
+  .category-fit aside > div {
+    display: grid;
+    align-content: start;
+    text-align: center;
+  }
+
+  .category-fit aside > div strong {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .category-fit aside > div span {
+    color: var(--px2-muted);
+    font-size: .7rem;
+  }
+
+  .category-fit aside h3 {
+    margin: 0 0 7px;
+    font-size: 1rem;
+  }
+
+  .category-fit ul {
+    display: grid;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-fit li {
+    color: var(--px2-muted);
+    font-size: .82rem;
+    line-height: 1.4;
+  }
+
+  .category-fit li[data-kind="positive"] { color: var(--px2-green-strong); }
+  .category-fit li[data-kind="negative"] { color: var(--px2-red); }
+
+  .category-fit aside a {
+    display: inline-flex;
+    margin-top: 9px;
+    color: var(--px2-green-strong);
+    font-weight: 850;
+  }
+
+  @media (min-width: 720px) {
+    .category-fit {
+      padding: 22px;
+    }
+
+    .category-fit form {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .category-fit fieldset > div {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1040px) {
+    .category-fit form {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

@@ -1,0 +1,120 @@
+---
+interface DecisionFact {
+  label: string;
+  value: string;
+  consequence: string;
+  source: "product-data" | "technical-specification" | "editorial";
+}
+
+interface Props {
+  facts?: DecisionFact[];
+}
+
+const { facts = [] } = Astro.props;
+---
+
+{facts.length > 0 && (
+  <section class="decision-facts" aria-labelledby="decision-facts-title">
+    <header>
+      <span>Eigenschaft und Konsequenz</span>
+      <h2 id="decision-facts-title">Was die technischen Daten im Alltag bedeuten</h2>
+    </header>
+
+    <dl>
+      {facts.map((fact) => (
+        <div>
+          <dt>
+            <span>{fact.label}</span>
+            <strong>{fact.value}</strong>
+          </dt>
+          <dd>{fact.consequence}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}
+
+<style>
+  .decision-facts {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--px2-border);
+    border-radius: 20px;
+    background: var(--px2-surface);
+    box-shadow: var(--px2-shadow);
+  }
+
+  .decision-facts header span {
+    color: var(--px2-green-strong);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+
+  .decision-facts h2 {
+    margin: 5px 0 0;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    letter-spacing: -.025em;
+  }
+
+  .decision-facts dl {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .decision-facts dl > div {
+    display: grid;
+    gap: 9px;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid var(--px2-border);
+    border-radius: 15px;
+    background: var(--px2-surface-raised);
+  }
+
+  .decision-facts dt {
+    display: grid;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .decision-facts dt span {
+    color: var(--px2-muted);
+    font-size: .73rem;
+    font-weight: 850;
+    letter-spacing: .045em;
+    text-transform: uppercase;
+  }
+
+  .decision-facts dt strong {
+    color: var(--px2-text);
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .decision-facts dd {
+    margin: 0;
+    color: var(--px2-muted);
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 720px) {
+    .decision-facts {
+      padding: 22px;
+    }
+
+    .decision-facts dl {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1040px) {
+    .decision-facts dl {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

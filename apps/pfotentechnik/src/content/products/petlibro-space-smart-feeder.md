@@ -303,6 +303,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Portionierung"
+    value: "Volumetrisch; etwa 20 ml je Einheit, bis zu 50 Einheiten pro Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Kapazität"
+    value: "8 Liter laut PLAF107-Handbuch"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Krokettengröße"
+    value: "2 bis 18 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Portionseinheit"
+    value: "ca. 20 ml je Portion"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Maximale Portionszahl"
+    value: "bis zu 50 Portionen je Mahlzeit"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgewicht"
+    value: "herstellerseitig ungefähr 10 g, abhängig von Form und Dichte des Futters"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung
 

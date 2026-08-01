@@ -315,6 +315,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter beziehungsweise etwa 12 Cups laut Hersteller"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Portionen je Mahlzeit"
+    value: "bis zu 20 Portionseinheiten"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Portionsgröße"
+    value: "laut Hersteller ungefähr 7 bis 9 g je Einheit; abhängig vom Futter"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "App"
+    value: "Nein, bei der hier bewerteten Basisversion"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "WLAN"
+    value: "Nein, bei der hier bewerteten Basisversion"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "Kamera"
+    value: "Nein"
+    consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
 ---
 Der IMIPAW 3L Automatic Cat Feeder ist ein einfacher Trockenfutterautomat für Haushalte, die keinen Fernzugriff benötigen. Der Fütterungsplan wird direkt am LCD-Bedienfeld gespeichert. Dadurch funktioniert das Gerät ohne WLAN, Benutzerkonto oder Herstellercloud.
 

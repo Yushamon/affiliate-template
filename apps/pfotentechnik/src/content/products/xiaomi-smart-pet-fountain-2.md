@@ -233,6 +233,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "3 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Stromversorgung"
+    value: "integrierter Akku, Laden mit 5 V/2 A"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akku"
+    value: "4000 mAh"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Akkulaufzeit"
+    value: "Herstellerangabe bis 100 Tage"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "Filter"
+    value: "vierstufig mit PP-Filter, Aktivkohle, Ionenaustauschharz und bakteriostatischer Baumwolle"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+  - label: "Filterwechsel"
+    value: "Herstellerempfehlung monatlich"
+    consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 ---
 Der Xiaomi Smart Pet Fountain 2 ist auf kabellose Platzierung und App-Unterstützung ausgelegt. Drei Betriebsarten erlauben unterschiedliche Kompromisse zwischen dauerhaftem Wasserfluss und Akkulaufzeit.
 

@@ -284,6 +284,19 @@ comparisonData:
     score: 83
     assessment: manufacturer-data
     productStatus: unknown
+decisionFacts:
+  - label: "Abmessungen"
+    value: "57,5 × 59,05 × 16,5 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Gewicht"
+    value: "25 g"
+    consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+  - label: "Kamera"
+    value: "integriert"
+    consequence: "Du kannst zusätzlich kontrollieren, was am Gerät oder beim Tier tatsächlich passiert."
+  - label: "Stromversorgung"
+    value: "USB-C-Netzteil mit mindestens 2 A und geeignetes USB-C-Kabel erforderlich"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
 
 Der **ZeroMOUSE 2.0** konkurriert nicht direkt mit einer normalen Katzenklappe. Eine Mikrochip-Klappe beantwortet: „Darf diese Katze hinein?“ ZeroMOUSE ergänzt die zweite Frage: **„Trägt sie Beute im Maul?“**

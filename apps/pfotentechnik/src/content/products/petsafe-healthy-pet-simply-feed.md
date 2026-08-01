@@ -234,6 +234,25 @@ metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
   policy: Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte
+decisionFacts:
+  - label: "Kapazität"
+    value: "24 Cups / etwa 5,7 Liter"
+    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+  - label: "Krokettengröße"
+    value: "Bis 3/4 Zoll / etwa 19 mm"
+    consequence: "Die Maße müssen sowohl zum verfügbaren Platz als auch zur Körpergröße des Tieres passen."
+  - label: "Portionierung"
+    value: "1/8 bis 4 Cups"
+    consequence: "Wichtiger als die Zahl der Stufen ist, wie gleichmäßig die tatsächliche Menge ausgegeben wird."
+  - label: "Stromversorgung"
+    value: "4 D-Batterien; Netzadapter optional"
+    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+  - label: "App-Steuerung"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+  - label: "WLAN"
+    value: "Nein"
+    consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
 ---
 Der PetSafe Healthy Pet Simply Feed ist funktional älter als viele App-Modelle, bleibt aber durch seinen Fördermechanismus relevant. Wer WLAN bewusst vermeiden möchte und größere Portionen benötigt, bekommt mehr Spielraum als bei vielen kompakten Rotorautomaten.
 
