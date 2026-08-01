@@ -37,3 +37,34 @@
   --pt-color-warning-soft: #3b2d13;
   --pt-color-on-accent: #07120a;
 }
+
+/*
+ * System theme activation.
+ * The current layout does not set a runtime theme class or data-theme
+ * attribute, so semantic tokens follow the operating-system preference.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --pt-color-text: #edf5ef;
+    --pt-color-text-muted: #acbcb0;
+    --pt-color-border: #304238;
+    --pt-color-border-strong: #405448;
+    --pt-color-surface: #16221a;
+    --pt-color-surface-soft: #1b2a20;
+    --pt-color-surface-raised: #203126;
+    --pt-color-page: #101a14;
+    --pt-color-brand-100: #203d29;
+    --pt-color-brand-050: #172b1d;
+    --pt-color-success-soft: #183b23;
+    --pt-color-danger-soft: #43201f;
+    --pt-color-warning-soft: #3b2d13;
+    --pt-color-on-accent: #07120a;
+
+    --pt-shadow-xs: 0 1px 2px rgb(0 0 0 / 0.2);
+    --pt-shadow-sm: 0 5px 18px rgb(0 0 0 / 0.24);
+    --pt-shadow-md: 0 12px 34px rgb(0 0 0 / 0.3);
+    --pt-shadow-lg: 0 24px 58px rgb(0 0 0 / 0.36);
+  }
+}

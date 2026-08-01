@@ -185,7 +185,7 @@
     "product-standard-3:release:no-build": "node scripts/product-standard-3/release-gate.mjs --skip-build",
     "test:product-standard-3:release": "node --test test/product-standard-3-release-gate-25.5.0.test.mjs",
     "test:product-ux-cleanup": "node --test test/product-ux-cleanup-25.7.0.test.mjs",
-    "test:product-dark-mode": "node --test test/global-dark-mode-token-bridge-25.8.0.test.mjs"
+    "test:product-dark-mode": "node --test test/global-dark-mode-token-bridge-25.8.0.test.mjs test/global-dark-mode-system-theme-25.8.1.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",
