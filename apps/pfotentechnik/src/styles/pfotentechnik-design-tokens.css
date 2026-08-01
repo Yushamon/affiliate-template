@@ -35,7 +35,7 @@
   --pt-color-success-soft: #183b23;
   --pt-color-danger-soft: #43201f;
   --pt-color-warning-soft: #3b2d13;
-  --pt-color-on-accent: #07120a;
+  --pt-color-on-accent: #ffffff;
 }
 
 /*
@@ -60,7 +60,7 @@
     --pt-color-success-soft: #183b23;
     --pt-color-danger-soft: #43201f;
     --pt-color-warning-soft: #3b2d13;
-    --pt-color-on-accent: #07120a;
+    --pt-color-on-accent: #ffffff;
 
     --pt-shadow-xs: 0 1px 2px rgb(0 0 0 / 0.2);
     --pt-shadow-sm: 0 5px 18px rgb(0 0 0 / 0.24);
@@ -102,3 +102,27 @@
   }
 }
 /* pfotentechnik-semantic-foreground-roles-25.8.3:end */
+
+/* pfotentechnik-interactive-color-roles-25.8.5:start */
+:root {
+  --pt-color-action-bg: #2e7d32;
+  --pt-color-action-bg-hover: #256b2b;
+  --pt-color-action-text: #ffffff;
+  --pt-color-link: var(--pt-color-accent-text);
+}
+
+[data-theme="dark"],
+.dark {
+  --pt-color-action-bg: #2e7d32;
+  --pt-color-action-bg-hover: #3f8f50;
+  --pt-color-action-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --pt-color-action-bg: #2e7d32;
+    --pt-color-action-bg-hover: #3f8f50;
+    --pt-color-action-text: #ffffff;
+  }
+}
+/* pfotentechnik-interactive-color-roles-25.8.5:end */
