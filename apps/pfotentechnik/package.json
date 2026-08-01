@@ -171,7 +171,10 @@
     "test:topical-authority:internal-link-source": "node --test test/topical-authority-internal-link-source.test.mjs",
     "research:import": "node --experimental-strip-types scripts/seo/import-research.mjs",
     "research:check": "node --experimental-strip-types scripts/seo/import-research.mjs --check",
-    "test:research": "node --experimental-strip-types --test test/seo-research-engine.test.mjs"
+    "test:research": "node --experimental-strip-types --test test/seo-research-engine.test.mjs",
+    "audit:image-alt": "node scripts/seo/audit-image-alt-text.mjs",
+    "audit:image-alt:strict": "node scripts/seo/audit-image-alt-text.mjs --strict",
+    "test:image-alt": "node --test test/image-alt-text-24.0.0.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

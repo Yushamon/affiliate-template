@@ -1,7 +1,7 @@
 {
-  "name": "pfotentechnik-bing-image-alt-cleanup-24.0.0",
-  "version": "24.0.0",
-  "generatedAt": "2026-08-01T15:24:44.245Z",
+  "name": "pfotentechnik-bing-image-alt-cleanup-24.0.1",
+  "version": "24.0.1",
+  "generatedAt": "2026-08-01T15:28:45.216Z",
   "sourceFinding": {
     "exportRows": 101,
     "uniqueRoutesWithoutQuery": 91,
@@ -13,71 +13,73 @@
     }
   },
   "changedFiles": [
-    "apps/pfotentechnik/scripts/seo/audit-image-alt-text.mjs",
-    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
-    "apps/pfotentechnik/src/components/product-standard-2/AlternativesGrid.astro",
-    "apps/pfotentechnik/test/image-alt-text-24.0.0.test.mjs",
-    "packages/affiliate-core/src/components/ComparisonExperience.astro",
-    "packages/affiliate-core/src/components/ImageLightbox.astro",
-    "packages/affiliate-core/src/components/comparison/ComparisonExplorer.astro",
-    "packages/affiliate-core/src/components/home/HomeHero.astro"
+    "apps/pfotentechnik/package.json"
   ],
   "operations": [
     {
       "file": "packages/affiliate-core/src/components/home/HomeHero.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Homepage-Hero erhält einen nicht leeren Alt-Text"
     },
     {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Galerie-Thumbnails erhalten eindeutige Alt-Texte"
     },
     {
       "file": "apps/pfotentechnik/src/components/product-standard-2/AlternativesGrid.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Alternativenkarten beschreiben das gezeigte Produkt"
     },
     {
       "file": "packages/affiliate-core/src/components/ComparisonExperience.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Produktbilder in der klassischen Vergleichstabelle erhalten Alt-Texte"
     },
     {
       "file": "packages/affiliate-core/src/components/comparison/ComparisonExplorer.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Produktbilder im interaktiven Direktvergleich erhalten Alt-Texte"
     },
     {
       "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Der Lightbox-Platzhalter besitzt bereits im statischen HTML einen Alt-Text"
     },
     {
       "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Die Lightbox verwendet auch bei fehlenden Quelldaten einen Alt-Fallback"
     },
     {
       "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
-      "status": "changed",
+      "status": "already-applied",
       "description": "Beim Schließen fällt die Lightbox nicht auf einen leeren Alt-Text zurück"
     },
     {
       "file": "apps/pfotentechnik/scripts/seo/audit-image-alt-text.mjs",
-      "status": "changed",
-      "description": "Datei wird angelegt"
+      "status": "already-applied",
+      "description": "Datei ist aktuell"
     },
     {
       "file": "apps/pfotentechnik/test/image-alt-text-24.0.0.test.mjs",
+      "status": "already-applied",
+      "description": "Datei ist aktuell"
+    },
+    {
+      "file": "apps/pfotentechnik/package.json",
       "status": "changed",
-      "description": "Datei wird angelegt"
+      "description": "Audit- und Test-Skripte ergänzen"
     }
   ],
   "validation": [
     {
-      "label": "Expected double-quoted property name in JSON at position 12825 (line 168 column 1)",
-      "ok": false
+      "label": "Source-Audit ohne fehlende oder leere Alt-Texte",
+      "ok": true
+    },
+    {
+      "label": "Komponenten- und Integritätstests",
+      "ok": true
     }
   ]
 }

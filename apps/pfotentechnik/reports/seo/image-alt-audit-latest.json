@@ -1,0 +1,38 @@
+{
+  "version": "24.1.2",
+  "generatedAt": "2026-08-01T15:40:30.340Z",
+  "mode": "source-and-dist",
+  "sourceFilesScanned": 131,
+  "distAvailable": true,
+  "distFilesScanned": 274,
+  "rawDistFindings": 518,
+  "findings": [
+    {
+      "scope": "dist",
+      "file": "apps/pfotentechnik/dist/berater/futterautomat/index.html",
+      "line": 3,
+      "tag": "<img class=\"image-lightbox-v2__image\" data-lightbox-image alt=\"\" decoding=\"async\" draggable=\"false\">",
+      "severity": "info",
+      "code": "IMAGE_ALT_EMPTY_TECHNICAL",
+      "message": "Leerer Alt-Text eines technischen Bildplatzhalters."
+    },
+    {
+      "scope": "dist",
+      "file": "apps/pfotentechnik/dist/index.html",
+      "line": 5,
+      "tag": "<img src=\"/_astro/pet-tech-hero.BltjJCjD_xsp57.webp\" srcset=\"/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp 480w, /_astro/pet-tech-hero.BltjJCjD_2dXbeA.webp 960w, /_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp 1440w\" alt sizes=\"100vw\" loading=\"eager\" decoding=\"sync\" fetchpriority=\"high\" data-astro-image=\"full-width\" data-astro",
+      "severity": "info",
+      "code": "IMAGE_ALT_EMPTY_DECORATIVE",
+      "message": "Minimierter leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "errors": 0,
+    "info": 2,
+    "source": 0,
+    "distRaw": 518,
+    "distUnique": 2,
+    "missing": 0
+  }
+}

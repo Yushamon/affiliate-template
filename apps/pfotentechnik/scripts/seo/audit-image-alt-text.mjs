@@ -26,7 +26,9 @@ const SOURCE_ROOTS = [
   path.join(APP, "src"),
   path.join(ROOT, "packages", "affiliate-core", "src")
 ];
-const IGNORE_DIRECTORIES = new Set(["node_modules", ".git", ".astro", "dist", "reports", ".patch-backups"]);
+const IGNORE_DIRECTORIES = new Set([
+  "node_modules", ".git", ".astro", "dist", "reports", ".patch-backups"
+]);
 
 function walk(directory, extensions, output = []) {
   if (!fs.existsSync(directory)) return output;
@@ -44,37 +46,102 @@ function lineNumber(source, offset) {
 }
 
 function compactTag(tag) {
-  return tag.replace(/\s+/g, " ").trim().slice(0, 260);
+  return tag.replace(/\s+/g, " ").trim().slice(0, 320);
 }
 
-function inspectTag(tag, file, offset, scope, source) {
+function getAttribute(tag, name) {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = tag.match(
+    new RegExp("\\b" + escaped + "\\s*=\\s*(?:\"([^\"]*)\"|'([^']*)'|([^\\s>]+))", "i")
+  );
+  return match ? (match[1] ?? match[2] ?? match[3] ?? "") : undefined;
+}
+
+function hasAttribute(tag, name) {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp("\\b" + escaped + "(?:\\s*=|\\s|/?>)", "i").test(tag);
+}
+
+function isExplicitlyDecorative(tag) {
+  const ariaHidden = (getAttribute(tag, "aria-hidden") ?? "").toLowerCase();
+  const role = (getAttribute(tag, "role") ?? "").toLowerCase();
+  return ariaHidden === "true" ||
+    role === "presentation" ||
+    role === "none" ||
+    hasAttribute(tag, "data-alt-audit-ignore");
+}
+
+function isTechnicalPlaceholder(tag) {
+  const classes = getAttribute(tag, "class") ?? "";
+  return /\bimage-lightbox-v2__image\b/.test(classes) &&
+    hasAttribute(tag, "data-lightbox-image");
+}
+
+function classifyTag(tag, file, offset, scope, source) {
   const literalDouble = tag.match(/\balt\s*=\s*"([^"]*)"/i);
   const literalSingle = tag.match(/\balt\s*=\s*'([^']*)'/i);
   const dynamic = /\balt\s*=\s*\{[\s\S]*?\}/i.test(tag);
-  const bare = /\balt\s*=\s*[^\s>]+/i.test(tag);
+  const bareWithValue = /\balt\s*=\s*[^\s>]+/i.test(tag);
+  const minimizedEmptyAlt = /\balt(?=\s|\/?>)/i.test(tag);
+
   const line = lineNumber(source, offset);
   const normalizedFile = path.relative(ROOT, file).replaceAll(path.sep, "/");
+  const base = {
+    scope,
+    file: normalizedFile,
+    line,
+    tag: compactTag(tag)
+  };
 
-  if (!literalDouble && !literalSingle && !dynamic && !bare) {
+  if (dynamic) return null;
+
+  if (
+    !literalDouble &&
+    !literalSingle &&
+    !bareWithValue &&
+    !minimizedEmptyAlt
+  ) {
+    if (isExplicitlyDecorative(tag) || isTechnicalPlaceholder(tag)) {
+      return {
+        ...base,
+        severity: "info",
+        code: "IMAGE_ALT_DECORATIVE",
+        message: "Technisches oder ausdrücklich dekoratives Bild ohne beschreibenden Alt-Text."
+      };
+    }
+
     return {
-      scope,
-      file: normalizedFile,
-      line,
+      ...base,
+      severity: "error",
       code: "IMAGE_ALT_MISSING",
-      message: "Bild besitzt kein Alt-Attribut.",
-      tag: compactTag(tag)
+      message: "Informativ wirkendes Bild besitzt kein Alt-Attribut."
+    };
+  }
+
+  if (minimizedEmptyAlt) {
+    return {
+      ...base,
+      severity: "info",
+      code: isTechnicalPlaceholder(tag)
+        ? "IMAGE_ALT_EMPTY_TECHNICAL"
+        : "IMAGE_ALT_EMPTY_DECORATIVE",
+      message: isTechnicalPlaceholder(tag)
+        ? "Leerer Alt-Text eines technischen Bildplatzhalters."
+        : "Minimierter leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
     };
   }
 
   const literalValue = literalDouble?.[1] ?? literalSingle?.[1];
   if (literalValue !== undefined && literalValue.trim().length === 0) {
     return {
-      scope,
-      file: normalizedFile,
-      line,
-      code: "IMAGE_ALT_EMPTY",
-      message: "Bild besitzt einen leeren Alt-Text.",
-      tag: compactTag(tag)
+      ...base,
+      severity: "info",
+      code: isTechnicalPlaceholder(tag)
+        ? "IMAGE_ALT_EMPTY_TECHNICAL"
+        : "IMAGE_ALT_EMPTY_DECORATIVE",
+      message: isTechnicalPlaceholder(tag)
+        ? "Leerer Alt-Text eines technischen Bildplatzhalters."
+        : "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
     };
   }
 
@@ -87,7 +154,7 @@ function scanSourceFile(file) {
   const pattern = /<(?:img|OptimizedImage|ProductImage)\b[\s\S]*?>/g;
   let match;
   while ((match = pattern.exec(source))) {
-    const finding = inspectTag(match[0], file, match.index, "source", source);
+    const finding = classifyTag(match[0], file, match.index, "source", source);
     if (finding) findings.push(finding);
   }
   return findings;
@@ -99,63 +166,107 @@ function scanHtmlFile(file) {
   const pattern = /<img\b[^>]*>/gi;
   let match;
   while ((match = pattern.exec(source))) {
-    const finding = inspectTag(match[0], file, match.index, "dist", source);
+    const finding = classifyTag(match[0], file, match.index, "dist", source);
     if (finding) findings.push(finding);
   }
   return findings;
 }
 
-const sourceFiles = [...new Set(SOURCE_ROOTS.flatMap((root) => walk(root, [".astro", ".html"])))].sort();
+function signature(item) {
+  const src = getAttribute(item.tag, "src") ?? "";
+  const classes = getAttribute(item.tag, "class") ?? "";
+  const normalizedSrc = src
+    .replace(/\/_astro\/[^"'?\s]+/g, "/_astro/ASSET")
+    .replace(/[?&](?:width|height|format|quality)=[^&"']+/g, "");
+  return [item.scope, item.severity, item.code, normalizedSrc, classes].join("|");
+}
+
+function deduplicate(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = signature(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+const sourceFiles = [...new Set(
+  SOURCE_ROOTS.flatMap((root) => walk(root, [".astro", ".html"]))
+)].sort();
+
 const sourceFindings = sourceFiles.flatMap(scanSourceFile);
 const distAvailable = fs.existsSync(DIST);
-const distFiles = !SOURCE_ONLY && distAvailable ? walk(DIST, [".html"]).sort() : [];
-const distFindings = distFiles.flatMap(scanHtmlFile);
+const distFiles = !SOURCE_ONLY && distAvailable
+  ? walk(DIST, [".html"]).sort()
+  : [];
+
+const distFindingsRaw = distFiles.flatMap(scanHtmlFile);
+const distFindings = deduplicate(distFindingsRaw);
 const findings = [...sourceFindings, ...distFindings];
+const errors = findings.filter((item) => item.severity === "error");
+const infos = findings.filter((item) => item.severity === "info");
 
 const report = {
-  version: "24.0.0",
+  version: "24.1.2",
   generatedAt: new Date().toISOString(),
   mode: SOURCE_ONLY ? "source-only" : "source-and-dist",
   sourceFilesScanned: sourceFiles.length,
   distAvailable,
   distFilesScanned: distFiles.length,
+  rawDistFindings: distFindingsRaw.length,
   findings,
   summary: {
     total: findings.length,
-    missing: findings.filter((item) => item.code === "IMAGE_ALT_MISSING").length,
-    empty: findings.filter((item) => item.code === "IMAGE_ALT_EMPTY").length,
+    errors: errors.length,
+    info: infos.length,
     source: sourceFindings.length,
-    dist: distFindings.length
+    distRaw: distFindingsRaw.length,
+    distUnique: distFindings.length,
+    missing: errors.filter((item) => item.code === "IMAGE_ALT_MISSING").length
   }
 };
 
 fs.mkdirSync(REPORT_DIR, { recursive: true });
 fs.writeFileSync(REPORT_JSON, JSON.stringify(report, null, 2) + "\n");
+
+const renderFinding = (item) =>
+  "- **" + item.severity.toUpperCase() + " · " + item.code + "** `" +
+  item.file + ":" + item.line + "` – " + item.message;
+
 const markdown = [
-  "# Image Alt Audit",
+  "# Image Alt Audit 24.1.2",
   "",
   "- Modus: `" + report.mode + "`",
   "- geprüfte Quelldateien: " + report.sourceFilesScanned,
   "- geprüfte Build-Dateien: " + report.distFilesScanned,
-  "- fehlende Alt-Attribute: " + report.summary.missing,
-  "- leere Alt-Texte: " + report.summary.empty,
+  "- rohe Build-Fundstellen: " + report.summary.distRaw,
+  "- eindeutige Build-Fundstellen: " + report.summary.distUnique,
+  "- blockierende Fehler: " + report.summary.errors,
+  "- Hinweise: " + report.summary.info,
   "",
-  "## Findings",
+  "## Blockierende Fehler",
   "",
-  findings.length
-    ? findings.map((item) => "- **" + item.code + "** `" + item.file + ":" + item.line + "` – " + item.message).join("\n")
-    : "Keine fehlenden oder leeren Alt-Texte gefunden.",
+  errors.length ? errors.map(renderFinding).join("\n") : "Keine blockierenden Alt-Text-Fehler gefunden.",
+  "",
+  "## Hinweise",
+  "",
+  infos.length ? infos.map(renderFinding).join("\n") : "Keine Hinweise.",
   ""
 ].join("\n");
+
 fs.writeFileSync(REPORT_MD, markdown);
 
 console.log("[image-alt-audit] Quelldateien: " + report.sourceFilesScanned);
 console.log("[image-alt-audit] Build-Dateien: " + report.distFilesScanned);
-console.log("[image-alt-audit] Findings: " + report.summary.total);
+console.log("[image-alt-audit] Roh-Fundstellen im Build: " + report.summary.distRaw);
+console.log("[image-alt-audit] Eindeutige Hinweise: " + report.summary.info);
+console.log("[image-alt-audit] Blockierende Fehler: " + report.summary.errors);
 console.log("[image-alt-audit] Report: " + path.relative(ROOT, REPORT_MD));
 
 if (!SOURCE_ONLY && !distAvailable) {
   console.warn("[image-alt-audit] dist fehlt. Zuerst den Astro-Build ausführen oder --source-only verwenden.");
   if (STRICT) process.exitCode = 1;
 }
-if (STRICT && findings.length > 0) process.exitCode = 1;
+
+if (STRICT && errors.length > 0) process.exitCode = 1;
