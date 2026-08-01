@@ -40,49 +40,27 @@ const { model } = Astro.props;
 
 <style>
   .px2 {
-    --px2-surface: #fff;
-    --px2-surface-soft: #f3f7f4;
-    --px2-surface-raised: #f8fbf8;
-    --px2-text: #17211b;
-    --px2-muted: #5d6d63;
-    --px2-border: #d6e2da;
-    --px2-green: #2e7d32;
-    --px2-green-strong: #1f6426;
-    --px2-green-soft: #e2f3e5;
-    --px2-amber: #8a5b00;
-    --px2-amber-soft: #fff4d8;
-    --px2-red: #a92822;
-    --px2-red-soft: #fee9e7;
-    --px2-indigo: #4f46e5;
-    --px2-shadow: 0 14px 42px rgba(31, 64, 39, .08);
-    --px2-on-accent: #fff;
+    --px2-surface: var(--pt-color-surface);
+    --px2-surface-soft: var(--pt-color-surface-soft);
+    --px2-surface-raised: var(--pt-color-surface-raised);
+    --px2-text: var(--pt-color-text);
+    --px2-muted: var(--pt-color-text-muted);
+    --px2-border: var(--pt-color-border);
+    --px2-green: var(--pt-color-brand-600);
+    --px2-green-strong: var(--pt-color-brand-700);
+    --px2-green-soft: var(--pt-color-success-soft);
+    --px2-amber: var(--pt-color-warning-500);
+    --px2-amber-soft: var(--pt-color-warning-soft);
+    --px2-red: var(--pt-color-danger-600);
+    --px2-red-soft: var(--pt-color-danger-soft);
+    --px2-indigo: var(--pt-color-accent-600);
+    --px2-shadow: var(--pt-shadow-sm);
+    --px2-on-accent: var(--pt-color-on-accent);
     display: grid;
     gap: clamp(24px, 4vw, 46px);
     width: 100%;
     min-width: 0;
     color: var(--px2-text);
-  }
-
-  :global(html[data-theme="dark"]) .px2,
-  :global(html.dark) .px2,
-  :global(body[data-theme="dark"]) .px2 {
-    color-scheme: dark;
-    --px2-surface: #101b16;
-    --px2-surface-soft: #18271f;
-    --px2-surface-raised: #142119;
-    --px2-text: #eef7f0;
-    --px2-muted: #b5c4ba;
-    --px2-border: #304137;
-    --px2-green: #72d889;
-    --px2-green-strong: #92e8a5;
-    --px2-green-soft: #183b23;
-    --px2-amber: #ffd27a;
-    --px2-amber-soft: #3b2d13;
-    --px2-red: #ffaaa2;
-    --px2-red-soft: #43201f;
-    --px2-indigo: #a5b4fc;
-    --px2-shadow: none;
-    --px2-on-accent: #07120a;
   }
 
   .px2 :global(*) {
