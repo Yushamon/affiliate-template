@@ -284,16 +284,19 @@ faq:
       passender Sitz und ein Halsband beziehungsweise Elastikband mit
       zuverlässiger Anti-Strangulationsfunktion.
 
+
   - question: "Ist der Weenect XS auch für kleine Hunde geeignet?"
     answer: >-
       Ja. Der Hersteller nennt kleine Hunde ab 3 kg als Zielgruppe. Neben dem
       Gewicht des Trackers sollte geprüft werden, ob seine Abmessungen zum
       Halsband, Geschirr und Bewegungsprofil des Hundes passen.
 
+
   - question: "Wie viel wiegt der Weenect XS?"
     answer: >-
       Das reine Gerät wiegt laut Hersteller 27 g. Halterung, Halsband oder
       Geschirr kommen zusätzlich hinzu.
+
 
   - question: "Wie lange hält der Akku des Weenect XS?"
     answer: >-
@@ -302,15 +305,18 @@ faq:
       Tage. Empfang, Temperatur, Bewegungsprofil und Trackinghäufigkeit
       beeinflussen die reale Laufzeit.
 
+
   - question: "Benötigt der Weenect XS ein Abonnement?"
     answer: >-
       Ja. Die integrierte SIM überträgt Positionsdaten über Mobilfunk. Dafür ist
       ein kostenpflichtiges Weenect-Abonnement erforderlich.
 
+
   - question: "Kann ein Weenect-Abo mehrere Tracker versorgen?"
     answer: >-
       Mehrere Tiere können in einem Konto verwaltet werden. Laut Weenect
       benötigt jedoch jeder aktive Tracker ein eigenes Abonnement.
+
 
   - question: "Hat der Weenect XS eine unbegrenzte Reichweite?"
     answer: >-
@@ -318,11 +324,13 @@ faq:
       Positionsübertragung funktioniert aber nur, wenn Satellitenempfang und
       ein unterstütztes Mobilfunknetz verfügbar sind.
 
+
   - question: "Funktioniert der Weenect XS ohne Mobilfunkempfang?"
     answer: >-
       Der Tracker kann unter freiem Himmel weiterhin Satellitensignale
       empfangen. Ohne eine nutzbare Mobilfunkverbindung kann die Position
       jedoch nicht zuverlässig an App und Server übertragen werden.
+
 
   - question: "Ist der Weenect XS ein Bluetooth-Tracker?"
     answer: >-
@@ -330,11 +338,13 @@ faq:
       wird für Energiesparzonen genutzt; ein eigenständiger Bluetooth-Suchmodus
       wird vom Hersteller nicht als Ortungsweg ausgewiesen.
 
+
   - question: "Was bedeutet Superlive?"
     answer: >-
       Im Superlive-Modus werden Positionen in sehr kurzen Abständen bis hin zu
       Sekundenupdates übertragen. Häufiges Live-Tracking erhöht jedoch den
       Energieverbrauch deutlich.
+
 
   - question: "Ist der Weenect XS wasserdicht?"
     answer: >-
@@ -342,23 +352,12 @@ faq:
       Wassertiefe für 60 Minuten. Nach Salzwasser, Schmutz oder Nässe sollten
       Gehäuse und Ladekontakte gereinigt und vollständig getrocknet werden.
 
+
   - question: "Was bringen die WLAN-Energiesparzonen?"
     answer: >-
       Erkennt der Tracker ein bekanntes WLAN-Umfeld, kann er den
       Energieverbrauch reduzieren. Das WLAN ersetzt nicht die GPS- und
       Mobilfunkortung außerhalb dieser Zone.
-
-  - question: "Sind Ton und Vibration für Rückruftraining geeignet?"
-    answer: >-
-      Ton und Vibration können als konditioniertes Rückrufsignal verwendet
-      werden. Das Training sollte schrittweise und positiv aufgebaut werden;
-      die Funktion garantiert keinen Rückruf in jeder Situation.
-
-  - question: "Ist beim Amazon-Angebot ein Abo enthalten?"
-    answer: >-
-      Weenect verkauft sowohl reine Tracker als auch Pakete mit enthaltenem
-      Abonnement. Beim verlinkten Amazon-Angebot müssen Lieferumfang und
-      enthaltene Laufzeit unmittelbar vor dem Kauf geprüft werden.
 
 comparisonData:
   version: 1

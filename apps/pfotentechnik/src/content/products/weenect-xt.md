@@ -303,6 +303,7 @@ faq:
       XS. Dafür besitzt er einen stärkeren Akku, eine XL-Antenne, eine
       auffälligere Leuchte und eine robustere Outdoor-Befestigung.
 
+
   - question: "Wie lange hält der Akku des Weenect XT?"
     answer: >-
       Weenect nennt bis zu drei Wochen mit korrekt eingerichteter
@@ -310,16 +311,19 @@ faq:
       Empfang, Positionsintervall, Superlive-Nutzung und Temperatur können die
       reale Laufzeit deutlich verändern.
 
+
   - question: "Braucht der Weenect XT ein Abo?"
     answer: >-
       Ja. Die integrierte SIM überträgt die Positionsdaten über Mobilfunk.
       Deshalb ist für den laufenden Ortungsdienst ein kostenpflichtiges
       Weenect-Abonnement erforderlich.
 
+
   - question: "Kann ein Weenect-Abo mehrere Tracker versorgen?"
     answer: >-
       Mehrere Hunde können in einem Konto angezeigt werden. Jeder aktive
       Tracker benötigt laut Weenect jedoch ein eigenes Abonnement.
+
 
   - question: "Ist der Weenect XT für kleine Hunde geeignet?"
     answer: >-
@@ -328,11 +332,13 @@ faq:
       eher für mittelgroße und große Hunde sinnvoll. Für kleinere Hunde ist der
       leichtere Weenect XS meist die naheliegendere Bauform.
 
+
   - question: "Ist der Weenect XT für Katzen geeignet?"
     answer: >-
       Nein, der XT wird als Hundetracker angeboten. Für Katzen ist der deutlich
       leichtere Weenect XS mit einer geeigneten Anti-Strangulationsbefestigung
       vorgesehen.
+
 
   - question: "Hat der Weenect XT eine unbegrenzte Reichweite?"
     answer: >-
@@ -340,17 +346,20 @@ faq:
       funktioniert jedoch nur, wenn Satellitenempfang und ein unterstütztes
       Mobilfunknetz verfügbar sind.
 
+
   - question: "Was bedeutet die beworbene 99-%-Abdeckung?"
     answer: >-
       Das ist eine Herstellerangabe zur Multi-Netz-SIM und XL-Antenne. Sie
       garantiert keinen Empfang an jedem Standort. Täler, Gebäude, dichter Wald
       und lokale Funklöcher können Positionsupdates verzögern.
 
+
   - question: "Wie schnell aktualisiert der Weenect XT seine Position?"
     answer: >-
       Im Superlive-Modus sind laut Weenect Positionsupdates bis zu einmal pro
       Sekunde möglich. Dieser Modus verbraucht deutlich mehr Akku als ein
       längeres Standardintervall.
+
 
   - question: "Wie wird der Weenect XT befestigt?"
     answer: >-
@@ -359,24 +368,19 @@ faq:
       Silikonhülle am Halsband beziehungsweise zusätzlich eine
       Klettbefestigung am Geschirr.
 
+
   - question: "Kann der Weenect XT am Geschirr befestigt werden?"
     answer: >-
       Ja. Die Universalbefestigung ist für Halsbänder und Geschirre vorgesehen.
       Vor dem Einsatz sollten Sitz, Bewegungsfreiheit und Halt bei Zug geprüft
       werden.
 
+
   - question: "Ist der Weenect XT wasserdicht?"
     answer: >-
       Der Tracker trägt die Schutzklasse IP68. Weenect nennt bis zu 1,5 m
       Wassertiefe für 60 Minuten. Nach Schlamm, Salz- oder Schmutzwasser sollten
       Tracker und Ladekontakte gereinigt und vollständig getrocknet werden.
-
-  - question: "Ist beim Amazon-Angebot ein Abonnement enthalten?"
-    answer: >-
-      Weenect verkauft sowohl reine Tracker als auch Bundles mit enthaltener
-      Abo-Laufzeit. Beim verlinkten Amazon-Angebot müssen Produktvariante,
-      Befestigung und eventuell enthaltenes Abonnement direkt vor dem Kauf
-      geprüft werden.
 
 comparisonData:
   version: 1

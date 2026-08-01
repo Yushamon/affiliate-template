@@ -3,81 +3,81 @@
 - Produkte: 67
 - Blockiert: 0
 - Verbesserungsbedarf: 0
-- Gut: 3
-- Stark: 64
+- Gut: 0
+- Stark: 67
 - Fehler: 0
-- Warnungen: 66
+- Warnungen: 0
 
 ## Übersicht
 
 | Produkt | Score | Status | relevante Findings |
 |---|---:|---|---:|
-| petlibro-space-smart-feeder | 80 | good | 2 |
-| weenect-xs | 80 | good | 2 |
-| weenect-xt | 80 | good | 2 |
-| aqara-smart-pet-feeder-c1 | 90 | strong | 1 |
-| cat-mate-335-pet-fountain | 90 | strong | 1 |
-| cat-mate-c200 | 90 | strong | 1 |
-| cat-mate-c300 | 90 | strong | 1 |
-| cat-mate-c500 | 90 | strong | 1 |
-| cat-mate-shell-fountain | 90 | strong | 1 |
-| catit-pixi-smart-6-meal-feeder | 90 | strong | 1 |
-| catit-pixi-vision-smart-feeder | 90 | strong | 1 |
-| garmin-alpha-t-20 | 90 | strong | 1 |
-| garmin-alpha-tt-25 | 90 | strong | 1 |
-| honeyguardian-a305d | 90 | strong | 1 |
-| honeyguardian-a68 | 90 | strong | 1 |
-| honeyguardian-smart-pet-feeder-s305d | 90 | strong | 1 |
-| imipaw-3l-automatic-cat-feeder | 90 | strong | 1 |
-| oneisall-2-2l-cordless-fountain | 90 | strong | 1 |
-| oneisall-2-in-1-feeder-water | 90 | strong | 1 |
-| oneisall-3-2l-cordless-fountain | 90 | strong | 1 |
-| oneisall-3-5l-cordless-fountain | 90 | strong | 1 |
-| oneisall-5l-automatic-cat-feeder | 90 | strong | 1 |
-| oneisall-7l-dog-water-fountain | 90 | strong | 1 |
-| paj-pet-finder-4g-mini | 90 | strong | 1 |
-| pawbby-smart-pet-feeder | 90 | strong | 1 |
-| pawsync-smart-pet-feeder | 90 | strong | 1 |
-| petkit-eversweet-3-pro-uvc | 90 | strong | 1 |
-| petkit-eversweet-5-mini | 90 | strong | 1 |
-| petkit-eversweet-max-2-uvc | 90 | strong | 1 |
-| petkit-eversweet-max-cordless | 90 | strong | 1 |
-| petkit-eversweet-solo-2-fountain | 90 | strong | 1 |
-| petkit-eversweet-solo-se | 90 | strong | 1 |
-| petkit-eversweet-ultra | 90 | strong | 1 |
-| petkit-fresh-element-infinity | 90 | strong | 1 |
-| petkit-fresh-element-solo | 90 | strong | 1 |
-| petkit-yumshare-dual-hopper | 90 | strong | 1 |
-| petkit-yumshare-solo-2 | 90 | strong | 1 |
-| petlibro-air-automatic-feeder | 90 | strong | 1 |
-| petlibro-air-wifi-feeder | 90 | strong | 1 |
-| petlibro-capsule-dog-fountain | 90 | strong | 1 |
-| petlibro-dockstream-cordless | 90 | strong | 1 |
-| petlibro-dockstream-rfid-smart | 90 | strong | 1 |
-| petlibro-glacier-ultrafiltration | 90 | strong | 1 |
-| petlibro-granary-camera-feeder | 90 | strong | 1 |
-| petlibro-granary-dual-feeder | 90 | strong | 1 |
-| petlibro-granary-wifi-feeder | 90 | strong | 1 |
-| petlibro-one-rfid-smart-feeder | 90 | strong | 1 |
-| petlibro-polar-wet-food-feeder | 90 | strong | 1 |
-| petlibro-stainless-steel-fountain | 90 | strong | 1 |
-| petsafe-freshfeed-refrigerated-feeder | 90 | strong | 1 |
-| petsafe-healthy-pet-simply-feed | 90 | strong | 1 |
-| petsafe-smart-feed-2 | 90 | strong | 1 |
-| surefeed-microchip-pet-feeder | 90 | strong | 1 |
-| surefeed-microchip-pet-feeder-connect | 90 | strong | 1 |
-| tractive-cat-6-mini | 90 | strong | 1 |
-| tractive-dog-6 | 90 | strong | 1 |
-| tractive-dog-6-xl | 90 | strong | 1 |
-| wopet-cube-air-ca10 | 90 | strong | 1 |
-| wopet-heritage-view-camera-feeder | 90 | strong | 1 |
-| wopet-patrol-f07-pro | 90 | strong | 1 |
-| wopet-pioneer-f01-plus | 90 | strong | 1 |
-| xiaomi-smart-pet-food-feeder-2 | 90 | strong | 1 |
-| xiaomi-smart-pet-fountain-2 | 90 | strong | 1 |
+| aqara-smart-pet-feeder-c1 | 100 | strong | 0 |
+| cat-mate-335-pet-fountain | 100 | strong | 0 |
+| cat-mate-c200 | 100 | strong | 0 |
+| cat-mate-c300 | 100 | strong | 0 |
+| cat-mate-c500 | 100 | strong | 0 |
+| cat-mate-shell-fountain | 100 | strong | 0 |
+| catit-pixi-smart-6-meal-feeder | 100 | strong | 0 |
+| catit-pixi-vision-smart-feeder | 100 | strong | 0 |
+| garmin-alpha-t-20 | 100 | strong | 0 |
+| garmin-alpha-tt-25 | 100 | strong | 0 |
+| honeyguardian-a305d | 100 | strong | 0 |
+| honeyguardian-a68 | 100 | strong | 0 |
+| honeyguardian-smart-pet-feeder-s305d | 100 | strong | 0 |
+| imipaw-3l-automatic-cat-feeder | 100 | strong | 0 |
+| oneisall-2-2l-cordless-fountain | 100 | strong | 0 |
+| oneisall-2-in-1-feeder-water | 100 | strong | 0 |
+| oneisall-3-2l-cordless-fountain | 100 | strong | 0 |
+| oneisall-3-5l-cordless-fountain | 100 | strong | 0 |
+| oneisall-5l-automatic-cat-feeder | 100 | strong | 0 |
+| oneisall-7l-dog-water-fountain | 100 | strong | 0 |
+| paj-pet-finder-4g-mini | 100 | strong | 0 |
+| pawbby-smart-pet-feeder | 100 | strong | 0 |
+| pawsync-smart-pet-feeder | 100 | strong | 0 |
+| petkit-eversweet-3-pro-uvc | 100 | strong | 0 |
+| petkit-eversweet-5-mini | 100 | strong | 0 |
+| petkit-eversweet-max-2-uvc | 100 | strong | 0 |
+| petkit-eversweet-max-cordless | 100 | strong | 0 |
+| petkit-eversweet-solo-2-fountain | 100 | strong | 0 |
+| petkit-eversweet-solo-se | 100 | strong | 0 |
+| petkit-eversweet-ultra | 100 | strong | 0 |
+| petkit-fresh-element-infinity | 100 | strong | 0 |
+| petkit-fresh-element-solo | 100 | strong | 0 |
+| petkit-yumshare-dual-hopper | 100 | strong | 0 |
+| petkit-yumshare-solo-2 | 100 | strong | 0 |
+| petlibro-air-automatic-feeder | 100 | strong | 0 |
+| petlibro-air-wifi-feeder | 100 | strong | 0 |
+| petlibro-capsule-dog-fountain | 100 | strong | 0 |
 | petlibro-dockstream-2-smart | 100 | strong | 0 |
 | petlibro-dockstream-2-smart-cordless | 100 | strong | 0 |
+| petlibro-dockstream-cordless | 100 | strong | 0 |
+| petlibro-dockstream-rfid-smart | 100 | strong | 0 |
+| petlibro-glacier-ultrafiltration | 100 | strong | 0 |
 | petlibro-granary-2-vision | 100 | strong | 0 |
+| petlibro-granary-camera-feeder | 100 | strong | 0 |
+| petlibro-granary-dual-feeder | 100 | strong | 0 |
+| petlibro-granary-wifi-feeder | 100 | strong | 0 |
+| petlibro-one-rfid-smart-feeder | 100 | strong | 0 |
+| petlibro-polar-wet-food-feeder | 100 | strong | 0 |
+| petlibro-space-smart-feeder | 100 | strong | 0 |
+| petlibro-stainless-steel-fountain | 100 | strong | 0 |
+| petsafe-freshfeed-refrigerated-feeder | 100 | strong | 0 |
+| petsafe-healthy-pet-simply-feed | 100 | strong | 0 |
+| petsafe-smart-feed-2 | 100 | strong | 0 |
+| surefeed-microchip-pet-feeder | 100 | strong | 0 |
+| surefeed-microchip-pet-feeder-connect | 100 | strong | 0 |
+| tractive-cat-6-mini | 100 | strong | 0 |
+| tractive-dog-6 | 100 | strong | 0 |
+| tractive-dog-6-xl | 100 | strong | 0 |
+| weenect-xs | 100 | strong | 0 |
+| weenect-xt | 100 | strong | 0 |
+| wopet-cube-air-ca10 | 100 | strong | 0 |
+| wopet-heritage-view-camera-feeder | 100 | strong | 0 |
+| wopet-patrol-f07-pro | 100 | strong | 0 |
+| wopet-pioneer-f01-plus | 100 | strong | 0 |
+| xiaomi-smart-pet-food-feeder-2 | 100 | strong | 0 |
+| xiaomi-smart-pet-fountain-2 | 100 | strong | 0 |
 | zeromouse-2-0 | 100 | strong | 0 |
 
 ## Höchste Priorität

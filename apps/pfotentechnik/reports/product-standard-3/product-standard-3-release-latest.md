@@ -8,8 +8,8 @@
 | Prüfung | Status | Dauer |
 |---|---|---:|
 | Product-Standard-3-Tests | passed | 0.40 s |
-| Enricher-Tests | passed | 0.37 s |
-| Product-Standard-3-Audit | passed | 0.26 s |
+| Enricher-Tests | passed | 0.38 s |
+| Product-Standard-3-Audit | passed | 0.30 s |
 | Enrichment-Vorschau | passed | 0.25 s |
 
 ## Audit
@@ -17,10 +17,10 @@
 - Produkte: 67
 - Blockiert: 0
 - Verbesserungsbedarf: 0
-- Gut: 67
-- Stark: 0
+- Gut: 0
+- Stark: 67
 - Fehler: 0
-- Warnungen: 134
+- Warnungen: 0
 
 ## Enrichment
 

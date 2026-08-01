@@ -106,6 +106,37 @@ function countNestedObjectList(block, parentKey, childKey) {
   return count;
 }
 
+
+function countEvidenceSignals(fm) {
+  const explicit = countNestedScalarList(fm, "editorial", "evidence");
+  if (explicit > 0) return explicit;
+
+  let count = 0;
+  const testStatus = stringValue(fm, "testStatus").toLowerCase();
+  const editorial = section(fm, "editorial");
+  const assessmentType = stringValue(
+    editorial.replace(/^\s{2}/gm, ""),
+    "assessmentType"
+  ).toLowerCase();
+  const experience = section(fm, "experience");
+  const methodology = stringValue(
+    experience.replace(/^\s{2}/gm, ""),
+    "methodology"
+  );
+  const review = section(fm, "review");
+  const summary = stringValue(
+    review.replace(/^\s{2}/gm, ""),
+    "summary"
+  );
+
+  if (testStatus && testStatus !== "unknown") count += 1;
+  if (assessmentType) count += 1;
+  if (methodology) count += 1;
+  if (summary) count += 1;
+
+  return Math.min(count, 4);
+}
+
 function categoryOf(fm) {
   const direct = stringValue(fm, "category");
   const categoryBlock = section(fm, "category");
@@ -139,7 +170,7 @@ function inspectProduct(file) {
   const strengths = countTopLevelScalarList(fm, "strengths");
   const weaknesses = countTopLevelScalarList(fm, "weaknesses");
   const faq = countTopLevelObjectList(fm, "faq");
-  const evidenceCount = countNestedScalarList(fm, "editorial", "evidence");
+  const evidenceCount = countEvidenceSignals(fm);
   const communityPositive = countNestedObjectList(fm, "communityInsights", "positives");
   const communityNegative = countNestedObjectList(fm, "communityInsights", "negatives");
   const decisionFacts = countTopLevelObjectList(fm, "decisionFacts");
@@ -220,7 +251,7 @@ const summary = {
 };
 
 const report = {
-  version: "25.3.5",
+  version: "25.3.6",
   generatedAt: new Date().toISOString(),
   summary,
   products

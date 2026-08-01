@@ -1,6 +1,6 @@
 {
   "version": "25.5.0",
-  "generatedAt": "2026-08-01T17:07:52.729Z",
+  "generatedAt": "2026-08-01T17:29:17.968Z",
   "passed": true,
   "skipBuild": true,
   "steps": [
@@ -8,28 +8,28 @@
       "id": "tests",
       "label": "Product-Standard-3-Tests",
       "status": "passed",
-      "durationMs": 404,
+      "durationMs": 403,
       "exitCode": 0
     },
     {
       "id": "enricher-tests",
       "label": "Enricher-Tests",
       "status": "passed",
-      "durationMs": 370,
+      "durationMs": 378,
       "exitCode": 0
     },
     {
       "id": "audit",
       "label": "Product-Standard-3-Audit",
       "status": "passed",
-      "durationMs": 264,
+      "durationMs": 301,
       "exitCode": 0
     },
     {
       "id": "enrichment-preview",
       "label": "Enrichment-Vorschau",
       "status": "passed",
-      "durationMs": 251,
+      "durationMs": 249,
       "exitCode": 0
     }
   ],
@@ -37,10 +37,10 @@
     "products": 67,
     "blocked": 0,
     "needsWork": 0,
-    "good": 67,
-    "strong": 0,
+    "good": 0,
+    "strong": 67,
     "errors": 0,
-    "warnings": 134,
+    "warnings": 0,
     "info": 129
   },
   "enrichmentSummary": {

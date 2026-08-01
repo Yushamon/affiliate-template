@@ -189,71 +189,64 @@ faq:
       Sein wesentliches Unterscheidungsmerkmal ist der vakuumierbare Vorratsbehälter. Der Automat entzieht dem Behälter
       nach einer Fütterung Luft und verschließt ihn wieder. Das soll Trockenfutter besser gegen Luft und Feuchtigkeit
       abschirmen als ein gewöhnlicher Deckel.
+
   - question: Ist der PETLIBRO Space für Nassfutter geeignet?
     answer: >-
       Nein. PETLIBRO gibt das Modell ausschließlich für trockenes Futter frei. Nassfutter, halbfeuchtes Futter und
       Frischfutter können die Mechanik verschmutzen oder blockieren.
+
   - question: Welche Krokettengröße passt in den Automaten?
     answer: >-
       Laut Hersteller sind Kroketten mit einem Durchmesser von etwa 2 bis 18 Millimetern vorgesehen. Entscheidend ist
       nicht nur der Durchmesser, sondern auch die Form. Sehr flache, klebrige oder stark unregelmäßige Stücke sollten
       vor längerer Abwesenheit getestet werden.
+
   - question: Wie groß ist eine Portion?
     answer: >-
       Eine Portion entspricht laut PETLIBRO ungefähr 20 Millilitern beziehungsweise etwa einem Zwölftel Cup. Die häufig
       genannte Gewichtsangabe von ungefähr 10 Gramm ist nur ein Richtwert, weil unterschiedliche Futtersorten bei
       gleichem Volumen unterschiedlich schwer sind.
+
   - question: Dosiert der Space Smart Feeder grammgenau?
     answer: >-
       Nein. Der Automat portioniert nach Volumen und Umdrehungen des Ausgabemechanismus, nicht mit einer Waage. Für eine
       kontrollierte Fütterung sollte die verwendete Futtersorte mehrfach ausgegeben und anschließend gewogen werden.
+
   - question: Wie viele Portionen sind pro Mahlzeit möglich?
     answer: >-
       PETLIBRO nennt bis zu 50 Portionseinheiten pro Mahlzeit. Bei ungefähr 20 Millilitern je Einheit ist die
       theoretisch mögliche Menge hoch, für kleine Tiere sind aber meist deutlich kleinere Einstellungen sinnvoll.
+
   - question: Können Mahlzeiten unterschiedlich groß eingestellt werden?
     answer: >-
       Ja. Die Portionszahl kann für einzelne Fütterungszeiten unterschiedlich festgelegt werden. Dadurch lassen sich
       beispielsweise morgens und abends größere sowie tagsüber kleinere Mahlzeiten planen.
+
   - question: Funktioniert der Automat bei Stromausfall?
     answer: >-
       Mit vier eingesetzten D-Alkalibatterien kann der Automat geplante Ausgaben vorübergehend fortsetzen. PETLIBRO
       nennt für den Batteriemodus ungefähr drei Tage. Die Vakuumpumpe ist in diesem Modus jedoch deaktiviert.
+
   - question: Kann der PETLIBRO Space dauerhaft nur mit Batterien laufen?
     answer: >-
       PETLIBRO beschreibt den Batteriebetrieb als Notfalllösung und empfiehlt den dauerhaften Netzbetrieb. Für einen
       kabellosen Dauerbetrieb ist das Modell deshalb nicht die passende Wahl.
+
   - question: Welche App wird benötigt?
     answer: >-
       Der Automat wird mit der regulären PETLIBRO App verbunden. Die ältere PETLIBRO Lite App wird für dieses Modell
       laut Hersteller nicht unterstützt.
+
   - question: Was passiert bei einer instabilen WLAN-Verbindung?
     answer: >-
       Die App-Verbindung und Benachrichtigungen können ausfallen. Bereits gespeicherte Fütterungspläne sollten lokal
       weiterlaufen, solange der Automat mit Strom versorgt ist. Vor einer Reise sollte dennoch geprüft werden, ob
       geplante Ausgaben auch bei getrenntem WLAN zuverlässig erfolgen.
+
   - question: Hat der Space Smart Feeder eine Kamera?
     answer: >-
       Nein. Wer sehen möchte, ob das Tier tatsächlich gefressen hat, benötigt einen Automaten mit Kamera oder eine
       separate Innenraumkamera. Ein protokollierter Futterauswurf ist kein sicherer Fressnachweis.
-  - question: Ist der Automat für mehrere Tiere geeignet?
-    answer: >-
-      Er kann Futter für mehrere Tiere bereitstellen, unterscheidet aber nicht, welches Tier frisst. In Haushalten mit
-      Futterneid, Diätfutter oder unterschiedlichen Rationen ist ein RFID- oder Mikrochip-System meist geeigneter.
-  - question: Wie oft sollte der Automat gereinigt werden?
-    answer: >-
-      Napf und erreichbare Futterreste sollten regelmäßig entfernt werden. Rotor, Auslass, Deckel und Dichtungsring
-      benötigen ebenfalls Kontrollen, weil Krümel oder Fettablagerungen die Ausgabe und die Vakuumabdichtung
-      beeinträchtigen können.
-  - question: Für welche Tiere ist der PETLIBRO Space besonders geeignet?
-    answer: >-
-      Am plausibelsten ist er für Katzen und kleine Hunde, die Trockenfutter in mehreren planbaren Mahlzeiten erhalten.
-      Für große Hunde kann sowohl die Napfgröße als auch die volumetrische Portionierung weniger passend sein.
-  - question: Worauf sollte man beim Gebrauchtkauf achten?
-    answer: >-
-      Wichtig sind eine intakte Dichtung, eine funktionierende Vakuumpumpe, ein sauber schließender Auslass, die
-      App-Kopplung sowie verfügbare Ersatzteile. Wegen der unklaren aktuellen Produktverfügbarkeit sollte die
-      Ersatzteilversorgung vor dem Kauf geprüft werden.
 useCase: >-
   Für Katzen und kleine Hunde, die Trockenfutter in planbaren Mahlzeiten erhalten und bei denen eine möglichst
   luftdichte Lagerung des Vorrats wichtiger ist als Kamera oder Tiererkennung.
