@@ -1,17 +1,13 @@
 ---
 import AffiliateLayout from "@affiliate-core/layouts/AffiliateLayout.astro";
 import ImageLightbox from "@affiliate-core/components/ImageLightbox.astro";
+import "../styles/pfotentechnik-design-tokens.css";
 import "../styles/pfotentechnik-primitives.css";
 import "../styles/pfotentechnik-responsive-resilience.css";
 import "../styles/pfotentechnik-visual-density.css";
 import "../styles/pfotentechnik.css";
 import "../styles/pfotentechnik-design-system.css";
 import "../styles/pfotentechnik-ui-system.css";
-/*
- * The semantic token source is deliberately last.
- * Compatibility layers may define aliases, but may not win the cascade.
- */
-import "../styles/pfotentechnik-design-tokens.css";
 
 const props = Astro.props;
 const webAnalyticsToken = import.meta.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();

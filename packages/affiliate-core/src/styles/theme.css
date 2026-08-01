@@ -1,25 +1,31 @@
+/*
+ * Affiliate Core compatibility aliases.
+ *
+ * Projects own the concrete palette. The core consumes semantic project tokens
+ * and does not define a second light or dark theme.
+ */
 :root {
-  --primary: var(--pt-color-brand-600, #16a34a);
-  --primary-dark: var(--pt-color-brand-700, #15803d);
-  --primary-text: var(--pt-color-accent-text, #1f5f35);
-  --primary-soft: var(--pt-color-brand-100, #dcfce7);
+  --primary: var(--pt-color-action-bg);
+  --primary-dark: var(--pt-color-accent-text);
+  --primary-text: var(--pt-color-accent-text);
+  --primary-soft: var(--pt-color-brand-100);
 
-  --accent: var(--pt-color-warning-500, #f59e0b);
-  --accent-soft: var(--pt-color-warning-soft, #fef3c7);
+  --accent: var(--pt-color-warning-500);
+  --accent-soft: var(--pt-color-warning-soft);
 
-  --text: var(--pt-color-text, #14201a);
-  --muted: var(--pt-color-text-muted, #647067);
-  --text-inverse: var(--pt-color-text-inverse, #ffffff);
-  --text-inverse-muted: var(--pt-color-text-inverse-muted, rgb(255 255 255 / 0.74));
+  --text: var(--pt-color-text);
+  --muted: var(--pt-color-text-muted);
+  --text-inverse: var(--pt-color-text-inverse);
+  --text-inverse-muted: var(--pt-color-text-inverse-muted);
 
-  --border: var(--pt-color-border, rgba(20, 32, 26, 0.1));
-  --border-strong: var(--pt-color-border-strong, rgba(20, 32, 26, 0.18));
+  --border: var(--pt-color-border);
+  --border-strong: var(--pt-color-border-strong);
 
-  --page: var(--pt-color-page, #f5f8f6);
-  --surface: var(--pt-color-surface, #ffffff);
-  --surface-soft: var(--pt-color-surface-soft, #f0fdf4);
-  --surface-raised: var(--pt-color-surface-raised, #ffffff);
+  --page: var(--pt-color-page);
+  --surface: var(--pt-color-surface);
+  --surface-soft: var(--pt-color-surface-soft);
+  --surface-raised: var(--pt-color-surface-raised);
 
-  --shadow-soft: var(--pt-shadow-sm, 0 18px 55px rgba(20, 32, 26, 0.08));
-  --shadow-strong: var(--pt-shadow-lg, 0 28px 80px rgba(20, 32, 26, 0.1));
+  --shadow-soft: var(--pt-shadow-sm);
+  --shadow-strong: var(--pt-shadow-lg);
 }

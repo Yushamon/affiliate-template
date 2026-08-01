@@ -1,10 +1,12 @@
-/* PfotenTechnik foundation tokens.
- * Extrahiert aus pfotentechnik-design-system.css durch 22.1.0.
- * Keine visuellen Änderungen: Reihenfolge der :root-Blöcke bleibt erhalten.
+/*
+ * PfotenTechnik compatibility aliases.
+ *
+ * Authoritative colors, spacing, radii and shadows live exclusively in:
+ * ../pfotentechnik-design-tokens.css
+ *
+ * This file exists only for legacy components that still consume the older
+ * --pt-theme-*, --pt-ink-*, --pt-green-* or generic aliases.
  */
-
-/* pfotentechnik design system: active PfotenTechnik design-system layer. */
-:root { --pt-ink-950: #0b1320; --pt-ink-900: #111c2e; --pt-ink-700: #334155; --pt-ink-500: #64748b; --pt-green-700: #15824d; --pt-green-600: #1fa463; --pt-green-100: #dcfce7; --pt-canvas: #f3f5f7; --pt-surface: #ffffff; --pt-line: #e2e8f0; --pt-line-strong: #cbd5e1; --pt-warning: #f59e0b; --pt-danger: #dc2626; --pt-radius-xs: 8px; --pt-radius-sm: 12px; --pt-radius-md: 16px; --pt-radius-lg: 24px; --pt-radius-xl: 32px; --pt-shadow-xs: 0 1px 2px rgba(11, 19, 32, 0.04); --pt-shadow-sm: 0 10px 28px rgba(11, 19, 32, 0.06); --pt-shadow-md: 0 20px 56px rgba(11, 19, 32, 0.09); --pt-shadow-lg: 0 30px 90px rgba(11, 19, 32, 0.12); --pt-content: 1240px; --pt-reading: 760px; --primary: var(--pt-green-600); --primary-dark: var(--pt-green-700); --primary-soft: var(--pt-green-100); --secondary: var(--pt-green-600); --text: var(--pt-ink-950); --muted: var(--pt-ink-500); --bg: var(--pt-canvas); --bg-soft: #f8fafc; --surface: var(--pt-surface); --surface-soft: #f8fafc; --card: var(--pt-surface); --border: rgba(11, 19, 32, 0.09); --border-strong: rgba(11, 19, 32, 0.16); --shadow-soft: var(--pt-shadow-sm); --shadow-strong: var(--pt-shadow-lg); }
 
 :root {
   color-scheme: light dark;
@@ -60,30 +62,69 @@
   --pt-surface: var(--pt-theme-surface);
   --pt-line: var(--pt-theme-border);
   --pt-line-strong: var(--pt-theme-border-strong);
+
   --pt-ink-950: var(--pt-theme-text);
   --pt-ink-900: var(--pt-theme-text);
   --pt-ink-700: var(--pt-theme-text-soft);
   --pt-ink-500: var(--pt-theme-text-muted);
+
   --pt-green-700: var(--pt-theme-accent-text);
   --pt-green-600: var(--pt-theme-accent);
   --pt-green-100: var(--pt-theme-accent-soft);
 
+  --pt-warning: var(--pt-theme-warning);
+  --pt-danger: var(--pt-theme-danger);
+
+  --pt-content: var(--pt-content-wide);
+  --pt-reading: var(--pt-content-narrow);
+
+  --primary: var(--pt-theme-accent);
+  --primary-dark: var(--pt-theme-accent-text);
+  --primary-soft: var(--pt-theme-accent-soft);
+  --secondary: var(--pt-theme-accent);
+
+  --text: var(--pt-theme-text);
+  --muted: var(--pt-theme-text-muted);
   --bg: var(--pt-theme-canvas);
   --bg-soft: var(--pt-theme-surface-2);
   --surface: var(--pt-theme-surface);
   --surface-soft: var(--pt-theme-surface-2);
   --card: var(--pt-theme-surface);
-  --text: var(--pt-theme-text);
-  --muted: var(--pt-theme-text-muted);
+
   --border: var(--pt-theme-border);
   --border-strong: var(--pt-theme-border-strong);
-  --primary: var(--pt-theme-accent);
-  --primary-dark: var(--pt-theme-accent-text);
-  --primary-soft: var(--pt-theme-accent-soft);
   --shadow-soft: var(--pt-theme-shadow-sm);
   --shadow-strong: var(--pt-theme-shadow-md);
 }
 
-:root { --pt-polish-radius-card: 24px; --pt-polish-radius-soft: 18px; --pt-polish-space-section: clamp(52px, 7vw, 88px); --pt-polish-space-card: clamp(22px, 4vw, 34px); --pt-polish-icon-size: 42px; --pt-polish-line: rgba(15, 23, 42, 0.12); --pt-polish-shadow: 0 18px 54px rgba(15, 23, 42, 0.08); }
+/*
+ * Editorial and FAQ aliases remain semantic as well. No mode-specific values
+ * are declared here.
+ */
+:root {
+  --pt-editorial-dark-bg: var(--pt-color-brand-surface);
+  --pt-editorial-dark-bg-deep: var(--pt-color-brand-surface-strong);
+  --pt-editorial-dark-border: color-mix(
+    in srgb,
+    var(--pt-color-on-brand-surface-accent) 24%,
+    transparent
+  );
+  --pt-editorial-dark-heading: var(--pt-color-on-brand-surface);
+  --pt-editorial-dark-copy: var(--pt-color-on-brand-surface-muted);
+  --pt-editorial-dark-muted: var(--pt-color-on-brand-surface-muted);
+  --pt-editorial-dark-accent: var(--pt-color-on-brand-surface-accent);
 
-:root { --pt-editorial-dark-bg: #07372f; --pt-editorial-dark-bg-deep: #062d27; --pt-editorial-dark-border: rgba(154, 229, 188, 0.22); --pt-editorial-dark-heading: #f4fbf7; --pt-editorial-dark-copy: #c6d8d0; --pt-editorial-dark-muted: #9fb9ae; --pt-editorial-dark-accent: #8ce9b2; --pt-faq-bg: #ffffff; --pt-faq-soft: #f7f9f9; --pt-faq-line: #dfe7e4; --pt-faq-heading: #101827; --pt-faq-copy: #566477; }
+  --pt-faq-bg: var(--pt-color-surface);
+  --pt-faq-soft: var(--pt-color-surface-soft);
+  --pt-faq-line: var(--pt-color-border);
+  --pt-faq-heading: var(--pt-color-text);
+  --pt-faq-copy: var(--pt-color-text-muted);
+
+  --pt-polish-radius-card: var(--pt-radius-xl);
+  --pt-polish-radius-soft: var(--pt-radius-lg);
+  --pt-polish-space-section: var(--pt-section-space);
+  --pt-polish-space-card: clamp(var(--pt-space-5), 4vw, var(--pt-space-8));
+  --pt-polish-icon-size: 2.625rem;
+  --pt-polish-line: var(--pt-color-border);
+  --pt-polish-shadow: var(--pt-shadow-md);
+}
