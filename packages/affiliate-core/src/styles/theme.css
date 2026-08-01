@@ -1,20 +1,25 @@
 :root {
-  --primary: #16a34a;
-  --primary-dark: #15803d;
-  --primary-soft: #dcfce7;
+  --primary: var(--pt-color-brand-600, #16a34a);
+  --primary-dark: var(--pt-color-brand-700, #15803d);
+  --primary-text: var(--pt-color-accent-text, #1f5f35);
+  --primary-soft: var(--pt-color-brand-100, #dcfce7);
 
-  --accent: #f59e0b;
-  --accent-soft: #fef3c7;
+  --accent: var(--pt-color-warning-500, #f59e0b);
+  --accent-soft: var(--pt-color-warning-soft, #fef3c7);
 
-  --text: #14201a;
-  --muted: #647067;
+  --text: var(--pt-color-text, #14201a);
+  --muted: var(--pt-color-text-muted, #647067);
+  --text-inverse: var(--pt-color-text-inverse, #ffffff);
+  --text-inverse-muted: var(--pt-color-text-inverse-muted, rgb(255 255 255 / 0.74));
 
-  --border: rgba(20, 32, 26, 0.1);
-  --border-strong: rgba(20, 32, 26, 0.18);
+  --border: var(--pt-color-border, rgba(20, 32, 26, 0.1));
+  --border-strong: var(--pt-color-border-strong, rgba(20, 32, 26, 0.18));
 
-  --surface: #ffffff;
-  --surface-soft: #f0fdf4;
+  --page: var(--pt-color-page, #f5f8f6);
+  --surface: var(--pt-color-surface, #ffffff);
+  --surface-soft: var(--pt-color-surface-soft, #f0fdf4);
+  --surface-raised: var(--pt-color-surface-raised, #ffffff);
 
-  --shadow-soft: 0 18px 55px rgba(20, 32, 26, 0.08);
-  --shadow-strong: 0 28px 80px rgba(20, 32, 26, 0.1);
+  --shadow-soft: var(--pt-shadow-sm, 0 18px 55px rgba(20, 32, 26, 0.08));
+  --shadow-strong: var(--pt-shadow-lg, 0 28px 80px rgba(20, 32, 26, 0.1));
 }

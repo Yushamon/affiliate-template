@@ -12,15 +12,21 @@ interface RelatedItem {
 
 interface Props {
   items: RelatedItem[];
+  eyebrow?: string;
+  title?: string;
 }
 
-const { items = [] } = Astro.props as Partial<Props>;
+const {
+  items = [],
+  eyebrow = "Weiterführende Inhalte",
+  title = "Das könnte dich auch interessieren"
+} = Astro.props as Partial<Props>;
 ---
 
 {items.length > 0 && (
   <Section
-    eyebrow="Weiterführende Inhalte"
-    title="Das könnte dich auch interessieren"
+    eyebrow={eyebrow}
+    title={title}
   >
     <Grid columns={3}>
       {items.map((item) => (

@@ -1,7 +1,7 @@
-:root {
+.home3 {
   --home3-text: var(--pt-color-text);
   --home3-muted: var(--pt-color-text-muted);
-  --home3-accent: var(--pt-color-brand-500);
+  --home3-accent: var(--pt-color-accent-text);
   --home3-dark: #0b2b26;
   --home3-line: var(--pt-color-border);
   --home3-soft: var(--pt-color-surface-soft);
@@ -298,6 +298,7 @@
 
 .home3-category-card h3 {
   margin: 0.45rem 0;
+  color: var(--pt-color-text-inverse);
   font-size: clamp(1.6rem, 3vw, 2.6rem);
 }
 
@@ -424,6 +425,7 @@
 .home3-method__intro h2 {
   max-width: 15ch;
   margin: 0.6rem 0 1rem;
+  color: var(--pt-color-text-inverse);
   font-size: clamp(2rem, 4vw, 3.8rem);
   line-height: 1.03;
   letter-spacing: -0.05em;
@@ -461,6 +463,10 @@
 .home3-method li h3,
 .home3-method li p {
   margin: 0;
+}
+
+.home3-method li h3 {
+  color: var(--pt-color-text-inverse);
 }
 
 .home3-method li p {

@@ -13,7 +13,7 @@
 .ui-comparison-card span {
   display: inline-flex;
   margin-bottom: 12px;
-  color: var(--primary-dark);
+  color: var(--primary-text);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -56,9 +56,9 @@
 .ui-metric-card {
   display: block;
   padding: 26px;
-  border: 1px solid rgba(20, 32, 26, 0.08);
+  border: 1px solid var(--border);
   border-radius: 22px;
-  background: white;
+  background: var(--surface);
   color: inherit;
   text-decoration: none;
   box-shadow: 0 12px 36px rgba(20, 32, 26, 0.05);
@@ -83,7 +83,7 @@
 .ui-card strong {
   display: inline-flex;
   margin-top: 18px;
-  color: var(--primary-dark);
+  color: var(--primary-text);
 }
 
 .ui-button,
@@ -106,12 +106,12 @@
 
 .ui-button-secondary {
   border: 1px solid var(--border);
-  background: white;
+  background: var(--surface);
   color: var(--text);
 }
 
 .ui-button-ghost {
-  color: var(--primary-dark);
+  color: var(--primary-text);
 }
 
 .ui-badge {
@@ -119,7 +119,7 @@
   padding: 8px 13px;
   border-radius: var(--pt-radius-pill);
   background: rgba(22, 163, 74, 0.10);
-  color: var(--primary-dark);
+  color: var(--primary-text);
   font-size: 12px;
   font-weight: 900;
 }
@@ -133,7 +133,11 @@
   padding: 34px;
   border-radius: 28px;
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, white, rgba(240, 253, 244, 0.7));
+  background: linear-gradient(
+    135deg,
+    var(--surface),
+    color-mix(in srgb, var(--primary-soft) 70%, var(--surface))
+  );
 }
 
 .ui-callout h2 {
@@ -167,7 +171,7 @@
   padding: 22px;
   border: 1px solid var(--border);
   border-radius: 22px;
-  background: white;
+  background: var(--surface);
 }
 
 .ui-timeline-item > span {
@@ -178,7 +182,7 @@
   justify-content: center;
   border-radius: 14px;
   background: rgba(22, 163, 74, 0.10);
-  color: var(--primary-dark);
+  color: var(--primary-text);
   font-weight: 900;
 }
 
@@ -202,7 +206,7 @@
   padding: 20px 22px;
   border: 1px solid var(--border);
   border-radius: 20px;
-  background: white;
+  background: var(--surface);
 }
 
 .ui-accordion-item summary {
@@ -232,7 +236,7 @@
 .ui-comparison-card a {
   margin-top: 18px;
   border: 1px solid rgba(22, 163, 74, 0.25);
-  color: var(--primary-dark);
+  color: var(--primary-text);
 }
 
 @media (max-width: 900px) {
@@ -243,3 +247,15 @@
     grid-template-columns: 1fr;
   }
    }
+
+/* ui-semantic-card-foregrounds-25.8.3:start */
+.ui-section-header h2,
+.ui-card h3,
+.ui-comparison-card h3,
+.ui-metric-card strong,
+.ui-timeline-item h3,
+.ui-callout h2,
+.ui-accordion-item summary {
+  color: var(--text);
+}
+/* ui-semantic-card-foregrounds-25.8.3:end */

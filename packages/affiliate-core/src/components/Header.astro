@@ -171,6 +171,11 @@ const mobileGroups = hasExplicitMobileGroups
 </script>
 
 <style is:global>
+  /* header-semantic-brand-foreground-25.8.3 */
+  .site-header-v2 .brand-name {
+    color: var(--pt-color-text);
+  }
+
   .site-header-v2 .header-container-v2 {
     position: relative;
     display: grid;
@@ -302,7 +307,10 @@ const mobileGroups = hasExplicitMobileGroups
       overflow-y: auto;
       margin: 0;
       padding: var(--pt-space-2);
+      border: 1px solid var(--pt-color-border);
       border-radius: var(--pt-radius-xl);
+      color: var(--pt-color-text);
+      background: var(--pt-color-surface);
       box-shadow: var(--pt-shadow-lg);
       visibility: hidden;
       opacity: 0;
@@ -400,20 +408,6 @@ const mobileGroups = hasExplicitMobileGroups
       will-change: auto;
     }
 
-    html[data-theme="dark"] .site-header-v2,
-    html.dark .site-header-v2,
-    body[data-theme="dark"] .site-header-v2,
-    body.dark .site-header-v2 {
-      background: var(--pt-color-surface);
-    }
-
-    html[data-theme="dark"] .site-header-v2 .main-nav-v2,
-    html.dark .site-header-v2 .main-nav-v2,
-    body[data-theme="dark"] .site-header-v2 .main-nav-v2,
-    body.dark .site-header-v2 .main-nav-v2 {
-      background: var(--pt-color-surface);
-      box-shadow: none;
-    }
 
     .site-header-v2 .main-nav-v2__desktop a {
       transition:

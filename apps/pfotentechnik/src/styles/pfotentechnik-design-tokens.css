@@ -78,4 +78,27 @@
   --pt-color-text-inverse: #ffffff;
   --pt-color-text-inverse-muted: rgb(255 255 255 / 0.74);
   --pt-color-media-stage: #eef1ed;
+  --pt-color-brand-surface: #102019;
+  --pt-color-brand-surface-strong: #07120c;
+  --pt-color-on-brand-surface: #ffffff;
+  --pt-color-on-brand-surface-muted: rgb(255 255 255 / 0.72);
+  --pt-color-on-brand-surface-accent: #86efac;
 }
+
+/* pfotentechnik-semantic-foreground-roles-25.8.3:start */
+:root {
+  --pt-color-accent-text: #1f5f35;
+  --pt-color-link: var(--pt-color-accent-text);
+}
+
+[data-theme="dark"],
+.dark {
+  --pt-color-accent-text: #72e6a6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --pt-color-accent-text: #72e6a6;
+  }
+}
+/* pfotentechnik-semantic-foreground-roles-25.8.3:end */

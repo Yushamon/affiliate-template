@@ -11,6 +11,20 @@ interface Props {
 }
 
 const { facts = [] } = Astro.props;
+
+const sentenceCase = (value: string) => {
+  const trimmed = String(value ?? "").trim();
+  if (!trimmed) return "";
+
+  const firstWord = trimmed.match(/^[„"'([{]*([^\s,;:]+)/u)?.[1] ?? "";
+  if (/^\p{Ll}.*\p{Lu}/u.test(firstWord)) return trimmed;
+
+  return trimmed.replace(
+    /^([„"'([{]*)(\p{Ll})/u,
+    (_match, prefix: string, letter: string) =>
+      `${prefix}${letter.toLocaleUpperCase("de-DE")}`
+  );
+};
 ---
 
 {facts.length > 0 && (
@@ -25,7 +39,7 @@ const { facts = [] } = Astro.props;
         <div>
           <dt>
             <span>{fact.label}</span>
-            <strong>{fact.value}</strong>
+            <strong>{sentenceCase(fact.value)}</strong>
           </dt>
           <dd>
             <span aria-hidden="true">→</span>

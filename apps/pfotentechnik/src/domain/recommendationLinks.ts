@@ -17,9 +17,17 @@ export type RecommendationLink = {
   highlights?: string[];
 };
 
+type RecommendationFamily =
+  | "futterautomaten"
+  | "trinkbrunnen"
+  | "gps-tracker"
+  | "katzenklappen"
+  | "haustierkameras";
+
 type Context = {
   animal?: "dog" | "cat";
   petSize?: "small" | "medium" | "large";
+  family?: RecommendationFamily;
   topics: Set<LinkTopic>;
   intents: Set<string>;
   tokens: Set<string>;
@@ -62,18 +70,61 @@ const detectPetSize = (data: Record<string, any>, text: string) => {
 export const detectRecommendationTopics = (data: Record<string, any>) =>
   detectLinkTopics(collectValues(data));
 
+const FAMILY_PATTERNS: Array<[RecommendationFamily, RegExp]> = [
+  ["trinkbrunnen", /\b(trinkbrunnen|wasserbrunnen|pet fountain|drinking fountain|fountain)\b/],
+  ["futterautomaten", /\b(futterautomat|futterautomaten|futterspender|automatic feeder|pet feeder|feeder)\b/],
+  ["gps-tracker", /\b(gps tracker|gps-tracker|haustiertracker|ortungstracker|tracking halsband)\b/],
+  ["katzenklappen", /\b(katzenklappe|katzenklappen|mikrochipklappe|cat flap)\b/],
+  ["haustierkameras", /\b(haustierkamera|tierkamera|pet camera|kamera fuer haustiere)\b/]
+];
+
+const detectRecommendationFamily = (
+  data: Record<string, any>,
+  topics: LinkTopic[],
+  normalizedText: string
+): RecommendationFamily | undefined => {
+  const topicFamily = topics.find((topic): topic is RecommendationFamily =>
+    ["futterautomaten", "trinkbrunnen", "gps-tracker", "katzenklappen", "haustierkameras"].includes(topic)
+  );
+  if (topicFamily) return topicFamily;
+
+  const category = normalize([
+    typeof data.category === "string" ? data.category : data.category?.key,
+    typeof data.category === "object" ? data.category?.label : "",
+    data.contentPlatform?.cluster,
+    ...asArray(data.hub?.sections)
+  ].filter(Boolean).join(" "));
+
+  for (const [family, pattern] of FAMILY_PATTERNS) {
+    if (pattern.test(category)) return family;
+  }
+
+  for (const [family, pattern] of FAMILY_PATTERNS) {
+    if (pattern.test(normalizedText)) return family;
+  }
+
+  return undefined;
+};
+
 const buildContext = (data: Record<string, any>): Context => {
   const text = collectText(data);
+  const topics = detectRecommendationTopics(data);
   return {
     animal: detectAnimal(data, text),
     petSize: detectPetSize(data, text),
-    topics: new Set(detectRecommendationTopics(data)),
+    family: detectRecommendationFamily(data, topics, text),
+    topics: new Set(topics),
     intents: new Set(detectLinkIntents(collectValues(data))),
     tokens: new Set(text.split(/\s+/).filter((token) => token.length >= 4))
   };
 };
 const hasCompatibleRecommendationTopic = (source: Context, candidate: Context) => {
-  if (source.topics.size === 0 || candidate.topics.size === 0) return true;
+  if (source.family && candidate.family && source.family !== candidate.family) {
+    return false;
+  }
+  if (source.topics.size === 0 || candidate.topics.size === 0) {
+    return !source.family || !candidate.family || source.family === candidate.family;
+  }
   return overlapCount(source.topics, candidate.topics) > 0;
 };
 const overlapCount = <T>(left: Set<T>, right: Set<T>) => [...left].filter((value) => right.has(value)).length;
