@@ -94,7 +94,7 @@
   flex-direction: column;
   justify-content: center;
   padding: clamp(2rem, 6vw, 5rem);
-  color: var(--pt-color-surface);
+  color: var(--pt-color-text);
 }
 
 .comparison-eyebrow--hero {
@@ -1223,7 +1223,7 @@
   .comparison-sticky-bar {
     border-color: rgba(148, 163, 184, 0.24);
     background: rgba(15, 29, 47, 0.96);
-    color: var(--pt-color-page);
+    color: var(--pt-color-text);
     box-shadow: 0 18px 55px rgba(0, 0, 0, 0.42);
   }
 
@@ -1232,7 +1232,7 @@
   }
 
   .comparison-sticky-bar strong {
-    color: var(--pt-color-page);
+    color: var(--pt-color-text);
   }
 
   .comparison-sticky-bar .comparison-button--secondary {
@@ -2820,7 +2820,7 @@ body.dark,
 }
 
 .comparison-view-tab.is-active {
-  color: var(--pt-color-surface);
+  color: var(--pt-color-text);
   background: var(--comparison-accent);
 }
 
@@ -4318,7 +4318,7 @@ html.dark .comparison-table-price[data-price-assessment="expensive"] > small {
 
   .comparison-shell .comparison-button:not(.comparison-button--secondary),
   .comparison-shell [class*="sticky"] .comparison-button:not(.comparison-button--secondary) {
-    color: var(--pt-color-surface);
+    color: var(--pt-color-text);
     background: var(--comparison-accent);
   }
 

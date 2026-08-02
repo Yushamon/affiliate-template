@@ -656,7 +656,7 @@
 .article .product-review-affiliate-cta {
   border: 0;
   background: var(--primary);
-  color: var(--pt-color-surface);
+  color: var(--pt-color-text);
   font-weight: 900;
 }
 
@@ -668,7 +668,7 @@
 .article .product-review-affiliate-cta:hover {
   transform: translateY(-2px);
   background: var(--primary-dark);
-  color: var(--pt-color-surface);
+  color: var(--pt-color-text);
 }
 
 .product-ranking-cta[aria-disabled="true"],
