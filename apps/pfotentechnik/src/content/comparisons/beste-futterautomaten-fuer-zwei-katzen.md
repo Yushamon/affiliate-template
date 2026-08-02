@@ -43,9 +43,9 @@ items:
     label: SureFeed Microchip Pet Feeder
     type: product
     recommendation: >-
-      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung funktioniert
-      nur über einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, benötigt das Bundle oder einen
-      separat erhältlichen Hub. Preis und Lieferbarkeit deshalb immer aktuell beim Anbieter prüfen.
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung
+      benötigt einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, braucht das Bundle oder
+      einen separat erhältlichen Hub. Preis und Lieferbarkeit deshalb aktuell beim Anbieter prüfen.
     values:
       profil: Beste Zugangskontrolle ohne App
       portionierung: Keine automatische Ausgabe; Napf wird manuell befüllt
@@ -322,7 +322,6 @@ heroImage:
   src: ../../assets/images/products/surefeed-microchip-pet-feeder/comparison.webp
   alt: Beste Futterautomaten für zwei Katzen – redaktionelles Vergleichsbild
 ---
-
 Bei zwei Katzen ist nicht die Behältergröße die wichtigste Frage, sondern:
 
 > **Müssen beide Katzen nur gleichzeitig fressen können – oder müssen ihre Rationen wirklich getrennt bleiben?**
@@ -980,7 +979,9 @@ Steht die passende Bauart bereits fest, zeigt der Vergleich der fünf Systeme f�
 
 ## SureFeed Connect richtig einordnen
 
-Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage. Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht fest genannt, weil Einzelgerät, Bundle und Händlerbestand voneinander abweichen können.
+Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage.
+
+Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht statisch genannt, weil Einzelgerät, Hub, Bundle und Händlerbestand voneinander abweichen können.
 
 ## Fazit
 

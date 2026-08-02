@@ -1,26 +1,29 @@
 {
-  "generatedAt": "2026-07-31T06:49:29.316Z",
+  "generatedAt": "2026-08-02T13:18:15.288Z",
   "expectedComparisons": 24,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": true,
+  "passed": false,
   "summary": {
     "comparisons": 24,
     "products": 67,
     "sourceCells": 718,
-    "allResolved": 625,
-    "allUnresolved": 93,
-    "sourceCoverage": 87,
-    "renderedCells": 588,
-    "renderedResolved": 588,
+    "allResolved": 621,
+    "allUnresolved": 97,
+    "sourceCoverage": 86.5,
+    "renderedCells": 579,
+    "renderedResolved": 579,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
     "legacyValueCount": 476,
     "overrideCount": 218
   },
-  "failures": [],
+  "failures": [
+    "beste-futterautomaten-fuer-mehrtierhaushalte: nur 2 vollständig belegte Kriterien.",
+    "beste-futterautomaten-fuer-seniorenkatzen: nur 1 vollständig belegte Kriterien."
+  ],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -1221,9 +1224,9 @@
       "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
       "items": 3,
       "criteria": 7,
-      "visibleRows": 3,
-      "hiddenRows": 4,
-      "passed": true,
+      "visibleRows": 2,
+      "hiddenRows": 5,
+      "passed": false,
       "rows": [
         {
           "key": "tiertrennung",
@@ -1328,9 +1331,9 @@
         {
           "key": "napfkonzept",
           "label": "Napfkonzept",
-          "resolved": 2,
+          "resolved": 1,
           "total": 3,
-          "coverage": 66.7,
+          "coverage": 33.3,
           "visible": false,
           "cells": [
             {
@@ -1345,18 +1348,18 @@
             },
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "Nicht vom Hersteller ausgewiesen",
-              "resolved": true
+              "value": "–",
+              "resolved": false
             }
           ]
         },
         {
           "key": "reinigung",
           "label": "Reinigung",
-          "resolved": 3,
+          "resolved": 2,
           "total": 3,
-          "coverage": 100,
-          "visible": true,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "petlibro-granary-dual-feeder",
@@ -1370,8 +1373,8 @@
             },
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "Nicht vom Hersteller ausgewiesen",
-              "resolved": true
+              "value": "–",
+              "resolved": false
             }
           ]
         },
@@ -1395,7 +1398,7 @@
             },
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
+              "value": ">-",
               "resolved": true
             }
           ]
@@ -1733,9 +1736,9 @@
       "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
       "items": 3,
       "criteria": 6,
-      "visibleRows": 3,
-      "hiddenRows": 3,
-      "passed": true,
+      "visibleRows": 1,
+      "hiddenRows": 5,
+      "passed": false,
       "rows": [
         {
           "key": "niedriger-zugang",
@@ -1790,15 +1793,15 @@
         {
           "key": "napf",
           "label": "Napf",
-          "resolved": 3,
+          "resolved": 2,
           "total": 3,
-          "coverage": 100,
-          "visible": true,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "Nicht vom Hersteller ausgewiesen",
-              "resolved": true
+              "value": "–",
+              "resolved": false
             },
             {
               "product": "cat-mate-c500",
@@ -1840,15 +1843,15 @@
         {
           "key": "reinigung",
           "label": "Reinigung",
-          "resolved": 3,
+          "resolved": 2,
           "total": 3,
-          "coverage": 100,
-          "visible": true,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "Nicht vom Hersteller ausgewiesen",
-              "resolved": true
+              "value": "–",
+              "resolved": false
             },
             {
               "product": "cat-mate-c500",

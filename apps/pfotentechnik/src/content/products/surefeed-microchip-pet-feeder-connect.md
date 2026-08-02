@@ -57,7 +57,7 @@ images:
 price:
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-02T11:50:00.000Z"
+  checkedAt: "2026-08-02T13:00:00.000Z"
   source:
     id: "sure-petcare-de"
     label: "Sure Petcare Deutschland"
@@ -72,11 +72,11 @@ rating: 4
 score: 79
 
 priceState: "unknown"
-priceUpdated: "2026-08-02T11:50:00.000Z"
+priceUpdated: "2026-08-02T13:00:00.000Z"
 affiliateAvailable: true
 availability: "unknown"
-availabilityReason: "Herstellerseite zeigt Einzelgerät und Bundle mit getrennten Kaufsignalen; Händlerbestand kann abweichen. Aktuellen Preis und Lieferstatus prüfen."
-availabilityUpdated: "2026-08-02T11:50:00.000Z"
+availabilityReason: "Einzelgerät, Hub und Bundle haben getrennte Kaufsignale; Hersteller- und Händlerbestand können abweichen. Aktuellen Preis und Lieferstatus prüfen."
+availabilityUpdated: "2026-08-02T13:00:00.000Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -131,14 +131,14 @@ comparisonFilters:
 specs:
   - label: Futterart
     value: Nass- und Trockenfutter
-  - label: App-Steuerung
-    value: Ja, ausschließlich über einen Sure Petcare Hub
-  - label: Hub
-    value: Nicht zwingend im Einzelgerät enthalten; vorhandener kompatibler Hub nutzbar, sonst Bundle oder separater Hub nötig
+  - label: App-Verbindung
+    value: Ausschließlich über einen Sure Petcare Hub
+  - label: Hub und Bundle
+    value: Vorhandener kompatibler Hub nutzbar; sonst Bundle oder separater Hub erforderlich
   - label: App-Auswertung
     value: Fressmenge, Häufigkeit, Dauer und Tageszeiten; Push-Mitteilungen bei Fressereignissen
   - label: Portionierung
-    value: Manuell eingefüllte Portion mit integrierter Waage und LED-Anzeige auf 1 Gramm genau
+    value: Manuelles Befüllen mit integrierter Waage und LED-Anzeige auf 1 Gramm genau
   - label: Zugang
     value: Mikrochip oder kompatibler RFID-Halsbandanhänger
   - label: Kapazität
@@ -196,22 +196,22 @@ metadata:
 decisionFacts:
   - label: "Hub und App"
     value: "Sure Petcare Hub erforderlich"
-    consequence: "Mikrochipzugang und Waage arbeiten am Gerät; App-Protokolle, Push-Mitteilungen und die Auswertung der Fressgewohnheiten benötigen zusätzlich den mit dem Router verbundenen Hub."
+    consequence: "Mikrochipzugang und Portionswaage arbeiten am Gerät; App-Protokolle, Push-Mitteilungen und die Auswertung der Fressgewohnheiten benötigen zusätzlich den mit dem Router verbundenen Hub."
   - label: "Kaufvariante"
     value: "Einzelgerät oder Bundle"
-    consequence: "Wer bereits einen kompatiblen Sure Petcare Hub besitzt, kann das Einzelgerät nutzen. Beim ersten Connect-Produkt müssen Bundle oder separater Hub in Preis und Einrichtung eingeplant werden."
+    consequence: "Wer bereits einen kompatiblen Sure Petcare Hub besitzt, kann das Einzelgerät verwenden. Beim ersten Connect-Produkt müssen Bundle oder separater Hub in Preis und Einrichtung eingeplant werden."
   - label: "App-Auswertung"
     value: "Menge, Häufigkeit, Dauer und Tageszeit"
     consequence: "Die App dokumentiert individuelle Fressereignisse und kann Veränderungen sichtbar machen; sie ersetzt keine tierärztliche Bewertung auffälliger Fressmuster."
   - label: "Portionierung"
     value: "Auf 1 Gramm genau"
-    consequence: "Die integrierte Waage und LED-Anzeige helfen beim manuellen Befüllen einer festgelegten Portion, geben das Futter aber nicht zeitgesteuert aus."
-  - label: "Futterart"
-    value: "Nass- und Trockenfutter"
-    consequence: "Der geschützte Napf eignet sich auch für individuelle Feuchtfutterrationen, hat aber keinen gekühlten Vorrat."
-  - label: "Verfügbarkeit"
+    consequence: "Die integrierte Waage und LED-Anzeige helfen beim manuellen Befüllen einer festgelegten Portion; das Gerät gibt Futter nicht zeitgesteuert aus."
+  - label: "Futterart und Volumen"
+    value: "Nass- und Trockenfutter, 400 ml"
+    consequence: "Der geschützte Napf eignet sich für individuelle Rationen, besitzt aber keinen gekühlten Vorrat und keine automatische Nachfüllung."
+  - label: "Preis und Verfügbarkeit"
     value: "Aktuell prüfen"
-    consequence: "Hersteller- und Händlerbestand können für Einzelgerät, Hub und Bundle voneinander abweichen; ein statischer Preis wäre deshalb irreführend."
+    consequence: "Einzelgerät, Hub und Bundle werden getrennt angeboten. Hersteller- und Händlerbestand können voneinander abweichen; ein dauerhaft statischer Preis wäre deshalb irreführend."
 ---
 ## Kurz eingeordnet
 
@@ -219,16 +219,22 @@ Der SureFeed Mikrochip Futterautomat Connect ist ein **geschützter Einzelnapf**
 
 ## Gerät, Hub und Bundle
 
-Der Mikrochipzugang und die integrierte Waage gehören zum Gerät. Für die Verbindung mit der Sure Petcare App ist zusätzlich ein **Sure Petcare Hub** nötig, der per Ethernet am Router hängt. Bis zu zehn kompatible Connect-Geräte können einen Hub gemeinsam nutzen. Wer bereits einen passenden Hub besitzt, benötigt nur das Einzelgerät. Beim ersten Sure-Petcare-Connect-Produkt müssen Bundle oder separater Hub eingeplant werden.
+Mikrochipzugang und integrierte Portionswaage gehören zum Gerät. Für die Verbindung mit der Sure Petcare App ist zusätzlich ein **Sure Petcare Hub** nötig, der am Router angeschlossen wird. Bis zu zehn kompatible SureFeed- und SureFlap-Connect-Geräte können einen Hub gemeinsam nutzen.
+
+Wer bereits einen kompatiblen Hub besitzt, kann das Einzelgerät verwenden. Beim ersten Sure-Petcare-Connect-Produkt müssen entweder das Bundle aus Futterautomat und Hub oder ein separat erhältlicher Hub eingeplant werden.
 
 ## App-Funktionen und gemessene Fressdaten
 
-Die Waage hilft beim manuellen Portionieren auf **1 Gramm genau**. Über die App lassen sich Fressmenge, Häufigkeit, Dauer und Tageszeiten des registrierten Tieres verfolgen; außerdem sind Push-Mitteilungen bei Fressereignissen vorgesehen. Das ist eine dokumentierte Verlaufshilfe, aber kein medizinischer Befund und keine automatische Futterausgabe.
+Die integrierte Waage und LED-Portionsanzeige helfen beim manuellen Befüllen auf **1 Gramm genau**. Über die App lassen sich Fressmenge, Häufigkeit, Dauer und Tageszeiten des registrierten Tieres verfolgen; außerdem kann das System Push-Mitteilungen bei Fressereignissen senden und Statistiken als PDF bereitstellen.
+
+Das ist eine dokumentierte Verlaufshilfe, aber kein medizinischer Befund. Der Connect-Napf schützt eine manuell eingefüllte Portion und ist kein zeitgesteuerter Vorratsautomat.
 
 ## Preis und Verfügbarkeit
 
-Einzelgerät, Hub und Bundle werden getrennt angeboten. Die deutsche Herstellerseite zeigt dabei wechselnde beziehungsweise widersprüchliche Kaufsignale, während Händlerbestände abweichen können. Deshalb nennen wir im Fließtext keinen festen Preis und behandeln die Lieferbarkeit als **aktuell zu prüfen**.
+Die deutsche Herstellerseite führt Einzelgerät, separaten Hub und Bundle mit unterschiedlichen Preisen und Kaufsignalen. Gleichzeitig erscheint auf derselben Seite ein allgemeiner Hinweis auf fehlenden Bestand, während einzelne Varianten weiterhin als kaufbar dargestellt werden.
+
+Deshalb wird im redaktionellen Fließtext kein fester Preis gespeichert. Preis und Lieferbarkeit gelten als **aktuell zu prüfen**, getrennt nach Einzelgerät, Hub, Bundle und Händlerangebot.
 
 ## Quellenlage
 
-Die technischen und systembezogenen Angaben wurden am 2. August 2026 mit der [deutschen Herstellerseite zum SureFeed Mikrochip Futterautomat Connect](https://www.surepetcare.com/de-de/futterautomat/microchip-pet-feeder-connect) abgeglichen. Editorial Score und Empfehlung wurden durch diesen Datenabgleich nicht verändert.
+Die technischen und systembezogenen Angaben wurden am 2. August 2026 mit der [deutschen Herstellerseite zum SureFeed Mikrochip Futterautomat Connect](https://www.surepetcare.com/de-de/futterautomat/microchip-pet-feeder-connect) abgeglichen. Editorial Score und redaktionelle Empfehlung wurden durch diesen Datenabgleich nicht verändert.
