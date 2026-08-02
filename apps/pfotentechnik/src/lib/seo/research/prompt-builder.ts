@@ -164,6 +164,11 @@ export const buildWeeklyResearchPrompt = (input: ResearchPromptInput): string =>
   "- acceptanceCriteria enthält objektiv prüfbare Fertig-Kriterien.",
   "- verification nennt Tests, Audits und den Build.",
   "- Das Briefing muss ohne weitere Interpretation als Auftrag für einen Installer-Patch funktionieren.",
+  "- Das implementationBrief muss den späteren Installer als idempotent, plattformübergreifend und teillauffähig verlangen.",
+  "- Verlange strukturelle Dateiänderungen statt fragiler langer String-Replacements oder komplexer dynamischer RegExp.",
+  "- Verlange Backups, Ergebnisvalidierung, node --check, Prüfung vorhandener npm-Skripte und einen erfolgreichen zweiten Installerlauf.",
+  "- Tests müssen Verhalten und Datenstruktur prüfen, nicht exakte Formatierung, Variablennamen oder zufällige Quelltextfragmente.",
+  "- Der spätere Auftrag soll genau einen finalen Installer vorsehen und erwartbare Hotfix-Ketten vermeiden.",
   "",
 
   "PRIORISIERUNG",

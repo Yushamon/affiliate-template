@@ -110,8 +110,9 @@ items:
     label: SureFeed Microchip Pet Feeder
     type: product
     recommendation: >-
-      Beste Speziallösung gegen Futterklau und für getrennte Nassfutterrationen, aber kein zeitgesteuerter
-      Mahlzeitenautomat.
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung funktioniert
+      nur über einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, benötigt das Bundle oder einen
+      separat erhältlichen Hub. Preis und Lieferbarkeit deshalb immer aktuell beim Anbieter prüfen.
     values:
       profil: Beste Zugangskontrolle
       kuehlprinzip: Keine aktive Kühlung
@@ -826,6 +827,10 @@ Der [Hauptvergleich](/smarte-futterautomaten/) und der [App-Ratgeber](/vergleich
 ## Aktive Kühlung als eigenes System
 
 Der [PETLIBRO Polar](/produkt/petlibro-polar-wet-food-feeder/) arbeitet mit thermoelektrischer Aktivkühlung und drei vorbereiteten Fächern. Damit ist er konstruktiv anders einzuordnen als Timer-Schalen mit Kühlakkus. Im Nassfutterautomaten-Vergleich werden beide Prinzipien getrennt bewertet.
+
+## SureFeed Connect richtig einordnen
+
+Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage. Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht fest genannt, weil Einzelgerät, Bundle und Händlerbestand voneinander abweichen können.
 
 ## Fazit
 

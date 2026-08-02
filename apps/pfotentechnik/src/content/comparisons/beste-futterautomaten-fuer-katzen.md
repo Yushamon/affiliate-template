@@ -113,8 +113,9 @@ items:
     label: SureFeed Microchip Pet Feeder
     type: product
     recommendation: >-
-      Beste Lösung gegen Futterklau und für getrennte Rationen, wenn Zugangskontrolle wichtiger ist als Zeitsteuerung
-      oder App.
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung funktioniert
+      nur über einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, benötigt das Bundle oder einen
+      separat erhältlichen Hub. Preis und Lieferbarkeit deshalb immer aktuell beim Anbieter prüfen.
     values:
       profil: Beste Zugangskontrolle
       portionierung: Keine automatische Portionsausgabe; Napf wird manuell befüllt
@@ -468,6 +469,10 @@ Nicht gleichgesetzt werden Ausgabeprotokoll und Fressnachweis, Doppelschale und 
 - [Trockenfutter oder Nassfutter für Katzen?](/trockenfutter-oder-nassfutter-katze/)
 
 Herstellerübersichten: [PETLIBRO](/hersteller/petlibro/), [PETKIT](/hersteller/petkit/), [Xiaomi](/hersteller/xiaomi/), [Cat Mate](/hersteller/cat-mate/), [SureFeed](/hersteller/surefeed/) und [oneisall](/hersteller/oneisall/).
+
+## SureFeed Connect richtig einordnen
+
+Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage. Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht fest genannt, weil Einzelgerät, Bundle und Händlerbestand voneinander abweichen können.
 
 ## Quellen und Transparenz
 

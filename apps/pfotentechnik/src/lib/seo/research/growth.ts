@@ -238,6 +238,40 @@ export const buildImplementationBrief = (item: any): ImplementationBrief => {
 const promptList = (title: string, entries: string[]): string[] =>
   entries.length ? [title, ...entries.map((entry) => `- ${entry}`), ""] : [];
 
+export const PATCH_QUALITY_STANDARD = [
+  "PATCH-QUALITÄTSSTANDARD",
+  "",
+  "Der Installer-Patch muss produktionsreif, konfliktarm und wiederholbar sein.",
+  "",
+  "VERBINDLICHE INSTALLER-REGELN",
+  "- Vor jeder Änderung den aktuellen Dateistand und bereits vorhandene Teiländerungen prüfen.",
+  "- Ausgangsstand, teilweise angewendeten Stand und vollständig angewendeten Stand korrekt behandeln.",
+  "- Beim zweiten Lauf erfolgreich und ohne unnötige Schreibvorgänge durchlaufen.",
+  "- Strukturelle Bearbeitung bevorzugen: JSON parsen, YAML/Frontmatter schlüssel- oder zeilenbasiert ändern, Code über klar abgegrenzte Funktionsblöcke und CSS über Selektor plus Klammerbalance bearbeiten.",
+  "- Keine fragilen langen String-Replacements verwenden, wenn eine strukturelle Lösung möglich ist.",
+  "- Keine komplexen dynamischen regulären Ausdrücke verwenden. Unvermeidbare RegExp vor der ersten Dateiänderung kompilieren und testen.",
+  "- Nicht von exakter Einrückung, Zeilenumbrüchen oder Formatierung abhängig sein.",
+  "- Vor dem Schreiben Backups unter .patch-backups anlegen.",
+  "- Nach dem Schreiben den tatsächlichen Zielzustand fachlich validieren, bevor Tests oder Audits starten.",
+  "- Nur Dateien im definierten Scope verändern. Scores, Empfehlungen, Preise oder andere redaktionelle Daten nicht stillschweigend verändern.",
+  "- Ausschließlich plattformübergreifende Node-APIs verwenden. Der Installer muss unter Windows, macOS und Linux sowie Node 24 und Node 26 laufen.",
+  "- Keine Shell-spezifischen Befehle, Pfadtrenner oder Unix-Werkzeuge voraussetzen.",
+  "",
+  "TESTSTANDARD",
+  "- Tests prüfen Verhalten, Datenstruktur und Ergebnis, nicht exakte Formatierung oder zufällige Variablennamen.",
+  "- Mindestens unveränderten Ausgangsstand, teilweise angewendeten Stand und zweiten Installerlauf berücksichtigen.",
+  "- Vor Bereitstellung node --check für den Installer ausführen.",
+  "- Alle erzeugten regulären Ausdrücke tatsächlich kompilieren.",
+  "- Verwendete npm-Skripte vorher aus package.json verifizieren.",
+  "- Relevante bestehende Tests und Audits ausführen; danach den vollständigen Build ausführen.",
+  "- Ein fehlgeschlagener Test darf nicht durch Abschwächung fachlicher Anforderungen passend gemacht werden.",
+  "",
+  "AUSGABE DES PATCH-AUFTRAGS",
+  "- Genau einen finalen Installer bereitstellen, nicht eine geplante Folge aus Basispatch und erwartbaren Hotfixes.",
+  "- Falls der Repository-Stand widersprüchlich ist, Ursache vor dem Schreiben klären oder mit einer klaren Fehlermeldung abbrechen.",
+  "- Der Installer muss seine Änderungen und bereits aktuelle Dateien verständlich protokollieren."
+] as const;
+
 export const buildResearchImplementationPrompt = (
   item: any,
   brief = buildImplementationBrief(item)
@@ -269,6 +303,8 @@ export const buildResearchImplementationPrompt = (
   ...list<any>(item?.evidence).map((entry) =>
     `- ${text(entry?.source, "Quelle")}: ${text(entry?.note)}${text(entry?.url) ? ` (${text(entry?.url)})` : ""}`
   ),
+  "",
+  ...PATCH_QUALITY_STANDARD,
   "",
   "Arbeite bis zur vollständig implementierten und getesteten Lösung. Keine reine Analyse, keine Mockups und keine Platzhalter."
 ].join("\n");

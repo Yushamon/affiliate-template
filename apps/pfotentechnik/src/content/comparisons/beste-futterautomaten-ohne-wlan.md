@@ -29,7 +29,10 @@ items:
   - slug: surefeed-microchip-pet-feeder-connect
     type: product
     label: Beste Wahl gegen Futterklau
-    recommendation: Für Haushalte, in denen nur ein bestimmtes Tier Zugang zur Portion erhalten soll.
+    recommendation: >-
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung funktioniert
+      nur über einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, benötigt das Bundle oder einen
+      separat erhältlichen Hub. Preis und Lieferbarkeit deshalb immer aktuell beim Anbieter prüfen.
     values:
       offlineKonzept: Mikrochip-Napf
       futterart: Nass- und Trockenfutter
@@ -225,6 +228,10 @@ Unsere stärkste Empfehlung in diesem Vergleich ist **Beste Wahl für Nassfutter
 ## Testmethodik
 
 Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare Herstellerangaben und die im Produktkatalog gepflegte redaktionelle Einordnung. Unterschiede werden nur dann als Vorteil gewertet, wenn sie für das jeweilige Nutzungsszenario relevant sind. Unbelegte Angaben und nicht direkt vergleichbare Marketingwerte werden nicht gleichgesetzt.
+
+## SureFeed Connect richtig einordnen
+
+Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage. Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht fest genannt, weil Einzelgerät, Bundle und Händlerbestand voneinander abweichen können.
 
 ## Quellen
 

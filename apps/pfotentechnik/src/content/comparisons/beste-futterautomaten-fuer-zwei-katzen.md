@@ -42,7 +42,10 @@ items:
   - slug: surefeed-microchip-pet-feeder-connect
     label: SureFeed Microchip Pet Feeder
     type: product
-    recommendation: Beste Wahl gegen Futterklau und für getrennte Rationen, wenn jede Katze einen kontrollierten Futterplatz benötigt.
+    recommendation: >-
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung funktioniert
+      nur über einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, benötigt das Bundle oder einen
+      separat erhältlichen Hub. Preis und Lieferbarkeit deshalb immer aktuell beim Anbieter prüfen.
     values:
       profil: Beste Zugangskontrolle ohne App
       portionierung: Keine automatische Ausgabe; Napf wird manuell befüllt
@@ -974,6 +977,10 @@ Der übergeordnete Überblick [Smarte Futterautomaten](/smarte-futterautomaten/)
 Dieser Ratgeber ist bewusst auf **zwei Katzen** zugeschnitten. Für Haushalte mit mehreren Katzen, mehreren Hunden oder einer Mischung aus Hund und Katze gelten zusätzliche Anforderungen an Napfhöhe, Futterart, Standort und Zugang. Diese breitere Planung behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/).
 
 Steht die passende Bauart bereits fest, zeigt der Vergleich der fünf Systeme für zwei Katzen konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
+
+## SureFeed Connect richtig einordnen
+
+Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage. Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht fest genannt, weil Einzelgerät, Bundle und Händlerbestand voneinander abweichen können.
 
 ## Fazit
 
