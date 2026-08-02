@@ -1306,3 +1306,23 @@
 }
 
 /* PT_HOME_CARD_UNIFICATION_13_2_0_END */
+
+/* home-layout-ownership-26.0.6:start */
+/*
+ * Homepage layout belongs to the homepage component stylesheet.
+ * Generic layout.css must not know about .container--home or .home3.
+ */
+.container--home {
+  padding-top: 0;
+}
+
+@media (max-width: 45rem) {
+  .container--home .home3-hero {
+    margin-top: 0;
+  }
+
+  .container--home .home3-hero__content {
+    padding-bottom: clamp(2.65rem, 7vw, 3.5rem);
+  }
+}
+/* home-layout-ownership-26.0.6:end */
