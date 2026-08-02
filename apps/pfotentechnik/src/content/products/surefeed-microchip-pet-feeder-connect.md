@@ -61,7 +61,7 @@ price:
   source:
     id: "sure-petcare-de"
     label: "Sure Petcare Deutschland"
-    type: "manufacturer"
+    type: "manual"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"

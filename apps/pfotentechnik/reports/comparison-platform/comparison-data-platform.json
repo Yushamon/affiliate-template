@@ -1,29 +1,26 @@
 {
-  "generatedAt": "2026-08-02T13:18:15.288Z",
+  "generatedAt": "2026-08-02T13:33:04.714Z",
   "expectedComparisons": 24,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": false,
+  "passed": true,
   "summary": {
     "comparisons": 24,
     "products": 67,
     "sourceCells": 718,
-    "allResolved": 621,
-    "allUnresolved": 97,
-    "sourceCoverage": 86.5,
-    "renderedCells": 579,
-    "renderedResolved": 579,
+    "allResolved": 625,
+    "allUnresolved": 93,
+    "sourceCoverage": 87,
+    "renderedCells": 591,
+    "renderedResolved": 591,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
     "legacyValueCount": 476,
     "overrideCount": 218
   },
-  "failures": [
-    "beste-futterautomaten-fuer-mehrtierhaushalte: nur 2 vollständig belegte Kriterien.",
-    "beste-futterautomaten-fuer-seniorenkatzen: nur 1 vollständig belegte Kriterien."
-  ],
+  "failures": [],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -1224,22 +1221,22 @@
       "file": "src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
       "items": 3,
       "criteria": 7,
-      "visibleRows": 2,
-      "hiddenRows": 5,
-      "passed": false,
+      "visibleRows": 4,
+      "hiddenRows": 3,
+      "passed": true,
       "rows": [
         {
           "key": "tiertrennung",
           "label": "Tiertrennung",
-          "resolved": 2,
+          "resolved": 3,
           "total": 3,
-          "coverage": 66.7,
-          "visible": false,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "petlibro-granary-dual-feeder",
-              "value": "–",
-              "resolved": false
+              "value": "Keine individuelle Tiertrennung; beide Tiere können beide Näpfe erreichen",
+              "resolved": true
             },
             {
               "product": "petkit-yumshare-dual-hopper",
@@ -1256,15 +1253,15 @@
         {
           "key": "zugangskontrolle",
           "label": "Zugangskontrolle",
-          "resolved": 2,
+          "resolved": 3,
           "total": 3,
-          "coverage": 66.7,
-          "visible": false,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "petlibro-granary-dual-feeder",
-              "value": "–",
-              "resolved": false
+              "value": "Keine individuelle Tiertrennung; beide Tiere können beide Näpfe erreichen",
+              "resolved": true
             },
             {
               "product": "petkit-yumshare-dual-hopper",
@@ -1736,9 +1733,9 @@
       "file": "src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
       "items": 3,
       "criteria": 6,
-      "visibleRows": 1,
-      "hiddenRows": 5,
-      "passed": false,
+      "visibleRows": 3,
+      "hiddenRows": 3,
+      "passed": true,
       "rows": [
         {
           "key": "niedriger-zugang",
@@ -1793,15 +1790,15 @@
         {
           "key": "napf",
           "label": "Napf",
-          "resolved": 2,
+          "resolved": 3,
           "total": 3,
-          "coverage": 66.7,
-          "visible": false,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "–",
-              "resolved": false
+              "value": "Geschützter 400-ml-Einzelnapf für Nass- und Trockenfutter",
+              "resolved": true
             },
             {
               "product": "cat-mate-c500",
@@ -1843,15 +1840,15 @@
         {
           "key": "reinigung",
           "label": "Reinigung",
-          "resolved": 2,
+          "resolved": 3,
           "total": 3,
-          "coverage": 66.7,
-          "visible": false,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "surefeed-microchip-pet-feeder-connect",
-              "value": "–",
-              "resolved": false
+              "value": "Geschützter 400-ml-Einzelnapf für Nass- und Trockenfutter",
+              "resolved": true
             },
             {
               "product": "cat-mate-c500",

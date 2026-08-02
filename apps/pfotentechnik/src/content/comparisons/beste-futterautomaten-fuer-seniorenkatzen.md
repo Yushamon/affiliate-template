@@ -53,7 +53,9 @@ items:
       benötigt einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, braucht das Bundle oder
       einen separat erhältlichen Hub. Preis und Lieferbarkeit deshalb aktuell beim Anbieter prüfen.
     values: {}
-    overrides: {}
+    overrides:
+      napf: "Geschützter 400-ml-Einzelnapf für Nass- und Trockenfutter"
+      reinigung: "Napf und zugängliche Futterflächen regelmäßig entnehmen beziehungsweise abwischen; elektrische Basis nicht eintauchen"
   - slug: cat-mate-c500
     label: Cat Mate C500
     type: product

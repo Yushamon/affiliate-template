@@ -1,6 +1,6 @@
 {
   "version": "25.5.0",
-  "generatedAt": "2026-08-01T20:43:16.281Z",
+  "generatedAt": "2026-08-02T13:33:08.539Z",
   "passed": true,
   "skipBuild": true,
   "steps": [
@@ -8,28 +8,28 @@
       "id": "tests",
       "label": "Product-Standard-3-Tests",
       "status": "passed",
-      "durationMs": 407,
+      "durationMs": 1222,
       "exitCode": 0
     },
     {
       "id": "enricher-tests",
       "label": "Enricher-Tests",
       "status": "passed",
-      "durationMs": 393,
+      "durationMs": 799,
       "exitCode": 0
     },
     {
       "id": "audit",
       "label": "Product-Standard-3-Audit",
       "status": "passed",
-      "durationMs": 301,
+      "durationMs": 671,
       "exitCode": 0
     },
     {
       "id": "enrichment-preview",
       "label": "Enrichment-Vorschau",
       "status": "passed",
-      "durationMs": 280,
+      "durationMs": 540,
       "exitCode": 0
     }
   ],

@@ -1,11 +1,11 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-02T13:18:15.288Z
+Erstellt: 2026-08-02T13:33:04.714Z
 
-**Status: NICHT BESTANDEN**
+**Status: BESTANDEN**
 
 - Vergleiche: 24 / 24
-- Quellabdeckung: 86.5 %
+- Quellabdeckung: 87 %
 - öffentlich gerenderte Abdeckung: 100 %
 - alte values-Felder: 476
 - bewusste Overrides: 218
@@ -18,9 +18,9 @@ Erstellt: 2026-08-02T13:18:15.288Z
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-kleine-hunde` | 3 | 3 | 5 | OK |
-| `beste-futterautomaten-fuer-mehrtierhaushalte` | 3 | 2 | 5 | BLOCKIERT |
+| `beste-futterautomaten-fuer-mehrtierhaushalte` | 3 | 4 | 3 | OK |
 | `beste-futterautomaten-fuer-nassfutter` | 5 | 9 | 0 | OK |
-| `beste-futterautomaten-fuer-seniorenkatzen` | 3 | 1 | 5 | BLOCKIERT |
+| `beste-futterautomaten-fuer-seniorenkatzen` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-welpen` | 3 | 3 | 5 | OK |
 | `beste-futterautomaten-fuer-zwei-katzen` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-mit-akku` | 3 | 4 | 2 | OK |
@@ -41,7 +41,6 @@ Erstellt: 2026-08-02T13:18:15.288Z
 
 ## Blocker
 
-- beste-futterautomaten-fuer-mehrtierhaushalte: nur 2 vollständig belegte Kriterien.
-- beste-futterautomaten-fuer-seniorenkatzen: nur 1 vollständig belegte Kriterien.
+- Keine.
 
 Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.

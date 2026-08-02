@@ -7,10 +7,10 @@
 
 | Prüfung | Status | Dauer |
 |---|---|---:|
-| Product-Standard-3-Tests | passed | 0.41 s |
-| Enricher-Tests | passed | 0.39 s |
-| Product-Standard-3-Audit | passed | 0.30 s |
-| Enrichment-Vorschau | passed | 0.28 s |
+| Product-Standard-3-Tests | passed | 1.22 s |
+| Enricher-Tests | passed | 0.80 s |
+| Product-Standard-3-Audit | passed | 0.67 s |
+| Enrichment-Vorschau | passed | 0.54 s |
 
 ## Audit
 

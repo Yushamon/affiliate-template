@@ -49,7 +49,9 @@ items:
       Sinnvolle Doppelschalen-Lösung für zwei friedlich fressende Tiere mit ähnlichem Bedarf, wenn App-Steuerung und ein
       großer Trockenfuttervorrat wichtiger sind als Zugangskontrolle.
     values: {}
-    overrides: {}
+    overrides:
+      tiertrennung: "Keine individuelle Tiertrennung; beide Tiere können beide Näpfe erreichen"
+      zugangskontrolle: "Keine Mikrochip- oder RFID-Zugangskontrolle"
   - slug: petkit-yumshare-dual-hopper
     label: PETKIT YumShare Dual-Hopper 2
     type: product
