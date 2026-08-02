@@ -87,6 +87,16 @@ const outputExample = {
       title: "zusammengehöriger Arbeitsblock",
       sequence: []
     },
+    implementationBrief: {
+      goal: "welches konkrete Ergebnis erreicht werden soll",
+      problem: "welches belegte Problem die aktuelle Seite oder der Bestand hat",
+      userValue: "welche Nutzerfrage oder Kaufentscheidung danach besser gelöst wird",
+      implementation: ["konkrete Änderung 1", "konkrete Änderung 2"],
+      files: ["konkrete Route oder bekannte Repository-Datei"],
+      doNotChange: ["Bereiche, die ohne Beleg unberührt bleiben müssen"],
+      acceptanceCriteria: ["objektiv prüfbares Fertig-Kriterium"],
+      verification: ["passender Test, Audit oder Build"]
+    },
     actions: [{
       type: "create-page | update-page | create-product | update-product | update-manufacturer | update-comparison | add-internal-links | manual-review",
       target: "Route, Slug oder Datei",
@@ -143,6 +153,19 @@ export const buildWeeklyResearchPrompt = (input: ResearchPromptInput): string =>
   "- Benenne betroffene Produktseiten, Vergleiche, interne Links, strukturierte Daten, Bilder und FAQs.",
   "- Schätze Aufwand konservativ in Stunden.",
   "",
+  "IMPLEMENTIERUNGS-BRIEFING",
+  "- Erzeuge für jedes Finding ein implementationBrief, das unverändert in einen neuen ChatGPT- oder Codex-Chat kopiert werden kann.",
+  "- goal beschreibt das konkrete Endergebnis.",
+  "- problem beschreibt den belegten Ist-Zustand.",
+  "- userValue erklärt die bessere Nutzerfrage oder Kaufentscheidung.",
+  "- implementation enthält konkrete ausführbare Änderungen statt vager Stichworte.",
+  "- files nennt nur bekannte Routen oder Repository-Dateien.",
+  "- doNotChange schützt Bereiche, die nicht Teil des Problems sind.",
+  "- acceptanceCriteria enthält objektiv prüfbare Fertig-Kriterien.",
+  "- verification nennt Tests, Audits und den Build.",
+  "- Das Briefing muss ohne weitere Interpretation als Auftrag für einen Installer-Patch funktionieren.",
+  "",
+
   "PRIORISIERUNG",
   "- Bewerte SEO-Nutzen, UX-Nutzen, geschäftliche Relevanz und Aktualitätsdruck jeweils von 0 bis 100.",
   "- effort ist small, medium oder large.",

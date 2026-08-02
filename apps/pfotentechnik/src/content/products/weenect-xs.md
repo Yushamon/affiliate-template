@@ -84,7 +84,7 @@ price:
   current: 44.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-27T20:27:09.089Z"
+  checkedAt: "2026-08-02T11:24:27.310Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -99,12 +99,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-07-27T20:27:09.089Z"
+priceUpdated: "2026-08-02T11:24:27.310Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T20:27:09.089Z"
+availabilityUpdated: "2026-08-02T11:24:27.310Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -284,19 +284,16 @@ faq:
       passender Sitz und ein Halsband beziehungsweise Elastikband mit
       zuverlässiger Anti-Strangulationsfunktion.
 
-
   - question: "Ist der Weenect XS auch für kleine Hunde geeignet?"
     answer: >-
       Ja. Der Hersteller nennt kleine Hunde ab 3 kg als Zielgruppe. Neben dem
       Gewicht des Trackers sollte geprüft werden, ob seine Abmessungen zum
       Halsband, Geschirr und Bewegungsprofil des Hundes passen.
 
-
   - question: "Wie viel wiegt der Weenect XS?"
     answer: >-
       Das reine Gerät wiegt laut Hersteller 27 g. Halterung, Halsband oder
       Geschirr kommen zusätzlich hinzu.
-
 
   - question: "Wie lange hält der Akku des Weenect XS?"
     answer: >-
@@ -305,18 +302,15 @@ faq:
       Tage. Empfang, Temperatur, Bewegungsprofil und Trackinghäufigkeit
       beeinflussen die reale Laufzeit.
 
-
   - question: "Benötigt der Weenect XS ein Abonnement?"
     answer: >-
       Ja. Die integrierte SIM überträgt Positionsdaten über Mobilfunk. Dafür ist
       ein kostenpflichtiges Weenect-Abonnement erforderlich.
 
-
   - question: "Kann ein Weenect-Abo mehrere Tracker versorgen?"
     answer: >-
       Mehrere Tiere können in einem Konto verwaltet werden. Laut Weenect
       benötigt jedoch jeder aktive Tracker ein eigenes Abonnement.
-
 
   - question: "Hat der Weenect XS eine unbegrenzte Reichweite?"
     answer: >-
@@ -324,13 +318,11 @@ faq:
       Positionsübertragung funktioniert aber nur, wenn Satellitenempfang und
       ein unterstütztes Mobilfunknetz verfügbar sind.
 
-
   - question: "Funktioniert der Weenect XS ohne Mobilfunkempfang?"
     answer: >-
       Der Tracker kann unter freiem Himmel weiterhin Satellitensignale
       empfangen. Ohne eine nutzbare Mobilfunkverbindung kann die Position
       jedoch nicht zuverlässig an App und Server übertragen werden.
-
 
   - question: "Ist der Weenect XS ein Bluetooth-Tracker?"
     answer: >-
@@ -338,20 +330,17 @@ faq:
       wird für Energiesparzonen genutzt; ein eigenständiger Bluetooth-Suchmodus
       wird vom Hersteller nicht als Ortungsweg ausgewiesen.
 
-
   - question: "Was bedeutet Superlive?"
     answer: >-
       Im Superlive-Modus werden Positionen in sehr kurzen Abständen bis hin zu
       Sekundenupdates übertragen. Häufiges Live-Tracking erhöht jedoch den
       Energieverbrauch deutlich.
 
-
   - question: "Ist der Weenect XS wasserdicht?"
     answer: >-
       Der Tracker trägt die Schutzklasse IP68. Weenect nennt bis zu 1,5 m
       Wassertiefe für 60 Minuten. Nach Salzwasser, Schmutz oder Nässe sollten
       Gehäuse und Ladekontakte gereinigt und vollständig getrocknet werden.
-
 
   - question: "Was bringen die WLAN-Energiesparzonen?"
     answer: >-

@@ -66,7 +66,7 @@ price:
   current: 199
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-29T20:38:53.325Z"
+  checkedAt: "2026-08-02T11:24:34.380Z"
   source:
     id: "zeromouse.com"
     label: "zeromouse.com"
@@ -82,13 +82,14 @@ conversion:
   primaryCtaLabel: Kompatibilität und Bestand prüfen
   secondaryCtaLabel: Smarte Haustiertechnik ansehen
   showSecondaryCta: true
+
 priceState: "available"
-priceUpdated: "2026-07-29T20:38:53.325Z"
+priceUpdated: "2026-08-02T11:24:34.380Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-29T20:38:53.325Z"
+availabilityUpdated: "2026-08-02T11:24:34.380Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

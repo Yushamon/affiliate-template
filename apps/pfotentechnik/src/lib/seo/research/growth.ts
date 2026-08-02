@@ -4,6 +4,17 @@ import path from "node:path";
 export type GrowthImpact = 1 | 2 | 3 | 4 | 5;
 export type GrowthHorizon = "short-term" | "strategic";
 
+
+export type ImplementationBrief = {
+  goal: string;
+  problem: string;
+  userValue: string;
+  implementation: string[];
+  files: string[];
+  doNotChange: string[];
+  acceptanceCriteria: string[];
+  verification: string[];
+};
 export type GrowthOpportunity = {
   id: string;
   title: string;
@@ -16,6 +27,8 @@ export type GrowthOpportunity = {
   gaps: string[];
   informationGain: string;
   sourceCount: number;
+  implementationBrief: ImplementationBrief;
+  implementationPrompt: string;
   gsc?: {
     impressions: number;
     clicks: number;
@@ -162,6 +175,104 @@ const compactGaps = (item: any): string[] => {
     .slice(0, 3);
 };
 
+const inferredFiles = (item: any): string[] => {
+  const entries = [
+    text(item?.repositoryMatch?.file),
+    text(item?.repositoryMatch?.route),
+    text(item?.refreshPlan?.targetRoute),
+    ...list<any>(item?.actions).map((action) => text(action?.target))
+  ].filter(Boolean);
+  return [...new Set(entries)].slice(0, 8);
+};
+
+export const buildImplementationBrief = (item: any): ImplementationBrief => {
+  const explicit = item?.implementationBrief ?? {};
+  const gaps = compactGaps(item);
+  const actions = list<any>(item?.actions);
+
+  const implementation = list<string>(explicit.implementation).length
+    ? list<string>(explicit.implementation)
+    : [
+        ...actions.map((action) => [text(action?.target), text(action?.reason)].filter(Boolean).join(": ")),
+        ...gaps.map((gap) => `Fehlenden Punkt konkret lösen: ${gap}`)
+      ].filter(Boolean).slice(0, 8);
+
+  const target = primaryTarget(item);
+  return {
+    goal: text(
+      explicit.goal,
+      target
+        ? `${text(item?.title, "Research-Aufgabe")} für ${target} vollständig umsetzen.`
+        : `${text(item?.title, "Research-Aufgabe")} vollständig umsetzen.`
+    ),
+    problem: text(explicit.problem, text(item?.reason, "Der aktuelle Bestand löst die belegte Nutzerfrage noch nicht ausreichend.")),
+    userValue: text(
+      explicit.userValue,
+      text(item?.serpGap?.informationGain, "Die Nutzerfrage wird klarer, vollständiger und entscheidungsorientierter beantwortet.")
+    ),
+    implementation,
+    files: list<string>(explicit.files).length ? list<string>(explicit.files) : inferredFiles(item),
+    doNotChange: list<string>(explicit.doNotChange).length
+      ? list<string>(explicit.doNotChange)
+      : [
+          "Keine unbelegten Produktdaten ergänzen.",
+          "Editorial Score und Empfehlung nicht ohne neuen Beleg verändern.",
+          "Preis und Verfügbarkeit nicht statisch im Fließtext festschreiben."
+        ],
+    acceptanceCriteria: list<string>(explicit.acceptanceCriteria).length
+      ? list<string>(explicit.acceptanceCriteria)
+      : [
+          ...gaps.map((gap) => `${gap} ist eindeutig und widerspruchsfrei gelöst.`),
+          "Alle neuen Aussagen sind durch die Research-Belege gedeckt.",
+          "Bestehende Funktionen außerhalb des Aufgabenbereichs bleiben unverändert."
+        ].slice(0, 8),
+    verification: list<string>(explicit.verification).length
+      ? list<string>(explicit.verification)
+      : [
+          "Relevante bestehende Tests und Audits ausführen.",
+          "npm --workspace apps/pfotentechnik run build"
+        ]
+  };
+};
+
+const promptList = (title: string, entries: string[]): string[] =>
+  entries.length ? [title, ...entries.map((entry) => `- ${entry}`), ""] : [];
+
+export const buildResearchImplementationPrompt = (
+  item: any,
+  brief = buildImplementationBrief(item)
+): string => [
+  "Du arbeitest direkt im Repository Yushamon/affiliate-template.",
+  "Betroffenes Projekt: apps/pfotentechnik",
+  "",
+  "Arbeite den folgenden Research-Auftrag vollständig ab und erstelle einen konfliktarmen, wiederholbaren Installer-Patch im Ordner 3.",
+  "Behebe Ursachen zentral. Keine neuen CSS- oder Daten-Sonderregeln, wenn eine allgemeine Lösung möglich ist.",
+  "",
+  "AUFGABE",
+  text(item?.title, "Research-Aufgabe"),
+  "",
+  "ZIEL",
+  brief.goal,
+  "",
+  "PROBLEM",
+  brief.problem,
+  "",
+  "NUTZEN FÜR DEN LESER",
+  brief.userValue,
+  "",
+  ...promptList("KONKRET UMSETZEN", brief.implementation),
+  ...promptList("BETROFFENE ZIELE ODER DATEIEN", brief.files),
+  ...promptList("NICHT ÄNDERN", brief.doNotChange),
+  ...promptList("AKZEPTANZKRITERIEN", brief.acceptanceCriteria),
+  ...promptList("PRÜFUNG", brief.verification),
+  "QUELLEN UND BELEGE",
+  ...list<any>(item?.evidence).map((entry) =>
+    `- ${text(entry?.source, "Quelle")}: ${text(entry?.note)}${text(entry?.url) ? ` (${text(entry?.url)})` : ""}`
+  ),
+  "",
+  "Arbeite bis zur vollständig implementierten und getesteten Lösung. Keine reine Analyse, keine Mockups und keine Platzhalter."
+].join("\n");
+
 const informationGain = (item: any): string => {
   const explicit = text(item?.serpGap?.informationGain);
   if (explicit) return explicit;
@@ -222,7 +333,8 @@ export const buildWeeklyGrowthOpportunities = (
     .filter((item) => item?.status === "open" || item?.status === "planned")
     .map((item) => {
       const ranking = scoreItem(item, gscSignals);
-      return {
+            const implementationBrief = buildImplementationBrief(item);
+return {
         id: text(item?.id, "research-item"),
         title: text(item?.title, "Research-Chance"),
         reason: text(item?.reason, "Konkrete Begründung fehlt."),
@@ -234,6 +346,8 @@ export const buildWeeklyGrowthOpportunities = (
         gaps: compactGaps(item),
         informationGain: informationGain(item),
         sourceCount: list(item?.evidence).length,
+        implementationBrief,
+        implementationPrompt: buildResearchImplementationPrompt(item, implementationBrief),
         gsc: gscData(ranking.row),
         _score: ranking.score
       };
