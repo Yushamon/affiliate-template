@@ -1,20 +1,15 @@
-import {
-  buildChatGptPrompt,
-  buildCodexPrompt,
-} from "../../seo-copilot/prompts.ts";
-import type { PromptKind } from "../../seo-copilot/types.ts";
-import type { PromptTemplateId } from "../../seo-copilot/prompt-registry.ts";
 import type {
   Cluster,
   Opportunity,
 } from "./loadTopicalAuthority.ts";
 
-export const TOPICAL_AUTHORITY_ROADMAP_PROMPTS_VERSION = "1.0.1";
+export const TOPICAL_AUTHORITY_ROADMAP_PROMPTS_VERSION = "1.1.1";
 
-type RoadmapPromptProfile = {
-  kind: PromptKind;
-  templateId: PromptTemplateId;
-  mode: "consolidate" | "journey" | "expand" | "validate";
+type RoadmapMode = "consolidate" | "journey" | "expand" | "validate";
+
+type RoadmapProfile = {
+  mode: RoadmapMode;
+  rule: string;
 };
 
 export type TopicalAuthorityRoadmapPromptPair = {
@@ -22,46 +17,51 @@ export type TopicalAuthorityRoadmapPromptPair = {
   codex: string;
 };
 
-const profileForOpportunity = (
-  opportunity: Opportunity,
-): RoadmapPromptProfile => {
-  if (opportunity.id.startsWith("link-")) {
-    return {
-      kind: "internal-link",
-      templateId: "internal-linking-improve",
-      mode: "journey",
-    };
+const ROADMAP_PROFILES: RoadmapProfile[] = [
+  {
+    mode: "consolidate",
+    rule:
+      "Bestehende Intent-Owner, Überschneidungen und Kannibalisierungsrisiken zuerst klären. Konsolidieren und schärfen hat Vorrang vor neuen Seiten.",
+  },
+  {
+    mode: "journey",
+    rule:
+      "Die Nutzerreise innerhalb des Clusters prüfen und nur fachlich natürliche Übergänge zwischen Hub, Ratgeber, Vergleich, Produkt und Hersteller ergänzen.",
+  },
+  {
+    mode: "expand",
+    rule:
+      "Neue Seiten nur bei eigenständiger Suchintention, klarer Nutzeraufgabe und nachgewiesenem Information Gain vorsehen.",
+  },
+  {
+    mode: "validate",
+    rule:
+      "Zuerst Go/No-Go anhand strategischer Nähe, belastbarer Nachfrage- und Repository-Signale, Produktbreite, Sicherheit und kommerzieller Eignung entscheiden.",
+  },
+];
+
+const unique = (values: string[], max = 50): string[] =>
+  [...new Set(values.map((value) => value.trim()).filter(Boolean))].slice(0, max);
+
+const profileForOpportunity = (opportunity: Opportunity): RoadmapProfile => {
+  const text = `${opportunity.id} ${opportunity.title}`.toLowerCase();
+
+  if (
+    opportunity.id.startsWith("link-") ||
+    /journey|kaufnah|commercial/.test(text)
+  ) {
+    return ROADMAP_PROFILES.find((profile) => profile.mode === "journey")!;
   }
 
   if (opportunity.id.startsWith("validate-")) {
-    return {
-      kind: "niche-opportunity",
-      templateId: "validate-niche",
-      mode: "validate",
-    };
+    return ROADMAP_PROFILES.find((profile) => profile.mode === "validate")!;
   }
 
-  if (/consolidate|konsolidier/i.test(opportunity.id + opportunity.title)) {
-    return {
-      kind: "content-gap",
-      templateId: "close-content-gap",
-      mode: "consolidate",
-    };
+  if (/consolidate|konsolidier/.test(text)) {
+    return ROADMAP_PROFILES.find((profile) => profile.mode === "consolidate")!;
   }
 
-  if (/commercial|journey|kaufnah/i.test(opportunity.id + opportunity.title)) {
-    return {
-      kind: "decision-journey",
-      templateId: "decision-journey",
-      mode: "journey",
-    };
-  }
-
-  return {
-    kind: "content-gap",
-    templateId: "plan-topic-cluster",
-    mode: "expand",
-  };
+  return ROADMAP_PROFILES.find((profile) => profile.mode === "expand")!;
 };
 
 const listDocuments = (
@@ -71,160 +71,135 @@ const listDocuments = (
   (cluster?.documents ?? [])
     .filter((document) => !type || document.type === type)
     .map((document) => `${document.title} – ${document.route}`)
-    .slice(0, 30);
+    .slice(0, 40);
 
-const roadmapSpecificContext = (
+const section = (
+  title: string,
+  values: string[],
+  fallback = "Keine",
+): string =>
+  `${title}:\n${
+    values.length
+      ? values.map((value) => `- ${value}`).join("\n")
+      : `- ${fallback}`
+  }`;
+
+const buildSharedRoadmapPrompt = (
   opportunity: Opportunity,
   cluster: Cluster | undefined,
-) => {
+): string => {
   const profile = profileForOpportunity(opportunity);
   const clusterLabel = cluster?.label ?? opportunity.cluster;
   const gaps = cluster?.gaps ?? [];
-  const documents = listDocuments(cluster);
 
-  const modeRule: Record<RoadmapPromptProfile["mode"], string> = {
-    consolidate:
-      "Bestehende Intent-Owner, Überschneidungen und Kannibalisierungsrisiken zuerst klären. Konsolidieren und schärfen hat Vorrang vor neuen Seiten.",
-    journey:
-      "Die Nutzerreise innerhalb des Clusters prüfen und nur fachlich natürliche Übergänge zwischen Hub, Ratgeber, Vergleich, Produkt und Hersteller ergänzen.",
-    expand:
-      "Neue Seiten nur bei eigenständiger Suchintention, klarer Nutzeraufgabe und nachgewiesenem Information Gain vorsehen.",
-    validate:
-      "Zuerst Go/No-Go anhand strategischer Nähe, belastbarer Quellen, Produktbreite, Sicherheit und kommerzieller Eignung entscheiden. Ohne belastbare Grundlage nichts anlegen.",
-  };
+  const facts = unique([
+    `Roadmap-Chance: ${opportunity.title}`,
+    `Themencluster: ${clusterLabel}`,
+    `Priorität: ${opportunity.priority}`,
+    `Impact: ${opportunity.impact}/100`,
+    `Geschätzter Aufwand: ${opportunity.effort}`,
+    `Begründung: ${opportunity.reason}`,
+    `Vorgeschlagene Aktion: ${opportunity.action}`,
+    cluster
+      ? `Cluster-Stand: Score ${cluster.score}/100, Status ${cluster.status}, Linkabdeckung ${cluster.linkCoverage} %.`
+      : "Cluster-Detaildaten vor der Arbeit aus dem Repository neu laden.",
+    cluster
+      ? `Bestand: ${cluster.counts.pages} Ratgeber/Hubs, ${cluster.counts.comparisons} Vergleiche, ${cluster.counts.products} Produkte, ${cluster.counts.manufacturers} Hersteller.`
+      : "",
+    `Strategische Regel: ${profile.rule}`,
+    ...gaps.map((gap) => `Offene Cluster-Lücke: ${gap}`),
+  ]);
 
-  return {
-    profile,
-    clusterLabel,
-    documents,
-    problems: [
-      opportunity.reason,
-      ...gaps.map((gap) => `Offene Cluster-Lücke: ${gap}`),
-    ],
-    existingData: [
-      `Roadmap-Chance: ${opportunity.title}`,
-      `Cluster: ${clusterLabel}`,
-      `Priorität: ${opportunity.priority}`,
-      `Impact: ${opportunity.impact}/100`,
-      `Geschätzter Aufwand: ${opportunity.effort}`,
-      `Vorgeschlagene Aktion: ${opportunity.action}`,
-      cluster
-        ? `Cluster-Stand: Score ${cluster.score}/100, Status ${cluster.status}, Linkabdeckung ${cluster.linkCoverage} %.`
-        : "Cluster-Detaildaten vor der Arbeit aus dem Repository neu laden.",
-      cluster
-        ? `Bestand: ${cluster.counts.pages} Ratgeber/Hubs, ${cluster.counts.comparisons} Vergleiche, ${cluster.counts.products} Produkte, ${cluster.counts.manufacturers} Hersteller.`
-        : "",
-      `Strategische Regel: ${modeRule[profile.mode]}`,
-      ...documents.map((document) => `Vorhandener Inhalt: ${document}`),
-    ].filter(Boolean),
-    missingData: [
-      "Aktuellen Repository-Stand und die tatsächlichen Intent-Owner des Clusters prüfen.",
-      "Zwischen Update, Konsolidierung, interner Journey, neuer Seite und bewusstem Nichtstun unterscheiden.",
-      "Abhängigkeiten, Reihenfolge, Zielrouten oder Zieldateien und objektive Fertig-Kriterien festlegen.",
-      "Maximal drei einfache naheliegende Verbesserungen im selben Cluster mitnehmen, wenn sie ohne zusätzliche Recherche, neue Architektur oder künstliche Links eindeutig sinnvoll sind.",
-      "Keine Roadmap-Punkte nur aus Sollzahlen oder Keyword-Nähe ableiten.",
-    ],
-    validationCommands: [
-      "npm --workspace apps/pfotentechnik run audit:topical-authority:strict",
-      "npm --workspace apps/pfotentechnik run audit:decision-journeys:strict",
-      "npm --workspace apps/pfotentechnik run audit:internal-link-health:strict",
-      "npm --workspace apps/pfotentechnik run audit:content-quality:strict",
-      "npm --workspace apps/pfotentechnik run build",
-    ],
-    acceptanceCriteria: [
-      `Die Roadmap-Chance „${opportunity.title}“ ist anhand des aktuellen Repository-Stands bestätigt, präzisiert oder begründet verworfen.`,
-      "Jeder Umsetzungsschritt nennt Nutzerproblem, Zielroute oder Datei, Abhängigkeit und prüfbares Ergebnis.",
-      "Neue Seiten werden nur bei eigenständiger Suchintention und echtem Information Gain vorgesehen.",
-      "Naheliegende Zusatzverbesserungen bleiben auf maximal drei kleine Maßnahmen im selben Cluster begrenzt.",
-      "Topical-Authority-, Journey-, Internal-Link- und Content-Quality-Prüfungen sind nach der Umsetzung dokumentiert.",
-    ],
-  };
-};
+  const routeMatrixInstruction = [
+    "Erstelle für jede tatsächlich relevante Route eine kompakte Intent-Matrix mit:",
+    "- Route oder Repository-Datei",
+    "- aktuelle Nutzer- und Suchintention",
+    "- Soll-Intent",
+    "- aktueller Intent-Owner",
+    "- Überschneidung oder Kannibalisierungsrisiko",
+    "- Entscheidung: behalten, schärfen, zusammenführen, Journey neu ordnen, neu anlegen oder verwerfen",
+    "- konkrete Änderung",
+    "- Abhängigkeiten",
+    "- objektives Akzeptanzkriterium",
+  ];
 
-const appendChatGptRoadmapInstructions = (
-  prompt: string,
-  opportunity: Opportunity,
-  clusterLabel: string,
-): string =>
-  [
-    prompt,
+  return [
+    "Projekt: Yushamon/affiliate-template",
+    "Projektpfad: apps/pfotentechnik",
     "",
     "TOPICAL-AUTHORITY-ROADMAP",
-    `Roadmap-Chance: ${opportunity.title}`,
-    `Themencluster: ${clusterLabel}`,
     "",
-    "Liefere eine entscheidungsreife Roadmap mit:",
-    "1. Bestätigter Nutzer- und Suchintention.",
-    "2. Aktuellem Intent-Owner und möglicher Kannibalisierung.",
-    "3. Entscheidung: aktualisieren, konsolidieren, Journey schließen, neu anlegen oder verwerfen.",
-    "4. Priorisierter Reihenfolge mit Abhängigkeiten.",
-    "5. Konkreten Zielrouten oder Repository-Dateien, soweit aus dem Bestand belegbar.",
-    "6. Information Gain und Nutzen für den Leser.",
-    "7. Objektiven Akzeptanzkriterien und passenden Audits.",
-    "8. Maximal drei kleinen naheliegenden Verbesserungen im selben Cluster.",
+    "AUFGABE",
+    `Topical-Authority-Roadmap für „${opportunity.title}“`,
     "",
-    "Keine Dateien ändern. Keine Seiten oder Produktdaten erfinden. Unsichere Punkte als offene Recherchefrage markieren.",
+    "ZIEL",
+    "Prüfe den aktuellen Repository-Bestand, kläre Intent-Ownership und leite eine kleine, entscheidungsreife Roadmap ab. Keine generische Produktrecherche und keine automatische Seitenerweiterung.",
+    "",
+    section("Bestätigter Repository-Kontext", facts),
+    section("Vorhandene Ratgeber und Hubs", listDocuments(cluster, "page")),
+    section("Vorhandene Vergleiche", listDocuments(cluster, "comparison")),
+    section("Vorhandene Produkte", listDocuments(cluster, "product")),
+    section("Vorhandene Hersteller", listDocuments(cluster, "manufacturer")),
+    "",
+    "PRÜFREIHENFOLGE",
+    "1. Aktuellen Repository-Stand und vorhandene Search-Daten prüfen.",
+    "2. Tatsächliche Intent-Owner und Überschneidungen bestimmen.",
+    "3. Zwischen aktualisieren, konsolidieren, Journey schließen, neu anlegen und bewusst verwerfen unterscheiden.",
+    "4. Abhängigkeiten und Reihenfolge festlegen.",
+    "5. Maximal drei einfache naheliegende Verbesserungen im selben Cluster aufnehmen.",
+    "",
+    ...routeMatrixInstruction,
+    "",
+    "GRENZEN",
+    "- Keine schematische Produktprüfung ohne konkrete betroffene Produktseite.",
+    "- Keine externe Produkt- oder Marktprüfung ohne konkrete offene Produktfrage.",
+    "- Keine Bildanforderungen.",
+    "- Keine neue Seite nur wegen Sollzahlen, Keyword-Nähe oder formaler Cluster-Lücke.",
+    "- Keine künstlichen internen Links.",
+    "- Unsichere Punkte als offene Frage markieren.",
+    "",
+    "VALIDIERUNG",
+    "- npm --workspace apps/pfotentechnik run audit:topical-authority:strict",
+    "- npm --workspace apps/pfotentechnik run audit:decision-journeys:strict",
+    "- npm --workspace apps/pfotentechnik run audit:internal-link-health:strict",
+    "- npm --workspace apps/pfotentechnik run audit:content-quality:strict",
+    "- npm --workspace apps/pfotentechnik run build",
   ].join("\n");
+};
 
-const appendCodexRoadmapInstructions = (
-  prompt: string,
+const buildChatGptPrompt = (
   opportunity: Opportunity,
-  clusterLabel: string,
-): string =>
-  [
-    prompt,
-    "",
-    "TOPICAL-AUTHORITY-ROADMAP UMSETZEN",
-    `Roadmap-Chance: ${opportunity.title}`,
-    `Themencluster: ${clusterLabel}`,
-    "",
-    "Arbeite die bestätigte Roadmap vollständig im Repository ab.",
-    "Erstelle einen konfliktarmen, wiederholbaren Installer-Patch im Ordner 3.",
-    "Behebe Ursachen zentral und erweitere vorhandene Komponenten, Datenmodelle und Journey-Logik statt Sonderregeln aufzubauen.",
-    "Das konkrete Roadmap-Ziel ist Pflicht. Nimm maximal drei einfache naheliegende Verbesserungen im selben Cluster mit, wenn sie ohne neue Recherche, CSS-Änderung, Architekturumbau oder künstliche Links eindeutig sinnvoll sind.",
-    "Lege keine neue Seite allein wegen Sollzahlen oder Keyword-Nähe an.",
-    "Führe die angegebenen Audits und den Build aus. Dokumentiere geänderte Dateien, Entscheidungen, bewusst nicht umgesetzte Punkte und verbleibende Grenzen.",
-  ].join("\n");
+  cluster: Cluster | undefined,
+): string => [
+  buildSharedRoadmapPrompt(opportunity, cluster),
+  "",
+  "AUSGABE FÜR CHATGPT",
+  "Liefere ausschließlich die Analyse und eine entscheidungsreife Roadmap.",
+  "Ändere keine Dateien.",
+  "Ordne die Maßnahmen in Phase 1 bis Phase 4.",
+  "Begründe ausdrücklich, welche Seiten nicht verändert oder nicht neu angelegt werden sollten.",
+  "Nenne für jede Maßnahme Nutzerproblem, Zielroute oder Datei, Abhängigkeit und prüfbares Ergebnis.",
+].join("\n");
+
+const buildCodexPrompt = (
+  opportunity: Opportunity,
+  cluster: Cluster | undefined,
+): string => [
+  buildSharedRoadmapPrompt(opportunity, cluster),
+  "",
+  "AUSGABE FÜR CODEX",
+  "Arbeite die bestätigte Roadmap direkt im Repository ab.",
+  "Erstelle einen konfliktarmen, wiederholbaren Installer-Patch im Ordner 3.",
+  "Behebe Ursachen zentral und verwende bestehende Komponenten, Datenmodelle und Journey-Logik.",
+  "Ändere nur Dateien, die aus der Intent-Matrix und der bestätigten Roadmap folgen.",
+  "Führe alle genannten Prüfungen und den Build aus.",
+  "Dokumentiere geänderte Dateien, Intent-Entscheidungen, zusammengeführte oder bewusst unveränderte Seiten und verbleibende Grenzen.",
+].join("\n");
 
 export const buildTopicalAuthorityRoadmapPrompts = (
   opportunity: Opportunity,
   cluster?: Cluster,
-): TopicalAuthorityRoadmapPromptPair => {
-  const context = roadmapSpecificContext(opportunity, cluster);
-  const guides = listDocuments(cluster, "page");
-  const comparisons = listDocuments(cluster, "comparison");
-
-  const input = {
-    kind: context.profile.kind,
-    title: `Topical-Authority-Roadmap: ${opportunity.title}`,
-    category: context.clusterLabel,
-    problems: context.problems,
-    existingData: context.existingData,
-    missingData: context.missingData,
-    guides,
-    comparisons,
-    imageRequirements: [],
-    validationCommands: context.validationCommands,
-    acceptanceCriteria: context.acceptanceCriteria,
-  };
-
-  const chatgpt = buildChatGptPrompt(input, {
-    templateId: context.profile.templateId,
-  });
-  const codex = buildCodexPrompt(input, {
-    templateId: context.profile.templateId,
-  });
-
-  return {
-    chatgpt: appendChatGptRoadmapInstructions(
-      chatgpt.prompt,
-      opportunity,
-      context.clusterLabel,
-    ),
-    codex: appendCodexRoadmapInstructions(
-      codex.prompt,
-      opportunity,
-      context.clusterLabel,
-    ),
-  };
-};
+): TopicalAuthorityRoadmapPromptPair => ({
+  chatgpt: buildChatGptPrompt(opportunity, cluster),
+  codex: buildCodexPrompt(opportunity, cluster),
+});
