@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-02T11:39:40.767Z",
+  "generatedAt": "2026-08-02T19:12:01.453Z",
   "errors": 4,
-  "warnings": 79,
+  "warnings": 80,
   "portfolio": [],
   "documents": [
     {
@@ -25632,9 +25632,9 @@
         "type": "product",
         "layout": "product",
         "testStatus": "editorial-review",
-        "productStatus": "unknown",
-        "description": "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
-        "recommendation": "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
+        "productStatus": "active",
+        "description": "Mikrochipgesteuerter Einzelnapf mit Portionswaage und App-Auswertung über den zusätzlich erforderlichen Sure Petcare Hub.",
+        "recommendation": "Sinnvoll für getrennte Rationen und nachvollziehbare Fressgewohnheiten; für die App wird ein vorhandener oder zusätzlich erworbener Sure Petcare Hub benötigt.",
         "manufacturer": {
           "key": "surefeed",
           "name": "SureFeed",
@@ -25647,7 +25647,7 @@
         },
         "productUrl": "/produkt/surefeed-microchip-pet-feeder-connect/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-07-12",
+        "updatedAt": "2026-08-02",
         "author": {
           "name": "PfotenTechnik Redaktion"
         },
@@ -25694,14 +25694,13 @@
           ]
         },
         "price": {
-          "current": 144.94,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-02T11:24:16.471Z",
+          "checkedAt": "2026-08-02T13:00:00.000Z",
           "source": {
-            "id": "amazon.de",
-            "label": "amazon.de",
-            "type": "merchant"
+            "id": "sure-petcare-de",
+            "label": "Sure Petcare Deutschland",
+            "type": "manual"
           }
         },
         "affiliate": {
@@ -25713,13 +25712,12 @@
         },
         "rating": 4,
         "score": 79,
-        "priceState": "available",
-        "priceUpdated": "2026-08-02T11:24:16.471Z",
-        "priceAvailable": true,
+        "priceState": "unknown",
+        "priceUpdated": "2026-08-02T13:00:00.000Z",
         "affiliateAvailable": true,
-        "availability": "available",
-        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-02T11:24:16.471Z",
+        "availability": "unknown",
+        "availabilityReason": "Einzelgerät, Hub und Bundle haben getrennte Kaufsignale; Hersteller- und Händlerbestand können abweichen. Aktuellen Preis und Lieferstatus prüfen.",
+        "availabilityUpdated": "2026-08-02T13:00:00.000Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -25744,24 +25742,27 @@
             "batteriebetrieb"
           ],
           "attention": [
-            "Hub für App-Funktionen erforderlich",
+            "Sure Petcare Hub für App-Verbindung und Fressprotokolle erforderlich",
+            "Einzelgerät und Bundle sind getrennte Kaufvarianten",
             "Keine zeitgesteuerte Vorratsausgabe",
-            "Begrenztes Schalenvolumen"
+            "Preis und Lieferbarkeit aktuell prüfen"
           ]
         },
         "review": {
-          "summary": "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
+          "summary": "Mikrochipgesteuerter Einzelnapf mit Portionswaage; App-Protokolle sind nur über den Sure Petcare Hub verfügbar.",
           "verdict": ">-"
         },
         "strengths": [
-          "Kontrollierter Zugang im Mehrtierhaushalt",
-          "App-Auswertung über Sure Petcare Hub",
-          "Herausnehmbare Schale"
+          "Kontrollierter Zugang per Mikrochip oder kompatiblem RFID-Halsbandanhänger",
+          "Integrierte Waage mit LED-Hilfe für Portionen auf 1 Gramm genau",
+          "App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeit über den Sure Petcare Hub",
+          "Für Nass- und Trockenfutter geeignet"
         ],
         "weaknesses": [
-          "Hub für App-Funktionen erforderlich",
+          "Sure Petcare Hub für App-Funktionen erforderlich und nicht zwingend im Einzelgerät enthalten",
           "Keine zeitgesteuerte Vorratsausgabe",
-          "Begrenztes Schalenvolumen"
+          "Preis und Lieferbarkeit unterscheiden sich zwischen Einzelgerät, Bundle und Händlerangeboten",
+          "Begrenztes Schalenvolumen von 400 ml"
         ],
         "alternatives": [],
         "comparisonFilters": {
@@ -25776,19 +25777,16 @@
         },
         "specs": [
           "label: Futterart",
-          "label: App-Steuerung",
-          "label: Kamera",
+          "label: App-Verbindung",
+          "label: Hub und Bundle",
+          "label: App-Auswertung",
+          "label: Portionierung",
+          "label: Zugang",
           "label: Kapazität",
           "label: Stromversorgung",
-          "label: Geeignet für",
-          "label: Besonderheit",
-          "label: Portionierung",
-          "label: Napf",
-          "label: Reinigung",
-          "label: WLAN",
-          "label: Batterie",
-          "label: Maße",
-          "label: Gewicht"
+          "label: Automatische Futterausgabe",
+          "label: Kamera",
+          "label: Geeignet für"
         ],
         "faq": [],
         "useCase": "Für Katzen und kleine Hunde mit individuellem Futterzugang",
@@ -25836,17 +25834,17 @@
           }
         },
         "metadata": {
-          "version": "4.0.1",
-          "normalizedAt": "2026-07-26",
-          "policy": "Nur vorhandene Produkt-, Hersteller- und redaktionelle Daten; keine geschätzten technischen Werte"
+          "version": "4.0.2",
+          "normalizedAt": "2026-08-02",
+          "policy": "Nur belegte Hersteller- und redaktionelle Daten; kein statischer Preis bei widersprüchlichen Kaufsignalen"
         },
         "decisionFacts": [
-          "label: \"App-Steuerung",
-          "label: \"Kamera",
-          "label: \"Kapazität",
-          "label: \"Stromversorgung",
+          "label: \"Hub und App",
+          "label: \"Kaufvariante",
+          "label: \"App-Auswertung",
           "label: \"Portionierung",
-          "label: \"Batterie"
+          "label: \"Futterart und Volumen",
+          "label: \"Preis und Verfügbarkeit"
         ]
       },
       "issues": []
@@ -26115,6 +26113,146 @@
         ]
       },
       "issues": []
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
+      "slug": "sureflap mikrochip katzenklappe connect",
+      "title": "SureFlap Mikrochip Katzenklappe Connect",
+      "type": "product",
+      "data": {
+        "type": "product",
+        "title": "SureFlap Mikrochip Katzenklappe Connect",
+        "slug": "sureflap-mikrochip-katzenklappe-connect",
+        "description": "App-fähige Mikrochip-Katzenklappe mit DualScan-Zutrittsregeln, Fernverriegelung und Aktivitätsmeldungen über den zusätzlich erforderlichen Sure Petcare Hub.",
+        "manufacturer": {
+          "name": "SureFlap",
+          "slug": "surefeed"
+        },
+        "category": {
+          "key": "katzenklappen",
+          "label": "Katzenklappen"
+        },
+        "publishedAt": "2026-08-02",
+        "updatedAt": "2026-08-02",
+        "productStatus": "active",
+        "editorialStatus": "research",
+        "recommendationStatus": "pending",
+        "maintenanceStatus": "current",
+        "price": {
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-08-02T14:00:00.000Z",
+          "source": {
+            "id": "sure-petcare-de",
+            "label": "Sure Petcare Deutschland",
+            "type": "manual"
+          }
+        },
+        "priceState": "unknown",
+        "priceUpdated": "2026-08-02T14:00:00.000Z",
+        "affiliateAvailable": false,
+        "availability": "unknown",
+        "availabilityReason": "Einzelgerät und Bundle mit Hub werden getrennt angeboten; die Herstellerseite zeigt zugleich widersprüchliche Kaufsignale. Aktuellen Preis und Lieferstatus prüfen.",
+        "availabilityUpdated": "2026-08-02T14:00:00.000Z",
+        "decision": {
+          "bestFor": [
+            "katze",
+            "mehrere-tiere",
+            "mikrochip",
+            "app",
+            "zugangskontrolle",
+            "fernverriegelung",
+            "sperrzeiten",
+            "aktivitaetsprotokoll"
+          ],
+          "attention": [
+            "Sure Petcare Hub für App-Verbindung und Fernfunktionen erforderlich",
+            "Einzelgerät und Bundle mit Hub sind getrennte Kaufvarianten",
+            "Öffnungsmaß von 142 × 120 mm vor dem Kauf mit der Katze abgleichen",
+            "Glas- und Wandeinbau können zusätzliches Montagezubehör erfordern",
+            "Preis und Lieferbarkeit aktuell prüfen"
+          ]
+        },
+        "review": {
+          "summary": "Mikrochip-Katzenklappe mit individuellen Ein- und Austrittsrechten; App-Steuerung und Aktivitätsprotokolle funktionieren nur über den Sure Petcare Hub.",
+          "verdict": "Eine technisch umfassende Zugangslösung für Mehrkatzenhaushalte, wenn individuelle DualScan-Regeln, Fernverriegelung und Aktivitätsmeldungen benötigt werden. Eine redaktionelle Kaufempfehlung und ein Score bleiben bis zur vollständigen Vergleichsbewertung offen."
+        },
+        "strengths": [
+          "DualScan-Technologie mit individuellen Ein- und Austrittsrechten pro Tier",
+          "Fernverriegelung, Sperrzeiten und Berechtigungsverwaltung über die Sure Petcare App",
+          "Push-Mitteilungen und Statistiken zu Kommen, Gehen sowie Innen- und Außenstatus",
+          "Einbau in Türen, Glas und Wände möglich"
+        ],
+        "weaknesses": [
+          "Sure Petcare Hub für sämtliche App- und Fernfunktionen erforderlich",
+          "Hub ist beim Einzelgerät nicht enthalten",
+          "Glas- und Wandeinbau können Adapter beziehungsweise Tunnelverlängerungen benötigen",
+          "Hersteller nennt rund sechs Monate Batterielaufzeit statt Netzbetrieb"
+        ],
+        "specs": [
+          "label: \"Modellkennung",
+          "label: \"Klappenöffnung",
+          "label: \"Ausschnitt Tür oder Wand",
+          "label: \"Glasausschnitt",
+          "label: \"Außenrahmen",
+          "label: \"Tunneltiefe",
+          "label: \"Stromversorgung",
+          "label: \"Herstellerangabe Batterielaufzeit",
+          "label: \"Hub",
+          "label: \"App-Funktionen",
+          "label: \"Zutrittssteuerung",
+          "label: \"Mikrochip",
+          "label: \"Einbauarten"
+        ],
+        "decisionFacts": [
+          "label: \"Hub und App",
+          "label: \"Kaufvariante",
+          "label: \"Öffnungsmaß",
+          "label: \"DualScan",
+          "label: \"Batteriebetrieb",
+          "label: \"Einbau",
+          "label: \"Preis und Verfügbarkeit"
+        ],
+        "evidence": {
+          "manufacturerDocumentation": [
+            "Sure Petcare Produktseite: Funktionen, Maße, Batterie, Hub-Abhängigkeit und Montage",
+            "Sure Petcare Handbuchübersicht: Modellkennung iDSCF"
+          ],
+          "technicalDocumentation": [
+            "Öffnung 142 × 120 mm",
+            "Tür-/Wandausschnitt 165 × 171 mm",
+            "Glasausschnitt 212 bis 260 mm"
+          ],
+          "comparisonAnalysis": [
+            "Abgrenzung Einzelgerät, Hub und Bundle",
+            "Abgrenzung lokaler Mikrochipfunktion von App- und Fernfunktionen"
+          ]
+        },
+        "faq": [
+          "question: \"Braucht die SureFlap Mikrochip Katzenklappe Connect immer einen Hub?",
+          "question: \"Ist der Hub beim Einzelgerät enthalten?",
+          "question: \"Wie groß ist die Öffnung für die Katze?",
+          "question: \"Kann die Katzenklappe in Glas eingebaut werden?",
+          "question: \"Kann die Katzenklappe in eine Wand eingebaut werden?",
+          "question: \"Welche Batterien werden benötigt?",
+          "question: \"Was bedeutet DualScan?",
+          "question: \"Welche Aktivitäten zeigt die App?",
+          "question: \"Kann die Klappe aus der Ferne verriegelt werden?",
+          "question: \"Funktioniert die Klappe ohne Mikrochip?"
+        ],
+        "metadata": {
+          "version": "1.0.0",
+          "normalizedAt": "2026-08-02",
+          "policy": "Nur belegte Herstellerangaben; kein Editorial Score, keine Kaufempfehlung und kein statischer Preis vor vollständiger Vergleichsbewertung"
+        }
+      },
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "TEST_STATUS",
+          "message": "testStatus fehlt."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/products/tractive-cat-6-mini.md",

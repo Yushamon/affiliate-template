@@ -189,7 +189,12 @@
     "test:surefeed-connect-research": "node --test test/surefeed-connect-research-final-25.10.4.test.mjs",
     "test:seo-cockpit-patch-quality": "node --experimental-strip-types --test test/seo-cockpit-patch-quality-standard-2.2.0.test.mjs",
     "test:surefeed-comparison-coverage": "node --test test/surefeed-comparison-coverage-final-25.10.5.test.mjs",
-    "test:surefeed-price-source-schema": "node --test test/surefeed-price-source-schema-fix-25.10.6.test.mjs"
+    "test:surefeed-price-source-schema": "node --test test/surefeed-price-source-schema-fix-25.10.6.test.mjs",
+    "test:sureflap-cat-flap-connect": "node --test test/sureflap-cat-flap-connect-25.11.0.test.mjs",
+    "test:visual-generation": "node --experimental-strip-types --test test/visual-generation-engine-2.3.1.test.mjs",
+    "test:visual-generation:compound-words": "node --experimental-strip-types --test test/visual-generation-engine-compound-words-2.3.3.test.mjs",
+    "test:visual-generation:repair": "node --experimental-strip-types --test test/visual-generation-engine-repair-2.3.5.test.mjs",
+    "test:sureflap-schema-completion": "node --test test/sureflap-schema-completion-25.11.1.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

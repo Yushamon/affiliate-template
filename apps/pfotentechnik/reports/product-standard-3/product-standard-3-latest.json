@@ -1,15 +1,15 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-08-02T13:33:07.949Z",
+  "generatedAt": "2026-08-03T07:54:57.431Z",
   "summary": {
-    "products": 67,
+    "products": 68,
     "blocked": 0,
     "needsWork": 0,
     "good": 0,
-    "strong": 67,
+    "strong": 68,
     "errors": 0,
     "warnings": 0,
-    "info": 129
+    "info": 130
   },
   "products": [
     {
@@ -1691,6 +1691,31 @@
           "message": "Keine expliziten Fehlkauf-Szenarien hinterlegt.",
           "recommendation": "Für priorisierte Produkte ein bis drei typische Fehlkäufe ergänzen."
         },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe-connect",
+      "file": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 13,
+        "strengths": 4,
+        "weaknesses": 4,
+        "faq": 10,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 7,
+        "purchaseMistakes": 0
+      },
+      "findings": [
         {
           "severity": "info",
           "code": "COMMUNITY_EMPTY",

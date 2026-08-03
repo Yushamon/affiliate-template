@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
   "provider": "combined",
-  "generatedAt": "2026-08-02T11:39:17.135Z",
+  "generatedAt": "2026-08-02T19:11:40.801Z",
   "property": "sc-domain:pfotentechnik.de",
   "dataUpdatedAt": {
-    "google": "2026-08-02T04:12:06.344Z",
+    "google": "2026-08-02T19:11:40.759Z",
     "bing": "2026-08-01T07:00:00.000Z"
   },
   "providerStatus": {
-    "google": "stale",
+    "google": "current",
     "bing": "current"
   },
   "range": "7d",
@@ -19,7 +19,7 @@
   "comparisonStartDate": "2026-07-19",
   "comparisonEndDate": "2026-07-25",
   "dataState": "combined",
-  "partial": true,
+  "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
@@ -1768,8 +1768,6 @@
   "providerAvailability": {
     "google": true,
     "bing": true,
-    "stale": [
-      "google"
-    ]
+    "stale": []
   }
 }

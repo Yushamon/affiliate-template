@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { buildVisualGenerationPlan, type VisualGenerationPlan } from "./visual-generation";
 
 export type GrowthImpact = 1 | 2 | 3 | 4 | 5;
 export type GrowthHorizon = "short-term" | "strategic";
@@ -29,6 +30,8 @@ export type GrowthOpportunity = {
   sourceCount: number;
   implementationBrief: ImplementationBrief;
   implementationPrompt: string;
+  visualPlan: VisualGenerationPlan;
+  visualPrompt: string;
   gsc?: {
     impressions: number;
     clicks: number;
@@ -370,6 +373,7 @@ export const buildWeeklyGrowthOpportunities = (
     .map((item) => {
       const ranking = scoreItem(item, gscSignals);
             const implementationBrief = buildImplementationBrief(item);
+            const visualPlan = buildVisualGenerationPlan(item);
 return {
         id: text(item?.id, "research-item"),
         title: text(item?.title, "Research-Chance"),
@@ -384,6 +388,8 @@ return {
         sourceCount: list(item?.evidence).length,
         implementationBrief,
         implementationPrompt: buildResearchImplementationPrompt(item, implementationBrief),
+        visualPlan,
+        visualPrompt: visualPlan.masterPrompt,
         gsc: gscData(ranking.row),
         _score: ranking.score
       };

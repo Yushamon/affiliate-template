@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-02T13:33:03.910Z
+Erstellt: 2026-08-03T07:54:56.780Z
 
 ## Zusammenfassung
 
-- Produkte: 67
+- Produkte: 68
 - Fehler: 0
-- Warnungen: 81
+- Warnungen: 83
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -15,7 +15,7 @@ Erstellt: 2026-08-02T13:33:03.910Z
 - futterautomaten: 37
 - trinkbrunnen: 21
 - gps-tracker: 8
-- katzenklappen: 1
+- katzenklappen: 2
 
 ## Produkte mit Handlungsbedarf
 
@@ -214,6 +214,15 @@ Erstellt: 2026-08-02T13:33:03.910Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### SureFlap Mikrochip Katzenklappe Connect
+
+- Datei: `src\content\products\sureflap-mikrochip-katzenklappe-connect.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
 
 ### WOPET Patrol F07 Pro
 

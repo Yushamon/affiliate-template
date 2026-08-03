@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedAt": "2026-08-02T13:33:03.910Z",
-    "totalProducts": 67,
+    "generatedAt": "2026-08-03T07:54:56.780Z",
+    "totalProducts": 68,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 21,
       "gps-tracker": 8,
-      "katzenklappen": 1
+      "katzenklappen": 2
     },
     "errors": 0,
-    "warnings": 81,
+    "warnings": 83,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -5589,6 +5589,76 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 92,
       "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\sureflap-mikrochip-katzenklappe-connect.md",
+      "slug": "sureflap-mikrochip-katzenklappe-connect",
+      "title": "SureFlap Mikrochip Katzenklappe Connect",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Nur 1 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modellkennung",
+          "value": "iDSCF"
+        },
+        {
+          "label": "Klappenöffnung",
+          "value": "142 × 120 mm, engster Durchgangspunkt"
+        },
+        {
+          "label": "Ausschnitt Tür oder Wand",
+          "value": "165 × 171 mm"
+        },
+        {
+          "label": "Glasausschnitt",
+          "value": "Rund 212 mm ideal; laut Hersteller bis 260 mm möglich"
+        },
+        {
+          "label": "Außenrahmen",
+          "value": "210 × 210 mm"
+        },
+        {
+          "label": "Tunneltiefe",
+          "value": "70 mm"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "4 AA-Batterien, nicht enthalten"
+        },
+        {
+          "label": "Herstellerangabe Batterielaufzeit",
+          "value": "Bis zu 6 Monate"
+        },
+        {
+          "label": "Hub",
+          "value": "Sure Petcare Hub für App-Verbindung erforderlich; beim Einzelgerät separat"
+        },
+        {
+          "label": "App-Funktionen",
+          "value": "Aktivitätsmeldungen, Innen-/Außenstatus, Statistiken, Fernverriegelung, Sperrzeiten und Haushaltsberechtigungen"
+        },
+        {
+          "label": "Zutrittssteuerung",
+          "value": "DualScan mit individuellen Ein- und Austrittsrechten"
+        },
+        {
+          "label": "Mikrochip",
+          "value": "Kompatibel mit gängigen Mikrochips; RFID-Halsbandanhänger als Alternative"
+        },
+        {
+          "label": "Einbauarten",
+          "value": "Türen, Glas und Wände"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 94
     },
     {
       "file": "src\\content\\products\\tractive-cat-6-mini.md",

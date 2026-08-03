@@ -1,10 +1,10 @@
 # Product Standard 3 Audit
 
-- Produkte: 67
+- Produkte: 68
 - Blockiert: 0
 - Verbesserungsbedarf: 0
 - Gut: 0
-- Stark: 67
+- Stark: 68
 - Fehler: 0
 - Warnungen: 0
 
@@ -67,6 +67,7 @@
 | petsafe-smart-feed-2 | 100 | strong | 0 |
 | surefeed-microchip-pet-feeder | 100 | strong | 0 |
 | surefeed-microchip-pet-feeder-connect | 100 | strong | 0 |
+| sureflap-mikrochip-katzenklappe-connect | 100 | strong | 0 |
 | tractive-cat-6-mini | 100 | strong | 0 |
 | tractive-dog-6 | 100 | strong | 0 |
 | tractive-dog-6-xl | 100 | strong | 0 |

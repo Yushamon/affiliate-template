@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
   "provider": "combined",
-  "generatedAt": "2026-08-02T11:39:17.135Z",
+  "generatedAt": "2026-08-02T19:11:40.801Z",
   "property": "sc-domain:pfotentechnik.de",
   "defaultRange": "7d",
   "dataUpdatedAt": {
-    "google": "2026-08-02T04:12:06.344Z",
+    "google": "2026-08-02T19:11:40.759Z",
     "bing": "2026-08-01T07:00:00.000Z"
   },
   "providerStatus": {
-    "google": "stale",
+    "google": "current",
     "bing": "current"
   },
   "ranges": {
@@ -21,7 +21,7 @@
       "comparisonStartDate": "2026-07-19",
       "comparisonEndDate": "2026-07-25",
       "dataState": "combined",
-      "partial": true,
+      "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
@@ -1770,9 +1770,7 @@
       "providerAvailability": {
         "google": true,
         "bing": true,
-        "stale": [
-          "google"
-        ]
+        "stale": []
       }
     },
     "28d": {
@@ -1783,7 +1781,7 @@
       "comparisonStartDate": "2026-06-07",
       "comparisonEndDate": "2026-07-04",
       "dataState": "combined",
-      "partial": true,
+      "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
@@ -7891,9 +7889,7 @@
       "providerAvailability": {
         "google": true,
         "bing": true,
-        "stale": [
-          "google"
-        ]
+        "stale": []
       }
     },
     "3m": {
@@ -7904,7 +7900,7 @@
       "comparisonStartDate": "2026-02-03",
       "comparisonEndDate": "2026-05-03",
       "dataState": "combined",
-      "partial": true,
+      "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
@@ -14012,9 +14008,7 @@
       "providerAvailability": {
         "google": true,
         "bing": true,
-        "stale": [
-          "google"
-        ]
+        "stale": []
       }
     },
     "6m": {
@@ -14025,7 +14019,7 @@
       "comparisonStartDate": "2025-08-07",
       "comparisonEndDate": "2026-02-02",
       "dataState": "combined",
-      "partial": true,
+      "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
@@ -20133,9 +20127,7 @@
       "providerAvailability": {
         "google": true,
         "bing": true,
-        "stale": [
-          "google"
-        ]
+        "stale": []
       }
     },
     "12m": {
@@ -20146,7 +20138,7 @@
       "comparisonStartDate": "2024-08-02",
       "comparisonEndDate": "2025-08-01",
       "dataState": "combined",
-      "partial": true,
+      "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
@@ -26254,9 +26246,7 @@
       "providerAvailability": {
         "google": true,
         "bing": true,
-        "stale": [
-          "google"
-        ]
+        "stale": []
       }
     }
   }

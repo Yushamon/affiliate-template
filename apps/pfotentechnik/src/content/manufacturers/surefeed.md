@@ -140,3 +140,17 @@ faq:
 ---
 
 SureFeed gehört zu den bekanntesten Herstellern intelligenter Fütterungssysteme für Katzen und kleine Hunde. Die Marke konzentriert sich auf Mikrochip- und RFID-gestützte Lösungen, mit denen einzelne Tiere gezielt gefüttert werden können. Besonders in Mehrkatzenhaushalten gilt SureFeed seit Jahren als Referenz.
+
+## Markenarchitektur: Sure Petcare, SureFlap und SureFeed
+
+**Sure Petcare** ist die übergreifende Marke und Plattform für die vernetzten Haustierprodukte sowie die gemeinsame App. Das Unternehmen dahinter ist SureFlap Ltd., das laut eigener Anbieterkennzeichnung unter dem Namen Sure Petcare auftritt.
+
+**SureFlap** bezeichnet vor allem die Katzen- und Haustierklappen des Herstellers. **SureFeed** wird für Fütterungsprodukte wie Mikrochip-Futterautomaten verwendet. Beide Produktlinien können bei Connect-Modellen denselben Sure Petcare Hub und dieselbe Sure Petcare App nutzen.
+
+PfotenTechnik bündelt die Produkte deshalb weiterhin auf dieser Herstellerseite, statt getrennte und inhaltlich weitgehend doppelte Herstellerprofile für SureFeed und SureFlap anzulegen.
+
+## Katzenklappen und Zugangskontrolle
+
+Mit der SureFlap Mikrochip Katzenklappe Connect erweitert sich das Herstellerprofil über Fütterungsprodukte hinaus um app-gestützte Zugangskontrolle. Die Produktlinie kombiniert Mikrochip-Erkennung, individuelle DualScan-Regeln und optionale Fernfunktionen über den Sure Petcare Hub.
+
+[SureFlap Mikrochip Katzenklappe Connect ansehen](/produkt/sureflap-mikrochip-katzenklappe-connect/)

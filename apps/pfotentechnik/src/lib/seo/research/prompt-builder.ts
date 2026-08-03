@@ -87,6 +87,13 @@ const outputExample = {
       title: "zusammengehöriger Arbeitsblock",
       sequence: []
     },
+    visualBrief: {
+      pageType: "product | comparison | guide | manufacturer | category | homepage | landingpage",
+      subject: "konkretes Seitenthema oder Produkt",
+      motifs: ["nur wirklich notwendige oder belegte Motive"],
+      styleNotes: ["optionale konkrete Stilhinweise"],
+      referenceUrls: ["optionale visuelle Primärquellen"]
+    },
     implementationBrief: {
       goal: "welches konkrete Ergebnis erreicht werden soll",
       problem: "welches belegte Problem die aktuelle Seite oder der Bestand hat",
@@ -169,6 +176,18 @@ export const buildWeeklyResearchPrompt = (input: ResearchPromptInput): string =>
   "- Verlange Backups, Ergebnisvalidierung, node --check, Prüfung vorhandener npm-Skripte und einen erfolgreichen zweiten Installerlauf.",
   "- Tests müssen Verhalten und Datenstruktur prüfen, nicht exakte Formatierung, Variablennamen oder zufällige Quelltextfragmente.",
   "- Der spätere Auftrag soll genau einen finalen Installer vorsehen und erwartbare Hotfix-Ketten vermeiden.",
+  "",
+
+  "VISUAL-BRIEFING",
+  "- Erzeuge für jedes Finding ein visualBrief. Visuals sind Teil des Produktionspakets, nicht ein optionaler Nachtrag.",
+  "- pageType ist product, comparison, guide, manufacturer, category, homepage oder landingpage.",
+  "- motifs enthält nur Bilder, die der Nutzerfrage, Kaufentscheidung oder Erklärung einen konkreten Mehrwert geben.",
+  "- Für neue Produktseiten mindestens Hero, Thumbnail, Perspektivansicht, wichtigstes Funktionsdetail und reale Nutzungssituation vorsehen.",
+  "- Für Vergleiche bevorzugt Hero, Vergleichsübersicht, Entscheidungsbaum, Einsatzfälle und Zielkonflikte.",
+  "- Für Ratgeber bevorzugt Hero, Übersicht, Entscheidungshilfe, Checkliste und Warnzeichen oder Grenzen.",
+  "- Nutze missingVisuals und refreshPlan.visuals für individuelle Motive statt nur starre Standardlisten zu wiederholen.",
+  "- Produktmotive müssen möglichst realistisch und anhand von Hersteller-Primärquellen identifizierbar sein. Keine erfundenen Details.",
+  "- Der spätere ChatGPT-Master-Prompt muss alle Bilder als einzelne Outputs anfordern und einen robusten Weiter-Modus enthalten, falls ChatGPT nur ein Bild pro Antwort erzeugt.",
   "",
 
   "PRIORISIERUNG",
