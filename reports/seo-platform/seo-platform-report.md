@@ -2,7 +2,7 @@
 
 - Dokumente: 186
 - Fehler: 4
-- Warnungen: 80
+- Warnungen: 79
 
 ## Portfolio-Befunde
 
@@ -81,7 +81,6 @@ Keine Portfolio-Konflikte erkannt.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md`: Testbehauptung widerspricht dem Teststatus.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petsafe-freshfeed-refrigerated-feeder.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/petsafe-smart-feed-2.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
-- **WARNING · TEST_STATUS** — `apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md`: testStatus fehlt.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/tractive-cat-6-mini.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **WARNING · META_DESCRIPTION_LENGTH** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Description sollte ungefähr 90–180 Zeichen lang sein.
 - **ERROR · TEST_CLAIM_CONFLICT** — `apps/pfotentechnik/src/content/products/tractive-dog-6-xl.md`: Testbehauptung widerspricht dem Teststatus.

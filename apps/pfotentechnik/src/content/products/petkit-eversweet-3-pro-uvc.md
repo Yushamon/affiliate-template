@@ -63,7 +63,7 @@ price:
   current: 67.9
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-02T11:23:27.533Z"
+  checkedAt: "2026-08-03T08:16:10.344Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.2
 score: 84
 
 priceState: "available"
-priceUpdated: "2026-08-02T11:23:27.533Z"
+priceUpdated: "2026-08-03T08:16:10.344Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-02T11:23:27.533Z"
+availabilityUpdated: "2026-08-03T08:16:10.344Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -62,10 +62,10 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 13 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-07-30T08:48:54.741Z"
+  checkedAt: "2026-08-03T10:21:59.545Z"
   source:
     id: "manual"
-    label: "Amazon"
+    label: "Meintierdiscount"
     type: "manual"
 affiliate:
   provider: "amazon"
@@ -77,14 +77,14 @@ rating: 4.5
 score: 89
 
 priceState: "available"
-priceUpdated: "2026-07-30T08:48:54.741Z"
+priceUpdated: "2026-08-03T10:21:59.545Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityUpdated: "2026-07-30T08:48:54.741Z"
+availability: "available"
+availabilityUpdated: "2026-08-03T10:21:59.545Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4.5

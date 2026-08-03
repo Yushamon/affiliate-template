@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp
       alt: PETLIBRO Granary im Katzenhaushalt
 price:
-  current: 104.99
+  current: 104.97
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-02T11:23:59.275Z"
+  checkedAt: "2026-08-03T08:16:37.871Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.1
 score: 82
 
 priceState: "available"
-priceUpdated: "2026-08-02T11:23:59.275Z"
+priceUpdated: "2026-08-03T08:16:37.871Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-02T11:23:59.275Z"
+availabilityUpdated: "2026-08-03T08:16:37.871Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

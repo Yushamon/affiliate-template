@@ -61,11 +61,11 @@ images:
     - src: ../../assets/images/products/oneisall-5l-automatic-cat-feeder/gallery-3.webp
       alt: Abgenommene Doppelnäpfe des oneisall Futterautomaten
 price:
-  current: 47.49
+  current: 59.99
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 14 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-02T11:23:18.296Z"
+  checkedAt: "2026-08-03T08:16:02.943Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,12 +80,12 @@ rating: 3.6
 score: 73
 
 priceState: "available"
-priceUpdated: "2026-08-02T11:23:18.296Z"
+priceUpdated: "2026-08-03T08:16:02.943Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-02T11:23:18.296Z"
+availabilityUpdated: "2026-08-03T08:16:02.943Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

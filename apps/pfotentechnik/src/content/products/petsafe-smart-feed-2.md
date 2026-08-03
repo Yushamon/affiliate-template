@@ -57,7 +57,7 @@ price:
   current: 211.49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-27T21:12:57.566Z"
+  checkedAt: "2026-08-03T10:22:39.865Z"
   source:
     id: "manual"
     label: "amzn.to"
@@ -72,14 +72,14 @@ rating: 4.4
 score: 88
 
 priceState: "available"
-priceUpdated: "2026-07-27T21:12:57.566Z"
+priceUpdated: "2026-08-03T10:22:39.865Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityUpdated: "2026-07-27T21:12:57.566Z"
+availability: "available"
+availabilityUpdated: "2026-08-03T10:22:39.865Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   verarbeitung: 4.5

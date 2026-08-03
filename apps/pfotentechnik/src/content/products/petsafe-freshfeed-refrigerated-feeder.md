@@ -59,7 +59,7 @@ price:
   current: 219
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-30T08:42:55.737Z"
+  checkedAt: "2026-08-03T10:23:34.562Z"
   source:
     id: "manual"
     label: "amazon.com"
@@ -74,14 +74,14 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-07-30T08:42:55.737Z"
+priceUpdated: "2026-08-03T10:23:34.562Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityUpdated: "2026-07-30T08:42:55.737Z"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+availability: "out-of-stock"
+availabilityUpdated: "2026-08-03T10:23:34.562Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 
 ratings:
   verarbeitung: 4.6

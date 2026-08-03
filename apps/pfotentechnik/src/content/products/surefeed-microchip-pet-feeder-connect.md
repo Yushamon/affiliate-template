@@ -55,13 +55,14 @@ images:
     - src: ../../assets/images/products/surefeed-microchip-pet-feeder-connect/gallery-1.webp
       alt: SureFeed Microchip Pet Feeder Connect, weitere redaktionelle Ansicht 1
 price:
+  current: 144.94
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-02T13:00:00.000Z"
+  checkedAt: "2026-08-03T08:15:45.810Z"
   source:
-    id: "sure-petcare-de"
-    label: "Sure Petcare Deutschland"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
@@ -71,12 +72,13 @@ affiliate:
 rating: 4
 score: 79
 
-priceState: "unknown"
-priceUpdated: "2026-08-02T13:00:00.000Z"
+priceState: "available"
+priceUpdated: "2026-08-03T08:15:45.810Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityReason: "Einzelgerät, Hub und Bundle haben getrennte Kaufsignale; Hersteller- und Händlerbestand können abweichen. Aktuellen Preis und Lieferstatus prüfen."
-availabilityUpdated: "2026-08-02T13:00:00.000Z"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-03T08:15:45.810Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
