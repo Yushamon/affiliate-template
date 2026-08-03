@@ -2,6 +2,7 @@
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import ResearchWorkbench from "../../../components/admin/ResearchWorkbench.astro";
 import { loadTopicalAuthority } from "../../../lib/seo/topical-authority/loadTopicalAuthority";
+import { buildTopicalAuthorityRoadmapPrompts } from "../../../lib/seo/topical-authority/roadmap-prompts";
 import { loadInternalLinkAdvisories } from "../../../lib/seo/topical-authority/loadInternalLinkAdvisories";
 import {
   DECISION_STAGE_ORDER,
@@ -63,6 +64,18 @@ const priorityLabels = {
   medium: "Mittel",
   low: "Niedrig",
 };
+
+const clusterByLabel = new Map(
+  data.clusters.map((cluster) => [cluster.label, cluster]),
+);
+const roadmapOpportunities = data.opportunities.map((opportunity) => ({
+  ...opportunity,
+  prompts: buildTopicalAuthorityRoadmapPrompts(
+    opportunity,
+    clusterByLabel.get(opportunity.cluster),
+  ),
+}));
+
 ---
 
 <SeoAdminLayout
@@ -207,9 +220,9 @@ const priorityLabels = {
       </div>
 
       <div class="ta-opportunities">
-        {data.opportunities.length === 0 ? (
+        {roadmapOpportunities.length === 0 ? (
           <p class="ta-empty">Aktuell wurden keine priorisierten Chancen erzeugt.</p>
-        ) : data.opportunities.map((opportunity) => (
+        ) : roadmapOpportunities.map((opportunity) => (
           <article>
             <div class="ta-opportunity-meta">
               <span class={`ta-priority ta-priority--${opportunity?.priority ?? "low"}`}>
@@ -221,6 +234,24 @@ const priorityLabels = {
             <h3>{opportunity?.title ?? "Unbenannte Chance"}</h3>
             <p>{opportunity?.reason ?? ""}</p>
             <strong>{opportunity?.action ?? ""}</strong>
+            <div class="ta-roadmap-actions">
+              <button
+                type="button"
+                class="ta-copy-prompt"
+                data-copy-prompt={opportunity.prompts?.chatgpt ?? ""}
+                data-copy-kind="ChatGPT-Roadmap"
+              >
+                ChatGPT-Roadmap kopieren
+              </button>
+              <button
+                type="button"
+                class="ta-copy-prompt"
+                data-copy-prompt={opportunity.prompts?.codex ?? ""}
+                data-copy-kind="Codex-Umsetzung"
+              >
+                Codex-Umsetzung kopieren
+              </button>
+            </div>
           </article>
         ))}
       </div>
@@ -349,6 +380,7 @@ const priorityLabels = {
     if (!(button instanceof HTMLButtonElement)) return;
 
     const prompt = button.dataset.copyPrompt || "";
+    const promptKind = button.dataset.copyKind || "Prompt";
     if (!prompt) return;
 
     try {
@@ -357,7 +389,7 @@ const priorityLabels = {
       button.textContent = "Kopiert";
       window.setTimeout(() => { button.textContent = previous; }, 1600);
     } catch {
-      window.prompt("Codex-Prompt kopieren:", prompt);
+      window.prompt(`${promptKind} kopieren:`, prompt);
     }
   });
 </script>
@@ -396,6 +428,8 @@ const priorityLabels = {
   .ta-remediation summary{cursor:pointer;font-weight:700}
   .ta-remediation p{max-width:34rem;line-height:1.5}
   .ta-copy-prompt{min-height:2.5rem;padding:.55rem .75rem;border:1px solid var(--seo-border,#d9dee7);border-radius:.65rem;background:var(--seo-surface,Canvas);color:inherit;font-weight:700;cursor:pointer}
+  .ta-roadmap-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
+  .ta-roadmap-actions .ta-copy-prompt{flex:0 1 auto}
   @media(max-width: 900px){.ta-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.ta-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-opportunities,.ta-grid{grid-template-columns:1fr}}
   @media(max-width: 600px){.ta-page{padding:.75rem}.ta-hero{align-items:flex-start}.ta-score strong{font-size:2rem}.ta-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-section,.ta-hero{padding:1rem}.ta-cluster summary{align-items:flex-start}.ta-section-head{align-items:flex-start;flex-direction:column}}
 
