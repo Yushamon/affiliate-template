@@ -17,7 +17,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/surefeed-microchip-pet-feeder-connect/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-02"
+updatedAt: "2026-08-03"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -55,14 +55,13 @@ images:
     - src: ../../assets/images/products/surefeed-microchip-pet-feeder-connect/gallery-1.webp
       alt: SureFeed Microchip Pet Feeder Connect, weitere redaktionelle Ansicht 1
 price:
-  current: 144.94
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-03T08:15:45.810Z"
+  checkedAt: "2026-08-03T16:38:00.000Z"
   source:
-    id: "amazon.de"
-    label: "amazon.de"
-    type: "merchant"
+    id: "sure-petcare-de"
+    label: "Sure Petcare Deutschland"
+    type: "manual"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
@@ -72,13 +71,13 @@ affiliate:
 rating: 4
 score: 79
 
-priceState: "available"
-priceUpdated: "2026-08-03T08:15:45.810Z"
-priceAvailable: true
+priceState: "unknown"
+priceUpdated: "2026-08-03T16:38:00.000Z"
+priceAvailable: false
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-03T08:15:45.810Z"
+availability: "unknown"
+availabilityReason: "Einzelgerät, Hub und Bundle werden getrennt angeboten. Die deutsche Herstellerseite zeigt Preise, zugleich aber Nicht-vorrätig-Signale; Händlerbestand kann abweichen. Preis und Lieferstatus je Variante aktuell prüfen."
+availabilityUpdated: "2026-08-03T16:38:00.000Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -221,22 +220,24 @@ Der SureFeed Mikrochip Futterautomat Connect ist ein **geschützter Einzelnapf**
 
 ## Gerät, Hub und Bundle
 
-Mikrochipzugang und integrierte Portionswaage gehören zum Gerät. Für die Verbindung mit der Sure Petcare App ist zusätzlich ein **Sure Petcare Hub** nötig, der am Router angeschlossen wird. Bis zu zehn kompatible SureFeed- und SureFlap-Connect-Geräte können einen Hub gemeinsam nutzen.
+Mikrochipzugang, Deckelsteuerung, integrierte Waage und LED-Portionshilfe gehören zum Gerät. Für die Verbindung mit der Sure Petcare App ist zusätzlich ein **Sure Petcare Hub** nötig, der per Ethernet am Router angeschlossen wird.
 
-Wer bereits einen kompatiblen Hub besitzt, kann das Einzelgerät verwenden. Beim ersten Sure-Petcare-Connect-Produkt müssen entweder das Bundle aus Futterautomat und Hub oder ein separat erhältlicher Hub eingeplant werden.
+Wer bereits einen kompatiblen Sure Petcare Hub besitzt, kann das Einzelgerät in das vorhandene Connect-System aufnehmen. Beim ersten Sure-Petcare-Connect-Produkt müssen entweder das Bundle aus Futterautomat und Hub oder ein separat erhältlicher Hub eingeplant werden. Laut Hersteller können bis zu zehn kompatible Connect-Geräte einen Hub gemeinsam nutzen.
 
 ## App-Funktionen und gemessene Fressdaten
 
-Die integrierte Waage und LED-Portionsanzeige helfen beim manuellen Befüllen auf **1 Gramm genau**. Über die App lassen sich Fressmenge, Häufigkeit, Dauer und Tageszeiten des registrierten Tieres verfolgen; außerdem kann das System Push-Mitteilungen bei Fressereignissen senden und Statistiken als PDF bereitstellen.
+Die integrierte Waage und LED-Portionsanzeige helfen beim manuellen Befüllen auf **1 Gramm genau**. Über die App lassen sich für das registrierte Tier Fressmenge, Häufigkeit, Dauer und Tageszeiten verfolgen; zusätzlich kann das System Push-Mitteilungen bei Fressereignissen senden.
 
-Das ist eine dokumentierte Verlaufshilfe, aber kein medizinischer Befund. Der Connect-Napf schützt eine manuell eingefüllte Portion und ist kein zeitgesteuerter Vorratsautomat.
+Diese Daten sind eine Verlaufshilfe, aber kein medizinischer Befund. Der Connect-Napf schützt eine manuell eingefüllte Portion und ist kein zeitgesteuerter Vorratsautomat.
 
 ## Preis und Verfügbarkeit
 
-Die deutsche Herstellerseite führt Einzelgerät, separaten Hub und Bundle mit unterschiedlichen Preisen und Kaufsignalen. Gleichzeitig erscheint auf derselben Seite ein allgemeiner Hinweis auf fehlenden Bestand, während einzelne Varianten weiterhin als kaufbar dargestellt werden.
+Die deutsche Herstellerseite trennt Einzelgerät, separaten Hub und Bundle. Sie nennt dafür unterschiedliche Preise, zeigt aktuell aber zugleich Hinweise auf fehlenden Bestand. Händlerangebote können davon abweichen.
 
-Deshalb wird im redaktionellen Fließtext kein fester Preis gespeichert. Preis und Lieferbarkeit gelten als **aktuell zu prüfen**, getrennt nach Einzelgerät, Hub, Bundle und Händlerangebot.
+Deshalb wird weder ein Herstellerpreis noch ein Händlerpreis dauerhaft als redaktioneller Festpreis übernommen. Preis und Lieferbarkeit gelten als **aktuell zu prüfen**, getrennt nach Einzelgerät, Hub, Bundle und Händlerangebot.
 
 ## Quellenlage
 
-Die technischen und systembezogenen Angaben wurden am 2. August 2026 mit der [deutschen Herstellerseite zum SureFeed Mikrochip Futterautomat Connect](https://www.surepetcare.com/de-de/futterautomat/microchip-pet-feeder-connect) abgeglichen. Editorial Score und redaktionelle Empfehlung wurden durch diesen Datenabgleich nicht verändert.
+Die technischen, systembezogenen sowie Preis- und Verfügbarkeitsangaben wurden am 3. August 2026 mit der [deutschen Herstellerseite zum SureFeed Mikrochip Futterautomat Connect](https://www.surepetcare.com/de-de/futterautomat/microchip-pet-feeder-connect) abgeglichen.
+
+Editorial Score und redaktionelle Empfehlung wurden durch diesen Datenabgleich nicht verändert.

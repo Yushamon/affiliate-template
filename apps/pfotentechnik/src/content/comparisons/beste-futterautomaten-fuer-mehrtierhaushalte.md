@@ -65,9 +65,10 @@ items:
     label: SureFeed Microchip Pet Feeder Connect
     type: product
     recommendation: >-
-      Mikrochipgesteuerter Einzelnapf für getrennte Rationen und Fressprotokolle. Die App-Auswertung
-      benötigt einen Sure Petcare Hub. Wer noch keinen kompatiblen Hub besitzt, braucht das Bundle oder
-      einen separat erhältlichen Hub. Preis und Lieferbarkeit deshalb aktuell beim Anbieter prüfen.
+      Mikrochipgesteuerter Einzelnapf für getrennte Rationen. Mikrochipzugang und Portionswaage
+      arbeiten direkt am Gerät; App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten
+      benötigen den Sure Petcare Hub. Einzelgerät, Hub und Bundle sind getrennte Kaufvarianten.
+      Preis und Lieferbarkeit deshalb aktuell und je Variante prüfen.
     values: {}
     overrides: {}
 criteria:
@@ -235,9 +236,9 @@ Diese Grundlagen helfen dabei, Geräteart und Fütterungsablauf getrennt zu plan
 
 ## SureFeed Connect richtig einordnen
 
-Der **SureFeed Mikrochip Futterautomat Connect** ist kein zeitgesteuerter Vorratsautomat, sondern ein geschützter Einzelnapf mit Mikrochip- oder RFID-Zugang und integrierter Portionswaage.
+Der **SureFeed Mikrochip Futterautomat Connect** ist ein geschützter Einzelnapf und kein zeitgesteuerter Vorratsautomat. Mikrochipzugang und integrierte Portionswaage arbeiten direkt am Gerät.
 
-Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Preis und Lieferbarkeit werden nicht statisch genannt, weil Einzelgerät, Hub, Bundle und Händlerbestand voneinander abweichen können.
+Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Einzelgerät, Hub und Bundle sind getrennte Kaufvarianten, deshalb werden Preis und Lieferbarkeit aktuell und je Variante geprüft.
 
 ## Fazit
 
