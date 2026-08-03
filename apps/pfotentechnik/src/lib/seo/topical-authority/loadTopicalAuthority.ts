@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  evaluateClusterJourney,
+  journeyOpportunityReason,
+  type JourneyCompletion,
+} from "./journey-completion.ts";
 
 export type DocumentType = "page" | "comparison" | "product" | "manufacturer";
 export type ClusterStatus = "strong" | "developing" | "gap";
@@ -63,6 +68,7 @@ export type Cluster = {
     journey: boolean;
   };
   linkCoverage: number;
+  journeyCompletion?: JourneyCompletion;
   gaps: string[];
   nextAction: string;
   documents: Array<{
@@ -636,6 +642,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
       matches(definition.hubPatterns, item.slug),
   );
   const linkCoverage = calculateLinkCoverage(members);
+  const journeyCompletion = evaluateClusterJourney(definition.id, members);
   const targets = definition.targets;
 
   const coverage = {
@@ -651,7 +658,9 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     hub &&
     coverage.comparisons &&
     coverage.products &&
-    linkCoverage >= 55;
+    (journeyCompletion.applicable
+      ? journeyCompletion.complete
+      : linkCoverage >= 55);
 
   const score =
     members.length === 0
@@ -682,8 +691,12 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     !coverage.manufacturers
       ? `Hersteller ${counts.manufacturers}/${targets.manufacturers}`
       : "",
-    members.length > 1 && linkCoverage < 55
-      ? `Interne Linkabdeckung nur ${linkCoverage} %`
+    members.length > 1 &&
+    linkCoverage < 55 &&
+    !journeyCompletion.complete
+      ? journeyCompletion.applicable
+        ? `Kaufnahe Journey unvollständig: ${journeyCompletion.missingEdges.join(", ")}`
+        : `Interne Linkabdeckung nur ${linkCoverage} %`
       : "",
   ].filter(Boolean);
 
@@ -704,6 +717,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     counts,
     coverage,
     linkCoverage,
+    journeyCompletion,
     gaps,
     nextAction: definition.strategy,
     documents: members
@@ -748,7 +762,7 @@ export function buildOpportunities(): Opportunity[] {
 
   if (
     !byId.trinkbrunnen.coverage.comparisons ||
-    byId.trinkbrunnen.linkCoverage < 70
+    !byId.trinkbrunnen.journeyCompletion?.complete
   ) {
     output.push({
       id: "trinkbrunnen-commercial",
@@ -757,8 +771,10 @@ export function buildOpportunities(): Opportunity[] {
       priority: "high",
       impact: 90,
       effort: "mittel",
-      reason:
+      reason: journeyOpportunityReason(
+        byId.trinkbrunnen.journeyCompletion,
         "Wissensabdeckung und Kaufentscheidung sind noch nicht gleich stark verbunden.",
+      ),
       action:
         "Material-, Hygiene- und Filterintentionen mit passenden Vergleichen verbinden.",
     });
@@ -780,7 +796,10 @@ export function buildOpportunities(): Opportunity[] {
   }
 
   for (const cluster of clusters.filter(
-    (item) => item.documents.length > 2 && item.linkCoverage < 55,
+    (item) =>
+      item.documents.length > 2 &&
+      item.linkCoverage < 55 &&
+      !item.journeyCompletion?.complete,
   )) {
     output.push({
       id: `link-${cluster.id}`,

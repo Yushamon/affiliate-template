@@ -1,0 +1,23 @@
+{
+  "patch": "pfotentechnik-topical-authority-journey-completion-26.8.2",
+  "status": "passed",
+  "behavior": {
+    "commercialOpportunityUsesRequiredEdges": true,
+    "genericLinkOpportunityIgnoresCompletedRegisteredJourney": true,
+    "globalLinkCoveragePreservedAsDiagnostic": true,
+    "newPages": 0,
+    "contentFilesChanged": 0
+  },
+  "requiredEdges": 10,
+  "validation": [
+    "Journey-Completion-Test",
+    "test:topical-authority",
+    "audit:topical-authority:strict",
+    "audit:decision-journeys:strict",
+    "audit:internal-link-health:strict",
+    "audit:content-quality:strict",
+    "build"
+  ],
+  "backup": ".patch-backups/pfotentechnik-topical-authority-journey-completion-26.8.2-2026-08-03T19-10-36-453Z",
+  "createdAt": "2026-08-03T19:11:22.017Z"
+}

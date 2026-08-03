@@ -1,0 +1,26 @@
+{
+  "name": "pfotentechnik-topical-authority-journey-completion-26.8.2",
+  "version": "26.8.2",
+  "created": [
+    "apps/pfotentechnik/src/lib/seo/topical-authority/journey-completion.ts",
+    "apps/pfotentechnik/test/topical-authority-journey-completion-26.8.2.test.mjs"
+  ],
+  "patched": [
+    "apps/pfotentechnik/src/lib/seo/topical-authority/loadTopicalAuthority.ts"
+  ],
+  "contentChanges": 0,
+  "newPages": 0,
+  "validation": [
+    "node --test patch test",
+    "test:topical-authority",
+    "audit:topical-authority:strict",
+    "audit:decision-journeys:strict",
+    "audit:internal-link-health:strict",
+    "audit:content-quality:strict",
+    "build"
+  ],
+  "fixes": [
+    "Missing-edge test removes only comparison-to-filter",
+    "Hub-to-filter remains present in the regression fixture"
+  ]
+}

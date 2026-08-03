@@ -1,6 +1,6 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-03T19:08:49.057Z
+Erstellt: 2026-08-03T19:10:39.552Z
 
 ## Zusammenfassung
 
