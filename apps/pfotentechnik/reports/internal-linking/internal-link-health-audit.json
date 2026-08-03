@@ -1,27 +1,27 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-07-31T21:12:02.349Z",
-  "strict": false,
+  "generatedAt": "2026-08-03T18:56:59.112Z",
+  "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 274
+    "builtRoutes": 276
   },
   "summary": {
-    "documents": 185,
+    "documents": 186,
     "legacyErrors": 0,
-    "legacyWarnings": 39,
+    "legacyWarnings": 38,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 39,
+    "effectiveWarnings": 38,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 50
+    "advisory": 49
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 39
+    "warning": 38
   },
   "findings": [
     {
@@ -29,16 +29,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hund-hat-durchfall/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

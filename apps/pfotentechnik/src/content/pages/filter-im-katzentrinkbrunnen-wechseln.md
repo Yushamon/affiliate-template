@@ -24,6 +24,12 @@ seo:
   priority: 0.8
   changefreq: "yearly"
 related: { tags: [trinkbrunnen, filter, hygiene], limit: 4 }
+recommendationJourney:
+  mode: filtered
+  animal: cat
+  comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+  comparisonLabel: Filtertyp und Folgekosten im Modellvergleich prüfen
+
 faq:
   - { question: "Reicht ein Filter vier Wochen?", answer: "Vier Wochen sind bei manchen Herstellern ein Richtwert. Mehrere Tiere, hartes Wasser, viele Haare oder sichtbare Verschmutzung können einen früheren Wechsel erfordern." }
   - { question: "Kann man einen Filter auswaschen?", answer: "Vorsichtiges Spülen entfernt lose Partikel, stellt verbrauchte Aktivkohle oder Ionentauscher aber nicht wieder her." }
@@ -56,3 +62,8 @@ Kontrolliere Wasser und Vorfilter täglich, reinige den Brunnen wöchentlich und
 Im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) werden Filter und Folgekosten als eigenes Kriterium geführt. Ein neuer Filter ersetzt weder die [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) noch das mechanische Entfernen von [Biofilm](/biofilm-im-katzentrinkbrunnen/).
 
 **Quellen:** [VCA – Water fountain and filter care](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water), [PETKIT Solo 2 – Herstellerintervall](https://www.petkit.com/products/eversweet-solo-2), jeweilige Bedienungsanleitung des konkreten Modells.
+
+## Filterkosten in die Kaufentscheidung einbeziehen
+
+Vor dem Kauf lohnt sich der Blick auf Filtertyp, Packungsgröße, dokumentiertes Wechselintervall und Ersatzteilversorgung. Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) führt Filter und Folgekosten als eigenes Kriterium und trennt belegte Angaben von fehlenden Daten.
+Ein neuer Filter ersetzt weder die [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) noch die Prüfung der tatsächlich wasserberührenden [Materialien](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/). Der [Trinkbrunnen-Hub](/trinkbrunnen/) hilft, Filterkosten zusammen mit Tierzahl, Standort und Betriebsart einzuordnen.

@@ -1215,7 +1215,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/tractive-cat-6-mini/"
+      "/produkt/sureflap-mikrochip-katzenklappe-connect/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1223,9 +1223,9 @@
     "id": "decision-journey-0123",
     "priority": "P2",
     "cluster": "decision-journey",
-    "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+    "title": "Produkt besitzt keinen Rückweg zu einem passenden Vergleich.",
     "routes": [
-      "/produkt/tractive-dog-6-xl/"
+      "/produkt/sureflap-mikrochip-katzenklappe-connect/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1235,7 +1235,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/tractive-dog-6/"
+      "/produkt/tractive-cat-6-mini/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1245,7 +1245,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/weenect-xs/"
+      "/produkt/tractive-dog-6-xl/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1255,7 +1255,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/weenect-xt/"
+      "/produkt/tractive-dog-6/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1265,7 +1265,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/wopet-cube-air-ca10/"
+      "/produkt/weenect-xs/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1275,7 +1275,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/wopet-heritage-view-camera-feeder/"
+      "/produkt/weenect-xt/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1285,7 +1285,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/wopet-patrol-f07-pro/"
+      "/produkt/wopet-cube-air-ca10/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1295,7 +1295,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/wopet-pioneer-f01-plus/"
+      "/produkt/wopet-heritage-view-camera-feeder/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1305,7 +1305,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/xiaomi-smart-pet-food-feeder-2/"
+      "/produkt/wopet-patrol-f07-pro/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1315,7 +1315,7 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/xiaomi-smart-pet-fountain-2/"
+      "/produkt/wopet-pioneer-f01-plus/"
     ],
     "source": "audit:decision-journeys"
   },
@@ -1325,22 +1325,32 @@
     "cluster": "decision-journey",
     "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
-      "/produkt/zeromouse-2-0/"
+      "/produkt/xiaomi-smart-pet-food-feeder-2/"
     ],
     "source": "audit:decision-journeys"
   },
   {
     "id": "decision-journey-0134",
-    "priority": "P1",
+    "priority": "P2",
     "cluster": "decision-journey",
-    "title": "Noch kein sinnvoller nächster Entscheidungsschritt vorhanden.",
+    "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
+    "routes": [
+      "/produkt/xiaomi-smart-pet-fountain-2/"
+    ],
+    "source": "audit:decision-journeys"
+  },
+  {
+    "id": "decision-journey-0135",
+    "priority": "P2",
+    "cluster": "decision-journey",
+    "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
     "routes": [
       "/produkt/zeromouse-2-0/"
     ],
     "source": "audit:decision-journeys"
   },
   {
-    "id": "decision-journey-0135",
+    "id": "decision-journey-0136",
     "priority": "P2",
     "cluster": "decision-journey",
     "title": "Produkt besitzt keinen Rückweg zu einem passenden Vergleich.",

@@ -349,6 +349,16 @@ Für laufende Pflege helfen:
 
 Die sechs Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
+## So werden Material, Reinigung und Filter bewertet
+
+Die drei Kriterien beantworten unterschiedliche Fragen und dürfen nicht zu einem pauschalen Hygieneurteil vermischt werden:
+
+- **Material:** Entscheidend sind die tatsächlich wasserberührenden Flächen, nicht allein die Produktbezeichnung. Die Unterschiede erklärt der Ratgeber [Edelstahl, Keramik oder Kunststoff](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/).
+- **Reinigung:** Bewertet werden Zerlegbarkeit, Pumpenzugang, Wasserwege und ausdrücklich belegte Spülmaschineneignung. Die praktische Prüfung zeigt die Anleitung [Katzentrinkbrunnen vollständig reinigen](/katzentrinkbrunnen-richtig-reinigen/).
+- **Filter und Folgekosten:** Relevant sind Filtertyp, Wechselintervall, Kompatibilität und verfügbare Ersatzfilter. Hintergründe liefert [Filterintervalle und Warnzeichen](/filter-im-katzentrinkbrunnen-wechseln/).
+
+Fehlende Herstellerangaben werden nicht durch Vermutungen ersetzt. Ein Modell ohne belastbare Daten erhält dadurch keinen künstlichen Vorteil oder Nachteil.
+
 ## Fazit
 
 Der PETKIT Eversweet Solo 2 ist die ausgewogenste einfache Gesamtwahl im aktuellen Bestand. Wer kabellos aufstellen muss, schaut zuerst auf den oneisall 3,2L. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert. Unabhängig vom Modell bleiben mehrere Wasserstellen, regelmäßiger Wasserwechsel und vollständige Reinigung entscheidend.

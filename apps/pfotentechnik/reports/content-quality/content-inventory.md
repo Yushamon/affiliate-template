@@ -2,8 +2,8 @@
 
 Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
 
-- Indexierbare Seiten: 197
-- Gerenderte HTML-Seiten insgesamt: 274
+- Indexierbare Seiten: 198
+- Gerenderte HTML-Seiten insgesamt: 276
 - Cluster: 15
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0
@@ -24,7 +24,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - manufacturer-index: 1
 - medical-guide: 12
 - problem-solving-guide: 13
-- product: 67
+- product: 68
 
 ## Suchintentionen
 
@@ -35,7 +35,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - informational: 22
 - medical-information: 14
 - problem-solving: 11
-- product-research: 67
+- product-research: 68
 
 ## Cluster
 
@@ -48,7 +48,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - katzenernaehrung: 1
 - katzengesundheit: 1
 - katzenhaltung: 1
-- katzenklappen: 1
+- katzenklappen: 2
 - katzenverhalten: 1
 - smarte-haustiertechnik: 11
 - tierbeschaeftigung: 1

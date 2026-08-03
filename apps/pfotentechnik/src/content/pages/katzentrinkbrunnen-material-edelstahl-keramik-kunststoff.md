@@ -38,7 +38,7 @@ recommendationJourney:
   mode: filtered
   animal: cat
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
-  comparisonLabel: Passende Modelle vergleichen
+  comparisonLabel: Modelle nach tatsächlichen Wasserflächen vergleichen
 ---
 
 Dieser Ratgeber vertieft die Materialwahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und vergleicht Edelstahl, Keramik und Kunststoff.
@@ -72,3 +72,8 @@ International Cat Care nennt breite, flache Gefäße aus Glas oder Keramik als h
 Die Produktbezeichnung sagt nicht immer, welche Flächen tatsächlich aus Edelstahl bestehen. Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) nennt deshalb Tank und Trinkfläche getrennt. Unabhängig vom Material bleiben [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) und zugängliche Pumpenteile entscheidend.
 
 **Quellen:** [International Cat Care – Encouraging your cat to drink](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [Cats Protection – Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [VCA – Wasseraufnahme fördern](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water).
+
+## Von der Materialfrage zur Modellauswahl
+
+Die Materialbezeichnung allein entscheidet nicht über Hygiene oder Alltagstauglichkeit. Prüfe im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) deshalb getrennt, welche Flächen tatsächlich mit Wasser in Berührung kommen, wie gut sich Pumpe und Tank erreichen lassen und ob Ersatzfilter verfügbar sind.
+Für die Pflege nach dem Kauf führt die [vollständige Reinigungsanleitung](/katzentrinkbrunnen-richtig-reinigen/) durch Tank, Pumpe, Rotorraum und Dichtungen. Der [Trinkbrunnen-Hub](/trinkbrunnen/) ordnet die Materialfrage in Tiergröße, Standort und Betriebsart ein.

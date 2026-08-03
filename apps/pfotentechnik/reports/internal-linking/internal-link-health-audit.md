@@ -1,14 +1,14 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-07-31T21:12:02.349Z
+Erstellt: 2026-08-03T18:56:59.112Z
 
 ## Zusammenfassung
 
-- Dokumente: 185
+- Dokumente: 186
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0
-- Effektive Warnungen: 39
+- Effektive Warnungen: 38
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -37,7 +37,6 @@ Keine Befunde.
 ## Weitere Prüfhinweise
 
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/aqara-smart-pet-feeder-c1/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

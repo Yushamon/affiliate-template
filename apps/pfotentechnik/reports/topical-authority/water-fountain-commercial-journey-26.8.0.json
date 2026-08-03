@@ -1,0 +1,29 @@
+{
+  "patch": "pfotentechnik-water-fountain-commercial-journey-26.8.0",
+  "status": "passed",
+  "decision": "journey-close",
+  "newPages": 0,
+  "changedFiles": [
+    "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
+    "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+    "apps/pfotentechnik/src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
+    "apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+    "apps/pfotentechnik/test/water-fountain-commercial-journey-26.8.0.test.mjs"
+  ],
+  "intentOwners": {
+    "material": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+    "cleaning": "/katzentrinkbrunnen-richtig-reinigen/",
+    "filter": "/filter-im-katzentrinkbrunnen-wechseln/",
+    "commercial": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+    "hub": "/trinkbrunnen/"
+  },
+  "validations": [
+    "audit:topical-authority:strict",
+    "audit:decision-journeys:strict",
+    "audit:internal-link-health:strict",
+    "audit:content-quality:strict",
+    "build"
+  ],
+  "backup": ".patch-backups/pfotentechnik-water-fountain-commercial-journey-26.8.0-2026-08-03T18-56-56-307Z",
+  "createdAt": "2026-08-03T18:57:44.122Z"
+}

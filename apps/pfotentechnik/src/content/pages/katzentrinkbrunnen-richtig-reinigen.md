@@ -42,7 +42,7 @@ recommendationJourney:
   mode: filtered
   animal: cat
   comparisonHref: /vergleiche/beste-trinkbrunnen-fuer-katzen/
-  comparisonLabel: Passende Modelle vergleichen
+  comparisonLabel: Brunnen mit gut zugänglicher Pumpe vergleichen
 ---
 
 ## Kurzantwort
@@ -245,3 +245,8 @@ Vor dem erneuten Befüllen sollten diese Punkte erfüllt sein:
 - [VCA Animal Hospitals: How to get your cat to drink more water](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water)
 - [Zoetis Petcare: The Importance of Clean Water Bowls for Your Dog or Cat](https://www.zoetispetcare.com/blog/article/importance-clean-bowls-dog-cat)
 - Bedienungs-, Reinigungs- und Sicherheitshinweise des jeweiligen Trinkbrunnenherstellers
+
+## Reinigbarkeit vor dem Kauf prüfen
+
+Wer noch kein Modell gewählt hat, sollte den Reinigungsweg als Kaufkriterium behandeln. Im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) werden Zerlegbarkeit, Pumpenzugang und spülmaschinengeeignete Teile getrennt bewertet.
+Für die Materialentscheidung hilft der Vergleich von [Edelstahl, Keramik und Kunststoff](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/). Laufende Filterpflege und Folgekosten erklärt der Ratgeber zum [Filterwechsel im Katzenbrunnen](/filter-im-katzentrinkbrunnen-wechseln/). Zur breiten Auswahl führt der [Trinkbrunnen-Hub](/trinkbrunnen/).

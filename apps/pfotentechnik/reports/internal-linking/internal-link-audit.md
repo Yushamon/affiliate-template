@@ -1,20 +1,19 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-07-31T21:12:01.921Z
+Erstellt: 2026-08-03T18:56:58.832Z
 
 ## Ergebnis
 
-- Dokumente: 185
-- Linkdefinitionen: 440
-- Simulierte automatische Links: 438
+- Dokumente: 186
+- Linkdefinitionen: 441
+- Simulierte automatische Links: 443
 - Fehler: 0
-- Warnungen: 39
+- Warnungen: 38
 - Strict-kritisch: 0
 
 ## Befunde
 
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/aqara-smart-pet-feeder-c1/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -364,6 +363,8 @@ Erstellt: 2026-07-31T21:12:01.921Z
 - /produkt/petsafe-freshfeed-refrigerated-feeder/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/petsafe-healthy-pet-simply-feed/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/petsafe-smart-feed-2/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/surefeed-microchip-pet-feeder-connect/ → /smarte-futterautomaten/: „Futterautomat“
+- /produkt/surefeed-microchip-pet-feeder-connect/ → /hersteller/surefeed/: „SureFeed“
 - /produkt/surefeed-microchip-pet-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/surefeed-microchip-pet-feeder/ → /hersteller/surefeed/: „SureFeed“
 - /produkt/tractive-cat-6-mini/ → /gps-tracker/: „GPS Tracker“
@@ -409,6 +410,7 @@ Erstellt: 2026-07-31T21:12:01.921Z
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/surefeed/: „SureFeed“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/catit-pixi-smart-6-meal-feeder/: „Catit PIXI Smart 6-Meal Feeder“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
@@ -420,6 +422,7 @@ Erstellt: 2026-07-31T21:12:01.921Z
 - /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /produkt/cat-mate-c500/: „Cat Mate C500“
 - /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /trinkbrunnen-seniorenkatzen/: „ältere Katze“
 - /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ → /hersteller/surefeed/: „SureFeed“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petlibro/: „PETLIBRO“
@@ -502,5 +505,6 @@ Erstellt: 2026-07-31T21:12:01.921Z
 - /hersteller/petlibro/ → /futterautomat-hund/: „Futterautomaten für Hunde“
 - /hersteller/petlibro/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /hersteller/petlibro/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /hersteller/surefeed/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/wopet/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/xiaomi/ → /smarte-futterautomaten/: „Futterautomaten“

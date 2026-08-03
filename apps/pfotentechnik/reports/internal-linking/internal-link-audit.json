@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-07-31T21:12:01.921Z",
+  "generatedAt": "2026-08-03T18:56:58.832Z",
   "strict": false,
   "summary": {
-    "documents": 185,
-    "contentRoutes": 185,
-    "buildRoutes": 274,
-    "validRoutes": 274,
-    "definitions": 440,
-    "renderedAutomaticLinks": 438,
+    "documents": 186,
+    "contentRoutes": 186,
+    "buildRoutes": 276,
+    "validRoutes": 276,
+    "definitions": 441,
+    "renderedAutomaticLinks": 443,
     "errors": 0,
-    "warnings": 39,
+    "warnings": 38,
     "critical": 0
   },
   "blockedAnchors": [
@@ -42,12 +42,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hund-hat-durchfall/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/"
     },
     {
       "severity": "warning",
@@ -2194,6 +2188,18 @@
       "score": 1507
     },
     {
+      "sourceRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomat",
+      "score": 7013
+    },
+    {
+      "sourceRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
+    },
+    {
       "sourceRoute": "/produkt/surefeed-microchip-pet-feeder/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomaten",
@@ -2465,6 +2471,12 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1308
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
       "score": 1306
@@ -2528,6 +2540,12 @@
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
       "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "targetRoute": "/hersteller/surefeed/",
+      "anchor": "SureFeed",
+      "score": 1408
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
@@ -3022,6 +3040,12 @@
       "score": 3922
     },
     {
+      "sourceRoute": "/hersteller/surefeed/",
+      "targetRoute": "/smarte-futterautomaten/",
+      "anchor": "Futterautomaten",
+      "score": 6415
+    },
+    {
       "sourceRoute": "/hersteller/wopet/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomaten",
@@ -3064,7 +3088,7 @@
     "/hersteller/petkit/": 28,
     "/hersteller/petlibro/": 54,
     "/hersteller/petsafe/": 10,
-    "/hersteller/surefeed/": 9,
+    "/hersteller/surefeed/": 12,
     "/hersteller/tractive/": 11,
     "/hersteller/weenect/": 14,
     "/hersteller/wopet/": 6,
@@ -3079,13 +3103,13 @@
     "/hund-trinkt-viel/": 2,
     "/hund-trinkt-zu-wenig/": 6,
     "/kalk-katzentrinkbrunnen-entfernen/": 5,
-    "/katze-an-trinkbrunnen-gewoehnen/": 0,
+    "/katze-an-trinkbrunnen-gewoehnen/": 1,
     "/katze-entlaufen-gps-sinnvoll/": 3,
     "/katze-frisst-nicht/": 3,
     "/katze-trinkt-viel/": 2,
     "/katzentrinkbrunnen-dauerbetrieb-urlaub/": 0,
     "/katzentrinkbrunnen-laut-pumpe/": 4,
-    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 7,
+    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 9,
     "/katzentrinkbrunnen-ohne-filter/": 0,
     "/katzentrinkbrunnen-richtig-reinigen/": 10,
     "/katzenwasser-taeglich-wechseln/": 4,
@@ -3145,6 +3169,7 @@
     "/produkt/petsafe-smart-feed-2/": 1,
     "/produkt/surefeed-microchip-pet-feeder-connect/": 4,
     "/produkt/surefeed-microchip-pet-feeder/": 7,
+    "/produkt/sureflap-mikrochip-katzenklappe-connect/": 1,
     "/produkt/tractive-cat-6-mini/": 5,
     "/produkt/tractive-dog-6-xl/": 4,
     "/produkt/tractive-dog-6/": 4,
@@ -3160,7 +3185,7 @@
     "/pumpe-katzentrinkbrunnen-reinigen/": 3,
     "/reichweite-von-gps-trackern/": 4,
     "/seniorenhunde-richtig-versorgen/": 0,
-    "/smarte-futterautomaten/": 74,
+    "/smarte-futterautomaten/": 76,
     "/smarte-gadgets-fuer-hunde-und-katzen/": 1,
     "/smarte-haustiertechnik/": 15,
     "/so-bewerten-wir/": 15,
