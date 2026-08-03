@@ -2,8 +2,8 @@
 title: "Smarte Futterautomaten für Hunde und Katzen"
 seoTitle: "Smarte Futterautomaten 2026: Vergleich, Testkriterien & Kaufberatung"
 slug: "smarte-futterautomaten"
-description: "Die zentrale Kaufberatung für smarte Futterautomaten: Bauarten, Auswahlhilfe, Portionierung, App, Kamera, Ausfallsicherheit, Reinigung und Mehrtierhaushalte."
-seoDescription: "Smarte Futterautomaten für Katze und Hund: Bauarten vergleichen, Portionen prüfen, WLAN- und Stromausfälle absichern und Fehlkäufe vermeiden."
+description: "Zentrale Kaufberatung für smarte Futterautomaten: Bauarten, Auswahlkriterien, Ausfallsicherheit, Portionierung und passende nächste Vergleiche."
+seoDescription: "Zentraler Ratgeber für smarte Futterautomaten: Bauarten einordnen, Auswahlkriterien prüfen und anschließend gezielt passende Modelle vergleichen."
 category: "futterautomaten"
 linking:
   keywords:
@@ -49,7 +49,7 @@ hub:
   sections:
     - "wissen"
   title: "Smarte Futterautomaten"
-  description: "Zentrale Kaufberatung mit Auswahlhilfe, Produktvergleich und Ratgebern für Hunde und Katzen."
+  description: "Zentraler Cluster-Hub mit vollständiger Kaufberatung, Auswahlkriterien und fachlich passenden nächsten Schritten."
   icon: "📖"
   order: 360
 hubPriority: 100
@@ -237,6 +237,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+<!-- feeder-intent-owner: cluster-hub -->
 
 Smarte Futterautomaten sind dann sinnvoll, wenn sie ein konkretes Problem lösen: feste Fütterungszeiten trotz Arbeit, mehrere kleine Mahlzeiten, kontrollierte Tagesrationen oder eine zusätzliche Kontrolle von unterwegs. **Die wichtigste Kaufentscheidung ist nicht App gegen Kamera, sondern Trockenfutter gegen Nassfutter, ein Tier gegen mehrere Tiere und Komfort gegen echte Ausfallsicherheit.**
 

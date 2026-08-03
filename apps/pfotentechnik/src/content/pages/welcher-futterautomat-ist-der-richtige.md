@@ -1,9 +1,9 @@
 ---
-title: "Welcher Futterautomat ist der richtige?"
-seoTitle: "Welcher Futterautomat passt zu Hund oder Katze?"
+title: "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten"
+seoTitle: "Welcher Futterautomat passt zu mir? Auswahlhilfe"
 slug: "welcher-futterautomat-ist-der-richtige"
-description: "Futterautomaten nach Tier, Futterart, Portionsgröße, Mehrtierhaushalt, App, Kamera, Reinigung und Ausfallsicherheit auswählen."
-seoDescription: "Welcher Futterautomat ist der richtige? Entscheidungshilfe für Trockenfutter, Nassfutter, Katzen, Hunde, mehrere Tiere, App und Kamera."
+description: "Kompakte Auswahlhilfe: Tier, Futterart, Portionsbedarf, Mehrtierhaushalt und Ausfallsicherheit prüfen und direkt zum passenden Vergleich gelangen."
+seoDescription: "Futterautomat auswählen in fünf Schritten: Tier, Futterart, Portion, Mehrtierhaushalt und Technik prüfen und den passenden Vergleich öffnen."
 category: "futterautomaten"
 linking:
   keywords:
@@ -27,8 +27,8 @@ publishedAt: "2026-07-09"
 updatedAt: "2026-07-25"
 hub:
   sections: ["wissen"]
-  title: "Welcher Futterautomat ist der richtige?"
-  description: "Futterautomaten systematisch nach Tier, Futterart, Portionierung und Technik auswählen."
+  title: "Welcher Futterautomat passt zu mir?"
+  description: "Kompakte Auswahlstrecke nach Tier, Futterart, Portionierung, Mehrtierhaushalt und Ausfallsicherheit."
   icon: "📖"
   order: 380
 hubPriority: 73
@@ -38,8 +38,8 @@ heroImageKey: "guide"
 premiumBlocks:
   - type: "answer"
     eyebrow: "Kurzantwort"
-    title: "Erst Futterart und Tier, danach App und Kamera"
-    text: "Der richtige Futterautomat passt zuerst zur Futterart, zur benötigten Portionsgröße und zum Verhalten des Tieres. Für Trockenfutter eignen sich Vorratsautomaten, für vorbereitete Nassfutterportionen Fachautomaten. App, Kamera und Sprachaufnahme sind erst danach relevant."
+    title: "In fünf Schritten zum passenden Automatentyp"
+    text: "Prüfe nacheinander Tier, Futterart, Portionsbedarf, Mehrtierhaushalt und Ausfallsicherheit. Die ausführlichen Kaufkriterien erklärt der zentrale Futterautomaten-Ratgeber; diese Seite führt dich möglichst direkt zum passenden Vergleich."
 
   - type: "quickFacts"
     eyebrow: "Schnell entscheiden"
@@ -179,6 +179,8 @@ recommendationJourney:
   comparisonHref: /vergleiche/
   comparisonLabel: Passende Modelle vergleichen
 ---
+
+<!-- feeder-intent-owner: compact-chooser -->
 
 ## Die kurze Antwort
 
