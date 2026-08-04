@@ -154,3 +154,5 @@ PfotenTechnik bündelt die Produkte deshalb weiterhin auf dieser Herstellerseite
 Mit der SureFlap Mikrochip Katzenklappe Connect erweitert sich das Herstellerprofil über Fütterungsprodukte hinaus um app-gestützte Zugangskontrolle. Die Produktlinie kombiniert Mikrochip-Erkennung, individuelle DualScan-Regeln und optionale Fernfunktionen über den Sure Petcare Hub.
 
 [SureFlap Mikrochip Katzenklappe Connect ansehen](/produkt/sureflap-mikrochip-katzenklappe-connect/)
+
+Die herstellerübergreifende Auswahl nach Zugang, Passform, Einbau und App-Bedarf bündelt der Cornerstone [Smarte Katzenklappen](/smarte-katzenklappen/).

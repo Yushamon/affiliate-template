@@ -26,6 +26,15 @@ trinkbrunnen:[
 {id:"comparison-to-material",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",label:"Katzenvergleich → Materialratgeber"},
 {id:"comparison-to-cleaning",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/katzentrinkbrunnen-richtig-reinigen/",label:"Katzenvergleich → Reinigungsratgeber"},
 {id:"comparison-to-filter",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/filter-im-katzentrinkbrunnen-wechseln/",label:"Katzenvergleich → Filterratgeber"}
+],
+katzenklappen:[
+{id:"overview-to-hub",source:"/smarte-haustiertechnik/",target:"/smarte-katzenklappen/",label:"Haustiertechnik → Katzenklappen-Hub"},
+{id:"hub-to-sureflap",source:"/smarte-katzenklappen/",target:"/produkt/sureflap-mikrochip-katzenklappe-connect/",label:"Hub → vollständige Mikrochip-Klappe"},
+{id:"hub-to-zeromouse",source:"/smarte-katzenklappen/",target:"/produkt/zeromouse-2-0/",label:"Hub → Beuteerkennungs-Nachrüstung"},
+{id:"sureflap-to-hub",source:"/produkt/sureflap-mikrochip-katzenklappe-connect/",target:"/smarte-katzenklappen/",label:"Mikrochip-Klappe → Hub"},
+{id:"zeromouse-to-hub",source:"/produkt/zeromouse-2-0/",target:"/smarte-katzenklappen/",label:"Nachrüstung → Hub"},
+{id:"surefeed-to-hub",source:"/hersteller/surefeed/",target:"/smarte-katzenklappen/",label:"Sure Petcare → Hub"},
+{id:"zeromouse-brand-to-hub",source:"/hersteller/zeromouse/",target:"/smarte-katzenklappen/",label:"ZeroMOUSE → Hub"}
 ]};
 const norm=(v:string)=>{const x=String(v??"").trim().split("#",1)[0]?.split("?",1)[0]??"";return x.startsWith("/")&&!x.endsWith("/")?`${x}/`:x};
 export const getJourneyRequirements=(clusterId:string)=>REQUIREMENTS[clusterId]??[];

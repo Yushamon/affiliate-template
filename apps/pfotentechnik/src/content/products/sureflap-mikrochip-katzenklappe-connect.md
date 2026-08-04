@@ -10,6 +10,7 @@ manufacturer:
 category:
   key: "katzenklappen"
   label: "Katzenklappen"
+  path: "/smarte-katzenklappen/"
 publishedAt: "2026-08-02"
 updatedAt: "2026-08-02"
 productStatus: active
@@ -174,6 +175,8 @@ editorial:
 ## Kurz eingeordnet
 
 Die SureFlap Mikrochip Katzenklappe Connect verbindet individuelle Mikrochip-Zutrittsregeln mit App-Funktionen. Die lokale Tiererkennung gehört zur Klappe. Für Fernverriegelung, Aktivitätsmeldungen, Statistiken und Änderungen per App ist zusätzlich der Sure Petcare Hub erforderlich.
+
+Die breite Auswahl zwischen lokaler Mikrochip-Erkennung, App-Funktionen und Nachrüstung ordnet der Hub [Smarte Katzenklappen](/smarte-katzenklappen/) ein. Diese Produktseite bleibt der Intent-Owner für die konkrete SureFlap-Connect-Prüfung.
 
 ## Modell, Hub und Bundle
 
