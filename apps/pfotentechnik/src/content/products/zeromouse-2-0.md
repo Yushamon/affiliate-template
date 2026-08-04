@@ -19,7 +19,7 @@ manufacturer:
 category:
   key: katzenklappen
   label: Katzenklappen
-  path: /smarte-katzenklappen/
+  path: /katzenklappen/
 productUrl: /produkt/zeromouse-2-0/
 publishedAt: "2026-07-26"
 updatedAt: "2026-07-26"
@@ -390,7 +390,7 @@ Der Kauf ist rational, wenn:
 
 Wer nur fremde Katzen aussperren will, braucht keine KI-Beuteerkennung. Dafür genügt eine passende Mikrochip-Klappe.
 
-Die vorausgehende Auswahl zwischen vollständiger Klappe, App-Funktionen und spezialisierter Nachrüstung erklärt [Smarte Katzenklappen](/smarte-katzenklappen/). ZeroMOUSE bleibt hier bewusst als Zusatzmodul eingeordnet und wird nicht mit vollständigen Klappen in eine gemeinsame Rangliste gestellt.
+Die vorausgehende Auswahl zwischen vollständiger Klappe, App-Funktionen und spezialisierter Nachrüstung erklärt der Hub [Katzenklappen](/katzenklappen/). ZeroMOUSE bleibt hier bewusst als Zusatzmodul eingeordnet und wird im App-Vergleich ausdrücklich als Nachrüstung gekennzeichnet.
 
 ## Redaktionelle Einordnung
 

@@ -14,7 +14,7 @@ recommendation: "PetSafe ist besonders für Tierhalter interessant, die etablier
 summary: "PetSafe bietet ein breites Sortiment für Hunde und Katzen. Im Bereich smarter Haustiertechnik gehören Futterautomaten, Trinksysteme und vernetzte Produkte dazu. Die redaktionelle Bewertung trennt zwischen Herstellerangaben, tatsächlichem Funktionsumfang und offenen Punkten wie regionaler Verfügbarkeit oder Langzeiterfahrung."
 
 publishedAt: "2026-07-25"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-04"
 
 author:
   name: "PfotenTechnik Redaktion"
@@ -57,12 +57,14 @@ images:
 productCategories:
   - "Futterautomaten"
   - "Trinksysteme"
+  - "Mikrochip-Katzenklappen"
 
 productAreas:
   - "Trockenfutterautomaten"
   - "Nassfutterautomaten"
   - "Aktiv gekühlte Futterautomaten"
   - "Trinklösungen"
+  - "Selektiver Katzenzugang"
 
 focus:
   - "Alltagstaugliche Fütterung"
@@ -104,11 +106,20 @@ profile:
 productSlugs:
   - "petsafe-freshfeed-refrigerated-feeder"
   - "petsafe-healthy-pet-simply-feed"
+  - "petsafe-mikrochip-katzenklappe"
 
 featuredProductSlugs:
   - "petsafe-freshfeed-refrigerated-feeder"
+  - "petsafe-mikrochip-katzenklappe"
 
-series: []
+series:
+  - key: "microchip-cat-flaps"
+    name: "Mikrochip-Katzenklappen"
+    description: "Lokaler selektiver Eingang; Chipformat und Einbaumaterial modellbezogen prüfen."
+    suitableFor:
+      - "Zugang ohne App"
+    productSlugs:
+      - "petsafe-mikrochip-katzenklappe"
 
 alternativeManufacturerSlugs:
   - "petlibro"
@@ -119,6 +130,9 @@ sources:
   - label: "Offizielle PetSafe-Website"
     url: "https://www.petsafe.com"
     description: "Herstellerinformationen zu Sortiment, Produktfunktionen und Support."
+  - label: "PetSafe Mikrochip-Katzenklappe Deutschland"
+    url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/"
+    description: "Deutsche Produkt-, Verfügbarkeits- und Einbauinformationen; geprüft am 04.08.2026."
 
 faq:
   - question: "Welche smarten Produkte bietet PetSafe an?"
@@ -130,3 +144,5 @@ faq:
 ---
 
 PetSafe deckt unterschiedliche Anforderungen in Hunde- und Katzenhaushalten ab. Entscheidend ist das konkrete Produkt: Futterart, Kühlung, Stromversorgung, App-Abhängigkeit, Reinigung und regionale Verfügbarkeit sollten immer getrennt bewertet werden.
+
+Im Katzenklappen-Cluster bleibt der Marken-Intent hier; die konkrete Prüfung liegt bei der [PetSafe Mikrochip Katzenklappe](/produkt/petsafe-mikrochip-katzenklappe/) und der herstellerübergreifende Intent beim [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).

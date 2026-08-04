@@ -135,7 +135,7 @@
     "audit:topical-authority": "node scripts/seo/audit-topical-authority.mjs",
     "audit:topical-authority:strict": "node scripts/seo/audit-topical-authority.mjs --strict",
     "test:topical-authority": "node --test test/topical-authority-center.test.mjs",
-    "test:topical-authority:katzenklappen": "node --test test/katzenklappen-topical-authority-28.0.0.test.mjs",
+    "test:topical-authority:katzenklappen": "node --test test/cat-flaps-core-cluster-26.0.0.test.mjs",
     "audit:decision-journeys": "node --experimental-strip-types scripts/seo/audit-decision-journeys.mjs",
     "audit:decision-journeys:strict": "node --experimental-strip-types scripts/seo/audit-decision-journeys.mjs --strict",
     "test:decision-journeys": "node --test test/decision-journey.test.mjs",

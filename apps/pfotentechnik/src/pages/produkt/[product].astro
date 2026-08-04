@@ -343,7 +343,7 @@ const productSchema = {
         }
       }
     : {}),
-  review: {
+  ...((contentProduct.score ?? 0) > 0 || (contentProduct.rating ?? 0) > 0 ? { review: {
     "@type": "Review",
     name: `${contentProduct.title} – redaktionelle Einordnung`,
     reviewBody: structuredReviewBody,
@@ -368,7 +368,7 @@ const productSchema = {
     ...(contentProduct.weaknesses?.length
       ? { negativeNotes: toReviewItemList(contentProduct.weaknesses) }
       : {})
-  }
+  }} : {})
 };
 
 

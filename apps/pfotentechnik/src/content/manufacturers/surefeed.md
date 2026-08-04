@@ -78,6 +78,9 @@ weaknesses:
 productSlugs:
   - "surefeed-microchip-pet-feeder-connect"
   - "surefeed-microchip-pet-feeder"
+  - "sureflap-mikrochip-katzenklappe"
+  - "sureflap-dualscan-mikrochip-katzenklappe"
+  - "sureflap-mikrochip-katzenklappe-connect"
 profile:
   company: "SureFeed ist die Fütterungsmarke von Sure Petcare, dem aus SureFlap hervorgegangenen Anbieter für mikrochipgesteuerte Haustierprodukte. Der Schwerpunkt liegt auf selektivem Futterzugang statt automatischer Portionierung nach Uhrzeit."
   appEcosystem: "Der Microchip Pet Feeder Connect arbeitet über den Sure Petcare Hub mit der App. Dort lassen sich unter anderem Fütterungshäufigkeit, Dauer und Menge verfolgen; der klassische Mikrochip-Futterautomat funktioniert ohne App."
@@ -88,6 +91,7 @@ profile:
 featuredProductSlugs:
   - "surefeed-microchip-pet-feeder-connect"
   - "surefeed-microchip-pet-feeder"
+  - "sureflap-mikrochip-katzenklappe-connect"
 series:
   - key: "microchip-pet-feeder"
     name: "Microchip Pet Feeder"
@@ -101,6 +105,15 @@ series:
     suitableFor:
       - "App-Nutzer"
     productSlugs: []
+  - key: "sureflap-cat-flaps"
+    name: "SureFlap Katzenklappen"
+    description: "Lokaler Mikrochip-Zugang, DualScan-Rechte und Connect-Fernfunktionen als getrennte Modellstufen."
+    suitableFor:
+      - "Selektiver Zugang und Mehrkatzenhaushalte"
+    productSlugs:
+      - "sureflap-mikrochip-katzenklappe"
+      - "sureflap-dualscan-mikrochip-katzenklappe"
+      - "sureflap-mikrochip-katzenklappe-connect"
 experience:
   summary: "SureFeed wird von vielen Katzenhaltern als äußerst zuverlässige Lösung gegen Futterdiebstahl beschrieben. Besonders gelobt werden die präzise Mikrochip-Erkennung und die einfache Bedienung. Kritik gibt es hauptsächlich am Preis und am vergleichsweise kleinen Produktsortiment."
   positives:
@@ -155,4 +168,4 @@ Mit der SureFlap Mikrochip Katzenklappe Connect erweitert sich das Herstellerpro
 
 [SureFlap Mikrochip Katzenklappe Connect ansehen](/produkt/sureflap-mikrochip-katzenklappe-connect/)
 
-Die herstellerübergreifende Auswahl nach Zugang, Passform, Einbau und App-Bedarf bündelt der Cornerstone [Smarte Katzenklappen](/smarte-katzenklappen/).
+Die herstellerübergreifende Auswahl nach Zugang, Passform, Einbau und App-Bedarf bündelt der Cornerstone [Katzenklappen](/katzenklappen/). Die SureFlap-Modelle stehen gemeinsam im [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).

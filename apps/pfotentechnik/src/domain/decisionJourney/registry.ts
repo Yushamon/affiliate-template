@@ -69,7 +69,7 @@ export const CLUSTER_DEFINITIONS = [
   {
     id: "katzenklappen",
     patterns: [/katzenklappe/i, /mikrochipklappe/i],
-    hubs: ["/smarte-katzenklappen/", "/katzenklappe-mit-chip/"],
+    hubs: ["/katzenklappen/"],
   },
 ] as const;
 

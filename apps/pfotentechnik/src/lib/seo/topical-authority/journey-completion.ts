@@ -28,13 +28,16 @@ trinkbrunnen:[
 {id:"comparison-to-filter",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/filter-im-katzentrinkbrunnen-wechseln/",label:"Katzenvergleich → Filterratgeber"}
 ],
 katzenklappen:[
-{id:"overview-to-hub",source:"/smarte-haustiertechnik/",target:"/smarte-katzenklappen/",label:"Haustiertechnik → Katzenklappen-Hub"},
-{id:"hub-to-sureflap",source:"/smarte-katzenklappen/",target:"/produkt/sureflap-mikrochip-katzenklappe-connect/",label:"Hub → vollständige Mikrochip-Klappe"},
-{id:"hub-to-zeromouse",source:"/smarte-katzenklappen/",target:"/produkt/zeromouse-2-0/",label:"Hub → Beuteerkennungs-Nachrüstung"},
-{id:"sureflap-to-hub",source:"/produkt/sureflap-mikrochip-katzenklappe-connect/",target:"/smarte-katzenklappen/",label:"Mikrochip-Klappe → Hub"},
-{id:"zeromouse-to-hub",source:"/produkt/zeromouse-2-0/",target:"/smarte-katzenklappen/",label:"Nachrüstung → Hub"},
-{id:"surefeed-to-hub",source:"/hersteller/surefeed/",target:"/smarte-katzenklappen/",label:"Sure Petcare → Hub"},
-{id:"zeromouse-brand-to-hub",source:"/hersteller/zeromouse/",target:"/smarte-katzenklappen/",label:"ZeroMOUSE → Hub"}
+{id:"overview-to-hub",source:"/smarte-haustiertechnik/",target:"/katzenklappen/",label:"Haustiertechnik → Katzenklappen-Hub"},
+{id:"hub-to-microchip",source:"/katzenklappen/",target:"/vergleiche/beste-mikrochip-katzenklappen/",label:"Hub → Mikrochip-Vergleich"},
+{id:"hub-to-smart",source:"/katzenklappen/",target:"/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",label:"Hub → App- und Beutevergleich"},
+{id:"hub-to-install",source:"/katzenklappen/",target:"/katzenklappe-einbauen/",label:"Hub → Einbauratgeber"},
+{id:"hub-to-training",source:"/katzenklappen/",target:"/katze-an-katzenklappe-gewoehnen/",label:"Hub → Gewöhnungsratgeber"},
+{id:"hub-to-multi",source:"/katzenklappen/",target:"/katzenklappe-fuer-mehrere-katzen/",label:"Hub → Mehrkatzenratgeber"},
+{id:"hub-to-insulation",source:"/katzenklappen/",target:"/katzenklappe-zugluft-und-waermedaemmung/",label:"Hub → Dämmratgeber"},
+{id:"microchip-to-dualscan",source:"/vergleiche/beste-mikrochip-katzenklappen/",target:"/produkt/sureflap-dualscan-mikrochip-katzenklappe/",label:"Mikrochip-Vergleich → DualScan"},
+{id:"smart-to-onlycat",source:"/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",target:"/produkt/onlycat-mikrochip-katzenklappe/",label:"App-Vergleich → OnlyCat"},
+{id:"onlycat-to-smart",source:"/produkt/onlycat-mikrochip-katzenklappe/",target:"/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",label:"OnlyCat → App-Vergleich"}
 ]};
 const norm=(v:string)=>{const x=String(v??"").trim().split("#",1)[0]?.split("?",1)[0]??"";return x.startsWith("/")&&!x.endsWith("/")?`${x}/`:x};
 export const getJourneyRequirements=(clusterId:string)=>REQUIREMENTS[clusterId]??[];

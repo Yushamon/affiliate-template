@@ -22,6 +22,23 @@ export const contentLayoutSchema = z.enum([
   "knowledge"
 ]);
 
+const decisionJourneySchema = z.object({
+  cluster: z.string(),
+  stage: z.enum(["orientation", "problem", "evaluation", "decision", "support"]),
+  intent: z.string(),
+  primaryQuestion: z.string(),
+  next: z.array(z.string()).default([]),
+  fallback: z.array(z.string()).default([])
+});
+
+const evidenceSourceSchema = z.object({
+  source: z.string(),
+  url: z.string().url(),
+  accessedAt: z.coerce.date(),
+  assertion: z.string(),
+  fields: z.array(z.string()).min(1)
+});
+
 export const baseContentSchema = z.object({
   title: z.string(),
   slug: z.string(),
@@ -85,7 +102,13 @@ export const baseContentSchema = z.object({
         .positive()
         .default(4)
     })
-    .optional()
+    .optional(),
+
+  decisionJourney: decisionJourneySchema.optional(),
+
+  evidenceSources: z
+    .array(evidenceSourceSchema)
+    .default([])
 });
 
 export type BaseContentData =

@@ -124,7 +124,7 @@ premiumBlocks:
       - label: "Selektiver Zugang"
         title: "Smarte Katzenklappen"
         text: "Mikrochip-Zugang, App-Funktionen, Durchgangsmaß, Einbau und spezialisierte Beuteerkennung."
-        href: "/smarte-katzenklappen/"
+        href: "/katzenklappen/"
         cta: "Katzenklappen auswählen"
       - label: "Modelle einordnen"
         title: "Produktvergleiche"
@@ -291,7 +291,7 @@ Der Cornerstone [GPS-Tracker für Hunde und Katzen](/gps-tracker/) trennt Positi
 
 Smarte Klappen erkennen Tiere etwa über einen vorhandenen Mikrochip oder einen Halsbandanhänger und können Ein- und Ausgangsregeln anwenden. Wichtig sind kompatible Chipstandards, Durchgangsmaß, Verriegelungslogik, Geräusch, Batteriewarnung und manuelle Entriegelung. In Mehrtierhaushalten muss die Regel je Tier und Richtung verständlich konfigurierbar sein.
 
-Der Cornerstone [Smarte Katzenklappen](/smarte-katzenklappen/) trennt lokale Mikrochip-Erkennung, App-Funktionen und spezialisierte Nachrüstung und führt zu den vorhandenen konkreten Produktprüfungen.
+Der Cornerstone [Katzenklappen](/katzenklappen/) trennt lokale Mikrochip-Erkennung, App-Funktionen und spezialisierte Nachrüstung und führt zu Vergleichen, Praxisratgebern und konkreten Produktprüfungen.
 
 ### Haustierkameras
 

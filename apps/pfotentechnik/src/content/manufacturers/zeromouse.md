@@ -158,4 +158,4 @@ ZeroMOUSE ist auf die Nachrüstung kompatibler Mikrochip-Katzenklappen spezialis
 
 Die Lösung ersetzt weder die Katzenklappe noch deren Mikrochip-Zugangskontrolle. Kompatibilität, WLAN, Stromversorgung und die konkrete Einbausituation müssen vor dem Kauf geprüft werden.
 
-Zur Abgrenzung von vollständiger Mikrochip-Klappe, App-Funktionen und Nachrüstung führt der Auswahl-Hub [Smarte Katzenklappen](/smarte-katzenklappen/). Die konkrete Produktprüfung bleibt bei [ZeroMOUSE 2.0](/produkt/zeromouse-2-0/).
+Zur Abgrenzung von vollständiger Mikrochip-Klappe, App-Funktionen und Nachrüstung führt der Auswahl-Hub [Katzenklappen](/katzenklappen/). Die konkrete Produktprüfung bleibt bei [ZeroMOUSE 2.0](/produkt/zeromouse-2-0/), der Systemvergleich bei [App und Beuteerkennung](/vergleiche/katzenklappen-mit-app-und-beuteerkennung/).
