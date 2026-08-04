@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import test from "node:test";
+import{evaluateIntentOwnership,getIntentOwners,intentOwnershipReason}from"../src/lib/seo/topical-authority/intent-ownership.ts";
+import{evaluateClusterJourney,getJourneyRequirements}from"../src/lib/seo/topical-authority/journey-completion.ts";
+test("Futterautomaten besitzen zentrale überschneidungsfreie Intent-Owner",()=>{const o=getIntentOwners("futterautomaten");const r=evaluateIntentOwnership("futterautomaten",o.map(x=>({route:x.route})));assert.equal(r.complete,true);assert.equal(r.conflicts.length,0);assert.match(intentOwnershipReason(r,"Fallback"),/Konsolidierung/)});
+test("fehlende Auswahlhilfe wird gemeldet",()=>{const o=getIntentOwners("futterautomaten");const r=evaluateIntentOwnership("futterautomaten",o.filter(x=>x.route!=="/welcher-futterautomat-ist-der-richtige/").map(x=>({route:x.route})));assert.deepEqual(r.missingOwners,["/welcher-futterautomat-ist-der-richtige/"])});
+test("Futterautomaten-Journey nutzt konkrete Pflichtkanten",()=>{const q=getJourneyRequirements("futterautomaten");const docs=[...new Set(q.map(x=>x.source))].map(source=>({route:source,links:q.filter(x=>x.source===source).map(x=>x.target)}));const r=evaluateClusterJourney("futterautomaten",docs);assert.equal(r.complete,true);assert.equal(r.requiredEdges,11)});
+test("Clusterbreite erzeugt keine neue Seitenpflicht",()=>{const o=getIntentOwners("futterautomaten");const r=evaluateIntentOwnership("futterautomaten",[...o.map(x=>({route:x.route})),...Array.from({length:70},(_,i)=>({route:`/rand-${i}/`}))]);assert.equal(r.complete,true)});
+test("Loader integriert Intent-Ownership dynamisch",()=>{const s=fs.readFileSync(path.join(process.cwd(),"src/lib/seo/topical-authority/loadTopicalAuthority.ts"),"utf8");assert.match(s,/evaluateIntentOwnership/);assert.match(s,/intentOwnership\?: IntentOwnershipResult/);assert.match(s,/byId\.futterautomaten\.intentOwnership/);assert.doesNotMatch(s,/byId\.futterautomaten\.counts\.total\s*>=\s*20/)});

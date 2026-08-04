@@ -1,165 +1,43 @@
-export type JourneyDocument = {
-  route: string;
-  links: string[];
-};
-
-export type JourneyRequirement = {
-  id: string;
-  source: string;
-  target: string;
-  label: string;
-};
-
-export type JourneyCompletion = {
-  clusterId: string;
-  applicable: boolean;
-  complete: boolean;
-  completedEdges: string[];
-  missingEdges: string[];
-  requiredEdges: number;
-  completedCount: number;
-};
-
-const REQUIREMENTS: Record<string, JourneyRequirement[]> = {
-  trinkbrunnen: [
-    {
-      id: "hub-to-material",
-      source: "/trinkbrunnen/",
-      target: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      label: "Hub → Materialratgeber",
-    },
-    {
-      id: "hub-to-cleaning",
-      source: "/trinkbrunnen/",
-      target: "/katzentrinkbrunnen-richtig-reinigen/",
-      label: "Hub → Reinigungsratgeber",
-    },
-    {
-      id: "hub-to-filter",
-      source: "/trinkbrunnen/",
-      target: "/filter-im-katzentrinkbrunnen-wechseln/",
-      label: "Hub → Filterratgeber",
-    },
-    {
-      id: "hub-to-comparison",
-      source: "/trinkbrunnen/",
-      target: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      label: "Hub → Katzenvergleich",
-    },
-    {
-      id: "material-to-comparison",
-      source: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      target: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      label: "Materialratgeber → Katzenvergleich",
-    },
-    {
-      id: "cleaning-to-comparison",
-      source: "/katzentrinkbrunnen-richtig-reinigen/",
-      target: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      label: "Reinigungsratgeber → Katzenvergleich",
-    },
-    {
-      id: "filter-to-comparison",
-      source: "/filter-im-katzentrinkbrunnen-wechseln/",
-      target: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      label: "Filterratgeber → Katzenvergleich",
-    },
-    {
-      id: "comparison-to-material",
-      source: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      target: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      label: "Katzenvergleich → Materialratgeber",
-    },
-    {
-      id: "comparison-to-cleaning",
-      source: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      target: "/katzentrinkbrunnen-richtig-reinigen/",
-      label: "Katzenvergleich → Reinigungsratgeber",
-    },
-    {
-      id: "comparison-to-filter",
-      source: "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      target: "/filter-im-katzentrinkbrunnen-wechseln/",
-      label: "Katzenvergleich → Filterratgeber",
-    },
-  ],
-};
-
-const normalizeRoute = (value: string): string => {
-  const raw = String(value ?? "").trim();
-  if (!raw) return "";
-  const withoutHash = raw.split("#", 1)[0]?.split("?", 1)[0] ?? "";
-  if (!withoutHash.startsWith("/")) return withoutHash;
-  return withoutHash.endsWith("/") ? withoutHash : `${withoutHash}/`;
-};
-
-export function getJourneyRequirements(clusterId: string): JourneyRequirement[] {
-  return REQUIREMENTS[clusterId] ?? [];
+export type JourneyDocument={route:string;links:string[]};
+export type JourneyRequirement={id:string;source:string;target:string;label:string};
+export type JourneyCompletion={clusterId:string;applicable:boolean;complete:boolean;completedEdges:string[];missingEdges:string[];requiredEdges:number;completedCount:number};
+const REQUIREMENTS:Record<string,JourneyRequirement[]>={
+futterautomaten:[
+{id:"hub-to-decision",source:"/smarte-futterautomaten/",target:"/welcher-futterautomat-ist-der-richtige/",label:"Cornerstone → Auswahlhilfe"},
+{id:"decision-to-cat",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-fuer-katzen/",label:"Auswahlhilfe → Katzenvergleich"},
+{id:"decision-to-dog",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-fuer-hunde/",label:"Auswahlhilfe → Hundevergleich"},
+{id:"decision-to-wet",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-fuer-nassfutter/",label:"Auswahlhilfe → Nassfuttervergleich"},
+{id:"decision-to-battery",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-mit-akku/",label:"Auswahlhilfe → Akkuvergleich"},
+{id:"decision-to-offline",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-ohne-wlan/",label:"Auswahlhilfe → Offlinevergleich"},
+{id:"decision-to-app",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/futterautomat-mit-app/",label:"Auswahlhilfe → App-Vergleich"},
+{id:"decision-to-camera",source:"/welcher-futterautomat-ist-der-richtige/",target:"/vergleiche/beste-futterautomaten-mit-kamera/",label:"Auswahlhilfe → Kamera-Vergleich"},
+{id:"power-guide-to-battery",source:"/futterautomat-bei-stromausfall/",target:"/vergleiche/beste-futterautomaten-mit-akku/",label:"Stromausfall-Ratgeber → Akkuvergleich"},
+{id:"wet-comparison-to-cleaning",source:"/vergleiche/beste-futterautomaten-fuer-nassfutter/",target:"/futterautomat-richtig-reinigen/",label:"Nassfuttervergleich → Reinigungsratgeber"},
+{id:"multi-pet-to-surefeed",source:"/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",target:"/hersteller/surefeed/",label:"Mehrtiervergleich → SureFeed"}
+],
+trinkbrunnen:[
+{id:"hub-to-material",source:"/trinkbrunnen/",target:"/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",label:"Hub → Materialratgeber"},
+{id:"hub-to-cleaning",source:"/trinkbrunnen/",target:"/katzentrinkbrunnen-richtig-reinigen/",label:"Hub → Reinigungsratgeber"},
+{id:"hub-to-filter",source:"/trinkbrunnen/",target:"/filter-im-katzentrinkbrunnen-wechseln/",label:"Hub → Filterratgeber"},
+{id:"hub-to-comparison",source:"/trinkbrunnen/",target:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",label:"Hub → Katzenvergleich"},
+{id:"material-to-comparison",source:"/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",target:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",label:"Materialratgeber → Katzenvergleich"},
+{id:"cleaning-to-comparison",source:"/katzentrinkbrunnen-richtig-reinigen/",target:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",label:"Reinigungsratgeber → Katzenvergleich"},
+{id:"filter-to-comparison",source:"/filter-im-katzentrinkbrunnen-wechseln/",target:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",label:"Filterratgeber → Katzenvergleich"},
+{id:"comparison-to-material",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",label:"Katzenvergleich → Materialratgeber"},
+{id:"comparison-to-cleaning",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/katzentrinkbrunnen-richtig-reinigen/",label:"Katzenvergleich → Reinigungsratgeber"},
+{id:"comparison-to-filter",source:"/vergleiche/beste-trinkbrunnen-fuer-katzen/",target:"/filter-im-katzentrinkbrunnen-wechseln/",label:"Katzenvergleich → Filterratgeber"}
+]};
+const norm=(v:string)=>{const x=String(v??"").trim().split("#",1)[0]?.split("?",1)[0]??"";return x.startsWith("/")&&!x.endsWith("/")?`${x}/`:x};
+export const getJourneyRequirements=(clusterId:string)=>REQUIREMENTS[clusterId]??[];
+export function evaluateClusterJourney(clusterId:string,documents:JourneyDocument[]):JourneyCompletion{
+ const req=getJourneyRequirements(clusterId);if(!req.length)return{clusterId,applicable:false,complete:false,completedEdges:[],missingEdges:[],requiredEdges:0,completedCount:0};
+ const graph=new Map<string,Set<string>>();
+ for(const d of documents){const route=norm(d.route);if(!route)continue;const targets=graph.get(route)??new Set<string>();for(const l of d.links??[]){const t=norm(l);if(t&&t!==route)targets.add(t)}graph.set(route,targets)}
+ const completedEdges:string[]=[],missingEdges:string[]=[];
+ for(const r of req)(graph.get(norm(r.source))?.has(norm(r.target))??false?completedEdges:missingEdges).push(r.label);
+ return{clusterId,applicable:true,complete:!missingEdges.length,completedEdges,missingEdges,requiredEdges:req.length,completedCount:completedEdges.length};
 }
-
-export function evaluateClusterJourney(
-  clusterId: string,
-  documents: JourneyDocument[],
-): JourneyCompletion {
-  const requirements = getJourneyRequirements(clusterId);
-
-  if (requirements.length === 0) {
-    return {
-      clusterId,
-      applicable: false,
-      complete: false,
-      completedEdges: [],
-      missingEdges: [],
-      requiredEdges: 0,
-      completedCount: 0,
-    };
-  }
-
-  const graph = new Map<string, Set<string>>();
-
-  for (const document of documents) {
-    const route = normalizeRoute(document.route);
-    if (!route) continue;
-
-    const targets = graph.get(route) ?? new Set<string>();
-    for (const link of document.links ?? []) {
-      const normalized = normalizeRoute(link);
-      if (normalized && normalized !== route) targets.add(normalized);
-    }
-    graph.set(route, targets);
-  }
-
-  const completedEdges: string[] = [];
-  const missingEdges: string[] = [];
-
-  for (const requirement of requirements) {
-    const source = normalizeRoute(requirement.source);
-    const target = normalizeRoute(requirement.target);
-    const present = graph.get(source)?.has(target) ?? false;
-
-    if (present) completedEdges.push(requirement.label);
-    else missingEdges.push(requirement.label);
-  }
-
-  return {
-    clusterId,
-    applicable: true,
-    complete: missingEdges.length === 0,
-    completedEdges,
-    missingEdges,
-    requiredEdges: requirements.length,
-    completedCount: completedEdges.length,
-  };
-}
-
-export function journeyOpportunityReason(
-  completion: JourneyCompletion | undefined,
-  fallback: string,
-): string {
-  if (!completion?.applicable) return fallback;
-  if (completion.complete) {
-    return `Alle ${completion.requiredEdges} kaufnahen Pflichtkanten sind vorhanden.`;
-  }
-
-  return `${completion.completedCount}/${completion.requiredEdges} kaufnahe Pflichtkanten vorhanden. Fehlend: ${completion.missingEdges.join(", ")}.`;
+export function journeyOpportunityReason(c:JourneyCompletion|undefined,fallback:string){
+ if(!c?.applicable)return fallback;if(c.complete)return`Alle ${c.requiredEdges} kaufnahen Pflichtkanten sind vorhanden.`;
+ return`${c.completedCount}/${c.requiredEdges} kaufnahe Pflichtkanten vorhanden. Fehlend: ${c.missingEdges.join(", ")}.`;
 }

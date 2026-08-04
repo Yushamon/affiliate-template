@@ -6,6 +6,11 @@ import {
   journeyOpportunityReason,
   type JourneyCompletion,
 } from "./journey-completion.ts";
+import {
+  evaluateIntentOwnership,
+  intentOwnershipReason,
+  type IntentOwnershipResult,
+} from "./intent-ownership.ts";
 
 export type DocumentType = "page" | "comparison" | "product" | "manufacturer";
 export type ClusterStatus = "strong" | "developing" | "gap";
@@ -69,6 +74,7 @@ export type Cluster = {
   };
   linkCoverage: number;
   journeyCompletion?: JourneyCompletion;
+  intentOwnership?: IntentOwnershipResult;
   gaps: string[];
   nextAction: string;
   documents: Array<{
@@ -643,6 +649,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
   );
   const linkCoverage = calculateLinkCoverage(members);
   const journeyCompletion = evaluateClusterJourney(definition.id, members);
+  const intentOwnership = evaluateIntentOwnership(definition.id, members);
   const targets = definition.targets;
 
   const coverage = {
@@ -718,6 +725,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     coverage,
     linkCoverage,
     journeyCompletion,
+    intentOwnership,
     gaps,
     nextAction: definition.strategy,
     documents: members
@@ -876,7 +884,10 @@ export function buildOpportunities(): Opportunity[] {
     });
   }
 
-  if (byId.futterautomaten.counts.total >= 20 && !feederConsolidationResolved()) {
+  if (
+    !byId.futterautomaten.intentOwnership?.complete ||
+    !byId.futterautomaten.journeyCompletion?.complete
+  ) {
     output.push({
       id: "futterautomaten-consolidate",
       title: "Futterautomaten konsolidieren statt weiter verbreitern",
@@ -884,8 +895,10 @@ export function buildOpportunities(): Opportunity[] {
       priority: "high",
       impact: 91,
       effort: "mittel",
-      reason:
-        "Der breite Cluster erhöht ohne Intent-Steuerung das Risiko von Überschneidungen.",
+      reason: [
+        intentOwnershipReason(byId.futterautomaten.intentOwnership, "Der breite Cluster erhöht ohne Intent-Steuerung das Risiko von Überschneidungen."),
+        journeyOpportunityReason(byId.futterautomaten.journeyCompletion, "Die entscheidungsorientierte Journey ist noch nicht vollständig."),
+      ].join(" "),
       action:
         "Intent-Matrix erstellen, Zielseiten schärfen und Journey-Verlinkung ausbauen.",
     });
