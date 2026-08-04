@@ -1,26 +1,17 @@
 {
-  "name": "pfotentechnik-topical-authority-journey-completion-26.8.2",
-  "version": "26.8.2",
+  "name": "pfotentechnik-feeder-journey-closure-27.1.0",
+  "version": "27.1.0",
+  "changed": [
+    "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md",
+    "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md"
+  ],
   "created": [
-    "apps/pfotentechnik/src/lib/seo/topical-authority/journey-completion.ts",
-    "apps/pfotentechnik/test/topical-authority-journey-completion-26.8.2.test.mjs"
+    "apps/pfotentechnik/test/feeder-journey-closure-27.1.0.test.mjs"
   ],
-  "patched": [
-    "apps/pfotentechnik/src/lib/seo/topical-authority/loadTopicalAuthority.ts"
-  ],
-  "contentChanges": 0,
-  "newPages": 0,
-  "validation": [
-    "node --test patch test",
-    "test:topical-authority",
-    "audit:topical-authority:strict",
-    "audit:decision-journeys:strict",
-    "audit:internal-link-health:strict",
-    "audit:content-quality:strict",
-    "build"
-  ],
-  "fixes": [
-    "Missing-edge test removes only comparison-to-filter",
-    "Hub-to-filter remains present in the regression fixture"
-  ]
+  "completion": {
+    "opportunity": "futterautomaten-consolidate",
+    "intentOwners": "7/7",
+    "journeyEdges": "11/11",
+    "secondRun": "no-op"
+  }
 }

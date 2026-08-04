@@ -240,6 +240,8 @@ Der **SureFeed Mikrochip Futterautomat Connect** ist ein geschützter Einzelnapf
 
 Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Einzelgerät, Hub und Bundle sind getrennte Kaufvarianten, deshalb werden Preis und Lieferbarkeit aktuell und je Variante geprüft.
 
+
+Mehr zu Mikrochip-Näpfen, Connect-Hub und Geräteabgrenzung zeigt die Seite [SureFeed als Hersteller und System einordnen](/hersteller/surefeed/).
 ## Fazit
 
 Für Haushalte mit mehreren Tieren zählt vor allem eine zuverlässige Fütterung und eine klare Organisation der Mahlzeiten.

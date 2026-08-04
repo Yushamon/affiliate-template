@@ -1,39 +1,17 @@
-# pfotentechnik-topical-authority-journey-completion-26.8.2
+# pfotentechnik-feeder-journey-closure-27.1.0
 
-Korrigiert die Fertiglogik der Topical-Authority-Roadmap.
+Schließt genau drei offene Pflichtkanten:
 
-## Änderung
+1. Auswahlhilfe → Akkuvergleich
+2. Auswahlhilfe → App-Vergleich
+3. Mehrtiervergleich → SureFeed
 
-Die Chance „Trinkbrunnen um kaufnahe Intentionen ergänzen“ hängt nicht mehr
-pauschal an `linkCoverage < 70`. Stattdessen werden zehn konkrete Pflichtkanten
-zwischen Hub, Material, Reinigung, Filter und Katzenvergleich geprüft.
+Der Installer prüft nach allen Audits und nach dem Build in einem frischen
+Node-Prozess, dass `futterautomaten-consolidate` nicht mehr erzeugt wird.
+Zusätzlich muss ein simulierter zweiter Lauf ohne Dateiänderung enden.
 
-Die globale Linkabdeckung bleibt als Diagnosewert erhalten. Medizinische oder
-rein pflegeorientierte Seiten müssen nicht künstlich zum Produktvergleich
-verlinken.
-
-## Ausführen
+Ausführen:
 
 ```bash
-node 3/apply-pfotentechnik-topical-authority-journey-completion-26.8.2.mjs
+node 3/apply-pfotentechnik-feeder-journey-closure-27.1.0.mjs
 ```
-
-## Eigenschaften
-
-- keine Content-Dateien
-- keine neue Seite
-- allgemeine Journey-Completion-Registry
-- idempotent
-- Git-Konfliktprüfung vor Änderungen
-- Backup und Rollback
-- Node 24/26, Windows, macOS und Linux
-
-
-## Korrektur in 26.8.2
-
-Der Regressionstest entfernt ausschließlich die Rückkante
-`Katzenvergleich → Filterratgeber`.
-
-Version 26.8.1 entfernte versehentlich jeden Link zum Filterratgeber und damit
-zusätzlich `Hub → Filterratgeber`. Die Produktionslogik war korrekt; der
-Installer hat sämtliche Änderungen ordnungsgemäß zurückgerollt.

@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-04T06:19:44.985Z
+Erstellt: 2026-08-04T10:33:13.337Z
 
 ## Ergebnis
 
 - Dokumente: 186
 - Linkdefinitionen: 441
-- Simulierte automatische Links: 443
+- Simulierte automatische Links: 442
 - Fehler: 0
 - Warnungen: 38
 - Strict-kritisch: 0
@@ -410,7 +410,6 @@ Erstellt: 2026-08-04T06:19:44.985Z
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petlibro/: „PETLIBRO“
-- /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/surefeed/: „SureFeed“
 - /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /produkt/catit-pixi-smart-6-meal-feeder/: „Catit PIXI Smart 6-Meal Feeder“
 - /vergleiche/beste-futterautomaten-fuer-nassfutter/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“

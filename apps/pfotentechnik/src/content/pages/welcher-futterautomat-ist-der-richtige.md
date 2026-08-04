@@ -213,6 +213,8 @@ Erst danach lohnt sich die Entscheidung über WLAN, Kamera, Audio oder zusätzli
 
 | Bedarf | Passender Vergleich |
 |---|---|
+| Batterie- oder Akkureserve | [Futterautomaten mit Akku](/vergleiche/beste-futterautomaten-mit-akku/) |
+| Zeitpläne und Portionen per App | [Futterautomaten mit App](/vergleiche/futterautomat-mit-app/) |
 | Katze und unterschiedliche Futterarten | [Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/) |
 | kleine bis mittelgroße Hunde | [Futterautomaten für Hunde](/vergleiche/beste-futterautomaten-fuer-hunde/) |
 | zwei Katzen oder Futterneid | [Futterautomaten für zwei Katzen](/vergleiche/beste-futterautomaten-fuer-zwei-katzen/) |

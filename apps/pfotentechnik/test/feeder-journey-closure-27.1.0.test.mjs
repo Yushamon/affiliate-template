@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import test from 'node:test';
+import { buildOpportunities } from '../src/lib/seo/topical-authority/loadTopicalAuthority.ts';
+const APP=process.cwd();
+const chooser=fs.readFileSync(path.join(APP,'src/content/pages/welcher-futterautomat-ist-der-richtige.md'),'utf8');
+const multi=fs.readFileSync(path.join(APP,'src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md'),'utf8');
+test('drei Pflichtkanten sind vorhanden',()=>{assert.match(chooser,/\[Futterautomaten mit Akku\]\(\/vergleiche\/beste-futterautomaten-mit-akku\/\)/);assert.match(chooser,/\[Futterautomaten mit App\]\(\/vergleiche\/futterautomat-mit-app\/\)/);assert.match(multi,/\[SureFeed als Hersteller und System einordnen\]\(\/hersteller\/surefeed\/\)/);});
+test('App Akku und Offline bleiben getrennt',()=>{assert.match(chooser,/Batterie- oder Akkureserve/);assert.match(chooser,/Zeitpläne und Portionen per App/);assert.match(chooser,/kein Konto, keine Cloud/);});
+test('Roadmap-Chance ist abgeschlossen',()=>{const active=buildOpportunities().find(x=>x.id==='futterautomaten-consolidate');assert.equal(active,undefined,active?.reason);});
