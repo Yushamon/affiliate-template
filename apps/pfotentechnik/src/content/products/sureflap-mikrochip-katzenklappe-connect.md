@@ -12,11 +12,11 @@ category:
   label: "Katzenklappen"
   path: "/katzenklappen/"
 publishedAt: "2026-08-02"
-updatedAt: "2026-08-02"
+updatedAt: "2026-08-04"
 productStatus: active
 editorialStatus: "required"
 recommendationStatus: "limited"
-maintenanceStatus: "required"
+maintenanceStatus: "monitored"
 price:
   currency: "EUR"
   status: "unknown"
@@ -28,9 +28,9 @@ price:
 priceState: "unknown"
 priceUpdated: "2026-08-02T14:00:00.000Z"
 affiliateAvailable: false
-availability: "unknown"
-availabilityReason: "Einzelgerät und Bundle mit Hub werden getrennt angeboten; die Herstellerseite zeigt zugleich widersprüchliche Kaufsignale. Aktuellen Preis und Lieferstatus prüfen."
-availabilityUpdated: "2026-08-02T14:00:00.000Z"
+availability: "unavailable"
+availabilityReason: "Sure Petcare Deutschland führte das Einzelgerät beim letzten Primärquellencheck als nicht vorrätig. Einzelgerät, Hub und Bundle bleiben getrennte Kaufvarianten; Lieferbarkeit vor dem Kauf erneut prüfen."
+availabilityUpdated: "2026-08-04T17:25:00.000Z"
 decision:
   bestFor:
     - katze
@@ -148,7 +148,6 @@ metadata:
 layout: product
 testStatus: manufacturer-data
 recommendation: "Noch nicht abschließend redaktionell bewertet. Technisch passend für Mikrochip-Zugang, individuelle DualScan-Regeln und App-Fernfunktionen, sofern ein Sure Petcare Hub vorhanden oder eingeplant ist."
-rating: 0
 images:
   hero:
     src: ../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/editorial-dimensions.svg
@@ -183,13 +182,15 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-02"
   note: "Neuaufnahme auf Basis aktueller Herstellerunterlagen; noch keine vollständige redaktionelle Vergleichsbewertung und kein eigener Praxistest."
+visualStatus: "reference-pack-required"
+lastPrimarySourceCheck: "2026-08-04"
 ---
 
 ## Kurz eingeordnet
 
 Die SureFlap Mikrochip Katzenklappe Connect verbindet individuelle Mikrochip-Zutrittsregeln mit App-Funktionen. Die lokale Tiererkennung gehört zur Klappe. Für Fernverriegelung, Aktivitätsmeldungen, Statistiken und Änderungen per App ist zusätzlich der Sure Petcare Hub erforderlich.
 
-Die breite Auswahl zwischen lokaler Mikrochip-Erkennung, App-Funktionen und Nachrüstung ordnet der Hub [Katzenklappen](/katzenklappen/) ein. Diese Produktseite bleibt der Intent-Owner für die konkrete SureFlap-Connect-Prüfung.
+Die breite Auswahl zwischen lokaler Mikrochip-Erkennung, App-Funktionen und Nachrüstung ordnet der Hub [Katzenklappen](/katzenklappen/) ein. Auf dieser Produktseite stehen die konkreten Maße, Systemabhängigkeiten und Einbaugrenzen der SureFlap Connect.
 
 ## Modell, Hub und Bundle
 
@@ -213,8 +214,8 @@ Die Katzenklappe wird mit vier AA-Batterien betrieben. Sure Petcare nennt eine B
 
 ## Preis und Verfügbarkeit
 
-Einzelgerät und Bundle mit Hub werden getrennt angeboten. Da die Herstellerseite gleichzeitig unterschiedliche beziehungsweise widersprüchliche Kaufsignale zeigt und Händlerbestände abweichen können, wird hier kein statischer Preis genannt. Preis und Lieferbarkeit gelten als **aktuell zu prüfen**.
+Sure Petcare Deutschland führte das Einzelgerät beim letzten Primärquellencheck als **nicht vorrätig**. Einzelgerät, Hub und Bundle werden getrennt angeboten und können unterschiedliche Bestände haben. Deshalb bleibt der Preisstatus dynamisch und die Lieferbarkeit muss unmittelbar vor dem Kauf erneut geprüft werden.
 
 ## Quellenlage
 
-Die technischen Angaben wurden am 2. August 2026 mit der [deutschen Sure-Petcare-Produktseite](https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect) und der [Sure-Petcare-Handbuchübersicht](https://www.surepetcare.com/en-gb/pdf?country=81) abgeglichen. Ein Editorial Score und eine redaktionelle Kaufempfehlung bleiben bis zur vollständigen Vergleichsbewertung offen.
+Die technischen Angaben und der Verfügbarkeitsstatus wurden zuletzt am 4. August 2026 mit der [deutschen Sure-Petcare-Produktseite](https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect) und der [Sure-Petcare-Handbuchübersicht](https://www.surepetcare.com/en-gb/pdf?country=81) abgeglichen. Ein Editorial Score und eine redaktionelle Kaufempfehlung bleiben bis zur vollständigen Vergleichsbewertung offen.

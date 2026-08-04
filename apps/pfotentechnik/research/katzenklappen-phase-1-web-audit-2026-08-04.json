@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "updatedAt": "2026-08-04T19:50:00+02:00",
+  "repositoryBase": "2b57f4f1cc2c2c39477c44edf4d6533b57f67218",
+  "scope": "katzenklappen-phase-1",
+  "verifiedRepositoryState": {
+    "hub": "/katzenklappen/",
+    "products": 7,
+    "comparisons": 2,
+    "guides": 4,
+    "journeyRequirements": 10
+  },
+  "sources": [
+    {
+      "source": "Sure Petcare Deutschland",
+      "url": "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect",
+      "accessedAt": "2026-08-04T19:25:00+02:00",
+      "facts": [
+        "Hub für App erforderlich",
+        "4 AA-Batterien",
+        "Öffnung 142 x 120 mm",
+        "Außenrahmen 210 x 210 mm",
+        "Herstellerbestand beim Check nicht verfügbar"
+      ]
+    },
+    {
+      "source": "Sure Petcare Kundenservice",
+      "url": "https://www.surepetcare.com/de-de/kundenservice/mikrochip-katzenklappe-connect",
+      "accessedAt": "2026-08-04T19:25:00+02:00",
+      "facts": [
+        "Tür-/Wandausschnitt 165 x 171 mm",
+        "Glasausschnitt ideal 212 mm",
+        "Tunneltiefe 70 mm"
+      ]
+    }
+  ],
+  "decisions": [
+    "Aktueller Hubpfad ist /katzenklappen/, nicht /smarte-katzenklappen/.",
+    "Der Cluster besitzt bereits zwei Vergleiche, vier Praxisratgeber und mehrere vollständige Produkte.",
+    "Journey-Logik bleibt strukturell unverändert, weil ihre zehn Pflichtkanten bereits Entscheidungs- und Praxiswege abbilden.",
+    "Nicht bewertete Produkte erhalten keine künstliche Nullwertung.",
+    "Realistische Produktbilder werden erst nach verifiziertem Referenzsatz eingebunden."
+  ]
+}

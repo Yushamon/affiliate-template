@@ -60,11 +60,22 @@ evidenceSources:
   - { source: "Produktquellen im Cluster", url: "https://www.onlycat.com/de/specs-de/", accessedAt: "2026-08-04", assertion: "App, Beuteerkennung, Strom und Produktrollen werden nur auf Ebene der konkreten Systeme behauptet.", fields: ["premiumBlocks", "decisionJourney"] }
 ---
 
-Eine Katzenklappe ist zuerst ein Zugang im Gebäude und erst danach ein smartes Gerät. Dieser Cornerstone besitzt den breiten Orientierungs- und Auswahl-Intent. Produktmaße, Chipformate und konkrete Systemgrenzen bleiben Eigentum der Produktseiten.
-
+Eine Katzenklappe ist zuerst ein Zugang im Gebäude und erst danach ein smartes Gerät.
 ## Vier Produktrollen, vier Aufgaben
 
 Eine einfache Mikrochip-Klappe soll fremde Tiere aussperren. DualScan-Modelle regeln zusätzlich, welche Katze hinaus darf. Vernetzte Komplettsysteme ergänzen Fernsteuerung, Ereignisse oder Beuteerkennung. Motorisierte Tiertüren adressieren darüber hinaus Dämmung und Gebäudeintegration. ZeroMOUSE bleibt als Nachrüstung einer vorhandenen Klappe eine fünfte, aber nicht direkt vergleichbare Rolle.
+
+## Schnellentscheidung nach Nutzerproblem
+
+| Deine Hauptfrage | Passende Lösungsklasse | Vor dem Kauf prüfen |
+|---|---|---|
+| Fremde Katzen sollen draußen bleiben | Mikrochip-Katzenklappe mit selektivem Eintritt | Chip-Kompatibilität, Öffnungsmaß, Batteriewarnung |
+| Eine Katze darf hinaus, eine andere nicht | Modell mit individuellen Ein- und Austrittsrechten | Rechte müssen pro Tier und Richtung einstellbar sein |
+| Sperrzeiten oder Meldungen sollen aus der Ferne steuerbar sein | Vernetzte Katzenklappe | Hub oder WLAN, Konto, Offline-Verhalten |
+| Beuteeintrag ist das Hauptproblem | Klappe mit Beuteerkennung oder kompatible Nachrüstung | Erkennungsprinzip, Strom, WLAN, Fehlblockierungen |
+| Zugluft und Dämmung sind entscheidend | gedämmte oder motorisierte Tiertür | Einbaumaß, Anschluss, Stromversorgung, Notöffnung |
+
+Eine App ersetzt weder die passende Öffnung noch eine verlässliche lokale Verriegelung. Entscheide deshalb zuerst nach Zugangsregel, Katze und Einbauort.
 
 ## Entscheidung in fünf Schritten
 
@@ -88,7 +99,7 @@ Der Mikrochip identifiziert das Tier; die App bedient Regeln oder zeigt Ereignis
 
 Batterien, Netzteil, Kabelweg, Hub, Adapter, Tunnelverlängerung, Reinigung und Gewöhnung gehören zur Entscheidung. Eine technisch passende Klappe ist erst dann praxistauglich, wenn Einbau und Training realistisch sind.
 
-## Intent-Owner im Cluster
+## passende Vertiefungen im Cluster
 
 Der [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/) besitzt den herstellerübergreifenden Modellvergleich. [Katzenklappe einbauen](/katzenklappe-einbauen/), [Katze gewöhnen](/katze-an-katzenklappe-gewoehnen/), [mehrere Katzen](/katzenklappe-fuer-mehrere-katzen/) sowie [Zugluft und Wärmedämmung](/katzenklappe-zugluft-und-waermedaemmung/) lösen eigenständige Praxisaufgaben.
 
