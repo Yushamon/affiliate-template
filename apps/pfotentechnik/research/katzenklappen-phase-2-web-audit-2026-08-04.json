@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-04T18:00:00.000Z",
+  "scope": "katzenklappen-phase-2",
+  "repositoryBase": "2b57f4f1cc2c2c39477c44edf4d6533b57f67218",
+  "finding": {
+    "id": "petsafe-petporte-smart-flap",
+    "decision": "create-product-and-integrate",
+    "reason": "Eigenständige deutsche Produktverfügbarkeit, Netzbetrieb, größerer Durchgang, Nachtmodus und dokumentierte Chip-/Metalltür-Grenzen.",
+    "duplicateOfExisting": false
+  },
+  "evidence": [
+    {
+      "source": "PetSafe Deutschland",
+      "url": "https://www.petsafe.com/de/p/mikrochip-katzenklappe-petporte-smart-flap/100ML/",
+      "accessedAt": "2026-08-04",
+      "facts": [
+        "Preis 165,99 EUR",
+        "im deutschen Shop bestellbar",
+        "EU-Netzanschluss",
+        "bis zu 25 Katzen",
+        "optionaler Nachtmodus",
+        "Klappenöffnung 160 × 160 mm",
+        "Ausschnitt 180 × 171 mm",
+        "Glasausschnitt 212 mm",
+        "Metalltür vor Einbau testen",
+        "bestimmte Chipnummern ausgeschlossen"
+      ]
+    }
+  ]
+}

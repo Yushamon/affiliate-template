@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-03T18:41:48.681Z
+Erstellt: 2026-08-04T18:05:12.473Z
 
 ## Zusammenfassung
 
-- Produkte: 68
+- Produkte: 74
 - Fehler: 0
-- Warnungen: 83
+- Warnungen: 90
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -15,7 +15,7 @@ Erstellt: 2026-08-03T18:41:48.681Z
 - futterautomaten: 37
 - trinkbrunnen: 21
 - gps-tracker: 8
-- katzenklappen: 2
+- katzenklappen: 8
 
 ## Produkte mit Handlungsbedarf
 
@@ -215,6 +215,15 @@ Erstellt: 2026-08-03T18:41:48.681Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
+### PetSafe Petporte smart flap
+
+- Datei: `src/content/products/petsafe-petporte-smart-flap.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### SureFlap Mikrochip Katzenklappe Connect
 
 - Datei: `src/content/products/sureflap-mikrochip-katzenklappe-connect.md`
@@ -312,6 +321,14 @@ Erstellt: 2026-08-03T18:41:48.681Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: trinkhöhe
   - Herstellerangabe dokumentiert, aber nicht bestätigt: wasserfluss
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
+
+### OnlyCat Mikrochip Katzenklappe
+
+- Datei: `src/content/products/onlycat-mikrochip-katzenklappe.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
 
 ### PAJ PET Finder 4G Mini
 
@@ -462,6 +479,14 @@ Erstellt: 2026-08-03T18:41:48.681Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
+### PetSafe Mikrochip Katzenklappe
+
+- Datei: `src/content/products/petsafe-mikrochip-katzenklappe.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
+
 ### PetSafe Smart Feed 2.0
 
 - Datei: `src/content/products/petsafe-smart-feed-2.md`
@@ -474,6 +499,30 @@ Erstellt: 2026-08-03T18:41:48.681Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
   - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### petWALK Medium Tiertür
+
+- Datei: `src/content/products/petwalk-medium-tiertuer.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
+
+### SureFlap DualScan Mikrochip Katzenklappe
+
+- Datei: `src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
+
+### SureFlap Mikrochip Katzenklappe
+
+- Datei: `src/content/products/sureflap-mikrochip-katzenklappe.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
 
 ### WOPET Cube Air WiFi Pet Feeder CA10
 

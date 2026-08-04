@@ -3,13 +3,13 @@ title: "Mikrochip-Katzenklappen im Vergleich"
 slug: "beste-mikrochip-katzenklappen"
 type: "comparison"
 layout: "comparison"
-description: "Sechs belegte Mikrochip-Türen nach Zugangslogik, Richtungsrechten, App-Abhängigkeit, Strom, Einbau und Produktrolle vergleichen."
+description: "Sieben belegte Mikrochip-Türen nach Zugangslogik, Richtungsrechten, App-Abhängigkeit, Strom, Einbau und Produktrolle vergleichen."
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappen", "Mikrochip", "Vergleich", "Kaufberatung"]
 hub: { sections: ["vergleiche", "katzenklappen"], title: "Mikrochip-Katzenklappen im Vergleich", description: "Lokale, vernetzte und motorisierte Systeme ohne Gleichmacherei.", icon: "🐈", featured: true, order: 10 }
-seo: { title: "Mikrochip-Katzenklappen: 6 Systeme im Vergleich", description: "Mikrochip-Katzenklappen nach Zugang, Mehrkatzen-Rechten, App, Strom, Einbau und Passform vergleichen.", canonical: "/vergleiche/beste-mikrochip-katzenklappen/", sitemap: true, noindex: false, priority: 0.9, changefreq: "monthly" }
+seo: { title: "Mikrochip-Katzenklappen: 7 Systeme im Vergleich", description: "Mikrochip-Katzenklappen nach Zugang, Mehrkatzen-Rechten, App, Strom, Einbau und Passform vergleichen.", canonical: "/vergleiche/beste-mikrochip-katzenklappen/", sitemap: true, noindex: false, priority: 0.9, changefreq: "monthly" }
 comparisonType: "category"
 group: "Katzenklappen"
 icon: "🐈"
@@ -65,6 +65,18 @@ items:
       einbau: "Adapter je Material"
       durchgang: "Schablone prüfen"
       rolle: "Standardklappe"
+  - slug: "petsafe-petporte-smart-flap"
+    type: "product"
+    label: "PetSafe Petporte"
+    recommendation: "Netzbetriebene Option mit größerem 160 × 160 mm Durchgang und Nachtmodus; Chipformat und Metalltür vor Einbau prüfen."
+    values:
+      zugang: "Selektiver Eingang"
+      richtungsrechte: "Gesamtregel und Nachtmodus"
+      app: "Nein"
+      strom: "EU-Netzanschluss"
+      einbau: "Holz, Glas, PVC, uPVC, Wand; Metall nach Test"
+      durchgang: "160 × 160 mm"
+      rolle: "Netzbetriebene Klappe"
   - slug: "onlycat-mikrochip-katzenklappe"
     type: "product"
     label: "OnlyCat"
@@ -127,7 +139,7 @@ criteria:
     format: "text"
 recommendation:
   title: "Zuerst Rechte und Einbau, erst danach App und Komfort"
-  text: "Für einfachen lokalen Eingang reichen Standardmodelle. DualScan löst individuelle Ausgangsrechte ohne App; Connect ergänzt Fernfunktionen. OnlyCat adressiert Beute als Komplettsystem, petWALK Dämmung und motorisierte Öffnung."
+  text: "Für einfachen lokalen Eingang reichen Standardmodelle. Petporte ergänzt eine netzbetriebene Option mit größerem Durchgang und Nachtmodus. DualScan löst individuelle Ausgangsrechte ohne App; Connect ergänzt Fernfunktionen. OnlyCat adressiert Beute als Komplettsystem, petWALK Dämmung und motorisierte Öffnung."
   winnerSlug: "sureflap-dualscan-mikrochip-katzenklappe"
   alternativeSlug: "petsafe-mikrochip-katzenklappe"
 faq:

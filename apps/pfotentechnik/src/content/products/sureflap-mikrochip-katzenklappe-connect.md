@@ -16,7 +16,7 @@ updatedAt: "2026-08-04"
 productStatus: active
 editorialStatus: "required"
 recommendationStatus: "limited"
-maintenanceStatus: "monitored"
+maintenanceStatus: "required"
 price:
   currency: "EUR"
   status: "unknown"
@@ -28,7 +28,7 @@ price:
 priceState: "unknown"
 priceUpdated: "2026-08-02T14:00:00.000Z"
 affiliateAvailable: false
-availability: "unavailable"
+availability: "temporarily-unavailable"
 availabilityReason: "Sure Petcare Deutschland führte das Einzelgerät beim letzten Primärquellencheck als nicht vorrätig. Einzelgerät, Hub und Bundle bleiben getrennte Kaufvarianten; Lieferbarkeit vor dem Kauf erneut prüfen."
 availabilityUpdated: "2026-08-04T17:25:00.000Z"
 decision:
@@ -184,6 +184,7 @@ editorial:
   note: "Neuaufnahme auf Basis aktueller Herstellerunterlagen; noch keine vollständige redaktionelle Vergleichsbewertung und kein eigener Praxistest."
 visualStatus: "reference-pack-required"
 lastPrimarySourceCheck: "2026-08-04"
+rating: 0
 ---
 
 ## Kurz eingeordnet

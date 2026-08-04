@@ -21,7 +21,7 @@ contentPlatform:
   cluster: "katzenklappen"
   intent: "buying-guide"
   animal: "cat"
-  products: ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect", "petsafe-mikrochip-katzenklappe", "onlycat-mikrochip-katzenklappe", "petwalk-medium-tiertuer", "zeromouse-2-0"]
+  products: ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect", "petsafe-mikrochip-katzenklappe", "petsafe-petporte-smart-flap", "onlycat-mikrochip-katzenklappe", "petwalk-medium-tiertuer", "zeromouse-2-0"]
   decision: "off"
   blocks: ["summary", "fit", "checklist", "mistakes"]
   summary:
@@ -64,6 +64,8 @@ Eine Katzenklappe ist zuerst ein Zugang im Gebäude und erst danach ein smartes 
 ## Vier Produktrollen, vier Aufgaben
 
 Eine einfache Mikrochip-Klappe soll fremde Tiere aussperren. DualScan-Modelle regeln zusätzlich, welche Katze hinaus darf. Vernetzte Komplettsysteme ergänzen Fernsteuerung, Ereignisse oder Beuteerkennung. Motorisierte Tiertüren adressieren darüber hinaus Dämmung und Gebäudeintegration. ZeroMOUSE bleibt als Nachrüstung einer vorhandenen Klappe eine fünfte, aber nicht direkt vergleichbare Rolle.
+
+Netzbetriebene Mikrochip-Klappen bilden eine zusätzliche Betriebsvariante: Sie vermeiden regelmäßige Batteriewechsel, benötigen dafür aber Steckdose und sicheren Kabelweg. Die [PetSafe Petporte smart flap](/produkt/petsafe-petporte-smart-flap/) ergänzt diesen Fall mit größerem Durchgang und lokalem Nachtmodus.
 
 ## Schnellentscheidung nach Nutzerproblem
 

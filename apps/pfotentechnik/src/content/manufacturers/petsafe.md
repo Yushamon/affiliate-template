@@ -107,6 +107,7 @@ productSlugs:
   - "petsafe-freshfeed-refrigerated-feeder"
   - "petsafe-healthy-pet-simply-feed"
   - "petsafe-mikrochip-katzenklappe"
+  - "petsafe-petporte-smart-flap"
 
 featuredProductSlugs:
   - "petsafe-freshfeed-refrigerated-feeder"
@@ -120,6 +121,7 @@ series:
       - "Zugang ohne App"
     productSlugs:
       - "petsafe-mikrochip-katzenklappe"
+      - "petsafe-petporte-smart-flap"
 
 alternativeManufacturerSlugs:
   - "petlibro"
@@ -133,6 +135,9 @@ sources:
   - label: "PetSafe Mikrochip-Katzenklappe Deutschland"
     url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/"
     description: "Deutsche Produkt-, Verfügbarkeits- und Einbauinformationen; geprüft am 04.08.2026."
+  - label: "PetSafe Petporte smart flap Deutschland"
+    url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe-petporte-smart-flap/100ML/"
+    description: "Deutsche Produkt-, Preis-, Verfügbarkeits-, Maß- und Kompatibilitätsinformationen; geprüft am 04.08.2026."
 
 faq:
   - question: "Welche smarten Produkte bietet PetSafe an?"
@@ -145,4 +150,4 @@ faq:
 
 PetSafe deckt unterschiedliche Anforderungen in Hunde- und Katzenhaushalten ab. Entscheidend ist das konkrete Produkt: Futterart, Kühlung, Stromversorgung, App-Abhängigkeit, Reinigung und regionale Verfügbarkeit sollten immer getrennt bewertet werden.
 
-Im Katzenklappen-Cluster bleibt der Marken-Intent hier; die konkrete Prüfung liegt bei der [PetSafe Mikrochip Katzenklappe](/produkt/petsafe-mikrochip-katzenklappe/) und der herstellerübergreifende Intent beim [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).
+Im Katzenklappen-Cluster bleibt der Markenüberblick hier. Für batteriebetriebenen Standardzugang führt die [PetSafe Mikrochip Katzenklappe](/produkt/petsafe-mikrochip-katzenklappe/) weiter; die [Petporte smart flap](/produkt/petsafe-petporte-smart-flap/) deckt Netzbetrieb, größeren Durchgang und Nachtmodus ab. Der herstellerübergreifende Vergleich liegt beim [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).

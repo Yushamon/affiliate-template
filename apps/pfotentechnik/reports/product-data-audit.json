@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedAt": "2026-08-03T18:41:48.681Z",
-    "totalProducts": 68,
+    "generatedAt": "2026-08-04T18:05:12.473Z",
+    "totalProducts": 74,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 21,
       "gps-tracker": 8,
-      "katzenklappen": 2
+      "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 83,
+    "warnings": 90,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -1922,6 +1922,47 @@
       "structuralCompleteness": 73,
       "confirmedCompleteness": 73,
       "completeness": 88
+    },
+    {
+      "file": "src/content/products/onlycat-mikrochip-katzenklappe.md",
+      "slug": "onlycat-mikrochip-katzenklappe",
+      "title": "OnlyCat Mikrochip Katzenklappe",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Zugang",
+          "value": "Mikrochip-Scan beim Ein- und Ausgang"
+        },
+        {
+          "label": "Beuteerkennung",
+          "value": "Integrierte Nachtsicht-HD-Kamera; Herstellerfunktion"
+        },
+        {
+          "label": "Strom",
+          "value": "USB-C Power Delivery, 9 V/2 A; kurze Backup-Überbrückung"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz; Einrichtung und App-Funktionen benötigen WLAN"
+        },
+        {
+          "label": "App",
+          "value": "iOS, Android und Web-App laut Hersteller"
+        },
+        {
+          "label": "Ausfallverhalten",
+          "value": "Lokaler Betrieb bei WLAN-Ausfall; automatische Entsperrung bei Stromausfall laut Hersteller"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 97
     },
     {
       "file": "src/content/products/paj-pet-finder-4g-mini.md",
@@ -5354,6 +5395,109 @@
       "completeness": 97
     },
     {
+      "file": "src/content/products/petsafe-mikrochip-katzenklappe.md",
+      "slug": "petsafe-mikrochip-katzenklappe",
+      "title": "PetSafe Mikrochip Katzenklappe",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Chipformat",
+          "value": "FDX-B, 15-stellig; Kompatibilitätsprüfung empfohlen"
+        },
+        {
+          "label": "Speicher",
+          "value": "Bis zu 40 Katzen"
+        },
+        {
+          "label": "Verschluss",
+          "value": "Doppelte automatische Verriegelung; 4 manuelle Optionen"
+        },
+        {
+          "label": "Einbau",
+          "value": "Holz, PVC und uPVC direkt; für Metall, Glas, Ziegel und Wand Adapter prüfen"
+        },
+        {
+          "label": "Strom",
+          "value": "Batteriebetrieb"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 97
+    },
+    {
+      "file": "src/content/products/petsafe-petporte-smart-flap.md",
+      "slug": "petsafe-petporte-smart-flap",
+      "title": "PetSafe Petporte smart flap",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produkt",
+          "value": "PetSafe Petporte smart flap"
+        },
+        {
+          "label": "Klappenöffnung",
+          "value": "160 × 160 mm"
+        },
+        {
+          "label": "Ausschnitt",
+          "value": "180 × 171 mm"
+        },
+        {
+          "label": "Glasausschnitt",
+          "value": "212 mm"
+        },
+        {
+          "label": "Rahmen",
+          "value": "232 × 232 × 158,6 mm"
+        },
+        {
+          "label": "Maximale Schulterbreite",
+          "value": "150 mm"
+        },
+        {
+          "label": "Speicher",
+          "value": "Bis zu 25 Katzen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "EU-Netzanschluss"
+        },
+        {
+          "label": "Zugang",
+          "value": "Selektiver Eingang per kompatiblem Mikrochip"
+        },
+        {
+          "label": "Nachtmodus",
+          "value": "Optional"
+        },
+        {
+          "label": "Einbau",
+          "value": "Holz, Glas, PVC, uPVC, Wand; Metall nur nach Funktionstest"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 94
+    },
+    {
       "file": "src/content/products/petsafe-smart-feed-2.md",
       "slug": "petsafe-smart-feed-2",
       "title": "PetSafe Smart Feed 2.0",
@@ -5434,6 +5578,47 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 69,
+      "completeness": 97
+    },
+    {
+      "file": "src/content/products/petwalk-medium-tiertuer.md",
+      "slug": "petwalk-medium-tiertuer",
+      "title": "petWALK Medium Tiertür",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produktart",
+          "value": "Motorisierte Tiertür Medium"
+        },
+        {
+          "label": "Erkennung",
+          "value": "Bewegungs- und Chip-Erkennung"
+        },
+        {
+          "label": "App",
+          "value": "petWALK.control App-Modul laut Angebot enthalten"
+        },
+        {
+          "label": "Strom",
+          "value": "24-V-Netzgerät; Notstrom-Akku laut Hersteller"
+        },
+        {
+          "label": "Einbau",
+          "value": "Glas, Wand oder Tür; projektspezifisch planen"
+        },
+        {
+          "label": "Dämmung",
+          "value": "U-Wert 0,811 W/(m²K) laut Hersteller"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
       "completeness": 97
     },
     {
@@ -5591,6 +5776,47 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+      "title": "SureFlap DualScan Mikrochip Katzenklappe",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Klappenöffnung",
+          "value": "142 × 120 mm"
+        },
+        {
+          "label": "Tür-/Wandausschnitt",
+          "value": "165 × 171 mm"
+        },
+        {
+          "label": "Speicher",
+          "value": "Bis zu 32 Tiere"
+        },
+        {
+          "label": "Strom",
+          "value": "4 AA-Batterien; bis zu 12 Monate laut Hersteller"
+        },
+        {
+          "label": "Richtungsrechte",
+          "value": "Ein- und Ausgang individuell je Tier"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 97
+    },
+    {
       "file": "src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
       "slug": "sureflap-mikrochip-katzenklappe-connect",
       "title": "SureFlap Mikrochip Katzenklappe Connect",
@@ -5659,6 +5885,55 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 94
+    },
+    {
+      "file": "src/content/products/sureflap-mikrochip-katzenklappe.md",
+      "slug": "sureflap-mikrochip-katzenklappe",
+      "title": "SureFlap Mikrochip Katzenklappe",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Klappenöffnung",
+          "value": "142 × 120 mm"
+        },
+        {
+          "label": "Tür-/Wandausschnitt",
+          "value": "165 × 171 mm"
+        },
+        {
+          "label": "Glasausschnitt",
+          "value": "212 mm ideal; bis 260 mm laut Hersteller"
+        },
+        {
+          "label": "Außenrahmen",
+          "value": "210 × 210 mm"
+        },
+        {
+          "label": "Tunnel",
+          "value": "70 mm"
+        },
+        {
+          "label": "Speicher",
+          "value": "Bis zu 32 Tiere"
+        },
+        {
+          "label": "Strom",
+          "value": "4 AA-Batterien; bis zu 12 Monate laut Hersteller"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 97
     },
     {
       "file": "src/content/products/tractive-cat-6-mini.md",
