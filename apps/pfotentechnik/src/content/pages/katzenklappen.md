@@ -106,3 +106,54 @@ Batterien, Netzteil, Kabelweg, Hub, Adapter, Tunnelverlängerung, Reinigung und 
 Der [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/) besitzt den herstellerübergreifenden Modellvergleich. [Katzenklappe einbauen](/katzenklappe-einbauen/), [Katze gewöhnen](/katze-an-katzenklappe-gewoehnen/), [mehrere Katzen](/katzenklappe-fuer-mehrere-katzen/) sowie [Zugluft und Wärmedämmung](/katzenklappe-zugluft-und-waermedaemmung/) lösen eigenständige Praxisaufgaben.
 
 Eine zusätzliche Route „Katzenklappe mit Chip oder App“ entsteht bewusst nicht: Diese Frage ist Teil der grundlegenden Auswahl und gehört diesem Cornerstone. Produktseiten bleiben für konkrete Modelle zuständig.
+
+
+
+# Warum viele Katzenklappen falsch gekauft werden
+
+Die meisten Fehlkäufe entstehen nicht wegen der Technik, sondern weil die eigentliche Aufgabe nicht klar definiert wurde. Eine Mikrochip-Klappe, eine App-Klappe, eine motorisierte Tiertür und ein Nachrüstsystem lösen unterschiedliche Probleme. Wer nur nach "der besten Katzenklappe" sucht, vergleicht häufig Produkte mit völlig unterschiedlichem Einsatzzweck.
+
+## Typische Fehlentscheidungen
+
+- Die größte Klappe kaufen, obwohl die Katze eine kleinere Öffnung problemlos nutzt.
+- Eine App als Ersatz für individuelle Zugangsrechte ansehen.
+- Nur auf die Anzahl speicherbarer Tiere achten.
+- Den Einbau erst nach dem Kauf planen.
+- Glas- und Wandeinbau unterschätzen.
+
+# Entscheidung nach Haushalt
+
+| Haushalt | Empfehlenswerte Produktklasse |
+|---|---|
+| Einzelkatze mit Freigang | Lokale Mikrochip-Katzenklappe |
+| Zwei Katzen mit unterschiedlichen Regeln | DualScan oder vergleichbare Systeme |
+| Fernsteuerung und Benachrichtigungen | Connect-System |
+| Sehr große Katzen | Modelle mit größerem Durchgang vorziehen |
+| Energetisch anspruchsamer Einbau | Gedämmte oder motorisierte Tiertüren prüfen |
+
+# Vor dem Kauf messen
+
+Nicht das Außenmaß entscheidet, sondern der engste Durchgang.
+
+Miss deshalb:
+
+1. Schulterbreite
+2. Brusttiefe
+3. Bauchhöhe
+4. vorhandene Türhöhe
+5. Wand- oder Türstärke
+
+# Nach dem Einbau
+
+Kontrolliere nach den ersten Tagen:
+
+- Verriegelung
+- Dichtigkeit
+- Batteriestand oder Netzversorgung
+- Verhalten aller Katzen
+- Funktion jeder programmierten Zugangsregel
+
+# Offene Punkte
+
+Nicht jede Herstellerangabe beantwortet Langzeitfragen wie Verschleiß, Geräuschentwicklung oder Haltbarkeit der Mechanik. Diese Punkte sollten transparent von den belegten Herstellerdaten getrennt bleiben.
+

@@ -3,89 +3,381 @@ title: "SureFlap Mikrochip Katzenklappe"
 slug: "sureflap-mikrochip-katzenklappe"
 type: "product"
 layout: "product"
-testStatus: "manufacturer-data"
-productStatus: "active"
-description: "Lokale Mikrochip-Katzenklappe für selektiven Eingang ohne App- oder Hub-Abhängigkeit."
-recommendation: "Für Haushalte, die vor allem fremde Tiere aussperren wollen und keine individuellen Ausgangsrechte benötigen."
+
+description: "Lokale Mikrochip-Katzenklappe für selektiven Eingang ohne App oder Hub. Mit 142 × 120 mm Durchgang, 4-Wege-Verschluss und Speicher für bis zu 32 Tiere."
+recommendation: "Eine passende Wahl, wenn vor allem fremde Tiere ausgesperrt werden sollen und alle eigenen Katzen grundsätzlich hinausdürfen. Für individuelle Ausgangsrechte ist die DualScan-Variante geeigneter."
+
 manufacturer:
   key: "surefeed"
   name: "Sure Petcare"
   slug: "surefeed"
-category: { key: "katzenklappen", label: "Katzenklappen", path: "/katzenklappen/" }
+
+category:
+  key: "katzenklappen"
+  label: "Katzenklappen"
+  path: "/katzenklappen/"
+
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-tags: ["Katzenklappe", "Mikrochip", "ohne App", "selektiver Zugang"]
+
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+
+tags:
+  - "Katzenklappe"
+  - "Mikrochip"
+  - "ohne App"
+  - "selektiver Zugang"
+  - "Batteriebetrieb"
+
 seo:
-  title: "SureFlap Mikrochip Katzenklappe im Datencheck"
-  description: "SureFlap Mikrochip Katzenklappe: Zugang, Maße, Batteriebetrieb, Einbau und Grenzen anhand der Herstellerdaten."
+  title: "SureFlap Mikrochip Katzenklappe: Maße, Einbau & Grenzen"
+  description: "SureFlap Mikrochip Katzenklappe im Datencheck: Zugang, 142 × 120 mm Durchgang, Batteriebetrieb, Einbau, Kompatibilität und Grenzen."
   canonical: "/produkt/sureflap-mikrochip-katzenklappe/"
   sitemap: true
   noindex: false
-hub: { sections: ["produkte", "katzenklappen"], title: "SureFlap Mikrochip Katzenklappe", description: "Lokaler Mikrochip-Zugang ohne App.", featured: true, order: 20 }
+  priority: 0.8
+  changefreq: "monthly"
+
+hub:
+  sections:
+    - "produkte"
+    - "katzenklappen"
+  title: "SureFlap Mikrochip Katzenklappe"
+  description: "Lokaler Mikrochip-Zugang ohne App oder Hub."
+  featured: true
+  order: 20
+
 images:
-  hero: { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/hero.png", alt: "Redaktionelle Darstellung einer kompakten Mikrochip-Katzenklappe in einer Holztür" }
-  thumbnail: { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.svg", alt: "SureFlap Mikrochip Katzenklappe als redaktionelle Produktrolle" }
-  comparison: { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/comparison.svg", alt: "SureFlap Mikrochip Katzenklappe für den Merkmalsvergleich" }
+  hero:
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/hero.png"
+    alt: "SureFlap Mikrochip Katzenklappe in einer Holztür"
+  thumbnail:
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.svg"
+    alt: "SureFlap Mikrochip Katzenklappe"
+  comparison:
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/comparison.svg"
+    alt: "SureFlap Mikrochip Katzenklappe im Merkmalsvergleich"
   gallery:
-    - { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/use-case.svg", alt: "Einsatzprofil der SureFlap Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/detail.svg", alt: "Technik-Check der SureFlap Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/setup.svg", alt: "Einbauplanung für die SureFlap Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/scale.svg", alt: "Passformprüfung der SureFlap Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/limitation.svg", alt: "Grenzen der SureFlap Mikrochip Katzenklappe" }
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-04", source: { id: "surepetcare-de", label: "Sure Petcare Deutschland", type: "merchant", url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe" } }
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/use-case.svg"
+      alt: "Selektiver Mikrochip-Zugang für eine Katze"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/detail.svg"
+      alt: "Mikrochip-Erkennung und Verriegelung der SureFlap Katzenklappe"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/setup.svg"
+      alt: "Einbauplanung für Tür, Glas oder Wand"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/scale.svg"
+      alt: "Passformprüfung anhand des Durchgangs von 142 × 120 Millimetern"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/limitation.svg"
+      alt: "Grenzen der Standardklappe bei individuellen Ausgangsrechten"
+
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-04"
+  source:
+    id: "surepetcare-de"
+    label: "Sure Petcare Deutschland"
+    type: "merchant"
+    url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe"
+
 priceState: "unknown"
 priceAvailable: false
 affiliateAvailable: false
+
 availability: "temporarily-unavailable"
 availabilityReason: "Im deutschen Hersteller-Shop gelistet, bei der Prüfung am 04.08.2026 jedoch als nicht vorrätig markiert."
 availabilityUpdated: "2026-08-04"
+
+productStatus: "active"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
-editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest." }
-rating: 0
-ratings: {}
+
+editorial:
+  assessmentType: "data-review"
+  evidence:
+    - "manufacturer-documentation"
+    - "technical-specifications"
+    - "comparative-analysis"
+  testedHandsOn: false
+  lastVerifiedAt: "2026-08-04"
+  note: "Bewertung auf Basis von Herstellerunterlagen und Vergleichsdaten; keine eigene Nutzungserfahrung."
+
 decision:
-  bestFor: ["Fremde Katzen aussperren", "Lokaler Betrieb ohne WLAN", "Bis zu 32 gespeicherte Tiere"]
-  attention: ["Alle gespeicherten Tiere dürfen standardmäßig hinaus", "Bestand im Hersteller-Shop schwankt", "Einbauzubehör hängt vom Bauteil ab"]
-review: { summary: "Die Standardklappe trennt lokalen Mikrochip-Zugang klar von App-Funktionen.", verdict: "Sinnvoll, wenn selektiver Eingang genügt; für individuelle Ausgangsrechte ist DualScan die passendere Produktklasse." }
-strengths: ["Kein WLAN oder Hub nötig", "Bis zu 32 Chipnummern", "Tür-, Glas- und Wandeinbau vorgesehen"]
-weaknesses: ["Keine App", "Keine individuellen Ausgangsrechte", "Temporär nicht im Hersteller-Shop vorrätig"]
-experience: { summary: "Datenreview der lokalen Zugangslogik.", methodology: "Offizielle deutsche Produkt- und Montageangaben, geprüft am 04.08.2026.", maintenance: "Klappe und Sensorbereich sauber halten; Batteriestand beachten." }
-alternatives: ["sureflap-dualscan-mikrochip-katzenklappe", "petsafe-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect"]
-comparisons: ["beste-mikrochip-katzenklappen"]
-comparisonFilters: { animal: ["cat"], petSize: ["small"], foodType: [], app: false, access: "microchip", priceTier: "midrange" }
-specs:
-  - { label: "Klappenöffnung", value: "142 × 120 mm" }
-  - { label: "Tür-/Wandausschnitt", value: "165 × 171 mm" }
-  - { label: "Glasausschnitt", value: "212 mm ideal; bis 260 mm laut Hersteller" }
-  - { label: "Außenrahmen", value: "210 × 210 mm" }
-  - { label: "Tunnel", value: "70 mm" }
-  - { label: "Speicher", value: "Bis zu 32 Tiere" }
-  - { label: "Strom", value: "4 AA-Batterien; bis zu 12 Monate laut Hersteller" }
-  - { label: "App", value: "Nein" }
-faq:
-  - { question: "Braucht die SureFlap Mikrochip Katzenklappe WLAN?", answer: "Nein. Mikrochip-Erkennung und Verriegelung arbeiten lokal." }
-  - { question: "Kann jede Katze eigene Ausgangsrechte erhalten?", answer: "Nein. Dafür ist eine DualScan-Produktklasse erforderlich." }
-features: ["Mikrochip-Zugang", "4-Wege-Verschluss", "Batteriebetrieb"]
+  bestFor:
+    - "Fremde Katzen und Wildtiere aussperren"
+    - "Lokaler Betrieb ohne WLAN, App oder Hub"
+    - "Haushalte, in denen alle eigenen Katzen hinausdürfen"
+    - "Bis zu 32 gespeicherte Tiere oder Chipnummern"
+  attention:
+    - "Der Mikrochip steuert nur den Eintritt"
+    - "Alle eigenen Tiere dürfen grundsätzlich hinaus"
+    - "Für individuelle Ausgangsrechte ist DualScan erforderlich"
+    - "Durchgang, Ausschnitt und Außenrahmen sind unterschiedliche Maße"
+    - "Für Glas und Wand kann zusätzliches Montagezubehör nötig sein"
+    - "Batterien sind nicht enthalten"
+
+review:
+  summary: "Die Standardklappe löst eine klar begrenzte Aufgabe: Sie erkennt gespeicherte Tiere beim Eintritt und hält fremde Tiere draußen. App, Hub und individuelle Ausgangsrechte gehören nicht zu diesem Modell."
+  verdict: "Sinnvoll für einen robusten, lokalen Mikrochip-Zugang ohne Vernetzung. Weniger passend für Mehrkatzenhaushalte mit unterschiedlichen Ausgangsregeln oder für Nutzer, die Fernsteuerung und Aktivitätsdaten erwarten."
+
+strengths:
+  - "Kein WLAN, Konto oder Hub erforderlich"
+  - "Bis zu 32 Tiere beziehungsweise Mikrochipnummern speicherbar"
+  - "Bis zu 12 Monate Batterielaufzeit laut Hersteller"
+  - "Manueller 4-Wege-Verschluss"
+  - "Einbau in Türen, Glas und Wände vorgesehen"
+  - "RFID-Halsbandanhänger als Alternative zum implantierten Mikrochip"
+
+weaknesses:
+  - "Keine individuellen Ausgangsrechte je Tier"
+  - "Keine App, Fernverriegelung oder Aktivitätsprotokolle"
+  - "Vier AA-Batterien werden benötigt"
+  - "Glas- und Wandeinbau können Zubehör und Facharbeit erfordern"
+  - "Im Hersteller-Shop zum Prüfzeitpunkt nicht vorrätig"
+
+experience:
+  summary: "Datenreview der lokalen Zugangslogik, Maße, Stromversorgung und Einbaugrenzen."
+  methodology: "Offizielle deutsche Produkt-, Vergleichs- und Montageangaben, geprüft am 04.08.2026."
+  maintenance: "Sensorbereich und Klappe sauber halten, Batteriestand beachten und die Verriegelung regelmäßig auf freien Lauf prüfen."
+
+alternatives:
+  - "sureflap-dualscan-mikrochip-katzenklappe"
+  - "petsafe-mikrochip-katzenklappe"
+  - "sureflap-mikrochip-katzenklappe-connect"
+
+comparisons:
+  - "beste-mikrochip-katzenklappen"
+
+comparisonFilters:
+  animal:
+    - "cat"
+  petSize:
+    - "small"
+  foodType: []
+  app: false
+  access: "microchip"
+  priceTier: "midrange"
+
+features:
+  - "Mikrochip-Zugang"
+  - "RFID-Halsbandanhänger kompatibel"
+  - "Manueller 4-Wege-Verschluss"
+  - "Batterie-schwach-Anzeige"
+  - "Batteriebetrieb"
+  - "Einbau in Tür, Glas oder Wand"
+
 useCase: "Selektiver Eingang ohne App"
-comparisonData: { version: 1, custom: { zugang: "Mikrochip oder RFID-Anhänger", richtungsrechte: "Keine individuellen Ausgangsrechte", app: "Nein", strom: "4 AA-Batterien", einbau: "Tür, Glas und Wand mit passendem Zubehör", durchgang: "142 × 120 mm", produktrolle: "Vollständige Katzenklappe" } }
+
+specs:
+  - label: "Klappenöffnung"
+    value: "142 × 120 mm"
+  - label: "Tür-/Wandausschnitt"
+    value: "165 × 171 mm"
+  - label: "Glasausschnitt"
+    value: "212 mm ideal; bis 260 mm laut Hersteller"
+  - label: "Außenrahmen"
+    value: "210 × 210 mm"
+  - label: "Tunneltiefe"
+    value: "70 mm"
+  - label: "Speicher"
+    value: "Bis zu 32 Tiere beziehungsweise Mikrochipnummern"
+  - label: "Stromversorgung"
+    value: "4 AA-Batterien, nicht enthalten"
+  - label: "Batterielaufzeit"
+    value: "Bis zu 12 Monate laut Hersteller"
+  - label: "Mikrochip-Kompatibilität"
+    value: "Gängige Identifikations-Mikrochips; Kompatibilitätsprüfung empfohlen"
+  - label: "RFID-Halsbandanhänger"
+    value: "Kompatibel; nicht enthalten"
+  - label: "App und Hub"
+    value: "Nicht erforderlich und nicht unterstützt"
+  - label: "Verschluss"
+    value: "Manueller 4-Wege-Verschluss"
+  - label: "Garantie"
+    value: "3 Jahre laut Hersteller"
+
+decisionFacts:
+  - label: "Zugangslogik"
+    value: "Selektiver Eingang"
+    consequence: "Gespeicherte Tiere können hinein, fremde Tiere bleiben draußen. Der Ausgang wird nicht individuell über den Mikrochip geregelt."
+  - label: "Ausgangsrechte"
+    value: "Keine individuellen Regeln"
+    consequence: "Der manuelle 4-Wege-Verschluss gilt für die Klappe insgesamt. Soll eine einzelne Katze im Haus bleiben, ist die DualScan-Variante die passendere Produktklasse."
+  - label: "Systemabhängigkeit"
+    value: "Vollständig lokal"
+    consequence: "Mikrochip-Erkennung und Verriegelung benötigen weder WLAN noch App, Konto oder Hub."
+  - label: "Durchgang"
+    value: "142 × 120 mm"
+    consequence: "Das ist der engste Durchgangspunkt. Vor dem Kauf sollte nicht nur das Außenmaß, sondern die tatsächliche Passform an der Katze geprüft werden."
+  - label: "Batteriebetrieb"
+    value: "4 AA, bis zu 12 Monate"
+    consequence: "Am Einbauort wird kein Stromanschluss benötigt. Batterien und regelmäßige Kontrolle bleiben Teil des Betriebs."
+  - label: "Einbau"
+    value: "Tür, Glas oder Wand"
+    consequence: "Tür-/Wandausschnitt, Glasausschnitt und Außenrahmen sind nicht austauschbar. Bei Glas und Wand können Adapter, Tunnelverlängerungen oder ein Fachbetrieb erforderlich sein."
+  - label: "Speicher"
+    value: "Bis zu 32 Tiere"
+    consequence: "Die hohe Speicherkapazität erlaubt mehrere eigene Tiere, ändert aber nichts daran, dass der Ausgang nicht tierindividuell gesteuert wird."
+  - label: "Verfügbarkeit"
+    value: "Temporär nicht vorrätig"
+    consequence: "Der Hersteller führt das Modell weiterhin, hatte es zum letzten Prüfzeitpunkt im deutschen Shop aber nicht auf Lager."
+
+comparisonData:
+  version: 1
+  custom:
+    zugang: "Mikrochip oder RFID-Halsbandanhänger"
+    richtungsrechte: "Keine individuellen Ausgangsrechte"
+    app: "Nein"
+    strom: "4 AA-Batterien"
+    einbau: "Tür, Glas und Wand mit passendem Zubehör"
+    durchgang: "142 × 120 mm"
+    produktrolle: "Vollständige lokale Mikrochip-Katzenklappe"
+
+faq:
+  - question: "Braucht die SureFlap Mikrochip Katzenklappe WLAN?"
+    answer: "Nein. Mikrochip-Erkennung und Verriegelung arbeiten lokal. Eine App, ein Konto und ein Hub sind für dieses Modell weder nötig noch vorgesehen."
+  - question: "Kann jede Katze eigene Ausgangsrechte erhalten?"
+    answer: "Nein. Die Standardklappe erkennt Tiere beim Eintritt. Der manuelle 4-Wege-Verschluss gilt für alle Tiere. Individuelle Ausgangsrechte bietet die DualScan-Produktklasse."
+  - question: "Wie groß ist der Durchgang?"
+    answer: "Der engste Durchgangspunkt misst laut Hersteller 142 × 120 mm. Dieses Maß sollte vor dem Kauf mit dem Körperbau der Katze abgeglichen werden."
+  - question: "Welche Batterien werden benötigt?"
+    answer: "Die Katzenklappe benötigt vier AA-Batterien. Sie sind nicht enthalten. Sure Petcare nennt eine Batterielaufzeit von bis zu zwölf Monaten."
+  - question: "Wie viele Katzen können gespeichert werden?"
+    answer: "Die Klappe speichert bis zu 32 Tiere beziehungsweise Mikrochipnummern."
+  - question: "Funktioniert die Klappe auch ohne implantierten Mikrochip?"
+    answer: "Ja. Ein kompatibler SureFlap-RFID-Halsbandanhänger kann alternativ verwendet werden. Er ist nicht im Lieferumfang enthalten."
+  - question: "Kann die Klappe in Glas eingebaut werden?"
+    answer: "Ja. Der Hersteller nennt einen idealen runden Glasausschnitt von 212 mm. Mit passendem Zubehör sind Öffnungen bis 260 mm möglich. Bei bestehender Verglasung sollte ein Fachbetrieb den Einbau prüfen."
+  - question: "Kann die Klappe in eine Wand eingebaut werden?"
+    answer: "Ja. Je nach Wandstärke können Montageadapter und Tunnelverlängerungen erforderlich sein. Abdichtung und Anschluss an das Bauteil müssen sorgfältig geplant werden."
+  - question: "Was bedeutet der 4-Wege-Verschluss?"
+    answer: "Die Klappe lässt sich manuell auf offen, geschlossen, nur hinein oder nur hinaus stellen. Diese Einstellung gilt für die Klappe insgesamt, nicht individuell je Tier."
+  - question: "Was ist der Unterschied zur DualScan-Version?"
+    answer: "Die Standardklappe steuert nur den Eintritt per Mikrochip. DualScan kann zusätzlich für jedes gespeicherte Tier individuelle Ausgangsrechte vergeben."
+  - question: "Was ist der Unterschied zur Connect-Version?"
+    answer: "Die Connect-Version ergänzt individuelle Ein- und Ausgangsrechte, App-Steuerung, Aktivitätsmeldungen und Fernfunktionen. Dafür wird ein Sure Petcare Hub benötigt."
+  - question: "Ist die SureFlap Mikrochip Katzenklappe aktuell verfügbar?"
+    answer: "Beim letzten Abgleich am 4. August 2026 war das Modell im deutschen Hersteller-Shop gelistet, aber als nicht vorrätig markiert. Der Bestand sollte vor dem Kauf erneut geprüft werden."
+
 decisionJourney:
   cluster: "katzenklappen"
   stage: "decision"
   intent: "produkt-sureflap-mikrochip"
-  primaryQuestion: "Genügt lokaler selektiver Eingang ohne App und individuelle Ausgangsrechte?"
-  next: ["/vergleiche/beste-mikrochip-katzenklappen/", "/katzenklappe-fuer-mehrere-katzen/"]
-  fallback: ["/katzenklappen/"]
+  primaryQuestion: "Genügt ein lokaler selektiver Eingang ohne App und ohne individuelle Ausgangsrechte?"
+  next:
+    - "/vergleiche/beste-mikrochip-katzenklappen/"
+    - "/katzenklappe-fuer-mehrere-katzen/"
+    - "/katzenklappe-einbauen/"
+    - "/produkt/sureflap-dualscan-mikrochip-katzenklappe/"
+  fallback:
+    - "/katzenklappen/"
+
 evidenceSources:
-  - { source: "Sure Petcare Deutschland", url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe", accessedAt: "2026-08-04", assertion: "Funktionen, Einbau, Maße, Batterie, Speicher und Shopstatus.", fields: ["availability", "specs", "features", "decision"] }
+  - source: "Sure Petcare Deutschland – Mikrochip Katzenklappe"
+    url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe"
+    accessedAt: "2026-08-04"
+    assertion: "Funktionen, Speicher, Batterielaufzeit, Mikrochip- und RFID-Kompatibilität, Montage, Maße, Garantie und Shopstatus."
+    fields:
+      - "availability"
+      - "features"
+      - "specs"
+      - "decision"
+      - "decisionFacts"
+      - "faq"
+  - source: "Sure Petcare Deutschland – Haustierklappen-Vergleich"
+    url: "https://www.surepetcare.com/de-de/haustierklappen"
+    accessedAt: "2026-08-04"
+    assertion: "Abgrenzung der Standardklappe von DualScan-, Connect- und größeren Haustierklappen."
+    fields:
+      - "review"
+      - "alternatives"
+      - "comparisonData"
 ---
 
-Die SureFlap Mikrochip Katzenklappe ist der Intent-Owner für das konkrete Standardmodell ohne App. Sie liest eingelernte Mikrochips beim Eintritt; die manuelle Vier-Wege-Sperre gilt für die Klappe insgesamt.
+## Kurzurteil
 
-## Einordnung
+Die SureFlap Mikrochip Katzenklappe ist die nüchterne Lösung für eine klar begrenzte Aufgabe: **Eigene Tiere dürfen hinein, fremde Tiere nicht.** Dafür braucht sie weder WLAN noch App, Konto oder Hub.
 
-Der zentrale Vorteil ist die geringe Systemabhängigkeit. Für App-Steuerung oder individuelle Ausgänge pro Katze ist sie nicht gedacht. Vor dem Kauf sind Durchgang, Ausschnitt und Einbaumaterial getrennt zu prüfen.
+Der wichtigste Haken liegt nicht bei der Technik, sondern bei der Zugangslogik. Die Klappe erkennt den Mikrochip beim Eintritt. Sie kann aber nicht für einzelne Katzen festlegen, wer hinausdarf. Der manuelle 4-Wege-Verschluss gilt immer für die gesamte Klappe.
 
-Die Modelle und ihre Unterschiede zeigt der [Vergleich der Mikrochip-Katzenklappen](/vergleiche/beste-mikrochip-katzenklappen/). Die grundlegende Auswahl beginnt im [Katzenklappen-Hub](/katzenklappen/).
+## Passt dieses Modell zu deinem Haushalt?
+
+### Gut geeignet, wenn
+
+- fremde Katzen oder Wildtiere nicht ins Haus gelangen sollen,
+- alle eigenen Katzen grundsätzlich hinausdürfen,
+- ein lokales System ohne Internetabhängigkeit bevorzugt wird,
+- Batteriebetrieb am Einbauort praktischer ist als ein Stromanschluss,
+- eine kompakte Öffnung von 142 × 120 mm zur Katze passt.
+
+### Weniger geeignet, wenn
+
+- einzelne Katzen im Haus bleiben sollen,
+- Ausgangsrechte je Tier benötigt werden,
+- Sperrzeiten automatisch verwaltet werden sollen,
+- Aktivitätsmeldungen oder Fernsteuerung gewünscht sind,
+- die Katze mehr Platz als 142 × 120 mm benötigt.
+
+## Was der Mikrochip tatsächlich steuert
+
+Beim Annähern liest die Klappe die gespeicherte Chipnummer. Ein erkanntes Tier kann die Verriegelung zum Eintritt öffnen. Nicht gespeicherte Tiere bleiben draußen.
+
+Das bedeutet nicht, dass der Mikrochip beide Richtungen individuell steuert. Für den Ausgang gelten die manuell eingestellten Betriebsarten der gesamten Klappe. Genau hier unterscheidet sich das Standardmodell von der [SureFlap DualScan Mikrochip Katzenklappe](/produkt/sureflap-dualscan-mikrochip-katzenklappe/).
+
+## Maße vor dem Kauf richtig lesen
+
+Drei Maße dürfen nicht verwechselt werden:
+
+| Maß | Herstellerangabe | Bedeutung |
+|---|---:|---|
+| Klappenöffnung | 142 × 120 mm | Engster Durchgangspunkt für die Katze |
+| Tür-/Wandausschnitt | 165 × 171 mm | Erforderliche Öffnung im Bauteil |
+| Außenrahmen | 210 × 210 mm | Platzbedarf auf der Oberfläche |
+
+Die Tunneltiefe beträgt 70 mm. Für Glas nennt Sure Petcare einen idealen runden Ausschnitt von 212 mm; mit passendem Zubehör sind laut Hersteller Öffnungen bis 260 mm möglich.
+
+Bei bestehender Isolierverglasung sollte nicht nachträglich selbst geschnitten werden. Der [Einbauratgeber für Katzenklappen](/katzenklappe-einbauen/) trennt Tür, Glas und Wand Schritt für Schritt.
+
+## Stromversorgung und Betrieb
+
+Die Klappe arbeitet mit vier AA-Batterien. Sure Petcare nennt eine Laufzeit von bis zu zwölf Monaten. Eine Batterie-schwach-Anzeige weist auf einen bevorstehenden Wechsel hin.
+
+Der Vorteil ist der vollständig lokale Betrieb ohne Kabelweg. Der Nachteil: Batterien gehören dauerhaft zur Wartung. Gerade bei Abwesenheit sollte der Ladezustand nicht erst im letzten Moment geprüft werden.
+
+## Mehrere Katzen: hohe Speicherkapazität, aber eine gemeinsame Ausgangsregel
+
+Bis zu 32 Tiere beziehungsweise Mikrochipnummern können gespeichert werden. Das ist für Mehrkatzenhaushalte ausreichend, löst aber nicht automatisch unterschiedliche Regeln.
+
+Beispiel: Zwei Katzen dürfen hinaus, eine dritte soll wegen Krankheit oder Eingewöhnung im Haus bleiben. Mit der Standardklappe lässt sich diese Unterscheidung nicht sauber abbilden. Dafür braucht es eine Klappe mit individuellen Ausgangsrechten. Der Ratgeber [Katzenklappe für mehrere Katzen](/katzenklappe-fuer-mehrere-katzen/) hilft bei dieser Entscheidung.
+
+## Einbau und Zubehör
+
+Sure Petcare sieht den Einbau in Türen, Glas und Wände vor. Für Glas und Wand können Montageadapter oder Tunnelverlängerungen nötig sein. Entscheidend ist nicht nur, ob die Klappe technisch passt, sondern ob Ausschnitt, Rahmen, Abdichtung und Kabel- beziehungsweise Batteriezugang dauerhaft funktionieren.
+
+Vor dem Bohren oder Sägen sollten deshalb geklärt sein:
+
+1. Passt der Durchgang zur Katze?
+2. Ist genug Fläche für den Außenrahmen vorhanden?
+3. Welcher Ausschnitt wird tatsächlich benötigt?
+4. Besteht die Tür aus Metall, Glas oder einem Verbundmaterial?
+5. Werden Adapter oder Tunnelverlängerungen benötigt?
+6. Bleibt das Batteriefach nach dem Einbau gut erreichbar?
+
+## Standard, DualScan oder Connect?
+
+| Modellklasse | Selektiver Eintritt | Individueller Ausgang | App | Typischer Grund |
+|---|---:|---:|---:|---|
+| SureFlap Mikrochip | Ja | Nein | Nein | Fremde Tiere aussperren |
+| SureFlap DualScan | Ja | Ja | Nein | Einzelne Katzen im Haus halten |
+| SureFlap Connect | Ja | Ja | Ja, mit Hub | Fernsteuerung und Aktivitätsdaten |
+
+Die Standardklappe ist nicht die technisch umfassendste Variante. Gerade das kann ihr Vorteil sein: weniger Abhängigkeiten, weniger Einrichtung und eine klar umrissene Funktion.
+
+## Redaktionelle Einordnung
+
+Die Herstellerdaten sind für Maße, Zugangslogik und Betrieb ausreichend konkret. Offen bleiben typische Langzeitfragen wie Geräuschentwicklung, Verschleiß, Verhalten bei Schmutz oder die tatsächliche Batterielaufzeit im individuellen Haushalt. Diese Punkte werden hier deshalb nicht als eigene Erfahrung dargestellt.
+
+Im [Vergleich der Mikrochip-Katzenklappen](/vergleiche/beste-mikrochip-katzenklappen/) lässt sich das Modell mit DualScan, Connect, PetSafe und weiteren Produktklassen nach denselben Kriterien einordnen. Die grundlegende Auswahl beginnt im [Katzenklappen-Hub](/katzenklappen/).

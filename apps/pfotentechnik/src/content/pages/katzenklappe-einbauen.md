@@ -3,39 +3,144 @@ title: "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
 slug: "katzenklappe-einbauen"
 type: "knowledge"
 layout: "knowledge"
-description: "Einbau einer Katzenklappe nach Bauteil, Ausschnitt, Durchgang, Adapter, Tunnel und Stromversorgung planen."
-publishedAt: "2026-08-04"
-updatedAt: "2026-08-04"
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-tags: ["Katzenklappe", "Einbau", "Tür", "Glas", "Wand"]
-seo: { title: "Katzenklappe einbauen: Tür, Glas & Wand", description: "Katzenklappen-Einbau sicher planen: Maße, Höhe, Türmaterial, Glas, Wand, Tunnel, Adapter und Strom.", canonical: "/katzenklappe-einbauen/", sitemap: true, noindex: false }
-hub: { sections: ["wissen", "katzenklappen"], title: "Katzenklappe einbauen", description: "Bauteil und Maße vor dem Ausschnitt klären.", icon: "🛠️", order: 410, featured: true }
-decisionJourney: { cluster: "katzenklappen", stage: "support", intent: "katzenklappe-einbau-planen", primaryQuestion: "Wie wird die passende Klappe ohne Fehlmaß und ungeklärtes Bauteil eingebaut?", next: ["/vergleiche/beste-mikrochip-katzenklappen/", "/katzenklappe-zugluft-und-waermedaemmung/"], fallback: ["/katzenklappen/"] }
-evidenceSources:
-  - { source: "Sure Petcare Deutschland", url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe", accessedAt: "2026-08-04", assertion: "Unterschiede zwischen Durchgang, Tür-/Wandausschnitt, Glasausschnitt und Zubehör.", fields: ["body"] }
-  - { source: "petWALK Einbau und Planung", url: "https://petwalk.at/products/tierture-konfigurieren", accessedAt: "2026-08-04", assertion: "Tür-, Glas- und Wandeinbau sind unterschiedliche Planungswege.", fields: ["body"] }
+description: "Schritt-für-Schritt-Anleitung für den Einbau einer Katzenklappe mit Planung von Ausschnitt, Durchgang, Glas, Wand, Stromversorgung und typischen Fehlern."
 ---
 
-Der Einbau-Intent ist eigenständig, weil er eine handwerkliche Nutzeraufgabe löst und nicht bloß ein Modell beschreibt. Vor dem ersten Schnitt müssen Klappe, Katze und Bauteil gemeinsam feststehen.
+# Katzenklappe einbauen
 
-## Vor dem Ausschnitt
+## Kurzüberblick
 
-Miss den engsten Durchgang der Klappe, den notwendigen Ausschnitt und den Außenrahmen getrennt. Die Montagehöhe orientiert sich an der Katze, darf aber weder tragende Bereiche noch Beschläge, Leitungen oder die Dämm- und Dichtebene ignorieren.
+Der häufigste Fehler entsteht **vor** dem ersten Schnitt: Viele verwechseln Klappenöffnung, Einbauausschnitt und Außenrahmen. Erst wenn Katze, Klappe und Einbauort gemeinsam betrachtet werden, lässt sich der passende Ausschnitt festlegen.
 
-## Tür
+## Einbau-Checkliste
 
-Bei Holz- und vielen Kunststofftüren ist ein sauberer Ausschnitt möglich. Mehrschichtige, metallverstärkte, brand- oder einbruchhemmende Türen brauchen eine fachliche Prüfung. Metall kann außerdem die Chip-Lesung beeinflussen.
+Vor Beginn beantworten:
 
-## Glas
+- Welche Katzenklappe wird eingebaut?
+- Wie groß ist der tatsächliche Durchgang?
+- Passt die Schulterbreite der Katze?
+- Holz, Kunststoff, Metall, Glas oder Wand?
+- Batterie oder Netzanschluss?
+- Wird WLAN oder ein Hub benötigt?
+- Sind Adapter oder Tunnelverlängerungen erforderlich?
 
-Gehärtetes oder isolierendes Glas wird nicht nachträglich wie Holz ausgesägt. Ausschnitt, Adapter und Scheibenaufbau müssen vor der Fertigung mit einem Glasfachbetrieb geklärt werden.
+---
 
-## Wand
+# Türmontage
 
-Ein Wanddurchgang braucht einen durchgehenden Tunnel, Gefälle beziehungsweise Wetterschutz, Abdichtung und einen Anschluss ohne Wärmebrücke. Leitungen und Baukonstruktion sind vorab zu orten.
+Für Holz- und viele Kunststofftüren ist der Einbau vergleichsweise unkompliziert.
 
-## Strom und Vernetzung
+Vor dem Sägen prüfen:
 
-Bei Netzgeräten muss der Kabelweg trocken, geschützt und wartbar sein. Batterieklappen brauchen erreichbare Fächer. Hub, WLAN und Konto sind keine Einbauersatzteile, aber wichtige Betriebsabhängigkeiten.
+1. Lage von Beschlägen
+2. Verstärkungen im Türblatt
+3. ausreichender Abstand zum Boden
+4. Dichtungen
+5. Platz für den Außenrahmen
 
-Nach dem Einbau folgt die schrittweise [Gewöhnung der Katze](/katze-an-katzenklappe-gewoehnen/). Die Modellauswahl bleibt beim [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).
+Bei Metalltüren kann die RFID-Erkennung beeinträchtigt werden. Herstellerhinweise zum Funktionstest sollten beachtet werden.
+
+---
+
+# Einbau in Glas
+
+Glas wird grundsätzlich anders geplant als Holz.
+
+Wichtig:
+
+- Ausschnitt muss meist vor Herstellung der Scheibe erfolgen.
+- Isolierglas sollte nicht nachträglich bearbeitet werden.
+- Adapterringe und Scheibenstärke frühzeitig mit einem Glasfachbetrieb abstimmen.
+
+---
+
+# Einbau in eine Wand
+
+Ein Wanddurchgang benötigt:
+
+- Tunnel oder Tunnelverlängerung
+- Abdichtung gegen Feuchtigkeit
+- möglichst geringe Wärmebrücke
+- Gefälle nach außen
+- Prüfung auf Leitungen und tragende Bauteile
+
+---
+
+# Stromversorgung
+
+## Batterie
+
+Vorteile
+
+- keine Steckdose
+- flexible Position
+
+Nachteile
+
+- Batteriewechsel
+- regelmäßige Kontrolle
+
+## Netzbetrieb
+
+Vorteile
+
+- keine Batterien
+- konstante Versorgung
+
+Nachteile
+
+- Steckdose erforderlich
+- Kabelweg planen
+
+---
+
+# Typische Fehlkäufe
+
+- Klappenöffnung mit Außenmaß verwechseln
+- Glas erst nachträglich ausschneiden wollen
+- Metalltüren ohne Herstellerhinweise einplanen
+- Schulterbreite der Katze nicht messen
+- Batteriefach nach Einbau nicht mehr erreichbar
+
+---
+
+# Nach dem Einbau
+
+1. Funktion ohne Katze prüfen.
+2. Verriegelung testen.
+3. Mikrochip anlernen.
+4. Katze schrittweise an die Klappe gewöhnen.
+5. Dichtheit und Zugluft kontrollieren.
+
+---
+
+# FAQ
+
+## Welche Höhe ist sinnvoll?
+
+Die Unterkante der Klappe sollte sich an der Bauchhöhe der Katze orientieren.
+
+## Kann ich eine Katzenklappe selbst in Glas einbauen?
+
+In der Regel nein. Der Ausschnitt muss meist bereits bei der Fertigung der Scheibe berücksichtigt werden.
+
+## Kann eine Metalltür Probleme verursachen?
+
+Ja. Metall kann je nach Modell die RFID-Erkennung beeinflussen.
+
+## Brauche ich einen Adapter?
+
+Das hängt von Klappenmodell und Einbauort ab. Vor allem Glas- und Wandeinbauten benötigen häufig zusätzliches Zubehör.
+
+## Kann ich die Klappe später austauschen?
+
+Nicht immer. Ein anderer Hersteller verwendet oft andere Ausschnittmaße.
+
+---
+
+# Weiterführende Inhalte
+
+- Vergleich der Mikrochip-Katzenklappen
+- Katzenklappen-Hub
+- Katze an Katzenklappe gewöhnen
+- Zugluft und Wärmedämmung
