@@ -739,6 +739,102 @@ const clusters = CLUSTER_DEFINITIONS.map(buildCluster).sort(
   (a, b) => b.score - a.score,
 );
 
+
+function documentContainsMarker(route: string, marker: string): boolean {
+  const document = documents.find((item) => item.route === route);
+  return Boolean(document?.body.includes(marker));
+}
+
+function feederConsolidationResolved(): boolean {
+  return (
+    documentContainsMarker(
+      "/smarte-futterautomaten/",
+      "feeder-intent-owner: cluster-hub",
+    ) &&
+    documentContainsMarker(
+      "/welcher-futterautomat-ist-der-richtige/",
+      "feeder-intent-owner: compact-chooser",
+    )
+  );
+}
+
+function pushCoverageOpportunities(
+  output: Opportunity[],
+  cluster: Cluster,
+): void {
+  const missing = [
+    !cluster.coverage.hub
+      ? {
+          suffix: "hub",
+          title: `${cluster.label}: zentralen Hub klären`,
+          impact: 82,
+          reason: "Für den Cluster ist noch kein eindeutiger Cornerstone-Hub erkannt.",
+          action:
+            "Bestehende Inhalte auf Hub-Eignung prüfen und nur bei klarer Lücke einen zentralen Owner festlegen.",
+        }
+      : null,
+    !cluster.coverage.guides
+      ? {
+          suffix: "guides",
+          title: `${cluster.label}: Ratgeberabdeckung gezielt schließen`,
+          impact: 72,
+          reason: `Die fachliche Ratgeberabdeckung liegt bei ${cluster.counts.pages} Inhalten und unter dem definierten Mindestniveau.`,
+          action:
+            "Bestehende Ratgeber auf fehlende Nutzerfragen prüfen; nur belegte, eigenständige Intents ergänzen.",
+        }
+      : null,
+    !cluster.coverage.comparisons
+      ? {
+          suffix: "comparisons",
+          title: `${cluster.label}: kaufnahe Vergleiche prüfen`,
+          impact: 78,
+          reason: `Der Cluster besitzt erst ${cluster.counts.comparisons} eindeutig zugeordnete Vergleiche.`,
+          action:
+            "Prüfen, ob eine eigenständige kommerzielle Suchintention fehlt oder bestehende Vergleiche nur falsch zugeordnet sind.",
+        }
+      : null,
+    !cluster.coverage.products
+      ? {
+          suffix: "products",
+          title: `${cluster.label}: Produktabdeckung validieren`,
+          impact: 68,
+          reason: `Der Cluster enthält ${cluster.counts.products} eindeutig kategorisierte Produkte.`,
+          action:
+            "Produktbestand, Kategorisierung und tatsächliche Vergleichsrelevanz prüfen; keine Produkte nur zur Sollzahlerfüllung anlegen.",
+        }
+      : null,
+    !cluster.coverage.manufacturers
+      ? {
+          suffix: "manufacturers",
+          title: `${cluster.label}: Herstellerabdeckung prüfen`,
+          impact: 60,
+          reason: `Der Cluster enthält ${cluster.counts.manufacturers} fachlich zugeordnete Herstellerseiten.`,
+          action:
+            "Vorhandene Herstellerzuordnung prüfen und nur strategisch relevante Hersteller ergänzen.",
+        }
+      : null,
+  ].filter(Boolean) as Array<{
+    suffix: string;
+    title: string;
+    impact: number;
+    reason: string;
+    action: string;
+  }>;
+
+  for (const item of missing) {
+    output.push({
+      id: `coverage-${cluster.id}-${item.suffix}`,
+      title: item.title,
+      cluster: cluster.label,
+      priority: cluster.priority === "high" ? "high" : "medium",
+      impact: item.impact,
+      effort: "mittel",
+      reason: item.reason,
+      action: item.action,
+    });
+  }
+}
+
 export function buildOpportunities(): Opportunity[] {
   const byId = Object.fromEntries(
     clusters.map((cluster) => [cluster.id, cluster]),
@@ -780,7 +876,7 @@ export function buildOpportunities(): Opportunity[] {
     });
   }
 
-  if (byId.futterautomaten.counts.total >= 20) {
+  if (byId.futterautomaten.counts.total >= 20 && !feederConsolidationResolved()) {
     output.push({
       id: "futterautomaten-consolidate",
       title: "Futterautomaten konsolidieren statt weiter verbreitern",
@@ -814,6 +910,11 @@ export function buildOpportunities(): Opportunity[] {
     });
   }
 
+  for (const cluster of clusters) {
+    pushCoverageOpportunities(output, cluster);
+  }
+
+
   for (const definition of CLUSTER_DEFINITIONS.filter(
     (item) => item.expansion,
   )) {
@@ -840,10 +941,15 @@ export function buildOpportunities(): Opportunity[] {
     low: 1,
   };
 
-  return output.sort(
+  const deduplicated = [
+    ...new Map(output.map((opportunity) => [opportunity.id, opportunity])).values(),
+  ];
+
+  return deduplicated.sort(
     (a, b) =>
       priorityWeight[b.priority] - priorityWeight[a.priority] ||
-      b.impact - a.impact,
+      b.impact - a.impact ||
+      a.title.localeCompare(b.title, "de"),
   );
 }
 

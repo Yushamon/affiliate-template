@@ -68,7 +68,7 @@ const priorityLabels = {
 const clusterByLabel = new Map(
   data.clusters.map((cluster) => [cluster.label, cluster]),
 );
-const roadmapOpportunities = data.opportunities.map((opportunity) => ({
+const roadmapOpportunities = data.opportunities.slice(0, 5).map((opportunity) => ({
   ...opportunity,
   prompts: buildTopicalAuthorityRoadmapPrompts(
     opportunity,
@@ -215,8 +215,9 @@ const roadmapOpportunities = data.opportunities.map((opportunity) => ({
       <div class="ta-section-head">
         <div>
           <p class="ta-eyebrow">Roadmap</p>
-          <h2>Strategische Chancen</h2>
+          <h2>Top 5 aktive Chancen</h2>
         </div>
+        <small>Erledigte Punkte verschwinden nach dem nächsten Audit automatisch; die nächsthöher priorisierten Chancen rücken nach.</small>
       </div>
 
       <div class="ta-opportunities">
