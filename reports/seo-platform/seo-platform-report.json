@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T16:23:25.845Z",
+  "generatedAt": "2026-08-04T12:44:57.081Z",
   "errors": 4,
   "warnings": 79,
   "portfolio": [],
@@ -5083,6 +5083,12 @@
           "changefreq": "yearly"
         },
         "related": "{ tags: [trinkbrunnen, filter, hygiene], limit: 4 }",
+        "recommendationJourney": {
+          "mode": "filtered",
+          "animal": "cat",
+          "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "comparisonLabel": "Filtertyp und Folgekosten im Modellvergleich prüfen"
+        },
         "faq": [
           "{ question: \"Reicht ein Filter vier Wochen?\", answer: \"Vier Wochen sind bei manchen Herstellern ein Richtwert. Mehrere Tiere, hartes Wasser, viele Haare oder sichtbare Verschmutzung können einen früheren Wechsel erfordern.\" }",
           "{ question: \"Kann man einen Filter auswaschen?\", answer: \"Vorsichtiges Spülen entfernt lose Partikel, stellt verbrauchte Aktivkohle oder Ionentauscher aber nicht wieder her.\" }"
@@ -7623,7 +7629,7 @@
           "mode": "filtered",
           "animal": "cat",
           "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Modelle nach tatsächlichen Wasserflächen vergleichen"
         }
       },
       "issues": []
@@ -7754,7 +7760,7 @@
           "mode": "filtered",
           "animal": "cat",
           "comparisonHref": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "comparisonLabel": "Passende Modelle vergleichen"
+          "comparisonLabel": "Brunnen mit gut zugänglicher Pumpe vergleichen"
         }
       },
       "issues": []
@@ -8067,8 +8073,8 @@
         "title": "Smarte Futterautomaten für Hunde und Katzen",
         "seoTitle": "Smarte Futterautomaten 2026: Vergleich, Testkriterien & Kaufberatung",
         "slug": "smarte-futterautomaten",
-        "description": "Die zentrale Kaufberatung für smarte Futterautomaten: Bauarten, Auswahlhilfe, Portionierung, App, Kamera, Ausfallsicherheit, Reinigung und Mehrtierhaushalte.",
-        "seoDescription": "Smarte Futterautomaten für Katze und Hund: Bauarten vergleichen, Portionen prüfen, WLAN- und Stromausfälle absichern und Fehlkäufe vermeiden.",
+        "description": "Zentrale Kaufberatung für smarte Futterautomaten: Bauarten, Auswahlkriterien, Ausfallsicherheit, Portionierung und passende nächste Vergleiche.",
+        "seoDescription": "Zentraler Ratgeber für smarte Futterautomaten: Bauarten einordnen, Auswahlkriterien prüfen und anschließend gezielt passende Modelle vergleichen.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
@@ -8121,7 +8127,7 @@
             "wissen"
           ],
           "title": "Smarte Futterautomaten",
-          "description": "Zentrale Kaufberatung mit Auswahlhilfe, Produktvergleich und Ratgebern für Hunde und Katzen.",
+          "description": "Zentraler Cluster-Hub mit vollständiger Kaufberatung, Auswahlkriterien und fachlich passenden nächsten Schritten.",
           "icon": "📖",
           "order": 360
         },
@@ -9888,14 +9894,14 @@
     {
       "file": "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md",
       "slug": "welcher futterautomat ist der richtige",
-      "title": "Welcher Futterautomat ist der richtige?",
+      "title": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
       "type": "page",
       "data": {
-        "title": "Welcher Futterautomat ist der richtige?",
-        "seoTitle": "Welcher Futterautomat passt zu Hund oder Katze?",
+        "title": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
+        "seoTitle": "Welcher Futterautomat passt zu mir? Auswahlhilfe",
         "slug": "welcher-futterautomat-ist-der-richtige",
-        "description": "Futterautomaten nach Tier, Futterart, Portionsgröße, Mehrtierhaushalt, App, Kamera, Reinigung und Ausfallsicherheit auswählen.",
-        "seoDescription": "Welcher Futterautomat ist der richtige? Entscheidungshilfe für Trockenfutter, Nassfutter, Katzen, Hunde, mehrere Tiere, App und Kamera.",
+        "description": "Kompakte Auswahlhilfe: Tier, Futterart, Portionsbedarf, Mehrtierhaushalt und Ausfallsicherheit prüfen und direkt zum passenden Vergleich gelangen.",
+        "seoDescription": "Futterautomat auswählen in fünf Schritten: Tier, Futterart, Portion, Mehrtierhaushalt und Technik prüfen und den passenden Vergleich öffnen.",
         "category": "futterautomaten",
         "linking": {
           "keywords": [
@@ -9931,8 +9937,8 @@
           "sections": [
             "wissen"
           ],
-          "title": "Welcher Futterautomat ist der richtige?",
-          "description": "Futterautomaten systematisch nach Tier, Futterart, Portionierung und Technik auswählen.",
+          "title": "Welcher Futterautomat passt zu mir?",
+          "description": "Kompakte Auswahlstrecke nach Tier, Futterart, Portionierung, Mehrtierhaushalt und Ausfallsicherheit.",
           "icon": "📖",
           "order": 380
         },
@@ -25648,7 +25654,7 @@
         },
         "productUrl": "/produkt/surefeed-microchip-pet-feeder-connect/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-08-02",
+        "updatedAt": "2026-08-03",
         "author": {
           "name": "PfotenTechnik Redaktion"
         },
@@ -25695,14 +25701,13 @@
           ]
         },
         "price": {
-          "current": 144.94,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-03T08:15:45.810Z",
+          "checkedAt": "2026-08-03T16:38:00.000Z",
           "source": {
-            "id": "amazon.de",
-            "label": "amazon.de",
-            "type": "merchant"
+            "id": "sure-petcare-de",
+            "label": "Sure Petcare Deutschland",
+            "type": "manual"
           }
         },
         "affiliate": {
@@ -25714,13 +25719,13 @@
         },
         "rating": 4,
         "score": 79,
-        "priceState": "available",
-        "priceUpdated": "2026-08-03T08:15:45.810Z",
-        "priceAvailable": true,
+        "priceState": "unknown",
+        "priceUpdated": "2026-08-03T16:38:00.000Z",
+        "priceAvailable": false,
         "affiliateAvailable": true,
-        "availability": "available",
-        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-03T08:15:45.810Z",
+        "availability": "unknown",
+        "availabilityReason": "Einzelgerät, Hub und Bundle werden getrennt angeboten. Die deutsche Herstellerseite zeigt Preise, zugleich aber Nicht-vorrätig-Signale; Händlerbestand kann abweichen. Preis und Lieferstatus je Variante aktuell prüfen.",
+        "availabilityUpdated": "2026-08-03T16:38:00.000Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",

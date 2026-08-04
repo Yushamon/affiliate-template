@@ -1,101 +1,66 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-03T16:23:14.046Z",
+  "generatedAt": "2026-08-04T12:44:53.062Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-07-27",
-  "endDate": "2026-08-02",
-  "comparisonStartDate": "2026-07-20",
-  "comparisonEndDate": "2026-07-26",
+  "startDate": "2026-07-28",
+  "endDate": "2026-08-03",
+  "comparisonStartDate": "2026-07-21",
+  "comparisonEndDate": "2026-07-27",
   "dataState": "all",
   "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
-      "clicks": 1,
-      "impressions": 20,
-      "ctr": 5,
-      "position": 51
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 46.8
     },
     "previous": {
       "clicks": 9,
-      "impressions": 280,
-      "ctr": 3.21,
-      "position": 20.5
+      "impressions": 250,
+      "ctr": 3.6,
+      "position": 21
     },
     "change": {
-      "clicks": -88.9,
-      "impressions": -92.9,
-      "ctr": 1.79,
-      "position": -30.5
+      "clicks": -100,
+      "impressions": -92.8,
+      "ctr": -3.6,
+      "position": -25.8
     }
   },
   "pages": [
     {
       "page": "/futterautomat-fuer-zwei-katzen/",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 5,
       "ctr": 0,
-      "position": 70.2
-    },
-    {
-      "page": "/futterautomat-im-urlaub/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 45.5
-    },
-    {
-      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 76
-    },
-    {
-      "page": "/kontakt/",
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 100,
-      "position": 3
-    },
-    {
-      "page": "/so-bewerten-wir/",
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 100,
-      "position": 5
-    },
-    {
-      "page": "/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
+      "position": 74.2
     },
     {
       "page": "/futterautomat-katze/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 54.7
+    },
+    {
+      "page": "/futterautomat-im-urlaub/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 46
     },
     {
-      "page": "/futterautomat-nassfutter/",
+      "page": "/hersteller/weenect/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 44
-    },
-    {
-      "page": "/hund-hat-durchfall/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 80
+      "position": 23
     },
     {
       "page": "/hund-trinkt-zu-wenig/",
@@ -103,13 +68,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 99
-    },
-    {
-      "page": "/impressum/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
     },
     {
       "page": "/produkt/pawbby-smart-pet-feeder/",
@@ -126,13 +84,6 @@
       "position": 2
     },
     {
-      "page": "/produkt/petlibro-stainless-steel-fountain/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3
-    },
-    {
       "page": "/produkt/weenect-xs/",
       "clicks": 0,
       "impressions": 1,
@@ -140,11 +91,18 @@
       "position": 31
     },
     {
-      "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "page": "/smarte-futterautomaten/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 10
+      "position": 1
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
     },
     {
       "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -154,11 +112,11 @@
       "position": 39
     },
     {
-      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 10
+      "position": 54
     }
   ],
   "queries": [
@@ -168,13 +126,6 @@
       "impressions": 3,
       "ctr": 0,
       "position": 91
-    },
-    {
-      "query": "futterautomat katze urlaub",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 45.5
     },
     {
       "query": "futterautomat 2 katzen",
@@ -191,25 +142,18 @@
       "position": 47
     },
     {
-      "query": "futterautomat mit elektrischer kühlung",
+      "query": "futterautomat katze urlaub",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 44
+      "position": 46
     },
     {
-      "query": "futterautomat zwei katzen",
+      "query": "futterautomat nassfutter katze",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 50
-    },
-    {
-      "query": "gps tracker für kleine hunde",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 72
+      "position": 55
     },
     {
       "query": "hund trinkt zu wenig symptome",
@@ -226,11 +170,11 @@
       "position": 46
     },
     {
-      "query": "mini gps tracker hund",
+      "query": "nassfutterautomat für katzen",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 80
+      "position": 63
     },
     {
       "query": "weenect abo",
@@ -241,13 +185,6 @@
     }
   ],
   "trend": [
-    {
-      "date": "2026-07-27",
-      "clicks": 1,
-      "impressions": 8,
-      "ctr": 12.5,
-      "position": 46.9
-    },
     {
       "date": "2026-07-28",
       "clicks": 0,
@@ -289,6 +226,13 @@
       "impressions": 2,
       "ctr": 0,
       "position": 20.5
+    },
+    {
+      "date": "2026-08-03",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 33.2
     }
   ],
   "recommendations": []
