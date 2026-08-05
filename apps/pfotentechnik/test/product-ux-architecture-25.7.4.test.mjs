@@ -37,13 +37,14 @@ test("Timeline und Produkt-Fit benötigen keine Marker-Resets", () => {
   assert.doesNotMatch(component("ProductCategoryFitAssistant.astro"), /category-fit\.category-fit li::before/);
 });
 
-test("Gallery begrenzt die Bildfläche und zeigt das ganze Motiv", () => {
-  const source = component("ProductGallery2.astro");
-  assert.match(source, /height:\s*clamp\(300px, 46vw, 610px\)/);
-  assert.match(source, /grid-template-rows:\s*minmax\(0, 1fr\) auto/);
-  assert.match(source, /height:\s*100%/);
-  assert.match(source, /object-fit:\s*contain/);
-  assert.match(source, /object-position:\s*center/);
+test("Gallery V29 besitzt eine sichtbare mobile Bildfläche und Airbnb-Crop", () => {
+  const componentSource = component("ProductGallery29.astro");
+  const css = component("product-gallery-29.css");
+  assert.match(componentSource, /data-product-gallery-v29/);
+  assert.match(css, /height:\s*clamp\(280px, 42svh, 440px\)/);
+  assert.match(css, /min-height:\s*280px/);
+  assert.match(css, /object-fit:\s*cover/);
+  assert.match(css, /object-position:\s*center/);
 });
 
 test("Hero nutzt die zentral berechnete Eignungszusammenfassung", () => {

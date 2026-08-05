@@ -10,7 +10,7 @@ const APP = path.join(ROOT, "apps", "pfotentechnik");
 
 const files = {
   home: path.join(ROOT, "packages", "affiliate-core", "src", "components", "home", "HomeHero.astro"),
-  gallery: path.join(APP, "src", "components", "product-experience-2", "ProductGallery2.astro"),
+  gallery: path.join(APP, "src", "components", "product-experience-2", "ProductGallery29.astro"),
   alternatives: path.join(APP, "src", "components", "product-standard-2", "AlternativesGrid.astro"),
   comparisonExperience: path.join(ROOT, "packages", "affiliate-core", "src", "components", "ComparisonExperience.astro"),
   comparisonExplorer: path.join(ROOT, "packages", "affiliate-core", "src", "components", "comparison", "ComparisonExplorer.astro"),
@@ -20,17 +20,39 @@ const files = {
 
 const read = (file) => fs.readFileSync(file, "utf8");
 
-test("Bing-relevante Bildkomponenten besitzen keine leeren statischen Alt-Texte", () => {
+const removeAllowedDecorativeImages = (source) =>
+  source.replace(
+    /<button\b[^>]*\baria-label\s*=\s*\{?`?Bild\s+\$\{index\s*\+\s*1\}\s+anzeigen`?\}?[^>]*>[\s\S]*?<img\b[^>]*\balt\s*=\s*["']\s*["'][^>]*\/>[\s\S]*?<\/button>/gi,
+    "",
+  );
+
+test("Bing-relevante Bildkomponenten besitzen keine unbegründeten leeren Alt-Texte", () => {
   for (const [name, file] of Object.entries(files)) {
     assert.ok(fs.existsSync(file), name + " fehlt: " + file);
     if (!file.endsWith(".astro")) continue;
-    assert.doesNotMatch(read(file), /\balt\s*=\s*["']\s*["']/i, name + " enthält weiterhin einen leeren Alt-Text");
+
+    const source = removeAllowedDecorativeImages(read(file));
+
+    assert.doesNotMatch(
+      source,
+      /\balt\s*=\s*["']\s*["']/i,
+      name + " enthält weiterhin einen unbegründeten leeren Alt-Text",
+    );
   }
+});
+
+test("Galerie-Thumbnails sind dekorativ und ihr Button besitzt einen zugänglichen Namen", () => {
+  const source = read(files.gallery);
+
+  assert.match(
+    source,
+    /aria-label=\{`Bild \$\{index \+ 1\} anzeigen`\}[\s\S]*?<img[^>]*alt=""/,
+  );
 });
 
 test("Komponenten verwenden kontextbezogene Alt-Texte", () => {
   assert.match(read(files.home), /alt=\{hero\.title\}/);
-  assert.match(read(files.gallery), /Ansicht \$\{index \+ 1\}/);
+  assert.match(read(files.gallery), /alt=\{item\.alt \|\| name\}/);
   assert.match(read(files.alternatives), /\$\{item\.title\} – Produktansicht/);
   assert.match(read(files.comparisonExperience), /\$\{product\.name\} im Direktvergleich/);
   assert.match(read(files.comparisonExplorer), /\$\{product\.title\} im Direktvergleich/);
