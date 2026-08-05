@@ -13,21 +13,30 @@ manufacturer:
   slug: "onlycat"
 category: { key: "katzenklappen", label: "Katzenklappen", path: "/katzenklappen/" }
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-04"
+updatedAt: "2026-08-05"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappe", "Mikrochip", "App", "Beuteerkennung", "Kamera"]
 seo: { title: "OnlyCat Mikrochip Katzenklappe im Datencheck", description: "OnlyCat: Beuteerkennung, App, Kamera, Strom- und WLAN-Abhängigkeit sowie Preismodelle.", canonical: "/produkt/onlycat-mikrochip-katzenklappe/", sitemap: true, noindex: false }
 hub: { sections: ["produkte", "katzenklappen"], title: "OnlyCat", description: "Komplettsystem mit App und Beuteerkennung.", featured: true, order: 23 }
 images:
-  hero: { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/hero.png", alt: "Redaktionelle Darstellung einer vernetzten Katzenklappe mit Kamera und Statusdisplay" }
-  thumbnail: { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/thumbnail.svg", alt: "OnlyCat als redaktionelle Produktrolle" }
-  comparison: { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/comparison.svg", alt: "OnlyCat im Vergleich vernetzter Katzenklappen" }
+  hero:
+    src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/hero.jpeg
+    alt: OnlyCat Mikrochip Katzenklappe in redaktioneller Studioaufnahme
+  thumbnail:
+    src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/thumbnail.jpeg
+    alt: OnlyCat Mikrochip Katzenklappe als kompakte Produktansicht
+  comparison:
+    src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/comparison.jpeg
+    alt: OnlyCat Mikrochip Katzenklappe im Vergleich
   gallery:
-    - { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/use-case.svg", alt: "Einsatzprofil der OnlyCat Katzenklappe" }
-    - { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/detail.svg", alt: "Technik-Check der OnlyCat Katzenklappe" }
-    - { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/setup.svg", alt: "Einbauplanung für die OnlyCat Katzenklappe" }
-    - { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/scale.svg", alt: "Passformprüfung der OnlyCat Katzenklappe" }
-    - { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/limitation.svg", alt: "Grenzen der OnlyCat Katzenklappe" }
+    - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-1.jpeg
+      alt: OnlyCat Mikrochip Katzenklappe in Dreiviertelansicht
+    - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-2.jpeg
+      alt: Kamera und Klappenmechanik der OnlyCat Mikrochip Katzenklappe
+    - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-3.jpeg
+      alt: OnlyCat Mikrochip Katzenklappe eingebaut in eine moderne Haustür
+    - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-4.jpeg
+      alt: Katze bei der Nutzung der OnlyCat Mikrochip Katzenklappe
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-04", source: { id: "onlycat-de", label: "OnlyCat Deutschland", type: "merchant", url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/" } }
 priceState: "unknown"
 priceAvailable: false

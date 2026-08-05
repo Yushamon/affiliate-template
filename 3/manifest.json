@@ -1,35 +1,16 @@
 {
-  "name": "pfotentechnik-mobile-gallery-zero-edge-28.1.5",
-  "version": "28.1.5",
-  "inspected": [
-    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro"
-  ],
+  "name": "pfotentechnik-product-gallery-layout-owner-28.2.1",
+  "version": "28.2.1",
   "changed": [
-    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro"
+    "ProductRenderer.astro",
+    "ProductExperience2.astro",
+    "ProductHero2.astro",
+    "ProductGallery2.astro"
   ],
-  "created": [
-    "apps/pfotentechnik/test/mobile-gallery-zero-edge-28.1.5.test.mjs"
-  ],
-  "fixes": [
-    "thumbnail strip aligns items vertically",
-    "thumbnail buttons use grid centering",
-    "inline baseline gap is removed",
-    "thumbnail images use centered cover rendering",
-    "active thumbnail behavior is preserved"
-  ],
-  "preserved": [
-    "zero-edge mobile gallery",
-    "viewport-relative gallery height",
-    "full-screen lightbox",
-    "keyboard and swipe navigation",
-    "single-image behavior",
-    "desktop gallery"
-  ],
-  "validation": [
-    "installer node --check",
-    "generated test node --check",
-    "lightbox thumbnail behavior test",
-    "lint:content",
-    "Astro build"
+  "removes": [
+    "negative top offset",
+    "100vw breakout",
+    "left/transform breakout",
+    "page-gutter variable"
   ]
 }
