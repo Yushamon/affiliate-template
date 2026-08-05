@@ -1,0 +1,13 @@
+/* V29.2.1: mobile product width ownership */
+@media (max-width: 759px) {
+  [data-product-page].pt-product-detail {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  [data-product-page] > :not(:first-child) {
+    margin-inline: 12px;
+  }
+}

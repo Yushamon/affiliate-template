@@ -215,13 +215,19 @@ const data = optimized.map((item) => ({
         thumbs.forEach((thumb, i) => {
           const active = i === activeIndex;
           thumb.classList.toggle("is-active", active);
-          if (active) {
-            thumb.setAttribute("aria-current", "true");
-            thumb.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-          } else {
-            thumb.removeAttribute("aria-current");
-          }
+          if (active) thumb.setAttribute("aria-current", "true");
+          else thumb.removeAttribute("aria-current");
         });
+
+        if (dialog.open) {
+          requestAnimationFrame(() => {
+            thumbs[activeIndex]?.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center",
+            });
+          });
+        }
       };
 
       const close = () => { if (dialog.open) dialog.close(); };
@@ -229,10 +235,19 @@ const data = optimized.map((item) => ({
       root.querySelectorAll<HTMLButtonElement>("[data-pg29-open]").forEach((button) => {
         button.addEventListener("click", () => {
           activeTrigger = button;
-          render(Number(button.dataset.pg29Index || "0"));
+          const requestedIndex = Number(button.dataset.pg29Index || "0");
+          render(requestedIndex);
           dialog.showModal();
           document.documentElement.classList.add("has-pg29-lightbox");
-          closeButton.focus();
+
+          requestAnimationFrame(() => {
+            thumbs[requestedIndex]?.scrollIntoView({
+              behavior: "auto",
+              block: "nearest",
+              inline: "center",
+            });
+            closeButton.focus();
+          });
         });
       });
 

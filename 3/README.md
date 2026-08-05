@@ -1,18 +1,15 @@
-# Product Gallery V29.2.0
+# Product Gallery V29.2.1
 
-Bereinigt die drei sichtbaren Layoutfehler aus V29.1.3:
+Korrigiert den tatsächlichen verbleibenden Layout-Owner:
 
-- kein mobiler Viewport-Ausbruch mehr in `ProductExperience2`
-- keine seitlichen oder vertikalen Innenabstände innerhalb der Hauptgalerie
-- keine geerbten Bildradien oder Bildabstände
-- Lightbox verwendet die natürliche Bildhöhe statt eines vollhohen Bildcontainers
-- kleine Thumbnail-Sätze werden exakt zentriert
-- große Thumbnail-Sätze bleiben horizontal scrollbar
+- `pt-product-detail` verliert auf Mobile sämtliches horizontales Padding
+- die Galerie erhält keinen eigenen Viewport-Hack
+- Inhaltskarten und Folgeabschnitte behalten 12 px Außenabstand
+- das aktive Lightbox-Thumbnail wird erst nach `showModal()` zentriert
+- kleine Thumbnail-Sätze werden zentriert, große bleiben scrollbar
 
-Die CSS-Datei wird vollständig ersetzt. Es wird keine weitere Override-Schicht angehängt.
-
-## Ausführen
+Ausführen:
 
 ```bash
-node 3/apply-pfotentechnik-product-gallery-v29-29.2.0.mjs
+node 3/apply-pfotentechnik-product-gallery-v29-29.2.1.mjs
 ```

@@ -122,3 +122,17 @@
     main.container > [data-product-page] { width: calc(100% + 24px); max-width: none; margin-inline: -12px; }
   }
 }
+
+/* V29.2.1: mobile product width ownership */
+@media (max-width: 759px) {
+  [data-product-page].pt-product-detail {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  [data-product-page] > :not(:first-child) {
+    margin-inline: 12px;
+  }
+}
