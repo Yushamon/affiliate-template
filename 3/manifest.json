@@ -1,26 +1,20 @@
 {
-  "name": "pfotentechnik-sureflap-product-family-schema-closure-25.11.11",
-  "version": "25.11.11",
-  "changed": [
-    "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
-    "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe.md",
-    "apps/pfotentechnik/src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md"
-  ],
-  "validated": [
-    "sureflap-dualscan-mikrochip-katzenklappe.md",
-    "petsafe-petporte-smart-flap.md"
-  ],
+  "name": "pfotentechnik-airbnb-product-gallery-28.0.1",
+  "version": "28.0.1",
+  "mobileLayout": {
+    "gallery": "full-bleed across viewport",
+    "controls": "16px inline padding",
+    "emptyState": "16px inline margin",
+    "desktop": "unchanged"
+  },
   "validation": [
+    "installer node --check",
     "generated test node --check",
-    "family test",
+    "full-bleed gallery test",
+    "gallery behavior test",
     "lint:content",
-    "audit:products:strict",
-    "build",
-    "idempotency"
-  ],
-  "fixes": [
-    "SureFlap Standard testStatus normalized to manufacturer-data",
-    "family test verifies Standard testStatus and rating",
-    "Astro build remains mandatory"
+    "Astro build",
+    "legacy marker absence",
+    "idempotent second run"
   ]
 }
