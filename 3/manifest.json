@@ -1,0 +1,18 @@
+{
+  "name": "pfotentechnik-product-gallery-v29-29.2.0",
+  "version": "29.2.0",
+  "replaces": "29.1.3",
+  "scope": "product gallery layout closure",
+  "files_changed": [
+    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro",
+    "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
+    "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+    "apps/pfotentechnik/test/product-gallery-v29-29.2.0.test.mjs"
+  ],
+  "validation": [
+    "focused layout test",
+    "content lint",
+    "Astro build",
+    "final legacy viewport-hack scan"
+  ]
+}
