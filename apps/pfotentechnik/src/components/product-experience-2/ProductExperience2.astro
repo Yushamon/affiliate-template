@@ -72,4 +72,10 @@ const { model } = Astro.props;
   .px2 :global(*) {
     box-sizing: border-box;
   }
+
+  @media (max-width: 759px) {
+    .px2 > :not(.px2-hero) {
+      margin-inline: 12px;
+    }
+  }
 </style>

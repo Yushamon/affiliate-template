@@ -252,11 +252,18 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
   }
 
 
+  
+
+
   @media (max-width: 759px) {
     .px2-hero__media[data-mobile-gallery-full-bleed] {
-      width: calc(100% + 24px);
+      width: 100%;
       max-width: none;
-      margin: 0 -12px;
+      margin: 0;
+    }
+
+    .px2-hero__content {
+      margin-inline: 12px;
     }
   }
 </style>
