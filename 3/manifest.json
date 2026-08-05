@@ -1,20 +1,25 @@
 {
-  "name": "pfotentechnik-airbnb-product-gallery-28.0.1",
-  "version": "28.0.1",
-  "mobileLayout": {
-    "gallery": "full-bleed across viewport",
-    "controls": "16px inline padding",
-    "emptyState": "16px inline margin",
-    "desktop": "unchanged"
-  },
+  "name": "pfotentechnik-mobile-gallery-airbnb-alignment-28.1.1",
+  "version": "28.1.1",
+  "inspected": [
+    "ProductGallery2.astro",
+    "ProductHero2.astro",
+    "ProductExperience2.astro"
+  ],
+  "changed": [
+    "ProductGallery2.astro",
+    "ProductHero2.astro"
+  ],
   "validation": [
-    "installer node --check",
-    "generated test node --check",
-    "full-bleed gallery test",
-    "gallery behavior test",
+    "node --check",
+    "gallery test",
     "lint:content",
-    "Astro build",
-    "legacy marker absence",
-    "idempotent second run"
+    "build",
+    "legacy height absence"
+  ],
+  "fixes": [
+    "CSS replacement distinguishes root rules from media-query rules",
+    "duplicate selector names no longer cause a false preflight failure",
+    "no long formatting-dependent string replacement is used"
   ]
 }

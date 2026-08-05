@@ -1,34 +1,26 @@
-# PfotenTechnik Airbnb Product Gallery 28.0.1
+# pfotentechnik-mobile-gallery-airbnb-alignment-28.1.1
 
-Ersetzt `ProductGallery2.astro` vollständig durch eine Airbnb-inspirierte Editorial-Galerie.
+Behebt die zwei sichtbaren Abweichungen zur Airbnb-Galerie:
 
-- Desktop-Mosaik mit einem Hauptbild und bis zu vier Nebenkacheln
-- Mobile Scroll-Snap-Galerie
-- Vollbilddialog mit Tastatur, Swipe, Zoom und Thumbnail-Leiste
-- 0 Bilder: neutraler Leerzustand
-- 1 Bild: keine Navigation und keine Thumbnail-Leiste, aber vergrößerbar
-- 2 bis 5 Bilder: vollständiges Mosaik
-- mehr als 5 Bilder: fünf Kacheln plus „Alle Bilder“
-- vorhandene globale Lightbox kollidiert nicht, da Galeriebilder in Buttons liegen
-- alter Thumbnail-Swap, Touch-Code und Legacy-CSS werden entfernt
+- Der Hero-Media-Wrapper bricht auf Mobile wirklich auf `100dvw` aus dem Seitencontainer aus.
+- Die feste Slide-Höhe plus `object-fit: contain` wird durch eine quadratische, bildfüllende Fläche mit `object-fit: cover` ersetzt.
+- Zähler und „Alle Bilder“ liegen als Overlay auf dem Bild statt in einer zusätzlichen Leiste.
+- Desktop, Lightbox, Einzelbild- und Leerzustand bleiben erhalten.
 
 ```bash
-node 3/apply-pfotentechnik-airbnb-product-gallery-28.0.1.mjs
+node 3/apply-pfotentechnik-mobile-gallery-airbnb-alignment-28.1.1.mjs
 ```
 
 
-## Mobile Full-Bleed in 28.0.1
+## Korrektur in 28.1.1
 
-Die Galerie wird auf mobilen Viewports bewusst aus dem gepaddeten
-Produktseiten-Container herausgezogen:
+Der aktuelle Galeriecode enthält einige Selektoren sowohl als Basisregel als
+auch innerhalb eines Mobile-Media-Queries. Version 28.1.0 zählte beide als
+gleichwertige Treffer und brach vor dem Backup und vor jeder Dateiänderung ab.
 
-```css
-width: 100vw;
-margin-inline: calc(50% - 50vw);
-```
+Der Installer bestimmt nun die CSS-Klammerung am Fundort und ersetzt
+ausschließlich die eine Regel auf Root-Ebene. Verschachtelte Regeln innerhalb
+von `@media` bleiben erhalten und werden durch die neuen abschließenden
+Mobile-Regeln kontrolliert überschrieben.
 
-Dadurch reichen die Produktbilder links und rechts bis an den Displayrand.
-
-Zähler und „Alle Bilder“-Button bleiben mit 16 Pixel Innenabstand im
-bestehenden Inhaltsraster. Auch der Leerzustand behält seitlich 16 Pixel
-Abstand. Desktop bleibt unverändert.
+Diese Korrektur verändert den fachlichen Zielzustand der Galerie nicht.

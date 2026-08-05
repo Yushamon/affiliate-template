@@ -14,7 +14,7 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 ---
 
 <section class="px2-hero" aria-labelledby="px2-product-title">
-  <div class="px2-hero__media">
+  <div class="px2-hero__media" data-mobile-gallery-full-bleed>
     <ProductGallery2 name={model.name} items={model.gallery} />
   </div>
 
@@ -221,4 +221,8 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
       grid-template-columns: 1fr;
     }
   }
+
+@media (max-width: 759px) {
+  .px2-hero__media[data-mobile-gallery-full-bleed] { position: relative; left: 50%; width: 100vw; width: 100dvw; max-width: 100vw; max-width: 100dvw; margin-left: -50vw; margin-left: -50dvw; }
+}
 </style>
