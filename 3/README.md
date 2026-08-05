@@ -1,39 +1,39 @@
-# pfotentechnik-mobile-gallery-viewport-height-28.1.3
+# pfotentechnik-mobile-gallery-zero-edge-28.1.5
 
-Begrenzt die mobile Produktgalerie anhand der verfügbaren Bildschirmhöhe.
+Ergänzt den Zero-Edge-Galerie-Patch um korrekt zentrierte
+Lightbox-Vorschaubilder.
 
-## Ziel
+## Problem
 
-Die Galerie soll den Einstieg visuell tragen, aber nicht fast den gesamten
-ersten mobilen Viewport belegen. Direkt unter dem Bild sollen bereits
-Produktkategorie, Hersteller und der Beginn der Kaufentscheidung sichtbar sein.
+Die Vorschaubilder erscheinen innerhalb der unteren Kacheln nach unten
+verschoben. Der Thumbnail-Button besitzt bislang keinen eindeutigen
+Zentrierungs-Owner. Außerdem bleibt der normale Inline-Zeilenabstand wirksam.
 
-## Höhenmodell
+## Lösung
 
-Standard:
-
-```css
-height: clamp(280px, 44svh, 520px);
-max-height: 52svh;
-```
-
-Kurze Displays bis 700 Pixel Höhe:
+Thumbnail-Button:
 
 ```css
-height: clamp(260px, 42svh, 340px);
+display: grid;
+place-items: center;
+line-height: 0;
 ```
 
-Sehr hohe Displays ab 900 Pixel:
+Thumbnail-Bild:
 
 ```css
-height: min(46svh, 480px);
+width: 100%;
+height: 100%;
+margin: 0;
+object-fit: cover;
+object-position: center center;
 ```
 
-`svh` wird bewusst statt `vh` verwendet, damit ein- und ausblendende
-Browserleisten die Galerie nicht springen lassen.
+Die Vorschaukacheln werden auf 88 × 66 Pixel vereinheitlicht. Die aktive
+Markierung, horizontale Navigation und Safe-Area bleiben erhalten.
 
 ## Ausführen
 
 ```bash
-node 3/apply-pfotentechnik-mobile-gallery-viewport-height-28.1.3.mjs
+node 3/apply-pfotentechnik-mobile-gallery-zero-edge-28.1.5.mjs
 ```

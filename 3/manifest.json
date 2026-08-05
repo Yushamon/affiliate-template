@@ -1,31 +1,34 @@
 {
-  "name": "pfotentechnik-mobile-gallery-viewport-height-28.1.3",
-  "version": "28.1.3",
+  "name": "pfotentechnik-mobile-gallery-zero-edge-28.1.5",
+  "version": "28.1.5",
+  "inspected": [
+    "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro"
+  ],
   "changed": [
     "apps/pfotentechnik/src/components/product-experience-2/ProductGallery2.astro"
   ],
   "created": [
-    "apps/pfotentechnik/test/mobile-gallery-viewport-height-28.1.3.test.mjs"
+    "apps/pfotentechnik/test/mobile-gallery-zero-edge-28.1.5.test.mjs"
   ],
-  "heightModel": {
-    "default": "clamp(280px, 44svh, 520px)",
-    "maximum": "52svh",
-    "shortViewport": "clamp(260px, 42svh, 340px)",
-    "tallViewport": "min(46svh, 480px)"
-  },
+  "fixes": [
+    "thumbnail strip aligns items vertically",
+    "thumbnail buttons use grid centering",
+    "inline baseline gap is removed",
+    "thumbnail images use centered cover rendering",
+    "active thumbnail behavior is preserved"
+  ],
   "preserved": [
-    "full-bleed layout",
-    "object-fit cover",
-    "mobile swipe",
-    "image counter overlay",
+    "zero-edge mobile gallery",
+    "viewport-relative gallery height",
+    "full-screen lightbox",
+    "keyboard and swipe navigation",
     "single-image behavior",
-    "desktop gallery",
-    "lightbox"
+    "desktop gallery"
   ],
   "validation": [
     "installer node --check",
     "generated test node --check",
-    "viewport height behavior test",
+    "lightbox thumbnail behavior test",
     "lint:content",
     "Astro build"
   ]
