@@ -237,4 +237,23 @@ display: inline-flex;
   .px2-editorial-gallery__slide img { width: 100%; height: 100%; object-fit: cover; object-position: center; background: transparent; }
   .px2-editorial-gallery__empty { margin-inline: 16px; }
 }
+
+@media (max-width: 759px) {
+    .px2-editorial-gallery,
+    .px2-editorial-gallery__mobile,
+    .px2-editorial-gallery__slide,
+    .px2-editorial-gallery__slide img {
+      border-radius: 0;
+    }
+
+    .px2-editorial-gallery {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+
+    .px2-editorial-gallery__mobile {
+      margin: 0;
+    }
+  }
 </style>

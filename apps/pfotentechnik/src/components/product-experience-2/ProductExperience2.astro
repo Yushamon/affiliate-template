@@ -71,4 +71,14 @@ const { model } = Astro.props;
     box-sizing: border-box;
   }
 
+
+@media (max-width: 759px) {
+    :global(main.container:has([data-product-experience="2.1"])) {
+      padding-top: 0;
+    }
+
+    .px2 {
+      --px2-page-gutter: 24px;
+    }
+  }
 </style>
