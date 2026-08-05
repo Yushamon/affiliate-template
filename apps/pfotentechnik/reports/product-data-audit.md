@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-04T18:05:12.473Z
+Erstellt: 2026-08-05T08:21:26.306Z
 
 ## Zusammenfassung
 
 - Produkte: 74
 - Fehler: 0
-- Warnungen: 90
+- Warnungen: 91
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -224,13 +224,22 @@ Erstellt: 2026-08-04T18:05:12.473Z
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
+### SureFlap DualScan Mikrochip Katzenklappe
+
+- Datei: `src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### SureFlap Mikrochip Katzenklappe Connect
 
 - Datei: `src/content/products/sureflap-mikrochip-katzenklappe-connect.md`
 - Kategorie: katzenklappen
 - Vollständigkeit: 94%
 - Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
+  - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
 ### WOPET Patrol F07 Pro
@@ -503,14 +512,6 @@ Erstellt: 2026-08-04T18:05:12.473Z
 ### petWALK Medium Tiertür
 
 - Datei: `src/content/products/petwalk-medium-tiertuer.md`
-- Kategorie: katzenklappen
-- Vollständigkeit: 97%
-- Warnungen:
-  - Affiliate-Link fehlt
-
-### SureFlap DualScan Mikrochip Katzenklappe
-
-- Datei: `src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md`
 - Kategorie: katzenklappen
 - Vollständigkeit: 97%
 - Warnungen:

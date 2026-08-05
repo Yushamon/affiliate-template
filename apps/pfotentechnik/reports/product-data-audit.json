@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-04T18:05:12.473Z",
+    "generatedAt": "2026-08-05T08:21:26.306Z",
     "totalProducts": 74,
     "byCategory": {
       "futterautomaten": 37,
@@ -9,7 +9,7 @@
       "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 90,
+    "warnings": 91,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -5782,6 +5782,7 @@
       "category": "katzenklappen",
       "errors": [],
       "warnings": [
+        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link fehlt"
       ],
       "notes": [],
@@ -5795,26 +5796,34 @@
           "value": "165 × 171 mm"
         },
         {
+          "label": "Glasausschnitt",
+          "value": "212 mm ideal; bis 260 mm mit Montageadapter"
+        },
+        {
+          "label": "Tunneltiefe",
+          "value": "70 mm"
+        },
+        {
           "label": "Speicher",
-          "value": "Bis zu 32 Tiere"
+          "value": "Bis zu 32 Tiere beziehungsweise Mikrochipnummern"
         },
         {
-          "label": "Strom",
-          "value": "4 AA-Batterien; bis zu 12 Monate laut Hersteller"
+          "label": "Stromversorgung",
+          "value": "4 AA-Batterien, nicht enthalten"
         },
         {
-          "label": "Richtungsrechte",
-          "value": "Ein- und Ausgang individuell je Tier"
+          "label": "Batterielaufzeit",
+          "value": "Bis zu 12 Monate laut Hersteller"
         },
         {
-          "label": "App",
-          "value": "Nein"
+          "label": "App und Hub",
+          "value": "Nicht erforderlich und nicht unterstützt"
         }
       ],
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 97
+      "completeness": 94
     },
     {
       "file": "src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
@@ -5823,62 +5832,46 @@
       "category": "katzenklappen",
       "errors": [],
       "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt",
+        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link fehlt"
       ],
       "notes": [],
       "specs": [
         {
-          "label": "Modellkennung",
-          "value": "iDSCF"
-        },
-        {
           "label": "Klappenöffnung",
-          "value": "142 × 120 mm, engster Durchgangspunkt"
+          "value": "142 × 120 mm"
         },
         {
-          "label": "Ausschnitt Tür oder Wand",
+          "label": "Tür-/Wandausschnitt",
           "value": "165 × 171 mm"
         },
         {
           "label": "Glasausschnitt",
-          "value": "Rund 212 mm ideal; laut Hersteller bis 260 mm möglich"
-        },
-        {
-          "label": "Außenrahmen",
-          "value": "210 × 210 mm"
-        },
-        {
-          "label": "Tunneltiefe",
-          "value": "70 mm"
+          "value": "212 mm"
         },
         {
           "label": "Stromversorgung",
-          "value": "4 AA-Batterien, nicht enthalten"
+          "value": "4 AA-Batterien"
         },
         {
-          "label": "Herstellerangabe Batterielaufzeit",
-          "value": "Bis zu 6 Monate"
+          "label": "Batterielaufzeit",
+          "value": "Bis zu 6 Monate laut Hersteller"
+        },
+        {
+          "label": "Zugangssteuerung",
+          "value": "Individuelle Ein- und Ausgangsrechte"
+        },
+        {
+          "label": "App",
+          "value": "Sure Petcare App"
         },
         {
           "label": "Hub",
-          "value": "Sure Petcare Hub für App-Verbindung erforderlich; beim Einzelgerät separat"
+          "value": "Für App-Funktionen erforderlich"
         },
         {
-          "label": "App-Funktionen",
-          "value": "Aktivitätsmeldungen, Innen-/Außenstatus, Statistiken, Fernverriegelung, Sperrzeiten und Haushaltsberechtigungen"
-        },
-        {
-          "label": "Zutrittssteuerung",
-          "value": "DualScan mit individuellen Ein- und Austrittsrechten"
-        },
-        {
-          "label": "Mikrochip",
-          "value": "Kompatibel mit gängigen Mikrochips; RFID-Halsbandanhänger als Alternative"
-        },
-        {
-          "label": "Einbauarten",
-          "value": "Türen, Glas und Wände"
+          "label": "Einbau",
+          "value": "Tür, Glas und Wand mit passendem Zubehör"
         }
       ],
       "unknownSpecs": [],
@@ -5914,20 +5907,40 @@
           "value": "210 × 210 mm"
         },
         {
-          "label": "Tunnel",
+          "label": "Tunneltiefe",
           "value": "70 mm"
         },
         {
           "label": "Speicher",
-          "value": "Bis zu 32 Tiere"
+          "value": "Bis zu 32 Tiere beziehungsweise Mikrochipnummern"
         },
         {
-          "label": "Strom",
-          "value": "4 AA-Batterien; bis zu 12 Monate laut Hersteller"
+          "label": "Stromversorgung",
+          "value": "4 AA-Batterien, nicht enthalten"
         },
         {
-          "label": "App",
-          "value": "Nein"
+          "label": "Batterielaufzeit",
+          "value": "Bis zu 12 Monate laut Hersteller"
+        },
+        {
+          "label": "Mikrochip-Kompatibilität",
+          "value": "Gängige Identifikations-Mikrochips; Kompatibilitätsprüfung empfohlen"
+        },
+        {
+          "label": "RFID-Halsbandanhänger",
+          "value": "Kompatibel; nicht enthalten"
+        },
+        {
+          "label": "App und Hub",
+          "value": "Nicht erforderlich und nicht unterstützt"
+        },
+        {
+          "label": "Verschluss",
+          "value": "Manueller 4-Wege-Verschluss"
+        },
+        {
+          "label": "Garantie",
+          "value": "3 Jahre laut Hersteller"
         }
       ],
       "unknownSpecs": [],

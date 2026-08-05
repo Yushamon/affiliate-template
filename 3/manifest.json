@@ -1,17 +1,26 @@
 {
-  "name": "pfotentechnik-feeder-journey-closure-27.1.0",
-  "version": "27.1.0",
+  "name": "pfotentechnik-sureflap-product-family-schema-closure-25.11.11",
+  "version": "25.11.11",
   "changed": [
-    "apps/pfotentechnik/src/content/pages/welcher-futterautomat-ist-der-richtige.md",
-    "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md"
+    "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
+    "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe.md",
+    "apps/pfotentechnik/src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md"
   ],
-  "created": [
-    "apps/pfotentechnik/test/feeder-journey-closure-27.1.0.test.mjs"
+  "validated": [
+    "sureflap-dualscan-mikrochip-katzenklappe.md",
+    "petsafe-petporte-smart-flap.md"
   ],
-  "completion": {
-    "opportunity": "futterautomaten-consolidate",
-    "intentOwners": "7/7",
-    "journeyEdges": "11/11",
-    "secondRun": "no-op"
-  }
+  "validation": [
+    "generated test node --check",
+    "family test",
+    "lint:content",
+    "audit:products:strict",
+    "build",
+    "idempotency"
+  ],
+  "fixes": [
+    "SureFlap Standard testStatus normalized to manufacturer-data",
+    "family test verifies Standard testStatus and rating",
+    "Astro build remains mandatory"
+  ]
 }

@@ -19,15 +19,15 @@ tags: ["Katzenklappe", "Mikrochip", "PetSafe", "ohne App"]
 seo: { title: "PetSafe Mikrochip Katzenklappe im Datencheck", description: "PetSafe Mikrochip Katzenklappe: Chip-Kompatibilität, Speicher, Einbau, Dichtung und Grenzen.", canonical: "/produkt/petsafe-mikrochip-katzenklappe/", sitemap: true, noindex: false }
 hub: { sections: ["produkte", "katzenklappen"], title: "PetSafe Mikrochip Katzenklappe", description: "Selektiver Eingang mit FDX-B-Prüfung.", featured: true, order: 22 }
 images:
-  hero: { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/hero.png", alt: "Redaktionelle Darstellung einer PetSafe-Mikrochip-Katzenklappe in einer Außentür" }
-  thumbnail: { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/thumbnail.svg", alt: "PetSafe Mikrochip Katzenklappe als redaktionelle Produktrolle" }
-  comparison: { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/comparison.svg", alt: "PetSafe Mikrochip Katzenklappe im Merkmalsvergleich" }
+  hero: { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Redaktionelle Darstellung einer PetSafe-Mikrochip-Katzenklappe in einer Außentür" }
+  thumbnail: { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "PetSafe Mikrochip Katzenklappe als redaktionelle Produktrolle" }
+  comparison: { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "PetSafe Mikrochip Katzenklappe im Merkmalsvergleich" }
   gallery:
-    - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/use-case.svg", alt: "Einsatzprofil der PetSafe Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/detail.svg", alt: "Technik-Check der PetSafe Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/setup.svg", alt: "Einbauplanung für die PetSafe Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/scale.svg", alt: "Passformprüfung der PetSafe Mikrochip Katzenklappe" }
-    - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/limitation.svg", alt: "Grenzen der PetSafe Mikrochip Katzenklappe" }
+    - { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Einsatzprofil der PetSafe Mikrochip Katzenklappe" }
+    - { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Technik-Check der PetSafe Mikrochip Katzenklappe" }
+    - { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Einbauplanung für die PetSafe Mikrochip Katzenklappe" }
+    - { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Passformprüfung der PetSafe Mikrochip Katzenklappe" }
+    - { src: "../../assets/images/cat-flaps/microchip-comparison.svg", alt: "Grenzen der PetSafe Mikrochip Katzenklappe" }
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-04", source: { id: "petsafe-de", label: "PetSafe Deutschland", type: "merchant", url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/" } }
 priceState: "unknown"
 priceAvailable: false

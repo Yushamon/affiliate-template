@@ -90,11 +90,13 @@ availability: "temporarily-unavailable"
 availabilityReason: "Im deutschen Hersteller-Shop gelistet, bei der Prüfung am 04.08.2026 jedoch als nicht vorrätig markiert."
 availabilityUpdated: "2026-08-04"
 
+testStatus: "manufacturer-data"
 productStatus: "active"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 
+rating: 0
 editorial:
   assessmentType: "data-review"
   evidence:
