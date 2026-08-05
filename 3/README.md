@@ -1,7 +1,13 @@
-# Product Gallery Layout Owner 28.2.1
+# pfotentechnik-product-mobile-layout-closure-28.3.1
 
-Neutralisiert den globalen Produktseiten-Container im ProductRenderer und lässt ProductExperience2 den einzigen Inhaltsgutter besitzen.
+Korrigiert den fehlerhaften Test aus 28.3.0.
+
+Der Test verbot `48px` in der gesamten Hero-Datei und beanstandete dadurch
+den legitimen Desktop-Abstand `gap: clamp(24px, 4vw, 48px)`.
+
+28.3.1 prüft ausschließlich die mobile Full-Bleed-Regel, verlangt genau
+einen Treffer und entfernt das leere mobile Media-Query.
 
 ```bash
-node 3/apply-pfotentechnik-product-gallery-layout-owner-28.2.1.mjs
+node 3/apply-pfotentechnik-product-mobile-layout-closure-28.3.1.mjs
 ```

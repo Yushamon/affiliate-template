@@ -1,16 +1,12 @@
 {
-  "name": "pfotentechnik-product-gallery-layout-owner-28.2.1",
-  "version": "28.2.1",
-  "changed": [
-    "ProductRenderer.astro",
-    "ProductExperience2.astro",
-    "ProductHero2.astro",
-    "ProductGallery2.astro"
-  ],
-  "removes": [
-    "negative top offset",
-    "100vw breakout",
-    "left/transform breakout",
-    "page-gutter variable"
-  ]
+  "name": "pfotentechnik-product-mobile-layout-closure-28.3.1",
+  "version": "28.3.1",
+  "replaces": "28.3.0",
+  "fix": "Scoped gallery legacy assertion",
+  "cleanup": "Empty mobile media query removed",
+  "target": {
+    "contentGutter": "12px",
+    "galleryWidth": "calc(100% + 24px)",
+    "galleryMargin": "0 -12px"
+  }
 }

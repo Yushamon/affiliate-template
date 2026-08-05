@@ -1,8 +1,8 @@
 /* pfotentechnik product mobile premium: active PfotenTechnik design-system layer. */
 @media (max-width: 720px) {
-  main.container:has([data-product-page]) { width: 100%; max-width: none; padding-top: clamp(14px, 3.8vw, 20px); padding-right: max(12px, env(safe-area-inset-right)); padding-bottom: calc(64px + env(safe-area-inset-bottom)); padding-left: max(12px, env(safe-area-inset-left)); }
+  
   [data-product-page].pt-product-detail { width: 100%; margin: 0; padding-top: 0; }
-  main.container:has([data-product-page]) > [data-product-page], [data-product-page] [data-product-experience="2.0"] > .px2-hero:first-child, [data-product-page] [data-product-experience="2.0"] .px2-hero__media, [data-product-page] [data-product-experience="2.0"] .px2-gallery { margin-top: 0; }
+  [data-product-page] [data-product-experience="2.0"] > .px2-hero:first-child, [data-product-page] [data-product-experience="2.0"] .px2-hero__media, [data-product-page] [data-product-experience="2.0"] .px2-gallery { margin-top: 0; }
   [data-product-page] [data-product-experience="2.0"] { width: 100%; gap: clamp(30px, 8vw, 38px); font-size: 17px; line-height: 1.6; }
   [data-product-page] [data-product-experience="2.0"] > * { min-width: 0; }
   [data-product-page] [data-product-experience="2.0"] .px2-hero h1 { max-width: 14ch; font-size: clamp(2.5rem, 11.7vw, 3.2rem); line-height: 1.01; letter-spacing: -0.045em; text-wrap: balance; }

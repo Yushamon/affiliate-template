@@ -63,20 +63,13 @@ const { model } = Astro.props;
     display: grid;
     gap: clamp(24px, 4vw, 46px);
     width: 100%;
-    max-width: 1200px;
     min-width: 0;
-    margin-inline: auto;
-    padding: 70px 24px;
+    margin: 0;
+    padding: 0;
     color: var(--px2-text);
   }
 
   .px2 :global(*) {
     box-sizing: border-box;
-  }
-
-  @media (max-width: 759px) {
-    .px2 {
-      padding-top: 0;
-    }
   }
 </style>

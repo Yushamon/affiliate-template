@@ -6,6 +6,11 @@
   padding: 70px 24px;
 }
 
+.container--product {
+  max-width: 1200px;
+  padding: 70px 24px;
+}
+
 .section-title {
   margin-top: 90px;
   margin-bottom: 28px;
@@ -74,6 +79,11 @@
 }
 
 @media (max-width: 768px) {
+  .container--product {
+    max-width: none;
+    padding: 0 12px calc(64px + env(safe-area-inset-bottom));
+  }
+
   .container {
     padding-top: 90px;
   }

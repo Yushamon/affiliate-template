@@ -48,6 +48,7 @@ interface Props {
     mobileEmphasis?: boolean;
   }>;
   breadcrumbs?: BreadcrumbItem[];
+  mainClass?: string;
 }
 
 const {
@@ -67,7 +68,8 @@ const {
   noindex = false,
   webAnalyticsToken,
   headerLinks = projectConfig.headerLinks,
-  breadcrumbs
+  breadcrumbs,
+  mainClass
 } = Astro.props;
 
 const pageTitle = seoTitle ?? title;
@@ -386,7 +388,7 @@ const faqSchema = createFaqSchema(faq);
       links={headerLinks}
     />
 
-    <main class:list={["container", isHome && "container--home"]}>
+    <main class:list={["container", isHome && "container--home", mainClass]}>
       <slot />
     </main>
 
