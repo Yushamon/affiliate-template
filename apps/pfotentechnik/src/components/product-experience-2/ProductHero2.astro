@@ -75,17 +75,21 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 .px2-hero {
     display: grid;
     gap: 14px;
+    width: 100%;
     min-width: 0;
+    margin: 0;
   }
 
-  .px2-hero__media,
-  .px2-hero__content {
+  .px2-hero__media {
+    width: 100%;
     min-width: 0;
+    margin: 0;
   }
 
   .px2-hero__content {
     display: grid;
     gap: 15px;
+    min-width: 0;
     padding: 16px;
     border: 1px solid var(--px2-border);
     border-radius: 20px;
@@ -218,7 +222,17 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     color: var(--px2-accent-text);
   }
 
-  
+  @media (max-width: 759px) {
+    .px2-hero__media[data-mobile-gallery-full-bleed] {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+
+    .px2-hero__content {
+      margin-inline: 12px;
+    }
+  }
 
   @media (min-width: 760px) {
     .px2-hero__content {
@@ -238,6 +252,7 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     }
 
     .px2-hero__content {
+      margin-inline: 0;
       padding: clamp(22px, 2.5vw, 30px);
     }
 
@@ -248,22 +263,6 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 
     .px2-hero__decision {
       grid-template-columns: 1fr;
-    }
-  }
-
-
-  
-
-
-  @media (max-width: 759px) {
-    .px2-hero__media[data-mobile-gallery-full-bleed] {
-      width: 100%;
-      max-width: none;
-      margin: 0;
-    }
-
-    .px2-hero__content {
-      margin-inline: 12px;
     }
   }
 </style>
