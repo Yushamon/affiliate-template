@@ -39,7 +39,7 @@ const { model } = Astro.props;
 </article>
 
 <style>
-  .px2 {
+.px2 {
     --px2-surface: var(--pt-color-surface);
     --px2-surface-soft: var(--pt-color-surface-soft);
     --px2-surface-raised: var(--pt-color-surface-raised);
@@ -63,7 +63,10 @@ const { model } = Astro.props;
     display: grid;
     gap: clamp(24px, 4vw, 46px);
     width: 100%;
+    max-width: 1200px;
     min-width: 0;
+    margin-inline: auto;
+    padding: 70px 24px;
     color: var(--px2-text);
   }
 
@@ -71,14 +74,9 @@ const { model } = Astro.props;
     box-sizing: border-box;
   }
 
-
-@media (max-width: 759px) {
-    :global(main.container:has([data-product-experience="2.1"])) {
-      padding-top: 0;
-    }
-
+  @media (max-width: 759px) {
     .px2 {
-      --px2-page-gutter: 24px;
+      padding-top: 0;
     }
   }
 </style>

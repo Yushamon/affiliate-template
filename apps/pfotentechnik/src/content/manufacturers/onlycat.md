@@ -15,7 +15,7 @@ author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Hersteller", "OnlyCat", "Beuteerkennung", "Katzenklappen"]
 hub: { sections: ["hersteller", "katzenklappen"], title: "OnlyCat", description: "Komplettsystem mit App und Beuteerkennung.", icon: "🏭", order: 82, featured: false }
 seo: { title: "OnlyCat: App-Katzenklappe & Beuteerkennung", description: "OnlyCat als Hersteller: Produktrolle, App, Kamera, Strom, WLAN und Preismodelle.", canonical: "/hersteller/onlycat/", sitemap: true, noindex: false }
-images: { hero: { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/hero.png", alt: "Redaktionelle Übersicht zum Hersteller OnlyCat" }, gallery: [] }
+images: { hero: { src: "../../assets/images/products/onlycat-mikrochip-katzenklappe/hero.webp", alt: "Redaktionelle Übersicht zum Hersteller OnlyCat" }, gallery: [] }
 productCategories: ["App-Katzenklappen", "Beuteerkennung"]
 productAreas: ["Mikrochip-Zugang", "Kamera", "App"]
 focus: ["Integrierte Beuteerkennung", "Vernetzte Zugangsregeln"]

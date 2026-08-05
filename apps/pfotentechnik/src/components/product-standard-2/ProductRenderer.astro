@@ -27,4 +27,18 @@ const model = buildProductExperienceModel({
 });
 ---
 
-<ProductExperience2 model={model} />
+<div class="px2-route-layout-owner">
+  <ProductExperience2 model={model} />
+</div>
+
+
+<style>
+  :global(main.container) {
+    max-width: none;
+    padding: 0;
+  }
+
+  .px2-route-layout-owner {
+    width: 100%;
+  }
+</style>

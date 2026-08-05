@@ -72,7 +72,7 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 </section>
 
 <style>
-  .px2-hero {
+.px2-hero {
     display: grid;
     gap: 14px;
     min-width: 0;
@@ -218,6 +218,14 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     color: var(--px2-accent-text);
   }
 
+  @media (max-width: 759px) {
+    .px2-hero__media[data-mobile-gallery-full-bleed] {
+      width: calc(100% + 48px);
+      max-width: none;
+      margin: 0 -24px;
+    }
+  }
+
   @media (min-width: 760px) {
     .px2-hero__content {
       padding: 22px;
@@ -248,16 +256,4 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
       grid-template-columns: 1fr;
     }
   }
-
-@media (max-width: 759px) {
-  .px2-hero__media[data-mobile-gallery-full-bleed] {
-      position: relative;
-      left: auto;
-      width: calc(100% + (2 * var(--px2-page-gutter, 24px)));
-      max-width: none;
-      margin-inline: calc(-1 * var(--px2-page-gutter, 24px));
-      margin-block-start: 0;
-      transform: none;
-    }
-}
 </style>
