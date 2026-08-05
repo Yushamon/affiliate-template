@@ -39,8 +39,14 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Erkennungsleistung nicht unabhängig verifiziert." }
-rating: 0
-ratings: {}
+rating: 3.6
+ratings:
+  zugang_und_sicherheit: 4.0
+  richtungsrechte_und_kontrolle: 4.5
+  alltag_und_bedienung: 4.0
+  einbau_und_passform: 3.0
+  strom_und_ausfallverhalten: 3.3
+  systemabhaengigkeit_und_folgekosten: 2.5
 decision: { bestFor: ["Wiederkehrender Beuteeintrag", "App-Steuerung und Videoereignisse", "Individuelle Richtungsregeln"], attention: ["USB-C-Netzstrom am Einbauort", "WLAN für Einrichtung und App", "Abo-Version benötigt laufendes Abo"] }
 review: { summary: "OnlyCat kombiniert die Klappe und Beuteerkennung in einem System.", verdict: "Der klarste Komplettsystem-Intent für Beuteerkennung; die höhere Strom-, WLAN- und Kostenabhängigkeit muss bewusst passen." }
 strengths: ["Integrierte Kamera und Beuteerkennung", "Individuelle Ein-/Ausgangsregeln", "Grundbetrieb bei WLAN-Ausfall laut Hersteller"]
@@ -66,6 +72,7 @@ decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt
 evidenceSources:
   - { source: "OnlyCat Deutschland – Shop", url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/", accessedAt: "2026-08-04", assertion: "Lieferumfang, Strom, WLAN-Verhalten und Preismodelle.", fields: ["availability", "decision", "specs"] }
   - { source: "OnlyCat Deutschland – Spezifikationen", url: "https://www.onlycat.com/de/specs-de/", accessedAt: "2026-08-04", assertion: "Sensorik, Konnektivität, App und Ausfallverhalten.", fields: ["features", "specs", "comparisonData"] }
+score: 71
 ---
 
 OnlyCat ist kein Zusatzmodul, sondern eine vollständige Mikrochip-Katzenklappe mit Kamera und Beuteerkennung. Damit besitzt sie einen anderen Produkt-Intent als ZeroMOUSE, das eine vorhandene kompatible Klappe nachrüstet.

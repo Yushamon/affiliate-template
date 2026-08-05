@@ -77,8 +77,7 @@ recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 
 testStatus: "manufacturer-data"
-rating: 0
-
+rating: 3.9
 editorial:
   assessmentType: "data-review"
   evidence:
@@ -231,6 +230,14 @@ evidenceSources:
       - "specs"
       - "decisionFacts"
       - "faq"
+score: 79
+ratings:
+  zugang_und_sicherheit: 4.4
+  richtungsrechte_und_kontrolle: 4.6
+  alltag_und_bedienung: 4.3
+  einbau_und_passform: 3.7
+  strom_und_ausfallverhalten: 3.7
+  systemabhaengigkeit_und_folgekosten: 2.9
 ---
 
 ## Kurz eingeordnet

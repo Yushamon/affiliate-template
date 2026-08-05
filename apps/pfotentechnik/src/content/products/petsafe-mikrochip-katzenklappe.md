@@ -39,8 +39,14 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest." }
-rating: 0
-ratings: {}
+rating: 3.8
+ratings:
+  zugang_und_sicherheit: 3.8
+  richtungsrechte_und_kontrolle: 3.3
+  alltag_und_bedienung: 4.0
+  einbau_und_passform: 3.4
+  strom_und_ausfallverhalten: 4.0
+  systemabhaengigkeit_und_folgekosten: 4.5
 decision: { bestFor: ["Selektiver Eingang", "Bis zu 40 Katzen", "Lokaler Batteriebetrieb"], attention: ["Vorher Chipformat prüfen", "Metall, Glas, Wand und Ziegel benötigen Adapter beziehungsweise Funktionstest", "Keine App"] }
 review: { summary: "Die PetSafe-Klappe ist eine lokale Alternative mit großem Speicher.", verdict: "Interessant für viele gespeicherte Tiere; Chipformat und Einbaumaterial sind die entscheidenden Vorprüfungen." }
 strengths: ["Bis zu 40 Katzen", "Doppelte automatische Verriegelung", "Zugluftabdichtung laut Hersteller"]
@@ -65,6 +71,7 @@ comparisonData: { version: 1, custom: { zugang: "15-stelliger FDX-B-Mikrochip od
 decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt-petsafe-mikrochip", primaryQuestion: "Ist der Chip kompatibel und genügt selektiver Eingang ohne App?", next: ["/vergleiche/beste-mikrochip-katzenklappen/", "/katzenklappe-einbauen/"], fallback: ["/katzenklappen/"] }
 evidenceSources:
   - { source: "PetSafe Deutschland", url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/", accessedAt: "2026-08-04", assertion: "Deutsche Verfügbarkeit, FDX-B-Formate, Speicher, Verriegelung und Einbauhinweise.", fields: ["availability", "specs", "features", "decision"] }
+score: 77
 ---
 
 Die PetSafe Mikrochip Katzenklappe besitzt einen eigenständigen Modell-Intent. Wichtig ist nicht nur die Speicherkapazität: Chipformat und Einbaumaterial müssen vor dem Sägen geprüft werden.

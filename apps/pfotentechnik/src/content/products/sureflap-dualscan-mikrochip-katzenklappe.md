@@ -20,7 +20,7 @@ productStatus: "active"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
-rating: 0
+rating: 4.2
 price:
   current: null
   currency: "EUR"
@@ -154,6 +154,14 @@ evidenceSources:
       - "review"
       - "specs"
       - "faq"
+score: 84
+ratings:
+  zugang_und_sicherheit: 4.3
+  richtungsrechte_und_kontrolle: 4.5
+  alltag_und_bedienung: 4.1
+  einbau_und_passform: 3.7
+  strom_und_ausfallverhalten: 4.0
+  systemabhaengigkeit_und_folgekosten: 4.6
 ---
 
 ## Kurz eingeordnet

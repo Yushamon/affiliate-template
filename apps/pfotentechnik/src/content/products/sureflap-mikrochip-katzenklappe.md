@@ -96,7 +96,7 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 
-rating: 0
+rating: 4.1
 editorial:
   assessmentType: "data-review"
   evidence:
@@ -297,6 +297,14 @@ evidenceSources:
       - "review"
       - "alternatives"
       - "comparisonData"
+score: 82
+ratings:
+  zugang_und_sicherheit: 4.3
+  richtungsrechte_und_kontrolle: 3.2
+  alltag_und_bedienung: 4.4
+  einbau_und_passform: 3.8
+  strom_und_ausfallverhalten: 4.2
+  systemabhaengigkeit_und_folgekosten: 4.8
 ---
 
 ## Kurzurteil

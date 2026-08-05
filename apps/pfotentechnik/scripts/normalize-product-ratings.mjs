@@ -45,6 +45,20 @@ const roundScore = (value) =>
 const formatRating = (value) =>
   value.toFixed(1);
 
+const requiresMissingRatingFailure = (data) => {
+  const editorialStatus = String(data?.editorialStatus ?? "").toLowerCase();
+  const productStatus = String(data?.productStatus ?? "").toLowerCase();
+  const storedScore = Number(data?.score);
+  const storedRating = Number(data?.rating);
+
+  return (
+    ["complete", "recommended"].includes(editorialStatus) &&
+    productStatus !== "discontinued" &&
+    !(Number.isFinite(storedScore) && storedScore > 0) &&
+    !(Number.isFinite(storedRating) && storedRating > 0)
+  );
+};
+
 const replaceTopLevelNumber = (frontmatter, key, value) => {
   const linePattern = new RegExp(
     `^${key}:\\s*[-+]?\\d+(?:\\.\\d+)?\\s*$`,
@@ -97,10 +111,17 @@ for (const name of files) {
     const data = YAML.parse(raw);
 
     if (!data?.ratings || typeof data.ratings !== "object") {
-      report.skipped.push({
-        file: name,
-        reason: "Kein ratings-Objekt"
-      });
+      if (requiresMissingRatingFailure(data)) {
+        report.invalid.push({
+          file: name,
+          reason: "Redaktionell vollständiges Produkt ohne Kriterienbewertung"
+        });
+      } else {
+        report.skipped.push({
+          file: name,
+          reason: "Kein ratings-Objekt"
+        });
+      }
       continue;
     }
 
@@ -110,10 +131,17 @@ for (const name of files) {
     );
 
     if (numericEntries.length === 0) {
-      report.skipped.push({
-        file: name,
-        reason: "Keine numerischen Einzelbewertungen"
-      });
+      if (requiresMissingRatingFailure(data)) {
+        report.invalid.push({
+          file: name,
+          reason: "Redaktionell vollständiges Produkt ohne numerische Kriterienbewertung"
+        });
+      } else {
+        report.skipped.push({
+          file: name,
+          reason: "Keine numerischen Einzelbewertungen"
+        });
+      }
       continue;
     }
 

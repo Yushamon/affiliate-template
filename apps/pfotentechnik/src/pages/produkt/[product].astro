@@ -24,6 +24,7 @@ import {
 } from "../../domain/content/internalLinks";
 import { buildProductNextSteps } from "../../domain/recommendationLinks";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
+import { calculateProductScore } from "../../domain/productScore";
 import { getCachedImage } from "../../lib/imageOptimization";
 import {
   getComparisons,
@@ -142,11 +143,8 @@ const heroImageAlt =
   contentProduct.images.hero.alt ??
   pageTitle;
 
-const productScoreRaw = Number(contentProduct.score ?? contentProduct.rating ?? 0);
-const productScore100 =
-  productScoreRaw > 0 && productScoreRaw <= 10
-    ? Math.round(productScoreRaw * 10)
-    : Math.max(0, Math.min(100, Math.round(productScoreRaw)));
+const calculatedProductScore = calculateProductScore(contentProduct);
+const productScore100 = calculatedProductScore.score;
 
 const productSuitabilityLabels = Array.from(new Set([
   ...(Array.isArray(contentProduct.decision?.bestFor)
@@ -218,7 +216,7 @@ const reviewProduct = {
         recommendation:
           contentProduct.recommendation,
         rating: undefined,
-        score: productScore100,
+        score: productScore100 ?? undefined,
         capacity:
           contentProduct.capacity,
         expandable:
@@ -343,7 +341,7 @@ const productSchema = {
         }
       }
     : {}),
-  ...((contentProduct.score ?? 0) > 0 || (contentProduct.rating ?? 0) > 0 ? { review: {
+  ...(productScore100 !== null && productScore100 > 0 ? { review: {
     "@type": "Review",
     name: `${contentProduct.title} – redaktionelle Einordnung`,
     reviewBody: structuredReviewBody,

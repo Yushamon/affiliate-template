@@ -3,6 +3,7 @@ import type { ProductPriceInsight } from "../price/types.ts";
 import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
 import type { ProductDecisionProfile } from "./decisionEngine.ts";
 import { uniqueTextItems } from "./contentLists.ts";
+import { calculateProductScore } from "../productScore.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 
@@ -29,12 +30,11 @@ const normalize = (value: unknown): string => text(value)
 const slugOf = (entry: any): string => text(entry?.data?.slug ?? entry?.slug ?? entry?.id).replace(/\.mdx?$/i, "");
 const dataOf = (entry: any): any => entry?.data ?? entry ?? {};
 const categoryKey = (entry: any): string => normalize(dataOf(entry)?.category?.key ?? dataOf(entry)?.category?.label);
-const editorialScore = (data: any): number => {
-  const score = Number(data?.score);
-  if (Number.isFinite(score)) return score <= 5 ? score * 20 : score;
-  const rating = Number(data?.rating);
-  return Number.isFinite(rating) ? rating * 20 : 0;
-};
+const calculatedEditorialScore = (data: any): number | null =>
+  calculateProductScore(data).score;
+
+const editorialScore = (data: any): number =>
+  calculatedEditorialScore(data) ?? 0;
 
 const imageSource = (entry: any) => entry?.src ?? entry;
 const imageAlt = (entry: any, fallback: string) => text(entry?.alt, fallback);
@@ -479,8 +479,15 @@ export const buildProductExperienceModel = ({
     alt: imageAlt(entry, index === 0 ? text(data.title) : `${text(data.title)} – Ansicht ${index + 1}`),
     caption: text(entry?.caption)
   }));
-  const scoreRaw = Number.isFinite(Number(reviewProduct.score)) ? Number(reviewProduct.score) : editorialScore(data);
-  const score = scoreRaw > 0 && scoreRaw <= 10 ? Math.round(scoreRaw * 10) : Math.max(0, Math.min(100, Math.round(scoreRaw)));
+  const reviewScore = Number(reviewProduct.score);
+  const scoreRaw = Number.isFinite(reviewScore) && reviewScore > 0
+    ? reviewScore
+    : calculatedEditorialScore(data);
+  const score = scoreRaw == null
+    ? null
+    : scoreRaw > 0 && scoreRaw <= 10
+      ? Math.round(scoreRaw * 10)
+      : Math.max(0, Math.min(100, Math.round(scoreRaw)));
   const limitations = uniqueTextItems([
     ...list<string>(data.weaknesses),
     ...list<string>(reviewProduct.weaknesses),
@@ -640,7 +647,7 @@ export const buildProductExperienceModel = ({
     reviewSummary: text(data.review?.summary ?? data.description),
     reviewVerdict: text(data.review?.verdict ?? data.recommendation),
     score,
-    scoreLabel: score >= 90 ? "Hervorragend" : score >= 80 ? "Sehr gut" : score >= 70 ? "Gut" : score > 0 ? "Mit Einschränkungen" : "Noch offen",
+    scoreLabel: score == null ? "Noch nicht bewertet" : score >= 90 ? "Hervorragend" : score >= 80 ? "Sehr gut" : score >= 70 ? "Gut" : score > 0 ? "Mit Einschränkungen" : "Noch offen",
     gallery,
     idealFor,
     suitabilitySummary,

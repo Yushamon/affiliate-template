@@ -32,12 +32,19 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     <p class="px2-hero__lead">{model.recommendation}</p>
 
     <div class="px2-hero__scoreline">
-      <EditorialScore
-        value={model.score}
-        scale={100}
-        variant="ring"
-        description="Redaktionelle Eignungsbewertung auf Basis der dokumentierten Quellen."
-      />
+      {model.score != null && model.score > 0 ? (
+        <EditorialScore
+          value={model.score}
+          scale={100}
+          variant="ring"
+          description="Redaktionelle Eignungsbewertung auf Basis der dokumentierten Quellen."
+        />
+      ) : (
+        <div class="px2-hero__score-pending" role="status">
+          <strong>Noch nicht bewertet</strong>
+          <span>Eine vollständige Kriterienbewertung liegt noch nicht vor.</span>
+        </div>
+      )}
     </div>
 
     <dl class="px2-hero__decision">
@@ -122,6 +129,26 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
 
   .px2-hero__scoreline {
     min-width: 0;
+  }
+
+  .px2-hero__score-pending {
+    display: grid;
+    gap: 3px;
+    padding: 12px 13px;
+    border: 1px solid var(--px2-border);
+    border-radius: 14px;
+    background: var(--px2-surface-raised);
+  }
+
+  .px2-hero__score-pending strong {
+    color: var(--px2-text);
+    font-size: .92rem;
+  }
+
+  .px2-hero__score-pending span {
+    color: var(--px2-muted);
+    font-size: .76rem;
+    line-height: 1.42;
   }
 
   .px2-hero__scoreline :global(.pt-score) {

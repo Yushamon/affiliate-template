@@ -39,8 +39,14 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "recommended"
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Dämm- und Sicherheitswerte sind Herstellerangaben." }
-rating: 0
-ratings: {}
+rating: 3.7
+ratings:
+  zugang_und_sicherheit: 4.5
+  richtungsrechte_und_kontrolle: 4.0
+  alltag_und_bedienung: 4.1
+  einbau_und_passform: 2.6
+  strom_und_ausfallverhalten: 4.4
+  systemabhaengigkeit_und_folgekosten: 2.8
 decision: { bestFor: ["Energetisch anspruchsvolle Außenbauteile", "Motorisierte Öffnung", "Katzen und kleine Hunde"], attention: ["Planungs- und Einbauprojekt statt einfacher Klappentausch", "Netzstrom erforderlich", "Hohe System- und Investitionsklasse"] }
 review: { summary: "petWALK ist eine motorisierte Tiertür und kein direkter Ersatz für jede kleine Schwingklappe.", verdict: "Eigenständige Premiumklasse für Dämmung, Gebäudesicherheit und Automatik; für einfachen Mikrochip-Zugang meist überdimensioniert." }
 strengths: ["Motorisierte Verriegelung", "Chip- und Bewegungserkennung", "App-Modul und Notstrom-Akku laut Hersteller"]
@@ -65,6 +71,7 @@ comparisonData: { version: 1, custom: { zugang: "Chip- und Bewegungserkennung", 
 decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt-petwalk-medium", primaryQuestion: "Ist eine gedämmte motorisierte Tiertür für das konkrete Bauteil gerechtfertigt?", next: ["/katzenklappe-zugluft-und-waermedaemmung/", "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"], fallback: ["/katzenklappen/"] }
 evidenceSources:
   - { source: "petWALK Österreich", url: "https://petwalk.at/products/tierture-konfigurieren", accessedAt: "2026-08-04", assertion: "EU-Angebot, Produktart, Chip- und Bewegungserkennung, Einbau, App-Modul, Netzgerät, Dämm- und Sicherheitsangaben.", fields: ["availability", "specs", "features", "decision"] }
+score: 75
 ---
 
 Die petWALK Medium besitzt einen eigenständigen Bauprodukt-Intent. Sie gehört in Vergleiche nur mit klarer Kennzeichnung als motorisierte Premium-Tiertür – nicht als scheinbar gleichartige kleine Schwingklappe.
