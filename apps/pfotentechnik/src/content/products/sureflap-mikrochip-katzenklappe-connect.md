@@ -40,15 +40,21 @@ seo:
 
 images:
   hero:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/hero.webp"
     alt: "Redaktionelle Darstellung der SureFlap Mikrochip Katzenklappe Connect"
   thumbnail:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/thumbnail.webp"
     alt: "SureFlap Mikrochip Katzenklappe Connect"
   comparison:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/comparison.webp"
     alt: "SureFlap Connect im Vergleich der Mikrochip-Katzenklappen"
-  gallery: []
+  gallery:
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/gallery-1.webp"
+      alt: "SureFlap Mikrochip Katzenklappe Connect in 45-Grad-Perspektive"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/gallery-2.webp"
+      alt: "SureFlap Mikrochip Katzenklappe Connect eingebaut in einer Terrassentür"
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/gallery-3.webp"
+      alt: "Frontansicht der SureFlap Mikrochip Katzenklappe Connect"
 
 price:
   current: 259.99
