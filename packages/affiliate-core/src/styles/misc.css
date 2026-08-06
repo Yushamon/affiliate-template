@@ -221,6 +221,22 @@
   color: var(--text);
 }
 
+/*
+ * Mobile wird auf sichtbare Breadcrumbs verzichtet. Die vollständige
+ * BreadcrumbList bleibt über das Layout als JSON-LD erhalten.
+ */
+.breadcrumbs--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs,
+  .breadcrumbs--desktop,
+  .breadcrumbs--mobile {
+    display: none;
+  }
+}
+
 .comparison-section {
   margin-top: 60px;
 }
