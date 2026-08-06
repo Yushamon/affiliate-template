@@ -1,13 +1,13 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 198
+- Indexierbare Seiten: 213
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
 - Gelöste Konflikte: 2
 - Manuelle Prüffälle: 0
 - Harte Fehler: 0
-- Warnungen: 0
+- Warnungen: 3
 
 ## Konflikte und bewusste Abgrenzungen
 
@@ -42,7 +42,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.
-- Ähnlichkeit: 0.7092
+- Ähnlichkeit: 0.7093
 
 ### separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/
 
@@ -53,14 +53,17 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.
-- Ähnlichkeit: 0.7342
+- Ähnlichkeit: 0.7358
 
 ## Audit-Befunde
 
-Keine offenen Befunde.
+- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappe-einbauen/: Gerenderte H1-Anzahl: 10.
+- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappe-fuer-mehrere-katzen/: Gerenderte H1-Anzahl: 10.
+- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappen/: Gerenderte H1-Anzahl: 6.
 
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 198
-- NOINDEX: 78
+- IMPROVE: 3
+- KEEP: 210
+- NOINDEX: 84

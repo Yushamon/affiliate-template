@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-06T06:29:13.882Z",
+  "generatedAt": "2026-08-06T08:43:42.295Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -6008,7 +6008,7 @@
       "title": "OnlyCat Mikrochip Katzenklappe",
       "description": "Netzbetriebene Mikrochip-Katzenklappe mit App, Kamera und integrierter Beuteerkennung.",
       "type": "product",
-      "cluster": "key katzenklappen label katzenklappen path katzenklappen",
+      "cluster": "katzenklappen",
       "topics": [
         "katzenklappe",
         "mikrochip",
@@ -7450,7 +7450,7 @@
       "title": "PetSafe Mikrochip Katzenklappe",
       "description": "Batteriebetriebene Mikrochip-Katzenklappe für selektiven Eingang mit Speicher für bis zu 40 Katzen.",
       "type": "product",
-      "cluster": "key katzenklappen label katzenklappen path katzenklappen",
+      "cluster": "katzenklappen",
       "topics": [
         "katzenklappe",
         "mikrochip",
@@ -7543,7 +7543,7 @@
       "title": "petWALK Medium Tiertür",
       "description": "Motorisierte, gedämmte Tiertür mit Chip- und Bewegungserkennung, App-Modul und Notstrom-Akku.",
       "type": "product",
-      "cluster": "key katzenklappen label katzenklappen path katzenklappen",
+      "cluster": "katzenklappen",
       "topics": [
         "tiertur",
         "katzenklappe",
@@ -34488,7 +34488,7 @@
     {
       "source": "comparison:beste-mikrochip-katzenklappen",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -34744,7 +34744,7 @@
     {
       "source": "comparison:beste-mikrochip-katzenklappen",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -34760,7 +34760,7 @@
     {
       "source": "comparison:beste-mikrochip-katzenklappen",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -46480,7 +46480,7 @@
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -46655,6 +46655,14 @@
     },
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "target": "product:petsafe-mikrochip-katzenklappe",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "product:petsafe-smart-feed-2",
       "type": "semantic",
       "score": 100,
@@ -46664,7 +46672,7 @@
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -46840,14 +46848,6 @@
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "product:oneisall-2-in-1-feeder-water",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
-      "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -134744,7 +134744,7 @@
     {
       "source": "page:katzenklappen",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -134920,7 +134920,7 @@
     {
       "source": "page:katzenklappen",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -134936,7 +134936,7 @@
     {
       "source": "page:katzenklappen",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241112,7 +241112,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "comparison:beste-mikrochip-katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241160,7 +241160,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241248,7 +241248,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "page:katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241584,7 +241584,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241592,7 +241592,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "product:sureflap-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241600,7 +241600,7 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "product:sureflap-mikrochip-katzenklappe-connect",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -241656,8 +241656,16 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "product:zeromouse-2-0",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:onlycat-mikrochip-katzenklappe",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "cluster",
+      "score": 96,
       "explicit": false,
       "automatic": true
     },
@@ -242440,14 +242448,6 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "product:petsafe-healthy-pet-simply-feed",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:onlycat-mikrochip-katzenklappe",
-      "target": "product:petsafe-petporte-smart-flap",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -294632,7 +294632,7 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "comparison:beste-mikrochip-katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -294673,6 +294673,14 @@
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
       "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-mikrochip-katzenklappe",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -294864,7 +294872,7 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "page:katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -295480,7 +295488,7 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -295488,7 +295496,7 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "product:sureflap-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -295496,7 +295504,7 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "product:sureflap-mikrochip-katzenklappe-connect",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -295552,8 +295560,16 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "product:zeromouse-2-0",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-mikrochip-katzenklappe",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "cluster",
+      "score": 96,
       "explicit": false,
       "automatic": true
     },
@@ -295600,14 +295616,6 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "comparison:gps-tracker-ohne-abo",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-mikrochip-katzenklappe",
-      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -296095,14 +296103,6 @@
     },
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
-      "target": "product:petsafe-petporte-smart-flap",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "product:tractive-cat-6-mini",
       "type": "semantic",
       "score": 66,
@@ -296168,6 +296168,22 @@
     {
       "source": "product:petsafe-petporte-smart-flap",
       "target": "page:katzenklappen",
+      "type": "cluster",
+      "score": 96,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-petporte-smart-flap",
+      "target": "product:onlycat-mikrochip-katzenklappe",
+      "type": "cluster",
+      "score": 96,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-petporte-smart-flap",
+      "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "cluster",
       "score": 96,
       "explicit": false,
@@ -296823,14 +296839,6 @@
     },
     {
       "source": "product:petsafe-petporte-smart-flap",
-      "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-petporte-smart-flap",
       "target": "product:paj-pet-finder-4g-mini",
       "type": "semantic",
       "score": 66,
@@ -296983,14 +296991,6 @@
     },
     {
       "source": "product:petsafe-petporte-smart-flap",
-      "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-petporte-smart-flap",
       "target": "product:surefeed-microchip-pet-feeder",
       "type": "semantic",
       "score": 66,
@@ -297042,6 +297042,14 @@
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-petporte-smart-flap",
+      "target": "product:petwalk-medium-tiertuer",
+      "type": "cluster",
+      "score": 52,
       "explicit": false,
       "automatic": true
     },
@@ -299112,7 +299120,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "comparison:beste-mikrochip-katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299128,7 +299136,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299175,6 +299183,14 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
       "target": "page:katze-an-katzenklappe-gewoehnen",
       "type": "semantic",
       "score": 100,
@@ -299184,7 +299200,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "page:katzenklappen",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299192,6 +299208,22 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
+      "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -299440,7 +299472,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "product:sureflap-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299448,7 +299480,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "product:sureflap-mikrochip-katzenklappe-connect",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299504,7 +299536,7 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "product:zeromouse-2-0",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -299519,6 +299551,14 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
+      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "type": "cluster",
+      "score": 96,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
       "target": "comparison:beste-futterautomaten-fuer-katzen",
       "type": "semantic",
       "score": 88,
@@ -299655,14 +299695,6 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
-      "target": "page:gps-tracker",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petwalk-medium-tiertuer",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 88,
@@ -299672,22 +299704,6 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petwalk-medium-tiertuer",
-      "target": "page:smarte-haustiertechnik",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petwalk-medium-tiertuer",
-      "target": "page:trinkbrunnen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -300471,14 +300487,6 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
-      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petwalk-medium-tiertuer",
       "target": "product:tractive-dog-6-xl",
       "type": "semantic",
       "score": 66,
@@ -300506,6 +300514,14 @@
       "target": "product:wopet-pioneer-f01-plus",
       "type": "semantic",
       "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "cluster",
+      "score": 52,
       "explicit": false,
       "automatic": true
     },
@@ -304200,7 +304216,7 @@
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -304336,7 +304352,7 @@
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -304408,6 +304424,14 @@
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "product:petsafe-petporte-smart-flap",
+      "type": "cluster",
+      "score": 96,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "target": "product:petwalk-medium-tiertuer",
       "type": "cluster",
       "score": 96,
       "explicit": false,
@@ -305319,14 +305343,6 @@
     },
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "product:tractive-dog-6",
       "type": "semantic",
       "score": 66,
@@ -305920,7 +305936,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -306176,7 +306192,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -306192,7 +306208,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -307456,7 +307472,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -307632,7 +307648,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -307648,7 +307664,7 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -327496,7 +327512,7 @@
     {
       "source": "product:zeromouse-2-0",
       "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -327760,7 +327776,7 @@
     {
       "source": "product:zeromouse-2-0",
       "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -327776,7 +327792,7 @@
     {
       "source": "product:zeromouse-2-0",
       "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true

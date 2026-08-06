@@ -1,25 +1,25 @@
 # Comparison Platform Report
 
-Erstellt: 2026-07-31T06:49:29.656Z
+Erstellt: 2026-08-06T08:43:46.547Z
 
 ## Übersicht
 
-- Vergleiche: 24
-- Produkte: 67
-- Hersteller: 19
-- verwendete Produkte: 41
-- Produktabdeckung: 61.2 %
+- Vergleiche: 26
+- Produkte: 74
+- Hersteller: 21
+- verwendete Produkte: 49
+- Produktabdeckung: 66.2 %
 - Qualitätsscore: 98/100
 - Fehler: 0
-- Warnungen: 0
+- Warnungen: 1
 
 ## Häufigste Befunde
 
-Keine Befunde.
+- **COMPARISON_DATA_MISSING**: 1 (warning, metadata)
 
 ## Dateien mit den meisten Problemen
 
-Keine betroffenen Dateien.
+- `src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md`: 0 Fehler, 1 Warnungen
 
 ## Fehler
 
@@ -27,4 +27,4 @@ Keine Fehler.
 
 ## Warnungen
 
-Keine Warnungen.
+- **COMPARISON_DATA_MISSING** – `src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md`: comparisonData fehlt.

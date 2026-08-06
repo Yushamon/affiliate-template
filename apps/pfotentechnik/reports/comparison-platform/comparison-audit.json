@@ -1,18 +1,32 @@
 {
-  "generatedAt": "2026-07-31T06:49:29.656Z",
+  "generatedAt": "2026-08-06T08:43:46.547Z",
   "version": "2.2.0",
   "summary": {
-    "comparisons": 24,
-    "products": 67,
-    "manufacturers": 19,
-    "usedProducts": 41,
-    "productCoveragePercent": 61.2,
+    "comparisons": 26,
+    "products": 74,
+    "manufacturers": 21,
+    "usedProducts": 49,
+    "productCoveragePercent": 66.2,
     "errors": 0,
-    "warnings": 0,
+    "warnings": 1,
     "qualityScore": 98
   },
-  "byCode": [],
-  "byFile": [],
+  "byCode": [
+    {
+      "code": "COMPARISON_DATA_MISSING",
+      "count": 1,
+      "category": "metadata",
+      "level": "warning"
+    }
+  ],
+  "byFile": [
+    {
+      "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    }
+  ],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -79,6 +93,10 @@
       "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
     },
     {
+      "slug": "beste-mikrochip-katzenklappen",
+      "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md"
+    },
+    {
       "slug": "beste-trinkbrunnen-fuer-hunde",
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md"
     },
@@ -107,9 +125,22 @@
       "file": "src/content/comparisons/gps-tracker-ohne-abo.md"
     },
     {
+      "slug": "katzenklappen-mit-app-und-beuteerkennung",
+      "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md"
+    },
+    {
       "slug": "kleine-gps-tracker-fuer-katzen",
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "code": "COMPARISON_DATA_MISSING",
+      "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+      "message": "comparisonData fehlt.",
+      "category": "metadata"
+    }
+  ]
 }

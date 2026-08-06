@@ -1,14 +1,14 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-04T10:33:13.688Z
+Erstellt: 2026-08-06T08:43:49.158Z
 
 ## Zusammenfassung
 
-- Dokumente: 186
+- Dokumente: 201
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0
-- Effektive Warnungen: 38
+- Effektive Warnungen: 41
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -36,6 +36,10 @@ Keine Befunde.
 
 ## Weitere Prüfhinweise
 
+- **WARNING · LINKING_METADATA_MISSING · advisory:** /katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-einbauen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
@@ -70,7 +74,6 @@ Keine Befunde.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

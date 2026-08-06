@@ -1,17 +1,20 @@
 # Product Standard 3 Audit
 
-- Produkte: 68
+- Produkte: 74
 - Blockiert: 0
-- Verbesserungsbedarf: 0
+- Verbesserungsbedarf: 3
 - Gut: 0
-- Stark: 68
+- Stark: 71
 - Fehler: 0
-- Warnungen: 0
+- Warnungen: 12
 
 ## Übersicht
 
 | Produkt | Score | Status | relevante Findings |
 |---|---:|---|---:|
+| onlycat-mikrochip-katzenklappe | 60 | needs-work | 4 |
+| petsafe-mikrochip-katzenklappe | 60 | needs-work | 4 |
+| petwalk-medium-tiertuer | 60 | needs-work | 4 |
 | aqara-smart-pet-feeder-c1 | 100 | strong | 0 |
 | cat-mate-335-pet-fountain | 100 | strong | 0 |
 | cat-mate-c200 | 100 | strong | 0 |
@@ -64,9 +67,12 @@
 | petlibro-stainless-steel-fountain | 100 | strong | 0 |
 | petsafe-freshfeed-refrigerated-feeder | 100 | strong | 0 |
 | petsafe-healthy-pet-simply-feed | 100 | strong | 0 |
+| petsafe-petporte-smart-flap | 100 | strong | 0 |
 | petsafe-smart-feed-2 | 100 | strong | 0 |
 | surefeed-microchip-pet-feeder | 100 | strong | 0 |
 | surefeed-microchip-pet-feeder-connect | 100 | strong | 0 |
+| sureflap-dualscan-mikrochip-katzenklappe | 100 | strong | 0 |
+| sureflap-mikrochip-katzenklappe | 100 | strong | 0 |
 | sureflap-mikrochip-katzenklappe-connect | 100 | strong | 0 |
 | tractive-cat-6-mini | 100 | strong | 0 |
 | tractive-dog-6 | 100 | strong | 0 |
@@ -83,4 +89,24 @@
 
 ## Höchste Priorität
 
-Keine blockierten oder schwachen Produktseiten.
+### onlycat-mikrochip-katzenklappe · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### petsafe-mikrochip-katzenklappe · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### petwalk-medium-tiertuer · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+

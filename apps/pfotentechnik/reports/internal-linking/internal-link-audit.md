@@ -1,18 +1,22 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-04T10:33:13.337Z
+Erstellt: 2026-08-06T08:43:50.735Z
 
 ## Ergebnis
 
-- Dokumente: 186
-- Linkdefinitionen: 441
-- Simulierte automatische Links: 442
+- Dokumente: 201
+- Linkdefinitionen: 451
+- Simulierte automatische Links: 458
 - Fehler: 0
-- Warnungen: 38
+- Warnungen: 41
 - Strict-kritisch: 0
 
 ## Befunde
 
+- **WARNING LINKING_METADATA_MISSING:** /katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-einbauen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.
+- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -47,7 +51,6 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-pioneer-f01-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -139,6 +142,11 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - /katze-trinkt-viel/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katze-trinkt-viel/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /katze-trinkt-viel/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /katzenklappe-zugluft-und-waermedaemmung/ → /hersteller/petwalk/: „petWALK“
+- /katzenklappen/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /katzenklappen/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
+- /katzenklappen/ → /hersteller/zeromouse/: „ZeroMOUSE“
+- /katzenklappen/ → /hersteller/petsafe/: „PetSafe“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /trinkbrunnen/: „Trinkbrunnen“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /hersteller/petkit/: „PETKIT“
@@ -307,6 +315,8 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - /produkt/oneisall-7l-dog-water-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
 - /produkt/oneisall-7l-dog-water-fountain/ → /hersteller/oneisall/: „oneisall“
 - /produkt/oneisall-7l-dog-water-fountain/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/onlycat-mikrochip-katzenklappe/ → /hersteller/onlycat/: „OnlyCat“
+- /produkt/onlycat-mikrochip-katzenklappe/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /produkt/pawbby-smart-pet-feeder/ → /hersteller/pawbby/: „PAWBBY“
 - /produkt/pawbby-smart-pet-feeder/ → /hersteller/xiaomi/: „Xiaomi“
 - /produkt/pawsync-smart-pet-feeder/ → /hersteller/pawsync/: „PawSync“
@@ -362,11 +372,18 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - /produkt/petlibro-stainless-steel-fountain/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petsafe-freshfeed-refrigerated-feeder/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/petsafe-healthy-pet-simply-feed/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petsafe-mikrochip-katzenklappe/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petsafe-petporte-smart-flap/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/petsafe-smart-feed-2/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petwalk-medium-tiertuer/ → /hersteller/petwalk/: „petWALK“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /hersteller/surefeed/: „SureFeed“
 - /produkt/surefeed-microchip-pet-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/surefeed-microchip-pet-feeder/ → /hersteller/surefeed/: „SureFeed“
+- /produkt/sureflap-mikrochip-katzenklappe-connect/ → /produkt/sureflap-mikrochip-katzenklappe/: „SureFlap Mikrochip Katzenklappe“
+- /produkt/sureflap-mikrochip-katzenklappe/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /produkt/sureflap-mikrochip-katzenklappe/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
+- /produkt/sureflap-mikrochip-katzenklappe/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/tractive-cat-6-mini/ → /gps-tracker/: „GPS Tracker“
 - /produkt/tractive-cat-6-mini/ → /hersteller/tractive/: „Tractive“
 - /produkt/tractive-dog-6-xl/ → /hersteller/tractive/: „Tractive“
@@ -488,6 +505,7 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/gps-tracker-ohne-abo/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
+- /vergleiche/katzenklappen-mit-app-und-beuteerkennung/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/paj-pet-finder-4g-mini/: „PAJ Pet Finder 4G Mini“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/tractive/: „Tractive“
@@ -505,5 +523,6 @@ Erstellt: 2026-08-04T10:33:13.337Z
 - /hersteller/petlibro/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /hersteller/petlibro/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
 - /hersteller/surefeed/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/surefeed/ → /produkt/sureflap-mikrochip-katzenklappe/: „SureFlap Mikrochip Katzenklappe“
 - /hersteller/wopet/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/xiaomi/ → /smarte-futterautomaten/: „Futterautomaten“

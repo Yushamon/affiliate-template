@@ -1,29 +1,73 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-08-04T10:33:13.688Z",
-  "strict": true,
+  "generatedAt": "2026-08-06T08:43:49.158Z",
+  "strict": false,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 276
+    "builtRoutes": 297
   },
   "summary": {
-    "documents": 186,
+    "documents": 201,
     "legacyErrors": 0,
-    "legacyWarnings": 38,
+    "legacyWarnings": 41,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 38,
+    "effectiveWarnings": 41,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 49
+    "advisory": 52
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 38
+    "warning": 41
   },
   "findings": [
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katze-an-katzenklappe-gewoehnen/",
+      "file": "apps/pfotentechnik/src/content/pages/katze-an-katzenklappe-gewoehnen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-einbauen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-einbauen/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-fuer-mehrere-katzen/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-fuer-mehrere-katzen.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -359,16 +403,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/xiaomi-smart-pet-fountain-2/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/zeromouse-2-0/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

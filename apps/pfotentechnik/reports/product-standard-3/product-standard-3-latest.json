@@ -1,17 +1,164 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-08-03T18:41:49.397Z",
+  "generatedAt": "2026-08-06T08:43:46.226Z",
   "summary": {
-    "products": 68,
+    "products": 74,
     "blocked": 0,
-    "needsWork": 0,
+    "needsWork": 3,
     "good": 0,
-    "strong": 68,
+    "strong": 71,
     "errors": 0,
-    "warnings": 0,
-    "info": 130
+    "warnings": 12,
+    "info": 135
   },
   "products": [
+    {
+      "slug": "onlycat-mikrochip-katzenklappe",
+      "file": "apps/pfotentechnik/src/content/products/onlycat-mikrochip-katzenklappe.md",
+      "category": "key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-mikrochip-katzenklappe",
+      "file": "apps/pfotentechnik/src/content/products/petsafe-mikrochip-katzenklappe.md",
+      "category": "key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petwalk-medium-tiertuer",
+      "file": "apps/pfotentechnik/src/content/products/petwalk-medium-tiertuer.md",
+      "category": "key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
     {
       "slug": "aqara-smart-pet-feeder-c1",
       "file": "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
@@ -1607,6 +1754,31 @@
       ]
     },
     {
+      "slug": "petsafe-petporte-smart-flap",
+      "file": "apps/pfotentechnik/src/content/products/petsafe-petporte-smart-flap.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 11,
+        "strengths": 5,
+        "weaknesses": 4,
+        "faq": 5,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 5,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
       "slug": "petsafe-smart-feed-2",
       "file": "apps/pfotentechnik/src/content/products/petsafe-smart-feed-2.md",
       "category": "key: futterautomaten",
@@ -1700,19 +1872,69 @@
       ]
     },
     {
+      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+      "file": "apps/pfotentechnik/src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 8,
+        "strengths": 5,
+        "weaknesses": 4,
+        "faq": 5,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 4,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe",
+      "file": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 13,
+        "strengths": 6,
+        "weaknesses": 5,
+        "faq": 12,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 8,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
       "slug": "sureflap-mikrochip-katzenklappe-connect",
       "file": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
       "category": "key:",
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 13,
-        "strengths": 4,
-        "weaknesses": 4,
-        "faq": 10,
-        "evidenceCount": 2,
+        "specs": 9,
+        "strengths": 5,
+        "weaknesses": 5,
+        "faq": 6,
+        "evidenceCount": 3,
         "communityInsights": 0,
-        "decisionFacts": 7,
+        "decisionFacts": 6,
         "purchaseMistakes": 0
       },
       "findings": [
@@ -2056,7 +2278,7 @@
     {
       "slug": "zeromouse-2-0",
       "file": "apps/pfotentechnik/src/content/products/zeromouse-2-0.md",
-      "category": "key: katzenklappen",
+      "category": "key:",
       "score": 100,
       "status": "strong",
       "metrics": {
@@ -2070,12 +2292,6 @@
         "purchaseMistakes": 0
       },
       "findings": [
-        {
-          "severity": "info",
-          "code": "PURCHASE_MISTAKES_MISSING",
-          "message": "Keine expliziten Fehlkauf-Szenarien hinterlegt.",
-          "recommendation": "Für priorisierte Produkte ein bis drei typische Fehlkäufe ergänzen."
-        },
         {
           "severity": "info",
           "code": "COMMUNITY_EMPTY",

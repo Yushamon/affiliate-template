@@ -207,63 +207,64 @@
   ],
   "searchData": {
     "available": true,
-    "generatedAt": "2026-08-03T16:23:14.058Z",
+    "generatedAt": "2026-08-04T12:44:53.074Z",
     "range": "7d",
-    "matchedPages": 15
+    "matchedPages": 10
   },
   "summary": {
-    "indexablePages": 198,
-    "totalHtmlPages": 276,
+    "indexablePages": 213,
+    "totalHtmlPages": 297,
     "pageTypes": {
       "category-hub": 5,
-      "comparison": 24,
+      "comparison": 26,
       "comparison-index": 1,
       "decision-guide": 7,
-      "editorial-page": 15,
-      "guide": 27,
+      "editorial-page": 16,
+      "guide": 28,
       "homepage": 1,
       "knowledge-hub": 1,
       "legal": 4,
-      "manufacturer": 19,
+      "manufacturer": 21,
       "manufacturer-index": 1,
       "medical-guide": 12,
-      "problem-solving-guide": 13,
-      "product": 68
+      "problem-solving-guide": 16,
+      "product": 74
     },
     "clusters": {
       "futterautomaten": 81,
       "gps-tracker": 26,
-      "hersteller": 15,
+      "hersteller": 17,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
       "katzen-und-hundespezifische-hardware": 1,
       "katzenernaehrung": 1,
       "katzengesundheit": 1,
       "katzenhaltung": 1,
-      "katzenklappen": 2,
+      "katzenklappen": 13,
       "katzenverhalten": 1,
-      "smarte-haustiertechnik": 11,
+      "smarte-haustiertechnik": 13,
       "tierbeschaeftigung": 1,
       "tierernaehrung": 1,
       "trinkbrunnen": 49
     },
     "intents": {
-      "brand-navigation": 19,
+      "brand-navigation": 21,
       "category-discovery": 9,
-      "commercial-investigation": 31,
-      "comparison": 24,
-      "informational": 22,
+      "commercial-investigation": 32,
+      "comparison": 26,
+      "informational": 23,
       "medical-information": 14,
-      "problem-solving": 11,
-      "product-research": 68
+      "problem-solving": 14,
+      "product-research": 74
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 198,
-      "NOINDEX": 78
+      "IMPROVE": 3,
+      "KEEP": 210,
+      "NOINDEX": 84
     },
     "errors": 0,
-    "warnings": 0,
+    "warnings": 3,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
     "intentConflicts": 0,
@@ -274,7 +275,35 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [],
+  "findings": [
+    {
+      "id": "content_h1_count_invalid|/katzenklappe-einbauen/",
+      "code": "CONTENT_H1_COUNT_INVALID",
+      "severity": "warning",
+      "routes": [
+        "/katzenklappe-einbauen/"
+      ],
+      "evidence": "Gerenderte H1-Anzahl: 10."
+    },
+    {
+      "id": "content_h1_count_invalid|/katzenklappe-fuer-mehrere-katzen/",
+      "code": "CONTENT_H1_COUNT_INVALID",
+      "severity": "warning",
+      "routes": [
+        "/katzenklappe-fuer-mehrere-katzen/"
+      ],
+      "evidence": "Gerenderte H1-Anzahl: 10."
+    },
+    {
+      "id": "content_h1_count_invalid|/katzenklappen/",
+      "code": "CONTENT_H1_COUNT_INVALID",
+      "severity": "warning",
+      "routes": [
+        "/katzenklappen/"
+      ],
+      "evidence": "Gerenderte H1-Anzahl: 6."
+    }
+  ],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",
@@ -393,9 +422,9 @@
       "metrics": {
         "title": 1,
         "headings": 0.6571,
-        "body": 0.4592,
+        "body": 0.4596,
         "entities": 1,
-        "combined": 0.7092
+        "combined": 0.7093
       },
       "topicOwners": [
         "/produkt/petkit-eversweet-solo-2-fountain/",
@@ -438,9 +467,9 @@
       "metrics": {
         "title": 1,
         "headings": 0.7813,
-        "body": 0.4684,
+        "body": 0.4721,
         "entities": 1,
-        "combined": 0.7342
+        "combined": 0.7358
       },
       "topicOwners": [
         "/produkt/tractive-dog-6/",

@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-04T10:33:13.337Z",
+  "generatedAt": "2026-08-06T08:43:50.735Z",
   "strict": false,
   "summary": {
-    "documents": 186,
-    "contentRoutes": 186,
-    "buildRoutes": 276,
-    "validRoutes": 276,
-    "definitions": 441,
-    "renderedAutomaticLinks": 442,
+    "documents": 201,
+    "contentRoutes": 201,
+    "buildRoutes": 297,
+    "validRoutes": 297,
+    "definitions": 451,
+    "renderedAutomaticLinks": 458,
     "errors": 0,
-    "warnings": 38,
+    "warnings": 41,
     "critical": 0
   },
   "blockedAnchors": [
@@ -37,6 +37,34 @@
     "wasser"
   ],
   "findings": [
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katze-an-katzenklappe-gewoehnen/",
+      "file": "apps/pfotentechnik/src/content/pages/katze-an-katzenklappe-gewoehnen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-einbauen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-einbauen/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-fuer-mehrere-katzen/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-fuer-mehrere-katzen.md"
+    },
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
+      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md"
+    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -240,12 +268,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/xiaomi-smart-pet-fountain-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/xiaomi-smart-pet-fountain-2/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/zeromouse-2-0/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/zeromouse-2-0/"
     },
     {
       "severity": "warning",
@@ -842,6 +864,36 @@
       "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
       "anchor": "Filterwechsel",
       "score": 1713
+    },
+    {
+      "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
+      "targetRoute": "/hersteller/petwalk/",
+      "anchor": "petWALK",
+      "score": 1107
+    },
+    {
+      "sourceRoute": "/katzenklappen/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2514
+    },
+    {
+      "sourceRoute": "/katzenklappen/",
+      "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "anchor": "Geräuschentwicklung",
+      "score": 1419
+    },
+    {
+      "sourceRoute": "/katzenklappen/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1309
+    },
+    {
+      "sourceRoute": "/katzenklappen/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1307
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
@@ -1852,6 +1904,18 @@
       "score": 1407
     },
     {
+      "sourceRoute": "/produkt/onlycat-mikrochip-katzenklappe/",
+      "targetRoute": "/hersteller/onlycat/",
+      "anchor": "OnlyCat",
+      "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/onlycat-mikrochip-katzenklappe/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1309
+    },
+    {
       "sourceRoute": "/produkt/pawbby-smart-pet-feeder/",
       "targetRoute": "/hersteller/pawbby/",
       "anchor": "PAWBBY",
@@ -2182,10 +2246,28 @@
       "score": 1507
     },
     {
+      "sourceRoute": "/produkt/petsafe-mikrochip-katzenklappe/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1407
+    },
+    {
+      "sourceRoute": "/produkt/petsafe-petporte-smart-flap/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1207
+    },
+    {
       "sourceRoute": "/produkt/petsafe-smart-feed-2/",
       "targetRoute": "/hersteller/petsafe/",
       "anchor": "PetSafe",
       "score": 1507
+    },
+    {
+      "sourceRoute": "/produkt/petwalk-medium-tiertuer/",
+      "targetRoute": "/hersteller/petwalk/",
+      "anchor": "petWALK",
+      "score": 1407
     },
     {
       "sourceRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
@@ -2210,6 +2292,30 @@
       "targetRoute": "/hersteller/surefeed/",
       "anchor": "SureFeed",
       "score": 1408
+    },
+    {
+      "sourceRoute": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
+      "targetRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "anchor": "SureFlap Mikrochip Katzenklappe",
+      "score": 3531
+    },
+    {
+      "sourceRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "mehrere Katzen",
+      "score": 2514
+    },
+    {
+      "sourceRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "anchor": "Geräuschentwicklung",
+      "score": 1419
+    },
+    {
+      "sourceRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1307
     },
     {
       "sourceRoute": "/produkt/tractive-cat-6-mini/",
@@ -2938,6 +3044,12 @@
       "score": 4617
     },
     {
+      "sourceRoute": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1309
+    },
+    {
       "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
       "targetRoute": "/produkt/paj-pet-finder-4g-mini/",
       "anchor": "PAJ Pet Finder 4G Mini",
@@ -3040,6 +3152,12 @@
       "score": 6415
     },
     {
+      "sourceRoute": "/hersteller/surefeed/",
+      "targetRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "anchor": "SureFlap Mikrochip Katzenklappe",
+      "score": 3231
+    },
+    {
       "sourceRoute": "/hersteller/wopet/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomaten",
@@ -3076,18 +3194,20 @@
     "/hersteller/honeyguardian/": 7,
     "/hersteller/imipaw/": 3,
     "/hersteller/oneisall/": 9,
+    "/hersteller/onlycat/": 1,
     "/hersteller/paj-gps/": 3,
     "/hersteller/pawbby/": 2,
     "/hersteller/pawsync/": 1,
     "/hersteller/petkit/": 28,
     "/hersteller/petlibro/": 54,
-    "/hersteller/petsafe/": 10,
+    "/hersteller/petsafe/": 14,
+    "/hersteller/petwalk/": 2,
     "/hersteller/surefeed/": 12,
     "/hersteller/tractive/": 11,
     "/hersteller/weenect/": 14,
     "/hersteller/wopet/": 6,
     "/hersteller/xiaomi/": 16,
-    "/hersteller/zeromouse/": 1,
+    "/hersteller/zeromouse/": 4,
     "/hund-entlaufen-gps-sinnvoll/": 3,
     "/hund-frisst-nicht/": 5,
     "/hund-frisst-zu-schnell/": 1,
@@ -3097,10 +3217,15 @@
     "/hund-trinkt-viel/": 2,
     "/hund-trinkt-zu-wenig/": 6,
     "/kalk-katzentrinkbrunnen-entfernen/": 5,
+    "/katze-an-katzenklappe-gewoehnen/": 1,
     "/katze-an-trinkbrunnen-gewoehnen/": 1,
     "/katze-entlaufen-gps-sinnvoll/": 3,
     "/katze-frisst-nicht/": 3,
     "/katze-trinkt-viel/": 2,
+    "/katzenklappe-einbauen/": 6,
+    "/katzenklappe-fuer-mehrere-katzen/": 2,
+    "/katzenklappe-zugluft-und-waermedaemmung/": 3,
+    "/katzenklappen/": 8,
     "/katzentrinkbrunnen-dauerbetrieb-urlaub/": 0,
     "/katzentrinkbrunnen-laut-pumpe/": 4,
     "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 9,
@@ -3128,6 +3253,7 @@
     "/produkt/oneisall-3-5l-cordless-fountain/": 0,
     "/produkt/oneisall-5l-automatic-cat-feeder/": 0,
     "/produkt/oneisall-7l-dog-water-fountain/": 2,
+    "/produkt/onlycat-mikrochip-katzenklappe/": 1,
     "/produkt/paj-pet-finder-4g-mini/": 7,
     "/produkt/pawbby-smart-pet-feeder/": 0,
     "/produkt/pawsync-smart-pet-feeder/": 1,
@@ -3160,10 +3286,15 @@
     "/produkt/petlibro-stainless-steel-fountain/": 0,
     "/produkt/petsafe-freshfeed-refrigerated-feeder/": 0,
     "/produkt/petsafe-healthy-pet-simply-feed/": 1,
+    "/produkt/petsafe-mikrochip-katzenklappe/": 1,
+    "/produkt/petsafe-petporte-smart-flap/": 2,
     "/produkt/petsafe-smart-feed-2/": 1,
+    "/produkt/petwalk-medium-tiertuer/": 2,
     "/produkt/surefeed-microchip-pet-feeder-connect/": 4,
     "/produkt/surefeed-microchip-pet-feeder/": 7,
+    "/produkt/sureflap-dualscan-mikrochip-katzenklappe/": 1,
     "/produkt/sureflap-mikrochip-katzenklappe-connect/": 1,
+    "/produkt/sureflap-mikrochip-katzenklappe/": 2,
     "/produkt/tractive-cat-6-mini/": 5,
     "/produkt/tractive-dog-6-xl/": 4,
     "/produkt/tractive-dog-6/": 4,
@@ -3175,7 +3306,7 @@
     "/produkt/wopet-pioneer-f01-plus/": 0,
     "/produkt/xiaomi-smart-pet-food-feeder-2/": 15,
     "/produkt/xiaomi-smart-pet-fountain-2/": 0,
-    "/produkt/zeromouse-2-0/": 0,
+    "/produkt/zeromouse-2-0/": 1,
     "/pumpe-katzentrinkbrunnen-reinigen/": 3,
     "/reichweite-von-gps-trackern/": 4,
     "/seniorenhunde-richtig-versorgen/": 0,
@@ -3185,7 +3316,7 @@
     "/so-bewerten-wir/": 15,
     "/trinkbrunnen-fuer-katzen-sinnvoll/": 4,
     "/trinkbrunnen-fuer-kitten-sicher/": 0,
-    "/trinkbrunnen-fuer-mehrere-katzen/": 21,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 23,
     "/trinkbrunnen-hund/": 3,
     "/trinkbrunnen-seniorenkatzen/": 2,
     "/trinkbrunnen/": 41,
@@ -3210,6 +3341,7 @@
     "/vergleiche/beste-futterautomaten-unter-100-euro/": 3,
     "/vergleiche/beste-gps-tracker-fuer-hunde/": 10,
     "/vergleiche/beste-gps-tracker-fuer-katzen/": 8,
+    "/vergleiche/beste-mikrochip-katzenklappen/": 9,
     "/vergleiche/beste-trinkbrunnen-fuer-hunde/": 3,
     "/vergleiche/beste-trinkbrunnen-fuer-katzen/": 10,
     "/vergleiche/futterautomat-fuer-grosse-hunde/": 5,
@@ -3217,6 +3349,7 @@
     "/vergleiche/futterautomat-mit-app/": 15,
     "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/": 3,
     "/vergleiche/gps-tracker-ohne-abo/": 6,
+    "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/": 5,
     "/vergleiche/kleine-gps-tracker-fuer-katzen/": 3,
     "/warum-brauchen-gps-tracker-ein-abo/": 3,
     "/warum-hunde-feste-fuetterungszeiten-brauchen/": 2,
@@ -3232,7 +3365,7 @@
     "/wie-gross-sollte-ein-futterautomat-sein/": 14,
     "/wie-kann-technik-gegen-langeweile-helfen/": 0,
     "/wie-lange-bleibt-trockenfutter-frisch/": 4,
-    "/wie-laut-sind-automatische-futterautomaten/": 1,
+    "/wie-laut-sind-automatische-futterautomaten/": 3,
     "/wie-viel-wasser-braucht-ein-hund/": 4,
     "/wie-viel-wasser-braucht-eine-katze/": 3,
     "/wie-viele-mahlzeiten-hund/": 11,
