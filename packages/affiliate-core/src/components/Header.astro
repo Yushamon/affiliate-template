@@ -31,8 +31,8 @@ const isCurrent = (href: string) => {
     : currentPath === normalizedHref || currentPath.startsWith(normalizedHref);
 };
 
-const mobileGroupOrder = ["Orientierung", "Produktwelten", "Mehr entdecken"] as const;
-const mobileGroups = mobileGroupOrder
+const groupOrder = ["Orientierung", "Produktwelten", "Mehr entdecken"] as const;
+const groups = groupOrder
   .map((label) => ({
     label,
     links: links.filter((link) => link.mobileGroup === label)
@@ -42,12 +42,12 @@ const mobileGroups = mobileGroupOrder
 const orientationLinks = links.filter((link) => link.mobileGroup === "Orientierung");
 const productLinks = links.filter((link) => link.mobileGroup === "Produktwelten");
 const discoveryLinks = links.filter((link) => link.mobileGroup === "Mehr entdecken");
-const orientationLead = orientationLinks.slice(0, 1);
-const orientationTail = orientationLinks.slice(1);
+const comparisonLink = orientationLinks.find((link) => link.label === "Vergleiche");
+const adviceLink = orientationLinks.find((link) => link.label === "Kaufberatung");
 const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href));
 ---
 
-<header class="site-header-v2" data-site-header data-header-version="32.2.0">
+<header class="site-header-v2" data-site-header data-header-version="32.2.1">
   <div class="header-container-v2">
     <a href="/" class="brand-lockup" aria-label={`${projectName} – Startseite`}>
       <span class="brand-mark" aria-hidden="true">
@@ -58,7 +58,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     </a>
 
     <button
-      class="pt-button nav-toggle-button"
+      class="nav-toggle-button"
       type="button"
       aria-label="Navigation öffnen"
       aria-expanded="false"
@@ -80,15 +80,15 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
       data-main-navigation
     >
       <div class="main-nav-v2__desktop">
-        {orientationLead.map((link) => (
+        {comparisonLink && (
           <a
-            href={link.href}
-            class:list={["main-nav-v2__desktop-link", isCurrent(link.href) && "is-current"]}
-            aria-current={isCurrent(link.href) ? "page" : undefined}
+            href={comparisonLink.href}
+            class:list={["main-nav-v2__desktop-link", isCurrent(comparisonLink.href) && "is-current"]}
+            aria-current={isCurrent(comparisonLink.href) ? "page" : undefined}
           >
-            {link.label}
+            {comparisonLink.label}
           </a>
-        ))}
+        )}
 
         {productLinks.length > 0 && (
           <details class="main-nav-v2__desktop-menu" data-desktop-menu>
@@ -106,48 +106,35 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
             </summary>
 
             <div class="main-nav-v2__desktop-panel">
-              <div class="main-nav-v2__desktop-panel-head">
-                <span>Produktwelten</span>
-                <p>Direkt zur passenden Gerätekategorie.</p>
-              </div>
-
-              <div class="main-nav-v2__desktop-grid">
-                {productLinks.map((link) => (
-                  <a
-                    href={link.href}
-                    class:list={[
-                      "main-nav-v2__desktop-card",
-                      isCurrent(link.href) && "is-current"
-                    ]}
-                    aria-current={isCurrent(link.href) ? "page" : undefined}
-                  >
-                    <span class="main-nav-v2__code" aria-hidden="true">
-                      {link.navCode ?? "→"}
-                    </span>
-                    <span>
-                      <strong>{link.label}</strong>
-                      {link.description && <small>{link.description}</small>}
-                    </span>
-                  </a>
-                ))}
-              </div>
+              {productLinks.map((link) => (
+                <a
+                  href={link.href}
+                  class:list={["main-nav-v2__desktop-item", isCurrent(link.href) && "is-current"]}
+                  aria-current={isCurrent(link.href) ? "page" : undefined}
+                >
+                  <span>{link.label}</span>
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m7.5 4.5 5 5.5-5 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                  </svg>
+                </a>
+              ))}
             </div>
           </details>
         )}
 
-        {orientationTail.map((link) => (
+        {adviceLink && (
           <a
-            href={link.href}
+            href={adviceLink.href}
             class:list={[
               "main-nav-v2__desktop-link",
-              link.mobileEmphasis && "main-nav-v2__desktop-link--emphasis",
-              isCurrent(link.href) && "is-current"
+              "main-nav-v2__desktop-link--emphasis",
+              isCurrent(adviceLink.href) && "is-current"
             ]}
-            aria-current={isCurrent(link.href) ? "page" : undefined}
+            aria-current={isCurrent(adviceLink.href) ? "page" : undefined}
           >
-            {link.label}
+            {adviceLink.label}
           </a>
-        ))}
+        )}
 
         {discoveryLinks.map((link) => (
           <a
@@ -160,51 +147,31 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
         ))}
       </div>
 
-      <div class="main-nav-v2__mobile-shell">
-        <header class="main-nav-v2__mobile-head">
-          <span>PfotenTechnik Navigation</span>
-          <p>Produktwelt wählen oder direkt zur Entscheidungshilfe springen.</p>
-        </header>
+      <div class="main-nav-v2__mobile">
+        {groups.map((group) => (
+          <section class="main-nav-v2__group">
+            <span class="main-nav-v2__group-title">{group.label}</span>
 
-        <div class="main-nav-v2__mobile">
-          {mobileGroups.map((group) => (
-            <section
-              class:list={[
-                "main-nav-v2__group",
-                group.label === "Produktwelten" && "main-nav-v2__group--products"
-              ]}
-            >
-              <span class="main-nav-v2__group-title">{group.label}</span>
-
-              <div class="main-nav-v2__group-links">
-                {group.links.map((link) => (
-                  <a
-                    href={link.href}
-                    class:list={[
-                      "main-nav-v2__mobile-link",
-                      link.mobileEmphasis && "main-nav-v2__mobile-link--emphasis",
-                      isCurrent(link.href) && "is-current"
-                    ]}
-                    aria-current={isCurrent(link.href) ? "page" : undefined}
-                  >
-                    <span class="main-nav-v2__code" aria-hidden="true">
-                      {link.navCode ?? "→"}
-                    </span>
-
-                    <span class="main-nav-v2__mobile-copy">
-                      <strong>{link.label}</strong>
-                      {link.description && <small>{link.description}</small>}
-                    </span>
-
-                    <svg class="main-nav-v2__chevron" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="m7.5 4.5 5 5.5-5 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
+            <div class="main-nav-v2__group-links">
+              {group.links.map((link) => (
+                <a
+                  href={link.href}
+                  class:list={[
+                    "main-nav-v2__mobile-link",
+                    link.mobileEmphasis && "main-nav-v2__mobile-link--emphasis",
+                    isCurrent(link.href) && "is-current"
+                  ]}
+                  aria-current={isCurrent(link.href) ? "page" : undefined}
+                >
+                  <span>{link.label}</span>
+                  <svg class="main-nav-v2__chevron" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m7.5 4.5 5 5.5-5 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </nav>
   </div>
@@ -217,7 +184,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
 
   const setupHeaderNavigation = () => {
     document.querySelectorAll<NavigationHeader>("[data-site-header]").forEach((header) => {
-      if (header.dataset.navigationReady === "true") return;
+      header.navigationAbortController?.abort();
 
       const button = header.querySelector<HTMLButtonElement>("[data-nav-toggle]");
       const navigation = header.querySelector<HTMLElement>("[data-main-navigation]");
@@ -236,24 +203,19 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
 
       const setOpen = (open: boolean, restoreFocus = false) => {
         const mobileOpen = open && !desktop.matches;
+
         button.setAttribute("aria-expanded", String(mobileOpen));
-        button.setAttribute("aria-label", mobileOpen ? "Navigation schließen" : "Navigation öffnen");
+        button.setAttribute(
+          "aria-label",
+          mobileOpen ? "Navigation schließen" : "Navigation öffnen"
+        );
         navigation.toggleAttribute("data-open", mobileOpen);
         navigation.setAttribute("aria-hidden", String(!mobileOpen && !desktop.matches));
         header.toggleAttribute("data-navigation-open", mobileOpen);
-        document.documentElement.classList.toggle("pt-navigation-open", mobileOpen);
 
-        if (mobileOpen) {
-          requestAnimationFrame(() => {
-            navigation.querySelector<HTMLAnchorElement>(".main-nav-v2__mobile-link")?.focus();
-          });
-        } else if (restoreFocus) {
-          button.focus();
-        }
+        if (!mobileOpen && restoreFocus) button.focus();
       };
 
-      header.dataset.navigationReady = "true";
-      navigation.setAttribute("aria-hidden", String(!desktop.matches));
       setOpen(false);
 
       button.addEventListener("click", (event) => {
@@ -262,8 +224,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
       }, { signal });
 
       navigation.addEventListener("click", (event) => {
-        const target = event.target as HTMLElement;
-        if (target === navigation || target.closest("a")) {
+        if ((event.target as HTMLElement).closest("a")) {
           setOpen(false);
           closeDesktopMenus();
         }
@@ -276,8 +237,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
       });
 
       document.addEventListener("click", (event) => {
-        const target = event.target as Node;
-        if (!header.contains(target)) {
+        if (!header.contains(event.target as Node)) {
           setOpen(false);
           closeDesktopMenus();
         }
@@ -292,22 +252,35 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
         }
       }, { signal });
 
-      desktop.addEventListener("change", (event) => {
-        navigation.setAttribute("aria-hidden", String(!event.matches));
+      desktop.addEventListener("change", () => {
         setOpen(false);
         closeDesktopMenus();
       }, { signal });
     });
   };
 
-  setupHeaderNavigation();
-  document.addEventListener("astro:page-load", setupHeaderNavigation);
-  document.addEventListener("astro:before-swap", () => {
+  const resetHeaderNavigation = () => {
     document.querySelectorAll<NavigationHeader>("[data-site-header]").forEach((header) => {
       header.navigationAbortController?.abort();
+      header.navigationAbortController = undefined;
+
+      const button = header.querySelector<HTMLButtonElement>("[data-nav-toggle]");
+      const navigation = header.querySelector<HTMLElement>("[data-main-navigation]");
+
+      button?.setAttribute("aria-expanded", "false");
+      button?.setAttribute("aria-label", "Navigation öffnen");
+      navigation?.removeAttribute("data-open");
+      header.removeAttribute("data-navigation-open");
+
+      header.querySelectorAll<HTMLDetailsElement>("[data-desktop-menu][open]").forEach((menu) => {
+        menu.open = false;
+      });
     });
-    document.documentElement.classList.remove("pt-navigation-open");
-  });
+  };
+
+  setupHeaderNavigation();
+  document.addEventListener("astro:page-load", setupHeaderNavigation);
+  document.addEventListener("astro:before-swap", resetHeaderNavigation);
 </script>
 
 <style is:global>
@@ -316,9 +289,9 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     z-index: 120;
     top: 0;
     border-bottom: 1px solid color-mix(in srgb, var(--pt-color-border) 78%, transparent);
-    background: color-mix(in srgb, var(--pt-color-surface) 92%, transparent);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: color-mix(in srgb, var(--pt-color-surface) 94%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .site-header-v2 .brand-name {
@@ -329,7 +302,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     position: relative;
     display: grid;
     width: min(100%, var(--pt-content));
-    min-height: 4.75rem;
+    min-height: 4.25rem;
     margin-inline: auto;
     padding-inline: clamp(1rem, 3vw, 2rem);
     box-sizing: border-box;
@@ -350,29 +323,25 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 0.25rem;
+    gap: 0.2rem;
   }
 
   .site-header-v2 .main-nav-v2__desktop-link {
     display: inline-flex;
-    min-height: 2.75rem;
-    padding: 0.65rem 0.8rem;
+    min-height: 2.5rem;
+    padding: 0.55rem 0.72rem;
     align-items: center;
     gap: 0.35rem;
     border: 1px solid transparent;
     border-radius: var(--pt-radius-pill);
     color: var(--pt-color-text-muted);
     background: transparent;
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     font-weight: var(--pt-font-weight-bold);
     line-height: 1;
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
-    transition:
-      color var(--pt-transition-fast),
-      border-color var(--pt-transition-fast),
-      background-color var(--pt-transition-fast);
   }
 
   .site-header-v2 .main-nav-v2__desktop-link:hover,
@@ -384,7 +353,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
   }
 
   .site-header-v2 .main-nav-v2__desktop-link--emphasis {
-    border-color: color-mix(in srgb, var(--pt-color-brand-600) 28%, var(--pt-color-border));
+    border-color: color-mix(in srgb, var(--pt-color-brand-600) 30%, var(--pt-color-border));
     color: var(--pt-color-on-brand);
     background: var(--pt-color-brand-600);
   }
@@ -410,8 +379,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
   }
 
   .site-header-v2 .main-nav-v2__desktop-summary svg {
-    width: 0.9rem;
-    transition: transform var(--pt-transition-fast);
+    width: 0.85rem;
   }
 
   .site-header-v2 .main-nav-v2__desktop-menu[open] .main-nav-v2__desktop-summary svg {
@@ -421,95 +389,48 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
   .site-header-v2 .main-nav-v2__desktop-panel {
     position: absolute;
     z-index: 130;
-    top: calc(100% + 0.75rem);
+    top: calc(100% + 0.55rem);
     left: 50%;
-    width: min(46rem, calc(100vw - 2rem));
-    padding: 1rem;
+    display: grid;
+    width: min(25rem, calc(100vw - 2rem));
+    padding: 0.55rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.2rem;
     border: 1px solid var(--pt-color-border);
-    border-radius: var(--pt-radius-xl);
+    border-radius: var(--pt-radius-lg);
     color: var(--pt-color-text);
     background: var(--pt-color-surface);
-    box-shadow: var(--pt-shadow-lg);
+    box-shadow: var(--pt-shadow-md);
     transform: translateX(-50%);
   }
 
-  .site-header-v2 .main-nav-v2__desktop-panel-head {
-    display: flex;
-    padding: 0.25rem 0.35rem 0.85rem;
-    align-items: end;
-    justify-content: space-between;
-    gap: 1rem;
-    border-bottom: 1px solid var(--pt-color-border);
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-panel-head span {
-    font-weight: var(--pt-font-weight-black);
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-panel-head p {
-    margin: 0;
-    color: var(--pt-color-text-muted);
-    font-size: 0.85rem;
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-grid {
-    display: grid;
-    padding-top: 0.8rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem;
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-card {
+  .site-header-v2 .main-nav-v2__desktop-item {
     display: grid;
     min-width: 0;
-    padding: 0.85rem;
-    grid-template-columns: 2.35rem minmax(0, 1fr);
-    align-items: start;
-    gap: 0.75rem;
-    border: 1px solid transparent;
-    border-radius: var(--pt-radius-lg);
+    min-height: 2.75rem;
+    padding: 0.6rem 0.7rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.65rem;
     color: var(--pt-color-text);
-    background: var(--pt-color-surface-soft);
+    font-size: 0.82rem;
+    font-weight: var(--pt-font-weight-bold);
     text-decoration: none;
-    transition:
-      border-color var(--pt-transition-fast),
-      transform var(--pt-transition-fast);
   }
 
-  .site-header-v2 .main-nav-v2__desktop-card:hover,
-  .site-header-v2 .main-nav-v2__desktop-card:focus-visible,
-  .site-header-v2 .main-nav-v2__desktop-card.is-current {
-    border-color: var(--pt-color-brand-600);
-    transform: translateY(-1px);
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-card strong,
-  .site-header-v2 .main-nav-v2__desktop-card small {
-    display: block;
-  }
-
-  .site-header-v2 .main-nav-v2__desktop-card small {
-    margin-top: 0.25rem;
-    color: var(--pt-color-text-muted);
-    font-size: 0.76rem;
-    line-height: 1.35;
-  }
-
-  .site-header-v2 .main-nav-v2__code {
-    display: grid;
-    min-width: 2.35rem;
-    min-height: 2.35rem;
-    place-items: center;
-    border: 1px solid color-mix(in srgb, var(--pt-color-brand-600) 22%, var(--pt-color-border));
-    border-radius: 0.75rem;
+  .site-header-v2 .main-nav-v2__desktop-item:hover,
+  .site-header-v2 .main-nav-v2__desktop-item:focus-visible,
+  .site-header-v2 .main-nav-v2__desktop-item.is-current {
     color: var(--pt-color-brand-700);
-    background: color-mix(in srgb, var(--pt-color-brand-050) 72%, var(--pt-color-surface));
-    font-size: 0.7rem;
-    font-weight: var(--pt-font-weight-black);
-    letter-spacing: 0.04em;
+    background: var(--pt-color-surface-soft);
   }
 
-  .site-header-v2 .main-nav-v2__mobile-shell,
+  .site-header-v2 .main-nav-v2__desktop-item svg {
+    width: 0.85rem;
+  }
+
+  .site-header-v2 .main-nav-v2__mobile,
   .site-header-v2 .nav-toggle-button {
     display: none;
   }
@@ -524,13 +445,9 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
   }
 
   @media (max-width: 63.99rem) {
-    html.pt-navigation-open {
-      overflow: hidden;
-    }
-
     .site-header-v2 .header-container-v2 {
       width: 100%;
-      min-height: 4.75rem;
+      min-height: 4.25rem;
       padding-inline: 1rem;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: var(--pt-space-3);
@@ -543,30 +460,20 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     .site-header-v2 .nav-toggle-button {
       position: relative;
       display: grid;
-      inline-size: 3rem;
-      block-size: 3rem;
-      min-inline-size: 3rem;
-      min-block-size: 3rem;
+      inline-size: 2.9rem;
+      block-size: 2.9rem;
+      min-inline-size: 2.9rem;
+      min-block-size: 2.9rem;
       place-items: center;
       padding: 0;
       border: 1px solid var(--pt-color-border);
-      border-radius: 0.95rem;
+      border-radius: 0.85rem;
       color: var(--pt-color-text);
       background: var(--pt-color-surface);
       box-shadow: var(--pt-shadow-xs);
       cursor: pointer;
-      overflow: visible;
       touch-action: manipulation;
       appearance: none;
-      transition:
-        border-color var(--pt-transition-fast),
-        background-color var(--pt-transition-fast),
-        transform var(--pt-transition-fast);
-    }
-
-    .site-header-v2 .nav-toggle-button:hover {
-      border-color: var(--pt-color-brand-600);
-      transform: translateY(-1px);
     }
 
     .site-header-v2 .nav-toggle-button::before,
@@ -583,8 +490,8 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     .site-header-v2 .nav-toggle__bars {
       position: relative;
       display: grid;
-      width: 1.35rem;
-      gap: 0.28rem;
+      width: 1.25rem;
+      gap: 0.27rem;
     }
 
     .site-header-v2 .nav-toggle__bars > span {
@@ -600,7 +507,7 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:first-child {
-      transform: translateY(0.38rem) rotate(45deg);
+      transform: translateY(0.36rem) rotate(45deg);
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:nth-child(2) {
@@ -608,30 +515,33 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
     }
 
     .site-header-v2 .nav-toggle-button[aria-expanded="true"] .nav-toggle__bars > span:last-child {
-      transform: translateY(-0.38rem) rotate(-45deg);
+      transform: translateY(-0.36rem) rotate(-45deg);
     }
 
     .site-header-v2 .main-nav-v2 {
-      position: fixed;
-      z-index: 110;
-      inset: 0;
-      max-height: none;
-      overflow: hidden;
+      position: absolute;
+      z-index: 130;
+      top: calc(100% + 0.45rem);
+      right: 1rem;
+      left: 1rem;
+      max-height: calc(100dvh - 5.5rem);
+      overflow-y: auto;
       margin: 0;
-      padding: 5.4rem 1rem 1rem;
-      background: color-mix(in srgb, var(--pt-color-brand-surface, #102019) 72%, transparent);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      padding: 0.65rem;
+      border: 1px solid var(--pt-color-border);
+      border-radius: var(--pt-radius-lg);
+      color: var(--pt-color-text);
+      background: var(--pt-color-surface);
+      box-shadow: var(--pt-shadow-lg);
       visibility: hidden;
       opacity: 0;
       pointer-events: none;
-      transform: translateY(-0.35rem);
-      transform-origin: top center;
+      transform: translateY(-0.3rem);
       overscroll-behavior: contain;
       transition:
-        opacity 150ms ease-out,
-        transform 150ms ease-out,
-        visibility 0s linear 150ms;
+        opacity 120ms ease-out,
+        transform 120ms ease-out,
+        visibility 0s linear 120ms;
     }
 
     .site-header-v2 .main-nav-v2[data-open] {
@@ -646,143 +556,77 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
       display: none;
     }
 
-    .site-header-v2 .main-nav-v2__mobile-shell {
-      display: block;
-      width: min(100%, 44rem);
-      max-height: calc(100dvh - 6.4rem);
-      margin-inline: auto;
-      padding: 1rem;
-      overflow-y: auto;
-      border: 1px solid var(--pt-color-border);
-      border-radius: 1.45rem;
-      color: var(--pt-color-text);
-      background: var(--pt-color-surface);
-      box-shadow: var(--pt-shadow-lg);
-      overscroll-behavior: contain;
+    .site-header-v2 .main-nav-v2__mobile {
+      display: grid;
+      gap: 0.65rem;
     }
 
-    .site-header-v2 .main-nav-v2__mobile-head {
-      padding: 0.25rem 0.25rem 1rem;
-      border-bottom: 1px solid var(--pt-color-border);
+    .site-header-v2 .main-nav-v2__group {
+      display: grid;
+      gap: 0.2rem;
     }
 
-    .site-header-v2 .main-nav-v2__mobile-head > span {
-      color: var(--pt-color-brand-700);
-      font-size: 0.72rem;
+    .site-header-v2 .main-nav-v2__group + .main-nav-v2__group {
+      padding-top: 0.55rem;
+      border-top: 1px solid var(--pt-color-border);
+    }
+
+    .site-header-v2 .main-nav-v2__group-title {
+      padding: 0.2rem 0.55rem;
+      color: var(--pt-color-text-muted);
+      font-size: 0.66rem;
       font-weight: var(--pt-font-weight-black);
       letter-spacing: 0.09em;
       text-transform: uppercase;
     }
 
-    .site-header-v2 .main-nav-v2__mobile-head p {
-      max-width: 38rem;
-      margin: 0.35rem 0 0;
-      color: var(--pt-color-text-muted);
-      font-size: 0.9rem;
-      line-height: 1.45;
-    }
-
-    .site-header-v2 .main-nav-v2__mobile {
-      display: grid;
-      padding-top: 0.85rem;
-      gap: 1rem;
-    }
-
-    .site-header-v2 .main-nav-v2__group {
-      display: grid;
-      gap: 0.45rem;
-    }
-
-    .site-header-v2 .main-nav-v2__group-title {
-      padding-inline: 0.25rem;
-      color: var(--pt-color-text-muted);
-      font-size: 0.7rem;
-      font-weight: var(--pt-font-weight-black);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
     .site-header-v2 .main-nav-v2__group-links {
       display: grid;
-      gap: 0.45rem;
+      gap: 0.05rem;
     }
 
     .site-header-v2 .main-nav-v2__mobile-link {
       display: grid;
       min-width: 0;
-      min-height: 4.2rem;
-      padding: 0.65rem 0.75rem;
-      grid-template-columns: 2.5rem minmax(0, 1fr) 1.25rem;
+      min-height: 2.8rem;
+      padding: 0.58rem 0.65rem;
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
-      gap: 0.75rem;
-      border: 1px solid var(--pt-color-border);
-      border-radius: 1rem;
+      gap: 0.7rem;
+      border: 1px solid transparent;
+      border-radius: 0.7rem;
       color: var(--pt-color-text);
-      background: var(--pt-color-surface-soft);
+      background: transparent;
+      font-size: 0.9rem;
       font-weight: var(--pt-font-weight-bold);
+      line-height: 1.25;
       text-decoration: none;
-      transition:
-        border-color var(--pt-transition-fast),
-        background-color var(--pt-transition-fast),
-        transform var(--pt-transition-fast);
     }
 
     .site-header-v2 .main-nav-v2__mobile-link:hover,
     .site-header-v2 .main-nav-v2__mobile-link:focus-visible,
     .site-header-v2 .main-nav-v2__mobile-link.is-current {
-      border-color: var(--pt-color-brand-600);
-      background: color-mix(in srgb, var(--pt-color-brand-050) 52%, var(--pt-color-surface));
-      transform: translateY(-1px);
+      border-color: var(--pt-color-border);
+      color: var(--pt-color-brand-700);
+      background: var(--pt-color-surface-soft);
     }
 
     .site-header-v2 .main-nav-v2__mobile-link--emphasis {
-      border-color: var(--pt-color-brand-600);
       color: var(--pt-color-on-brand);
       background: var(--pt-color-brand-600);
     }
 
-    .site-header-v2 .main-nav-v2__mobile-link--emphasis .main-nav-v2__code {
-      border-color: color-mix(in srgb, var(--pt-color-on-brand) 35%, transparent);
+    .site-header-v2 .main-nav-v2__mobile-link--emphasis:hover,
+    .site-header-v2 .main-nav-v2__mobile-link--emphasis:focus-visible,
+    .site-header-v2 .main-nav-v2__mobile-link--emphasis.is-current {
+      border-color: var(--pt-color-brand-700);
       color: var(--pt-color-on-brand);
-      background: color-mix(in srgb, var(--pt-color-on-brand) 12%, transparent);
-    }
-
-    .site-header-v2 .main-nav-v2__mobile-link--emphasis small,
-    .site-header-v2 .main-nav-v2__mobile-link--emphasis .main-nav-v2__chevron {
-      color: color-mix(in srgb, var(--pt-color-on-brand) 78%, transparent);
-    }
-
-    .site-header-v2 .main-nav-v2__mobile-copy {
-      min-width: 0;
-    }
-
-    .site-header-v2 .main-nav-v2__mobile-copy strong,
-    .site-header-v2 .main-nav-v2__mobile-copy small {
-      display: block;
-    }
-
-    .site-header-v2 .main-nav-v2__mobile-copy strong {
-      font-size: 0.98rem;
-      line-height: 1.2;
-    }
-
-    .site-header-v2 .main-nav-v2__mobile-copy small {
-      margin-top: 0.22rem;
-      color: var(--pt-color-text-muted);
-      font-size: 0.76rem;
-      font-weight: var(--pt-font-weight-medium);
-      line-height: 1.35;
+      background: var(--pt-color-brand-700);
     }
 
     .site-header-v2 .main-nav-v2__chevron {
-      width: 1.1rem;
-      color: var(--pt-color-text-muted);
-    }
-  }
-
-  @media (min-width: 38rem) and (max-width: 63.99rem) {
-    .site-header-v2 .main-nav-v2__group--products .main-nav-v2__group-links {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 0.95rem;
+      color: currentColor;
     }
   }
 
@@ -806,18 +650,14 @@ const productSectionIsCurrent = productLinks.some((link) => isCurrent(link.href)
       display: flex;
     }
 
-    .site-header-v2 .main-nav-v2__mobile-shell {
+    .site-header-v2 .main-nav-v2__mobile {
       display: none;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .site-header-v2 .main-nav-v2,
-    .site-header-v2 .nav-toggle-button,
-    .site-header-v2 .nav-toggle__bars > span,
-    .site-header-v2 .main-nav-v2__mobile-link,
-    .site-header-v2 .main-nav-v2__desktop-card,
-    .site-header-v2 .main-nav-v2__desktop-summary svg {
+    .site-header-v2 .nav-toggle__bars > span {
       transition-duration: 0.01ms;
     }
   }
