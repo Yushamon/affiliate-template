@@ -292,11 +292,11 @@
   margin: 0;
   padding:
     10px
-    max(calc(50% - 44px), env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-right))
     max(10px, env(safe-area-inset-bottom))
-    max(calc(50% - 44px), env(safe-area-inset-left));
+    max(12px, env(safe-area-inset-left));
   overflow-x: auto;
-  scroll-padding-inline: 50%;
+  scroll-padding-inline: 12px;
   scrollbar-width: thin;
 }
 

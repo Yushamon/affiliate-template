@@ -224,7 +224,7 @@ const data = optimized.map((item) => ({
             thumbs[activeIndex]?.scrollIntoView({
               behavior: "smooth",
               block: "nearest",
-              inline: "center",
+              inline: "nearest",
             });
           });
         }
@@ -244,7 +244,7 @@ const data = optimized.map((item) => ({
             thumbs[requestedIndex]?.scrollIntoView({
               behavior: "auto",
               block: "nearest",
-              inline: "center",
+              inline: "nearest",
             });
             closeButton.focus();
           });
