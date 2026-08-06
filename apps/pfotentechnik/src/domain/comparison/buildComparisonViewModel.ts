@@ -11,6 +11,7 @@ import type {
 } from "@affiliate-core/comparison/model";
 
 import { buildPriceIndex } from "../price/engine";
+import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 
@@ -692,8 +693,7 @@ export function buildComparisonViewModel({
           item.recommendation ??
           product.data.recommendation,
         rating:
-          product.data.score ??
-          Math.round(product.data.rating * 20),
+          calculateProductScore(product.data).score ?? 0,
         badge:
             item.slug === resolvedWinnerSlug
               ? "Top-Empfehlung"

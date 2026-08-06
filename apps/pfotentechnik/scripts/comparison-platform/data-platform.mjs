@@ -7,6 +7,64 @@ export const normalizeKey = (value) =>
     .replaceAll("ß", "ss")
     .replace(/[^a-z0-9]/g, "");
 
+// Spiegel der zentralen Berechnung in src/domain/productScore.ts.
+// Der Regressionstest vergleicht beide Implementierungen, damit Skript-Audits
+// und gerenderte Vergleichsseiten dieselben Werte verwenden.
+const clampScoreValue = (value, min, max) =>
+  Math.min(max, Math.max(min, value));
+
+const positiveScoreNumber = (value) => {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
+};
+
+const productCriterionValues = (ratings) =>
+  Object.values(ratings ?? {})
+    .map(Number)
+    .filter((value) => Number.isFinite(value) && value >= 0 && value <= 5);
+
+export const calculateProductScore = (input = {}) => {
+  const explicitScore = positiveScoreNumber(input.score);
+  if (explicitScore !== null) {
+    const score = Math.round(clampScoreValue(explicitScore <= 5 ? explicitScore * 20 : explicitScore, 0, 100));
+    return {
+      score,
+      rating: Math.round((score / 20 + Number.EPSILON) * 10) / 10,
+      criteriaCount: productCriterionValues(input.ratings).length,
+      source: "score"
+    };
+  }
+
+  const criteria = productCriterionValues(input.ratings);
+  if (criteria.length > 0) {
+    const average = criteria.reduce((sum, value) => sum + value, 0) / criteria.length;
+    return {
+      score: Math.round((average + Number.EPSILON) * 20),
+      rating: Math.round((average + Number.EPSILON) * 10) / 10,
+      criteriaCount: criteria.length,
+      source: "criteria"
+    };
+  }
+
+  const explicitRating = positiveScoreNumber(input.rating);
+  if (explicitRating !== null) {
+    const rating = clampScoreValue(explicitRating, 0, 5);
+    return {
+      score: Math.round(rating * 20),
+      rating: Math.round((rating + Number.EPSILON) * 10) / 10,
+      criteriaCount: 0,
+      source: "rating"
+    };
+  }
+
+  return {
+    score: null,
+    rating: null,
+    criteriaCount: 0,
+    source: "unrated"
+  };
+};
+
 const aliases = {
   profil: ["profil", "einordnung", "einsatzprofil"],
   futterart: ["futterart", "foodtype", "food"],
@@ -185,8 +243,8 @@ const knownValue = (product, item, normalized) => {
       return controls.length ? controls.join(", ") : undefined;
     }
     case "preisklasse": return filters.priceTier ?? product?.priceCategory;
-    case "score": return product?.score ?? (typeof product?.rating === "number" ? Math.round(product.rating * 20) : undefined);
-    case "bewertung": return product?.rating;
+    case "score": return calculateProductScore(product).score ?? undefined;
+    case "bewertung": return calculateProductScore(product).rating ?? undefined;
     case "ortung": return gps ? "GPS-Ortung" : undefined;
     case "uebertragung": return gps?.transmission;
     case "abo": return typeof gps?.subscriptionRequired === "boolean" ? (gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich") : undefined;
@@ -204,6 +262,15 @@ const knownValue = (product, item, normalized) => {
 export function resolveComparisonValue({ product, item = {}, criterion }) {
   const normalized = normalizeKey(criterion.key);
   const candidates = comparisonAliasCandidates(normalized, criterion.label);
+  const isScoreCriterion = candidates.has("score") || candidates.has("editorialscore");
+  const isRatingCriterion = candidates.has("bewertung") || candidates.has("rating");
+
+  if (product && (isScoreCriterion || isRatingCriterion)) {
+    const calculated = calculateProductScore(product);
+    const canonicalValue = isScoreCriterion ? calculated.score : calculated.rating;
+    const formatted = formatValue(canonicalValue ?? undefined, criterion);
+    if (formatted !== undefined) return formatted;
+  }
 
   for (const record of [item.overrides, item.values]) {
     const value = formatValue(findRecordValue(record, candidates), criterion);

@@ -1,5 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 import { deriveProductOperations, recommendationTieBreaker } from "../../lib/product-operations/policy.mjs";
+import { calculateProductScore } from "../productScore.ts";
 
 type ProductEntry = CollectionEntry<"products">;
 
@@ -205,7 +206,7 @@ function scoreProduct(
   audience: string
 ) {
   const data = product.data;
-  const baseScore = Number(data.score ?? Math.round(data.rating * 20));
+  const baseScore = calculateProductScore(data).score ?? 0;
   const evidence = collectEvidence(product);
   const tieBreaker = recommendationTieBreaker(data);
   let score = baseScore;

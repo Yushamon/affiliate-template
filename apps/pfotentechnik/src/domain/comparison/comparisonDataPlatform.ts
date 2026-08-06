@@ -1,4 +1,5 @@
 import type { CollectionEntry } from "astro:content";
+import { calculateProductScore } from "../productScore.ts";
 
 type ProductEntry = CollectionEntry<"products">;
 
@@ -339,8 +340,8 @@ const deriveKnownValue = (
       return controls.length ? controls.join(", ") : undefined;
     }
     case "preisklasse": return filters?.priceTier ?? data.priceCategory;
-    case "score": return data.score ?? Math.round(data.rating * 20);
-    case "bewertung": return data.rating;
+    case "score": return calculateProductScore(data).score ?? undefined;
+    case "bewertung": return calculateProductScore(data).rating ?? undefined;
     case "ortung": return gps ? "GPS-Ortung" : undefined;
     case "uebertragung": return gps?.transmission;
     case "abo": return typeof gps?.subscriptionRequired === "boolean"
@@ -364,6 +365,17 @@ export function resolveComparisonValue({
 }: ResolveInput): string {
   const normalized = normalizeKey(criterion.key);
   const candidates = comparisonAliasCandidates(normalized, criterion.label);
+  const isScoreCriterion = candidates.has("score") || candidates.has("editorialscore");
+  const isRatingCriterion = candidates.has("bewertung") || candidates.has("rating");
+
+  // Bewertungen stammen ausschließlich aus der zentralen Produktberechnung.
+  // Vergleichsspezifische values, overrides oder Quellen dürfen sie nicht abweichend überschreiben.
+  if (product && (isScoreCriterion || isRatingCriterion)) {
+    const calculated = calculateProductScore(product.data);
+    const canonicalValue = isScoreCriterion ? calculated.score : calculated.rating;
+    const formatted = formatValue(canonicalValue ?? undefined, criterion);
+    if (formatted !== undefined) return formatted;
+  }
 
   for (const record of [item.overrides, item.values]) {
     const value = formatValue(findRecordValue(record, candidates), criterion);
