@@ -1,13 +1,13 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-03T18:41:49.070Z
+Erstellt: 2026-08-06T06:29:14.590Z
 
-**Status: BESTANDEN**
+**Status: NICHT BESTANDEN**
 
-- Vergleiche: 24 / 24
-- Quellabdeckung: 87 %
+- Vergleiche: 26 / 24
+- Quellabdeckung: 88.2 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 476
+- alte values-Felder: 549
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
@@ -30,6 +30,7 @@ Erstellt: 2026-08-03T18:41:49.070Z
 | `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
 | `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
+| `beste-mikrochip-katzenklappen` | 7 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |
 | `futterautomat-fuer-grosse-hunde` | 3 | 4 | 2 | OK |
@@ -37,10 +38,11 @@ Erstellt: 2026-08-03T18:41:49.070Z
 | `futterautomat-mit-app` | 5 | 3 | 5 | OK |
 | `gps-tracker-mit-langer-akkulaufzeit` | 7 | 6 | 0 | OK |
 | `gps-tracker-ohne-abo` | 2 | 6 | 0 | OK |
+| `katzenklappen-mit-app-und-beuteerkennung` | 4 | 6 | 0 | OK |
 | `kleine-gps-tracker-fuer-katzen` | 3 | 6 | 1 | OK |
 
 ## Blocker
 
-- Keine.
+- Erwartet: 24 Vergleiche, gefunden: 26.
 
 Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.

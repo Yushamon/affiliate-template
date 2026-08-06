@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generatedAt": "2026-07-31T06:49:28.130Z",
+    "generatedAt": "2026-08-06T06:29:13.346Z",
     "countsByCollection": {
-      "pages": 75,
-      "products": 67,
-      "manufacturers": 19,
-      "comparisons": 24
+      "pages": 80,
+      "products": 74,
+      "manufacturers": 21,
+      "comparisons": 26
     },
     "categoryCounts": {
       "trinkbrunnen": 17,
@@ -15,8 +15,10 @@
       "fuetterung": 2,
       "hundegesundheit": 8,
       "wissen": 2,
+      "ohne Kategorie": 4,
       "katzenverhalten": 1,
       "katzengesundheit": 5,
+      "katzenklappen": 1,
       "gesundheit": 2,
       "ratgeber": 1,
       "haustiertechnik": 1,
@@ -28,11 +30,11 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 207,
+    "routes": 223,
     "findings": {
       "error": 0,
-      "warning": 50,
-      "info": 65
+      "warning": 52,
+      "info": 56
     }
   },
   "findings": [
@@ -284,12 +286,6 @@
     },
     {
       "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/zeromouse-2-0/",
-      "file": "src/content/products/zeromouse-2-0.md"
-    },
-    {
-      "severity": "warning",
       "area": "maintainability",
       "message": "Sehr große Datei mit 1509 Zeilen",
       "file": "src/components/advisor/PetAdvisor.astro"
@@ -297,7 +293,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1003 Zeilen",
+      "message": "Sehr große Datei mit 1012 Zeilen",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md"
     },
     {
@@ -337,39 +333,27 @@
       "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
     },
     {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 4× definiert: html",
-      "file": "src/styles/pfotentechnik-design-system.css"
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1055 Zeilen",
+      "file": "src/lib/seo/topical-authority/loadTopicalAuthority.ts"
+    },
+    {
+      "severity": "warning",
+      "area": "structured-data",
+      "message": "Ratgeber ohne publishedAt",
+      "file": "src/content/pages/katzenklappe-einbauen.md"
+    },
+    {
+      "severity": "warning",
+      "area": "structured-data",
+      "message": "Ratgeber ohne publishedAt",
+      "file": "src/content/pages/katzenklappe-fuer-mehrere-katzen.md"
     },
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 4× definiert: body",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 7× definiert: .site-header-v2",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 5× definiert: .brand-mark",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 4× definiert: .brand-mark__cut",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 4× definiert: .brand-mark__dot",
+      "message": "Selektor 3× definiert: .brand-mark",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
@@ -381,19 +365,19 @@
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 10× definiert: .main-nav-v2",
+      "message": "Selektor 6× definiert: .main-nav-v2",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 7× definiert: .main-nav-v2 a",
+      "message": "Selektor 5× definiert: .main-nav-v2 a",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 6× definiert: .nav-toggle-button",
+      "message": "Selektor 4× definiert: .nav-toggle-button",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
@@ -405,79 +389,31 @@
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 3× definiert: .footer-brand-lockup .brand-mark",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .footer-brand-lockup .brand-mark__cut",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .footer-brand-lockup .brand-mark__dot",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .footer-brand-name",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
       "message": "Selektor 10× definiert: @media (max-width: 760px)",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 9× definiert: } @media (prefers-color-scheme: dark)",
+      "message": "Selektor 3× definiert: .site-header-v2",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 10× definiert: :root",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 4× definiert: .brand-lockup, .brand-name",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .nav-toggle-button:hover, .nav-toggle-button[aria-expanded=\"true\"]",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .main-nav-v2 a:hover",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 7× definiert: @media (prefers-color-scheme: dark)",
-      "file": "src/styles/pfotentechnik-design-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 4× definiert: } @media (max-width: 760px)",
+      "message": "Selektor 4× definiert: @media (prefers-color-scheme: dark)",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
       "severity": "info",
       "area": "css",
       "message": "Selektor 3× definiert: .article",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 3× definiert: } @media (max-width: 760px)",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
@@ -496,6 +432,18 @@
       "severity": "info",
       "area": "css",
       "message": "Selektor 4× definiert: .recommendation-card__image-link",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 7× definiert: } @media (prefers-color-scheme: dark)",
+      "file": "src/styles/pfotentechnik-design-system.css"
+    },
+    {
+      "severity": "info",
+      "area": "css",
+      "message": "Selektor 4× definiert: :root",
       "file": "src/styles/pfotentechnik-design-system.css"
     },
     {
@@ -707,6 +655,18 @@
       "area": "unused-components",
       "message": "Komponente ohne erkannten Import: ContentGraphSections",
       "file": "src/components/ContentGraphSections.astro"
+    },
+    {
+      "severity": "info",
+      "area": "unused-components",
+      "message": "Komponente ohne erkannten Import: ProductDecisionAssistant",
+      "file": "src/components/product-experience-2/ProductDecisionAssistant.astro"
+    },
+    {
+      "severity": "info",
+      "area": "unused-components",
+      "message": "Komponente ohne erkannten Import: ProductTrust2",
+      "file": "src/components/product-experience-2/ProductTrust2.astro"
     },
     {
       "severity": "info",

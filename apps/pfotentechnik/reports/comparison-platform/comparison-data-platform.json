@@ -1,26 +1,28 @@
 {
-  "generatedAt": "2026-08-03T18:41:49.070Z",
+  "generatedAt": "2026-08-06T06:29:14.590Z",
   "expectedComparisons": 24,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": true,
+  "passed": false,
   "summary": {
-    "comparisons": 24,
-    "products": 68,
-    "sourceCells": 718,
-    "allResolved": 625,
+    "comparisons": 26,
+    "products": 74,
+    "sourceCells": 791,
+    "allResolved": 698,
     "allUnresolved": 93,
-    "sourceCoverage": 87,
-    "renderedCells": 591,
-    "renderedResolved": 591,
+    "sourceCoverage": 88.2,
+    "renderedCells": 664,
+    "renderedResolved": 664,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 476,
+    "legacyValueCount": 549,
     "overrideCount": 218
   },
-  "failures": [],
+  "failures": [
+    "Erwartet: 24 Vergleiche, gefunden: 26."
+  ],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -3689,6 +3691,332 @@
       ]
     },
     {
+      "slug": "beste-mikrochip-katzenklappen",
+      "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md",
+      "items": 7,
+      "criteria": 7,
+      "visibleRows": 7,
+      "hiddenRows": 0,
+      "passed": true,
+      "rows": [
+        {
+          "key": "zugang",
+          "label": "Zugangslogik",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "Selektiver Eingang",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "15-stelliger FDX-B-Chip",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "Selektiver Eingang",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Chip und Bewegung",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "richtungsrechte",
+          "label": "Rechte je Tier",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "Manuelle Gesamtregel",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "Individuell je Tier",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Individuell je Tier",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "Selektiver Eingang",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "Gesamtregel und Nachtmodus",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Individuell und zeitbasiert",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Betriebsmodi",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "app",
+          "label": "App-Abhängigkeit",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "Selektiver Eingang",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "15-stelliger FDX-B-Chip",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "Selektiver Eingang",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Mikrochip beidseitig",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Chip und Bewegung",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "strom",
+          "label": "Stromversorgung",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "4 AA-Batterien",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "4 AA-Batterien",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "4 AA-Batterien",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "Batterie",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "EU-Netzanschluss",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "USB-C-Netzstrom",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "24-V-Netz plus Notstrom",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "einbau",
+          "label": "Einbau",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "Tür, Glas, Wand mit Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "Tür, Glas, Wand mit Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Tür, Glas, Wand mit Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "Adapter je Material",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "Holz, Glas, PVC, uPVC, Wand; Metall nach Test",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Ausschnitt und Kabelweg prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Bauprojekt in Tür, Glas oder Wand",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "durchgang",
+          "label": "Passform",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "142 × 120 mm",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "142 × 120 mm",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "142 × 120 mm",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "Schablone prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "160 × 160 mm",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Herstellermaße prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Medium; projektspezifisch",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "rolle",
+          "label": "Produktrolle",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe",
+              "value": "Standardklappe",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-dualscan-mikrochip-katzenklappe",
+              "value": "Mehrkatzenklappe",
+              "resolved": true
+            },
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Vernetzte Klappe",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-mikrochip-katzenklappe",
+              "value": "Standardklappe",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-petporte-smart-flap",
+              "value": "Netzbetriebene Klappe",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Klappe mit Kamera",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Motorisierte Tiertür",
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "beste-trinkbrunnen-fuer-hunde",
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md",
       "items": 6,
@@ -5394,6 +5722,197 @@
             {
               "product": "garmin-alpha-tt-25",
               "value": "Hund, Katze",
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "katzenklappen-mit-app-und-beuteerkennung",
+      "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md",
+      "items": 4,
+      "criteria": 6,
+      "visibleRows": 6,
+      "hiddenRows": 0,
+      "passed": true,
+      "rows": [
+        {
+          "key": "rolle",
+          "label": "Produktrolle",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Vollständige Katzenklappe",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Vollständige Katzenklappe",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Motorisierte Tiertür",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Nachrüstmodul",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "app",
+          "label": "App-Funktion",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Sure Petcare App",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "iOS, Android, Web",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "petWALK.control",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Einrichtung und Meldungen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "beute",
+          "label": "Beuteerkennung",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Integrierte Kamera",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Nein dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Kamera-/KI-Modul",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "abhaengigkeit",
+          "label": "Abhängigkeiten",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Hub und Internet für App",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "WLAN für Einrichtung und App",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Netzstrom und Systemplanung",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Kompatible Klappe, Strom und WLAN",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "strom",
+          "label": "Strom",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "4 AA-Batterien",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "USB-C-Netzstrom",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "24 V plus Notstrom",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Netzstrom",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "ausfall",
+          "label": "Ausfallverhalten",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Lokale Mikrochip-Funktion getrennt betrachten",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Lokaler WLAN-Ausfallbetrieb; Stromausfall entsperrt laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Notstrom-Akku; Details im Handbuch prüfen",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Bestehende Klappe bleibt separates System",
               "resolved": true
             }
           ]

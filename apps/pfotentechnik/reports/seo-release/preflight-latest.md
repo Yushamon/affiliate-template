@@ -1,9 +1,9 @@
 # SEO Release Preflight
 
 - Status: ERROR
-- Modus: diagnostic
-- Dauer: 9436 ms
-- Phasen: 14
+- Modus: production
+- Dauer: 1709 ms
+- Phasen: 4
 - Fehler: 1
 - Warnungen: 0
 
@@ -12,21 +12,11 @@
 - OK **Repository- und Umgebungsprüfung** – npm run audit:repository:strict
 - OK **Content-Graph und Datenschema** – npm run audit:content-graph
 - OK **Produktdaten-Audit** – npm run audit:products:strict
-- OK **Vergleichsdaten-Audit** – npm run comparison:data:audit:strict
-- OK **Vergleichsintegrität** – npm run comparison:audit:strict
-- OK **Interner Source-Link-Audit** – npm run audit:internal-links:strict
-- OK **Anchor-Governance-Audit** – npm run audit:anchor-governance:strict
-- OK **Technischer SEO-Source-Audit** – npm run audit:technical-seo:source
-- OK **Comparison-Snippet- und Schema-Audit** – npm run audit:comparison-schema
-- OK **Gerenderte interne Linkziele** – npm run audit:internal-link-targets:strict
-- OK **Gerenderter SEO-Build-Output** – npm run audit:release-build-output:strict
-- OK **Technischer SEO-Build-Audit** – npm run audit:technical-seo
-- OK **Content-Quality und Kannibalisierung** – npm run audit:content-quality:strict
-- FEHLER **Performance-Budget** – npm run audit:performance:strict
+- FEHLER **Vergleichsdaten-Audit** – npm run comparison:data:audit:strict
 
 ## Fehler
 
-- Performance-Budget fehlgeschlagen (Exit 1).
+- Vergleichsdaten-Audit fehlgeschlagen (Exit 1).
 
 ## Warnungen
 
@@ -34,7 +24,4 @@ Keine.
 
 ## Content Quality
 
-- Report: /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.md
-- Indexierbare Seiten: 197
-- Harte Fehler: 0
-- Warnungen: 0
+Kein Content-Quality-Report verfügbar.

@@ -1,20 +1,20 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-07-31T06:49:28.130Z
+Erstellt: 2026-08-06T06:29:13.346Z
 
 ## Zusammenfassung
 
-- Routen: 207
+- Routen: 223
 - Fehler: 0
-- Warnungen: 50
-- Hinweise: 65
+- Warnungen: 52
+- Hinweise: 56
 
 ## Content-Bestand
 
-- pages: 75
-- products: 67
-- manufacturers: 19
-- comparisons: 24
+- pages: 80
+- products: 74
+- manufacturers: 21
+- comparisons: 26
 
 ## Befunde
 
@@ -59,42 +59,33 @@ Erstellt: 2026-07-31T06:49:28.130Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-patrol-f07-pro/ (`src/content/products/wopet-patrol-f07-pro.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-pioneer-f01-plus/ (`src/content/products/wopet-pioneer-f01-plus.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/xiaomi-smart-pet-fountain-2/ (`src/content/products/xiaomi-smart-pet-fountain-2.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/zeromouse-2-0/ (`src/content/products/zeromouse-2-0.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
-- **WARNING · maintainability**: Sehr große Datei mit 1003 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
+- **WARNING · maintainability**: Sehr große Datei mit 1012 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
-- **INFO · css**: Selektor 4× definiert: html (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 4× definiert: body (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 7× definiert: .site-header-v2 (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 5× definiert: .brand-mark (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 4× definiert: .brand-mark__cut (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 4× definiert: .brand-mark__dot (`src/styles/pfotentechnik-design-system.css`)
+- **WARNING · maintainability**: Sehr große Datei mit 1055 Zeilen (`src/lib/seo/topical-authority/loadTopicalAuthority.ts`)
+- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/katzenklappe-einbauen.md`)
+- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/katzenklappe-fuer-mehrere-katzen.md`)
+- **INFO · css**: Selektor 3× definiert: .brand-mark (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .brand-name (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 10× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 7× definiert: .main-nav-v2 a (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 6× definiert: .nav-toggle-button (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 6× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 5× definiert: .main-nav-v2 a (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: .nav-toggle-button (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 4× definiert: .footer-v2 (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark__cut (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .footer-brand-lockup .brand-mark__dot (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .footer-brand-name (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 10× definiert: @media (max-width: 760px) (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 9× definiert: } @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 10× definiert: :root (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 4× definiert: .brand-lockup, .brand-name (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .nav-toggle-button:hover, .nav-toggle-button[aria-expanded="true"] (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 3× definiert: .main-nav-v2 a:hover (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 7× definiert: @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
-- **INFO · css**: Selektor 4× definiert: } @media (max-width: 760px) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: .site-header-v2 (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .article (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 3× definiert: } @media (max-width: 760px) (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 4× definiert: .comparison-sticky-bar (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .recommendation-card (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 4× definiert: .recommendation-card__image-link (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 7× definiert: } @media (prefers-color-scheme: dark) (`src/styles/pfotentechnik-design-system.css`)
+- **INFO · css**: Selektor 4× definiert: :root (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .home41-decision__header h2 (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .home41-decision__header > p (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 5× definiert: .home41-decision__card (`src/styles/pfotentechnik-design-system.css`)
@@ -130,6 +121,8 @@ Erstellt: 2026-07-31T06:49:28.130Z
 - **INFO · unused-components**: Komponente ohne erkannten Import: AdvisorCompare (`src/components/advisor/AdvisorCompare.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ScenarioRecommendations (`src/components/comparison/ScenarioRecommendations.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ContentGraphSections (`src/components/ContentGraphSections.astro`)
+- **INFO · unused-components**: Komponente ohne erkannten Import: ProductDecisionAssistant (`src/components/product-experience-2/ProductDecisionAssistant.astro`)
+- **INFO · unused-components**: Komponente ohne erkannten Import: ProductTrust2 (`src/components/product-experience-2/ProductTrust2.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductEngineInsights (`src/components/product-standard-2/ProductEngineInsights.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductStandard2 (`src/components/product-standard-2/ProductStandard2.astro`)
 - **INFO · unused-components**: Komponente ohne erkannten Import: ProductTrustPanel (`src/components/ProductTrustPanel.astro`)
