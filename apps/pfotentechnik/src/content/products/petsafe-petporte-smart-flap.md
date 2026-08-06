@@ -4,9 +4,9 @@ title: "PetSafe Petporte smart flap"
 slug: "petsafe-petporte-smart-flap"
 description: "Netzbetriebene Mikrochip-Katzenklappe mit selektivem Eingang, Nachtmodus und größerem 160 × 160 mm Durchgang; deutsche Verfügbarkeit und Chipgrenzen geprüft."
 manufacturer:
-  key: petsafe
-  name: PetSafe
-  slug: petsafe
+  key: "petsafe"
+  name: "PetSafe"
+  slug: "petsafe"
 category:
   key: "katzenklappen"
   label: "Katzenklappen"
@@ -14,24 +14,15 @@ category:
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 productStatus: active
-editorialStatus: "required"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
 price:
+  current: null
   currency: "EUR"
   status: "unknown"
-  amount: 165.99
   checkedAt: "2026-08-04T18:00:00.000Z"
   source:
     id: "petsafe-de-petporte"
     label: "PetSafe Deutschland"
     type: "manual"
-priceState: "unknown"
-priceUpdated: "2026-08-04T18:00:00.000Z"
-affiliateAvailable: false
-availability: "available"
-availabilityReason: "Im deutschen PetSafe-Shop bestellbar; Lieferfenster auf der Herstellerseite angezeigt."
-availabilityUpdated: "2026-08-04T18:00:00.000Z"
 decision:
   bestFor:
     - katze
@@ -140,6 +131,17 @@ comparisonData:
     einbau: "Holz, Glas, PVC, uPVC, Wand; Metall nach Test"
     durchgang: "160 × 160 mm"
     produktrolle: "Netzbetriebene Mikrochip-Klappe"
+priceState: "unknown"
+priceUpdated: "2026-08-04T18:00:00.000Z"
+priceAvailable: false
+affiliateAvailable: false
+availability: "available"
+availabilityReason: "Im deutschen PetSafe-Shop bestellbar; Lieferfenster auf der Herstellerseite angezeigt."
+availabilityUpdated: "2026-08-04T18:00:00.000Z"
+editorialStatus: "required"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 editorial:
   assessmentType: "data-review"
   evidence:

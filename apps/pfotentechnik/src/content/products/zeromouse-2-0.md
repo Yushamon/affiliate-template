@@ -13,13 +13,13 @@ recommendation: >-
   Vor dem Kauf müssen Klappenform, Steckdose und WLAN am Einbauort geprüft werden; eine garantierte Beuteerkennung gibt
   es nicht.
 manufacturer:
-  key: zeromouse
-  name: ZeroMOUSE
-  slug: zeromouse
+  key: "zeromouse"
+  name: "ZeroMOUSE"
+  slug: "zeromouse"
 category:
-  key: katzenklappen
-  label: Katzenklappen
-  path: /katzenklappen/
+  key: "katzenklappen"
+  label: "Katzenklappen"
+  path: "/katzenklappen/"
 productUrl: /produkt/zeromouse-2-0/
 publishedAt: "2026-07-26"
 updatedAt: "2026-07-26"

@@ -11,7 +11,10 @@ manufacturer:
   key: "onlycat"
   name: "OnlyCat"
   slug: "onlycat"
-category: { key: "katzenklappen", label: "Katzenklappen", path: "/katzenklappen/" }
+category:
+  key: "katzenklappen"
+  label: "Katzenklappen"
+  path: "/katzenklappen/"
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-05"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
@@ -37,18 +40,35 @@ images:
       alt: OnlyCat Mikrochip Katzenklappe eingebaut in eine moderne Haustür
     - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-4.webp
       alt: Katze bei der Nutzung der OnlyCat Mikrochip Katzenklappe
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-04", source: { id: "onlycat-de", label: "OnlyCat Deutschland", type: "merchant", url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/" } }
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-04"
+  source:
+    id: "onlycat-de"
+    label: "OnlyCat Deutschland"
+    type: "merchant"
+affiliate:
+  provider: "onlycat-de"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Erkennungsleistung nicht unabhängig verifiziert." }
+rating: 3.6
 priceState: "unknown"
+priceUpdated: "2026-08-04"
 priceAvailable: false
-affiliateAvailable: false
+affiliateAvailable: true
 availability: "available"
 availabilityReason: "Im deutschsprachigen EU-Shop am 04.08.2026 bestellbar; Einmalzahlung und Abo-Hardware werden getrennt angeboten."
 availabilityUpdated: "2026-08-04"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "recommended"
-editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Erkennungsleistung nicht unabhängig verifiziert." }
-rating: 3.6
+maintenanceStatus: "required"
+
 ratings:
   zugang_und_sicherheit: 4.0
   richtungsrechte_und_kontrolle: 4.5

@@ -11,12 +11,10 @@ manufacturer:
   key: "surefeed"
   name: "Sure Petcare"
   slug: "surefeed"
-
 category:
   key: "katzenklappen"
   label: "Katzenklappen"
   path: "/katzenklappen/"
-
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-05"
 
@@ -61,23 +59,28 @@ price:
     id: "surepetcare-de-connect"
     label: "Sure Petcare Deutschland"
     type: "merchant"
-    url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"
-
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-
-availability: "unknown"
-availabilityReason: "Preis, Hub-Bundle und Lieferbarkeit müssen unmittelbar vor dem Kauf im deutschen Hersteller-Shop geprüft werden."
-availabilityUpdated: "2026-08-05"
+affiliate:
+  provider: "surepetcare-de-connect"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 
 productStatus: "active"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "recommended"
 
 testStatus: "manufacturer-data"
 rating: 3.9
+priceState: "unknown"
+priceUpdated: "2026-08-05"
+priceAvailable: false
+affiliateAvailable: true
+availability: "unknown"
+availabilityReason: "Preis, Hub-Bundle und Lieferbarkeit müssen unmittelbar vor dem Kauf im deutschen Hersteller-Shop geprüft werden."
+availabilityUpdated: "2026-08-05"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 editorial:
   assessmentType: "data-review"
   evidence:

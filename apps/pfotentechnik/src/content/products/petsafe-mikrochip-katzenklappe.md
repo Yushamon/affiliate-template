@@ -11,7 +11,10 @@ manufacturer:
   key: "petsafe"
   name: "PetSafe"
   slug: "petsafe"
-category: { key: "katzenklappen", label: "Katzenklappen", path: "/katzenklappen/" }
+category:
+  key: "katzenklappen"
+  label: "Katzenklappen"
+  path: "/katzenklappen/"
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
@@ -26,18 +29,35 @@ images:
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-1.webp", alt: "PetSafe Mikrochip Katzenklappe eingebaut in eine moderne Haustür" }
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-2.webp", alt: "Katze nutzt die PetSafe Mikrochip Katzenklappe" }
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-3.webp", alt: "Größenvergleich der PetSafe Mikrochip Katzenklappe mit einer Hauskatze" }
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-04", source: { id: "petsafe-de", label: "PetSafe Deutschland", type: "merchant", url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/" } }
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-04"
+  source:
+    id: "petsafe-de"
+    label: "PetSafe Deutschland"
+    type: "merchant"
+affiliate:
+  provider: "petsafe-de"
+  label: "Aktuellen Preis prüfen"
+  url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest." }
+rating: 3.8
 priceState: "unknown"
+priceUpdated: "2026-08-04"
 priceAvailable: false
-affiliateAvailable: false
+affiliateAvailable: true
 availability: "available"
 availabilityReason: "Am 04.08.2026 im deutschen Hersteller-Shop bestellbar; Preis wird redaktionell nicht als stabiler Produktwert gespeichert."
 availabilityUpdated: "2026-08-04"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "recommended"
-editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest." }
-rating: 3.8
+maintenanceStatus: "required"
+
 ratings:
   zugang_und_sicherheit: 3.8
   richtungsrechte_und_kontrolle: 3.3
