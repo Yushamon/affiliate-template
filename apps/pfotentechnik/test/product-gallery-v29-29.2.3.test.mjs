@@ -22,7 +22,8 @@ test("Thumbnail-Leiste beginnt links statt in der Mitte", () => {
 
 test("Thumbnail-Inhalte bleiben innerhalb ihrer Buttons zentriert", () => {
   assert.match(css, /\.pg29-lightbox__thumb\s*\{[\s\S]*?place-items:\s*center/);
-  assert.match(css, /\.pg29-lightbox__thumb img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?object-position:\s*50% 50%/);
+  assert.match(css, /\.pg29-lightbox__thumb-frame\s*\{[\s\S]*?place-items:\s*center[\s\S]*?overflow:\s*hidden/);
+  assert.match(css, /\.pg29 \.pg29-lightbox__thumb > \.pg29-lightbox__thumb-frame > \.pg29-lightbox__thumb-image\s*\{[\s\S]*?max-width:\s*100%[\s\S]*?max-height:\s*100%[\s\S]*?object-fit:\s*contain/);
 });
 
 test("JavaScript zentriert die gesamte Thumbnail-Leiste nicht mehr", () => {
