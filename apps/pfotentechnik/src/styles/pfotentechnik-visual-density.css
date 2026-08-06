@@ -37,12 +37,6 @@
 @media (prefers-reduced-motion: reduce) {
   :where(.pt-surface) { scroll-behavior: auto; }
 }
-@media (max-width: 63.99rem) {
-  :where(.header-advisor-link) { display: none; }
-  :where(.site-header, .header-v2, header[role="banner"]) :where( .header-inner, .header-container, .header-v2__inner ) { grid-template-columns: minmax(0, 1fr) auto; }
-  :where(.main-nav-v2) > [data-pt-purchase-advice="nav"] { display: none; }
-  :where( .menu-toggle, .nav-toggle, .mobile-menu-toggle, [aria-controls*="nav"] ) { min-width: 3rem; min-height: 3rem; padding-inline: var(--pt-space-3); display: inline-grid; place-items: center; white-space: nowrap; }
-}
 :where([data-pt-quick-facts]) :where( a[href="#fuer-katzen"], a[href="#fuer-hunde"], a[href="#bauarten"], a[href*="reinigen"] ) { box-sizing: border-box; min-height: 3rem; padding: var(--pt-space-3) var(--pt-space-4); display: flex; align-items: center; justify-content: space-between; gap: var(--pt-space-3); line-height: 1.25; text-wrap: balance; }
 :where([data-pt-selected-products]) :where([data-pt-product-card]), :where([data-pt-next-steps]) > :where(article, a, div)[data-pt-step-card] { border: 1px solid var(--pt-color-border); border-radius: var(--pt-radius-xl); box-shadow: none; overflow: clip; }
 :where([data-pt-selected-products]) :where([data-pt-product-card]) > * { border-radius: 0; }
@@ -78,18 +72,6 @@
         var(--pt-color-primary) var(--pt-score-angle, 280deg),
         var(--pt-color-border) 0
       ); }
-}
-@media (max-width: 63.99rem) {
-  .site-header-v2 .header-container-v2 { grid-template-columns: minmax(0, 1fr) auto; min-height: 4.25rem; padding-block: .55rem; }
-  .site-header-v2 .header-advisor-link { display: none; }
-  .site-header-v2 .brand-lockup { min-width: 0; }
-  .site-header-v2 .nav-toggle-button { inline-size: 2.9rem; block-size: 2.9rem; min-inline-size: 2.9rem; min-block-size: 2.9rem; padding: 0; display: inline-grid; place-items: center; border-radius: .85rem; }
-  .site-header-v2 .nav-toggle__label { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  .site-header-v2 .nav-toggle__icon { display: grid; gap: 4px; inline-size: 1.2rem; }
-  .site-header-v2 .nav-toggle__icon > span { display: block; block-size: 2px; border-radius: var(--pt-radius-pill); background: currentColor; }
-}
-@media (min-width: 64rem) {
-  .nav-toggle__icon { display: none; }
 }
 .recommendation-card { display: grid; gap: 0; overflow: clip; }
 .recommendation-card__badge { justify-self: start; margin: 1rem 1rem .7rem; padding: .42rem .72rem; border-radius: var(--pt-radius-pill); color: var(--comparison-accent); background: color-mix(in srgb, var(--comparison-accent) 10%, transparent); font-size: .76rem; font-weight: 800; }

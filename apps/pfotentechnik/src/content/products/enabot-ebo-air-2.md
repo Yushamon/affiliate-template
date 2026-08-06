@@ -21,15 +21,16 @@ hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "kameraroboter", "katze", "hund", "app"]
 images:
   hero: { src: "../../assets/images/products/enabot-ebo-air-2/hero.webp", alt: "Neutrale redaktionelle Darstellung eines mobilen Kamera-Roboters für Haustiere" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 129.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-06T17:22:41.448Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.5
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { mobilitaet: 4.2, datenschutz: 3.0, folgekosten: 3.5, alltag: 3.3 }
 decision:
   bestFor: ["mehrere verbundene Räume auf einer Ebene", "aktive Fernsteuerung", "Haushalte ohne hohe Schwellen und offene Treppen"]
@@ -51,6 +52,22 @@ comparisonData:
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "mobilen-kameraroboter-pruefen", primaryQuestion: "Ist die Wohnung robotertauglich und wird ein mobiler statt eines festen Blickpunkts gebraucht?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "Enabot", url: "https://www.enabot.com/de/about-us", accessedAt: "2026-08-06", assertion: "EBO Air 2 wird als mobile Produktklasse mit 2K-Video geführt.", fields: ["specs", "features", "decision"] }
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4pZYw9z"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-06T17:22:41.448Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-06T17:22:41.448Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Vor dem Kauf einen Fahrweg prüfen

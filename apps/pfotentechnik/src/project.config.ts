@@ -39,38 +39,73 @@ export const projectConfig = {
     {
       label: "Vergleiche",
       href: "/vergleiche/",
-      mobileGroup: "Orientierung"
-    },
-    {
-      label: "Futterautomaten",
-      href: "/smarte-futterautomaten/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "Trinkbrunnen",
-      href: "/trinkbrunnen/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "GPS-Tracker",
-      href: "/gps-tracker/",
-      mobileGroup: "Produktwelten"
-    },
-    {
-      label: "Wissen & Ratgeber",
-      href: "/wissen/",
-      mobileGroup: "Mehr entdecken"
-    },
-    {
-      label: "Hersteller",
-      href: "/hersteller/",
-      mobileGroup: "Mehr entdecken"
+      mobileGroup: "Orientierung",
+      navCode: "01",
+      description: "Modelle und Systeme nach denselben Kriterien vergleichen."
     },
     {
       label: "Kaufberatung",
       href: "/kaufberatung/",
       mobileGroup: "Orientierung",
-      mobileEmphasis: true
+      mobileEmphasis: true,
+      navCode: "02",
+      description: "Vom Bedarf zur passenden Geräteklasse."
+    },
+    {
+      label: "Futterautomaten",
+      href: "/smarte-futterautomaten/",
+      mobileGroup: "Produktwelten",
+      navCode: "FA",
+      description: "Portionen, Futterarten, App und Ausfallsicherheit."
+    },
+    {
+      label: "Trinkbrunnen",
+      href: "/trinkbrunnen/",
+      mobileGroup: "Produktwelten",
+      navCode: "TB",
+      description: "Material, Reinigung, Filter und Trinkfläche."
+    },
+    {
+      label: "GPS-Tracker",
+      href: "/gps-tracker/",
+      mobileGroup: "Produktwelten",
+      navCode: "GPS",
+      description: "Ortung, Gewicht, Akku und laufende Kosten."
+    },
+    {
+      label: "Katzenklappen",
+      href: "/katzenklappen/",
+      mobileGroup: "Produktwelten",
+      navCode: "KK",
+      description: "Mikrochip, App, Beuteerkennung und Einbau."
+    },
+    {
+      label: "Haustierkameras",
+      href: "/haustierkameras/",
+      mobileGroup: "Produktwelten",
+      navCode: "CAM",
+      description: "Feste Kameras, Interaktion und mobile Roboter."
+    },
+    {
+      label: "Automatische Katzentoiletten",
+      href: "/automatische-katzentoiletten/",
+      mobileGroup: "Produktwelten",
+      navCode: "KLO",
+      description: "Sicherheit, Bauform, Streu und Folgekosten."
+    },
+    {
+      label: "Wissen & Ratgeber",
+      href: "/wissen/",
+      mobileGroup: "Mehr entdecken",
+      navCode: "W",
+      description: "Praxisfragen verständlich und unabhängig klären."
+    },
+    {
+      label: "Hersteller",
+      href: "/hersteller/",
+      mobileGroup: "Mehr entdecken",
+      navCode: "H",
+      description: "Marken, Modellreihen und Systemgrenzen einordnen."
     }
   ],
   home: {
@@ -111,35 +146,51 @@ export const projectConfig = {
       items: [
         {
           code: "01",
-          title: "GPS Tracker",
-          text: "Ortung, Akkulaufzeit und Abdeckung verständlich vergleichen.",
-          anchor: "gps-tracker",
-          href: "/gps-tracker/",
-          productCategory: "gps-tracker"
-        },
-        {
-          code: "02",
           title: "Futterautomaten",
-          text: "Fütterungszeiten zuverlässig planen und Portionen kontrollieren.",
+          text: "Portionierung, Futterart, App und Ausfallsicherheit passend zum Alltag wählen.",
           anchor: "futterautomaten",
           href: "/smarte-futterautomaten/",
           productCategory: "futterautomat"
         },
         {
-          code: "03",
+          code: "02",
           title: "Trinkbrunnen",
-          text: "Material, Reinigung und Filterkosten realistisch einordnen.",
+          text: "Material, Reinigung, Filterkosten und Trinkfläche realistisch einordnen.",
           anchor: "trinkbrunnen",
           href: "/trinkbrunnen/",
           productCategory: "trinkbrunnen"
         },
         {
+          code: "03",
+          title: "GPS-Tracker",
+          text: "Ortung, Gewicht, Akkulaufzeit, Abdeckung und Abo vergleichen.",
+          anchor: "gps-tracker",
+          href: "/gps-tracker/",
+          productCategory: "gps-tracker"
+        },
+        {
           code: "04",
-          title: "Futterautomaten mit Kamera",
-          text: "Livebild, Zwei-Wege-Audio und App-Steuerung im Vergleich.",
-          anchor: "futterautomaten-mit-kamera",
-          href: "/vergleiche/beste-futterautomaten-mit-kamera/",
-          productUseCase: "kamera"
+          title: "Katzenklappen",
+          text: "Mikrochip-Zugang, App, Beuteerkennung, Passform und Einbau klären.",
+          anchor: "katzenklappen",
+          href: "/katzenklappen/",
+          productCategory: "katzenklappen"
+        },
+        {
+          code: "05",
+          title: "Haustierkameras",
+          text: "Feste Kameras, Interaktionsmodelle und mobile Roboter bewusst auswählen.",
+          anchor: "haustierkameras",
+          href: "/haustierkameras/",
+          productCategory: "haustierkameras"
+        },
+        {
+          code: "06",
+          title: "Automatische Katzentoiletten",
+          text: "Sicherheitsgrenzen, Bauform, Streu, Gewöhnung und Folgekosten prüfen.",
+          anchor: "automatische-katzentoiletten",
+          href: "/automatische-katzentoiletten/",
+          productCategory: "automatische-katzentoiletten"
         }
       ]
     },
@@ -213,49 +264,36 @@ export const projectConfig = {
   },
   footer: {
     description:
-      "Unabhängige Kaufberatung rund um smarte Technik für Hunde und Katzen.",
+      "Unabhängige Kaufberatung für smarte Haustiertechnik. Wir trennen belegte Produktdaten, redaktionelle Einordnung und offene Fragen.",
     columns: [
       {
-        title: "Produktwelten",
+        title: "Entscheiden",
         links: [
-          { label: "Futterautomaten", href: "/smarte-futterautomaten/" },
-          { label: "Trinkbrunnen", href: "/trinkbrunnen/" },
-          { label: "GPS-Tracker", href: "/gps-tracker/" },
-          { label: "Futterautomaten mit App", href: "/vergleiche/futterautomat-mit-app/" },
-          { label: "Futterautomaten mit Kamera", href: "/vergleiche/beste-futterautomaten-mit-kamera/" }
-        ]
-      },
-      {
-        title: "Nach Tier & Bedarf",
-        links: [
-          { label: "Futterautomaten für Katzen", href: "/futterautomat-katze/" },
-          { label: "Futterautomaten für Hunde", href: "/futterautomat-hund/" },
-          { label: "Trinkbrunnen für Katzen", href: "/trinkbrunnen/#katzen" },
-          { label: "Trinkbrunnen für Hunde", href: "/trinkbrunnen/#hunde" },
-          { label: "Für mehrere Katzen", href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/" }
-        ]
-      },
-      {
-        title: "Orientierung",
-        links: [
-          { label: "Vergleiche", href: "/vergleiche/" },
-          { label: "Hersteller", href: "/hersteller/" },
-          { label: "Wissen", href: "/wissen/" },
+          { label: "Alle Vergleiche", href: "/vergleiche/" },
+          { label: "Kaufberatung", href: "/kaufberatung/" },
           { label: "So bewerten wir", href: "/so-bewerten-wir/" },
           { label: "Redaktion & Unabhängigkeit", href: "/redaktion/" }
         ]
       },
       {
-        title: "Rechtliches",
+        title: "Wissen & Marken",
         links: [
-          { label: "Impressum", href: "/impressum/" },
-          { label: "Datenschutz", href: "/datenschutz/" },
-          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis/" },
+          { label: "Wissen & Ratgeber", href: "/wissen/" },
+          { label: "Smarte Haustiertechnik", href: "/smarte-haustiertechnik/" },
+          { label: "Hersteller", href: "/hersteller/" },
           { label: "Kontakt", href: "/kontakt/" }
+        ]
+      },
+      {
+        title: "Service & Recht",
+        links: [
+          { label: "Affiliate-Hinweis", href: "/affiliate-hinweis/" },
+          { label: "Impressum", href: "/impressum/" },
+          { label: "Datenschutz", href: "/datenschutz/" }
         ]
       }
     ],
     transparency:
-      "Redaktionelle Empfehlungen werden nachvollziehbar recherchiert. Mögliche Affiliate-Partnerschaften verändern nicht die Bewertung eines Produkts."
+      "Redaktionelle Bewertungen werden nicht durch Provisionen verändert. Herstellerangaben, externe Erfahrungen und eigene redaktionelle Schlüsse werden getrennt ausgewiesen."
   }
 };

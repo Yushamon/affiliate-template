@@ -21,15 +21,16 @@ hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "hund", "leckerlies", "app", "innenkamera"]
 images:
   hero: { src: "../../assets/images/products/furbo-360-hundekamera/hero.webp", alt: "Neutrale redaktionelle Darstellung einer Hundekamera mit Leckerliausgabe" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 79
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-06T17:23:26.774Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.6
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { interaktion: 4.3, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.7 }
 decision:
   bestFor: ["Hunde und ein überblickbarer Innenraum", "Ferninteraktion mit Ton und Leckerli", "Nutzer mit geprüfter Nanny-Tarifwahl"]
@@ -51,6 +52,22 @@ comparisonData:
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "furbo-360-pruefen", primaryQuestion: "Brauche ich Leckerliausgabe und Interaktion oder genügt eine einfache Innenkamera?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "Furbo Deutschland", url: "https://furbo.com/eu-de/products/furbo-dog-cam-360", accessedAt: "2026-08-06", assertion: "360-Grad-Kamera, App, Nanny-Funktionen und Produktrolle sind Herstellerangaben.", fields: ["specs", "features", "decision"] }
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/3U0Dewy"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-06T17:23:26.774Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-06T17:23:26.774Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Nicht mit Betreuung verwechseln
