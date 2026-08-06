@@ -347,6 +347,7 @@ const rowGroups = Array.from(groupedRows.entries());
     const backdrop = root.querySelector("[data-filter-backdrop]");
     const openButton = root.querySelector("[data-filter-open]");
     const closeButton = root.querySelector("[data-filter-close]");
+    const stage = root.querySelector("[data-comparison-stage]");
 
     const selectedSlugs = () =>
       pickers.filter((input) => input.checked).map((input) => input.value);
@@ -384,16 +385,26 @@ const rowGroups = Array.from(groupedRows.entries());
       document.documentElement.classList.toggle("comparison-filter-open", open);
     };
 
+    const resetComparisonScroll = () => {
+      if (stage instanceof HTMLElement) stage.scrollLeft = 0;
+    };
+
     const render = () => {
       const selected = selectedSlugs();
       const onlyDifferences =
         differences instanceof HTMLInputElement && differences.checked;
 
-      pickers.forEach((input) => {
+      pickers.forEach((input, originalIndex) => {
         const card = input.closest("[data-picker-card]");
         if (card instanceof HTMLElement) {
+          const selectedIndex = selected.indexOf(input.value);
           card.classList.toggle("is-selected", input.checked);
           card.hidden = !matchesFilters(input.value);
+          card.style.order = String(
+            selectedIndex >= 0
+              ? selectedIndex
+              : selected.length + originalIndex
+          );
         }
         input.disabled = !input.checked && selected.length >= MAX_SELECTION;
       });
@@ -425,6 +436,7 @@ const rowGroups = Array.from(groupedRows.entries());
       input.addEventListener("change", () => {
         if (selectedSlugs().length > MAX_SELECTION) input.checked = false;
         render();
+        requestAnimationFrame(resetComparisonScroll);
       });
     });
 
@@ -436,6 +448,7 @@ const rowGroups = Array.from(groupedRows.entries());
         input.checked = defaultSelection.includes(input.value);
       });
       render();
+      requestAnimationFrame(resetComparisonScroll);
     });
 
     root.querySelector("[data-filter-reset]")?.addEventListener("click", () => {
@@ -467,5 +480,6 @@ const rowGroups = Array.from(groupedRows.entries());
     groupMedia.addEventListener("change", syncGroupDefaults);
     syncGroupDefaults();
     render();
+    resetComparisonScroll();
   });
 </script>

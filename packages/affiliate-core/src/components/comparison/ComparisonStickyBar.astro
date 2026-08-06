@@ -1,31 +1,104 @@
 ---
 import type { ComparisonProduct } from "../../comparison/model";
 import { getPriceDisplay } from "../../comparison/price";
+
 type Props = { product?: ComparisonProduct };
 const { product } = Astro.props as Props;
 const price = product ? getPriceDisplay(product.price) : null;
 ---
 {product && price?.url && (
-  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung" data-comparison-sticky="true" hidden>
-    <div class="comparison-sticky-bar__identity"><span>Unsere Empfehlung</span><strong title={product.title}>{product.title}</strong></div>
-    <a href={price.url} class="pt-button comparison-button comparison-sticky-bar__primary" rel={price.rel} target={price.target} data-affiliate-link>Preis prüfen</a>
+  <aside
+    class="comparison-sticky-bar"
+    aria-label="Top-Empfehlung"
+    data-comparison-sticky="true"
+    hidden
+  >
+    <div class="comparison-sticky-bar__identity">
+      <span>Unsere Empfehlung</span>
+      <strong title={product.title}>{product.title}</strong>
+    </div>
+
+    <a
+      href={price.url}
+      class="pt-button comparison-button comparison-sticky-bar__primary"
+      rel={price.rel}
+      target={price.target}
+      data-affiliate-link
+    >
+      Preis prüfen
+    </a>
   </aside>
 )}
+
 <script>
-  const setupComparisonSticky = () => {
-    document.querySelectorAll<HTMLElement>("[data-comparison-sticky]").forEach((sticky) => {
-      if (sticky.dataset.ready === "true") return;
-      sticky.dataset.ready = "true";
-      const recommendation = document.getElementById("vergleichssieger");
-      if (!recommendation) return;
-      let scheduled = false;
-      const update = () => { scheduled = false; const rect = recommendation.getBoundingClientRect(); const visible = rect.bottom < 0; sticky.hidden = !visible; sticky.toggleAttribute("data-visible", visible); };
-      const requestUpdate = () => { if (scheduled) return; scheduled = true; requestAnimationFrame(update); };
-      update();
-      window.addEventListener("scroll", requestUpdate, { passive: true });
-      window.addEventListener("resize", requestUpdate, { passive: true });
-    });
+  type ComparisonStickyElement = HTMLElement & {
+    comparisonStickyController?: AbortController;
   };
+
+  const setupComparisonSticky = () => {
+    document
+      .querySelectorAll<ComparisonStickyElement>("[data-comparison-sticky]")
+      .forEach((sticky) => {
+        sticky.comparisonStickyController?.abort();
+
+        const recommendation = document.getElementById("vergleichssieger");
+        if (!recommendation) {
+          sticky.hidden = true;
+          return;
+        }
+
+        const footer = document.querySelector("footer");
+        const controller = new AbortController();
+        const { signal } = controller;
+        sticky.comparisonStickyController = controller;
+
+        let scheduled = false;
+
+        const update = () => {
+          scheduled = false;
+
+          const recommendationRect = recommendation.getBoundingClientRect();
+          const footerRect = footer?.getBoundingClientRect();
+          const afterRecommendation = recommendationRect.bottom < 0;
+          const footerReached = Boolean(
+            footerRect && footerRect.top < window.innerHeight + 24
+          );
+          const visible = afterRecommendation && !footerReached;
+
+          sticky.hidden = !visible;
+          sticky.toggleAttribute("data-visible", visible);
+        };
+
+        const requestUpdate = () => {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(update);
+        };
+
+        update();
+        window.addEventListener("scroll", requestUpdate, {
+          passive: true,
+          signal
+        });
+        window.addEventListener("resize", requestUpdate, {
+          passive: true,
+          signal
+        });
+      });
+  };
+
+  const resetComparisonSticky = () => {
+    document
+      .querySelectorAll<ComparisonStickyElement>("[data-comparison-sticky]")
+      .forEach((sticky) => {
+        sticky.comparisonStickyController?.abort();
+        sticky.comparisonStickyController = undefined;
+        sticky.hidden = true;
+        sticky.removeAttribute("data-visible");
+      });
+  };
+
   setupComparisonSticky();
   document.addEventListener("astro:page-load", setupComparisonSticky);
+  document.addEventListener("astro:before-swap", resetComparisonSticky);
 </script>
