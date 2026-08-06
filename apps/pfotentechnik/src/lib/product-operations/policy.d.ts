@@ -12,6 +12,7 @@ export type ProductOperations = {
   priceAgeDays: number | null;
   priceAvailable: boolean;
   priceState: PriceState;
+  editorialPriceControl: boolean;
   affiliateAvailable: boolean;
   affiliateUrl: string | null;
   availability: ProductAvailability;

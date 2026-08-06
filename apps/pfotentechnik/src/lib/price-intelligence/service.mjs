@@ -90,7 +90,12 @@ async function findDocument(slug) {
   return document;
 }
 
+export const allowsAutomaticPriceCheck = (data = {}) => data?.priceAutomation !== "editorial";
+
 async function checkDocumentPrice(document) {
+  if (!allowsAutomaticPriceCheck(document.data)) {
+    throw new Error("Die automatische Preisprüfung ist für dieses Produkt redaktionell gesperrt.");
+  }
   const data = document.data ?? {};
   const targetUrl = data.affiliate?.url || data.price?.affiliateUrl || data.productUrl;
   if (!targetUrl) throw new Error("Für dieses Produkt ist keine Händler-URL hinterlegt.");
@@ -147,6 +152,7 @@ export async function checkProductPrice(slugInput) {
 export async function checkAllProductPrices({ limit = 100, includeInactive = false } = {}) {
   const documents = await listPriceDocuments();
   const candidates = documents.filter((document) => {
+    if (!allowsAutomaticPriceCheck(document.data)) return false;
     if (includeInactive) return true;
     const operations = deriveProductOperations(document.data);
     return !operations.consciouslyUnavailable && !operations.archived;

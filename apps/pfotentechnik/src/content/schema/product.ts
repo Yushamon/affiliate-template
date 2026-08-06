@@ -468,6 +468,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
     price:
       productPriceSchema,
 
+    priceAutomation: z.enum(["automatic", "editorial"]).default("automatic"),
+
 
     priceState: productPriceStateSchema.default("unknown"),
     priceUpdated: z.coerce.date().optional(),

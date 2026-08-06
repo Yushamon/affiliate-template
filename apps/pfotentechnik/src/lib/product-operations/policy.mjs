@@ -201,6 +201,7 @@ export function deriveProductOperations(data, options = {}) {
   const consciousUnavailable = isConsciouslyUnavailable(availability);
   const archivedAvailability = isArchivedAvailability(availability);
   const missingRequiredFields = requiredFieldIssues(data);
+  const editorialPriceControl = data?.priceAutomation === "editorial";
 
   let priceState = choice(data?.priceState, PRICE_STATE_VALUES, null);
   if (!priceState) {
@@ -215,9 +216,9 @@ export function deriveProductOperations(data, options = {}) {
   const warnings = [];
 
   if (!consciousUnavailable) {
-    if (!priceAvailable && priceState !== "removed") warnings.push("Preis fehlt");
+    if (!editorialPriceControl && !priceAvailable && priceState !== "removed") warnings.push("Preis fehlt");
     if (!affiliateAvailable) warnings.push("Affiliate fehlt");
-    if (availability === "unknown") warnings.push("Verfügbarkeit unbekannt");
+    if (!editorialPriceControl && availability === "unknown") warnings.push("Verfügbarkeit unbekannt");
     if (priceAvailable && priceAgeDays != null && priceAgeDays > 90) warnings.push("Preis älter als 90 Tage");
     if (missingRequiredFields.length) warnings.push(`Pflichtfelder fehlen: ${missingRequiredFields.join(", ")}`);
   }
@@ -230,9 +231,9 @@ export function deriveProductOperations(data, options = {}) {
   } else if (consciousUnavailable) {
     maintenanceStatus = "complete";
   } else if (
-    !priceAvailable ||
+    (!editorialPriceControl && !priceAvailable) ||
     !affiliateAvailable ||
-    availability === "unknown" ||
+    (!editorialPriceControl && availability === "unknown") ||
     missingRequiredFields.length > 0
   ) {
     maintenanceStatus = "required";
@@ -288,6 +289,7 @@ export function deriveProductOperations(data, options = {}) {
     priceAgeDays,
     priceAvailable,
     priceState,
+    editorialPriceControl,
     affiliateAvailable,
     affiliateUrl: affiliateAvailable ? String(affiliateUrl) : null,
     availability,
@@ -353,7 +355,7 @@ export function buildOperationsDashboard(rows) {
 
   return {
     products: total,
-    missingPrice: count((row) => !row.operations?.priceAvailable && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
+    missingPrice: count((row) => !row.operations?.priceAvailable && !row.operations?.editorialPriceControl && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
     missingAffiliate: count((row) => !row.operations?.affiliateAvailable && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
     unknownAvailability: count((row) => row.operations?.availability === "unknown"),
     discontinued: count((row) => row.operations?.availability === "discontinued"),

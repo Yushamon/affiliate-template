@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-02T04:32:30.914Z",
+  "updatedAt": "2026-08-06T12:00:00.000Z",
   "provider": "manual-chatgpt",
   "scope": [
     "katzenklappen",
@@ -287,7 +287,7 @@
       "manufacturer": "Sure Petcare",
       "category": "futterautomaten",
       "intent": "SureFeed Connect mit App, Waage, Mikrochipzugang und Hub korrekt einordnen",
-      "status": "open",
+      "status": "implemented",
       "priority": 82,
       "confidence": 98,
       "reason": "Die bestehende Produktseite sollte gegen die aktuelle deutsche Herstellerdarstellung geprüft werden. Preis und Verfügbarkeit dürfen wegen widersprüchlicher Kaufsignale nicht statisch übernommen werden.",
@@ -393,7 +393,7 @@
         }
       ],
       "discoveredAt": "2026-08-02T04:35:00.000Z",
-      "lastConfirmedAt": "2026-08-02T04:35:00.000Z"
+      "lastConfirmedAt": "2026-08-06T12:00:00.000Z"
     }
   ]
 }
