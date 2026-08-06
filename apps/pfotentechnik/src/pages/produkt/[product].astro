@@ -285,7 +285,6 @@ const updatedAt =
   contentProduct.updatedAt ??
   publishedAt;
 
-
 const toReviewItemList = (items = []) => ({
   "@type": "ItemList",
   itemListElement: items
@@ -369,7 +368,6 @@ const productSchema = {
   }} : {})
 };
 
-
 ---
 
 <ProjectLayout
@@ -386,7 +384,7 @@ const productSchema = {
   categoryLabel={categoryLabel}
   breadcrumbs={breadcrumbs}
   schemaType="webpage"
-  mainClass="container--product"
+  mainClass="container--immersive"
 >
   <script
     type="application/ld+json"
@@ -437,9 +435,5 @@ const productSchema = {
   title="Passend zum Produkt weiterlesen"
 />
   </div>
-
-
-
-
 
 </ProjectLayout>

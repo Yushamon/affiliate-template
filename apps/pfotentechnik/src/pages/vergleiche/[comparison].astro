@@ -174,7 +174,8 @@ const comparisonNextSteps = buildComparisonNextSteps({
   publishedAt={comparison.publishedAt}
   updatedAt={comparison.updatedAt ?? comparison.publishedAt}
   author={comparison.author ?? siteMeta.defaultAuthor}
->
+
+  mainClass="container--immersive">
   <script
     type="application/ld+json"
     set:html={JSON.stringify(comparisonItemListSchema)}
@@ -207,8 +208,6 @@ const comparisonNextSteps = buildComparisonNextSteps({
       <AdvisorCta title="Welche Geräteklasse passt zu deinen Anforderungen?" text={comparisonAdvisorText} />
     </div>
     <DecisionJourney current={currentJourneyEntry} entries={journeyEntries} />
-
-
 
     <DecisionNextSteps
       title="Vom Vergleich zur Entscheidung"

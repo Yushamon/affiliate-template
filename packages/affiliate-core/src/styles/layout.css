@@ -1,12 +1,12 @@
 .container {
+  --pt-page-gutter: 12px;
+  --pt-container-gutter: 24px;
   width: 100%;
   min-width: 0;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 70px 24px;
+  padding: 70px var(--pt-container-gutter);
 }
-
-
 
 .section-title {
   margin-top: 90px;
@@ -76,7 +76,6 @@
 }
 
 @media (max-width: 768px) {
-  
 
   .container {
     padding-top: 90px;
@@ -97,13 +96,13 @@
   }
 }
 
-.container.container--product {
-  max-width: 1200px;
-  padding: 70px 24px;
-}
-
 @media (max-width: 768px) {
-  .container.container--product {
+  .container {
+    --pt-container-gutter: var(--pt-page-gutter);
+    padding-inline: var(--pt-container-gutter);
+  }
+
+  .container.container--immersive {
     width: 100%;
     max-width: none;
     margin: 0;
