@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-06T11:47:57.828Z",
+  "updatedAt": "2026-08-06T13:36:00+02:00",
   "provider": "manual-chatgpt",
   "scope": [
     "Cluster"
@@ -117,6 +117,22 @@
           "Vergleichsmatrix und Hub aktualisieren",
           "medizinische Grenzen und FAQ ergänzen",
           "interne Links und Audits prüfen"
+        ]
+      },
+      "visualBrief": {
+        "pageType": "comparison",
+        "subject": "Tractive-Gesundheitsfunktionen nach Modell",
+        "motifs": [
+          "klare Feature-Matrix CAT 6 Mini, DOG 6 und DOG 6 XL",
+          "Erklärgrafik zur siebentägigen Baseline und Trenddarstellung"
+        ],
+        "styleNotes": [
+          "keine Diagnosegrafik und keine medizinischen Warnfarben ohne fachliche Grundlage",
+          "mobile zuerst, wenige Labels, modellgenaue Aussagen"
+        ],
+        "referenceUrls": [
+          "https://help.tractive.com/hc/en-us/articles/360011024119-What-health-features-does-Tractive-track",
+          "https://help.tractive.com/hc/en-us/articles/25432487482770-What-is-Resting-Respiratory-Rate-monitoring"
         ]
       },
       "implementationBrief": {
@@ -315,6 +331,21 @@
           "Abovergleich korrigieren",
           "Notfallratgeber verlinken",
           "Fakten und Links prüfen"
+        ]
+      },
+      "visualBrief": {
+        "pageType": "manufacturer",
+        "subject": "Weenect Zusatzdienste 2026",
+        "motifs": [
+          "kompakte Leistungsübersicht für Garantie, Sorglos-Paket und Weenect Plus"
+        ],
+        "styleNotes": [
+          "keine Werbeaussagen übernehmen",
+          "Kosten, enthaltene Leistungen und Grenzen getrennt darstellen"
+        ],
+        "referenceUrls": [
+          "https://www.weenect.com/de/de/presse/weenect_plus/",
+          "https://www.weenect.com/de/de/presse/weenect-pack-serenity/"
         ]
       },
       "implementationBrief": {
@@ -534,6 +565,28 @@
           "Verfügbarkeit und App-Kosten manuell prüfen"
         ]
       },
+      "visualBrief": {
+        "pageType": "product",
+        "subject": "PETKIT Eversweet Ultra",
+        "motifs": [
+          "Premium Hero des originalgetreuen Produkts",
+          "Thumbnail",
+          "Front- und Dreiviertelansicht",
+          "Funktionsdetail mit getrenntem Frisch- und Abwassertank",
+          "Detail der integrierten Kamera",
+          "reale Nutzung durch zwei Katzen",
+          "Reinigungs- und Tankentnahme-Situation"
+        ],
+        "styleNotes": [
+          "Produkt nur anhand offizieller PETKIT-Referenzen darstellen",
+          "keine erfundenen Displays, LEDs oder Sensoren",
+          "jedes Bild einzeln ausgeben und robusten Weiter-Modus verwenden"
+        ],
+        "referenceUrls": [
+          "https://www.petkit.com/blogs/blog/introducing-eversweet-ultra-cat-water-fountain-with-wastewater-separation-system-and-ai-hydration-tracking",
+          "https://www.petkit.com/blogs/blog/ces-2026-petkit-showcases-future-of-pet-care-with-eversweet-ultra-and-more"
+        ]
+      },
       "implementationBrief": {
         "goal": "Die vorhandene Eversweet-Ultra-Seite bildet die im Mai 2026 veröffentlichten finalen Produktmerkmale, Grenzen und Wartungsfolgen vollständig ab und ist im Trinkbrunnenvergleich korrekt positioniert.",
         "problem": "Die offizielle 2026er Produktkommunikation beschreibt eine technisch neue Systemarchitektur und KI-Funktionen, die über die üblichen Daten eines smarten Trinkbrunnens hinausgehen.",
@@ -717,6 +770,30 @@
           "Links und Bildpfade prüfen"
         ]
       },
+      "visualBrief": {
+        "pageType": "guide",
+        "subject": "OnlyCat in Tür, Glas und Wand einbauen",
+        "motifs": [
+          "Hero mit eingebauter OnlyCat-Klappe in moderner Tür",
+          "Entscheidungsübersicht Tür, Glas und Wand",
+          "212-Millimeter-Glasausschnitt",
+          "170-mal-170-Millimeter-Wandausschnitt",
+          "korrekte Montagehöhe an einer Katze",
+          "Checkliste vor Beauftragung eines Glasers",
+          "App- und Door-Policy-Einrichtung"
+        ],
+        "styleNotes": [
+          "Maße müssen exakt und gut lesbar sein",
+          "Produktidentität ausschließlich anhand offizieller OnlyCat-Referenzen",
+          "jedes Bild einzeln ausgeben und robusten Weiter-Modus verwenden"
+        ],
+        "referenceUrls": [
+          "https://www.onlycat.com/installation-guide-doors/",
+          "https://www.onlycat.com/installation-guide-glass/",
+          "https://www.onlycat.com/installation-guide-walls/",
+          "https://www.onlycat.com/quick-start/"
+        ]
+      },
       "implementationBrief": {
         "goal": "Produktseite und Einbauratgeber führen Nutzer mit verifizierten Maßen und klaren Materialpfaden durch Planung, Montage und Inbetriebnahme der OnlyCat-Katzenklappe.",
         "problem": "Allgemeine Einbauhinweise reichen bei Glas, Wand und App-Einrichtung nicht aus; der Hersteller stellt inzwischen konkrete, getrennte Anleitungen bereit.",
@@ -883,6 +960,28 @@
           "zuerst PETLIBRO Scout, Furbo 360 und einen Enabot-Roboter als unterschiedliche Produktklassen abdecken",
           "Datenschutz- und Abo-Ratgeber integrieren",
           "interne Links aus dem Smart-Home-Hub aufbauen"
+        ]
+      },
+      "visualBrief": {
+        "pageType": "category",
+        "subject": "Haustierkameras für Hunde und Katzen",
+        "motifs": [
+          "Hero mit fester Kamera, Schwenk-Neige-Kamera und mobilem Kameraroboter",
+          "Vergleichsübersicht der drei Produktklassen",
+          "Entscheidungsbaum nach Beobachtung, Interaktion und Mobilität",
+          "Sichtfeld- und tote-Winkel-Grafik",
+          "Cloud-Abo- und Datenschutz-Checkliste",
+          "reale Nutzung mit Hund und Katze in getrennten Szenarien"
+        ],
+        "styleNotes": [
+          "keine Überwachungsästhetik und keine Angstkommunikation",
+          "Produktdarstellungen anhand offizieller Herstellerreferenzen",
+          "jedes Bild einzeln ausgeben und robusten Weiter-Modus verwenden"
+        ],
+        "referenceUrls": [
+          "https://de.petlibro.com/en/products/scout-smart-camera",
+          "https://furbo.com/eu-de/products/furbo-dog-cam-360",
+          "https://www.enabot.com/de/about-us"
         ]
       },
       "implementationBrief": {
@@ -1077,6 +1176,31 @@
           "Litter-Robot 5 Pro, PETKIT PUROBOT MAX PRO 2 und Neakasa M1 Plus als drei Systemtypen erfassen",
           "Sicherheits-, Platz- und Folgekostenwerkzeuge bauen",
           "Hersteller- und Produktseiten erst nach Primärquellenprüfung veröffentlichen"
+        ]
+      },
+      "visualBrief": {
+        "pageType": "category",
+        "subject": "Automatische und selbstreinigende Katzentoiletten",
+        "motifs": [
+          "Hero mit geschlossenem Trommelsystem und offenem System",
+          "Mechanikvergleich der Reinigungssysteme",
+          "Sicherheitszonen und Sensorprinzip",
+          "Größenvergleich mit durchschnittlicher und großer Katze",
+          "Platzbedarf im Badezimmer",
+          "Entscheidungsbaum nach Kitten, Großkatze, Mehrkatzenhaushalt und Streuart",
+          "Drei-Jahres-Kostenübersicht",
+          "Reinigungs- und Wartungscheckliste"
+        ],
+        "styleNotes": [
+          "keine Verniedlichung sicherheitskritischer Mechanik",
+          "Produktdetails nur anhand offizieller Herstellerbilder",
+          "keine medizinische Diagnosewirkung aus App-Daten ableiten",
+          "jedes Bild einzeln ausgeben und robusten Weiter-Modus verwenden"
+        ],
+        "referenceUrls": [
+          "https://www.whisker.com/litter-robot-5-pro",
+          "https://www.petkit.com/pages/why-purobot-max-pro-2-is-one-of-the-best-ai-powered-automatic-litter-boxes-for-multi-cat-households",
+          "https://neakasa.com/products/neakasa-m1-cat-litter-box"
         ]
       },
       "implementationBrief": {

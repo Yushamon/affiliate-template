@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { buildVisualGenerationPlan, type VisualGenerationPlan } from "./visual-generation";
+import { buildVisualGenerationPlan, type VisualGenerationPlan } from "./visual-generation.ts";
 
 export type GrowthImpact = 1 | 2 | 3 | 4 | 5;
 export type GrowthHorizon = "short-term" | "strategic";
@@ -29,6 +29,8 @@ export type GrowthOpportunity = {
   informationGain: string;
   sourceCount: number;
   implementationBrief: ImplementationBrief;
+  chatGptPrompt: string;
+  codexPrompt: string;
   implementationPrompt: string;
   visualPlan: VisualGenerationPlan;
   visualPrompt: string;
@@ -241,6 +243,52 @@ export const buildImplementationBrief = (item: any): ImplementationBrief => {
 const promptList = (title: string, entries: string[]): string[] =>
   entries.length ? [title, ...entries.map((entry) => `- ${entry}`), ""] : [];
 
+export const buildResearchChatGptPrompt = (
+  item: any,
+  brief = buildImplementationBrief(item)
+): string => [
+  "Du bist der externe Recherche- und Redaktionspartner für PfotenTechnik.de.",
+  "Arbeite mit aktiviertem Webzugriff. Du hast keinen Repository-Zugriff und sollst keinen Code oder Installer erzeugen.",
+  "Deine Aufgabe ist ein belastbares, direkt für die redaktionelle Entscheidung nutzbares Recherchepaket.",
+  "",
+  "RESEARCH-AUFTRAG",
+  text(item?.title, "Research-Aufgabe"),
+  "",
+  "ZIEL",
+  brief.goal,
+  "",
+  "BELEGTER AUSGANGSPUNKT",
+  brief.problem,
+  "",
+  "NUTZEN FÜR LESER",
+  brief.userValue,
+  "",
+  ...promptList("ZU PRÜFEN", brief.implementation),
+  ...promptList("BEKANNTE ROUTEN ODER DATEIEN", brief.files),
+  ...promptList("GRENZEN", brief.doNotChange),
+  "QUELLEN AUS DER VORRECHERCHE",
+  ...list<any>(item?.evidence).map((entry) =>
+    `- ${text(entry?.source, "Quelle")}: ${text(entry?.note)}${text(entry?.url) ? ` (${text(entry?.url)})` : ""}`
+  ),
+  "",
+  "ARBEITSWEISE",
+  "- Verifiziere zeitabhängige Fakten erneut im Web und priorisiere Primärquellen.",
+  "- Trenne bestätigte Fakten, belastbare Schlussfolgerungen und offene Fragen sichtbar.",
+  "- Erfinde keine Produktdaten, Suchvolumina, Tests oder Marktführerschaft.",
+  "- Prüfe zuerst Aktualisierung oder Konsolidierung bestehender Inhalte; empfehle neue Seiten nur bei eigenständiger Suchintention und Nutzeraufgabe.",
+  "- Liefere konkrete Formulierungs-, Struktur- und Entscheidungsbausteine, aber keinen generischen SEO-Ratgeber.",
+  "",
+  "AUSGABE",
+  "1. Entscheidung: aktualisieren, konsolidieren, neu anlegen, verwerfen oder offene Frage.",
+  "2. Bestätigte Fakten mit Quelle und direktem Link.",
+  "3. Konkrete redaktionelle Änderungen je betroffener Route.",
+  "4. Abhängigkeiten, Risiken und bewusst unveränderte Bereiche.",
+  "5. Objektive Akzeptanzkriterien für die spätere Umsetzung.",
+  "6. Offene Fragen, die sich nicht belastbar klären ließen.",
+  "",
+  "Antworte auf Deutsch, kompakt und entscheidungsreif. Beginne direkt mit der Entscheidung."
+].join("\n");
+
 export const PATCH_QUALITY_STANDARD = [
   "PATCH-QUALITÄTSSTANDARD",
   "",
@@ -374,6 +422,7 @@ export const buildWeeklyGrowthOpportunities = (
       const ranking = scoreItem(item, gscSignals);
             const implementationBrief = buildImplementationBrief(item);
             const visualPlan = buildVisualGenerationPlan(item);
+            const codexPrompt = buildResearchImplementationPrompt(item, implementationBrief);
 return {
         id: text(item?.id, "research-item"),
         title: text(item?.title, "Research-Chance"),
@@ -387,7 +436,9 @@ return {
         informationGain: informationGain(item),
         sourceCount: list(item?.evidence).length,
         implementationBrief,
-        implementationPrompt: buildResearchImplementationPrompt(item, implementationBrief),
+        chatGptPrompt: buildResearchChatGptPrompt(item, implementationBrief),
+        codexPrompt,
+        implementationPrompt: codexPrompt,
         visualPlan,
         visualPrompt: visualPlan.masterPrompt,
         gsc: gscData(ranking.row),
