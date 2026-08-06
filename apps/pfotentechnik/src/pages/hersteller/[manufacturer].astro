@@ -150,7 +150,7 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
 
   <div class="manufacturer-detail">
     <header class="manufacturer-hero">
-      <div>
+      <div class="manufacturer-hero__content">
         <span>Unsere Einschätzung</span>
         <h1>{manufacturer.name}</h1>
         <p class="recommendation">{manufacturer.recommendation}</p>
@@ -170,12 +170,13 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
         )}
       </div>
 
-      <OptimizedImage
-        src={manufacturer.images.hero.src}
-        alt={manufacturer.images.hero.alt ?? manufacturer.name}
-        layout="full-width"
-        priority
-      />
+      <div class="manufacturer-hero__media">
+        <OptimizedImage src={manufacturer.images.hero.src}
+                alt={manufacturer.images.hero.alt ?? manufacturer.name}
+                layout="full-width"
+                priority
+              />
+      </div>
     </header>
 
     <section class="manufacturer-stats" aria-label="Herstellerkennzahlen">
@@ -309,167 +310,6 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
 
     <FAQ items={manufacturer.faq} />
   </div>
-<style is:global>
-/* PT manufacturer hero media 4.2.0 */
-:is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ display:grid!important; place-items:center!important; width:100%; min-width:0; min-height:0!important; aspect-ratio:16/9; padding:clamp(.75rem,2.5vw,1.25rem); overflow:hidden; border-radius:inherit; background:#f7f8fa; }
-:is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture img,figure img,.hero-media img,.manufacturer-hero__media img,>img){ display:block!important; width:100%!important; height:100%!important; max-width:min(100%,1120px)!important; max-height:100%!important; margin:auto!important; object-fit:contain!important; object-position:center center!important; transform:none!important; }
-@media(max-width:720px){ :is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ aspect-ratio:4/3; max-height:56svh; padding:.65rem; } }
-:is(html.dark,html[data-theme="dark"],html[data-color-scheme="dark"],html[data-mode="dark"]) :is(.manufacturer-hero,.manufacturer-header,.brand-hero,[data-manufacturer-hero],[class*="manufacturer-hero"],[class*="brand-hero"]) :is(picture,figure,.hero-media,.manufacturer-hero__media,[class*="hero__media"],[class*="hero-media"]){ border:1px solid #314960; background:#f7f8fa; }
-/* End PT manufacturer hero media 4.2.0 */
-</style>
-
-<style is:global>
-/* PT manufacturer media and score 4.3.0 */
-
-:root {
-  --pt-manufacturer-hero-max: 340px;
-  --pt-manufacturer-hero-mobile-max: 230px;
-}
-
-:is(
-  .manufacturer-hero,
-  .manufacturer-header,
-  .brand-hero,
-  [data-manufacturer-hero],
-  [class*="manufacturer-hero"],
-  [class*="brand-hero"]
-) :is(
-  picture,
-  figure,
-  .hero-media,
-  .manufacturer-hero__media,
-  [class*="hero__media"],
-  [class*="hero-media"]
-) {
-  display: grid !important;
-  place-items: center !important;
-  width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: var(--pt-manufacturer-hero-max) !important;
-  aspect-ratio: 16 / 9 !important;
-  padding: clamp(.55rem, 1.8vw, .9rem) !important;
-  overflow: hidden !important;
-  background: #f7f8fa !important;
-}
-
-:is(
-  .manufacturer-hero,
-  .manufacturer-header,
-  .brand-hero,
-  [data-manufacturer-hero],
-  [class*="manufacturer-hero"],
-  [class*="brand-hero"]
-) :is(
-  picture img,
-  figure img,
-  .hero-media img,
-  .manufacturer-hero__media img,
-  [class*="hero__media"] img,
-  [class*="hero-media"] img,
-  > img
-) {
-  display: block !important;
-  width: auto !important;
-  height: auto !important;
-  max-width: 100% !important;
-  max-height: calc(var(--pt-manufacturer-hero-max) - 1.2rem) !important;
-  margin: auto !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  transform: none !important;
-}
-
-:is(
-  .manufacturer-hero,
-  .manufacturer-header,
-  .brand-hero,
-  [data-manufacturer-hero],
-  [class*="manufacturer-hero"],
-  [class*="brand-hero"]
-) {
-  overflow: hidden;
-}
-
-@media (max-width: 720px) {
-  :is(
-    .manufacturer-hero,
-    .manufacturer-header,
-    .brand-hero,
-    [data-manufacturer-hero],
-    [class*="manufacturer-hero"],
-    [class*="brand-hero"]
-  ) :is(
-    picture,
-    figure,
-    .hero-media,
-    .manufacturer-hero__media,
-    [class*="hero__media"],
-    [class*="hero-media"]
-  ) {
-    max-height: var(--pt-manufacturer-hero-mobile-max) !important;
-    aspect-ratio: 16 / 10 !important;
-    padding: .45rem !important;
-  }
-
-  :is(
-    .manufacturer-hero,
-    .manufacturer-header,
-    .brand-hero,
-    [data-manufacturer-hero],
-    [class*="manufacturer-hero"],
-    [class*="brand-hero"]
-  ) :is(
-    picture img,
-    figure img,
-    .hero-media img,
-    .manufacturer-hero__media img,
-    [class*="hero__media"] img,
-    [class*="hero-media"] img,
-    > img
-  ) {
-    max-height: calc(var(--pt-manufacturer-hero-mobile-max) - .9rem) !important;
-  }
-}
-
-.pt-normalized-score {
-  display: inline-flex !important;
-  align-items: baseline;
-  gap: .18em;
-  font-weight: 800 !important;
-  color: #198a46 !important;
-  white-space: nowrap;
-}
-
-.pt-normalized-score__value {
-  font-size: 1.15em;
-  line-height: 1;
-}
-
-.pt-normalized-score__scale {
-  font-size: .68em;
-  line-height: 1;
-  opacity: .9;
-}
-
-:is(
-  .manufacturer-rating,
-  .brand-rating,
-  .manufacturer-card__rating,
-  [class*="manufacturer"][class*="rating"],
-  [class*="brand"][class*="rating"]
-) :is(
-  .stars,
-  .star,
-  [aria-label*="Stern"],
-  [aria-label*="star"]
-) {
-  display: none !important;
-}
-
-/* End PT manufacturer media and score 4.3.0 */
-</style>
-
 <script is:inline>
 (() => {
   const normalize = (root = document) => {
@@ -552,6 +392,178 @@ const manufacturerNextSteps = buildManufacturerNextSteps({
 })();
 </script>
 
+<style is:global>
+/* pfotentechnik-manufacturer-hero-layout-30.0.1 */
+.manufacturer-detail {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  min-width: 0;
+}
+
+.manufacturer-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 42%);
+  grid-template-areas: "content media";
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  min-width: 0;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  overflow: hidden;
+  border: 1px solid var(--pt-color-border);
+  border-radius: clamp(1.25rem, 3vw, 2rem);
+  background: var(--pt-color-surface);
+}
+
+.manufacturer-hero__content {
+  grid-area: content;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.manufacturer-hero__content > span {
+  color: var(--pt-color-primary);
+  font-size: .875rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.manufacturer-hero h1 {
+  margin: 0;
+  max-width: 12ch;
+  color: var(--pt-color-text);
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  line-height: .95;
+  overflow-wrap: anywhere;
+}
+
+.manufacturer-hero p {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--pt-color-text-muted);
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.manufacturer-hero .recommendation {
+  color: var(--pt-color-text);
+  font-weight: 700;
+}
+
+.manufacturer-hero .rating {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.manufacturer-hero .rating strong {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.manufacturer-hero .rating span {
+  color: var(--pt-color-text-muted);
+  font-size: .875rem;
+}
+
+.manufacturer-hero .website {
+  width: fit-content;
+  color: var(--pt-color-primary);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.manufacturer-hero .website:hover {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.manufacturer-hero__media {
+  grid-area: media;
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: var(--pt-color-surface-subtle, #f7f8fa);
+}
+
+.manufacturer-hero__media picture {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  padding: clamp(.75rem, 2vw, 1.5rem);
+}
+
+.manufacturer-hero__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 34rem;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+}
+
+@media (max-width: 820px) {
+  .manufacturer-hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "content"
+      "media";
+    align-items: start;
+    gap: 1.25rem;
+    padding: clamp(1.25rem, 5vw, 1.75rem);
+  }
+
+  .manufacturer-hero h1 {
+    max-width: none;
+    font-size: clamp(2.6rem, 13vw, 4.25rem);
+    line-height: .98;
+  }
+
+  .manufacturer-hero__media {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .manufacturer-hero__media picture {
+    min-height: 0;
+    padding: .75rem;
+  }
+
+  .manufacturer-hero__media img {
+    max-height: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .manufacturer-hero {
+    border-radius: 1.5rem;
+  }
+
+  .manufacturer-hero__content {
+    gap: .8rem;
+  }
+
+  .manufacturer-hero__media {
+    aspect-ratio: 1 / 1;
+  }
+}
+/* End pfotentechnik-manufacturer-hero-layout-30.0.1 */
+</style>
 </ProjectLayout>
 
 <style>
