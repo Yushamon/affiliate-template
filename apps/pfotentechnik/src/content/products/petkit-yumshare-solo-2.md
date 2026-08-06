@@ -65,11 +65,11 @@ images:
     - src: ../../assets/images/products/petkit-yumshare-solo-2/gallery-3.webp
       alt: PETKIT YumShare Solo 2 an einem Katzenfutterplatz
 price:
-  current: 179.99
+  current: 119
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 16 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-03T08:16:21.943Z"
+  checkedAt: "2026-08-06T09:02:38.220Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -84,12 +84,12 @@ rating: 4.1
 score: 82
 
 priceState: "available"
-priceUpdated: "2026-08-03T08:16:21.943Z"
+priceUpdated: "2026-08-06T09:02:38.220Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-03T08:16:21.943Z"
+availabilityUpdated: "2026-08-06T09:02:38.220Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

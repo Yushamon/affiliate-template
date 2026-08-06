@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
       alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung
 price:
-  current: 68.9
+  current: 68.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-03T08:16:52.786Z"
+  checkedAt: "2026-08-06T09:03:21.995Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,12 +77,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-08-03T08:16:52.786Z"
+priceUpdated: "2026-08-06T09:03:21.995Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-03T08:16:52.786Z"
+availabilityUpdated: "2026-08-06T09:03:21.995Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

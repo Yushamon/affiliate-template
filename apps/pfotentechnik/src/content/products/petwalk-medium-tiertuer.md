@@ -32,14 +32,14 @@ images:
     - { src: "../../assets/images/products/petwalk-medium-tiertuer/scale.svg", alt: "Passformprüfung der petWALK Medium Tiertür" }
     - { src: "../../assets/images/products/petwalk-medium-tiertuer/limitation.svg", alt: "Grenzen der petWALK Medium Tiertür" }
 price:
-  current: 2420
+  current: 2016.67
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-06T07:17:38.191Z"
+  checkedAt: "2026-08-06T09:03:10.678Z"
   source:
-    id: "manual"
-    label: "petWALK Österreich"
-    type: "manual"
+    id: "petwalk.at"
+    label: "petwalk.at"
+    type: "merchant"
 affiliate:
   provider: "petwalk-at"
   label: "Aktuellen Preis prüfen"
@@ -50,12 +50,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-08-06T07:17:38.191Z"
+priceUpdated: "2026-08-06T09:03:10.678Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityReason: "Am 04.08.2026 im deutschsprachigen Hersteller-Konfigurator für den EU-Markt angeboten."
-availabilityUpdated: "2026-08-06T07:17:38.191Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-06T09:03:10.678Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
