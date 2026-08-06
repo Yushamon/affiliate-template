@@ -20,6 +20,11 @@ export type SeoQueryRow = SeoMetricValues & {
   query: string;
 };
 
+export type SeoPageQueryRow = SeoMetricValues & {
+  page: string;
+  query: string;
+};
+
 export type SeoTrendRow = SeoMetricValues & {
   date: string;
 };
@@ -52,6 +57,7 @@ export type SeoRange = {
   };
   pages: SeoPageRow[];
   queries: SeoQueryRow[];
+  pageQueries: SeoPageQueryRow[];
   trend: SeoTrendRow[];
   recommendations: SeoRecommendation[];
 };
@@ -198,6 +204,20 @@ const normalizeQueries = (value: unknown): SeoQueryRow[] => {
   return [...rows.values()].sort((a, b) => b.impressions - a.impressions || b.clicks - a.clicks);
 };
 
+const normalizePageQueries = (value: unknown): SeoPageQueryRow[] => {
+  const rows = new Map<string, SeoPageQueryRow>();
+  for (const item of arrayValue(value)) {
+    if (!isObject(item)) continue;
+    const page = normalizeSeoPath(item.page);
+    const query = stringValue(item.query).replace(/\s+/g, " ");
+    if (!query) continue;
+    const candidate: SeoPageQueryRow = { page, query, ...normalizeMetrics(item) };
+    const key = `${page}\u0000${query.toLocaleLowerCase("de-DE")}`;
+    rows.set(key, preferMoreInformative(rows.get(key), candidate));
+  }
+  return [...rows.values()].sort((a, b) => b.impressions - a.impressions || b.clicks - a.clicks);
+};
+
 const normalizeTrend = (value: unknown): SeoTrendRow[] => {
   const rows = new Map<string, SeoTrendRow>();
   for (const item of arrayValue(value)) {
@@ -264,6 +284,7 @@ const normalizeRange = (
     },
     pages: normalizePages(value.pages, duplicateMap),
     queries: normalizeQueries(value.queries),
+    pageQueries: normalizePageQueries(value.pageQueries),
     trend: normalizeTrend(value.trend),
     recommendations: normalizeRecommendations(value.recommendations),
   };

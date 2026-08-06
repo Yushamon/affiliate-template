@@ -13,6 +13,7 @@ export interface SearchMetricValues {
 export type SearchMetricChange = SearchMetricValues;
 export interface SearchPageRow extends SearchMetricValues { page: string; }
 export interface SearchQueryRow extends SearchMetricValues { query: string; }
+export interface SearchPageQueryRow extends SearchMetricValues { page: string; query: string; }
 export interface SearchTrendRow extends SearchMetricValues { date: string; }
 
 export interface SearchRecommendation {
@@ -38,6 +39,7 @@ export interface SearchRange {
   metrics: { current: SearchMetricValues; previous: SearchMetricValues; change: SearchMetricChange };
   pages: SearchPageRow[];
   queries: SearchQueryRow[];
+  pageQueries?: SearchPageQueryRow[];
   trend: SearchTrendRow[];
   recommendations: SearchRecommendation[];
 }

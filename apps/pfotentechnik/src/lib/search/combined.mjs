@@ -47,13 +47,38 @@ function mergeTrend(googleRows = [], bingRows = []) {
   return [...groups.entries()].map(([date, providers]) => ({ date, ...combineMetricValues(Object.values(providers)), sources: Object.keys(providers), providers })).sort((a, b) => a.date.localeCompare(b.date));
 }
 
-function differenceRecommendations(pages, queries, bingRange, bingStale) {
+const COMPARABLE_PROVIDER_IMPRESSIONS = 20;
+const COMPARABLE_ROW_IMPRESSIONS = 20;
+
+function differenceRecommendations(pages, googleRange, bingRange, bingStale) {
   const result = [];
-  for (const row of [...pages, ...queries]) {
-    const target = row.page || row.query; const field = row.page ? { page: row.page } : { page: "", query: row.query };
-    if (row.providers.bing && !row.providers.google && row.providers.bing.impressions > 0) result.push({ priority: "medium", type: "bing-only-visibility", title: "Nur bei Bing sichtbar", ...field, reason: `Für „${target}“ liegen im Zeitraum Bing-Impressionen, aber keine Google-Impressionen im Datensatz vor.`, action: "Google-Sichtbarkeit separat prüfen; fehlende Trafficdaten nicht als fehlende Indexierung interpretieren." });
-    if (row.providers.google && !row.providers.bing && row.providers.google.impressions > 0) result.push({ priority: "low", type: "google-only-visibility", title: "Keine Bing-Impressionen im Zeitraum", ...field, reason: `Für „${target}“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.`, action: "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen." });
+  const googleImpressions = number(googleRange?.metrics?.current?.impressions);
+  const bingImpressions = number(bingRange?.metrics?.current?.impressions);
+  const trafficComparable = Boolean(
+    googleRange
+    && bingRange
+    && !bingStale
+    && googleImpressions >= COMPARABLE_PROVIDER_IMPRESSIONS
+    && bingImpressions >= COMPARABLE_PROVIDER_IMPRESSIONS
+  );
+
+  if (googleRange && bingRange && !trafficComparable && !bingStale) {
+    result.push({
+      priority: "low",
+      type: "provider-comparison-unavailable",
+      title: "Provider-Vergleich nicht belastbar",
+      page: "",
+      reason: `Google liefert ${googleImpressions}, Bing ${bingImpressions} Impressionen im Zeitraum. Einzelne Sichtbarkeitslücken werden deshalb nicht als Findings ausgegeben.`,
+      action: "Erst nach ausreichender Trafficabdeckung beider Provider Unterschiede auf Seitenebene bewerten.",
+    });
+  }
+
+  for (const row of trafficComparable ? pages : []) {
+    const target = row.page; const field = { page: row.page };
+    if (row.providers.bing && !row.providers.google && row.providers.bing.impressions >= COMPARABLE_ROW_IMPRESSIONS) result.push({ priority: "medium", type: "bing-only-visibility", title: "Nur bei Bing sichtbar", ...field, reason: `Für „${target}“ liegen im Zeitraum Bing-Impressionen, aber keine Google-Impressionen im Datensatz vor.`, action: "Google-Sichtbarkeit separat prüfen; fehlende Trafficdaten nicht als fehlende Indexierung interpretieren." });
+    if (row.providers.google && !row.providers.bing && row.providers.google.impressions >= COMPARABLE_ROW_IMPRESSIONS) result.push({ priority: "low", type: "google-only-visibility", title: "Keine Bing-Impressionen im Zeitraum", ...field, reason: `Für „${target}“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.`, action: "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen." });
     if (row.providers.google && row.providers.bing) {
+      if (row.providers.google.impressions < COMPARABLE_ROW_IMPRESSIONS || row.providers.bing.impressions < COMPARABLE_ROW_IMPRESSIONS) continue;
       const ctrDiff = Math.abs(row.providers.google.ctr - row.providers.bing.ctr); const posDiff = row.providers.google.position !== null && row.providers.bing.position !== null ? Math.abs(row.providers.google.position - row.providers.bing.position) : 0;
       if (ctrDiff >= 2) result.push({ priority: "medium", type: "provider-ctr-gap", title: "Deutliche CTR-Differenz", ...field, reason: `Google ${row.providers.google.ctr.toFixed(2)} %, Bing ${row.providers.bing.ctr.toFixed(2)} %.`, action: "Snippets und Suchintention providerbezogen vergleichen." });
       if (posDiff >= 5) result.push({ priority: "medium", type: "provider-position-gap", title: "Deutliche Positionsdifferenz", ...field, reason: `Google Position ${row.providers.google.position}, Bing Position ${row.providers.bing.position}.`, action: "Provider-spezifische Rankings und interne Signale vergleichen." });
@@ -62,7 +87,7 @@ function differenceRecommendations(pages, queries, bingRange, bingStale) {
   if (bingStale) result.push({ priority: "low", type: "bing-stale", title: "Bing-Daten veraltet", page: "", reason: "Combined enthält den letzten gültigen Bing-Datenstand.", action: "Bing-Sync und Datenalter prüfen; kurzfristige Vergleiche zurückhaltend bewerten." });
   const crawlErrors = (bingRange?.crawl || []).reduce((sum, row) => sum + number(row.crawlErrors) + number(row.code5xx), 0);
   if (crawlErrors) result.push({ priority: "high", type: "bing-crawl", title: "Bing-Crawl-Hinweise prüfen", page: "", reason: `${crawlErrors} gelieferte Crawl-/5xx-Hinweise im Zeitraum.`, action: "Bing-Crawl-Daten und betroffene URLs im Webmaster-Portal prüfen." });
-  return result.slice(0, 150);
+  return result.slice(0, 30);
 }
 
 export function buildCombinedDashboard({ google = null, bing = null, staleProviders = [], generatedAt = new Date().toISOString() }) {
@@ -77,10 +102,14 @@ export function buildCombinedDashboard({ google = null, bing = null, staleProvid
     ranges[key] = {
       key, label: googleRange?.label || bingRange?.label || key, startDate: googleRange?.startDate || bingRange?.startDate || "", endDate: googleRange?.endDate || bingRange?.endDate || "",
       comparisonStartDate: googleRange?.comparisonStartDate || bingRange?.comparisonStartDate || "", comparisonEndDate: googleRange?.comparisonEndDate || bingRange?.comparisonEndDate || "",
-      dataState: "combined", partial: staleProviders.length > 0, lowData: current.impressions < 100, metrics: { current, previous, change }, pages, queries,
+      dataState: "combined", partial: staleProviders.length > 0, lowData: current.impressions < 100, metrics: { current, previous, change }, pages, queries, pageQueries: googleRange?.pageQueries || [],
       trend: mergeTrend(googleRange?.trend, bingRange?.trend), crawl: bingRange?.crawl || [],
-      recommendations: [...(googleRange?.recommendations || []).map((item) => ({ ...item, source: "google" })), ...(bingRange?.recommendations || []).map((item) => ({ ...item, source: "bing" })), ...differenceRecommendations(pages, queries, bingRange, staleProviders.includes("bing"))],
-      providerAvailability: { google: Boolean(googleRange), bing: Boolean(bingRange), stale: staleProviders },
+      recommendations: [...(googleRange?.recommendations || []).map((item) => ({ ...item, source: "google" })), ...(bingRange?.recommendations || []).map((item) => ({ ...item, source: "bing" })), ...differenceRecommendations(pages, googleRange, bingRange, staleProviders.includes("bing"))],
+      providerAvailability: {
+        google: Boolean(googleRange), bing: Boolean(bingRange),
+        trafficComparable: Boolean(googleRange && bingRange && !staleProviders.includes("bing") && number(googleRange?.metrics?.current?.impressions) >= COMPARABLE_PROVIDER_IMPRESSIONS && number(bingRange?.metrics?.current?.impressions) >= COMPARABLE_PROVIDER_IMPRESSIONS),
+        stale: staleProviders,
+      },
     };
   }
   const dataUpdatedAt = { google: google?.generatedAt || null, bing: bing?.dataUpdatedAt || bing?.generatedAt || null };

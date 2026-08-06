@@ -115,6 +115,7 @@ test("Google-Range verarbeitet gemockte API-Daten ohne echte Zugangsdaten", asyn
     },
     async queryAll(_property, body) {
       const dimension = body.dimensions[0];
+      if (body.dimensions.length === 2) return { rows: [{ keys: ["https://pfotentechnik.de/a/", " GPS  Tracker "], clicks: 4, impressions: 100, ctr: .04, position: 9 }] };
       if (dimension === "page") return { rows: [{ keys: ["https://www.pfotentechnik.de/a/?utm=x"], clicks: 2, impressions: 50, ctr: .04, position: 8 }, { keys: ["https://pfotentechnik.de/a/#x"], clicks: 2, impressions: 50, ctr: .04, position: 10 }] };
       if (dimension === "query") return { rows: [{ keys: [" GPS  Tracker "], clicks: 4, impressions: 100, ctr: .04, position: 9 }] };
       return { rows: [{ keys: ["2026-07-01"], clicks: 4, impressions: 100, ctr: .04, position: 9 }] };
@@ -125,6 +126,8 @@ test("Google-Range verarbeitet gemockte API-Daten ohne echte Zugangsdaten", asyn
   assert.equal(range.pages.length, 1);
   assert.equal(range.pages[0].position, 9);
   assert.equal(range.queries[0].query, "GPS Tracker");
+  assert.deepEqual(range.pageQueries[0], { page: "/a/", query: "GPS Tracker", clicks: 4, impressions: 100, ctr: 4, position: 9 });
+  assert.equal(range.recommendations[0].query, "GPS Tracker");
   assert.equal(range.lowData, false);
 });
 
@@ -200,6 +203,35 @@ test("Combined funktioniert mit nur Google, nur Bing und veralteten Bing-Daten",
   assert.equal(buildCombinedDashboard({ bing }).ranges["7d"].metrics.current.clicks, 2);
   assert.equal(buildCombinedDashboard({ google, bing, staleProviders: ["bing"] }).providerStatus.bing, "stale");
   assert.deepEqual(combineMetricValues([null, { clicks: 2, impressions: 20, position: 7 }]), { clicks: 2, impressions: 20, ctr: 10, position: 7 });
+});
+
+test("Combined erzeugt bei vollständig fehlenden Bing-Trafficdaten keine Findings pro Google-Zeile", () => {
+  const google = providerPayload("google", { clicks: 2, impressions: 100, ctr: 2, position: 10 }, {
+    pages: [
+      { page: "/a/", clicks: 1, impressions: 60, ctr: 1.67, position: 9 },
+      { page: "/b/", clicks: 1, impressions: 40, ctr: 2.5, position: 12 },
+    ],
+    queries: [{ query: "beispiel", clicks: 1, impressions: 40, ctr: 2.5, position: 8 }],
+  });
+  const bing = providerPayload("bing", { clicks: 0, impressions: 0, ctr: 0, position: null });
+  const range = buildCombinedDashboard({ google, bing }).ranges["7d"];
+  assert.equal(range.providerAvailability.trafficComparable, false);
+  assert.equal(range.recommendations.filter((item) => item.type === "google-only-visibility").length, 0);
+  assert.equal(range.recommendations.filter((item) => item.type === "provider-comparison-unavailable").length, 1);
+});
+
+test("Combined vergleicht Provider nur bei ausreichender Abdeckung und nur auf Seitenebene", () => {
+  const google = providerPayload("google", { clicks: 2, impressions: 100, ctr: 2, position: 10 }, {
+    pages: [{ page: "/a/", clicks: 1, impressions: 30, ctr: 3.33, position: 9 }],
+    queries: [{ query: "nicht als finding", clicks: 1, impressions: 30, ctr: 3.33, position: 8 }],
+  });
+  const bing = providerPayload("bing", { clicks: 2, impressions: 100, ctr: 2, position: 10 });
+  const range = buildCombinedDashboard({ google, bing }).ranges["7d"];
+  assert.equal(range.providerAvailability.trafficComparable, true);
+  assert.deepEqual(
+    range.recommendations.filter((item) => item.type === "google-only-visibility").map((item) => item.page),
+    ["/a/"],
+  );
 });
 
 test("Provider-Gesamtstatus unterscheidet Erfolg, Teilerfolg, Fehler und Skip", () => {

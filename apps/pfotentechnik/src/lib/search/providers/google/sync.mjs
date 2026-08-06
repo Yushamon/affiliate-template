@@ -25,18 +25,38 @@ function apiRows(rows, field) {
   }));
 }
 
-function recommendations(pages) {
-  const rows = [];
-  for (const page of pages) {
-    if (page.position >= 8 && page.position <= 20 && page.impressions >= 20) rows.push({
-      priority: "high", type: "quick-win", title: "Top-10-Chance", page: page.page,
-      reason: `${page.impressions} Impressionen bei Position ${page.position.toFixed(1)}`,
-      action: "Suchintention vertiefen und passende interne Links aus Hubs oder Cornerstones setzen.",
+function pageQueryRows(rows) {
+  const groups = new Map();
+  for (const row of rows || []) {
+    const page = normalizeUrl(row.keys?.[0] || "");
+    const query = normalizeQuery(row.keys?.[1] || "").original;
+    if (!page || !query) continue;
+    const key = `${page}\u0000${normalizeQuery(query).key}`;
+    const group = groups.get(key) || { page, query, rows: [] };
+    group.rows.push({
+      clicks: Number(row.clicks || 0),
+      impressions: Number(row.impressions || 0),
+      position: Number(Number(row.position || 0).toFixed(1)),
     });
-    if (page.impressions >= 50 && page.position <= 15 && page.ctr < 2.5) rows.push({
-      priority: "medium", type: "ctr", title: "Snippet optimieren", page: page.page,
-      reason: `${page.impressions} Impressionen bei ${page.ctr.toFixed(2)} % CTR`,
-      action: "Title und Description auf Nutzen, Suchintention und Differenzierung ausrichten.",
+    groups.set(key, group);
+  }
+  return [...groups.values()]
+    .map(({ page, query, rows: grouped }) => ({ page, query, ...summarizeMetrics(grouped) }))
+    .sort((a, b) => b.impressions - a.impressions || b.clicks - a.clicks);
+}
+
+function recommendations(pageQueries) {
+  const rows = [];
+  for (const row of pageQueries) {
+    if (row.position >= 8 && row.position <= 20 && row.impressions >= 20) rows.push({
+      priority: row.impressions >= 50 ? "high" : "medium", type: "quick-win", title: `Top-10-Chance für „${row.query}“`, page: row.page, query: row.query,
+      reason: `${row.impressions} Impressionen bei Position ${row.position.toFixed(1)}`,
+      action: "Landingpage gegen die konkrete Suchintention prüfen und nur passende interne Signale stärken.",
+    });
+    if (row.impressions >= 50 && row.position <= 15 && row.ctr < 2.5) rows.push({
+      priority: "medium", type: "ctr", title: `Snippet für „${row.query}“ prüfen`, page: row.page, query: row.query,
+      reason: `${row.impressions} Impressionen bei ${row.ctr.toFixed(2)} % CTR und Position ${row.position.toFixed(1)}`,
+      action: "Title und Description gegen diese konkrete Suchintention und die aktuelle Landingpage prüfen.",
     });
   }
   return rows.slice(0, 100);
@@ -54,20 +74,22 @@ export async function loadGoogleRange(client, property, key, label, days, progre
     client.query(property, { ...base, startDate: isoDate(previousStart), endDate: isoDate(previousEnd) }),
   ]);
   progress?.({ step: `details-${key}`, message: `${label}: Seiten, Queries und Trend werden geladen.` });
-  const [pagesRaw, queriesRaw, trendRaw] = await Promise.all([
+  const [pagesRaw, queriesRaw, pageQueriesRaw, trendRaw] = await Promise.all([
     client.queryAll(property, { ...base, startDate: isoDate(start), endDate: isoDate(end), dimensions: ["page"] }),
     client.queryAll(property, { ...base, startDate: isoDate(start), endDate: isoDate(end), dimensions: ["query"] }),
+    client.queryAll(property, { ...base, startDate: isoDate(start), endDate: isoDate(end), dimensions: ["page", "query"] }),
     client.queryAll(property, { ...base, startDate: isoDate(start), endDate: isoDate(end), dimensions: ["date"] }, { maxRows: 400 }),
   ]);
   const current = summarizeMetrics(apiRows(currentRaw.rows, "metric"));
   const previous = summarizeMetrics(apiRows(previousRaw.rows, "metric"));
   const pages = mergeMetricRows(apiRows(pagesRaw.rows, "page").map((row) => ({ ...row, page: normalizeUrl(row.page) })), "page");
   const queries = mergeMetricRows(apiRows(queriesRaw.rows, "query").map((row) => ({ ...row, query: normalizeQuery(row.query).original })), "query");
+  const pageQueries = pageQueryRows(pageQueriesRaw.rows);
   const trend = apiRows(trendRaw.rows, "date").sort((a, b) => a.date.localeCompare(b.date));
   return {
     key, label, startDate: isoDate(start), endDate: isoDate(end), comparisonStartDate: isoDate(previousStart), comparisonEndDate: isoDate(previousEnd),
     dataState: "all", partial: Boolean(currentRaw.metadata?.first_incomplete_date), lowData: current.impressions < 100,
-    metrics: { current, previous, change: metricChange(current, previous) }, pages, queries, trend, recommendations: recommendations(pages),
+    metrics: { current, previous, change: metricChange(current, previous) }, pages, queries, pageQueries, trend, recommendations: recommendations(pageQueries),
   };
 }
 

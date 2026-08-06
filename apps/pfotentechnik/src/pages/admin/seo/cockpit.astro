@@ -156,28 +156,28 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
         return article;
       }));
 
-      const quickWins = (data.pages || [])
-        .filter((row: any) => row.position >= 8 && row.position <= 20 && row.impressions >= 20)
+      const quickWins = (data.recommendations || [])
+        .filter((item: any) => item.type === "quick-win")
         .slice(0, 20);
       const quickWinList = root.querySelector<HTMLElement>("[data-quick-wins]");
       quickWinList?.replaceChildren(...(
         quickWins.length
           ? quickWins.map((row: any) => listItem(
-              cleanUrl(row.page),
-              `${number.format(row.impressions)} Impressionen · Position ${row.position.toFixed(1)} · CTR ${row.ctr.toFixed(2)} %`,
+              `${cleanUrl(row.page)}${row.query ? ` · ${row.query}` : ""}`,
+              `${row.reason} · ${row.action}`,
             ))
           : [listItem("Keine Quick Wins", "Für diesen Zeitraum wurde kein belastbarer Treffer gefunden.")]
       ));
 
-      const weakCtr = (data.pages || [])
-        .filter((row: any) => row.impressions >= 20 && row.ctr < 2.5)
+      const weakCtr = (data.recommendations || [])
+        .filter((item: any) => item.type === "ctr")
         .slice(0, 20);
       const weakCtrList = root.querySelector<HTMLElement>("[data-weak-ctr]");
       weakCtrList?.replaceChildren(...(
         weakCtr.length
           ? weakCtr.map((row: any) => listItem(
-              cleanUrl(row.page),
-              `${number.format(row.impressions)} Impressionen · CTR ${row.ctr.toFixed(2)} % · Position ${row.position.toFixed(1)}`,
+              `${cleanUrl(row.page)}${row.query ? ` · ${row.query}` : ""}`,
+              `${row.reason} · ${row.action}`,
             ))
           : [listItem("Keine auffälligen Seiten", "Keine Seite liegt unter dem Schwellenwert.")]
       ));
@@ -194,7 +194,9 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
         return tr;
       }));
 
-      const recommendations = (data.recommendations || []).slice(0, 20);
+      const recommendations = (data.recommendations || [])
+        .filter((item: any) => !["quick-win", "ctr"].includes(item.type))
+        .slice(0, 20);
       const recommendationList = root.querySelector<HTMLElement>("[data-recommendations]");
       recommendationList?.replaceChildren(...(
         recommendations.length

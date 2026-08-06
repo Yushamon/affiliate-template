@@ -1,52 +1,52 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-04T12:44:53.062Z",
+  "generatedAt": "2026-08-06T09:54:42.050Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-07-28",
-  "endDate": "2026-08-03",
-  "comparisonStartDate": "2026-07-21",
-  "comparisonEndDate": "2026-07-27",
+  "startDate": "2026-07-30",
+  "endDate": "2026-08-05",
+  "comparisonStartDate": "2026-07-23",
+  "comparisonEndDate": "2026-07-29",
   "dataState": "all",
   "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
       "clicks": 0,
-      "impressions": 18,
+      "impressions": 13,
       "ctr": 0,
-      "position": 46.8
+      "position": 35.8
     },
     "previous": {
-      "clicks": 9,
-      "impressions": 250,
-      "ctr": 3.6,
-      "position": 21
+      "clicks": 3,
+      "impressions": 160,
+      "ctr": 1.88,
+      "position": 27.3
     },
     "change": {
       "clicks": -100,
-      "impressions": -92.8,
-      "ctr": -3.6,
-      "position": -25.8
+      "impressions": -91.9,
+      "ctr": -1.88,
+      "position": -8.5
     }
   },
   "pages": [
     {
-      "page": "/futterautomat-fuer-zwei-katzen/",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 74.2
-    },
-    {
       "page": "/futterautomat-katze/",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 54.7
+      "position": 59
+    },
+    {
+      "page": "/futterautomat-fuer-zwei-katzen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
     },
     {
       "page": "/futterautomat-im-urlaub/",
@@ -61,13 +61,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 23
-    },
-    {
-      "page": "/hund-trinkt-zu-wenig/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 99
     },
     {
       "page": "/produkt/pawbby-smart-pet-feeder/",
@@ -98,6 +91,13 @@
       "position": 1
     },
     {
+      "page": "/trockenfutter-oder-nassfutter-hund/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
       "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
       "clicks": 0,
       "impressions": 1,
@@ -121,20 +121,6 @@
   ],
   "queries": [
     {
-      "query": "mehrkatzenhaushalt fütterung",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 91
-    },
-    {
-      "query": "futterautomat 2 katzen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 51
-    },
-    {
       "query": "futterautomat für 2 katzen",
       "clicks": 0,
       "impressions": 1,
@@ -156,18 +142,11 @@
       "position": 55
     },
     {
-      "query": "hund trinkt zu wenig symptome",
+      "query": "hund nur trockenfutter",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 99
-    },
-    {
-      "query": "katze futterautomat nassfutter",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 46
+      "position": 92
     },
     {
       "query": "nassfutterautomat für katzen",
@@ -184,21 +163,57 @@
       "position": 31
     }
   ],
+  "pageQueries": [
+    {
+      "page": "/futterautomat-fuer-zwei-katzen/",
+      "query": "futterautomat für 2 katzen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "page": "/futterautomat-im-urlaub/",
+      "query": "futterautomat katze urlaub",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "page": "/futterautomat-katze/",
+      "query": "futterautomat nassfutter katze",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "page": "/futterautomat-katze/",
+      "query": "nassfutterautomat für katzen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "page": "/produkt/weenect-xs/",
+      "query": "weenect abo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "page": "/trockenfutter-oder-nassfutter-hund/",
+      "query": "hund nur trockenfutter",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    }
+  ],
   "trend": [
-    {
-      "date": "2026-07-28",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 76.3
-    },
-    {
-      "date": "2026-07-29",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 80
-    },
     {
       "date": "2026-07-30",
       "clicks": 0,
@@ -233,6 +248,20 @@
       "impressions": 6,
       "ctr": 0,
       "position": 33.2
+    },
+    {
+      "date": "2026-08-04",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "date": "2026-08-05",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": 0
     }
   ],
   "recommendations": []
