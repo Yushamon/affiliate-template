@@ -6,7 +6,7 @@ layout: "knowledge"
 description: "Praxisratgeber für Mehrkatzenhaushalte: Welche Katzenklappe passt, wie Ein- und Ausgangsrechte geplant werden und welche Fehler sich vermeiden lassen."
 ---
 
-# Katzenklappe für mehrere Katzen
+## Katzenklappe für mehrere Katzen
 
 ## Kurzfassung
 
@@ -14,7 +14,7 @@ Der wichtigste Unterschied liegt **nicht** in der Anzahl speicherbarer Katzen, s
 
 ---
 
-# Welche Situation trifft auf dich zu?
+## Welche Situation trifft auf dich zu?
 
 | Situation | Geeignete Lösung |
 | --- | --- |
@@ -24,7 +24,7 @@ Der wichtigste Unterschied liegt **nicht** in der Anzahl speicherbarer Katzen, s
 
 ---
 
-# Häufige Alltagssituationen
+## Häufige Alltagssituationen
 
 ## Eine Katze ist krank
 
@@ -40,7 +40,7 @@ Die Mikrochip-Erkennung verhindert fremde Tiere, löst aber keine sozialen Konfl
 
 ---
 
-# Vor dem Kauf planen
+## Vor dem Kauf planen
 
 Für jede Katze solltest du festhalten:
 
@@ -54,7 +54,7 @@ Diese Regelmatrix hilft, das passende Modell auszuwählen.
 
 ---
 
-# Typische Fehlkäufe
+## Typische Fehlkäufe
 
 - Nur auf die Speichergröße achten.
 - Standard- und DualScan-Funktion verwechseln.
@@ -63,7 +63,7 @@ Diese Regelmatrix hilft, das passende Modell auszuwählen.
 
 ---
 
-# Entscheidungsbaum
+## Entscheidungsbaum
 
 1. Müssen alle Katzen dieselben Rechte haben?
    - Ja → Standard-Mikrochipklappe genügt.
@@ -75,7 +75,7 @@ Diese Regelmatrix hilft, das passende Modell auszuwählen.
 
 ---
 
-# Training im Mehrkatzenhaushalt
+## Training im Mehrkatzenhaushalt
 
 - Katzen einzeln anlernen.
 - Erste Tage beobachten.
@@ -84,7 +84,7 @@ Diese Regelmatrix hilft, das passende Modell auszuwählen.
 
 ---
 
-# FAQ
+## FAQ
 
 ## Reicht eine normale Mikrochip-Katzenklappe?
 
@@ -108,7 +108,7 @@ Das hängt vom jeweiligen Modell ab. Entscheidend ist jedoch nicht nur die Speic
 
 ---
 
-# Weiterführende Inhalte
+## Weiterführende Inhalte
 
 - Vergleich der Mikrochip-Katzenklappen
 - SureFlap DualScan

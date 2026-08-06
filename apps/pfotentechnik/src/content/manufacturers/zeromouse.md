@@ -152,7 +152,7 @@ faq:
       die erforderliche Versorgung jedoch nicht zuverlässig zur Verfügung.
 ---
 
-# ZeroMOUSE
+## ZeroMOUSE
 
 ZeroMOUSE ist auf die Nachrüstung kompatibler Mikrochip-Katzenklappen spezialisiert. Die zentrale Funktion ist die kameragestützte Erkennung möglicher Beute, bevor die vorhandene Klappe den Eintritt freigibt.
 

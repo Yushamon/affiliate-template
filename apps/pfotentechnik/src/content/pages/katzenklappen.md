@@ -109,7 +109,7 @@ Eine zusätzliche Route „Katzenklappe mit Chip oder App“ entsteht bewusst ni
 
 
 
-# Warum viele Katzenklappen falsch gekauft werden
+## Warum viele Katzenklappen falsch gekauft werden
 
 Die meisten Fehlkäufe entstehen nicht wegen der Technik, sondern weil die eigentliche Aufgabe nicht klar definiert wurde. Eine Mikrochip-Klappe, eine App-Klappe, eine motorisierte Tiertür und ein Nachrüstsystem lösen unterschiedliche Probleme. Wer nur nach "der besten Katzenklappe" sucht, vergleicht häufig Produkte mit völlig unterschiedlichem Einsatzzweck.
 
@@ -121,7 +121,7 @@ Die meisten Fehlkäufe entstehen nicht wegen der Technik, sondern weil die eigen
 - Den Einbau erst nach dem Kauf planen.
 - Glas- und Wandeinbau unterschätzen.
 
-# Entscheidung nach Haushalt
+## Entscheidung nach Haushalt
 
 | Haushalt | Empfehlenswerte Produktklasse |
 |---|---|
@@ -131,7 +131,7 @@ Die meisten Fehlkäufe entstehen nicht wegen der Technik, sondern weil die eigen
 | Sehr große Katzen | Modelle mit größerem Durchgang vorziehen |
 | Energetisch anspruchsamer Einbau | Gedämmte oder motorisierte Tiertüren prüfen |
 
-# Vor dem Kauf messen
+## Vor dem Kauf messen
 
 Nicht das Außenmaß entscheidet, sondern der engste Durchgang.
 
@@ -143,7 +143,7 @@ Miss deshalb:
 4. vorhandene Türhöhe
 5. Wand- oder Türstärke
 
-# Nach dem Einbau
+## Nach dem Einbau
 
 Kontrolliere nach den ersten Tagen:
 
@@ -153,7 +153,7 @@ Kontrolliere nach den ersten Tagen:
 - Verhalten aller Katzen
 - Funktion jeder programmierten Zugangsregel
 
-# Offene Punkte
+## Offene Punkte
 
 Nicht jede Herstellerangabe beantwortet Langzeitfragen wie Verschleiß, Geräuschentwicklung oder Haltbarkeit der Mechanik. Diese Punkte sollten transparent von den belegten Herstellerdaten getrennt bleiben.
 

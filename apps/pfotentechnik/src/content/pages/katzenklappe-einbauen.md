@@ -6,7 +6,7 @@ layout: "knowledge"
 description: "Schritt-für-Schritt-Anleitung für den Einbau einer Katzenklappe mit Planung von Ausschnitt, Durchgang, Glas, Wand, Stromversorgung und typischen Fehlern."
 ---
 
-# Katzenklappe einbauen
+## Katzenklappe einbauen
 
 ## Kurzüberblick
 
@@ -26,7 +26,7 @@ Vor Beginn beantworten:
 
 ---
 
-# Türmontage
+## Türmontage
 
 Für Holz- und viele Kunststofftüren ist der Einbau vergleichsweise unkompliziert.
 
@@ -42,7 +42,7 @@ Bei Metalltüren kann die RFID-Erkennung beeinträchtigt werden. Herstellerhinwe
 
 ---
 
-# Einbau in Glas
+## Einbau in Glas
 
 Glas wird grundsätzlich anders geplant als Holz.
 
@@ -54,7 +54,7 @@ Wichtig:
 
 ---
 
-# Einbau in eine Wand
+## Einbau in eine Wand
 
 Ein Wanddurchgang benötigt:
 
@@ -66,7 +66,7 @@ Ein Wanddurchgang benötigt:
 
 ---
 
-# Stromversorgung
+## Stromversorgung
 
 ## Batterie
 
@@ -94,7 +94,7 @@ Nachteile
 
 ---
 
-# Typische Fehlkäufe
+## Typische Fehlkäufe
 
 - Klappenöffnung mit Außenmaß verwechseln
 - Glas erst nachträglich ausschneiden wollen
@@ -104,7 +104,7 @@ Nachteile
 
 ---
 
-# Nach dem Einbau
+## Nach dem Einbau
 
 1. Funktion ohne Katze prüfen.
 2. Verriegelung testen.
@@ -114,7 +114,7 @@ Nachteile
 
 ---
 
-# FAQ
+## FAQ
 
 ## Welche Höhe ist sinnvoll?
 
@@ -138,7 +138,7 @@ Nicht immer. Ein anderer Hersteller verwendet oft andere Ausschnittmaße.
 
 ---
 
-# Weiterführende Inhalte
+## Weiterführende Inhalte
 
 - Vergleich der Mikrochip-Katzenklappen
 - Katzenklappen-Hub

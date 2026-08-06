@@ -235,7 +235,7 @@ comparisonData:
     strom: "4 AA-Batterien"
     einbau: "Tür, Glas und Wand mit passendem Zubehör"
     durchgang: "142 × 120 mm"
-    produktrolle: "Vollständige lokale Mikrochip-Katzenklappe"
+    rolle: "Vollständige lokale Mikrochip-Katzenklappe"
 
 faq:
   - question: "Braucht die SureFlap Mikrochip Katzenklappe WLAN?"

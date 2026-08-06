@@ -1,11 +1,11 @@
 ---
 title: "Trinkbrunnen für Katzen und Hunde"
-seoTitle: "Trinkbrunnen für Katzen & Hunde: Auswahl und Vergleich"
+seoTitle: "Trinkbrunnen für Katzen & Hunde: Kaufberatung"
 slug: "trinkbrunnen"
 type: "page"
 layout: "page"
-description: "Trinkbrunnen für Katzen und Hunde nach Reinigung, Material, Lautstärke, Kapazität, Filter und Betriebsart vergleichen."
-seoDescription: "Trinkbrunnen auswählen und vergleichen: Katzenbrunnen, Hundebrunnen, Reinigung, Filter, Material, Lautstärke, Akku und Mehrtierhaushalt."
+description: "Trinkbrunnen für Katzen und Hunde nach Tiergröße, Reinigung, Material, Lautstärke, Filter und Betriebsart auswählen."
+seoDescription: "Trinkbrunnen richtig auswählen: Tiergröße, Trinkfläche, Reinigung, Filter, Material, Lautstärke, Akku und Mehrtierhaushalt verständlich einordnen."
 category: "trinkbrunnen"
 linking:
   keywords:
@@ -40,7 +40,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-31"
+updatedAt: "2026-08-06"
 navigation:
   show: true
   label: "Trinkbrunnen"
@@ -198,6 +198,8 @@ contentPlatform:
 ---
 
 ## Katzenbrunnen gezielt auswählen und pflegen
+
+Diese Seite beantwortet die vorgelagerte Auswahlfrage: Welche Bauart, Trinkfläche und Pflege passen zum Tier und zum Standort? Den konkreten Produktintent besitzt der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/); Hundemodelle werden separat im [Hundetrinkbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-hunde/) bewertet.
 
 | Frage | Passender Einstieg |
 |---|---|

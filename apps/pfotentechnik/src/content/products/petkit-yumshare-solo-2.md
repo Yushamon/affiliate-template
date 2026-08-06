@@ -22,15 +22,15 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petkit-yumshare-solo-2/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-06"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETKIT YumShare Solo 2 im Check: Kamera und App"
+  title: "PETKIT YumShare Solo 2: Kamera-Futterautomat im Check"
   description: >-
-    PETKIT YumShare Solo 2 mit 1080p-Kamera, 3-Liter-Tank, 2,4-/5-GHz-WLAN, 1–10 Mahlzeiten und den Grenzen von
-    AI-Erkennung und Batterie-Backup.
+    PETKIT YumShare Solo 2 mit 1080p-Kamera, 3-Liter-Tank und Dual-Band-WLAN: Mahlzeiten, App, Batterie-Backup und
+    Grenzen der Tiererkennung im Datencheck.
   canonical: /produkt/petkit-yumshare-solo-2/
   sitemap: true
   priority: 0.9

@@ -132,6 +132,16 @@ decisionFacts:
   - label: "Verfügbarkeit"
     value: "Temporär nicht vorrätig"
     consequence: "Das Modell wird weiterhin geführt, war im deutschen Shop zum Prüfzeitpunkt jedoch nicht auf Lager."
+comparisonData:
+  version: 1
+  custom:
+    zugang: "Mikrochip beidseitig"
+    richtungsrechte: "Individuelle Ein- und Ausgangsrechte"
+    app: "Nein"
+    strom: "4 AA-Batterien"
+    einbau: "Tür, Glas und Wand mit passendem Zubehör"
+    durchgang: "142 × 120 mm"
+    rolle: "Lokale Mehrkatzenklappe mit Richtungsrechten"
 alternatives:
   - "sureflap-mikrochip-katzenklappe"
   - "sureflap-mikrochip-katzenklappe-connect"

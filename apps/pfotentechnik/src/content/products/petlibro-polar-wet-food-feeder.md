@@ -21,15 +21,15 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-polar-wet-food-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-06"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETLIBRO Polar im Check: aktive Kühlung für Nassfutter"
+  title: "PETLIBRO Polar Wet Food Feeder: Kühlung im Check"
   description: >-
-    PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern, 2,4-GHz-WLAN, Edelstahl-Schale und
-    12-Stunden-Ausfallschutz.
+    PETLIBRO Polar Wet Food Feeder PLAF109 mit aktiver Kühlung: drei 200-ml-Fächer, App, Edelstahl-Schale und Grenzen
+    des 12-Stunden-Ausfallschutzes.
   canonical: /produkt/petlibro-polar-wet-food-feeder/
   sitemap: true
   priority: 0.9

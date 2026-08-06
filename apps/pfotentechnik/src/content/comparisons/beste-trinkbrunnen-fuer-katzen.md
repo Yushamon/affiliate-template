@@ -7,7 +7,7 @@ description: >-
   Neun Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-07-30"
+updatedAt: "2026-08-06"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -26,10 +26,10 @@ hub:
   featured: true
   order: 20
 seo:
-  title: "Katzenbrunnen im Vergleich: 9 Modelle für Katzen"
+  title: "Katzenbrunnen Vergleich 2026: 9 Modelle im Check"
   description: >-
-    Neun Katzenbrunnen vergleichen: leise Netzmodelle, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und
-    Reinigungsaufwand.
+    Neun Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und
+    Reinigungsaufwand transparent eingeordnet.
   canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   sitemap: true
   priority: 0.9
@@ -226,6 +226,10 @@ recommendation:
 tableTitle: 9 Katzenbrunnen direkt verglichen
 cardsTitle: Empfehlungen nach Haushalt und Standort
 faq:
+  - question: Ist das ein eigener Katzenbrunnen-Test?
+    answer: >-
+      Nein. Der Vergleich ist ein redaktioneller Datencheck auf Basis dokumentierter Produktdaten und klarer
+      Auswahlkriterien. Eigene Langzeitmessungen zu Lautstärke, Haltbarkeit oder Hygiene werden nicht behauptet.
   - question: Welcher Katzenbrunnen ist für die meisten Haushalte geeignet?
     answer: >-
       Ein leiser, vollständig zerlegbarer Brunnen mit gut zugänglicher Pumpe ist meist sinnvoller als ein besonders
@@ -347,7 +351,7 @@ Für laufende Pflege helfen:
 
 ## Methodik
 
-Die sechs Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
+Die neun Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
 ## So werden Material, Reinigung und Filter bewertet
 

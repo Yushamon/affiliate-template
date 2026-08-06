@@ -4,7 +4,7 @@ slug: "petlibro"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "PETLIBRO im Überblick: Futterautomaten und Trinkbrunnen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Modelle."
+description: "PETLIBRO Futterautomaten und Trinkbrunnen im Überblick: Modellreihen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Vergleiche."
 
 key: "petlibro"
 name: "PETLIBRO"
@@ -14,7 +14,7 @@ recommendation: "PETLIBRO passt besonders zu Katzen- und Hundehaltern, die zwisc
 summary: "PETLIBRO entwickelt seit 2019 smarte Futterautomaten und Trinkbrunnen. Die Stärke liegt in der ungewöhnlich breiten Auswahl: Trocken- oder Nassfutter, Kamera, RFID-Zugang sowie Brunnen mit App- oder Verbrauchserfassung. App-, Cloud- und Filterbedarf müssen jedoch für jedes Modell getrennt geprüft werden."
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-06"
 navigation:
   show: true
   label: "Hersteller"
@@ -45,8 +45,8 @@ hub:
   featured: true
 
 seo:
-  title: "PETLIBRO Erfahrungen 2026: Modelle, App und Unterschiede"
-  description: "PETLIBRO Futterautomaten und Trinkbrunnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung, Zugang und Folgekosten."
+  title: "PETLIBRO Futterautomaten 2026: Modelle und Unterschiede"
+  description: "PETLIBRO Futterautomaten und Trinkbrunnen einordnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung und Zugang."
   canonical: "/hersteller/petlibro/"
   noindex: false
   sitemap: true
@@ -286,7 +286,7 @@ faq:
 
 PETLIBRO gehört zu den breitesten Marken für smarte Fütterung und Trinktechnik. Genau diese Vielfalt ist Stärke und Risiko zugleich: Granary, Air, Polar, One RFID, Space und Dockstream lösen unterschiedliche Aufgaben und sollten nicht nur nach App oder Design verglichen werden.
 
-## Welche PETLIBRO-Serie passt?
+## PETLIBRO Futterautomaten im Vergleich: Welche Serie passt?
 
 | Serie | Hauptaufgabe | Typische Grenze |
 |---|---|---|
@@ -305,6 +305,17 @@ PETLIBRO gehört zu den breitesten Marken für smarte Fütterung und Trinktechni
 - [PETLIBRO One RFID](/produkt/petlibro-one-rfid-smart-feeder/) für getrennte Rationen,
 - [PETLIBRO Space](/produkt/petlibro-space-smart-feeder/) für großen Vorrat,
 - [PETLIBRO Dockstream 2 Smart](/produkt/petlibro-dockstream-2-smart/) für App-gestützte Wasserüberwachung.
+
+### Weitere gepflegte PETLIBRO-Modelle
+
+- [PETLIBRO Air Automatic](/produkt/petlibro-air-automatic-feeder/) als kompakter Offline-Trockenfutterautomat,
+- [PETLIBRO Air WiFi](/produkt/petlibro-air-wifi-feeder/) als kompakte App-Variante,
+- [PETLIBRO Granary Dual](/produkt/petlibro-granary-dual-feeder/) für einen Vorrat mit zwei Fresspositionen,
+- [PETLIBRO Granary 2 Vision](/produkt/petlibro-granary-2-vision/) für Kamera- und App-Funktionen,
+- [PETLIBRO Stainless Steel Fountain](/produkt/petlibro-stainless-steel-fountain/) als einfacher Edelstahlbrunnen,
+- [PETLIBRO Glacier](/produkt/petlibro-glacier-ultrafiltration/) für die spezialisierte Ultrafiltration.
+
+Diese Modelllinks sind keine Rangliste. Sie schließen die Journey von der Marken- und Serienauswahl zur konkreten Produktprüfung; Futterart, Zugang, Kamera und Trinkbrunnen-Technik bleiben getrennte Aufgaben.
 
 ## App, Cloud und Abo trennen
 
