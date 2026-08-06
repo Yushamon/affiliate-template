@@ -292,20 +292,21 @@
   margin: 0;
   padding:
     10px
-    max(12px, env(safe-area-inset-right))
+    max(calc(50% - 44px), env(safe-area-inset-right))
     max(10px, env(safe-area-inset-bottom))
-    max(12px, env(safe-area-inset-left));
+    max(calc(50% - 44px), env(safe-area-inset-left));
   overflow-x: auto;
+  scroll-padding-inline: 50%;
   scrollbar-width: thin;
 }
 
 .pg29-lightbox__thumb-list {
   display: flex;
-  justify-content: safe center;
+  justify-content: flex-start;
   gap: 8px;
   width: max-content;
-  min-width: 100%;
-  margin: 0 auto;
+  min-width: 0;
+  margin: 0;
 }
 
 .pg29-lightbox__thumb {
@@ -315,11 +316,12 @@
   width: 88px;
   height: 66px;
   margin: 0;
-  padding: 0;
+  padding: 4px;
   overflow: hidden;
   border: 2px solid transparent;
   border-radius: 8px;
   background: rgba(255, 255, 255, .08);
+  scroll-snap-align: center;
   cursor: pointer;
 }
 
@@ -336,9 +338,9 @@
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 0;
-  object-fit: cover;
-  object-position: center;
+  border-radius: 5px;
+  object-fit: contain;
+  object-position: 50% 50%;
 }
 
 :global(html.has-pg29-lightbox) {
@@ -496,5 +498,24 @@
 
   .pg29-lightbox__viewport.is-zoomed .pg29-lightbox__image {
     transform: none;
+  }
+}
+
+/* V29.2.2: definitive mobile viewport ownership */
+@media (max-width: 759px) {
+  .pg29 {
+    width: 100vw;
+    width: 100dvw;
+    max-width: none;
+    margin-inline: calc(50% - 50vw);
+    margin-inline: calc(50% - 50dvw);
+  }
+
+  .pg29__mobile,
+  .pg29__slide,
+  .pg29 .pg29__image {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
   }
 }
