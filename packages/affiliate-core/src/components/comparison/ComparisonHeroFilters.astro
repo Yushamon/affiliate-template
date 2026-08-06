@@ -49,30 +49,14 @@ const getContextDefault = (filter: ComparisonFilter) => {
   const label = normalized(filter.label);
   const identity = `${key} ${label}`;
 
-  if (/hund/.test(pathname) && /tier|animal/.test(identity)) {
-    return findOption(filter, ["hund", "hunde"]);
-  }
-  if (/katze|katzen/.test(pathname) && /tier|animal/.test(identity)) {
-    return findOption(filter, ["katze", "katzen"]);
-  }
-  if (/ohne-wlan/.test(pathname) && /wlan|steuerung|app/.test(identity)) {
-    return findOption(filter, ["ohne wlan", "kein wlan", "manuell", "offline"]);
-  }
-  if (/mit-app/.test(pathname) && /steuerung|app/.test(identity)) {
-    return findOption(filter, ["app", "mit app", "smartphone"]);
-  }
-  if (/mit-kamera/.test(pathname) && /kamera/.test(identity)) {
-    return findOption(filter, ["mit kamera", "kamera", "ja"]);
-  }
-  if (/ohne-abo/.test(pathname) && /abo|kosten/.test(identity)) {
-    return findOption(filter, ["ohne abo", "kein abo", "nein"]);
-  }
-  if (/mit-akku|akkulaufzeit/.test(pathname) && /akku|stromversorgung/.test(identity)) {
-    return findOption(filter, ["akku", "mit akku", "batterie"]);
-  }
-  if (/nassfutter/.test(pathname) && /futterart/.test(identity)) {
-    return findOption(filter, ["nassfutter", "nass"]);
-  }
+  if (/hund/.test(pathname) && /tier|animal/.test(identity)) return findOption(filter, ["hund", "hunde"]);
+  if (/katze|katzen/.test(pathname) && /tier|animal/.test(identity)) return findOption(filter, ["katze", "katzen"]);
+  if (/ohne-wlan/.test(pathname) && /wlan|steuerung|app/.test(identity)) return findOption(filter, ["ohne wlan", "kein wlan", "manuell", "offline"]);
+  if (/mit-app/.test(pathname) && /steuerung|app/.test(identity)) return findOption(filter, ["app", "mit app", "smartphone"]);
+  if (/mit-kamera/.test(pathname) && /kamera/.test(identity)) return findOption(filter, ["mit kamera", "kamera", "ja"]);
+  if (/ohne-abo/.test(pathname) && /abo|kosten/.test(identity)) return findOption(filter, ["ohne abo", "kein abo", "nein"]);
+  if (/mit-akku|akkulaufzeit/.test(pathname) && /akku|stromversorgung/.test(identity)) return findOption(filter, ["akku", "mit akku", "batterie"]);
+  if (/nassfutter/.test(pathname) && /futterart/.test(identity)) return findOption(filter, ["nassfutter", "nass"]);
   return undefined;
 };
 
@@ -83,50 +67,61 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
 ---
 
 {filtersWithDefaults.length > 0 && (
-  <section class="comparison-cover-filters" aria-labelledby="comparison-cover-filter-title" data-comparison-context-filters>
-    <div class="comparison-cover-filters__head">
-      <span class="comparison-cover-filters__icon" aria-hidden="true"></span>
-      <h2 id="comparison-cover-filter-title">Produkte filtern</h2>
-    </div>
+  <section
+    class="comparison-cover-filters"
+    aria-labelledby="comparison-cover-filter-title"
+    data-comparison-context-filters
+    data-mobile-collapsed="true"
+  >
+    <button
+      type="button"
+      class="comparison-cover-filters__summary"
+      data-comparison-filter-toggle
+      aria-expanded="false"
+      aria-controls="comparison-cover-filter-panel"
+    >
+      <span>
+        <strong id="comparison-cover-filter-title">Produkte filtern</strong>
+        <small><span data-comparison-hero-result-count>{productCount}</span> passende Modelle</small>
+      </span>
+      <span class="comparison-cover-filters__summary-action">Filter</span>
+    </button>
 
-    <div class="comparison-cover-filters__grid">
-      {filtersWithDefaults.map(({ filter, defaultValue }) => (
-        <label class="comparison-cover-filter">
-          <span class="comparison-cover-filter__label">{filter.label}</span>
-          <span class="pt-control comparison-cover-filter__control">
-            <select
-              class="pt-control comparison-cover-filter__select"
-              data-comparison-hero-select
-              data-filter-key={filter.key}
-              data-default-value={defaultValue ?? ""}
-              aria-label={filter.label}
-            >
-              <option value="" selected={!defaultValue}>Alle</option>
-              {filter.options.map((option) => (
-                <option value={option.value} selected={defaultValue === option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-            <span class="comparison-cover-filter__chevron" aria-hidden="true"></span>
-          </span>
-        </label>
-      ))}
-    </div>
+    <div class="comparison-cover-filters__panel" id="comparison-cover-filter-panel" data-comparison-filter-panel>
+      <div class="comparison-cover-filters__grid">
+        {filtersWithDefaults.map(({ filter, defaultValue }) => (
+          <label class="comparison-cover-filter">
+            <span class="comparison-cover-filter__label">{filter.label}</span>
+            <span class="pt-control comparison-cover-filter__control">
+              <select
+                class="pt-control comparison-cover-filter__select"
+                data-comparison-hero-select
+                data-filter-key={filter.key}
+                data-default-value={defaultValue ?? ""}
+                aria-label={filter.label}
+              >
+                <option value="" selected={!defaultValue}>Alle</option>
+                {filter.options.map((option) => (
+                  <option value={option.value} selected={defaultValue === option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+              <span class="comparison-cover-filter__chevron" aria-hidden="true"></span>
+            </span>
+          </label>
+        ))}
+      </div>
 
-    <div class="comparison-cover-filters__actions">
-      <button type="button" class="pt-button comparison-cover-filters__apply" data-comparison-hero-apply>
-        Vergleich anpassen <span aria-hidden="true">→</span>
-      </button>
-      <button type="button" class="pt-button comparison-cover-filters__reset" data-comparison-hero-filter-reset>
-        Filter zurücksetzen
-      </button>
+      <div class="comparison-cover-filters__actions">
+        <button type="button" class="pt-button comparison-cover-filters__apply" data-comparison-hero-apply>
+          {productCount} Modelle anzeigen
+        </button>
+        <button type="button" class="comparison-cover-filters__reset" data-comparison-hero-filter-reset>
+          Filter zurücksetzen
+        </button>
+      </div>
     </div>
-
-    <p class="comparison-cover-filters__result" aria-live="polite">
-      <strong data-comparison-hero-result-count>{productCount}</strong>
-      <span> passende Modelle</span>
-    </p>
   </section>
 )}
 
@@ -139,14 +134,20 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
       const selects = Array.from(root.querySelectorAll<HTMLSelectElement>("[data-comparison-hero-select]"));
       const reset = root.querySelector<HTMLButtonElement>("[data-comparison-hero-filter-reset]");
       const apply = root.querySelector<HTMLButtonElement>("[data-comparison-hero-apply]");
+      const toggle = root.querySelector<HTMLButtonElement>("[data-comparison-filter-toggle]");
+      const panel = root.querySelector<HTMLElement>("[data-comparison-filter-panel]");
       const params = new URLSearchParams(window.location.search);
+
+      const setOpen = (open: boolean) => {
+        root.dataset.mobileCollapsed = String(!open);
+        toggle?.setAttribute("aria-expanded", String(open));
+      };
 
       for (const select of selects) {
         const key = select.dataset.filterKey ?? "";
         const fromUrl = key ? params.get(key) : null;
         const contextual = select.dataset.defaultValue ?? "";
         select.value = fromUrl ?? contextual;
-        select.dispatchEvent(new Event("change", { bubbles: true }));
       }
 
       const syncUrl = () => {
@@ -161,7 +162,15 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
       };
 
       selects.forEach((select) => select.addEventListener("change", syncUrl));
-      apply?.addEventListener("click", syncUrl);
+      toggle?.addEventListener("click", () => {
+        setOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+
+      apply?.addEventListener("click", () => {
+        syncUrl();
+        setOpen(false);
+        document.getElementById("direktvergleich")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
 
       reset?.addEventListener("click", () => {
         const next = new URL(window.location.href);
@@ -169,10 +178,14 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
           const key = select.dataset.filterKey;
           if (key) next.searchParams.delete(key);
           select.value = select.dataset.defaultValue ?? "";
-          select.dispatchEvent(new Event("change", { bubbles: true }));
         }
         history.replaceState({}, "", next);
       });
+
+      const desktop = window.matchMedia("(min-width: 48rem)");
+      const syncViewport = () => setOpen(desktop.matches);
+      desktop.addEventListener("change", syncViewport);
+      syncViewport();
     });
   };
 

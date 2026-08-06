@@ -19,7 +19,7 @@ const price = product ? getPriceDisplay(product.price) : null;
       const recommendation = document.getElementById("vergleichssieger");
       if (!recommendation) return;
       let scheduled = false;
-      const update = () => { scheduled = false; const rect = recommendation.getBoundingClientRect(); const visible = rect.bottom < window.innerHeight * .15; sticky.hidden = !visible; sticky.toggleAttribute("data-visible", visible); };
+      const update = () => { scheduled = false; const rect = recommendation.getBoundingClientRect(); const visible = rect.bottom < 0; sticky.hidden = !visible; sticky.toggleAttribute("data-visible", visible); };
       const requestUpdate = () => { if (scheduled) return; scheduled = true; requestAnimationFrame(update); };
       update();
       window.addEventListener("scroll", requestUpdate, { passive: true });

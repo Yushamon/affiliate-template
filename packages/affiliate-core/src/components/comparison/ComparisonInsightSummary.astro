@@ -15,11 +15,9 @@ const meaningfulRows = rows.filter((row) => {
   const values = row.cells
     .map((cell) => normalize(cell.value))
     .filter((value) => value && value !== "–" && value !== "keine angabe");
-
   return new Set(values).size > 1;
 });
 
-const strongestDifferences = meaningfulRows;
 const documentedRows = rows.filter((row) =>
   row.cells.some((cell) => {
     const value = normalize(cell.value);
@@ -40,22 +38,26 @@ const decisionHint =
     <p>{decisionHint}</p>
   </div>
 
-  {strongestDifferences.length > 0 && (
-    <div class="comparison-buying-guidance__criteria">
-      {strongestDifferences.map((row, index) => (
-        <a class="comparison-buying-guidance__criterion" href="#direktvergleich">
-          <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-          <div>
-            <h3>{row.criterion.label}</h3>
-            <p>
-              {row.criterion.description ??
-                "Prüfe im Direktvergleich, welche Ausprägung zu deinem Alltag und deinen Anforderungen passt."}
-            </p>
-          </div>
-          <span class="comparison-buying-guidance__criterion-arrow" aria-hidden="true">→</span>
-        </a>
+  {meaningfulRows.length > 0 && (
+    <ol class="comparison-buying-guidance__criteria">
+      {meaningfulRows.map((row, index) => (
+        <li>
+          <a class="comparison-buying-guidance__criterion" href="#direktvergleich">
+            <span class="comparison-buying-guidance__number" aria-hidden="true">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <span class="comparison-buying-guidance__criterion-copy">
+              <strong>{row.criterion.label}</strong>
+              <span>
+                {row.criterion.description ??
+                  "Prüfe im Direktvergleich, welche Ausprägung zu deinem Alltag und deinen Anforderungen passt."}
+              </span>
+            </span>
+            <span class="comparison-buying-guidance__criterion-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
       ))}
-    </div>
+    </ol>
   )}
 
   <div class="comparison-buying-guidance__note">
