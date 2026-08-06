@@ -1,27 +1,215 @@
 {
-  "generatedAt": "2026-08-06T10:40:41.375Z",
+  "generatedAt": "2026-08-06T12:51:27.171Z",
   "expectedComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": true,
+  "passed": false,
   "summary": {
-    "comparisons": 26,
-    "products": 74,
-    "sourceCells": 791,
-    "allResolved": 698,
+    "comparisons": 28,
+    "products": 80,
+    "sourceCells": 833,
+    "allResolved": 740,
     "allUnresolved": 93,
-    "sourceCoverage": 88.2,
-    "renderedCells": 664,
-    "renderedResolved": 664,
+    "sourceCoverage": 88.8,
+    "renderedCells": 706,
+    "renderedResolved": 706,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 549,
+    "legacyValueCount": 591,
     "overrideCount": 218
   },
-  "failures": [],
+  "failures": [
+    "Erwartet: 26 Vergleiche, gefunden: 28."
+  ],
   "comparisons": [
+    {
+      "slug": "beste-automatische-katzentoiletten",
+      "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
+      "items": 3,
+      "criteria": 7,
+      "visibleRows": 7,
+      "hiddenRows": 0,
+      "passed": true,
+      "rows": [
+        {
+          "key": "system",
+          "label": "Systemtyp",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossene Siebtrommel",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Geschlossene Trommel mit AI-Kamera",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "Offene Siebtrommel",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "mindestgewicht",
+          "label": "Mindestgewicht",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "ca. 1,36 kg",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Offene Produktfrage",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "ca. 1 kg; darunter Kitten-Modus",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "einstieg",
+          "label": "Einstieg und Innenraum",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Weit, aber geschlossener Innenraum",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Geschlossener Innenraum",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "ca. 35,2 cm, oben offen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "sicherheit",
+          "label": "Sicherheitsprinzip",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Sensor-/Zykluslogik; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "IR- und Gewichtssensoren stoppen laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "6 IR-Sensorgruppen; sofortiger Stopp laut Hersteller",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "streu",
+          "label": "Streukompatibilität",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Klumpend und siebfähig",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Regionale Liste prüfen",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "Schnell klumpend und siebfähig",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "app",
+          "label": "App und Mehrkatzenzuordnung",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Besuche, Gewicht, Dualkamera",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Tierprofile, Dauer und Gewichtstrends",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "Nutzung und Füllstand",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kosten",
+          "label": "Drei-Jahres-Kosten",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Beutel, Streu, Zubehör, optional Whisker+",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Streu, Beutel, Zubehör, mögliche Cloudkosten",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-plus",
+              "value": "Streu und passende Beutel",
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
       "file": "src/content/comparisons/beste-futterautomaten-fuer-berufstaetige.md",
@@ -3682,6 +3870,192 @@
             {
               "product": "paj-pet-finder-4g-mini",
               "value": "IP67",
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "beste-haustierkameras",
+      "file": "src/content/comparisons/beste-haustierkameras.md",
+      "items": 3,
+      "criteria": 7,
+      "visibleRows": 7,
+      "hiddenRows": 0,
+      "passed": true,
+      "rows": [
+        {
+          "key": "klasse",
+          "label": "Produktklasse",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Feste Schwenk-/Neigekamera",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Feste Interaktionskamera",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Mobiler Kamera-Roboter",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "blick",
+          "label": "Blickbereich",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "1080p, 360-Grad-Schwenken",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "360-Grad-Sicht und Tracking",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "2K laut Hersteller, beweglicher Standort",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "interaktion",
+          "label": "Interaktion",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Audio und Leckerliausgabe",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Fernfahrt und Kamerazugriff",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "speicher",
+          "label": "Speicherung",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Cloud; keine SD-Karte",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "App-/Tarifabhängig",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Aktuelle App-Angabe prüfen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "abo",
+          "label": "Abo",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "KI und Aufzeichnung tarifabhängig",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Furbo Nanny optional",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Kein belegter Pflichttarif",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "datenschutz",
+          "label": "Datenschutz",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Manuelle Linsenabdeckung",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Cloud- und Kontoeinstellungen prüfen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Bewegliche Kamera und Raumfreigaben",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kosten",
+          "label": "24-Monats-Kosten",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Gerät plus 24 Monatsanteile des gewählten Cloud-Tarifs",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Gerät plus 24 Monatsanteile des gewählten Nanny-Tarifs",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Gerät plus mögliche Akku-/Ersatzteilkosten",
               "resolved": true
             }
           ]

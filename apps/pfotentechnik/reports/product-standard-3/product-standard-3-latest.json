@@ -1,21 +1,266 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-08-06T08:43:46.226Z",
+  "generatedAt": "2026-08-06T12:51:26.502Z",
   "summary": {
-    "products": 74,
+    "products": 80,
     "blocked": 0,
-    "needsWork": 3,
+    "needsWork": 9,
     "good": 0,
     "strong": 71,
     "errors": 0,
-    "warnings": 12,
-    "info": 135
+    "warnings": 35,
+    "info": 141
   },
   "products": [
+    {
+      "slug": "enabot-ebo-air-2",
+      "file": "apps/pfotentechnik/src/content/products/enabot-ebo-air-2.md",
+      "category": "{ key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "file": "apps/pfotentechnik/src/content/products/furbo-360-hundekamera.md",
+      "category": "{ key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "litter-robot-5-pro",
+      "file": "apps/pfotentechnik/src/content/products/litter-robot-5-pro.md",
+      "category": "{ key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "file": "apps/pfotentechnik/src/content/products/neakasa-m1-plus.md",
+      "category": "{ key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
     {
       "slug": "onlycat-mikrochip-katzenklappe",
       "file": "apps/pfotentechnik/src/content/products/onlycat-mikrochip-katzenklappe.md",
       "category": "key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-pro-2.md",
+      "category": "{ key:",
       "score": 60,
       "status": "needs-work",
       "metrics": {
@@ -150,6 +395,49 @@
           "code": "EVIDENCE_THIN",
           "message": "Nur 1 Evidenzarten hinterlegt.",
           "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "file": "apps/pfotentechnik/src/content/products/petlibro-scout-smart-camera.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
         },
         {
           "severity": "info",

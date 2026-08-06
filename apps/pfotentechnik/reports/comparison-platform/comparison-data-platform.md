@@ -1,19 +1,20 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-06T10:40:41.375Z
+Erstellt: 2026-08-06T12:51:27.171Z
 
-**Status: BESTANDEN**
+**Status: NICHT BESTANDEN**
 
-- Vergleiche: 26 / 26
-- Quellabdeckung: 88.2 %
+- Vergleiche: 28 / 26
+- Quellabdeckung: 88.8 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 549
+- alte values-Felder: 591
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
 
 | Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
 |---|---:|---:|---:|---|
+| `beste-automatische-katzentoiletten` | 3 | 7 | 0 | OK |
 | `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
@@ -30,6 +31,7 @@ Erstellt: 2026-08-06T10:40:41.375Z
 | `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
 | `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
+| `beste-haustierkameras` | 3 | 7 | 0 | OK |
 | `beste-mikrochip-katzenklappen` | 7 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |
@@ -43,6 +45,6 @@ Erstellt: 2026-08-06T10:40:41.375Z
 
 ## Blocker
 
-- Keine.
+- Erwartet: 26 Vergleiche, gefunden: 28.
 
 Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.

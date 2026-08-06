@@ -212,28 +212,30 @@
     "matchedPages": 10
   },
   "summary": {
-    "indexablePages": 213,
-    "totalHtmlPages": 297,
+    "indexablePages": 227,
+    "totalHtmlPages": 317,
     "pageTypes": {
       "category-hub": 5,
-      "comparison": 26,
+      "comparison": 28,
       "comparison-index": 1,
       "decision-guide": 7,
-      "editorial-page": 16,
+      "editorial-page": 18,
       "guide": 28,
       "homepage": 1,
       "knowledge-hub": 1,
       "legal": 4,
-      "manufacturer": 21,
+      "manufacturer": 25,
       "manufacturer-index": 1,
       "medical-guide": 12,
       "problem-solving-guide": 16,
-      "product": 74
+      "product": 80
     },
     "clusters": {
+      "automatische-katzentoiletten": 5,
       "futterautomaten": 82,
       "gps-tracker": 26,
-      "hersteller": 16,
+      "haustierkameras": 5,
+      "hersteller": 20,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
       "katzen-und-hundespezifische-hardware": 1,
@@ -248,19 +250,19 @@
       "trinkbrunnen": 49
     },
     "intents": {
-      "brand-navigation": 21,
+      "brand-navigation": 25,
       "category-discovery": 9,
-      "commercial-investigation": 32,
-      "comparison": 26,
+      "commercial-investigation": 34,
+      "comparison": 28,
       "informational": 23,
       "medical-information": 14,
       "problem-solving": 14,
-      "product-research": 74
+      "product-research": 80
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 213,
-      "NOINDEX": 84
+      "KEEP": 227,
+      "NOINDEX": 90
     },
     "errors": 0,
     "warnings": 0,
@@ -437,10 +439,10 @@
       ],
       "metrics": {
         "title": 1,
-        "headings": 0.7813,
-        "body": 0.4721,
+        "headings": 0.8387,
+        "body": 0.4757,
         "entities": 1,
-        "combined": 0.7358
+        "combined": 0.7471
       },
       "topicOwners": [
         "/produkt/tractive-dog-6/",

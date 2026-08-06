@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-06T10:35:47.391Z
+Erstellt: 2026-08-06T12:51:21.899Z
 
 ## Zusammenfassung
 
-- Produkte: 74
+- Produkte: 80
 - Fehler: 0
-- Warnungen: 82
+- Warnungen: 106
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -14,14 +14,16 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 - futterautomaten: 37
 - trinkbrunnen: 21
+- haustierkameras: 3
 - gps-tracker: 8
+- automatische-katzentoiletten: 3
 - katzenklappen: 8
 
 ## Produkte mit Handlungsbedarf
 
 ### SureFeed Microchip Pet Feeder Connect
 
-- Datei: `src\content\products\surefeed-microchip-pet-feeder-connect.md`
+- Datei: `src/content/products/surefeed-microchip-pet-feeder-connect.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 79%
 - Warnungen:
@@ -35,7 +37,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Dockstream 2 Smart
 
-- Datei: `src\content\products\petlibro-dockstream-2-smart.md`
+- Datei: `src/content/products/petlibro-dockstream-2-smart.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 85%
 - Warnungen:
@@ -47,7 +49,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Space Smart Feeder
 
-- Datei: `src\content\products\petlibro-space-smart-feeder.md`
+- Datei: `src/content/products/petlibro-space-smart-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 85%
 - Warnungen:
@@ -59,7 +61,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Cat Mate Pet Fountain 335
 
-- Datei: `src\content\products\cat-mate-335-pet-fountain.md`
+- Datei: `src/content/products/cat-mate-335-pet-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 88%
 - Warnungen:
@@ -68,9 +70,53 @@ Erstellt: 2026-08-06T10:35:47.391Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: gewicht
 
+### Enabot EBO Air 2
+
+- Datei: `src/content/products/enabot-ebo-air-2.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
+### Furbo 360° Hundekamera
+
+- Datei: `src/content/products/furbo-360-hundekamera.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
+### Litter-Robot 5 Pro
+
+- Datei: `src/content/products/litter-robot-5-pro.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
+### Neakasa M1 Plus
+
+- Datei: `src/content/products/neakasa-m1-plus.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### oneisall 7L Dog Water Fountain
 
-- Datei: `src\content\products\oneisall-7l-dog-water-fountain.md`
+- Datei: `src/content/products/oneisall-7l-dog-water-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 88%
 - Warnungen:
@@ -79,9 +125,20 @@ Erstellt: 2026-08-06T10:35:47.391Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
+### PETKIT PUROBOT MAX PRO 2
+
+- Datei: `src/content/products/petkit-purobot-max-pro-2.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### PETLIBRO Dockstream 2 Smart Cordless
 
-- Datei: `src\content\products\petlibro-dockstream-2-smart-cordless.md`
+- Datei: `src/content/products/petlibro-dockstream-2-smart-cordless.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 88%
 - Warnungen:
@@ -90,9 +147,20 @@ Erstellt: 2026-08-06T10:35:47.391Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: ersatzfilter
 
+### PETLIBRO Scout Smart Camera
+
+- Datei: `src/content/products/petlibro-scout-smart-camera.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
 
-- Datei: `src\content\products\oneisall-2-in-1-feeder-water.md`
+- Datei: `src/content/products/oneisall-2-in-1-feeder-water.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 91%
 - Warnungen:
@@ -102,7 +170,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### oneisall 3,2L Cordless Cat Fountain
 
-- Datei: `src\content\products\oneisall-3-2l-cordless-fountain.md`
+- Datei: `src/content/products/oneisall-3-2l-cordless-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 91%
 - Warnungen:
@@ -112,7 +180,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet 3 Pro UVC
 
-- Datei: `src\content\products\petkit-eversweet-3-pro-uvc.md`
+- Datei: `src/content/products/petkit-eversweet-3-pro-uvc.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 91%
 - Warnungen:
@@ -122,7 +190,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Granary 2 Vision
 
-- Datei: `src\content\products\petlibro-granary-2-vision.md`
+- Datei: `src/content/products/petlibro-granary-2-vision.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 91%
 - Warnungen:
@@ -132,7 +200,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Cat Mate Shell Pet Fountain
 
-- Datei: `src\content\products\cat-mate-shell-fountain.md`
+- Datei: `src/content/products/cat-mate-shell-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -146,7 +214,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Garmin Alpha T 20
 
-- Datei: `src\content\products\garmin-alpha-t-20.md`
+- Datei: `src/content/products/garmin-alpha-t-20.md`
 - Kategorie: gps-tracker
 - Vollständigkeit: 94%
 - Warnungen:
@@ -155,7 +223,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet 5 Mini
 
-- Datei: `src\content\products\petkit-eversweet-5-mini.md`
+- Datei: `src/content/products/petkit-eversweet-5-mini.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -169,7 +237,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet Max 2 UVC
 
-- Datei: `src\content\products\petkit-eversweet-max-2-uvc.md`
+- Datei: `src/content/products/petkit-eversweet-max-2-uvc.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -181,7 +249,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet Max Cordless
 
-- Datei: `src\content\products\petkit-eversweet-max-cordless.md`
+- Datei: `src/content/products/petkit-eversweet-max-cordless.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -193,7 +261,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet Ultra
 
-- Datei: `src\content\products\petkit-eversweet-ultra.md`
+- Datei: `src/content/products/petkit-eversweet-ultra.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -202,7 +270,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Capsule Dog Fountain
 
-- Datei: `src\content\products\petlibro-capsule-dog-fountain.md`
+- Datei: `src/content/products/petlibro-capsule-dog-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -217,7 +285,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### WOPET Patrol F07 Pro
 
-- Datei: `src\content\products\wopet-patrol-f07-pro.md`
+- Datei: `src/content/products/wopet-patrol-f07-pro.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 94%
 - Warnungen:
@@ -228,7 +296,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Cat Mate C200
 
-- Datei: `src\content\products\cat-mate-c200.md`
+- Datei: `src/content/products/cat-mate-c200.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -240,7 +308,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Cat Mate C300
 
-- Datei: `src\content\products\cat-mate-c300.md`
+- Datei: `src/content/products/cat-mate-c300.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -252,7 +320,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Catit PIXI Smart 6-Meal Feeder
 
-- Datei: `src\content\products\catit-pixi-smart-6-meal-feeder.md`
+- Datei: `src/content/products/catit-pixi-smart-6-meal-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -260,7 +328,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### HoneyGuardian A305D
 
-- Datei: `src\content\products\honeyguardian-a305d.md`
+- Datei: `src/content/products/honeyguardian-a305d.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -273,7 +341,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### HoneyGuardian Smart Pet Feeder S305D
 
-- Datei: `src\content\products\honeyguardian-smart-pet-feeder-s305d.md`
+- Datei: `src/content/products/honeyguardian-smart-pet-feeder-s305d.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -285,7 +353,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### IMIPAW 3L Automatic Cat Feeder
 
-- Datei: `src\content\products\imipaw-3l-automatic-cat-feeder.md`
+- Datei: `src/content/products/imipaw-3l-automatic-cat-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -293,7 +361,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### oneisall 2,2L Cordless Cat Fountain
 
-- Datei: `src\content\products\oneisall-2-2l-cordless-fountain.md`
+- Datei: `src/content/products/oneisall-2-2l-cordless-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -306,7 +374,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PAJ PET Finder 4G Mini
 
-- Datei: `src\content\products\paj-pet-finder-4g-mini.md`
+- Datei: `src/content/products/paj-pet-finder-4g-mini.md`
 - Kategorie: gps-tracker
 - Vollständigkeit: 97%
 - Warnungen:
@@ -314,7 +382,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PAWBBY Smart Pet Feeder
 
-- Datei: `src\content\products\pawbby-smart-pet-feeder.md`
+- Datei: `src/content/products/pawbby-smart-pet-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -329,7 +397,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PawSync Smart Pet Feeder
 
-- Datei: `src\content\products\pawsync-smart-pet-feeder.md`
+- Datei: `src/content/products/pawsync-smart-pet-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -345,7 +413,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Eversweet Solo SE
 
-- Datei: `src\content\products\petkit-eversweet-solo-se.md`
+- Datei: `src/content/products/petkit-eversweet-solo-se.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -356,7 +424,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETKIT Fresh Element Infinity
 
-- Datei: `src\content\products\petkit-fresh-element-infinity.md`
+- Datei: `src/content/products/petkit-fresh-element-infinity.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -370,7 +438,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Air WiFi Feeder
 
-- Datei: `src\content\products\petlibro-air-wifi-feeder.md`
+- Datei: `src/content/products/petlibro-air-wifi-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -378,7 +446,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Dockstream Cordless
 
-- Datei: `src\content\products\petlibro-dockstream-cordless.md`
+- Datei: `src/content/products/petlibro-dockstream-cordless.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -390,7 +458,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Dockstream RFID Smart
 
-- Datei: `src\content\products\petlibro-dockstream-rfid-smart.md`
+- Datei: `src/content/products/petlibro-dockstream-rfid-smart.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -402,7 +470,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Glacier Ultrafiltration Fountain
 
-- Datei: `src\content\products\petlibro-glacier-ultrafiltration.md`
+- Datei: `src/content/products/petlibro-glacier-ultrafiltration.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -414,7 +482,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PETLIBRO Stainless Steel Fountain 3L
 
-- Datei: `src\content\products\petlibro-stainless-steel-fountain.md`
+- Datei: `src/content/products/petlibro-stainless-steel-fountain.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -425,7 +493,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PetSafe FreshFeed Refrigerated Pet Feeder
 
-- Datei: `src\content\products\petsafe-freshfeed-refrigerated-feeder.md`
+- Datei: `src/content/products/petsafe-freshfeed-refrigerated-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -441,7 +509,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PetSafe Healthy Pet Simply Feed
 
-- Datei: `src\content\products\petsafe-healthy-pet-simply-feed.md`
+- Datei: `src/content/products/petsafe-healthy-pet-simply-feed.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -455,7 +523,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PetSafe Petporte smart flap
 
-- Datei: `src\content\products\petsafe-petporte-smart-flap.md`
+- Datei: `src/content/products/petsafe-petporte-smart-flap.md`
 - Kategorie: katzenklappen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -463,7 +531,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### PetSafe Smart Feed 2.0
 
-- Datei: `src\content\products\petsafe-smart-feed-2.md`
+- Datei: `src/content/products/petsafe-smart-feed-2.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -476,7 +544,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### WOPET Cube Air WiFi Pet Feeder CA10
 
-- Datei: `src\content\products\wopet-cube-air-ca10.md`
+- Datei: `src/content/products/wopet-cube-air-ca10.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -490,7 +558,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### WOPET Heritage View Camera Feeder
 
-- Datei: `src\content\products\wopet-heritage-view-camera-feeder.md`
+- Datei: `src/content/products/wopet-heritage-view-camera-feeder.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -505,7 +573,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### WOPET Pioneer F01 Plus
 
-- Datei: `src\content\products\wopet-pioneer-f01-plus.md`
+- Datei: `src/content/products/wopet-pioneer-f01-plus.md`
 - Kategorie: futterautomaten
 - Vollständigkeit: 97%
 - Warnungen:
@@ -519,7 +587,7 @@ Erstellt: 2026-08-06T10:35:47.391Z
 
 ### Xiaomi Smart Pet Fountain 2
 
-- Datei: `src\content\products\xiaomi-smart-pet-fountain-2.md`
+- Datei: `src/content/products/xiaomi-smart-pet-fountain-2.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:

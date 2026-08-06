@@ -1,29 +1,49 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-08-06T10:40:48.753Z",
-  "strict": true,
+  "generatedAt": "2026-08-06T12:51:29.514Z",
+  "strict": false,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 297
+    "builtRoutes": 317
   },
   "summary": {
-    "documents": 201,
+    "documents": 215,
     "legacyErrors": 0,
-    "legacyWarnings": 31,
+    "legacyWarnings": 39,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 31,
+    "effectiveWarnings": 39,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 42
+    "advisory": 50
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 31
+    "warning": 39
   },
   "findings": [
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hersteller/enabot/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hersteller/enabot/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hersteller/whisker/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hersteller/whisker/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -107,6 +127,26 @@
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/enabot-ebo-air-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/enabot-ebo-air-2/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/furbo-360-hundekamera/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/furbo-360-hundekamera/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/garmin-alpha-tt-25/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/garmin-alpha-tt-25/",
       "originalSeverity": "warning",
@@ -149,6 +189,26 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/imipaw-3l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/litter-robot-5-pro/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/litter-robot-5-pro/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/neakasa-m1-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/neakasa-m1-plus/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",
@@ -249,6 +309,26 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/petkit-fresh-element-infinity/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petkit-purobot-max-pro-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petkit-purobot-max-pro-2/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/petlibro-scout-smart-camera/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/petlibro-scout-smart-camera/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

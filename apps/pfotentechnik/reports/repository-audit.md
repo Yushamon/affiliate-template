@@ -1,25 +1,29 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-06T10:35:44.591Z
+Erstellt: 2026-08-06T12:51:21.144Z
 
 ## Zusammenfassung
 
-- Routen: 223
+- Routen: 237
 - Fehler: 0
-- Warnungen: 45
+- Warnungen: 49
 - Hinweise: 56
 
 ## Content-Bestand
 
-- pages: 80
-- products: 74
-- manufacturers: 21
-- comparisons: 26
+- pages: 82
+- products: 80
+- manufacturers: 25
+- comparisons: 28
 
 ## Befunde
 
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/ (`src/content/manufacturers/aqara.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/enabot/ (`src/content/manufacturers/enabot.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/furbo/ (`src/content/manufacturers/furbo.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/neakasa/ (`src/content/manufacturers/neakasa.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/ (`src/content/manufacturers/pawsync.md`)
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/whisker/ (`src/content/manufacturers/whisker.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/ (`src/content/manufacturers/zeromouse.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/aqara-smart-pet-feeder-c1/ (`src/content/products/aqara-smart-pet-feeder-c1.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-335-pet-fountain/ (`src/content/products/cat-mate-335-pet-fountain.md`)

@@ -1,18 +1,20 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-06T10:40:48.336Z
+Erstellt: 2026-08-06T12:51:31.121Z
 
 ## Ergebnis
 
-- Dokumente: 201
-- Linkdefinitionen: 451
-- Simulierte automatische Links: 459
+- Dokumente: 215
+- Linkdefinitionen: 463
+- Simulierte automatische Links: 469
 - Fehler: 0
-- Warnungen: 31
+- Warnungen: 39
 - Strict-kritisch: 0
 
 ## Befunde
 
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/enabot/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/whisker/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -21,11 +23,15 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/cat-mate-c200/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/cat-mate-shell-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/catit-pixi-vision-smart-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/enabot-ebo-air-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/furbo-360-hundekamera/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/garmin-alpha-tt-25/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-a305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-a68/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/honeyguardian-smart-pet-feeder-s305d/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/imipaw-3l-automatic-cat-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/litter-robot-5-pro/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/neakasa-m1-plus/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-2-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-2-in-1-feeder-water/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/oneisall-3-2l-cordless-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -36,6 +42,8 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-purobot-max-pro-2/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-scout-smart-camera/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -58,6 +66,8 @@ Erstellt: 2026-08-06T10:40:48.336Z
 
 ## Tatsächlich simulierte Anchor-Texte
 
+- /automatische-katzentoiletten/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /automatische-katzentoiletten/ → /hersteller/neakasa/: „Neakasa“
 - /biofilm-im-katzentrinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
 - /filter-im-katzentrinkbrunnen-wechseln/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /filter-im-katzentrinkbrunnen-wechseln/ → /hersteller/petkit/: „PETKIT“
@@ -106,6 +116,8 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /gps-tracker-richtig-befestigen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
+- /haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
+- /haustierkameras/ → /hersteller/furbo/: „Furbo“
 - /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hund-frisst-zu-schnell/ → /smarte-futterautomaten/: „Futterautomat“
 - /hund-frisst-zu-schnell/ → /warum-schlingt-mein-hund/: „Zu schnelles Fressen“
@@ -132,6 +144,7 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /katze-trinkt-viel/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katze-trinkt-viel/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /katze-trinkt-viel/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /katzenklappe-einbauen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappe-zugluft-und-waermedaemmung/ → /hersteller/petwalk/: „petWALK“
 - /katzenklappen/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /katzenklappen/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
@@ -173,6 +186,7 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /hersteller/petlibro/: „PETLIBRO“
 - /trinkbrunnen-fuer-mehrere-katzen/ → /hersteller/petlibro/: „PETLIBRO“
+- /trinkbrunnen-fuer-mehrere-katzen/ → /hersteller/petkit/: „PETKIT“
 - /trinkbrunnen-hund/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
 - /trinkbrunnen-hund/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /trinkbrunnen-hund/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
@@ -188,6 +202,7 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
 - /trinkmenge-katze-messen/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
 - /trinkmenge-katze-messen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /trinkmenge-katze-messen/ → /hersteller/petkit/: „PETKIT“
 - /trockenfutter-oder-nassfutter-hund/ → /smarte-futterautomaten/: „Futterautomaten“
 - /trockenfutter-oder-nassfutter-hund/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
 - /trockenfutter-oder-nassfutter-hund/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „zu wenig trinkt“
@@ -354,6 +369,7 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /produkt/petlibro-one-rfid-smart-feeder/ → /smarte-futterautomaten/: „automatische Fütterung“
 - /produkt/petlibro-one-rfid-smart-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-polar-wet-food-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-scout-smart-camera/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-space-smart-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/petlibro-space-smart-feeder/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
 - /produkt/petlibro-space-smart-feeder/ → /hersteller/petlibro/: „PETLIBRO“
@@ -495,7 +511,9 @@ Erstellt: 2026-08-06T10:40:48.336Z
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/gps-tracker-ohne-abo/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
+- /vergleiche/gps-tracker-ohne-abo/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/katzenklappen-mit-app-und-beuteerkennung/ → /hersteller/zeromouse/: „ZeroMOUSE“
+- /vergleiche/katzenklappen-mit-app-und-beuteerkennung/ → /hersteller/onlycat/: „OnlyCat“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/paj-pet-finder-4g-mini/: „PAJ Pet Finder 4G Mini“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/tractive/: „Tractive“

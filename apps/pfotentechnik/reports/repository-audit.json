@@ -1,13 +1,14 @@
 {
   "summary": {
-    "generatedAt": "2026-08-06T10:35:44.591Z",
+    "generatedAt": "2026-08-06T12:51:21.144Z",
     "countsByCollection": {
-      "pages": 80,
-      "products": 74,
-      "manufacturers": 21,
-      "comparisons": 26
+      "pages": 82,
+      "products": 80,
+      "manufacturers": 25,
+      "comparisons": 28
     },
     "categoryCounts": {
+      "haustiertechnik": 3,
       "trinkbrunnen": 17,
       "gps-tracker": 10,
       "tierernaehrung": 2,
@@ -21,7 +22,6 @@
       "katzenklappen": 1,
       "gesundheit": 2,
       "ratgeber": 1,
-      "haustiertechnik": 1,
       "redaktion": 1,
       "hundeernaehrung": 3,
       "katzenfutter": 1,
@@ -30,10 +30,10 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 223,
+    "routes": 237,
     "findings": {
       "error": 0,
-      "warning": 45,
+      "warning": 49,
       "info": 56
     }
   },
@@ -47,8 +47,32 @@
     {
       "severity": "warning",
       "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/enabot/",
+      "file": "src/content/manufacturers/enabot.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/furbo/",
+      "file": "src/content/manufacturers/furbo.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/neakasa/",
+      "file": "src/content/manufacturers/neakasa.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
       "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/",
       "file": "src/content/manufacturers/pawsync.md"
+    },
+    {
+      "severity": "warning",
+      "area": "internal-linking",
+      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/whisker/",
+      "file": "src/content/manufacturers/whisker.md"
     },
     {
       "severity": "warning",

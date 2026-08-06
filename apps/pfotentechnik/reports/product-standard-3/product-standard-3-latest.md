@@ -1,20 +1,26 @@
 # Product Standard 3 Audit
 
-- Produkte: 74
+- Produkte: 80
 - Blockiert: 0
-- Verbesserungsbedarf: 3
+- Verbesserungsbedarf: 9
 - Gut: 0
 - Stark: 71
 - Fehler: 0
-- Warnungen: 12
+- Warnungen: 35
 
 ## Übersicht
 
 | Produkt | Score | Status | relevante Findings |
 |---|---:|---|---:|
+| enabot-ebo-air-2 | 60 | needs-work | 4 |
+| furbo-360-hundekamera | 60 | needs-work | 4 |
+| litter-robot-5-pro | 60 | needs-work | 4 |
+| neakasa-m1-plus | 60 | needs-work | 4 |
 | onlycat-mikrochip-katzenklappe | 60 | needs-work | 4 |
+| petkit-purobot-max-pro-2 | 60 | needs-work | 4 |
 | petsafe-mikrochip-katzenklappe | 60 | needs-work | 4 |
 | petwalk-medium-tiertuer | 60 | needs-work | 4 |
+| petlibro-scout-smart-camera | 70 | needs-work | 3 |
 | aqara-smart-pet-feeder-c1 | 100 | strong | 0 |
 | cat-mate-335-pet-fountain | 100 | strong | 0 |
 | cat-mate-c200 | 100 | strong | 0 |
@@ -89,7 +95,42 @@
 
 ## Höchste Priorität
 
+### enabot-ebo-air-2 · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### furbo-360-hundekamera · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### litter-robot-5-pro · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### neakasa-m1-plus · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
 ### onlycat-mikrochip-katzenklappe · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### petkit-purobot-max-pro-2 · 60/100
 
 - **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
@@ -109,4 +150,10 @@
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 - **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### petlibro-scout-smart-camera · 70/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 

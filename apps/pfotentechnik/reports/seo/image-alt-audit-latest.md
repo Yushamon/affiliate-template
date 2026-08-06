@@ -2,8 +2,8 @@
 
 - Modus: `source-and-dist`
 - geprüfte Quelldateien: 138
-- geprüfte Build-Dateien: 297
-- rohe Build-Fundstellen: 278
+- geprüfte Build-Dateien: 317
+- rohe Build-Fundstellen: 277
 - eindeutige Build-Fundstellen: 2
 - blockierende Fehler: 0
 - Hinweise: 3
