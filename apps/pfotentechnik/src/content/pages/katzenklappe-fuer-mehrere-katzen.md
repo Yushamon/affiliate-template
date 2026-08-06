@@ -1,9 +1,12 @@
 ---
 title: "Katzenklappe für mehrere Katzen: Rechte richtig planen"
 slug: "katzenklappe-fuer-mehrere-katzen"
+linking: { keywords: ["Katzenklappe für mehrere Katzen", "Katzenklappe mit individuellen Rechten", "Mikrochip-Katzenklappe Mehrkatzenhaushalt"], contexts: ["katzenklappen", "mehrere katzen", "mikrochip", "zugangsrechte"], priority: "high", maxOccurrences: 1 }
 type: "knowledge"
 layout: "knowledge"
 description: "Praxisratgeber für Mehrkatzenhaushalte: Welche Katzenklappe passt, wie Ein- und Ausgangsrechte geplant werden und welche Fehler sich vermeiden lassen."
+publishedAt: "2026-08-04"
+updatedAt: "2026-08-06"
 ---
 
 ## Katzenklappe für mehrere Katzen

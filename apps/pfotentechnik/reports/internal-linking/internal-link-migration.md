@@ -28,7 +28,3 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 
 ## Verbleibende manuelle Entscheidungen
 
-- /katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.
-- /katzenklappe-einbauen/ besitzt keine Linking-Metadaten.
-- /katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.
-- /katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.

@@ -8,7 +8,7 @@ import {
   reconcileQualityFindings,
   summarizeQualityOperations,
 } from "../src/lib/seo-copilot/quality-operations.mjs";
-import { QUALITY_SOURCE_REGISTRY, collectQualitySources } from "../scripts/quality-ops/sources.mjs";
+import { QUALITY_SOURCE_REGISTRY, collectQualitySources, isOperationalFinding } from "../scripts/quality-ops/sources.mjs";
 import { ALLOWED_SEARCH_ACTIONS } from "../src/lib/search/action-service.mjs";
 
 const now = "2026-07-29T12:00:00.000Z";
@@ -150,4 +150,14 @@ test("Admin-Allowlist enthält Status- und sicheren Auto-Fix, aber keine generis
   assert.ok(ALLOWED_SEARCH_ACTIONS.includes("quality.finding.status"));
   assert.ok(ALLOWED_SEARCH_ACTIONS.includes("quality.finding.auto-fix"));
   assert.equal(ALLOWED_SEARCH_ACTIONS.some((action) => /shell|exec/i.test(action)), false);
+});
+
+test("heuristische Prueflisten werden nicht als Codex-Defekte operationalisiert", () => {
+  assert.equal(isOperationalFinding({ id: "visual-qa" }, "findings", { level: "warning", code: "CHIP_ADOPTION_LOW" }), false);
+  assert.equal(isOperationalFinding({ id: "decision-journeys" }, "editorial", { severity: "warning", code: "DERIVED_ONLY" }), false);
+  assert.equal(isOperationalFinding({ id: "internal-linking" }, "findings", { severity: "warning", classification: "advisory" }), false);
+  assert.equal(isOperationalFinding({ id: "price-intelligence" }, "warnings", { severity: "warning", code: "PRICE_MISSING" }), false);
+  assert.equal(isOperationalFinding({ id: "performance" }, "findings", { severity: "warning", code: "PERF_HTML_TOO_LARGE" }), false);
+  assert.equal(isOperationalFinding({ id: "performance" }, "errors", { severity: "error", code: "PERF_HTML_HARD_LIMIT" }), true);
+  assert.equal(isOperationalFinding({ id: "decision-journeys" }, "technical", { severity: "error", code: "BROKEN_TARGET" }), true);
 });

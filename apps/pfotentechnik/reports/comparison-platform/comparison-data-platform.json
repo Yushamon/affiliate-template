@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-06T08:43:46.892Z",
-  "expectedComparisons": 24,
+  "generatedAt": "2026-08-06T10:40:41.375Z",
+  "expectedComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": false,
+  "passed": true,
   "summary": {
     "comparisons": 26,
     "products": 74,
@@ -20,9 +20,7 @@
     "legacyValueCount": 549,
     "overrideCount": 218
   },
-  "failures": [
-    "Erwartet: 24 Vergleiche, gefunden: 26."
-  ],
+  "failures": [],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",

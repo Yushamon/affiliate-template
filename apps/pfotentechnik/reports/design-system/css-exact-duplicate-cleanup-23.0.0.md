@@ -1,10 +1,10 @@
 # Exact Duplicate CSS Cleanup 23.0.0
 
 - Modus: write
-- geprüfte CSS-/Astro-Dateien: 172
-- betroffene Dateien: 14
-- entfernte exakt identische Deklarationen: 178
-- eingesparte Bytes: 4825
+- geprüfte CSS-/Astro-Dateien: 181
+- betroffene Dateien: 4
+- entfernte exakt identische Deklarationen: 15
+- eingesparte Bytes: 538
 
 ## Sicherheitsgrenze
 
@@ -21,17 +21,7 @@ Nicht verändert werden:
 
 ## Dateien
 
-- `apps/pfotentechnik/src/components/AutoContentBlocks.astro`: 1 Deklarationen, 27 Bytes
-- `apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro`: 1 Deklarationen, 25 Bytes
-- `apps/pfotentechnik/src/pages/[slug].astro`: 1 Deklarationen, 30 Bytes
-- `apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro`: 5 Deklarationen, 274 Bytes
-- `apps/pfotentechnik/src/styles/pfotentechnik-design-system.css`: 56 Deklarationen, 1586 Bytes
-- `apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css`: 46 Deklarationen, 830 Bytes
-- `apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css`: 1 Deklarationen, 17 Bytes
-- `packages/affiliate-core/src/components/Header.astro`: 11 Deklarationen, 386 Bytes
-- `packages/affiliate-core/src/components/ImageLightbox.astro`: 1 Deklarationen, 20 Bytes
-- `packages/affiliate-core/src/components/comparison/comparison-system.css`: 46 Deklarationen, 1369 Bytes
-- `packages/affiliate-core/src/components/product/ProductReview.astro`: 2 Deklarationen, 65 Bytes
-- `packages/affiliate-core/src/renderer/PremiumRenderer.astro`: 3 Deklarationen, 82 Bytes
-- `packages/affiliate-core/src/styles/header-footer.css`: 3 Deklarationen, 84 Bytes
-- `packages/affiliate-core/src/styles/product.css`: 1 Deklarationen, 30 Bytes
+- `apps\pfotentechnik\src\components\product-experience-2\product-gallery-29.css`: 7 Deklarationen, 211 Bytes
+- `apps\pfotentechnik\src\styles\pfotentechnik-design-system.css`: 1 Deklarationen, 37 Bytes
+- `apps\pfotentechnik\src\styles\pfotentechnik.css`: 3 Deklarationen, 110 Bytes
+- `packages\affiliate-core\src\components\Header.astro`: 4 Deklarationen, 180 Bytes

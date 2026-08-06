@@ -1,6 +1,7 @@
 ---
 title: "Katzenklappen mit App und Beuteerkennung im Vergleich"
 slug: "katzenklappen-mit-app-und-beuteerkennung"
+canonical: "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
 type: "comparison"
 layout: "comparison"
 description: "SureFlap Connect, OnlyCat, petWALK und ZeroMOUSE nach Produktrolle, Fernfunktionen, Beuteerkennung, Strom und Ausfallverhalten einordnen."

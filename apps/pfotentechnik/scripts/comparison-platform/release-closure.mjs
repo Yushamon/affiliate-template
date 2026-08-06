@@ -21,7 +21,7 @@ const signoffFile = path.join(reportDir, "comparison-visual-signoff.json");
 const reportJson = path.join(reportDir, "comparison-release-closure.json");
 const reportMd = path.join(reportDir, "comparison-release-closure.md");
 
-const EXPECTED_COMPARISONS = 24;
+const EXPECTED_COMPARISONS = 26;
 
 const parse = (file) => {
   const source = fs.readFileSync(file, "utf8");
@@ -158,13 +158,13 @@ for (const entry of comparisonData) {
   if (!html.includes('data-dark-mode-ready="true"')) {
     errors.push("Dark-Mode-Ready-Marker fehlt.");
   }
-  if (!html.includes('data-comparison-sticky="true"')) {
+  if (!/<aside\b[^>]*\bdata-comparison-sticky(?:\s|=|>)/i.test(html)) {
     errors.push("Mobile Sticky-Bar fehlt.");
   }
-  if (!html.includes('id="vergleichssieger"') || !html.includes("comparison-winner-card")) {
+  if (!html.includes('id="vergleichssieger"') || !html.includes("comparison-editorial-recommendation")) {
     errors.push("Gewinnerkarte fehlt.");
   }
-  if (!html.includes("comparison-winner-card__image")) {
+  if (!html.includes("comparison-editorial-recommendation__media")) {
     errors.push("Gewinnerbild fehlt.");
   }
   if (!html.includes(">Test lesen<")) {

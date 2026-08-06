@@ -1,22 +1,18 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-06T08:43:50.735Z
+Erstellt: 2026-08-06T10:40:48.336Z
 
 ## Ergebnis
 
 - Dokumente: 201
 - Linkdefinitionen: 451
-- Simulierte automatische Links: 458
+- Simulierte automatische Links: 459
 - Fehler: 0
-- Warnungen: 41
+- Warnungen: 31
 - Strict-kritisch: 0
 
 ## Befunde
 
-- **WARNING LINKING_METADATA_MISSING:** /katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-einbauen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.
-- **WARNING LINKING_METADATA_MISSING:** /katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -40,12 +36,6 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -98,8 +88,8 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /futterautomat-im-urlaub/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-im-urlaub/ → /hersteller/xiaomi/: „Xiaomi“
 - /futterautomat-katze/ → /hersteller/cat-mate/: „Cat Mate“
-- /futterautomat-katze/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-katze/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
+- /futterautomat-katze/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-katze/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-katze/ → /hersteller/xiaomi/: „Xiaomi“
 - /futterautomat-richtig-reinigen/ → /hersteller/petlibro/: „PETLIBRO“
@@ -180,8 +170,8 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /wie-viele-wasserstellen-katze/: „Mehrere Wasserstellen“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
-- /trinkbrunnen-fuer-katzen-sinnvoll/ → /hersteller/petlibro/: „PETLIBRO“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /trinkbrunnen-fuer-katzen-sinnvoll/ → /hersteller/petlibro/: „PETLIBRO“
 - /trinkbrunnen-fuer-mehrere-katzen/ → /hersteller/petlibro/: „PETLIBRO“
 - /trinkbrunnen-hund/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
 - /trinkbrunnen-hund/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
@@ -282,8 +272,8 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /produkt/cat-mate-shell-fountain/ → /hersteller/cat-mate/: „Cat Mate“
 - /produkt/catit-pixi-smart-6-meal-feeder/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /produkt/catit-pixi-smart-6-meal-feeder/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
-- /produkt/catit-pixi-smart-6-meal-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/catit-pixi-smart-6-meal-feeder/ → /hersteller/catit/: „Catit“
+- /produkt/catit-pixi-smart-6-meal-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/catit-pixi-vision-smart-feeder/ → /hersteller/catit/: „Catit“
 - /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
 - /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
@@ -351,8 +341,8 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /produkt/petlibro-dockstream-2-smart-cordless/ → /trinkbrunnen/: „Trinkbrunnen“
 - /produkt/petlibro-dockstream-2-smart-cordless/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
 - /produkt/petlibro-dockstream-2-smart-cordless/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
-- /produkt/petlibro-dockstream-2-smart-cordless/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-dockstream-2-smart-cordless/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
+- /produkt/petlibro-dockstream-2-smart-cordless/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-dockstream-2-smart/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-dockstream-cordless/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-dockstream-rfid-smart/ → /hersteller/petlibro/: „PETLIBRO“
@@ -409,8 +399,8 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /produkt/zeromouse-2-0/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/zeromouse-2-0/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
-- /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petsafe/: „PetSafe“
+- /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für große Hunde“
 - /vergleiche/beste-futterautomaten-fuer-hunde/ → /produkt/wopet-patrol-f07-pro/: „WOPET Patrol F07 Pro“
@@ -522,6 +512,7 @@ Erstellt: 2026-08-06T08:43:50.735Z
 - /hersteller/petlibro/ → /futterautomat-hund/: „Futterautomaten für Hunde“
 - /hersteller/petlibro/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /hersteller/petlibro/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /hersteller/petlibro/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
 - /hersteller/surefeed/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/surefeed/ → /produkt/sureflap-mikrochip-katzenklappe/: „SureFlap Mikrochip Katzenklappe“
 - /hersteller/wopet/ → /smarte-futterautomaten/: „Futterautomaten“

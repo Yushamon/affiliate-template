@@ -1,6 +1,6 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-06T08:43:50.735Z",
+  "generatedAt": "2026-08-06T10:40:48.336Z",
   "strict": false,
   "summary": {
     "documents": 201,
@@ -8,9 +8,9 @@
     "buildRoutes": 297,
     "validRoutes": 297,
     "definitions": 451,
-    "renderedAutomaticLinks": 458,
+    "renderedAutomaticLinks": 459,
     "errors": 0,
-    "warnings": 41,
+    "warnings": 31,
     "critical": 0
   },
   "blockedAnchors": [
@@ -37,34 +37,6 @@
     "wasser"
   ],
   "findings": [
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katze-an-katzenklappe-gewoehnen/",
-      "file": "apps/pfotentechnik/src/content/pages/katze-an-katzenklappe-gewoehnen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-einbauen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-einbauen/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-fuer-mehrere-katzen/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-fuer-mehrere-katzen.md"
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md"
-    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -202,42 +174,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/petkit-fresh-element-infinity/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-air-automatic-feeder/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-air-wifi-feeder/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-glacier-ultrafiltration/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-granary-2-vision/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-granary-dual-feeder/"
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-stainless-steel-fountain/"
     },
     {
       "severity": "warning",
@@ -425,7 +361,7 @@
       "sourceRoute": "/biofilm-im-katzentrinkbrunnen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1608
     },
     {
       "sourceRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
@@ -527,7 +463,7 @@
       "sourceRoute": "/futterautomat-bei-uebergewicht/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1508
     },
     {
       "sourceRoute": "/futterautomat-bei-uebergewicht/",
@@ -569,7 +505,7 @@
       "sourceRoute": "/futterautomat-hund/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "Petlibro",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/futterautomat-im-urlaub/",
@@ -587,7 +523,7 @@
       "sourceRoute": "/futterautomat-im-urlaub/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1408
     },
     {
       "sourceRoute": "/futterautomat-im-urlaub/",
@@ -603,15 +539,15 @@
     },
     {
       "sourceRoute": "/futterautomat-katze/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1908
-    },
-    {
-      "sourceRoute": "/futterautomat-katze/",
       "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "anchor": "Geräuschentwicklung",
       "score": 1819
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
     },
     {
       "sourceRoute": "/futterautomat-katze/",
@@ -629,7 +565,7 @@
       "sourceRoute": "/futterautomat-richtig-reinigen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1608
+      "score": 1508
     },
     {
       "sourceRoute": "/futterautomat-richtig-reinigen/",
@@ -797,7 +733,7 @@
       "sourceRoute": "/kalk-katzentrinkbrunnen-entfernen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1608
     },
     {
       "sourceRoute": "/katze-an-trinkbrunnen-gewoehnen/",
@@ -923,7 +859,7 @@
       "sourceRoute": "/katzentrinkbrunnen-laut-pumpe/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1408
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
@@ -971,7 +907,7 @@
       "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1608
     },
     {
       "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
@@ -1095,21 +1031,21 @@
     },
     {
       "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1908
-    },
-    {
-      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
       "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
       "anchor": "Biofilm",
       "score": 1907
     },
     {
+      "sourceRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
+    },
+    {
       "sourceRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1708
     },
     {
       "sourceRoute": "/trinkbrunnen-hund/",
@@ -1277,7 +1213,7 @@
       "sourceRoute": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1408
     },
     {
       "sourceRoute": "/warum-katzen-fliessendes-wasser-trinken/",
@@ -1325,7 +1261,7 @@
       "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "Petlibro",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/welcher-futterautomat-ist-der-richtige/",
@@ -1415,7 +1351,7 @@
       "sourceRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1608
+      "score": 1408
     },
     {
       "sourceRoute": "/wie-lange-bleibt-trockenfutter-frisch/",
@@ -1499,7 +1435,7 @@
       "sourceRoute": "/wie-viele-mahlzeiten-hund/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "Petlibro",
-      "score": 1608
+      "score": 1408
     },
     {
       "sourceRoute": "/wie-viele-mahlzeiten-hund/",
@@ -1523,7 +1459,7 @@
       "sourceRoute": "/wie-viele-mahlzeiten-katze/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "Petlibro",
-      "score": 1608
+      "score": 1408
     },
     {
       "sourceRoute": "/wie-viele-mahlzeiten-katze/",
@@ -1613,7 +1549,7 @@
       "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1608
+      "score": 1408
     },
     {
       "sourceRoute": "/produkt/aqara-smart-pet-feeder-c1/",
@@ -1679,7 +1615,7 @@
       "sourceRoute": "/produkt/cat-mate-c500/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/cat-mate-c500/",
@@ -1707,15 +1643,15 @@
     },
     {
       "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1808
-    },
-    {
-      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
       "targetRoute": "/hersteller/catit/",
       "anchor": "Catit",
       "score": 1805
+    },
+    {
+      "sourceRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1708
     },
     {
       "sourceRoute": "/produkt/catit-pixi-vision-smart-feeder/",
@@ -2075,7 +2011,7 @@
       "sourceRoute": "/produkt/petlibro-air-automatic-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1508
     },
     {
       "sourceRoute": "/produkt/petlibro-air-wifi-feeder/",
@@ -2093,13 +2029,13 @@
       "sourceRoute": "/produkt/petlibro-air-wifi-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-capsule-dog-fountain/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1408
+      "score": 1308
     },
     {
       "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
@@ -2121,63 +2057,63 @@
     },
     {
       "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1708
-    },
-    {
-      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
       "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
       "anchor": "Biofilm",
       "score": 1707
     },
     {
+      "sourceRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1508
+    },
+    {
       "sourceRoute": "/produkt/petlibro-dockstream-2-smart/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1508
     },
     {
       "sourceRoute": "/produkt/petlibro-dockstream-cordless/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1608
+      "score": 1408
     },
     {
       "sourceRoute": "/produkt/petlibro-dockstream-rfid-smart/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1408
     },
     {
       "sourceRoute": "/produkt/petlibro-glacier-ultrafiltration/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1308
     },
     {
       "sourceRoute": "/produkt/petlibro-granary-2-vision/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-granary-camera-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-granary-dual-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-granary-wifi-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
@@ -2189,13 +2125,13 @@
       "sourceRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1708
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-polar-wet-food-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
@@ -2213,7 +2149,7 @@
       "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/produkt/petlibro-space-smart-feeder/",
@@ -2231,7 +2167,7 @@
       "sourceRoute": "/produkt/petlibro-stainless-steel-fountain/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1308
     },
     {
       "sourceRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
@@ -2469,15 +2405,15 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1608
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "targetRoute": "/hersteller/petsafe/",
       "anchor": "PetSafe",
       "score": 1607
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1408
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -2555,7 +2491,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
@@ -2573,7 +2509,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1508
+      "score": 1308
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
@@ -2639,7 +2575,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
@@ -2663,7 +2599,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
@@ -2723,7 +2659,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1608
+      "score": 1508
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
@@ -2951,7 +2887,7 @@
       "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "Petlibro",
-      "score": 1808
+      "score": 1608
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
@@ -2981,7 +2917,7 @@
       "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1708
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-gegen-schlingen/",
@@ -3119,31 +3055,37 @@
       "sourceRoute": "/hersteller/petlibro/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomaten",
-      "score": 6915
+      "score": 6715
     },
     {
       "sourceRoute": "/hersteller/petlibro/",
       "targetRoute": "/trinkbrunnen/",
       "anchor": "Trinkbrunnen",
-      "score": 6912
+      "score": 6712
     },
     {
       "sourceRoute": "/hersteller/petlibro/",
       "targetRoute": "/futterautomat-hund/",
       "anchor": "Futterautomaten für Hunde",
-      "score": 3925
+      "score": 3725
     },
     {
       "sourceRoute": "/hersteller/petlibro/",
       "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
       "anchor": "Trinkbrunnen für Katzen",
-      "score": 3923
+      "score": 3723
     },
     {
       "sourceRoute": "/hersteller/petlibro/",
       "targetRoute": "/trinkbrunnen-hund/",
       "anchor": "Trinkbrunnen für Hunde",
-      "score": 3922
+      "score": 3722
+    },
+    {
+      "sourceRoute": "/hersteller/petlibro/",
+      "targetRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "anchor": "Edelstahlbrunnen",
+      "score": 1616
     },
     {
       "sourceRoute": "/hersteller/surefeed/",
@@ -3228,7 +3170,7 @@
     "/katzenklappen/": 8,
     "/katzentrinkbrunnen-dauerbetrieb-urlaub/": 0,
     "/katzentrinkbrunnen-laut-pumpe/": 4,
-    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 9,
+    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 10,
     "/katzentrinkbrunnen-ohne-filter/": 0,
     "/katzentrinkbrunnen-richtig-reinigen/": 10,
     "/katzenwasser-taeglich-wechseln/": 4,
@@ -3268,22 +3210,22 @@
     "/produkt/petkit-fresh-element-solo/": 9,
     "/produkt/petkit-yumshare-dual-hopper/": 6,
     "/produkt/petkit-yumshare-solo-2/": 2,
-    "/produkt/petlibro-air-automatic-feeder/": 0,
-    "/produkt/petlibro-air-wifi-feeder/": 0,
+    "/produkt/petlibro-air-automatic-feeder/": 1,
+    "/produkt/petlibro-air-wifi-feeder/": 1,
     "/produkt/petlibro-capsule-dog-fountain/": 1,
     "/produkt/petlibro-dockstream-2-smart-cordless/": 1,
     "/produkt/petlibro-dockstream-2-smart/": 3,
     "/produkt/petlibro-dockstream-cordless/": 1,
     "/produkt/petlibro-dockstream-rfid-smart/": 2,
-    "/produkt/petlibro-glacier-ultrafiltration/": 0,
-    "/produkt/petlibro-granary-2-vision/": 0,
+    "/produkt/petlibro-glacier-ultrafiltration/": 1,
+    "/produkt/petlibro-granary-2-vision/": 1,
     "/produkt/petlibro-granary-camera-feeder/": 7,
-    "/produkt/petlibro-granary-dual-feeder/": 0,
+    "/produkt/petlibro-granary-dual-feeder/": 1,
     "/produkt/petlibro-granary-wifi-feeder/": 17,
     "/produkt/petlibro-one-rfid-smart-feeder/": 1,
     "/produkt/petlibro-polar-wet-food-feeder/": 3,
     "/produkt/petlibro-space-smart-feeder/": 1,
-    "/produkt/petlibro-stainless-steel-fountain/": 0,
+    "/produkt/petlibro-stainless-steel-fountain/": 1,
     "/produkt/petsafe-freshfeed-refrigerated-feeder/": 0,
     "/produkt/petsafe-healthy-pet-simply-feed/": 1,
     "/produkt/petsafe-mikrochip-katzenklappe/": 1,

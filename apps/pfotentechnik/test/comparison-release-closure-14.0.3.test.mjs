@@ -15,10 +15,10 @@ const parse = (source) => {
   return { data: yaml.load(match[1]), body: match[2] };
 };
 
-test("all 24 comparison files use canonical comparison routes", async () => {
+test("all 26 comparison files use canonical comparison routes", async () => {
   const dir = path.join(appRoot, "src", "content", "comparisons");
   const names = (await fs.readdir(dir)).filter((name) => /\.mdx?$/.test(name));
-  assert.equal(names.length, 24);
+  assert.equal(names.length, 26);
 
   for (const name of names) {
     const { data, body } = parse(await fs.readFile(path.join(dir, name), "utf8"));
@@ -37,29 +37,27 @@ test("all 24 comparison files use canonical comparison routes", async () => {
   }
 });
 
-test("comparison UI hides unresolved criteria instead of rendering empty-data walls", async () => {
+test("comparison UI separates complete rows from explicit missing-data states", async () => {
   const viewModel = await read("apps/pfotentechnik/src/domain/comparison/buildComparisonViewModel.ts");
-  const table = await read("packages/affiliate-core/src/components/comparison/ComparisonTable.astro");
-  const mobile = await read("packages/affiliate-core/src/components/comparison/ComparisonMobileCards.astro");
+  const explorer = await read("packages/affiliate-core/src/components/comparison/ComparisonExplorer.astro");
 
   assert.match(viewModel, /resolvedCount === row\.cells\.length/);
-  assert.doesNotMatch(table, />Keine Angabe</);
-  assert.doesNotMatch(mobile, />Keine Angabe</);
-  assert.match(table, /comparison-value-missing/);
-  assert.match(mobile, /comparison-value-missing/);
+  assert.match(explorer, /comparison-lab__missing/);
+  assert.match(explorer, /Keine Angabe/);
 });
 
 test("release safeguards cover dark mode, sticky CTA, schema and links", async () => {
   const shell = await read("packages/affiliate-core/src/components/comparison/ComparisonShell.astro");
   const sticky = await read("packages/affiliate-core/src/components/comparison/ComparisonStickyBar.astro");
+  const comparisonStyles = await read("packages/affiliate-core/src/components/comparison/comparison-system.css");
   const releaseAudit = await read("apps/pfotentechnik/scripts/comparison-platform/release-closure.mjs");
   const refactorAudit = await read("apps/pfotentechnik/scripts/comparison-platform/refactor-audit.mjs");
 
   assert.match(shell, /data-dark-mode-ready="true"/);
   assert.match(sticky, /data-comparison-sticky="true"/);
-  assert.match(sticky, /safe-area-inset-bottom/);
+  assert.match(comparisonStyles, /safe-area-inset-bottom/);
   assert.match(releaseAudit, /ItemList/);
   assert.match(releaseAudit, /FAQPage/);
-  assert.match(releaseAudit, /EXPECTED_COMPARISONS = 24/);
+  assert.match(releaseAudit, /EXPECTED_COMPARISONS = 26/);
   assert.match(refactorAudit, /MALFORMED_COMPARISON_PATH/);
 });

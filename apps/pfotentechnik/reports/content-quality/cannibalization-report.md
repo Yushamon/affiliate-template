@@ -7,7 +7,7 @@
 - Gelöste Konflikte: 2
 - Manuelle Prüffälle: 0
 - Harte Fehler: 0
-- Warnungen: 3
+- Warnungen: 0
 
 ## Konflikte und bewusste Abgrenzungen
 
@@ -57,13 +57,10 @@
 
 ## Audit-Befunde
 
-- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappe-einbauen/: Gerenderte H1-Anzahl: 10.
-- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappe-fuer-mehrere-katzen/: Gerenderte H1-Anzahl: 10.
-- **WARNING · CONTENT_H1_COUNT_INVALID** · /katzenklappen/: Gerenderte H1-Anzahl: 6.
+Keine offenen Befunde.
 
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- IMPROVE: 3
-- KEEP: 210
+- KEEP: 213
 - NOINDEX: 84

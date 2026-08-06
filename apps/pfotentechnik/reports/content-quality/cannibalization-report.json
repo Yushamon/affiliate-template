@@ -207,7 +207,7 @@
   ],
   "searchData": {
     "available": true,
-    "generatedAt": "2026-08-04T12:44:53.074Z",
+    "generatedAt": "2026-08-06T10:26:44.930Z",
     "range": "7d",
     "matchedPages": 10
   },
@@ -231,9 +231,9 @@
       "product": 74
     },
     "clusters": {
-      "futterautomaten": 81,
+      "futterautomaten": 82,
       "gps-tracker": 26,
-      "hersteller": 17,
+      "hersteller": 16,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
       "katzen-und-hundespezifische-hardware": 1,
@@ -259,12 +259,11 @@
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "IMPROVE": 3,
-      "KEEP": 210,
+      "KEEP": 213,
       "NOINDEX": 84
     },
     "errors": 0,
-    "warnings": 3,
+    "warnings": 0,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
     "intentConflicts": 0,
@@ -275,35 +274,7 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [
-    {
-      "id": "content_h1_count_invalid|/katzenklappe-einbauen/",
-      "code": "CONTENT_H1_COUNT_INVALID",
-      "severity": "warning",
-      "routes": [
-        "/katzenklappe-einbauen/"
-      ],
-      "evidence": "Gerenderte H1-Anzahl: 10."
-    },
-    {
-      "id": "content_h1_count_invalid|/katzenklappe-fuer-mehrere-katzen/",
-      "code": "CONTENT_H1_COUNT_INVALID",
-      "severity": "warning",
-      "routes": [
-        "/katzenklappe-fuer-mehrere-katzen/"
-      ],
-      "evidence": "Gerenderte H1-Anzahl: 10."
-    },
-    {
-      "id": "content_h1_count_invalid|/katzenklappen/",
-      "code": "CONTENT_H1_COUNT_INVALID",
-      "severity": "warning",
-      "routes": [
-        "/katzenklappen/"
-      ],
-      "evidence": "Gerenderte H1-Anzahl: 6."
-    }
-  ],
+  "findings": [],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",

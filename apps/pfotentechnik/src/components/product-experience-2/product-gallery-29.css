@@ -355,7 +355,7 @@
   object-position: 50% 50%;
 }
 
-:global(html.has-pg29-lightbox) {
+html.has-pg29-lightbox {
   overflow: hidden;
 }
 
@@ -405,7 +405,6 @@
     min-height: 0;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     border: 0;
     background: var(--px2-surface-raised);
     cursor: zoom-in;
@@ -427,7 +426,6 @@
 
   .pg29--double .pg29__desktop {
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: minmax(480px, 62vh);
   }
 
   .pg29--triple .pg29__desktop {
@@ -441,7 +439,6 @@
 
   .pg29--mosaic .pg29__desktop {
     grid-template-columns: 2fr repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(236px, 31vh));
   }
 
   .pg29--mosaic .pg29__tile:first-child {
@@ -454,7 +451,6 @@
     bottom: 16px;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
     min-height: 44px;
     padding: 9px 14px;
     border: 1px solid var(--px2-border);
@@ -486,12 +482,10 @@
     color: #fff;
     background: rgba(0, 0, 0, .54);
     font-size: 2rem;
-    cursor: pointer;
   }
 
   .pg29-lightbox__viewport {
     display: grid;
-    place-items: center;
     max-height: none;
   }
 
@@ -527,7 +521,6 @@
   .pg29__slide,
   .pg29 .pg29__image {
     width: 100%;
-    max-width: none;
     margin-inline: 0;
   }
 }

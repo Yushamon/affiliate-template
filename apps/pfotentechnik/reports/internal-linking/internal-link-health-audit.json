@@ -1,7 +1,7 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-08-06T08:43:49.158Z",
-  "strict": false,
+  "generatedAt": "2026-08-06T10:40:48.753Z",
+  "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
@@ -10,64 +10,20 @@
   "summary": {
     "documents": 201,
     "legacyErrors": 0,
-    "legacyWarnings": 41,
+    "legacyWarnings": 31,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 41,
+    "effectiveWarnings": 31,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 52
+    "advisory": 42
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 41
+    "warning": 31
   },
   "findings": [
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katze-an-katzenklappe-gewoehnen/",
-      "file": "apps/pfotentechnik/src/content/pages/katze-an-katzenklappe-gewoehnen.md",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-einbauen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-einbauen/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-fuer-mehrere-katzen/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-fuer-mehrere-katzen.md",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "LINKING_METADATA_MISSING",
-      "message": "/katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten.",
-      "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
-      "file": "apps/pfotentechnik/src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -293,66 +249,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/produkt/petkit-fresh-element-infinity/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-air-automatic-feeder/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-air-wifi-feeder/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-glacier-ultrafiltration/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-granary-2-vision/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-granary-dual-feeder/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/petlibro-stainless-steel-fountain/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

@@ -1,6 +1,6 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-06T08:43:49.158Z
+Erstellt: 2026-08-06T10:40:48.753Z
 
 ## Zusammenfassung
 
@@ -8,7 +8,7 @@ Erstellt: 2026-08-06T08:43:49.158Z
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0
-- Effektive Warnungen: 41
+- Effektive Warnungen: 31
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -36,10 +36,6 @@ Keine Befunde.
 
 ## Weitere Prüfhinweise
 
-- **WARNING · LINKING_METADATA_MISSING · advisory:** /katze-an-katzenklappe-gewoehnen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-einbauen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-fuer-mehrere-katzen/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · LINKING_METADATA_MISSING · advisory:** /katzenklappe-zugluft-und-waermedaemmung/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
@@ -63,12 +59,6 @@ Keine Befunde.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petkit-eversweet-max-cordless/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petkit-eversweet-solo-se/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petkit-fresh-element-infinity/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-air-automatic-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-air-wifi-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-glacier-ultrafiltration/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-granary-2-vision/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-granary-dual-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petlibro-stainless-steel-fountain/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/petsafe-freshfeed-refrigerated-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/wopet-cube-air-ca10/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/wopet-heritage-view-camera-feeder/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

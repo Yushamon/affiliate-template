@@ -44,6 +44,31 @@ const value = (item, keys) =>
   );
 
 const list = (candidate) => Array.isArray(candidate) ? candidate : candidate ? [candidate] : [];
+const normalized = (candidate) => String(candidate ?? "").trim().toLowerCase();
+
+/** Quality Operations ist eine Arbeitsliste, kein Spiegel jeder Audit-Prüfliste. */
+export function isOperationalFinding(source, key, item) {
+  const record = item && typeof item === "object" ? item : {};
+  const severity = normalized(record.effectiveSeverity || record.severity || record.level || severityForKey(key));
+  const code = normalized(record.code || record.type || key);
+
+  if (source.id === "visual-qa") return severity === "severe" || severity === "critical";
+  if (source.id === "decision-journeys") return normalized(key) === "technical" || severity === "error" || severity === "critical";
+  if (source.id === "repository-audit") {
+    return severity === "error" || severity === "critical"
+      || (severity === "warning" && normalized(record.area) === "structured-data");
+  }
+  if (source.id === "internal-linking") {
+    return severity === "error" || severity === "critical" || /(?:runtime|effective)-error/.test(normalized(record.classification));
+  }
+  if (source.id === "product-data") return normalized(key) === "errors" || severity === "error" || severity === "critical";
+  if (["price-intelligence", "comparison-heroes", "seo-copilot-report"].includes(source.id)) return false;
+  if (source.id === "content-inventory") return false;
+  if (source.id === "topical-authority") return severity === "error" || severity === "critical";
+  if (source.id === "performance") return severity === "error" || severity === "critical";
+  if (source.id === "cannibalization" && code === "intent-separation") return false;
+  return severity !== "info" && severity !== "note" && severity !== "ok";
+}
 
 function contextFrom(item, inherited = {}) {
   if (!item || typeof item !== "object" || Array.isArray(item)) return inherited;
@@ -58,7 +83,7 @@ function contextFrom(item, inherited = {}) {
 
 function findingFrom(item, source, key, context, reportPath) {
   const object = item && typeof item === "object" ? item : { message: String(item) };
-  const description = value(object, [
+  const descriptionValue = value(object, [
     "message",
     "reason",
     "description",
@@ -67,8 +92,11 @@ function findingFrom(item, source, key, context, reportPath) {
     "evidence",
     "error",
     "warning",
-  ]) || String(item);
+  ]);
   const code = value(object, ["code", "type", "id", "check", "rule"]) || key;
+  const description = ["string", "number", "boolean"].includes(typeof descriptionValue)
+    ? String(descriptionValue)
+    : `${code}${object.value !== undefined ? `: ${object.value}` : ""}`;
   const file = value(object, ["file", "sourceFile", "filePath", "path"]) || context.file;
   const route = value(object, [
     "route",
@@ -84,6 +112,9 @@ function findingFrom(item, source, key, context, reportPath) {
     source.id === "comparison-audit"
     && /metadata|normalize|format/i.test(`${code} ${description}`);
 
+  const files = [...new Set([...list(object.files), ...list(file)])];
+  const urls = [...new Set([...list(object.routes), ...list(object.urls), ...list(route)])];
+
   return {
     type: String(code),
     category: source.area,
@@ -92,8 +123,8 @@ function findingFrom(item, source, key, context, reportPath) {
     confidence: value(object, ["confidence"]) ?? 90,
     source: source.label,
     reportPath: path.relative(APP_ROOT, reportPath).replaceAll("\\", "/"),
-    files: list(file),
-    urls: list(route),
+    files,
+    urls,
     component: value(object, ["component", "componentName"]) || context.component,
     description: String(description),
     impact: value(object, ["impact"]),
@@ -109,6 +140,7 @@ function findingFrom(item, source, key, context, reportPath) {
     autoFixPossible,
     autoFixAvailable: autoFixPossible,
     autoFixId: autoFixPossible ? "comparison-safe-autofix" : "",
+    codexSuitable: true,
   };
 }
 
@@ -120,7 +152,9 @@ function collectNested(node, source, reportPath, findings, inherited = {}, seen 
   for (const [key, child] of Object.entries(node)) {
     if (Array.isArray(child) && FINDING_KEYS.test(key)) {
       for (const item of child) {
-        findings.push(findingFrom(item, source, key, context, reportPath));
+        if (isOperationalFinding(source, key, item)) {
+          findings.push(findingFrom(item, source, key, context, reportPath));
+        }
       }
       continue;
     }
@@ -134,6 +168,7 @@ function collectNested(node, source, reportPath, findings, inherited = {}, seen 
 }
 
 function collectDerived(parsed, source, reportPath, findings) {
+  if (["price-intelligence", "comparison-heroes", "seo-copilot-report"].includes(source.id)) return;
   if (source.id === "price-intelligence" && Array.isArray(parsed.products)) {
     for (const product of parsed.products.filter((item) => item.stale || !item.current)) {
       findings.push(findingFrom({
@@ -147,7 +182,11 @@ function collectDerived(parsed, source, reportPath, findings) {
   }
 
   if (source.id === "content-inventory" && Array.isArray(parsed.pages)) {
-    for (const page of parsed.pages.filter((item) => item.indexable && !String(item.author || "").trim())) {
+    for (const page of parsed.pages.filter((item) =>
+      item.indexable
+      && /ratgeber|comparison|vergleich/i.test(String(item.pageType || ""))
+      && !String(item.author || "").trim()
+    )) {
       findings.push(findingFrom({
         code: "AUTHOR_MISSING",
         severity: /ratgeber|comparison|vergleich/.test(`${page.pageType} ${page.route}`) ? "warning" : "info",

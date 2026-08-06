@@ -1,6 +1,7 @@
 ---
 title: "Katze an die Katzenklappe gewöhnen"
 slug: "katze-an-katzenklappe-gewoehnen"
+linking: { keywords: ["Katze an Katzenklappe gewöhnen", "Katzenklappen-Training", "Katze durch Katzenklappe"], contexts: ["katzenklappen", "gewöhnung", "training"], priority: "high", maxOccurrences: 1 }
 type: "knowledge"
 layout: "knowledge"
 description: "Katze schrittweise an Öffnung, Klappenbewegung, Geräusch und Verriegelung gewöhnen – ohne Druck."

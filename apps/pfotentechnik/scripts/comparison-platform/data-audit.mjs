@@ -11,7 +11,7 @@ import {
 import { resolveComparisonValue } from "./data-platform.mjs";
 
 const STRICT = process.argv.includes("--strict");
-const EXPECTED_COMPARISONS = 24;
+const EXPECTED_COMPARISONS = 26;
 const MIN_VISIBLE_ROWS = 3;
 const MIN_RENDERED_COVERAGE = 95;
 

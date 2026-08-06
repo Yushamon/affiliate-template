@@ -1,6 +1,7 @@
 ---
 title: "Mikrochip-Katzenklappen im Vergleich"
 slug: "beste-mikrochip-katzenklappen"
+canonical: "/vergleiche/beste-mikrochip-katzenklappen/"
 type: "comparison"
 layout: "comparison"
 description: "Sieben belegte Mikrochip-Türen nach Zugangslogik, Richtungsrechten, App-Abhängigkeit, Strom, Einbau und Produktrolle vergleichen."

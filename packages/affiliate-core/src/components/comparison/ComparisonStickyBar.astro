@@ -6,7 +6,7 @@ const { product } = Astro.props as Props;
 const price = product ? getPriceDisplay(product.price) : null;
 ---
 {product && price?.url && (
-  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung" data-comparison-sticky hidden>
+  <aside class="comparison-sticky-bar" aria-label="Top-Empfehlung" data-comparison-sticky="true" hidden>
     <div class="comparison-sticky-bar__identity"><span>Unsere Empfehlung</span><strong title={product.title}>{product.title}</strong></div>
     <a href={price.url} class="pt-button comparison-button comparison-sticky-bar__primary" rel={price.rel} target={price.target} data-affiliate-link>Preis prüfen</a>
   </aside>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-06T08:43:42.295Z",
+  "generatedAt": "2026-08-06T10:35:46.395Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -1389,7 +1389,7 @@
       "slug": "petlibro",
       "route": "/hersteller/petlibro/",
       "title": "PETLIBRO",
-      "description": "PETLIBRO im Überblick: Futterautomaten und Trinkbrunnen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Modelle.",
+      "description": "PETLIBRO Futterautomaten und Trinkbrunnen im Überblick: Modellreihen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Vergleiche.",
       "type": "manufacturer",
       "cluster": "hersteller",
       "topics": [
@@ -1404,9 +1404,7 @@
         "ernaehrung",
         "gps tracker",
         "haustierkameras",
-        "haustiertechnik",
-        "hunde",
-        "katzen"
+        "haustiertechnik"
       ],
       "tags": [
         "hersteller",
@@ -3724,7 +3722,7 @@
       "slug": "trinkbrunnen",
       "route": "/trinkbrunnen/",
       "title": "Trinkbrunnen für Katzen und Hunde",
-      "description": "Trinkbrunnen für Katzen und Hunde nach Reinigung, Material, Lautstärke, Kapazität, Filter und Betriebsart vergleichen.",
+      "description": "Trinkbrunnen für Katzen und Hunde nach Tiergröße, Reinigung, Material, Lautstärke, Filter und Betriebsart auswählen.",
       "type": "page",
       "cluster": "trinkbrunnen",
       "topics": [
@@ -8503,14 +8501,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -9648,6 +9638,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -14855,14 +14853,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -16072,6 +16062,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -21383,14 +21381,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 88,
@@ -22368,6 +22358,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -47991,14 +47989,6 @@
     },
     {
       "source": "comparison:kleine-gps-tracker-fuer-katzen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:kleine-gps-tracker-fuer-katzen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -49008,6 +48998,14 @@
     {
       "source": "comparison:kleine-gps-tracker-fuer-katzen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:kleine-gps-tracker-fuer-katzen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -68391,14 +68389,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "comparison:beste-futterautomaten-fuer-hunde",
       "type": "semantic",
       "score": 100,
@@ -68416,14 +68406,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -68552,14 +68534,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "comparison:kleine-gps-tracker-fuer-katzen",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -68775,14 +68749,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:futterautomat-im-urlaub",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:futterautomat-katze",
       "type": "semantic",
       "score": 100,
@@ -68823,14 +68789,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:gps-oder-bluetooth",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:gps-tracker",
       "type": "semantic",
       "score": 100,
@@ -68839,55 +68797,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:hund-entlaufen-gps-sinnvoll",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:hund-frisst-nicht",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:hund-frisst-zu-schnell",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:hund-hat-durchfall",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:hund-ist-muede",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:hund-trinkt-ploetzlich-viel",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:hund-trinkt-viel",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -68911,14 +68821,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:katze-an-katzenklappe-gewoehnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 100,
@@ -68927,23 +68829,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:katze-entlaufen-gps-sinnvoll",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:katze-frisst-nicht",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:katze-trinkt-viel",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69111,14 +68997,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:trinkmenge-hund-messen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:trinkmenge-katze-messen",
       "type": "semantic",
       "score": 100,
@@ -69160,14 +69038,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "page:warum-katzen-fliessendes-wasser-trinken",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:warum-schlingt-mein-hund",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69223,30 +69093,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:wie-laut-sind-automatische-futterautomaten",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:wie-viel-wasser-braucht-ein-hund",
       "type": "semantic",
       "score": 100,
@@ -69263,39 +69109,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:wie-viele-mahlzeiten-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:wie-viele-mahlzeiten-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "page:wie-viele-wasserstellen-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:aqara-smart-pet-feeder-c1",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69335,14 +69149,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:cat-mate-shell-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "product:catit-pixi-smart-6-meal-feeder",
       "type": "semantic",
       "score": 100,
@@ -69352,22 +69158,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "product:catit-pixi-vision-smart-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:garmin-alpha-t-20",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:garmin-alpha-tt-25",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69400,14 +69190,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "product:imipaw-3l-automatic-cat-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:oneisall-2-2l-cordless-fountain",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69455,14 +69237,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:paj-pet-finder-4g-mini",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "product:pawbby-smart-pet-feeder",
       "type": "semantic",
       "score": 100,
@@ -69487,14 +69261,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:petkit-eversweet-5-mini",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "product:petkit-eversweet-max-2-uvc",
       "type": "semantic",
       "score": 100,
@@ -69512,14 +69278,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "product:petkit-eversweet-solo-2-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:petkit-eversweet-solo-se",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69583,14 +69341,6 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:petlibro-capsule-dog-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "product:petlibro-dockstream-2-smart",
       "type": "semantic",
       "score": 100,
@@ -69616,14 +69366,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "product:petlibro-dockstream-rfid-smart",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:petlibro-glacier-ultrafiltration",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69687,31 +69429,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:petlibro-stainless-steel-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
       "target": "product:petsafe-freshfeed-refrigerated-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:petsafe-healthy-pet-simply-feed",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69760,30 +69478,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "product:tractive-dog-6",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:tractive-dog-6-xl",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:weenect-xs",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:weenect-xt",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69847,7 +69541,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69855,7 +69549,103 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:gps-tracker-richtig-befestigen",
+      "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-frisst-zu-schnell",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-hat-durchfall",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-ist-muede",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-trinkt-ploetzlich-viel",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:katze-an-katzenklappe-gewoehnen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:trinkmenge-hund-messen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69871,6 +69661,14 @@
     },
     {
       "source": "manufacturer:petlibro",
+      "target": "page:warum-schlingt-mein-hund",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
       "target": "page:wie-funktionieren-gps-tracker",
       "type": "semantic",
       "score": 88,
@@ -69879,7 +69677,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69887,7 +69685,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:sureflap-mikrochip-katzenklappe",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69895,7 +69693,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:tractive-cat-6-mini",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69903,9 +69701,161 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "product:oneisall-3-5l-cordless-fountain",
+      "target": "page:wie-viele-mahlzeiten-hund",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petsafe-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:weenect-xt",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:cat-mate-shell-fountain",
       "type": "semantic",
       "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petkit-eversweet-5-mini",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petkit-eversweet-solo-se",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petlibro-capsule-dog-fountain",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petlibro-glacier-ultrafiltration",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "semantic",
+      "score": 66,
       "explicit": false,
       "automatic": true
     },
@@ -69935,9 +69885,49 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:katzenklappe-einbauen",
+      "target": "page:gps-tracker-richtig-befestigen",
       "type": "semantic",
       "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:sureflap-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:tractive-cat-6-mini",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "product:oneisall-3-5l-cordless-fountain",
+      "type": "semantic",
+      "score": 60,
       "explicit": false,
       "automatic": true
     },
@@ -69951,15 +69941,7 @@
     },
     {
       "source": "manufacturer:petlibro",
-      "target": "page:katzenklappe-fuer-mehrere-katzen",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "target": "page:katzenklappe-einbauen",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -69976,14 +69958,6 @@
     {
       "source": "manufacturer:petlibro",
       "target": "page:wie-genau-sind-gps-tracker",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petlibro",
-      "target": "product:petsafe-petporte-smart-flap",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -94087,14 +94061,6 @@
     },
     {
       "source": "page:futterautomat-im-urlaub",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:futterautomat-im-urlaub",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -95128,6 +95094,14 @@
     {
       "source": "page:futterautomat-im-urlaub",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -103599,14 +103573,6 @@
     },
     {
       "source": "page:gps-oder-bluetooth",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:gps-oder-bluetooth",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -104792,6 +104758,14 @@
     {
       "source": "page:gps-oder-bluetooth",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -106927,14 +106901,6 @@
     },
     {
       "source": "page:gps-tracker-richtig-befestigen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:gps-tracker-richtig-befestigen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 88,
@@ -107800,6 +107766,14 @@
     {
       "source": "page:gps-tracker-richtig-befestigen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -108351,14 +108325,6 @@
     },
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -109520,6 +109486,14 @@
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -111551,14 +111525,6 @@
     },
     {
       "source": "page:hund-frisst-zu-schnell",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-frisst-zu-schnell",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -112671,6 +112637,14 @@
     },
     {
       "source": "page:hund-frisst-zu-schnell",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-frisst-zu-schnell",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -113144,14 +113118,6 @@
     {
       "source": "page:hund-hat-durchfall",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -114295,1606 +114261,14 @@
     },
     {
       "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:petwalk",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:surefeed",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:weenect",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:xiaomi",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:catit-pixi-vision-smart-feeder",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petkit-eversweet-solo-2-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petlibro-capsule-dog-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petlibro-dockstream-rfid-smart",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petsafe-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:tractive-cat-6-mini",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:futterautomat-bei-stromausfall",
-      "type": "semantic",
-      "score": 84,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "comparison:beste-futterautomaten-mit-akku",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:datenschutz-bei-gps-trackern",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:warum-brauchen-gps-tracker-ein-abo",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:wie-funktionieren-gps-tracker",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:oneisall-3-5l-cordless-fountain",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:onlycat-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petwalk-medium-tiertuer",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:sureflap-mikrochip-katzenklappe",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:sureflap-mikrochip-katzenklappe-connect",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "comparison:beste-futterautomaten-mit-kamera",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "comparison:beste-futterautomaten-ohne-wlan",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "comparison:futterautomat-mit-app",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:garmin",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "manufacturer:zeromouse",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:katzenklappe-einbauen",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:katzenklappe-fuer-mehrere-katzen",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:katzenklappe-zugluft-und-waermedaemmung",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:reichweite-von-gps-trackern",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "page:wie-genau-sind-gps-tracker",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-hat-durchfall",
-      "target": "product:petsafe-petporte-smart-flap",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-welpen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-unter-100-euro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-gps-tracker-fuer-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-gps-tracker-fuer-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-mikrochip-katzenklappen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-trinkbrunnen-fuer-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:futterautomat-fuer-grosse-hunde",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:futterautomat-gegen-schlingen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:gps-tracker-ohne-abo",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:kleine-gps-tracker-fuer-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:catit",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:oneisall",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
       "target": "manufacturer:petlibro",
       "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:petsafe",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:tractive",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:wopet",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:biofilm-im-katzentrinkbrunnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:filter-im-katzentrinkbrunnen-wechseln",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:fuetterungszeiten-nach-alter",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-bei-uebergewicht",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-im-urlaub",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-richtig-reinigen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futterautomat-und-ernaehrung",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futtermenge-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:futtermenge-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:gps-oder-bluetooth",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:gps-tracker",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-entlaufen-gps-sinnvoll",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-frisst-nicht",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-frisst-zu-schnell",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-hat-durchfall",
-      "type": "cluster",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-trinkt-ploetzlich-viel",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-trinkt-viel",
-      "type": "cluster",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:hund-trinkt-zu-wenig",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:kalk-katzentrinkbrunnen-entfernen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katze-an-katzenklappe-gewoehnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katze-an-trinkbrunnen-gewoehnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katze-entlaufen-gps-sinnvoll",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katze-frisst-nicht",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzentrinkbrunnen-laut-pumpe",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzentrinkbrunnen-ohne-filter",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzentrinkbrunnen-richtig-reinigen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:katzenwasser-taeglich-wechseln",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:nierenkranke-katze-trinken",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:seniorenhunde-richtig-versorgen",
-      "type": "cluster",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:smarte-futterautomaten",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:smarte-haustiertechnik",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:so-bewerten-wir",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen-fuer-kitten-sicher",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen-fuer-mehrere-katzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkbrunnen-seniorenkatzen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkmenge-hund-messen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trinkmenge-katze-messen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trockenfutter-oder-nassfutter-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:trockenfutter-oder-nassfutter-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:uebergewicht-bei-katzen-vermeiden",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:warum-katzen-fliessendes-wasser-trinken",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:warum-schlingt-mein-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wasserstelle-katze-richtiger-standort",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:welche-portionsgroesse-ist-richtig",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:welcher-futterautomat-ist-der-richtige",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:welpen-richtig-fuettern",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-funktioniert-ein-futterautomat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-laut-sind-automatische-futterautomaten",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-viel-wasser-braucht-ein-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-viel-wasser-braucht-eine-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-viele-mahlzeiten-hund",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-viele-mahlzeiten-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:wie-viele-wasserstellen-katze",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:aqara-smart-pet-feeder-c1",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:cat-mate-335-pet-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:cat-mate-c200",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:cat-mate-c300",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:cat-mate-c500",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:cat-mate-shell-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:catit-pixi-smart-6-meal-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:garmin-alpha-t-20",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:garmin-alpha-tt-25",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:honeyguardian-a305d",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:honeyguardian-a68",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:honeyguardian-smart-pet-feeder-s305d",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:imipaw-3l-automatic-cat-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:oneisall-2-2l-cordless-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:oneisall-2-in-1-feeder-water",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:oneisall-3-2l-cordless-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:oneisall-5l-automatic-cat-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:oneisall-7l-dog-water-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:paj-pet-finder-4g-mini",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:pawbby-smart-pet-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:pawsync-smart-pet-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-3-pro-uvc",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-5-mini",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-max-2-uvc",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-max-cordless",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-solo-se",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-eversweet-ultra",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-fresh-element-infinity",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-fresh-element-solo",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-yumshare-dual-hopper",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petkit-yumshare-solo-2",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-air-automatic-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-air-wifi-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-dockstream-2-smart",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-dockstream-2-smart-cordless",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-dockstream-cordless",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-glacier-ultrafiltration",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-granary-2-vision",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-granary-camera-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-granary-dual-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-granary-wifi-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-one-rfid-smart-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-polar-wet-food-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-space-smart-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petlibro-stainless-steel-fountain",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petsafe-freshfeed-refrigerated-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petsafe-healthy-pet-simply-feed",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:petsafe-smart-feed-2",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:surefeed-microchip-pet-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:surefeed-microchip-pet-feeder-connect",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:tractive-dog-6",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:tractive-dog-6-xl",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:weenect-xs",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:weenect-xt",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:wopet-cube-air-ca10",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:wopet-heritage-view-camera-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:wopet-patrol-f07-pro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:wopet-pioneer-f01-plus",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:xiaomi-smart-pet-food-feeder-2",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:xiaomi-smart-pet-fountain-2",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "product:zeromouse-2-0",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
-      "type": "semantic",
       "score": 88,
       "explicit": false,
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
-      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:aqara",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:cat-mate",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:honeyguardian",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:imipaw",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:paj-gps",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:pawbby",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:pawsync",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
-      "target": "manufacturer:petkit",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -115902,7 +114276,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "manufacturer:surefeed",
       "type": "semantic",
       "score": 88,
@@ -115910,7 +114284,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "manufacturer:weenect",
       "type": "semantic",
       "score": 88,
@@ -115918,7 +114292,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "manufacturer:xiaomi",
       "type": "semantic",
       "score": 88,
@@ -115926,7 +114300,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "page:gps-tracker-richtig-befestigen",
       "type": "semantic",
       "score": 88,
@@ -115934,7 +114308,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:catit-pixi-vision-smart-feeder",
       "type": "semantic",
       "score": 88,
@@ -115942,7 +114316,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:petkit-eversweet-solo-2-fountain",
       "type": "semantic",
       "score": 88,
@@ -115950,7 +114324,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:petlibro-capsule-dog-fountain",
       "type": "semantic",
       "score": 88,
@@ -115958,7 +114332,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:petlibro-dockstream-rfid-smart",
       "type": "semantic",
       "score": 88,
@@ -115966,7 +114340,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
@@ -115974,7 +114348,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "product:tractive-cat-6-mini",
       "type": "semantic",
       "score": 88,
@@ -115982,7 +114356,7 @@
       "automatic": true
     },
     {
-      "source": "page:hund-ist-muede",
+      "source": "page:hund-hat-durchfall",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "semantic",
       "score": 84,
@@ -115990,6 +114364,1606 @@
       "automatic": true
     },
     {
+      "source": "page:hund-hat-durchfall",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:oneisall-3-5l-cordless-fountain",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:onlycat-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:petwalk-medium-tiertuer",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:sureflap-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:sureflap-mikrochip-katzenklappe-connect",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "manufacturer:garmin",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "manufacturer:zeromouse",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:katzenklappe-einbauen",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:katzenklappe-fuer-mehrere-katzen",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-gps-tracker-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-mikrochip-katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:gps-tracker-ohne-abo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:oneisall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:onlycat",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:petsafe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:tractive",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:wopet",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:biofilm-im-katzentrinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-bei-uebergewicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-frisst-zu-schnell",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-hat-durchfall",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-trinkt-ploetzlich-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-trinkt-viel",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:kalk-katzentrinkbrunnen-entfernen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katze-an-katzenklappe-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katze-an-trinkbrunnen-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katze-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzentrinkbrunnen-laut-pumpe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzentrinkbrunnen-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:katzenwasser-taeglich-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:so-bewerten-wir",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen-fuer-kitten-sicher",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:uebergewicht-bei-katzen-vermeiden",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:warum-schlingt-mein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:welpen-richtig-fuettern",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-funktioniert-ein-futterautomat",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viele-mahlzeiten-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:wie-viele-wasserstellen-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:cat-mate-335-pet-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:cat-mate-c200",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:cat-mate-c300",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:cat-mate-c500",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:cat-mate-shell-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:honeyguardian-a305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:honeyguardian-a68",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:oneisall-3-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:oneisall-7l-dog-water-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:pawsync-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-3-pro-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-5-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-max-2-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-max-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-solo-se",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-ultra",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-fresh-element-solo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-yumshare-dual-hopper",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-air-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-dockstream-2-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-dockstream-2-smart-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-dockstream-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-glacier-ultrafiltration",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-one-rfid-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-polar-wet-food-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:tractive-dog-6",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:weenect-xt",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:xiaomi-smart-pet-fountain-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:zeromouse-2-0",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:cat-mate",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:honeyguardian",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:imipaw",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:paj-gps",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:pawbby",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:pawsync",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:petwalk",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:surefeed",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:weenect",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "manufacturer:xiaomi",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:catit-pixi-vision-smart-feeder",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petkit-eversweet-solo-2-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-capsule-dog-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petlibro-dockstream-rfid-smart",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:petsafe-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "product:tractive-cat-6-mini",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
+      "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 84,
+      "explicit": false,
+      "automatic": true
+    },
+    {
       "source": "page:hund-ist-muede",
       "target": "comparison:beste-futterautomaten-mit-akku",
       "type": "semantic",
@@ -116344,14 +116318,6 @@
     {
       "source": "page:hund-trinkt-ploetzlich-viel",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-trinkt-ploetzlich-viel",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -117471,6 +117437,14 @@
     },
     {
       "source": "page:hund-trinkt-ploetzlich-viel",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-ploetzlich-viel",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -117944,14 +117918,6 @@
     {
       "source": "page:hund-trinkt-viel",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-trinkt-viel",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -119064,6 +119030,14 @@
     {
       "source": "page:hund-trinkt-viel",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-viel",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -122743,14 +122717,6 @@
     },
     {
       "source": "page:katze-an-katzenklappe-gewoehnen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katze-an-katzenklappe-gewoehnen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -123736,6 +123702,14 @@
     {
       "source": "page:katze-an-katzenklappe-gewoehnen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-an-katzenklappe-gewoehnen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -125959,14 +125933,6 @@
     },
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -127144,6 +127110,14 @@
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129143,14 +129117,6 @@
     },
     {
       "source": "page:katze-trinkt-viel",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katze-trinkt-viel",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -130240,6 +130206,14 @@
     {
       "source": "page:katze-trinkt-viel",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-trinkt-viel",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -131223,14 +131197,6 @@
     },
     {
       "source": "page:katzenklappe-einbauen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappe-einbauen",
       "target": "page:futterautomat-im-urlaub",
       "type": "semantic",
       "score": 66,
@@ -131648,6 +131614,14 @@
     {
       "source": "page:katzenklappe-einbauen",
       "target": "manufacturer:oneisall",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-einbauen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -132128,14 +132102,6 @@
     {
       "source": "page:katzenklappe-fuer-mehrere-katzen",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappe-fuer-mehrere-katzen",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -134096,14 +134062,6 @@
     {
       "source": "page:katzenklappe-zugluft-und-waermedaemmung",
       "target": "manufacturer:oneisall",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappe-zugluft-und-waermedaemmung",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -167823,14 +167781,6 @@
     },
     {
       "source": "page:trinkmenge-hund-messen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:trinkmenge-hund-messen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -168968,6 +168918,14 @@
     {
       "source": "page:trinkmenge-hund-messen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -180503,14 +180461,6 @@
     },
     {
       "source": "page:warum-schlingt-mein-hund",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:warum-schlingt-mein-hund",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -181504,6 +181454,14 @@
     {
       "source": "page:warum-schlingt-mein-hund",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-schlingt-mein-hund",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -194495,14 +194453,6 @@
     },
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -195640,6 +195590,14 @@
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -196055,14 +196013,6 @@
     },
     {
       "source": "page:wie-lange-bleibt-trockenfutter-frisch",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
       "target": "page:biofilm-im-katzentrinkbrunnen",
       "type": "semantic",
       "score": 100,
@@ -196848,6 +196798,14 @@
     {
       "source": "page:wie-lange-bleibt-trockenfutter-frisch",
       "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -197672,14 +197630,6 @@
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-laut-sind-automatische-futterautomaten",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198832,6 +198782,14 @@
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -202479,14 +202437,6 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-hund",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-hund",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -203623,6 +203573,14 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-hund",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-hund",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -204072,14 +204030,6 @@
     {
       "source": "page:wie-viele-mahlzeiten-katze",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-viele-mahlzeiten-katze",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -205232,6 +205182,14 @@
     {
       "source": "page:wie-viele-mahlzeiten-katze",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-katze",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -207247,14 +207205,6 @@
     },
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -208351,6 +208301,14 @@
     },
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -208896,14 +208854,6 @@
     {
       "source": "product:aqara-smart-pet-feeder-c1",
       "target": "manufacturer:oneisall",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:aqara-smart-pet-feeder-c1",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -209984,6 +209934,14 @@
     {
       "source": "product:aqara-smart-pet-feeder-c1",
       "target": "manufacturer:onlycat",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:aqara-smart-pet-feeder-c1",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -217031,14 +216989,6 @@
     },
     {
       "source": "product:cat-mate-shell-fountain",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:cat-mate-shell-fountain",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -218178,6 +218128,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-shell-fountain",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -221911,14 +221869,6 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-t-20",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -222943,6 +222893,14 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -223512,14 +223470,6 @@
     {
       "source": "product:garmin-alpha-tt-25",
       "target": "manufacturer:paj-gps",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-tt-25",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -224544,6 +224494,14 @@
     {
       "source": "product:garmin-alpha-tt-25",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -231599,14 +231557,6 @@
     },
     {
       "source": "product:oneisall-2-2l-cordless-fountain",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:oneisall-2-2l-cordless-fountain",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -232746,6 +232696,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-2-2l-cordless-fountain",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -237079,14 +237037,6 @@
     },
     {
       "source": "product:oneisall-3-5l-cordless-fountain",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 82,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:oneisall-3-5l-cordless-fountain",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 82,
@@ -237578,6 +237528,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-5l-cordless-fountain",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 60,
       "explicit": false,
       "automatic": true
     },
@@ -242887,14 +242845,6 @@
     },
     {
       "source": "product:paj-pet-finder-4g-mini",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:paj-pet-finder-4g-mini",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -244096,6 +244046,14 @@
     {
       "source": "product:paj-pet-finder-4g-mini",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -249327,14 +249285,6 @@
     },
     {
       "source": "product:petkit-eversweet-5-mini",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petkit-eversweet-5-mini",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -250474,6 +250424,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-5-mini",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -255799,14 +255757,6 @@
     },
     {
       "source": "product:petkit-eversweet-solo-se",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petkit-eversweet-solo-se",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -256946,6 +256896,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-solo-se",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -268663,14 +268621,6 @@
     },
     {
       "source": "product:petlibro-capsule-dog-fountain",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petlibro-capsule-dog-fountain",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -269839,6 +269789,14 @@
     },
     {
       "source": "product:petlibro-capsule-dog-fountain",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-capsule-dog-fountain",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "semantic",
       "score": 82,
@@ -276863,14 +276821,6 @@
     },
     {
       "source": "product:petlibro-glacier-ultrafiltration",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petlibro-glacier-ultrafiltration",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -278002,6 +277952,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-glacier-ultrafiltration",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -289887,14 +289845,6 @@
     },
     {
       "source": "product:petlibro-stainless-steel-fountain",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petlibro-stainless-steel-fountain",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -291026,6 +290976,14 @@
       "target": "product:petsafe-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-stainless-steel-fountain",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 82,
       "explicit": false,
       "automatic": true
     },
@@ -293119,14 +293077,6 @@
     },
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -294367,6 +294317,14 @@
     },
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 66,
@@ -294696,14 +294654,6 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "manufacturer:onlycat",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-mikrochip-katzenklappe",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -295664,6 +295614,14 @@
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-mikrochip-katzenklappe",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -297112,14 +297070,6 @@
     {
       "source": "product:petsafe-petporte-smart-flap",
       "target": "manufacturer:oneisall",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petsafe-petporte-smart-flap",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -304471,14 +304421,6 @@
     },
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "manufacturer:tractive",
       "type": "semantic",
       "score": 88,
@@ -305064,6 +305006,14 @@
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -306359,14 +306309,6 @@
     },
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "manufacturer:tractive",
       "type": "semantic",
       "score": 88,
@@ -306816,6 +306758,14 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -309559,14 +309509,6 @@
     },
     {
       "source": "product:tractive-cat-6-mini",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:tractive-cat-6-mini",
       "target": "manufacturer:wopet",
       "type": "semantic",
       "score": 88,
@@ -310136,6 +310078,14 @@
     {
       "source": "product:tractive-cat-6-mini",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -312127,14 +312077,6 @@
     },
     {
       "source": "product:tractive-dog-6-xl",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:tractive-dog-6-xl",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -313151,6 +313093,14 @@
     },
     {
       "source": "product:tractive-dog-6-xl",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
       "target": "manufacturer:petwalk",
       "type": "semantic",
       "score": 88,
@@ -313776,14 +313726,6 @@
     {
       "source": "product:weenect-xs",
       "target": "manufacturer:paj-gps",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:weenect-xs",
-      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -314992,6 +314934,14 @@
     {
       "source": "product:weenect-xs",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -315399,14 +315349,6 @@
     },
     {
       "source": "product:weenect-xt",
-      "target": "manufacturer:petlibro",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:weenect-xt",
       "target": "manufacturer:petsafe",
       "type": "semantic",
       "score": 100,
@@ -316416,6 +316358,14 @@
     {
       "source": "product:weenect-xt",
       "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 88,
       "explicit": false,

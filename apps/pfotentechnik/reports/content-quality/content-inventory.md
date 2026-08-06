@@ -7,7 +7,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - Cluster: 15
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0
-- Warnungen: 3
+- Warnungen: 0
 
 ## Seitentypen
 
@@ -39,9 +39,9 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 
 ## Cluster
 
-- futterautomaten: 81
+- futterautomaten: 82
 - gps-tracker: 26
-- hersteller: 17
+- hersteller: 16
 - hundeernaehrung: 3
 - hundegesundheit: 4
 - katzen-und-hundespezifische-hardware: 1

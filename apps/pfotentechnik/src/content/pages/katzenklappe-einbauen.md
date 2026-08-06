@@ -1,9 +1,12 @@
 ---
 title: "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
 slug: "katzenklappe-einbauen"
+linking: { keywords: ["Katzenklappe einbauen", "Katzenklappe in Tür einbauen", "Katzenklappe in Glas", "Katzenklappe in Wand"], contexts: ["katzenklappen", "einbau", "tür", "glas", "wand"], priority: "high", maxOccurrences: 1 }
 type: "knowledge"
 layout: "knowledge"
 description: "Schritt-für-Schritt-Anleitung für den Einbau einer Katzenklappe mit Planung von Ausschnitt, Durchgang, Glas, Wand, Stromversorgung und typischen Fehlern."
+publishedAt: "2026-08-04"
+updatedAt: "2026-08-06"
 ---
 
 ## Katzenklappe einbauen

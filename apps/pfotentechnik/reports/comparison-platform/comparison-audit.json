@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T08:43:46.547Z",
+  "generatedAt": "2026-08-06T10:35:49.341Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 26,
@@ -8,25 +8,11 @@
     "usedProducts": 49,
     "productCoveragePercent": 66.2,
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "qualityScore": 98
   },
-  "byCode": [
-    {
-      "code": "COMPARISON_DATA_MISSING",
-      "count": 1,
-      "category": "metadata",
-      "level": "warning"
-    }
-  ],
-  "byFile": [
-    {
-      "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    }
-  ],
+  "byCode": [],
+  "byFile": [],
   "comparisons": [
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
@@ -133,14 +119,5 @@
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": [
-    {
-      "level": "warning",
-      "code": "COMPARISON_DATA_MISSING",
-      "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
-      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
-      "message": "comparisonData fehlt.",
-      "category": "metadata"
-    }
-  ]
+  "issues": []
 }

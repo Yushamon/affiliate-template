@@ -1,1015 +1,120 @@
 {
   "version": "23.0.0",
   "mode": "write",
-  "filesScanned": 172,
-  "filesChanged": 14,
-  "exactDuplicateDeclarationsRemoved": 178,
-  "bytesBeforeChangedFiles": 502243,
-  "bytesAfterChangedFiles": 497418,
-  "bytesSaved": 4825,
+  "filesScanned": 181,
+  "filesChanged": 4,
+  "exactDuplicateDeclarationsRemoved": 15,
+  "bytesBeforeChangedFiles": 158244,
+  "bytesAfterChangedFiles": 157706,
+  "bytesSaved": 538,
   "files": [
     {
-      "file": "apps/pfotentechnik/src/components/AutoContentBlocks.astro",
-      "removed": 1,
-      "bytesBefore": 8827,
-      "bytesAfter": 8800,
+      "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
+      "removed": 7,
+      "bytesBefore": 10387,
+      "bytesAfter": 10176,
       "findings": [
         {
-          "file": "apps/pfotentechnik/src/components/AutoContentBlocks.astro",
-          "property": "background",
-          "value": "#132238"
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
-      "removed": 1,
-      "bytesBefore": 11322,
-      "bytesAfter": 11297,
-      "findings": [
-        {
-          "file": "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
-          "property": "background",
-          "value": "#17273d"
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/[slug].astro",
-      "removed": 1,
-      "bytesBefore": 29061,
-      "bytesAfter": 29031,
-      "findings": [
-        {
-          "file": "apps/pfotentechnik/src/pages/[slug].astro",
-          "property": "flex-direction",
-          "value": "column"
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-      "removed": 5,
-      "bytesBefore": 31758,
-      "bytesAfter": 31484,
-      "findings": [
-        {
-          "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-          "property": "color",
-          "value": "var(--pt-theme-text-soft, #d7e0eb)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-          "property": "box-shadow",
-          "value": "var(--pt-theme-shadow-sm, 0 14px 38px rgb(0 0 0 / 28%))"
-        },
-        {
-          "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-          "property": "color",
-          "value": "var(--pt-theme-text-soft, #d7e0eb)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-          "property": "background",
-          "value": "var(--pt-theme-surface, #111d2f)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
-          "property": "color",
-          "value": "var(--pt-theme-text-soft, #d7e0eb)"
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-      "removed": 56,
-      "bytesBefore": 127043,
-      "bytesAfter": 125457,
-      "findings": [
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface-raised)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface-raised)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface-raised)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-text)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-dm-muted)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "var(--pt-dm-surface)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#f8fafc !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#dbe5ef !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-color-page) !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#dbe5ef !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "var(--pt-color-page) !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#f8fafc !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#dbe5ef !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "background",
-          "value": "#101f32 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "color",
-          "value": "#dbe5ef !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "transform",
-          "value": "translateY(-50%)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "min-height",
-          "value": "112px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
           "property": "overflow",
           "value": "hidden"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "width",
-          "value": "100%"
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
+          "property": "grid-template-rows",
+          "value": "minmax(480px, 62vh)"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "height",
-          "value": "112px"
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
+          "property": "grid-template-rows",
+          "value": "repeat(2, minmax(236px, 31vh))"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "grid-row",
-          "value": "1"
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
+          "property": "gap",
+          "value": "8px"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "top",
-          "value": "50%"
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
+          "property": "cursor",
+          "value": "pointer"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "display",
-          "value": "grid"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
           "property": "place-items",
           "value": "center"
         },
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "transform",
-          "value": "translateY(-50%)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+          "file": "apps\\pfotentechnik\\src\\components\\product-experience-2\\product-gallery-29.css",
           "property": "max-width",
-          "value": "none !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "max-width",
-          "value": "100% !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "margin-inline",
-          "value": "0 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "padding-inline",
-          "value": "0 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "margin-inline",
-          "value": "0 !important"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-          "property": "margin-inline",
-          "value": "auto !important"
+          "value": "none"
         }
       ]
     },
     {
-      "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-      "removed": 46,
-      "bytesBefore": 14792,
-      "bytesAfter": 13962,
-      "findings": [
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "max-width",
-          "value": "none"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "padding-top",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "max-width",
-          "value": "none"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "text-wrap",
-          "value": "balance"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "text-wrap",
-          "value": "balance"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "20px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "margin",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "width",
-          "value": "100%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "min-height",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "margin",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "width",
-          "value": "100%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "width",
-          "value": "100%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "min-width",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "margin",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "width",
-          "value": "100%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "height",
-          "value": "100%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "margin",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "object-fit",
-          "value": "contain"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "object-position",
-          "value": "50% 50%"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.3"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "font-size",
-          "value": "0.74rem"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.55"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "13px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "font-size",
-          "value": "1rem"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "18px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "font-size",
-          "value": "1.08rem"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.3"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "18px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "box-shadow",
-          "value": "none"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "font-size",
-          "value": "1rem"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.4"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.4"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "gap",
-          "value": "12px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "18px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "box-shadow",
-          "value": "none"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "aspect-ratio",
-          "value": "auto"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.3"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "font-size",
-          "value": "1.08rem"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.25"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.48"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "18px"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "box-shadow",
-          "value": "none"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-top",
-          "value": "1px solid var(--px2-border)"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "border-radius",
-          "value": "0"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "background",
-          "value": "transparent"
-        },
-        {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-          "property": "line-height",
-          "value": "1.3"
-        }
-      ]
-    },
-    {
-      "file": "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
+      "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik-design-system.css",
       "removed": 1,
-      "bytesBefore": 3222,
-      "bytesAfter": 3205,
+      "bytesBefore": 116576,
+      "bytesAfter": 116539,
       "findings": [
         {
-          "file": "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
-          "property": "max-width",
-          "value": "none"
+          "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik-design-system.css",
+          "property": "background",
+          "value": "var(--pt-color-surface)"
         }
       ]
     },
     {
-      "file": "packages/affiliate-core/src/components/Header.astro",
-      "removed": 11,
-      "bytesBefore": 12885,
-      "bytesAfter": 12499,
+      "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik.css",
+      "removed": 3,
+      "bytesBefore": 18002,
+      "bytesAfter": 17892,
       "findings": [
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "display",
-          "value": "grid"
+          "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik.css",
+          "property": "background",
+          "value": "var(--pt-color-surface)"
         },
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "overflow",
-          "value": "visible"
+          "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik.css",
+          "property": "border-color",
+          "value": "var(--pt-color-text)"
         },
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
+          "file": "apps\\pfotentechnik\\src\\styles\\pfotentechnik.css",
+          "property": "background",
+          "value": "var(--pt-color-surface)"
+        }
+      ]
+    },
+    {
+      "file": "packages\\affiliate-core\\src\\components\\Header.astro",
+      "removed": 4,
+      "bytesBefore": 13279,
+      "bytesAfter": 13099,
+      "findings": [
+        {
+          "file": "packages\\affiliate-core\\src\\components\\Header.astro",
           "property": "border",
           "value": "1px solid var(--pt-color-border)"
         },
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
+          "file": "packages\\affiliate-core\\src\\components\\Header.astro",
           "property": "color",
           "value": "var(--pt-color-text)"
         },
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
+          "file": "packages\\affiliate-core\\src\\components\\Header.astro",
           "property": "background",
           "value": "var(--pt-color-surface)"
         },
         {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "padding",
-          "value": "var(--pt-space-2)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "border-radius",
-          "value": "var(--pt-radius-lg)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "gap",
-          "value": "var(--pt-space-1)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "gap",
-          "value": "var(--pt-space-3)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "color",
-          "value": "var(--pt-color-text)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/Header.astro",
-          "property": "background",
-          "value": "var(--pt-color-surface)"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
-      "removed": 1,
-      "bytesBefore": 16310,
-      "bytesAfter": 16290,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
-          "property": "height",
-          "value": "42px"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-      "removed": 46,
-      "bytesBefore": 135224,
-      "bytesAfter": 133855,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "overflow",
-          "value": "hidden"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "gap",
-          "value": ".75rem"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "#fff"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "text-transform",
-          "value": "uppercase"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "padding",
-          "value": "1rem"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border-top",
-          "value": "1px solid var(--comparison-line)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "color",
-          "value": "var(--pt-color-page)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "align-items",
-          "value": "center"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "box-shadow",
-          "value": "none"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border",
-          "value": "1px solid var(--comparison-line)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border-radius",
-          "value": "var(--pt-radius-lg)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "color",
-          "value": "var(--comparison-text)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "var(--comparison-surface)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
+          "file": "packages\\affiliate-core\\src\\components\\Header.astro",
           "property": "grid-template-columns",
-          "value": "repeat(2, minmax(0, 1fr))"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "margin-bottom",
-          "value": "1rem"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border",
-          "value": "1px solid var(--comparison-line)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border-radius",
-          "value": "var(--pt-radius-lg)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "border",
-          "value": "1px solid var(--comparison-line)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "var(--comparison-surface)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "box-shadow",
-          "value": "var(--pt-shadow-sm)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "align-items",
-          "value": "center"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "var(--comparison-surface-soft)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "font-weight",
-          "value": "800"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "font-size",
-          "value": ".82rem"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "color",
-          "value": "var(--comparison-text)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "gap",
-          "value": ".65rem"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "align-items",
-          "value": "center"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "var(--comparison-page-bg)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "grid-template-columns",
-          "value": "none !important"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "grid-auto-flow",
-          "value": "column"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "overflow-x",
-          "value": "auto"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "scroll-snap-type",
-          "value": "x mandatory"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "bottom",
-          "value": "0"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "background",
-          "value": "var(--comparison-surface)"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "max-width",
-          "value": "100%"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "top",
-          "value": "auto"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "display",
-          "value": "grid"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "min-width",
-          "value": "0"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "max-width",
-          "value": "none"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "max-width",
-          "value": "none"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "margin-inline",
-          "value": "0"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "white-space",
-          "value": "nowrap"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "white-space",
-          "value": "nowrap"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "font-weight",
-          "value": "850"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "max-width",
-          "value": "100%"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/comparison/comparison-system.css",
-          "property": "min-width",
-          "value": "720px"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/components/product/ProductReview.astro",
-      "removed": 2,
-      "bytesBefore": 35674,
-      "bytesAfter": 35609,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/components/product/ProductReview.astro",
-          "property": "width",
-          "value": "100%"
-        },
-        {
-          "file": "packages/affiliate-core/src/components/product/ProductReview.astro",
-          "property": "border-top",
-          "value": "1px solid var(--v4-border)"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
-      "removed": 3,
-      "bytesBefore": 38926,
-      "bytesAfter": 38844,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
-          "property": "grid-row",
-          "value": "1 !important"
-        },
-        {
-          "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
-          "property": "margin",
-          "value": "0 !important"
-        },
-        {
-          "file": "packages/affiliate-core/src/renderer/PremiumRenderer.astro",
-          "property": "width",
-          "value": "100% !important"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/styles/header-footer.css",
-      "removed": 3,
-      "bytesBefore": 4186,
-      "bytesAfter": 4102,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/styles/header-footer.css",
-          "property": "border",
-          "value": "1px solid rgba(20, 32, 26, 0.08)"
-        },
-        {
-          "file": "packages/affiliate-core/src/styles/header-footer.css",
-          "property": "background",
-          "value": "white"
-        },
-        {
-          "file": "packages/affiliate-core/src/styles/header-footer.css",
-          "property": "gap",
-          "value": "16px"
-        }
-      ]
-    },
-    {
-      "file": "packages/affiliate-core/src/styles/product.css",
-      "removed": 1,
-      "bytesBefore": 33013,
-      "bytesAfter": 32983,
-      "findings": [
-        {
-          "file": "packages/affiliate-core/src/styles/product.css",
-          "property": "overflow-wrap",
-          "value": "anywhere"
+          "value": "minmax(0, 1fr) auto"
         }
       ]
     }
   ],
-  "generatedAt": "2026-07-31T18:58:17.559Z"
+  "generatedAt": "2026-08-06T10:36:27.078Z"
 }

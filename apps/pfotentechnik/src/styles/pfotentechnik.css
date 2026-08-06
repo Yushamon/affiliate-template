@@ -148,9 +148,9 @@ body { background: var(--pt-color-page); color: var(--pt-color-text); font-famil
   .main-nav-v2 { top: 66px; left: 20px; right: 20px; border-radius: 22px; border-color: var(--pt-color-border); background: var(--pt-color-surface);}
   .footer-v2 { margin-top: 90px; background: var(--pt-color-brand-surface); color: var(--pt-color-on-brand-surface);}
   .pt-section { margin-top: 76px; }
-  .pt-category-card { min-height: 220px; padding: 24px; border-color: var(--pt-color-text); background: var(--pt-color-surface);}
+  .pt-category-card { min-height: 220px; padding: 24px; border-color: var(--pt-color-text);}
   .pt-category-card h3 { margin-top: 30px; }
-  .pt-intents { padding: 18px; border-color: var(--pt-color-text); background: var(--pt-color-surface);}
+  .pt-intents { padding: 18px;}
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }

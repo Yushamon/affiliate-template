@@ -1,6 +1,7 @@
 ---
 title: "Katzenklappe: Zugluft und Wärmedämmung richtig bewerten"
 slug: "katzenklappe-zugluft-und-waermedaemmung"
+linking: { keywords: ["Katzenklappe Zugluft", "Katzenklappe Wärmedämmung", "Katzenklappe abdichten"], contexts: ["katzenklappen", "zugluft", "wärmedämmung", "einbau"], priority: "high", maxOccurrences: 1 }
 type: "knowledge"
 layout: "knowledge"
 description: "Dichtung der Klappe, Einbauanschluss, Wärmebrücke, Wind und motorisierte Tiertüren getrennt bewerten."

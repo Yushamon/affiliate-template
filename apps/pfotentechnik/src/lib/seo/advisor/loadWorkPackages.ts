@@ -261,6 +261,7 @@ const loadSeoWorkPackageDataUncached = async () => {
   const workspace = readCopilotWorkspace();
   const activeQualityFindings = workspace.qualityFindings
     .filter((item: any) => ["open", "in-progress", "waiting", "manual-review", "regression"].includes(item.status))
+    .filter((item: any) => item.codexSuitable === true)
     .filter((item: any) => item.priority?.level === "high" || item.priority?.level === "medium")
     .sort((left: any, right: any) => (right.priority?.score ?? 0) - (left.priority?.score ?? 0))
     .slice(0, 24);

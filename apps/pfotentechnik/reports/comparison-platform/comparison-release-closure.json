@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-07-28T11:52:59.368Z",
-  "expectedComparisons": 24,
-  "technicalPassed": false,
+  "generatedAt": "2026-08-06T10:40:41.503Z",
+  "expectedComparisons": 26,
+  "technicalPassed": true,
   "visualPassed": false,
   "finalPassed": false,
   "globalErrors": [],
   "dataSummary": {
-    "comparisons": 24,
-    "products": 68,
-    "sourceCells": 704,
-    "allResolved": 611,
+    "comparisons": 26,
+    "products": 74,
+    "sourceCells": 791,
+    "allResolved": 698,
     "allUnresolved": 93,
-    "sourceCoverage": 86.8,
-    "renderedCells": 574,
-    "renderedResolved": 574,
+    "sourceCoverage": 88.2,
+    "renderedCells": 664,
+    "renderedResolved": 664,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 462,
-    "overrideCount": 214
+    "legacyValueCount": 549,
+    "overrideCount": 218
   },
   "visualSignoff": null,
   "routes": [
@@ -34,16 +34,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-hunde",
@@ -58,16 +54,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 11,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-katzen",
@@ -82,16 +74,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 16,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-kleine-hunde",
@@ -106,16 +94,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
@@ -130,16 +114,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
-      "visibleRows": 3,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "visibleRows": 4,
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-nassfutter",
@@ -154,17 +134,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 9,
-      "affiliateCtas": 13,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt.",
-        "Interner Link zeigt auf Redirect: /futterautomat-nassfutter/"
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-seniorenkatzen",
@@ -179,16 +154,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-welpen",
@@ -203,16 +174,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
@@ -227,16 +194,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 12,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-mit-akku",
@@ -251,16 +214,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-mit-edelstahl-napf",
@@ -275,16 +234,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-mit-kamera",
@@ -299,17 +254,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 8,
-      "affiliateCtas": 12,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt.",
-        "Interner Link zeigt auf Redirect: /futterautomat-mit-kamera/"
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-ohne-wlan",
@@ -324,16 +274,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-futterautomaten-unter-100-euro",
@@ -348,16 +294,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-gps-tracker-fuer-hunde",
@@ -372,16 +314,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 14,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-gps-tracker-fuer-katzen",
@@ -396,16 +334,32 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 8,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "slug": "beste-mikrochip-katzenklappen",
+      "route": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "canonical": "https://pfotentechnik.de/vergleiche/beste-mikrochip-katzenklappen/",
+      "schemaTypes": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "ItemList"
       ],
-      "passed": false
+      "visibleRows": 7,
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-trinkbrunnen-fuer-hunde",
@@ -420,16 +374,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 7,
-      "affiliateCtas": 14,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "beste-trinkbrunnen-fuer-katzen",
@@ -444,16 +394,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 7,
-      "affiliateCtas": 15,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "futterautomat-fuer-grosse-hunde",
@@ -468,16 +414,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "futterautomat-gegen-schlingen",
@@ -492,16 +434,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 9,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "futterautomat-mit-app",
@@ -516,16 +454,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 13,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "gps-tracker-mit-langer-akkulaufzeit",
@@ -540,16 +474,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 15,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "gps-tracker-ohne-abo",
@@ -564,16 +494,32 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 7,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "slug": "katzenklappen-mit-app-und-beuteerkennung",
+      "route": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "canonical": "https://pfotentechnik.de/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "schemaTypes": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "ItemList"
       ],
-      "passed": false
+      "visibleRows": 6,
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     },
     {
       "slug": "kleine-gps-tracker-fuer-katzen",
@@ -588,16 +534,12 @@
         "FAQPage",
         "Question",
         "Answer",
-        "ItemList",
-        "Product"
+        "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 10,
-      "errors": [
-        "Gewinnerkarte fehlt.",
-        "Gewinnerbild fehlt."
-      ],
-      "passed": false
+      "affiliateCtas": 2,
+      "errors": [],
+      "passed": true
     }
   ]
 }

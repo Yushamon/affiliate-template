@@ -1,12 +1,12 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-06T08:43:41.021Z
+Erstellt: 2026-08-06T10:35:44.591Z
 
 ## Zusammenfassung
 
 - Routen: 223
 - Fehler: 0
-- Warnungen: 52
+- Warnungen: 45
 - Hinweise: 56
 
 ## Content-Bestand
@@ -46,12 +46,7 @@ Erstellt: 2026-08-06T08:43:41.021Z
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-2-fountain/ (`src/content/products/petkit-eversweet-solo-2-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-se/ (`src/content/products/petkit-eversweet-solo-se.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/ (`src/content/products/petkit-fresh-element-infinity.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-automatic-feeder/ (`src/content/products/petlibro-air-automatic-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-air-wifi-feeder/ (`src/content/products/petlibro-air-wifi-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-capsule-dog-fountain/ (`src/content/products/petlibro-capsule-dog-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-glacier-ultrafiltration/ (`src/content/products/petlibro-glacier-ultrafiltration.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-granary-dual-feeder/ (`src/content/products/petlibro-granary-dual-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-stainless-steel-fountain/ (`src/content/products/petlibro-stainless-steel-fountain.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-freshfeed-refrigerated-feeder/ (`src/content/products/petsafe-freshfeed-refrigerated-feeder.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-healthy-pet-simply-feed/ (`src/content/products/petsafe-healthy-pet-simply-feed.md`)
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-cube-air-ca10/ (`src/content/products/wopet-cube-air-ca10.md`)
@@ -68,8 +63,6 @@ Erstellt: 2026-08-06T08:43:41.021Z
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1055 Zeilen (`src/lib/seo/topical-authority/loadTopicalAuthority.ts`)
-- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/katzenklappe-einbauen.md`)
-- **WARNING · structured-data**: Ratgeber ohne publishedAt (`src/content/pages/katzenklappe-fuer-mehrere-katzen.md`)
 - **INFO · css**: Selektor 3× definiert: .brand-mark (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .brand-name (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 6× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)
