@@ -75,7 +75,8 @@ const { model } = Astro.props;
 
   @media (max-width: 759px) {
     .px2 > :not(.px2-hero) {
-      margin-inline: var(--pt-page-gutter, 12px);
+      width: calc(100% - 2 * var(--pt-page-gutter));
+      margin-inline: auto;
     }
   }
 </style>

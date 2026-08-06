@@ -175,13 +175,13 @@ const comparisonNextSteps = buildComparisonNextSteps({
   updatedAt={comparison.updatedAt ?? comparison.publishedAt}
   author={comparison.author ?? siteMeta.defaultAuthor}
 
-  mainClass="container--immersive">
+  mainClass="container--page">
   <script
     type="application/ld+json"
     set:html={JSON.stringify(comparisonItemListSchema)}
   />
 
-  <div class="comparison-detail">
+  <div class="pt-page pt-page--comparison comparison-detail">
     <ComparisonShell model={model} />
 
     <article class="comparison-content">

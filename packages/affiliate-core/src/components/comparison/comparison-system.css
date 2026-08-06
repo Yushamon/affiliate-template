@@ -8,17 +8,6 @@
   gap: clamp(3rem, 6vw, 5.5rem);
 }
 
-.comparison-detail {
-  --comparison-readable-width: 76rem;
-  padding-inline: var(--pt-page-gutter, 12px);
-}
-
-.comparison-detail > .comparison-content,
-.comparison-detail > #faq {
-  width: min(100%, var(--comparison-readable-width));
-  margin-inline: auto;
-}
-
 .comparison-detail > *,
 .comparison-shell > * {
   min-width: 0;

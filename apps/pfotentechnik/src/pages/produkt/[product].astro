@@ -384,7 +384,7 @@ const productSchema = {
   categoryLabel={categoryLabel}
   breadcrumbs={breadcrumbs}
   schemaType="webpage"
-  mainClass="container--immersive"
+  mainClass="container--page"
 >
   <script
     type="application/ld+json"
@@ -393,7 +393,7 @@ const productSchema = {
 
   <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->
 
-  <div class="product-detail pt-product-detail" data-product-page>
+  <div class="pt-page pt-page--product product-detail pt-product-detail" data-product-page>
     <AutoLinkContent
       definitions={internalLinkDefinitions}
       sourcePath={canonical}
