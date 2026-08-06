@@ -15,14 +15,14 @@ publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 productStatus: active
 price:
-  current: null
+  current: 139.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-04T18:00:00.000Z"
+  checkedAt: "2026-08-06T07:19:59.838Z"
   source:
-    id: "petsafe-de-petporte"
-    label: "PetSafe Deutschland"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 decision:
   bestFor:
     - katze
@@ -131,16 +131,24 @@ comparisonData:
     einbau: "Holz, Glas, PVC, uPVC, Wand; Metall nach Test"
     durchgang: "160 × 160 mm"
     produktrolle: "Netzbetriebene Mikrochip-Klappe"
-priceState: "unknown"
-priceUpdated: "2026-08-04T18:00:00.000Z"
-priceAvailable: false
-affiliateAvailable: false
+
+affiliate:
+  provider: "petsafe-deutschland"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/3RXN4yy"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-06T07:19:59.838Z"
+priceAvailable: true
+affiliateAvailable: true
 availability: "available"
-availabilityReason: "Im deutschen PetSafe-Shop bestellbar; Lieferfenster auf der Herstellerseite angezeigt."
-availabilityUpdated: "2026-08-04T18:00:00.000Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-06T07:19:59.838Z"
 editorialStatus: "required"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 editorial:
   assessmentType: "data-review"

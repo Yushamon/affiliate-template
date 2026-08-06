@@ -30,33 +30,33 @@ images:
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-2.webp", alt: "Katze nutzt die PetSafe Mikrochip Katzenklappe" }
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-3.webp", alt: "Größenvergleich der PetSafe Mikrochip Katzenklappe mit einer Hauskatze" }
 price:
-  current: null
+  current: 66
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-04"
+  checkedAt: "2026-08-06T07:15:56.474Z"
   source:
-    id: "petsafe-de"
-    label: "PetSafe Deutschland"
-    type: "merchant"
+    id: "manual"
+    label: "Amazon"
+    type: "manual"
 affiliate:
   provider: "petsafe-de"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/"
+  url: "https://www.amazon.de/PetSafe-Haustierklappe-Verschlussoptionen-wetterresistent-batteriebetrieben/dp/B0756GW8SJ?th=1"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest." }
 rating: 3.8
-priceState: "unknown"
-priceUpdated: "2026-08-04"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-08-06T07:15:56.474Z"
+priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Am 04.08.2026 im deutschen Hersteller-Shop bestellbar; Preis wird redaktionell nicht als stabiler Produktwert gespeichert."
-availabilityUpdated: "2026-08-04"
+availabilityUpdated: "2026-08-06T07:15:56.474Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   zugang_und_sicherheit: 3.8

@@ -67,7 +67,6 @@ price:
     id: "manual"
     label: "amazon.de"
     type: "manual"
-
 affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
@@ -78,11 +77,11 @@ rating: 3.9
 score: 78
 
 priceState: "unknown"
-priceUpdated: "2026-07-30T08:32:36.046Z"
+priceUpdated: "2026-08-06T07:05:12.043Z"
 priceAvailable: false
 affiliateAvailable: true
 availability: "out-of-stock"
-availabilityUpdated: "2026-07-30T08:32:36.046Z"
+availabilityUpdated: "2026-08-06T07:05:12.043Z"
 editorialStatus: "archived"
 recommendationStatus: "archived"
 maintenanceStatus: "archived"

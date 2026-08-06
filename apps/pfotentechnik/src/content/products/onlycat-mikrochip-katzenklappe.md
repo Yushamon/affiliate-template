@@ -41,33 +41,33 @@ images:
     - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-4.webp
       alt: Katze bei der Nutzung der OnlyCat Mikrochip Katzenklappe
 price:
-  current: null
+  current: 593.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-04"
+  checkedAt: "2026-08-06T07:18:46.717Z"
   source:
-    id: "onlycat-de"
+    id: "manual"
     label: "OnlyCat Deutschland"
-    type: "merchant"
+    type: "manual"
 affiliate:
   provider: "onlycat-de"
   label: "Aktuellen Preis prüfen"
   url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Erkennungsleistung nicht unabhängig verifiziert." }
 rating: 3.6
-priceState: "unknown"
-priceUpdated: "2026-08-04"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-08-06T07:18:46.717Z"
+priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Im deutschsprachigen EU-Shop am 04.08.2026 bestellbar; Einmalzahlung und Abo-Hardware werden getrennt angeboten."
-availabilityUpdated: "2026-08-04"
+availabilityUpdated: "2026-08-06T07:18:46.717Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   zugang_und_sicherheit: 4.0
