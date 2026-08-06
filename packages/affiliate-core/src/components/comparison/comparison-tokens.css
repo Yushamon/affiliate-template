@@ -1,15 +1,14 @@
-/* Shared comparison design tokens.
- * Werte entsprechen der zuvor wirksamen CSS-Kaskade:
- * Bei mehrfachen Deklarationen gewinnt die letzte top-level :root-Deklaration.
+/*
+ * Vergleichskomponenten verwenden ausschließlich globale Theme-Tokens.
+ * Aliasse bleiben nur als migrationssichere Komponenten-Schnittstelle.
  */
-
 :root {
-  --comparison-text: #13231e;
-  --comparison-muted: #66766f;
-  --comparison-accent: #238341;
-  --comparison-accent-dark: #0f5d2d;
-  --comparison-line: #dce6e0;
-  --comparison-soft: #f2f8f4;
-  --comparison-surface: #ffffff;
-  --comparison-shadow: 0 14px 38px rgba(20, 32, 26, 0.07);
+  --comparison-text: var(--pt-color-text);
+  --comparison-muted: var(--pt-color-text-muted);
+  --comparison-accent: var(--pt-color-action-bg);
+  --comparison-accent-dark: var(--pt-color-action-bg-hover);
+  --comparison-line: var(--pt-color-border);
+  --comparison-soft: var(--pt-color-surface-soft);
+  --comparison-surface: var(--pt-color-surface);
+  --comparison-shadow: var(--pt-shadow-card, 0 14px 38px rgb(0 0 0 / 0.08));
 }

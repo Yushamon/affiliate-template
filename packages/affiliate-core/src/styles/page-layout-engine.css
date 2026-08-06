@@ -1,6 +1,6 @@
 /*
- * PfotenTechnik Layout Engine 30
- * Ein Owner für Seitenbreite, Inhaltsgutter und Full-Bleed-Bereiche.
+ * PfotenTechnik Layout Engine 31
+ * Einziger Owner für Breite, Gutter, Reading Width und Full-Bleed.
  */
 .container.container--page {
   --pt-page-gutter: clamp(16px, 4vw, 24px);
@@ -11,76 +11,51 @@
   margin: 0;
   padding: 0 0 calc(64px + env(safe-area-inset-bottom));
 }
-
 .pt-page {
+  display: grid;
   width: 100%;
   min-width: 0;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
   margin: 0;
 }
-
+.pt-page > *,
 .pt-page__content,
 .pt-page [data-page-content] {
   width: min(calc(100% - 2 * var(--pt-page-gutter)), var(--pt-content-width));
+  min-width: 0;
   margin-inline: auto;
 }
-
 .pt-page__reading,
-.pt-page [data-page-reading] {
+.pt-page [data-page-reading],
+.pt-page > .comparison-content,
+.pt-page > #faq {
   width: min(calc(100% - 2 * var(--pt-page-gutter)), var(--pt-reading-width));
+  min-width: 0;
   margin-inline: auto;
 }
-
 .pt-page__bleed,
 .pt-page [data-page-bleed] {
   width: 100%;
   max-width: none;
   margin-inline: 0;
 }
-
-.pt-page--product .product-detail {
-  width: 100%;
-  max-width: var(--pt-content-width);
-  margin-inline: auto;
-}
-
-.pt-page--comparison .comparison-detail {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: var(--pt-color-background, transparent);
-}
-
-.pt-page--comparison .comparison-shell {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-}
-
-.pt-page--comparison .comparison-shell > *,
-.pt-page--comparison .comparison-detail > :not(.comparison-shell) {
+.pt-page > .comparison-shell {
+  display: grid;
   width: min(calc(100% - 2 * var(--pt-page-gutter)), var(--pt-content-width));
+  min-width: 0;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
   margin-inline: auto;
 }
-
-.pt-page--comparison .comparison-detail > .comparison-content,
-.pt-page--comparison .comparison-detail > #faq {
-  width: min(calc(100% - 2 * var(--pt-page-gutter)), var(--pt-reading-width));
+.pt-page > .comparison-shell > * {
+  width: 100%;
+  min-width: 0;
+  margin-inline: 0;
 }
-
 @media (max-width: 759px) {
-  .pt-page--product .product-detail {
-    max-width: none;
-  }
-
+  .container.container--page { --pt-page-gutter: 16px; }
   .pt-page--product [data-mobile-gallery-full-bleed] {
-    width: 100%;
+    width: 100vw;
     max-width: none;
-    margin-inline: 0;
-  }
-
-  .pt-page--comparison .comparison-shell > *,
-  .pt-page--comparison .comparison-detail > :not(.comparison-shell) {
-    width: calc(100% - 2 * var(--pt-page-gutter));
+    margin-inline: calc(50% - 50vw);
   }
 }
