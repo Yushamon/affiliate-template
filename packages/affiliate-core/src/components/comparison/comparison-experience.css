@@ -1485,3 +1485,199 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Comparison controls and light sticky CTA 32.1.1 */
+
+/* Checkbox owner: prevents global .pt-control rules from turning checkboxes into long pills. */
+.comparison-control-box {
+  display: inline-grid;
+  flex: 0 0 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--pt-color-border-strong, var(--pt-color-border));
+  border-radius: .3rem;
+  color: var(--pt-color-action-text);
+  background: var(--pt-color-surface);
+  box-shadow: none;
+}
+
+input:checked + .comparison-control-box {
+  border-color: var(--pt-color-action-bg);
+  background: var(--pt-color-action-bg);
+}
+
+input:checked + .comparison-control-box::after {
+  color: var(--pt-color-action-text);
+  font-size: .8rem;
+  font-weight: 900;
+  line-height: 1;
+  content: "✓";
+}
+
+.comparison-lab__differences > input,
+.comparison-lab__filter-groups label > input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Toolbar */
+.comparison-lab__toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .75rem;
+  align-items: center;
+  padding: .875rem;
+}
+
+.comparison-lab__filter-button {
+  width: 100%;
+}
+
+.comparison-lab__differences {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: .55rem;
+  color: var(--pt-color-text);
+  font-size: .85rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.comparison-lab__reset {
+  grid-column: 1 / -1;
+  justify-self: start;
+  min-height: 40px;
+  padding: 0;
+  border: 0;
+  color: var(--pt-color-text-muted);
+  background: transparent;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+/* Drawer */
+.comparison-lab__filters {
+  width: min(100%, 27rem);
+  padding: 1rem;
+  color: var(--pt-color-text);
+  background: var(--pt-color-surface);
+}
+
+.comparison-lab__filter-header {
+  position: sticky;
+  top: -1rem;
+  z-index: 2;
+  margin: -1rem -1rem 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--pt-color-border);
+  background: var(--pt-color-surface);
+}
+
+.comparison-lab__filter-header small {
+  color: var(--pt-color-text-muted);
+}
+
+.comparison-lab__filter-header button {
+  display: inline-grid;
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--pt-color-border);
+  border-radius: 999px;
+  color: var(--pt-color-text);
+  background: var(--pt-color-surface-raised);
+  font-size: 1.5rem;
+}
+
+.comparison-lab__clear-filters {
+  width: 100%;
+  min-height: 46px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--pt-color-border);
+  border-radius: var(--pt-radius-md, .75rem);
+  color: var(--pt-color-text);
+  background: var(--pt-color-surface-raised);
+}
+
+.comparison-lab__filter-groups {
+  gap: 1rem;
+}
+
+.comparison-lab__filter-groups fieldset {
+  gap: .25rem;
+  padding: .75rem;
+  background: var(--pt-color-surface-raised);
+}
+
+.comparison-lab__filter-groups legend {
+  padding-inline: .25rem;
+  font-size: .95rem;
+}
+
+.comparison-lab__filter-groups label {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  min-height: 44px;
+  align-items: center;
+  gap: .7rem;
+  padding: .55rem .35rem;
+  border-top: 1px solid var(--pt-color-border);
+  color: var(--pt-color-text);
+  line-height: 1.35;
+}
+
+.comparison-lab__filter-groups label:first-of-type {
+  border-top: 0;
+}
+
+.comparison-lab__filter-groups label > span:last-child {
+  min-width: 0;
+}
+
+/* Light mode follows the same global surface tokens as every other card.
+   The tokens change automatically in dark mode. */
+.comparison-sticky-bar {
+  color: var(--pt-color-text);
+  border-color: var(--pt-color-border);
+  background: var(--pt-color-surface);
+  box-shadow: var(--pt-shadow-card, 0 12px 32px rgb(0 0 0 / .12));
+}
+
+.comparison-sticky-bar__identity,
+.comparison-sticky-bar__identity strong {
+  color: var(--pt-color-text);
+}
+
+.comparison-sticky-bar__identity span {
+  color: var(--pt-color-text-muted);
+}
+
+@media (min-width: 48rem) {
+  .comparison-lab__toolbar {
+    grid-template-columns: auto auto minmax(0, 1fr);
+  }
+
+  .comparison-lab__filter-button {
+    width: auto;
+  }
+
+  .comparison-lab__reset {
+    grid-column: auto;
+    justify-self: end;
+  }
+}
