@@ -195,6 +195,14 @@ const metrics = [
               <span>Quelle oder Händler</span>
               <input type="text" maxlength="120" data-draft="sourceLabel" value={row.sourceLabel === "Nicht angegeben" ? "" : row.sourceLabel} />
             </label>
+            <label>
+              <span>Herstellername</span>
+              <input type="text" maxlength="120" data-draft="manufacturerName" value={row.manufacturerName ?? ""} placeholder="OnlyCat" />
+            </label>
+            <label>
+              <span>Hersteller-Slug</span>
+              <input type="text" maxlength="120" data-draft="manufacturerSlug" value={row.manufacturerSlug ?? ""} placeholder="onlycat" />
+            </label>
             <label class="wide">
               <span>Affiliate- oder Händler-Ziel</span>
               <input type="url" inputmode="url" data-draft="targetUrl" value={row.targetUrl ?? ""} placeholder="https://…" />
@@ -216,7 +224,7 @@ const metrics = [
               <textarea rows="2" maxlength="360" data-draft="comparisonText">{row.comparisonText ?? ""}</textarea>
             </label>
             <div class="ops-editor__actions wide">
-              <button type="submit" data-save-product={row.slug}>Preis und Verfügbarkeit speichern</button>
+              <button type="submit" data-save-product={row.slug}>Produktdaten speichern</button>
               <button type="button" class="pt-button pt-button-secondary secondary" data-archive-product={row.slug}>
                 {row.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren"}
               </button>
@@ -242,6 +250,8 @@ const metrics = [
     availability: string;
     availabilityReason: string;
     comparisonText: string;
+    manufacturerName: string;
+    manufacturerSlug: string;
   };
 
   const configNode = document.querySelector<HTMLScriptElement>("[data-ops-config]");
@@ -351,7 +361,9 @@ const metrics = [
     targetUrl: record.targetUrl || "",
     availability: record.availability || "unknown",
     availabilityReason: record.availabilityReason || "",
-    comparisonText: record.comparisonText || ""
+    comparisonText: record.comparisonText || "",
+    manufacturerName: record.manufacturerName || "",
+    manufacturerSlug: record.manufacturerSlug || ""
   });
 
   const writeDraftToEditor = (editor: HTMLFormElement, draft: Draft) => {
@@ -565,7 +577,10 @@ const metrics = [
               targetUrl: draft.targetUrl,
               comparisonText: draft.comparisonText,
               availability: draft.availability,
-              availabilityReason: draft.availabilityReason
+              availabilityReason: draft.availabilityReason,
+              manufacturerName: draft.manufacturerName,
+              manufacturerSlug: draft.manufacturerSlug,
+              manufacturerKey: draft.manufacturerSlug
             })
           });
           dirtyEditors.delete(slug);

@@ -33,7 +33,7 @@ export function splitFrontmatter(source, file = "Produktdatei") {
 
 function replaceTopLevelBlock(frontmatter, key, block) {
   const lines = frontmatter.split(/\r?\n/);
-  const start = lines.findIndex((line) => new RegExp(`^${key}:\\s*(?:#.*)?$`).test(line));
+  const start = lines.findIndex((line) => new RegExp(`^${key}:\\s*`).test(line));
   if (start >= 0) {
     let end = start + 1;
     while (end < lines.length && (/^\s+/.test(lines[end]) || !lines[end].trim())) end += 1;
@@ -54,7 +54,7 @@ function replaceTopLevelBlock(frontmatter, key, block) {
 
 function removeTopLevelBlock(frontmatter, key) {
   const lines = frontmatter.split(/\r?\n/);
-  const start = lines.findIndex((line) => new RegExp(`^${key}:\\s*(?:#.*)?$`).test(line));
+  const start = lines.findIndex((line) => new RegExp(`^${key}:\\s*`).test(line));
   if (start < 0) return frontmatter;
   let end = start + 1;
   while (end < lines.length && (/^\s+/.test(lines[end]) || !lines[end].trim())) end += 1;
@@ -160,6 +160,19 @@ export function renderAffiliateBlock(affiliate) {
   return lines.join("\n");
 }
 
+export function renderManufacturerBlock(manufacturer) {
+  const name = String(manufacturer?.name || "").trim();
+  const slug = String(manufacturer?.slug || manufacturer?.key || "").trim();
+  const key = String(manufacturer?.key || slug).trim();
+  if (!name || !slug || !key) throw new Error("Herstellername, Hersteller-Slug und Hersteller-Key sind erforderlich.");
+  return [
+    "manufacturer:",
+    `  key: ${quote(key)}`,
+    `  name: ${quote(name)}`,
+    `  slug: ${quote(slug)}`
+  ].join("\n");
+}
+
 const canonicalUrlFrom = (data, preferred) => normalizeHttpsUrl(
   preferred ??
   data?.affiliate?.url ??
@@ -210,6 +223,9 @@ async function persistMutation(file, mutate) {
       nextYaml = removeTopLevelBlock(nextYaml, "affiliate");
     } else if (result.affiliate?.url) {
       nextYaml = replaceTopLevelBlock(nextYaml, "affiliate", renderAffiliateBlock(result.affiliate));
+    }
+    if (result.manufacturer) {
+      nextYaml = replaceTopLevelBlock(nextYaml, "manufacturer", renderManufacturerBlock(result.manufacturer));
     }
 
     const parsedBeforeOperations = yaml.load(nextYaml) ?? {};
@@ -295,6 +311,19 @@ export async function updateProductOperations(file, patch = {}) {
   return persistMutation(file, async ({ data, frontmatter }) => {
     const nextData = { ...data };
     let price = cleanPrice(data.price ?? { current: null, currency: "EUR", status: "unknown" });
+    let manufacturer;
+
+    if (patch.manufacturer !== undefined) {
+      const name = String(patch.manufacturer?.name || "").trim().slice(0, 120);
+      const slug = String(patch.manufacturer?.slug || patch.manufacturer?.key || "").trim().toLocaleLowerCase("de-DE");
+      const key = String(patch.manufacturer?.key || slug).trim().toLocaleLowerCase("de-DE");
+      if (!name) throw new Error("Herstellername fehlt.");
+      if (!/^[a-z0-9][a-z0-9-]*$/.test(slug) || !/^[a-z0-9][a-z0-9-]*$/.test(key)) {
+        throw new Error("Hersteller-Slug und Hersteller-Key dürfen nur Kleinbuchstaben, Zahlen und Bindestriche enthalten.");
+      }
+      manufacturer = { key, name, slug };
+      nextData.manufacturer = manufacturer;
+    }
 
     // PT_AFFILIATE_ONLY_UPDATE_2_0_1: CTA-Ziel unabhängig vom Preis pflegen.
     const hasAffiliatePatch = Object.prototype.hasOwnProperty.call(patch, "affiliateUrl");
@@ -376,6 +405,7 @@ export async function updateProductOperations(file, patch = {}) {
       frontmatter,
       price,
       ...(hasAffiliatePatch ? { affiliate, removeAffiliate } : {}),
+      ...(manufacturer ? { manufacturer } : {}),
       operationFields,
       now
     };

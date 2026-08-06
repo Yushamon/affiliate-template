@@ -55,6 +55,20 @@ const validateTargetUrl = (value) => {
   return parsed.href;
 };
 
+const validateManufacturer = (input) => {
+  const provided = [input.manufacturerName, input.manufacturerSlug, input.manufacturerKey]
+    .some((value) => String(value || "").trim());
+  if (!provided) return undefined;
+  const name = String(input.manufacturerName || "").trim().slice(0, 120);
+  const slug = String(input.manufacturerSlug || input.manufacturerKey || "").trim().toLocaleLowerCase("de-DE");
+  const key = String(input.manufacturerKey || slug).trim().toLocaleLowerCase("de-DE");
+  if (!name) throw new Error("Herstellername fehlt.");
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(slug) || !/^[a-z0-9][a-z0-9-]*$/.test(key)) {
+    throw new Error("Hersteller-Slug und Hersteller-Key dürfen nur Kleinbuchstaben, Zahlen und Bindestriche enthalten.");
+  }
+  return { name, slug, key };
+};
+
 const resultFromDocument = (document, extra = {}) => {
   const record = toOperationsRecord(document.data);
   return {
@@ -196,6 +210,7 @@ export async function setManualProductPrice(input = {}) {
     (data.price?.source?.type === "manual" ? String(data.price.source.label || "").trim() : "") ||
     "Manuell im SEO Cockpit";
   const comparisonText = String(input.comparisonText || "").trim().slice(0, 360);
+  const manufacturer = validateManufacturer(input);
 
   if (!hasCurrent) {
     if (["available", "stale"].includes(priceState) && data.price?.current == null) {
@@ -208,6 +223,7 @@ export async function setManualProductPrice(input = {}) {
       availabilityUpdated: availability ? now : undefined,
       sourceLabel,
       comparisonText,
+      ...(manufacturer ? { manufacturer } : {}),
       now
     };
     if (targetUrlProvided) patch.affiliateUrl = targetUrl;
@@ -249,7 +265,11 @@ export async function setManualProductPrice(input = {}) {
     }
   );
 
-  return resultFromDocument(persisted, {
+  const finalDocument = manufacturer
+    ? await updateProductOperations(persisted.file, { manufacturer, now })
+    : persisted;
+
+  return resultFromDocument(finalDocument, {
     checkedAt: now,
     source: sourceLabel,
     targetUrl: targetUrl ?? null,

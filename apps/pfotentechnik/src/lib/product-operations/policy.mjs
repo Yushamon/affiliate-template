@@ -373,6 +373,9 @@ export function toOperationsRecord(data, options = {}) {
     slug: String(data?.slug || ""),
     title: String(data?.title || data?.slug || "Produkt"),
     category: String(data?.category?.label ?? data?.category?.key ?? "Unbekannt"),
+    manufacturerName: String(data?.manufacturer?.name ?? data?.manufacturer ?? ""),
+    manufacturerSlug: String(data?.manufacturer?.slug ?? data?.manufacturer?.key ?? ""),
+    manufacturerKey: String(data?.manufacturer?.key ?? data?.manufacturer?.slug ?? ""),
     score: (() => {
       const explicit = Number(data?.score);
       if (Number.isFinite(explicit)) return explicit;
