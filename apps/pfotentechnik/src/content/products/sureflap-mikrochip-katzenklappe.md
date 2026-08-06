@@ -47,38 +47,22 @@ hub:
   featured: true
   order: 20
 
-  images:
-
+images:
   hero:
-
     src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/hero.webp"
-
     alt: "SureFlap Mikrochip Katzenklappe in hochwertiger Dreiviertelansicht"
-
   thumbnail:
-
     src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.webp"
-
     alt: "SureFlap Mikrochip Katzenklappe Frontansicht"
-
   comparison:
-
     src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/comparison.webp"
-
     alt: "SureFlap Mikrochip Katzenklappe freigestellt für Produktvergleiche"
-
   gallery:
-
     - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-1.webp"
-
       alt: "SureFlap Mikrochip Katzenklappe Frontansicht"
-
     - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-2.webp"
-
       alt: "SureFlap Mikrochip Katzenklappe in 45-Grad-Perspektive"
-
     - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-3.webp"
-
       alt: "Detailaufnahme der transparenten Rauchglas-Klappe mit umlaufender Dichtung"
 
 price:

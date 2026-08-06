@@ -36,15 +36,22 @@ price:
     type: "merchant"
 images:
   hero:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/hero.webp"
     alt: "Redaktionelle Darstellung der SureFlap DualScan Mikrochip Katzenklappe"
   thumbnail:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/thumbnail.webp"
     alt: "SureFlap DualScan Mikrochip Katzenklappe"
   comparison:
-    src: "../../assets/images/cat-flaps/microchip-comparison.svg"
+    src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/comparison.webp"
     alt: "SureFlap DualScan im Vergleich der Mikrochip-Katzenklappen"
-  gallery: []
+  gallery:
+    - src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-1.webp"
+      alt: "SureFlap DualScan Mikrochip Katzenklappe Frontansicht"
+    - src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-2.webp"
+      alt: "SureFlap DualScan Mikrochip Katzenklappe in 45-Grad-Perspektive"
+    - src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-3.webp"
+      alt: "Detailaufnahme der SureFlap DualScan Mikrochip Katzenklappe"
+
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit unterschiedlichen Ausgangsrechten"
