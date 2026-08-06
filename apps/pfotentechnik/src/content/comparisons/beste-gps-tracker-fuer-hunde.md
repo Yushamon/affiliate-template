@@ -277,6 +277,10 @@ Der **Garmin Alpha T 20** passt nicht zum typischen Stadt- oder Familienhund, de
 - **Tractive DOG 6 XL oder Weenect XT:** für größere Hunde und längere Ladeintervalle
 - **Garmin Alpha T 20:** für abgelegene Arbeits- oder Jagdeinsätze, bei denen VHF-Direktfunk und ein separates Handgerät bewusst gewünscht sind
 
+## Gesundheitsfunktionen als separates Kriterium
+
+Tractive DOG 6 und DOG 6 XL liefern Aktivitäts-, Schlaf-, Ruhe-Herzfrequenz-, Ruhe-Atemfrequenz-, Bell- und Kratztrends. Für Herz, Atmung und Bellverhalten nennt Tractive mindestens sieben Nutzungstage bis zur persönlichen Baseline. Diese Funktionen verändern nicht automatisch den redaktionellen Score: Sie sind Herstellerfunktionen eines Nicht-Medizinprodukts und weder Krankheitserkennung noch Diagnose. Weenect- und Garmin-Modelle werden deshalb nicht abgewertet, wenn ihr primärer Nutzen bewusst in Ortung, Signal oder Direktfunk liegt.
+
 ## Häufige Fehlkäufe
 
 Ein Tracker wird oft nach maximaler Reichweite gekauft, obwohl im eigenen Revier Mobilfunklöcher, dichter Wald oder schlechte Satellitensicht die Praxis bestimmen. Teste das System deshalb auf der üblichen Strecke und nicht nur im Garten. Prüfe außerdem den kompletten Befestigungsweg: Halsbandbreite, Clip, Gehäuse und Bewegung am Hals. Ein theoretisch leichter Tracker ist ungeeignet, wenn der Halter rutscht oder sich im Gelände löst.

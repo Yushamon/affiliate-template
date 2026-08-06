@@ -486,6 +486,8 @@ Der DOG 6 erfasst mehr als Positionen. Zu den dokumentierten Funktionen gehören
 
 Die App kann bei längerfristigen Abweichungen Gesundheitswarnungen ausgeben. Solche Daten können helfen, Veränderungen früher zu bemerken. Sie sind aber nicht mit einer klinischen Untersuchung oder einem medizinischen Messgerät gleichzusetzen.
 
+Ruhe-Herzfrequenz, Ruhe-Atemfrequenz und Bellverhalten benötigen laut Tractive mindestens sieben Nutzungstage für eine persönliche Baseline. Aktivität, Schlaf und Kratzverhalten können bereits ab dem ersten Tag ausgewertet werden. Der DOG 6 ist kein Medizinprodukt; die App erkennt keine Krankheit und stellt keine Diagnose.
+
 Ein auffälliger Trend sollte Anlass sein, den Hund genauer zu beobachten und bei Bedarf tierärztlich untersuchen zu lassen. Ein unauffälliger Trackerwert beweist umgekehrt nicht, dass der Hund gesund ist.
 
 ## Licht, Signalton und Radar-Modus

@@ -406,6 +406,9 @@ comparisonData:
     mehrnutzer: true
     reinigung: "Gehäuse, Silikonhalter und Ladekontakte regelmäßig reinigen und trocknen"
     wichtigsteGrenze: "Pflichtabo und etwa zwei Tage Laufzeit bei durchgehender Ortung"
+    ortungsabo: "Pflicht für Mobilfunkortung und App-Dienst"
+    sorglos_paket: "Optional 3,99 Euro pro Monat laut Veröffentlichung April 2026; Schutz und Vermisstenhilfe"
+    weenect_plus: "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
 
 metadata:
   version: "4.1.0"
@@ -433,6 +436,12 @@ decisionFacts:
 ---
 
 Der **Weenect XS** ist ein 27 g leichter GPS-Tracker für Katzen und kleine Hunde ab 3 kg. Anders als ein Bluetooth-Tag überträgt er seine Position über eine integrierte SIM-Karte und ein unterstütztes Mobilfunknetz. Dadurch gibt es keine feste Distanzgrenze zum Smartphone – wohl aber eine Abhängigkeit von Satelliten- und Mobilfunkempfang.
+
+## Hardware, Ortungsabo und Zusatzdienste trennen
+
+XS bleibt dieselbe Tracker-Hardware. Das Pflichtabo bezahlt Mobilfunkortung und App-Dienst. Das im April 2026 veröffentlichte **Sorglos-Paket** ist davon getrennt: Weenect nennt 3,99 Euro pro Monat für Schutz bei Verlust, Diebstahl oder Beschädigung sowie konkrete Vermisstenhilfe mit Suchposter, länderspezifischen Schritten, Online-Anzeige und Nachfasskontakt. Bestehende Multi-Risk-Kunden wurden laut Weenect ohne Mehrpreis umgestellt. **Weenect Plus** bezeichnet dagegen Inhalte wie Expertenartikel, Trainingsvideos und Partnerangebote in der App; ob diese im gewählten Tarif enthalten sind, muss im aktuellen Checkout geprüft werden.
+
+Im Ernstfall bleiben die praktischen Schritte aus [Katze entlaufen: Ist GPS sinnvoll?](/katze-entlaufen-gps-sinnvoll/) beziehungsweise [Hund entlaufen: Ist GPS sinnvoll?](/hund-entlaufen-gps-sinnvoll/) wichtiger als ein Serviceversprechen allein.
 
 ## Kurzfazit
 

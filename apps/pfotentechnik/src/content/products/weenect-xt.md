@@ -439,6 +439,9 @@ comparisonData:
     mehrnutzer: true
     reinigung: "Tracker, Befestigung und Ladekontakte nach Outdoor-Einsätzen reinigen und trocknen"
     wichtigsteGrenze: "Pflichtabo, großes Gehäuse und stark nutzungsabhängige Maximallaufzeit"
+    ortungsabo: "Pflicht für Mobilfunkortung und App-Dienst"
+    sorglos_paket: "Optional 3,99 Euro pro Monat laut Veröffentlichung April 2026; Schutz und Vermisstenhilfe"
+    weenect_plus: "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
 
 metadata:
   version: "4.1.0"
@@ -681,6 +684,12 @@ Die Kaufentscheidung sollte jedoch nicht allein auf „drei Wochen Akku“ oder 
 - laufende Abokosten.
 
 **Hinweis zum Affiliate-Link:** Der Amazon-Shortlink wurde unverändert übernommen. Da sich das Kurzlinkziel technisch nicht unabhängig auflösen ließ, müssen Modellvariante, Befestigung, Lieferumfang und eventuell enthaltene Abo-Laufzeit auf Amazon vor dem Kauf geprüft werden.
+
+## Hardware, Ortungsabo und Zusatzdienste trennen
+
+XT bleibt dieselbe Tracker-Hardware. Das Pflichtabo bezahlt Mobilfunkortung und App-Dienst. Das im April 2026 veröffentlichte **Sorglos-Paket** ist davon getrennt: Weenect nennt 3,99 Euro pro Monat für Schutz bei Verlust, Diebstahl oder Beschädigung sowie Vermisstenhilfe mit Suchposter, länderspezifischen Schritten, Online-Anzeige und Nachfasskontakt. Bestehende Multi-Risk-Kunden wurden laut Weenect ohne Mehrpreis umgestellt. **Weenect Plus** ist ein Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; die aktuelle Tarifzuordnung muss vor Abschluss geprüft werden.
+
+Für den Ernstfall ergänzt der Service den Ablauf aus [Hund entlaufen: Ist GPS sinnvoll?](/hund-entlaufen-gps-sinnvoll/), ersetzt aber weder Registrierung noch lokale Suche und Meldestellen.
 
 ## Quellen
 

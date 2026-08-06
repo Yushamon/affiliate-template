@@ -9,7 +9,7 @@ name: "Weenect"
 recommendation: "Weenect ist besonders interessant für kleine Tiere und Rückrufsignale: Der XS wiegt 27 g, während der XT Laufzeit und Outdoor-Ausstattung priorisiert."
 summary: "Das Portfolio ist klar geteilt: XS für Katzen und kleine Hunde, XT für robustere Hundeeinsätze. Beide benötigen ein eigenes Mobilfunkabo."
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-08-06"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 tags: ["hersteller", "weenect", "gps-tracker"]
 hub: { sections: ["hersteller", "gps-tracker"], title: "Weenect", description: "XS, XT, App, Abo, Garantie und Zubehör.", icon: "🛰️", order: 41, featured: true }
@@ -21,12 +21,12 @@ productCategories: ["GPS-Tracker für Katzen", "GPS-Tracker für Hunde", "Befest
 productAreas: ["Live-Ortung", "Multi-Netz-SIM", "Ton und Vibration", "Sicherheitszonen"]
 focus: ["leichtes XS-Modell", "robustes XT-Modell", "Sekunden-Tracking", "Rückrufsignale"]
 suitableFor: ["Katzen ab 3 kg", "kleine Hunde ab 3 kg", "aktive größere Hunde mit XT", "Mehrnutzer-Haushalte"]
-attention: ["Abo je Tracker", "XS-Laufzeit im Dauertracking deutlich kürzer", "lebenslange Garantie ist an Bedingungen gebunden"]
+attention: ["Abo je Tracker", "XS-Laufzeit im Dauertracking deutlich kürzer", "Sorglos-Paket kostet laut Veröffentlichung 3,99 Euro monatlich zusätzlich", "lebenslange Garantie ist an Bedingungen gebunden"]
 strengths: ["27-g-Modell", "Ton, Vibration und Licht", "vier Satellitenkonstellationen beim XS", "Multi-Netz-SIM", "lebenslange gewerbliche Garantie"]
 weaknesses: ["laufende Gebühren", "XS maximal etwa zwei Tage bei kontinuierlichem Tracking", "Garantieabwicklung kann Versandkosten umfassen"]
 profile:
   company: "Weenect wurde 2012 gegründet und entwickelt GPS-Sicherheitslösungen für Haustiere. Die Tracker bestimmen Positionen per Satellit und senden sie über eine integrierte Multi-Netz-SIM an Weenect."
-  appEcosystem: "Die App bietet Live-Ortung, Sicherheits- und Gefahrenzonen, Verlauf, Aktivität sowie Ton-, Vibrations- und Lichtsignale. Mehrere Tiere können in einem Konto erscheinen, benötigen aber jeweils ein Abo."
+  appEcosystem: "Die App bietet Live-Ortung, Sicherheits- und Gefahrenzonen, Verlauf, Aktivität sowie Ton-, Vibrations- und Lichtsignale. Mehrere Tiere können in einem Konto erscheinen, benötigen aber jeweils ein Abo. Davon getrennt sind das optionale Sorglos-Paket für Geräteschutz und Vermisstenhilfe sowie Weenect Plus mit Wissens- und Trainingsinhalten; die aktuelle Tarifzuordnung von Plus bleibt vor Abschluss zu prüfen."
   replacementParts: "Der offizielle Zubehörshop führt XS-Silikonhüllen, Halsbandlösungen und Ladekabel. Kompatibilität ist modell- und größenabhängig."
   filterSupply: "Nicht relevant: Weenect-Tracker benötigen keine Filter. Wiederkehrende Versorgung betrifft Abo, Ladekabel und Befestigungen."
   warranty: "Weenect bewirbt eine lebenslange Garantie für Herstellungsfehler und natürliche Abnutzung. Laut Bedingungen setzt sie unter anderem ein ununterbrochen bezahltes Abo voraus; Reparatur oder ein aufgearbeitetes Ersatzgerät sind vorgesehen."
@@ -44,6 +44,8 @@ sources:
   - { label: "Weenect Abonnements", url: "https://www.weenect.com/de/de/abonnements/" }
   - { label: "Weenect Garantie", url: "https://www.weenect.com/de/de/rucksendung-und-garantie/" }
   - { label: "Weenect Zubehör", url: "https://www.weenect.com/de/de/zubehor/" }
+  - { label: "Weenect Sorglos-Paket", url: "https://www.weenect.com/de/de/presse/weenect-pack-serenity/" }
+  - { label: "Weenect Plus", url: "https://www.weenect.com/de/de/presse/weenect_plus/" }
 faq:
   - { question: "Braucht Weenect ein Abo?", answer: "Ja. Jeder Tracker benötigt ein eigenes Abo für Mobilfunkübertragung und App-Dienste." }
   - { question: "Ist Weenect XS für Katzen geeignet?", answer: "Ja, für Katzen ab 3 kg. Weenect liefert die Katzenvariante mit einem Anti-Strangulations-Elastikband." }
@@ -54,3 +56,5 @@ faq:
 ---
 
 Weenect differenziert sinnvoll nach Baugröße statt nach möglichst vielen nahezu gleichen Modellen. Der [Weenect XS](/produkt/weenect-xs/) steht deshalb sowohl im [Katzenvergleich](/vergleiche/beste-gps-tracker-fuer-katzen/) als auch im [Hundevergleich](/vergleiche/beste-gps-tracker-fuer-hunde/); der [XT](/produkt/weenect-xt/) gehört in den Akku- und Outdoor-Kontext.
+
+Seit 2026 muss die Serviceebene separat gelesen werden: Ortungsabo, optionales Sorglos-Paket für 3,99 Euro monatlich und Weenect Plus sind keine neue Hardwaregeneration und werden nicht in den Geräte-Score eingerechnet.

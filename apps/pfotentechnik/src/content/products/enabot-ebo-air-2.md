@@ -1,0 +1,58 @@
+---
+title: "Enabot EBO Air 2"
+slug: "enabot-ebo-air-2"
+type: "product"
+layout: "product"
+testStatus: "manufacturer-data"
+productStatus: "active"
+description: "Mobiler Kamera-Roboter mit App-Fernsteuerung und 2K-Video, der mehrere Räume abfahren kann."
+recommendation: "Für ebene, hindernisarme Wohnungen, wenn ein beweglicher Blickpunkt wichtiger ist als feste Rundumüberwachung."
+manufacturer:
+  key: "enabot"
+  name: "Enabot"
+  slug: "enabot"
+category: { key: "haustierkameras", label: "Haustierkameras", path: "/haustierkameras/" }
+productUrl: "/produkt/enabot-ebo-air-2/"
+publishedAt: "2026-08-06"
+updatedAt: "2026-08-06"
+author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
+seo: { title: "Enabot EBO Air 2 im Check", description: "Enabot EBO Air 2 als mobiler 2K-Kameraroboter: Reichweite im Zuhause, Hindernisse, App und Datenschutz eingeordnet.", canonical: "/produkt/enabot-ebo-air-2/", sitemap: true, priority: 0.75 }
+hub: { sections: ["produkte", "haustierkameras"] }
+tags: ["haustierkamera", "kameraroboter", "katze", "hund", "app"]
+images:
+  hero: { src: "../../assets/images/products/enabot-ebo-air-2/hero.webp", alt: "Neutrale redaktionelle Darstellung eines mobilen Kamera-Roboters für Haustiere" }
+price: { current: null, currency: "EUR", status: "unknown" }
+rating: 3.5
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: false
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+ratings: { mobilitaet: 4.2, datenschutz: 3.0, folgekosten: 3.5, alltag: 3.3 }
+decision:
+  bestFor: ["mehrere verbundene Räume auf einer Ebene", "aktive Fernsteuerung", "Haushalte ohne hohe Schwellen und offene Treppen"]
+  attention: ["Treppen, Kabel und Schwellen vorab prüfen", "mobiler Blickpunkt ersetzt keine feste Bereichsabdeckung", "Hersteller-KI nicht als validierte Verhaltensanalyse verstehen"]
+review: { summary: "Enabot führt den EBO Air 2 als mobilen Home-Roboter mit 2K-Video und App-Steuerung.", verdict: "Eine eigene Produktklasse für flexible Rundgänge; sie passt nur zu einer robotertauglichen Wohnung und einem Tier, das sich nicht gestört fühlt." }
+strengths: ["mobiler Blickpunkt", "2K-Video laut Hersteller", "Fernsteuerung per App"]
+weaknesses: ["abhängig von Boden, Schwellen und Hindernissen", "keine lückenlose feste Überwachung", "Reaktion des Tieres vor Dauerbetrieb beobachten"]
+alternatives: ["petlibro-scout-smart-camera", "furbo-360-hundekamera"]
+comparisons: ["beste-haustierkameras"]
+comparisonFilters: { animal: ["dog", "cat"], petSize: ["small", "medium", "large"], foodType: [] }
+specs:
+  - { label: "Produktklasse", value: "Mobiler Kamera-Roboter" }
+  - { label: "Video", value: "2K laut Hersteller" }
+  - { label: "Navigation", value: "App-gesteuerte Fahrt im Innenraum" }
+  - { label: "Einsatzgrenze", value: "Treppen, Schwellen, Kabel und mehrere Etagen" }
+features: ["2K-Video", "mobile App-Steuerung", "Innenraum-Roboter"]
+comparisonData:
+  custom: { klasse: "Mobiler Kameraroboter", video: "2K laut Hersteller", interaktion: "Fahren und Kamerazugriff", speicher: "Modell-/App-Angabe prüfen", abo: "Kein belegter Pflichttarif", datenschutz: "Bewegliche Kamera; Raumfreigaben prüfen" }
+decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "mobilen-kameraroboter-pruefen", primaryQuestion: "Ist die Wohnung robotertauglich und wird ein mobiler statt eines festen Blickpunkts gebraucht?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
+evidenceSources:
+  - { source: "Enabot", url: "https://www.enabot.com/de/about-us", accessedAt: "2026-08-06", assertion: "EBO Air 2 wird als mobile Produktklasse mit 2K-Video geführt.", fields: ["specs", "features", "decision"] }
+---
+
+## Vor dem Kauf einen Fahrweg prüfen
+
+Ein mobiler Roboter gewinnt nur dann Reichweite, wenn Ladestation, WLAN, Bodenübergänge und freie Fahrwege zusammenpassen. Offene Treppen, Kabel, hohe Schwellen und geschlossene Türen begrenzen den Nutzen objektiv.

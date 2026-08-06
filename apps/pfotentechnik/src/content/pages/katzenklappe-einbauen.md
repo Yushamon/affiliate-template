@@ -43,6 +43,10 @@ Vor dem Sägen prüfen:
 
 Bei Metalltüren kann die RFID-Erkennung beeinträchtigt werden. Herstellerhinweise zum Funktionstest sollten beachtet werden.
 
+### OnlyCat in einer Tür
+
+OnlyCat empfiehlt die Tunnelunterkante ungefähr auf Bauchhöhe der Katze. Schneide rund 3 mm außerhalb der markierten Tunnelkontur und wähle die kürzeste passende Schraube. Der Tunnel enthält RFID-Antennen und darf nicht gebohrt oder gekürzt werden. Bei Metall oder Aluminium muss die RFID-Eignung vor dem endgültigen Ausschnitt mit dem Hersteller geklärt werden. Zusätzlich ist ein sicherer Weg für das USB-C-Stromkabel erforderlich.
+
 ---
 
 ## Einbau in Glas
@@ -55,6 +59,10 @@ Wichtig:
 - Isolierglas sollte nicht nachträglich bearbeitet werden.
 - Adapterringe und Scheibenstärke frühzeitig mit einem Glasfachbetrieb abstimmen.
 
+### OnlyCat in Glas
+
+Die OnlyCat-Anleitung nennt einen runden Ausschnitt von **212 mm**; der kompakte Adapter deckt laut Hersteller Öffnungen von 210 bis 260 mm ab. Einfach- und Doppelverglasung müssen vorab mit einem qualifizierten Glasfachbetrieb geplant werden. Metall im Glasbereich ist zu vermeiden, und beide Seiten werden entsprechend der Fachplanung abgedichtet. Eine vorhandene Isolierglasscheibe darf nicht nachträglich vor Ort ausgeschnitten werden.
+
 ---
 
 ## Einbau in eine Wand
@@ -66,6 +74,10 @@ Ein Wanddurchgang benötigt:
 - möglichst geringe Wärmebrücke
 - Gefälle nach außen
 - Prüfung auf Leitungen und tragende Bauteile
+
+### OnlyCat in einer Wand
+
+OnlyCat nennt eine Öffnung von **170 × 170 mm**. Der Tunnel soll waagerecht beziehungsweise leicht nach außen abfallend verlaufen, damit Regen ablaufen kann. Tunnelverlängerungen werden untereinander verbunden, am Gerät aber nur wie in der Herstelleranleitung vorgesehen befestigt. Außen ist zwischen Tunnel und Rahmen eine wetterfeste Abdichtung nötig. Leitungen, tragende Teile, Feuchteschutz und Wärmebrücke machen dies im Zweifel zu einer Fachbetriebsaufgabe.
 
 ---
 
@@ -111,9 +123,11 @@ Nachteile
 
 1. Funktion ohne Katze prüfen.
 2. Verriegelung testen.
-3. Mikrochip anlernen.
-4. Katze schrittweise an die Klappe gewöhnen.
-5. Dichtheit und Zugluft kontrollieren.
+3. Bei OnlyCat erst jetzt App und Gerät verbinden.
+4. Katzenprofile beziehungsweise Mikrochip anlernen.
+5. Door Policies oder Richtungsregeln konfigurieren und ohne Katze testen.
+6. Katze schrittweise an die Klappe gewöhnen.
+7. Dichtheit und Zugluft kontrollieren.
 
 ---
 
@@ -143,7 +157,7 @@ Nicht immer. Ein anderer Hersteller verwendet oft andere Ausschnittmaße.
 
 ## Weiterführende Inhalte
 
-- Vergleich der Mikrochip-Katzenklappen
-- Katzenklappen-Hub
-- Katze an Katzenklappe gewöhnen
-- Zugluft und Wärmedämmung
+- [Vergleich der Mikrochip-Katzenklappen](/vergleiche/beste-mikrochip-katzenklappen/)
+- [Katzenklappen-Hub](/katzenklappen/)
+- [Katze an Katzenklappe gewöhnen](/katze-an-katzenklappe-gewoehnen/)
+- [Zugluft und Wärmedämmung](/katzenklappe-zugluft-und-waermedaemmung/)

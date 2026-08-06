@@ -239,3 +239,7 @@ Der Tractive ist die schlüssigste Komplettlösung für Katzen von 3 bis 8 kg, w
 ## Der wichtigste Praxistest
 
 Lass die Katze das komplette System zunächst stundenweise im Haus tragen. Kontrolliere, ob Tracker und Halter unter das Kinn drehen, gegen den Brustkorb schlagen oder den Sicherheitsverschluss verdecken. Danach folgt ein kurzer Freigang mit vollständig geladenem Akku und aktivierter Zone. Ein verloren gegangenes Sicherheitshalsband ist ärgerlich, aber ein zu fest verriegeltes Halsband kann das größere Risiko sein. Genau deshalb darf „möglichst verlustsicher“ nicht das einzige Kaufkriterium sein.
+
+## Gesundheitstrends des CAT 6 Mini
+
+Der Tractive CAT 6 Mini erfasst Aktivität, Schlaf sowie Trends der Ruhe-Herz- und Ruhe-Atemfrequenz. Für Herz und Atmung nennt Tractive mindestens sieben Nutzungstage bis zur persönlichen Baseline. Diese Werte sind ein Zusatzkriterium für Verlaufskontrolle, aber kein Grund für eine medizinische Aussage oder automatische Aufwertung: Der Tracker ist kein Medizinprodukt und erkennt keine Krankheit.

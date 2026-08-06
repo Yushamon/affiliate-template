@@ -126,6 +126,16 @@ premiumBlocks:
         text: "Mikrochip-Zugang, App-Funktionen, Durchgangsmaß, Einbau und spezialisierte Beuteerkennung."
         href: "/katzenklappen/"
         cta: "Katzenklappen auswählen"
+      - label: "Beobachtung"
+        title: "Haustierkameras"
+        text: "Feste Kamera, Interaktionskamera und mobiler Roboter nach Datenschutz, Speicher und Folgekosten auswählen."
+        href: "/haustierkameras/"
+        cta: "Haustierkameras auswählen"
+      - label: "Katzenhygiene"
+        title: "Automatische Katzentoiletten"
+        text: "Mindestgewicht, Bauform, Sicherheitsstopp, Streu, Gewöhnung und Drei-Jahres-Kosten prüfen."
+        href: "/automatische-katzentoiletten/"
+        cta: "Katzentoiletten sicher auswählen"
       - label: "Modelle einordnen"
         title: "Produktvergleiche"
         text: "Produkte nach zentral gepflegten Daten und nachvollziehbaren Kriterien vergleichen."
@@ -295,11 +305,11 @@ Der Cornerstone [Katzenklappen](/katzenklappen/) trennt lokale Mikrochip-Erkennu
 
 ### Haustierkameras
 
-Eine Kamera kann zeigen, ob ein Tier am Futterplatz erscheint oder sich in einem Raum bewegt. Sie ersetzt weder Betreuung noch eine Gesundheitskontrolle. Kaufentscheidend sind lokaler oder Cloud-Speicher, Sichtfeld, Nachtmodus, Ton, Benachrichtigungslogik, Kontosicherheit und die Frage, welche Wohnbereiche beziehungsweise Personen mit erfasst werden.
+Eine Kamera kann zeigen, ob ein Tier am Futterplatz erscheint oder sich in einem Raum bewegt. Sie ersetzt weder Betreuung noch eine Gesundheitskontrolle. Kaufentscheidend sind lokaler oder Cloud-Speicher, Sichtfeld, Nachtmodus, Ton, Benachrichtigungslogik, Kontosicherheit und die Frage, welche Wohnbereiche beziehungsweise Personen mit erfasst werden. Der neue [Haustierkamera-Hub](/haustierkameras/) trennt feste Kamera, Interaktionskamera und mobilen Roboter; konkrete Modelle stehen im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
 
 ### Automatische Katzentoiletten
 
-Automatische Katzentoiletten trennen Ausscheidungen mechanisch und protokollieren je nach Modell Besuche oder Gewicht. Vor Funktionen stehen Innenmaß, Einstieg, Streukompatibilität, Notstopp, Sensorprüfung und eine jederzeit nutzbare offene Alternative. Nutzungsdaten können einen Trend liefern, aber weder Urinmenge noch Erkrankungen zuverlässig diagnostizieren.
+Automatische Katzentoiletten trennen Ausscheidungen mechanisch und protokollieren je nach Modell Besuche oder Gewicht. Vor Funktionen stehen Innenmaß, Einstieg, Streukompatibilität, Notstopp, Sensorprüfung und eine jederzeit nutzbare offene Alternative. Nutzungsdaten können einen Trend liefern, aber weder Urinmenge noch Erkrankungen zuverlässig diagnostizieren. Der [Sicherheits- und Kaufhub](/automatische-katzentoiletten/) führt durch Ausschlusskriterien; der [Modellvergleich](/vergleiche/beste-automatische-katzentoiletten/) beginnt erst danach.
 
 ### Gesundheits-Tracker
 

@@ -51,6 +51,8 @@ Im Brunnen bleibt Wasser in Pumpe, Schläuchen, Filter und Kanälen. Ein Filterw
 
 Smart-Modelle erfassen je nach Technik Füllstandsänderungen, Laufzeit oder Besuche. Diese Daten sind für Trends interessant, aber nicht automatisch die tatsächlich geschluckte Menge. In mehreren Katzen sind sie ohne RFID oder andere sichere Identifikation nicht individuell.
 
+Auch der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) ordnet laut Hersteller Kameraereignisse einzelnen Tierprofilen zu und schätzt Trinkmengen. Das verbessert die Verlaufssicht, validiert aber weder die geschluckte Menge noch eine Diagnose. Prüfe Video-/Cloudumfang, Fehlzuordnungen und parallele Wasserstellen im manuellen Protokoll.
+
 ## Wasser im Futter gehört dazu
 
 Die sichtbare Trinkmenge ist nicht der gesamte Wasserbedarf. Nassfutter bringt viel Feuchtigkeit mit. Eine Katze mit hohem Nassfutteranteil kann am Napf weniger trinken als eine Katze mit Trockenfutter. Auch Wasser, das dem Futter zugesetzt wird, muss im Protokoll stehen.

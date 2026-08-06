@@ -91,6 +91,10 @@ specs:
   - { label: "WLAN", value: "2,4 GHz; Einrichtung und App-Funktionen benötigen WLAN" }
   - { label: "App", value: "iOS, Android und Web-App laut Hersteller" }
   - { label: "Ausfallverhalten", value: "Lokaler Betrieb bei WLAN-Ausfall; automatische Entsperrung bei Stromausfall laut Hersteller" }
+  - { label: "Türmontage", value: "Tunnelunterkante ungefähr auf Bauchhöhe; Tunnel weder bohren noch schneiden" }
+  - { label: "Glasausschnitt", value: "Rund 212 mm; Glasfachbetrieb erforderlich" }
+  - { label: "Wandöffnung", value: "170 × 170 mm; Tunnel mit leichtem Gefälle nach außen" }
+  - { label: "Inbetriebnahme", value: "Erst mechanisch montieren, dann App, Katzenprofile und Door Policies einrichten" }
 faq:
   - { question: "Funktioniert OnlyCat ohne WLAN?", answer: "Laut Hersteller bleibt der lokale Betrieb bestehen. Einrichtung, Benachrichtigungen, Fernsteuerung und die Abo-Prüfung benötigen WLAN." }
   - { question: "Ist ein Abo zwingend?", answer: "Nicht bei der Einmalzahlungs-Version. Die günstigere Abo-Version benötigt dagegen ein laufendes Abonnement." }
@@ -107,3 +111,9 @@ score: 71
 OnlyCat ist kein Zusatzmodul, sondern eine vollständige Mikrochip-Katzenklappe mit Kamera und Beuteerkennung. Damit besitzt sie einen anderen Produkt-Intent als ZeroMOUSE, das eine vorhandene kompatible Klappe nachrüstet.
 
 Der [App- und Beuteerkennungs-Vergleich](/vergleiche/katzenklappen-mit-app-und-beuteerkennung/) trennt Komplettsysteme und Nachrüstung. Die Erkennungsleistung bleibt bis zu einem unabhängigen Praxistest eine Herstellerangabe.
+
+## Einbaupfade und Reihenfolge
+
+Bei einer Tür soll die Tunnelunterkante ungefähr auf Bauchhöhe der Katze liegen. Der Tunnel enthält RFID-Antennen und darf weder gekürzt, gebohrt noch anderweitig verletzt werden. Für Glas nennt OnlyCat einen runden Ausschnitt von 212 mm; bestehendes oder isoliertes Glas gehört in die Hand eines qualifizierten Glasfachbetriebs. Für Wände nennt die Anleitung 170 × 170 mm, Tunnelverlängerungen und ein leichtes Gefälle nach außen; Leitungen, Statik, Abdichtung und Wärmebrücke müssen fachlich geprüft werden.
+
+Die App-Einrichtung folgt erst nach der mechanischen Montage: Gerät verbinden, Katzenprofile anlegen und anschließend die Door Policies konfigurieren. Der [Einbauratgeber](/katzenklappe-einbauen/) führt durch die Materialpfade; danach helfen [Gewöhnung](/katze-an-katzenklappe-gewoehnen/) und [Zugluft-/Wärmedämmungscheck](/katzenklappe-zugluft-und-waermedaemmung/).

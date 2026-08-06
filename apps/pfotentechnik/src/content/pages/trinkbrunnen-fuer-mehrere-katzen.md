@@ -71,4 +71,6 @@ Ein Smart-Brunnen kann Veränderungen sichtbar machen. Deutlich mehr Durst, häu
 
 Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) trennt einfache Netzmodelle, Akku-Brunnen, Edelstahl und Mehrkatzen-Tracking. Ein Tracking-System kann Ereignisse zuordnen, ersetzt aber keine räumlich getrennten Trinkorte. Die konkrete Anzahl erklärt [Wie viele Wasserstellen braucht eine Katze?](/wie-viele-wasserstellen-katze/).
 
+Der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) ist der konkrete Spezialfall mit 5-Liter-Frischwassertank, getrenntem 1,8-Liter-Abwasser und kameraunterstützter Zuordnung von bis zu 15 Tieren laut Hersteller. Die Zuordnung und geschätzte Trinkmenge sind keine medizinischen Messwerte; Kamera-, Cloud-, Cube-C- und Reinigungsaufwand gehören in die Kaufentscheidung.
+
 **Quellen:** [Cornell – Zugang und Konflikte an Wasserstellen](https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration), [International Cat Care – mehrere geeignete Trinkplätze](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [PETLIBRO RFID-Spezifikation](https://petlibro.com/products/dockstream-rfid-smart-fountain).

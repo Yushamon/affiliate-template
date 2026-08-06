@@ -518,6 +518,8 @@ Die App kann bei länger anhaltenden Abweichungen Gesundheitswarnungen ausgeben.
 
 Die Daten sind keine klinische Messung. Sie zeigen Trends, keine Diagnose. Auffällige Werte sollten mit dem tatsächlichen Verhalten des Hundes abgeglichen und bei Bedarf tierärztlich untersucht werden.
 
+Für Ruhe-Herzfrequenz, Ruhe-Atemfrequenz und Bellverhalten nennt Tractive mindestens sieben Nutzungstage bis zur persönlichen Baseline. Aktivität, Schlaf und Kratzverhalten stehen früher zur Verfügung. Der DOG 6 XL ist kein Medizinprodukt und darf nicht zur Krankheitserkennung verwendet werden.
+
 ## Licht, Signalton und Radar-Modus
 
 Das integrierte Licht und der Signalton helfen auf kurze Distanz, etwa bei Dunkelheit, in hohem Gras oder wenn der Tracker in der Wohnung gesucht wird.

@@ -140,6 +140,10 @@ Rechne **Gerät + Abo + Ersatzhalter + Ladekabel + mögliche Ersatzgeräte** üb
 
 ## Kaufberatung in sieben Schritten
 
+### Gesundheitstrends richtig einordnen
+
+Aktuelle Tractive-Modelle unterscheiden sich nicht nur nach Gewicht und Akku. CAT 6 Mini, DOG 6 und DOG 6 XL erfassen Aktivität, Schlaf sowie Ruhe-Herz- und Ruhe-Atemfrequenz; die Hundemodelle ergänzen Bell- und Kratzverhalten. Für mehrere Werte braucht die App laut Hersteller mindestens sieben Nutzungstage als persönliche Baseline. Das sind Trenddaten eines Nicht-Medizinprodukts, keine Diagnose und kein Ersatz für eine tierärztliche Untersuchung.
+
 Die Reihenfolge verhindert, dass App-Funktionen vor Tier-Fit und Systemgrenzen bewertet werden.
 
 1. Entlaufrisiko und Suchszenario konkret benennen.

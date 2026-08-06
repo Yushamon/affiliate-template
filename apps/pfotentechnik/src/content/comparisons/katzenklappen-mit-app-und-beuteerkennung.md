@@ -110,3 +110,7 @@ evidenceSources:
 Diese Route besitzt den eigenständigen Evaluations-Intent für vernetzte Systeme. Sie trennt App-Fernfunktionen von Beuteerkennung und kennzeichnet ZeroMOUSE ausdrücklich als Nachrüstung.
 
 Wer zuerst nur Zugang, Passform und Einbau klären muss, beginnt beim [Katzenklappen-Hub](/katzenklappen/). Lokale Modelle stehen im [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).
+
+## Einbauaufwand als Ausschlusskriterium
+
+OnlyCat braucht Netzstrom am Einbauort. Für Glas nennt der Hersteller einen runden 212-mm-Ausschnitt und einen Glasfachbetrieb, für Wände 170 × 170 mm plus Tunnelaufbau und Abdichtung. Bei Türen darf der RFID-Tunnel nicht gebohrt oder gekürzt werden. App, Katzenprofile und Door Policies folgen erst nach der mechanischen Montage. Wer diese Voraussetzungen nicht sicher erfüllt, verwirft das Modell unabhängig von der Beuteerkennung und beginnt beim [materialbezogenen Einbaucheck](/katzenklappe-einbauen/).

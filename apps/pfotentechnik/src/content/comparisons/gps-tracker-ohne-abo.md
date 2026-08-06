@@ -139,6 +139,8 @@ Beide Systeme vermeiden ein Mobilfunkabo, benötigen aber ein kompatibles Alpha-
 
 „Ohne Abo“ beschreibt nur das Bezahlmodell, nicht automatisch die bessere Ortung. VHF funktioniert ohne Mobilfunk, endet aber an seiner Funkreichweite und verlangt einen eigenen Empfänger. Der Guide [Warum benötigen viele Tracker ein Abo?](/warum-brauchen-gps-tracker-ein-abo/) erklärt die Kostenkette; [Reichweite von GPS-Trackern](/reichweite-von-gps-trackern/) trennt die technischen Grenzen.
 
+Bei Weenect müssen drei Ebenen getrennt werden: Das Ortungsabo ist für den Mobilfunkdienst erforderlich. Das optionale Sorglos-Paket kostet laut Veröffentlichung vom April 2026 3,99 Euro monatlich und ergänzt Geräteschutz sowie Vermisstenhilfe. Weenect Plus bündelt Wissens- und Trainingsinhalte; seine aktuelle Tarifzuordnung bleibt im Checkout zu prüfen. Keiner dieser Dienste macht XS oder XT zu einem Tracker „ohne Abo“. Praktische Abläufe stehen in [Hund entlaufen: GPS sinnvoll?](/hund-entlaufen-gps-sinnvoll/) und [Katze entlaufen: GPS sinnvoll?](/katze-entlaufen-gps-sinnvoll/).
+
 Die verglichenen Geräte sind spezialisierte Hundesysteme von [Garmin](/hersteller/garmin/). Für normale Smartphone-Nutzung bleibt der [Hunde-GPS-Vergleich](/vergleiche/beste-gps-tracker-fuer-hunde/) die passendere Übersicht.
 
 ## Unsere Empfehlung

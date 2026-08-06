@@ -319,6 +319,8 @@ Mit eingerichteter WLAN-Energiesparzone nennt Tractive eine Akkulaufzeit von bis
 
 Neben Live-Ortung, virtuellen Zäunen, Positionsverlauf und Revieranalyse erfasst der CAT 6 Mini Aktivitäts- und Schlafdaten sowie Trends der Herz- und Atemfrequenz. Diese Funktionen dienen der Beobachtung von Veränderungen und sind keine medizinische Diagnose.
 
+Für Herz- und Ruhe-Atemfrequenz benötigt Tractive laut Hilfe-Center zunächst mindestens sieben Nutzungstage, um eine persönliche Baseline aufzubauen. Aktivität und Schlaf erscheinen früher. Die Werte zeigen Abweichungen vom individuellen Verlauf; der CAT 6 Mini ist kein Medizinprodukt und ersetzt keine tierärztliche Untersuchung.
+
 **Offizielle Quellen:**
 
 - [Tractive GPS Tracker für Katzen](https://tractive.com/de/pd/gps-tracker-cat)
