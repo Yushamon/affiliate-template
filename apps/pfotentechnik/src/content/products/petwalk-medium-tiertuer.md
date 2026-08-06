@@ -32,33 +32,33 @@ images:
     - { src: "../../assets/images/products/petwalk-medium-tiertuer/scale.svg", alt: "Passformprüfung der petWALK Medium Tiertür" }
     - { src: "../../assets/images/products/petwalk-medium-tiertuer/limitation.svg", alt: "Grenzen der petWALK Medium Tiertür" }
 price:
-  current: null
+  current: 2420
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-04"
+  checkedAt: "2026-08-06T07:17:38.191Z"
   source:
-    id: "petwalk-at"
+    id: "manual"
     label: "petWALK Österreich"
-    type: "merchant"
+    type: "manual"
 affiliate:
   provider: "petwalk-at"
   label: "Aktuellen Preis prüfen"
   url: "https://petwalk.at/products/tierture-konfigurieren"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-04", note: "Kein eigener Praxistest; Dämm- und Sicherheitswerte sind Herstellerangaben." }
 rating: 3.7
-priceState: "unknown"
-priceUpdated: "2026-08-04"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-08-06T07:17:38.191Z"
+priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Am 04.08.2026 im deutschsprachigen Hersteller-Konfigurator für den EU-Markt angeboten."
-availabilityUpdated: "2026-08-04"
+availabilityUpdated: "2026-08-06T07:17:38.191Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 ratings:
   zugang_und_sicherheit: 4.5

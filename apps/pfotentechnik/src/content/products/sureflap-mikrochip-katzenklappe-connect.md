@@ -51,35 +51,35 @@ images:
   gallery: []
 
 price:
-  current: null
+  current: 259.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-05"
+  checkedAt: "2026-08-06T07:22:26.270Z"
   source:
-    id: "surepetcare-de-connect"
-    label: "Sure Petcare Deutschland"
+    id: "amazon.de"
+    label: "amazon.de"
     type: "merchant"
 affiliate:
   provider: "surepetcare-de-connect"
   label: "Aktuellen Preis prüfen"
-  url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"
+  url: "https://amzn.to/4fVWpPq"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 productStatus: "active"
 
 testStatus: "manufacturer-data"
 rating: 3.9
-priceState: "unknown"
-priceUpdated: "2026-08-05"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-08-06T07:22:26.270Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "unknown"
-availabilityReason: "Preis, Hub-Bundle und Lieferbarkeit müssen unmittelbar vor dem Kauf im deutschen Hersteller-Shop geprüft werden."
-availabilityUpdated: "2026-08-05"
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-06T07:22:26.270Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 
 editorial:
   assessmentType: "data-review"
