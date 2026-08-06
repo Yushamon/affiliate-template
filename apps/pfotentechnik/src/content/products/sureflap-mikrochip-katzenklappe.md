@@ -47,27 +47,39 @@ hub:
   featured: true
   order: 20
 
-images:
+  images:
+
   hero:
-    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/hero.png"
-    alt: "SureFlap Mikrochip Katzenklappe in einer Holztür"
+
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/hero.webp"
+
+    alt: "SureFlap Mikrochip Katzenklappe in hochwertiger Dreiviertelansicht"
+
   thumbnail:
-    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.svg"
-    alt: "SureFlap Mikrochip Katzenklappe"
+
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.webp"
+
+    alt: "SureFlap Mikrochip Katzenklappe Frontansicht"
+
   comparison:
-    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/comparison.svg"
-    alt: "SureFlap Mikrochip Katzenklappe im Merkmalsvergleich"
+
+    src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/comparison.webp"
+
+    alt: "SureFlap Mikrochip Katzenklappe freigestellt für Produktvergleiche"
+
   gallery:
-    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/use-case.svg"
-      alt: "Selektiver Mikrochip-Zugang für eine Katze"
-    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/detail.svg"
-      alt: "Mikrochip-Erkennung und Verriegelung der SureFlap Katzenklappe"
-    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/setup.svg"
-      alt: "Einbauplanung für Tür, Glas oder Wand"
-    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/scale.svg"
-      alt: "Passformprüfung anhand des Durchgangs von 142 × 120 Millimetern"
-    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/limitation.svg"
-      alt: "Grenzen der Standardklappe bei individuellen Ausgangsrechten"
+
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-1.webp"
+
+      alt: "SureFlap Mikrochip Katzenklappe Frontansicht"
+
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-2.webp"
+
+      alt: "SureFlap Mikrochip Katzenklappe in 45-Grad-Perspektive"
+
+    - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe/gallery-3.webp"
+
+      alt: "Detailaufnahme der transparenten Rauchglas-Klappe mit umlaufender Dichtung"
 
 price:
   current: null
