@@ -7,7 +7,6 @@ import type {
   ComparisonRow
 } from "../../comparison/model";
 import { getPriceDisplay } from "../../comparison/price";
-import "./comparison-explorer-v2.css";
 
 type Props = {
   products: ComparisonProduct[];
@@ -417,7 +416,7 @@ const rowGroups = Array.from(groupedRows.entries());
       if (content instanceof HTMLElement) content.hidden = !hasEnough;
 
       root.style.setProperty(
-        "--comparison-selected-count",
+        "--pt-comparison-selected-count",
         String(Math.max(1, selected.length))
       );
     };

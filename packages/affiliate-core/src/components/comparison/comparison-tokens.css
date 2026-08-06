@@ -1,14 +1,1 @@
-/*
- * Vergleichskomponenten verwenden ausschließlich globale Theme-Tokens.
- * Aliasse bleiben nur als migrationssichere Komponenten-Schnittstelle.
- */
-:root {
-  --comparison-text: var(--pt-color-text);
-  --comparison-muted: var(--pt-color-text-muted);
-  --comparison-accent: var(--pt-color-action-bg);
-  --comparison-accent-dark: var(--pt-color-action-bg-hover);
-  --comparison-line: var(--pt-color-border);
-  --comparison-soft: var(--pt-color-surface-soft);
-  --comparison-surface: var(--pt-color-surface);
-  --comparison-shadow: var(--pt-shadow-card, 0 14px 38px rgb(0 0 0 / 0.08));
-}
+/* TOMBSTONE: Comparison-specific tokens removed. Use global --pt-* tokens. */

@@ -7,7 +7,7 @@ import ComparisonExplorer from "./ComparisonExplorer.astro";
 import ComparisonStickyBar from "./ComparisonStickyBar.astro";
 import ComparisonInsightSummary from "./ComparisonInsightSummary.astro";
 import ComparisonMethodology from "./ComparisonMethodology.astro";
-import "./comparison-system.css";
+import "./comparison-experience.css";
 
 type Props = { model: ComparisonViewModel };
 const { model } = Astro.props as Props;
@@ -16,7 +16,7 @@ const alternativeProducts = model.recommendationProducts.filter((product) => pro
 const comparisonProducts = model.products.filter((product) => product.slug !== winner?.slug);
 ---
 
-<div class="comparison-shell" data-layout-engine="31.0.0">
+<div class="comparison-shell" data-layout-engine="31.0.0" data-comparison-experience="32.0.2">
   <ComparisonHero
     eyebrow={model.eyebrow}
     title={model.title}
