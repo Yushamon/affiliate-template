@@ -1,17 +1,17 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-07T07:46:55.992Z",
+  "generatedAt": "2026-08-07T07:53:14.470Z",
   "strict": true,
   "summary": {
     "documents": 215,
     "contentRoutes": 215,
-    "buildRoutes": 317,
-    "validRoutes": 317,
+    "buildRoutes": 146,
+    "validRoutes": 313,
     "definitions": 463,
     "renderedAutomaticLinks": 467,
-    "errors": 0,
+    "errors": 19,
     "warnings": 41,
-    "critical": 0
+    "critical": 19
   },
   "blockedAnchors": [
     "akku",
@@ -37,6 +37,139 @@
     "wasser"
   ],
   "findings": [
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.",
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/wissen/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /redaktion/.",
+      "sourceRoute": "/so-bewerten-wir/",
+      "targetRoute": "/redaktion/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/futterautomat-mit-app/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/gps-tracker-ohne-abo/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/welche-portionsgroesse-ist-richtig/",
+      "targetRoute": "/vergleiche/"
+    },
+    {
+      "severity": "error",
+      "code": "LINK_TARGET_ROUTE_MISSING",
+      "message": "/wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.",
+      "sourceRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "targetRoute": "/vergleiche/"
+    },
     {
       "severity": "warning",
       "code": "LINKING_METADATA_MISSING",

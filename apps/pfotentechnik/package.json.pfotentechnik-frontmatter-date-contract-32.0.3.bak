@@ -72,8 +72,6 @@
     "comparison:data:test": "node --test test/comparison-data-platform.test.mjs",
     "audit:technical-seo": "node scripts/seo/audit-week4-technical-seo.mjs",
     "audit:technical-seo:source": "node scripts/seo/audit-week4-technical-seo.mjs --source-only",
-    "audit:frontmatter-dates": "node scripts/seo/audit-frontmatter-date-scalars.mjs",
-    "audit:frontmatter-dates:strict": "node scripts/seo/audit-frontmatter-date-scalars.mjs --strict",
     "audit:cat-fountain-serp": "node scripts/seo/audit-week5-katzenbrunnen-serp.mjs",
     "seo:release:check": "node scripts/seo/release-preflight.mjs",
     "seo:release:check:no-build": "node scripts/seo/release-preflight.mjs --skip-build",

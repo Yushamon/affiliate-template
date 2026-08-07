@@ -2,8 +2,8 @@
 
 - Status: ERROR
 - Modus: production
-- Dauer: 6147 ms
-- Phasen: 10
+- Dauer: 3931 ms
+- Phasen: 6
 - Fehler: 1
 - Warnungen: 0
 
@@ -14,15 +14,11 @@
 - OK **Produktdaten-Audit** – npm run audit:products:strict
 - OK **Vergleichsdaten-Audit** – npm run comparison:data:audit:strict
 - OK **Vergleichsintegrität** – npm run comparison:audit:strict
-- OK **Interner Source-Link-Audit** – npm run audit:internal-links:strict
-- OK **Anchor-Governance-Audit** – npm run audit:anchor-governance:strict
-- OK **Technischer SEO-Source-Audit** – npm run audit:technical-seo:source
-- OK **Comparison-Snippet- und Schema-Audit** – npm run audit:comparison-schema
-- FEHLER **Produktionsnaher Astro-Build** – npm run build
+- FEHLER **Interner Source-Link-Audit** – npm run audit:internal-links:strict
 
 ## Fehler
 
-- Produktionsnaher Astro-Build fehlgeschlagen (Exit 1).
+- Interner Source-Link-Audit fehlgeschlagen (Exit 1).
 
 ## Warnungen
 

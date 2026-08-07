@@ -84,7 +84,6 @@ try {
   npmScript("Vergleichsintegrität", "comparison:audit:strict");
   npmScript("Interner Source-Link-Audit", "audit:internal-links:strict");
   npmScript("Anchor-Governance-Audit", "audit:anchor-governance:strict");
-  npmScript("Frontmatter-Datumsvertrag", "audit:frontmatter-dates:strict");
   npmScript("Technischer SEO-Source-Audit", "audit:technical-seo:source");
   npmScript("Comparison-Snippet- und Schema-Audit", "audit:comparison-schema");
 
