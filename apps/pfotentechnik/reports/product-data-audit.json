@@ -1,17 +1,17 @@
 {
   "summary": {
-    "generatedAt": "2026-08-07T09:56:18.684Z",
-    "totalProducts": 80,
+    "generatedAt": "2026-08-07T17:58:35.529Z",
+    "totalProducts": 82,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 21,
+      "automatische-katzentoiletten": 5,
       "haustierkameras": 3,
       "gps-tracker": 8,
-      "automatische-katzentoiletten": 3,
       "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 103,
+    "warnings": 100,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -748,6 +748,149 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/devoko-90l-automatisches-katzenklo.md",
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "title": "Devoko 90L Automatisches Katzenklo",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produkt",
+          "value": "Devoko 90L Automatisches Katzenklo"
+        },
+        {
+          "label": "Dokumentierte Modellnummer",
+          "value": "MW-0769A-0808-MSP-2"
+        },
+        {
+          "label": "Weitere Handelsvariante",
+          "value": "MW-MSP-0769-6-DE wird ebenfalls für eine Devoko-90L-Variante geführt"
+        },
+        {
+          "label": "EAN",
+          "value": "9126528011364 in deutschen Marktplatzangeboten"
+        },
+        {
+          "label": "Systemtyp",
+          "value": "Automatische selbstreinigende Katzentoilette"
+        },
+        {
+          "label": "Innenraum",
+          "value": "90 Liter"
+        },
+        {
+          "label": "Abfallbehälter",
+          "value": "8,5 Liter"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "Etwa 1,5 bis 10 kg"
+        },
+        {
+          "label": "Mindestalter",
+          "value": "In Händlerangaben älter als 3 Monate"
+        },
+        {
+          "label": "Einstiegshöhe",
+          "value": "Etwa 23 cm in deutschen Händlerangaben"
+        },
+        {
+          "label": "Eingangsdurchmesser",
+          "value": "Etwa 24 cm in deutschen Händlerangaben"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "Je nach Quelle etwa 55 × 51 × 58 cm; Handelsangaben weichen ab"
+        },
+        {
+          "label": "Produktgewicht",
+          "value": "Je nach Quelle etwa 10,9 bis 13,5 kg"
+        },
+        {
+          "label": "Material",
+          "value": "PP laut Bedienungsdokumentation und deutschen Angeboten; einzelne Händler nennen ABS"
+        },
+        {
+          "label": "Konnektivität",
+          "value": "2,4-GHz-WLAN"
+        },
+        {
+          "label": "App",
+          "value": "Ja"
+        },
+        {
+          "label": "App-Daten",
+          "value": "Katzengewicht und Häufigkeit der Toilettennutzung"
+        },
+        {
+          "label": "Fernreinigung",
+          "value": "Ja"
+        },
+        {
+          "label": "Reinigungsverzögerung",
+          "value": "In der App einstellbar"
+        },
+        {
+          "label": "Nachtmodus",
+          "value": "Ja laut Bedienungsdokumentation"
+        },
+        {
+          "label": "Radar-Sensitivität",
+          "value": "In der App einstellbar laut Bedienungsdokumentation"
+        },
+        {
+          "label": "Geruchskontrolle",
+          "value": "Integriertes Anti-Geruch-System; über App steuerbar"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Infrarot-, Gewichts- und Radarerkennung dokumentiert; Quellen widersprechen sich bei der Zahl der Sensoren"
+        },
+        {
+          "label": "Automatischer Stopp",
+          "value": "Ja, wenn eine Katze während des Zyklus erkannt wird"
+        },
+        {
+          "label": "Wiederaufnahme",
+          "value": "Reinigung setzt laut Anleitung erst fort, wenn die Katze den Bereich verlassen hat"
+        },
+        {
+          "label": "Katzenstreu",
+          "value": "Verschiedene klumpende Streusorten laut Bedienungsdokumentation"
+        },
+        {
+          "label": "Nutzung ohne Entleerung",
+          "value": "Bis zu 10 Tage für eine Katze als Hersteller-/Verkäuferangabe"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzadapter"
+        },
+        {
+          "label": "Wasserfestigkeit",
+          "value": "Nicht wasserdicht"
+        },
+        {
+          "label": "Lieferumfang",
+          "value": "In deutschen Angeboten: Netzadapter, Toilette, Katzenstreumatte, Müllbeutel, Geruchsneutralisator und Anleitung"
+        },
+        {
+          "label": "Herstellerangabe im deutschen Handel",
+          "value": "Mainwin Furniture GmbH wird als Hersteller genannt"
+        },
+        {
+          "label": "EU-verantwortliche Person",
+          "value": "Wolkenweg Logistik GmbH wird in deutschen eBay-Produktinformationen genannt"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
+    },
+    {
       "file": "src/content/products/enabot-ebo-air-2.md",
       "slug": "enabot-ebo-air-2",
       "title": "Enabot EBO Air 2",
@@ -1407,6 +1550,97 @@
       "completeness": 88
     },
     {
+      "file": "src/content/products/neakasa-m1-lite.md",
+      "slug": "neakasa-m1-lite",
+      "title": "Neakasa M1 Lite",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Systemtyp",
+          "value": "Offene selbstreinigende Katzentoilette mit automatischer Siebung"
+        },
+        {
+          "label": "Bauform",
+          "value": "Open Top"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "525 × 591 × 513 mm laut Neakasa"
+        },
+        {
+          "label": "Einstiegshöhe",
+          "value": "352 mm"
+        },
+        {
+          "label": "Eigengewicht",
+          "value": "10,35 kg"
+        },
+        {
+          "label": "Empfohlenes Katzengewicht",
+          "value": "1 bis 15 kg"
+        },
+        {
+          "label": "Streukapazität",
+          "value": "7,17 Liter"
+        },
+        {
+          "label": "Abfallbehälter",
+          "value": "11,23 Liter"
+        },
+        {
+          "label": "Geräusch",
+          "value": "Bis etwa 50 dB laut Hersteller"
+        },
+        {
+          "label": "Nennspannung",
+          "value": "12 V"
+        },
+        {
+          "label": "Material",
+          "value": "PP, ABS und POM"
+        },
+        {
+          "label": "App",
+          "value": "Neakasa App für Android und iOS"
+        },
+        {
+          "label": "Geruchskontrolle",
+          "value": "OdorSeal Technology laut Hersteller"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende oder siebfähige Streu"
+        },
+        {
+          "label": "Nicht empfohlen",
+          "value": "Nichtklumpende Streu, Zeitungspapier und Holzpellets"
+        },
+        {
+          "label": "Siebgrenze",
+          "value": "Bis 3 mm Durchmesser und 10 mm Länge laut Hersteller"
+        },
+        {
+          "label": "Müllbeutel",
+          "value": "1 Rolle mit 15 Beuteln im Lite-Lieferumfang"
+        },
+        {
+          "label": "Streumatte",
+          "value": "Nicht im Lite-Lieferumfang enthalten"
+        },
+        {
+          "label": "Garantie",
+          "value": "2 Jahre im europäischen Neakasa-Shop"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
+    },
+    {
       "file": "src/content/products/neakasa-m1-plus.md",
       "slug": "neakasa-m1-plus",
       "title": "Neakasa M1 Plus",
@@ -1415,8 +1649,7 @@
       "warnings": [
         "Thumbnail fehlt",
         "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt"
+        "Nur 0 Galerie-Bilder hinterlegt"
       ],
       "notes": [],
       "specs": [
@@ -1456,7 +1689,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 88
+      "completeness": 91
     },
     {
       "file": "src/content/products/oneisall-2-2l-cordless-fountain.md",
@@ -3567,8 +3800,7 @@
       "warnings": [
         "Thumbnail fehlt",
         "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt"
+        "Nur 0 Galerie-Bilder hinterlegt"
       ],
       "notes": [],
       "specs": [
@@ -3604,7 +3836,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 88
+      "completeness": 91
     },
     {
       "file": "src/content/products/petkit-yumshare-dual-hopper.md",
@@ -5271,8 +5503,7 @@
       "warnings": [
         "Thumbnail fehlt",
         "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt",
-        "Affiliate-Link fehlt"
+        "Nur 0 Galerie-Bilder hinterlegt"
       ],
       "notes": [],
       "specs": [
@@ -5304,7 +5535,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 88
+      "completeness": 91
     },
     {
       "file": "src/content/products/petlibro-space-smart-feeder.md",

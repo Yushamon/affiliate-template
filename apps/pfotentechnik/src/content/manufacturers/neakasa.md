@@ -9,7 +9,7 @@ name: "Neakasa"
 recommendation: "Neakasa ist im Cluster die offene Alternative für große oder bei geschlossenen Trommeln skeptische Katzen."
 summary: "M1 Plus verbindet eine offene Siebtrommel mit App, Sensoren und Kitten-Modus."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-07"
 tags: ["hersteller", "neakasa", "automatische-katzentoiletten"]
 images:
   hero: { src: "../../assets/images/products/neakasa-m1-plus/hero.webp", alt: "Neutrale redaktionelle Darstellung einer offenen automatischen Katzentoilette" }
@@ -28,8 +28,8 @@ profile:
   filterSupply: "Nicht relevant; Streukörnung und Klumpverhalten sind entscheidend."
   warranty: "Regionale Garantie- und Servicebedingungen vor Kauf prüfen."
   competitorComparison: "Neakasa grenzt sich über die offene Bauform von geschlossenen Trommelsystemen ab."
-productSlugs: ["neakasa-m1-plus"]
-featuredProductSlugs: ["neakasa-m1-plus"]
+productSlugs: ["neakasa-m1-plus", "neakasa-m1-lite"]
+featuredProductSlugs: ["neakasa-m1-plus", "neakasa-m1-lite"]
 series: []
 alternativeManufacturerSlugs: ["whisker", "petkit"]
 sources:

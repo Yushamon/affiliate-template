@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-07T09:56:18.684Z
+Erstellt: 2026-08-07T17:58:35.529Z
 
 ## Zusammenfassung
 
-- Produkte: 80
+- Produkte: 82
 - Fehler: 0
-- Warnungen: 103
+- Warnungen: 100
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -14,9 +14,9 @@ Erstellt: 2026-08-07T09:56:18.684Z
 
 - futterautomaten: 37
 - trinkbrunnen: 21
+- automatische-katzentoiletten: 5
 - haustierkameras: 3
 - gps-tracker: 8
-- automatische-katzentoiletten: 3
 - katzenklappen: 8
 
 ## Produkte mit Handlungsbedarf
@@ -81,17 +81,6 @@ Erstellt: 2026-08-07T09:56:18.684Z
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
-### Neakasa M1 Plus
-
-- Datei: `src/content/products/neakasa-m1-plus.md`
-- Kategorie: automatische-katzentoiletten
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
-
 ### oneisall 7L Dog Water Fountain
 
 - Datei: `src/content/products/oneisall-7l-dog-water-fountain.md`
@@ -103,17 +92,6 @@ Erstellt: 2026-08-07T09:56:18.684Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
-### PETKIT PUROBOT MAX PRO 2
-
-- Datei: `src/content/products/petkit-purobot-max-pro-2.md`
-- Kategorie: automatische-katzentoiletten
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
-
 ### PETLIBRO Dockstream 2 Smart Cordless
 
 - Datei: `src/content/products/petlibro-dockstream-2-smart-cordless.md`
@@ -124,17 +102,6 @@ Erstellt: 2026-08-07T09:56:18.684Z
   - Empfohlenes Feld fehlt: uv
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: ersatzfilter
-
-### PETLIBRO Scout Smart Camera
-
-- Datei: `src/content/products/petlibro-scout-smart-camera.md`
-- Kategorie: haustierkameras
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
 
 ### Enabot EBO Air 2
 
@@ -150,6 +117,16 @@ Erstellt: 2026-08-07T09:56:18.684Z
 
 - Datei: `src/content/products/furbo-360-hundekamera.md`
 - Kategorie: haustierkameras
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+
+### Neakasa M1 Plus
+
+- Datei: `src/content/products/neakasa-m1-plus.md`
+- Kategorie: automatische-katzentoiletten
 - Vollständigkeit: 91%
 - Warnungen:
   - Thumbnail fehlt
@@ -186,6 +163,16 @@ Erstellt: 2026-08-07T09:56:18.684Z
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
 
+### PETKIT PUROBOT MAX PRO 2
+
+- Datei: `src/content/products/petkit-purobot-max-pro-2.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+
 ### PETLIBRO Granary 2 Vision
 
 - Datei: `src/content/products/petlibro-granary-2-vision.md`
@@ -195,6 +182,16 @@ Erstellt: 2026-08-07T09:56:18.684Z
   - Empfohlenes Feld fehlt: app-steuerung
   - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld fehlt: reinigung
+
+### PETLIBRO Scout Smart Camera
+
+- Datei: `src/content/products/petlibro-scout-smart-camera.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
 
 ### Cat Mate Shell Pet Fountain
 

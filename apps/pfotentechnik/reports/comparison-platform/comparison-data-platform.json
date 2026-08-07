@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:56:19.052Z",
+  "generatedAt": "2026-08-07T17:58:35.905Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 80,
-    "sourceCells": 833,
-    "allResolved": 740,
+    "products": 82,
+    "sourceCells": 847,
+    "allResolved": 754,
     "allUnresolved": 93,
-    "sourceCoverage": 88.8,
-    "renderedCells": 706,
-    "renderedResolved": 706,
+    "sourceCoverage": 89,
+    "renderedCells": 720,
+    "renderedResolved": 720,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 591,
+    "legacyValueCount": 605,
     "overrideCount": 218
   },
   "failures": [],
@@ -25,7 +25,7 @@
     {
       "slug": "beste-automatische-katzentoiletten",
       "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
-      "items": 3,
+      "items": 5,
       "criteria": 7,
       "visibleRows": 7,
       "hiddenRows": 0,
@@ -34,8 +34,8 @@
         {
           "key": "system",
           "label": "Systemtyp",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -53,14 +53,24 @@
               "product": "neakasa-m1-plus",
               "value": "Offene Siebtrommel",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Offene Siebtrommel / Open Top",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Geschlossene automatische Trommel",
+              "resolved": true
             }
           ]
         },
         {
           "key": "mindestgewicht",
           "label": "Mindestgewicht",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -78,14 +88,24 @@
               "product": "neakasa-m1-plus",
               "value": "ca. 1 kg; darunter Kitten-Modus",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "ca. 1 kg; darunter Kitten-Modus ohne Automatik",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "ca. 1,5–10 kg",
+              "resolved": true
             }
           ]
         },
         {
           "key": "einstieg",
           "label": "Einstieg und Innenraum",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -103,14 +123,24 @@
               "product": "neakasa-m1-plus",
               "value": "ca. 35,2 cm, oben offen",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "ca. 35,2 cm, oben offen",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "ca. 23 cm; großer Innenraum",
+              "resolved": true
             }
           ]
         },
         {
           "key": "sicherheit",
           "label": "Sicherheitsprinzip",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -128,14 +158,24 @@
               "product": "neakasa-m1-plus",
               "value": "6 IR-Sensorgruppen; sofortiger Stopp laut Hersteller",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "IR-Sensorik und Stoppfunktion laut Hersteller; Detailangaben uneinheitlich",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "IR-, Gewichts- und Radarerkennung; Sensorzahl öffentlich widersprüchlich",
+              "resolved": true
             }
           ]
         },
         {
           "key": "streu",
           "label": "Streukompatibilität",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -153,14 +193,24 @@
               "product": "neakasa-m1-plus",
               "value": "Schnell klumpend und siebfähig",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Klumpend und siebfähig; keine Holzpellets",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Verschiedene klumpende Streusorten laut Dokumentation",
+              "resolved": true
             }
           ]
         },
         {
           "key": "app",
           "label": "App und Mehrkatzenzuordnung",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -178,14 +228,24 @@
               "product": "neakasa-m1-plus",
               "value": "Nutzung und Füllstand",
               "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Monitoring, Füllstand und Fernsteuerung",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "2,4-GHz-WLAN; Gewicht, Nutzung und Fernreinigung",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kosten",
           "label": "Drei-Jahres-Kosten",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -202,6 +262,16 @@
             {
               "product": "neakasa-m1-plus",
               "value": "Streu und passende Beutel",
+              "resolved": true
+            },
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Streu und Beutel; weniger Zubehör als M1 Plus",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Streu, Beutel, Geruchsneutralisator; Service und Garantie prüfen",
               "resolved": true
             }
           ]

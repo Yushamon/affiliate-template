@@ -1,20 +1,20 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-07T09:56:19.052Z
+Erstellt: 2026-08-07T17:58:35.905Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
-- Quellabdeckung: 88.8 %
+- Quellabdeckung: 89 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 591
+- alte values-Felder: 605
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
 
 | Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
 |---|---:|---:|---:|---|
-| `beste-automatische-katzentoiletten` | 3 | 7 | 0 | OK |
+| `beste-automatische-katzentoiletten` | 5 | 7 | 0 | OK |
 | `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
