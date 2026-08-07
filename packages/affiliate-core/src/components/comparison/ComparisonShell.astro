@@ -13,7 +13,7 @@ type Props = { model: ComparisonViewModel };
 const { model } = Astro.props as Props;
 const winner = model.verdict.winner;
 const alternativeProducts = model.recommendationProducts.filter((product) => product.slug !== winner?.slug);
-const comparisonProducts = model.products.filter((product) => product.slug !== winner?.slug);
+const comparisonProducts = model.products;
 ---
 
 <div class="comparison-shell" data-layout-engine="31.0.0" data-comparison-experience="32.4.0">

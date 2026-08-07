@@ -17,7 +17,10 @@ type Props = {
 
 const { products, rows, filters } = Astro.props as Props;
 
-const defaultSelection = products.slice(0, Math.min(3, products.length)).map((product) => product.slug);
+const maximumSelection = Math.min(4, products.length);
+const defaultSelection = products
+  .slice(0, Math.min(3, maximumSelection))
+  .map((product) => product.slug);
 const productFilterData = Object.fromEntries(
   products.map((product) => [product.slug, product.filterValues])
 );
@@ -48,11 +51,12 @@ const rowGroups = Array.from(groupedRows.entries());
   class="comparison-lab"
   data-comparison-lab
   data-default-selection={JSON.stringify(defaultSelection)}
+  data-max-selection={maximumSelection}
 >
   <header class="comparison-lab__intro">
     <div>
       <span class="comparison-eyebrow">Direktvergleich</span>
-      <h2>Wähle bis zu vier Modelle</h2>
+      <h2>Wähle bis zu {maximumSelection} Modelle</h2>
       <p>
         Stelle nur die Produkte gegenüber, die wirklich infrage kommen.
         Unterschiede werden automatisch hervorgehoben.
@@ -61,7 +65,7 @@ const rowGroups = Array.from(groupedRows.entries());
 
     <div class="comparison-lab__selection-count" aria-live="polite">
       <strong data-selection-count>{defaultSelection.length}</strong>
-      <span>von 4 gewählt</span>
+      <span>von {maximumSelection} gewählt</span>
     </div>
   </header>
 
@@ -323,7 +327,10 @@ const rowGroups = Array.from(groupedRows.entries());
   document.querySelectorAll("[data-comparison-lab]").forEach((root) => {
     if (!(root instanceof HTMLElement)) return;
 
-    const MAX_SELECTION = 4;
+    const MAX_SELECTION = Math.max(
+      1,
+      Math.min(4, Number(root.dataset.maxSelection ?? "4"))
+    );
     const defaultSelection = JSON.parse(root.dataset.defaultSelection ?? "[]");
     const productDataNode = root.querySelector("[data-products]");
     const productData =
