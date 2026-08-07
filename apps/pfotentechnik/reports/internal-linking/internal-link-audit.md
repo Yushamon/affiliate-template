@@ -1,37 +1,18 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-07T07:53:14.470Z
+Erstellt: 2026-08-07T07:58:43.720Z
 
 ## Ergebnis
 
 - Dokumente: 215
 - Linkdefinitionen: 463
 - Simulierte automatische Links: 467
-- Fehler: 19
+- Fehler: 0
 - Warnungen: 41
-- Strict-kritisch: 19
+- Strict-kritisch: 0
 
 ## Befunde
 
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /smarte-haustiertechnik/ verlinkt auf die nicht vorhandene Route /wissen/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /so-bewerten-wir/ verlinkt auf die nicht vorhandene Route /redaktion/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-nassfutter/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-mit-kamera/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-futterautomaten-ohne-wlan/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-hunde/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/beste-trinkbrunnen-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/futterautomat-mit-app/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/gps-tracker-ohne-abo/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /vergleiche/kleine-gps-tracker-fuer-katzen/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /welche-portionsgroesse-ist-richtig/ verlinkt auf die nicht vorhandene Route /vergleiche/.
-- **ERROR LINK_TARGET_ROUTE_MISSING:** /wie-gross-sollte-ein-futterautomat-sein/ verlinkt auf die nicht vorhandene Route /vergleiche/.
 - **WARNING LINKING_METADATA_MISSING:** /haustierkameras/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/enabot/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/furbo/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
