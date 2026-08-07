@@ -3,13 +3,13 @@ title: "Automatische Katzentoiletten im Vergleich"
 slug: "beste-automatische-katzentoiletten"
 type: "comparison"
 layout: "comparison"
-description: "Litter-Robot 5 Pro, PETKIT PUROBOT MAX PRO 2 und Neakasa M1 Plus nach Bauform, Mindestgewicht, Sicherheit, Streu, App und Folgekosten vergleichen."
+description: "Fünf automatische Katzentoiletten nach Bauform, Mindestgewicht, Einstieg, Sicherheit, Streu, App und Folgekosten vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-07"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Automatische Katzentoiletten", "Selbstreinigendes Katzenklo", "Katze", "Vergleich", "Sicherheit"]
-hub: { sections: ["vergleiche", "automatische-katzentoiletten"], title: "Automatische Katzentoiletten im Vergleich", description: "Drei Systemtypen nach Sicherheits- und Passformkriterien.", icon: "🐈", featured: true, order: 38 }
-seo: { title: "Automatische Katzentoiletten im Vergleich: 3 Systeme", description: "Drei automatische Katzenklos nach Mindestgewicht, Einstieg, Sicherheit, Streu, App und Drei-Jahres-Kosten vergleichen.", canonical: "/vergleiche/beste-automatische-katzentoiletten/", sitemap: true, priority: 0.9, changefreq: "monthly" }
+hub: { sections: ["vergleiche", "automatische-katzentoiletten"], title: "Automatische Katzentoiletten im Vergleich", description: "Fünf Modelle nach Sicherheits-, Passform- und Betriebskriterien.", icon: "🐈", featured: true, order: 38 }
+seo: { title: "Automatische Katzentoiletten im Vergleich: 5 Modelle", description: "Fünf automatische Katzenklos nach Mindestgewicht, Einstieg, Sicherheit, Streu, App und Drei-Jahres-Kosten vergleichen.", canonical: "/vergleiche/beste-automatische-katzentoiletten/", sitemap: true, priority: 0.9, changefreq: "monthly" }
 comparisonType: "category"
 group: "Automatische Katzentoiletten"
 icon: "🐈"
@@ -53,6 +53,30 @@ items:
       streu: "Schnell klumpend und siebfähig"
       app: "Nutzung und Füllstand"
       kosten: "Streu und passende Beutel"
+  - slug: "neakasa-m1-lite"
+    type: "product"
+    label: "Neakasa M1 Lite"
+    recommendation: "Offene M1-Alternative mit reduziertem Lieferumfang, wenn der etwa 35,2 cm hohe Einstieg passt."
+    values:
+      system: "Offene Siebtrommel / Open Top"
+      mindestgewicht: "ca. 1 kg; darunter Kitten-Modus ohne Automatik"
+      einstieg: "ca. 35,2 cm, oben offen"
+      sicherheit: "IR-Sensorik und Stoppfunktion laut Hersteller; Detailangaben uneinheitlich"
+      streu: "Klumpend und siebfähig; keine Holzpellets"
+      app: "Monitoring, Füllstand und Fernsteuerung"
+      kosten: "Streu und Beutel; weniger Zubehör als M1 Plus"
+  - slug: "devoko-90l-automatisches-katzenklo"
+    type: "product"
+    label: "Devoko 90L"
+    recommendation: "Preisorientierte XXL-Alternative mit niedrigem Einstieg; konkrete Modellvariante und Dokumentation besonders genau prüfen."
+    values:
+      system: "Geschlossene automatische Trommel"
+      mindestgewicht: "ca. 1,5–10 kg"
+      einstieg: "ca. 23 cm; großer Innenraum"
+      sicherheit: "IR-, Gewichts- und Radarerkennung; Sensorzahl öffentlich widersprüchlich"
+      streu: "Verschiedene klumpende Streusorten laut Dokumentation"
+      app: "2,4-GHz-WLAN; Gewicht, Nutzung und Fernreinigung"
+      kosten: "Streu, Beutel, Geruchsneutralisator; Service und Garantie prüfen"
 criteria:
   - key: "system"
     label: "Systemtyp"
@@ -97,9 +121,12 @@ faq:
   - { question: "Sind automatische Katzentoiletten für Kitten geeignet?", answer: "Nur innerhalb der dokumentierten Gewichtsgrenzen. Unterhalb davon muss die Automatik deaktiviert bleiben; ein Kitten-Modus darf nicht mit aktivem Selbstreinigungsbetrieb verwechselt werden." }
   - { question: "Erkennen App und Kamera Krankheiten?", answer: "Nein. Sie können Herstellerangaben zufolge Nutzungs- oder Gewichtstrends zeigen. Auffälligkeiten brauchen eine fachliche Beurteilung." }
   - { question: "Welche Streu funktioniert?", answer: "Das ist modellabhängig. Siebfähige Geräte brauchen meist schnell klumpende Streu in geeigneter Körnung; nichtklumpende Streu oder Holzpellets können ausgeschlossen sein." }
-decisionJourney: { cluster: "automatische-katzentoiletten", stage: "evaluation", intent: "automatische-katzentoiletten-vergleichen", primaryQuestion: "Welches belegte System passt zu Gewicht, Bauform, Einstieg, Streu, Sicherheit und Folgekosten?", next: ["/produkt/litter-robot-5-pro/", "/produkt/petkit-purobot-max-pro-2/", "/produkt/neakasa-m1-plus/"], fallback: ["/automatische-katzentoiletten/"] }
+decisionJourney: { cluster: "automatische-katzentoiletten", stage: "evaluation", intent: "automatische-katzentoiletten-vergleichen", primaryQuestion: "Welches belegte System passt zu Gewicht, Bauform, Einstieg, Streu, Sicherheit und Folgekosten?", next: ["/produkt/litter-robot-5-pro/", "/produkt/petkit-purobot-max-pro-2/", "/produkt/neakasa-m1-plus/", "/produkt/neakasa-m1-lite/", "/produkt/devoko-90l-automatisches-katzenklo/"], fallback: ["/automatische-katzentoiletten/"] }
 evidenceSources:
   - { source: "Herstellerquellen der drei Produktseiten", url: "https://www.whisker.com/litter-robot-5-pro", accessedAt: "2026-08-06", assertion: "Verglichen werden belegte Bauformen und Sicherheitsgrenzen; offene Werte bleiben als offene Produktfragen markiert.", fields: ["items", "criteria", "recommendation"] }
 ---
 
 Dieser Vergleich besitzt die Modellentscheidung. Sicherheitsregeln, Platzcheck, Kostenformel und Gewöhnungsplan stehen im [Cornerstone zu automatischen Katzentoiletten](/automatische-katzentoiletten/).
+
+
+Neu hinzugekommen sind [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) und [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/). Das M1 Lite erweitert die offene M1-Familie; Devoko ergänzt eine günstigere geschlossene Alternative mit niedrigerem Einstieg und schwächerer Dokumentationslage.

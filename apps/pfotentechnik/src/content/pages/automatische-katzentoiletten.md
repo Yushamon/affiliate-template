@@ -9,11 +9,11 @@ seoDescription: "Selbstreinigende Katzenklos nach Sicherheit, Mindestgewicht, Ei
 category: "haustiertechnik"
 categoryLabel: "Automatische Katzentoiletten"
 categoryPath: "/wissen/"
-linking: { keywords: ["automatische Katzentoiletten", "selbstreinigendes Katzenklo", "automatisches Katzenklo"], contexts: ["automatische-katzentoiletten", "smarte-haustiertechnik", "katze"], priority: "high", maxOccurrences: 1 }
+linking: { keywords: ["automatische Katzentoiletten", "selbstreinigendes Katzenklo", "automatisches Katzenklo"], contexts: ["automatische-katzentoiletten", "smarte-haustiertechnik", "katze"], priority: "high", maxOccurrences: 2 }
 tags: ["Automatische Katzentoiletten", "Katze", "Sicherheit", "Reinigung", "App", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-07"
 hub: { sections: ["wissen", "automatische-katzentoiletten"], title: "Automatische Katzentoiletten", description: "Sicherheit, Passform, Streu, Gewöhnung und Gesamtkosten vor dem Modell klären.", icon: "🐈", featured: true, order: 37 }
 seo: { title: "Automatische Katzentoiletten: Sicherheit & Kaufcheck", description: "Selbstreinigende Katzenklos nach Mindestgewicht, Einstieg, Streu, Sicherheit, Platz und Folgekosten auswählen.", canonical: "/automatische-katzentoiletten/", sitemap: true, priority: 0.9, changefreq: "monthly" }
 contentPlatform:
@@ -21,7 +21,7 @@ contentPlatform:
   cluster: "automatische-katzentoiletten"
   intent: "buying-guide"
   animal: "cat"
-  products: ["litter-robot-5-pro", "petkit-purobot-max-pro-2", "neakasa-m1-plus"]
+  products: ["litter-robot-5-pro", "petkit-purobot-max-pro-2", "neakasa-m1-plus", "neakasa-m1-lite", "devoko-90l-automatisches-katzenklo"]
   decision: "auto"
   blocks: ["summary", "comparison", "fit", "checklist", "mistakes"]
   summary: ["Mindestgewicht und Sicherheitslogik sind Ausschlusskriterien.", "Offene und geschlossene Systeme lösen unterschiedliche Akzeptanzprobleme.", "App- und Gesundheitsdaten sind Trends, keine Diagnose."]
@@ -69,3 +69,10 @@ Trage für jedes Modell dieselbe Nutzungsdauer und denselben Streuverbrauch ein.
 5. Bei Meiden, Stress oder Unsauberkeit Automatik ausschalten und altes Klo wieder vollständig anbieten.
 
 Veränderungen bei Häufigkeit, Dauer, Gewicht oder Ausscheidung sind Beobachtungen. Bei Beschwerden oder deutlichen Abweichungen ist eine tierärztliche Abklärung wichtiger als die App-Deutung.
+
+
+## Zwei neue Modelle richtig einordnen
+
+Das [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) ist keine neue Systemklasse. Es gehört technisch in die offene M1-Familie und unterscheidet sich vor allem beim Lieferumfang. Das [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/) erweitert den bestehenden Vergleich um eine preisorientierte geschlossene Option mit niedrigerem Einstieg und weniger konsistenter öffentlicher Dokumentation.
+
+Beide Produkte gehören deshalb in den [bestehenden Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) und rechtfertigen keine zusätzlichen Vergleichs-URLs.

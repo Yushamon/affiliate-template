@@ -86,6 +86,7 @@ try {
   npmScript("Anchor-Governance-Audit", "audit:anchor-governance:strict");
   npmScript("Frontmatter-Datumsvertrag", "audit:frontmatter-dates:strict");
   npmScript("Technischer SEO-Source-Audit", "audit:technical-seo:source");
+  npmScript("SEO-Wachstumscluster", "audit:seo-growth-clusters");
   npmScript("Comparison-Snippet- und Schema-Audit", "audit:comparison-schema");
 
   if (!skipBuild) npmScript("Produktionsnaher Astro-Build", "build");

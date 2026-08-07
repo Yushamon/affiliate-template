@@ -22,7 +22,8 @@ type RecommendationFamily =
   | "trinkbrunnen"
   | "gps-tracker"
   | "katzenklappen"
-  | "haustierkameras";
+  | "haustierkameras"
+  | "katzentoiletten";
 
 type Context = {
   animal?: "dog" | "cat";
@@ -75,7 +76,8 @@ const FAMILY_PATTERNS: Array<[RecommendationFamily, RegExp]> = [
   ["futterautomaten", /\b(futterautomat|futterautomaten|futterspender|automatic feeder|pet feeder|feeder)\b/],
   ["gps-tracker", /\b(gps tracker|gps-tracker|haustiertracker|ortungstracker|tracking halsband)\b/],
   ["katzenklappen", /\b(katzenklappe|katzenklappen|mikrochipklappe|cat flap)\b/],
-  ["haustierkameras", /\b(haustierkamera|tierkamera|pet camera|kamera fuer haustiere)\b/]
+  ["haustierkameras", /\b(haustierkamera|tierkamera|pet camera|kamera fuer haustiere)\b/],
+  ["katzentoiletten", /\b(automatische katzentoilette|automatische katzentoiletten|automatisches katzenklo|automatische katzenklos|selbstreinigendes katzenklo|selbstreinigende katzenklos|litter robot|litter-robot)\b/]
 ];
 
 const detectRecommendationFamily = (
@@ -84,7 +86,7 @@ const detectRecommendationFamily = (
   normalizedText: string
 ): RecommendationFamily | undefined => {
   const topicFamily = topics.find((topic): topic is RecommendationFamily =>
-    ["futterautomaten", "trinkbrunnen", "gps-tracker", "katzenklappen", "haustierkameras"].includes(topic)
+    ["futterautomaten", "trinkbrunnen", "gps-tracker", "katzenklappen", "haustierkameras", "katzentoiletten"].includes(topic)
   );
   if (topicFamily) return topicFamily;
 
