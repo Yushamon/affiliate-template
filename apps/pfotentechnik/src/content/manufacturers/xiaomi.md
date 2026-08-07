@@ -131,3 +131,12 @@ faq:
 ---
 
 Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Xiaomi
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/)
+- [Xiaomi Smart Pet Fountain 2](/produkt/xiaomi-smart-pet-fountain-2/)
+<!-- pt:content-discovery:manufacturer-products:end -->

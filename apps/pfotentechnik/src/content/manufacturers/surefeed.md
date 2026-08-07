@@ -169,3 +169,14 @@ Mit der SureFlap Mikrochip Katzenklappe Connect erweitert sich das Herstellerpro
 [SureFlap Mikrochip Katzenklappe Connect ansehen](/produkt/sureflap-mikrochip-katzenklappe-connect/)
 
 Die herstellerübergreifende Auswahl nach Zugang, Passform, Einbau und App-Bedarf bündelt der Cornerstone [Katzenklappen](/katzenklappen/). Die SureFlap-Modelle stehen gemeinsam im [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von SureFeed
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [SureFeed Microchip Pet Feeder](/produkt/surefeed-microchip-pet-feeder/)
+- [SureFeed Microchip Pet Feeder Connect](/produkt/surefeed-microchip-pet-feeder-connect/)
+- [SureFlap DualScan Mikrochip Katzenklappe](/produkt/sureflap-dualscan-mikrochip-katzenklappe/)
+- [SureFlap Mikrochip Katzenklappe](/produkt/sureflap-mikrochip-katzenklappe/)
+<!-- pt:content-discovery:manufacturer-products:end -->

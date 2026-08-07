@@ -40,3 +40,11 @@ faq: []
 ## Whisker bei PfotenTechnik
 
 Das Profil ordnet dokumentierte Herstellerfunktionen ein und behauptet keinen eigenen Sicherheits- oder Kameratest.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Whisker
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/)
+<!-- pt:content-discovery:manufacturer-products:end -->

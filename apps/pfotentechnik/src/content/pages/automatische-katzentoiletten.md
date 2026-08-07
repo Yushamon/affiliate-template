@@ -76,3 +76,13 @@ Veränderungen bei Häufigkeit, Dauer, Gewicht oder Ausscheidung sind Beobachtun
 Das [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) ist keine neue Systemklasse. Es gehört technisch in die offene M1-Familie und unterscheidet sich vor allem beim Lieferumfang. Das [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/) erweitert den bestehenden Vergleich um eine preisorientierte geschlossene Option mit niedrigerem Einstieg und weniger konsistenter öffentlicher Dokumentation.
 
 Beide Produkte gehören deshalb in den [bestehenden Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) und rechtfertigen keine zusätzlichen Vergleichs-URLs.
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/)
+- [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
+- [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
+<!-- pt:content-discovery:category-products:end -->

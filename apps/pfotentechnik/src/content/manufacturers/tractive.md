@@ -55,3 +55,13 @@ faq:
 ---
 
 Tractive eignet sich besonders für Haushalte, die eine fertige Smartphone-Lösung statt eines separaten Funkempfängers suchen. Der Einstieg in die Auswahl führt über [GPS-Tracker für Hunde und Katzen](/gps-tracker/); konkrete Modelle stehen im [Hundevergleich](/vergleiche/beste-gps-tracker-fuer-hunde/) und [Katzenvergleich](/vergleiche/beste-gps-tracker-fuer-katzen/).
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Tractive
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Tractive CAT 6 Mini](/produkt/tractive-cat-6-mini/)
+- [Tractive DOG 6](/produkt/tractive-dog-6/)
+- [Tractive DOG 6 XL](/produkt/tractive-dog-6-xl/)
+<!-- pt:content-discovery:manufacturer-products:end -->

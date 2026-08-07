@@ -122,3 +122,11 @@ faq:
 ---
 
 IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von IMIPAW
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [IMIPAW 3L Automatic Cat Feeder](/produkt/imipaw-3l-automatic-cat-feeder/)
+<!-- pt:content-discovery:manufacturer-products:end -->

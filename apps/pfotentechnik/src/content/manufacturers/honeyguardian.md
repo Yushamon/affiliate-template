@@ -138,3 +138,13 @@ faq:
 ---
 
 HoneyGuardian entwickelt automatische Futterautomaten für Katzen und Hunde mit Schwerpunkt auf einfacher Bedienung, großen Vorratsbehältern und einem attraktiven Preis-Leistungs-Verhältnis. Das Sortiment umfasst klassische Timer-Modelle sowie WLAN-Futterautomaten für den Alltag.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von HoneyGuardian
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [HoneyGuardian A305D](/produkt/honeyguardian-a305d/)
+- [HoneyGuardian A68 Smart Pet Feeder](/produkt/honeyguardian-a68/)
+- [HoneyGuardian Smart Pet Feeder S305D](/produkt/honeyguardian-smart-pet-feeder-s305d/)
+<!-- pt:content-discovery:manufacturer-products:end -->

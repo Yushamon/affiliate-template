@@ -40,3 +40,12 @@ faq: []
 ## Neakasa bei PfotenTechnik
 
 Die offene Bauform bleibt eine eigene Systementscheidung im [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/).
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Neakasa
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Neakasa M1 Lite](/produkt/neakasa-m1-lite/)
+- [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
+<!-- pt:content-discovery:manufacturer-products:end -->

@@ -40,3 +40,11 @@ faq: []
 ## Furbo bei PfotenTechnik
 
 Die Herstellerroute verbindet die dokumentierte Interaktionskamera mit dem [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/), ohne Nanny-Funktionen als eigenen Verhaltenstest darzustellen.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Furbo
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
+<!-- pt:content-discovery:manufacturer-products:end -->

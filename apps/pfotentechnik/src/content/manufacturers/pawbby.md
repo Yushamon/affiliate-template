@@ -119,3 +119,11 @@ faq:
 ---
 
 PAWBBY entwickelt smarte Haustierprodukte und gehört zum Xiaomi-Ökosystem. Die Marke konzentriert sich auf moderne, preisgünstige Lösungen für den Alltag und richtet sich insbesondere an Nutzer, die bereits Mi Home oder andere Xiaomi-Produkte verwenden.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von PAWBBY
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [PAWBBY Smart Pet Feeder](/produkt/pawbby-smart-pet-feeder/)
+<!-- pt:content-discovery:manufacturer-products:end -->

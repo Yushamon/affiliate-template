@@ -180,3 +180,18 @@ Technische Grundlagen stammen aus offiziellen Systemquellen; Produktwerte sind a
 - [GPS.gov – GPS Accuracy](https://www.gps.gov/gps-accuracy)
 - [Bluetooth SIG – Understanding Bluetooth Range](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/)
 - Offizielle Produkt- und Supportquellen sind auf jeder [Produktseite](/vergleiche/beste-gps-tracker-fuer-hunde/) verlinkt.
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Garmin Alpha T 20](/produkt/garmin-alpha-t-20/)
+- [Garmin Alpha TT 25](/produkt/garmin-alpha-tt-25/)
+- [PAJ PET Finder 4G Mini](/produkt/paj-pet-finder-4g-mini/)
+- [Tractive CAT 6 Mini](/produkt/tractive-cat-6-mini/)
+- [Tractive DOG 6](/produkt/tractive-dog-6/)
+- [Tractive DOG 6 XL](/produkt/tractive-dog-6-xl/)
+- [Weenect XS GPS-Tracker](/produkt/weenect-xs/)
+- [Weenect XT GPS-Tracker](/produkt/weenect-xt/)
+<!-- pt:content-discovery:category-products:end -->

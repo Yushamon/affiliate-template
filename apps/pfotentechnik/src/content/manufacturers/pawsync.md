@@ -62,3 +62,11 @@ faq: []
 ## PawSync bei PfotenTechnik
 
 Der gepflegte PawSync-Bestand umfasst derzeit den Smart Pet Feeder. Die Herstellerseite stellt die konsistente Verbindung zwischen Produktdaten, Vergleichen und Herstellerübersicht her.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von PawSync
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [PawSync Smart Pet Feeder](/produkt/pawsync-smart-pet-feeder/)
+<!-- pt:content-discovery:manufacturer-products:end -->

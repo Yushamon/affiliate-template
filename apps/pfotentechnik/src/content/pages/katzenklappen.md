@@ -157,3 +157,16 @@ Kontrolliere nach den ersten Tagen:
 
 Nicht jede Herstellerangabe beantwortet Langzeitfragen wie Verschleiß, Geräuschentwicklung oder Haltbarkeit der Mechanik. Diese Punkte sollten transparent von den belegten Herstellerdaten getrennt bleiben.
 
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [OnlyCat Mikrochip Katzenklappe](/produkt/onlycat-mikrochip-katzenklappe/)
+- [PetSafe Mikrochip Katzenklappe](/produkt/petsafe-mikrochip-katzenklappe/)
+- [petWALK Medium Tiertür](/produkt/petwalk-medium-tiertuer/)
+- [SureFlap DualScan Mikrochip Katzenklappe](/produkt/sureflap-dualscan-mikrochip-katzenklappe/)
+- [SureFlap Mikrochip Katzenklappe](/produkt/sureflap-mikrochip-katzenklappe/)
+- [SureFlap Mikrochip Katzenklappe Connect](/produkt/sureflap-mikrochip-katzenklappe-connect/)
+- [ZeroMOUSE 2.0](/produkt/zeromouse-2-0/)
+<!-- pt:content-discovery:category-products:end -->

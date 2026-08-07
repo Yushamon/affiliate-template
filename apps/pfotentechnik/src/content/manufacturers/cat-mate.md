@@ -151,3 +151,15 @@ faq:
 ---
 
 Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Cat Mate
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Cat Mate C200](/produkt/cat-mate-c200/)
+- [Cat Mate C300](/produkt/cat-mate-c300/)
+- [Cat Mate C500](/produkt/cat-mate-c500/)
+- [Cat Mate Pet Fountain 335](/produkt/cat-mate-335-pet-fountain/)
+- [Cat Mate Shell Pet Fountain](/produkt/cat-mate-shell-fountain/)
+<!-- pt:content-discovery:manufacturer-products:end -->

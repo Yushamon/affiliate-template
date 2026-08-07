@@ -422,3 +422,36 @@ Verwendete Primär- und Behördenquellen für Datenschutz und IoT-Sicherheit:
 - [Europäische Kommission – Grundsatz der Datenminimierung](https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/principles-gdpr/how-much-data-can-be-collected_en)
 - [European Data Protection Board – Privacy by Design and by Default](https://www.edpb.europa.eu/topics/ai-and-technology/privacy-by-design-and-by-default_en)
 - [BSI – Smart Home sicher einrichten und Updates prüfen](https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Internet-der-Dinge-Smart-leben/Smart-Home/smart-home_node.html)
+
+<!-- pt:content-discovery:manufacturer-directory:start -->
+## Herstellerseiten im Überblick
+
+Die Herstellerseiten bündeln Produktfamilien, dokumentierte Systemunterschiede und die jeweils gepflegten Produktseiten.
+
+- [Aqara](/hersteller/aqara/)
+- [Cat Mate](/hersteller/cat-mate/)
+- [Catit](/hersteller/catit/)
+- [Devoko](/hersteller/devoko/)
+- [Enabot](/hersteller/enabot/)
+- [Furbo](/hersteller/furbo/)
+- [Garmin](/hersteller/garmin/)
+- [HoneyGuardian](/hersteller/honeyguardian/)
+- [IMIPAW](/hersteller/imipaw/)
+- [Neakasa](/hersteller/neakasa/)
+- [oneisall](/hersteller/oneisall/)
+- [OnlyCat](/hersteller/onlycat/)
+- [PAJ GPS](/hersteller/paj-gps/)
+- [PAWBBY](/hersteller/pawbby/)
+- [PawSync](/hersteller/pawsync/)
+- [PETKIT](/hersteller/petkit/)
+- [PETLIBRO](/hersteller/petlibro/)
+- [PetSafe](/hersteller/petsafe/)
+- [petWALK](/hersteller/petwalk/)
+- [SureFeed](/hersteller/surefeed/)
+- [Tractive](/hersteller/tractive/)
+- [Weenect](/hersteller/weenect/)
+- [Whisker](/hersteller/whisker/)
+- [WOPET](/hersteller/wopet/)
+- [Xiaomi](/hersteller/xiaomi/)
+- [ZeroMOUSE](/hersteller/zeromouse/)
+<!-- pt:content-discovery:manufacturer-directory:end -->

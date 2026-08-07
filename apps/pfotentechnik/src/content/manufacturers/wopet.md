@@ -155,3 +155,14 @@ faq:
 ---
 
 WOPET entwickelt automatische Futterautomaten und weitere smarte Haustierprodukte mit einem klaren Fokus auf ein attraktives Preis-Leistungs-Verhältnis. Die Marke bietet sowohl einfache Offline-Modelle als auch WLAN-Futterautomaten mit Kamera und App-Steuerung und zählt weltweit zu den größten Anbietern in diesem Segment.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von WOPET
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [WOPET Cube Air WiFi Pet Feeder CA10](/produkt/wopet-cube-air-ca10/)
+- [WOPET Heritage View Camera Feeder](/produkt/wopet-heritage-view-camera-feeder/)
+- [WOPET Patrol F07 Pro](/produkt/wopet-patrol-f07-pro/)
+- [WOPET Pioneer F01 Plus](/produkt/wopet-pioneer-f01-plus/)
+<!-- pt:content-discovery:manufacturer-products:end -->

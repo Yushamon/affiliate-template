@@ -62,3 +62,11 @@ faq: []
 ## Aqara bei PfotenTechnik
 
 Der gepflegte Aqara-Bestand umfasst derzeit den Smart Pet Feeder C1. Die Herstellerseite dient deshalb vor allem als Zuordnungspunkt für Produkt-, Vergleichs- und Herstellerdaten.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Aqara
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Aqara Smart Pet Feeder C1](/produkt/aqara-smart-pet-feeder-c1/)
+<!-- pt:content-discovery:manufacturer-products:end -->

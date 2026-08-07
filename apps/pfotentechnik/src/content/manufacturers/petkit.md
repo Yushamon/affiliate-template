@@ -174,3 +174,19 @@ PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik.
 ## Wichtige PETKIT-Modelle im Detail
 
 Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) kombiniert Trockenfutter-Zeitpläne mit Kamera und Zwei-Wege-Audio. Der [YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) ergänzt zwei getrennte Vorräte, aber keine physische Tiertrennung. Bei Trinksystemen ist der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) die spezialisierte Lösung mit getrenntem Frisch- und Abwasser sowie Kamera-Auswertung.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von PETKIT
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [PETKIT Eversweet 3 Pro UVC](/produkt/petkit-eversweet-3-pro-uvc/)
+- [PETKIT Eversweet 5 Mini](/produkt/petkit-eversweet-5-mini/)
+- [PETKIT Eversweet Max 2 UVC](/produkt/petkit-eversweet-max-2-uvc/)
+- [PETKIT Eversweet Max Cordless](/produkt/petkit-eversweet-max-cordless/)
+- [PETKIT Eversweet Solo 2](/produkt/petkit-eversweet-solo-2-fountain/)
+- [PETKIT Eversweet Solo SE](/produkt/petkit-eversweet-solo-se/)
+- [PETKIT Fresh Element Infinity](/produkt/petkit-fresh-element-infinity/)
+- [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/)
+- [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
+<!-- pt:content-discovery:manufacturer-products:end -->

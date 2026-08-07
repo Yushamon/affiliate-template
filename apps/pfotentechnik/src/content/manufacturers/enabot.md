@@ -40,3 +40,11 @@ faq: []
 ## Enabot bei PfotenTechnik
 
 EBO Air 2 bleibt eine klar abgegrenzte mobile Alternative im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Enabot
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
+<!-- pt:content-discovery:manufacturer-products:end -->

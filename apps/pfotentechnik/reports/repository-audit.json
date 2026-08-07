@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generatedAt": "2026-08-07T17:58:34.495Z",
+    "generatedAt": "2026-08-07T23:46:09.881Z",
     "countsByCollection": {
       "pages": 82,
       "products": 82,
-      "manufacturers": 25,
+      "manufacturers": 26,
       "comparisons": 28
     },
     "categoryCounts": {
@@ -30,254 +30,14 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 239,
+    "routes": 240,
     "findings": {
       "error": 0,
-      "warning": 49,
+      "warning": 10,
       "info": 54
     }
   },
   "findings": [
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/",
-      "file": "src/content/manufacturers/aqara.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/enabot/",
-      "file": "src/content/manufacturers/enabot.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/furbo/",
-      "file": "src/content/manufacturers/furbo.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/neakasa/",
-      "file": "src/content/manufacturers/neakasa.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/",
-      "file": "src/content/manufacturers/pawsync.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/whisker/",
-      "file": "src/content/manufacturers/whisker.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/",
-      "file": "src/content/manufacturers/zeromouse.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/aqara-smart-pet-feeder-c1/",
-      "file": "src/content/products/aqara-smart-pet-feeder-c1.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-335-pet-fountain/",
-      "file": "src/content/products/cat-mate-335-pet-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c200/",
-      "file": "src/content/products/cat-mate-c200.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c300/",
-      "file": "src/content/products/cat-mate-c300.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-shell-fountain/",
-      "file": "src/content/products/cat-mate-shell-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/catit-pixi-smart-6-meal-feeder/",
-      "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/catit-pixi-vision-smart-feeder/",
-      "file": "src/content/products/catit-pixi-vision-smart-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/garmin-alpha-tt-25/",
-      "file": "src/content/products/garmin-alpha-tt-25.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-a305d/",
-      "file": "src/content/products/honeyguardian-a305d.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-a68/",
-      "file": "src/content/products/honeyguardian-a68.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-smart-pet-feeder-s305d/",
-      "file": "src/content/products/honeyguardian-smart-pet-feeder-s305d.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/imipaw-3l-automatic-cat-feeder/",
-      "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-2-2l-cordless-fountain/",
-      "file": "src/content/products/oneisall-2-2l-cordless-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-2-in-1-feeder-water/",
-      "file": "src/content/products/oneisall-2-in-1-feeder-water.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-3-2l-cordless-fountain/",
-      "file": "src/content/products/oneisall-3-2l-cordless-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-3-5l-cordless-fountain/",
-      "file": "src/content/products/oneisall-3-5l-cordless-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-5l-automatic-cat-feeder/",
-      "file": "src/content/products/oneisall-5l-automatic-cat-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/pawbby-smart-pet-feeder/",
-      "file": "src/content/products/pawbby-smart-pet-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/pawsync-smart-pet-feeder/",
-      "file": "src/content/products/pawsync-smart-pet-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-5-mini/",
-      "file": "src/content/products/petkit-eversweet-5-mini.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-max-2-uvc/",
-      "file": "src/content/products/petkit-eversweet-max-2-uvc.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-max-cordless/",
-      "file": "src/content/products/petkit-eversweet-max-cordless.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-2-fountain/",
-      "file": "src/content/products/petkit-eversweet-solo-2-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-se/",
-      "file": "src/content/products/petkit-eversweet-solo-se.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/",
-      "file": "src/content/products/petkit-fresh-element-infinity.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-capsule-dog-fountain/",
-      "file": "src/content/products/petlibro-capsule-dog-fountain.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-freshfeed-refrigerated-feeder/",
-      "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-healthy-pet-simply-feed/",
-      "file": "src/content/products/petsafe-healthy-pet-simply-feed.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-cube-air-ca10/",
-      "file": "src/content/products/wopet-cube-air-ca10.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-heritage-view-camera-feeder/",
-      "file": "src/content/products/wopet-heritage-view-camera-feeder.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-patrol-f07-pro/",
-      "file": "src/content/products/wopet-patrol-f07-pro.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-pioneer-f01-plus/",
-      "file": "src/content/products/wopet-pioneer-f01-plus.md"
-    },
-    {
-      "severity": "warning",
-      "area": "internal-linking",
-      "message": "Verwaister Inhalt ohne erkannten internen Link: /produkt/xiaomi-smart-pet-fountain-2/",
-      "file": "src/content/products/xiaomi-smart-pet-fountain-2.md"
-    },
     {
       "severity": "warning",
       "area": "maintainability",
@@ -307,6 +67,12 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1079 Zeilen",
       "file": "src/content/pages/katze-trinkt-viel.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1010 Zeilen",
+      "file": "src/content/pages/smarte-futterautomaten.md"
     },
     {
       "severity": "warning",

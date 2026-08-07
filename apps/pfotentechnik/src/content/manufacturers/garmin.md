@@ -52,3 +52,12 @@ faq:
 ---
 
 Garmin zeigt, warum „ohne Abo“ nicht automatisch günstiger oder einfacher bedeutet. Der [Vergleich abofreier GPS-Systeme](/vergleiche/gps-tracker-ohne-abo/) stellt Anschaffung, Reichweite und Empfängerpflicht den Mobilfunkmodellen gegenüber.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Garmin
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Garmin Alpha T 20](/produkt/garmin-alpha-t-20/)
+- [Garmin Alpha TT 25](/produkt/garmin-alpha-tt-25/)
+<!-- pt:content-discovery:manufacturer-products:end -->

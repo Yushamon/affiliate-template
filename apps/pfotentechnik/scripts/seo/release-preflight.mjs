@@ -77,6 +77,8 @@ try {
     throw new Error("--skip-build ist im Produktionsmodus unzulässig. Nutze --diagnostic --skip-build.");
   }
 
+  npmScript("Content-Discovery-Link-Vertrag", "seo:discovery:check");
+
   npmScript("Repository- und Umgebungsprüfung", "audit:repository:strict");
   npmScript("Content-Graph und Datenschema", "audit:content-graph");
   npmScript("Produktdaten-Audit", "audit:products:strict");

@@ -963,3 +963,47 @@ Je nach Tier, Aufstellort und gewünschter Ausstattung helfen diese vertiefenden
 - [So bewerten wir Produkte und Empfehlungen](/so-bewerten-wir/)
 
 <!-- internal-linking-5.1 -->
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Aqara Smart Pet Feeder C1](/produkt/aqara-smart-pet-feeder-c1/)
+- [Cat Mate C200](/produkt/cat-mate-c200/)
+- [Cat Mate C300](/produkt/cat-mate-c300/)
+- [Cat Mate C500](/produkt/cat-mate-c500/)
+- [Catit PIXI Smart 6-Meal Feeder](/produkt/catit-pixi-smart-6-meal-feeder/)
+- [Catit PIXI Vision Smart Feeder](/produkt/catit-pixi-vision-smart-feeder/)
+- [HoneyGuardian A305D](/produkt/honeyguardian-a305d/)
+- [HoneyGuardian A68 Smart Pet Feeder](/produkt/honeyguardian-a68/)
+- [HoneyGuardian Smart Pet Feeder S305D](/produkt/honeyguardian-smart-pet-feeder-s305d/)
+- [IMIPAW 3L Automatic Cat Feeder](/produkt/imipaw-3l-automatic-cat-feeder/)
+- [Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser](/produkt/oneisall-2-in-1-feeder-water/)
+- [oneisall 5L Automatic Cat Feeder](/produkt/oneisall-5l-automatic-cat-feeder/)
+- [PAWBBY Smart Pet Feeder](/produkt/pawbby-smart-pet-feeder/)
+- [PawSync Smart Pet Feeder](/produkt/pawsync-smart-pet-feeder/)
+- [PETKIT Fresh Element Infinity](/produkt/petkit-fresh-element-infinity/)
+- [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/)
+- [PETKIT YumShare Dual-Hopper 2](/produkt/petkit-yumshare-dual-hopper/)
+- [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/)
+- [PETLIBRO Air Automatic Feeder](/produkt/petlibro-air-automatic-feeder/)
+- [PETLIBRO Air WiFi Feeder](/produkt/petlibro-air-wifi-feeder/)
+- [PETLIBRO Granary 2 Vision](/produkt/petlibro-granary-2-vision/)
+- [PETLIBRO Granary Camera Feeder](/produkt/petlibro-granary-camera-feeder/)
+- [PETLIBRO Granary WiFi Dual Food Tray Feeder](/produkt/petlibro-granary-dual-feeder/)
+- [PETLIBRO Granary WiFi Feeder](/produkt/petlibro-granary-wifi-feeder/)
+- [PETLIBRO One RFID Smart Feeder](/produkt/petlibro-one-rfid-smart-feeder/)
+- [PETLIBRO Polar Wet Food Feeder](/produkt/petlibro-polar-wet-food-feeder/)
+- [PETLIBRO Space Smart Feeder](/produkt/petlibro-space-smart-feeder/)
+- [PetSafe FreshFeed Refrigerated Pet Feeder](/produkt/petsafe-freshfeed-refrigerated-feeder/)
+- [PetSafe Healthy Pet Simply Feed](/produkt/petsafe-healthy-pet-simply-feed/)
+- [PetSafe Smart Feed 2.0](/produkt/petsafe-smart-feed-2/)
+- [SureFeed Microchip Pet Feeder](/produkt/surefeed-microchip-pet-feeder/)
+- [SureFeed Microchip Pet Feeder Connect](/produkt/surefeed-microchip-pet-feeder-connect/)
+- [WOPET Cube Air WiFi Pet Feeder CA10](/produkt/wopet-cube-air-ca10/)
+- [WOPET Heritage View Camera Feeder](/produkt/wopet-heritage-view-camera-feeder/)
+- [WOPET Patrol F07 Pro](/produkt/wopet-patrol-f07-pro/)
+- [WOPET Pioneer F01 Plus](/produkt/wopet-pioneer-f01-plus/)
+- [Xiaomi Smart Pet Food Feeder 2](/produkt/xiaomi-smart-pet-food-feeder-2/)
+<!-- pt:content-discovery:category-products:end -->

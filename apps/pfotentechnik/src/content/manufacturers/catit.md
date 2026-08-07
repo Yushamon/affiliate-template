@@ -96,3 +96,12 @@ faq:
 ---
 
 Catit deckt verschiedene Aufgaben in Katzenhaushalten ab. Entscheidend ist weniger die Marke allein als die konkrete Technik des jeweiligen Modells: Futterart, Kühlung, lokale Bedienung, App-Abhängigkeit und Reinigungsaufwand.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von Catit
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [Catit PIXI Smart 6-Meal Feeder](/produkt/catit-pixi-smart-6-meal-feeder/)
+- [Catit PIXI Vision Smart Feeder](/produkt/catit-pixi-vision-smart-feeder/)
+<!-- pt:content-discovery:manufacturer-products:end -->

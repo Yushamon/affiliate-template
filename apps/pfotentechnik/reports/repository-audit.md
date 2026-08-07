@@ -1,68 +1,29 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-07T17:58:34.495Z
+Erstellt: 2026-08-07T23:46:09.881Z
 
 ## Zusammenfassung
 
-- Routen: 239
+- Routen: 240
 - Fehler: 0
-- Warnungen: 49
+- Warnungen: 10
 - Hinweise: 54
 
 ## Content-Bestand
 
 - pages: 82
 - products: 82
-- manufacturers: 25
+- manufacturers: 26
 - comparisons: 28
 
 ## Befunde
 
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/aqara/ (`src/content/manufacturers/aqara.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/enabot/ (`src/content/manufacturers/enabot.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/furbo/ (`src/content/manufacturers/furbo.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/neakasa/ (`src/content/manufacturers/neakasa.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/pawsync/ (`src/content/manufacturers/pawsync.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/whisker/ (`src/content/manufacturers/whisker.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hersteller/zeromouse/ (`src/content/manufacturers/zeromouse.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/aqara-smart-pet-feeder-c1/ (`src/content/products/aqara-smart-pet-feeder-c1.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-335-pet-fountain/ (`src/content/products/cat-mate-335-pet-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c200/ (`src/content/products/cat-mate-c200.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-c300/ (`src/content/products/cat-mate-c300.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/cat-mate-shell-fountain/ (`src/content/products/cat-mate-shell-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/catit-pixi-smart-6-meal-feeder/ (`src/content/products/catit-pixi-smart-6-meal-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/catit-pixi-vision-smart-feeder/ (`src/content/products/catit-pixi-vision-smart-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/garmin-alpha-tt-25/ (`src/content/products/garmin-alpha-tt-25.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-a305d/ (`src/content/products/honeyguardian-a305d.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-a68/ (`src/content/products/honeyguardian-a68.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/honeyguardian-smart-pet-feeder-s305d/ (`src/content/products/honeyguardian-smart-pet-feeder-s305d.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/imipaw-3l-automatic-cat-feeder/ (`src/content/products/imipaw-3l-automatic-cat-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-2-2l-cordless-fountain/ (`src/content/products/oneisall-2-2l-cordless-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-2-in-1-feeder-water/ (`src/content/products/oneisall-2-in-1-feeder-water.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-3-2l-cordless-fountain/ (`src/content/products/oneisall-3-2l-cordless-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-3-5l-cordless-fountain/ (`src/content/products/oneisall-3-5l-cordless-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/oneisall-5l-automatic-cat-feeder/ (`src/content/products/oneisall-5l-automatic-cat-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/pawbby-smart-pet-feeder/ (`src/content/products/pawbby-smart-pet-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/pawsync-smart-pet-feeder/ (`src/content/products/pawsync-smart-pet-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-5-mini/ (`src/content/products/petkit-eversweet-5-mini.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-max-2-uvc/ (`src/content/products/petkit-eversweet-max-2-uvc.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-max-cordless/ (`src/content/products/petkit-eversweet-max-cordless.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-2-fountain/ (`src/content/products/petkit-eversweet-solo-2-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-eversweet-solo-se/ (`src/content/products/petkit-eversweet-solo-se.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petkit-fresh-element-infinity/ (`src/content/products/petkit-fresh-element-infinity.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petlibro-capsule-dog-fountain/ (`src/content/products/petlibro-capsule-dog-fountain.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-freshfeed-refrigerated-feeder/ (`src/content/products/petsafe-freshfeed-refrigerated-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/petsafe-healthy-pet-simply-feed/ (`src/content/products/petsafe-healthy-pet-simply-feed.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-cube-air-ca10/ (`src/content/products/wopet-cube-air-ca10.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-heritage-view-camera-feeder/ (`src/content/products/wopet-heritage-view-camera-feeder.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-patrol-f07-pro/ (`src/content/products/wopet-patrol-f07-pro.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/wopet-pioneer-f01-plus/ (`src/content/products/wopet-pioneer-f01-plus.md`)
-- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /produkt/xiaomi-smart-pet-fountain-2/ (`src/content/products/xiaomi-smart-pet-fountain-2.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
 - **WARNING · maintainability**: Sehr große Datei mit 1012 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)
+- **WARNING · maintainability**: Sehr große Datei mit 1010 Zeilen (`src/content/pages/smarte-futterautomaten.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)

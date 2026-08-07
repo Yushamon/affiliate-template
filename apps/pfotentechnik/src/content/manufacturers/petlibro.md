@@ -344,3 +344,15 @@ Die Grenzen liegen in der Modellvielfalt, teils ähnlichen Produktnamen und mode
 ## Methodik
 
 Die Herstellerseite fasst offizielle PETLIBRO-Unterlagen und die strukturierten PfotenTechnik-Produktdaten zusammen. Sie ist kein pauschaler Langzeittest der gesamten Marke. Unterschiede zwischen Modellgenerationen, regionalen Produktseiten und Zubehörvarianten werden nicht verallgemeinert.
+
+<!-- pt:content-discovery:manufacturer-products:start -->
+## Weitere Produkte von PETLIBRO
+
+Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
+
+- [PETLIBRO Capsule Dog Fountain](/produkt/petlibro-capsule-dog-fountain/)
+- [PETLIBRO Dockstream 2 Smart Cordless](/produkt/petlibro-dockstream-2-smart-cordless/)
+- [PETLIBRO Dockstream Cordless](/produkt/petlibro-dockstream-cordless/)
+- [PETLIBRO Dockstream RFID Smart](/produkt/petlibro-dockstream-rfid-smart/)
+- [PETLIBRO Scout Smart Camera](/produkt/petlibro-scout-smart-camera/)
+<!-- pt:content-discovery:manufacturer-products:end -->
