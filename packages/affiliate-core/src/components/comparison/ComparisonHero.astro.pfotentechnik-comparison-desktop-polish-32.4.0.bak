@@ -16,9 +16,9 @@ const { eyebrow, title, image, facts = [], filters = [], productCount = 0 } = As
 const productFact = facts.find((fact) => /model|produkt/i.test(fact.label));
 const dateFact = facts.find((fact) => /datenstand|stand|aktuell/i.test(fact.label));
 const visibleFacts = [
-  productFact ? { label: `${productFact.value} Modelle`, value: "im Vergleich", icon: "box", glyph: "▦" } : { label: `${productCount} Modelle`, value: "im Vergleich", icon: "box", glyph: "▦" },
-  { label: "Redaktionell", value: "bewertet", icon: "check", glyph: "✓" },
-  dateFact ? { label: "Datenstand", value: dateFact.value, icon: "calendar", glyph: "◷" } : null
+  productFact ? { label: `${productFact.value} Modelle`, value: "im Vergleich", icon: "box" } : { label: `${productCount} Modelle`, value: "im Vergleich", icon: "box" },
+  { label: "Redaktionell", value: "bewertet", icon: "check" },
+  dateFact ? { label: "Datenstand", value: dateFact.value, icon: "calendar" } : null
 ].filter(Boolean);
 ---
 
@@ -36,7 +36,7 @@ const visibleFacts = [
   <dl class="comparison-cover__facts" aria-label="Vergleich auf einen Blick">
     {visibleFacts.map((fact) => fact && (
       <div class="comparison-cover__fact">
-        <span class={`comparison-cover__fact-icon comparison-cover__fact-icon--${fact.icon}`} aria-hidden="true">{fact.glyph}</span>
+        <span class={`comparison-cover__fact-icon comparison-cover__fact-icon--${fact.icon}`} aria-hidden="true"></span>
         <span><dt>{fact.label}</dt><dd>{fact.value}</dd></span>
       </div>
     ))}

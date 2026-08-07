@@ -1,1 +1,0 @@
-export { quickWinsRule } from "./quickWins"; export { ctrRule } from "./ctr"; export { rankingLossRule } from "./rankingLoss"; export { internalLinksRule } from "./internalLinks"; export { freshnessRule } from "./freshness"; export { thinContentRule } from "./thinContent";

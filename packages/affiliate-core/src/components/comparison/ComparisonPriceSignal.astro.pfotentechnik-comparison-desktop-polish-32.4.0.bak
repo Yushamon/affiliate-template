@@ -66,25 +66,12 @@ const hasSignal = Boolean(display.amountLabel || display.url);
   }
 
   .comparison-price-signal--standard {
-    grid-template-columns: minmax(0, 1fr);
-    gap: .35rem;
     padding: 1rem 0 .25rem;
   }
 
-  .comparison-price-signal--standard .comparison-price-signal__label {
-    display: block;
-    max-width: none;
-  }
-
   .comparison-price-signal--standard .comparison-price-signal__amount {
-    display: block;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    font-size: clamp(1.65rem, 3.25vw, 2rem);
+    font-size: clamp(1.65rem, 5vw, 2rem);
     letter-spacing: -.025em;
-    line-height: 1.08;
-    text-align: left;
-    white-space: normal;
   }
 
   @media (max-width: 22rem) {
