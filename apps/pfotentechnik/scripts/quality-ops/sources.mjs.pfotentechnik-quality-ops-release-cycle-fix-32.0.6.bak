@@ -52,9 +52,6 @@ export function isOperationalFinding(source, key, item) {
   const severity = normalized(record.effectiveSeverity || record.severity || record.level || severityForKey(key));
   const code = normalized(record.code || record.type || key);
 
-  // Der Release-Preflight führt quality-ops selbst aus. Sein vorheriger Report
-  // darf daher nicht als operativer Befund zurück in dasselbe Gate laufen.
-  if (source.id === "release-preflight") return false;
   if (source.id === "visual-qa") return severity === "severe" || severity === "critical";
   if (source.id === "decision-journeys") return normalized(key) === "technical" || severity === "error" || severity === "critical";
   if (source.id === "repository-audit") {

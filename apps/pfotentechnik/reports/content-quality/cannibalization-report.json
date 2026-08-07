@@ -234,7 +234,7 @@
       "automatische-katzentoiletten": 5,
       "futterautomaten": 82,
       "gps-tracker": 26,
-      "haustierkameras": 5,
+      "haustierkameras": 4,
       "hersteller": 20,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
@@ -244,7 +244,7 @@
       "katzenhaltung": 1,
       "katzenklappen": 13,
       "katzenverhalten": 1,
-      "smarte-haustiertechnik": 13,
+      "smarte-haustiertechnik": 14,
       "tierbeschaeftigung": 1,
       "tierernaehrung": 1,
       "trinkbrunnen": 49
@@ -261,11 +261,12 @@
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 227,
+      "IMPROVE": 1,
+      "KEEP": 226,
       "NOINDEX": 90
     },
     "errors": 0,
-    "warnings": 0,
+    "warnings": 1,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
     "intentConflicts": 0,
@@ -276,7 +277,17 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [],
+  "findings": [
+    {
+      "id": "content_h1_count_invalid|/haustierkameras/",
+      "code": "CONTENT_H1_COUNT_INVALID",
+      "severity": "warning",
+      "routes": [
+        "/haustierkameras/"
+      ],
+      "evidence": "Gerenderte H1-Anzahl: 2."
+    }
+  ],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",

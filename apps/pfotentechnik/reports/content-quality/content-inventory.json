@@ -30,7 +30,7 @@
       "automatische-katzentoiletten": 5,
       "futterautomaten": 82,
       "gps-tracker": 26,
-      "haustierkameras": 5,
+      "haustierkameras": 4,
       "hersteller": 20,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
@@ -40,7 +40,7 @@
       "katzenhaltung": 1,
       "katzenklappen": 13,
       "katzenverhalten": 1,
-      "smarte-haustiertechnik": 13,
+      "smarte-haustiertechnik": 14,
       "tierbeschaeftigung": 1,
       "tierernaehrung": 1,
       "trinkbrunnen": 49
@@ -57,11 +57,12 @@
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 227,
+      "IMPROVE": 1,
+      "KEEP": 226,
       "NOINDEX": 90
     },
     "errors": 0,
-    "warnings": 0,
+    "warnings": 1,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
     "intentConflicts": 0,
@@ -1318,7 +1319,7 @@
       "mainEntity": "Produktpflege",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 80,
-      "wordCount": 7075,
+      "wordCount": 7100,
       "headingCount": 2,
       "headings": [
         "Produktpflege",
@@ -1351,8 +1352,6 @@
       ],
       "recommendationTypes": [],
       "relatedProducts": [
-        "/produkt/enabot-ebo-air-2/",
-        "/produkt/furbo-360-hundekamera/",
         "/produkt/litter-robot-5-pro/",
         "/produkt/neakasa-m1-plus/",
         "/produkt/petkit-purobot-max-pro-2/",
@@ -1367,8 +1366,8 @@
         "/produkt/petkit-eversweet-max-2-uvc/",
         "/produkt/petkit-eversweet-max-cordless/",
         "/produkt/weenect-xt/",
-        "/produkt/petkit-fresh-element-infinity/",
         "/produkt/petlibro-air-wifi-feeder/",
+        "/produkt/petkit-fresh-element-infinity/",
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/petlibro-glacier-ultrafiltration/",
         "/produkt/wopet-cube-air-ca10/",
@@ -1384,15 +1383,19 @@
         "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/petsafe-freshfeed-refrigerated-feeder/",
         "/produkt/petsafe-smart-feed-2/",
-        "/produkt/weenect-xs/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
+        "/produkt/weenect-xs/",
         "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+        "/produkt/onlycat-mikrochip-katzenklappe/",
+        "/produkt/petlibro-capsule-dog-fountain/",
         "/produkt/aqara-smart-pet-feeder-c1/",
         "/produkt/cat-mate-c200/",
         "/produkt/cat-mate-c300/",
         "/produkt/cat-mate-c500/",
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/catit-pixi-smart-6-meal-feeder/",
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-360-hundekamera/",
         "/produkt/garmin-alpha-t-20/",
         "/produkt/honeyguardian-a68/",
         "/produkt/oneisall-2-in-1-feeder-water/",
@@ -1401,7 +1404,6 @@
         "/produkt/oneisall-3-5l-cordless-fountain/",
         "/produkt/oneisall-5l-automatic-cat-feeder/",
         "/produkt/oneisall-7l-dog-water-fountain/",
-        "/produkt/onlycat-mikrochip-katzenklappe/",
         "/produkt/paj-pet-finder-4g-mini/",
         "/produkt/petkit-eversweet-3-pro-uvc/",
         "/produkt/petkit-eversweet-solo-2-fountain/",
@@ -1409,7 +1411,6 @@
         "/produkt/petkit-yumshare-dual-hopper/",
         "/produkt/petkit-yumshare-solo-2/",
         "/produkt/petlibro-air-automatic-feeder/",
-        "/produkt/petlibro-capsule-dog-fountain/",
         "/produkt/petlibro-dockstream-2-smart/",
         "/produkt/petlibro-dockstream-2-smart-cordless/",
         "/produkt/petlibro-dockstream-cordless/",
@@ -10759,7 +10760,7 @@
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [],
       "mainEntity": "Automatische Katzentoiletten sicher auswählen",
-      "internalIncomingLinks": 16,
+      "internalIncomingLinks": 17,
       "internalOutgoingLinks": 11,
       "wordCount": 599,
       "headingCount": 20,
@@ -11714,7 +11715,7 @@
       "mainEntity": "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
       "internalIncomingLinks": 5,
       "internalOutgoingLinks": 24,
-      "wordCount": 2412,
+      "wordCount": 2413,
       "headingCount": 48,
       "headings": [
         "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
@@ -11761,8 +11762,8 @@
         "Im Mehrtierhaushalt bleibt die Aufnahme unbekannt",
         "PETKIT YumShare Dual-Hopper 2",
         "Beste Futterautomaten für Katzen",
-        "Haustierkameras",
         "GPS-Tracker für Hunde und Katzen",
+        "Smarte Haustiertechnik",
         "Wie groß sollte ein Futterautomat sein?",
         "Futterautomat richtig einstellen"
       ],
@@ -11969,11 +11970,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "GPS-Tracker für Hunde und Katzen"
         },
         {
           "level": 3,
-          "text": "GPS-Tracker für Hunde und Katzen"
+          "text": "Smarte Haustiertechnik"
         },
         {
           "level": 3,
@@ -13888,7 +13889,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat richtig reinigen: Anleitung, Intervalle und Fehlerdiagnose",
-      "internalIncomingLinks": 40,
+      "internalIncomingLinks": 41,
       "internalOutgoingLinks": 18,
       "wordCount": 6197,
       "headingCount": 172,
@@ -16198,7 +16199,7 @@
         "informational"
       ],
       "mainEntity": "GPS-Tracker für Hunde und Katzen",
-      "internalIncomingLinks": 47,
+      "internalIncomingLinks": 52,
       "internalOutgoingLinks": 25,
       "wordCount": 1851,
       "headingCount": 40,
@@ -16477,42 +16478,47 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/pages/haustierkameras.md",
       "pageType": "editorial-page",
-      "title": "Haustierkameras: Auswahl, Datenschutz und Kosten",
+      "title": "Haustierkameras sinnvoll auswählen",
       "h1": "Haustierkameras sinnvoll auswählen",
-      "h1Count": 1,
-      "metaDescription": "Feste Kamera, Interaktionskamera oder mobiler Roboter nach Aufgabe, Datenschutz und Folgekosten auswählen.",
+      "h1Count": 2,
+      "metaDescription": "Umfassender Ratgeber für Haustierkameras mit Kaufberatung, Datenschutz, Kosten und Entscheidungshilfen.",
       "canonicalRoute": "/haustierkameras/",
       "indexable": true,
       "inSitemap": true,
-      "cluster": "haustierkameras",
+      "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Haustierkameras sinnvoll auswählen",
-      "internalIncomingLinks": 16,
-      "internalOutgoingLinks": 10,
-      "wordCount": 650,
-      "headingCount": 21,
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 9,
+      "wordCount": 575,
+      "headingCount": 26,
       "headings": [
         "Haustierkameras sinnvoll auswählen",
-        "Das Wichtigste in Kürze",
-        "Passt diese Auswahl zu dir?",
-        "Kurze Checkliste",
-        "Typische Fehler",
-        "Erst die Aufgabe, dann die Kamera",
-        "Drei Produktklassen",
-        "Datenschutz vor dem Einschalten",
-        "24-Monats-Kosten selbst rechnen",
-        "Wirkung nicht überinterpretieren",
-        "Entscheidungsbaum",
-        "Was ist jetzt sinnvoll?",
-        "Deine nächsten Schritte",
+        "Haustierkameras sinnvoll auswählen",
+        "Welche Haustierkamera passt zu Ihrem Alltag?",
+        "Kaufberatung",
+        "Wichtige Funktionen",
+        "Datenschutz",
+        "Gesamtkosten richtig vergleichen",
+        "Typische Fehlkäufe",
+        "Entscheidungshilfe",
+        "Häufige Fragen",
+        "Fazit",
+        "Was jetzt sinnvoll ist",
         "Das könnte dich auch interessieren",
-        "Geeignet für",
-        "Eher nicht geeignet für",
-        "SureFeed Microchip Pet Feeder Connect",
-        "Beste Futterautomaten für Katzen",
-        "Smarte Haustiertechnik",
-        "Trinkbrunnen für Hunde",
-        "Futterautomat gegen Schlingen"
+        "Klassische Innenkamera",
+        "Interaktionskamera",
+        "Mobiler Kameraroboter",
+        "Brauche ich eine Kamera mit Abo?",
+        "Reicht Full HD?",
+        "Sind Haustierkameras auch für Katzen geeignet?",
+        "Kann eine Kamera Trennungsstress erkennen?",
+        "Passende Kaufberatung öffnen",
+        "Geeignete Modelle gegenüberstellen",
+        "Technik sicher im Alltag nutzen",
+        "GPS-Tracker für Hunde und Katzen",
+        "Katzentrinkbrunnen ohne Filter",
+        "Beste Trinkbrunnen für Hunde"
       ],
       "structuredData": [
         "Organization",
@@ -16525,14 +16531,14 @@
       "renderedComparisonCount": 0,
       "route": "/haustierkameras/",
       "collection": "pages",
-      "metaTitle": "Haustierkameras: Auswahl, Datenschutz und Kosten",
+      "metaTitle": "Haustierkameras sinnvoll auswählen",
       "canonical": "https://pfotentechnik.de/haustierkameras/",
       "publishedAt": "2026-08-06",
       "updatedAt": "2026-08-06",
       "author": "PfotenTechnik Redaktion",
-      "animal": "both",
+      "animal": "",
       "productCategory": "",
-      "audience": "both",
+      "audience": "pet-owners",
       "character": "informational",
       "linkDepth": 2,
       "headingStructure": [
@@ -16541,52 +16547,48 @@
           "text": "Haustierkameras sinnvoll auswählen"
         },
         {
-          "level": 2,
-          "text": "Das Wichtigste in Kürze"
+          "level": 1,
+          "text": "Haustierkameras sinnvoll auswählen"
         },
         {
           "level": 2,
-          "text": "Passt diese Auswahl zu dir?"
+          "text": "Welche Haustierkamera passt zu Ihrem Alltag?"
         },
         {
           "level": 2,
-          "text": "Kurze Checkliste"
+          "text": "Kaufberatung"
         },
         {
           "level": 2,
-          "text": "Typische Fehler"
+          "text": "Wichtige Funktionen"
         },
         {
           "level": 2,
-          "text": "Erst die Aufgabe, dann die Kamera"
+          "text": "Datenschutz"
         },
         {
           "level": 2,
-          "text": "Drei Produktklassen"
+          "text": "Gesamtkosten richtig vergleichen"
         },
         {
           "level": 2,
-          "text": "Datenschutz vor dem Einschalten"
+          "text": "Typische Fehlkäufe"
         },
         {
           "level": 2,
-          "text": "24-Monats-Kosten selbst rechnen"
+          "text": "Entscheidungshilfe"
         },
         {
           "level": 2,
-          "text": "Wirkung nicht überinterpretieren"
+          "text": "Häufige Fragen"
         },
         {
           "level": 2,
-          "text": "Entscheidungsbaum"
+          "text": "Fazit"
         },
         {
           "level": 2,
-          "text": "Was ist jetzt sinnvoll?"
-        },
-        {
-          "level": 2,
-          "text": "Deine nächsten Schritte"
+          "text": "Was jetzt sinnvoll ist"
         },
         {
           "level": 2,
@@ -16594,51 +16596,69 @@
         },
         {
           "level": 3,
-          "text": "Geeignet für"
+          "text": "Klassische Innenkamera"
         },
         {
           "level": 3,
-          "text": "Eher nicht geeignet für"
+          "text": "Interaktionskamera"
         },
         {
           "level": 3,
-          "text": "SureFeed Microchip Pet Feeder Connect"
+          "text": "Mobiler Kameraroboter"
         },
         {
           "level": 3,
-          "text": "Beste Futterautomaten für Katzen"
+          "text": "Brauche ich eine Kamera mit Abo?"
         },
         {
           "level": 3,
-          "text": "Smarte Haustiertechnik"
+          "text": "Reicht Full HD?"
         },
         {
           "level": 3,
-          "text": "Trinkbrunnen für Hunde"
+          "text": "Sind Haustierkameras auch für Katzen geeignet?"
         },
         {
           "level": 3,
-          "text": "Futterautomat gegen Schlingen"
+          "text": "Kann eine Kamera Trennungsstress erkennen?"
+        },
+        {
+          "level": 3,
+          "text": "Passende Kaufberatung öffnen"
+        },
+        {
+          "level": 3,
+          "text": "Geeignete Modelle gegenüberstellen"
+        },
+        {
+          "level": 3,
+          "text": "Technik sicher im Alltag nutzen"
+        },
+        {
+          "level": 3,
+          "text": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Katzentrinkbrunnen ohne Filter"
+        },
+        {
+          "level": 3,
+          "text": "Beste Trinkbrunnen für Hunde"
         }
       ],
-      "recommendationTypes": [
-        "top-recommendation"
-      ],
-      "relatedProducts": [
-        "/produkt/petlibro-scout-smart-camera/",
-        "/produkt/surefeed-microchip-pet-feeder-connect/"
-      ],
+      "recommendationTypes": [],
+      "relatedProducts": [],
       "relatedComparisons": [
-        "/vergleiche/beste-haustierkameras/",
-        "/vergleiche/beste-futterautomaten-fuer-katzen/",
-        "/vergleiche/futterautomat-gegen-schlingen/"
+        "/vergleiche/",
+        "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
       ],
       "searchPerformance": null,
       "searchIntent": {
         "primary": "commercial-investigation",
         "secondary": [],
-        "confidence": "high",
-        "source": "contentPlatform"
+        "confidence": "medium",
+        "source": "title-structure"
       },
       "topicOwner": {
         "id": "route:/haustierkameras/",
@@ -16654,7 +16674,7 @@
           "substantive-content",
           "internal-context",
           "structured-data",
-          "table",
+          "faq",
           "decision-support"
         ]
       }
@@ -17551,8 +17571,8 @@
       "secondaryIntents": [],
       "mainEntity": "Enabot",
       "internalIncomingLinks": 2,
-      "internalOutgoingLinks": 11,
-      "wordCount": 380,
+      "internalOutgoingLinks": 10,
+      "wordCount": 388,
       "headingCount": 27,
       "headings": [
         "Enabot",
@@ -17580,8 +17600,8 @@
         "Smarte Futterautomaten für Hunde und Katzen",
         "Furbo",
         "Haustierkameras im Vergleich",
-        "Haustierkameras",
-        "Weenect"
+        "Weenect",
+        "Enabot EBO Air 2"
       ],
       "structuredData": [
         "Organization",
@@ -17707,11 +17727,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Weenect"
         },
         {
           "level": 3,
-          "text": "Weenect"
+          "text": "Enabot EBO Air 2"
         }
       ],
       "recommendationTypes": [],
@@ -17762,7 +17782,7 @@
       "mainEntity": "Furbo",
       "internalIncomingLinks": 2,
       "internalOutgoingLinks": 11,
-      "wordCount": 389,
+      "wordCount": 388,
       "headingCount": 27,
       "headings": [
         "Furbo",
@@ -17790,8 +17810,8 @@
         "Futterautomaten für Hunde",
         "Enabot",
         "Haustierkameras im Vergleich",
-        "Haustierkameras",
-        "Weenect"
+        "Weenect",
+        "Tractive"
       ],
       "structuredData": [
         "Organization",
@@ -17917,11 +17937,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Weenect"
         },
         {
           "level": 3,
-          "text": "Weenect"
+          "text": "Tractive"
         }
       ],
       "recommendationTypes": [],
@@ -20444,7 +20464,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "PETLIBRO",
-      "internalIncomingLinks": 48,
+      "internalIncomingLinks": 47,
       "internalOutgoingLinks": 33,
       "wordCount": 2172,
       "headingCount": 42,
@@ -21488,7 +21508,7 @@
       "cluster": "katzen-und-hundespezifische-hardware",
       "secondaryIntents": [],
       "mainEntity": "Tractive",
-      "internalIncomingLinks": 17,
+      "internalIncomingLinks": 18,
       "internalOutgoingLinks": 15,
       "wordCount": 1013,
       "headingCount": 37,
@@ -23184,7 +23204,7 @@
       "mainEntity": "Hund frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
       "internalIncomingLinks": 9,
       "internalOutgoingLinks": 23,
-      "wordCount": 5568,
+      "wordCount": 5573,
       "headingCount": 93,
       "headings": [
         "Hund frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
@@ -23279,7 +23299,7 @@
         "Katze frisst nicht",
         "Hund hat Durchfall",
         "Wie viele Mahlzeiten braucht ein Hund?",
-        "Haustierkameras"
+        "GPS-Tracker für Hunde und Katzen"
       ],
       "structuredData": [
         "Organization",
@@ -23676,7 +23696,7 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "GPS-Tracker für Hunde und Katzen"
         }
       ],
       "recommendationTypes": [
@@ -27715,7 +27735,7 @@
       "mainEntity": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen",
       "internalIncomingLinks": 4,
       "internalOutgoingLinks": 15,
-      "wordCount": 846,
+      "wordCount": 848,
       "headingCount": 31,
       "headings": [
         "Katzenklappe einbauen: Tür, Glas und Wand richtig planen",
@@ -27748,7 +27768,7 @@
         "Technik sicher im Alltag nutzen",
         "Mikrochip-Katzenklappen im Vergleich",
         "Futterautomat richtig einstellen",
-        "Haustierkameras"
+        "Automatische Katzentoiletten"
       ],
       "structuredData": [
         "Organization",
@@ -27894,7 +27914,7 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Automatische Katzentoiletten"
         }
       ],
       "recommendationTypes": [],
@@ -29183,7 +29203,7 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
-      "internalIncomingLinks": 6,
+      "internalIncomingLinks": 7,
       "internalOutgoingLinks": 15,
       "wordCount": 810,
       "headingCount": 21,
@@ -32040,10 +32060,10 @@
         "transactional-support"
       ],
       "mainEntity": "Enabot EBO Air 2",
-      "internalIncomingLinks": 6,
-      "internalOutgoingLinks": 9,
-      "wordCount": 517,
-      "headingCount": 22,
+      "internalIncomingLinks": 8,
+      "internalOutgoingLinks": 12,
+      "wordCount": 566,
+      "headingCount": 25,
       "headings": [
         "Enabot EBO Air 2",
         "Aktueller Preis",
@@ -32053,20 +32073,23 @@
         "Stärken",
         "Schwächen",
         "Technik ersetzt keine Kontrolle",
+        "Besser passend, nicht nur ähnlich",
         "So ist diese Seite einzuordnen",
         "Passend weiterentscheiden",
         "Passend zum Produkt weiterlesen",
         "Ja, wenn …",
         "Nein, wenn …",
+        "Dann lieber …",
         "Einrichten",
         "Routine starten",
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Furbo 360° Hundekamera",
         "Beste Futterautomaten für Nassfutter",
         "Smarte Futterautomaten für Hunde und Katzen",
-        "Haustierkameras",
-        "Smarte Futterautomaten"
+        "Smarte Futterautomaten",
+        "GPS-Tracker für Hunde und Katzen"
       ],
       "structuredData": [
         "Organization",
@@ -32076,6 +32099,7 @@
         "ListItem",
         "Product",
         "Brand",
+        "Offer",
         "Review",
         "Rating",
         "ItemList"
@@ -32129,6 +32153,10 @@
         },
         {
           "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
           "text": "So ist diese Seite einzuordnen"
         },
         {
@@ -32146,6 +32174,10 @@
         {
           "level": 3,
           "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
         },
         {
           "level": 3,
@@ -32169,6 +32201,10 @@
         },
         {
           "level": 3,
+          "text": "Furbo 360° Hundekamera"
+        },
+        {
+          "level": 3,
           "text": "Beste Futterautomaten für Nassfutter"
         },
         {
@@ -32177,15 +32213,19 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Smarte Futterautomaten"
         },
         {
           "level": 3,
-          "text": "Smarte Futterautomaten"
+          "text": "GPS-Tracker für Hunde und Katzen"
         }
       ],
-      "recommendationTypes": [],
-      "relatedProducts": [],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/furbo-360-hundekamera/"
+      ],
       "relatedComparisons": [
         "/vergleiche/beste-haustierkameras/",
         "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
@@ -32232,10 +32272,10 @@
         "transactional-support"
       ],
       "mainEntity": "Furbo 360° Hundekamera",
-      "internalIncomingLinks": 5,
-      "internalOutgoingLinks": 9,
-      "wordCount": 528,
-      "headingCount": 23,
+      "internalIncomingLinks": 7,
+      "internalOutgoingLinks": 11,
+      "wordCount": 580,
+      "headingCount": 26,
       "headings": [
         "Furbo 360° Hundekamera",
         "Aktueller Preis",
@@ -32246,20 +32286,23 @@
         "Stärken",
         "Schwächen",
         "Technik ersetzt keine Kontrolle",
+        "Besser passend, nicht nur ähnlich",
         "So ist diese Seite einzuordnen",
         "Passend weiterentscheiden",
         "Passend zum Produkt weiterlesen",
         "Ja, wenn …",
         "Nein, wenn …",
+        "Dann lieber …",
         "Einrichten",
         "Routine starten",
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Enabot EBO Air 2",
         "Beste Futterautomaten für Hunde",
         "Futterautomaten für Hunde",
         "Furbo",
-        "Haustierkameras"
+        "Futterautomaten für Hunde"
       ],
       "structuredData": [
         "Organization",
@@ -32269,6 +32312,7 @@
         "ListItem",
         "Product",
         "Brand",
+        "Offer",
         "Review",
         "Rating",
         "ItemList"
@@ -32326,6 +32370,10 @@
         },
         {
           "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
           "text": "So ist diese Seite einzuordnen"
         },
         {
@@ -32343,6 +32391,10 @@
         {
           "level": 3,
           "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
         },
         {
           "level": 3,
@@ -32366,6 +32418,10 @@
         },
         {
           "level": 3,
+          "text": "Enabot EBO Air 2"
+        },
+        {
+          "level": 3,
           "text": "Beste Futterautomaten für Hunde"
         },
         {
@@ -32378,11 +32434,15 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Futterautomaten für Hunde"
         }
       ],
-      "recommendationTypes": [],
-      "relatedProducts": [],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/enabot-ebo-air-2/"
+      ],
       "relatedComparisons": [
         "/vergleiche/beste-haustierkameras/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/"
@@ -42476,10 +42536,10 @@
         "transactional-support"
       ],
       "mainEntity": "PETLIBRO Scout Smart Camera",
-      "internalIncomingLinks": 5,
-      "internalOutgoingLinks": 10,
-      "wordCount": 574,
-      "headingCount": 23,
+      "internalIncomingLinks": 4,
+      "internalOutgoingLinks": 13,
+      "wordCount": 673,
+      "headingCount": 27,
       "headings": [
         "PETLIBRO Scout Smart Camera",
         "Aktueller Preis",
@@ -42490,20 +42550,24 @@
         "Stärken",
         "Schwächen",
         "Technik ersetzt keine Kontrolle",
+        "Besser passend, nicht nur ähnlich",
         "So ist diese Seite einzuordnen",
         "Passend weiterentscheiden",
         "Passend zum Produkt weiterlesen",
         "Ja, wenn …",
         "Nein, wenn …",
+        "Dann lieber …",
         "Einrichten",
         "Routine starten",
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Enabot EBO Air 2",
+        "Furbo 360° Hundekamera",
         "Beste Futterautomaten für Nassfutter",
         "Smarte Haustiertechnik – Der große Ratgeber",
-        "Haustierkameras",
-        "Smarte Futterautomaten"
+        "Smarte Futterautomaten",
+        "GPS-Tracker für Hunde und Katzen"
       ],
       "structuredData": [
         "Organization",
@@ -42570,6 +42634,10 @@
         },
         {
           "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
           "text": "So ist diese Seite einzuordnen"
         },
         {
@@ -42587,6 +42655,10 @@
         {
           "level": 3,
           "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
         },
         {
           "level": 3,
@@ -42610,6 +42682,14 @@
         },
         {
           "level": 3,
+          "text": "Enabot EBO Air 2"
+        },
+        {
+          "level": 3,
+          "text": "Furbo 360° Hundekamera"
+        },
+        {
+          "level": 3,
           "text": "Beste Futterautomaten für Nassfutter"
         },
         {
@@ -42618,15 +42698,20 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Smarte Futterautomaten"
         },
         {
           "level": 3,
-          "text": "Smarte Futterautomaten"
+          "text": "GPS-Tracker für Hunde und Katzen"
         }
       ],
-      "recommendationTypes": [],
-      "relatedProducts": [],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-360-hundekamera/"
+      ],
       "relatedComparisons": [
         "/vergleiche/beste-haustierkameras/",
         "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
@@ -44514,7 +44599,7 @@
         "transactional-support"
       ],
       "mainEntity": "SureFeed Microchip Pet Feeder Connect",
-      "internalIncomingLinks": 19,
+      "internalIncomingLinks": 18,
       "internalOutgoingLinks": 12,
       "wordCount": 892,
       "headingCount": 28,
@@ -48624,7 +48709,7 @@
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Redaktion und Unabhängigkeit",
-      "internalIncomingLinks": 113,
+      "internalIncomingLinks": 114,
       "internalOutgoingLinks": 4,
       "wordCount": 378,
       "headingCount": 8,
@@ -48903,7 +48988,7 @@
       "mainEntity": "Seniorenhunde richtig versorgen",
       "internalIncomingLinks": 1,
       "internalOutgoingLinks": 21,
-      "wordCount": 2771,
+      "wordCount": 2772,
       "headingCount": 35,
       "headings": [
         "Seniorenhunde richtig versorgen",
@@ -48939,8 +49024,8 @@
         "Technik sicher im Alltag nutzen",
         "Hund frisst nicht",
         "Trockenfutter oder Nassfutter für Hunde",
-        "Haustierkameras",
-        "GPS-Tracker für Hunde und Katzen"
+        "GPS-Tracker für Hunde und Katzen",
+        "Smarte Haustiertechnik"
       ],
       "structuredData": [
         "Organization",
@@ -49101,11 +49186,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "GPS-Tracker für Hunde und Katzen"
         },
         {
           "level": 3,
-          "text": "GPS-Tracker für Hunde und Katzen"
+          "text": "Smarte Haustiertechnik"
         }
       ],
       "recommendationTypes": [],
@@ -49156,7 +49241,7 @@
         "informational"
       ],
       "mainEntity": "Smarte Futterautomaten für Hunde und Katzen",
-      "internalIncomingLinks": 144,
+      "internalIncomingLinks": 145,
       "internalOutgoingLinks": 44,
       "wordCount": 6466,
       "headingCount": 135,
@@ -50090,7 +50175,7 @@
         "informational"
       ],
       "mainEntity": "Smarte Haustiertechnik – Der große Ratgeber",
-      "internalIncomingLinks": 26,
+      "internalIncomingLinks": 29,
       "internalOutgoingLinks": 21,
       "wordCount": 3171,
       "headingCount": 58,
@@ -51491,9 +51576,9 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkbrunnen für Hunde: Auswahl und Pflege",
-      "internalIncomingLinks": 19,
+      "internalIncomingLinks": 18,
       "internalOutgoingLinks": 13,
-      "wordCount": 1226,
+      "wordCount": 1227,
       "headingCount": 19,
       "headings": [
         "Trinkbrunnen für Hunde: Auswahl und Pflege",
@@ -51514,7 +51599,7 @@
         "Trinkbrunnen",
         "Ist ein Katzenbrunnen sinnvoll?",
         "Beste Trinkbrunnen für Hunde",
-        "Haustierkameras"
+        "Smarte Haustiertechnik"
       ],
       "structuredData": [
         "Organization",
@@ -51615,7 +51700,7 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Smarte Haustiertechnik"
         }
       ],
       "recommendationTypes": [
@@ -54151,7 +54236,7 @@
         "informational"
       ],
       "mainEntity": "Welcher Vergleich hilft dir bei deiner Entscheidung?",
-      "internalIncomingLinks": 59,
+      "internalIncomingLinks": 60,
       "internalOutgoingLinks": 29,
       "wordCount": 609,
       "headingCount": 31,
@@ -54412,11 +54497,10 @@
       "mainEntity": "Automatische Katzentoiletten im Vergleich",
       "internalIncomingLinks": 13,
       "internalOutgoingLinks": 12,
-      "wordCount": 1016,
-      "headingCount": 28,
+      "wordCount": 1018,
+      "headingCount": 20,
       "headings": [
         "Automatische Katzentoiletten im Vergleich",
-        "Produkte filtern",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
         "Darauf solltest du bei der Auswahl achten",
@@ -54430,13 +54514,6 @@
         "PETKIT PUROBOT MAX PRO 2",
         "Neakasa M1 Plus",
         "Wähle mindestens zwei Modelle",
-        "Systemtyp",
-        "Mindestgewicht",
-        "Einstieg und Innenraum",
-        "Sicherheitsprinzip",
-        "Streukompatibilität",
-        "App und Mehrkatzenzuordnung",
-        "Drei-Jahres-Kosten",
         "Futterautomaten für Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "Neakasa M1 Plus",
@@ -54473,10 +54550,6 @@
         {
           "level": 1,
           "text": "Automatische Katzentoiletten im Vergleich"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -54529,34 +54602,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Systemtyp"
-        },
-        {
-          "level": 3,
-          "text": "Mindestgewicht"
-        },
-        {
-          "level": 3,
-          "text": "Einstieg und Innenraum"
-        },
-        {
-          "level": 3,
-          "text": "Sicherheitsprinzip"
-        },
-        {
-          "level": 3,
-          "text": "Streukompatibilität"
-        },
-        {
-          "level": 3,
-          "text": "App und Mehrkatzenzuordnung"
-        },
-        {
-          "level": 3,
-          "text": "Drei-Jahres-Kosten"
         },
         {
           "level": 3,
@@ -54643,11 +54688,10 @@
       "mainEntity": "Beste Futterautomaten für Berufstätige",
       "internalIncomingLinks": 21,
       "internalOutgoingLinks": 22,
-      "wordCount": 1711,
-      "headingCount": 38,
+      "wordCount": 1713,
+      "headingCount": 35,
       "headings": [
         "Beste Futterautomaten für Berufstätige",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -54676,8 +54720,6 @@
         "PetSafe Smart Feed 2.0",
         "PETLIBRO Granary WiFi Feeder",
         "Wähle mindestens zwei Modelle",
-        "Stromreserve",
-        "Vorrat",
         "Smarte Futterautomaten für Hunde und Katzen",
         "PETKIT YumShare Dual-Hopper 2",
         "Futterautomat gegen Schlingen",
@@ -54714,10 +54756,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Berufstätige"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -54833,14 +54871,6 @@
         },
         {
           "level": 3,
-          "text": "Stromreserve"
-        },
-        {
-          "level": 3,
-          "text": "Vorrat"
-        },
-        {
-          "level": 3,
           "text": "Smarte Futterautomaten für Hunde und Katzen"
         },
         {
@@ -54929,11 +54959,10 @@
       "mainEntity": "Beste Futterautomaten für Hunde",
       "internalIncomingLinks": 31,
       "internalOutgoingLinks": 27,
-      "wordCount": 3011,
-      "headingCount": 59,
+      "wordCount": 3013,
+      "headingCount": 48,
       "headings": [
         "Beste Futterautomaten für Hunde",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -54966,16 +54995,6 @@
         "WOPET Patrol F07 Pro",
         "HoneyGuardian Smart Pet Feeder S305D",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Geeignete Hundegröße",
-        "Portionierung",
-        "Krokettengröße",
-        "Napf und Ergonomie",
-        "Kapazität",
-        "App und WLAN",
-        "Stromreserve",
-        "Kamera",
-        "Individuelle Tiertrennung",
         "Bester Gesamtkompromiss: PETLIBRO Granary WiFi",
         "Beste Napfübersicht: Xiaomi Smart Pet Food Feeder 2",
         "Größter Vorrat im Kernvergleich: WOPET Patrol F07 Pro",
@@ -55021,10 +55040,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Hunde"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -55156,46 +55171,6 @@
         },
         {
           "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Geeignete Hundegröße"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Krokettengröße"
-        },
-        {
-          "level": 3,
-          "text": "Napf und Ergonomie"
-        },
-        {
-          "level": 3,
-          "text": "Kapazität"
-        },
-        {
-          "level": 3,
-          "text": "App und WLAN"
-        },
-        {
-          "level": 3,
-          "text": "Stromreserve"
-        },
-        {
-          "level": 3,
-          "text": "Kamera"
-        },
-        {
-          "level": 3,
-          "text": "Individuelle Tiertrennung"
-        },
-        {
-          "level": 3,
           "text": "Bester Gesamtkompromiss: PETLIBRO Granary WiFi"
         },
         {
@@ -55319,13 +55294,12 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Katzen",
-      "internalIncomingLinks": 53,
+      "internalIncomingLinks": 52,
       "internalOutgoingLinks": 35,
-      "wordCount": 3429,
-      "headingCount": 59,
+      "wordCount": 3431,
+      "headingCount": 48,
       "headings": [
         "Beste Futterautomaten für Katzen",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -55357,16 +55331,6 @@
         "PETLIBRO Granary WiFi Feeder",
         "PETKIT Fresh Element Solo",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Futterart",
-        "Portionierung",
-        "Futterzugang",
-        "Mehrkatzen-Eignung",
-        "App und Verbindung",
-        "Stromreserve",
-        "Reinigung",
-        "Kamera",
-        "Wichtigster Vorteil",
         "Beste Zugangskontrolle: SureFeed Microchip Pet Feeder",
         "Beste Nassfutter-Zeitsteuerung: Cat Mate C500",
         "Beste Napfübersicht: Xiaomi Smart Pet Food Feeder 2",
@@ -55413,10 +55377,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Katzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -55541,46 +55501,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Futterart"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Futterzugang"
-        },
-        {
-          "level": 3,
-          "text": "Mehrkatzen-Eignung"
-        },
-        {
-          "level": 3,
-          "text": "App und Verbindung"
-        },
-        {
-          "level": 3,
-          "text": "Stromreserve"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Kamera"
-        },
-        {
-          "level": 3,
-          "text": "Wichtigster Vorteil"
         },
         {
           "level": 3,
@@ -55725,11 +55645,10 @@
       "mainEntity": "Beste Futterautomaten für kleine Hunde",
       "internalIncomingLinks": 50,
       "internalOutgoingLinks": 22,
-      "wordCount": 1851,
-      "headingCount": 39,
+      "wordCount": 1853,
+      "headingCount": 35,
       "headings": [
         "Beste Futterautomaten für kleine Hunde",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -55758,9 +55677,6 @@
         "PETLIBRO Air WiFi Feeder",
         "PETKIT Fresh Element Solo",
         "Wähle mindestens zwei Modelle",
-        "Napfergonomie",
-        "Redaktionelle Einordnung",
-        "Hersteller",
         "Futterautomaten für Hunde",
         "PETLIBRO Polar Wet Food Feeder",
         "Futterautomat gegen Schlingen",
@@ -55797,10 +55713,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für kleine Hunde"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -55916,18 +55828,6 @@
         },
         {
           "level": 3,
-          "text": "Napfergonomie"
-        },
-        {
-          "level": 3,
-          "text": "Redaktionelle Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Hersteller"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Hunde"
         },
         {
@@ -56015,11 +55915,10 @@
       "mainEntity": "Futterautomat im Mehrtierhaushalt",
       "internalIncomingLinks": 5,
       "internalOutgoingLinks": 23,
-      "wordCount": 2392,
-      "headingCount": 42,
+      "wordCount": 2394,
+      "headingCount": 37,
       "headings": [
         "Futterautomat im Mehrtierhaushalt",
-        "Produkte filtern",
         "PETKIT YumShare Dual-Hopper 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -56050,10 +55949,6 @@
         "PETLIBRO Granary WiFi Dual Food Tray Feeder",
         "SureFeed Microchip Pet Feeder Connect",
         "Wähle mindestens zwei Modelle",
-        "Tiertrennung",
-        "Zugangskontrolle",
-        "Portionierung",
-        "Redaktionelle Einordnung",
         "Smarte Futterautomaten für Hunde und Katzen",
         "SureFeed Microchip Pet Feeder Connect",
         "Beste Futterautomaten für zwei Katzen",
@@ -56090,10 +55985,6 @@
         {
           "level": 1,
           "text": "Futterautomat im Mehrtierhaushalt"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -56217,22 +56108,6 @@
         },
         {
           "level": 3,
-          "text": "Tiertrennung"
-        },
-        {
-          "level": 3,
-          "text": "Zugangskontrolle"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Redaktionelle Einordnung"
-        },
-        {
-          "level": 3,
           "text": "Smarte Futterautomaten für Hunde und Katzen"
         },
         {
@@ -56318,11 +56193,10 @@
       "mainEntity": "Beste Futterautomaten für Nassfutter",
       "internalIncomingLinks": 26,
       "internalOutgoingLinks": 34,
-      "wordCount": 5008,
-      "headingCount": 95,
+      "wordCount": 5010,
+      "headingCount": 85,
       "headings": [
         "Beste Futterautomaten für Nassfutter",
-        "Produkte filtern",
         "Catit PIXI Smart 6-Meal Feeder",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -56382,15 +56256,6 @@
         "PetSafe FreshFeed Refrigerated Pet Feeder",
         "Cat Mate C500",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Kühlprinzip",
-        "Mahlzeiten und Kapazität",
-        "Steuerung",
-        "Strom und Ausfallsicherheit",
-        "Reinigung",
-        "Individuelle Tiertrennung",
-        "Geeignet für",
-        "Wichtigste Grenze",
         "Meiste aktiv gekühlte Mahlzeiten: PetSafe FreshFeed",
         "Beste flexible Sechs-Fächer-Lösung: Catit PIXI Smart 6-Meal Feeder",
         "Beste Offline-Zeitsteuerung: Cat Mate C500",
@@ -56446,10 +56311,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Nassfutter"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -56689,42 +56550,6 @@
         },
         {
           "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Kühlprinzip"
-        },
-        {
-          "level": 3,
-          "text": "Mahlzeiten und Kapazität"
-        },
-        {
-          "level": 3,
-          "text": "Steuerung"
-        },
-        {
-          "level": 3,
-          "text": "Strom und Ausfallsicherheit"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Individuelle Tiertrennung"
-        },
-        {
-          "level": 3,
-          "text": "Geeignet für"
-        },
-        {
-          "level": 3,
-          "text": "Wichtigste Grenze"
-        },
-        {
-          "level": 3,
           "text": "Meiste aktiv gekühlte Mahlzeiten: PetSafe FreshFeed"
         },
         {
@@ -56901,11 +56726,10 @@
       "mainEntity": "Beste Futterautomaten für Seniorenkatzen",
       "internalIncomingLinks": 25,
       "internalOutgoingLinks": 24,
-      "wordCount": 1778,
-      "headingCount": 40,
+      "wordCount": 1780,
+      "headingCount": 36,
       "headings": [
         "Beste Futterautomaten für Seniorenkatzen",
-        "Produkte filtern",
         "PETLIBRO Granary WiFi Feeder",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -56935,9 +56759,6 @@
         "Cat Mate C500",
         "SureFeed Microchip Pet Feeder Connect",
         "Wähle mindestens zwei Modelle",
-        "Napf",
-        "Reinigung",
-        "Kontrollierbarkeit",
         "Futterautomaten für Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "Futterautomat gegen Schlingen",
@@ -56974,10 +56795,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Seniorenkatzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -57097,18 +56914,6 @@
         },
         {
           "level": 3,
-          "text": "Napf"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Kontrollierbarkeit"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Katzen"
         },
         {
@@ -57197,11 +57002,10 @@
       "mainEntity": "Beste Futterautomaten für Welpen",
       "internalIncomingLinks": 14,
       "internalOutgoingLinks": 32,
-      "wordCount": 4317,
-      "headingCount": 70,
+      "wordCount": 4319,
+      "headingCount": 66,
       "headings": [
         "Beste Futterautomaten für Welpen",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -57248,9 +57052,6 @@
         "PETLIBRO Granary WiFi Feeder",
         "PETKIT Fresh Element Solo",
         "Wähle mindestens zwei Modelle",
-        "Reale Mindestportion",
-        "Napf und Reinigung",
-        "Geeignete Hundegröße",
         "Grundsätzlich gut planbar",
         "Mindestportion zuerst testen",
         "Andere Bauart nötig",
@@ -57300,10 +57101,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für Welpen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -57491,18 +57288,6 @@
         },
         {
           "level": 3,
-          "text": "Reale Mindestportion"
-        },
-        {
-          "level": 3,
-          "text": "Napf und Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Geeignete Hundegröße"
-        },
-        {
-          "level": 3,
           "text": "Grundsätzlich gut planbar"
         },
         {
@@ -57645,11 +57430,10 @@
       "mainEntity": "Beste Futterautomaten für zwei Katzen",
       "internalIncomingLinks": 17,
       "internalOutgoingLinks": 33,
-      "wordCount": 5830,
-      "headingCount": 104,
+      "wordCount": 5832,
+      "headingCount": 93,
       "headings": [
         "Beste Futterautomaten für zwei Katzen",
-        "Produkte filtern",
         "PETKIT YumShare Dual-Hopper 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -57710,16 +57494,6 @@
         "SureFeed Microchip Pet Feeder Connect",
         "oneisall 5L Automatic Cat Feeder",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Zugangskontrolle",
-        "Futterplätze",
-        "Futterarten",
-        "Portionierung",
-        "Mehrkatzen-Eignung",
-        "Konfliktrisiko",
-        "App",
-        "Ausfallsicherheit",
-        "Systemaufwand",
         "Problem 1: Beide Katzen bekommen dasselbe Futter",
         "Problem 2: Beide Katzen bekommen unterschiedliche Futtersorten",
         "Problem 3: Jede Katze braucht eine geschützte Ration",
@@ -57782,10 +57556,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten für zwei Katzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -58029,46 +57799,6 @@
         },
         {
           "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Zugangskontrolle"
-        },
-        {
-          "level": 3,
-          "text": "Futterplätze"
-        },
-        {
-          "level": 3,
-          "text": "Futterarten"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Mehrkatzen-Eignung"
-        },
-        {
-          "level": 3,
-          "text": "Konfliktrisiko"
-        },
-        {
-          "level": 3,
-          "text": "App"
-        },
-        {
-          "level": 3,
-          "text": "Ausfallsicherheit"
-        },
-        {
-          "level": 3,
-          "text": "Systemaufwand"
-        },
-        {
-          "level": 3,
           "text": "Problem 1: Beide Katzen bekommen dasselbe Futter"
         },
         {
@@ -58271,11 +58001,10 @@
       "mainEntity": "Beste Futterautomaten mit Akku",
       "internalIncomingLinks": 4,
       "internalOutgoingLinks": 22,
-      "wordCount": 1716,
-      "headingCount": 41,
+      "wordCount": 1718,
+      "headingCount": 36,
       "headings": [
         "Beste Futterautomaten mit Akku",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -58305,10 +58034,6 @@
         "PetSafe Smart Feed 2.0",
         "PETLIBRO Granary WiFi Feeder",
         "Wähle mindestens zwei Modelle",
-        "Stromreserve",
-        "Portionierung",
-        "Offline-Zeitplan",
-        "Reinigung",
         "Futterautomaten für Hunde",
         "PETKIT YumShare Dual-Hopper 2",
         "GPS-Tracker mit langer Akkulaufzeit",
@@ -58345,10 +58070,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten mit Akku"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -58468,22 +58189,6 @@
         },
         {
           "level": 3,
-          "text": "Stromreserve"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Offline-Zeitplan"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Hunde"
         },
         {
@@ -58571,11 +58276,10 @@
       "mainEntity": "Beste Futterautomaten mit Edelstahlnapf",
       "internalIncomingLinks": 4,
       "internalOutgoingLinks": 24,
-      "wordCount": 1614,
-      "headingCount": 41,
+      "wordCount": 1616,
+      "headingCount": 36,
       "headings": [
         "Beste Futterautomaten mit Edelstahlnapf",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -58605,10 +58309,6 @@
         "PETLIBRO Granary WiFi Feeder",
         "HoneyGuardian Smart Pet Feeder S305D",
         "Wähle mindestens zwei Modelle",
-        "Napfmaterial",
-        "Reinigung",
-        "Portionierung",
-        "Ausfallsicherheit",
         "Futterautomaten für Katzen",
         "SureFeed Microchip Pet Feeder",
         "Beste Futterautomaten für Nassfutter",
@@ -58645,10 +58345,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten mit Edelstahlnapf"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -58768,22 +58464,6 @@
         },
         {
           "level": 3,
-          "text": "Napfmaterial"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Portionierung"
-        },
-        {
-          "level": 3,
-          "text": "Ausfallsicherheit"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Katzen"
         },
         {
@@ -58874,11 +58554,10 @@
       "mainEntity": "Beste Futterautomaten mit Kamera",
       "internalIncomingLinks": 13,
       "internalOutgoingLinks": 28,
-      "wordCount": 3447,
-      "headingCount": 73,
+      "wordCount": 3449,
+      "headingCount": 64,
       "headings": [
         "Beste Futterautomaten mit Kamera",
-        "Produkte filtern",
         "PETKIT YumShare Dual-Hopper 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -58932,14 +58611,6 @@
         "WOPET Heritage View Camera Feeder",
         "PETKIT YumShare Solo 2",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Bildqualität",
-        "Praktischer Nutzen",
-        "Offline-Verhalten",
-        "Datenschutz",
-        "Futterart",
-        "Mehrtier-Eignung",
-        "Kamera",
         "Petlibro Granary Camera",
         "PETKIT YumShare Dual-Hopper",
         "PETLIBRO Granary Camera",
@@ -58980,10 +58651,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten mit Kamera"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -59199,38 +58866,6 @@
         },
         {
           "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Bildqualität"
-        },
-        {
-          "level": 3,
-          "text": "Praktischer Nutzen"
-        },
-        {
-          "level": 3,
-          "text": "Offline-Verhalten"
-        },
-        {
-          "level": 3,
-          "text": "Datenschutz"
-        },
-        {
-          "level": 3,
-          "text": "Futterart"
-        },
-        {
-          "level": 3,
-          "text": "Mehrtier-Eignung"
-        },
-        {
-          "level": 3,
-          "text": "Kamera"
-        },
-        {
-          "level": 3,
           "text": "Petlibro Granary Camera"
         },
         {
@@ -59337,11 +58972,10 @@
       "mainEntity": "Beste Futterautomaten ohne WLAN",
       "internalIncomingLinks": 12,
       "internalOutgoingLinks": 33,
-      "wordCount": 2797,
-      "headingCount": 53,
+      "wordCount": 2799,
+      "headingCount": 50,
       "headings": [
         "Beste Futterautomaten ohne WLAN",
-        "Produkte filtern",
         "IMIPAW 3L Automatic Cat Feeder",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -59379,8 +59013,6 @@
         "Cat Mate C500",
         "SureFeed Microchip Pet Feeder Connect",
         "Wähle mindestens zwei Modelle",
-        "Offline-Konzept",
-        "Futterart",
         "Fachautomat",
         "Mikrochip-Napf",
         "Vorratsautomat",
@@ -59423,10 +59055,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten ohne WLAN"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -59578,14 +59206,6 @@
         },
         {
           "level": 3,
-          "text": "Offline-Konzept"
-        },
-        {
-          "level": 3,
-          "text": "Futterart"
-        },
-        {
-          "level": 3,
           "text": "Fachautomat"
         },
         {
@@ -59705,11 +59325,10 @@
       "mainEntity": "Beste Futterautomaten unter 100 Euro",
       "internalIncomingLinks": 6,
       "internalOutgoingLinks": 25,
-      "wordCount": 1716,
-      "headingCount": 39,
+      "wordCount": 1718,
+      "headingCount": 35,
       "headings": [
         "Beste Futterautomaten unter 100 Euro",
-        "Produkte filtern",
         "IMIPAW 3L Automatic Cat Feeder",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -59738,9 +59357,6 @@
         "Cat Mate C500",
         "HoneyGuardian Smart Pet Feeder S305D",
         "Wähle mindestens zwei Modelle",
-        "Reinigung",
-        "Redaktionelle Einordnung",
-        "Hersteller",
         "Futterautomaten für Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "Futterautomat für große Hunde",
@@ -59777,10 +59393,6 @@
         {
           "level": 1,
           "text": "Beste Futterautomaten unter 100 Euro"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -59896,18 +59508,6 @@
         },
         {
           "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Redaktionelle Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Hersteller"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Katzen"
         },
         {
@@ -59998,11 +59598,10 @@
       "mainEntity": "Beste GPS-Tracker für Hunde",
       "internalIncomingLinks": 20,
       "internalOutgoingLinks": 20,
-      "wordCount": 2001,
-      "headingCount": 43,
+      "wordCount": 2003,
+      "headingCount": 38,
       "headings": [
         "Beste GPS-Tracker für Hunde",
-        "Produkte filtern",
         "Tractive DOG 6",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -60032,10 +59631,6 @@
         "PAJ PET Finder 4G Mini",
         "Tractive DOG 6 XL",
         "Wähle mindestens zwei Modelle",
-        "Einsatzgebiet",
-        "Geeignete Hundegröße",
-        "Ortungssystem",
-        "Abo erforderlich",
         "Mobilfunk",
         "VHF",
         "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
@@ -60074,10 +59669,6 @@
         {
           "level": 1,
           "text": "Beste GPS-Tracker für Hunde"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -60197,22 +59788,6 @@
         },
         {
           "level": 3,
-          "text": "Einsatzgebiet"
-        },
-        {
-          "level": 3,
-          "text": "Geeignete Hundegröße"
-        },
-        {
-          "level": 3,
-          "text": "Ortungssystem"
-        },
-        {
-          "level": 3,
-          "text": "Abo erforderlich"
-        },
-        {
-          "level": 3,
           "text": "Mobilfunk"
         },
         {
@@ -60309,11 +59884,10 @@
       "mainEntity": "Beste GPS-Tracker für Katzen",
       "internalIncomingLinks": 15,
       "internalOutgoingLinks": 17,
-      "wordCount": 1928,
-      "headingCount": 44,
+      "wordCount": 1930,
+      "headingCount": 35,
       "headings": [
         "Beste GPS-Tracker für Katzen",
-        "Produkte filtern",
         "Weenect XS GPS-Tracker",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -60342,14 +59916,6 @@
         "Tractive CAT 6 Mini",
         "PAJ PET Finder 4G Mini",
         "Wähle mindestens zwei Modelle",
-        "Unsere Einordnung",
-        "Katzeneignung und Passform",
-        "Gewicht",
-        "Befestigung und Sicherheit",
-        "Ortung und Übertragung",
-        "Akkulaufzeit",
-        "Abo und enthaltener Dienst",
-        "Wasserschutz",
         "GPS-Tracker für Hunde und Katzen",
         "Weenect XS GPS-Tracker",
         "Weenect XS GPS-Tracker",
@@ -60386,10 +59952,6 @@
         {
           "level": 1,
           "text": "Beste GPS-Tracker für Katzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -60505,38 +60067,6 @@
         },
         {
           "level": 3,
-          "text": "Unsere Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Katzeneignung und Passform"
-        },
-        {
-          "level": 3,
-          "text": "Gewicht"
-        },
-        {
-          "level": 3,
-          "text": "Befestigung und Sicherheit"
-        },
-        {
-          "level": 3,
-          "text": "Ortung und Übertragung"
-        },
-        {
-          "level": 3,
-          "text": "Akkulaufzeit"
-        },
-        {
-          "level": 3,
-          "text": "Abo und enthaltener Dienst"
-        },
-        {
-          "level": 3,
-          "text": "Wasserschutz"
-        },
-        {
-          "level": 3,
           "text": "GPS-Tracker für Hunde und Katzen"
         },
         {
@@ -60620,13 +60150,13 @@
         "transactional-support"
       ],
       "mainEntity": "Haustierkameras im Vergleich",
-      "internalIncomingLinks": 16,
-      "internalOutgoingLinks": 12,
-      "wordCount": 1023,
-      "headingCount": 28,
+      "internalIncomingLinks": 15,
+      "internalOutgoingLinks": 14,
+      "wordCount": 1039,
+      "headingCount": 20,
       "headings": [
         "Haustierkameras im Vergleich",
-        "Produkte filtern",
+        "Furbo 360° Hundekamera",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
         "Darauf solltest du bei der Auswahl achten",
@@ -60636,23 +60166,15 @@
         "Vom Vergleich zur Entscheidung",
         "Häufige Fragen",
         "Das könnte dich auch interessieren",
-        "PETLIBRO Scout Smart Camera",
-        "Furbo 360° Hundekamera",
         "Enabot EBO Air 2",
+        "PETLIBRO Scout Smart Camera",
         "Wähle mindestens zwei Modelle",
-        "Produktklasse",
-        "Blickbereich",
-        "Interaktion",
-        "Speicherung",
-        "Abo",
-        "Datenschutz",
-        "24-Monats-Kosten",
         "GPS-Tracker für Hunde und Katzen",
         "Weenect XS GPS-Tracker",
         "Furbo 360° Hundekamera",
         "Enabot EBO Air 2",
-        "Haustierkameras",
-        "Futterautomaten mit App"
+        "Futterautomaten mit App",
+        "Beste Trinkbrunnen für Katzen"
       ],
       "structuredData": [
         "Organization",
@@ -60686,7 +60208,7 @@
         },
         {
           "level": 2,
-          "text": "Produkte filtern"
+          "text": "Furbo 360° Hundekamera"
         },
         {
           "level": 2,
@@ -60726,47 +60248,15 @@
         },
         {
           "level": 3,
-          "text": "PETLIBRO Scout Smart Camera"
-        },
-        {
-          "level": 3,
-          "text": "Furbo 360° Hundekamera"
-        },
-        {
-          "level": 3,
           "text": "Enabot EBO Air 2"
         },
         {
           "level": 3,
+          "text": "PETLIBRO Scout Smart Camera"
+        },
+        {
+          "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Produktklasse"
-        },
-        {
-          "level": 3,
-          "text": "Blickbereich"
-        },
-        {
-          "level": 3,
-          "text": "Interaktion"
-        },
-        {
-          "level": 3,
-          "text": "Speicherung"
-        },
-        {
-          "level": 3,
-          "text": "Abo"
-        },
-        {
-          "level": 3,
-          "text": "Datenschutz"
-        },
-        {
-          "level": 3,
-          "text": "24-Monats-Kosten"
         },
         {
           "level": 3,
@@ -60786,25 +60276,25 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "Futterautomaten mit App"
         },
         {
           "level": 3,
-          "text": "Futterautomaten mit App"
+          "text": "Beste Trinkbrunnen für Katzen"
         }
       ],
       "recommendationTypes": [
-        "top-recommendation",
-        "alternatives"
+        "top-recommendation"
       ],
       "relatedProducts": [
-        "/produkt/petlibro-scout-smart-camera/",
         "/produkt/furbo-360-hundekamera/",
         "/produkt/enabot-ebo-air-2/",
+        "/produkt/petlibro-scout-smart-camera/",
         "/produkt/weenect-xs/"
       ],
       "relatedComparisons": [
-        "/vergleiche/futterautomat-mit-app/"
+        "/vergleiche/futterautomat-mit-app/",
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -60853,11 +60343,10 @@
       "mainEntity": "Mikrochip-Katzenklappen im Vergleich",
       "internalIncomingLinks": 17,
       "internalOutgoingLinks": 21,
-      "wordCount": 1295,
-      "headingCount": 30,
+      "wordCount": 1297,
+      "headingCount": 22,
       "headings": [
         "Mikrochip-Katzenklappen im Vergleich",
-        "Produkte filtern",
         "SureFlap Mikrochip Katzenklappe Connect",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -60873,13 +60362,6 @@
         "SureFlap Mikrochip Katzenklappe",
         "SureFlap DualScan Mikrochip Katzenklappe",
         "Wähle mindestens zwei Modelle",
-        "Zugangslogik",
-        "Rechte je Tier",
-        "App-Abhängigkeit",
-        "Stromversorgung",
-        "Einbau",
-        "Passform",
-        "Produktrolle",
         "Futterautomaten für Katzen",
         "SureFeed Microchip Pet Feeder Connect",
         "PetSafe Mikrochip Katzenklappe",
@@ -60916,10 +60398,6 @@
         {
           "level": 1,
           "text": "Mikrochip-Katzenklappen im Vergleich"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -60980,34 +60458,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Zugangslogik"
-        },
-        {
-          "level": 3,
-          "text": "Rechte je Tier"
-        },
-        {
-          "level": 3,
-          "text": "App-Abhängigkeit"
-        },
-        {
-          "level": 3,
-          "text": "Stromversorgung"
-        },
-        {
-          "level": 3,
-          "text": "Einbau"
-        },
-        {
-          "level": 3,
-          "text": "Passform"
-        },
-        {
-          "level": 3,
-          "text": "Produktrolle"
         },
         {
           "level": 3,
@@ -61097,13 +60547,12 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Trinkbrunnen für Hunde",
-      "internalIncomingLinks": 44,
+      "internalIncomingLinks": 45,
       "internalOutgoingLinks": 27,
-      "wordCount": 2475,
-      "headingCount": 44,
+      "wordCount": 2477,
+      "headingCount": 36,
       "headings": [
         "Beste Trinkbrunnen für Hunde",
-        "Produkte filtern",
         "oneisall 3,5L Cordless Fountain",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -61132,13 +60581,6 @@
         "PETLIBRO Capsule Dog Fountain",
         "PETKIT Eversweet Max 2 UVC",
         "Wähle mindestens zwei Modelle",
-        "Kapazität",
-        "Hundegröße",
-        "Material",
-        "Reinigung",
-        "Filter und Folgekosten",
-        "Stromversorgung",
-        "Lautstärke",
         "XXL- und 10-Liter-Brunnen richtig einordnen",
         "Futterautomaten für Hunde",
         "PETLIBRO Polar Wet Food Feeder",
@@ -61176,10 +60618,6 @@
         {
           "level": 1,
           "text": "Beste Trinkbrunnen für Hunde"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -61295,34 +60733,6 @@
         },
         {
           "level": 3,
-          "text": "Kapazität"
-        },
-        {
-          "level": 3,
-          "text": "Hundegröße"
-        },
-        {
-          "level": 3,
-          "text": "Material"
-        },
-        {
-          "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Filter und Folgekosten"
-        },
-        {
-          "level": 3,
-          "text": "Stromversorgung"
-        },
-        {
-          "level": 3,
-          "text": "Lautstärke"
-        },
-        {
-          "level": 3,
           "text": "XXL- und 10-Liter-Brunnen richtig einordnen"
         },
         {
@@ -61417,13 +60827,12 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Trinkbrunnen für Katzen",
-      "internalIncomingLinks": 44,
+      "internalIncomingLinks": 45,
       "internalOutgoingLinks": 32,
-      "wordCount": 2727,
-      "headingCount": 44,
+      "wordCount": 2729,
+      "headingCount": 36,
       "headings": [
         "Beste Trinkbrunnen für Katzen",
-        "Produkte filtern",
         "PETLIBRO Dockstream 2 Smart Cordless",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -61453,13 +60862,6 @@
         "PETKIT Eversweet Solo 2",
         "oneisall 3,2L Cordless Cat Fountain",
         "Wähle mindestens zwei Modelle",
-        "Reinigung",
-        "Einsatzgebiet",
-        "Material",
-        "Stromversorgung",
-        "Filter und Folgekosten",
-        "Lautstärke",
-        "Kapazität",
         "Futterautomaten für Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "PETKIT Eversweet 3 Pro UVC",
@@ -61496,10 +60898,6 @@
         {
           "level": 1,
           "text": "Beste Trinkbrunnen für Katzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -61619,34 +61017,6 @@
         },
         {
           "level": 3,
-          "text": "Reinigung"
-        },
-        {
-          "level": 3,
-          "text": "Einsatzgebiet"
-        },
-        {
-          "level": 3,
-          "text": "Material"
-        },
-        {
-          "level": 3,
-          "text": "Stromversorgung"
-        },
-        {
-          "level": 3,
-          "text": "Filter und Folgekosten"
-        },
-        {
-          "level": 3,
-          "text": "Lautstärke"
-        },
-        {
-          "level": 3,
-          "text": "Kapazität"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Katzen"
         },
         {
@@ -61740,11 +61110,10 @@
       "mainEntity": "Futterautomat für große Hunde",
       "internalIncomingLinks": 8,
       "internalOutgoingLinks": 25,
-      "wordCount": 2246,
-      "headingCount": 42,
+      "wordCount": 2248,
+      "headingCount": 37,
       "headings": [
         "Futterautomat für große Hunde",
-        "Produkte filtern",
         "PETLIBRO Granary Camera Feeder",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -61775,10 +61144,6 @@
         "Xiaomi Smart Pet Food Feeder 2",
         "PETLIBRO Granary WiFi Feeder",
         "Wähle mindestens zwei Modelle",
-        "Kapazität",
-        "Krokettengröße",
-        "Napf",
-        "Notstrom",
         "Futterautomaten für Hunde",
         "SureFeed Microchip Pet Feeder Connect",
         "Futterautomaten für Welpen",
@@ -61815,10 +61180,6 @@
         {
           "level": 1,
           "text": "Futterautomat für große Hunde"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -61942,22 +61303,6 @@
         },
         {
           "level": 3,
-          "text": "Kapazität"
-        },
-        {
-          "level": 3,
-          "text": "Krokettengröße"
-        },
-        {
-          "level": 3,
-          "text": "Napf"
-        },
-        {
-          "level": 3,
-          "text": "Notstrom"
-        },
-        {
-          "level": 3,
           "text": "Futterautomaten für Hunde"
         },
         {
@@ -62041,13 +61386,12 @@
         "transactional-support"
       ],
       "mainEntity": "Futterautomat gegen Schlingen",
-      "internalIncomingLinks": 21,
+      "internalIncomingLinks": 20,
       "internalOutgoingLinks": 23,
-      "wordCount": 1726,
-      "headingCount": 39,
+      "wordCount": 1728,
+      "headingCount": 35,
       "headings": [
         "Futterautomat gegen Schlingen",
-        "Produkte filtern",
         "Xiaomi Smart Pet Food Feeder 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -62076,9 +61420,6 @@
         "PetSafe Healthy Pet Simply Feed",
         "PETLIBRO Granary WiFi Feeder",
         "Wähle mindestens zwei Modelle",
-        "Napf",
-        "Stromreserve",
-        "Kontrollierbarkeit",
         "Smarte Futterautomaten für Hunde und Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "Smarte Futterautomaten",
@@ -62115,10 +61456,6 @@
         {
           "level": 1,
           "text": "Futterautomat gegen Schlingen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -62234,18 +61571,6 @@
         },
         {
           "level": 3,
-          "text": "Napf"
-        },
-        {
-          "level": 3,
-          "text": "Stromreserve"
-        },
-        {
-          "level": 3,
-          "text": "Kontrollierbarkeit"
-        },
-        {
-          "level": 3,
           "text": "Smarte Futterautomaten für Hunde und Katzen"
         },
         {
@@ -62333,11 +61658,10 @@
       "mainEntity": "Futterautomaten mit App",
       "internalIncomingLinks": 17,
       "internalOutgoingLinks": 26,
-      "wordCount": 3171,
-      "headingCount": 65,
+      "wordCount": 3173,
+      "headingCount": 61,
       "headings": [
         "Futterautomaten mit App",
-        "Produkte filtern",
         "PETKIT YumShare Dual-Hopper 2",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -62379,9 +61703,6 @@
         "PETLIBRO Granary WiFi Feeder",
         "PETKIT Fresh Element Solo",
         "Wähle mindestens zwei Modelle",
-        "WLAN",
-        "Redaktionelle Einordnung",
-        "Hersteller",
         "Petlibro Granary WiFi",
         "PETKIT Fresh Element Solo",
         "Xiaomi Smart Pet Food Feeder 2",
@@ -62431,10 +61752,6 @@
         {
           "level": 1,
           "text": "Futterautomaten mit App"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -62602,18 +61919,6 @@
         },
         {
           "level": 3,
-          "text": "WLAN"
-        },
-        {
-          "level": 3,
-          "text": "Redaktionelle Einordnung"
-        },
-        {
-          "level": 3,
-          "text": "Hersteller"
-        },
-        {
-          "level": 3,
           "text": "Petlibro Granary WiFi"
         },
         {
@@ -62755,11 +62060,10 @@
       "mainEntity": "GPS-Tracker mit langer Akkulaufzeit",
       "internalIncomingLinks": 13,
       "internalOutgoingLinks": 25,
-      "wordCount": 1894,
-      "headingCount": 38,
+      "wordCount": 1896,
+      "headingCount": 31,
       "headings": [
         "GPS-Tracker mit langer Akkulaufzeit",
-        "Produkte filtern",
         "Tractive DOG 6",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -62784,12 +62088,6 @@
         "Tractive DOG 6 XL",
         "Weenect XT GPS-Tracker",
         "Wähle mindestens zwei Modelle",
-        "Akkulaufzeit",
-        "Gewicht",
-        "Geeignet für",
-        "Übertragung",
-        "Abo",
-        "Wasserschutz",
         "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
         "PETLIBRO Polar Wet Food Feeder",
         "PAJ PET Finder 4G Mini",
@@ -62826,10 +62124,6 @@
         {
           "level": 1,
           "text": "GPS-Tracker mit langer Akkulaufzeit"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -62929,30 +62223,6 @@
         },
         {
           "level": 3,
-          "text": "Akkulaufzeit"
-        },
-        {
-          "level": 3,
-          "text": "Gewicht"
-        },
-        {
-          "level": 3,
-          "text": "Geeignet für"
-        },
-        {
-          "level": 3,
-          "text": "Übertragung"
-        },
-        {
-          "level": 3,
-          "text": "Abo"
-        },
-        {
-          "level": 3,
-          "text": "Wasserschutz"
-        },
-        {
-          "level": 3,
           "text": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten"
         },
         {
@@ -63043,11 +62313,10 @@
       "mainEntity": "GPS-Tracker ohne Abo",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 23,
-      "wordCount": 1606,
-      "headingCount": 34,
+      "wordCount": 1608,
+      "headingCount": 28,
       "headings": [
         "GPS-Tracker ohne Abo",
-        "Produkte filtern",
         "Garmin Alpha T 20",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -63069,11 +62338,6 @@
         "Das könnte dich auch interessieren",
         "Garmin Alpha TT 25",
         "Wähle mindestens zwei Modelle",
-        "Reichweite",
-        "Abo",
-        "Akkulaufzeit",
-        "Bedienung",
-        "Geeignet für",
         "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
         "Garmin Alpha T 20",
         "Garmin Alpha T 20",
@@ -63110,10 +62374,6 @@
         {
           "level": 1,
           "text": "GPS-Tracker ohne Abo"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -63198,26 +62458,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Reichweite"
-        },
-        {
-          "level": 3,
-          "text": "Abo"
-        },
-        {
-          "level": 3,
-          "text": "Akkulaufzeit"
-        },
-        {
-          "level": 3,
-          "text": "Bedienung"
-        },
-        {
-          "level": 3,
-          "text": "Geeignet für"
         },
         {
           "level": 3,
@@ -63307,11 +62547,10 @@
       "mainEntity": "Katzenklappen mit App und Beuteerkennung im Vergleich",
       "internalIncomingLinks": 10,
       "internalOutgoingLinks": 16,
-      "wordCount": 1116,
-      "headingCount": 29,
+      "wordCount": 1118,
+      "headingCount": 22,
       "headings": [
         "Katzenklappen mit App und Beuteerkennung im Vergleich",
-        "Produkte filtern",
         "OnlyCat Mikrochip Katzenklappe",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -63327,12 +62566,6 @@
         "petWALK Medium Tiertür",
         "ZeroMOUSE 2.0",
         "Wähle mindestens zwei Modelle",
-        "Produktrolle",
-        "App-Funktion",
-        "Beuteerkennung",
-        "Abhängigkeiten",
-        "Strom",
-        "Ausfallverhalten",
         "Futterautomaten für Katzen",
         "SureFlap Mikrochip Katzenklappe Connect",
         "OnlyCat",
@@ -63369,10 +62602,6 @@
         {
           "level": 1,
           "text": "Katzenklappen mit App und Beuteerkennung im Vergleich"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -63433,30 +62662,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Produktrolle"
-        },
-        {
-          "level": 3,
-          "text": "App-Funktion"
-        },
-        {
-          "level": 3,
-          "text": "Beuteerkennung"
-        },
-        {
-          "level": 3,
-          "text": "Abhängigkeiten"
-        },
-        {
-          "level": 3,
-          "text": "Strom"
-        },
-        {
-          "level": 3,
-          "text": "Ausfallverhalten"
         },
         {
           "level": 3,
@@ -63543,11 +62748,10 @@
       "mainEntity": "Kleine GPS-Tracker für Katzen",
       "internalIncomingLinks": 6,
       "internalOutgoingLinks": 19,
-      "wordCount": 1691,
-      "headingCount": 37,
+      "wordCount": 1693,
+      "headingCount": 30,
       "headings": [
         "Kleine GPS-Tracker für Katzen",
-        "Produkte filtern",
         "Weenect XS GPS-Tracker",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu vier Modelle",
@@ -63571,12 +62775,6 @@
         "Tractive CAT 6 Mini",
         "PAJ PET Finder 4G Mini",
         "Wähle mindestens zwei Modelle",
-        "Gewicht",
-        "Geeignet für",
-        "Befestigung",
-        "Akkulaufzeit",
-        "Wasserschutz",
-        "Abo",
         "GPS-Tracker für Hunde und Katzen",
         "PETLIBRO Polar Wet Food Feeder",
         "PAJ PET Finder 4G Mini",
@@ -63613,10 +62811,6 @@
         {
           "level": 1,
           "text": "Kleine GPS-Tracker für Katzen"
-        },
-        {
-          "level": 2,
-          "text": "Produkte filtern"
         },
         {
           "level": 2,
@@ -63709,30 +62903,6 @@
         {
           "level": 3,
           "text": "Wähle mindestens zwei Modelle"
-        },
-        {
-          "level": 3,
-          "text": "Gewicht"
-        },
-        {
-          "level": 3,
-          "text": "Geeignet für"
-        },
-        {
-          "level": 3,
-          "text": "Befestigung"
-        },
-        {
-          "level": 3,
-          "text": "Akkulaufzeit"
-        },
-        {
-          "level": 3,
-          "text": "Wasserschutz"
-        },
-        {
-          "level": 3,
-          "text": "Abo"
         },
         {
           "level": 3,
@@ -64236,7 +63406,7 @@
       "mainEntity": "Warum Katzen lieber fließendes Wasser trinken – und warum das nicht für jede Katze gilt",
       "internalIncomingLinks": 12,
       "internalOutgoingLinks": 14,
-      "wordCount": 1034,
+      "wordCount": 1039,
       "headingCount": 22,
       "headings": [
         "Warum Katzen lieber fließendes Wasser trinken – und warum das nicht für jede Katze gilt",
@@ -64260,7 +63430,7 @@
         "Trinkmenge bei Katzen messen",
         "Ist ein Katzenbrunnen sinnvoll?",
         "Trinkbrunnen",
-        "Haustierkameras"
+        "GPS-Tracker für Hunde und Katzen"
       ],
       "structuredData": [
         "Organization",
@@ -64373,7 +63543,7 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "GPS-Tracker für Hunde und Katzen"
         }
       ],
       "recommendationTypes": [],
@@ -67127,8 +66297,8 @@
       "secondaryIntents": [],
       "mainEntity": "Wie kann Technik gegen Langeweile bei Haustieren helfen?",
       "internalIncomingLinks": 1,
-      "internalOutgoingLinks": 15,
-      "wordCount": 746,
+      "internalOutgoingLinks": 14,
+      "wordCount": 747,
       "headingCount": 22,
       "headings": [
         "Wie kann Technik gegen Langeweile bei Haustieren helfen?",
@@ -67149,9 +66319,9 @@
         "Passende Kaufberatung öffnen",
         "Geeignete Modelle gegenüberstellen",
         "Technik sicher im Alltag nutzen",
-        "Haustierkameras",
         "GPS-Tracker für Hunde und Katzen",
         "GPS oder Bluetooth?",
+        "Smarte Haustiertechnik",
         "Fütterungszeiten nach Alter"
       ],
       "structuredData": [
@@ -67253,15 +66423,15 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
-        },
-        {
-          "level": 3,
           "text": "GPS-Tracker für Hunde und Katzen"
         },
         {
           "level": 3,
           "text": "GPS oder Bluetooth?"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Haustiertechnik"
         },
         {
           "level": 3,
@@ -69297,14 +68467,13 @@
       ],
       "mainEntity": "Ratgeber für moderne Tierhaltung",
       "internalIncomingLinks": 83,
-      "internalOutgoingLinks": 78,
-      "wordCount": 1064,
-      "headingCount": 81,
+      "internalOutgoingLinks": 77,
+      "wordCount": 1053,
+      "headingCount": 80,
       "headings": [
         "Ratgeber für moderne Tierhaltung",
         "Der beste Einstieg",
         "Ratgeber und Entscheidungshilfen",
-        "Haustierkameras",
         "Automatische Katzentoiletten",
         "Smarte Haustiertechnik",
         "GPS-Tracker für Hunde und Katzen",
@@ -69416,10 +68585,6 @@
         {
           "level": 2,
           "text": "Ratgeber und Entscheidungshilfen"
-        },
-        {
-          "level": 3,
-          "text": "Haustierkameras"
         },
         {
           "level": 3,
@@ -69777,7 +68942,7 @@
       "mainEntity": "Woran erkennt man, dass eine Katze zu wenig trinkt?",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 20,
-      "wordCount": 4389,
+      "wordCount": 4390,
       "headingCount": 129,
       "headings": [
         "Woran erkennt man, dass eine Katze zu wenig trinkt?",
@@ -69907,8 +69072,8 @@
         "Beste Trinkbrunnen für Katzen",
         "Katze trinkt viel",
         "Katze frisst nicht",
-        "Haustierkameras",
-        "GPS-Tracker für Hunde und Katzen"
+        "GPS-Tracker für Hunde und Katzen",
+        "Smarte Haustiertechnik"
       ],
       "structuredData": [
         "Organization",
@@ -70445,11 +69610,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "GPS-Tracker für Hunde und Katzen"
         },
         {
           "level": 3,
-          "text": "GPS-Tracker für Hunde und Katzen"
+          "text": "Smarte Haustiertechnik"
         }
       ],
       "recommendationTypes": [

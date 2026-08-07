@@ -7,7 +7,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - Cluster: 17
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0
-- Warnungen: 0
+- Warnungen: 1
 
 ## Seitentypen
 
@@ -42,7 +42,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - automatische-katzentoiletten: 5
 - futterautomaten: 82
 - gps-tracker: 26
-- haustierkameras: 5
+- haustierkameras: 4
 - hersteller: 20
 - hundeernaehrung: 3
 - hundegesundheit: 4
@@ -52,7 +52,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - katzenhaltung: 1
 - katzenklappen: 13
 - katzenverhalten: 1
-- smarte-haustiertechnik: 13
+- smarte-haustiertechnik: 14
 - tierbeschaeftigung: 1
 - tierernaehrung: 1
 - trinkbrunnen: 49
