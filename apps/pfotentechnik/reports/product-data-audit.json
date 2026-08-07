@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-07T08:12:23.524Z",
+    "generatedAt": "2026-08-07T09:56:18.684Z",
     "totalProducts": 80,
     "byCategory": {
       "futterautomaten": 37,
@@ -11,7 +11,7 @@
       "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 104,
+    "warnings": 103,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -5717,14 +5717,16 @@
       "title": "PetSafe Petporte smart flap",
       "category": "katzenklappen",
       "errors": [],
-      "warnings": [
-        "Nur 0 Galerie-Bilder hinterlegt"
-      ],
+      "warnings": [],
       "notes": [],
       "specs": [
         {
           "label": "Produkt",
           "value": "PetSafe Petporte smart flap"
+        },
+        {
+          "label": "Modell",
+          "value": "100ML"
         },
         {
           "label": "Klappenöffnung",
@@ -5752,25 +5754,37 @@
         },
         {
           "label": "Stromversorgung",
-          "value": "EU-Netzanschluss"
+          "value": "EU-Netzanschluss; Netzteil enthalten"
         },
         {
           "label": "Zugang",
           "value": "Selektiver Eingang per kompatiblem Mikrochip"
         },
         {
+          "label": "Mikrochip-Kompatibilität",
+          "value": "EU-/UK-Standard-Mikrochips mit 15 Ziffern; Hersteller nennt konkrete Ausschlüsse"
+        },
+        {
           "label": "Nachtmodus",
           "value": "Optional"
         },
         {
-          "label": "Einbau",
-          "value": "Holz, Glas, PVC, uPVC, Wand; Metall nur nach Funktionstest"
+          "label": "Signal",
+          "value": "Tonsignal beim Eintritt"
+        },
+        {
+          "label": "Montage",
+          "value": "Tür oder Wand"
+        },
+        {
+          "label": "Einbaumaterialien",
+          "value": "Holz, Glas, PVC, uPVC und Metall; Metall nur nach vorherigem Funktionstest"
         }
       ],
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 97
+      "completeness": 100
     },
     {
       "file": "src/content/products/petsafe-smart-feed-2.md",

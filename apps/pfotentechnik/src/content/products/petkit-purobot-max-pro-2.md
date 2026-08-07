@@ -21,15 +21,16 @@ hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:
   hero: { src: "../../assets/images/products/petkit-purobot-max-pro-2/hero.webp", alt: "Neutrale redaktionelle Darstellung einer geschlossenen automatischen Katzentoilette mit Kamera" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 499.98
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-07T10:04:20.591Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.8
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { sicherheit: 3.9, platz: 3.2, reinigung: 3.9, folgekosten: 3.0, datenschutz: 2.7 }
 decision:
   bestFor: ["Mehrkatzenhaushalte mit unterscheidbaren Tierprofilen", "Nutzer, die Besuchsdauer und Gewichtstrends beobachten", "ausreichend große Stellfläche"]
@@ -54,6 +55,22 @@ comparisonData:
 decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", intent: "purobot-max-pro-2-pruefen", primaryQuestion: "Sind Mehrkatzenprofile den Kamera-, Cloud- und Pflegeaufwand wert?", next: ["/vergleiche/beste-automatische-katzentoiletten/"], fallback: ["/automatische-katzentoiletten/"] }
 evidenceSources:
   - { source: "PETKIT", url: "https://www.petkit.com/pages/why-purobot-max-pro-2-is-one-of-the-best-ai-powered-automatic-litter-boxes-for-multi-cat-households", accessedAt: "2026-08-06", assertion: "Gesichtserkennung, Nutzungstrends, Wartungsintervall und Sicherheitsarchitektur sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/3RQ7Lg4"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-07T10:04:20.591Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-07T10:04:20.591Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Offene Produktfragen vor dem Kauf

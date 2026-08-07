@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-07T08:12:23.524Z
+Erstellt: 2026-08-07T09:56:18.684Z
 
 ## Zusammenfassung
 
 - Produkte: 80
 - Fehler: 0
-- Warnungen: 104
+- Warnungen: 103
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -518,14 +518,6 @@ Erstellt: 2026-08-07T08:12:23.524Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
   - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### PetSafe Petporte smart flap
-
-- Datei: `src/content/products/petsafe-petporte-smart-flap.md`
-- Kategorie: katzenklappen
-- Vollständigkeit: 97%
-- Warnungen:
-  - Nur 0 Galerie-Bilder hinterlegt
 
 ### PetSafe Smart Feed 2.0
 

@@ -493,7 +493,7 @@
       "mainEntity": "Findings",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 0,
-      "wordCount": 176,
+      "wordCount": 175,
       "headingCount": 3,
       "headings": [
         "Findings",
@@ -658,12 +658,13 @@
       "mainEntity": "Systemhistorie",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 0,
-      "wordCount": 1940,
+      "wordCount": 1951,
       "headingCount": 103,
       "headings": [
         "Systemhistorie",
         "Quality-Verlauf statt Browser-Zustand",
         "Letzte Änderungen",
+        "Gerenderte H1-Anzahl: 2.",
         "Interner Source-Link-Audit fehlgeschlagen (Exit 1).",
         "Selektor 5× definiert: main.container.container--home .home3-hero",
         "PETKIT Eversweet 3 Pro UVC",
@@ -762,8 +763,7 @@
         "Selektor 3× definiert: .site-header-v2",
         "PETKIT YumShare Dual-Hopper 2",
         "PetSafe Healthy Pet Simply Feed",
-        "PETLIBRO Granary Camera Feeder",
-        "PETKIT Fresh Element Infinity"
+        "PETLIBRO Granary Camera Feeder"
       ],
       "structuredData": [],
       "expectedComparisonCount": 0,
@@ -792,6 +792,10 @@
         {
           "level": 2,
           "text": "Letzte Änderungen"
+        },
+        {
+          "level": 3,
+          "text": "Gerenderte H1-Anzahl: 2."
         },
         {
           "level": 3,
@@ -1188,10 +1192,6 @@
         {
           "level": 3,
           "text": "PETLIBRO Granary Camera Feeder"
-        },
-        {
-          "level": 3,
-          "text": "PETKIT Fresh Element Infinity"
         }
       ],
       "recommendationTypes": [],
@@ -1317,7 +1317,7 @@
       "mainEntity": "Produktpflege",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 80,
-      "wordCount": 7100,
+      "wordCount": 7108,
       "headingCount": 2,
       "headings": [
         "Produktpflege",
@@ -1364,36 +1364,32 @@
         "/produkt/petkit-eversweet-max-2-uvc/",
         "/produkt/petkit-eversweet-max-cordless/",
         "/produkt/weenect-xt/",
-        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petkit-fresh-element-infinity/",
+        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/petlibro-glacier-ultrafiltration/",
         "/produkt/wopet-cube-air-ca10/",
         "/produkt/wopet-heritage-view-camera-feeder/",
         "/produkt/wopet-patrol-f07-pro/",
         "/produkt/wopet-pioneer-f01-plus/",
-        "/produkt/petkit-eversweet-solo-se/",
-        "/produkt/petlibro-polar-wet-food-feeder/",
-        "/produkt/tractive-cat-6-mini/",
-        "/produkt/catit-pixi-vision-smart-feeder/",
         "/produkt/imipaw-3l-automatic-cat-feeder/",
         "/produkt/pawsync-smart-pet-feeder/",
+        "/produkt/petkit-eversweet-solo-se/",
         "/produkt/petlibro-one-rfid-smart-feeder/",
+        "/produkt/petlibro-polar-wet-food-feeder/",
+        "/produkt/tractive-cat-6-mini/",
+        "/produkt/weenect-xs/",
+        "/produkt/catit-pixi-vision-smart-feeder/",
         "/produkt/petsafe-freshfeed-refrigerated-feeder/",
         "/produkt/petsafe-smart-feed-2/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
-        "/produkt/weenect-xs/",
         "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
-        "/produkt/onlycat-mikrochip-katzenklappe/",
-        "/produkt/petlibro-capsule-dog-fountain/",
         "/produkt/aqara-smart-pet-feeder-c1/",
         "/produkt/cat-mate-c200/",
         "/produkt/cat-mate-c300/",
         "/produkt/cat-mate-c500/",
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/catit-pixi-smart-6-meal-feeder/",
-        "/produkt/enabot-ebo-air-2/",
-        "/produkt/furbo-360-hundekamera/",
         "/produkt/garmin-alpha-t-20/",
         "/produkt/honeyguardian-a68/",
         "/produkt/oneisall-2-in-1-feeder-water/",
@@ -1402,6 +1398,7 @@
         "/produkt/oneisall-3-5l-cordless-fountain/",
         "/produkt/oneisall-5l-automatic-cat-feeder/",
         "/produkt/oneisall-7l-dog-water-fountain/",
+        "/produkt/onlycat-mikrochip-katzenklappe/",
         "/produkt/paj-pet-finder-4g-mini/",
         "/produkt/petkit-eversweet-3-pro-uvc/",
         "/produkt/petkit-eversweet-solo-2-fountain/",
@@ -1409,6 +1406,7 @@
         "/produkt/petkit-yumshare-dual-hopper/",
         "/produkt/petkit-yumshare-solo-2/",
         "/produkt/petlibro-air-automatic-feeder/",
+        "/produkt/petlibro-capsule-dog-fountain/",
         "/produkt/petlibro-dockstream-2-smart/",
         "/produkt/petlibro-dockstream-2-smart-cordless/",
         "/produkt/petlibro-dockstream-cordless/",
@@ -1420,16 +1418,18 @@
         "/produkt/petlibro-stainless-steel-fountain/",
         "/produkt/petsafe-healthy-pet-simply-feed/",
         "/produkt/petsafe-mikrochip-katzenklappe/",
-        "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/surefeed-microchip-pet-feeder/",
-        "/produkt/surefeed-microchip-pet-feeder-connect/",
         "/produkt/sureflap-mikrochip-katzenklappe-connect/",
         "/produkt/tractive-dog-6/",
         "/produkt/tractive-dog-6-xl/",
         "/produkt/xiaomi-smart-pet-food-feeder-2/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
-        "/produkt/zeromouse-2-0/"
+        "/produkt/zeromouse-2-0/",
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-360-hundekamera/",
+        "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
       "relatedComparisons": [],
       "searchPerformance": null,
@@ -7957,7 +7957,7 @@
       "mainEntity": "PetSafe Petporte smart flap",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 1,
-      "wordCount": 195,
+      "wordCount": 211,
       "headingCount": 9,
       "headings": [
         "PetSafe Petporte smart flap",
@@ -7968,7 +7968,7 @@
         "Entscheidungsweg",
         "Vertrauen und Nachweise",
         "UX, CSS und Performance",
-        "0 vorhandene Dateien"
+        "6 vorhandene Dateien"
       ],
       "structuredData": [],
       "expectedComparisonCount": 0,
@@ -8020,7 +8020,7 @@
         },
         {
           "level": 3,
-          "text": "0 vorhandene Dateien"
+          "text": "6 vorhandene Dateien"
         }
       ],
       "recommendationTypes": [],
@@ -20764,7 +20764,7 @@
       "mainEntity": "PetSafe",
       "internalIncomingLinks": 12,
       "internalOutgoingLinks": 15,
-      "wordCount": 769,
+      "wordCount": 777,
       "headingCount": 31,
       "headings": [
         "PetSafe",
@@ -35636,7 +35636,7 @@
       "mainEntity": "OnlyCat Mikrochip Katzenklappe",
       "internalIncomingLinks": 10,
       "internalOutgoingLinks": 13,
-      "wordCount": 799,
+      "wordCount": 801,
       "headingCount": 30,
       "headings": [
         "OnlyCat Mikrochip Katzenklappe",
@@ -35663,8 +35663,8 @@
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
         "ZeroMOUSE 2.0",
+        "PetSafe Petporte smart flap",
         "SureFlap Mikrochip Katzenklappe Connect",
-        "PetSafe Mikrochip Katzenklappe",
         "Beste Futterautomaten für Seniorenkatzen",
         "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
         "OnlyCat",
@@ -35796,11 +35796,11 @@
         },
         {
           "level": 3,
-          "text": "SureFlap Mikrochip Katzenklappe Connect"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "SureFlap Mikrochip Katzenklappe Connect"
         },
         {
           "level": 3,
@@ -35824,8 +35824,8 @@
       ],
       "relatedProducts": [
         "/produkt/zeromouse-2-0/",
-        "/produkt/sureflap-mikrochip-katzenklappe-connect/",
-        "/produkt/petsafe-mikrochip-katzenklappe/"
+        "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/sureflap-mikrochip-katzenklappe-connect/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-mikrochip-katzenklappen/",
@@ -43680,9 +43680,9 @@
         "transactional-support"
       ],
       "mainEntity": "PetSafe Mikrochip Katzenklappe",
-      "internalIncomingLinks": 12,
+      "internalIncomingLinks": 6,
       "internalOutgoingLinks": 12,
-      "wordCount": 722,
+      "wordCount": 723,
       "headingCount": 29,
       "headings": [
         "PetSafe Mikrochip Katzenklappe",
@@ -43709,7 +43709,7 @@
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
         "ZeroMOUSE 2.0",
-        "SureFlap Mikrochip Katzenklappe Connect",
+        "PetSafe Petporte smart flap",
         "OnlyCat Mikrochip Katzenklappe",
         "Beste Futterautomaten für Seniorenkatzen",
         "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
@@ -43841,7 +43841,7 @@
         },
         {
           "level": 3,
-          "text": "SureFlap Mikrochip Katzenklappe Connect"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
@@ -43865,7 +43865,7 @@
       ],
       "relatedProducts": [
         "/produkt/zeromouse-2-0/",
-        "/produkt/sureflap-mikrochip-katzenklappe-connect/",
+        "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/onlycat-mikrochip-katzenklappe/"
       ],
       "relatedComparisons": [
@@ -43905,7 +43905,7 @@
       "title": "PetSafe Petporte smart flap im Test und Vergleich",
       "h1": "PetSafe Petporte smart flap",
       "h1Count": 1,
-      "metaDescription": "Netzbetriebene Mikrochip-Katzenklappe mit selektivem Eingang, Nachtmodus und größerem 160 × 160 mm Durchgang; deutsche Verfügbarkeit und Chipgrenzen geprüft.",
+      "metaDescription": "Netzbetriebene Mikrochip-Katzenklappe mit 160 × 160 mm Durchgang, selektivem Eingang für bis zu 25 Katzen und optionalem Nachtmodus. Chipgrenzen, Einbau und Herstellerdaten geprüft.",
       "canonicalRoute": "/produkt/petsafe-petporte-smart-flap/",
       "indexable": true,
       "inSitemap": true,
@@ -43914,10 +43914,10 @@
         "transactional-support"
       ],
       "mainEntity": "PetSafe Petporte smart flap",
-      "internalIncomingLinks": 5,
-      "internalOutgoingLinks": 11,
-      "wordCount": 756,
-      "headingCount": 26,
+      "internalIncomingLinks": 12,
+      "internalOutgoingLinks": 12,
+      "wordCount": 1099,
+      "headingCount": 29,
       "headings": [
         "PetSafe Petporte smart flap",
         "Aktueller Preis",
@@ -43932,6 +43932,7 @@
         "Häufige Kauffragen",
         "Besser passend, nicht nur ähnlich",
         "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
         "Passend zum Produkt weiterlesen",
         "Ja, wenn …",
         "Nein, wenn …",
@@ -43944,6 +43945,8 @@
         "PetSafe Mikrochip Katzenklappe",
         "ZeroMOUSE 2.0",
         "SureFlap Mikrochip Katzenklappe Connect",
+        "Beste Futterautomaten für Katzen",
+        "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
         "PetSafe"
       ],
       "structuredData": [
@@ -43954,7 +43957,10 @@
         "ListItem",
         "Product",
         "Brand",
-        "Offer"
+        "Offer",
+        "Review",
+        "Rating",
+        "ItemList"
       ],
       "expectedComparisonCount": 0,
       "renderedComparisonCount": 0,
@@ -43963,7 +43969,7 @@
       "metaTitle": "PetSafe Petporte smart flap im Test und Vergleich",
       "canonical": "https://pfotentechnik.de/produkt/petsafe-petporte-smart-flap/",
       "publishedAt": "2026-08-04",
-      "updatedAt": "2026-08-04",
+      "updatedAt": "2026-08-07",
       "author": "PetSafe",
       "animal": "cat",
       "productCategory": "",
@@ -44025,6 +44031,10 @@
         },
         {
           "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
           "text": "Passend zum Produkt weiterlesen"
         },
         {
@@ -44073,6 +44083,14 @@
         },
         {
           "level": 3,
+          "text": "Beste Futterautomaten für Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
+          "level": 3,
           "text": "PetSafe"
         }
       ],
@@ -44085,7 +44103,8 @@
         "/produkt/sureflap-mikrochip-katzenklappe-connect/"
       ],
       "relatedComparisons": [
-        "/vergleiche/beste-mikrochip-katzenklappen/"
+        "/vergleiche/beste-mikrochip-katzenklappen/",
+        "/vergleiche/beste-futterautomaten-fuer-katzen/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -44360,7 +44379,7 @@
       "mainEntity": "petWALK Medium Tiertür",
       "internalIncomingLinks": 10,
       "internalOutgoingLinks": 13,
-      "wordCount": 709,
+      "wordCount": 710,
       "headingCount": 29,
       "headings": [
         "petWALK Medium Tiertür",
@@ -44387,8 +44406,8 @@
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
         "ZeroMOUSE 2.0",
+        "PetSafe Petporte smart flap",
         "SureFlap Mikrochip Katzenklappe Connect",
-        "PetSafe Mikrochip Katzenklappe",
         "Automatische Katzentoiletten im Vergleich",
         "Smarte Futterautomaten für Hunde und Katzen",
         "petWALK"
@@ -44519,11 +44538,11 @@
         },
         {
           "level": 3,
-          "text": "SureFlap Mikrochip Katzenklappe Connect"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "SureFlap Mikrochip Katzenklappe Connect"
         },
         {
           "level": 3,
@@ -44543,8 +44562,8 @@
       ],
       "relatedProducts": [
         "/produkt/zeromouse-2-0/",
-        "/produkt/sureflap-mikrochip-katzenklappe-connect/",
-        "/produkt/petsafe-mikrochip-katzenklappe/"
+        "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/sureflap-mikrochip-katzenklappe-connect/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-mikrochip-katzenklappen/",
@@ -45055,7 +45074,7 @@
       "mainEntity": "SureFlap DualScan Mikrochip Katzenklappe",
       "internalIncomingLinks": 9,
       "internalOutgoingLinks": 12,
-      "wordCount": 862,
+      "wordCount": 865,
       "headingCount": 29,
       "headings": [
         "SureFlap DualScan Mikrochip Katzenklappe",
@@ -45081,7 +45100,7 @@
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
-        "PetSafe Mikrochip Katzenklappe",
+        "PetSafe Petporte smart flap",
         "petWALK Medium Tiertür",
         "ZeroMOUSE 2.0",
         "Beste Futterautomaten für Seniorenkatzen",
@@ -45209,7 +45228,7 @@
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
@@ -45236,7 +45255,7 @@
         "alternatives"
       ],
       "relatedProducts": [
-        "/produkt/petsafe-mikrochip-katzenklappe/",
+        "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/zeromouse-2-0/"
       ],
@@ -45286,9 +45305,9 @@
         "transactional-support"
       ],
       "mainEntity": "SureFlap Mikrochip Katzenklappe Connect",
-      "internalIncomingLinks": 10,
+      "internalIncomingLinks": 9,
       "internalOutgoingLinks": 12,
-      "wordCount": 930,
+      "wordCount": 932,
       "headingCount": 30,
       "headings": [
         "SureFlap Mikrochip Katzenklappe Connect",
@@ -45316,7 +45335,7 @@
         "Beantworte die Fragen für eine persönliche Einordnung.",
         "ZeroMOUSE 2.0",
         "petWALK Medium Tiertür",
-        "PetSafe Mikrochip Katzenklappe",
+        "PetSafe Petporte smart flap",
         "Beste Futterautomaten für Seniorenkatzen",
         "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
         "SureFeed",
@@ -45452,7 +45471,7 @@
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
@@ -45477,7 +45496,7 @@
       "relatedProducts": [
         "/produkt/zeromouse-2-0/",
         "/produkt/petwalk-medium-tiertuer/",
-        "/produkt/petsafe-mikrochip-katzenklappe/"
+        "/produkt/petsafe-petporte-smart-flap/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-mikrochip-katzenklappen/",
@@ -45527,7 +45546,7 @@
       "mainEntity": "SureFlap Mikrochip Katzenklappe",
       "internalIncomingLinks": 6,
       "internalOutgoingLinks": 12,
-      "wordCount": 1187,
+      "wordCount": 1190,
       "headingCount": 29,
       "headings": [
         "SureFlap Mikrochip Katzenklappe",
@@ -45553,7 +45572,7 @@
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
-        "PetSafe Mikrochip Katzenklappe",
+        "PetSafe Petporte smart flap",
         "petWALK Medium Tiertür",
         "ZeroMOUSE 2.0",
         "Beste Futterautomaten für Seniorenkatzen",
@@ -45681,7 +45700,7 @@
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
@@ -45708,7 +45727,7 @@
         "alternatives"
       ],
       "relatedProducts": [
-        "/produkt/petsafe-mikrochip-katzenklappe/",
+        "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/zeromouse-2-0/"
       ],
@@ -48283,7 +48302,7 @@
       "mainEntity": "ZeroMOUSE 2.0",
       "internalIncomingLinks": 12,
       "internalOutgoingLinks": 13,
-      "wordCount": 1261,
+      "wordCount": 1264,
       "headingCount": 30,
       "headings": [
         "ZeroMOUSE 2.0",
@@ -48309,7 +48328,7 @@
         "Kontrollieren",
         "Reinigen und nachstellen",
         "Beantworte die Fragen für eine persönliche Einordnung.",
-        "PetSafe Mikrochip Katzenklappe",
+        "PetSafe Petporte smart flap",
         "petWALK Medium Tiertür",
         "SureFlap Mikrochip Katzenklappe Connect",
         "Automatische Katzentoiletten im Vergleich",
@@ -48439,7 +48458,7 @@
         },
         {
           "level": 3,
-          "text": "PetSafe Mikrochip Katzenklappe"
+          "text": "PetSafe Petporte smart flap"
         },
         {
           "level": 3,
@@ -48470,7 +48489,7 @@
         "alternatives"
       ],
       "relatedProducts": [
-        "/produkt/petsafe-mikrochip-katzenklappe/",
+        "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/sureflap-mikrochip-katzenklappe-connect/"
       ],
@@ -55287,7 +55306,7 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Katzen",
-      "internalIncomingLinks": 52,
+      "internalIncomingLinks": 53,
       "internalOutgoingLinks": 35,
       "wordCount": 3431,
       "headingCount": 48,
@@ -60336,7 +60355,7 @@
       "mainEntity": "Mikrochip-Katzenklappen im Vergleich",
       "internalIncomingLinks": 17,
       "internalOutgoingLinks": 21,
-      "wordCount": 1297,
+      "wordCount": 1291,
       "headingCount": 22,
       "headings": [
         "Mikrochip-Katzenklappen im Vergleich",

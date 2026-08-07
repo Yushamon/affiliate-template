@@ -21,15 +21,16 @@ hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "offenes-katzenklo", "app", "grosse-katze"]
 images:
   hero: { src: "../../assets/images/products/neakasa-m1-plus/hero.webp", alt: "Neutrale redaktionelle Darstellung einer offenen automatischen Katzentoilette" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 379.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-07T10:03:50.919Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.9
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { sicherheit: 4.0, platz: 3.5, reinigung: 3.8, folgekosten: 3.6, datenschutz: 3.5 }
 decision:
   bestFor: ["offene Bauform", "Katzen von etwa 1 bis 15 kg laut Hersteller", "große Katzen mit genügend Platz zum Drehen"]
@@ -55,6 +56,22 @@ comparisonData:
 decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", intent: "neakasa-m1-plus-pruefen", primaryQuestion: "Passt die offene Bauform trotz hohem Einstieg zu Katze, Streu und Stellplatz?", next: ["/vergleiche/beste-automatische-katzentoiletten/"], fallback: ["/automatische-katzentoiletten/"] }
 evidenceSources:
   - { source: "Neakasa", url: "https://neakasa.com/products/neakasa-m1-cat-litter-box", accessedAt: "2026-08-06", assertion: "Offene Bauform, Gewichtsbereich, Einstieg, Sensorik, Streu, App und Volumen sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
+affiliate:
+  provider: "amazon-de"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0CSKBWBF6/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B%2Cpets%2C127&sr=1-4&th=1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-07T10:03:50.919Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-07T10:03:50.919Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Gewöhnung ohne Zwang

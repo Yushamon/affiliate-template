@@ -21,6 +21,17 @@ recommendation: "Prüfenswert für größere Katzen und Haushalte mit Netzanschl
 
 rating: 4.0
 score: 81
+priceState: "available"
+priceUpdated: "2026-08-07T10:04:55.532Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-07T10:04:55.532Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   zugang_und_sicherheit: 4.2
   richtungsrechte_und_kontrolle: 3.8
@@ -30,25 +41,14 @@ ratings:
   systemabhaengigkeit_und_folgekosten: 4.5
 
 price:
-  current: 165.99
+  current: 139.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07"
+  checkedAt: "2026-08-07T10:04:55.532Z"
   source:
-    id: "petsafe-de-100ml"
-    label: "PetSafe Deutschland"
+    id: "amazon.de"
+    label: "amazon.de"
     type: "merchant"
-
-priceState: "available"
-priceUpdated: "2026-08-07"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Im deutschen PetSafe-Shop am 07.08.2026 als bestellbar gelistet."
-availabilityUpdated: "2026-08-07"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 
 affiliate:
   provider: "amazon-de"
@@ -56,7 +56,6 @@ affiliate:
   url: "https://amzn.to/3RXN4yy"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 images:
   hero:
     src: "../../assets/images/products/petsafe-petporte-smart-flap/hero.webp"

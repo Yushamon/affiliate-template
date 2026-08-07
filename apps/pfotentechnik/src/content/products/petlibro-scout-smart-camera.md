@@ -21,15 +21,16 @@ hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "katze", "hund", "cloud", "app", "innenkamera"]
 images:
   hero: { src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp", alt: "Neutrale redaktionelle Darstellung einer festen schwenkbaren Haustierkamera" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 89.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-07T10:04:46.070Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.7
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { bild: 4.0, datenschutz: 2.7, folgekosten: 2.5, alltag: 3.8 }
 decision:
   bestFor: ["fester Innenbereich", "bis zu fünf unterscheidbare Hunde oder Katzen", "Nutzer mit bewusst gewähltem Cloud-Abo"]
@@ -55,6 +56,22 @@ comparisonData:
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "petlibro-scout-pruefen", primaryQuestion: "Rechtfertigen Mehrtiere-Erkennung und Cloudauswertung das Abo ohne lokale SD-Speicherung?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "PETLIBRO Deutschland", url: "https://de.petlibro.com/en/products/scout-smart-camera", accessedAt: "2026-08-06", assertion: "1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben.", fields: ["specs", "strengths", "weaknesses"] }
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4wOAlh0"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-07T10:04:46.070Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-07T10:04:46.070Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Einordnung ohne eigenen Produkttest
