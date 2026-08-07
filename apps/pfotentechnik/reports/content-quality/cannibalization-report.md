@@ -7,7 +7,7 @@
 - Gelöste Konflikte: 2
 - Manuelle Prüffälle: 0
 - Harte Fehler: 0
-- Warnungen: 1
+- Warnungen: 0
 
 ## Konflikte und bewusste Abgrenzungen
 
@@ -57,11 +57,10 @@
 
 ## Audit-Befunde
 
-- **WARNING · CONTENT_H1_COUNT_INVALID** · /haustierkameras/: Gerenderte H1-Anzahl: 2.
+Keine offenen Befunde.
 
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- IMPROVE: 1
-- KEEP: 226
+- KEEP: 227
 - NOINDEX: 90

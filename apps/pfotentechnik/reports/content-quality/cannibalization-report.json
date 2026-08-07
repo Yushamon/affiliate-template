@@ -261,12 +261,11 @@
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "IMPROVE": 1,
-      "KEEP": 226,
+      "KEEP": 227,
       "NOINDEX": 90
     },
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
     "intentConflicts": 0,
@@ -277,17 +276,7 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [
-    {
-      "id": "content_h1_count_invalid|/haustierkameras/",
-      "code": "CONTENT_H1_COUNT_INVALID",
-      "severity": "warning",
-      "routes": [
-        "/haustierkameras/"
-      ],
-      "evidence": "Gerenderte H1-Anzahl: 2."
-    }
-  ],
+  "findings": [],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",

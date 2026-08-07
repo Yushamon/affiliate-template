@@ -1,10 +1,10 @@
 # SEO Release Preflight
 
-- Status: ERROR
+- Status: OK
 - Modus: production
-- Dauer: 72807 ms
-- Phasen: 17
-- Fehler: 1
+- Dauer: 75069 ms
+- Phasen: 18
+- Fehler: 0
 - Warnungen: 0
 
 ## Phasen
@@ -25,11 +25,12 @@
 - OK **Technischer SEO-Build-Audit** – npm run audit:technical-seo
 - OK **Content-Quality und Kannibalisierung** – npm run audit:content-quality:strict
 - OK **Performance-Budget** – npm run audit:performance:strict
-- FEHLER **Zentrale Quality Operations** – npm run quality-ops:check
+- OK **Zentrale Quality Operations** – npm run quality-ops:check
+- OK **Release-Manifest** – internal
 
 ## Fehler
 
-- Zentrale Quality Operations fehlgeschlagen (Exit 1).
+Keine.
 
 ## Warnungen
 
@@ -40,4 +41,4 @@ Keine.
 - Report: /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.md
 - Indexierbare Seiten: 227
 - Harte Fehler: 0
-- Warnungen: 1
+- Warnungen: 0

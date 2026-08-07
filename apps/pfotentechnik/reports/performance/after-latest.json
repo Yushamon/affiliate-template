@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T07:59:51.621Z",
+  "generatedAt": "2026-08-07T08:13:35.806Z",
   "mode": "strict",
   "status": "ok",
   "environment": {
@@ -102,8 +102,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 63166,
-        "htmlBrotliBytes": 11444,
+        "htmlBytes": 63216,
+        "htmlBrotliBytes": 11439,
         "domNodes": 655,
         "domDepth": 13,
         "stylesheets": 3,
@@ -158,8 +158,8 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 139898,
-        "htmlBrotliBytes": 22764,
+        "htmlBytes": 139946,
+        "htmlBrotliBytes": 22758,
         "domNodes": 1258,
         "domDepth": 16,
         "stylesheets": 4,
@@ -184,8 +184,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 139898 > 130000.",
-          "actual": 139898,
+          "message": "HTML-Budget überschritten: 139946 > 130000.",
+          "actual": 139946,
           "limit": 130000
         }
       ]
@@ -195,8 +195,8 @@
       "category": "comparison",
       "label": "Vergleich GPS-Tracker",
       "metrics": {
-        "htmlBytes": 86510,
-        "htmlBrotliBytes": 16765,
+        "htmlBytes": 86550,
+        "htmlBrotliBytes": 16816,
         "domNodes": 709,
         "domDepth": 16,
         "stylesheets": 4,
@@ -223,8 +223,8 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 90160,
-        "htmlBrotliBytes": 16365,
+        "htmlBytes": 90255,
+        "htmlBrotliBytes": 16353,
         "domNodes": 732,
         "domDepth": 15,
         "stylesheets": 4,
@@ -249,8 +249,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "HTML-Budget überschritten: 90160 > 90000.",
-          "actual": 90160,
+          "message": "HTML-Budget überschritten: 90255 > 90000.",
+          "actual": 90255,
           "limit": 90000
         }
       ]
@@ -260,8 +260,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 77127,
-        "htmlBrotliBytes": 14062,
+        "htmlBytes": 77123,
+        "htmlBrotliBytes": 14068,
         "domNodes": 639,
         "domDepth": 11,
         "stylesheets": 4,
@@ -443,16 +443,16 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 139898 > 130000.",
-      "actual": 139898,
+      "message": "HTML-Budget überschritten: 139946 > 130000.",
+      "actual": 139946,
       "limit": 130000
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "HTML-Budget überschritten: 90160 > 90000.",
-      "actual": 90160,
+      "message": "HTML-Budget überschritten: 90255 > 90000.",
+      "actual": 90255,
       "limit": 90000
     },
     {

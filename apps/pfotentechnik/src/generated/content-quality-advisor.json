@@ -1,24 +1,5 @@
 {
   "schemaVersion": 1,
   "sourceReport": "apps/pfotentechnik/reports/content-quality/cannibalization-report.json",
-  "items": [
-    {
-      "id": "content-quality|haustierkameras",
-      "route": "/haustierkameras/",
-      "affectedFile": "apps/pfotentechnik/src/content/pages/haustierkameras.md",
-      "title": "IMPROVE: Haustierkameras sinnvoll auswählen",
-      "decision": "IMPROVE",
-      "confidence": "medium",
-      "priority": "medium",
-      "problem": "Gerenderte H1-Anzahl: 2.",
-      "nextAction": "Den konkreten Content-Quality-Befund beheben.",
-      "codes": [
-        "CONTENT_H1_COUNT_INVALID"
-      ],
-      "validationCommands": [
-        "npm --workspace apps/pfotentechnik run audit:content-quality:strict",
-        "npm --workspace apps/pfotentechnik run seo:release:check"
-      ]
-    }
-  ]
+  "items": []
 }
