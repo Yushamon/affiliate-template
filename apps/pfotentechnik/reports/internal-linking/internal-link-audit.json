@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-06T12:51:31.121Z",
-  "strict": false,
+  "generatedAt": "2026-08-07T07:46:55.992Z",
+  "strict": true,
   "summary": {
     "documents": 215,
     "contentRoutes": 215,
     "buildRoutes": 317,
     "validRoutes": 317,
     "definitions": 463,
-    "renderedAutomaticLinks": 469,
+    "renderedAutomaticLinks": 467,
     "errors": 0,
-    "warnings": 39,
+    "warnings": 41,
     "critical": 0
   },
   "blockedAnchors": [
@@ -39,9 +39,22 @@
   "findings": [
     {
       "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/haustierkameras/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/haustierkameras/",
+      "file": "apps/pfotentechnik/src/content/pages/haustierkameras.md"
+    },
+    {
+      "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hersteller/enabot/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hersteller/enabot/"
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hersteller/furbo/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hersteller/furbo/"
     },
     {
       "severity": "warning",
@@ -704,18 +717,6 @@
       "targetRoute": "/hersteller/garmin/",
       "anchor": "Garmin",
       "score": 1206
-    },
-    {
-      "sourceRoute": "/haustierkameras/",
-      "targetRoute": "/hersteller/petlibro/",
-      "anchor": "PETLIBRO",
-      "score": 1708
-    },
-    {
-      "sourceRoute": "/haustierkameras/",
-      "targetRoute": "/hersteller/furbo/",
-      "anchor": "Furbo",
-      "score": 1505
     },
     {
       "sourceRoute": "/hund-frisst-nicht/",
@@ -3243,7 +3244,7 @@
     "/hersteller/cat-mate/": 12,
     "/hersteller/catit/": 3,
     "/hersteller/enabot/": 0,
-    "/hersteller/furbo/": 1,
+    "/hersteller/furbo/": 0,
     "/hersteller/garmin/": 12,
     "/hersteller/honeyguardian/": 7,
     "/hersteller/imipaw/": 3,
@@ -3254,7 +3255,7 @@
     "/hersteller/pawbby/": 2,
     "/hersteller/pawsync/": 1,
     "/hersteller/petkit/": 30,
-    "/hersteller/petlibro/": 56,
+    "/hersteller/petlibro/": 55,
     "/hersteller/petsafe/": 14,
     "/hersteller/petwalk/": 2,
     "/hersteller/surefeed/": 12,
@@ -3404,7 +3405,7 @@
     "/vergleiche/beste-futterautomaten-unter-100-euro/": 3,
     "/vergleiche/beste-gps-tracker-fuer-hunde/": 10,
     "/vergleiche/beste-gps-tracker-fuer-katzen/": 8,
-    "/vergleiche/beste-haustierkameras/": 4,
+    "/vergleiche/beste-haustierkameras/": 3,
     "/vergleiche/beste-mikrochip-katzenklappen/": 10,
     "/vergleiche/beste-trinkbrunnen-fuer-hunde/": 3,
     "/vergleiche/beste-trinkbrunnen-fuer-katzen/": 10,

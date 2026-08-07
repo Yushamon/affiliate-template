@@ -1,10 +1,10 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-06T12:51:27.171Z
+Erstellt: 2026-08-07T07:46:54.002Z
 
-**Status: NICHT BESTANDEN**
+**Status: BESTANDEN**
 
-- Vergleiche: 28 / 26
+- Vergleiche: 28 (Mindestbestand 26)
 - Quellabdeckung: 88.8 %
 - öffentlich gerenderte Abdeckung: 100 %
 - alte values-Felder: 591
@@ -45,6 +45,6 @@ Erstellt: 2026-08-06T12:51:27.171Z
 
 ## Blocker
 
-- Erwartet: 26 Vergleiche, gefunden: 28.
+- Keine.
 
 Unvollständige Quellkriterien bleiben im JSON-Bericht sichtbar, werden aber nicht als leere Tabellenzeilen veröffentlicht.

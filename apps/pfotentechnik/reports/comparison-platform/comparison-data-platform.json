@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-06T12:51:27.171Z",
-  "expectedComparisons": 26,
+  "generatedAt": "2026-08-07T07:46:54.002Z",
+  "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
     "minimumRenderedCoverage": 95
   },
-  "passed": false,
+  "passed": true,
   "summary": {
     "comparisons": 28,
     "products": 80,
@@ -20,9 +20,7 @@
     "legacyValueCount": 591,
     "overrideCount": 218
   },
-  "failures": [
-    "Erwartet: 26 Vergleiche, gefunden: 28."
-  ],
+  "failures": [],
   "comparisons": [
     {
       "slug": "beste-automatische-katzentoiletten",

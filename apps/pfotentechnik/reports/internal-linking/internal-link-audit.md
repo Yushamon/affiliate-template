@@ -1,19 +1,21 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-06T12:51:31.121Z
+Erstellt: 2026-08-07T07:46:55.992Z
 
 ## Ergebnis
 
 - Dokumente: 215
 - Linkdefinitionen: 463
-- Simulierte automatische Links: 469
+- Simulierte automatische Links: 467
 - Fehler: 0
-- Warnungen: 39
+- Warnungen: 41
 - Strict-kritisch: 0
 
 ## Befunde
 
+- **WARNING LINKING_METADATA_MISSING:** /haustierkameras/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/enabot/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
+- **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/furbo/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hersteller/whisker/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -116,8 +118,6 @@ Erstellt: 2026-08-06T12:51:31.121Z
 - /gps-tracker-richtig-befestigen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
-- /haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
-- /haustierkameras/ → /hersteller/furbo/: „Furbo“
 - /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hund-frisst-zu-schnell/ → /smarte-futterautomaten/: „Futterautomat“
 - /hund-frisst-zu-schnell/ → /warum-schlingt-mein-hund/: „Zu schnelles Fressen“

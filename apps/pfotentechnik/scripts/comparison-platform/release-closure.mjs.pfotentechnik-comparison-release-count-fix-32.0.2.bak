@@ -21,7 +21,7 @@ const signoffFile = path.join(reportDir, "comparison-visual-signoff.json");
 const reportJson = path.join(reportDir, "comparison-release-closure.json");
 const reportMd = path.join(reportDir, "comparison-release-closure.md");
 
-const MIN_EXPECTED_COMPARISONS = 26;
+const EXPECTED_COMPARISONS = 26;
 
 const parse = (file) => {
   const source = fs.readFileSync(file, "utf8");
@@ -120,9 +120,9 @@ const dataReport = runDataAudit({ strict: false });
 const results = [];
 const globalErrors = [];
 
-if (comparisonData.length < MIN_EXPECTED_COMPARISONS) {
+if (comparisonData.length !== EXPECTED_COMPARISONS) {
   globalErrors.push(
-    `Mindestbestand unterschritten: erwartet mindestens ${MIN_EXPECTED_COMPARISONS} Vergleichsseiten, gefunden: ${comparisonData.length}.`
+    `Erwartet: ${EXPECTED_COMPARISONS} Vergleichsseiten, gefunden: ${comparisonData.length}.`
   );
 }
 
@@ -249,7 +249,7 @@ const finalPassed = technicalPassed && Boolean(visualSignoff);
 
 const report = {
   generatedAt: new Date().toISOString(),
-  minimumComparisons: MIN_EXPECTED_COMPARISONS,
+  expectedComparisons: EXPECTED_COMPARISONS,
   technicalPassed,
   visualPassed: Boolean(visualSignoff),
   finalPassed,
@@ -270,7 +270,7 @@ const markdown = [
   `## Visuelle Abnahme: ${visualSignoff ? "BESTANDEN" : "AUSSTEHEND"}`,
   `## Gesamtstatus: ${finalPassed ? "ABGESCHLOSSEN" : "NOCH NICHT ABGESCHLOSSEN"}`,
   "",
-  `- Vergleichsrouten: ${results.length} (Mindestbestand ${MIN_EXPECTED_COMPARISONS})`,
+  `- Vergleichsrouten: ${results.length} / ${EXPECTED_COMPARISONS}`,
   `- gerenderte Datenabdeckung: ${dataReport.summary.renderedCoverage} %`,
   `- Quellabdeckung: ${dataReport.summary.sourceCoverage} %`,
   `- technisch fehlerfreie Routen: ${results.filter((item) => item.passed).length}`,

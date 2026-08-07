@@ -3,6 +3,9 @@ description: Umfassender Ratgeber für Haustierkameras mit Kaufberatung,
   Datenschutz, Kosten und Entscheidungshilfen.
 layout: page
 slug: haustierkameras
+publishedAt: 2026-08-06
+
+updatedAt: 2026-08-06
 title: Haustierkameras sinnvoll auswählen
 type: page
 ---

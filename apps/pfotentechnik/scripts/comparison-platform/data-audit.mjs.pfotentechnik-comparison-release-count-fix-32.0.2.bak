@@ -11,7 +11,7 @@ import {
 import { resolveComparisonValue } from "./data-platform.mjs";
 
 const STRICT = process.argv.includes("--strict");
-const MIN_EXPECTED_COMPARISONS = 26;
+const EXPECTED_COMPARISONS = 26;
 const MIN_VISIBLE_ROWS = 3;
 const MIN_RENDERED_COVERAGE = 95;
 
@@ -103,8 +103,8 @@ export function runDataAudit({ strict = STRICT } = {}) {
     : 0;
 
   const failures = [];
-  if (comparisons.length < MIN_EXPECTED_COMPARISONS) {
-    failures.push(`Mindestbestand unterschritten: erwartet mindestens ${MIN_EXPECTED_COMPARISONS} Vergleiche, gefunden: ${comparisons.length}.`);
+  if (comparisons.length !== EXPECTED_COMPARISONS) {
+    failures.push(`Erwartet: ${EXPECTED_COMPARISONS} Vergleiche, gefunden: ${comparisons.length}.`);
   }
   for (const comparison of comparisonReports) {
     if (!comparison.passed) {
@@ -121,7 +121,7 @@ export function runDataAudit({ strict = STRICT } = {}) {
 
   const report = {
     generatedAt: new Date().toISOString(),
-    minimumComparisons: MIN_EXPECTED_COMPARISONS,
+    expectedComparisons: EXPECTED_COMPARISONS,
     thresholds: {
       minimumVisibleRows: MIN_VISIBLE_ROWS,
       minimumRenderedCoverage: MIN_RENDERED_COVERAGE
@@ -159,7 +159,7 @@ export function runDataAudit({ strict = STRICT } = {}) {
     "",
     `**Status: ${report.passed ? "BESTANDEN" : "NICHT BESTANDEN"}**`,
     "",
-    `- Vergleiche: ${report.summary.comparisons} (Mindestbestand ${MIN_EXPECTED_COMPARISONS})`,
+    `- Vergleiche: ${report.summary.comparisons} / ${EXPECTED_COMPARISONS}`,
     `- Quellabdeckung: ${report.summary.sourceCoverage} %`,
     `- öffentlich gerenderte Abdeckung: ${report.summary.renderedCoverage} %`,
     `- alte values-Felder: ${report.summary.legacyValueCount}`,
@@ -190,7 +190,7 @@ export function runDataAudit({ strict = STRICT } = {}) {
   );
 
   console.log("Comparison Data Platform Audit");
-  console.log(`Vergleiche: ${comparisons.length} (Mindestbestand ${MIN_EXPECTED_COMPARISONS})`);
+  console.log(`Vergleiche: ${comparisons.length}/${EXPECTED_COMPARISONS}`);
   console.log(`Quellabdeckung: ${sourceCoverage} %`);
   console.log(`Gerenderte Abdeckung: ${renderedCoverage} %`);
   console.log(`Status: ${report.passed ? "BESTANDEN" : "NICHT BESTANDEN"}`);

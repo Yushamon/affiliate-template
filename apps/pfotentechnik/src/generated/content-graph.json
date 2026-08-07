@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-06T12:51:22.444Z",
+  "generatedAt": "2026-08-07T07:46:53.274Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -2658,19 +2658,13 @@
       "slug": "haustierkameras",
       "route": "/haustierkameras/",
       "title": "Haustierkameras sinnvoll auswählen",
-      "description": "Cornerstone zu Haustierkameras: feste Kamera, Interaktionskamera oder mobiler Roboter nach Aufgabe, Datenschutz und Folgekosten auswählen.",
+      "description": "Umfassender Ratgeber für Haustierkameras mit Kaufberatung,",
       "type": "page",
-      "cluster": "haustierkameras",
+      "cluster": "ernaehrung",
       "topics": [
-        "haustierkameras",
-        "hund",
-        "katze",
-        "datenschutz",
-        "cloud",
-        "kaufberatung",
         "ernaehrung",
         "futterautomaten",
-        "gps tracker",
+        "haustierkameras",
         "haustiertechnik",
         "hunde",
         "katzen",
@@ -2679,14 +2673,7 @@
         "nassfutter",
         "trinkbrunnen"
       ],
-      "tags": [
-        "haustierkameras",
-        "hund",
-        "katze",
-        "datenschutz",
-        "cloud",
-        "kaufberatung"
-      ],
+      "tags": [],
       "sections": [],
       "aliases": [],
       "priority": 50,
@@ -26484,14 +26471,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-akku",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-mit-akku",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 66,
@@ -27301,6 +27280,14 @@
     {
       "source": "comparison:beste-futterautomaten-mit-akku",
       "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-akku",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -38045,7 +38032,7 @@
     {
       "source": "comparison:beste-haustierkameras",
       "target": "page:haustierkameras",
-      "type": "cluster",
+      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -56668,14 +56655,6 @@
     },
     {
       "source": "manufacturer:aqara",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:aqara",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 88,
@@ -57628,6 +57607,14 @@
     },
     {
       "source": "manufacturer:aqara",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:aqara",
       "target": "page:so-bewerten-wir",
       "type": "semantic",
       "score": 66,
@@ -58300,14 +58287,6 @@
     },
     {
       "source": "manufacturer:cat-mate",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:cat-mate",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 100,
@@ -58933,6 +58912,14 @@
     {
       "source": "manufacturer:cat-mate",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:cat-mate",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -61676,14 +61663,6 @@
     },
     {
       "source": "manufacturer:enabot",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:enabot",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -62197,6 +62176,14 @@
     {
       "source": "manufacturer:enabot",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:enabot",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -63364,14 +63351,6 @@
     },
     {
       "source": "manufacturer:furbo",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:furbo",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -63885,6 +63864,14 @@
     {
       "source": "manufacturer:furbo",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:furbo",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -65316,14 +65303,6 @@
     },
     {
       "source": "manufacturer:garmin",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:garmin",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 44,
@@ -66452,14 +66431,6 @@
     },
     {
       "source": "manufacturer:honeyguardian",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:honeyguardian",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -66973,6 +66944,14 @@
     {
       "source": "manufacturer:honeyguardian",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:honeyguardian",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -68140,14 +68119,6 @@
     },
     {
       "source": "manufacturer:imipaw",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:imipaw",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -68661,6 +68632,14 @@
     {
       "source": "manufacturer:imipaw",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:imipaw",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -69828,14 +69807,6 @@
     },
     {
       "source": "manufacturer:neakasa",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:neakasa",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -70349,6 +70320,14 @@
     {
       "source": "manufacturer:neakasa",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:neakasa",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -75173,14 +75152,6 @@
     {
       "source": "manufacturer:paj-gps",
       "target": "page:gps-oder-bluetooth",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:paj-gps",
-      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -76092,6 +76063,14 @@
     },
     {
       "source": "manufacturer:paj-gps",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:paj-gps",
       "target": "page:so-bewerten-wir",
       "type": "semantic",
       "score": 66,
@@ -76684,14 +76663,6 @@
     },
     {
       "source": "manufacturer:pawbby",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:pawbby",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -77205,6 +77176,14 @@
     {
       "source": "manufacturer:pawbby",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawbby",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -78516,14 +78495,6 @@
     },
     {
       "source": "manufacturer:pawsync",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:pawsync",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 88,
@@ -79468,6 +79439,14 @@
     },
     {
       "source": "manufacturer:pawsync",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawsync",
       "target": "page:so-bewerten-wir",
       "type": "semantic",
       "score": 66,
@@ -80140,14 +80119,6 @@
     },
     {
       "source": "manufacturer:petkit",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petkit",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -80661,6 +80632,14 @@
     {
       "source": "manufacturer:petkit",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petkit",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -85372,14 +85351,6 @@
     },
     {
       "source": "manufacturer:petwalk",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:petwalk",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -85901,6 +85872,14 @@
     {
       "source": "manufacturer:petwalk",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petwalk",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -87228,14 +87207,6 @@
     },
     {
       "source": "manufacturer:surefeed",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:surefeed",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 88,
@@ -88181,6 +88152,14 @@
     {
       "source": "manufacturer:surefeed",
       "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:surefeed",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -90580,14 +90559,6 @@
     },
     {
       "source": "manufacturer:weenect",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:weenect",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -91141,6 +91112,14 @@
     {
       "source": "manufacturer:weenect",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:weenect",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -92220,14 +92199,6 @@
     },
     {
       "source": "manufacturer:whisker",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:whisker",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -92741,6 +92712,14 @@
     {
       "source": "manufacturer:whisker",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:whisker",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -95660,14 +95639,6 @@
     },
     {
       "source": "manufacturer:xiaomi",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:xiaomi",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 100,
@@ -96181,6 +96152,14 @@
     {
       "source": "manufacturer:xiaomi",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:xiaomi",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -102228,14 +102207,6 @@
     },
     {
       "source": "page:datenschutz-bei-gps-trackern",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:datenschutz-bei-gps-trackern",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "cluster",
       "score": 100,
@@ -103197,6 +103168,14 @@
     {
       "source": "page:datenschutz-bei-gps-trackern",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -126348,14 +126327,6 @@
     },
     {
       "source": "page:gps-tracker-richtig-befestigen",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:gps-tracker-richtig-befestigen",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 88,
@@ -127269,6 +127240,14 @@
     {
       "source": "page:gps-tracker-richtig-befestigen",
       "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -127701,7 +127680,7 @@
     {
       "source": "page:haustierkameras",
       "target": "comparison:beste-haustierkameras",
-      "type": "cluster",
+      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -127772,55 +127751,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:cat-mate",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "manufacturer:catit",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:enabot",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:furbo",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:honeyguardian",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:imipaw",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:neakasa",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -127844,22 +127775,6 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:pawbby",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:petkit",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "manufacturer:petlibro",
       "type": "semantic",
       "score": 100,
@@ -127876,14 +127791,6 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:petwalk",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "manufacturer:tractive",
       "type": "semantic",
       "score": 100,
@@ -127892,31 +127799,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:weenect",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:whisker",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "manufacturer:wopet",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "manufacturer:xiaomi",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -127933,14 +127816,6 @@
     {
       "source": "page:haustierkameras",
       "target": "page:biofilm-im-katzentrinkbrunnen",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "page:datenschutz-bei-gps-trackern",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -128156,6 +128031,14 @@
     },
     {
       "source": "page:haustierkameras",
+      "target": "page:katzenklappe-einbauen",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
       "target": "page:katzenklappen",
       "type": "semantic",
       "score": 100,
@@ -128356,14 +128239,6 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "page:warum-brauchen-gps-tracker-ein-abo",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "type": "semantic",
       "score": 100,
@@ -128373,14 +128248,6 @@
     {
       "source": "page:haustierkameras",
       "target": "page:warum-katzen-fliessendes-wasser-trinken",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "page:warum-schlingt-mein-hund",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -128413,14 +128280,6 @@
     {
       "source": "page:haustierkameras",
       "target": "page:welpen-richtig-fuettern",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -128588,22 +128447,6 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "product:garmin-alpha-t-20",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "product:garmin-alpha-tt-25",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "product:honeyguardian-a305d",
       "type": "semantic",
       "score": 100,
@@ -128677,14 +128520,6 @@
     {
       "source": "page:haustierkameras",
       "target": "product:oneisall-5l-automatic-cat-feeder",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "product:oneisall-7l-dog-water-fountain",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -129028,23 +128863,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "product:tractive-dog-6-xl",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "product:weenect-xs",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "product:weenect-xt",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -129124,7 +128943,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:aqara",
+      "target": "manufacturer:cat-mate",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129132,7 +128951,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:paj-gps",
+      "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129140,7 +128959,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:pawsync",
+      "target": "manufacturer:furbo",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129148,7 +128967,71 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:surefeed",
+      "target": "manufacturer:honeyguardian",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:imipaw",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:neakasa",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:pawbby",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:petwalk",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:weenect",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:whisker",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:xiaomi",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129164,7 +129047,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "page:gps-tracker-richtig-befestigen",
+      "target": "page:warum-schlingt-mein-hund",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129172,7 +129055,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "page:katzenklappe-einbauen",
+      "target": "page:wie-funktioniert-ein-futterautomat",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129180,7 +129063,23 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "page:wie-funktionieren-gps-tracker",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "product:oneisall-7l-dog-water-fountain",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129196,7 +129095,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "product:petwalk-medium-tiertuer",
+      "target": "product:tractive-dog-6-xl",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -129204,17 +129103,9 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "product:tractive-cat-6-mini",
+      "target": "product:weenect-xt",
       "type": "semantic",
       "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "comparison:beste-futterautomaten-mit-akku",
-      "type": "semantic",
-      "score": 66,
       "explicit": false,
       "automatic": true
     },
@@ -129236,6 +129127,46 @@
     },
     {
       "source": "page:haustierkameras",
+      "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:paj-gps",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:pawsync",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "manufacturer:surefeed",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
       "target": "page:futterautomat-bei-stromausfall",
       "type": "semantic",
       "score": 66,
@@ -129244,7 +129175,31 @@
     },
     {
       "source": "page:haustierkameras",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
       "target": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "page:wie-funktionieren-gps-tracker",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -129268,6 +129223,30 @@
     },
     {
       "source": "page:haustierkameras",
+      "target": "product:petwalk-medium-tiertuer",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "product:tractive-cat-6-mini",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
       "target": "comparison:beste-futterautomaten-ohne-wlan",
       "type": "semantic",
       "score": 44,
@@ -129276,31 +129255,7 @@
     },
     {
       "source": "page:haustierkameras",
-      "target": "manufacturer:garmin",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
       "target": "page:katzenklappe-fuer-mehrere-katzen",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "page:reichweite-von-gps-trackern",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:haustierkameras",
-      "target": "page:wie-genau-sind-gps-tracker",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -153284,6 +153239,14 @@
     },
     {
       "source": "page:katzenklappe-einbauen",
+      "target": "page:haustierkameras",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-einbauen",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 100,
@@ -153453,14 +153416,6 @@
     {
       "source": "page:katzenklappe-einbauen",
       "target": "page:futtermenge-katze",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappe-einbauen",
-      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -173332,14 +173287,6 @@
     },
     {
       "source": "page:reichweite-von-gps-trackern",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:reichweite-von-gps-trackern",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 44,
@@ -201532,14 +201479,6 @@
     },
     {
       "source": "page:warum-brauchen-gps-tracker-ein-abo",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:warum-brauchen-gps-tracker-ein-abo",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "cluster",
       "score": 100,
@@ -202453,6 +202392,14 @@
     {
       "source": "page:warum-brauchen-gps-tracker-ein-abo",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -206796,14 +206743,6 @@
     },
     {
       "source": "page:warum-schlingt-mein-hund",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:warum-schlingt-mein-hund",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 100,
@@ -207789,6 +207728,14 @@
     {
       "source": "page:warum-schlingt-mein-hund",
       "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-schlingt-mein-hund",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -215468,14 +215415,6 @@
     },
     {
       "source": "page:wie-funktionieren-gps-tracker",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-funktionieren-gps-tracker",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 88,
@@ -216037,6 +215976,14 @@
     {
       "source": "page:wie-funktionieren-gps-tracker",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -216972,14 +216919,6 @@
     },
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "page:hund-frisst-nicht",
       "type": "cluster",
       "score": 100,
@@ -217861,6 +217800,14 @@
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktioniert-ein-futterautomat",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -218972,14 +218919,6 @@
     },
     {
       "source": "page:wie-genau-sind-gps-tracker",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 44,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:wie-genau-sind-gps-tracker",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 44,
@@ -254524,14 +254463,6 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-t-20",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "cluster",
       "score": 100,
@@ -255596,6 +255527,14 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -256238,14 +256177,6 @@
       "source": "product:garmin-alpha-tt-25",
       "target": "page:gps-tracker",
       "type": "cluster",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-tt-25",
-      "target": "page:haustierkameras",
-      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -257309,6 +257240,14 @@
     {
       "source": "product:garmin-alpha-tt-25",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -276940,14 +276879,6 @@
     },
     {
       "source": "product:oneisall-7l-dog-water-fountain",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:oneisall-7l-dog-water-fountain",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 100,
@@ -278085,6 +278016,14 @@
     {
       "source": "product:oneisall-7l-dog-water-fountain",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -344572,14 +344511,6 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petwalk-medium-tiertuer",
       "target": "page:katzentrinkbrunnen-ohne-filter",
       "type": "semantic",
       "score": 88,
@@ -344877,6 +344808,14 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -355100,14 +355039,6 @@
     },
     {
       "source": "product:tractive-cat-6-mini",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:tractive-cat-6-mini",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 88,
@@ -355733,6 +355664,14 @@
     {
       "source": "product:tractive-cat-6-mini",
       "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -357908,14 +357847,6 @@
     },
     {
       "source": "product:tractive-dog-6-xl",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:tractive-dog-6-xl",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "cluster",
       "score": 100,
@@ -358965,6 +358896,14 @@
     {
       "source": "product:tractive-dog-6-xl",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -361404,14 +361343,6 @@
     },
     {
       "source": "product:weenect-xt",
-      "target": "page:haustierkameras",
-      "type": "semantic",
-      "score": 100,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:weenect-xt",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "cluster",
       "score": 100,
@@ -362461,6 +362392,14 @@
     {
       "source": "product:weenect-xt",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "page:haustierkameras",
       "type": "semantic",
       "score": 88,
       "explicit": false,

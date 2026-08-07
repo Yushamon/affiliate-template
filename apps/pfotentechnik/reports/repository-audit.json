@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-06T12:51:21.144Z",
+    "generatedAt": "2026-08-07T07:46:52.721Z",
     "countsByCollection": {
       "pages": 82,
       "products": 80,
@@ -8,15 +8,15 @@
       "comparisons": 28
     },
     "categoryCounts": {
-      "haustiertechnik": 3,
+      "haustiertechnik": 2,
       "trinkbrunnen": 17,
       "gps-tracker": 10,
       "tierernaehrung": 2,
       "futterautomaten": 15,
       "fuetterung": 2,
+      "ohne Kategorie": 5,
       "hundegesundheit": 8,
       "wissen": 2,
-      "ohne Kategorie": 4,
       "katzenverhalten": 1,
       "katzengesundheit": 5,
       "katzenklappen": 1,
@@ -34,7 +34,7 @@
     "findings": {
       "error": 0,
       "warning": 49,
-      "info": 56
+      "info": 54
     }
   },
   "findings": [
@@ -576,18 +576,6 @@
       "severity": "info",
       "area": "css",
       "message": "Selektor 3× definiert: .container",
-      "file": "src/styles/pfotentechnik.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .header-container-v2",
-      "file": "src/styles/pfotentechnik.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
-      "message": "Selektor 3× definiert: .main-nav-v2",
       "file": "src/styles/pfotentechnik.css"
     },
     {

@@ -1,13 +1,13 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-06T12:51:21.144Z
+Erstellt: 2026-08-07T07:46:52.721Z
 
 ## Zusammenfassung
 
 - Routen: 237
 - Fehler: 0
 - Warnungen: 49
-- Hinweise: 56
+- Hinweise: 54
 
 ## Content-Bestand
 
@@ -108,8 +108,6 @@ Erstellt: 2026-08-06T12:51:21.144Z
 - **INFO · css**: Selektor 3× definiert: :where(.pt-surface) (`src/styles/pfotentechnik-visual-density.css`)
 - **INFO · css**: Selektor 3× definiert: @media (max-width: 47.99rem) (`src/styles/pfotentechnik-visual-density.css`)
 - **INFO · css**: Selektor 3× definiert: .container (`src/styles/pfotentechnik.css`)
-- **INFO · css**: Selektor 3× definiert: .header-container-v2 (`src/styles/pfotentechnik.css`)
-- **INFO · css**: Selektor 3× definiert: .main-nav-v2 (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 3× definiert: .pt-hero (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 3× definiert: .pt-section (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 4× definiert: .pt-category-card (`src/styles/pfotentechnik.css`)

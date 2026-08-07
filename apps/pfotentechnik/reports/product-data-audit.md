@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-06T12:51:21.899Z
+Erstellt: 2026-08-07T07:46:53.657Z
 
 ## Zusammenfassung
 
 - Produkte: 80
 - Fehler: 0
-- Warnungen: 106
+- Warnungen: 104
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -69,28 +69,6 @@ Erstellt: 2026-08-06T12:51:21.899Z
   - Empfohlenes Feld fehlt: uv
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: gewicht
-
-### Enabot EBO Air 2
-
-- Datei: `src/content/products/enabot-ebo-air-2.md`
-- Kategorie: haustierkameras
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
-
-### Furbo 360° Hundekamera
-
-- Datei: `src/content/products/furbo-360-hundekamera.md`
-- Kategorie: haustierkameras
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
 
 ### Litter-Robot 5 Pro
 
@@ -157,6 +135,26 @@ Erstellt: 2026-08-06T12:51:21.899Z
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
+
+### Enabot EBO Air 2
+
+- Datei: `src/content/products/enabot-ebo-air-2.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+
+### Furbo 360° Hundekamera
+
+- Datei: `src/content/products/furbo-360-hundekamera.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
 
 ### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
 
